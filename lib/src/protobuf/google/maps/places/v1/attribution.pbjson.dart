@@ -27,4 +27,3 @@ const AuthorAttribution$json = {
 final $typed_data.Uint8List authorAttributionDescriptor = $convert.base64Decode(
     'ChFBdXRob3JBdHRyaWJ1dGlvbhIhCgxkaXNwbGF5X25hbWUYASABKAlSC2Rpc3BsYXlOYW1lEh'
     'AKA3VyaRgCIAEoCVIDdXJpEhsKCXBob3RvX3VyaRgDIAEoCVIIcGhvdG9Vcmk=');
-

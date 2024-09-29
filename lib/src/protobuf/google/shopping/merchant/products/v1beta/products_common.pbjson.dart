@@ -32,98 +32,692 @@ final $typed_data.Uint8List subscriptionPeriodDescriptor = $convert.base64Decode
 const Attributes$json = {
   '1': 'Attributes',
   '2': [
-    {'1': 'identifier_exists', '3': 4, '4': 1, '5': 8, '9': 0, '10': 'identifierExists', '17': true},
-    {'1': 'is_bundle', '3': 5, '4': 1, '5': 8, '9': 1, '10': 'isBundle', '17': true},
+    {
+      '1': 'identifier_exists',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'identifierExists',
+      '17': true
+    },
+    {
+      '1': 'is_bundle',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'isBundle',
+      '17': true
+    },
     {'1': 'title', '3': 6, '4': 1, '5': 9, '9': 2, '10': 'title', '17': true},
-    {'1': 'description', '3': 7, '4': 1, '5': 9, '9': 3, '10': 'description', '17': true},
+    {
+      '1': 'description',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '9': 3,
+      '10': 'description',
+      '17': true
+    },
     {'1': 'link', '3': 8, '4': 1, '5': 9, '9': 4, '10': 'link', '17': true},
-    {'1': 'mobile_link', '3': 9, '4': 1, '5': 9, '9': 5, '10': 'mobileLink', '17': true},
-    {'1': 'canonical_link', '3': 10, '4': 1, '5': 9, '9': 6, '10': 'canonicalLink', '17': true},
-    {'1': 'image_link', '3': 11, '4': 1, '5': 9, '9': 7, '10': 'imageLink', '17': true},
-    {'1': 'additional_image_links', '3': 12, '4': 3, '5': 9, '10': 'additionalImageLinks'},
-    {'1': 'expiration_date', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expirationDate'},
-    {'1': 'disclosure_date', '3': 79, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'disclosureDate'},
+    {
+      '1': 'mobile_link',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 5,
+      '10': 'mobileLink',
+      '17': true
+    },
+    {
+      '1': 'canonical_link',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 6,
+      '10': 'canonicalLink',
+      '17': true
+    },
+    {
+      '1': 'image_link',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 7,
+      '10': 'imageLink',
+      '17': true
+    },
+    {
+      '1': 'additional_image_links',
+      '3': 12,
+      '4': 3,
+      '5': 9,
+      '10': 'additionalImageLinks'
+    },
+    {
+      '1': 'expiration_date',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expirationDate'
+    },
+    {
+      '1': 'disclosure_date',
+      '3': 79,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'disclosureDate'
+    },
     {'1': 'adult', '3': 17, '4': 1, '5': 8, '9': 8, '10': 'adult', '17': true},
-    {'1': 'age_group', '3': 18, '4': 1, '5': 9, '9': 9, '10': 'ageGroup', '17': true},
-    {'1': 'availability', '3': 19, '4': 1, '5': 9, '9': 10, '10': 'availability', '17': true},
-    {'1': 'availability_date', '3': 20, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'availabilityDate'},
+    {
+      '1': 'age_group',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '9': 9,
+      '10': 'ageGroup',
+      '17': true
+    },
+    {
+      '1': 'availability',
+      '3': 19,
+      '4': 1,
+      '5': 9,
+      '9': 10,
+      '10': 'availability',
+      '17': true
+    },
+    {
+      '1': 'availability_date',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'availabilityDate'
+    },
     {'1': 'brand', '3': 21, '4': 1, '5': 9, '9': 11, '10': 'brand', '17': true},
     {'1': 'color', '3': 22, '4': 1, '5': 9, '9': 12, '10': 'color', '17': true},
-    {'1': 'condition', '3': 23, '4': 1, '5': 9, '9': 13, '10': 'condition', '17': true},
-    {'1': 'gender', '3': 24, '4': 1, '5': 9, '9': 14, '10': 'gender', '17': true},
-    {'1': 'google_product_category', '3': 25, '4': 1, '5': 9, '9': 15, '10': 'googleProductCategory', '17': true},
+    {
+      '1': 'condition',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '9': 13,
+      '10': 'condition',
+      '17': true
+    },
+    {
+      '1': 'gender',
+      '3': 24,
+      '4': 1,
+      '5': 9,
+      '9': 14,
+      '10': 'gender',
+      '17': true
+    },
+    {
+      '1': 'google_product_category',
+      '3': 25,
+      '4': 1,
+      '5': 9,
+      '9': 15,
+      '10': 'googleProductCategory',
+      '17': true
+    },
     {'1': 'gtin', '3': 26, '4': 1, '5': 9, '9': 16, '10': 'gtin', '17': true},
-    {'1': 'item_group_id', '3': 27, '4': 1, '5': 9, '9': 17, '10': 'itemGroupId', '17': true},
-    {'1': 'material', '3': 28, '4': 1, '5': 9, '9': 18, '10': 'material', '17': true},
+    {
+      '1': 'item_group_id',
+      '3': 27,
+      '4': 1,
+      '5': 9,
+      '9': 17,
+      '10': 'itemGroupId',
+      '17': true
+    },
+    {
+      '1': 'material',
+      '3': 28,
+      '4': 1,
+      '5': 9,
+      '9': 18,
+      '10': 'material',
+      '17': true
+    },
     {'1': 'mpn', '3': 29, '4': 1, '5': 9, '9': 19, '10': 'mpn', '17': true},
-    {'1': 'pattern', '3': 30, '4': 1, '5': 9, '9': 20, '10': 'pattern', '17': true},
-    {'1': 'price', '3': 31, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'price'},
-    {'1': 'installment', '3': 32, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.Installment', '10': 'installment'},
-    {'1': 'subscription_cost', '3': 33, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.SubscriptionCost', '10': 'subscriptionCost'},
-    {'1': 'loyalty_points', '3': 34, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.LoyaltyPoints', '10': 'loyaltyPoints'},
-    {'1': 'loyalty_programs', '3': 136, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.LoyaltyProgram', '10': 'loyaltyPrograms'},
+    {
+      '1': 'pattern',
+      '3': 30,
+      '4': 1,
+      '5': 9,
+      '9': 20,
+      '10': 'pattern',
+      '17': true
+    },
+    {
+      '1': 'price',
+      '3': 31,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'price'
+    },
+    {
+      '1': 'installment',
+      '3': 32,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.Installment',
+      '10': 'installment'
+    },
+    {
+      '1': 'subscription_cost',
+      '3': 33,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.SubscriptionCost',
+      '10': 'subscriptionCost'
+    },
+    {
+      '1': 'loyalty_points',
+      '3': 34,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.LoyaltyPoints',
+      '10': 'loyaltyPoints'
+    },
+    {
+      '1': 'loyalty_programs',
+      '3': 136,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.LoyaltyProgram',
+      '10': 'loyaltyPrograms'
+    },
     {'1': 'product_types', '3': 35, '4': 3, '5': 9, '10': 'productTypes'},
-    {'1': 'sale_price', '3': 36, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'salePrice'},
-    {'1': 'sale_price_effective_date', '3': 37, '4': 1, '5': 11, '6': '.google.type.Interval', '10': 'salePriceEffectiveDate'},
-    {'1': 'sell_on_google_quantity', '3': 38, '4': 1, '5': 3, '9': 21, '10': 'sellOnGoogleQuantity', '17': true},
-    {'1': 'product_height', '3': 119, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductDimension', '10': 'productHeight'},
-    {'1': 'product_length', '3': 120, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductDimension', '10': 'productLength'},
-    {'1': 'product_width', '3': 121, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductDimension', '10': 'productWidth'},
-    {'1': 'product_weight', '3': 122, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductWeight', '10': 'productWeight'},
-    {'1': 'shipping', '3': 39, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.Shipping', '10': 'shipping'},
-    {'1': 'free_shipping_threshold', '3': 135, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.FreeShippingThreshold', '10': 'freeShippingThreshold'},
-    {'1': 'shipping_weight', '3': 40, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ShippingWeight', '10': 'shippingWeight'},
-    {'1': 'shipping_length', '3': 41, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ShippingDimension', '10': 'shippingLength'},
-    {'1': 'shipping_width', '3': 42, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ShippingDimension', '10': 'shippingWidth'},
-    {'1': 'shipping_height', '3': 43, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ShippingDimension', '10': 'shippingHeight'},
-    {'1': 'max_handling_time', '3': 44, '4': 1, '5': 3, '9': 22, '10': 'maxHandlingTime', '17': true},
-    {'1': 'min_handling_time', '3': 45, '4': 1, '5': 3, '9': 23, '10': 'minHandlingTime', '17': true},
-    {'1': 'shipping_label', '3': 46, '4': 1, '5': 9, '9': 24, '10': 'shippingLabel', '17': true},
-    {'1': 'transit_time_label', '3': 47, '4': 1, '5': 9, '9': 25, '10': 'transitTimeLabel', '17': true},
+    {
+      '1': 'sale_price',
+      '3': 36,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'salePrice'
+    },
+    {
+      '1': 'sale_price_effective_date',
+      '3': 37,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Interval',
+      '10': 'salePriceEffectiveDate'
+    },
+    {
+      '1': 'sell_on_google_quantity',
+      '3': 38,
+      '4': 1,
+      '5': 3,
+      '9': 21,
+      '10': 'sellOnGoogleQuantity',
+      '17': true
+    },
+    {
+      '1': 'product_height',
+      '3': 119,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductDimension',
+      '10': 'productHeight'
+    },
+    {
+      '1': 'product_length',
+      '3': 120,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductDimension',
+      '10': 'productLength'
+    },
+    {
+      '1': 'product_width',
+      '3': 121,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductDimension',
+      '10': 'productWidth'
+    },
+    {
+      '1': 'product_weight',
+      '3': 122,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductWeight',
+      '10': 'productWeight'
+    },
+    {
+      '1': 'shipping',
+      '3': 39,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.Shipping',
+      '10': 'shipping'
+    },
+    {
+      '1': 'free_shipping_threshold',
+      '3': 135,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.FreeShippingThreshold',
+      '10': 'freeShippingThreshold'
+    },
+    {
+      '1': 'shipping_weight',
+      '3': 40,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ShippingWeight',
+      '10': 'shippingWeight'
+    },
+    {
+      '1': 'shipping_length',
+      '3': 41,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ShippingDimension',
+      '10': 'shippingLength'
+    },
+    {
+      '1': 'shipping_width',
+      '3': 42,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ShippingDimension',
+      '10': 'shippingWidth'
+    },
+    {
+      '1': 'shipping_height',
+      '3': 43,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ShippingDimension',
+      '10': 'shippingHeight'
+    },
+    {
+      '1': 'max_handling_time',
+      '3': 44,
+      '4': 1,
+      '5': 3,
+      '9': 22,
+      '10': 'maxHandlingTime',
+      '17': true
+    },
+    {
+      '1': 'min_handling_time',
+      '3': 45,
+      '4': 1,
+      '5': 3,
+      '9': 23,
+      '10': 'minHandlingTime',
+      '17': true
+    },
+    {
+      '1': 'shipping_label',
+      '3': 46,
+      '4': 1,
+      '5': 9,
+      '9': 24,
+      '10': 'shippingLabel',
+      '17': true
+    },
+    {
+      '1': 'transit_time_label',
+      '3': 47,
+      '4': 1,
+      '5': 9,
+      '9': 25,
+      '10': 'transitTimeLabel',
+      '17': true
+    },
     {'1': 'size', '3': 48, '4': 1, '5': 9, '9': 26, '10': 'size', '17': true},
-    {'1': 'size_system', '3': 49, '4': 1, '5': 9, '9': 27, '10': 'sizeSystem', '17': true},
+    {
+      '1': 'size_system',
+      '3': 49,
+      '4': 1,
+      '5': 9,
+      '9': 27,
+      '10': 'sizeSystem',
+      '17': true
+    },
     {'1': 'size_types', '3': 50, '4': 3, '5': 9, '10': 'sizeTypes'},
-    {'1': 'taxes', '3': 51, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.Tax', '10': 'taxes'},
-    {'1': 'tax_category', '3': 52, '4': 1, '5': 9, '9': 28, '10': 'taxCategory', '17': true},
-    {'1': 'energy_efficiency_class', '3': 53, '4': 1, '5': 9, '9': 29, '10': 'energyEfficiencyClass', '17': true},
-    {'1': 'min_energy_efficiency_class', '3': 54, '4': 1, '5': 9, '9': 30, '10': 'minEnergyEfficiencyClass', '17': true},
-    {'1': 'max_energy_efficiency_class', '3': 55, '4': 1, '5': 9, '9': 31, '10': 'maxEnergyEfficiencyClass', '17': true},
-    {'1': 'unit_pricing_measure', '3': 56, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.UnitPricingMeasure', '10': 'unitPricingMeasure'},
-    {'1': 'unit_pricing_base_measure', '3': 57, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.UnitPricingBaseMeasure', '10': 'unitPricingBaseMeasure'},
-    {'1': 'multipack', '3': 58, '4': 1, '5': 3, '9': 32, '10': 'multipack', '17': true},
-    {'1': 'ads_grouping', '3': 59, '4': 1, '5': 9, '9': 33, '10': 'adsGrouping', '17': true},
+    {
+      '1': 'taxes',
+      '3': 51,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.Tax',
+      '10': 'taxes'
+    },
+    {
+      '1': 'tax_category',
+      '3': 52,
+      '4': 1,
+      '5': 9,
+      '9': 28,
+      '10': 'taxCategory',
+      '17': true
+    },
+    {
+      '1': 'energy_efficiency_class',
+      '3': 53,
+      '4': 1,
+      '5': 9,
+      '9': 29,
+      '10': 'energyEfficiencyClass',
+      '17': true
+    },
+    {
+      '1': 'min_energy_efficiency_class',
+      '3': 54,
+      '4': 1,
+      '5': 9,
+      '9': 30,
+      '10': 'minEnergyEfficiencyClass',
+      '17': true
+    },
+    {
+      '1': 'max_energy_efficiency_class',
+      '3': 55,
+      '4': 1,
+      '5': 9,
+      '9': 31,
+      '10': 'maxEnergyEfficiencyClass',
+      '17': true
+    },
+    {
+      '1': 'unit_pricing_measure',
+      '3': 56,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.UnitPricingMeasure',
+      '10': 'unitPricingMeasure'
+    },
+    {
+      '1': 'unit_pricing_base_measure',
+      '3': 57,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.UnitPricingBaseMeasure',
+      '10': 'unitPricingBaseMeasure'
+    },
+    {
+      '1': 'multipack',
+      '3': 58,
+      '4': 1,
+      '5': 3,
+      '9': 32,
+      '10': 'multipack',
+      '17': true
+    },
+    {
+      '1': 'ads_grouping',
+      '3': 59,
+      '4': 1,
+      '5': 9,
+      '9': 33,
+      '10': 'adsGrouping',
+      '17': true
+    },
     {'1': 'ads_labels', '3': 60, '4': 3, '5': 9, '10': 'adsLabels'},
-    {'1': 'ads_redirect', '3': 61, '4': 1, '5': 9, '9': 34, '10': 'adsRedirect', '17': true},
-    {'1': 'cost_of_goods_sold', '3': 62, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'costOfGoodsSold'},
-    {'1': 'product_details', '3': 63, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductDetail', '10': 'productDetails'},
-    {'1': 'product_highlights', '3': 64, '4': 3, '5': 9, '10': 'productHighlights'},
-    {'1': 'display_ads_id', '3': 65, '4': 1, '5': 9, '9': 35, '10': 'displayAdsId', '17': true},
-    {'1': 'display_ads_similar_ids', '3': 66, '4': 3, '5': 9, '10': 'displayAdsSimilarIds'},
-    {'1': 'display_ads_title', '3': 67, '4': 1, '5': 9, '9': 36, '10': 'displayAdsTitle', '17': true},
-    {'1': 'display_ads_link', '3': 68, '4': 1, '5': 9, '9': 37, '10': 'displayAdsLink', '17': true},
-    {'1': 'display_ads_value', '3': 69, '4': 1, '5': 1, '9': 38, '10': 'displayAdsValue', '17': true},
+    {
+      '1': 'ads_redirect',
+      '3': 61,
+      '4': 1,
+      '5': 9,
+      '9': 34,
+      '10': 'adsRedirect',
+      '17': true
+    },
+    {
+      '1': 'cost_of_goods_sold',
+      '3': 62,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'costOfGoodsSold'
+    },
+    {
+      '1': 'product_details',
+      '3': 63,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductDetail',
+      '10': 'productDetails'
+    },
+    {
+      '1': 'product_highlights',
+      '3': 64,
+      '4': 3,
+      '5': 9,
+      '10': 'productHighlights'
+    },
+    {
+      '1': 'display_ads_id',
+      '3': 65,
+      '4': 1,
+      '5': 9,
+      '9': 35,
+      '10': 'displayAdsId',
+      '17': true
+    },
+    {
+      '1': 'display_ads_similar_ids',
+      '3': 66,
+      '4': 3,
+      '5': 9,
+      '10': 'displayAdsSimilarIds'
+    },
+    {
+      '1': 'display_ads_title',
+      '3': 67,
+      '4': 1,
+      '5': 9,
+      '9': 36,
+      '10': 'displayAdsTitle',
+      '17': true
+    },
+    {
+      '1': 'display_ads_link',
+      '3': 68,
+      '4': 1,
+      '5': 9,
+      '9': 37,
+      '10': 'displayAdsLink',
+      '17': true
+    },
+    {
+      '1': 'display_ads_value',
+      '3': 69,
+      '4': 1,
+      '5': 1,
+      '9': 38,
+      '10': 'displayAdsValue',
+      '17': true
+    },
     {'1': 'promotion_ids', '3': 70, '4': 3, '5': 9, '10': 'promotionIds'},
-    {'1': 'pickup_method', '3': 80, '4': 1, '5': 9, '9': 39, '10': 'pickupMethod', '17': true},
-    {'1': 'pickup_sla', '3': 81, '4': 1, '5': 9, '9': 40, '10': 'pickupSla', '17': true},
-    {'1': 'link_template', '3': 82, '4': 1, '5': 9, '9': 41, '10': 'linkTemplate', '17': true},
-    {'1': 'mobile_link_template', '3': 83, '4': 1, '5': 9, '9': 42, '10': 'mobileLinkTemplate', '17': true},
-    {'1': 'custom_label_0', '3': 71, '4': 1, '5': 9, '9': 43, '10': 'customLabel0', '17': true},
-    {'1': 'custom_label_1', '3': 72, '4': 1, '5': 9, '9': 44, '10': 'customLabel1', '17': true},
-    {'1': 'custom_label_2', '3': 73, '4': 1, '5': 9, '9': 45, '10': 'customLabel2', '17': true},
-    {'1': 'custom_label_3', '3': 74, '4': 1, '5': 9, '9': 46, '10': 'customLabel3', '17': true},
-    {'1': 'custom_label_4', '3': 75, '4': 1, '5': 9, '9': 47, '10': 'customLabel4', '17': true},
-    {'1': 'included_destinations', '3': 76, '4': 3, '5': 9, '10': 'includedDestinations'},
-    {'1': 'excluded_destinations', '3': 77, '4': 3, '5': 9, '10': 'excludedDestinations'},
-    {'1': 'shopping_ads_excluded_countries', '3': 78, '4': 3, '5': 9, '10': 'shoppingAdsExcludedCountries'},
-    {'1': 'external_seller_id', '3': 1, '4': 1, '5': 9, '9': 48, '10': 'externalSellerId', '17': true},
+    {
+      '1': 'pickup_method',
+      '3': 80,
+      '4': 1,
+      '5': 9,
+      '9': 39,
+      '10': 'pickupMethod',
+      '17': true
+    },
+    {
+      '1': 'pickup_sla',
+      '3': 81,
+      '4': 1,
+      '5': 9,
+      '9': 40,
+      '10': 'pickupSla',
+      '17': true
+    },
+    {
+      '1': 'link_template',
+      '3': 82,
+      '4': 1,
+      '5': 9,
+      '9': 41,
+      '10': 'linkTemplate',
+      '17': true
+    },
+    {
+      '1': 'mobile_link_template',
+      '3': 83,
+      '4': 1,
+      '5': 9,
+      '9': 42,
+      '10': 'mobileLinkTemplate',
+      '17': true
+    },
+    {
+      '1': 'custom_label_0',
+      '3': 71,
+      '4': 1,
+      '5': 9,
+      '9': 43,
+      '10': 'customLabel0',
+      '17': true
+    },
+    {
+      '1': 'custom_label_1',
+      '3': 72,
+      '4': 1,
+      '5': 9,
+      '9': 44,
+      '10': 'customLabel1',
+      '17': true
+    },
+    {
+      '1': 'custom_label_2',
+      '3': 73,
+      '4': 1,
+      '5': 9,
+      '9': 45,
+      '10': 'customLabel2',
+      '17': true
+    },
+    {
+      '1': 'custom_label_3',
+      '3': 74,
+      '4': 1,
+      '5': 9,
+      '9': 46,
+      '10': 'customLabel3',
+      '17': true
+    },
+    {
+      '1': 'custom_label_4',
+      '3': 75,
+      '4': 1,
+      '5': 9,
+      '9': 47,
+      '10': 'customLabel4',
+      '17': true
+    },
+    {
+      '1': 'included_destinations',
+      '3': 76,
+      '4': 3,
+      '5': 9,
+      '10': 'includedDestinations'
+    },
+    {
+      '1': 'excluded_destinations',
+      '3': 77,
+      '4': 3,
+      '5': 9,
+      '10': 'excludedDestinations'
+    },
+    {
+      '1': 'shopping_ads_excluded_countries',
+      '3': 78,
+      '4': 3,
+      '5': 9,
+      '10': 'shoppingAdsExcludedCountries'
+    },
+    {
+      '1': 'external_seller_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 48,
+      '10': 'externalSellerId',
+      '17': true
+    },
     {'1': 'pause', '3': 13, '4': 1, '5': 9, '9': 49, '10': 'pause', '17': true},
-    {'1': 'lifestyle_image_links', '3': 14, '4': 3, '5': 9, '10': 'lifestyleImageLinks'},
-    {'1': 'cloud_export_additional_properties', '3': 84, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.CloudExportAdditionalProperties', '10': 'cloudExportAdditionalProperties'},
-    {'1': 'virtual_model_link', '3': 130, '4': 1, '5': 9, '9': 50, '10': 'virtualModelLink', '17': true},
-    {'1': 'certifications', '3': 123, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.Certification', '10': 'certifications'},
-    {'1': 'structured_title', '3': 132, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductStructuredTitle', '9': 51, '10': 'structuredTitle', '17': true},
-    {'1': 'structured_description', '3': 133, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductStructuredDescription', '9': 52, '10': 'structuredDescription', '17': true},
-    {'1': 'auto_pricing_min_price', '3': 124, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'autoPricingMinPrice'},
+    {
+      '1': 'lifestyle_image_links',
+      '3': 14,
+      '4': 3,
+      '5': 9,
+      '10': 'lifestyleImageLinks'
+    },
+    {
+      '1': 'cloud_export_additional_properties',
+      '3': 84,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.products.v1beta.CloudExportAdditionalProperties',
+      '10': 'cloudExportAdditionalProperties'
+    },
+    {
+      '1': 'virtual_model_link',
+      '3': 130,
+      '4': 1,
+      '5': 9,
+      '9': 50,
+      '10': 'virtualModelLink',
+      '17': true
+    },
+    {
+      '1': 'certifications',
+      '3': 123,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.Certification',
+      '10': 'certifications'
+    },
+    {
+      '1': 'structured_title',
+      '3': 132,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductStructuredTitle',
+      '9': 51,
+      '10': 'structuredTitle',
+      '17': true
+    },
+    {
+      '1': 'structured_description',
+      '3': 133,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.products.v1beta.ProductStructuredDescription',
+      '9': 52,
+      '10': 'structuredDescription',
+      '17': true
+    },
+    {
+      '1': 'auto_pricing_min_price',
+      '3': 124,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'autoPricingMinPrice'
+    },
   ],
   '8': [
     {'1': '_identifier_exists'},
@@ -359,9 +953,10 @@ const UnitPricingBaseMeasure$json = {
 };
 
 /// Descriptor for `UnitPricingBaseMeasure`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List unitPricingBaseMeasureDescriptor = $convert.base64Decode(
-    'ChZVbml0UHJpY2luZ0Jhc2VNZWFzdXJlEhQKBXZhbHVlGAEgASgDUgV2YWx1ZRISCgR1bml0GA'
-    'IgASgJUgR1bml0');
+final $typed_data.Uint8List unitPricingBaseMeasureDescriptor =
+    $convert.base64Decode(
+        'ChZVbml0UHJpY2luZ0Jhc2VNZWFzdXJlEhQKBXZhbHVlGAEgASgDUgV2YWx1ZRISCgR1bml0GA'
+        'IgASgJUgR1bml0');
 
 @$core.Deprecated('Use unitPricingMeasureDescriptor instead')
 const UnitPricingMeasure$json = {
@@ -381,9 +976,23 @@ final $typed_data.Uint8List unitPricingMeasureDescriptor = $convert.base64Decode
 const SubscriptionCost$json = {
   '1': 'SubscriptionCost',
   '2': [
-    {'1': 'period', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.merchant.products.v1beta.SubscriptionPeriod', '10': 'period'},
+    {
+      '1': 'period',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.products.v1beta.SubscriptionPeriod',
+      '10': 'period'
+    },
     {'1': 'period_length', '3': 2, '4': 1, '5': 3, '10': 'periodLength'},
-    {'1': 'amount', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'amount'},
+    {
+      '1': 'amount',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'amount'
+    },
   ],
 };
 
@@ -399,9 +1008,33 @@ const Installment$json = {
   '1': 'Installment',
   '2': [
     {'1': 'months', '3': 1, '4': 1, '5': 3, '10': 'months'},
-    {'1': 'amount', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'amount'},
-    {'1': 'downpayment', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 0, '10': 'downpayment', '17': true},
-    {'1': 'credit_type', '3': 4, '4': 1, '5': 9, '9': 1, '10': 'creditType', '17': true},
+    {
+      '1': 'amount',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'amount'
+    },
+    {
+      '1': 'downpayment',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 0,
+      '10': 'downpayment',
+      '17': true
+    },
+    {
+      '1': 'credit_type',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'creditType',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_downpayment'},
@@ -436,11 +1069,53 @@ final $typed_data.Uint8List loyaltyPointsDescriptor = $convert.base64Decode(
 const LoyaltyProgram$json = {
   '1': 'LoyaltyProgram',
   '2': [
-    {'1': 'program_label', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'programLabel', '17': true},
-    {'1': 'tier_label', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'tierLabel', '17': true},
-    {'1': 'price', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 2, '10': 'price', '17': true},
-    {'1': 'cashback_for_future_use', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 3, '10': 'cashbackForFutureUse', '17': true},
-    {'1': 'loyalty_points', '3': 5, '4': 1, '5': 3, '9': 4, '10': 'loyaltyPoints', '17': true},
+    {
+      '1': 'program_label',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'programLabel',
+      '17': true
+    },
+    {
+      '1': 'tier_label',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'tierLabel',
+      '17': true
+    },
+    {
+      '1': 'price',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 2,
+      '10': 'price',
+      '17': true
+    },
+    {
+      '1': 'cashback_for_future_use',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 3,
+      '10': 'cashbackForFutureUse',
+      '17': true
+    },
+    {
+      '1': 'loyalty_points',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 4,
+      '10': 'loyaltyPoints',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_program_label'},
@@ -465,17 +1140,62 @@ final $typed_data.Uint8List loyaltyProgramDescriptor = $convert.base64Decode(
 const Shipping$json = {
   '1': 'Shipping',
   '2': [
-    {'1': 'price', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'price'},
+    {
+      '1': 'price',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'price'
+    },
     {'1': 'country', '3': 2, '4': 1, '5': 9, '10': 'country'},
     {'1': 'region', '3': 3, '4': 1, '5': 9, '10': 'region'},
     {'1': 'service', '3': 4, '4': 1, '5': 9, '10': 'service'},
     {'1': 'location_id', '3': 5, '4': 1, '5': 3, '10': 'locationId'},
-    {'1': 'location_group_name', '3': 6, '4': 1, '5': 9, '10': 'locationGroupName'},
+    {
+      '1': 'location_group_name',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'locationGroupName'
+    },
     {'1': 'postal_code', '3': 7, '4': 1, '5': 9, '10': 'postalCode'},
-    {'1': 'min_handling_time', '3': 8, '4': 1, '5': 3, '9': 0, '10': 'minHandlingTime', '17': true},
-    {'1': 'max_handling_time', '3': 9, '4': 1, '5': 3, '9': 1, '10': 'maxHandlingTime', '17': true},
-    {'1': 'min_transit_time', '3': 10, '4': 1, '5': 3, '9': 2, '10': 'minTransitTime', '17': true},
-    {'1': 'max_transit_time', '3': 11, '4': 1, '5': 3, '9': 3, '10': 'maxTransitTime', '17': true},
+    {
+      '1': 'min_handling_time',
+      '3': 8,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'minHandlingTime',
+      '17': true
+    },
+    {
+      '1': 'max_handling_time',
+      '3': 9,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'maxHandlingTime',
+      '17': true
+    },
+    {
+      '1': 'min_transit_time',
+      '3': 10,
+      '4': 1,
+      '5': 3,
+      '9': 2,
+      '10': 'minTransitTime',
+      '17': true
+    },
+    {
+      '1': 'max_transit_time',
+      '3': 11,
+      '4': 1,
+      '5': 3,
+      '9': 3,
+      '10': 'maxTransitTime',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_min_handling_time'},
@@ -502,8 +1222,25 @@ final $typed_data.Uint8List shippingDescriptor = $convert.base64Decode(
 const FreeShippingThreshold$json = {
   '1': 'FreeShippingThreshold',
   '2': [
-    {'1': 'country', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'country', '17': true},
-    {'1': 'price_threshold', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 1, '10': 'priceThreshold', '17': true},
+    {
+      '1': 'country',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'country',
+      '17': true
+    },
+    {
+      '1': 'price_threshold',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 1,
+      '10': 'priceThreshold',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_country'},
@@ -537,10 +1274,42 @@ final $typed_data.Uint8List productDetailDescriptor = $convert.base64Decode(
 const Certification$json = {
   '1': 'Certification',
   '2': [
-    {'1': 'certification_authority', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'certificationAuthority', '17': true},
-    {'1': 'certification_name', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'certificationName', '17': true},
-    {'1': 'certification_code', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'certificationCode', '17': true},
-    {'1': 'certification_value', '3': 4, '4': 1, '5': 9, '9': 3, '10': 'certificationValue', '17': true},
+    {
+      '1': 'certification_authority',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'certificationAuthority',
+      '17': true
+    },
+    {
+      '1': 'certification_name',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'certificationName',
+      '17': true
+    },
+    {
+      '1': 'certification_code',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'certificationCode',
+      '17': true
+    },
+    {
+      '1': 'certification_value',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 3,
+      '10': 'certificationValue',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_certification_authority'},
@@ -563,8 +1332,24 @@ final $typed_data.Uint8List certificationDescriptor = $convert.base64Decode(
 const ProductStructuredTitle$json = {
   '1': 'ProductStructuredTitle',
   '2': [
-    {'1': 'digital_source_type', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'digitalSourceType', '17': true},
-    {'1': 'content', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'content', '17': true},
+    {
+      '1': 'digital_source_type',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'digitalSourceType',
+      '17': true
+    },
+    {
+      '1': 'content',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'content',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_digital_source_type'},
@@ -582,8 +1367,24 @@ final $typed_data.Uint8List productStructuredTitleDescriptor = $convert.base64De
 const ProductStructuredDescription$json = {
   '1': 'ProductStructuredDescription',
   '2': [
-    {'1': 'digital_source_type', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'digitalSourceType', '17': true},
-    {'1': 'content', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'content', '17': true},
+    {
+      '1': 'digital_source_type',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'digitalSourceType',
+      '17': true
+    },
+    {
+      '1': 'content',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'content',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_digital_source_type'},
@@ -592,10 +1393,11 @@ const ProductStructuredDescription$json = {
 };
 
 /// Descriptor for `ProductStructuredDescription`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List productStructuredDescriptionDescriptor = $convert.base64Decode(
-    'ChxQcm9kdWN0U3RydWN0dXJlZERlc2NyaXB0aW9uEjMKE2RpZ2l0YWxfc291cmNlX3R5cGUYAS'
-    'ABKAlIAFIRZGlnaXRhbFNvdXJjZVR5cGWIAQESHQoHY29udGVudBgCIAEoCUgBUgdjb250ZW50'
-    'iAEBQhYKFF9kaWdpdGFsX3NvdXJjZV90eXBlQgoKCF9jb250ZW50');
+final $typed_data.Uint8List productStructuredDescriptionDescriptor =
+    $convert.base64Decode(
+        'ChxQcm9kdWN0U3RydWN0dXJlZERlc2NyaXB0aW9uEjMKE2RpZ2l0YWxfc291cmNlX3R5cGUYAS'
+        'ABKAlIAFIRZGlnaXRhbFNvdXJjZVR5cGWIAQESHQoHY29udGVudBgCIAEoCUgBUgdjb250ZW50'
+        'iAEBQhYKFF9kaWdpdGFsX3NvdXJjZV90eXBlQgoKCF9jb250ZW50');
 
 @$core.Deprecated('Use productDimensionDescriptor instead')
 const ProductDimension$json = {
@@ -629,23 +1431,88 @@ final $typed_data.Uint8List productWeightDescriptor = $convert.base64Decode(
 const ProductStatus$json = {
   '1': 'ProductStatus',
   '2': [
-    {'1': 'destination_statuses', '3': 3, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductStatus.DestinationStatus', '10': 'destinationStatuses'},
-    {'1': 'item_level_issues', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductStatus.ItemLevelIssue', '10': 'itemLevelIssues'},
-    {'1': 'creation_date', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'creationDate'},
-    {'1': 'last_update_date', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastUpdateDate'},
-    {'1': 'google_expiration_date', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'googleExpirationDate'},
+    {
+      '1': 'destination_statuses',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.products.v1beta.ProductStatus.DestinationStatus',
+      '10': 'destinationStatuses'
+    },
+    {
+      '1': 'item_level_issues',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.products.v1beta.ProductStatus.ItemLevelIssue',
+      '10': 'itemLevelIssues'
+    },
+    {
+      '1': 'creation_date',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'creationDate'
+    },
+    {
+      '1': 'last_update_date',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastUpdateDate'
+    },
+    {
+      '1': 'google_expiration_date',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'googleExpirationDate'
+    },
   ],
-  '3': [ProductStatus_DestinationStatus$json, ProductStatus_ItemLevelIssue$json],
+  '3': [
+    ProductStatus_DestinationStatus$json,
+    ProductStatus_ItemLevelIssue$json
+  ],
 };
 
 @$core.Deprecated('Use productStatusDescriptor instead')
 const ProductStatus_DestinationStatus$json = {
   '1': 'DestinationStatus',
   '2': [
-    {'1': 'reporting_context', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.type.ReportingContext.ReportingContextEnum', '10': 'reportingContext'},
-    {'1': 'approved_countries', '3': 2, '4': 3, '5': 9, '10': 'approvedCountries'},
-    {'1': 'pending_countries', '3': 3, '4': 3, '5': 9, '10': 'pendingCountries'},
-    {'1': 'disapproved_countries', '3': 4, '4': 3, '5': 9, '10': 'disapprovedCountries'},
+    {
+      '1': 'reporting_context',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.ReportingContext.ReportingContextEnum',
+      '10': 'reportingContext'
+    },
+    {
+      '1': 'approved_countries',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'approvedCountries'
+    },
+    {
+      '1': 'pending_countries',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'pendingCountries'
+    },
+    {
+      '1': 'disapproved_countries',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'disapprovedCountries'
+    },
   ],
 };
 
@@ -654,14 +1521,35 @@ const ProductStatus_ItemLevelIssue$json = {
   '1': 'ItemLevelIssue',
   '2': [
     {'1': 'code', '3': 1, '4': 1, '5': 9, '10': 'code'},
-    {'1': 'severity', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.products.v1beta.ProductStatus.ItemLevelIssue.Severity', '10': 'severity'},
+    {
+      '1': 'severity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.products.v1beta.ProductStatus.ItemLevelIssue.Severity',
+      '10': 'severity'
+    },
     {'1': 'resolution', '3': 3, '4': 1, '5': 9, '10': 'resolution'},
     {'1': 'attribute', '3': 4, '4': 1, '5': 9, '10': 'attribute'},
-    {'1': 'reporting_context', '3': 5, '4': 1, '5': 14, '6': '.google.shopping.type.ReportingContext.ReportingContextEnum', '10': 'reportingContext'},
+    {
+      '1': 'reporting_context',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.ReportingContext.ReportingContextEnum',
+      '10': 'reportingContext'
+    },
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
     {'1': 'detail', '3': 7, '4': 1, '5': 9, '10': 'detail'},
     {'1': 'documentation', '3': 8, '4': 1, '5': 9, '10': 'documentation'},
-    {'1': 'applicable_countries', '3': 9, '4': 3, '5': 9, '10': 'applicableCountries'},
+    {
+      '1': 'applicable_countries',
+      '3': 9,
+      '4': 3,
+      '5': 9,
+      '10': 'applicableCountries'
+    },
   ],
   '4': [ProductStatus_ItemLevelIssue_Severity$json],
 };
@@ -708,14 +1596,54 @@ final $typed_data.Uint8List productStatusDescriptor = $convert.base64Decode(
 const CloudExportAdditionalProperties$json = {
   '1': 'CloudExportAdditionalProperties',
   '2': [
-    {'1': 'property_name', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'propertyName', '17': true},
+    {
+      '1': 'property_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'propertyName',
+      '17': true
+    },
     {'1': 'text_value', '3': 2, '4': 3, '5': 9, '10': 'textValue'},
-    {'1': 'bool_value', '3': 3, '4': 1, '5': 8, '9': 1, '10': 'boolValue', '17': true},
+    {
+      '1': 'bool_value',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'boolValue',
+      '17': true
+    },
     {'1': 'int_value', '3': 4, '4': 3, '5': 3, '10': 'intValue'},
     {'1': 'float_value', '3': 5, '4': 3, '5': 2, '10': 'floatValue'},
-    {'1': 'min_value', '3': 6, '4': 1, '5': 2, '9': 2, '10': 'minValue', '17': true},
-    {'1': 'max_value', '3': 7, '4': 1, '5': 2, '9': 3, '10': 'maxValue', '17': true},
-    {'1': 'unit_code', '3': 8, '4': 1, '5': 9, '9': 4, '10': 'unitCode', '17': true},
+    {
+      '1': 'min_value',
+      '3': 6,
+      '4': 1,
+      '5': 2,
+      '9': 2,
+      '10': 'minValue',
+      '17': true
+    },
+    {
+      '1': 'max_value',
+      '3': 7,
+      '4': 1,
+      '5': 2,
+      '9': 3,
+      '10': 'maxValue',
+      '17': true
+    },
+    {
+      '1': 'unit_code',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'unitCode',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_property_name'},
@@ -735,4 +1663,3 @@ final $typed_data.Uint8List cloudExportAdditionalPropertiesDescriptor = $convert
     'AkgCUghtaW5WYWx1ZYgBARIgCgltYXhfdmFsdWUYByABKAJIA1IIbWF4VmFsdWWIAQESIAoJdW'
     '5pdF9jb2RlGAggASgJSARSCHVuaXRDb2RliAEBQhAKDl9wcm9wZXJ0eV9uYW1lQg0KC19ib29s'
     'X3ZhbHVlQgwKCl9taW5fdmFsdWVCDAoKX21heF92YWx1ZUIMCgpfdW5pdF9jb2Rl');
-

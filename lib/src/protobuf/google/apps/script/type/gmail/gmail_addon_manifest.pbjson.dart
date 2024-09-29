@@ -17,11 +17,45 @@ import 'dart:typed_data' as $typed_data;
 const GmailAddOnManifest$json = {
   '1': 'GmailAddOnManifest',
   '2': [
-    {'1': 'homepage_trigger', '3': 14, '4': 1, '5': 11, '6': '.google.apps.script.type.HomepageExtensionPoint', '10': 'homepageTrigger'},
-    {'1': 'contextual_triggers', '3': 3, '4': 3, '5': 11, '6': '.google.apps.script.type.gmail.ContextualTrigger', '10': 'contextualTriggers'},
-    {'1': 'universal_actions', '3': 4, '4': 3, '5': 11, '6': '.google.apps.script.type.gmail.UniversalAction', '10': 'universalActions'},
-    {'1': 'compose_trigger', '3': 12, '4': 1, '5': 11, '6': '.google.apps.script.type.gmail.ComposeTrigger', '10': 'composeTrigger'},
-    {'1': 'authorization_check_function', '3': 7, '4': 1, '5': 9, '10': 'authorizationCheckFunction'},
+    {
+      '1': 'homepage_trigger',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.HomepageExtensionPoint',
+      '10': 'homepageTrigger'
+    },
+    {
+      '1': 'contextual_triggers',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.script.type.gmail.ContextualTrigger',
+      '10': 'contextualTriggers'
+    },
+    {
+      '1': 'universal_actions',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.script.type.gmail.UniversalAction',
+      '10': 'universalActions'
+    },
+    {
+      '1': 'compose_trigger',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.gmail.ComposeTrigger',
+      '10': 'composeTrigger'
+    },
+    {
+      '1': 'authorization_check_function',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'authorizationCheckFunction'
+    },
   ],
 };
 
@@ -60,8 +94,22 @@ final $typed_data.Uint8List universalActionDescriptor = $convert.base64Decode(
 const ComposeTrigger$json = {
   '1': 'ComposeTrigger',
   '2': [
-    {'1': 'actions', '3': 5, '4': 3, '5': 11, '6': '.google.apps.script.type.MenuItemExtensionPoint', '10': 'actions'},
-    {'1': 'draft_access', '3': 4, '4': 1, '5': 14, '6': '.google.apps.script.type.gmail.ComposeTrigger.DraftAccess', '10': 'draftAccess'},
+    {
+      '1': 'actions',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.script.type.MenuItemExtensionPoint',
+      '10': 'actions'
+    },
+    {
+      '1': 'draft_access',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.script.type.gmail.ComposeTrigger.DraftAccess',
+      '10': 'draftAccess'
+    },
   ],
   '4': [ComposeTrigger_DraftAccess$json],
 };
@@ -88,8 +136,22 @@ final $typed_data.Uint8List composeTriggerDescriptor = $convert.base64Decode(
 const ContextualTrigger$json = {
   '1': 'ContextualTrigger',
   '2': [
-    {'1': 'unconditional', '3': 1, '4': 1, '5': 11, '6': '.google.apps.script.type.gmail.UnconditionalTrigger', '9': 0, '10': 'unconditional'},
-    {'1': 'on_trigger_function', '3': 4, '4': 1, '5': 9, '10': 'onTriggerFunction'},
+    {
+      '1': 'unconditional',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.gmail.UnconditionalTrigger',
+      '9': 0,
+      '10': 'unconditional'
+    },
+    {
+      '1': 'on_trigger_function',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'onTriggerFunction'
+    },
   ],
   '8': [
     {'1': 'trigger'},
@@ -109,6 +171,5 @@ const UnconditionalTrigger$json = {
 };
 
 /// Descriptor for `UnconditionalTrigger`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List unconditionalTriggerDescriptor = $convert.base64Decode(
-    'ChRVbmNvbmRpdGlvbmFsVHJpZ2dlcg==');
-
+final $typed_data.Uint8List unconditionalTriggerDescriptor =
+    $convert.base64Decode('ChRVbmNvbmRpdGlvbmFsVHJpZ2dlcg==');

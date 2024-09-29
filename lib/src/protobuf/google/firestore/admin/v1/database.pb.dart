@@ -37,34 +37,43 @@ class Database_CmekConfig extends $pb.GeneratedMessage {
     return $result;
   }
   Database_CmekConfig._() : super();
-  factory Database_CmekConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database_CmekConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database_CmekConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database_CmekConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database.CmekConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Database.CmekConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kmsKeyName')
     ..pPS(2, _omitFieldNames ? '' : 'activeKeyVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Database_CmekConfig clone() => Database_CmekConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database_CmekConfig copyWith(void Function(Database_CmekConfig) updates) => super.copyWith((message) => updates(message as Database_CmekConfig)) as Database_CmekConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database_CmekConfig copyWith(void Function(Database_CmekConfig) updates) =>
+      super.copyWith((message) => updates(message as Database_CmekConfig))
+          as Database_CmekConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Database_CmekConfig create() => Database_CmekConfig._();
   Database_CmekConfig createEmptyInstance() => create();
-  static $pb.PbList<Database_CmekConfig> createRepeated() => $pb.PbList<Database_CmekConfig>();
+  static $pb.PbList<Database_CmekConfig> createRepeated() =>
+      $pb.PbList<Database_CmekConfig>();
   @$core.pragma('dart2js:noInline')
-  static Database_CmekConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database_CmekConfig>(create);
+  static Database_CmekConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Database_CmekConfig>(create);
   static Database_CmekConfig? _defaultInstance;
 
   ///  Required. Only keys in the same location as this database are allowed to
@@ -80,7 +89,10 @@ class Database_CmekConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get kmsKeyName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set kmsKeyName($core.String v) { $_setString(0, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKmsKeyName() => $_has(0);
   @$pb.TagNumber(1)
@@ -109,33 +121,47 @@ class Database_SourceInfo_BackupSource extends $pb.GeneratedMessage {
     return $result;
   }
   Database_SourceInfo_BackupSource._() : super();
-  factory Database_SourceInfo_BackupSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database_SourceInfo_BackupSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database_SourceInfo_BackupSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database_SourceInfo_BackupSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database.SourceInfo.BackupSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Database.SourceInfo.BackupSource',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'backup')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Database_SourceInfo_BackupSource clone() => Database_SourceInfo_BackupSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database_SourceInfo_BackupSource copyWith(void Function(Database_SourceInfo_BackupSource) updates) => super.copyWith((message) => updates(message as Database_SourceInfo_BackupSource)) as Database_SourceInfo_BackupSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Database_SourceInfo_BackupSource clone() =>
+      Database_SourceInfo_BackupSource()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database_SourceInfo_BackupSource copyWith(
+          void Function(Database_SourceInfo_BackupSource) updates) =>
+      super.copyWith(
+              (message) => updates(message as Database_SourceInfo_BackupSource))
+          as Database_SourceInfo_BackupSource;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Database_SourceInfo_BackupSource create() => Database_SourceInfo_BackupSource._();
+  static Database_SourceInfo_BackupSource create() =>
+      Database_SourceInfo_BackupSource._();
   Database_SourceInfo_BackupSource createEmptyInstance() => create();
-  static $pb.PbList<Database_SourceInfo_BackupSource> createRepeated() => $pb.PbList<Database_SourceInfo_BackupSource>();
+  static $pb.PbList<Database_SourceInfo_BackupSource> createRepeated() =>
+      $pb.PbList<Database_SourceInfo_BackupSource>();
   @$core.pragma('dart2js:noInline')
-  static Database_SourceInfo_BackupSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database_SourceInfo_BackupSource>(create);
+  static Database_SourceInfo_BackupSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Database_SourceInfo_BackupSource>(
+          create);
   static Database_SourceInfo_BackupSource? _defaultInstance;
 
   /// The resource name of the backup that was used to restore this
@@ -144,17 +170,17 @@ class Database_SourceInfo_BackupSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get backup => $_getSZ(0);
   @$pb.TagNumber(1)
-  set backup($core.String v) { $_setString(0, v); }
+  set backup($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBackup() => $_has(0);
   @$pb.TagNumber(1)
   void clearBackup() => clearField(1);
 }
 
-enum Database_SourceInfo_Source {
-  backup, 
-  notSet
-}
+enum Database_SourceInfo_Source { backup, notSet }
 
 /// Information about the provenance of this database.
 class Database_SourceInfo extends $pb.GeneratedMessage {
@@ -172,42 +198,54 @@ class Database_SourceInfo extends $pb.GeneratedMessage {
     return $result;
   }
   Database_SourceInfo._() : super();
-  factory Database_SourceInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database_SourceInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database_SourceInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database_SourceInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Database_SourceInfo_Source> _Database_SourceInfo_SourceByTag = {
-    1 : Database_SourceInfo_Source.backup,
-    0 : Database_SourceInfo_Source.notSet
+  static const $core.Map<$core.int, Database_SourceInfo_Source>
+      _Database_SourceInfo_SourceByTag = {
+    1: Database_SourceInfo_Source.backup,
+    0: Database_SourceInfo_Source.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database.SourceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Database.SourceInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<Database_SourceInfo_BackupSource>(1, _omitFieldNames ? '' : 'backup', subBuilder: Database_SourceInfo_BackupSource.create)
+    ..aOM<Database_SourceInfo_BackupSource>(1, _omitFieldNames ? '' : 'backup',
+        subBuilder: Database_SourceInfo_BackupSource.create)
     ..aOS(3, _omitFieldNames ? '' : 'operation')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Database_SourceInfo clone() => Database_SourceInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database_SourceInfo copyWith(void Function(Database_SourceInfo) updates) => super.copyWith((message) => updates(message as Database_SourceInfo)) as Database_SourceInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database_SourceInfo copyWith(void Function(Database_SourceInfo) updates) =>
+      super.copyWith((message) => updates(message as Database_SourceInfo))
+          as Database_SourceInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Database_SourceInfo create() => Database_SourceInfo._();
   Database_SourceInfo createEmptyInstance() => create();
-  static $pb.PbList<Database_SourceInfo> createRepeated() => $pb.PbList<Database_SourceInfo>();
+  static $pb.PbList<Database_SourceInfo> createRepeated() =>
+      $pb.PbList<Database_SourceInfo>();
   @$core.pragma('dart2js:noInline')
-  static Database_SourceInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database_SourceInfo>(create);
+  static Database_SourceInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Database_SourceInfo>(create);
   static Database_SourceInfo? _defaultInstance;
 
-  Database_SourceInfo_Source whichSource() => _Database_SourceInfo_SourceByTag[$_whichOneof(0)]!;
+  Database_SourceInfo_Source whichSource() =>
+      _Database_SourceInfo_SourceByTag[$_whichOneof(0)]!;
   void clearSource() => clearField($_whichOneof(0));
 
   /// If set, this database was restored from the specified backup (or a
@@ -215,7 +253,10 @@ class Database_SourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Database_SourceInfo_BackupSource get backup => $_getN(0);
   @$pb.TagNumber(1)
-  set backup(Database_SourceInfo_BackupSource v) { setField(1, v); }
+  set backup(Database_SourceInfo_BackupSource v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBackup() => $_has(0);
   @$pb.TagNumber(1)
@@ -229,7 +270,10 @@ class Database_SourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get operation => $_getSZ(1);
   @$pb.TagNumber(3)
-  set operation($core.String v) { $_setString(1, v); }
+  set operation($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOperation() => $_has(1);
   @$pb.TagNumber(3)
@@ -237,75 +281,125 @@ class Database_SourceInfo extends $pb.GeneratedMessage {
 }
 
 /// The configuration options for using Google default encryption.
-class Database_EncryptionConfig_GoogleDefaultEncryptionOptions extends $pb.GeneratedMessage {
-  factory Database_EncryptionConfig_GoogleDefaultEncryptionOptions() => create();
+class Database_EncryptionConfig_GoogleDefaultEncryptionOptions
+    extends $pb.GeneratedMessage {
+  factory Database_EncryptionConfig_GoogleDefaultEncryptionOptions() =>
+      create();
   Database_EncryptionConfig_GoogleDefaultEncryptionOptions._() : super();
-  factory Database_EncryptionConfig_GoogleDefaultEncryptionOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database_EncryptionConfig_GoogleDefaultEncryptionOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database_EncryptionConfig_GoogleDefaultEncryptionOptions.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database_EncryptionConfig_GoogleDefaultEncryptionOptions.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database.EncryptionConfig.GoogleDefaultEncryptionOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'Database.EncryptionConfig.GoogleDefaultEncryptionOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig_GoogleDefaultEncryptionOptions clone() => Database_EncryptionConfig_GoogleDefaultEncryptionOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig_GoogleDefaultEncryptionOptions copyWith(void Function(Database_EncryptionConfig_GoogleDefaultEncryptionOptions) updates) => super.copyWith((message) => updates(message as Database_EncryptionConfig_GoogleDefaultEncryptionOptions)) as Database_EncryptionConfig_GoogleDefaultEncryptionOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig_GoogleDefaultEncryptionOptions clone() =>
+      Database_EncryptionConfig_GoogleDefaultEncryptionOptions()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig_GoogleDefaultEncryptionOptions copyWith(
+          void Function(
+                  Database_EncryptionConfig_GoogleDefaultEncryptionOptions)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as Database_EncryptionConfig_GoogleDefaultEncryptionOptions))
+          as Database_EncryptionConfig_GoogleDefaultEncryptionOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Database_EncryptionConfig_GoogleDefaultEncryptionOptions create() => Database_EncryptionConfig_GoogleDefaultEncryptionOptions._();
-  Database_EncryptionConfig_GoogleDefaultEncryptionOptions createEmptyInstance() => create();
-  static $pb.PbList<Database_EncryptionConfig_GoogleDefaultEncryptionOptions> createRepeated() => $pb.PbList<Database_EncryptionConfig_GoogleDefaultEncryptionOptions>();
+  static Database_EncryptionConfig_GoogleDefaultEncryptionOptions create() =>
+      Database_EncryptionConfig_GoogleDefaultEncryptionOptions._();
+  Database_EncryptionConfig_GoogleDefaultEncryptionOptions
+      createEmptyInstance() => create();
+  static $pb.PbList<Database_EncryptionConfig_GoogleDefaultEncryptionOptions>
+      createRepeated() => $pb.PbList<
+          Database_EncryptionConfig_GoogleDefaultEncryptionOptions>();
   @$core.pragma('dart2js:noInline')
-  static Database_EncryptionConfig_GoogleDefaultEncryptionOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database_EncryptionConfig_GoogleDefaultEncryptionOptions>(create);
-  static Database_EncryptionConfig_GoogleDefaultEncryptionOptions? _defaultInstance;
+  static Database_EncryptionConfig_GoogleDefaultEncryptionOptions
+      getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Database_EncryptionConfig_GoogleDefaultEncryptionOptions>(create);
+  static Database_EncryptionConfig_GoogleDefaultEncryptionOptions?
+      _defaultInstance;
 }
 
 /// The configuration options for using the same encryption method as the
 /// source.
-class Database_EncryptionConfig_SourceEncryptionOptions extends $pb.GeneratedMessage {
+class Database_EncryptionConfig_SourceEncryptionOptions
+    extends $pb.GeneratedMessage {
   factory Database_EncryptionConfig_SourceEncryptionOptions() => create();
   Database_EncryptionConfig_SourceEncryptionOptions._() : super();
-  factory Database_EncryptionConfig_SourceEncryptionOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database_EncryptionConfig_SourceEncryptionOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database_EncryptionConfig_SourceEncryptionOptions.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database_EncryptionConfig_SourceEncryptionOptions.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database.EncryptionConfig.SourceEncryptionOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'Database.EncryptionConfig.SourceEncryptionOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig_SourceEncryptionOptions clone() => Database_EncryptionConfig_SourceEncryptionOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig_SourceEncryptionOptions copyWith(void Function(Database_EncryptionConfig_SourceEncryptionOptions) updates) => super.copyWith((message) => updates(message as Database_EncryptionConfig_SourceEncryptionOptions)) as Database_EncryptionConfig_SourceEncryptionOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig_SourceEncryptionOptions clone() =>
+      Database_EncryptionConfig_SourceEncryptionOptions()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig_SourceEncryptionOptions copyWith(
+          void Function(Database_EncryptionConfig_SourceEncryptionOptions)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as Database_EncryptionConfig_SourceEncryptionOptions))
+          as Database_EncryptionConfig_SourceEncryptionOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Database_EncryptionConfig_SourceEncryptionOptions create() => Database_EncryptionConfig_SourceEncryptionOptions._();
-  Database_EncryptionConfig_SourceEncryptionOptions createEmptyInstance() => create();
-  static $pb.PbList<Database_EncryptionConfig_SourceEncryptionOptions> createRepeated() => $pb.PbList<Database_EncryptionConfig_SourceEncryptionOptions>();
+  static Database_EncryptionConfig_SourceEncryptionOptions create() =>
+      Database_EncryptionConfig_SourceEncryptionOptions._();
+  Database_EncryptionConfig_SourceEncryptionOptions createEmptyInstance() =>
+      create();
+  static $pb.PbList<Database_EncryptionConfig_SourceEncryptionOptions>
+      createRepeated() =>
+          $pb.PbList<Database_EncryptionConfig_SourceEncryptionOptions>();
   @$core.pragma('dart2js:noInline')
-  static Database_EncryptionConfig_SourceEncryptionOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database_EncryptionConfig_SourceEncryptionOptions>(create);
+  static Database_EncryptionConfig_SourceEncryptionOptions getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Database_EncryptionConfig_SourceEncryptionOptions>(create);
   static Database_EncryptionConfig_SourceEncryptionOptions? _defaultInstance;
 }
 
 /// The configuration options for using CMEK (Customer Managed Encryption
 /// Key) encryption.
-class Database_EncryptionConfig_CustomerManagedEncryptionOptions extends $pb.GeneratedMessage {
+class Database_EncryptionConfig_CustomerManagedEncryptionOptions
+    extends $pb.GeneratedMessage {
   factory Database_EncryptionConfig_CustomerManagedEncryptionOptions({
     $core.String? kmsKeyName,
   }) {
@@ -316,34 +410,58 @@ class Database_EncryptionConfig_CustomerManagedEncryptionOptions extends $pb.Gen
     return $result;
   }
   Database_EncryptionConfig_CustomerManagedEncryptionOptions._() : super();
-  factory Database_EncryptionConfig_CustomerManagedEncryptionOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database_EncryptionConfig_CustomerManagedEncryptionOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database_EncryptionConfig_CustomerManagedEncryptionOptions.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database_EncryptionConfig_CustomerManagedEncryptionOptions.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database.EncryptionConfig.CustomerManagedEncryptionOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'Database.EncryptionConfig.CustomerManagedEncryptionOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kmsKeyName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig_CustomerManagedEncryptionOptions clone() => Database_EncryptionConfig_CustomerManagedEncryptionOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig_CustomerManagedEncryptionOptions copyWith(void Function(Database_EncryptionConfig_CustomerManagedEncryptionOptions) updates) => super.copyWith((message) => updates(message as Database_EncryptionConfig_CustomerManagedEncryptionOptions)) as Database_EncryptionConfig_CustomerManagedEncryptionOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig_CustomerManagedEncryptionOptions clone() =>
+      Database_EncryptionConfig_CustomerManagedEncryptionOptions()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig_CustomerManagedEncryptionOptions copyWith(
+          void Function(
+                  Database_EncryptionConfig_CustomerManagedEncryptionOptions)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as Database_EncryptionConfig_CustomerManagedEncryptionOptions))
+          as Database_EncryptionConfig_CustomerManagedEncryptionOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Database_EncryptionConfig_CustomerManagedEncryptionOptions create() => Database_EncryptionConfig_CustomerManagedEncryptionOptions._();
-  Database_EncryptionConfig_CustomerManagedEncryptionOptions createEmptyInstance() => create();
-  static $pb.PbList<Database_EncryptionConfig_CustomerManagedEncryptionOptions> createRepeated() => $pb.PbList<Database_EncryptionConfig_CustomerManagedEncryptionOptions>();
+  static Database_EncryptionConfig_CustomerManagedEncryptionOptions create() =>
+      Database_EncryptionConfig_CustomerManagedEncryptionOptions._();
+  Database_EncryptionConfig_CustomerManagedEncryptionOptions
+      createEmptyInstance() => create();
+  static $pb.PbList<Database_EncryptionConfig_CustomerManagedEncryptionOptions>
+      createRepeated() => $pb.PbList<
+          Database_EncryptionConfig_CustomerManagedEncryptionOptions>();
   @$core.pragma('dart2js:noInline')
-  static Database_EncryptionConfig_CustomerManagedEncryptionOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database_EncryptionConfig_CustomerManagedEncryptionOptions>(create);
-  static Database_EncryptionConfig_CustomerManagedEncryptionOptions? _defaultInstance;
+  static Database_EncryptionConfig_CustomerManagedEncryptionOptions
+      getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Database_EncryptionConfig_CustomerManagedEncryptionOptions>(create);
+  static Database_EncryptionConfig_CustomerManagedEncryptionOptions?
+      _defaultInstance;
 
   ///  Required. Only keys in the same location as the database are allowed to
   ///  be used for encryption.
@@ -358,7 +476,10 @@ class Database_EncryptionConfig_CustomerManagedEncryptionOptions extends $pb.Gen
   @$pb.TagNumber(1)
   $core.String get kmsKeyName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set kmsKeyName($core.String v) { $_setString(0, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKmsKeyName() => $_has(0);
   @$pb.TagNumber(1)
@@ -366,9 +487,9 @@ class Database_EncryptionConfig_CustomerManagedEncryptionOptions extends $pb.Gen
 }
 
 enum Database_EncryptionConfig_EncryptionType {
-  googleDefaultEncryption, 
-  useSourceEncryption, 
-  customerManagedEncryption, 
+  googleDefaultEncryption,
+  useSourceEncryption,
+  customerManagedEncryption,
   notSet
 }
 
@@ -378,9 +499,11 @@ enum Database_EncryptionConfig_EncryptionType {
 ///  The source could be a [Backup][google.firestore.admin.v1.Backup] .
 class Database_EncryptionConfig extends $pb.GeneratedMessage {
   factory Database_EncryptionConfig({
-    Database_EncryptionConfig_GoogleDefaultEncryptionOptions? googleDefaultEncryption,
+    Database_EncryptionConfig_GoogleDefaultEncryptionOptions?
+        googleDefaultEncryption,
     Database_EncryptionConfig_SourceEncryptionOptions? useSourceEncryption,
-    Database_EncryptionConfig_CustomerManagedEncryptionOptions? customerManagedEncryption,
+    Database_EncryptionConfig_CustomerManagedEncryptionOptions?
+        customerManagedEncryption,
   }) {
     final $result = create();
     if (googleDefaultEncryption != null) {
@@ -395,82 +518,120 @@ class Database_EncryptionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   Database_EncryptionConfig._() : super();
-  factory Database_EncryptionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database_EncryptionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database_EncryptionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database_EncryptionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Database_EncryptionConfig_EncryptionType> _Database_EncryptionConfig_EncryptionTypeByTag = {
-    1 : Database_EncryptionConfig_EncryptionType.googleDefaultEncryption,
-    2 : Database_EncryptionConfig_EncryptionType.useSourceEncryption,
-    3 : Database_EncryptionConfig_EncryptionType.customerManagedEncryption,
-    0 : Database_EncryptionConfig_EncryptionType.notSet
+  static const $core.Map<$core.int, Database_EncryptionConfig_EncryptionType>
+      _Database_EncryptionConfig_EncryptionTypeByTag = {
+    1: Database_EncryptionConfig_EncryptionType.googleDefaultEncryption,
+    2: Database_EncryptionConfig_EncryptionType.useSourceEncryption,
+    3: Database_EncryptionConfig_EncryptionType.customerManagedEncryption,
+    0: Database_EncryptionConfig_EncryptionType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database.EncryptionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Database.EncryptionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<Database_EncryptionConfig_GoogleDefaultEncryptionOptions>(1, _omitFieldNames ? '' : 'googleDefaultEncryption', subBuilder: Database_EncryptionConfig_GoogleDefaultEncryptionOptions.create)
-    ..aOM<Database_EncryptionConfig_SourceEncryptionOptions>(2, _omitFieldNames ? '' : 'useSourceEncryption', subBuilder: Database_EncryptionConfig_SourceEncryptionOptions.create)
-    ..aOM<Database_EncryptionConfig_CustomerManagedEncryptionOptions>(3, _omitFieldNames ? '' : 'customerManagedEncryption', subBuilder: Database_EncryptionConfig_CustomerManagedEncryptionOptions.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Database_EncryptionConfig_GoogleDefaultEncryptionOptions>(
+        1, _omitFieldNames ? '' : 'googleDefaultEncryption',
+        subBuilder:
+            Database_EncryptionConfig_GoogleDefaultEncryptionOptions.create)
+    ..aOM<Database_EncryptionConfig_SourceEncryptionOptions>(
+        2, _omitFieldNames ? '' : 'useSourceEncryption',
+        subBuilder: Database_EncryptionConfig_SourceEncryptionOptions.create)
+    ..aOM<Database_EncryptionConfig_CustomerManagedEncryptionOptions>(
+        3, _omitFieldNames ? '' : 'customerManagedEncryption',
+        subBuilder:
+            Database_EncryptionConfig_CustomerManagedEncryptionOptions.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig clone() => Database_EncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database_EncryptionConfig copyWith(void Function(Database_EncryptionConfig) updates) => super.copyWith((message) => updates(message as Database_EncryptionConfig)) as Database_EncryptionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig clone() =>
+      Database_EncryptionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database_EncryptionConfig copyWith(
+          void Function(Database_EncryptionConfig) updates) =>
+      super.copyWith((message) => updates(message as Database_EncryptionConfig))
+          as Database_EncryptionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Database_EncryptionConfig create() => Database_EncryptionConfig._();
   Database_EncryptionConfig createEmptyInstance() => create();
-  static $pb.PbList<Database_EncryptionConfig> createRepeated() => $pb.PbList<Database_EncryptionConfig>();
+  static $pb.PbList<Database_EncryptionConfig> createRepeated() =>
+      $pb.PbList<Database_EncryptionConfig>();
   @$core.pragma('dart2js:noInline')
-  static Database_EncryptionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database_EncryptionConfig>(create);
+  static Database_EncryptionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Database_EncryptionConfig>(create);
   static Database_EncryptionConfig? _defaultInstance;
 
-  Database_EncryptionConfig_EncryptionType whichEncryptionType() => _Database_EncryptionConfig_EncryptionTypeByTag[$_whichOneof(0)]!;
+  Database_EncryptionConfig_EncryptionType whichEncryptionType() =>
+      _Database_EncryptionConfig_EncryptionTypeByTag[$_whichOneof(0)]!;
   void clearEncryptionType() => clearField($_whichOneof(0));
 
   /// Use Google default encryption.
   @$pb.TagNumber(1)
-  Database_EncryptionConfig_GoogleDefaultEncryptionOptions get googleDefaultEncryption => $_getN(0);
+  Database_EncryptionConfig_GoogleDefaultEncryptionOptions
+      get googleDefaultEncryption => $_getN(0);
   @$pb.TagNumber(1)
-  set googleDefaultEncryption(Database_EncryptionConfig_GoogleDefaultEncryptionOptions v) { setField(1, v); }
+  set googleDefaultEncryption(
+      Database_EncryptionConfig_GoogleDefaultEncryptionOptions v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGoogleDefaultEncryption() => $_has(0);
   @$pb.TagNumber(1)
   void clearGoogleDefaultEncryption() => clearField(1);
   @$pb.TagNumber(1)
-  Database_EncryptionConfig_GoogleDefaultEncryptionOptions ensureGoogleDefaultEncryption() => $_ensure(0);
+  Database_EncryptionConfig_GoogleDefaultEncryptionOptions
+      ensureGoogleDefaultEncryption() => $_ensure(0);
 
   /// The database will use the same encryption configuration as the source.
   @$pb.TagNumber(2)
-  Database_EncryptionConfig_SourceEncryptionOptions get useSourceEncryption => $_getN(1);
+  Database_EncryptionConfig_SourceEncryptionOptions get useSourceEncryption =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set useSourceEncryption(Database_EncryptionConfig_SourceEncryptionOptions v) { setField(2, v); }
+  set useSourceEncryption(Database_EncryptionConfig_SourceEncryptionOptions v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUseSourceEncryption() => $_has(1);
   @$pb.TagNumber(2)
   void clearUseSourceEncryption() => clearField(2);
   @$pb.TagNumber(2)
-  Database_EncryptionConfig_SourceEncryptionOptions ensureUseSourceEncryption() => $_ensure(1);
+  Database_EncryptionConfig_SourceEncryptionOptions
+      ensureUseSourceEncryption() => $_ensure(1);
 
   /// Use Customer Managed Encryption Keys (CMEK) for encryption.
   @$pb.TagNumber(3)
-  Database_EncryptionConfig_CustomerManagedEncryptionOptions get customerManagedEncryption => $_getN(2);
+  Database_EncryptionConfig_CustomerManagedEncryptionOptions
+      get customerManagedEncryption => $_getN(2);
   @$pb.TagNumber(3)
-  set customerManagedEncryption(Database_EncryptionConfig_CustomerManagedEncryptionOptions v) { setField(3, v); }
+  set customerManagedEncryption(
+      Database_EncryptionConfig_CustomerManagedEncryptionOptions v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCustomerManagedEncryption() => $_has(2);
   @$pb.TagNumber(3)
   void clearCustomerManagedEncryption() => clearField(3);
   @$pb.TagNumber(3)
-  Database_EncryptionConfig_CustomerManagedEncryptionOptions ensureCustomerManagedEncryption() => $_ensure(2);
+  Database_EncryptionConfig_CustomerManagedEncryptionOptions
+      ensureCustomerManagedEncryption() => $_ensure(2);
 }
 
 /// A Cloud Firestore Database.
@@ -553,41 +714,79 @@ class Database extends $pb.GeneratedMessage {
     return $result;
   }
   Database._() : super();
-  factory Database.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Database',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'uid')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'locationId')
-    ..e<Database_DatabaseType>(10, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Database_DatabaseType.DATABASE_TYPE_UNSPECIFIED, valueOf: Database_DatabaseType.valueOf, enumValues: Database_DatabaseType.values)
-    ..e<Database_ConcurrencyMode>(15, _omitFieldNames ? '' : 'concurrencyMode', $pb.PbFieldType.OE, defaultOrMaker: Database_ConcurrencyMode.CONCURRENCY_MODE_UNSPECIFIED, valueOf: Database_ConcurrencyMode.valueOf, enumValues: Database_ConcurrencyMode.values)
-    ..aOM<$264.Duration>(17, _omitFieldNames ? '' : 'versionRetentionPeriod', subBuilder: $264.Duration.create)
-    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'earliestVersionTime', subBuilder: $302.Timestamp.create)
-    ..e<Database_AppEngineIntegrationMode>(19, _omitFieldNames ? '' : 'appEngineIntegrationMode', $pb.PbFieldType.OE, defaultOrMaker: Database_AppEngineIntegrationMode.APP_ENGINE_INTEGRATION_MODE_UNSPECIFIED, valueOf: Database_AppEngineIntegrationMode.valueOf, enumValues: Database_AppEngineIntegrationMode.values)
+    ..e<Database_DatabaseType>(
+        10, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: Database_DatabaseType.DATABASE_TYPE_UNSPECIFIED,
+        valueOf: Database_DatabaseType.valueOf,
+        enumValues: Database_DatabaseType.values)
+    ..e<Database_ConcurrencyMode>(
+        15, _omitFieldNames ? '' : 'concurrencyMode', $pb.PbFieldType.OE,
+        defaultOrMaker: Database_ConcurrencyMode.CONCURRENCY_MODE_UNSPECIFIED,
+        valueOf: Database_ConcurrencyMode.valueOf,
+        enumValues: Database_ConcurrencyMode.values)
+    ..aOM<$264.Duration>(17, _omitFieldNames ? '' : 'versionRetentionPeriod',
+        subBuilder: $264.Duration.create)
+    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'earliestVersionTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<Database_AppEngineIntegrationMode>(19,
+        _omitFieldNames ? '' : 'appEngineIntegrationMode', $pb.PbFieldType.OE,
+        defaultOrMaker: Database_AppEngineIntegrationMode
+            .APP_ENGINE_INTEGRATION_MODE_UNSPECIFIED,
+        valueOf: Database_AppEngineIntegrationMode.valueOf,
+        enumValues: Database_AppEngineIntegrationMode.values)
     ..aOS(20, _omitFieldNames ? '' : 'keyPrefix')
-    ..e<Database_PointInTimeRecoveryEnablement>(21, _omitFieldNames ? '' : 'pointInTimeRecoveryEnablement', $pb.PbFieldType.OE, defaultOrMaker: Database_PointInTimeRecoveryEnablement.POINT_IN_TIME_RECOVERY_ENABLEMENT_UNSPECIFIED, valueOf: Database_PointInTimeRecoveryEnablement.valueOf, enumValues: Database_PointInTimeRecoveryEnablement.values)
-    ..e<Database_DeleteProtectionState>(22, _omitFieldNames ? '' : 'deleteProtectionState', $pb.PbFieldType.OE, defaultOrMaker: Database_DeleteProtectionState.DELETE_PROTECTION_STATE_UNSPECIFIED, valueOf: Database_DeleteProtectionState.valueOf, enumValues: Database_DeleteProtectionState.values)
-    ..aOM<Database_CmekConfig>(23, _omitFieldNames ? '' : 'cmekConfig', subBuilder: Database_CmekConfig.create)
+    ..e<Database_PointInTimeRecoveryEnablement>(
+        21,
+        _omitFieldNames ? '' : 'pointInTimeRecoveryEnablement',
+        $pb.PbFieldType.OE,
+        defaultOrMaker: Database_PointInTimeRecoveryEnablement
+            .POINT_IN_TIME_RECOVERY_ENABLEMENT_UNSPECIFIED,
+        valueOf: Database_PointInTimeRecoveryEnablement.valueOf,
+        enumValues: Database_PointInTimeRecoveryEnablement.values)
+    ..e<Database_DeleteProtectionState>(
+        22, _omitFieldNames ? '' : 'deleteProtectionState', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Database_DeleteProtectionState.DELETE_PROTECTION_STATE_UNSPECIFIED,
+        valueOf: Database_DeleteProtectionState.valueOf,
+        enumValues: Database_DeleteProtectionState.values)
+    ..aOM<Database_CmekConfig>(23, _omitFieldNames ? '' : 'cmekConfig',
+        subBuilder: Database_CmekConfig.create)
     ..aOS(25, _omitFieldNames ? '' : 'previousId')
-    ..aOM<Database_SourceInfo>(26, _omitFieldNames ? '' : 'sourceInfo', subBuilder: Database_SourceInfo.create)
+    ..aOM<Database_SourceInfo>(26, _omitFieldNames ? '' : 'sourceInfo',
+        subBuilder: Database_SourceInfo.create)
     ..aOS(99, _omitFieldNames ? '' : 'etag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Database clone() => Database()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database copyWith(void Function(Database) updates) => super.copyWith((message) => updates(message as Database)) as Database;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database copyWith(void Function(Database) updates) =>
+      super.copyWith((message) => updates(message as Database)) as Database;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -596,7 +795,8 @@ class Database extends $pb.GeneratedMessage {
   Database createEmptyInstance() => create();
   static $pb.PbList<Database> createRepeated() => $pb.PbList<Database>();
   @$core.pragma('dart2js:noInline')
-  static Database getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database>(create);
+  static Database getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database>(create);
   static Database? _defaultInstance;
 
   /// The resource name of the Database.
@@ -604,7 +804,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -614,7 +817,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(3)
-  set uid($core.String v) { $_setString(1, v); }
+  set uid($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(3)
@@ -625,7 +831,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
-  set createTime($302.Timestamp v) { setField(5, v); }
+  set createTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(5)
@@ -639,7 +848,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set updateTime($302.Timestamp v) { setField(6, v); }
+  set updateTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(6)
@@ -652,7 +864,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get deleteTime => $_getN(4);
   @$pb.TagNumber(7)
-  set deleteTime($302.Timestamp v) { setField(7, v); }
+  set deleteTime($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDeleteTime() => $_has(4);
   @$pb.TagNumber(7)
@@ -665,7 +880,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get locationId => $_getSZ(5);
   @$pb.TagNumber(9)
-  set locationId($core.String v) { $_setString(5, v); }
+  set locationId($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasLocationId() => $_has(5);
   @$pb.TagNumber(9)
@@ -677,7 +895,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Database_DatabaseType get type => $_getN(6);
   @$pb.TagNumber(10)
-  set type(Database_DatabaseType v) { setField(10, v); }
+  set type(Database_DatabaseType v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasType() => $_has(6);
   @$pb.TagNumber(10)
@@ -687,7 +908,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   Database_ConcurrencyMode get concurrencyMode => $_getN(7);
   @$pb.TagNumber(15)
-  set concurrencyMode(Database_ConcurrencyMode v) { setField(15, v); }
+  set concurrencyMode(Database_ConcurrencyMode v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasConcurrencyMode() => $_has(7);
   @$pb.TagNumber(15)
@@ -706,7 +930,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $264.Duration get versionRetentionPeriod => $_getN(8);
   @$pb.TagNumber(17)
-  set versionRetentionPeriod($264.Duration v) { setField(17, v); }
+  set versionRetentionPeriod($264.Duration v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasVersionRetentionPeriod() => $_has(8);
   @$pb.TagNumber(17)
@@ -725,7 +952,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $302.Timestamp get earliestVersionTime => $_getN(9);
   @$pb.TagNumber(18)
-  set earliestVersionTime($302.Timestamp v) { setField(18, v); }
+  set earliestVersionTime($302.Timestamp v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasEarliestVersionTime() => $_has(9);
   @$pb.TagNumber(18)
@@ -737,7 +967,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   Database_AppEngineIntegrationMode get appEngineIntegrationMode => $_getN(10);
   @$pb.TagNumber(19)
-  set appEngineIntegrationMode(Database_AppEngineIntegrationMode v) { setField(19, v); }
+  set appEngineIntegrationMode(Database_AppEngineIntegrationMode v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasAppEngineIntegrationMode() => $_has(10);
   @$pb.TagNumber(19)
@@ -753,7 +986,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get keyPrefix => $_getSZ(11);
   @$pb.TagNumber(20)
-  set keyPrefix($core.String v) { $_setString(11, v); }
+  set keyPrefix($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasKeyPrefix() => $_has(11);
   @$pb.TagNumber(20)
@@ -761,9 +997,13 @@ class Database extends $pb.GeneratedMessage {
 
   /// Whether to enable the PITR feature on this database.
   @$pb.TagNumber(21)
-  Database_PointInTimeRecoveryEnablement get pointInTimeRecoveryEnablement => $_getN(12);
+  Database_PointInTimeRecoveryEnablement get pointInTimeRecoveryEnablement =>
+      $_getN(12);
   @$pb.TagNumber(21)
-  set pointInTimeRecoveryEnablement(Database_PointInTimeRecoveryEnablement v) { setField(21, v); }
+  set pointInTimeRecoveryEnablement(Database_PointInTimeRecoveryEnablement v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasPointInTimeRecoveryEnablement() => $_has(12);
   @$pb.TagNumber(21)
@@ -773,7 +1013,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   Database_DeleteProtectionState get deleteProtectionState => $_getN(13);
   @$pb.TagNumber(22)
-  set deleteProtectionState(Database_DeleteProtectionState v) { setField(22, v); }
+  set deleteProtectionState(Database_DeleteProtectionState v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasDeleteProtectionState() => $_has(13);
   @$pb.TagNumber(22)
@@ -783,7 +1026,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   Database_CmekConfig get cmekConfig => $_getN(14);
   @$pb.TagNumber(23)
-  set cmekConfig(Database_CmekConfig v) { setField(23, v); }
+  set cmekConfig(Database_CmekConfig v) {
+    setField(23, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasCmekConfig() => $_has(14);
   @$pb.TagNumber(23)
@@ -796,7 +1042,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.String get previousId => $_getSZ(15);
   @$pb.TagNumber(25)
-  set previousId($core.String v) { $_setString(15, v); }
+  set previousId($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasPreviousId() => $_has(15);
   @$pb.TagNumber(25)
@@ -806,7 +1055,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   Database_SourceInfo get sourceInfo => $_getN(16);
   @$pb.TagNumber(26)
-  set sourceInfo(Database_SourceInfo v) { setField(26, v); }
+  set sourceInfo(Database_SourceInfo v) {
+    setField(26, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasSourceInfo() => $_has(16);
   @$pb.TagNumber(26)
@@ -820,13 +1072,16 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(99)
   $core.String get etag => $_getSZ(17);
   @$pb.TagNumber(99)
-  set etag($core.String v) { $_setString(17, v); }
+  set etag($core.String v) {
+    $_setString(17, v);
+  }
+
   @$pb.TagNumber(99)
   $core.bool hasEtag() => $_has(17);
   @$pb.TagNumber(99)
   void clearEtag() => clearField(99);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

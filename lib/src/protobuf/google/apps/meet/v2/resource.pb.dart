@@ -47,28 +47,36 @@ class Space extends $pb.GeneratedMessage {
     return $result;
   }
   Space._() : super();
-  factory Space.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Space.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Space.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Space.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Space', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Space',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'meetingUri')
     ..aOS(3, _omitFieldNames ? '' : 'meetingCode')
-    ..aOM<SpaceConfig>(5, _omitFieldNames ? '' : 'config', subBuilder: SpaceConfig.create)
-    ..aOM<ActiveConference>(6, _omitFieldNames ? '' : 'activeConference', subBuilder: ActiveConference.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<SpaceConfig>(5, _omitFieldNames ? '' : 'config',
+        subBuilder: SpaceConfig.create)
+    ..aOM<ActiveConference>(6, _omitFieldNames ? '' : 'activeConference',
+        subBuilder: ActiveConference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Space clone() => Space()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Space copyWith(void Function(Space) updates) => super.copyWith((message) => updates(message as Space)) as Space;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Space copyWith(void Function(Space) updates) =>
+      super.copyWith((message) => updates(message as Space)) as Space;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -77,7 +85,8 @@ class Space extends $pb.GeneratedMessage {
   Space createEmptyInstance() => create();
   static $pb.PbList<Space> createRepeated() => $pb.PbList<Space>();
   @$core.pragma('dart2js:noInline')
-  static Space getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space>(create);
+  static Space getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space>(create);
   static Space? _defaultInstance;
 
   /// Immutable. Resource name of the space.
@@ -85,7 +94,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -96,7 +108,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get meetingUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set meetingUri($core.String v) { $_setString(1, v); }
+  set meetingUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMeetingUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,7 +123,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get meetingCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set meetingCode($core.String v) { $_setString(2, v); }
+  set meetingCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMeetingCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -118,7 +136,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   SpaceConfig get config => $_getN(3);
   @$pb.TagNumber(5)
-  set config(SpaceConfig v) { setField(5, v); }
+  set config(SpaceConfig v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasConfig() => $_has(3);
   @$pb.TagNumber(5)
@@ -130,7 +151,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   ActiveConference get activeConference => $_getN(4);
   @$pb.TagNumber(6)
-  set activeConference(ActiveConference v) { setField(6, v); }
+  set activeConference(ActiveConference v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasActiveConference() => $_has(4);
   @$pb.TagNumber(6)
@@ -151,33 +175,42 @@ class ActiveConference extends $pb.GeneratedMessage {
     return $result;
   }
   ActiveConference._() : super();
-  factory ActiveConference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ActiveConference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ActiveConference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ActiveConference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ActiveConference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ActiveConference',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'conferenceRecord')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ActiveConference clone() => ActiveConference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ActiveConference copyWith(void Function(ActiveConference) updates) => super.copyWith((message) => updates(message as ActiveConference)) as ActiveConference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ActiveConference copyWith(void Function(ActiveConference) updates) =>
+      super.copyWith((message) => updates(message as ActiveConference))
+          as ActiveConference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ActiveConference create() => ActiveConference._();
   ActiveConference createEmptyInstance() => create();
-  static $pb.PbList<ActiveConference> createRepeated() => $pb.PbList<ActiveConference>();
+  static $pb.PbList<ActiveConference> createRepeated() =>
+      $pb.PbList<ActiveConference>();
   @$core.pragma('dart2js:noInline')
-  static ActiveConference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ActiveConference>(create);
+  static ActiveConference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ActiveConference>(create);
   static ActiveConference? _defaultInstance;
 
   /// Output only. Reference to 'ConferenceRecord' resource.
@@ -186,7 +219,10 @@ class ActiveConference extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get conferenceRecord => $_getSZ(0);
   @$pb.TagNumber(1)
-  set conferenceRecord($core.String v) { $_setString(0, v); }
+  set conferenceRecord($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConferenceRecord() => $_has(0);
   @$pb.TagNumber(1)
@@ -209,25 +245,41 @@ class SpaceConfig extends $pb.GeneratedMessage {
     return $result;
   }
   SpaceConfig._() : super();
-  factory SpaceConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SpaceConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SpaceConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SpaceConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
-    ..e<SpaceConfig_AccessType>(1, _omitFieldNames ? '' : 'accessType', $pb.PbFieldType.OE, defaultOrMaker: SpaceConfig_AccessType.ACCESS_TYPE_UNSPECIFIED, valueOf: SpaceConfig_AccessType.valueOf, enumValues: SpaceConfig_AccessType.values)
-    ..e<SpaceConfig_EntryPointAccess>(2, _omitFieldNames ? '' : 'entryPointAccess', $pb.PbFieldType.OE, defaultOrMaker: SpaceConfig_EntryPointAccess.ENTRY_POINT_ACCESS_UNSPECIFIED, valueOf: SpaceConfig_EntryPointAccess.valueOf, enumValues: SpaceConfig_EntryPointAccess.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SpaceConfig',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
+    ..e<SpaceConfig_AccessType>(
+        1, _omitFieldNames ? '' : 'accessType', $pb.PbFieldType.OE,
+        defaultOrMaker: SpaceConfig_AccessType.ACCESS_TYPE_UNSPECIFIED,
+        valueOf: SpaceConfig_AccessType.valueOf,
+        enumValues: SpaceConfig_AccessType.values)
+    ..e<SpaceConfig_EntryPointAccess>(
+        2, _omitFieldNames ? '' : 'entryPointAccess', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SpaceConfig_EntryPointAccess.ENTRY_POINT_ACCESS_UNSPECIFIED,
+        valueOf: SpaceConfig_EntryPointAccess.valueOf,
+        enumValues: SpaceConfig_EntryPointAccess.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SpaceConfig clone() => SpaceConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SpaceConfig copyWith(void Function(SpaceConfig) updates) => super.copyWith((message) => updates(message as SpaceConfig)) as SpaceConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SpaceConfig copyWith(void Function(SpaceConfig) updates) =>
+      super.copyWith((message) => updates(message as SpaceConfig))
+          as SpaceConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -236,7 +288,8 @@ class SpaceConfig extends $pb.GeneratedMessage {
   SpaceConfig createEmptyInstance() => create();
   static $pb.PbList<SpaceConfig> createRepeated() => $pb.PbList<SpaceConfig>();
   @$core.pragma('dart2js:noInline')
-  static SpaceConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SpaceConfig>(create);
+  static SpaceConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SpaceConfig>(create);
   static SpaceConfig? _defaultInstance;
 
   /// Access type of the meeting space that determines who can join without
@@ -245,7 +298,10 @@ class SpaceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   SpaceConfig_AccessType get accessType => $_getN(0);
   @$pb.TagNumber(1)
-  set accessType(SpaceConfig_AccessType v) { setField(1, v); }
+  set accessType(SpaceConfig_AccessType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAccessType() => $_has(0);
   @$pb.TagNumber(1)
@@ -257,7 +313,10 @@ class SpaceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SpaceConfig_EntryPointAccess get entryPointAccess => $_getN(1);
   @$pb.TagNumber(2)
-  set entryPointAccess(SpaceConfig_EntryPointAccess v) { setField(2, v); }
+  set entryPointAccess(SpaceConfig_EntryPointAccess v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEntryPointAccess() => $_has(1);
   @$pb.TagNumber(2)
@@ -292,37 +351,49 @@ class ConferenceRecord extends $pb.GeneratedMessage {
     return $result;
   }
   ConferenceRecord._() : super();
-  factory ConferenceRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConferenceRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConferenceRecord.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConferenceRecord.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConferenceRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConferenceRecord',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'space')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ConferenceRecord clone() => ConferenceRecord()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConferenceRecord copyWith(void Function(ConferenceRecord) updates) => super.copyWith((message) => updates(message as ConferenceRecord)) as ConferenceRecord;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConferenceRecord copyWith(void Function(ConferenceRecord) updates) =>
+      super.copyWith((message) => updates(message as ConferenceRecord))
+          as ConferenceRecord;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ConferenceRecord create() => ConferenceRecord._();
   ConferenceRecord createEmptyInstance() => create();
-  static $pb.PbList<ConferenceRecord> createRepeated() => $pb.PbList<ConferenceRecord>();
+  static $pb.PbList<ConferenceRecord> createRepeated() =>
+      $pb.PbList<ConferenceRecord>();
   @$core.pragma('dart2js:noInline')
-  static ConferenceRecord getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConferenceRecord>(create);
+  static ConferenceRecord getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConferenceRecord>(create);
   static ConferenceRecord? _defaultInstance;
 
   /// Identifier. Resource name of the conference record.
@@ -331,7 +402,10 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -341,7 +415,10 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -354,7 +431,10 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($302.Timestamp v) { setField(3, v); }
+  set endTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -368,7 +448,10 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($302.Timestamp v) { setField(4, v); }
+  set expireTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -380,19 +463,17 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get space => $_getSZ(4);
   @$pb.TagNumber(5)
-  set space($core.String v) { $_setString(4, v); }
+  set space($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSpace() => $_has(4);
   @$pb.TagNumber(5)
   void clearSpace() => clearField(5);
 }
 
-enum Participant_User {
-  signedinUser, 
-  anonymousUser, 
-  phoneUser, 
-  notSet
-}
+enum Participant_User { signedinUser, anonymousUser, phoneUser, notSet }
 
 /// User who attended or is attending a conference.
 class Participant extends $pb.GeneratedMessage {
@@ -426,36 +507,48 @@ class Participant extends $pb.GeneratedMessage {
     return $result;
   }
   Participant._() : super();
-  factory Participant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Participant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Participant.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Participant.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Participant_User> _Participant_UserByTag = {
-    4 : Participant_User.signedinUser,
-    5 : Participant_User.anonymousUser,
-    6 : Participant_User.phoneUser,
-    0 : Participant_User.notSet
+    4: Participant_User.signedinUser,
+    5: Participant_User.anonymousUser,
+    6: Participant_User.phoneUser,
+    0: Participant_User.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Participant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Participant',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..oo(0, [4, 5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<SignedinUser>(4, _omitFieldNames ? '' : 'signedinUser', subBuilder: SignedinUser.create)
-    ..aOM<AnonymousUser>(5, _omitFieldNames ? '' : 'anonymousUser', subBuilder: AnonymousUser.create)
-    ..aOM<PhoneUser>(6, _omitFieldNames ? '' : 'phoneUser', subBuilder: PhoneUser.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'earliestStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'latestEndTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<SignedinUser>(4, _omitFieldNames ? '' : 'signedinUser',
+        subBuilder: SignedinUser.create)
+    ..aOM<AnonymousUser>(5, _omitFieldNames ? '' : 'anonymousUser',
+        subBuilder: AnonymousUser.create)
+    ..aOM<PhoneUser>(6, _omitFieldNames ? '' : 'phoneUser',
+        subBuilder: PhoneUser.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'earliestStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'latestEndTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Participant clone() => Participant()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Participant copyWith(void Function(Participant) updates) => super.copyWith((message) => updates(message as Participant)) as Participant;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Participant copyWith(void Function(Participant) updates) =>
+      super.copyWith((message) => updates(message as Participant))
+          as Participant;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -464,7 +557,8 @@ class Participant extends $pb.GeneratedMessage {
   Participant createEmptyInstance() => create();
   static $pb.PbList<Participant> createRepeated() => $pb.PbList<Participant>();
   @$core.pragma('dart2js:noInline')
-  static Participant getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Participant>(create);
+  static Participant getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Participant>(create);
   static Participant? _defaultInstance;
 
   Participant_User whichUser() => _Participant_UserByTag[$_whichOneof(0)]!;
@@ -475,7 +569,10 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -485,7 +582,10 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   SignedinUser get signedinUser => $_getN(1);
   @$pb.TagNumber(4)
-  set signedinUser(SignedinUser v) { setField(4, v); }
+  set signedinUser(SignedinUser v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSignedinUser() => $_has(1);
   @$pb.TagNumber(4)
@@ -497,7 +597,10 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   AnonymousUser get anonymousUser => $_getN(2);
   @$pb.TagNumber(5)
-  set anonymousUser(AnonymousUser v) { setField(5, v); }
+  set anonymousUser(AnonymousUser v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAnonymousUser() => $_has(2);
   @$pb.TagNumber(5)
@@ -509,7 +612,10 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PhoneUser get phoneUser => $_getN(3);
   @$pb.TagNumber(6)
-  set phoneUser(PhoneUser v) { setField(6, v); }
+  set phoneUser(PhoneUser v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPhoneUser() => $_has(3);
   @$pb.TagNumber(6)
@@ -521,7 +627,10 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get earliestStartTime => $_getN(4);
   @$pb.TagNumber(7)
-  set earliestStartTime($302.Timestamp v) { setField(7, v); }
+  set earliestStartTime($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEarliestStartTime() => $_has(4);
   @$pb.TagNumber(7)
@@ -534,7 +643,10 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get latestEndTime => $_getN(5);
   @$pb.TagNumber(8)
-  set latestEndTime($302.Timestamp v) { setField(8, v); }
+  set latestEndTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasLatestEndTime() => $_has(5);
   @$pb.TagNumber(8)
@@ -567,42 +679,56 @@ class ParticipantSession extends $pb.GeneratedMessage {
     return $result;
   }
   ParticipantSession._() : super();
-  factory ParticipantSession.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ParticipantSession.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ParticipantSession.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ParticipantSession.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ParticipantSession', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ParticipantSession',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ParticipantSession clone() => ParticipantSession()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ParticipantSession copyWith(void Function(ParticipantSession) updates) => super.copyWith((message) => updates(message as ParticipantSession)) as ParticipantSession;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ParticipantSession copyWith(void Function(ParticipantSession) updates) =>
+      super.copyWith((message) => updates(message as ParticipantSession))
+          as ParticipantSession;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ParticipantSession create() => ParticipantSession._();
   ParticipantSession createEmptyInstance() => create();
-  static $pb.PbList<ParticipantSession> createRepeated() => $pb.PbList<ParticipantSession>();
+  static $pb.PbList<ParticipantSession> createRepeated() =>
+      $pb.PbList<ParticipantSession>();
   @$core.pragma('dart2js:noInline')
-  static ParticipantSession getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ParticipantSession>(create);
+  static ParticipantSession getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ParticipantSession>(create);
   static ParticipantSession? _defaultInstance;
 
   /// Identifier. Session id.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -612,7 +738,10 @@ class ParticipantSession extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -625,7 +754,10 @@ class ParticipantSession extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($302.Timestamp v) { setField(3, v); }
+  set endTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -653,34 +785,43 @@ class SignedinUser extends $pb.GeneratedMessage {
     return $result;
   }
   SignedinUser._() : super();
-  factory SignedinUser.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SignedinUser.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SignedinUser.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SignedinUser.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SignedinUser', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SignedinUser',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'user')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SignedinUser clone() => SignedinUser()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SignedinUser copyWith(void Function(SignedinUser) updates) => super.copyWith((message) => updates(message as SignedinUser)) as SignedinUser;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SignedinUser copyWith(void Function(SignedinUser) updates) =>
+      super.copyWith((message) => updates(message as SignedinUser))
+          as SignedinUser;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SignedinUser create() => SignedinUser._();
   SignedinUser createEmptyInstance() => create();
-  static $pb.PbList<SignedinUser> createRepeated() => $pb.PbList<SignedinUser>();
+  static $pb.PbList<SignedinUser> createRepeated() =>
+      $pb.PbList<SignedinUser>();
   @$core.pragma('dart2js:noInline')
-  static SignedinUser getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SignedinUser>(create);
+  static SignedinUser getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SignedinUser>(create);
   static SignedinUser? _defaultInstance;
 
   /// Output only. Unique ID for the user. Interoperable with Admin SDK API and
@@ -688,7 +829,10 @@ class SignedinUser extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get user => $_getSZ(0);
   @$pb.TagNumber(1)
-  set user($core.String v) { $_setString(0, v); }
+  set user($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
@@ -700,7 +844,10 @@ class SignedinUser extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -719,40 +866,52 @@ class AnonymousUser extends $pb.GeneratedMessage {
     return $result;
   }
   AnonymousUser._() : super();
-  factory AnonymousUser.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AnonymousUser.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AnonymousUser.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AnonymousUser.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnonymousUser', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AnonymousUser',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AnonymousUser clone() => AnonymousUser()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AnonymousUser copyWith(void Function(AnonymousUser) updates) => super.copyWith((message) => updates(message as AnonymousUser)) as AnonymousUser;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AnonymousUser copyWith(void Function(AnonymousUser) updates) =>
+      super.copyWith((message) => updates(message as AnonymousUser))
+          as AnonymousUser;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AnonymousUser create() => AnonymousUser._();
   AnonymousUser createEmptyInstance() => create();
-  static $pb.PbList<AnonymousUser> createRepeated() => $pb.PbList<AnonymousUser>();
+  static $pb.PbList<AnonymousUser> createRepeated() =>
+      $pb.PbList<AnonymousUser>();
   @$core.pragma('dart2js:noInline')
-  static AnonymousUser getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AnonymousUser>(create);
+  static AnonymousUser getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AnonymousUser>(create);
   static AnonymousUser? _defaultInstance;
 
   /// Output only. User provided name when they join a conference anonymously.
   @$pb.TagNumber(1)
   $core.String get displayName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set displayName($core.String v) { $_setString(0, v); }
+  set displayName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
@@ -772,24 +931,30 @@ class PhoneUser extends $pb.GeneratedMessage {
     return $result;
   }
   PhoneUser._() : super();
-  factory PhoneUser.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PhoneUser.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PhoneUser.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PhoneUser.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhoneUser', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PhoneUser',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PhoneUser clone() => PhoneUser()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PhoneUser copyWith(void Function(PhoneUser) updates) => super.copyWith((message) => updates(message as PhoneUser)) as PhoneUser;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PhoneUser copyWith(void Function(PhoneUser) updates) =>
+      super.copyWith((message) => updates(message as PhoneUser)) as PhoneUser;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -798,24 +963,25 @@ class PhoneUser extends $pb.GeneratedMessage {
   PhoneUser createEmptyInstance() => create();
   static $pb.PbList<PhoneUser> createRepeated() => $pb.PbList<PhoneUser>();
   @$core.pragma('dart2js:noInline')
-  static PhoneUser getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhoneUser>(create);
+  static PhoneUser getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhoneUser>(create);
   static PhoneUser? _defaultInstance;
 
   /// Output only. Partially redacted user's phone number when calling.
   @$pb.TagNumber(1)
   $core.String get displayName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set displayName($core.String v) { $_setString(0, v); }
+  set displayName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
   void clearDisplayName() => clearField(1);
 }
 
-enum Recording_Destination {
-  driveDestination, 
-  notSet
-}
+enum Recording_Destination { driveDestination, notSet }
 
 /// Metadata about a recording created during a conference.
 class Recording extends $pb.GeneratedMessage {
@@ -845,33 +1011,46 @@ class Recording extends $pb.GeneratedMessage {
     return $result;
   }
   Recording._() : super();
-  factory Recording.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Recording.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Recording.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Recording.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Recording_Destination> _Recording_DestinationByTag = {
-    6 : Recording_Destination.driveDestination,
-    0 : Recording_Destination.notSet
+  static const $core.Map<$core.int, Recording_Destination>
+      _Recording_DestinationByTag = {
+    6: Recording_Destination.driveDestination,
+    0: Recording_Destination.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Recording', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Recording',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..oo(0, [6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<Recording_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Recording_State.STATE_UNSPECIFIED, valueOf: Recording_State.valueOf, enumValues: Recording_State.values)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..aOM<DriveDestination>(6, _omitFieldNames ? '' : 'driveDestination', subBuilder: DriveDestination.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<Recording_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Recording_State.STATE_UNSPECIFIED,
+        valueOf: Recording_State.valueOf,
+        enumValues: Recording_State.values)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<DriveDestination>(6, _omitFieldNames ? '' : 'driveDestination',
+        subBuilder: DriveDestination.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Recording clone() => Recording()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Recording copyWith(void Function(Recording) updates) => super.copyWith((message) => updates(message as Recording)) as Recording;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Recording copyWith(void Function(Recording) updates) =>
+      super.copyWith((message) => updates(message as Recording)) as Recording;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -880,10 +1059,12 @@ class Recording extends $pb.GeneratedMessage {
   Recording createEmptyInstance() => create();
   static $pb.PbList<Recording> createRepeated() => $pb.PbList<Recording>();
   @$core.pragma('dart2js:noInline')
-  static Recording getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Recording>(create);
+  static Recording getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Recording>(create);
   static Recording? _defaultInstance;
 
-  Recording_Destination whichDestination() => _Recording_DestinationByTag[$_whichOneof(0)]!;
+  Recording_Destination whichDestination() =>
+      _Recording_DestinationByTag[$_whichOneof(0)]!;
   void clearDestination() => clearField($_whichOneof(0));
 
   /// Output only. Resource name of the recording.
@@ -893,7 +1074,10 @@ class Recording extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -903,7 +1087,10 @@ class Recording extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Recording_State get state => $_getN(1);
   @$pb.TagNumber(3)
-  set state(Recording_State v) { setField(3, v); }
+  set state(Recording_State v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(3)
@@ -913,7 +1100,10 @@ class Recording extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) { setField(4, v); }
+  set startTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(4)
@@ -925,7 +1115,10 @@ class Recording extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) { setField(5, v); }
+  set endTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(5)
@@ -939,7 +1132,10 @@ class Recording extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   DriveDestination get driveDestination => $_getN(4);
   @$pb.TagNumber(6)
-  set driveDestination(DriveDestination v) { setField(6, v); }
+  set driveDestination(DriveDestination v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDriveDestination() => $_has(4);
   @$pb.TagNumber(6)
@@ -964,34 +1160,43 @@ class DriveDestination extends $pb.GeneratedMessage {
     return $result;
   }
   DriveDestination._() : super();
-  factory DriveDestination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveDestination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveDestination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveDestination',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'file')
     ..aOS(2, _omitFieldNames ? '' : 'exportUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveDestination clone() => DriveDestination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveDestination copyWith(void Function(DriveDestination) updates) => super.copyWith((message) => updates(message as DriveDestination)) as DriveDestination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveDestination copyWith(void Function(DriveDestination) updates) =>
+      super.copyWith((message) => updates(message as DriveDestination))
+          as DriveDestination;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveDestination create() => DriveDestination._();
   DriveDestination createEmptyInstance() => create();
-  static $pb.PbList<DriveDestination> createRepeated() => $pb.PbList<DriveDestination>();
+  static $pb.PbList<DriveDestination> createRepeated() =>
+      $pb.PbList<DriveDestination>();
   @$core.pragma('dart2js:noInline')
-  static DriveDestination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveDestination>(create);
+  static DriveDestination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveDestination>(create);
   static DriveDestination? _defaultInstance;
 
   /// Output only. The `fileId` for the underlying MP4 file. For example,
@@ -1002,7 +1207,10 @@ class DriveDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get file => $_getSZ(0);
   @$pb.TagNumber(1)
-  set file($core.String v) { $_setString(0, v); }
+  set file($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFile() => $_has(0);
   @$pb.TagNumber(1)
@@ -1013,17 +1221,17 @@ class DriveDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get exportUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set exportUri($core.String v) { $_setString(1, v); }
+  set exportUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExportUri() => $_has(1);
   @$pb.TagNumber(2)
   void clearExportUri() => clearField(2);
 }
 
-enum Transcript_Destination {
-  docsDestination, 
-  notSet
-}
+enum Transcript_Destination { docsDestination, notSet }
 
 /// Metadata for a transcript generated from a conference. It refers to the ASR
 /// (Automatic Speech Recognition) result of user's speech during the conference.
@@ -1054,33 +1262,46 @@ class Transcript extends $pb.GeneratedMessage {
     return $result;
   }
   Transcript._() : super();
-  factory Transcript.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Transcript.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Transcript.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Transcript.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Transcript_Destination> _Transcript_DestinationByTag = {
-    6 : Transcript_Destination.docsDestination,
-    0 : Transcript_Destination.notSet
+  static const $core.Map<$core.int, Transcript_Destination>
+      _Transcript_DestinationByTag = {
+    6: Transcript_Destination.docsDestination,
+    0: Transcript_Destination.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Transcript', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Transcript',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..oo(0, [6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<Transcript_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Transcript_State.STATE_UNSPECIFIED, valueOf: Transcript_State.valueOf, enumValues: Transcript_State.values)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..aOM<DocsDestination>(6, _omitFieldNames ? '' : 'docsDestination', subBuilder: DocsDestination.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<Transcript_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Transcript_State.STATE_UNSPECIFIED,
+        valueOf: Transcript_State.valueOf,
+        enumValues: Transcript_State.values)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<DocsDestination>(6, _omitFieldNames ? '' : 'docsDestination',
+        subBuilder: DocsDestination.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Transcript clone() => Transcript()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Transcript copyWith(void Function(Transcript) updates) => super.copyWith((message) => updates(message as Transcript)) as Transcript;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Transcript copyWith(void Function(Transcript) updates) =>
+      super.copyWith((message) => updates(message as Transcript)) as Transcript;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1089,10 +1310,12 @@ class Transcript extends $pb.GeneratedMessage {
   Transcript createEmptyInstance() => create();
   static $pb.PbList<Transcript> createRepeated() => $pb.PbList<Transcript>();
   @$core.pragma('dart2js:noInline')
-  static Transcript getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Transcript>(create);
+  static Transcript getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Transcript>(create);
   static Transcript? _defaultInstance;
 
-  Transcript_Destination whichDestination() => _Transcript_DestinationByTag[$_whichOneof(0)]!;
+  Transcript_Destination whichDestination() =>
+      _Transcript_DestinationByTag[$_whichOneof(0)]!;
   void clearDestination() => clearField($_whichOneof(0));
 
   /// Output only. Resource name of the transcript.
@@ -1102,7 +1325,10 @@ class Transcript extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1112,7 +1338,10 @@ class Transcript extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Transcript_State get state => $_getN(1);
   @$pb.TagNumber(3)
-  set state(Transcript_State v) { setField(3, v); }
+  set state(Transcript_State v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(3)
@@ -1122,7 +1351,10 @@ class Transcript extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) { setField(4, v); }
+  set startTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(4)
@@ -1134,7 +1366,10 @@ class Transcript extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) { setField(5, v); }
+  set endTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(5)
@@ -1146,7 +1381,10 @@ class Transcript extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   DocsDestination get docsDestination => $_getN(4);
   @$pb.TagNumber(6)
-  set docsDestination(DocsDestination v) { setField(6, v); }
+  set docsDestination(DocsDestination v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDocsDestination() => $_has(4);
   @$pb.TagNumber(6)
@@ -1171,34 +1409,43 @@ class DocsDestination extends $pb.GeneratedMessage {
     return $result;
   }
   DocsDestination._() : super();
-  factory DocsDestination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DocsDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DocsDestination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DocsDestination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DocsDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DocsDestination',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'document')
     ..aOS(2, _omitFieldNames ? '' : 'exportUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DocsDestination clone() => DocsDestination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DocsDestination copyWith(void Function(DocsDestination) updates) => super.copyWith((message) => updates(message as DocsDestination)) as DocsDestination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DocsDestination copyWith(void Function(DocsDestination) updates) =>
+      super.copyWith((message) => updates(message as DocsDestination))
+          as DocsDestination;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DocsDestination create() => DocsDestination._();
   DocsDestination createEmptyInstance() => create();
-  static $pb.PbList<DocsDestination> createRepeated() => $pb.PbList<DocsDestination>();
+  static $pb.PbList<DocsDestination> createRepeated() =>
+      $pb.PbList<DocsDestination>();
   @$core.pragma('dart2js:noInline')
-  static DocsDestination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DocsDestination>(create);
+  static DocsDestination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DocsDestination>(create);
   static DocsDestination? _defaultInstance;
 
   /// Output only. The document ID for the underlying Google Docs transcript
@@ -1209,7 +1456,10 @@ class DocsDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get document => $_getSZ(0);
   @$pb.TagNumber(1)
-  set document($core.String v) { $_setString(0, v); }
+  set document($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDocument() => $_has(0);
   @$pb.TagNumber(1)
@@ -1221,7 +1471,10 @@ class DocsDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get exportUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set exportUri($core.String v) { $_setString(1, v); }
+  set exportUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExportUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -1260,38 +1513,49 @@ class TranscriptEntry extends $pb.GeneratedMessage {
     return $result;
   }
   TranscriptEntry._() : super();
-  factory TranscriptEntry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TranscriptEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TranscriptEntry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TranscriptEntry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TranscriptEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TranscriptEntry',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'participant')
     ..aOS(3, _omitFieldNames ? '' : 'text')
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TranscriptEntry clone() => TranscriptEntry()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TranscriptEntry copyWith(void Function(TranscriptEntry) updates) => super.copyWith((message) => updates(message as TranscriptEntry)) as TranscriptEntry;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TranscriptEntry copyWith(void Function(TranscriptEntry) updates) =>
+      super.copyWith((message) => updates(message as TranscriptEntry))
+          as TranscriptEntry;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TranscriptEntry create() => TranscriptEntry._();
   TranscriptEntry createEmptyInstance() => create();
-  static $pb.PbList<TranscriptEntry> createRepeated() => $pb.PbList<TranscriptEntry>();
+  static $pb.PbList<TranscriptEntry> createRepeated() =>
+      $pb.PbList<TranscriptEntry>();
   @$core.pragma('dart2js:noInline')
-  static TranscriptEntry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TranscriptEntry>(create);
+  static TranscriptEntry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TranscriptEntry>(create);
   static TranscriptEntry? _defaultInstance;
 
   /// Output only. Resource name of the entry. Format:
@@ -1299,7 +1563,10 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1309,7 +1576,10 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get participant => $_getSZ(1);
   @$pb.TagNumber(2)
-  set participant($core.String v) { $_setString(1, v); }
+  set participant($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasParticipant() => $_has(1);
   @$pb.TagNumber(2)
@@ -1320,7 +1590,10 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get text => $_getSZ(2);
   @$pb.TagNumber(3)
-  set text($core.String v) { $_setString(2, v); }
+  set text($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasText() => $_has(2);
   @$pb.TagNumber(3)
@@ -1331,7 +1604,10 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get languageCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set languageCode($core.String v) { $_setString(3, v); }
+  set languageCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLanguageCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -1341,7 +1617,10 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(5)
-  set startTime($302.Timestamp v) { setField(5, v); }
+  set startTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -1353,7 +1632,10 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($302.Timestamp v) { setField(6, v); }
+  set endTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -1362,6 +1644,6 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   $302.Timestamp ensureEndTime() => $_ensure(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

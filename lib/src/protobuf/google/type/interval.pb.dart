@@ -36,25 +36,32 @@ class Interval extends $pb.GeneratedMessage {
     return $result;
   }
   Interval._() : super();
-  factory Interval.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Interval.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Interval.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Interval.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Interval', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Interval',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Interval clone() => Interval()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Interval copyWith(void Function(Interval) updates) => super.copyWith((message) => updates(message as Interval)) as Interval;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Interval copyWith(void Function(Interval) updates) =>
+      super.copyWith((message) => updates(message as Interval)) as Interval;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -63,7 +70,8 @@ class Interval extends $pb.GeneratedMessage {
   Interval createEmptyInstance() => create();
   static $pb.PbList<Interval> createRepeated() => $pb.PbList<Interval>();
   @$core.pragma('dart2js:noInline')
-  static Interval getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Interval>(create);
+  static Interval getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Interval>(create);
   static Interval? _defaultInstance;
 
   ///  Optional. Inclusive start of the interval.
@@ -73,7 +81,10 @@ class Interval extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -88,7 +99,10 @@ class Interval extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -97,6 +111,6 @@ class Interval extends $pb.GeneratedMessage {
   $302.Timestamp ensureEndTime() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

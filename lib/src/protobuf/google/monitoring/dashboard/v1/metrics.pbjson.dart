@@ -32,12 +32,49 @@ final $typed_data.Uint8List sparkChartTypeDescriptor = $convert.base64Decode(
 const TimeSeriesQuery$json = {
   '1': 'TimeSeriesQuery',
   '2': [
-    {'1': 'time_series_filter', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesFilter', '9': 0, '10': 'timeSeriesFilter'},
-    {'1': 'time_series_filter_ratio', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesFilterRatio', '9': 0, '10': 'timeSeriesFilterRatio'},
-    {'1': 'time_series_query_language', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'timeSeriesQueryLanguage'},
-    {'1': 'prometheus_query', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'prometheusQuery'},
+    {
+      '1': 'time_series_filter',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesFilter',
+      '9': 0,
+      '10': 'timeSeriesFilter'
+    },
+    {
+      '1': 'time_series_filter_ratio',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesFilterRatio',
+      '9': 0,
+      '10': 'timeSeriesFilterRatio'
+    },
+    {
+      '1': 'time_series_query_language',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'timeSeriesQueryLanguage'
+    },
+    {
+      '1': 'prometheus_query',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'prometheusQuery'
+    },
     {'1': 'unit_override', '3': 5, '4': 1, '5': 9, '10': 'unitOverride'},
-    {'1': 'output_full_duration', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'outputFullDuration'},
+    {
+      '1': 'output_full_duration',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'outputFullDuration'
+    },
   ],
   '8': [
     {'1': 'source'},
@@ -60,9 +97,31 @@ const TimeSeriesFilter$json = {
   '1': 'TimeSeriesFilter',
   '2': [
     {'1': 'filter', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'aggregation', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Aggregation', '10': 'aggregation'},
-    {'1': 'secondary_aggregation', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Aggregation', '10': 'secondaryAggregation'},
-    {'1': 'pick_time_series_filter', '3': 4, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter', '9': 0, '10': 'pickTimeSeriesFilter'},
+    {
+      '1': 'aggregation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Aggregation',
+      '10': 'aggregation'
+    },
+    {
+      '1': 'secondary_aggregation',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Aggregation',
+      '10': 'secondaryAggregation'
+    },
+    {
+      '1': 'pick_time_series_filter',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter',
+      '9': 0,
+      '10': 'pickTimeSeriesFilter'
+    },
     {
       '1': 'statistical_time_series_filter',
       '3': 5,
@@ -95,10 +154,39 @@ final $typed_data.Uint8List timeSeriesFilterDescriptor = $convert.base64Decode(
 const TimeSeriesFilterRatio$json = {
   '1': 'TimeSeriesFilterRatio',
   '2': [
-    {'1': 'numerator', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart', '10': 'numerator'},
-    {'1': 'denominator', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart', '10': 'denominator'},
-    {'1': 'secondary_aggregation', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Aggregation', '10': 'secondaryAggregation'},
-    {'1': 'pick_time_series_filter', '3': 4, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter', '9': 0, '10': 'pickTimeSeriesFilter'},
+    {
+      '1': 'numerator',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart',
+      '10': 'numerator'
+    },
+    {
+      '1': 'denominator',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart',
+      '10': 'denominator'
+    },
+    {
+      '1': 'secondary_aggregation',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Aggregation',
+      '10': 'secondaryAggregation'
+    },
+    {
+      '1': 'pick_time_series_filter',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter',
+      '9': 0,
+      '10': 'pickTimeSeriesFilter'
+    },
     {
       '1': 'statistical_time_series_filter',
       '3': 5,
@@ -121,7 +209,14 @@ const TimeSeriesFilterRatio_RatioPart$json = {
   '1': 'RatioPart',
   '2': [
     {'1': 'filter', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'aggregation', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Aggregation', '10': 'aggregation'},
+    {
+      '1': 'aggregation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Aggregation',
+      '10': 'aggregation'
+    },
   ],
 };
 
@@ -147,11 +242,36 @@ const Threshold$json = {
   '2': [
     {'1': 'label', '3': 1, '4': 1, '5': 9, '10': 'label'},
     {'1': 'value', '3': 2, '4': 1, '5': 1, '10': 'value'},
-    {'1': 'color', '3': 3, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Threshold.Color', '10': 'color'},
-    {'1': 'direction', '3': 4, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Threshold.Direction', '10': 'direction'},
-    {'1': 'target_axis', '3': 5, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Threshold.TargetAxis', '10': 'targetAxis'},
+    {
+      '1': 'color',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Threshold.Color',
+      '10': 'color'
+    },
+    {
+      '1': 'direction',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Threshold.Direction',
+      '10': 'direction'
+    },
+    {
+      '1': 'target_axis',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Threshold.TargetAxis',
+      '10': 'targetAxis'
+    },
   ],
-  '4': [Threshold_Color$json, Threshold_Direction$json, Threshold_TargetAxis$json],
+  '4': [
+    Threshold_Color$json,
+    Threshold_Direction$json,
+    Threshold_TargetAxis$json
+  ],
 };
 
 @$core.Deprecated('Use thresholdDescriptor instead')
@@ -195,4 +315,3 @@ final $typed_data.Uint8List thresholdDescriptor = $convert.base64Decode(
     'RUxMT1cQBBIHCgNSRUQQBiI8CglEaXJlY3Rpb24SGQoVRElSRUNUSU9OX1VOU1BFQ0lGSUVEEA'
     'ASCQoFQUJPVkUQARIJCgVCRUxPVxACIjkKClRhcmdldEF4aXMSGwoXVEFSR0VUX0FYSVNfVU5T'
     'UEVDSUZJRUQQABIGCgJZMRABEgYKAlkyEAI=');
-

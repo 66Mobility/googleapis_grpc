@@ -36,12 +36,53 @@ const CommonAddOnManifest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'logo_url', '3': 2, '4': 1, '5': 9, '10': 'logoUrl'},
-    {'1': 'layout_properties', '3': 3, '4': 1, '5': 11, '6': '.google.apps.script.type.LayoutProperties', '10': 'layoutProperties'},
-    {'1': 'add_on_widget_set', '3': 4, '4': 1, '5': 11, '6': '.google.apps.script.type.AddOnWidgetSet', '10': 'addOnWidgetSet'},
-    {'1': 'use_locale_from_app', '3': 5, '4': 1, '5': 8, '10': 'useLocaleFromApp'},
-    {'1': 'homepage_trigger', '3': 6, '4': 1, '5': 11, '6': '.google.apps.script.type.HomepageExtensionPoint', '10': 'homepageTrigger'},
-    {'1': 'universal_actions', '3': 7, '4': 3, '5': 11, '6': '.google.apps.script.type.UniversalActionExtensionPoint', '10': 'universalActions'},
-    {'1': 'open_link_url_prefixes', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'openLinkUrlPrefixes'},
+    {
+      '1': 'layout_properties',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.LayoutProperties',
+      '10': 'layoutProperties'
+    },
+    {
+      '1': 'add_on_widget_set',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.AddOnWidgetSet',
+      '10': 'addOnWidgetSet'
+    },
+    {
+      '1': 'use_locale_from_app',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'useLocaleFromApp'
+    },
+    {
+      '1': 'homepage_trigger',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.HomepageExtensionPoint',
+      '10': 'homepageTrigger'
+    },
+    {
+      '1': 'universal_actions',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.script.type.UniversalActionExtensionPoint',
+      '10': 'universalActions'
+    },
+    {
+      '1': 'open_link_url_prefixes',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'openLinkUrlPrefixes'
+    },
   ],
 };
 
@@ -77,7 +118,14 @@ final $typed_data.Uint8List layoutPropertiesDescriptor = $convert.base64Decode(
 const HttpOptions$json = {
   '1': 'HttpOptions',
   '2': [
-    {'1': 'authorization_header', '3': 1, '4': 1, '5': 14, '6': '.google.apps.script.type.HttpAuthorizationHeader', '10': 'authorizationHeader'},
+    {
+      '1': 'authorization_header',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.script.type.HttpAuthorizationHeader',
+      '10': 'authorizationHeader'
+    },
   ],
 };
 
@@ -86,4 +134,3 @@ final $typed_data.Uint8List httpOptionsDescriptor = $convert.base64Decode(
     'CgtIdHRwT3B0aW9ucxJjChRhdXRob3JpemF0aW9uX2hlYWRlchgBIAEoDjIwLmdvb2dsZS5hcH'
     'BzLnNjcmlwdC50eXBlLkh0dHBBdXRob3JpemF0aW9uSGVhZGVyUhNhdXRob3JpemF0aW9uSGVh'
     'ZGVy');
-

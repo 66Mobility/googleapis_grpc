@@ -22,12 +22,59 @@ const LogMetric$json = {
     {'1': 'filter', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'filter'},
     {'1': 'bucket_name', '3': 13, '4': 1, '5': 9, '8': {}, '10': 'bucketName'},
     {'1': 'disabled', '3': 12, '4': 1, '5': 8, '8': {}, '10': 'disabled'},
-    {'1': 'metric_descriptor', '3': 5, '4': 1, '5': 11, '6': '.google.api.MetricDescriptor', '8': {}, '10': 'metricDescriptor'},
-    {'1': 'value_extractor', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'valueExtractor'},
-    {'1': 'label_extractors', '3': 7, '4': 3, '5': 11, '6': '.google.logging.v2.LogMetric.LabelExtractorsEntry', '8': {}, '10': 'labelExtractors'},
-    {'1': 'bucket_options', '3': 8, '4': 1, '5': 11, '6': '.google.api.Distribution.BucketOptions', '8': {}, '10': 'bucketOptions'},
-    {'1': 'create_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'metric_descriptor',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MetricDescriptor',
+      '8': {},
+      '10': 'metricDescriptor'
+    },
+    {
+      '1': 'value_extractor',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'valueExtractor'
+    },
+    {
+      '1': 'label_extractors',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogMetric.LabelExtractorsEntry',
+      '8': {},
+      '10': 'labelExtractors'
+    },
+    {
+      '1': 'bucket_options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Distribution.BucketOptions',
+      '8': {},
+      '10': 'bucketOptions'
+    },
+    {
+      '1': 'create_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
     {
       '1': 'version',
       '3': 4,
@@ -102,7 +149,14 @@ final $typed_data.Uint8List listLogMetricsRequestDescriptor = $convert.base64Dec
 const ListLogMetricsResponse$json = {
   '1': 'ListLogMetricsResponse',
   '2': [
-    {'1': 'metrics', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.LogMetric', '10': 'metrics'},
+    {
+      '1': 'metrics',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogMetric',
+      '10': 'metrics'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -131,7 +185,15 @@ const CreateLogMetricRequest$json = {
   '1': 'CreateLogMetricRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'metric', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogMetric', '8': {}, '10': 'metric'},
+    {
+      '1': 'metric',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogMetric',
+      '8': {},
+      '10': 'metric'
+    },
   ],
 };
 
@@ -146,7 +208,15 @@ const UpdateLogMetricRequest$json = {
   '1': 'UpdateLogMetricRequest',
   '2': [
     {'1': 'metric_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'metricName'},
-    {'1': 'metric', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogMetric', '8': {}, '10': 'metric'},
+    {
+      '1': 'metric',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogMetric',
+      '8': {},
+      '10': 'metric'
+    },
   ],
 };
 
@@ -165,7 +235,7 @@ const DeleteLogMetricRequest$json = {
 };
 
 /// Descriptor for `DeleteLogMetricRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteLogMetricRequestDescriptor = $convert.base64Decode(
-    'ChZEZWxldGVMb2dNZXRyaWNSZXF1ZXN0EkkKC21ldHJpY19uYW1lGAEgASgJQijgQQL6QSIKIG'
-    'xvZ2dpbmcuZ29vZ2xlYXBpcy5jb20vTG9nTWV0cmljUgptZXRyaWNOYW1l');
-
+final $typed_data.Uint8List deleteLogMetricRequestDescriptor =
+    $convert.base64Decode(
+        'ChZEZWxldGVMb2dNZXRyaWNSZXF1ZXN0EkkKC21ldHJpY19uYW1lGAEgASgJQijgQQL6QSIKIG'
+        'xvZ2dpbmcuZ29vZ2xlYXBpcy5jb20vTG9nTWV0cmljUgptZXRyaWNOYW1l');

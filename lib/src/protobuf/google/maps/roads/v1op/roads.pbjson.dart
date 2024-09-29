@@ -36,7 +36,14 @@ const SnapToRoadsRequest$json = {
     {'1': 'path', '3': 1, '4': 1, '5': 9, '10': 'path'},
     {'1': 'interpolate', '3': 2, '4': 1, '5': 8, '10': 'interpolate'},
     {'1': 'asset_id', '3': 3, '4': 1, '5': 9, '10': 'assetId'},
-    {'1': 'travel_mode', '3': 4, '4': 1, '5': 14, '6': '.google.maps.roads.v1op.TravelMode', '10': 'travelMode'},
+    {
+      '1': 'travel_mode',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.roads.v1op.TravelMode',
+      '10': 'travelMode'
+    },
   ],
 };
 
@@ -51,8 +58,22 @@ final $typed_data.Uint8List snapToRoadsRequestDescriptor = $convert.base64Decode
 const SnappedPoint$json = {
   '1': 'SnappedPoint',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'location'},
-    {'1': 'original_index', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.UInt32Value', '10': 'originalIndex'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'location'
+    },
+    {
+      '1': 'original_index',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.UInt32Value',
+      '10': 'originalIndex'
+    },
     {'1': 'place_id', '3': 3, '4': 1, '5': 9, '10': 'placeId'},
   ],
 };
@@ -67,7 +88,14 @@ final $typed_data.Uint8List snappedPointDescriptor = $convert.base64Decode(
 const SnapToRoadsResponse$json = {
   '1': 'SnapToRoadsResponse',
   '2': [
-    {'1': 'snapped_points', '3': 1, '4': 3, '5': 11, '6': '.google.maps.roads.v1op.SnappedPoint', '10': 'snappedPoints'},
+    {
+      '1': 'snapped_points',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.roads.v1op.SnappedPoint',
+      '10': 'snappedPoints'
+    },
     {'1': 'warning_message', '3': 2, '4': 1, '5': 9, '10': 'warningMessage'},
   ],
 };
@@ -83,7 +111,14 @@ const ListNearestRoadsRequest$json = {
   '1': 'ListNearestRoadsRequest',
   '2': [
     {'1': 'points', '3': 1, '4': 1, '5': 9, '10': 'points'},
-    {'1': 'travel_mode', '3': 2, '4': 1, '5': 14, '6': '.google.maps.roads.v1op.TravelMode', '10': 'travelMode'},
+    {
+      '1': 'travel_mode',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.roads.v1op.TravelMode',
+      '10': 'travelMode'
+    },
   ],
 };
 
@@ -97,12 +132,19 @@ final $typed_data.Uint8List listNearestRoadsRequestDescriptor = $convert.base64D
 const ListNearestRoadsResponse$json = {
   '1': 'ListNearestRoadsResponse',
   '2': [
-    {'1': 'snapped_points', '3': 1, '4': 3, '5': 11, '6': '.google.maps.roads.v1op.SnappedPoint', '10': 'snappedPoints'},
+    {
+      '1': 'snapped_points',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.roads.v1op.SnappedPoint',
+      '10': 'snappedPoints'
+    },
   ],
 };
 
 /// Descriptor for `ListNearestRoadsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNearestRoadsResponseDescriptor = $convert.base64Decode(
-    'ChhMaXN0TmVhcmVzdFJvYWRzUmVzcG9uc2USSwoOc25hcHBlZF9wb2ludHMYASADKAsyJC5nb2'
-    '9nbGUubWFwcy5yb2Fkcy52MW9wLlNuYXBwZWRQb2ludFINc25hcHBlZFBvaW50cw==');
-
+final $typed_data.Uint8List listNearestRoadsResponseDescriptor =
+    $convert.base64Decode(
+        'ChhMaXN0TmVhcmVzdFJvYWRzUmVzcG9uc2USSwoOc25hcHBlZF9wb2ludHMYASADKAsyJC5nb2'
+        '9nbGUubWFwcy5yb2Fkcy52MW9wLlNuYXBwZWRQb2ludFINc25hcHBlZFBvaW50cw==');

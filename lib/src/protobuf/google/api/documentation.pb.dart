@@ -99,38 +99,49 @@ class Documentation extends $pb.GeneratedMessage {
     return $result;
   }
   Documentation._() : super();
-  factory Documentation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Documentation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Documentation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Documentation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Documentation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Documentation',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'summary')
     ..aOS(2, _omitFieldNames ? '' : 'overview')
-    ..pc<DocumentationRule>(3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: DocumentationRule.create)
+    ..pc<DocumentationRule>(
+        3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+        subBuilder: DocumentationRule.create)
     ..aOS(4, _omitFieldNames ? '' : 'documentationRootUrl')
-    ..pc<Page>(5, _omitFieldNames ? '' : 'pages', $pb.PbFieldType.PM, subBuilder: Page.create)
+    ..pc<Page>(5, _omitFieldNames ? '' : 'pages', $pb.PbFieldType.PM,
+        subBuilder: Page.create)
     ..aOS(6, _omitFieldNames ? '' : 'serviceRootUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Documentation clone() => Documentation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Documentation copyWith(void Function(Documentation) updates) => super.copyWith((message) => updates(message as Documentation)) as Documentation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Documentation copyWith(void Function(Documentation) updates) =>
+      super.copyWith((message) => updates(message as Documentation))
+          as Documentation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Documentation create() => Documentation._();
   Documentation createEmptyInstance() => create();
-  static $pb.PbList<Documentation> createRepeated() => $pb.PbList<Documentation>();
+  static $pb.PbList<Documentation> createRepeated() =>
+      $pb.PbList<Documentation>();
   @$core.pragma('dart2js:noInline')
-  static Documentation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Documentation>(create);
+  static Documentation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Documentation>(create);
   static Documentation? _defaultInstance;
 
   /// A short description of what the service does. The summary must be plain
@@ -140,7 +151,10 @@ class Documentation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get summary => $_getSZ(0);
   @$pb.TagNumber(1)
-  set summary($core.String v) { $_setString(0, v); }
+  set summary($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSummary() => $_has(0);
   @$pb.TagNumber(1)
@@ -162,7 +176,10 @@ class Documentation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get overview => $_getSZ(1);
   @$pb.TagNumber(2)
-  set overview($core.String v) { $_setString(1, v); }
+  set overview($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOverview() => $_has(1);
   @$pb.TagNumber(2)
@@ -178,7 +195,10 @@ class Documentation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get documentationRootUrl => $_getSZ(3);
   @$pb.TagNumber(4)
-  set documentationRootUrl($core.String v) { $_setString(3, v); }
+  set documentationRootUrl($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDocumentationRootUrl() => $_has(3);
   @$pb.TagNumber(4)
@@ -195,7 +215,10 @@ class Documentation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get serviceRootUrl => $_getSZ(5);
   @$pb.TagNumber(6)
-  set serviceRootUrl($core.String v) { $_setString(5, v); }
+  set serviceRootUrl($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasServiceRootUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -222,35 +245,43 @@ class DocumentationRule extends $pb.GeneratedMessage {
     return $result;
   }
   DocumentationRule._() : super();
-  factory DocumentationRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DocumentationRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DocumentationRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DocumentationRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DocumentationRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DocumentationRule',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'selector')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'deprecationDescription')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DocumentationRule clone() => DocumentationRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DocumentationRule copyWith(void Function(DocumentationRule) updates) => super.copyWith((message) => updates(message as DocumentationRule)) as DocumentationRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DocumentationRule copyWith(void Function(DocumentationRule) updates) =>
+      super.copyWith((message) => updates(message as DocumentationRule))
+          as DocumentationRule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DocumentationRule create() => DocumentationRule._();
   DocumentationRule createEmptyInstance() => create();
-  static $pb.PbList<DocumentationRule> createRepeated() => $pb.PbList<DocumentationRule>();
+  static $pb.PbList<DocumentationRule> createRepeated() =>
+      $pb.PbList<DocumentationRule>();
   @$core.pragma('dart2js:noInline')
-  static DocumentationRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DocumentationRule>(create);
+  static DocumentationRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DocumentationRule>(create);
   static DocumentationRule? _defaultInstance;
 
   /// The selector is a comma-separated list of patterns for any element such as
@@ -263,7 +294,10 @@ class DocumentationRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get selector => $_getSZ(0);
   @$pb.TagNumber(1)
-  set selector($core.String v) { $_setString(0, v); }
+  set selector($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -275,7 +309,10 @@ class DocumentationRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -286,7 +323,10 @@ class DocumentationRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get deprecationDescription => $_getSZ(2);
   @$pb.TagNumber(3)
-  set deprecationDescription($core.String v) { $_setString(2, v); }
+  set deprecationDescription($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeprecationDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -314,26 +354,32 @@ class Page extends $pb.GeneratedMessage {
     return $result;
   }
   Page._() : super();
-  factory Page.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Page.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Page.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Page.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Page', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Page',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'content')
-    ..pc<Page>(3, _omitFieldNames ? '' : 'subpages', $pb.PbFieldType.PM, subBuilder: Page.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<Page>(3, _omitFieldNames ? '' : 'subpages', $pb.PbFieldType.PM,
+        subBuilder: Page.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Page clone() => Page()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Page copyWith(void Function(Page) updates) => super.copyWith((message) => updates(message as Page)) as Page;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Page copyWith(void Function(Page) updates) =>
+      super.copyWith((message) => updates(message as Page)) as Page;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -342,7 +388,8 @@ class Page extends $pb.GeneratedMessage {
   Page createEmptyInstance() => create();
   static $pb.PbList<Page> createRepeated() => $pb.PbList<Page>();
   @$core.pragma('dart2js:noInline')
-  static Page getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Page>(create);
+  static Page getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Page>(create);
   static Page? _defaultInstance;
 
   /// The name of the page. It will be used as an identity of the page to
@@ -362,7 +409,10 @@ class Page extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -374,7 +424,10 @@ class Page extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get content => $_getSZ(1);
   @$pb.TagNumber(2)
-  set content($core.String v) { $_setString(1, v); }
+  set content($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(2)
@@ -386,6 +439,6 @@ class Page extends $pb.GeneratedMessage {
   $core.List<Page> get subpages => $_getList(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

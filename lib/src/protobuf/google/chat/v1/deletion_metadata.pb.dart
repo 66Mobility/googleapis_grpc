@@ -30,46 +30,61 @@ class DeletionMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   DeletionMetadata._() : super();
-  factory DeletionMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeletionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeletionMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeletionMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeletionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..e<DeletionMetadata_DeletionType>(1, _omitFieldNames ? '' : 'deletionType', $pb.PbFieldType.OE, defaultOrMaker: DeletionMetadata_DeletionType.DELETION_TYPE_UNSPECIFIED, valueOf: DeletionMetadata_DeletionType.valueOf, enumValues: DeletionMetadata_DeletionType.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeletionMetadata',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..e<DeletionMetadata_DeletionType>(
+        1, _omitFieldNames ? '' : 'deletionType', $pb.PbFieldType.OE,
+        defaultOrMaker: DeletionMetadata_DeletionType.DELETION_TYPE_UNSPECIFIED,
+        valueOf: DeletionMetadata_DeletionType.valueOf,
+        enumValues: DeletionMetadata_DeletionType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeletionMetadata clone() => DeletionMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeletionMetadata copyWith(void Function(DeletionMetadata) updates) => super.copyWith((message) => updates(message as DeletionMetadata)) as DeletionMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeletionMetadata copyWith(void Function(DeletionMetadata) updates) =>
+      super.copyWith((message) => updates(message as DeletionMetadata))
+          as DeletionMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeletionMetadata create() => DeletionMetadata._();
   DeletionMetadata createEmptyInstance() => create();
-  static $pb.PbList<DeletionMetadata> createRepeated() => $pb.PbList<DeletionMetadata>();
+  static $pb.PbList<DeletionMetadata> createRepeated() =>
+      $pb.PbList<DeletionMetadata>();
   @$core.pragma('dart2js:noInline')
-  static DeletionMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeletionMetadata>(create);
+  static DeletionMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeletionMetadata>(create);
   static DeletionMetadata? _defaultInstance;
 
   /// Indicates who deleted the message.
   @$pb.TagNumber(1)
   DeletionMetadata_DeletionType get deletionType => $_getN(0);
   @$pb.TagNumber(1)
-  set deletionType(DeletionMetadata_DeletionType v) { setField(1, v); }
+  set deletionType(DeletionMetadata_DeletionType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDeletionType() => $_has(0);
   @$pb.TagNumber(1)
   void clearDeletionType() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -18,13 +18,38 @@ const UndeliverableFirstGenEvent$json = {
   '1': 'UndeliverableFirstGenEvent',
   '2': [
     {'1': 'message', '3': 1, '4': 1, '5': 9, '10': 'message'},
-    {'1': 'reason', '3': 2, '4': 1, '5': 14, '6': '.google.firestore.v1beta1.UndeliverableFirstGenEvent.Reason', '10': 'reason'},
+    {
+      '1': 'reason',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.v1beta1.UndeliverableFirstGenEvent.Reason',
+      '10': 'reason'
+    },
     {'1': 'document_name', '3': 3, '4': 1, '5': 9, '10': 'documentName'},
-    {'1': 'document_change_type', '3': 4, '4': 1, '5': 14, '6': '.google.firestore.v1beta1.UndeliverableFirstGenEvent.DocumentChangeType', '10': 'documentChangeType'},
+    {
+      '1': 'document_change_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.firestore.v1beta1.UndeliverableFirstGenEvent.DocumentChangeType',
+      '10': 'documentChangeType'
+    },
     {'1': 'function_name', '3': 5, '4': 3, '5': 9, '10': 'functionName'},
-    {'1': 'triggered_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'triggeredTime'},
+    {
+      '1': 'triggered_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'triggeredTime'
+    },
   ],
-  '4': [UndeliverableFirstGenEvent_Reason$json, UndeliverableFirstGenEvent_DocumentChangeType$json],
+  '4': [
+    UndeliverableFirstGenEvent_Reason$json,
+    UndeliverableFirstGenEvent_DocumentChangeType$json
+  ],
 };
 
 @$core.Deprecated('Use undeliverableFirstGenEventDescriptor instead')
@@ -60,4 +85,3 @@ final $typed_data.Uint8List undeliverableFirstGenEventDescriptor = $convert.base
     'RUVESU5HX1NJWkVfTElNSVQQASJeChJEb2N1bWVudENoYW5nZVR5cGUSJAogRE9DVU1FTlRfQ0'
     'hBTkdFX1RZUEVfVU5TUEVDSUZJRUQQABIKCgZDUkVBVEUQARIKCgZERUxFVEUQAhIKCgZVUERB'
     'VEUQAw==');
-

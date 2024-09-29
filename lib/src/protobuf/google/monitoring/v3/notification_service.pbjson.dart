@@ -13,7 +13,8 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
-@$core.Deprecated('Use listNotificationChannelDescriptorsRequestDescriptor instead')
+@$core.Deprecated(
+    'Use listNotificationChannelDescriptorsRequestDescriptor instead')
 const ListNotificationChannelDescriptorsRequest$json = {
   '1': 'ListNotificationChannelDescriptorsRequest',
   '2': [
@@ -24,29 +25,41 @@ const ListNotificationChannelDescriptorsRequest$json = {
 };
 
 /// Descriptor for `ListNotificationChannelDescriptorsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationChannelDescriptorsRequestDescriptor = $convert.base64Decode(
-    'CilMaXN0Tm90aWZpY2F0aW9uQ2hhbm5lbERlc2NyaXB0b3JzUmVxdWVzdBJTCgRuYW1lGAQgAS'
-    'gJQj/gQQL6QTkSN21vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5l'
-    'bERlc2NyaXB0b3JSBG5hbWUSGwoJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYWdlX3'
-    'Rva2VuGAMgASgJUglwYWdlVG9rZW4=');
+final $typed_data.Uint8List
+    listNotificationChannelDescriptorsRequestDescriptor = $convert.base64Decode(
+        'CilMaXN0Tm90aWZpY2F0aW9uQ2hhbm5lbERlc2NyaXB0b3JzUmVxdWVzdBJTCgRuYW1lGAQgAS'
+        'gJQj/gQQL6QTkSN21vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5l'
+        'bERlc2NyaXB0b3JSBG5hbWUSGwoJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYWdlX3'
+        'Rva2VuGAMgASgJUglwYWdlVG9rZW4=');
 
-@$core.Deprecated('Use listNotificationChannelDescriptorsResponseDescriptor instead')
+@$core.Deprecated(
+    'Use listNotificationChannelDescriptorsResponseDescriptor instead')
 const ListNotificationChannelDescriptorsResponse$json = {
   '1': 'ListNotificationChannelDescriptorsResponse',
   '2': [
-    {'1': 'channel_descriptors', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.v3.NotificationChannelDescriptor', '10': 'channelDescriptors'},
+    {
+      '1': 'channel_descriptors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.NotificationChannelDescriptor',
+      '10': 'channelDescriptors'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListNotificationChannelDescriptorsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationChannelDescriptorsResponseDescriptor = $convert.base64Decode(
-    'CipMaXN0Tm90aWZpY2F0aW9uQ2hhbm5lbERlc2NyaXB0b3JzUmVzcG9uc2USZAoTY2hhbm5lbF'
-    '9kZXNjcmlwdG9ycxgBIAMoCzIzLmdvb2dsZS5tb25pdG9yaW5nLnYzLk5vdGlmaWNhdGlvbkNo'
-    'YW5uZWxEZXNjcmlwdG9yUhJjaGFubmVsRGVzY3JpcHRvcnMSJgoPbmV4dF9wYWdlX3Rva2VuGA'
-    'IgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List
+    listNotificationChannelDescriptorsResponseDescriptor =
+    $convert.base64Decode(
+        'CipMaXN0Tm90aWZpY2F0aW9uQ2hhbm5lbERlc2NyaXB0b3JzUmVzcG9uc2USZAoTY2hhbm5lbF'
+        '9kZXNjcmlwdG9ycxgBIAMoCzIzLmdvb2dsZS5tb25pdG9yaW5nLnYzLk5vdGlmaWNhdGlvbkNo'
+        'YW5uZWxEZXNjcmlwdG9yUhJjaGFubmVsRGVzY3JpcHRvcnMSJgoPbmV4dF9wYWdlX3Rva2VuGA'
+        'IgASgJUg1uZXh0UGFnZVRva2Vu');
 
-@$core.Deprecated('Use getNotificationChannelDescriptorRequestDescriptor instead')
+@$core
+    .Deprecated('Use getNotificationChannelDescriptorRequestDescriptor instead')
 const GetNotificationChannelDescriptorRequest$json = {
   '1': 'GetNotificationChannelDescriptorRequest',
   '2': [
@@ -55,26 +68,36 @@ const GetNotificationChannelDescriptorRequest$json = {
 };
 
 /// Descriptor for `GetNotificationChannelDescriptorRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getNotificationChannelDescriptorRequestDescriptor = $convert.base64Decode(
-    'CidHZXROb3RpZmljYXRpb25DaGFubmVsRGVzY3JpcHRvclJlcXVlc3QSUwoEbmFtZRgDIAEoCU'
-    'I/4EEC+kE5Cjdtb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvbkNoYW5uZWxE'
-    'ZXNjcmlwdG9yUgRuYW1l');
+final $typed_data.Uint8List getNotificationChannelDescriptorRequestDescriptor =
+    $convert.base64Decode(
+        'CidHZXROb3RpZmljYXRpb25DaGFubmVsRGVzY3JpcHRvclJlcXVlc3QSUwoEbmFtZRgDIAEoCU'
+        'I/4EEC+kE5Cjdtb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvbkNoYW5uZWxE'
+        'ZXNjcmlwdG9yUgRuYW1l');
 
 @$core.Deprecated('Use createNotificationChannelRequestDescriptor instead')
 const CreateNotificationChannelRequest$json = {
   '1': 'CreateNotificationChannelRequest',
   '2': [
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'notification_channel', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.v3.NotificationChannel', '8': {}, '10': 'notificationChannel'},
+    {
+      '1': 'notification_channel',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.NotificationChannel',
+      '8': {},
+      '10': 'notificationChannel'
+    },
   ],
 };
 
 /// Descriptor for `CreateNotificationChannelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createNotificationChannelRequestDescriptor = $convert.base64Decode(
-    'CiBDcmVhdGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAMgASgJQjXgQQL6QS'
-    '8SLW1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZRJh'
-    'ChRub3RpZmljYXRpb25fY2hhbm5lbBgCIAEoCzIpLmdvb2dsZS5tb25pdG9yaW5nLnYzLk5vdG'
-    'lmaWNhdGlvbkNoYW5uZWxCA+BBAlITbm90aWZpY2F0aW9uQ2hhbm5lbA==');
+final $typed_data.Uint8List createNotificationChannelRequestDescriptor =
+    $convert.base64Decode(
+        'CiBDcmVhdGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAMgASgJQjXgQQL6QS'
+        '8SLW1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZRJh'
+        'ChRub3RpZmljYXRpb25fY2hhbm5lbBgCIAEoCzIpLmdvb2dsZS5tb25pdG9yaW5nLnYzLk5vdG'
+        'lmaWNhdGlvbkNoYW5uZWxCA+BBAlITbm90aWZpY2F0aW9uQ2hhbm5lbA==');
 
 @$core.Deprecated('Use listNotificationChannelsRequestDescriptor instead')
 const ListNotificationChannelsRequest$json = {
@@ -99,18 +122,26 @@ final $typed_data.Uint8List listNotificationChannelsRequestDescriptor = $convert
 const ListNotificationChannelsResponse$json = {
   '1': 'ListNotificationChannelsResponse',
   '2': [
-    {'1': 'notification_channels', '3': 3, '4': 3, '5': 11, '6': '.google.monitoring.v3.NotificationChannel', '10': 'notificationChannels'},
+    {
+      '1': 'notification_channels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.NotificationChannel',
+      '10': 'notificationChannels'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 4, '4': 1, '5': 5, '10': 'totalSize'},
   ],
 };
 
 /// Descriptor for `ListNotificationChannelsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationChannelsResponseDescriptor = $convert.base64Decode(
-    'CiBMaXN0Tm90aWZpY2F0aW9uQ2hhbm5lbHNSZXNwb25zZRJeChVub3RpZmljYXRpb25fY2hhbm'
-    '5lbHMYAyADKAsyKS5nb29nbGUubW9uaXRvcmluZy52My5Ob3RpZmljYXRpb25DaGFubmVsUhRu'
-    'b3RpZmljYXRpb25DaGFubmVscxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG'
-    '9rZW4SHQoKdG90YWxfc2l6ZRgEIAEoBVIJdG90YWxTaXpl');
+final $typed_data.Uint8List listNotificationChannelsResponseDescriptor =
+    $convert.base64Decode(
+        'CiBMaXN0Tm90aWZpY2F0aW9uQ2hhbm5lbHNSZXNwb25zZRJeChVub3RpZmljYXRpb25fY2hhbm'
+        '5lbHMYAyADKAsyKS5nb29nbGUubW9uaXRvcmluZy52My5Ob3RpZmljYXRpb25DaGFubmVsUhRu'
+        'b3RpZmljYXRpb25DaGFubmVscxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG'
+        '9rZW4SHQoKdG90YWxfc2l6ZRgEIAEoBVIJdG90YWxTaXpl');
 
 @$core.Deprecated('Use getNotificationChannelRequestDescriptor instead')
 const GetNotificationChannelRequest$json = {
@@ -121,25 +152,42 @@ const GetNotificationChannelRequest$json = {
 };
 
 /// Descriptor for `GetNotificationChannelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getNotificationChannelRequestDescriptor = $convert.base64Decode(
-    'Ch1HZXROb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAMgASgJQjXgQQL6QS8KLW'
-    '1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZQ==');
+final $typed_data.Uint8List getNotificationChannelRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1HZXROb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAMgASgJQjXgQQL6QS8KLW'
+        '1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZQ==');
 
 @$core.Deprecated('Use updateNotificationChannelRequestDescriptor instead')
 const UpdateNotificationChannelRequest$json = {
   '1': 'UpdateNotificationChannelRequest',
   '2': [
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'notification_channel', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.v3.NotificationChannel', '8': {}, '10': 'notificationChannel'},
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'notification_channel',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.NotificationChannel',
+      '8': {},
+      '10': 'notificationChannel'
+    },
   ],
 };
 
 /// Descriptor for `UpdateNotificationChannelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateNotificationChannelRequestDescriptor = $convert.base64Decode(
-    'CiBVcGRhdGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBI7Cgt1cGRhdGVfbWFzaxgCIAEoCz'
-    'IaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2tSCnVwZGF0ZU1hc2sSYQoUbm90aWZpY2F0aW9u'
-    'X2NoYW5uZWwYAyABKAsyKS5nb29nbGUubW9uaXRvcmluZy52My5Ob3RpZmljYXRpb25DaGFubm'
-    'VsQgPgQQJSE25vdGlmaWNhdGlvbkNoYW5uZWw=');
+final $typed_data.Uint8List updateNotificationChannelRequestDescriptor =
+    $convert.base64Decode(
+        'CiBVcGRhdGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBI7Cgt1cGRhdGVfbWFzaxgCIAEoCz'
+        'IaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2tSCnVwZGF0ZU1hc2sSYQoUbm90aWZpY2F0aW9u'
+        'X2NoYW5uZWwYAyABKAsyKS5nb29nbGUubW9uaXRvcmluZy52My5Ob3RpZmljYXRpb25DaGFubm'
+        'VsQgPgQQJSE25vdGlmaWNhdGlvbkNoYW5uZWw=');
 
 @$core.Deprecated('Use deleteNotificationChannelRequestDescriptor instead')
 const DeleteNotificationChannelRequest$json = {
@@ -151,12 +199,14 @@ const DeleteNotificationChannelRequest$json = {
 };
 
 /// Descriptor for `DeleteNotificationChannelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteNotificationChannelRequestDescriptor = $convert.base64Decode(
-    'CiBEZWxldGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAMgASgJQjXgQQL6QS'
-    '8KLW1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZRIU'
-    'CgVmb3JjZRgFIAEoCFIFZm9yY2U=');
+final $typed_data.Uint8List deleteNotificationChannelRequestDescriptor =
+    $convert.base64Decode(
+        'CiBEZWxldGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAMgASgJQjXgQQL6QS'
+        '8KLW1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZRIU'
+        'CgVmb3JjZRgFIAEoCFIFZm9yY2U=');
 
-@$core.Deprecated('Use sendNotificationChannelVerificationCodeRequestDescriptor instead')
+@$core.Deprecated(
+    'Use sendNotificationChannelVerificationCodeRequestDescriptor instead')
 const SendNotificationChannelVerificationCodeRequest$json = {
   '1': 'SendNotificationChannelVerificationCodeRequest',
   '2': [
@@ -165,41 +215,63 @@ const SendNotificationChannelVerificationCodeRequest$json = {
 };
 
 /// Descriptor for `SendNotificationChannelVerificationCodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List sendNotificationChannelVerificationCodeRequestDescriptor = $convert.base64Decode(
-    'Ci5TZW5kTm90aWZpY2F0aW9uQ2hhbm5lbFZlcmlmaWNhdGlvbkNvZGVSZXF1ZXN0EkkKBG5hbW'
-    'UYASABKAlCNeBBAvpBLwotbW9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25D'
-    'aGFubmVsUgRuYW1l');
+final $typed_data.Uint8List
+    sendNotificationChannelVerificationCodeRequestDescriptor =
+    $convert.base64Decode(
+        'Ci5TZW5kTm90aWZpY2F0aW9uQ2hhbm5lbFZlcmlmaWNhdGlvbkNvZGVSZXF1ZXN0EkkKBG5hbW'
+        'UYASABKAlCNeBBAvpBLwotbW9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25D'
+        'aGFubmVsUgRuYW1l');
 
-@$core.Deprecated('Use getNotificationChannelVerificationCodeRequestDescriptor instead')
+@$core.Deprecated(
+    'Use getNotificationChannelVerificationCodeRequestDescriptor instead')
 const GetNotificationChannelVerificationCodeRequest$json = {
   '1': 'GetNotificationChannelVerificationCodeRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'expire_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
+    {
+      '1': 'expire_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
   ],
 };
 
 /// Descriptor for `GetNotificationChannelVerificationCodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getNotificationChannelVerificationCodeRequestDescriptor = $convert.base64Decode(
-    'Ci1HZXROb3RpZmljYXRpb25DaGFubmVsVmVyaWZpY2F0aW9uQ29kZVJlcXVlc3QSSQoEbmFtZR'
-    'gBIAEoCUI14EEC+kEvCi1tb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvbkNo'
-    'YW5uZWxSBG5hbWUSOwoLZXhwaXJlX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZX'
-    'N0YW1wUgpleHBpcmVUaW1l');
+final $typed_data.Uint8List
+    getNotificationChannelVerificationCodeRequestDescriptor =
+    $convert.base64Decode(
+        'Ci1HZXROb3RpZmljYXRpb25DaGFubmVsVmVyaWZpY2F0aW9uQ29kZVJlcXVlc3QSSQoEbmFtZR'
+        'gBIAEoCUI14EEC+kEvCi1tb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvbkNo'
+        'YW5uZWxSBG5hbWUSOwoLZXhwaXJlX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZX'
+        'N0YW1wUgpleHBpcmVUaW1l');
 
-@$core.Deprecated('Use getNotificationChannelVerificationCodeResponseDescriptor instead')
+@$core.Deprecated(
+    'Use getNotificationChannelVerificationCodeResponseDescriptor instead')
 const GetNotificationChannelVerificationCodeResponse$json = {
   '1': 'GetNotificationChannelVerificationCodeResponse',
   '2': [
     {'1': 'code', '3': 1, '4': 1, '5': 9, '10': 'code'},
-    {'1': 'expire_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
+    {
+      '1': 'expire_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
   ],
 };
 
 /// Descriptor for `GetNotificationChannelVerificationCodeResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getNotificationChannelVerificationCodeResponseDescriptor = $convert.base64Decode(
-    'Ci5HZXROb3RpZmljYXRpb25DaGFubmVsVmVyaWZpY2F0aW9uQ29kZVJlc3BvbnNlEhIKBGNvZG'
-    'UYASABKAlSBGNvZGUSOwoLZXhwaXJlX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt'
-    'ZXN0YW1wUgpleHBpcmVUaW1l');
+final $typed_data.Uint8List
+    getNotificationChannelVerificationCodeResponseDescriptor =
+    $convert.base64Decode(
+        'Ci5HZXROb3RpZmljYXRpb25DaGFubmVsVmVyaWZpY2F0aW9uQ29kZVJlc3BvbnNlEhIKBGNvZG'
+        'UYASABKAlSBGNvZGUSOwoLZXhwaXJlX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt'
+        'ZXN0YW1wUgpleHBpcmVUaW1l');
 
 @$core.Deprecated('Use verifyNotificationChannelRequestDescriptor instead')
 const VerifyNotificationChannelRequest$json = {
@@ -211,8 +283,8 @@ const VerifyNotificationChannelRequest$json = {
 };
 
 /// Descriptor for `VerifyNotificationChannelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List verifyNotificationChannelRequestDescriptor = $convert.base64Decode(
-    'CiBWZXJpZnlOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAEgASgJQjXgQQL6QS'
-    '8KLW1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZRIX'
-    'CgRjb2RlGAIgASgJQgPgQQJSBGNvZGU=');
-
+final $typed_data.Uint8List verifyNotificationChannelRequestDescriptor =
+    $convert.base64Decode(
+        'CiBWZXJpZnlOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJJCgRuYW1lGAEgASgJQjXgQQL6QS'
+        '8KLW1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ2hhbm5lbFIEbmFtZRIX'
+        'CgRjb2RlGAIgASgJQgPgQQJSBGNvZGU=');

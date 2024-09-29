@@ -17,9 +17,25 @@ import 'dart:typed_data' as $typed_data;
 const SetUpSpaceRequest$json = {
   '1': 'SetUpSpaceRequest',
   '2': [
-    {'1': 'space', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Space', '8': {}, '10': 'space'},
+    {
+      '1': 'space',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space',
+      '8': {},
+      '10': 'space'
+    },
     {'1': 'request_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
-    {'1': 'memberships', '3': 4, '4': 3, '5': 11, '6': '.google.chat.v1.Membership', '8': {}, '10': 'memberships'},
+    {
+      '1': 'memberships',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Membership',
+      '8': {},
+      '10': 'memberships'
+    },
   ],
 };
 
@@ -29,4 +45,3 @@ final $typed_data.Uint8List setUpSpaceRequestDescriptor = $convert.base64Decode(
     'NlQgPgQQJSBXNwYWNlEiIKCnJlcXVlc3RfaWQYAiABKAlCA+BBAVIJcmVxdWVzdElkEkEKC21l'
     'bWJlcnNoaXBzGAQgAygLMhouZ29vZ2xlLmNoYXQudjEuTWVtYmVyc2hpcEID4EEBUgttZW1iZX'
     'JzaGlwcw==');
-

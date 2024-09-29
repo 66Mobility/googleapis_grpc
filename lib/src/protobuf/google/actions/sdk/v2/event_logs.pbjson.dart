@@ -17,22 +17,147 @@ import 'dart:typed_data' as $typed_data;
 const ExecutionEvent$json = {
   '1': 'ExecutionEvent',
   '2': [
-    {'1': 'event_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eventTime'},
-    {'1': 'execution_state', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.ExecutionState', '10': 'executionState'},
-    {'1': 'status', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'user_input', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.UserConversationInput', '9': 0, '10': 'userInput'},
-    {'1': 'intent_match', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.IntentMatch', '9': 0, '10': 'intentMatch'},
-    {'1': 'conditions_evaluated', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.ConditionsEvaluated', '9': 0, '10': 'conditionsEvaluated'},
-    {'1': 'on_scene_enter', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.OnSceneEnter', '9': 0, '10': 'onSceneEnter'},
-    {'1': 'webhook_request', '3': 8, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.WebhookRequest', '9': 0, '10': 'webhookRequest'},
-    {'1': 'webhook_response', '3': 9, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.WebhookResponse', '9': 0, '10': 'webhookResponse'},
-    {'1': 'webhook_initiated_transition', '3': 10, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.WebhookInitiatedTransition', '9': 0, '10': 'webhookInitiatedTransition'},
-    {'1': 'slot_match', '3': 11, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.SlotMatch', '9': 0, '10': 'slotMatch'},
-    {'1': 'slot_requested', '3': 12, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.SlotRequested', '9': 0, '10': 'slotRequested'},
-    {'1': 'slot_validated', '3': 13, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.SlotValidated', '9': 0, '10': 'slotValidated'},
-    {'1': 'form_filled', '3': 14, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.FormFilled', '9': 0, '10': 'formFilled'},
-    {'1': 'waiting_user_input', '3': 15, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.WaitingForUserInput', '9': 0, '10': 'waitingUserInput'},
-    {'1': 'end_conversation', '3': 16, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.EndConversation', '9': 0, '10': 'endConversation'},
+    {
+      '1': 'event_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eventTime'
+    },
+    {
+      '1': 'execution_state',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ExecutionState',
+      '10': 'executionState'
+    },
+    {
+      '1': 'status',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'user_input',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.UserConversationInput',
+      '9': 0,
+      '10': 'userInput'
+    },
+    {
+      '1': 'intent_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.IntentMatch',
+      '9': 0,
+      '10': 'intentMatch'
+    },
+    {
+      '1': 'conditions_evaluated',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ConditionsEvaluated',
+      '9': 0,
+      '10': 'conditionsEvaluated'
+    },
+    {
+      '1': 'on_scene_enter',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.OnSceneEnter',
+      '9': 0,
+      '10': 'onSceneEnter'
+    },
+    {
+      '1': 'webhook_request',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.WebhookRequest',
+      '9': 0,
+      '10': 'webhookRequest'
+    },
+    {
+      '1': 'webhook_response',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.WebhookResponse',
+      '9': 0,
+      '10': 'webhookResponse'
+    },
+    {
+      '1': 'webhook_initiated_transition',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.WebhookInitiatedTransition',
+      '9': 0,
+      '10': 'webhookInitiatedTransition'
+    },
+    {
+      '1': 'slot_match',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.SlotMatch',
+      '9': 0,
+      '10': 'slotMatch'
+    },
+    {
+      '1': 'slot_requested',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.SlotRequested',
+      '9': 0,
+      '10': 'slotRequested'
+    },
+    {
+      '1': 'slot_validated',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.SlotValidated',
+      '9': 0,
+      '10': 'slotValidated'
+    },
+    {
+      '1': 'form_filled',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.FormFilled',
+      '9': 0,
+      '10': 'formFilled'
+    },
+    {
+      '1': 'waiting_user_input',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.WaitingForUserInput',
+      '9': 0,
+      '10': 'waitingUserInput'
+    },
+    {
+      '1': 'end_conversation',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.EndConversation',
+      '9': 0,
+      '10': 'endConversation'
+    },
     {'1': 'warning_messages', '3': 17, '4': 3, '5': 9, '10': 'warningMessages'},
   ],
   '8': [
@@ -73,11 +198,46 @@ const ExecutionState$json = {
   '1': 'ExecutionState',
   '2': [
     {'1': 'current_scene_id', '3': 1, '4': 1, '5': 9, '10': 'currentSceneId'},
-    {'1': 'session_storage', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'sessionStorage'},
-    {'1': 'slots', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Slots', '10': 'slots'},
-    {'1': 'prompt_queue', '3': 7, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.Prompt', '10': 'promptQueue'},
-    {'1': 'user_storage', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'userStorage'},
-    {'1': 'household_storage', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'householdStorage'},
+    {
+      '1': 'session_storage',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'sessionStorage'
+    },
+    {
+      '1': 'slots',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Slots',
+      '10': 'slots'
+    },
+    {
+      '1': 'prompt_queue',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Prompt',
+      '10': 'promptQueue'
+    },
+    {
+      '1': 'user_storage',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'userStorage'
+    },
+    {
+      '1': 'household_storage',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'householdStorage'
+    },
   ],
 };
 
@@ -95,8 +255,22 @@ final $typed_data.Uint8List executionStateDescriptor = $convert.base64Decode(
 const Slots$json = {
   '1': 'Slots',
   '2': [
-    {'1': 'status', '3': 2, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.conversation.SlotFillingStatus', '10': 'status'},
-    {'1': 'slots', '3': 3, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.Slots.SlotsEntry', '10': 'slots'},
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.conversation.SlotFillingStatus',
+      '10': 'status'
+    },
+    {
+      '1': 'slots',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Slots.SlotsEntry',
+      '10': 'slots'
+    },
   ],
   '3': [Slots_SlotsEntry$json],
 };
@@ -106,7 +280,14 @@ const Slots_SlotsEntry$json = {
   '1': 'SlotsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Slot', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Slot',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -138,7 +319,14 @@ const IntentMatch$json = {
   '1': 'IntentMatch',
   '2': [
     {'1': 'intent_id', '3': 1, '4': 1, '5': 9, '10': 'intentId'},
-    {'1': 'intent_parameters', '3': 5, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.IntentMatch.IntentParametersEntry', '10': 'intentParameters'},
+    {
+      '1': 'intent_parameters',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.IntentMatch.IntentParametersEntry',
+      '10': 'intentParameters'
+    },
     {'1': 'handler', '3': 3, '4': 1, '5': 9, '10': 'handler'},
     {'1': 'next_scene_id', '3': 4, '4': 1, '5': 9, '10': 'nextSceneId'},
   ],
@@ -150,7 +338,14 @@ const IntentMatch_IntentParametersEntry$json = {
   '1': 'IntentParametersEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.IntentParameterValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.IntentParameterValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -169,8 +364,22 @@ final $typed_data.Uint8List intentMatchDescriptor = $convert.base64Decode(
 const ConditionsEvaluated$json = {
   '1': 'ConditionsEvaluated',
   '2': [
-    {'1': 'failed_conditions', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.Condition', '10': 'failedConditions'},
-    {'1': 'success_condition', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Condition', '10': 'successCondition'},
+    {
+      '1': 'failed_conditions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Condition',
+      '10': 'failedConditions'
+    },
+    {
+      '1': 'success_condition',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Condition',
+      '10': 'successCondition'
+    },
   ],
 };
 
@@ -205,8 +414,8 @@ const OnSceneEnter$json = {
 };
 
 /// Descriptor for `OnSceneEnter`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List onSceneEnterDescriptor = $convert.base64Decode(
-    'CgxPblNjZW5lRW50ZXISGAoHaGFuZGxlchgBIAEoCVIHaGFuZGxlcg==');
+final $typed_data.Uint8List onSceneEnterDescriptor = $convert
+    .base64Decode('CgxPblNjZW5lRW50ZXISGAoHaGFuZGxlchgBIAEoCVIHaGFuZGxlcg==');
 
 @$core.Deprecated('Use webhookInitiatedTransitionDescriptor instead')
 const WebhookInitiatedTransition$json = {
@@ -217,9 +426,10 @@ const WebhookInitiatedTransition$json = {
 };
 
 /// Descriptor for `WebhookInitiatedTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List webhookInitiatedTransitionDescriptor = $convert.base64Decode(
-    'ChpXZWJob29rSW5pdGlhdGVkVHJhbnNpdGlvbhIiCg1uZXh0X3NjZW5lX2lkGAEgASgJUgtuZX'
-    'h0U2NlbmVJZA==');
+final $typed_data.Uint8List webhookInitiatedTransitionDescriptor =
+    $convert.base64Decode(
+        'ChpXZWJob29rSW5pdGlhdGVkVHJhbnNpdGlvbhIiCg1uZXh0X3NjZW5lX2lkGAEgASgJUgtuZX'
+        'h0U2NlbmVJZA==');
 
 @$core.Deprecated('Use webhookRequestDescriptor instead')
 const WebhookRequest$json = {
@@ -249,7 +459,14 @@ final $typed_data.Uint8List webhookResponseDescriptor = $convert.base64Decode(
 const SlotMatch$json = {
   '1': 'SlotMatch',
   '2': [
-    {'1': 'nlu_parameters', '3': 2, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.SlotMatch.NluParametersEntry', '10': 'nluParameters'},
+    {
+      '1': 'nlu_parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.SlotMatch.NluParametersEntry',
+      '10': 'nluParameters'
+    },
   ],
   '3': [SlotMatch_NluParametersEntry$json],
 };
@@ -259,7 +476,14 @@ const SlotMatch_NluParametersEntry$json = {
   '1': 'NluParametersEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.IntentParameterValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.IntentParameterValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -277,7 +501,14 @@ const SlotRequested$json = {
   '1': 'SlotRequested',
   '2': [
     {'1': 'slot', '3': 1, '4': 1, '5': 9, '10': 'slot'},
-    {'1': 'prompt', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Prompt', '10': 'prompt'},
+    {
+      '1': 'prompt',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Prompt',
+      '10': 'prompt'
+    },
   ],
 };
 
@@ -292,8 +523,8 @@ const SlotValidated$json = {
 };
 
 /// Descriptor for `SlotValidated`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List slotValidatedDescriptor = $convert.base64Decode(
-    'Cg1TbG90VmFsaWRhdGVk');
+final $typed_data.Uint8List slotValidatedDescriptor =
+    $convert.base64Decode('Cg1TbG90VmFsaWRhdGVk');
 
 @$core.Deprecated('Use formFilledDescriptor instead')
 const FormFilled$json = {
@@ -301,8 +532,8 @@ const FormFilled$json = {
 };
 
 /// Descriptor for `FormFilled`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List formFilledDescriptor = $convert.base64Decode(
-    'CgpGb3JtRmlsbGVk');
+final $typed_data.Uint8List formFilledDescriptor =
+    $convert.base64Decode('CgpGb3JtRmlsbGVk');
 
 @$core.Deprecated('Use waitingForUserInputDescriptor instead')
 const WaitingForUserInput$json = {
@@ -310,8 +541,8 @@ const WaitingForUserInput$json = {
 };
 
 /// Descriptor for `WaitingForUserInput`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List waitingForUserInputDescriptor = $convert.base64Decode(
-    'ChNXYWl0aW5nRm9yVXNlcklucHV0');
+final $typed_data.Uint8List waitingForUserInputDescriptor =
+    $convert.base64Decode('ChNXYWl0aW5nRm9yVXNlcklucHV0');
 
 @$core.Deprecated('Use endConversationDescriptor instead')
 const EndConversation$json = {
@@ -319,6 +550,5 @@ const EndConversation$json = {
 };
 
 /// Descriptor for `EndConversation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List endConversationDescriptor = $convert.base64Decode(
-    'Cg9FbmRDb252ZXJzYXRpb24=');
-
+final $typed_data.Uint8List endConversationDescriptor =
+    $convert.base64Decode('Cg9FbmRDb252ZXJzYXRpb24=');

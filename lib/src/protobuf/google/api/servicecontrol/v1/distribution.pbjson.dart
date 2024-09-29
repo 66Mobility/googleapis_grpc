@@ -21,14 +21,55 @@ const Distribution$json = {
     {'1': 'mean', '3': 2, '4': 1, '5': 1, '10': 'mean'},
     {'1': 'minimum', '3': 3, '4': 1, '5': 1, '10': 'minimum'},
     {'1': 'maximum', '3': 4, '4': 1, '5': 1, '10': 'maximum'},
-    {'1': 'sum_of_squared_deviation', '3': 5, '4': 1, '5': 1, '10': 'sumOfSquaredDeviation'},
+    {
+      '1': 'sum_of_squared_deviation',
+      '3': 5,
+      '4': 1,
+      '5': 1,
+      '10': 'sumOfSquaredDeviation'
+    },
     {'1': 'bucket_counts', '3': 6, '4': 3, '5': 3, '10': 'bucketCounts'},
-    {'1': 'linear_buckets', '3': 7, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.Distribution.LinearBuckets', '9': 0, '10': 'linearBuckets'},
-    {'1': 'exponential_buckets', '3': 8, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.Distribution.ExponentialBuckets', '9': 0, '10': 'exponentialBuckets'},
-    {'1': 'explicit_buckets', '3': 9, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.Distribution.ExplicitBuckets', '9': 0, '10': 'explicitBuckets'},
-    {'1': 'exemplars', '3': 10, '4': 3, '5': 11, '6': '.google.api.Distribution.Exemplar', '10': 'exemplars'},
+    {
+      '1': 'linear_buckets',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.Distribution.LinearBuckets',
+      '9': 0,
+      '10': 'linearBuckets'
+    },
+    {
+      '1': 'exponential_buckets',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.Distribution.ExponentialBuckets',
+      '9': 0,
+      '10': 'exponentialBuckets'
+    },
+    {
+      '1': 'explicit_buckets',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.Distribution.ExplicitBuckets',
+      '9': 0,
+      '10': 'explicitBuckets'
+    },
+    {
+      '1': 'exemplars',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Distribution.Exemplar',
+      '10': 'exemplars'
+    },
   ],
-  '3': [Distribution_LinearBuckets$json, Distribution_ExponentialBuckets$json, Distribution_ExplicitBuckets$json],
+  '3': [
+    Distribution_LinearBuckets$json,
+    Distribution_ExponentialBuckets$json,
+    Distribution_ExplicitBuckets$json
+  ],
   '8': [
     {'1': 'bucket_option'},
   ],
@@ -38,7 +79,13 @@ const Distribution$json = {
 const Distribution_LinearBuckets$json = {
   '1': 'LinearBuckets',
   '2': [
-    {'1': 'num_finite_buckets', '3': 1, '4': 1, '5': 5, '10': 'numFiniteBuckets'},
+    {
+      '1': 'num_finite_buckets',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'numFiniteBuckets'
+    },
     {'1': 'width', '3': 2, '4': 1, '5': 1, '10': 'width'},
     {'1': 'offset', '3': 3, '4': 1, '5': 1, '10': 'offset'},
   ],
@@ -48,7 +95,13 @@ const Distribution_LinearBuckets$json = {
 const Distribution_ExponentialBuckets$json = {
   '1': 'ExponentialBuckets',
   '2': [
-    {'1': 'num_finite_buckets', '3': 1, '4': 1, '5': 5, '10': 'numFiniteBuckets'},
+    {
+      '1': 'num_finite_buckets',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'numFiniteBuckets'
+    },
     {'1': 'growth_factor', '3': 2, '4': 1, '5': 1, '10': 'growthFactor'},
     {'1': 'scale', '3': 3, '4': 1, '5': 1, '10': 'scale'},
   ],
@@ -80,4 +133,3 @@ final $typed_data.Uint8List distributionDescriptor = $convert.base64Decode(
     'VtX2Zpbml0ZV9idWNrZXRzGAEgASgFUhBudW1GaW5pdGVCdWNrZXRzEiMKDWdyb3d0aF9mYWN0'
     'b3IYAiABKAFSDGdyb3d0aEZhY3RvchIUCgVzY2FsZRgDIAEoAVIFc2NhbGUaKQoPRXhwbGljaX'
     'RCdWNrZXRzEhYKBmJvdW5kcxgBIAMoAVIGYm91bmRzQg8KDWJ1Y2tldF9vcHRpb24=');
-

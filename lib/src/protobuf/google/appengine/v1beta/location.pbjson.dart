@@ -17,9 +17,28 @@ import 'dart:typed_data' as $typed_data;
 const LocationMetadata$json = {
   '1': 'LocationMetadata',
   '2': [
-    {'1': 'standard_environment_available', '3': 2, '4': 1, '5': 8, '10': 'standardEnvironmentAvailable'},
-    {'1': 'flexible_environment_available', '3': 4, '4': 1, '5': 8, '10': 'flexibleEnvironmentAvailable'},
-    {'1': 'search_api_available', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'searchApiAvailable'},
+    {
+      '1': 'standard_environment_available',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'standardEnvironmentAvailable'
+    },
+    {
+      '1': 'flexible_environment_available',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'flexibleEnvironmentAvailable'
+    },
+    {
+      '1': 'search_api_available',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'searchApiAvailable'
+    },
   ],
 };
 
@@ -29,4 +48,3 @@ final $typed_data.Uint8List locationMetadataDescriptor = $convert.base64Decode(
     'EoCFIcc3RhbmRhcmRFbnZpcm9ubWVudEF2YWlsYWJsZRJECh5mbGV4aWJsZV9lbnZpcm9ubWVu'
     'dF9hdmFpbGFibGUYBCABKAhSHGZsZXhpYmxlRW52aXJvbm1lbnRBdmFpbGFibGUSNQoUc2Vhcm'
     'NoX2FwaV9hdmFpbGFibGUYBiABKAhCA+BBA1ISc2VhcmNoQXBpQXZhaWxhYmxl');
-

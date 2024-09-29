@@ -21,8 +21,22 @@ const PlayableLocation$json = {
     {'1': 'place_id', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'placeId'},
     {'1': 'plus_code', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'plusCode'},
     {'1': 'types', '3': 4, '4': 3, '5': 9, '10': 'types'},
-    {'1': 'center_point', '3': 5, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'centerPoint'},
-    {'1': 'snapped_point', '3': 6, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'snappedPoint'},
+    {
+      '1': 'center_point',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'centerPoint'
+    },
+    {
+      '1': 'snapped_point',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'snappedPoint'
+    },
   ],
   '8': [
     {'1': 'location_id'},
@@ -41,8 +55,22 @@ final $typed_data.Uint8List playableLocationDescriptor = $convert.base64Decode(
 const SpacingOptions$json = {
   '1': 'SpacingOptions',
   '2': [
-    {'1': 'min_spacing_meters', '3': 1, '4': 1, '5': 1, '8': {}, '10': 'minSpacingMeters'},
-    {'1': 'point_type', '3': 2, '4': 1, '5': 14, '6': '.google.maps.playablelocations.v3.sample.SpacingOptions.PointType', '10': 'pointType'},
+    {
+      '1': 'min_spacing_meters',
+      '3': 1,
+      '4': 1,
+      '5': 1,
+      '8': {},
+      '10': 'minSpacingMeters'
+    },
+    {
+      '1': 'point_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.playablelocations.v3.sample.SpacingOptions.PointType',
+      '10': 'pointType'
+    },
   ],
   '4': [SpacingOptions_PointType$json],
 };
@@ -69,8 +97,21 @@ final $typed_data.Uint8List spacingOptionsDescriptor = $convert.base64Decode(
 const Filter$json = {
   '1': 'Filter',
   '2': [
-    {'1': 'max_location_count', '3': 1, '4': 1, '5': 5, '10': 'maxLocationCount'},
-    {'1': 'spacing', '3': 2, '4': 1, '5': 11, '6': '.google.maps.playablelocations.v3.sample.SpacingOptions', '10': 'spacing'},
+    {
+      '1': 'max_location_count',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'maxLocationCount'
+    },
+    {
+      '1': 'spacing',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.sample.SpacingOptions',
+      '10': 'spacing'
+    },
     {'1': 'included_types', '3': 3, '4': 3, '5': 9, '10': 'includedTypes'},
   ],
 };
@@ -86,9 +127,30 @@ final $typed_data.Uint8List filterDescriptor = $convert.base64Decode(
 const Criterion$json = {
   '1': 'Criterion',
   '2': [
-    {'1': 'game_object_type', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'gameObjectType'},
-    {'1': 'filter', '3': 2, '4': 1, '5': 11, '6': '.google.maps.playablelocations.v3.sample.Filter', '10': 'filter'},
-    {'1': 'fields_to_return', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'fieldsToReturn'},
+    {
+      '1': 'game_object_type',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'gameObjectType'
+    },
+    {
+      '1': 'filter',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.sample.Filter',
+      '10': 'filter'
+    },
+    {
+      '1': 'fields_to_return',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'fieldsToReturn'
+    },
   ],
 };
 
@@ -115,7 +177,14 @@ final $typed_data.Uint8List areaFilterDescriptor = $convert.base64Decode(
 const PlayableLocationList$json = {
   '1': 'PlayableLocationList',
   '2': [
-    {'1': 'locations', '3': 1, '4': 3, '5': 11, '6': '.google.maps.playablelocations.v3.sample.PlayableLocation', '10': 'locations'},
+    {
+      '1': 'locations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.sample.PlayableLocation',
+      '10': 'locations'
+    },
   ],
 };
 
@@ -123,4 +192,3 @@ const PlayableLocationList$json = {
 final $typed_data.Uint8List playableLocationListDescriptor = $convert.base64Decode(
     'ChRQbGF5YWJsZUxvY2F0aW9uTGlzdBJXCglsb2NhdGlvbnMYASADKAsyOS5nb29nbGUubWFwcy'
     '5wbGF5YWJsZWxvY2F0aW9ucy52My5zYW1wbGUuUGxheWFibGVMb2NhdGlvblIJbG9jYXRpb25z');
-

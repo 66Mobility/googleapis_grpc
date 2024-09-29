@@ -20,9 +20,33 @@ const AccountLabel$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'label_id', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'labelId'},
     {'1': 'account_id', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'accountId'},
-    {'1': 'display_name', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'displayName', '17': true},
-    {'1': 'description', '3': 5, '4': 1, '5': 9, '9': 1, '10': 'description', '17': true},
-    {'1': 'label_type', '3': 6, '4': 1, '5': 14, '6': '.google.shopping.css.v1.AccountLabel.LabelType', '8': {}, '10': 'labelType'},
+    {
+      '1': 'display_name',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'displayName',
+      '17': true
+    },
+    {
+      '1': 'description',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'description',
+      '17': true
+    },
+    {
+      '1': 'label_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.css.v1.AccountLabel.LabelType',
+      '8': {},
+      '10': 'labelType'
+    },
   ],
   '4': [AccountLabel_LabelType$json],
   '7': {},
@@ -74,7 +98,14 @@ final $typed_data.Uint8List listAccountLabelsRequestDescriptor = $convert.base64
 const ListAccountLabelsResponse$json = {
   '1': 'ListAccountLabelsResponse',
   '2': [
-    {'1': 'account_labels', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.css.v1.AccountLabel', '10': 'accountLabels'},
+    {
+      '1': 'account_labels',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.css.v1.AccountLabel',
+      '10': 'accountLabels'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -90,7 +121,15 @@ const CreateAccountLabelRequest$json = {
   '1': 'CreateAccountLabelRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'account_label', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.css.v1.AccountLabel', '8': {}, '10': 'accountLabel'},
+    {
+      '1': 'account_label',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.AccountLabel',
+      '8': {},
+      '10': 'accountLabel'
+    },
   ],
 };
 
@@ -105,14 +144,23 @@ final $typed_data.Uint8List createAccountLabelRequestDescriptor = $convert.base6
 const UpdateAccountLabelRequest$json = {
   '1': 'UpdateAccountLabelRequest',
   '2': [
-    {'1': 'account_label', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.css.v1.AccountLabel', '8': {}, '10': 'accountLabel'},
+    {
+      '1': 'account_label',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.AccountLabel',
+      '8': {},
+      '10': 'accountLabel'
+    },
   ],
 };
 
 /// Descriptor for `UpdateAccountLabelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateAccountLabelRequestDescriptor = $convert.base64Decode(
-    'ChlVcGRhdGVBY2NvdW50TGFiZWxSZXF1ZXN0Ek4KDWFjY291bnRfbGFiZWwYASABKAsyJC5nb2'
-    '9nbGUuc2hvcHBpbmcuY3NzLnYxLkFjY291bnRMYWJlbEID4EECUgxhY2NvdW50TGFiZWw=');
+final $typed_data.Uint8List updateAccountLabelRequestDescriptor =
+    $convert.base64Decode(
+        'ChlVcGRhdGVBY2NvdW50TGFiZWxSZXF1ZXN0Ek4KDWFjY291bnRfbGFiZWwYASABKAsyJC5nb2'
+        '9nbGUuc2hvcHBpbmcuY3NzLnYxLkFjY291bnRMYWJlbEID4EECUgxhY2NvdW50TGFiZWw=');
 
 @$core.Deprecated('Use deleteAccountLabelRequestDescriptor instead')
 const DeleteAccountLabelRequest$json = {
@@ -123,7 +171,7 @@ const DeleteAccountLabelRequest$json = {
 };
 
 /// Descriptor for `DeleteAccountLabelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAccountLabelRequestDescriptor = $convert.base64Decode(
-    'ChlEZWxldGVBY2NvdW50TGFiZWxSZXF1ZXN0EjsKBG5hbWUYASABKAlCJ+BBAvpBIQofY3NzLm'
-    'dvb2dsZWFwaXMuY29tL0FjY291bnRMYWJlbFIEbmFtZQ==');
-
+final $typed_data.Uint8List deleteAccountLabelRequestDescriptor =
+    $convert.base64Decode(
+        'ChlEZWxldGVBY2NvdW50TGFiZWxSZXF1ZXN0EjsKBG5hbWUYASABKAlCJ+BBAvpBIQofY3NzLm'
+        'dvb2dsZWFwaXMuY29tL0FjY291bnRMYWJlbFIEbmFtZQ==');

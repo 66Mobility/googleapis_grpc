@@ -19,10 +19,31 @@ const AccountIssue$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'severity', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue.Severity', '10': 'severity'},
-    {'1': 'impacted_destinations', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue.ImpactedDestination', '10': 'impactedDestinations'},
+    {
+      '1': 'severity',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue.Severity',
+      '10': 'severity'
+    },
+    {
+      '1': 'impacted_destinations',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.AccountIssue.ImpactedDestination',
+      '10': 'impactedDestinations'
+    },
     {'1': 'detail', '3': 5, '4': 1, '5': 9, '10': 'detail'},
-    {'1': 'documentation_uri', '3': 6, '4': 1, '5': 9, '10': 'documentationUri'},
+    {
+      '1': 'documentation_uri',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'documentationUri'
+    },
   ],
   '3': [AccountIssue_ImpactedDestination$json],
   '4': [AccountIssue_Severity$json],
@@ -33,8 +54,25 @@ const AccountIssue$json = {
 const AccountIssue_ImpactedDestination$json = {
   '1': 'ImpactedDestination',
   '2': [
-    {'1': 'reporting_context', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.type.ReportingContext.ReportingContextEnum', '9': 0, '10': 'reportingContext', '17': true},
-    {'1': 'impacts', '3': 2, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue.ImpactedDestination.Impact', '10': 'impacts'},
+    {
+      '1': 'reporting_context',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.ReportingContext.ReportingContextEnum',
+      '9': 0,
+      '10': 'reportingContext',
+      '17': true
+    },
+    {
+      '1': 'impacts',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.AccountIssue.ImpactedDestination.Impact',
+      '10': 'impacts'
+    },
   ],
   '3': [AccountIssue_ImpactedDestination_Impact$json],
   '8': [
@@ -47,7 +85,14 @@ const AccountIssue_ImpactedDestination_Impact$json = {
   '1': 'Impact',
   '2': [
     {'1': 'region_code', '3': 1, '4': 1, '5': 9, '10': 'regionCode'},
-    {'1': 'severity', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue.Severity', '10': 'severity'},
+    {
+      '1': 'severity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue.Severity',
+      '10': 'severity'
+    },
   ],
 };
 
@@ -90,7 +135,14 @@ const ListAccountIssuesRequest$json = {
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
-    {'1': 'language_code', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
+    {
+      '1': 'language_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
     {'1': 'time_zone', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'timeZone'},
   ],
 };
@@ -107,7 +159,14 @@ final $typed_data.Uint8List listAccountIssuesRequestDescriptor = $convert.base64
 const ListAccountIssuesResponse$json = {
   '1': 'ListAccountIssuesResponse',
   '2': [
-    {'1': 'account_issues', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue', '10': 'accountIssues'},
+    {
+      '1': 'account_issues',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.AccountIssue',
+      '10': 'accountIssues'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -117,4 +176,3 @@ final $typed_data.Uint8List listAccountIssuesResponseDescriptor = $convert.base6
     'ChlMaXN0QWNjb3VudElzc3Vlc1Jlc3BvbnNlEl0KDmFjY291bnRfaXNzdWVzGAEgAygLMjYuZ2'
     '9vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmFjY291bnRzLnYxYmV0YS5BY2NvdW50SXNzdWVSDWFj'
     'Y291bnRJc3N1ZXMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
-

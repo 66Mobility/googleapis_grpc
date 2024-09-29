@@ -17,12 +17,46 @@ import 'dart:typed_data' as $typed_data;
 const TransactionOptions$json = {
   '1': 'TransactionOptions',
   '2': [
-    {'1': 'read_write', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionOptions.ReadWrite', '9': 0, '10': 'readWrite'},
-    {'1': 'partitioned_dml', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionOptions.PartitionedDml', '9': 0, '10': 'partitionedDml'},
-    {'1': 'read_only', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionOptions.ReadOnly', '9': 0, '10': 'readOnly'},
-    {'1': 'exclude_txn_from_change_streams', '3': 5, '4': 1, '5': 8, '10': 'excludeTxnFromChangeStreams'},
+    {
+      '1': 'read_write',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionOptions.ReadWrite',
+      '9': 0,
+      '10': 'readWrite'
+    },
+    {
+      '1': 'partitioned_dml',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionOptions.PartitionedDml',
+      '9': 0,
+      '10': 'partitionedDml'
+    },
+    {
+      '1': 'read_only',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionOptions.ReadOnly',
+      '9': 0,
+      '10': 'readOnly'
+    },
+    {
+      '1': 'exclude_txn_from_change_streams',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'excludeTxnFromChangeStreams'
+    },
   ],
-  '3': [TransactionOptions_ReadWrite$json, TransactionOptions_PartitionedDml$json, TransactionOptions_ReadOnly$json],
+  '3': [
+    TransactionOptions_ReadWrite$json,
+    TransactionOptions_PartitionedDml$json,
+    TransactionOptions_ReadOnly$json
+  ],
   '8': [
     {'1': 'mode'},
   ],
@@ -32,7 +66,14 @@ const TransactionOptions$json = {
 const TransactionOptions_ReadWrite$json = {
   '1': 'ReadWrite',
   '2': [
-    {'1': 'read_lock_mode', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.v1.TransactionOptions.ReadWrite.ReadLockMode', '10': 'readLockMode'},
+    {
+      '1': 'read_lock_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.TransactionOptions.ReadWrite.ReadLockMode',
+      '10': 'readLockMode'
+    },
   ],
   '4': [TransactionOptions_ReadWrite_ReadLockMode$json],
 };
@@ -57,11 +98,49 @@ const TransactionOptions_ReadOnly$json = {
   '1': 'ReadOnly',
   '2': [
     {'1': 'strong', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'strong'},
-    {'1': 'min_read_timestamp', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'minReadTimestamp'},
-    {'1': 'max_staleness', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'maxStaleness'},
-    {'1': 'read_timestamp', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'readTimestamp'},
-    {'1': 'exact_staleness', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'exactStaleness'},
-    {'1': 'return_read_timestamp', '3': 6, '4': 1, '5': 8, '10': 'returnReadTimestamp'},
+    {
+      '1': 'min_read_timestamp',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'minReadTimestamp'
+    },
+    {
+      '1': 'max_staleness',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'maxStaleness'
+    },
+    {
+      '1': 'read_timestamp',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'readTimestamp'
+    },
+    {
+      '1': 'exact_staleness',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'exactStaleness'
+    },
+    {
+      '1': 'return_read_timestamp',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '10': 'returnReadTimestamp'
+    },
   ],
   '8': [
     {'1': 'timestamp_bound'},
@@ -94,7 +173,14 @@ const Transaction$json = {
   '1': 'Transaction',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 12, '10': 'id'},
-    {'1': 'read_timestamp', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTimestamp'},
+    {
+      '1': 'read_timestamp',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTimestamp'
+    },
   ],
 };
 
@@ -107,9 +193,25 @@ final $typed_data.Uint8List transactionDescriptor = $convert.base64Decode(
 const TransactionSelector$json = {
   '1': 'TransactionSelector',
   '2': [
-    {'1': 'single_use', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionOptions', '9': 0, '10': 'singleUse'},
+    {
+      '1': 'single_use',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionOptions',
+      '9': 0,
+      '10': 'singleUse'
+    },
     {'1': 'id', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'id'},
-    {'1': 'begin', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionOptions', '9': 0, '10': 'begin'},
+    {
+      '1': 'begin',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionOptions',
+      '9': 0,
+      '10': 'begin'
+    },
   ],
   '8': [
     {'1': 'selector'},
@@ -122,4 +224,3 @@ final $typed_data.Uint8List transactionSelectorDescriptor = $convert.base64Decod
     '5lci52MS5UcmFuc2FjdGlvbk9wdGlvbnNIAFIJc2luZ2xlVXNlEhAKAmlkGAIgASgMSABSAmlk'
     'Ej0KBWJlZ2luGAMgASgLMiUuZ29vZ2xlLnNwYW5uZXIudjEuVHJhbnNhY3Rpb25PcHRpb25zSA'
     'BSBWJlZ2luQgoKCHNlbGVjdG9y');
-

@@ -39,27 +39,41 @@ class Deployment extends $pb.GeneratedMessage {
     return $result;
   }
   Deployment._() : super();
-  factory Deployment.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Deployment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Deployment.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Deployment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Deployment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
-    ..m<$core.String, FileInfo>(1, _omitFieldNames ? '' : 'files', entryClassName: 'Deployment.FilesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: FileInfo.create, valueDefaultOrMaker: FileInfo.getDefault, packageName: const $pb.PackageName('google.appengine.v1'))
-    ..aOM<ContainerInfo>(2, _omitFieldNames ? '' : 'container', subBuilder: ContainerInfo.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Deployment',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
+    ..m<$core.String, FileInfo>(1, _omitFieldNames ? '' : 'files',
+        entryClassName: 'Deployment.FilesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: FileInfo.create,
+        valueDefaultOrMaker: FileInfo.getDefault,
+        packageName: const $pb.PackageName('google.appengine.v1'))
+    ..aOM<ContainerInfo>(2, _omitFieldNames ? '' : 'container',
+        subBuilder: ContainerInfo.create)
     ..aOM<ZipInfo>(3, _omitFieldNames ? '' : 'zip', subBuilder: ZipInfo.create)
-    ..aOM<CloudBuildOptions>(6, _omitFieldNames ? '' : 'cloudBuildOptions', subBuilder: CloudBuildOptions.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<CloudBuildOptions>(6, _omitFieldNames ? '' : 'cloudBuildOptions',
+        subBuilder: CloudBuildOptions.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Deployment clone() => Deployment()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Deployment copyWith(void Function(Deployment) updates) => super.copyWith((message) => updates(message as Deployment)) as Deployment;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Deployment copyWith(void Function(Deployment) updates) =>
+      super.copyWith((message) => updates(message as Deployment)) as Deployment;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -68,7 +82,8 @@ class Deployment extends $pb.GeneratedMessage {
   Deployment createEmptyInstance() => create();
   static $pb.PbList<Deployment> createRepeated() => $pb.PbList<Deployment>();
   @$core.pragma('dart2js:noInline')
-  static Deployment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Deployment>(create);
+  static Deployment getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Deployment>(create);
   static Deployment? _defaultInstance;
 
   /// Manifest of the files stored in Google Cloud Storage that are included
@@ -82,7 +97,10 @@ class Deployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ContainerInfo get container => $_getN(1);
   @$pb.TagNumber(2)
-  set container(ContainerInfo v) { setField(2, v); }
+  set container(ContainerInfo v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasContainer() => $_has(1);
   @$pb.TagNumber(2)
@@ -94,7 +112,10 @@ class Deployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ZipInfo get zip => $_getN(2);
   @$pb.TagNumber(3)
-  set zip(ZipInfo v) { setField(3, v); }
+  set zip(ZipInfo v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasZip() => $_has(2);
   @$pb.TagNumber(3)
@@ -110,7 +131,10 @@ class Deployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   CloudBuildOptions get cloudBuildOptions => $_getN(3);
   @$pb.TagNumber(6)
-  set cloudBuildOptions(CloudBuildOptions v) { setField(6, v); }
+  set cloudBuildOptions(CloudBuildOptions v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCloudBuildOptions() => $_has(3);
   @$pb.TagNumber(6)
@@ -140,26 +164,32 @@ class FileInfo extends $pb.GeneratedMessage {
     return $result;
   }
   FileInfo._() : super();
-  factory FileInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FileInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FileInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FileInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FileInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sourceUrl')
     ..aOS(2, _omitFieldNames ? '' : 'sha1Sum')
     ..aOS(3, _omitFieldNames ? '' : 'mimeType')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FileInfo clone() => FileInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FileInfo copyWith(void Function(FileInfo) updates) => super.copyWith((message) => updates(message as FileInfo)) as FileInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FileInfo copyWith(void Function(FileInfo) updates) =>
+      super.copyWith((message) => updates(message as FileInfo)) as FileInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -168,7 +198,8 @@ class FileInfo extends $pb.GeneratedMessage {
   FileInfo createEmptyInstance() => create();
   static $pb.PbList<FileInfo> createRepeated() => $pb.PbList<FileInfo>();
   @$core.pragma('dart2js:noInline')
-  static FileInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FileInfo>(create);
+  static FileInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FileInfo>(create);
   static FileInfo? _defaultInstance;
 
   /// URL source to use to fetch this file. Must be a URL to a resource in
@@ -177,7 +208,10 @@ class FileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get sourceUrl => $_getSZ(0);
   @$pb.TagNumber(1)
-  set sourceUrl($core.String v) { $_setString(0, v); }
+  set sourceUrl($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSourceUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -187,7 +221,10 @@ class FileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get sha1Sum => $_getSZ(1);
   @$pb.TagNumber(2)
-  set sha1Sum($core.String v) { $_setString(1, v); }
+  set sha1Sum($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSha1Sum() => $_has(1);
   @$pb.TagNumber(2)
@@ -199,7 +236,10 @@ class FileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get mimeType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set mimeType($core.String v) { $_setString(2, v); }
+  set mimeType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMimeType() => $_has(2);
   @$pb.TagNumber(3)
@@ -220,33 +260,42 @@ class ContainerInfo extends $pb.GeneratedMessage {
     return $result;
   }
   ContainerInfo._() : super();
-  factory ContainerInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ContainerInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ContainerInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ContainerInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContainerInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContainerInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'image')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ContainerInfo clone() => ContainerInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ContainerInfo copyWith(void Function(ContainerInfo) updates) => super.copyWith((message) => updates(message as ContainerInfo)) as ContainerInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ContainerInfo copyWith(void Function(ContainerInfo) updates) =>
+      super.copyWith((message) => updates(message as ContainerInfo))
+          as ContainerInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ContainerInfo create() => ContainerInfo._();
   ContainerInfo createEmptyInstance() => create();
-  static $pb.PbList<ContainerInfo> createRepeated() => $pb.PbList<ContainerInfo>();
+  static $pb.PbList<ContainerInfo> createRepeated() =>
+      $pb.PbList<ContainerInfo>();
   @$core.pragma('dart2js:noInline')
-  static ContainerInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContainerInfo>(create);
+  static ContainerInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ContainerInfo>(create);
   static ContainerInfo? _defaultInstance;
 
   /// URI to the hosted container image in Google Container Registry. The URI
@@ -255,7 +304,10 @@ class ContainerInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get image => $_getSZ(0);
   @$pb.TagNumber(1)
-  set image($core.String v) { $_setString(0, v); }
+  set image($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasImage() => $_has(0);
   @$pb.TagNumber(1)
@@ -280,34 +332,44 @@ class CloudBuildOptions extends $pb.GeneratedMessage {
     return $result;
   }
   CloudBuildOptions._() : super();
-  factory CloudBuildOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CloudBuildOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CloudBuildOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CloudBuildOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CloudBuildOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CloudBuildOptions',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appYamlPath')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'cloudBuildTimeout', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'cloudBuildTimeout',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CloudBuildOptions clone() => CloudBuildOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CloudBuildOptions copyWith(void Function(CloudBuildOptions) updates) => super.copyWith((message) => updates(message as CloudBuildOptions)) as CloudBuildOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CloudBuildOptions copyWith(void Function(CloudBuildOptions) updates) =>
+      super.copyWith((message) => updates(message as CloudBuildOptions))
+          as CloudBuildOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CloudBuildOptions create() => CloudBuildOptions._();
   CloudBuildOptions createEmptyInstance() => create();
-  static $pb.PbList<CloudBuildOptions> createRepeated() => $pb.PbList<CloudBuildOptions>();
+  static $pb.PbList<CloudBuildOptions> createRepeated() =>
+      $pb.PbList<CloudBuildOptions>();
   @$core.pragma('dart2js:noInline')
-  static CloudBuildOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CloudBuildOptions>(create);
+  static CloudBuildOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CloudBuildOptions>(create);
   static CloudBuildOptions? _defaultInstance;
 
   ///  Path to the yaml file used in deployment, used to determine runtime
@@ -320,7 +382,10 @@ class CloudBuildOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get appYamlPath => $_getSZ(0);
   @$pb.TagNumber(1)
-  set appYamlPath($core.String v) { $_setString(0, v); }
+  set appYamlPath($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAppYamlPath() => $_has(0);
   @$pb.TagNumber(1)
@@ -331,7 +396,10 @@ class CloudBuildOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get cloudBuildTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudBuildTimeout($264.Duration v) { setField(2, v); }
+  set cloudBuildTimeout($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCloudBuildTimeout() => $_has(1);
   @$pb.TagNumber(2)
@@ -356,25 +424,31 @@ class ZipInfo extends $pb.GeneratedMessage {
     return $result;
   }
   ZipInfo._() : super();
-  factory ZipInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ZipInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ZipInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ZipInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ZipInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ZipInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOS(3, _omitFieldNames ? '' : 'sourceUrl')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'filesCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ZipInfo clone() => ZipInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ZipInfo copyWith(void Function(ZipInfo) updates) => super.copyWith((message) => updates(message as ZipInfo)) as ZipInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ZipInfo copyWith(void Function(ZipInfo) updates) =>
+      super.copyWith((message) => updates(message as ZipInfo)) as ZipInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -383,7 +457,8 @@ class ZipInfo extends $pb.GeneratedMessage {
   ZipInfo createEmptyInstance() => create();
   static $pb.PbList<ZipInfo> createRepeated() => $pb.PbList<ZipInfo>();
   @$core.pragma('dart2js:noInline')
-  static ZipInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ZipInfo>(create);
+  static ZipInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ZipInfo>(create);
   static ZipInfo? _defaultInstance;
 
   /// URL of the zip file to deploy from. Must be a URL to a resource in
@@ -392,7 +467,10 @@ class ZipInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceUrl => $_getSZ(0);
   @$pb.TagNumber(3)
-  set sourceUrl($core.String v) { $_setString(0, v); }
+  set sourceUrl($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSourceUrl() => $_has(0);
   @$pb.TagNumber(3)
@@ -404,13 +482,16 @@ class ZipInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get filesCount => $_getIZ(1);
   @$pb.TagNumber(4)
-  set filesCount($core.int v) { $_setSignedInt32(1, v); }
+  set filesCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilesCount() => $_has(1);
   @$pb.TagNumber(4)
   void clearFilesCount() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

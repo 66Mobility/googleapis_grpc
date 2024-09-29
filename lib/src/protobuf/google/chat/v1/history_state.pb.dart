@@ -12,4 +12,3 @@
 import 'dart:core' as $core;
 
 export 'history_state.pbenum.dart';
-

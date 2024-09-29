@@ -17,14 +17,16 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// to include in the response.
 class PhotoView extends $pb.ProtobufEnum {
   static const PhotoView BASIC = PhotoView._(0, _omitEnumNames ? '' : 'BASIC');
-  static const PhotoView INCLUDE_DOWNLOAD_URL = PhotoView._(1, _omitEnumNames ? '' : 'INCLUDE_DOWNLOAD_URL');
+  static const PhotoView INCLUDE_DOWNLOAD_URL =
+      PhotoView._(1, _omitEnumNames ? '' : 'INCLUDE_DOWNLOAD_URL');
 
-  static const $core.List<PhotoView> values = <PhotoView> [
+  static const $core.List<PhotoView> values = <PhotoView>[
     BASIC,
     INCLUDE_DOWNLOAD_URL,
   ];
 
-  static final $core.Map<$core.int, PhotoView> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, PhotoView> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static PhotoView? valueOf($core.int value) => _byValue[value];
 
   const PhotoView._($core.int v, $core.String n) : super(v, n);
@@ -32,21 +34,28 @@ class PhotoView extends $pb.ProtobufEnum {
 
 /// Input forms of [PhotoSequence][google.streetview.publish.v1.PhotoSequence].
 class CreatePhotoSequenceRequest_InputType extends $pb.ProtobufEnum {
-  static const CreatePhotoSequenceRequest_InputType INPUT_TYPE_UNSPECIFIED = CreatePhotoSequenceRequest_InputType._(0, _omitEnumNames ? '' : 'INPUT_TYPE_UNSPECIFIED');
-  static const CreatePhotoSequenceRequest_InputType VIDEO = CreatePhotoSequenceRequest_InputType._(1, _omitEnumNames ? '' : 'VIDEO');
-  static const CreatePhotoSequenceRequest_InputType XDM = CreatePhotoSequenceRequest_InputType._(2, _omitEnumNames ? '' : 'XDM');
+  static const CreatePhotoSequenceRequest_InputType INPUT_TYPE_UNSPECIFIED =
+      CreatePhotoSequenceRequest_InputType._(
+          0, _omitEnumNames ? '' : 'INPUT_TYPE_UNSPECIFIED');
+  static const CreatePhotoSequenceRequest_InputType VIDEO =
+      CreatePhotoSequenceRequest_InputType._(1, _omitEnumNames ? '' : 'VIDEO');
+  static const CreatePhotoSequenceRequest_InputType XDM =
+      CreatePhotoSequenceRequest_InputType._(2, _omitEnumNames ? '' : 'XDM');
 
-  static const $core.List<CreatePhotoSequenceRequest_InputType> values = <CreatePhotoSequenceRequest_InputType> [
+  static const $core.List<CreatePhotoSequenceRequest_InputType> values =
+      <CreatePhotoSequenceRequest_InputType>[
     INPUT_TYPE_UNSPECIFIED,
     VIDEO,
     XDM,
   ];
 
-  static final $core.Map<$core.int, CreatePhotoSequenceRequest_InputType> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static CreatePhotoSequenceRequest_InputType? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, CreatePhotoSequenceRequest_InputType>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static CreatePhotoSequenceRequest_InputType? valueOf($core.int value) =>
+      _byValue[value];
 
-  const CreatePhotoSequenceRequest_InputType._($core.int v, $core.String n) : super(v, n);
+  const CreatePhotoSequenceRequest_InputType._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

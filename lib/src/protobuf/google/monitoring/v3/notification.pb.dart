@@ -31,7 +31,7 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $core.Iterable<$348.LabelDescriptor>? labels,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $core.Iterable<$531.ServiceTier>? supportedTiers,
     $core.String? name,
     $304.LaunchStage? launchStage,
@@ -62,39 +62,62 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
     return $result;
   }
   NotificationChannelDescriptor._() : super();
-  factory NotificationChannelDescriptor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NotificationChannelDescriptor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NotificationChannelDescriptor.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NotificationChannelDescriptor.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotificationChannelDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NotificationChannelDescriptor',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..pc<$348.LabelDescriptor>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $348.LabelDescriptor.create)
-    ..pc<$531.ServiceTier>(5, _omitFieldNames ? '' : 'supportedTiers', $pb.PbFieldType.KE, valueOf: $531.ServiceTier.valueOf, enumValues: $531.ServiceTier.values, defaultEnumValue: $531.ServiceTier.SERVICE_TIER_UNSPECIFIED)
+    ..pc<$348.LabelDescriptor>(
+        4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $348.LabelDescriptor.create)
+    ..pc<$531.ServiceTier>(
+        5, _omitFieldNames ? '' : 'supportedTiers', $pb.PbFieldType.KE,
+        valueOf: $531.ServiceTier.valueOf,
+        enumValues: $531.ServiceTier.values,
+        defaultEnumValue: $531.ServiceTier.SERVICE_TIER_UNSPECIFIED)
     ..aOS(6, _omitFieldNames ? '' : 'name')
-    ..e<$304.LaunchStage>(7, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $304.LaunchStage.valueOf, enumValues: $304.LaunchStage.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<$304.LaunchStage>(
+        7, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE,
+        defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED,
+        valueOf: $304.LaunchStage.valueOf,
+        enumValues: $304.LaunchStage.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NotificationChannelDescriptor clone() => NotificationChannelDescriptor()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NotificationChannelDescriptor copyWith(void Function(NotificationChannelDescriptor) updates) => super.copyWith((message) => updates(message as NotificationChannelDescriptor)) as NotificationChannelDescriptor;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NotificationChannelDescriptor clone() =>
+      NotificationChannelDescriptor()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NotificationChannelDescriptor copyWith(
+          void Function(NotificationChannelDescriptor) updates) =>
+      super.copyWith(
+              (message) => updates(message as NotificationChannelDescriptor))
+          as NotificationChannelDescriptor;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static NotificationChannelDescriptor create() => NotificationChannelDescriptor._();
+  static NotificationChannelDescriptor create() =>
+      NotificationChannelDescriptor._();
   NotificationChannelDescriptor createEmptyInstance() => create();
-  static $pb.PbList<NotificationChannelDescriptor> createRepeated() => $pb.PbList<NotificationChannelDescriptor>();
+  static $pb.PbList<NotificationChannelDescriptor> createRepeated() =>
+      $pb.PbList<NotificationChannelDescriptor>();
   @$core.pragma('dart2js:noInline')
-  static NotificationChannelDescriptor getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotificationChannelDescriptor>(create);
+  static NotificationChannelDescriptor getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NotificationChannelDescriptor>(create);
   static NotificationChannelDescriptor? _defaultInstance;
 
   /// The type of notification channel, such as "email" and "sms". To view the
@@ -105,7 +128,10 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) { $_setString(0, v); }
+  set type($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -116,7 +142,10 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -128,7 +157,10 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -154,7 +186,10 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get name => $_getSZ(5);
   @$pb.TagNumber(6)
-  set name($core.String v) { $_setString(5, v); }
+  set name($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasName() => $_has(5);
   @$pb.TagNumber(6)
@@ -164,7 +199,10 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $304.LaunchStage get launchStage => $_getN(6);
   @$pb.TagNumber(7)
-  set launchStage($304.LaunchStage v) { setField(7, v); }
+  set launchStage($304.LaunchStage v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasLaunchStage() => $_has(6);
   @$pb.TagNumber(7)
@@ -223,42 +261,68 @@ class NotificationChannel extends $pb.GeneratedMessage {
     return $result;
   }
   NotificationChannel._() : super();
-  factory NotificationChannel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NotificationChannel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NotificationChannel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NotificationChannel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotificationChannel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NotificationChannel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'NotificationChannel.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.v3'))
+    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'NotificationChannel.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.monitoring.v3'))
     ..aOS(6, _omitFieldNames ? '' : 'name')
-    ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'userLabels', entryClassName: 'NotificationChannel.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.v3'))
-    ..e<NotificationChannel_VerificationStatus>(9, _omitFieldNames ? '' : 'verificationStatus', $pb.PbFieldType.OE, defaultOrMaker: NotificationChannel_VerificationStatus.VERIFICATION_STATUS_UNSPECIFIED, valueOf: NotificationChannel_VerificationStatus.valueOf, enumValues: NotificationChannel_VerificationStatus.values)
-    ..aOM<$307.BoolValue>(11, _omitFieldNames ? '' : 'enabled', subBuilder: $307.BoolValue.create)
-    ..aOM<$530.MutationRecord>(12, _omitFieldNames ? '' : 'creationRecord', subBuilder: $530.MutationRecord.create)
-    ..pc<$530.MutationRecord>(13, _omitFieldNames ? '' : 'mutationRecords', $pb.PbFieldType.PM, subBuilder: $530.MutationRecord.create)
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'userLabels',
+        entryClassName: 'NotificationChannel.UserLabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.monitoring.v3'))
+    ..e<NotificationChannel_VerificationStatus>(
+        9, _omitFieldNames ? '' : 'verificationStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: NotificationChannel_VerificationStatus
+            .VERIFICATION_STATUS_UNSPECIFIED,
+        valueOf: NotificationChannel_VerificationStatus.valueOf,
+        enumValues: NotificationChannel_VerificationStatus.values)
+    ..aOM<$307.BoolValue>(11, _omitFieldNames ? '' : 'enabled',
+        subBuilder: $307.BoolValue.create)
+    ..aOM<$530.MutationRecord>(12, _omitFieldNames ? '' : 'creationRecord',
+        subBuilder: $530.MutationRecord.create)
+    ..pc<$530.MutationRecord>(
+        13, _omitFieldNames ? '' : 'mutationRecords', $pb.PbFieldType.PM,
+        subBuilder: $530.MutationRecord.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NotificationChannel clone() => NotificationChannel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NotificationChannel copyWith(void Function(NotificationChannel) updates) => super.copyWith((message) => updates(message as NotificationChannel)) as NotificationChannel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NotificationChannel copyWith(void Function(NotificationChannel) updates) =>
+      super.copyWith((message) => updates(message as NotificationChannel))
+          as NotificationChannel;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NotificationChannel create() => NotificationChannel._();
   NotificationChannel createEmptyInstance() => create();
-  static $pb.PbList<NotificationChannel> createRepeated() => $pb.PbList<NotificationChannel>();
+  static $pb.PbList<NotificationChannel> createRepeated() =>
+      $pb.PbList<NotificationChannel>();
   @$core.pragma('dart2js:noInline')
-  static NotificationChannel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotificationChannel>(create);
+  static NotificationChannel getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NotificationChannel>(create);
   static NotificationChannel? _defaultInstance;
 
   /// The type of the notification channel. This field matches the
@@ -268,7 +332,10 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) { $_setString(0, v); }
+  set type($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -281,7 +348,10 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(3)
@@ -293,7 +363,10 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(4)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(4)
@@ -314,7 +387,10 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get name => $_getSZ(4);
   @$pb.TagNumber(6)
-  set name($core.String v) { $_setString(4, v); }
+  set name($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasName() => $_has(4);
   @$pb.TagNumber(6)
@@ -354,7 +430,10 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   NotificationChannel_VerificationStatus get verificationStatus => $_getN(6);
   @$pb.TagNumber(9)
-  set verificationStatus(NotificationChannel_VerificationStatus v) { setField(9, v); }
+  set verificationStatus(NotificationChannel_VerificationStatus v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasVerificationStatus() => $_has(6);
   @$pb.TagNumber(9)
@@ -369,7 +448,10 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $307.BoolValue get enabled => $_getN(7);
   @$pb.TagNumber(11)
-  set enabled($307.BoolValue v) { setField(11, v); }
+  set enabled($307.BoolValue v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasEnabled() => $_has(7);
   @$pb.TagNumber(11)
@@ -381,7 +463,10 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $530.MutationRecord get creationRecord => $_getN(8);
   @$pb.TagNumber(12)
-  set creationRecord($530.MutationRecord v) { setField(12, v); }
+  set creationRecord($530.MutationRecord v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasCreationRecord() => $_has(8);
   @$pb.TagNumber(12)
@@ -394,6 +479,6 @@ class NotificationChannel extends $pb.GeneratedMessage {
   $core.List<$530.MutationRecord> get mutationRecords => $_getList(9);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

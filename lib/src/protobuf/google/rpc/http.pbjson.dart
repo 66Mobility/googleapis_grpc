@@ -19,7 +19,14 @@ const HttpRequest$json = {
   '2': [
     {'1': 'method', '3': 1, '4': 1, '5': 9, '10': 'method'},
     {'1': 'uri', '3': 2, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'headers', '3': 3, '4': 3, '5': 11, '6': '.google.rpc.HttpHeader', '10': 'headers'},
+    {
+      '1': 'headers',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.HttpHeader',
+      '10': 'headers'
+    },
     {'1': 'body', '3': 4, '4': 1, '5': 12, '10': 'body'},
   ],
 };
@@ -36,7 +43,14 @@ const HttpResponse$json = {
   '2': [
     {'1': 'status', '3': 1, '4': 1, '5': 5, '10': 'status'},
     {'1': 'reason', '3': 2, '4': 1, '5': 9, '10': 'reason'},
-    {'1': 'headers', '3': 3, '4': 3, '5': 11, '6': '.google.rpc.HttpHeader', '10': 'headers'},
+    {
+      '1': 'headers',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.HttpHeader',
+      '10': 'headers'
+    },
     {'1': 'body', '3': 4, '4': 1, '5': 12, '10': 'body'},
   ],
 };
@@ -59,4 +73,3 @@ const HttpHeader$json = {
 /// Descriptor for `HttpHeader`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List httpHeaderDescriptor = $convert.base64Decode(
     'CgpIdHRwSGVhZGVyEhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZQ==');
-

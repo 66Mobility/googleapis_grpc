@@ -46,43 +46,55 @@ class ComputeEngine extends $pb.GeneratedMessage {
     return $result;
   }
   ComputeEngine._() : super();
-  factory ComputeEngine.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComputeEngine.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComputeEngine.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComputeEngine.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeEngine', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComputeEngine',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceName')
     ..aOS(2, _omitFieldNames ? '' : 'zone')
     ..aOS(3, _omitFieldNames ? '' : 'machineType')
     ..pPS(4, _omitFieldNames ? '' : 'diskNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ComputeEngine clone() => ComputeEngine()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComputeEngine copyWith(void Function(ComputeEngine) updates) => super.copyWith((message) => updates(message as ComputeEngine)) as ComputeEngine;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComputeEngine copyWith(void Function(ComputeEngine) updates) =>
+      super.copyWith((message) => updates(message as ComputeEngine))
+          as ComputeEngine;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeEngine create() => ComputeEngine._();
   ComputeEngine createEmptyInstance() => create();
-  static $pb.PbList<ComputeEngine> createRepeated() => $pb.PbList<ComputeEngine>();
+  static $pb.PbList<ComputeEngine> createRepeated() =>
+      $pb.PbList<ComputeEngine>();
   @$core.pragma('dart2js:noInline')
-  static ComputeEngine getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComputeEngine>(create);
+  static ComputeEngine getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComputeEngine>(create);
   static ComputeEngine? _defaultInstance;
 
   /// The instance on which the operation is running.
   @$pb.TagNumber(1)
   $core.String get instanceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set instanceName($core.String v) { $_setString(0, v); }
+  set instanceName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstanceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,7 +104,10 @@ class ComputeEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get zone => $_getSZ(1);
   @$pb.TagNumber(2)
-  set zone($core.String v) { $_setString(1, v); }
+  set zone($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasZone() => $_has(1);
   @$pb.TagNumber(2)
@@ -102,7 +117,10 @@ class ComputeEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get machineType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set machineType($core.String v) { $_setString(2, v); }
+  set machineType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMachineType() => $_has(2);
   @$pb.TagNumber(3)
@@ -127,40 +145,53 @@ class RuntimeMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   RuntimeMetadata._() : super();
-  factory RuntimeMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RuntimeMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RuntimeMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RuntimeMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RuntimeMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
-    ..aOM<ComputeEngine>(1, _omitFieldNames ? '' : 'computeEngine', subBuilder: ComputeEngine.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RuntimeMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
+    ..aOM<ComputeEngine>(1, _omitFieldNames ? '' : 'computeEngine',
+        subBuilder: ComputeEngine.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RuntimeMetadata clone() => RuntimeMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RuntimeMetadata copyWith(void Function(RuntimeMetadata) updates) => super.copyWith((message) => updates(message as RuntimeMetadata)) as RuntimeMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RuntimeMetadata copyWith(void Function(RuntimeMetadata) updates) =>
+      super.copyWith((message) => updates(message as RuntimeMetadata))
+          as RuntimeMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RuntimeMetadata create() => RuntimeMetadata._();
   RuntimeMetadata createEmptyInstance() => create();
-  static $pb.PbList<RuntimeMetadata> createRepeated() => $pb.PbList<RuntimeMetadata>();
+  static $pb.PbList<RuntimeMetadata> createRepeated() =>
+      $pb.PbList<RuntimeMetadata>();
   @$core.pragma('dart2js:noInline')
-  static RuntimeMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RuntimeMetadata>(create);
+  static RuntimeMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RuntimeMetadata>(create);
   static RuntimeMetadata? _defaultInstance;
 
   /// Execution information specific to Google Compute Engine.
   @$pb.TagNumber(1)
   ComputeEngine get computeEngine => $_getN(0);
   @$pb.TagNumber(1)
-  set computeEngine(ComputeEngine v) { setField(1, v); }
+  set computeEngine(ComputeEngine v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasComputeEngine() => $_has(0);
   @$pb.TagNumber(1)
@@ -169,10 +200,7 @@ class RuntimeMetadata extends $pb.GeneratedMessage {
   ComputeEngine ensureComputeEngine() => $_ensure(0);
 }
 
-enum Pipeline_Executor {
-  docker, 
-  notSet
-}
+enum Pipeline_Executor { docker, notSet }
 
 /// The pipeline object. Represents a transformation from a set of input
 /// parameters to a set of output parameters. The transformation is defined
@@ -219,36 +247,46 @@ class Pipeline extends $pb.GeneratedMessage {
     return $result;
   }
   Pipeline._() : super();
-  factory Pipeline.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Pipeline.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Pipeline.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Pipeline.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Pipeline_Executor> _Pipeline_ExecutorByTag = {
-    5 : Pipeline_Executor.docker,
-    0 : Pipeline_Executor.notSet
-  };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Pipeline', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static const $core.Map<$core.int, Pipeline_Executor> _Pipeline_ExecutorByTag =
+      {5: Pipeline_Executor.docker, 0: Pipeline_Executor.notSet};
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Pipeline',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<DockerExecutor>(5, _omitFieldNames ? '' : 'docker', subBuilder: DockerExecutor.create)
-    ..aOM<PipelineResources>(6, _omitFieldNames ? '' : 'resources', subBuilder: PipelineResources.create)
+    ..aOM<DockerExecutor>(5, _omitFieldNames ? '' : 'docker',
+        subBuilder: DockerExecutor.create)
+    ..aOM<PipelineResources>(6, _omitFieldNames ? '' : 'resources',
+        subBuilder: PipelineResources.create)
     ..aOS(7, _omitFieldNames ? '' : 'pipelineId')
-    ..pc<PipelineParameter>(8, _omitFieldNames ? '' : 'inputParameters', $pb.PbFieldType.PM, subBuilder: PipelineParameter.create)
-    ..pc<PipelineParameter>(9, _omitFieldNames ? '' : 'outputParameters', $pb.PbFieldType.PM, subBuilder: PipelineParameter.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<PipelineParameter>(
+        8, _omitFieldNames ? '' : 'inputParameters', $pb.PbFieldType.PM,
+        subBuilder: PipelineParameter.create)
+    ..pc<PipelineParameter>(
+        9, _omitFieldNames ? '' : 'outputParameters', $pb.PbFieldType.PM,
+        subBuilder: PipelineParameter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Pipeline clone() => Pipeline()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Pipeline copyWith(void Function(Pipeline) updates) => super.copyWith((message) => updates(message as Pipeline)) as Pipeline;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Pipeline copyWith(void Function(Pipeline) updates) =>
+      super.copyWith((message) => updates(message as Pipeline)) as Pipeline;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -257,10 +295,12 @@ class Pipeline extends $pb.GeneratedMessage {
   Pipeline createEmptyInstance() => create();
   static $pb.PbList<Pipeline> createRepeated() => $pb.PbList<Pipeline>();
   @$core.pragma('dart2js:noInline')
-  static Pipeline getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Pipeline>(create);
+  static Pipeline getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Pipeline>(create);
   static Pipeline? _defaultInstance;
 
-  Pipeline_Executor whichExecutor() => _Pipeline_ExecutorByTag[$_whichOneof(0)]!;
+  Pipeline_Executor whichExecutor() =>
+      _Pipeline_ExecutorByTag[$_whichOneof(0)]!;
   void clearExecutor() => clearField($_whichOneof(0));
 
   /// Required. The project in which to create the pipeline. The caller must have
@@ -268,7 +308,10 @@ class Pipeline extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -279,7 +322,10 @@ class Pipeline extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -289,7 +335,10 @@ class Pipeline extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -299,7 +348,10 @@ class Pipeline extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DockerExecutor get docker => $_getN(3);
   @$pb.TagNumber(5)
-  set docker(DockerExecutor v) { setField(5, v); }
+  set docker(DockerExecutor v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDocker() => $_has(3);
   @$pb.TagNumber(5)
@@ -318,7 +370,10 @@ class Pipeline extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PipelineResources get resources => $_getN(4);
   @$pb.TagNumber(6)
-  set resources(PipelineResources v) { setField(6, v); }
+  set resources(PipelineResources v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasResources() => $_has(4);
   @$pb.TagNumber(6)
@@ -334,7 +389,10 @@ class Pipeline extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get pipelineId => $_getSZ(5);
   @$pb.TagNumber(7)
-  set pipelineId($core.String v) { $_setString(5, v); }
+  set pipelineId($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPipelineId() => $_has(5);
   @$pb.TagNumber(7)
@@ -362,40 +420,55 @@ class CreatePipelineRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreatePipelineRequest._() : super();
-  factory CreatePipelineRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreatePipelineRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreatePipelineRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreatePipelineRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreatePipelineRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
-    ..aOM<Pipeline>(1, _omitFieldNames ? '' : 'pipeline', subBuilder: Pipeline.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreatePipelineRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
+    ..aOM<Pipeline>(1, _omitFieldNames ? '' : 'pipeline',
+        subBuilder: Pipeline.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreatePipelineRequest clone() => CreatePipelineRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreatePipelineRequest copyWith(void Function(CreatePipelineRequest) updates) => super.copyWith((message) => updates(message as CreatePipelineRequest)) as CreatePipelineRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreatePipelineRequest clone() =>
+      CreatePipelineRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreatePipelineRequest copyWith(
+          void Function(CreatePipelineRequest) updates) =>
+      super.copyWith((message) => updates(message as CreatePipelineRequest))
+          as CreatePipelineRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreatePipelineRequest create() => CreatePipelineRequest._();
   CreatePipelineRequest createEmptyInstance() => create();
-  static $pb.PbList<CreatePipelineRequest> createRepeated() => $pb.PbList<CreatePipelineRequest>();
+  static $pb.PbList<CreatePipelineRequest> createRepeated() =>
+      $pb.PbList<CreatePipelineRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreatePipelineRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreatePipelineRequest>(create);
+  static CreatePipelineRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreatePipelineRequest>(create);
   static CreatePipelineRequest? _defaultInstance;
 
   /// The pipeline to create. Should not have `pipelineId` populated.
   @$pb.TagNumber(1)
   Pipeline get pipeline => $_getN(0);
   @$pb.TagNumber(1)
-  set pipeline(Pipeline v) { setField(1, v); }
+  set pipeline(Pipeline v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPipeline() => $_has(0);
   @$pb.TagNumber(1)
@@ -448,41 +521,67 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
     return $result;
   }
   RunPipelineArgs._() : super();
-  factory RunPipelineArgs.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RunPipelineArgs.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RunPipelineArgs.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RunPipelineArgs.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunPipelineArgs', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RunPipelineArgs',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'inputs', entryClassName: 'RunPipelineArgs.InputsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
-    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'outputs', entryClassName: 'RunPipelineArgs.OutputsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
-    ..aOM<ServiceAccount>(4, _omitFieldNames ? '' : 'serviceAccount', subBuilder: ServiceAccount.create)
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'inputs',
+        entryClassName: 'RunPipelineArgs.InputsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.genomics.v1alpha2'))
+    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'outputs',
+        entryClassName: 'RunPipelineArgs.OutputsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.genomics.v1alpha2'))
+    ..aOM<ServiceAccount>(4, _omitFieldNames ? '' : 'serviceAccount',
+        subBuilder: ServiceAccount.create)
     ..aOS(5, _omitFieldNames ? '' : 'clientId')
-    ..aOM<PipelineResources>(6, _omitFieldNames ? '' : 'resources', subBuilder: PipelineResources.create)
-    ..aOM<LoggingOptions>(7, _omitFieldNames ? '' : 'logging', subBuilder: LoggingOptions.create)
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'keepVmAliveOnFailureDuration', subBuilder: $264.Duration.create)
-    ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'RunPipelineArgs.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
-    ..hasRequiredFields = false
-  ;
+    ..aOM<PipelineResources>(6, _omitFieldNames ? '' : 'resources',
+        subBuilder: PipelineResources.create)
+    ..aOM<LoggingOptions>(7, _omitFieldNames ? '' : 'logging',
+        subBuilder: LoggingOptions.create)
+    ..aOM<$264.Duration>(
+        8, _omitFieldNames ? '' : 'keepVmAliveOnFailureDuration',
+        subBuilder: $264.Duration.create)
+    ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'RunPipelineArgs.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.genomics.v1alpha2'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RunPipelineArgs clone() => RunPipelineArgs()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RunPipelineArgs copyWith(void Function(RunPipelineArgs) updates) => super.copyWith((message) => updates(message as RunPipelineArgs)) as RunPipelineArgs;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RunPipelineArgs copyWith(void Function(RunPipelineArgs) updates) =>
+      super.copyWith((message) => updates(message as RunPipelineArgs))
+          as RunPipelineArgs;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RunPipelineArgs create() => RunPipelineArgs._();
   RunPipelineArgs createEmptyInstance() => create();
-  static $pb.PbList<RunPipelineArgs> createRepeated() => $pb.PbList<RunPipelineArgs>();
+  static $pb.PbList<RunPipelineArgs> createRepeated() =>
+      $pb.PbList<RunPipelineArgs>();
   @$core.pragma('dart2js:noInline')
-  static RunPipelineArgs getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RunPipelineArgs>(create);
+  static RunPipelineArgs getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RunPipelineArgs>(create);
   static RunPipelineArgs? _defaultInstance;
 
   /// Required. The project in which to run the pipeline. The caller must have
@@ -491,7 +590,10 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -517,7 +619,10 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ServiceAccount get serviceAccount => $_getN(3);
   @$pb.TagNumber(4)
-  set serviceAccount(ServiceAccount v) { setField(4, v); }
+  set serviceAccount(ServiceAccount v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasServiceAccount() => $_has(3);
   @$pb.TagNumber(4)
@@ -530,7 +635,10 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get clientId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set clientId($core.String v) { $_setString(4, v); }
+  set clientId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasClientId() => $_has(4);
   @$pb.TagNumber(5)
@@ -540,7 +648,10 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PipelineResources get resources => $_getN(5);
   @$pb.TagNumber(6)
-  set resources(PipelineResources v) { setField(6, v); }
+  set resources(PipelineResources v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasResources() => $_has(5);
   @$pb.TagNumber(6)
@@ -553,7 +664,10 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   LoggingOptions get logging => $_getN(6);
   @$pb.TagNumber(7)
-  set logging(LoggingOptions v) { setField(7, v); }
+  set logging(LoggingOptions v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasLogging() => $_has(6);
   @$pb.TagNumber(7)
@@ -567,7 +681,10 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $264.Duration get keepVmAliveOnFailureDuration => $_getN(7);
   @$pb.TagNumber(8)
-  set keepVmAliveOnFailureDuration($264.Duration v) { setField(8, v); }
+  set keepVmAliveOnFailureDuration($264.Duration v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasKeepVmAliveOnFailureDuration() => $_has(7);
   @$pb.TagNumber(8)
@@ -591,11 +708,7 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   $core.Map<$core.String, $core.String> get labels => $_getMap(8);
 }
 
-enum RunPipelineRequest_Pipeline {
-  pipelineId, 
-  ephemeralPipeline, 
-  notSet
-}
+enum RunPipelineRequest_Pipeline { pipelineId, ephemeralPipeline, notSet }
 
 /// The request to run a pipeline. If `pipelineId` is specified, it
 /// refers to a saved pipeline created with CreatePipeline and set as
@@ -623,51 +736,67 @@ class RunPipelineRequest extends $pb.GeneratedMessage {
     return $result;
   }
   RunPipelineRequest._() : super();
-  factory RunPipelineRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RunPipelineRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RunPipelineRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RunPipelineRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, RunPipelineRequest_Pipeline> _RunPipelineRequest_PipelineByTag = {
-    1 : RunPipelineRequest_Pipeline.pipelineId,
-    2 : RunPipelineRequest_Pipeline.ephemeralPipeline,
-    0 : RunPipelineRequest_Pipeline.notSet
+  static const $core.Map<$core.int, RunPipelineRequest_Pipeline>
+      _RunPipelineRequest_PipelineByTag = {
+    1: RunPipelineRequest_Pipeline.pipelineId,
+    2: RunPipelineRequest_Pipeline.ephemeralPipeline,
+    0: RunPipelineRequest_Pipeline.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunPipelineRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RunPipelineRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'pipelineId')
-    ..aOM<Pipeline>(2, _omitFieldNames ? '' : 'ephemeralPipeline', subBuilder: Pipeline.create)
-    ..aOM<RunPipelineArgs>(3, _omitFieldNames ? '' : 'pipelineArgs', subBuilder: RunPipelineArgs.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Pipeline>(2, _omitFieldNames ? '' : 'ephemeralPipeline',
+        subBuilder: Pipeline.create)
+    ..aOM<RunPipelineArgs>(3, _omitFieldNames ? '' : 'pipelineArgs',
+        subBuilder: RunPipelineArgs.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RunPipelineRequest clone() => RunPipelineRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RunPipelineRequest copyWith(void Function(RunPipelineRequest) updates) => super.copyWith((message) => updates(message as RunPipelineRequest)) as RunPipelineRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RunPipelineRequest copyWith(void Function(RunPipelineRequest) updates) =>
+      super.copyWith((message) => updates(message as RunPipelineRequest))
+          as RunPipelineRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RunPipelineRequest create() => RunPipelineRequest._();
   RunPipelineRequest createEmptyInstance() => create();
-  static $pb.PbList<RunPipelineRequest> createRepeated() => $pb.PbList<RunPipelineRequest>();
+  static $pb.PbList<RunPipelineRequest> createRepeated() =>
+      $pb.PbList<RunPipelineRequest>();
   @$core.pragma('dart2js:noInline')
-  static RunPipelineRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RunPipelineRequest>(create);
+  static RunPipelineRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RunPipelineRequest>(create);
   static RunPipelineRequest? _defaultInstance;
 
-  RunPipelineRequest_Pipeline whichPipeline() => _RunPipelineRequest_PipelineByTag[$_whichOneof(0)]!;
+  RunPipelineRequest_Pipeline whichPipeline() =>
+      _RunPipelineRequest_PipelineByTag[$_whichOneof(0)]!;
   void clearPipeline() => clearField($_whichOneof(0));
 
   /// The already created pipeline to run.
   @$pb.TagNumber(1)
   $core.String get pipelineId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pipelineId($core.String v) { $_setString(0, v); }
+  set pipelineId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPipelineId() => $_has(0);
   @$pb.TagNumber(1)
@@ -677,7 +806,10 @@ class RunPipelineRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Pipeline get ephemeralPipeline => $_getN(1);
   @$pb.TagNumber(2)
-  set ephemeralPipeline(Pipeline v) { setField(2, v); }
+  set ephemeralPipeline(Pipeline v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEphemeralPipeline() => $_has(1);
   @$pb.TagNumber(2)
@@ -689,7 +821,10 @@ class RunPipelineRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   RunPipelineArgs get pipelineArgs => $_getN(2);
   @$pb.TagNumber(3)
-  set pipelineArgs(RunPipelineArgs v) { setField(3, v); }
+  set pipelineArgs(RunPipelineArgs v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPipelineArgs() => $_has(2);
   @$pb.TagNumber(3)
@@ -710,33 +845,42 @@ class GetPipelineRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetPipelineRequest._() : super();
-  factory GetPipelineRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetPipelineRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetPipelineRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetPipelineRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetPipelineRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetPipelineRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'pipelineId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetPipelineRequest clone() => GetPipelineRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetPipelineRequest copyWith(void Function(GetPipelineRequest) updates) => super.copyWith((message) => updates(message as GetPipelineRequest)) as GetPipelineRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetPipelineRequest copyWith(void Function(GetPipelineRequest) updates) =>
+      super.copyWith((message) => updates(message as GetPipelineRequest))
+          as GetPipelineRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetPipelineRequest create() => GetPipelineRequest._();
   GetPipelineRequest createEmptyInstance() => create();
-  static $pb.PbList<GetPipelineRequest> createRepeated() => $pb.PbList<GetPipelineRequest>();
+  static $pb.PbList<GetPipelineRequest> createRepeated() =>
+      $pb.PbList<GetPipelineRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetPipelineRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetPipelineRequest>(create);
+  static GetPipelineRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetPipelineRequest>(create);
   static GetPipelineRequest? _defaultInstance;
 
   /// Caller must have READ access to the project in which this pipeline
@@ -744,7 +888,10 @@ class GetPipelineRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pipelineId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pipelineId($core.String v) { $_setString(0, v); }
+  set pipelineId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPipelineId() => $_has(0);
   @$pb.TagNumber(1)
@@ -780,36 +927,46 @@ class ListPipelinesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListPipelinesRequest._() : super();
-  factory ListPipelinesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListPipelinesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListPipelinesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListPipelinesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListPipelinesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListPipelinesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'namePrefix')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListPipelinesRequest clone() => ListPipelinesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListPipelinesRequest copyWith(void Function(ListPipelinesRequest) updates) => super.copyWith((message) => updates(message as ListPipelinesRequest)) as ListPipelinesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListPipelinesRequest clone() =>
+      ListPipelinesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListPipelinesRequest copyWith(void Function(ListPipelinesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListPipelinesRequest))
+          as ListPipelinesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListPipelinesRequest create() => ListPipelinesRequest._();
   ListPipelinesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListPipelinesRequest> createRepeated() => $pb.PbList<ListPipelinesRequest>();
+  static $pb.PbList<ListPipelinesRequest> createRepeated() =>
+      $pb.PbList<ListPipelinesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListPipelinesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListPipelinesRequest>(create);
+  static ListPipelinesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListPipelinesRequest>(create);
   static ListPipelinesRequest? _defaultInstance;
 
   /// Required. The name of the project to search for pipelines. Caller
@@ -817,7 +974,10 @@ class ListPipelinesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -829,7 +989,10 @@ class ListPipelinesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get namePrefix => $_getSZ(1);
   @$pb.TagNumber(2)
-  set namePrefix($core.String v) { $_setString(1, v); }
+  set namePrefix($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNamePrefix() => $_has(1);
   @$pb.TagNumber(2)
@@ -840,7 +1003,10 @@ class ListPipelinesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -851,7 +1017,10 @@ class ListPipelinesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -878,34 +1047,46 @@ class ListPipelinesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListPipelinesResponse._() : super();
-  factory ListPipelinesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListPipelinesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListPipelinesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListPipelinesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListPipelinesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
-    ..pc<Pipeline>(1, _omitFieldNames ? '' : 'pipelines', $pb.PbFieldType.PM, subBuilder: Pipeline.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListPipelinesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
+    ..pc<Pipeline>(1, _omitFieldNames ? '' : 'pipelines', $pb.PbFieldType.PM,
+        subBuilder: Pipeline.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListPipelinesResponse clone() => ListPipelinesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListPipelinesResponse copyWith(void Function(ListPipelinesResponse) updates) => super.copyWith((message) => updates(message as ListPipelinesResponse)) as ListPipelinesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListPipelinesResponse clone() =>
+      ListPipelinesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListPipelinesResponse copyWith(
+          void Function(ListPipelinesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListPipelinesResponse))
+          as ListPipelinesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListPipelinesResponse create() => ListPipelinesResponse._();
   ListPipelinesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListPipelinesResponse> createRepeated() => $pb.PbList<ListPipelinesResponse>();
+  static $pb.PbList<ListPipelinesResponse> createRepeated() =>
+      $pb.PbList<ListPipelinesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListPipelinesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListPipelinesResponse>(create);
+  static ListPipelinesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListPipelinesResponse>(create);
   static ListPipelinesResponse? _defaultInstance;
 
   /// The matched pipelines.
@@ -916,7 +1097,10 @@ class ListPipelinesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -935,33 +1119,44 @@ class DeletePipelineRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeletePipelineRequest._() : super();
-  factory DeletePipelineRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeletePipelineRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeletePipelineRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeletePipelineRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeletePipelineRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeletePipelineRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'pipelineId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeletePipelineRequest clone() => DeletePipelineRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeletePipelineRequest copyWith(void Function(DeletePipelineRequest) updates) => super.copyWith((message) => updates(message as DeletePipelineRequest)) as DeletePipelineRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeletePipelineRequest clone() =>
+      DeletePipelineRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeletePipelineRequest copyWith(
+          void Function(DeletePipelineRequest) updates) =>
+      super.copyWith((message) => updates(message as DeletePipelineRequest))
+          as DeletePipelineRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeletePipelineRequest create() => DeletePipelineRequest._();
   DeletePipelineRequest createEmptyInstance() => create();
-  static $pb.PbList<DeletePipelineRequest> createRepeated() => $pb.PbList<DeletePipelineRequest>();
+  static $pb.PbList<DeletePipelineRequest> createRepeated() =>
+      $pb.PbList<DeletePipelineRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeletePipelineRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeletePipelineRequest>(create);
+  static DeletePipelineRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeletePipelineRequest>(create);
   static DeletePipelineRequest? _defaultInstance;
 
   /// Caller must have WRITE access to the project in which this pipeline
@@ -969,7 +1164,10 @@ class DeletePipelineRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pipelineId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pipelineId($core.String v) { $_setString(0, v); }
+  set pipelineId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPipelineId() => $_has(0);
   @$pb.TagNumber(1)
@@ -993,41 +1191,58 @@ class GetControllerConfigRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetControllerConfigRequest._() : super();
-  factory GetControllerConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetControllerConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetControllerConfigRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetControllerConfigRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetControllerConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetControllerConfigRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'validationToken', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false
-  ;
+    ..a<$fixnum.Int64>(
+        2, _omitFieldNames ? '' : 'validationToken', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetControllerConfigRequest clone() => GetControllerConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetControllerConfigRequest copyWith(void Function(GetControllerConfigRequest) updates) => super.copyWith((message) => updates(message as GetControllerConfigRequest)) as GetControllerConfigRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetControllerConfigRequest clone() =>
+      GetControllerConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetControllerConfigRequest copyWith(
+          void Function(GetControllerConfigRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetControllerConfigRequest))
+          as GetControllerConfigRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetControllerConfigRequest create() => GetControllerConfigRequest._();
   GetControllerConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<GetControllerConfigRequest> createRepeated() => $pb.PbList<GetControllerConfigRequest>();
+  static $pb.PbList<GetControllerConfigRequest> createRepeated() =>
+      $pb.PbList<GetControllerConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetControllerConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetControllerConfigRequest>(create);
+  static GetControllerConfigRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetControllerConfigRequest>(create);
   static GetControllerConfigRequest? _defaultInstance;
 
   /// The operation to retrieve controller configuration for.
   @$pb.TagNumber(1)
   $core.String get operationId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set operationId($core.String v) { $_setString(0, v); }
+  set operationId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOperationId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1036,7 +1251,10 @@ class GetControllerConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get validationToken => $_getI64(1);
   @$pb.TagNumber(2)
-  set validationToken($fixnum.Int64 v) { $_setInt64(1, v); }
+  set validationToken($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValidationToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1054,33 +1272,47 @@ class ControllerConfig_RepeatedString extends $pb.GeneratedMessage {
     return $result;
   }
   ControllerConfig_RepeatedString._() : super();
-  factory ControllerConfig_RepeatedString.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ControllerConfig_RepeatedString.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ControllerConfig_RepeatedString.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ControllerConfig_RepeatedString.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ControllerConfig.RepeatedString', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ControllerConfig.RepeatedString',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'values')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ControllerConfig_RepeatedString clone() => ControllerConfig_RepeatedString()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ControllerConfig_RepeatedString copyWith(void Function(ControllerConfig_RepeatedString) updates) => super.copyWith((message) => updates(message as ControllerConfig_RepeatedString)) as ControllerConfig_RepeatedString;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ControllerConfig_RepeatedString clone() =>
+      ControllerConfig_RepeatedString()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ControllerConfig_RepeatedString copyWith(
+          void Function(ControllerConfig_RepeatedString) updates) =>
+      super.copyWith(
+              (message) => updates(message as ControllerConfig_RepeatedString))
+          as ControllerConfig_RepeatedString;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ControllerConfig_RepeatedString create() => ControllerConfig_RepeatedString._();
+  static ControllerConfig_RepeatedString create() =>
+      ControllerConfig_RepeatedString._();
   ControllerConfig_RepeatedString createEmptyInstance() => create();
-  static $pb.PbList<ControllerConfig_RepeatedString> createRepeated() => $pb.PbList<ControllerConfig_RepeatedString>();
+  static $pb.PbList<ControllerConfig_RepeatedString> createRepeated() =>
+      $pb.PbList<ControllerConfig_RepeatedString>();
   @$core.pragma('dart2js:noInline')
-  static ControllerConfig_RepeatedString getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ControllerConfig_RepeatedString>(create);
+  static ControllerConfig_RepeatedString getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ControllerConfig_RepeatedString>(
+          create);
   static ControllerConfig_RepeatedString? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1129,46 +1361,80 @@ class ControllerConfig extends $pb.GeneratedMessage {
     return $result;
   }
   ControllerConfig._() : super();
-  factory ControllerConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ControllerConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ControllerConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ControllerConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ControllerConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ControllerConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'image')
     ..aOS(2, _omitFieldNames ? '' : 'cmd')
     ..aOS(3, _omitFieldNames ? '' : 'gcsLogPath')
     ..aOS(4, _omitFieldNames ? '' : 'machineType')
-    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'vars', entryClassName: 'ControllerConfig.VarsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
-    ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'disks', entryClassName: 'ControllerConfig.DisksEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
-    ..m<$core.String, ControllerConfig_RepeatedString>(7, _omitFieldNames ? '' : 'gcsSources', entryClassName: 'ControllerConfig.GcsSourcesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ControllerConfig_RepeatedString.create, valueDefaultOrMaker: ControllerConfig_RepeatedString.getDefault, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
-    ..m<$core.String, ControllerConfig_RepeatedString>(8, _omitFieldNames ? '' : 'gcsSinks', entryClassName: 'ControllerConfig.GcsSinksEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ControllerConfig_RepeatedString.create, valueDefaultOrMaker: ControllerConfig_RepeatedString.getDefault, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'vars',
+        entryClassName: 'ControllerConfig.VarsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.genomics.v1alpha2'))
+    ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'disks',
+        entryClassName: 'ControllerConfig.DisksEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.genomics.v1alpha2'))
+    ..m<$core.String, ControllerConfig_RepeatedString>(
+        7, _omitFieldNames ? '' : 'gcsSources',
+        entryClassName: 'ControllerConfig.GcsSourcesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: ControllerConfig_RepeatedString.create,
+        valueDefaultOrMaker: ControllerConfig_RepeatedString.getDefault,
+        packageName: const $pb.PackageName('google.genomics.v1alpha2'))
+    ..m<$core.String, ControllerConfig_RepeatedString>(
+        8, _omitFieldNames ? '' : 'gcsSinks',
+        entryClassName: 'ControllerConfig.GcsSinksEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: ControllerConfig_RepeatedString.create,
+        valueDefaultOrMaker: ControllerConfig_RepeatedString.getDefault,
+        packageName: const $pb.PackageName('google.genomics.v1alpha2'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ControllerConfig clone() => ControllerConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ControllerConfig copyWith(void Function(ControllerConfig) updates) => super.copyWith((message) => updates(message as ControllerConfig)) as ControllerConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ControllerConfig copyWith(void Function(ControllerConfig) updates) =>
+      super.copyWith((message) => updates(message as ControllerConfig))
+          as ControllerConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ControllerConfig create() => ControllerConfig._();
   ControllerConfig createEmptyInstance() => create();
-  static $pb.PbList<ControllerConfig> createRepeated() => $pb.PbList<ControllerConfig>();
+  static $pb.PbList<ControllerConfig> createRepeated() =>
+      $pb.PbList<ControllerConfig>();
   @$core.pragma('dart2js:noInline')
-  static ControllerConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ControllerConfig>(create);
+  static ControllerConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ControllerConfig>(create);
   static ControllerConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get image => $_getSZ(0);
   @$pb.TagNumber(1)
-  set image($core.String v) { $_setString(0, v); }
+  set image($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasImage() => $_has(0);
   @$pb.TagNumber(1)
@@ -1177,7 +1443,10 @@ class ControllerConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get cmd => $_getSZ(1);
   @$pb.TagNumber(2)
-  set cmd($core.String v) { $_setString(1, v); }
+  set cmd($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCmd() => $_has(1);
   @$pb.TagNumber(2)
@@ -1186,7 +1455,10 @@ class ControllerConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get gcsLogPath => $_getSZ(2);
   @$pb.TagNumber(3)
-  set gcsLogPath($core.String v) { $_setString(2, v); }
+  set gcsLogPath($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGcsLogPath() => $_has(2);
   @$pb.TagNumber(3)
@@ -1195,7 +1467,10 @@ class ControllerConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get machineType => $_getSZ(3);
   @$pb.TagNumber(4)
-  set machineType($core.String v) { $_setString(3, v); }
+  set machineType($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMachineType() => $_has(3);
   @$pb.TagNumber(4)
@@ -1208,10 +1483,12 @@ class ControllerConfig extends $pb.GeneratedMessage {
   $core.Map<$core.String, $core.String> get disks => $_getMap(5);
 
   @$pb.TagNumber(7)
-  $core.Map<$core.String, ControllerConfig_RepeatedString> get gcsSources => $_getMap(6);
+  $core.Map<$core.String, ControllerConfig_RepeatedString> get gcsSources =>
+      $_getMap(6);
 
   @$pb.TagNumber(8)
-  $core.Map<$core.String, ControllerConfig_RepeatedString> get gcsSinks => $_getMap(7);
+  $core.Map<$core.String, ControllerConfig_RepeatedString> get gcsSinks =>
+      $_getMap(7);
 }
 
 /// Stores the list of events and times they occured for major events in job
@@ -1231,41 +1508,54 @@ class TimestampEvent extends $pb.GeneratedMessage {
     return $result;
   }
   TimestampEvent._() : super();
-  factory TimestampEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TimestampEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TimestampEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TimestampEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimestampEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimestampEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'description')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'timestamp', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'timestamp',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TimestampEvent clone() => TimestampEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TimestampEvent copyWith(void Function(TimestampEvent) updates) => super.copyWith((message) => updates(message as TimestampEvent)) as TimestampEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TimestampEvent copyWith(void Function(TimestampEvent) updates) =>
+      super.copyWith((message) => updates(message as TimestampEvent))
+          as TimestampEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TimestampEvent create() => TimestampEvent._();
   TimestampEvent createEmptyInstance() => create();
-  static $pb.PbList<TimestampEvent> createRepeated() => $pb.PbList<TimestampEvent>();
+  static $pb.PbList<TimestampEvent> createRepeated() =>
+      $pb.PbList<TimestampEvent>();
   @$core.pragma('dart2js:noInline')
-  static TimestampEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimestampEvent>(create);
+  static TimestampEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TimestampEvent>(create);
   static TimestampEvent? _defaultInstance;
 
   /// String indicating the type of event
   @$pb.TagNumber(1)
   $core.String get description => $_getSZ(0);
   @$pb.TagNumber(1)
-  set description($core.String v) { $_setString(0, v); }
+  set description($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
@@ -1275,7 +1565,10 @@ class TimestampEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get timestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set timestamp($302.Timestamp v) { setField(2, v); }
+  set timestamp($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTimestamp() => $_has(1);
   @$pb.TagNumber(2)
@@ -1313,43 +1606,64 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SetOperationStatusRequest._() : super();
-  factory SetOperationStatusRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SetOperationStatusRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SetOperationStatusRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SetOperationStatusRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetOperationStatusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SetOperationStatusRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
-    ..pc<TimestampEvent>(2, _omitFieldNames ? '' : 'timestampEvents', $pb.PbFieldType.PM, subBuilder: TimestampEvent.create)
-    ..e<$405.Code>(3, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE, defaultOrMaker: $405.Code.OK, valueOf: $405.Code.valueOf, enumValues: $405.Code.values)
+    ..pc<TimestampEvent>(
+        2, _omitFieldNames ? '' : 'timestampEvents', $pb.PbFieldType.PM,
+        subBuilder: TimestampEvent.create)
+    ..e<$405.Code>(3, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE,
+        defaultOrMaker: $405.Code.OK,
+        valueOf: $405.Code.valueOf,
+        enumValues: $405.Code.values)
     ..aOS(4, _omitFieldNames ? '' : 'errorMessage')
-    ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'validationToken', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false
-  ;
+    ..a<$fixnum.Int64>(
+        5, _omitFieldNames ? '' : 'validationToken', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SetOperationStatusRequest clone() => SetOperationStatusRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SetOperationStatusRequest copyWith(void Function(SetOperationStatusRequest) updates) => super.copyWith((message) => updates(message as SetOperationStatusRequest)) as SetOperationStatusRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SetOperationStatusRequest clone() =>
+      SetOperationStatusRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SetOperationStatusRequest copyWith(
+          void Function(SetOperationStatusRequest) updates) =>
+      super.copyWith((message) => updates(message as SetOperationStatusRequest))
+          as SetOperationStatusRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SetOperationStatusRequest create() => SetOperationStatusRequest._();
   SetOperationStatusRequest createEmptyInstance() => create();
-  static $pb.PbList<SetOperationStatusRequest> createRepeated() => $pb.PbList<SetOperationStatusRequest>();
+  static $pb.PbList<SetOperationStatusRequest> createRepeated() =>
+      $pb.PbList<SetOperationStatusRequest>();
   @$core.pragma('dart2js:noInline')
-  static SetOperationStatusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SetOperationStatusRequest>(create);
+  static SetOperationStatusRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SetOperationStatusRequest>(create);
   static SetOperationStatusRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get operationId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set operationId($core.String v) { $_setString(0, v); }
+  set operationId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOperationId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1361,7 +1675,10 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $405.Code get errorCode => $_getN(2);
   @$pb.TagNumber(3)
-  set errorCode($405.Code v) { setField(3, v); }
+  set errorCode($405.Code v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasErrorCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -1370,7 +1687,10 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get errorMessage => $_getSZ(3);
   @$pb.TagNumber(4)
-  set errorMessage($core.String v) { $_setString(3, v); }
+  set errorMessage($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasErrorMessage() => $_has(3);
   @$pb.TagNumber(4)
@@ -1379,7 +1699,10 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get validationToken => $_getI64(4);
   @$pb.TagNumber(5)
-  set validationToken($fixnum.Int64 v) { $_setInt64(4, v); }
+  set validationToken($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasValidationToken() => $_has(4);
   @$pb.TagNumber(5)
@@ -1402,34 +1725,43 @@ class ServiceAccount extends $pb.GeneratedMessage {
     return $result;
   }
   ServiceAccount._() : super();
-  factory ServiceAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServiceAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ServiceAccount.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ServiceAccount.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ServiceAccount',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'email')
     ..pPS(2, _omitFieldNames ? '' : 'scopes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ServiceAccount clone() => ServiceAccount()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServiceAccount copyWith(void Function(ServiceAccount) updates) => super.copyWith((message) => updates(message as ServiceAccount)) as ServiceAccount;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ServiceAccount copyWith(void Function(ServiceAccount) updates) =>
+      super.copyWith((message) => updates(message as ServiceAccount))
+          as ServiceAccount;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceAccount create() => ServiceAccount._();
   ServiceAccount createEmptyInstance() => create();
-  static $pb.PbList<ServiceAccount> createRepeated() => $pb.PbList<ServiceAccount>();
+  static $pb.PbList<ServiceAccount> createRepeated() =>
+      $pb.PbList<ServiceAccount>();
   @$core.pragma('dart2js:noInline')
-  static ServiceAccount getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceAccount>(create);
+  static ServiceAccount getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ServiceAccount>(create);
   static ServiceAccount? _defaultInstance;
 
   /// Email address of the service account. Defaults to `default`,
@@ -1437,7 +1769,10 @@ class ServiceAccount extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get email => $_getSZ(0);
   @$pb.TagNumber(1)
-  set email($core.String v) { $_setString(0, v); }
+  set email($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -1467,33 +1802,42 @@ class LoggingOptions extends $pb.GeneratedMessage {
     return $result;
   }
   LoggingOptions._() : super();
-  factory LoggingOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LoggingOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LoggingOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LoggingOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LoggingOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LoggingOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'gcsPath')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LoggingOptions clone() => LoggingOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LoggingOptions copyWith(void Function(LoggingOptions) updates) => super.copyWith((message) => updates(message as LoggingOptions)) as LoggingOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LoggingOptions copyWith(void Function(LoggingOptions) updates) =>
+      super.copyWith((message) => updates(message as LoggingOptions))
+          as LoggingOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LoggingOptions create() => LoggingOptions._();
   LoggingOptions createEmptyInstance() => create();
-  static $pb.PbList<LoggingOptions> createRepeated() => $pb.PbList<LoggingOptions>();
+  static $pb.PbList<LoggingOptions> createRepeated() =>
+      $pb.PbList<LoggingOptions>();
   @$core.pragma('dart2js:noInline')
-  static LoggingOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LoggingOptions>(create);
+  static LoggingOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LoggingOptions>(create);
   static LoggingOptions? _defaultInstance;
 
   /// The location in Google Cloud Storage to which the pipeline logs
@@ -1507,7 +1851,10 @@ class LoggingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get gcsPath => $_getSZ(0);
   @$pb.TagNumber(1)
-  set gcsPath($core.String v) { $_setString(0, v); }
+  set gcsPath($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGcsPath() => $_has(0);
   @$pb.TagNumber(1)
@@ -1546,38 +1893,53 @@ class PipelineResources_Disk extends $pb.GeneratedMessage {
     return $result;
   }
   PipelineResources_Disk._() : super();
-  factory PipelineResources_Disk.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PipelineResources_Disk.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PipelineResources_Disk.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PipelineResources_Disk.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineResources.Disk', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PipelineResources.Disk',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<PipelineResources_Disk_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: PipelineResources_Disk_Type.TYPE_UNSPECIFIED, valueOf: PipelineResources_Disk_Type.valueOf, enumValues: PipelineResources_Disk_Type.values)
+    ..e<PipelineResources_Disk_Type>(
+        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: PipelineResources_Disk_Type.TYPE_UNSPECIFIED,
+        valueOf: PipelineResources_Disk_Type.valueOf,
+        enumValues: PipelineResources_Disk_Type.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'sizeGb', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'source')
     ..aOB(6, _omitFieldNames ? '' : 'autoDelete')
     ..aOS(8, _omitFieldNames ? '' : 'mountPoint')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PipelineResources_Disk clone() => PipelineResources_Disk()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PipelineResources_Disk copyWith(void Function(PipelineResources_Disk) updates) => super.copyWith((message) => updates(message as PipelineResources_Disk)) as PipelineResources_Disk;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PipelineResources_Disk clone() =>
+      PipelineResources_Disk()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PipelineResources_Disk copyWith(
+          void Function(PipelineResources_Disk) updates) =>
+      super.copyWith((message) => updates(message as PipelineResources_Disk))
+          as PipelineResources_Disk;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PipelineResources_Disk create() => PipelineResources_Disk._();
   PipelineResources_Disk createEmptyInstance() => create();
-  static $pb.PbList<PipelineResources_Disk> createRepeated() => $pb.PbList<PipelineResources_Disk>();
+  static $pb.PbList<PipelineResources_Disk> createRepeated() =>
+      $pb.PbList<PipelineResources_Disk>();
   @$core.pragma('dart2js:noInline')
-  static PipelineResources_Disk getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PipelineResources_Disk>(create);
+  static PipelineResources_Disk getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PipelineResources_Disk>(create);
   static PipelineResources_Disk? _defaultInstance;
 
   /// Required. The name of the disk that can be used in the pipeline
@@ -1586,7 +1948,10 @@ class PipelineResources_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1596,7 +1961,10 @@ class PipelineResources_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PipelineResources_Disk_Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(PipelineResources_Disk_Type v) { setField(2, v); }
+  set type(PipelineResources_Disk_Type v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -1607,7 +1975,10 @@ class PipelineResources_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get sizeGb => $_getIZ(2);
   @$pb.TagNumber(3)
-  set sizeGb($core.int v) { $_setSignedInt32(2, v); }
+  set sizeGb($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSizeGb() => $_has(2);
   @$pb.TagNumber(3)
@@ -1621,7 +1992,10 @@ class PipelineResources_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get source => $_getSZ(3);
   @$pb.TagNumber(4)
-  set source($core.String v) { $_setString(3, v); }
+  set source($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSource() => $_has(3);
   @$pb.TagNumber(4)
@@ -1632,7 +2006,10 @@ class PipelineResources_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get autoDelete => $_getBF(4);
   @$pb.TagNumber(6)
-  set autoDelete($core.bool v) { $_setBool(4, v); }
+  set autoDelete($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAutoDelete() => $_has(4);
   @$pb.TagNumber(6)
@@ -1647,7 +2024,10 @@ class PipelineResources_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get mountPoint => $_getSZ(5);
   @$pb.TagNumber(8)
-  set mountPoint($core.String v) { $_setString(5, v); }
+  set mountPoint($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMountPoint() => $_has(5);
   @$pb.TagNumber(8)
@@ -1690,46 +2070,63 @@ class PipelineResources extends $pb.GeneratedMessage {
     return $result;
   }
   PipelineResources._() : super();
-  factory PipelineResources.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PipelineResources.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PipelineResources.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PipelineResources.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineResources', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'minimumCpuCores', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PipelineResources',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'minimumCpuCores', $pb.PbFieldType.O3)
     ..aOB(2, _omitFieldNames ? '' : 'preemptible')
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'minimumRamGb', $pb.PbFieldType.OD)
-    ..pc<PipelineResources_Disk>(4, _omitFieldNames ? '' : 'disks', $pb.PbFieldType.PM, subBuilder: PipelineResources_Disk.create)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'minimumRamGb', $pb.PbFieldType.OD)
+    ..pc<PipelineResources_Disk>(
+        4, _omitFieldNames ? '' : 'disks', $pb.PbFieldType.PM,
+        subBuilder: PipelineResources_Disk.create)
     ..pPS(5, _omitFieldNames ? '' : 'zones')
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'bootDiskSizeGb', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'bootDiskSizeGb', $pb.PbFieldType.O3)
     ..aOB(7, _omitFieldNames ? '' : 'noAddress')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PipelineResources clone() => PipelineResources()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PipelineResources copyWith(void Function(PipelineResources) updates) => super.copyWith((message) => updates(message as PipelineResources)) as PipelineResources;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PipelineResources copyWith(void Function(PipelineResources) updates) =>
+      super.copyWith((message) => updates(message as PipelineResources))
+          as PipelineResources;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PipelineResources create() => PipelineResources._();
   PipelineResources createEmptyInstance() => create();
-  static $pb.PbList<PipelineResources> createRepeated() => $pb.PbList<PipelineResources>();
+  static $pb.PbList<PipelineResources> createRepeated() =>
+      $pb.PbList<PipelineResources>();
   @$core.pragma('dart2js:noInline')
-  static PipelineResources getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PipelineResources>(create);
+  static PipelineResources getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PipelineResources>(create);
   static PipelineResources? _defaultInstance;
 
   /// The minimum number of cores to use. Defaults to 1.
   @$pb.TagNumber(1)
   $core.int get minimumCpuCores => $_getIZ(0);
   @$pb.TagNumber(1)
-  set minimumCpuCores($core.int v) { $_setSignedInt32(0, v); }
+  set minimumCpuCores($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinimumCpuCores() => $_has(0);
   @$pb.TagNumber(1)
@@ -1741,7 +2138,10 @@ class PipelineResources extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get preemptible => $_getBF(1);
   @$pb.TagNumber(2)
-  set preemptible($core.bool v) { $_setBool(1, v); }
+  set preemptible($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPreemptible() => $_has(1);
   @$pb.TagNumber(2)
@@ -1751,7 +2151,10 @@ class PipelineResources extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get minimumRamGb => $_getN(2);
   @$pb.TagNumber(3)
-  set minimumRamGb($core.double v) { $_setDouble(2, v); }
+  set minimumRamGb($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMinimumRamGb() => $_has(2);
   @$pb.TagNumber(3)
@@ -1770,7 +2173,10 @@ class PipelineResources extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get bootDiskSizeGb => $_getIZ(5);
   @$pb.TagNumber(6)
-  set bootDiskSizeGb($core.int v) { $_setSignedInt32(5, v); }
+  set bootDiskSizeGb($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBootDiskSizeGb() => $_has(5);
   @$pb.TagNumber(6)
@@ -1790,7 +2196,10 @@ class PipelineResources extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get noAddress => $_getBF(6);
   @$pb.TagNumber(7)
-  set noAddress($core.bool v) { $_setBool(6, v); }
+  set noAddress($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasNoAddress() => $_has(6);
   @$pb.TagNumber(7)
@@ -1813,34 +2222,47 @@ class PipelineParameter_LocalCopy extends $pb.GeneratedMessage {
     return $result;
   }
   PipelineParameter_LocalCopy._() : super();
-  factory PipelineParameter_LocalCopy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PipelineParameter_LocalCopy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PipelineParameter_LocalCopy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PipelineParameter_LocalCopy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineParameter.LocalCopy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PipelineParameter.LocalCopy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOS(2, _omitFieldNames ? '' : 'disk')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PipelineParameter_LocalCopy clone() => PipelineParameter_LocalCopy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PipelineParameter_LocalCopy copyWith(void Function(PipelineParameter_LocalCopy) updates) => super.copyWith((message) => updates(message as PipelineParameter_LocalCopy)) as PipelineParameter_LocalCopy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PipelineParameter_LocalCopy clone() =>
+      PipelineParameter_LocalCopy()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PipelineParameter_LocalCopy copyWith(
+          void Function(PipelineParameter_LocalCopy) updates) =>
+      super.copyWith(
+              (message) => updates(message as PipelineParameter_LocalCopy))
+          as PipelineParameter_LocalCopy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PipelineParameter_LocalCopy create() => PipelineParameter_LocalCopy._();
+  static PipelineParameter_LocalCopy create() =>
+      PipelineParameter_LocalCopy._();
   PipelineParameter_LocalCopy createEmptyInstance() => create();
-  static $pb.PbList<PipelineParameter_LocalCopy> createRepeated() => $pb.PbList<PipelineParameter_LocalCopy>();
+  static $pb.PbList<PipelineParameter_LocalCopy> createRepeated() =>
+      $pb.PbList<PipelineParameter_LocalCopy>();
   @$core.pragma('dart2js:noInline')
-  static PipelineParameter_LocalCopy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PipelineParameter_LocalCopy>(create);
+  static PipelineParameter_LocalCopy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PipelineParameter_LocalCopy>(create);
   static PipelineParameter_LocalCopy? _defaultInstance;
 
   /// Required. The path within the user's docker container where
@@ -1849,7 +2271,10 @@ class PipelineParameter_LocalCopy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get path => $_getSZ(0);
   @$pb.TagNumber(1)
-  set path($core.String v) { $_setString(0, v); }
+  set path($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
@@ -1862,7 +2287,10 @@ class PipelineParameter_LocalCopy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get disk => $_getSZ(1);
   @$pb.TagNumber(2)
-  set disk($core.String v) { $_setString(1, v); }
+  set disk($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisk() => $_has(1);
   @$pb.TagNumber(2)
@@ -1983,36 +2411,46 @@ class PipelineParameter extends $pb.GeneratedMessage {
     return $result;
   }
   PipelineParameter._() : super();
-  factory PipelineParameter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PipelineParameter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PipelineParameter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PipelineParameter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineParameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PipelineParameter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(5, _omitFieldNames ? '' : 'defaultValue')
-    ..aOM<PipelineParameter_LocalCopy>(6, _omitFieldNames ? '' : 'localCopy', subBuilder: PipelineParameter_LocalCopy.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<PipelineParameter_LocalCopy>(6, _omitFieldNames ? '' : 'localCopy',
+        subBuilder: PipelineParameter_LocalCopy.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PipelineParameter clone() => PipelineParameter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PipelineParameter copyWith(void Function(PipelineParameter) updates) => super.copyWith((message) => updates(message as PipelineParameter)) as PipelineParameter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PipelineParameter copyWith(void Function(PipelineParameter) updates) =>
+      super.copyWith((message) => updates(message as PipelineParameter))
+          as PipelineParameter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PipelineParameter create() => PipelineParameter._();
   PipelineParameter createEmptyInstance() => create();
-  static $pb.PbList<PipelineParameter> createRepeated() => $pb.PbList<PipelineParameter>();
+  static $pb.PbList<PipelineParameter> createRepeated() =>
+      $pb.PbList<PipelineParameter>();
   @$core.pragma('dart2js:noInline')
-  static PipelineParameter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PipelineParameter>(create);
+  static PipelineParameter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PipelineParameter>(create);
   static PipelineParameter? _defaultInstance;
 
   /// Required. Name of the parameter - the pipeline runner uses this string
@@ -2020,7 +2458,10 @@ class PipelineParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2030,7 +2471,10 @@ class PipelineParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -2042,7 +2486,10 @@ class PipelineParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get defaultValue => $_getSZ(2);
   @$pb.TagNumber(5)
-  set defaultValue($core.String v) { $_setString(2, v); }
+  set defaultValue($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDefaultValue() => $_has(2);
   @$pb.TagNumber(5)
@@ -2055,7 +2502,10 @@ class PipelineParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PipelineParameter_LocalCopy get localCopy => $_getN(3);
   @$pb.TagNumber(6)
-  set localCopy(PipelineParameter_LocalCopy v) { setField(6, v); }
+  set localCopy(PipelineParameter_LocalCopy v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLocalCopy() => $_has(3);
   @$pb.TagNumber(6)
@@ -2080,34 +2530,43 @@ class DockerExecutor extends $pb.GeneratedMessage {
     return $result;
   }
   DockerExecutor._() : super();
-  factory DockerExecutor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DockerExecutor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DockerExecutor.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DockerExecutor.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DockerExecutor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DockerExecutor',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'imageName')
     ..aOS(2, _omitFieldNames ? '' : 'cmd')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DockerExecutor clone() => DockerExecutor()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DockerExecutor copyWith(void Function(DockerExecutor) updates) => super.copyWith((message) => updates(message as DockerExecutor)) as DockerExecutor;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DockerExecutor copyWith(void Function(DockerExecutor) updates) =>
+      super.copyWith((message) => updates(message as DockerExecutor))
+          as DockerExecutor;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DockerExecutor create() => DockerExecutor._();
   DockerExecutor createEmptyInstance() => create();
-  static $pb.PbList<DockerExecutor> createRepeated() => $pb.PbList<DockerExecutor>();
+  static $pb.PbList<DockerExecutor> createRepeated() =>
+      $pb.PbList<DockerExecutor>();
   @$core.pragma('dart2js:noInline')
-  static DockerExecutor getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DockerExecutor>(create);
+  static DockerExecutor getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DockerExecutor>(create);
   static DockerExecutor? _defaultInstance;
 
   /// Required. Image name from either Docker Hub or Google Container Registry.
@@ -2115,7 +2574,10 @@ class DockerExecutor extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get imageName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set imageName($core.String v) { $_setString(0, v); }
+  set imageName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasImageName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2132,13 +2594,16 @@ class DockerExecutor extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get cmd => $_getSZ(1);
   @$pb.TagNumber(2)
-  set cmd($core.String v) { $_setString(1, v); }
+  set cmd($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCmd() => $_has(1);
   @$pb.TagNumber(2)
   void clearCmd() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

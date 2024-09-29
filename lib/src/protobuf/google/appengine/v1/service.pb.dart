@@ -52,28 +52,40 @@ class Service extends $pb.GeneratedMessage {
     return $result;
   }
   Service._() : super();
-  factory Service.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<TrafficSplit>(3, _omitFieldNames ? '' : 'split', subBuilder: TrafficSplit.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Service.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.appengine.v1'))
-    ..aOM<$377.NetworkSettings>(6, _omitFieldNames ? '' : 'networkSettings', subBuilder: $377.NetworkSettings.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<TrafficSplit>(3, _omitFieldNames ? '' : 'split',
+        subBuilder: TrafficSplit.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Service.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.appengine.v1'))
+    ..aOM<$377.NetworkSettings>(6, _omitFieldNames ? '' : 'networkSettings',
+        subBuilder: $377.NetworkSettings.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Service clone() => Service()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service copyWith(void Function(Service) updates) => super.copyWith((message) => updates(message as Service)) as Service;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service copyWith(void Function(Service) updates) =>
+      super.copyWith((message) => updates(message as Service)) as Service;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -82,7 +94,8 @@ class Service extends $pb.GeneratedMessage {
   Service createEmptyInstance() => create();
   static $pb.PbList<Service> createRepeated() => $pb.PbList<Service>();
   @$core.pragma('dart2js:noInline')
-  static Service getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
+  static Service getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
   static Service? _defaultInstance;
 
   ///  Full path to the Service resource in the API.
@@ -92,7 +105,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -105,7 +121,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -116,7 +135,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TrafficSplit get split => $_getN(2);
   @$pb.TagNumber(3)
-  set split(TrafficSplit v) { setField(3, v); }
+  set split(TrafficSplit v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSplit() => $_has(2);
   @$pb.TagNumber(3)
@@ -142,7 +164,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $377.NetworkSettings get networkSettings => $_getN(4);
   @$pb.TagNumber(6)
-  set networkSettings($377.NetworkSettings v) { setField(6, v); }
+  set networkSettings($377.NetworkSettings v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasNetworkSettings() => $_has(4);
   @$pb.TagNumber(6)
@@ -168,34 +193,51 @@ class TrafficSplit extends $pb.GeneratedMessage {
     return $result;
   }
   TrafficSplit._() : super();
-  factory TrafficSplit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TrafficSplit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TrafficSplit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TrafficSplit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrafficSplit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
-    ..e<TrafficSplit_ShardBy>(1, _omitFieldNames ? '' : 'shardBy', $pb.PbFieldType.OE, defaultOrMaker: TrafficSplit_ShardBy.UNSPECIFIED, valueOf: TrafficSplit_ShardBy.valueOf, enumValues: TrafficSplit_ShardBy.values)
-    ..m<$core.String, $core.double>(2, _omitFieldNames ? '' : 'allocations', entryClassName: 'TrafficSplit.AllocationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.appengine.v1'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TrafficSplit',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
+    ..e<TrafficSplit_ShardBy>(
+        1, _omitFieldNames ? '' : 'shardBy', $pb.PbFieldType.OE,
+        defaultOrMaker: TrafficSplit_ShardBy.UNSPECIFIED,
+        valueOf: TrafficSplit_ShardBy.valueOf,
+        enumValues: TrafficSplit_ShardBy.values)
+    ..m<$core.String, $core.double>(2, _omitFieldNames ? '' : 'allocations',
+        entryClassName: 'TrafficSplit.AllocationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OD,
+        packageName: const $pb.PackageName('google.appengine.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TrafficSplit clone() => TrafficSplit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TrafficSplit copyWith(void Function(TrafficSplit) updates) => super.copyWith((message) => updates(message as TrafficSplit)) as TrafficSplit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TrafficSplit copyWith(void Function(TrafficSplit) updates) =>
+      super.copyWith((message) => updates(message as TrafficSplit))
+          as TrafficSplit;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TrafficSplit create() => TrafficSplit._();
   TrafficSplit createEmptyInstance() => create();
-  static $pb.PbList<TrafficSplit> createRepeated() => $pb.PbList<TrafficSplit>();
+  static $pb.PbList<TrafficSplit> createRepeated() =>
+      $pb.PbList<TrafficSplit>();
   @$core.pragma('dart2js:noInline')
-  static TrafficSplit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TrafficSplit>(create);
+  static TrafficSplit getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TrafficSplit>(create);
   static TrafficSplit? _defaultInstance;
 
   /// Mechanism used to determine which version a request is sent to.
@@ -204,7 +246,10 @@ class TrafficSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TrafficSplit_ShardBy get shardBy => $_getN(0);
   @$pb.TagNumber(1)
-  set shardBy(TrafficSplit_ShardBy v) { setField(1, v); }
+  set shardBy(TrafficSplit_ShardBy v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasShardBy() => $_has(0);
   @$pb.TagNumber(1)
@@ -222,6 +267,6 @@ class TrafficSplit extends $pb.GeneratedMessage {
   $core.Map<$core.String, $core.double> get allocations => $_getMap(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

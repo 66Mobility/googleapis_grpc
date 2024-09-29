@@ -17,18 +17,122 @@ import 'dart:typed_data' as $typed_data;
 const CachedContent$json = {
   '1': 'CachedContent',
   '2': [
-    {'1': 'expire_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'expireTime'},
-    {'1': 'ttl', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '9': 0, '10': 'ttl'},
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'name', '17': true},
-    {'1': 'display_name', '3': 11, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'displayName', '17': true},
-    {'1': 'model', '3': 2, '4': 1, '5': 9, '8': {}, '9': 3, '10': 'model', '17': true},
-    {'1': 'system_instruction', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '9': 4, '10': 'systemInstruction', '17': true},
-    {'1': 'contents', '3': 4, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '10': 'contents'},
-    {'1': 'tools', '3': 5, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Tool', '8': {}, '10': 'tools'},
-    {'1': 'tool_config', '3': 6, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.ToolConfig', '8': {}, '9': 5, '10': 'toolConfig', '17': true},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'usage_metadata', '3': 12, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CachedContent.UsageMetadata', '8': {}, '10': 'usageMetadata'},
+    {
+      '1': 'expire_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'expireTime'
+    },
+    {
+      '1': 'ttl',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '9': 0,
+      '10': 'ttl'
+    },
+    {
+      '1': 'name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'name',
+      '17': true
+    },
+    {
+      '1': 'display_name',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'displayName',
+      '17': true
+    },
+    {
+      '1': 'model',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 3,
+      '10': 'model',
+      '17': true
+    },
+    {
+      '1': 'system_instruction',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '9': 4,
+      '10': 'systemInstruction',
+      '17': true
+    },
+    {
+      '1': 'contents',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '10': 'contents'
+    },
+    {
+      '1': 'tools',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Tool',
+      '8': {},
+      '10': 'tools'
+    },
+    {
+      '1': 'tool_config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.ToolConfig',
+      '8': {},
+      '9': 5,
+      '10': 'toolConfig',
+      '17': true
+    },
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'usage_metadata',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.CachedContent.UsageMetadata',
+      '8': {},
+      '10': 'usageMetadata'
+    },
   ],
   '3': [CachedContent_UsageMetadata$json],
   '7': {},
@@ -73,4 +177,3 @@ final $typed_data.Uint8List cachedContentDescriptor = $convert.base64Decode(
     'b20vQ2FjaGVkQ29udGVudBITY2FjaGVkQ29udGVudHMve2lkfSoOY2FjaGVkQ29udGVudHMyDW'
     'NhY2hlZENvbnRlbnRCDAoKZXhwaXJhdGlvbkIHCgVfbmFtZUIPCg1fZGlzcGxheV9uYW1lQggK'
     'Bl9tb2RlbEIVChNfc3lzdGVtX2luc3RydWN0aW9uQg4KDF90b29sX2NvbmZpZw==');
-

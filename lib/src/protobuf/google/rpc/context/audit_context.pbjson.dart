@@ -18,9 +18,29 @@ const AuditContext$json = {
   '1': 'AuditContext',
   '2': [
     {'1': 'audit_log', '3': 1, '4': 1, '5': 12, '10': 'auditLog'},
-    {'1': 'scrubbed_request', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'scrubbedRequest'},
-    {'1': 'scrubbed_response', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'scrubbedResponse'},
-    {'1': 'scrubbed_response_item_count', '3': 4, '4': 1, '5': 5, '10': 'scrubbedResponseItemCount'},
+    {
+      '1': 'scrubbed_request',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'scrubbedRequest'
+    },
+    {
+      '1': 'scrubbed_response',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'scrubbedResponse'
+    },
+    {
+      '1': 'scrubbed_response_item_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'scrubbedResponseItemCount'
+    },
     {'1': 'target_resource', '3': 5, '4': 1, '5': 9, '10': 'targetResource'},
   ],
 };
@@ -33,4 +53,3 @@ final $typed_data.Uint8List auditContextDescriptor = $convert.base64Decode(
     'NydWJiZWRSZXNwb25zZRI/ChxzY3J1YmJlZF9yZXNwb25zZV9pdGVtX2NvdW50GAQgASgFUhlz'
     'Y3J1YmJlZFJlc3BvbnNlSXRlbUNvdW50EicKD3RhcmdldF9yZXNvdXJjZRgFIAEoCVIOdGFyZ2'
     'V0UmVzb3VyY2U=');
-

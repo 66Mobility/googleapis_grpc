@@ -35,35 +35,45 @@ class ConditionalEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ConditionalEvent._() : super();
-  factory ConditionalEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConditionalEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConditionalEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConditionalEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConditionalEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConditionalEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'condition')
     ..aOS(2, _omitFieldNames ? '' : 'transitionToScene')
-    ..aOM<$277.EventHandler>(3, _omitFieldNames ? '' : 'handler', subBuilder: $277.EventHandler.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$277.EventHandler>(3, _omitFieldNames ? '' : 'handler',
+        subBuilder: $277.EventHandler.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ConditionalEvent clone() => ConditionalEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConditionalEvent copyWith(void Function(ConditionalEvent) updates) => super.copyWith((message) => updates(message as ConditionalEvent)) as ConditionalEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConditionalEvent copyWith(void Function(ConditionalEvent) updates) =>
+      super.copyWith((message) => updates(message as ConditionalEvent))
+          as ConditionalEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ConditionalEvent create() => ConditionalEvent._();
   ConditionalEvent createEmptyInstance() => create();
-  static $pb.PbList<ConditionalEvent> createRepeated() => $pb.PbList<ConditionalEvent>();
+  static $pb.PbList<ConditionalEvent> createRepeated() =>
+      $pb.PbList<ConditionalEvent>();
   @$core.pragma('dart2js:noInline')
-  static ConditionalEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConditionalEvent>(create);
+  static ConditionalEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConditionalEvent>(create);
   static ConditionalEvent? _defaultInstance;
 
   /// Required. Filter condition for this event to trigger. If condition is evaluated to
@@ -84,7 +94,10 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get condition => $_getSZ(0);
   @$pb.TagNumber(1)
-  set condition($core.String v) { $_setString(0, v); }
+  set condition($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCondition() => $_has(0);
   @$pb.TagNumber(1)
@@ -96,7 +109,10 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get transitionToScene => $_getSZ(1);
   @$pb.TagNumber(2)
-  set transitionToScene($core.String v) { $_setString(1, v); }
+  set transitionToScene($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTransitionToScene() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,7 +124,10 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $277.EventHandler get handler => $_getN(2);
   @$pb.TagNumber(3)
-  set handler($277.EventHandler v) { setField(3, v); }
+  set handler($277.EventHandler v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasHandler() => $_has(2);
   @$pb.TagNumber(3)
@@ -117,6 +136,6 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   $277.EventHandler ensureHandler() => $_ensure(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

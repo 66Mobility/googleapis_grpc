@@ -41,26 +41,37 @@ class ReplicaInfo extends $pb.GeneratedMessage {
     return $result;
   }
   ReplicaInfo._() : super();
-  factory ReplicaInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReplicaInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReplicaInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReplicaInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReplicaInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReplicaInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'location')
-    ..e<ReplicaInfo_ReplicaType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: ReplicaInfo_ReplicaType.TYPE_UNSPECIFIED, valueOf: ReplicaInfo_ReplicaType.valueOf, enumValues: ReplicaInfo_ReplicaType.values)
+    ..e<ReplicaInfo_ReplicaType>(
+        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: ReplicaInfo_ReplicaType.TYPE_UNSPECIFIED,
+        valueOf: ReplicaInfo_ReplicaType.valueOf,
+        enumValues: ReplicaInfo_ReplicaType.values)
     ..aOB(3, _omitFieldNames ? '' : 'defaultLeaderLocation')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReplicaInfo clone() => ReplicaInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReplicaInfo copyWith(void Function(ReplicaInfo) updates) => super.copyWith((message) => updates(message as ReplicaInfo)) as ReplicaInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReplicaInfo copyWith(void Function(ReplicaInfo) updates) =>
+      super.copyWith((message) => updates(message as ReplicaInfo))
+          as ReplicaInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -69,14 +80,18 @@ class ReplicaInfo extends $pb.GeneratedMessage {
   ReplicaInfo createEmptyInstance() => create();
   static $pb.PbList<ReplicaInfo> createRepeated() => $pb.PbList<ReplicaInfo>();
   @$core.pragma('dart2js:noInline')
-  static ReplicaInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReplicaInfo>(create);
+  static ReplicaInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReplicaInfo>(create);
   static ReplicaInfo? _defaultInstance;
 
   /// The location of the serving resources, e.g. "us-central1".
   @$pb.TagNumber(1)
   $core.String get location => $_getSZ(0);
   @$pb.TagNumber(1)
-  set location($core.String v) { $_setString(0, v); }
+  set location($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,7 +101,10 @@ class ReplicaInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ReplicaInfo_ReplicaType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(ReplicaInfo_ReplicaType v) { setField(2, v); }
+  set type(ReplicaInfo_ReplicaType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -99,7 +117,10 @@ class ReplicaInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get defaultLeaderLocation => $_getBF(2);
   @$pb.TagNumber(3)
-  set defaultLeaderLocation($core.bool v) { $_setBool(2, v); }
+  set defaultLeaderLocation($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDefaultLeaderLocation() => $_has(2);
   @$pb.TagNumber(3)
@@ -159,43 +180,67 @@ class InstanceConfig extends $pb.GeneratedMessage {
     return $result;
   }
   InstanceConfig._() : super();
-  factory InstanceConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InstanceConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InstanceConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InstanceConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InstanceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InstanceConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..pc<ReplicaInfo>(3, _omitFieldNames ? '' : 'replicas', $pb.PbFieldType.PM, subBuilder: ReplicaInfo.create)
+    ..pc<ReplicaInfo>(3, _omitFieldNames ? '' : 'replicas', $pb.PbFieldType.PM,
+        subBuilder: ReplicaInfo.create)
     ..pPS(4, _omitFieldNames ? '' : 'leaderOptions')
-    ..e<InstanceConfig_Type>(5, _omitFieldNames ? '' : 'configType', $pb.PbFieldType.OE, defaultOrMaker: InstanceConfig_Type.TYPE_UNSPECIFIED, valueOf: InstanceConfig_Type.valueOf, enumValues: InstanceConfig_Type.values)
-    ..pc<ReplicaInfo>(6, _omitFieldNames ? '' : 'optionalReplicas', $pb.PbFieldType.PM, subBuilder: ReplicaInfo.create)
+    ..e<InstanceConfig_Type>(
+        5, _omitFieldNames ? '' : 'configType', $pb.PbFieldType.OE,
+        defaultOrMaker: InstanceConfig_Type.TYPE_UNSPECIFIED,
+        valueOf: InstanceConfig_Type.valueOf,
+        enumValues: InstanceConfig_Type.values)
+    ..pc<ReplicaInfo>(
+        6, _omitFieldNames ? '' : 'optionalReplicas', $pb.PbFieldType.PM,
+        subBuilder: ReplicaInfo.create)
     ..aOS(7, _omitFieldNames ? '' : 'baseConfig')
-    ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'InstanceConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.spanner.admin.instance.v1'))
+    ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'InstanceConfig.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.spanner.admin.instance.v1'))
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..aOB(10, _omitFieldNames ? '' : 'reconciling')
-    ..e<InstanceConfig_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: InstanceConfig_State.STATE_UNSPECIFIED, valueOf: InstanceConfig_State.valueOf, enumValues: InstanceConfig_State.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<InstanceConfig_State>(
+        11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: InstanceConfig_State.STATE_UNSPECIFIED,
+        valueOf: InstanceConfig_State.valueOf,
+        enumValues: InstanceConfig_State.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   InstanceConfig clone() => InstanceConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InstanceConfig copyWith(void Function(InstanceConfig) updates) => super.copyWith((message) => updates(message as InstanceConfig)) as InstanceConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InstanceConfig copyWith(void Function(InstanceConfig) updates) =>
+      super.copyWith((message) => updates(message as InstanceConfig))
+          as InstanceConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InstanceConfig create() => InstanceConfig._();
   InstanceConfig createEmptyInstance() => create();
-  static $pb.PbList<InstanceConfig> createRepeated() => $pb.PbList<InstanceConfig>();
+  static $pb.PbList<InstanceConfig> createRepeated() =>
+      $pb.PbList<InstanceConfig>();
   @$core.pragma('dart2js:noInline')
-  static InstanceConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InstanceConfig>(create);
+  static InstanceConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InstanceConfig>(create);
   static InstanceConfig? _defaultInstance;
 
   ///  A unique identifier for the instance configuration.  Values
@@ -206,7 +251,10 @@ class InstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -216,7 +264,10 @@ class InstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -237,7 +288,10 @@ class InstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   InstanceConfig_Type get configType => $_getN(4);
   @$pb.TagNumber(5)
-  set configType(InstanceConfig_Type v) { setField(5, v); }
+  set configType(InstanceConfig_Type v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasConfigType() => $_has(4);
   @$pb.TagNumber(5)
@@ -255,7 +309,10 @@ class InstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get baseConfig => $_getSZ(6);
   @$pb.TagNumber(7)
-  set baseConfig($core.String v) { $_setString(6, v); }
+  set baseConfig($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasBaseConfig() => $_has(6);
   @$pb.TagNumber(7)
@@ -299,7 +356,10 @@ class InstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get etag => $_getSZ(8);
   @$pb.TagNumber(9)
-  set etag($core.String v) { $_setString(8, v); }
+  set etag($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasEtag() => $_has(8);
   @$pb.TagNumber(9)
@@ -311,7 +371,10 @@ class InstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool get reconciling => $_getBF(9);
   @$pb.TagNumber(10)
-  set reconciling($core.bool v) { $_setBool(9, v); }
+  set reconciling($core.bool v) {
+    $_setBool(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasReconciling() => $_has(9);
   @$pb.TagNumber(10)
@@ -322,7 +385,10 @@ class InstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   InstanceConfig_State get state => $_getN(10);
   @$pb.TagNumber(11)
-  set state(InstanceConfig_State v) { setField(11, v); }
+  set state(InstanceConfig_State v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasState() => $_has(10);
   @$pb.TagNumber(11)
@@ -330,14 +396,14 @@ class InstanceConfig extends $pb.GeneratedMessage {
 }
 
 enum AutoscalingConfig_AutoscalingLimits_MinLimit {
-  minNodes, 
-  minProcessingUnits, 
+  minNodes,
+  minProcessingUnits,
   notSet
 }
 
 enum AutoscalingConfig_AutoscalingLimits_MaxLimit {
-  maxNodes, 
-  maxProcessingUnits, 
+  maxNodes,
+  maxProcessingUnits,
   notSet
 }
 
@@ -369,54 +435,77 @@ class AutoscalingConfig_AutoscalingLimits extends $pb.GeneratedMessage {
     return $result;
   }
   AutoscalingConfig_AutoscalingLimits._() : super();
-  factory AutoscalingConfig_AutoscalingLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutoscalingConfig_AutoscalingLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutoscalingConfig_AutoscalingLimits.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutoscalingConfig_AutoscalingLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AutoscalingConfig_AutoscalingLimits_MinLimit> _AutoscalingConfig_AutoscalingLimits_MinLimitByTag = {
-    1 : AutoscalingConfig_AutoscalingLimits_MinLimit.minNodes,
-    2 : AutoscalingConfig_AutoscalingLimits_MinLimit.minProcessingUnits,
-    0 : AutoscalingConfig_AutoscalingLimits_MinLimit.notSet
+  static const $core
+      .Map<$core.int, AutoscalingConfig_AutoscalingLimits_MinLimit>
+      _AutoscalingConfig_AutoscalingLimits_MinLimitByTag = {
+    1: AutoscalingConfig_AutoscalingLimits_MinLimit.minNodes,
+    2: AutoscalingConfig_AutoscalingLimits_MinLimit.minProcessingUnits,
+    0: AutoscalingConfig_AutoscalingLimits_MinLimit.notSet
   };
-  static const $core.Map<$core.int, AutoscalingConfig_AutoscalingLimits_MaxLimit> _AutoscalingConfig_AutoscalingLimits_MaxLimitByTag = {
-    3 : AutoscalingConfig_AutoscalingLimits_MaxLimit.maxNodes,
-    4 : AutoscalingConfig_AutoscalingLimits_MaxLimit.maxProcessingUnits,
-    0 : AutoscalingConfig_AutoscalingLimits_MaxLimit.notSet
+  static const $core
+      .Map<$core.int, AutoscalingConfig_AutoscalingLimits_MaxLimit>
+      _AutoscalingConfig_AutoscalingLimits_MaxLimitByTag = {
+    3: AutoscalingConfig_AutoscalingLimits_MaxLimit.maxNodes,
+    4: AutoscalingConfig_AutoscalingLimits_MaxLimit.maxProcessingUnits,
+    0: AutoscalingConfig_AutoscalingLimits_MaxLimit.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutoscalingConfig.AutoscalingLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutoscalingConfig.AutoscalingLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..oo(1, [3, 4])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'minNodes', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'minProcessingUnits', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'minProcessingUnits', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'maxNodes', $pb.PbFieldType.O3)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'maxProcessingUnits', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'maxProcessingUnits', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutoscalingConfig_AutoscalingLimits clone() => AutoscalingConfig_AutoscalingLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutoscalingConfig_AutoscalingLimits copyWith(void Function(AutoscalingConfig_AutoscalingLimits) updates) => super.copyWith((message) => updates(message as AutoscalingConfig_AutoscalingLimits)) as AutoscalingConfig_AutoscalingLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AutoscalingLimits clone() =>
+      AutoscalingConfig_AutoscalingLimits()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AutoscalingLimits copyWith(
+          void Function(AutoscalingConfig_AutoscalingLimits) updates) =>
+      super.copyWith((message) =>
+              updates(message as AutoscalingConfig_AutoscalingLimits))
+          as AutoscalingConfig_AutoscalingLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutoscalingConfig_AutoscalingLimits create() => AutoscalingConfig_AutoscalingLimits._();
+  static AutoscalingConfig_AutoscalingLimits create() =>
+      AutoscalingConfig_AutoscalingLimits._();
   AutoscalingConfig_AutoscalingLimits createEmptyInstance() => create();
-  static $pb.PbList<AutoscalingConfig_AutoscalingLimits> createRepeated() => $pb.PbList<AutoscalingConfig_AutoscalingLimits>();
+  static $pb.PbList<AutoscalingConfig_AutoscalingLimits> createRepeated() =>
+      $pb.PbList<AutoscalingConfig_AutoscalingLimits>();
   @$core.pragma('dart2js:noInline')
-  static AutoscalingConfig_AutoscalingLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutoscalingConfig_AutoscalingLimits>(create);
+  static AutoscalingConfig_AutoscalingLimits getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutoscalingConfig_AutoscalingLimits>(create);
   static AutoscalingConfig_AutoscalingLimits? _defaultInstance;
 
-  AutoscalingConfig_AutoscalingLimits_MinLimit whichMinLimit() => _AutoscalingConfig_AutoscalingLimits_MinLimitByTag[$_whichOneof(0)]!;
+  AutoscalingConfig_AutoscalingLimits_MinLimit whichMinLimit() =>
+      _AutoscalingConfig_AutoscalingLimits_MinLimitByTag[$_whichOneof(0)]!;
   void clearMinLimit() => clearField($_whichOneof(0));
 
-  AutoscalingConfig_AutoscalingLimits_MaxLimit whichMaxLimit() => _AutoscalingConfig_AutoscalingLimits_MaxLimitByTag[$_whichOneof(1)]!;
+  AutoscalingConfig_AutoscalingLimits_MaxLimit whichMaxLimit() =>
+      _AutoscalingConfig_AutoscalingLimits_MaxLimitByTag[$_whichOneof(1)]!;
   void clearMaxLimit() => clearField($_whichOneof(1));
 
   /// Minimum number of nodes allocated to the instance. If set, this number
@@ -424,7 +513,10 @@ class AutoscalingConfig_AutoscalingLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get minNodes => $_getIZ(0);
   @$pb.TagNumber(1)
-  set minNodes($core.int v) { $_setSignedInt32(0, v); }
+  set minNodes($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinNodes() => $_has(0);
   @$pb.TagNumber(1)
@@ -435,7 +527,10 @@ class AutoscalingConfig_AutoscalingLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get minProcessingUnits => $_getIZ(1);
   @$pb.TagNumber(2)
-  set minProcessingUnits($core.int v) { $_setSignedInt32(1, v); }
+  set minProcessingUnits($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinProcessingUnits() => $_has(1);
   @$pb.TagNumber(2)
@@ -446,7 +541,10 @@ class AutoscalingConfig_AutoscalingLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxNodes => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxNodes($core.int v) { $_setSignedInt32(2, v); }
+  set maxNodes($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxNodes() => $_has(2);
   @$pb.TagNumber(3)
@@ -458,7 +556,10 @@ class AutoscalingConfig_AutoscalingLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxProcessingUnits => $_getIZ(3);
   @$pb.TagNumber(4)
-  set maxProcessingUnits($core.int v) { $_setSignedInt32(3, v); }
+  set maxProcessingUnits($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxProcessingUnits() => $_has(3);
   @$pb.TagNumber(4)
@@ -473,7 +574,8 @@ class AutoscalingConfig_AutoscalingTargets extends $pb.GeneratedMessage {
   }) {
     final $result = create();
     if (highPriorityCpuUtilizationPercent != null) {
-      $result.highPriorityCpuUtilizationPercent = highPriorityCpuUtilizationPercent;
+      $result.highPriorityCpuUtilizationPercent =
+          highPriorityCpuUtilizationPercent;
     }
     if (storageUtilizationPercent != null) {
       $result.storageUtilizationPercent = storageUtilizationPercent;
@@ -481,34 +583,53 @@ class AutoscalingConfig_AutoscalingTargets extends $pb.GeneratedMessage {
     return $result;
   }
   AutoscalingConfig_AutoscalingTargets._() : super();
-  factory AutoscalingConfig_AutoscalingTargets.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutoscalingConfig_AutoscalingTargets.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutoscalingConfig_AutoscalingTargets.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutoscalingConfig_AutoscalingTargets.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutoscalingConfig.AutoscalingTargets', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'highPriorityCpuUtilizationPercent', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'storageUtilizationPercent', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutoscalingConfig.AutoscalingTargets',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1,
+        _omitFieldNames ? '' : 'highPriorityCpuUtilizationPercent',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'storageUtilizationPercent',
+        $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutoscalingConfig_AutoscalingTargets clone() => AutoscalingConfig_AutoscalingTargets()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutoscalingConfig_AutoscalingTargets copyWith(void Function(AutoscalingConfig_AutoscalingTargets) updates) => super.copyWith((message) => updates(message as AutoscalingConfig_AutoscalingTargets)) as AutoscalingConfig_AutoscalingTargets;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AutoscalingTargets clone() =>
+      AutoscalingConfig_AutoscalingTargets()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AutoscalingTargets copyWith(
+          void Function(AutoscalingConfig_AutoscalingTargets) updates) =>
+      super.copyWith((message) =>
+              updates(message as AutoscalingConfig_AutoscalingTargets))
+          as AutoscalingConfig_AutoscalingTargets;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutoscalingConfig_AutoscalingTargets create() => AutoscalingConfig_AutoscalingTargets._();
+  static AutoscalingConfig_AutoscalingTargets create() =>
+      AutoscalingConfig_AutoscalingTargets._();
   AutoscalingConfig_AutoscalingTargets createEmptyInstance() => create();
-  static $pb.PbList<AutoscalingConfig_AutoscalingTargets> createRepeated() => $pb.PbList<AutoscalingConfig_AutoscalingTargets>();
+  static $pb.PbList<AutoscalingConfig_AutoscalingTargets> createRepeated() =>
+      $pb.PbList<AutoscalingConfig_AutoscalingTargets>();
   @$core.pragma('dart2js:noInline')
-  static AutoscalingConfig_AutoscalingTargets getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutoscalingConfig_AutoscalingTargets>(create);
+  static AutoscalingConfig_AutoscalingTargets getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutoscalingConfig_AutoscalingTargets>(create);
   static AutoscalingConfig_AutoscalingTargets? _defaultInstance;
 
   /// Required. The target high priority cpu utilization percentage that the
@@ -518,7 +639,10 @@ class AutoscalingConfig_AutoscalingTargets extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get highPriorityCpuUtilizationPercent => $_getIZ(0);
   @$pb.TagNumber(1)
-  set highPriorityCpuUtilizationPercent($core.int v) { $_setSignedInt32(0, v); }
+  set highPriorityCpuUtilizationPercent($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHighPriorityCpuUtilizationPercent() => $_has(0);
   @$pb.TagNumber(1)
@@ -531,7 +655,10 @@ class AutoscalingConfig_AutoscalingTargets extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get storageUtilizationPercent => $_getIZ(1);
   @$pb.TagNumber(2)
-  set storageUtilizationPercent($core.int v) { $_setSignedInt32(1, v); }
+  set storageUtilizationPercent($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStorageUtilizationPercent() => $_has(1);
   @$pb.TagNumber(2)
@@ -554,41 +681,57 @@ class AutoscalingConfig extends $pb.GeneratedMessage {
     return $result;
   }
   AutoscalingConfig._() : super();
-  factory AutoscalingConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutoscalingConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutoscalingConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutoscalingConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutoscalingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<AutoscalingConfig_AutoscalingLimits>(1, _omitFieldNames ? '' : 'autoscalingLimits', subBuilder: AutoscalingConfig_AutoscalingLimits.create)
-    ..aOM<AutoscalingConfig_AutoscalingTargets>(2, _omitFieldNames ? '' : 'autoscalingTargets', subBuilder: AutoscalingConfig_AutoscalingTargets.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutoscalingConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<AutoscalingConfig_AutoscalingLimits>(
+        1, _omitFieldNames ? '' : 'autoscalingLimits',
+        subBuilder: AutoscalingConfig_AutoscalingLimits.create)
+    ..aOM<AutoscalingConfig_AutoscalingTargets>(
+        2, _omitFieldNames ? '' : 'autoscalingTargets',
+        subBuilder: AutoscalingConfig_AutoscalingTargets.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AutoscalingConfig clone() => AutoscalingConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutoscalingConfig copyWith(void Function(AutoscalingConfig) updates) => super.copyWith((message) => updates(message as AutoscalingConfig)) as AutoscalingConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig copyWith(void Function(AutoscalingConfig) updates) =>
+      super.copyWith((message) => updates(message as AutoscalingConfig))
+          as AutoscalingConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AutoscalingConfig create() => AutoscalingConfig._();
   AutoscalingConfig createEmptyInstance() => create();
-  static $pb.PbList<AutoscalingConfig> createRepeated() => $pb.PbList<AutoscalingConfig>();
+  static $pb.PbList<AutoscalingConfig> createRepeated() =>
+      $pb.PbList<AutoscalingConfig>();
   @$core.pragma('dart2js:noInline')
-  static AutoscalingConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutoscalingConfig>(create);
+  static AutoscalingConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AutoscalingConfig>(create);
   static AutoscalingConfig? _defaultInstance;
 
   /// Required. Autoscaling limits for an instance.
   @$pb.TagNumber(1)
   AutoscalingConfig_AutoscalingLimits get autoscalingLimits => $_getN(0);
   @$pb.TagNumber(1)
-  set autoscalingLimits(AutoscalingConfig_AutoscalingLimits v) { setField(1, v); }
+  set autoscalingLimits(AutoscalingConfig_AutoscalingLimits v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAutoscalingLimits() => $_has(0);
   @$pb.TagNumber(1)
@@ -600,13 +743,17 @@ class AutoscalingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AutoscalingConfig_AutoscalingTargets get autoscalingTargets => $_getN(1);
   @$pb.TagNumber(2)
-  set autoscalingTargets(AutoscalingConfig_AutoscalingTargets v) { setField(2, v); }
+  set autoscalingTargets(AutoscalingConfig_AutoscalingTargets v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAutoscalingTargets() => $_has(1);
   @$pb.TagNumber(2)
   void clearAutoscalingTargets() => clearField(2);
   @$pb.TagNumber(2)
-  AutoscalingConfig_AutoscalingTargets ensureAutoscalingTargets() => $_ensure(1);
+  AutoscalingConfig_AutoscalingTargets ensureAutoscalingTargets() =>
+      $_ensure(1);
 }
 
 /// An isolated set of Cloud Spanner resources on which databases can be hosted.
@@ -665,35 +812,56 @@ class Instance extends $pb.GeneratedMessage {
     return $result;
   }
   Instance._() : super();
-  factory Instance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Instance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Instance.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Instance.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Instance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Instance',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'config')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
-    ..e<Instance_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Instance_State.STATE_UNSPECIFIED, valueOf: Instance_State.valueOf, enumValues: Instance_State.values)
-    ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'Instance.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.spanner.admin.instance.v1'))
+    ..e<Instance_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Instance_State.STATE_UNSPECIFIED,
+        valueOf: Instance_State.valueOf,
+        enumValues: Instance_State.values)
+    ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Instance.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.spanner.admin.instance.v1'))
     ..pPS(8, _omitFieldNames ? '' : 'endpointUris')
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<AutoscalingConfig>(17, _omitFieldNames ? '' : 'autoscalingConfig', subBuilder: AutoscalingConfig.create)
-    ..e<Instance_Edition>(20, _omitFieldNames ? '' : 'edition', $pb.PbFieldType.OE, defaultOrMaker: Instance_Edition.EDITION_UNSPECIFIED, valueOf: Instance_Edition.valueOf, enumValues: Instance_Edition.values)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        9, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
+    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<AutoscalingConfig>(17, _omitFieldNames ? '' : 'autoscalingConfig',
+        subBuilder: AutoscalingConfig.create)
+    ..e<Instance_Edition>(
+        20, _omitFieldNames ? '' : 'edition', $pb.PbFieldType.OE,
+        defaultOrMaker: Instance_Edition.EDITION_UNSPECIFIED,
+        valueOf: Instance_Edition.valueOf,
+        enumValues: Instance_Edition.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Instance copyWith(void Function(Instance) updates) => super.copyWith((message) => updates(message as Instance)) as Instance;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Instance copyWith(void Function(Instance) updates) =>
+      super.copyWith((message) => updates(message as Instance)) as Instance;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -702,7 +870,8 @@ class Instance extends $pb.GeneratedMessage {
   Instance createEmptyInstance() => create();
   static $pb.PbList<Instance> createRepeated() => $pb.PbList<Instance>();
   @$core.pragma('dart2js:noInline')
-  static Instance getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
+  static Instance getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
   static Instance? _defaultInstance;
 
   /// Required. A unique identifier for the instance, which cannot be changed
@@ -712,7 +881,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -725,7 +897,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get config => $_getSZ(1);
   @$pb.TagNumber(2)
-  set config($core.String v) { $_setString(1, v); }
+  set config($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -736,7 +911,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -757,7 +935,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get nodeCount => $_getIZ(3);
   @$pb.TagNumber(5)
-  set nodeCount($core.int v) { $_setSignedInt32(3, v); }
+  set nodeCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasNodeCount() => $_has(3);
   @$pb.TagNumber(5)
@@ -771,7 +952,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Instance_State get state => $_getN(4);
   @$pb.TagNumber(6)
-  set state(Instance_State v) { setField(6, v); }
+  set state(Instance_State v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(6)
@@ -820,7 +1004,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get processingUnits => $_getIZ(7);
   @$pb.TagNumber(9)
-  set processingUnits($core.int v) { $_setSignedInt32(7, v); }
+  set processingUnits($core.int v) {
+    $_setSignedInt32(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasProcessingUnits() => $_has(7);
   @$pb.TagNumber(9)
@@ -830,7 +1017,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $302.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(11)
-  set createTime($302.Timestamp v) { setField(11, v); }
+  set createTime($302.Timestamp v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(11)
@@ -842,7 +1032,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $302.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(12)
-  set updateTime($302.Timestamp v) { setField(12, v); }
+  set updateTime($302.Timestamp v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(12)
@@ -857,7 +1050,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   AutoscalingConfig get autoscalingConfig => $_getN(10);
   @$pb.TagNumber(17)
-  set autoscalingConfig(AutoscalingConfig v) { setField(17, v); }
+  set autoscalingConfig(AutoscalingConfig v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasAutoscalingConfig() => $_has(10);
   @$pb.TagNumber(17)
@@ -869,7 +1065,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   Instance_Edition get edition => $_getN(11);
   @$pb.TagNumber(20)
-  set edition(Instance_Edition v) { setField(20, v); }
+  set edition(Instance_Edition v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasEdition() => $_has(11);
   @$pb.TagNumber(20)
@@ -897,35 +1096,47 @@ class ListInstanceConfigsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstanceConfigsRequest._() : super();
-  factory ListInstanceConfigsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstanceConfigsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstanceConfigsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstanceConfigsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstanceConfigsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstanceConfigsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigsRequest clone() => ListInstanceConfigsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigsRequest copyWith(void Function(ListInstanceConfigsRequest) updates) => super.copyWith((message) => updates(message as ListInstanceConfigsRequest)) as ListInstanceConfigsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigsRequest clone() =>
+      ListInstanceConfigsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigsRequest copyWith(
+          void Function(ListInstanceConfigsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListInstanceConfigsRequest))
+          as ListInstanceConfigsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListInstanceConfigsRequest create() => ListInstanceConfigsRequest._();
   ListInstanceConfigsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListInstanceConfigsRequest> createRepeated() => $pb.PbList<ListInstanceConfigsRequest>();
+  static $pb.PbList<ListInstanceConfigsRequest> createRepeated() =>
+      $pb.PbList<ListInstanceConfigsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListInstanceConfigsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstanceConfigsRequest>(create);
+  static ListInstanceConfigsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListInstanceConfigsRequest>(create);
   static ListInstanceConfigsRequest? _defaultInstance;
 
   /// Required. The name of the project for which a list of supported instance
@@ -934,7 +1145,10 @@ class ListInstanceConfigsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -945,7 +1159,10 @@ class ListInstanceConfigsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -958,7 +1175,10 @@ class ListInstanceConfigsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -982,34 +1202,49 @@ class ListInstanceConfigsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstanceConfigsResponse._() : super();
-  factory ListInstanceConfigsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstanceConfigsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstanceConfigsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstanceConfigsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstanceConfigsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..pc<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfigs', $pb.PbFieldType.PM, subBuilder: InstanceConfig.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstanceConfigsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..pc<InstanceConfig>(
+        1, _omitFieldNames ? '' : 'instanceConfigs', $pb.PbFieldType.PM,
+        subBuilder: InstanceConfig.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigsResponse clone() => ListInstanceConfigsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigsResponse copyWith(void Function(ListInstanceConfigsResponse) updates) => super.copyWith((message) => updates(message as ListInstanceConfigsResponse)) as ListInstanceConfigsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigsResponse clone() =>
+      ListInstanceConfigsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigsResponse copyWith(
+          void Function(ListInstanceConfigsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListInstanceConfigsResponse))
+          as ListInstanceConfigsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListInstanceConfigsResponse create() => ListInstanceConfigsResponse._();
+  static ListInstanceConfigsResponse create() =>
+      ListInstanceConfigsResponse._();
   ListInstanceConfigsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListInstanceConfigsResponse> createRepeated() => $pb.PbList<ListInstanceConfigsResponse>();
+  static $pb.PbList<ListInstanceConfigsResponse> createRepeated() =>
+      $pb.PbList<ListInstanceConfigsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListInstanceConfigsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstanceConfigsResponse>(create);
+  static ListInstanceConfigsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListInstanceConfigsResponse>(create);
   static ListInstanceConfigsResponse? _defaultInstance;
 
   /// The list of requested instance configurations.
@@ -1022,7 +1257,10 @@ class ListInstanceConfigsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1042,33 +1280,44 @@ class GetInstanceConfigRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetInstanceConfigRequest._() : super();
-  factory GetInstanceConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetInstanceConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetInstanceConfigRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetInstanceConfigRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetInstanceConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetInstanceConfigRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetInstanceConfigRequest clone() => GetInstanceConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetInstanceConfigRequest copyWith(void Function(GetInstanceConfigRequest) updates) => super.copyWith((message) => updates(message as GetInstanceConfigRequest)) as GetInstanceConfigRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetInstanceConfigRequest clone() =>
+      GetInstanceConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetInstanceConfigRequest copyWith(
+          void Function(GetInstanceConfigRequest) updates) =>
+      super.copyWith((message) => updates(message as GetInstanceConfigRequest))
+          as GetInstanceConfigRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetInstanceConfigRequest create() => GetInstanceConfigRequest._();
   GetInstanceConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<GetInstanceConfigRequest> createRepeated() => $pb.PbList<GetInstanceConfigRequest>();
+  static $pb.PbList<GetInstanceConfigRequest> createRepeated() =>
+      $pb.PbList<GetInstanceConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetInstanceConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetInstanceConfigRequest>(create);
+  static GetInstanceConfigRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetInstanceConfigRequest>(create);
   static GetInstanceConfigRequest? _defaultInstance;
 
   /// Required. The name of the requested instance configuration. Values are of
@@ -1076,7 +1325,10 @@ class GetInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1108,36 +1360,50 @@ class CreateInstanceConfigRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateInstanceConfigRequest._() : super();
-  factory CreateInstanceConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateInstanceConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateInstanceConfigRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateInstanceConfigRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstanceConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateInstanceConfigRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'instanceConfigId')
-    ..aOM<InstanceConfig>(3, _omitFieldNames ? '' : 'instanceConfig', subBuilder: InstanceConfig.create)
+    ..aOM<InstanceConfig>(3, _omitFieldNames ? '' : 'instanceConfig',
+        subBuilder: InstanceConfig.create)
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateInstanceConfigRequest clone() => CreateInstanceConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateInstanceConfigRequest copyWith(void Function(CreateInstanceConfigRequest) updates) => super.copyWith((message) => updates(message as CreateInstanceConfigRequest)) as CreateInstanceConfigRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateInstanceConfigRequest clone() =>
+      CreateInstanceConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateInstanceConfigRequest copyWith(
+          void Function(CreateInstanceConfigRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateInstanceConfigRequest))
+          as CreateInstanceConfigRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateInstanceConfigRequest create() => CreateInstanceConfigRequest._();
+  static CreateInstanceConfigRequest create() =>
+      CreateInstanceConfigRequest._();
   CreateInstanceConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateInstanceConfigRequest> createRepeated() => $pb.PbList<CreateInstanceConfigRequest>();
+  static $pb.PbList<CreateInstanceConfigRequest> createRepeated() =>
+      $pb.PbList<CreateInstanceConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateInstanceConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateInstanceConfigRequest>(create);
+  static CreateInstanceConfigRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateInstanceConfigRequest>(create);
   static CreateInstanceConfigRequest? _defaultInstance;
 
   /// Required. The name of the project in which to create the instance
@@ -1145,7 +1411,10 @@ class CreateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1158,7 +1427,10 @@ class CreateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get instanceConfigId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set instanceConfigId($core.String v) { $_setString(1, v); }
+  set instanceConfigId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInstanceConfigId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1172,7 +1444,10 @@ class CreateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   InstanceConfig get instanceConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set instanceConfig(InstanceConfig v) { setField(3, v); }
+  set instanceConfig(InstanceConfig v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasInstanceConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -1185,7 +1460,10 @@ class CreateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get validateOnly => $_getBF(3);
   @$pb.TagNumber(4)
-  set validateOnly($core.bool v) { $_setBool(3, v); }
+  set validateOnly($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasValidateOnly() => $_has(3);
   @$pb.TagNumber(4)
@@ -1213,35 +1491,50 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateInstanceConfigRequest._() : super();
-  factory UpdateInstanceConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateInstanceConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateInstanceConfigRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateInstanceConfigRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig', subBuilder: InstanceConfig.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateInstanceConfigRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
+        subBuilder: InstanceConfig.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceConfigRequest clone() => UpdateInstanceConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceConfigRequest copyWith(void Function(UpdateInstanceConfigRequest) updates) => super.copyWith((message) => updates(message as UpdateInstanceConfigRequest)) as UpdateInstanceConfigRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceConfigRequest clone() =>
+      UpdateInstanceConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceConfigRequest copyWith(
+          void Function(UpdateInstanceConfigRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateInstanceConfigRequest))
+          as UpdateInstanceConfigRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateInstanceConfigRequest create() => UpdateInstanceConfigRequest._();
+  static UpdateInstanceConfigRequest create() =>
+      UpdateInstanceConfigRequest._();
   UpdateInstanceConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateInstanceConfigRequest> createRepeated() => $pb.PbList<UpdateInstanceConfigRequest>();
+  static $pb.PbList<UpdateInstanceConfigRequest> createRepeated() =>
+      $pb.PbList<UpdateInstanceConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateInstanceConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateInstanceConfigRequest>(create);
+  static UpdateInstanceConfigRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateInstanceConfigRequest>(create);
   static UpdateInstanceConfigRequest? _defaultInstance;
 
   /// Required. The user instance configuration to update, which must always
@@ -1254,7 +1547,10 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   InstanceConfig get instanceConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set instanceConfig(InstanceConfig v) { setField(1, v); }
+  set instanceConfig(InstanceConfig v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstanceConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -1271,7 +1567,10 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -1284,7 +1583,10 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get validateOnly => $_getBF(2);
   @$pb.TagNumber(3)
-  set validateOnly($core.bool v) { $_setBool(2, v); }
+  set validateOnly($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValidateOnly() => $_has(2);
   @$pb.TagNumber(3)
@@ -1312,35 +1614,48 @@ class DeleteInstanceConfigRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteInstanceConfigRequest._() : super();
-  factory DeleteInstanceConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteInstanceConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteInstanceConfigRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteInstanceConfigRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteInstanceConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteInstanceConfigRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'etag')
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteInstanceConfigRequest clone() => DeleteInstanceConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteInstanceConfigRequest copyWith(void Function(DeleteInstanceConfigRequest) updates) => super.copyWith((message) => updates(message as DeleteInstanceConfigRequest)) as DeleteInstanceConfigRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteInstanceConfigRequest clone() =>
+      DeleteInstanceConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteInstanceConfigRequest copyWith(
+          void Function(DeleteInstanceConfigRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as DeleteInstanceConfigRequest))
+          as DeleteInstanceConfigRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteInstanceConfigRequest create() => DeleteInstanceConfigRequest._();
+  static DeleteInstanceConfigRequest create() =>
+      DeleteInstanceConfigRequest._();
   DeleteInstanceConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteInstanceConfigRequest> createRepeated() => $pb.PbList<DeleteInstanceConfigRequest>();
+  static $pb.PbList<DeleteInstanceConfigRequest> createRepeated() =>
+      $pb.PbList<DeleteInstanceConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteInstanceConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteInstanceConfigRequest>(create);
+  static DeleteInstanceConfigRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteInstanceConfigRequest>(create);
   static DeleteInstanceConfigRequest? _defaultInstance;
 
   /// Required. The name of the instance configuration to be deleted.
@@ -1349,7 +1664,10 @@ class DeleteInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1365,7 +1683,10 @@ class DeleteInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get etag => $_getSZ(1);
   @$pb.TagNumber(2)
-  set etag($core.String v) { $_setString(1, v); }
+  set etag($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEtag() => $_has(1);
   @$pb.TagNumber(2)
@@ -1376,7 +1697,10 @@ class DeleteInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get validateOnly => $_getBF(2);
   @$pb.TagNumber(3)
-  set validateOnly($core.bool v) { $_setBool(2, v); }
+  set validateOnly($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValidateOnly() => $_has(2);
   @$pb.TagNumber(3)
@@ -1408,36 +1732,51 @@ class ListInstanceConfigOperationsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstanceConfigOperationsRequest._() : super();
-  factory ListInstanceConfigOperationsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstanceConfigOperationsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstanceConfigOperationsRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstanceConfigOperationsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstanceConfigOperationsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstanceConfigOperationsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigOperationsRequest clone() => ListInstanceConfigOperationsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigOperationsRequest copyWith(void Function(ListInstanceConfigOperationsRequest) updates) => super.copyWith((message) => updates(message as ListInstanceConfigOperationsRequest)) as ListInstanceConfigOperationsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigOperationsRequest clone() =>
+      ListInstanceConfigOperationsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigOperationsRequest copyWith(
+          void Function(ListInstanceConfigOperationsRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListInstanceConfigOperationsRequest))
+          as ListInstanceConfigOperationsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListInstanceConfigOperationsRequest create() => ListInstanceConfigOperationsRequest._();
+  static ListInstanceConfigOperationsRequest create() =>
+      ListInstanceConfigOperationsRequest._();
   ListInstanceConfigOperationsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListInstanceConfigOperationsRequest> createRepeated() => $pb.PbList<ListInstanceConfigOperationsRequest>();
+  static $pb.PbList<ListInstanceConfigOperationsRequest> createRepeated() =>
+      $pb.PbList<ListInstanceConfigOperationsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListInstanceConfigOperationsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstanceConfigOperationsRequest>(create);
+  static ListInstanceConfigOperationsRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListInstanceConfigOperationsRequest>(create);
   static ListInstanceConfigOperationsRequest? _defaultInstance;
 
   /// Required. The project of the instance configuration operations.
@@ -1445,7 +1784,10 @@ class ListInstanceConfigOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1497,7 +1839,10 @@ class ListInstanceConfigOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -1508,7 +1853,10 @@ class ListInstanceConfigOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1522,7 +1870,10 @@ class ListInstanceConfigOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -1546,34 +1897,51 @@ class ListInstanceConfigOperationsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstanceConfigOperationsResponse._() : super();
-  factory ListInstanceConfigOperationsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstanceConfigOperationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstanceConfigOperationsResponse.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstanceConfigOperationsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstanceConfigOperationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..pc<$13.Operation>(1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: $13.Operation.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstanceConfigOperationsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..pc<$13.Operation>(
+        1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM,
+        subBuilder: $13.Operation.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigOperationsResponse clone() => ListInstanceConfigOperationsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstanceConfigOperationsResponse copyWith(void Function(ListInstanceConfigOperationsResponse) updates) => super.copyWith((message) => updates(message as ListInstanceConfigOperationsResponse)) as ListInstanceConfigOperationsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigOperationsResponse clone() =>
+      ListInstanceConfigOperationsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstanceConfigOperationsResponse copyWith(
+          void Function(ListInstanceConfigOperationsResponse) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListInstanceConfigOperationsResponse))
+          as ListInstanceConfigOperationsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListInstanceConfigOperationsResponse create() => ListInstanceConfigOperationsResponse._();
+  static ListInstanceConfigOperationsResponse create() =>
+      ListInstanceConfigOperationsResponse._();
   ListInstanceConfigOperationsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListInstanceConfigOperationsResponse> createRepeated() => $pb.PbList<ListInstanceConfigOperationsResponse>();
+  static $pb.PbList<ListInstanceConfigOperationsResponse> createRepeated() =>
+      $pb.PbList<ListInstanceConfigOperationsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListInstanceConfigOperationsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstanceConfigOperationsResponse>(create);
+  static ListInstanceConfigOperationsResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListInstanceConfigOperationsResponse>(create);
   static ListInstanceConfigOperationsResponse? _defaultInstance;
 
   /// The list of matching instance configuration [long-running
@@ -1590,7 +1958,10 @@ class ListInstanceConfigOperationsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1614,34 +1985,44 @@ class GetInstanceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetInstanceRequest._() : super();
-  factory GetInstanceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetInstanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetInstanceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetInstanceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetInstanceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetInstanceRequest clone() => GetInstanceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetInstanceRequest copyWith(void Function(GetInstanceRequest) updates) => super.copyWith((message) => updates(message as GetInstanceRequest)) as GetInstanceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetInstanceRequest copyWith(void Function(GetInstanceRequest) updates) =>
+      super.copyWith((message) => updates(message as GetInstanceRequest))
+          as GetInstanceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetInstanceRequest create() => GetInstanceRequest._();
   GetInstanceRequest createEmptyInstance() => create();
-  static $pb.PbList<GetInstanceRequest> createRepeated() => $pb.PbList<GetInstanceRequest>();
+  static $pb.PbList<GetInstanceRequest> createRepeated() =>
+      $pb.PbList<GetInstanceRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetInstanceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetInstanceRequest>(create);
+  static GetInstanceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetInstanceRequest>(create);
   static GetInstanceRequest? _defaultInstance;
 
   /// Required. The name of the requested instance. Values are of the form
@@ -1649,7 +2030,10 @@ class GetInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1662,7 +2046,10 @@ class GetInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($333.FieldMask v) { setField(2, v); }
+  set fieldMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -1692,35 +2079,47 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateInstanceRequest._() : super();
-  factory CreateInstanceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateInstanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateInstanceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateInstanceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateInstanceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
-    ..aOM<Instance>(3, _omitFieldNames ? '' : 'instance', subBuilder: Instance.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Instance>(3, _omitFieldNames ? '' : 'instance',
+        subBuilder: Instance.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateInstanceRequest clone() => CreateInstanceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateInstanceRequest copyWith(void Function(CreateInstanceRequest) updates) => super.copyWith((message) => updates(message as CreateInstanceRequest)) as CreateInstanceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateInstanceRequest clone() =>
+      CreateInstanceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateInstanceRequest copyWith(
+          void Function(CreateInstanceRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateInstanceRequest))
+          as CreateInstanceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateInstanceRequest create() => CreateInstanceRequest._();
   CreateInstanceRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateInstanceRequest> createRepeated() => $pb.PbList<CreateInstanceRequest>();
+  static $pb.PbList<CreateInstanceRequest> createRepeated() =>
+      $pb.PbList<CreateInstanceRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateInstanceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateInstanceRequest>(create);
+  static CreateInstanceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateInstanceRequest>(create);
   static CreateInstanceRequest? _defaultInstance;
 
   /// Required. The name of the project in which to create the instance. Values
@@ -1728,7 +2127,10 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1740,7 +2142,10 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get instanceId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set instanceId($core.String v) { $_setString(1, v); }
+  set instanceId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInstanceId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1751,7 +2156,10 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Instance get instance => $_getN(2);
   @$pb.TagNumber(3)
-  set instance(Instance v) { setField(3, v); }
+  set instance(Instance v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasInstance() => $_has(2);
   @$pb.TagNumber(3)
@@ -1789,37 +2197,48 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstancesRequest._() : super();
-  factory ListInstancesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstancesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstancesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstancesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstancesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstancesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'instanceDeadline', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'instanceDeadline',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstancesRequest clone() => ListInstancesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstancesRequest copyWith(void Function(ListInstancesRequest) updates) => super.copyWith((message) => updates(message as ListInstancesRequest)) as ListInstancesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstancesRequest clone() =>
+      ListInstancesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstancesRequest copyWith(void Function(ListInstancesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListInstancesRequest))
+          as ListInstancesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListInstancesRequest create() => ListInstancesRequest._();
   ListInstancesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListInstancesRequest> createRepeated() => $pb.PbList<ListInstancesRequest>();
+  static $pb.PbList<ListInstancesRequest> createRepeated() =>
+      $pb.PbList<ListInstancesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListInstancesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstancesRequest>(create);
+  static ListInstancesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListInstancesRequest>(create);
   static ListInstancesRequest? _defaultInstance;
 
   /// Required. The name of the project for which a list of instances is
@@ -1827,7 +2246,10 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1838,7 +2260,10 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -1851,7 +2276,10 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -1879,7 +2307,10 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(4)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -1894,7 +2325,10 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get instanceDeadline => $_getN(4);
   @$pb.TagNumber(5)
-  set instanceDeadline($302.Timestamp v) { setField(5, v); }
+  set instanceDeadline($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasInstanceDeadline() => $_has(4);
   @$pb.TagNumber(5)
@@ -1924,35 +2358,47 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstancesResponse._() : super();
-  factory ListInstancesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstancesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstancesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstancesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstancesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..pc<Instance>(1, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: Instance.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstancesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..pc<Instance>(1, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
+        subBuilder: Instance.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'unreachable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstancesResponse clone() => ListInstancesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstancesResponse copyWith(void Function(ListInstancesResponse) updates) => super.copyWith((message) => updates(message as ListInstancesResponse)) as ListInstancesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstancesResponse clone() =>
+      ListInstancesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstancesResponse copyWith(
+          void Function(ListInstancesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListInstancesResponse))
+          as ListInstancesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListInstancesResponse create() => ListInstancesResponse._();
   ListInstancesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListInstancesResponse> createRepeated() => $pb.PbList<ListInstancesResponse>();
+  static $pb.PbList<ListInstancesResponse> createRepeated() =>
+      $pb.PbList<ListInstancesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListInstancesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstancesResponse>(create);
+  static ListInstancesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListInstancesResponse>(create);
   static ListInstancesResponse? _defaultInstance;
 
   /// The list of requested instances.
@@ -1965,7 +2411,10 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1996,34 +2445,47 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateInstanceRequest._() : super();
-  factory UpdateInstanceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateInstanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateInstanceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateInstanceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance', subBuilder: Instance.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateInstanceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance',
+        subBuilder: Instance.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceRequest clone() => UpdateInstanceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceRequest copyWith(void Function(UpdateInstanceRequest) updates) => super.copyWith((message) => updates(message as UpdateInstanceRequest)) as UpdateInstanceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceRequest clone() =>
+      UpdateInstanceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceRequest copyWith(
+          void Function(UpdateInstanceRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateInstanceRequest))
+          as UpdateInstanceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateInstanceRequest create() => UpdateInstanceRequest._();
   UpdateInstanceRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateInstanceRequest> createRepeated() => $pb.PbList<UpdateInstanceRequest>();
+  static $pb.PbList<UpdateInstanceRequest> createRepeated() =>
+      $pb.PbList<UpdateInstanceRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateInstanceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateInstanceRequest>(create);
+  static UpdateInstanceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateInstanceRequest>(create);
   static UpdateInstanceRequest? _defaultInstance;
 
   /// Required. The instance to update, which must always include the instance
@@ -2033,7 +2495,10 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Instance get instance => $_getN(0);
   @$pb.TagNumber(1)
-  set instance(Instance v) { setField(1, v); }
+  set instance(Instance v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstance() => $_has(0);
   @$pb.TagNumber(1)
@@ -2049,7 +2514,10 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($333.FieldMask v) { setField(2, v); }
+  set fieldMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -2071,33 +2539,44 @@ class DeleteInstanceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteInstanceRequest._() : super();
-  factory DeleteInstanceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteInstanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteInstanceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteInstanceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteInstanceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteInstanceRequest clone() => DeleteInstanceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteInstanceRequest copyWith(void Function(DeleteInstanceRequest) updates) => super.copyWith((message) => updates(message as DeleteInstanceRequest)) as DeleteInstanceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteInstanceRequest clone() =>
+      DeleteInstanceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteInstanceRequest copyWith(
+          void Function(DeleteInstanceRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteInstanceRequest))
+          as DeleteInstanceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteInstanceRequest create() => DeleteInstanceRequest._();
   DeleteInstanceRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteInstanceRequest> createRepeated() => $pb.PbList<DeleteInstanceRequest>();
+  static $pb.PbList<DeleteInstanceRequest> createRepeated() =>
+      $pb.PbList<DeleteInstanceRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteInstanceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteInstanceRequest>(create);
+  static DeleteInstanceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteInstanceRequest>(create);
   static DeleteInstanceRequest? _defaultInstance;
 
   /// Required. The name of the instance to be deleted. Values are of the form
@@ -2105,7 +2584,10 @@ class DeleteInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2141,44 +2623,66 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CreateInstanceMetadata._() : super();
-  factory CreateInstanceMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateInstanceMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateInstanceMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateInstanceMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstanceMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance', subBuilder: Instance.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..e<$550.FulfillmentPeriod>(5, _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE, defaultOrMaker: $550.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED, valueOf: $550.FulfillmentPeriod.valueOf, enumValues: $550.FulfillmentPeriod.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateInstanceMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance',
+        subBuilder: Instance.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<$550.FulfillmentPeriod>(5,
+        _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE,
+        defaultOrMaker: $550.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
+        valueOf: $550.FulfillmentPeriod.valueOf,
+        enumValues: $550.FulfillmentPeriod.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateInstanceMetadata clone() => CreateInstanceMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateInstanceMetadata copyWith(void Function(CreateInstanceMetadata) updates) => super.copyWith((message) => updates(message as CreateInstanceMetadata)) as CreateInstanceMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateInstanceMetadata clone() =>
+      CreateInstanceMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateInstanceMetadata copyWith(
+          void Function(CreateInstanceMetadata) updates) =>
+      super.copyWith((message) => updates(message as CreateInstanceMetadata))
+          as CreateInstanceMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateInstanceMetadata create() => CreateInstanceMetadata._();
   CreateInstanceMetadata createEmptyInstance() => create();
-  static $pb.PbList<CreateInstanceMetadata> createRepeated() => $pb.PbList<CreateInstanceMetadata>();
+  static $pb.PbList<CreateInstanceMetadata> createRepeated() =>
+      $pb.PbList<CreateInstanceMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CreateInstanceMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateInstanceMetadata>(create);
+  static CreateInstanceMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateInstanceMetadata>(create);
   static CreateInstanceMetadata? _defaultInstance;
 
   /// The instance being created.
   @$pb.TagNumber(1)
   Instance get instance => $_getN(0);
   @$pb.TagNumber(1)
-  set instance(Instance v) { setField(1, v); }
+  set instance(Instance v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstance() => $_has(0);
   @$pb.TagNumber(1)
@@ -2192,7 +2696,10 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -2206,7 +2713,10 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -2218,7 +2728,10 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) { setField(4, v); }
+  set endTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -2230,7 +2743,10 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $550.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($550.FulfillmentPeriod v) { setField(5, v); }
+  set expectedFulfillmentPeriod($550.FulfillmentPeriod v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasExpectedFulfillmentPeriod() => $_has(4);
   @$pb.TagNumber(5)
@@ -2266,44 +2782,66 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateInstanceMetadata._() : super();
-  factory UpdateInstanceMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateInstanceMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateInstanceMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateInstanceMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance', subBuilder: Instance.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..e<$550.FulfillmentPeriod>(5, _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE, defaultOrMaker: $550.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED, valueOf: $550.FulfillmentPeriod.valueOf, enumValues: $550.FulfillmentPeriod.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateInstanceMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance',
+        subBuilder: Instance.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<$550.FulfillmentPeriod>(5,
+        _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE,
+        defaultOrMaker: $550.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
+        valueOf: $550.FulfillmentPeriod.valueOf,
+        enumValues: $550.FulfillmentPeriod.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceMetadata clone() => UpdateInstanceMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceMetadata copyWith(void Function(UpdateInstanceMetadata) updates) => super.copyWith((message) => updates(message as UpdateInstanceMetadata)) as UpdateInstanceMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceMetadata clone() =>
+      UpdateInstanceMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceMetadata copyWith(
+          void Function(UpdateInstanceMetadata) updates) =>
+      super.copyWith((message) => updates(message as UpdateInstanceMetadata))
+          as UpdateInstanceMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateInstanceMetadata create() => UpdateInstanceMetadata._();
   UpdateInstanceMetadata createEmptyInstance() => create();
-  static $pb.PbList<UpdateInstanceMetadata> createRepeated() => $pb.PbList<UpdateInstanceMetadata>();
+  static $pb.PbList<UpdateInstanceMetadata> createRepeated() =>
+      $pb.PbList<UpdateInstanceMetadata>();
   @$core.pragma('dart2js:noInline')
-  static UpdateInstanceMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateInstanceMetadata>(create);
+  static UpdateInstanceMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateInstanceMetadata>(create);
   static UpdateInstanceMetadata? _defaultInstance;
 
   /// The desired end state of the update.
   @$pb.TagNumber(1)
   Instance get instance => $_getN(0);
   @$pb.TagNumber(1)
-  set instance(Instance v) { setField(1, v); }
+  set instance(Instance v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstance() => $_has(0);
   @$pb.TagNumber(1)
@@ -2317,7 +2855,10 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -2331,7 +2872,10 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -2343,7 +2887,10 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) { setField(4, v); }
+  set endTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -2355,7 +2902,10 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $550.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($550.FulfillmentPeriod v) { setField(5, v); }
+  set expectedFulfillmentPeriod($550.FulfillmentPeriod v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasExpectedFulfillmentPeriod() => $_has(4);
   @$pb.TagNumber(5)
@@ -2383,42 +2933,61 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CreateInstanceConfigMetadata._() : super();
-  factory CreateInstanceConfigMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateInstanceConfigMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateInstanceConfigMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateInstanceConfigMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstanceConfigMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig', subBuilder: InstanceConfig.create)
-    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $550.OperationProgress.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateInstanceConfigMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
+        subBuilder: InstanceConfig.create)
+    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $550.OperationProgress.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateInstanceConfigMetadata clone() => CreateInstanceConfigMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateInstanceConfigMetadata copyWith(void Function(CreateInstanceConfigMetadata) updates) => super.copyWith((message) => updates(message as CreateInstanceConfigMetadata)) as CreateInstanceConfigMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateInstanceConfigMetadata clone() =>
+      CreateInstanceConfigMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateInstanceConfigMetadata copyWith(
+          void Function(CreateInstanceConfigMetadata) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateInstanceConfigMetadata))
+          as CreateInstanceConfigMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateInstanceConfigMetadata create() => CreateInstanceConfigMetadata._();
+  static CreateInstanceConfigMetadata create() =>
+      CreateInstanceConfigMetadata._();
   CreateInstanceConfigMetadata createEmptyInstance() => create();
-  static $pb.PbList<CreateInstanceConfigMetadata> createRepeated() => $pb.PbList<CreateInstanceConfigMetadata>();
+  static $pb.PbList<CreateInstanceConfigMetadata> createRepeated() =>
+      $pb.PbList<CreateInstanceConfigMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CreateInstanceConfigMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateInstanceConfigMetadata>(create);
+  static CreateInstanceConfigMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateInstanceConfigMetadata>(create);
   static CreateInstanceConfigMetadata? _defaultInstance;
 
   /// The target instance configuration end state.
   @$pb.TagNumber(1)
   InstanceConfig get instanceConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set instanceConfig(InstanceConfig v) { setField(1, v); }
+  set instanceConfig(InstanceConfig v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstanceConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -2432,7 +3001,10 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $550.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($550.OperationProgress v) { setField(2, v); }
+  set progress($550.OperationProgress v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
@@ -2444,7 +3016,10 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -2474,42 +3049,61 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateInstanceConfigMetadata._() : super();
-  factory UpdateInstanceConfigMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateInstanceConfigMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateInstanceConfigMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateInstanceConfigMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceConfigMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig', subBuilder: InstanceConfig.create)
-    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $550.OperationProgress.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateInstanceConfigMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
+        subBuilder: InstanceConfig.create)
+    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $550.OperationProgress.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceConfigMetadata clone() => UpdateInstanceConfigMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateInstanceConfigMetadata copyWith(void Function(UpdateInstanceConfigMetadata) updates) => super.copyWith((message) => updates(message as UpdateInstanceConfigMetadata)) as UpdateInstanceConfigMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceConfigMetadata clone() =>
+      UpdateInstanceConfigMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateInstanceConfigMetadata copyWith(
+          void Function(UpdateInstanceConfigMetadata) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateInstanceConfigMetadata))
+          as UpdateInstanceConfigMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateInstanceConfigMetadata create() => UpdateInstanceConfigMetadata._();
+  static UpdateInstanceConfigMetadata create() =>
+      UpdateInstanceConfigMetadata._();
   UpdateInstanceConfigMetadata createEmptyInstance() => create();
-  static $pb.PbList<UpdateInstanceConfigMetadata> createRepeated() => $pb.PbList<UpdateInstanceConfigMetadata>();
+  static $pb.PbList<UpdateInstanceConfigMetadata> createRepeated() =>
+      $pb.PbList<UpdateInstanceConfigMetadata>();
   @$core.pragma('dart2js:noInline')
-  static UpdateInstanceConfigMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateInstanceConfigMetadata>(create);
+  static UpdateInstanceConfigMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateInstanceConfigMetadata>(create);
   static UpdateInstanceConfigMetadata? _defaultInstance;
 
   /// The desired instance configuration after updating.
   @$pb.TagNumber(1)
   InstanceConfig get instanceConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set instanceConfig(InstanceConfig v) { setField(1, v); }
+  set instanceConfig(InstanceConfig v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstanceConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -2523,7 +3117,10 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $550.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($550.OperationProgress v) { setField(2, v); }
+  set progress($550.OperationProgress v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
@@ -2535,7 +3132,10 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -2544,11 +3144,7 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   $302.Timestamp ensureCancelTime() => $_ensure(2);
 }
 
-enum InstancePartition_ComputeCapacity {
-  nodeCount, 
-  processingUnits, 
-  notSet
-}
+enum InstancePartition_ComputeCapacity { nodeCount, processingUnits, notSet }
 
 /// An isolated set of Cloud Spanner resources that databases can define
 /// placements on.
@@ -2603,52 +3199,70 @@ class InstancePartition extends $pb.GeneratedMessage {
     return $result;
   }
   InstancePartition._() : super();
-  factory InstancePartition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InstancePartition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InstancePartition.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InstancePartition.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, InstancePartition_ComputeCapacity> _InstancePartition_ComputeCapacityByTag = {
-    5 : InstancePartition_ComputeCapacity.nodeCount,
-    6 : InstancePartition_ComputeCapacity.processingUnits,
-    0 : InstancePartition_ComputeCapacity.notSet
+  static const $core.Map<$core.int, InstancePartition_ComputeCapacity>
+      _InstancePartition_ComputeCapacityByTag = {
+    5: InstancePartition_ComputeCapacity.nodeCount,
+    6: InstancePartition_ComputeCapacity.processingUnits,
+    0: InstancePartition_ComputeCapacity.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InstancePartition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InstancePartition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'config')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
-    ..e<InstancePartition_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: InstancePartition_State.STATE_UNSPECIFIED, valueOf: InstancePartition_State.valueOf, enumValues: InstancePartition_State.values)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
+    ..e<InstancePartition_State>(
+        7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: InstancePartition_State.STATE_UNSPECIFIED,
+        valueOf: InstancePartition_State.valueOf,
+        enumValues: InstancePartition_State.values)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
     ..pPS(10, _omitFieldNames ? '' : 'referencingDatabases')
     ..pPS(11, _omitFieldNames ? '' : 'referencingBackups')
     ..aOS(12, _omitFieldNames ? '' : 'etag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   InstancePartition clone() => InstancePartition()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InstancePartition copyWith(void Function(InstancePartition) updates) => super.copyWith((message) => updates(message as InstancePartition)) as InstancePartition;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InstancePartition copyWith(void Function(InstancePartition) updates) =>
+      super.copyWith((message) => updates(message as InstancePartition))
+          as InstancePartition;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InstancePartition create() => InstancePartition._();
   InstancePartition createEmptyInstance() => create();
-  static $pb.PbList<InstancePartition> createRepeated() => $pb.PbList<InstancePartition>();
+  static $pb.PbList<InstancePartition> createRepeated() =>
+      $pb.PbList<InstancePartition>();
   @$core.pragma('dart2js:noInline')
-  static InstancePartition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InstancePartition>(create);
+  static InstancePartition getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InstancePartition>(create);
   static InstancePartition? _defaultInstance;
 
-  InstancePartition_ComputeCapacity whichComputeCapacity() => _InstancePartition_ComputeCapacityByTag[$_whichOneof(0)]!;
+  InstancePartition_ComputeCapacity whichComputeCapacity() =>
+      _InstancePartition_ComputeCapacityByTag[$_whichOneof(0)]!;
   void clearComputeCapacity() => clearField($_whichOneof(0));
 
   /// Required. A unique identifier for the instance partition. Values are of the
@@ -2660,7 +3274,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2673,7 +3290,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get config => $_getSZ(1);
   @$pb.TagNumber(2)
-  set config($core.String v) { $_setString(1, v); }
+  set config($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -2684,7 +3304,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -2700,7 +3323,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get nodeCount => $_getIZ(3);
   @$pb.TagNumber(5)
-  set nodeCount($core.int v) { $_setSignedInt32(3, v); }
+  set nodeCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasNodeCount() => $_has(3);
   @$pb.TagNumber(5)
@@ -2716,7 +3342,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get processingUnits => $_getIZ(4);
   @$pb.TagNumber(6)
-  set processingUnits($core.int v) { $_setSignedInt32(4, v); }
+  set processingUnits($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasProcessingUnits() => $_has(4);
   @$pb.TagNumber(6)
@@ -2726,7 +3355,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   InstancePartition_State get state => $_getN(5);
   @$pb.TagNumber(7)
-  set state(InstancePartition_State v) { setField(7, v); }
+  set state(InstancePartition_State v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(7)
@@ -2736,7 +3368,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($302.Timestamp v) { setField(8, v); }
+  set createTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(8)
@@ -2749,7 +3384,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) { setField(9, v); }
+  set updateTime($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
@@ -2784,7 +3422,10 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get etag => $_getSZ(10);
   @$pb.TagNumber(12)
-  set etag($core.String v) { $_setString(10, v); }
+  set etag($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasEtag() => $_has(10);
   @$pb.TagNumber(12)
@@ -2816,43 +3457,64 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CreateInstancePartitionMetadata._() : super();
-  factory CreateInstancePartitionMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateInstancePartitionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateInstancePartitionMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateInstancePartitionMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstancePartitionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition', subBuilder: InstancePartition.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateInstancePartitionMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition',
+        subBuilder: InstancePartition.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateInstancePartitionMetadata clone() => CreateInstancePartitionMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateInstancePartitionMetadata copyWith(void Function(CreateInstancePartitionMetadata) updates) => super.copyWith((message) => updates(message as CreateInstancePartitionMetadata)) as CreateInstancePartitionMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateInstancePartitionMetadata clone() =>
+      CreateInstancePartitionMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateInstancePartitionMetadata copyWith(
+          void Function(CreateInstancePartitionMetadata) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateInstancePartitionMetadata))
+          as CreateInstancePartitionMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateInstancePartitionMetadata create() => CreateInstancePartitionMetadata._();
+  static CreateInstancePartitionMetadata create() =>
+      CreateInstancePartitionMetadata._();
   CreateInstancePartitionMetadata createEmptyInstance() => create();
-  static $pb.PbList<CreateInstancePartitionMetadata> createRepeated() => $pb.PbList<CreateInstancePartitionMetadata>();
+  static $pb.PbList<CreateInstancePartitionMetadata> createRepeated() =>
+      $pb.PbList<CreateInstancePartitionMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CreateInstancePartitionMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateInstancePartitionMetadata>(create);
+  static CreateInstancePartitionMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateInstancePartitionMetadata>(
+          create);
   static CreateInstancePartitionMetadata? _defaultInstance;
 
   /// The instance partition being created.
   @$pb.TagNumber(1)
   InstancePartition get instancePartition => $_getN(0);
   @$pb.TagNumber(1)
-  set instancePartition(InstancePartition v) { setField(1, v); }
+  set instancePartition(InstancePartition v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstancePartition() => $_has(0);
   @$pb.TagNumber(1)
@@ -2866,7 +3528,10 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -2880,7 +3545,10 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -2892,7 +3560,10 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) { setField(4, v); }
+  set endTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -2922,35 +3593,49 @@ class CreateInstancePartitionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateInstancePartitionRequest._() : super();
-  factory CreateInstancePartitionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateInstancePartitionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateInstancePartitionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateInstancePartitionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstancePartitionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateInstancePartitionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'instancePartitionId')
-    ..aOM<InstancePartition>(3, _omitFieldNames ? '' : 'instancePartition', subBuilder: InstancePartition.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<InstancePartition>(3, _omitFieldNames ? '' : 'instancePartition',
+        subBuilder: InstancePartition.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateInstancePartitionRequest clone() => CreateInstancePartitionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateInstancePartitionRequest copyWith(void Function(CreateInstancePartitionRequest) updates) => super.copyWith((message) => updates(message as CreateInstancePartitionRequest)) as CreateInstancePartitionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateInstancePartitionRequest clone() =>
+      CreateInstancePartitionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateInstancePartitionRequest copyWith(
+          void Function(CreateInstancePartitionRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateInstancePartitionRequest))
+          as CreateInstancePartitionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateInstancePartitionRequest create() => CreateInstancePartitionRequest._();
+  static CreateInstancePartitionRequest create() =>
+      CreateInstancePartitionRequest._();
   CreateInstancePartitionRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateInstancePartitionRequest> createRepeated() => $pb.PbList<CreateInstancePartitionRequest>();
+  static $pb.PbList<CreateInstancePartitionRequest> createRepeated() =>
+      $pb.PbList<CreateInstancePartitionRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateInstancePartitionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateInstancePartitionRequest>(create);
+  static CreateInstancePartitionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateInstancePartitionRequest>(create);
   static CreateInstancePartitionRequest? _defaultInstance;
 
   /// Required. The name of the instance in which to create the instance
@@ -2959,7 +3644,10 @@ class CreateInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -2971,7 +3659,10 @@ class CreateInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get instancePartitionId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set instancePartitionId($core.String v) { $_setString(1, v); }
+  set instancePartitionId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInstancePartitionId() => $_has(1);
   @$pb.TagNumber(2)
@@ -2983,7 +3674,10 @@ class CreateInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   InstancePartition get instancePartition => $_getN(2);
   @$pb.TagNumber(3)
-  set instancePartition(InstancePartition v) { setField(3, v); }
+  set instancePartition(InstancePartition v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasInstancePartition() => $_has(2);
   @$pb.TagNumber(3)
@@ -3009,34 +3703,47 @@ class DeleteInstancePartitionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteInstancePartitionRequest._() : super();
-  factory DeleteInstancePartitionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteInstancePartitionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteInstancePartitionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteInstancePartitionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteInstancePartitionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteInstancePartitionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'etag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteInstancePartitionRequest clone() => DeleteInstancePartitionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteInstancePartitionRequest copyWith(void Function(DeleteInstancePartitionRequest) updates) => super.copyWith((message) => updates(message as DeleteInstancePartitionRequest)) as DeleteInstancePartitionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteInstancePartitionRequest clone() =>
+      DeleteInstancePartitionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteInstancePartitionRequest copyWith(
+          void Function(DeleteInstancePartitionRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as DeleteInstancePartitionRequest))
+          as DeleteInstancePartitionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteInstancePartitionRequest create() => DeleteInstancePartitionRequest._();
+  static DeleteInstancePartitionRequest create() =>
+      DeleteInstancePartitionRequest._();
   DeleteInstancePartitionRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteInstancePartitionRequest> createRepeated() => $pb.PbList<DeleteInstancePartitionRequest>();
+  static $pb.PbList<DeleteInstancePartitionRequest> createRepeated() =>
+      $pb.PbList<DeleteInstancePartitionRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteInstancePartitionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteInstancePartitionRequest>(create);
+  static DeleteInstancePartitionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteInstancePartitionRequest>(create);
   static DeleteInstancePartitionRequest? _defaultInstance;
 
   /// Required. The name of the instance partition to be deleted.
@@ -3045,7 +3752,10 @@ class DeleteInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -3058,7 +3768,10 @@ class DeleteInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get etag => $_getSZ(1);
   @$pb.TagNumber(2)
-  set etag($core.String v) { $_setString(1, v); }
+  set etag($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEtag() => $_has(1);
   @$pb.TagNumber(2)
@@ -3078,33 +3791,46 @@ class GetInstancePartitionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetInstancePartitionRequest._() : super();
-  factory GetInstancePartitionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetInstancePartitionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetInstancePartitionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetInstancePartitionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetInstancePartitionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetInstancePartitionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetInstancePartitionRequest clone() => GetInstancePartitionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetInstancePartitionRequest copyWith(void Function(GetInstancePartitionRequest) updates) => super.copyWith((message) => updates(message as GetInstancePartitionRequest)) as GetInstancePartitionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetInstancePartitionRequest clone() =>
+      GetInstancePartitionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetInstancePartitionRequest copyWith(
+          void Function(GetInstancePartitionRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetInstancePartitionRequest))
+          as GetInstancePartitionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetInstancePartitionRequest create() => GetInstancePartitionRequest._();
+  static GetInstancePartitionRequest create() =>
+      GetInstancePartitionRequest._();
   GetInstancePartitionRequest createEmptyInstance() => create();
-  static $pb.PbList<GetInstancePartitionRequest> createRepeated() => $pb.PbList<GetInstancePartitionRequest>();
+  static $pb.PbList<GetInstancePartitionRequest> createRepeated() =>
+      $pb.PbList<GetInstancePartitionRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetInstancePartitionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetInstancePartitionRequest>(create);
+  static GetInstancePartitionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetInstancePartitionRequest>(create);
   static GetInstancePartitionRequest? _defaultInstance;
 
   /// Required. The name of the requested instance partition. Values are of
@@ -3113,7 +3839,10 @@ class GetInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -3137,34 +3866,49 @@ class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateInstancePartitionRequest._() : super();
-  factory UpdateInstancePartitionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateInstancePartitionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateInstancePartitionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateInstancePartitionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstancePartitionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition', subBuilder: InstancePartition.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateInstancePartitionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition',
+        subBuilder: InstancePartition.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateInstancePartitionRequest clone() => UpdateInstancePartitionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateInstancePartitionRequest copyWith(void Function(UpdateInstancePartitionRequest) updates) => super.copyWith((message) => updates(message as UpdateInstancePartitionRequest)) as UpdateInstancePartitionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateInstancePartitionRequest clone() =>
+      UpdateInstancePartitionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateInstancePartitionRequest copyWith(
+          void Function(UpdateInstancePartitionRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateInstancePartitionRequest))
+          as UpdateInstancePartitionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateInstancePartitionRequest create() => UpdateInstancePartitionRequest._();
+  static UpdateInstancePartitionRequest create() =>
+      UpdateInstancePartitionRequest._();
   UpdateInstancePartitionRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateInstancePartitionRequest> createRepeated() => $pb.PbList<UpdateInstancePartitionRequest>();
+  static $pb.PbList<UpdateInstancePartitionRequest> createRepeated() =>
+      $pb.PbList<UpdateInstancePartitionRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateInstancePartitionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateInstancePartitionRequest>(create);
+  static UpdateInstancePartitionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateInstancePartitionRequest>(create);
   static UpdateInstancePartitionRequest? _defaultInstance;
 
   /// Required. The instance partition to update, which must always include the
@@ -3174,7 +3918,10 @@ class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   InstancePartition get instancePartition => $_getN(0);
   @$pb.TagNumber(1)
-  set instancePartition(InstancePartition v) { setField(1, v); }
+  set instancePartition(InstancePartition v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstancePartition() => $_has(0);
   @$pb.TagNumber(1)
@@ -3191,7 +3938,10 @@ class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($333.FieldMask v) { setField(2, v); }
+  set fieldMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -3225,43 +3975,64 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateInstancePartitionMetadata._() : super();
-  factory UpdateInstancePartitionMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateInstancePartitionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateInstancePartitionMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateInstancePartitionMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstancePartitionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition', subBuilder: InstancePartition.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateInstancePartitionMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition',
+        subBuilder: InstancePartition.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateInstancePartitionMetadata clone() => UpdateInstancePartitionMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateInstancePartitionMetadata copyWith(void Function(UpdateInstancePartitionMetadata) updates) => super.copyWith((message) => updates(message as UpdateInstancePartitionMetadata)) as UpdateInstancePartitionMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateInstancePartitionMetadata clone() =>
+      UpdateInstancePartitionMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateInstancePartitionMetadata copyWith(
+          void Function(UpdateInstancePartitionMetadata) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateInstancePartitionMetadata))
+          as UpdateInstancePartitionMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateInstancePartitionMetadata create() => UpdateInstancePartitionMetadata._();
+  static UpdateInstancePartitionMetadata create() =>
+      UpdateInstancePartitionMetadata._();
   UpdateInstancePartitionMetadata createEmptyInstance() => create();
-  static $pb.PbList<UpdateInstancePartitionMetadata> createRepeated() => $pb.PbList<UpdateInstancePartitionMetadata>();
+  static $pb.PbList<UpdateInstancePartitionMetadata> createRepeated() =>
+      $pb.PbList<UpdateInstancePartitionMetadata>();
   @$core.pragma('dart2js:noInline')
-  static UpdateInstancePartitionMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateInstancePartitionMetadata>(create);
+  static UpdateInstancePartitionMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateInstancePartitionMetadata>(
+          create);
   static UpdateInstancePartitionMetadata? _defaultInstance;
 
   /// The desired end state of the update.
   @$pb.TagNumber(1)
   InstancePartition get instancePartition => $_getN(0);
   @$pb.TagNumber(1)
-  set instancePartition(InstancePartition v) { setField(1, v); }
+  set instancePartition(InstancePartition v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstancePartition() => $_has(0);
   @$pb.TagNumber(1)
@@ -3275,7 +4046,10 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -3289,7 +4063,10 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -3301,7 +4078,10 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) { setField(4, v); }
+  set endTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -3335,36 +4115,50 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstancePartitionsRequest._() : super();
-  factory ListInstancePartitionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstancePartitionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstancePartitionsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstancePartitionsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstancePartitionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstancePartitionsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'instancePartitionDeadline', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'instancePartitionDeadline',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionsRequest clone() => ListInstancePartitionsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionsRequest copyWith(void Function(ListInstancePartitionsRequest) updates) => super.copyWith((message) => updates(message as ListInstancePartitionsRequest)) as ListInstancePartitionsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionsRequest clone() =>
+      ListInstancePartitionsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionsRequest copyWith(
+          void Function(ListInstancePartitionsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListInstancePartitionsRequest))
+          as ListInstancePartitionsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionsRequest create() => ListInstancePartitionsRequest._();
+  static ListInstancePartitionsRequest create() =>
+      ListInstancePartitionsRequest._();
   ListInstancePartitionsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListInstancePartitionsRequest> createRepeated() => $pb.PbList<ListInstancePartitionsRequest>();
+  static $pb.PbList<ListInstancePartitionsRequest> createRepeated() =>
+      $pb.PbList<ListInstancePartitionsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstancePartitionsRequest>(create);
+  static ListInstancePartitionsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListInstancePartitionsRequest>(create);
   static ListInstancePartitionsRequest? _defaultInstance;
 
   /// Required. The instance whose instance partitions should be listed. Values
@@ -3372,7 +4166,10 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -3383,7 +4180,10 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -3396,7 +4196,10 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -3411,7 +4214,10 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get instancePartitionDeadline => $_getN(3);
   @$pb.TagNumber(4)
-  set instancePartitionDeadline($302.Timestamp v) { setField(4, v); }
+  set instancePartitionDeadline($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasInstancePartitionDeadline() => $_has(3);
   @$pb.TagNumber(4)
@@ -3441,35 +4247,50 @@ class ListInstancePartitionsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstancePartitionsResponse._() : super();
-  factory ListInstancePartitionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstancePartitionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstancePartitionsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstancePartitionsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstancePartitionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..pc<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartitions', $pb.PbFieldType.PM, subBuilder: InstancePartition.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstancePartitionsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..pc<InstancePartition>(
+        1, _omitFieldNames ? '' : 'instancePartitions', $pb.PbFieldType.PM,
+        subBuilder: InstancePartition.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'unreachable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionsResponse clone() => ListInstancePartitionsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionsResponse copyWith(void Function(ListInstancePartitionsResponse) updates) => super.copyWith((message) => updates(message as ListInstancePartitionsResponse)) as ListInstancePartitionsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionsResponse clone() =>
+      ListInstancePartitionsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionsResponse copyWith(
+          void Function(ListInstancePartitionsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListInstancePartitionsResponse))
+          as ListInstancePartitionsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionsResponse create() => ListInstancePartitionsResponse._();
+  static ListInstancePartitionsResponse create() =>
+      ListInstancePartitionsResponse._();
   ListInstancePartitionsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListInstancePartitionsResponse> createRepeated() => $pb.PbList<ListInstancePartitionsResponse>();
+  static $pb.PbList<ListInstancePartitionsResponse> createRepeated() =>
+      $pb.PbList<ListInstancePartitionsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstancePartitionsResponse>(create);
+  static ListInstancePartitionsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListInstancePartitionsResponse>(create);
   static ListInstancePartitionsResponse? _defaultInstance;
 
   /// The list of requested instancePartitions.
@@ -3482,7 +4303,10 @@ class ListInstancePartitionsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -3525,37 +4349,53 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListInstancePartitionOperationsRequest._() : super();
-  factory ListInstancePartitionOperationsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstancePartitionOperationsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstancePartitionOperationsRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstancePartitionOperationsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstancePartitionOperationsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstancePartitionOperationsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'instancePartitionDeadline', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'instancePartitionDeadline',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionOperationsRequest clone() => ListInstancePartitionOperationsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionOperationsRequest copyWith(void Function(ListInstancePartitionOperationsRequest) updates) => super.copyWith((message) => updates(message as ListInstancePartitionOperationsRequest)) as ListInstancePartitionOperationsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionOperationsRequest clone() =>
+      ListInstancePartitionOperationsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionOperationsRequest copyWith(
+          void Function(ListInstancePartitionOperationsRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListInstancePartitionOperationsRequest))
+          as ListInstancePartitionOperationsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionOperationsRequest create() => ListInstancePartitionOperationsRequest._();
+  static ListInstancePartitionOperationsRequest create() =>
+      ListInstancePartitionOperationsRequest._();
   ListInstancePartitionOperationsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListInstancePartitionOperationsRequest> createRepeated() => $pb.PbList<ListInstancePartitionOperationsRequest>();
+  static $pb.PbList<ListInstancePartitionOperationsRequest> createRepeated() =>
+      $pb.PbList<ListInstancePartitionOperationsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionOperationsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstancePartitionOperationsRequest>(create);
+  static ListInstancePartitionOperationsRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListInstancePartitionOperationsRequest>(create);
   static ListInstancePartitionOperationsRequest? _defaultInstance;
 
   /// Required. The parent instance of the instance partition operations.
@@ -3563,7 +4403,10 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -3615,7 +4458,10 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -3626,7 +4472,10 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -3640,7 +4489,10 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -3654,7 +4506,10 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get instancePartitionDeadline => $_getN(4);
   @$pb.TagNumber(5)
-  set instancePartitionDeadline($302.Timestamp v) { setField(5, v); }
+  set instancePartitionDeadline($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasInstancePartitionDeadline() => $_has(4);
   @$pb.TagNumber(5)
@@ -3679,40 +4534,58 @@ class ListInstancePartitionOperationsResponse extends $pb.GeneratedMessage {
       $result.nextPageToken = nextPageToken;
     }
     if (unreachableInstancePartitions != null) {
-      $result.unreachableInstancePartitions.addAll(unreachableInstancePartitions);
+      $result.unreachableInstancePartitions
+          .addAll(unreachableInstancePartitions);
     }
     return $result;
   }
   ListInstancePartitionOperationsResponse._() : super();
-  factory ListInstancePartitionOperationsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListInstancePartitionOperationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListInstancePartitionOperationsResponse.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListInstancePartitionOperationsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInstancePartitionOperationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..pc<$13.Operation>(1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: $13.Operation.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListInstancePartitionOperationsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..pc<$13.Operation>(
+        1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM,
+        subBuilder: $13.Operation.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'unreachableInstancePartitions')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionOperationsResponse clone() => ListInstancePartitionOperationsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListInstancePartitionOperationsResponse copyWith(void Function(ListInstancePartitionOperationsResponse) updates) => super.copyWith((message) => updates(message as ListInstancePartitionOperationsResponse)) as ListInstancePartitionOperationsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionOperationsResponse clone() =>
+      ListInstancePartitionOperationsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListInstancePartitionOperationsResponse copyWith(
+          void Function(ListInstancePartitionOperationsResponse) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListInstancePartitionOperationsResponse))
+          as ListInstancePartitionOperationsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionOperationsResponse create() => ListInstancePartitionOperationsResponse._();
+  static ListInstancePartitionOperationsResponse create() =>
+      ListInstancePartitionOperationsResponse._();
   ListInstancePartitionOperationsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListInstancePartitionOperationsResponse> createRepeated() => $pb.PbList<ListInstancePartitionOperationsResponse>();
+  static $pb.PbList<ListInstancePartitionOperationsResponse> createRepeated() =>
+      $pb.PbList<ListInstancePartitionOperationsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListInstancePartitionOperationsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListInstancePartitionOperationsResponse>(create);
+  static ListInstancePartitionOperationsResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListInstancePartitionOperationsResponse>(create);
   static ListInstancePartitionOperationsResponse? _defaultInstance;
 
   /// The list of matching instance partition [long-running
@@ -3729,7 +4602,10 @@ class ListInstancePartitionOperationsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -3760,34 +4636,43 @@ class MoveInstanceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   MoveInstanceRequest._() : super();
-  factory MoveInstanceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MoveInstanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MoveInstanceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MoveInstanceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MoveInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MoveInstanceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'targetConfig')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MoveInstanceRequest clone() => MoveInstanceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MoveInstanceRequest copyWith(void Function(MoveInstanceRequest) updates) => super.copyWith((message) => updates(message as MoveInstanceRequest)) as MoveInstanceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MoveInstanceRequest copyWith(void Function(MoveInstanceRequest) updates) =>
+      super.copyWith((message) => updates(message as MoveInstanceRequest))
+          as MoveInstanceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MoveInstanceRequest create() => MoveInstanceRequest._();
   MoveInstanceRequest createEmptyInstance() => create();
-  static $pb.PbList<MoveInstanceRequest> createRepeated() => $pb.PbList<MoveInstanceRequest>();
+  static $pb.PbList<MoveInstanceRequest> createRepeated() =>
+      $pb.PbList<MoveInstanceRequest>();
   @$core.pragma('dart2js:noInline')
-  static MoveInstanceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MoveInstanceRequest>(create);
+  static MoveInstanceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MoveInstanceRequest>(create);
   static MoveInstanceRequest? _defaultInstance;
 
   /// Required. The instance to move.
@@ -3795,7 +4680,10 @@ class MoveInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -3806,7 +4694,10 @@ class MoveInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get targetConfig => $_getSZ(1);
   @$pb.TagNumber(2)
-  set targetConfig($core.String v) { $_setString(1, v); }
+  set targetConfig($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -3818,32 +4709,42 @@ class MoveInstanceRequest extends $pb.GeneratedMessage {
 class MoveInstanceResponse extends $pb.GeneratedMessage {
   factory MoveInstanceResponse() => create();
   MoveInstanceResponse._() : super();
-  factory MoveInstanceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MoveInstanceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MoveInstanceResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MoveInstanceResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MoveInstanceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MoveInstanceResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MoveInstanceResponse clone() => MoveInstanceResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MoveInstanceResponse copyWith(void Function(MoveInstanceResponse) updates) => super.copyWith((message) => updates(message as MoveInstanceResponse)) as MoveInstanceResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MoveInstanceResponse clone() =>
+      MoveInstanceResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MoveInstanceResponse copyWith(void Function(MoveInstanceResponse) updates) =>
+      super.copyWith((message) => updates(message as MoveInstanceResponse))
+          as MoveInstanceResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MoveInstanceResponse create() => MoveInstanceResponse._();
   MoveInstanceResponse createEmptyInstance() => create();
-  static $pb.PbList<MoveInstanceResponse> createRepeated() => $pb.PbList<MoveInstanceResponse>();
+  static $pb.PbList<MoveInstanceResponse> createRepeated() =>
+      $pb.PbList<MoveInstanceResponse>();
   @$core.pragma('dart2js:noInline')
-  static MoveInstanceResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MoveInstanceResponse>(create);
+  static MoveInstanceResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MoveInstanceResponse>(create);
   static MoveInstanceResponse? _defaultInstance;
 }
 
@@ -3868,35 +4769,47 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   MoveInstanceMetadata._() : super();
-  factory MoveInstanceMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MoveInstanceMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MoveInstanceMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MoveInstanceMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MoveInstanceMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MoveInstanceMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'targetConfig')
-    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $550.OperationProgress.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $550.OperationProgress.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MoveInstanceMetadata clone() => MoveInstanceMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MoveInstanceMetadata copyWith(void Function(MoveInstanceMetadata) updates) => super.copyWith((message) => updates(message as MoveInstanceMetadata)) as MoveInstanceMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MoveInstanceMetadata clone() =>
+      MoveInstanceMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MoveInstanceMetadata copyWith(void Function(MoveInstanceMetadata) updates) =>
+      super.copyWith((message) => updates(message as MoveInstanceMetadata))
+          as MoveInstanceMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MoveInstanceMetadata create() => MoveInstanceMetadata._();
   MoveInstanceMetadata createEmptyInstance() => create();
-  static $pb.PbList<MoveInstanceMetadata> createRepeated() => $pb.PbList<MoveInstanceMetadata>();
+  static $pb.PbList<MoveInstanceMetadata> createRepeated() =>
+      $pb.PbList<MoveInstanceMetadata>();
   @$core.pragma('dart2js:noInline')
-  static MoveInstanceMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MoveInstanceMetadata>(create);
+  static MoveInstanceMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MoveInstanceMetadata>(create);
   static MoveInstanceMetadata? _defaultInstance;
 
   /// The target instance configuration where to move the instance.
@@ -3904,7 +4817,10 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get targetConfig => $_getSZ(0);
   @$pb.TagNumber(1)
-  set targetConfig($core.String v) { $_setString(0, v); }
+  set targetConfig($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTargetConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -3918,7 +4834,10 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $550.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($550.OperationProgress v) { setField(2, v); }
+  set progress($550.OperationProgress v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
@@ -3930,7 +4849,10 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -3939,6 +4861,6 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   $302.Timestamp ensureCancelTime() => $_ensure(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -16,23 +16,28 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// A set of values describing the vehicle's emission type.
 /// Applies only to the DRIVE travel mode.
 class VehicleEmissionType extends $pb.ProtobufEnum {
-  static const VehicleEmissionType VEHICLE_EMISSION_TYPE_UNSPECIFIED = VehicleEmissionType._(0, _omitEnumNames ? '' : 'VEHICLE_EMISSION_TYPE_UNSPECIFIED');
-  static const VehicleEmissionType GASOLINE = VehicleEmissionType._(1, _omitEnumNames ? '' : 'GASOLINE');
-  static const VehicleEmissionType ELECTRIC = VehicleEmissionType._(2, _omitEnumNames ? '' : 'ELECTRIC');
-  static const VehicleEmissionType HYBRID = VehicleEmissionType._(3, _omitEnumNames ? '' : 'HYBRID');
+  static const VehicleEmissionType VEHICLE_EMISSION_TYPE_UNSPECIFIED =
+      VehicleEmissionType._(
+          0, _omitEnumNames ? '' : 'VEHICLE_EMISSION_TYPE_UNSPECIFIED');
+  static const VehicleEmissionType GASOLINE =
+      VehicleEmissionType._(1, _omitEnumNames ? '' : 'GASOLINE');
+  static const VehicleEmissionType ELECTRIC =
+      VehicleEmissionType._(2, _omitEnumNames ? '' : 'ELECTRIC');
+  static const VehicleEmissionType HYBRID =
+      VehicleEmissionType._(3, _omitEnumNames ? '' : 'HYBRID');
 
-  static const $core.List<VehicleEmissionType> values = <VehicleEmissionType> [
+  static const $core.List<VehicleEmissionType> values = <VehicleEmissionType>[
     VEHICLE_EMISSION_TYPE_UNSPECIFIED,
     GASOLINE,
     ELECTRIC,
     HYBRID,
   ];
 
-  static final $core.Map<$core.int, VehicleEmissionType> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, VehicleEmissionType> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static VehicleEmissionType? valueOf($core.int value) => _byValue[value];
 
   const VehicleEmissionType._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -27,24 +27,36 @@ class VehicleInfo extends $pb.GeneratedMessage {
     return $result;
   }
   VehicleInfo._() : super();
-  factory VehicleInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VehicleInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VehicleInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VehicleInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..e<$499.VehicleEmissionType>(2, _omitFieldNames ? '' : 'emissionType', $pb.PbFieldType.OE, defaultOrMaker: $499.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED, valueOf: $499.VehicleEmissionType.valueOf, enumValues: $499.VehicleEmissionType.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VehicleInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..e<$499.VehicleEmissionType>(
+        2, _omitFieldNames ? '' : 'emissionType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            $499.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED,
+        valueOf: $499.VehicleEmissionType.valueOf,
+        enumValues: $499.VehicleEmissionType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VehicleInfo clone() => VehicleInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VehicleInfo copyWith(void Function(VehicleInfo) updates) => super.copyWith((message) => updates(message as VehicleInfo)) as VehicleInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VehicleInfo copyWith(void Function(VehicleInfo) updates) =>
+      super.copyWith((message) => updates(message as VehicleInfo))
+          as VehicleInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -53,7 +65,8 @@ class VehicleInfo extends $pb.GeneratedMessage {
   VehicleInfo createEmptyInstance() => create();
   static $pb.PbList<VehicleInfo> createRepeated() => $pb.PbList<VehicleInfo>();
   @$core.pragma('dart2js:noInline')
-  static VehicleInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VehicleInfo>(create);
+  static VehicleInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VehicleInfo>(create);
   static VehicleInfo? _defaultInstance;
 
   /// Describes the vehicle's emission type.
@@ -62,13 +75,16 @@ class VehicleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $499.VehicleEmissionType get emissionType => $_getN(0);
   @$pb.TagNumber(2)
-  set emissionType($499.VehicleEmissionType v) { setField(2, v); }
+  set emissionType($499.VehicleEmissionType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEmissionType() => $_has(0);
   @$pb.TagNumber(2)
   void clearEmissionType() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

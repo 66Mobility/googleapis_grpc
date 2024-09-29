@@ -47,44 +47,70 @@ class CommonMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CommonMetadata._() : super();
-  factory CommonMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CommonMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CommonMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CommonMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommonMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..e<OperationType>(3, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: OperationType.OPERATION_TYPE_UNSPECIFIED, valueOf: OperationType.valueOf, enumValues: OperationType.values)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'CommonMetadata.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.datastore.admin.v1beta1'))
-    ..e<CommonMetadata_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CommonMetadata_State.STATE_UNSPECIFIED, valueOf: CommonMetadata_State.valueOf, enumValues: CommonMetadata_State.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CommonMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<OperationType>(
+        3, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE,
+        defaultOrMaker: OperationType.OPERATION_TYPE_UNSPECIFIED,
+        valueOf: OperationType.valueOf,
+        enumValues: OperationType.values)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'CommonMetadata.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.datastore.admin.v1beta1'))
+    ..e<CommonMetadata_State>(
+        5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: CommonMetadata_State.STATE_UNSPECIFIED,
+        valueOf: CommonMetadata_State.valueOf,
+        enumValues: CommonMetadata_State.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CommonMetadata clone() => CommonMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CommonMetadata copyWith(void Function(CommonMetadata) updates) => super.copyWith((message) => updates(message as CommonMetadata)) as CommonMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CommonMetadata copyWith(void Function(CommonMetadata) updates) =>
+      super.copyWith((message) => updates(message as CommonMetadata))
+          as CommonMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CommonMetadata create() => CommonMetadata._();
   CommonMetadata createEmptyInstance() => create();
-  static $pb.PbList<CommonMetadata> createRepeated() => $pb.PbList<CommonMetadata>();
+  static $pb.PbList<CommonMetadata> createRepeated() =>
+      $pb.PbList<CommonMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CommonMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CommonMetadata>(create);
+  static CommonMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CommonMetadata>(create);
   static CommonMetadata? _defaultInstance;
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -96,7 +122,10 @@ class CommonMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -109,7 +138,10 @@ class CommonMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   OperationType get operationType => $_getN(2);
   @$pb.TagNumber(3)
-  set operationType(OperationType v) { setField(3, v); }
+  set operationType(OperationType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOperationType() => $_has(2);
   @$pb.TagNumber(3)
@@ -124,7 +156,10 @@ class CommonMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   CommonMetadata_State get state => $_getN(4);
   @$pb.TagNumber(5)
-  set state(CommonMetadata_State v) { setField(5, v); }
+  set state(CommonMetadata_State v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)
@@ -147,25 +182,31 @@ class Progress extends $pb.GeneratedMessage {
     return $result;
   }
   Progress._() : super();
-  factory Progress.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Progress.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Progress.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Progress.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Progress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Progress',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'workCompleted')
     ..aInt64(2, _omitFieldNames ? '' : 'workEstimated')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Progress clone() => Progress()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Progress copyWith(void Function(Progress) updates) => super.copyWith((message) => updates(message as Progress)) as Progress;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Progress copyWith(void Function(Progress) updates) =>
+      super.copyWith((message) => updates(message as Progress)) as Progress;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -174,7 +215,8 @@ class Progress extends $pb.GeneratedMessage {
   Progress createEmptyInstance() => create();
   static $pb.PbList<Progress> createRepeated() => $pb.PbList<Progress>();
   @$core.pragma('dart2js:noInline')
-  static Progress getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Progress>(create);
+  static Progress getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Progress>(create);
   static Progress? _defaultInstance;
 
   /// The amount of work that has been completed. Note that this may be greater
@@ -182,7 +224,10 @@ class Progress extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get workCompleted => $_getI64(0);
   @$pb.TagNumber(1)
-  set workCompleted($fixnum.Int64 v) { $_setInt64(0, v); }
+  set workCompleted($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWorkCompleted() => $_has(0);
   @$pb.TagNumber(1)
@@ -193,7 +238,10 @@ class Progress extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get workEstimated => $_getI64(1);
   @$pb.TagNumber(2)
-  set workEstimated($fixnum.Int64 v) { $_setInt64(1, v); }
+  set workEstimated($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasWorkEstimated() => $_has(1);
   @$pb.TagNumber(2)
@@ -225,43 +273,62 @@ class ExportEntitiesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ExportEntitiesRequest._() : super();
-  factory ExportEntitiesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportEntitiesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportEntitiesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportEntitiesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportEntitiesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportEntitiesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'ExportEntitiesRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.datastore.admin.v1beta1'))
-    ..aOM<EntityFilter>(3, _omitFieldNames ? '' : 'entityFilter', subBuilder: EntityFilter.create)
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'ExportEntitiesRequest.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.datastore.admin.v1beta1'))
+    ..aOM<EntityFilter>(3, _omitFieldNames ? '' : 'entityFilter',
+        subBuilder: EntityFilter.create)
     ..aOS(4, _omitFieldNames ? '' : 'outputUrlPrefix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportEntitiesRequest clone() => ExportEntitiesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportEntitiesRequest copyWith(void Function(ExportEntitiesRequest) updates) => super.copyWith((message) => updates(message as ExportEntitiesRequest)) as ExportEntitiesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportEntitiesRequest clone() =>
+      ExportEntitiesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportEntitiesRequest copyWith(
+          void Function(ExportEntitiesRequest) updates) =>
+      super.copyWith((message) => updates(message as ExportEntitiesRequest))
+          as ExportEntitiesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportEntitiesRequest create() => ExportEntitiesRequest._();
   ExportEntitiesRequest createEmptyInstance() => create();
-  static $pb.PbList<ExportEntitiesRequest> createRepeated() => $pb.PbList<ExportEntitiesRequest>();
+  static $pb.PbList<ExportEntitiesRequest> createRepeated() =>
+      $pb.PbList<ExportEntitiesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExportEntitiesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportEntitiesRequest>(create);
+  static ExportEntitiesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportEntitiesRequest>(create);
   static ExportEntitiesRequest? _defaultInstance;
 
   /// Project ID against which to make the request.
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -275,7 +342,10 @@ class ExportEntitiesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   EntityFilter get entityFilter => $_getN(2);
   @$pb.TagNumber(3)
-  set entityFilter(EntityFilter v) { setField(3, v); }
+  set entityFilter(EntityFilter v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEntityFilter() => $_has(2);
   @$pb.TagNumber(3)
@@ -304,7 +374,10 @@ class ExportEntitiesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get outputUrlPrefix => $_getSZ(3);
   @$pb.TagNumber(4)
-  set outputUrlPrefix($core.String v) { $_setString(3, v); }
+  set outputUrlPrefix($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOutputUrlPrefix() => $_has(3);
   @$pb.TagNumber(4)
@@ -336,43 +409,62 @@ class ImportEntitiesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ImportEntitiesRequest._() : super();
-  factory ImportEntitiesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportEntitiesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportEntitiesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportEntitiesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportEntitiesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportEntitiesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'ImportEntitiesRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.datastore.admin.v1beta1'))
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'ImportEntitiesRequest.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.datastore.admin.v1beta1'))
     ..aOS(3, _omitFieldNames ? '' : 'inputUrl')
-    ..aOM<EntityFilter>(4, _omitFieldNames ? '' : 'entityFilter', subBuilder: EntityFilter.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<EntityFilter>(4, _omitFieldNames ? '' : 'entityFilter',
+        subBuilder: EntityFilter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportEntitiesRequest clone() => ImportEntitiesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportEntitiesRequest copyWith(void Function(ImportEntitiesRequest) updates) => super.copyWith((message) => updates(message as ImportEntitiesRequest)) as ImportEntitiesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportEntitiesRequest clone() =>
+      ImportEntitiesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportEntitiesRequest copyWith(
+          void Function(ImportEntitiesRequest) updates) =>
+      super.copyWith((message) => updates(message as ImportEntitiesRequest))
+          as ImportEntitiesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImportEntitiesRequest create() => ImportEntitiesRequest._();
   ImportEntitiesRequest createEmptyInstance() => create();
-  static $pb.PbList<ImportEntitiesRequest> createRepeated() => $pb.PbList<ImportEntitiesRequest>();
+  static $pb.PbList<ImportEntitiesRequest> createRepeated() =>
+      $pb.PbList<ImportEntitiesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ImportEntitiesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportEntitiesRequest>(create);
+  static ImportEntitiesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportEntitiesRequest>(create);
   static ImportEntitiesRequest? _defaultInstance;
 
   /// Project ID against which to make the request.
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -398,7 +490,10 @@ class ImportEntitiesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get inputUrl => $_getSZ(2);
   @$pb.TagNumber(3)
-  set inputUrl($core.String v) { $_setString(2, v); }
+  set inputUrl($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasInputUrl() => $_has(2);
   @$pb.TagNumber(3)
@@ -411,7 +506,10 @@ class ImportEntitiesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   EntityFilter get entityFilter => $_getN(3);
   @$pb.TagNumber(4)
-  set entityFilter(EntityFilter v) { setField(4, v); }
+  set entityFilter(EntityFilter v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEntityFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -433,33 +531,44 @@ class ExportEntitiesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ExportEntitiesResponse._() : super();
-  factory ExportEntitiesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportEntitiesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportEntitiesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportEntitiesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportEntitiesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportEntitiesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'outputUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportEntitiesResponse clone() => ExportEntitiesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportEntitiesResponse copyWith(void Function(ExportEntitiesResponse) updates) => super.copyWith((message) => updates(message as ExportEntitiesResponse)) as ExportEntitiesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportEntitiesResponse clone() =>
+      ExportEntitiesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportEntitiesResponse copyWith(
+          void Function(ExportEntitiesResponse) updates) =>
+      super.copyWith((message) => updates(message as ExportEntitiesResponse))
+          as ExportEntitiesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportEntitiesResponse create() => ExportEntitiesResponse._();
   ExportEntitiesResponse createEmptyInstance() => create();
-  static $pb.PbList<ExportEntitiesResponse> createRepeated() => $pb.PbList<ExportEntitiesResponse>();
+  static $pb.PbList<ExportEntitiesResponse> createRepeated() =>
+      $pb.PbList<ExportEntitiesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ExportEntitiesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportEntitiesResponse>(create);
+  static ExportEntitiesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportEntitiesResponse>(create);
   static ExportEntitiesResponse? _defaultInstance;
 
   /// Location of the output metadata file. This can be used to begin an import
@@ -469,7 +578,10 @@ class ExportEntitiesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get outputUrl => $_getSZ(0);
   @$pb.TagNumber(1)
-  set outputUrl($core.String v) { $_setString(0, v); }
+  set outputUrl($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOutputUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -504,44 +616,62 @@ class ExportEntitiesMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   ExportEntitiesMetadata._() : super();
-  factory ExportEntitiesMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportEntitiesMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportEntitiesMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportEntitiesMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportEntitiesMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<CommonMetadata>(1, _omitFieldNames ? '' : 'common', subBuilder: CommonMetadata.create)
-    ..aOM<Progress>(2, _omitFieldNames ? '' : 'progressEntities', subBuilder: Progress.create)
-    ..aOM<Progress>(3, _omitFieldNames ? '' : 'progressBytes', subBuilder: Progress.create)
-    ..aOM<EntityFilter>(4, _omitFieldNames ? '' : 'entityFilter', subBuilder: EntityFilter.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportEntitiesMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
+    ..aOM<CommonMetadata>(1, _omitFieldNames ? '' : 'common',
+        subBuilder: CommonMetadata.create)
+    ..aOM<Progress>(2, _omitFieldNames ? '' : 'progressEntities',
+        subBuilder: Progress.create)
+    ..aOM<Progress>(3, _omitFieldNames ? '' : 'progressBytes',
+        subBuilder: Progress.create)
+    ..aOM<EntityFilter>(4, _omitFieldNames ? '' : 'entityFilter',
+        subBuilder: EntityFilter.create)
     ..aOS(5, _omitFieldNames ? '' : 'outputUrlPrefix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportEntitiesMetadata clone() => ExportEntitiesMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportEntitiesMetadata copyWith(void Function(ExportEntitiesMetadata) updates) => super.copyWith((message) => updates(message as ExportEntitiesMetadata)) as ExportEntitiesMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportEntitiesMetadata clone() =>
+      ExportEntitiesMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportEntitiesMetadata copyWith(
+          void Function(ExportEntitiesMetadata) updates) =>
+      super.copyWith((message) => updates(message as ExportEntitiesMetadata))
+          as ExportEntitiesMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportEntitiesMetadata create() => ExportEntitiesMetadata._();
   ExportEntitiesMetadata createEmptyInstance() => create();
-  static $pb.PbList<ExportEntitiesMetadata> createRepeated() => $pb.PbList<ExportEntitiesMetadata>();
+  static $pb.PbList<ExportEntitiesMetadata> createRepeated() =>
+      $pb.PbList<ExportEntitiesMetadata>();
   @$core.pragma('dart2js:noInline')
-  static ExportEntitiesMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportEntitiesMetadata>(create);
+  static ExportEntitiesMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportEntitiesMetadata>(create);
   static ExportEntitiesMetadata? _defaultInstance;
 
   /// Metadata common to all Datastore Admin operations.
   @$pb.TagNumber(1)
   CommonMetadata get common => $_getN(0);
   @$pb.TagNumber(1)
-  set common(CommonMetadata v) { setField(1, v); }
+  set common(CommonMetadata v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCommon() => $_has(0);
   @$pb.TagNumber(1)
@@ -553,7 +683,10 @@ class ExportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Progress get progressEntities => $_getN(1);
   @$pb.TagNumber(2)
-  set progressEntities(Progress v) { setField(2, v); }
+  set progressEntities(Progress v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProgressEntities() => $_has(1);
   @$pb.TagNumber(2)
@@ -565,7 +698,10 @@ class ExportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Progress get progressBytes => $_getN(2);
   @$pb.TagNumber(3)
-  set progressBytes(Progress v) { setField(3, v); }
+  set progressBytes(Progress v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProgressBytes() => $_has(2);
   @$pb.TagNumber(3)
@@ -577,7 +713,10 @@ class ExportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   EntityFilter get entityFilter => $_getN(3);
   @$pb.TagNumber(4)
-  set entityFilter(EntityFilter v) { setField(4, v); }
+  set entityFilter(EntityFilter v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEntityFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -593,7 +732,10 @@ class ExportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get outputUrlPrefix => $_getSZ(4);
   @$pb.TagNumber(5)
-  set outputUrlPrefix($core.String v) { $_setString(4, v); }
+  set outputUrlPrefix($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOutputUrlPrefix() => $_has(4);
   @$pb.TagNumber(5)
@@ -628,44 +770,62 @@ class ImportEntitiesMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   ImportEntitiesMetadata._() : super();
-  factory ImportEntitiesMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportEntitiesMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportEntitiesMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportEntitiesMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportEntitiesMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<CommonMetadata>(1, _omitFieldNames ? '' : 'common', subBuilder: CommonMetadata.create)
-    ..aOM<Progress>(2, _omitFieldNames ? '' : 'progressEntities', subBuilder: Progress.create)
-    ..aOM<Progress>(3, _omitFieldNames ? '' : 'progressBytes', subBuilder: Progress.create)
-    ..aOM<EntityFilter>(4, _omitFieldNames ? '' : 'entityFilter', subBuilder: EntityFilter.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportEntitiesMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
+    ..aOM<CommonMetadata>(1, _omitFieldNames ? '' : 'common',
+        subBuilder: CommonMetadata.create)
+    ..aOM<Progress>(2, _omitFieldNames ? '' : 'progressEntities',
+        subBuilder: Progress.create)
+    ..aOM<Progress>(3, _omitFieldNames ? '' : 'progressBytes',
+        subBuilder: Progress.create)
+    ..aOM<EntityFilter>(4, _omitFieldNames ? '' : 'entityFilter',
+        subBuilder: EntityFilter.create)
     ..aOS(5, _omitFieldNames ? '' : 'inputUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportEntitiesMetadata clone() => ImportEntitiesMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportEntitiesMetadata copyWith(void Function(ImportEntitiesMetadata) updates) => super.copyWith((message) => updates(message as ImportEntitiesMetadata)) as ImportEntitiesMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportEntitiesMetadata clone() =>
+      ImportEntitiesMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportEntitiesMetadata copyWith(
+          void Function(ImportEntitiesMetadata) updates) =>
+      super.copyWith((message) => updates(message as ImportEntitiesMetadata))
+          as ImportEntitiesMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImportEntitiesMetadata create() => ImportEntitiesMetadata._();
   ImportEntitiesMetadata createEmptyInstance() => create();
-  static $pb.PbList<ImportEntitiesMetadata> createRepeated() => $pb.PbList<ImportEntitiesMetadata>();
+  static $pb.PbList<ImportEntitiesMetadata> createRepeated() =>
+      $pb.PbList<ImportEntitiesMetadata>();
   @$core.pragma('dart2js:noInline')
-  static ImportEntitiesMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportEntitiesMetadata>(create);
+  static ImportEntitiesMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportEntitiesMetadata>(create);
   static ImportEntitiesMetadata? _defaultInstance;
 
   /// Metadata common to all Datastore Admin operations.
   @$pb.TagNumber(1)
   CommonMetadata get common => $_getN(0);
   @$pb.TagNumber(1)
-  set common(CommonMetadata v) { setField(1, v); }
+  set common(CommonMetadata v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCommon() => $_has(0);
   @$pb.TagNumber(1)
@@ -677,7 +837,10 @@ class ImportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Progress get progressEntities => $_getN(1);
   @$pb.TagNumber(2)
-  set progressEntities(Progress v) { setField(2, v); }
+  set progressEntities(Progress v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProgressEntities() => $_has(1);
   @$pb.TagNumber(2)
@@ -689,7 +852,10 @@ class ImportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Progress get progressBytes => $_getN(2);
   @$pb.TagNumber(3)
-  set progressBytes(Progress v) { setField(3, v); }
+  set progressBytes(Progress v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProgressBytes() => $_has(2);
   @$pb.TagNumber(3)
@@ -701,7 +867,10 @@ class ImportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   EntityFilter get entityFilter => $_getN(3);
   @$pb.TagNumber(4)
-  set entityFilter(EntityFilter v) { setField(4, v); }
+  set entityFilter(EntityFilter v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEntityFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -716,7 +885,10 @@ class ImportEntitiesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get inputUrl => $_getSZ(4);
   @$pb.TagNumber(5)
-  set inputUrl($core.String v) { $_setString(4, v); }
+  set inputUrl($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasInputUrl() => $_has(4);
   @$pb.TagNumber(5)
@@ -757,34 +929,43 @@ class EntityFilter extends $pb.GeneratedMessage {
     return $result;
   }
   EntityFilter._() : super();
-  factory EntityFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityFilter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.datastore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'kinds')
     ..pPS(2, _omitFieldNames ? '' : 'namespaceIds')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntityFilter clone() => EntityFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityFilter copyWith(void Function(EntityFilter) updates) => super.copyWith((message) => updates(message as EntityFilter)) as EntityFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityFilter copyWith(void Function(EntityFilter) updates) =>
+      super.copyWith((message) => updates(message as EntityFilter))
+          as EntityFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntityFilter create() => EntityFilter._();
   EntityFilter createEmptyInstance() => create();
-  static $pb.PbList<EntityFilter> createRepeated() => $pb.PbList<EntityFilter>();
+  static $pb.PbList<EntityFilter> createRepeated() =>
+      $pb.PbList<EntityFilter>();
   @$core.pragma('dart2js:noInline')
-  static EntityFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityFilter>(create);
+  static EntityFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityFilter>(create);
   static EntityFilter? _defaultInstance;
 
   /// If empty, then this represents all kinds.
@@ -802,6 +983,6 @@ class EntityFilter extends $pb.GeneratedMessage {
   $core.List<$core.String> get namespaceIds => $_getList(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -18,9 +18,22 @@ const DashboardFilter$json = {
   '1': 'DashboardFilter',
   '2': [
     {'1': 'label_key', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'labelKey'},
-    {'1': 'template_variable', '3': 3, '4': 1, '5': 9, '10': 'templateVariable'},
+    {
+      '1': 'template_variable',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'templateVariable'
+    },
     {'1': 'string_value', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'stringValue'},
-    {'1': 'filter_type', '3': 5, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.DashboardFilter.FilterType', '10': 'filterType'},
+    {
+      '1': 'filter_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.DashboardFilter.FilterType',
+      '10': 'filterType'
+    },
   ],
   '4': [DashboardFilter_FilterType$json],
   '8': [
@@ -51,4 +64,3 @@ final $typed_data.Uint8List dashboardFilterDescriptor = $convert.base64Decode(
     '9VUkNFX0xBQkVMEAESEAoMTUVUUklDX0xBQkVMEAISFwoTVVNFUl9NRVRBREFUQV9MQUJFTBAD'
     'EhkKFVNZU1RFTV9NRVRBREFUQV9MQUJFTBAEEgkKBUdST1VQEAVCDwoNZGVmYXVsdF92YWx1ZQ'
     '==');
-

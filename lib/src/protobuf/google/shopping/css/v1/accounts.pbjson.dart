@@ -18,8 +18,24 @@ const ListChildAccountsRequest$json = {
   '1': 'ListChildAccountsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'label_id', '3': 2, '4': 1, '5': 3, '9': 0, '10': 'labelId', '17': true},
-    {'1': 'full_name', '3': 3, '4': 1, '5': 9, '9': 1, '10': 'fullName', '17': true},
+    {
+      '1': 'label_id',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'labelId',
+      '17': true
+    },
+    {
+      '1': 'full_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'fullName',
+      '17': true
+    },
     {'1': 'page_size', '3': 4, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
   ],
@@ -41,7 +57,14 @@ final $typed_data.Uint8List listChildAccountsRequestDescriptor = $convert.base64
 const ListChildAccountsResponse$json = {
   '1': 'ListChildAccountsResponse',
   '2': [
-    {'1': 'accounts', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.css.v1.Account', '10': 'accounts'},
+    {
+      '1': 'accounts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.css.v1.Account',
+      '10': 'accounts'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -57,7 +80,16 @@ const GetAccountRequest$json = {
   '1': 'GetAccountRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'parent', '3': 2, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'parent', '17': true},
+    {
+      '1': 'parent',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'parent',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_parent'},
@@ -76,7 +108,16 @@ const UpdateAccountLabelsRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'label_ids', '3': 2, '4': 3, '5': 3, '10': 'labelIds'},
-    {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'parent', '17': true},
+    {
+      '1': 'parent',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'parent',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_parent'},
@@ -96,12 +137,43 @@ const Account$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'full_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'fullName'},
-    {'1': 'display_name', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'displayName', '17': true},
-    {'1': 'homepage_uri', '3': 4, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'homepageUri', '17': true},
+    {
+      '1': 'display_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'displayName',
+      '17': true
+    },
+    {
+      '1': 'homepage_uri',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'homepageUri',
+      '17': true
+    },
     {'1': 'parent', '3': 5, '4': 1, '5': 9, '9': 2, '10': 'parent', '17': true},
     {'1': 'label_ids', '3': 6, '4': 3, '5': 3, '10': 'labelIds'},
-    {'1': 'automatic_label_ids', '3': 7, '4': 3, '5': 3, '10': 'automaticLabelIds'},
-    {'1': 'account_type', '3': 8, '4': 1, '5': 14, '6': '.google.shopping.css.v1.Account.AccountType', '8': {}, '10': 'accountType'},
+    {
+      '1': 'automatic_label_ids',
+      '3': 7,
+      '4': 3,
+      '5': 3,
+      '10': 'automaticLabelIds'
+    },
+    {
+      '1': 'account_type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.css.v1.Account.AccountType',
+      '8': {},
+      '10': 'accountType'
+    },
   ],
   '4': [Account_AccountType$json],
   '7': {},
@@ -142,4 +214,3 @@ final $typed_data.Uint8List accountDescriptor = $convert.base64Decode(
     '1DQRAGEhEKDU1DX1NUQU5EQUxPTkUQBxIVChFNQ19NQ0FfU1VCQUNDT1VOVBAIOkbqQUMKGmNz'
     'cy5nb29nbGVhcGlzLmNvbS9BY2NvdW50EhJhY2NvdW50cy97YWNjb3VudH0qCGFjY291bnRzMg'
     'dhY2NvdW50Qg8KDV9kaXNwbGF5X25hbWVCDwoNX2hvbWVwYWdlX3VyaUIJCgdfcGFyZW50');
-

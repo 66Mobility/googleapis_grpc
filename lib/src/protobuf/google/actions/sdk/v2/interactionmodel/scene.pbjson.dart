@@ -17,11 +17,46 @@ import 'dart:typed_data' as $typed_data;
 const Scene$json = {
   '1': 'Scene',
   '2': [
-    {'1': 'on_enter', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'onEnter'},
-    {'1': 'intent_events', '3': 2, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.IntentEvent', '10': 'intentEvents'},
-    {'1': 'conditional_events', '3': 3, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.ConditionalEvent', '10': 'conditionalEvents'},
-    {'1': 'slots', '3': 4, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Slot', '10': 'slots'},
-    {'1': 'on_slot_updated', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'onSlotUpdated'},
+    {
+      '1': 'on_enter',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'onEnter'
+    },
+    {
+      '1': 'intent_events',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.IntentEvent',
+      '10': 'intentEvents'
+    },
+    {
+      '1': 'conditional_events',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.ConditionalEvent',
+      '10': 'conditionalEvents'
+    },
+    {
+      '1': 'slots',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.Slot',
+      '10': 'slots'
+    },
+    {
+      '1': 'on_slot_updated',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'onSlotUpdated'
+    },
   ],
 };
 
@@ -36,4 +71,3 @@ final $typed_data.Uint8List sceneDescriptor = $convert.base64Decode(
     'bm1vZGVsLlNsb3RSBXNsb3RzElwKD29uX3Nsb3RfdXBkYXRlZBgFIAEoCzI0Lmdvb2dsZS5hY3'
     'Rpb25zLnNkay52Mi5pbnRlcmFjdGlvbm1vZGVsLkV2ZW50SGFuZGxlclINb25TbG90VXBkYXRl'
     'ZA==');
-

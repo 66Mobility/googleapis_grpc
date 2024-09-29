@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Quota$json = {
   '1': 'Quota',
   '2': [
-    {'1': 'limits', '3': 3, '4': 3, '5': 11, '6': '.google.api.QuotaLimit', '10': 'limits'},
-    {'1': 'metric_rules', '3': 4, '4': 3, '5': 11, '6': '.google.api.MetricRule', '10': 'metricRules'},
+    {
+      '1': 'limits',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.QuotaLimit',
+      '10': 'limits'
+    },
+    {
+      '1': 'metric_rules',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MetricRule',
+      '10': 'metricRules'
+    },
   ],
 };
 
@@ -33,7 +47,14 @@ const MetricRule$json = {
   '1': 'MetricRule',
   '2': [
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
-    {'1': 'metric_costs', '3': 2, '4': 3, '5': 11, '6': '.google.api.MetricRule.MetricCostsEntry', '10': 'metricCosts'},
+    {
+      '1': 'metric_costs',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MetricRule.MetricCostsEntry',
+      '10': 'metricCosts'
+    },
   ],
   '3': [MetricRule_MetricCostsEntry$json],
 };
@@ -67,7 +88,14 @@ const QuotaLimit$json = {
     {'1': 'duration', '3': 5, '4': 1, '5': 9, '10': 'duration'},
     {'1': 'metric', '3': 8, '4': 1, '5': 9, '10': 'metric'},
     {'1': 'unit', '3': 9, '4': 1, '5': 9, '10': 'unit'},
-    {'1': 'values', '3': 10, '4': 3, '5': 11, '6': '.google.api.QuotaLimit.ValuesEntry', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.QuotaLimit.ValuesEntry',
+      '10': 'values'
+    },
     {'1': 'display_name', '3': 12, '4': 1, '5': 9, '10': 'displayName'},
   ],
   '3': [QuotaLimit_ValuesEntry$json],
@@ -92,4 +120,3 @@ final $typed_data.Uint8List quotaLimitDescriptor = $convert.base64Decode(
     'CSABKAlSBHVuaXQSOgoGdmFsdWVzGAogAygLMiIuZ29vZ2xlLmFwaS5RdW90YUxpbWl0LlZhbH'
     'Vlc0VudHJ5UgZ2YWx1ZXMSIQoMZGlzcGxheV9uYW1lGAwgASgJUgtkaXNwbGF5TmFtZRo5CgtW'
     'YWx1ZXNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoA1IFdmFsdWU6AjgB');
-

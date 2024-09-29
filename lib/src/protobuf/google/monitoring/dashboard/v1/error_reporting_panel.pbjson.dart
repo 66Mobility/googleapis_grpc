@@ -28,4 +28,3 @@ final $typed_data.Uint8List errorReportingPanelDescriptor = $convert.base64Decod
     'ChNFcnJvclJlcG9ydGluZ1BhbmVsEiMKDXByb2plY3RfbmFtZXMYASADKAlSDHByb2plY3ROYW'
     '1lcxIaCghzZXJ2aWNlcxgCIAMoCVIIc2VydmljZXMSGgoIdmVyc2lvbnMYAyADKAlSCHZlcnNp'
     'b25z');
-

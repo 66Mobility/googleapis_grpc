@@ -18,17 +18,65 @@ const LfpSale$json = {
   '1': 'LfpSale',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'target_account', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'targetAccount'},
+    {
+      '1': 'target_account',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'targetAccount'
+    },
     {'1': 'store_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'storeCode'},
     {'1': 'offer_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'offerId'},
     {'1': 'region_code', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'regionCode'},
-    {'1': 'content_language', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'content_language',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
     {'1': 'gtin', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'gtin'},
-    {'1': 'price', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '8': {}, '10': 'price'},
+    {
+      '1': 'price',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '8': {},
+      '10': 'price'
+    },
     {'1': 'quantity', '3': 9, '4': 1, '5': 3, '8': {}, '10': 'quantity'},
-    {'1': 'sale_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'saleTime'},
-    {'1': 'uid', '3': 11, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'uid', '17': true},
-    {'1': 'feed_label', '3': 12, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'feedLabel', '17': true},
+    {
+      '1': 'sale_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'saleTime'
+    },
+    {
+      '1': 'uid',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'uid',
+      '17': true
+    },
+    {
+      '1': 'feed_label',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'feedLabel',
+      '17': true
+    },
   ],
   '7': {},
   '8': [
@@ -56,7 +104,15 @@ const InsertLfpSaleRequest$json = {
   '1': 'InsertLfpSaleRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'lfp_sale', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.lfp.v1beta.LfpSale', '8': {}, '10': 'lfpSale'},
+    {
+      '1': 'lfp_sale',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.lfp.v1beta.LfpSale',
+      '8': {},
+      '10': 'lfpSale'
+    },
   ],
 };
 
@@ -65,4 +121,3 @@ final $typed_data.Uint8List insertLfpSaleRequestDescriptor = $convert.base64Deco
     'ChRJbnNlcnRMZnBTYWxlUmVxdWVzdBIbCgZwYXJlbnQYASABKAlCA+BBAlIGcGFyZW50EkwKCG'
     'xmcF9zYWxlGAIgASgLMiwuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmxmcC52MWJldGEuTGZw'
     'U2FsZUID4EECUgdsZnBTYWxl');
-

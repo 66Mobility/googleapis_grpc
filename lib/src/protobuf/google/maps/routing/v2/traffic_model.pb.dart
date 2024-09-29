@@ -12,4 +12,3 @@
 import 'dart:core' as $core;
 
 export 'traffic_model.pbenum.dart';
-

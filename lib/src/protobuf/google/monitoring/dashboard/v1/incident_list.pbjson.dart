@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const IncidentList$json = {
   '1': 'IncidentList',
   '2': [
-    {'1': 'monitored_resources', '3': 1, '4': 3, '5': 11, '6': '.google.api.MonitoredResource', '8': {}, '10': 'monitoredResources'},
+    {
+      '1': 'monitored_resources',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResource',
+      '8': {},
+      '10': 'monitoredResources'
+    },
     {'1': 'policy_names', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'policyNames'},
   ],
 };
@@ -27,4 +35,3 @@ final $typed_data.Uint8List incidentListDescriptor = $convert.base64Decode(
     'CgxJbmNpZGVudExpc3QSUwoTbW9uaXRvcmVkX3Jlc291cmNlcxgBIAMoCzIdLmdvb2dsZS5hcG'
     'kuTW9uaXRvcmVkUmVzb3VyY2VCA+BBAVISbW9uaXRvcmVkUmVzb3VyY2VzEiYKDHBvbGljeV9u'
     'YW1lcxgCIAMoCUID4EEBUgtwb2xpY3lOYW1lcw==');
-

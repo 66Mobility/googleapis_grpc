@@ -18,8 +18,23 @@ const IntentEvent$json = {
   '1': 'IntentEvent',
   '2': [
     {'1': 'intent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'intent'},
-    {'1': 'transition_to_scene', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'transitionToScene'},
-    {'1': 'handler', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '8': {}, '10': 'handler'},
+    {
+      '1': 'transition_to_scene',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'transitionToScene'
+    },
+    {
+      '1': 'handler',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '8': {},
+      '10': 'handler'
+    },
   ],
 };
 
@@ -29,4 +44,3 @@ final $typed_data.Uint8List intentEventDescriptor = $convert.base64Decode(
     '5fdG9fc2NlbmUYAiABKAlCA+BBAVIRdHJhbnNpdGlvblRvU2NlbmUSUwoHaGFuZGxlchgDIAEo'
     'CzI0Lmdvb2dsZS5hY3Rpb25zLnNkay52Mi5pbnRlcmFjdGlvbm1vZGVsLkV2ZW50SGFuZGxlck'
     'ID4EEBUgdoYW5kbGVy');
-

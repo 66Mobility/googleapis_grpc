@@ -47,8 +47,23 @@ final $typed_data.Uint8List polylineEncodingDescriptor = $convert.base64Decode(
 const Polyline$json = {
   '1': 'Polyline',
   '2': [
-    {'1': 'encoded_polyline', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'encodedPolyline'},
-    {'1': 'geo_json_linestring', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '9': 0, '10': 'geoJsonLinestring'},
+    {
+      '1': 'encoded_polyline',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'encodedPolyline'
+    },
+    {
+      '1': 'geo_json_linestring',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '9': 0,
+      '10': 'geoJsonLinestring'
+    },
   ],
   '8': [
     {'1': 'polyline_type'},
@@ -60,4 +75,3 @@ final $typed_data.Uint8List polylineDescriptor = $convert.base64Decode(
     'CghQb2x5bGluZRIrChBlbmNvZGVkX3BvbHlsaW5lGAEgASgJSABSD2VuY29kZWRQb2x5bGluZR'
     'JJChNnZW9fanNvbl9saW5lc3RyaW5nGAIgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdEgA'
     'UhFnZW9Kc29uTGluZXN0cmluZ0IPCg1wb2x5bGluZV90eXBl');
-

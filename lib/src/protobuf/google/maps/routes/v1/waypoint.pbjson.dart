@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const Waypoint$json = {
   '1': 'Waypoint',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Location', '9': 0, '10': 'location'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Location',
+      '9': 0,
+      '10': 'location'
+    },
     {'1': 'place_id', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'placeId'},
     {'1': 'via', '3': 3, '4': 1, '5': 8, '10': 'via'},
     {'1': 'vehicle_stopover', '3': 4, '4': 1, '5': 8, '10': 'vehicleStopover'},
@@ -39,8 +47,22 @@ final $typed_data.Uint8List waypointDescriptor = $convert.base64Decode(
 const Location$json = {
   '1': 'Location',
   '2': [
-    {'1': 'lat_lng', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'latLng'},
-    {'1': 'heading', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'heading'},
+    {
+      '1': 'lat_lng',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'latLng'
+    },
+    {
+      '1': 'heading',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'heading'
+    },
   ],
 };
 
@@ -48,4 +70,3 @@ const Location$json = {
 final $typed_data.Uint8List locationDescriptor = $convert.base64Decode(
     'CghMb2NhdGlvbhIsCgdsYXRfbG5nGAEgASgLMhMuZ29vZ2xlLnR5cGUuTGF0TG5nUgZsYXRMbm'
     'cSNQoHaGVhZGluZxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlUgdoZWFkaW5n');
-

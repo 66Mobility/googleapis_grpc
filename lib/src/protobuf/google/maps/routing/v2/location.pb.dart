@@ -32,25 +32,33 @@ class Location extends $pb.GeneratedMessage {
     return $result;
   }
   Location._() : super();
-  factory Location.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Location.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Location.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Location.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Location', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $325.LatLng.create)
-    ..aOM<$307.Int32Value>(2, _omitFieldNames ? '' : 'heading', subBuilder: $307.Int32Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Location',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$307.Int32Value>(2, _omitFieldNames ? '' : 'heading',
+        subBuilder: $307.Int32Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Location clone() => Location()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Location copyWith(void Function(Location) updates) => super.copyWith((message) => updates(message as Location)) as Location;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Location copyWith(void Function(Location) updates) =>
+      super.copyWith((message) => updates(message as Location)) as Location;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -59,14 +67,18 @@ class Location extends $pb.GeneratedMessage {
   Location createEmptyInstance() => create();
   static $pb.PbList<Location> createRepeated() => $pb.PbList<Location>();
   @$core.pragma('dart2js:noInline')
-  static Location getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Location>(create);
+  static Location getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Location>(create);
   static Location? _defaultInstance;
 
   /// The waypoint's geographic coordinates.
   @$pb.TagNumber(1)
   $325.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($325.LatLng v) { setField(1, v); }
+  set latLng($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
@@ -83,7 +95,10 @@ class Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $307.Int32Value get heading => $_getN(1);
   @$pb.TagNumber(2)
-  set heading($307.Int32Value v) { setField(2, v); }
+  set heading($307.Int32Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHeading() => $_has(1);
   @$pb.TagNumber(2)
@@ -92,6 +107,6 @@ class Location extends $pb.GeneratedMessage {
   $307.Int32Value ensureHeading() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

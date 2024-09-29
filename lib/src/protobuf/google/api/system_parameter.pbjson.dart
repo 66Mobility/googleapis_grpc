@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const SystemParameters$json = {
   '1': 'SystemParameters',
   '2': [
-    {'1': 'rules', '3': 1, '4': 3, '5': 11, '6': '.google.api.SystemParameterRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.SystemParameterRule',
+      '10': 'rules'
+    },
   ],
 };
 
@@ -31,7 +38,14 @@ const SystemParameterRule$json = {
   '1': 'SystemParameterRule',
   '2': [
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
-    {'1': 'parameters', '3': 2, '4': 3, '5': 11, '6': '.google.api.SystemParameter', '10': 'parameters'},
+    {
+      '1': 'parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.SystemParameter',
+      '10': 'parameters'
+    },
   ],
 };
 
@@ -46,7 +60,13 @@ const SystemParameter$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'http_header', '3': 2, '4': 1, '5': 9, '10': 'httpHeader'},
-    {'1': 'url_query_parameter', '3': 3, '4': 1, '5': 9, '10': 'urlQueryParameter'},
+    {
+      '1': 'url_query_parameter',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'urlQueryParameter'
+    },
   ],
 };
 
@@ -55,4 +75,3 @@ final $typed_data.Uint8List systemParameterDescriptor = $convert.base64Decode(
     'Cg9TeXN0ZW1QYXJhbWV0ZXISEgoEbmFtZRgBIAEoCVIEbmFtZRIfCgtodHRwX2hlYWRlchgCIA'
     'EoCVIKaHR0cEhlYWRlchIuChN1cmxfcXVlcnlfcGFyYW1ldGVyGAMgASgJUhF1cmxRdWVyeVBh'
     'cmFtZXRlcg==');
-

@@ -33,18 +33,87 @@ const CVSSv3$json = {
   '1': 'CVSSv3',
   '2': [
     {'1': 'base_score', '3': 1, '4': 1, '5': 2, '10': 'baseScore'},
-    {'1': 'exploitability_score', '3': 2, '4': 1, '5': 2, '10': 'exploitabilityScore'},
+    {
+      '1': 'exploitability_score',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '10': 'exploitabilityScore'
+    },
     {'1': 'impact_score', '3': 3, '4': 1, '5': 2, '10': 'impactScore'},
-    {'1': 'attack_vector', '3': 5, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.AttackVector', '10': 'attackVector'},
-    {'1': 'attack_complexity', '3': 6, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.AttackComplexity', '10': 'attackComplexity'},
-    {'1': 'privileges_required', '3': 7, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.PrivilegesRequired', '10': 'privilegesRequired'},
-    {'1': 'user_interaction', '3': 8, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.UserInteraction', '10': 'userInteraction'},
-    {'1': 'scope', '3': 9, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.Scope', '10': 'scope'},
-    {'1': 'confidentiality_impact', '3': 10, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.Impact', '10': 'confidentialityImpact'},
-    {'1': 'integrity_impact', '3': 11, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.Impact', '10': 'integrityImpact'},
-    {'1': 'availability_impact', '3': 12, '4': 1, '5': 14, '6': '.grafeas.v1.CVSSv3.Impact', '10': 'availabilityImpact'},
+    {
+      '1': 'attack_vector',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.AttackVector',
+      '10': 'attackVector'
+    },
+    {
+      '1': 'attack_complexity',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.AttackComplexity',
+      '10': 'attackComplexity'
+    },
+    {
+      '1': 'privileges_required',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.PrivilegesRequired',
+      '10': 'privilegesRequired'
+    },
+    {
+      '1': 'user_interaction',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.UserInteraction',
+      '10': 'userInteraction'
+    },
+    {
+      '1': 'scope',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.Scope',
+      '10': 'scope'
+    },
+    {
+      '1': 'confidentiality_impact',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.Impact',
+      '10': 'confidentialityImpact'
+    },
+    {
+      '1': 'integrity_impact',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.Impact',
+      '10': 'integrityImpact'
+    },
+    {
+      '1': 'availability_impact',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSSv3.Impact',
+      '10': 'availabilityImpact'
+    },
   ],
-  '4': [CVSSv3_AttackVector$json, CVSSv3_AttackComplexity$json, CVSSv3_PrivilegesRequired$json, CVSSv3_UserInteraction$json, CVSSv3_Scope$json, CVSSv3_Impact$json],
+  '4': [
+    CVSSv3_AttackVector$json,
+    CVSSv3_AttackComplexity$json,
+    CVSSv3_PrivilegesRequired$json,
+    CVSSv3_UserInteraction$json,
+    CVSSv3_Scope$json,
+    CVSSv3_Impact$json
+  ],
 };
 
 @$core.Deprecated('Use cVSSv3Descriptor instead')
@@ -145,19 +214,96 @@ const CVSS$json = {
   '1': 'CVSS',
   '2': [
     {'1': 'base_score', '3': 1, '4': 1, '5': 2, '10': 'baseScore'},
-    {'1': 'exploitability_score', '3': 2, '4': 1, '5': 2, '10': 'exploitabilityScore'},
+    {
+      '1': 'exploitability_score',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '10': 'exploitabilityScore'
+    },
     {'1': 'impact_score', '3': 3, '4': 1, '5': 2, '10': 'impactScore'},
-    {'1': 'attack_vector', '3': 4, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.AttackVector', '10': 'attackVector'},
-    {'1': 'attack_complexity', '3': 5, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.AttackComplexity', '10': 'attackComplexity'},
-    {'1': 'authentication', '3': 6, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.Authentication', '10': 'authentication'},
-    {'1': 'privileges_required', '3': 7, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.PrivilegesRequired', '10': 'privilegesRequired'},
-    {'1': 'user_interaction', '3': 8, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.UserInteraction', '10': 'userInteraction'},
-    {'1': 'scope', '3': 9, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.Scope', '10': 'scope'},
-    {'1': 'confidentiality_impact', '3': 10, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.Impact', '10': 'confidentialityImpact'},
-    {'1': 'integrity_impact', '3': 11, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.Impact', '10': 'integrityImpact'},
-    {'1': 'availability_impact', '3': 12, '4': 1, '5': 14, '6': '.grafeas.v1.CVSS.Impact', '10': 'availabilityImpact'},
+    {
+      '1': 'attack_vector',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.AttackVector',
+      '10': 'attackVector'
+    },
+    {
+      '1': 'attack_complexity',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.AttackComplexity',
+      '10': 'attackComplexity'
+    },
+    {
+      '1': 'authentication',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.Authentication',
+      '10': 'authentication'
+    },
+    {
+      '1': 'privileges_required',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.PrivilegesRequired',
+      '10': 'privilegesRequired'
+    },
+    {
+      '1': 'user_interaction',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.UserInteraction',
+      '10': 'userInteraction'
+    },
+    {
+      '1': 'scope',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.Scope',
+      '10': 'scope'
+    },
+    {
+      '1': 'confidentiality_impact',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.Impact',
+      '10': 'confidentialityImpact'
+    },
+    {
+      '1': 'integrity_impact',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.Impact',
+      '10': 'integrityImpact'
+    },
+    {
+      '1': 'availability_impact',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.CVSS.Impact',
+      '10': 'availabilityImpact'
+    },
   ],
-  '4': [CVSS_AttackVector$json, CVSS_AttackComplexity$json, CVSS_Authentication$json, CVSS_PrivilegesRequired$json, CVSS_UserInteraction$json, CVSS_Scope$json, CVSS_Impact$json],
+  '4': [
+    CVSS_AttackVector$json,
+    CVSS_AttackComplexity$json,
+    CVSS_Authentication$json,
+    CVSS_PrivilegesRequired$json,
+    CVSS_UserInteraction$json,
+    CVSS_Scope$json,
+    CVSS_Impact$json
+  ],
 };
 
 @$core.Deprecated('Use cVSSDescriptor instead')
@@ -270,4 +416,3 @@ final $typed_data.Uint8List cVSSDescriptor = $convert.base64Decode(
     'oPU0NPUEVfVU5DSEFOR0VEEAESEQoNU0NPUEVfQ0hBTkdFRBACInsKBkltcGFjdBIWChJJTVBB'
     'Q1RfVU5TUEVDSUZJRUQQABIPCgtJTVBBQ1RfSElHSBABEg4KCklNUEFDVF9MT1cQAhIPCgtJTV'
     'BBQ1RfTk9ORRADEhIKDklNUEFDVF9QQVJUSUFMEAQSEwoPSU1QQUNUX0NPTVBMRVRFEAU=');
-

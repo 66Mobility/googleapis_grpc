@@ -39,26 +39,42 @@ class Video extends $pb.GeneratedMessage {
     return $result;
   }
   Video._() : super();
-  factory Video.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Video.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Video.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Video.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Video', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.aerialview.v1'), createEmptyInstance: create)
-    ..m<$core.String, Uris>(1, _omitFieldNames ? '' : 'uris', entryClassName: 'Video.UrisEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Uris.create, valueDefaultOrMaker: Uris.getDefault, packageName: const $pb.PackageName('google.maps.aerialview.v1'))
-    ..e<Video_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Video_State.STATE_UNSPECIFIED, valueOf: Video_State.valueOf, enumValues: Video_State.values)
-    ..aOM<VideoMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: VideoMetadata.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Video',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.aerialview.v1'),
+      createEmptyInstance: create)
+    ..m<$core.String, Uris>(1, _omitFieldNames ? '' : 'uris',
+        entryClassName: 'Video.UrisEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: Uris.create,
+        valueDefaultOrMaker: Uris.getDefault,
+        packageName: const $pb.PackageName('google.maps.aerialview.v1'))
+    ..e<Video_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Video_State.STATE_UNSPECIFIED,
+        valueOf: Video_State.valueOf,
+        enumValues: Video_State.values)
+    ..aOM<VideoMetadata>(3, _omitFieldNames ? '' : 'metadata',
+        subBuilder: VideoMetadata.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Video clone() => Video()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Video copyWith(void Function(Video) updates) => super.copyWith((message) => updates(message as Video)) as Video;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Video copyWith(void Function(Video) updates) =>
+      super.copyWith((message) => updates(message as Video)) as Video;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -67,7 +83,8 @@ class Video extends $pb.GeneratedMessage {
   Video createEmptyInstance() => create();
   static $pb.PbList<Video> createRepeated() => $pb.PbList<Video>();
   @$core.pragma('dart2js:noInline')
-  static Video getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Video>(create);
+  static Video getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Video>(create);
   static Video? _defaultInstance;
 
   /// A mapping of media types to their URIs.
@@ -80,7 +97,10 @@ class Video extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Video_State get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(Video_State v) { setField(2, v); }
+  set state(Video_State v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -90,7 +110,10 @@ class Video extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   VideoMetadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata(VideoMetadata v) { setField(3, v); }
+  set metadata(VideoMetadata v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
@@ -115,25 +138,31 @@ class Uris extends $pb.GeneratedMessage {
     return $result;
   }
   Uris._() : super();
-  factory Uris.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Uris.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Uris.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Uris.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Uris', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.aerialview.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Uris',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.aerialview.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'landscapeUri')
     ..aOS(2, _omitFieldNames ? '' : 'portraitUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Uris clone() => Uris()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Uris copyWith(void Function(Uris) updates) => super.copyWith((message) => updates(message as Uris)) as Uris;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Uris copyWith(void Function(Uris) updates) =>
+      super.copyWith((message) => updates(message as Uris)) as Uris;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -142,14 +171,18 @@ class Uris extends $pb.GeneratedMessage {
   Uris createEmptyInstance() => create();
   static $pb.PbList<Uris> createRepeated() => $pb.PbList<Uris>();
   @$core.pragma('dart2js:noInline')
-  static Uris getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Uris>(create);
+  static Uris getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Uris>(create);
   static Uris? _defaultInstance;
 
   /// A signed short-lived URI for the media in a landscape orientation.
   @$pb.TagNumber(1)
   $core.String get landscapeUri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set landscapeUri($core.String v) { $_setString(0, v); }
+  set landscapeUri($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLandscapeUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -159,7 +192,10 @@ class Uris extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get portraitUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set portraitUri($core.String v) { $_setString(1, v); }
+  set portraitUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPortraitUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -186,42 +222,56 @@ class VideoMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   VideoMetadata._() : super();
-  factory VideoMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VideoMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VideoMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VideoMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.aerialview.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VideoMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.aerialview.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'videoId')
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'captureDate', subBuilder: $327.Date.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'captureDate',
+        subBuilder: $327.Date.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VideoMetadata clone() => VideoMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VideoMetadata copyWith(void Function(VideoMetadata) updates) => super.copyWith((message) => updates(message as VideoMetadata)) as VideoMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VideoMetadata copyWith(void Function(VideoMetadata) updates) =>
+      super.copyWith((message) => updates(message as VideoMetadata))
+          as VideoMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VideoMetadata create() => VideoMetadata._();
   VideoMetadata createEmptyInstance() => create();
-  static $pb.PbList<VideoMetadata> createRepeated() => $pb.PbList<VideoMetadata>();
+  static $pb.PbList<VideoMetadata> createRepeated() =>
+      $pb.PbList<VideoMetadata>();
   @$core.pragma('dart2js:noInline')
-  static VideoMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VideoMetadata>(create);
+  static VideoMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VideoMetadata>(create);
   static VideoMetadata? _defaultInstance;
 
   /// An ID for the video, and the recommended way to retrieve a video.
   @$pb.TagNumber(1)
   $core.String get videoId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set videoId($core.String v) { $_setString(0, v); }
+  set videoId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVideoId() => $_has(0);
   @$pb.TagNumber(1)
@@ -232,7 +282,10 @@ class VideoMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $327.Date get captureDate => $_getN(1);
   @$pb.TagNumber(2)
-  set captureDate($327.Date v) { setField(2, v); }
+  set captureDate($327.Date v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCaptureDate() => $_has(1);
   @$pb.TagNumber(2)
@@ -244,7 +297,10 @@ class VideoMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($264.Duration v) { setField(3, v); }
+  set duration($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -265,40 +321,52 @@ class RenderVideoRequest extends $pb.GeneratedMessage {
     return $result;
   }
   RenderVideoRequest._() : super();
-  factory RenderVideoRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RenderVideoRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RenderVideoRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RenderVideoRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RenderVideoRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.aerialview.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RenderVideoRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.aerialview.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'address')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RenderVideoRequest clone() => RenderVideoRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RenderVideoRequest copyWith(void Function(RenderVideoRequest) updates) => super.copyWith((message) => updates(message as RenderVideoRequest)) as RenderVideoRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RenderVideoRequest copyWith(void Function(RenderVideoRequest) updates) =>
+      super.copyWith((message) => updates(message as RenderVideoRequest))
+          as RenderVideoRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RenderVideoRequest create() => RenderVideoRequest._();
   RenderVideoRequest createEmptyInstance() => create();
-  static $pb.PbList<RenderVideoRequest> createRepeated() => $pb.PbList<RenderVideoRequest>();
+  static $pb.PbList<RenderVideoRequest> createRepeated() =>
+      $pb.PbList<RenderVideoRequest>();
   @$core.pragma('dart2js:noInline')
-  static RenderVideoRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RenderVideoRequest>(create);
+  static RenderVideoRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RenderVideoRequest>(create);
   static RenderVideoRequest? _defaultInstance;
 
   /// Required. A US postal address for the location to be rendered in the video.
   @$pb.TagNumber(1)
   $core.String get address => $_getSZ(0);
   @$pb.TagNumber(1)
-  set address($core.String v) { $_setString(0, v); }
+  set address($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -321,41 +389,57 @@ class RenderVideoResponse extends $pb.GeneratedMessage {
     return $result;
   }
   RenderVideoResponse._() : super();
-  factory RenderVideoResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RenderVideoResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RenderVideoResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RenderVideoResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RenderVideoResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.aerialview.v1'), createEmptyInstance: create)
-    ..e<Video_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Video_State.STATE_UNSPECIFIED, valueOf: Video_State.valueOf, enumValues: Video_State.values)
-    ..aOM<VideoMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: VideoMetadata.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RenderVideoResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.aerialview.v1'),
+      createEmptyInstance: create)
+    ..e<Video_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Video_State.STATE_UNSPECIFIED,
+        valueOf: Video_State.valueOf,
+        enumValues: Video_State.values)
+    ..aOM<VideoMetadata>(2, _omitFieldNames ? '' : 'metadata',
+        subBuilder: VideoMetadata.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RenderVideoResponse clone() => RenderVideoResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RenderVideoResponse copyWith(void Function(RenderVideoResponse) updates) => super.copyWith((message) => updates(message as RenderVideoResponse)) as RenderVideoResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RenderVideoResponse copyWith(void Function(RenderVideoResponse) updates) =>
+      super.copyWith((message) => updates(message as RenderVideoResponse))
+          as RenderVideoResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RenderVideoResponse create() => RenderVideoResponse._();
   RenderVideoResponse createEmptyInstance() => create();
-  static $pb.PbList<RenderVideoResponse> createRepeated() => $pb.PbList<RenderVideoResponse>();
+  static $pb.PbList<RenderVideoResponse> createRepeated() =>
+      $pb.PbList<RenderVideoResponse>();
   @$core.pragma('dart2js:noInline')
-  static RenderVideoResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RenderVideoResponse>(create);
+  static RenderVideoResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RenderVideoResponse>(create);
   static RenderVideoResponse? _defaultInstance;
 
   /// Current state of the render request.
   @$pb.TagNumber(1)
   Video_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(Video_State v) { setField(1, v); }
+  set state(Video_State v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -365,7 +449,10 @@ class RenderVideoResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   VideoMetadata get metadata => $_getN(1);
   @$pb.TagNumber(2)
-  set metadata(VideoMetadata v) { setField(2, v); }
+  set metadata(VideoMetadata v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
@@ -374,11 +461,7 @@ class RenderVideoResponse extends $pb.GeneratedMessage {
   VideoMetadata ensureMetadata() => $_ensure(1);
 }
 
-enum LookupVideoRequest_Key {
-  videoId, 
-  address, 
-  notSet
-}
+enum LookupVideoRequest_Key { videoId, address, notSet }
 
 /// Request message for `AerialView.LookupVideo`.
 class LookupVideoRequest extends $pb.GeneratedMessage {
@@ -396,50 +479,64 @@ class LookupVideoRequest extends $pb.GeneratedMessage {
     return $result;
   }
   LookupVideoRequest._() : super();
-  factory LookupVideoRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LookupVideoRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LookupVideoRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LookupVideoRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, LookupVideoRequest_Key> _LookupVideoRequest_KeyByTag = {
-    1 : LookupVideoRequest_Key.videoId,
-    2 : LookupVideoRequest_Key.address,
-    0 : LookupVideoRequest_Key.notSet
+  static const $core.Map<$core.int, LookupVideoRequest_Key>
+      _LookupVideoRequest_KeyByTag = {
+    1: LookupVideoRequest_Key.videoId,
+    2: LookupVideoRequest_Key.address,
+    0: LookupVideoRequest_Key.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LookupVideoRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.aerialview.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LookupVideoRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.aerialview.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'videoId')
     ..aOS(2, _omitFieldNames ? '' : 'address')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LookupVideoRequest clone() => LookupVideoRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LookupVideoRequest copyWith(void Function(LookupVideoRequest) updates) => super.copyWith((message) => updates(message as LookupVideoRequest)) as LookupVideoRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LookupVideoRequest copyWith(void Function(LookupVideoRequest) updates) =>
+      super.copyWith((message) => updates(message as LookupVideoRequest))
+          as LookupVideoRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LookupVideoRequest create() => LookupVideoRequest._();
   LookupVideoRequest createEmptyInstance() => create();
-  static $pb.PbList<LookupVideoRequest> createRepeated() => $pb.PbList<LookupVideoRequest>();
+  static $pb.PbList<LookupVideoRequest> createRepeated() =>
+      $pb.PbList<LookupVideoRequest>();
   @$core.pragma('dart2js:noInline')
-  static LookupVideoRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LookupVideoRequest>(create);
+  static LookupVideoRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LookupVideoRequest>(create);
   static LookupVideoRequest? _defaultInstance;
 
-  LookupVideoRequest_Key whichKey() => _LookupVideoRequest_KeyByTag[$_whichOneof(0)]!;
+  LookupVideoRequest_Key whichKey() =>
+      _LookupVideoRequest_KeyByTag[$_whichOneof(0)]!;
   void clearKey() => clearField($_whichOneof(0));
 
   /// An ID returned from `RenderVideo`.
   @$pb.TagNumber(1)
   $core.String get videoId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set videoId($core.String v) { $_setString(0, v); }
+  set videoId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVideoId() => $_has(0);
   @$pb.TagNumber(1)
@@ -449,13 +546,16 @@ class LookupVideoRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get address => $_getSZ(1);
   @$pb.TagNumber(2)
-  set address($core.String v) { $_setString(1, v); }
+  set address($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAddress() => $_has(1);
   @$pb.TagNumber(2)
   void clearAddress() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

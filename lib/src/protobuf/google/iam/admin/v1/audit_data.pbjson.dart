@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AuditData$json = {
   '1': 'AuditData',
   '2': [
-    {'1': 'permission_delta', '3': 1, '4': 1, '5': 11, '6': '.google.iam.admin.v1.AuditData.PermissionDelta', '10': 'permissionDelta'},
+    {
+      '1': 'permission_delta',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.admin.v1.AuditData.PermissionDelta',
+      '10': 'permissionDelta'
+    },
   ],
   '3': [AuditData_PermissionDelta$json],
 };
@@ -26,8 +33,20 @@ const AuditData$json = {
 const AuditData_PermissionDelta$json = {
   '1': 'PermissionDelta',
   '2': [
-    {'1': 'added_permissions', '3': 1, '4': 3, '5': 9, '10': 'addedPermissions'},
-    {'1': 'removed_permissions', '3': 2, '4': 3, '5': 9, '10': 'removedPermissions'},
+    {
+      '1': 'added_permissions',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'addedPermissions'
+    },
+    {
+      '1': 'removed_permissions',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'removedPermissions'
+    },
   ],
 };
 
@@ -37,4 +56,3 @@ final $typed_data.Uint8List auditDataDescriptor = $convert.base64Decode(
     '4udjEuQXVkaXREYXRhLlBlcm1pc3Npb25EZWx0YVIPcGVybWlzc2lvbkRlbHRhGm8KD1Blcm1p'
     'c3Npb25EZWx0YRIrChFhZGRlZF9wZXJtaXNzaW9ucxgBIAMoCVIQYWRkZWRQZXJtaXNzaW9ucx'
     'IvChNyZW1vdmVkX3Blcm1pc3Npb25zGAIgAygJUhJyZW1vdmVkUGVybWlzc2lvbnM=');
-

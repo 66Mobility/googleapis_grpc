@@ -68,27 +68,43 @@ class Aggregation extends $pb.GeneratedMessage {
     return $result;
   }
   Aggregation._() : super();
-  factory Aggregation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Aggregation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Aggregation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Aggregation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Aggregation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod', subBuilder: $264.Duration.create)
-    ..e<Aggregation_Aligner>(2, _omitFieldNames ? '' : 'perSeriesAligner', $pb.PbFieldType.OE, defaultOrMaker: Aggregation_Aligner.ALIGN_NONE, valueOf: Aggregation_Aligner.valueOf, enumValues: Aggregation_Aligner.values)
-    ..e<Aggregation_Reducer>(4, _omitFieldNames ? '' : 'crossSeriesReducer', $pb.PbFieldType.OE, defaultOrMaker: Aggregation_Reducer.REDUCE_NONE, valueOf: Aggregation_Reducer.valueOf, enumValues: Aggregation_Reducer.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Aggregation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod',
+        subBuilder: $264.Duration.create)
+    ..e<Aggregation_Aligner>(
+        2, _omitFieldNames ? '' : 'perSeriesAligner', $pb.PbFieldType.OE,
+        defaultOrMaker: Aggregation_Aligner.ALIGN_NONE,
+        valueOf: Aggregation_Aligner.valueOf,
+        enumValues: Aggregation_Aligner.values)
+    ..e<Aggregation_Reducer>(
+        4, _omitFieldNames ? '' : 'crossSeriesReducer', $pb.PbFieldType.OE,
+        defaultOrMaker: Aggregation_Reducer.REDUCE_NONE,
+        valueOf: Aggregation_Reducer.valueOf,
+        enumValues: Aggregation_Reducer.values)
     ..pPS(5, _omitFieldNames ? '' : 'groupByFields')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Aggregation clone() => Aggregation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Aggregation copyWith(void Function(Aggregation) updates) => super.copyWith((message) => updates(message as Aggregation)) as Aggregation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Aggregation copyWith(void Function(Aggregation) updates) =>
+      super.copyWith((message) => updates(message as Aggregation))
+          as Aggregation;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -97,7 +113,8 @@ class Aggregation extends $pb.GeneratedMessage {
   Aggregation createEmptyInstance() => create();
   static $pb.PbList<Aggregation> createRepeated() => $pb.PbList<Aggregation>();
   @$core.pragma('dart2js:noInline')
-  static Aggregation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Aggregation>(create);
+  static Aggregation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Aggregation>(create);
   static Aggregation? _defaultInstance;
 
   ///  The `alignment_period` specifies a time interval, in seconds, that is used
@@ -115,7 +132,10 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get alignmentPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set alignmentPeriod($264.Duration v) { setField(1, v); }
+  set alignmentPeriod($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAlignmentPeriod() => $_has(0);
   @$pb.TagNumber(1)
@@ -142,7 +162,10 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Aggregation_Aligner get perSeriesAligner => $_getN(1);
   @$pb.TagNumber(2)
-  set perSeriesAligner(Aggregation_Aligner v) { setField(2, v); }
+  set perSeriesAligner(Aggregation_Aligner v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPerSeriesAligner() => $_has(1);
   @$pb.TagNumber(2)
@@ -165,7 +188,10 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Aggregation_Reducer get crossSeriesReducer => $_getN(2);
   @$pb.TagNumber(4)
-  set crossSeriesReducer(Aggregation_Reducer v) { setField(4, v); }
+  set crossSeriesReducer(Aggregation_Reducer v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCrossSeriesReducer() => $_has(2);
   @$pb.TagNumber(4)
@@ -219,36 +245,56 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
     return $result;
   }
   PickTimeSeriesFilter._() : super();
-  factory PickTimeSeriesFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PickTimeSeriesFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PickTimeSeriesFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PickTimeSeriesFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PickTimeSeriesFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..e<PickTimeSeriesFilter_Method>(1, _omitFieldNames ? '' : 'rankingMethod', $pb.PbFieldType.OE, defaultOrMaker: PickTimeSeriesFilter_Method.METHOD_UNSPECIFIED, valueOf: PickTimeSeriesFilter_Method.valueOf, enumValues: PickTimeSeriesFilter_Method.values)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'numTimeSeries', $pb.PbFieldType.O3)
-    ..e<PickTimeSeriesFilter_Direction>(3, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE, defaultOrMaker: PickTimeSeriesFilter_Direction.DIRECTION_UNSPECIFIED, valueOf: PickTimeSeriesFilter_Direction.valueOf, enumValues: PickTimeSeriesFilter_Direction.values)
-    ..aOM<$511.Interval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $511.Interval.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PickTimeSeriesFilter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..e<PickTimeSeriesFilter_Method>(
+        1, _omitFieldNames ? '' : 'rankingMethod', $pb.PbFieldType.OE,
+        defaultOrMaker: PickTimeSeriesFilter_Method.METHOD_UNSPECIFIED,
+        valueOf: PickTimeSeriesFilter_Method.valueOf,
+        enumValues: PickTimeSeriesFilter_Method.values)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'numTimeSeries', $pb.PbFieldType.O3)
+    ..e<PickTimeSeriesFilter_Direction>(
+        3, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE,
+        defaultOrMaker: PickTimeSeriesFilter_Direction.DIRECTION_UNSPECIFIED,
+        valueOf: PickTimeSeriesFilter_Direction.valueOf,
+        enumValues: PickTimeSeriesFilter_Direction.values)
+    ..aOM<$511.Interval>(4, _omitFieldNames ? '' : 'interval',
+        subBuilder: $511.Interval.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PickTimeSeriesFilter clone() => PickTimeSeriesFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PickTimeSeriesFilter copyWith(void Function(PickTimeSeriesFilter) updates) => super.copyWith((message) => updates(message as PickTimeSeriesFilter)) as PickTimeSeriesFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PickTimeSeriesFilter clone() =>
+      PickTimeSeriesFilter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PickTimeSeriesFilter copyWith(void Function(PickTimeSeriesFilter) updates) =>
+      super.copyWith((message) => updates(message as PickTimeSeriesFilter))
+          as PickTimeSeriesFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PickTimeSeriesFilter create() => PickTimeSeriesFilter._();
   PickTimeSeriesFilter createEmptyInstance() => create();
-  static $pb.PbList<PickTimeSeriesFilter> createRepeated() => $pb.PbList<PickTimeSeriesFilter>();
+  static $pb.PbList<PickTimeSeriesFilter> createRepeated() =>
+      $pb.PbList<PickTimeSeriesFilter>();
   @$core.pragma('dart2js:noInline')
-  static PickTimeSeriesFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PickTimeSeriesFilter>(create);
+  static PickTimeSeriesFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PickTimeSeriesFilter>(create);
   static PickTimeSeriesFilter? _defaultInstance;
 
   /// `ranking_method` is applied to each time series independently to produce
@@ -257,7 +303,10 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PickTimeSeriesFilter_Method get rankingMethod => $_getN(0);
   @$pb.TagNumber(1)
-  set rankingMethod(PickTimeSeriesFilter_Method v) { setField(1, v); }
+  set rankingMethod(PickTimeSeriesFilter_Method v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRankingMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -267,7 +316,10 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get numTimeSeries => $_getIZ(1);
   @$pb.TagNumber(2)
-  set numTimeSeries($core.int v) { $_setSignedInt32(1, v); }
+  set numTimeSeries($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNumTimeSeries() => $_has(1);
   @$pb.TagNumber(2)
@@ -277,7 +329,10 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   PickTimeSeriesFilter_Direction get direction => $_getN(2);
   @$pb.TagNumber(3)
-  set direction(PickTimeSeriesFilter_Direction v) { setField(3, v); }
+  set direction(PickTimeSeriesFilter_Direction v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDirection() => $_has(2);
   @$pb.TagNumber(3)
@@ -287,7 +342,10 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $511.Interval get interval => $_getN(3);
   @$pb.TagNumber(4)
-  set interval($511.Interval v) { setField(4, v); }
+  set interval($511.Interval v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasInterval() => $_has(3);
   @$pb.TagNumber(4)
@@ -314,34 +372,52 @@ class StatisticalTimeSeriesFilter extends $pb.GeneratedMessage {
     return $result;
   }
   StatisticalTimeSeriesFilter._() : super();
-  factory StatisticalTimeSeriesFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StatisticalTimeSeriesFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StatisticalTimeSeriesFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StatisticalTimeSeriesFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StatisticalTimeSeriesFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..e<StatisticalTimeSeriesFilter_Method>(1, _omitFieldNames ? '' : 'rankingMethod', $pb.PbFieldType.OE, defaultOrMaker: StatisticalTimeSeriesFilter_Method.METHOD_UNSPECIFIED, valueOf: StatisticalTimeSeriesFilter_Method.valueOf, enumValues: StatisticalTimeSeriesFilter_Method.values)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'numTimeSeries', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StatisticalTimeSeriesFilter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..e<StatisticalTimeSeriesFilter_Method>(
+        1, _omitFieldNames ? '' : 'rankingMethod', $pb.PbFieldType.OE,
+        defaultOrMaker: StatisticalTimeSeriesFilter_Method.METHOD_UNSPECIFIED,
+        valueOf: StatisticalTimeSeriesFilter_Method.valueOf,
+        enumValues: StatisticalTimeSeriesFilter_Method.values)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'numTimeSeries', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StatisticalTimeSeriesFilter clone() => StatisticalTimeSeriesFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StatisticalTimeSeriesFilter copyWith(void Function(StatisticalTimeSeriesFilter) updates) => super.copyWith((message) => updates(message as StatisticalTimeSeriesFilter)) as StatisticalTimeSeriesFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StatisticalTimeSeriesFilter clone() =>
+      StatisticalTimeSeriesFilter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StatisticalTimeSeriesFilter copyWith(
+          void Function(StatisticalTimeSeriesFilter) updates) =>
+      super.copyWith(
+              (message) => updates(message as StatisticalTimeSeriesFilter))
+          as StatisticalTimeSeriesFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StatisticalTimeSeriesFilter create() => StatisticalTimeSeriesFilter._();
+  static StatisticalTimeSeriesFilter create() =>
+      StatisticalTimeSeriesFilter._();
   StatisticalTimeSeriesFilter createEmptyInstance() => create();
-  static $pb.PbList<StatisticalTimeSeriesFilter> createRepeated() => $pb.PbList<StatisticalTimeSeriesFilter>();
+  static $pb.PbList<StatisticalTimeSeriesFilter> createRepeated() =>
+      $pb.PbList<StatisticalTimeSeriesFilter>();
   @$core.pragma('dart2js:noInline')
-  static StatisticalTimeSeriesFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StatisticalTimeSeriesFilter>(create);
+  static StatisticalTimeSeriesFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StatisticalTimeSeriesFilter>(create);
   static StatisticalTimeSeriesFilter? _defaultInstance;
 
   /// `rankingMethod` is applied to a set of time series, and then the produced
@@ -352,7 +428,10 @@ class StatisticalTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   StatisticalTimeSeriesFilter_Method get rankingMethod => $_getN(0);
   @$pb.TagNumber(1)
-  set rankingMethod(StatisticalTimeSeriesFilter_Method v) { setField(1, v); }
+  set rankingMethod(StatisticalTimeSeriesFilter_Method v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRankingMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -362,13 +441,16 @@ class StatisticalTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get numTimeSeries => $_getIZ(1);
   @$pb.TagNumber(2)
-  set numTimeSeries($core.int v) { $_setSignedInt32(1, v); }
+  set numTimeSeries($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNumTimeSeries() => $_has(1);
   @$pb.TagNumber(2)
   void clearNumTimeSeries() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -14,19 +14,24 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class GetServiceConfigRequest_ConfigView extends $pb.ProtobufEnum {
-  static const GetServiceConfigRequest_ConfigView BASIC = GetServiceConfigRequest_ConfigView._(0, _omitEnumNames ? '' : 'BASIC');
-  static const GetServiceConfigRequest_ConfigView FULL = GetServiceConfigRequest_ConfigView._(1, _omitEnumNames ? '' : 'FULL');
+  static const GetServiceConfigRequest_ConfigView BASIC =
+      GetServiceConfigRequest_ConfigView._(0, _omitEnumNames ? '' : 'BASIC');
+  static const GetServiceConfigRequest_ConfigView FULL =
+      GetServiceConfigRequest_ConfigView._(1, _omitEnumNames ? '' : 'FULL');
 
-  static const $core.List<GetServiceConfigRequest_ConfigView> values = <GetServiceConfigRequest_ConfigView> [
+  static const $core.List<GetServiceConfigRequest_ConfigView> values =
+      <GetServiceConfigRequest_ConfigView>[
     BASIC,
     FULL,
   ];
 
-  static final $core.Map<$core.int, GetServiceConfigRequest_ConfigView> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static GetServiceConfigRequest_ConfigView? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, GetServiceConfigRequest_ConfigView>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static GetServiceConfigRequest_ConfigView? valueOf($core.int value) =>
+      _byValue[value];
 
-  const GetServiceConfigRequest_ConfigView._($core.int v, $core.String n) : super(v, n);
+  const GetServiceConfigRequest_ConfigView._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

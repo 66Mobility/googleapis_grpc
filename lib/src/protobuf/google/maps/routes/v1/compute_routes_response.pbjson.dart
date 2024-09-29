@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const ComputeRoutesResponse$json = {
   '1': 'ComputeRoutesResponse',
   '2': [
-    {'1': 'routes', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routes.v1.Route', '10': 'routes'},
-    {'1': 'fallback_info', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.FallbackInfo', '10': 'fallbackInfo'},
+    {
+      '1': 'routes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Route',
+      '10': 'routes'
+    },
+    {
+      '1': 'fallback_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.FallbackInfo',
+      '10': 'fallbackInfo'
+    },
   ],
 };
 
@@ -27,4 +41,3 @@ final $typed_data.Uint8List computeRoutesResponseDescriptor = $convert.base64Dec
     'ChVDb21wdXRlUm91dGVzUmVzcG9uc2USNAoGcm91dGVzGAEgAygLMhwuZ29vZ2xlLm1hcHMucm'
     '91dGVzLnYxLlJvdXRlUgZyb3V0ZXMSSAoNZmFsbGJhY2tfaW5mbxgCIAEoCzIjLmdvb2dsZS5t'
     'YXBzLnJvdXRlcy52MS5GYWxsYmFja0luZm9SDGZhbGxiYWNrSW5mbw==');
-

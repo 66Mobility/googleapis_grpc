@@ -21,11 +21,49 @@ const Key$json = {
     {'1': 'uid', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'uid'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'key_string', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'keyString'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'delete_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'deleteTime'},
-    {'1': 'annotations', '3': 8, '4': 3, '5': 11, '6': '.google.api.apikeys.v2.Key.AnnotationsEntry', '10': 'annotations'},
-    {'1': 'restrictions', '3': 9, '4': 1, '5': 11, '6': '.google.api.apikeys.v2.Restrictions', '10': 'restrictions'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'annotations',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.Key.AnnotationsEntry',
+      '10': 'annotations'
+    },
+    {
+      '1': 'restrictions',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.Restrictions',
+      '10': 'restrictions'
+    },
     {'1': 'etag', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'etag'},
   ],
   '3': [Key_AnnotationsEntry$json],
@@ -61,11 +99,50 @@ final $typed_data.Uint8List keyDescriptor = $convert.base64Decode(
 const Restrictions$json = {
   '1': 'Restrictions',
   '2': [
-    {'1': 'browser_key_restrictions', '3': 1, '4': 1, '5': 11, '6': '.google.api.apikeys.v2.BrowserKeyRestrictions', '9': 0, '10': 'browserKeyRestrictions'},
-    {'1': 'server_key_restrictions', '3': 2, '4': 1, '5': 11, '6': '.google.api.apikeys.v2.ServerKeyRestrictions', '9': 0, '10': 'serverKeyRestrictions'},
-    {'1': 'android_key_restrictions', '3': 3, '4': 1, '5': 11, '6': '.google.api.apikeys.v2.AndroidKeyRestrictions', '9': 0, '10': 'androidKeyRestrictions'},
-    {'1': 'ios_key_restrictions', '3': 4, '4': 1, '5': 11, '6': '.google.api.apikeys.v2.IosKeyRestrictions', '9': 0, '10': 'iosKeyRestrictions'},
-    {'1': 'api_targets', '3': 5, '4': 3, '5': 11, '6': '.google.api.apikeys.v2.ApiTarget', '10': 'apiTargets'},
+    {
+      '1': 'browser_key_restrictions',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.BrowserKeyRestrictions',
+      '9': 0,
+      '10': 'browserKeyRestrictions'
+    },
+    {
+      '1': 'server_key_restrictions',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.ServerKeyRestrictions',
+      '9': 0,
+      '10': 'serverKeyRestrictions'
+    },
+    {
+      '1': 'android_key_restrictions',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.AndroidKeyRestrictions',
+      '9': 0,
+      '10': 'androidKeyRestrictions'
+    },
+    {
+      '1': 'ios_key_restrictions',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.IosKeyRestrictions',
+      '9': 0,
+      '10': 'iosKeyRestrictions'
+    },
+    {
+      '1': 'api_targets',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.ApiTarget',
+      '10': 'apiTargets'
+    },
   ],
   '8': [
     {'1': 'client_restrictions'},
@@ -89,14 +166,21 @@ final $typed_data.Uint8List restrictionsDescriptor = $convert.base64Decode(
 const BrowserKeyRestrictions$json = {
   '1': 'BrowserKeyRestrictions',
   '2': [
-    {'1': 'allowed_referrers', '3': 1, '4': 3, '5': 9, '10': 'allowedReferrers'},
+    {
+      '1': 'allowed_referrers',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'allowedReferrers'
+    },
   ],
 };
 
 /// Descriptor for `BrowserKeyRestrictions`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List browserKeyRestrictionsDescriptor = $convert.base64Decode(
-    'ChZCcm93c2VyS2V5UmVzdHJpY3Rpb25zEisKEWFsbG93ZWRfcmVmZXJyZXJzGAEgAygJUhBhbG'
-    'xvd2VkUmVmZXJyZXJz');
+final $typed_data.Uint8List browserKeyRestrictionsDescriptor =
+    $convert.base64Decode(
+        'ChZCcm93c2VyS2V5UmVzdHJpY3Rpb25zEisKEWFsbG93ZWRfcmVmZXJyZXJzGAEgAygJUhBhbG'
+        'xvd2VkUmVmZXJyZXJz');
 
 @$core.Deprecated('Use serverKeyRestrictionsDescriptor instead')
 const ServerKeyRestrictions$json = {
@@ -115,7 +199,14 @@ final $typed_data.Uint8List serverKeyRestrictionsDescriptor = $convert.base64Dec
 const AndroidKeyRestrictions$json = {
   '1': 'AndroidKeyRestrictions',
   '2': [
-    {'1': 'allowed_applications', '3': 1, '4': 3, '5': 11, '6': '.google.api.apikeys.v2.AndroidApplication', '10': 'allowedApplications'},
+    {
+      '1': 'allowed_applications',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.AndroidApplication',
+      '10': 'allowedApplications'
+    },
   ],
 };
 
@@ -143,7 +234,13 @@ final $typed_data.Uint8List androidApplicationDescriptor = $convert.base64Decode
 const IosKeyRestrictions$json = {
   '1': 'IosKeyRestrictions',
   '2': [
-    {'1': 'allowed_bundle_ids', '3': 1, '4': 3, '5': 9, '10': 'allowedBundleIds'},
+    {
+      '1': 'allowed_bundle_ids',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'allowedBundleIds'
+    },
   ],
 };
 
@@ -165,4 +262,3 @@ const ApiTarget$json = {
 final $typed_data.Uint8List apiTargetDescriptor = $convert.base64Decode(
     'CglBcGlUYXJnZXQSGAoHc2VydmljZRgBIAEoCVIHc2VydmljZRIdCgdtZXRob2RzGAIgAygJQg'
     'PgQQFSB21ldGhvZHM=');
-

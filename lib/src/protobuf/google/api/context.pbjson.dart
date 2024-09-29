@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const Context$json = {
   '1': 'Context',
   '2': [
-    {'1': 'rules', '3': 1, '4': 3, '5': 11, '6': '.google.api.ContextRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.ContextRule',
+      '10': 'rules'
+    },
   ],
 };
 
@@ -33,8 +40,20 @@ const ContextRule$json = {
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
     {'1': 'requested', '3': 2, '4': 3, '5': 9, '10': 'requested'},
     {'1': 'provided', '3': 3, '4': 3, '5': 9, '10': 'provided'},
-    {'1': 'allowed_request_extensions', '3': 4, '4': 3, '5': 9, '10': 'allowedRequestExtensions'},
-    {'1': 'allowed_response_extensions', '3': 5, '4': 3, '5': 9, '10': 'allowedResponseExtensions'},
+    {
+      '1': 'allowed_request_extensions',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'allowedRequestExtensions'
+    },
+    {
+      '1': 'allowed_response_extensions',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'allowedResponseExtensions'
+    },
   ],
 };
 
@@ -45,4 +64,3 @@ final $typed_data.Uint8List contextRuleDescriptor = $convert.base64Decode(
     'cmVxdWVzdF9leHRlbnNpb25zGAQgAygJUhhhbGxvd2VkUmVxdWVzdEV4dGVuc2lvbnMSPgobYW'
     'xsb3dlZF9yZXNwb25zZV9leHRlbnNpb25zGAUgAygJUhlhbGxvd2VkUmVzcG9uc2VFeHRlbnNp'
     'b25z');
-

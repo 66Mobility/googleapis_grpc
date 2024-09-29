@@ -25,33 +25,42 @@ class EntitySet_Entity extends $pb.GeneratedMessage {
     return $result;
   }
   EntitySet_Entity._() : super();
-  factory EntitySet_Entity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntitySet_Entity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntitySet_Entity.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntitySet_Entity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntitySet.Entity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntitySet.Entity',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntitySet_Entity clone() => EntitySet_Entity()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntitySet_Entity copyWith(void Function(EntitySet_Entity) updates) => super.copyWith((message) => updates(message as EntitySet_Entity)) as EntitySet_Entity;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntitySet_Entity copyWith(void Function(EntitySet_Entity) updates) =>
+      super.copyWith((message) => updates(message as EntitySet_Entity))
+          as EntitySet_Entity;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntitySet_Entity create() => EntitySet_Entity._();
   EntitySet_Entity createEmptyInstance() => create();
-  static $pb.PbList<EntitySet_Entity> createRepeated() => $pb.PbList<EntitySet_Entity>();
+  static $pb.PbList<EntitySet_Entity> createRepeated() =>
+      $pb.PbList<EntitySet_Entity>();
   @$core.pragma('dart2js:noInline')
-  static EntitySet_Entity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntitySet_Entity>(create);
+  static EntitySet_Entity getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntitySet_Entity>(create);
   static EntitySet_Entity? _defaultInstance;
 
   /// Required. The ID of the entity.
@@ -61,7 +70,10 @@ class EntitySet_Entity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -82,24 +94,32 @@ class EntitySet extends $pb.GeneratedMessage {
     return $result;
   }
   EntitySet._() : super();
-  factory EntitySet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntitySet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntitySet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntitySet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntitySet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
-    ..pc<EntitySet_Entity>(1, _omitFieldNames ? '' : 'entities', $pb.PbFieldType.PM, subBuilder: EntitySet_Entity.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntitySet',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
+    ..pc<EntitySet_Entity>(
+        1, _omitFieldNames ? '' : 'entities', $pb.PbFieldType.PM,
+        subBuilder: EntitySet_Entity.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntitySet clone() => EntitySet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntitySet copyWith(void Function(EntitySet) updates) => super.copyWith((message) => updates(message as EntitySet)) as EntitySet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntitySet copyWith(void Function(EntitySet) updates) =>
+      super.copyWith((message) => updates(message as EntitySet)) as EntitySet;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -108,7 +128,8 @@ class EntitySet extends $pb.GeneratedMessage {
   EntitySet createEmptyInstance() => create();
   static $pb.PbList<EntitySet> createRepeated() => $pb.PbList<EntitySet>();
   @$core.pragma('dart2js:noInline')
-  static EntitySet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntitySet>(create);
+  static EntitySet getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntitySet>(create);
   static EntitySet? _defaultInstance;
 
   /// Required. The list of entities this entity set supports.
@@ -116,6 +137,6 @@ class EntitySet extends $pb.GeneratedMessage {
   $core.List<EntitySet_Entity> get entities => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

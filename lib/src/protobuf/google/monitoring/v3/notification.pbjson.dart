@@ -21,7 +21,14 @@ const NotificationChannelDescriptor$json = {
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.api.LabelDescriptor', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.LabelDescriptor',
+      '10': 'labels'
+    },
     {
       '1': 'supported_tiers',
       '3': 5,
@@ -31,7 +38,14 @@ const NotificationChannelDescriptor$json = {
       '8': {'3': true},
       '10': 'supportedTiers',
     },
-    {'1': 'launch_stage', '3': 7, '4': 1, '5': 14, '6': '.google.api.LaunchStage', '10': 'launchStage'},
+    {
+      '1': 'launch_stage',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.LaunchStage',
+      '10': 'launchStage'
+    },
   ],
   '7': {},
 };
@@ -59,14 +73,59 @@ const NotificationChannel$json = {
     {'1': 'name', '3': 6, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.google.monitoring.v3.NotificationChannel.LabelsEntry', '10': 'labels'},
-    {'1': 'user_labels', '3': 8, '4': 3, '5': 11, '6': '.google.monitoring.v3.NotificationChannel.UserLabelsEntry', '10': 'userLabels'},
-    {'1': 'verification_status', '3': 9, '4': 1, '5': 14, '6': '.google.monitoring.v3.NotificationChannel.VerificationStatus', '10': 'verificationStatus'},
-    {'1': 'enabled', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'enabled'},
-    {'1': 'creation_record', '3': 12, '4': 1, '5': 11, '6': '.google.monitoring.v3.MutationRecord', '10': 'creationRecord'},
-    {'1': 'mutation_records', '3': 13, '4': 3, '5': 11, '6': '.google.monitoring.v3.MutationRecord', '10': 'mutationRecords'},
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.NotificationChannel.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'user_labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.NotificationChannel.UserLabelsEntry',
+      '10': 'userLabels'
+    },
+    {
+      '1': 'verification_status',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.NotificationChannel.VerificationStatus',
+      '10': 'verificationStatus'
+    },
+    {
+      '1': 'enabled',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'enabled'
+    },
+    {
+      '1': 'creation_record',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.MutationRecord',
+      '10': 'creationRecord'
+    },
+    {
+      '1': 'mutation_records',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.MutationRecord',
+      '10': 'mutationRecords'
+    },
   ],
-  '3': [NotificationChannel_LabelsEntry$json, NotificationChannel_UserLabelsEntry$json],
+  '3': [
+    NotificationChannel_LabelsEntry$json,
+    NotificationChannel_UserLabelsEntry$json
+  ],
   '4': [NotificationChannel_VerificationStatus$json],
   '7': {},
 };
@@ -123,4 +182,3 @@ final $typed_data.Uint8List notificationChannelDescriptor = $convert.base64Decod
     'lvbl9jaGFubmVsfRJIb3JnYW5pemF0aW9ucy97b3JnYW5pemF0aW9ufS9ub3RpZmljYXRpb25D'
     'aGFubmVscy97bm90aWZpY2F0aW9uX2NoYW5uZWx9Ejxmb2xkZXJzL3tmb2xkZXJ9L25vdGlmaW'
     'NhdGlvbkNoYW5uZWxzL3tub3RpZmljYXRpb25fY2hhbm5lbH0SASo=');
-

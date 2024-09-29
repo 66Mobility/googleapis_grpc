@@ -27,4 +27,3 @@ const Range$json = {
 final $typed_data.Uint8List rangeDescriptor = $convert.base64Decode(
     'CgVSYW5nZRIlCg5yZWZlcmVuY2VfbmFtZRgBIAEoCVINcmVmZXJlbmNlTmFtZRIUCgVzdGFydB'
     'gCIAEoA1IFc3RhcnQSEAoDZW5kGAMgASgDUgNlbmQ=');
-

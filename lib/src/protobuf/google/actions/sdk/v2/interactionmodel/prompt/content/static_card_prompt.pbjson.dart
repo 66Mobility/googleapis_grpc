@@ -20,9 +20,34 @@ const StaticCardPrompt$json = {
     {'1': 'title', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'subtitle'},
     {'1': 'text', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'text'},
-    {'1': 'image', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt', '8': {}, '10': 'image'},
-    {'1': 'image_fill', '3': 5, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt.ImageFill', '8': {}, '10': 'imageFill'},
-    {'1': 'button', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticLinkPrompt', '8': {}, '10': 'button'},
+    {
+      '1': 'image',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt',
+      '8': {},
+      '10': 'image'
+    },
+    {
+      '1': 'image_fill',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt.ImageFill',
+      '8': {},
+      '10': 'imageFill'
+    },
+    {
+      '1': 'button',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticLinkPrompt',
+      '8': {},
+      '10': 'button'
+    },
   ],
 };
 
@@ -36,4 +61,3 @@ final $typed_data.Uint8List staticCardPromptDescriptor = $convert.base64Decode(
     'JvbXB0LkltYWdlRmlsbEID4EEBUglpbWFnZUZpbGwSXAoGYnV0dG9uGAYgASgLMj8uZ29vZ2xl'
     'LmFjdGlvbnMuc2RrLnYyLmludGVyYWN0aW9ubW9kZWwucHJvbXB0LlN0YXRpY0xpbmtQcm9tcH'
     'RCA+BBAVIGYnV0dG9u');
-

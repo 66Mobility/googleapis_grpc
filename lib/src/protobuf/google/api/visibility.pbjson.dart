@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const Visibility$json = {
   '1': 'Visibility',
   '2': [
-    {'1': 'rules', '3': 1, '4': 3, '5': 11, '6': '.google.api.VisibilityRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.VisibilityRule',
+      '10': 'rules'
+    },
   ],
 };
 
@@ -39,4 +46,3 @@ const VisibilityRule$json = {
 final $typed_data.Uint8List visibilityRuleDescriptor = $convert.base64Decode(
     'Cg5WaXNpYmlsaXR5UnVsZRIaCghzZWxlY3RvchgBIAEoCVIIc2VsZWN0b3ISIAoLcmVzdHJpY3'
     'Rpb24YAiABKAlSC3Jlc3RyaWN0aW9u');
-

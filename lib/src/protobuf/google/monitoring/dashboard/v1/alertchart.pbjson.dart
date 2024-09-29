@@ -27,4 +27,3 @@ final $typed_data.Uint8List alertChartDescriptor = $convert.base64Decode(
     'CgpBbGVydENoYXJ0EhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZTpb6kFYCiVtb25pdG9yaW5nLm'
     'dvb2dsZWFwaXMuY29tL0FsZXJ0UG9saWN5Ei9wcm9qZWN0cy97cHJvamVjdH0vYWxlcnRQb2xp'
     'Y2llcy97YWxlcnRfcG9saWN5fQ==');
-

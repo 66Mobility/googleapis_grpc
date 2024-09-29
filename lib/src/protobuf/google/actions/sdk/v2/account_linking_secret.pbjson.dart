@@ -17,8 +17,20 @@ import 'dart:typed_data' as $typed_data;
 const AccountLinkingSecret$json = {
   '1': 'AccountLinkingSecret',
   '2': [
-    {'1': 'encrypted_client_secret', '3': 1, '4': 1, '5': 12, '10': 'encryptedClientSecret'},
-    {'1': 'encryption_key_version', '3': 2, '4': 1, '5': 9, '10': 'encryptionKeyVersion'},
+    {
+      '1': 'encrypted_client_secret',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '10': 'encryptedClientSecret'
+    },
+    {
+      '1': 'encryption_key_version',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'encryptionKeyVersion'
+    },
   ],
 };
 
@@ -27,4 +39,3 @@ final $typed_data.Uint8List accountLinkingSecretDescriptor = $convert.base64Deco
     'ChRBY2NvdW50TGlua2luZ1NlY3JldBI2ChdlbmNyeXB0ZWRfY2xpZW50X3NlY3JldBgBIAEoDF'
     'IVZW5jcnlwdGVkQ2xpZW50U2VjcmV0EjQKFmVuY3J5cHRpb25fa2V5X3ZlcnNpb24YAiABKAlS'
     'FGVuY3J5cHRpb25LZXlWZXJzaW9u');
-

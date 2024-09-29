@@ -18,7 +18,14 @@ const AuditData$json = {
   '1': 'AuditData',
   '2': [
     {'1': 'event_message', '3': 1, '4': 1, '5': 9, '10': 'eventMessage'},
-    {'1': 'event_data', '3': 2, '4': 3, '5': 11, '6': '.google.appengine.legacy.AuditData.EventDataEntry', '10': 'eventData'},
+    {
+      '1': 'event_data',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.legacy.AuditData.EventDataEntry',
+      '10': 'eventData'
+    },
   ],
   '3': [AuditData_EventDataEntry$json],
 };
@@ -39,4 +46,3 @@ final $typed_data.Uint8List auditDataDescriptor = $convert.base64Decode(
     '50X2RhdGEYAiADKAsyMS5nb29nbGUuYXBwZW5naW5lLmxlZ2FjeS5BdWRpdERhdGEuRXZlbnRE'
     'YXRhRW50cnlSCWV2ZW50RGF0YRo8Cg5FdmVudERhdGFFbnRyeRIQCgNrZXkYASABKAlSA2tleR'
     'IUCgV2YWx1ZRgCIAEoCVIFdmFsdWU6AjgB');
-

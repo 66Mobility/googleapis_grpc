@@ -21,26 +21,30 @@ export 'service_controller.pb.dart';
 
 @$pb.GrpcServiceName('google.api.servicecontrol.v1.ServiceController')
 class ServiceControllerClient extends $grpc.Client {
-  static final _$check = $grpc.ClientMethod<$40.CheckRequest, $40.CheckResponse>(
-      '/google.api.servicecontrol.v1.ServiceController/Check',
-      ($40.CheckRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $40.CheckResponse.fromBuffer(value));
-  static final _$report = $grpc.ClientMethod<$40.ReportRequest, $40.ReportResponse>(
-      '/google.api.servicecontrol.v1.ServiceController/Report',
-      ($40.ReportRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $40.ReportResponse.fromBuffer(value));
+  static final _$check =
+      $grpc.ClientMethod<$40.CheckRequest, $40.CheckResponse>(
+          '/google.api.servicecontrol.v1.ServiceController/Check',
+          ($40.CheckRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $40.CheckResponse.fromBuffer(value));
+  static final _$report =
+      $grpc.ClientMethod<$40.ReportRequest, $40.ReportResponse>(
+          '/google.api.servicecontrol.v1.ServiceController/Report',
+          ($40.ReportRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) =>
+              $40.ReportResponse.fromBuffer(value));
 
   ServiceControllerClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$40.CheckResponse> check($40.CheckRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$40.CheckResponse> check($40.CheckRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$check, request, options: options);
   }
 
-  $grpc.ResponseFuture<$40.ReportResponse> report($40.ReportRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$40.ReportResponse> report($40.ReportRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$report, request, options: options);
   }
 }
@@ -66,14 +70,18 @@ abstract class ServiceControllerServiceBase extends $grpc.Service {
         ($40.ReportResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$40.CheckResponse> check_Pre($grpc.ServiceCall call, $async.Future<$40.CheckRequest> request) async {
+  $async.Future<$40.CheckResponse> check_Pre(
+      $grpc.ServiceCall call, $async.Future<$40.CheckRequest> request) async {
     return check(call, await request);
   }
 
-  $async.Future<$40.ReportResponse> report_Pre($grpc.ServiceCall call, $async.Future<$40.ReportRequest> request) async {
+  $async.Future<$40.ReportResponse> report_Pre(
+      $grpc.ServiceCall call, $async.Future<$40.ReportRequest> request) async {
     return report(call, await request);
   }
 
-  $async.Future<$40.CheckResponse> check($grpc.ServiceCall call, $40.CheckRequest request);
-  $async.Future<$40.ReportResponse> report($grpc.ServiceCall call, $40.ReportRequest request);
+  $async.Future<$40.CheckResponse> check(
+      $grpc.ServiceCall call, $40.CheckRequest request);
+  $async.Future<$40.ReportResponse> report(
+      $grpc.ServiceCall call, $40.ReportRequest request);
 }

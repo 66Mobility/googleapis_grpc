@@ -26,4 +26,3 @@ const SectionHeader$json = {
 final $typed_data.Uint8List sectionHeaderDescriptor = $convert.base64Decode(
     'Cg1TZWN0aW9uSGVhZGVyEhoKCHN1YnRpdGxlGAEgASgJUghzdWJ0aXRsZRIjCg1kaXZpZGVyX2'
     'JlbG93GAIgASgIUgxkaXZpZGVyQmVsb3c=');
-

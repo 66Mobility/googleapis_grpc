@@ -17,10 +17,37 @@ import 'dart:typed_data' as $typed_data;
 const Geocode$json = {
   '1': 'Geocode',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'location'},
-    {'1': 'plus_code', '3': 2, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.PlusCode', '10': 'plusCode'},
-    {'1': 'bounds', '3': 4, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '10': 'bounds'},
-    {'1': 'feature_size_meters', '3': 5, '4': 1, '5': 2, '10': 'featureSizeMeters'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'location'
+    },
+    {
+      '1': 'plus_code',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.PlusCode',
+      '10': 'plusCode'
+    },
+    {
+      '1': 'bounds',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '10': 'bounds'
+    },
+    {
+      '1': 'feature_size_meters',
+      '3': 5,
+      '4': 1,
+      '5': 2,
+      '10': 'featureSizeMeters'
+    },
     {'1': 'place_id', '3': 6, '4': 1, '5': 9, '10': 'placeId'},
     {'1': 'place_types', '3': 7, '4': 3, '5': 9, '10': 'placeTypes'},
   ],
@@ -48,4 +75,3 @@ const PlusCode$json = {
 final $typed_data.Uint8List plusCodeDescriptor = $convert.base64Decode(
     'CghQbHVzQ29kZRIfCgtnbG9iYWxfY29kZRgBIAEoCVIKZ2xvYmFsQ29kZRIjCg1jb21wb3VuZF'
     '9jb2RlGAIgASgJUgxjb21wb3VuZENvZGU=');
-

@@ -17,10 +17,24 @@ import 'dart:typed_data' as $typed_data;
 const CheckError$json = {
   '1': 'CheckError',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.api.servicecontrol.v1.CheckError.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicecontrol.v1.CheckError.Code',
+      '10': 'code'
+    },
     {'1': 'subject', '3': 4, '4': 1, '5': 9, '10': 'subject'},
     {'1': 'detail', '3': 2, '4': 1, '5': 9, '10': 'detail'},
-    {'1': 'status', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
   ],
   '4': [CheckError_Code$json],
 };
@@ -68,4 +82,3 @@ final $typed_data.Uint8List checkErrorDescriptor = $convert.base64Decode(
     'Q1JFREVOVElBTBB7EiEKHE5BTUVTUEFDRV9MT09LVVBfVU5BVkFJTEFCTEUQrAISHwoaU0VSVk'
     'lDRV9TVEFUVVNfVU5BVkFJTEFCTEUQrQISHwoaQklMTElOR19TVEFUVVNfVU5BVkFJTEFCTEUQ'
     'rgISLwoqQ0xPVURfUkVTT1VSQ0VfTUFOQUdFUl9CQUNLRU5EX1VOQVZBSUxBQkxFELEC');
-

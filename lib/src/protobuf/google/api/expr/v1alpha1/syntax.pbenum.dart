@@ -15,23 +15,34 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// CEL component specifier.
 class SourceInfo_Extension_Component extends $pb.ProtobufEnum {
-  static const SourceInfo_Extension_Component COMPONENT_UNSPECIFIED = SourceInfo_Extension_Component._(0, _omitEnumNames ? '' : 'COMPONENT_UNSPECIFIED');
-  static const SourceInfo_Extension_Component COMPONENT_PARSER = SourceInfo_Extension_Component._(1, _omitEnumNames ? '' : 'COMPONENT_PARSER');
-  static const SourceInfo_Extension_Component COMPONENT_TYPE_CHECKER = SourceInfo_Extension_Component._(2, _omitEnumNames ? '' : 'COMPONENT_TYPE_CHECKER');
-  static const SourceInfo_Extension_Component COMPONENT_RUNTIME = SourceInfo_Extension_Component._(3, _omitEnumNames ? '' : 'COMPONENT_RUNTIME');
+  static const SourceInfo_Extension_Component COMPONENT_UNSPECIFIED =
+      SourceInfo_Extension_Component._(
+          0, _omitEnumNames ? '' : 'COMPONENT_UNSPECIFIED');
+  static const SourceInfo_Extension_Component COMPONENT_PARSER =
+      SourceInfo_Extension_Component._(
+          1, _omitEnumNames ? '' : 'COMPONENT_PARSER');
+  static const SourceInfo_Extension_Component COMPONENT_TYPE_CHECKER =
+      SourceInfo_Extension_Component._(
+          2, _omitEnumNames ? '' : 'COMPONENT_TYPE_CHECKER');
+  static const SourceInfo_Extension_Component COMPONENT_RUNTIME =
+      SourceInfo_Extension_Component._(
+          3, _omitEnumNames ? '' : 'COMPONENT_RUNTIME');
 
-  static const $core.List<SourceInfo_Extension_Component> values = <SourceInfo_Extension_Component> [
+  static const $core.List<SourceInfo_Extension_Component> values =
+      <SourceInfo_Extension_Component>[
     COMPONENT_UNSPECIFIED,
     COMPONENT_PARSER,
     COMPONENT_TYPE_CHECKER,
     COMPONENT_RUNTIME,
   ];
 
-  static final $core.Map<$core.int, SourceInfo_Extension_Component> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static SourceInfo_Extension_Component? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, SourceInfo_Extension_Component> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static SourceInfo_Extension_Component? valueOf($core.int value) =>
+      _byValue[value];
 
-  const SourceInfo_Extension_Component._($core.int v, $core.String n) : super(v, n);
+  const SourceInfo_Extension_Component._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -17,10 +17,28 @@ import 'dart:typed_data' as $typed_data;
 const TransitPreferences$json = {
   '1': 'TransitPreferences',
   '2': [
-    {'1': 'allowed_travel_modes', '3': 1, '4': 3, '5': 14, '6': '.google.maps.routing.v2.TransitPreferences.TransitTravelMode', '10': 'allowedTravelModes'},
-    {'1': 'routing_preference', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routing.v2.TransitPreferences.TransitRoutingPreference', '10': 'routingPreference'},
+    {
+      '1': 'allowed_travel_modes',
+      '3': 1,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.routing.v2.TransitPreferences.TransitTravelMode',
+      '10': 'allowedTravelModes'
+    },
+    {
+      '1': 'routing_preference',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.maps.routing.v2.TransitPreferences.TransitRoutingPreference',
+      '10': 'routingPreference'
+    },
   ],
-  '4': [TransitPreferences_TransitTravelMode$json, TransitPreferences_TransitRoutingPreference$json],
+  '4': [
+    TransitPreferences_TransitTravelMode$json,
+    TransitPreferences_TransitRoutingPreference$json
+  ],
 };
 
 @$core.Deprecated('Use transitPreferencesDescriptor instead')
@@ -57,4 +75,3 @@ final $typed_data.Uint8List transitPreferencesDescriptor = $convert.base64Decode
     'QUlOEAMSDgoKTElHSFRfUkFJTBAEEggKBFJBSUwQBSJtChhUcmFuc2l0Um91dGluZ1ByZWZlcm'
     'VuY2USKgomVFJBTlNJVF9ST1VUSU5HX1BSRUZFUkVOQ0VfVU5TUEVDSUZJRUQQABIQCgxMRVNT'
     'X1dBTEtJTkcQARITCg9GRVdFUl9UUkFOU0ZFUlMQAg==');
-

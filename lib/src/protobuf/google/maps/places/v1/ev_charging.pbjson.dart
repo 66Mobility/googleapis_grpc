@@ -45,7 +45,14 @@ const EVChargeOptions$json = {
   '1': 'EVChargeOptions',
   '2': [
     {'1': 'connector_count', '3': 1, '4': 1, '5': 5, '10': 'connectorCount'},
-    {'1': 'connector_aggregation', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.EVChargeOptions.ConnectorAggregation', '10': 'connectorAggregation'},
+    {
+      '1': 'connector_aggregation',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.EVChargeOptions.ConnectorAggregation',
+      '10': 'connectorAggregation'
+    },
   ],
   '3': [EVChargeOptions_ConnectorAggregation$json],
 };
@@ -54,12 +61,48 @@ const EVChargeOptions$json = {
 const EVChargeOptions_ConnectorAggregation$json = {
   '1': 'ConnectorAggregation',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.maps.places.v1.EVConnectorType', '10': 'type'},
-    {'1': 'max_charge_rate_kw', '3': 2, '4': 1, '5': 1, '10': 'maxChargeRateKw'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.EVConnectorType',
+      '10': 'type'
+    },
+    {
+      '1': 'max_charge_rate_kw',
+      '3': 2,
+      '4': 1,
+      '5': 1,
+      '10': 'maxChargeRateKw'
+    },
     {'1': 'count', '3': 3, '4': 1, '5': 5, '10': 'count'},
-    {'1': 'available_count', '3': 4, '4': 1, '5': 5, '9': 0, '10': 'availableCount', '17': true},
-    {'1': 'out_of_service_count', '3': 5, '4': 1, '5': 5, '9': 1, '10': 'outOfServiceCount', '17': true},
-    {'1': 'availability_last_update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'availabilityLastUpdateTime'},
+    {
+      '1': 'available_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'availableCount',
+      '17': true
+    },
+    {
+      '1': 'out_of_service_count',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'outOfServiceCount',
+      '17': true
+    },
+    {
+      '1': 'availability_last_update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'availabilityLastUpdateTime'
+    },
   ],
   '8': [
     {'1': '_available_count'},
@@ -80,4 +123,3 @@ final $typed_data.Uint8List eVChargeOptionsDescriptor = $convert.base64Decode(
     'dF91cGRhdGVfdGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSGmF2YWlsYW'
     'JpbGl0eUxhc3RVcGRhdGVUaW1lQhIKEF9hdmFpbGFibGVfY291bnRCFwoVX291dF9vZl9zZXJ2'
     'aWNlX2NvdW50');
-

@@ -20,11 +20,47 @@ const RegionalInventory$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'account', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'account'},
     {'1': 'region', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'region'},
-    {'1': 'price', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'price'},
-    {'1': 'sale_price', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'salePrice'},
-    {'1': 'sale_price_effective_date', '3': 6, '4': 1, '5': 11, '6': '.google.type.Interval', '10': 'salePriceEffectiveDate'},
-    {'1': 'availability', '3': 7, '4': 1, '5': 9, '9': 0, '10': 'availability', '17': true},
-    {'1': 'custom_attributes', '3': 8, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '10': 'customAttributes'},
+    {
+      '1': 'price',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'price'
+    },
+    {
+      '1': 'sale_price',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'salePrice'
+    },
+    {
+      '1': 'sale_price_effective_date',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Interval',
+      '10': 'salePriceEffectiveDate'
+    },
+    {
+      '1': 'availability',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'availability',
+      '17': true
+    },
+    {
+      '1': 'custom_attributes',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '10': 'customAttributes'
+    },
   ],
   '7': {},
   '8': [
@@ -57,34 +93,51 @@ const ListRegionalInventoriesRequest$json = {
 };
 
 /// Descriptor for `ListRegionalInventoriesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listRegionalInventoriesRequestDescriptor = $convert.base64Decode(
-    'Ch5MaXN0UmVnaW9uYWxJbnZlbnRvcmllc1JlcXVlc3QSTAoGcGFyZW50GAEgASgJQjTgQQL6QS'
-    '4SLG1lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL1JlZ2lvbmFsSW52ZW50b3J5UgZwYXJlbnQS'
-    'GwoJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYWdlX3Rva2VuGAMgASgJUglwYWdlVG'
-    '9rZW4=');
+final $typed_data.Uint8List listRegionalInventoriesRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5MaXN0UmVnaW9uYWxJbnZlbnRvcmllc1JlcXVlc3QSTAoGcGFyZW50GAEgASgJQjTgQQL6QS'
+        '4SLG1lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL1JlZ2lvbmFsSW52ZW50b3J5UgZwYXJlbnQS'
+        'GwoJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYWdlX3Rva2VuGAMgASgJUglwYWdlVG'
+        '9rZW4=');
 
 @$core.Deprecated('Use listRegionalInventoriesResponseDescriptor instead')
 const ListRegionalInventoriesResponse$json = {
   '1': 'ListRegionalInventoriesResponse',
   '2': [
-    {'1': 'regional_inventories', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.inventories.v1beta.RegionalInventory', '10': 'regionalInventories'},
+    {
+      '1': 'regional_inventories',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.inventories.v1beta.RegionalInventory',
+      '10': 'regionalInventories'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListRegionalInventoriesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listRegionalInventoriesResponseDescriptor = $convert.base64Decode(
-    'Ch9MaXN0UmVnaW9uYWxJbnZlbnRvcmllc1Jlc3BvbnNlEnEKFHJlZ2lvbmFsX2ludmVudG9yaW'
-    'VzGAEgAygLMj4uZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmludmVudG9yaWVzLnYxYmV0YS5S'
-    'ZWdpb25hbEludmVudG9yeVITcmVnaW9uYWxJbnZlbnRvcmllcxImCg9uZXh0X3BhZ2VfdG9rZW'
-    '4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List listRegionalInventoriesResponseDescriptor =
+    $convert.base64Decode(
+        'Ch9MaXN0UmVnaW9uYWxJbnZlbnRvcmllc1Jlc3BvbnNlEnEKFHJlZ2lvbmFsX2ludmVudG9yaW'
+        'VzGAEgAygLMj4uZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmludmVudG9yaWVzLnYxYmV0YS5S'
+        'ZWdpb25hbEludmVudG9yeVITcmVnaW9uYWxJbnZlbnRvcmllcxImCg9uZXh0X3BhZ2VfdG9rZW'
+        '4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use insertRegionalInventoryRequestDescriptor instead')
 const InsertRegionalInventoryRequest$json = {
   '1': 'InsertRegionalInventoryRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'regional_inventory', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.inventories.v1beta.RegionalInventory', '8': {}, '10': 'regionalInventory'},
+    {
+      '1': 'regional_inventory',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.inventories.v1beta.RegionalInventory',
+      '8': {},
+      '10': 'regionalInventory'
+    },
   ],
 };
 
@@ -105,7 +158,7 @@ const DeleteRegionalInventoryRequest$json = {
 };
 
 /// Descriptor for `DeleteRegionalInventoryRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteRegionalInventoryRequestDescriptor = $convert.base64Decode(
-    'Ch5EZWxldGVSZWdpb25hbEludmVudG9yeVJlcXVlc3QSSAoEbmFtZRgBIAEoCUI04EEC+kEuCi'
-    'xtZXJjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9SZWdpb25hbEludmVudG9yeVIEbmFtZQ==');
-
+final $typed_data.Uint8List deleteRegionalInventoryRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5EZWxldGVSZWdpb25hbEludmVudG9yeVJlcXVlc3QSSAoEbmFtZRgBIAEoCUI04EEC+kEuCi'
+        'xtZXJjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9SZWdpb25hbEludmVudG9yeVIEbmFtZQ==');

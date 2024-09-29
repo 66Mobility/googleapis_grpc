@@ -57,27 +57,32 @@ class Endpoint extends $pb.GeneratedMessage {
     return $result;
   }
   Endpoint._() : super();
-  factory Endpoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Endpoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Endpoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Endpoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Endpoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Endpoint',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(2, _omitFieldNames ? '' : 'aliases')
     ..aOB(5, _omitFieldNames ? '' : 'allowCors')
     ..aOS(101, _omitFieldNames ? '' : 'target')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Endpoint clone() => Endpoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Endpoint copyWith(void Function(Endpoint) updates) => super.copyWith((message) => updates(message as Endpoint)) as Endpoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Endpoint copyWith(void Function(Endpoint) updates) =>
+      super.copyWith((message) => updates(message as Endpoint)) as Endpoint;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -86,14 +91,18 @@ class Endpoint extends $pb.GeneratedMessage {
   Endpoint createEmptyInstance() => create();
   static $pb.PbList<Endpoint> createRepeated() => $pb.PbList<Endpoint>();
   @$core.pragma('dart2js:noInline')
-  static Endpoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Endpoint>(create);
+  static Endpoint getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Endpoint>(create);
   static Endpoint? _defaultInstance;
 
   /// The canonical name of this endpoint.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -114,7 +123,10 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get allowCors => $_getBF(2);
   @$pb.TagNumber(5)
-  set allowCors($core.bool v) { $_setBool(2, v); }
+  set allowCors($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAllowCors() => $_has(2);
   @$pb.TagNumber(5)
@@ -128,13 +140,16 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   $core.String get target => $_getSZ(3);
   @$pb.TagNumber(101)
-  set target($core.String v) { $_setString(3, v); }
+  set target($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(101)
   $core.bool hasTarget() => $_has(3);
   @$pb.TagNumber(101)
   void clearTarget() => clearField(101);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

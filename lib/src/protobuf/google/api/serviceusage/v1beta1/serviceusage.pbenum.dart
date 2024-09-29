@@ -15,19 +15,26 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Enum for service identity state.
 class GetServiceIdentityResponse_IdentityState extends $pb.ProtobufEnum {
-  static const GetServiceIdentityResponse_IdentityState IDENTITY_STATE_UNSPECIFIED = GetServiceIdentityResponse_IdentityState._(0, _omitEnumNames ? '' : 'IDENTITY_STATE_UNSPECIFIED');
-  static const GetServiceIdentityResponse_IdentityState ACTIVE = GetServiceIdentityResponse_IdentityState._(1, _omitEnumNames ? '' : 'ACTIVE');
+  static const GetServiceIdentityResponse_IdentityState
+      IDENTITY_STATE_UNSPECIFIED = GetServiceIdentityResponse_IdentityState._(
+          0, _omitEnumNames ? '' : 'IDENTITY_STATE_UNSPECIFIED');
+  static const GetServiceIdentityResponse_IdentityState ACTIVE =
+      GetServiceIdentityResponse_IdentityState._(
+          1, _omitEnumNames ? '' : 'ACTIVE');
 
-  static const $core.List<GetServiceIdentityResponse_IdentityState> values = <GetServiceIdentityResponse_IdentityState> [
+  static const $core.List<GetServiceIdentityResponse_IdentityState> values =
+      <GetServiceIdentityResponse_IdentityState>[
     IDENTITY_STATE_UNSPECIFIED,
     ACTIVE,
   ];
 
-  static final $core.Map<$core.int, GetServiceIdentityResponse_IdentityState> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static GetServiceIdentityResponse_IdentityState? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, GetServiceIdentityResponse_IdentityState>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static GetServiceIdentityResponse_IdentityState? valueOf($core.int value) =>
+      _byValue[value];
 
-  const GetServiceIdentityResponse_IdentityState._($core.int v, $core.String n) : super(v, n);
+  const GetServiceIdentityResponse_IdentityState._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

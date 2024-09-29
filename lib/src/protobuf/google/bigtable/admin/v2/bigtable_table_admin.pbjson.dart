@@ -38,10 +38,38 @@ const RestoreTableMetadata$json = {
   '1': 'RestoreTableMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'source_type', '3': 2, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.RestoreSourceType', '10': 'sourceType'},
-    {'1': 'backup_info', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.BackupInfo', '9': 0, '10': 'backupInfo'},
-    {'1': 'optimize_table_operation_name', '3': 4, '4': 1, '5': 9, '10': 'optimizeTableOperationName'},
-    {'1': 'progress', '3': 5, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.OperationProgress', '10': 'progress'},
+    {
+      '1': 'source_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.RestoreSourceType',
+      '10': 'sourceType'
+    },
+    {
+      '1': 'backup_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.BackupInfo',
+      '9': 0,
+      '10': 'backupInfo'
+    },
+    {
+      '1': 'optimize_table_operation_name',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'optimizeTableOperationName'
+    },
+    {
+      '1': 'progress',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.OperationProgress',
+      '10': 'progress'
+    },
   ],
   '8': [
     {'1': 'source_info'},
@@ -63,15 +91,23 @@ const OptimizeRestoredTableMetadata$json = {
   '1': 'OptimizeRestoredTableMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'progress', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.OperationProgress', '10': 'progress'},
+    {
+      '1': 'progress',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.OperationProgress',
+      '10': 'progress'
+    },
   ],
 };
 
 /// Descriptor for `OptimizeRestoredTableMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List optimizeRestoredTableMetadataDescriptor = $convert.base64Decode(
-    'Ch1PcHRpbWl6ZVJlc3RvcmVkVGFibGVNZXRhZGF0YRISCgRuYW1lGAEgASgJUgRuYW1lEkcKCH'
-    'Byb2dyZXNzGAIgASgLMisuZ29vZ2xlLmJpZ3RhYmxlLmFkbWluLnYyLk9wZXJhdGlvblByb2dy'
-    'ZXNzUghwcm9ncmVzcw==');
+final $typed_data.Uint8List optimizeRestoredTableMetadataDescriptor =
+    $convert.base64Decode(
+        'Ch1PcHRpbWl6ZVJlc3RvcmVkVGFibGVNZXRhZGF0YRISCgRuYW1lGAEgASgJUgRuYW1lEkcKCH'
+        'Byb2dyZXNzGAIgASgLMisuZ29vZ2xlLmJpZ3RhYmxlLmFkbWluLnYyLk9wZXJhdGlvblByb2dy'
+        'ZXNzUghwcm9ncmVzcw==');
 
 @$core.Deprecated('Use createTableRequestDescriptor instead')
 const CreateTableRequest$json = {
@@ -79,8 +115,23 @@ const CreateTableRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'table_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'tableId'},
-    {'1': 'table', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.Table', '8': {}, '10': 'table'},
-    {'1': 'initial_splits', '3': 4, '4': 3, '5': 11, '6': '.google.bigtable.admin.v2.CreateTableRequest.Split', '10': 'initialSplits'},
+    {
+      '1': 'table',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Table',
+      '8': {},
+      '10': 'table'
+    },
+    {
+      '1': 'initial_splits',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.CreateTableRequest.Split',
+      '10': 'initialSplits'
+    },
   ],
   '3': [CreateTableRequest_Split$json],
 };
@@ -108,7 +159,14 @@ const CreateTableFromSnapshotRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'table_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'tableId'},
-    {'1': 'source_snapshot', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'sourceSnapshot'},
+    {
+      '1': 'source_snapshot',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceSnapshot'
+    },
   ],
 };
 
@@ -125,8 +183,22 @@ const DropRowRangeRequest$json = {
   '1': 'DropRowRangeRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'row_key_prefix', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'rowKeyPrefix'},
-    {'1': 'delete_all_data_from_table', '3': 3, '4': 1, '5': 8, '9': 0, '10': 'deleteAllDataFromTable'},
+    {
+      '1': 'row_key_prefix',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'rowKeyPrefix'
+    },
+    {
+      '1': 'delete_all_data_from_table',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'deleteAllDataFromTable'
+    },
   ],
   '8': [
     {'1': 'target'},
@@ -145,7 +217,14 @@ const ListTablesRequest$json = {
   '1': 'ListTablesRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.Table.View', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.Table.View',
+      '10': 'view'
+    },
     {'1': 'page_size', '3': 4, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
   ],
@@ -162,7 +241,14 @@ final $typed_data.Uint8List listTablesRequestDescriptor = $convert.base64Decode(
 const ListTablesResponse$json = {
   '1': 'ListTablesResponse',
   '2': [
-    {'1': 'tables', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.admin.v2.Table', '10': 'tables'},
+    {
+      '1': 'tables',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Table',
+      '10': 'tables'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -178,7 +264,14 @@ const GetTableRequest$json = {
   '1': 'GetTableRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.Table.View', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.Table.View',
+      '10': 'view'
+    },
   ],
 };
 
@@ -192,8 +285,24 @@ final $typed_data.Uint8List getTableRequestDescriptor = $convert.base64Decode(
 const UpdateTableRequest$json = {
   '1': 'UpdateTableRequest',
   '2': [
-    {'1': 'table', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.Table', '8': {}, '10': 'table'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'table',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Table',
+      '8': {},
+      '10': 'table'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -208,8 +317,22 @@ const UpdateTableMetadata$json = {
   '1': 'UpdateTableMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -250,8 +373,22 @@ const UndeleteTableMetadata$json = {
   '1': 'UndeleteTableMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -266,8 +403,23 @@ const ModifyColumnFamiliesRequest$json = {
   '1': 'ModifyColumnFamiliesRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'modifications', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.admin.v2.ModifyColumnFamiliesRequest.Modification', '8': {}, '10': 'modifications'},
-    {'1': 'ignore_warnings', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'ignoreWarnings'},
+    {
+      '1': 'modifications',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.ModifyColumnFamiliesRequest.Modification',
+      '8': {},
+      '10': 'modifications'
+    },
+    {
+      '1': 'ignore_warnings',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'ignoreWarnings'
+    },
   ],
   '3': [ModifyColumnFamiliesRequest_Modification$json],
 };
@@ -277,10 +429,34 @@ const ModifyColumnFamiliesRequest_Modification$json = {
   '1': 'Modification',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'create', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.ColumnFamily', '9': 0, '10': 'create'},
-    {'1': 'update', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.ColumnFamily', '9': 0, '10': 'update'},
+    {
+      '1': 'create',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.ColumnFamily',
+      '9': 0,
+      '10': 'create'
+    },
+    {
+      '1': 'update',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.ColumnFamily',
+      '9': 0,
+      '10': 'update'
+    },
     {'1': 'drop', '3': 4, '4': 1, '5': 8, '9': 0, '10': 'drop'},
-    {'1': 'update_mask', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'update_mask',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
   '8': [
     {'1': 'mod'},
@@ -309,31 +485,62 @@ const GenerateConsistencyTokenRequest$json = {
 };
 
 /// Descriptor for `GenerateConsistencyTokenRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generateConsistencyTokenRequestDescriptor = $convert.base64Decode(
-    'Ch9HZW5lcmF0ZUNvbnNpc3RlbmN5VG9rZW5SZXF1ZXN0Ej4KBG5hbWUYASABKAlCKuBBAvpBJA'
-    'oiYmlndGFibGVhZG1pbi5nb29nbGVhcGlzLmNvbS9UYWJsZVIEbmFtZQ==');
+final $typed_data.Uint8List generateConsistencyTokenRequestDescriptor =
+    $convert.base64Decode(
+        'Ch9HZW5lcmF0ZUNvbnNpc3RlbmN5VG9rZW5SZXF1ZXN0Ej4KBG5hbWUYASABKAlCKuBBAvpBJA'
+        'oiYmlndGFibGVhZG1pbi5nb29nbGVhcGlzLmNvbS9UYWJsZVIEbmFtZQ==');
 
 @$core.Deprecated('Use generateConsistencyTokenResponseDescriptor instead')
 const GenerateConsistencyTokenResponse$json = {
   '1': 'GenerateConsistencyTokenResponse',
   '2': [
-    {'1': 'consistency_token', '3': 1, '4': 1, '5': 9, '10': 'consistencyToken'},
+    {
+      '1': 'consistency_token',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'consistencyToken'
+    },
   ],
 };
 
 /// Descriptor for `GenerateConsistencyTokenResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generateConsistencyTokenResponseDescriptor = $convert.base64Decode(
-    'CiBHZW5lcmF0ZUNvbnNpc3RlbmN5VG9rZW5SZXNwb25zZRIrChFjb25zaXN0ZW5jeV90b2tlbh'
-    'gBIAEoCVIQY29uc2lzdGVuY3lUb2tlbg==');
+final $typed_data.Uint8List generateConsistencyTokenResponseDescriptor =
+    $convert.base64Decode(
+        'CiBHZW5lcmF0ZUNvbnNpc3RlbmN5VG9rZW5SZXNwb25zZRIrChFjb25zaXN0ZW5jeV90b2tlbh'
+        'gBIAEoCVIQY29uc2lzdGVuY3lUb2tlbg==');
 
 @$core.Deprecated('Use checkConsistencyRequestDescriptor instead')
 const CheckConsistencyRequest$json = {
   '1': 'CheckConsistencyRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'consistency_token', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'consistencyToken'},
-    {'1': 'standard_read_remote_writes', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.StandardReadRemoteWrites', '9': 0, '10': 'standardReadRemoteWrites'},
-    {'1': 'data_boost_read_local_writes', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.DataBoostReadLocalWrites', '9': 0, '10': 'dataBoostReadLocalWrites'},
+    {
+      '1': 'consistency_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'consistencyToken'
+    },
+    {
+      '1': 'standard_read_remote_writes',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.StandardReadRemoteWrites',
+      '9': 0,
+      '10': 'standardReadRemoteWrites'
+    },
+    {
+      '1': 'data_boost_read_local_writes',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.DataBoostReadLocalWrites',
+      '9': 0,
+      '10': 'dataBoostReadLocalWrites'
+    },
   ],
   '8': [
     {'1': 'mode'},
@@ -356,8 +563,8 @@ const StandardReadRemoteWrites$json = {
 };
 
 /// Descriptor for `StandardReadRemoteWrites`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List standardReadRemoteWritesDescriptor = $convert.base64Decode(
-    'ChhTdGFuZGFyZFJlYWRSZW1vdGVXcml0ZXM=');
+final $typed_data.Uint8List standardReadRemoteWritesDescriptor =
+    $convert.base64Decode('ChhTdGFuZGFyZFJlYWRSZW1vdGVXcml0ZXM=');
 
 @$core.Deprecated('Use dataBoostReadLocalWritesDescriptor instead')
 const DataBoostReadLocalWrites$json = {
@@ -365,8 +572,8 @@ const DataBoostReadLocalWrites$json = {
 };
 
 /// Descriptor for `DataBoostReadLocalWrites`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataBoostReadLocalWritesDescriptor = $convert.base64Decode(
-    'ChhEYXRhQm9vc3RSZWFkTG9jYWxXcml0ZXM=');
+final $typed_data.Uint8List dataBoostReadLocalWritesDescriptor =
+    $convert.base64Decode('ChhEYXRhQm9vc3RSZWFkTG9jYWxXcml0ZXM=');
 
 @$core.Deprecated('Use checkConsistencyResponseDescriptor instead')
 const CheckConsistencyResponse$json = {
@@ -377,9 +584,10 @@ const CheckConsistencyResponse$json = {
 };
 
 /// Descriptor for `CheckConsistencyResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List checkConsistencyResponseDescriptor = $convert.base64Decode(
-    'ChhDaGVja0NvbnNpc3RlbmN5UmVzcG9uc2USHgoKY29uc2lzdGVudBgBIAEoCFIKY29uc2lzdG'
-    'VudA==');
+final $typed_data.Uint8List checkConsistencyResponseDescriptor =
+    $convert.base64Decode(
+        'ChhDaGVja0NvbnNpc3RlbmN5UmVzcG9uc2USHgoKY29uc2lzdGVudBgBIAEoCFIKY29uc2lzdG'
+        'VudA==');
 
 @$core.Deprecated('Use snapshotTableRequestDescriptor instead')
 const SnapshotTableRequest$json = {
@@ -388,7 +596,14 @@ const SnapshotTableRequest$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'cluster', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'cluster'},
     {'1': 'snapshot_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'snapshotId'},
-    {'1': 'ttl', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'ttl'},
+    {
+      '1': 'ttl',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'ttl'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
   ],
 };
@@ -434,7 +649,14 @@ final $typed_data.Uint8List listSnapshotsRequestDescriptor = $convert.base64Deco
 const ListSnapshotsResponse$json = {
   '1': 'ListSnapshotsResponse',
   '2': [
-    {'1': 'snapshots', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.admin.v2.Snapshot', '10': 'snapshots'},
+    {
+      '1': 'snapshots',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Snapshot',
+      '10': 'snapshots'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -462,9 +684,30 @@ final $typed_data.Uint8List deleteSnapshotRequestDescriptor = $convert.base64Dec
 const SnapshotTableMetadata$json = {
   '1': 'SnapshotTableMetadata',
   '2': [
-    {'1': 'original_request', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.SnapshotTableRequest', '10': 'originalRequest'},
-    {'1': 'request_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'requestTime'},
-    {'1': 'finish_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'finishTime'},
+    {
+      '1': 'original_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.SnapshotTableRequest',
+      '10': 'originalRequest'
+    },
+    {
+      '1': 'request_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'requestTime'
+    },
+    {
+      '1': 'finish_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'finishTime'
+    },
   ],
 };
 
@@ -480,9 +723,30 @@ final $typed_data.Uint8List snapshotTableMetadataDescriptor = $convert.base64Dec
 const CreateTableFromSnapshotMetadata$json = {
   '1': 'CreateTableFromSnapshotMetadata',
   '2': [
-    {'1': 'original_request', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.CreateTableFromSnapshotRequest', '10': 'originalRequest'},
-    {'1': 'request_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'requestTime'},
-    {'1': 'finish_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'finishTime'},
+    {
+      '1': 'original_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.CreateTableFromSnapshotRequest',
+      '10': 'originalRequest'
+    },
+    {
+      '1': 'request_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'requestTime'
+    },
+    {
+      '1': 'finish_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'finishTime'
+    },
   ],
 };
 
@@ -500,7 +764,15 @@ const CreateBackupRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'backup_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'backupId'},
-    {'1': 'backup', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.Backup', '8': {}, '10': 'backup'},
+    {
+      '1': 'backup',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Backup',
+      '8': {},
+      '10': 'backup'
+    },
   ],
 };
 
@@ -517,8 +789,22 @@ const CreateBackupMetadata$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'source_table', '3': 2, '4': 1, '5': 9, '10': 'sourceTable'},
-    {'1': 'start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -533,8 +819,24 @@ final $typed_data.Uint8List createBackupMetadataDescriptor = $convert.base64Deco
 const UpdateBackupRequest$json = {
   '1': 'UpdateBackupRequest',
   '2': [
-    {'1': 'backup', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.Backup', '8': {}, '10': 'backup'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'backup',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Backup',
+      '8': {},
+      '10': 'backup'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -593,7 +895,14 @@ final $typed_data.Uint8List listBackupsRequestDescriptor = $convert.base64Decode
 const ListBackupsResponse$json = {
   '1': 'ListBackupsResponse',
   '2': [
-    {'1': 'backups', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.admin.v2.Backup', '10': 'backups'},
+    {
+      '1': 'backups',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Backup',
+      '10': 'backups'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -610,8 +919,23 @@ const CopyBackupRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'backup_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'backupId'},
-    {'1': 'source_backup', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'sourceBackup'},
-    {'1': 'expire_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
+    {
+      '1': 'source_backup',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceBackup'
+    },
+    {
+      '1': 'expire_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
   ],
 };
 
@@ -628,8 +952,22 @@ const CopyBackupMetadata$json = {
   '1': 'CopyBackupMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'source_backup_info', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.BackupInfo', '10': 'sourceBackupInfo'},
-    {'1': 'progress', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.OperationProgress', '10': 'progress'},
+    {
+      '1': 'source_backup_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.BackupInfo',
+      '10': 'sourceBackupInfo'
+    },
+    {
+      '1': 'progress',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.OperationProgress',
+      '10': 'progress'
+    },
   ],
 };
 
@@ -646,8 +984,23 @@ const CreateAuthorizedViewRequest$json = {
   '1': 'CreateAuthorizedViewRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'authorized_view_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'authorizedViewId'},
-    {'1': 'authorized_view', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AuthorizedView', '8': {}, '10': 'authorizedView'},
+    {
+      '1': 'authorized_view_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'authorizedViewId'
+    },
+    {
+      '1': 'authorized_view',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AuthorizedView',
+      '8': {},
+      '10': 'authorizedView'
+    },
   ],
 };
 
@@ -663,9 +1016,30 @@ final $typed_data.Uint8List createAuthorizedViewRequestDescriptor = $convert.bas
 const CreateAuthorizedViewMetadata$json = {
   '1': 'CreateAuthorizedViewMetadata',
   '2': [
-    {'1': 'original_request', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.CreateAuthorizedViewRequest', '10': 'originalRequest'},
-    {'1': 'request_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'requestTime'},
-    {'1': 'finish_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'finishTime'},
+    {
+      '1': 'original_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.CreateAuthorizedViewRequest',
+      '10': 'originalRequest'
+    },
+    {
+      '1': 'request_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'requestTime'
+    },
+    {
+      '1': 'finish_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'finishTime'
+    },
   ],
 };
 
@@ -684,7 +1058,15 @@ const ListAuthorizedViewsRequest$json = {
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
-    {'1': 'view', '3': 4, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.AuthorizedView.ResponseView', '8': {}, '10': 'view'},
+    {
+      '1': 'view',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.AuthorizedView.ResponseView',
+      '8': {},
+      '10': 'view'
+    },
   ],
 };
 
@@ -700,23 +1082,39 @@ final $typed_data.Uint8List listAuthorizedViewsRequestDescriptor = $convert.base
 const ListAuthorizedViewsResponse$json = {
   '1': 'ListAuthorizedViewsResponse',
   '2': [
-    {'1': 'authorized_views', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.admin.v2.AuthorizedView', '10': 'authorizedViews'},
+    {
+      '1': 'authorized_views',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AuthorizedView',
+      '10': 'authorizedViews'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListAuthorizedViewsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAuthorizedViewsResponseDescriptor = $convert.base64Decode(
-    'ChtMaXN0QXV0aG9yaXplZFZpZXdzUmVzcG9uc2USUwoQYXV0aG9yaXplZF92aWV3cxgBIAMoCz'
-    'IoLmdvb2dsZS5iaWd0YWJsZS5hZG1pbi52Mi5BdXRob3JpemVkVmlld1IPYXV0aG9yaXplZFZp'
-    'ZXdzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listAuthorizedViewsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtMaXN0QXV0aG9yaXplZFZpZXdzUmVzcG9uc2USUwoQYXV0aG9yaXplZF92aWV3cxgBIAMoCz'
+        'IoLmdvb2dsZS5iaWd0YWJsZS5hZG1pbi52Mi5BdXRob3JpemVkVmlld1IPYXV0aG9yaXplZFZp'
+        'ZXdzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use getAuthorizedViewRequestDescriptor instead')
 const GetAuthorizedViewRequest$json = {
   '1': 'GetAuthorizedViewRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.AuthorizedView.ResponseView', '8': {}, '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.AuthorizedView.ResponseView',
+      '8': {},
+      '10': 'view'
+    },
   ],
 };
 
@@ -731,9 +1129,32 @@ final $typed_data.Uint8List getAuthorizedViewRequestDescriptor = $convert.base64
 const UpdateAuthorizedViewRequest$json = {
   '1': 'UpdateAuthorizedViewRequest',
   '2': [
-    {'1': 'authorized_view', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AuthorizedView', '8': {}, '10': 'authorizedView'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
-    {'1': 'ignore_warnings', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'ignoreWarnings'},
+    {
+      '1': 'authorized_view',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AuthorizedView',
+      '8': {},
+      '10': 'authorizedView'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
+    {
+      '1': 'ignore_warnings',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'ignoreWarnings'
+    },
   ],
 };
 
@@ -749,9 +1170,30 @@ final $typed_data.Uint8List updateAuthorizedViewRequestDescriptor = $convert.bas
 const UpdateAuthorizedViewMetadata$json = {
   '1': 'UpdateAuthorizedViewMetadata',
   '2': [
-    {'1': 'original_request', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.UpdateAuthorizedViewRequest', '10': 'originalRequest'},
-    {'1': 'request_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'requestTime'},
-    {'1': 'finish_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'finishTime'},
+    {
+      '1': 'original_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.UpdateAuthorizedViewRequest',
+      '10': 'originalRequest'
+    },
+    {
+      '1': 'request_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'requestTime'
+    },
+    {
+      '1': 'finish_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'finishTime'
+    },
   ],
 };
 
@@ -773,8 +1215,8 @@ const DeleteAuthorizedViewRequest$json = {
 };
 
 /// Descriptor for `DeleteAuthorizedViewRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAuthorizedViewRequestDescriptor = $convert.base64Decode(
-    'ChtEZWxldGVBdXRob3JpemVkVmlld1JlcXVlc3QSRwoEbmFtZRgBIAEoCUIz4EEC+kEtCitiaW'
-    'd0YWJsZWFkbWluLmdvb2dsZWFwaXMuY29tL0F1dGhvcml6ZWRWaWV3UgRuYW1lEhcKBGV0YWcY'
-    'AiABKAlCA+BBAVIEZXRhZw==');
-
+final $typed_data.Uint8List deleteAuthorizedViewRequestDescriptor =
+    $convert.base64Decode(
+        'ChtEZWxldGVBdXRob3JpemVkVmlld1JlcXVlc3QSRwoEbmFtZRgBIAEoCUIz4EEC+kEtCitiaW'
+        'd0YWJsZWFkbWluLmdvb2dsZWFwaXMuY29tL0F1dGhvcml6ZWRWaWV3UgRuYW1lEhcKBGV0YWcY'
+        'AiABKAlCA+BBAVIEZXRhZw==');

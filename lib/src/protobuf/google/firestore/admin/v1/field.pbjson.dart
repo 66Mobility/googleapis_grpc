@@ -18,8 +18,22 @@ const Field$json = {
   '1': 'Field',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'index_config', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Field.IndexConfig', '10': 'indexConfig'},
-    {'1': 'ttl_config', '3': 3, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Field.TtlConfig', '10': 'ttlConfig'},
+    {
+      '1': 'index_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Field.IndexConfig',
+      '10': 'indexConfig'
+    },
+    {
+      '1': 'ttl_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Field.TtlConfig',
+      '10': 'ttlConfig'
+    },
   ],
   '3': [Field_IndexConfig$json, Field_TtlConfig$json],
   '7': {},
@@ -29,8 +43,21 @@ const Field$json = {
 const Field_IndexConfig$json = {
   '1': 'IndexConfig',
   '2': [
-    {'1': 'indexes', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.Index', '10': 'indexes'},
-    {'1': 'uses_ancestor_config', '3': 2, '4': 1, '5': 8, '10': 'usesAncestorConfig'},
+    {
+      '1': 'indexes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Index',
+      '10': 'indexes'
+    },
+    {
+      '1': 'uses_ancestor_config',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'usesAncestorConfig'
+    },
     {'1': 'ancestor_field', '3': 3, '4': 1, '5': 9, '10': 'ancestorField'},
     {'1': 'reverting', '3': 4, '4': 1, '5': 8, '10': 'reverting'},
   ],
@@ -40,7 +67,15 @@ const Field_IndexConfig$json = {
 const Field_TtlConfig$json = {
   '1': 'TtlConfig',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Field.TtlConfig.State', '8': {}, '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Field.TtlConfig.State',
+      '8': {},
+      '10': 'state'
+    },
   ],
   '4': [Field_TtlConfig_State$json],
 };
@@ -71,4 +106,3 @@ final $typed_data.Uint8List fieldDescriptor = $convert.base64Decode(
     'Ch5maXJlc3RvcmUuZ29vZ2xlYXBpcy5jb20vRmllbGQSVHByb2plY3RzL3twcm9qZWN0fS9kYX'
     'RhYmFzZXMve2RhdGFiYXNlfS9jb2xsZWN0aW9uR3JvdXBzL3tjb2xsZWN0aW9ufS9maWVsZHMv'
     'e2ZpZWxkfQ==');
-

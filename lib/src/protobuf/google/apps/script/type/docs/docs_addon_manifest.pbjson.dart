@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const DocsAddOnManifest$json = {
   '1': 'DocsAddOnManifest',
   '2': [
-    {'1': 'homepage_trigger', '3': 1, '4': 1, '5': 11, '6': '.google.apps.script.type.HomepageExtensionPoint', '10': 'homepageTrigger'},
-    {'1': 'on_file_scope_granted_trigger', '3': 2, '4': 1, '5': 11, '6': '.google.apps.script.type.docs.DocsExtensionPoint', '10': 'onFileScopeGrantedTrigger'},
+    {
+      '1': 'homepage_trigger',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.HomepageExtensionPoint',
+      '10': 'homepageTrigger'
+    },
+    {
+      '1': 'on_file_scope_granted_trigger',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.docs.DocsExtensionPoint',
+      '10': 'onFileScopeGrantedTrigger'
+    },
   ],
 };
 
@@ -42,4 +56,3 @@ const DocsExtensionPoint$json = {
 final $typed_data.Uint8List docsExtensionPointDescriptor = $convert.base64Decode(
     'ChJEb2NzRXh0ZW5zaW9uUG9pbnQSJgoMcnVuX2Z1bmN0aW9uGAEgASgJQgPgQQJSC3J1bkZ1bm'
     'N0aW9u');
-

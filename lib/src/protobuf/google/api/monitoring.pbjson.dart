@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Monitoring$json = {
   '1': 'Monitoring',
   '2': [
-    {'1': 'producer_destinations', '3': 1, '4': 3, '5': 11, '6': '.google.api.Monitoring.MonitoringDestination', '10': 'producerDestinations'},
-    {'1': 'consumer_destinations', '3': 2, '4': 3, '5': 11, '6': '.google.api.Monitoring.MonitoringDestination', '10': 'consumerDestinations'},
+    {
+      '1': 'producer_destinations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Monitoring.MonitoringDestination',
+      '10': 'producerDestinations'
+    },
+    {
+      '1': 'consumer_destinations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Monitoring.MonitoringDestination',
+      '10': 'consumerDestinations'
+    },
   ],
   '3': [Monitoring_MonitoringDestination$json],
 };
@@ -27,7 +41,13 @@ const Monitoring$json = {
 const Monitoring_MonitoringDestination$json = {
   '1': 'MonitoringDestination',
   '2': [
-    {'1': 'monitored_resource', '3': 1, '4': 1, '5': 9, '10': 'monitoredResource'},
+    {
+      '1': 'monitored_resource',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'monitoredResource'
+    },
     {'1': 'metrics', '3': 2, '4': 3, '5': 9, '10': 'metrics'},
   ],
 };
@@ -40,4 +60,3 @@ final $typed_data.Uint8List monitoringDescriptor = $convert.base64Decode(
     '5Nb25pdG9yaW5nRGVzdGluYXRpb25SFGNvbnN1bWVyRGVzdGluYXRpb25zGmAKFU1vbml0b3Jp'
     'bmdEZXN0aW5hdGlvbhItChJtb25pdG9yZWRfcmVzb3VyY2UYASABKAlSEW1vbml0b3JlZFJlc2'
     '91cmNlEhgKB21ldHJpY3MYAiADKAlSB21ldHJpY3M=');
-

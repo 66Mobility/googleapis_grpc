@@ -31,33 +31,46 @@ class GetOnlineReturnPolicyRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetOnlineReturnPolicyRequest._() : super();
-  factory GetOnlineReturnPolicyRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetOnlineReturnPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetOnlineReturnPolicyRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetOnlineReturnPolicyRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetOnlineReturnPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetOnlineReturnPolicyRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetOnlineReturnPolicyRequest clone() => GetOnlineReturnPolicyRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetOnlineReturnPolicyRequest copyWith(void Function(GetOnlineReturnPolicyRequest) updates) => super.copyWith((message) => updates(message as GetOnlineReturnPolicyRequest)) as GetOnlineReturnPolicyRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetOnlineReturnPolicyRequest clone() =>
+      GetOnlineReturnPolicyRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetOnlineReturnPolicyRequest copyWith(
+          void Function(GetOnlineReturnPolicyRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetOnlineReturnPolicyRequest))
+          as GetOnlineReturnPolicyRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetOnlineReturnPolicyRequest create() => GetOnlineReturnPolicyRequest._();
+  static GetOnlineReturnPolicyRequest create() =>
+      GetOnlineReturnPolicyRequest._();
   GetOnlineReturnPolicyRequest createEmptyInstance() => create();
-  static $pb.PbList<GetOnlineReturnPolicyRequest> createRepeated() => $pb.PbList<GetOnlineReturnPolicyRequest>();
+  static $pb.PbList<GetOnlineReturnPolicyRequest> createRepeated() =>
+      $pb.PbList<GetOnlineReturnPolicyRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetOnlineReturnPolicyRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetOnlineReturnPolicyRequest>(create);
+  static GetOnlineReturnPolicyRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetOnlineReturnPolicyRequest>(create);
   static GetOnlineReturnPolicyRequest? _defaultInstance;
 
   /// Required. The name of the return policy to retrieve.
@@ -65,7 +78,10 @@ class GetOnlineReturnPolicyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,35 +108,49 @@ class ListOnlineReturnPoliciesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListOnlineReturnPoliciesRequest._() : super();
-  factory ListOnlineReturnPoliciesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListOnlineReturnPoliciesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListOnlineReturnPoliciesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListOnlineReturnPoliciesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListOnlineReturnPoliciesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListOnlineReturnPoliciesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListOnlineReturnPoliciesRequest clone() => ListOnlineReturnPoliciesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListOnlineReturnPoliciesRequest copyWith(void Function(ListOnlineReturnPoliciesRequest) updates) => super.copyWith((message) => updates(message as ListOnlineReturnPoliciesRequest)) as ListOnlineReturnPoliciesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListOnlineReturnPoliciesRequest clone() =>
+      ListOnlineReturnPoliciesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListOnlineReturnPoliciesRequest copyWith(
+          void Function(ListOnlineReturnPoliciesRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListOnlineReturnPoliciesRequest))
+          as ListOnlineReturnPoliciesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListOnlineReturnPoliciesRequest create() => ListOnlineReturnPoliciesRequest._();
+  static ListOnlineReturnPoliciesRequest create() =>
+      ListOnlineReturnPoliciesRequest._();
   ListOnlineReturnPoliciesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListOnlineReturnPoliciesRequest> createRepeated() => $pb.PbList<ListOnlineReturnPoliciesRequest>();
+  static $pb.PbList<ListOnlineReturnPoliciesRequest> createRepeated() =>
+      $pb.PbList<ListOnlineReturnPoliciesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListOnlineReturnPoliciesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListOnlineReturnPoliciesRequest>(create);
+  static ListOnlineReturnPoliciesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListOnlineReturnPoliciesRequest>(
+          create);
   static ListOnlineReturnPoliciesRequest? _defaultInstance;
 
   /// Required. The merchant account for which to list return policies.
@@ -128,7 +158,10 @@ class ListOnlineReturnPoliciesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -142,7 +175,10 @@ class ListOnlineReturnPoliciesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -159,7 +195,10 @@ class ListOnlineReturnPoliciesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -182,34 +221,50 @@ class ListOnlineReturnPoliciesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListOnlineReturnPoliciesResponse._() : super();
-  factory ListOnlineReturnPoliciesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListOnlineReturnPoliciesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListOnlineReturnPoliciesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListOnlineReturnPoliciesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListOnlineReturnPoliciesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<OnlineReturnPolicy>(1, _omitFieldNames ? '' : 'onlineReturnPolicies', $pb.PbFieldType.PM, subBuilder: OnlineReturnPolicy.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListOnlineReturnPoliciesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<OnlineReturnPolicy>(
+        1, _omitFieldNames ? '' : 'onlineReturnPolicies', $pb.PbFieldType.PM,
+        subBuilder: OnlineReturnPolicy.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListOnlineReturnPoliciesResponse clone() => ListOnlineReturnPoliciesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListOnlineReturnPoliciesResponse copyWith(void Function(ListOnlineReturnPoliciesResponse) updates) => super.copyWith((message) => updates(message as ListOnlineReturnPoliciesResponse)) as ListOnlineReturnPoliciesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListOnlineReturnPoliciesResponse clone() =>
+      ListOnlineReturnPoliciesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListOnlineReturnPoliciesResponse copyWith(
+          void Function(ListOnlineReturnPoliciesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListOnlineReturnPoliciesResponse))
+          as ListOnlineReturnPoliciesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListOnlineReturnPoliciesResponse create() => ListOnlineReturnPoliciesResponse._();
+  static ListOnlineReturnPoliciesResponse create() =>
+      ListOnlineReturnPoliciesResponse._();
   ListOnlineReturnPoliciesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListOnlineReturnPoliciesResponse> createRepeated() => $pb.PbList<ListOnlineReturnPoliciesResponse>();
+  static $pb.PbList<ListOnlineReturnPoliciesResponse> createRepeated() =>
+      $pb.PbList<ListOnlineReturnPoliciesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListOnlineReturnPoliciesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListOnlineReturnPoliciesResponse>(create);
+  static ListOnlineReturnPoliciesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListOnlineReturnPoliciesResponse>(
+          create);
   static ListOnlineReturnPoliciesResponse? _defaultInstance;
 
   /// The retrieved return policies.
@@ -221,7 +276,10 @@ class ListOnlineReturnPoliciesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -245,41 +303,65 @@ class OnlineReturnPolicy_ReturnShippingFee extends $pb.GeneratedMessage {
     return $result;
   }
   OnlineReturnPolicy_ReturnShippingFee._() : super();
-  factory OnlineReturnPolicy_ReturnShippingFee.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OnlineReturnPolicy_ReturnShippingFee.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OnlineReturnPolicy_ReturnShippingFee.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OnlineReturnPolicy_ReturnShippingFee.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OnlineReturnPolicy.ReturnShippingFee', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..e<OnlineReturnPolicy_ReturnShippingFee_Type>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: OnlineReturnPolicy_ReturnShippingFee_Type.TYPE_UNSPECIFIED, valueOf: OnlineReturnPolicy_ReturnShippingFee_Type.valueOf, enumValues: OnlineReturnPolicy_ReturnShippingFee_Type.values)
-    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'fixedFee', subBuilder: $536.Price.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OnlineReturnPolicy.ReturnShippingFee',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..e<OnlineReturnPolicy_ReturnShippingFee_Type>(
+        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            OnlineReturnPolicy_ReturnShippingFee_Type.TYPE_UNSPECIFIED,
+        valueOf: OnlineReturnPolicy_ReturnShippingFee_Type.valueOf,
+        enumValues: OnlineReturnPolicy_ReturnShippingFee_Type.values)
+    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'fixedFee',
+        subBuilder: $536.Price.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OnlineReturnPolicy_ReturnShippingFee clone() => OnlineReturnPolicy_ReturnShippingFee()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OnlineReturnPolicy_ReturnShippingFee copyWith(void Function(OnlineReturnPolicy_ReturnShippingFee) updates) => super.copyWith((message) => updates(message as OnlineReturnPolicy_ReturnShippingFee)) as OnlineReturnPolicy_ReturnShippingFee;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OnlineReturnPolicy_ReturnShippingFee clone() =>
+      OnlineReturnPolicy_ReturnShippingFee()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OnlineReturnPolicy_ReturnShippingFee copyWith(
+          void Function(OnlineReturnPolicy_ReturnShippingFee) updates) =>
+      super.copyWith((message) =>
+              updates(message as OnlineReturnPolicy_ReturnShippingFee))
+          as OnlineReturnPolicy_ReturnShippingFee;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static OnlineReturnPolicy_ReturnShippingFee create() => OnlineReturnPolicy_ReturnShippingFee._();
+  static OnlineReturnPolicy_ReturnShippingFee create() =>
+      OnlineReturnPolicy_ReturnShippingFee._();
   OnlineReturnPolicy_ReturnShippingFee createEmptyInstance() => create();
-  static $pb.PbList<OnlineReturnPolicy_ReturnShippingFee> createRepeated() => $pb.PbList<OnlineReturnPolicy_ReturnShippingFee>();
+  static $pb.PbList<OnlineReturnPolicy_ReturnShippingFee> createRepeated() =>
+      $pb.PbList<OnlineReturnPolicy_ReturnShippingFee>();
   @$core.pragma('dart2js:noInline')
-  static OnlineReturnPolicy_ReturnShippingFee getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OnlineReturnPolicy_ReturnShippingFee>(create);
+  static OnlineReturnPolicy_ReturnShippingFee getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          OnlineReturnPolicy_ReturnShippingFee>(create);
   static OnlineReturnPolicy_ReturnShippingFee? _defaultInstance;
 
   /// Type of return shipping fee.
   @$pb.TagNumber(1)
   OnlineReturnPolicy_ReturnShippingFee_Type get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(OnlineReturnPolicy_ReturnShippingFee_Type v) { setField(1, v); }
+  set type(OnlineReturnPolicy_ReturnShippingFee_Type v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -291,7 +373,10 @@ class OnlineReturnPolicy_ReturnShippingFee extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $536.Price get fixedFee => $_getN(1);
   @$pb.TagNumber(2)
-  set fixedFee($536.Price v) { setField(2, v); }
+  set fixedFee($536.Price v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFixedFee() => $_has(1);
   @$pb.TagNumber(2)
@@ -300,11 +385,7 @@ class OnlineReturnPolicy_ReturnShippingFee extends $pb.GeneratedMessage {
   $536.Price ensureFixedFee() => $_ensure(1);
 }
 
-enum OnlineReturnPolicy_RestockingFee_Type {
-  fixedFee, 
-  microPercent, 
-  notSet
-}
+enum OnlineReturnPolicy_RestockingFee_Type { fixedFee, microPercent, notSet }
 
 /// The restocking fee. This can be a flat fee or a micro percent.
 class OnlineReturnPolicy_RestockingFee extends $pb.GeneratedMessage {
@@ -322,50 +403,70 @@ class OnlineReturnPolicy_RestockingFee extends $pb.GeneratedMessage {
     return $result;
   }
   OnlineReturnPolicy_RestockingFee._() : super();
-  factory OnlineReturnPolicy_RestockingFee.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OnlineReturnPolicy_RestockingFee.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OnlineReturnPolicy_RestockingFee.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OnlineReturnPolicy_RestockingFee.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, OnlineReturnPolicy_RestockingFee_Type> _OnlineReturnPolicy_RestockingFee_TypeByTag = {
-    1 : OnlineReturnPolicy_RestockingFee_Type.fixedFee,
-    2 : OnlineReturnPolicy_RestockingFee_Type.microPercent,
-    0 : OnlineReturnPolicy_RestockingFee_Type.notSet
+  static const $core.Map<$core.int, OnlineReturnPolicy_RestockingFee_Type>
+      _OnlineReturnPolicy_RestockingFee_TypeByTag = {
+    1: OnlineReturnPolicy_RestockingFee_Type.fixedFee,
+    2: OnlineReturnPolicy_RestockingFee_Type.microPercent,
+    0: OnlineReturnPolicy_RestockingFee_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OnlineReturnPolicy.RestockingFee', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OnlineReturnPolicy.RestockingFee',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$536.Price>(1, _omitFieldNames ? '' : 'fixedFee', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(1, _omitFieldNames ? '' : 'fixedFee',
+        subBuilder: $536.Price.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'microPercent', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OnlineReturnPolicy_RestockingFee clone() => OnlineReturnPolicy_RestockingFee()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OnlineReturnPolicy_RestockingFee copyWith(void Function(OnlineReturnPolicy_RestockingFee) updates) => super.copyWith((message) => updates(message as OnlineReturnPolicy_RestockingFee)) as OnlineReturnPolicy_RestockingFee;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OnlineReturnPolicy_RestockingFee clone() =>
+      OnlineReturnPolicy_RestockingFee()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OnlineReturnPolicy_RestockingFee copyWith(
+          void Function(OnlineReturnPolicy_RestockingFee) updates) =>
+      super.copyWith(
+              (message) => updates(message as OnlineReturnPolicy_RestockingFee))
+          as OnlineReturnPolicy_RestockingFee;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static OnlineReturnPolicy_RestockingFee create() => OnlineReturnPolicy_RestockingFee._();
+  static OnlineReturnPolicy_RestockingFee create() =>
+      OnlineReturnPolicy_RestockingFee._();
   OnlineReturnPolicy_RestockingFee createEmptyInstance() => create();
-  static $pb.PbList<OnlineReturnPolicy_RestockingFee> createRepeated() => $pb.PbList<OnlineReturnPolicy_RestockingFee>();
+  static $pb.PbList<OnlineReturnPolicy_RestockingFee> createRepeated() =>
+      $pb.PbList<OnlineReturnPolicy_RestockingFee>();
   @$core.pragma('dart2js:noInline')
-  static OnlineReturnPolicy_RestockingFee getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OnlineReturnPolicy_RestockingFee>(create);
+  static OnlineReturnPolicy_RestockingFee getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OnlineReturnPolicy_RestockingFee>(
+          create);
   static OnlineReturnPolicy_RestockingFee? _defaultInstance;
 
-  OnlineReturnPolicy_RestockingFee_Type whichType() => _OnlineReturnPolicy_RestockingFee_TypeByTag[$_whichOneof(0)]!;
+  OnlineReturnPolicy_RestockingFee_Type whichType() =>
+      _OnlineReturnPolicy_RestockingFee_TypeByTag[$_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// Fixed restocking fee.
   @$pb.TagNumber(1)
   $536.Price get fixedFee => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedFee($536.Price v) { setField(1, v); }
+  set fixedFee($536.Price v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFixedFee() => $_has(0);
   @$pb.TagNumber(1)
@@ -378,7 +479,10 @@ class OnlineReturnPolicy_RestockingFee extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get microPercent => $_getIZ(1);
   @$pb.TagNumber(2)
-  set microPercent($core.int v) { $_setSignedInt32(1, v); }
+  set microPercent($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMicroPercent() => $_has(1);
   @$pb.TagNumber(2)
@@ -401,41 +505,59 @@ class OnlineReturnPolicy_Policy extends $pb.GeneratedMessage {
     return $result;
   }
   OnlineReturnPolicy_Policy._() : super();
-  factory OnlineReturnPolicy_Policy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OnlineReturnPolicy_Policy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OnlineReturnPolicy_Policy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OnlineReturnPolicy_Policy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OnlineReturnPolicy.Policy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..e<OnlineReturnPolicy_Policy_Type>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: OnlineReturnPolicy_Policy_Type.TYPE_UNSPECIFIED, valueOf: OnlineReturnPolicy_Policy_Type.valueOf, enumValues: OnlineReturnPolicy_Policy_Type.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OnlineReturnPolicy.Policy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..e<OnlineReturnPolicy_Policy_Type>(
+        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: OnlineReturnPolicy_Policy_Type.TYPE_UNSPECIFIED,
+        valueOf: OnlineReturnPolicy_Policy_Type.valueOf,
+        enumValues: OnlineReturnPolicy_Policy_Type.values)
     ..aInt64(2, _omitFieldNames ? '' : 'days')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OnlineReturnPolicy_Policy clone() => OnlineReturnPolicy_Policy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OnlineReturnPolicy_Policy copyWith(void Function(OnlineReturnPolicy_Policy) updates) => super.copyWith((message) => updates(message as OnlineReturnPolicy_Policy)) as OnlineReturnPolicy_Policy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OnlineReturnPolicy_Policy clone() =>
+      OnlineReturnPolicy_Policy()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OnlineReturnPolicy_Policy copyWith(
+          void Function(OnlineReturnPolicy_Policy) updates) =>
+      super.copyWith((message) => updates(message as OnlineReturnPolicy_Policy))
+          as OnlineReturnPolicy_Policy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OnlineReturnPolicy_Policy create() => OnlineReturnPolicy_Policy._();
   OnlineReturnPolicy_Policy createEmptyInstance() => create();
-  static $pb.PbList<OnlineReturnPolicy_Policy> createRepeated() => $pb.PbList<OnlineReturnPolicy_Policy>();
+  static $pb.PbList<OnlineReturnPolicy_Policy> createRepeated() =>
+      $pb.PbList<OnlineReturnPolicy_Policy>();
   @$core.pragma('dart2js:noInline')
-  static OnlineReturnPolicy_Policy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OnlineReturnPolicy_Policy>(create);
+  static OnlineReturnPolicy_Policy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OnlineReturnPolicy_Policy>(create);
   static OnlineReturnPolicy_Policy? _defaultInstance;
 
   /// Policy type.
   @$pb.TagNumber(1)
   OnlineReturnPolicy_Policy_Type get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(OnlineReturnPolicy_Policy_Type v) { setField(1, v); }
+  set type(OnlineReturnPolicy_Policy_Type v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -447,7 +569,10 @@ class OnlineReturnPolicy_Policy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get days => $_getI64(1);
   @$pb.TagNumber(2)
-  set days($fixnum.Int64 v) { $_setInt64(1, v); }
+  set days($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDays() => $_has(1);
   @$pb.TagNumber(2)
@@ -516,45 +641,70 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
     return $result;
   }
   OnlineReturnPolicy._() : super();
-  factory OnlineReturnPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OnlineReturnPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OnlineReturnPolicy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OnlineReturnPolicy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OnlineReturnPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OnlineReturnPolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'returnPolicyId')
     ..aOS(3, _omitFieldNames ? '' : 'label')
     ..pPS(4, _omitFieldNames ? '' : 'countries')
-    ..aOM<OnlineReturnPolicy_Policy>(5, _omitFieldNames ? '' : 'policy', subBuilder: OnlineReturnPolicy_Policy.create)
-    ..aOM<OnlineReturnPolicy_RestockingFee>(6, _omitFieldNames ? '' : 'restockingFee', subBuilder: OnlineReturnPolicy_RestockingFee.create)
-    ..pc<OnlineReturnPolicy_ReturnMethod>(7, _omitFieldNames ? '' : 'returnMethods', $pb.PbFieldType.KE, valueOf: OnlineReturnPolicy_ReturnMethod.valueOf, enumValues: OnlineReturnPolicy_ReturnMethod.values, defaultEnumValue: OnlineReturnPolicy_ReturnMethod.RETURN_METHOD_UNSPECIFIED)
-    ..pc<OnlineReturnPolicy_ItemCondition>(8, _omitFieldNames ? '' : 'itemConditions', $pb.PbFieldType.KE, valueOf: OnlineReturnPolicy_ItemCondition.valueOf, enumValues: OnlineReturnPolicy_ItemCondition.values, defaultEnumValue: OnlineReturnPolicy_ItemCondition.ITEM_CONDITION_UNSPECIFIED)
-    ..aOM<OnlineReturnPolicy_ReturnShippingFee>(9, _omitFieldNames ? '' : 'returnShippingFee', subBuilder: OnlineReturnPolicy_ReturnShippingFee.create)
+    ..aOM<OnlineReturnPolicy_Policy>(5, _omitFieldNames ? '' : 'policy',
+        subBuilder: OnlineReturnPolicy_Policy.create)
+    ..aOM<OnlineReturnPolicy_RestockingFee>(
+        6, _omitFieldNames ? '' : 'restockingFee',
+        subBuilder: OnlineReturnPolicy_RestockingFee.create)
+    ..pc<OnlineReturnPolicy_ReturnMethod>(
+        7, _omitFieldNames ? '' : 'returnMethods', $pb.PbFieldType.KE,
+        valueOf: OnlineReturnPolicy_ReturnMethod.valueOf,
+        enumValues: OnlineReturnPolicy_ReturnMethod.values,
+        defaultEnumValue:
+            OnlineReturnPolicy_ReturnMethod.RETURN_METHOD_UNSPECIFIED)
+    ..pc<OnlineReturnPolicy_ItemCondition>(
+        8, _omitFieldNames ? '' : 'itemConditions', $pb.PbFieldType.KE,
+        valueOf: OnlineReturnPolicy_ItemCondition.valueOf,
+        enumValues: OnlineReturnPolicy_ItemCondition.values,
+        defaultEnumValue:
+            OnlineReturnPolicy_ItemCondition.ITEM_CONDITION_UNSPECIFIED)
+    ..aOM<OnlineReturnPolicy_ReturnShippingFee>(
+        9, _omitFieldNames ? '' : 'returnShippingFee',
+        subBuilder: OnlineReturnPolicy_ReturnShippingFee.create)
     ..aOS(10, _omitFieldNames ? '' : 'returnPolicyUri')
     ..aOB(11, _omitFieldNames ? '' : 'acceptDefectiveOnly')
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'processRefundDays', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'processRefundDays', $pb.PbFieldType.O3)
     ..aOB(13, _omitFieldNames ? '' : 'acceptExchange')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OnlineReturnPolicy clone() => OnlineReturnPolicy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OnlineReturnPolicy copyWith(void Function(OnlineReturnPolicy) updates) => super.copyWith((message) => updates(message as OnlineReturnPolicy)) as OnlineReturnPolicy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OnlineReturnPolicy copyWith(void Function(OnlineReturnPolicy) updates) =>
+      super.copyWith((message) => updates(message as OnlineReturnPolicy))
+          as OnlineReturnPolicy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OnlineReturnPolicy create() => OnlineReturnPolicy._();
   OnlineReturnPolicy createEmptyInstance() => create();
-  static $pb.PbList<OnlineReturnPolicy> createRepeated() => $pb.PbList<OnlineReturnPolicy>();
+  static $pb.PbList<OnlineReturnPolicy> createRepeated() =>
+      $pb.PbList<OnlineReturnPolicy>();
   @$core.pragma('dart2js:noInline')
-  static OnlineReturnPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OnlineReturnPolicy>(create);
+  static OnlineReturnPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OnlineReturnPolicy>(create);
   static OnlineReturnPolicy? _defaultInstance;
 
   /// Identifier. The name of the `OnlineReturnPolicy` resource.
@@ -562,7 +712,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -572,7 +725,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get returnPolicyId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set returnPolicyId($core.String v) { $_setString(1, v); }
+  set returnPolicyId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReturnPolicyId() => $_has(1);
   @$pb.TagNumber(2)
@@ -589,7 +745,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get label => $_getSZ(2);
   @$pb.TagNumber(3)
-  set label($core.String v) { $_setString(2, v); }
+  set label($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLabel() => $_has(2);
   @$pb.TagNumber(3)
@@ -604,7 +763,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   OnlineReturnPolicy_Policy get policy => $_getN(4);
   @$pb.TagNumber(5)
-  set policy(OnlineReturnPolicy_Policy v) { setField(5, v); }
+  set policy(OnlineReturnPolicy_Policy v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPolicy() => $_has(4);
   @$pb.TagNumber(5)
@@ -617,7 +779,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   OnlineReturnPolicy_RestockingFee get restockingFee => $_getN(5);
   @$pb.TagNumber(6)
-  set restockingFee(OnlineReturnPolicy_RestockingFee v) { setField(6, v); }
+  set restockingFee(OnlineReturnPolicy_RestockingFee v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasRestockingFee() => $_has(5);
   @$pb.TagNumber(6)
@@ -633,14 +798,18 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   /// The item conditions accepted for returns must not be empty unless the type
   /// of return policy is 'noReturns'.
   @$pb.TagNumber(8)
-  $core.List<OnlineReturnPolicy_ItemCondition> get itemConditions => $_getList(7);
+  $core.List<OnlineReturnPolicy_ItemCondition> get itemConditions =>
+      $_getList(7);
 
   /// The return shipping fee. Should be set only when customer need to download
   /// and print the return label.
   @$pb.TagNumber(9)
   OnlineReturnPolicy_ReturnShippingFee get returnShippingFee => $_getN(8);
   @$pb.TagNumber(9)
-  set returnShippingFee(OnlineReturnPolicy_ReturnShippingFee v) { setField(9, v); }
+  set returnShippingFee(OnlineReturnPolicy_ReturnShippingFee v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasReturnShippingFee() => $_has(8);
   @$pb.TagNumber(9)
@@ -653,7 +822,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get returnPolicyUri => $_getSZ(9);
   @$pb.TagNumber(10)
-  set returnPolicyUri($core.String v) { $_setString(9, v); }
+  set returnPolicyUri($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasReturnPolicyUri() => $_has(9);
   @$pb.TagNumber(10)
@@ -664,7 +836,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get acceptDefectiveOnly => $_getBF(10);
   @$pb.TagNumber(11)
-  set acceptDefectiveOnly($core.bool v) { $_setBool(10, v); }
+  set acceptDefectiveOnly($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasAcceptDefectiveOnly() => $_has(10);
   @$pb.TagNumber(11)
@@ -675,7 +850,10 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get processRefundDays => $_getIZ(11);
   @$pb.TagNumber(12)
-  set processRefundDays($core.int v) { $_setSignedInt32(11, v); }
+  set processRefundDays($core.int v) {
+    $_setSignedInt32(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasProcessRefundDays() => $_has(11);
   @$pb.TagNumber(12)
@@ -686,13 +864,16 @@ class OnlineReturnPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool get acceptExchange => $_getBF(12);
   @$pb.TagNumber(13)
-  set acceptExchange($core.bool v) { $_setBool(12, v); }
+  set acceptExchange($core.bool v) {
+    $_setBool(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasAcceptExchange() => $_has(12);
   @$pb.TagNumber(13)
   void clearAcceptExchange() => clearField(13);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

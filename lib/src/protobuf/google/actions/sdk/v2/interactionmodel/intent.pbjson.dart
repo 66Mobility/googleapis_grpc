@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const Intent$json = {
   '1': 'Intent',
   '2': [
-    {'1': 'parameters', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Intent.IntentParameter', '10': 'parameters'},
+    {
+      '1': 'parameters',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.Intent.IntentParameter',
+      '10': 'parameters'
+    },
     {'1': 'training_phrases', '3': 2, '4': 3, '5': 9, '10': 'trainingPhrases'},
   ],
   '3': [Intent_IntentParameter$json],
@@ -28,8 +35,27 @@ const Intent_IntentParameter$json = {
   '1': 'IntentParameter',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.type.ClassReference', '8': {}, '9': 0, '10': 'type'},
-    {'1': 'entity_set_references', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Intent.IntentParameter.EntitySetReferences', '8': {}, '9': 0, '10': 'entitySetReferences'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.type.ClassReference',
+      '8': {},
+      '9': 0,
+      '10': 'type'
+    },
+    {
+      '1': 'entity_set_references',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.Intent.IntentParameter.EntitySetReferences',
+      '8': {},
+      '9': 0,
+      '10': 'entitySetReferences'
+    },
   ],
   '3': [Intent_IntentParameter_EntitySetReferences$json],
   '8': [
@@ -41,7 +67,16 @@ const Intent_IntentParameter$json = {
 const Intent_IntentParameter_EntitySetReferences$json = {
   '1': 'EntitySetReferences',
   '2': [
-    {'1': 'entity_set_references', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Intent.IntentParameter.EntitySetReferences.EntitySetReference', '8': {}, '10': 'entitySetReferences'},
+    {
+      '1': 'entity_set_references',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.Intent.IntentParameter.EntitySetReferences.EntitySetReference',
+      '8': {},
+      '10': 'entitySetReferences'
+    },
   ],
   '3': [Intent_IntentParameter_EntitySetReferences_EntitySetReference$json],
 };
@@ -69,4 +104,3 @@ final $typed_data.Uint8List intentDescriptor = $convert.base64Decode(
     'ZWZlcmVuY2VzLkVudGl0eVNldFJlZmVyZW5jZUID4EECUhNlbnRpdHlTZXRSZWZlcmVuY2VzGj'
     'gKEkVudGl0eVNldFJlZmVyZW5jZRIiCgplbnRpdHlfc2V0GAEgASgJQgPgQQJSCWVudGl0eVNl'
     'dEIQCg5wYXJhbWV0ZXJfdHlwZQ==');
-

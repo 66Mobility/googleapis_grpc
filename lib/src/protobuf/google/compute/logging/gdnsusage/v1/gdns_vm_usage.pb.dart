@@ -37,43 +37,59 @@ class GdnsVmUsagePlatformLog extends $pb.GeneratedMessage {
     return $result;
   }
   GdnsVmUsagePlatformLog._() : super();
-  factory GdnsVmUsagePlatformLog.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GdnsVmUsagePlatformLog.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GdnsVmUsagePlatformLog.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GdnsVmUsagePlatformLog.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GdnsVmUsagePlatformLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.compute.logging.gdnsusage.v1'), createEmptyInstance: create)
-    ..aOM<VmInfo>(1, _omitFieldNames ? '' : 'sourceVm', subBuilder: VmInfo.create)
-    ..aOM<VmInfo>(2, _omitFieldNames ? '' : 'destinationVm', subBuilder: VmInfo.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GdnsVmUsagePlatformLog',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.compute.logging.gdnsusage.v1'),
+      createEmptyInstance: create)
+    ..aOM<VmInfo>(1, _omitFieldNames ? '' : 'sourceVm',
+        subBuilder: VmInfo.create)
+    ..aOM<VmInfo>(2, _omitFieldNames ? '' : 'destinationVm',
+        subBuilder: VmInfo.create)
     ..aOS(3, _omitFieldNames ? '' : 'debugMessage')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'queryCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GdnsVmUsagePlatformLog clone() => GdnsVmUsagePlatformLog()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GdnsVmUsagePlatformLog copyWith(void Function(GdnsVmUsagePlatformLog) updates) => super.copyWith((message) => updates(message as GdnsVmUsagePlatformLog)) as GdnsVmUsagePlatformLog;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GdnsVmUsagePlatformLog clone() =>
+      GdnsVmUsagePlatformLog()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GdnsVmUsagePlatformLog copyWith(
+          void Function(GdnsVmUsagePlatformLog) updates) =>
+      super.copyWith((message) => updates(message as GdnsVmUsagePlatformLog))
+          as GdnsVmUsagePlatformLog;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GdnsVmUsagePlatformLog create() => GdnsVmUsagePlatformLog._();
   GdnsVmUsagePlatformLog createEmptyInstance() => create();
-  static $pb.PbList<GdnsVmUsagePlatformLog> createRepeated() => $pb.PbList<GdnsVmUsagePlatformLog>();
+  static $pb.PbList<GdnsVmUsagePlatformLog> createRepeated() =>
+      $pb.PbList<GdnsVmUsagePlatformLog>();
   @$core.pragma('dart2js:noInline')
-  static GdnsVmUsagePlatformLog getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GdnsVmUsagePlatformLog>(create);
+  static GdnsVmUsagePlatformLog getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GdnsVmUsagePlatformLog>(create);
   static GdnsVmUsagePlatformLog? _defaultInstance;
 
   /// source vm's information
   @$pb.TagNumber(1)
   VmInfo get sourceVm => $_getN(0);
   @$pb.TagNumber(1)
-  set sourceVm(VmInfo v) { setField(1, v); }
+  set sourceVm(VmInfo v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSourceVm() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,7 +101,10 @@ class GdnsVmUsagePlatformLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   VmInfo get destinationVm => $_getN(1);
   @$pb.TagNumber(2)
-  set destinationVm(VmInfo v) { setField(2, v); }
+  set destinationVm(VmInfo v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDestinationVm() => $_has(1);
   @$pb.TagNumber(2)
@@ -98,7 +117,10 @@ class GdnsVmUsagePlatformLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get debugMessage => $_getSZ(2);
   @$pb.TagNumber(3)
-  set debugMessage($core.String v) { $_setString(2, v); }
+  set debugMessage($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDebugMessage() => $_has(2);
   @$pb.TagNumber(3)
@@ -109,7 +131,10 @@ class GdnsVmUsagePlatformLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get queryCount => $_getIZ(3);
   @$pb.TagNumber(5)
-  set queryCount($core.int v) { $_setSignedInt32(3, v); }
+  set queryCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasQueryCount() => $_has(3);
   @$pb.TagNumber(5)
@@ -136,26 +161,32 @@ class VmInfo extends $pb.GeneratedMessage {
     return $result;
   }
   VmInfo._() : super();
-  factory VmInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VmInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VmInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VmInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VmInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.compute.logging.gdnsusage.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VmInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.compute.logging.gdnsusage.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'vm')
     ..aOS(3, _omitFieldNames ? '' : 'zone')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VmInfo clone() => VmInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VmInfo copyWith(void Function(VmInfo) updates) => super.copyWith((message) => updates(message as VmInfo)) as VmInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VmInfo copyWith(void Function(VmInfo) updates) =>
+      super.copyWith((message) => updates(message as VmInfo)) as VmInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -164,14 +195,18 @@ class VmInfo extends $pb.GeneratedMessage {
   VmInfo createEmptyInstance() => create();
   static $pb.PbList<VmInfo> createRepeated() => $pb.PbList<VmInfo>();
   @$core.pragma('dart2js:noInline')
-  static VmInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VmInfo>(create);
+  static VmInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VmInfo>(create);
   static VmInfo? _defaultInstance;
 
   /// project id of the vm
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -181,7 +216,10 @@ class VmInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get vm => $_getSZ(1);
   @$pb.TagNumber(2)
-  set vm($core.String v) { $_setString(1, v); }
+  set vm($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVm() => $_has(1);
   @$pb.TagNumber(2)
@@ -191,13 +229,16 @@ class VmInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get zone => $_getSZ(2);
   @$pb.TagNumber(3)
-  set zone($core.String v) { $_setString(2, v); }
+  set zone($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasZone() => $_has(2);
   @$pb.TagNumber(3)
   void clearZone() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

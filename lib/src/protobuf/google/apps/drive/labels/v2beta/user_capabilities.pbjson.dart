@@ -18,10 +18,38 @@ const UserCapabilities$json = {
   '1': 'UserCapabilities',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'can_access_label_manager', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'canAccessLabelManager'},
-    {'1': 'can_administrate_labels', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'canAdministrateLabels'},
-    {'1': 'can_create_shared_labels', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'canCreateSharedLabels'},
-    {'1': 'can_create_admin_labels', '3': 5, '4': 1, '5': 8, '8': {}, '10': 'canCreateAdminLabels'},
+    {
+      '1': 'can_access_label_manager',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'canAccessLabelManager'
+    },
+    {
+      '1': 'can_administrate_labels',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'canAdministrateLabels'
+    },
+    {
+      '1': 'can_create_shared_labels',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'canCreateSharedLabels'
+    },
+    {
+      '1': 'can_create_admin_labels',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'canCreateAdminLabels'
+    },
   ],
   '7': {},
 };
@@ -35,4 +63,3 @@ final $typed_data.Uint8List userCapabilitiesDescriptor = $convert.base64Decode(
     'TGFiZWxzEjoKF2Nhbl9jcmVhdGVfYWRtaW5fbGFiZWxzGAUgASgIQgPgQQNSFGNhbkNyZWF0ZU'
     'FkbWluTGFiZWxzOknqQUYKK2RyaXZlbGFiZWxzLmdvb2dsZWFwaXMuY29tL1VzZXJDYXBhYmls'
     'aXRpZXMSF3VzZXJzL3tpZH0vY2FwYWJpbGl0aWVz');
-

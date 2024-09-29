@@ -22,22 +22,32 @@ const GetGoogleServiceAccountRequest$json = {
 };
 
 /// Descriptor for `GetGoogleServiceAccountRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getGoogleServiceAccountRequestDescriptor = $convert.base64Decode(
-    'Ch5HZXRHb29nbGVTZXJ2aWNlQWNjb3VudFJlcXVlc3QSIgoKcHJvamVjdF9pZBgBIAEoCUID4E'
-    'ECUglwcm9qZWN0SWQ=');
+final $typed_data.Uint8List getGoogleServiceAccountRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5HZXRHb29nbGVTZXJ2aWNlQWNjb3VudFJlcXVlc3QSIgoKcHJvamVjdF9pZBgBIAEoCUID4E'
+        'ECUglwcm9qZWN0SWQ=');
 
 @$core.Deprecated('Use createTransferJobRequestDescriptor instead')
 const CreateTransferJobRequest$json = {
   '1': 'CreateTransferJobRequest',
   '2': [
-    {'1': 'transfer_job', '3': 1, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.TransferJob', '8': {}, '10': 'transferJob'},
+    {
+      '1': 'transfer_job',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferJob',
+      '8': {},
+      '10': 'transferJob'
+    },
   ],
 };
 
 /// Descriptor for `CreateTransferJobRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createTransferJobRequestDescriptor = $convert.base64Decode(
-    'ChhDcmVhdGVUcmFuc2ZlckpvYlJlcXVlc3QSTgoMdHJhbnNmZXJfam9iGAEgASgLMiYuZ29vZ2'
-    'xlLnN0b3JhZ2V0cmFuc2Zlci52MS5UcmFuc2ZlckpvYkID4EECUgt0cmFuc2ZlckpvYg==');
+final $typed_data.Uint8List createTransferJobRequestDescriptor =
+    $convert.base64Decode(
+        'ChhDcmVhdGVUcmFuc2ZlckpvYlJlcXVlc3QSTgoMdHJhbnNmZXJfam9iGAEgASgLMiYuZ29vZ2'
+        'xlLnN0b3JhZ2V0cmFuc2Zlci52MS5UcmFuc2ZlckpvYkID4EECUgt0cmFuc2ZlckpvYg==');
 
 @$core.Deprecated('Use updateTransferJobRequestDescriptor instead')
 const UpdateTransferJobRequest$json = {
@@ -45,8 +55,23 @@ const UpdateTransferJobRequest$json = {
   '2': [
     {'1': 'job_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'jobName'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'transfer_job', '3': 3, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.TransferJob', '8': {}, '10': 'transferJob'},
-    {'1': 'update_transfer_job_field_mask', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateTransferJobFieldMask'},
+    {
+      '1': 'transfer_job',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferJob',
+      '8': {},
+      '10': 'transferJob'
+    },
+    {
+      '1': 'update_transfer_job_field_mask',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateTransferJobFieldMask'
+    },
   ],
 };
 
@@ -82,9 +107,10 @@ const DeleteTransferJobRequest$json = {
 };
 
 /// Descriptor for `DeleteTransferJobRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteTransferJobRequestDescriptor = $convert.base64Decode(
-    'ChhEZWxldGVUcmFuc2ZlckpvYlJlcXVlc3QSHgoIam9iX25hbWUYASABKAlCA+BBAlIHam9iTm'
-    'FtZRIiCgpwcm9qZWN0X2lkGAIgASgJQgPgQQJSCXByb2plY3RJZA==');
+final $typed_data.Uint8List deleteTransferJobRequestDescriptor =
+    $convert.base64Decode(
+        'ChhEZWxldGVUcmFuc2ZlckpvYlJlcXVlc3QSHgoIam9iX25hbWUYASABKAlCA+BBAlIHam9iTm'
+        'FtZRIiCgpwcm9qZWN0X2lkGAIgASgJQgPgQQJSCXByb2plY3RJZA==');
 
 @$core.Deprecated('Use listTransferJobsRequestDescriptor instead')
 const ListTransferJobsRequest$json = {
@@ -106,7 +132,14 @@ final $typed_data.Uint8List listTransferJobsRequestDescriptor = $convert.base64D
 const ListTransferJobsResponse$json = {
   '1': 'ListTransferJobsResponse',
   '2': [
-    {'1': 'transfer_jobs', '3': 1, '4': 3, '5': 11, '6': '.google.storagetransfer.v1.TransferJob', '10': 'transferJobs'},
+    {
+      '1': 'transfer_jobs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferJob',
+      '10': 'transferJobs'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -126,9 +159,10 @@ const PauseTransferOperationRequest$json = {
 };
 
 /// Descriptor for `PauseTransferOperationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List pauseTransferOperationRequestDescriptor = $convert.base64Decode(
-    'Ch1QYXVzZVRyYW5zZmVyT3BlcmF0aW9uUmVxdWVzdBIXCgRuYW1lGAEgASgJQgPgQQJSBG5hbW'
-    'U=');
+final $typed_data.Uint8List pauseTransferOperationRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1QYXVzZVRyYW5zZmVyT3BlcmF0aW9uUmVxdWVzdBIXCgRuYW1lGAEgASgJQgPgQQJSBG5hbW'
+        'U=');
 
 @$core.Deprecated('Use resumeTransferOperationRequestDescriptor instead')
 const ResumeTransferOperationRequest$json = {
@@ -139,9 +173,10 @@ const ResumeTransferOperationRequest$json = {
 };
 
 /// Descriptor for `ResumeTransferOperationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List resumeTransferOperationRequestDescriptor = $convert.base64Decode(
-    'Ch5SZXN1bWVUcmFuc2Zlck9wZXJhdGlvblJlcXVlc3QSFwoEbmFtZRgBIAEoCUID4EECUgRuYW'
-    '1l');
+final $typed_data.Uint8List resumeTransferOperationRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5SZXN1bWVUcmFuc2Zlck9wZXJhdGlvblJlcXVlc3QSFwoEbmFtZRgBIAEoCUID4EECUgRuYW'
+        '1l');
 
 @$core.Deprecated('Use runTransferJobRequestDescriptor instead')
 const RunTransferJobRequest$json = {
@@ -162,8 +197,23 @@ const CreateAgentPoolRequest$json = {
   '1': 'CreateAgentPoolRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'agent_pool', '3': 2, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AgentPool', '8': {}, '10': 'agentPool'},
-    {'1': 'agent_pool_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'agentPoolId'},
+    {
+      '1': 'agent_pool',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AgentPool',
+      '8': {},
+      '10': 'agentPool'
+    },
+    {
+      '1': 'agent_pool_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'agentPoolId'
+    },
   ],
 };
 
@@ -178,8 +228,23 @@ final $typed_data.Uint8List createAgentPoolRequestDescriptor = $convert.base64De
 const UpdateAgentPoolRequest$json = {
   '1': 'UpdateAgentPoolRequest',
   '2': [
-    {'1': 'agent_pool', '3': 1, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AgentPool', '8': {}, '10': 'agentPool'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'agent_pool',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AgentPool',
+      '8': {},
+      '10': 'agentPool'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -198,8 +263,9 @@ const GetAgentPoolRequest$json = {
 };
 
 /// Descriptor for `GetAgentPoolRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getAgentPoolRequestDescriptor = $convert.base64Decode(
-    'ChNHZXRBZ2VudFBvb2xSZXF1ZXN0EhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZQ==');
+final $typed_data.Uint8List getAgentPoolRequestDescriptor =
+    $convert.base64Decode(
+        'ChNHZXRBZ2VudFBvb2xSZXF1ZXN0EhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZQ==');
 
 @$core.Deprecated('Use deleteAgentPoolRequestDescriptor instead')
 const DeleteAgentPoolRequest$json = {
@@ -210,8 +276,9 @@ const DeleteAgentPoolRequest$json = {
 };
 
 /// Descriptor for `DeleteAgentPoolRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAgentPoolRequestDescriptor = $convert.base64Decode(
-    'ChZEZWxldGVBZ2VudFBvb2xSZXF1ZXN0EhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZQ==');
+final $typed_data.Uint8List deleteAgentPoolRequestDescriptor =
+    $convert.base64Decode(
+        'ChZEZWxldGVBZ2VudFBvb2xSZXF1ZXN0EhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZQ==');
 
 @$core.Deprecated('Use listAgentPoolsRequestDescriptor instead')
 const ListAgentPoolsRequest$json = {
@@ -234,7 +301,14 @@ final $typed_data.Uint8List listAgentPoolsRequestDescriptor = $convert.base64Dec
 const ListAgentPoolsResponse$json = {
   '1': 'ListAgentPoolsResponse',
   '2': [
-    {'1': 'agent_pools', '3': 1, '4': 3, '5': 11, '6': '.google.storagetransfer.v1.AgentPool', '10': 'agentPools'},
+    {
+      '1': 'agent_pools',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AgentPool',
+      '10': 'agentPools'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -244,4 +318,3 @@ final $typed_data.Uint8List listAgentPoolsResponseDescriptor = $convert.base64De
     'ChZMaXN0QWdlbnRQb29sc1Jlc3BvbnNlEkUKC2FnZW50X3Bvb2xzGAEgAygLMiQuZ29vZ2xlLn'
     'N0b3JhZ2V0cmFuc2Zlci52MS5BZ2VudFBvb2xSCmFnZW50UG9vbHMSJgoPbmV4dF9wYWdlX3Rv'
     'a2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
-

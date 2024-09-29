@@ -35,26 +35,32 @@ class Reaction extends $pb.GeneratedMessage {
     return $result;
   }
   Reaction._() : super();
-  factory Reaction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Reaction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Reaction.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Reaction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Reaction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Reaction',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$406.User>(2, _omitFieldNames ? '' : 'user', subBuilder: $406.User.create)
+    ..aOM<$406.User>(2, _omitFieldNames ? '' : 'user',
+        subBuilder: $406.User.create)
     ..aOM<Emoji>(3, _omitFieldNames ? '' : 'emoji', subBuilder: Emoji.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Reaction clone() => Reaction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Reaction copyWith(void Function(Reaction) updates) => super.copyWith((message) => updates(message as Reaction)) as Reaction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Reaction copyWith(void Function(Reaction) updates) =>
+      super.copyWith((message) => updates(message as Reaction)) as Reaction;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -63,7 +69,8 @@ class Reaction extends $pb.GeneratedMessage {
   Reaction createEmptyInstance() => create();
   static $pb.PbList<Reaction> createRepeated() => $pb.PbList<Reaction>();
   @$core.pragma('dart2js:noInline')
-  static Reaction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Reaction>(create);
+  static Reaction getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Reaction>(create);
   static Reaction? _defaultInstance;
 
   ///  The resource name of the reaction.
@@ -72,7 +79,10 @@ class Reaction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -82,7 +92,10 @@ class Reaction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $406.User get user => $_getN(1);
   @$pb.TagNumber(2)
-  set user($406.User v) { setField(2, v); }
+  set user($406.User v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUser() => $_has(1);
   @$pb.TagNumber(2)
@@ -94,7 +107,10 @@ class Reaction extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Emoji get emoji => $_getN(2);
   @$pb.TagNumber(3)
-  set emoji(Emoji v) { setField(3, v); }
+  set emoji(Emoji v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEmoji() => $_has(2);
   @$pb.TagNumber(3)
@@ -103,11 +119,7 @@ class Reaction extends $pb.GeneratedMessage {
   Emoji ensureEmoji() => $_ensure(2);
 }
 
-enum Emoji_Content {
-  unicode, 
-  customEmoji, 
-  notSet
-}
+enum Emoji_Content { unicode, customEmoji, notSet }
 
 /// An emoji that is used as a reaction to a message.
 class Emoji extends $pb.GeneratedMessage {
@@ -125,31 +137,37 @@ class Emoji extends $pb.GeneratedMessage {
     return $result;
   }
   Emoji._() : super();
-  factory Emoji.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Emoji.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Emoji.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Emoji.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Emoji_Content> _Emoji_ContentByTag = {
-    1 : Emoji_Content.unicode,
-    2 : Emoji_Content.customEmoji,
-    0 : Emoji_Content.notSet
+    1: Emoji_Content.unicode,
+    2: Emoji_Content.customEmoji,
+    0: Emoji_Content.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Emoji', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Emoji',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'unicode')
-    ..aOM<CustomEmoji>(2, _omitFieldNames ? '' : 'customEmoji', subBuilder: CustomEmoji.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<CustomEmoji>(2, _omitFieldNames ? '' : 'customEmoji',
+        subBuilder: CustomEmoji.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Emoji clone() => Emoji()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Emoji copyWith(void Function(Emoji) updates) => super.copyWith((message) => updates(message as Emoji)) as Emoji;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Emoji copyWith(void Function(Emoji) updates) =>
+      super.copyWith((message) => updates(message as Emoji)) as Emoji;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -158,7 +176,8 @@ class Emoji extends $pb.GeneratedMessage {
   Emoji createEmptyInstance() => create();
   static $pb.PbList<Emoji> createRepeated() => $pb.PbList<Emoji>();
   @$core.pragma('dart2js:noInline')
-  static Emoji getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Emoji>(create);
+  static Emoji getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Emoji>(create);
   static Emoji? _defaultInstance;
 
   Emoji_Content whichContent() => _Emoji_ContentByTag[$_whichOneof(0)]!;
@@ -168,7 +187,10 @@ class Emoji extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get unicode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set unicode($core.String v) { $_setString(0, v); }
+  set unicode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUnicode() => $_has(0);
   @$pb.TagNumber(1)
@@ -178,7 +200,10 @@ class Emoji extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CustomEmoji get customEmoji => $_getN(1);
   @$pb.TagNumber(2)
-  set customEmoji(CustomEmoji v) { setField(2, v); }
+  set customEmoji(CustomEmoji v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCustomEmoji() => $_has(1);
   @$pb.TagNumber(2)
@@ -199,24 +224,30 @@ class CustomEmoji extends $pb.GeneratedMessage {
     return $result;
   }
   CustomEmoji._() : super();
-  factory CustomEmoji.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomEmoji.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomEmoji.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomEmoji.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomEmoji', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomEmoji',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uid')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CustomEmoji clone() => CustomEmoji()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomEmoji copyWith(void Function(CustomEmoji) updates) => super.copyWith((message) => updates(message as CustomEmoji)) as CustomEmoji;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomEmoji copyWith(void Function(CustomEmoji) updates) =>
+      super.copyWith((message) => updates(message as CustomEmoji))
+          as CustomEmoji;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -225,14 +256,18 @@ class CustomEmoji extends $pb.GeneratedMessage {
   CustomEmoji createEmptyInstance() => create();
   static $pb.PbList<CustomEmoji> createRepeated() => $pb.PbList<CustomEmoji>();
   @$core.pragma('dart2js:noInline')
-  static CustomEmoji getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomEmoji>(create);
+  static CustomEmoji getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomEmoji>(create);
   static CustomEmoji? _defaultInstance;
 
   /// Output only. Unique key for the custom emoji resource.
   @$pb.TagNumber(1)
   $core.String get uid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uid($core.String v) { $_setString(0, v); }
+  set uid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUid() => $_has(0);
   @$pb.TagNumber(1)
@@ -255,41 +290,54 @@ class EmojiReactionSummary extends $pb.GeneratedMessage {
     return $result;
   }
   EmojiReactionSummary._() : super();
-  factory EmojiReactionSummary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EmojiReactionSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EmojiReactionSummary.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EmojiReactionSummary.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EmojiReactionSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EmojiReactionSummary',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOM<Emoji>(1, _omitFieldNames ? '' : 'emoji', subBuilder: Emoji.create)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'reactionCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'reactionCount', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  EmojiReactionSummary clone() => EmojiReactionSummary()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EmojiReactionSummary copyWith(void Function(EmojiReactionSummary) updates) => super.copyWith((message) => updates(message as EmojiReactionSummary)) as EmojiReactionSummary;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  EmojiReactionSummary clone() =>
+      EmojiReactionSummary()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EmojiReactionSummary copyWith(void Function(EmojiReactionSummary) updates) =>
+      super.copyWith((message) => updates(message as EmojiReactionSummary))
+          as EmojiReactionSummary;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EmojiReactionSummary create() => EmojiReactionSummary._();
   EmojiReactionSummary createEmptyInstance() => create();
-  static $pb.PbList<EmojiReactionSummary> createRepeated() => $pb.PbList<EmojiReactionSummary>();
+  static $pb.PbList<EmojiReactionSummary> createRepeated() =>
+      $pb.PbList<EmojiReactionSummary>();
   @$core.pragma('dart2js:noInline')
-  static EmojiReactionSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EmojiReactionSummary>(create);
+  static EmojiReactionSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EmojiReactionSummary>(create);
   static EmojiReactionSummary? _defaultInstance;
 
   /// Emoji associated with the reactions.
   @$pb.TagNumber(1)
   Emoji get emoji => $_getN(0);
   @$pb.TagNumber(1)
-  set emoji(Emoji v) { setField(1, v); }
+  set emoji(Emoji v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEmoji() => $_has(0);
   @$pb.TagNumber(1)
@@ -301,7 +349,10 @@ class EmojiReactionSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get reactionCount => $_getIZ(1);
   @$pb.TagNumber(2)
-  set reactionCount($core.int v) { $_setSignedInt32(1, v); }
+  set reactionCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReactionCount() => $_has(1);
   @$pb.TagNumber(2)
@@ -324,34 +375,45 @@ class CreateReactionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateReactionRequest._() : super();
-  factory CreateReactionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateReactionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateReactionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateReactionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateReactionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateReactionRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<Reaction>(2, _omitFieldNames ? '' : 'reaction', subBuilder: Reaction.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Reaction>(2, _omitFieldNames ? '' : 'reaction',
+        subBuilder: Reaction.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateReactionRequest clone() => CreateReactionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateReactionRequest copyWith(void Function(CreateReactionRequest) updates) => super.copyWith((message) => updates(message as CreateReactionRequest)) as CreateReactionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateReactionRequest clone() =>
+      CreateReactionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateReactionRequest copyWith(
+          void Function(CreateReactionRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateReactionRequest))
+          as CreateReactionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateReactionRequest create() => CreateReactionRequest._();
   CreateReactionRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateReactionRequest> createRepeated() => $pb.PbList<CreateReactionRequest>();
+  static $pb.PbList<CreateReactionRequest> createRepeated() =>
+      $pb.PbList<CreateReactionRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateReactionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateReactionRequest>(create);
+  static CreateReactionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateReactionRequest>(create);
   static CreateReactionRequest? _defaultInstance;
 
   ///  Required. The message where the reaction is created.
@@ -360,7 +422,10 @@ class CreateReactionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -370,7 +435,10 @@ class CreateReactionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Reaction get reaction => $_getN(1);
   @$pb.TagNumber(2)
-  set reaction(Reaction v) { setField(2, v); }
+  set reaction(Reaction v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReaction() => $_has(1);
   @$pb.TagNumber(2)
@@ -403,36 +471,45 @@ class ListReactionsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListReactionsRequest._() : super();
-  factory ListReactionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListReactionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListReactionsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListReactionsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListReactionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListReactionsRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListReactionsRequest clone() => ListReactionsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListReactionsRequest copyWith(void Function(ListReactionsRequest) updates) => super.copyWith((message) => updates(message as ListReactionsRequest)) as ListReactionsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListReactionsRequest clone() =>
+      ListReactionsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListReactionsRequest copyWith(void Function(ListReactionsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListReactionsRequest))
+          as ListReactionsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListReactionsRequest create() => ListReactionsRequest._();
   ListReactionsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListReactionsRequest> createRepeated() => $pb.PbList<ListReactionsRequest>();
+  static $pb.PbList<ListReactionsRequest> createRepeated() =>
+      $pb.PbList<ListReactionsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListReactionsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListReactionsRequest>(create);
+  static ListReactionsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListReactionsRequest>(create);
   static ListReactionsRequest? _defaultInstance;
 
   ///  Required. The message users reacted to.
@@ -441,7 +518,10 @@ class ListReactionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -453,7 +533,10 @@ class ListReactionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -469,7 +552,10 @@ class ListReactionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -522,7 +608,10 @@ class ListReactionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(4)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -545,34 +634,45 @@ class ListReactionsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListReactionsResponse._() : super();
-  factory ListReactionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListReactionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListReactionsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListReactionsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListReactionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..pc<Reaction>(1, _omitFieldNames ? '' : 'reactions', $pb.PbFieldType.PM, subBuilder: Reaction.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListReactionsResponse',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..pc<Reaction>(1, _omitFieldNames ? '' : 'reactions', $pb.PbFieldType.PM,
+        subBuilder: Reaction.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListReactionsResponse clone() => ListReactionsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListReactionsResponse copyWith(void Function(ListReactionsResponse) updates) => super.copyWith((message) => updates(message as ListReactionsResponse)) as ListReactionsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListReactionsResponse clone() =>
+      ListReactionsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListReactionsResponse copyWith(
+          void Function(ListReactionsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListReactionsResponse))
+          as ListReactionsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListReactionsResponse create() => ListReactionsResponse._();
   ListReactionsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListReactionsResponse> createRepeated() => $pb.PbList<ListReactionsResponse>();
+  static $pb.PbList<ListReactionsResponse> createRepeated() =>
+      $pb.PbList<ListReactionsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListReactionsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListReactionsResponse>(create);
+  static ListReactionsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListReactionsResponse>(create);
   static ListReactionsResponse? _defaultInstance;
 
   /// List of reactions in the requested (or first) page.
@@ -584,7 +684,10 @@ class ListReactionsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -603,33 +706,43 @@ class DeleteReactionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteReactionRequest._() : super();
-  factory DeleteReactionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteReactionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteReactionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteReactionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteReactionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteReactionRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteReactionRequest clone() => DeleteReactionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteReactionRequest copyWith(void Function(DeleteReactionRequest) updates) => super.copyWith((message) => updates(message as DeleteReactionRequest)) as DeleteReactionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteReactionRequest clone() =>
+      DeleteReactionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteReactionRequest copyWith(
+          void Function(DeleteReactionRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteReactionRequest))
+          as DeleteReactionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteReactionRequest create() => DeleteReactionRequest._();
   DeleteReactionRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteReactionRequest> createRepeated() => $pb.PbList<DeleteReactionRequest>();
+  static $pb.PbList<DeleteReactionRequest> createRepeated() =>
+      $pb.PbList<DeleteReactionRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteReactionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteReactionRequest>(create);
+  static DeleteReactionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteReactionRequest>(create);
   static DeleteReactionRequest? _defaultInstance;
 
   ///  Required. Name of the reaction to delete.
@@ -638,13 +751,16 @@ class DeleteReactionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

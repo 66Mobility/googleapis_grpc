@@ -42,27 +42,39 @@ class LogLine extends $pb.GeneratedMessage {
     return $result;
   }
   LogLine._() : super();
-  factory LogLine.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogLine.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogLine.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogLine.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogLine', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.logging.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'time', subBuilder: $302.Timestamp.create)
-    ..e<$369.LogSeverity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $369.LogSeverity.DEFAULT, valueOf: $369.LogSeverity.valueOf, enumValues: $369.LogSeverity.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogLine',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.logging.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'time',
+        subBuilder: $302.Timestamp.create)
+    ..e<$369.LogSeverity>(
+        2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
+        defaultOrMaker: $369.LogSeverity.DEFAULT,
+        valueOf: $369.LogSeverity.valueOf,
+        enumValues: $369.LogSeverity.values)
     ..aOS(3, _omitFieldNames ? '' : 'logMessage')
-    ..aOM<SourceLocation>(4, _omitFieldNames ? '' : 'sourceLocation', subBuilder: SourceLocation.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<SourceLocation>(4, _omitFieldNames ? '' : 'sourceLocation',
+        subBuilder: SourceLocation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LogLine clone() => LogLine()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogLine copyWith(void Function(LogLine) updates) => super.copyWith((message) => updates(message as LogLine)) as LogLine;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogLine copyWith(void Function(LogLine) updates) =>
+      super.copyWith((message) => updates(message as LogLine)) as LogLine;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -71,14 +83,18 @@ class LogLine extends $pb.GeneratedMessage {
   LogLine createEmptyInstance() => create();
   static $pb.PbList<LogLine> createRepeated() => $pb.PbList<LogLine>();
   @$core.pragma('dart2js:noInline')
-  static LogLine getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogLine>(create);
+  static LogLine getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogLine>(create);
   static LogLine? _defaultInstance;
 
   /// Approximate time when this log entry was made.
   @$pb.TagNumber(1)
   $302.Timestamp get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($302.Timestamp v) { setField(1, v); }
+  set time($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,7 +106,10 @@ class LogLine extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $369.LogSeverity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity($369.LogSeverity v) { setField(2, v); }
+  set severity($369.LogSeverity v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSeverity() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,7 +119,10 @@ class LogLine extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get logMessage => $_getSZ(2);
   @$pb.TagNumber(3)
-  set logMessage($core.String v) { $_setString(2, v); }
+  set logMessage($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLogMessage() => $_has(2);
   @$pb.TagNumber(3)
@@ -110,7 +132,10 @@ class LogLine extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   SourceLocation get sourceLocation => $_getN(3);
   @$pb.TagNumber(4)
-  set sourceLocation(SourceLocation v) { setField(4, v); }
+  set sourceLocation(SourceLocation v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSourceLocation() => $_has(3);
   @$pb.TagNumber(4)
@@ -139,35 +164,44 @@ class SourceLocation extends $pb.GeneratedMessage {
     return $result;
   }
   SourceLocation._() : super();
-  factory SourceLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SourceLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SourceLocation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SourceLocation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SourceLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.logging.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SourceLocation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.logging.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'file')
     ..aInt64(2, _omitFieldNames ? '' : 'line')
     ..aOS(3, _omitFieldNames ? '' : 'functionName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SourceLocation clone() => SourceLocation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SourceLocation copyWith(void Function(SourceLocation) updates) => super.copyWith((message) => updates(message as SourceLocation)) as SourceLocation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SourceLocation copyWith(void Function(SourceLocation) updates) =>
+      super.copyWith((message) => updates(message as SourceLocation))
+          as SourceLocation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SourceLocation create() => SourceLocation._();
   SourceLocation createEmptyInstance() => create();
-  static $pb.PbList<SourceLocation> createRepeated() => $pb.PbList<SourceLocation>();
+  static $pb.PbList<SourceLocation> createRepeated() =>
+      $pb.PbList<SourceLocation>();
   @$core.pragma('dart2js:noInline')
-  static SourceLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SourceLocation>(create);
+  static SourceLocation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SourceLocation>(create);
   static SourceLocation? _defaultInstance;
 
   /// Source file name. Depending on the runtime environment, this might be a
@@ -175,7 +209,10 @@ class SourceLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get file => $_getSZ(0);
   @$pb.TagNumber(1)
-  set file($core.String v) { $_setString(0, v); }
+  set file($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFile() => $_has(0);
   @$pb.TagNumber(1)
@@ -185,7 +222,10 @@ class SourceLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get line => $_getI64(1);
   @$pb.TagNumber(2)
-  set line($fixnum.Int64 v) { $_setInt64(1, v); }
+  set line($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLine() => $_has(1);
   @$pb.TagNumber(2)
@@ -200,7 +240,10 @@ class SourceLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get functionName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set functionName($core.String v) { $_setString(2, v); }
+  set functionName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFunctionName() => $_has(2);
   @$pb.TagNumber(3)
@@ -224,34 +267,43 @@ class SourceReference extends $pb.GeneratedMessage {
     return $result;
   }
   SourceReference._() : super();
-  factory SourceReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SourceReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SourceReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SourceReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SourceReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.logging.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SourceReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.logging.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'repository')
     ..aOS(2, _omitFieldNames ? '' : 'revisionId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SourceReference clone() => SourceReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SourceReference copyWith(void Function(SourceReference) updates) => super.copyWith((message) => updates(message as SourceReference)) as SourceReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SourceReference copyWith(void Function(SourceReference) updates) =>
+      super.copyWith((message) => updates(message as SourceReference))
+          as SourceReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SourceReference create() => SourceReference._();
   SourceReference createEmptyInstance() => create();
-  static $pb.PbList<SourceReference> createRepeated() => $pb.PbList<SourceReference>();
+  static $pb.PbList<SourceReference> createRepeated() =>
+      $pb.PbList<SourceReference>();
   @$core.pragma('dart2js:noInline')
-  static SourceReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SourceReference>(create);
+  static SourceReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SourceReference>(create);
   static SourceReference? _defaultInstance;
 
   /// Optional. A URI string identifying the repository.
@@ -259,7 +311,10 @@ class SourceReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get repository => $_getSZ(0);
   @$pb.TagNumber(1)
-  set repository($core.String v) { $_setString(0, v); }
+  set repository($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRepository() => $_has(0);
   @$pb.TagNumber(1)
@@ -270,7 +325,10 @@ class SourceReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get revisionId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set revisionId($core.String v) { $_setString(1, v); }
+  set revisionId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRevisionId() => $_has(1);
   @$pb.TagNumber(2)
@@ -418,17 +476,28 @@ class RequestLog extends $pb.GeneratedMessage {
     return $result;
   }
   RequestLog._() : super();
-  factory RequestLog.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RequestLog.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RequestLog.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RequestLog.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.logging.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RequestLog',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.logging.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appId')
     ..aOS(2, _omitFieldNames ? '' : 'versionId')
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOS(4, _omitFieldNames ? '' : 'ip')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'latency', subBuilder: $264.Duration.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'latency',
+        subBuilder: $264.Duration.create)
     ..aInt64(9, _omitFieldNames ? '' : 'megaCycles')
     ..aOS(10, _omitFieldNames ? '' : 'method')
     ..aOS(11, _omitFieldNames ? '' : 'resource')
@@ -443,31 +512,34 @@ class RequestLog extends $pb.GeneratedMessage {
     ..aOS(22, _omitFieldNames ? '' : 'taskQueueName')
     ..aOS(23, _omitFieldNames ? '' : 'taskName')
     ..aOB(24, _omitFieldNames ? '' : 'wasLoadingRequest')
-    ..aOM<$264.Duration>(25, _omitFieldNames ? '' : 'pendingTime', subBuilder: $264.Duration.create)
-    ..a<$core.int>(26, _omitFieldNames ? '' : 'instanceIndex', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(25, _omitFieldNames ? '' : 'pendingTime',
+        subBuilder: $264.Duration.create)
+    ..a<$core.int>(
+        26, _omitFieldNames ? '' : 'instanceIndex', $pb.PbFieldType.O3)
     ..aOB(27, _omitFieldNames ? '' : 'finished')
     ..aOS(28, _omitFieldNames ? '' : 'instanceId')
-    ..pc<LogLine>(29, _omitFieldNames ? '' : 'line', $pb.PbFieldType.PM, subBuilder: LogLine.create)
+    ..pc<LogLine>(29, _omitFieldNames ? '' : 'line', $pb.PbFieldType.PM,
+        subBuilder: LogLine.create)
     ..aOS(37, _omitFieldNames ? '' : 'moduleId')
     ..aOS(38, _omitFieldNames ? '' : 'appEngineRelease')
     ..aOS(39, _omitFieldNames ? '' : 'traceId')
     ..aOS(40, _omitFieldNames ? '' : 'nickname')
-    ..pc<SourceReference>(41, _omitFieldNames ? '' : 'sourceReference', $pb.PbFieldType.PM, subBuilder: SourceReference.create)
+    ..pc<SourceReference>(
+        41, _omitFieldNames ? '' : 'sourceReference', $pb.PbFieldType.PM,
+        subBuilder: SourceReference.create)
     ..aOB(42, _omitFieldNames ? '' : 'first')
     ..aOB(43, _omitFieldNames ? '' : 'traceSampled')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RequestLog clone() => RequestLog()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RequestLog copyWith(void Function(RequestLog) updates) => super.copyWith((message) => updates(message as RequestLog)) as RequestLog;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RequestLog copyWith(void Function(RequestLog) updates) =>
+      super.copyWith((message) => updates(message as RequestLog)) as RequestLog;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -476,14 +548,18 @@ class RequestLog extends $pb.GeneratedMessage {
   RequestLog createEmptyInstance() => create();
   static $pb.PbList<RequestLog> createRepeated() => $pb.PbList<RequestLog>();
   @$core.pragma('dart2js:noInline')
-  static RequestLog getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RequestLog>(create);
+  static RequestLog getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RequestLog>(create);
   static RequestLog? _defaultInstance;
 
   /// Application that handled this request.
   @$pb.TagNumber(1)
   $core.String get appId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set appId($core.String v) { $_setString(0, v); }
+  set appId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAppId() => $_has(0);
   @$pb.TagNumber(1)
@@ -493,7 +569,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get versionId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set versionId($core.String v) { $_setString(1, v); }
+  set versionId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVersionId() => $_has(1);
   @$pb.TagNumber(2)
@@ -505,7 +584,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get requestId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set requestId($core.String v) { $_setString(2, v); }
+  set requestId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequestId() => $_has(2);
   @$pb.TagNumber(3)
@@ -515,7 +597,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get ip => $_getSZ(3);
   @$pb.TagNumber(4)
-  set ip($core.String v) { $_setString(3, v); }
+  set ip($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasIp() => $_has(3);
   @$pb.TagNumber(4)
@@ -525,7 +610,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(6)
-  set startTime($302.Timestamp v) { setField(6, v); }
+  set startTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(6)
@@ -537,7 +625,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(7)
-  set endTime($302.Timestamp v) { setField(7, v); }
+  set endTime($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(7)
@@ -549,7 +640,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $264.Duration get latency => $_getN(6);
   @$pb.TagNumber(8)
-  set latency($264.Duration v) { setField(8, v); }
+  set latency($264.Duration v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasLatency() => $_has(6);
   @$pb.TagNumber(8)
@@ -561,7 +655,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $fixnum.Int64 get megaCycles => $_getI64(7);
   @$pb.TagNumber(9)
-  set megaCycles($fixnum.Int64 v) { $_setInt64(7, v); }
+  set megaCycles($fixnum.Int64 v) {
+    $_setInt64(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasMegaCycles() => $_has(7);
   @$pb.TagNumber(9)
@@ -571,7 +668,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get method => $_getSZ(8);
   @$pb.TagNumber(10)
-  set method($core.String v) { $_setString(8, v); }
+  set method($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasMethod() => $_has(8);
   @$pb.TagNumber(10)
@@ -584,7 +684,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get resource => $_getSZ(9);
   @$pb.TagNumber(11)
-  set resource($core.String v) { $_setString(9, v); }
+  set resource($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasResource() => $_has(9);
   @$pb.TagNumber(11)
@@ -594,7 +697,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get httpVersion => $_getSZ(10);
   @$pb.TagNumber(12)
-  set httpVersion($core.String v) { $_setString(10, v); }
+  set httpVersion($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasHttpVersion() => $_has(10);
   @$pb.TagNumber(12)
@@ -604,7 +710,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.int get status => $_getIZ(11);
   @$pb.TagNumber(13)
-  set status($core.int v) { $_setSignedInt32(11, v); }
+  set status($core.int v) {
+    $_setSignedInt32(11, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasStatus() => $_has(11);
   @$pb.TagNumber(13)
@@ -614,7 +723,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $fixnum.Int64 get responseSize => $_getI64(12);
   @$pb.TagNumber(14)
-  set responseSize($fixnum.Int64 v) { $_setInt64(12, v); }
+  set responseSize($fixnum.Int64 v) {
+    $_setInt64(12, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasResponseSize() => $_has(12);
   @$pb.TagNumber(14)
@@ -624,7 +736,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get referrer => $_getSZ(13);
   @$pb.TagNumber(15)
-  set referrer($core.String v) { $_setString(13, v); }
+  set referrer($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasReferrer() => $_has(13);
   @$pb.TagNumber(15)
@@ -634,7 +749,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get userAgent => $_getSZ(14);
   @$pb.TagNumber(16)
-  set userAgent($core.String v) { $_setString(14, v); }
+  set userAgent($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasUserAgent() => $_has(14);
   @$pb.TagNumber(16)
@@ -644,7 +762,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get urlMapEntry => $_getSZ(15);
   @$pb.TagNumber(17)
-  set urlMapEntry($core.String v) { $_setString(15, v); }
+  set urlMapEntry($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasUrlMapEntry() => $_has(15);
   @$pb.TagNumber(17)
@@ -654,7 +775,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get host => $_getSZ(16);
   @$pb.TagNumber(20)
-  set host($core.String v) { $_setString(16, v); }
+  set host($core.String v) {
+    $_setString(16, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasHost() => $_has(16);
   @$pb.TagNumber(20)
@@ -664,7 +788,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.double get cost => $_getN(17);
   @$pb.TagNumber(21)
-  set cost($core.double v) { $_setDouble(17, v); }
+  set cost($core.double v) {
+    $_setDouble(17, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasCost() => $_has(17);
   @$pb.TagNumber(21)
@@ -674,7 +801,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get taskQueueName => $_getSZ(18);
   @$pb.TagNumber(22)
-  set taskQueueName($core.String v) { $_setString(18, v); }
+  set taskQueueName($core.String v) {
+    $_setString(18, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasTaskQueueName() => $_has(18);
   @$pb.TagNumber(22)
@@ -684,7 +814,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.String get taskName => $_getSZ(19);
   @$pb.TagNumber(23)
-  set taskName($core.String v) { $_setString(19, v); }
+  set taskName($core.String v) {
+    $_setString(19, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasTaskName() => $_has(19);
   @$pb.TagNumber(23)
@@ -694,7 +827,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.bool get wasLoadingRequest => $_getBF(20);
   @$pb.TagNumber(24)
-  set wasLoadingRequest($core.bool v) { $_setBool(20, v); }
+  set wasLoadingRequest($core.bool v) {
+    $_setBool(20, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasWasLoadingRequest() => $_has(20);
   @$pb.TagNumber(24)
@@ -704,7 +840,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $264.Duration get pendingTime => $_getN(21);
   @$pb.TagNumber(25)
-  set pendingTime($264.Duration v) { setField(25, v); }
+  set pendingTime($264.Duration v) {
+    setField(25, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasPendingTime() => $_has(21);
   @$pb.TagNumber(25)
@@ -718,7 +857,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $core.int get instanceIndex => $_getIZ(22);
   @$pb.TagNumber(26)
-  set instanceIndex($core.int v) { $_setSignedInt32(22, v); }
+  set instanceIndex($core.int v) {
+    $_setSignedInt32(22, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasInstanceIndex() => $_has(22);
   @$pb.TagNumber(26)
@@ -728,7 +870,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.bool get finished => $_getBF(23);
   @$pb.TagNumber(27)
-  set finished($core.bool v) { $_setBool(23, v); }
+  set finished($core.bool v) {
+    $_setBool(23, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasFinished() => $_has(23);
   @$pb.TagNumber(27)
@@ -738,7 +883,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   $core.String get instanceId => $_getSZ(24);
   @$pb.TagNumber(28)
-  set instanceId($core.String v) { $_setString(24, v); }
+  set instanceId($core.String v) {
+    $_setString(24, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasInstanceId() => $_has(24);
   @$pb.TagNumber(28)
@@ -752,7 +900,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(37)
   $core.String get moduleId => $_getSZ(26);
   @$pb.TagNumber(37)
-  set moduleId($core.String v) { $_setString(26, v); }
+  set moduleId($core.String v) {
+    $_setString(26, v);
+  }
+
   @$pb.TagNumber(37)
   $core.bool hasModuleId() => $_has(26);
   @$pb.TagNumber(37)
@@ -762,7 +913,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(38)
   $core.String get appEngineRelease => $_getSZ(27);
   @$pb.TagNumber(38)
-  set appEngineRelease($core.String v) { $_setString(27, v); }
+  set appEngineRelease($core.String v) {
+    $_setString(27, v);
+  }
+
   @$pb.TagNumber(38)
   $core.bool hasAppEngineRelease() => $_has(27);
   @$pb.TagNumber(38)
@@ -772,7 +926,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(39)
   $core.String get traceId => $_getSZ(28);
   @$pb.TagNumber(39)
-  set traceId($core.String v) { $_setString(28, v); }
+  set traceId($core.String v) {
+    $_setString(28, v);
+  }
+
   @$pb.TagNumber(39)
   $core.bool hasTraceId() => $_has(28);
   @$pb.TagNumber(39)
@@ -789,7 +946,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(40)
   $core.String get nickname => $_getSZ(29);
   @$pb.TagNumber(40)
-  set nickname($core.String v) { $_setString(29, v); }
+  set nickname($core.String v) {
+    $_setString(29, v);
+  }
+
   @$pb.TagNumber(40)
   $core.bool hasNickname() => $_has(29);
   @$pb.TagNumber(40)
@@ -807,7 +967,10 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(42)
   $core.bool get first => $_getBF(31);
   @$pb.TagNumber(42)
-  set first($core.bool v) { $_setBool(31, v); }
+  set first($core.bool v) {
+    $_setBool(31, v);
+  }
+
   @$pb.TagNumber(42)
   $core.bool hasFirst() => $_has(31);
   @$pb.TagNumber(42)
@@ -818,13 +981,16 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(43)
   $core.bool get traceSampled => $_getBF(32);
   @$pb.TagNumber(43)
-  set traceSampled($core.bool v) { $_setBool(32, v); }
+  set traceSampled($core.bool v) {
+    $_setBool(32, v);
+  }
+
   @$pb.TagNumber(43)
   $core.bool hasTraceSampled() => $_has(32);
   @$pb.TagNumber(43)
   void clearTraceSampled() => clearField(43);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

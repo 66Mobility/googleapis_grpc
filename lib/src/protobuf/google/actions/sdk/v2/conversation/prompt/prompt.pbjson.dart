@@ -26,12 +26,54 @@ const Prompt$json = {
       '10': 'append',
     },
     {'1': 'override', '3': 8, '4': 1, '5': 8, '10': 'override'},
-    {'1': 'first_simple', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Simple', '10': 'firstSimple'},
-    {'1': 'content', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Content', '10': 'content'},
-    {'1': 'last_simple', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Simple', '10': 'lastSimple'},
-    {'1': 'suggestions', '3': 5, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.Suggestion', '10': 'suggestions'},
-    {'1': 'link', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Link', '10': 'link'},
-    {'1': 'canvas', '3': 9, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Canvas', '10': 'canvas'},
+    {
+      '1': 'first_simple',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Simple',
+      '10': 'firstSimple'
+    },
+    {
+      '1': 'content',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Content',
+      '10': 'content'
+    },
+    {
+      '1': 'last_simple',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Simple',
+      '10': 'lastSimple'
+    },
+    {
+      '1': 'suggestions',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Suggestion',
+      '10': 'suggestions'
+    },
+    {
+      '1': 'link',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Link',
+      '10': 'link'
+    },
+    {
+      '1': 'canvas',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Canvas',
+      '10': 'canvas'
+    },
   ],
 };
 
@@ -47,4 +89,3 @@ final $typed_data.Uint8List promptDescriptor = $convert.base64Decode(
     'guZ29vZ2xlLmFjdGlvbnMuc2RrLnYyLmNvbnZlcnNhdGlvbi5MaW5rUgRsaW5rEkIKBmNhbnZh'
     'cxgJIAEoCzIqLmdvb2dsZS5hY3Rpb25zLnNkay52Mi5jb252ZXJzYXRpb24uQ2FudmFzUgZjYW'
     '52YXM=');
-

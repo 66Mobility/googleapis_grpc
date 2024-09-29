@@ -32,34 +32,46 @@ class TaxRule_TaxPostalCodeRange extends $pb.GeneratedMessage {
     return $result;
   }
   TaxRule_TaxPostalCodeRange._() : super();
-  factory TaxRule_TaxPostalCodeRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TaxRule_TaxPostalCodeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TaxRule_TaxPostalCodeRange.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TaxRule_TaxPostalCodeRange.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaxRule.TaxPostalCodeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TaxRule.TaxPostalCodeRange',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'start')
     ..aOS(2, _omitFieldNames ? '' : 'end')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TaxRule_TaxPostalCodeRange clone() => TaxRule_TaxPostalCodeRange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TaxRule_TaxPostalCodeRange copyWith(void Function(TaxRule_TaxPostalCodeRange) updates) => super.copyWith((message) => updates(message as TaxRule_TaxPostalCodeRange)) as TaxRule_TaxPostalCodeRange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TaxRule_TaxPostalCodeRange clone() =>
+      TaxRule_TaxPostalCodeRange()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TaxRule_TaxPostalCodeRange copyWith(
+          void Function(TaxRule_TaxPostalCodeRange) updates) =>
+      super.copyWith(
+              (message) => updates(message as TaxRule_TaxPostalCodeRange))
+          as TaxRule_TaxPostalCodeRange;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TaxRule_TaxPostalCodeRange create() => TaxRule_TaxPostalCodeRange._();
   TaxRule_TaxPostalCodeRange createEmptyInstance() => create();
-  static $pb.PbList<TaxRule_TaxPostalCodeRange> createRepeated() => $pb.PbList<TaxRule_TaxPostalCodeRange>();
+  static $pb.PbList<TaxRule_TaxPostalCodeRange> createRepeated() =>
+      $pb.PbList<TaxRule_TaxPostalCodeRange>();
   @$core.pragma('dart2js:noInline')
-  static TaxRule_TaxPostalCodeRange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TaxRule_TaxPostalCodeRange>(create);
+  static TaxRule_TaxPostalCodeRange getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TaxRule_TaxPostalCodeRange>(create);
   static TaxRule_TaxPostalCodeRange? _defaultInstance;
 
   /// Required. The start of the postal code range, which is also the smallest
@@ -67,7 +79,10 @@ class TaxRule_TaxPostalCodeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get start => $_getSZ(0);
   @$pb.TagNumber(1)
-  set start($core.String v) { $_setString(0, v); }
+  set start($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
@@ -78,24 +93,19 @@ class TaxRule_TaxPostalCodeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get end => $_getSZ(1);
   @$pb.TagNumber(2)
-  set end($core.String v) { $_setString(1, v); }
+  set end($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
   void clearEnd() => clearField(2);
 }
 
-enum TaxRule_Location {
-  locationId, 
-  postCodeRange, 
-  notSet
-}
+enum TaxRule_Location { locationId, postCodeRange, notSet }
 
-enum TaxRule_RateCalculation {
-  useGoogleRate, 
-  selfSpecifiedRateMicros, 
-  notSet
-}
+enum TaxRule_RateCalculation { useGoogleRate, selfSpecifiedRateMicros, notSet }
 
 ///  Primary type convension
 ///
@@ -144,42 +154,51 @@ class TaxRule extends $pb.GeneratedMessage {
     return $result;
   }
   TaxRule._() : super();
-  factory TaxRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TaxRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TaxRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TaxRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, TaxRule_Location> _TaxRule_LocationByTag = {
-    2 : TaxRule_Location.locationId,
-    3 : TaxRule_Location.postCodeRange,
-    0 : TaxRule_Location.notSet
+    2: TaxRule_Location.locationId,
+    3: TaxRule_Location.postCodeRange,
+    0: TaxRule_Location.notSet
   };
-  static const $core.Map<$core.int, TaxRule_RateCalculation> _TaxRule_RateCalculationByTag = {
-    4 : TaxRule_RateCalculation.useGoogleRate,
-    5 : TaxRule_RateCalculation.selfSpecifiedRateMicros,
-    0 : TaxRule_RateCalculation.notSet
+  static const $core.Map<$core.int, TaxRule_RateCalculation>
+      _TaxRule_RateCalculationByTag = {
+    4: TaxRule_RateCalculation.useGoogleRate,
+    5: TaxRule_RateCalculation.selfSpecifiedRateMicros,
+    0: TaxRule_RateCalculation.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaxRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TaxRule',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..oo(1, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'regionCode')
     ..aInt64(2, _omitFieldNames ? '' : 'locationId')
-    ..aOM<TaxRule_TaxPostalCodeRange>(3, _omitFieldNames ? '' : 'postCodeRange', subBuilder: TaxRule_TaxPostalCodeRange.create)
+    ..aOM<TaxRule_TaxPostalCodeRange>(3, _omitFieldNames ? '' : 'postCodeRange',
+        subBuilder: TaxRule_TaxPostalCodeRange.create)
     ..aOB(4, _omitFieldNames ? '' : 'useGoogleRate')
     ..aInt64(5, _omitFieldNames ? '' : 'selfSpecifiedRateMicros')
     ..aOB(6, _omitFieldNames ? '' : 'shippingTaxed')
-    ..aOM<$511.Interval>(7, _omitFieldNames ? '' : 'effectiveTimePeriod', subBuilder: $511.Interval.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$511.Interval>(7, _omitFieldNames ? '' : 'effectiveTimePeriod',
+        subBuilder: $511.Interval.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TaxRule clone() => TaxRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TaxRule copyWith(void Function(TaxRule) updates) => super.copyWith((message) => updates(message as TaxRule)) as TaxRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TaxRule copyWith(void Function(TaxRule) updates) =>
+      super.copyWith((message) => updates(message as TaxRule)) as TaxRule;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -188,20 +207,25 @@ class TaxRule extends $pb.GeneratedMessage {
   TaxRule createEmptyInstance() => create();
   static $pb.PbList<TaxRule> createRepeated() => $pb.PbList<TaxRule>();
   @$core.pragma('dart2js:noInline')
-  static TaxRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TaxRule>(create);
+  static TaxRule getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TaxRule>(create);
   static TaxRule? _defaultInstance;
 
   TaxRule_Location whichLocation() => _TaxRule_LocationByTag[$_whichOneof(0)]!;
   void clearLocation() => clearField($_whichOneof(0));
 
-  TaxRule_RateCalculation whichRateCalculation() => _TaxRule_RateCalculationByTag[$_whichOneof(1)]!;
+  TaxRule_RateCalculation whichRateCalculation() =>
+      _TaxRule_RateCalculationByTag[$_whichOneof(1)]!;
   void clearRateCalculation() => clearField($_whichOneof(1));
 
   /// Region code in which this rule is applicable
   @$pb.TagNumber(1)
   $core.String get regionCode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set regionCode($core.String v) { $_setString(0, v); }
+  set regionCode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRegionCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -212,7 +236,10 @@ class TaxRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get locationId => $_getI64(1);
   @$pb.TagNumber(2)
-  set locationId($fixnum.Int64 v) { $_setInt64(1, v); }
+  set locationId($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLocationId() => $_has(1);
   @$pb.TagNumber(2)
@@ -222,7 +249,10 @@ class TaxRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TaxRule_TaxPostalCodeRange get postCodeRange => $_getN(2);
   @$pb.TagNumber(3)
-  set postCodeRange(TaxRule_TaxPostalCodeRange v) { setField(3, v); }
+  set postCodeRange(TaxRule_TaxPostalCodeRange v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPostCodeRange() => $_has(2);
   @$pb.TagNumber(3)
@@ -236,7 +266,10 @@ class TaxRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get useGoogleRate => $_getBF(3);
   @$pb.TagNumber(4)
-  set useGoogleRate($core.bool v) { $_setBool(3, v); }
+  set useGoogleRate($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUseGoogleRate() => $_has(3);
   @$pb.TagNumber(4)
@@ -247,7 +280,10 @@ class TaxRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get selfSpecifiedRateMicros => $_getI64(4);
   @$pb.TagNumber(5)
-  set selfSpecifiedRateMicros($fixnum.Int64 v) { $_setInt64(4, v); }
+  set selfSpecifiedRateMicros($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSelfSpecifiedRateMicros() => $_has(4);
   @$pb.TagNumber(5)
@@ -259,7 +295,10 @@ class TaxRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get shippingTaxed => $_getBF(5);
   @$pb.TagNumber(6)
-  set shippingTaxed($core.bool v) { $_setBool(5, v); }
+  set shippingTaxed($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasShippingTaxed() => $_has(5);
   @$pb.TagNumber(6)
@@ -271,7 +310,10 @@ class TaxRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $511.Interval get effectiveTimePeriod => $_getN(6);
   @$pb.TagNumber(7)
-  set effectiveTimePeriod($511.Interval v) { setField(7, v); }
+  set effectiveTimePeriod($511.Interval v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEffectiveTimePeriod() => $_has(6);
   @$pb.TagNumber(7)
@@ -280,6 +322,6 @@ class TaxRule extends $pb.GeneratedMessage {
   $511.Interval ensureEffectiveTimePeriod() => $_ensure(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

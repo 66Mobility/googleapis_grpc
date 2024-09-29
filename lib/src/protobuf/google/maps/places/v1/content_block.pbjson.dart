@@ -18,8 +18,22 @@ const ContentBlock$json = {
   '1': 'ContentBlock',
   '2': [
     {'1': 'topic', '3': 1, '4': 1, '5': 9, '10': 'topic'},
-    {'1': 'content', '3': 2, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'content'},
-    {'1': 'references', '3': 3, '4': 1, '5': 11, '6': '.google.maps.places.v1.References', '10': 'references'},
+    {
+      '1': 'content',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'content'
+    },
+    {
+      '1': 'references',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.References',
+      '10': 'references'
+    },
   ],
 };
 
@@ -28,4 +42,3 @@ final $typed_data.Uint8List contentBlockDescriptor = $convert.base64Decode(
     'CgxDb250ZW50QmxvY2sSFAoFdG9waWMYASABKAlSBXRvcGljEjQKB2NvbnRlbnQYAiABKAsyGi'
     '5nb29nbGUudHlwZS5Mb2NhbGl6ZWRUZXh0Ugdjb250ZW50EkEKCnJlZmVyZW5jZXMYAyABKAsy'
     'IS5nb29nbGUubWFwcy5wbGFjZXMudjEuUmVmZXJlbmNlc1IKcmVmZXJlbmNlcw==');
-

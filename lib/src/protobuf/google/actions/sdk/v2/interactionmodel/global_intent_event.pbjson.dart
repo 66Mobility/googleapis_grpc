@@ -17,8 +17,23 @@ import 'dart:typed_data' as $typed_data;
 const GlobalIntentEvent$json = {
   '1': 'GlobalIntentEvent',
   '2': [
-    {'1': 'transition_to_scene', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'transitionToScene'},
-    {'1': 'handler', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '8': {}, '10': 'handler'},
+    {
+      '1': 'transition_to_scene',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'transitionToScene'
+    },
+    {
+      '1': 'handler',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '8': {},
+      '10': 'handler'
+    },
   ],
 };
 
@@ -27,4 +42,3 @@ final $typed_data.Uint8List globalIntentEventDescriptor = $convert.base64Decode(
     'ChFHbG9iYWxJbnRlbnRFdmVudBIzChN0cmFuc2l0aW9uX3RvX3NjZW5lGAEgASgJQgPgQQFSEX'
     'RyYW5zaXRpb25Ub1NjZW5lElMKB2hhbmRsZXIYAiABKAsyNC5nb29nbGUuYWN0aW9ucy5zZGsu'
     'djIuaW50ZXJhY3Rpb25tb2RlbC5FdmVudEhhbmRsZXJCA+BBAVIHaGFuZGxlcg==');
-

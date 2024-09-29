@@ -18,23 +18,124 @@ const Task$json = {
   '1': 'Task',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.maps.fleetengine.delivery.v1.Task.Type', '8': {}, '10': 'type'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.maps.fleetengine.delivery.v1.Task.State', '8': {}, '10': 'state'},
-    {'1': 'task_outcome', '3': 9, '4': 1, '5': 14, '6': '.maps.fleetengine.delivery.v1.Task.TaskOutcome', '10': 'taskOutcome'},
-    {'1': 'task_outcome_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'taskOutcomeTime'},
-    {'1': 'task_outcome_location', '3': 11, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.LocationInfo', '10': 'taskOutcomeLocation'},
-    {'1': 'task_outcome_location_source', '3': 12, '4': 1, '5': 14, '6': '.maps.fleetengine.delivery.v1.Task.TaskOutcomeLocationSource', '10': 'taskOutcomeLocationSource'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.delivery.v1.Task.Type',
+      '8': {},
+      '10': 'type'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.delivery.v1.Task.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'task_outcome',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.delivery.v1.Task.TaskOutcome',
+      '10': 'taskOutcome'
+    },
+    {
+      '1': 'task_outcome_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'taskOutcomeTime'
+    },
+    {
+      '1': 'task_outcome_location',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.LocationInfo',
+      '10': 'taskOutcomeLocation'
+    },
+    {
+      '1': 'task_outcome_location_source',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.delivery.v1.Task.TaskOutcomeLocationSource',
+      '10': 'taskOutcomeLocationSource'
+    },
     {'1': 'tracking_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'trackingId'},
-    {'1': 'delivery_vehicle_id', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'deliveryVehicleId'},
-    {'1': 'planned_location', '3': 6, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.LocationInfo', '8': {}, '10': 'plannedLocation'},
-    {'1': 'task_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'taskDuration'},
-    {'1': 'target_time_window', '3': 14, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TimeWindow', '10': 'targetTimeWindow'},
-    {'1': 'journey_sharing_info', '3': 8, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.Task.JourneySharingInfo', '8': {}, '10': 'journeySharingInfo'},
-    {'1': 'task_tracking_view_config', '3': 13, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig', '10': 'taskTrackingViewConfig'},
-    {'1': 'attributes', '3': 15, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskAttribute', '10': 'attributes'},
+    {
+      '1': 'delivery_vehicle_id',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'deliveryVehicleId'
+    },
+    {
+      '1': 'planned_location',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.LocationInfo',
+      '8': {},
+      '10': 'plannedLocation'
+    },
+    {
+      '1': 'task_duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'taskDuration'
+    },
+    {
+      '1': 'target_time_window',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.TimeWindow',
+      '10': 'targetTimeWindow'
+    },
+    {
+      '1': 'journey_sharing_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.Task.JourneySharingInfo',
+      '8': {},
+      '10': 'journeySharingInfo'
+    },
+    {
+      '1': 'task_tracking_view_config',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig',
+      '10': 'taskTrackingViewConfig'
+    },
+    {
+      '1': 'attributes',
+      '3': 15,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.TaskAttribute',
+      '10': 'attributes'
+    },
   ],
   '3': [Task_JourneySharingInfo$json],
-  '4': [Task_Type$json, Task_State$json, Task_TaskOutcome$json, Task_TaskOutcomeLocationSource$json],
+  '4': [
+    Task_Type$json,
+    Task_State$json,
+    Task_TaskOutcome$json,
+    Task_TaskOutcomeLocationSource$json
+  ],
   '7': {},
 };
 
@@ -42,9 +143,29 @@ const Task$json = {
 const Task_JourneySharingInfo$json = {
   '1': 'JourneySharingInfo',
   '2': [
-    {'1': 'remaining_vehicle_journey_segments', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.VehicleJourneySegment', '10': 'remainingVehicleJourneySegments'},
-    {'1': 'last_location', '3': 2, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleLocation', '10': 'lastLocation'},
-    {'1': 'last_location_snappable', '3': 3, '4': 1, '5': 8, '10': 'lastLocationSnappable'},
+    {
+      '1': 'remaining_vehicle_journey_segments',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.VehicleJourneySegment',
+      '10': 'remainingVehicleJourneySegments'
+    },
+    {
+      '1': 'last_location',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleLocation',
+      '10': 'lastLocation'
+    },
+    {
+      '1': 'last_location_snappable',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'lastLocationSnappable'
+    },
   ],
 };
 
@@ -132,12 +253,60 @@ final $typed_data.Uint8List taskDescriptor = $convert.base64Decode(
 const TaskTrackingViewConfig$json = {
   '1': 'TaskTrackingViewConfig',
   '2': [
-    {'1': 'route_polyline_points_visibility', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption', '10': 'routePolylinePointsVisibility'},
-    {'1': 'estimated_arrival_time_visibility', '3': 2, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption', '10': 'estimatedArrivalTimeVisibility'},
-    {'1': 'estimated_task_completion_time_visibility', '3': 3, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption', '10': 'estimatedTaskCompletionTimeVisibility'},
-    {'1': 'remaining_driving_distance_visibility', '3': 4, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption', '10': 'remainingDrivingDistanceVisibility'},
-    {'1': 'remaining_stop_count_visibility', '3': 5, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption', '10': 'remainingStopCountVisibility'},
-    {'1': 'vehicle_location_visibility', '3': 6, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption', '10': 'vehicleLocationVisibility'},
+    {
+      '1': 'route_polyline_points_visibility',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption',
+      '10': 'routePolylinePointsVisibility'
+    },
+    {
+      '1': 'estimated_arrival_time_visibility',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption',
+      '10': 'estimatedArrivalTimeVisibility'
+    },
+    {
+      '1': 'estimated_task_completion_time_visibility',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption',
+      '10': 'estimatedTaskCompletionTimeVisibility'
+    },
+    {
+      '1': 'remaining_driving_distance_visibility',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption',
+      '10': 'remainingDrivingDistanceVisibility'
+    },
+    {
+      '1': 'remaining_stop_count_visibility',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption',
+      '10': 'remainingStopCountVisibility'
+    },
+    {
+      '1': 'vehicle_location_visibility',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.maps.fleetengine.delivery.v1.TaskTrackingViewConfig.VisibilityOption',
+      '10': 'vehicleLocationVisibility'
+    },
   ],
   '3': [TaskTrackingViewConfig_VisibilityOption$json],
 };
@@ -146,9 +315,31 @@ const TaskTrackingViewConfig$json = {
 const TaskTrackingViewConfig_VisibilityOption$json = {
   '1': 'VisibilityOption',
   '2': [
-    {'1': 'remaining_stop_count_threshold', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'remainingStopCountThreshold'},
-    {'1': 'duration_until_estimated_arrival_time_threshold', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'durationUntilEstimatedArrivalTimeThreshold'},
-    {'1': 'remaining_driving_distance_meters_threshold', '3': 3, '4': 1, '5': 5, '9': 0, '10': 'remainingDrivingDistanceMetersThreshold'},
+    {
+      '1': 'remaining_stop_count_threshold',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'remainingStopCountThreshold'
+    },
+    {
+      '1': 'duration_until_estimated_arrival_time_threshold',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'durationUntilEstimatedArrivalTimeThreshold'
+    },
+    {
+      '1': 'remaining_driving_distance_meters_threshold',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'remainingDrivingDistanceMetersThreshold'
+    },
     {'1': 'always', '3': 4, '4': 1, '5': 8, '9': 0, '10': 'always'},
     {'1': 'never', '3': 5, '4': 1, '5': 8, '9': 0, '10': 'never'},
   ],
@@ -183,4 +374,3 @@ final $typed_data.Uint8List taskTrackingViewConfigDescriptor = $convert.base64De
     '9tZXRlcnNfdGhyZXNob2xkGAMgASgFSABSJ3JlbWFpbmluZ0RyaXZpbmdEaXN0YW5jZU1ldGVy'
     'c1RocmVzaG9sZBIYCgZhbHdheXMYBCABKAhIAFIGYWx3YXlzEhYKBW5ldmVyGAUgASgISABSBW'
     '5ldmVyQhMKEXZpc2liaWxpdHlfb3B0aW9u');
-

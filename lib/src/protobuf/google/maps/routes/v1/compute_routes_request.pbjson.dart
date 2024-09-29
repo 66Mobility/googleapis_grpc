@@ -67,19 +67,101 @@ final $typed_data.Uint8List unitsDescriptor = $convert.base64Decode(
 const ComputeRoutesRequest$json = {
   '1': 'ComputeRoutesRequest',
   '2': [
-    {'1': 'origin', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '10': 'origin'},
-    {'1': 'destination', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '10': 'destination'},
-    {'1': 'intermediates', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '10': 'intermediates'},
-    {'1': 'travel_mode', '3': 4, '4': 1, '5': 14, '6': '.google.maps.routes.v1.RouteTravelMode', '10': 'travelMode'},
-    {'1': 'routing_preference', '3': 5, '4': 1, '5': 14, '6': '.google.maps.routes.v1.RoutingPreference', '10': 'routingPreference'},
-    {'1': 'polyline_quality', '3': 6, '4': 1, '5': 14, '6': '.google.maps.routes.v1.PolylineQuality', '10': 'polylineQuality'},
-    {'1': 'polyline_encoding', '3': 12, '4': 1, '5': 14, '6': '.google.maps.routes.v1.PolylineEncoding', '10': 'polylineEncoding'},
-    {'1': 'departure_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'departureTime'},
-    {'1': 'compute_alternative_routes', '3': 8, '4': 1, '5': 8, '10': 'computeAlternativeRoutes'},
-    {'1': 'route_modifiers', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteModifiers', '10': 'routeModifiers'},
+    {
+      '1': 'origin',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '10': 'origin'
+    },
+    {
+      '1': 'destination',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '10': 'destination'
+    },
+    {
+      '1': 'intermediates',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '10': 'intermediates'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.RouteTravelMode',
+      '10': 'travelMode'
+    },
+    {
+      '1': 'routing_preference',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.RoutingPreference',
+      '10': 'routingPreference'
+    },
+    {
+      '1': 'polyline_quality',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.PolylineQuality',
+      '10': 'polylineQuality'
+    },
+    {
+      '1': 'polyline_encoding',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.PolylineEncoding',
+      '10': 'polylineEncoding'
+    },
+    {
+      '1': 'departure_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'departureTime'
+    },
+    {
+      '1': 'compute_alternative_routes',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '10': 'computeAlternativeRoutes'
+    },
+    {
+      '1': 'route_modifiers',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteModifiers',
+      '10': 'routeModifiers'
+    },
     {'1': 'language_code', '3': 10, '4': 1, '5': 9, '10': 'languageCode'},
-    {'1': 'units', '3': 11, '4': 1, '5': 14, '6': '.google.maps.routes.v1.Units', '10': 'units'},
-    {'1': 'optimize_waypoint_order', '3': 13, '4': 1, '5': 8, '10': 'optimizeWaypointOrder'},
+    {
+      '1': 'units',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.Units',
+      '10': 'units'
+    },
+    {
+      '1': 'optimize_waypoint_order',
+      '3': 13,
+      '4': 1,
+      '5': 8,
+      '10': 'optimizeWaypointOrder'
+    },
   ],
 };
 
@@ -111,8 +193,22 @@ const RouteModifiers$json = {
     {'1': 'avoid_highways', '3': 2, '4': 1, '5': 8, '10': 'avoidHighways'},
     {'1': 'avoid_ferries', '3': 3, '4': 1, '5': 8, '10': 'avoidFerries'},
     {'1': 'avoid_indoor', '3': 4, '4': 1, '5': 8, '10': 'avoidIndoor'},
-    {'1': 'vehicle_info', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routes.v1.VehicleInfo', '10': 'vehicleInfo'},
-    {'1': 'toll_passes', '3': 6, '4': 3, '5': 14, '6': '.google.maps.routes.v1.TollPass', '10': 'tollPasses'},
+    {
+      '1': 'vehicle_info',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.VehicleInfo',
+      '10': 'vehicleInfo'
+    },
+    {
+      '1': 'toll_passes',
+      '3': 6,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.routes.v1.TollPass',
+      '10': 'tollPasses'
+    },
   ],
 };
 
@@ -129,8 +225,21 @@ final $typed_data.Uint8List routeModifiersDescriptor = $convert.base64Decode(
 const VehicleInfo$json = {
   '1': 'VehicleInfo',
   '2': [
-    {'1': 'license_plate_last_character', '3': 1, '4': 1, '5': 9, '10': 'licensePlateLastCharacter'},
-    {'1': 'emission_type', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routes.v1.VehicleEmissionType', '10': 'emissionType'},
+    {
+      '1': 'license_plate_last_character',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'licensePlateLastCharacter'
+    },
+    {
+      '1': 'emission_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.VehicleEmissionType',
+      '10': 'emissionType'
+    },
   ],
 };
 
@@ -139,4 +248,3 @@ final $typed_data.Uint8List vehicleInfoDescriptor = $convert.base64Decode(
     'CgtWZWhpY2xlSW5mbxI/ChxsaWNlbnNlX3BsYXRlX2xhc3RfY2hhcmFjdGVyGAEgASgJUhlsaW'
     'NlbnNlUGxhdGVMYXN0Q2hhcmFjdGVyEk8KDWVtaXNzaW9uX3R5cGUYAiABKA4yKi5nb29nbGUu'
     'bWFwcy5yb3V0ZXMudjEuVmVoaWNsZUVtaXNzaW9uVHlwZVIMZW1pc3Npb25UeXBl');
-

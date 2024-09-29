@@ -17,8 +17,23 @@ import 'dart:typed_data' as $typed_data;
 const CreateSubscriptionRequest$json = {
   '1': 'CreateSubscriptionRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 11, '6': '.google.apps.events.subscriptions.v1.Subscription', '8': {}, '10': 'subscription'},
-    {'1': 'validate_only', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'validateOnly'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.events.subscriptions.v1.Subscription',
+      '8': {},
+      '10': 'subscription'
+    },
+    {
+      '1': 'validate_only',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'validateOnly'
+    },
   ],
 };
 
@@ -33,8 +48,22 @@ const DeleteSubscriptionRequest$json = {
   '1': 'DeleteSubscriptionRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'validate_only', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'validateOnly'},
-    {'1': 'allow_missing', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'allowMissing'},
+    {
+      '1': 'validate_only',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'validateOnly'
+    },
+    {
+      '1': 'allow_missing',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'allowMissing'
+    },
     {'1': 'etag', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'etag'},
   ],
 };
@@ -55,17 +84,41 @@ const GetSubscriptionRequest$json = {
 };
 
 /// Descriptor for `GetSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getSubscriptionRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRTdWJzY3JpcHRpb25SZXF1ZXN0EkcKBG5hbWUYASABKAlCM+BBAvpBLQord29ya3NwYW'
-    'NlZXZlbnRzLmdvb2dsZWFwaXMuY29tL1N1YnNjcmlwdGlvblIEbmFtZQ==');
+final $typed_data.Uint8List getSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRTdWJzY3JpcHRpb25SZXF1ZXN0EkcKBG5hbWUYASABKAlCM+BBAvpBLQord29ya3NwYW'
+        'NlZXZlbnRzLmdvb2dsZWFwaXMuY29tL1N1YnNjcmlwdGlvblIEbmFtZQ==');
 
 @$core.Deprecated('Use updateSubscriptionRequestDescriptor instead')
 const UpdateSubscriptionRequest$json = {
   '1': 'UpdateSubscriptionRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 11, '6': '.google.apps.events.subscriptions.v1.Subscription', '8': {}, '10': 'subscription'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
-    {'1': 'validate_only', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'validateOnly'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.events.subscriptions.v1.Subscription',
+      '8': {},
+      '10': 'subscription'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
+    {
+      '1': 'validate_only',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'validateOnly'
+    },
   ],
 };
 
@@ -86,9 +139,10 @@ const ReactivateSubscriptionRequest$json = {
 };
 
 /// Descriptor for `ReactivateSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List reactivateSubscriptionRequestDescriptor = $convert.base64Decode(
-    'Ch1SZWFjdGl2YXRlU3Vic2NyaXB0aW9uUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK3'
-    'dvcmtzcGFjZWV2ZW50cy5nb29nbGVhcGlzLmNvbS9TdWJzY3JpcHRpb25SBG5hbWU=');
+final $typed_data.Uint8List reactivateSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1SZWFjdGl2YXRlU3Vic2NyaXB0aW9uUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK3'
+        'dvcmtzcGFjZWV2ZW50cy5nb29nbGVhcGlzLmNvbS9TdWJzY3JpcHRpb25SBG5hbWU=');
 
 @$core.Deprecated('Use listSubscriptionsRequestDescriptor instead')
 const ListSubscriptionsRequest$json = {
@@ -110,7 +164,14 @@ final $typed_data.Uint8List listSubscriptionsRequestDescriptor = $convert.base64
 const ListSubscriptionsResponse$json = {
   '1': 'ListSubscriptionsResponse',
   '2': [
-    {'1': 'subscriptions', '3': 1, '4': 3, '5': 11, '6': '.google.apps.events.subscriptions.v1.Subscription', '10': 'subscriptions'},
+    {
+      '1': 'subscriptions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.events.subscriptions.v1.Subscription',
+      '10': 'subscriptions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -127,8 +188,8 @@ const UpdateSubscriptionMetadata$json = {
 };
 
 /// Descriptor for `UpdateSubscriptionMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateSubscriptionMetadataDescriptor = $convert.base64Decode(
-    'ChpVcGRhdGVTdWJzY3JpcHRpb25NZXRhZGF0YQ==');
+final $typed_data.Uint8List updateSubscriptionMetadataDescriptor =
+    $convert.base64Decode('ChpVcGRhdGVTdWJzY3JpcHRpb25NZXRhZGF0YQ==');
 
 @$core.Deprecated('Use createSubscriptionMetadataDescriptor instead')
 const CreateSubscriptionMetadata$json = {
@@ -136,8 +197,8 @@ const CreateSubscriptionMetadata$json = {
 };
 
 /// Descriptor for `CreateSubscriptionMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createSubscriptionMetadataDescriptor = $convert.base64Decode(
-    'ChpDcmVhdGVTdWJzY3JpcHRpb25NZXRhZGF0YQ==');
+final $typed_data.Uint8List createSubscriptionMetadataDescriptor =
+    $convert.base64Decode('ChpDcmVhdGVTdWJzY3JpcHRpb25NZXRhZGF0YQ==');
 
 @$core.Deprecated('Use deleteSubscriptionMetadataDescriptor instead')
 const DeleteSubscriptionMetadata$json = {
@@ -145,8 +206,8 @@ const DeleteSubscriptionMetadata$json = {
 };
 
 /// Descriptor for `DeleteSubscriptionMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSubscriptionMetadataDescriptor = $convert.base64Decode(
-    'ChpEZWxldGVTdWJzY3JpcHRpb25NZXRhZGF0YQ==');
+final $typed_data.Uint8List deleteSubscriptionMetadataDescriptor =
+    $convert.base64Decode('ChpEZWxldGVTdWJzY3JpcHRpb25NZXRhZGF0YQ==');
 
 @$core.Deprecated('Use reactivateSubscriptionMetadataDescriptor instead')
 const ReactivateSubscriptionMetadata$json = {
@@ -154,6 +215,5 @@ const ReactivateSubscriptionMetadata$json = {
 };
 
 /// Descriptor for `ReactivateSubscriptionMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List reactivateSubscriptionMetadataDescriptor = $convert.base64Decode(
-    'Ch5SZWFjdGl2YXRlU3Vic2NyaXB0aW9uTWV0YWRhdGE=');
-
+final $typed_data.Uint8List reactivateSubscriptionMetadataDescriptor =
+    $convert.base64Decode('Ch5SZWFjdGl2YXRlU3Vic2NyaXB0aW9uTWV0YWRhdGE=');

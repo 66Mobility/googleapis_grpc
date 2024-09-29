@@ -39,42 +39,54 @@ class PlanNode_ChildLink extends $pb.GeneratedMessage {
     return $result;
   }
   PlanNode_ChildLink._() : super();
-  factory PlanNode_ChildLink.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlanNode_ChildLink.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlanNode_ChildLink.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlanNode_ChildLink.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlanNode.ChildLink', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlanNode.ChildLink',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'childIndex', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..aOS(3, _omitFieldNames ? '' : 'variable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PlanNode_ChildLink clone() => PlanNode_ChildLink()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlanNode_ChildLink copyWith(void Function(PlanNode_ChildLink) updates) => super.copyWith((message) => updates(message as PlanNode_ChildLink)) as PlanNode_ChildLink;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlanNode_ChildLink copyWith(void Function(PlanNode_ChildLink) updates) =>
+      super.copyWith((message) => updates(message as PlanNode_ChildLink))
+          as PlanNode_ChildLink;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlanNode_ChildLink create() => PlanNode_ChildLink._();
   PlanNode_ChildLink createEmptyInstance() => create();
-  static $pb.PbList<PlanNode_ChildLink> createRepeated() => $pb.PbList<PlanNode_ChildLink>();
+  static $pb.PbList<PlanNode_ChildLink> createRepeated() =>
+      $pb.PbList<PlanNode_ChildLink>();
   @$core.pragma('dart2js:noInline')
-  static PlanNode_ChildLink getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlanNode_ChildLink>(create);
+  static PlanNode_ChildLink getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PlanNode_ChildLink>(create);
   static PlanNode_ChildLink? _defaultInstance;
 
   /// The node to which the link points.
   @$pb.TagNumber(1)
   $core.int get childIndex => $_getIZ(0);
   @$pb.TagNumber(1)
-  set childIndex($core.int v) { $_setSignedInt32(0, v); }
+  set childIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasChildIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -87,7 +99,10 @@ class PlanNode_ChildLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get type => $_getSZ(1);
   @$pb.TagNumber(2)
-  set type($core.String v) { $_setString(1, v); }
+  set type($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -104,7 +119,10 @@ class PlanNode_ChildLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get variable => $_getSZ(2);
   @$pb.TagNumber(3)
-  set variable($core.String v) { $_setString(2, v); }
+  set variable($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVariable() => $_has(2);
   @$pb.TagNumber(3)
@@ -128,41 +146,61 @@ class PlanNode_ShortRepresentation extends $pb.GeneratedMessage {
     return $result;
   }
   PlanNode_ShortRepresentation._() : super();
-  factory PlanNode_ShortRepresentation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlanNode_ShortRepresentation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlanNode_ShortRepresentation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlanNode_ShortRepresentation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlanNode.ShortRepresentation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlanNode.ShortRepresentation',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'description')
-    ..m<$core.String, $core.int>(2, _omitFieldNames ? '' : 'subqueries', entryClassName: 'PlanNode.ShortRepresentation.SubqueriesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.O3, packageName: const $pb.PackageName('google.spanner.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.int>(2, _omitFieldNames ? '' : 'subqueries',
+        entryClassName: 'PlanNode.ShortRepresentation.SubqueriesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.O3,
+        packageName: const $pb.PackageName('google.spanner.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PlanNode_ShortRepresentation clone() => PlanNode_ShortRepresentation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlanNode_ShortRepresentation copyWith(void Function(PlanNode_ShortRepresentation) updates) => super.copyWith((message) => updates(message as PlanNode_ShortRepresentation)) as PlanNode_ShortRepresentation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PlanNode_ShortRepresentation clone() =>
+      PlanNode_ShortRepresentation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlanNode_ShortRepresentation copyWith(
+          void Function(PlanNode_ShortRepresentation) updates) =>
+      super.copyWith(
+              (message) => updates(message as PlanNode_ShortRepresentation))
+          as PlanNode_ShortRepresentation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PlanNode_ShortRepresentation create() => PlanNode_ShortRepresentation._();
+  static PlanNode_ShortRepresentation create() =>
+      PlanNode_ShortRepresentation._();
   PlanNode_ShortRepresentation createEmptyInstance() => create();
-  static $pb.PbList<PlanNode_ShortRepresentation> createRepeated() => $pb.PbList<PlanNode_ShortRepresentation>();
+  static $pb.PbList<PlanNode_ShortRepresentation> createRepeated() =>
+      $pb.PbList<PlanNode_ShortRepresentation>();
   @$core.pragma('dart2js:noInline')
-  static PlanNode_ShortRepresentation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlanNode_ShortRepresentation>(create);
+  static PlanNode_ShortRepresentation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PlanNode_ShortRepresentation>(create);
   static PlanNode_ShortRepresentation? _defaultInstance;
 
   /// A string representation of the expression subtree rooted at this node.
   @$pb.TagNumber(1)
   $core.String get description => $_getSZ(0);
   @$pb.TagNumber(1)
-  set description($core.String v) { $_setString(0, v); }
+  set description($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
@@ -213,30 +251,45 @@ class PlanNode extends $pb.GeneratedMessage {
     return $result;
   }
   PlanNode._() : super();
-  factory PlanNode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlanNode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlanNode.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlanNode.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlanNode', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlanNode',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
-    ..e<PlanNode_Kind>(2, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE, defaultOrMaker: PlanNode_Kind.KIND_UNSPECIFIED, valueOf: PlanNode_Kind.valueOf, enumValues: PlanNode_Kind.values)
+    ..e<PlanNode_Kind>(2, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE,
+        defaultOrMaker: PlanNode_Kind.KIND_UNSPECIFIED,
+        valueOf: PlanNode_Kind.valueOf,
+        enumValues: PlanNode_Kind.values)
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..pc<PlanNode_ChildLink>(4, _omitFieldNames ? '' : 'childLinks', $pb.PbFieldType.PM, subBuilder: PlanNode_ChildLink.create)
-    ..aOM<PlanNode_ShortRepresentation>(5, _omitFieldNames ? '' : 'shortRepresentation', subBuilder: PlanNode_ShortRepresentation.create)
-    ..aOM<$261.Struct>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $261.Struct.create)
-    ..aOM<$261.Struct>(7, _omitFieldNames ? '' : 'executionStats', subBuilder: $261.Struct.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<PlanNode_ChildLink>(
+        4, _omitFieldNames ? '' : 'childLinks', $pb.PbFieldType.PM,
+        subBuilder: PlanNode_ChildLink.create)
+    ..aOM<PlanNode_ShortRepresentation>(
+        5, _omitFieldNames ? '' : 'shortRepresentation',
+        subBuilder: PlanNode_ShortRepresentation.create)
+    ..aOM<$261.Struct>(6, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $261.Struct.create)
+    ..aOM<$261.Struct>(7, _omitFieldNames ? '' : 'executionStats',
+        subBuilder: $261.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PlanNode clone() => PlanNode()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlanNode copyWith(void Function(PlanNode) updates) => super.copyWith((message) => updates(message as PlanNode)) as PlanNode;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlanNode copyWith(void Function(PlanNode) updates) =>
+      super.copyWith((message) => updates(message as PlanNode)) as PlanNode;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -245,14 +298,18 @@ class PlanNode extends $pb.GeneratedMessage {
   PlanNode createEmptyInstance() => create();
   static $pb.PbList<PlanNode> createRepeated() => $pb.PbList<PlanNode>();
   @$core.pragma('dart2js:noInline')
-  static PlanNode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlanNode>(create);
+  static PlanNode getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlanNode>(create);
   static PlanNode? _defaultInstance;
 
   /// The `PlanNode`'s index in [node list][google.spanner.v1.QueryPlan.plan_nodes].
   @$pb.TagNumber(1)
   $core.int get index => $_getIZ(0);
   @$pb.TagNumber(1)
-  set index($core.int v) { $_setSignedInt32(0, v); }
+  set index($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -266,7 +323,10 @@ class PlanNode extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PlanNode_Kind get kind => $_getN(1);
   @$pb.TagNumber(2)
-  set kind(PlanNode_Kind v) { setField(2, v); }
+  set kind(PlanNode_Kind v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKind() => $_has(1);
   @$pb.TagNumber(2)
@@ -276,7 +336,10 @@ class PlanNode extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -290,7 +353,10 @@ class PlanNode extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   PlanNode_ShortRepresentation get shortRepresentation => $_getN(4);
   @$pb.TagNumber(5)
-  set shortRepresentation(PlanNode_ShortRepresentation v) { setField(5, v); }
+  set shortRepresentation(PlanNode_ShortRepresentation v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasShortRepresentation() => $_has(4);
   @$pb.TagNumber(5)
@@ -309,7 +375,10 @@ class PlanNode extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $261.Struct get metadata => $_getN(5);
   @$pb.TagNumber(6)
-  set metadata($261.Struct v) { setField(6, v); }
+  set metadata($261.Struct v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMetadata() => $_has(5);
   @$pb.TagNumber(6)
@@ -324,7 +393,10 @@ class PlanNode extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $261.Struct get executionStats => $_getN(6);
   @$pb.TagNumber(7)
-  set executionStats($261.Struct v) { setField(7, v); }
+  set executionStats($261.Struct v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasExecutionStats() => $_has(6);
   @$pb.TagNumber(7)
@@ -345,24 +417,31 @@ class QueryPlan extends $pb.GeneratedMessage {
     return $result;
   }
   QueryPlan._() : super();
-  factory QueryPlan.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QueryPlan.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QueryPlan.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QueryPlan.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryPlan', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..pc<PlanNode>(1, _omitFieldNames ? '' : 'planNodes', $pb.PbFieldType.PM, subBuilder: PlanNode.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QueryPlan',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..pc<PlanNode>(1, _omitFieldNames ? '' : 'planNodes', $pb.PbFieldType.PM,
+        subBuilder: PlanNode.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   QueryPlan clone() => QueryPlan()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QueryPlan copyWith(void Function(QueryPlan) updates) => super.copyWith((message) => updates(message as QueryPlan)) as QueryPlan;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QueryPlan copyWith(void Function(QueryPlan) updates) =>
+      super.copyWith((message) => updates(message as QueryPlan)) as QueryPlan;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -371,7 +450,8 @@ class QueryPlan extends $pb.GeneratedMessage {
   QueryPlan createEmptyInstance() => create();
   static $pb.PbList<QueryPlan> createRepeated() => $pb.PbList<QueryPlan>();
   @$core.pragma('dart2js:noInline')
-  static QueryPlan getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryPlan>(create);
+  static QueryPlan getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryPlan>(create);
   static QueryPlan? _defaultInstance;
 
   /// The nodes in the query plan. Plan nodes are returned in pre-order starting
@@ -381,6 +461,6 @@ class QueryPlan extends $pb.GeneratedMessage {
   $core.List<PlanNode> get planNodes => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

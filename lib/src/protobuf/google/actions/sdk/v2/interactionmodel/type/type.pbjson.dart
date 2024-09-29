@@ -17,9 +17,33 @@ import 'dart:typed_data' as $typed_data;
 const Type$json = {
   '1': 'Type',
   '2': [
-    {'1': 'synonym', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.type.SynonymType', '9': 0, '10': 'synonym'},
-    {'1': 'regular_expression', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.type.RegularExpressionType', '9': 0, '10': 'regularExpression'},
-    {'1': 'free_text', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.type.FreeTextType', '9': 0, '10': 'freeText'},
+    {
+      '1': 'synonym',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.type.SynonymType',
+      '9': 0,
+      '10': 'synonym'
+    },
+    {
+      '1': 'regular_expression',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.type.RegularExpressionType',
+      '9': 0,
+      '10': 'regularExpression'
+    },
+    {
+      '1': 'free_text',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.type.FreeTextType',
+      '9': 0,
+      '10': 'freeText'
+    },
     {'1': 'exclusions', '3': 4, '4': 3, '5': 9, '10': 'exclusions'},
   ],
   '8': [
@@ -36,4 +60,3 @@ final $typed_data.Uint8List typeDescriptor = $convert.base64Decode(
     'GAMgASgLMjkuZ29vZ2xlLmFjdGlvbnMuc2RrLnYyLmludGVyYWN0aW9ubW9kZWwudHlwZS5Gcm'
     'VlVGV4dFR5cGVIAFIIZnJlZVRleHQSHgoKZXhjbHVzaW9ucxgEIAMoCVIKZXhjbHVzaW9uc0IK'
     'CghzdWJfdHlwZQ==');
-

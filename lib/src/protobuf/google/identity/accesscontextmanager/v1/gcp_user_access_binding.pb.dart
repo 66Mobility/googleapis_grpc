@@ -34,35 +34,45 @@ class GcpUserAccessBinding extends $pb.GeneratedMessage {
     return $result;
   }
   GcpUserAccessBinding._() : super();
-  factory GcpUserAccessBinding.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GcpUserAccessBinding.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GcpUserAccessBinding.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GcpUserAccessBinding.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcpUserAccessBinding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.identity.accesscontextmanager.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GcpUserAccessBinding',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.identity.accesscontextmanager.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'groupKey')
     ..pPS(3, _omitFieldNames ? '' : 'accessLevels')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GcpUserAccessBinding clone() => GcpUserAccessBinding()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GcpUserAccessBinding copyWith(void Function(GcpUserAccessBinding) updates) => super.copyWith((message) => updates(message as GcpUserAccessBinding)) as GcpUserAccessBinding;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GcpUserAccessBinding clone() =>
+      GcpUserAccessBinding()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GcpUserAccessBinding copyWith(void Function(GcpUserAccessBinding) updates) =>
+      super.copyWith((message) => updates(message as GcpUserAccessBinding))
+          as GcpUserAccessBinding;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GcpUserAccessBinding create() => GcpUserAccessBinding._();
   GcpUserAccessBinding createEmptyInstance() => create();
-  static $pb.PbList<GcpUserAccessBinding> createRepeated() => $pb.PbList<GcpUserAccessBinding>();
+  static $pb.PbList<GcpUserAccessBinding> createRepeated() =>
+      $pb.PbList<GcpUserAccessBinding>();
   @$core.pragma('dart2js:noInline')
-  static GcpUserAccessBinding getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcpUserAccessBinding>(create);
+  static GcpUserAccessBinding getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GcpUserAccessBinding>(create);
   static GcpUserAccessBinding? _defaultInstance;
 
   /// Immutable. Assigned by the server during creation. The last segment has an arbitrary
@@ -73,7 +83,10 @@ class GcpUserAccessBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -89,7 +102,10 @@ class GcpUserAccessBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get groupKey => $_getSZ(1);
   @$pb.TagNumber(2)
-  set groupKey($core.String v) { $_setString(1, v); }
+  set groupKey($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGroupKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -103,6 +119,6 @@ class GcpUserAccessBinding extends $pb.GeneratedMessage {
   $core.List<$core.String> get accessLevels => $_getList(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

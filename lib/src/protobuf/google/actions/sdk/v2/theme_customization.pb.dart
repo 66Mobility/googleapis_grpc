@@ -49,38 +49,52 @@ class ThemeCustomization extends $pb.GeneratedMessage {
     return $result;
   }
   ThemeCustomization._() : super();
-  factory ThemeCustomization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ThemeCustomization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ThemeCustomization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ThemeCustomization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ThemeCustomization', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ThemeCustomization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'backgroundColor')
     ..aOS(2, _omitFieldNames ? '' : 'primaryColor')
     ..aOS(3, _omitFieldNames ? '' : 'fontFamily')
-    ..e<ThemeCustomization_ImageCornerStyle>(4, _omitFieldNames ? '' : 'imageCornerStyle', $pb.PbFieldType.OE, defaultOrMaker: ThemeCustomization_ImageCornerStyle.IMAGE_CORNER_STYLE_UNSPECIFIED, valueOf: ThemeCustomization_ImageCornerStyle.valueOf, enumValues: ThemeCustomization_ImageCornerStyle.values)
+    ..e<ThemeCustomization_ImageCornerStyle>(
+        4, _omitFieldNames ? '' : 'imageCornerStyle', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            ThemeCustomization_ImageCornerStyle.IMAGE_CORNER_STYLE_UNSPECIFIED,
+        valueOf: ThemeCustomization_ImageCornerStyle.valueOf,
+        enumValues: ThemeCustomization_ImageCornerStyle.values)
     ..aOS(5, _omitFieldNames ? '' : 'landscapeBackgroundImage')
     ..aOS(6, _omitFieldNames ? '' : 'portraitBackgroundImage')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ThemeCustomization clone() => ThemeCustomization()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ThemeCustomization copyWith(void Function(ThemeCustomization) updates) => super.copyWith((message) => updates(message as ThemeCustomization)) as ThemeCustomization;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ThemeCustomization copyWith(void Function(ThemeCustomization) updates) =>
+      super.copyWith((message) => updates(message as ThemeCustomization))
+          as ThemeCustomization;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ThemeCustomization create() => ThemeCustomization._();
   ThemeCustomization createEmptyInstance() => create();
-  static $pb.PbList<ThemeCustomization> createRepeated() => $pb.PbList<ThemeCustomization>();
+  static $pb.PbList<ThemeCustomization> createRepeated() =>
+      $pb.PbList<ThemeCustomization>();
   @$core.pragma('dart2js:noInline')
-  static ThemeCustomization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ThemeCustomization>(create);
+  static ThemeCustomization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ThemeCustomization>(create);
   static ThemeCustomization? _defaultInstance;
 
   /// Background color of cards. Acts as a fallback if `background_image` is
@@ -90,7 +104,10 @@ class ThemeCustomization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get backgroundColor => $_getSZ(0);
   @$pb.TagNumber(1)
-  set backgroundColor($core.String v) { $_setString(0, v); }
+  set backgroundColor($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBackgroundColor() => $_has(0);
   @$pb.TagNumber(1)
@@ -102,7 +119,10 @@ class ThemeCustomization extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get primaryColor => $_getSZ(1);
   @$pb.TagNumber(2)
-  set primaryColor($core.String v) { $_setString(1, v); }
+  set primaryColor($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrimaryColor() => $_has(1);
   @$pb.TagNumber(2)
@@ -124,7 +144,10 @@ class ThemeCustomization extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get fontFamily => $_getSZ(2);
   @$pb.TagNumber(3)
-  set fontFamily($core.String v) { $_setString(2, v); }
+  set fontFamily($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFontFamily() => $_has(2);
   @$pb.TagNumber(3)
@@ -135,7 +158,10 @@ class ThemeCustomization extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ThemeCustomization_ImageCornerStyle get imageCornerStyle => $_getN(3);
   @$pb.TagNumber(4)
-  set imageCornerStyle(ThemeCustomization_ImageCornerStyle v) { setField(4, v); }
+  set imageCornerStyle(ThemeCustomization_ImageCornerStyle v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImageCornerStyle() => $_has(3);
   @$pb.TagNumber(4)
@@ -150,7 +176,10 @@ class ThemeCustomization extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get landscapeBackgroundImage => $_getSZ(4);
   @$pb.TagNumber(5)
-  set landscapeBackgroundImage($core.String v) { $_setString(4, v); }
+  set landscapeBackgroundImage($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasLandscapeBackgroundImage() => $_has(4);
   @$pb.TagNumber(5)
@@ -165,13 +194,16 @@ class ThemeCustomization extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get portraitBackgroundImage => $_getSZ(5);
   @$pb.TagNumber(6)
-  set portraitBackgroundImage($core.String v) { $_setString(5, v); }
+  set portraitBackgroundImage($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPortraitBackgroundImage() => $_has(5);
   @$pb.TagNumber(6)
   void clearPortraitBackgroundImage() => clearField(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

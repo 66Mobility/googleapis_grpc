@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const DataFiles$json = {
   '1': 'DataFiles',
   '2': [
-    {'1': 'data_files', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.DataFile', '10': 'dataFiles'},
+    {
+      '1': 'data_files',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.DataFile',
+      '10': 'dataFiles'
+    },
   ],
 };
 
@@ -40,4 +47,3 @@ const DataFile$json = {
 final $typed_data.Uint8List dataFileDescriptor = $convert.base64Decode(
     'CghEYXRhRmlsZRIbCglmaWxlX3BhdGgYASABKAlSCGZpbGVQYXRoEiEKDGNvbnRlbnRfdHlwZR'
     'gCIAEoCVILY29udGVudFR5cGUSGAoHcGF5bG9hZBgDIAEoDFIHcGF5bG9hZA==');
-

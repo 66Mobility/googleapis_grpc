@@ -21,8 +21,22 @@ const RouteModifiers$json = {
     {'1': 'avoid_highways', '3': 2, '4': 1, '5': 8, '10': 'avoidHighways'},
     {'1': 'avoid_ferries', '3': 3, '4': 1, '5': 8, '10': 'avoidFerries'},
     {'1': 'avoid_indoor', '3': 4, '4': 1, '5': 8, '10': 'avoidIndoor'},
-    {'1': 'vehicle_info', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routing.v2.VehicleInfo', '10': 'vehicleInfo'},
-    {'1': 'toll_passes', '3': 6, '4': 3, '5': 14, '6': '.google.maps.routing.v2.TollPass', '10': 'tollPasses'},
+    {
+      '1': 'vehicle_info',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.VehicleInfo',
+      '10': 'vehicleInfo'
+    },
+    {
+      '1': 'toll_passes',
+      '3': 6,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.routing.v2.TollPass',
+      '10': 'tollPasses'
+    },
   ],
 };
 
@@ -34,4 +48,3 @@ final $typed_data.Uint8List routeModifiersDescriptor = $convert.base64Decode(
     'hpY2xlX2luZm8YBSABKAsyIy5nb29nbGUubWFwcy5yb3V0aW5nLnYyLlZlaGljbGVJbmZvUgt2'
     'ZWhpY2xlSW5mbxJBCgt0b2xsX3Bhc3NlcxgGIAMoDjIgLmdvb2dsZS5tYXBzLnJvdXRpbmcudj'
     'IuVG9sbFBhc3NSCnRvbGxQYXNzZXM=');
-

@@ -52,29 +52,38 @@ class Address extends $pb.GeneratedMessage {
     return $result;
   }
   Address._() : super();
-  factory Address.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Address.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Address.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Address.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Address', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Address',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'formattedAddress')
-    ..aOM<$448.PostalAddress>(3, _omitFieldNames ? '' : 'postalAddress', subBuilder: $448.PostalAddress.create)
-    ..pc<AddressComponent>(4, _omitFieldNames ? '' : 'addressComponents', $pb.PbFieldType.PM, subBuilder: AddressComponent.create)
+    ..aOM<$448.PostalAddress>(3, _omitFieldNames ? '' : 'postalAddress',
+        subBuilder: $448.PostalAddress.create)
+    ..pc<AddressComponent>(
+        4, _omitFieldNames ? '' : 'addressComponents', $pb.PbFieldType.PM,
+        subBuilder: AddressComponent.create)
     ..pPS(5, _omitFieldNames ? '' : 'missingComponentTypes')
     ..pPS(6, _omitFieldNames ? '' : 'unconfirmedComponentTypes')
     ..pPS(7, _omitFieldNames ? '' : 'unresolvedTokens')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Address clone() => Address()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Address copyWith(void Function(Address) updates) => super.copyWith((message) => updates(message as Address)) as Address;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Address copyWith(void Function(Address) updates) =>
+      super.copyWith((message) => updates(message as Address)) as Address;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -83,7 +92,8 @@ class Address extends $pb.GeneratedMessage {
   Address createEmptyInstance() => create();
   static $pb.PbList<Address> createRepeated() => $pb.PbList<Address>();
   @$core.pragma('dart2js:noInline')
-  static Address getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Address>(create);
+  static Address getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Address>(create);
   static Address? _defaultInstance;
 
   /// The post-processed address, formatted as a single-line address following
@@ -91,7 +101,10 @@ class Address extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get formattedAddress => $_getSZ(0);
   @$pb.TagNumber(2)
-  set formattedAddress($core.String v) { $_setString(0, v); }
+  set formattedAddress($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFormattedAddress() => $_has(0);
   @$pb.TagNumber(2)
@@ -101,7 +114,10 @@ class Address extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $448.PostalAddress get postalAddress => $_getN(1);
   @$pb.TagNumber(3)
-  set postalAddress($448.PostalAddress v) { setField(3, v); }
+  set postalAddress($448.PostalAddress v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPostalAddress() => $_has(1);
   @$pb.TagNumber(3)
@@ -187,46 +203,64 @@ class AddressComponent extends $pb.GeneratedMessage {
     return $result;
   }
   AddressComponent._() : super();
-  factory AddressComponent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddressComponent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddressComponent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AddressComponent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AddressComponent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..aOM<ComponentName>(1, _omitFieldNames ? '' : 'componentName', subBuilder: ComponentName.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AddressComponent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..aOM<ComponentName>(1, _omitFieldNames ? '' : 'componentName',
+        subBuilder: ComponentName.create)
     ..aOS(2, _omitFieldNames ? '' : 'componentType')
-    ..e<AddressComponent_ConfirmationLevel>(3, _omitFieldNames ? '' : 'confirmationLevel', $pb.PbFieldType.OE, defaultOrMaker: AddressComponent_ConfirmationLevel.CONFIRMATION_LEVEL_UNSPECIFIED, valueOf: AddressComponent_ConfirmationLevel.valueOf, enumValues: AddressComponent_ConfirmationLevel.values)
+    ..e<AddressComponent_ConfirmationLevel>(
+        3, _omitFieldNames ? '' : 'confirmationLevel', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            AddressComponent_ConfirmationLevel.CONFIRMATION_LEVEL_UNSPECIFIED,
+        valueOf: AddressComponent_ConfirmationLevel.valueOf,
+        enumValues: AddressComponent_ConfirmationLevel.values)
     ..aOB(4, _omitFieldNames ? '' : 'inferred')
     ..aOB(5, _omitFieldNames ? '' : 'spellCorrected')
     ..aOB(6, _omitFieldNames ? '' : 'replaced')
     ..aOB(7, _omitFieldNames ? '' : 'unexpected')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AddressComponent clone() => AddressComponent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AddressComponent copyWith(void Function(AddressComponent) updates) => super.copyWith((message) => updates(message as AddressComponent)) as AddressComponent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AddressComponent copyWith(void Function(AddressComponent) updates) =>
+      super.copyWith((message) => updates(message as AddressComponent))
+          as AddressComponent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AddressComponent create() => AddressComponent._();
   AddressComponent createEmptyInstance() => create();
-  static $pb.PbList<AddressComponent> createRepeated() => $pb.PbList<AddressComponent>();
+  static $pb.PbList<AddressComponent> createRepeated() =>
+      $pb.PbList<AddressComponent>();
   @$core.pragma('dart2js:noInline')
-  static AddressComponent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddressComponent>(create);
+  static AddressComponent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AddressComponent>(create);
   static AddressComponent? _defaultInstance;
 
   /// The name for this component.
   @$pb.TagNumber(1)
   ComponentName get componentName => $_getN(0);
   @$pb.TagNumber(1)
-  set componentName(ComponentName v) { setField(1, v); }
+  set componentName(ComponentName v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasComponentName() => $_has(0);
   @$pb.TagNumber(1)
@@ -241,7 +275,10 @@ class AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get componentType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set componentType($core.String v) { $_setString(1, v); }
+  set componentType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasComponentType() => $_has(1);
   @$pb.TagNumber(2)
@@ -252,7 +289,10 @@ class AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AddressComponent_ConfirmationLevel get confirmationLevel => $_getN(2);
   @$pb.TagNumber(3)
-  set confirmationLevel(AddressComponent_ConfirmationLevel v) { setField(3, v); }
+  set confirmationLevel(AddressComponent_ConfirmationLevel v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasConfirmationLevel() => $_has(2);
   @$pb.TagNumber(3)
@@ -264,7 +304,10 @@ class AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get inferred => $_getBF(3);
   @$pb.TagNumber(4)
-  set inferred($core.bool v) { $_setBool(3, v); }
+  set inferred($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasInferred() => $_has(3);
   @$pb.TagNumber(4)
@@ -278,7 +321,10 @@ class AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get spellCorrected => $_getBF(4);
   @$pb.TagNumber(5)
-  set spellCorrected($core.bool v) { $_setBool(4, v); }
+  set spellCorrected($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSpellCorrected() => $_has(4);
   @$pb.TagNumber(5)
@@ -291,7 +337,10 @@ class AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get replaced => $_getBF(5);
   @$pb.TagNumber(6)
-  set replaced($core.bool v) { $_setBool(5, v); }
+  set replaced($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasReplaced() => $_has(5);
   @$pb.TagNumber(6)
@@ -303,7 +352,10 @@ class AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get unexpected => $_getBF(6);
   @$pb.TagNumber(7)
-  set unexpected($core.bool v) { $_setBool(6, v); }
+  set unexpected($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasUnexpected() => $_has(6);
   @$pb.TagNumber(7)
@@ -326,34 +378,43 @@ class ComponentName extends $pb.GeneratedMessage {
     return $result;
   }
   ComponentName._() : super();
-  factory ComponentName.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComponentName.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComponentName.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComponentName.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComponentName', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComponentName',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ComponentName clone() => ComponentName()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComponentName copyWith(void Function(ComponentName) updates) => super.copyWith((message) => updates(message as ComponentName)) as ComponentName;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComponentName copyWith(void Function(ComponentName) updates) =>
+      super.copyWith((message) => updates(message as ComponentName))
+          as ComponentName;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComponentName create() => ComponentName._();
   ComponentName createEmptyInstance() => create();
-  static $pb.PbList<ComponentName> createRepeated() => $pb.PbList<ComponentName>();
+  static $pb.PbList<ComponentName> createRepeated() =>
+      $pb.PbList<ComponentName>();
   @$core.pragma('dart2js:noInline')
-  static ComponentName getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComponentName>(create);
+  static ComponentName getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComponentName>(create);
   static ComponentName? _defaultInstance;
 
   /// The name text. For example, "5th Avenue" for a street name or "1253" for a
@@ -361,7 +422,10 @@ class ComponentName extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -372,13 +436,16 @@ class ComponentName extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get languageCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set languageCode($core.String v) { $_setString(1, v); }
+  set languageCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLanguageCode() => $_has(1);
   @$pb.TagNumber(2)
   void clearLanguageCode() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

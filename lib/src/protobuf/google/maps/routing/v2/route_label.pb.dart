@@ -12,4 +12,3 @@
 import 'dart:core' as $core;
 
 export 'route_label.pbenum.dart';
-

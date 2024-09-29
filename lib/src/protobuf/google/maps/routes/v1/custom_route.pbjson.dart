@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const CustomRoute$json = {
   '1': 'CustomRoute',
   '2': [
-    {'1': 'route', '3': 11, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Route', '10': 'route'},
+    {
+      '1': 'route',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Route',
+      '10': 'route'
+    },
     {'1': 'token', '3': 12, '4': 1, '5': 9, '10': 'token'},
   ],
 };
@@ -26,4 +33,3 @@ const CustomRoute$json = {
 final $typed_data.Uint8List customRouteDescriptor = $convert.base64Decode(
     'CgtDdXN0b21Sb3V0ZRIyCgVyb3V0ZRgLIAEoCzIcLmdvb2dsZS5tYXBzLnJvdXRlcy52MS5Sb3'
     'V0ZVIFcm91dGUSFAoFdG9rZW4YDCABKAlSBXRva2Vu');
-

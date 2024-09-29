@@ -31,41 +31,54 @@ class MutationRecord extends $pb.GeneratedMessage {
     return $result;
   }
   MutationRecord._() : super();
-  factory MutationRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MutationRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MutationRecord.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MutationRecord.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutationRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'mutateTime', subBuilder: $302.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MutationRecord',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'mutateTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'mutatedBy')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MutationRecord clone() => MutationRecord()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MutationRecord copyWith(void Function(MutationRecord) updates) => super.copyWith((message) => updates(message as MutationRecord)) as MutationRecord;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MutationRecord copyWith(void Function(MutationRecord) updates) =>
+      super.copyWith((message) => updates(message as MutationRecord))
+          as MutationRecord;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MutationRecord create() => MutationRecord._();
   MutationRecord createEmptyInstance() => create();
-  static $pb.PbList<MutationRecord> createRepeated() => $pb.PbList<MutationRecord>();
+  static $pb.PbList<MutationRecord> createRepeated() =>
+      $pb.PbList<MutationRecord>();
   @$core.pragma('dart2js:noInline')
-  static MutationRecord getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MutationRecord>(create);
+  static MutationRecord getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MutationRecord>(create);
   static MutationRecord? _defaultInstance;
 
   /// When the change occurred.
   @$pb.TagNumber(1)
   $302.Timestamp get mutateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set mutateTime($302.Timestamp v) { setField(1, v); }
+  set mutateTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMutateTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -77,13 +90,16 @@ class MutationRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get mutatedBy => $_getSZ(1);
   @$pb.TagNumber(2)
-  set mutatedBy($core.String v) { $_setString(1, v); }
+  set mutatedBy($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMutatedBy() => $_has(1);
   @$pb.TagNumber(2)
   void clearMutatedBy() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

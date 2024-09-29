@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const RoutingSummary$json = {
   '1': 'RoutingSummary',
   '2': [
-    {'1': 'legs', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.RoutingSummary.Leg', '10': 'legs'},
+    {
+      '1': 'legs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.RoutingSummary.Leg',
+      '10': 'legs'
+    },
   ],
   '3': [RoutingSummary_Leg$json],
 };
@@ -26,7 +33,14 @@ const RoutingSummary$json = {
 const RoutingSummary_Leg$json = {
   '1': 'Leg',
   '2': [
-    {'1': 'duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
+    {
+      '1': 'duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
     {'1': 'distance_meters', '3': 2, '4': 1, '5': 5, '10': 'distanceMeters'},
   ],
 };
@@ -37,4 +51,3 @@ final $typed_data.Uint8List routingSummaryDescriptor = $convert.base64Decode(
     'JvdXRpbmdTdW1tYXJ5LkxlZ1IEbGVncxplCgNMZWcSNQoIZHVyYXRpb24YASABKAsyGS5nb29n'
     'bGUucHJvdG9idWYuRHVyYXRpb25SCGR1cmF0aW9uEicKD2Rpc3RhbmNlX21ldGVycxgCIAEoBV'
     'IOZGlzdGFuY2VNZXRlcnM=');
-

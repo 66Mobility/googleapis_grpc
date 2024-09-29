@@ -20,11 +20,7 @@ import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
 
-enum PlayableLocation_LocationId {
-  placeId, 
-  plusCode, 
-  notSet
-}
+enum PlayableLocation_LocationId { placeId, plusCode, notSet }
 
 /// A geographical point suitable for placing game objects in location-based
 /// games.
@@ -59,54 +55,70 @@ class PlayableLocation extends $pb.GeneratedMessage {
     return $result;
   }
   PlayableLocation._() : super();
-  factory PlayableLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlayableLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlayableLocation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlayableLocation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, PlayableLocation_LocationId> _PlayableLocation_LocationIdByTag = {
-    2 : PlayableLocation_LocationId.placeId,
-    3 : PlayableLocation_LocationId.plusCode,
-    0 : PlayableLocation_LocationId.notSet
+  static const $core.Map<$core.int, PlayableLocation_LocationId>
+      _PlayableLocation_LocationIdByTag = {
+    2: PlayableLocation_LocationId.placeId,
+    3: PlayableLocation_LocationId.plusCode,
+    0: PlayableLocation_LocationId.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlayableLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlayableLocation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'placeId')
     ..aOS(3, _omitFieldNames ? '' : 'plusCode')
     ..pPS(4, _omitFieldNames ? '' : 'types')
-    ..aOM<$325.LatLng>(5, _omitFieldNames ? '' : 'centerPoint', subBuilder: $325.LatLng.create)
-    ..aOM<$325.LatLng>(6, _omitFieldNames ? '' : 'snappedPoint', subBuilder: $325.LatLng.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$325.LatLng>(5, _omitFieldNames ? '' : 'centerPoint',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$325.LatLng>(6, _omitFieldNames ? '' : 'snappedPoint',
+        subBuilder: $325.LatLng.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PlayableLocation clone() => PlayableLocation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlayableLocation copyWith(void Function(PlayableLocation) updates) => super.copyWith((message) => updates(message as PlayableLocation)) as PlayableLocation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlayableLocation copyWith(void Function(PlayableLocation) updates) =>
+      super.copyWith((message) => updates(message as PlayableLocation))
+          as PlayableLocation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlayableLocation create() => PlayableLocation._();
   PlayableLocation createEmptyInstance() => create();
-  static $pb.PbList<PlayableLocation> createRepeated() => $pb.PbList<PlayableLocation>();
+  static $pb.PbList<PlayableLocation> createRepeated() =>
+      $pb.PbList<PlayableLocation>();
   @$core.pragma('dart2js:noInline')
-  static PlayableLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlayableLocation>(create);
+  static PlayableLocation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PlayableLocation>(create);
   static PlayableLocation? _defaultInstance;
 
-  PlayableLocation_LocationId whichLocationId() => _PlayableLocation_LocationIdByTag[$_whichOneof(0)]!;
+  PlayableLocation_LocationId whichLocationId() =>
+      _PlayableLocation_LocationIdByTag[$_whichOneof(0)]!;
   void clearLocationId() => clearField($_whichOneof(0));
 
   /// Required. The name of this playable location.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -116,7 +128,10 @@ class PlayableLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get placeId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set placeId($core.String v) { $_setString(1, v); }
+  set placeId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPlaceId() => $_has(1);
   @$pb.TagNumber(2)
@@ -126,7 +141,10 @@ class PlayableLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get plusCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set plusCode($core.String v) { $_setString(2, v); }
+  set plusCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPlusCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -148,7 +166,10 @@ class PlayableLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $325.LatLng get centerPoint => $_getN(4);
   @$pb.TagNumber(5)
-  set centerPoint($325.LatLng v) { setField(5, v); }
+  set centerPoint($325.LatLng v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCenterPoint() => $_has(4);
   @$pb.TagNumber(5)
@@ -161,7 +182,10 @@ class PlayableLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $325.LatLng get snappedPoint => $_getN(5);
   @$pb.TagNumber(6)
-  set snappedPoint($325.LatLng v) { setField(6, v); }
+  set snappedPoint($325.LatLng v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSnappedPoint() => $_has(5);
   @$pb.TagNumber(6)
@@ -186,34 +210,48 @@ class SpacingOptions extends $pb.GeneratedMessage {
     return $result;
   }
   SpacingOptions._() : super();
-  factory SpacingOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SpacingOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SpacingOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SpacingOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpacingOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'minSpacingMeters', $pb.PbFieldType.OD)
-    ..e<SpacingOptions_PointType>(2, _omitFieldNames ? '' : 'pointType', $pb.PbFieldType.OE, defaultOrMaker: SpacingOptions_PointType.POINT_TYPE_UNSPECIFIED, valueOf: SpacingOptions_PointType.valueOf, enumValues: SpacingOptions_PointType.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SpacingOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'minSpacingMeters', $pb.PbFieldType.OD)
+    ..e<SpacingOptions_PointType>(
+        2, _omitFieldNames ? '' : 'pointType', $pb.PbFieldType.OE,
+        defaultOrMaker: SpacingOptions_PointType.POINT_TYPE_UNSPECIFIED,
+        valueOf: SpacingOptions_PointType.valueOf,
+        enumValues: SpacingOptions_PointType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SpacingOptions clone() => SpacingOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SpacingOptions copyWith(void Function(SpacingOptions) updates) => super.copyWith((message) => updates(message as SpacingOptions)) as SpacingOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SpacingOptions copyWith(void Function(SpacingOptions) updates) =>
+      super.copyWith((message) => updates(message as SpacingOptions))
+          as SpacingOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpacingOptions create() => SpacingOptions._();
   SpacingOptions createEmptyInstance() => create();
-  static $pb.PbList<SpacingOptions> createRepeated() => $pb.PbList<SpacingOptions>();
+  static $pb.PbList<SpacingOptions> createRepeated() =>
+      $pb.PbList<SpacingOptions>();
   @$core.pragma('dart2js:noInline')
-  static SpacingOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SpacingOptions>(create);
+  static SpacingOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SpacingOptions>(create);
   static SpacingOptions? _defaultInstance;
 
   ///  Required. The minimum spacing between any two playable locations, measured
@@ -258,7 +296,10 @@ class SpacingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get minSpacingMeters => $_getN(0);
   @$pb.TagNumber(1)
-  set minSpacingMeters($core.double v) { $_setDouble(0, v); }
+  set minSpacingMeters($core.double v) {
+    $_setDouble(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinSpacingMeters() => $_has(0);
   @$pb.TagNumber(1)
@@ -275,7 +316,10 @@ class SpacingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SpacingOptions_PointType get pointType => $_getN(1);
   @$pb.TagNumber(2)
-  set pointType(SpacingOptions_PointType v) { setField(2, v); }
+  set pointType(SpacingOptions_PointType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPointType() => $_has(1);
   @$pb.TagNumber(2)
@@ -302,26 +346,34 @@ class Filter extends $pb.GeneratedMessage {
     return $result;
   }
   Filter._() : super();
-  factory Filter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Filter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Filter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Filter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Filter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'maxLocationCount', $pb.PbFieldType.O3)
-    ..aOM<SpacingOptions>(2, _omitFieldNames ? '' : 'spacing', subBuilder: SpacingOptions.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Filter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'maxLocationCount', $pb.PbFieldType.O3)
+    ..aOM<SpacingOptions>(2, _omitFieldNames ? '' : 'spacing',
+        subBuilder: SpacingOptions.create)
     ..pPS(3, _omitFieldNames ? '' : 'includedTypes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Filter clone() => Filter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Filter copyWith(void Function(Filter) updates) => super.copyWith((message) => updates(message as Filter)) as Filter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Filter copyWith(void Function(Filter) updates) =>
+      super.copyWith((message) => updates(message as Filter)) as Filter;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -330,7 +382,8 @@ class Filter extends $pb.GeneratedMessage {
   Filter createEmptyInstance() => create();
   static $pb.PbList<Filter> createRepeated() => $pb.PbList<Filter>();
   @$core.pragma('dart2js:noInline')
-  static Filter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Filter>(create);
+  static Filter getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Filter>(create);
   static Filter? _defaultInstance;
 
   ///  Specifies the maximum number of playable locations to return. This value
@@ -340,7 +393,10 @@ class Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get maxLocationCount => $_getIZ(0);
   @$pb.TagNumber(1)
-  set maxLocationCount($core.int v) { $_setSignedInt32(0, v); }
+  set maxLocationCount($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxLocationCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -351,7 +407,10 @@ class Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SpacingOptions get spacing => $_getN(1);
   @$pb.TagNumber(2)
-  set spacing(SpacingOptions v) { setField(2, v); }
+  set spacing(SpacingOptions v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSpacing() => $_has(1);
   @$pb.TagNumber(2)
@@ -386,26 +445,34 @@ class Criterion extends $pb.GeneratedMessage {
     return $result;
   }
   Criterion._() : super();
-  factory Criterion.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Criterion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Criterion.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Criterion.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Criterion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'gameObjectType', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Criterion',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'gameObjectType', $pb.PbFieldType.O3)
     ..aOM<Filter>(2, _omitFieldNames ? '' : 'filter', subBuilder: Filter.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'fieldsToReturn', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'fieldsToReturn',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Criterion clone() => Criterion()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Criterion copyWith(void Function(Criterion) updates) => super.copyWith((message) => updates(message as Criterion)) as Criterion;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Criterion copyWith(void Function(Criterion) updates) =>
+      super.copyWith((message) => updates(message as Criterion)) as Criterion;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -414,7 +481,8 @@ class Criterion extends $pb.GeneratedMessage {
   Criterion createEmptyInstance() => create();
   static $pb.PbList<Criterion> createRepeated() => $pb.PbList<Criterion>();
   @$core.pragma('dart2js:noInline')
-  static Criterion getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Criterion>(create);
+  static Criterion getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Criterion>(create);
   static Criterion? _defaultInstance;
 
   ///  Required. An arbitrary, developer-defined identifier of the type of game
@@ -430,7 +498,10 @@ class Criterion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get gameObjectType => $_getIZ(0);
   @$pb.TagNumber(1)
-  set gameObjectType($core.int v) { $_setSignedInt32(0, v); }
+  set gameObjectType($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGameObjectType() => $_has(0);
   @$pb.TagNumber(1)
@@ -441,7 +512,10 @@ class Criterion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Filter get filter => $_getN(1);
   @$pb.TagNumber(2)
-  set filter(Filter v) { setField(2, v); }
+  set filter(Filter v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -464,7 +538,10 @@ class Criterion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $333.FieldMask get fieldsToReturn => $_getN(2);
   @$pb.TagNumber(3)
-  set fieldsToReturn($333.FieldMask v) { setField(3, v); }
+  set fieldsToReturn($333.FieldMask v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFieldsToReturn() => $_has(2);
   @$pb.TagNumber(3)
@@ -485,24 +562,32 @@ class AreaFilter extends $pb.GeneratedMessage {
     return $result;
   }
   AreaFilter._() : super();
-  factory AreaFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AreaFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AreaFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AreaFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AreaFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'), createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 's2CellId', $pb.PbFieldType.OF6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AreaFilter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'),
+      createEmptyInstance: create)
+    ..a<$fixnum.Int64>(
+        1, _omitFieldNames ? '' : 's2CellId', $pb.PbFieldType.OF6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AreaFilter clone() => AreaFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AreaFilter copyWith(void Function(AreaFilter) updates) => super.copyWith((message) => updates(message as AreaFilter)) as AreaFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AreaFilter copyWith(void Function(AreaFilter) updates) =>
+      super.copyWith((message) => updates(message as AreaFilter)) as AreaFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -511,7 +596,8 @@ class AreaFilter extends $pb.GeneratedMessage {
   AreaFilter createEmptyInstance() => create();
   static $pb.PbList<AreaFilter> createRepeated() => $pb.PbList<AreaFilter>();
   @$core.pragma('dart2js:noInline')
-  static AreaFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AreaFilter>(create);
+  static AreaFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AreaFilter>(create);
   static AreaFilter? _defaultInstance;
 
   ///  Required. The S2 cell ID of the area you want. This must be between cell
@@ -529,7 +615,10 @@ class AreaFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get s2CellId => $_getI64(0);
   @$pb.TagNumber(1)
-  set s2CellId($fixnum.Int64 v) { $_setInt64(0, v); }
+  set s2CellId($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasS2CellId() => $_has(0);
   @$pb.TagNumber(1)
@@ -548,33 +637,45 @@ class PlayableLocationList extends $pb.GeneratedMessage {
     return $result;
   }
   PlayableLocationList._() : super();
-  factory PlayableLocationList.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlayableLocationList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlayableLocationList.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlayableLocationList.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlayableLocationList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'), createEmptyInstance: create)
-    ..pc<PlayableLocation>(1, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: PlayableLocation.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlayableLocationList',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3.sample'),
+      createEmptyInstance: create)
+    ..pc<PlayableLocation>(
+        1, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM,
+        subBuilder: PlayableLocation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PlayableLocationList clone() => PlayableLocationList()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlayableLocationList copyWith(void Function(PlayableLocationList) updates) => super.copyWith((message) => updates(message as PlayableLocationList)) as PlayableLocationList;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PlayableLocationList clone() =>
+      PlayableLocationList()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlayableLocationList copyWith(void Function(PlayableLocationList) updates) =>
+      super.copyWith((message) => updates(message as PlayableLocationList))
+          as PlayableLocationList;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlayableLocationList create() => PlayableLocationList._();
   PlayableLocationList createEmptyInstance() => create();
-  static $pb.PbList<PlayableLocationList> createRepeated() => $pb.PbList<PlayableLocationList>();
+  static $pb.PbList<PlayableLocationList> createRepeated() =>
+      $pb.PbList<PlayableLocationList>();
   @$core.pragma('dart2js:noInline')
-  static PlayableLocationList getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlayableLocationList>(create);
+  static PlayableLocationList getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PlayableLocationList>(create);
   static PlayableLocationList? _defaultInstance;
 
   /// A list of playable locations for this game object type.
@@ -582,6 +683,6 @@ class PlayableLocationList extends $pb.GeneratedMessage {
   $core.List<PlayableLocation> get locations => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

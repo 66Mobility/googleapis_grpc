@@ -17,14 +17,56 @@ import 'dart:typed_data' as $typed_data;
 const SlsaProvenanceZeroTwo$json = {
   '1': 'SlsaProvenanceZeroTwo',
   '2': [
-    {'1': 'builder', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaBuilder', '10': 'builder'},
+    {
+      '1': 'builder',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaBuilder',
+      '10': 'builder'
+    },
     {'1': 'build_type', '3': 2, '4': 1, '5': 9, '10': 'buildType'},
-    {'1': 'invocation', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaInvocation', '10': 'invocation'},
-    {'1': 'build_config', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'buildConfig'},
-    {'1': 'metadata', '3': 5, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaMetadata', '10': 'metadata'},
-    {'1': 'materials', '3': 6, '4': 3, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaMaterial', '10': 'materials'},
+    {
+      '1': 'invocation',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaInvocation',
+      '10': 'invocation'
+    },
+    {
+      '1': 'build_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'buildConfig'
+    },
+    {
+      '1': 'metadata',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'materials',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaMaterial',
+      '10': 'materials'
+    },
   ],
-  '3': [SlsaProvenanceZeroTwo_SlsaBuilder$json, SlsaProvenanceZeroTwo_SlsaMaterial$json, SlsaProvenanceZeroTwo_SlsaInvocation$json, SlsaProvenanceZeroTwo_SlsaConfigSource$json, SlsaProvenanceZeroTwo_SlsaMetadata$json, SlsaProvenanceZeroTwo_SlsaCompleteness$json],
+  '3': [
+    SlsaProvenanceZeroTwo_SlsaBuilder$json,
+    SlsaProvenanceZeroTwo_SlsaMaterial$json,
+    SlsaProvenanceZeroTwo_SlsaInvocation$json,
+    SlsaProvenanceZeroTwo_SlsaConfigSource$json,
+    SlsaProvenanceZeroTwo_SlsaMetadata$json,
+    SlsaProvenanceZeroTwo_SlsaCompleteness$json
+  ],
 };
 
 @$core.Deprecated('Use slsaProvenanceZeroTwoDescriptor instead')
@@ -40,7 +82,14 @@ const SlsaProvenanceZeroTwo_SlsaMaterial$json = {
   '1': 'SlsaMaterial',
   '2': [
     {'1': 'uri', '3': 1, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'digest', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaMaterial.DigestEntry', '10': 'digest'},
+    {
+      '1': 'digest',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaMaterial.DigestEntry',
+      '10': 'digest'
+    },
   ],
   '3': [SlsaProvenanceZeroTwo_SlsaMaterial_DigestEntry$json],
 };
@@ -59,9 +108,30 @@ const SlsaProvenanceZeroTwo_SlsaMaterial_DigestEntry$json = {
 const SlsaProvenanceZeroTwo_SlsaInvocation$json = {
   '1': 'SlsaInvocation',
   '2': [
-    {'1': 'config_source', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaConfigSource', '10': 'configSource'},
-    {'1': 'parameters', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'parameters'},
-    {'1': 'environment', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'environment'},
+    {
+      '1': 'config_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaConfigSource',
+      '10': 'configSource'
+    },
+    {
+      '1': 'parameters',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'parameters'
+    },
+    {
+      '1': 'environment',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'environment'
+    },
   ],
 };
 
@@ -70,7 +140,14 @@ const SlsaProvenanceZeroTwo_SlsaConfigSource$json = {
   '1': 'SlsaConfigSource',
   '2': [
     {'1': 'uri', '3': 1, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'digest', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaConfigSource.DigestEntry', '10': 'digest'},
+    {
+      '1': 'digest',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaConfigSource.DigestEntry',
+      '10': 'digest'
+    },
     {'1': 'entry_point', '3': 3, '4': 1, '5': 9, '10': 'entryPoint'},
   ],
   '3': [SlsaProvenanceZeroTwo_SlsaConfigSource_DigestEntry$json],
@@ -90,10 +167,37 @@ const SlsaProvenanceZeroTwo_SlsaConfigSource_DigestEntry$json = {
 const SlsaProvenanceZeroTwo_SlsaMetadata$json = {
   '1': 'SlsaMetadata',
   '2': [
-    {'1': 'build_invocation_id', '3': 1, '4': 1, '5': 9, '10': 'buildInvocationId'},
-    {'1': 'build_started_on', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'buildStartedOn'},
-    {'1': 'build_finished_on', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'buildFinishedOn'},
-    {'1': 'completeness', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaCompleteness', '10': 'completeness'},
+    {
+      '1': 'build_invocation_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'buildInvocationId'
+    },
+    {
+      '1': 'build_started_on',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'buildStartedOn'
+    },
+    {
+      '1': 'build_finished_on',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'buildFinishedOn'
+    },
+    {
+      '1': 'completeness',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo.SlsaCompleteness',
+      '10': 'completeness'
+    },
     {'1': 'reproducible', '3': 5, '4': 1, '5': 8, '10': 'reproducible'},
   ],
 };
@@ -138,4 +242,3 @@ final $typed_data.Uint8List slsaProvenanceZeroTwoDescriptor = $convert.base64Dec
     'UgASgIUgxyZXByb2R1Y2libGUacgoQU2xzYUNvbXBsZXRlbmVzcxIeCgpwYXJhbWV0ZXJzGAEg'
     'ASgIUgpwYXJhbWV0ZXJzEiAKC2Vudmlyb25tZW50GAIgASgIUgtlbnZpcm9ubWVudBIcCgltYX'
     'RlcmlhbHMYAyABKAhSCW1hdGVyaWFscw==');
-

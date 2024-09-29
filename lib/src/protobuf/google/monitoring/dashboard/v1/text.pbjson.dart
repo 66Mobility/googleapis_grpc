@@ -18,8 +18,22 @@ const Text$json = {
   '1': 'Text',
   '2': [
     {'1': 'content', '3': 1, '4': 1, '5': 9, '10': 'content'},
-    {'1': 'format', '3': 2, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Text.Format', '10': 'format'},
-    {'1': 'style', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Text.TextStyle', '10': 'style'},
+    {
+      '1': 'format',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Text.Format',
+      '10': 'format'
+    },
+    {
+      '1': 'style',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Text.TextStyle',
+      '10': 'style'
+    },
   ],
   '3': [Text_TextStyle$json],
   '4': [Text_Format$json],
@@ -31,13 +45,54 @@ const Text_TextStyle$json = {
   '2': [
     {'1': 'background_color', '3': 1, '4': 1, '5': 9, '10': 'backgroundColor'},
     {'1': 'text_color', '3': 2, '4': 1, '5': 9, '10': 'textColor'},
-    {'1': 'horizontal_alignment', '3': 3, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Text.TextStyle.HorizontalAlignment', '10': 'horizontalAlignment'},
-    {'1': 'vertical_alignment', '3': 4, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Text.TextStyle.VerticalAlignment', '10': 'verticalAlignment'},
-    {'1': 'padding', '3': 5, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Text.TextStyle.PaddingSize', '10': 'padding'},
-    {'1': 'font_size', '3': 6, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Text.TextStyle.FontSize', '10': 'fontSize'},
-    {'1': 'pointer_location', '3': 7, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Text.TextStyle.PointerLocation', '10': 'pointerLocation'},
+    {
+      '1': 'horizontal_alignment',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Text.TextStyle.HorizontalAlignment',
+      '10': 'horizontalAlignment'
+    },
+    {
+      '1': 'vertical_alignment',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Text.TextStyle.VerticalAlignment',
+      '10': 'verticalAlignment'
+    },
+    {
+      '1': 'padding',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Text.TextStyle.PaddingSize',
+      '10': 'padding'
+    },
+    {
+      '1': 'font_size',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Text.TextStyle.FontSize',
+      '10': 'fontSize'
+    },
+    {
+      '1': 'pointer_location',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Text.TextStyle.PointerLocation',
+      '10': 'pointerLocation'
+    },
   ],
-  '4': [Text_TextStyle_HorizontalAlignment$json, Text_TextStyle_VerticalAlignment$json, Text_TextStyle_PaddingSize$json, Text_TextStyle_FontSize$json, Text_TextStyle_PointerLocation$json],
+  '4': [
+    Text_TextStyle_HorizontalAlignment$json,
+    Text_TextStyle_VerticalAlignment$json,
+    Text_TextStyle_PaddingSize$json,
+    Text_TextStyle_FontSize$json,
+    Text_TextStyle_PointerLocation$json
+  ],
 };
 
 @$core.Deprecated('Use textDescriptor instead')
@@ -148,4 +203,3 @@ final $typed_data.Uint8List textDescriptor = $convert.base64Decode(
     'RUT00QCBITCg9QTF9CT1RUT01fUklHSFQQCRISCg5QTF9CT1RUT01fTEVGVBAKEhIKDlBMX0xF'
     'RlRfQk9UVE9NEAsSDwoLUExfTEVGVF9UT1AQDCI3CgZGb3JtYXQSFgoSRk9STUFUX1VOU1BFQ0'
     'lGSUVEEAASDAoITUFSS0RPV04QARIHCgNSQVcQAg==');
-

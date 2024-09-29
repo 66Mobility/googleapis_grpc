@@ -18,7 +18,15 @@ const CreateAlertPolicyRequest$json = {
   '1': 'CreateAlertPolicyRequest',
   '2': [
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'alert_policy', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy', '8': {}, '10': 'alertPolicy'},
+    {
+      '1': 'alert_policy',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy',
+      '8': {},
+      '10': 'alertPolicy'
+    },
   ],
 };
 
@@ -65,7 +73,14 @@ final $typed_data.Uint8List listAlertPoliciesRequestDescriptor = $convert.base64
 const ListAlertPoliciesResponse$json = {
   '1': 'ListAlertPoliciesResponse',
   '2': [
-    {'1': 'alert_policies', '3': 3, '4': 3, '5': 11, '6': '.google.monitoring.v3.AlertPolicy', '10': 'alertPolicies'},
+    {
+      '1': 'alert_policies',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy',
+      '10': 'alertPolicies'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 4, '4': 1, '5': 5, '10': 'totalSize'},
   ],
@@ -82,8 +97,23 @@ final $typed_data.Uint8List listAlertPoliciesResponseDescriptor = $convert.base6
 const UpdateAlertPolicyRequest$json = {
   '1': 'UpdateAlertPolicyRequest',
   '2': [
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'alert_policy', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy', '8': {}, '10': 'alertPolicy'},
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'alert_policy',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy',
+      '8': {},
+      '10': 'alertPolicy'
+    },
   ],
 };
 
@@ -102,7 +132,7 @@ const DeleteAlertPolicyRequest$json = {
 };
 
 /// Descriptor for `DeleteAlertPolicyRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAlertPolicyRequestDescriptor = $convert.base64Decode(
-    'ChhEZWxldGVBbGVydFBvbGljeVJlcXVlc3QSQQoEbmFtZRgDIAEoCUIt4EEC+kEnCiVtb25pdG'
-    '9yaW5nLmdvb2dsZWFwaXMuY29tL0FsZXJ0UG9saWN5UgRuYW1l');
-
+final $typed_data.Uint8List deleteAlertPolicyRequestDescriptor =
+    $convert.base64Decode(
+        'ChhEZWxldGVBbGVydFBvbGljeVJlcXVlc3QSQQoEbmFtZRgDIAEoCUIt4EEC+kEnCiVtb25pdG'
+        '9yaW5nLmdvb2dsZWFwaXMuY29tL0FsZXJ0UG9saWN5UgRuYW1l');

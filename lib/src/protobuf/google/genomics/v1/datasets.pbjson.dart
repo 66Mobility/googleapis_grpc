@@ -20,7 +20,14 @@ const Dataset$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
   ],
 };
 
@@ -50,7 +57,14 @@ final $typed_data.Uint8List listDatasetsRequestDescriptor = $convert.base64Decod
 const ListDatasetsResponse$json = {
   '1': 'ListDatasetsResponse',
   '2': [
-    {'1': 'datasets', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Dataset', '10': 'datasets'},
+    {
+      '1': 'datasets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Dataset',
+      '10': 'datasets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -65,7 +79,14 @@ final $typed_data.Uint8List listDatasetsResponseDescriptor = $convert.base64Deco
 const CreateDatasetRequest$json = {
   '1': 'CreateDatasetRequest',
   '2': [
-    {'1': 'dataset', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1.Dataset', '10': 'dataset'},
+    {
+      '1': 'dataset',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Dataset',
+      '10': 'dataset'
+    },
   ],
 };
 
@@ -79,8 +100,22 @@ const UpdateDatasetRequest$json = {
   '1': 'UpdateDatasetRequest',
   '2': [
     {'1': 'dataset_id', '3': 1, '4': 1, '5': 9, '10': 'datasetId'},
-    {'1': 'dataset', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.Dataset', '10': 'dataset'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'dataset',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Dataset',
+      '10': 'dataset'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -112,9 +147,10 @@ const UndeleteDatasetRequest$json = {
 };
 
 /// Descriptor for `UndeleteDatasetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List undeleteDatasetRequestDescriptor = $convert.base64Decode(
-    'ChZVbmRlbGV0ZURhdGFzZXRSZXF1ZXN0Eh0KCmRhdGFzZXRfaWQYASABKAlSCWRhdGFzZXRJZA'
-    '==');
+final $typed_data.Uint8List undeleteDatasetRequestDescriptor =
+    $convert.base64Decode(
+        'ChZVbmRlbGV0ZURhdGFzZXRSZXF1ZXN0Eh0KCmRhdGFzZXRfaWQYASABKAlSCWRhdGFzZXRJZA'
+        '==');
 
 @$core.Deprecated('Use getDatasetRequestDescriptor instead')
 const GetDatasetRequest$json = {
@@ -127,4 +163,3 @@ const GetDatasetRequest$json = {
 /// Descriptor for `GetDatasetRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List getDatasetRequestDescriptor = $convert.base64Decode(
     'ChFHZXREYXRhc2V0UmVxdWVzdBIdCgpkYXRhc2V0X2lkGAEgASgJUglkYXRhc2V0SWQ=');
-

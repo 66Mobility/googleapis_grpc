@@ -32,14 +32,28 @@ final $typed_data.Uint8List transitAgencyDescriptor = $convert.base64Decode(
 const TransitLine$json = {
   '1': 'TransitLine',
   '2': [
-    {'1': 'agencies', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routing.v2.TransitAgency', '10': 'agencies'},
+    {
+      '1': 'agencies',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TransitAgency',
+      '10': 'agencies'
+    },
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uri', '3': 3, '4': 1, '5': 9, '10': 'uri'},
     {'1': 'color', '3': 4, '4': 1, '5': 9, '10': 'color'},
     {'1': 'icon_uri', '3': 5, '4': 1, '5': 9, '10': 'iconUri'},
     {'1': 'name_short', '3': 6, '4': 1, '5': 9, '10': 'nameShort'},
     {'1': 'text_color', '3': 7, '4': 1, '5': 9, '10': 'textColor'},
-    {'1': 'vehicle', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TransitVehicle', '10': 'vehicle'},
+    {
+      '1': 'vehicle',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TransitVehicle',
+      '10': 'vehicle'
+    },
   ],
 };
 
@@ -57,7 +71,14 @@ const TransitStop$json = {
   '1': 'TransitStop',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'location', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Location', '10': 'location'},
+    {
+      '1': 'location',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Location',
+      '10': 'location'
+    },
   ],
 };
 
@@ -70,8 +91,22 @@ final $typed_data.Uint8List transitStopDescriptor = $convert.base64Decode(
 const TransitVehicle$json = {
   '1': 'TransitVehicle',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routing.v2.TransitVehicle.TransitVehicleType', '10': 'type'},
+    {
+      '1': 'name',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'name'
+    },
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.TransitVehicle.TransitVehicleType',
+      '10': 'type'
+    },
     {'1': 'icon_uri', '3': 3, '4': 1, '5': 9, '10': 'iconUri'},
     {'1': 'local_icon_uri', '3': 4, '4': 1, '5': 9, '10': 'localIconUri'},
   ],
@@ -116,4 +151,3 @@ final $typed_data.Uint8List transitVehicleDescriptor = $convert.base64Decode(
     'RSQUlOEAgSEQoNSU5URVJDSVRZX0JVUxAJEhcKE0xPTkdfRElTVEFOQ0VfVFJBSU4QChIOCgpN'
     'RVRST19SQUlMEAsSDAoITU9OT1JBSUwQDBIJCgVPVEhFUhANEggKBFJBSUwQDhIOCgpTSEFSRV'
     '9UQVhJEA8SCgoGU1VCV0FZEBASCAoEVFJBTRAREg4KClRST0xMRVlCVVMQEg==');
-

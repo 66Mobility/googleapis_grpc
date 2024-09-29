@@ -33,33 +33,42 @@ class AttestationNote_Hint extends $pb.GeneratedMessage {
     return $result;
   }
   AttestationNote_Hint._() : super();
-  factory AttestationNote_Hint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AttestationNote_Hint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AttestationNote_Hint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AttestationNote_Hint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttestationNote.Hint', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AttestationNote.Hint',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'humanReadableName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AttestationNote_Hint clone() => AttestationNote_Hint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AttestationNote_Hint copyWith(void Function(AttestationNote_Hint) updates) => super.copyWith((message) => updates(message as AttestationNote_Hint)) as AttestationNote_Hint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AttestationNote_Hint clone() =>
+      AttestationNote_Hint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AttestationNote_Hint copyWith(void Function(AttestationNote_Hint) updates) =>
+      super.copyWith((message) => updates(message as AttestationNote_Hint))
+          as AttestationNote_Hint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttestationNote_Hint create() => AttestationNote_Hint._();
   AttestationNote_Hint createEmptyInstance() => create();
-  static $pb.PbList<AttestationNote_Hint> createRepeated() => $pb.PbList<AttestationNote_Hint>();
+  static $pb.PbList<AttestationNote_Hint> createRepeated() =>
+      $pb.PbList<AttestationNote_Hint>();
   @$core.pragma('dart2js:noInline')
-  static AttestationNote_Hint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AttestationNote_Hint>(create);
+  static AttestationNote_Hint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AttestationNote_Hint>(create);
   static AttestationNote_Hint? _defaultInstance;
 
   /// Required. The human readable name of this attestation authority, for
@@ -67,7 +76,10 @@ class AttestationNote_Hint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get humanReadableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set humanReadableName($core.String v) { $_setString(0, v); }
+  set humanReadableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHumanReadableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -93,40 +105,52 @@ class AttestationNote extends $pb.GeneratedMessage {
     return $result;
   }
   AttestationNote._() : super();
-  factory AttestationNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AttestationNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AttestationNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AttestationNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttestationNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<AttestationNote_Hint>(1, _omitFieldNames ? '' : 'hint', subBuilder: AttestationNote_Hint.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AttestationNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<AttestationNote_Hint>(1, _omitFieldNames ? '' : 'hint',
+        subBuilder: AttestationNote_Hint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AttestationNote clone() => AttestationNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AttestationNote copyWith(void Function(AttestationNote) updates) => super.copyWith((message) => updates(message as AttestationNote)) as AttestationNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AttestationNote copyWith(void Function(AttestationNote) updates) =>
+      super.copyWith((message) => updates(message as AttestationNote))
+          as AttestationNote;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttestationNote create() => AttestationNote._();
   AttestationNote createEmptyInstance() => create();
-  static $pb.PbList<AttestationNote> createRepeated() => $pb.PbList<AttestationNote>();
+  static $pb.PbList<AttestationNote> createRepeated() =>
+      $pb.PbList<AttestationNote>();
   @$core.pragma('dart2js:noInline')
-  static AttestationNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AttestationNote>(create);
+  static AttestationNote getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AttestationNote>(create);
   static AttestationNote? _defaultInstance;
 
   /// Hint hints at the purpose of the attestation authority.
   @$pb.TagNumber(1)
   AttestationNote_Hint get hint => $_getN(0);
   @$pb.TagNumber(1)
-  set hint(AttestationNote_Hint v) { setField(1, v); }
+  set hint(AttestationNote_Hint v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHint() => $_has(0);
   @$pb.TagNumber(1)
@@ -146,24 +170,29 @@ class Jwt extends $pb.GeneratedMessage {
     return $result;
   }
   Jwt._() : super();
-  factory Jwt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Jwt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Jwt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Jwt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Jwt', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Jwt',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'compactJwt')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Jwt clone() => Jwt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Jwt copyWith(void Function(Jwt) updates) => super.copyWith((message) => updates(message as Jwt)) as Jwt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Jwt copyWith(void Function(Jwt) updates) =>
+      super.copyWith((message) => updates(message as Jwt)) as Jwt;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -172,7 +201,8 @@ class Jwt extends $pb.GeneratedMessage {
   Jwt createEmptyInstance() => create();
   static $pb.PbList<Jwt> createRepeated() => $pb.PbList<Jwt>();
   @$core.pragma('dart2js:noInline')
-  static Jwt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Jwt>(create);
+  static Jwt getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Jwt>(create);
   static Jwt? _defaultInstance;
 
   /// The compact encoding of a JWS, which is always three base64 encoded strings
@@ -181,7 +211,10 @@ class Jwt extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get compactJwt => $_getSZ(0);
   @$pb.TagNumber(1)
-  set compactJwt($core.String v) { $_setString(0, v); }
+  set compactJwt($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCompactJwt() => $_has(0);
   @$pb.TagNumber(1)
@@ -215,35 +248,49 @@ class AttestationOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   AttestationOccurrence._() : super();
-  factory AttestationOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AttestationOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AttestationOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AttestationOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttestationOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'serializedPayload', $pb.PbFieldType.OY)
-    ..pc<$556.Signature>(2, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $556.Signature.create)
-    ..pc<Jwt>(3, _omitFieldNames ? '' : 'jwts', $pb.PbFieldType.PM, subBuilder: Jwt.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AttestationOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'serializedPayload', $pb.PbFieldType.OY)
+    ..pc<$556.Signature>(
+        2, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM,
+        subBuilder: $556.Signature.create)
+    ..pc<Jwt>(3, _omitFieldNames ? '' : 'jwts', $pb.PbFieldType.PM,
+        subBuilder: Jwt.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AttestationOccurrence clone() => AttestationOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AttestationOccurrence copyWith(void Function(AttestationOccurrence) updates) => super.copyWith((message) => updates(message as AttestationOccurrence)) as AttestationOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AttestationOccurrence clone() =>
+      AttestationOccurrence()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AttestationOccurrence copyWith(
+          void Function(AttestationOccurrence) updates) =>
+      super.copyWith((message) => updates(message as AttestationOccurrence))
+          as AttestationOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttestationOccurrence create() => AttestationOccurrence._();
   AttestationOccurrence createEmptyInstance() => create();
-  static $pb.PbList<AttestationOccurrence> createRepeated() => $pb.PbList<AttestationOccurrence>();
+  static $pb.PbList<AttestationOccurrence> createRepeated() =>
+      $pb.PbList<AttestationOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static AttestationOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AttestationOccurrence>(create);
+  static AttestationOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AttestationOccurrence>(create);
   static AttestationOccurrence? _defaultInstance;
 
   /// Required. The serialized payload that is verified by one or more
@@ -251,7 +298,10 @@ class AttestationOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get serializedPayload => $_getN(0);
   @$pb.TagNumber(1)
-  set serializedPayload($core.List<$core.int> v) { $_setBytes(0, v); }
+  set serializedPayload($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSerializedPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -277,6 +327,6 @@ class AttestationOccurrence extends $pb.GeneratedMessage {
   $core.List<Jwt> get jwts => $_getList(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

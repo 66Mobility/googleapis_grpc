@@ -30,7 +30,14 @@ final $typed_data.Uint8List labelViewDescriptor = $convert.base64Decode(
 const WriteControl$json = {
   '1': 'WriteControl',
   '2': [
-    {'1': 'required_revision_id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'requiredRevisionId'},
+    {
+      '1': 'required_revision_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'requiredRevisionId'
+    },
   ],
   '8': [
     {'1': 'control'},
@@ -62,7 +69,15 @@ final $typed_data.Uint8List getUserCapabilitiesRequestDescriptor = $convert.base
 const CreateLabelRequest$json = {
   '1': 'CreateLabelRequest',
   '2': [
-    {'1': 'label', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label', '8': {}, '10': 'label'},
+    {
+      '1': 'label',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label',
+      '8': {},
+      '10': 'label'
+    },
     {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
     {'1': 'language_code', '3': 3, '4': 1, '5': 9, '10': 'languageCode'},
   ],
@@ -81,7 +96,14 @@ const GetLabelRequest$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
     {'1': 'language_code', '3': 3, '4': 1, '5': 9, '10': 'languageCode'},
-    {'1': 'view', '3': 4, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.LabelView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.LabelView',
+      '10': 'view'
+    },
   ],
 };
 
@@ -97,31 +119,174 @@ const DeltaUpdateLabelRequest$json = {
   '1': 'DeltaUpdateLabelRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'write_control', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.WriteControl', '10': 'writeControl'},
-    {'1': 'requests', '3': 3, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.Request', '10': 'requests'},
+    {
+      '1': 'write_control',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.WriteControl',
+      '10': 'writeControl'
+    },
+    {
+      '1': 'requests',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.Request',
+      '10': 'requests'
+    },
     {'1': 'use_admin_access', '3': 4, '4': 1, '5': 8, '10': 'useAdminAccess'},
-    {'1': 'view', '3': 5, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.LabelView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.LabelView',
+      '10': 'view'
+    },
     {'1': 'language_code', '3': 6, '4': 1, '5': 9, '10': 'languageCode'},
   ],
-  '3': [DeltaUpdateLabelRequest_Request$json, DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest$json, DeltaUpdateLabelRequest_DisableFieldRequest$json, DeltaUpdateLabelRequest_EnableFieldRequest$json, DeltaUpdateLabelRequest_DeleteFieldRequest$json, DeltaUpdateLabelRequest_CreateFieldRequest$json, DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest$json, DeltaUpdateLabelRequest_UpdateFieldTypeRequest$json, DeltaUpdateLabelRequest_CreateSelectionChoiceRequest$json, DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest$json, DeltaUpdateLabelRequest_DeleteSelectionChoiceRequest$json, DeltaUpdateLabelRequest_DisableSelectionChoiceRequest$json, DeltaUpdateLabelRequest_EnableSelectionChoiceRequest$json],
+  '3': [
+    DeltaUpdateLabelRequest_Request$json,
+    DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest$json,
+    DeltaUpdateLabelRequest_DisableFieldRequest$json,
+    DeltaUpdateLabelRequest_EnableFieldRequest$json,
+    DeltaUpdateLabelRequest_DeleteFieldRequest$json,
+    DeltaUpdateLabelRequest_CreateFieldRequest$json,
+    DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest$json,
+    DeltaUpdateLabelRequest_UpdateFieldTypeRequest$json,
+    DeltaUpdateLabelRequest_CreateSelectionChoiceRequest$json,
+    DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest$json,
+    DeltaUpdateLabelRequest_DeleteSelectionChoiceRequest$json,
+    DeltaUpdateLabelRequest_DisableSelectionChoiceRequest$json,
+    DeltaUpdateLabelRequest_EnableSelectionChoiceRequest$json
+  ],
 };
 
 @$core.Deprecated('Use deltaUpdateLabelRequestDescriptor instead')
 const DeltaUpdateLabelRequest_Request$json = {
   '1': 'Request',
   '2': [
-    {'1': 'update_label', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateLabelPropertiesRequest', '9': 0, '10': 'updateLabel'},
-    {'1': 'create_field', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.CreateFieldRequest', '9': 0, '10': 'createField'},
-    {'1': 'update_field', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateFieldPropertiesRequest', '9': 0, '10': 'updateField'},
-    {'1': 'update_field_type', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateFieldTypeRequest', '9': 0, '10': 'updateFieldType'},
-    {'1': 'enable_field', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.EnableFieldRequest', '9': 0, '10': 'enableField'},
-    {'1': 'disable_field', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DisableFieldRequest', '9': 0, '10': 'disableField'},
-    {'1': 'delete_field', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DeleteFieldRequest', '9': 0, '10': 'deleteField'},
-    {'1': 'create_selection_choice', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.CreateSelectionChoiceRequest', '9': 0, '10': 'createSelectionChoice'},
-    {'1': 'update_selection_choice_properties', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateSelectionChoicePropertiesRequest', '9': 0, '10': 'updateSelectionChoiceProperties'},
-    {'1': 'enable_selection_choice', '3': 10, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.EnableSelectionChoiceRequest', '9': 0, '10': 'enableSelectionChoice'},
-    {'1': 'disable_selection_choice', '3': 11, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DisableSelectionChoiceRequest', '9': 0, '10': 'disableSelectionChoice'},
-    {'1': 'delete_selection_choice', '3': 12, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DeleteSelectionChoiceRequest', '9': 0, '10': 'deleteSelectionChoice'},
+    {
+      '1': 'update_label',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateLabelPropertiesRequest',
+      '9': 0,
+      '10': 'updateLabel'
+    },
+    {
+      '1': 'create_field',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.CreateFieldRequest',
+      '9': 0,
+      '10': 'createField'
+    },
+    {
+      '1': 'update_field',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateFieldPropertiesRequest',
+      '9': 0,
+      '10': 'updateField'
+    },
+    {
+      '1': 'update_field_type',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateFieldTypeRequest',
+      '9': 0,
+      '10': 'updateFieldType'
+    },
+    {
+      '1': 'enable_field',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.EnableFieldRequest',
+      '9': 0,
+      '10': 'enableField'
+    },
+    {
+      '1': 'disable_field',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DisableFieldRequest',
+      '9': 0,
+      '10': 'disableField'
+    },
+    {
+      '1': 'delete_field',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DeleteFieldRequest',
+      '9': 0,
+      '10': 'deleteField'
+    },
+    {
+      '1': 'create_selection_choice',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.CreateSelectionChoiceRequest',
+      '9': 0,
+      '10': 'createSelectionChoice'
+    },
+    {
+      '1': 'update_selection_choice_properties',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.UpdateSelectionChoicePropertiesRequest',
+      '9': 0,
+      '10': 'updateSelectionChoiceProperties'
+    },
+    {
+      '1': 'enable_selection_choice',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.EnableSelectionChoiceRequest',
+      '9': 0,
+      '10': 'enableSelectionChoice'
+    },
+    {
+      '1': 'disable_selection_choice',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DisableSelectionChoiceRequest',
+      '9': 0,
+      '10': 'disableSelectionChoice'
+    },
+    {
+      '1': 'delete_selection_choice',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelRequest.DeleteSelectionChoiceRequest',
+      '9': 0,
+      '10': 'deleteSelectionChoice'
+    },
   ],
   '8': [
     {'1': 'kind'},
@@ -132,8 +297,23 @@ const DeltaUpdateLabelRequest_Request$json = {
 const DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest$json = {
   '1': 'UpdateLabelPropertiesRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'properties', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label.Properties', '8': {}, '10': 'properties'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'properties',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label.Properties',
+      '8': {},
+      '10': 'properties'
+    },
   ],
 };
 
@@ -141,9 +321,24 @@ const DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest$json = {
 const DeltaUpdateLabelRequest_DisableFieldRequest$json = {
   '1': 'DisableFieldRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'id'},
-    {'1': 'disabled_policy', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy', '8': {}, '10': 'disabledPolicy'},
+    {
+      '1': 'disabled_policy',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy',
+      '8': {},
+      '10': 'disabledPolicy'
+    },
   ],
 };
 
@@ -167,7 +362,15 @@ const DeltaUpdateLabelRequest_DeleteFieldRequest$json = {
 const DeltaUpdateLabelRequest_CreateFieldRequest$json = {
   '1': 'CreateFieldRequest',
   '2': [
-    {'1': 'field', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field', '8': {}, '10': 'field'},
+    {
+      '1': 'field',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field',
+      '8': {},
+      '10': 'field'
+    },
   ],
 };
 
@@ -175,9 +378,24 @@ const DeltaUpdateLabelRequest_CreateFieldRequest$json = {
 const DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest$json = {
   '1': 'UpdateFieldPropertiesRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'id'},
-    {'1': 'properties', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.Properties', '8': {}, '10': 'properties'},
+    {
+      '1': 'properties',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field.Properties',
+      '8': {},
+      '10': 'properties'
+    },
   ],
 };
 
@@ -185,12 +403,59 @@ const DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest$json = {
 const DeltaUpdateLabelRequest_UpdateFieldTypeRequest$json = {
   '1': 'UpdateFieldTypeRequest',
   '2': [
-    {'1': 'text_options', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.TextOptions', '9': 0, '10': 'textOptions'},
-    {'1': 'integer_options', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.IntegerOptions', '9': 0, '10': 'integerOptions'},
-    {'1': 'date_options', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.DateOptions', '9': 0, '10': 'dateOptions'},
-    {'1': 'selection_options', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.SelectionOptions', '9': 0, '10': 'selectionOptions'},
-    {'1': 'user_options', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.UserOptions', '9': 0, '10': 'userOptions'},
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'text_options',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field.TextOptions',
+      '9': 0,
+      '10': 'textOptions'
+    },
+    {
+      '1': 'integer_options',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field.IntegerOptions',
+      '9': 0,
+      '10': 'integerOptions'
+    },
+    {
+      '1': 'date_options',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field.DateOptions',
+      '9': 0,
+      '10': 'dateOptions'
+    },
+    {
+      '1': 'selection_options',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field.SelectionOptions',
+      '9': 0,
+      '10': 'selectionOptions'
+    },
+    {
+      '1': 'user_options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field.UserOptions',
+      '9': 0,
+      '10': 'userOptions'
+    },
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'id'},
   ],
   '8': [
@@ -203,7 +468,15 @@ const DeltaUpdateLabelRequest_CreateSelectionChoiceRequest$json = {
   '1': 'CreateSelectionChoiceRequest',
   '2': [
     {'1': 'field_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'fieldId'},
-    {'1': 'choice', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.SelectionOptions.Choice', '8': {}, '10': 'choice'},
+    {
+      '1': 'choice',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field.SelectionOptions.Choice',
+      '8': {},
+      '10': 'choice'
+    },
   ],
 };
 
@@ -211,10 +484,26 @@ const DeltaUpdateLabelRequest_CreateSelectionChoiceRequest$json = {
 const DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest$json = {
   '1': 'UpdateSelectionChoicePropertiesRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'field_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'fieldId'},
     {'1': 'id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'id'},
-    {'1': 'properties', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Field.SelectionOptions.Choice.Properties', '8': {}, '10': 'properties'},
+    {
+      '1': 'properties',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.Field.SelectionOptions.Choice.Properties',
+      '8': {},
+      '10': 'properties'
+    },
   ],
 };
 
@@ -231,10 +520,25 @@ const DeltaUpdateLabelRequest_DeleteSelectionChoiceRequest$json = {
 const DeltaUpdateLabelRequest_DisableSelectionChoiceRequest$json = {
   '1': 'DisableSelectionChoiceRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'field_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'fieldId'},
     {'1': 'id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'id'},
-    {'1': 'disabled_policy', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy', '8': {}, '10': 'disabledPolicy'},
+    {
+      '1': 'disabled_policy',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy',
+      '8': {},
+      '10': 'disabledPolicy'
+    },
   ],
 };
 
@@ -329,28 +633,164 @@ final $typed_data.Uint8List deltaUpdateLabelRequestDescriptor = $convert.base64D
 const DeltaUpdateLabelResponse$json = {
   '1': 'DeltaUpdateLabelResponse',
   '2': [
-    {'1': 'responses', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.Response', '10': 'responses'},
-    {'1': 'updated_label', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label', '10': 'updatedLabel'},
+    {
+      '1': 'responses',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.Response',
+      '10': 'responses'
+    },
+    {
+      '1': 'updated_label',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label',
+      '10': 'updatedLabel'
+    },
   ],
-  '3': [DeltaUpdateLabelResponse_Response$json, DeltaUpdateLabelResponse_UpdateLabelPropertiesResponse$json, DeltaUpdateLabelResponse_CreateFieldResponse$json, DeltaUpdateLabelResponse_UpdateFieldPropertiesResponse$json, DeltaUpdateLabelResponse_UpdateFieldTypeResponse$json, DeltaUpdateLabelResponse_EnableFieldResponse$json, DeltaUpdateLabelResponse_DisableFieldResponse$json, DeltaUpdateLabelResponse_DeleteFieldResponse$json, DeltaUpdateLabelResponse_CreateSelectionChoiceResponse$json, DeltaUpdateLabelResponse_UpdateSelectionChoicePropertiesResponse$json, DeltaUpdateLabelResponse_EnableSelectionChoiceResponse$json, DeltaUpdateLabelResponse_DisableSelectionChoiceResponse$json, DeltaUpdateLabelResponse_DeleteSelectionChoiceResponse$json],
+  '3': [
+    DeltaUpdateLabelResponse_Response$json,
+    DeltaUpdateLabelResponse_UpdateLabelPropertiesResponse$json,
+    DeltaUpdateLabelResponse_CreateFieldResponse$json,
+    DeltaUpdateLabelResponse_UpdateFieldPropertiesResponse$json,
+    DeltaUpdateLabelResponse_UpdateFieldTypeResponse$json,
+    DeltaUpdateLabelResponse_EnableFieldResponse$json,
+    DeltaUpdateLabelResponse_DisableFieldResponse$json,
+    DeltaUpdateLabelResponse_DeleteFieldResponse$json,
+    DeltaUpdateLabelResponse_CreateSelectionChoiceResponse$json,
+    DeltaUpdateLabelResponse_UpdateSelectionChoicePropertiesResponse$json,
+    DeltaUpdateLabelResponse_EnableSelectionChoiceResponse$json,
+    DeltaUpdateLabelResponse_DisableSelectionChoiceResponse$json,
+    DeltaUpdateLabelResponse_DeleteSelectionChoiceResponse$json
+  ],
 };
 
 @$core.Deprecated('Use deltaUpdateLabelResponseDescriptor instead')
 const DeltaUpdateLabelResponse_Response$json = {
   '1': 'Response',
   '2': [
-    {'1': 'update_label', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateLabelPropertiesResponse', '9': 0, '10': 'updateLabel'},
-    {'1': 'create_field', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.CreateFieldResponse', '9': 0, '10': 'createField'},
-    {'1': 'update_field', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateFieldPropertiesResponse', '9': 0, '10': 'updateField'},
-    {'1': 'update_field_type', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateFieldTypeResponse', '9': 0, '10': 'updateFieldType'},
-    {'1': 'enable_field', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.EnableFieldResponse', '9': 0, '10': 'enableField'},
-    {'1': 'disable_field', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DisableFieldResponse', '9': 0, '10': 'disableField'},
-    {'1': 'delete_field', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DeleteFieldResponse', '9': 0, '10': 'deleteField'},
-    {'1': 'create_selection_choice', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.CreateSelectionChoiceResponse', '9': 0, '10': 'createSelectionChoice'},
-    {'1': 'update_selection_choice_properties', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateSelectionChoicePropertiesResponse', '9': 0, '10': 'updateSelectionChoiceProperties'},
-    {'1': 'enable_selection_choice', '3': 10, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.EnableSelectionChoiceResponse', '9': 0, '10': 'enableSelectionChoice'},
-    {'1': 'disable_selection_choice', '3': 11, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DisableSelectionChoiceResponse', '9': 0, '10': 'disableSelectionChoice'},
-    {'1': 'delete_selection_choice', '3': 12, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DeleteSelectionChoiceResponse', '9': 0, '10': 'deleteSelectionChoice'},
+    {
+      '1': 'update_label',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateLabelPropertiesResponse',
+      '9': 0,
+      '10': 'updateLabel'
+    },
+    {
+      '1': 'create_field',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.CreateFieldResponse',
+      '9': 0,
+      '10': 'createField'
+    },
+    {
+      '1': 'update_field',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateFieldPropertiesResponse',
+      '9': 0,
+      '10': 'updateField'
+    },
+    {
+      '1': 'update_field_type',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateFieldTypeResponse',
+      '9': 0,
+      '10': 'updateFieldType'
+    },
+    {
+      '1': 'enable_field',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.EnableFieldResponse',
+      '9': 0,
+      '10': 'enableField'
+    },
+    {
+      '1': 'disable_field',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DisableFieldResponse',
+      '9': 0,
+      '10': 'disableField'
+    },
+    {
+      '1': 'delete_field',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DeleteFieldResponse',
+      '9': 0,
+      '10': 'deleteField'
+    },
+    {
+      '1': 'create_selection_choice',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.CreateSelectionChoiceResponse',
+      '9': 0,
+      '10': 'createSelectionChoice'
+    },
+    {
+      '1': 'update_selection_choice_properties',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.UpdateSelectionChoicePropertiesResponse',
+      '9': 0,
+      '10': 'updateSelectionChoiceProperties'
+    },
+    {
+      '1': 'enable_selection_choice',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.EnableSelectionChoiceResponse',
+      '9': 0,
+      '10': 'enableSelectionChoice'
+    },
+    {
+      '1': 'disable_selection_choice',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DisableSelectionChoiceResponse',
+      '9': 0,
+      '10': 'disableSelectionChoice'
+    },
+    {
+      '1': 'delete_selection_choice',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2.DeltaUpdateLabelResponse.DeleteSelectionChoiceResponse',
+      '9': 0,
+      '10': 'deleteSelectionChoice'
+    },
   ],
   '8': [
     {'1': 'response'},
@@ -481,10 +921,25 @@ const UpdateLabelCopyModeRequest$json = {
   '1': 'UpdateLabelCopyModeRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'copy_mode', '3': 2, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.Label.AppliedLabelPolicy.CopyMode', '8': {}, '10': 'copyMode'},
+    {
+      '1': 'copy_mode',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.Label.AppliedLabelPolicy.CopyMode',
+      '8': {},
+      '10': 'copyMode'
+    },
     {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
     {'1': 'language_code', '3': 4, '4': 1, '5': 9, '10': 'languageCode'},
-    {'1': 'view', '3': 5, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.LabelView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.LabelView',
+      '10': 'view'
+    },
   ],
 };
 
@@ -514,14 +969,36 @@ final $typed_data.Uint8List getLabelLimitsRequestDescriptor = $convert.base64Dec
 const ListLabelsRequest$json = {
   '1': 'ListLabelsRequest',
   '2': [
-    {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '9': 0, '10': 'useAdminAccess'},
-    {'1': 'minimum_role', '3': 4, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.LabelPermission.LabelRole', '9': 0, '10': 'minimumRole'},
+    {
+      '1': 'use_admin_access',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'useAdminAccess'
+    },
+    {
+      '1': 'minimum_role',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.LabelPermission.LabelRole',
+      '9': 0,
+      '10': 'minimumRole'
+    },
     {'1': 'published_only', '3': 1, '4': 1, '5': 8, '10': 'publishedOnly'},
     {'1': 'customer', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'customer'},
     {'1': 'language_code', '3': 5, '4': 1, '5': 9, '10': 'languageCode'},
     {'1': 'page_size', '3': 6, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 7, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'view', '3': 8, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.LabelView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.LabelView',
+      '10': 'view'
+    },
   ],
   '8': [
     {'1': 'access'},
@@ -543,7 +1020,14 @@ final $typed_data.Uint8List listLabelsRequestDescriptor = $convert.base64Decode(
 const ListLabelsResponse$json = {
   '1': 'ListLabelsResponse',
   '2': [
-    {'1': 'labels', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.Label', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label',
+      '10': 'labels'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -559,7 +1043,15 @@ const CreateLabelPermissionRequest$json = {
   '1': 'CreateLabelPermissionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'label_permission', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.LabelPermission', '8': {}, '10': 'labelPermission'},
+    {
+      '1': 'label_permission',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.LabelPermission',
+      '8': {},
+      '10': 'labelPermission'
+    },
     {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
@@ -594,23 +1086,39 @@ final $typed_data.Uint8List listLabelPermissionsRequestDescriptor = $convert.bas
 const ListLabelPermissionsResponse$json = {
   '1': 'ListLabelPermissionsResponse',
   '2': [
-    {'1': 'label_permissions', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.LabelPermission', '10': 'labelPermissions'},
+    {
+      '1': 'label_permissions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.LabelPermission',
+      '10': 'labelPermissions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListLabelPermissionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listLabelPermissionsResponseDescriptor = $convert.base64Decode(
-    'ChxMaXN0TGFiZWxQZXJtaXNzaW9uc1Jlc3BvbnNlElkKEWxhYmVsX3Blcm1pc3Npb25zGAEgAy'
-    'gLMiwuZ29vZ2xlLmFwcHMuZHJpdmUubGFiZWxzLnYyLkxhYmVsUGVybWlzc2lvblIQbGFiZWxQ'
-    'ZXJtaXNzaW9ucxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List listLabelPermissionsResponseDescriptor =
+    $convert.base64Decode(
+        'ChxMaXN0TGFiZWxQZXJtaXNzaW9uc1Jlc3BvbnNlElkKEWxhYmVsX3Blcm1pc3Npb25zGAEgAy'
+        'gLMiwuZ29vZ2xlLmFwcHMuZHJpdmUubGFiZWxzLnYyLkxhYmVsUGVybWlzc2lvblIQbGFiZWxQ'
+        'ZXJtaXNzaW9ucxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use updateLabelPermissionRequestDescriptor instead')
 const UpdateLabelPermissionRequest$json = {
   '1': 'UpdateLabelPermissionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'label_permission', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.LabelPermission', '8': {}, '10': 'labelPermission'},
+    {
+      '1': 'label_permission',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.LabelPermission',
+      '8': {},
+      '10': 'labelPermission'
+    },
     {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
@@ -633,70 +1141,119 @@ const DeleteLabelPermissionRequest$json = {
 };
 
 /// Descriptor for `DeleteLabelPermissionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteLabelPermissionRequestDescriptor = $convert.base64Decode(
-    'ChxEZWxldGVMYWJlbFBlcm1pc3Npb25SZXF1ZXN0EkYKBG5hbWUYASABKAlCMuBBAvpBLAoqZH'
-    'JpdmVsYWJlbHMuZ29vZ2xlYXBpcy5jb20vTGFiZWxQZXJtaXNzaW9uUgRuYW1lEigKEHVzZV9h'
-    'ZG1pbl9hY2Nlc3MYAiABKAhSDnVzZUFkbWluQWNjZXNz');
+final $typed_data.Uint8List deleteLabelPermissionRequestDescriptor =
+    $convert.base64Decode(
+        'ChxEZWxldGVMYWJlbFBlcm1pc3Npb25SZXF1ZXN0EkYKBG5hbWUYASABKAlCMuBBAvpBLAoqZH'
+        'JpdmVsYWJlbHMuZ29vZ2xlYXBpcy5jb20vTGFiZWxQZXJtaXNzaW9uUgRuYW1lEigKEHVzZV9h'
+        'ZG1pbl9hY2Nlc3MYAiABKAhSDnVzZUFkbWluQWNjZXNz');
 
 @$core.Deprecated('Use batchUpdateLabelPermissionsRequestDescriptor instead')
 const BatchUpdateLabelPermissionsRequest$json = {
   '1': 'BatchUpdateLabelPermissionsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'requests', '3': 2, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.UpdateLabelPermissionRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.UpdateLabelPermissionRequest',
+      '8': {},
+      '10': 'requests'
+    },
     {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
 
 /// Descriptor for `BatchUpdateLabelPermissionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchUpdateLabelPermissionsRequestDescriptor = $convert.base64Decode(
-    'CiJCYXRjaFVwZGF0ZUxhYmVsUGVybWlzc2lvbnNSZXF1ZXN0EkAKBnBhcmVudBgBIAEoCUIo4E'
-    'EC+kEiCiBkcml2ZWxhYmVscy5nb29nbGVhcGlzLmNvbS9MYWJlbFIGcGFyZW50EloKCHJlcXVl'
-    'c3RzGAIgAygLMjkuZ29vZ2xlLmFwcHMuZHJpdmUubGFiZWxzLnYyLlVwZGF0ZUxhYmVsUGVybW'
-    'lzc2lvblJlcXVlc3RCA+BBAlIIcmVxdWVzdHMSKAoQdXNlX2FkbWluX2FjY2VzcxgDIAEoCFIO'
-    'dXNlQWRtaW5BY2Nlc3M=');
+final $typed_data.Uint8List batchUpdateLabelPermissionsRequestDescriptor =
+    $convert.base64Decode(
+        'CiJCYXRjaFVwZGF0ZUxhYmVsUGVybWlzc2lvbnNSZXF1ZXN0EkAKBnBhcmVudBgBIAEoCUIo4E'
+        'EC+kEiCiBkcml2ZWxhYmVscy5nb29nbGVhcGlzLmNvbS9MYWJlbFIGcGFyZW50EloKCHJlcXVl'
+        'c3RzGAIgAygLMjkuZ29vZ2xlLmFwcHMuZHJpdmUubGFiZWxzLnYyLlVwZGF0ZUxhYmVsUGVybW'
+        'lzc2lvblJlcXVlc3RCA+BBAlIIcmVxdWVzdHMSKAoQdXNlX2FkbWluX2FjY2VzcxgDIAEoCFIO'
+        'dXNlQWRtaW5BY2Nlc3M=');
 
 @$core.Deprecated('Use batchUpdateLabelPermissionsResponseDescriptor instead')
 const BatchUpdateLabelPermissionsResponse$json = {
   '1': 'BatchUpdateLabelPermissionsResponse',
   '2': [
-    {'1': 'permissions', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.LabelPermission', '8': {}, '10': 'permissions'},
+    {
+      '1': 'permissions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.LabelPermission',
+      '8': {},
+      '10': 'permissions'
+    },
   ],
 };
 
 /// Descriptor for `BatchUpdateLabelPermissionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchUpdateLabelPermissionsResponseDescriptor = $convert.base64Decode(
-    'CiNCYXRjaFVwZGF0ZUxhYmVsUGVybWlzc2lvbnNSZXNwb25zZRJTCgtwZXJtaXNzaW9ucxgBIA'
-    'MoCzIsLmdvb2dsZS5hcHBzLmRyaXZlLmxhYmVscy52Mi5MYWJlbFBlcm1pc3Npb25CA+BBAlIL'
-    'cGVybWlzc2lvbnM=');
+final $typed_data.Uint8List batchUpdateLabelPermissionsResponseDescriptor =
+    $convert.base64Decode(
+        'CiNCYXRjaFVwZGF0ZUxhYmVsUGVybWlzc2lvbnNSZXNwb25zZRJTCgtwZXJtaXNzaW9ucxgBIA'
+        'MoCzIsLmdvb2dsZS5hcHBzLmRyaXZlLmxhYmVscy52Mi5MYWJlbFBlcm1pc3Npb25CA+BBAlIL'
+        'cGVybWlzc2lvbnM=');
 
 @$core.Deprecated('Use batchDeleteLabelPermissionsRequestDescriptor instead')
 const BatchDeleteLabelPermissionsRequest$json = {
   '1': 'BatchDeleteLabelPermissionsRequest',
   '2': [
-    {'1': 'requests', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.DeleteLabelPermissionRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.DeleteLabelPermissionRequest',
+      '8': {},
+      '10': 'requests'
+    },
     {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
   ],
 };
 
 /// Descriptor for `BatchDeleteLabelPermissionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchDeleteLabelPermissionsRequestDescriptor = $convert.base64Decode(
-    'CiJCYXRjaERlbGV0ZUxhYmVsUGVybWlzc2lvbnNSZXF1ZXN0EloKCHJlcXVlc3RzGAEgAygLMj'
-    'kuZ29vZ2xlLmFwcHMuZHJpdmUubGFiZWxzLnYyLkRlbGV0ZUxhYmVsUGVybWlzc2lvblJlcXVl'
-    'c3RCA+BBAlIIcmVxdWVzdHMSKAoQdXNlX2FkbWluX2FjY2VzcxgCIAEoCFIOdXNlQWRtaW5BY2'
-    'Nlc3MSQAoGcGFyZW50GAMgASgJQijgQQL6QSIKIGRyaXZlbGFiZWxzLmdvb2dsZWFwaXMuY29t'
-    'L0xhYmVsUgZwYXJlbnQ=');
+final $typed_data.Uint8List batchDeleteLabelPermissionsRequestDescriptor =
+    $convert.base64Decode(
+        'CiJCYXRjaERlbGV0ZUxhYmVsUGVybWlzc2lvbnNSZXF1ZXN0EloKCHJlcXVlc3RzGAEgAygLMj'
+        'kuZ29vZ2xlLmFwcHMuZHJpdmUubGFiZWxzLnYyLkRlbGV0ZUxhYmVsUGVybWlzc2lvblJlcXVl'
+        'c3RCA+BBAlIIcmVxdWVzdHMSKAoQdXNlX2FkbWluX2FjY2VzcxgCIAEoCFIOdXNlQWRtaW5BY2'
+        'Nlc3MSQAoGcGFyZW50GAMgASgJQijgQQL6QSIKIGRyaXZlbGFiZWxzLmdvb2dsZWFwaXMuY29t'
+        'L0xhYmVsUgZwYXJlbnQ=');
 
 @$core.Deprecated('Use disableLabelRequestDescriptor instead')
 const DisableLabelRequest$json = {
   '1': 'DisableLabelRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
-    {'1': 'write_control', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.WriteControl', '10': 'writeControl'},
-    {'1': 'disabled_policy', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy', '10': 'disabledPolicy'},
+    {
+      '1': 'write_control',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.WriteControl',
+      '10': 'writeControl'
+    },
+    {
+      '1': 'disabled_policy',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy',
+      '10': 'disabledPolicy'
+    },
     {'1': 'language_code', '3': 6, '4': 1, '5': 9, '10': 'languageCode'},
   ],
 };
@@ -718,7 +1275,14 @@ const PublishLabelRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
-    {'1': 'write_control', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.WriteControl', '10': 'writeControl'},
+    {
+      '1': 'write_control',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.WriteControl',
+      '10': 'writeControl'
+    },
     {'1': 'language_code', '3': 4, '4': 1, '5': 9, '10': 'languageCode'},
   ],
 };
@@ -737,7 +1301,14 @@ const EnableLabelRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
-    {'1': 'write_control', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.WriteControl', '10': 'writeControl'},
+    {
+      '1': 'write_control',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.WriteControl',
+      '10': 'writeControl'
+    },
     {'1': 'language_code', '3': 4, '4': 1, '5': 9, '10': 'languageCode'},
   ],
 };
@@ -756,7 +1327,14 @@ const DeleteLabelRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
-    {'1': 'write_control', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.WriteControl', '10': 'writeControl'},
+    {
+      '1': 'write_control',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.WriteControl',
+      '10': 'writeControl'
+    },
   ],
 };
 
@@ -787,7 +1365,14 @@ final $typed_data.Uint8List listLabelLocksRequestDescriptor = $convert.base64Dec
 const ListLabelLocksResponse$json = {
   '1': 'ListLabelLocksResponse',
   '2': [
-    {'1': 'label_locks', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.LabelLock', '10': 'labelLocks'},
+    {
+      '1': 'label_locks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.LabelLock',
+      '10': 'labelLocks'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -797,4 +1382,3 @@ final $typed_data.Uint8List listLabelLocksResponseDescriptor = $convert.base64De
     'ChZMaXN0TGFiZWxMb2Nrc1Jlc3BvbnNlEkcKC2xhYmVsX2xvY2tzGAEgAygLMiYuZ29vZ2xlLm'
     'FwcHMuZHJpdmUubGFiZWxzLnYyLkxhYmVsTG9ja1IKbGFiZWxMb2NrcxImCg9uZXh0X3BhZ2Vf'
     'dG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
-

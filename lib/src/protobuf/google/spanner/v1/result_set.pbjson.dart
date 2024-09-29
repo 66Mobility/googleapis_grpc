@@ -17,9 +17,30 @@ import 'dart:typed_data' as $typed_data;
 const ResultSet$json = {
   '1': 'ResultSet',
   '2': [
-    {'1': 'metadata', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.ResultSetMetadata', '10': 'metadata'},
-    {'1': 'rows', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.ListValue', '10': 'rows'},
-    {'1': 'stats', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.ResultSetStats', '10': 'stats'},
+    {
+      '1': 'metadata',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.ResultSetMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'rows',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'rows'
+    },
+    {
+      '1': 'stats',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.ResultSetStats',
+      '10': 'stats'
+    },
   ],
 };
 
@@ -34,11 +55,32 @@ final $typed_data.Uint8List resultSetDescriptor = $convert.base64Decode(
 const PartialResultSet$json = {
   '1': 'PartialResultSet',
   '2': [
-    {'1': 'metadata', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.ResultSetMetadata', '10': 'metadata'},
-    {'1': 'values', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.Value', '10': 'values'},
+    {
+      '1': 'metadata',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.ResultSetMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'values',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'values'
+    },
     {'1': 'chunked_value', '3': 3, '4': 1, '5': 8, '10': 'chunkedValue'},
     {'1': 'resume_token', '3': 4, '4': 1, '5': 12, '10': 'resumeToken'},
-    {'1': 'stats', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.v1.ResultSetStats', '10': 'stats'},
+    {
+      '1': 'stats',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.ResultSetStats',
+      '10': 'stats'
+    },
   ],
 };
 
@@ -54,9 +96,30 @@ final $typed_data.Uint8List partialResultSetDescriptor = $convert.base64Decode(
 const ResultSetMetadata$json = {
   '1': 'ResultSetMetadata',
   '2': [
-    {'1': 'row_type', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.StructType', '10': 'rowType'},
-    {'1': 'transaction', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Transaction', '10': 'transaction'},
-    {'1': 'undeclared_parameters', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.StructType', '10': 'undeclaredParameters'},
+    {
+      '1': 'row_type',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.StructType',
+      '10': 'rowType'
+    },
+    {
+      '1': 'transaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Transaction',
+      '10': 'transaction'
+    },
+    {
+      '1': 'undeclared_parameters',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.StructType',
+      '10': 'undeclaredParameters'
+    },
   ],
 };
 
@@ -72,10 +135,38 @@ final $typed_data.Uint8List resultSetMetadataDescriptor = $convert.base64Decode(
 const ResultSetStats$json = {
   '1': 'ResultSetStats',
   '2': [
-    {'1': 'query_plan', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.QueryPlan', '10': 'queryPlan'},
-    {'1': 'query_stats', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'queryStats'},
-    {'1': 'row_count_exact', '3': 3, '4': 1, '5': 3, '9': 0, '10': 'rowCountExact'},
-    {'1': 'row_count_lower_bound', '3': 4, '4': 1, '5': 3, '9': 0, '10': 'rowCountLowerBound'},
+    {
+      '1': 'query_plan',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.QueryPlan',
+      '10': 'queryPlan'
+    },
+    {
+      '1': 'query_stats',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'queryStats'
+    },
+    {
+      '1': 'row_count_exact',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'rowCountExact'
+    },
+    {
+      '1': 'row_count_lower_bound',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'rowCountLowerBound'
+    },
   ],
   '8': [
     {'1': 'row_count'},
@@ -89,4 +180,3 @@ final $typed_data.Uint8List resultSetStatsDescriptor = $convert.base64Decode(
     'dG9idWYuU3RydWN0UgpxdWVyeVN0YXRzEigKD3Jvd19jb3VudF9leGFjdBgDIAEoA0gAUg1yb3'
     'dDb3VudEV4YWN0EjMKFXJvd19jb3VudF9sb3dlcl9ib3VuZBgEIAEoA0gAUhJyb3dDb3VudExv'
     'd2VyQm91bmRCCwoJcm93X2NvdW50');
-

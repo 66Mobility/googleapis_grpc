@@ -17,21 +17,26 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// and longitude) correspond to its center-point, or to its location snapped
 /// to the sidewalk of the nearest road.
 class SpacingOptions_PointType extends $pb.ProtobufEnum {
-  static const SpacingOptions_PointType POINT_TYPE_UNSPECIFIED = SpacingOptions_PointType._(0, _omitEnumNames ? '' : 'POINT_TYPE_UNSPECIFIED');
-  static const SpacingOptions_PointType CENTER_POINT = SpacingOptions_PointType._(1, _omitEnumNames ? '' : 'CENTER_POINT');
-  static const SpacingOptions_PointType SNAPPED_POINT = SpacingOptions_PointType._(2, _omitEnumNames ? '' : 'SNAPPED_POINT');
+  static const SpacingOptions_PointType POINT_TYPE_UNSPECIFIED =
+      SpacingOptions_PointType._(
+          0, _omitEnumNames ? '' : 'POINT_TYPE_UNSPECIFIED');
+  static const SpacingOptions_PointType CENTER_POINT =
+      SpacingOptions_PointType._(1, _omitEnumNames ? '' : 'CENTER_POINT');
+  static const SpacingOptions_PointType SNAPPED_POINT =
+      SpacingOptions_PointType._(2, _omitEnumNames ? '' : 'SNAPPED_POINT');
 
-  static const $core.List<SpacingOptions_PointType> values = <SpacingOptions_PointType> [
+  static const $core.List<SpacingOptions_PointType> values =
+      <SpacingOptions_PointType>[
     POINT_TYPE_UNSPECIFIED,
     CENTER_POINT,
     SNAPPED_POINT,
   ];
 
-  static final $core.Map<$core.int, SpacingOptions_PointType> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, SpacingOptions_PointType> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static SpacingOptions_PointType? valueOf($core.int value) => _byValue[value];
 
   const SpacingOptions_PointType._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

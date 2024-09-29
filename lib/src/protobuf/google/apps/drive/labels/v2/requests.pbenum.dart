@@ -17,19 +17,21 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// `LABEL_VIEW_BASIC` implies the field mask:
 /// `name,id,revision_id,label_type,properties.*`\
 class LabelView extends $pb.ProtobufEnum {
-  static const LabelView LABEL_VIEW_BASIC = LabelView._(0, _omitEnumNames ? '' : 'LABEL_VIEW_BASIC');
-  static const LabelView LABEL_VIEW_FULL = LabelView._(1, _omitEnumNames ? '' : 'LABEL_VIEW_FULL');
+  static const LabelView LABEL_VIEW_BASIC =
+      LabelView._(0, _omitEnumNames ? '' : 'LABEL_VIEW_BASIC');
+  static const LabelView LABEL_VIEW_FULL =
+      LabelView._(1, _omitEnumNames ? '' : 'LABEL_VIEW_FULL');
 
-  static const $core.List<LabelView> values = <LabelView> [
+  static const $core.List<LabelView> values = <LabelView>[
     LABEL_VIEW_BASIC,
     LABEL_VIEW_FULL,
   ];
 
-  static final $core.Map<$core.int, LabelView> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, LabelView> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static LabelView? valueOf($core.int value) => _byValue[value];
 
   const LabelView._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

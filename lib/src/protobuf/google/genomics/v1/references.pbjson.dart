@@ -22,7 +22,13 @@ const Reference$json = {
     {'1': 'md5checksum', '3': 3, '4': 1, '5': 9, '10': 'md5checksum'},
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
     {'1': 'source_uri', '3': 5, '4': 1, '5': 9, '10': 'sourceUri'},
-    {'1': 'source_accessions', '3': 6, '4': 3, '5': 9, '10': 'sourceAccessions'},
+    {
+      '1': 'source_accessions',
+      '3': 6,
+      '4': 3,
+      '5': 9,
+      '10': 'sourceAccessions'
+    },
     {'1': 'ncbi_taxon_id', '3': 7, '4': 1, '5': 5, '10': 'ncbiTaxonId'},
   ],
 };
@@ -45,7 +51,13 @@ const ReferenceSet$json = {
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'assembly_id', '3': 6, '4': 1, '5': 9, '10': 'assemblyId'},
     {'1': 'source_uri', '3': 7, '4': 1, '5': 9, '10': 'sourceUri'},
-    {'1': 'source_accessions', '3': 8, '4': 3, '5': 9, '10': 'sourceAccessions'},
+    {
+      '1': 'source_accessions',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '10': 'sourceAccessions'
+    },
   ],
 };
 
@@ -81,16 +93,24 @@ final $typed_data.Uint8List searchReferenceSetsRequestDescriptor = $convert.base
 const SearchReferenceSetsResponse$json = {
   '1': 'SearchReferenceSetsResponse',
   '2': [
-    {'1': 'reference_sets', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.ReferenceSet', '10': 'referenceSets'},
+    {
+      '1': 'reference_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.ReferenceSet',
+      '10': 'referenceSets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `SearchReferenceSetsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List searchReferenceSetsResponseDescriptor = $convert.base64Decode(
-    'ChtTZWFyY2hSZWZlcmVuY2VTZXRzUmVzcG9uc2USRwoOcmVmZXJlbmNlX3NldHMYASADKAsyIC'
-    '5nb29nbGUuZ2Vub21pY3MudjEuUmVmZXJlbmNlU2V0Ug1yZWZlcmVuY2VTZXRzEiYKD25leHRf'
-    'cGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List searchReferenceSetsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtTZWFyY2hSZWZlcmVuY2VTZXRzUmVzcG9uc2USRwoOcmVmZXJlbmNlX3NldHMYASADKAsyIC'
+        '5nb29nbGUuZ2Vub21pY3MudjEuUmVmZXJlbmNlU2V0Ug1yZWZlcmVuY2VTZXRzEiYKD25leHRf'
+        'cGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use getReferenceSetRequestDescriptor instead')
 const GetReferenceSetRequest$json = {
@@ -101,9 +121,10 @@ const GetReferenceSetRequest$json = {
 };
 
 /// Descriptor for `GetReferenceSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getReferenceSetRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRSZWZlcmVuY2VTZXRSZXF1ZXN0EigKEHJlZmVyZW5jZV9zZXRfaWQYASABKAlSDnJlZm'
-    'VyZW5jZVNldElk');
+final $typed_data.Uint8List getReferenceSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRSZWZlcmVuY2VTZXRSZXF1ZXN0EigKEHJlZmVyZW5jZV9zZXRfaWQYASABKAlSDnJlZm'
+        'VyZW5jZVNldElk');
 
 @$core.Deprecated('Use searchReferencesRequestDescriptor instead')
 const SearchReferencesRequest$json = {
@@ -128,7 +149,14 @@ final $typed_data.Uint8List searchReferencesRequestDescriptor = $convert.base64D
 const SearchReferencesResponse$json = {
   '1': 'SearchReferencesResponse',
   '2': [
-    {'1': 'references', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Reference', '10': 'references'},
+    {
+      '1': 'references',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Reference',
+      '10': 'references'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -184,4 +212,3 @@ const ListBasesResponse$json = {
 final $typed_data.Uint8List listBasesResponseDescriptor = $convert.base64Decode(
     'ChFMaXN0QmFzZXNSZXNwb25zZRIWCgZvZmZzZXQYASABKANSBm9mZnNldBIaCghzZXF1ZW5jZR'
     'gCIAEoCVIIc2VxdWVuY2USJgoPbmV4dF9wYWdlX3Rva2VuGAMgASgJUg1uZXh0UGFnZVRva2Vu');
-

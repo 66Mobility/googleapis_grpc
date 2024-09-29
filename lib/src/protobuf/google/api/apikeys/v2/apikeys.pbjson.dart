@@ -18,7 +18,15 @@ const CreateKeyRequest$json = {
   '1': 'CreateKeyRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.google.api.apikeys.v2.Key', '8': {}, '10': 'key'},
+    {
+      '1': 'key',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.Key',
+      '8': {},
+      '10': 'key'
+    },
     {'1': 'key_id', '3': 3, '4': 1, '5': 9, '10': 'keyId'},
   ],
 };
@@ -51,7 +59,14 @@ final $typed_data.Uint8List listKeysRequestDescriptor = $convert.base64Decode(
 const ListKeysResponse$json = {
   '1': 'ListKeysResponse',
   '2': [
-    {'1': 'keys', '3': 1, '4': 3, '5': 11, '6': '.google.api.apikeys.v2.Key', '10': 'keys'},
+    {
+      '1': 'keys',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.Key',
+      '10': 'keys'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -103,8 +118,23 @@ final $typed_data.Uint8List getKeyStringResponseDescriptor = $convert.base64Deco
 const UpdateKeyRequest$json = {
   '1': 'UpdateKeyRequest',
   '2': [
-    {'1': 'key', '3': 1, '4': 1, '5': 11, '6': '.google.api.apikeys.v2.Key', '8': {}, '10': 'key'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'key',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.apikeys.v2.Key',
+      '8': {},
+      '10': 'key'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -166,4 +196,3 @@ const LookupKeyResponse$json = {
 final $typed_data.Uint8List lookupKeyResponseDescriptor = $convert.base64Decode(
     'ChFMb29rdXBLZXlSZXNwb25zZRIWCgZwYXJlbnQYASABKAlSBnBhcmVudBISCgRuYW1lGAIgAS'
     'gJUgRuYW1l');
-

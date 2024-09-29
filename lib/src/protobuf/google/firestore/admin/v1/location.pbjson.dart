@@ -19,6 +19,5 @@ const LocationMetadata$json = {
 };
 
 /// Descriptor for `LocationMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List locationMetadataDescriptor = $convert.base64Decode(
-    'ChBMb2NhdGlvbk1ldGFkYXRh');
-
+final $typed_data.Uint8List locationMetadataDescriptor =
+    $convert.base64Decode('ChBMb2NhdGlvbk1ldGFkYXRh');

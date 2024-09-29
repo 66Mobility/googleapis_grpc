@@ -38,7 +38,14 @@ const AwsS3ObjectMetadata$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'object_key', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'objectKey'},
-    {'1': 'last_modified_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastModifiedTime'},
+    {
+      '1': 'last_modified_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastModifiedTime'
+    },
     {'1': 'md5', '3': 4, '4': 1, '5': 9, '10': 'md5'},
     {'1': 'size', '3': 5, '4': 1, '5': 3, '8': {}, '10': 'size'},
   ],
@@ -71,7 +78,14 @@ const GcsObjectMetadata$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'object_key', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'objectKey'},
-    {'1': 'last_modified_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastModifiedTime'},
+    {
+      '1': 'last_modified_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastModifiedTime'
+    },
     {'1': 'md5', '3': 4, '4': 1, '5': 9, '10': 'md5'},
     {'1': 'crc32c', '3': 5, '4': 1, '5': 9, '10': 'crc32c'},
     {'1': 'size', '3': 6, '4': 1, '5': 3, '8': {}, '10': 'size'},
@@ -107,7 +121,14 @@ const AzureBlobMetadata$json = {
     {'1': 'account', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'account'},
     {'1': 'container', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'container'},
     {'1': 'blob_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'blobName'},
-    {'1': 'last_modified_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastModifiedTime'},
+    {
+      '1': 'last_modified_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastModifiedTime'
+    },
     {'1': 'md5', '3': 5, '4': 1, '5': 9, '10': 'md5'},
     {'1': 'size', '3': 6, '4': 1, '5': 3, '8': {}, '10': 'size'},
   ],
@@ -132,17 +153,25 @@ const AzureBlobContainerMetadata$json = {
 };
 
 /// Descriptor for `AzureBlobContainerMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List azureBlobContainerMetadataDescriptor = $convert.base64Decode(
-    'ChpBenVyZUJsb2JDb250YWluZXJNZXRhZGF0YRIdCgdhY2NvdW50GAEgASgJQgPgQQJSB2FjY2'
-    '91bnQSIQoJY29udGFpbmVyGAIgASgJQgPgQQJSCWNvbnRhaW5lchISCgRwYXRoGAMgASgJUgRw'
-    'YXRo');
+final $typed_data.Uint8List azureBlobContainerMetadataDescriptor =
+    $convert.base64Decode(
+        'ChpBenVyZUJsb2JDb250YWluZXJNZXRhZGF0YRIdCgdhY2NvdW50GAEgASgJQgPgQQJSB2FjY2'
+        '91bnQSIQoJY29udGFpbmVyGAIgASgJQgPgQQJSCWNvbnRhaW5lchISCgRwYXRoGAMgASgJUgRw'
+        'YXRo');
 
 @$core.Deprecated('Use posixFileMetadataDescriptor instead')
 const PosixFileMetadata$json = {
   '1': 'PosixFileMetadata',
   '2': [
     {'1': 'path', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'path'},
-    {'1': 'last_modified_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastModifiedTime'},
+    {
+      '1': 'last_modified_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastModifiedTime'
+    },
     {'1': 'crc32c', '3': 3, '4': 1, '5': 9, '10': 'crc32c'},
     {'1': 'size', '3': 4, '4': 1, '5': 3, '8': {}, '10': 'size'},
   ],
@@ -179,19 +208,68 @@ const HttpManifestMetadata$json = {
 };
 
 /// Descriptor for `HttpManifestMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List httpManifestMetadataDescriptor = $convert.base64Decode(
-    'ChRIdHRwTWFuaWZlc3RNZXRhZGF0YRIVCgN1cmwYASABKAlCA+BBAlIDdXJs');
+final $typed_data.Uint8List httpManifestMetadataDescriptor =
+    $convert.base64Decode(
+        'ChRIdHRwTWFuaWZlc3RNZXRhZGF0YRIVCgN1cmwYASABKAlCA+BBAlIDdXJs');
 
 @$core.Deprecated('Use objectMetadataDescriptor instead')
 const ObjectMetadata$json = {
   '1': 'ObjectMetadata',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.storagetransfer.logging.StorageSystemType', '8': {}, '10': 'type'},
-    {'1': 'aws_s3_object', '3': 3, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.AwsS3ObjectMetadata', '9': 0, '10': 'awsS3Object'},
-    {'1': 'azure_blob', '3': 4, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.AzureBlobMetadata', '9': 0, '10': 'azureBlob'},
-    {'1': 'gcs_object', '3': 5, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.GcsObjectMetadata', '9': 0, '10': 'gcsObject'},
-    {'1': 'posix_file', '3': 6, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.PosixFileMetadata', '9': 0, '10': 'posixFile'},
-    {'1': 'http_file', '3': 7, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.HttpFileMetadata', '9': 0, '10': 'httpFile'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.logging.StorageSystemType',
+      '8': {},
+      '10': 'type'
+    },
+    {
+      '1': 'aws_s3_object',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.AwsS3ObjectMetadata',
+      '9': 0,
+      '10': 'awsS3Object'
+    },
+    {
+      '1': 'azure_blob',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.AzureBlobMetadata',
+      '9': 0,
+      '10': 'azureBlob'
+    },
+    {
+      '1': 'gcs_object',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.GcsObjectMetadata',
+      '9': 0,
+      '10': 'gcsObject'
+    },
+    {
+      '1': 'posix_file',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.PosixFileMetadata',
+      '9': 0,
+      '10': 'posixFile'
+    },
+    {
+      '1': 'http_file',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.HttpFileMetadata',
+      '9': 0,
+      '10': 'httpFile'
+    },
   ],
   '8': [
     {'1': 'metadata'},
@@ -215,12 +293,60 @@ final $typed_data.Uint8List objectMetadataDescriptor = $convert.base64Decode(
 const ContainerMetadata$json = {
   '1': 'ContainerMetadata',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.storagetransfer.logging.StorageSystemType', '8': {}, '10': 'type'},
-    {'1': 'aws_s3_bucket', '3': 3, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.AwsS3BucketMetadata', '9': 0, '10': 'awsS3Bucket'},
-    {'1': 'azure_blob_container', '3': 4, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.AzureBlobContainerMetadata', '9': 0, '10': 'azureBlobContainer'},
-    {'1': 'gcs_bucket', '3': 5, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.GcsBucketMetadata', '9': 0, '10': 'gcsBucket'},
-    {'1': 'posix_directory', '3': 6, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.PosixFileMetadata', '9': 0, '10': 'posixDirectory'},
-    {'1': 'http_manifest', '3': 7, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.HttpManifestMetadata', '9': 0, '10': 'httpManifest'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.logging.StorageSystemType',
+      '8': {},
+      '10': 'type'
+    },
+    {
+      '1': 'aws_s3_bucket',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.AwsS3BucketMetadata',
+      '9': 0,
+      '10': 'awsS3Bucket'
+    },
+    {
+      '1': 'azure_blob_container',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.AzureBlobContainerMetadata',
+      '9': 0,
+      '10': 'azureBlobContainer'
+    },
+    {
+      '1': 'gcs_bucket',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.GcsBucketMetadata',
+      '9': 0,
+      '10': 'gcsBucket'
+    },
+    {
+      '1': 'posix_directory',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.PosixFileMetadata',
+      '9': 0,
+      '10': 'posixDirectory'
+    },
+    {
+      '1': 'http_manifest',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.HttpManifestMetadata',
+      '9': 0,
+      '10': 'httpManifest'
+    },
   ],
   '8': [
     {'1': 'metadata'},
@@ -246,13 +372,65 @@ const TransferActivityLog$json = {
   '1': 'TransferActivityLog',
   '2': [
     {'1': 'operation', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'operation'},
-    {'1': 'action', '3': 2, '4': 1, '5': 14, '6': '.google.storagetransfer.logging.TransferActivityLog.Action', '8': {}, '10': 'action'},
-    {'1': 'status', '3': 3, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.TransferActivityLog.Status', '8': {}, '10': 'status'},
-    {'1': 'source_container', '3': 4, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.ContainerMetadata', '10': 'sourceContainer'},
-    {'1': 'destination_container', '3': 5, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.ContainerMetadata', '10': 'destinationContainer'},
-    {'1': 'source_object', '3': 6, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.ObjectMetadata', '10': 'sourceObject'},
-    {'1': 'destination_object', '3': 7, '4': 1, '5': 11, '6': '.google.storagetransfer.logging.ObjectMetadata', '10': 'destinationObject'},
-    {'1': 'complete_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'completeTime'},
+    {
+      '1': 'action',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.logging.TransferActivityLog.Action',
+      '8': {},
+      '10': 'action'
+    },
+    {
+      '1': 'status',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.TransferActivityLog.Status',
+      '8': {},
+      '10': 'status'
+    },
+    {
+      '1': 'source_container',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.ContainerMetadata',
+      '10': 'sourceContainer'
+    },
+    {
+      '1': 'destination_container',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.ContainerMetadata',
+      '10': 'destinationContainer'
+    },
+    {
+      '1': 'source_object',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.ObjectMetadata',
+      '10': 'sourceObject'
+    },
+    {
+      '1': 'destination_object',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.logging.ObjectMetadata',
+      '10': 'destinationObject'
+    },
+    {
+      '1': 'complete_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'completeTime'
+    },
   ],
   '3': [TransferActivityLog_Status$json],
   '4': [TransferActivityLog_Action$json],
@@ -297,4 +475,3 @@ final $typed_data.Uint8List transferActivityLogDescriptor = $convert.base64Decod
     'RhdHVzQ29kZRIdCgplcnJvcl90eXBlGAIgASgJUgllcnJvclR5cGUSIwoNZXJyb3JfbWVzc2Fn'
     'ZRgDIAEoCVIMZXJyb3JNZXNzYWdlIkAKBkFjdGlvbhIWChJBQ1RJT05fVU5TUEVDSUZJRUQQAB'
     'IICgRGSU5EEAESCAoEQ09QWRACEgoKBkRFTEVURRAD');
-

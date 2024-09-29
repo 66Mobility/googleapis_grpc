@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const FuelOptions$json = {
   '1': 'FuelOptions',
   '2': [
-    {'1': 'fuel_prices', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.FuelOptions.FuelPrice', '10': 'fuelPrices'},
+    {
+      '1': 'fuel_prices',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.FuelOptions.FuelPrice',
+      '10': 'fuelPrices'
+    },
   ],
   '3': [FuelOptions_FuelPrice$json],
 };
@@ -26,9 +33,30 @@ const FuelOptions$json = {
 const FuelOptions_FuelPrice$json = {
   '1': 'FuelPrice',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.maps.places.v1.FuelOptions.FuelPrice.FuelType', '10': 'type'},
-    {'1': 'price', '3': 2, '4': 1, '5': 11, '6': '.google.type.Money', '10': 'price'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.FuelOptions.FuelPrice.FuelType',
+      '10': 'type'
+    },
+    {
+      '1': 'price',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Money',
+      '10': 'price'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
   '4': [FuelOptions_FuelPrice_FuelType$json],
 };
@@ -71,4 +99,3 @@ final $typed_data.Uint8List fuelOptionsDescriptor = $convert.base64Decode(
     'RTUDkxEAUSDAoIU1A5MV9FMTAQBhIICgRTUDkyEAcSCAoEU1A5NRAIEgwKCFNQOTVfRTEwEAkS'
     'CAoEU1A5OBAKEggKBFNQOTkQCxIJCgVTUDEwMBAMEgcKA0xQRxANEgcKA0U4MBAOEgcKA0U4NR'
     'APEgsKB01FVEhBTkUQEBIOCgpCSU9fRElFU0VMEBESEAoMVFJVQ0tfRElFU0VMEBI=');
-

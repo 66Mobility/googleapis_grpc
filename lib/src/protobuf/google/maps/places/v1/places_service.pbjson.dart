@@ -17,10 +17,42 @@ import 'dart:typed_data' as $typed_data;
 const RoutingParameters$json = {
   '1': 'RoutingParameters',
   '2': [
-    {'1': 'origin', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'origin'},
-    {'1': 'travel_mode', '3': 2, '4': 1, '5': 14, '6': '.google.maps.places.v1.TravelMode', '8': {}, '10': 'travelMode'},
-    {'1': 'route_modifiers', '3': 3, '4': 1, '5': 11, '6': '.google.maps.places.v1.RouteModifiers', '8': {}, '10': 'routeModifiers'},
-    {'1': 'routing_preference', '3': 4, '4': 1, '5': 14, '6': '.google.maps.places.v1.RoutingPreference', '8': {}, '10': 'routingPreference'},
+    {
+      '1': 'origin',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'origin'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.TravelMode',
+      '8': {},
+      '10': 'travelMode'
+    },
+    {
+      '1': 'route_modifiers',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.RouteModifiers',
+      '8': {},
+      '10': 'routeModifiers'
+    },
+    {
+      '1': 'routing_preference',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.RoutingPreference',
+      '8': {},
+      '10': 'routingPreference'
+    },
   ],
 };
 
@@ -41,12 +73,47 @@ const SearchNearbyRequest$json = {
     {'1': 'region_code', '3': 2, '4': 1, '5': 9, '10': 'regionCode'},
     {'1': 'included_types', '3': 3, '4': 3, '5': 9, '10': 'includedTypes'},
     {'1': 'excluded_types', '3': 4, '4': 3, '5': 9, '10': 'excludedTypes'},
-    {'1': 'included_primary_types', '3': 5, '4': 3, '5': 9, '10': 'includedPrimaryTypes'},
-    {'1': 'excluded_primary_types', '3': 6, '4': 3, '5': 9, '10': 'excludedPrimaryTypes'},
+    {
+      '1': 'included_primary_types',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'includedPrimaryTypes'
+    },
+    {
+      '1': 'excluded_primary_types',
+      '3': 6,
+      '4': 3,
+      '5': 9,
+      '10': 'excludedPrimaryTypes'
+    },
     {'1': 'max_result_count', '3': 7, '4': 1, '5': 5, '10': 'maxResultCount'},
-    {'1': 'location_restriction', '3': 8, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchNearbyRequest.LocationRestriction', '8': {}, '10': 'locationRestriction'},
-    {'1': 'rank_preference', '3': 9, '4': 1, '5': 14, '6': '.google.maps.places.v1.SearchNearbyRequest.RankPreference', '10': 'rankPreference'},
-    {'1': 'routing_parameters', '3': 10, '4': 1, '5': 11, '6': '.google.maps.places.v1.RoutingParameters', '8': {}, '10': 'routingParameters'},
+    {
+      '1': 'location_restriction',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.SearchNearbyRequest.LocationRestriction',
+      '8': {},
+      '10': 'locationRestriction'
+    },
+    {
+      '1': 'rank_preference',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.SearchNearbyRequest.RankPreference',
+      '10': 'rankPreference'
+    },
+    {
+      '1': 'routing_parameters',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.RoutingParameters',
+      '8': {},
+      '10': 'routingParameters'
+    },
   ],
   '3': [SearchNearbyRequest_LocationRestriction$json],
   '4': [SearchNearbyRequest_RankPreference$json],
@@ -56,7 +123,15 @@ const SearchNearbyRequest$json = {
 const SearchNearbyRequest_LocationRestriction$json = {
   '1': 'LocationRestriction',
   '2': [
-    {'1': 'circle', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.Circle', '9': 0, '10': 'circle'},
+    {
+      '1': 'circle',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Circle',
+      '9': 0,
+      '10': 'circle'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -95,8 +170,22 @@ final $typed_data.Uint8List searchNearbyRequestDescriptor = $convert.base64Decod
 const SearchNearbyResponse$json = {
   '1': 'SearchNearbyResponse',
   '2': [
-    {'1': 'places', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place', '10': 'places'},
-    {'1': 'routing_summaries', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.RoutingSummary', '10': 'routingSummaries'},
+    {
+      '1': 'places',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place',
+      '10': 'places'
+    },
+    {
+      '1': 'routing_summaries',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.RoutingSummary',
+      '10': 'routingSummaries'
+    },
   ],
 };
 
@@ -113,20 +202,84 @@ const SearchTextRequest$json = {
     {'1': 'text_query', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'textQuery'},
     {'1': 'language_code', '3': 2, '4': 1, '5': 9, '10': 'languageCode'},
     {'1': 'region_code', '3': 3, '4': 1, '5': 9, '10': 'regionCode'},
-    {'1': 'rank_preference', '3': 4, '4': 1, '5': 14, '6': '.google.maps.places.v1.SearchTextRequest.RankPreference', '10': 'rankPreference'},
+    {
+      '1': 'rank_preference',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.SearchTextRequest.RankPreference',
+      '10': 'rankPreference'
+    },
     {'1': 'included_type', '3': 6, '4': 1, '5': 9, '10': 'includedType'},
     {'1': 'open_now', '3': 7, '4': 1, '5': 8, '10': 'openNow'},
     {'1': 'min_rating', '3': 9, '4': 1, '5': 1, '10': 'minRating'},
     {'1': 'max_result_count', '3': 10, '4': 1, '5': 5, '10': 'maxResultCount'},
-    {'1': 'price_levels', '3': 11, '4': 3, '5': 14, '6': '.google.maps.places.v1.PriceLevel', '10': 'priceLevels'},
-    {'1': 'strict_type_filtering', '3': 12, '4': 1, '5': 8, '10': 'strictTypeFiltering'},
-    {'1': 'location_bias', '3': 13, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.LocationBias', '10': 'locationBias'},
-    {'1': 'location_restriction', '3': 14, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.LocationRestriction', '10': 'locationRestriction'},
-    {'1': 'ev_options', '3': 15, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.EVOptions', '8': {}, '10': 'evOptions'},
-    {'1': 'routing_parameters', '3': 16, '4': 1, '5': 11, '6': '.google.maps.places.v1.RoutingParameters', '8': {}, '10': 'routingParameters'},
-    {'1': 'search_along_route_parameters', '3': 17, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.SearchAlongRouteParameters', '8': {}, '10': 'searchAlongRouteParameters'},
+    {
+      '1': 'price_levels',
+      '3': 11,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.places.v1.PriceLevel',
+      '10': 'priceLevels'
+    },
+    {
+      '1': 'strict_type_filtering',
+      '3': 12,
+      '4': 1,
+      '5': 8,
+      '10': 'strictTypeFiltering'
+    },
+    {
+      '1': 'location_bias',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.SearchTextRequest.LocationBias',
+      '10': 'locationBias'
+    },
+    {
+      '1': 'location_restriction',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.SearchTextRequest.LocationRestriction',
+      '10': 'locationRestriction'
+    },
+    {
+      '1': 'ev_options',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.SearchTextRequest.EVOptions',
+      '8': {},
+      '10': 'evOptions'
+    },
+    {
+      '1': 'routing_parameters',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.RoutingParameters',
+      '8': {},
+      '10': 'routingParameters'
+    },
+    {
+      '1': 'search_along_route_parameters',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.SearchTextRequest.SearchAlongRouteParameters',
+      '8': {},
+      '10': 'searchAlongRouteParameters'
+    },
   ],
-  '3': [SearchTextRequest_LocationBias$json, SearchTextRequest_LocationRestriction$json, SearchTextRequest_EVOptions$json, SearchTextRequest_SearchAlongRouteParameters$json],
+  '3': [
+    SearchTextRequest_LocationBias$json,
+    SearchTextRequest_LocationRestriction$json,
+    SearchTextRequest_EVOptions$json,
+    SearchTextRequest_SearchAlongRouteParameters$json
+  ],
   '4': [SearchTextRequest_RankPreference$json],
 };
 
@@ -134,8 +287,24 @@ const SearchTextRequest$json = {
 const SearchTextRequest_LocationBias$json = {
   '1': 'LocationBias',
   '2': [
-    {'1': 'rectangle', '3': 1, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '9': 0, '10': 'rectangle'},
-    {'1': 'circle', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.Circle', '9': 0, '10': 'circle'},
+    {
+      '1': 'rectangle',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '9': 0,
+      '10': 'rectangle'
+    },
+    {
+      '1': 'circle',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Circle',
+      '9': 0,
+      '10': 'circle'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -146,7 +315,15 @@ const SearchTextRequest_LocationBias$json = {
 const SearchTextRequest_LocationRestriction$json = {
   '1': 'LocationRestriction',
   '2': [
-    {'1': 'rectangle', '3': 1, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '9': 0, '10': 'rectangle'},
+    {
+      '1': 'rectangle',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '9': 0,
+      '10': 'rectangle'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -157,8 +334,23 @@ const SearchTextRequest_LocationRestriction$json = {
 const SearchTextRequest_EVOptions$json = {
   '1': 'EVOptions',
   '2': [
-    {'1': 'minimum_charging_rate_kw', '3': 1, '4': 1, '5': 1, '8': {}, '10': 'minimumChargingRateKw'},
-    {'1': 'connector_types', '3': 2, '4': 3, '5': 14, '6': '.google.maps.places.v1.EVConnectorType', '8': {}, '10': 'connectorTypes'},
+    {
+      '1': 'minimum_charging_rate_kw',
+      '3': 1,
+      '4': 1,
+      '5': 1,
+      '8': {},
+      '10': 'minimumChargingRateKw'
+    },
+    {
+      '1': 'connector_types',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.places.v1.EVConnectorType',
+      '8': {},
+      '10': 'connectorTypes'
+    },
   ],
 };
 
@@ -166,7 +358,15 @@ const SearchTextRequest_EVOptions$json = {
 const SearchTextRequest_SearchAlongRouteParameters$json = {
   '1': 'SearchAlongRouteParameters',
   '2': [
-    {'1': 'polyline', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.Polyline', '8': {}, '10': 'polyline'},
+    {
+      '1': 'polyline',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Polyline',
+      '8': {},
+      '10': 'polyline'
+    },
   ],
 };
 
@@ -216,9 +416,30 @@ final $typed_data.Uint8List searchTextRequestDescriptor = $convert.base64Decode(
 const SearchTextResponse$json = {
   '1': 'SearchTextResponse',
   '2': [
-    {'1': 'places', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place', '10': 'places'},
-    {'1': 'routing_summaries', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.RoutingSummary', '10': 'routingSummaries'},
-    {'1': 'contextual_contents', '3': 3, '4': 3, '5': 11, '6': '.google.maps.places.v1.ContextualContent', '10': 'contextualContents'},
+    {
+      '1': 'places',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place',
+      '10': 'places'
+    },
+    {
+      '1': 'routing_summaries',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.RoutingSummary',
+      '10': 'routingSummaries'
+    },
+    {
+      '1': 'contextual_contents',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.ContextualContent',
+      '10': 'contextualContents'
+    },
   ],
 };
 
@@ -236,8 +457,22 @@ const GetPhotoMediaRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'max_width_px', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'maxWidthPx'},
-    {'1': 'max_height_px', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'maxHeightPx'},
-    {'1': 'skip_http_redirect', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'skipHttpRedirect'},
+    {
+      '1': 'max_height_px',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'maxHeightPx'
+    },
+    {
+      '1': 'skip_http_redirect',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'skipHttpRedirect'
+    },
   ],
 };
 
@@ -270,9 +505,23 @@ const GetPlaceRequest$json = {
   '1': 'GetPlaceRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'language_code', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
+    {
+      '1': 'language_code',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
     {'1': 'region_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'regionCode'},
-    {'1': 'session_token', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'sessionToken'},
+    {
+      '1': 'session_token',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sessionToken'
+    },
   ],
 };
 
@@ -288,26 +537,105 @@ const AutocompletePlacesRequest$json = {
   '1': 'AutocompletePlacesRequest',
   '2': [
     {'1': 'input', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'input'},
-    {'1': 'location_bias', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesRequest.LocationBias', '8': {}, '10': 'locationBias'},
-    {'1': 'location_restriction', '3': 3, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesRequest.LocationRestriction', '8': {}, '10': 'locationRestriction'},
-    {'1': 'included_primary_types', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'includedPrimaryTypes'},
-    {'1': 'included_region_codes', '3': 5, '4': 3, '5': 9, '8': {}, '10': 'includedRegionCodes'},
-    {'1': 'language_code', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
+    {
+      '1': 'location_bias',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.AutocompletePlacesRequest.LocationBias',
+      '8': {},
+      '10': 'locationBias'
+    },
+    {
+      '1': 'location_restriction',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesRequest.LocationRestriction',
+      '8': {},
+      '10': 'locationRestriction'
+    },
+    {
+      '1': 'included_primary_types',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'includedPrimaryTypes'
+    },
+    {
+      '1': 'included_region_codes',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'includedRegionCodes'
+    },
+    {
+      '1': 'language_code',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
     {'1': 'region_code', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'regionCode'},
-    {'1': 'origin', '3': 8, '4': 1, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'origin'},
+    {
+      '1': 'origin',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'origin'
+    },
     {'1': 'input_offset', '3': 9, '4': 1, '5': 5, '8': {}, '10': 'inputOffset'},
-    {'1': 'include_query_predictions', '3': 10, '4': 1, '5': 8, '8': {}, '10': 'includeQueryPredictions'},
-    {'1': 'session_token', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'sessionToken'},
+    {
+      '1': 'include_query_predictions',
+      '3': 10,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'includeQueryPredictions'
+    },
+    {
+      '1': 'session_token',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sessionToken'
+    },
   ],
-  '3': [AutocompletePlacesRequest_LocationBias$json, AutocompletePlacesRequest_LocationRestriction$json],
+  '3': [
+    AutocompletePlacesRequest_LocationBias$json,
+    AutocompletePlacesRequest_LocationRestriction$json
+  ],
 };
 
 @$core.Deprecated('Use autocompletePlacesRequestDescriptor instead')
 const AutocompletePlacesRequest_LocationBias$json = {
   '1': 'LocationBias',
   '2': [
-    {'1': 'rectangle', '3': 1, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '9': 0, '10': 'rectangle'},
-    {'1': 'circle', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.Circle', '9': 0, '10': 'circle'},
+    {
+      '1': 'rectangle',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '9': 0,
+      '10': 'rectangle'
+    },
+    {
+      '1': 'circle',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Circle',
+      '9': 0,
+      '10': 'circle'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -318,8 +646,24 @@ const AutocompletePlacesRequest_LocationBias$json = {
 const AutocompletePlacesRequest_LocationRestriction$json = {
   '1': 'LocationRestriction',
   '2': [
-    {'1': 'rectangle', '3': 1, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '9': 0, '10': 'rectangle'},
-    {'1': 'circle', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.Circle', '9': 0, '10': 'circle'},
+    {
+      '1': 'rectangle',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '9': 0,
+      '10': 'rectangle'
+    },
+    {
+      '1': 'circle',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Circle',
+      '9': 0,
+      '10': 'circle'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -351,7 +695,14 @@ final $typed_data.Uint8List autocompletePlacesRequestDescriptor = $convert.base6
 const AutocompletePlacesResponse$json = {
   '1': 'AutocompletePlacesResponse',
   '2': [
-    {'1': 'suggestions', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion', '10': 'suggestions'},
+    {
+      '1': 'suggestions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion',
+      '10': 'suggestions'
+    },
   ],
   '3': [AutocompletePlacesResponse_Suggestion$json],
 };
@@ -360,10 +711,34 @@ const AutocompletePlacesResponse$json = {
 const AutocompletePlacesResponse_Suggestion$json = {
   '1': 'Suggestion',
   '2': [
-    {'1': 'place_prediction', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.PlacePrediction', '9': 0, '10': 'placePrediction'},
-    {'1': 'query_prediction', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.QueryPrediction', '9': 0, '10': 'queryPrediction'},
+    {
+      '1': 'place_prediction',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.PlacePrediction',
+      '9': 0,
+      '10': 'placePrediction'
+    },
+    {
+      '1': 'query_prediction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.QueryPrediction',
+      '9': 0,
+      '10': 'queryPrediction'
+    },
   ],
-  '3': [AutocompletePlacesResponse_Suggestion_StringRange$json, AutocompletePlacesResponse_Suggestion_FormattableText$json, AutocompletePlacesResponse_Suggestion_StructuredFormat$json, AutocompletePlacesResponse_Suggestion_PlacePrediction$json, AutocompletePlacesResponse_Suggestion_QueryPrediction$json],
+  '3': [
+    AutocompletePlacesResponse_Suggestion_StringRange$json,
+    AutocompletePlacesResponse_Suggestion_FormattableText$json,
+    AutocompletePlacesResponse_Suggestion_StructuredFormat$json,
+    AutocompletePlacesResponse_Suggestion_PlacePrediction$json,
+    AutocompletePlacesResponse_Suggestion_QueryPrediction$json
+  ],
   '8': [
     {'1': 'kind'},
   ],
@@ -383,7 +758,15 @@ const AutocompletePlacesResponse_Suggestion_FormattableText$json = {
   '1': 'FormattableText',
   '2': [
     {'1': 'text', '3': 1, '4': 1, '5': 9, '10': 'text'},
-    {'1': 'matches', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.StringRange', '10': 'matches'},
+    {
+      '1': 'matches',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.StringRange',
+      '10': 'matches'
+    },
   ],
 };
 
@@ -391,8 +774,24 @@ const AutocompletePlacesResponse_Suggestion_FormattableText$json = {
 const AutocompletePlacesResponse_Suggestion_StructuredFormat$json = {
   '1': 'StructuredFormat',
   '2': [
-    {'1': 'main_text', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText', '10': 'mainText'},
-    {'1': 'secondary_text', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText', '10': 'secondaryText'},
+    {
+      '1': 'main_text',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText',
+      '10': 'mainText'
+    },
+    {
+      '1': 'secondary_text',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText',
+      '10': 'secondaryText'
+    },
   ],
 };
 
@@ -402,8 +801,24 @@ const AutocompletePlacesResponse_Suggestion_PlacePrediction$json = {
   '2': [
     {'1': 'place', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'place'},
     {'1': 'place_id', '3': 2, '4': 1, '5': 9, '10': 'placeId'},
-    {'1': 'text', '3': 3, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText', '10': 'text'},
-    {'1': 'structured_format', '3': 4, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.StructuredFormat', '10': 'structuredFormat'},
+    {
+      '1': 'text',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText',
+      '10': 'text'
+    },
+    {
+      '1': 'structured_format',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.StructuredFormat',
+      '10': 'structuredFormat'
+    },
     {'1': 'types', '3': 5, '4': 3, '5': 9, '10': 'types'},
     {'1': 'distance_meters', '3': 6, '4': 1, '5': 5, '10': 'distanceMeters'},
   ],
@@ -413,8 +828,24 @@ const AutocompletePlacesResponse_Suggestion_PlacePrediction$json = {
 const AutocompletePlacesResponse_Suggestion_QueryPrediction$json = {
   '1': 'QueryPrediction',
   '2': [
-    {'1': 'text', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText', '10': 'text'},
-    {'1': 'structured_format', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.StructuredFormat', '10': 'structuredFormat'},
+    {
+      '1': 'text',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.FormattableText',
+      '10': 'text'
+    },
+    {
+      '1': 'structured_format',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.AutocompletePlacesResponse.Suggestion.StructuredFormat',
+      '10': 'structuredFormat'
+    },
   ],
 };
 
@@ -447,4 +878,3 @@ final $typed_data.Uint8List autocompletePlacesResponseDescriptor = $convert.base
     'aW9uLkZvcm1hdHRhYmxlVGV4dFIEdGV4dBJ6ChFzdHJ1Y3R1cmVkX2Zvcm1hdBgCIAEoCzJNLm'
     'dvb2dsZS5tYXBzLnBsYWNlcy52MS5BdXRvY29tcGxldGVQbGFjZXNSZXNwb25zZS5TdWdnZXN0'
     'aW9uLlN0cnVjdHVyZWRGb3JtYXRSEHN0cnVjdHVyZWRGb3JtYXRCBgoEa2luZA==');
-

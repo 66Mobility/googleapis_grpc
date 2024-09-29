@@ -35,35 +35,47 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateDashboardRequest._() : super();
-  factory CreateDashboardRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateDashboardRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateDashboardRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateDashboardRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDashboardRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDashboardRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$188.Dashboard>(2, _omitFieldNames ? '' : 'dashboard', subBuilder: $188.Dashboard.create)
+    ..aOM<$188.Dashboard>(2, _omitFieldNames ? '' : 'dashboard',
+        subBuilder: $188.Dashboard.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateDashboardRequest clone() => CreateDashboardRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateDashboardRequest copyWith(void Function(CreateDashboardRequest) updates) => super.copyWith((message) => updates(message as CreateDashboardRequest)) as CreateDashboardRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateDashboardRequest clone() =>
+      CreateDashboardRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateDashboardRequest copyWith(
+          void Function(CreateDashboardRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateDashboardRequest))
+          as CreateDashboardRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateDashboardRequest create() => CreateDashboardRequest._();
   CreateDashboardRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateDashboardRequest> createRepeated() => $pb.PbList<CreateDashboardRequest>();
+  static $pb.PbList<CreateDashboardRequest> createRepeated() =>
+      $pb.PbList<CreateDashboardRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateDashboardRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDashboardRequest>(create);
+  static CreateDashboardRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDashboardRequest>(create);
   static CreateDashboardRequest? _defaultInstance;
 
   ///  Required. The project on which to execute the request. The format is:
@@ -74,7 +86,10 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -84,7 +99,10 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $188.Dashboard get dashboard => $_getN(1);
   @$pb.TagNumber(2)
-  set dashboard($188.Dashboard v) { setField(2, v); }
+  set dashboard($188.Dashboard v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDashboard() => $_has(1);
   @$pb.TagNumber(2)
@@ -97,7 +115,10 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get validateOnly => $_getBF(2);
   @$pb.TagNumber(3)
-  set validateOnly($core.bool v) { $_setBool(2, v); }
+  set validateOnly($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValidateOnly() => $_has(2);
   @$pb.TagNumber(3)
@@ -124,35 +145,46 @@ class ListDashboardsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDashboardsRequest._() : super();
-  factory ListDashboardsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDashboardsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDashboardsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDashboardsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDashboardsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDashboardsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDashboardsRequest clone() => ListDashboardsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDashboardsRequest copyWith(void Function(ListDashboardsRequest) updates) => super.copyWith((message) => updates(message as ListDashboardsRequest)) as ListDashboardsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDashboardsRequest clone() =>
+      ListDashboardsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDashboardsRequest copyWith(
+          void Function(ListDashboardsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListDashboardsRequest))
+          as ListDashboardsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDashboardsRequest create() => ListDashboardsRequest._();
   ListDashboardsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDashboardsRequest> createRepeated() => $pb.PbList<ListDashboardsRequest>();
+  static $pb.PbList<ListDashboardsRequest> createRepeated() =>
+      $pb.PbList<ListDashboardsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDashboardsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDashboardsRequest>(create);
+  static ListDashboardsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDashboardsRequest>(create);
   static ListDashboardsRequest? _defaultInstance;
 
   ///  Required. The scope of the dashboards to list. The format is:
@@ -161,7 +193,10 @@ class ListDashboardsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -172,7 +207,10 @@ class ListDashboardsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -185,7 +223,10 @@ class ListDashboardsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -208,34 +249,47 @@ class ListDashboardsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDashboardsResponse._() : super();
-  factory ListDashboardsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDashboardsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDashboardsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDashboardsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDashboardsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<$188.Dashboard>(1, _omitFieldNames ? '' : 'dashboards', $pb.PbFieldType.PM, subBuilder: $188.Dashboard.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDashboardsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..pc<$188.Dashboard>(
+        1, _omitFieldNames ? '' : 'dashboards', $pb.PbFieldType.PM,
+        subBuilder: $188.Dashboard.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDashboardsResponse clone() => ListDashboardsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDashboardsResponse copyWith(void Function(ListDashboardsResponse) updates) => super.copyWith((message) => updates(message as ListDashboardsResponse)) as ListDashboardsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDashboardsResponse clone() =>
+      ListDashboardsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDashboardsResponse copyWith(
+          void Function(ListDashboardsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListDashboardsResponse))
+          as ListDashboardsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDashboardsResponse create() => ListDashboardsResponse._();
   ListDashboardsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDashboardsResponse> createRepeated() => $pb.PbList<ListDashboardsResponse>();
+  static $pb.PbList<ListDashboardsResponse> createRepeated() =>
+      $pb.PbList<ListDashboardsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDashboardsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDashboardsResponse>(create);
+  static ListDashboardsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDashboardsResponse>(create);
   static ListDashboardsResponse? _defaultInstance;
 
   /// The list of requested dashboards.
@@ -248,7 +302,10 @@ class ListDashboardsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -267,33 +324,42 @@ class GetDashboardRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDashboardRequest._() : super();
-  factory GetDashboardRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDashboardRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDashboardRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDashboardRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDashboardRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDashboardRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetDashboardRequest clone() => GetDashboardRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDashboardRequest copyWith(void Function(GetDashboardRequest) updates) => super.copyWith((message) => updates(message as GetDashboardRequest)) as GetDashboardRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDashboardRequest copyWith(void Function(GetDashboardRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDashboardRequest))
+          as GetDashboardRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDashboardRequest create() => GetDashboardRequest._();
   GetDashboardRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDashboardRequest> createRepeated() => $pb.PbList<GetDashboardRequest>();
+  static $pb.PbList<GetDashboardRequest> createRepeated() =>
+      $pb.PbList<GetDashboardRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDashboardRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDashboardRequest>(create);
+  static GetDashboardRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDashboardRequest>(create);
   static GetDashboardRequest? _defaultInstance;
 
   ///  Required. The resource name of the Dashboard. The format is one of:
@@ -304,7 +370,10 @@ class GetDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -323,33 +392,44 @@ class DeleteDashboardRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteDashboardRequest._() : super();
-  factory DeleteDashboardRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteDashboardRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteDashboardRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteDashboardRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteDashboardRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteDashboardRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteDashboardRequest clone() => DeleteDashboardRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteDashboardRequest copyWith(void Function(DeleteDashboardRequest) updates) => super.copyWith((message) => updates(message as DeleteDashboardRequest)) as DeleteDashboardRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteDashboardRequest clone() =>
+      DeleteDashboardRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteDashboardRequest copyWith(
+          void Function(DeleteDashboardRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteDashboardRequest))
+          as DeleteDashboardRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteDashboardRequest create() => DeleteDashboardRequest._();
   DeleteDashboardRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteDashboardRequest> createRepeated() => $pb.PbList<DeleteDashboardRequest>();
+  static $pb.PbList<DeleteDashboardRequest> createRepeated() =>
+      $pb.PbList<DeleteDashboardRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteDashboardRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteDashboardRequest>(create);
+  static DeleteDashboardRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteDashboardRequest>(create);
   static DeleteDashboardRequest? _defaultInstance;
 
   ///  Required. The resource name of the Dashboard. The format is:
@@ -358,7 +438,10 @@ class DeleteDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -381,41 +464,56 @@ class UpdateDashboardRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDashboardRequest._() : super();
-  factory UpdateDashboardRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDashboardRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDashboardRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDashboardRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDashboardRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$188.Dashboard>(1, _omitFieldNames ? '' : 'dashboard', subBuilder: $188.Dashboard.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDashboardRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..aOM<$188.Dashboard>(1, _omitFieldNames ? '' : 'dashboard',
+        subBuilder: $188.Dashboard.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDashboardRequest clone() => UpdateDashboardRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDashboardRequest copyWith(void Function(UpdateDashboardRequest) updates) => super.copyWith((message) => updates(message as UpdateDashboardRequest)) as UpdateDashboardRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDashboardRequest clone() =>
+      UpdateDashboardRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDashboardRequest copyWith(
+          void Function(UpdateDashboardRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateDashboardRequest))
+          as UpdateDashboardRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateDashboardRequest create() => UpdateDashboardRequest._();
   UpdateDashboardRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateDashboardRequest> createRepeated() => $pb.PbList<UpdateDashboardRequest>();
+  static $pb.PbList<UpdateDashboardRequest> createRepeated() =>
+      $pb.PbList<UpdateDashboardRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDashboardRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDashboardRequest>(create);
+  static UpdateDashboardRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDashboardRequest>(create);
   static UpdateDashboardRequest? _defaultInstance;
 
   /// Required. The dashboard that will replace the existing dashboard.
   @$pb.TagNumber(1)
   $188.Dashboard get dashboard => $_getN(0);
   @$pb.TagNumber(1)
-  set dashboard($188.Dashboard v) { setField(1, v); }
+  set dashboard($188.Dashboard v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDashboard() => $_has(0);
   @$pb.TagNumber(1)
@@ -428,13 +526,16 @@ class UpdateDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get validateOnly => $_getBF(1);
   @$pb.TagNumber(3)
-  set validateOnly($core.bool v) { $_setBool(1, v); }
+  set validateOnly($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(3)
   void clearValidateOnly() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

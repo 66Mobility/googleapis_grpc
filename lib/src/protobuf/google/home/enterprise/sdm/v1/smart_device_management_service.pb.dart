@@ -29,33 +29,42 @@ class GetDeviceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDeviceRequest._() : super();
-  factory GetDeviceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDeviceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDeviceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDeviceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDeviceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDeviceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetDeviceRequest clone() => GetDeviceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDeviceRequest copyWith(void Function(GetDeviceRequest) updates) => super.copyWith((message) => updates(message as GetDeviceRequest)) as GetDeviceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDeviceRequest copyWith(void Function(GetDeviceRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDeviceRequest))
+          as GetDeviceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDeviceRequest create() => GetDeviceRequest._();
   GetDeviceRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDeviceRequest> createRepeated() => $pb.PbList<GetDeviceRequest>();
+  static $pb.PbList<GetDeviceRequest> createRepeated() =>
+      $pb.PbList<GetDeviceRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDeviceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDeviceRequest>(create);
+  static GetDeviceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDeviceRequest>(create);
   static GetDeviceRequest? _defaultInstance;
 
   /// The name of the device requested. For example:
@@ -63,7 +72,10 @@ class GetDeviceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -94,43 +106,55 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDevicesRequest._() : super();
-  factory ListDevicesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDevicesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDevicesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDevicesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDevicesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDevicesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListDevicesRequest clone() => ListDevicesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDevicesRequest copyWith(void Function(ListDevicesRequest) updates) => super.copyWith((message) => updates(message as ListDevicesRequest)) as ListDevicesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDevicesRequest copyWith(void Function(ListDevicesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListDevicesRequest))
+          as ListDevicesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDevicesRequest create() => ListDevicesRequest._();
   ListDevicesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDevicesRequest> createRepeated() => $pb.PbList<ListDevicesRequest>();
+  static $pb.PbList<ListDevicesRequest> createRepeated() =>
+      $pb.PbList<ListDevicesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDevicesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDevicesRequest>(create);
+  static ListDevicesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDevicesRequest>(create);
   static ListDevicesRequest? _defaultInstance;
 
   /// The parent enterprise to list devices under. E.g. "enterprises/XYZ".
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -141,7 +165,10 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -151,7 +178,10 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -165,7 +195,10 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(4)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -188,34 +221,44 @@ class ListDevicesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDevicesResponse._() : super();
-  factory ListDevicesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDevicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDevicesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDevicesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDevicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..pc<$141.Device>(1, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $141.Device.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDevicesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
+    ..pc<$141.Device>(1, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM,
+        subBuilder: $141.Device.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListDevicesResponse clone() => ListDevicesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDevicesResponse copyWith(void Function(ListDevicesResponse) updates) => super.copyWith((message) => updates(message as ListDevicesResponse)) as ListDevicesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDevicesResponse copyWith(void Function(ListDevicesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListDevicesResponse))
+          as ListDevicesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDevicesResponse create() => ListDevicesResponse._();
   ListDevicesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDevicesResponse> createRepeated() => $pb.PbList<ListDevicesResponse>();
+  static $pb.PbList<ListDevicesResponse> createRepeated() =>
+      $pb.PbList<ListDevicesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDevicesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDevicesResponse>(create);
+  static ListDevicesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDevicesResponse>(create);
   static ListDevicesResponse? _defaultInstance;
 
   /// The list of devices.
@@ -226,7 +269,10 @@ class ListDevicesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -253,35 +299,49 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ExecuteDeviceCommandRequest._() : super();
-  factory ExecuteDeviceCommandRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExecuteDeviceCommandRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExecuteDeviceCommandRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExecuteDeviceCommandRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteDeviceCommandRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExecuteDeviceCommandRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'command')
-    ..aOM<$261.Struct>(3, _omitFieldNames ? '' : 'params', subBuilder: $261.Struct.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$261.Struct>(3, _omitFieldNames ? '' : 'params',
+        subBuilder: $261.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExecuteDeviceCommandRequest clone() => ExecuteDeviceCommandRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExecuteDeviceCommandRequest copyWith(void Function(ExecuteDeviceCommandRequest) updates) => super.copyWith((message) => updates(message as ExecuteDeviceCommandRequest)) as ExecuteDeviceCommandRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExecuteDeviceCommandRequest clone() =>
+      ExecuteDeviceCommandRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExecuteDeviceCommandRequest copyWith(
+          void Function(ExecuteDeviceCommandRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ExecuteDeviceCommandRequest))
+          as ExecuteDeviceCommandRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ExecuteDeviceCommandRequest create() => ExecuteDeviceCommandRequest._();
+  static ExecuteDeviceCommandRequest create() =>
+      ExecuteDeviceCommandRequest._();
   ExecuteDeviceCommandRequest createEmptyInstance() => create();
-  static $pb.PbList<ExecuteDeviceCommandRequest> createRepeated() => $pb.PbList<ExecuteDeviceCommandRequest>();
+  static $pb.PbList<ExecuteDeviceCommandRequest> createRepeated() =>
+      $pb.PbList<ExecuteDeviceCommandRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExecuteDeviceCommandRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExecuteDeviceCommandRequest>(create);
+  static ExecuteDeviceCommandRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExecuteDeviceCommandRequest>(create);
   static ExecuteDeviceCommandRequest? _defaultInstance;
 
   /// The name of the device requested. For example:
@@ -289,7 +349,10 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -300,7 +363,10 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get command => $_getSZ(1);
   @$pb.TagNumber(2)
-  set command($core.String v) { $_setString(1, v); }
+  set command($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCommand() => $_has(1);
   @$pb.TagNumber(2)
@@ -310,7 +376,10 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $261.Struct get params => $_getN(2);
   @$pb.TagNumber(3)
-  set params($261.Struct v) { setField(3, v); }
+  set params($261.Struct v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParams() => $_has(2);
   @$pb.TagNumber(3)
@@ -331,40 +400,57 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ExecuteDeviceCommandResponse._() : super();
-  factory ExecuteDeviceCommandResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExecuteDeviceCommandResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExecuteDeviceCommandResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExecuteDeviceCommandResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteDeviceCommandResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..aOM<$261.Struct>(1, _omitFieldNames ? '' : 'results', subBuilder: $261.Struct.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExecuteDeviceCommandResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
+    ..aOM<$261.Struct>(1, _omitFieldNames ? '' : 'results',
+        subBuilder: $261.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExecuteDeviceCommandResponse clone() => ExecuteDeviceCommandResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExecuteDeviceCommandResponse copyWith(void Function(ExecuteDeviceCommandResponse) updates) => super.copyWith((message) => updates(message as ExecuteDeviceCommandResponse)) as ExecuteDeviceCommandResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExecuteDeviceCommandResponse clone() =>
+      ExecuteDeviceCommandResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExecuteDeviceCommandResponse copyWith(
+          void Function(ExecuteDeviceCommandResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ExecuteDeviceCommandResponse))
+          as ExecuteDeviceCommandResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ExecuteDeviceCommandResponse create() => ExecuteDeviceCommandResponse._();
+  static ExecuteDeviceCommandResponse create() =>
+      ExecuteDeviceCommandResponse._();
   ExecuteDeviceCommandResponse createEmptyInstance() => create();
-  static $pb.PbList<ExecuteDeviceCommandResponse> createRepeated() => $pb.PbList<ExecuteDeviceCommandResponse>();
+  static $pb.PbList<ExecuteDeviceCommandResponse> createRepeated() =>
+      $pb.PbList<ExecuteDeviceCommandResponse>();
   @$core.pragma('dart2js:noInline')
-  static ExecuteDeviceCommandResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExecuteDeviceCommandResponse>(create);
+  static ExecuteDeviceCommandResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExecuteDeviceCommandResponse>(create);
   static ExecuteDeviceCommandResponse? _defaultInstance;
 
   /// The results of executing the command.
   @$pb.TagNumber(1)
   $261.Struct get results => $_getN(0);
   @$pb.TagNumber(1)
-  set results($261.Struct v) { setField(1, v); }
+  set results($261.Struct v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasResults() => $_has(0);
   @$pb.TagNumber(1)
@@ -385,33 +471,42 @@ class GetStructureRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetStructureRequest._() : super();
-  factory GetStructureRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetStructureRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetStructureRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetStructureRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetStructureRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetStructureRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetStructureRequest clone() => GetStructureRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetStructureRequest copyWith(void Function(GetStructureRequest) updates) => super.copyWith((message) => updates(message as GetStructureRequest)) as GetStructureRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetStructureRequest copyWith(void Function(GetStructureRequest) updates) =>
+      super.copyWith((message) => updates(message as GetStructureRequest))
+          as GetStructureRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetStructureRequest create() => GetStructureRequest._();
   GetStructureRequest createEmptyInstance() => create();
-  static $pb.PbList<GetStructureRequest> createRepeated() => $pb.PbList<GetStructureRequest>();
+  static $pb.PbList<GetStructureRequest> createRepeated() =>
+      $pb.PbList<GetStructureRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetStructureRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetStructureRequest>(create);
+  static GetStructureRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetStructureRequest>(create);
   static GetStructureRequest? _defaultInstance;
 
   /// The name of the structure requested. For example:
@@ -419,7 +514,10 @@ class GetStructureRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -450,43 +548,57 @@ class ListStructuresRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListStructuresRequest._() : super();
-  factory ListStructuresRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListStructuresRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListStructuresRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListStructuresRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListStructuresRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListStructuresRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListStructuresRequest clone() => ListStructuresRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListStructuresRequest copyWith(void Function(ListStructuresRequest) updates) => super.copyWith((message) => updates(message as ListStructuresRequest)) as ListStructuresRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListStructuresRequest clone() =>
+      ListStructuresRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListStructuresRequest copyWith(
+          void Function(ListStructuresRequest) updates) =>
+      super.copyWith((message) => updates(message as ListStructuresRequest))
+          as ListStructuresRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListStructuresRequest create() => ListStructuresRequest._();
   ListStructuresRequest createEmptyInstance() => create();
-  static $pb.PbList<ListStructuresRequest> createRepeated() => $pb.PbList<ListStructuresRequest>();
+  static $pb.PbList<ListStructuresRequest> createRepeated() =>
+      $pb.PbList<ListStructuresRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListStructuresRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListStructuresRequest>(create);
+  static ListStructuresRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListStructuresRequest>(create);
   static ListStructuresRequest? _defaultInstance;
 
   /// The parent enterprise to list structures under. E.g. "enterprises/XYZ".
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -497,7 +609,10 @@ class ListStructuresRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -507,7 +622,10 @@ class ListStructuresRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -517,7 +635,10 @@ class ListStructuresRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(4)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -540,34 +661,47 @@ class ListStructuresResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListStructuresResponse._() : super();
-  factory ListStructuresResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListStructuresResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListStructuresResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListStructuresResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListStructuresResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..pc<$142.Structure>(1, _omitFieldNames ? '' : 'structures', $pb.PbFieldType.PM, subBuilder: $142.Structure.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListStructuresResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
+    ..pc<$142.Structure>(
+        1, _omitFieldNames ? '' : 'structures', $pb.PbFieldType.PM,
+        subBuilder: $142.Structure.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListStructuresResponse clone() => ListStructuresResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListStructuresResponse copyWith(void Function(ListStructuresResponse) updates) => super.copyWith((message) => updates(message as ListStructuresResponse)) as ListStructuresResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListStructuresResponse clone() =>
+      ListStructuresResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListStructuresResponse copyWith(
+          void Function(ListStructuresResponse) updates) =>
+      super.copyWith((message) => updates(message as ListStructuresResponse))
+          as ListStructuresResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListStructuresResponse create() => ListStructuresResponse._();
   ListStructuresResponse createEmptyInstance() => create();
-  static $pb.PbList<ListStructuresResponse> createRepeated() => $pb.PbList<ListStructuresResponse>();
+  static $pb.PbList<ListStructuresResponse> createRepeated() =>
+      $pb.PbList<ListStructuresResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListStructuresResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListStructuresResponse>(create);
+  static ListStructuresResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListStructuresResponse>(create);
   static ListStructuresResponse? _defaultInstance;
 
   /// The list of structures.
@@ -579,7 +713,10 @@ class ListStructuresResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -598,33 +735,42 @@ class GetRoomRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetRoomRequest._() : super();
-  factory GetRoomRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetRoomRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetRoomRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetRoomRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetRoomRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetRoomRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetRoomRequest clone() => GetRoomRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetRoomRequest copyWith(void Function(GetRoomRequest) updates) => super.copyWith((message) => updates(message as GetRoomRequest)) as GetRoomRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetRoomRequest copyWith(void Function(GetRoomRequest) updates) =>
+      super.copyWith((message) => updates(message as GetRoomRequest))
+          as GetRoomRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetRoomRequest create() => GetRoomRequest._();
   GetRoomRequest createEmptyInstance() => create();
-  static $pb.PbList<GetRoomRequest> createRepeated() => $pb.PbList<GetRoomRequest>();
+  static $pb.PbList<GetRoomRequest> createRepeated() =>
+      $pb.PbList<GetRoomRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetRoomRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetRoomRequest>(create);
+  static GetRoomRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetRoomRequest>(create);
   static GetRoomRequest? _defaultInstance;
 
   /// The name of the room requested. For example:
@@ -632,7 +778,10 @@ class GetRoomRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -659,35 +808,44 @@ class ListRoomsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListRoomsRequest._() : super();
-  factory ListRoomsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListRoomsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListRoomsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListRoomsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRoomsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListRoomsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListRoomsRequest clone() => ListRoomsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListRoomsRequest copyWith(void Function(ListRoomsRequest) updates) => super.copyWith((message) => updates(message as ListRoomsRequest)) as ListRoomsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListRoomsRequest copyWith(void Function(ListRoomsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListRoomsRequest))
+          as ListRoomsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListRoomsRequest create() => ListRoomsRequest._();
   ListRoomsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListRoomsRequest> createRepeated() => $pb.PbList<ListRoomsRequest>();
+  static $pb.PbList<ListRoomsRequest> createRepeated() =>
+      $pb.PbList<ListRoomsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListRoomsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListRoomsRequest>(create);
+  static ListRoomsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListRoomsRequest>(create);
   static ListRoomsRequest? _defaultInstance;
 
   /// The parent resource name of the rooms requested. For example:
@@ -695,7 +853,10 @@ class ListRoomsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -706,7 +867,10 @@ class ListRoomsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -716,7 +880,10 @@ class ListRoomsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -739,34 +906,44 @@ class ListRoomsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListRoomsResponse._() : super();
-  factory ListRoomsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListRoomsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListRoomsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListRoomsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRoomsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..pc<$142.Room>(1, _omitFieldNames ? '' : 'rooms', $pb.PbFieldType.PM, subBuilder: $142.Room.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListRoomsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
+    ..pc<$142.Room>(1, _omitFieldNames ? '' : 'rooms', $pb.PbFieldType.PM,
+        subBuilder: $142.Room.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListRoomsResponse clone() => ListRoomsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListRoomsResponse copyWith(void Function(ListRoomsResponse) updates) => super.copyWith((message) => updates(message as ListRoomsResponse)) as ListRoomsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListRoomsResponse copyWith(void Function(ListRoomsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListRoomsResponse))
+          as ListRoomsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListRoomsResponse create() => ListRoomsResponse._();
   ListRoomsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListRoomsResponse> createRepeated() => $pb.PbList<ListRoomsResponse>();
+  static $pb.PbList<ListRoomsResponse> createRepeated() =>
+      $pb.PbList<ListRoomsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListRoomsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListRoomsResponse>(create);
+  static ListRoomsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListRoomsResponse>(create);
   static ListRoomsResponse? _defaultInstance;
 
   /// The list of rooms.
@@ -778,13 +955,16 @@ class ListRoomsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

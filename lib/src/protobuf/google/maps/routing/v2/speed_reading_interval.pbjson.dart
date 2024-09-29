@@ -17,9 +17,33 @@ import 'dart:typed_data' as $typed_data;
 const SpeedReadingInterval$json = {
   '1': 'SpeedReadingInterval',
   '2': [
-    {'1': 'start_polyline_point_index', '3': 1, '4': 1, '5': 5, '9': 1, '10': 'startPolylinePointIndex', '17': true},
-    {'1': 'end_polyline_point_index', '3': 2, '4': 1, '5': 5, '9': 2, '10': 'endPolylinePointIndex', '17': true},
-    {'1': 'speed', '3': 3, '4': 1, '5': 14, '6': '.google.maps.routing.v2.SpeedReadingInterval.Speed', '9': 0, '10': 'speed'},
+    {
+      '1': 'start_polyline_point_index',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'startPolylinePointIndex',
+      '17': true
+    },
+    {
+      '1': 'end_polyline_point_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 2,
+      '10': 'endPolylinePointIndex',
+      '17': true
+    },
+    {
+      '1': 'speed',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.SpeedReadingInterval.Speed',
+      '9': 0,
+      '10': 'speed'
+    },
   ],
   '4': [SpeedReadingInterval_Speed$json],
   '8': [
@@ -49,4 +73,3 @@ final $typed_data.Uint8List speedReadingIntervalDescriptor = $convert.base64Deco
     'cGVlZCJFCgVTcGVlZBIVChFTUEVFRF9VTlNQRUNJRklFRBAAEgoKBk5PUk1BTBABEggKBFNMT1'
     'cQAhIPCgtUUkFGRklDX0pBTRADQgwKCnNwZWVkX3R5cGVCHQobX3N0YXJ0X3BvbHlsaW5lX3Bv'
     'aW50X2luZGV4QhsKGV9lbmRfcG9seWxpbmVfcG9pbnRfaW5kZXg=');
-

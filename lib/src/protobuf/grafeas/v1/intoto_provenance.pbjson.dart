@@ -18,10 +18,30 @@ const Recipe$json = {
   '1': 'Recipe',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'defined_in_material', '3': 2, '4': 1, '5': 3, '10': 'definedInMaterial'},
+    {
+      '1': 'defined_in_material',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'definedInMaterial'
+    },
     {'1': 'entry_point', '3': 3, '4': 1, '5': 9, '10': 'entryPoint'},
-    {'1': 'arguments', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.Any', '10': 'arguments'},
-    {'1': 'environment', '3': 5, '4': 3, '5': 11, '6': '.google.protobuf.Any', '10': 'environment'},
+    {
+      '1': 'arguments',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'arguments'
+    },
+    {
+      '1': 'environment',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'environment'
+    },
   ],
 };
 
@@ -51,10 +71,37 @@ final $typed_data.Uint8List completenessDescriptor = $convert.base64Decode(
 const Metadata$json = {
   '1': 'Metadata',
   '2': [
-    {'1': 'build_invocation_id', '3': 1, '4': 1, '5': 9, '10': 'buildInvocationId'},
-    {'1': 'build_started_on', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'buildStartedOn'},
-    {'1': 'build_finished_on', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'buildFinishedOn'},
-    {'1': 'completeness', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.Completeness', '10': 'completeness'},
+    {
+      '1': 'build_invocation_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'buildInvocationId'
+    },
+    {
+      '1': 'build_started_on',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'buildStartedOn'
+    },
+    {
+      '1': 'build_finished_on',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'buildFinishedOn'
+    },
+    {
+      '1': 'completeness',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Completeness',
+      '10': 'completeness'
+    },
     {'1': 'reproducible', '3': 5, '4': 1, '5': 8, '10': 'reproducible'},
   ],
 };
@@ -77,16 +124,37 @@ const BuilderConfig$json = {
 };
 
 /// Descriptor for `BuilderConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List builderConfigDescriptor = $convert.base64Decode(
-    'Cg1CdWlsZGVyQ29uZmlnEg4KAmlkGAEgASgJUgJpZA==');
+final $typed_data.Uint8List builderConfigDescriptor =
+    $convert.base64Decode('Cg1CdWlsZGVyQ29uZmlnEg4KAmlkGAEgASgJUgJpZA==');
 
 @$core.Deprecated('Use inTotoProvenanceDescriptor instead')
 const InTotoProvenance$json = {
   '1': 'InTotoProvenance',
   '2': [
-    {'1': 'builder_config', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.BuilderConfig', '10': 'builderConfig'},
-    {'1': 'recipe', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Recipe', '10': 'recipe'},
-    {'1': 'metadata', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.Metadata', '10': 'metadata'},
+    {
+      '1': 'builder_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.BuilderConfig',
+      '10': 'builderConfig'
+    },
+    {
+      '1': 'recipe',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Recipe',
+      '10': 'recipe'
+    },
+    {
+      '1': 'metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Metadata',
+      '10': 'metadata'
+    },
     {'1': 'materials', '3': 4, '4': 3, '5': 9, '10': 'materials'},
   ],
 };
@@ -97,4 +165,3 @@ final $typed_data.Uint8List inTotoProvenanceDescriptor = $convert.base64Decode(
     '5CdWlsZGVyQ29uZmlnUg1idWlsZGVyQ29uZmlnEioKBnJlY2lwZRgCIAEoCzISLmdyYWZlYXMu'
     'djEuUmVjaXBlUgZyZWNpcGUSMAoIbWV0YWRhdGEYAyABKAsyFC5ncmFmZWFzLnYxLk1ldGFkYX'
     'RhUghtZXRhZGF0YRIcCgltYXRlcmlhbHMYBCADKAlSCW1hdGVyaWFscw==');
-

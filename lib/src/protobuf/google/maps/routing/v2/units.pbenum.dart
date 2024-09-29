@@ -15,21 +15,22 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// A set of values that specify the unit of measure used in the display.
 class Units extends $pb.ProtobufEnum {
-  static const Units UNITS_UNSPECIFIED = Units._(0, _omitEnumNames ? '' : 'UNITS_UNSPECIFIED');
+  static const Units UNITS_UNSPECIFIED =
+      Units._(0, _omitEnumNames ? '' : 'UNITS_UNSPECIFIED');
   static const Units METRIC = Units._(1, _omitEnumNames ? '' : 'METRIC');
   static const Units IMPERIAL = Units._(2, _omitEnumNames ? '' : 'IMPERIAL');
 
-  static const $core.List<Units> values = <Units> [
+  static const $core.List<Units> values = <Units>[
     UNITS_UNSPECIFIED,
     METRIC,
     IMPERIAL,
   ];
 
-  static final $core.Map<$core.int, Units> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Units> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Units? valueOf($core.int value) => _byValue[value];
 
   const Units._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

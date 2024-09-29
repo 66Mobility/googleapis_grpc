@@ -21,18 +21,21 @@ export 'ui_detection.pb.dart';
 
 @$pb.GrpcServiceName('google.chromeos.uidetection.v1.UiDetectionService')
 class UiDetectionServiceClient extends $grpc.Client {
-  static final _$executeDetection = $grpc.ClientMethod<$105.UiDetectionRequest, $105.UiDetectionResponse>(
-      '/google.chromeos.uidetection.v1.UiDetectionService/ExecuteDetection',
-      ($105.UiDetectionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $105.UiDetectionResponse.fromBuffer(value));
+  static final _$executeDetection =
+      $grpc.ClientMethod<$105.UiDetectionRequest, $105.UiDetectionResponse>(
+          '/google.chromeos.uidetection.v1.UiDetectionService/ExecuteDetection',
+          ($105.UiDetectionRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) =>
+              $105.UiDetectionResponse.fromBuffer(value));
 
   UiDetectionServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$105.UiDetectionResponse> executeDetection($105.UiDetectionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$105.UiDetectionResponse> executeDetection(
+      $105.UiDetectionRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$executeDetection, request, options: options);
   }
 }
@@ -42,18 +45,23 @@ abstract class UiDetectionServiceBase extends $grpc.Service {
   $core.String get $name => 'google.chromeos.uidetection.v1.UiDetectionService';
 
   UiDetectionServiceBase() {
-    $addMethod($grpc.ServiceMethod<$105.UiDetectionRequest, $105.UiDetectionResponse>(
-        'ExecuteDetection',
-        executeDetection_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) => $105.UiDetectionRequest.fromBuffer(value),
-        ($105.UiDetectionResponse value) => value.writeToBuffer()));
+    $addMethod(
+        $grpc.ServiceMethod<$105.UiDetectionRequest, $105.UiDetectionResponse>(
+            'ExecuteDetection',
+            executeDetection_Pre,
+            false,
+            false,
+            ($core.List<$core.int> value) =>
+                $105.UiDetectionRequest.fromBuffer(value),
+            ($105.UiDetectionResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$105.UiDetectionResponse> executeDetection_Pre($grpc.ServiceCall call, $async.Future<$105.UiDetectionRequest> request) async {
+  $async.Future<$105.UiDetectionResponse> executeDetection_Pre(
+      $grpc.ServiceCall call,
+      $async.Future<$105.UiDetectionRequest> request) async {
     return executeDetection(call, await request);
   }
 
-  $async.Future<$105.UiDetectionResponse> executeDetection($grpc.ServiceCall call, $105.UiDetectionRequest request);
+  $async.Future<$105.UiDetectionResponse> executeDetection(
+      $grpc.ServiceCall call, $105.UiDetectionRequest request);
 }

@@ -20,8 +20,22 @@ const Space$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'meeting_uri', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'meetingUri'},
     {'1': 'meeting_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'meetingCode'},
-    {'1': 'config', '3': 5, '4': 1, '5': 11, '6': '.google.apps.meet.v2.SpaceConfig', '10': 'config'},
-    {'1': 'active_conference', '3': 6, '4': 1, '5': 11, '6': '.google.apps.meet.v2.ActiveConference', '10': 'activeConference'},
+    {
+      '1': 'config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.SpaceConfig',
+      '10': 'config'
+    },
+    {
+      '1': 'active_conference',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.ActiveConference',
+      '10': 'activeConference'
+    },
   ],
   '7': {},
 };
@@ -39,7 +53,14 @@ final $typed_data.Uint8List spaceDescriptor = $convert.base64Decode(
 const ActiveConference$json = {
   '1': 'ActiveConference',
   '2': [
-    {'1': 'conference_record', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'conferenceRecord'},
+    {
+      '1': 'conference_record',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'conferenceRecord'
+    },
   ],
 };
 
@@ -52,8 +73,22 @@ final $typed_data.Uint8List activeConferenceDescriptor = $convert.base64Decode(
 const SpaceConfig$json = {
   '1': 'SpaceConfig',
   '2': [
-    {'1': 'access_type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.meet.v2.SpaceConfig.AccessType', '10': 'accessType'},
-    {'1': 'entry_point_access', '3': 2, '4': 1, '5': 14, '6': '.google.apps.meet.v2.SpaceConfig.EntryPointAccess', '10': 'entryPointAccess'},
+    {
+      '1': 'access_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.meet.v2.SpaceConfig.AccessType',
+      '10': 'accessType'
+    },
+    {
+      '1': 'entry_point_access',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.meet.v2.SpaceConfig.EntryPointAccess',
+      '10': 'entryPointAccess'
+    },
   ],
   '4': [SpaceConfig_AccessType$json, SpaceConfig_EntryPointAccess$json],
 };
@@ -94,9 +129,33 @@ const ConferenceRecord$json = {
   '1': 'ConferenceRecord',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
-    {'1': 'expire_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
+    {
+      '1': 'expire_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
     {'1': 'space', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'space'},
   ],
   '7': {},
@@ -117,12 +176,52 @@ final $typed_data.Uint8List conferenceRecordDescriptor = $convert.base64Decode(
 const Participant$json = {
   '1': 'Participant',
   '2': [
-    {'1': 'signedin_user', '3': 4, '4': 1, '5': 11, '6': '.google.apps.meet.v2.SignedinUser', '9': 0, '10': 'signedinUser'},
-    {'1': 'anonymous_user', '3': 5, '4': 1, '5': 11, '6': '.google.apps.meet.v2.AnonymousUser', '9': 0, '10': 'anonymousUser'},
-    {'1': 'phone_user', '3': 6, '4': 1, '5': 11, '6': '.google.apps.meet.v2.PhoneUser', '9': 0, '10': 'phoneUser'},
+    {
+      '1': 'signedin_user',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.SignedinUser',
+      '9': 0,
+      '10': 'signedinUser'
+    },
+    {
+      '1': 'anonymous_user',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.AnonymousUser',
+      '9': 0,
+      '10': 'anonymousUser'
+    },
+    {
+      '1': 'phone_user',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.PhoneUser',
+      '9': 0,
+      '10': 'phoneUser'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'earliest_start_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'earliestStartTime'},
-    {'1': 'latest_end_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'latestEndTime'},
+    {
+      '1': 'earliest_start_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'earliestStartTime'
+    },
+    {
+      '1': 'latest_end_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'latestEndTime'
+    },
   ],
   '7': {},
   '8': [
@@ -148,8 +247,24 @@ const ParticipantSession$json = {
   '1': 'ParticipantSession',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
   ],
   '7': {},
 };
@@ -207,11 +322,44 @@ final $typed_data.Uint8List phoneUserDescriptor = $convert.base64Decode(
 const Recording$json = {
   '1': 'Recording',
   '2': [
-    {'1': 'drive_destination', '3': 6, '4': 1, '5': 11, '6': '.google.apps.meet.v2.DriveDestination', '8': {}, '9': 0, '10': 'driveDestination'},
+    {
+      '1': 'drive_destination',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.DriveDestination',
+      '8': {},
+      '9': 0,
+      '10': 'driveDestination'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.apps.meet.v2.Recording.State', '8': {}, '10': 'state'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
-    {'1': 'end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.meet.v2.Recording.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
   ],
   '4': [Recording_State$json],
   '7': {},
@@ -262,11 +410,44 @@ final $typed_data.Uint8List driveDestinationDescriptor = $convert.base64Decode(
 const Transcript$json = {
   '1': 'Transcript',
   '2': [
-    {'1': 'docs_destination', '3': 6, '4': 1, '5': 11, '6': '.google.apps.meet.v2.DocsDestination', '8': {}, '9': 0, '10': 'docsDestination'},
+    {
+      '1': 'docs_destination',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.DocsDestination',
+      '8': {},
+      '9': 0,
+      '10': 'docsDestination'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.apps.meet.v2.Transcript.State', '8': {}, '10': 'state'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
-    {'1': 'end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.meet.v2.Transcript.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
   ],
   '4': [Transcript_State$json],
   '7': {},
@@ -320,9 +501,32 @@ const TranscriptEntry$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'participant', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'participant'},
     {'1': 'text', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'text'},
-    {'1': 'language_code', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
-    {'1': 'start_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
-    {'1': 'end_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
+    {
+      '1': 'language_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
+    {
+      '1': 'start_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
   ],
   '7': {},
 };
@@ -338,4 +542,3 @@ final $typed_data.Uint8List transcriptEntryDescriptor = $convert.base64Decode(
     'Y29tL1RyYW5zY3JpcHRFbnRyeRJOY29uZmVyZW5jZVJlY29yZHMve2NvbmZlcmVuY2VfcmVjb3'
     'JkfS90cmFuc2NyaXB0cy97dHJhbnNjcmlwdH0vZW50cmllcy97ZW50cnl9KhF0cmFuc2NyaXB0'
     'RW50cmllczIPdHJhbnNjcmlwdEVudHJ5');
-

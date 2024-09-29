@@ -17,10 +17,31 @@ import 'dart:typed_data' as $typed_data;
 const LogLine$json = {
   '1': 'LogLine',
   '2': [
-    {'1': 'time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'time'},
-    {'1': 'severity', '3': 2, '4': 1, '5': 14, '6': '.google.logging.type.LogSeverity', '10': 'severity'},
+    {
+      '1': 'time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'time'
+    },
+    {
+      '1': 'severity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.type.LogSeverity',
+      '10': 'severity'
+    },
     {'1': 'log_message', '3': 3, '4': 1, '5': 9, '10': 'logMessage'},
-    {'1': 'source_location', '3': 4, '4': 1, '5': 11, '6': '.google.appengine.logging.v1.SourceLocation', '10': 'sourceLocation'},
+    {
+      '1': 'source_location',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.logging.v1.SourceLocation',
+      '10': 'sourceLocation'
+    },
   ],
 };
 
@@ -70,9 +91,30 @@ const RequestLog$json = {
     {'1': 'version_id', '3': 2, '4': 1, '5': 9, '10': 'versionId'},
     {'1': 'request_id', '3': 3, '4': 1, '5': 9, '10': 'requestId'},
     {'1': 'ip', '3': 4, '4': 1, '5': 9, '10': 'ip'},
-    {'1': 'start_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'latency', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'latency'},
+    {
+      '1': 'start_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'latency',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'latency'
+    },
     {'1': 'mega_cycles', '3': 9, '4': 1, '5': 3, '10': 'megaCycles'},
     {'1': 'method', '3': 10, '4': 1, '5': 9, '10': 'method'},
     {'1': 'resource', '3': 11, '4': 1, '5': 9, '10': 'resource'},
@@ -87,17 +129,50 @@ const RequestLog$json = {
     {'1': 'cost', '3': 21, '4': 1, '5': 1, '10': 'cost'},
     {'1': 'task_queue_name', '3': 22, '4': 1, '5': 9, '10': 'taskQueueName'},
     {'1': 'task_name', '3': 23, '4': 1, '5': 9, '10': 'taskName'},
-    {'1': 'was_loading_request', '3': 24, '4': 1, '5': 8, '10': 'wasLoadingRequest'},
-    {'1': 'pending_time', '3': 25, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'pendingTime'},
+    {
+      '1': 'was_loading_request',
+      '3': 24,
+      '4': 1,
+      '5': 8,
+      '10': 'wasLoadingRequest'
+    },
+    {
+      '1': 'pending_time',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'pendingTime'
+    },
     {'1': 'instance_index', '3': 26, '4': 1, '5': 5, '10': 'instanceIndex'},
     {'1': 'finished', '3': 27, '4': 1, '5': 8, '10': 'finished'},
     {'1': 'first', '3': 42, '4': 1, '5': 8, '10': 'first'},
     {'1': 'instance_id', '3': 28, '4': 1, '5': 9, '10': 'instanceId'},
-    {'1': 'line', '3': 29, '4': 3, '5': 11, '6': '.google.appengine.logging.v1.LogLine', '10': 'line'},
-    {'1': 'app_engine_release', '3': 38, '4': 1, '5': 9, '10': 'appEngineRelease'},
+    {
+      '1': 'line',
+      '3': 29,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.logging.v1.LogLine',
+      '10': 'line'
+    },
+    {
+      '1': 'app_engine_release',
+      '3': 38,
+      '4': 1,
+      '5': 9,
+      '10': 'appEngineRelease'
+    },
     {'1': 'trace_id', '3': 39, '4': 1, '5': 9, '10': 'traceId'},
     {'1': 'trace_sampled', '3': 43, '4': 1, '5': 8, '10': 'traceSampled'},
-    {'1': 'source_reference', '3': 41, '4': 3, '5': 11, '6': '.google.appengine.logging.v1.SourceReference', '10': 'sourceReference'},
+    {
+      '1': 'source_reference',
+      '3': 41,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.logging.v1.SourceReference',
+      '10': 'sourceReference'
+    },
   ],
 };
 
@@ -125,4 +200,3 @@ final $typed_data.Uint8List requestLogDescriptor = $convert.base64Decode(
     'Vhc2USGQoIdHJhY2VfaWQYJyABKAlSB3RyYWNlSWQSIwoNdHJhY2Vfc2FtcGxlZBgrIAEoCFIM'
     'dHJhY2VTYW1wbGVkElcKEHNvdXJjZV9yZWZlcmVuY2UYKSADKAsyLC5nb29nbGUuYXBwZW5naW'
     '5lLmxvZ2dpbmcudjEuU291cmNlUmVmZXJlbmNlUg9zb3VyY2VSZWZlcmVuY2U=');
-

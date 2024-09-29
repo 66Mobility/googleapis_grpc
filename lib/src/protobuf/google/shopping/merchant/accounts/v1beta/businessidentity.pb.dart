@@ -30,40 +30,65 @@ class BusinessIdentity_IdentityAttribute extends $pb.GeneratedMessage {
     return $result;
   }
   BusinessIdentity_IdentityAttribute._() : super();
-  factory BusinessIdentity_IdentityAttribute.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BusinessIdentity_IdentityAttribute.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BusinessIdentity_IdentityAttribute.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BusinessIdentity_IdentityAttribute.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BusinessIdentity.IdentityAttribute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..e<BusinessIdentity_IdentityAttribute_IdentityDeclaration>(1, _omitFieldNames ? '' : 'identityDeclaration', $pb.PbFieldType.OE, defaultOrMaker: BusinessIdentity_IdentityAttribute_IdentityDeclaration.IDENTITY_DECLARATION_UNSPECIFIED, valueOf: BusinessIdentity_IdentityAttribute_IdentityDeclaration.valueOf, enumValues: BusinessIdentity_IdentityAttribute_IdentityDeclaration.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BusinessIdentity.IdentityAttribute',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..e<BusinessIdentity_IdentityAttribute_IdentityDeclaration>(
+        1, _omitFieldNames ? '' : 'identityDeclaration', $pb.PbFieldType.OE,
+        defaultOrMaker: BusinessIdentity_IdentityAttribute_IdentityDeclaration
+            .IDENTITY_DECLARATION_UNSPECIFIED,
+        valueOf: BusinessIdentity_IdentityAttribute_IdentityDeclaration.valueOf,
+        enumValues:
+            BusinessIdentity_IdentityAttribute_IdentityDeclaration.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BusinessIdentity_IdentityAttribute clone() => BusinessIdentity_IdentityAttribute()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BusinessIdentity_IdentityAttribute copyWith(void Function(BusinessIdentity_IdentityAttribute) updates) => super.copyWith((message) => updates(message as BusinessIdentity_IdentityAttribute)) as BusinessIdentity_IdentityAttribute;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BusinessIdentity_IdentityAttribute clone() =>
+      BusinessIdentity_IdentityAttribute()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BusinessIdentity_IdentityAttribute copyWith(
+          void Function(BusinessIdentity_IdentityAttribute) updates) =>
+      super.copyWith((message) =>
+              updates(message as BusinessIdentity_IdentityAttribute))
+          as BusinessIdentity_IdentityAttribute;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static BusinessIdentity_IdentityAttribute create() => BusinessIdentity_IdentityAttribute._();
+  static BusinessIdentity_IdentityAttribute create() =>
+      BusinessIdentity_IdentityAttribute._();
   BusinessIdentity_IdentityAttribute createEmptyInstance() => create();
-  static $pb.PbList<BusinessIdentity_IdentityAttribute> createRepeated() => $pb.PbList<BusinessIdentity_IdentityAttribute>();
+  static $pb.PbList<BusinessIdentity_IdentityAttribute> createRepeated() =>
+      $pb.PbList<BusinessIdentity_IdentityAttribute>();
   @$core.pragma('dart2js:noInline')
-  static BusinessIdentity_IdentityAttribute getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BusinessIdentity_IdentityAttribute>(create);
+  static BusinessIdentity_IdentityAttribute getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BusinessIdentity_IdentityAttribute>(
+          create);
   static BusinessIdentity_IdentityAttribute? _defaultInstance;
 
   /// Required. The declaration of identity for this attribute.
   @$pb.TagNumber(1)
-  BusinessIdentity_IdentityAttribute_IdentityDeclaration get identityDeclaration => $_getN(0);
+  BusinessIdentity_IdentityAttribute_IdentityDeclaration
+      get identityDeclaration => $_getN(0);
   @$pb.TagNumber(1)
-  set identityDeclaration(BusinessIdentity_IdentityAttribute_IdentityDeclaration v) { setField(1, v); }
+  set identityDeclaration(
+      BusinessIdentity_IdentityAttribute_IdentityDeclaration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIdentityDeclaration() => $_has(0);
   @$pb.TagNumber(1)
@@ -107,39 +132,63 @@ class BusinessIdentity extends $pb.GeneratedMessage {
     return $result;
   }
   BusinessIdentity._() : super();
-  factory BusinessIdentity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BusinessIdentity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BusinessIdentity.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BusinessIdentity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BusinessIdentity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BusinessIdentity',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<BusinessIdentity_PromotionsConsent>(2, _omitFieldNames ? '' : 'promotionsConsent', $pb.PbFieldType.OE, defaultOrMaker: BusinessIdentity_PromotionsConsent.PROMOTIONS_CONSENT_UNSPECIFIED, valueOf: BusinessIdentity_PromotionsConsent.valueOf, enumValues: BusinessIdentity_PromotionsConsent.values)
-    ..aOM<BusinessIdentity_IdentityAttribute>(3, _omitFieldNames ? '' : 'blackOwned', subBuilder: BusinessIdentity_IdentityAttribute.create)
-    ..aOM<BusinessIdentity_IdentityAttribute>(4, _omitFieldNames ? '' : 'womenOwned', subBuilder: BusinessIdentity_IdentityAttribute.create)
-    ..aOM<BusinessIdentity_IdentityAttribute>(5, _omitFieldNames ? '' : 'veteranOwned', subBuilder: BusinessIdentity_IdentityAttribute.create)
-    ..aOM<BusinessIdentity_IdentityAttribute>(6, _omitFieldNames ? '' : 'latinoOwned', subBuilder: BusinessIdentity_IdentityAttribute.create)
-    ..aOM<BusinessIdentity_IdentityAttribute>(7, _omitFieldNames ? '' : 'smallBusiness', subBuilder: BusinessIdentity_IdentityAttribute.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<BusinessIdentity_PromotionsConsent>(
+        2, _omitFieldNames ? '' : 'promotionsConsent', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            BusinessIdentity_PromotionsConsent.PROMOTIONS_CONSENT_UNSPECIFIED,
+        valueOf: BusinessIdentity_PromotionsConsent.valueOf,
+        enumValues: BusinessIdentity_PromotionsConsent.values)
+    ..aOM<BusinessIdentity_IdentityAttribute>(
+        3, _omitFieldNames ? '' : 'blackOwned',
+        subBuilder: BusinessIdentity_IdentityAttribute.create)
+    ..aOM<BusinessIdentity_IdentityAttribute>(
+        4, _omitFieldNames ? '' : 'womenOwned',
+        subBuilder: BusinessIdentity_IdentityAttribute.create)
+    ..aOM<BusinessIdentity_IdentityAttribute>(
+        5, _omitFieldNames ? '' : 'veteranOwned',
+        subBuilder: BusinessIdentity_IdentityAttribute.create)
+    ..aOM<BusinessIdentity_IdentityAttribute>(
+        6, _omitFieldNames ? '' : 'latinoOwned',
+        subBuilder: BusinessIdentity_IdentityAttribute.create)
+    ..aOM<BusinessIdentity_IdentityAttribute>(
+        7, _omitFieldNames ? '' : 'smallBusiness',
+        subBuilder: BusinessIdentity_IdentityAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BusinessIdentity clone() => BusinessIdentity()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BusinessIdentity copyWith(void Function(BusinessIdentity) updates) => super.copyWith((message) => updates(message as BusinessIdentity)) as BusinessIdentity;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BusinessIdentity copyWith(void Function(BusinessIdentity) updates) =>
+      super.copyWith((message) => updates(message as BusinessIdentity))
+          as BusinessIdentity;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BusinessIdentity create() => BusinessIdentity._();
   BusinessIdentity createEmptyInstance() => create();
-  static $pb.PbList<BusinessIdentity> createRepeated() => $pb.PbList<BusinessIdentity>();
+  static $pb.PbList<BusinessIdentity> createRepeated() =>
+      $pb.PbList<BusinessIdentity>();
   @$core.pragma('dart2js:noInline')
-  static BusinessIdentity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BusinessIdentity>(create);
+  static BusinessIdentity getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BusinessIdentity>(create);
   static BusinessIdentity? _defaultInstance;
 
   /// Identifier. The resource name of the business identity.
@@ -147,7 +196,10 @@ class BusinessIdentity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -157,7 +209,10 @@ class BusinessIdentity extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   BusinessIdentity_PromotionsConsent get promotionsConsent => $_getN(1);
   @$pb.TagNumber(2)
-  set promotionsConsent(BusinessIdentity_PromotionsConsent v) { setField(2, v); }
+  set promotionsConsent(BusinessIdentity_PromotionsConsent v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPromotionsConsent() => $_has(1);
   @$pb.TagNumber(2)
@@ -170,7 +225,10 @@ class BusinessIdentity extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   BusinessIdentity_IdentityAttribute get blackOwned => $_getN(2);
   @$pb.TagNumber(3)
-  set blackOwned(BusinessIdentity_IdentityAttribute v) { setField(3, v); }
+  set blackOwned(BusinessIdentity_IdentityAttribute v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBlackOwned() => $_has(2);
   @$pb.TagNumber(3)
@@ -185,7 +243,10 @@ class BusinessIdentity extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   BusinessIdentity_IdentityAttribute get womenOwned => $_getN(3);
   @$pb.TagNumber(4)
-  set womenOwned(BusinessIdentity_IdentityAttribute v) { setField(4, v); }
+  set womenOwned(BusinessIdentity_IdentityAttribute v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasWomenOwned() => $_has(3);
   @$pb.TagNumber(4)
@@ -200,7 +261,10 @@ class BusinessIdentity extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   BusinessIdentity_IdentityAttribute get veteranOwned => $_getN(4);
   @$pb.TagNumber(5)
-  set veteranOwned(BusinessIdentity_IdentityAttribute v) { setField(5, v); }
+  set veteranOwned(BusinessIdentity_IdentityAttribute v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasVeteranOwned() => $_has(4);
   @$pb.TagNumber(5)
@@ -215,7 +279,10 @@ class BusinessIdentity extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   BusinessIdentity_IdentityAttribute get latinoOwned => $_getN(5);
   @$pb.TagNumber(6)
-  set latinoOwned(BusinessIdentity_IdentityAttribute v) { setField(6, v); }
+  set latinoOwned(BusinessIdentity_IdentityAttribute v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLatinoOwned() => $_has(5);
   @$pb.TagNumber(6)
@@ -229,7 +296,10 @@ class BusinessIdentity extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   BusinessIdentity_IdentityAttribute get smallBusiness => $_getN(6);
   @$pb.TagNumber(7)
-  set smallBusiness(BusinessIdentity_IdentityAttribute v) { setField(7, v); }
+  set smallBusiness(BusinessIdentity_IdentityAttribute v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasSmallBusiness() => $_has(6);
   @$pb.TagNumber(7)
@@ -250,33 +320,45 @@ class GetBusinessIdentityRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetBusinessIdentityRequest._() : super();
-  factory GetBusinessIdentityRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetBusinessIdentityRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetBusinessIdentityRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetBusinessIdentityRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBusinessIdentityRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBusinessIdentityRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetBusinessIdentityRequest clone() => GetBusinessIdentityRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetBusinessIdentityRequest copyWith(void Function(GetBusinessIdentityRequest) updates) => super.copyWith((message) => updates(message as GetBusinessIdentityRequest)) as GetBusinessIdentityRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetBusinessIdentityRequest clone() =>
+      GetBusinessIdentityRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetBusinessIdentityRequest copyWith(
+          void Function(GetBusinessIdentityRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetBusinessIdentityRequest))
+          as GetBusinessIdentityRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetBusinessIdentityRequest create() => GetBusinessIdentityRequest._();
   GetBusinessIdentityRequest createEmptyInstance() => create();
-  static $pb.PbList<GetBusinessIdentityRequest> createRepeated() => $pb.PbList<GetBusinessIdentityRequest>();
+  static $pb.PbList<GetBusinessIdentityRequest> createRepeated() =>
+      $pb.PbList<GetBusinessIdentityRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetBusinessIdentityRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBusinessIdentityRequest>(create);
+  static GetBusinessIdentityRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBusinessIdentityRequest>(create);
   static GetBusinessIdentityRequest? _defaultInstance;
 
   /// Required. The resource name of the business identity.
@@ -284,7 +366,10 @@ class GetBusinessIdentityRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -307,41 +392,59 @@ class UpdateBusinessIdentityRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateBusinessIdentityRequest._() : super();
-  factory UpdateBusinessIdentityRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateBusinessIdentityRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateBusinessIdentityRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateBusinessIdentityRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBusinessIdentityRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..aOM<BusinessIdentity>(1, _omitFieldNames ? '' : 'businessIdentity', subBuilder: BusinessIdentity.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateBusinessIdentityRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<BusinessIdentity>(1, _omitFieldNames ? '' : 'businessIdentity',
+        subBuilder: BusinessIdentity.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateBusinessIdentityRequest clone() => UpdateBusinessIdentityRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateBusinessIdentityRequest copyWith(void Function(UpdateBusinessIdentityRequest) updates) => super.copyWith((message) => updates(message as UpdateBusinessIdentityRequest)) as UpdateBusinessIdentityRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateBusinessIdentityRequest clone() =>
+      UpdateBusinessIdentityRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateBusinessIdentityRequest copyWith(
+          void Function(UpdateBusinessIdentityRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateBusinessIdentityRequest))
+          as UpdateBusinessIdentityRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateBusinessIdentityRequest create() => UpdateBusinessIdentityRequest._();
+  static UpdateBusinessIdentityRequest create() =>
+      UpdateBusinessIdentityRequest._();
   UpdateBusinessIdentityRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateBusinessIdentityRequest> createRepeated() => $pb.PbList<UpdateBusinessIdentityRequest>();
+  static $pb.PbList<UpdateBusinessIdentityRequest> createRepeated() =>
+      $pb.PbList<UpdateBusinessIdentityRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateBusinessIdentityRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateBusinessIdentityRequest>(create);
+  static UpdateBusinessIdentityRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateBusinessIdentityRequest>(create);
   static UpdateBusinessIdentityRequest? _defaultInstance;
 
   /// Required. The new version of the business identity.
   @$pb.TagNumber(1)
   BusinessIdentity get businessIdentity => $_getN(0);
   @$pb.TagNumber(1)
-  set businessIdentity(BusinessIdentity v) { setField(1, v); }
+  set businessIdentity(BusinessIdentity v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBusinessIdentity() => $_has(0);
   @$pb.TagNumber(1)
@@ -353,7 +456,10 @@ class UpdateBusinessIdentityRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -362,6 +468,6 @@ class UpdateBusinessIdentityRequest extends $pb.GeneratedMessage {
   $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

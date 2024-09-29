@@ -15,21 +15,32 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Kind represents the kinds of notes supported.
 class NoteKind extends $pb.ProtobufEnum {
-  static const NoteKind NOTE_KIND_UNSPECIFIED = NoteKind._(0, _omitEnumNames ? '' : 'NOTE_KIND_UNSPECIFIED');
-  static const NoteKind VULNERABILITY = NoteKind._(1, _omitEnumNames ? '' : 'VULNERABILITY');
+  static const NoteKind NOTE_KIND_UNSPECIFIED =
+      NoteKind._(0, _omitEnumNames ? '' : 'NOTE_KIND_UNSPECIFIED');
+  static const NoteKind VULNERABILITY =
+      NoteKind._(1, _omitEnumNames ? '' : 'VULNERABILITY');
   static const NoteKind BUILD = NoteKind._(2, _omitEnumNames ? '' : 'BUILD');
   static const NoteKind IMAGE = NoteKind._(3, _omitEnumNames ? '' : 'IMAGE');
-  static const NoteKind PACKAGE = NoteKind._(4, _omitEnumNames ? '' : 'PACKAGE');
-  static const NoteKind DEPLOYMENT = NoteKind._(5, _omitEnumNames ? '' : 'DEPLOYMENT');
-  static const NoteKind DISCOVERY = NoteKind._(6, _omitEnumNames ? '' : 'DISCOVERY');
-  static const NoteKind ATTESTATION = NoteKind._(7, _omitEnumNames ? '' : 'ATTESTATION');
-  static const NoteKind UPGRADE = NoteKind._(8, _omitEnumNames ? '' : 'UPGRADE');
-  static const NoteKind COMPLIANCE = NoteKind._(9, _omitEnumNames ? '' : 'COMPLIANCE');
-  static const NoteKind DSSE_ATTESTATION = NoteKind._(10, _omitEnumNames ? '' : 'DSSE_ATTESTATION');
-  static const NoteKind VULNERABILITY_ASSESSMENT = NoteKind._(11, _omitEnumNames ? '' : 'VULNERABILITY_ASSESSMENT');
-  static const NoteKind SBOM_REFERENCE = NoteKind._(12, _omitEnumNames ? '' : 'SBOM_REFERENCE');
+  static const NoteKind PACKAGE =
+      NoteKind._(4, _omitEnumNames ? '' : 'PACKAGE');
+  static const NoteKind DEPLOYMENT =
+      NoteKind._(5, _omitEnumNames ? '' : 'DEPLOYMENT');
+  static const NoteKind DISCOVERY =
+      NoteKind._(6, _omitEnumNames ? '' : 'DISCOVERY');
+  static const NoteKind ATTESTATION =
+      NoteKind._(7, _omitEnumNames ? '' : 'ATTESTATION');
+  static const NoteKind UPGRADE =
+      NoteKind._(8, _omitEnumNames ? '' : 'UPGRADE');
+  static const NoteKind COMPLIANCE =
+      NoteKind._(9, _omitEnumNames ? '' : 'COMPLIANCE');
+  static const NoteKind DSSE_ATTESTATION =
+      NoteKind._(10, _omitEnumNames ? '' : 'DSSE_ATTESTATION');
+  static const NoteKind VULNERABILITY_ASSESSMENT =
+      NoteKind._(11, _omitEnumNames ? '' : 'VULNERABILITY_ASSESSMENT');
+  static const NoteKind SBOM_REFERENCE =
+      NoteKind._(12, _omitEnumNames ? '' : 'SBOM_REFERENCE');
 
-  static const $core.List<NoteKind> values = <NoteKind> [
+  static const $core.List<NoteKind> values = <NoteKind>[
     NOTE_KIND_UNSPECIFIED,
     VULNERABILITY,
     BUILD,
@@ -45,11 +56,11 @@ class NoteKind extends $pb.ProtobufEnum {
     SBOM_REFERENCE,
   ];
 
-  static final $core.Map<$core.int, NoteKind> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, NoteKind> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static NoteKind? valueOf($core.int value) => _byValue[value];
 
   const NoteKind._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

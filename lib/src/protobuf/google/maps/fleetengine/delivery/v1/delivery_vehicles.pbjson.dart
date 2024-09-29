@@ -18,15 +18,77 @@ const DeliveryVehicle$json = {
   '1': 'DeliveryVehicle',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'last_location', '3': 2, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleLocation', '10': 'lastLocation'},
-    {'1': 'navigation_status', '3': 3, '4': 1, '5': 14, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleNavigationStatus', '10': 'navigationStatus'},
-    {'1': 'current_route_segment', '3': 4, '4': 1, '5': 12, '10': 'currentRouteSegment'},
-    {'1': 'current_route_segment_end_point', '3': 5, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'currentRouteSegmentEndPoint'},
-    {'1': 'remaining_distance_meters', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'remainingDistanceMeters'},
-    {'1': 'remaining_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'remainingDuration'},
-    {'1': 'remaining_vehicle_journey_segments', '3': 8, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.VehicleJourneySegment', '10': 'remainingVehicleJourneySegments'},
-    {'1': 'attributes', '3': 9, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleAttribute', '10': 'attributes'},
-    {'1': 'type', '3': 10, '4': 1, '5': 14, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle.DeliveryVehicleType', '10': 'type'},
+    {
+      '1': 'last_location',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleLocation',
+      '10': 'lastLocation'
+    },
+    {
+      '1': 'navigation_status',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleNavigationStatus',
+      '10': 'navigationStatus'
+    },
+    {
+      '1': 'current_route_segment',
+      '3': 4,
+      '4': 1,
+      '5': 12,
+      '10': 'currentRouteSegment'
+    },
+    {
+      '1': 'current_route_segment_end_point',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'currentRouteSegmentEndPoint'
+    },
+    {
+      '1': 'remaining_distance_meters',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'remainingDistanceMeters'
+    },
+    {
+      '1': 'remaining_duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'remainingDuration'
+    },
+    {
+      '1': 'remaining_vehicle_journey_segments',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.VehicleJourneySegment',
+      '10': 'remainingVehicleJourneySegments'
+    },
+    {
+      '1': 'attributes',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicleAttribute',
+      '10': 'attributes'
+    },
+    {
+      '1': 'type',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle.DeliveryVehicleType',
+      '10': 'type'
+    },
   ],
   '4': [DeliveryVehicle_DeliveryVehicleType$json],
   '7': {},
@@ -71,7 +133,14 @@ final $typed_data.Uint8List deliveryVehicleDescriptor = $convert.base64Decode(
 const LocationInfo$json = {
   '1': 'LocationInfo',
   '2': [
-    {'1': 'point', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'point'},
+    {
+      '1': 'point',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'point'
+    },
   ],
 };
 
@@ -84,10 +153,41 @@ final $typed_data.Uint8List locationInfoDescriptor = $convert.base64Decode(
 const VehicleJourneySegment$json = {
   '1': 'VehicleJourneySegment',
   '2': [
-    {'1': 'stop', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.VehicleStop', '10': 'stop'},
-    {'1': 'driving_distance_meters', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '8': {}, '10': 'drivingDistanceMeters'},
-    {'1': 'driving_duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'drivingDuration'},
-    {'1': 'path', '3': 5, '4': 3, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'path'},
+    {
+      '1': 'stop',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.VehicleStop',
+      '10': 'stop'
+    },
+    {
+      '1': 'driving_distance_meters',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '8': {},
+      '10': 'drivingDistanceMeters'
+    },
+    {
+      '1': 'driving_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'drivingDuration'
+    },
+    {
+      '1': 'path',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'path'
+    },
   ],
 };
 
@@ -104,9 +204,31 @@ final $typed_data.Uint8List vehicleJourneySegmentDescriptor = $convert.base64Dec
 const VehicleStop$json = {
   '1': 'VehicleStop',
   '2': [
-    {'1': 'planned_location', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.LocationInfo', '8': {}, '10': 'plannedLocation'},
-    {'1': 'tasks', '3': 2, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.VehicleStop.TaskInfo', '10': 'tasks'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.maps.fleetengine.delivery.v1.VehicleStop.State', '10': 'state'},
+    {
+      '1': 'planned_location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.LocationInfo',
+      '8': {},
+      '10': 'plannedLocation'
+    },
+    {
+      '1': 'tasks',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.VehicleStop.TaskInfo',
+      '10': 'tasks'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.delivery.v1.VehicleStop.State',
+      '10': 'state'
+    },
   ],
   '3': [VehicleStop_TaskInfo$json],
   '4': [VehicleStop_State$json],
@@ -117,8 +239,24 @@ const VehicleStop_TaskInfo$json = {
   '1': 'TaskInfo',
   '2': [
     {'1': 'task_id', '3': 1, '4': 1, '5': 9, '10': 'taskId'},
-    {'1': 'task_duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'taskDuration'},
-    {'1': 'target_time_window', '3': 3, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.TimeWindow', '8': {}, '10': 'targetTimeWindow'},
+    {
+      '1': 'task_duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'taskDuration'
+    },
+    {
+      '1': 'target_time_window',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.TimeWindow',
+      '8': {},
+      '10': 'targetTimeWindow'
+    },
   ],
 };
 
@@ -145,4 +283,3 @@ final $typed_data.Uint8List vehicleStopDescriptor = $convert.base64Decode(
     '1hcHMuZmxlZXRlbmdpbmUuZGVsaXZlcnkudjEuVGltZVdpbmRvd0ID4EEDUhB0YXJnZXRUaW1l'
     'V2luZG93IkEKBVN0YXRlEhUKEVNUQVRFX1VOU1BFQ0lGSUVEEAASBwoDTkVXEAESCwoHRU5ST1'
     'VURRACEgsKB0FSUklWRUQQAw==');
-

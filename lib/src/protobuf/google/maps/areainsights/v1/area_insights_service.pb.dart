@@ -35,34 +35,48 @@ class ComputeInsightsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ComputeInsightsRequest._() : super();
-  factory ComputeInsightsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComputeInsightsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComputeInsightsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComputeInsightsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeInsightsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
-    ..pc<Insight>(4, _omitFieldNames ? '' : 'insights', $pb.PbFieldType.KE, valueOf: Insight.valueOf, enumValues: Insight.values, defaultEnumValue: Insight.INSIGHT_UNSPECIFIED)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComputeInsightsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
+    ..pc<Insight>(4, _omitFieldNames ? '' : 'insights', $pb.PbFieldType.KE,
+        valueOf: Insight.valueOf,
+        enumValues: Insight.values,
+        defaultEnumValue: Insight.INSIGHT_UNSPECIFIED)
     ..aOM<Filter>(5, _omitFieldNames ? '' : 'filter', subBuilder: Filter.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ComputeInsightsRequest clone() => ComputeInsightsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComputeInsightsRequest copyWith(void Function(ComputeInsightsRequest) updates) => super.copyWith((message) => updates(message as ComputeInsightsRequest)) as ComputeInsightsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ComputeInsightsRequest clone() =>
+      ComputeInsightsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComputeInsightsRequest copyWith(
+          void Function(ComputeInsightsRequest) updates) =>
+      super.copyWith((message) => updates(message as ComputeInsightsRequest))
+          as ComputeInsightsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeInsightsRequest create() => ComputeInsightsRequest._();
   ComputeInsightsRequest createEmptyInstance() => create();
-  static $pb.PbList<ComputeInsightsRequest> createRepeated() => $pb.PbList<ComputeInsightsRequest>();
+  static $pb.PbList<ComputeInsightsRequest> createRepeated() =>
+      $pb.PbList<ComputeInsightsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ComputeInsightsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComputeInsightsRequest>(create);
+  static ComputeInsightsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComputeInsightsRequest>(create);
   static ComputeInsightsRequest? _defaultInstance;
 
   /// Required. Insights to compute. Currently only INSIGHT_COUNT and
@@ -74,7 +88,10 @@ class ComputeInsightsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Filter get filter => $_getN(1);
   @$pb.TagNumber(5)
-  set filter(Filter v) { setField(5, v); }
+  set filter(Filter v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(5)
@@ -99,41 +116,57 @@ class ComputeInsightsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ComputeInsightsResponse._() : super();
-  factory ComputeInsightsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComputeInsightsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComputeInsightsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComputeInsightsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeInsightsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComputeInsightsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'count')
-    ..pc<PlaceInsight>(5, _omitFieldNames ? '' : 'placeInsights', $pb.PbFieldType.PM, subBuilder: PlaceInsight.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<PlaceInsight>(
+        5, _omitFieldNames ? '' : 'placeInsights', $pb.PbFieldType.PM,
+        subBuilder: PlaceInsight.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ComputeInsightsResponse clone() => ComputeInsightsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComputeInsightsResponse copyWith(void Function(ComputeInsightsResponse) updates) => super.copyWith((message) => updates(message as ComputeInsightsResponse)) as ComputeInsightsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ComputeInsightsResponse clone() =>
+      ComputeInsightsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComputeInsightsResponse copyWith(
+          void Function(ComputeInsightsResponse) updates) =>
+      super.copyWith((message) => updates(message as ComputeInsightsResponse))
+          as ComputeInsightsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeInsightsResponse create() => ComputeInsightsResponse._();
   ComputeInsightsResponse createEmptyInstance() => create();
-  static $pb.PbList<ComputeInsightsResponse> createRepeated() => $pb.PbList<ComputeInsightsResponse>();
+  static $pb.PbList<ComputeInsightsResponse> createRepeated() =>
+      $pb.PbList<ComputeInsightsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ComputeInsightsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComputeInsightsResponse>(create);
+  static ComputeInsightsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComputeInsightsResponse>(create);
   static ComputeInsightsResponse? _defaultInstance;
 
   /// Result for Insights.INSIGHT_COUNT.
   @$pb.TagNumber(1)
   $fixnum.Int64 get count => $_getI64(0);
   @$pb.TagNumber(1)
-  set count($fixnum.Int64 v) { $_setInt64(0, v); }
+  set count($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -156,33 +189,42 @@ class PlaceInsight extends $pb.GeneratedMessage {
     return $result;
   }
   PlaceInsight._() : super();
-  factory PlaceInsight.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlaceInsight.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlaceInsight.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlaceInsight.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlaceInsight', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlaceInsight',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'place')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PlaceInsight clone() => PlaceInsight()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlaceInsight copyWith(void Function(PlaceInsight) updates) => super.copyWith((message) => updates(message as PlaceInsight)) as PlaceInsight;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlaceInsight copyWith(void Function(PlaceInsight) updates) =>
+      super.copyWith((message) => updates(message as PlaceInsight))
+          as PlaceInsight;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlaceInsight create() => PlaceInsight._();
   PlaceInsight createEmptyInstance() => create();
-  static $pb.PbList<PlaceInsight> createRepeated() => $pb.PbList<PlaceInsight>();
+  static $pb.PbList<PlaceInsight> createRepeated() =>
+      $pb.PbList<PlaceInsight>();
   @$core.pragma('dart2js:noInline')
-  static PlaceInsight getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlaceInsight>(create);
+  static PlaceInsight getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PlaceInsight>(create);
   static PlaceInsight? _defaultInstance;
 
   /// The resource name of a place. This resource name can be used to retrieve
@@ -191,7 +233,10 @@ class PlaceInsight extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get place => $_getSZ(0);
   @$pb.TagNumber(1)
-  set place($core.String v) { $_setString(0, v); }
+  set place($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPlace() => $_has(0);
   @$pb.TagNumber(1)
@@ -226,28 +271,45 @@ class Filter extends $pb.GeneratedMessage {
     return $result;
   }
   Filter._() : super();
-  factory Filter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Filter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Filter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Filter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Filter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
-    ..aOM<LocationFilter>(1, _omitFieldNames ? '' : 'locationFilter', subBuilder: LocationFilter.create)
-    ..aOM<TypeFilter>(2, _omitFieldNames ? '' : 'typeFilter', subBuilder: TypeFilter.create)
-    ..pc<OperatingStatus>(3, _omitFieldNames ? '' : 'operatingStatus', $pb.PbFieldType.KE, valueOf: OperatingStatus.valueOf, enumValues: OperatingStatus.values, defaultEnumValue: OperatingStatus.OPERATING_STATUS_UNSPECIFIED)
-    ..pc<PriceLevel>(4, _omitFieldNames ? '' : 'priceLevels', $pb.PbFieldType.KE, valueOf: PriceLevel.valueOf, enumValues: PriceLevel.values, defaultEnumValue: PriceLevel.PRICE_LEVEL_UNSPECIFIED)
-    ..aOM<RatingFilter>(5, _omitFieldNames ? '' : 'ratingFilter', subBuilder: RatingFilter.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Filter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
+    ..aOM<LocationFilter>(1, _omitFieldNames ? '' : 'locationFilter',
+        subBuilder: LocationFilter.create)
+    ..aOM<TypeFilter>(2, _omitFieldNames ? '' : 'typeFilter',
+        subBuilder: TypeFilter.create)
+    ..pc<OperatingStatus>(
+        3, _omitFieldNames ? '' : 'operatingStatus', $pb.PbFieldType.KE,
+        valueOf: OperatingStatus.valueOf,
+        enumValues: OperatingStatus.values,
+        defaultEnumValue: OperatingStatus.OPERATING_STATUS_UNSPECIFIED)
+    ..pc<PriceLevel>(
+        4, _omitFieldNames ? '' : 'priceLevels', $pb.PbFieldType.KE,
+        valueOf: PriceLevel.valueOf,
+        enumValues: PriceLevel.values,
+        defaultEnumValue: PriceLevel.PRICE_LEVEL_UNSPECIFIED)
+    ..aOM<RatingFilter>(5, _omitFieldNames ? '' : 'ratingFilter',
+        subBuilder: RatingFilter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Filter clone() => Filter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Filter copyWith(void Function(Filter) updates) => super.copyWith((message) => updates(message as Filter)) as Filter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Filter copyWith(void Function(Filter) updates) =>
+      super.copyWith((message) => updates(message as Filter)) as Filter;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -256,7 +318,8 @@ class Filter extends $pb.GeneratedMessage {
   Filter createEmptyInstance() => create();
   static $pb.PbList<Filter> createRepeated() => $pb.PbList<Filter>();
   @$core.pragma('dart2js:noInline')
-  static Filter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Filter>(create);
+  static Filter getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Filter>(create);
   static Filter? _defaultInstance;
 
   /// Required. Restricts results to places which are located in the area
@@ -264,7 +327,10 @@ class Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   LocationFilter get locationFilter => $_getN(0);
   @$pb.TagNumber(1)
-  set locationFilter(LocationFilter v) { setField(1, v); }
+  set locationFilter(LocationFilter v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocationFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -276,7 +342,10 @@ class Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TypeFilter get typeFilter => $_getN(1);
   @$pb.TagNumber(2)
-  set typeFilter(TypeFilter v) { setField(2, v); }
+  set typeFilter(TypeFilter v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTypeFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -302,7 +371,10 @@ class Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   RatingFilter get ratingFilter => $_getN(4);
   @$pb.TagNumber(5)
-  set ratingFilter(RatingFilter v) { setField(5, v); }
+  set ratingFilter(RatingFilter v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRatingFilter() => $_has(4);
   @$pb.TagNumber(5)
@@ -311,11 +383,7 @@ class Filter extends $pb.GeneratedMessage {
   RatingFilter ensureRatingFilter() => $_ensure(4);
 }
 
-enum LocationFilter_Circle_Center {
-  latLng, 
-  place, 
-  notSet
-}
+enum LocationFilter_Circle_Center { latLng, place, notSet }
 
 /// A circle is defined by a center point and radius in meters.
 class LocationFilter_Circle extends $pb.GeneratedMessage {
@@ -337,51 +405,68 @@ class LocationFilter_Circle extends $pb.GeneratedMessage {
     return $result;
   }
   LocationFilter_Circle._() : super();
-  factory LocationFilter_Circle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocationFilter_Circle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocationFilter_Circle.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocationFilter_Circle.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, LocationFilter_Circle_Center> _LocationFilter_Circle_CenterByTag = {
-    1 : LocationFilter_Circle_Center.latLng,
-    2 : LocationFilter_Circle_Center.place,
-    0 : LocationFilter_Circle_Center.notSet
+  static const $core.Map<$core.int, LocationFilter_Circle_Center>
+      _LocationFilter_Circle_CenterByTag = {
+    1: LocationFilter_Circle_Center.latLng,
+    2: LocationFilter_Circle_Center.place,
+    0: LocationFilter_Circle_Center.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationFilter.Circle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocationFilter.Circle',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $325.LatLng.create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng',
+        subBuilder: $325.LatLng.create)
     ..aOS(2, _omitFieldNames ? '' : 'place')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LocationFilter_Circle clone() => LocationFilter_Circle()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocationFilter_Circle copyWith(void Function(LocationFilter_Circle) updates) => super.copyWith((message) => updates(message as LocationFilter_Circle)) as LocationFilter_Circle;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LocationFilter_Circle clone() =>
+      LocationFilter_Circle()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocationFilter_Circle copyWith(
+          void Function(LocationFilter_Circle) updates) =>
+      super.copyWith((message) => updates(message as LocationFilter_Circle))
+          as LocationFilter_Circle;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocationFilter_Circle create() => LocationFilter_Circle._();
   LocationFilter_Circle createEmptyInstance() => create();
-  static $pb.PbList<LocationFilter_Circle> createRepeated() => $pb.PbList<LocationFilter_Circle>();
+  static $pb.PbList<LocationFilter_Circle> createRepeated() =>
+      $pb.PbList<LocationFilter_Circle>();
   @$core.pragma('dart2js:noInline')
-  static LocationFilter_Circle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocationFilter_Circle>(create);
+  static LocationFilter_Circle getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocationFilter_Circle>(create);
   static LocationFilter_Circle? _defaultInstance;
 
-  LocationFilter_Circle_Center whichCenter() => _LocationFilter_Circle_CenterByTag[$_whichOneof(0)]!;
+  LocationFilter_Circle_Center whichCenter() =>
+      _LocationFilter_Circle_CenterByTag[$_whichOneof(0)]!;
   void clearCenter() => clearField($_whichOneof(0));
 
   /// The latitude and longitude of the center of the circle.
   @$pb.TagNumber(1)
   $325.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($325.LatLng v) { setField(1, v); }
+  set latLng($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
@@ -394,7 +479,10 @@ class LocationFilter_Circle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get place => $_getSZ(1);
   @$pb.TagNumber(2)
-  set place($core.String v) { $_setString(1, v); }
+  set place($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPlace() => $_has(1);
   @$pb.TagNumber(2)
@@ -404,17 +492,17 @@ class LocationFilter_Circle extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get radius => $_getIZ(2);
   @$pb.TagNumber(3)
-  set radius($core.int v) { $_setSignedInt32(2, v); }
+  set radius($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRadius() => $_has(2);
   @$pb.TagNumber(3)
   void clearRadius() => clearField(3);
 }
 
-enum LocationFilter_Region_Region {
-  place, 
-  notSet
-}
+enum LocationFilter_Region_Region { place, notSet }
 
 /// A region is a geographic boundary such as: cities, postal codes, counties,
 /// states, etc.
@@ -429,48 +517,64 @@ class LocationFilter_Region extends $pb.GeneratedMessage {
     return $result;
   }
   LocationFilter_Region._() : super();
-  factory LocationFilter_Region.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocationFilter_Region.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocationFilter_Region.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocationFilter_Region.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, LocationFilter_Region_Region> _LocationFilter_Region_RegionByTag = {
-    1 : LocationFilter_Region_Region.place,
-    0 : LocationFilter_Region_Region.notSet
+  static const $core.Map<$core.int, LocationFilter_Region_Region>
+      _LocationFilter_Region_RegionByTag = {
+    1: LocationFilter_Region_Region.place,
+    0: LocationFilter_Region_Region.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationFilter.Region', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocationFilter.Region',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'place')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LocationFilter_Region clone() => LocationFilter_Region()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocationFilter_Region copyWith(void Function(LocationFilter_Region) updates) => super.copyWith((message) => updates(message as LocationFilter_Region)) as LocationFilter_Region;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LocationFilter_Region clone() =>
+      LocationFilter_Region()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocationFilter_Region copyWith(
+          void Function(LocationFilter_Region) updates) =>
+      super.copyWith((message) => updates(message as LocationFilter_Region))
+          as LocationFilter_Region;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocationFilter_Region create() => LocationFilter_Region._();
   LocationFilter_Region createEmptyInstance() => create();
-  static $pb.PbList<LocationFilter_Region> createRepeated() => $pb.PbList<LocationFilter_Region>();
+  static $pb.PbList<LocationFilter_Region> createRepeated() =>
+      $pb.PbList<LocationFilter_Region>();
   @$core.pragma('dart2js:noInline')
-  static LocationFilter_Region getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocationFilter_Region>(create);
+  static LocationFilter_Region getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocationFilter_Region>(create);
   static LocationFilter_Region? _defaultInstance;
 
-  LocationFilter_Region_Region whichRegion() => _LocationFilter_Region_RegionByTag[$_whichOneof(0)]!;
+  LocationFilter_Region_Region whichRegion() =>
+      _LocationFilter_Region_RegionByTag[$_whichOneof(0)]!;
   void clearRegion() => clearField($_whichOneof(0));
 
   /// The Place resource name of a region.
   @$pb.TagNumber(1)
   $core.String get place => $_getSZ(0);
   @$pb.TagNumber(1)
-  set place($core.String v) { $_setString(0, v); }
+  set place($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPlace() => $_has(0);
   @$pb.TagNumber(1)
@@ -494,33 +598,49 @@ class LocationFilter_CustomArea_Polygon extends $pb.GeneratedMessage {
     return $result;
   }
   LocationFilter_CustomArea_Polygon._() : super();
-  factory LocationFilter_CustomArea_Polygon.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocationFilter_CustomArea_Polygon.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocationFilter_CustomArea_Polygon.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocationFilter_CustomArea_Polygon.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationFilter.CustomArea.Polygon', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
-    ..pc<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates', $pb.PbFieldType.PM, subBuilder: $325.LatLng.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocationFilter.CustomArea.Polygon',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
+    ..pc<$325.LatLng>(
+        1, _omitFieldNames ? '' : 'coordinates', $pb.PbFieldType.PM,
+        subBuilder: $325.LatLng.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LocationFilter_CustomArea_Polygon clone() => LocationFilter_CustomArea_Polygon()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocationFilter_CustomArea_Polygon copyWith(void Function(LocationFilter_CustomArea_Polygon) updates) => super.copyWith((message) => updates(message as LocationFilter_CustomArea_Polygon)) as LocationFilter_CustomArea_Polygon;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LocationFilter_CustomArea_Polygon clone() =>
+      LocationFilter_CustomArea_Polygon()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocationFilter_CustomArea_Polygon copyWith(
+          void Function(LocationFilter_CustomArea_Polygon) updates) =>
+      super.copyWith((message) =>
+              updates(message as LocationFilter_CustomArea_Polygon))
+          as LocationFilter_CustomArea_Polygon;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static LocationFilter_CustomArea_Polygon create() => LocationFilter_CustomArea_Polygon._();
+  static LocationFilter_CustomArea_Polygon create() =>
+      LocationFilter_CustomArea_Polygon._();
   LocationFilter_CustomArea_Polygon createEmptyInstance() => create();
-  static $pb.PbList<LocationFilter_CustomArea_Polygon> createRepeated() => $pb.PbList<LocationFilter_CustomArea_Polygon>();
+  static $pb.PbList<LocationFilter_CustomArea_Polygon> createRepeated() =>
+      $pb.PbList<LocationFilter_CustomArea_Polygon>();
   @$core.pragma('dart2js:noInline')
-  static LocationFilter_CustomArea_Polygon getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocationFilter_CustomArea_Polygon>(create);
+  static LocationFilter_CustomArea_Polygon getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocationFilter_CustomArea_Polygon>(
+          create);
   static LocationFilter_CustomArea_Polygon? _defaultInstance;
 
   /// Optional. The coordinates that define the polygon.
@@ -540,40 +660,56 @@ class LocationFilter_CustomArea extends $pb.GeneratedMessage {
     return $result;
   }
   LocationFilter_CustomArea._() : super();
-  factory LocationFilter_CustomArea.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocationFilter_CustomArea.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocationFilter_CustomArea.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocationFilter_CustomArea.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationFilter.CustomArea', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
-    ..aOM<LocationFilter_CustomArea_Polygon>(1, _omitFieldNames ? '' : 'polygon', subBuilder: LocationFilter_CustomArea_Polygon.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocationFilter.CustomArea',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
+    ..aOM<LocationFilter_CustomArea_Polygon>(
+        1, _omitFieldNames ? '' : 'polygon',
+        subBuilder: LocationFilter_CustomArea_Polygon.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LocationFilter_CustomArea clone() => LocationFilter_CustomArea()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocationFilter_CustomArea copyWith(void Function(LocationFilter_CustomArea) updates) => super.copyWith((message) => updates(message as LocationFilter_CustomArea)) as LocationFilter_CustomArea;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LocationFilter_CustomArea clone() =>
+      LocationFilter_CustomArea()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocationFilter_CustomArea copyWith(
+          void Function(LocationFilter_CustomArea) updates) =>
+      super.copyWith((message) => updates(message as LocationFilter_CustomArea))
+          as LocationFilter_CustomArea;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocationFilter_CustomArea create() => LocationFilter_CustomArea._();
   LocationFilter_CustomArea createEmptyInstance() => create();
-  static $pb.PbList<LocationFilter_CustomArea> createRepeated() => $pb.PbList<LocationFilter_CustomArea>();
+  static $pb.PbList<LocationFilter_CustomArea> createRepeated() =>
+      $pb.PbList<LocationFilter_CustomArea>();
   @$core.pragma('dart2js:noInline')
-  static LocationFilter_CustomArea getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocationFilter_CustomArea>(create);
+  static LocationFilter_CustomArea getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocationFilter_CustomArea>(create);
   static LocationFilter_CustomArea? _defaultInstance;
 
   /// Required. The custom area represented as a polygon
   @$pb.TagNumber(1)
   LocationFilter_CustomArea_Polygon get polygon => $_getN(0);
   @$pb.TagNumber(1)
-  set polygon(LocationFilter_CustomArea_Polygon v) { setField(1, v); }
+  set polygon(LocationFilter_CustomArea_Polygon v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPolygon() => $_has(0);
   @$pb.TagNumber(1)
@@ -582,12 +718,7 @@ class LocationFilter_CustomArea extends $pb.GeneratedMessage {
   LocationFilter_CustomArea_Polygon ensurePolygon() => $_ensure(0);
 }
 
-enum LocationFilter_Area {
-  circle, 
-  region, 
-  customArea, 
-  notSet
-}
+enum LocationFilter_Area { circle, region, customArea, notSet }
 
 ///  Location filters.
 ///
@@ -611,52 +742,69 @@ class LocationFilter extends $pb.GeneratedMessage {
     return $result;
   }
   LocationFilter._() : super();
-  factory LocationFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocationFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocationFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocationFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, LocationFilter_Area> _LocationFilter_AreaByTag = {
-    1 : LocationFilter_Area.circle,
-    2 : LocationFilter_Area.region,
-    3 : LocationFilter_Area.customArea,
-    0 : LocationFilter_Area.notSet
+  static const $core.Map<$core.int, LocationFilter_Area>
+      _LocationFilter_AreaByTag = {
+    1: LocationFilter_Area.circle,
+    2: LocationFilter_Area.region,
+    3: LocationFilter_Area.customArea,
+    0: LocationFilter_Area.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocationFilter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<LocationFilter_Circle>(1, _omitFieldNames ? '' : 'circle', subBuilder: LocationFilter_Circle.create)
-    ..aOM<LocationFilter_Region>(2, _omitFieldNames ? '' : 'region', subBuilder: LocationFilter_Region.create)
-    ..aOM<LocationFilter_CustomArea>(3, _omitFieldNames ? '' : 'customArea', subBuilder: LocationFilter_CustomArea.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<LocationFilter_Circle>(1, _omitFieldNames ? '' : 'circle',
+        subBuilder: LocationFilter_Circle.create)
+    ..aOM<LocationFilter_Region>(2, _omitFieldNames ? '' : 'region',
+        subBuilder: LocationFilter_Region.create)
+    ..aOM<LocationFilter_CustomArea>(3, _omitFieldNames ? '' : 'customArea',
+        subBuilder: LocationFilter_CustomArea.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LocationFilter clone() => LocationFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocationFilter copyWith(void Function(LocationFilter) updates) => super.copyWith((message) => updates(message as LocationFilter)) as LocationFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocationFilter copyWith(void Function(LocationFilter) updates) =>
+      super.copyWith((message) => updates(message as LocationFilter))
+          as LocationFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocationFilter create() => LocationFilter._();
   LocationFilter createEmptyInstance() => create();
-  static $pb.PbList<LocationFilter> createRepeated() => $pb.PbList<LocationFilter>();
+  static $pb.PbList<LocationFilter> createRepeated() =>
+      $pb.PbList<LocationFilter>();
   @$core.pragma('dart2js:noInline')
-  static LocationFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocationFilter>(create);
+  static LocationFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocationFilter>(create);
   static LocationFilter? _defaultInstance;
 
-  LocationFilter_Area whichArea() => _LocationFilter_AreaByTag[$_whichOneof(0)]!;
+  LocationFilter_Area whichArea() =>
+      _LocationFilter_AreaByTag[$_whichOneof(0)]!;
   void clearArea() => clearField($_whichOneof(0));
 
   /// Area as a circle.
   @$pb.TagNumber(1)
   LocationFilter_Circle get circle => $_getN(0);
   @$pb.TagNumber(1)
-  set circle(LocationFilter_Circle v) { setField(1, v); }
+  set circle(LocationFilter_Circle v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCircle() => $_has(0);
   @$pb.TagNumber(1)
@@ -668,7 +816,10 @@ class LocationFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   LocationFilter_Region get region => $_getN(1);
   @$pb.TagNumber(2)
-  set region(LocationFilter_Region v) { setField(2, v); }
+  set region(LocationFilter_Region v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegion() => $_has(1);
   @$pb.TagNumber(2)
@@ -680,7 +831,10 @@ class LocationFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   LocationFilter_CustomArea get customArea => $_getN(2);
   @$pb.TagNumber(3)
-  set customArea(LocationFilter_CustomArea v) { setField(3, v); }
+  set customArea(LocationFilter_CustomArea v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCustomArea() => $_has(2);
   @$pb.TagNumber(3)
@@ -741,27 +895,33 @@ class TypeFilter extends $pb.GeneratedMessage {
     return $result;
   }
   TypeFilter._() : super();
-  factory TypeFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TypeFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TypeFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TypeFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TypeFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TypeFilter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'includedTypes')
     ..pPS(2, _omitFieldNames ? '' : 'excludedTypes')
     ..pPS(3, _omitFieldNames ? '' : 'includedPrimaryTypes')
     ..pPS(4, _omitFieldNames ? '' : 'excludedPrimaryTypes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TypeFilter clone() => TypeFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TypeFilter copyWith(void Function(TypeFilter) updates) => super.copyWith((message) => updates(message as TypeFilter)) as TypeFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TypeFilter copyWith(void Function(TypeFilter) updates) =>
+      super.copyWith((message) => updates(message as TypeFilter)) as TypeFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -770,7 +930,8 @@ class TypeFilter extends $pb.GeneratedMessage {
   TypeFilter createEmptyInstance() => create();
   static $pb.PbList<TypeFilter> createRepeated() => $pb.PbList<TypeFilter>();
   @$core.pragma('dart2js:noInline')
-  static TypeFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TypeFilter>(create);
+  static TypeFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TypeFilter>(create);
   static TypeFilter? _defaultInstance;
 
   /// Optional. Included Place types.
@@ -806,34 +967,43 @@ class RatingFilter extends $pb.GeneratedMessage {
     return $result;
   }
   RatingFilter._() : super();
-  factory RatingFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RatingFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RatingFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RatingFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RatingFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.areainsights.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RatingFilter',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
+      createEmptyInstance: create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'minRating', $pb.PbFieldType.OF)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'maxRating', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RatingFilter clone() => RatingFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RatingFilter copyWith(void Function(RatingFilter) updates) => super.copyWith((message) => updates(message as RatingFilter)) as RatingFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RatingFilter copyWith(void Function(RatingFilter) updates) =>
+      super.copyWith((message) => updates(message as RatingFilter))
+          as RatingFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RatingFilter create() => RatingFilter._();
   RatingFilter createEmptyInstance() => create();
-  static $pb.PbList<RatingFilter> createRepeated() => $pb.PbList<RatingFilter>();
+  static $pb.PbList<RatingFilter> createRepeated() =>
+      $pb.PbList<RatingFilter>();
   @$core.pragma('dart2js:noInline')
-  static RatingFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RatingFilter>(create);
+  static RatingFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RatingFilter>(create);
   static RatingFilter? _defaultInstance;
 
   /// Optional. Restricts results to places whose average user rating is greater
@@ -841,7 +1011,10 @@ class RatingFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get minRating => $_getN(0);
   @$pb.TagNumber(5)
-  set minRating($core.double v) { $_setFloat(0, v); }
+  set minRating($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMinRating() => $_has(0);
   @$pb.TagNumber(5)
@@ -852,13 +1025,16 @@ class RatingFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get maxRating => $_getN(1);
   @$pb.TagNumber(6)
-  set maxRating($core.double v) { $_setFloat(1, v); }
+  set maxRating($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMaxRating() => $_has(1);
   @$pb.TagNumber(6)
   void clearMaxRating() => clearField(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

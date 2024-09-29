@@ -31,10 +31,41 @@ const WriteLogEntriesRequest$json = {
   '1': 'WriteLogEntriesRequest',
   '2': [
     {'1': 'log_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'logName'},
-    {'1': 'resource', '3': 2, '4': 1, '5': 11, '6': '.google.api.MonitoredResource', '8': {}, '10': 'resource'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.logging.v2.WriteLogEntriesRequest.LabelsEntry', '8': {}, '10': 'labels'},
-    {'1': 'entries', '3': 4, '4': 3, '5': 11, '6': '.google.logging.v2.LogEntry', '8': {}, '10': 'entries'},
-    {'1': 'partial_success', '3': 5, '4': 1, '5': 8, '8': {}, '10': 'partialSuccess'},
+    {
+      '1': 'resource',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MonitoredResource',
+      '8': {},
+      '10': 'resource'
+    },
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.WriteLogEntriesRequest.LabelsEntry',
+      '8': {},
+      '10': 'labels'
+    },
+    {
+      '1': 'entries',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogEntry',
+      '8': {},
+      '10': 'entries'
+    },
+    {
+      '1': 'partial_success',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'partialSuccess'
+    },
     {'1': 'dry_run', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'dryRun'},
   ],
   '3': [WriteLogEntriesRequest_LabelsEntry$json],
@@ -67,14 +98,22 @@ const WriteLogEntriesResponse$json = {
 };
 
 /// Descriptor for `WriteLogEntriesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List writeLogEntriesResponseDescriptor = $convert.base64Decode(
-    'ChdXcml0ZUxvZ0VudHJpZXNSZXNwb25zZQ==');
+final $typed_data.Uint8List writeLogEntriesResponseDescriptor =
+    $convert.base64Decode('ChdXcml0ZUxvZ0VudHJpZXNSZXNwb25zZQ==');
 
 @$core.Deprecated('Use writeLogEntriesPartialErrorsDescriptor instead')
 const WriteLogEntriesPartialErrors$json = {
   '1': 'WriteLogEntriesPartialErrors',
   '2': [
-    {'1': 'log_entry_errors', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.WriteLogEntriesPartialErrors.LogEntryErrorsEntry', '10': 'logEntryErrors'},
+    {
+      '1': 'log_entry_errors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.logging.v2.WriteLogEntriesPartialErrors.LogEntryErrorsEntry',
+      '10': 'logEntryErrors'
+    },
   ],
   '3': [WriteLogEntriesPartialErrors_LogEntryErrorsEntry$json],
 };
@@ -84,7 +123,14 @@ const WriteLogEntriesPartialErrors_LogEntryErrorsEntry$json = {
   '1': 'LogEntryErrorsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 5, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -101,7 +147,14 @@ final $typed_data.Uint8List writeLogEntriesPartialErrorsDescriptor = $convert.ba
 const ListLogEntriesRequest$json = {
   '1': 'ListLogEntriesRequest',
   '2': [
-    {'1': 'resource_names', '3': 8, '4': 3, '5': 9, '8': {}, '10': 'resourceNames'},
+    {
+      '1': 'resource_names',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'resourceNames'
+    },
     {'1': 'filter', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'filter'},
     {'1': 'order_by', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'orderBy'},
     {'1': 'page_size', '3': 4, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
@@ -121,7 +174,14 @@ final $typed_data.Uint8List listLogEntriesRequestDescriptor = $convert.base64Dec
 const ListLogEntriesResponse$json = {
   '1': 'ListLogEntriesResponse',
   '2': [
-    {'1': 'entries', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.LogEntry', '10': 'entries'},
+    {
+      '1': 'entries',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogEntry',
+      '10': 'entries'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -132,7 +192,8 @@ final $typed_data.Uint8List listLogEntriesResponseDescriptor = $convert.base64De
     'luZy52Mi5Mb2dFbnRyeVIHZW50cmllcxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQ'
     'YWdlVG9rZW4=');
 
-@$core.Deprecated('Use listMonitoredResourceDescriptorsRequestDescriptor instead')
+@$core
+    .Deprecated('Use listMonitoredResourceDescriptorsRequestDescriptor instead')
 const ListMonitoredResourceDescriptorsRequest$json = {
   '1': 'ListMonitoredResourceDescriptorsRequest',
   '2': [
@@ -142,32 +203,49 @@ const ListMonitoredResourceDescriptorsRequest$json = {
 };
 
 /// Descriptor for `ListMonitoredResourceDescriptorsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listMonitoredResourceDescriptorsRequestDescriptor = $convert.base64Decode(
-    'CidMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1JlcXVlc3QSIAoJcGFnZV9zaXplGA'
-    'EgASgFQgPgQQFSCHBhZ2VTaXplEiIKCnBhZ2VfdG9rZW4YAiABKAlCA+BBAVIJcGFnZVRva2Vu');
+final $typed_data.Uint8List listMonitoredResourceDescriptorsRequestDescriptor =
+    $convert.base64Decode(
+        'CidMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1JlcXVlc3QSIAoJcGFnZV9zaXplGA'
+        'EgASgFQgPgQQFSCHBhZ2VTaXplEiIKCnBhZ2VfdG9rZW4YAiABKAlCA+BBAVIJcGFnZVRva2Vu');
 
-@$core.Deprecated('Use listMonitoredResourceDescriptorsResponseDescriptor instead')
+@$core.Deprecated(
+    'Use listMonitoredResourceDescriptorsResponseDescriptor instead')
 const ListMonitoredResourceDescriptorsResponse$json = {
   '1': 'ListMonitoredResourceDescriptorsResponse',
   '2': [
-    {'1': 'resource_descriptors', '3': 1, '4': 3, '5': 11, '6': '.google.api.MonitoredResourceDescriptor', '10': 'resourceDescriptors'},
+    {
+      '1': 'resource_descriptors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResourceDescriptor',
+      '10': 'resourceDescriptors'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListMonitoredResourceDescriptorsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listMonitoredResourceDescriptorsResponseDescriptor = $convert.base64Decode(
-    'CihMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1Jlc3BvbnNlEloKFHJlc291cmNlX2'
-    'Rlc2NyaXB0b3JzGAEgAygLMicuZ29vZ2xlLmFwaS5Nb25pdG9yZWRSZXNvdXJjZURlc2NyaXB0'
-    'b3JSE3Jlc291cmNlRGVzY3JpcHRvcnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UG'
-    'FnZVRva2Vu');
+final $typed_data.Uint8List listMonitoredResourceDescriptorsResponseDescriptor =
+    $convert.base64Decode(
+        'CihMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1Jlc3BvbnNlEloKFHJlc291cmNlX2'
+        'Rlc2NyaXB0b3JzGAEgAygLMicuZ29vZ2xlLmFwaS5Nb25pdG9yZWRSZXNvdXJjZURlc2NyaXB0'
+        'b3JSE3Jlc291cmNlRGVzY3JpcHRvcnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UG'
+        'FnZVRva2Vu');
 
 @$core.Deprecated('Use listLogsRequestDescriptor instead')
 const ListLogsRequest$json = {
   '1': 'ListLogsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'resource_names', '3': 8, '4': 3, '5': 9, '8': {}, '10': 'resourceNames'},
+    {
+      '1': 'resource_names',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'resourceNames'
+    },
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
   ],
@@ -198,9 +276,24 @@ final $typed_data.Uint8List listLogsResponseDescriptor = $convert.base64Decode(
 const TailLogEntriesRequest$json = {
   '1': 'TailLogEntriesRequest',
   '2': [
-    {'1': 'resource_names', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'resourceNames'},
+    {
+      '1': 'resource_names',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'resourceNames'
+    },
     {'1': 'filter', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'buffer_window', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'bufferWindow'},
+    {
+      '1': 'buffer_window',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'bufferWindow'
+    },
   ],
 };
 
@@ -214,8 +307,22 @@ final $typed_data.Uint8List tailLogEntriesRequestDescriptor = $convert.base64Dec
 const TailLogEntriesResponse$json = {
   '1': 'TailLogEntriesResponse',
   '2': [
-    {'1': 'entries', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.LogEntry', '10': 'entries'},
-    {'1': 'suppression_info', '3': 2, '4': 3, '5': 11, '6': '.google.logging.v2.TailLogEntriesResponse.SuppressionInfo', '10': 'suppressionInfo'},
+    {
+      '1': 'entries',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogEntry',
+      '10': 'entries'
+    },
+    {
+      '1': 'suppression_info',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.TailLogEntriesResponse.SuppressionInfo',
+      '10': 'suppressionInfo'
+    },
   ],
   '3': [TailLogEntriesResponse_SuppressionInfo$json],
 };
@@ -224,7 +331,14 @@ const TailLogEntriesResponse$json = {
 const TailLogEntriesResponse_SuppressionInfo$json = {
   '1': 'SuppressionInfo',
   '2': [
-    {'1': 'reason', '3': 1, '4': 1, '5': 14, '6': '.google.logging.v2.TailLogEntriesResponse.SuppressionInfo.Reason', '10': 'reason'},
+    {
+      '1': 'reason',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.v2.TailLogEntriesResponse.SuppressionInfo.Reason',
+      '10': 'reason'
+    },
     {'1': 'suppressed_count', '3': 2, '4': 1, '5': 5, '10': 'suppressedCount'},
   ],
   '4': [TailLogEntriesResponse_SuppressionInfo_Reason$json],
@@ -250,4 +364,3 @@ final $typed_data.Uint8List tailLogEntriesResponseDescriptor = $convert.base64De
     'JlYXNvblIGcmVhc29uEikKEHN1cHByZXNzZWRfY291bnQYAiABKAVSD3N1cHByZXNzZWRDb3Vu'
     'dCJCCgZSZWFzb24SFgoSUkVBU09OX1VOU1BFQ0lGSUVEEAASDgoKUkFURV9MSU1JVBABEhAKDE'
     '5PVF9DT05TVU1FRBAC');
-

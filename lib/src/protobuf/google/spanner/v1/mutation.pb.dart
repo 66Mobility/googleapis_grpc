@@ -37,42 +37,55 @@ class Mutation_Write extends $pb.GeneratedMessage {
     return $result;
   }
   Mutation_Write._() : super();
-  factory Mutation_Write.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Mutation_Write.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Mutation_Write.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Mutation_Write.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Mutation.Write', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Mutation.Write',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'table')
     ..pPS(2, _omitFieldNames ? '' : 'columns')
-    ..pc<$261.ListValue>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $261.ListValue.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$261.ListValue>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
+        subBuilder: $261.ListValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Mutation_Write clone() => Mutation_Write()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Mutation_Write copyWith(void Function(Mutation_Write) updates) => super.copyWith((message) => updates(message as Mutation_Write)) as Mutation_Write;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Mutation_Write copyWith(void Function(Mutation_Write) updates) =>
+      super.copyWith((message) => updates(message as Mutation_Write))
+          as Mutation_Write;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Mutation_Write create() => Mutation_Write._();
   Mutation_Write createEmptyInstance() => create();
-  static $pb.PbList<Mutation_Write> createRepeated() => $pb.PbList<Mutation_Write>();
+  static $pb.PbList<Mutation_Write> createRepeated() =>
+      $pb.PbList<Mutation_Write>();
   @$core.pragma('dart2js:noInline')
-  static Mutation_Write getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Mutation_Write>(create);
+  static Mutation_Write getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Mutation_Write>(create);
   static Mutation_Write? _defaultInstance;
 
   /// Required. The table whose rows will be written.
   @$pb.TagNumber(1)
   $core.String get table => $_getSZ(0);
   @$pb.TagNumber(1)
-  set table($core.String v) { $_setString(0, v); }
+  set table($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
@@ -114,41 +127,54 @@ class Mutation_Delete extends $pb.GeneratedMessage {
     return $result;
   }
   Mutation_Delete._() : super();
-  factory Mutation_Delete.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Mutation_Delete.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Mutation_Delete.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Mutation_Delete.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Mutation.Delete', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Mutation.Delete',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'table')
-    ..aOM<$551.KeySet>(2, _omitFieldNames ? '' : 'keySet', subBuilder: $551.KeySet.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$551.KeySet>(2, _omitFieldNames ? '' : 'keySet',
+        subBuilder: $551.KeySet.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Mutation_Delete clone() => Mutation_Delete()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Mutation_Delete copyWith(void Function(Mutation_Delete) updates) => super.copyWith((message) => updates(message as Mutation_Delete)) as Mutation_Delete;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Mutation_Delete copyWith(void Function(Mutation_Delete) updates) =>
+      super.copyWith((message) => updates(message as Mutation_Delete))
+          as Mutation_Delete;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Mutation_Delete create() => Mutation_Delete._();
   Mutation_Delete createEmptyInstance() => create();
-  static $pb.PbList<Mutation_Delete> createRepeated() => $pb.PbList<Mutation_Delete>();
+  static $pb.PbList<Mutation_Delete> createRepeated() =>
+      $pb.PbList<Mutation_Delete>();
   @$core.pragma('dart2js:noInline')
-  static Mutation_Delete getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Mutation_Delete>(create);
+  static Mutation_Delete getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Mutation_Delete>(create);
   static Mutation_Delete? _defaultInstance;
 
   /// Required. The table whose rows will be deleted.
   @$pb.TagNumber(1)
   $core.String get table => $_getSZ(0);
   @$pb.TagNumber(1)
-  set table($core.String v) { $_setString(0, v); }
+  set table($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
@@ -163,7 +189,10 @@ class Mutation_Delete extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $551.KeySet get keySet => $_getN(1);
   @$pb.TagNumber(2)
-  set keySet($551.KeySet v) { setField(2, v); }
+  set keySet($551.KeySet v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKeySet() => $_has(1);
   @$pb.TagNumber(2)
@@ -173,11 +202,11 @@ class Mutation_Delete extends $pb.GeneratedMessage {
 }
 
 enum Mutation_Operation {
-  insert, 
-  update, 
-  insertOrUpdate, 
-  replace, 
-  delete, 
+  insert,
+  update,
+  insertOrUpdate,
+  replace,
+  delete,
   notSet
 }
 
@@ -211,37 +240,49 @@ class Mutation extends $pb.GeneratedMessage {
     return $result;
   }
   Mutation._() : super();
-  factory Mutation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Mutation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Mutation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Mutation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Mutation_Operation> _Mutation_OperationByTag = {
-    1 : Mutation_Operation.insert,
-    2 : Mutation_Operation.update,
-    3 : Mutation_Operation.insertOrUpdate,
-    4 : Mutation_Operation.replace,
-    5 : Mutation_Operation.delete,
-    0 : Mutation_Operation.notSet
+  static const $core.Map<$core.int, Mutation_Operation>
+      _Mutation_OperationByTag = {
+    1: Mutation_Operation.insert,
+    2: Mutation_Operation.update,
+    3: Mutation_Operation.insertOrUpdate,
+    4: Mutation_Operation.replace,
+    5: Mutation_Operation.delete,
+    0: Mutation_Operation.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Mutation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Mutation',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
-    ..aOM<Mutation_Write>(1, _omitFieldNames ? '' : 'insert', subBuilder: Mutation_Write.create)
-    ..aOM<Mutation_Write>(2, _omitFieldNames ? '' : 'update', subBuilder: Mutation_Write.create)
-    ..aOM<Mutation_Write>(3, _omitFieldNames ? '' : 'insertOrUpdate', subBuilder: Mutation_Write.create)
-    ..aOM<Mutation_Write>(4, _omitFieldNames ? '' : 'replace', subBuilder: Mutation_Write.create)
-    ..aOM<Mutation_Delete>(5, _omitFieldNames ? '' : 'delete', subBuilder: Mutation_Delete.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Mutation_Write>(1, _omitFieldNames ? '' : 'insert',
+        subBuilder: Mutation_Write.create)
+    ..aOM<Mutation_Write>(2, _omitFieldNames ? '' : 'update',
+        subBuilder: Mutation_Write.create)
+    ..aOM<Mutation_Write>(3, _omitFieldNames ? '' : 'insertOrUpdate',
+        subBuilder: Mutation_Write.create)
+    ..aOM<Mutation_Write>(4, _omitFieldNames ? '' : 'replace',
+        subBuilder: Mutation_Write.create)
+    ..aOM<Mutation_Delete>(5, _omitFieldNames ? '' : 'delete',
+        subBuilder: Mutation_Delete.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Mutation clone() => Mutation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Mutation copyWith(void Function(Mutation) updates) => super.copyWith((message) => updates(message as Mutation)) as Mutation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Mutation copyWith(void Function(Mutation) updates) =>
+      super.copyWith((message) => updates(message as Mutation)) as Mutation;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -250,10 +291,12 @@ class Mutation extends $pb.GeneratedMessage {
   Mutation createEmptyInstance() => create();
   static $pb.PbList<Mutation> createRepeated() => $pb.PbList<Mutation>();
   @$core.pragma('dart2js:noInline')
-  static Mutation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Mutation>(create);
+  static Mutation getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Mutation>(create);
   static Mutation? _defaultInstance;
 
-  Mutation_Operation whichOperation() => _Mutation_OperationByTag[$_whichOneof(0)]!;
+  Mutation_Operation whichOperation() =>
+      _Mutation_OperationByTag[$_whichOneof(0)]!;
   void clearOperation() => clearField($_whichOneof(0));
 
   /// Insert new rows in a table. If any of the rows already exist,
@@ -261,7 +304,10 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Mutation_Write get insert => $_getN(0);
   @$pb.TagNumber(1)
-  set insert(Mutation_Write v) { setField(1, v); }
+  set insert(Mutation_Write v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInsert() => $_has(0);
   @$pb.TagNumber(1)
@@ -274,7 +320,10 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Mutation_Write get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update(Mutation_Write v) { setField(2, v); }
+  set update(Mutation_Write v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
@@ -292,7 +341,10 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Mutation_Write get insertOrUpdate => $_getN(2);
   @$pb.TagNumber(3)
-  set insertOrUpdate(Mutation_Write v) { setField(3, v); }
+  set insertOrUpdate(Mutation_Write v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasInsertOrUpdate() => $_has(2);
   @$pb.TagNumber(3)
@@ -312,7 +364,10 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Mutation_Write get replace => $_getN(3);
   @$pb.TagNumber(4)
-  set replace(Mutation_Write v) { setField(4, v); }
+  set replace(Mutation_Write v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReplace() => $_has(3);
   @$pb.TagNumber(4)
@@ -325,7 +380,10 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Mutation_Delete get delete => $_getN(4);
   @$pb.TagNumber(5)
-  set delete(Mutation_Delete v) { setField(5, v); }
+  set delete(Mutation_Delete v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDelete() => $_has(4);
   @$pb.TagNumber(5)
@@ -334,6 +392,6 @@ class Mutation extends $pb.GeneratedMessage {
   Mutation_Delete ensureDelete() => $_ensure(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

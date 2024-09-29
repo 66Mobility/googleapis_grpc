@@ -33,7 +33,15 @@ const CreateDatabaseRequest$json = {
   '1': 'CreateDatabaseRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'database', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database', '8': {}, '10': 'database'},
+    {
+      '1': 'database',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Database',
+      '8': {},
+      '10': 'database'
+    },
     {'1': 'database_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'databaseId'},
   ],
 };
@@ -51,14 +59,21 @@ const CreateDatabaseMetadata$json = {
 };
 
 /// Descriptor for `CreateDatabaseMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createDatabaseMetadataDescriptor = $convert.base64Decode(
-    'ChZDcmVhdGVEYXRhYmFzZU1ldGFkYXRh');
+final $typed_data.Uint8List createDatabaseMetadataDescriptor =
+    $convert.base64Decode('ChZDcmVhdGVEYXRhYmFzZU1ldGFkYXRh');
 
 @$core.Deprecated('Use listDatabasesResponseDescriptor instead')
 const ListDatabasesResponse$json = {
   '1': 'ListDatabasesResponse',
   '2': [
-    {'1': 'databases', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.Database', '10': 'databases'},
+    {
+      '1': 'databases',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Database',
+      '10': 'databases'
+    },
     {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
   ],
 };
@@ -86,8 +101,23 @@ final $typed_data.Uint8List getDatabaseRequestDescriptor = $convert.base64Decode
 const UpdateDatabaseRequest$json = {
   '1': 'UpdateDatabaseRequest',
   '2': [
-    {'1': 'database', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database', '8': {}, '10': 'database'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'database',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Database',
+      '8': {},
+      '10': 'database'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -103,8 +133,8 @@ const UpdateDatabaseMetadata$json = {
 };
 
 /// Descriptor for `UpdateDatabaseMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateDatabaseMetadataDescriptor = $convert.base64Decode(
-    'ChZVcGRhdGVEYXRhYmFzZU1ldGFkYXRh');
+final $typed_data.Uint8List updateDatabaseMetadataDescriptor =
+    $convert.base64Decode('ChZVcGRhdGVEYXRhYmFzZU1ldGFkYXRh');
 
 @$core.Deprecated('Use deleteDatabaseRequestDescriptor instead')
 const DeleteDatabaseRequest$json = {
@@ -126,15 +156,23 @@ const DeleteDatabaseMetadata$json = {
 };
 
 /// Descriptor for `DeleteDatabaseMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteDatabaseMetadataDescriptor = $convert.base64Decode(
-    'ChZEZWxldGVEYXRhYmFzZU1ldGFkYXRh');
+final $typed_data.Uint8List deleteDatabaseMetadataDescriptor =
+    $convert.base64Decode('ChZEZWxldGVEYXRhYmFzZU1ldGFkYXRh');
 
 @$core.Deprecated('Use createBackupScheduleRequestDescriptor instead')
 const CreateBackupScheduleRequest$json = {
   '1': 'CreateBackupScheduleRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'backup_schedule', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.BackupSchedule', '8': {}, '10': 'backupSchedule'},
+    {
+      '1': 'backup_schedule',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.BackupSchedule',
+      '8': {},
+      '10': 'backupSchedule'
+    },
   ],
 };
 
@@ -154,16 +192,32 @@ const GetBackupScheduleRequest$json = {
 };
 
 /// Descriptor for `GetBackupScheduleRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getBackupScheduleRequestDescriptor = $convert.base64Decode(
-    'ChhHZXRCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+kEpCidmaXJlc3'
-    'RvcmUuZ29vZ2xlYXBpcy5jb20vQmFja3VwU2NoZWR1bGVSBG5hbWU=');
+final $typed_data.Uint8List getBackupScheduleRequestDescriptor =
+    $convert.base64Decode(
+        'ChhHZXRCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+kEpCidmaXJlc3'
+        'RvcmUuZ29vZ2xlYXBpcy5jb20vQmFja3VwU2NoZWR1bGVSBG5hbWU=');
 
 @$core.Deprecated('Use updateBackupScheduleRequestDescriptor instead')
 const UpdateBackupScheduleRequest$json = {
   '1': 'UpdateBackupScheduleRequest',
   '2': [
-    {'1': 'backup_schedule', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.BackupSchedule', '8': {}, '10': 'backupSchedule'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'backup_schedule',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.BackupSchedule',
+      '8': {},
+      '10': 'backupSchedule'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -183,23 +237,32 @@ const ListBackupSchedulesRequest$json = {
 };
 
 /// Descriptor for `ListBackupSchedulesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listBackupSchedulesRequestDescriptor = $convert.base64Decode(
-    'ChpMaXN0QmFja3VwU2NoZWR1bGVzUmVxdWVzdBJBCgZwYXJlbnQYASABKAlCKeBBAvpBIwohZm'
-    'lyZXN0b3JlLmdvb2dsZWFwaXMuY29tL0RhdGFiYXNlUgZwYXJlbnQ=');
+final $typed_data.Uint8List listBackupSchedulesRequestDescriptor =
+    $convert.base64Decode(
+        'ChpMaXN0QmFja3VwU2NoZWR1bGVzUmVxdWVzdBJBCgZwYXJlbnQYASABKAlCKeBBAvpBIwohZm'
+        'lyZXN0b3JlLmdvb2dsZWFwaXMuY29tL0RhdGFiYXNlUgZwYXJlbnQ=');
 
 @$core.Deprecated('Use listBackupSchedulesResponseDescriptor instead')
 const ListBackupSchedulesResponse$json = {
   '1': 'ListBackupSchedulesResponse',
   '2': [
-    {'1': 'backup_schedules', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.BackupSchedule', '10': 'backupSchedules'},
+    {
+      '1': 'backup_schedules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.BackupSchedule',
+      '10': 'backupSchedules'
+    },
   ],
 };
 
 /// Descriptor for `ListBackupSchedulesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listBackupSchedulesResponseDescriptor = $convert.base64Decode(
-    'ChtMaXN0QmFja3VwU2NoZWR1bGVzUmVzcG9uc2USVAoQYmFja3VwX3NjaGVkdWxlcxgBIAMoCz'
-    'IpLmdvb2dsZS5maXJlc3RvcmUuYWRtaW4udjEuQmFja3VwU2NoZWR1bGVSD2JhY2t1cFNjaGVk'
-    'dWxlcw==');
+final $typed_data.Uint8List listBackupSchedulesResponseDescriptor =
+    $convert.base64Decode(
+        'ChtMaXN0QmFja3VwU2NoZWR1bGVzUmVzcG9uc2USVAoQYmFja3VwX3NjaGVkdWxlcxgBIAMoCz'
+        'IpLmdvb2dsZS5maXJlc3RvcmUuYWRtaW4udjEuQmFja3VwU2NoZWR1bGVSD2JhY2t1cFNjaGVk'
+        'dWxlcw==');
 
 @$core.Deprecated('Use deleteBackupScheduleRequestDescriptor instead')
 const DeleteBackupScheduleRequest$json = {
@@ -210,16 +273,25 @@ const DeleteBackupScheduleRequest$json = {
 };
 
 /// Descriptor for `DeleteBackupScheduleRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteBackupScheduleRequestDescriptor = $convert.base64Decode(
-    'ChtEZWxldGVCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+kEpCidmaX'
-    'Jlc3RvcmUuZ29vZ2xlYXBpcy5jb20vQmFja3VwU2NoZWR1bGVSBG5hbWU=');
+final $typed_data.Uint8List deleteBackupScheduleRequestDescriptor =
+    $convert.base64Decode(
+        'ChtEZWxldGVCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+kEpCidmaX'
+        'Jlc3RvcmUuZ29vZ2xlYXBpcy5jb20vQmFja3VwU2NoZWR1bGVSBG5hbWU=');
 
 @$core.Deprecated('Use createIndexRequestDescriptor instead')
 const CreateIndexRequest$json = {
   '1': 'CreateIndexRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'index', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Index', '8': {}, '10': 'index'},
+    {
+      '1': 'index',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Index',
+      '8': {},
+      '10': 'index'
+    },
   ],
 };
 
@@ -251,7 +323,14 @@ final $typed_data.Uint8List listIndexesRequestDescriptor = $convert.base64Decode
 const ListIndexesResponse$json = {
   '1': 'ListIndexesResponse',
   '2': [
-    {'1': 'indexes', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.Index', '10': 'indexes'},
+    {
+      '1': 'indexes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Index',
+      '10': 'indexes'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -292,8 +371,23 @@ final $typed_data.Uint8List deleteIndexRequestDescriptor = $convert.base64Decode
 const UpdateFieldRequest$json = {
   '1': 'UpdateFieldRequest',
   '2': [
-    {'1': 'field', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Field', '8': {}, '10': 'field'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'field',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Field',
+      '8': {},
+      '10': 'field'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -338,7 +432,14 @@ final $typed_data.Uint8List listFieldsRequestDescriptor = $convert.base64Decode(
 const ListFieldsResponse$json = {
   '1': 'ListFieldsResponse',
   '2': [
-    {'1': 'fields', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.Field', '10': 'fields'},
+    {
+      '1': 'fields',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Field',
+      '10': 'fields'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -357,7 +458,14 @@ const ExportDocumentsRequest$json = {
     {'1': 'collection_ids', '3': 2, '4': 3, '5': 9, '10': 'collectionIds'},
     {'1': 'output_uri_prefix', '3': 3, '4': 1, '5': 9, '10': 'outputUriPrefix'},
     {'1': 'namespace_ids', '3': 4, '4': 3, '5': 9, '10': 'namespaceIds'},
-    {'1': 'snapshot_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'snapshotTime'},
+    {
+      '1': 'snapshot_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'snapshotTime'
+    },
   ],
 };
 
@@ -392,8 +500,22 @@ const BulkDeleteDocumentsRequest$json = {
   '1': 'BulkDeleteDocumentsRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'collection_ids', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'collectionIds'},
-    {'1': 'namespace_ids', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'namespaceIds'},
+    {
+      '1': 'collection_ids',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'collectionIds'
+    },
+    {
+      '1': 'namespace_ids',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'namespaceIds'
+    },
   ],
 };
 
@@ -410,8 +532,8 @@ const BulkDeleteDocumentsResponse$json = {
 };
 
 /// Descriptor for `BulkDeleteDocumentsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List bulkDeleteDocumentsResponseDescriptor = $convert.base64Decode(
-    'ChtCdWxrRGVsZXRlRG9jdW1lbnRzUmVzcG9uc2U=');
+final $typed_data.Uint8List bulkDeleteDocumentsResponseDescriptor =
+    $convert.base64Decode('ChtCdWxrRGVsZXRlRG9jdW1lbnRzUmVzcG9uc2U=');
 
 @$core.Deprecated('Use getBackupRequestDescriptor instead')
 const GetBackupRequest$json = {
@@ -443,7 +565,14 @@ final $typed_data.Uint8List listBackupsRequestDescriptor = $convert.base64Decode
 const ListBackupsResponse$json = {
   '1': 'ListBackupsResponse',
   '2': [
-    {'1': 'backups', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.Backup', '10': 'backups'},
+    {
+      '1': 'backups',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Backup',
+      '10': 'backups'
+    },
     {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
   ],
 };
@@ -474,7 +603,15 @@ const RestoreDatabaseRequest$json = {
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'database_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'databaseId'},
     {'1': 'backup', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'backup'},
-    {'1': 'encryption_config', '3': 9, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.EncryptionConfig', '8': {}, '10': 'encryptionConfig'},
+    {
+      '1': 'encryption_config',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Database.EncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
   ],
 };
 
@@ -486,4 +623,3 @@ final $typed_data.Uint8List restoreDatabaseRequestDescriptor = $convert.base64De
     '9vZ2xlYXBpcy5jb20vQmFja3VwUgZiYWNrdXASZgoRZW5jcnlwdGlvbl9jb25maWcYCSABKAsy'
     'NC5nb29nbGUuZmlyZXN0b3JlLmFkbWluLnYxLkRhdGFiYXNlLkVuY3J5cHRpb25Db25maWdCA+'
     'BBAVIQZW5jcnlwdGlvbkNvbmZpZw==');
-

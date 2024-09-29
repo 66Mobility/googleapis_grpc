@@ -15,21 +15,30 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The state of matching `LfpStore` to a Google Business Profile.
 class LfpStore_StoreMatchingState extends $pb.ProtobufEnum {
-  static const LfpStore_StoreMatchingState STORE_MATCHING_STATE_UNSPECIFIED = LfpStore_StoreMatchingState._(0, _omitEnumNames ? '' : 'STORE_MATCHING_STATE_UNSPECIFIED');
-  static const LfpStore_StoreMatchingState STORE_MATCHING_STATE_MATCHED = LfpStore_StoreMatchingState._(1, _omitEnumNames ? '' : 'STORE_MATCHING_STATE_MATCHED');
-  static const LfpStore_StoreMatchingState STORE_MATCHING_STATE_FAILED = LfpStore_StoreMatchingState._(2, _omitEnumNames ? '' : 'STORE_MATCHING_STATE_FAILED');
+  static const LfpStore_StoreMatchingState STORE_MATCHING_STATE_UNSPECIFIED =
+      LfpStore_StoreMatchingState._(
+          0, _omitEnumNames ? '' : 'STORE_MATCHING_STATE_UNSPECIFIED');
+  static const LfpStore_StoreMatchingState STORE_MATCHING_STATE_MATCHED =
+      LfpStore_StoreMatchingState._(
+          1, _omitEnumNames ? '' : 'STORE_MATCHING_STATE_MATCHED');
+  static const LfpStore_StoreMatchingState STORE_MATCHING_STATE_FAILED =
+      LfpStore_StoreMatchingState._(
+          2, _omitEnumNames ? '' : 'STORE_MATCHING_STATE_FAILED');
 
-  static const $core.List<LfpStore_StoreMatchingState> values = <LfpStore_StoreMatchingState> [
+  static const $core.List<LfpStore_StoreMatchingState> values =
+      <LfpStore_StoreMatchingState>[
     STORE_MATCHING_STATE_UNSPECIFIED,
     STORE_MATCHING_STATE_MATCHED,
     STORE_MATCHING_STATE_FAILED,
   ];
 
-  static final $core.Map<$core.int, LfpStore_StoreMatchingState> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static LfpStore_StoreMatchingState? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, LfpStore_StoreMatchingState> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static LfpStore_StoreMatchingState? valueOf($core.int value) =>
+      _byValue[value];
 
-  const LfpStore_StoreMatchingState._($core.int v, $core.String n) : super(v, n);
+  const LfpStore_StoreMatchingState._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

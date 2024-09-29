@@ -29,25 +29,31 @@ class Simple extends $pb.GeneratedMessage {
     return $result;
   }
   Simple._() : super();
-  factory Simple.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Simple.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Simple.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Simple.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Simple', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Simple',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'speech')
     ..aOS(2, _omitFieldNames ? '' : 'text')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Simple clone() => Simple()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Simple copyWith(void Function(Simple) updates) => super.copyWith((message) => updates(message as Simple)) as Simple;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Simple copyWith(void Function(Simple) updates) =>
+      super.copyWith((message) => updates(message as Simple)) as Simple;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -56,7 +62,8 @@ class Simple extends $pb.GeneratedMessage {
   Simple createEmptyInstance() => create();
   static $pb.PbList<Simple> createRepeated() => $pb.PbList<Simple>();
   @$core.pragma('dart2js:noInline')
-  static Simple getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Simple>(create);
+  static Simple getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Simple>(create);
   static Simple? _defaultInstance;
 
   /// Optional. Represents the speech to be spoken to the user. Can be SSML or
@@ -66,7 +73,10 @@ class Simple extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get speech => $_getSZ(0);
   @$pb.TagNumber(1)
-  set speech($core.String v) { $_setString(0, v); }
+  set speech($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSpeech() => $_has(0);
   @$pb.TagNumber(1)
@@ -80,13 +90,16 @@ class Simple extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get text => $_getSZ(1);
   @$pb.TagNumber(2)
-  set text($core.String v) { $_setString(1, v); }
+  set text($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasText() => $_has(1);
   @$pb.TagNumber(2)
   void clearText() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -36,35 +36,44 @@ class AutofeedSettings extends $pb.GeneratedMessage {
     return $result;
   }
   AutofeedSettings._() : super();
-  factory AutofeedSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutofeedSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutofeedSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutofeedSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutofeedSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutofeedSettings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'enableProducts')
     ..aOB(3, _omitFieldNames ? '' : 'eligible')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AutofeedSettings clone() => AutofeedSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutofeedSettings copyWith(void Function(AutofeedSettings) updates) => super.copyWith((message) => updates(message as AutofeedSettings)) as AutofeedSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutofeedSettings copyWith(void Function(AutofeedSettings) updates) =>
+      super.copyWith((message) => updates(message as AutofeedSettings))
+          as AutofeedSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AutofeedSettings create() => AutofeedSettings._();
   AutofeedSettings createEmptyInstance() => create();
-  static $pb.PbList<AutofeedSettings> createRepeated() => $pb.PbList<AutofeedSettings>();
+  static $pb.PbList<AutofeedSettings> createRepeated() =>
+      $pb.PbList<AutofeedSettings>();
   @$core.pragma('dart2js:noInline')
-  static AutofeedSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutofeedSettings>(create);
+  static AutofeedSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AutofeedSettings>(create);
   static AutofeedSettings? _defaultInstance;
 
   /// Identifier. The resource name of the autofeed settings.
@@ -72,7 +81,10 @@ class AutofeedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -89,7 +101,10 @@ class AutofeedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get enableProducts => $_getBF(1);
   @$pb.TagNumber(2)
-  set enableProducts($core.bool v) { $_setBool(1, v); }
+  set enableProducts($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnableProducts() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,7 +115,10 @@ class AutofeedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get eligible => $_getBF(2);
   @$pb.TagNumber(3)
-  set eligible($core.bool v) { $_setBool(2, v); }
+  set eligible($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEligible() => $_has(2);
   @$pb.TagNumber(3)
@@ -119,33 +137,45 @@ class GetAutofeedSettingsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetAutofeedSettingsRequest._() : super();
-  factory GetAutofeedSettingsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetAutofeedSettingsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetAutofeedSettingsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetAutofeedSettingsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAutofeedSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetAutofeedSettingsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetAutofeedSettingsRequest clone() => GetAutofeedSettingsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetAutofeedSettingsRequest copyWith(void Function(GetAutofeedSettingsRequest) updates) => super.copyWith((message) => updates(message as GetAutofeedSettingsRequest)) as GetAutofeedSettingsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetAutofeedSettingsRequest clone() =>
+      GetAutofeedSettingsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetAutofeedSettingsRequest copyWith(
+          void Function(GetAutofeedSettingsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetAutofeedSettingsRequest))
+          as GetAutofeedSettingsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetAutofeedSettingsRequest create() => GetAutofeedSettingsRequest._();
   GetAutofeedSettingsRequest createEmptyInstance() => create();
-  static $pb.PbList<GetAutofeedSettingsRequest> createRepeated() => $pb.PbList<GetAutofeedSettingsRequest>();
+  static $pb.PbList<GetAutofeedSettingsRequest> createRepeated() =>
+      $pb.PbList<GetAutofeedSettingsRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetAutofeedSettingsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetAutofeedSettingsRequest>(create);
+  static GetAutofeedSettingsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetAutofeedSettingsRequest>(create);
   static GetAutofeedSettingsRequest? _defaultInstance;
 
   /// Required. The resource name of the autofeed settings.
@@ -153,7 +183,10 @@ class GetAutofeedSettingsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -176,41 +209,59 @@ class UpdateAutofeedSettingsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateAutofeedSettingsRequest._() : super();
-  factory UpdateAutofeedSettingsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateAutofeedSettingsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateAutofeedSettingsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateAutofeedSettingsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAutofeedSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..aOM<AutofeedSettings>(1, _omitFieldNames ? '' : 'autofeedSettings', subBuilder: AutofeedSettings.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateAutofeedSettingsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<AutofeedSettings>(1, _omitFieldNames ? '' : 'autofeedSettings',
+        subBuilder: AutofeedSettings.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateAutofeedSettingsRequest clone() => UpdateAutofeedSettingsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateAutofeedSettingsRequest copyWith(void Function(UpdateAutofeedSettingsRequest) updates) => super.copyWith((message) => updates(message as UpdateAutofeedSettingsRequest)) as UpdateAutofeedSettingsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateAutofeedSettingsRequest clone() =>
+      UpdateAutofeedSettingsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateAutofeedSettingsRequest copyWith(
+          void Function(UpdateAutofeedSettingsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateAutofeedSettingsRequest))
+          as UpdateAutofeedSettingsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateAutofeedSettingsRequest create() => UpdateAutofeedSettingsRequest._();
+  static UpdateAutofeedSettingsRequest create() =>
+      UpdateAutofeedSettingsRequest._();
   UpdateAutofeedSettingsRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateAutofeedSettingsRequest> createRepeated() => $pb.PbList<UpdateAutofeedSettingsRequest>();
+  static $pb.PbList<UpdateAutofeedSettingsRequest> createRepeated() =>
+      $pb.PbList<UpdateAutofeedSettingsRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateAutofeedSettingsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateAutofeedSettingsRequest>(create);
+  static UpdateAutofeedSettingsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateAutofeedSettingsRequest>(create);
   static UpdateAutofeedSettingsRequest? _defaultInstance;
 
   /// Required. The new version of the autofeed setting.
   @$pb.TagNumber(1)
   AutofeedSettings get autofeedSettings => $_getN(0);
   @$pb.TagNumber(1)
-  set autofeedSettings(AutofeedSettings v) { setField(1, v); }
+  set autofeedSettings(AutofeedSettings v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAutofeedSettings() => $_has(0);
   @$pb.TagNumber(1)
@@ -222,7 +273,10 @@ class UpdateAutofeedSettingsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -231,6 +285,6 @@ class UpdateAutofeedSettingsRequest extends $pb.GeneratedMessage {
   $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

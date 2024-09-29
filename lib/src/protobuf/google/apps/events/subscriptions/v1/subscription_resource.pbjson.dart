@@ -17,19 +17,92 @@ import 'dart:typed_data' as $typed_data;
 const Subscription$json = {
   '1': 'Subscription',
   '2': [
-    {'1': 'expire_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '9': 0, '10': 'expireTime'},
-    {'1': 'ttl', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '9': 0, '10': 'ttl'},
+    {
+      '1': 'expire_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '9': 0,
+      '10': 'expireTime'
+    },
+    {
+      '1': 'ttl',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '9': 0,
+      '10': 'ttl'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'uid'},
-    {'1': 'target_resource', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'targetResource'},
+    {
+      '1': 'target_resource',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'targetResource'
+    },
     {'1': 'event_types', '3': 5, '4': 3, '5': 9, '8': {}, '10': 'eventTypes'},
-    {'1': 'payload_options', '3': 6, '4': 1, '5': 11, '6': '.google.apps.events.subscriptions.v1.PayloadOptions', '8': {}, '10': 'payloadOptions'},
-    {'1': 'notification_endpoint', '3': 7, '4': 1, '5': 11, '6': '.google.apps.events.subscriptions.v1.NotificationEndpoint', '8': {}, '10': 'notificationEndpoint'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.apps.events.subscriptions.v1.Subscription.State', '8': {}, '10': 'state'},
-    {'1': 'suspension_reason', '3': 18, '4': 1, '5': 14, '6': '.google.apps.events.subscriptions.v1.Subscription.ErrorType', '8': {}, '10': 'suspensionReason'},
+    {
+      '1': 'payload_options',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.events.subscriptions.v1.PayloadOptions',
+      '8': {},
+      '10': 'payloadOptions'
+    },
+    {
+      '1': 'notification_endpoint',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.events.subscriptions.v1.NotificationEndpoint',
+      '8': {},
+      '10': 'notificationEndpoint'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.events.subscriptions.v1.Subscription.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'suspension_reason',
+      '3': 18,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.events.subscriptions.v1.Subscription.ErrorType',
+      '8': {},
+      '10': 'suspensionReason'
+    },
     {'1': 'authority', '3': 10, '4': 1, '5': 9, '8': {}, '10': 'authority'},
-    {'1': 'create_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
     {'1': 'reconciling', '3': 15, '4': 1, '5': 8, '8': {}, '10': 'reconciling'},
     {'1': 'etag', '3': 17, '4': 1, '5': 9, '8': {}, '10': 'etag'},
   ],
@@ -99,8 +172,23 @@ final $typed_data.Uint8List subscriptionDescriptor = $convert.base64Decode(
 const PayloadOptions$json = {
   '1': 'PayloadOptions',
   '2': [
-    {'1': 'include_resource', '3': 1, '4': 1, '5': 8, '8': {}, '10': 'includeResource'},
-    {'1': 'field_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'fieldMask'},
+    {
+      '1': 'include_resource',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'includeResource'
+    },
+    {
+      '1': 'field_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'fieldMask'
+    },
   ],
 };
 
@@ -114,7 +202,15 @@ final $typed_data.Uint8List payloadOptionsDescriptor = $convert.base64Decode(
 const NotificationEndpoint$json = {
   '1': 'NotificationEndpoint',
   '2': [
-    {'1': 'pubsub_topic', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'pubsubTopic'},
+    {
+      '1': 'pubsub_topic',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'pubsubTopic'
+    },
   ],
   '8': [
     {'1': 'endpoint'},
@@ -125,4 +221,3 @@ const NotificationEndpoint$json = {
 final $typed_data.Uint8List notificationEndpointDescriptor = $convert.base64Decode(
     'ChROb3RpZmljYXRpb25FbmRwb2ludBJICgxwdWJzdWJfdG9waWMYASABKAlCI+BBBfpBHQobcH'
     'Vic3ViLmdvb2dsZWFwaXMuY29tL1RvcGljSABSC3B1YnN1YlRvcGljQgoKCGVuZHBvaW50');
-

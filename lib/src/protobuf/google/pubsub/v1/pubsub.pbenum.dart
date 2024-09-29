@@ -15,14 +15,29 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Possible states for ingestion from Amazon Kinesis Data Streams.
 class IngestionDataSourceSettings_AwsKinesis_State extends $pb.ProtobufEnum {
-  static const IngestionDataSourceSettings_AwsKinesis_State STATE_UNSPECIFIED = IngestionDataSourceSettings_AwsKinesis_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const IngestionDataSourceSettings_AwsKinesis_State ACTIVE = IngestionDataSourceSettings_AwsKinesis_State._(1, _omitEnumNames ? '' : 'ACTIVE');
-  static const IngestionDataSourceSettings_AwsKinesis_State KINESIS_PERMISSION_DENIED = IngestionDataSourceSettings_AwsKinesis_State._(2, _omitEnumNames ? '' : 'KINESIS_PERMISSION_DENIED');
-  static const IngestionDataSourceSettings_AwsKinesis_State PUBLISH_PERMISSION_DENIED = IngestionDataSourceSettings_AwsKinesis_State._(3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
-  static const IngestionDataSourceSettings_AwsKinesis_State STREAM_NOT_FOUND = IngestionDataSourceSettings_AwsKinesis_State._(4, _omitEnumNames ? '' : 'STREAM_NOT_FOUND');
-  static const IngestionDataSourceSettings_AwsKinesis_State CONSUMER_NOT_FOUND = IngestionDataSourceSettings_AwsKinesis_State._(5, _omitEnumNames ? '' : 'CONSUMER_NOT_FOUND');
+  static const IngestionDataSourceSettings_AwsKinesis_State STATE_UNSPECIFIED =
+      IngestionDataSourceSettings_AwsKinesis_State._(
+          0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const IngestionDataSourceSettings_AwsKinesis_State ACTIVE =
+      IngestionDataSourceSettings_AwsKinesis_State._(
+          1, _omitEnumNames ? '' : 'ACTIVE');
+  static const IngestionDataSourceSettings_AwsKinesis_State
+      KINESIS_PERMISSION_DENIED =
+      IngestionDataSourceSettings_AwsKinesis_State._(
+          2, _omitEnumNames ? '' : 'KINESIS_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_AwsKinesis_State
+      PUBLISH_PERMISSION_DENIED =
+      IngestionDataSourceSettings_AwsKinesis_State._(
+          3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_AwsKinesis_State STREAM_NOT_FOUND =
+      IngestionDataSourceSettings_AwsKinesis_State._(
+          4, _omitEnumNames ? '' : 'STREAM_NOT_FOUND');
+  static const IngestionDataSourceSettings_AwsKinesis_State CONSUMER_NOT_FOUND =
+      IngestionDataSourceSettings_AwsKinesis_State._(
+          5, _omitEnumNames ? '' : 'CONSUMER_NOT_FOUND');
 
-  static const $core.List<IngestionDataSourceSettings_AwsKinesis_State> values = <IngestionDataSourceSettings_AwsKinesis_State> [
+  static const $core.List<IngestionDataSourceSettings_AwsKinesis_State> values =
+      <IngestionDataSourceSettings_AwsKinesis_State>[
     STATE_UNSPECIFIED,
     ACTIVE,
     KINESIS_PERMISSION_DENIED,
@@ -31,22 +46,43 @@ class IngestionDataSourceSettings_AwsKinesis_State extends $pb.ProtobufEnum {
     CONSUMER_NOT_FOUND,
   ];
 
-  static final $core.Map<$core.int, IngestionDataSourceSettings_AwsKinesis_State> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static IngestionDataSourceSettings_AwsKinesis_State? valueOf($core.int value) => _byValue[value];
+  static final $core
+      .Map<$core.int, IngestionDataSourceSettings_AwsKinesis_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static IngestionDataSourceSettings_AwsKinesis_State? valueOf(
+          $core.int value) =>
+      _byValue[value];
 
-  const IngestionDataSourceSettings_AwsKinesis_State._($core.int v, $core.String n) : super(v, n);
+  const IngestionDataSourceSettings_AwsKinesis_State._(
+      $core.int v, $core.String n)
+      : super(v, n);
 }
 
 /// Possible states for ingestion from Cloud Storage.
 class IngestionDataSourceSettings_CloudStorage_State extends $pb.ProtobufEnum {
-  static const IngestionDataSourceSettings_CloudStorage_State STATE_UNSPECIFIED = IngestionDataSourceSettings_CloudStorage_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const IngestionDataSourceSettings_CloudStorage_State ACTIVE = IngestionDataSourceSettings_CloudStorage_State._(1, _omitEnumNames ? '' : 'ACTIVE');
-  static const IngestionDataSourceSettings_CloudStorage_State CLOUD_STORAGE_PERMISSION_DENIED = IngestionDataSourceSettings_CloudStorage_State._(2, _omitEnumNames ? '' : 'CLOUD_STORAGE_PERMISSION_DENIED');
-  static const IngestionDataSourceSettings_CloudStorage_State PUBLISH_PERMISSION_DENIED = IngestionDataSourceSettings_CloudStorage_State._(3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
-  static const IngestionDataSourceSettings_CloudStorage_State BUCKET_NOT_FOUND = IngestionDataSourceSettings_CloudStorage_State._(4, _omitEnumNames ? '' : 'BUCKET_NOT_FOUND');
-  static const IngestionDataSourceSettings_CloudStorage_State TOO_MANY_OBJECTS = IngestionDataSourceSettings_CloudStorage_State._(5, _omitEnumNames ? '' : 'TOO_MANY_OBJECTS');
+  static const IngestionDataSourceSettings_CloudStorage_State
+      STATE_UNSPECIFIED = IngestionDataSourceSettings_CloudStorage_State._(
+          0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const IngestionDataSourceSettings_CloudStorage_State ACTIVE =
+      IngestionDataSourceSettings_CloudStorage_State._(
+          1, _omitEnumNames ? '' : 'ACTIVE');
+  static const IngestionDataSourceSettings_CloudStorage_State
+      CLOUD_STORAGE_PERMISSION_DENIED =
+      IngestionDataSourceSettings_CloudStorage_State._(
+          2, _omitEnumNames ? '' : 'CLOUD_STORAGE_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_CloudStorage_State
+      PUBLISH_PERMISSION_DENIED =
+      IngestionDataSourceSettings_CloudStorage_State._(
+          3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_CloudStorage_State BUCKET_NOT_FOUND =
+      IngestionDataSourceSettings_CloudStorage_State._(
+          4, _omitEnumNames ? '' : 'BUCKET_NOT_FOUND');
+  static const IngestionDataSourceSettings_CloudStorage_State TOO_MANY_OBJECTS =
+      IngestionDataSourceSettings_CloudStorage_State._(
+          5, _omitEnumNames ? '' : 'TOO_MANY_OBJECTS');
 
-  static const $core.List<IngestionDataSourceSettings_CloudStorage_State> values = <IngestionDataSourceSettings_CloudStorage_State> [
+  static const $core.List<IngestionDataSourceSettings_CloudStorage_State>
+      values = <IngestionDataSourceSettings_CloudStorage_State>[
     STATE_UNSPECIFIED,
     ACTIVE,
     CLOUD_STORAGE_PERMISSION_DENIED,
@@ -55,22 +91,36 @@ class IngestionDataSourceSettings_CloudStorage_State extends $pb.ProtobufEnum {
     TOO_MANY_OBJECTS,
   ];
 
-  static final $core.Map<$core.int, IngestionDataSourceSettings_CloudStorage_State> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static IngestionDataSourceSettings_CloudStorage_State? valueOf($core.int value) => _byValue[value];
+  static final $core
+      .Map<$core.int, IngestionDataSourceSettings_CloudStorage_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static IngestionDataSourceSettings_CloudStorage_State? valueOf(
+          $core.int value) =>
+      _byValue[value];
 
-  const IngestionDataSourceSettings_CloudStorage_State._($core.int v, $core.String n) : super(v, n);
+  const IngestionDataSourceSettings_CloudStorage_State._(
+      $core.int v, $core.String n)
+      : super(v, n);
 }
 
 /// Severity levels of Platform Logs.
 class PlatformLogsSettings_Severity extends $pb.ProtobufEnum {
-  static const PlatformLogsSettings_Severity SEVERITY_UNSPECIFIED = PlatformLogsSettings_Severity._(0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
-  static const PlatformLogsSettings_Severity DISABLED = PlatformLogsSettings_Severity._(1, _omitEnumNames ? '' : 'DISABLED');
-  static const PlatformLogsSettings_Severity DEBUG = PlatformLogsSettings_Severity._(2, _omitEnumNames ? '' : 'DEBUG');
-  static const PlatformLogsSettings_Severity INFO = PlatformLogsSettings_Severity._(3, _omitEnumNames ? '' : 'INFO');
-  static const PlatformLogsSettings_Severity WARNING = PlatformLogsSettings_Severity._(4, _omitEnumNames ? '' : 'WARNING');
-  static const PlatformLogsSettings_Severity ERROR = PlatformLogsSettings_Severity._(5, _omitEnumNames ? '' : 'ERROR');
+  static const PlatformLogsSettings_Severity SEVERITY_UNSPECIFIED =
+      PlatformLogsSettings_Severity._(
+          0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
+  static const PlatformLogsSettings_Severity DISABLED =
+      PlatformLogsSettings_Severity._(1, _omitEnumNames ? '' : 'DISABLED');
+  static const PlatformLogsSettings_Severity DEBUG =
+      PlatformLogsSettings_Severity._(2, _omitEnumNames ? '' : 'DEBUG');
+  static const PlatformLogsSettings_Severity INFO =
+      PlatformLogsSettings_Severity._(3, _omitEnumNames ? '' : 'INFO');
+  static const PlatformLogsSettings_Severity WARNING =
+      PlatformLogsSettings_Severity._(4, _omitEnumNames ? '' : 'WARNING');
+  static const PlatformLogsSettings_Severity ERROR =
+      PlatformLogsSettings_Severity._(5, _omitEnumNames ? '' : 'ERROR');
 
-  static const $core.List<PlatformLogsSettings_Severity> values = <PlatformLogsSettings_Severity> [
+  static const $core.List<PlatformLogsSettings_Severity> values =
+      <PlatformLogsSettings_Severity>[
     SEVERITY_UNSPECIFIED,
     DISABLED,
     DEBUG,
@@ -79,25 +129,32 @@ class PlatformLogsSettings_Severity extends $pb.ProtobufEnum {
     ERROR,
   ];
 
-  static final $core.Map<$core.int, PlatformLogsSettings_Severity> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static PlatformLogsSettings_Severity? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, PlatformLogsSettings_Severity> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static PlatformLogsSettings_Severity? valueOf($core.int value) =>
+      _byValue[value];
 
-  const PlatformLogsSettings_Severity._($core.int v, $core.String n) : super(v, n);
+  const PlatformLogsSettings_Severity._($core.int v, $core.String n)
+      : super(v, n);
 }
 
 /// The state of the topic.
 class Topic_State extends $pb.ProtobufEnum {
-  static const Topic_State STATE_UNSPECIFIED = Topic_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const Topic_State ACTIVE = Topic_State._(1, _omitEnumNames ? '' : 'ACTIVE');
-  static const Topic_State INGESTION_RESOURCE_ERROR = Topic_State._(2, _omitEnumNames ? '' : 'INGESTION_RESOURCE_ERROR');
+  static const Topic_State STATE_UNSPECIFIED =
+      Topic_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const Topic_State ACTIVE =
+      Topic_State._(1, _omitEnumNames ? '' : 'ACTIVE');
+  static const Topic_State INGESTION_RESOURCE_ERROR =
+      Topic_State._(2, _omitEnumNames ? '' : 'INGESTION_RESOURCE_ERROR');
 
-  static const $core.List<Topic_State> values = <Topic_State> [
+  static const $core.List<Topic_State> values = <Topic_State>[
     STATE_UNSPECIFIED,
     ACTIVE,
     INGESTION_RESOURCE_ERROR,
   ];
 
-  static final $core.Map<$core.int, Topic_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Topic_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Topic_State? valueOf($core.int value) => _byValue[value];
 
   const Topic_State._($core.int v, $core.String n) : super(v, n);
@@ -105,17 +162,21 @@ class Topic_State extends $pb.ProtobufEnum {
 
 /// Possible states for a subscription.
 class Subscription_State extends $pb.ProtobufEnum {
-  static const Subscription_State STATE_UNSPECIFIED = Subscription_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const Subscription_State ACTIVE = Subscription_State._(1, _omitEnumNames ? '' : 'ACTIVE');
-  static const Subscription_State RESOURCE_ERROR = Subscription_State._(2, _omitEnumNames ? '' : 'RESOURCE_ERROR');
+  static const Subscription_State STATE_UNSPECIFIED =
+      Subscription_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const Subscription_State ACTIVE =
+      Subscription_State._(1, _omitEnumNames ? '' : 'ACTIVE');
+  static const Subscription_State RESOURCE_ERROR =
+      Subscription_State._(2, _omitEnumNames ? '' : 'RESOURCE_ERROR');
 
-  static const $core.List<Subscription_State> values = <Subscription_State> [
+  static const $core.List<Subscription_State> values = <Subscription_State>[
     STATE_UNSPECIFIED,
     ACTIVE,
     RESOURCE_ERROR,
   ];
 
-  static final $core.Map<$core.int, Subscription_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Subscription_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Subscription_State? valueOf($core.int value) => _byValue[value];
 
   const Subscription_State._($core.int v, $core.String n) : super(v, n);
@@ -123,14 +184,21 @@ class Subscription_State extends $pb.ProtobufEnum {
 
 /// Possible states for a BigQuery subscription.
 class BigQueryConfig_State extends $pb.ProtobufEnum {
-  static const BigQueryConfig_State STATE_UNSPECIFIED = BigQueryConfig_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const BigQueryConfig_State ACTIVE = BigQueryConfig_State._(1, _omitEnumNames ? '' : 'ACTIVE');
-  static const BigQueryConfig_State PERMISSION_DENIED = BigQueryConfig_State._(2, _omitEnumNames ? '' : 'PERMISSION_DENIED');
-  static const BigQueryConfig_State NOT_FOUND = BigQueryConfig_State._(3, _omitEnumNames ? '' : 'NOT_FOUND');
-  static const BigQueryConfig_State SCHEMA_MISMATCH = BigQueryConfig_State._(4, _omitEnumNames ? '' : 'SCHEMA_MISMATCH');
-  static const BigQueryConfig_State IN_TRANSIT_LOCATION_RESTRICTION = BigQueryConfig_State._(5, _omitEnumNames ? '' : 'IN_TRANSIT_LOCATION_RESTRICTION');
+  static const BigQueryConfig_State STATE_UNSPECIFIED =
+      BigQueryConfig_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const BigQueryConfig_State ACTIVE =
+      BigQueryConfig_State._(1, _omitEnumNames ? '' : 'ACTIVE');
+  static const BigQueryConfig_State PERMISSION_DENIED =
+      BigQueryConfig_State._(2, _omitEnumNames ? '' : 'PERMISSION_DENIED');
+  static const BigQueryConfig_State NOT_FOUND =
+      BigQueryConfig_State._(3, _omitEnumNames ? '' : 'NOT_FOUND');
+  static const BigQueryConfig_State SCHEMA_MISMATCH =
+      BigQueryConfig_State._(4, _omitEnumNames ? '' : 'SCHEMA_MISMATCH');
+  static const BigQueryConfig_State IN_TRANSIT_LOCATION_RESTRICTION =
+      BigQueryConfig_State._(
+          5, _omitEnumNames ? '' : 'IN_TRANSIT_LOCATION_RESTRICTION');
 
-  static const $core.List<BigQueryConfig_State> values = <BigQueryConfig_State> [
+  static const $core.List<BigQueryConfig_State> values = <BigQueryConfig_State>[
     STATE_UNSPECIFIED,
     ACTIVE,
     PERMISSION_DENIED,
@@ -139,7 +207,8 @@ class BigQueryConfig_State extends $pb.ProtobufEnum {
     IN_TRANSIT_LOCATION_RESTRICTION,
   ];
 
-  static final $core.Map<$core.int, BigQueryConfig_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, BigQueryConfig_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static BigQueryConfig_State? valueOf($core.int value) => _byValue[value];
 
   const BigQueryConfig_State._($core.int v, $core.String n) : super(v, n);
@@ -147,14 +216,22 @@ class BigQueryConfig_State extends $pb.ProtobufEnum {
 
 /// Possible states for a Cloud Storage subscription.
 class CloudStorageConfig_State extends $pb.ProtobufEnum {
-  static const CloudStorageConfig_State STATE_UNSPECIFIED = CloudStorageConfig_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const CloudStorageConfig_State ACTIVE = CloudStorageConfig_State._(1, _omitEnumNames ? '' : 'ACTIVE');
-  static const CloudStorageConfig_State PERMISSION_DENIED = CloudStorageConfig_State._(2, _omitEnumNames ? '' : 'PERMISSION_DENIED');
-  static const CloudStorageConfig_State NOT_FOUND = CloudStorageConfig_State._(3, _omitEnumNames ? '' : 'NOT_FOUND');
-  static const CloudStorageConfig_State IN_TRANSIT_LOCATION_RESTRICTION = CloudStorageConfig_State._(4, _omitEnumNames ? '' : 'IN_TRANSIT_LOCATION_RESTRICTION');
-  static const CloudStorageConfig_State SCHEMA_MISMATCH = CloudStorageConfig_State._(5, _omitEnumNames ? '' : 'SCHEMA_MISMATCH');
+  static const CloudStorageConfig_State STATE_UNSPECIFIED =
+      CloudStorageConfig_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const CloudStorageConfig_State ACTIVE =
+      CloudStorageConfig_State._(1, _omitEnumNames ? '' : 'ACTIVE');
+  static const CloudStorageConfig_State PERMISSION_DENIED =
+      CloudStorageConfig_State._(2, _omitEnumNames ? '' : 'PERMISSION_DENIED');
+  static const CloudStorageConfig_State NOT_FOUND =
+      CloudStorageConfig_State._(3, _omitEnumNames ? '' : 'NOT_FOUND');
+  static const CloudStorageConfig_State IN_TRANSIT_LOCATION_RESTRICTION =
+      CloudStorageConfig_State._(
+          4, _omitEnumNames ? '' : 'IN_TRANSIT_LOCATION_RESTRICTION');
+  static const CloudStorageConfig_State SCHEMA_MISMATCH =
+      CloudStorageConfig_State._(5, _omitEnumNames ? '' : 'SCHEMA_MISMATCH');
 
-  static const $core.List<CloudStorageConfig_State> values = <CloudStorageConfig_State> [
+  static const $core.List<CloudStorageConfig_State> values =
+      <CloudStorageConfig_State>[
     STATE_UNSPECIFIED,
     ACTIVE,
     PERMISSION_DENIED,
@@ -163,11 +240,11 @@ class CloudStorageConfig_State extends $pb.ProtobufEnum {
     SCHEMA_MISMATCH,
   ];
 
-  static final $core.Map<$core.int, CloudStorageConfig_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, CloudStorageConfig_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static CloudStorageConfig_State? valueOf($core.int value) => _byValue[value];
 
   const CloudStorageConfig_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

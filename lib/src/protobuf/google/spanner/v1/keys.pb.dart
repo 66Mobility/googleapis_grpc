@@ -15,17 +15,9 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/struct.pb.dart' as $261;
 
-enum KeyRange_StartKeyType {
-  startClosed, 
-  startOpen, 
-  notSet
-}
+enum KeyRange_StartKeyType { startClosed, startOpen, notSet }
 
-enum KeyRange_EndKeyType {
-  endClosed, 
-  endOpen, 
-  notSet
-}
+enum KeyRange_EndKeyType { endClosed, endOpen, notSet }
 
 ///  KeyRange represents a range of rows in a table or index.
 ///
@@ -138,39 +130,51 @@ class KeyRange extends $pb.GeneratedMessage {
     return $result;
   }
   KeyRange._() : super();
-  factory KeyRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory KeyRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory KeyRange.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory KeyRange.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, KeyRange_StartKeyType> _KeyRange_StartKeyTypeByTag = {
-    1 : KeyRange_StartKeyType.startClosed,
-    2 : KeyRange_StartKeyType.startOpen,
-    0 : KeyRange_StartKeyType.notSet
+  static const $core.Map<$core.int, KeyRange_StartKeyType>
+      _KeyRange_StartKeyTypeByTag = {
+    1: KeyRange_StartKeyType.startClosed,
+    2: KeyRange_StartKeyType.startOpen,
+    0: KeyRange_StartKeyType.notSet
   };
-  static const $core.Map<$core.int, KeyRange_EndKeyType> _KeyRange_EndKeyTypeByTag = {
-    3 : KeyRange_EndKeyType.endClosed,
-    4 : KeyRange_EndKeyType.endOpen,
-    0 : KeyRange_EndKeyType.notSet
+  static const $core.Map<$core.int, KeyRange_EndKeyType>
+      _KeyRange_EndKeyTypeByTag = {
+    3: KeyRange_EndKeyType.endClosed,
+    4: KeyRange_EndKeyType.endOpen,
+    0: KeyRange_EndKeyType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeyRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'KeyRange',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..oo(1, [3, 4])
-    ..aOM<$261.ListValue>(1, _omitFieldNames ? '' : 'startClosed', subBuilder: $261.ListValue.create)
-    ..aOM<$261.ListValue>(2, _omitFieldNames ? '' : 'startOpen', subBuilder: $261.ListValue.create)
-    ..aOM<$261.ListValue>(3, _omitFieldNames ? '' : 'endClosed', subBuilder: $261.ListValue.create)
-    ..aOM<$261.ListValue>(4, _omitFieldNames ? '' : 'endOpen', subBuilder: $261.ListValue.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$261.ListValue>(1, _omitFieldNames ? '' : 'startClosed',
+        subBuilder: $261.ListValue.create)
+    ..aOM<$261.ListValue>(2, _omitFieldNames ? '' : 'startOpen',
+        subBuilder: $261.ListValue.create)
+    ..aOM<$261.ListValue>(3, _omitFieldNames ? '' : 'endClosed',
+        subBuilder: $261.ListValue.create)
+    ..aOM<$261.ListValue>(4, _omitFieldNames ? '' : 'endOpen',
+        subBuilder: $261.ListValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   KeyRange clone() => KeyRange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  KeyRange copyWith(void Function(KeyRange) updates) => super.copyWith((message) => updates(message as KeyRange)) as KeyRange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  KeyRange copyWith(void Function(KeyRange) updates) =>
+      super.copyWith((message) => updates(message as KeyRange)) as KeyRange;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -179,13 +183,16 @@ class KeyRange extends $pb.GeneratedMessage {
   KeyRange createEmptyInstance() => create();
   static $pb.PbList<KeyRange> createRepeated() => $pb.PbList<KeyRange>();
   @$core.pragma('dart2js:noInline')
-  static KeyRange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KeyRange>(create);
+  static KeyRange getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KeyRange>(create);
   static KeyRange? _defaultInstance;
 
-  KeyRange_StartKeyType whichStartKeyType() => _KeyRange_StartKeyTypeByTag[$_whichOneof(0)]!;
+  KeyRange_StartKeyType whichStartKeyType() =>
+      _KeyRange_StartKeyTypeByTag[$_whichOneof(0)]!;
   void clearStartKeyType() => clearField($_whichOneof(0));
 
-  KeyRange_EndKeyType whichEndKeyType() => _KeyRange_EndKeyTypeByTag[$_whichOneof(1)]!;
+  KeyRange_EndKeyType whichEndKeyType() =>
+      _KeyRange_EndKeyTypeByTag[$_whichOneof(1)]!;
   void clearEndKeyType() => clearField($_whichOneof(1));
 
   /// If the start is closed, then the range includes all rows whose
@@ -193,7 +200,10 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $261.ListValue get startClosed => $_getN(0);
   @$pb.TagNumber(1)
-  set startClosed($261.ListValue v) { setField(1, v); }
+  set startClosed($261.ListValue v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartClosed() => $_has(0);
   @$pb.TagNumber(1)
@@ -206,7 +216,10 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $261.ListValue get startOpen => $_getN(1);
   @$pb.TagNumber(2)
-  set startOpen($261.ListValue v) { setField(2, v); }
+  set startOpen($261.ListValue v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartOpen() => $_has(1);
   @$pb.TagNumber(2)
@@ -219,7 +232,10 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $261.ListValue get endClosed => $_getN(2);
   @$pb.TagNumber(3)
-  set endClosed($261.ListValue v) { setField(3, v); }
+  set endClosed($261.ListValue v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEndClosed() => $_has(2);
   @$pb.TagNumber(3)
@@ -232,7 +248,10 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $261.ListValue get endOpen => $_getN(3);
   @$pb.TagNumber(4)
-  set endOpen($261.ListValue v) { setField(4, v); }
+  set endOpen($261.ListValue v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEndOpen() => $_has(3);
   @$pb.TagNumber(4)
@@ -267,26 +286,34 @@ class KeySet extends $pb.GeneratedMessage {
     return $result;
   }
   KeySet._() : super();
-  factory KeySet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory KeySet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory KeySet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory KeySet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeySet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..pc<$261.ListValue>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $261.ListValue.create)
-    ..pc<KeyRange>(2, _omitFieldNames ? '' : 'ranges', $pb.PbFieldType.PM, subBuilder: KeyRange.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'KeySet',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..pc<$261.ListValue>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
+        subBuilder: $261.ListValue.create)
+    ..pc<KeyRange>(2, _omitFieldNames ? '' : 'ranges', $pb.PbFieldType.PM,
+        subBuilder: KeyRange.create)
     ..aOB(3, _omitFieldNames ? '' : 'all')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   KeySet clone() => KeySet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  KeySet copyWith(void Function(KeySet) updates) => super.copyWith((message) => updates(message as KeySet)) as KeySet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  KeySet copyWith(void Function(KeySet) updates) =>
+      super.copyWith((message) => updates(message as KeySet)) as KeySet;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -295,7 +322,8 @@ class KeySet extends $pb.GeneratedMessage {
   KeySet createEmptyInstance() => create();
   static $pb.PbList<KeySet> createRepeated() => $pb.PbList<KeySet>();
   @$core.pragma('dart2js:noInline')
-  static KeySet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KeySet>(create);
+  static KeySet getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KeySet>(create);
   static KeySet? _defaultInstance;
 
   /// A list of specific keys. Entries in `keys` should have exactly as
@@ -316,13 +344,16 @@ class KeySet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get all => $_getBF(2);
   @$pb.TagNumber(3)
-  set all($core.bool v) { $_setBool(2, v); }
+  set all($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAll() => $_has(2);
   @$pb.TagNumber(3)
   void clearAll() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

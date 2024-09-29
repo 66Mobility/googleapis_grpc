@@ -16,19 +16,22 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// If the query is a limit query, should the limit be applied to the beginning or
 /// the end of results.
 class BundledQuery_LimitType extends $pb.ProtobufEnum {
-  static const BundledQuery_LimitType FIRST = BundledQuery_LimitType._(0, _omitEnumNames ? '' : 'FIRST');
-  static const BundledQuery_LimitType LAST = BundledQuery_LimitType._(1, _omitEnumNames ? '' : 'LAST');
+  static const BundledQuery_LimitType FIRST =
+      BundledQuery_LimitType._(0, _omitEnumNames ? '' : 'FIRST');
+  static const BundledQuery_LimitType LAST =
+      BundledQuery_LimitType._(1, _omitEnumNames ? '' : 'LAST');
 
-  static const $core.List<BundledQuery_LimitType> values = <BundledQuery_LimitType> [
+  static const $core.List<BundledQuery_LimitType> values =
+      <BundledQuery_LimitType>[
     FIRST,
     LAST,
   ];
 
-  static final $core.Map<$core.int, BundledQuery_LimitType> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, BundledQuery_LimitType> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static BundledQuery_LimitType? valueOf($core.int value) => _byValue[value];
 
   const BundledQuery_LimitType._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

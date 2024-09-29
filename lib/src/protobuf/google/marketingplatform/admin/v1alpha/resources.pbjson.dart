@@ -51,9 +51,24 @@ const AnalyticsAccountLink$json = {
   '1': 'AnalyticsAccountLink',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'analytics_account', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'analyticsAccount'},
+    {
+      '1': 'analytics_account',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'analyticsAccount'
+    },
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'link_verification_state', '3': 4, '4': 1, '5': 14, '6': '.google.marketingplatform.admin.v1alpha.LinkVerificationState', '8': {}, '10': 'linkVerificationState'},
+    {
+      '1': 'link_verification_state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.marketingplatform.admin.v1alpha.LinkVerificationState',
+      '8': {},
+      '10': 'linkVerificationState'
+    },
   ],
   '7': {},
 };
@@ -69,4 +84,3 @@ final $typed_data.Uint8List analyticsAccountLinkDescriptor = $convert.base64Deco
     'ZG1pbi5nb29nbGVhcGlzLmNvbS9BbmFseXRpY3NBY2NvdW50TGluaxJLb3JnYW5pemF0aW9ucy'
     '97b3JnYW5pemF0aW9ufS9hbmFseXRpY3NBY2NvdW50TGlua3Mve2FuYWx5dGljc19hY2NvdW50'
     'X2xpbmt9KhVhbmFseXRpY3NBY2NvdW50TGlua3MyFGFuYWx5dGljc0FjY291bnRMaW5r');
-

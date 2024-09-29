@@ -18,7 +18,14 @@ const CreateIndexRequest$json = {
   '1': 'CreateIndexRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'index', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1beta2.Index', '10': 'index'},
+    {
+      '1': 'index',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1beta2.Index',
+      '10': 'index'
+    },
   ],
 };
 
@@ -48,7 +55,14 @@ final $typed_data.Uint8List listIndexesRequestDescriptor = $convert.base64Decode
 const ListIndexesResponse$json = {
   '1': 'ListIndexesResponse',
   '2': [
-    {'1': 'indexes', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1beta2.Index', '10': 'indexes'},
+    {
+      '1': 'indexes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1beta2.Index',
+      '10': 'indexes'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -68,8 +82,8 @@ const GetIndexRequest$json = {
 };
 
 /// Descriptor for `GetIndexRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getIndexRequestDescriptor = $convert.base64Decode(
-    'Cg9HZXRJbmRleFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List getIndexRequestDescriptor = $convert
+    .base64Decode('Cg9HZXRJbmRleFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use deleteIndexRequestDescriptor instead')
 const DeleteIndexRequest$json = {
@@ -80,15 +94,29 @@ const DeleteIndexRequest$json = {
 };
 
 /// Descriptor for `DeleteIndexRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteIndexRequestDescriptor = $convert.base64Decode(
-    'ChJEZWxldGVJbmRleFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List deleteIndexRequestDescriptor = $convert
+    .base64Decode('ChJEZWxldGVJbmRleFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use updateFieldRequestDescriptor instead')
 const UpdateFieldRequest$json = {
   '1': 'UpdateFieldRequest',
   '2': [
-    {'1': 'field', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.admin.v1beta2.Field', '10': 'field'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'field',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1beta2.Field',
+      '10': 'field'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -107,8 +135,8 @@ const GetFieldRequest$json = {
 };
 
 /// Descriptor for `GetFieldRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getFieldRequestDescriptor = $convert.base64Decode(
-    'Cg9HZXRGaWVsZFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List getFieldRequestDescriptor = $convert
+    .base64Decode('Cg9HZXRGaWVsZFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use listFieldsRequestDescriptor instead')
 const ListFieldsRequest$json = {
@@ -131,7 +159,14 @@ final $typed_data.Uint8List listFieldsRequestDescriptor = $convert.base64Decode(
 const ListFieldsResponse$json = {
   '1': 'ListFieldsResponse',
   '2': [
-    {'1': 'fields', '3': 1, '4': 3, '5': 11, '6': '.google.firestore.admin.v1beta2.Field', '10': 'fields'},
+    {
+      '1': 'fields',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1beta2.Field',
+      '10': 'fields'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -173,4 +208,3 @@ final $typed_data.Uint8List importDocumentsRequestDescriptor = $convert.base64De
     'ChZJbXBvcnREb2N1bWVudHNSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWUSJQoOY29sbGVjdG'
     'lvbl9pZHMYAiADKAlSDWNvbGxlY3Rpb25JZHMSKAoQaW5wdXRfdXJpX3ByZWZpeBgDIAEoCVIO'
     'aW5wdXRVcmlQcmVmaXg=');
-

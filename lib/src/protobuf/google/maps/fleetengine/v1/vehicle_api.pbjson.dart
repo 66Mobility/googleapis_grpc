@@ -17,10 +17,25 @@ import 'dart:typed_data' as $typed_data;
 const CreateVehicleRequest$json = {
   '1': 'CreateVehicleRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'vehicle_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'vehicleId'},
-    {'1': 'vehicle', '3': 5, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.Vehicle', '8': {}, '10': 'vehicle'},
+    {
+      '1': 'vehicle',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Vehicle',
+      '8': {},
+      '10': 'vehicle'
+    },
   ],
 };
 
@@ -35,10 +50,31 @@ final $typed_data.Uint8List createVehicleRequestDescriptor = $convert.base64Deco
 const GetVehicleRequest$json = {
   '1': 'GetVehicleRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'current_route_segment_version', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'currentRouteSegmentVersion'},
-    {'1': 'waypoints_version', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'waypointsVersion'},
+    {
+      '1': 'current_route_segment_version',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'currentRouteSegmentVersion'
+    },
+    {
+      '1': 'waypoints_version',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'waypointsVersion'
+    },
   ],
 };
 
@@ -55,10 +91,33 @@ final $typed_data.Uint8List getVehicleRequestDescriptor = $convert.base64Decode(
 const UpdateVehicleRequest$json = {
   '1': 'UpdateVehicleRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'vehicle', '3': 4, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.Vehicle', '8': {}, '10': 'vehicle'},
-    {'1': 'update_mask', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'vehicle',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Vehicle',
+      '8': {},
+      '10': 'vehicle'
+    },
+    {
+      '1': 'update_mask',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -74,56 +133,185 @@ final $typed_data.Uint8List updateVehicleRequestDescriptor = $convert.base64Deco
 const UpdateVehicleAttributesRequest$json = {
   '1': 'UpdateVehicleAttributesRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'attributes', '3': 4, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleAttribute', '8': {}, '10': 'attributes'},
+    {
+      '1': 'attributes',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleAttribute',
+      '8': {},
+      '10': 'attributes'
+    },
   ],
 };
 
 /// Descriptor for `UpdateVehicleAttributesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateVehicleAttributesRequestDescriptor = $convert.base64Decode(
-    'Ch5VcGRhdGVWZWhpY2xlQXR0cmlidXRlc1JlcXVlc3QSOgoGaGVhZGVyGAEgASgLMiIubWFwcy'
-    '5mbGVldGVuZ2luZS52MS5SZXF1ZXN0SGVhZGVyUgZoZWFkZXISFwoEbmFtZRgDIAEoCUID4EEC'
-    'UgRuYW1lEkoKCmF0dHJpYnV0ZXMYBCADKAsyJS5tYXBzLmZsZWV0ZW5naW5lLnYxLlZlaGljbG'
-    'VBdHRyaWJ1dGVCA+BBAlIKYXR0cmlidXRlcw==');
+final $typed_data.Uint8List updateVehicleAttributesRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5VcGRhdGVWZWhpY2xlQXR0cmlidXRlc1JlcXVlc3QSOgoGaGVhZGVyGAEgASgLMiIubWFwcy'
+        '5mbGVldGVuZ2luZS52MS5SZXF1ZXN0SGVhZGVyUgZoZWFkZXISFwoEbmFtZRgDIAEoCUID4EEC'
+        'UgRuYW1lEkoKCmF0dHJpYnV0ZXMYBCADKAsyJS5tYXBzLmZsZWV0ZW5naW5lLnYxLlZlaGljbG'
+        'VBdHRyaWJ1dGVCA+BBAlIKYXR0cmlidXRlcw==');
 
 @$core.Deprecated('Use updateVehicleAttributesResponseDescriptor instead')
 const UpdateVehicleAttributesResponse$json = {
   '1': 'UpdateVehicleAttributesResponse',
   '2': [
-    {'1': 'attributes', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleAttribute', '8': {}, '10': 'attributes'},
+    {
+      '1': 'attributes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleAttribute',
+      '8': {},
+      '10': 'attributes'
+    },
   ],
 };
 
 /// Descriptor for `UpdateVehicleAttributesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateVehicleAttributesResponseDescriptor = $convert.base64Decode(
-    'Ch9VcGRhdGVWZWhpY2xlQXR0cmlidXRlc1Jlc3BvbnNlEkoKCmF0dHJpYnV0ZXMYASADKAsyJS'
-    '5tYXBzLmZsZWV0ZW5naW5lLnYxLlZlaGljbGVBdHRyaWJ1dGVCA+BBAlIKYXR0cmlidXRlcw==');
+final $typed_data.Uint8List updateVehicleAttributesResponseDescriptor =
+    $convert.base64Decode(
+        'Ch9VcGRhdGVWZWhpY2xlQXR0cmlidXRlc1Jlc3BvbnNlEkoKCmF0dHJpYnV0ZXMYASADKAsyJS'
+        '5tYXBzLmZsZWV0ZW5naW5lLnYxLlZlaGljbGVBdHRyaWJ1dGVCA+BBAlIKYXR0cmlidXRlcw==');
 
 @$core.Deprecated('Use searchVehiclesRequestDescriptor instead')
 const SearchVehiclesRequest$json = {
   '1': 'SearchVehiclesRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'pickup_point', '3': 4, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TerminalLocation', '8': {}, '10': 'pickupPoint'},
-    {'1': 'dropoff_point', '3': 5, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TerminalLocation', '10': 'dropoffPoint'},
-    {'1': 'pickup_radius_meters', '3': 6, '4': 1, '5': 5, '8': {}, '10': 'pickupRadiusMeters'},
+    {
+      '1': 'pickup_point',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TerminalLocation',
+      '8': {},
+      '10': 'pickupPoint'
+    },
+    {
+      '1': 'dropoff_point',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TerminalLocation',
+      '10': 'dropoffPoint'
+    },
+    {
+      '1': 'pickup_radius_meters',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'pickupRadiusMeters'
+    },
     {'1': 'count', '3': 7, '4': 1, '5': 5, '8': {}, '10': 'count'},
-    {'1': 'minimum_capacity', '3': 8, '4': 1, '5': 5, '8': {}, '10': 'minimumCapacity'},
-    {'1': 'trip_types', '3': 9, '4': 3, '5': 14, '6': '.maps.fleetengine.v1.TripType', '8': {}, '10': 'tripTypes'},
-    {'1': 'maximum_staleness', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maximumStaleness'},
-    {'1': 'vehicle_types', '3': 14, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.Vehicle.VehicleType', '8': {}, '10': 'vehicleTypes'},
-    {'1': 'required_attributes', '3': 12, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleAttribute', '10': 'requiredAttributes'},
-    {'1': 'required_one_of_attributes', '3': 15, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleAttributeList', '10': 'requiredOneOfAttributes'},
-    {'1': 'required_one_of_attribute_sets', '3': 20, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleAttributeList', '10': 'requiredOneOfAttributeSets'},
-    {'1': 'order_by', '3': 13, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.SearchVehiclesRequest.VehicleMatchOrder', '8': {}, '10': 'orderBy'},
-    {'1': 'include_back_to_back', '3': 18, '4': 1, '5': 8, '10': 'includeBackToBack'},
+    {
+      '1': 'minimum_capacity',
+      '3': 8,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'minimumCapacity'
+    },
+    {
+      '1': 'trip_types',
+      '3': 9,
+      '4': 3,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripType',
+      '8': {},
+      '10': 'tripTypes'
+    },
+    {
+      '1': 'maximum_staleness',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maximumStaleness'
+    },
+    {
+      '1': 'vehicle_types',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Vehicle.VehicleType',
+      '8': {},
+      '10': 'vehicleTypes'
+    },
+    {
+      '1': 'required_attributes',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleAttribute',
+      '10': 'requiredAttributes'
+    },
+    {
+      '1': 'required_one_of_attributes',
+      '3': 15,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleAttributeList',
+      '10': 'requiredOneOfAttributes'
+    },
+    {
+      '1': 'required_one_of_attribute_sets',
+      '3': 20,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleAttributeList',
+      '10': 'requiredOneOfAttributeSets'
+    },
+    {
+      '1': 'order_by',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.SearchVehiclesRequest.VehicleMatchOrder',
+      '8': {},
+      '10': 'orderBy'
+    },
+    {
+      '1': 'include_back_to_back',
+      '3': 18,
+      '4': 1,
+      '5': 8,
+      '10': 'includeBackToBack'
+    },
     {'1': 'trip_id', '3': 19, '4': 1, '5': 9, '10': 'tripId'},
-    {'1': 'current_trips_present', '3': 21, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.SearchVehiclesRequest.CurrentTripsPresent', '10': 'currentTripsPresent'},
+    {
+      '1': 'current_trips_present',
+      '3': 21,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.SearchVehiclesRequest.CurrentTripsPresent',
+      '10': 'currentTripsPresent'
+    },
     {'1': 'filter', '3': 22, '4': 1, '5': 9, '8': {}, '10': 'filter'},
   ],
-  '4': [SearchVehiclesRequest_VehicleMatchOrder$json, SearchVehiclesRequest_CurrentTripsPresent$json],
+  '4': [
+    SearchVehiclesRequest_VehicleMatchOrder$json,
+    SearchVehiclesRequest_CurrentTripsPresent$json
+  ],
 };
 
 @$core.Deprecated('Use searchVehiclesRequestDescriptor instead')
@@ -183,34 +371,111 @@ final $typed_data.Uint8List searchVehiclesRequestDescriptor = $convert.base64Dec
 const SearchVehiclesResponse$json = {
   '1': 'SearchVehiclesResponse',
   '2': [
-    {'1': 'matches', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleMatch', '10': 'matches'},
+    {
+      '1': 'matches',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleMatch',
+      '10': 'matches'
+    },
   ],
 };
 
 /// Descriptor for `SearchVehiclesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List searchVehiclesResponseDescriptor = $convert.base64Decode(
-    'ChZTZWFyY2hWZWhpY2xlc1Jlc3BvbnNlEjsKB21hdGNoZXMYASADKAsyIS5tYXBzLmZsZWV0ZW'
-    '5naW5lLnYxLlZlaGljbGVNYXRjaFIHbWF0Y2hlcw==');
+final $typed_data.Uint8List searchVehiclesResponseDescriptor =
+    $convert.base64Decode(
+        'ChZTZWFyY2hWZWhpY2xlc1Jlc3BvbnNlEjsKB21hdGNoZXMYASADKAsyIS5tYXBzLmZsZWV0ZW'
+        '5naW5lLnYxLlZlaGljbGVNYXRjaFIHbWF0Y2hlcw==');
 
 @$core.Deprecated('Use listVehiclesRequestDescriptor instead')
 const ListVehiclesRequest$json = {
   '1': 'ListVehiclesRequest',
   '2': [
-    {'1': 'header', '3': 12, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'page_size', '3': 3, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 4, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'minimum_capacity', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'minimumCapacity'},
-    {'1': 'trip_types', '3': 7, '4': 3, '5': 14, '6': '.maps.fleetengine.v1.TripType', '10': 'tripTypes'},
-    {'1': 'maximum_staleness', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maximumStaleness'},
-    {'1': 'vehicle_type_categories', '3': 9, '4': 3, '5': 14, '6': '.maps.fleetengine.v1.Vehicle.VehicleType.Category', '8': {}, '10': 'vehicleTypeCategories'},
-    {'1': 'required_attributes', '3': 10, '4': 3, '5': 9, '10': 'requiredAttributes'},
-    {'1': 'required_one_of_attributes', '3': 13, '4': 3, '5': 9, '10': 'requiredOneOfAttributes'},
-    {'1': 'required_one_of_attribute_sets', '3': 15, '4': 3, '5': 9, '10': 'requiredOneOfAttributeSets'},
-    {'1': 'vehicle_state', '3': 11, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.VehicleState', '10': 'vehicleState'},
+    {
+      '1': 'minimum_capacity',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'minimumCapacity'
+    },
+    {
+      '1': 'trip_types',
+      '3': 7,
+      '4': 3,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripType',
+      '10': 'tripTypes'
+    },
+    {
+      '1': 'maximum_staleness',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maximumStaleness'
+    },
+    {
+      '1': 'vehicle_type_categories',
+      '3': 9,
+      '4': 3,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.Vehicle.VehicleType.Category',
+      '8': {},
+      '10': 'vehicleTypeCategories'
+    },
+    {
+      '1': 'required_attributes',
+      '3': 10,
+      '4': 3,
+      '5': 9,
+      '10': 'requiredAttributes'
+    },
+    {
+      '1': 'required_one_of_attributes',
+      '3': 13,
+      '4': 3,
+      '5': 9,
+      '10': 'requiredOneOfAttributes'
+    },
+    {
+      '1': 'required_one_of_attribute_sets',
+      '3': 15,
+      '4': 3,
+      '5': 9,
+      '10': 'requiredOneOfAttributeSets'
+    },
+    {
+      '1': 'vehicle_state',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.VehicleState',
+      '10': 'vehicleState'
+    },
     {'1': 'on_trip_only', '3': 14, '4': 1, '5': 8, '10': 'onTripOnly'},
     {'1': 'filter', '3': 16, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'viewport', '3': 17, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '8': {}, '10': 'viewport'},
+    {
+      '1': 'viewport',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '8': {},
+      '10': 'viewport'
+    },
   ],
 };
 
@@ -237,7 +502,14 @@ final $typed_data.Uint8List listVehiclesRequestDescriptor = $convert.base64Decod
 const ListVehiclesResponse$json = {
   '1': 'ListVehiclesResponse',
   '2': [
-    {'1': 'vehicles', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.Vehicle', '10': 'vehicles'},
+    {
+      '1': 'vehicles',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Vehicle',
+      '10': 'vehicles'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'totalSize'},
   ],
@@ -253,8 +525,22 @@ final $typed_data.Uint8List listVehiclesResponseDescriptor = $convert.base64Deco
 const Waypoint$json = {
   '1': 'Waypoint',
   '2': [
-    {'1': 'lat_lng', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'latLng'},
-    {'1': 'eta', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eta'},
+    {
+      '1': 'lat_lng',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'latLng'
+    },
+    {
+      '1': 'eta',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eta'
+    },
   ],
 };
 
@@ -267,17 +553,97 @@ final $typed_data.Uint8List waypointDescriptor = $convert.base64Decode(
 const VehicleMatch$json = {
   '1': 'VehicleMatch',
   '2': [
-    {'1': 'vehicle', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.Vehicle', '8': {}, '10': 'vehicle'},
-    {'1': 'vehicle_pickup_eta', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'vehiclePickupEta'},
-    {'1': 'vehicle_pickup_distance_meters', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'vehiclePickupDistanceMeters'},
-    {'1': 'vehicle_pickup_straight_line_distance_meters', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '8': {}, '10': 'vehiclePickupStraightLineDistanceMeters'},
-    {'1': 'vehicle_dropoff_eta', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'vehicleDropoffEta'},
-    {'1': 'vehicle_pickup_to_dropoff_distance_meters', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'vehiclePickupToDropoffDistanceMeters'},
-    {'1': 'trip_type', '3': 6, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.TripType', '8': {}, '10': 'tripType'},
-    {'1': 'vehicle_trips_waypoints', '3': 7, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.Waypoint', '10': 'vehicleTripsWaypoints'},
-    {'1': 'vehicle_match_type', '3': 8, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.VehicleMatch.VehicleMatchType', '10': 'vehicleMatchType'},
-    {'1': 'requested_ordered_by', '3': 9, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.SearchVehiclesRequest.VehicleMatchOrder', '10': 'requestedOrderedBy'},
-    {'1': 'ordered_by', '3': 10, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.SearchVehiclesRequest.VehicleMatchOrder', '10': 'orderedBy'},
+    {
+      '1': 'vehicle',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Vehicle',
+      '8': {},
+      '10': 'vehicle'
+    },
+    {
+      '1': 'vehicle_pickup_eta',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'vehiclePickupEta'
+    },
+    {
+      '1': 'vehicle_pickup_distance_meters',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'vehiclePickupDistanceMeters'
+    },
+    {
+      '1': 'vehicle_pickup_straight_line_distance_meters',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '8': {},
+      '10': 'vehiclePickupStraightLineDistanceMeters'
+    },
+    {
+      '1': 'vehicle_dropoff_eta',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'vehicleDropoffEta'
+    },
+    {
+      '1': 'vehicle_pickup_to_dropoff_distance_meters',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'vehiclePickupToDropoffDistanceMeters'
+    },
+    {
+      '1': 'trip_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripType',
+      '8': {},
+      '10': 'tripType'
+    },
+    {
+      '1': 'vehicle_trips_waypoints',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Waypoint',
+      '10': 'vehicleTripsWaypoints'
+    },
+    {
+      '1': 'vehicle_match_type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.VehicleMatch.VehicleMatchType',
+      '10': 'vehicleMatchType'
+    },
+    {
+      '1': 'requested_ordered_by',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.SearchVehiclesRequest.VehicleMatchOrder',
+      '10': 'requestedOrderedBy'
+    },
+    {
+      '1': 'ordered_by',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.SearchVehiclesRequest.VehicleMatchOrder',
+      '10': 'orderedBy'
+    },
   ],
   '4': [VehicleMatch_VehicleMatchType$json],
 };
@@ -322,7 +688,14 @@ final $typed_data.Uint8List vehicleMatchDescriptor = $convert.base64Decode(
 const VehicleAttributeList$json = {
   '1': 'VehicleAttributeList',
   '2': [
-    {'1': 'attributes', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleAttribute', '10': 'attributes'},
+    {
+      '1': 'attributes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleAttribute',
+      '10': 'attributes'
+    },
   ],
 };
 
@@ -330,4 +703,3 @@ const VehicleAttributeList$json = {
 final $typed_data.Uint8List vehicleAttributeListDescriptor = $convert.base64Decode(
     'ChRWZWhpY2xlQXR0cmlidXRlTGlzdBJFCgphdHRyaWJ1dGVzGAEgAygLMiUubWFwcy5mbGVldG'
     'VuZ2luZS52MS5WZWhpY2xlQXR0cmlidXRlUgphdHRyaWJ1dGVz');
-

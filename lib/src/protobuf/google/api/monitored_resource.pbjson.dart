@@ -21,8 +21,22 @@ const MonitoredResourceDescriptor$json = {
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.api.LabelDescriptor', '10': 'labels'},
-    {'1': 'launch_stage', '3': 7, '4': 1, '5': 14, '6': '.google.api.LaunchStage', '10': 'launchStage'},
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.LabelDescriptor',
+      '10': 'labels'
+    },
+    {
+      '1': 'launch_stage',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.LaunchStage',
+      '10': 'launchStage'
+    },
   ],
 };
 
@@ -39,7 +53,14 @@ const MonitoredResource$json = {
   '1': 'MonitoredResource',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.api.MonitoredResource.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResource.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [MonitoredResource_LabelsEntry$json],
 };
@@ -64,8 +85,22 @@ final $typed_data.Uint8List monitoredResourceDescriptor = $convert.base64Decode(
 const MonitoredResourceMetadata$json = {
   '1': 'MonitoredResourceMetadata',
   '2': [
-    {'1': 'system_labels', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'systemLabels'},
-    {'1': 'user_labels', '3': 2, '4': 3, '5': 11, '6': '.google.api.MonitoredResourceMetadata.UserLabelsEntry', '10': 'userLabels'},
+    {
+      '1': 'system_labels',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'systemLabels'
+    },
+    {
+      '1': 'user_labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResourceMetadata.UserLabelsEntry',
+      '10': 'userLabels'
+    },
   ],
   '3': [MonitoredResourceMetadata_UserLabelsEntry$json],
 };
@@ -87,4 +122,3 @@ final $typed_data.Uint8List monitoredResourceMetadataDescriptor = $convert.base6
     'NS5nb29nbGUuYXBpLk1vbml0b3JlZFJlc291cmNlTWV0YWRhdGEuVXNlckxhYmVsc0VudHJ5Ug'
     'p1c2VyTGFiZWxzGj0KD1VzZXJMYWJlbHNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1'
     'ZRgCIAEoCVIFdmFsdWU6AjgB');
-

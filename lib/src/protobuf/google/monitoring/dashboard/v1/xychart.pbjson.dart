@@ -17,13 +17,63 @@ import 'dart:typed_data' as $typed_data;
 const XyChart$json = {
   '1': 'XyChart',
   '2': [
-    {'1': 'data_sets', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.XyChart.DataSet', '8': {}, '10': 'dataSets'},
-    {'1': 'timeshift_duration', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeshiftDuration'},
-    {'1': 'thresholds', '3': 5, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.Threshold', '10': 'thresholds'},
-    {'1': 'x_axis', '3': 6, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.XyChart.Axis', '10': 'xAxis'},
-    {'1': 'y_axis', '3': 7, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.XyChart.Axis', '10': 'yAxis'},
-    {'1': 'y2_axis', '3': 9, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.XyChart.Axis', '10': 'y2Axis'},
-    {'1': 'chart_options', '3': 8, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.ChartOptions', '10': 'chartOptions'},
+    {
+      '1': 'data_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.XyChart.DataSet',
+      '8': {},
+      '10': 'dataSets'
+    },
+    {
+      '1': 'timeshift_duration',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeshiftDuration'
+    },
+    {
+      '1': 'thresholds',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Threshold',
+      '10': 'thresholds'
+    },
+    {
+      '1': 'x_axis',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.XyChart.Axis',
+      '10': 'xAxis'
+    },
+    {
+      '1': 'y_axis',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.XyChart.Axis',
+      '10': 'yAxis'
+    },
+    {
+      '1': 'y2_axis',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.XyChart.Axis',
+      '10': 'y2Axis'
+    },
+    {
+      '1': 'chart_options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.ChartOptions',
+      '10': 'chartOptions'
+    },
   ],
   '3': [XyChart_DataSet$json, XyChart_Axis$json],
 };
@@ -32,11 +82,42 @@ const XyChart$json = {
 const XyChart_DataSet$json = {
   '1': 'DataSet',
   '2': [
-    {'1': 'time_series_query', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery', '8': {}, '10': 'timeSeriesQuery'},
-    {'1': 'plot_type', '3': 2, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.XyChart.DataSet.PlotType', '10': 'plotType'},
+    {
+      '1': 'time_series_query',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery',
+      '8': {},
+      '10': 'timeSeriesQuery'
+    },
+    {
+      '1': 'plot_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.XyChart.DataSet.PlotType',
+      '10': 'plotType'
+    },
     {'1': 'legend_template', '3': 3, '4': 1, '5': 9, '10': 'legendTemplate'},
-    {'1': 'min_alignment_period', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'minAlignmentPeriod'},
-    {'1': 'target_axis', '3': 5, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.XyChart.DataSet.TargetAxis', '8': {}, '10': 'targetAxis'},
+    {
+      '1': 'min_alignment_period',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'minAlignmentPeriod'
+    },
+    {
+      '1': 'target_axis',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.XyChart.DataSet.TargetAxis',
+      '8': {},
+      '10': 'targetAxis'
+    },
   ],
   '4': [XyChart_DataSet_PlotType$json, XyChart_DataSet_TargetAxis$json],
 };
@@ -68,7 +149,14 @@ const XyChart_Axis$json = {
   '1': 'Axis',
   '2': [
     {'1': 'label', '3': 1, '4': 1, '5': 9, '10': 'label'},
-    {'1': 'scale', '3': 2, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.XyChart.Axis.Scale', '10': 'scale'},
+    {
+      '1': 'scale',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.XyChart.Axis.Scale',
+      '10': 'scale'
+    },
   ],
   '4': [XyChart_Axis_Scale$json],
 };
@@ -113,7 +201,14 @@ final $typed_data.Uint8List xyChartDescriptor = $convert.base64Decode(
 const ChartOptions$json = {
   '1': 'ChartOptions',
   '2': [
-    {'1': 'mode', '3': 1, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.ChartOptions.Mode', '10': 'mode'},
+    {
+      '1': 'mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.ChartOptions.Mode',
+      '10': 'mode'
+    },
   ],
   '4': [ChartOptions_Mode$json],
 };
@@ -134,4 +229,3 @@ final $typed_data.Uint8List chartOptionsDescriptor = $convert.base64Decode(
     'CgxDaGFydE9wdGlvbnMSRQoEbW9kZRgBIAEoDjIxLmdvb2dsZS5tb25pdG9yaW5nLmRhc2hib2'
     'FyZC52MS5DaGFydE9wdGlvbnMuTW9kZVIEbW9kZSI9CgRNb2RlEhQKEE1PREVfVU5TUEVDSUZJ'
     'RUQQABIJCgVDT0xPUhABEgkKBVhfUkFZEAISCQoFU1RBVFMQAw==');
-

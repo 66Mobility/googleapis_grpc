@@ -33,34 +33,43 @@ class Organization extends $pb.GeneratedMessage {
     return $result;
   }
   Organization._() : super();
-  factory Organization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Organization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Organization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Organization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Organization', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Organization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Organization clone() => Organization()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Organization copyWith(void Function(Organization) updates) => super.copyWith((message) => updates(message as Organization)) as Organization;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Organization copyWith(void Function(Organization) updates) =>
+      super.copyWith((message) => updates(message as Organization))
+          as Organization;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Organization create() => Organization._();
   Organization createEmptyInstance() => create();
-  static $pb.PbList<Organization> createRepeated() => $pb.PbList<Organization>();
+  static $pb.PbList<Organization> createRepeated() =>
+      $pb.PbList<Organization>();
   @$core.pragma('dart2js:noInline')
-  static Organization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Organization>(create);
+  static Organization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Organization>(create);
   static Organization? _defaultInstance;
 
   /// Identifier. The resource name of the GMP organization.
@@ -68,7 +77,10 @@ class Organization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -78,7 +90,10 @@ class Organization extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -110,36 +125,51 @@ class AnalyticsAccountLink extends $pb.GeneratedMessage {
     return $result;
   }
   AnalyticsAccountLink._() : super();
-  factory AnalyticsAccountLink.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AnalyticsAccountLink.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AnalyticsAccountLink.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AnalyticsAccountLink.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyticsAccountLink', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AnalyticsAccountLink',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'analyticsAccount')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..e<LinkVerificationState>(4, _omitFieldNames ? '' : 'linkVerificationState', $pb.PbFieldType.OE, defaultOrMaker: LinkVerificationState.LINK_VERIFICATION_STATE_UNSPECIFIED, valueOf: LinkVerificationState.valueOf, enumValues: LinkVerificationState.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<LinkVerificationState>(
+        4, _omitFieldNames ? '' : 'linkVerificationState', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            LinkVerificationState.LINK_VERIFICATION_STATE_UNSPECIFIED,
+        valueOf: LinkVerificationState.valueOf,
+        enumValues: LinkVerificationState.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AnalyticsAccountLink clone() => AnalyticsAccountLink()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AnalyticsAccountLink copyWith(void Function(AnalyticsAccountLink) updates) => super.copyWith((message) => updates(message as AnalyticsAccountLink)) as AnalyticsAccountLink;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AnalyticsAccountLink clone() =>
+      AnalyticsAccountLink()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AnalyticsAccountLink copyWith(void Function(AnalyticsAccountLink) updates) =>
+      super.copyWith((message) => updates(message as AnalyticsAccountLink))
+          as AnalyticsAccountLink;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AnalyticsAccountLink create() => AnalyticsAccountLink._();
   AnalyticsAccountLink createEmptyInstance() => create();
-  static $pb.PbList<AnalyticsAccountLink> createRepeated() => $pb.PbList<AnalyticsAccountLink>();
+  static $pb.PbList<AnalyticsAccountLink> createRepeated() =>
+      $pb.PbList<AnalyticsAccountLink>();
   @$core.pragma('dart2js:noInline')
-  static AnalyticsAccountLink getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AnalyticsAccountLink>(create);
+  static AnalyticsAccountLink getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AnalyticsAccountLink>(create);
   static AnalyticsAccountLink? _defaultInstance;
 
   ///  Identifier. Resource name of this AnalyticsAccountLink. Note the resource
@@ -151,7 +181,10 @@ class AnalyticsAccountLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -165,7 +198,10 @@ class AnalyticsAccountLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get analyticsAccount => $_getSZ(1);
   @$pb.TagNumber(2)
-  set analyticsAccount($core.String v) { $_setString(1, v); }
+  set analyticsAccount($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAnalyticsAccount() => $_has(1);
   @$pb.TagNumber(2)
@@ -175,7 +211,10 @@ class AnalyticsAccountLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -186,13 +225,16 @@ class AnalyticsAccountLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   LinkVerificationState get linkVerificationState => $_getN(3);
   @$pb.TagNumber(4)
-  set linkVerificationState(LinkVerificationState v) { setField(4, v); }
+  set linkVerificationState(LinkVerificationState v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLinkVerificationState() => $_has(3);
   @$pb.TagNumber(4)
   void clearLinkVerificationState() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

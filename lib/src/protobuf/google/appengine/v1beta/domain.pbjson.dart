@@ -25,4 +25,3 @@ const AuthorizedDomain$json = {
 /// Descriptor for `AuthorizedDomain`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List authorizedDomainDescriptor = $convert.base64Decode(
     'ChBBdXRob3JpemVkRG9tYWluEhIKBG5hbWUYASABKAlSBG5hbWUSDgoCaWQYAiABKAlSAmlk');
-

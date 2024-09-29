@@ -59,46 +59,68 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   VariantSetMetadata._() : super();
-  factory VariantSetMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VariantSetMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VariantSetMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VariantSetMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VariantSetMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VariantSetMetadata',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..m<$core.String, $261.ListValue>(3, _omitFieldNames ? '' : 'info', entryClassName: 'VariantSetMetadata.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $261.ListValue.create, valueDefaultOrMaker: $261.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..m<$core.String, $261.ListValue>(3, _omitFieldNames ? '' : 'info',
+        entryClassName: 'VariantSetMetadata.InfoEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $261.ListValue.create,
+        valueDefaultOrMaker: $261.ListValue.getDefault,
+        packageName: const $pb.PackageName('google.genomics.v1'))
     ..aOS(4, _omitFieldNames ? '' : 'id')
-    ..e<VariantSetMetadata_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: VariantSetMetadata_Type.TYPE_UNSPECIFIED, valueOf: VariantSetMetadata_Type.valueOf, enumValues: VariantSetMetadata_Type.values)
+    ..e<VariantSetMetadata_Type>(
+        5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: VariantSetMetadata_Type.TYPE_UNSPECIFIED,
+        valueOf: VariantSetMetadata_Type.valueOf,
+        enumValues: VariantSetMetadata_Type.values)
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..aOS(8, _omitFieldNames ? '' : 'number')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VariantSetMetadata clone() => VariantSetMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VariantSetMetadata copyWith(void Function(VariantSetMetadata) updates) => super.copyWith((message) => updates(message as VariantSetMetadata)) as VariantSetMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VariantSetMetadata copyWith(void Function(VariantSetMetadata) updates) =>
+      super.copyWith((message) => updates(message as VariantSetMetadata))
+          as VariantSetMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VariantSetMetadata create() => VariantSetMetadata._();
   VariantSetMetadata createEmptyInstance() => create();
-  static $pb.PbList<VariantSetMetadata> createRepeated() => $pb.PbList<VariantSetMetadata>();
+  static $pb.PbList<VariantSetMetadata> createRepeated() =>
+      $pb.PbList<VariantSetMetadata>();
   @$core.pragma('dart2js:noInline')
-  static VariantSetMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VariantSetMetadata>(create);
+  static VariantSetMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VariantSetMetadata>(create);
   static VariantSetMetadata? _defaultInstance;
 
   /// The top-level key.
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) { $_setString(0, v); }
+  set key($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -108,7 +130,10 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) { $_setString(1, v); }
+  set value($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -125,7 +150,10 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get id => $_getSZ(3);
   @$pb.TagNumber(4)
-  set id($core.String v) { $_setString(3, v); }
+  set id($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasId() => $_has(3);
   @$pb.TagNumber(4)
@@ -136,7 +164,10 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   VariantSetMetadata_Type get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type(VariantSetMetadata_Type v) { setField(5, v); }
+  set type(VariantSetMetadata_Type v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -146,7 +177,10 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(7)
-  set description($core.String v) { $_setString(5, v); }
+  set description($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(7)
@@ -157,7 +191,10 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get number => $_getSZ(6);
   @$pb.TagNumber(8)
-  set number($core.String v) { $_setString(6, v); }
+  set number($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasNumber() => $_has(6);
   @$pb.TagNumber(8)
@@ -204,30 +241,40 @@ class VariantSet extends $pb.GeneratedMessage {
     return $result;
   }
   VariantSet._() : super();
-  factory VariantSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VariantSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VariantSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VariantSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VariantSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VariantSet',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'datasetId')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..pc<VariantSetMetadata>(4, _omitFieldNames ? '' : 'metadata', $pb.PbFieldType.PM, subBuilder: VariantSetMetadata.create)
-    ..pc<ReferenceBound>(5, _omitFieldNames ? '' : 'referenceBounds', $pb.PbFieldType.PM, subBuilder: ReferenceBound.create)
+    ..pc<VariantSetMetadata>(
+        4, _omitFieldNames ? '' : 'metadata', $pb.PbFieldType.PM,
+        subBuilder: VariantSetMetadata.create)
+    ..pc<ReferenceBound>(
+        5, _omitFieldNames ? '' : 'referenceBounds', $pb.PbFieldType.PM,
+        subBuilder: ReferenceBound.create)
     ..aOS(6, _omitFieldNames ? '' : 'referenceSetId')
     ..aOS(7, _omitFieldNames ? '' : 'name')
     ..aOS(8, _omitFieldNames ? '' : 'description')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VariantSet clone() => VariantSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VariantSet copyWith(void Function(VariantSet) updates) => super.copyWith((message) => updates(message as VariantSet)) as VariantSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VariantSet copyWith(void Function(VariantSet) updates) =>
+      super.copyWith((message) => updates(message as VariantSet)) as VariantSet;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -236,14 +283,18 @@ class VariantSet extends $pb.GeneratedMessage {
   VariantSet createEmptyInstance() => create();
   static $pb.PbList<VariantSet> createRepeated() => $pb.PbList<VariantSet>();
   @$core.pragma('dart2js:noInline')
-  static VariantSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VariantSet>(create);
+  static VariantSet getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VariantSet>(create);
   static VariantSet? _defaultInstance;
 
   /// The dataset to which this variant set belongs.
   @$pb.TagNumber(1)
   $core.String get datasetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set datasetId($core.String v) { $_setString(0, v); }
+  set datasetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatasetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -253,7 +304,10 @@ class VariantSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -281,7 +335,10 @@ class VariantSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get referenceSetId => $_getSZ(4);
   @$pb.TagNumber(6)
-  set referenceSetId($core.String v) { $_setString(4, v); }
+  set referenceSetId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasReferenceSetId() => $_has(4);
   @$pb.TagNumber(6)
@@ -291,7 +348,10 @@ class VariantSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get name => $_getSZ(5);
   @$pb.TagNumber(7)
-  set name($core.String v) { $_setString(5, v); }
+  set name($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasName() => $_has(5);
   @$pb.TagNumber(7)
@@ -301,7 +361,10 @@ class VariantSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get description => $_getSZ(6);
   @$pb.TagNumber(8)
-  set description($core.String v) { $_setString(6, v); }
+  set description($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(8)
@@ -379,36 +442,49 @@ class Variant extends $pb.GeneratedMessage {
     return $result;
   }
   Variant._() : super();
-  factory Variant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Variant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Variant.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Variant.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Variant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Variant',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..pPS(3, _omitFieldNames ? '' : 'names')
     ..aOS(6, _omitFieldNames ? '' : 'referenceBases')
     ..pPS(7, _omitFieldNames ? '' : 'alternateBases')
     ..a<$core.double>(8, _omitFieldNames ? '' : 'quality', $pb.PbFieldType.OD)
     ..pPS(9, _omitFieldNames ? '' : 'filter')
-    ..m<$core.String, $261.ListValue>(10, _omitFieldNames ? '' : 'info', entryClassName: 'Variant.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $261.ListValue.create, valueDefaultOrMaker: $261.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
-    ..pc<VariantCall>(11, _omitFieldNames ? '' : 'calls', $pb.PbFieldType.PM, subBuilder: VariantCall.create)
+    ..m<$core.String, $261.ListValue>(10, _omitFieldNames ? '' : 'info',
+        entryClassName: 'Variant.InfoEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $261.ListValue.create,
+        valueDefaultOrMaker: $261.ListValue.getDefault,
+        packageName: const $pb.PackageName('google.genomics.v1'))
+    ..pc<VariantCall>(11, _omitFieldNames ? '' : 'calls', $pb.PbFieldType.PM,
+        subBuilder: VariantCall.create)
     ..aInt64(12, _omitFieldNames ? '' : 'created')
     ..aInt64(13, _omitFieldNames ? '' : 'end')
     ..aOS(14, _omitFieldNames ? '' : 'referenceName')
     ..aOS(15, _omitFieldNames ? '' : 'variantSetId')
     ..aInt64(16, _omitFieldNames ? '' : 'start')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Variant clone() => Variant()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Variant copyWith(void Function(Variant) updates) => super.copyWith((message) => updates(message as Variant)) as Variant;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Variant copyWith(void Function(Variant) updates) =>
+      super.copyWith((message) => updates(message as Variant)) as Variant;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -417,14 +493,18 @@ class Variant extends $pb.GeneratedMessage {
   Variant createEmptyInstance() => create();
   static $pb.PbList<Variant> createRepeated() => $pb.PbList<Variant>();
   @$core.pragma('dart2js:noInline')
-  static Variant getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Variant>(create);
+  static Variant getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Variant>(create);
   static Variant? _defaultInstance;
 
   /// The server-generated variant ID, unique across all variants.
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(2)
@@ -439,7 +519,10 @@ class Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get referenceBases => $_getSZ(2);
   @$pb.TagNumber(6)
-  set referenceBases($core.String v) { $_setString(2, v); }
+  set referenceBases($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasReferenceBases() => $_has(2);
   @$pb.TagNumber(6)
@@ -454,7 +537,10 @@ class Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.double get quality => $_getN(4);
   @$pb.TagNumber(8)
-  set quality($core.double v) { $_setDouble(4, v); }
+  set quality($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasQuality() => $_has(4);
   @$pb.TagNumber(8)
@@ -479,7 +565,10 @@ class Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $fixnum.Int64 get created => $_getI64(8);
   @$pb.TagNumber(12)
-  set created($fixnum.Int64 v) { $_setInt64(8, v); }
+  set created($fixnum.Int64 v) {
+    $_setInt64(8, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasCreated() => $_has(8);
   @$pb.TagNumber(12)
@@ -492,7 +581,10 @@ class Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $fixnum.Int64 get end => $_getI64(9);
   @$pb.TagNumber(13)
-  set end($fixnum.Int64 v) { $_setInt64(9, v); }
+  set end($fixnum.Int64 v) {
+    $_setInt64(9, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasEnd() => $_has(9);
   @$pb.TagNumber(13)
@@ -503,7 +595,10 @@ class Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get referenceName => $_getSZ(10);
   @$pb.TagNumber(14)
-  set referenceName($core.String v) { $_setString(10, v); }
+  set referenceName($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasReferenceName() => $_has(10);
   @$pb.TagNumber(14)
@@ -513,7 +608,10 @@ class Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get variantSetId => $_getSZ(11);
   @$pb.TagNumber(15)
-  set variantSetId($core.String v) { $_setString(11, v); }
+  set variantSetId($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasVariantSetId() => $_has(11);
   @$pb.TagNumber(15)
@@ -524,7 +622,10 @@ class Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $fixnum.Int64 get start => $_getI64(12);
   @$pb.TagNumber(16)
-  set start($fixnum.Int64 v) { $_setInt64(12, v); }
+  set start($fixnum.Int64 v) {
+    $_setInt64(12, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasStart() => $_has(12);
   @$pb.TagNumber(16)
@@ -566,29 +667,43 @@ class VariantCall extends $pb.GeneratedMessage {
     return $result;
   }
   VariantCall._() : super();
-  factory VariantCall.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VariantCall.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VariantCall.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VariantCall.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VariantCall', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..m<$core.String, $261.ListValue>(2, _omitFieldNames ? '' : 'info', entryClassName: 'VariantCall.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $261.ListValue.create, valueDefaultOrMaker: $261.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VariantCall',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..m<$core.String, $261.ListValue>(2, _omitFieldNames ? '' : 'info',
+        entryClassName: 'VariantCall.InfoEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $261.ListValue.create,
+        valueDefaultOrMaker: $261.ListValue.getDefault,
+        packageName: const $pb.PackageName('google.genomics.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'phaseset')
-    ..p<$core.double>(6, _omitFieldNames ? '' : 'genotypeLikelihood', $pb.PbFieldType.KD)
+    ..p<$core.double>(
+        6, _omitFieldNames ? '' : 'genotypeLikelihood', $pb.PbFieldType.KD)
     ..p<$core.int>(7, _omitFieldNames ? '' : 'genotype', $pb.PbFieldType.K3)
     ..aOS(8, _omitFieldNames ? '' : 'callSetId')
     ..aOS(9, _omitFieldNames ? '' : 'callSetName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VariantCall clone() => VariantCall()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VariantCall copyWith(void Function(VariantCall) updates) => super.copyWith((message) => updates(message as VariantCall)) as VariantCall;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VariantCall copyWith(void Function(VariantCall) updates) =>
+      super.copyWith((message) => updates(message as VariantCall))
+          as VariantCall;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -597,7 +712,8 @@ class VariantCall extends $pb.GeneratedMessage {
   VariantCall createEmptyInstance() => create();
   static $pb.PbList<VariantCall> createRepeated() => $pb.PbList<VariantCall>();
   @$core.pragma('dart2js:noInline')
-  static VariantCall getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VariantCall>(create);
+  static VariantCall getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VariantCall>(create);
   static VariantCall? _defaultInstance;
 
   /// A map of additional variant call information. This must be of the form
@@ -613,7 +729,10 @@ class VariantCall extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get phaseset => $_getSZ(1);
   @$pb.TagNumber(5)
-  set phaseset($core.String v) { $_setString(1, v); }
+  set phaseset($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPhaseset() => $_has(1);
   @$pb.TagNumber(5)
@@ -647,7 +766,10 @@ class VariantCall extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get callSetId => $_getSZ(4);
   @$pb.TagNumber(8)
-  set callSetId($core.String v) { $_setString(4, v); }
+  set callSetId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCallSetId() => $_has(4);
   @$pb.TagNumber(8)
@@ -657,7 +779,10 @@ class VariantCall extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get callSetName => $_getSZ(5);
   @$pb.TagNumber(9)
-  set callSetName($core.String v) { $_setString(5, v); }
+  set callSetName($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCallSetName() => $_has(5);
   @$pb.TagNumber(9)
@@ -700,29 +825,41 @@ class CallSet extends $pb.GeneratedMessage {
     return $result;
   }
   CallSet._() : super();
-  factory CallSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CallSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CallSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CallSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CallSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CallSet',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..m<$core.String, $261.ListValue>(4, _omitFieldNames ? '' : 'info', entryClassName: 'CallSet.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $261.ListValue.create, valueDefaultOrMaker: $261.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..m<$core.String, $261.ListValue>(4, _omitFieldNames ? '' : 'info',
+        entryClassName: 'CallSet.InfoEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $261.ListValue.create,
+        valueDefaultOrMaker: $261.ListValue.getDefault,
+        packageName: const $pb.PackageName('google.genomics.v1'))
     ..aInt64(5, _omitFieldNames ? '' : 'created')
     ..pPS(6, _omitFieldNames ? '' : 'variantSetIds')
     ..aOS(7, _omitFieldNames ? '' : 'sampleId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CallSet clone() => CallSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CallSet copyWith(void Function(CallSet) updates) => super.copyWith((message) => updates(message as CallSet)) as CallSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CallSet copyWith(void Function(CallSet) updates) =>
+      super.copyWith((message) => updates(message as CallSet)) as CallSet;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -731,14 +868,18 @@ class CallSet extends $pb.GeneratedMessage {
   CallSet createEmptyInstance() => create();
   static $pb.PbList<CallSet> createRepeated() => $pb.PbList<CallSet>();
   @$core.pragma('dart2js:noInline')
-  static CallSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CallSet>(create);
+  static CallSet getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CallSet>(create);
   static CallSet? _defaultInstance;
 
   /// The server-generated call set ID, unique across all call sets.
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -748,7 +889,10 @@ class CallSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -763,7 +907,10 @@ class CallSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get created => $_getI64(3);
   @$pb.TagNumber(5)
-  set created($fixnum.Int64 v) { $_setInt64(3, v); }
+  set created($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCreated() => $_has(3);
   @$pb.TagNumber(5)
@@ -781,7 +928,10 @@ class CallSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get sampleId => $_getSZ(5);
   @$pb.TagNumber(7)
-  set sampleId($core.String v) { $_setString(5, v); }
+  set sampleId($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasSampleId() => $_has(5);
   @$pb.TagNumber(7)
@@ -805,41 +955,53 @@ class ReferenceBound extends $pb.GeneratedMessage {
     return $result;
   }
   ReferenceBound._() : super();
-  factory ReferenceBound.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReferenceBound.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReferenceBound.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReferenceBound.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReferenceBound', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReferenceBound',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'referenceName')
     ..aInt64(2, _omitFieldNames ? '' : 'upperBound')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReferenceBound clone() => ReferenceBound()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReferenceBound copyWith(void Function(ReferenceBound) updates) => super.copyWith((message) => updates(message as ReferenceBound)) as ReferenceBound;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReferenceBound copyWith(void Function(ReferenceBound) updates) =>
+      super.copyWith((message) => updates(message as ReferenceBound))
+          as ReferenceBound;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReferenceBound create() => ReferenceBound._();
   ReferenceBound createEmptyInstance() => create();
-  static $pb.PbList<ReferenceBound> createRepeated() => $pb.PbList<ReferenceBound>();
+  static $pb.PbList<ReferenceBound> createRepeated() =>
+      $pb.PbList<ReferenceBound>();
   @$core.pragma('dart2js:noInline')
-  static ReferenceBound getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReferenceBound>(create);
+  static ReferenceBound getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReferenceBound>(create);
   static ReferenceBound? _defaultInstance;
 
   /// The name of the reference associated with this reference bound.
   @$pb.TagNumber(1)
   $core.String get referenceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set referenceName($core.String v) { $_setString(0, v); }
+  set referenceName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReferenceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -850,7 +1012,10 @@ class ReferenceBound extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get upperBound => $_getI64(1);
   @$pb.TagNumber(2)
-  set upperBound($fixnum.Int64 v) { $_setInt64(1, v); }
+  set upperBound($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpperBound() => $_has(1);
   @$pb.TagNumber(2)
@@ -885,44 +1050,72 @@ class ImportVariantsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ImportVariantsRequest._() : super();
-  factory ImportVariantsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportVariantsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportVariantsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportVariantsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportVariantsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportVariantsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantSetId')
     ..pPS(2, _omitFieldNames ? '' : 'sourceUris')
-    ..e<ImportVariantsRequest_Format>(3, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE, defaultOrMaker: ImportVariantsRequest_Format.FORMAT_UNSPECIFIED, valueOf: ImportVariantsRequest_Format.valueOf, enumValues: ImportVariantsRequest_Format.values)
+    ..e<ImportVariantsRequest_Format>(
+        3, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE,
+        defaultOrMaker: ImportVariantsRequest_Format.FORMAT_UNSPECIFIED,
+        valueOf: ImportVariantsRequest_Format.valueOf,
+        enumValues: ImportVariantsRequest_Format.values)
     ..aOB(5, _omitFieldNames ? '' : 'normalizeReferenceNames')
-    ..m<$core.String, InfoMergeOperation>(6, _omitFieldNames ? '' : 'infoMergeConfig', entryClassName: 'ImportVariantsRequest.InfoMergeConfigEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OE, valueOf: InfoMergeOperation.valueOf, enumValues: InfoMergeOperation.values, valueDefaultOrMaker: InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED, defaultEnumValue: InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED, packageName: const $pb.PackageName('google.genomics.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, InfoMergeOperation>(
+        6, _omitFieldNames ? '' : 'infoMergeConfig',
+        entryClassName: 'ImportVariantsRequest.InfoMergeConfigEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OE,
+        valueOf: InfoMergeOperation.valueOf,
+        enumValues: InfoMergeOperation.values,
+        valueDefaultOrMaker:
+            InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED,
+        defaultEnumValue: InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED,
+        packageName: const $pb.PackageName('google.genomics.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportVariantsRequest clone() => ImportVariantsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportVariantsRequest copyWith(void Function(ImportVariantsRequest) updates) => super.copyWith((message) => updates(message as ImportVariantsRequest)) as ImportVariantsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportVariantsRequest clone() =>
+      ImportVariantsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportVariantsRequest copyWith(
+          void Function(ImportVariantsRequest) updates) =>
+      super.copyWith((message) => updates(message as ImportVariantsRequest))
+          as ImportVariantsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImportVariantsRequest create() => ImportVariantsRequest._();
   ImportVariantsRequest createEmptyInstance() => create();
-  static $pb.PbList<ImportVariantsRequest> createRepeated() => $pb.PbList<ImportVariantsRequest>();
+  static $pb.PbList<ImportVariantsRequest> createRepeated() =>
+      $pb.PbList<ImportVariantsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ImportVariantsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportVariantsRequest>(create);
+  static ImportVariantsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportVariantsRequest>(create);
   static ImportVariantsRequest? _defaultInstance;
 
   /// Required. The variant set to which variant data should be imported.
   @$pb.TagNumber(1)
   $core.String get variantSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantSetId($core.String v) { $_setString(0, v); }
+  set variantSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -940,7 +1133,10 @@ class ImportVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ImportVariantsRequest_Format get format => $_getN(2);
   @$pb.TagNumber(3)
-  set format(ImportVariantsRequest_Format v) { setField(3, v); }
+  set format(ImportVariantsRequest_Format v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFormat() => $_has(2);
   @$pb.TagNumber(3)
@@ -957,7 +1153,10 @@ class ImportVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get normalizeReferenceNames => $_getBF(3);
   @$pb.TagNumber(5)
-  set normalizeReferenceNames($core.bool v) { $_setBool(3, v); }
+  set normalizeReferenceNames($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasNormalizeReferenceNames() => $_has(3);
   @$pb.TagNumber(5)
@@ -967,7 +1166,8 @@ class ImportVariantsRequest extends $pb.GeneratedMessage {
   /// be performed on them. This is plumbed down to the MergeVariantRequests
   /// generated by the resulting import job.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, InfoMergeOperation> get infoMergeConfig => $_getMap(4);
+  $core.Map<$core.String, InfoMergeOperation> get infoMergeConfig =>
+      $_getMap(4);
 }
 
 /// The variant data import response.
@@ -982,33 +1182,44 @@ class ImportVariantsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ImportVariantsResponse._() : super();
-  factory ImportVariantsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportVariantsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportVariantsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportVariantsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportVariantsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportVariantsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'callSetIds')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportVariantsResponse clone() => ImportVariantsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportVariantsResponse copyWith(void Function(ImportVariantsResponse) updates) => super.copyWith((message) => updates(message as ImportVariantsResponse)) as ImportVariantsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportVariantsResponse clone() =>
+      ImportVariantsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportVariantsResponse copyWith(
+          void Function(ImportVariantsResponse) updates) =>
+      super.copyWith((message) => updates(message as ImportVariantsResponse))
+          as ImportVariantsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImportVariantsResponse create() => ImportVariantsResponse._();
   ImportVariantsResponse createEmptyInstance() => create();
-  static $pb.PbList<ImportVariantsResponse> createRepeated() => $pb.PbList<ImportVariantsResponse>();
+  static $pb.PbList<ImportVariantsResponse> createRepeated() =>
+      $pb.PbList<ImportVariantsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ImportVariantsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportVariantsResponse>(create);
+  static ImportVariantsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportVariantsResponse>(create);
   static ImportVariantsResponse? _defaultInstance;
 
   /// IDs of the call sets created during the import.
@@ -1028,40 +1239,55 @@ class CreateVariantSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateVariantSetRequest._() : super();
-  factory CreateVariantSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateVariantSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateVariantSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateVariantSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateVariantSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..aOM<VariantSet>(1, _omitFieldNames ? '' : 'variantSet', subBuilder: VariantSet.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateVariantSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..aOM<VariantSet>(1, _omitFieldNames ? '' : 'variantSet',
+        subBuilder: VariantSet.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateVariantSetRequest clone() => CreateVariantSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateVariantSetRequest copyWith(void Function(CreateVariantSetRequest) updates) => super.copyWith((message) => updates(message as CreateVariantSetRequest)) as CreateVariantSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateVariantSetRequest clone() =>
+      CreateVariantSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateVariantSetRequest copyWith(
+          void Function(CreateVariantSetRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateVariantSetRequest))
+          as CreateVariantSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateVariantSetRequest create() => CreateVariantSetRequest._();
   CreateVariantSetRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateVariantSetRequest> createRepeated() => $pb.PbList<CreateVariantSetRequest>();
+  static $pb.PbList<CreateVariantSetRequest> createRepeated() =>
+      $pb.PbList<CreateVariantSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateVariantSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateVariantSetRequest>(create);
+  static CreateVariantSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateVariantSetRequest>(create);
   static CreateVariantSetRequest? _defaultInstance;
 
   /// Required. The variant set to be created. Must have a valid `datasetId`.
   @$pb.TagNumber(1)
   VariantSet get variantSet => $_getN(0);
   @$pb.TagNumber(1)
-  set variantSet(VariantSet v) { setField(1, v); }
+  set variantSet(VariantSet v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantSet() => $_has(0);
   @$pb.TagNumber(1)
@@ -1102,38 +1328,53 @@ class ExportVariantSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ExportVariantSetRequest._() : super();
-  factory ExportVariantSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportVariantSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportVariantSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportVariantSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportVariantSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportVariantSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantSetId')
     ..pPS(2, _omitFieldNames ? '' : 'callSetIds')
     ..aOS(3, _omitFieldNames ? '' : 'projectId')
-    ..e<ExportVariantSetRequest_Format>(4, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE, defaultOrMaker: ExportVariantSetRequest_Format.FORMAT_UNSPECIFIED, valueOf: ExportVariantSetRequest_Format.valueOf, enumValues: ExportVariantSetRequest_Format.values)
+    ..e<ExportVariantSetRequest_Format>(
+        4, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE,
+        defaultOrMaker: ExportVariantSetRequest_Format.FORMAT_UNSPECIFIED,
+        valueOf: ExportVariantSetRequest_Format.valueOf,
+        enumValues: ExportVariantSetRequest_Format.values)
     ..aOS(5, _omitFieldNames ? '' : 'bigqueryDataset')
     ..aOS(6, _omitFieldNames ? '' : 'bigqueryTable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportVariantSetRequest clone() => ExportVariantSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportVariantSetRequest copyWith(void Function(ExportVariantSetRequest) updates) => super.copyWith((message) => updates(message as ExportVariantSetRequest)) as ExportVariantSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportVariantSetRequest clone() =>
+      ExportVariantSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportVariantSetRequest copyWith(
+          void Function(ExportVariantSetRequest) updates) =>
+      super.copyWith((message) => updates(message as ExportVariantSetRequest))
+          as ExportVariantSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportVariantSetRequest create() => ExportVariantSetRequest._();
   ExportVariantSetRequest createEmptyInstance() => create();
-  static $pb.PbList<ExportVariantSetRequest> createRepeated() => $pb.PbList<ExportVariantSetRequest>();
+  static $pb.PbList<ExportVariantSetRequest> createRepeated() =>
+      $pb.PbList<ExportVariantSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExportVariantSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportVariantSetRequest>(create);
+  static ExportVariantSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportVariantSetRequest>(create);
   static ExportVariantSetRequest? _defaultInstance;
 
   /// Required. The ID of the variant set that contains variant data which
@@ -1141,7 +1382,10 @@ class ExportVariantSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get variantSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantSetId($core.String v) { $_setString(0, v); }
+  set variantSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1158,7 +1402,10 @@ class ExportVariantSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get projectId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set projectId($core.String v) { $_setString(2, v); }
+  set projectId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProjectId() => $_has(2);
   @$pb.TagNumber(3)
@@ -1168,7 +1415,10 @@ class ExportVariantSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ExportVariantSetRequest_Format get format => $_getN(3);
   @$pb.TagNumber(4)
-  set format(ExportVariantSetRequest_Format v) { setField(4, v); }
+  set format(ExportVariantSetRequest_Format v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFormat() => $_has(3);
   @$pb.TagNumber(4)
@@ -1179,7 +1429,10 @@ class ExportVariantSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get bigqueryDataset => $_getSZ(4);
   @$pb.TagNumber(5)
-  set bigqueryDataset($core.String v) { $_setString(4, v); }
+  set bigqueryDataset($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBigqueryDataset() => $_has(4);
   @$pb.TagNumber(5)
@@ -1191,7 +1444,10 @@ class ExportVariantSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get bigqueryTable => $_getSZ(5);
   @$pb.TagNumber(6)
-  set bigqueryTable($core.String v) { $_setString(5, v); }
+  set bigqueryTable($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBigqueryTable() => $_has(5);
   @$pb.TagNumber(6)
@@ -1210,40 +1466,53 @@ class GetVariantSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetVariantSetRequest._() : super();
-  factory GetVariantSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetVariantSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetVariantSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetVariantSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetVariantSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetVariantSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantSetId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetVariantSetRequest clone() => GetVariantSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetVariantSetRequest copyWith(void Function(GetVariantSetRequest) updates) => super.copyWith((message) => updates(message as GetVariantSetRequest)) as GetVariantSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetVariantSetRequest clone() =>
+      GetVariantSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetVariantSetRequest copyWith(void Function(GetVariantSetRequest) updates) =>
+      super.copyWith((message) => updates(message as GetVariantSetRequest))
+          as GetVariantSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetVariantSetRequest create() => GetVariantSetRequest._();
   GetVariantSetRequest createEmptyInstance() => create();
-  static $pb.PbList<GetVariantSetRequest> createRepeated() => $pb.PbList<GetVariantSetRequest>();
+  static $pb.PbList<GetVariantSetRequest> createRepeated() =>
+      $pb.PbList<GetVariantSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetVariantSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetVariantSetRequest>(create);
+  static GetVariantSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetVariantSetRequest>(create);
   static GetVariantSetRequest? _defaultInstance;
 
   /// Required. The ID of the variant set.
   @$pb.TagNumber(1)
   $core.String get variantSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantSetId($core.String v) { $_setString(0, v); }
+  set variantSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1270,35 +1539,46 @@ class SearchVariantSetsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchVariantSetsRequest._() : super();
-  factory SearchVariantSetsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchVariantSetsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchVariantSetsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchVariantSetsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchVariantSetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchVariantSetsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'datasetIds')
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchVariantSetsRequest clone() => SearchVariantSetsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchVariantSetsRequest copyWith(void Function(SearchVariantSetsRequest) updates) => super.copyWith((message) => updates(message as SearchVariantSetsRequest)) as SearchVariantSetsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchVariantSetsRequest clone() =>
+      SearchVariantSetsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchVariantSetsRequest copyWith(
+          void Function(SearchVariantSetsRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchVariantSetsRequest))
+          as SearchVariantSetsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchVariantSetsRequest create() => SearchVariantSetsRequest._();
   SearchVariantSetsRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchVariantSetsRequest> createRepeated() => $pb.PbList<SearchVariantSetsRequest>();
+  static $pb.PbList<SearchVariantSetsRequest> createRepeated() =>
+      $pb.PbList<SearchVariantSetsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchVariantSetsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchVariantSetsRequest>(create);
+  static SearchVariantSetsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchVariantSetsRequest>(create);
   static SearchVariantSetsRequest? _defaultInstance;
 
   /// Exactly one dataset ID must be provided here. Only variant sets which
@@ -1312,7 +1592,10 @@ class SearchVariantSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1323,7 +1606,10 @@ class SearchVariantSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1346,34 +1632,47 @@ class SearchVariantSetsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchVariantSetsResponse._() : super();
-  factory SearchVariantSetsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchVariantSetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchVariantSetsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchVariantSetsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchVariantSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<VariantSet>(1, _omitFieldNames ? '' : 'variantSets', $pb.PbFieldType.PM, subBuilder: VariantSet.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchVariantSetsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..pc<VariantSet>(
+        1, _omitFieldNames ? '' : 'variantSets', $pb.PbFieldType.PM,
+        subBuilder: VariantSet.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchVariantSetsResponse clone() => SearchVariantSetsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchVariantSetsResponse copyWith(void Function(SearchVariantSetsResponse) updates) => super.copyWith((message) => updates(message as SearchVariantSetsResponse)) as SearchVariantSetsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchVariantSetsResponse clone() =>
+      SearchVariantSetsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchVariantSetsResponse copyWith(
+          void Function(SearchVariantSetsResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchVariantSetsResponse))
+          as SearchVariantSetsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchVariantSetsResponse create() => SearchVariantSetsResponse._();
   SearchVariantSetsResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchVariantSetsResponse> createRepeated() => $pb.PbList<SearchVariantSetsResponse>();
+  static $pb.PbList<SearchVariantSetsResponse> createRepeated() =>
+      $pb.PbList<SearchVariantSetsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchVariantSetsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchVariantSetsResponse>(create);
+  static SearchVariantSetsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchVariantSetsResponse>(create);
   static SearchVariantSetsResponse? _defaultInstance;
 
   /// The variant sets belonging to the requested dataset.
@@ -1386,7 +1685,10 @@ class SearchVariantSetsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1405,40 +1707,54 @@ class DeleteVariantSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteVariantSetRequest._() : super();
-  factory DeleteVariantSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteVariantSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteVariantSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteVariantSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteVariantSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteVariantSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantSetId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteVariantSetRequest clone() => DeleteVariantSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteVariantSetRequest copyWith(void Function(DeleteVariantSetRequest) updates) => super.copyWith((message) => updates(message as DeleteVariantSetRequest)) as DeleteVariantSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteVariantSetRequest clone() =>
+      DeleteVariantSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteVariantSetRequest copyWith(
+          void Function(DeleteVariantSetRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteVariantSetRequest))
+          as DeleteVariantSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteVariantSetRequest create() => DeleteVariantSetRequest._();
   DeleteVariantSetRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteVariantSetRequest> createRepeated() => $pb.PbList<DeleteVariantSetRequest>();
+  static $pb.PbList<DeleteVariantSetRequest> createRepeated() =>
+      $pb.PbList<DeleteVariantSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteVariantSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteVariantSetRequest>(create);
+  static DeleteVariantSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteVariantSetRequest>(create);
   static DeleteVariantSetRequest? _defaultInstance;
 
   /// The ID of the variant set to be deleted.
   @$pb.TagNumber(1)
   $core.String get variantSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantSetId($core.String v) { $_setString(0, v); }
+  set variantSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1464,42 +1780,58 @@ class UpdateVariantSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateVariantSetRequest._() : super();
-  factory UpdateVariantSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateVariantSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateVariantSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateVariantSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVariantSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateVariantSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantSetId')
-    ..aOM<VariantSet>(2, _omitFieldNames ? '' : 'variantSet', subBuilder: VariantSet.create)
-    ..aOM<$333.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<VariantSet>(2, _omitFieldNames ? '' : 'variantSet',
+        subBuilder: VariantSet.create)
+    ..aOM<$333.FieldMask>(5, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateVariantSetRequest clone() => UpdateVariantSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateVariantSetRequest copyWith(void Function(UpdateVariantSetRequest) updates) => super.copyWith((message) => updates(message as UpdateVariantSetRequest)) as UpdateVariantSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateVariantSetRequest clone() =>
+      UpdateVariantSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateVariantSetRequest copyWith(
+          void Function(UpdateVariantSetRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateVariantSetRequest))
+          as UpdateVariantSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateVariantSetRequest create() => UpdateVariantSetRequest._();
   UpdateVariantSetRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateVariantSetRequest> createRepeated() => $pb.PbList<UpdateVariantSetRequest>();
+  static $pb.PbList<UpdateVariantSetRequest> createRepeated() =>
+      $pb.PbList<UpdateVariantSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateVariantSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateVariantSetRequest>(create);
+  static UpdateVariantSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateVariantSetRequest>(create);
   static UpdateVariantSetRequest? _defaultInstance;
 
   /// The ID of the variant to be updated (must already exist).
   @$pb.TagNumber(1)
   $core.String get variantSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantSetId($core.String v) { $_setString(0, v); }
+  set variantSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1510,7 +1842,10 @@ class UpdateVariantSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   VariantSet get variantSet => $_getN(1);
   @$pb.TagNumber(2)
-  set variantSet(VariantSet v) { setField(2, v); }
+  set variantSet(VariantSet v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVariantSet() => $_has(1);
   @$pb.TagNumber(2)
@@ -1529,7 +1864,10 @@ class UpdateVariantSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(5)
-  set updateMask($333.FieldMask v) { setField(5, v); }
+  set updateMask($333.FieldMask v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(5)
@@ -1582,10 +1920,18 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchVariantsRequest._() : super();
-  factory SearchVariantsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchVariantsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchVariantsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchVariantsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchVariantsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchVariantsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'variantSetIds')
     ..aOS(2, _omitFieldNames ? '' : 'variantName')
     ..pPS(3, _omitFieldNames ? '' : 'callSetIds')
@@ -1595,28 +1941,31 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(8, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'maxCalls', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchVariantsRequest clone() => SearchVariantsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchVariantsRequest copyWith(void Function(SearchVariantsRequest) updates) => super.copyWith((message) => updates(message as SearchVariantsRequest)) as SearchVariantsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchVariantsRequest clone() =>
+      SearchVariantsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchVariantsRequest copyWith(
+          void Function(SearchVariantsRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchVariantsRequest))
+          as SearchVariantsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchVariantsRequest create() => SearchVariantsRequest._();
   SearchVariantsRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchVariantsRequest> createRepeated() => $pb.PbList<SearchVariantsRequest>();
+  static $pb.PbList<SearchVariantsRequest> createRepeated() =>
+      $pb.PbList<SearchVariantsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchVariantsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchVariantsRequest>(create);
+  static SearchVariantsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchVariantsRequest>(create);
   static SearchVariantsRequest? _defaultInstance;
 
   /// At most one variant set ID must be provided. Only variants from this
@@ -1629,7 +1978,10 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get variantName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set variantName($core.String v) { $_setString(1, v); }
+  set variantName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVariantName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1645,7 +1997,10 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get referenceName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set referenceName($core.String v) { $_setString(3, v); }
+  set referenceName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReferenceName() => $_has(3);
   @$pb.TagNumber(4)
@@ -1656,7 +2011,10 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get start => $_getI64(4);
   @$pb.TagNumber(5)
-  set start($fixnum.Int64 v) { $_setInt64(4, v); }
+  set start($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStart() => $_has(4);
   @$pb.TagNumber(5)
@@ -1667,7 +2025,10 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $fixnum.Int64 get end => $_getI64(5);
   @$pb.TagNumber(6)
-  set end($fixnum.Int64 v) { $_setInt64(5, v); }
+  set end($fixnum.Int64 v) {
+    $_setInt64(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasEnd() => $_has(5);
   @$pb.TagNumber(6)
@@ -1679,7 +2040,10 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get pageToken => $_getSZ(6);
   @$pb.TagNumber(7)
-  set pageToken($core.String v) { $_setString(6, v); }
+  set pageToken($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPageToken() => $_has(6);
   @$pb.TagNumber(7)
@@ -1690,7 +2054,10 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get pageSize => $_getIZ(7);
   @$pb.TagNumber(8)
-  set pageSize($core.int v) { $_setSignedInt32(7, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPageSize() => $_has(7);
   @$pb.TagNumber(8)
@@ -1703,7 +2070,10 @@ class SearchVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get maxCalls => $_getIZ(8);
   @$pb.TagNumber(9)
-  set maxCalls($core.int v) { $_setSignedInt32(8, v); }
+  set maxCalls($core.int v) {
+    $_setSignedInt32(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasMaxCalls() => $_has(8);
   @$pb.TagNumber(9)
@@ -1726,34 +2096,46 @@ class SearchVariantsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchVariantsResponse._() : super();
-  factory SearchVariantsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchVariantsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchVariantsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchVariantsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchVariantsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<Variant>(1, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM, subBuilder: Variant.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchVariantsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..pc<Variant>(1, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM,
+        subBuilder: Variant.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchVariantsResponse clone() => SearchVariantsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchVariantsResponse copyWith(void Function(SearchVariantsResponse) updates) => super.copyWith((message) => updates(message as SearchVariantsResponse)) as SearchVariantsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchVariantsResponse clone() =>
+      SearchVariantsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchVariantsResponse copyWith(
+          void Function(SearchVariantsResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchVariantsResponse))
+          as SearchVariantsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchVariantsResponse create() => SearchVariantsResponse._();
   SearchVariantsResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchVariantsResponse> createRepeated() => $pb.PbList<SearchVariantsResponse>();
+  static $pb.PbList<SearchVariantsResponse> createRepeated() =>
+      $pb.PbList<SearchVariantsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchVariantsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchVariantsResponse>(create);
+  static SearchVariantsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchVariantsResponse>(create);
   static SearchVariantsResponse? _defaultInstance;
 
   /// The list of matching Variants.
@@ -1766,7 +2148,10 @@ class SearchVariantsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1784,40 +2169,54 @@ class CreateVariantRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateVariantRequest._() : super();
-  factory CreateVariantRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateVariantRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateVariantRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateVariantRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateVariantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..aOM<Variant>(1, _omitFieldNames ? '' : 'variant', subBuilder: Variant.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateVariantRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..aOM<Variant>(1, _omitFieldNames ? '' : 'variant',
+        subBuilder: Variant.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateVariantRequest clone() => CreateVariantRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateVariantRequest copyWith(void Function(CreateVariantRequest) updates) => super.copyWith((message) => updates(message as CreateVariantRequest)) as CreateVariantRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateVariantRequest clone() =>
+      CreateVariantRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateVariantRequest copyWith(void Function(CreateVariantRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateVariantRequest))
+          as CreateVariantRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateVariantRequest create() => CreateVariantRequest._();
   CreateVariantRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateVariantRequest> createRepeated() => $pb.PbList<CreateVariantRequest>();
+  static $pb.PbList<CreateVariantRequest> createRepeated() =>
+      $pb.PbList<CreateVariantRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateVariantRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateVariantRequest>(create);
+  static CreateVariantRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateVariantRequest>(create);
   static CreateVariantRequest? _defaultInstance;
 
   /// The variant to be created.
   @$pb.TagNumber(1)
   Variant get variant => $_getN(0);
   @$pb.TagNumber(1)
-  set variant(Variant v) { setField(1, v); }
+  set variant(Variant v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariant() => $_has(0);
   @$pb.TagNumber(1)
@@ -1845,42 +2244,57 @@ class UpdateVariantRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateVariantRequest._() : super();
-  factory UpdateVariantRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateVariantRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateVariantRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateVariantRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVariantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateVariantRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantId')
-    ..aOM<Variant>(2, _omitFieldNames ? '' : 'variant', subBuilder: Variant.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Variant>(2, _omitFieldNames ? '' : 'variant',
+        subBuilder: Variant.create)
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateVariantRequest clone() => UpdateVariantRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateVariantRequest copyWith(void Function(UpdateVariantRequest) updates) => super.copyWith((message) => updates(message as UpdateVariantRequest)) as UpdateVariantRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateVariantRequest clone() =>
+      UpdateVariantRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateVariantRequest copyWith(void Function(UpdateVariantRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateVariantRequest))
+          as UpdateVariantRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateVariantRequest create() => UpdateVariantRequest._();
   UpdateVariantRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateVariantRequest> createRepeated() => $pb.PbList<UpdateVariantRequest>();
+  static $pb.PbList<UpdateVariantRequest> createRepeated() =>
+      $pb.PbList<UpdateVariantRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateVariantRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateVariantRequest>(create);
+  static UpdateVariantRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateVariantRequest>(create);
   static UpdateVariantRequest? _defaultInstance;
 
   /// The ID of the variant to be updated.
   @$pb.TagNumber(1)
   $core.String get variantId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantId($core.String v) { $_setString(0, v); }
+  set variantId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1890,7 +2304,10 @@ class UpdateVariantRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Variant get variant => $_getN(1);
   @$pb.TagNumber(2)
-  set variant(Variant v) { setField(2, v); }
+  set variant(Variant v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVariant() => $_has(1);
   @$pb.TagNumber(2)
@@ -1905,7 +2322,10 @@ class UpdateVariantRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) { setField(3, v); }
+  set updateMask($333.FieldMask v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
@@ -1925,40 +2345,53 @@ class DeleteVariantRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteVariantRequest._() : super();
-  factory DeleteVariantRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteVariantRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteVariantRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteVariantRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteVariantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteVariantRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteVariantRequest clone() => DeleteVariantRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteVariantRequest copyWith(void Function(DeleteVariantRequest) updates) => super.copyWith((message) => updates(message as DeleteVariantRequest)) as DeleteVariantRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteVariantRequest clone() =>
+      DeleteVariantRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteVariantRequest copyWith(void Function(DeleteVariantRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteVariantRequest))
+          as DeleteVariantRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteVariantRequest create() => DeleteVariantRequest._();
   DeleteVariantRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteVariantRequest> createRepeated() => $pb.PbList<DeleteVariantRequest>();
+  static $pb.PbList<DeleteVariantRequest> createRepeated() =>
+      $pb.PbList<DeleteVariantRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteVariantRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteVariantRequest>(create);
+  static DeleteVariantRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteVariantRequest>(create);
   static DeleteVariantRequest? _defaultInstance;
 
   /// The ID of the variant to be deleted.
   @$pb.TagNumber(1)
   $core.String get variantId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantId($core.String v) { $_setString(0, v); }
+  set variantId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1976,40 +2409,52 @@ class GetVariantRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetVariantRequest._() : super();
-  factory GetVariantRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetVariantRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetVariantRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetVariantRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetVariantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetVariantRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetVariantRequest clone() => GetVariantRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetVariantRequest copyWith(void Function(GetVariantRequest) updates) => super.copyWith((message) => updates(message as GetVariantRequest)) as GetVariantRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetVariantRequest copyWith(void Function(GetVariantRequest) updates) =>
+      super.copyWith((message) => updates(message as GetVariantRequest))
+          as GetVariantRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetVariantRequest create() => GetVariantRequest._();
   GetVariantRequest createEmptyInstance() => create();
-  static $pb.PbList<GetVariantRequest> createRepeated() => $pb.PbList<GetVariantRequest>();
+  static $pb.PbList<GetVariantRequest> createRepeated() =>
+      $pb.PbList<GetVariantRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetVariantRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetVariantRequest>(create);
+  static GetVariantRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetVariantRequest>(create);
   static GetVariantRequest? _defaultInstance;
 
   /// The ID of the variant.
   @$pb.TagNumber(1)
   $core.String get variantId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantId($core.String v) { $_setString(0, v); }
+  set variantId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2035,42 +2480,66 @@ class MergeVariantsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   MergeVariantsRequest._() : super();
-  factory MergeVariantsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MergeVariantsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MergeVariantsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MergeVariantsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MergeVariantsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MergeVariantsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantSetId')
-    ..pc<Variant>(2, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM, subBuilder: Variant.create)
-    ..m<$core.String, InfoMergeOperation>(3, _omitFieldNames ? '' : 'infoMergeConfig', entryClassName: 'MergeVariantsRequest.InfoMergeConfigEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OE, valueOf: InfoMergeOperation.valueOf, enumValues: InfoMergeOperation.values, valueDefaultOrMaker: InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED, defaultEnumValue: InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED, packageName: const $pb.PackageName('google.genomics.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..pc<Variant>(2, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM,
+        subBuilder: Variant.create)
+    ..m<$core.String, InfoMergeOperation>(
+        3, _omitFieldNames ? '' : 'infoMergeConfig',
+        entryClassName: 'MergeVariantsRequest.InfoMergeConfigEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OE,
+        valueOf: InfoMergeOperation.valueOf,
+        enumValues: InfoMergeOperation.values,
+        valueDefaultOrMaker:
+            InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED,
+        defaultEnumValue: InfoMergeOperation.INFO_MERGE_OPERATION_UNSPECIFIED,
+        packageName: const $pb.PackageName('google.genomics.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MergeVariantsRequest clone() => MergeVariantsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MergeVariantsRequest copyWith(void Function(MergeVariantsRequest) updates) => super.copyWith((message) => updates(message as MergeVariantsRequest)) as MergeVariantsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MergeVariantsRequest clone() =>
+      MergeVariantsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MergeVariantsRequest copyWith(void Function(MergeVariantsRequest) updates) =>
+      super.copyWith((message) => updates(message as MergeVariantsRequest))
+          as MergeVariantsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MergeVariantsRequest create() => MergeVariantsRequest._();
   MergeVariantsRequest createEmptyInstance() => create();
-  static $pb.PbList<MergeVariantsRequest> createRepeated() => $pb.PbList<MergeVariantsRequest>();
+  static $pb.PbList<MergeVariantsRequest> createRepeated() =>
+      $pb.PbList<MergeVariantsRequest>();
   @$core.pragma('dart2js:noInline')
-  static MergeVariantsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MergeVariantsRequest>(create);
+  static MergeVariantsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MergeVariantsRequest>(create);
   static MergeVariantsRequest? _defaultInstance;
 
   /// The destination variant set.
   @$pb.TagNumber(1)
   $core.String get variantSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set variantSetId($core.String v) { $_setString(0, v); }
+  set variantSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVariantSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2083,7 +2552,8 @@ class MergeVariantsRequest extends $pb.GeneratedMessage {
   /// A mapping between info field keys and the InfoMergeOperations to
   /// be performed on them.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, InfoMergeOperation> get infoMergeConfig => $_getMap(2);
+  $core.Map<$core.String, InfoMergeOperation> get infoMergeConfig =>
+      $_getMap(2);
 }
 
 /// The call set search request.
@@ -2110,36 +2580,47 @@ class SearchCallSetsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchCallSetsRequest._() : super();
-  factory SearchCallSetsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchCallSetsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchCallSetsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchCallSetsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchCallSetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchCallSetsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'variantSetIds')
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchCallSetsRequest clone() => SearchCallSetsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchCallSetsRequest copyWith(void Function(SearchCallSetsRequest) updates) => super.copyWith((message) => updates(message as SearchCallSetsRequest)) as SearchCallSetsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchCallSetsRequest clone() =>
+      SearchCallSetsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchCallSetsRequest copyWith(
+          void Function(SearchCallSetsRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchCallSetsRequest))
+          as SearchCallSetsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchCallSetsRequest create() => SearchCallSetsRequest._();
   SearchCallSetsRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchCallSetsRequest> createRepeated() => $pb.PbList<SearchCallSetsRequest>();
+  static $pb.PbList<SearchCallSetsRequest> createRepeated() =>
+      $pb.PbList<SearchCallSetsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchCallSetsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchCallSetsRequest>(create);
+  static SearchCallSetsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchCallSetsRequest>(create);
   static SearchCallSetsRequest? _defaultInstance;
 
   /// Restrict the query to call sets within the given variant sets. At least one
@@ -2152,7 +2633,10 @@ class SearchCallSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -2164,7 +2648,10 @@ class SearchCallSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -2175,7 +2662,10 @@ class SearchCallSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(3);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(3, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(3);
   @$pb.TagNumber(4)
@@ -2198,34 +2688,46 @@ class SearchCallSetsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchCallSetsResponse._() : super();
-  factory SearchCallSetsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchCallSetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchCallSetsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchCallSetsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchCallSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<CallSet>(1, _omitFieldNames ? '' : 'callSets', $pb.PbFieldType.PM, subBuilder: CallSet.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchCallSetsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..pc<CallSet>(1, _omitFieldNames ? '' : 'callSets', $pb.PbFieldType.PM,
+        subBuilder: CallSet.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchCallSetsResponse clone() => SearchCallSetsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchCallSetsResponse copyWith(void Function(SearchCallSetsResponse) updates) => super.copyWith((message) => updates(message as SearchCallSetsResponse)) as SearchCallSetsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchCallSetsResponse clone() =>
+      SearchCallSetsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchCallSetsResponse copyWith(
+          void Function(SearchCallSetsResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchCallSetsResponse))
+          as SearchCallSetsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchCallSetsResponse create() => SearchCallSetsResponse._();
   SearchCallSetsResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchCallSetsResponse> createRepeated() => $pb.PbList<SearchCallSetsResponse>();
+  static $pb.PbList<SearchCallSetsResponse> createRepeated() =>
+      $pb.PbList<SearchCallSetsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchCallSetsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchCallSetsResponse>(create);
+  static SearchCallSetsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchCallSetsResponse>(create);
   static SearchCallSetsResponse? _defaultInstance;
 
   /// The list of matching call sets.
@@ -2238,7 +2740,10 @@ class SearchCallSetsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -2256,40 +2761,54 @@ class CreateCallSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateCallSetRequest._() : super();
-  factory CreateCallSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateCallSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateCallSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateCallSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateCallSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..aOM<CallSet>(1, _omitFieldNames ? '' : 'callSet', subBuilder: CallSet.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateCallSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..aOM<CallSet>(1, _omitFieldNames ? '' : 'callSet',
+        subBuilder: CallSet.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateCallSetRequest clone() => CreateCallSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateCallSetRequest copyWith(void Function(CreateCallSetRequest) updates) => super.copyWith((message) => updates(message as CreateCallSetRequest)) as CreateCallSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateCallSetRequest clone() =>
+      CreateCallSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateCallSetRequest copyWith(void Function(CreateCallSetRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateCallSetRequest))
+          as CreateCallSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateCallSetRequest create() => CreateCallSetRequest._();
   CreateCallSetRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateCallSetRequest> createRepeated() => $pb.PbList<CreateCallSetRequest>();
+  static $pb.PbList<CreateCallSetRequest> createRepeated() =>
+      $pb.PbList<CreateCallSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateCallSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateCallSetRequest>(create);
+  static CreateCallSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateCallSetRequest>(create);
   static CreateCallSetRequest? _defaultInstance;
 
   /// The call set to be created.
   @$pb.TagNumber(1)
   CallSet get callSet => $_getN(0);
   @$pb.TagNumber(1)
-  set callSet(CallSet v) { setField(1, v); }
+  set callSet(CallSet v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCallSet() => $_has(0);
   @$pb.TagNumber(1)
@@ -2317,42 +2836,57 @@ class UpdateCallSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateCallSetRequest._() : super();
-  factory UpdateCallSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateCallSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateCallSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateCallSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCallSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateCallSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'callSetId')
-    ..aOM<CallSet>(2, _omitFieldNames ? '' : 'callSet', subBuilder: CallSet.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<CallSet>(2, _omitFieldNames ? '' : 'callSet',
+        subBuilder: CallSet.create)
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateCallSetRequest clone() => UpdateCallSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateCallSetRequest copyWith(void Function(UpdateCallSetRequest) updates) => super.copyWith((message) => updates(message as UpdateCallSetRequest)) as UpdateCallSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateCallSetRequest clone() =>
+      UpdateCallSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateCallSetRequest copyWith(void Function(UpdateCallSetRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateCallSetRequest))
+          as UpdateCallSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateCallSetRequest create() => UpdateCallSetRequest._();
   UpdateCallSetRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateCallSetRequest> createRepeated() => $pb.PbList<UpdateCallSetRequest>();
+  static $pb.PbList<UpdateCallSetRequest> createRepeated() =>
+      $pb.PbList<UpdateCallSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateCallSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateCallSetRequest>(create);
+  static UpdateCallSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateCallSetRequest>(create);
   static UpdateCallSetRequest? _defaultInstance;
 
   /// The ID of the call set to be updated.
   @$pb.TagNumber(1)
   $core.String get callSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set callSetId($core.String v) { $_setString(0, v); }
+  set callSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCallSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2362,7 +2896,10 @@ class UpdateCallSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CallSet get callSet => $_getN(1);
   @$pb.TagNumber(2)
-  set callSet(CallSet v) { setField(2, v); }
+  set callSet(CallSet v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCallSet() => $_has(1);
   @$pb.TagNumber(2)
@@ -2377,7 +2914,10 @@ class UpdateCallSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) { setField(3, v); }
+  set updateMask($333.FieldMask v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
@@ -2397,40 +2937,53 @@ class DeleteCallSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteCallSetRequest._() : super();
-  factory DeleteCallSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteCallSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteCallSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteCallSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteCallSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteCallSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'callSetId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteCallSetRequest clone() => DeleteCallSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteCallSetRequest copyWith(void Function(DeleteCallSetRequest) updates) => super.copyWith((message) => updates(message as DeleteCallSetRequest)) as DeleteCallSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteCallSetRequest clone() =>
+      DeleteCallSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteCallSetRequest copyWith(void Function(DeleteCallSetRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteCallSetRequest))
+          as DeleteCallSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteCallSetRequest create() => DeleteCallSetRequest._();
   DeleteCallSetRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteCallSetRequest> createRepeated() => $pb.PbList<DeleteCallSetRequest>();
+  static $pb.PbList<DeleteCallSetRequest> createRepeated() =>
+      $pb.PbList<DeleteCallSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteCallSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteCallSetRequest>(create);
+  static DeleteCallSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteCallSetRequest>(create);
   static DeleteCallSetRequest? _defaultInstance;
 
   /// The ID of the call set to be deleted.
   @$pb.TagNumber(1)
   $core.String get callSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set callSetId($core.String v) { $_setString(0, v); }
+  set callSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCallSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2448,40 +3001,52 @@ class GetCallSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetCallSetRequest._() : super();
-  factory GetCallSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetCallSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetCallSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetCallSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetCallSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetCallSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'callSetId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetCallSetRequest clone() => GetCallSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetCallSetRequest copyWith(void Function(GetCallSetRequest) updates) => super.copyWith((message) => updates(message as GetCallSetRequest)) as GetCallSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetCallSetRequest copyWith(void Function(GetCallSetRequest) updates) =>
+      super.copyWith((message) => updates(message as GetCallSetRequest))
+          as GetCallSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetCallSetRequest create() => GetCallSetRequest._();
   GetCallSetRequest createEmptyInstance() => create();
-  static $pb.PbList<GetCallSetRequest> createRepeated() => $pb.PbList<GetCallSetRequest>();
+  static $pb.PbList<GetCallSetRequest> createRepeated() =>
+      $pb.PbList<GetCallSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetCallSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetCallSetRequest>(create);
+  static GetCallSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetCallSetRequest>(create);
   static GetCallSetRequest? _defaultInstance;
 
   /// The ID of the call set.
   @$pb.TagNumber(1)
   $core.String get callSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set callSetId($core.String v) { $_setString(0, v); }
+  set callSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCallSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2520,38 +3085,49 @@ class StreamVariantsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   StreamVariantsRequest._() : super();
-  factory StreamVariantsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamVariantsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamVariantsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamVariantsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamVariantsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamVariantsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'variantSetId')
     ..pPS(3, _omitFieldNames ? '' : 'callSetIds')
     ..aOS(4, _omitFieldNames ? '' : 'referenceName')
     ..aInt64(5, _omitFieldNames ? '' : 'start')
     ..aInt64(6, _omitFieldNames ? '' : 'end')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamVariantsRequest clone() => StreamVariantsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamVariantsRequest copyWith(void Function(StreamVariantsRequest) updates) => super.copyWith((message) => updates(message as StreamVariantsRequest)) as StreamVariantsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StreamVariantsRequest clone() =>
+      StreamVariantsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamVariantsRequest copyWith(
+          void Function(StreamVariantsRequest) updates) =>
+      super.copyWith((message) => updates(message as StreamVariantsRequest))
+          as StreamVariantsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StreamVariantsRequest create() => StreamVariantsRequest._();
   StreamVariantsRequest createEmptyInstance() => create();
-  static $pb.PbList<StreamVariantsRequest> createRepeated() => $pb.PbList<StreamVariantsRequest>();
+  static $pb.PbList<StreamVariantsRequest> createRepeated() =>
+      $pb.PbList<StreamVariantsRequest>();
   @$core.pragma('dart2js:noInline')
-  static StreamVariantsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamVariantsRequest>(create);
+  static StreamVariantsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StreamVariantsRequest>(create);
   static StreamVariantsRequest? _defaultInstance;
 
   /// The Google Cloud project ID which will be billed
@@ -2560,7 +3136,10 @@ class StreamVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2570,7 +3149,10 @@ class StreamVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get variantSetId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set variantSetId($core.String v) { $_setString(1, v); }
+  set variantSetId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVariantSetId() => $_has(1);
   @$pb.TagNumber(2)
@@ -2585,7 +3167,10 @@ class StreamVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get referenceName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set referenceName($core.String v) { $_setString(3, v); }
+  set referenceName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReferenceName() => $_has(3);
   @$pb.TagNumber(4)
@@ -2596,7 +3181,10 @@ class StreamVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get start => $_getI64(4);
   @$pb.TagNumber(5)
-  set start($fixnum.Int64 v) { $_setInt64(4, v); }
+  set start($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStart() => $_has(4);
   @$pb.TagNumber(5)
@@ -2607,7 +3195,10 @@ class StreamVariantsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $fixnum.Int64 get end => $_getI64(5);
   @$pb.TagNumber(6)
-  set end($fixnum.Int64 v) { $_setInt64(5, v); }
+  set end($fixnum.Int64 v) {
+    $_setInt64(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasEnd() => $_has(5);
   @$pb.TagNumber(6)
@@ -2625,39 +3216,51 @@ class StreamVariantsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   StreamVariantsResponse._() : super();
-  factory StreamVariantsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamVariantsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamVariantsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamVariantsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamVariantsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<Variant>(1, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM, subBuilder: Variant.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamVariantsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..pc<Variant>(1, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM,
+        subBuilder: Variant.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamVariantsResponse clone() => StreamVariantsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamVariantsResponse copyWith(void Function(StreamVariantsResponse) updates) => super.copyWith((message) => updates(message as StreamVariantsResponse)) as StreamVariantsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StreamVariantsResponse clone() =>
+      StreamVariantsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamVariantsResponse copyWith(
+          void Function(StreamVariantsResponse) updates) =>
+      super.copyWith((message) => updates(message as StreamVariantsResponse))
+          as StreamVariantsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StreamVariantsResponse create() => StreamVariantsResponse._();
   StreamVariantsResponse createEmptyInstance() => create();
-  static $pb.PbList<StreamVariantsResponse> createRepeated() => $pb.PbList<StreamVariantsResponse>();
+  static $pb.PbList<StreamVariantsResponse> createRepeated() =>
+      $pb.PbList<StreamVariantsResponse>();
   @$core.pragma('dart2js:noInline')
-  static StreamVariantsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamVariantsResponse>(create);
+  static StreamVariantsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StreamVariantsResponse>(create);
   static StreamVariantsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<Variant> get variants => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

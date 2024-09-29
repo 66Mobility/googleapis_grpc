@@ -28,4 +28,3 @@ const AccessRight$json = {
 final $typed_data.Uint8List accessRightDescriptor = $convert.base64Decode(
     'CgtBY2Nlc3NSaWdodBIcChhBQ0NFU1NfUklHSFRfVU5TUEVDSUZJRUQQABIMCghTVEFOREFSRB'
     'ABEgkKBUFETUlOEAISGQoVUEVSRk9STUFOQ0VfUkVQT1JUSU5HEAM=');
-

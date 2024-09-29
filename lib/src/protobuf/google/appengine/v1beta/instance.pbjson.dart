@@ -19,21 +19,73 @@ const Instance$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'id'},
-    {'1': 'app_engine_release', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'appEngineRelease'},
-    {'1': 'availability', '3': 4, '4': 1, '5': 14, '6': '.google.appengine.v1beta.Instance.Availability', '8': {}, '10': 'availability'},
+    {
+      '1': 'app_engine_release',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'appEngineRelease'
+    },
+    {
+      '1': 'availability',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.Instance.Availability',
+      '8': {},
+      '10': 'availability'
+    },
     {'1': 'vm_name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'vmName'},
     {'1': 'vm_zone_name', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'vmZoneName'},
     {'1': 'vm_id', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'vmId'},
-    {'1': 'start_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
+    {
+      '1': 'start_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
     {'1': 'requests', '3': 9, '4': 1, '5': 5, '8': {}, '10': 'requests'},
     {'1': 'errors', '3': 10, '4': 1, '5': 5, '8': {}, '10': 'errors'},
     {'1': 'qps', '3': 11, '4': 1, '5': 2, '8': {}, '10': 'qps'},
-    {'1': 'average_latency', '3': 12, '4': 1, '5': 5, '8': {}, '10': 'averageLatency'},
-    {'1': 'memory_usage', '3': 13, '4': 1, '5': 3, '8': {}, '10': 'memoryUsage'},
+    {
+      '1': 'average_latency',
+      '3': 12,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'averageLatency'
+    },
+    {
+      '1': 'memory_usage',
+      '3': 13,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'memoryUsage'
+    },
     {'1': 'vm_status', '3': 14, '4': 1, '5': 9, '8': {}, '10': 'vmStatus'},
-    {'1': 'vm_debug_enabled', '3': 15, '4': 1, '5': 8, '8': {}, '10': 'vmDebugEnabled'},
+    {
+      '1': 'vm_debug_enabled',
+      '3': 15,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'vmDebugEnabled'
+    },
     {'1': 'vm_ip', '3': 16, '4': 1, '5': 9, '8': {}, '10': 'vmIp'},
-    {'1': 'vm_liveness', '3': 17, '4': 1, '5': 14, '6': '.google.appengine.v1beta.Instance.Liveness.LivenessState', '8': {}, '10': 'vmLiveness'},
+    {
+      '1': 'vm_liveness',
+      '3': 17,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.Instance.Liveness.LivenessState',
+      '8': {},
+      '10': 'vmLiveness'
+    },
   ],
   '3': [Instance_Liveness$json],
   '4': [Instance_Availability$json],
@@ -90,4 +142,3 @@ final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
     'RBAAEgwKCFJFU0lERU5UEAESCwoHRFlOQU1JQxACOm3qQWoKIWFwcGVuZ2luZS5nb29nbGVhcG'
     'lzLmNvbS9JbnN0YW5jZRJFYXBwcy97YXBwfS9zZXJ2aWNlcy97c2VydmljZX0vdmVyc2lvbnMv'
     'e3ZlcnNpb259L2luc3RhbmNlcy97aW5zdGFuY2V9');
-

@@ -25,24 +25,31 @@ class DataFiles extends $pb.GeneratedMessage {
     return $result;
   }
   DataFiles._() : super();
-  factory DataFiles.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DataFiles.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DataFiles.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DataFiles.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataFiles', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..pc<DataFile>(1, _omitFieldNames ? '' : 'dataFiles', $pb.PbFieldType.PM, subBuilder: DataFile.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DataFiles',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..pc<DataFile>(1, _omitFieldNames ? '' : 'dataFiles', $pb.PbFieldType.PM,
+        subBuilder: DataFile.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DataFiles clone() => DataFiles()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DataFiles copyWith(void Function(DataFiles) updates) => super.copyWith((message) => updates(message as DataFiles)) as DataFiles;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DataFiles copyWith(void Function(DataFiles) updates) =>
+      super.copyWith((message) => updates(message as DataFiles)) as DataFiles;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -51,7 +58,8 @@ class DataFiles extends $pb.GeneratedMessage {
   DataFiles createEmptyInstance() => create();
   static $pb.PbList<DataFiles> createRepeated() => $pb.PbList<DataFiles>();
   @$core.pragma('dart2js:noInline')
-  static DataFiles getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataFiles>(create);
+  static DataFiles getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataFiles>(create);
   static DataFiles? _defaultInstance;
 
   /// Multiple data files.
@@ -80,26 +88,33 @@ class DataFile extends $pb.GeneratedMessage {
     return $result;
   }
   DataFile._() : super();
-  factory DataFile.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DataFile.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DataFile.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DataFile.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataFile', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DataFile',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filePath')
     ..aOS(2, _omitFieldNames ? '' : 'contentType')
-    ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'payload', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        3, _omitFieldNames ? '' : 'payload', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DataFile clone() => DataFile()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DataFile copyWith(void Function(DataFile) updates) => super.copyWith((message) => updates(message as DataFile)) as DataFile;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DataFile copyWith(void Function(DataFile) updates) =>
+      super.copyWith((message) => updates(message as DataFile)) as DataFile;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -108,7 +123,8 @@ class DataFile extends $pb.GeneratedMessage {
   DataFile createEmptyInstance() => create();
   static $pb.PbList<DataFile> createRepeated() => $pb.PbList<DataFile>();
   @$core.pragma('dart2js:noInline')
-  static DataFile getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataFile>(create);
+  static DataFile getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataFile>(create);
   static DataFile? _defaultInstance;
 
   /// Relative path of the data file from the project root in the SDK file
@@ -126,7 +142,10 @@ class DataFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get filePath => $_getSZ(0);
   @$pb.TagNumber(1)
-  set filePath($core.String v) { $_setString(0, v); }
+  set filePath($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFilePath() => $_has(0);
   @$pb.TagNumber(1)
@@ -141,7 +160,10 @@ class DataFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get contentType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set contentType($core.String v) { $_setString(1, v); }
+  set contentType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasContentType() => $_has(1);
   @$pb.TagNumber(2)
@@ -153,13 +175,16 @@ class DataFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.List<$core.int> get payload => $_getN(2);
   @$pb.TagNumber(3)
-  set payload($core.List<$core.int> v) { $_setBytes(2, v); }
+  set payload($core.List<$core.int> v) {
+    $_setBytes(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPayload() => $_has(2);
   @$pb.TagNumber(3)
   void clearPayload() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

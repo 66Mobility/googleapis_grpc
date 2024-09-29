@@ -55,16 +55,64 @@ final $typed_data.Uint8List maneuverDescriptor = $convert.base64Decode(
 const Route$json = {
   '1': 'Route',
   '2': [
-    {'1': 'legs', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routes.v1.RouteLeg', '10': 'legs'},
+    {
+      '1': 'legs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteLeg',
+      '10': 'legs'
+    },
     {'1': 'distance_meters', '3': 2, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'static_duration', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'polyline', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Polyline', '10': 'polyline'},
+    {
+      '1': 'duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'polyline',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Polyline',
+      '10': 'polyline'
+    },
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
     {'1': 'warnings', '3': 7, '4': 3, '5': 9, '10': 'warnings'},
-    {'1': 'viewport', '3': 8, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '10': 'viewport'},
-    {'1': 'travel_advisory', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteTravelAdvisory', '10': 'travelAdvisory'},
-    {'1': 'optimized_intermediate_waypoint_index', '3': 10, '4': 3, '5': 5, '10': 'optimizedIntermediateWaypointIndex'},
+    {
+      '1': 'viewport',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '10': 'viewport'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
+    {
+      '1': 'optimized_intermediate_waypoint_index',
+      '3': 10,
+      '4': 3,
+      '5': 5,
+      '10': 'optimizedIntermediateWaypointIndex'
+    },
   ],
 };
 
@@ -86,9 +134,30 @@ final $typed_data.Uint8List routeDescriptor = $convert.base64Decode(
 const RouteTravelAdvisory$json = {
   '1': 'RouteTravelAdvisory',
   '2': [
-    {'1': 'traffic_restriction', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.TrafficRestriction', '10': 'trafficRestriction'},
-    {'1': 'toll_info', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.TollInfo', '10': 'tollInfo'},
-    {'1': 'speed_reading_intervals', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routes.v1.SpeedReadingInterval', '10': 'speedReadingIntervals'},
+    {
+      '1': 'traffic_restriction',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.TrafficRestriction',
+      '10': 'trafficRestriction'
+    },
+    {
+      '1': 'toll_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.TollInfo',
+      '10': 'tollInfo'
+    },
+    {
+      '1': 'speed_reading_intervals',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.SpeedReadingInterval',
+      '10': 'speedReadingIntervals'
+    },
     {
       '1': 'custom_layer_info',
       '3': 4,
@@ -115,8 +184,22 @@ final $typed_data.Uint8List routeTravelAdvisoryDescriptor = $convert.base64Decod
 const RouteLegTravelAdvisory$json = {
   '1': 'RouteLegTravelAdvisory',
   '2': [
-    {'1': 'toll_info', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.TollInfo', '10': 'tollInfo'},
-    {'1': 'speed_reading_intervals', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routes.v1.SpeedReadingInterval', '10': 'speedReadingIntervals'},
+    {
+      '1': 'toll_info',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.TollInfo',
+      '10': 'tollInfo'
+    },
+    {
+      '1': 'speed_reading_intervals',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.SpeedReadingInterval',
+      '10': 'speedReadingIntervals'
+    },
     {
       '1': 'custom_layer_info',
       '3': 3,
@@ -141,21 +224,36 @@ final $typed_data.Uint8List routeLegTravelAdvisoryDescriptor = $convert.base64De
 const RouteLegStepTravelAdvisory$json = {
   '1': 'RouteLegStepTravelAdvisory',
   '2': [
-    {'1': 'speed_reading_intervals', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routes.v1.SpeedReadingInterval', '10': 'speedReadingIntervals'},
+    {
+      '1': 'speed_reading_intervals',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.SpeedReadingInterval',
+      '10': 'speedReadingIntervals'
+    },
   ],
 };
 
 /// Descriptor for `RouteLegStepTravelAdvisory`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List routeLegStepTravelAdvisoryDescriptor = $convert.base64Decode(
-    'ChpSb3V0ZUxlZ1N0ZXBUcmF2ZWxBZHZpc29yeRJjChdzcGVlZF9yZWFkaW5nX2ludGVydmFscx'
-    'gBIAMoCzIrLmdvb2dsZS5tYXBzLnJvdXRlcy52MS5TcGVlZFJlYWRpbmdJbnRlcnZhbFIVc3Bl'
-    'ZWRSZWFkaW5nSW50ZXJ2YWxz');
+final $typed_data.Uint8List routeLegStepTravelAdvisoryDescriptor =
+    $convert.base64Decode(
+        'ChpSb3V0ZUxlZ1N0ZXBUcmF2ZWxBZHZpc29yeRJjChdzcGVlZF9yZWFkaW5nX2ludGVydmFscx'
+        'gBIAMoCzIrLmdvb2dsZS5tYXBzLnJvdXRlcy52MS5TcGVlZFJlYWRpbmdJbnRlcnZhbFIVc3Bl'
+        'ZWRSZWFkaW5nSW50ZXJ2YWxz');
 
 @$core.Deprecated('Use trafficRestrictionDescriptor instead')
 const TrafficRestriction$json = {
   '1': 'TrafficRestriction',
   '2': [
-    {'1': 'license_plate_last_character_restriction', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.LicensePlateLastCharacterRestriction', '10': 'licensePlateLastCharacterRestriction'},
+    {
+      '1': 'license_plate_last_character_restriction',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.LicensePlateLastCharacterRestriction',
+      '10': 'licensePlateLastCharacterRestriction'
+    },
   ],
 };
 
@@ -170,27 +268,83 @@ final $typed_data.Uint8List trafficRestrictionDescriptor = $convert.base64Decode
 const LicensePlateLastCharacterRestriction$json = {
   '1': 'LicensePlateLastCharacterRestriction',
   '2': [
-    {'1': 'allowed_last_characters', '3': 1, '4': 3, '5': 9, '10': 'allowedLastCharacters'},
+    {
+      '1': 'allowed_last_characters',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'allowedLastCharacters'
+    },
   ],
 };
 
 /// Descriptor for `LicensePlateLastCharacterRestriction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List licensePlateLastCharacterRestrictionDescriptor = $convert.base64Decode(
-    'CiRMaWNlbnNlUGxhdGVMYXN0Q2hhcmFjdGVyUmVzdHJpY3Rpb24SNgoXYWxsb3dlZF9sYXN0X2'
-    'NoYXJhY3RlcnMYASADKAlSFWFsbG93ZWRMYXN0Q2hhcmFjdGVycw==');
+final $typed_data.Uint8List licensePlateLastCharacterRestrictionDescriptor =
+    $convert.base64Decode(
+        'CiRMaWNlbnNlUGxhdGVMYXN0Q2hhcmFjdGVyUmVzdHJpY3Rpb24SNgoXYWxsb3dlZF9sYXN0X2'
+        'NoYXJhY3RlcnMYASADKAlSFWFsbG93ZWRMYXN0Q2hhcmFjdGVycw==');
 
 @$core.Deprecated('Use routeLegDescriptor instead')
 const RouteLeg$json = {
   '1': 'RouteLeg',
   '2': [
     {'1': 'distance_meters', '3': 1, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'static_duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'polyline', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Polyline', '10': 'polyline'},
-    {'1': 'start_location', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Location', '10': 'startLocation'},
-    {'1': 'end_location', '3': 6, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Location', '10': 'endLocation'},
-    {'1': 'steps', '3': 7, '4': 3, '5': 11, '6': '.google.maps.routes.v1.RouteLegStep', '10': 'steps'},
-    {'1': 'travel_advisory', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteLegTravelAdvisory', '10': 'travelAdvisory'},
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'polyline',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Polyline',
+      '10': 'polyline'
+    },
+    {
+      '1': 'start_location',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Location',
+      '10': 'startLocation'
+    },
+    {
+      '1': 'end_location',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Location',
+      '10': 'endLocation'
+    },
+    {
+      '1': 'steps',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteLegStep',
+      '10': 'steps'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteLegTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
   ],
 };
 
@@ -211,7 +365,14 @@ final $typed_data.Uint8List routeLegDescriptor = $convert.base64Decode(
 const TollInfo$json = {
   '1': 'TollInfo',
   '2': [
-    {'1': 'estimated_price', '3': 1, '4': 3, '5': 11, '6': '.google.type.Money', '10': 'estimatedPrice'},
+    {
+      '1': 'estimated_price',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.type.Money',
+      '10': 'estimatedPrice'
+    },
   ],
 };
 
@@ -225,12 +386,54 @@ const RouteLegStep$json = {
   '1': 'RouteLegStep',
   '2': [
     {'1': 'distance_meters', '3': 1, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'static_duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'polyline', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Polyline', '10': 'polyline'},
-    {'1': 'start_location', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Location', '10': 'startLocation'},
-    {'1': 'end_location', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Location', '10': 'endLocation'},
-    {'1': 'navigation_instruction', '3': 6, '4': 1, '5': 11, '6': '.google.maps.routes.v1.NavigationInstruction', '10': 'navigationInstruction'},
-    {'1': 'travel_advisory', '3': 7, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteLegStepTravelAdvisory', '10': 'travelAdvisory'},
+    {
+      '1': 'static_duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'polyline',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Polyline',
+      '10': 'polyline'
+    },
+    {
+      '1': 'start_location',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Location',
+      '10': 'startLocation'
+    },
+    {
+      '1': 'end_location',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Location',
+      '10': 'endLocation'
+    },
+    {
+      '1': 'navigation_instruction',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.NavigationInstruction',
+      '10': 'navigationInstruction'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteLegStepTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
   ],
 };
 
@@ -251,7 +454,14 @@ final $typed_data.Uint8List routeLegStepDescriptor = $convert.base64Decode(
 const NavigationInstruction$json = {
   '1': 'NavigationInstruction',
   '2': [
-    {'1': 'maneuver', '3': 1, '4': 1, '5': 14, '6': '.google.maps.routes.v1.Maneuver', '10': 'maneuver'},
+    {
+      '1': 'maneuver',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.Maneuver',
+      '10': 'maneuver'
+    },
     {'1': 'instructions', '3': 2, '4': 1, '5': 9, '10': 'instructions'},
   ],
 };
@@ -266,9 +476,28 @@ final $typed_data.Uint8List navigationInstructionDescriptor = $convert.base64Dec
 const SpeedReadingInterval$json = {
   '1': 'SpeedReadingInterval',
   '2': [
-    {'1': 'start_polyline_point_index', '3': 1, '4': 1, '5': 5, '10': 'startPolylinePointIndex'},
-    {'1': 'end_polyline_point_index', '3': 2, '4': 1, '5': 5, '10': 'endPolylinePointIndex'},
-    {'1': 'speed', '3': 3, '4': 1, '5': 14, '6': '.google.maps.routes.v1.SpeedReadingInterval.Speed', '10': 'speed'},
+    {
+      '1': 'start_polyline_point_index',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'startPolylinePointIndex'
+    },
+    {
+      '1': 'end_polyline_point_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'endPolylinePointIndex'
+    },
+    {
+      '1': 'speed',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.SpeedReadingInterval.Speed',
+      '10': 'speed'
+    },
   ],
   '4': [SpeedReadingInterval_Speed$json],
 };
@@ -297,9 +526,29 @@ final $typed_data.Uint8List speedReadingIntervalDescriptor = $convert.base64Deco
 const CustomLayerInfo$json = {
   '1': 'CustomLayerInfo',
   '2': [
-    {'1': 'area_info', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routes.v1.CustomLayerInfo.AreaInfo', '10': 'areaInfo'},
-    {'1': 'total_distance_in_areas_meters', '3': 2, '4': 1, '5': 2, '10': 'totalDistanceInAreasMeters'},
-    {'1': 'total_duration_in_areas', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'totalDurationInAreas'},
+    {
+      '1': 'area_info',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.CustomLayerInfo.AreaInfo',
+      '10': 'areaInfo'
+    },
+    {
+      '1': 'total_distance_in_areas_meters',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '10': 'totalDistanceInAreasMeters'
+    },
+    {
+      '1': 'total_duration_in_areas',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'totalDurationInAreas'
+    },
   ],
   '3': [CustomLayerInfo_AreaInfo$json],
   '7': {'3': true},
@@ -310,8 +559,21 @@ const CustomLayerInfo_AreaInfo$json = {
   '1': 'AreaInfo',
   '2': [
     {'1': 'area_id', '3': 1, '4': 1, '5': 9, '10': 'areaId'},
-    {'1': 'distance_in_area_meters', '3': 2, '4': 1, '5': 2, '10': 'distanceInAreaMeters'},
-    {'1': 'duration_in_area', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'durationInArea'},
+    {
+      '1': 'distance_in_area_meters',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '10': 'distanceInAreaMeters'
+    },
+    {
+      '1': 'duration_in_area',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'durationInArea'
+    },
   ],
 };
 
@@ -325,4 +587,3 @@ final $typed_data.Uint8List customLayerInfoDescriptor = $convert.base64Decode(
     'FyZWFJZBI1ChdkaXN0YW5jZV9pbl9hcmVhX21ldGVycxgCIAEoAlIUZGlzdGFuY2VJbkFyZWFN'
     'ZXRlcnMSQwoQZHVyYXRpb25faW5fYXJlYRgDIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdG'
     'lvblIOZHVyYXRpb25JbkFyZWE6AhgB');
-

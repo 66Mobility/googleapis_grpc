@@ -30,7 +30,15 @@ const Precondition$json = {
   '1': 'Precondition',
   '2': [
     {'1': 'exists', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'exists'},
-    {'1': 'update_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'updateTime'
+    },
   ],
   '8': [
     {'1': 'condition_type'},
@@ -47,8 +55,24 @@ final $typed_data.Uint8List preconditionDescriptor = $convert.base64Decode(
 const TransactionOptions$json = {
   '1': 'TransactionOptions',
   '2': [
-    {'1': 'read_only', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.v1.TransactionOptions.ReadOnly', '9': 0, '10': 'readOnly'},
-    {'1': 'read_write', '3': 3, '4': 1, '5': 11, '6': '.google.firestore.v1.TransactionOptions.ReadWrite', '9': 0, '10': 'readWrite'},
+    {
+      '1': 'read_only',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.TransactionOptions.ReadOnly',
+      '9': 0,
+      '10': 'readOnly'
+    },
+    {
+      '1': 'read_write',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.TransactionOptions.ReadWrite',
+      '9': 0,
+      '10': 'readWrite'
+    },
   ],
   '3': [TransactionOptions_ReadWrite$json, TransactionOptions_ReadOnly$json],
   '8': [
@@ -60,7 +84,13 @@ const TransactionOptions$json = {
 const TransactionOptions_ReadWrite$json = {
   '1': 'ReadWrite',
   '2': [
-    {'1': 'retry_transaction', '3': 1, '4': 1, '5': 12, '10': 'retryTransaction'},
+    {
+      '1': 'retry_transaction',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '10': 'retryTransaction'
+    },
   ],
 };
 
@@ -68,7 +98,15 @@ const TransactionOptions_ReadWrite$json = {
 const TransactionOptions_ReadOnly$json = {
   '1': 'ReadOnly',
   '2': [
-    {'1': 'read_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'readTime'},
+    {
+      '1': 'read_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'readTime'
+    },
   ],
   '8': [
     {'1': 'consistency_selector'},
@@ -84,4 +122,3 @@ final $typed_data.Uint8List transactionOptionsDescriptor = $convert.base64Decode
     'ASgMUhByZXRyeVRyYW5zYWN0aW9uGl0KCFJlYWRPbmx5EjkKCXJlYWRfdGltZRgCIAEoCzIaLm'
     'dvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAFIIcmVhZFRpbWVCFgoUY29uc2lzdGVuY3lfc2Vs'
     'ZWN0b3JCBgoEbW9kZQ==');
-

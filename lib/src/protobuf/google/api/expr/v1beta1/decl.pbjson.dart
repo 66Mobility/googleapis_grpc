@@ -20,8 +20,24 @@ const Decl$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 5, '10': 'id'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'doc', '3': 3, '4': 1, '5': 9, '10': 'doc'},
-    {'1': 'ident', '3': 4, '4': 1, '5': 11, '6': '.google.api.expr.v1beta1.IdentDecl', '9': 0, '10': 'ident'},
-    {'1': 'function', '3': 5, '4': 1, '5': 11, '6': '.google.api.expr.v1beta1.FunctionDecl', '9': 0, '10': 'function'},
+    {
+      '1': 'ident',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.IdentDecl',
+      '9': 0,
+      '10': 'ident'
+    },
+    {
+      '1': 'function',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.FunctionDecl',
+      '9': 0,
+      '10': 'function'
+    },
   ],
   '8': [
     {'1': 'kind'},
@@ -41,7 +57,14 @@ const DeclType$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 5, '10': 'id'},
     {'1': 'type', '3': 2, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'type_params', '3': 4, '4': 3, '5': 11, '6': '.google.api.expr.v1beta1.DeclType', '10': 'typeParams'},
+    {
+      '1': 'type_params',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.DeclType',
+      '10': 'typeParams'
+    },
   ],
 };
 
@@ -55,8 +78,22 @@ final $typed_data.Uint8List declTypeDescriptor = $convert.base64Decode(
 const IdentDecl$json = {
   '1': 'IdentDecl',
   '2': [
-    {'1': 'type', '3': 3, '4': 1, '5': 11, '6': '.google.api.expr.v1beta1.DeclType', '10': 'type'},
-    {'1': 'value', '3': 4, '4': 1, '5': 11, '6': '.google.api.expr.v1beta1.Expr', '10': 'value'},
+    {
+      '1': 'type',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.DeclType',
+      '10': 'type'
+    },
+    {
+      '1': 'value',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.Expr',
+      '10': 'value'
+    },
   ],
 };
 
@@ -70,9 +107,29 @@ final $typed_data.Uint8List identDeclDescriptor = $convert.base64Decode(
 const FunctionDecl$json = {
   '1': 'FunctionDecl',
   '2': [
-    {'1': 'args', '3': 1, '4': 3, '5': 11, '6': '.google.api.expr.v1beta1.IdentDecl', '10': 'args'},
-    {'1': 'return_type', '3': 2, '4': 1, '5': 11, '6': '.google.api.expr.v1beta1.DeclType', '10': 'returnType'},
-    {'1': 'receiver_function', '3': 3, '4': 1, '5': 8, '10': 'receiverFunction'},
+    {
+      '1': 'args',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.IdentDecl',
+      '10': 'args'
+    },
+    {
+      '1': 'return_type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.DeclType',
+      '10': 'returnType'
+    },
+    {
+      '1': 'receiver_function',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'receiverFunction'
+    },
   ],
 };
 
@@ -82,4 +139,3 @@ final $typed_data.Uint8List functionDeclDescriptor = $convert.base64Decode(
     'lkZW50RGVjbFIEYXJncxJCCgtyZXR1cm5fdHlwZRgCIAEoCzIhLmdvb2dsZS5hcGkuZXhwci52'
     'MWJldGExLkRlY2xUeXBlUgpyZXR1cm5UeXBlEisKEXJlY2VpdmVyX2Z1bmN0aW9uGAMgASgIUh'
     'ByZWNlaXZlckZ1bmN0aW9u');
-

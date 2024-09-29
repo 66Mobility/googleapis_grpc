@@ -6,6 +6,10 @@ generate:
 	make clone
 	make protoc
 	make clean
+	make format
+
+format:
+	dart format .
 
 clean:
 	rm -rf googleapis

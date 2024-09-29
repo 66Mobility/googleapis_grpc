@@ -32,25 +32,32 @@ class Structure extends $pb.GeneratedMessage {
     return $result;
   }
   Structure._() : super();
-  factory Structure.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Structure.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Structure.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Structure.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Structure', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Structure',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'traits', subBuilder: $261.Struct.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'traits',
+        subBuilder: $261.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Structure clone() => Structure()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Structure copyWith(void Function(Structure) updates) => super.copyWith((message) => updates(message as Structure)) as Structure;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Structure copyWith(void Function(Structure) updates) =>
+      super.copyWith((message) => updates(message as Structure)) as Structure;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -59,7 +66,8 @@ class Structure extends $pb.GeneratedMessage {
   Structure createEmptyInstance() => create();
   static $pb.PbList<Structure> createRepeated() => $pb.PbList<Structure>();
   @$core.pragma('dart2js:noInline')
-  static Structure getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Structure>(create);
+  static Structure getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Structure>(create);
   static Structure? _defaultInstance;
 
   /// Output only. The resource name of the structure. For example:
@@ -67,7 +75,10 @@ class Structure extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -77,7 +88,10 @@ class Structure extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $261.Struct get traits => $_getN(1);
   @$pb.TagNumber(2)
-  set traits($261.Struct v) { setField(2, v); }
+  set traits($261.Struct v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTraits() => $_has(1);
   @$pb.TagNumber(2)
@@ -103,25 +117,32 @@ class Room extends $pb.GeneratedMessage {
     return $result;
   }
   Room._() : super();
-  factory Room.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Room.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Room.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Room.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Room', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Room',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'traits', subBuilder: $261.Struct.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'traits',
+        subBuilder: $261.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Room clone() => Room()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Room copyWith(void Function(Room) updates) => super.copyWith((message) => updates(message as Room)) as Room;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Room copyWith(void Function(Room) updates) =>
+      super.copyWith((message) => updates(message as Room)) as Room;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -130,7 +151,8 @@ class Room extends $pb.GeneratedMessage {
   Room createEmptyInstance() => create();
   static $pb.PbList<Room> createRepeated() => $pb.PbList<Room>();
   @$core.pragma('dart2js:noInline')
-  static Room getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Room>(create);
+  static Room getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Room>(create);
   static Room? _defaultInstance;
 
   /// Output only. The resource name of the room. For example:
@@ -138,7 +160,10 @@ class Room extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -148,7 +173,10 @@ class Room extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $261.Struct get traits => $_getN(1);
   @$pb.TagNumber(2)
-  set traits($261.Struct v) { setField(2, v); }
+  set traits($261.Struct v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTraits() => $_has(1);
   @$pb.TagNumber(2)
@@ -157,6 +185,6 @@ class Room extends $pb.GeneratedMessage {
   $261.Struct ensureTraits() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

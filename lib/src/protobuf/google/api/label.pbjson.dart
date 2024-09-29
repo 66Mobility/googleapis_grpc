@@ -18,7 +18,14 @@ const LabelDescriptor$json = {
   '1': 'LabelDescriptor',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value_type', '3': 2, '4': 1, '5': 14, '6': '.google.api.LabelDescriptor.ValueType', '10': 'valueType'},
+    {
+      '1': 'value_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.LabelDescriptor.ValueType',
+      '10': 'valueType'
+    },
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
   ],
   '4': [LabelDescriptor_ValueType$json],
@@ -40,4 +47,3 @@ final $typed_data.Uint8List labelDescriptorDescriptor = $convert.base64Decode(
     'IlLmdvb2dsZS5hcGkuTGFiZWxEZXNjcmlwdG9yLlZhbHVlVHlwZVIJdmFsdWVUeXBlEiAKC2Rl'
     'c2NyaXB0aW9uGAMgASgJUgtkZXNjcmlwdGlvbiIsCglWYWx1ZVR5cGUSCgoGU1RSSU5HEAASCA'
     'oEQk9PTBABEgkKBUlOVDY0EAI=');
-

@@ -38,12 +38,47 @@ final $typed_data.Uint8List operationStateDescriptor = $convert.base64Decode(
 const IndexOperationMetadata$json = {
   '1': 'IndexOperationMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'index', '3': 3, '4': 1, '5': 9, '10': 'index'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.OperationState', '10': 'state'},
-    {'1': 'progress_documents', '3': 5, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressDocuments'},
-    {'1': 'progress_bytes', '3': 6, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressBytes'},
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.OperationState',
+      '10': 'state'
+    },
+    {
+      '1': 'progress_documents',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressDocuments'
+    },
+    {
+      '1': 'progress_bytes',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressBytes'
+    },
   ],
 };
 
@@ -61,24 +96,91 @@ final $typed_data.Uint8List indexOperationMetadataDescriptor = $convert.base64De
 const FieldOperationMetadata$json = {
   '1': 'FieldOperationMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'field', '3': 3, '4': 1, '5': 9, '10': 'field'},
-    {'1': 'index_config_deltas', '3': 4, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.FieldOperationMetadata.IndexConfigDelta', '10': 'indexConfigDeltas'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.OperationState', '10': 'state'},
-    {'1': 'progress_documents', '3': 6, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressDocuments'},
-    {'1': 'progress_bytes', '3': 7, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressBytes'},
-    {'1': 'ttl_config_delta', '3': 8, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.FieldOperationMetadata.TtlConfigDelta', '10': 'ttlConfigDelta'},
+    {
+      '1': 'index_config_deltas',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.FieldOperationMetadata.IndexConfigDelta',
+      '10': 'indexConfigDeltas'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.OperationState',
+      '10': 'state'
+    },
+    {
+      '1': 'progress_documents',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressDocuments'
+    },
+    {
+      '1': 'progress_bytes',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressBytes'
+    },
+    {
+      '1': 'ttl_config_delta',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.FieldOperationMetadata.TtlConfigDelta',
+      '10': 'ttlConfigDelta'
+    },
   ],
-  '3': [FieldOperationMetadata_IndexConfigDelta$json, FieldOperationMetadata_TtlConfigDelta$json],
+  '3': [
+    FieldOperationMetadata_IndexConfigDelta$json,
+    FieldOperationMetadata_TtlConfigDelta$json
+  ],
 };
 
 @$core.Deprecated('Use fieldOperationMetadataDescriptor instead')
 const FieldOperationMetadata_IndexConfigDelta$json = {
   '1': 'IndexConfigDelta',
   '2': [
-    {'1': 'change_type', '3': 1, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.FieldOperationMetadata.IndexConfigDelta.ChangeType', '10': 'changeType'},
-    {'1': 'index', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Index', '10': 'index'},
+    {
+      '1': 'change_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.firestore.admin.v1.FieldOperationMetadata.IndexConfigDelta.ChangeType',
+      '10': 'changeType'
+    },
+    {
+      '1': 'index',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Index',
+      '10': 'index'
+    },
   ],
   '4': [FieldOperationMetadata_IndexConfigDelta_ChangeType$json],
 };
@@ -97,7 +199,15 @@ const FieldOperationMetadata_IndexConfigDelta_ChangeType$json = {
 const FieldOperationMetadata_TtlConfigDelta$json = {
   '1': 'TtlConfigDelta',
   '2': [
-    {'1': 'change_type', '3': 1, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.FieldOperationMetadata.TtlConfigDelta.ChangeType', '10': 'changeType'},
+    {
+      '1': 'change_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.firestore.admin.v1.FieldOperationMetadata.TtlConfigDelta.ChangeType',
+      '10': 'changeType'
+    },
   ],
   '4': [FieldOperationMetadata_TtlConfigDelta_ChangeType$json],
 };
@@ -139,15 +249,57 @@ final $typed_data.Uint8List fieldOperationMetadataDescriptor = $convert.base64De
 const ExportDocumentsMetadata$json = {
   '1': 'ExportDocumentsMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'operation_state', '3': 3, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.OperationState', '10': 'operationState'},
-    {'1': 'progress_documents', '3': 4, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressDocuments'},
-    {'1': 'progress_bytes', '3': 5, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressBytes'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'operation_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.OperationState',
+      '10': 'operationState'
+    },
+    {
+      '1': 'progress_documents',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressDocuments'
+    },
+    {
+      '1': 'progress_bytes',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressBytes'
+    },
     {'1': 'collection_ids', '3': 6, '4': 3, '5': 9, '10': 'collectionIds'},
     {'1': 'output_uri_prefix', '3': 7, '4': 1, '5': 9, '10': 'outputUriPrefix'},
     {'1': 'namespace_ids', '3': 8, '4': 3, '5': 9, '10': 'namespaceIds'},
-    {'1': 'snapshot_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'snapshotTime'},
+    {
+      '1': 'snapshot_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'snapshotTime'
+    },
   ],
 };
 
@@ -169,11 +321,46 @@ final $typed_data.Uint8List exportDocumentsMetadataDescriptor = $convert.base64D
 const ImportDocumentsMetadata$json = {
   '1': 'ImportDocumentsMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'operation_state', '3': 3, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.OperationState', '10': 'operationState'},
-    {'1': 'progress_documents', '3': 4, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressDocuments'},
-    {'1': 'progress_bytes', '3': 5, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressBytes'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'operation_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.OperationState',
+      '10': 'operationState'
+    },
+    {
+      '1': 'progress_documents',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressDocuments'
+    },
+    {
+      '1': 'progress_bytes',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressBytes'
+    },
     {'1': 'collection_ids', '3': 6, '4': 3, '5': 9, '10': 'collectionIds'},
     {'1': 'input_uri_prefix', '3': 7, '4': 1, '5': 9, '10': 'inputUriPrefix'},
     {'1': 'namespace_ids', '3': 8, '4': 3, '5': 9, '10': 'namespaceIds'},
@@ -197,14 +384,56 @@ final $typed_data.Uint8List importDocumentsMetadataDescriptor = $convert.base64D
 const BulkDeleteDocumentsMetadata$json = {
   '1': 'BulkDeleteDocumentsMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'operation_state', '3': 3, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.OperationState', '10': 'operationState'},
-    {'1': 'progress_documents', '3': 4, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressDocuments'},
-    {'1': 'progress_bytes', '3': 5, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressBytes'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'operation_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.OperationState',
+      '10': 'operationState'
+    },
+    {
+      '1': 'progress_documents',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressDocuments'
+    },
+    {
+      '1': 'progress_bytes',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressBytes'
+    },
     {'1': 'collection_ids', '3': 6, '4': 3, '5': 9, '10': 'collectionIds'},
     {'1': 'namespace_ids', '3': 7, '4': 3, '5': 9, '10': 'namespaceIds'},
-    {'1': 'snapshot_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'snapshotTime'},
+    {
+      '1': 'snapshot_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'snapshotTime'
+    },
   ],
 };
 
@@ -230,20 +459,49 @@ const ExportDocumentsResponse$json = {
 };
 
 /// Descriptor for `ExportDocumentsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List exportDocumentsResponseDescriptor = $convert.base64Decode(
-    'ChdFeHBvcnREb2N1bWVudHNSZXNwb25zZRIqChFvdXRwdXRfdXJpX3ByZWZpeBgBIAEoCVIPb3'
-    'V0cHV0VXJpUHJlZml4');
+final $typed_data.Uint8List exportDocumentsResponseDescriptor =
+    $convert.base64Decode(
+        'ChdFeHBvcnREb2N1bWVudHNSZXNwb25zZRIqChFvdXRwdXRfdXJpX3ByZWZpeBgBIAEoCVIPb3'
+        'V0cHV0VXJpUHJlZml4');
 
 @$core.Deprecated('Use restoreDatabaseMetadataDescriptor instead')
 const RestoreDatabaseMetadata$json = {
   '1': 'RestoreDatabaseMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'operation_state', '3': 3, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.OperationState', '10': 'operationState'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'operation_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.OperationState',
+      '10': 'operationState'
+    },
     {'1': 'database', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'database'},
     {'1': 'backup', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'backup'},
-    {'1': 'progress_percentage', '3': 8, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Progress', '10': 'progressPercentage'},
+    {
+      '1': 'progress_percentage',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Progress',
+      '10': 'progressPercentage'
+    },
   ],
 };
 
@@ -271,4 +529,3 @@ const Progress$json = {
 final $typed_data.Uint8List progressDescriptor = $convert.base64Decode(
     'CghQcm9ncmVzcxIlCg5lc3RpbWF0ZWRfd29yaxgBIAEoA1INZXN0aW1hdGVkV29yaxIlCg5jb2'
     '1wbGV0ZWRfd29yaxgCIAEoA1INY29tcGxldGVkV29yaw==');
-

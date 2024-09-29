@@ -48,10 +48,25 @@ const Schema$json = {
   '1': 'Schema',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.pubsub.v1.Schema.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.Schema.Type',
+      '10': 'type'
+    },
     {'1': 'definition', '3': 3, '4': 1, '5': 9, '10': 'definition'},
     {'1': 'revision_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'revisionId'},
-    {'1': 'revision_create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'revisionCreateTime'},
+    {
+      '1': 'revision_create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'revisionCreateTime'
+    },
   ],
   '4': [Schema_Type$json],
   '7': {},
@@ -82,7 +97,15 @@ const CreateSchemaRequest$json = {
   '1': 'CreateSchemaRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'schema', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1.Schema', '8': {}, '10': 'schema'},
+    {
+      '1': 'schema',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Schema',
+      '8': {},
+      '10': 'schema'
+    },
     {'1': 'schema_id', '3': 3, '4': 1, '5': 9, '10': 'schemaId'},
   ],
 };
@@ -99,7 +122,14 @@ const GetSchemaRequest$json = {
   '1': 'GetSchemaRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.pubsub.v1.SchemaView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.SchemaView',
+      '10': 'view'
+    },
   ],
 };
 
@@ -114,7 +144,14 @@ const ListSchemasRequest$json = {
   '1': 'ListSchemasRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.pubsub.v1.SchemaView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.SchemaView',
+      '10': 'view'
+    },
     {'1': 'page_size', '3': 3, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 4, '4': 1, '5': 9, '10': 'pageToken'},
   ],
@@ -131,7 +168,14 @@ final $typed_data.Uint8List listSchemasRequestDescriptor = $convert.base64Decode
 const ListSchemasResponse$json = {
   '1': 'ListSchemasResponse',
   '2': [
-    {'1': 'schemas', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1.Schema', '10': 'schemas'},
+    {
+      '1': 'schemas',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Schema',
+      '10': 'schemas'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -147,7 +191,14 @@ const ListSchemaRevisionsRequest$json = {
   '1': 'ListSchemaRevisionsRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.pubsub.v1.SchemaView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.SchemaView',
+      '10': 'view'
+    },
     {'1': 'page_size', '3': 3, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 4, '4': 1, '5': 9, '10': 'pageToken'},
   ],
@@ -164,23 +215,39 @@ final $typed_data.Uint8List listSchemaRevisionsRequestDescriptor = $convert.base
 const ListSchemaRevisionsResponse$json = {
   '1': 'ListSchemaRevisionsResponse',
   '2': [
-    {'1': 'schemas', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1.Schema', '10': 'schemas'},
+    {
+      '1': 'schemas',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Schema',
+      '10': 'schemas'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListSchemaRevisionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listSchemaRevisionsResponseDescriptor = $convert.base64Decode(
-    'ChtMaXN0U2NoZW1hUmV2aXNpb25zUmVzcG9uc2USMgoHc2NoZW1hcxgBIAMoCzIYLmdvb2dsZS'
-    '5wdWJzdWIudjEuU2NoZW1hUgdzY2hlbWFzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4'
-    'dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listSchemaRevisionsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtMaXN0U2NoZW1hUmV2aXNpb25zUmVzcG9uc2USMgoHc2NoZW1hcxgBIAMoCzIYLmdvb2dsZS'
+        '5wdWJzdWIudjEuU2NoZW1hUgdzY2hlbWFzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4'
+        'dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use commitSchemaRequestDescriptor instead')
 const CommitSchemaRequest$json = {
   '1': 'CommitSchemaRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'schema', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1.Schema', '8': {}, '10': 'schema'},
+    {
+      '1': 'schema',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Schema',
+      '8': {},
+      '10': 'schema'
+    },
   ],
 };
 
@@ -222,10 +289,11 @@ const DeleteSchemaRevisionRequest$json = {
 };
 
 /// Descriptor for `DeleteSchemaRevisionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSchemaRevisionRequestDescriptor = $convert.base64Decode(
-    'ChtEZWxldGVTY2hlbWFSZXZpc2lvblJlcXVlc3QSOAoEbmFtZRgBIAEoCUIk4EEC+kEeChxwdW'
-    'JzdWIuZ29vZ2xlYXBpcy5jb20vU2NoZW1hUgRuYW1lEiYKC3JldmlzaW9uX2lkGAIgASgJQgUY'
-    'AeBBAVIKcmV2aXNpb25JZA==');
+final $typed_data.Uint8List deleteSchemaRevisionRequestDescriptor =
+    $convert.base64Decode(
+        'ChtEZWxldGVTY2hlbWFSZXZpc2lvblJlcXVlc3QSOAoEbmFtZRgBIAEoCUIk4EEC+kEeChxwdW'
+        'JzdWIuZ29vZ2xlYXBpcy5jb20vU2NoZW1hUgRuYW1lEiYKC3JldmlzaW9uX2lkGAIgASgJQgUY'
+        'AeBBAVIKcmV2aXNpb25JZA==');
 
 @$core.Deprecated('Use deleteSchemaRequestDescriptor instead')
 const DeleteSchemaRequest$json = {
@@ -245,7 +313,15 @@ const ValidateSchemaRequest$json = {
   '1': 'ValidateSchemaRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'schema', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1.Schema', '8': {}, '10': 'schema'},
+    {
+      '1': 'schema',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Schema',
+      '8': {},
+      '10': 'schema'
+    },
   ],
 };
 
@@ -261,8 +337,8 @@ const ValidateSchemaResponse$json = {
 };
 
 /// Descriptor for `ValidateSchemaResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List validateSchemaResponseDescriptor = $convert.base64Decode(
-    'ChZWYWxpZGF0ZVNjaGVtYVJlc3BvbnNl');
+final $typed_data.Uint8List validateSchemaResponseDescriptor =
+    $convert.base64Decode('ChZWYWxpZGF0ZVNjaGVtYVJlc3BvbnNl');
 
 @$core.Deprecated('Use validateMessageRequestDescriptor instead')
 const ValidateMessageRequest$json = {
@@ -270,9 +346,24 @@ const ValidateMessageRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'name'},
-    {'1': 'schema', '3': 3, '4': 1, '5': 11, '6': '.google.pubsub.v1.Schema', '9': 0, '10': 'schema'},
+    {
+      '1': 'schema',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Schema',
+      '9': 0,
+      '10': 'schema'
+    },
     {'1': 'message', '3': 4, '4': 1, '5': 12, '10': 'message'},
-    {'1': 'encoding', '3': 5, '4': 1, '5': 14, '6': '.google.pubsub.v1.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.Encoding',
+      '10': 'encoding'
+    },
   ],
   '8': [
     {'1': 'schema_spec'},
@@ -294,6 +385,5 @@ const ValidateMessageResponse$json = {
 };
 
 /// Descriptor for `ValidateMessageResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List validateMessageResponseDescriptor = $convert.base64Decode(
-    'ChdWYWxpZGF0ZU1lc3NhZ2VSZXNwb25zZQ==');
-
+final $typed_data.Uint8List validateMessageResponseDescriptor =
+    $convert.base64Decode('ChdWYWxpZGF0ZU1lc3NhZ2VSZXNwb25zZQ==');

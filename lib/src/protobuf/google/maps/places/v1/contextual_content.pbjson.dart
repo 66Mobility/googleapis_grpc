@@ -17,9 +17,30 @@ import 'dart:typed_data' as $typed_data;
 const ContextualContent$json = {
   '1': 'ContextualContent',
   '2': [
-    {'1': 'reviews', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.Review', '10': 'reviews'},
-    {'1': 'photos', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.Photo', '10': 'photos'},
-    {'1': 'justifications', '3': 3, '4': 3, '5': 11, '6': '.google.maps.places.v1.ContextualContent.Justification', '10': 'justifications'},
+    {
+      '1': 'reviews',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Review',
+      '10': 'reviews'
+    },
+    {
+      '1': 'photos',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Photo',
+      '10': 'photos'
+    },
+    {
+      '1': 'justifications',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.ContextualContent.Justification',
+      '10': 'justifications'
+    },
   ],
   '3': [ContextualContent_Justification$json],
 };
@@ -28,10 +49,31 @@ const ContextualContent$json = {
 const ContextualContent_Justification$json = {
   '1': 'Justification',
   '2': [
-    {'1': 'review_justification', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.ContextualContent.Justification.ReviewJustification', '9': 0, '10': 'reviewJustification'},
-    {'1': 'business_availability_attributes_justification', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.ContextualContent.Justification.BusinessAvailabilityAttributesJustification', '9': 0, '10': 'businessAvailabilityAttributesJustification'},
+    {
+      '1': 'review_justification',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.ContextualContent.Justification.ReviewJustification',
+      '9': 0,
+      '10': 'reviewJustification'
+    },
+    {
+      '1': 'business_availability_attributes_justification',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.ContextualContent.Justification.BusinessAvailabilityAttributesJustification',
+      '9': 0,
+      '10': 'businessAvailabilityAttributesJustification'
+    },
   ],
-  '3': [ContextualContent_Justification_ReviewJustification$json, ContextualContent_Justification_BusinessAvailabilityAttributesJustification$json],
+  '3': [
+    ContextualContent_Justification_ReviewJustification$json,
+    ContextualContent_Justification_BusinessAvailabilityAttributesJustification$json
+  ],
   '8': [
     {'1': 'justification'},
   ],
@@ -41,24 +83,53 @@ const ContextualContent_Justification$json = {
 const ContextualContent_Justification_ReviewJustification$json = {
   '1': 'ReviewJustification',
   '2': [
-    {'1': 'highlighted_text', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.ContextualContent.Justification.ReviewJustification.HighlightedText', '10': 'highlightedText'},
-    {'1': 'review', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.Review', '10': 'review'},
+    {
+      '1': 'highlighted_text',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.ContextualContent.Justification.ReviewJustification.HighlightedText',
+      '10': 'highlightedText'
+    },
+    {
+      '1': 'review',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Review',
+      '10': 'review'
+    },
   ],
-  '3': [ContextualContent_Justification_ReviewJustification_HighlightedText$json],
+  '3': [
+    ContextualContent_Justification_ReviewJustification_HighlightedText$json
+  ],
 };
 
 @$core.Deprecated('Use contextualContentDescriptor instead')
-const ContextualContent_Justification_ReviewJustification_HighlightedText$json = {
+const ContextualContent_Justification_ReviewJustification_HighlightedText$json =
+    {
   '1': 'HighlightedText',
   '2': [
     {'1': 'text', '3': 1, '4': 1, '5': 9, '10': 'text'},
-    {'1': 'highlighted_text_ranges', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.ContextualContent.Justification.ReviewJustification.HighlightedText.HighlightedTextRange', '10': 'highlightedTextRanges'},
+    {
+      '1': 'highlighted_text_ranges',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.places.v1.ContextualContent.Justification.ReviewJustification.HighlightedText.HighlightedTextRange',
+      '10': 'highlightedTextRanges'
+    },
   ],
-  '3': [ContextualContent_Justification_ReviewJustification_HighlightedText_HighlightedTextRange$json],
+  '3': [
+    ContextualContent_Justification_ReviewJustification_HighlightedText_HighlightedTextRange$json
+  ],
 };
 
 @$core.Deprecated('Use contextualContentDescriptor instead')
-const ContextualContent_Justification_ReviewJustification_HighlightedText_HighlightedTextRange$json = {
+const ContextualContent_Justification_ReviewJustification_HighlightedText_HighlightedTextRange$json =
+    {
   '1': 'HighlightedTextRange',
   '2': [
     {'1': 'start_index', '3': 1, '4': 1, '5': 5, '10': 'startIndex'},
@@ -67,7 +138,8 @@ const ContextualContent_Justification_ReviewJustification_HighlightedText_Highli
 };
 
 @$core.Deprecated('Use contextualContentDescriptor instead')
-const ContextualContent_Justification_BusinessAvailabilityAttributesJustification$json = {
+const ContextualContent_Justification_BusinessAvailabilityAttributesJustification$json =
+    {
   '1': 'BusinessAvailabilityAttributesJustification',
   '2': [
     {'1': 'takeout', '3': 1, '4': 1, '5': 8, '10': 'takeout'},
@@ -101,4 +173,3 @@ final $typed_data.Uint8List contextualContentDescriptor = $convert.base64Decode(
     'dHlBdHRyaWJ1dGVzSnVzdGlmaWNhdGlvbhIYCgd0YWtlb3V0GAEgASgIUgd0YWtlb3V0EhoKCG'
     'RlbGl2ZXJ5GAIgASgIUghkZWxpdmVyeRIXCgdkaW5lX2luGAMgASgIUgZkaW5lSW5CDwoNanVz'
     'dGlmaWNhdGlvbg==');
-

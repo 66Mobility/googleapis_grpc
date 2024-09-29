@@ -18,19 +18,104 @@ const LocalizedSettings$json = {
   '1': 'LocalizedSettings',
   '2': [
     {'1': 'display_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'pronunciation', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'pronunciation'},
-    {'1': 'short_description', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'shortDescription'},
-    {'1': 'full_description', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'fullDescription'},
-    {'1': 'small_logo_image', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'smallLogoImage'},
-    {'1': 'large_banner_image', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'largeBannerImage'},
-    {'1': 'developer_name', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'developerName'},
-    {'1': 'developer_email', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'developerEmail'},
-    {'1': 'terms_of_service_url', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'termsOfServiceUrl'},
+    {
+      '1': 'pronunciation',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'pronunciation'
+    },
+    {
+      '1': 'short_description',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'shortDescription'
+    },
+    {
+      '1': 'full_description',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'fullDescription'
+    },
+    {
+      '1': 'small_logo_image',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'smallLogoImage'
+    },
+    {
+      '1': 'large_banner_image',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'largeBannerImage'
+    },
+    {
+      '1': 'developer_name',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'developerName'
+    },
+    {
+      '1': 'developer_email',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'developerEmail'
+    },
+    {
+      '1': 'terms_of_service_url',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'termsOfServiceUrl'
+    },
     {'1': 'voice', '3': 10, '4': 1, '5': 9, '8': {}, '10': 'voice'},
-    {'1': 'voice_locale', '3': 14, '4': 1, '5': 9, '8': {}, '10': 'voiceLocale'},
-    {'1': 'privacy_policy_url', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'privacyPolicyUrl'},
-    {'1': 'sample_invocations', '3': 12, '4': 3, '5': 9, '8': {}, '10': 'sampleInvocations'},
-    {'1': 'theme_customization', '3': 13, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.ThemeCustomization', '8': {}, '10': 'themeCustomization'},
+    {
+      '1': 'voice_locale',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'voiceLocale'
+    },
+    {
+      '1': 'privacy_policy_url',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'privacyPolicyUrl'
+    },
+    {
+      '1': 'sample_invocations',
+      '3': 12,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'sampleInvocations'
+    },
+    {
+      '1': 'theme_customization',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ThemeCustomization',
+      '8': {},
+      '10': 'themeCustomization'
+    },
   ],
 };
 
@@ -49,4 +134,3 @@ final $typed_data.Uint8List localizedSettingsDescriptor = $convert.base64Decode(
     'Y3lVcmwSMgoSc2FtcGxlX2ludm9jYXRpb25zGAwgAygJQgPgQQFSEXNhbXBsZUludm9jYXRpb2'
     '5zEl8KE3RoZW1lX2N1c3RvbWl6YXRpb24YDSABKAsyKS5nb29nbGUuYWN0aW9ucy5zZGsudjIu'
     'VGhlbWVDdXN0b21pemF0aW9uQgPgQQFSEnRoZW1lQ3VzdG9taXphdGlvbg==');
-

@@ -19,16 +19,24 @@ const DeleteBucketAccessControlRequest$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `DeleteBucketAccessControlRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteBucketAccessControlRequestDescriptor = $convert.base64Decode(
-    'CiBEZWxldGVCdWNrZXRBY2Nlc3NDb250cm9sUmVxdWVzdBIbCgZidWNrZXQYASABKAlCA+BBAl'
-    'IGYnVja2V0EhsKBmVudGl0eRgCIAEoCUID4EECUgZlbnRpdHkSWgoVY29tbW9uX3JlcXVlc3Rf'
-    'cGFyYW1zGAQgASgLMiYuZ29vZ2xlLnN0b3JhZ2UudjEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY2'
-    '9tbW9uUmVxdWVzdFBhcmFtcw==');
+final $typed_data.Uint8List deleteBucketAccessControlRequestDescriptor =
+    $convert.base64Decode(
+        'CiBEZWxldGVCdWNrZXRBY2Nlc3NDb250cm9sUmVxdWVzdBIbCgZidWNrZXQYASABKAlCA+BBAl'
+        'IGYnVja2V0EhsKBmVudGl0eRgCIAEoCUID4EECUgZlbnRpdHkSWgoVY29tbW9uX3JlcXVlc3Rf'
+        'cGFyYW1zGAQgASgLMiYuZ29vZ2xlLnN0b3JhZ2UudjEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY2'
+        '9tbW9uUmVxdWVzdFBhcmFtcw==');
 
 @$core.Deprecated('Use getBucketAccessControlRequestDescriptor instead')
 const GetBucketAccessControlRequest$json = {
@@ -36,7 +44,14 @@ const GetBucketAccessControlRequest$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -52,8 +67,22 @@ const InsertBucketAccessControlRequest$json = {
   '1': 'InsertBucketAccessControlRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'bucket_access_control', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.BucketAccessControl', '10': 'bucketAccessControl'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'bucket_access_control',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.BucketAccessControl',
+      '10': 'bucketAccessControl'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -70,15 +99,23 @@ const ListBucketAccessControlsRequest$json = {
   '1': 'ListBucketAccessControlsRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `ListBucketAccessControlsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listBucketAccessControlsRequestDescriptor = $convert.base64Decode(
-    'Ch9MaXN0QnVja2V0QWNjZXNzQ29udHJvbHNSZXF1ZXN0EhsKBmJ1Y2tldBgBIAEoCUID4EECUg'
-    'ZidWNrZXQSWgoVY29tbW9uX3JlcXVlc3RfcGFyYW1zGAMgASgLMiYuZ29vZ2xlLnN0b3JhZ2Uu'
-    'djEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY29tbW9uUmVxdWVzdFBhcmFtcw==');
+final $typed_data.Uint8List listBucketAccessControlsRequestDescriptor =
+    $convert.base64Decode(
+        'Ch9MaXN0QnVja2V0QWNjZXNzQ29udHJvbHNSZXF1ZXN0EhsKBmJ1Y2tldBgBIAEoCUID4EECUg'
+        'ZidWNrZXQSWgoVY29tbW9uX3JlcXVlc3RfcGFyYW1zGAMgASgLMiYuZ29vZ2xlLnN0b3JhZ2Uu'
+        'djEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY29tbW9uUmVxdWVzdFBhcmFtcw==');
 
 @$core.Deprecated('Use patchBucketAccessControlRequestDescriptor instead')
 const PatchBucketAccessControlRequest$json = {
@@ -86,9 +123,30 @@ const PatchBucketAccessControlRequest$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'bucket_access_control', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.BucketAccessControl', '10': 'bucketAccessControl'},
-    {'1': 'update_mask', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'bucket_access_control',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.BucketAccessControl',
+      '10': 'bucketAccessControl'
+    },
+    {
+      '1': 'update_mask',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -108,8 +166,22 @@ const UpdateBucketAccessControlRequest$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'bucket_access_control', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.BucketAccessControl', '10': 'bucketAccessControl'},
-    {'1': 'common_request_params', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'bucket_access_control',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.BucketAccessControl',
+      '10': 'bucketAccessControl'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -126,9 +198,30 @@ const DeleteBucketRequest$json = {
   '1': 'DeleteBucketRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'if_metageneration_match', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'common_request_params', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_metageneration_match',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -146,10 +239,38 @@ const GetBucketRequest$json = {
   '1': 'GetBucketRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'if_metageneration_match', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'projection', '3': 4, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_metageneration_match',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'projection',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -168,12 +289,47 @@ final $typed_data.Uint8List getBucketRequestDescriptor = $convert.base64Decode(
 const InsertBucketRequest$json = {
   '1': 'InsertBucketRequest',
   '2': [
-    {'1': 'predefined_acl', '3': 1, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedBucketAcl', '10': 'predefinedAcl'},
-    {'1': 'predefined_default_object_acl', '3': 2, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'predefinedDefaultObjectAcl'},
+    {
+      '1': 'predefined_acl',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedBucketAcl',
+      '10': 'predefinedAcl'
+    },
+    {
+      '1': 'predefined_default_object_acl',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'predefinedDefaultObjectAcl'
+    },
     {'1': 'project', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'project'},
-    {'1': 'projection', '3': 4, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'bucket', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket', '10': 'bucket'},
-    {'1': 'common_request_params', '3': 7, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'projection',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'bucket',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket',
+      '10': 'bucket'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -194,7 +350,14 @@ const ListChannelsRequest$json = {
   '1': 'ListChannelsRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -212,8 +375,22 @@ const ListBucketsRequest$json = {
     {'1': 'page_token', '3': 2, '4': 1, '5': 9, '10': 'pageToken'},
     {'1': 'prefix', '3': 3, '4': 1, '5': 9, '10': 'prefix'},
     {'1': 'project', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'project'},
-    {'1': 'projection', '3': 5, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'common_request_params', '3': 7, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'projection',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -231,8 +408,21 @@ const LockRetentionPolicyRequest$json = {
   '1': 'LockRetentionPolicyRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'if_metageneration_match', '3': 2, '4': 1, '5': 3, '10': 'ifMetagenerationMatch'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_metageneration_match',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -248,14 +438,70 @@ const PatchBucketRequest$json = {
   '1': 'PatchBucketRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'if_metageneration_match', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'predefined_acl', '3': 4, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedBucketAcl', '10': 'predefinedAcl'},
-    {'1': 'predefined_default_object_acl', '3': 5, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'predefinedDefaultObjectAcl'},
-    {'1': 'projection', '3': 6, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'metadata', '3': 8, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket', '10': 'metadata'},
-    {'1': 'update_mask', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'common_request_params', '3': 10, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_metageneration_match',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'predefined_acl',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedBucketAcl',
+      '10': 'predefinedAcl'
+    },
+    {
+      '1': 'predefined_default_object_acl',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'predefinedDefaultObjectAcl'
+    },
+    {
+      '1': 'projection',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'metadata',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket',
+      '10': 'metadata'
+    },
+    {
+      '1': 'update_mask',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -280,13 +526,62 @@ const UpdateBucketRequest$json = {
   '1': 'UpdateBucketRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'if_metageneration_match', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'predefined_acl', '3': 4, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedBucketAcl', '10': 'predefinedAcl'},
-    {'1': 'predefined_default_object_acl', '3': 5, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'predefinedDefaultObjectAcl'},
-    {'1': 'projection', '3': 6, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'metadata', '3': 8, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket', '10': 'metadata'},
-    {'1': 'common_request_params', '3': 9, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_metageneration_match',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'predefined_acl',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedBucketAcl',
+      '10': 'predefinedAcl'
+    },
+    {
+      '1': 'predefined_default_object_acl',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'predefinedDefaultObjectAcl'
+    },
+    {
+      '1': 'projection',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'metadata',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket',
+      '10': 'metadata'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -309,8 +604,22 @@ final $typed_data.Uint8List updateBucketRequestDescriptor = $convert.base64Decod
 const StopChannelRequest$json = {
   '1': 'StopChannelRequest',
   '2': [
-    {'1': 'channel', '3': 1, '4': 1, '5': 11, '6': '.google.storage.v1.Channel', '10': 'channel'},
-    {'1': 'common_request_params', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'channel',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Channel',
+      '10': 'channel'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -321,22 +630,31 @@ final $typed_data.Uint8List stopChannelRequestDescriptor = $convert.base64Decode
     'Z2xlLnN0b3JhZ2UudjEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY29tbW9uUmVxdWVzdFBhcmFtcw'
     '==');
 
-@$core.Deprecated('Use deleteDefaultObjectAccessControlRequestDescriptor instead')
+@$core
+    .Deprecated('Use deleteDefaultObjectAccessControlRequestDescriptor instead')
 const DeleteDefaultObjectAccessControlRequest$json = {
   '1': 'DeleteDefaultObjectAccessControlRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `DeleteDefaultObjectAccessControlRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteDefaultObjectAccessControlRequestDescriptor = $convert.base64Decode(
-    'CidEZWxldGVEZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgAS'
-    'gJQgPgQQJSBmJ1Y2tldBIbCgZlbnRpdHkYAiABKAlCA+BBAlIGZW50aXR5EloKFWNvbW1vbl9y'
-    'ZXF1ZXN0X3BhcmFtcxgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYX'
-    'JhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
+final $typed_data.Uint8List deleteDefaultObjectAccessControlRequestDescriptor =
+    $convert.base64Decode(
+        'CidEZWxldGVEZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgAS'
+        'gJQgPgQQJSBmJ1Y2tldBIbCgZlbnRpdHkYAiABKAlCA+BBAlIGZW50aXR5EloKFWNvbW1vbl9y'
+        'ZXF1ZXN0X3BhcmFtcxgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYX'
+        'JhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
 
 @$core.Deprecated('Use getDefaultObjectAccessControlRequestDescriptor instead')
 const GetDefaultObjectAccessControlRequest$json = {
@@ -344,43 +662,89 @@ const GetDefaultObjectAccessControlRequest$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `GetDefaultObjectAccessControlRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getDefaultObjectAccessControlRequestDescriptor = $convert.base64Decode(
-    'CiRHZXREZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgASgJQg'
-    'PgQQJSBmJ1Y2tldBIbCgZlbnRpdHkYAiABKAlCA+BBAlIGZW50aXR5EloKFWNvbW1vbl9yZXF1'
-    'ZXN0X3BhcmFtcxgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYXJhbX'
-    'NSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
+final $typed_data.Uint8List getDefaultObjectAccessControlRequestDescriptor =
+    $convert.base64Decode(
+        'CiRHZXREZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgASgJQg'
+        'PgQQJSBmJ1Y2tldBIbCgZlbnRpdHkYAiABKAlCA+BBAlIGZW50aXR5EloKFWNvbW1vbl9yZXF1'
+        'ZXN0X3BhcmFtcxgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYXJhbX'
+        'NSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
 
-@$core.Deprecated('Use insertDefaultObjectAccessControlRequestDescriptor instead')
+@$core
+    .Deprecated('Use insertDefaultObjectAccessControlRequestDescriptor instead')
 const InsertDefaultObjectAccessControlRequest$json = {
   '1': 'InsertDefaultObjectAccessControlRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'object_access_control', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'objectAccessControl'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'object_access_control',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'objectAccessControl'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `InsertDefaultObjectAccessControlRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List insertDefaultObjectAccessControlRequestDescriptor = $convert.base64Decode(
-    'CidJbnNlcnREZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgAS'
-    'gJQgPgQQJSBmJ1Y2tldBJaChVvYmplY3RfYWNjZXNzX2NvbnRyb2wYAyABKAsyJi5nb29nbGUu'
-    'c3RvcmFnZS52MS5PYmplY3RBY2Nlc3NDb250cm9sUhNvYmplY3RBY2Nlc3NDb250cm9sEloKFW'
-    'NvbW1vbl9yZXF1ZXN0X3BhcmFtcxgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLkNvbW1vblJl'
-    'cXVlc3RQYXJhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
+final $typed_data.Uint8List insertDefaultObjectAccessControlRequestDescriptor =
+    $convert.base64Decode(
+        'CidJbnNlcnREZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgAS'
+        'gJQgPgQQJSBmJ1Y2tldBJaChVvYmplY3RfYWNjZXNzX2NvbnRyb2wYAyABKAsyJi5nb29nbGUu'
+        'c3RvcmFnZS52MS5PYmplY3RBY2Nlc3NDb250cm9sUhNvYmplY3RBY2Nlc3NDb250cm9sEloKFW'
+        'NvbW1vbl9yZXF1ZXN0X3BhcmFtcxgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLkNvbW1vblJl'
+        'cXVlc3RQYXJhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
 
-@$core.Deprecated('Use listDefaultObjectAccessControlsRequestDescriptor instead')
+@$core
+    .Deprecated('Use listDefaultObjectAccessControlsRequestDescriptor instead')
 const ListDefaultObjectAccessControlsRequest$json = {
   '1': 'ListDefaultObjectAccessControlsRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'if_metageneration_match', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'common_request_params', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_metageneration_match',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -394,15 +758,37 @@ final $typed_data.Uint8List listDefaultObjectAccessControlsRequestDescriptor = $
     'ImLmdvb2dsZS5zdG9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYXJhbXNSE2NvbW1vblJlcXVlc3RQ'
     'YXJhbXM=');
 
-@$core.Deprecated('Use patchDefaultObjectAccessControlRequestDescriptor instead')
+@$core
+    .Deprecated('Use patchDefaultObjectAccessControlRequestDescriptor instead')
 const PatchDefaultObjectAccessControlRequest$json = {
   '1': 'PatchDefaultObjectAccessControlRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'object_access_control', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'objectAccessControl'},
-    {'1': 'update_mask', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'object_access_control',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'objectAccessControl'
+    },
+    {
+      '1': 'update_mask',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -416,33 +802,63 @@ final $typed_data.Uint8List patchDefaultObjectAccessControlRequestDescriptor = $
     'YgASgLMiYuZ29vZ2xlLnN0b3JhZ2UudjEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY29tbW9uUmVx'
     'dWVzdFBhcmFtcw==');
 
-@$core.Deprecated('Use updateDefaultObjectAccessControlRequestDescriptor instead')
+@$core
+    .Deprecated('Use updateDefaultObjectAccessControlRequestDescriptor instead')
 const UpdateDefaultObjectAccessControlRequest$json = {
   '1': 'UpdateDefaultObjectAccessControlRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
-    {'1': 'object_access_control', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'objectAccessControl'},
-    {'1': 'common_request_params', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'object_access_control',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'objectAccessControl'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `UpdateDefaultObjectAccessControlRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateDefaultObjectAccessControlRequestDescriptor = $convert.base64Decode(
-    'CidVcGRhdGVEZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgAS'
-    'gJQgPgQQJSBmJ1Y2tldBIbCgZlbnRpdHkYAiABKAlCA+BBAlIGZW50aXR5EloKFW9iamVjdF9h'
-    'Y2Nlc3NfY29udHJvbBgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLk9iamVjdEFjY2Vzc0Nvbn'
-    'Ryb2xSE29iamVjdEFjY2Vzc0NvbnRyb2wSWgoVY29tbW9uX3JlcXVlc3RfcGFyYW1zGAUgASgL'
-    'MiYuZ29vZ2xlLnN0b3JhZ2UudjEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY29tbW9uUmVxdWVzdF'
-    'BhcmFtcw==');
+final $typed_data.Uint8List updateDefaultObjectAccessControlRequestDescriptor =
+    $convert.base64Decode(
+        'CidVcGRhdGVEZWZhdWx0T2JqZWN0QWNjZXNzQ29udHJvbFJlcXVlc3QSGwoGYnVja2V0GAEgAS'
+        'gJQgPgQQJSBmJ1Y2tldBIbCgZlbnRpdHkYAiABKAlCA+BBAlIGZW50aXR5EloKFW9iamVjdF9h'
+        'Y2Nlc3NfY29udHJvbBgEIAEoCzImLmdvb2dsZS5zdG9yYWdlLnYxLk9iamVjdEFjY2Vzc0Nvbn'
+        'Ryb2xSE29iamVjdEFjY2Vzc0NvbnRyb2wSWgoVY29tbW9uX3JlcXVlc3RfcGFyYW1zGAUgASgL'
+        'MiYuZ29vZ2xlLnN0b3JhZ2UudjEuQ29tbW9uUmVxdWVzdFBhcmFtc1ITY29tbW9uUmVxdWVzdF'
+        'BhcmFtcw==');
 
 @$core.Deprecated('Use deleteNotificationRequestDescriptor instead')
 const DeleteNotificationRequest$json = {
   '1': 'DeleteNotificationRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'notification', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'notification'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'notification',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'notification'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -458,8 +874,22 @@ const GetNotificationRequest$json = {
   '1': 'GetNotificationRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'notification', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'notification'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'notification',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'notification'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -475,8 +905,22 @@ const InsertNotificationRequest$json = {
   '1': 'InsertNotificationRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'notification', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.Notification', '10': 'notification'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'notification',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Notification',
+      '10': 'notification'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -492,7 +936,14 @@ const ListNotificationsRequest$json = {
   '1': 'ListNotificationsRequest',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -510,7 +961,14 @@ const DeleteObjectAccessControlRequest$json = {
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
     {'1': 'object', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 4, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -530,7 +988,14 @@ const GetObjectAccessControlRequest$json = {
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
     {'1': 'object', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 4, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -549,8 +1014,22 @@ const InsertObjectAccessControlRequest$json = {
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 3, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'object_access_control', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'objectAccessControl'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'object_access_control',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'objectAccessControl'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -570,16 +1049,24 @@ const ListObjectAccessControlsRequest$json = {
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 3, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'common_request_params', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `ListObjectAccessControlsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listObjectAccessControlsRequestDescriptor = $convert.base64Decode(
-    'Ch9MaXN0T2JqZWN0QWNjZXNzQ29udHJvbHNSZXF1ZXN0EhsKBmJ1Y2tldBgBIAEoCUID4EECUg'
-    'ZidWNrZXQSGwoGb2JqZWN0GAIgASgJQgPgQQJSBm9iamVjdBIeCgpnZW5lcmF0aW9uGAMgASgD'
-    'UgpnZW5lcmF0aW9uEloKFWNvbW1vbl9yZXF1ZXN0X3BhcmFtcxgFIAEoCzImLmdvb2dsZS5zdG'
-    '9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYXJhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
+final $typed_data.Uint8List listObjectAccessControlsRequestDescriptor =
+    $convert.base64Decode(
+        'Ch9MaXN0T2JqZWN0QWNjZXNzQ29udHJvbHNSZXF1ZXN0EhsKBmJ1Y2tldBgBIAEoCUID4EECUg'
+        'ZidWNrZXQSGwoGb2JqZWN0GAIgASgJQgPgQQJSBm9iamVjdBIeCgpnZW5lcmF0aW9uGAMgASgD'
+        'UgpnZW5lcmF0aW9uEloKFWNvbW1vbl9yZXF1ZXN0X3BhcmFtcxgFIAEoCzImLmdvb2dsZS5zdG'
+        '9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYXJhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
 
 @$core.Deprecated('Use patchObjectAccessControlRequestDescriptor instead')
 const PatchObjectAccessControlRequest$json = {
@@ -589,9 +1076,30 @@ const PatchObjectAccessControlRequest$json = {
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
     {'1': 'object', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 4, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'object_access_control', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'objectAccessControl'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
-    {'1': 'update_mask', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'object_access_control',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'objectAccessControl'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
+    {
+      '1': 'update_mask',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -614,9 +1122,30 @@ const UpdateObjectAccessControlRequest$json = {
     {'1': 'entity', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'entity'},
     {'1': 'object', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 4, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'object_access_control', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'objectAccessControl'},
-    {'1': 'common_request_params', '3': 7, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
-    {'1': 'update_mask', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'object_access_control',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'objectAccessControl'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
+    {
+      '1': 'update_mask',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -635,16 +1164,79 @@ final $typed_data.Uint8List updateObjectAccessControlRequestDescriptor = $conver
 const ComposeObjectRequest$json = {
   '1': 'ComposeObjectRequest',
   '2': [
-    {'1': 'destination_bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'destinationBucket'},
-    {'1': 'destination_object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'destinationObject'},
-    {'1': 'destination_predefined_acl', '3': 3, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'destinationPredefinedAcl'},
-    {'1': 'destination', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'destination'},
-    {'1': 'source_objects', '3': 12, '4': 3, '5': 11, '6': '.google.storage.v1.ComposeObjectRequest.SourceObjects', '10': 'sourceObjects'},
-    {'1': 'if_generation_match', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_metageneration_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
+    {
+      '1': 'destination_bucket',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'destinationBucket'
+    },
+    {
+      '1': 'destination_object',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'destinationObject'
+    },
+    {
+      '1': 'destination_predefined_acl',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'destinationPredefinedAcl'
+    },
+    {
+      '1': 'destination',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'destination'
+    },
+    {
+      '1': 'source_objects',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.ComposeObjectRequest.SourceObjects',
+      '10': 'sourceObjects'
+    },
+    {
+      '1': 'if_generation_match',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
     {'1': 'kms_key_name', '3': 6, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'common_object_request_params', '3': 9, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 10, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_object_request_params',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
   '3': [ComposeObjectRequest_SourceObjects$json],
 };
@@ -655,7 +1247,15 @@ const ComposeObjectRequest_SourceObjects$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'generation', '3': 2, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'object_preconditions', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.ComposeObjectRequest.SourceObjects.ObjectPreconditions', '10': 'objectPreconditions'},
+    {
+      '1': 'object_preconditions',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.storage.v1.ComposeObjectRequest.SourceObjects.ObjectPreconditions',
+      '10': 'objectPreconditions'
+    },
   ],
   '3': [ComposeObjectRequest_SourceObjects_ObjectPreconditions$json],
 };
@@ -664,7 +1264,14 @@ const ComposeObjectRequest_SourceObjects$json = {
 const ComposeObjectRequest_SourceObjects_ObjectPreconditions$json = {
   '1': 'ObjectPreconditions',
   '2': [
-    {'1': 'if_generation_match', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
+    {
+      '1': 'if_generation_match',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
   ],
 };
 
@@ -695,25 +1302,156 @@ final $typed_data.Uint8List composeObjectRequestDescriptor = $convert.base64Deco
 const CopyObjectRequest$json = {
   '1': 'CopyObjectRequest',
   '2': [
-    {'1': 'destination_bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'destinationBucket'},
-    {'1': 'destination_object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'destinationObject'},
-    {'1': 'destination_predefined_acl', '3': 3, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'destinationPredefinedAcl'},
-    {'1': 'if_generation_match', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'if_source_generation_match', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceGenerationMatch'},
-    {'1': 'if_source_generation_not_match', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceGenerationNotMatch'},
-    {'1': 'if_source_metageneration_match', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceMetagenerationMatch'},
-    {'1': 'if_source_metageneration_not_match', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceMetagenerationNotMatch'},
-    {'1': 'projection', '3': 12, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'source_bucket', '3': 13, '4': 1, '5': 9, '8': {}, '10': 'sourceBucket'},
-    {'1': 'source_object', '3': 14, '4': 1, '5': 9, '8': {}, '10': 'sourceObject'},
-    {'1': 'source_generation', '3': 15, '4': 1, '5': 3, '10': 'sourceGeneration'},
-    {'1': 'destination', '3': 17, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'destination'},
-    {'1': 'destination_kms_key_name', '3': 20, '4': 1, '5': 9, '10': 'destinationKmsKeyName'},
-    {'1': 'common_object_request_params', '3': 18, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 19, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'destination_bucket',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'destinationBucket'
+    },
+    {
+      '1': 'destination_object',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'destinationObject'
+    },
+    {
+      '1': 'destination_predefined_acl',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'destinationPredefinedAcl'
+    },
+    {
+      '1': 'if_generation_match',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'if_source_generation_match',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceGenerationMatch'
+    },
+    {
+      '1': 'if_source_generation_not_match',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceGenerationNotMatch'
+    },
+    {
+      '1': 'if_source_metageneration_match',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceMetagenerationMatch'
+    },
+    {
+      '1': 'if_source_metageneration_not_match',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceMetagenerationNotMatch'
+    },
+    {
+      '1': 'projection',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'source_bucket',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceBucket'
+    },
+    {
+      '1': 'source_object',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceObject'
+    },
+    {
+      '1': 'source_generation',
+      '3': 15,
+      '4': 1,
+      '5': 3,
+      '10': 'sourceGeneration'
+    },
+    {
+      '1': 'destination',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'destination'
+    },
+    {
+      '1': 'destination_kms_key_name',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '10': 'destinationKmsKeyName'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -755,12 +1493,54 @@ const DeleteObjectRequest$json = {
     {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'upload_id', '3': 3, '4': 1, '5': 9, '10': 'uploadId'},
     {'1': 'generation', '3': 4, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'if_generation_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'common_object_request_params', '3': 10, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_generation_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -789,12 +1569,54 @@ const GetObjectMediaRequest$json = {
     {'1': 'generation', '3': 3, '4': 1, '5': 3, '10': 'generation'},
     {'1': 'read_offset', '3': 4, '4': 1, '5': 3, '10': 'readOffset'},
     {'1': 'read_limit', '3': 5, '4': 1, '5': 3, '10': 'readLimit'},
-    {'1': 'if_generation_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'common_object_request_params', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 12, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_generation_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -821,13 +1643,62 @@ const GetObjectRequest$json = {
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 3, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'if_generation_match', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'projection', '3': 8, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'common_object_request_params', '3': 10, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_generation_match',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'projection',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -852,10 +1723,38 @@ final $typed_data.Uint8List getObjectRequestDescriptor = $convert.base64Decode(
 const GetObjectMediaResponse$json = {
   '1': 'GetObjectMediaResponse',
   '2': [
-    {'1': 'checksummed_data', '3': 1, '4': 1, '5': 11, '6': '.google.storage.v1.ChecksummedData', '10': 'checksummedData'},
-    {'1': 'object_checksums', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectChecksums', '10': 'objectChecksums'},
-    {'1': 'content_range', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.ContentRange', '10': 'contentRange'},
-    {'1': 'metadata', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'metadata'},
+    {
+      '1': 'checksummed_data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ChecksummedData',
+      '10': 'checksummedData'
+    },
+    {
+      '1': 'object_checksums',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectChecksums',
+      '10': 'objectChecksums'
+    },
+    {
+      '1': 'content_range',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ContentRange',
+      '10': 'contentRange'
+    },
+    {
+      '1': 'metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'metadata'
+    },
   ],
 };
 
@@ -872,13 +1771,62 @@ final $typed_data.Uint8List getObjectMediaResponseDescriptor = $convert.base64De
 const InsertObjectSpec$json = {
   '1': 'InsertObjectSpec',
   '2': [
-    {'1': 'resource', '3': 1, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'resource'},
-    {'1': 'predefined_acl', '3': 2, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'predefinedAcl'},
-    {'1': 'if_generation_match', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'projection', '3': 7, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
+    {
+      '1': 'resource',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'resource'
+    },
+    {
+      '1': 'predefined_acl',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'predefinedAcl'
+    },
+    {
+      '1': 'if_generation_match',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'projection',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
   ],
 };
 
@@ -901,14 +1849,59 @@ const InsertObjectRequest$json = {
   '1': 'InsertObjectRequest',
   '2': [
     {'1': 'upload_id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'uploadId'},
-    {'1': 'insert_object_spec', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.InsertObjectSpec', '9': 0, '10': 'insertObjectSpec'},
+    {
+      '1': 'insert_object_spec',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.InsertObjectSpec',
+      '9': 0,
+      '10': 'insertObjectSpec'
+    },
     {'1': 'write_offset', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'writeOffset'},
-    {'1': 'checksummed_data', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.ChecksummedData', '9': 1, '10': 'checksummedData'},
-    {'1': 'reference', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.GetObjectMediaRequest', '9': 1, '10': 'reference'},
-    {'1': 'object_checksums', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.ObjectChecksums', '10': 'objectChecksums'},
+    {
+      '1': 'checksummed_data',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ChecksummedData',
+      '9': 1,
+      '10': 'checksummedData'
+    },
+    {
+      '1': 'reference',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.GetObjectMediaRequest',
+      '9': 1,
+      '10': 'reference'
+    },
+    {
+      '1': 'object_checksums',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectChecksums',
+      '10': 'objectChecksums'
+    },
     {'1': 'finish_write', '3': 7, '4': 1, '5': 8, '10': 'finishWrite'},
-    {'1': 'common_object_request_params', '3': 8, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 9, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_object_request_params',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
   '8': [
     {'1': 'first_message'},
@@ -938,15 +1931,47 @@ const ListObjectsRequest$json = {
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'delimiter', '3': 2, '4': 1, '5': 9, '10': 'delimiter'},
-    {'1': 'include_trailing_delimiter', '3': 3, '4': 1, '5': 8, '10': 'includeTrailingDelimiter'},
+    {
+      '1': 'include_trailing_delimiter',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'includeTrailingDelimiter'
+    },
     {'1': 'max_results', '3': 4, '4': 1, '5': 5, '10': 'maxResults'},
     {'1': 'page_token', '3': 5, '4': 1, '5': 9, '10': 'pageToken'},
     {'1': 'prefix', '3': 6, '4': 1, '5': 9, '10': 'prefix'},
-    {'1': 'projection', '3': 7, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
+    {
+      '1': 'projection',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
     {'1': 'versions', '3': 9, '4': 1, '5': 8, '10': 'versions'},
-    {'1': 'lexicographic_start', '3': 11, '4': 1, '5': 9, '10': 'lexicographicStart'},
-    {'1': 'lexicographic_end', '3': 12, '4': 1, '5': 9, '10': 'lexicographicEnd'},
-    {'1': 'common_request_params', '3': 10, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'lexicographic_start',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '10': 'lexicographicStart'
+    },
+    {
+      '1': 'lexicographic_end',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'lexicographicEnd'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -968,8 +1993,22 @@ const QueryWriteStatusRequest$json = {
   '1': 'QueryWriteStatusRequest',
   '2': [
     {'1': 'upload_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'uploadId'},
-    {'1': 'common_object_request_params', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_object_request_params',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -987,7 +2026,14 @@ const QueryWriteStatusResponse$json = {
   '2': [
     {'1': 'committed_size', '3': 1, '4': 1, '5': 3, '10': 'committedSize'},
     {'1': 'complete', '3': 2, '4': 1, '5': 8, '10': 'complete'},
-    {'1': 'resource', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'resource'},
+    {
+      '1': 'resource',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'resource'
+    },
   ],
 };
 
@@ -1001,30 +2047,185 @@ final $typed_data.Uint8List queryWriteStatusResponseDescriptor = $convert.base64
 const RewriteObjectRequest$json = {
   '1': 'RewriteObjectRequest',
   '2': [
-    {'1': 'destination_bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'destinationBucket'},
-    {'1': 'destination_object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'destinationObject'},
-    {'1': 'destination_kms_key_name', '3': 3, '4': 1, '5': 9, '10': 'destinationKmsKeyName'},
-    {'1': 'destination_predefined_acl', '3': 4, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'destinationPredefinedAcl'},
-    {'1': 'if_generation_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'if_source_generation_match', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceGenerationMatch'},
-    {'1': 'if_source_generation_not_match', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceGenerationNotMatch'},
-    {'1': 'if_source_metageneration_match', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceMetagenerationMatch'},
-    {'1': 'if_source_metageneration_not_match', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifSourceMetagenerationNotMatch'},
-    {'1': 'max_bytes_rewritten_per_call', '3': 13, '4': 1, '5': 3, '10': 'maxBytesRewrittenPerCall'},
-    {'1': 'projection', '3': 14, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
+    {
+      '1': 'destination_bucket',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'destinationBucket'
+    },
+    {
+      '1': 'destination_object',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'destinationObject'
+    },
+    {
+      '1': 'destination_kms_key_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'destinationKmsKeyName'
+    },
+    {
+      '1': 'destination_predefined_acl',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'destinationPredefinedAcl'
+    },
+    {
+      '1': 'if_generation_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'if_source_generation_match',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceGenerationMatch'
+    },
+    {
+      '1': 'if_source_generation_not_match',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceGenerationNotMatch'
+    },
+    {
+      '1': 'if_source_metageneration_match',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceMetagenerationMatch'
+    },
+    {
+      '1': 'if_source_metageneration_not_match',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifSourceMetagenerationNotMatch'
+    },
+    {
+      '1': 'max_bytes_rewritten_per_call',
+      '3': 13,
+      '4': 1,
+      '5': 3,
+      '10': 'maxBytesRewrittenPerCall'
+    },
+    {
+      '1': 'projection',
+      '3': 14,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
     {'1': 'rewrite_token', '3': 15, '4': 1, '5': 9, '10': 'rewriteToken'},
-    {'1': 'source_bucket', '3': 16, '4': 1, '5': 9, '8': {}, '10': 'sourceBucket'},
-    {'1': 'source_object', '3': 17, '4': 1, '5': 9, '8': {}, '10': 'sourceObject'},
-    {'1': 'source_generation', '3': 18, '4': 1, '5': 3, '10': 'sourceGeneration'},
-    {'1': 'object', '3': 20, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'object'},
-    {'1': 'copy_source_encryption_algorithm', '3': 21, '4': 1, '5': 9, '10': 'copySourceEncryptionAlgorithm'},
-    {'1': 'copy_source_encryption_key', '3': 22, '4': 1, '5': 9, '10': 'copySourceEncryptionKey'},
-    {'1': 'copy_source_encryption_key_sha256', '3': 23, '4': 1, '5': 9, '10': 'copySourceEncryptionKeySha256'},
-    {'1': 'common_object_request_params', '3': 24, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 25, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'source_bucket',
+      '3': 16,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceBucket'
+    },
+    {
+      '1': 'source_object',
+      '3': 17,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceObject'
+    },
+    {
+      '1': 'source_generation',
+      '3': 18,
+      '4': 1,
+      '5': 3,
+      '10': 'sourceGeneration'
+    },
+    {
+      '1': 'object',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'object'
+    },
+    {
+      '1': 'copy_source_encryption_algorithm',
+      '3': 21,
+      '4': 1,
+      '5': 9,
+      '10': 'copySourceEncryptionAlgorithm'
+    },
+    {
+      '1': 'copy_source_encryption_key',
+      '3': 22,
+      '4': 1,
+      '5': 9,
+      '10': 'copySourceEncryptionKey'
+    },
+    {
+      '1': 'copy_source_encryption_key_sha256',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '10': 'copySourceEncryptionKeySha256'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1068,11 +2269,24 @@ final $typed_data.Uint8List rewriteObjectRequestDescriptor = $convert.base64Deco
 const RewriteResponse$json = {
   '1': 'RewriteResponse',
   '2': [
-    {'1': 'total_bytes_rewritten', '3': 1, '4': 1, '5': 3, '10': 'totalBytesRewritten'},
+    {
+      '1': 'total_bytes_rewritten',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '10': 'totalBytesRewritten'
+    },
     {'1': 'object_size', '3': 2, '4': 1, '5': 3, '10': 'objectSize'},
     {'1': 'done', '3': 3, '4': 1, '5': 8, '10': 'done'},
     {'1': 'rewrite_token', '3': 4, '4': 1, '5': 9, '10': 'rewriteToken'},
-    {'1': 'resource', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'resource'},
+    {
+      '1': 'resource',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'resource'
+    },
   ],
 };
 
@@ -1087,9 +2301,30 @@ final $typed_data.Uint8List rewriteResponseDescriptor = $convert.base64Decode(
 const StartResumableWriteRequest$json = {
   '1': 'StartResumableWriteRequest',
   '2': [
-    {'1': 'insert_object_spec', '3': 1, '4': 1, '5': 11, '6': '.google.storage.v1.InsertObjectSpec', '10': 'insertObjectSpec'},
-    {'1': 'common_object_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 4, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'insert_object_spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.InsertObjectSpec',
+      '10': 'insertObjectSpec'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1111,9 +2346,10 @@ const StartResumableWriteResponse$json = {
 };
 
 /// Descriptor for `StartResumableWriteResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List startResumableWriteResponseDescriptor = $convert.base64Decode(
-    'ChtTdGFydFJlc3VtYWJsZVdyaXRlUmVzcG9uc2USGwoJdXBsb2FkX2lkGAEgASgJUgh1cGxvYW'
-    'RJZA==');
+final $typed_data.Uint8List startResumableWriteResponseDescriptor =
+    $convert.base64Decode(
+        'ChtTdGFydFJlc3VtYWJsZVdyaXRlUmVzcG9uc2USGwoJdXBsb2FkX2lkGAEgASgJUgh1cGxvYW'
+        'RJZA==');
 
 @$core.Deprecated('Use patchObjectRequestDescriptor instead')
 const PatchObjectRequest$json = {
@@ -1122,16 +2358,86 @@ const PatchObjectRequest$json = {
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 3, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'if_generation_match', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'predefined_acl', '3': 8, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'predefinedAcl'},
-    {'1': 'projection', '3': 9, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'metadata', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'metadata'},
-    {'1': 'update_mask', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'common_object_request_params', '3': 13, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 14, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_generation_match',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'predefined_acl',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'predefinedAcl'
+    },
+    {
+      '1': 'projection',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'metadata',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'metadata'
+    },
+    {
+      '1': 'update_mask',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1162,15 +2468,78 @@ const UpdateObjectRequest$json = {
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
     {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
     {'1': 'generation', '3': 3, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'if_generation_match', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationMatch'},
-    {'1': 'if_generation_not_match', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifGenerationNotMatch'},
-    {'1': 'if_metageneration_match', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationMatch'},
-    {'1': 'if_metageneration_not_match', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'ifMetagenerationNotMatch'},
-    {'1': 'predefined_acl', '3': 8, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl', '10': 'predefinedAcl'},
-    {'1': 'projection', '3': 9, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'metadata', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.Object', '10': 'metadata'},
-    {'1': 'common_object_request_params', '3': 12, '4': 1, '5': 11, '6': '.google.storage.v1.CommonObjectRequestParams', '10': 'commonObjectRequestParams'},
-    {'1': 'common_request_params', '3': 13, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'if_generation_match',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationMatch'
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifGenerationNotMatch'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationMatch'
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'ifMetagenerationNotMatch'
+    },
+    {
+      '1': 'predefined_acl',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.PredefinedObjectAcl',
+      '10': 'predefinedAcl'
+    },
+    {
+      '1': 'projection',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'metadata',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'metadata'
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1202,11 +2571,38 @@ const WatchAllObjectsRequest$json = {
     {'1': 'delimiter', '3': 3, '4': 1, '5': 9, '10': 'delimiter'},
     {'1': 'max_results', '3': 4, '4': 1, '5': 5, '10': 'maxResults'},
     {'1': 'prefix', '3': 5, '4': 1, '5': 9, '10': 'prefix'},
-    {'1': 'include_trailing_delimiter', '3': 6, '4': 1, '5': 8, '10': 'includeTrailingDelimiter'},
+    {
+      '1': 'include_trailing_delimiter',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '10': 'includeTrailingDelimiter'
+    },
     {'1': 'page_token', '3': 7, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'projection', '3': 8, '4': 1, '5': 14, '6': '.google.storage.v1.CommonEnums.Projection', '10': 'projection'},
-    {'1': 'channel', '3': 10, '4': 1, '5': 11, '6': '.google.storage.v1.Channel', '10': 'channel'},
-    {'1': 'common_request_params', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'projection',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.CommonEnums.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'channel',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Channel',
+      '10': 'channel'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1227,23 +2623,45 @@ const GetProjectServiceAccountRequest$json = {
   '1': 'GetProjectServiceAccountRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
 /// Descriptor for `GetProjectServiceAccountRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getProjectServiceAccountRequestDescriptor = $convert.base64Decode(
-    'Ch9HZXRQcm9qZWN0U2VydmljZUFjY291bnRSZXF1ZXN0EiIKCnByb2plY3RfaWQYASABKAlCA+'
-    'BBAlIJcHJvamVjdElkEloKFWNvbW1vbl9yZXF1ZXN0X3BhcmFtcxgDIAEoCzImLmdvb2dsZS5z'
-    'dG9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYXJhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
+final $typed_data.Uint8List getProjectServiceAccountRequestDescriptor =
+    $convert.base64Decode(
+        'Ch9HZXRQcm9qZWN0U2VydmljZUFjY291bnRSZXF1ZXN0EiIKCnByb2plY3RfaWQYASABKAlCA+'
+        'BBAlIJcHJvamVjdElkEloKFWNvbW1vbl9yZXF1ZXN0X3BhcmFtcxgDIAEoCzImLmdvb2dsZS5z'
+        'dG9yYWdlLnYxLkNvbW1vblJlcXVlc3RQYXJhbXNSE2NvbW1vblJlcXVlc3RQYXJhbXM=');
 
 @$core.Deprecated('Use createHmacKeyRequestDescriptor instead')
 const CreateHmacKeyRequest$json = {
   '1': 'CreateHmacKeyRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'service_account_email', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'serviceAccountEmail'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'service_account_email',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'serviceAccountEmail'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1258,7 +2676,14 @@ final $typed_data.Uint8List createHmacKeyRequestDescriptor = $convert.base64Deco
 const CreateHmacKeyResponse$json = {
   '1': 'CreateHmacKeyResponse',
   '2': [
-    {'1': 'metadata', '3': 1, '4': 1, '5': 11, '6': '.google.storage.v1.HmacKeyMetadata', '10': 'metadata'},
+    {
+      '1': 'metadata',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.HmacKeyMetadata',
+      '10': 'metadata'
+    },
     {'1': 'secret', '3': 2, '4': 1, '5': 9, '10': 'secret'},
   ],
 };
@@ -1274,7 +2699,14 @@ const DeleteHmacKeyRequest$json = {
   '2': [
     {'1': 'access_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'accessId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1291,7 +2723,14 @@ const GetHmacKeyRequest$json = {
   '2': [
     {'1': 'access_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'accessId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'common_request_params', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1307,11 +2746,24 @@ const ListHmacKeysRequest$json = {
   '1': 'ListHmacKeysRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'service_account_email', '3': 2, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
+    {
+      '1': 'service_account_email',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
     {'1': 'show_deleted_keys', '3': 3, '4': 1, '5': 8, '10': 'showDeletedKeys'},
     {'1': 'max_results', '3': 4, '4': 1, '5': 5, '10': 'maxResults'},
     {'1': 'page_token', '3': 5, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'common_request_params', '3': 6, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'common_request_params',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1329,7 +2781,14 @@ const ListHmacKeysResponse$json = {
   '1': 'ListHmacKeysResponse',
   '2': [
     {'1': 'next_page_token', '3': 1, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'items', '3': 2, '4': 3, '5': 11, '6': '.google.storage.v1.HmacKeyMetadata', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.HmacKeyMetadata',
+      '10': 'items'
+    },
   ],
 };
 
@@ -1345,8 +2804,23 @@ const UpdateHmacKeyRequest$json = {
   '2': [
     {'1': 'access_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'accessId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'metadata', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.HmacKeyMetadata', '8': {}, '10': 'metadata'},
-    {'1': 'common_request_params', '3': 5, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.HmacKeyMetadata',
+      '8': {},
+      '10': 'metadata'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1362,8 +2836,22 @@ final $typed_data.Uint8List updateHmacKeyRequestDescriptor = $convert.base64Deco
 const GetIamPolicyRequest$json = {
   '1': 'GetIamPolicyRequest',
   '2': [
-    {'1': 'iam_request', '3': 1, '4': 1, '5': 11, '6': '.google.iam.v1.GetIamPolicyRequest', '10': 'iamRequest'},
-    {'1': 'common_request_params', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'iam_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1.GetIamPolicyRequest',
+      '10': 'iamRequest'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1378,8 +2866,22 @@ final $typed_data.Uint8List getIamPolicyRequestDescriptor = $convert.base64Decod
 const SetIamPolicyRequest$json = {
   '1': 'SetIamPolicyRequest',
   '2': [
-    {'1': 'iam_request', '3': 1, '4': 1, '5': 11, '6': '.google.iam.v1.SetIamPolicyRequest', '10': 'iamRequest'},
-    {'1': 'common_request_params', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'iam_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1.SetIamPolicyRequest',
+      '10': 'iamRequest'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1394,8 +2896,22 @@ final $typed_data.Uint8List setIamPolicyRequestDescriptor = $convert.base64Decod
 const TestIamPermissionsRequest$json = {
   '1': 'TestIamPermissionsRequest',
   '2': [
-    {'1': 'iam_request', '3': 1, '4': 1, '5': 11, '6': '.google.iam.v1.TestIamPermissionsRequest', '10': 'iamRequest'},
-    {'1': 'common_request_params', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.CommonRequestParams', '10': 'commonRequestParams'},
+    {
+      '1': 'iam_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1.TestIamPermissionsRequest',
+      '10': 'iamRequest'
+    },
+    {
+      '1': 'common_request_params',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.CommonRequestParams',
+      '10': 'commonRequestParams'
+    },
   ],
 };
 
@@ -1410,9 +2926,21 @@ final $typed_data.Uint8List testIamPermissionsRequestDescriptor = $convert.base6
 const CommonObjectRequestParams$json = {
   '1': 'CommonObjectRequestParams',
   '2': [
-    {'1': 'encryption_algorithm', '3': 1, '4': 1, '5': 9, '10': 'encryptionAlgorithm'},
+    {
+      '1': 'encryption_algorithm',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'encryptionAlgorithm'
+    },
     {'1': 'encryption_key', '3': 2, '4': 1, '5': 9, '10': 'encryptionKey'},
-    {'1': 'encryption_key_sha256', '3': 3, '4': 1, '5': 9, '10': 'encryptionKeySha256'},
+    {
+      '1': 'encryption_key_sha256',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'encryptionKeySha256'
+    },
   ],
 };
 
@@ -1429,7 +2957,14 @@ const CommonRequestParams$json = {
   '2': [
     {'1': 'user_project', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'userProject'},
     {'1': 'quota_user', '3': 2, '4': 1, '5': 9, '10': 'quotaUser'},
-    {'1': 'fields', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'fields'},
+    {
+      '1': 'fields',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'fields'
+    },
   ],
 };
 
@@ -1438,4 +2973,3 @@ final $typed_data.Uint8List commonRequestParamsDescriptor = $convert.base64Decod
     'ChNDb21tb25SZXF1ZXN0UGFyYW1zEiYKDHVzZXJfcHJvamVjdBgBIAEoCUID4EECUgt1c2VyUH'
     'JvamVjdBIdCgpxdW90YV91c2VyGAIgASgJUglxdW90YVVzZXISMgoGZmllbGRzGAQgASgLMhou'
     'Z29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza1IGZmllbGRz');
-

@@ -43,27 +43,37 @@ class CheckError extends $pb.GeneratedMessage {
     return $result;
   }
   CheckError._() : super();
-  factory CheckError.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CheckError.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CheckError.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CheckError.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicecontrol.v1'), createEmptyInstance: create)
-    ..e<CheckError_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: CheckError_Code.ERROR_CODE_UNSPECIFIED, valueOf: CheckError_Code.valueOf, enumValues: CheckError_Code.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CheckError',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.servicecontrol.v1'),
+      createEmptyInstance: create)
+    ..e<CheckError_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
+        defaultOrMaker: CheckError_Code.ERROR_CODE_UNSPECIFIED,
+        valueOf: CheckError_Code.valueOf,
+        enumValues: CheckError_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'detail')
-    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $322.Status.create)
+    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'status',
+        subBuilder: $322.Status.create)
     ..aOS(4, _omitFieldNames ? '' : 'subject')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CheckError clone() => CheckError()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CheckError copyWith(void Function(CheckError) updates) => super.copyWith((message) => updates(message as CheckError)) as CheckError;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CheckError copyWith(void Function(CheckError) updates) =>
+      super.copyWith((message) => updates(message as CheckError)) as CheckError;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -72,14 +82,18 @@ class CheckError extends $pb.GeneratedMessage {
   CheckError createEmptyInstance() => create();
   static $pb.PbList<CheckError> createRepeated() => $pb.PbList<CheckError>();
   @$core.pragma('dart2js:noInline')
-  static CheckError getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CheckError>(create);
+  static CheckError getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CheckError>(create);
   static CheckError? _defaultInstance;
 
   /// The error code.
   @$pb.TagNumber(1)
   CheckError_Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(CheckError_Code v) { setField(1, v); }
+  set code(CheckError_Code v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -89,7 +103,10 @@ class CheckError extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get detail => $_getSZ(1);
   @$pb.TagNumber(2)
-  set detail($core.String v) { $_setString(1, v); }
+  set detail($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDetail() => $_has(1);
   @$pb.TagNumber(2)
@@ -101,7 +118,10 @@ class CheckError extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $322.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($322.Status v) { setField(3, v); }
+  set status($322.Status v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -118,13 +138,16 @@ class CheckError extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get subject => $_getSZ(3);
   @$pb.TagNumber(4)
-  set subject($core.String v) { $_setString(3, v); }
+  set subject($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSubject() => $_has(3);
   @$pb.TagNumber(4)
   void clearSubject() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

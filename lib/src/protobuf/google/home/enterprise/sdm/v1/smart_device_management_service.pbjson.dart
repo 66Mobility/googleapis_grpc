@@ -22,8 +22,8 @@ const GetDeviceRequest$json = {
 };
 
 /// Descriptor for `GetDeviceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getDeviceRequestDescriptor = $convert.base64Decode(
-    'ChBHZXREZXZpY2VSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
+final $typed_data.Uint8List getDeviceRequestDescriptor = $convert
+    .base64Decode('ChBHZXREZXZpY2VSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
 
 @$core.Deprecated('Use listDevicesRequestDescriptor instead')
 const ListDevicesRequest$json = {
@@ -46,7 +46,14 @@ final $typed_data.Uint8List listDevicesRequestDescriptor = $convert.base64Decode
 const ListDevicesResponse$json = {
   '1': 'ListDevicesResponse',
   '2': [
-    {'1': 'devices', '3': 1, '4': 3, '5': 11, '6': '.google.home.enterprise.sdm.v1.Device', '10': 'devices'},
+    {
+      '1': 'devices',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.enterprise.sdm.v1.Device',
+      '10': 'devices'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -63,28 +70,44 @@ const ExecuteDeviceCommandRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'command', '3': 2, '4': 1, '5': 9, '10': 'command'},
-    {'1': 'params', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'params'},
+    {
+      '1': 'params',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'params'
+    },
   ],
 };
 
 /// Descriptor for `ExecuteDeviceCommandRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List executeDeviceCommandRequestDescriptor = $convert.base64Decode(
-    'ChtFeGVjdXRlRGV2aWNlQ29tbWFuZFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZRIYCgdjb2'
-    '1tYW5kGAIgASgJUgdjb21tYW5kEi8KBnBhcmFtcxgDIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5T'
-    'dHJ1Y3RSBnBhcmFtcw==');
+final $typed_data.Uint8List executeDeviceCommandRequestDescriptor =
+    $convert.base64Decode(
+        'ChtFeGVjdXRlRGV2aWNlQ29tbWFuZFJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZRIYCgdjb2'
+        '1tYW5kGAIgASgJUgdjb21tYW5kEi8KBnBhcmFtcxgDIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5T'
+        'dHJ1Y3RSBnBhcmFtcw==');
 
 @$core.Deprecated('Use executeDeviceCommandResponseDescriptor instead')
 const ExecuteDeviceCommandResponse$json = {
   '1': 'ExecuteDeviceCommandResponse',
   '2': [
-    {'1': 'results', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'results'},
+    {
+      '1': 'results',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'results'
+    },
   ],
 };
 
 /// Descriptor for `ExecuteDeviceCommandResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List executeDeviceCommandResponseDescriptor = $convert.base64Decode(
-    'ChxFeGVjdXRlRGV2aWNlQ29tbWFuZFJlc3BvbnNlEjEKB3Jlc3VsdHMYASABKAsyFy5nb29nbG'
-    'UucHJvdG9idWYuU3RydWN0UgdyZXN1bHRz');
+final $typed_data.Uint8List executeDeviceCommandResponseDescriptor =
+    $convert.base64Decode(
+        'ChxFeGVjdXRlRGV2aWNlQ29tbWFuZFJlc3BvbnNlEjEKB3Jlc3VsdHMYASABKAsyFy5nb29nbG'
+        'UucHJvdG9idWYuU3RydWN0UgdyZXN1bHRz');
 
 @$core.Deprecated('Use getStructureRequestDescriptor instead')
 const GetStructureRequest$json = {
@@ -95,8 +118,8 @@ const GetStructureRequest$json = {
 };
 
 /// Descriptor for `GetStructureRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getStructureRequestDescriptor = $convert.base64Decode(
-    'ChNHZXRTdHJ1Y3R1cmVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
+final $typed_data.Uint8List getStructureRequestDescriptor = $convert
+    .base64Decode('ChNHZXRTdHJ1Y3R1cmVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
 
 @$core.Deprecated('Use listStructuresRequestDescriptor instead')
 const ListStructuresRequest$json = {
@@ -119,7 +142,14 @@ final $typed_data.Uint8List listStructuresRequestDescriptor = $convert.base64Dec
 const ListStructuresResponse$json = {
   '1': 'ListStructuresResponse',
   '2': [
-    {'1': 'structures', '3': 1, '4': 3, '5': 11, '6': '.google.home.enterprise.sdm.v1.Structure', '10': 'structures'},
+    {
+      '1': 'structures',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.enterprise.sdm.v1.Structure',
+      '10': 'structures'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -139,8 +169,8 @@ const GetRoomRequest$json = {
 };
 
 /// Descriptor for `GetRoomRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getRoomRequestDescriptor = $convert.base64Decode(
-    'Cg5HZXRSb29tUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List getRoomRequestDescriptor =
+    $convert.base64Decode('Cg5HZXRSb29tUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use listRoomsRequestDescriptor instead')
 const ListRoomsRequest$json = {
@@ -161,7 +191,14 @@ final $typed_data.Uint8List listRoomsRequestDescriptor = $convert.base64Decode(
 const ListRoomsResponse$json = {
   '1': 'ListRoomsResponse',
   '2': [
-    {'1': 'rooms', '3': 1, '4': 3, '5': 11, '6': '.google.home.enterprise.sdm.v1.Room', '10': 'rooms'},
+    {
+      '1': 'rooms',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.enterprise.sdm.v1.Room',
+      '10': 'rooms'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -171,4 +208,3 @@ final $typed_data.Uint8List listRoomsResponseDescriptor = $convert.base64Decode(
     'ChFMaXN0Um9vbXNSZXNwb25zZRI5CgVyb29tcxgBIAMoCzIjLmdvb2dsZS5ob21lLmVudGVycH'
     'Jpc2Uuc2RtLnYxLlJvb21SBXJvb21zEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBh'
     'Z2VUb2tlbg==');
-

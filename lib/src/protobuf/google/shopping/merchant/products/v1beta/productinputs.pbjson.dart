@@ -19,13 +19,53 @@ const ProductInput$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'product', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'product'},
-    {'1': 'channel', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.type.Channel.ChannelEnum', '8': {}, '10': 'channel'},
+    {
+      '1': 'channel',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.Channel.ChannelEnum',
+      '8': {},
+      '10': 'channel'
+    },
     {'1': 'offer_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'offerId'},
-    {'1': 'content_language', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'content_language',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
     {'1': 'feed_label', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'feedLabel'},
-    {'1': 'version_number', '3': 7, '4': 1, '5': 3, '8': {}, '9': 0, '10': 'versionNumber', '17': true},
-    {'1': 'attributes', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.Attributes', '8': {}, '10': 'attributes'},
-    {'1': 'custom_attributes', '3': 9, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '8': {}, '10': 'customAttributes'},
+    {
+      '1': 'version_number',
+      '3': 7,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '9': 0,
+      '10': 'versionNumber',
+      '17': true
+    },
+    {
+      '1': 'attributes',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.Attributes',
+      '8': {},
+      '10': 'attributes'
+    },
+    {
+      '1': 'custom_attributes',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '8': {},
+      '10': 'customAttributes'
+    },
   ],
   '7': {},
   '8': [
@@ -53,7 +93,15 @@ const InsertProductInputRequest$json = {
   '1': 'InsertProductInputRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'product_input', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductInput', '8': {}, '10': 'productInput'},
+    {
+      '1': 'product_input',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductInput',
+      '8': {},
+      '10': 'productInput'
+    },
     {'1': 'data_source', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'dataSource'},
   ],
 };
@@ -80,4 +128,3 @@ final $typed_data.Uint8List deleteProductInputRequestDescriptor = $convert.base6
     'ChlEZWxldGVQcm9kdWN0SW5wdXRSZXF1ZXN0EkMKBG5hbWUYASABKAlCL+BBAvpBKQonbWVyY2'
     'hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vUHJvZHVjdElucHV0UgRuYW1lEiQKC2RhdGFfc291cmNl'
     'GAIgASgJQgPgQQJSCmRhdGFTb3VyY2U=');
-

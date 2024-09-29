@@ -17,13 +17,55 @@ import 'dart:typed_data' as $typed_data;
 const StaticMediaPrompt$json = {
   '1': 'StaticMediaPrompt',
   '2': [
-    {'1': 'media_type', '3': 8, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt.MediaType', '10': 'mediaType'},
-    {'1': 'start_offset', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startOffset'},
-    {'1': 'optional_media_controls', '3': 6, '4': 3, '5': 14, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt.OptionalMediaControls', '10': 'optionalMediaControls'},
-    {'1': 'media_objects', '3': 7, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.MediaObject', '10': 'mediaObjects'},
-    {'1': 'repeat_mode', '3': 9, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt.RepeatMode', '10': 'repeatMode'},
+    {
+      '1': 'media_type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt.MediaType',
+      '10': 'mediaType'
+    },
+    {
+      '1': 'start_offset',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startOffset'
+    },
+    {
+      '1': 'optional_media_controls',
+      '3': 6,
+      '4': 3,
+      '5': 14,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt.OptionalMediaControls',
+      '10': 'optionalMediaControls'
+    },
+    {
+      '1': 'media_objects',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.MediaObject',
+      '10': 'mediaObjects'
+    },
+    {
+      '1': 'repeat_mode',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt.RepeatMode',
+      '10': 'repeatMode'
+    },
   ],
-  '4': [StaticMediaPrompt_MediaType$json, StaticMediaPrompt_OptionalMediaControls$json, StaticMediaPrompt_RepeatMode$json],
+  '4': [
+    StaticMediaPrompt_MediaType$json,
+    StaticMediaPrompt_OptionalMediaControls$json,
+    StaticMediaPrompt_RepeatMode$json
+  ],
 };
 
 @$core.Deprecated('Use staticMediaPromptDescriptor instead')
@@ -80,7 +122,14 @@ const MediaObject$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
     {'1': 'url', '3': 3, '4': 1, '5': 9, '10': 'url'},
-    {'1': 'image', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.MediaImage', '10': 'image'},
+    {
+      '1': 'image',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.MediaImage',
+      '10': 'image'
+    },
   ],
 };
 
@@ -95,8 +144,24 @@ final $typed_data.Uint8List mediaObjectDescriptor = $convert.base64Decode(
 const MediaImage$json = {
   '1': 'MediaImage',
   '2': [
-    {'1': 'large', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt', '9': 0, '10': 'large'},
-    {'1': 'icon', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt', '9': 0, '10': 'icon'},
+    {
+      '1': 'large',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt',
+      '9': 0,
+      '10': 'large'
+    },
+    {
+      '1': 'icon',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt',
+      '9': 0,
+      '10': 'icon'
+    },
   ],
   '8': [
     {'1': 'image'},
@@ -109,4 +174,3 @@ final $typed_data.Uint8List mediaImageDescriptor = $convert.base64Decode(
     'VyYWN0aW9ubW9kZWwucHJvbXB0LlN0YXRpY0ltYWdlUHJvbXB0SABSBWxhcmdlElYKBGljb24Y'
     'AiABKAsyQC5nb29nbGUuYWN0aW9ucy5zZGsudjIuaW50ZXJhY3Rpb25tb2RlbC5wcm9tcHQuU3'
     'RhdGljSW1hZ2VQcm9tcHRIAFIEaWNvbkIHCgVpbWFnZQ==');
-

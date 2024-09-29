@@ -17,9 +17,30 @@ import 'dart:typed_data' as $typed_data;
 const ConverseConfig$json = {
   '1': 'ConverseConfig',
   '2': [
-    {'1': 'audio_in_config', '3': 1, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha1.AudioInConfig', '10': 'audioInConfig'},
-    {'1': 'audio_out_config', '3': 2, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha1.AudioOutConfig', '10': 'audioOutConfig'},
-    {'1': 'converse_state', '3': 3, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha1.ConverseState', '10': 'converseState'},
+    {
+      '1': 'audio_in_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha1.AudioInConfig',
+      '10': 'audioInConfig'
+    },
+    {
+      '1': 'audio_out_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha1.AudioOutConfig',
+      '10': 'audioOutConfig'
+    },
+    {
+      '1': 'converse_state',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha1.ConverseState',
+      '10': 'converseState'
+    },
   ],
 };
 
@@ -36,7 +57,14 @@ final $typed_data.Uint8List converseConfigDescriptor = $convert.base64Decode(
 const AudioInConfig$json = {
   '1': 'AudioInConfig',
   '2': [
-    {'1': 'encoding', '3': 1, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha1.AudioInConfig.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha1.AudioInConfig.Encoding',
+      '10': 'encoding'
+    },
     {'1': 'sample_rate_hertz', '3': 2, '4': 1, '5': 5, '10': 'sampleRateHertz'},
   ],
   '4': [AudioInConfig_Encoding$json],
@@ -63,9 +91,22 @@ final $typed_data.Uint8List audioInConfigDescriptor = $convert.base64Decode(
 const AudioOutConfig$json = {
   '1': 'AudioOutConfig',
   '2': [
-    {'1': 'encoding', '3': 1, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha1.AudioOutConfig.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha1.AudioOutConfig.Encoding',
+      '10': 'encoding'
+    },
     {'1': 'sample_rate_hertz', '3': 2, '4': 1, '5': 5, '10': 'sampleRateHertz'},
-    {'1': 'volume_percentage', '3': 3, '4': 1, '5': 5, '10': 'volumePercentage'},
+    {
+      '1': 'volume_percentage',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'volumePercentage'
+    },
   ],
   '4': [AudioOutConfig_Encoding$json],
 };
@@ -93,7 +134,13 @@ final $typed_data.Uint8List audioOutConfigDescriptor = $convert.base64Decode(
 const ConverseState$json = {
   '1': 'ConverseState',
   '2': [
-    {'1': 'conversation_state', '3': 1, '4': 1, '5': 12, '10': 'conversationState'},
+    {
+      '1': 'conversation_state',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '10': 'conversationState'
+    },
   ],
 };
 
@@ -111,18 +158,49 @@ const AudioOut$json = {
 };
 
 /// Descriptor for `AudioOut`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List audioOutDescriptor = $convert.base64Decode(
-    'CghBdWRpb091dBIdCgphdWRpb19kYXRhGAEgASgMUglhdWRpb0RhdGE=');
+final $typed_data.Uint8List audioOutDescriptor = $convert
+    .base64Decode('CghBdWRpb091dBIdCgphdWRpb19kYXRhGAEgASgMUglhdWRpb0RhdGE=');
 
 @$core.Deprecated('Use converseResultDescriptor instead')
 const ConverseResult$json = {
   '1': 'ConverseResult',
   '2': [
-    {'1': 'spoken_request_text', '3': 1, '4': 1, '5': 9, '10': 'spokenRequestText'},
-    {'1': 'spoken_response_text', '3': 2, '4': 1, '5': 9, '10': 'spokenResponseText'},
-    {'1': 'conversation_state', '3': 3, '4': 1, '5': 12, '10': 'conversationState'},
-    {'1': 'microphone_mode', '3': 4, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha1.ConverseResult.MicrophoneMode', '10': 'microphoneMode'},
-    {'1': 'volume_percentage', '3': 5, '4': 1, '5': 5, '10': 'volumePercentage'},
+    {
+      '1': 'spoken_request_text',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'spokenRequestText'
+    },
+    {
+      '1': 'spoken_response_text',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'spokenResponseText'
+    },
+    {
+      '1': 'conversation_state',
+      '3': 3,
+      '4': 1,
+      '5': 12,
+      '10': 'conversationState'
+    },
+    {
+      '1': 'microphone_mode',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha1.ConverseResult.MicrophoneMode',
+      '10': 'microphoneMode'
+    },
+    {
+      '1': 'volume_percentage',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'volumePercentage'
+    },
   ],
   '4': [ConverseResult_MicrophoneMode$json],
 };
@@ -152,7 +230,15 @@ final $typed_data.Uint8List converseResultDescriptor = $convert.base64Decode(
 const ConverseRequest$json = {
   '1': 'ConverseRequest',
   '2': [
-    {'1': 'config', '3': 1, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha1.ConverseConfig', '9': 0, '10': 'config'},
+    {
+      '1': 'config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha1.ConverseConfig',
+      '9': 0,
+      '10': 'config'
+    },
     {'1': 'audio_in', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'audioIn'},
   ],
   '8': [
@@ -170,10 +256,42 @@ final $typed_data.Uint8List converseRequestDescriptor = $convert.base64Decode(
 const ConverseResponse$json = {
   '1': 'ConverseResponse',
   '2': [
-    {'1': 'error', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '9': 0, '10': 'error'},
-    {'1': 'event_type', '3': 2, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha1.ConverseResponse.EventType', '9': 0, '10': 'eventType'},
-    {'1': 'audio_out', '3': 3, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha1.AudioOut', '9': 0, '10': 'audioOut'},
-    {'1': 'result', '3': 5, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha1.ConverseResult', '9': 0, '10': 'result'},
+    {
+      '1': 'error',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '9': 0,
+      '10': 'error'
+    },
+    {
+      '1': 'event_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha1.ConverseResponse.EventType',
+      '9': 0,
+      '10': 'eventType'
+    },
+    {
+      '1': 'audio_out',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha1.AudioOut',
+      '9': 0,
+      '10': 'audioOut'
+    },
+    {
+      '1': 'result',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha1.ConverseResult',
+      '9': 0,
+      '10': 'result'
+    },
   ],
   '4': [ConverseResponse_EventType$json],
   '8': [
@@ -200,4 +318,3 @@ final $typed_data.Uint8List converseResponseDescriptor = $convert.base64Decode(
     'RlZC52MWFscGhhMS5Db252ZXJzZVJlc3VsdEgAUgZyZXN1bHQiPQoJRXZlbnRUeXBlEhoKFkVW'
     'RU5UX1RZUEVfVU5TUEVDSUZJRUQQABIUChBFTkRfT0ZfVVRURVJBTkNFEAFCEwoRY29udmVyc2'
     'VfcmVzcG9uc2U=');
-

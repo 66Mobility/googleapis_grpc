@@ -19,34 +19,43 @@ import 'package:protobuf/protobuf.dart' as $pb;
 class SingleViewGroup extends $pb.GeneratedMessage {
   factory SingleViewGroup() => create();
   SingleViewGroup._() : super();
-  factory SingleViewGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SingleViewGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SingleViewGroup.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SingleViewGroup.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SingleViewGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SingleViewGroup',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SingleViewGroup clone() => SingleViewGroup()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SingleViewGroup copyWith(void Function(SingleViewGroup) updates) => super.copyWith((message) => updates(message as SingleViewGroup)) as SingleViewGroup;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SingleViewGroup copyWith(void Function(SingleViewGroup) updates) =>
+      super.copyWith((message) => updates(message as SingleViewGroup))
+          as SingleViewGroup;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SingleViewGroup create() => SingleViewGroup._();
   SingleViewGroup createEmptyInstance() => create();
-  static $pb.PbList<SingleViewGroup> createRepeated() => $pb.PbList<SingleViewGroup>();
+  static $pb.PbList<SingleViewGroup> createRepeated() =>
+      $pb.PbList<SingleViewGroup>();
   @$core.pragma('dart2js:noInline')
-  static SingleViewGroup getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SingleViewGroup>(create);
+  static SingleViewGroup getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SingleViewGroup>(create);
   static SingleViewGroup? _defaultInstance;
 }
 
-
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,12 +17,49 @@ import 'dart:typed_data' as $typed_data;
 const Write$json = {
   '1': 'Write',
   '2': [
-    {'1': 'update', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.v1.Document', '9': 0, '10': 'update'},
+    {
+      '1': 'update',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.Document',
+      '9': 0,
+      '10': 'update'
+    },
     {'1': 'delete', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'delete'},
-    {'1': 'transform', '3': 6, '4': 1, '5': 11, '6': '.google.firestore.v1.DocumentTransform', '9': 0, '10': 'transform'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.firestore.v1.DocumentMask', '10': 'updateMask'},
-    {'1': 'update_transforms', '3': 7, '4': 3, '5': 11, '6': '.google.firestore.v1.DocumentTransform.FieldTransform', '10': 'updateTransforms'},
-    {'1': 'current_document', '3': 4, '4': 1, '5': 11, '6': '.google.firestore.v1.Precondition', '10': 'currentDocument'},
+    {
+      '1': 'transform',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.DocumentTransform',
+      '9': 0,
+      '10': 'transform'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.DocumentMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'update_transforms',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.v1.DocumentTransform.FieldTransform',
+      '10': 'updateTransforms'
+    },
+    {
+      '1': 'current_document',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.Precondition',
+      '10': 'currentDocument'
+    },
   ],
   '8': [
     {'1': 'operation'},
@@ -45,7 +82,14 @@ const DocumentTransform$json = {
   '1': 'DocumentTransform',
   '2': [
     {'1': 'document', '3': 1, '4': 1, '5': 9, '10': 'document'},
-    {'1': 'field_transforms', '3': 2, '4': 3, '5': 11, '6': '.google.firestore.v1.DocumentTransform.FieldTransform', '10': 'fieldTransforms'},
+    {
+      '1': 'field_transforms',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.v1.DocumentTransform.FieldTransform',
+      '10': 'fieldTransforms'
+    },
   ],
   '3': [DocumentTransform_FieldTransform$json],
 };
@@ -55,12 +99,60 @@ const DocumentTransform_FieldTransform$json = {
   '1': 'FieldTransform',
   '2': [
     {'1': 'field_path', '3': 1, '4': 1, '5': 9, '10': 'fieldPath'},
-    {'1': 'set_to_server_value', '3': 2, '4': 1, '5': 14, '6': '.google.firestore.v1.DocumentTransform.FieldTransform.ServerValue', '9': 0, '10': 'setToServerValue'},
-    {'1': 'increment', '3': 3, '4': 1, '5': 11, '6': '.google.firestore.v1.Value', '9': 0, '10': 'increment'},
-    {'1': 'maximum', '3': 4, '4': 1, '5': 11, '6': '.google.firestore.v1.Value', '9': 0, '10': 'maximum'},
-    {'1': 'minimum', '3': 5, '4': 1, '5': 11, '6': '.google.firestore.v1.Value', '9': 0, '10': 'minimum'},
-    {'1': 'append_missing_elements', '3': 6, '4': 1, '5': 11, '6': '.google.firestore.v1.ArrayValue', '9': 0, '10': 'appendMissingElements'},
-    {'1': 'remove_all_from_array', '3': 7, '4': 1, '5': 11, '6': '.google.firestore.v1.ArrayValue', '9': 0, '10': 'removeAllFromArray'},
+    {
+      '1': 'set_to_server_value',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.v1.DocumentTransform.FieldTransform.ServerValue',
+      '9': 0,
+      '10': 'setToServerValue'
+    },
+    {
+      '1': 'increment',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.Value',
+      '9': 0,
+      '10': 'increment'
+    },
+    {
+      '1': 'maximum',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.Value',
+      '9': 0,
+      '10': 'maximum'
+    },
+    {
+      '1': 'minimum',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.Value',
+      '9': 0,
+      '10': 'minimum'
+    },
+    {
+      '1': 'append_missing_elements',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.ArrayValue',
+      '9': 0,
+      '10': 'appendMissingElements'
+    },
+    {
+      '1': 'remove_all_from_array',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.ArrayValue',
+      '9': 0,
+      '10': 'removeAllFromArray'
+    },
   ],
   '4': [DocumentTransform_FieldTransform_ServerValue$json],
   '8': [
@@ -98,8 +190,22 @@ final $typed_data.Uint8List documentTransformDescriptor = $convert.base64Decode(
 const WriteResult$json = {
   '1': 'WriteResult',
   '2': [
-    {'1': 'update_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'transform_results', '3': 2, '4': 3, '5': 11, '6': '.google.firestore.v1.Value', '10': 'transformResults'},
+    {
+      '1': 'update_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'transform_results',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.v1.Value',
+      '10': 'transformResults'
+    },
   ],
 };
 
@@ -113,9 +219,22 @@ final $typed_data.Uint8List writeResultDescriptor = $convert.base64Decode(
 const DocumentChange$json = {
   '1': 'DocumentChange',
   '2': [
-    {'1': 'document', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.v1.Document', '10': 'document'},
+    {
+      '1': 'document',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.Document',
+      '10': 'document'
+    },
     {'1': 'target_ids', '3': 5, '4': 3, '5': 5, '10': 'targetIds'},
-    {'1': 'removed_target_ids', '3': 6, '4': 3, '5': 5, '10': 'removedTargetIds'},
+    {
+      '1': 'removed_target_ids',
+      '3': 6,
+      '4': 3,
+      '5': 5,
+      '10': 'removedTargetIds'
+    },
   ],
 };
 
@@ -130,8 +249,21 @@ const DocumentDelete$json = {
   '1': 'DocumentDelete',
   '2': [
     {'1': 'document', '3': 1, '4': 1, '5': 9, '10': 'document'},
-    {'1': 'removed_target_ids', '3': 6, '4': 3, '5': 5, '10': 'removedTargetIds'},
-    {'1': 'read_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'removed_target_ids',
+      '3': 6,
+      '4': 3,
+      '5': 5,
+      '10': 'removedTargetIds'
+    },
+    {
+      '1': 'read_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
   ],
 };
 
@@ -146,8 +278,21 @@ const DocumentRemove$json = {
   '1': 'DocumentRemove',
   '2': [
     {'1': 'document', '3': 1, '4': 1, '5': 9, '10': 'document'},
-    {'1': 'removed_target_ids', '3': 2, '4': 3, '5': 5, '10': 'removedTargetIds'},
-    {'1': 'read_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'removed_target_ids',
+      '3': 2,
+      '4': 3,
+      '5': 5,
+      '10': 'removedTargetIds'
+    },
+    {
+      '1': 'read_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
   ],
 };
 
@@ -163,7 +308,14 @@ const ExistenceFilter$json = {
   '2': [
     {'1': 'target_id', '3': 1, '4': 1, '5': 5, '10': 'targetId'},
     {'1': 'count', '3': 2, '4': 1, '5': 5, '10': 'count'},
-    {'1': 'unchanged_names', '3': 3, '4': 1, '5': 11, '6': '.google.firestore.v1.BloomFilter', '10': 'unchangedNames'},
+    {
+      '1': 'unchanged_names',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.BloomFilter',
+      '10': 'unchangedNames'
+    },
   ],
 };
 
@@ -172,4 +324,3 @@ final $typed_data.Uint8List existenceFilterDescriptor = $convert.base64Decode(
     'Cg9FeGlzdGVuY2VGaWx0ZXISGwoJdGFyZ2V0X2lkGAEgASgFUgh0YXJnZXRJZBIUCgVjb3VudB'
     'gCIAEoBVIFY291bnQSSQoPdW5jaGFuZ2VkX25hbWVzGAMgASgLMiAuZ29vZ2xlLmZpcmVzdG9y'
     'ZS52MS5CbG9vbUZpbHRlclIOdW5jaGFuZ2VkTmFtZXM=');
-

@@ -18,7 +18,15 @@ const WriteDraftRequest$json = {
   '1': 'WriteDraftRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'files', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Files', '8': {}, '10': 'files'},
+    {
+      '1': 'files',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Files',
+      '8': {},
+      '10': 'files'
+    },
   ],
 };
 
@@ -33,7 +41,14 @@ const Draft$json = {
   '1': 'Draft',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'validation_results', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.ValidationResults', '10': 'validationResults'},
+    {
+      '1': 'validation_results',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ValidationResults',
+      '10': 'validationResults'
+    },
   ],
   '7': {},
 };
@@ -50,12 +65,49 @@ const WritePreviewRequest$json = {
   '1': 'WritePreviewRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'files', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Files', '9': 0, '10': 'files'},
-    {'1': 'draft', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.WritePreviewRequest.ContentFromDraft', '9': 0, '10': 'draft'},
-    {'1': 'submitted_version', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.WritePreviewRequest.ContentFromSubmittedVersion', '9': 0, '10': 'submittedVersion'},
-    {'1': 'preview_settings', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.WritePreviewRequest.PreviewSettings', '8': {}, '10': 'previewSettings'},
+    {
+      '1': 'files',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Files',
+      '9': 0,
+      '10': 'files'
+    },
+    {
+      '1': 'draft',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.WritePreviewRequest.ContentFromDraft',
+      '9': 0,
+      '10': 'draft'
+    },
+    {
+      '1': 'submitted_version',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.WritePreviewRequest.ContentFromSubmittedVersion',
+      '9': 0,
+      '10': 'submittedVersion'
+    },
+    {
+      '1': 'preview_settings',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.WritePreviewRequest.PreviewSettings',
+      '8': {},
+      '10': 'previewSettings'
+    },
   ],
-  '3': [WritePreviewRequest_ContentFromDraft$json, WritePreviewRequest_ContentFromSubmittedVersion$json, WritePreviewRequest_PreviewSettings$json],
+  '3': [
+    WritePreviewRequest_ContentFromDraft$json,
+    WritePreviewRequest_ContentFromSubmittedVersion$json,
+    WritePreviewRequest_PreviewSettings$json
+  ],
   '8': [
     {'1': 'source'},
   ],
@@ -78,7 +130,14 @@ const WritePreviewRequest_ContentFromSubmittedVersion$json = {
 const WritePreviewRequest_PreviewSettings$json = {
   '1': 'PreviewSettings',
   '2': [
-    {'1': 'sandbox', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'sandbox'},
+    {
+      '1': 'sandbox',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'sandbox'
+    },
   ],
 };
 
@@ -102,7 +161,14 @@ const Preview$json = {
   '1': 'Preview',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'validation_results', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.ValidationResults', '10': 'validationResults'},
+    {
+      '1': 'validation_results',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ValidationResults',
+      '10': 'validationResults'
+    },
     {'1': 'simulator_url', '3': 3, '4': 1, '5': 9, '10': 'simulatorUrl'},
   ],
   '7': {},
@@ -121,8 +187,23 @@ const CreateVersionRequest$json = {
   '1': 'CreateVersionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'files', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Files', '8': {}, '10': 'files'},
-    {'1': 'release_channel', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'releaseChannel'},
+    {
+      '1': 'files',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Files',
+      '8': {},
+      '10': 'files'
+    },
+    {
+      '1': 'release_channel',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'releaseChannel'
+    },
   ],
 };
 
@@ -138,7 +219,14 @@ const ReadDraftRequest$json = {
   '1': 'ReadDraftRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'client_secret_encryption_key_version', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'clientSecretEncryptionKeyVersion'},
+    {
+      '1': 'client_secret_encryption_key_version',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'clientSecretEncryptionKeyVersion'
+    },
   ],
 };
 
@@ -152,7 +240,14 @@ final $typed_data.Uint8List readDraftRequestDescriptor = $convert.base64Decode(
 const ReadDraftResponse$json = {
   '1': 'ReadDraftResponse',
   '2': [
-    {'1': 'files', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Files', '10': 'files'},
+    {
+      '1': 'files',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Files',
+      '10': 'files'
+    },
   ],
 };
 
@@ -166,7 +261,14 @@ const ReadVersionRequest$json = {
   '1': 'ReadVersionRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'client_secret_encryption_key_version', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'clientSecretEncryptionKeyVersion'},
+    {
+      '1': 'client_secret_encryption_key_version',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'clientSecretEncryptionKeyVersion'
+    },
   ],
 };
 
@@ -180,7 +282,14 @@ final $typed_data.Uint8List readVersionRequestDescriptor = $convert.base64Decode
 const ReadVersionResponse$json = {
   '1': 'ReadVersionResponse',
   '2': [
-    {'1': 'files', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Files', '10': 'files'},
+    {
+      '1': 'files',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Files',
+      '10': 'files'
+    },
   ],
 };
 
@@ -193,7 +302,14 @@ final $typed_data.Uint8List readVersionResponseDescriptor = $convert.base64Decod
 const EncryptSecretRequest$json = {
   '1': 'EncryptSecretRequest',
   '2': [
-    {'1': 'client_secret', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'clientSecret'},
+    {
+      '1': 'client_secret',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'clientSecret'
+    },
   ],
 };
 
@@ -206,7 +322,14 @@ final $typed_data.Uint8List encryptSecretRequestDescriptor = $convert.base64Deco
 const EncryptSecretResponse$json = {
   '1': 'EncryptSecretResponse',
   '2': [
-    {'1': 'account_linking_secret', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.AccountLinkingSecret', '10': 'accountLinkingSecret'},
+    {
+      '1': 'account_linking_secret',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.AccountLinkingSecret',
+      '10': 'accountLinkingSecret'
+    },
   ],
 };
 
@@ -220,7 +343,14 @@ final $typed_data.Uint8List encryptSecretResponseDescriptor = $convert.base64Dec
 const DecryptSecretRequest$json = {
   '1': 'DecryptSecretRequest',
   '2': [
-    {'1': 'encrypted_client_secret', '3': 1, '4': 1, '5': 12, '8': {}, '10': 'encryptedClientSecret'},
+    {
+      '1': 'encrypted_client_secret',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '8': {},
+      '10': 'encryptedClientSecret'
+    },
   ],
 };
 
@@ -252,24 +382,33 @@ const ListSampleProjectsRequest$json = {
 };
 
 /// Descriptor for `ListSampleProjectsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listSampleProjectsRequestDescriptor = $convert.base64Decode(
-    'ChlMaXN0U2FtcGxlUHJvamVjdHNSZXF1ZXN0EiAKCXBhZ2Vfc2l6ZRgBIAEoBUID4EEBUghwYW'
-    'dlU2l6ZRIiCgpwYWdlX3Rva2VuGAIgASgJQgPgQQFSCXBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listSampleProjectsRequestDescriptor =
+    $convert.base64Decode(
+        'ChlMaXN0U2FtcGxlUHJvamVjdHNSZXF1ZXN0EiAKCXBhZ2Vfc2l6ZRgBIAEoBUID4EEBUghwYW'
+        'dlU2l6ZRIiCgpwYWdlX3Rva2VuGAIgASgJQgPgQQFSCXBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use listSampleProjectsResponseDescriptor instead')
 const ListSampleProjectsResponse$json = {
   '1': 'ListSampleProjectsResponse',
   '2': [
-    {'1': 'sample_projects', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.SampleProject', '10': 'sampleProjects'},
+    {
+      '1': 'sample_projects',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.SampleProject',
+      '10': 'sampleProjects'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListSampleProjectsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listSampleProjectsResponseDescriptor = $convert.base64Decode(
-    'ChpMaXN0U2FtcGxlUHJvamVjdHNSZXNwb25zZRJNCg9zYW1wbGVfcHJvamVjdHMYASADKAsyJC'
-    '5nb29nbGUuYWN0aW9ucy5zZGsudjIuU2FtcGxlUHJvamVjdFIOc2FtcGxlUHJvamVjdHMSJgoP'
-    'bmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listSampleProjectsResponseDescriptor =
+    $convert.base64Decode(
+        'ChpMaXN0U2FtcGxlUHJvamVjdHNSZXNwb25zZRJNCg9zYW1wbGVfcHJvamVjdHMYASADKAsyJC'
+        '5nb29nbGUuYWN0aW9ucy5zZGsudjIuU2FtcGxlUHJvamVjdFIOc2FtcGxlUHJvamVjdHMSJgoP'
+        'bmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use sampleProjectDescriptor instead')
 const SampleProject$json = {
@@ -300,25 +439,34 @@ const ListReleaseChannelsRequest$json = {
 };
 
 /// Descriptor for `ListReleaseChannelsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listReleaseChannelsRequestDescriptor = $convert.base64Decode(
-    'ChpMaXN0UmVsZWFzZUNoYW5uZWxzUmVxdWVzdBJFCgZwYXJlbnQYASABKAlCLeBBAvpBJxIlYW'
-    'N0aW9ucy5nb29nbGVhcGlzLmNvbS9SZWxlYXNlQ2hhbm5lbFIGcGFyZW50EhsKCXBhZ2Vfc2l6'
-    'ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZVRva2Vu');
+final $typed_data.Uint8List listReleaseChannelsRequestDescriptor =
+    $convert.base64Decode(
+        'ChpMaXN0UmVsZWFzZUNoYW5uZWxzUmVxdWVzdBJFCgZwYXJlbnQYASABKAlCLeBBAvpBJxIlYW'
+        'N0aW9ucy5nb29nbGVhcGlzLmNvbS9SZWxlYXNlQ2hhbm5lbFIGcGFyZW50EhsKCXBhZ2Vfc2l6'
+        'ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZVRva2Vu');
 
 @$core.Deprecated('Use listReleaseChannelsResponseDescriptor instead')
 const ListReleaseChannelsResponse$json = {
   '1': 'ListReleaseChannelsResponse',
   '2': [
-    {'1': 'release_channels', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.ReleaseChannel', '10': 'releaseChannels'},
+    {
+      '1': 'release_channels',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ReleaseChannel',
+      '10': 'releaseChannels'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListReleaseChannelsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listReleaseChannelsResponseDescriptor = $convert.base64Decode(
-    'ChtMaXN0UmVsZWFzZUNoYW5uZWxzUmVzcG9uc2USUAoQcmVsZWFzZV9jaGFubmVscxgBIAMoCz'
-    'IlLmdvb2dsZS5hY3Rpb25zLnNkay52Mi5SZWxlYXNlQ2hhbm5lbFIPcmVsZWFzZUNoYW5uZWxz'
-    'EiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listReleaseChannelsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtMaXN0UmVsZWFzZUNoYW5uZWxzUmVzcG9uc2USUAoQcmVsZWFzZV9jaGFubmVscxgBIAMoCz'
+        'IlLmdvb2dsZS5hY3Rpb25zLnNkay52Mi5SZWxlYXNlQ2hhbm5lbFIPcmVsZWFzZUNoYW5uZWxz'
+        'EiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use listVersionsRequestDescriptor instead')
 const ListVersionsRequest$json = {
@@ -340,7 +488,14 @@ final $typed_data.Uint8List listVersionsRequestDescriptor = $convert.base64Decod
 const ListVersionsResponse$json = {
   '1': 'ListVersionsResponse',
   '2': [
-    {'1': 'versions', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.Version', '10': 'versions'},
+    {
+      '1': 'versions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Version',
+      '10': 'versions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -350,4 +505,3 @@ final $typed_data.Uint8List listVersionsResponseDescriptor = $convert.base64Deco
     'ChRMaXN0VmVyc2lvbnNSZXNwb25zZRI6Cgh2ZXJzaW9ucxgBIAMoCzIeLmdvb2dsZS5hY3Rpb2'
     '5zLnNkay52Mi5WZXJzaW9uUgh2ZXJzaW9ucxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5l'
     'eHRQYWdlVG9rZW4=');
-

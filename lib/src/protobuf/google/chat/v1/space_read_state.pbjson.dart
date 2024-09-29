@@ -18,7 +18,15 @@ const SpaceReadState$json = {
   '1': 'SpaceReadState',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'last_read_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'lastReadTime'},
+    {
+      '1': 'last_read_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'lastReadTime'
+    },
   ],
   '7': {},
 };
@@ -39,16 +47,33 @@ const GetSpaceReadStateRequest$json = {
 };
 
 /// Descriptor for `GetSpaceReadStateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getSpaceReadStateRequestDescriptor = $convert.base64Decode(
-    'ChhHZXRTcGFjZVJlYWRTdGF0ZVJlcXVlc3QSPgoEbmFtZRgBIAEoCUIq4EEC+kEkCiJjaGF0Lm'
-    'dvb2dsZWFwaXMuY29tL1NwYWNlUmVhZFN0YXRlUgRuYW1l');
+final $typed_data.Uint8List getSpaceReadStateRequestDescriptor =
+    $convert.base64Decode(
+        'ChhHZXRTcGFjZVJlYWRTdGF0ZVJlcXVlc3QSPgoEbmFtZRgBIAEoCUIq4EEC+kEkCiJjaGF0Lm'
+        'dvb2dsZWFwaXMuY29tL1NwYWNlUmVhZFN0YXRlUgRuYW1l');
 
 @$core.Deprecated('Use updateSpaceReadStateRequestDescriptor instead')
 const UpdateSpaceReadStateRequest$json = {
   '1': 'UpdateSpaceReadStateRequest',
   '2': [
-    {'1': 'space_read_state', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.SpaceReadState', '8': {}, '10': 'spaceReadState'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'space_read_state',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.SpaceReadState',
+      '8': {},
+      '10': 'spaceReadState'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -58,4 +83,3 @@ final $typed_data.Uint8List updateSpaceReadStateRequestDescriptor = $convert.bas
     'IeLmdvb2dsZS5jaGF0LnYxLlNwYWNlUmVhZFN0YXRlQgPgQQJSDnNwYWNlUmVhZFN0YXRlEkAK'
     'C3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cG'
     'RhdGVNYXNr');
-

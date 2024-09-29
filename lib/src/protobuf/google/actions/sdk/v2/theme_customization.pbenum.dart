@@ -15,21 +15,28 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Describes how the borders of images should be rendered.
 class ThemeCustomization_ImageCornerStyle extends $pb.ProtobufEnum {
-  static const ThemeCustomization_ImageCornerStyle IMAGE_CORNER_STYLE_UNSPECIFIED = ThemeCustomization_ImageCornerStyle._(0, _omitEnumNames ? '' : 'IMAGE_CORNER_STYLE_UNSPECIFIED');
-  static const ThemeCustomization_ImageCornerStyle CURVED = ThemeCustomization_ImageCornerStyle._(1, _omitEnumNames ? '' : 'CURVED');
-  static const ThemeCustomization_ImageCornerStyle ANGLED = ThemeCustomization_ImageCornerStyle._(2, _omitEnumNames ? '' : 'ANGLED');
+  static const ThemeCustomization_ImageCornerStyle
+      IMAGE_CORNER_STYLE_UNSPECIFIED = ThemeCustomization_ImageCornerStyle._(
+          0, _omitEnumNames ? '' : 'IMAGE_CORNER_STYLE_UNSPECIFIED');
+  static const ThemeCustomization_ImageCornerStyle CURVED =
+      ThemeCustomization_ImageCornerStyle._(1, _omitEnumNames ? '' : 'CURVED');
+  static const ThemeCustomization_ImageCornerStyle ANGLED =
+      ThemeCustomization_ImageCornerStyle._(2, _omitEnumNames ? '' : 'ANGLED');
 
-  static const $core.List<ThemeCustomization_ImageCornerStyle> values = <ThemeCustomization_ImageCornerStyle> [
+  static const $core.List<ThemeCustomization_ImageCornerStyle> values =
+      <ThemeCustomization_ImageCornerStyle>[
     IMAGE_CORNER_STYLE_UNSPECIFIED,
     CURVED,
     ANGLED,
   ];
 
-  static final $core.Map<$core.int, ThemeCustomization_ImageCornerStyle> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static ThemeCustomization_ImageCornerStyle? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, ThemeCustomization_ImageCornerStyle>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static ThemeCustomization_ImageCornerStyle? valueOf($core.int value) =>
+      _byValue[value];
 
-  const ThemeCustomization_ImageCornerStyle._($core.int v, $core.String n) : super(v, n);
+  const ThemeCustomization_ImageCornerStyle._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

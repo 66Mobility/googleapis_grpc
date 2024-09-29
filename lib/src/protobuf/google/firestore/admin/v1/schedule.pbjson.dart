@@ -18,11 +18,50 @@ const BackupSchedule$json = {
   '1': 'BackupSchedule',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'retention', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'retention'},
-    {'1': 'daily_recurrence', '3': 7, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.DailyRecurrence', '9': 0, '10': 'dailyRecurrence'},
-    {'1': 'weekly_recurrence', '3': 8, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.WeeklyRecurrence', '9': 0, '10': 'weeklyRecurrence'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'retention',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'retention'
+    },
+    {
+      '1': 'daily_recurrence',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.DailyRecurrence',
+      '9': 0,
+      '10': 'dailyRecurrence'
+    },
+    {
+      '1': 'weekly_recurrence',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.WeeklyRecurrence',
+      '9': 0,
+      '10': 'weeklyRecurrence'
+    },
   ],
   '7': {},
   '8': [
@@ -49,14 +88,21 @@ const DailyRecurrence$json = {
 };
 
 /// Descriptor for `DailyRecurrence`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dailyRecurrenceDescriptor = $convert.base64Decode(
-    'Cg9EYWlseVJlY3VycmVuY2U=');
+final $typed_data.Uint8List dailyRecurrenceDescriptor =
+    $convert.base64Decode('Cg9EYWlseVJlY3VycmVuY2U=');
 
 @$core.Deprecated('Use weeklyRecurrenceDescriptor instead')
 const WeeklyRecurrence$json = {
   '1': 'WeeklyRecurrence',
   '2': [
-    {'1': 'day', '3': 2, '4': 1, '5': 14, '6': '.google.type.DayOfWeek', '10': 'day'},
+    {
+      '1': 'day',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.type.DayOfWeek',
+      '10': 'day'
+    },
   ],
 };
 
@@ -64,4 +110,3 @@ const WeeklyRecurrence$json = {
 final $typed_data.Uint8List weeklyRecurrenceDescriptor = $convert.base64Decode(
     'ChBXZWVrbHlSZWN1cnJlbmNlEigKA2RheRgCIAEoDjIWLmdvb2dsZS50eXBlLkRheU9mV2Vla1'
     'IDZGF5');
-

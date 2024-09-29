@@ -32,7 +32,15 @@ const CreateRegionRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'region_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'regionId'},
-    {'1': 'region', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Region', '8': {}, '10': 'region'},
+    {
+      '1': 'region',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Region',
+      '8': {},
+      '10': 'region'
+    },
   ],
 };
 
@@ -47,8 +55,24 @@ final $typed_data.Uint8List createRegionRequestDescriptor = $convert.base64Decod
 const UpdateRegionRequest$json = {
   '1': 'UpdateRegionRequest',
   '2': [
-    {'1': 'region', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Region', '8': {}, '10': 'region'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'region',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Region',
+      '8': {},
+      '10': 'region'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -92,7 +116,14 @@ final $typed_data.Uint8List listRegionsRequestDescriptor = $convert.base64Decode
 const ListRegionsResponse$json = {
   '1': 'ListRegionsResponse',
   '2': [
-    {'1': 'regions', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Region', '10': 'regions'},
+    {
+      '1': 'regions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Region',
+      '10': 'regions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -108,11 +139,52 @@ const Region$json = {
   '1': 'Region',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'displayName', '17': true},
-    {'1': 'postal_code_area', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Region.PostalCodeArea', '8': {}, '10': 'postalCodeArea'},
-    {'1': 'geotarget_area', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Region.GeoTargetArea', '8': {}, '10': 'geotargetArea'},
-    {'1': 'regional_inventory_eligible', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '8': {}, '10': 'regionalInventoryEligible'},
-    {'1': 'shipping_eligible', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '8': {}, '10': 'shippingEligible'},
+    {
+      '1': 'display_name',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'displayName',
+      '17': true
+    },
+    {
+      '1': 'postal_code_area',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Region.PostalCodeArea',
+      '8': {},
+      '10': 'postalCodeArea'
+    },
+    {
+      '1': 'geotarget_area',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Region.GeoTargetArea',
+      '8': {},
+      '10': 'geotargetArea'
+    },
+    {
+      '1': 'regional_inventory_eligible',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '8': {},
+      '10': 'regionalInventoryEligible'
+    },
+    {
+      '1': 'shipping_eligible',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '8': {},
+      '10': 'shippingEligible'
+    },
   ],
   '3': [Region_PostalCodeArea$json, Region_GeoTargetArea$json],
   '7': {},
@@ -126,7 +198,16 @@ const Region_PostalCodeArea$json = {
   '1': 'PostalCodeArea',
   '2': [
     {'1': 'region_code', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'regionCode'},
-    {'1': 'postal_codes', '3': 2, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Region.PostalCodeArea.PostalCodeRange', '8': {}, '10': 'postalCodes'},
+    {
+      '1': 'postal_codes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.Region.PostalCodeArea.PostalCodeRange',
+      '8': {},
+      '10': 'postalCodes'
+    },
   ],
   '3': [Region_PostalCodeArea_PostalCodeRange$json],
 };
@@ -144,7 +225,14 @@ const Region_PostalCodeArea_PostalCodeRange$json = {
 const Region_GeoTargetArea$json = {
   '1': 'GeoTargetArea',
   '2': [
-    {'1': 'geotarget_criteria_ids', '3': 1, '4': 3, '5': 3, '8': {}, '10': 'geotargetCriteriaIds'},
+    {
+      '1': 'geotarget_criteria_ids',
+      '3': 1,
+      '4': 3,
+      '5': 3,
+      '8': {},
+      '10': 'geotargetCriteriaIds'
+    },
   ],
 };
 
@@ -167,4 +255,3 @@ final $typed_data.Uint8List regionDescriptor = $convert.base64Decode(
     'ZW90YXJnZXRDcml0ZXJpYUlkczpc6kFZCiFtZXJjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9SZW'
     'dpb24SI2FjY291bnRzL3thY2NvdW50fS9yZWdpb25zL3tyZWdpb259KgdyZWdpb25zMgZyZWdp'
     'b25CDwoNX2Rpc3BsYXlfbmFtZQ==');
-

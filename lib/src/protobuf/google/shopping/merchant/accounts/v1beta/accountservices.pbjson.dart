@@ -19,6 +19,5 @@ const AccountAggregation$json = {
 };
 
 /// Descriptor for `AccountAggregation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List accountAggregationDescriptor = $convert.base64Decode(
-    'ChJBY2NvdW50QWdncmVnYXRpb24=');
-
+final $typed_data.Uint8List accountAggregationDescriptor =
+    $convert.base64Decode('ChJBY2NvdW50QWdncmVnYXRpb24=');

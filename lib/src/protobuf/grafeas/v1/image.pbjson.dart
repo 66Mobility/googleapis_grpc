@@ -47,7 +47,14 @@ const ImageNote$json = {
   '1': 'ImageNote',
   '2': [
     {'1': 'resource_url', '3': 1, '4': 1, '5': 9, '10': 'resourceUrl'},
-    {'1': 'fingerprint', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Fingerprint', '10': 'fingerprint'},
+    {
+      '1': 'fingerprint',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Fingerprint',
+      '10': 'fingerprint'
+    },
   ],
 };
 
@@ -60,9 +67,23 @@ final $typed_data.Uint8List imageNoteDescriptor = $convert.base64Decode(
 const ImageOccurrence$json = {
   '1': 'ImageOccurrence',
   '2': [
-    {'1': 'fingerprint', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.Fingerprint', '10': 'fingerprint'},
+    {
+      '1': 'fingerprint',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Fingerprint',
+      '10': 'fingerprint'
+    },
     {'1': 'distance', '3': 2, '4': 1, '5': 5, '10': 'distance'},
-    {'1': 'layer_info', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.Layer', '10': 'layerInfo'},
+    {
+      '1': 'layer_info',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Layer',
+      '10': 'layerInfo'
+    },
     {'1': 'base_resource_url', '3': 4, '4': 1, '5': 9, '10': 'baseResourceUrl'},
   ],
 };
@@ -73,4 +94,3 @@ final $typed_data.Uint8List imageOccurrenceDescriptor = $convert.base64Decode(
     'dlcnByaW50UgtmaW5nZXJwcmludBIaCghkaXN0YW5jZRgCIAEoBVIIZGlzdGFuY2USMAoKbGF5'
     'ZXJfaW5mbxgDIAMoCzIRLmdyYWZlYXMudjEuTGF5ZXJSCWxheWVySW5mbxIqChFiYXNlX3Jlc2'
     '91cmNlX3VybBgEIAEoCVIPYmFzZVJlc291cmNlVXJs');
-

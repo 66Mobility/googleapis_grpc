@@ -60,48 +60,66 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateTextRequest._() : super();
-  factory GenerateTextRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateTextRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateTextRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateTextRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateTextRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateTextRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..aOM<TextPrompt>(2, _omitFieldNames ? '' : 'prompt', subBuilder: TextPrompt.create)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'candidateCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'maxOutputTokens', $pb.PbFieldType.O3)
+    ..aOM<TextPrompt>(2, _omitFieldNames ? '' : 'prompt',
+        subBuilder: TextPrompt.create)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'candidateCount', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'maxOutputTokens', $pb.PbFieldType.O3)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
-    ..pc<$336.SafetySetting>(8, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM, subBuilder: $336.SafetySetting.create)
+    ..pc<$336.SafetySetting>(
+        8, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM,
+        subBuilder: $336.SafetySetting.create)
     ..pPS(9, _omitFieldNames ? '' : 'stopSequences')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GenerateTextRequest clone() => GenerateTextRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateTextRequest copyWith(void Function(GenerateTextRequest) updates) => super.copyWith((message) => updates(message as GenerateTextRequest)) as GenerateTextRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateTextRequest copyWith(void Function(GenerateTextRequest) updates) =>
+      super.copyWith((message) => updates(message as GenerateTextRequest))
+          as GenerateTextRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GenerateTextRequest create() => GenerateTextRequest._();
   GenerateTextRequest createEmptyInstance() => create();
-  static $pb.PbList<GenerateTextRequest> createRepeated() => $pb.PbList<GenerateTextRequest>();
+  static $pb.PbList<GenerateTextRequest> createRepeated() =>
+      $pb.PbList<GenerateTextRequest>();
   @$core.pragma('dart2js:noInline')
-  static GenerateTextRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateTextRequest>(create);
+  static GenerateTextRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateTextRequest>(create);
   static GenerateTextRequest? _defaultInstance;
 
   /// Required. The model name to use with the format name=models/{model}.
   @$pb.TagNumber(1)
   $core.String get model => $_getSZ(0);
   @$pb.TagNumber(1)
-  set model($core.String v) { $_setString(0, v); }
+  set model($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasModel() => $_has(0);
   @$pb.TagNumber(1)
@@ -114,7 +132,10 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TextPrompt get prompt => $_getN(1);
   @$pb.TagNumber(2)
-  set prompt(TextPrompt v) { setField(2, v); }
+  set prompt(TextPrompt v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrompt() => $_has(1);
   @$pb.TagNumber(2)
@@ -133,7 +154,10 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get temperature => $_getN(2);
   @$pb.TagNumber(3)
-  set temperature($core.double v) { $_setFloat(2, v); }
+  set temperature($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTemperature() => $_has(2);
   @$pb.TagNumber(3)
@@ -146,7 +170,10 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get candidateCount => $_getIZ(3);
   @$pb.TagNumber(4)
-  set candidateCount($core.int v) { $_setSignedInt32(3, v); }
+  set candidateCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCandidateCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -158,7 +185,10 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxOutputTokens => $_getIZ(4);
   @$pb.TagNumber(5)
-  set maxOutputTokens($core.int v) { $_setSignedInt32(4, v); }
+  set maxOutputTokens($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaxOutputTokens() => $_has(4);
   @$pb.TagNumber(5)
@@ -178,7 +208,10 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get topP => $_getN(5);
   @$pb.TagNumber(6)
-  set topP($core.double v) { $_setFloat(5, v); }
+  set topP($core.double v) {
+    $_setFloat(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTopP() => $_has(5);
   @$pb.TagNumber(6)
@@ -196,7 +229,10 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get topK => $_getIZ(6);
   @$pb.TagNumber(7)
-  set topK($core.int v) { $_setSignedInt32(6, v); }
+  set topK($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTopK() => $_has(6);
   @$pb.TagNumber(7)
@@ -242,35 +278,51 @@ class GenerateTextResponse extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateTextResponse._() : super();
-  factory GenerateTextResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateTextResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateTextResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateTextResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateTextResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
-    ..pc<TextCompletion>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: TextCompletion.create)
-    ..pc<$336.ContentFilter>(3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM, subBuilder: $336.ContentFilter.create)
-    ..pc<$336.SafetyFeedback>(4, _omitFieldNames ? '' : 'safetyFeedback', $pb.PbFieldType.PM, subBuilder: $336.SafetyFeedback.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateTextResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
+    ..pc<TextCompletion>(
+        1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM,
+        subBuilder: TextCompletion.create)
+    ..pc<$336.ContentFilter>(
+        3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM,
+        subBuilder: $336.ContentFilter.create)
+    ..pc<$336.SafetyFeedback>(
+        4, _omitFieldNames ? '' : 'safetyFeedback', $pb.PbFieldType.PM,
+        subBuilder: $336.SafetyFeedback.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateTextResponse clone() => GenerateTextResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateTextResponse copyWith(void Function(GenerateTextResponse) updates) => super.copyWith((message) => updates(message as GenerateTextResponse)) as GenerateTextResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateTextResponse clone() =>
+      GenerateTextResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateTextResponse copyWith(void Function(GenerateTextResponse) updates) =>
+      super.copyWith((message) => updates(message as GenerateTextResponse))
+          as GenerateTextResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GenerateTextResponse create() => GenerateTextResponse._();
   GenerateTextResponse createEmptyInstance() => create();
-  static $pb.PbList<GenerateTextResponse> createRepeated() => $pb.PbList<GenerateTextResponse>();
+  static $pb.PbList<GenerateTextResponse> createRepeated() =>
+      $pb.PbList<GenerateTextResponse>();
   @$core.pragma('dart2js:noInline')
-  static GenerateTextResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateTextResponse>(create);
+  static GenerateTextResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateTextResponse>(create);
   static GenerateTextResponse? _defaultInstance;
 
   /// Candidate responses from the model.
@@ -310,24 +362,30 @@ class TextPrompt extends $pb.GeneratedMessage {
     return $result;
   }
   TextPrompt._() : super();
-  factory TextPrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TextPrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TextPrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TextPrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextPrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TextPrompt',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TextPrompt clone() => TextPrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TextPrompt copyWith(void Function(TextPrompt) updates) => super.copyWith((message) => updates(message as TextPrompt)) as TextPrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TextPrompt copyWith(void Function(TextPrompt) updates) =>
+      super.copyWith((message) => updates(message as TextPrompt)) as TextPrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -336,14 +394,18 @@ class TextPrompt extends $pb.GeneratedMessage {
   TextPrompt createEmptyInstance() => create();
   static $pb.PbList<TextPrompt> createRepeated() => $pb.PbList<TextPrompt>();
   @$core.pragma('dart2js:noInline')
-  static TextPrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TextPrompt>(create);
+  static TextPrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TextPrompt>(create);
   static TextPrompt? _defaultInstance;
 
   /// Required. The prompt text.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -370,42 +432,57 @@ class TextCompletion extends $pb.GeneratedMessage {
     return $result;
   }
   TextCompletion._() : super();
-  factory TextCompletion.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TextCompletion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TextCompletion.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TextCompletion.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextCompletion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TextCompletion',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'output')
-    ..pc<$336.SafetyRating>(2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $336.SafetyRating.create)
-    ..aOM<$337.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $337.CitationMetadata.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$336.SafetyRating>(
+        2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM,
+        subBuilder: $336.SafetyRating.create)
+    ..aOM<$337.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata',
+        subBuilder: $337.CitationMetadata.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TextCompletion clone() => TextCompletion()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TextCompletion copyWith(void Function(TextCompletion) updates) => super.copyWith((message) => updates(message as TextCompletion)) as TextCompletion;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TextCompletion copyWith(void Function(TextCompletion) updates) =>
+      super.copyWith((message) => updates(message as TextCompletion))
+          as TextCompletion;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TextCompletion create() => TextCompletion._();
   TextCompletion createEmptyInstance() => create();
-  static $pb.PbList<TextCompletion> createRepeated() => $pb.PbList<TextCompletion>();
+  static $pb.PbList<TextCompletion> createRepeated() =>
+      $pb.PbList<TextCompletion>();
   @$core.pragma('dart2js:noInline')
-  static TextCompletion getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TextCompletion>(create);
+  static TextCompletion getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TextCompletion>(create);
   static TextCompletion? _defaultInstance;
 
   /// Output only. The generated text returned from the model.
   @$pb.TagNumber(1)
   $core.String get output => $_getSZ(0);
   @$pb.TagNumber(1)
-  set output($core.String v) { $_setString(0, v); }
+  set output($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOutput() => $_has(0);
   @$pb.TagNumber(1)
@@ -425,7 +502,10 @@ class TextCompletion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $337.CitationMetadata get citationMetadata => $_getN(2);
   @$pb.TagNumber(3)
-  set citationMetadata($337.CitationMetadata v) { setField(3, v); }
+  set citationMetadata($337.CitationMetadata v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCitationMetadata() => $_has(2);
   @$pb.TagNumber(3)
@@ -450,41 +530,53 @@ class EmbedTextRequest extends $pb.GeneratedMessage {
     return $result;
   }
   EmbedTextRequest._() : super();
-  factory EmbedTextRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EmbedTextRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EmbedTextRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EmbedTextRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EmbedTextRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EmbedTextRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
     ..aOS(2, _omitFieldNames ? '' : 'text')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EmbedTextRequest clone() => EmbedTextRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EmbedTextRequest copyWith(void Function(EmbedTextRequest) updates) => super.copyWith((message) => updates(message as EmbedTextRequest)) as EmbedTextRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EmbedTextRequest copyWith(void Function(EmbedTextRequest) updates) =>
+      super.copyWith((message) => updates(message as EmbedTextRequest))
+          as EmbedTextRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EmbedTextRequest create() => EmbedTextRequest._();
   EmbedTextRequest createEmptyInstance() => create();
-  static $pb.PbList<EmbedTextRequest> createRepeated() => $pb.PbList<EmbedTextRequest>();
+  static $pb.PbList<EmbedTextRequest> createRepeated() =>
+      $pb.PbList<EmbedTextRequest>();
   @$core.pragma('dart2js:noInline')
-  static EmbedTextRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EmbedTextRequest>(create);
+  static EmbedTextRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EmbedTextRequest>(create);
   static EmbedTextRequest? _defaultInstance;
 
   /// Required. The model name to use with the format model=models/{model}.
   @$pb.TagNumber(1)
   $core.String get model => $_getSZ(0);
   @$pb.TagNumber(1)
-  set model($core.String v) { $_setString(0, v); }
+  set model($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasModel() => $_has(0);
   @$pb.TagNumber(1)
@@ -495,7 +587,10 @@ class EmbedTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get text => $_getSZ(1);
   @$pb.TagNumber(2)
-  set text($core.String v) { $_setString(1, v); }
+  set text($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasText() => $_has(1);
   @$pb.TagNumber(2)
@@ -514,40 +609,53 @@ class EmbedTextResponse extends $pb.GeneratedMessage {
     return $result;
   }
   EmbedTextResponse._() : super();
-  factory EmbedTextResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EmbedTextResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EmbedTextResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EmbedTextResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EmbedTextResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
-    ..aOM<Embedding>(1, _omitFieldNames ? '' : 'embedding', subBuilder: Embedding.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EmbedTextResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
+    ..aOM<Embedding>(1, _omitFieldNames ? '' : 'embedding',
+        subBuilder: Embedding.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EmbedTextResponse clone() => EmbedTextResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EmbedTextResponse copyWith(void Function(EmbedTextResponse) updates) => super.copyWith((message) => updates(message as EmbedTextResponse)) as EmbedTextResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EmbedTextResponse copyWith(void Function(EmbedTextResponse) updates) =>
+      super.copyWith((message) => updates(message as EmbedTextResponse))
+          as EmbedTextResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EmbedTextResponse create() => EmbedTextResponse._();
   EmbedTextResponse createEmptyInstance() => create();
-  static $pb.PbList<EmbedTextResponse> createRepeated() => $pb.PbList<EmbedTextResponse>();
+  static $pb.PbList<EmbedTextResponse> createRepeated() =>
+      $pb.PbList<EmbedTextResponse>();
   @$core.pragma('dart2js:noInline')
-  static EmbedTextResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EmbedTextResponse>(create);
+  static EmbedTextResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EmbedTextResponse>(create);
   static EmbedTextResponse? _defaultInstance;
 
   /// Output only. The embedding generated from the input text.
   @$pb.TagNumber(1)
   Embedding get embedding => $_getN(0);
   @$pb.TagNumber(1)
-  set embedding(Embedding v) { setField(1, v); }
+  set embedding(Embedding v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEmbedding() => $_has(0);
   @$pb.TagNumber(1)
@@ -568,24 +676,30 @@ class Embedding extends $pb.GeneratedMessage {
     return $result;
   }
   Embedding._() : super();
-  factory Embedding.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Embedding.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Embedding.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Embedding.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Embedding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Embedding',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
     ..p<$core.double>(1, _omitFieldNames ? '' : 'value', $pb.PbFieldType.KF)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Embedding clone() => Embedding()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Embedding copyWith(void Function(Embedding) updates) => super.copyWith((message) => updates(message as Embedding)) as Embedding;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Embedding copyWith(void Function(Embedding) updates) =>
+      super.copyWith((message) => updates(message as Embedding)) as Embedding;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -594,7 +708,8 @@ class Embedding extends $pb.GeneratedMessage {
   Embedding createEmptyInstance() => create();
   static $pb.PbList<Embedding> createRepeated() => $pb.PbList<Embedding>();
   @$core.pragma('dart2js:noInline')
-  static Embedding getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Embedding>(create);
+  static Embedding getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Embedding>(create);
   static Embedding? _defaultInstance;
 
   /// The embedding values.
@@ -602,6 +717,6 @@ class Embedding extends $pb.GeneratedMessage {
   $core.List<$core.double> get value => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

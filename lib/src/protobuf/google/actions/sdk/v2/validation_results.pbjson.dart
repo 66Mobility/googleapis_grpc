@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const ValidationResults$json = {
   '1': 'ValidationResults',
   '2': [
-    {'1': 'results', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.ValidationResult', '10': 'results'},
+    {
+      '1': 'results',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ValidationResult',
+      '10': 'results'
+    },
   ],
 };
 
@@ -30,8 +37,21 @@ final $typed_data.Uint8List validationResultsDescriptor = $convert.base64Decode(
 const ValidationResult$json = {
   '1': 'ValidationResult',
   '2': [
-    {'1': 'validation_message', '3': 1, '4': 1, '5': 9, '10': 'validationMessage'},
-    {'1': 'validation_context', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.ValidationResult.ValidationContext', '10': 'validationContext'},
+    {
+      '1': 'validation_message',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'validationMessage'
+    },
+    {
+      '1': 'validation_context',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ValidationResult.ValidationContext',
+      '10': 'validationContext'
+    },
   ],
   '3': [ValidationResult_ValidationContext$json],
 };
@@ -51,4 +71,3 @@ final $typed_data.Uint8List validationResultDescriptor = $convert.base64Decode(
     'c2RrLnYyLlZhbGlkYXRpb25SZXN1bHQuVmFsaWRhdGlvbkNvbnRleHRSEXZhbGlkYXRpb25Db2'
     '50ZXh0GjgKEVZhbGlkYXRpb25Db250ZXh0EiMKDWxhbmd1YWdlX2NvZGUYASABKAlSDGxhbmd1'
     'YWdlQ29kZQ==');
-

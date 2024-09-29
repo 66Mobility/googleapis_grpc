@@ -40,36 +40,53 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
     return $result;
   }
   StaticCollectionPrompt_CollectionItem._() : super();
-  factory StaticCollectionPrompt_CollectionItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticCollectionPrompt_CollectionItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticCollectionPrompt_CollectionItem.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticCollectionPrompt_CollectionItem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticCollectionPrompt.CollectionItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticCollectionPrompt.CollectionItem',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'title')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$262.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $262.StaticImagePrompt.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$262.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: $262.StaticImagePrompt.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticCollectionPrompt_CollectionItem clone() => StaticCollectionPrompt_CollectionItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticCollectionPrompt_CollectionItem copyWith(void Function(StaticCollectionPrompt_CollectionItem) updates) => super.copyWith((message) => updates(message as StaticCollectionPrompt_CollectionItem)) as StaticCollectionPrompt_CollectionItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticCollectionPrompt_CollectionItem clone() =>
+      StaticCollectionPrompt_CollectionItem()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticCollectionPrompt_CollectionItem copyWith(
+          void Function(StaticCollectionPrompt_CollectionItem) updates) =>
+      super.copyWith((message) =>
+              updates(message as StaticCollectionPrompt_CollectionItem))
+          as StaticCollectionPrompt_CollectionItem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StaticCollectionPrompt_CollectionItem create() => StaticCollectionPrompt_CollectionItem._();
+  static StaticCollectionPrompt_CollectionItem create() =>
+      StaticCollectionPrompt_CollectionItem._();
   StaticCollectionPrompt_CollectionItem createEmptyInstance() => create();
-  static $pb.PbList<StaticCollectionPrompt_CollectionItem> createRepeated() => $pb.PbList<StaticCollectionPrompt_CollectionItem>();
+  static $pb.PbList<StaticCollectionPrompt_CollectionItem> createRepeated() =>
+      $pb.PbList<StaticCollectionPrompt_CollectionItem>();
   @$core.pragma('dart2js:noInline')
-  static StaticCollectionPrompt_CollectionItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticCollectionPrompt_CollectionItem>(create);
+  static StaticCollectionPrompt_CollectionItem getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StaticCollectionPrompt_CollectionItem>(create);
   static StaticCollectionPrompt_CollectionItem? _defaultInstance;
 
   /// Required. The NLU key that matches the entry key name in the associated
@@ -78,7 +95,10 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) { $_setString(0, v); }
+  set key($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,7 +110,10 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,7 +123,10 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -110,7 +136,10 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $262.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($262.StaticImagePrompt v) { setField(4, v); }
+  set image($262.StaticImagePrompt v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
@@ -143,43 +172,64 @@ class StaticCollectionPrompt extends $pb.GeneratedMessage {
     return $result;
   }
   StaticCollectionPrompt._() : super();
-  factory StaticCollectionPrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticCollectionPrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticCollectionPrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticCollectionPrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticCollectionPrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticCollectionPrompt',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..pc<StaticCollectionPrompt_CollectionItem>(3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: StaticCollectionPrompt_CollectionItem.create)
-    ..e<$262.StaticImagePrompt_ImageFill>(4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $262.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $262.StaticImagePrompt_ImageFill.valueOf, enumValues: $262.StaticImagePrompt_ImageFill.values)
-    ..hasRequiredFields = false
-  ;
+    ..pc<StaticCollectionPrompt_CollectionItem>(
+        3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
+        subBuilder: StaticCollectionPrompt_CollectionItem.create)
+    ..e<$262.StaticImagePrompt_ImageFill>(
+        4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE,
+        defaultOrMaker: $262.StaticImagePrompt_ImageFill.UNSPECIFIED,
+        valueOf: $262.StaticImagePrompt_ImageFill.valueOf,
+        enumValues: $262.StaticImagePrompt_ImageFill.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticCollectionPrompt clone() => StaticCollectionPrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticCollectionPrompt copyWith(void Function(StaticCollectionPrompt) updates) => super.copyWith((message) => updates(message as StaticCollectionPrompt)) as StaticCollectionPrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticCollectionPrompt clone() =>
+      StaticCollectionPrompt()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticCollectionPrompt copyWith(
+          void Function(StaticCollectionPrompt) updates) =>
+      super.copyWith((message) => updates(message as StaticCollectionPrompt))
+          as StaticCollectionPrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticCollectionPrompt create() => StaticCollectionPrompt._();
   StaticCollectionPrompt createEmptyInstance() => create();
-  static $pb.PbList<StaticCollectionPrompt> createRepeated() => $pb.PbList<StaticCollectionPrompt>();
+  static $pb.PbList<StaticCollectionPrompt> createRepeated() =>
+      $pb.PbList<StaticCollectionPrompt>();
   @$core.pragma('dart2js:noInline')
-  static StaticCollectionPrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticCollectionPrompt>(create);
+  static StaticCollectionPrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticCollectionPrompt>(create);
   static StaticCollectionPrompt? _defaultInstance;
 
   /// Optional. Title of the collection.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -189,7 +239,10 @@ class StaticCollectionPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subtitle => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subtitle($core.String v) { $_setString(1, v); }
+  set subtitle($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubtitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -203,13 +256,16 @@ class StaticCollectionPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $262.StaticImagePrompt_ImageFill get imageFill => $_getN(3);
   @$pb.TagNumber(4)
-  set imageFill($262.StaticImagePrompt_ImageFill v) { setField(4, v); }
+  set imageFill($262.StaticImagePrompt_ImageFill v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImageFill() => $_has(3);
   @$pb.TagNumber(4)
   void clearImageFill() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

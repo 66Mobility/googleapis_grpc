@@ -30,8 +30,23 @@ final $typed_data.Uint8List restoreSourceTypeDescriptor = $convert.base64Decode(
 const RestoreInfo$json = {
   '1': 'RestoreInfo',
   '2': [
-    {'1': 'source_type', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.RestoreSourceType', '10': 'sourceType'},
-    {'1': 'backup_info', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.BackupInfo', '9': 0, '10': 'backupInfo'},
+    {
+      '1': 'source_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.RestoreSourceType',
+      '10': 'sourceType'
+    },
+    {
+      '1': 'backup_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.BackupInfo',
+      '9': 0,
+      '10': 'backupInfo'
+    },
   ],
   '8': [
     {'1': 'source_info'},
@@ -50,16 +65,92 @@ const Database$json = {
   '1': 'Database',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.Database.State', '8': {}, '10': 'state'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'restore_info', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.RestoreInfo', '8': {}, '10': 'restoreInfo'},
-    {'1': 'encryption_config', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionConfig', '8': {}, '10': 'encryptionConfig'},
-    {'1': 'encryption_info', '3': 8, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionInfo', '8': {}, '10': 'encryptionInfo'},
-    {'1': 'version_retention_period', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'versionRetentionPeriod'},
-    {'1': 'earliest_version_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'earliestVersionTime'},
-    {'1': 'default_leader', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'defaultLeader'},
-    {'1': 'database_dialect', '3': 10, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.DatabaseDialect', '8': {}, '10': 'databaseDialect'},
-    {'1': 'enable_drop_protection', '3': 11, '4': 1, '5': 8, '10': 'enableDropProtection'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.Database.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'restore_info',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.RestoreInfo',
+      '8': {},
+      '10': 'restoreInfo'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'encryption_info',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionInfo',
+      '8': {},
+      '10': 'encryptionInfo'
+    },
+    {
+      '1': 'version_retention_period',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'versionRetentionPeriod'
+    },
+    {
+      '1': 'earliest_version_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'earliestVersionTime'
+    },
+    {
+      '1': 'default_leader',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'defaultLeader'
+    },
+    {
+      '1': 'database_dialect',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.DatabaseDialect',
+      '8': {},
+      '10': 'databaseDialect'
+    },
+    {
+      '1': 'enable_drop_protection',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '10': 'enableDropProtection'
+    },
     {'1': 'reconciling', '3': 12, '4': 1, '5': 8, '8': {}, '10': 'reconciling'},
   ],
   '4': [Database_State$json],
@@ -119,7 +210,14 @@ final $typed_data.Uint8List listDatabasesRequestDescriptor = $convert.base64Deco
 const ListDatabasesResponse$json = {
   '1': 'ListDatabasesResponse',
   '2': [
-    {'1': 'databases', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.Database', '10': 'databases'},
+    {
+      '1': 'databases',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Database',
+      '10': 'databases'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -135,11 +233,48 @@ const CreateDatabaseRequest$json = {
   '1': 'CreateDatabaseRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'create_statement', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'createStatement'},
-    {'1': 'extra_statements', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'extraStatements'},
-    {'1': 'encryption_config', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionConfig', '8': {}, '10': 'encryptionConfig'},
-    {'1': 'database_dialect', '3': 5, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.DatabaseDialect', '8': {}, '10': 'databaseDialect'},
-    {'1': 'proto_descriptors', '3': 6, '4': 1, '5': 12, '8': {}, '10': 'protoDescriptors'},
+    {
+      '1': 'create_statement',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'createStatement'
+    },
+    {
+      '1': 'extra_statements',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'extraStatements'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'database_dialect',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.DatabaseDialect',
+      '8': {},
+      '10': 'databaseDialect'
+    },
+    {
+      '1': 'proto_descriptors',
+      '3': 6,
+      '4': 1,
+      '5': 12,
+      '8': {},
+      '10': 'protoDescriptors'
+    },
   ],
 };
 
@@ -163,9 +298,10 @@ const CreateDatabaseMetadata$json = {
 };
 
 /// Descriptor for `CreateDatabaseMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createDatabaseMetadataDescriptor = $convert.base64Decode(
-    'ChZDcmVhdGVEYXRhYmFzZU1ldGFkYXRhEkAKCGRhdGFiYXNlGAEgASgJQiT6QSEKH3NwYW5uZX'
-    'IuZ29vZ2xlYXBpcy5jb20vRGF0YWJhc2VSCGRhdGFiYXNl');
+final $typed_data.Uint8List createDatabaseMetadataDescriptor =
+    $convert.base64Decode(
+        'ChZDcmVhdGVEYXRhYmFzZU1ldGFkYXRhEkAKCGRhdGFiYXNlGAEgASgJQiT6QSEKH3NwYW5uZX'
+        'IuZ29vZ2xlYXBpcy5jb20vRGF0YWJhc2VSCGRhdGFiYXNl');
 
 @$core.Deprecated('Use getDatabaseRequestDescriptor instead')
 const GetDatabaseRequest$json = {
@@ -184,8 +320,24 @@ final $typed_data.Uint8List getDatabaseRequestDescriptor = $convert.base64Decode
 const UpdateDatabaseRequest$json = {
   '1': 'UpdateDatabaseRequest',
   '2': [
-    {'1': 'database', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.Database', '8': {}, '10': 'database'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'database',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Database',
+      '8': {},
+      '10': 'database'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -200,9 +352,30 @@ final $typed_data.Uint8List updateDatabaseRequestDescriptor = $convert.base64Dec
 const UpdateDatabaseMetadata$json = {
   '1': 'UpdateDatabaseMetadata',
   '2': [
-    {'1': 'request', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.UpdateDatabaseRequest', '10': 'request'},
-    {'1': 'progress', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.OperationProgress', '10': 'progress'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
+    {
+      '1': 'request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.UpdateDatabaseRequest',
+      '10': 'request'
+    },
+    {
+      '1': 'progress',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
   ],
 };
 
@@ -221,7 +394,14 @@ const UpdateDatabaseDdlRequest$json = {
     {'1': 'database', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'database'},
     {'1': 'statements', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'statements'},
     {'1': 'operation_id', '3': 3, '4': 1, '5': 9, '10': 'operationId'},
-    {'1': 'proto_descriptors', '3': 4, '4': 1, '5': 12, '8': {}, '10': 'protoDescriptors'},
+    {
+      '1': 'proto_descriptors',
+      '3': 4,
+      '4': 1,
+      '5': 12,
+      '8': {},
+      '10': 'protoDescriptors'
+    },
   ],
 };
 
@@ -254,10 +434,31 @@ const UpdateDatabaseDdlMetadata$json = {
   '2': [
     {'1': 'database', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'database'},
     {'1': 'statements', '3': 2, '4': 3, '5': 9, '10': 'statements'},
-    {'1': 'commit_timestamps', '3': 3, '4': 3, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'commitTimestamps'},
+    {
+      '1': 'commit_timestamps',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'commitTimestamps'
+    },
     {'1': 'throttled', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'throttled'},
-    {'1': 'progress', '3': 5, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.OperationProgress', '10': 'progress'},
-    {'1': 'actions', '3': 6, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.DdlStatementActionInfo', '10': 'actions'},
+    {
+      '1': 'progress',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'actions',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.DdlStatementActionInfo',
+      '10': 'actions'
+    },
   ],
 };
 
@@ -303,14 +504,21 @@ const GetDatabaseDdlResponse$json = {
   '1': 'GetDatabaseDdlResponse',
   '2': [
     {'1': 'statements', '3': 1, '4': 3, '5': 9, '10': 'statements'},
-    {'1': 'proto_descriptors', '3': 2, '4': 1, '5': 12, '10': 'protoDescriptors'},
+    {
+      '1': 'proto_descriptors',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '10': 'protoDescriptors'
+    },
   ],
 };
 
 /// Descriptor for `GetDatabaseDdlResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getDatabaseDdlResponseDescriptor = $convert.base64Decode(
-    'ChZHZXREYXRhYmFzZURkbFJlc3BvbnNlEh4KCnN0YXRlbWVudHMYASADKAlSCnN0YXRlbWVudH'
-    'MSKwoRcHJvdG9fZGVzY3JpcHRvcnMYAiABKAxSEHByb3RvRGVzY3JpcHRvcnM=');
+final $typed_data.Uint8List getDatabaseDdlResponseDescriptor =
+    $convert.base64Decode(
+        'ChZHZXREYXRhYmFzZURkbFJlc3BvbnNlEh4KCnN0YXRlbWVudHMYASADKAlSCnN0YXRlbWVudH'
+        'MSKwoRcHJvdG9fZGVzY3JpcHRvcnMYAiABKAxSEHByb3RvRGVzY3JpcHRvcnM=');
 
 @$core.Deprecated('Use listDatabaseOperationsRequestDescriptor instead')
 const ListDatabaseOperationsRequest$json = {
@@ -334,16 +542,24 @@ final $typed_data.Uint8List listDatabaseOperationsRequestDescriptor = $convert.b
 const ListDatabaseOperationsResponse$json = {
   '1': 'ListDatabaseOperationsResponse',
   '2': [
-    {'1': 'operations', '3': 1, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'operations'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListDatabaseOperationsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listDatabaseOperationsResponseDescriptor = $convert.base64Decode(
-    'Ch5MaXN0RGF0YWJhc2VPcGVyYXRpb25zUmVzcG9uc2USPQoKb3BlcmF0aW9ucxgBIAMoCzIdLm'
-    'dvb2dsZS5sb25ncnVubmluZy5PcGVyYXRpb25SCm9wZXJhdGlvbnMSJgoPbmV4dF9wYWdlX3Rv'
-    'a2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listDatabaseOperationsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch5MaXN0RGF0YWJhc2VPcGVyYXRpb25zUmVzcG9uc2USPQoKb3BlcmF0aW9ucxgBIAMoCzIdLm'
+        'dvb2dsZS5sb25ncnVubmluZy5PcGVyYXRpb25SCm9wZXJhdGlvbnMSJgoPbmV4dF9wYWdlX3Rv'
+        'a2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use restoreDatabaseRequestDescriptor instead')
 const RestoreDatabaseRequest$json = {
@@ -352,7 +568,15 @@ const RestoreDatabaseRequest$json = {
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'database_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'databaseId'},
     {'1': 'backup', '3': 3, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'backup'},
-    {'1': 'encryption_config', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.RestoreDatabaseEncryptionConfig', '8': {}, '10': 'encryptionConfig'},
+    {
+      '1': 'encryption_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.RestoreDatabaseEncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
   ],
   '8': [
     {'1': 'source'},
@@ -372,9 +596,25 @@ final $typed_data.Uint8List restoreDatabaseRequestDescriptor = $convert.base64De
 const RestoreDatabaseEncryptionConfig$json = {
   '1': 'RestoreDatabaseEncryptionConfig',
   '2': [
-    {'1': 'encryption_type', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.RestoreDatabaseEncryptionConfig.EncryptionType', '8': {}, '10': 'encryptionType'},
+    {
+      '1': 'encryption_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.spanner.admin.database.v1.RestoreDatabaseEncryptionConfig.EncryptionType',
+      '8': {},
+      '10': 'encryptionType'
+    },
     {'1': 'kms_key_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyName'},
-    {'1': 'kms_key_names', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'kmsKeyNames'},
+    {
+      '1': 'kms_key_names',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'kmsKeyNames'
+    },
   ],
   '4': [RestoreDatabaseEncryptionConfig_EncryptionType$json],
 };
@@ -407,11 +647,46 @@ const RestoreDatabaseMetadata$json = {
   '1': 'RestoreDatabaseMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'source_type', '3': 2, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.RestoreSourceType', '10': 'sourceType'},
-    {'1': 'backup_info', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.BackupInfo', '9': 0, '10': 'backupInfo'},
-    {'1': 'progress', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.OperationProgress', '10': 'progress'},
-    {'1': 'cancel_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
-    {'1': 'optimize_database_operation_name', '3': 6, '4': 1, '5': 9, '10': 'optimizeDatabaseOperationName'},
+    {
+      '1': 'source_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.RestoreSourceType',
+      '10': 'sourceType'
+    },
+    {
+      '1': 'backup_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.BackupInfo',
+      '9': 0,
+      '10': 'backupInfo'
+    },
+    {
+      '1': 'progress',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
+    {
+      '1': 'optimize_database_operation_name',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'optimizeDatabaseOperationName'
+    },
   ],
   '8': [
     {'1': 'source_info'},
@@ -435,16 +710,24 @@ const OptimizeRestoredDatabaseMetadata$json = {
   '1': 'OptimizeRestoredDatabaseMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'progress', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.OperationProgress', '10': 'progress'},
+    {
+      '1': 'progress',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.OperationProgress',
+      '10': 'progress'
+    },
   ],
 };
 
 /// Descriptor for `OptimizeRestoredDatabaseMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List optimizeRestoredDatabaseMetadataDescriptor = $convert.base64Decode(
-    'CiBPcHRpbWl6ZVJlc3RvcmVkRGF0YWJhc2VNZXRhZGF0YRI4CgRuYW1lGAEgASgJQiT6QSEKH3'
-    'NwYW5uZXIuZ29vZ2xlYXBpcy5jb20vRGF0YWJhc2VSBG5hbWUSTwoIcHJvZ3Jlc3MYAiABKAsy'
-    'My5nb29nbGUuc3Bhbm5lci5hZG1pbi5kYXRhYmFzZS52MS5PcGVyYXRpb25Qcm9ncmVzc1IIcH'
-    'JvZ3Jlc3M=');
+final $typed_data.Uint8List optimizeRestoredDatabaseMetadataDescriptor =
+    $convert.base64Decode(
+        'CiBPcHRpbWl6ZVJlc3RvcmVkRGF0YWJhc2VNZXRhZGF0YRI4CgRuYW1lGAEgASgJQiT6QSEKH3'
+        'NwYW5uZXIuZ29vZ2xlYXBpcy5jb20vRGF0YWJhc2VSBG5hbWUSTwoIcHJvZ3Jlc3MYAiABKAsy'
+        'My5nb29nbGUuc3Bhbm5lci5hZG1pbi5kYXRhYmFzZS52MS5PcGVyYXRpb25Qcm9ncmVzc1IIcH'
+        'JvZ3Jlc3M=');
 
 @$core.Deprecated('Use databaseRoleDescriptor instead')
 const DatabaseRole$json = {
@@ -481,7 +764,14 @@ final $typed_data.Uint8List listDatabaseRolesRequestDescriptor = $convert.base64
 const ListDatabaseRolesResponse$json = {
   '1': 'ListDatabaseRolesResponse',
   '2': [
-    {'1': 'database_roles', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.DatabaseRole', '10': 'databaseRoles'},
+    {
+      '1': 'database_roles',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.DatabaseRole',
+      '10': 'databaseRoles'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -491,4 +781,3 @@ final $typed_data.Uint8List listDatabaseRolesResponseDescriptor = $convert.base6
     'ChlMaXN0RGF0YWJhc2VSb2xlc1Jlc3BvbnNlElUKDmRhdGFiYXNlX3JvbGVzGAEgAygLMi4uZ2'
     '9vZ2xlLnNwYW5uZXIuYWRtaW4uZGF0YWJhc2UudjEuRGF0YWJhc2VSb2xlUg1kYXRhYmFzZVJv'
     'bGVzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
-

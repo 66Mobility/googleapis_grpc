@@ -26,4 +26,3 @@ const LogsPanel$json = {
 final $typed_data.Uint8List logsPanelDescriptor = $convert.base64Decode(
     'CglMb2dzUGFuZWwSFgoGZmlsdGVyGAEgASgJUgZmaWx0ZXISJQoOcmVzb3VyY2VfbmFtZXMYAi'
     'ADKAlSDXJlc291cmNlTmFtZXM=');
-

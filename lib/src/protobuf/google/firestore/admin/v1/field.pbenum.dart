@@ -15,23 +15,28 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The state of applying the TTL configuration to all documents.
 class Field_TtlConfig_State extends $pb.ProtobufEnum {
-  static const Field_TtlConfig_State STATE_UNSPECIFIED = Field_TtlConfig_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const Field_TtlConfig_State CREATING = Field_TtlConfig_State._(1, _omitEnumNames ? '' : 'CREATING');
-  static const Field_TtlConfig_State ACTIVE = Field_TtlConfig_State._(2, _omitEnumNames ? '' : 'ACTIVE');
-  static const Field_TtlConfig_State NEEDS_REPAIR = Field_TtlConfig_State._(3, _omitEnumNames ? '' : 'NEEDS_REPAIR');
+  static const Field_TtlConfig_State STATE_UNSPECIFIED =
+      Field_TtlConfig_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const Field_TtlConfig_State CREATING =
+      Field_TtlConfig_State._(1, _omitEnumNames ? '' : 'CREATING');
+  static const Field_TtlConfig_State ACTIVE =
+      Field_TtlConfig_State._(2, _omitEnumNames ? '' : 'ACTIVE');
+  static const Field_TtlConfig_State NEEDS_REPAIR =
+      Field_TtlConfig_State._(3, _omitEnumNames ? '' : 'NEEDS_REPAIR');
 
-  static const $core.List<Field_TtlConfig_State> values = <Field_TtlConfig_State> [
+  static const $core.List<Field_TtlConfig_State> values =
+      <Field_TtlConfig_State>[
     STATE_UNSPECIFIED,
     CREATING,
     ACTIVE,
     NEEDS_REPAIR,
   ];
 
-  static final $core.Map<$core.int, Field_TtlConfig_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Field_TtlConfig_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Field_TtlConfig_State? valueOf($core.int value) => _byValue[value];
 
   const Field_TtlConfig_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

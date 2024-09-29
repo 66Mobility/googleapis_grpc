@@ -20,11 +20,7 @@ import 'subscription_resource.pbenum.dart';
 
 export 'subscription_resource.pbenum.dart';
 
-enum Subscription_Expiration {
-  expireTime, 
-  ttl, 
-  notSet
-}
+enum Subscription_Expiration { expireTime, ttl, notSet }
 
 /// A subscription to receive events about a Google Workspace resource. To learn
 /// more about subscriptions, see the [Google Workspace Events API
@@ -96,56 +92,82 @@ class Subscription extends $pb.GeneratedMessage {
     return $result;
   }
   Subscription._() : super();
-  factory Subscription.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Subscription.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Subscription.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Subscription.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Subscription_Expiration> _Subscription_ExpirationByTag = {
-    13 : Subscription_Expiration.expireTime,
-    14 : Subscription_Expiration.ttl,
-    0 : Subscription_Expiration.notSet
+  static const $core.Map<$core.int, Subscription_Expiration>
+      _Subscription_ExpirationByTag = {
+    13: Subscription_Expiration.expireTime,
+    14: Subscription_Expiration.ttl,
+    0: Subscription_Expiration.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Subscription', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Subscription',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'),
+      createEmptyInstance: create)
     ..oo(0, [13, 14])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aOS(4, _omitFieldNames ? '' : 'targetResource')
     ..pPS(5, _omitFieldNames ? '' : 'eventTypes')
-    ..aOM<PayloadOptions>(6, _omitFieldNames ? '' : 'payloadOptions', subBuilder: PayloadOptions.create)
-    ..aOM<NotificationEndpoint>(7, _omitFieldNames ? '' : 'notificationEndpoint', subBuilder: NotificationEndpoint.create)
-    ..e<Subscription_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Subscription_State.STATE_UNSPECIFIED, valueOf: Subscription_State.valueOf, enumValues: Subscription_State.values)
+    ..aOM<PayloadOptions>(6, _omitFieldNames ? '' : 'payloadOptions',
+        subBuilder: PayloadOptions.create)
+    ..aOM<NotificationEndpoint>(
+        7, _omitFieldNames ? '' : 'notificationEndpoint',
+        subBuilder: NotificationEndpoint.create)
+    ..e<Subscription_State>(
+        8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Subscription_State.STATE_UNSPECIFIED,
+        valueOf: Subscription_State.valueOf,
+        enumValues: Subscription_State.values)
     ..aOS(10, _omitFieldNames ? '' : 'authority')
-    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(13, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(14, _omitFieldNames ? '' : 'ttl', subBuilder: $264.Duration.create)
+    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(13, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(14, _omitFieldNames ? '' : 'ttl',
+        subBuilder: $264.Duration.create)
     ..aOB(15, _omitFieldNames ? '' : 'reconciling')
     ..aOS(17, _omitFieldNames ? '' : 'etag')
-    ..e<Subscription_ErrorType>(18, _omitFieldNames ? '' : 'suspensionReason', $pb.PbFieldType.OE, defaultOrMaker: Subscription_ErrorType.ERROR_TYPE_UNSPECIFIED, valueOf: Subscription_ErrorType.valueOf, enumValues: Subscription_ErrorType.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<Subscription_ErrorType>(
+        18, _omitFieldNames ? '' : 'suspensionReason', $pb.PbFieldType.OE,
+        defaultOrMaker: Subscription_ErrorType.ERROR_TYPE_UNSPECIFIED,
+        valueOf: Subscription_ErrorType.valueOf,
+        enumValues: Subscription_ErrorType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Subscription clone() => Subscription()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Subscription copyWith(void Function(Subscription) updates) => super.copyWith((message) => updates(message as Subscription)) as Subscription;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Subscription copyWith(void Function(Subscription) updates) =>
+      super.copyWith((message) => updates(message as Subscription))
+          as Subscription;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Subscription create() => Subscription._();
   Subscription createEmptyInstance() => create();
-  static $pb.PbList<Subscription> createRepeated() => $pb.PbList<Subscription>();
+  static $pb.PbList<Subscription> createRepeated() =>
+      $pb.PbList<Subscription>();
   @$core.pragma('dart2js:noInline')
-  static Subscription getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Subscription>(create);
+  static Subscription getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Subscription>(create);
   static Subscription? _defaultInstance;
 
-  Subscription_Expiration whichExpiration() => _Subscription_ExpirationByTag[$_whichOneof(0)]!;
+  Subscription_Expiration whichExpiration() =>
+      _Subscription_ExpirationByTag[$_whichOneof(0)]!;
   void clearExpiration() => clearField($_whichOneof(0));
 
   ///  Optional. Immutable. Identifier. Resource name of the subscription.
@@ -154,7 +176,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -164,7 +189,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) { $_setString(1, v); }
+  set uid($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -183,7 +211,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get targetResource => $_getSZ(2);
   @$pb.TagNumber(4)
-  set targetResource($core.String v) { $_setString(2, v); }
+  set targetResource($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTargetResource() => $_has(2);
   @$pb.TagNumber(4)
@@ -211,7 +242,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PayloadOptions get payloadOptions => $_getN(4);
   @$pb.TagNumber(6)
-  set payloadOptions(PayloadOptions v) { setField(6, v); }
+  set payloadOptions(PayloadOptions v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPayloadOptions() => $_has(4);
   @$pb.TagNumber(6)
@@ -224,7 +258,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   NotificationEndpoint get notificationEndpoint => $_getN(5);
   @$pb.TagNumber(7)
-  set notificationEndpoint(NotificationEndpoint v) { setField(7, v); }
+  set notificationEndpoint(NotificationEndpoint v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasNotificationEndpoint() => $_has(5);
   @$pb.TagNumber(7)
@@ -238,7 +275,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Subscription_State get state => $_getN(6);
   @$pb.TagNumber(8)
-  set state(Subscription_State v) { setField(8, v); }
+  set state(Subscription_State v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(8)
@@ -255,7 +295,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get authority => $_getSZ(7);
   @$pb.TagNumber(10)
-  set authority($core.String v) { $_setString(7, v); }
+  set authority($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasAuthority() => $_has(7);
   @$pb.TagNumber(10)
@@ -265,7 +308,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $302.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(11)
-  set createTime($302.Timestamp v) { setField(11, v); }
+  set createTime($302.Timestamp v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(11)
@@ -277,7 +323,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $302.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(12)
-  set updateTime($302.Timestamp v) { setField(12, v); }
+  set updateTime($302.Timestamp v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(12)
@@ -290,7 +339,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $302.Timestamp get expireTime => $_getN(10);
   @$pb.TagNumber(13)
-  set expireTime($302.Timestamp v) { setField(13, v); }
+  set expireTime($302.Timestamp v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasExpireTime() => $_has(10);
   @$pb.TagNumber(13)
@@ -303,7 +355,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $264.Duration get ttl => $_getN(11);
   @$pb.TagNumber(14)
-  set ttl($264.Duration v) { setField(14, v); }
+  set ttl($264.Duration v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasTtl() => $_has(11);
   @$pb.TagNumber(14)
@@ -316,7 +371,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool get reconciling => $_getBF(12);
   @$pb.TagNumber(15)
-  set reconciling($core.bool v) { $_setBool(12, v); }
+  set reconciling($core.bool v) {
+    $_setBool(12, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasReconciling() => $_has(12);
   @$pb.TagNumber(15)
@@ -328,7 +386,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get etag => $_getSZ(13);
   @$pb.TagNumber(17)
-  set etag($core.String v) { $_setString(13, v); }
+  set etag($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasEtag() => $_has(13);
   @$pb.TagNumber(17)
@@ -342,7 +403,10 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   Subscription_ErrorType get suspensionReason => $_getN(14);
   @$pb.TagNumber(18)
-  set suspensionReason(Subscription_ErrorType v) { setField(18, v); }
+  set suspensionReason(Subscription_ErrorType v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasSuspensionReason() => $_has(14);
   @$pb.TagNumber(18)
@@ -366,34 +430,44 @@ class PayloadOptions extends $pb.GeneratedMessage {
     return $result;
   }
   PayloadOptions._() : super();
-  factory PayloadOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PayloadOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PayloadOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PayloadOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PayloadOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PayloadOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'includeResource')
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PayloadOptions clone() => PayloadOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PayloadOptions copyWith(void Function(PayloadOptions) updates) => super.copyWith((message) => updates(message as PayloadOptions)) as PayloadOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PayloadOptions copyWith(void Function(PayloadOptions) updates) =>
+      super.copyWith((message) => updates(message as PayloadOptions))
+          as PayloadOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PayloadOptions create() => PayloadOptions._();
   PayloadOptions createEmptyInstance() => create();
-  static $pb.PbList<PayloadOptions> createRepeated() => $pb.PbList<PayloadOptions>();
+  static $pb.PbList<PayloadOptions> createRepeated() =>
+      $pb.PbList<PayloadOptions>();
   @$core.pragma('dart2js:noInline')
-  static PayloadOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PayloadOptions>(create);
+  static PayloadOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PayloadOptions>(create);
   static PayloadOptions? _defaultInstance;
 
   /// Optional. Whether the event payload includes data about the resource that
@@ -405,7 +479,10 @@ class PayloadOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get includeResource => $_getBF(0);
   @$pb.TagNumber(1)
-  set includeResource($core.bool v) { $_setBool(0, v); }
+  set includeResource($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIncludeResource() => $_has(0);
   @$pb.TagNumber(1)
@@ -422,7 +499,10 @@ class PayloadOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($333.FieldMask v) { setField(2, v); }
+  set fieldMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -431,10 +511,7 @@ class PayloadOptions extends $pb.GeneratedMessage {
   $333.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
-enum NotificationEndpoint_Endpoint {
-  pubsubTopic, 
-  notSet
-}
+enum NotificationEndpoint_Endpoint { pubsubTopic, notSet }
 
 /// The endpoint where the subscription delivers events.
 class NotificationEndpoint extends $pb.GeneratedMessage {
@@ -448,41 +525,53 @@ class NotificationEndpoint extends $pb.GeneratedMessage {
     return $result;
   }
   NotificationEndpoint._() : super();
-  factory NotificationEndpoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NotificationEndpoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NotificationEndpoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NotificationEndpoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, NotificationEndpoint_Endpoint> _NotificationEndpoint_EndpointByTag = {
-    1 : NotificationEndpoint_Endpoint.pubsubTopic,
-    0 : NotificationEndpoint_Endpoint.notSet
+  static const $core.Map<$core.int, NotificationEndpoint_Endpoint>
+      _NotificationEndpoint_EndpointByTag = {
+    1: NotificationEndpoint_Endpoint.pubsubTopic,
+    0: NotificationEndpoint_Endpoint.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotificationEndpoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NotificationEndpoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'pubsubTopic')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NotificationEndpoint clone() => NotificationEndpoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NotificationEndpoint copyWith(void Function(NotificationEndpoint) updates) => super.copyWith((message) => updates(message as NotificationEndpoint)) as NotificationEndpoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NotificationEndpoint clone() =>
+      NotificationEndpoint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NotificationEndpoint copyWith(void Function(NotificationEndpoint) updates) =>
+      super.copyWith((message) => updates(message as NotificationEndpoint))
+          as NotificationEndpoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NotificationEndpoint create() => NotificationEndpoint._();
   NotificationEndpoint createEmptyInstance() => create();
-  static $pb.PbList<NotificationEndpoint> createRepeated() => $pb.PbList<NotificationEndpoint>();
+  static $pb.PbList<NotificationEndpoint> createRepeated() =>
+      $pb.PbList<NotificationEndpoint>();
   @$core.pragma('dart2js:noInline')
-  static NotificationEndpoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotificationEndpoint>(create);
+  static NotificationEndpoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NotificationEndpoint>(create);
   static NotificationEndpoint? _defaultInstance;
 
-  NotificationEndpoint_Endpoint whichEndpoint() => _NotificationEndpoint_EndpointByTag[$_whichOneof(0)]!;
+  NotificationEndpoint_Endpoint whichEndpoint() =>
+      _NotificationEndpoint_EndpointByTag[$_whichOneof(0)]!;
   void clearEndpoint() => clearField($_whichOneof(0));
 
   ///  Immutable. The Cloud Pub/Sub topic that receives events for the
@@ -500,13 +589,16 @@ class NotificationEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pubsubTopic => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pubsubTopic($core.String v) { $_setString(0, v); }
+  set pubsubTopic($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPubsubTopic() => $_has(0);
   @$pb.TagNumber(1)
   void clearPubsubTopic() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

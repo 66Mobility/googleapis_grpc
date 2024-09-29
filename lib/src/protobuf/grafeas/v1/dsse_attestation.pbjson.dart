@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const DSSEAttestationNote$json = {
   '1': 'DSSEAttestationNote',
   '2': [
-    {'1': 'hint', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.DSSEAttestationNote.DSSEHint', '10': 'hint'},
+    {
+      '1': 'hint',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DSSEAttestationNote.DSSEHint',
+      '10': 'hint'
+    },
   ],
   '3': [DSSEAttestationNote_DSSEHint$json],
 };
@@ -26,7 +33,13 @@ const DSSEAttestationNote$json = {
 const DSSEAttestationNote_DSSEHint$json = {
   '1': 'DSSEHint',
   '2': [
-    {'1': 'human_readable_name', '3': 1, '4': 1, '5': 9, '10': 'humanReadableName'},
+    {
+      '1': 'human_readable_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'humanReadableName'
+    },
   ],
 };
 
@@ -40,8 +53,23 @@ final $typed_data.Uint8List dSSEAttestationNoteDescriptor = $convert.base64Decod
 const DSSEAttestationOccurrence$json = {
   '1': 'DSSEAttestationOccurrence',
   '2': [
-    {'1': 'envelope', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.Envelope', '10': 'envelope'},
-    {'1': 'statement', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoStatement', '9': 0, '10': 'statement'},
+    {
+      '1': 'envelope',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Envelope',
+      '10': 'envelope'
+    },
+    {
+      '1': 'statement',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoStatement',
+      '9': 0,
+      '10': 'statement'
+    },
   ],
   '8': [
     {'1': 'decoded_payload'},
@@ -53,4 +81,3 @@ final $typed_data.Uint8List dSSEAttestationOccurrenceDescriptor = $convert.base6
     'ChlEU1NFQXR0ZXN0YXRpb25PY2N1cnJlbmNlEjAKCGVudmVsb3BlGAEgASgLMhQuZ3JhZmVhcy'
     '52MS5FbnZlbG9wZVIIZW52ZWxvcGUSOwoJc3RhdGVtZW50GAIgASgLMhsuZ3JhZmVhcy52MS5J'
     'blRvdG9TdGF0ZW1lbnRIAFIJc3RhdGVtZW50QhEKD2RlY29kZWRfcGF5bG9hZA==');
-

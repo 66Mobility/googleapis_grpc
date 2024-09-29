@@ -19,12 +19,47 @@ const CssProductInput$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'final_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'finalName'},
-    {'1': 'raw_provided_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'rawProvidedId'},
-    {'1': 'content_language', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'raw_provided_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'rawProvidedId'
+    },
+    {
+      '1': 'content_language',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
     {'1': 'feed_label', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'feedLabel'},
-    {'1': 'freshness_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'freshnessTime'},
-    {'1': 'attributes', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.css.v1.Attributes', '10': 'attributes'},
-    {'1': 'custom_attributes', '3': 8, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '10': 'customAttributes'},
+    {
+      '1': 'freshness_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'freshnessTime'
+    },
+    {
+      '1': 'attributes',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.Attributes',
+      '10': 'attributes'
+    },
+    {
+      '1': 'custom_attributes',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '10': 'customAttributes'
+    },
   ],
   '7': {},
 };
@@ -47,7 +82,15 @@ const InsertCssProductInputRequest$json = {
   '1': 'InsertCssProductInputRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'css_product_input', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.css.v1.CssProductInput', '8': {}, '10': 'cssProductInput'},
+    {
+      '1': 'css_product_input',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.CssProductInput',
+      '8': {},
+      '10': 'cssProductInput'
+    },
     {'1': 'feed_id', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'feedId'},
   ],
 };
@@ -64,7 +107,15 @@ const DeleteCssProductInputRequest$json = {
   '1': 'DeleteCssProductInputRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'supplemental_feed_id', '3': 2, '4': 1, '5': 3, '9': 0, '10': 'supplementalFeedId', '17': true},
+    {
+      '1': 'supplemental_feed_id',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'supplementalFeedId',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_supplemental_feed_id'},
@@ -77,4 +128,3 @@ final $typed_data.Uint8List deleteCssProductInputRequestDescriptor = $convert.ba
     'NzLmdvb2dsZWFwaXMuY29tL0Nzc1Byb2R1Y3RJbnB1dFIEbmFtZRI1ChRzdXBwbGVtZW50YWxf'
     'ZmVlZF9pZBgCIAEoA0gAUhJzdXBwbGVtZW50YWxGZWVkSWSIAQFCFwoVX3N1cHBsZW1lbnRhbF'
     '9mZWVkX2lk');
-

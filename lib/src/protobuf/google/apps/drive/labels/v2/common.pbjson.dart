@@ -17,9 +17,31 @@ import 'dart:typed_data' as $typed_data;
 const Lifecycle$json = {
   '1': 'Lifecycle',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.Lifecycle.State', '8': {}, '10': 'state'},
-    {'1': 'has_unpublished_changes', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'hasUnpublishedChanges'},
-    {'1': 'disabled_policy', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy', '10': 'disabledPolicy'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.Lifecycle.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'has_unpublished_changes',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'hasUnpublishedChanges'
+    },
+    {
+      '1': 'disabled_policy',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Lifecycle.DisabledPolicy',
+      '10': 'disabledPolicy'
+    },
   ],
   '3': [Lifecycle_DisabledPolicy$json],
   '4': [Lifecycle_State$json],
@@ -74,8 +96,21 @@ final $typed_data.Uint8List userInfoDescriptor = $convert.base64Decode(
 const BadgeConfig$json = {
   '1': 'BadgeConfig',
   '2': [
-    {'1': 'color', '3': 1, '4': 1, '5': 11, '6': '.google.type.Color', '10': 'color'},
-    {'1': 'priority_override', '3': 2, '4': 1, '5': 3, '10': 'priorityOverride'},
+    {
+      '1': 'color',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Color',
+      '10': 'color'
+    },
+    {
+      '1': 'priority_override',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'priorityOverride'
+    },
   ],
 };
 
@@ -88,9 +123,33 @@ final $typed_data.Uint8List badgeConfigDescriptor = $convert.base64Decode(
 const BadgeColors$json = {
   '1': 'BadgeColors',
   '2': [
-    {'1': 'background_color', '3': 1, '4': 1, '5': 11, '6': '.google.type.Color', '8': {}, '10': 'backgroundColor'},
-    {'1': 'foreground_color', '3': 2, '4': 1, '5': 11, '6': '.google.type.Color', '8': {}, '10': 'foregroundColor'},
-    {'1': 'solo_color', '3': 3, '4': 1, '5': 11, '6': '.google.type.Color', '8': {}, '10': 'soloColor'},
+    {
+      '1': 'background_color',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Color',
+      '8': {},
+      '10': 'backgroundColor'
+    },
+    {
+      '1': 'foreground_color',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Color',
+      '8': {},
+      '10': 'foregroundColor'
+    },
+    {
+      '1': 'solo_color',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Color',
+      '8': {},
+      '10': 'soloColor'
+    },
   ],
 };
 
@@ -110,6 +169,5 @@ const LockStatus$json = {
 };
 
 /// Descriptor for `LockStatus`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List lockStatusDescriptor = $convert.base64Decode(
-    'CgpMb2NrU3RhdHVzEhsKBmxvY2tlZBgBIAEoCEID4EEDUgZsb2NrZWQ=');
-
+final $typed_data.Uint8List lockStatusDescriptor = $convert
+    .base64Decode('CgpMb2NrU3RhdHVzEhsKBmxvY2tlZBgBIAEoCEID4EEDUgZsb2NrZWQ=');

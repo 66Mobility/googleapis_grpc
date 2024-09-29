@@ -18,11 +18,42 @@ const InTotoStatement$json = {
   '1': 'InTotoStatement',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': '_type'},
-    {'1': 'subject', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.Subject', '10': 'subject'},
+    {
+      '1': 'subject',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Subject',
+      '10': 'subject'
+    },
     {'1': 'predicate_type', '3': 3, '4': 1, '5': 9, '10': 'predicateType'},
-    {'1': 'provenance', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoProvenance', '9': 0, '10': 'provenance'},
-    {'1': 'slsa_provenance', '3': 5, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenance', '9': 0, '10': 'slsaProvenance'},
-    {'1': 'slsa_provenance_zero_two', '3': 6, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenanceZeroTwo', '9': 0, '10': 'slsaProvenanceZeroTwo'},
+    {
+      '1': 'provenance',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoProvenance',
+      '9': 0,
+      '10': 'provenance'
+    },
+    {
+      '1': 'slsa_provenance',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenance',
+      '9': 0,
+      '10': 'slsaProvenance'
+    },
+    {
+      '1': 'slsa_provenance_zero_two',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenanceZeroTwo',
+      '9': 0,
+      '10': 'slsaProvenanceZeroTwo'
+    },
   ],
   '8': [
     {'1': 'predicate'},
@@ -44,7 +75,14 @@ const Subject$json = {
   '1': 'Subject',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'digest', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.Subject.DigestEntry', '10': 'digest'},
+    {
+      '1': 'digest',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Subject.DigestEntry',
+      '10': 'digest'
+    },
   ],
   '3': [Subject_DigestEntry$json],
 };
@@ -70,19 +108,54 @@ const InTotoSlsaProvenanceV1$json = {
   '1': 'InTotoSlsaProvenanceV1',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': '_type'},
-    {'1': 'subject', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.Subject', '10': 'subject'},
+    {
+      '1': 'subject',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Subject',
+      '10': 'subject'
+    },
     {'1': 'predicate_type', '3': 3, '4': 1, '5': 9, '10': 'predicateType'},
-    {'1': 'predicate', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.SlsaProvenanceV1', '10': 'predicate'},
+    {
+      '1': 'predicate',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.SlsaProvenanceV1',
+      '10': 'predicate'
+    },
   ],
-  '3': [InTotoSlsaProvenanceV1_SlsaProvenanceV1$json, InTotoSlsaProvenanceV1_BuildDefinition$json, InTotoSlsaProvenanceV1_ResourceDescriptor$json, InTotoSlsaProvenanceV1_RunDetails$json, InTotoSlsaProvenanceV1_ProvenanceBuilder$json, InTotoSlsaProvenanceV1_BuildMetadata$json],
+  '3': [
+    InTotoSlsaProvenanceV1_SlsaProvenanceV1$json,
+    InTotoSlsaProvenanceV1_BuildDefinition$json,
+    InTotoSlsaProvenanceV1_ResourceDescriptor$json,
+    InTotoSlsaProvenanceV1_RunDetails$json,
+    InTotoSlsaProvenanceV1_ProvenanceBuilder$json,
+    InTotoSlsaProvenanceV1_BuildMetadata$json
+  ],
 };
 
 @$core.Deprecated('Use inTotoSlsaProvenanceV1Descriptor instead')
 const InTotoSlsaProvenanceV1_SlsaProvenanceV1$json = {
   '1': 'SlsaProvenanceV1',
   '2': [
-    {'1': 'build_definition', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.BuildDefinition', '10': 'buildDefinition'},
-    {'1': 'run_details', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.RunDetails', '10': 'runDetails'},
+    {
+      '1': 'build_definition',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.BuildDefinition',
+      '10': 'buildDefinition'
+    },
+    {
+      '1': 'run_details',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.RunDetails',
+      '10': 'runDetails'
+    },
   ],
 };
 
@@ -91,9 +164,30 @@ const InTotoSlsaProvenanceV1_BuildDefinition$json = {
   '1': 'BuildDefinition',
   '2': [
     {'1': 'build_type', '3': 1, '4': 1, '5': 9, '10': 'buildType'},
-    {'1': 'external_parameters', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'externalParameters'},
-    {'1': 'internal_parameters', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'internalParameters'},
-    {'1': 'resolved_dependencies', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor', '10': 'resolvedDependencies'},
+    {
+      '1': 'external_parameters',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'externalParameters'
+    },
+    {
+      '1': 'internal_parameters',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'internalParameters'
+    },
+    {
+      '1': 'resolved_dependencies',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor',
+      '10': 'resolvedDependencies'
+    },
   ],
 };
 
@@ -103,13 +197,37 @@ const InTotoSlsaProvenanceV1_ResourceDescriptor$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uri', '3': 2, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'digest', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor.DigestEntry', '10': 'digest'},
+    {
+      '1': 'digest',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor.DigestEntry',
+      '10': 'digest'
+    },
     {'1': 'content', '3': 4, '4': 1, '5': 12, '10': 'content'},
-    {'1': 'download_location', '3': 5, '4': 1, '5': 9, '10': 'downloadLocation'},
+    {
+      '1': 'download_location',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'downloadLocation'
+    },
     {'1': 'media_type', '3': 6, '4': 1, '5': 9, '10': 'mediaType'},
-    {'1': 'annotations', '3': 7, '4': 3, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor.AnnotationsEntry',
+      '10': 'annotations'
+    },
   ],
-  '3': [InTotoSlsaProvenanceV1_ResourceDescriptor_DigestEntry$json, InTotoSlsaProvenanceV1_ResourceDescriptor_AnnotationsEntry$json],
+  '3': [
+    InTotoSlsaProvenanceV1_ResourceDescriptor_DigestEntry$json,
+    InTotoSlsaProvenanceV1_ResourceDescriptor_AnnotationsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use inTotoSlsaProvenanceV1Descriptor instead')
@@ -127,7 +245,14 @@ const InTotoSlsaProvenanceV1_ResourceDescriptor_AnnotationsEntry$json = {
   '1': 'AnnotationsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -136,9 +261,30 @@ const InTotoSlsaProvenanceV1_ResourceDescriptor_AnnotationsEntry$json = {
 const InTotoSlsaProvenanceV1_RunDetails$json = {
   '1': 'RunDetails',
   '2': [
-    {'1': 'builder', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ProvenanceBuilder', '10': 'builder'},
-    {'1': 'metadata', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.BuildMetadata', '10': 'metadata'},
-    {'1': 'byproducts', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor', '10': 'byproducts'},
+    {
+      '1': 'builder',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ProvenanceBuilder',
+      '10': 'builder'
+    },
+    {
+      '1': 'metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.BuildMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'byproducts',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor',
+      '10': 'byproducts'
+    },
   ],
 };
 
@@ -147,8 +293,22 @@ const InTotoSlsaProvenanceV1_ProvenanceBuilder$json = {
   '1': 'ProvenanceBuilder',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'version', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ProvenanceBuilder.VersionEntry', '10': 'version'},
-    {'1': 'builder_dependencies', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor', '10': 'builderDependencies'},
+    {
+      '1': 'version',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ProvenanceBuilder.VersionEntry',
+      '10': 'version'
+    },
+    {
+      '1': 'builder_dependencies',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1.ResourceDescriptor',
+      '10': 'builderDependencies'
+    },
   ],
   '3': [InTotoSlsaProvenanceV1_ProvenanceBuilder_VersionEntry$json],
 };
@@ -168,8 +328,22 @@ const InTotoSlsaProvenanceV1_BuildMetadata$json = {
   '1': 'BuildMetadata',
   '2': [
     {'1': 'invocation_id', '3': 1, '4': 1, '5': 9, '10': 'invocationId'},
-    {'1': 'started_on', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startedOn'},
-    {'1': 'finished_on', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'finishedOn'},
+    {
+      '1': 'started_on',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startedOn'
+    },
+    {
+      '1': 'finished_on',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'finishedOn'
+    },
   ],
 };
 
@@ -211,4 +385,3 @@ final $typed_data.Uint8List inTotoSlsaProvenanceV1Descriptor = $convert.base64De
     'lvbklkEjkKCnN0YXJ0ZWRfb24YAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUglz'
     'dGFydGVkT24SOwoLZmluaXNoZWRfb24YAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW'
     '1wUgpmaW5pc2hlZE9u');
-

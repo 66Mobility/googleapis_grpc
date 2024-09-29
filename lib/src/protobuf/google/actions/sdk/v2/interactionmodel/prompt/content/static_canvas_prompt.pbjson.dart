@@ -18,10 +18,32 @@ const StaticCanvasPrompt$json = {
   '1': 'StaticCanvasPrompt',
   '2': [
     {'1': 'url', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'url'},
-    {'1': 'data', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.Value', '8': {}, '10': 'data'},
+    {
+      '1': 'data',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '8': {},
+      '10': 'data'
+    },
     {'1': 'suppress_mic', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'suppressMic'},
-    {'1': 'send_state_data_to_canvas_app', '3': 5, '4': 1, '5': 8, '8': {}, '10': 'sendStateDataToCanvasApp'},
-    {'1': 'enable_full_screen', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'enableFullScreen'},
+    {
+      '1': 'send_state_data_to_canvas_app',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'sendStateDataToCanvasApp'
+    },
+    {
+      '1': 'enable_full_screen',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'enableFullScreen'
+    },
   ],
 };
 
@@ -32,4 +54,3 @@ final $typed_data.Uint8List staticCanvasPromptDescriptor = $convert.base64Decode
     'ASgIQgPgQQFSC3N1cHByZXNzTWljEkQKHXNlbmRfc3RhdGVfZGF0YV90b19jYW52YXNfYXBwGA'
     'UgASgIQgPgQQFSGHNlbmRTdGF0ZURhdGFUb0NhbnZhc0FwcBIxChJlbmFibGVfZnVsbF9zY3Jl'
     'ZW4YBiABKAhCA+BBAVIQZW5hYmxlRnVsbFNjcmVlbg==');
-

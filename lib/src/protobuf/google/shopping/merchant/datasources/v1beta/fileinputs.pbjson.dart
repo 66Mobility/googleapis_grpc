@@ -17,9 +17,27 @@ import 'dart:typed_data' as $typed_data;
 const FileInput$json = {
   '1': 'FileInput',
   '2': [
-    {'1': 'fetch_settings', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.FileInput.FetchSettings', '8': {}, '10': 'fetchSettings'},
+    {
+      '1': 'fetch_settings',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.FileInput.FetchSettings',
+      '8': {},
+      '10': 'fetchSettings'
+    },
     {'1': 'file_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'fileName'},
-    {'1': 'file_input_type', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.datasources.v1beta.FileInput.FileInputType', '8': {}, '10': 'fileInputType'},
+    {
+      '1': 'file_input_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.FileInput.FileInputType',
+      '8': {},
+      '10': 'fileInputType'
+    },
   ],
   '3': [FileInput_FetchSettings$json],
   '4': [FileInput_FileInputType$json],
@@ -31,10 +49,35 @@ const FileInput_FetchSettings$json = {
   '2': [
     {'1': 'enabled', '3': 1, '4': 1, '5': 8, '8': {}, '10': 'enabled'},
     {'1': 'day_of_month', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'dayOfMonth'},
-    {'1': 'time_of_day', '3': 3, '4': 1, '5': 11, '6': '.google.type.TimeOfDay', '8': {}, '10': 'timeOfDay'},
-    {'1': 'day_of_week', '3': 4, '4': 1, '5': 14, '6': '.google.type.DayOfWeek', '8': {}, '10': 'dayOfWeek'},
+    {
+      '1': 'time_of_day',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.TimeOfDay',
+      '8': {},
+      '10': 'timeOfDay'
+    },
+    {
+      '1': 'day_of_week',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.type.DayOfWeek',
+      '8': {},
+      '10': 'dayOfWeek'
+    },
     {'1': 'time_zone', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'timeZone'},
-    {'1': 'frequency', '3': 6, '4': 1, '5': 14, '6': '.google.shopping.merchant.datasources.v1beta.FileInput.FetchSettings.Frequency', '8': {}, '10': 'frequency'},
+    {
+      '1': 'frequency',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.FileInput.FetchSettings.Frequency',
+      '8': {},
+      '10': 'frequency'
+    },
     {'1': 'fetch_uri', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'fetchUri'},
     {'1': 'username', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'username'},
     {'1': 'password', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'password'},
@@ -83,4 +126,3 @@ final $typed_data.Uint8List fileInputDescriptor = $convert.base64Decode(
     'RlJFUVVFTkNZX0RBSUxZEAESFAoQRlJFUVVFTkNZX1dFRUtMWRACEhUKEUZSRVFVRU5DWV9NT0'
     '5USExZEAMiWgoNRmlsZUlucHV0VHlwZRIfChtGSUxFX0lOUFVUX1RZUEVfVU5TUEVDSUZJRUQQ'
     'ABIKCgZVUExPQUQQARIJCgVGRVRDSBACEhEKDUdPT0dMRV9TSEVFVFMQAw==');
-

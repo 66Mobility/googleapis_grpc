@@ -59,46 +59,232 @@ const Version$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'automatic_scaling', '3': 3, '4': 1, '5': 11, '6': '.google.appengine.v1beta.AutomaticScaling', '9': 0, '10': 'automaticScaling'},
-    {'1': 'basic_scaling', '3': 4, '4': 1, '5': 11, '6': '.google.appengine.v1beta.BasicScaling', '9': 0, '10': 'basicScaling'},
-    {'1': 'manual_scaling', '3': 5, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ManualScaling', '9': 0, '10': 'manualScaling'},
-    {'1': 'inbound_services', '3': 6, '4': 3, '5': 14, '6': '.google.appengine.v1beta.InboundServiceType', '10': 'inboundServices'},
+    {
+      '1': 'automatic_scaling',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.AutomaticScaling',
+      '9': 0,
+      '10': 'automaticScaling'
+    },
+    {
+      '1': 'basic_scaling',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.BasicScaling',
+      '9': 0,
+      '10': 'basicScaling'
+    },
+    {
+      '1': 'manual_scaling',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ManualScaling',
+      '9': 0,
+      '10': 'manualScaling'
+    },
+    {
+      '1': 'inbound_services',
+      '3': 6,
+      '4': 3,
+      '5': 14,
+      '6': '.google.appengine.v1beta.InboundServiceType',
+      '10': 'inboundServices'
+    },
     {'1': 'instance_class', '3': 7, '4': 1, '5': 9, '10': 'instanceClass'},
-    {'1': 'network', '3': 8, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Network', '10': 'network'},
+    {
+      '1': 'network',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Network',
+      '10': 'network'
+    },
     {'1': 'zones', '3': 118, '4': 3, '5': 9, '10': 'zones'},
-    {'1': 'resources', '3': 9, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Resources', '10': 'resources'},
+    {
+      '1': 'resources',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Resources',
+      '10': 'resources'
+    },
     {'1': 'runtime', '3': 10, '4': 1, '5': 9, '10': 'runtime'},
     {'1': 'runtime_channel', '3': 117, '4': 1, '5': 9, '10': 'runtimeChannel'},
     {'1': 'threadsafe', '3': 11, '4': 1, '5': 8, '10': 'threadsafe'},
     {'1': 'vm', '3': 12, '4': 1, '5': 8, '10': 'vm'},
     {'1': 'app_engine_apis', '3': 128, '4': 1, '5': 8, '10': 'appEngineApis'},
-    {'1': 'beta_settings', '3': 13, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Version.BetaSettingsEntry', '10': 'betaSettings'},
+    {
+      '1': 'beta_settings',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Version.BetaSettingsEntry',
+      '10': 'betaSettings'
+    },
     {'1': 'env', '3': 14, '4': 1, '5': 9, '10': 'env'},
-    {'1': 'serving_status', '3': 15, '4': 1, '5': 14, '6': '.google.appengine.v1beta.ServingStatus', '10': 'servingStatus'},
+    {
+      '1': 'serving_status',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.ServingStatus',
+      '10': 'servingStatus'
+    },
     {'1': 'created_by', '3': 16, '4': 1, '5': 9, '10': 'createdBy'},
-    {'1': 'create_time', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'create_time',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
     {'1': 'disk_usage_bytes', '3': 18, '4': 1, '5': 3, '10': 'diskUsageBytes'},
-    {'1': 'runtime_api_version', '3': 21, '4': 1, '5': 9, '10': 'runtimeApiVersion'},
-    {'1': 'runtime_main_executable_path', '3': 22, '4': 1, '5': 9, '10': 'runtimeMainExecutablePath'},
+    {
+      '1': 'runtime_api_version',
+      '3': 21,
+      '4': 1,
+      '5': 9,
+      '10': 'runtimeApiVersion'
+    },
+    {
+      '1': 'runtime_main_executable_path',
+      '3': 22,
+      '4': 1,
+      '5': 9,
+      '10': 'runtimeMainExecutablePath'
+    },
     {'1': 'service_account', '3': 127, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'handlers', '3': 100, '4': 3, '5': 11, '6': '.google.appengine.v1beta.UrlMap', '10': 'handlers'},
-    {'1': 'error_handlers', '3': 101, '4': 3, '5': 11, '6': '.google.appengine.v1beta.ErrorHandler', '10': 'errorHandlers'},
-    {'1': 'libraries', '3': 102, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Library', '10': 'libraries'},
-    {'1': 'api_config', '3': 103, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ApiConfigHandler', '10': 'apiConfig'},
-    {'1': 'env_variables', '3': 104, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Version.EnvVariablesEntry', '10': 'envVariables'},
-    {'1': 'build_env_variables', '3': 125, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Version.BuildEnvVariablesEntry', '10': 'buildEnvVariables'},
-    {'1': 'default_expiration', '3': 105, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'defaultExpiration'},
-    {'1': 'health_check', '3': 106, '4': 1, '5': 11, '6': '.google.appengine.v1beta.HealthCheck', '10': 'healthCheck'},
-    {'1': 'readiness_check', '3': 112, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ReadinessCheck', '10': 'readinessCheck'},
-    {'1': 'liveness_check', '3': 113, '4': 1, '5': 11, '6': '.google.appengine.v1beta.LivenessCheck', '10': 'livenessCheck'},
-    {'1': 'nobuild_files_regex', '3': 107, '4': 1, '5': 9, '10': 'nobuildFilesRegex'},
-    {'1': 'deployment', '3': 108, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Deployment', '10': 'deployment'},
+    {
+      '1': 'handlers',
+      '3': 100,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.UrlMap',
+      '10': 'handlers'
+    },
+    {
+      '1': 'error_handlers',
+      '3': 101,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ErrorHandler',
+      '10': 'errorHandlers'
+    },
+    {
+      '1': 'libraries',
+      '3': 102,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Library',
+      '10': 'libraries'
+    },
+    {
+      '1': 'api_config',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ApiConfigHandler',
+      '10': 'apiConfig'
+    },
+    {
+      '1': 'env_variables',
+      '3': 104,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Version.EnvVariablesEntry',
+      '10': 'envVariables'
+    },
+    {
+      '1': 'build_env_variables',
+      '3': 125,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Version.BuildEnvVariablesEntry',
+      '10': 'buildEnvVariables'
+    },
+    {
+      '1': 'default_expiration',
+      '3': 105,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'defaultExpiration'
+    },
+    {
+      '1': 'health_check',
+      '3': 106,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.HealthCheck',
+      '10': 'healthCheck'
+    },
+    {
+      '1': 'readiness_check',
+      '3': 112,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ReadinessCheck',
+      '10': 'readinessCheck'
+    },
+    {
+      '1': 'liveness_check',
+      '3': 113,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.LivenessCheck',
+      '10': 'livenessCheck'
+    },
+    {
+      '1': 'nobuild_files_regex',
+      '3': 107,
+      '4': 1,
+      '5': 9,
+      '10': 'nobuildFilesRegex'
+    },
+    {
+      '1': 'deployment',
+      '3': 108,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Deployment',
+      '10': 'deployment'
+    },
     {'1': 'version_url', '3': 109, '4': 1, '5': 9, '10': 'versionUrl'},
-    {'1': 'endpoints_api_service', '3': 110, '4': 1, '5': 11, '6': '.google.appengine.v1beta.EndpointsApiService', '10': 'endpointsApiService'},
-    {'1': 'entrypoint', '3': 122, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Entrypoint', '10': 'entrypoint'},
-    {'1': 'vpc_access_connector', '3': 121, '4': 1, '5': 11, '6': '.google.appengine.v1beta.VpcAccessConnector', '10': 'vpcAccessConnector'},
+    {
+      '1': 'endpoints_api_service',
+      '3': 110,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.EndpointsApiService',
+      '10': 'endpointsApiService'
+    },
+    {
+      '1': 'entrypoint',
+      '3': 122,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Entrypoint',
+      '10': 'entrypoint'
+    },
+    {
+      '1': 'vpc_access_connector',
+      '3': 121,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.VpcAccessConnector',
+      '10': 'vpcAccessConnector'
+    },
   ],
-  '3': [Version_BetaSettingsEntry$json, Version_EnvVariablesEntry$json, Version_BuildEnvVariablesEntry$json],
+  '3': [
+    Version_BetaSettingsEntry$json,
+    Version_EnvVariablesEntry$json,
+    Version_BuildEnvVariablesEntry$json
+  ],
   '8': [
     {'1': 'scaling'},
   ],
@@ -190,8 +376,21 @@ const EndpointsApiService$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'config_id', '3': 2, '4': 1, '5': 9, '10': 'configId'},
-    {'1': 'rollout_strategy', '3': 3, '4': 1, '5': 14, '6': '.google.appengine.v1beta.EndpointsApiService.RolloutStrategy', '10': 'rolloutStrategy'},
-    {'1': 'disable_trace_sampling', '3': 4, '4': 1, '5': 8, '10': 'disableTraceSampling'},
+    {
+      '1': 'rollout_strategy',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.EndpointsApiService.RolloutStrategy',
+      '10': 'rolloutStrategy'
+    },
+    {
+      '1': 'disable_trace_sampling',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'disableTraceSampling'
+    },
   ],
   '4': [EndpointsApiService_RolloutStrategy$json],
 };
@@ -219,20 +418,113 @@ final $typed_data.Uint8List endpointsApiServiceDescriptor = $convert.base64Decod
 const AutomaticScaling$json = {
   '1': 'AutomaticScaling',
   '2': [
-    {'1': 'cool_down_period', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'coolDownPeriod'},
-    {'1': 'cpu_utilization', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.CpuUtilization', '10': 'cpuUtilization'},
-    {'1': 'max_concurrent_requests', '3': 3, '4': 1, '5': 5, '10': 'maxConcurrentRequests'},
-    {'1': 'max_idle_instances', '3': 4, '4': 1, '5': 5, '10': 'maxIdleInstances'},
-    {'1': 'max_total_instances', '3': 5, '4': 1, '5': 5, '10': 'maxTotalInstances'},
-    {'1': 'max_pending_latency', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maxPendingLatency'},
-    {'1': 'min_idle_instances', '3': 7, '4': 1, '5': 5, '10': 'minIdleInstances'},
-    {'1': 'min_total_instances', '3': 8, '4': 1, '5': 5, '10': 'minTotalInstances'},
-    {'1': 'min_pending_latency', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'minPendingLatency'},
-    {'1': 'request_utilization', '3': 10, '4': 1, '5': 11, '6': '.google.appengine.v1beta.RequestUtilization', '10': 'requestUtilization'},
-    {'1': 'disk_utilization', '3': 11, '4': 1, '5': 11, '6': '.google.appengine.v1beta.DiskUtilization', '10': 'diskUtilization'},
-    {'1': 'network_utilization', '3': 12, '4': 1, '5': 11, '6': '.google.appengine.v1beta.NetworkUtilization', '10': 'networkUtilization'},
-    {'1': 'custom_metrics', '3': 21, '4': 3, '5': 11, '6': '.google.appengine.v1beta.CustomMetric', '10': 'customMetrics'},
-    {'1': 'standard_scheduler_settings', '3': 20, '4': 1, '5': 11, '6': '.google.appengine.v1beta.StandardSchedulerSettings', '10': 'standardSchedulerSettings'},
+    {
+      '1': 'cool_down_period',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'coolDownPeriod'
+    },
+    {
+      '1': 'cpu_utilization',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.CpuUtilization',
+      '10': 'cpuUtilization'
+    },
+    {
+      '1': 'max_concurrent_requests',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'maxConcurrentRequests'
+    },
+    {
+      '1': 'max_idle_instances',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'maxIdleInstances'
+    },
+    {
+      '1': 'max_total_instances',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'maxTotalInstances'
+    },
+    {
+      '1': 'max_pending_latency',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maxPendingLatency'
+    },
+    {
+      '1': 'min_idle_instances',
+      '3': 7,
+      '4': 1,
+      '5': 5,
+      '10': 'minIdleInstances'
+    },
+    {
+      '1': 'min_total_instances',
+      '3': 8,
+      '4': 1,
+      '5': 5,
+      '10': 'minTotalInstances'
+    },
+    {
+      '1': 'min_pending_latency',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'minPendingLatency'
+    },
+    {
+      '1': 'request_utilization',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.RequestUtilization',
+      '10': 'requestUtilization'
+    },
+    {
+      '1': 'disk_utilization',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.DiskUtilization',
+      '10': 'diskUtilization'
+    },
+    {
+      '1': 'network_utilization',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.NetworkUtilization',
+      '10': 'networkUtilization'
+    },
+    {
+      '1': 'custom_metrics',
+      '3': 21,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.CustomMetric',
+      '10': 'customMetrics'
+    },
+    {
+      '1': 'standard_scheduler_settings',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.StandardSchedulerSettings',
+      '10': 'standardSchedulerSettings'
+    },
   ],
 };
 
@@ -262,7 +554,14 @@ final $typed_data.Uint8List automaticScalingDescriptor = $convert.base64Decode(
 const BasicScaling$json = {
   '1': 'BasicScaling',
   '2': [
-    {'1': 'idle_timeout', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'idleTimeout'},
+    {
+      '1': 'idle_timeout',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'idleTimeout'
+    },
     {'1': 'max_instances', '3': 2, '4': 1, '5': 5, '10': 'maxInstances'},
   ],
 };
@@ -289,8 +588,21 @@ final $typed_data.Uint8List manualScalingDescriptor = $convert.base64Decode(
 const CpuUtilization$json = {
   '1': 'CpuUtilization',
   '2': [
-    {'1': 'aggregation_window_length', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'aggregationWindowLength'},
-    {'1': 'target_utilization', '3': 2, '4': 1, '5': 1, '10': 'targetUtilization'},
+    {
+      '1': 'aggregation_window_length',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'aggregationWindowLength'
+    },
+    {
+      '1': 'target_utilization',
+      '3': 2,
+      '4': 1,
+      '5': 1,
+      '10': 'targetUtilization'
+    },
   ],
 };
 
@@ -304,8 +616,20 @@ final $typed_data.Uint8List cpuUtilizationDescriptor = $convert.base64Decode(
 const RequestUtilization$json = {
   '1': 'RequestUtilization',
   '2': [
-    {'1': 'target_request_count_per_second', '3': 1, '4': 1, '5': 5, '10': 'targetRequestCountPerSecond'},
-    {'1': 'target_concurrent_requests', '3': 2, '4': 1, '5': 5, '10': 'targetConcurrentRequests'},
+    {
+      '1': 'target_request_count_per_second',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'targetRequestCountPerSecond'
+    },
+    {
+      '1': 'target_concurrent_requests',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'targetConcurrentRequests'
+    },
   ],
 };
 
@@ -319,10 +643,34 @@ final $typed_data.Uint8List requestUtilizationDescriptor = $convert.base64Decode
 const DiskUtilization$json = {
   '1': 'DiskUtilization',
   '2': [
-    {'1': 'target_write_bytes_per_second', '3': 14, '4': 1, '5': 5, '10': 'targetWriteBytesPerSecond'},
-    {'1': 'target_write_ops_per_second', '3': 15, '4': 1, '5': 5, '10': 'targetWriteOpsPerSecond'},
-    {'1': 'target_read_bytes_per_second', '3': 16, '4': 1, '5': 5, '10': 'targetReadBytesPerSecond'},
-    {'1': 'target_read_ops_per_second', '3': 17, '4': 1, '5': 5, '10': 'targetReadOpsPerSecond'},
+    {
+      '1': 'target_write_bytes_per_second',
+      '3': 14,
+      '4': 1,
+      '5': 5,
+      '10': 'targetWriteBytesPerSecond'
+    },
+    {
+      '1': 'target_write_ops_per_second',
+      '3': 15,
+      '4': 1,
+      '5': 5,
+      '10': 'targetWriteOpsPerSecond'
+    },
+    {
+      '1': 'target_read_bytes_per_second',
+      '3': 16,
+      '4': 1,
+      '5': 5,
+      '10': 'targetReadBytesPerSecond'
+    },
+    {
+      '1': 'target_read_ops_per_second',
+      '3': 17,
+      '4': 1,
+      '5': 5,
+      '10': 'targetReadOpsPerSecond'
+    },
   ],
 };
 
@@ -338,10 +686,34 @@ final $typed_data.Uint8List diskUtilizationDescriptor = $convert.base64Decode(
 const NetworkUtilization$json = {
   '1': 'NetworkUtilization',
   '2': [
-    {'1': 'target_sent_bytes_per_second', '3': 1, '4': 1, '5': 5, '10': 'targetSentBytesPerSecond'},
-    {'1': 'target_sent_packets_per_second', '3': 11, '4': 1, '5': 5, '10': 'targetSentPacketsPerSecond'},
-    {'1': 'target_received_bytes_per_second', '3': 12, '4': 1, '5': 5, '10': 'targetReceivedBytesPerSecond'},
-    {'1': 'target_received_packets_per_second', '3': 13, '4': 1, '5': 5, '10': 'targetReceivedPacketsPerSecond'},
+    {
+      '1': 'target_sent_bytes_per_second',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'targetSentBytesPerSecond'
+    },
+    {
+      '1': 'target_sent_packets_per_second',
+      '3': 11,
+      '4': 1,
+      '5': 5,
+      '10': 'targetSentPacketsPerSecond'
+    },
+    {
+      '1': 'target_received_bytes_per_second',
+      '3': 12,
+      '4': 1,
+      '5': 5,
+      '10': 'targetReceivedBytesPerSecond'
+    },
+    {
+      '1': 'target_received_packets_per_second',
+      '3': 13,
+      '4': 1,
+      '5': 5,
+      '10': 'targetReceivedPacketsPerSecond'
+    },
   ],
 };
 
@@ -360,8 +732,22 @@ const CustomMetric$json = {
   '2': [
     {'1': 'metric_name', '3': 1, '4': 1, '5': 9, '10': 'metricName'},
     {'1': 'target_type', '3': 2, '4': 1, '5': 9, '10': 'targetType'},
-    {'1': 'target_utilization', '3': 3, '4': 1, '5': 1, '9': 0, '10': 'targetUtilization'},
-    {'1': 'single_instance_assignment', '3': 4, '4': 1, '5': 1, '9': 0, '10': 'singleInstanceAssignment'},
+    {
+      '1': 'target_utilization',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'targetUtilization'
+    },
+    {
+      '1': 'single_instance_assignment',
+      '3': 4,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'singleInstanceAssignment'
+    },
     {'1': 'filter', '3': 5, '4': 1, '5': 9, '10': 'filter'},
   ],
   '8': [
@@ -381,8 +767,20 @@ final $typed_data.Uint8List customMetricDescriptor = $convert.base64Decode(
 const StandardSchedulerSettings$json = {
   '1': 'StandardSchedulerSettings',
   '2': [
-    {'1': 'target_cpu_utilization', '3': 1, '4': 1, '5': 1, '10': 'targetCpuUtilization'},
-    {'1': 'target_throughput_utilization', '3': 2, '4': 1, '5': 1, '10': 'targetThroughputUtilization'},
+    {
+      '1': 'target_cpu_utilization',
+      '3': 1,
+      '4': 1,
+      '5': 1,
+      '10': 'targetCpuUtilization'
+    },
+    {
+      '1': 'target_throughput_utilization',
+      '3': 2,
+      '4': 1,
+      '5': 1,
+      '10': 'targetThroughputUtilization'
+    },
     {'1': 'min_instances', '3': 3, '4': 1, '5': 5, '10': 'minInstances'},
     {'1': 'max_instances', '3': 4, '4': 1, '5': 5, '10': 'maxInstances'},
   ],
@@ -437,7 +835,14 @@ const Resources$json = {
     {'1': 'cpu', '3': 1, '4': 1, '5': 1, '10': 'cpu'},
     {'1': 'disk_gb', '3': 2, '4': 1, '5': 1, '10': 'diskGb'},
     {'1': 'memory_gb', '3': 3, '4': 1, '5': 1, '10': 'memoryGb'},
-    {'1': 'volumes', '3': 4, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Volume', '10': 'volumes'},
+    {
+      '1': 'volumes',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Volume',
+      '10': 'volumes'
+    },
     {'1': 'kms_key_reference', '3': 5, '4': 1, '5': 9, '10': 'kmsKeyReference'},
   ],
 };
@@ -458,8 +863,8 @@ const VpcAccessConnector$json = {
 };
 
 /// Descriptor for `VpcAccessConnector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List vpcAccessConnectorDescriptor = $convert.base64Decode(
-    'ChJWcGNBY2Nlc3NDb25uZWN0b3ISEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List vpcAccessConnectorDescriptor = $convert
+    .base64Decode('ChJWcGNBY2Nlc3NDb25uZWN0b3ISEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use entrypointDescriptor instead')
 const Entrypoint$json = {
@@ -475,4 +880,3 @@ const Entrypoint$json = {
 /// Descriptor for `Entrypoint`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List entrypointDescriptor = $convert.base64Decode(
     'CgpFbnRyeXBvaW50EhYKBXNoZWxsGAEgASgJSABSBXNoZWxsQgkKB2NvbW1hbmQ=');
-

@@ -18,9 +18,21 @@ const ReadIterationStats$json = {
   '1': 'ReadIterationStats',
   '2': [
     {'1': 'rows_seen_count', '3': 1, '4': 1, '5': 3, '10': 'rowsSeenCount'},
-    {'1': 'rows_returned_count', '3': 2, '4': 1, '5': 3, '10': 'rowsReturnedCount'},
+    {
+      '1': 'rows_returned_count',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'rowsReturnedCount'
+    },
     {'1': 'cells_seen_count', '3': 3, '4': 1, '5': 3, '10': 'cellsSeenCount'},
-    {'1': 'cells_returned_count', '3': 4, '4': 1, '5': 3, '10': 'cellsReturnedCount'},
+    {
+      '1': 'cells_returned_count',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '10': 'cellsReturnedCount'
+    },
   ],
 };
 
@@ -35,7 +47,14 @@ final $typed_data.Uint8List readIterationStatsDescriptor = $convert.base64Decode
 const RequestLatencyStats$json = {
   '1': 'RequestLatencyStats',
   '2': [
-    {'1': 'frontend_server_latency', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'frontendServerLatency'},
+    {
+      '1': 'frontend_server_latency',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'frontendServerLatency'
+    },
   ],
 };
 
@@ -48,8 +67,22 @@ final $typed_data.Uint8List requestLatencyStatsDescriptor = $convert.base64Decod
 const FullReadStatsView$json = {
   '1': 'FullReadStatsView',
   '2': [
-    {'1': 'read_iteration_stats', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.ReadIterationStats', '10': 'readIterationStats'},
-    {'1': 'request_latency_stats', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.RequestLatencyStats', '10': 'requestLatencyStats'},
+    {
+      '1': 'read_iteration_stats',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ReadIterationStats',
+      '10': 'readIterationStats'
+    },
+    {
+      '1': 'request_latency_stats',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RequestLatencyStats',
+      '10': 'requestLatencyStats'
+    },
   ],
 };
 
@@ -64,7 +97,15 @@ final $typed_data.Uint8List fullReadStatsViewDescriptor = $convert.base64Decode(
 const RequestStats$json = {
   '1': 'RequestStats',
   '2': [
-    {'1': 'full_read_stats_view', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.FullReadStatsView', '9': 0, '10': 'fullReadStatsView'},
+    {
+      '1': 'full_read_stats_view',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.FullReadStatsView',
+      '9': 0,
+      '10': 'fullReadStatsView'
+    },
   ],
   '8': [
     {'1': 'stats_view'},
@@ -76,4 +117,3 @@ final $typed_data.Uint8List requestStatsDescriptor = $convert.base64Decode(
     'CgxSZXF1ZXN0U3RhdHMSWAoUZnVsbF9yZWFkX3N0YXRzX3ZpZXcYASABKAsyJS5nb29nbGUuYm'
     'lndGFibGUudjIuRnVsbFJlYWRTdGF0c1ZpZXdIAFIRZnVsbFJlYWRTdGF0c1ZpZXdCDAoKc3Rh'
     'dHNfdmlldw==');
-

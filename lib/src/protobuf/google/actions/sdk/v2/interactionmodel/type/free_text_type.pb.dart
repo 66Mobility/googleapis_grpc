@@ -28,33 +28,44 @@ class FreeTextType extends $pb.GeneratedMessage {
     return $result;
   }
   FreeTextType._() : super();
-  factory FreeTextType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FreeTextType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FreeTextType.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FreeTextType.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FreeTextType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
-    ..aOM<$282.EntityDisplay>(2, _omitFieldNames ? '' : 'display', subBuilder: $282.EntityDisplay.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FreeTextType',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.type'),
+      createEmptyInstance: create)
+    ..aOM<$282.EntityDisplay>(2, _omitFieldNames ? '' : 'display',
+        subBuilder: $282.EntityDisplay.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FreeTextType clone() => FreeTextType()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FreeTextType copyWith(void Function(FreeTextType) updates) => super.copyWith((message) => updates(message as FreeTextType)) as FreeTextType;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FreeTextType copyWith(void Function(FreeTextType) updates) =>
+      super.copyWith((message) => updates(message as FreeTextType))
+          as FreeTextType;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FreeTextType create() => FreeTextType._();
   FreeTextType createEmptyInstance() => create();
-  static $pb.PbList<FreeTextType> createRepeated() => $pb.PbList<FreeTextType>();
+  static $pb.PbList<FreeTextType> createRepeated() =>
+      $pb.PbList<FreeTextType>();
   @$core.pragma('dart2js:noInline')
-  static FreeTextType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FreeTextType>(create);
+  static FreeTextType getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FreeTextType>(create);
   static FreeTextType? _defaultInstance;
 
   /// Optional. Elements that will be displayed on the canvas once an entity is extracted
@@ -62,7 +73,10 @@ class FreeTextType extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $282.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(2)
-  set display($282.EntityDisplay v) { setField(2, v); }
+  set display($282.EntityDisplay v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplay() => $_has(0);
   @$pb.TagNumber(2)
@@ -71,6 +85,6 @@ class FreeTextType extends $pb.GeneratedMessage {
   $282.EntityDisplay ensureDisplay() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

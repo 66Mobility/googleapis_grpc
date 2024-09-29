@@ -39,9 +39,10 @@ const FlexResourceSchedulingGoal$json = {
 };
 
 /// Descriptor for `FlexResourceSchedulingGoal`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List flexResourceSchedulingGoalDescriptor = $convert.base64Decode(
-    'ChpGbGV4UmVzb3VyY2VTY2hlZHVsaW5nR29hbBIWChJGTEVYUlNfVU5TUEVDSUZJRUQQABIaCh'
-    'ZGTEVYUlNfU1BFRURfT1BUSU1JWkVEEAESGQoVRkxFWFJTX0NPU1RfT1BUSU1JWkVEEAI=');
+final $typed_data.Uint8List flexResourceSchedulingGoalDescriptor =
+    $convert.base64Decode(
+        'ChpGbGV4UmVzb3VyY2VTY2hlZHVsaW5nR29hbBIWChJGTEVYUlNfVU5TUEVDSUZJRUQQABIaCh'
+        'ZGTEVYUlNfU1BFRURfT1BUSU1JWkVEEAESGQoVRkxFWFJTX0NPU1RfT1BUSU1JWkVEEAI=');
 
 @$core.Deprecated('Use teardownPolicyDescriptor instead')
 const TeardownPolicy$json = {
@@ -103,9 +104,10 @@ const WorkerIPAddressConfiguration$json = {
 };
 
 /// Descriptor for `WorkerIPAddressConfiguration`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List workerIPAddressConfigurationDescriptor = $convert.base64Decode(
-    'ChxXb3JrZXJJUEFkZHJlc3NDb25maWd1cmF0aW9uEhkKFVdPUktFUl9JUF9VTlNQRUNJRklFRB'
-    'AAEhQKEFdPUktFUl9JUF9QVUJMSUMQARIVChFXT1JLRVJfSVBfUFJJVkFURRAC');
+final $typed_data.Uint8List workerIPAddressConfigurationDescriptor =
+    $convert.base64Decode(
+        'ChxXb3JrZXJJUEFkZHJlc3NDb25maWd1cmF0aW9uEhkKFVdPUktFUl9JUF9VTlNQRUNJRklFRB'
+        'AAEhQKEFdPUktFUl9JUF9QVUJMSUMQARIVChFXT1JLRVJfSVBfUFJJVkFURRAC');
 
 @$core.Deprecated('Use shuffleModeDescriptor instead')
 const ShuffleMode$json = {
@@ -126,23 +128,104 @@ final $typed_data.Uint8List shuffleModeDescriptor = $convert.base64Decode(
 const Environment$json = {
   '1': 'Environment',
   '2': [
-    {'1': 'temp_storage_prefix', '3': 1, '4': 1, '5': 9, '10': 'tempStoragePrefix'},
-    {'1': 'cluster_manager_api_service', '3': 2, '4': 1, '5': 9, '10': 'clusterManagerApiService'},
+    {
+      '1': 'temp_storage_prefix',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'tempStoragePrefix'
+    },
+    {
+      '1': 'cluster_manager_api_service',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'clusterManagerApiService'
+    },
     {'1': 'experiments', '3': 3, '4': 3, '5': 9, '10': 'experiments'},
     {'1': 'service_options', '3': 16, '4': 3, '5': 9, '10': 'serviceOptions'},
-    {'1': 'service_kms_key_name', '3': 12, '4': 1, '5': 9, '10': 'serviceKmsKeyName'},
-    {'1': 'worker_pools', '3': 4, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.WorkerPool', '10': 'workerPools'},
-    {'1': 'user_agent', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'userAgent'},
-    {'1': 'version', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'version'},
+    {
+      '1': 'service_kms_key_name',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceKmsKeyName'
+    },
+    {
+      '1': 'worker_pools',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.WorkerPool',
+      '10': 'workerPools'
+    },
+    {
+      '1': 'user_agent',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'userAgent'
+    },
+    {
+      '1': 'version',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'version'
+    },
     {'1': 'dataset', '3': 7, '4': 1, '5': 9, '10': 'dataset'},
-    {'1': 'sdk_pipeline_options', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'sdkPipelineOptions'},
-    {'1': 'internal_experiments', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'internalExperiments'},
-    {'1': 'service_account_email', '3': 10, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
-    {'1': 'flex_resource_scheduling_goal', '3': 11, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.FlexResourceSchedulingGoal', '10': 'flexResourceSchedulingGoal'},
+    {
+      '1': 'sdk_pipeline_options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'sdkPipelineOptions'
+    },
+    {
+      '1': 'internal_experiments',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'internalExperiments'
+    },
+    {
+      '1': 'service_account_email',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
+    {
+      '1': 'flex_resource_scheduling_goal',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.FlexResourceSchedulingGoal',
+      '10': 'flexResourceSchedulingGoal'
+    },
     {'1': 'worker_region', '3': 13, '4': 1, '5': 9, '10': 'workerRegion'},
     {'1': 'worker_zone', '3': 14, '4': 1, '5': 9, '10': 'workerZone'},
-    {'1': 'shuffle_mode', '3': 15, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.ShuffleMode', '8': {}, '10': 'shuffleMode'},
-    {'1': 'debug_options', '3': 17, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.DebugOptions', '10': 'debugOptions'},
+    {
+      '1': 'shuffle_mode',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.ShuffleMode',
+      '8': {},
+      '10': 'shuffleMode'
+    },
+    {
+      '1': 'debug_options',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.DebugOptions',
+      '10': 'debugOptions'
+    },
   ],
 };
 
@@ -201,11 +284,29 @@ const WorkerSettings$json = {
   '1': 'WorkerSettings',
   '2': [
     {'1': 'base_url', '3': 1, '4': 1, '5': 9, '10': 'baseUrl'},
-    {'1': 'reporting_enabled', '3': 2, '4': 1, '5': 8, '10': 'reportingEnabled'},
+    {
+      '1': 'reporting_enabled',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'reportingEnabled'
+    },
     {'1': 'service_path', '3': 3, '4': 1, '5': 9, '10': 'servicePath'},
-    {'1': 'shuffle_service_path', '3': 4, '4': 1, '5': 9, '10': 'shuffleServicePath'},
+    {
+      '1': 'shuffle_service_path',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'shuffleServicePath'
+    },
     {'1': 'worker_id', '3': 5, '4': 1, '5': 9, '10': 'workerId'},
-    {'1': 'temp_storage_prefix', '3': 6, '4': 1, '5': 9, '10': 'tempStoragePrefix'},
+    {
+      '1': 'temp_storage_prefix',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'tempStoragePrefix'
+    },
   ],
 };
 
@@ -225,21 +326,76 @@ const TaskRunnerSettings$json = {
     {'1': 'task_group', '3': 2, '4': 1, '5': 9, '10': 'taskGroup'},
     {'1': 'oauth_scopes', '3': 3, '4': 3, '5': 9, '10': 'oauthScopes'},
     {'1': 'base_url', '3': 4, '4': 1, '5': 9, '10': 'baseUrl'},
-    {'1': 'dataflow_api_version', '3': 5, '4': 1, '5': 9, '10': 'dataflowApiVersion'},
-    {'1': 'parallel_worker_settings', '3': 6, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.WorkerSettings', '10': 'parallelWorkerSettings'},
+    {
+      '1': 'dataflow_api_version',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'dataflowApiVersion'
+    },
+    {
+      '1': 'parallel_worker_settings',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.WorkerSettings',
+      '10': 'parallelWorkerSettings'
+    },
     {'1': 'base_task_dir', '3': 7, '4': 1, '5': 9, '10': 'baseTaskDir'},
-    {'1': 'continue_on_exception', '3': 8, '4': 1, '5': 8, '10': 'continueOnException'},
-    {'1': 'log_to_serialconsole', '3': 9, '4': 1, '5': 8, '10': 'logToSerialconsole'},
+    {
+      '1': 'continue_on_exception',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '10': 'continueOnException'
+    },
+    {
+      '1': 'log_to_serialconsole',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '10': 'logToSerialconsole'
+    },
     {'1': 'alsologtostderr', '3': 10, '4': 1, '5': 8, '10': 'alsologtostderr'},
-    {'1': 'log_upload_location', '3': 11, '4': 1, '5': 9, '10': 'logUploadLocation'},
+    {
+      '1': 'log_upload_location',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '10': 'logUploadLocation'
+    },
     {'1': 'log_dir', '3': 12, '4': 1, '5': 9, '10': 'logDir'},
-    {'1': 'temp_storage_prefix', '3': 13, '4': 1, '5': 9, '10': 'tempStoragePrefix'},
+    {
+      '1': 'temp_storage_prefix',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '10': 'tempStoragePrefix'
+    },
     {'1': 'harness_command', '3': 14, '4': 1, '5': 9, '10': 'harnessCommand'},
-    {'1': 'workflow_file_name', '3': 15, '4': 1, '5': 9, '10': 'workflowFileName'},
-    {'1': 'commandlines_file_name', '3': 16, '4': 1, '5': 9, '10': 'commandlinesFileName'},
+    {
+      '1': 'workflow_file_name',
+      '3': 15,
+      '4': 1,
+      '5': 9,
+      '10': 'workflowFileName'
+    },
+    {
+      '1': 'commandlines_file_name',
+      '3': 16,
+      '4': 1,
+      '5': 9,
+      '10': 'commandlinesFileName'
+    },
     {'1': 'vm_id', '3': 17, '4': 1, '5': 9, '10': 'vmId'},
     {'1': 'language_hint', '3': 18, '4': 1, '5': 9, '10': 'languageHint'},
-    {'1': 'streaming_worker_main_class', '3': 19, '4': 1, '5': 9, '10': 'streamingWorkerMainClass'},
+    {
+      '1': 'streaming_worker_main_class',
+      '3': 19,
+      '4': 1,
+      '5': 9,
+      '10': 'streamingWorkerMainClass'
+    },
   ],
 };
 
@@ -266,7 +422,14 @@ final $typed_data.Uint8List taskRunnerSettingsDescriptor = $convert.base64Decode
 const AutoscalingSettings$json = {
   '1': 'AutoscalingSettings',
   '2': [
-    {'1': 'algorithm', '3': 1, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.AutoscalingAlgorithm', '10': 'algorithm'},
+    {
+      '1': 'algorithm',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.AutoscalingAlgorithm',
+      '10': 'algorithm'
+    },
     {'1': 'max_num_workers', '3': 2, '4': 1, '5': 5, '10': 'maxNumWorkers'},
   ],
 };
@@ -282,7 +445,13 @@ const SdkHarnessContainerImage$json = {
   '1': 'SdkHarnessContainerImage',
   '2': [
     {'1': 'container_image', '3': 1, '4': 1, '5': 9, '10': 'containerImage'},
-    {'1': 'use_single_core_per_container', '3': 2, '4': 1, '5': 8, '10': 'useSingleCorePerContainer'},
+    {
+      '1': 'use_single_core_per_container',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'useSingleCorePerContainer'
+    },
     {'1': 'environment_id', '3': 3, '4': 1, '5': 9, '10': 'environmentId'},
     {'1': 'capabilities', '3': 4, '4': 3, '5': 9, '10': 'capabilities'},
   ],
@@ -301,26 +470,114 @@ const WorkerPool$json = {
   '2': [
     {'1': 'kind', '3': 1, '4': 1, '5': 9, '10': 'kind'},
     {'1': 'num_workers', '3': 2, '4': 1, '5': 5, '10': 'numWorkers'},
-    {'1': 'packages', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.Package', '10': 'packages'},
-    {'1': 'default_package_set', '3': 4, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.DefaultPackageSet', '10': 'defaultPackageSet'},
+    {
+      '1': 'packages',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.Package',
+      '10': 'packages'
+    },
+    {
+      '1': 'default_package_set',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.DefaultPackageSet',
+      '10': 'defaultPackageSet'
+    },
     {'1': 'machine_type', '3': 5, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'teardown_policy', '3': 6, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.TeardownPolicy', '10': 'teardownPolicy'},
+    {
+      '1': 'teardown_policy',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.TeardownPolicy',
+      '10': 'teardownPolicy'
+    },
     {'1': 'disk_size_gb', '3': 7, '4': 1, '5': 5, '10': 'diskSizeGb'},
     {'1': 'disk_type', '3': 16, '4': 1, '5': 9, '10': 'diskType'},
     {'1': 'disk_source_image', '3': 8, '4': 1, '5': 9, '10': 'diskSourceImage'},
     {'1': 'zone', '3': 9, '4': 1, '5': 9, '10': 'zone'},
-    {'1': 'taskrunner_settings', '3': 10, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.TaskRunnerSettings', '10': 'taskrunnerSettings'},
-    {'1': 'on_host_maintenance', '3': 11, '4': 1, '5': 9, '10': 'onHostMaintenance'},
-    {'1': 'data_disks', '3': 12, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.Disk', '10': 'dataDisks'},
-    {'1': 'metadata', '3': 13, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.WorkerPool.MetadataEntry', '10': 'metadata'},
-    {'1': 'autoscaling_settings', '3': 14, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.AutoscalingSettings', '10': 'autoscalingSettings'},
-    {'1': 'pool_args', '3': 15, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'poolArgs'},
+    {
+      '1': 'taskrunner_settings',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.TaskRunnerSettings',
+      '10': 'taskrunnerSettings'
+    },
+    {
+      '1': 'on_host_maintenance',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '10': 'onHostMaintenance'
+    },
+    {
+      '1': 'data_disks',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.Disk',
+      '10': 'dataDisks'
+    },
+    {
+      '1': 'metadata',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.WorkerPool.MetadataEntry',
+      '10': 'metadata'
+    },
+    {
+      '1': 'autoscaling_settings',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.AutoscalingSettings',
+      '10': 'autoscalingSettings'
+    },
+    {
+      '1': 'pool_args',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'poolArgs'
+    },
     {'1': 'network', '3': 17, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnetwork', '3': 19, '4': 1, '5': 9, '10': 'subnetwork'},
-    {'1': 'worker_harness_container_image', '3': 18, '4': 1, '5': 9, '10': 'workerHarnessContainerImage'},
-    {'1': 'num_threads_per_worker', '3': 20, '4': 1, '5': 5, '10': 'numThreadsPerWorker'},
-    {'1': 'ip_configuration', '3': 21, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.WorkerIPAddressConfiguration', '10': 'ipConfiguration'},
-    {'1': 'sdk_harness_container_images', '3': 22, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.SdkHarnessContainerImage', '10': 'sdkHarnessContainerImages'},
+    {
+      '1': 'worker_harness_container_image',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '10': 'workerHarnessContainerImage'
+    },
+    {
+      '1': 'num_threads_per_worker',
+      '3': 20,
+      '4': 1,
+      '5': 5,
+      '10': 'numThreadsPerWorker'
+    },
+    {
+      '1': 'ip_configuration',
+      '3': 21,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.WorkerIPAddressConfiguration',
+      '10': 'ipConfiguration'
+    },
+    {
+      '1': 'sdk_harness_container_images',
+      '3': 22,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.SdkHarnessContainerImage',
+      '10': 'sdkHarnessContainerImages'
+    },
   ],
   '3': [WorkerPool_MetadataEntry$json],
 };
@@ -367,7 +624,13 @@ final $typed_data.Uint8List workerPoolDescriptor = $convert.base64Decode(
 const DebugOptions$json = {
   '1': 'DebugOptions',
   '2': [
-    {'1': 'enable_hot_key_logging', '3': 1, '4': 1, '5': 8, '10': 'enableHotKeyLogging'},
+    {
+      '1': 'enable_hot_key_logging',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enableHotKeyLogging'
+    },
   ],
 };
 
@@ -375,4 +638,3 @@ const DebugOptions$json = {
 final $typed_data.Uint8List debugOptionsDescriptor = $convert.base64Decode(
     'CgxEZWJ1Z09wdGlvbnMSMwoWZW5hYmxlX2hvdF9rZXlfbG9nZ2luZxgBIAEoCFITZW5hYmxlSG'
     '90S2V5TG9nZ2luZw==');
-

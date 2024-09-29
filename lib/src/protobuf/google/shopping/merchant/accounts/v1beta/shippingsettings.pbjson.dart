@@ -18,8 +18,24 @@ const ShippingSettings$json = {
   '1': 'ShippingSettings',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'services', '3': 2, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Service', '8': {}, '10': 'services'},
-    {'1': 'warehouses', '3': 3, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Warehouse', '8': {}, '10': 'warehouses'},
+    {
+      '1': 'services',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Service',
+      '8': {},
+      '10': 'services'
+    },
+    {
+      '1': 'warehouses',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Warehouse',
+      '8': {},
+      '10': 'warehouses'
+    },
     {'1': 'etag', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'etag'},
   ],
   '7': {},
@@ -39,17 +55,112 @@ final $typed_data.Uint8List shippingSettingsDescriptor = $convert.base64Decode(
 const Service$json = {
   '1': 'Service',
   '2': [
-    {'1': 'service_name', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'serviceName', '17': true},
-    {'1': 'active', '3': 2, '4': 1, '5': 8, '8': {}, '9': 1, '10': 'active', '17': true},
-    {'1': 'delivery_countries', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'deliveryCountries'},
-    {'1': 'currency_code', '3': 4, '4': 1, '5': 9, '9': 2, '10': 'currencyCode', '17': true},
-    {'1': 'delivery_time', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.DeliveryTime', '8': {}, '9': 3, '10': 'deliveryTime', '17': true},
-    {'1': 'rate_groups', '3': 6, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.RateGroup', '8': {}, '10': 'rateGroups'},
-    {'1': 'shipment_type', '3': 7, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.Service.ShipmentType', '9': 4, '10': 'shipmentType', '17': true},
-    {'1': 'minimum_order_value', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 5, '10': 'minimumOrderValue', '17': true},
-    {'1': 'minimum_order_value_table', '3': 9, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.MinimumOrderValueTable', '9': 6, '10': 'minimumOrderValueTable', '17': true},
-    {'1': 'store_config', '3': 10, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig', '9': 7, '10': 'storeConfig', '17': true},
-    {'1': 'loyalty_programs', '3': 11, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Service.LoyaltyProgram', '8': {}, '10': 'loyaltyPrograms'},
+    {
+      '1': 'service_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'serviceName',
+      '17': true
+    },
+    {
+      '1': 'active',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '9': 1,
+      '10': 'active',
+      '17': true
+    },
+    {
+      '1': 'delivery_countries',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'deliveryCountries'
+    },
+    {
+      '1': 'currency_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'currencyCode',
+      '17': true
+    },
+    {
+      '1': 'delivery_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.DeliveryTime',
+      '8': {},
+      '9': 3,
+      '10': 'deliveryTime',
+      '17': true
+    },
+    {
+      '1': 'rate_groups',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.RateGroup',
+      '8': {},
+      '10': 'rateGroups'
+    },
+    {
+      '1': 'shipment_type',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.Service.ShipmentType',
+      '9': 4,
+      '10': 'shipmentType',
+      '17': true
+    },
+    {
+      '1': 'minimum_order_value',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 5,
+      '10': 'minimumOrderValue',
+      '17': true
+    },
+    {
+      '1': 'minimum_order_value_table',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.MinimumOrderValueTable',
+      '9': 6,
+      '10': 'minimumOrderValueTable',
+      '17': true
+    },
+    {
+      '1': 'store_config',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig',
+      '9': 7,
+      '10': 'storeConfig',
+      '17': true
+    },
+    {
+      '1': 'loyalty_programs',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Service.LoyaltyProgram',
+      '8': {},
+      '10': 'loyaltyPrograms'
+    },
   ],
   '3': [Service_StoreConfig$json, Service_LoyaltyProgram$json],
   '4': [Service_ShipmentType$json],
@@ -69,10 +180,39 @@ const Service$json = {
 const Service_StoreConfig$json = {
   '1': 'StoreConfig',
   '2': [
-    {'1': 'store_service_type', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig.StoreServiceType', '9': 0, '10': 'storeServiceType', '17': true},
+    {
+      '1': 'store_service_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig.StoreServiceType',
+      '9': 0,
+      '10': 'storeServiceType',
+      '17': true
+    },
     {'1': 'store_codes', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'storeCodes'},
-    {'1': 'cutoff_config', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig.CutoffConfig', '9': 1, '10': 'cutoffConfig', '17': true},
-    {'1': 'service_radius', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Distance', '9': 2, '10': 'serviceRadius', '17': true},
+    {
+      '1': 'cutoff_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig.CutoffConfig',
+      '9': 1,
+      '10': 'cutoffConfig',
+      '17': true
+    },
+    {
+      '1': 'service_radius',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Distance',
+      '9': 2,
+      '10': 'serviceRadius',
+      '17': true
+    },
   ],
   '3': [Service_StoreConfig_CutoffConfig$json],
   '4': [Service_StoreConfig_StoreServiceType$json],
@@ -87,9 +227,35 @@ const Service_StoreConfig$json = {
 const Service_StoreConfig_CutoffConfig$json = {
   '1': 'CutoffConfig',
   '2': [
-    {'1': 'local_cutoff_time', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig.CutoffConfig.LocalCutoffTime', '9': 0, '10': 'localCutoffTime', '17': true},
-    {'1': 'store_close_offset_hours', '3': 2, '4': 1, '5': 3, '9': 1, '10': 'storeCloseOffsetHours', '17': true},
-    {'1': 'no_delivery_post_cutoff', '3': 3, '4': 1, '5': 8, '9': 2, '10': 'noDeliveryPostCutoff', '17': true},
+    {
+      '1': 'local_cutoff_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.Service.StoreConfig.CutoffConfig.LocalCutoffTime',
+      '9': 0,
+      '10': 'localCutoffTime',
+      '17': true
+    },
+    {
+      '1': 'store_close_offset_hours',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'storeCloseOffsetHours',
+      '17': true
+    },
+    {
+      '1': 'no_delivery_post_cutoff',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'noDeliveryPostCutoff',
+      '17': true
+    },
   ],
   '3': [Service_StoreConfig_CutoffConfig_LocalCutoffTime$json],
   '8': [
@@ -126,8 +292,25 @@ const Service_StoreConfig_StoreServiceType$json = {
 const Service_LoyaltyProgram$json = {
   '1': 'LoyaltyProgram',
   '2': [
-    {'1': 'program_label', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'programLabel', '17': true},
-    {'1': 'loyalty_program_tiers', '3': 2, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Service.LoyaltyProgram.LoyaltyProgramTiers', '8': {}, '10': 'loyaltyProgramTiers'},
+    {
+      '1': 'program_label',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'programLabel',
+      '17': true
+    },
+    {
+      '1': 'loyalty_program_tiers',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.Service.LoyaltyProgram.LoyaltyProgramTiers',
+      '8': {},
+      '10': 'loyaltyProgramTiers'
+    },
   ],
   '3': [Service_LoyaltyProgram_LoyaltyProgramTiers$json],
   '8': [
@@ -139,7 +322,15 @@ const Service_LoyaltyProgram$json = {
 const Service_LoyaltyProgram_LoyaltyProgramTiers$json = {
   '1': 'LoyaltyProgramTiers',
   '2': [
-    {'1': 'tier_label', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'tierLabel', '17': true},
+    {
+      '1': 'tier_label',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'tierLabel',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_tier_label'},
@@ -210,7 +401,16 @@ const Distance$json = {
   '1': 'Distance',
   '2': [
     {'1': 'value', '3': 1, '4': 1, '5': 3, '9': 0, '10': 'value', '17': true},
-    {'1': 'unit', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.Distance.Unit', '9': 1, '10': 'unit', '17': true},
+    {
+      '1': 'unit',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.Distance.Unit',
+      '9': 1,
+      '10': 'unit',
+      '17': true
+    },
   ],
   '4': [Distance_Unit$json],
   '8': [
@@ -240,11 +440,58 @@ final $typed_data.Uint8List distanceDescriptor = $convert.base64Decode(
 const Warehouse$json = {
   '1': 'Warehouse',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'name', '17': true},
-    {'1': 'shipping_address', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Address', '8': {}, '9': 1, '10': 'shippingAddress', '17': true},
-    {'1': 'cutoff_time', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.WarehouseCutoffTime', '8': {}, '9': 2, '10': 'cutoffTime', '17': true},
-    {'1': 'handling_days', '3': 4, '4': 1, '5': 3, '8': {}, '9': 3, '10': 'handlingDays', '17': true},
-    {'1': 'business_day_config', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig', '9': 4, '10': 'businessDayConfig', '17': true},
+    {
+      '1': 'name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'name',
+      '17': true
+    },
+    {
+      '1': 'shipping_address',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Address',
+      '8': {},
+      '9': 1,
+      '10': 'shippingAddress',
+      '17': true
+    },
+    {
+      '1': 'cutoff_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.WarehouseCutoffTime',
+      '8': {},
+      '9': 2,
+      '10': 'cutoffTime',
+      '17': true
+    },
+    {
+      '1': 'handling_days',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '9': 3,
+      '10': 'handlingDays',
+      '17': true
+    },
+    {
+      '1': 'business_day_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig',
+      '9': 4,
+      '10': 'businessDayConfig',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_name'},
@@ -272,8 +519,26 @@ final $typed_data.Uint8List warehouseDescriptor = $convert.base64Decode(
 const WarehouseCutoffTime$json = {
   '1': 'WarehouseCutoffTime',
   '2': [
-    {'1': 'hour', '3': 1, '4': 1, '5': 5, '8': {}, '9': 0, '10': 'hour', '17': true},
-    {'1': 'minute', '3': 2, '4': 1, '5': 5, '8': {}, '9': 1, '10': 'minute', '17': true},
+    {
+      '1': 'hour',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 0,
+      '10': 'hour',
+      '17': true
+    },
+    {
+      '1': 'minute',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 1,
+      '10': 'minute',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_hour'},
@@ -290,11 +555,55 @@ final $typed_data.Uint8List warehouseCutoffTimeDescriptor = $convert.base64Decod
 const Address$json = {
   '1': 'Address',
   '2': [
-    {'1': 'street_address', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'streetAddress', '17': true},
-    {'1': 'city', '3': 2, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'city', '17': true},
-    {'1': 'administrative_area', '3': 3, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'administrativeArea', '17': true},
-    {'1': 'postal_code', '3': 4, '4': 1, '5': 9, '8': {}, '9': 3, '10': 'postalCode', '17': true},
-    {'1': 'region_code', '3': 5, '4': 1, '5': 9, '8': {}, '9': 4, '10': 'regionCode', '17': true},
+    {
+      '1': 'street_address',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'streetAddress',
+      '17': true
+    },
+    {
+      '1': 'city',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'city',
+      '17': true
+    },
+    {
+      '1': 'administrative_area',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'administrativeArea',
+      '17': true
+    },
+    {
+      '1': 'postal_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 3,
+      '10': 'postalCode',
+      '17': true
+    },
+    {
+      '1': 'region_code',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 4,
+      '10': 'regionCode',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_street_address'},
@@ -318,15 +627,92 @@ final $typed_data.Uint8List addressDescriptor = $convert.base64Decode(
 const DeliveryTime$json = {
   '1': 'DeliveryTime',
   '2': [
-    {'1': 'min_transit_days', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'minTransitDays', '17': true},
-    {'1': 'max_transit_days', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'maxTransitDays', '17': true},
-    {'1': 'cutoff_time', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.CutoffTime', '9': 2, '10': 'cutoffTime', '17': true},
-    {'1': 'min_handling_days', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'minHandlingDays', '17': true},
-    {'1': 'max_handling_days', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'maxHandlingDays', '17': true},
-    {'1': 'transit_time_table', '3': 6, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.TransitTable', '9': 5, '10': 'transitTimeTable', '17': true},
-    {'1': 'handling_business_day_config', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig', '9': 6, '10': 'handlingBusinessDayConfig', '17': true},
-    {'1': 'transit_business_day_config', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig', '9': 7, '10': 'transitBusinessDayConfig', '17': true},
-    {'1': 'warehouse_based_delivery_times', '3': 9, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.WarehouseBasedDeliveryTime', '8': {}, '10': 'warehouseBasedDeliveryTimes'},
+    {
+      '1': 'min_transit_days',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'minTransitDays',
+      '17': true
+    },
+    {
+      '1': 'max_transit_days',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'maxTransitDays',
+      '17': true
+    },
+    {
+      '1': 'cutoff_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.CutoffTime',
+      '9': 2,
+      '10': 'cutoffTime',
+      '17': true
+    },
+    {
+      '1': 'min_handling_days',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 3,
+      '10': 'minHandlingDays',
+      '17': true
+    },
+    {
+      '1': 'max_handling_days',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '9': 4,
+      '10': 'maxHandlingDays',
+      '17': true
+    },
+    {
+      '1': 'transit_time_table',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.TransitTable',
+      '9': 5,
+      '10': 'transitTimeTable',
+      '17': true
+    },
+    {
+      '1': 'handling_business_day_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig',
+      '9': 6,
+      '10': 'handlingBusinessDayConfig',
+      '17': true
+    },
+    {
+      '1': 'transit_business_day_config',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig',
+      '9': 7,
+      '10': 'transitBusinessDayConfig',
+      '17': true
+    },
+    {
+      '1': 'warehouse_based_delivery_times',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.WarehouseBasedDeliveryTime',
+      '8': {},
+      '10': 'warehouseBasedDeliveryTimes'
+    },
   ],
   '8': [
     {'1': '_min_transit_days'},
@@ -366,9 +752,36 @@ final $typed_data.Uint8List deliveryTimeDescriptor = $convert.base64Decode(
 const CutoffTime$json = {
   '1': 'CutoffTime',
   '2': [
-    {'1': 'hour', '3': 1, '4': 1, '5': 5, '8': {}, '9': 0, '10': 'hour', '17': true},
-    {'1': 'minute', '3': 2, '4': 1, '5': 5, '8': {}, '9': 1, '10': 'minute', '17': true},
-    {'1': 'time_zone', '3': 3, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'timeZone', '17': true},
+    {
+      '1': 'hour',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 0,
+      '10': 'hour',
+      '17': true
+    },
+    {
+      '1': 'minute',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 1,
+      '10': 'minute',
+      '17': true
+    },
+    {
+      '1': 'time_zone',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'timeZone',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_hour'},
@@ -387,7 +800,16 @@ final $typed_data.Uint8List cutoffTimeDescriptor = $convert.base64Decode(
 const BusinessDayConfig$json = {
   '1': 'BusinessDayConfig',
   '2': [
-    {'1': 'business_days', '3': 1, '4': 3, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig.Weekday', '8': {}, '10': 'businessDays'},
+    {
+      '1': 'business_days',
+      '3': 1,
+      '4': 3,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessDayConfig.Weekday',
+      '8': {},
+      '10': 'businessDays'
+    },
   ],
   '4': [BusinessDayConfig_Weekday$json],
 };
@@ -419,9 +841,36 @@ final $typed_data.Uint8List businessDayConfigDescriptor = $convert.base64Decode(
 const WarehouseBasedDeliveryTime$json = {
   '1': 'WarehouseBasedDeliveryTime',
   '2': [
-    {'1': 'carrier', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'carrier', '17': true},
-    {'1': 'carrier_service', '3': 2, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'carrierService', '17': true},
-    {'1': 'warehouse', '3': 3, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'warehouse', '17': true},
+    {
+      '1': 'carrier',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'carrier',
+      '17': true
+    },
+    {
+      '1': 'carrier_service',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'carrierService',
+      '17': true
+    },
+    {
+      '1': 'warehouse',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'warehouse',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_carrier'},
@@ -441,12 +890,62 @@ final $typed_data.Uint8List warehouseBasedDeliveryTimeDescriptor = $convert.base
 const RateGroup$json = {
   '1': 'RateGroup',
   '2': [
-    {'1': 'applicable_shipping_labels', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'applicableShippingLabels'},
-    {'1': 'single_value', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Value', '9': 0, '10': 'singleValue', '17': true},
-    {'1': 'main_table', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Table', '9': 1, '10': 'mainTable', '17': true},
-    {'1': 'subtables', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Table', '8': {}, '10': 'subtables'},
-    {'1': 'carrier_rates', '3': 5, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.CarrierRate', '8': {}, '10': 'carrierRates'},
-    {'1': 'name', '3': 6, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'name', '17': true},
+    {
+      '1': 'applicable_shipping_labels',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'applicableShippingLabels'
+    },
+    {
+      '1': 'single_value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Value',
+      '9': 0,
+      '10': 'singleValue',
+      '17': true
+    },
+    {
+      '1': 'main_table',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Table',
+      '9': 1,
+      '10': 'mainTable',
+      '17': true
+    },
+    {
+      '1': 'subtables',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Table',
+      '8': {},
+      '10': 'subtables'
+    },
+    {
+      '1': 'carrier_rates',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.CarrierRate',
+      '8': {},
+      '10': 'carrierRates'
+    },
+    {
+      '1': 'name',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'name',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_single_value'},
@@ -473,9 +972,36 @@ const Table$json = {
   '1': 'Table',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'name', '17': true},
-    {'1': 'row_headers', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Headers', '8': {}, '9': 1, '10': 'rowHeaders', '17': true},
-    {'1': 'column_headers', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Headers', '9': 2, '10': 'columnHeaders', '17': true},
-    {'1': 'rows', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Row', '8': {}, '10': 'rows'},
+    {
+      '1': 'row_headers',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Headers',
+      '8': {},
+      '9': 1,
+      '10': 'rowHeaders',
+      '17': true
+    },
+    {
+      '1': 'column_headers',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Headers',
+      '9': 2,
+      '10': 'columnHeaders',
+      '17': true
+    },
+    {
+      '1': 'rows',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Row',
+      '8': {},
+      '10': 'rows'
+    },
   ],
   '8': [
     {'1': '_name'},
@@ -498,9 +1024,32 @@ final $typed_data.Uint8List tableDescriptor = $convert.base64Decode(
 const TransitTable$json = {
   '1': 'TransitTable',
   '2': [
-    {'1': 'postal_code_group_names', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'postalCodeGroupNames'},
-    {'1': 'transit_time_labels', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'transitTimeLabels'},
-    {'1': 'rows', '3': 3, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.TransitTable.TransitTimeRow', '8': {}, '10': 'rows'},
+    {
+      '1': 'postal_code_group_names',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'postalCodeGroupNames'
+    },
+    {
+      '1': 'transit_time_labels',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'transitTimeLabels'
+    },
+    {
+      '1': 'rows',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.TransitTable.TransitTimeRow',
+      '8': {},
+      '10': 'rows'
+    },
   ],
   '3': [TransitTable_TransitTimeRow$json],
 };
@@ -509,7 +1058,16 @@ const TransitTable$json = {
 const TransitTable_TransitTimeRow$json = {
   '1': 'TransitTimeRow',
   '2': [
-    {'1': 'values', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.TransitTable.TransitTimeRow.TransitTimeValue', '8': {}, '10': 'values'},
+    {
+      '1': 'values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.TransitTable.TransitTimeRow.TransitTimeValue',
+      '8': {},
+      '10': 'values'
+    },
   ],
   '3': [TransitTable_TransitTimeRow_TransitTimeValue$json],
 };
@@ -518,8 +1076,24 @@ const TransitTable_TransitTimeRow$json = {
 const TransitTable_TransitTimeRow_TransitTimeValue$json = {
   '1': 'TransitTimeValue',
   '2': [
-    {'1': 'min_transit_days', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'minTransitDays', '17': true},
-    {'1': 'max_transit_days', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'maxTransitDays', '17': true},
+    {
+      '1': 'min_transit_days',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'minTransitDays',
+      '17': true
+    },
+    {
+      '1': 'max_transit_days',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'maxTransitDays',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_min_transit_days'},
@@ -544,7 +1118,16 @@ final $typed_data.Uint8List transitTableDescriptor = $convert.base64Decode(
 const MinimumOrderValueTable$json = {
   '1': 'MinimumOrderValueTable',
   '2': [
-    {'1': 'store_code_set_with_movs', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.MinimumOrderValueTable.StoreCodeSetWithMov', '8': {}, '10': 'storeCodeSetWithMovs'},
+    {
+      '1': 'store_code_set_with_movs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.MinimumOrderValueTable.StoreCodeSetWithMov',
+      '8': {},
+      '10': 'storeCodeSetWithMovs'
+    },
   ],
   '3': [MinimumOrderValueTable_StoreCodeSetWithMov$json],
 };
@@ -554,7 +1137,16 @@ const MinimumOrderValueTable_StoreCodeSetWithMov$json = {
   '1': 'StoreCodeSetWithMov',
   '2': [
     {'1': 'store_codes', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'storeCodes'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 0, '10': 'value', '17': true},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 0,
+      '10': 'value',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_value'},
@@ -574,11 +1166,49 @@ final $typed_data.Uint8List minimumOrderValueTableDescriptor = $convert.base64De
 const Headers$json = {
   '1': 'Headers',
   '2': [
-    {'1': 'prices', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.type.Price', '8': {}, '10': 'prices'},
-    {'1': 'weights', '3': 2, '4': 3, '5': 11, '6': '.google.shopping.type.Weight', '8': {}, '10': 'weights'},
-    {'1': 'number_of_items', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'numberOfItems'},
-    {'1': 'postal_code_group_names', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'postalCodeGroupNames'},
-    {'1': 'locations', '3': 5, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.LocationIdSet', '8': {}, '10': 'locations'},
+    {
+      '1': 'prices',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '8': {},
+      '10': 'prices'
+    },
+    {
+      '1': 'weights',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.Weight',
+      '8': {},
+      '10': 'weights'
+    },
+    {
+      '1': 'number_of_items',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'numberOfItems'
+    },
+    {
+      '1': 'postal_code_group_names',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'postalCodeGroupNames'
+    },
+    {
+      '1': 'locations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.LocationIdSet',
+      '8': {},
+      '10': 'locations'
+    },
   ],
 };
 
@@ -608,7 +1238,15 @@ final $typed_data.Uint8List locationIdSetDescriptor = $convert.base64Decode(
 const Row$json = {
   '1': 'Row',
   '2': [
-    {'1': 'cells', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Value', '8': {}, '10': 'cells'},
+    {
+      '1': 'cells',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Value',
+      '8': {},
+      '10': 'cells'
+    },
   ],
 };
 
@@ -621,11 +1259,52 @@ final $typed_data.Uint8List rowDescriptor = $convert.base64Decode(
 const Value$json = {
   '1': 'Value',
   '2': [
-    {'1': 'no_shipping', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'noShipping', '17': true},
-    {'1': 'flat_rate', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 1, '10': 'flatRate', '17': true},
-    {'1': 'price_percentage', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'pricePercentage', '17': true},
-    {'1': 'carrier_rate', '3': 4, '4': 1, '5': 9, '9': 3, '10': 'carrierRate', '17': true},
-    {'1': 'subtable', '3': 5, '4': 1, '5': 9, '9': 4, '10': 'subtable', '17': true},
+    {
+      '1': 'no_shipping',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'noShipping',
+      '17': true
+    },
+    {
+      '1': 'flat_rate',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 1,
+      '10': 'flatRate',
+      '17': true
+    },
+    {
+      '1': 'price_percentage',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'pricePercentage',
+      '17': true
+    },
+    {
+      '1': 'carrier_rate',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 3,
+      '10': 'carrierRate',
+      '17': true
+    },
+    {
+      '1': 'subtable',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'subtable',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_no_shipping'},
@@ -649,12 +1328,67 @@ final $typed_data.Uint8List valueDescriptor = $convert.base64Decode(
 const CarrierRate$json = {
   '1': 'CarrierRate',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'name', '17': true},
-    {'1': 'carrier', '3': 2, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'carrier', '17': true},
-    {'1': 'carrier_service', '3': 3, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'carrierService', '17': true},
-    {'1': 'origin_postal_code', '3': 4, '4': 1, '5': 9, '8': {}, '9': 3, '10': 'originPostalCode', '17': true},
-    {'1': 'percentage_adjustment', '3': 5, '4': 1, '5': 9, '8': {}, '9': 4, '10': 'percentageAdjustment', '17': true},
-    {'1': 'flat_adjustment', '3': 6, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '8': {}, '9': 5, '10': 'flatAdjustment', '17': true},
+    {
+      '1': 'name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'name',
+      '17': true
+    },
+    {
+      '1': 'carrier',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'carrier',
+      '17': true
+    },
+    {
+      '1': 'carrier_service',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'carrierService',
+      '17': true
+    },
+    {
+      '1': 'origin_postal_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 3,
+      '10': 'originPostalCode',
+      '17': true
+    },
+    {
+      '1': 'percentage_adjustment',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 4,
+      '10': 'percentageAdjustment',
+      '17': true
+    },
+    {
+      '1': 'flat_adjustment',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '8': {},
+      '9': 5,
+      '10': 'flatAdjustment',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_name'},
@@ -686,16 +1420,25 @@ const GetShippingSettingsRequest$json = {
 };
 
 /// Descriptor for `GetShippingSettingsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getShippingSettingsRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRTaGlwcGluZ1NldHRpbmdzUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
-    'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL1NoaXBwaW5nU2V0dGluZ3NSBG5hbWU=');
+final $typed_data.Uint8List getShippingSettingsRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRTaGlwcGluZ1NldHRpbmdzUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
+        'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL1NoaXBwaW5nU2V0dGluZ3NSBG5hbWU=');
 
 @$core.Deprecated('Use insertShippingSettingsRequestDescriptor instead')
 const InsertShippingSettingsRequest$json = {
   '1': 'InsertShippingSettingsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'shipping_setting', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.ShippingSettings', '8': {}, '10': 'shippingSetting'},
+    {
+      '1': 'shipping_setting',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.ShippingSettings',
+      '8': {},
+      '10': 'shippingSetting'
+    },
   ],
 };
 
@@ -705,4 +1448,3 @@ final $typed_data.Uint8List insertShippingSettingsRequestDescriptor = $convert.b
     'FyZW50EmoKEHNoaXBwaW5nX3NldHRpbmcYAiABKAsyOi5nb29nbGUuc2hvcHBpbmcubWVyY2hh'
     'bnQuYWNjb3VudHMudjFiZXRhLlNoaXBwaW5nU2V0dGluZ3NCA+BBAlIPc2hpcHBpbmdTZXR0aW'
     '5n');
-

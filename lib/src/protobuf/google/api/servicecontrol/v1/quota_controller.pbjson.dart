@@ -18,7 +18,14 @@ const AllocateQuotaRequest$json = {
   '1': 'AllocateQuotaRequest',
   '2': [
     {'1': 'service_name', '3': 1, '4': 1, '5': 9, '10': 'serviceName'},
-    {'1': 'allocate_operation', '3': 2, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.QuotaOperation', '10': 'allocateOperation'},
+    {
+      '1': 'allocate_operation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.QuotaOperation',
+      '10': 'allocateOperation'
+    },
     {'1': 'service_config_id', '3': 4, '4': 1, '5': 9, '10': 'serviceConfigId'},
   ],
 };
@@ -37,9 +44,30 @@ const QuotaOperation$json = {
     {'1': 'operation_id', '3': 1, '4': 1, '5': 9, '10': 'operationId'},
     {'1': 'method_name', '3': 2, '4': 1, '5': 9, '10': 'methodName'},
     {'1': 'consumer_id', '3': 3, '4': 1, '5': 9, '10': 'consumerId'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.QuotaOperation.LabelsEntry', '10': 'labels'},
-    {'1': 'quota_metrics', '3': 5, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.MetricValueSet', '10': 'quotaMetrics'},
-    {'1': 'quota_mode', '3': 6, '4': 1, '5': 14, '6': '.google.api.servicecontrol.v1.QuotaOperation.QuotaMode', '10': 'quotaMode'},
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.QuotaOperation.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'quota_metrics',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.MetricValueSet',
+      '10': 'quotaMetrics'
+    },
+    {
+      '1': 'quota_mode',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicecontrol.v1.QuotaOperation.QuotaMode',
+      '10': 'quotaMode'
+    },
   ],
   '3': [QuotaOperation_LabelsEntry$json],
   '4': [QuotaOperation_QuotaMode$json],
@@ -86,8 +114,22 @@ const AllocateQuotaResponse$json = {
   '1': 'AllocateQuotaResponse',
   '2': [
     {'1': 'operation_id', '3': 1, '4': 1, '5': 9, '10': 'operationId'},
-    {'1': 'allocate_errors', '3': 2, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.QuotaError', '10': 'allocateErrors'},
-    {'1': 'quota_metrics', '3': 3, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.MetricValueSet', '10': 'quotaMetrics'},
+    {
+      '1': 'allocate_errors',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.QuotaError',
+      '10': 'allocateErrors'
+    },
+    {
+      '1': 'quota_metrics',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.MetricValueSet',
+      '10': 'quotaMetrics'
+    },
     {'1': 'service_config_id', '3': 4, '4': 1, '5': 9, '10': 'serviceConfigId'},
   ],
 };
@@ -104,10 +146,24 @@ final $typed_data.Uint8List allocateQuotaResponseDescriptor = $convert.base64Dec
 const QuotaError$json = {
   '1': 'QuotaError',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.api.servicecontrol.v1.QuotaError.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicecontrol.v1.QuotaError.Code',
+      '10': 'code'
+    },
     {'1': 'subject', '3': 2, '4': 1, '5': 9, '10': 'subject'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'status', '3': 4, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
   ],
   '4': [QuotaError_Code$json],
 };
@@ -133,4 +189,3 @@ final $typed_data.Uint8List quotaErrorDescriptor = $convert.base64Decode(
     'BjLlN0YXR1c1IGc3RhdHVzIoYBCgRDb2RlEg8KC1VOU1BFQ0lGSUVEEAASFgoSUkVTT1VSQ0Vf'
     'RVhIQVVTVEVEEAgSFgoSQklMTElOR19OT1RfQUNUSVZFEGsSEwoPUFJPSkVDVF9ERUxFVEVEEG'
     'wSEwoPQVBJX0tFWV9JTlZBTElEEGkSEwoPQVBJX0tFWV9FWFBJUkVEEHA=');
-

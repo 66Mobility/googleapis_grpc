@@ -17,11 +17,51 @@ import 'dart:typed_data' as $typed_data;
 const Actor$json = {
   '1': 'Actor',
   '2': [
-    {'1': 'user', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User', '9': 0, '10': 'user'},
-    {'1': 'anonymous', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AnonymousUser', '9': 0, '10': 'anonymous'},
-    {'1': 'impersonation', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Impersonation', '9': 0, '10': 'impersonation'},
-    {'1': 'system', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.SystemEvent', '9': 0, '10': 'system'},
-    {'1': 'administrator', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Administrator', '9': 0, '10': 'administrator'},
+    {
+      '1': 'user',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User',
+      '9': 0,
+      '10': 'user'
+    },
+    {
+      '1': 'anonymous',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.AnonymousUser',
+      '9': 0,
+      '10': 'anonymous'
+    },
+    {
+      '1': 'impersonation',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Impersonation',
+      '9': 0,
+      '10': 'impersonation'
+    },
+    {
+      '1': 'system',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.SystemEvent',
+      '9': 0,
+      '10': 'system'
+    },
+    {
+      '1': 'administrator',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Administrator',
+      '9': 0,
+      '10': 'administrator'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -43,9 +83,33 @@ final $typed_data.Uint8List actorDescriptor = $convert.base64Decode(
 const User$json = {
   '1': 'User',
   '2': [
-    {'1': 'known_user', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User.KnownUser', '9': 0, '10': 'knownUser'},
-    {'1': 'deleted_user', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User.DeletedUser', '9': 0, '10': 'deletedUser'},
-    {'1': 'unknown_user', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User.UnknownUser', '9': 0, '10': 'unknownUser'},
+    {
+      '1': 'known_user',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User.KnownUser',
+      '9': 0,
+      '10': 'knownUser'
+    },
+    {
+      '1': 'deleted_user',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User.DeletedUser',
+      '9': 0,
+      '10': 'deletedUser'
+    },
+    {
+      '1': 'unknown_user',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User.UnknownUser',
+      '9': 0,
+      '10': 'unknownUser'
+    },
   ],
   '3': [User_KnownUser$json, User_DeletedUser$json, User_UnknownUser$json],
   '8': [
@@ -88,14 +152,21 @@ const AnonymousUser$json = {
 };
 
 /// Descriptor for `AnonymousUser`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List anonymousUserDescriptor = $convert.base64Decode(
-    'Cg1Bbm9ueW1vdXNVc2Vy');
+final $typed_data.Uint8List anonymousUserDescriptor =
+    $convert.base64Decode('Cg1Bbm9ueW1vdXNVc2Vy');
 
 @$core.Deprecated('Use impersonationDescriptor instead')
 const Impersonation$json = {
   '1': 'Impersonation',
   '2': [
-    {'1': 'impersonated_user', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User', '10': 'impersonatedUser'},
+    {
+      '1': 'impersonated_user',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User',
+      '10': 'impersonatedUser'
+    },
   ],
 };
 
@@ -108,7 +179,14 @@ final $typed_data.Uint8List impersonationDescriptor = $convert.base64Decode(
 const SystemEvent$json = {
   '1': 'SystemEvent',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.SystemEvent.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.SystemEvent.Type',
+      '10': 'type'
+    },
   ],
   '4': [SystemEvent_Type$json],
 };
@@ -135,6 +213,5 @@ const Administrator$json = {
 };
 
 /// Descriptor for `Administrator`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List administratorDescriptor = $convert.base64Decode(
-    'Cg1BZG1pbmlzdHJhdG9y');
-
+final $typed_data.Uint8List administratorDescriptor =
+    $convert.base64Decode('Cg1BZG1pbmlzdHJhdG9y');

@@ -19,7 +19,14 @@ const HttpBody$json = {
   '2': [
     {'1': 'content_type', '3': 1, '4': 1, '5': 9, '10': 'contentType'},
     {'1': 'data', '3': 2, '4': 1, '5': 12, '10': 'data'},
-    {'1': 'extensions', '3': 3, '4': 3, '5': 11, '6': '.google.protobuf.Any', '10': 'extensions'},
+    {
+      '1': 'extensions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'extensions'
+    },
   ],
 };
 
@@ -28,4 +35,3 @@ final $typed_data.Uint8List httpBodyDescriptor = $convert.base64Decode(
     'CghIdHRwQm9keRIhCgxjb250ZW50X3R5cGUYASABKAlSC2NvbnRlbnRUeXBlEhIKBGRhdGEYAi'
     'ABKAxSBGRhdGESNAoKZXh0ZW5zaW9ucxgDIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSCmV4'
     'dGVuc2lvbnM=');
-

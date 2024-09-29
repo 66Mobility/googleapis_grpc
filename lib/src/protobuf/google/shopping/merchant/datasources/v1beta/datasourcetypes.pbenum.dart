@@ -18,23 +18,33 @@ import 'package:protobuf/protobuf.dart' as $pb;
 ///  Channel is used to distinguish between data sources for different product
 ///  verticals.
 class PrimaryProductDataSource_Channel extends $pb.ProtobufEnum {
-  static const PrimaryProductDataSource_Channel CHANNEL_UNSPECIFIED = PrimaryProductDataSource_Channel._(0, _omitEnumNames ? '' : 'CHANNEL_UNSPECIFIED');
-  static const PrimaryProductDataSource_Channel ONLINE_PRODUCTS = PrimaryProductDataSource_Channel._(1, _omitEnumNames ? '' : 'ONLINE_PRODUCTS');
-  static const PrimaryProductDataSource_Channel LOCAL_PRODUCTS = PrimaryProductDataSource_Channel._(2, _omitEnumNames ? '' : 'LOCAL_PRODUCTS');
-  static const PrimaryProductDataSource_Channel PRODUCTS = PrimaryProductDataSource_Channel._(3, _omitEnumNames ? '' : 'PRODUCTS');
+  static const PrimaryProductDataSource_Channel CHANNEL_UNSPECIFIED =
+      PrimaryProductDataSource_Channel._(
+          0, _omitEnumNames ? '' : 'CHANNEL_UNSPECIFIED');
+  static const PrimaryProductDataSource_Channel ONLINE_PRODUCTS =
+      PrimaryProductDataSource_Channel._(
+          1, _omitEnumNames ? '' : 'ONLINE_PRODUCTS');
+  static const PrimaryProductDataSource_Channel LOCAL_PRODUCTS =
+      PrimaryProductDataSource_Channel._(
+          2, _omitEnumNames ? '' : 'LOCAL_PRODUCTS');
+  static const PrimaryProductDataSource_Channel PRODUCTS =
+      PrimaryProductDataSource_Channel._(3, _omitEnumNames ? '' : 'PRODUCTS');
 
-  static const $core.List<PrimaryProductDataSource_Channel> values = <PrimaryProductDataSource_Channel> [
+  static const $core.List<PrimaryProductDataSource_Channel> values =
+      <PrimaryProductDataSource_Channel>[
     CHANNEL_UNSPECIFIED,
     ONLINE_PRODUCTS,
     LOCAL_PRODUCTS,
     PRODUCTS,
   ];
 
-  static final $core.Map<$core.int, PrimaryProductDataSource_Channel> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static PrimaryProductDataSource_Channel? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, PrimaryProductDataSource_Channel> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static PrimaryProductDataSource_Channel? valueOf($core.int value) =>
+      _byValue[value];
 
-  const PrimaryProductDataSource_Channel._($core.int v, $core.String n) : super(v, n);
+  const PrimaryProductDataSource_Channel._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

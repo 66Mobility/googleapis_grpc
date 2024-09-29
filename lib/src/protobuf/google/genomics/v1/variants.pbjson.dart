@@ -35,10 +35,24 @@ const VariantSetMetadata$json = {
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
     {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
     {'1': 'id', '3': 4, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.genomics.v1.VariantSetMetadata.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.VariantSetMetadata.Type',
+      '10': 'type'
+    },
     {'1': 'number', '3': 8, '4': 1, '5': 9, '10': 'number'},
     {'1': 'description', '3': 7, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'info', '3': 3, '4': 3, '5': 11, '6': '.google.genomics.v1.VariantSetMetadata.InfoEntry', '10': 'info'},
+    {
+      '1': 'info',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantSetMetadata.InfoEntry',
+      '10': 'info'
+    },
   ],
   '3': [VariantSetMetadata_InfoEntry$json],
   '4': [VariantSetMetadata_Type$json],
@@ -49,7 +63,14 @@ const VariantSetMetadata_InfoEntry$json = {
   '1': 'InfoEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -86,8 +107,22 @@ const VariantSet$json = {
     {'1': 'dataset_id', '3': 1, '4': 1, '5': 9, '10': 'datasetId'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
     {'1': 'reference_set_id', '3': 6, '4': 1, '5': 9, '10': 'referenceSetId'},
-    {'1': 'reference_bounds', '3': 5, '4': 3, '5': 11, '6': '.google.genomics.v1.ReferenceBound', '10': 'referenceBounds'},
-    {'1': 'metadata', '3': 4, '4': 3, '5': 11, '6': '.google.genomics.v1.VariantSetMetadata', '10': 'metadata'},
+    {
+      '1': 'reference_bounds',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.ReferenceBound',
+      '10': 'referenceBounds'
+    },
+    {
+      '1': 'metadata',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantSetMetadata',
+      '10': 'metadata'
+    },
     {'1': 'name', '3': 7, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 8, '4': 1, '5': 9, '10': 'description'},
   ],
@@ -117,8 +152,22 @@ const Variant$json = {
     {'1': 'alternate_bases', '3': 7, '4': 3, '5': 9, '10': 'alternateBases'},
     {'1': 'quality', '3': 8, '4': 1, '5': 1, '10': 'quality'},
     {'1': 'filter', '3': 9, '4': 3, '5': 9, '10': 'filter'},
-    {'1': 'info', '3': 10, '4': 3, '5': 11, '6': '.google.genomics.v1.Variant.InfoEntry', '10': 'info'},
-    {'1': 'calls', '3': 11, '4': 3, '5': 11, '6': '.google.genomics.v1.VariantCall', '10': 'calls'},
+    {
+      '1': 'info',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Variant.InfoEntry',
+      '10': 'info'
+    },
+    {
+      '1': 'calls',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantCall',
+      '10': 'calls'
+    },
   ],
   '3': [Variant_InfoEntry$json],
 };
@@ -128,7 +177,14 @@ const Variant_InfoEntry$json = {
   '1': 'InfoEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -154,8 +210,21 @@ const VariantCall$json = {
     {'1': 'call_set_name', '3': 9, '4': 1, '5': 9, '10': 'callSetName'},
     {'1': 'genotype', '3': 7, '4': 3, '5': 5, '10': 'genotype'},
     {'1': 'phaseset', '3': 5, '4': 1, '5': 9, '10': 'phaseset'},
-    {'1': 'genotype_likelihood', '3': 6, '4': 3, '5': 1, '10': 'genotypeLikelihood'},
-    {'1': 'info', '3': 2, '4': 3, '5': 11, '6': '.google.genomics.v1.VariantCall.InfoEntry', '10': 'info'},
+    {
+      '1': 'genotype_likelihood',
+      '3': 6,
+      '4': 3,
+      '5': 1,
+      '10': 'genotypeLikelihood'
+    },
+    {
+      '1': 'info',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantCall.InfoEntry',
+      '10': 'info'
+    },
   ],
   '3': [VariantCall_InfoEntry$json],
 };
@@ -165,7 +234,14 @@ const VariantCall_InfoEntry$json = {
   '1': 'InfoEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -189,7 +265,14 @@ const CallSet$json = {
     {'1': 'sample_id', '3': 7, '4': 1, '5': 9, '10': 'sampleId'},
     {'1': 'variant_set_ids', '3': 6, '4': 3, '5': 9, '10': 'variantSetIds'},
     {'1': 'created', '3': 5, '4': 1, '5': 3, '10': 'created'},
-    {'1': 'info', '3': 4, '4': 3, '5': 11, '6': '.google.genomics.v1.CallSet.InfoEntry', '10': 'info'},
+    {
+      '1': 'info',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.CallSet.InfoEntry',
+      '10': 'info'
+    },
   ],
   '3': [CallSet_InfoEntry$json],
 };
@@ -199,7 +282,14 @@ const CallSet_InfoEntry$json = {
   '1': 'InfoEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -233,9 +323,29 @@ const ImportVariantsRequest$json = {
   '2': [
     {'1': 'variant_set_id', '3': 1, '4': 1, '5': 9, '10': 'variantSetId'},
     {'1': 'source_uris', '3': 2, '4': 3, '5': 9, '10': 'sourceUris'},
-    {'1': 'format', '3': 3, '4': 1, '5': 14, '6': '.google.genomics.v1.ImportVariantsRequest.Format', '10': 'format'},
-    {'1': 'normalize_reference_names', '3': 5, '4': 1, '5': 8, '10': 'normalizeReferenceNames'},
-    {'1': 'info_merge_config', '3': 6, '4': 3, '5': 11, '6': '.google.genomics.v1.ImportVariantsRequest.InfoMergeConfigEntry', '10': 'infoMergeConfig'},
+    {
+      '1': 'format',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.ImportVariantsRequest.Format',
+      '10': 'format'
+    },
+    {
+      '1': 'normalize_reference_names',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'normalizeReferenceNames'
+    },
+    {
+      '1': 'info_merge_config',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.ImportVariantsRequest.InfoMergeConfigEntry',
+      '10': 'infoMergeConfig'
+    },
   ],
   '3': [ImportVariantsRequest_InfoMergeConfigEntry$json],
   '4': [ImportVariantsRequest_Format$json],
@@ -246,7 +356,14 @@ const ImportVariantsRequest_InfoMergeConfigEntry$json = {
   '1': 'InfoMergeConfigEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 14, '6': '.google.genomics.v1.InfoMergeOperation', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.InfoMergeOperation',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -283,22 +400,31 @@ const ImportVariantsResponse$json = {
 };
 
 /// Descriptor for `ImportVariantsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List importVariantsResponseDescriptor = $convert.base64Decode(
-    'ChZJbXBvcnRWYXJpYW50c1Jlc3BvbnNlEiAKDGNhbGxfc2V0X2lkcxgBIAMoCVIKY2FsbFNldE'
-    'lkcw==');
+final $typed_data.Uint8List importVariantsResponseDescriptor =
+    $convert.base64Decode(
+        'ChZJbXBvcnRWYXJpYW50c1Jlc3BvbnNlEiAKDGNhbGxfc2V0X2lkcxgBIAMoCVIKY2FsbFNldE'
+        'lkcw==');
 
 @$core.Deprecated('Use createVariantSetRequestDescriptor instead')
 const CreateVariantSetRequest$json = {
   '1': 'CreateVariantSetRequest',
   '2': [
-    {'1': 'variant_set', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1.VariantSet', '10': 'variantSet'},
+    {
+      '1': 'variant_set',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantSet',
+      '10': 'variantSet'
+    },
   ],
 };
 
 /// Descriptor for `CreateVariantSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createVariantSetRequestDescriptor = $convert.base64Decode(
-    'ChdDcmVhdGVWYXJpYW50U2V0UmVxdWVzdBI/Cgt2YXJpYW50X3NldBgBIAEoCzIeLmdvb2dsZS'
-    '5nZW5vbWljcy52MS5WYXJpYW50U2V0Ugp2YXJpYW50U2V0');
+final $typed_data.Uint8List createVariantSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChdDcmVhdGVWYXJpYW50U2V0UmVxdWVzdBI/Cgt2YXJpYW50X3NldBgBIAEoCzIeLmdvb2dsZS'
+        '5nZW5vbWljcy52MS5WYXJpYW50U2V0Ugp2YXJpYW50U2V0');
 
 @$core.Deprecated('Use exportVariantSetRequestDescriptor instead')
 const ExportVariantSetRequest$json = {
@@ -307,7 +433,14 @@ const ExportVariantSetRequest$json = {
     {'1': 'variant_set_id', '3': 1, '4': 1, '5': 9, '10': 'variantSetId'},
     {'1': 'call_set_ids', '3': 2, '4': 3, '5': 9, '10': 'callSetIds'},
     {'1': 'project_id', '3': 3, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'format', '3': 4, '4': 1, '5': 14, '6': '.google.genomics.v1.ExportVariantSetRequest.Format', '10': 'format'},
+    {
+      '1': 'format',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.ExportVariantSetRequest.Format',
+      '10': 'format'
+    },
     {'1': 'bigquery_dataset', '3': 5, '4': 1, '5': 9, '10': 'bigqueryDataset'},
     {'1': 'bigquery_table', '3': 6, '4': 1, '5': 9, '10': 'bigqueryTable'},
   ],
@@ -366,7 +499,14 @@ final $typed_data.Uint8List searchVariantSetsRequestDescriptor = $convert.base64
 const SearchVariantSetsResponse$json = {
   '1': 'SearchVariantSetsResponse',
   '2': [
-    {'1': 'variant_sets', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.VariantSet', '10': 'variantSets'},
+    {
+      '1': 'variant_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantSet',
+      '10': 'variantSets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -386,17 +526,32 @@ const DeleteVariantSetRequest$json = {
 };
 
 /// Descriptor for `DeleteVariantSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteVariantSetRequestDescriptor = $convert.base64Decode(
-    'ChdEZWxldGVWYXJpYW50U2V0UmVxdWVzdBIkCg52YXJpYW50X3NldF9pZBgBIAEoCVIMdmFyaW'
-    'FudFNldElk');
+final $typed_data.Uint8List deleteVariantSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChdEZWxldGVWYXJpYW50U2V0UmVxdWVzdBIkCg52YXJpYW50X3NldF9pZBgBIAEoCVIMdmFyaW'
+        'FudFNldElk');
 
 @$core.Deprecated('Use updateVariantSetRequestDescriptor instead')
 const UpdateVariantSetRequest$json = {
   '1': 'UpdateVariantSetRequest',
   '2': [
     {'1': 'variant_set_id', '3': 1, '4': 1, '5': 9, '10': 'variantSetId'},
-    {'1': 'variant_set', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.VariantSet', '10': 'variantSet'},
-    {'1': 'update_mask', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'variant_set',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantSet',
+      '10': 'variantSet'
+    },
+    {
+      '1': 'update_mask',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -436,7 +591,14 @@ final $typed_data.Uint8List searchVariantsRequestDescriptor = $convert.base64Dec
 const SearchVariantsResponse$json = {
   '1': 'SearchVariantsResponse',
   '2': [
-    {'1': 'variants', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Variant', '10': 'variants'},
+    {
+      '1': 'variants',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Variant',
+      '10': 'variants'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -451,7 +613,14 @@ final $typed_data.Uint8List searchVariantsResponseDescriptor = $convert.base64De
 const CreateVariantRequest$json = {
   '1': 'CreateVariantRequest',
   '2': [
-    {'1': 'variant', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1.Variant', '10': 'variant'},
+    {
+      '1': 'variant',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Variant',
+      '10': 'variant'
+    },
   ],
 };
 
@@ -465,8 +634,22 @@ const UpdateVariantRequest$json = {
   '1': 'UpdateVariantRequest',
   '2': [
     {'1': 'variant_id', '3': 1, '4': 1, '5': 9, '10': 'variantId'},
-    {'1': 'variant', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.Variant', '10': 'variant'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'variant',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Variant',
+      '10': 'variant'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -506,8 +689,22 @@ const MergeVariantsRequest$json = {
   '1': 'MergeVariantsRequest',
   '2': [
     {'1': 'variant_set_id', '3': 1, '4': 1, '5': 9, '10': 'variantSetId'},
-    {'1': 'variants', '3': 2, '4': 3, '5': 11, '6': '.google.genomics.v1.Variant', '10': 'variants'},
-    {'1': 'info_merge_config', '3': 3, '4': 3, '5': 11, '6': '.google.genomics.v1.MergeVariantsRequest.InfoMergeConfigEntry', '10': 'infoMergeConfig'},
+    {
+      '1': 'variants',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Variant',
+      '10': 'variants'
+    },
+    {
+      '1': 'info_merge_config',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.MergeVariantsRequest.InfoMergeConfigEntry',
+      '10': 'infoMergeConfig'
+    },
   ],
   '3': [MergeVariantsRequest_InfoMergeConfigEntry$json],
 };
@@ -517,7 +714,14 @@ const MergeVariantsRequest_InfoMergeConfigEntry$json = {
   '1': 'InfoMergeConfigEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 14, '6': '.google.genomics.v1.InfoMergeOperation', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.InfoMergeOperation',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -552,7 +756,14 @@ final $typed_data.Uint8List searchCallSetsRequestDescriptor = $convert.base64Dec
 const SearchCallSetsResponse$json = {
   '1': 'SearchCallSetsResponse',
   '2': [
-    {'1': 'call_sets', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.CallSet', '10': 'callSets'},
+    {
+      '1': 'call_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.CallSet',
+      '10': 'callSets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -567,7 +778,14 @@ final $typed_data.Uint8List searchCallSetsResponseDescriptor = $convert.base64De
 const CreateCallSetRequest$json = {
   '1': 'CreateCallSetRequest',
   '2': [
-    {'1': 'call_set', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1.CallSet', '10': 'callSet'},
+    {
+      '1': 'call_set',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.CallSet',
+      '10': 'callSet'
+    },
   ],
 };
 
@@ -581,8 +799,22 @@ const UpdateCallSetRequest$json = {
   '1': 'UpdateCallSetRequest',
   '2': [
     {'1': 'call_set_id', '3': 1, '4': 1, '5': 9, '10': 'callSetId'},
-    {'1': 'call_set', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.CallSet', '10': 'callSet'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'call_set',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.CallSet',
+      '10': 'callSet'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -641,12 +873,19 @@ final $typed_data.Uint8List streamVariantsRequestDescriptor = $convert.base64Dec
 const StreamVariantsResponse$json = {
   '1': 'StreamVariantsResponse',
   '2': [
-    {'1': 'variants', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Variant', '10': 'variants'},
+    {
+      '1': 'variants',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Variant',
+      '10': 'variants'
+    },
   ],
 };
 
 /// Descriptor for `StreamVariantsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List streamVariantsResponseDescriptor = $convert.base64Decode(
-    'ChZTdHJlYW1WYXJpYW50c1Jlc3BvbnNlEjcKCHZhcmlhbnRzGAEgAygLMhsuZ29vZ2xlLmdlbm'
-    '9taWNzLnYxLlZhcmlhbnRSCHZhcmlhbnRz');
-
+final $typed_data.Uint8List streamVariantsResponseDescriptor =
+    $convert.base64Decode(
+        'ChZTdHJlYW1WYXJpYW50c1Jlc3BvbnNlEjcKCHZhcmlhbnRzGAEgAygLMhsuZ29vZ2xlLmdlbm'
+        '9taWNzLnYxLlZhcmlhbnRSCHZhcmlhbnRz');

@@ -19,7 +19,14 @@ const GcpUserAccessBinding$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'group_key', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'groupKey'},
-    {'1': 'access_levels', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'accessLevels'},
+    {
+      '1': 'access_levels',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'accessLevels'
+    },
   ],
   '7': {},
 };
@@ -32,4 +39,3 @@ final $typed_data.Uint8List gcpUserAccessBindingDescriptor = $convert.base64Deco
     'FjY2Vzc0xldmVsczqMAepBiAEKOGFjY2Vzc2NvbnRleHRtYW5hZ2VyLmdvb2dsZWFwaXMuY29t'
     'L0djcFVzZXJBY2Nlc3NCaW5kaW5nEkxvcmdhbml6YXRpb25zL3tvcmdhbml6YXRpb259L2djcF'
     'VzZXJBY2Nlc3NCaW5kaW5ncy97Z2NwX3VzZXJfYWNjZXNzX2JpbmRpbmd9');
-

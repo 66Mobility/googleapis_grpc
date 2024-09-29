@@ -103,41 +103,62 @@ class Backup extends $pb.GeneratedMessage {
     return $result;
   }
   Backup._() : super();
-  factory Backup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Backup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Backup.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Backup.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Backup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Backup',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'database')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
     ..aInt64(5, _omitFieldNames ? '' : 'sizeBytes')
-    ..e<Backup_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Backup_State.STATE_UNSPECIFIED, valueOf: Backup_State.valueOf, enumValues: Backup_State.values)
+    ..e<Backup_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Backup_State.STATE_UNSPECIFIED,
+        valueOf: Backup_State.valueOf,
+        enumValues: Backup_State.values)
     ..pPS(7, _omitFieldNames ? '' : 'referencingDatabases')
-    ..aOM<$549.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo', subBuilder: $549.EncryptionInfo.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'versionTime', subBuilder: $302.Timestamp.create)
-    ..e<$549.DatabaseDialect>(10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE, defaultOrMaker: $549.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED, valueOf: $549.DatabaseDialect.valueOf, enumValues: $549.DatabaseDialect.values)
+    ..aOM<$549.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo',
+        subBuilder: $549.EncryptionInfo.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'versionTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<$549.DatabaseDialect>(
+        10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE,
+        defaultOrMaker: $549.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED,
+        valueOf: $549.DatabaseDialect.valueOf,
+        enumValues: $549.DatabaseDialect.values)
     ..pPS(11, _omitFieldNames ? '' : 'referencingBackups')
-    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'maxExpireTime', subBuilder: $302.Timestamp.create)
-    ..pc<$549.EncryptionInfo>(13, _omitFieldNames ? '' : 'encryptionInformation', $pb.PbFieldType.PM, subBuilder: $549.EncryptionInfo.create)
+    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'maxExpireTime',
+        subBuilder: $302.Timestamp.create)
+    ..pc<$549.EncryptionInfo>(
+        13, _omitFieldNames ? '' : 'encryptionInformation', $pb.PbFieldType.PM,
+        subBuilder: $549.EncryptionInfo.create)
     ..pPS(14, _omitFieldNames ? '' : 'backupSchedules')
     ..aInt64(15, _omitFieldNames ? '' : 'freeableSizeBytes')
     ..aInt64(16, _omitFieldNames ? '' : 'exclusiveSizeBytes')
     ..aOS(17, _omitFieldNames ? '' : 'incrementalBackupChainId')
-    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'oldestVersionTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'oldestVersionTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Backup clone() => Backup()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Backup copyWith(void Function(Backup) updates) => super.copyWith((message) => updates(message as Backup)) as Backup;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Backup copyWith(void Function(Backup) updates) =>
+      super.copyWith((message) => updates(message as Backup)) as Backup;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -146,7 +167,8 @@ class Backup extends $pb.GeneratedMessage {
   Backup createEmptyInstance() => create();
   static $pb.PbList<Backup> createRepeated() => $pb.PbList<Backup>();
   @$core.pragma('dart2js:noInline')
-  static Backup getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backup>(create);
+  static Backup getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backup>(create);
   static Backup? _defaultInstance;
 
   ///  Output only for the
@@ -168,7 +190,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -182,7 +207,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get database => $_getSZ(1);
   @$pb.TagNumber(2)
-  set database($core.String v) { $_setString(1, v); }
+  set database($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDatabase() => $_has(1);
   @$pb.TagNumber(2)
@@ -198,7 +226,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($302.Timestamp v) { setField(3, v); }
+  set expireTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -213,7 +244,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -225,7 +259,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get sizeBytes => $_getI64(4);
   @$pb.TagNumber(5)
-  set sizeBytes($fixnum.Int64 v) { $_setInt64(4, v); }
+  set sizeBytes($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSizeBytes() => $_has(4);
   @$pb.TagNumber(5)
@@ -235,7 +272,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Backup_State get state => $_getN(5);
   @$pb.TagNumber(6)
-  set state(Backup_State v) { setField(6, v); }
+  set state(Backup_State v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
@@ -255,7 +295,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $549.EncryptionInfo get encryptionInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set encryptionInfo($549.EncryptionInfo v) { setField(8, v); }
+  set encryptionInfo($549.EncryptionInfo v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasEncryptionInfo() => $_has(7);
   @$pb.TagNumber(8)
@@ -270,7 +313,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get versionTime => $_getN(8);
   @$pb.TagNumber(9)
-  set versionTime($302.Timestamp v) { setField(9, v); }
+  set versionTime($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasVersionTime() => $_has(8);
   @$pb.TagNumber(9)
@@ -282,7 +328,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $549.DatabaseDialect get databaseDialect => $_getN(9);
   @$pb.TagNumber(10)
-  set databaseDialect($549.DatabaseDialect v) { setField(10, v); }
+  set databaseDialect($549.DatabaseDialect v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasDatabaseDialect() => $_has(9);
   @$pb.TagNumber(10)
@@ -306,7 +355,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $302.Timestamp get maxExpireTime => $_getN(11);
   @$pb.TagNumber(12)
-  set maxExpireTime($302.Timestamp v) { setField(12, v); }
+  set maxExpireTime($302.Timestamp v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasMaxExpireTime() => $_has(11);
   @$pb.TagNumber(12)
@@ -344,7 +396,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $fixnum.Int64 get freeableSizeBytes => $_getI64(14);
   @$pb.TagNumber(15)
-  set freeableSizeBytes($fixnum.Int64 v) { $_setInt64(14, v); }
+  set freeableSizeBytes($fixnum.Int64 v) {
+    $_setInt64(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasFreeableSizeBytes() => $_has(14);
   @$pb.TagNumber(15)
@@ -361,7 +416,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $fixnum.Int64 get exclusiveSizeBytes => $_getI64(15);
   @$pb.TagNumber(16)
-  set exclusiveSizeBytes($fixnum.Int64 v) { $_setInt64(15, v); }
+  set exclusiveSizeBytes($fixnum.Int64 v) {
+    $_setInt64(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasExclusiveSizeBytes() => $_has(15);
   @$pb.TagNumber(16)
@@ -375,7 +433,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get incrementalBackupChainId => $_getSZ(16);
   @$pb.TagNumber(17)
-  set incrementalBackupChainId($core.String v) { $_setString(16, v); }
+  set incrementalBackupChainId($core.String v) {
+    $_setString(16, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasIncrementalBackupChainId() => $_has(16);
   @$pb.TagNumber(17)
@@ -390,7 +451,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $302.Timestamp get oldestVersionTime => $_getN(17);
   @$pb.TagNumber(18)
-  set oldestVersionTime($302.Timestamp v) { setField(18, v); }
+  set oldestVersionTime($302.Timestamp v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasOldestVersionTime() => $_has(17);
   @$pb.TagNumber(18)
@@ -424,36 +488,47 @@ class CreateBackupRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateBackupRequest._() : super();
-  factory CreateBackupRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateBackupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateBackupRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateBackupRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateBackupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateBackupRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'backupId')
     ..aOM<Backup>(3, _omitFieldNames ? '' : 'backup', subBuilder: Backup.create)
-    ..aOM<CreateBackupEncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: CreateBackupEncryptionConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<CreateBackupEncryptionConfig>(
+        4, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: CreateBackupEncryptionConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateBackupRequest clone() => CreateBackupRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateBackupRequest copyWith(void Function(CreateBackupRequest) updates) => super.copyWith((message) => updates(message as CreateBackupRequest)) as CreateBackupRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateBackupRequest copyWith(void Function(CreateBackupRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateBackupRequest))
+          as CreateBackupRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateBackupRequest create() => CreateBackupRequest._();
   CreateBackupRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateBackupRequest> createRepeated() => $pb.PbList<CreateBackupRequest>();
+  static $pb.PbList<CreateBackupRequest> createRepeated() =>
+      $pb.PbList<CreateBackupRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateBackupRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateBackupRequest>(create);
+  static CreateBackupRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateBackupRequest>(create);
   static CreateBackupRequest? _defaultInstance;
 
   /// Required. The name of the instance in which the backup will be
@@ -465,7 +540,10 @@ class CreateBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -477,7 +555,10 @@ class CreateBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get backupId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set backupId($core.String v) { $_setString(1, v); }
+  set backupId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBackupId() => $_has(1);
   @$pb.TagNumber(2)
@@ -487,7 +568,10 @@ class CreateBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Backup get backup => $_getN(2);
   @$pb.TagNumber(3)
-  set backup(Backup v) { setField(3, v); }
+  set backup(Backup v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBackup() => $_has(2);
   @$pb.TagNumber(3)
@@ -503,7 +587,10 @@ class CreateBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   CreateBackupEncryptionConfig get encryptionConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set encryptionConfig(CreateBackupEncryptionConfig v) { setField(4, v); }
+  set encryptionConfig(CreateBackupEncryptionConfig v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEncryptionConfig() => $_has(3);
   @$pb.TagNumber(4)
@@ -537,43 +624,58 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CreateBackupMetadata._() : super();
-  factory CreateBackupMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateBackupMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateBackupMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateBackupMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateBackupMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateBackupMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'database')
-    ..aOM<$549.OperationProgress>(3, _omitFieldNames ? '' : 'progress', subBuilder: $549.OperationProgress.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$549.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
+        subBuilder: $549.OperationProgress.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateBackupMetadata clone() => CreateBackupMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateBackupMetadata copyWith(void Function(CreateBackupMetadata) updates) => super.copyWith((message) => updates(message as CreateBackupMetadata)) as CreateBackupMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateBackupMetadata clone() =>
+      CreateBackupMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateBackupMetadata copyWith(void Function(CreateBackupMetadata) updates) =>
+      super.copyWith((message) => updates(message as CreateBackupMetadata))
+          as CreateBackupMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateBackupMetadata create() => CreateBackupMetadata._();
   CreateBackupMetadata createEmptyInstance() => create();
-  static $pb.PbList<CreateBackupMetadata> createRepeated() => $pb.PbList<CreateBackupMetadata>();
+  static $pb.PbList<CreateBackupMetadata> createRepeated() =>
+      $pb.PbList<CreateBackupMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CreateBackupMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateBackupMetadata>(create);
+  static CreateBackupMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateBackupMetadata>(create);
   static CreateBackupMetadata? _defaultInstance;
 
   /// The name of the backup being created.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -583,7 +685,10 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get database => $_getSZ(1);
   @$pb.TagNumber(2)
-  set database($core.String v) { $_setString(1, v); }
+  set database($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDatabase() => $_has(1);
   @$pb.TagNumber(2)
@@ -595,7 +700,10 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $549.OperationProgress get progress => $_getN(2);
   @$pb.TagNumber(3)
-  set progress($549.OperationProgress v) { setField(3, v); }
+  set progress($549.OperationProgress v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProgress() => $_has(2);
   @$pb.TagNumber(3)
@@ -618,7 +726,10 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get cancelTime => $_getN(3);
   @$pb.TagNumber(4)
-  set cancelTime($302.Timestamp v) { setField(4, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCancelTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -656,37 +767,49 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CopyBackupRequest._() : super();
-  factory CopyBackupRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CopyBackupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CopyBackupRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CopyBackupRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CopyBackupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CopyBackupRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'backupId')
     ..aOS(3, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..aOM<CopyBackupEncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: CopyBackupEncryptionConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<CopyBackupEncryptionConfig>(
+        5, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: CopyBackupEncryptionConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CopyBackupRequest clone() => CopyBackupRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CopyBackupRequest copyWith(void Function(CopyBackupRequest) updates) => super.copyWith((message) => updates(message as CopyBackupRequest)) as CopyBackupRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CopyBackupRequest copyWith(void Function(CopyBackupRequest) updates) =>
+      super.copyWith((message) => updates(message as CopyBackupRequest))
+          as CopyBackupRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CopyBackupRequest create() => CopyBackupRequest._();
   CopyBackupRequest createEmptyInstance() => create();
-  static $pb.PbList<CopyBackupRequest> createRepeated() => $pb.PbList<CopyBackupRequest>();
+  static $pb.PbList<CopyBackupRequest> createRepeated() =>
+      $pb.PbList<CopyBackupRequest>();
   @$core.pragma('dart2js:noInline')
-  static CopyBackupRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CopyBackupRequest>(create);
+  static CopyBackupRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CopyBackupRequest>(create);
   static CopyBackupRequest? _defaultInstance;
 
   /// Required. The name of the destination instance that will contain the backup
@@ -694,7 +817,10 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -706,7 +832,10 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get backupId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set backupId($core.String v) { $_setString(1, v); }
+  set backupId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBackupId() => $_has(1);
   @$pb.TagNumber(2)
@@ -721,7 +850,10 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceBackup => $_getSZ(2);
   @$pb.TagNumber(3)
-  set sourceBackup($core.String v) { $_setString(2, v); }
+  set sourceBackup($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSourceBackup() => $_has(2);
   @$pb.TagNumber(3)
@@ -735,7 +867,10 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($302.Timestamp v) { setField(4, v); }
+  set expireTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -751,7 +886,10 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   CopyBackupEncryptionConfig get encryptionConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set encryptionConfig(CopyBackupEncryptionConfig v) { setField(5, v); }
+  set encryptionConfig(CopyBackupEncryptionConfig v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEncryptionConfig() => $_has(4);
   @$pb.TagNumber(5)
@@ -785,36 +923,47 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CopyBackupMetadata._() : super();
-  factory CopyBackupMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CopyBackupMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CopyBackupMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CopyBackupMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CopyBackupMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CopyBackupMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$549.OperationProgress>(3, _omitFieldNames ? '' : 'progress', subBuilder: $549.OperationProgress.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$549.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
+        subBuilder: $549.OperationProgress.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CopyBackupMetadata clone() => CopyBackupMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CopyBackupMetadata copyWith(void Function(CopyBackupMetadata) updates) => super.copyWith((message) => updates(message as CopyBackupMetadata)) as CopyBackupMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CopyBackupMetadata copyWith(void Function(CopyBackupMetadata) updates) =>
+      super.copyWith((message) => updates(message as CopyBackupMetadata))
+          as CopyBackupMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CopyBackupMetadata create() => CopyBackupMetadata._();
   CopyBackupMetadata createEmptyInstance() => create();
-  static $pb.PbList<CopyBackupMetadata> createRepeated() => $pb.PbList<CopyBackupMetadata>();
+  static $pb.PbList<CopyBackupMetadata> createRepeated() =>
+      $pb.PbList<CopyBackupMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CopyBackupMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CopyBackupMetadata>(create);
+  static CopyBackupMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CopyBackupMetadata>(create);
   static CopyBackupMetadata? _defaultInstance;
 
   /// The name of the backup being created through the copy operation.
@@ -823,7 +972,10 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -835,7 +987,10 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get sourceBackup => $_getSZ(1);
   @$pb.TagNumber(2)
-  set sourceBackup($core.String v) { $_setString(1, v); }
+  set sourceBackup($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSourceBackup() => $_has(1);
   @$pb.TagNumber(2)
@@ -847,7 +1002,10 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $549.OperationProgress get progress => $_getN(2);
   @$pb.TagNumber(3)
-  set progress($549.OperationProgress v) { setField(3, v); }
+  set progress($549.OperationProgress v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProgress() => $_has(2);
   @$pb.TagNumber(3)
@@ -870,7 +1028,10 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get cancelTime => $_getN(3);
   @$pb.TagNumber(4)
-  set cancelTime($302.Timestamp v) { setField(4, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCancelTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -896,34 +1057,44 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateBackupRequest._() : super();
-  factory UpdateBackupRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateBackupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateBackupRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateBackupRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBackupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateBackupRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOM<Backup>(1, _omitFieldNames ? '' : 'backup', subBuilder: Backup.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateBackupRequest clone() => UpdateBackupRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateBackupRequest copyWith(void Function(UpdateBackupRequest) updates) => super.copyWith((message) => updates(message as UpdateBackupRequest)) as UpdateBackupRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateBackupRequest copyWith(void Function(UpdateBackupRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateBackupRequest))
+          as UpdateBackupRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateBackupRequest create() => UpdateBackupRequest._();
   UpdateBackupRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateBackupRequest> createRepeated() => $pb.PbList<UpdateBackupRequest>();
+  static $pb.PbList<UpdateBackupRequest> createRepeated() =>
+      $pb.PbList<UpdateBackupRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateBackupRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateBackupRequest>(create);
+  static UpdateBackupRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateBackupRequest>(create);
   static UpdateBackupRequest? _defaultInstance;
 
   /// Required. The backup to update. `backup.name`, and the fields to be updated
@@ -933,7 +1104,10 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Backup get backup => $_getN(0);
   @$pb.TagNumber(1)
-  set backup(Backup v) { setField(1, v); }
+  set backup(Backup v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBackup() => $_has(0);
   @$pb.TagNumber(1)
@@ -949,7 +1123,10 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -971,33 +1148,42 @@ class GetBackupRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetBackupRequest._() : super();
-  factory GetBackupRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetBackupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetBackupRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetBackupRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBackupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBackupRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetBackupRequest clone() => GetBackupRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetBackupRequest copyWith(void Function(GetBackupRequest) updates) => super.copyWith((message) => updates(message as GetBackupRequest)) as GetBackupRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetBackupRequest copyWith(void Function(GetBackupRequest) updates) =>
+      super.copyWith((message) => updates(message as GetBackupRequest))
+          as GetBackupRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetBackupRequest create() => GetBackupRequest._();
   GetBackupRequest createEmptyInstance() => create();
-  static $pb.PbList<GetBackupRequest> createRepeated() => $pb.PbList<GetBackupRequest>();
+  static $pb.PbList<GetBackupRequest> createRepeated() =>
+      $pb.PbList<GetBackupRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetBackupRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBackupRequest>(create);
+  static GetBackupRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBackupRequest>(create);
   static GetBackupRequest? _defaultInstance;
 
   /// Required. Name of the backup.
@@ -1006,7 +1192,10 @@ class GetBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1026,33 +1215,42 @@ class DeleteBackupRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteBackupRequest._() : super();
-  factory DeleteBackupRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteBackupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteBackupRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteBackupRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteBackupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteBackupRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteBackupRequest clone() => DeleteBackupRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteBackupRequest copyWith(void Function(DeleteBackupRequest) updates) => super.copyWith((message) => updates(message as DeleteBackupRequest)) as DeleteBackupRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteBackupRequest copyWith(void Function(DeleteBackupRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteBackupRequest))
+          as DeleteBackupRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteBackupRequest create() => DeleteBackupRequest._();
   DeleteBackupRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteBackupRequest> createRepeated() => $pb.PbList<DeleteBackupRequest>();
+  static $pb.PbList<DeleteBackupRequest> createRepeated() =>
+      $pb.PbList<DeleteBackupRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteBackupRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteBackupRequest>(create);
+  static DeleteBackupRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteBackupRequest>(create);
   static DeleteBackupRequest? _defaultInstance;
 
   /// Required. Name of the backup to delete.
@@ -1061,7 +1259,10 @@ class DeleteBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1093,36 +1294,45 @@ class ListBackupsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListBackupsRequest._() : super();
-  factory ListBackupsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBackupsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBackupsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBackupsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBackupsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBackupsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListBackupsRequest clone() => ListBackupsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBackupsRequest copyWith(void Function(ListBackupsRequest) updates) => super.copyWith((message) => updates(message as ListBackupsRequest)) as ListBackupsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBackupsRequest copyWith(void Function(ListBackupsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListBackupsRequest))
+          as ListBackupsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListBackupsRequest create() => ListBackupsRequest._();
   ListBackupsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListBackupsRequest> createRepeated() => $pb.PbList<ListBackupsRequest>();
+  static $pb.PbList<ListBackupsRequest> createRepeated() =>
+      $pb.PbList<ListBackupsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListBackupsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBackupsRequest>(create);
+  static ListBackupsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBackupsRequest>(create);
   static ListBackupsRequest? _defaultInstance;
 
   /// Required. The instance to list backups from.  Values are of the
@@ -1130,7 +1340,10 @@ class ListBackupsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1179,7 +1392,10 @@ class ListBackupsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -1190,7 +1406,10 @@ class ListBackupsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1204,7 +1423,10 @@ class ListBackupsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -1228,34 +1450,44 @@ class ListBackupsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListBackupsResponse._() : super();
-  factory ListBackupsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBackupsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBackupsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBackupsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBackupsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..pc<Backup>(1, _omitFieldNames ? '' : 'backups', $pb.PbFieldType.PM, subBuilder: Backup.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBackupsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..pc<Backup>(1, _omitFieldNames ? '' : 'backups', $pb.PbFieldType.PM,
+        subBuilder: Backup.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListBackupsResponse clone() => ListBackupsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBackupsResponse copyWith(void Function(ListBackupsResponse) updates) => super.copyWith((message) => updates(message as ListBackupsResponse)) as ListBackupsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBackupsResponse copyWith(void Function(ListBackupsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListBackupsResponse))
+          as ListBackupsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListBackupsResponse create() => ListBackupsResponse._();
   ListBackupsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListBackupsResponse> createRepeated() => $pb.PbList<ListBackupsResponse>();
+  static $pb.PbList<ListBackupsResponse> createRepeated() =>
+      $pb.PbList<ListBackupsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListBackupsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBackupsResponse>(create);
+  static ListBackupsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBackupsResponse>(create);
   static ListBackupsResponse? _defaultInstance;
 
   /// The list of matching backups. Backups returned are ordered by `create_time`
@@ -1269,7 +1501,10 @@ class ListBackupsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1301,36 +1536,49 @@ class ListBackupOperationsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListBackupOperationsRequest._() : super();
-  factory ListBackupOperationsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBackupOperationsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBackupOperationsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBackupOperationsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBackupOperationsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBackupOperationsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListBackupOperationsRequest clone() => ListBackupOperationsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBackupOperationsRequest copyWith(void Function(ListBackupOperationsRequest) updates) => super.copyWith((message) => updates(message as ListBackupOperationsRequest)) as ListBackupOperationsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListBackupOperationsRequest clone() =>
+      ListBackupOperationsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBackupOperationsRequest copyWith(
+          void Function(ListBackupOperationsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListBackupOperationsRequest))
+          as ListBackupOperationsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListBackupOperationsRequest create() => ListBackupOperationsRequest._();
+  static ListBackupOperationsRequest create() =>
+      ListBackupOperationsRequest._();
   ListBackupOperationsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListBackupOperationsRequest> createRepeated() => $pb.PbList<ListBackupOperationsRequest>();
+  static $pb.PbList<ListBackupOperationsRequest> createRepeated() =>
+      $pb.PbList<ListBackupOperationsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListBackupOperationsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBackupOperationsRequest>(create);
+  static ListBackupOperationsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBackupOperationsRequest>(create);
   static ListBackupOperationsRequest? _defaultInstance;
 
   /// Required. The instance of the backup operations. Values are of
@@ -1338,7 +1586,10 @@ class ListBackupOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1417,7 +1668,10 @@ class ListBackupOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -1428,7 +1682,10 @@ class ListBackupOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1442,7 +1699,10 @@ class ListBackupOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -1466,34 +1726,49 @@ class ListBackupOperationsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListBackupOperationsResponse._() : super();
-  factory ListBackupOperationsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBackupOperationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBackupOperationsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBackupOperationsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBackupOperationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..pc<$13.Operation>(1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: $13.Operation.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBackupOperationsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..pc<$13.Operation>(
+        1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM,
+        subBuilder: $13.Operation.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListBackupOperationsResponse clone() => ListBackupOperationsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBackupOperationsResponse copyWith(void Function(ListBackupOperationsResponse) updates) => super.copyWith((message) => updates(message as ListBackupOperationsResponse)) as ListBackupOperationsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListBackupOperationsResponse clone() =>
+      ListBackupOperationsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBackupOperationsResponse copyWith(
+          void Function(ListBackupOperationsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListBackupOperationsResponse))
+          as ListBackupOperationsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListBackupOperationsResponse create() => ListBackupOperationsResponse._();
+  static ListBackupOperationsResponse create() =>
+      ListBackupOperationsResponse._();
   ListBackupOperationsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListBackupOperationsResponse> createRepeated() => $pb.PbList<ListBackupOperationsResponse>();
+  static $pb.PbList<ListBackupOperationsResponse> createRepeated() =>
+      $pb.PbList<ListBackupOperationsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListBackupOperationsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBackupOperationsResponse>(create);
+  static ListBackupOperationsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBackupOperationsResponse>(create);
   static ListBackupOperationsResponse? _defaultInstance;
 
   /// The list of matching backup [long-running
@@ -1514,7 +1789,10 @@ class ListBackupOperationsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1545,27 +1823,35 @@ class BackupInfo extends $pb.GeneratedMessage {
     return $result;
   }
   BackupInfo._() : super();
-  factory BackupInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BackupInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BackupInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BackupInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BackupInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'backup')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'sourceDatabase')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'versionTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'versionTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BackupInfo clone() => BackupInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BackupInfo copyWith(void Function(BackupInfo) updates) => super.copyWith((message) => updates(message as BackupInfo)) as BackupInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BackupInfo copyWith(void Function(BackupInfo) updates) =>
+      super.copyWith((message) => updates(message as BackupInfo)) as BackupInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1574,14 +1860,18 @@ class BackupInfo extends $pb.GeneratedMessage {
   BackupInfo createEmptyInstance() => create();
   static $pb.PbList<BackupInfo> createRepeated() => $pb.PbList<BackupInfo>();
   @$core.pragma('dart2js:noInline')
-  static BackupInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BackupInfo>(create);
+  static BackupInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BackupInfo>(create);
   static BackupInfo? _defaultInstance;
 
   /// Name of the backup.
   @$pb.TagNumber(1)
   $core.String get backup => $_getSZ(0);
   @$pb.TagNumber(1)
-  set backup($core.String v) { $_setString(0, v); }
+  set backup($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBackup() => $_has(0);
   @$pb.TagNumber(1)
@@ -1593,7 +1883,10 @@ class BackupInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($302.Timestamp v) { setField(2, v); }
+  set createTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1605,7 +1898,10 @@ class BackupInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceDatabase => $_getSZ(2);
   @$pb.TagNumber(3)
-  set sourceDatabase($core.String v) { $_setString(2, v); }
+  set sourceDatabase($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSourceDatabase() => $_has(2);
   @$pb.TagNumber(3)
@@ -1619,7 +1915,10 @@ class BackupInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get versionTime => $_getN(3);
   @$pb.TagNumber(4)
-  set versionTime($302.Timestamp v) { setField(4, v); }
+  set versionTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVersionTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -1648,42 +1947,63 @@ class CreateBackupEncryptionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   CreateBackupEncryptionConfig._() : super();
-  factory CreateBackupEncryptionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateBackupEncryptionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateBackupEncryptionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateBackupEncryptionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateBackupEncryptionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..e<CreateBackupEncryptionConfig_EncryptionType>(1, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: CreateBackupEncryptionConfig_EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: CreateBackupEncryptionConfig_EncryptionType.valueOf, enumValues: CreateBackupEncryptionConfig_EncryptionType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateBackupEncryptionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..e<CreateBackupEncryptionConfig_EncryptionType>(
+        1, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE,
+        defaultOrMaker: CreateBackupEncryptionConfig_EncryptionType
+            .ENCRYPTION_TYPE_UNSPECIFIED,
+        valueOf: CreateBackupEncryptionConfig_EncryptionType.valueOf,
+        enumValues: CreateBackupEncryptionConfig_EncryptionType.values)
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyName')
     ..pPS(3, _omitFieldNames ? '' : 'kmsKeyNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateBackupEncryptionConfig clone() => CreateBackupEncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateBackupEncryptionConfig copyWith(void Function(CreateBackupEncryptionConfig) updates) => super.copyWith((message) => updates(message as CreateBackupEncryptionConfig)) as CreateBackupEncryptionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateBackupEncryptionConfig clone() =>
+      CreateBackupEncryptionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateBackupEncryptionConfig copyWith(
+          void Function(CreateBackupEncryptionConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateBackupEncryptionConfig))
+          as CreateBackupEncryptionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateBackupEncryptionConfig create() => CreateBackupEncryptionConfig._();
+  static CreateBackupEncryptionConfig create() =>
+      CreateBackupEncryptionConfig._();
   CreateBackupEncryptionConfig createEmptyInstance() => create();
-  static $pb.PbList<CreateBackupEncryptionConfig> createRepeated() => $pb.PbList<CreateBackupEncryptionConfig>();
+  static $pb.PbList<CreateBackupEncryptionConfig> createRepeated() =>
+      $pb.PbList<CreateBackupEncryptionConfig>();
   @$core.pragma('dart2js:noInline')
-  static CreateBackupEncryptionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateBackupEncryptionConfig>(create);
+  static CreateBackupEncryptionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateBackupEncryptionConfig>(create);
   static CreateBackupEncryptionConfig? _defaultInstance;
 
   /// Required. The encryption type of the backup.
   @$pb.TagNumber(1)
   CreateBackupEncryptionConfig_EncryptionType get encryptionType => $_getN(0);
   @$pb.TagNumber(1)
-  set encryptionType(CreateBackupEncryptionConfig_EncryptionType v) { setField(1, v); }
+  set encryptionType(CreateBackupEncryptionConfig_EncryptionType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEncryptionType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1697,7 +2017,10 @@ class CreateBackupEncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get kmsKeyName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set kmsKeyName($core.String v) { $_setString(1, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKmsKeyName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1742,42 +2065,62 @@ class CopyBackupEncryptionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   CopyBackupEncryptionConfig._() : super();
-  factory CopyBackupEncryptionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CopyBackupEncryptionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CopyBackupEncryptionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CopyBackupEncryptionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CopyBackupEncryptionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..e<CopyBackupEncryptionConfig_EncryptionType>(1, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: CopyBackupEncryptionConfig_EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: CopyBackupEncryptionConfig_EncryptionType.valueOf, enumValues: CopyBackupEncryptionConfig_EncryptionType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CopyBackupEncryptionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..e<CopyBackupEncryptionConfig_EncryptionType>(
+        1, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE,
+        defaultOrMaker: CopyBackupEncryptionConfig_EncryptionType
+            .ENCRYPTION_TYPE_UNSPECIFIED,
+        valueOf: CopyBackupEncryptionConfig_EncryptionType.valueOf,
+        enumValues: CopyBackupEncryptionConfig_EncryptionType.values)
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyName')
     ..pPS(3, _omitFieldNames ? '' : 'kmsKeyNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CopyBackupEncryptionConfig clone() => CopyBackupEncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CopyBackupEncryptionConfig copyWith(void Function(CopyBackupEncryptionConfig) updates) => super.copyWith((message) => updates(message as CopyBackupEncryptionConfig)) as CopyBackupEncryptionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CopyBackupEncryptionConfig clone() =>
+      CopyBackupEncryptionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CopyBackupEncryptionConfig copyWith(
+          void Function(CopyBackupEncryptionConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as CopyBackupEncryptionConfig))
+          as CopyBackupEncryptionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CopyBackupEncryptionConfig create() => CopyBackupEncryptionConfig._();
   CopyBackupEncryptionConfig createEmptyInstance() => create();
-  static $pb.PbList<CopyBackupEncryptionConfig> createRepeated() => $pb.PbList<CopyBackupEncryptionConfig>();
+  static $pb.PbList<CopyBackupEncryptionConfig> createRepeated() =>
+      $pb.PbList<CopyBackupEncryptionConfig>();
   @$core.pragma('dart2js:noInline')
-  static CopyBackupEncryptionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CopyBackupEncryptionConfig>(create);
+  static CopyBackupEncryptionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CopyBackupEncryptionConfig>(create);
   static CopyBackupEncryptionConfig? _defaultInstance;
 
   /// Required. The encryption type of the backup.
   @$pb.TagNumber(1)
   CopyBackupEncryptionConfig_EncryptionType get encryptionType => $_getN(0);
   @$pb.TagNumber(1)
-  set encryptionType(CopyBackupEncryptionConfig_EncryptionType v) { setField(1, v); }
+  set encryptionType(CopyBackupEncryptionConfig_EncryptionType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEncryptionType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1791,7 +2134,10 @@ class CopyBackupEncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get kmsKeyName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set kmsKeyName($core.String v) { $_setString(1, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKmsKeyName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1823,32 +2169,41 @@ class CopyBackupEncryptionConfig extends $pb.GeneratedMessage {
 class FullBackupSpec extends $pb.GeneratedMessage {
   factory FullBackupSpec() => create();
   FullBackupSpec._() : super();
-  factory FullBackupSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FullBackupSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FullBackupSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FullBackupSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FullBackupSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FullBackupSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FullBackupSpec clone() => FullBackupSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FullBackupSpec copyWith(void Function(FullBackupSpec) updates) => super.copyWith((message) => updates(message as FullBackupSpec)) as FullBackupSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FullBackupSpec copyWith(void Function(FullBackupSpec) updates) =>
+      super.copyWith((message) => updates(message as FullBackupSpec))
+          as FullBackupSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FullBackupSpec create() => FullBackupSpec._();
   FullBackupSpec createEmptyInstance() => create();
-  static $pb.PbList<FullBackupSpec> createRepeated() => $pb.PbList<FullBackupSpec>();
+  static $pb.PbList<FullBackupSpec> createRepeated() =>
+      $pb.PbList<FullBackupSpec>();
   @$core.pragma('dart2js:noInline')
-  static FullBackupSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FullBackupSpec>(create);
+  static FullBackupSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FullBackupSpec>(create);
   static FullBackupSpec? _defaultInstance;
 }
 
@@ -1861,35 +2216,46 @@ class FullBackupSpec extends $pb.GeneratedMessage {
 class IncrementalBackupSpec extends $pb.GeneratedMessage {
   factory IncrementalBackupSpec() => create();
   IncrementalBackupSpec._() : super();
-  factory IncrementalBackupSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory IncrementalBackupSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory IncrementalBackupSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IncrementalBackupSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IncrementalBackupSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IncrementalBackupSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  IncrementalBackupSpec clone() => IncrementalBackupSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  IncrementalBackupSpec copyWith(void Function(IncrementalBackupSpec) updates) => super.copyWith((message) => updates(message as IncrementalBackupSpec)) as IncrementalBackupSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IncrementalBackupSpec clone() =>
+      IncrementalBackupSpec()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IncrementalBackupSpec copyWith(
+          void Function(IncrementalBackupSpec) updates) =>
+      super.copyWith((message) => updates(message as IncrementalBackupSpec))
+          as IncrementalBackupSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static IncrementalBackupSpec create() => IncrementalBackupSpec._();
   IncrementalBackupSpec createEmptyInstance() => create();
-  static $pb.PbList<IncrementalBackupSpec> createRepeated() => $pb.PbList<IncrementalBackupSpec>();
+  static $pb.PbList<IncrementalBackupSpec> createRepeated() =>
+      $pb.PbList<IncrementalBackupSpec>();
   @$core.pragma('dart2js:noInline')
-  static IncrementalBackupSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IncrementalBackupSpec>(create);
+  static IncrementalBackupSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IncrementalBackupSpec>(create);
   static IncrementalBackupSpec? _defaultInstance;
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

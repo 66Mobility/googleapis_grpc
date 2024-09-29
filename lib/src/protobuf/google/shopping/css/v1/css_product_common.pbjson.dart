@@ -17,54 +17,339 @@ import 'dart:typed_data' as $typed_data;
 const Attributes$json = {
   '1': 'Attributes',
   '2': [
-    {'1': 'cpp_link', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'cppLink', '17': true},
-    {'1': 'cpp_mobile_link', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'cppMobileLink', '17': true},
-    {'1': 'cpp_ads_redirect', '3': 42, '4': 1, '5': 9, '9': 2, '10': 'cppAdsRedirect', '17': true},
-    {'1': 'low_price', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'lowPrice'},
-    {'1': 'high_price', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'highPrice'},
-    {'1': 'number_of_offers', '3': 5, '4': 1, '5': 3, '9': 3, '10': 'numberOfOffers', '17': true},
-    {'1': 'headline_offer_condition', '3': 6, '4': 1, '5': 9, '9': 4, '10': 'headlineOfferCondition', '17': true},
-    {'1': 'headline_offer_price', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'headlineOfferPrice'},
-    {'1': 'headline_offer_link', '3': 8, '4': 1, '5': 9, '9': 5, '10': 'headlineOfferLink', '17': true},
-    {'1': 'headline_offer_mobile_link', '3': 9, '4': 1, '5': 9, '9': 6, '10': 'headlineOfferMobileLink', '17': true},
-    {'1': 'headline_offer_shipping_price', '3': 41, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'headlineOfferShippingPrice'},
+    {
+      '1': 'cpp_link',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'cppLink',
+      '17': true
+    },
+    {
+      '1': 'cpp_mobile_link',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'cppMobileLink',
+      '17': true
+    },
+    {
+      '1': 'cpp_ads_redirect',
+      '3': 42,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'cppAdsRedirect',
+      '17': true
+    },
+    {
+      '1': 'low_price',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'lowPrice'
+    },
+    {
+      '1': 'high_price',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'highPrice'
+    },
+    {
+      '1': 'number_of_offers',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 3,
+      '10': 'numberOfOffers',
+      '17': true
+    },
+    {
+      '1': 'headline_offer_condition',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'headlineOfferCondition',
+      '17': true
+    },
+    {
+      '1': 'headline_offer_price',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'headlineOfferPrice'
+    },
+    {
+      '1': 'headline_offer_link',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 5,
+      '10': 'headlineOfferLink',
+      '17': true
+    },
+    {
+      '1': 'headline_offer_mobile_link',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 6,
+      '10': 'headlineOfferMobileLink',
+      '17': true
+    },
+    {
+      '1': 'headline_offer_shipping_price',
+      '3': 41,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'headlineOfferShippingPrice'
+    },
     {'1': 'title', '3': 10, '4': 1, '5': 9, '9': 7, '10': 'title', '17': true},
-    {'1': 'image_link', '3': 11, '4': 1, '5': 9, '9': 8, '10': 'imageLink', '17': true},
-    {'1': 'additional_image_links', '3': 12, '4': 3, '5': 9, '10': 'additionalImageLinks'},
-    {'1': 'description', '3': 13, '4': 1, '5': 9, '9': 9, '10': 'description', '17': true},
+    {
+      '1': 'image_link',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 8,
+      '10': 'imageLink',
+      '17': true
+    },
+    {
+      '1': 'additional_image_links',
+      '3': 12,
+      '4': 3,
+      '5': 9,
+      '10': 'additionalImageLinks'
+    },
+    {
+      '1': 'description',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '9': 9,
+      '10': 'description',
+      '17': true
+    },
     {'1': 'brand', '3': 14, '4': 1, '5': 9, '9': 10, '10': 'brand', '17': true},
     {'1': 'mpn', '3': 15, '4': 1, '5': 9, '9': 11, '10': 'mpn', '17': true},
     {'1': 'gtin', '3': 16, '4': 1, '5': 9, '9': 12, '10': 'gtin', '17': true},
     {'1': 'product_types', '3': 36, '4': 3, '5': 9, '10': 'productTypes'},
-    {'1': 'google_product_category', '3': 17, '4': 1, '5': 9, '9': 13, '10': 'googleProductCategory', '17': true},
+    {
+      '1': 'google_product_category',
+      '3': 17,
+      '4': 1,
+      '5': 9,
+      '9': 13,
+      '10': 'googleProductCategory',
+      '17': true
+    },
     {'1': 'adult', '3': 18, '4': 1, '5': 8, '9': 14, '10': 'adult', '17': true},
-    {'1': 'multipack', '3': 19, '4': 1, '5': 3, '9': 15, '10': 'multipack', '17': true},
-    {'1': 'is_bundle', '3': 20, '4': 1, '5': 8, '9': 16, '10': 'isBundle', '17': true},
-    {'1': 'age_group', '3': 21, '4': 1, '5': 9, '9': 17, '10': 'ageGroup', '17': true},
+    {
+      '1': 'multipack',
+      '3': 19,
+      '4': 1,
+      '5': 3,
+      '9': 15,
+      '10': 'multipack',
+      '17': true
+    },
+    {
+      '1': 'is_bundle',
+      '3': 20,
+      '4': 1,
+      '5': 8,
+      '9': 16,
+      '10': 'isBundle',
+      '17': true
+    },
+    {
+      '1': 'age_group',
+      '3': 21,
+      '4': 1,
+      '5': 9,
+      '9': 17,
+      '10': 'ageGroup',
+      '17': true
+    },
     {'1': 'color', '3': 22, '4': 1, '5': 9, '9': 18, '10': 'color', '17': true},
-    {'1': 'gender', '3': 23, '4': 1, '5': 9, '9': 19, '10': 'gender', '17': true},
-    {'1': 'material', '3': 24, '4': 1, '5': 9, '9': 20, '10': 'material', '17': true},
-    {'1': 'pattern', '3': 25, '4': 1, '5': 9, '9': 21, '10': 'pattern', '17': true},
+    {
+      '1': 'gender',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '9': 19,
+      '10': 'gender',
+      '17': true
+    },
+    {
+      '1': 'material',
+      '3': 24,
+      '4': 1,
+      '5': 9,
+      '9': 20,
+      '10': 'material',
+      '17': true
+    },
+    {
+      '1': 'pattern',
+      '3': 25,
+      '4': 1,
+      '5': 9,
+      '9': 21,
+      '10': 'pattern',
+      '17': true
+    },
     {'1': 'size', '3': 26, '4': 1, '5': 9, '9': 22, '10': 'size', '17': true},
-    {'1': 'size_system', '3': 27, '4': 1, '5': 9, '9': 23, '10': 'sizeSystem', '17': true},
+    {
+      '1': 'size_system',
+      '3': 27,
+      '4': 1,
+      '5': 9,
+      '9': 23,
+      '10': 'sizeSystem',
+      '17': true
+    },
     {'1': 'size_types', '3': 28, '4': 3, '5': 9, '10': 'sizeTypes'},
-    {'1': 'item_group_id', '3': 29, '4': 1, '5': 9, '9': 24, '10': 'itemGroupId', '17': true},
-    {'1': 'product_details', '3': 30, '4': 3, '5': 11, '6': '.google.shopping.css.v1.ProductDetail', '10': 'productDetails'},
-    {'1': 'product_weight', '3': 31, '4': 1, '5': 11, '6': '.google.shopping.css.v1.ProductWeight', '10': 'productWeight'},
-    {'1': 'product_length', '3': 32, '4': 1, '5': 11, '6': '.google.shopping.css.v1.ProductDimension', '10': 'productLength'},
-    {'1': 'product_width', '3': 33, '4': 1, '5': 11, '6': '.google.shopping.css.v1.ProductDimension', '10': 'productWidth'},
-    {'1': 'product_height', '3': 34, '4': 1, '5': 11, '6': '.google.shopping.css.v1.ProductDimension', '10': 'productHeight'},
-    {'1': 'product_highlights', '3': 35, '4': 3, '5': 9, '10': 'productHighlights'},
-    {'1': 'certifications', '3': 39, '4': 3, '5': 11, '6': '.google.shopping.css.v1.Certification', '10': 'certifications'},
-    {'1': 'expiration_date', '3': 40, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expirationDate'},
-    {'1': 'included_destinations', '3': 43, '4': 3, '5': 9, '10': 'includedDestinations'},
-    {'1': 'excluded_destinations', '3': 44, '4': 3, '5': 9, '10': 'excludedDestinations'},
+    {
+      '1': 'item_group_id',
+      '3': 29,
+      '4': 1,
+      '5': 9,
+      '9': 24,
+      '10': 'itemGroupId',
+      '17': true
+    },
+    {
+      '1': 'product_details',
+      '3': 30,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.css.v1.ProductDetail',
+      '10': 'productDetails'
+    },
+    {
+      '1': 'product_weight',
+      '3': 31,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.ProductWeight',
+      '10': 'productWeight'
+    },
+    {
+      '1': 'product_length',
+      '3': 32,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.ProductDimension',
+      '10': 'productLength'
+    },
+    {
+      '1': 'product_width',
+      '3': 33,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.ProductDimension',
+      '10': 'productWidth'
+    },
+    {
+      '1': 'product_height',
+      '3': 34,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.ProductDimension',
+      '10': 'productHeight'
+    },
+    {
+      '1': 'product_highlights',
+      '3': 35,
+      '4': 3,
+      '5': 9,
+      '10': 'productHighlights'
+    },
+    {
+      '1': 'certifications',
+      '3': 39,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.css.v1.Certification',
+      '10': 'certifications'
+    },
+    {
+      '1': 'expiration_date',
+      '3': 40,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expirationDate'
+    },
+    {
+      '1': 'included_destinations',
+      '3': 43,
+      '4': 3,
+      '5': 9,
+      '10': 'includedDestinations'
+    },
+    {
+      '1': 'excluded_destinations',
+      '3': 44,
+      '4': 3,
+      '5': 9,
+      '10': 'excludedDestinations'
+    },
     {'1': 'pause', '3': 45, '4': 1, '5': 9, '9': 25, '10': 'pause', '17': true},
-    {'1': 'custom_label_0', '3': 46, '4': 1, '5': 9, '9': 26, '10': 'customLabel0', '17': true},
-    {'1': 'custom_label_1', '3': 47, '4': 1, '5': 9, '9': 27, '10': 'customLabel1', '17': true},
-    {'1': 'custom_label_2', '3': 48, '4': 1, '5': 9, '9': 28, '10': 'customLabel2', '17': true},
-    {'1': 'custom_label_3', '3': 49, '4': 1, '5': 9, '9': 29, '10': 'customLabel3', '17': true},
-    {'1': 'custom_label_4', '3': 50, '4': 1, '5': 9, '9': 30, '10': 'customLabel4', '17': true},
+    {
+      '1': 'custom_label_0',
+      '3': 46,
+      '4': 1,
+      '5': 9,
+      '9': 26,
+      '10': 'customLabel0',
+      '17': true
+    },
+    {
+      '1': 'custom_label_1',
+      '3': 47,
+      '4': 1,
+      '5': 9,
+      '9': 27,
+      '10': 'customLabel1',
+      '17': true
+    },
+    {
+      '1': 'custom_label_2',
+      '3': 48,
+      '4': 1,
+      '5': 9,
+      '9': 28,
+      '10': 'customLabel2',
+      '17': true
+    },
+    {
+      '1': 'custom_label_3',
+      '3': 49,
+      '4': 1,
+      '5': 9,
+      '9': 29,
+      '10': 'customLabel3',
+      '17': true
+    },
+    {
+      '1': 'custom_label_4',
+      '3': 50,
+      '4': 1,
+      '5': 9,
+      '9': 30,
+      '10': 'customLabel4',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_cpp_link'},
@@ -218,13 +503,51 @@ final $typed_data.Uint8List productWeightDescriptor = $convert.base64Decode(
 const CssProductStatus$json = {
   '1': 'CssProductStatus',
   '2': [
-    {'1': 'destination_statuses', '3': 3, '4': 3, '5': 11, '6': '.google.shopping.css.v1.CssProductStatus.DestinationStatus', '10': 'destinationStatuses'},
-    {'1': 'item_level_issues', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.css.v1.CssProductStatus.ItemLevelIssue', '10': 'itemLevelIssues'},
-    {'1': 'creation_date', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'creationDate'},
-    {'1': 'last_update_date', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastUpdateDate'},
-    {'1': 'google_expiration_date', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'googleExpirationDate'},
+    {
+      '1': 'destination_statuses',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.css.v1.CssProductStatus.DestinationStatus',
+      '10': 'destinationStatuses'
+    },
+    {
+      '1': 'item_level_issues',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.css.v1.CssProductStatus.ItemLevelIssue',
+      '10': 'itemLevelIssues'
+    },
+    {
+      '1': 'creation_date',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'creationDate'
+    },
+    {
+      '1': 'last_update_date',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastUpdateDate'
+    },
+    {
+      '1': 'google_expiration_date',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'googleExpirationDate'
+    },
   ],
-  '3': [CssProductStatus_DestinationStatus$json, CssProductStatus_ItemLevelIssue$json],
+  '3': [
+    CssProductStatus_DestinationStatus$json,
+    CssProductStatus_ItemLevelIssue$json
+  ],
 };
 
 @$core.Deprecated('Use cssProductStatusDescriptor instead')
@@ -232,9 +555,27 @@ const CssProductStatus_DestinationStatus$json = {
   '1': 'DestinationStatus',
   '2': [
     {'1': 'destination', '3': 1, '4': 1, '5': 9, '10': 'destination'},
-    {'1': 'approved_countries', '3': 2, '4': 3, '5': 9, '10': 'approvedCountries'},
-    {'1': 'pending_countries', '3': 3, '4': 3, '5': 9, '10': 'pendingCountries'},
-    {'1': 'disapproved_countries', '3': 4, '4': 3, '5': 9, '10': 'disapprovedCountries'},
+    {
+      '1': 'approved_countries',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'approvedCountries'
+    },
+    {
+      '1': 'pending_countries',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'pendingCountries'
+    },
+    {
+      '1': 'disapproved_countries',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'disapprovedCountries'
+    },
   ],
 };
 
@@ -250,7 +591,13 @@ const CssProductStatus_ItemLevelIssue$json = {
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
     {'1': 'detail', '3': 7, '4': 1, '5': 9, '10': 'detail'},
     {'1': 'documentation', '3': 8, '4': 1, '5': 9, '10': 'documentation'},
-    {'1': 'applicable_countries', '3': 9, '4': 3, '5': 9, '10': 'applicableCountries'},
+    {
+      '1': 'applicable_countries',
+      '3': 9,
+      '4': 3,
+      '5': 9,
+      '10': 'applicableCountries'
+    },
   ],
 };
 
@@ -274,4 +621,3 @@ final $typed_data.Uint8List cssProductStatusDescriptor = $convert.base64Decode(
     'gGIAEoCVILZGVzY3JpcHRpb24SFgoGZGV0YWlsGAcgASgJUgZkZXRhaWwSJAoNZG9jdW1lbnRh'
     'dGlvbhgIIAEoCVINZG9jdW1lbnRhdGlvbhIxChRhcHBsaWNhYmxlX2NvdW50cmllcxgJIAMoCV'
     'ITYXBwbGljYWJsZUNvdW50cmllcw==');
-

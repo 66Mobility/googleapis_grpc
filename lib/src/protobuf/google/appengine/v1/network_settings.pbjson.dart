@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const NetworkSettings$json = {
   '1': 'NetworkSettings',
   '2': [
-    {'1': 'ingress_traffic_allowed', '3': 1, '4': 1, '5': 14, '6': '.google.appengine.v1.NetworkSettings.IngressTrafficAllowed', '10': 'ingressTrafficAllowed'},
+    {
+      '1': 'ingress_traffic_allowed',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1.NetworkSettings.IngressTrafficAllowed',
+      '10': 'ingressTrafficAllowed'
+    },
   ],
   '4': [NetworkSettings_IngressTrafficAllowed$json],
 };
@@ -41,4 +48,3 @@ final $typed_data.Uint8List networkSettingsDescriptor = $convert.base64Decode(
     'JFU1NfVFJBRkZJQ19BTExPV0VEX1VOU1BFQ0lGSUVEEAASHwobSU5HUkVTU19UUkFGRklDX0FM'
     'TE9XRURfQUxMEAESKQolSU5HUkVTU19UUkFGRklDX0FMTE9XRURfSU5URVJOQUxfT05MWRACEi'
     'sKJ0lOR1JFU1NfVFJBRkZJQ19BTExPV0VEX0lOVEVSTkFMX0FORF9MQhAD');
-

@@ -43,28 +43,35 @@ class DenyRule extends $pb.GeneratedMessage {
     return $result;
   }
   DenyRule._() : super();
-  factory DenyRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DenyRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DenyRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DenyRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DenyRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DenyRule',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v2beta'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'deniedPrincipals')
     ..pPS(2, _omitFieldNames ? '' : 'exceptionPrincipals')
     ..pPS(3, _omitFieldNames ? '' : 'deniedPermissions')
     ..pPS(4, _omitFieldNames ? '' : 'exceptionPermissions')
-    ..aOM<$399.Expr>(5, _omitFieldNames ? '' : 'denialCondition', subBuilder: $399.Expr.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$399.Expr>(5, _omitFieldNames ? '' : 'denialCondition',
+        subBuilder: $399.Expr.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DenyRule clone() => DenyRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DenyRule copyWith(void Function(DenyRule) updates) => super.copyWith((message) => updates(message as DenyRule)) as DenyRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DenyRule copyWith(void Function(DenyRule) updates) =>
+      super.copyWith((message) => updates(message as DenyRule)) as DenyRule;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -73,7 +80,8 @@ class DenyRule extends $pb.GeneratedMessage {
   DenyRule createEmptyInstance() => create();
   static $pb.PbList<DenyRule> createRepeated() => $pb.PbList<DenyRule>();
   @$core.pragma('dart2js:noInline')
-  static DenyRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DenyRule>(create);
+  static DenyRule getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DenyRule>(create);
   static DenyRule? _defaultInstance;
 
   ///  The identities that are prevented from using one or more permissions on
@@ -161,7 +169,10 @@ class DenyRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $399.Expr get denialCondition => $_getN(4);
   @$pb.TagNumber(5)
-  set denialCondition($399.Expr v) { setField(5, v); }
+  set denialCondition($399.Expr v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDenialCondition() => $_has(4);
   @$pb.TagNumber(5)
@@ -170,6 +181,6 @@ class DenyRule extends $pb.GeneratedMessage {
   $399.Expr ensureDenialCondition() => $_ensure(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

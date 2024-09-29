@@ -18,12 +18,46 @@ const Review$json = {
   '1': 'Review',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'relative_publish_time_description', '3': 2, '4': 1, '5': 9, '10': 'relativePublishTimeDescription'},
-    {'1': 'text', '3': 9, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'text'},
-    {'1': 'original_text', '3': 12, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'originalText'},
+    {
+      '1': 'relative_publish_time_description',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'relativePublishTimeDescription'
+    },
+    {
+      '1': 'text',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'text'
+    },
+    {
+      '1': 'original_text',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'originalText'
+    },
     {'1': 'rating', '3': 7, '4': 1, '5': 1, '10': 'rating'},
-    {'1': 'author_attribution', '3': 13, '4': 1, '5': 11, '6': '.google.maps.places.v1.AuthorAttribution', '10': 'authorAttribution'},
-    {'1': 'publish_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'publishTime'},
+    {
+      '1': 'author_attribution',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.AuthorAttribution',
+      '10': 'authorAttribution'
+    },
+    {
+      '1': 'publish_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'publishTime'
+    },
   ],
   '7': {},
 };
@@ -39,4 +73,3 @@ final $typed_data.Uint8List reviewDescriptor = $convert.base64Decode(
     'cHVibGlzaF90aW1lGA4gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFILcHVibGlzaF'
     'RpbWU6U+pBUAoccGxhY2VzLmdvb2dsZWFwaXMuY29tL1JldmlldxIfcGxhY2VzL3twbGFjZX0v'
     'cmV2aWV3cy97cmV2aWV3fSoHcmV2aWV3czIGcmV2aWV3');
-

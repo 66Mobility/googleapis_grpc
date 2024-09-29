@@ -21,8 +21,22 @@ const AccessPolicy$json = {
     {'1': 'parent', '3': 2, '4': 1, '5': 9, '10': 'parent'},
     {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
     {'1': 'scopes', '3': 7, '4': 3, '5': 9, '10': 'scopes'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'etag', '3': 6, '4': 1, '5': 9, '10': 'etag'},
   ],
   '7': {},
@@ -36,4 +50,3 @@ final $typed_data.Uint8List accessPolicyDescriptor = $convert.base64Decode(
     'sKC3VwZGF0ZV90aW1lGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIKdXBkYXRl'
     'VGltZRISCgRldGFnGAYgASgJUgRldGFnOlXqQVIKMGFjY2Vzc2NvbnRleHRtYW5hZ2VyLmdvb2'
     'dsZWFwaXMuY29tL0FjY2Vzc1BvbGljeRIeYWNjZXNzUG9saWNpZXMve2FjY2Vzc19wb2xpY3l9');
-

@@ -73,41 +73,59 @@ class AccountLinking extends $pb.GeneratedMessage {
     return $result;
   }
   AccountLinking._() : super();
-  factory AccountLinking.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AccountLinking.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AccountLinking.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AccountLinking.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountLinking', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AccountLinking',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enableAccountCreation')
-    ..e<AccountLinking_LinkingType>(2, _omitFieldNames ? '' : 'linkingType', $pb.PbFieldType.OE, defaultOrMaker: AccountLinking_LinkingType.LINKING_TYPE_UNSPECIFIED, valueOf: AccountLinking_LinkingType.valueOf, enumValues: AccountLinking_LinkingType.values)
-    ..e<AccountLinking_AuthGrantType>(3, _omitFieldNames ? '' : 'authGrantType', $pb.PbFieldType.OE, defaultOrMaker: AccountLinking_AuthGrantType.AUTH_GRANT_TYPE_UNSPECIFIED, valueOf: AccountLinking_AuthGrantType.valueOf, enumValues: AccountLinking_AuthGrantType.values)
+    ..e<AccountLinking_LinkingType>(
+        2, _omitFieldNames ? '' : 'linkingType', $pb.PbFieldType.OE,
+        defaultOrMaker: AccountLinking_LinkingType.LINKING_TYPE_UNSPECIFIED,
+        valueOf: AccountLinking_LinkingType.valueOf,
+        enumValues: AccountLinking_LinkingType.values)
+    ..e<AccountLinking_AuthGrantType>(
+        3, _omitFieldNames ? '' : 'authGrantType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            AccountLinking_AuthGrantType.AUTH_GRANT_TYPE_UNSPECIFIED,
+        valueOf: AccountLinking_AuthGrantType.valueOf,
+        enumValues: AccountLinking_AuthGrantType.values)
     ..aOS(4, _omitFieldNames ? '' : 'appClientId')
     ..aOS(5, _omitFieldNames ? '' : 'authorizationUrl')
     ..aOS(6, _omitFieldNames ? '' : 'tokenUrl')
     ..pPS(7, _omitFieldNames ? '' : 'scopes')
     ..aOS(8, _omitFieldNames ? '' : 'learnMoreUrl')
     ..aOB(9, _omitFieldNames ? '' : 'useBasicAuthHeader')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AccountLinking clone() => AccountLinking()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AccountLinking copyWith(void Function(AccountLinking) updates) => super.copyWith((message) => updates(message as AccountLinking)) as AccountLinking;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AccountLinking copyWith(void Function(AccountLinking) updates) =>
+      super.copyWith((message) => updates(message as AccountLinking))
+          as AccountLinking;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AccountLinking create() => AccountLinking._();
   AccountLinking createEmptyInstance() => create();
-  static $pb.PbList<AccountLinking> createRepeated() => $pb.PbList<AccountLinking>();
+  static $pb.PbList<AccountLinking> createRepeated() =>
+      $pb.PbList<AccountLinking>();
   @$core.pragma('dart2js:noInline')
-  static AccountLinking getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AccountLinking>(create);
+  static AccountLinking getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AccountLinking>(create);
   static AccountLinking? _defaultInstance;
 
   /// Required. If `true`, users are allowed to sign up for new accounts via voice.
@@ -119,7 +137,10 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get enableAccountCreation => $_getBF(0);
   @$pb.TagNumber(1)
-  set enableAccountCreation($core.bool v) { $_setBool(0, v); }
+  set enableAccountCreation($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnableAccountCreation() => $_has(0);
   @$pb.TagNumber(1)
@@ -131,7 +152,10 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AccountLinking_LinkingType get linkingType => $_getN(1);
   @$pb.TagNumber(2)
-  set linkingType(AccountLinking_LinkingType v) { setField(2, v); }
+  set linkingType(AccountLinking_LinkingType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLinkingType() => $_has(1);
   @$pb.TagNumber(2)
@@ -141,7 +165,10 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AccountLinking_AuthGrantType get authGrantType => $_getN(2);
   @$pb.TagNumber(3)
-  set authGrantType(AccountLinking_AuthGrantType v) { setField(3, v); }
+  set authGrantType(AccountLinking_AuthGrantType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAuthGrantType() => $_has(2);
   @$pb.TagNumber(3)
@@ -153,7 +180,10 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get appClientId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set appClientId($core.String v) { $_setString(3, v); }
+  set appClientId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAppClientId() => $_has(3);
   @$pb.TagNumber(4)
@@ -166,7 +196,10 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get authorizationUrl => $_getSZ(4);
   @$pb.TagNumber(5)
-  set authorizationUrl($core.String v) { $_setString(4, v); }
+  set authorizationUrl($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAuthorizationUrl() => $_has(4);
   @$pb.TagNumber(5)
@@ -180,7 +213,10 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get tokenUrl => $_getSZ(5);
   @$pb.TagNumber(6)
-  set tokenUrl($core.String v) { $_setString(5, v); }
+  set tokenUrl($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTokenUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -202,7 +238,10 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get learnMoreUrl => $_getSZ(7);
   @$pb.TagNumber(8)
-  set learnMoreUrl($core.String v) { $_setString(7, v); }
+  set learnMoreUrl($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasLearnMoreUrl() => $_has(7);
   @$pb.TagNumber(8)
@@ -217,13 +256,16 @@ class AccountLinking extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool get useBasicAuthHeader => $_getBF(8);
   @$pb.TagNumber(9)
-  set useBasicAuthHeader($core.bool v) { $_setBool(8, v); }
+  set useBasicAuthHeader($core.bool v) {
+    $_setBool(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasUseBasicAuthHeader() => $_has(8);
   @$pb.TagNumber(9)
   void clearUseBasicAuthHeader() => clearField(9);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

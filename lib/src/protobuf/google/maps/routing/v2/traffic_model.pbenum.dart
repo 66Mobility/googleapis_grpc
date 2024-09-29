@@ -18,23 +18,27 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// response, which contains the predicted time in traffic based on historical
 /// averages.
 class TrafficModel extends $pb.ProtobufEnum {
-  static const TrafficModel TRAFFIC_MODEL_UNSPECIFIED = TrafficModel._(0, _omitEnumNames ? '' : 'TRAFFIC_MODEL_UNSPECIFIED');
-  static const TrafficModel BEST_GUESS = TrafficModel._(1, _omitEnumNames ? '' : 'BEST_GUESS');
-  static const TrafficModel PESSIMISTIC = TrafficModel._(2, _omitEnumNames ? '' : 'PESSIMISTIC');
-  static const TrafficModel OPTIMISTIC = TrafficModel._(3, _omitEnumNames ? '' : 'OPTIMISTIC');
+  static const TrafficModel TRAFFIC_MODEL_UNSPECIFIED =
+      TrafficModel._(0, _omitEnumNames ? '' : 'TRAFFIC_MODEL_UNSPECIFIED');
+  static const TrafficModel BEST_GUESS =
+      TrafficModel._(1, _omitEnumNames ? '' : 'BEST_GUESS');
+  static const TrafficModel PESSIMISTIC =
+      TrafficModel._(2, _omitEnumNames ? '' : 'PESSIMISTIC');
+  static const TrafficModel OPTIMISTIC =
+      TrafficModel._(3, _omitEnumNames ? '' : 'OPTIMISTIC');
 
-  static const $core.List<TrafficModel> values = <TrafficModel> [
+  static const $core.List<TrafficModel> values = <TrafficModel>[
     TRAFFIC_MODEL_UNSPECIFIED,
     BEST_GUESS,
     PESSIMISTIC,
     OPTIMISTIC,
   ];
 
-  static final $core.Map<$core.int, TrafficModel> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, TrafficModel> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static TrafficModel? valueOf($core.int value) => _byValue[value];
 
   const TrafficModel._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

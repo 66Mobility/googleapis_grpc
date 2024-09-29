@@ -40,35 +40,54 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   FindClosestBuildingInsightsRequest._() : super();
-  factory FindClosestBuildingInsightsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FindClosestBuildingInsightsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FindClosestBuildingInsightsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FindClosestBuildingInsightsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FindClosestBuildingInsightsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
-    ..e<ImageryQuality>(3, _omitFieldNames ? '' : 'requiredQuality', $pb.PbFieldType.OE, defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED, valueOf: ImageryQuality.valueOf, enumValues: ImageryQuality.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FindClosestBuildingInsightsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $325.LatLng.create)
+    ..e<ImageryQuality>(
+        3, _omitFieldNames ? '' : 'requiredQuality', $pb.PbFieldType.OE,
+        defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED,
+        valueOf: ImageryQuality.valueOf,
+        enumValues: ImageryQuality.values)
     ..aOB(4, _omitFieldNames ? '' : 'exactQualityRequired')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  FindClosestBuildingInsightsRequest clone() => FindClosestBuildingInsightsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FindClosestBuildingInsightsRequest copyWith(void Function(FindClosestBuildingInsightsRequest) updates) => super.copyWith((message) => updates(message as FindClosestBuildingInsightsRequest)) as FindClosestBuildingInsightsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FindClosestBuildingInsightsRequest clone() =>
+      FindClosestBuildingInsightsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FindClosestBuildingInsightsRequest copyWith(
+          void Function(FindClosestBuildingInsightsRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as FindClosestBuildingInsightsRequest))
+          as FindClosestBuildingInsightsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static FindClosestBuildingInsightsRequest create() => FindClosestBuildingInsightsRequest._();
+  static FindClosestBuildingInsightsRequest create() =>
+      FindClosestBuildingInsightsRequest._();
   FindClosestBuildingInsightsRequest createEmptyInstance() => create();
-  static $pb.PbList<FindClosestBuildingInsightsRequest> createRepeated() => $pb.PbList<FindClosestBuildingInsightsRequest>();
+  static $pb.PbList<FindClosestBuildingInsightsRequest> createRepeated() =>
+      $pb.PbList<FindClosestBuildingInsightsRequest>();
   @$core.pragma('dart2js:noInline')
-  static FindClosestBuildingInsightsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FindClosestBuildingInsightsRequest>(create);
+  static FindClosestBuildingInsightsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FindClosestBuildingInsightsRequest>(
+          create);
   static FindClosestBuildingInsightsRequest? _defaultInstance;
 
   /// Required. The longitude and latitude from which the API looks for the
@@ -76,7 +95,10 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($325.LatLng v) { setField(1, v); }
+  set location($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,7 +112,10 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ImageryQuality get requiredQuality => $_getN(1);
   @$pb.TagNumber(3)
-  set requiredQuality(ImageryQuality v) { setField(3, v); }
+  set requiredQuality(ImageryQuality v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequiredQuality() => $_has(1);
   @$pb.TagNumber(3)
@@ -105,7 +130,10 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get exactQualityRequired => $_getBF(2);
   @$pb.TagNumber(4)
-  set exactQualityRequired($core.bool v) { $_setBool(2, v); }
+  set exactQualityRequired($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasExactQualityRequired() => $_has(2);
   @$pb.TagNumber(4)
@@ -128,25 +156,33 @@ class LatLngBox extends $pb.GeneratedMessage {
     return $result;
   }
   LatLngBox._() : super();
-  factory LatLngBox.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LatLngBox.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LatLngBox.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LatLngBox.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LatLngBox', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'sw', subBuilder: $325.LatLng.create)
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'ne', subBuilder: $325.LatLng.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LatLngBox',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'sw',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'ne',
+        subBuilder: $325.LatLng.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LatLngBox clone() => LatLngBox()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LatLngBox copyWith(void Function(LatLngBox) updates) => super.copyWith((message) => updates(message as LatLngBox)) as LatLngBox;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LatLngBox copyWith(void Function(LatLngBox) updates) =>
+      super.copyWith((message) => updates(message as LatLngBox)) as LatLngBox;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -155,14 +191,18 @@ class LatLngBox extends $pb.GeneratedMessage {
   LatLngBox createEmptyInstance() => create();
   static $pb.PbList<LatLngBox> createRepeated() => $pb.PbList<LatLngBox>();
   @$core.pragma('dart2js:noInline')
-  static LatLngBox getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LatLngBox>(create);
+  static LatLngBox getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LatLngBox>(create);
   static LatLngBox? _defaultInstance;
 
   /// The southwest corner of the box.
   @$pb.TagNumber(1)
   $325.LatLng get sw => $_getN(0);
   @$pb.TagNumber(1)
-  set sw($325.LatLng v) { setField(1, v); }
+  set sw($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSw() => $_has(0);
   @$pb.TagNumber(1)
@@ -174,7 +214,10 @@ class LatLngBox extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $325.LatLng get ne => $_getN(1);
   @$pb.TagNumber(2)
-  set ne($325.LatLng v) { setField(2, v); }
+  set ne($325.LatLng v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNe() => $_has(1);
   @$pb.TagNumber(2)
@@ -237,50 +280,71 @@ class BuildingInsights extends $pb.GeneratedMessage {
     return $result;
   }
   BuildingInsights._() : super();
-  factory BuildingInsights.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BuildingInsights.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BuildingInsights.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BuildingInsights.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildingInsights', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildingInsights',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'center', subBuilder: $325.LatLng.create)
-    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'imageryDate', subBuilder: $327.Date.create)
+    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'center',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'imageryDate',
+        subBuilder: $327.Date.create)
     ..aOS(4, _omitFieldNames ? '' : 'postalCode')
     ..aOS(5, _omitFieldNames ? '' : 'administrativeArea')
     ..aOS(6, _omitFieldNames ? '' : 'statisticalArea')
     ..aOS(7, _omitFieldNames ? '' : 'regionCode')
-    ..aOM<SolarPotential>(8, _omitFieldNames ? '' : 'solarPotential', subBuilder: SolarPotential.create)
-    ..aOM<LatLngBox>(9, _omitFieldNames ? '' : 'boundingBox', subBuilder: LatLngBox.create)
-    ..e<ImageryQuality>(10, _omitFieldNames ? '' : 'imageryQuality', $pb.PbFieldType.OE, defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED, valueOf: ImageryQuality.valueOf, enumValues: ImageryQuality.values)
-    ..aOM<$327.Date>(11, _omitFieldNames ? '' : 'imageryProcessedDate', subBuilder: $327.Date.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<SolarPotential>(8, _omitFieldNames ? '' : 'solarPotential',
+        subBuilder: SolarPotential.create)
+    ..aOM<LatLngBox>(9, _omitFieldNames ? '' : 'boundingBox',
+        subBuilder: LatLngBox.create)
+    ..e<ImageryQuality>(
+        10, _omitFieldNames ? '' : 'imageryQuality', $pb.PbFieldType.OE,
+        defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED,
+        valueOf: ImageryQuality.valueOf,
+        enumValues: ImageryQuality.values)
+    ..aOM<$327.Date>(11, _omitFieldNames ? '' : 'imageryProcessedDate',
+        subBuilder: $327.Date.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BuildingInsights clone() => BuildingInsights()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BuildingInsights copyWith(void Function(BuildingInsights) updates) => super.copyWith((message) => updates(message as BuildingInsights)) as BuildingInsights;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BuildingInsights copyWith(void Function(BuildingInsights) updates) =>
+      super.copyWith((message) => updates(message as BuildingInsights))
+          as BuildingInsights;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BuildingInsights create() => BuildingInsights._();
   BuildingInsights createEmptyInstance() => create();
-  static $pb.PbList<BuildingInsights> createRepeated() => $pb.PbList<BuildingInsights>();
+  static $pb.PbList<BuildingInsights> createRepeated() =>
+      $pb.PbList<BuildingInsights>();
   @$core.pragma('dart2js:noInline')
-  static BuildingInsights getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildingInsights>(create);
+  static BuildingInsights getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuildingInsights>(create);
   static BuildingInsights? _defaultInstance;
 
   /// The resource name for the building, of the format `building/<place ID>`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -290,7 +354,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $325.LatLng get center => $_getN(1);
   @$pb.TagNumber(2)
-  set center($325.LatLng v) { setField(2, v); }
+  set center($325.LatLng v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCenter() => $_has(1);
   @$pb.TagNumber(2)
@@ -302,7 +369,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $327.Date get imageryDate => $_getN(2);
   @$pb.TagNumber(3)
-  set imageryDate($327.Date v) { setField(3, v); }
+  set imageryDate($327.Date v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasImageryDate() => $_has(2);
   @$pb.TagNumber(3)
@@ -314,7 +384,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get postalCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set postalCode($core.String v) { $_setString(3, v); }
+  set postalCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPostalCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -325,7 +398,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get administrativeArea => $_getSZ(4);
   @$pb.TagNumber(5)
-  set administrativeArea($core.String v) { $_setString(4, v); }
+  set administrativeArea($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAdministrativeArea() => $_has(4);
   @$pb.TagNumber(5)
@@ -335,7 +411,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get statisticalArea => $_getSZ(5);
   @$pb.TagNumber(6)
-  set statisticalArea($core.String v) { $_setString(5, v); }
+  set statisticalArea($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStatisticalArea() => $_has(5);
   @$pb.TagNumber(6)
@@ -345,7 +424,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get regionCode => $_getSZ(6);
   @$pb.TagNumber(7)
-  set regionCode($core.String v) { $_setString(6, v); }
+  set regionCode($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRegionCode() => $_has(6);
   @$pb.TagNumber(7)
@@ -355,7 +437,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   SolarPotential get solarPotential => $_getN(7);
   @$pb.TagNumber(8)
-  set solarPotential(SolarPotential v) { setField(8, v); }
+  set solarPotential(SolarPotential v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasSolarPotential() => $_has(7);
   @$pb.TagNumber(8)
@@ -367,7 +452,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   LatLngBox get boundingBox => $_getN(8);
   @$pb.TagNumber(9)
-  set boundingBox(LatLngBox v) { setField(9, v); }
+  set boundingBox(LatLngBox v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasBoundingBox() => $_has(8);
   @$pb.TagNumber(9)
@@ -379,7 +467,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   ImageryQuality get imageryQuality => $_getN(9);
   @$pb.TagNumber(10)
-  set imageryQuality(ImageryQuality v) { setField(10, v); }
+  set imageryQuality(ImageryQuality v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasImageryQuality() => $_has(9);
   @$pb.TagNumber(10)
@@ -389,7 +480,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $327.Date get imageryProcessedDate => $_getN(10);
   @$pb.TagNumber(11)
-  set imageryProcessedDate($327.Date v) { setField(11, v); }
+  set imageryProcessedDate($327.Date v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasImageryProcessedDate() => $_has(10);
   @$pb.TagNumber(11)
@@ -471,46 +565,73 @@ class SolarPotential extends $pb.GeneratedMessage {
     return $result;
   }
   SolarPotential._() : super();
-  factory SolarPotential.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SolarPotential.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SolarPotential.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SolarPotential.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SolarPotential', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'maxArrayPanelsCount', $pb.PbFieldType.O3)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'maxArrayAreaMeters2', $pb.PbFieldType.OF)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'maxSunshineHoursPerYear', $pb.PbFieldType.OF)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'carbonOffsetFactorKgPerMwh', $pb.PbFieldType.OF)
-    ..aOM<SizeAndSunshineStats>(5, _omitFieldNames ? '' : 'wholeRoofStats', subBuilder: SizeAndSunshineStats.create)
-    ..pc<RoofSegmentSizeAndSunshineStats>(6, _omitFieldNames ? '' : 'roofSegmentStats', $pb.PbFieldType.PM, subBuilder: RoofSegmentSizeAndSunshineStats.create)
-    ..pc<SolarPanelConfig>(7, _omitFieldNames ? '' : 'solarPanelConfigs', $pb.PbFieldType.PM, subBuilder: SolarPanelConfig.create)
-    ..pc<FinancialAnalysis>(8, _omitFieldNames ? '' : 'financialAnalyses', $pb.PbFieldType.PM, subBuilder: FinancialAnalysis.create)
-    ..a<$core.double>(9, _omitFieldNames ? '' : 'panelCapacityWatts', $pb.PbFieldType.OF)
-    ..a<$core.double>(10, _omitFieldNames ? '' : 'panelHeightMeters', $pb.PbFieldType.OF)
-    ..a<$core.double>(11, _omitFieldNames ? '' : 'panelWidthMeters', $pb.PbFieldType.OF)
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'panelLifetimeYears', $pb.PbFieldType.O3)
-    ..aOM<SizeAndSunshineStats>(13, _omitFieldNames ? '' : 'buildingStats', subBuilder: SizeAndSunshineStats.create)
-    ..pc<SolarPanel>(14, _omitFieldNames ? '' : 'solarPanels', $pb.PbFieldType.PM, subBuilder: SolarPanel.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SolarPotential',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'maxArrayPanelsCount', $pb.PbFieldType.O3)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'maxArrayAreaMeters2', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'maxSunshineHoursPerYear', $pb.PbFieldType.OF)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'carbonOffsetFactorKgPerMwh',
+        $pb.PbFieldType.OF)
+    ..aOM<SizeAndSunshineStats>(5, _omitFieldNames ? '' : 'wholeRoofStats',
+        subBuilder: SizeAndSunshineStats.create)
+    ..pc<RoofSegmentSizeAndSunshineStats>(
+        6, _omitFieldNames ? '' : 'roofSegmentStats', $pb.PbFieldType.PM,
+        subBuilder: RoofSegmentSizeAndSunshineStats.create)
+    ..pc<SolarPanelConfig>(
+        7, _omitFieldNames ? '' : 'solarPanelConfigs', $pb.PbFieldType.PM,
+        subBuilder: SolarPanelConfig.create)
+    ..pc<FinancialAnalysis>(
+        8, _omitFieldNames ? '' : 'financialAnalyses', $pb.PbFieldType.PM,
+        subBuilder: FinancialAnalysis.create)
+    ..a<$core.double>(
+        9, _omitFieldNames ? '' : 'panelCapacityWatts', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        10, _omitFieldNames ? '' : 'panelHeightMeters', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        11, _omitFieldNames ? '' : 'panelWidthMeters', $pb.PbFieldType.OF)
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'panelLifetimeYears', $pb.PbFieldType.O3)
+    ..aOM<SizeAndSunshineStats>(13, _omitFieldNames ? '' : 'buildingStats',
+        subBuilder: SizeAndSunshineStats.create)
+    ..pc<SolarPanel>(
+        14, _omitFieldNames ? '' : 'solarPanels', $pb.PbFieldType.PM,
+        subBuilder: SolarPanel.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SolarPotential clone() => SolarPotential()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SolarPotential copyWith(void Function(SolarPotential) updates) => super.copyWith((message) => updates(message as SolarPotential)) as SolarPotential;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SolarPotential copyWith(void Function(SolarPotential) updates) =>
+      super.copyWith((message) => updates(message as SolarPotential))
+          as SolarPotential;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SolarPotential create() => SolarPotential._();
   SolarPotential createEmptyInstance() => create();
-  static $pb.PbList<SolarPotential> createRepeated() => $pb.PbList<SolarPotential>();
+  static $pb.PbList<SolarPotential> createRepeated() =>
+      $pb.PbList<SolarPotential>();
   @$core.pragma('dart2js:noInline')
-  static SolarPotential getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SolarPotential>(create);
+  static SolarPotential getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SolarPotential>(create);
   static SolarPotential? _defaultInstance;
 
   /// Size of the maximum array - that is, the maximum number of panels that
@@ -518,7 +639,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get maxArrayPanelsCount => $_getIZ(0);
   @$pb.TagNumber(1)
-  set maxArrayPanelsCount($core.int v) { $_setSignedInt32(0, v); }
+  set maxArrayPanelsCount($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxArrayPanelsCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -528,7 +652,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get maxArrayAreaMeters2 => $_getN(1);
   @$pb.TagNumber(2)
-  set maxArrayAreaMeters2($core.double v) { $_setFloat(1, v); }
+  set maxArrayAreaMeters2($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxArrayAreaMeters2() => $_has(1);
   @$pb.TagNumber(2)
@@ -541,7 +668,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get maxSunshineHoursPerYear => $_getN(2);
   @$pb.TagNumber(3)
-  set maxSunshineHoursPerYear($core.double v) { $_setFloat(2, v); }
+  set maxSunshineHoursPerYear($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxSunshineHoursPerYear() => $_has(2);
   @$pb.TagNumber(3)
@@ -553,7 +683,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get carbonOffsetFactorKgPerMwh => $_getN(3);
   @$pb.TagNumber(4)
-  set carbonOffsetFactorKgPerMwh($core.double v) { $_setFloat(3, v); }
+  set carbonOffsetFactorKgPerMwh($core.double v) {
+    $_setFloat(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCarbonOffsetFactorKgPerMwh() => $_has(3);
   @$pb.TagNumber(4)
@@ -566,7 +699,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   SizeAndSunshineStats get wholeRoofStats => $_getN(4);
   @$pb.TagNumber(5)
-  set wholeRoofStats(SizeAndSunshineStats v) { setField(5, v); }
+  set wholeRoofStats(SizeAndSunshineStats v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasWholeRoofStats() => $_has(4);
   @$pb.TagNumber(5)
@@ -576,7 +712,8 @@ class SolarPotential extends $pb.GeneratedMessage {
 
   /// Size and sunlight quantiles for each roof segment.
   @$pb.TagNumber(6)
-  $core.List<RoofSegmentSizeAndSunshineStats> get roofSegmentStats => $_getList(5);
+  $core.List<RoofSegmentSizeAndSunshineStats> get roofSegmentStats =>
+      $_getList(5);
 
   /// Each [SolarPanelConfig]
   /// [google.maps.solar.v1.SolarPanelConfig] describes a
@@ -603,7 +740,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get panelCapacityWatts => $_getN(8);
   @$pb.TagNumber(9)
-  set panelCapacityWatts($core.double v) { $_setFloat(8, v); }
+  set panelCapacityWatts($core.double v) {
+    $_setFloat(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPanelCapacityWatts() => $_has(8);
   @$pb.TagNumber(9)
@@ -614,7 +754,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.double get panelHeightMeters => $_getN(9);
   @$pb.TagNumber(10)
-  set panelHeightMeters($core.double v) { $_setFloat(9, v); }
+  set panelHeightMeters($core.double v) {
+    $_setFloat(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasPanelHeightMeters() => $_has(9);
   @$pb.TagNumber(10)
@@ -625,7 +768,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.double get panelWidthMeters => $_getN(10);
   @$pb.TagNumber(11)
-  set panelWidthMeters($core.double v) { $_setFloat(10, v); }
+  set panelWidthMeters($core.double v) {
+    $_setFloat(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasPanelWidthMeters() => $_has(10);
   @$pb.TagNumber(11)
@@ -636,7 +782,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get panelLifetimeYears => $_getIZ(11);
   @$pb.TagNumber(12)
-  set panelLifetimeYears($core.int v) { $_setSignedInt32(11, v); }
+  set panelLifetimeYears($core.int v) {
+    $_setSignedInt32(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasPanelLifetimeYears() => $_has(11);
   @$pb.TagNumber(12)
@@ -655,7 +804,10 @@ class SolarPotential extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   SizeAndSunshineStats get buildingStats => $_getN(12);
   @$pb.TagNumber(13)
-  set buildingStats(SizeAndSunshineStats v) { setField(13, v); }
+  set buildingStats(SizeAndSunshineStats v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasBuildingStats() => $_has(12);
   @$pb.TagNumber(13)
@@ -703,38 +855,58 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
     return $result;
   }
   RoofSegmentSizeAndSunshineStats._() : super();
-  factory RoofSegmentSizeAndSunshineStats.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RoofSegmentSizeAndSunshineStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RoofSegmentSizeAndSunshineStats.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RoofSegmentSizeAndSunshineStats.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RoofSegmentSizeAndSunshineStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'pitchDegrees', $pb.PbFieldType.OF)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'azimuthDegrees', $pb.PbFieldType.OF)
-    ..aOM<SizeAndSunshineStats>(3, _omitFieldNames ? '' : 'stats', subBuilder: SizeAndSunshineStats.create)
-    ..aOM<$325.LatLng>(4, _omitFieldNames ? '' : 'center', subBuilder: $325.LatLng.create)
-    ..aOM<LatLngBox>(5, _omitFieldNames ? '' : 'boundingBox', subBuilder: LatLngBox.create)
-    ..a<$core.double>(6, _omitFieldNames ? '' : 'planeHeightAtCenterMeters', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RoofSegmentSizeAndSunshineStats',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'pitchDegrees', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'azimuthDegrees', $pb.PbFieldType.OF)
+    ..aOM<SizeAndSunshineStats>(3, _omitFieldNames ? '' : 'stats',
+        subBuilder: SizeAndSunshineStats.create)
+    ..aOM<$325.LatLng>(4, _omitFieldNames ? '' : 'center',
+        subBuilder: $325.LatLng.create)
+    ..aOM<LatLngBox>(5, _omitFieldNames ? '' : 'boundingBox',
+        subBuilder: LatLngBox.create)
+    ..a<$core.double>(6, _omitFieldNames ? '' : 'planeHeightAtCenterMeters',
+        $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RoofSegmentSizeAndSunshineStats clone() => RoofSegmentSizeAndSunshineStats()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RoofSegmentSizeAndSunshineStats copyWith(void Function(RoofSegmentSizeAndSunshineStats) updates) => super.copyWith((message) => updates(message as RoofSegmentSizeAndSunshineStats)) as RoofSegmentSizeAndSunshineStats;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RoofSegmentSizeAndSunshineStats clone() =>
+      RoofSegmentSizeAndSunshineStats()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RoofSegmentSizeAndSunshineStats copyWith(
+          void Function(RoofSegmentSizeAndSunshineStats) updates) =>
+      super.copyWith(
+              (message) => updates(message as RoofSegmentSizeAndSunshineStats))
+          as RoofSegmentSizeAndSunshineStats;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RoofSegmentSizeAndSunshineStats create() => RoofSegmentSizeAndSunshineStats._();
+  static RoofSegmentSizeAndSunshineStats create() =>
+      RoofSegmentSizeAndSunshineStats._();
   RoofSegmentSizeAndSunshineStats createEmptyInstance() => create();
-  static $pb.PbList<RoofSegmentSizeAndSunshineStats> createRepeated() => $pb.PbList<RoofSegmentSizeAndSunshineStats>();
+  static $pb.PbList<RoofSegmentSizeAndSunshineStats> createRepeated() =>
+      $pb.PbList<RoofSegmentSizeAndSunshineStats>();
   @$core.pragma('dart2js:noInline')
-  static RoofSegmentSizeAndSunshineStats getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RoofSegmentSizeAndSunshineStats>(create);
+  static RoofSegmentSizeAndSunshineStats getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RoofSegmentSizeAndSunshineStats>(
+          create);
   static RoofSegmentSizeAndSunshineStats? _defaultInstance;
 
   /// Angle of the roof segment relative to the theoretical ground plane.
@@ -742,7 +914,10 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get pitchDegrees => $_getN(0);
   @$pb.TagNumber(1)
-  set pitchDegrees($core.double v) { $_setFloat(0, v); }
+  set pitchDegrees($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPitchDegrees() => $_has(0);
   @$pb.TagNumber(1)
@@ -755,7 +930,10 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get azimuthDegrees => $_getN(1);
   @$pb.TagNumber(2)
-  set azimuthDegrees($core.double v) { $_setFloat(1, v); }
+  set azimuthDegrees($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAzimuthDegrees() => $_has(1);
   @$pb.TagNumber(2)
@@ -765,7 +943,10 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   SizeAndSunshineStats get stats => $_getN(2);
   @$pb.TagNumber(3)
-  set stats(SizeAndSunshineStats v) { setField(3, v); }
+  set stats(SizeAndSunshineStats v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStats() => $_has(2);
   @$pb.TagNumber(3)
@@ -777,7 +958,10 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $325.LatLng get center => $_getN(3);
   @$pb.TagNumber(4)
-  set center($325.LatLng v) { setField(4, v); }
+  set center($325.LatLng v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCenter() => $_has(3);
   @$pb.TagNumber(4)
@@ -789,7 +973,10 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   LatLngBox get boundingBox => $_getN(4);
   @$pb.TagNumber(5)
-  set boundingBox(LatLngBox v) { setField(5, v); }
+  set boundingBox(LatLngBox v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBoundingBox() => $_has(4);
   @$pb.TagNumber(5)
@@ -804,7 +991,10 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get planeHeightAtCenterMeters => $_getN(5);
   @$pb.TagNumber(6)
-  set planeHeightAtCenterMeters($core.double v) { $_setFloat(5, v); }
+  set planeHeightAtCenterMeters($core.double v) {
+    $_setFloat(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPlaneHeightAtCenterMeters() => $_has(5);
   @$pb.TagNumber(6)
@@ -831,35 +1021,48 @@ class SizeAndSunshineStats extends $pb.GeneratedMessage {
     return $result;
   }
   SizeAndSunshineStats._() : super();
-  factory SizeAndSunshineStats.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SizeAndSunshineStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SizeAndSunshineStats.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SizeAndSunshineStats.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SizeAndSunshineStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'areaMeters2', $pb.PbFieldType.OF)
-    ..p<$core.double>(2, _omitFieldNames ? '' : 'sunshineQuantiles', $pb.PbFieldType.KF)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'groundAreaMeters2', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SizeAndSunshineStats',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'areaMeters2', $pb.PbFieldType.OF)
+    ..p<$core.double>(
+        2, _omitFieldNames ? '' : 'sunshineQuantiles', $pb.PbFieldType.KF)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'groundAreaMeters2', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SizeAndSunshineStats clone() => SizeAndSunshineStats()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SizeAndSunshineStats copyWith(void Function(SizeAndSunshineStats) updates) => super.copyWith((message) => updates(message as SizeAndSunshineStats)) as SizeAndSunshineStats;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SizeAndSunshineStats clone() =>
+      SizeAndSunshineStats()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SizeAndSunshineStats copyWith(void Function(SizeAndSunshineStats) updates) =>
+      super.copyWith((message) => updates(message as SizeAndSunshineStats))
+          as SizeAndSunshineStats;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SizeAndSunshineStats create() => SizeAndSunshineStats._();
   SizeAndSunshineStats createEmptyInstance() => create();
-  static $pb.PbList<SizeAndSunshineStats> createRepeated() => $pb.PbList<SizeAndSunshineStats>();
+  static $pb.PbList<SizeAndSunshineStats> createRepeated() =>
+      $pb.PbList<SizeAndSunshineStats>();
   @$core.pragma('dart2js:noInline')
-  static SizeAndSunshineStats getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SizeAndSunshineStats>(create);
+  static SizeAndSunshineStats getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SizeAndSunshineStats>(create);
   static SizeAndSunshineStats? _defaultInstance;
 
   /// The area of the roof or roof segment, in m^2. This is the roof area
@@ -867,7 +1070,10 @@ class SizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get areaMeters2 => $_getN(0);
   @$pb.TagNumber(1)
-  set areaMeters2($core.double v) { $_setFloat(0, v); }
+  set areaMeters2($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAreaMeters2() => $_has(0);
   @$pb.TagNumber(1)
@@ -886,7 +1092,10 @@ class SizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get groundAreaMeters2 => $_getN(2);
   @$pb.TagNumber(3)
-  set groundAreaMeters2($core.double v) { $_setFloat(2, v); }
+  set groundAreaMeters2($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGroundAreaMeters2() => $_has(2);
   @$pb.TagNumber(3)
@@ -926,27 +1135,40 @@ class SolarPanel extends $pb.GeneratedMessage {
     return $result;
   }
   SolarPanel._() : super();
-  factory SolarPanel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SolarPanel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SolarPanel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SolarPanel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SolarPanel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'center', subBuilder: $325.LatLng.create)
-    ..e<SolarPanelOrientation>(2, _omitFieldNames ? '' : 'orientation', $pb.PbFieldType.OE, defaultOrMaker: SolarPanelOrientation.SOLAR_PANEL_ORIENTATION_UNSPECIFIED, valueOf: SolarPanelOrientation.valueOf, enumValues: SolarPanelOrientation.values)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'yearlyEnergyDcKwh', $pb.PbFieldType.OF)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SolarPanel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'center',
+        subBuilder: $325.LatLng.create)
+    ..e<SolarPanelOrientation>(
+        2, _omitFieldNames ? '' : 'orientation', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SolarPanelOrientation.SOLAR_PANEL_ORIENTATION_UNSPECIFIED,
+        valueOf: SolarPanelOrientation.valueOf,
+        enumValues: SolarPanelOrientation.values)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'yearlyEnergyDcKwh', $pb.PbFieldType.OF)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'segmentIndex', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SolarPanel clone() => SolarPanel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SolarPanel copyWith(void Function(SolarPanel) updates) => super.copyWith((message) => updates(message as SolarPanel)) as SolarPanel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SolarPanel copyWith(void Function(SolarPanel) updates) =>
+      super.copyWith((message) => updates(message as SolarPanel)) as SolarPanel;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -955,14 +1177,18 @@ class SolarPanel extends $pb.GeneratedMessage {
   SolarPanel createEmptyInstance() => create();
   static $pb.PbList<SolarPanel> createRepeated() => $pb.PbList<SolarPanel>();
   @$core.pragma('dart2js:noInline')
-  static SolarPanel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SolarPanel>(create);
+  static SolarPanel getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SolarPanel>(create);
   static SolarPanel? _defaultInstance;
 
   /// The centre of the panel.
   @$pb.TagNumber(1)
   $325.LatLng get center => $_getN(0);
   @$pb.TagNumber(1)
-  set center($325.LatLng v) { setField(1, v); }
+  set center($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCenter() => $_has(0);
   @$pb.TagNumber(1)
@@ -974,7 +1200,10 @@ class SolarPanel extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SolarPanelOrientation get orientation => $_getN(1);
   @$pb.TagNumber(2)
-  set orientation(SolarPanelOrientation v) { setField(2, v); }
+  set orientation(SolarPanelOrientation v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOrientation() => $_has(1);
   @$pb.TagNumber(2)
@@ -985,7 +1214,10 @@ class SolarPanel extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get yearlyEnergyDcKwh => $_getN(2);
   @$pb.TagNumber(3)
-  set yearlyEnergyDcKwh($core.double v) { $_setFloat(2, v); }
+  set yearlyEnergyDcKwh($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasYearlyEnergyDcKwh() => $_has(2);
   @$pb.TagNumber(3)
@@ -998,7 +1230,10 @@ class SolarPanel extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get segmentIndex => $_getIZ(3);
   @$pb.TagNumber(4)
-  set segmentIndex($core.int v) { $_setSignedInt32(3, v); }
+  set segmentIndex($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSegmentIndex() => $_has(3);
   @$pb.TagNumber(4)
@@ -1026,35 +1261,47 @@ class SolarPanelConfig extends $pb.GeneratedMessage {
     return $result;
   }
   SolarPanelConfig._() : super();
-  factory SolarPanelConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SolarPanelConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SolarPanelConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SolarPanelConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SolarPanelConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SolarPanelConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'panelsCount', $pb.PbFieldType.O3)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'yearlyEnergyDcKwh', $pb.PbFieldType.OF)
-    ..pc<RoofSegmentSummary>(4, _omitFieldNames ? '' : 'roofSegmentSummaries', $pb.PbFieldType.PM, subBuilder: RoofSegmentSummary.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'yearlyEnergyDcKwh', $pb.PbFieldType.OF)
+    ..pc<RoofSegmentSummary>(
+        4, _omitFieldNames ? '' : 'roofSegmentSummaries', $pb.PbFieldType.PM,
+        subBuilder: RoofSegmentSummary.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SolarPanelConfig clone() => SolarPanelConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SolarPanelConfig copyWith(void Function(SolarPanelConfig) updates) => super.copyWith((message) => updates(message as SolarPanelConfig)) as SolarPanelConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SolarPanelConfig copyWith(void Function(SolarPanelConfig) updates) =>
+      super.copyWith((message) => updates(message as SolarPanelConfig))
+          as SolarPanelConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SolarPanelConfig create() => SolarPanelConfig._();
   SolarPanelConfig createEmptyInstance() => create();
-  static $pb.PbList<SolarPanelConfig> createRepeated() => $pb.PbList<SolarPanelConfig>();
+  static $pb.PbList<SolarPanelConfig> createRepeated() =>
+      $pb.PbList<SolarPanelConfig>();
   @$core.pragma('dart2js:noInline')
-  static SolarPanelConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SolarPanelConfig>(create);
+  static SolarPanelConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SolarPanelConfig>(create);
   static SolarPanelConfig? _defaultInstance;
 
   /// Total number of panels. Note that this is redundant to (the sum
@@ -1063,7 +1310,10 @@ class SolarPanelConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get panelsCount => $_getIZ(0);
   @$pb.TagNumber(1)
-  set panelsCount($core.int v) { $_setSignedInt32(0, v); }
+  set panelsCount($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPanelsCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -1074,7 +1324,10 @@ class SolarPanelConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get yearlyEnergyDcKwh => $_getN(1);
   @$pb.TagNumber(2)
-  set yearlyEnergyDcKwh($core.double v) { $_setFloat(1, v); }
+  set yearlyEnergyDcKwh($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasYearlyEnergyDcKwh() => $_has(1);
   @$pb.TagNumber(2)
@@ -1117,37 +1370,49 @@ class RoofSegmentSummary extends $pb.GeneratedMessage {
     return $result;
   }
   RoofSegmentSummary._() : super();
-  factory RoofSegmentSummary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RoofSegmentSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RoofSegmentSummary.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RoofSegmentSummary.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RoofSegmentSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'pitchDegrees', $pb.PbFieldType.OF)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'azimuthDegrees', $pb.PbFieldType.OF)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RoofSegmentSummary',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'pitchDegrees', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'azimuthDegrees', $pb.PbFieldType.OF)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'panelsCount', $pb.PbFieldType.O3)
-    ..a<$core.double>(8, _omitFieldNames ? '' : 'yearlyEnergyDcKwh', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        8, _omitFieldNames ? '' : 'yearlyEnergyDcKwh', $pb.PbFieldType.OF)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'segmentIndex', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RoofSegmentSummary clone() => RoofSegmentSummary()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RoofSegmentSummary copyWith(void Function(RoofSegmentSummary) updates) => super.copyWith((message) => updates(message as RoofSegmentSummary)) as RoofSegmentSummary;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RoofSegmentSummary copyWith(void Function(RoofSegmentSummary) updates) =>
+      super.copyWith((message) => updates(message as RoofSegmentSummary))
+          as RoofSegmentSummary;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RoofSegmentSummary create() => RoofSegmentSummary._();
   RoofSegmentSummary createEmptyInstance() => create();
-  static $pb.PbList<RoofSegmentSummary> createRepeated() => $pb.PbList<RoofSegmentSummary>();
+  static $pb.PbList<RoofSegmentSummary> createRepeated() =>
+      $pb.PbList<RoofSegmentSummary>();
   @$core.pragma('dart2js:noInline')
-  static RoofSegmentSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RoofSegmentSummary>(create);
+  static RoofSegmentSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RoofSegmentSummary>(create);
   static RoofSegmentSummary? _defaultInstance;
 
   /// Angle of the roof segment relative to the theoretical ground plane.
@@ -1155,7 +1420,10 @@ class RoofSegmentSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get pitchDegrees => $_getN(0);
   @$pb.TagNumber(2)
-  set pitchDegrees($core.double v) { $_setFloat(0, v); }
+  set pitchDegrees($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPitchDegrees() => $_has(0);
   @$pb.TagNumber(2)
@@ -1168,7 +1436,10 @@ class RoofSegmentSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get azimuthDegrees => $_getN(1);
   @$pb.TagNumber(3)
-  set azimuthDegrees($core.double v) { $_setFloat(1, v); }
+  set azimuthDegrees($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAzimuthDegrees() => $_has(1);
   @$pb.TagNumber(3)
@@ -1178,7 +1449,10 @@ class RoofSegmentSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get panelsCount => $_getIZ(2);
   @$pb.TagNumber(7)
-  set panelsCount($core.int v) { $_setSignedInt32(2, v); }
+  set panelsCount($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPanelsCount() => $_has(2);
   @$pb.TagNumber(7)
@@ -1189,7 +1463,10 @@ class RoofSegmentSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.double get yearlyEnergyDcKwh => $_getN(3);
   @$pb.TagNumber(8)
-  set yearlyEnergyDcKwh($core.double v) { $_setFloat(3, v); }
+  set yearlyEnergyDcKwh($core.double v) {
+    $_setFloat(3, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasYearlyEnergyDcKwh() => $_has(3);
   @$pb.TagNumber(8)
@@ -1201,7 +1478,10 @@ class RoofSegmentSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get segmentIndex => $_getIZ(4);
   @$pb.TagNumber(9)
-  set segmentIndex($core.int v) { $_setSignedInt32(4, v); }
+  set segmentIndex($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSegmentIndex() => $_has(4);
   @$pb.TagNumber(9)
@@ -1249,47 +1529,67 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
     return $result;
   }
   FinancialAnalysis._() : super();
-  factory FinancialAnalysis.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FinancialAnalysis.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FinancialAnalysis.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FinancialAnalysis.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FinancialAnalysis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'monthlyBill', subBuilder: $465.Money.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FinancialAnalysis',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'monthlyBill',
+        subBuilder: $465.Money.create)
     ..aOB(4, _omitFieldNames ? '' : 'defaultBill')
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'averageKwhPerMonth', $pb.PbFieldType.OF)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'panelConfigIndex', $pb.PbFieldType.O3)
-    ..aOM<FinancialDetails>(7, _omitFieldNames ? '' : 'financialDetails', subBuilder: FinancialDetails.create)
-    ..aOM<LeasingSavings>(8, _omitFieldNames ? '' : 'leasingSavings', subBuilder: LeasingSavings.create)
-    ..aOM<CashPurchaseSavings>(9, _omitFieldNames ? '' : 'cashPurchaseSavings', subBuilder: CashPurchaseSavings.create)
-    ..aOM<FinancedPurchaseSavings>(10, _omitFieldNames ? '' : 'financedPurchaseSavings', subBuilder: FinancedPurchaseSavings.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        5, _omitFieldNames ? '' : 'averageKwhPerMonth', $pb.PbFieldType.OF)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'panelConfigIndex', $pb.PbFieldType.O3)
+    ..aOM<FinancialDetails>(7, _omitFieldNames ? '' : 'financialDetails',
+        subBuilder: FinancialDetails.create)
+    ..aOM<LeasingSavings>(8, _omitFieldNames ? '' : 'leasingSavings',
+        subBuilder: LeasingSavings.create)
+    ..aOM<CashPurchaseSavings>(9, _omitFieldNames ? '' : 'cashPurchaseSavings',
+        subBuilder: CashPurchaseSavings.create)
+    ..aOM<FinancedPurchaseSavings>(
+        10, _omitFieldNames ? '' : 'financedPurchaseSavings',
+        subBuilder: FinancedPurchaseSavings.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FinancialAnalysis clone() => FinancialAnalysis()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FinancialAnalysis copyWith(void Function(FinancialAnalysis) updates) => super.copyWith((message) => updates(message as FinancialAnalysis)) as FinancialAnalysis;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FinancialAnalysis copyWith(void Function(FinancialAnalysis) updates) =>
+      super.copyWith((message) => updates(message as FinancialAnalysis))
+          as FinancialAnalysis;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FinancialAnalysis create() => FinancialAnalysis._();
   FinancialAnalysis createEmptyInstance() => create();
-  static $pb.PbList<FinancialAnalysis> createRepeated() => $pb.PbList<FinancialAnalysis>();
+  static $pb.PbList<FinancialAnalysis> createRepeated() =>
+      $pb.PbList<FinancialAnalysis>();
   @$core.pragma('dart2js:noInline')
-  static FinancialAnalysis getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FinancialAnalysis>(create);
+  static FinancialAnalysis getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FinancialAnalysis>(create);
   static FinancialAnalysis? _defaultInstance;
 
   /// The monthly electric bill this analysis assumes.
   @$pb.TagNumber(3)
   $465.Money get monthlyBill => $_getN(0);
   @$pb.TagNumber(3)
-  set monthlyBill($465.Money v) { setField(3, v); }
+  set monthlyBill($465.Money v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMonthlyBill() => $_has(0);
   @$pb.TagNumber(3)
@@ -1303,7 +1603,10 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get defaultBill => $_getBF(1);
   @$pb.TagNumber(4)
-  set defaultBill($core.bool v) { $_setBool(1, v); }
+  set defaultBill($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDefaultBill() => $_has(1);
   @$pb.TagNumber(4)
@@ -1314,7 +1617,10 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get averageKwhPerMonth => $_getN(2);
   @$pb.TagNumber(5)
-  set averageKwhPerMonth($core.double v) { $_setFloat(2, v); }
+  set averageKwhPerMonth($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAverageKwhPerMonth() => $_has(2);
   @$pb.TagNumber(5)
@@ -1328,7 +1634,10 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get panelConfigIndex => $_getIZ(3);
   @$pb.TagNumber(6)
-  set panelConfigIndex($core.int v) { $_setSignedInt32(3, v); }
+  set panelConfigIndex($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPanelConfigIndex() => $_has(3);
   @$pb.TagNumber(6)
@@ -1339,7 +1648,10 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   FinancialDetails get financialDetails => $_getN(4);
   @$pb.TagNumber(7)
-  set financialDetails(FinancialDetails v) { setField(7, v); }
+  set financialDetails(FinancialDetails v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasFinancialDetails() => $_has(4);
   @$pb.TagNumber(7)
@@ -1351,7 +1663,10 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   LeasingSavings get leasingSavings => $_getN(5);
   @$pb.TagNumber(8)
-  set leasingSavings(LeasingSavings v) { setField(8, v); }
+  set leasingSavings(LeasingSavings v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasLeasingSavings() => $_has(5);
   @$pb.TagNumber(8)
@@ -1363,7 +1678,10 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   CashPurchaseSavings get cashPurchaseSavings => $_getN(6);
   @$pb.TagNumber(9)
-  set cashPurchaseSavings(CashPurchaseSavings v) { setField(9, v); }
+  set cashPurchaseSavings(CashPurchaseSavings v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCashPurchaseSavings() => $_has(6);
   @$pb.TagNumber(9)
@@ -1375,7 +1693,10 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   FinancedPurchaseSavings get financedPurchaseSavings => $_getN(7);
   @$pb.TagNumber(10)
-  set financedPurchaseSavings(FinancedPurchaseSavings v) { setField(10, v); }
+  set financedPurchaseSavings(FinancedPurchaseSavings v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasFinancedPurchaseSavings() => $_has(7);
   @$pb.TagNumber(10)
@@ -1443,42 +1764,60 @@ class FinancialDetails extends $pb.GeneratedMessage {
     return $result;
   }
   FinancialDetails._() : super();
-  factory FinancialDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FinancialDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FinancialDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FinancialDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FinancialDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'initialAcKwhPerYear', $pb.PbFieldType.OF)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'remainingLifetimeUtilityBill', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'federalIncentive', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(4, _omitFieldNames ? '' : 'stateIncentive', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(5, _omitFieldNames ? '' : 'utilityIncentive', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(6, _omitFieldNames ? '' : 'lifetimeSrecTotal', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(7, _omitFieldNames ? '' : 'costOfElectricityWithoutSolar', subBuilder: $465.Money.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FinancialDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'initialAcKwhPerYear', $pb.PbFieldType.OF)
+    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'remainingLifetimeUtilityBill',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'federalIncentive',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(4, _omitFieldNames ? '' : 'stateIncentive',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(5, _omitFieldNames ? '' : 'utilityIncentive',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(6, _omitFieldNames ? '' : 'lifetimeSrecTotal',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(7, _omitFieldNames ? '' : 'costOfElectricityWithoutSolar',
+        subBuilder: $465.Money.create)
     ..aOB(8, _omitFieldNames ? '' : 'netMeteringAllowed')
-    ..a<$core.double>(9, _omitFieldNames ? '' : 'solarPercentage', $pb.PbFieldType.OF)
-    ..a<$core.double>(10, _omitFieldNames ? '' : 'percentageExportedToGrid', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        9, _omitFieldNames ? '' : 'solarPercentage', $pb.PbFieldType.OF)
+    ..a<$core.double>(10, _omitFieldNames ? '' : 'percentageExportedToGrid',
+        $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FinancialDetails clone() => FinancialDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FinancialDetails copyWith(void Function(FinancialDetails) updates) => super.copyWith((message) => updates(message as FinancialDetails)) as FinancialDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FinancialDetails copyWith(void Function(FinancialDetails) updates) =>
+      super.copyWith((message) => updates(message as FinancialDetails))
+          as FinancialDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FinancialDetails create() => FinancialDetails._();
   FinancialDetails createEmptyInstance() => create();
-  static $pb.PbList<FinancialDetails> createRepeated() => $pb.PbList<FinancialDetails>();
+  static $pb.PbList<FinancialDetails> createRepeated() =>
+      $pb.PbList<FinancialDetails>();
   @$core.pragma('dart2js:noInline')
-  static FinancialDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FinancialDetails>(create);
+  static FinancialDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FinancialDetails>(create);
   static FinancialDetails? _defaultInstance;
 
   /// How many AC kWh we think the solar panels will generate in their first
@@ -1486,7 +1825,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get initialAcKwhPerYear => $_getN(0);
   @$pb.TagNumber(1)
-  set initialAcKwhPerYear($core.double v) { $_setFloat(0, v); }
+  set initialAcKwhPerYear($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInitialAcKwhPerYear() => $_has(0);
   @$pb.TagNumber(1)
@@ -1497,7 +1839,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $465.Money get remainingLifetimeUtilityBill => $_getN(1);
   @$pb.TagNumber(2)
-  set remainingLifetimeUtilityBill($465.Money v) { setField(2, v); }
+  set remainingLifetimeUtilityBill($465.Money v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRemainingLifetimeUtilityBill() => $_has(1);
   @$pb.TagNumber(2)
@@ -1510,7 +1855,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $465.Money get federalIncentive => $_getN(2);
   @$pb.TagNumber(3)
-  set federalIncentive($465.Money v) { setField(3, v); }
+  set federalIncentive($465.Money v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFederalIncentive() => $_has(2);
   @$pb.TagNumber(3)
@@ -1523,7 +1871,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $465.Money get stateIncentive => $_getN(3);
   @$pb.TagNumber(4)
-  set stateIncentive($465.Money v) { setField(4, v); }
+  set stateIncentive($465.Money v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStateIncentive() => $_has(3);
   @$pb.TagNumber(4)
@@ -1536,7 +1887,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $465.Money get utilityIncentive => $_getN(4);
   @$pb.TagNumber(5)
-  set utilityIncentive($465.Money v) { setField(5, v); }
+  set utilityIncentive($465.Money v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUtilityIncentive() => $_has(4);
   @$pb.TagNumber(5)
@@ -1550,7 +1904,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $465.Money get lifetimeSrecTotal => $_getN(5);
   @$pb.TagNumber(6)
-  set lifetimeSrecTotal($465.Money v) { setField(6, v); }
+  set lifetimeSrecTotal($465.Money v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLifetimeSrecTotal() => $_has(5);
   @$pb.TagNumber(6)
@@ -1563,7 +1920,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $465.Money get costOfElectricityWithoutSolar => $_getN(6);
   @$pb.TagNumber(7)
-  set costOfElectricityWithoutSolar($465.Money v) { setField(7, v); }
+  set costOfElectricityWithoutSolar($465.Money v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCostOfElectricityWithoutSolar() => $_has(6);
   @$pb.TagNumber(7)
@@ -1575,7 +1935,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get netMeteringAllowed => $_getBF(7);
   @$pb.TagNumber(8)
-  set netMeteringAllowed($core.bool v) { $_setBool(7, v); }
+  set netMeteringAllowed($core.bool v) {
+    $_setBool(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasNetMeteringAllowed() => $_has(7);
   @$pb.TagNumber(8)
@@ -1586,7 +1949,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get solarPercentage => $_getN(8);
   @$pb.TagNumber(9)
-  set solarPercentage($core.double v) { $_setFloat(8, v); }
+  set solarPercentage($core.double v) {
+    $_setFloat(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSolarPercentage() => $_has(8);
   @$pb.TagNumber(9)
@@ -1598,7 +1964,10 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.double get percentageExportedToGrid => $_getN(9);
   @$pb.TagNumber(10)
-  set percentageExportedToGrid($core.double v) { $_setFloat(9, v); }
+  set percentageExportedToGrid($core.double v) {
+    $_setFloat(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasPercentageExportedToGrid() => $_has(9);
   @$pb.TagNumber(10)
@@ -1637,45 +2006,62 @@ class SavingsOverTime extends $pb.GeneratedMessage {
     return $result;
   }
   SavingsOverTime._() : super();
-  factory SavingsOverTime.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SavingsOverTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SavingsOverTime.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SavingsOverTime.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SavingsOverTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'savingsYear1', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'savingsYear20', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'presentValueOfSavingsYear20', subBuilder: $465.Money.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SavingsOverTime',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'savingsYear1',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'savingsYear20',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'presentValueOfSavingsYear20',
+        subBuilder: $465.Money.create)
     ..aOB(4, _omitFieldNames ? '' : 'financiallyViable')
-    ..aOM<$465.Money>(5, _omitFieldNames ? '' : 'savingsLifetime', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(6, _omitFieldNames ? '' : 'presentValueOfSavingsLifetime', subBuilder: $465.Money.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$465.Money>(5, _omitFieldNames ? '' : 'savingsLifetime',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(6, _omitFieldNames ? '' : 'presentValueOfSavingsLifetime',
+        subBuilder: $465.Money.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SavingsOverTime clone() => SavingsOverTime()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SavingsOverTime copyWith(void Function(SavingsOverTime) updates) => super.copyWith((message) => updates(message as SavingsOverTime)) as SavingsOverTime;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SavingsOverTime copyWith(void Function(SavingsOverTime) updates) =>
+      super.copyWith((message) => updates(message as SavingsOverTime))
+          as SavingsOverTime;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SavingsOverTime create() => SavingsOverTime._();
   SavingsOverTime createEmptyInstance() => create();
-  static $pb.PbList<SavingsOverTime> createRepeated() => $pb.PbList<SavingsOverTime>();
+  static $pb.PbList<SavingsOverTime> createRepeated() =>
+      $pb.PbList<SavingsOverTime>();
   @$core.pragma('dart2js:noInline')
-  static SavingsOverTime getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SavingsOverTime>(create);
+  static SavingsOverTime getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SavingsOverTime>(create);
   static SavingsOverTime? _defaultInstance;
 
   /// Savings in the first year after panel installation.
   @$pb.TagNumber(1)
   $465.Money get savingsYear1 => $_getN(0);
   @$pb.TagNumber(1)
-  set savingsYear1($465.Money v) { setField(1, v); }
+  set savingsYear1($465.Money v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSavingsYear1() => $_has(0);
   @$pb.TagNumber(1)
@@ -1687,7 +2073,10 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $465.Money get savingsYear20 => $_getN(1);
   @$pb.TagNumber(2)
-  set savingsYear20($465.Money v) { setField(2, v); }
+  set savingsYear20($465.Money v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSavingsYear20() => $_has(1);
   @$pb.TagNumber(2)
@@ -1700,7 +2089,10 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $465.Money get presentValueOfSavingsYear20 => $_getN(2);
   @$pb.TagNumber(3)
-  set presentValueOfSavingsYear20($465.Money v) { setField(3, v); }
+  set presentValueOfSavingsYear20($465.Money v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPresentValueOfSavingsYear20() => $_has(2);
   @$pb.TagNumber(3)
@@ -1713,7 +2105,10 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get financiallyViable => $_getBF(3);
   @$pb.TagNumber(4)
-  set financiallyViable($core.bool v) { $_setBool(3, v); }
+  set financiallyViable($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFinanciallyViable() => $_has(3);
   @$pb.TagNumber(4)
@@ -1723,7 +2118,10 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $465.Money get savingsLifetime => $_getN(4);
   @$pb.TagNumber(5)
-  set savingsLifetime($465.Money v) { setField(5, v); }
+  set savingsLifetime($465.Money v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSavingsLifetime() => $_has(4);
   @$pb.TagNumber(5)
@@ -1736,7 +2134,10 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $465.Money get presentValueOfSavingsLifetime => $_getN(5);
   @$pb.TagNumber(6)
-  set presentValueOfSavingsLifetime($465.Money v) { setField(6, v); }
+  set presentValueOfSavingsLifetime($465.Money v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPresentValueOfSavingsLifetime() => $_has(5);
   @$pb.TagNumber(6)
@@ -1770,36 +2171,47 @@ class LeasingSavings extends $pb.GeneratedMessage {
     return $result;
   }
   LeasingSavings._() : super();
-  factory LeasingSavings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LeasingSavings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LeasingSavings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LeasingSavings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LeasingSavings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LeasingSavings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'leasesAllowed')
     ..aOB(2, _omitFieldNames ? '' : 'leasesSupported')
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'annualLeasingCost', subBuilder: $465.Money.create)
-    ..aOM<SavingsOverTime>(4, _omitFieldNames ? '' : 'savings', subBuilder: SavingsOverTime.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'annualLeasingCost',
+        subBuilder: $465.Money.create)
+    ..aOM<SavingsOverTime>(4, _omitFieldNames ? '' : 'savings',
+        subBuilder: SavingsOverTime.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LeasingSavings clone() => LeasingSavings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LeasingSavings copyWith(void Function(LeasingSavings) updates) => super.copyWith((message) => updates(message as LeasingSavings)) as LeasingSavings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LeasingSavings copyWith(void Function(LeasingSavings) updates) =>
+      super.copyWith((message) => updates(message as LeasingSavings))
+          as LeasingSavings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LeasingSavings create() => LeasingSavings._();
   LeasingSavings createEmptyInstance() => create();
-  static $pb.PbList<LeasingSavings> createRepeated() => $pb.PbList<LeasingSavings>();
+  static $pb.PbList<LeasingSavings> createRepeated() =>
+      $pb.PbList<LeasingSavings>();
   @$core.pragma('dart2js:noInline')
-  static LeasingSavings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LeasingSavings>(create);
+  static LeasingSavings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LeasingSavings>(create);
   static LeasingSavings? _defaultInstance;
 
   /// Whether leases are allowed in this juristiction (leases are not
@@ -1808,7 +2220,10 @@ class LeasingSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get leasesAllowed => $_getBF(0);
   @$pb.TagNumber(1)
-  set leasesAllowed($core.bool v) { $_setBool(0, v); }
+  set leasesAllowed($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLeasesAllowed() => $_has(0);
   @$pb.TagNumber(1)
@@ -1822,7 +2237,10 @@ class LeasingSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get leasesSupported => $_getBF(1);
   @$pb.TagNumber(2)
-  set leasesSupported($core.bool v) { $_setBool(1, v); }
+  set leasesSupported($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLeasesSupported() => $_has(1);
   @$pb.TagNumber(2)
@@ -1832,7 +2250,10 @@ class LeasingSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $465.Money get annualLeasingCost => $_getN(2);
   @$pb.TagNumber(3)
-  set annualLeasingCost($465.Money v) { setField(3, v); }
+  set annualLeasingCost($465.Money v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAnnualLeasingCost() => $_has(2);
   @$pb.TagNumber(3)
@@ -1844,7 +2265,10 @@ class LeasingSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   SavingsOverTime get savings => $_getN(3);
   @$pb.TagNumber(4)
-  set savings(SavingsOverTime v) { setField(4, v); }
+  set savings(SavingsOverTime v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSavings() => $_has(3);
   @$pb.TagNumber(4)
@@ -1882,37 +2306,51 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
     return $result;
   }
   CashPurchaseSavings._() : super();
-  factory CashPurchaseSavings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CashPurchaseSavings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CashPurchaseSavings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CashPurchaseSavings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CashPurchaseSavings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'outOfPocketCost', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'upfrontCost', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'rebateValue', subBuilder: $465.Money.create)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'paybackYears', $pb.PbFieldType.OF)
-    ..aOM<SavingsOverTime>(5, _omitFieldNames ? '' : 'savings', subBuilder: SavingsOverTime.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CashPurchaseSavings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'outOfPocketCost',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'upfrontCost',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'rebateValue',
+        subBuilder: $465.Money.create)
+    ..a<$core.double>(
+        4, _omitFieldNames ? '' : 'paybackYears', $pb.PbFieldType.OF)
+    ..aOM<SavingsOverTime>(5, _omitFieldNames ? '' : 'savings',
+        subBuilder: SavingsOverTime.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CashPurchaseSavings clone() => CashPurchaseSavings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CashPurchaseSavings copyWith(void Function(CashPurchaseSavings) updates) => super.copyWith((message) => updates(message as CashPurchaseSavings)) as CashPurchaseSavings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CashPurchaseSavings copyWith(void Function(CashPurchaseSavings) updates) =>
+      super.copyWith((message) => updates(message as CashPurchaseSavings))
+          as CashPurchaseSavings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CashPurchaseSavings create() => CashPurchaseSavings._();
   CashPurchaseSavings createEmptyInstance() => create();
-  static $pb.PbList<CashPurchaseSavings> createRepeated() => $pb.PbList<CashPurchaseSavings>();
+  static $pb.PbList<CashPurchaseSavings> createRepeated() =>
+      $pb.PbList<CashPurchaseSavings>();
   @$core.pragma('dart2js:noInline')
-  static CashPurchaseSavings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CashPurchaseSavings>(create);
+  static CashPurchaseSavings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CashPurchaseSavings>(create);
   static CashPurchaseSavings? _defaultInstance;
 
   /// Initial cost before tax incentives: the amount that must be paid
@@ -1920,7 +2358,10 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $465.Money get outOfPocketCost => $_getN(0);
   @$pb.TagNumber(1)
-  set outOfPocketCost($465.Money v) { setField(1, v); }
+  set outOfPocketCost($465.Money v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOutOfPocketCost() => $_has(0);
   @$pb.TagNumber(1)
@@ -1934,7 +2375,10 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $465.Money get upfrontCost => $_getN(1);
   @$pb.TagNumber(2)
-  set upfrontCost($465.Money v) { setField(2, v); }
+  set upfrontCost($465.Money v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpfrontCost() => $_has(1);
   @$pb.TagNumber(2)
@@ -1946,7 +2390,10 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $465.Money get rebateValue => $_getN(2);
   @$pb.TagNumber(3)
-  set rebateValue($465.Money v) { setField(3, v); }
+  set rebateValue($465.Money v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRebateValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -1959,7 +2406,10 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get paybackYears => $_getN(3);
   @$pb.TagNumber(4)
-  set paybackYears($core.double v) { $_setFloat(3, v); }
+  set paybackYears($core.double v) {
+    $_setFloat(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPaybackYears() => $_has(3);
   @$pb.TagNumber(4)
@@ -1969,7 +2419,10 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   SavingsOverTime get savings => $_getN(4);
   @$pb.TagNumber(5)
-  set savings(SavingsOverTime v) { setField(5, v); }
+  set savings(SavingsOverTime v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSavings() => $_has(4);
   @$pb.TagNumber(5)
@@ -2003,43 +2456,61 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
     return $result;
   }
   FinancedPurchaseSavings._() : super();
-  factory FinancedPurchaseSavings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FinancedPurchaseSavings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FinancedPurchaseSavings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FinancedPurchaseSavings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FinancedPurchaseSavings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'annualLoanPayment', subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'rebateValue', subBuilder: $465.Money.create)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'loanInterestRate', $pb.PbFieldType.OF)
-    ..aOM<SavingsOverTime>(4, _omitFieldNames ? '' : 'savings', subBuilder: SavingsOverTime.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FinancedPurchaseSavings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'annualLoanPayment',
+        subBuilder: $465.Money.create)
+    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'rebateValue',
+        subBuilder: $465.Money.create)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'loanInterestRate', $pb.PbFieldType.OF)
+    ..aOM<SavingsOverTime>(4, _omitFieldNames ? '' : 'savings',
+        subBuilder: SavingsOverTime.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  FinancedPurchaseSavings clone() => FinancedPurchaseSavings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FinancedPurchaseSavings copyWith(void Function(FinancedPurchaseSavings) updates) => super.copyWith((message) => updates(message as FinancedPurchaseSavings)) as FinancedPurchaseSavings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FinancedPurchaseSavings clone() =>
+      FinancedPurchaseSavings()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FinancedPurchaseSavings copyWith(
+          void Function(FinancedPurchaseSavings) updates) =>
+      super.copyWith((message) => updates(message as FinancedPurchaseSavings))
+          as FinancedPurchaseSavings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FinancedPurchaseSavings create() => FinancedPurchaseSavings._();
   FinancedPurchaseSavings createEmptyInstance() => create();
-  static $pb.PbList<FinancedPurchaseSavings> createRepeated() => $pb.PbList<FinancedPurchaseSavings>();
+  static $pb.PbList<FinancedPurchaseSavings> createRepeated() =>
+      $pb.PbList<FinancedPurchaseSavings>();
   @$core.pragma('dart2js:noInline')
-  static FinancedPurchaseSavings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FinancedPurchaseSavings>(create);
+  static FinancedPurchaseSavings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FinancedPurchaseSavings>(create);
   static FinancedPurchaseSavings? _defaultInstance;
 
   /// Annual loan payments.
   @$pb.TagNumber(1)
   $465.Money get annualLoanPayment => $_getN(0);
   @$pb.TagNumber(1)
-  set annualLoanPayment($465.Money v) { setField(1, v); }
+  set annualLoanPayment($465.Money v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAnnualLoanPayment() => $_has(0);
   @$pb.TagNumber(1)
@@ -2052,7 +2523,10 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $465.Money get rebateValue => $_getN(1);
   @$pb.TagNumber(2)
-  set rebateValue($465.Money v) { setField(2, v); }
+  set rebateValue($465.Money v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRebateValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -2064,7 +2538,10 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get loanInterestRate => $_getN(2);
   @$pb.TagNumber(3)
-  set loanInterestRate($core.double v) { $_setFloat(2, v); }
+  set loanInterestRate($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLoanInterestRate() => $_has(2);
   @$pb.TagNumber(3)
@@ -2074,7 +2551,10 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   SavingsOverTime get savings => $_getN(3);
   @$pb.TagNumber(4)
-  set savings(SavingsOverTime v) { setField(4, v); }
+  set savings(SavingsOverTime v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSavings() => $_has(3);
   @$pb.TagNumber(4)
@@ -2115,38 +2595,58 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDataLayersRequest._() : super();
-  factory GetDataLayersRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDataLayersRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDataLayersRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDataLayersRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDataLayersRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'radiusMeters', $pb.PbFieldType.OF)
-    ..e<DataLayerView>(3, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: DataLayerView.DATA_LAYER_VIEW_UNSPECIFIED, valueOf: DataLayerView.valueOf, enumValues: DataLayerView.values)
-    ..e<ImageryQuality>(5, _omitFieldNames ? '' : 'requiredQuality', $pb.PbFieldType.OE, defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED, valueOf: ImageryQuality.valueOf, enumValues: ImageryQuality.values)
-    ..a<$core.double>(6, _omitFieldNames ? '' : 'pixelSizeMeters', $pb.PbFieldType.OF)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDataLayersRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $325.LatLng.create)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'radiusMeters', $pb.PbFieldType.OF)
+    ..e<DataLayerView>(3, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE,
+        defaultOrMaker: DataLayerView.DATA_LAYER_VIEW_UNSPECIFIED,
+        valueOf: DataLayerView.valueOf,
+        enumValues: DataLayerView.values)
+    ..e<ImageryQuality>(
+        5, _omitFieldNames ? '' : 'requiredQuality', $pb.PbFieldType.OE,
+        defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED,
+        valueOf: ImageryQuality.valueOf,
+        enumValues: ImageryQuality.values)
+    ..a<$core.double>(
+        6, _omitFieldNames ? '' : 'pixelSizeMeters', $pb.PbFieldType.OF)
     ..aOB(7, _omitFieldNames ? '' : 'exactQualityRequired')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetDataLayersRequest clone() => GetDataLayersRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDataLayersRequest copyWith(void Function(GetDataLayersRequest) updates) => super.copyWith((message) => updates(message as GetDataLayersRequest)) as GetDataLayersRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetDataLayersRequest clone() =>
+      GetDataLayersRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDataLayersRequest copyWith(void Function(GetDataLayersRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDataLayersRequest))
+          as GetDataLayersRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDataLayersRequest create() => GetDataLayersRequest._();
   GetDataLayersRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDataLayersRequest> createRepeated() => $pb.PbList<GetDataLayersRequest>();
+  static $pb.PbList<GetDataLayersRequest> createRepeated() =>
+      $pb.PbList<GetDataLayersRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDataLayersRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDataLayersRequest>(create);
+  static GetDataLayersRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDataLayersRequest>(create);
   static GetDataLayersRequest? _defaultInstance;
 
   /// Required. The longitude and latitude for the center of the region to get
@@ -2154,7 +2654,10 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($325.LatLng v) { setField(1, v); }
+  set location($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -2174,7 +2677,10 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get radiusMeters => $_getN(1);
   @$pb.TagNumber(2)
-  set radiusMeters($core.double v) { $_setFloat(1, v); }
+  set radiusMeters($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRadiusMeters() => $_has(1);
   @$pb.TagNumber(2)
@@ -2184,7 +2690,10 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DataLayerView get view => $_getN(2);
   @$pb.TagNumber(3)
-  set view(DataLayerView v) { setField(3, v); }
+  set view(DataLayerView v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasView() => $_has(2);
   @$pb.TagNumber(3)
@@ -2196,7 +2705,10 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ImageryQuality get requiredQuality => $_getN(3);
   @$pb.TagNumber(5)
-  set requiredQuality(ImageryQuality v) { setField(5, v); }
+  set requiredQuality(ImageryQuality v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRequiredQuality() => $_has(3);
   @$pb.TagNumber(5)
@@ -2212,7 +2724,10 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get pixelSizeMeters => $_getN(4);
   @$pb.TagNumber(6)
-  set pixelSizeMeters($core.double v) { $_setFloat(4, v); }
+  set pixelSizeMeters($core.double v) {
+    $_setFloat(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPixelSizeMeters() => $_has(4);
   @$pb.TagNumber(6)
@@ -2227,7 +2742,10 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get exactQualityRequired => $_getBF(5);
   @$pb.TagNumber(7)
-  set exactQualityRequired($core.bool v) { $_setBool(5, v); }
+  set exactQualityRequired($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasExactQualityRequired() => $_has(5);
   @$pb.TagNumber(7)
@@ -2288,32 +2806,44 @@ class DataLayers extends $pb.GeneratedMessage {
     return $result;
   }
   DataLayers._() : super();
-  factory DataLayers.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DataLayers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DataLayers.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DataLayers.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataLayers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'imageryDate', subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'imageryProcessedDate', subBuilder: $327.Date.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DataLayers',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'imageryDate',
+        subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'imageryProcessedDate',
+        subBuilder: $327.Date.create)
     ..aOS(3, _omitFieldNames ? '' : 'dsmUrl')
     ..aOS(4, _omitFieldNames ? '' : 'rgbUrl')
     ..aOS(5, _omitFieldNames ? '' : 'maskUrl')
     ..aOS(6, _omitFieldNames ? '' : 'annualFluxUrl')
     ..aOS(7, _omitFieldNames ? '' : 'monthlyFluxUrl')
     ..pPS(8, _omitFieldNames ? '' : 'hourlyShadeUrls')
-    ..e<ImageryQuality>(9, _omitFieldNames ? '' : 'imageryQuality', $pb.PbFieldType.OE, defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED, valueOf: ImageryQuality.valueOf, enumValues: ImageryQuality.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ImageryQuality>(
+        9, _omitFieldNames ? '' : 'imageryQuality', $pb.PbFieldType.OE,
+        defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED,
+        valueOf: ImageryQuality.valueOf,
+        enumValues: ImageryQuality.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DataLayers clone() => DataLayers()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DataLayers copyWith(void Function(DataLayers) updates) => super.copyWith((message) => updates(message as DataLayers)) as DataLayers;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DataLayers copyWith(void Function(DataLayers) updates) =>
+      super.copyWith((message) => updates(message as DataLayers)) as DataLayers;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2322,7 +2852,8 @@ class DataLayers extends $pb.GeneratedMessage {
   DataLayers createEmptyInstance() => create();
   static $pb.PbList<DataLayers> createRepeated() => $pb.PbList<DataLayers>();
   @$core.pragma('dart2js:noInline')
-  static DataLayers getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataLayers>(create);
+  static DataLayers getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DataLayers>(create);
   static DataLayers? _defaultInstance;
 
   /// When the source imagery (from which all the other data are derived) in this
@@ -2331,7 +2862,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get imageryDate => $_getN(0);
   @$pb.TagNumber(1)
-  set imageryDate($327.Date v) { setField(1, v); }
+  set imageryDate($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasImageryDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -2343,7 +2877,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $327.Date get imageryProcessedDate => $_getN(1);
   @$pb.TagNumber(2)
-  set imageryProcessedDate($327.Date v) { setField(2, v); }
+  set imageryProcessedDate($327.Date v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasImageryProcessedDate() => $_has(1);
   @$pb.TagNumber(2)
@@ -2357,7 +2894,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get dsmUrl => $_getSZ(2);
   @$pb.TagNumber(3)
-  set dsmUrl($core.String v) { $_setString(2, v); }
+  set dsmUrl($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDsmUrl() => $_has(2);
   @$pb.TagNumber(3)
@@ -2367,7 +2907,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get rgbUrl => $_getSZ(3);
   @$pb.TagNumber(4)
-  set rgbUrl($core.String v) { $_setString(3, v); }
+  set rgbUrl($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRgbUrl() => $_has(3);
   @$pb.TagNumber(4)
@@ -2378,7 +2921,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get maskUrl => $_getSZ(4);
   @$pb.TagNumber(5)
-  set maskUrl($core.String v) { $_setString(4, v); }
+  set maskUrl($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaskUrl() => $_has(4);
   @$pb.TagNumber(5)
@@ -2393,7 +2939,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get annualFluxUrl => $_getSZ(5);
   @$pb.TagNumber(6)
-  set annualFluxUrl($core.String v) { $_setString(5, v); }
+  set annualFluxUrl($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAnnualFluxUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -2405,7 +2954,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get monthlyFluxUrl => $_getSZ(6);
   @$pb.TagNumber(7)
-  set monthlyFluxUrl($core.String v) { $_setString(6, v); }
+  set monthlyFluxUrl($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasMonthlyFluxUrl() => $_has(6);
   @$pb.TagNumber(7)
@@ -2449,7 +3001,10 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   ImageryQuality get imageryQuality => $_getN(8);
   @$pb.TagNumber(9)
-  set imageryQuality(ImageryQuality v) { setField(9, v); }
+  set imageryQuality(ImageryQuality v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasImageryQuality() => $_has(8);
   @$pb.TagNumber(9)
@@ -2468,46 +3023,58 @@ class GetGeoTiffRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetGeoTiffRequest._() : super();
-  factory GetGeoTiffRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetGeoTiffRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetGeoTiffRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetGeoTiffRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetGeoTiffRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.solar.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetGeoTiffRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.solar.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetGeoTiffRequest clone() => GetGeoTiffRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetGeoTiffRequest copyWith(void Function(GetGeoTiffRequest) updates) => super.copyWith((message) => updates(message as GetGeoTiffRequest)) as GetGeoTiffRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetGeoTiffRequest copyWith(void Function(GetGeoTiffRequest) updates) =>
+      super.copyWith((message) => updates(message as GetGeoTiffRequest))
+          as GetGeoTiffRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetGeoTiffRequest create() => GetGeoTiffRequest._();
   GetGeoTiffRequest createEmptyInstance() => create();
-  static $pb.PbList<GetGeoTiffRequest> createRepeated() => $pb.PbList<GetGeoTiffRequest>();
+  static $pb.PbList<GetGeoTiffRequest> createRepeated() =>
+      $pb.PbList<GetGeoTiffRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetGeoTiffRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetGeoTiffRequest>(create);
+  static GetGeoTiffRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetGeoTiffRequest>(create);
   static GetGeoTiffRequest? _defaultInstance;
 
   /// Required. The ID of the asset being requested.
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
   void clearId() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -46,37 +46,61 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ComputeRouteMatrixRequest._() : super();
-  factory ComputeRouteMatrixRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComputeRouteMatrixRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComputeRouteMatrixRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComputeRouteMatrixRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeRouteMatrixRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..pc<RouteMatrixOrigin>(1, _omitFieldNames ? '' : 'origins', $pb.PbFieldType.PM, subBuilder: RouteMatrixOrigin.create)
-    ..pc<RouteMatrixDestination>(2, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM, subBuilder: RouteMatrixDestination.create)
-    ..e<$176.RouteTravelMode>(3, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: $176.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: $176.RouteTravelMode.valueOf, enumValues: $176.RouteTravelMode.values)
-    ..e<$176.RoutingPreference>(4, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE, defaultOrMaker: $176.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED, valueOf: $176.RoutingPreference.valueOf, enumValues: $176.RoutingPreference.values)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'departureTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComputeRouteMatrixRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routes.v1'),
+      createEmptyInstance: create)
+    ..pc<RouteMatrixOrigin>(
+        1, _omitFieldNames ? '' : 'origins', $pb.PbFieldType.PM,
+        subBuilder: RouteMatrixOrigin.create)
+    ..pc<RouteMatrixDestination>(
+        2, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM,
+        subBuilder: RouteMatrixDestination.create)
+    ..e<$176.RouteTravelMode>(
+        3, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
+        defaultOrMaker: $176.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: $176.RouteTravelMode.valueOf,
+        enumValues: $176.RouteTravelMode.values)
+    ..e<$176.RoutingPreference>(
+        4, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE,
+        defaultOrMaker: $176.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
+        valueOf: $176.RoutingPreference.valueOf,
+        enumValues: $176.RoutingPreference.values)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'departureTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ComputeRouteMatrixRequest clone() => ComputeRouteMatrixRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComputeRouteMatrixRequest copyWith(void Function(ComputeRouteMatrixRequest) updates) => super.copyWith((message) => updates(message as ComputeRouteMatrixRequest)) as ComputeRouteMatrixRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ComputeRouteMatrixRequest clone() =>
+      ComputeRouteMatrixRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComputeRouteMatrixRequest copyWith(
+          void Function(ComputeRouteMatrixRequest) updates) =>
+      super.copyWith((message) => updates(message as ComputeRouteMatrixRequest))
+          as ComputeRouteMatrixRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeRouteMatrixRequest create() => ComputeRouteMatrixRequest._();
   ComputeRouteMatrixRequest createEmptyInstance() => create();
-  static $pb.PbList<ComputeRouteMatrixRequest> createRepeated() => $pb.PbList<ComputeRouteMatrixRequest>();
+  static $pb.PbList<ComputeRouteMatrixRequest> createRepeated() =>
+      $pb.PbList<ComputeRouteMatrixRequest>();
   @$core.pragma('dart2js:noInline')
-  static ComputeRouteMatrixRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComputeRouteMatrixRequest>(create);
+  static ComputeRouteMatrixRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComputeRouteMatrixRequest>(create);
   static ComputeRouteMatrixRequest? _defaultInstance;
 
   ///  Required. Array of origins, which determines the rows of the response matrix.
@@ -100,7 +124,10 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $176.RouteTravelMode get travelMode => $_getN(2);
   @$pb.TagNumber(3)
-  set travelMode($176.RouteTravelMode v) { setField(3, v); }
+  set travelMode($176.RouteTravelMode v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTravelMode() => $_has(2);
   @$pb.TagNumber(3)
@@ -116,7 +143,10 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $176.RoutingPreference get routingPreference => $_getN(3);
   @$pb.TagNumber(4)
-  set routingPreference($176.RoutingPreference v) { setField(4, v); }
+  set routingPreference($176.RoutingPreference v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRoutingPreference() => $_has(3);
   @$pb.TagNumber(4)
@@ -128,7 +158,10 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get departureTime => $_getN(4);
   @$pb.TagNumber(5)
-  set departureTime($302.Timestamp v) { setField(5, v); }
+  set departureTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDepartureTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -153,41 +186,55 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
     return $result;
   }
   RouteMatrixOrigin._() : super();
-  factory RouteMatrixOrigin.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteMatrixOrigin.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteMatrixOrigin.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteMatrixOrigin.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteMatrixOrigin', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$482.Waypoint>(1, _omitFieldNames ? '' : 'waypoint', subBuilder: $482.Waypoint.create)
-    ..aOM<$176.RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers', subBuilder: $176.RouteModifiers.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteMatrixOrigin',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routes.v1'),
+      createEmptyInstance: create)
+    ..aOM<$482.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $482.Waypoint.create)
+    ..aOM<$176.RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers',
+        subBuilder: $176.RouteModifiers.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RouteMatrixOrigin clone() => RouteMatrixOrigin()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteMatrixOrigin copyWith(void Function(RouteMatrixOrigin) updates) => super.copyWith((message) => updates(message as RouteMatrixOrigin)) as RouteMatrixOrigin;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteMatrixOrigin copyWith(void Function(RouteMatrixOrigin) updates) =>
+      super.copyWith((message) => updates(message as RouteMatrixOrigin))
+          as RouteMatrixOrigin;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteMatrixOrigin create() => RouteMatrixOrigin._();
   RouteMatrixOrigin createEmptyInstance() => create();
-  static $pb.PbList<RouteMatrixOrigin> createRepeated() => $pb.PbList<RouteMatrixOrigin>();
+  static $pb.PbList<RouteMatrixOrigin> createRepeated() =>
+      $pb.PbList<RouteMatrixOrigin>();
   @$core.pragma('dart2js:noInline')
-  static RouteMatrixOrigin getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteMatrixOrigin>(create);
+  static RouteMatrixOrigin getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteMatrixOrigin>(create);
   static RouteMatrixOrigin? _defaultInstance;
 
   /// Required. Origin waypoint
   @$pb.TagNumber(1)
   $482.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($482.Waypoint v) { setField(1, v); }
+  set waypoint($482.Waypoint v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWaypoint() => $_has(0);
   @$pb.TagNumber(1)
@@ -199,7 +246,10 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $176.RouteModifiers get routeModifiers => $_getN(1);
   @$pb.TagNumber(2)
-  set routeModifiers($176.RouteModifiers v) { setField(2, v); }
+  set routeModifiers($176.RouteModifiers v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRouteModifiers() => $_has(1);
   @$pb.TagNumber(2)
@@ -220,40 +270,55 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
     return $result;
   }
   RouteMatrixDestination._() : super();
-  factory RouteMatrixDestination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteMatrixDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteMatrixDestination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteMatrixDestination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteMatrixDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$482.Waypoint>(1, _omitFieldNames ? '' : 'waypoint', subBuilder: $482.Waypoint.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteMatrixDestination',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routes.v1'),
+      createEmptyInstance: create)
+    ..aOM<$482.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $482.Waypoint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteMatrixDestination clone() => RouteMatrixDestination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteMatrixDestination copyWith(void Function(RouteMatrixDestination) updates) => super.copyWith((message) => updates(message as RouteMatrixDestination)) as RouteMatrixDestination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteMatrixDestination clone() =>
+      RouteMatrixDestination()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteMatrixDestination copyWith(
+          void Function(RouteMatrixDestination) updates) =>
+      super.copyWith((message) => updates(message as RouteMatrixDestination))
+          as RouteMatrixDestination;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteMatrixDestination create() => RouteMatrixDestination._();
   RouteMatrixDestination createEmptyInstance() => create();
-  static $pb.PbList<RouteMatrixDestination> createRepeated() => $pb.PbList<RouteMatrixDestination>();
+  static $pb.PbList<RouteMatrixDestination> createRepeated() =>
+      $pb.PbList<RouteMatrixDestination>();
   @$core.pragma('dart2js:noInline')
-  static RouteMatrixDestination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteMatrixDestination>(create);
+  static RouteMatrixDestination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteMatrixDestination>(create);
   static RouteMatrixDestination? _defaultInstance;
 
   /// Required. Destination waypoint
   @$pb.TagNumber(1)
   $482.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($482.Waypoint v) { setField(1, v); }
+  set waypoint($482.Waypoint v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWaypoint() => $_has(0);
   @$pb.TagNumber(1)
@@ -262,6 +327,6 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
   $482.Waypoint ensureWaypoint() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

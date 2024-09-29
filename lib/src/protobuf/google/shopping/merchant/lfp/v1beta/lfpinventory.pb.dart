@@ -81,10 +81,18 @@ class LfpInventory extends $pb.GeneratedMessage {
     return $result;
   }
   LfpInventory._() : super();
-  factory LfpInventory.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LfpInventory.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LfpInventory.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LfpInventory.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LfpInventory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LfpInventory',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'targetAccount')
     ..aOS(3, _omitFieldNames ? '' : 'storeCode')
@@ -92,35 +100,38 @@ class LfpInventory extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'regionCode')
     ..aOS(6, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(7, _omitFieldNames ? '' : 'gtin')
-    ..aOM<$536.Price>(8, _omitFieldNames ? '' : 'price', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(8, _omitFieldNames ? '' : 'price',
+        subBuilder: $536.Price.create)
     ..aOS(9, _omitFieldNames ? '' : 'availability')
     ..aInt64(10, _omitFieldNames ? '' : 'quantity')
-    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'collectionTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'collectionTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'pickupMethod')
     ..aOS(13, _omitFieldNames ? '' : 'pickupSla')
     ..aOS(14, _omitFieldNames ? '' : 'feedLabel')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LfpInventory clone() => LfpInventory()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LfpInventory copyWith(void Function(LfpInventory) updates) => super.copyWith((message) => updates(message as LfpInventory)) as LfpInventory;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LfpInventory copyWith(void Function(LfpInventory) updates) =>
+      super.copyWith((message) => updates(message as LfpInventory))
+          as LfpInventory;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LfpInventory create() => LfpInventory._();
   LfpInventory createEmptyInstance() => create();
-  static $pb.PbList<LfpInventory> createRepeated() => $pb.PbList<LfpInventory>();
+  static $pb.PbList<LfpInventory> createRepeated() =>
+      $pb.PbList<LfpInventory>();
   @$core.pragma('dart2js:noInline')
-  static LfpInventory getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LfpInventory>(create);
+  static LfpInventory getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LfpInventory>(create);
   static LfpInventory? _defaultInstance;
 
   /// Output only. Identifier. The name for the `LfpInventory` resource.
@@ -129,7 +140,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -140,7 +154,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get targetAccount => $_getI64(1);
   @$pb.TagNumber(2)
-  set targetAccount($fixnum.Int64 v) { $_setInt64(1, v); }
+  set targetAccount($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetAccount() => $_has(1);
   @$pb.TagNumber(2)
@@ -152,7 +169,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get storeCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set storeCode($core.String v) { $_setString(2, v); }
+  set storeCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStoreCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -167,7 +187,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get offerId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set offerId($core.String v) { $_setString(3, v); }
+  set offerId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOfferId() => $_has(3);
   @$pb.TagNumber(4)
@@ -179,7 +202,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get regionCode => $_getSZ(4);
   @$pb.TagNumber(5)
-  set regionCode($core.String v) { $_setString(4, v); }
+  set regionCode($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRegionCode() => $_has(4);
   @$pb.TagNumber(5)
@@ -189,7 +215,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get contentLanguage => $_getSZ(5);
   @$pb.TagNumber(6)
-  set contentLanguage($core.String v) { $_setString(5, v); }
+  set contentLanguage($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasContentLanguage() => $_has(5);
   @$pb.TagNumber(6)
@@ -199,7 +228,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get gtin => $_getSZ(6);
   @$pb.TagNumber(7)
-  set gtin($core.String v) { $_setString(6, v); }
+  set gtin($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasGtin() => $_has(6);
   @$pb.TagNumber(7)
@@ -209,7 +241,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $536.Price get price => $_getN(7);
   @$pb.TagNumber(8)
-  set price($536.Price v) { setField(8, v); }
+  set price($536.Price v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPrice() => $_has(7);
   @$pb.TagNumber(8)
@@ -223,7 +258,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get availability => $_getSZ(8);
   @$pb.TagNumber(9)
-  set availability($core.String v) { $_setString(8, v); }
+  set availability($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasAvailability() => $_has(8);
   @$pb.TagNumber(9)
@@ -234,7 +272,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $fixnum.Int64 get quantity => $_getI64(9);
   @$pb.TagNumber(10)
-  set quantity($fixnum.Int64 v) { $_setInt64(9, v); }
+  set quantity($fixnum.Int64 v) {
+    $_setInt64(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasQuantity() => $_has(9);
   @$pb.TagNumber(10)
@@ -245,7 +286,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $302.Timestamp get collectionTime => $_getN(10);
   @$pb.TagNumber(11)
-  set collectionTime($302.Timestamp v) { setField(11, v); }
+  set collectionTime($302.Timestamp v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasCollectionTime() => $_has(10);
   @$pb.TagNumber(11)
@@ -260,7 +304,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get pickupMethod => $_getSZ(11);
   @$pb.TagNumber(12)
-  set pickupMethod($core.String v) { $_setString(11, v); }
+  set pickupMethod($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasPickupMethod() => $_has(11);
   @$pb.TagNumber(12)
@@ -273,7 +320,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get pickupSla => $_getSZ(12);
   @$pb.TagNumber(13)
-  set pickupSla($core.String v) { $_setString(12, v); }
+  set pickupSla($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasPickupSla() => $_has(12);
   @$pb.TagNumber(13)
@@ -285,7 +335,10 @@ class LfpInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get feedLabel => $_getSZ(13);
   @$pb.TagNumber(14)
-  set feedLabel($core.String v) { $_setString(13, v); }
+  set feedLabel($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasFeedLabel() => $_has(13);
   @$pb.TagNumber(14)
@@ -308,34 +361,46 @@ class InsertLfpInventoryRequest extends $pb.GeneratedMessage {
     return $result;
   }
   InsertLfpInventoryRequest._() : super();
-  factory InsertLfpInventoryRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InsertLfpInventoryRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InsertLfpInventoryRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InsertLfpInventoryRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertLfpInventoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InsertLfpInventoryRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<LfpInventory>(2, _omitFieldNames ? '' : 'lfpInventory', subBuilder: LfpInventory.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<LfpInventory>(2, _omitFieldNames ? '' : 'lfpInventory',
+        subBuilder: LfpInventory.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InsertLfpInventoryRequest clone() => InsertLfpInventoryRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InsertLfpInventoryRequest copyWith(void Function(InsertLfpInventoryRequest) updates) => super.copyWith((message) => updates(message as InsertLfpInventoryRequest)) as InsertLfpInventoryRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InsertLfpInventoryRequest clone() =>
+      InsertLfpInventoryRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InsertLfpInventoryRequest copyWith(
+          void Function(InsertLfpInventoryRequest) updates) =>
+      super.copyWith((message) => updates(message as InsertLfpInventoryRequest))
+          as InsertLfpInventoryRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InsertLfpInventoryRequest create() => InsertLfpInventoryRequest._();
   InsertLfpInventoryRequest createEmptyInstance() => create();
-  static $pb.PbList<InsertLfpInventoryRequest> createRepeated() => $pb.PbList<InsertLfpInventoryRequest>();
+  static $pb.PbList<InsertLfpInventoryRequest> createRepeated() =>
+      $pb.PbList<InsertLfpInventoryRequest>();
   @$core.pragma('dart2js:noInline')
-  static InsertLfpInventoryRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InsertLfpInventoryRequest>(create);
+  static InsertLfpInventoryRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InsertLfpInventoryRequest>(create);
   static InsertLfpInventoryRequest? _defaultInstance;
 
   /// Required. The LFP provider account.
@@ -343,7 +408,10 @@ class InsertLfpInventoryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -353,7 +421,10 @@ class InsertLfpInventoryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   LfpInventory get lfpInventory => $_getN(1);
   @$pb.TagNumber(2)
-  set lfpInventory(LfpInventory v) { setField(2, v); }
+  set lfpInventory(LfpInventory v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLfpInventory() => $_has(1);
   @$pb.TagNumber(2)
@@ -362,6 +433,6 @@ class InsertLfpInventoryRequest extends $pb.GeneratedMessage {
   LfpInventory ensureLfpInventory() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

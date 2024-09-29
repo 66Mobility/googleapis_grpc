@@ -40,26 +40,35 @@ class ResultSet extends $pb.GeneratedMessage {
     return $result;
   }
   ResultSet._() : super();
-  factory ResultSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ResultSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ResultSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ResultSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResultSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..aOM<ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata', subBuilder: ResultSetMetadata.create)
-    ..pc<$261.ListValue>(2, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $261.ListValue.create)
-    ..aOM<ResultSetStats>(3, _omitFieldNames ? '' : 'stats', subBuilder: ResultSetStats.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResultSet',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..aOM<ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata',
+        subBuilder: ResultSetMetadata.create)
+    ..pc<$261.ListValue>(2, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
+        subBuilder: $261.ListValue.create)
+    ..aOM<ResultSetStats>(3, _omitFieldNames ? '' : 'stats',
+        subBuilder: ResultSetStats.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ResultSet clone() => ResultSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ResultSet copyWith(void Function(ResultSet) updates) => super.copyWith((message) => updates(message as ResultSet)) as ResultSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ResultSet copyWith(void Function(ResultSet) updates) =>
+      super.copyWith((message) => updates(message as ResultSet)) as ResultSet;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -68,14 +77,18 @@ class ResultSet extends $pb.GeneratedMessage {
   ResultSet createEmptyInstance() => create();
   static $pb.PbList<ResultSet> createRepeated() => $pb.PbList<ResultSet>();
   @$core.pragma('dart2js:noInline')
-  static ResultSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResultSet>(create);
+  static ResultSet getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResultSet>(create);
   static ResultSet? _defaultInstance;
 
   /// Metadata about the result set, such as row type information.
   @$pb.TagNumber(1)
   ResultSetMetadata get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata(ResultSetMetadata v) { setField(1, v); }
+  set metadata(ResultSetMetadata v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
@@ -103,7 +116,10 @@ class ResultSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ResultSetStats get stats => $_getN(2);
   @$pb.TagNumber(3)
-  set stats(ResultSetStats v) { setField(3, v); }
+  set stats(ResultSetStats v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStats() => $_has(2);
   @$pb.TagNumber(3)
@@ -142,37 +158,50 @@ class PartialResultSet extends $pb.GeneratedMessage {
     return $result;
   }
   PartialResultSet._() : super();
-  factory PartialResultSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PartialResultSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PartialResultSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PartialResultSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PartialResultSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..aOM<ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata', subBuilder: ResultSetMetadata.create)
-    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $261.Value.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PartialResultSet',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..aOM<ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata',
+        subBuilder: ResultSetMetadata.create)
+    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
+        subBuilder: $261.Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'chunkedValue')
-    ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
-    ..aOM<ResultSetStats>(5, _omitFieldNames ? '' : 'stats', subBuilder: ResultSetStats.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        4, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
+    ..aOM<ResultSetStats>(5, _omitFieldNames ? '' : 'stats',
+        subBuilder: ResultSetStats.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PartialResultSet clone() => PartialResultSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PartialResultSet copyWith(void Function(PartialResultSet) updates) => super.copyWith((message) => updates(message as PartialResultSet)) as PartialResultSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PartialResultSet copyWith(void Function(PartialResultSet) updates) =>
+      super.copyWith((message) => updates(message as PartialResultSet))
+          as PartialResultSet;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PartialResultSet create() => PartialResultSet._();
   PartialResultSet createEmptyInstance() => create();
-  static $pb.PbList<PartialResultSet> createRepeated() => $pb.PbList<PartialResultSet>();
+  static $pb.PbList<PartialResultSet> createRepeated() =>
+      $pb.PbList<PartialResultSet>();
   @$core.pragma('dart2js:noInline')
-  static PartialResultSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PartialResultSet>(create);
+  static PartialResultSet getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PartialResultSet>(create);
   static PartialResultSet? _defaultInstance;
 
   /// Metadata about the result set, such as row type information.
@@ -180,7 +209,10 @@ class PartialResultSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ResultSetMetadata get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata(ResultSetMetadata v) { setField(1, v); }
+  set metadata(ResultSetMetadata v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
@@ -270,7 +302,10 @@ class PartialResultSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get chunkedValue => $_getBF(2);
   @$pb.TagNumber(3)
-  set chunkedValue($core.bool v) { $_setBool(2, v); }
+  set chunkedValue($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasChunkedValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -284,7 +319,10 @@ class PartialResultSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get resumeToken => $_getN(3);
   @$pb.TagNumber(4)
-  set resumeToken($core.List<$core.int> v) { $_setBytes(3, v); }
+  set resumeToken($core.List<$core.int> v) {
+    $_setBytes(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasResumeToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -299,7 +337,10 @@ class PartialResultSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ResultSetStats get stats => $_getN(4);
   @$pb.TagNumber(5)
-  set stats(ResultSetStats v) { setField(5, v); }
+  set stats(ResultSetStats v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStats() => $_has(4);
   @$pb.TagNumber(5)
@@ -328,35 +369,47 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   ResultSetMetadata._() : super();
-  factory ResultSetMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ResultSetMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ResultSetMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ResultSetMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResultSetMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..aOM<$552.StructType>(1, _omitFieldNames ? '' : 'rowType', subBuilder: $552.StructType.create)
-    ..aOM<$250.Transaction>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $250.Transaction.create)
-    ..aOM<$552.StructType>(3, _omitFieldNames ? '' : 'undeclaredParameters', subBuilder: $552.StructType.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResultSetMetadata',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..aOM<$552.StructType>(1, _omitFieldNames ? '' : 'rowType',
+        subBuilder: $552.StructType.create)
+    ..aOM<$250.Transaction>(2, _omitFieldNames ? '' : 'transaction',
+        subBuilder: $250.Transaction.create)
+    ..aOM<$552.StructType>(3, _omitFieldNames ? '' : 'undeclaredParameters',
+        subBuilder: $552.StructType.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ResultSetMetadata clone() => ResultSetMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ResultSetMetadata copyWith(void Function(ResultSetMetadata) updates) => super.copyWith((message) => updates(message as ResultSetMetadata)) as ResultSetMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ResultSetMetadata copyWith(void Function(ResultSetMetadata) updates) =>
+      super.copyWith((message) => updates(message as ResultSetMetadata))
+          as ResultSetMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResultSetMetadata create() => ResultSetMetadata._();
   ResultSetMetadata createEmptyInstance() => create();
-  static $pb.PbList<ResultSetMetadata> createRepeated() => $pb.PbList<ResultSetMetadata>();
+  static $pb.PbList<ResultSetMetadata> createRepeated() =>
+      $pb.PbList<ResultSetMetadata>();
   @$core.pragma('dart2js:noInline')
-  static ResultSetMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResultSetMetadata>(create);
+  static ResultSetMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResultSetMetadata>(create);
   static ResultSetMetadata? _defaultInstance;
 
   ///  Indicates the field names and types for the rows in the result
@@ -370,7 +423,10 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $552.StructType get rowType => $_getN(0);
   @$pb.TagNumber(1)
-  set rowType($552.StructType v) { setField(1, v); }
+  set rowType($552.StructType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRowType() => $_has(0);
   @$pb.TagNumber(1)
@@ -383,7 +439,10 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $250.Transaction get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($250.Transaction v) { setField(2, v); }
+  set transaction($250.Transaction v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTransaction() => $_has(1);
   @$pb.TagNumber(2)
@@ -404,7 +463,10 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $552.StructType get undeclaredParameters => $_getN(2);
   @$pb.TagNumber(3)
-  set undeclaredParameters($552.StructType v) { setField(3, v); }
+  set undeclaredParameters($552.StructType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUndeclaredParameters() => $_has(2);
   @$pb.TagNumber(3)
@@ -413,11 +475,7 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   $552.StructType ensureUndeclaredParameters() => $_ensure(2);
 }
 
-enum ResultSetStats_RowCount {
-  rowCountExact, 
-  rowCountLowerBound, 
-  notSet
-}
+enum ResultSetStats_RowCount { rowCountExact, rowCountLowerBound, notSet }
 
 /// Additional statistics about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].
 class ResultSetStats extends $pb.GeneratedMessage {
@@ -443,52 +501,68 @@ class ResultSetStats extends $pb.GeneratedMessage {
     return $result;
   }
   ResultSetStats._() : super();
-  factory ResultSetStats.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ResultSetStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ResultSetStats.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ResultSetStats.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ResultSetStats_RowCount> _ResultSetStats_RowCountByTag = {
-    3 : ResultSetStats_RowCount.rowCountExact,
-    4 : ResultSetStats_RowCount.rowCountLowerBound,
-    0 : ResultSetStats_RowCount.notSet
+  static const $core.Map<$core.int, ResultSetStats_RowCount>
+      _ResultSetStats_RowCountByTag = {
+    3: ResultSetStats_RowCount.rowCountExact,
+    4: ResultSetStats_RowCount.rowCountLowerBound,
+    0: ResultSetStats_RowCount.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResultSetStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResultSetStats',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..oo(0, [3, 4])
-    ..aOM<$553.QueryPlan>(1, _omitFieldNames ? '' : 'queryPlan', subBuilder: $553.QueryPlan.create)
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'queryStats', subBuilder: $261.Struct.create)
+    ..aOM<$553.QueryPlan>(1, _omitFieldNames ? '' : 'queryPlan',
+        subBuilder: $553.QueryPlan.create)
+    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'queryStats',
+        subBuilder: $261.Struct.create)
     ..aInt64(3, _omitFieldNames ? '' : 'rowCountExact')
     ..aInt64(4, _omitFieldNames ? '' : 'rowCountLowerBound')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ResultSetStats clone() => ResultSetStats()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ResultSetStats copyWith(void Function(ResultSetStats) updates) => super.copyWith((message) => updates(message as ResultSetStats)) as ResultSetStats;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ResultSetStats copyWith(void Function(ResultSetStats) updates) =>
+      super.copyWith((message) => updates(message as ResultSetStats))
+          as ResultSetStats;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResultSetStats create() => ResultSetStats._();
   ResultSetStats createEmptyInstance() => create();
-  static $pb.PbList<ResultSetStats> createRepeated() => $pb.PbList<ResultSetStats>();
+  static $pb.PbList<ResultSetStats> createRepeated() =>
+      $pb.PbList<ResultSetStats>();
   @$core.pragma('dart2js:noInline')
-  static ResultSetStats getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResultSetStats>(create);
+  static ResultSetStats getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResultSetStats>(create);
   static ResultSetStats? _defaultInstance;
 
-  ResultSetStats_RowCount whichRowCount() => _ResultSetStats_RowCountByTag[$_whichOneof(0)]!;
+  ResultSetStats_RowCount whichRowCount() =>
+      _ResultSetStats_RowCountByTag[$_whichOneof(0)]!;
   void clearRowCount() => clearField($_whichOneof(0));
 
   /// [QueryPlan][google.spanner.v1.QueryPlan] for the query associated with this result.
   @$pb.TagNumber(1)
   $553.QueryPlan get queryPlan => $_getN(0);
   @$pb.TagNumber(1)
-  set queryPlan($553.QueryPlan v) { setField(1, v); }
+  set queryPlan($553.QueryPlan v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasQueryPlan() => $_has(0);
   @$pb.TagNumber(1)
@@ -508,7 +582,10 @@ class ResultSetStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $261.Struct get queryStats => $_getN(1);
   @$pb.TagNumber(2)
-  set queryStats($261.Struct v) { setField(2, v); }
+  set queryStats($261.Struct v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQueryStats() => $_has(1);
   @$pb.TagNumber(2)
@@ -520,7 +597,10 @@ class ResultSetStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get rowCountExact => $_getI64(2);
   @$pb.TagNumber(3)
-  set rowCountExact($fixnum.Int64 v) { $_setInt64(2, v); }
+  set rowCountExact($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRowCountExact() => $_has(2);
   @$pb.TagNumber(3)
@@ -531,13 +611,16 @@ class ResultSetStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get rowCountLowerBound => $_getI64(3);
   @$pb.TagNumber(4)
-  set rowCountLowerBound($fixnum.Int64 v) { $_setInt64(3, v); }
+  set rowCountLowerBound($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRowCountLowerBound() => $_has(3);
   @$pb.TagNumber(4)
   void clearRowCountLowerBound() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

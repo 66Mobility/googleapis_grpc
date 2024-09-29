@@ -52,45 +52,70 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
     return $result;
   }
   UndeliverableFirstGenEvent._() : super();
-  factory UndeliverableFirstGenEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UndeliverableFirstGenEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UndeliverableFirstGenEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UndeliverableFirstGenEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeliverableFirstGenEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UndeliverableFirstGenEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'message')
-    ..e<UndeliverableFirstGenEvent_Reason>(2, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE, defaultOrMaker: UndeliverableFirstGenEvent_Reason.REASON_UNSPECIFIED, valueOf: UndeliverableFirstGenEvent_Reason.valueOf, enumValues: UndeliverableFirstGenEvent_Reason.values)
+    ..e<UndeliverableFirstGenEvent_Reason>(
+        2, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE,
+        defaultOrMaker: UndeliverableFirstGenEvent_Reason.REASON_UNSPECIFIED,
+        valueOf: UndeliverableFirstGenEvent_Reason.valueOf,
+        enumValues: UndeliverableFirstGenEvent_Reason.values)
     ..aOS(3, _omitFieldNames ? '' : 'documentName')
-    ..e<UndeliverableFirstGenEvent_DocumentChangeType>(4, _omitFieldNames ? '' : 'documentChangeType', $pb.PbFieldType.OE, defaultOrMaker: UndeliverableFirstGenEvent_DocumentChangeType.DOCUMENT_CHANGE_TYPE_UNSPECIFIED, valueOf: UndeliverableFirstGenEvent_DocumentChangeType.valueOf, enumValues: UndeliverableFirstGenEvent_DocumentChangeType.values)
+    ..e<UndeliverableFirstGenEvent_DocumentChangeType>(
+        4, _omitFieldNames ? '' : 'documentChangeType', $pb.PbFieldType.OE,
+        defaultOrMaker: UndeliverableFirstGenEvent_DocumentChangeType
+            .DOCUMENT_CHANGE_TYPE_UNSPECIFIED,
+        valueOf: UndeliverableFirstGenEvent_DocumentChangeType.valueOf,
+        enumValues: UndeliverableFirstGenEvent_DocumentChangeType.values)
     ..pPS(5, _omitFieldNames ? '' : 'functionName')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'triggeredTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'triggeredTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UndeliverableFirstGenEvent clone() => UndeliverableFirstGenEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UndeliverableFirstGenEvent copyWith(void Function(UndeliverableFirstGenEvent) updates) => super.copyWith((message) => updates(message as UndeliverableFirstGenEvent)) as UndeliverableFirstGenEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UndeliverableFirstGenEvent clone() =>
+      UndeliverableFirstGenEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UndeliverableFirstGenEvent copyWith(
+          void Function(UndeliverableFirstGenEvent) updates) =>
+      super.copyWith(
+              (message) => updates(message as UndeliverableFirstGenEvent))
+          as UndeliverableFirstGenEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UndeliverableFirstGenEvent create() => UndeliverableFirstGenEvent._();
   UndeliverableFirstGenEvent createEmptyInstance() => create();
-  static $pb.PbList<UndeliverableFirstGenEvent> createRepeated() => $pb.PbList<UndeliverableFirstGenEvent>();
+  static $pb.PbList<UndeliverableFirstGenEvent> createRepeated() =>
+      $pb.PbList<UndeliverableFirstGenEvent>();
   @$core.pragma('dart2js:noInline')
-  static UndeliverableFirstGenEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UndeliverableFirstGenEvent>(create);
+  static UndeliverableFirstGenEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UndeliverableFirstGenEvent>(create);
   static UndeliverableFirstGenEvent? _defaultInstance;
 
   /// Error message for events being undeliverable.
   @$pb.TagNumber(1)
   $core.String get message => $_getSZ(0);
   @$pb.TagNumber(1)
-  set message($core.String v) { $_setString(0, v); }
+  set message($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
@@ -100,7 +125,10 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   UndeliverableFirstGenEvent_Reason get reason => $_getN(1);
   @$pb.TagNumber(2)
-  set reason(UndeliverableFirstGenEvent_Reason v) { setField(2, v); }
+  set reason(UndeliverableFirstGenEvent_Reason v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReason() => $_has(1);
   @$pb.TagNumber(2)
@@ -111,7 +139,10 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get documentName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set documentName($core.String v) { $_setString(2, v); }
+  set documentName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDocumentName() => $_has(2);
   @$pb.TagNumber(3)
@@ -119,9 +150,13 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
 
   /// The type of the document change.
   @$pb.TagNumber(4)
-  UndeliverableFirstGenEvent_DocumentChangeType get documentChangeType => $_getN(3);
+  UndeliverableFirstGenEvent_DocumentChangeType get documentChangeType =>
+      $_getN(3);
   @$pb.TagNumber(4)
-  set documentChangeType(UndeliverableFirstGenEvent_DocumentChangeType v) { setField(4, v); }
+  set documentChangeType(UndeliverableFirstGenEvent_DocumentChangeType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDocumentChangeType() => $_has(3);
   @$pb.TagNumber(4)
@@ -135,7 +170,10 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get triggeredTime => $_getN(5);
   @$pb.TagNumber(6)
-  set triggeredTime($302.Timestamp v) { setField(6, v); }
+  set triggeredTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTriggeredTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -144,6 +182,6 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
   $302.Timestamp ensureTriggeredTime() => $_ensure(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

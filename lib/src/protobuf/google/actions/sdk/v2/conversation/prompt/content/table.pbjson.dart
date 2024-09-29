@@ -19,10 +19,38 @@ const Table$json = {
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '10': 'subtitle'},
-    {'1': 'image', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Image', '10': 'image'},
-    {'1': 'columns', '3': 5, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.TableColumn', '10': 'columns'},
-    {'1': 'rows', '3': 6, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.TableRow', '10': 'rows'},
-    {'1': 'button', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Link', '10': 'button'},
+    {
+      '1': 'image',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Image',
+      '10': 'image'
+    },
+    {
+      '1': 'columns',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.TableColumn',
+      '10': 'columns'
+    },
+    {
+      '1': 'rows',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.TableRow',
+      '10': 'rows'
+    },
+    {
+      '1': 'button',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Link',
+      '10': 'button'
+    },
   ],
 };
 
@@ -40,7 +68,15 @@ const TableColumn$json = {
   '1': 'TableColumn',
   '2': [
     {'1': 'header', '3': 1, '4': 1, '5': 9, '10': 'header'},
-    {'1': 'align', '3': 2, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.conversation.TableColumn.HorizontalAlignment', '10': 'align'},
+    {
+      '1': 'align',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.actions.sdk.v2.conversation.TableColumn.HorizontalAlignment',
+      '10': 'align'
+    },
   ],
   '4': [TableColumn_HorizontalAlignment$json],
 };
@@ -72,14 +108,21 @@ const TableCell$json = {
 };
 
 /// Descriptor for `TableCell`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List tableCellDescriptor = $convert.base64Decode(
-    'CglUYWJsZUNlbGwSEgoEdGV4dBgBIAEoCVIEdGV4dA==');
+final $typed_data.Uint8List tableCellDescriptor =
+    $convert.base64Decode('CglUYWJsZUNlbGwSEgoEdGV4dBgBIAEoCVIEdGV4dA==');
 
 @$core.Deprecated('Use tableRowDescriptor instead')
 const TableRow$json = {
   '1': 'TableRow',
   '2': [
-    {'1': 'cells', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.TableCell', '10': 'cells'},
+    {
+      '1': 'cells',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.TableCell',
+      '10': 'cells'
+    },
     {'1': 'divider', '3': 2, '4': 1, '5': 8, '10': 'divider'},
   ],
 };
@@ -88,4 +131,3 @@ const TableRow$json = {
 final $typed_data.Uint8List tableRowDescriptor = $convert.base64Decode(
     'CghUYWJsZVJvdxJDCgVjZWxscxgBIAMoCzItLmdvb2dsZS5hY3Rpb25zLnNkay52Mi5jb252ZX'
     'JzYXRpb24uVGFibGVDZWxsUgVjZWxscxIYCgdkaXZpZGVyGAIgASgIUgdkaXZpZGVy');
-

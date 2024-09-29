@@ -41,36 +41,55 @@ class ContextualAddOnMarkup_Card_CardHeader extends $pb.GeneratedMessage {
     return $result;
   }
   ContextualAddOnMarkup_Card_CardHeader._() : super();
-  factory ContextualAddOnMarkup_Card_CardHeader.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ContextualAddOnMarkup_Card_CardHeader.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ContextualAddOnMarkup_Card_CardHeader.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ContextualAddOnMarkup_Card_CardHeader.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.CardHeader', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.CardHeader',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..e<ContextualAddOnMarkup_Card_CardHeader_ImageStyle>(3, _omitFieldNames ? '' : 'imageStyle', $pb.PbFieldType.OE, defaultOrMaker: ContextualAddOnMarkup_Card_CardHeader_ImageStyle.IMAGE_STYLE_UNSPECIFIED, valueOf: ContextualAddOnMarkup_Card_CardHeader_ImageStyle.valueOf, enumValues: ContextualAddOnMarkup_Card_CardHeader_ImageStyle.values)
+    ..e<ContextualAddOnMarkup_Card_CardHeader_ImageStyle>(
+        3, _omitFieldNames ? '' : 'imageStyle', $pb.PbFieldType.OE,
+        defaultOrMaker: ContextualAddOnMarkup_Card_CardHeader_ImageStyle
+            .IMAGE_STYLE_UNSPECIFIED,
+        valueOf: ContextualAddOnMarkup_Card_CardHeader_ImageStyle.valueOf,
+        enumValues: ContextualAddOnMarkup_Card_CardHeader_ImageStyle.values)
     ..aOS(4, _omitFieldNames ? '' : 'imageUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card_CardHeader clone() => ContextualAddOnMarkup_Card_CardHeader()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card_CardHeader copyWith(void Function(ContextualAddOnMarkup_Card_CardHeader) updates) => super.copyWith((message) => updates(message as ContextualAddOnMarkup_Card_CardHeader)) as ContextualAddOnMarkup_Card_CardHeader;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card_CardHeader clone() =>
+      ContextualAddOnMarkup_Card_CardHeader()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card_CardHeader copyWith(
+          void Function(ContextualAddOnMarkup_Card_CardHeader) updates) =>
+      super.copyWith((message) =>
+              updates(message as ContextualAddOnMarkup_Card_CardHeader))
+          as ContextualAddOnMarkup_Card_CardHeader;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup_Card_CardHeader create() => ContextualAddOnMarkup_Card_CardHeader._();
+  static ContextualAddOnMarkup_Card_CardHeader create() =>
+      ContextualAddOnMarkup_Card_CardHeader._();
   ContextualAddOnMarkup_Card_CardHeader createEmptyInstance() => create();
-  static $pb.PbList<ContextualAddOnMarkup_Card_CardHeader> createRepeated() => $pb.PbList<ContextualAddOnMarkup_Card_CardHeader>();
+  static $pb.PbList<ContextualAddOnMarkup_Card_CardHeader> createRepeated() =>
+      $pb.PbList<ContextualAddOnMarkup_Card_CardHeader>();
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup_Card_CardHeader getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup_Card_CardHeader>(create);
+  static ContextualAddOnMarkup_Card_CardHeader getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ContextualAddOnMarkup_Card_CardHeader>(create);
   static ContextualAddOnMarkup_Card_CardHeader? _defaultInstance;
 
   /// The title must be specified. The header has a fixed height: if both a
@@ -79,7 +98,10 @@ class ContextualAddOnMarkup_Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -89,7 +111,10 @@ class ContextualAddOnMarkup_Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subtitle => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subtitle($core.String v) { $_setString(1, v); }
+  set subtitle($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubtitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -99,7 +124,10 @@ class ContextualAddOnMarkup_Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ContextualAddOnMarkup_Card_CardHeader_ImageStyle get imageStyle => $_getN(2);
   @$pb.TagNumber(3)
-  set imageStyle(ContextualAddOnMarkup_Card_CardHeader_ImageStyle v) { setField(3, v); }
+  set imageStyle(ContextualAddOnMarkup_Card_CardHeader_ImageStyle v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasImageStyle() => $_has(2);
   @$pb.TagNumber(3)
@@ -109,7 +137,10 @@ class ContextualAddOnMarkup_Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get imageUrl => $_getSZ(3);
   @$pb.TagNumber(4)
-  set imageUrl($core.String v) { $_setString(3, v); }
+  set imageUrl($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImageUrl() => $_has(3);
   @$pb.TagNumber(4)
@@ -135,34 +166,49 @@ class ContextualAddOnMarkup_Card_Section extends $pb.GeneratedMessage {
     return $result;
   }
   ContextualAddOnMarkup_Card_Section._() : super();
-  factory ContextualAddOnMarkup_Card_Section.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ContextualAddOnMarkup_Card_Section.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ContextualAddOnMarkup_Card_Section.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ContextualAddOnMarkup_Card_Section.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.Section', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.Section',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'header')
-    ..pc<$408.WidgetMarkup>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $408.WidgetMarkup.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$408.WidgetMarkup>(
+        2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM,
+        subBuilder: $408.WidgetMarkup.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card_Section clone() => ContextualAddOnMarkup_Card_Section()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card_Section copyWith(void Function(ContextualAddOnMarkup_Card_Section) updates) => super.copyWith((message) => updates(message as ContextualAddOnMarkup_Card_Section)) as ContextualAddOnMarkup_Card_Section;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card_Section clone() =>
+      ContextualAddOnMarkup_Card_Section()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card_Section copyWith(
+          void Function(ContextualAddOnMarkup_Card_Section) updates) =>
+      super.copyWith((message) =>
+              updates(message as ContextualAddOnMarkup_Card_Section))
+          as ContextualAddOnMarkup_Card_Section;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup_Card_Section create() => ContextualAddOnMarkup_Card_Section._();
+  static ContextualAddOnMarkup_Card_Section create() =>
+      ContextualAddOnMarkup_Card_Section._();
   ContextualAddOnMarkup_Card_Section createEmptyInstance() => create();
-  static $pb.PbList<ContextualAddOnMarkup_Card_Section> createRepeated() => $pb.PbList<ContextualAddOnMarkup_Card_Section>();
+  static $pb.PbList<ContextualAddOnMarkup_Card_Section> createRepeated() =>
+      $pb.PbList<ContextualAddOnMarkup_Card_Section>();
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup_Card_Section getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup_Card_Section>(create);
+  static ContextualAddOnMarkup_Card_Section getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup_Card_Section>(
+          create);
   static ContextualAddOnMarkup_Card_Section? _defaultInstance;
 
   /// The header of the section. Formatted text is
@@ -177,7 +223,10 @@ class ContextualAddOnMarkup_Card_Section extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get header => $_getSZ(0);
   @$pb.TagNumber(1)
-  set header($core.String v) { $_setString(0, v); }
+  set header($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -209,41 +258,59 @@ class ContextualAddOnMarkup_Card_CardAction extends $pb.GeneratedMessage {
     return $result;
   }
   ContextualAddOnMarkup_Card_CardAction._() : super();
-  factory ContextualAddOnMarkup_Card_CardAction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ContextualAddOnMarkup_Card_CardAction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ContextualAddOnMarkup_Card_CardAction.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ContextualAddOnMarkup_Card_CardAction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.CardAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.CardAction',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'actionLabel')
-    ..aOM<$408.WidgetMarkup_OnClick>(2, _omitFieldNames ? '' : 'onClick', subBuilder: $408.WidgetMarkup_OnClick.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$408.WidgetMarkup_OnClick>(2, _omitFieldNames ? '' : 'onClick',
+        subBuilder: $408.WidgetMarkup_OnClick.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card_CardAction clone() => ContextualAddOnMarkup_Card_CardAction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card_CardAction copyWith(void Function(ContextualAddOnMarkup_Card_CardAction) updates) => super.copyWith((message) => updates(message as ContextualAddOnMarkup_Card_CardAction)) as ContextualAddOnMarkup_Card_CardAction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card_CardAction clone() =>
+      ContextualAddOnMarkup_Card_CardAction()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card_CardAction copyWith(
+          void Function(ContextualAddOnMarkup_Card_CardAction) updates) =>
+      super.copyWith((message) =>
+              updates(message as ContextualAddOnMarkup_Card_CardAction))
+          as ContextualAddOnMarkup_Card_CardAction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup_Card_CardAction create() => ContextualAddOnMarkup_Card_CardAction._();
+  static ContextualAddOnMarkup_Card_CardAction create() =>
+      ContextualAddOnMarkup_Card_CardAction._();
   ContextualAddOnMarkup_Card_CardAction createEmptyInstance() => create();
-  static $pb.PbList<ContextualAddOnMarkup_Card_CardAction> createRepeated() => $pb.PbList<ContextualAddOnMarkup_Card_CardAction>();
+  static $pb.PbList<ContextualAddOnMarkup_Card_CardAction> createRepeated() =>
+      $pb.PbList<ContextualAddOnMarkup_Card_CardAction>();
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup_Card_CardAction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup_Card_CardAction>(create);
+  static ContextualAddOnMarkup_Card_CardAction getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ContextualAddOnMarkup_Card_CardAction>(create);
   static ContextualAddOnMarkup_Card_CardAction? _defaultInstance;
 
   /// The label used to be displayed in the action menu item.
   @$pb.TagNumber(1)
   $core.String get actionLabel => $_getSZ(0);
   @$pb.TagNumber(1)
-  set actionLabel($core.String v) { $_setString(0, v); }
+  set actionLabel($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasActionLabel() => $_has(0);
   @$pb.TagNumber(1)
@@ -253,7 +320,10 @@ class ContextualAddOnMarkup_Card_CardAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $408.WidgetMarkup_OnClick get onClick => $_getN(1);
   @$pb.TagNumber(2)
-  set onClick($408.WidgetMarkup_OnClick v) { setField(2, v); }
+  set onClick($408.WidgetMarkup_OnClick v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOnClick() => $_has(1);
   @$pb.TagNumber(2)
@@ -287,43 +357,63 @@ class ContextualAddOnMarkup_Card extends $pb.GeneratedMessage {
     return $result;
   }
   ContextualAddOnMarkup_Card._() : super();
-  factory ContextualAddOnMarkup_Card.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ContextualAddOnMarkup_Card.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ContextualAddOnMarkup_Card.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ContextualAddOnMarkup_Card.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualAddOnMarkup.Card', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<ContextualAddOnMarkup_Card_CardHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: ContextualAddOnMarkup_Card_CardHeader.create)
-    ..pc<ContextualAddOnMarkup_Card_Section>(2, _omitFieldNames ? '' : 'sections', $pb.PbFieldType.PM, subBuilder: ContextualAddOnMarkup_Card_Section.create)
-    ..pc<ContextualAddOnMarkup_Card_CardAction>(3, _omitFieldNames ? '' : 'cardActions', $pb.PbFieldType.PM, subBuilder: ContextualAddOnMarkup_Card_CardAction.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContextualAddOnMarkup.Card',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<ContextualAddOnMarkup_Card_CardHeader>(
+        1, _omitFieldNames ? '' : 'header',
+        subBuilder: ContextualAddOnMarkup_Card_CardHeader.create)
+    ..pc<ContextualAddOnMarkup_Card_Section>(
+        2, _omitFieldNames ? '' : 'sections', $pb.PbFieldType.PM,
+        subBuilder: ContextualAddOnMarkup_Card_Section.create)
+    ..pc<ContextualAddOnMarkup_Card_CardAction>(
+        3, _omitFieldNames ? '' : 'cardActions', $pb.PbFieldType.PM,
+        subBuilder: ContextualAddOnMarkup_Card_CardAction.create)
     ..aOS(4, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card clone() => ContextualAddOnMarkup_Card()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup_Card copyWith(void Function(ContextualAddOnMarkup_Card) updates) => super.copyWith((message) => updates(message as ContextualAddOnMarkup_Card)) as ContextualAddOnMarkup_Card;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card clone() =>
+      ContextualAddOnMarkup_Card()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup_Card copyWith(
+          void Function(ContextualAddOnMarkup_Card) updates) =>
+      super.copyWith(
+              (message) => updates(message as ContextualAddOnMarkup_Card))
+          as ContextualAddOnMarkup_Card;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ContextualAddOnMarkup_Card create() => ContextualAddOnMarkup_Card._();
   ContextualAddOnMarkup_Card createEmptyInstance() => create();
-  static $pb.PbList<ContextualAddOnMarkup_Card> createRepeated() => $pb.PbList<ContextualAddOnMarkup_Card>();
+  static $pb.PbList<ContextualAddOnMarkup_Card> createRepeated() =>
+      $pb.PbList<ContextualAddOnMarkup_Card>();
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup_Card getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup_Card>(create);
+  static ContextualAddOnMarkup_Card getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup_Card>(create);
   static ContextualAddOnMarkup_Card? _defaultInstance;
 
   /// The header of the card. A header usually contains a title and an image.
   @$pb.TagNumber(1)
   ContextualAddOnMarkup_Card_CardHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header(ContextualAddOnMarkup_Card_CardHeader v) { setField(1, v); }
+  set header(ContextualAddOnMarkup_Card_CardHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -337,13 +427,17 @@ class ContextualAddOnMarkup_Card extends $pb.GeneratedMessage {
 
   /// The actions of this card.
   @$pb.TagNumber(3)
-  $core.List<ContextualAddOnMarkup_Card_CardAction> get cardActions => $_getList(2);
+  $core.List<ContextualAddOnMarkup_Card_CardAction> get cardActions =>
+      $_getList(2);
 
   /// Name of the card.
   @$pb.TagNumber(4)
   $core.String get name => $_getSZ(3);
   @$pb.TagNumber(4)
-  set name($core.String v) { $_setString(3, v); }
+  set name($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
@@ -354,35 +448,45 @@ class ContextualAddOnMarkup_Card extends $pb.GeneratedMessage {
 class ContextualAddOnMarkup extends $pb.GeneratedMessage {
   factory ContextualAddOnMarkup() => create();
   ContextualAddOnMarkup._() : super();
-  factory ContextualAddOnMarkup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ContextualAddOnMarkup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ContextualAddOnMarkup.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ContextualAddOnMarkup.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualAddOnMarkup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContextualAddOnMarkup',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup clone() => ContextualAddOnMarkup()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ContextualAddOnMarkup copyWith(void Function(ContextualAddOnMarkup) updates) => super.copyWith((message) => updates(message as ContextualAddOnMarkup)) as ContextualAddOnMarkup;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup clone() =>
+      ContextualAddOnMarkup()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ContextualAddOnMarkup copyWith(
+          void Function(ContextualAddOnMarkup) updates) =>
+      super.copyWith((message) => updates(message as ContextualAddOnMarkup))
+          as ContextualAddOnMarkup;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ContextualAddOnMarkup create() => ContextualAddOnMarkup._();
   ContextualAddOnMarkup createEmptyInstance() => create();
-  static $pb.PbList<ContextualAddOnMarkup> createRepeated() => $pb.PbList<ContextualAddOnMarkup>();
+  static $pb.PbList<ContextualAddOnMarkup> createRepeated() =>
+      $pb.PbList<ContextualAddOnMarkup>();
   @$core.pragma('dart2js:noInline')
-  static ContextualAddOnMarkup getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup>(create);
+  static ContextualAddOnMarkup getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ContextualAddOnMarkup>(create);
   static ContextualAddOnMarkup? _defaultInstance;
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

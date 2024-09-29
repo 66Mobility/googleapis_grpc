@@ -30,24 +30,29 @@ class BuildNote extends $pb.GeneratedMessage {
     return $result;
   }
   BuildNote._() : super();
-  factory BuildNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BuildNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BuildNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BuildNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'builderVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BuildNote clone() => BuildNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BuildNote copyWith(void Function(BuildNote) updates) => super.copyWith((message) => updates(message as BuildNote)) as BuildNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BuildNote copyWith(void Function(BuildNote) updates) =>
+      super.copyWith((message) => updates(message as BuildNote)) as BuildNote;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -56,14 +61,18 @@ class BuildNote extends $pb.GeneratedMessage {
   BuildNote createEmptyInstance() => create();
   static $pb.PbList<BuildNote> createRepeated() => $pb.PbList<BuildNote>();
   @$core.pragma('dart2js:noInline')
-  static BuildNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildNote>(create);
+  static BuildNote getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildNote>(create);
   static BuildNote? _defaultInstance;
 
   /// Required. Immutable. Version of the builder which produced this build.
   @$pb.TagNumber(1)
   $core.String get builderVersion => $_getSZ(0);
   @$pb.TagNumber(1)
-  set builderVersion($core.String v) { $_setString(0, v); }
+  set builderVersion($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBuilderVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -98,44 +107,60 @@ class BuildOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   BuildOccurrence._() : super();
-  factory BuildOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BuildOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BuildOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BuildOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<$560.BuildProvenance>(1, _omitFieldNames ? '' : 'provenance', subBuilder: $560.BuildProvenance.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<$560.BuildProvenance>(1, _omitFieldNames ? '' : 'provenance',
+        subBuilder: $560.BuildProvenance.create)
     ..aOS(2, _omitFieldNames ? '' : 'provenanceBytes')
-    ..aOM<$557.InTotoProvenance>(3, _omitFieldNames ? '' : 'intotoProvenance', subBuilder: $557.InTotoProvenance.create)
-    ..aOM<$561.InTotoStatement>(4, _omitFieldNames ? '' : 'intotoStatement', subBuilder: $561.InTotoStatement.create)
-    ..aOM<$561.InTotoSlsaProvenanceV1>(5, _omitFieldNames ? '' : 'inTotoSlsaProvenanceV1', subBuilder: $561.InTotoSlsaProvenanceV1.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$557.InTotoProvenance>(3, _omitFieldNames ? '' : 'intotoProvenance',
+        subBuilder: $557.InTotoProvenance.create)
+    ..aOM<$561.InTotoStatement>(4, _omitFieldNames ? '' : 'intotoStatement',
+        subBuilder: $561.InTotoStatement.create)
+    ..aOM<$561.InTotoSlsaProvenanceV1>(
+        5, _omitFieldNames ? '' : 'inTotoSlsaProvenanceV1',
+        subBuilder: $561.InTotoSlsaProvenanceV1.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BuildOccurrence clone() => BuildOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BuildOccurrence copyWith(void Function(BuildOccurrence) updates) => super.copyWith((message) => updates(message as BuildOccurrence)) as BuildOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BuildOccurrence copyWith(void Function(BuildOccurrence) updates) =>
+      super.copyWith((message) => updates(message as BuildOccurrence))
+          as BuildOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BuildOccurrence create() => BuildOccurrence._();
   BuildOccurrence createEmptyInstance() => create();
-  static $pb.PbList<BuildOccurrence> createRepeated() => $pb.PbList<BuildOccurrence>();
+  static $pb.PbList<BuildOccurrence> createRepeated() =>
+      $pb.PbList<BuildOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static BuildOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildOccurrence>(create);
+  static BuildOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuildOccurrence>(create);
   static BuildOccurrence? _defaultInstance;
 
   /// The actual provenance for the build.
   @$pb.TagNumber(1)
   $560.BuildProvenance get provenance => $_getN(0);
   @$pb.TagNumber(1)
-  set provenance($560.BuildProvenance v) { setField(1, v); }
+  set provenance($560.BuildProvenance v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProvenance() => $_has(0);
   @$pb.TagNumber(1)
@@ -157,7 +182,10 @@ class BuildOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get provenanceBytes => $_getSZ(1);
   @$pb.TagNumber(2)
-  set provenanceBytes($core.String v) { $_setString(1, v); }
+  set provenanceBytes($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProvenanceBytes() => $_has(1);
   @$pb.TagNumber(2)
@@ -168,7 +196,10 @@ class BuildOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $557.InTotoProvenance get intotoProvenance => $_getN(2);
   @$pb.TagNumber(3)
-  set intotoProvenance($557.InTotoProvenance v) { setField(3, v); }
+  set intotoProvenance($557.InTotoProvenance v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasIntotoProvenance() => $_has(2);
   @$pb.TagNumber(3)
@@ -183,7 +214,10 @@ class BuildOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $561.InTotoStatement get intotoStatement => $_getN(3);
   @$pb.TagNumber(4)
-  set intotoStatement($561.InTotoStatement v) { setField(4, v); }
+  set intotoStatement($561.InTotoStatement v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasIntotoStatement() => $_has(3);
   @$pb.TagNumber(4)
@@ -198,7 +232,10 @@ class BuildOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $561.InTotoSlsaProvenanceV1 get inTotoSlsaProvenanceV1 => $_getN(4);
   @$pb.TagNumber(5)
-  set inTotoSlsaProvenanceV1($561.InTotoSlsaProvenanceV1 v) { setField(5, v); }
+  set inTotoSlsaProvenanceV1($561.InTotoSlsaProvenanceV1 v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasInTotoSlsaProvenanceV1() => $_has(4);
   @$pb.TagNumber(5)
@@ -207,6 +244,6 @@ class BuildOccurrence extends $pb.GeneratedMessage {
   $561.InTotoSlsaProvenanceV1 ensureInTotoSlsaProvenanceV1() => $_ensure(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

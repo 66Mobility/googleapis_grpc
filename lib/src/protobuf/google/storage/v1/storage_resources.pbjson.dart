@@ -17,30 +17,141 @@ import 'dart:typed_data' as $typed_data;
 const Bucket$json = {
   '1': 'Bucket',
   '2': [
-    {'1': 'acl', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v1.BucketAccessControl', '10': 'acl'},
-    {'1': 'default_object_acl', '3': 2, '4': 3, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'defaultObjectAcl'},
-    {'1': 'lifecycle', '3': 3, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Lifecycle', '10': 'lifecycle'},
-    {'1': 'time_created', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeCreated'},
+    {
+      '1': 'acl',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.BucketAccessControl',
+      '10': 'acl'
+    },
+    {
+      '1': 'default_object_acl',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'defaultObjectAcl'
+    },
+    {
+      '1': 'lifecycle',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Lifecycle',
+      '10': 'lifecycle'
+    },
+    {
+      '1': 'time_created',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeCreated'
+    },
     {'1': 'id', '3': 5, '4': 1, '5': 9, '10': 'id'},
     {'1': 'name', '3': 6, '4': 1, '5': 9, '10': 'name'},
     {'1': 'project_number', '3': 7, '4': 1, '5': 3, '10': 'projectNumber'},
     {'1': 'metageneration', '3': 8, '4': 1, '5': 3, '10': 'metageneration'},
-    {'1': 'cors', '3': 9, '4': 3, '5': 11, '6': '.google.storage.v1.Bucket.Cors', '10': 'cors'},
+    {
+      '1': 'cors',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Cors',
+      '10': 'cors'
+    },
     {'1': 'location', '3': 10, '4': 1, '5': 9, '10': 'location'},
     {'1': 'storage_class', '3': 11, '4': 1, '5': 9, '10': 'storageClass'},
     {'1': 'etag', '3': 12, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'updated', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updated'},
-    {'1': 'default_event_based_hold', '3': 14, '4': 1, '5': 8, '10': 'defaultEventBasedHold'},
-    {'1': 'labels', '3': 15, '4': 3, '5': 11, '6': '.google.storage.v1.Bucket.LabelsEntry', '10': 'labels'},
-    {'1': 'website', '3': 16, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Website', '10': 'website'},
-    {'1': 'versioning', '3': 17, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Versioning', '10': 'versioning'},
-    {'1': 'logging', '3': 18, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Logging', '10': 'logging'},
-    {'1': 'owner', '3': 19, '4': 1, '5': 11, '6': '.google.storage.v1.Owner', '10': 'owner'},
-    {'1': 'encryption', '3': 20, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Encryption', '10': 'encryption'},
-    {'1': 'billing', '3': 21, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Billing', '10': 'billing'},
-    {'1': 'retention_policy', '3': 22, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.RetentionPolicy', '10': 'retentionPolicy'},
+    {
+      '1': 'updated',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updated'
+    },
+    {
+      '1': 'default_event_based_hold',
+      '3': 14,
+      '4': 1,
+      '5': 8,
+      '10': 'defaultEventBasedHold'
+    },
+    {
+      '1': 'labels',
+      '3': 15,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'website',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Website',
+      '10': 'website'
+    },
+    {
+      '1': 'versioning',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Versioning',
+      '10': 'versioning'
+    },
+    {
+      '1': 'logging',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Logging',
+      '10': 'logging'
+    },
+    {
+      '1': 'owner',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Owner',
+      '10': 'owner'
+    },
+    {
+      '1': 'encryption',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Encryption',
+      '10': 'encryption'
+    },
+    {
+      '1': 'billing',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Billing',
+      '10': 'billing'
+    },
+    {
+      '1': 'retention_policy',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.RetentionPolicy',
+      '10': 'retentionPolicy'
+    },
     {'1': 'location_type', '3': 23, '4': 1, '5': 9, '10': 'locationType'},
-    {'1': 'iam_configuration', '3': 24, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.IamConfiguration', '10': 'iamConfiguration'},
+    {
+      '1': 'iam_configuration',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.IamConfiguration',
+      '10': 'iamConfiguration'
+    },
     {
       '1': 'zone_affinity',
       '3': 25,
@@ -50,9 +161,28 @@ const Bucket$json = {
       '10': 'zoneAffinity',
     },
     {'1': 'satisfies_pzs', '3': 26, '4': 1, '5': 8, '10': 'satisfiesPzs'},
-    {'1': 'autoclass', '3': 28, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Autoclass', '10': 'autoclass'},
+    {
+      '1': 'autoclass',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Autoclass',
+      '10': 'autoclass'
+    },
   ],
-  '3': [Bucket_Billing$json, Bucket_Cors$json, Bucket_Encryption$json, Bucket_IamConfiguration$json, Bucket_Lifecycle$json, Bucket_Logging$json, Bucket_RetentionPolicy$json, Bucket_Versioning$json, Bucket_Website$json, Bucket_Autoclass$json, Bucket_LabelsEntry$json],
+  '3': [
+    Bucket_Billing$json,
+    Bucket_Cors$json,
+    Bucket_Encryption$json,
+    Bucket_IamConfiguration$json,
+    Bucket_Lifecycle$json,
+    Bucket_Logging$json,
+    Bucket_RetentionPolicy$json,
+    Bucket_Versioning$json,
+    Bucket_Website$json,
+    Bucket_Autoclass$json,
+    Bucket_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use bucketDescriptor instead')
@@ -78,7 +208,13 @@ const Bucket_Cors$json = {
 const Bucket_Encryption$json = {
   '1': 'Encryption',
   '2': [
-    {'1': 'default_kms_key_name', '3': 1, '4': 1, '5': 9, '10': 'defaultKmsKeyName'},
+    {
+      '1': 'default_kms_key_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'defaultKmsKeyName'
+    },
   ],
 };
 
@@ -86,8 +222,23 @@ const Bucket_Encryption$json = {
 const Bucket_IamConfiguration$json = {
   '1': 'IamConfiguration',
   '2': [
-    {'1': 'uniform_bucket_level_access', '3': 1, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.IamConfiguration.UniformBucketLevelAccess', '10': 'uniformBucketLevelAccess'},
-    {'1': 'public_access_prevention', '3': 2, '4': 1, '5': 14, '6': '.google.storage.v1.Bucket.IamConfiguration.PublicAccessPrevention', '10': 'publicAccessPrevention'},
+    {
+      '1': 'uniform_bucket_level_access',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.storage.v1.Bucket.IamConfiguration.UniformBucketLevelAccess',
+      '10': 'uniformBucketLevelAccess'
+    },
+    {
+      '1': 'public_access_prevention',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storage.v1.Bucket.IamConfiguration.PublicAccessPrevention',
+      '10': 'publicAccessPrevention'
+    },
   ],
   '3': [Bucket_IamConfiguration_UniformBucketLevelAccess$json],
   '4': [Bucket_IamConfiguration_PublicAccessPrevention$json],
@@ -98,7 +249,14 @@ const Bucket_IamConfiguration_UniformBucketLevelAccess$json = {
   '1': 'UniformBucketLevelAccess',
   '2': [
     {'1': 'enabled', '3': 1, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'locked_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lockedTime'},
+    {
+      '1': 'locked_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lockedTime'
+    },
   ],
 };
 
@@ -116,7 +274,14 @@ const Bucket_IamConfiguration_PublicAccessPrevention$json = {
 const Bucket_Lifecycle$json = {
   '1': 'Lifecycle',
   '2': [
-    {'1': 'rule', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v1.Bucket.Lifecycle.Rule', '10': 'rule'},
+    {
+      '1': 'rule',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Lifecycle.Rule',
+      '10': 'rule'
+    },
   ],
   '3': [Bucket_Lifecycle_Rule$json],
 };
@@ -125,10 +290,27 @@ const Bucket_Lifecycle$json = {
 const Bucket_Lifecycle_Rule$json = {
   '1': 'Rule',
   '2': [
-    {'1': 'action', '3': 1, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Lifecycle.Rule.Action', '10': 'action'},
-    {'1': 'condition', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v1.Bucket.Lifecycle.Rule.Condition', '10': 'condition'},
+    {
+      '1': 'action',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Lifecycle.Rule.Action',
+      '10': 'action'
+    },
+    {
+      '1': 'condition',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket.Lifecycle.Rule.Condition',
+      '10': 'condition'
+    },
   ],
-  '3': [Bucket_Lifecycle_Rule_Action$json, Bucket_Lifecycle_Rule_Condition$json],
+  '3': [
+    Bucket_Lifecycle_Rule_Action$json,
+    Bucket_Lifecycle_Rule_Condition$json
+  ],
 };
 
 @$core.Deprecated('Use bucketDescriptor instead')
@@ -145,15 +327,67 @@ const Bucket_Lifecycle_Rule_Condition$json = {
   '1': 'Condition',
   '2': [
     {'1': 'age', '3': 1, '4': 1, '5': 5, '10': 'age'},
-    {'1': 'created_before', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdBefore'},
-    {'1': 'is_live', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'isLive'},
-    {'1': 'num_newer_versions', '3': 4, '4': 1, '5': 5, '10': 'numNewerVersions'},
-    {'1': 'matches_storage_class', '3': 5, '4': 3, '5': 9, '10': 'matchesStorageClass'},
+    {
+      '1': 'created_before',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createdBefore'
+    },
+    {
+      '1': 'is_live',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'isLive'
+    },
+    {
+      '1': 'num_newer_versions',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'numNewerVersions'
+    },
+    {
+      '1': 'matches_storage_class',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'matchesStorageClass'
+    },
     {'1': 'matches_pattern', '3': 6, '4': 1, '5': 9, '10': 'matchesPattern'},
-    {'1': 'days_since_custom_time', '3': 7, '4': 1, '5': 5, '10': 'daysSinceCustomTime'},
-    {'1': 'custom_time_before', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'customTimeBefore'},
-    {'1': 'days_since_noncurrent_time', '3': 9, '4': 1, '5': 5, '10': 'daysSinceNoncurrentTime'},
-    {'1': 'noncurrent_time_before', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'noncurrentTimeBefore'},
+    {
+      '1': 'days_since_custom_time',
+      '3': 7,
+      '4': 1,
+      '5': 5,
+      '10': 'daysSinceCustomTime'
+    },
+    {
+      '1': 'custom_time_before',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'customTimeBefore'
+    },
+    {
+      '1': 'days_since_noncurrent_time',
+      '3': 9,
+      '4': 1,
+      '5': 5,
+      '10': 'daysSinceNoncurrentTime'
+    },
+    {
+      '1': 'noncurrent_time_before',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'noncurrentTimeBefore'
+    },
     {'1': 'matches_prefix', '3': 11, '4': 3, '5': 9, '10': 'matchesPrefix'},
     {'1': 'matches_suffix', '3': 12, '4': 3, '5': 9, '10': 'matchesSuffix'},
   ],
@@ -172,7 +406,14 @@ const Bucket_Logging$json = {
 const Bucket_RetentionPolicy$json = {
   '1': 'RetentionPolicy',
   '2': [
-    {'1': 'effective_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'effectiveTime'},
+    {
+      '1': 'effective_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'effectiveTime'
+    },
     {'1': 'is_locked', '3': 2, '4': 1, '5': 8, '10': 'isLocked'},
     {'1': 'retention_period', '3': 3, '4': 1, '5': 3, '10': 'retentionPeriod'},
   ],
@@ -200,7 +441,14 @@ const Bucket_Autoclass$json = {
   '1': 'Autoclass',
   '2': [
     {'1': 'enabled', '3': 1, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'toggle_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'toggleTime'},
+    {
+      '1': 'toggle_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'toggleTime'
+    },
   ],
 };
 
@@ -295,7 +543,14 @@ const BucketAccessControl$json = {
     {'1': 'entity_id', '3': 7, '4': 1, '5': 9, '10': 'entityId'},
     {'1': 'email', '3': 8, '4': 1, '5': 9, '10': 'email'},
     {'1': 'domain', '3': 9, '4': 1, '5': 9, '10': 'domain'},
-    {'1': 'project_team', '3': 10, '4': 1, '5': 11, '6': '.google.storage.v1.ProjectTeam', '10': 'projectTeam'},
+    {
+      '1': 'project_team',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ProjectTeam',
+      '10': 'projectTeam'
+    },
   ],
 };
 
@@ -311,20 +566,35 @@ final $typed_data.Uint8List bucketAccessControlDescriptor = $convert.base64Decod
 const ListBucketAccessControlsResponse$json = {
   '1': 'ListBucketAccessControlsResponse',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v1.BucketAccessControl', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.BucketAccessControl',
+      '10': 'items'
+    },
   ],
 };
 
 /// Descriptor for `ListBucketAccessControlsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listBucketAccessControlsResponseDescriptor = $convert.base64Decode(
-    'CiBMaXN0QnVja2V0QWNjZXNzQ29udHJvbHNSZXNwb25zZRI8CgVpdGVtcxgBIAMoCzImLmdvb2'
-    'dsZS5zdG9yYWdlLnYxLkJ1Y2tldEFjY2Vzc0NvbnRyb2xSBWl0ZW1z');
+final $typed_data.Uint8List listBucketAccessControlsResponseDescriptor =
+    $convert.base64Decode(
+        'CiBMaXN0QnVja2V0QWNjZXNzQ29udHJvbHNSZXNwb25zZRI8CgVpdGVtcxgBIAMoCzImLmdvb2'
+        'dsZS5zdG9yYWdlLnYxLkJ1Y2tldEFjY2Vzc0NvbnRyb2xSBWl0ZW1z');
 
 @$core.Deprecated('Use listBucketsResponseDescriptor instead')
 const ListBucketsResponse$json = {
   '1': 'ListBucketsResponse',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v1.Bucket', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Bucket',
+      '10': 'items'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -342,10 +612,24 @@ const Channel$json = {
     {'1': 'resource_id', '3': 2, '4': 1, '5': 9, '10': 'resourceId'},
     {'1': 'resource_uri', '3': 3, '4': 1, '5': 9, '10': 'resourceUri'},
     {'1': 'token', '3': 4, '4': 1, '5': 9, '10': 'token'},
-    {'1': 'expiration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiration'},
+    {
+      '1': 'expiration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiration'
+    },
     {'1': 'type', '3': 6, '4': 1, '5': 9, '10': 'type'},
     {'1': 'address', '3': 7, '4': 1, '5': 9, '10': 'address'},
-    {'1': 'params', '3': 8, '4': 3, '5': 11, '6': '.google.storage.v1.Channel.ParamsEntry', '10': 'params'},
+    {
+      '1': 'params',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Channel.ParamsEntry',
+      '10': 'params'
+    },
     {'1': 'payload', '3': 9, '4': 1, '5': 8, '10': 'payload'},
   ],
   '3': [Channel_ParamsEntry$json],
@@ -375,7 +659,14 @@ final $typed_data.Uint8List channelDescriptor = $convert.base64Decode(
 const ListChannelsResponse$json = {
   '1': 'ListChannelsResponse',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v1.ListChannelsResponse.Items', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.ListChannelsResponse.Items',
+      '10': 'items'
+    },
   ],
   '3': [ListChannelsResponse_Items$json],
 };
@@ -388,7 +679,14 @@ const ListChannelsResponse_Items$json = {
     {'1': 'resource_id', '3': 2, '4': 1, '5': 9, '10': 'resourceId'},
     {'1': 'push_url', '3': 3, '4': 1, '5': 9, '10': 'pushUrl'},
     {'1': 'subscriber_email', '3': 4, '4': 1, '5': 9, '10': 'subscriberEmail'},
-    {'1': 'creation_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'creationTime'},
+    {
+      '1': 'creation_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'creationTime'
+    },
   ],
 };
 
@@ -406,7 +704,14 @@ const ChecksummedData$json = {
   '1': 'ChecksummedData',
   '2': [
     {'1': 'content', '3': 1, '4': 1, '5': 12, '10': 'content'},
-    {'1': 'crc32c', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.UInt32Value', '10': 'crc32c'},
+    {
+      '1': 'crc32c',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.UInt32Value',
+      '10': 'crc32c'
+    },
   ],
 };
 
@@ -419,7 +724,14 @@ final $typed_data.Uint8List checksummedDataDescriptor = $convert.base64Decode(
 const ObjectChecksums$json = {
   '1': 'ObjectChecksums',
   '2': [
-    {'1': 'crc32c', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.UInt32Value', '10': 'crc32c'},
+    {
+      '1': 'crc32c',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.UInt32Value',
+      '10': 'crc32c'
+    },
     {'1': 'md5_hash', '3': 2, '4': 1, '5': 9, '10': 'md5Hash'},
   ],
 };
@@ -432,7 +744,11 @@ final $typed_data.Uint8List objectChecksumsDescriptor = $convert.base64Decode(
 @$core.Deprecated('Use commonEnumsDescriptor instead')
 const CommonEnums$json = {
   '1': 'CommonEnums',
-  '4': [CommonEnums_Projection$json, CommonEnums_PredefinedBucketAcl$json, CommonEnums_PredefinedObjectAcl$json],
+  '4': [
+    CommonEnums_Projection$json,
+    CommonEnums_PredefinedBucketAcl$json,
+    CommonEnums_PredefinedObjectAcl$json
+  ],
 };
 
 @$core.Deprecated('Use commonEnumsDescriptor instead')
@@ -507,10 +823,30 @@ const HmacKeyMetadata$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'access_id', '3': 2, '4': 1, '5': 9, '10': 'accessId'},
     {'1': 'project_id', '3': 3, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'service_account_email', '3': 4, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
+    {
+      '1': 'service_account_email',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
     {'1': 'state', '3': 5, '4': 1, '5': 9, '10': 'state'},
-    {'1': 'time_created', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeCreated'},
-    {'1': 'updated', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updated'},
+    {
+      '1': 'time_created',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeCreated'
+    },
+    {
+      '1': 'updated',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updated'
+    },
     {'1': 'etag', '3': 8, '4': 1, '5': 9, '10': 'etag'},
   ],
 };
@@ -530,9 +866,22 @@ const Notification$json = {
   '2': [
     {'1': 'topic', '3': 1, '4': 1, '5': 9, '10': 'topic'},
     {'1': 'event_types', '3': 2, '4': 3, '5': 9, '10': 'eventTypes'},
-    {'1': 'custom_attributes', '3': 3, '4': 3, '5': 11, '6': '.google.storage.v1.Notification.CustomAttributesEntry', '10': 'customAttributes'},
+    {
+      '1': 'custom_attributes',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Notification.CustomAttributesEntry',
+      '10': 'customAttributes'
+    },
     {'1': 'etag', '3': 4, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'object_name_prefix', '3': 5, '4': 1, '5': 9, '10': 'objectNamePrefix'},
+    {
+      '1': 'object_name_prefix',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'objectNamePrefix'
+    },
     {'1': 'payload_format', '3': 6, '4': 1, '5': 9, '10': 'payloadFormat'},
     {'1': 'id', '3': 7, '4': 1, '5': 9, '10': 'id'},
   ],
@@ -563,48 +912,146 @@ final $typed_data.Uint8List notificationDescriptor = $convert.base64Decode(
 const ListNotificationsResponse$json = {
   '1': 'ListNotificationsResponse',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v1.Notification', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Notification',
+      '10': 'items'
+    },
   ],
 };
 
 /// Descriptor for `ListNotificationsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationsResponseDescriptor = $convert.base64Decode(
-    'ChlMaXN0Tm90aWZpY2F0aW9uc1Jlc3BvbnNlEjUKBWl0ZW1zGAEgAygLMh8uZ29vZ2xlLnN0b3'
-    'JhZ2UudjEuTm90aWZpY2F0aW9uUgVpdGVtcw==');
+final $typed_data.Uint8List listNotificationsResponseDescriptor =
+    $convert.base64Decode(
+        'ChlMaXN0Tm90aWZpY2F0aW9uc1Jlc3BvbnNlEjUKBWl0ZW1zGAEgAygLMh8uZ29vZ2xlLnN0b3'
+        'JhZ2UudjEuTm90aWZpY2F0aW9uUgVpdGVtcw==');
 
 @$core.Deprecated('Use objectDescriptor instead')
 const Object$json = {
   '1': 'Object',
   '2': [
     {'1': 'content_encoding', '3': 1, '4': 1, '5': 9, '10': 'contentEncoding'},
-    {'1': 'content_disposition', '3': 2, '4': 1, '5': 9, '10': 'contentDisposition'},
+    {
+      '1': 'content_disposition',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'contentDisposition'
+    },
     {'1': 'cache_control', '3': 3, '4': 1, '5': 9, '10': 'cacheControl'},
-    {'1': 'acl', '3': 4, '4': 3, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'acl'},
+    {
+      '1': 'acl',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'acl'
+    },
     {'1': 'content_language', '3': 5, '4': 1, '5': 9, '10': 'contentLanguage'},
     {'1': 'metageneration', '3': 6, '4': 1, '5': 3, '10': 'metageneration'},
-    {'1': 'time_deleted', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeDeleted'},
+    {
+      '1': 'time_deleted',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeDeleted'
+    },
     {'1': 'content_type', '3': 8, '4': 1, '5': 9, '10': 'contentType'},
     {'1': 'size', '3': 9, '4': 1, '5': 3, '10': 'size'},
-    {'1': 'time_created', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeCreated'},
-    {'1': 'crc32c', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.UInt32Value', '10': 'crc32c'},
+    {
+      '1': 'time_created',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeCreated'
+    },
+    {
+      '1': 'crc32c',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.UInt32Value',
+      '10': 'crc32c'
+    },
     {'1': 'component_count', '3': 12, '4': 1, '5': 5, '10': 'componentCount'},
     {'1': 'md5_hash', '3': 13, '4': 1, '5': 9, '10': 'md5Hash'},
     {'1': 'etag', '3': 14, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'updated', '3': 15, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updated'},
+    {
+      '1': 'updated',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updated'
+    },
     {'1': 'storage_class', '3': 16, '4': 1, '5': 9, '10': 'storageClass'},
     {'1': 'kms_key_name', '3': 17, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'time_storage_class_updated', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeStorageClassUpdated'},
+    {
+      '1': 'time_storage_class_updated',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeStorageClassUpdated'
+    },
     {'1': 'temporary_hold', '3': 19, '4': 1, '5': 8, '10': 'temporaryHold'},
-    {'1': 'retention_expiration_time', '3': 20, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'retentionExpirationTime'},
-    {'1': 'metadata', '3': 21, '4': 3, '5': 11, '6': '.google.storage.v1.Object.MetadataEntry', '10': 'metadata'},
-    {'1': 'event_based_hold', '3': 29, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'eventBasedHold'},
+    {
+      '1': 'retention_expiration_time',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'retentionExpirationTime'
+    },
+    {
+      '1': 'metadata',
+      '3': 21,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Object.MetadataEntry',
+      '10': 'metadata'
+    },
+    {
+      '1': 'event_based_hold',
+      '3': 29,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'eventBasedHold'
+    },
     {'1': 'name', '3': 23, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 24, '4': 1, '5': 9, '10': 'id'},
     {'1': 'bucket', '3': 25, '4': 1, '5': 9, '10': 'bucket'},
     {'1': 'generation', '3': 26, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'owner', '3': 27, '4': 1, '5': 11, '6': '.google.storage.v1.Owner', '10': 'owner'},
-    {'1': 'customer_encryption', '3': 28, '4': 1, '5': 11, '6': '.google.storage.v1.Object.CustomerEncryption', '10': 'customerEncryption'},
-    {'1': 'custom_time', '3': 30, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'customTime'},
+    {
+      '1': 'owner',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Owner',
+      '10': 'owner'
+    },
+    {
+      '1': 'customer_encryption',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.Object.CustomerEncryption',
+      '10': 'customerEncryption'
+    },
+    {
+      '1': 'custom_time',
+      '3': 30,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'customTime'
+    },
   ],
   '3': [Object_CustomerEncryption$json, Object_MetadataEntry$json],
 };
@@ -613,7 +1060,13 @@ const Object$json = {
 const Object_CustomerEncryption$json = {
   '1': 'CustomerEncryption',
   '2': [
-    {'1': 'encryption_algorithm', '3': 1, '4': 1, '5': 9, '10': 'encryptionAlgorithm'},
+    {
+      '1': 'encryption_algorithm',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'encryptionAlgorithm'
+    },
     {'1': 'key_sha256', '3': 2, '4': 1, '5': 9, '10': 'keySha256'},
   ],
 };
@@ -673,7 +1126,14 @@ const ObjectAccessControl$json = {
     {'1': 'entity_id', '3': 8, '4': 1, '5': 9, '10': 'entityId'},
     {'1': 'email', '3': 9, '4': 1, '5': 9, '10': 'email'},
     {'1': 'domain', '3': 10, '4': 1, '5': 9, '10': 'domain'},
-    {'1': 'project_team', '3': 11, '4': 1, '5': 11, '6': '.google.storage.v1.ProjectTeam', '10': 'projectTeam'},
+    {
+      '1': 'project_team',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v1.ProjectTeam',
+      '10': 'projectTeam'
+    },
   ],
 };
 
@@ -690,21 +1150,36 @@ final $typed_data.Uint8List objectAccessControlDescriptor = $convert.base64Decod
 const ListObjectAccessControlsResponse$json = {
   '1': 'ListObjectAccessControlsResponse',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v1.ObjectAccessControl', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.ObjectAccessControl',
+      '10': 'items'
+    },
   ],
 };
 
 /// Descriptor for `ListObjectAccessControlsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listObjectAccessControlsResponseDescriptor = $convert.base64Decode(
-    'CiBMaXN0T2JqZWN0QWNjZXNzQ29udHJvbHNSZXNwb25zZRI8CgVpdGVtcxgBIAMoCzImLmdvb2'
-    'dsZS5zdG9yYWdlLnYxLk9iamVjdEFjY2Vzc0NvbnRyb2xSBWl0ZW1z');
+final $typed_data.Uint8List listObjectAccessControlsResponseDescriptor =
+    $convert.base64Decode(
+        'CiBMaXN0T2JqZWN0QWNjZXNzQ29udHJvbHNSZXNwb25zZRI8CgVpdGVtcxgBIAMoCzImLmdvb2'
+        'dsZS5zdG9yYWdlLnYxLk9iamVjdEFjY2Vzc0NvbnRyb2xSBWl0ZW1z');
 
 @$core.Deprecated('Use listObjectsResponseDescriptor instead')
 const ListObjectsResponse$json = {
   '1': 'ListObjectsResponse',
   '2': [
     {'1': 'prefixes', '3': 1, '4': 3, '5': 9, '10': 'prefixes'},
-    {'1': 'items', '3': 2, '4': 3, '5': 11, '6': '.google.storage.v1.Object', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v1.Object',
+      '10': 'items'
+    },
     {'1': 'next_page_token', '3': 3, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -754,4 +1229,3 @@ const Owner$json = {
 final $typed_data.Uint8List ownerDescriptor = $convert.base64Decode(
     'CgVPd25lchIWCgZlbnRpdHkYASABKAlSBmVudGl0eRIbCgllbnRpdHlfaWQYAiABKAlSCGVudG'
     'l0eUlk');
-

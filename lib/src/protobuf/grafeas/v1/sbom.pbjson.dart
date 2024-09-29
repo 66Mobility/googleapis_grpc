@@ -31,9 +31,23 @@ final $typed_data.Uint8List sBOMReferenceNoteDescriptor = $convert.base64Decode(
 const SBOMReferenceOccurrence$json = {
   '1': 'SBOMReferenceOccurrence',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.SbomReferenceIntotoPayload', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SbomReferenceIntotoPayload',
+      '10': 'payload'
+    },
     {'1': 'payload_type', '3': 2, '4': 1, '5': 9, '10': 'payloadType'},
-    {'1': 'signatures', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.EnvelopeSignature', '10': 'signatures'},
+    {
+      '1': 'signatures',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.EnvelopeSignature',
+      '10': 'signatures'
+    },
   ],
 };
 
@@ -50,8 +64,22 @@ const SbomReferenceIntotoPayload$json = {
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': '_type'},
     {'1': 'predicate_type', '3': 2, '4': 1, '5': 9, '10': 'predicateType'},
-    {'1': 'subject', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.Subject', '10': 'subject'},
-    {'1': 'predicate', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.SbomReferenceIntotoPredicate', '10': 'predicate'},
+    {
+      '1': 'subject',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Subject',
+      '10': 'subject'
+    },
+    {
+      '1': 'predicate',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SbomReferenceIntotoPredicate',
+      '10': 'predicate'
+    },
   ],
 };
 
@@ -69,7 +97,14 @@ const SbomReferenceIntotoPredicate$json = {
     {'1': 'referrer_id', '3': 1, '4': 1, '5': 9, '10': 'referrerId'},
     {'1': 'location', '3': 2, '4': 1, '5': 9, '10': 'location'},
     {'1': 'mime_type', '3': 3, '4': 1, '5': 9, '10': 'mimeType'},
-    {'1': 'digest', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.SbomReferenceIntotoPredicate.DigestEntry', '10': 'digest'},
+    {
+      '1': 'digest',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SbomReferenceIntotoPredicate.DigestEntry',
+      '10': 'digest'
+    },
   ],
   '3': [SbomReferenceIntotoPredicate_DigestEntry$json],
 };
@@ -91,4 +126,3 @@ final $typed_data.Uint8List sbomReferenceIntotoPredicateDescriptor = $convert.ba
     'CG1pbWVUeXBlEkwKBmRpZ2VzdBgEIAMoCzI0LmdyYWZlYXMudjEuU2JvbVJlZmVyZW5jZUludG'
     '90b1ByZWRpY2F0ZS5EaWdlc3RFbnRyeVIGZGlnZXN0GjkKC0RpZ2VzdEVudHJ5EhAKA2tleRgB'
     'IAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAE=');
-

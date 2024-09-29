@@ -49,44 +49,60 @@ class EntityResult extends $pb.GeneratedMessage {
     return $result;
   }
   EntityResult._() : super();
-  factory EntityResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityResult.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityResult.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$421.Entity>(1, _omitFieldNames ? '' : 'entity', subBuilder: $421.Entity.create)
-    ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityResult',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$421.Entity>(1, _omitFieldNames ? '' : 'entity',
+        subBuilder: $421.Entity.create)
+    ..a<$core.List<$core.int>>(
+        3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
     ..aInt64(4, _omitFieldNames ? '' : 'version')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntityResult clone() => EntityResult()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityResult copyWith(void Function(EntityResult) updates) => super.copyWith((message) => updates(message as EntityResult)) as EntityResult;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityResult copyWith(void Function(EntityResult) updates) =>
+      super.copyWith((message) => updates(message as EntityResult))
+          as EntityResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntityResult create() => EntityResult._();
   EntityResult createEmptyInstance() => create();
-  static $pb.PbList<EntityResult> createRepeated() => $pb.PbList<EntityResult>();
+  static $pb.PbList<EntityResult> createRepeated() =>
+      $pb.PbList<EntityResult>();
   @$core.pragma('dart2js:noInline')
-  static EntityResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityResult>(create);
+  static EntityResult getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityResult>(create);
   static EntityResult? _defaultInstance;
 
   /// The resulting entity.
   @$pb.TagNumber(1)
   $421.Entity get entity => $_getN(0);
   @$pb.TagNumber(1)
-  set entity($421.Entity v) { setField(1, v); }
+  set entity($421.Entity v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEntity() => $_has(0);
   @$pb.TagNumber(1)
@@ -99,7 +115,10 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.List<$core.int> get cursor => $_getN(1);
   @$pb.TagNumber(3)
-  set cursor($core.List<$core.int> v) { $_setBytes(1, v); }
+  set cursor($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCursor() => $_has(1);
   @$pb.TagNumber(3)
@@ -117,7 +136,10 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get version => $_getI64(2);
   @$pb.TagNumber(4)
-  set version($fixnum.Int64 v) { $_setInt64(2, v); }
+  set version($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVersion() => $_has(2);
   @$pb.TagNumber(4)
@@ -130,7 +152,10 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($302.Timestamp v) { setField(5, v); }
+  set updateTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
@@ -145,7 +170,10 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($302.Timestamp v) { setField(6, v); }
+  set createTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
@@ -198,32 +226,46 @@ class Query extends $pb.GeneratedMessage {
     return $result;
   }
   Query._() : super();
-  factory Query.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Query.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Query.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Query.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Query', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..pc<Projection>(2, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.PM, subBuilder: Projection.create)
-    ..pc<KindExpression>(3, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.PM, subBuilder: KindExpression.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Query',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..pc<Projection>(2, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.PM,
+        subBuilder: Projection.create)
+    ..pc<KindExpression>(3, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.PM,
+        subBuilder: KindExpression.create)
     ..aOM<Filter>(4, _omitFieldNames ? '' : 'filter', subBuilder: Filter.create)
-    ..pc<PropertyOrder>(5, _omitFieldNames ? '' : 'order', $pb.PbFieldType.PM, subBuilder: PropertyOrder.create)
-    ..pc<PropertyReference>(6, _omitFieldNames ? '' : 'distinctOn', $pb.PbFieldType.PM, subBuilder: PropertyReference.create)
-    ..a<$core.List<$core.int>>(7, _omitFieldNames ? '' : 'startCursor', $pb.PbFieldType.OY)
-    ..a<$core.List<$core.int>>(8, _omitFieldNames ? '' : 'endCursor', $pb.PbFieldType.OY)
+    ..pc<PropertyOrder>(5, _omitFieldNames ? '' : 'order', $pb.PbFieldType.PM,
+        subBuilder: PropertyOrder.create)
+    ..pc<PropertyReference>(
+        6, _omitFieldNames ? '' : 'distinctOn', $pb.PbFieldType.PM,
+        subBuilder: PropertyReference.create)
+    ..a<$core.List<$core.int>>(
+        7, _omitFieldNames ? '' : 'startCursor', $pb.PbFieldType.OY)
+    ..a<$core.List<$core.int>>(
+        8, _omitFieldNames ? '' : 'endCursor', $pb.PbFieldType.OY)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
-    ..aOM<$307.Int32Value>(12, _omitFieldNames ? '' : 'limit', subBuilder: $307.Int32Value.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$307.Int32Value>(12, _omitFieldNames ? '' : 'limit',
+        subBuilder: $307.Int32Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Query clone() => Query()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Query copyWith(void Function(Query) updates) => super.copyWith((message) => updates(message as Query)) as Query;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Query copyWith(void Function(Query) updates) =>
+      super.copyWith((message) => updates(message as Query)) as Query;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -232,7 +274,8 @@ class Query extends $pb.GeneratedMessage {
   Query createEmptyInstance() => create();
   static $pb.PbList<Query> createRepeated() => $pb.PbList<Query>();
   @$core.pragma('dart2js:noInline')
-  static Query getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Query>(create);
+  static Query getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Query>(create);
   static Query? _defaultInstance;
 
   /// The projection to return. Defaults to returning all properties.
@@ -248,7 +291,10 @@ class Query extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Filter get filter => $_getN(2);
   @$pb.TagNumber(4)
-  set filter(Filter v) { setField(4, v); }
+  set filter(Filter v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilter() => $_has(2);
   @$pb.TagNumber(4)
@@ -278,7 +324,10 @@ class Query extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.List<$core.int> get startCursor => $_getN(5);
   @$pb.TagNumber(7)
-  set startCursor($core.List<$core.int> v) { $_setBytes(5, v); }
+  set startCursor($core.List<$core.int> v) {
+    $_setBytes(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasStartCursor() => $_has(5);
   @$pb.TagNumber(7)
@@ -291,7 +340,10 @@ class Query extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.List<$core.int> get endCursor => $_getN(6);
   @$pb.TagNumber(8)
-  set endCursor($core.List<$core.int> v) { $_setBytes(6, v); }
+  set endCursor($core.List<$core.int> v) {
+    $_setBytes(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasEndCursor() => $_has(6);
   @$pb.TagNumber(8)
@@ -302,7 +354,10 @@ class Query extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get offset => $_getIZ(7);
   @$pb.TagNumber(10)
-  set offset($core.int v) { $_setSignedInt32(7, v); }
+  set offset($core.int v) {
+    $_setSignedInt32(7, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasOffset() => $_has(7);
   @$pb.TagNumber(10)
@@ -315,7 +370,10 @@ class Query extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $307.Int32Value get limit => $_getN(8);
   @$pb.TagNumber(12)
-  set limit($307.Int32Value v) { setField(12, v); }
+  set limit($307.Int32Value v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasLimit() => $_has(8);
   @$pb.TagNumber(12)
@@ -339,33 +397,48 @@ class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
     return $result;
   }
   AggregationQuery_Aggregation_Count._() : super();
-  factory AggregationQuery_Aggregation_Count.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregationQuery_Aggregation_Count.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregationQuery_Aggregation_Count.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregationQuery_Aggregation_Count.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationQuery.Aggregation.Count', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$307.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $307.Int64Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregationQuery.Aggregation.Count',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$307.Int64Value>(1, _omitFieldNames ? '' : 'upTo',
+        subBuilder: $307.Int64Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation_Count clone() => AggregationQuery_Aggregation_Count()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation_Count copyWith(void Function(AggregationQuery_Aggregation_Count) updates) => super.copyWith((message) => updates(message as AggregationQuery_Aggregation_Count)) as AggregationQuery_Aggregation_Count;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation_Count clone() =>
+      AggregationQuery_Aggregation_Count()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation_Count copyWith(
+          void Function(AggregationQuery_Aggregation_Count) updates) =>
+      super.copyWith((message) =>
+              updates(message as AggregationQuery_Aggregation_Count))
+          as AggregationQuery_Aggregation_Count;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation_Count create() => AggregationQuery_Aggregation_Count._();
+  static AggregationQuery_Aggregation_Count create() =>
+      AggregationQuery_Aggregation_Count._();
   AggregationQuery_Aggregation_Count createEmptyInstance() => create();
-  static $pb.PbList<AggregationQuery_Aggregation_Count> createRepeated() => $pb.PbList<AggregationQuery_Aggregation_Count>();
+  static $pb.PbList<AggregationQuery_Aggregation_Count> createRepeated() =>
+      $pb.PbList<AggregationQuery_Aggregation_Count>();
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation_Count getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation_Count>(create);
+  static AggregationQuery_Aggregation_Count getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation_Count>(
+          create);
   static AggregationQuery_Aggregation_Count? _defaultInstance;
 
   ///  Optional. Optional constraint on the maximum number of entities to
@@ -391,7 +464,10 @@ class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $307.Int64Value get upTo => $_getN(0);
   @$pb.TagNumber(1)
-  set upTo($307.Int64Value v) { setField(1, v); }
+  set upTo($307.Int64Value v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUpTo() => $_has(0);
   @$pb.TagNumber(1)
@@ -432,40 +508,58 @@ class AggregationQuery_Aggregation_Sum extends $pb.GeneratedMessage {
     return $result;
   }
   AggregationQuery_Aggregation_Sum._() : super();
-  factory AggregationQuery_Aggregation_Sum.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregationQuery_Aggregation_Sum.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregationQuery_Aggregation_Sum.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregationQuery_Aggregation_Sum.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationQuery.Aggregation.Sum', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property', subBuilder: PropertyReference.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregationQuery.Aggregation.Sum',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property',
+        subBuilder: PropertyReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation_Sum clone() => AggregationQuery_Aggregation_Sum()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation_Sum copyWith(void Function(AggregationQuery_Aggregation_Sum) updates) => super.copyWith((message) => updates(message as AggregationQuery_Aggregation_Sum)) as AggregationQuery_Aggregation_Sum;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation_Sum clone() =>
+      AggregationQuery_Aggregation_Sum()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation_Sum copyWith(
+          void Function(AggregationQuery_Aggregation_Sum) updates) =>
+      super.copyWith(
+              (message) => updates(message as AggregationQuery_Aggregation_Sum))
+          as AggregationQuery_Aggregation_Sum;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation_Sum create() => AggregationQuery_Aggregation_Sum._();
+  static AggregationQuery_Aggregation_Sum create() =>
+      AggregationQuery_Aggregation_Sum._();
   AggregationQuery_Aggregation_Sum createEmptyInstance() => create();
-  static $pb.PbList<AggregationQuery_Aggregation_Sum> createRepeated() => $pb.PbList<AggregationQuery_Aggregation_Sum>();
+  static $pb.PbList<AggregationQuery_Aggregation_Sum> createRepeated() =>
+      $pb.PbList<AggregationQuery_Aggregation_Sum>();
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation_Sum getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation_Sum>(create);
+  static AggregationQuery_Aggregation_Sum getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation_Sum>(
+          create);
   static AggregationQuery_Aggregation_Sum? _defaultInstance;
 
   /// The property to aggregate on.
   @$pb.TagNumber(1)
   PropertyReference get property => $_getN(0);
   @$pb.TagNumber(1)
-  set property(PropertyReference v) { setField(1, v); }
+  set property(PropertyReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProperty() => $_has(0);
   @$pb.TagNumber(1)
@@ -496,40 +590,58 @@ class AggregationQuery_Aggregation_Avg extends $pb.GeneratedMessage {
     return $result;
   }
   AggregationQuery_Aggregation_Avg._() : super();
-  factory AggregationQuery_Aggregation_Avg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregationQuery_Aggregation_Avg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregationQuery_Aggregation_Avg.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregationQuery_Aggregation_Avg.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationQuery.Aggregation.Avg', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property', subBuilder: PropertyReference.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregationQuery.Aggregation.Avg',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property',
+        subBuilder: PropertyReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation_Avg clone() => AggregationQuery_Aggregation_Avg()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation_Avg copyWith(void Function(AggregationQuery_Aggregation_Avg) updates) => super.copyWith((message) => updates(message as AggregationQuery_Aggregation_Avg)) as AggregationQuery_Aggregation_Avg;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation_Avg clone() =>
+      AggregationQuery_Aggregation_Avg()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation_Avg copyWith(
+          void Function(AggregationQuery_Aggregation_Avg) updates) =>
+      super.copyWith(
+              (message) => updates(message as AggregationQuery_Aggregation_Avg))
+          as AggregationQuery_Aggregation_Avg;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation_Avg create() => AggregationQuery_Aggregation_Avg._();
+  static AggregationQuery_Aggregation_Avg create() =>
+      AggregationQuery_Aggregation_Avg._();
   AggregationQuery_Aggregation_Avg createEmptyInstance() => create();
-  static $pb.PbList<AggregationQuery_Aggregation_Avg> createRepeated() => $pb.PbList<AggregationQuery_Aggregation_Avg>();
+  static $pb.PbList<AggregationQuery_Aggregation_Avg> createRepeated() =>
+      $pb.PbList<AggregationQuery_Aggregation_Avg>();
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation_Avg getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation_Avg>(create);
+  static AggregationQuery_Aggregation_Avg getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation_Avg>(
+          create);
   static AggregationQuery_Aggregation_Avg? _defaultInstance;
 
   /// The property to aggregate on.
   @$pb.TagNumber(1)
   PropertyReference get property => $_getN(0);
   @$pb.TagNumber(1)
-  set property(PropertyReference v) { setField(1, v); }
+  set property(PropertyReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProperty() => $_has(0);
   @$pb.TagNumber(1)
@@ -538,12 +650,7 @@ class AggregationQuery_Aggregation_Avg extends $pb.GeneratedMessage {
   PropertyReference ensureProperty() => $_ensure(0);
 }
 
-enum AggregationQuery_Aggregation_Operator {
-  count, 
-  sum, 
-  avg, 
-  notSet
-}
+enum AggregationQuery_Aggregation_Operator { count, sum, avg, notSet }
 
 /// Defines an aggregation that produces a single result.
 class AggregationQuery_Aggregation extends $pb.GeneratedMessage {
@@ -569,53 +676,74 @@ class AggregationQuery_Aggregation extends $pb.GeneratedMessage {
     return $result;
   }
   AggregationQuery_Aggregation._() : super();
-  factory AggregationQuery_Aggregation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregationQuery_Aggregation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregationQuery_Aggregation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregationQuery_Aggregation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AggregationQuery_Aggregation_Operator> _AggregationQuery_Aggregation_OperatorByTag = {
-    1 : AggregationQuery_Aggregation_Operator.count,
-    2 : AggregationQuery_Aggregation_Operator.sum,
-    3 : AggregationQuery_Aggregation_Operator.avg,
-    0 : AggregationQuery_Aggregation_Operator.notSet
+  static const $core.Map<$core.int, AggregationQuery_Aggregation_Operator>
+      _AggregationQuery_Aggregation_OperatorByTag = {
+    1: AggregationQuery_Aggregation_Operator.count,
+    2: AggregationQuery_Aggregation_Operator.sum,
+    3: AggregationQuery_Aggregation_Operator.avg,
+    0: AggregationQuery_Aggregation_Operator.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationQuery.Aggregation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregationQuery.Aggregation',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<AggregationQuery_Aggregation_Count>(1, _omitFieldNames ? '' : 'count', subBuilder: AggregationQuery_Aggregation_Count.create)
-    ..aOM<AggregationQuery_Aggregation_Sum>(2, _omitFieldNames ? '' : 'sum', subBuilder: AggregationQuery_Aggregation_Sum.create)
-    ..aOM<AggregationQuery_Aggregation_Avg>(3, _omitFieldNames ? '' : 'avg', subBuilder: AggregationQuery_Aggregation_Avg.create)
+    ..aOM<AggregationQuery_Aggregation_Count>(1, _omitFieldNames ? '' : 'count',
+        subBuilder: AggregationQuery_Aggregation_Count.create)
+    ..aOM<AggregationQuery_Aggregation_Sum>(2, _omitFieldNames ? '' : 'sum',
+        subBuilder: AggregationQuery_Aggregation_Sum.create)
+    ..aOM<AggregationQuery_Aggregation_Avg>(3, _omitFieldNames ? '' : 'avg',
+        subBuilder: AggregationQuery_Aggregation_Avg.create)
     ..aOS(7, _omitFieldNames ? '' : 'alias')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation clone() => AggregationQuery_Aggregation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregationQuery_Aggregation copyWith(void Function(AggregationQuery_Aggregation) updates) => super.copyWith((message) => updates(message as AggregationQuery_Aggregation)) as AggregationQuery_Aggregation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation clone() =>
+      AggregationQuery_Aggregation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregationQuery_Aggregation copyWith(
+          void Function(AggregationQuery_Aggregation) updates) =>
+      super.copyWith(
+              (message) => updates(message as AggregationQuery_Aggregation))
+          as AggregationQuery_Aggregation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation create() => AggregationQuery_Aggregation._();
+  static AggregationQuery_Aggregation create() =>
+      AggregationQuery_Aggregation._();
   AggregationQuery_Aggregation createEmptyInstance() => create();
-  static $pb.PbList<AggregationQuery_Aggregation> createRepeated() => $pb.PbList<AggregationQuery_Aggregation>();
+  static $pb.PbList<AggregationQuery_Aggregation> createRepeated() =>
+      $pb.PbList<AggregationQuery_Aggregation>();
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery_Aggregation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation>(create);
+  static AggregationQuery_Aggregation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregationQuery_Aggregation>(create);
   static AggregationQuery_Aggregation? _defaultInstance;
 
-  AggregationQuery_Aggregation_Operator whichOperator() => _AggregationQuery_Aggregation_OperatorByTag[$_whichOneof(0)]!;
+  AggregationQuery_Aggregation_Operator whichOperator() =>
+      _AggregationQuery_Aggregation_OperatorByTag[$_whichOneof(0)]!;
   void clearOperator() => clearField($_whichOneof(0));
 
   /// Count aggregator.
   @$pb.TagNumber(1)
   AggregationQuery_Aggregation_Count get count => $_getN(0);
   @$pb.TagNumber(1)
-  set count(AggregationQuery_Aggregation_Count v) { setField(1, v); }
+  set count(AggregationQuery_Aggregation_Count v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -627,7 +755,10 @@ class AggregationQuery_Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AggregationQuery_Aggregation_Sum get sum => $_getN(1);
   @$pb.TagNumber(2)
-  set sum(AggregationQuery_Aggregation_Sum v) { setField(2, v); }
+  set sum(AggregationQuery_Aggregation_Sum v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSum() => $_has(1);
   @$pb.TagNumber(2)
@@ -639,7 +770,10 @@ class AggregationQuery_Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AggregationQuery_Aggregation_Avg get avg => $_getN(2);
   @$pb.TagNumber(3)
-  set avg(AggregationQuery_Aggregation_Avg v) { setField(3, v); }
+  set avg(AggregationQuery_Aggregation_Avg v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAvg() => $_has(2);
   @$pb.TagNumber(3)
@@ -685,17 +819,17 @@ class AggregationQuery_Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get alias => $_getSZ(3);
   @$pb.TagNumber(7)
-  set alias($core.String v) { $_setString(3, v); }
+  set alias($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasAlias() => $_has(3);
   @$pb.TagNumber(7)
   void clearAlias() => clearField(7);
 }
 
-enum AggregationQuery_QueryType {
-  nestedQuery, 
-  notSet
-}
+enum AggregationQuery_QueryType { nestedQuery, notSet }
 
 /// Datastore query for running an aggregation over a
 /// [Query][google.datastore.v1.Query].
@@ -714,49 +848,66 @@ class AggregationQuery extends $pb.GeneratedMessage {
     return $result;
   }
   AggregationQuery._() : super();
-  factory AggregationQuery.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregationQuery.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregationQuery.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregationQuery.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AggregationQuery_QueryType> _AggregationQuery_QueryTypeByTag = {
-    1 : AggregationQuery_QueryType.nestedQuery,
-    0 : AggregationQuery_QueryType.notSet
+  static const $core.Map<$core.int, AggregationQuery_QueryType>
+      _AggregationQuery_QueryTypeByTag = {
+    1: AggregationQuery_QueryType.nestedQuery,
+    0: AggregationQuery_QueryType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregationQuery',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<Query>(1, _omitFieldNames ? '' : 'nestedQuery', subBuilder: Query.create)
-    ..pc<AggregationQuery_Aggregation>(3, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM, subBuilder: AggregationQuery_Aggregation.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Query>(1, _omitFieldNames ? '' : 'nestedQuery',
+        subBuilder: Query.create)
+    ..pc<AggregationQuery_Aggregation>(
+        3, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
+        subBuilder: AggregationQuery_Aggregation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AggregationQuery clone() => AggregationQuery()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregationQuery copyWith(void Function(AggregationQuery) updates) => super.copyWith((message) => updates(message as AggregationQuery)) as AggregationQuery;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregationQuery copyWith(void Function(AggregationQuery) updates) =>
+      super.copyWith((message) => updates(message as AggregationQuery))
+          as AggregationQuery;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AggregationQuery create() => AggregationQuery._();
   AggregationQuery createEmptyInstance() => create();
-  static $pb.PbList<AggregationQuery> createRepeated() => $pb.PbList<AggregationQuery>();
+  static $pb.PbList<AggregationQuery> createRepeated() =>
+      $pb.PbList<AggregationQuery>();
   @$core.pragma('dart2js:noInline')
-  static AggregationQuery getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregationQuery>(create);
+  static AggregationQuery getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregationQuery>(create);
   static AggregationQuery? _defaultInstance;
 
-  AggregationQuery_QueryType whichQueryType() => _AggregationQuery_QueryTypeByTag[$_whichOneof(0)]!;
+  AggregationQuery_QueryType whichQueryType() =>
+      _AggregationQuery_QueryTypeByTag[$_whichOneof(0)]!;
   void clearQueryType() => clearField($_whichOneof(0));
 
   /// Nested query for aggregation
   @$pb.TagNumber(1)
   Query get nestedQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set nestedQuery(Query v) { setField(1, v); }
+  set nestedQuery(Query v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasNestedQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -786,40 +937,52 @@ class KindExpression extends $pb.GeneratedMessage {
     return $result;
   }
   KindExpression._() : super();
-  factory KindExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory KindExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory KindExpression.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory KindExpression.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KindExpression', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'KindExpression',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   KindExpression clone() => KindExpression()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  KindExpression copyWith(void Function(KindExpression) updates) => super.copyWith((message) => updates(message as KindExpression)) as KindExpression;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  KindExpression copyWith(void Function(KindExpression) updates) =>
+      super.copyWith((message) => updates(message as KindExpression))
+          as KindExpression;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static KindExpression create() => KindExpression._();
   KindExpression createEmptyInstance() => create();
-  static $pb.PbList<KindExpression> createRepeated() => $pb.PbList<KindExpression>();
+  static $pb.PbList<KindExpression> createRepeated() =>
+      $pb.PbList<KindExpression>();
   @$core.pragma('dart2js:noInline')
-  static KindExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KindExpression>(create);
+  static KindExpression getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<KindExpression>(create);
   static KindExpression? _defaultInstance;
 
   /// The name of the kind.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -838,33 +1001,42 @@ class PropertyReference extends $pb.GeneratedMessage {
     return $result;
   }
   PropertyReference._() : super();
-  factory PropertyReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PropertyReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PropertyReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PropertyReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PropertyReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PropertyReference',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PropertyReference clone() => PropertyReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PropertyReference copyWith(void Function(PropertyReference) updates) => super.copyWith((message) => updates(message as PropertyReference)) as PropertyReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PropertyReference copyWith(void Function(PropertyReference) updates) =>
+      super.copyWith((message) => updates(message as PropertyReference))
+          as PropertyReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PropertyReference create() => PropertyReference._();
   PropertyReference createEmptyInstance() => create();
-  static $pb.PbList<PropertyReference> createRepeated() => $pb.PbList<PropertyReference>();
+  static $pb.PbList<PropertyReference> createRepeated() =>
+      $pb.PbList<PropertyReference>();
   @$core.pragma('dart2js:noInline')
-  static PropertyReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PropertyReference>(create);
+  static PropertyReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PropertyReference>(create);
   static PropertyReference? _defaultInstance;
 
   ///  A reference to a property.
@@ -877,7 +1049,10 @@ class PropertyReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(2)
@@ -896,24 +1071,31 @@ class Projection extends $pb.GeneratedMessage {
     return $result;
   }
   Projection._() : super();
-  factory Projection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Projection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Projection.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Projection.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Projection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property', subBuilder: PropertyReference.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Projection',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property',
+        subBuilder: PropertyReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Projection clone() => Projection()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Projection copyWith(void Function(Projection) updates) => super.copyWith((message) => updates(message as Projection)) as Projection;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Projection copyWith(void Function(Projection) updates) =>
+      super.copyWith((message) => updates(message as Projection)) as Projection;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -922,14 +1104,18 @@ class Projection extends $pb.GeneratedMessage {
   Projection createEmptyInstance() => create();
   static $pb.PbList<Projection> createRepeated() => $pb.PbList<Projection>();
   @$core.pragma('dart2js:noInline')
-  static Projection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Projection>(create);
+  static Projection getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Projection>(create);
   static Projection? _defaultInstance;
 
   /// The property to project.
   @$pb.TagNumber(1)
   PropertyReference get property => $_getN(0);
   @$pb.TagNumber(1)
-  set property(PropertyReference v) { setField(1, v); }
+  set property(PropertyReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProperty() => $_has(0);
   @$pb.TagNumber(1)
@@ -954,41 +1140,58 @@ class PropertyOrder extends $pb.GeneratedMessage {
     return $result;
   }
   PropertyOrder._() : super();
-  factory PropertyOrder.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PropertyOrder.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PropertyOrder.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PropertyOrder.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PropertyOrder', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property', subBuilder: PropertyReference.create)
-    ..e<PropertyOrder_Direction>(2, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE, defaultOrMaker: PropertyOrder_Direction.DIRECTION_UNSPECIFIED, valueOf: PropertyOrder_Direction.valueOf, enumValues: PropertyOrder_Direction.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PropertyOrder',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property',
+        subBuilder: PropertyReference.create)
+    ..e<PropertyOrder_Direction>(
+        2, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE,
+        defaultOrMaker: PropertyOrder_Direction.DIRECTION_UNSPECIFIED,
+        valueOf: PropertyOrder_Direction.valueOf,
+        enumValues: PropertyOrder_Direction.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PropertyOrder clone() => PropertyOrder()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PropertyOrder copyWith(void Function(PropertyOrder) updates) => super.copyWith((message) => updates(message as PropertyOrder)) as PropertyOrder;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PropertyOrder copyWith(void Function(PropertyOrder) updates) =>
+      super.copyWith((message) => updates(message as PropertyOrder))
+          as PropertyOrder;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PropertyOrder create() => PropertyOrder._();
   PropertyOrder createEmptyInstance() => create();
-  static $pb.PbList<PropertyOrder> createRepeated() => $pb.PbList<PropertyOrder>();
+  static $pb.PbList<PropertyOrder> createRepeated() =>
+      $pb.PbList<PropertyOrder>();
   @$core.pragma('dart2js:noInline')
-  static PropertyOrder getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PropertyOrder>(create);
+  static PropertyOrder getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PropertyOrder>(create);
   static PropertyOrder? _defaultInstance;
 
   /// The property to order by.
   @$pb.TagNumber(1)
   PropertyReference get property => $_getN(0);
   @$pb.TagNumber(1)
-  set property(PropertyReference v) { setField(1, v); }
+  set property(PropertyReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProperty() => $_has(0);
   @$pb.TagNumber(1)
@@ -1000,18 +1203,17 @@ class PropertyOrder extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PropertyOrder_Direction get direction => $_getN(1);
   @$pb.TagNumber(2)
-  set direction(PropertyOrder_Direction v) { setField(2, v); }
+  set direction(PropertyOrder_Direction v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDirection() => $_has(1);
   @$pb.TagNumber(2)
   void clearDirection() => clearField(2);
 }
 
-enum Filter_FilterType {
-  compositeFilter, 
-  propertyFilter, 
-  notSet
-}
+enum Filter_FilterType { compositeFilter, propertyFilter, notSet }
 
 /// A holder for any type of filter.
 class Filter extends $pb.GeneratedMessage {
@@ -1029,31 +1231,40 @@ class Filter extends $pb.GeneratedMessage {
     return $result;
   }
   Filter._() : super();
-  factory Filter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Filter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Filter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Filter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Filter_FilterType> _Filter_FilterTypeByTag = {
-    1 : Filter_FilterType.compositeFilter,
-    2 : Filter_FilterType.propertyFilter,
-    0 : Filter_FilterType.notSet
+  static const $core.Map<$core.int, Filter_FilterType> _Filter_FilterTypeByTag =
+      {
+    1: Filter_FilterType.compositeFilter,
+    2: Filter_FilterType.propertyFilter,
+    0: Filter_FilterType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Filter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Filter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<CompositeFilter>(1, _omitFieldNames ? '' : 'compositeFilter', subBuilder: CompositeFilter.create)
-    ..aOM<PropertyFilter>(2, _omitFieldNames ? '' : 'propertyFilter', subBuilder: PropertyFilter.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<CompositeFilter>(1, _omitFieldNames ? '' : 'compositeFilter',
+        subBuilder: CompositeFilter.create)
+    ..aOM<PropertyFilter>(2, _omitFieldNames ? '' : 'propertyFilter',
+        subBuilder: PropertyFilter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Filter clone() => Filter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Filter copyWith(void Function(Filter) updates) => super.copyWith((message) => updates(message as Filter)) as Filter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Filter copyWith(void Function(Filter) updates) =>
+      super.copyWith((message) => updates(message as Filter)) as Filter;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1062,17 +1273,22 @@ class Filter extends $pb.GeneratedMessage {
   Filter createEmptyInstance() => create();
   static $pb.PbList<Filter> createRepeated() => $pb.PbList<Filter>();
   @$core.pragma('dart2js:noInline')
-  static Filter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Filter>(create);
+  static Filter getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Filter>(create);
   static Filter? _defaultInstance;
 
-  Filter_FilterType whichFilterType() => _Filter_FilterTypeByTag[$_whichOneof(0)]!;
+  Filter_FilterType whichFilterType() =>
+      _Filter_FilterTypeByTag[$_whichOneof(0)]!;
   void clearFilterType() => clearField($_whichOneof(0));
 
   /// A composite filter.
   @$pb.TagNumber(1)
   CompositeFilter get compositeFilter => $_getN(0);
   @$pb.TagNumber(1)
-  set compositeFilter(CompositeFilter v) { setField(1, v); }
+  set compositeFilter(CompositeFilter v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCompositeFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -1084,7 +1300,10 @@ class Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PropertyFilter get propertyFilter => $_getN(1);
   @$pb.TagNumber(2)
-  set propertyFilter(PropertyFilter v) { setField(2, v); }
+  set propertyFilter(PropertyFilter v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPropertyFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -1109,41 +1328,58 @@ class CompositeFilter extends $pb.GeneratedMessage {
     return $result;
   }
   CompositeFilter._() : super();
-  factory CompositeFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CompositeFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CompositeFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CompositeFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompositeFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..e<CompositeFilter_Operator>(1, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: CompositeFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: CompositeFilter_Operator.valueOf, enumValues: CompositeFilter_Operator.values)
-    ..pc<Filter>(2, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM, subBuilder: Filter.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CompositeFilter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..e<CompositeFilter_Operator>(
+        1, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE,
+        defaultOrMaker: CompositeFilter_Operator.OPERATOR_UNSPECIFIED,
+        valueOf: CompositeFilter_Operator.valueOf,
+        enumValues: CompositeFilter_Operator.values)
+    ..pc<Filter>(2, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM,
+        subBuilder: Filter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CompositeFilter clone() => CompositeFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CompositeFilter copyWith(void Function(CompositeFilter) updates) => super.copyWith((message) => updates(message as CompositeFilter)) as CompositeFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CompositeFilter copyWith(void Function(CompositeFilter) updates) =>
+      super.copyWith((message) => updates(message as CompositeFilter))
+          as CompositeFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CompositeFilter create() => CompositeFilter._();
   CompositeFilter createEmptyInstance() => create();
-  static $pb.PbList<CompositeFilter> createRepeated() => $pb.PbList<CompositeFilter>();
+  static $pb.PbList<CompositeFilter> createRepeated() =>
+      $pb.PbList<CompositeFilter>();
   @$core.pragma('dart2js:noInline')
-  static CompositeFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompositeFilter>(create);
+  static CompositeFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CompositeFilter>(create);
   static CompositeFilter? _defaultInstance;
 
   /// The operator for combining multiple filters.
   @$pb.TagNumber(1)
   CompositeFilter_Operator get op => $_getN(0);
   @$pb.TagNumber(1)
-  set op(CompositeFilter_Operator v) { setField(1, v); }
+  set op(CompositeFilter_Operator v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOp() => $_has(0);
   @$pb.TagNumber(1)
@@ -1178,42 +1414,60 @@ class PropertyFilter extends $pb.GeneratedMessage {
     return $result;
   }
   PropertyFilter._() : super();
-  factory PropertyFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PropertyFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PropertyFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PropertyFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PropertyFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property', subBuilder: PropertyReference.create)
-    ..e<PropertyFilter_Operator>(2, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: PropertyFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: PropertyFilter_Operator.valueOf, enumValues: PropertyFilter_Operator.values)
-    ..aOM<$421.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $421.Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PropertyFilter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property',
+        subBuilder: PropertyReference.create)
+    ..e<PropertyFilter_Operator>(
+        2, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE,
+        defaultOrMaker: PropertyFilter_Operator.OPERATOR_UNSPECIFIED,
+        valueOf: PropertyFilter_Operator.valueOf,
+        enumValues: PropertyFilter_Operator.values)
+    ..aOM<$421.Value>(3, _omitFieldNames ? '' : 'value',
+        subBuilder: $421.Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PropertyFilter clone() => PropertyFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PropertyFilter copyWith(void Function(PropertyFilter) updates) => super.copyWith((message) => updates(message as PropertyFilter)) as PropertyFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PropertyFilter copyWith(void Function(PropertyFilter) updates) =>
+      super.copyWith((message) => updates(message as PropertyFilter))
+          as PropertyFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PropertyFilter create() => PropertyFilter._();
   PropertyFilter createEmptyInstance() => create();
-  static $pb.PbList<PropertyFilter> createRepeated() => $pb.PbList<PropertyFilter>();
+  static $pb.PbList<PropertyFilter> createRepeated() =>
+      $pb.PbList<PropertyFilter>();
   @$core.pragma('dart2js:noInline')
-  static PropertyFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PropertyFilter>(create);
+  static PropertyFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PropertyFilter>(create);
   static PropertyFilter? _defaultInstance;
 
   /// The property to filter by.
   @$pb.TagNumber(1)
   PropertyReference get property => $_getN(0);
   @$pb.TagNumber(1)
-  set property(PropertyReference v) { setField(1, v); }
+  set property(PropertyReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProperty() => $_has(0);
   @$pb.TagNumber(1)
@@ -1225,7 +1479,10 @@ class PropertyFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PropertyFilter_Operator get op => $_getN(1);
   @$pb.TagNumber(2)
-  set op(PropertyFilter_Operator v) { setField(2, v); }
+  set op(PropertyFilter_Operator v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOp() => $_has(1);
   @$pb.TagNumber(2)
@@ -1235,7 +1492,10 @@ class PropertyFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $421.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($421.Value v) { setField(3, v); }
+  set value($421.Value v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -1269,27 +1529,42 @@ class GqlQuery extends $pb.GeneratedMessage {
     return $result;
   }
   GqlQuery._() : super();
-  factory GqlQuery.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GqlQuery.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GqlQuery.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GqlQuery.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GqlQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GqlQuery',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'queryString')
     ..aOB(2, _omitFieldNames ? '' : 'allowLiterals')
-    ..pc<GqlQueryParameter>(4, _omitFieldNames ? '' : 'positionalBindings', $pb.PbFieldType.PM, subBuilder: GqlQueryParameter.create)
-    ..m<$core.String, GqlQueryParameter>(5, _omitFieldNames ? '' : 'namedBindings', entryClassName: 'GqlQuery.NamedBindingsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: GqlQueryParameter.create, valueDefaultOrMaker: GqlQueryParameter.getDefault, packageName: const $pb.PackageName('google.datastore.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..pc<GqlQueryParameter>(
+        4, _omitFieldNames ? '' : 'positionalBindings', $pb.PbFieldType.PM,
+        subBuilder: GqlQueryParameter.create)
+    ..m<$core.String, GqlQueryParameter>(
+        5, _omitFieldNames ? '' : 'namedBindings',
+        entryClassName: 'GqlQuery.NamedBindingsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: GqlQueryParameter.create,
+        valueDefaultOrMaker: GqlQueryParameter.getDefault,
+        packageName: const $pb.PackageName('google.datastore.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GqlQuery clone() => GqlQuery()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GqlQuery copyWith(void Function(GqlQuery) updates) => super.copyWith((message) => updates(message as GqlQuery)) as GqlQuery;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GqlQuery copyWith(void Function(GqlQuery) updates) =>
+      super.copyWith((message) => updates(message as GqlQuery)) as GqlQuery;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1298,7 +1573,8 @@ class GqlQuery extends $pb.GeneratedMessage {
   GqlQuery createEmptyInstance() => create();
   static $pb.PbList<GqlQuery> createRepeated() => $pb.PbList<GqlQuery>();
   @$core.pragma('dart2js:noInline')
-  static GqlQuery getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GqlQuery>(create);
+  static GqlQuery getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GqlQuery>(create);
   static GqlQuery? _defaultInstance;
 
   /// A string of the format described
@@ -1306,7 +1582,10 @@ class GqlQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get queryString => $_getSZ(0);
   @$pb.TagNumber(1)
-  set queryString($core.String v) { $_setString(0, v); }
+  set queryString($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasQueryString() => $_has(0);
   @$pb.TagNumber(1)
@@ -1319,7 +1598,10 @@ class GqlQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get allowLiterals => $_getBF(1);
   @$pb.TagNumber(2)
-  set allowLiterals($core.bool v) { $_setBool(1, v); }
+  set allowLiterals($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAllowLiterals() => $_has(1);
   @$pb.TagNumber(2)
@@ -1342,11 +1624,7 @@ class GqlQuery extends $pb.GeneratedMessage {
   $core.Map<$core.String, GqlQueryParameter> get namedBindings => $_getMap(3);
 }
 
-enum GqlQueryParameter_ParameterType {
-  value, 
-  cursor, 
-  notSet
-}
+enum GqlQueryParameter_ParameterType { value, cursor, notSet }
 
 /// A binding parameter for a GQL query.
 class GqlQueryParameter extends $pb.GeneratedMessage {
@@ -1364,50 +1642,66 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
     return $result;
   }
   GqlQueryParameter._() : super();
-  factory GqlQueryParameter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GqlQueryParameter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GqlQueryParameter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GqlQueryParameter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, GqlQueryParameter_ParameterType> _GqlQueryParameter_ParameterTypeByTag = {
-    2 : GqlQueryParameter_ParameterType.value,
-    3 : GqlQueryParameter_ParameterType.cursor,
-    0 : GqlQueryParameter_ParameterType.notSet
+  static const $core.Map<$core.int, GqlQueryParameter_ParameterType>
+      _GqlQueryParameter_ParameterTypeByTag = {
+    2: GqlQueryParameter_ParameterType.value,
+    3: GqlQueryParameter_ParameterType.cursor,
+    0: GqlQueryParameter_ParameterType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GqlQueryParameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GqlQueryParameter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$421.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $421.Value.create)
-    ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$421.Value>(2, _omitFieldNames ? '' : 'value',
+        subBuilder: $421.Value.create)
+    ..a<$core.List<$core.int>>(
+        3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GqlQueryParameter clone() => GqlQueryParameter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GqlQueryParameter copyWith(void Function(GqlQueryParameter) updates) => super.copyWith((message) => updates(message as GqlQueryParameter)) as GqlQueryParameter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GqlQueryParameter copyWith(void Function(GqlQueryParameter) updates) =>
+      super.copyWith((message) => updates(message as GqlQueryParameter))
+          as GqlQueryParameter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GqlQueryParameter create() => GqlQueryParameter._();
   GqlQueryParameter createEmptyInstance() => create();
-  static $pb.PbList<GqlQueryParameter> createRepeated() => $pb.PbList<GqlQueryParameter>();
+  static $pb.PbList<GqlQueryParameter> createRepeated() =>
+      $pb.PbList<GqlQueryParameter>();
   @$core.pragma('dart2js:noInline')
-  static GqlQueryParameter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GqlQueryParameter>(create);
+  static GqlQueryParameter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GqlQueryParameter>(create);
   static GqlQueryParameter? _defaultInstance;
 
-  GqlQueryParameter_ParameterType whichParameterType() => _GqlQueryParameter_ParameterTypeByTag[$_whichOneof(0)]!;
+  GqlQueryParameter_ParameterType whichParameterType() =>
+      _GqlQueryParameter_ParameterTypeByTag[$_whichOneof(0)]!;
   void clearParameterType() => clearField($_whichOneof(0));
 
   /// A value parameter.
   @$pb.TagNumber(2)
   $421.Value get value => $_getN(0);
   @$pb.TagNumber(2)
-  set value($421.Value v) { setField(2, v); }
+  set value($421.Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(2)
@@ -1420,7 +1714,10 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.List<$core.int> get cursor => $_getN(1);
   @$pb.TagNumber(3)
-  set cursor($core.List<$core.int> v) { $_setBytes(1, v); }
+  set cursor($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCursor() => $_has(1);
   @$pb.TagNumber(3)
@@ -1467,47 +1764,74 @@ class QueryResultBatch extends $pb.GeneratedMessage {
     return $result;
   }
   QueryResultBatch._() : super();
-  factory QueryResultBatch.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QueryResultBatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QueryResultBatch.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QueryResultBatch.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryResultBatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..e<EntityResult_ResultType>(1, _omitFieldNames ? '' : 'entityResultType', $pb.PbFieldType.OE, defaultOrMaker: EntityResult_ResultType.RESULT_TYPE_UNSPECIFIED, valueOf: EntityResult_ResultType.valueOf, enumValues: EntityResult_ResultType.values)
-    ..pc<EntityResult>(2, _omitFieldNames ? '' : 'entityResults', $pb.PbFieldType.PM, subBuilder: EntityResult.create)
-    ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'skippedCursor', $pb.PbFieldType.OY)
-    ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'endCursor', $pb.PbFieldType.OY)
-    ..e<QueryResultBatch_MoreResultsType>(5, _omitFieldNames ? '' : 'moreResults', $pb.PbFieldType.OE, defaultOrMaker: QueryResultBatch_MoreResultsType.MORE_RESULTS_TYPE_UNSPECIFIED, valueOf: QueryResultBatch_MoreResultsType.valueOf, enumValues: QueryResultBatch_MoreResultsType.values)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'skippedResults', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QueryResultBatch',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..e<EntityResult_ResultType>(
+        1, _omitFieldNames ? '' : 'entityResultType', $pb.PbFieldType.OE,
+        defaultOrMaker: EntityResult_ResultType.RESULT_TYPE_UNSPECIFIED,
+        valueOf: EntityResult_ResultType.valueOf,
+        enumValues: EntityResult_ResultType.values)
+    ..pc<EntityResult>(
+        2, _omitFieldNames ? '' : 'entityResults', $pb.PbFieldType.PM,
+        subBuilder: EntityResult.create)
+    ..a<$core.List<$core.int>>(
+        3, _omitFieldNames ? '' : 'skippedCursor', $pb.PbFieldType.OY)
+    ..a<$core.List<$core.int>>(
+        4, _omitFieldNames ? '' : 'endCursor', $pb.PbFieldType.OY)
+    ..e<QueryResultBatch_MoreResultsType>(
+        5, _omitFieldNames ? '' : 'moreResults', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            QueryResultBatch_MoreResultsType.MORE_RESULTS_TYPE_UNSPECIFIED,
+        valueOf: QueryResultBatch_MoreResultsType.valueOf,
+        enumValues: QueryResultBatch_MoreResultsType.values)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'skippedResults', $pb.PbFieldType.O3)
     ..aInt64(7, _omitFieldNames ? '' : 'snapshotVersion')
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'readTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'readTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   QueryResultBatch clone() => QueryResultBatch()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QueryResultBatch copyWith(void Function(QueryResultBatch) updates) => super.copyWith((message) => updates(message as QueryResultBatch)) as QueryResultBatch;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QueryResultBatch copyWith(void Function(QueryResultBatch) updates) =>
+      super.copyWith((message) => updates(message as QueryResultBatch))
+          as QueryResultBatch;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static QueryResultBatch create() => QueryResultBatch._();
   QueryResultBatch createEmptyInstance() => create();
-  static $pb.PbList<QueryResultBatch> createRepeated() => $pb.PbList<QueryResultBatch>();
+  static $pb.PbList<QueryResultBatch> createRepeated() =>
+      $pb.PbList<QueryResultBatch>();
   @$core.pragma('dart2js:noInline')
-  static QueryResultBatch getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryResultBatch>(create);
+  static QueryResultBatch getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QueryResultBatch>(create);
   static QueryResultBatch? _defaultInstance;
 
   /// The result type for every entity in `entity_results`.
   @$pb.TagNumber(1)
   EntityResult_ResultType get entityResultType => $_getN(0);
   @$pb.TagNumber(1)
-  set entityResultType(EntityResult_ResultType v) { setField(1, v); }
+  set entityResultType(EntityResult_ResultType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEntityResultType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1522,7 +1846,10 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.List<$core.int> get skippedCursor => $_getN(2);
   @$pb.TagNumber(3)
-  set skippedCursor($core.List<$core.int> v) { $_setBytes(2, v); }
+  set skippedCursor($core.List<$core.int> v) {
+    $_setBytes(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSkippedCursor() => $_has(2);
   @$pb.TagNumber(3)
@@ -1532,7 +1859,10 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get endCursor => $_getN(3);
   @$pb.TagNumber(4)
-  set endCursor($core.List<$core.int> v) { $_setBytes(3, v); }
+  set endCursor($core.List<$core.int> v) {
+    $_setBytes(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEndCursor() => $_has(3);
   @$pb.TagNumber(4)
@@ -1542,7 +1872,10 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   QueryResultBatch_MoreResultsType get moreResults => $_getN(4);
   @$pb.TagNumber(5)
-  set moreResults(QueryResultBatch_MoreResultsType v) { setField(5, v); }
+  set moreResults(QueryResultBatch_MoreResultsType v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMoreResults() => $_has(4);
   @$pb.TagNumber(5)
@@ -1552,7 +1885,10 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get skippedResults => $_getIZ(5);
   @$pb.TagNumber(6)
-  set skippedResults($core.int v) { $_setSignedInt32(5, v); }
+  set skippedResults($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSkippedResults() => $_has(5);
   @$pb.TagNumber(6)
@@ -1570,7 +1906,10 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $fixnum.Int64 get snapshotVersion => $_getI64(6);
   @$pb.TagNumber(7)
-  set snapshotVersion($fixnum.Int64 v) { $_setInt64(6, v); }
+  set snapshotVersion($fixnum.Int64 v) {
+    $_setInt64(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasSnapshotVersion() => $_has(6);
   @$pb.TagNumber(7)
@@ -1589,7 +1928,10 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get readTime => $_getN(7);
   @$pb.TagNumber(8)
-  set readTime($302.Timestamp v) { setField(8, v); }
+  set readTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasReadTime() => $_has(7);
   @$pb.TagNumber(8)
@@ -1598,6 +1940,6 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   $302.Timestamp ensureReadTime() => $_ensure(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

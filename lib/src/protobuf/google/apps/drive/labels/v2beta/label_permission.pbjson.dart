@@ -22,7 +22,14 @@ const LabelPermission$json = {
     {'1': 'audience', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'audience'},
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'email', '3': 2, '4': 1, '5': 9, '10': 'email'},
-    {'1': 'role', '3': 6, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2beta.LabelPermission.LabelRole', '10': 'role'},
+    {
+      '1': 'role',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2beta.LabelPermission.LabelRole',
+      '10': 'role'
+    },
   ],
   '4': [LabelPermission_LabelRole$json],
   '7': {},
@@ -54,4 +61,3 @@ final $typed_data.Uint8List labelPermissionDescriptor = $convert.base64Decode(
     'UkVBREVSEAESCwoHQVBQTElFUhACEg0KCU9SR0FOSVpFUhADEgoKBkVESVRPUhAEOljqQVUKKm'
     'RyaXZlbGFiZWxzLmdvb2dsZWFwaXMuY29tL0xhYmVsUGVybWlzc2lvbhInbGFiZWxzL3tsYWJl'
     'bH0vcGVybWlzc2lvbnMve3Blcm1pc3Npb259QgsKCXByaW5jaXBhbA==');
-

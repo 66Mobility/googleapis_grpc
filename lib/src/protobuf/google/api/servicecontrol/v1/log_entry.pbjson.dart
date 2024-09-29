@@ -18,17 +18,75 @@ const LogEntry$json = {
   '1': 'LogEntry',
   '2': [
     {'1': 'name', '3': 10, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'timestamp', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timestamp'},
-    {'1': 'severity', '3': 12, '4': 1, '5': 14, '6': '.google.logging.type.LogSeverity', '10': 'severity'},
-    {'1': 'http_request', '3': 14, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.HttpRequest', '10': 'httpRequest'},
+    {
+      '1': 'timestamp',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timestamp'
+    },
+    {
+      '1': 'severity',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.type.LogSeverity',
+      '10': 'severity'
+    },
+    {
+      '1': 'http_request',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.HttpRequest',
+      '10': 'httpRequest'
+    },
     {'1': 'trace', '3': 15, '4': 1, '5': 9, '10': 'trace'},
     {'1': 'insert_id', '3': 4, '4': 1, '5': 9, '10': 'insertId'},
-    {'1': 'labels', '3': 13, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.LogEntry.LabelsEntry', '10': 'labels'},
-    {'1': 'proto_payload', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Any', '9': 0, '10': 'protoPayload'},
+    {
+      '1': 'labels',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.LogEntry.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'proto_payload',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '9': 0,
+      '10': 'protoPayload'
+    },
     {'1': 'text_payload', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'textPayload'},
-    {'1': 'struct_payload', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '9': 0, '10': 'structPayload'},
-    {'1': 'operation', '3': 16, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.LogEntryOperation', '10': 'operation'},
-    {'1': 'source_location', '3': 17, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.LogEntrySourceLocation', '10': 'sourceLocation'},
+    {
+      '1': 'struct_payload',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '9': 0,
+      '10': 'structPayload'
+    },
+    {
+      '1': 'operation',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.LogEntryOperation',
+      '10': 'operation'
+    },
+    {
+      '1': 'source_location',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.LogEntrySourceLocation',
+      '10': 'sourceLocation'
+    },
   ],
   '3': [LogEntry_LabelsEntry$json],
   '8': [
@@ -90,7 +148,7 @@ const LogEntrySourceLocation$json = {
 };
 
 /// Descriptor for `LogEntrySourceLocation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List logEntrySourceLocationDescriptor = $convert.base64Decode(
-    'ChZMb2dFbnRyeVNvdXJjZUxvY2F0aW9uEhIKBGZpbGUYASABKAlSBGZpbGUSEgoEbGluZRgCIA'
-    'EoA1IEbGluZRIaCghmdW5jdGlvbhgDIAEoCVIIZnVuY3Rpb24=');
-
+final $typed_data.Uint8List logEntrySourceLocationDescriptor =
+    $convert.base64Decode(
+        'ChZMb2dFbnRyeVNvdXJjZUxvY2F0aW9uEhIKBGZpbGUYASABKAlSBGZpbGUSEgoEbGluZRgCIA'
+        'EoA1IEbGluZRIaCghmdW5jdGlvbhgDIAEoCVIIZnVuY3Rpb24=');

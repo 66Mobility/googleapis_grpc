@@ -20,22 +20,138 @@ const Occurrence$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'resource_uri', '3': 2, '4': 1, '5': 9, '10': 'resourceUri'},
     {'1': 'note_name', '3': 3, '4': 1, '5': 9, '10': 'noteName'},
-    {'1': 'kind', '3': 4, '4': 1, '5': 14, '6': '.grafeas.v1.NoteKind', '10': 'kind'},
+    {
+      '1': 'kind',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.NoteKind',
+      '10': 'kind'
+    },
     {'1': 'remediation', '3': 5, '4': 1, '5': 9, '10': 'remediation'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'vulnerability', '3': 8, '4': 1, '5': 11, '6': '.grafeas.v1.VulnerabilityOccurrence', '9': 0, '10': 'vulnerability'},
-    {'1': 'build', '3': 9, '4': 1, '5': 11, '6': '.grafeas.v1.BuildOccurrence', '9': 0, '10': 'build'},
-    {'1': 'image', '3': 10, '4': 1, '5': 11, '6': '.grafeas.v1.ImageOccurrence', '9': 0, '10': 'image'},
-    {'1': 'package', '3': 11, '4': 1, '5': 11, '6': '.grafeas.v1.PackageOccurrence', '9': 0, '10': 'package'},
-    {'1': 'deployment', '3': 12, '4': 1, '5': 11, '6': '.grafeas.v1.DeploymentOccurrence', '9': 0, '10': 'deployment'},
-    {'1': 'discovery', '3': 13, '4': 1, '5': 11, '6': '.grafeas.v1.DiscoveryOccurrence', '9': 0, '10': 'discovery'},
-    {'1': 'attestation', '3': 14, '4': 1, '5': 11, '6': '.grafeas.v1.AttestationOccurrence', '9': 0, '10': 'attestation'},
-    {'1': 'upgrade', '3': 15, '4': 1, '5': 11, '6': '.grafeas.v1.UpgradeOccurrence', '9': 0, '10': 'upgrade'},
-    {'1': 'compliance', '3': 16, '4': 1, '5': 11, '6': '.grafeas.v1.ComplianceOccurrence', '9': 0, '10': 'compliance'},
-    {'1': 'dsse_attestation', '3': 17, '4': 1, '5': 11, '6': '.grafeas.v1.DSSEAttestationOccurrence', '9': 0, '10': 'dsseAttestation'},
-    {'1': 'sbom_reference', '3': 19, '4': 1, '5': 11, '6': '.grafeas.v1.SBOMReferenceOccurrence', '9': 0, '10': 'sbomReference'},
-    {'1': 'envelope', '3': 18, '4': 1, '5': 11, '6': '.grafeas.v1.Envelope', '10': 'envelope'},
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'vulnerability',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityOccurrence',
+      '9': 0,
+      '10': 'vulnerability'
+    },
+    {
+      '1': 'build',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.BuildOccurrence',
+      '9': 0,
+      '10': 'build'
+    },
+    {
+      '1': 'image',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.ImageOccurrence',
+      '9': 0,
+      '10': 'image'
+    },
+    {
+      '1': 'package',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.PackageOccurrence',
+      '9': 0,
+      '10': 'package'
+    },
+    {
+      '1': 'deployment',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DeploymentOccurrence',
+      '9': 0,
+      '10': 'deployment'
+    },
+    {
+      '1': 'discovery',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DiscoveryOccurrence',
+      '9': 0,
+      '10': 'discovery'
+    },
+    {
+      '1': 'attestation',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.AttestationOccurrence',
+      '9': 0,
+      '10': 'attestation'
+    },
+    {
+      '1': 'upgrade',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.UpgradeOccurrence',
+      '9': 0,
+      '10': 'upgrade'
+    },
+    {
+      '1': 'compliance',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.ComplianceOccurrence',
+      '9': 0,
+      '10': 'compliance'
+    },
+    {
+      '1': 'dsse_attestation',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DSSEAttestationOccurrence',
+      '9': 0,
+      '10': 'dsseAttestation'
+    },
+    {
+      '1': 'sbom_reference',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SBOMReferenceOccurrence',
+      '9': 0,
+      '10': 'sbomReference'
+    },
+    {
+      '1': 'envelope',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Envelope',
+      '10': 'envelope'
+    },
   ],
   '7': {},
   '8': [
@@ -72,26 +188,169 @@ const Note$json = {
   '1': 'Note',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'short_description', '3': 2, '4': 1, '5': 9, '10': 'shortDescription'},
+    {
+      '1': 'short_description',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'shortDescription'
+    },
     {'1': 'long_description', '3': 3, '4': 1, '5': 9, '10': 'longDescription'},
-    {'1': 'kind', '3': 4, '4': 1, '5': 14, '6': '.grafeas.v1.NoteKind', '10': 'kind'},
-    {'1': 'related_url', '3': 5, '4': 3, '5': 11, '6': '.grafeas.v1.RelatedUrl', '10': 'relatedUrl'},
-    {'1': 'expiration_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expirationTime'},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'related_note_names', '3': 9, '4': 3, '5': 9, '10': 'relatedNoteNames'},
-    {'1': 'vulnerability', '3': 10, '4': 1, '5': 11, '6': '.grafeas.v1.VulnerabilityNote', '9': 0, '10': 'vulnerability'},
-    {'1': 'build', '3': 11, '4': 1, '5': 11, '6': '.grafeas.v1.BuildNote', '9': 0, '10': 'build'},
-    {'1': 'image', '3': 12, '4': 1, '5': 11, '6': '.grafeas.v1.ImageNote', '9': 0, '10': 'image'},
-    {'1': 'package', '3': 13, '4': 1, '5': 11, '6': '.grafeas.v1.PackageNote', '9': 0, '10': 'package'},
-    {'1': 'deployment', '3': 14, '4': 1, '5': 11, '6': '.grafeas.v1.DeploymentNote', '9': 0, '10': 'deployment'},
-    {'1': 'discovery', '3': 15, '4': 1, '5': 11, '6': '.grafeas.v1.DiscoveryNote', '9': 0, '10': 'discovery'},
-    {'1': 'attestation', '3': 16, '4': 1, '5': 11, '6': '.grafeas.v1.AttestationNote', '9': 0, '10': 'attestation'},
-    {'1': 'upgrade', '3': 17, '4': 1, '5': 11, '6': '.grafeas.v1.UpgradeNote', '9': 0, '10': 'upgrade'},
-    {'1': 'compliance', '3': 18, '4': 1, '5': 11, '6': '.grafeas.v1.ComplianceNote', '9': 0, '10': 'compliance'},
-    {'1': 'dsse_attestation', '3': 19, '4': 1, '5': 11, '6': '.grafeas.v1.DSSEAttestationNote', '9': 0, '10': 'dsseAttestation'},
-    {'1': 'vulnerability_assessment', '3': 20, '4': 1, '5': 11, '6': '.grafeas.v1.VulnerabilityAssessmentNote', '9': 0, '10': 'vulnerabilityAssessment'},
-    {'1': 'sbom_reference', '3': 21, '4': 1, '5': 11, '6': '.grafeas.v1.SBOMReferenceNote', '9': 0, '10': 'sbomReference'},
+    {
+      '1': 'kind',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.NoteKind',
+      '10': 'kind'
+    },
+    {
+      '1': 'related_url',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.RelatedUrl',
+      '10': 'relatedUrl'
+    },
+    {
+      '1': 'expiration_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expirationTime'
+    },
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'related_note_names',
+      '3': 9,
+      '4': 3,
+      '5': 9,
+      '10': 'relatedNoteNames'
+    },
+    {
+      '1': 'vulnerability',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityNote',
+      '9': 0,
+      '10': 'vulnerability'
+    },
+    {
+      '1': 'build',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.BuildNote',
+      '9': 0,
+      '10': 'build'
+    },
+    {
+      '1': 'image',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.ImageNote',
+      '9': 0,
+      '10': 'image'
+    },
+    {
+      '1': 'package',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.PackageNote',
+      '9': 0,
+      '10': 'package'
+    },
+    {
+      '1': 'deployment',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DeploymentNote',
+      '9': 0,
+      '10': 'deployment'
+    },
+    {
+      '1': 'discovery',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DiscoveryNote',
+      '9': 0,
+      '10': 'discovery'
+    },
+    {
+      '1': 'attestation',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.AttestationNote',
+      '9': 0,
+      '10': 'attestation'
+    },
+    {
+      '1': 'upgrade',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.UpgradeNote',
+      '9': 0,
+      '10': 'upgrade'
+    },
+    {
+      '1': 'compliance',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.ComplianceNote',
+      '9': 0,
+      '10': 'compliance'
+    },
+    {
+      '1': 'dsse_attestation',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DSSEAttestationNote',
+      '9': 0,
+      '10': 'dsseAttestation'
+    },
+    {
+      '1': 'vulnerability_assessment',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityAssessmentNote',
+      '9': 0,
+      '10': 'vulnerabilityAssessment'
+    },
+    {
+      '1': 'sbom_reference',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SBOMReferenceNote',
+      '9': 0,
+      '10': 'sbomReference'
+    },
   ],
   '7': {},
   '8': [
@@ -160,7 +419,14 @@ final $typed_data.Uint8List listOccurrencesRequestDescriptor = $convert.base64De
 const ListOccurrencesResponse$json = {
   '1': 'ListOccurrencesResponse',
   '2': [
-    {'1': 'occurrences', '3': 1, '4': 3, '5': 11, '6': '.grafeas.v1.Occurrence', '10': 'occurrences'},
+    {
+      '1': 'occurrences',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Occurrence',
+      '10': 'occurrences'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -180,16 +446,25 @@ const DeleteOccurrenceRequest$json = {
 };
 
 /// Descriptor for `DeleteOccurrenceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteOccurrenceRequestDescriptor = $convert.base64Decode(
-    'ChdEZWxldGVPY2N1cnJlbmNlUmVxdWVzdBIxCgRuYW1lGAEgASgJQh3gQQL6QRcKFWdyYWZlYX'
-    'MuaW8vT2NjdXJyZW5jZVIEbmFtZQ==');
+final $typed_data.Uint8List deleteOccurrenceRequestDescriptor =
+    $convert.base64Decode(
+        'ChdEZWxldGVPY2N1cnJlbmNlUmVxdWVzdBIxCgRuYW1lGAEgASgJQh3gQQL6QRcKFWdyYWZlYX'
+        'MuaW8vT2NjdXJyZW5jZVIEbmFtZQ==');
 
 @$core.Deprecated('Use createOccurrenceRequestDescriptor instead')
 const CreateOccurrenceRequest$json = {
   '1': 'CreateOccurrenceRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'occurrence', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Occurrence', '8': {}, '10': 'occurrence'},
+    {
+      '1': 'occurrence',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Occurrence',
+      '8': {},
+      '10': 'occurrence'
+    },
   ],
 };
 
@@ -204,8 +479,23 @@ const UpdateOccurrenceRequest$json = {
   '1': 'UpdateOccurrenceRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'occurrence', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Occurrence', '8': {}, '10': 'occurrence'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'occurrence',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Occurrence',
+      '8': {},
+      '10': 'occurrence'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -238,9 +528,10 @@ const GetOccurrenceNoteRequest$json = {
 };
 
 /// Descriptor for `GetOccurrenceNoteRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getOccurrenceNoteRequestDescriptor = $convert.base64Decode(
-    'ChhHZXRPY2N1cnJlbmNlTm90ZVJlcXVlc3QSMQoEbmFtZRgBIAEoCUId4EEC+kEXChVncmFmZW'
-    'FzLmlvL09jY3VycmVuY2VSBG5hbWU=');
+final $typed_data.Uint8List getOccurrenceNoteRequestDescriptor =
+    $convert.base64Decode(
+        'ChhHZXRPY2N1cnJlbmNlTm90ZVJlcXVlc3QSMQoEbmFtZRgBIAEoCUId4EEC+kEXChVncmFmZW'
+        'FzLmlvL09jY3VycmVuY2VSBG5hbWU=');
 
 @$core.Deprecated('Use listNotesRequestDescriptor instead')
 const ListNotesRequest$json = {
@@ -263,7 +554,14 @@ final $typed_data.Uint8List listNotesRequestDescriptor = $convert.base64Decode(
 const ListNotesResponse$json = {
   '1': 'ListNotesResponse',
   '2': [
-    {'1': 'notes', '3': 1, '4': 3, '5': 11, '6': '.grafeas.v1.Note', '10': 'notes'},
+    {
+      '1': 'notes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Note',
+      '10': 'notes'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -292,7 +590,15 @@ const CreateNoteRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'note_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'noteId'},
-    {'1': 'note', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.Note', '8': {}, '10': 'note'},
+    {
+      '1': 'note',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Note',
+      '8': {},
+      '10': 'note'
+    },
   ],
 };
 
@@ -307,8 +613,23 @@ const UpdateNoteRequest$json = {
   '1': 'UpdateNoteRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'note', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Note', '8': {}, '10': 'note'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'note',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Note',
+      '8': {},
+      '10': 'note'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -331,32 +652,49 @@ const ListNoteOccurrencesRequest$json = {
 };
 
 /// Descriptor for `ListNoteOccurrencesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNoteOccurrencesRequestDescriptor = $convert.base64Decode(
-    'ChpMaXN0Tm90ZU9jY3VycmVuY2VzUmVxdWVzdBIrCgRuYW1lGAEgASgJQhfgQQL6QREKD2dyYW'
-    'ZlYXMuaW8vTm90ZVIEbmFtZRIWCgZmaWx0ZXIYAiABKAlSBmZpbHRlchIbCglwYWdlX3NpemUY'
-    'AyABKAVSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YBCABKAlSCXBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listNoteOccurrencesRequestDescriptor =
+    $convert.base64Decode(
+        'ChpMaXN0Tm90ZU9jY3VycmVuY2VzUmVxdWVzdBIrCgRuYW1lGAEgASgJQhfgQQL6QREKD2dyYW'
+        'ZlYXMuaW8vTm90ZVIEbmFtZRIWCgZmaWx0ZXIYAiABKAlSBmZpbHRlchIbCglwYWdlX3NpemUY'
+        'AyABKAVSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YBCABKAlSCXBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use listNoteOccurrencesResponseDescriptor instead')
 const ListNoteOccurrencesResponse$json = {
   '1': 'ListNoteOccurrencesResponse',
   '2': [
-    {'1': 'occurrences', '3': 1, '4': 3, '5': 11, '6': '.grafeas.v1.Occurrence', '10': 'occurrences'},
+    {
+      '1': 'occurrences',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Occurrence',
+      '10': 'occurrences'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListNoteOccurrencesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNoteOccurrencesResponseDescriptor = $convert.base64Decode(
-    'ChtMaXN0Tm90ZU9jY3VycmVuY2VzUmVzcG9uc2USOAoLb2NjdXJyZW5jZXMYASADKAsyFi5ncm'
-    'FmZWFzLnYxLk9jY3VycmVuY2VSC29jY3VycmVuY2VzEiYKD25leHRfcGFnZV90b2tlbhgCIAEo'
-    'CVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listNoteOccurrencesResponseDescriptor =
+    $convert.base64Decode(
+        'ChtMaXN0Tm90ZU9jY3VycmVuY2VzUmVzcG9uc2USOAoLb2NjdXJyZW5jZXMYASADKAsyFi5ncm'
+        'FmZWFzLnYxLk9jY3VycmVuY2VSC29jY3VycmVuY2VzEiYKD25leHRfcGFnZV90b2tlbhgCIAEo'
+        'CVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use batchCreateNotesRequestDescriptor instead')
 const BatchCreateNotesRequest$json = {
   '1': 'BatchCreateNotesRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'notes', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.BatchCreateNotesRequest.NotesEntry', '8': {}, '10': 'notes'},
+    {
+      '1': 'notes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.BatchCreateNotesRequest.NotesEntry',
+      '8': {},
+      '10': 'notes'
+    },
   ],
   '3': [BatchCreateNotesRequest_NotesEntry$json],
 };
@@ -366,7 +704,14 @@ const BatchCreateNotesRequest_NotesEntry$json = {
   '1': 'NotesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Note', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Note',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -383,40 +728,64 @@ final $typed_data.Uint8List batchCreateNotesRequestDescriptor = $convert.base64D
 const BatchCreateNotesResponse$json = {
   '1': 'BatchCreateNotesResponse',
   '2': [
-    {'1': 'notes', '3': 1, '4': 3, '5': 11, '6': '.grafeas.v1.Note', '10': 'notes'},
+    {
+      '1': 'notes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Note',
+      '10': 'notes'
+    },
   ],
 };
 
 /// Descriptor for `BatchCreateNotesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateNotesResponseDescriptor = $convert.base64Decode(
-    'ChhCYXRjaENyZWF0ZU5vdGVzUmVzcG9uc2USJgoFbm90ZXMYASADKAsyEC5ncmFmZWFzLnYxLk'
-    '5vdGVSBW5vdGVz');
+final $typed_data.Uint8List batchCreateNotesResponseDescriptor =
+    $convert.base64Decode(
+        'ChhCYXRjaENyZWF0ZU5vdGVzUmVzcG9uc2USJgoFbm90ZXMYASADKAsyEC5ncmFmZWFzLnYxLk'
+        '5vdGVSBW5vdGVz');
 
 @$core.Deprecated('Use batchCreateOccurrencesRequestDescriptor instead')
 const BatchCreateOccurrencesRequest$json = {
   '1': 'BatchCreateOccurrencesRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'occurrences', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.Occurrence', '8': {}, '10': 'occurrences'},
+    {
+      '1': 'occurrences',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Occurrence',
+      '8': {},
+      '10': 'occurrences'
+    },
   ],
 };
 
 /// Descriptor for `BatchCreateOccurrencesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateOccurrencesRequestDescriptor = $convert.base64Decode(
-    'Ch1CYXRjaENyZWF0ZU9jY3VycmVuY2VzUmVxdWVzdBIyCgZwYXJlbnQYASABKAlCGuBBAvpBFA'
-    'oSZ3JhZmVhcy5pby9Qcm9qZWN0UgZwYXJlbnQSPQoLb2NjdXJyZW5jZXMYAiADKAsyFi5ncmFm'
-    'ZWFzLnYxLk9jY3VycmVuY2VCA+BBAlILb2NjdXJyZW5jZXM=');
+final $typed_data.Uint8List batchCreateOccurrencesRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1CYXRjaENyZWF0ZU9jY3VycmVuY2VzUmVxdWVzdBIyCgZwYXJlbnQYASABKAlCGuBBAvpBFA'
+        'oSZ3JhZmVhcy5pby9Qcm9qZWN0UgZwYXJlbnQSPQoLb2NjdXJyZW5jZXMYAiADKAsyFi5ncmFm'
+        'ZWFzLnYxLk9jY3VycmVuY2VCA+BBAlILb2NjdXJyZW5jZXM=');
 
 @$core.Deprecated('Use batchCreateOccurrencesResponseDescriptor instead')
 const BatchCreateOccurrencesResponse$json = {
   '1': 'BatchCreateOccurrencesResponse',
   '2': [
-    {'1': 'occurrences', '3': 1, '4': 3, '5': 11, '6': '.grafeas.v1.Occurrence', '10': 'occurrences'},
+    {
+      '1': 'occurrences',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Occurrence',
+      '10': 'occurrences'
+    },
   ],
 };
 
 /// Descriptor for `BatchCreateOccurrencesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateOccurrencesResponseDescriptor = $convert.base64Decode(
-    'Ch5CYXRjaENyZWF0ZU9jY3VycmVuY2VzUmVzcG9uc2USOAoLb2NjdXJyZW5jZXMYASADKAsyFi'
-    '5ncmFmZWFzLnYxLk9jY3VycmVuY2VSC29jY3VycmVuY2Vz');
-
+final $typed_data.Uint8List batchCreateOccurrencesResponseDescriptor =
+    $convert.base64Decode(
+        'Ch5CYXRjaENyZWF0ZU9jY3VycmVuY2VzUmVzcG9uc2USOAoLb2NjdXJyZW5jZXMYASADKAsyFi'
+        '5ncmFmZWFzLnYxLk9jY3VycmVuY2VSC29jY3VycmVuY2Vz');

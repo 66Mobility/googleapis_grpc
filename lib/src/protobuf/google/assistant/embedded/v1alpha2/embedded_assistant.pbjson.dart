@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const AssistRequest$json = {
   '1': 'AssistRequest',
   '2': [
-    {'1': 'config', '3': 1, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.AssistConfig', '9': 0, '10': 'config'},
+    {
+      '1': 'config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.AssistConfig',
+      '9': 0,
+      '10': 'config'
+    },
     {'1': 'audio_in', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'audioIn'},
   ],
   '8': [
@@ -35,13 +43,62 @@ final $typed_data.Uint8List assistRequestDescriptor = $convert.base64Decode(
 const AssistResponse$json = {
   '1': 'AssistResponse',
   '2': [
-    {'1': 'event_type', '3': 1, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha2.AssistResponse.EventType', '10': 'eventType'},
-    {'1': 'audio_out', '3': 3, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.AudioOut', '10': 'audioOut'},
-    {'1': 'screen_out', '3': 4, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.ScreenOut', '10': 'screenOut'},
-    {'1': 'device_action', '3': 6, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.DeviceAction', '10': 'deviceAction'},
-    {'1': 'speech_results', '3': 2, '4': 3, '5': 11, '6': '.google.assistant.embedded.v1alpha2.SpeechRecognitionResult', '10': 'speechResults'},
-    {'1': 'dialog_state_out', '3': 5, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.DialogStateOut', '10': 'dialogStateOut'},
-    {'1': 'debug_info', '3': 8, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.DebugInfo', '10': 'debugInfo'},
+    {
+      '1': 'event_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha2.AssistResponse.EventType',
+      '10': 'eventType'
+    },
+    {
+      '1': 'audio_out',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.AudioOut',
+      '10': 'audioOut'
+    },
+    {
+      '1': 'screen_out',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.ScreenOut',
+      '10': 'screenOut'
+    },
+    {
+      '1': 'device_action',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.DeviceAction',
+      '10': 'deviceAction'
+    },
+    {
+      '1': 'speech_results',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.SpeechRecognitionResult',
+      '10': 'speechResults'
+    },
+    {
+      '1': 'dialog_state_out',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.DialogStateOut',
+      '10': 'dialogStateOut'
+    },
+    {
+      '1': 'debug_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.DebugInfo',
+      '10': 'debugInfo'
+    },
   ],
   '4': [AssistResponse_EventType$json],
 };
@@ -75,7 +132,13 @@ final $typed_data.Uint8List assistResponseDescriptor = $convert.base64Decode(
 const DebugInfo$json = {
   '1': 'DebugInfo',
   '2': [
-    {'1': 'aog_agent_to_assistant_json', '3': 1, '4': 1, '5': 9, '10': 'aogAgentToAssistantJson'},
+    {
+      '1': 'aog_agent_to_assistant_json',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'aogAgentToAssistantJson'
+    },
   ],
 };
 
@@ -88,13 +151,56 @@ final $typed_data.Uint8List debugInfoDescriptor = $convert.base64Decode(
 const AssistConfig$json = {
   '1': 'AssistConfig',
   '2': [
-    {'1': 'audio_in_config', '3': 1, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.AudioInConfig', '9': 0, '10': 'audioInConfig'},
+    {
+      '1': 'audio_in_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.AudioInConfig',
+      '9': 0,
+      '10': 'audioInConfig'
+    },
     {'1': 'text_query', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'textQuery'},
-    {'1': 'audio_out_config', '3': 2, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.AudioOutConfig', '10': 'audioOutConfig'},
-    {'1': 'screen_out_config', '3': 8, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.ScreenOutConfig', '10': 'screenOutConfig'},
-    {'1': 'dialog_state_in', '3': 3, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.DialogStateIn', '10': 'dialogStateIn'},
-    {'1': 'device_config', '3': 4, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.DeviceConfig', '10': 'deviceConfig'},
-    {'1': 'debug_config', '3': 5, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.DebugConfig', '10': 'debugConfig'},
+    {
+      '1': 'audio_out_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.AudioOutConfig',
+      '10': 'audioOutConfig'
+    },
+    {
+      '1': 'screen_out_config',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.ScreenOutConfig',
+      '10': 'screenOutConfig'
+    },
+    {
+      '1': 'dialog_state_in',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.DialogStateIn',
+      '10': 'dialogStateIn'
+    },
+    {
+      '1': 'device_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.DeviceConfig',
+      '10': 'deviceConfig'
+    },
+    {
+      '1': 'debug_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.DebugConfig',
+      '10': 'debugConfig'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -119,7 +225,14 @@ final $typed_data.Uint8List assistConfigDescriptor = $convert.base64Decode(
 const AudioInConfig$json = {
   '1': 'AudioInConfig',
   '2': [
-    {'1': 'encoding', '3': 1, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha2.AudioInConfig.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha2.AudioInConfig.Encoding',
+      '10': 'encoding'
+    },
     {'1': 'sample_rate_hertz', '3': 2, '4': 1, '5': 5, '10': 'sampleRateHertz'},
   ],
   '4': [AudioInConfig_Encoding$json],
@@ -146,9 +259,22 @@ final $typed_data.Uint8List audioInConfigDescriptor = $convert.base64Decode(
 const AudioOutConfig$json = {
   '1': 'AudioOutConfig',
   '2': [
-    {'1': 'encoding', '3': 1, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha2.AudioOutConfig.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha2.AudioOutConfig.Encoding',
+      '10': 'encoding'
+    },
     {'1': 'sample_rate_hertz', '3': 2, '4': 1, '5': 5, '10': 'sampleRateHertz'},
-    {'1': 'volume_percentage', '3': 3, '4': 1, '5': 5, '10': 'volumePercentage'},
+    {
+      '1': 'volume_percentage',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'volumePercentage'
+    },
   ],
   '4': [AudioOutConfig_Encoding$json],
 };
@@ -176,7 +302,14 @@ final $typed_data.Uint8List audioOutConfigDescriptor = $convert.base64Decode(
 const ScreenOutConfig$json = {
   '1': 'ScreenOutConfig',
   '2': [
-    {'1': 'screen_mode', '3': 1, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha2.ScreenOutConfig.ScreenMode', '10': 'screenMode'},
+    {
+      '1': 'screen_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha2.ScreenOutConfig.ScreenMode',
+      '10': 'screenMode'
+    },
   ],
   '4': [ScreenOutConfig_ScreenMode$json],
 };
@@ -202,10 +335,29 @@ final $typed_data.Uint8List screenOutConfigDescriptor = $convert.base64Decode(
 const DialogStateIn$json = {
   '1': 'DialogStateIn',
   '2': [
-    {'1': 'conversation_state', '3': 1, '4': 1, '5': 12, '10': 'conversationState'},
+    {
+      '1': 'conversation_state',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '10': 'conversationState'
+    },
     {'1': 'language_code', '3': 2, '4': 1, '5': 9, '10': 'languageCode'},
-    {'1': 'device_location', '3': 5, '4': 1, '5': 11, '6': '.google.assistant.embedded.v1alpha2.DeviceLocation', '10': 'deviceLocation'},
-    {'1': 'is_new_conversation', '3': 7, '4': 1, '5': 8, '10': 'isNewConversation'},
+    {
+      '1': 'device_location',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.assistant.embedded.v1alpha2.DeviceLocation',
+      '10': 'deviceLocation'
+    },
+    {
+      '1': 'is_new_conversation',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'isNewConversation'
+    },
   ],
 };
 
@@ -240,14 +392,21 @@ const AudioOut$json = {
 };
 
 /// Descriptor for `AudioOut`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List audioOutDescriptor = $convert.base64Decode(
-    'CghBdWRpb091dBIdCgphdWRpb19kYXRhGAEgASgMUglhdWRpb0RhdGE=');
+final $typed_data.Uint8List audioOutDescriptor = $convert
+    .base64Decode('CghBdWRpb091dBIdCgphdWRpb19kYXRhGAEgASgMUglhdWRpb0RhdGE=');
 
 @$core.Deprecated('Use screenOutDescriptor instead')
 const ScreenOut$json = {
   '1': 'ScreenOut',
   '2': [
-    {'1': 'format', '3': 1, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha2.ScreenOut.Format', '10': 'format'},
+    {
+      '1': 'format',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha2.ScreenOut.Format',
+      '10': 'format'
+    },
     {'1': 'data', '3': 2, '4': 1, '5': 12, '10': 'data'},
   ],
   '4': [ScreenOut_Format$json],
@@ -272,7 +431,13 @@ final $typed_data.Uint8List screenOutDescriptor = $convert.base64Decode(
 const DeviceAction$json = {
   '1': 'DeviceAction',
   '2': [
-    {'1': 'device_request_json', '3': 1, '4': 1, '5': 9, '10': 'deviceRequestJson'},
+    {
+      '1': 'device_request_json',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'deviceRequestJson'
+    },
   ],
 };
 
@@ -291,18 +456,44 @@ const SpeechRecognitionResult$json = {
 };
 
 /// Descriptor for `SpeechRecognitionResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List speechRecognitionResultDescriptor = $convert.base64Decode(
-    'ChdTcGVlY2hSZWNvZ25pdGlvblJlc3VsdBIeCgp0cmFuc2NyaXB0GAEgASgJUgp0cmFuc2NyaX'
-    'B0EhwKCXN0YWJpbGl0eRgCIAEoAlIJc3RhYmlsaXR5');
+final $typed_data.Uint8List speechRecognitionResultDescriptor =
+    $convert.base64Decode(
+        'ChdTcGVlY2hSZWNvZ25pdGlvblJlc3VsdBIeCgp0cmFuc2NyaXB0GAEgASgJUgp0cmFuc2NyaX'
+        'B0EhwKCXN0YWJpbGl0eRgCIAEoAlIJc3RhYmlsaXR5');
 
 @$core.Deprecated('Use dialogStateOutDescriptor instead')
 const DialogStateOut$json = {
   '1': 'DialogStateOut',
   '2': [
-    {'1': 'supplemental_display_text', '3': 1, '4': 1, '5': 9, '10': 'supplementalDisplayText'},
-    {'1': 'conversation_state', '3': 2, '4': 1, '5': 12, '10': 'conversationState'},
-    {'1': 'microphone_mode', '3': 3, '4': 1, '5': 14, '6': '.google.assistant.embedded.v1alpha2.DialogStateOut.MicrophoneMode', '10': 'microphoneMode'},
-    {'1': 'volume_percentage', '3': 4, '4': 1, '5': 5, '10': 'volumePercentage'},
+    {
+      '1': 'supplemental_display_text',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'supplementalDisplayText'
+    },
+    {
+      '1': 'conversation_state',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '10': 'conversationState'
+    },
+    {
+      '1': 'microphone_mode',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.assistant.embedded.v1alpha2.DialogStateOut.MicrophoneMode',
+      '10': 'microphoneMode'
+    },
+    {
+      '1': 'volume_percentage',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'volumePercentage'
+    },
   ],
   '4': [DialogStateOut_MicrophoneMode$json],
 };
@@ -344,7 +535,15 @@ final $typed_data.Uint8List debugConfigDescriptor = $convert.base64Decode(
 const DeviceLocation$json = {
   '1': 'DeviceLocation',
   '2': [
-    {'1': 'coordinates', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '9': 0, '10': 'coordinates'},
+    {
+      '1': 'coordinates',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '9': 0,
+      '10': 'coordinates'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -355,4 +554,3 @@ const DeviceLocation$json = {
 final $typed_data.Uint8List deviceLocationDescriptor = $convert.base64Decode(
     'Cg5EZXZpY2VMb2NhdGlvbhI3Cgtjb29yZGluYXRlcxgBIAEoCzITLmdvb2dsZS50eXBlLkxhdE'
     'xuZ0gAUgtjb29yZGluYXRlc0IGCgR0eXBl');
-

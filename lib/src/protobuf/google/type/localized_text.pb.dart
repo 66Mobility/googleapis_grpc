@@ -29,41 +29,52 @@ class LocalizedText extends $pb.GeneratedMessage {
     return $result;
   }
   LocalizedText._() : super();
-  factory LocalizedText.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocalizedText.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocalizedText.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocalizedText.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocalizedText', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocalizedText',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LocalizedText clone() => LocalizedText()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocalizedText copyWith(void Function(LocalizedText) updates) => super.copyWith((message) => updates(message as LocalizedText)) as LocalizedText;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocalizedText copyWith(void Function(LocalizedText) updates) =>
+      super.copyWith((message) => updates(message as LocalizedText))
+          as LocalizedText;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocalizedText create() => LocalizedText._();
   LocalizedText createEmptyInstance() => create();
-  static $pb.PbList<LocalizedText> createRepeated() => $pb.PbList<LocalizedText>();
+  static $pb.PbList<LocalizedText> createRepeated() =>
+      $pb.PbList<LocalizedText>();
   @$core.pragma('dart2js:noInline')
-  static LocalizedText getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocalizedText>(create);
+  static LocalizedText getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocalizedText>(create);
   static LocalizedText? _defaultInstance;
 
   /// Localized string in the language corresponding to `language_code' below.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -76,13 +87,16 @@ class LocalizedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get languageCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set languageCode($core.String v) { $_setString(1, v); }
+  set languageCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLanguageCode() => $_has(1);
   @$pb.TagNumber(2)
   void clearLanguageCode() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

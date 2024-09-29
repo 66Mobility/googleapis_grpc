@@ -29,25 +29,30 @@ class Layer extends $pb.GeneratedMessage {
     return $result;
   }
   Layer._() : super();
-  factory Layer.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Layer.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Layer.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Layer.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Layer', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Layer',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'directive')
     ..aOS(2, _omitFieldNames ? '' : 'arguments')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Layer clone() => Layer()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Layer copyWith(void Function(Layer) updates) => super.copyWith((message) => updates(message as Layer)) as Layer;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Layer copyWith(void Function(Layer) updates) =>
+      super.copyWith((message) => updates(message as Layer)) as Layer;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -56,7 +61,8 @@ class Layer extends $pb.GeneratedMessage {
   Layer createEmptyInstance() => create();
   static $pb.PbList<Layer> createRepeated() => $pb.PbList<Layer>();
   @$core.pragma('dart2js:noInline')
-  static Layer getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Layer>(create);
+  static Layer getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Layer>(create);
   static Layer? _defaultInstance;
 
   /// Required. The recovered Dockerfile directive used to construct this layer.
@@ -64,7 +70,10 @@ class Layer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get directive => $_getSZ(0);
   @$pb.TagNumber(1)
-  set directive($core.String v) { $_setString(0, v); }
+  set directive($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDirective() => $_has(0);
   @$pb.TagNumber(1)
@@ -74,7 +83,10 @@ class Layer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get arguments => $_getSZ(1);
   @$pb.TagNumber(2)
-  set arguments($core.String v) { $_setString(1, v); }
+  set arguments($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasArguments() => $_has(1);
   @$pb.TagNumber(2)
@@ -101,26 +113,32 @@ class Fingerprint extends $pb.GeneratedMessage {
     return $result;
   }
   Fingerprint._() : super();
-  factory Fingerprint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Fingerprint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Fingerprint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Fingerprint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Fingerprint', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Fingerprint',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'v1Name')
     ..pPS(2, _omitFieldNames ? '' : 'v2Blob')
     ..aOS(3, _omitFieldNames ? '' : 'v2Name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Fingerprint clone() => Fingerprint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Fingerprint copyWith(void Function(Fingerprint) updates) => super.copyWith((message) => updates(message as Fingerprint)) as Fingerprint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Fingerprint copyWith(void Function(Fingerprint) updates) =>
+      super.copyWith((message) => updates(message as Fingerprint))
+          as Fingerprint;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -129,7 +147,8 @@ class Fingerprint extends $pb.GeneratedMessage {
   Fingerprint createEmptyInstance() => create();
   static $pb.PbList<Fingerprint> createRepeated() => $pb.PbList<Fingerprint>();
   @$core.pragma('dart2js:noInline')
-  static Fingerprint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Fingerprint>(create);
+  static Fingerprint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Fingerprint>(create);
   static Fingerprint? _defaultInstance;
 
   /// Required. The layer ID of the final layer in the Docker image's v1
@@ -137,7 +156,10 @@ class Fingerprint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get v1Name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set v1Name($core.String v) { $_setString(0, v); }
+  set v1Name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasV1Name() => $_has(0);
   @$pb.TagNumber(1)
@@ -154,7 +176,10 @@ class Fingerprint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get v2Name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set v2Name($core.String v) { $_setString(2, v); }
+  set v2Name($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasV2Name() => $_has(2);
   @$pb.TagNumber(3)
@@ -181,25 +206,31 @@ class ImageNote extends $pb.GeneratedMessage {
     return $result;
   }
   ImageNote._() : super();
-  factory ImageNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImageNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImageNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImageNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImageNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceUrl')
-    ..aOM<Fingerprint>(2, _omitFieldNames ? '' : 'fingerprint', subBuilder: Fingerprint.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Fingerprint>(2, _omitFieldNames ? '' : 'fingerprint',
+        subBuilder: Fingerprint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ImageNote clone() => ImageNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImageNote copyWith(void Function(ImageNote) updates) => super.copyWith((message) => updates(message as ImageNote)) as ImageNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImageNote copyWith(void Function(ImageNote) updates) =>
+      super.copyWith((message) => updates(message as ImageNote)) as ImageNote;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -208,7 +239,8 @@ class ImageNote extends $pb.GeneratedMessage {
   ImageNote createEmptyInstance() => create();
   static $pb.PbList<ImageNote> createRepeated() => $pb.PbList<ImageNote>();
   @$core.pragma('dart2js:noInline')
-  static ImageNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageNote>(create);
+  static ImageNote getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageNote>(create);
   static ImageNote? _defaultInstance;
 
   /// Required. Immutable. The resource_url for the resource representing the
@@ -216,7 +248,10 @@ class ImageNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceUrl => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceUrl($core.String v) { $_setString(0, v); }
+  set resourceUrl($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasResourceUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -226,7 +261,10 @@ class ImageNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Fingerprint get fingerprint => $_getN(1);
   @$pb.TagNumber(2)
-  set fingerprint(Fingerprint v) { setField(2, v); }
+  set fingerprint(Fingerprint v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFingerprint() => $_has(1);
   @$pb.TagNumber(2)
@@ -261,43 +299,56 @@ class ImageOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   ImageOccurrence._() : super();
-  factory ImageOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImageOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImageOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImageOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<Fingerprint>(1, _omitFieldNames ? '' : 'fingerprint', subBuilder: Fingerprint.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImageOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<Fingerprint>(1, _omitFieldNames ? '' : 'fingerprint',
+        subBuilder: Fingerprint.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'distance', $pb.PbFieldType.O3)
-    ..pc<Layer>(3, _omitFieldNames ? '' : 'layerInfo', $pb.PbFieldType.PM, subBuilder: Layer.create)
+    ..pc<Layer>(3, _omitFieldNames ? '' : 'layerInfo', $pb.PbFieldType.PM,
+        subBuilder: Layer.create)
     ..aOS(4, _omitFieldNames ? '' : 'baseResourceUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ImageOccurrence clone() => ImageOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImageOccurrence copyWith(void Function(ImageOccurrence) updates) => super.copyWith((message) => updates(message as ImageOccurrence)) as ImageOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImageOccurrence copyWith(void Function(ImageOccurrence) updates) =>
+      super.copyWith((message) => updates(message as ImageOccurrence))
+          as ImageOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImageOccurrence create() => ImageOccurrence._();
   ImageOccurrence createEmptyInstance() => create();
-  static $pb.PbList<ImageOccurrence> createRepeated() => $pb.PbList<ImageOccurrence>();
+  static $pb.PbList<ImageOccurrence> createRepeated() =>
+      $pb.PbList<ImageOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static ImageOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageOccurrence>(create);
+  static ImageOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImageOccurrence>(create);
   static ImageOccurrence? _defaultInstance;
 
   /// Required. The fingerprint of the derived image.
   @$pb.TagNumber(1)
   Fingerprint get fingerprint => $_getN(0);
   @$pb.TagNumber(1)
-  set fingerprint(Fingerprint v) { setField(1, v); }
+  set fingerprint(Fingerprint v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFingerprint() => $_has(0);
   @$pb.TagNumber(1)
@@ -310,7 +361,10 @@ class ImageOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get distance => $_getIZ(1);
   @$pb.TagNumber(2)
-  set distance($core.int v) { $_setSignedInt32(1, v); }
+  set distance($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDistance() => $_has(1);
   @$pb.TagNumber(2)
@@ -327,13 +381,16 @@ class ImageOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get baseResourceUrl => $_getSZ(3);
   @$pb.TagNumber(4)
-  set baseResourceUrl($core.String v) { $_setString(3, v); }
+  set baseResourceUrl($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBaseResourceUrl() => $_has(3);
   @$pb.TagNumber(4)
   void clearBaseResourceUrl() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -57,7 +57,15 @@ const TypedValue$json = {
     {'1': 'int64_value', '3': 2, '4': 1, '5': 3, '9': 0, '10': 'int64Value'},
     {'1': 'double_value', '3': 3, '4': 1, '5': 1, '9': 0, '10': 'doubleValue'},
     {'1': 'string_value', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'stringValue'},
-    {'1': 'distribution_value', '3': 5, '4': 1, '5': 11, '6': '.google.api.Distribution', '9': 0, '10': 'distributionValue'},
+    {
+      '1': 'distribution_value',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Distribution',
+      '9': 0,
+      '10': 'distributionValue'
+    },
   ],
   '8': [
     {'1': 'value'},
@@ -76,8 +84,22 @@ final $typed_data.Uint8List typedValueDescriptor = $convert.base64Decode(
 const TimeInterval$json = {
   '1': 'TimeInterval',
   '2': [
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
   ],
 };
 
@@ -91,9 +113,30 @@ final $typed_data.Uint8List timeIntervalDescriptor = $convert.base64Decode(
 const Aggregation$json = {
   '1': 'Aggregation',
   '2': [
-    {'1': 'alignment_period', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'alignmentPeriod'},
-    {'1': 'per_series_aligner', '3': 2, '4': 1, '5': 14, '6': '.google.monitoring.v3.Aggregation.Aligner', '10': 'perSeriesAligner'},
-    {'1': 'cross_series_reducer', '3': 4, '4': 1, '5': 14, '6': '.google.monitoring.v3.Aggregation.Reducer', '10': 'crossSeriesReducer'},
+    {
+      '1': 'alignment_period',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'alignmentPeriod'
+    },
+    {
+      '1': 'per_series_aligner',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.Aggregation.Aligner',
+      '10': 'perSeriesAligner'
+    },
+    {
+      '1': 'cross_series_reducer',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.Aggregation.Reducer',
+      '10': 'crossSeriesReducer'
+    },
     {'1': 'group_by_fields', '3': 5, '4': 3, '5': 9, '10': 'groupByFields'},
   ],
   '4': [Aggregation_Aligner$json, Aggregation_Reducer$json],
@@ -167,4 +210,3 @@ final $typed_data.Uint8List aggregationDescriptor = $convert.base64Decode(
     'VUNFX0ZSQUNUSU9OX1RSVUUQCBIYChRSRURVQ0VfUEVSQ0VOVElMRV85ORAJEhgKFFJFRFVDRV'
     '9QRVJDRU5USUxFXzk1EAoSGAoUUkVEVUNFX1BFUkNFTlRJTEVfNTAQCxIYChRSRURVQ0VfUEVS'
     'Q0VOVElMRV8wNRAM');
-

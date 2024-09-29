@@ -46,8 +46,23 @@ final $typed_data.Uint8List harmCategoryDescriptor = $convert.base64Decode(
 const ContentFilter$json = {
   '1': 'ContentFilter',
   '2': [
-    {'1': 'reason', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.ContentFilter.BlockedReason', '10': 'reason'},
-    {'1': 'message', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'message', '17': true},
+    {
+      '1': 'reason',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.ContentFilter.BlockedReason',
+      '10': 'reason'
+    },
+    {
+      '1': 'message',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'message',
+      '17': true
+    },
   ],
   '4': [ContentFilter_BlockedReason$json],
   '8': [
@@ -76,8 +91,22 @@ final $typed_data.Uint8List contentFilterDescriptor = $convert.base64Decode(
 const SafetyFeedback$json = {
   '1': 'SafetyFeedback',
   '2': [
-    {'1': 'rating', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SafetyRating', '10': 'rating'},
-    {'1': 'setting', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SafetySetting', '10': 'setting'},
+    {
+      '1': 'rating',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SafetyRating',
+      '10': 'rating'
+    },
+    {
+      '1': 'setting',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SafetySetting',
+      '10': 'setting'
+    },
   ],
 };
 
@@ -92,8 +121,24 @@ final $typed_data.Uint8List safetyFeedbackDescriptor = $convert.base64Decode(
 const SafetyRating$json = {
   '1': 'SafetyRating',
   '2': [
-    {'1': 'category', '3': 3, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.HarmCategory', '8': {}, '10': 'category'},
-    {'1': 'probability', '3': 4, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.SafetyRating.HarmProbability', '8': {}, '10': 'probability'},
+    {
+      '1': 'category',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.HarmCategory',
+      '8': {},
+      '10': 'category'
+    },
+    {
+      '1': 'probability',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.SafetyRating.HarmProbability',
+      '8': {},
+      '10': 'probability'
+    },
     {'1': 'blocked', '3': 5, '4': 1, '5': 8, '10': 'blocked'},
   ],
   '4': [SafetyRating_HarmProbability$json],
@@ -124,8 +169,25 @@ final $typed_data.Uint8List safetyRatingDescriptor = $convert.base64Decode(
 const SafetySetting$json = {
   '1': 'SafetySetting',
   '2': [
-    {'1': 'category', '3': 3, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.HarmCategory', '8': {}, '10': 'category'},
-    {'1': 'threshold', '3': 4, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.SafetySetting.HarmBlockThreshold', '8': {}, '10': 'threshold'},
+    {
+      '1': 'category',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.HarmCategory',
+      '8': {},
+      '10': 'category'
+    },
+    {
+      '1': 'threshold',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.ai.generativelanguage.v1beta.SafetySetting.HarmBlockThreshold',
+      '8': {},
+      '10': 'threshold'
+    },
   ],
   '4': [SafetySetting_HarmBlockThreshold$json],
 };
@@ -152,4 +214,3 @@ final $typed_data.Uint8List safetySettingDescriptor = $convert.base64Decode(
     'ZXNob2xkEiQKIEhBUk1fQkxPQ0tfVEhSRVNIT0xEX1VOU1BFQ0lGSUVEEAASFwoTQkxPQ0tfTE'
     '9XX0FORF9BQk9WRRABEhoKFkJMT0NLX01FRElVTV9BTkRfQUJPVkUQAhITCg9CTE9DS19PTkxZ'
     'X0hJR0gQAxIOCgpCTE9DS19OT05FEAQSBwoDT0ZGEAU=');
-

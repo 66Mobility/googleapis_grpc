@@ -19,7 +19,15 @@ const RegionIdentifier$json = {
   '2': [
     {'1': 'place', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'place'},
     {'1': 'unit_code', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'unitCode'},
-    {'1': 'place_type', '3': 6, '4': 1, '5': 14, '6': '.google.maps.regionlookup.v1alpha.RegionIdentifier.PlaceType', '8': {}, '10': 'placeType'},
+    {
+      '1': 'place_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.regionlookup.v1alpha.RegionIdentifier.PlaceType',
+      '8': {},
+      '10': 'placeType'
+    },
     {'1': 'language_code', '3': 7, '4': 1, '5': 9, '10': 'languageCode'},
     {'1': 'region_code', '3': 8, '4': 1, '5': 9, '10': 'regionCode'},
   ],
@@ -59,4 +67,3 @@ final $typed_data.Uint8List regionIdentifierDescriptor = $convert.base64Decode(
     'hCT1JIT09EEAUSCwoHQ09VTlRSWRAGEg8KC1NVQkxPQ0FMSVRZEAcSHwobQURNSU5JU1RSQVRJ'
     'VkVfQVJFQV9MRVZFTF8zEAgSHwobQURNSU5JU1RSQVRJVkVfQVJFQV9MRVZFTF80EAkSEwoPU0'
     'NIT09MX0RJU1RSSUNUEApCCgoIbG9jYXRpb24=');
-

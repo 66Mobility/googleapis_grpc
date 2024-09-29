@@ -43,25 +43,33 @@ class BitSequence extends $pb.GeneratedMessage {
     return $result;
   }
   BitSequence._() : super();
-  factory BitSequence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BitSequence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BitSequence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BitSequence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BitSequence', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'bitmap', $pb.PbFieldType.OY)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BitSequence',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'bitmap', $pb.PbFieldType.OY)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'padding', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BitSequence clone() => BitSequence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BitSequence copyWith(void Function(BitSequence) updates) => super.copyWith((message) => updates(message as BitSequence)) as BitSequence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BitSequence copyWith(void Function(BitSequence) updates) =>
+      super.copyWith((message) => updates(message as BitSequence))
+          as BitSequence;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -70,7 +78,8 @@ class BitSequence extends $pb.GeneratedMessage {
   BitSequence createEmptyInstance() => create();
   static $pb.PbList<BitSequence> createRepeated() => $pb.PbList<BitSequence>();
   @$core.pragma('dart2js:noInline')
-  static BitSequence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BitSequence>(create);
+  static BitSequence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BitSequence>(create);
   static BitSequence? _defaultInstance;
 
   /// The bytes that encode the bit sequence.
@@ -78,7 +87,10 @@ class BitSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get bitmap => $_getN(0);
   @$pb.TagNumber(1)
-  set bitmap($core.List<$core.int> v) { $_setBytes(0, v); }
+  set bitmap($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBitmap() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,7 +102,10 @@ class BitSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get padding => $_getIZ(1);
   @$pb.TagNumber(2)
-  set padding($core.int v) { $_setSignedInt32(1, v); }
+  set padding($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPadding() => $_has(1);
   @$pb.TagNumber(2)
@@ -125,25 +140,33 @@ class BloomFilter extends $pb.GeneratedMessage {
     return $result;
   }
   BloomFilter._() : super();
-  factory BloomFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BloomFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BloomFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BloomFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BloomFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<BitSequence>(1, _omitFieldNames ? '' : 'bits', subBuilder: BitSequence.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BloomFilter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<BitSequence>(1, _omitFieldNames ? '' : 'bits',
+        subBuilder: BitSequence.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'hashCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BloomFilter clone() => BloomFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BloomFilter copyWith(void Function(BloomFilter) updates) => super.copyWith((message) => updates(message as BloomFilter)) as BloomFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BloomFilter copyWith(void Function(BloomFilter) updates) =>
+      super.copyWith((message) => updates(message as BloomFilter))
+          as BloomFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -152,14 +175,18 @@ class BloomFilter extends $pb.GeneratedMessage {
   BloomFilter createEmptyInstance() => create();
   static $pb.PbList<BloomFilter> createRepeated() => $pb.PbList<BloomFilter>();
   @$core.pragma('dart2js:noInline')
-  static BloomFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BloomFilter>(create);
+  static BloomFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BloomFilter>(create);
   static BloomFilter? _defaultInstance;
 
   /// The bloom filter data.
   @$pb.TagNumber(1)
   BitSequence get bits => $_getN(0);
   @$pb.TagNumber(1)
-  set bits(BitSequence v) { setField(1, v); }
+  set bits(BitSequence v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBits() => $_has(0);
   @$pb.TagNumber(1)
@@ -171,13 +198,16 @@ class BloomFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get hashCount => $_getIZ(1);
   @$pb.TagNumber(2)
-  set hashCount($core.int v) { $_setSignedInt32(1, v); }
+  set hashCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHashCount() => $_has(1);
   @$pb.TagNumber(2)
   void clearHashCount() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

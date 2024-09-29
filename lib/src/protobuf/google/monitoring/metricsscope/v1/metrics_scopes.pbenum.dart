@@ -15,13 +15,19 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Batch operation states.
 class OperationMetadata_State extends $pb.ProtobufEnum {
-  static const OperationMetadata_State STATE_UNSPECIFIED = OperationMetadata_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const OperationMetadata_State CREATED = OperationMetadata_State._(1, _omitEnumNames ? '' : 'CREATED');
-  static const OperationMetadata_State RUNNING = OperationMetadata_State._(2, _omitEnumNames ? '' : 'RUNNING');
-  static const OperationMetadata_State DONE = OperationMetadata_State._(3, _omitEnumNames ? '' : 'DONE');
-  static const OperationMetadata_State CANCELLED = OperationMetadata_State._(4, _omitEnumNames ? '' : 'CANCELLED');
+  static const OperationMetadata_State STATE_UNSPECIFIED =
+      OperationMetadata_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const OperationMetadata_State CREATED =
+      OperationMetadata_State._(1, _omitEnumNames ? '' : 'CREATED');
+  static const OperationMetadata_State RUNNING =
+      OperationMetadata_State._(2, _omitEnumNames ? '' : 'RUNNING');
+  static const OperationMetadata_State DONE =
+      OperationMetadata_State._(3, _omitEnumNames ? '' : 'DONE');
+  static const OperationMetadata_State CANCELLED =
+      OperationMetadata_State._(4, _omitEnumNames ? '' : 'CANCELLED');
 
-  static const $core.List<OperationMetadata_State> values = <OperationMetadata_State> [
+  static const $core.List<OperationMetadata_State> values =
+      <OperationMetadata_State>[
     STATE_UNSPECIFIED,
     CREATED,
     RUNNING,
@@ -29,11 +35,11 @@ class OperationMetadata_State extends $pb.ProtobufEnum {
     CANCELLED,
   ];
 
-  static final $core.Map<$core.int, OperationMetadata_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, OperationMetadata_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static OperationMetadata_State? valueOf($core.int value) => _byValue[value];
 
   const OperationMetadata_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

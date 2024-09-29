@@ -63,10 +63,30 @@ const Build$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'milestone', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'milestone'},
     {'1': 'build_version', '3': 3, '4': 1, '5': 9, '10': 'buildVersion'},
-    {'1': 'status', '3': 4, '4': 1, '5': 14, '6': '.google.chromeos.moblab.v1beta1.Build.BuildStatus', '10': 'status'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.chromeos.moblab.v1beta1.Build.BuildType', '10': 'type'},
+    {
+      '1': 'status',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chromeos.moblab.v1beta1.Build.BuildStatus',
+      '10': 'status'
+    },
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chromeos.moblab.v1beta1.Build.BuildType',
+      '10': 'type'
+    },
     {'1': 'branch', '3': 6, '4': 1, '5': 9, '10': 'branch'},
-    {'1': 'rw_firmware_version', '3': 7, '4': 1, '5': 9, '10': 'rwFirmwareVersion'},
+    {
+      '1': 'rw_firmware_version',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'rwFirmwareVersion'
+    },
     {'1': 'labels', '3': 8, '4': 3, '5': 9, '10': 'labels'},
   ],
   '4': [Build_BuildStatus$json, Build_BuildType$json],
@@ -131,4 +151,3 @@ final $typed_data.Uint8List buildArtifactDescriptor = $convert.base64Decode(
     'tvYmplY3RDb3VudDqAAepBfQorY2hyb21lb3Ntb2JsYWIuZ29vZ2xlYXBpcy5jb20vQnVpbGRB'
     'cnRpZmFjdBJOYnVpbGRUYXJnZXRzL3tidWlsZF90YXJnZXR9L21vZGVscy97bW9kZWx9L2J1aW'
     'xkcy97YnVpbGR9L2FydGlmYWN0cy97YXJ0aWZhY3R9');
-

@@ -21,25 +21,28 @@ export 'prediction_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta.PredictionService')
 class PredictionServiceClient extends $grpc.Client {
-  static final _$predict = $grpc.ClientMethod<$19.PredictRequest, $19.PredictResponse>(
-      '/google.ai.generativelanguage.v1beta.PredictionService/Predict',
-      ($19.PredictRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $19.PredictResponse.fromBuffer(value));
+  static final _$predict =
+      $grpc.ClientMethod<$19.PredictRequest, $19.PredictResponse>(
+          '/google.ai.generativelanguage.v1beta.PredictionService/Predict',
+          ($19.PredictRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) =>
+              $19.PredictResponse.fromBuffer(value));
 
   PredictionServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$19.PredictResponse> predict($19.PredictRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$19.PredictResponse> predict($19.PredictRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$predict, request, options: options);
   }
 }
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta.PredictionService')
 abstract class PredictionServiceBase extends $grpc.Service {
-  $core.String get $name => 'google.ai.generativelanguage.v1beta.PredictionService';
+  $core.String get $name =>
+      'google.ai.generativelanguage.v1beta.PredictionService';
 
   PredictionServiceBase() {
     $addMethod($grpc.ServiceMethod<$19.PredictRequest, $19.PredictResponse>(
@@ -51,9 +54,11 @@ abstract class PredictionServiceBase extends $grpc.Service {
         ($19.PredictResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$19.PredictResponse> predict_Pre($grpc.ServiceCall call, $async.Future<$19.PredictRequest> request) async {
+  $async.Future<$19.PredictResponse> predict_Pre(
+      $grpc.ServiceCall call, $async.Future<$19.PredictRequest> request) async {
     return predict(call, await request);
   }
 
-  $async.Future<$19.PredictResponse> predict($grpc.ServiceCall call, $19.PredictRequest request);
+  $async.Future<$19.PredictResponse> predict(
+      $grpc.ServiceCall call, $19.PredictRequest request);
 }

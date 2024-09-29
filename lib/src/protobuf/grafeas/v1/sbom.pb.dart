@@ -32,41 +32,52 @@ class SBOMReferenceNote extends $pb.GeneratedMessage {
     return $result;
   }
   SBOMReferenceNote._() : super();
-  factory SBOMReferenceNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SBOMReferenceNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SBOMReferenceNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SBOMReferenceNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SBOMReferenceNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SBOMReferenceNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'format')
     ..aOS(2, _omitFieldNames ? '' : 'version')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SBOMReferenceNote clone() => SBOMReferenceNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SBOMReferenceNote copyWith(void Function(SBOMReferenceNote) updates) => super.copyWith((message) => updates(message as SBOMReferenceNote)) as SBOMReferenceNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SBOMReferenceNote copyWith(void Function(SBOMReferenceNote) updates) =>
+      super.copyWith((message) => updates(message as SBOMReferenceNote))
+          as SBOMReferenceNote;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SBOMReferenceNote create() => SBOMReferenceNote._();
   SBOMReferenceNote createEmptyInstance() => create();
-  static $pb.PbList<SBOMReferenceNote> createRepeated() => $pb.PbList<SBOMReferenceNote>();
+  static $pb.PbList<SBOMReferenceNote> createRepeated() =>
+      $pb.PbList<SBOMReferenceNote>();
   @$core.pragma('dart2js:noInline')
-  static SBOMReferenceNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SBOMReferenceNote>(create);
+  static SBOMReferenceNote getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SBOMReferenceNote>(create);
   static SBOMReferenceNote? _defaultInstance;
 
   /// The format that SBOM takes. E.g. may be spdx, cyclonedx, etc...
   @$pb.TagNumber(1)
   $core.String get format => $_getSZ(0);
   @$pb.TagNumber(1)
-  set format($core.String v) { $_setString(0, v); }
+  set format($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -77,7 +88,10 @@ class SBOMReferenceNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
   @$pb.TagNumber(2)
-  set version($core.String v) { $_setString(1, v); }
+  set version($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -107,42 +121,58 @@ class SBOMReferenceOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   SBOMReferenceOccurrence._() : super();
-  factory SBOMReferenceOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SBOMReferenceOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SBOMReferenceOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SBOMReferenceOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SBOMReferenceOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<SbomReferenceIntotoPayload>(1, _omitFieldNames ? '' : 'payload', subBuilder: SbomReferenceIntotoPayload.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SBOMReferenceOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<SbomReferenceIntotoPayload>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: SbomReferenceIntotoPayload.create)
     ..aOS(2, _omitFieldNames ? '' : 'payloadType')
-    ..pc<$556.EnvelopeSignature>(3, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $556.EnvelopeSignature.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$556.EnvelopeSignature>(
+        3, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM,
+        subBuilder: $556.EnvelopeSignature.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SBOMReferenceOccurrence clone() => SBOMReferenceOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SBOMReferenceOccurrence copyWith(void Function(SBOMReferenceOccurrence) updates) => super.copyWith((message) => updates(message as SBOMReferenceOccurrence)) as SBOMReferenceOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SBOMReferenceOccurrence clone() =>
+      SBOMReferenceOccurrence()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SBOMReferenceOccurrence copyWith(
+          void Function(SBOMReferenceOccurrence) updates) =>
+      super.copyWith((message) => updates(message as SBOMReferenceOccurrence))
+          as SBOMReferenceOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SBOMReferenceOccurrence create() => SBOMReferenceOccurrence._();
   SBOMReferenceOccurrence createEmptyInstance() => create();
-  static $pb.PbList<SBOMReferenceOccurrence> createRepeated() => $pb.PbList<SBOMReferenceOccurrence>();
+  static $pb.PbList<SBOMReferenceOccurrence> createRepeated() =>
+      $pb.PbList<SBOMReferenceOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static SBOMReferenceOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SBOMReferenceOccurrence>(create);
+  static SBOMReferenceOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SBOMReferenceOccurrence>(create);
   static SBOMReferenceOccurrence? _defaultInstance;
 
   /// The actual payload that contains the SBOM reference data.
   @$pb.TagNumber(1)
   SbomReferenceIntotoPayload get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(SbomReferenceIntotoPayload v) { setField(1, v); }
+  set payload(SbomReferenceIntotoPayload v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -156,7 +186,10 @@ class SBOMReferenceOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get payloadType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set payloadType($core.String v) { $_setString(1, v); }
+  set payloadType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPayloadType() => $_has(1);
   @$pb.TagNumber(2)
@@ -194,43 +227,59 @@ class SbomReferenceIntotoPayload extends $pb.GeneratedMessage {
     return $result;
   }
   SbomReferenceIntotoPayload._() : super();
-  factory SbomReferenceIntotoPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SbomReferenceIntotoPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SbomReferenceIntotoPayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SbomReferenceIntotoPayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SbomReferenceIntotoPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SbomReferenceIntotoPayload',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : '_type', protoName: 'type')
     ..aOS(2, _omitFieldNames ? '' : 'predicateType')
-    ..pc<$561.Subject>(3, _omitFieldNames ? '' : 'subject', $pb.PbFieldType.PM, subBuilder: $561.Subject.create)
-    ..aOM<SbomReferenceIntotoPredicate>(4, _omitFieldNames ? '' : 'predicate', subBuilder: SbomReferenceIntotoPredicate.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$561.Subject>(3, _omitFieldNames ? '' : 'subject', $pb.PbFieldType.PM,
+        subBuilder: $561.Subject.create)
+    ..aOM<SbomReferenceIntotoPredicate>(4, _omitFieldNames ? '' : 'predicate',
+        subBuilder: SbomReferenceIntotoPredicate.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SbomReferenceIntotoPayload clone() => SbomReferenceIntotoPayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SbomReferenceIntotoPayload copyWith(void Function(SbomReferenceIntotoPayload) updates) => super.copyWith((message) => updates(message as SbomReferenceIntotoPayload)) as SbomReferenceIntotoPayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SbomReferenceIntotoPayload clone() =>
+      SbomReferenceIntotoPayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SbomReferenceIntotoPayload copyWith(
+          void Function(SbomReferenceIntotoPayload) updates) =>
+      super.copyWith(
+              (message) => updates(message as SbomReferenceIntotoPayload))
+          as SbomReferenceIntotoPayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SbomReferenceIntotoPayload create() => SbomReferenceIntotoPayload._();
   SbomReferenceIntotoPayload createEmptyInstance() => create();
-  static $pb.PbList<SbomReferenceIntotoPayload> createRepeated() => $pb.PbList<SbomReferenceIntotoPayload>();
+  static $pb.PbList<SbomReferenceIntotoPayload> createRepeated() =>
+      $pb.PbList<SbomReferenceIntotoPayload>();
   @$core.pragma('dart2js:noInline')
-  static SbomReferenceIntotoPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SbomReferenceIntotoPayload>(create);
+  static SbomReferenceIntotoPayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SbomReferenceIntotoPayload>(create);
   static SbomReferenceIntotoPayload? _defaultInstance;
 
   /// Identifier for the schema of the Statement.
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) { $_setString(0, v); }
+  set type($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -240,7 +289,10 @@ class SbomReferenceIntotoPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get predicateType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set predicateType($core.String v) { $_setString(1, v); }
+  set predicateType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPredicateType() => $_has(1);
   @$pb.TagNumber(2)
@@ -256,7 +308,10 @@ class SbomReferenceIntotoPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   SbomReferenceIntotoPredicate get predicate => $_getN(3);
   @$pb.TagNumber(4)
-  set predicate(SbomReferenceIntotoPredicate v) { setField(4, v); }
+  set predicate(SbomReferenceIntotoPredicate v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPredicate() => $_has(3);
   @$pb.TagNumber(4)
@@ -289,43 +344,62 @@ class SbomReferenceIntotoPredicate extends $pb.GeneratedMessage {
     return $result;
   }
   SbomReferenceIntotoPredicate._() : super();
-  factory SbomReferenceIntotoPredicate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SbomReferenceIntotoPredicate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SbomReferenceIntotoPredicate.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SbomReferenceIntotoPredicate.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SbomReferenceIntotoPredicate', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SbomReferenceIntotoPredicate',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'referrerId')
     ..aOS(2, _omitFieldNames ? '' : 'location')
     ..aOS(3, _omitFieldNames ? '' : 'mimeType')
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'digest', entryClassName: 'SbomReferenceIntotoPredicate.DigestEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('grafeas.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'digest',
+        entryClassName: 'SbomReferenceIntotoPredicate.DigestEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('grafeas.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SbomReferenceIntotoPredicate clone() => SbomReferenceIntotoPredicate()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SbomReferenceIntotoPredicate copyWith(void Function(SbomReferenceIntotoPredicate) updates) => super.copyWith((message) => updates(message as SbomReferenceIntotoPredicate)) as SbomReferenceIntotoPredicate;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SbomReferenceIntotoPredicate clone() =>
+      SbomReferenceIntotoPredicate()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SbomReferenceIntotoPredicate copyWith(
+          void Function(SbomReferenceIntotoPredicate) updates) =>
+      super.copyWith(
+              (message) => updates(message as SbomReferenceIntotoPredicate))
+          as SbomReferenceIntotoPredicate;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SbomReferenceIntotoPredicate create() => SbomReferenceIntotoPredicate._();
+  static SbomReferenceIntotoPredicate create() =>
+      SbomReferenceIntotoPredicate._();
   SbomReferenceIntotoPredicate createEmptyInstance() => create();
-  static $pb.PbList<SbomReferenceIntotoPredicate> createRepeated() => $pb.PbList<SbomReferenceIntotoPredicate>();
+  static $pb.PbList<SbomReferenceIntotoPredicate> createRepeated() =>
+      $pb.PbList<SbomReferenceIntotoPredicate>();
   @$core.pragma('dart2js:noInline')
-  static SbomReferenceIntotoPredicate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SbomReferenceIntotoPredicate>(create);
+  static SbomReferenceIntotoPredicate getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SbomReferenceIntotoPredicate>(create);
   static SbomReferenceIntotoPredicate? _defaultInstance;
 
   /// The person or system referring this predicate to the consumer.
   @$pb.TagNumber(1)
   $core.String get referrerId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set referrerId($core.String v) { $_setString(0, v); }
+  set referrerId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReferrerId() => $_has(0);
   @$pb.TagNumber(1)
@@ -335,7 +409,10 @@ class SbomReferenceIntotoPredicate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get location => $_getSZ(1);
   @$pb.TagNumber(2)
-  set location($core.String v) { $_setString(1, v); }
+  set location($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLocation() => $_has(1);
   @$pb.TagNumber(2)
@@ -345,7 +422,10 @@ class SbomReferenceIntotoPredicate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get mimeType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set mimeType($core.String v) { $_setString(2, v); }
+  set mimeType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMimeType() => $_has(2);
   @$pb.TagNumber(3)
@@ -356,6 +436,6 @@ class SbomReferenceIntotoPredicate extends $pb.GeneratedMessage {
   $core.Map<$core.String, $core.String> get digest => $_getMap(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

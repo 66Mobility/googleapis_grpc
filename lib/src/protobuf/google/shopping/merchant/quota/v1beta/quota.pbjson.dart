@@ -20,8 +20,23 @@ const QuotaGroup$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'quota_usage', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'quotaUsage'},
     {'1': 'quota_limit', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'quotaLimit'},
-    {'1': 'quota_minute_limit', '3': 5, '4': 1, '5': 3, '8': {}, '10': 'quotaMinuteLimit'},
-    {'1': 'method_details', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.merchant.quota.v1beta.MethodDetails', '8': {}, '10': 'methodDetails'},
+    {
+      '1': 'quota_minute_limit',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'quotaMinuteLimit'
+    },
+    {
+      '1': 'method_details',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.quota.v1beta.MethodDetails',
+      '8': {},
+      '10': 'methodDetails'
+    },
   ],
   '7': {},
 };
@@ -73,7 +88,14 @@ final $typed_data.Uint8List listQuotaGroupsRequestDescriptor = $convert.base64De
 const ListQuotaGroupsResponse$json = {
   '1': 'ListQuotaGroupsResponse',
   '2': [
-    {'1': 'quota_groups', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.quota.v1beta.QuotaGroup', '10': 'quotaGroups'},
+    {
+      '1': 'quota_groups',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.quota.v1beta.QuotaGroup',
+      '10': 'quotaGroups'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -83,4 +105,3 @@ final $typed_data.Uint8List listQuotaGroupsResponseDescriptor = $convert.base64D
     'ChdMaXN0UXVvdGFHcm91cHNSZXNwb25zZRJUCgxxdW90YV9ncm91cHMYASADKAsyMS5nb29nbG'
     'Uuc2hvcHBpbmcubWVyY2hhbnQucXVvdGEudjFiZXRhLlF1b3RhR3JvdXBSC3F1b3RhR3JvdXBz'
     'EiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
-

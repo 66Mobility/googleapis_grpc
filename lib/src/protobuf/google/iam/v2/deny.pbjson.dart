@@ -17,11 +17,42 @@ import 'dart:typed_data' as $typed_data;
 const DenyRule$json = {
   '1': 'DenyRule',
   '2': [
-    {'1': 'denied_principals', '3': 1, '4': 3, '5': 9, '10': 'deniedPrincipals'},
-    {'1': 'exception_principals', '3': 2, '4': 3, '5': 9, '10': 'exceptionPrincipals'},
-    {'1': 'denied_permissions', '3': 3, '4': 3, '5': 9, '10': 'deniedPermissions'},
-    {'1': 'exception_permissions', '3': 4, '4': 3, '5': 9, '10': 'exceptionPermissions'},
-    {'1': 'denial_condition', '3': 5, '4': 1, '5': 11, '6': '.google.type.Expr', '10': 'denialCondition'},
+    {
+      '1': 'denied_principals',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'deniedPrincipals'
+    },
+    {
+      '1': 'exception_principals',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'exceptionPrincipals'
+    },
+    {
+      '1': 'denied_permissions',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'deniedPermissions'
+    },
+    {
+      '1': 'exception_permissions',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'exceptionPermissions'
+    },
+    {
+      '1': 'denial_condition',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Expr',
+      '10': 'denialCondition'
+    },
   ],
 };
 
@@ -32,4 +63,3 @@ final $typed_data.Uint8List denyRuleDescriptor = $convert.base64Decode(
     'ZW5pZWRfcGVybWlzc2lvbnMYAyADKAlSEWRlbmllZFBlcm1pc3Npb25zEjMKFWV4Y2VwdGlvbl'
     '9wZXJtaXNzaW9ucxgEIAMoCVIUZXhjZXB0aW9uUGVybWlzc2lvbnMSPAoQZGVuaWFsX2NvbmRp'
     'dGlvbhgFIAEoCzIRLmdvb2dsZS50eXBlLkV4cHJSD2RlbmlhbENvbmRpdGlvbg==');
-

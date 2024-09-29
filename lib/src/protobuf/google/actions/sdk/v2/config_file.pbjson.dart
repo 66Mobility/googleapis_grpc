@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const ConfigFiles$json = {
   '1': 'ConfigFiles',
   '2': [
-    {'1': 'config_files', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.ConfigFile', '10': 'configFiles'},
+    {
+      '1': 'config_files',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ConfigFile',
+      '10': 'configFiles'
+    },
   ],
 };
 
@@ -31,18 +38,114 @@ const ConfigFile$json = {
   '1': 'ConfigFile',
   '2': [
     {'1': 'file_path', '3': 1, '4': 1, '5': 9, '10': 'filePath'},
-    {'1': 'manifest', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Manifest', '9': 0, '10': 'manifest'},
-    {'1': 'actions', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Actions', '9': 0, '10': 'actions'},
-    {'1': 'settings', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Settings', '9': 0, '10': 'settings'},
-    {'1': 'webhook', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Webhook', '9': 0, '10': 'webhook'},
-    {'1': 'intent', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Intent', '9': 0, '10': 'intent'},
-    {'1': 'type', '3': 8, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.type.Type', '9': 0, '10': 'type'},
-    {'1': 'entity_set', '3': 15, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EntitySet', '9': 0, '10': 'entitySet'},
-    {'1': 'global_intent_event', '3': 9, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.GlobalIntentEvent', '9': 0, '10': 'globalIntentEvent'},
-    {'1': 'scene', '3': 10, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Scene', '9': 0, '10': 'scene'},
-    {'1': 'static_prompt', '3': 11, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt', '9': 0, '10': 'staticPrompt'},
-    {'1': 'account_linking_secret', '3': 13, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.AccountLinkingSecret', '9': 0, '10': 'accountLinkingSecret'},
-    {'1': 'resource_bundle', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '9': 0, '10': 'resourceBundle'},
+    {
+      '1': 'manifest',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Manifest',
+      '9': 0,
+      '10': 'manifest'
+    },
+    {
+      '1': 'actions',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Actions',
+      '9': 0,
+      '10': 'actions'
+    },
+    {
+      '1': 'settings',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Settings',
+      '9': 0,
+      '10': 'settings'
+    },
+    {
+      '1': 'webhook',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Webhook',
+      '9': 0,
+      '10': 'webhook'
+    },
+    {
+      '1': 'intent',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.Intent',
+      '9': 0,
+      '10': 'intent'
+    },
+    {
+      '1': 'type',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.type.Type',
+      '9': 0,
+      '10': 'type'
+    },
+    {
+      '1': 'entity_set',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EntitySet',
+      '9': 0,
+      '10': 'entitySet'
+    },
+    {
+      '1': 'global_intent_event',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.GlobalIntentEvent',
+      '9': 0,
+      '10': 'globalIntentEvent'
+    },
+    {
+      '1': 'scene',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.Scene',
+      '9': 0,
+      '10': 'scene'
+    },
+    {
+      '1': 'static_prompt',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt',
+      '9': 0,
+      '10': 'staticPrompt'
+    },
+    {
+      '1': 'account_linking_secret',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.AccountLinkingSecret',
+      '9': 0,
+      '10': 'accountLinkingSecret'
+    },
+    {
+      '1': 'resource_bundle',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '9': 0,
+      '10': 'resourceBundle'
+    },
   ],
   '8': [
     {'1': 'file'},
@@ -69,4 +172,3 @@ final $typed_data.Uint8List configFileDescriptor = $convert.base64Decode(
     '5nb29nbGUuYWN0aW9ucy5zZGsudjIuQWNjb3VudExpbmtpbmdTZWNyZXRIAFIUYWNjb3VudExp'
     'bmtpbmdTZWNyZXQSQgoPcmVzb3VyY2VfYnVuZGxlGAwgASgLMhcuZ29vZ2xlLnByb3RvYnVmLl'
     'N0cnVjdEgAUg5yZXNvdXJjZUJ1bmRsZUIGCgRmaWxl');
-

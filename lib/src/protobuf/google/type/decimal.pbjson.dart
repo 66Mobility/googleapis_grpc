@@ -22,6 +22,5 @@ const Decimal$json = {
 };
 
 /// Descriptor for `Decimal`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List decimalDescriptor = $convert.base64Decode(
-    'CgdEZWNpbWFsEhQKBXZhbHVlGAEgASgJUgV2YWx1ZQ==');
-
+final $typed_data.Uint8List decimalDescriptor =
+    $convert.base64Decode('CgdEZWNpbWFsEhQKBXZhbHVlGAEgASgJUgV2YWx1ZQ==');

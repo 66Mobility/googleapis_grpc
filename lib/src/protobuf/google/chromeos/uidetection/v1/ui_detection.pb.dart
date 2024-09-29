@@ -19,8 +19,7 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
     $core.List<$core.int>? imagePng,
     DetectionRequest? request,
     $core.bool? resizeImage,
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? testId,
+    @$core.Deprecated('This field is deprecated.') $core.String? testId,
     TestMetadata? testMetadata,
     $core.bool? forceImageResizing,
     $core.bool? returnTransformedImage,
@@ -51,46 +50,61 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UiDetectionRequest._() : super();
-  factory UiDetectionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UiDetectionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UiDetectionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UiDetectionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UiDetectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'imagePng', $pb.PbFieldType.OY)
-    ..aOM<DetectionRequest>(2, _omitFieldNames ? '' : 'request', subBuilder: DetectionRequest.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UiDetectionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'imagePng', $pb.PbFieldType.OY)
+    ..aOM<DetectionRequest>(2, _omitFieldNames ? '' : 'request',
+        subBuilder: DetectionRequest.create)
     ..aOB(3, _omitFieldNames ? '' : 'resizeImage')
     ..aOS(4, _omitFieldNames ? '' : 'testId')
-    ..aOM<TestMetadata>(5, _omitFieldNames ? '' : 'testMetadata', subBuilder: TestMetadata.create)
+    ..aOM<TestMetadata>(5, _omitFieldNames ? '' : 'testMetadata',
+        subBuilder: TestMetadata.create)
     ..aOB(6, _omitFieldNames ? '' : 'forceImageResizing')
     ..aOB(7, _omitFieldNames ? '' : 'returnTransformedImage')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UiDetectionRequest clone() => UiDetectionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UiDetectionRequest copyWith(void Function(UiDetectionRequest) updates) => super.copyWith((message) => updates(message as UiDetectionRequest)) as UiDetectionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UiDetectionRequest copyWith(void Function(UiDetectionRequest) updates) =>
+      super.copyWith((message) => updates(message as UiDetectionRequest))
+          as UiDetectionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UiDetectionRequest create() => UiDetectionRequest._();
   UiDetectionRequest createEmptyInstance() => create();
-  static $pb.PbList<UiDetectionRequest> createRepeated() => $pb.PbList<UiDetectionRequest>();
+  static $pb.PbList<UiDetectionRequest> createRepeated() =>
+      $pb.PbList<UiDetectionRequest>();
   @$core.pragma('dart2js:noInline')
-  static UiDetectionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UiDetectionRequest>(create);
+  static UiDetectionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UiDetectionRequest>(create);
   static UiDetectionRequest? _defaultInstance;
 
   /// Required. Required field that represents a PNG image.
   @$pb.TagNumber(1)
   $core.List<$core.int> get imagePng => $_getN(0);
   @$pb.TagNumber(1)
-  set imagePng($core.List<$core.int> v) { $_setBytes(0, v); }
+  set imagePng($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasImagePng() => $_has(0);
   @$pb.TagNumber(1)
@@ -100,7 +114,10 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DetectionRequest get request => $_getN(1);
   @$pb.TagNumber(2)
-  set request(DetectionRequest v) { setField(2, v); }
+  set request(DetectionRequest v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRequest() => $_has(1);
   @$pb.TagNumber(2)
@@ -113,7 +130,10 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get resizeImage => $_getBF(2);
   @$pb.TagNumber(3)
-  set resizeImage($core.bool v) { $_setBool(2, v); }
+  set resizeImage($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResizeImage() => $_has(2);
   @$pb.TagNumber(3)
@@ -125,7 +145,10 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
   $core.String get testId => $_getSZ(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set testId($core.String v) { $_setString(3, v); }
+  set testId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasTestId() => $_has(3);
@@ -137,7 +160,10 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   TestMetadata get testMetadata => $_getN(4);
   @$pb.TagNumber(5)
-  set testMetadata(TestMetadata v) { setField(5, v); }
+  set testMetadata(TestMetadata v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTestMetadata() => $_has(4);
   @$pb.TagNumber(5)
@@ -149,7 +175,10 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get forceImageResizing => $_getBF(5);
   @$pb.TagNumber(6)
-  set forceImageResizing($core.bool v) { $_setBool(5, v); }
+  set forceImageResizing($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasForceImageResizing() => $_has(5);
   @$pb.TagNumber(6)
@@ -159,7 +188,10 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get returnTransformedImage => $_getBF(6);
   @$pb.TagNumber(7)
-  set returnTransformedImage($core.bool v) { $_setBool(6, v); }
+  set returnTransformedImage($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasReturnTransformedImage() => $_has(6);
   @$pb.TagNumber(7)
@@ -167,9 +199,9 @@ class UiDetectionRequest extends $pb.GeneratedMessage {
 }
 
 enum DetectionRequest_DetectionRequestType {
-  wordDetectionRequest, 
-  textBlockDetectionRequest, 
-  customIconDetectionRequest, 
+  wordDetectionRequest,
+  textBlockDetectionRequest,
+  customIconDetectionRequest,
   notSet
 }
 
@@ -193,52 +225,72 @@ class DetectionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DetectionRequest._() : super();
-  factory DetectionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DetectionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DetectionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DetectionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, DetectionRequest_DetectionRequestType> _DetectionRequest_DetectionRequestTypeByTag = {
-    1 : DetectionRequest_DetectionRequestType.wordDetectionRequest,
-    2 : DetectionRequest_DetectionRequestType.textBlockDetectionRequest,
-    3 : DetectionRequest_DetectionRequestType.customIconDetectionRequest,
-    0 : DetectionRequest_DetectionRequestType.notSet
+  static const $core.Map<$core.int, DetectionRequest_DetectionRequestType>
+      _DetectionRequest_DetectionRequestTypeByTag = {
+    1: DetectionRequest_DetectionRequestType.wordDetectionRequest,
+    2: DetectionRequest_DetectionRequestType.textBlockDetectionRequest,
+    3: DetectionRequest_DetectionRequestType.customIconDetectionRequest,
+    0: DetectionRequest_DetectionRequestType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DetectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DetectionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<WordDetectionRequest>(1, _omitFieldNames ? '' : 'wordDetectionRequest', subBuilder: WordDetectionRequest.create)
-    ..aOM<TextBlockDetectionRequest>(2, _omitFieldNames ? '' : 'textBlockDetectionRequest', subBuilder: TextBlockDetectionRequest.create)
-    ..aOM<CustomIconDetectionRequest>(3, _omitFieldNames ? '' : 'customIconDetectionRequest', subBuilder: CustomIconDetectionRequest.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<WordDetectionRequest>(
+        1, _omitFieldNames ? '' : 'wordDetectionRequest',
+        subBuilder: WordDetectionRequest.create)
+    ..aOM<TextBlockDetectionRequest>(
+        2, _omitFieldNames ? '' : 'textBlockDetectionRequest',
+        subBuilder: TextBlockDetectionRequest.create)
+    ..aOM<CustomIconDetectionRequest>(
+        3, _omitFieldNames ? '' : 'customIconDetectionRequest',
+        subBuilder: CustomIconDetectionRequest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DetectionRequest clone() => DetectionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DetectionRequest copyWith(void Function(DetectionRequest) updates) => super.copyWith((message) => updates(message as DetectionRequest)) as DetectionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DetectionRequest copyWith(void Function(DetectionRequest) updates) =>
+      super.copyWith((message) => updates(message as DetectionRequest))
+          as DetectionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DetectionRequest create() => DetectionRequest._();
   DetectionRequest createEmptyInstance() => create();
-  static $pb.PbList<DetectionRequest> createRepeated() => $pb.PbList<DetectionRequest>();
+  static $pb.PbList<DetectionRequest> createRepeated() =>
+      $pb.PbList<DetectionRequest>();
   @$core.pragma('dart2js:noInline')
-  static DetectionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DetectionRequest>(create);
+  static DetectionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DetectionRequest>(create);
   static DetectionRequest? _defaultInstance;
 
-  DetectionRequest_DetectionRequestType whichDetectionRequestType() => _DetectionRequest_DetectionRequestTypeByTag[$_whichOneof(0)]!;
+  DetectionRequest_DetectionRequestType whichDetectionRequestType() =>
+      _DetectionRequest_DetectionRequestTypeByTag[$_whichOneof(0)]!;
   void clearDetectionRequestType() => clearField($_whichOneof(0));
 
   /// Detection type for word detection.
   @$pb.TagNumber(1)
   WordDetectionRequest get wordDetectionRequest => $_getN(0);
   @$pb.TagNumber(1)
-  set wordDetectionRequest(WordDetectionRequest v) { setField(1, v); }
+  set wordDetectionRequest(WordDetectionRequest v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWordDetectionRequest() => $_has(0);
   @$pb.TagNumber(1)
@@ -250,7 +302,10 @@ class DetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TextBlockDetectionRequest get textBlockDetectionRequest => $_getN(1);
   @$pb.TagNumber(2)
-  set textBlockDetectionRequest(TextBlockDetectionRequest v) { setField(2, v); }
+  set textBlockDetectionRequest(TextBlockDetectionRequest v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTextBlockDetectionRequest() => $_has(1);
   @$pb.TagNumber(2)
@@ -262,7 +317,10 @@ class DetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   CustomIconDetectionRequest get customIconDetectionRequest => $_getN(2);
   @$pb.TagNumber(3)
-  set customIconDetectionRequest(CustomIconDetectionRequest v) { setField(3, v); }
+  set customIconDetectionRequest(CustomIconDetectionRequest v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCustomIconDetectionRequest() => $_has(2);
   @$pb.TagNumber(3)
@@ -295,43 +353,55 @@ class TestMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   TestMetadata._() : super();
-  factory TestMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TestMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TestMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TestMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TestMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'testId')
     ..aOS(2, _omitFieldNames ? '' : 'board')
     ..aOS(3, _omitFieldNames ? '' : 'model')
     ..aOS(4, _omitFieldNames ? '' : 'crosBuild')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TestMetadata clone() => TestMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TestMetadata copyWith(void Function(TestMetadata) updates) => super.copyWith((message) => updates(message as TestMetadata)) as TestMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TestMetadata copyWith(void Function(TestMetadata) updates) =>
+      super.copyWith((message) => updates(message as TestMetadata))
+          as TestMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TestMetadata create() => TestMetadata._();
   TestMetadata createEmptyInstance() => create();
-  static $pb.PbList<TestMetadata> createRepeated() => $pb.PbList<TestMetadata>();
+  static $pb.PbList<TestMetadata> createRepeated() =>
+      $pb.PbList<TestMetadata>();
   @$core.pragma('dart2js:noInline')
-  static TestMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestMetadata>(create);
+  static TestMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TestMetadata>(create);
   static TestMetadata? _defaultInstance;
 
   /// Name of the calling test. For example, 'tast.uidetection.BasicDetections'.
   @$pb.TagNumber(1)
   $core.String get testId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set testId($core.String v) { $_setString(0, v); }
+  set testId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTestId() => $_has(0);
   @$pb.TagNumber(1)
@@ -341,7 +411,10 @@ class TestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get board => $_getSZ(1);
   @$pb.TagNumber(2)
-  set board($core.String v) { $_setString(1, v); }
+  set board($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBoard() => $_has(1);
   @$pb.TagNumber(2)
@@ -351,7 +424,10 @@ class TestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get model => $_getSZ(2);
   @$pb.TagNumber(3)
-  set model($core.String v) { $_setString(2, v); }
+  set model($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasModel() => $_has(2);
   @$pb.TagNumber(3)
@@ -362,7 +438,10 @@ class TestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get crosBuild => $_getSZ(3);
   @$pb.TagNumber(4)
-  set crosBuild($core.String v) { $_setString(3, v); }
+  set crosBuild($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCrosBuild() => $_has(3);
   @$pb.TagNumber(4)
@@ -393,43 +472,57 @@ class WordDetectionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   WordDetectionRequest._() : super();
-  factory WordDetectionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WordDetectionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory WordDetectionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WordDetectionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WordDetectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'WordDetectionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'word')
     ..aOB(2, _omitFieldNames ? '' : 'regexMode')
     ..aOB(3, _omitFieldNames ? '' : 'disableApproxMatch')
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'maxEditDistance', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'maxEditDistance', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  WordDetectionRequest clone() => WordDetectionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WordDetectionRequest copyWith(void Function(WordDetectionRequest) updates) => super.copyWith((message) => updates(message as WordDetectionRequest)) as WordDetectionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  WordDetectionRequest clone() =>
+      WordDetectionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WordDetectionRequest copyWith(void Function(WordDetectionRequest) updates) =>
+      super.copyWith((message) => updates(message as WordDetectionRequest))
+          as WordDetectionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WordDetectionRequest create() => WordDetectionRequest._();
   WordDetectionRequest createEmptyInstance() => create();
-  static $pb.PbList<WordDetectionRequest> createRepeated() => $pb.PbList<WordDetectionRequest>();
+  static $pb.PbList<WordDetectionRequest> createRepeated() =>
+      $pb.PbList<WordDetectionRequest>();
   @$core.pragma('dart2js:noInline')
-  static WordDetectionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WordDetectionRequest>(create);
+  static WordDetectionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WordDetectionRequest>(create);
   static WordDetectionRequest? _defaultInstance;
 
   /// Required. The word to locate in the image.
   @$pb.TagNumber(1)
   $core.String get word => $_getSZ(0);
   @$pb.TagNumber(1)
-  set word($core.String v) { $_setString(0, v); }
+  set word($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWord() => $_has(0);
   @$pb.TagNumber(1)
@@ -439,7 +532,10 @@ class WordDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get regexMode => $_getBF(1);
   @$pb.TagNumber(2)
-  set regexMode($core.bool v) { $_setBool(1, v); }
+  set regexMode($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegexMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -449,7 +545,10 @@ class WordDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get disableApproxMatch => $_getBF(2);
   @$pb.TagNumber(3)
-  set disableApproxMatch($core.bool v) { $_setBool(2, v); }
+  set disableApproxMatch($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisableApproxMatch() => $_has(2);
   @$pb.TagNumber(3)
@@ -460,7 +559,10 @@ class WordDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxEditDistance => $_getIZ(3);
   @$pb.TagNumber(4)
-  set maxEditDistance($core.int v) { $_setSignedInt32(3, v); }
+  set maxEditDistance($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxEditDistance() => $_has(3);
   @$pb.TagNumber(4)
@@ -495,37 +597,49 @@ class TextBlockDetectionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   TextBlockDetectionRequest._() : super();
-  factory TextBlockDetectionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TextBlockDetectionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TextBlockDetectionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TextBlockDetectionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextBlockDetectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TextBlockDetectionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'words')
     ..aOB(2, _omitFieldNames ? '' : 'regexMode')
     ..aOB(3, _omitFieldNames ? '' : 'disableApproxMatch')
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'maxEditDistance', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'maxEditDistance', $pb.PbFieldType.O3)
     ..aOB(5, _omitFieldNames ? '' : 'specifiedWordsOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TextBlockDetectionRequest clone() => TextBlockDetectionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TextBlockDetectionRequest copyWith(void Function(TextBlockDetectionRequest) updates) => super.copyWith((message) => updates(message as TextBlockDetectionRequest)) as TextBlockDetectionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TextBlockDetectionRequest clone() =>
+      TextBlockDetectionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TextBlockDetectionRequest copyWith(
+          void Function(TextBlockDetectionRequest) updates) =>
+      super.copyWith((message) => updates(message as TextBlockDetectionRequest))
+          as TextBlockDetectionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TextBlockDetectionRequest create() => TextBlockDetectionRequest._();
   TextBlockDetectionRequest createEmptyInstance() => create();
-  static $pb.PbList<TextBlockDetectionRequest> createRepeated() => $pb.PbList<TextBlockDetectionRequest>();
+  static $pb.PbList<TextBlockDetectionRequest> createRepeated() =>
+      $pb.PbList<TextBlockDetectionRequest>();
   @$core.pragma('dart2js:noInline')
-  static TextBlockDetectionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TextBlockDetectionRequest>(create);
+  static TextBlockDetectionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TextBlockDetectionRequest>(create);
   static TextBlockDetectionRequest? _defaultInstance;
 
   /// Required. The text block consisting a list of words to locate in the image.
@@ -536,7 +650,10 @@ class TextBlockDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get regexMode => $_getBF(1);
   @$pb.TagNumber(2)
-  set regexMode($core.bool v) { $_setBool(1, v); }
+  set regexMode($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegexMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -546,7 +663,10 @@ class TextBlockDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get disableApproxMatch => $_getBF(2);
   @$pb.TagNumber(3)
-  set disableApproxMatch($core.bool v) { $_setBool(2, v); }
+  set disableApproxMatch($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisableApproxMatch() => $_has(2);
   @$pb.TagNumber(3)
@@ -557,7 +677,10 @@ class TextBlockDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxEditDistance => $_getIZ(3);
   @$pb.TagNumber(4)
-  set maxEditDistance($core.int v) { $_setSignedInt32(3, v); }
+  set maxEditDistance($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxEditDistance() => $_has(3);
   @$pb.TagNumber(4)
@@ -568,7 +691,10 @@ class TextBlockDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get specifiedWordsOnly => $_getBF(4);
   @$pb.TagNumber(5)
-  set specifiedWordsOnly($core.bool v) { $_setBool(4, v); }
+  set specifiedWordsOnly($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSpecifiedWordsOnly() => $_has(4);
   @$pb.TagNumber(5)
@@ -595,42 +721,59 @@ class CustomIconDetectionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CustomIconDetectionRequest._() : super();
-  factory CustomIconDetectionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomIconDetectionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomIconDetectionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomIconDetectionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomIconDetectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'iconPng', $pb.PbFieldType.OY)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomIconDetectionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'iconPng', $pb.PbFieldType.OY)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'matchCount', $pb.PbFieldType.O3)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'minConfidenceThreshold', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'minConfidenceThreshold', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CustomIconDetectionRequest clone() => CustomIconDetectionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomIconDetectionRequest copyWith(void Function(CustomIconDetectionRequest) updates) => super.copyWith((message) => updates(message as CustomIconDetectionRequest)) as CustomIconDetectionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CustomIconDetectionRequest clone() =>
+      CustomIconDetectionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomIconDetectionRequest copyWith(
+          void Function(CustomIconDetectionRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CustomIconDetectionRequest))
+          as CustomIconDetectionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomIconDetectionRequest create() => CustomIconDetectionRequest._();
   CustomIconDetectionRequest createEmptyInstance() => create();
-  static $pb.PbList<CustomIconDetectionRequest> createRepeated() => $pb.PbList<CustomIconDetectionRequest>();
+  static $pb.PbList<CustomIconDetectionRequest> createRepeated() =>
+      $pb.PbList<CustomIconDetectionRequest>();
   @$core.pragma('dart2js:noInline')
-  static CustomIconDetectionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomIconDetectionRequest>(create);
+  static CustomIconDetectionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomIconDetectionRequest>(create);
   static CustomIconDetectionRequest? _defaultInstance;
 
   /// Required. Required field that represents an icon in PNG format.
   @$pb.TagNumber(1)
   $core.List<$core.int> get iconPng => $_getN(0);
   @$pb.TagNumber(1)
-  set iconPng($core.List<$core.int> v) { $_setBytes(0, v); }
+  set iconPng($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIconPng() => $_has(0);
   @$pb.TagNumber(1)
@@ -640,7 +783,10 @@ class CustomIconDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get matchCount => $_getIZ(1);
   @$pb.TagNumber(2)
-  set matchCount($core.int v) { $_setSignedInt32(1, v); }
+  set matchCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMatchCount() => $_has(1);
   @$pb.TagNumber(2)
@@ -651,7 +797,10 @@ class CustomIconDetectionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get minConfidenceThreshold => $_getN(2);
   @$pb.TagNumber(3)
-  set minConfidenceThreshold($core.double v) { $_setDouble(2, v); }
+  set minConfidenceThreshold($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMinConfidenceThreshold() => $_has(2);
   @$pb.TagNumber(3)
@@ -678,35 +827,48 @@ class UiDetectionResponse extends $pb.GeneratedMessage {
     return $result;
   }
   UiDetectionResponse._() : super();
-  factory UiDetectionResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UiDetectionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UiDetectionResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UiDetectionResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UiDetectionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
-    ..pc<BoundingBox>(1, _omitFieldNames ? '' : 'boundingBoxes', $pb.PbFieldType.PM, subBuilder: BoundingBox.create)
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'transformedImagePng', $pb.PbFieldType.OY)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'resizingScaleFactor', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UiDetectionResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
+    ..pc<BoundingBox>(
+        1, _omitFieldNames ? '' : 'boundingBoxes', $pb.PbFieldType.PM,
+        subBuilder: BoundingBox.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'transformedImagePng', $pb.PbFieldType.OY)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'resizingScaleFactor', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UiDetectionResponse clone() => UiDetectionResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UiDetectionResponse copyWith(void Function(UiDetectionResponse) updates) => super.copyWith((message) => updates(message as UiDetectionResponse)) as UiDetectionResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UiDetectionResponse copyWith(void Function(UiDetectionResponse) updates) =>
+      super.copyWith((message) => updates(message as UiDetectionResponse))
+          as UiDetectionResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UiDetectionResponse create() => UiDetectionResponse._();
   UiDetectionResponse createEmptyInstance() => create();
-  static $pb.PbList<UiDetectionResponse> createRepeated() => $pb.PbList<UiDetectionResponse>();
+  static $pb.PbList<UiDetectionResponse> createRepeated() =>
+      $pb.PbList<UiDetectionResponse>();
   @$core.pragma('dart2js:noInline')
-  static UiDetectionResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UiDetectionResponse>(create);
+  static UiDetectionResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UiDetectionResponse>(create);
   static UiDetectionResponse? _defaultInstance;
 
   /// Locations of matching UI elements.
@@ -718,7 +880,10 @@ class UiDetectionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get transformedImagePng => $_getN(1);
   @$pb.TagNumber(2)
-  set transformedImagePng($core.List<$core.int> v) { $_setBytes(1, v); }
+  set transformedImagePng($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTransformedImagePng() => $_has(1);
   @$pb.TagNumber(2)
@@ -729,7 +894,10 @@ class UiDetectionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get resizingScaleFactor => $_getN(2);
   @$pb.TagNumber(3)
-  set resizingScaleFactor($core.double v) { $_setFloat(2, v); }
+  set resizingScaleFactor($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResizingScaleFactor() => $_has(2);
   @$pb.TagNumber(3)
@@ -766,28 +934,35 @@ class BoundingBox extends $pb.GeneratedMessage {
     return $result;
   }
   BoundingBox._() : super();
-  factory BoundingBox.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BoundingBox.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BoundingBox.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BoundingBox.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BoundingBox', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.uidetection.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BoundingBox',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.uidetection.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'top', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'left', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'bottom', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'right', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BoundingBox clone() => BoundingBox()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BoundingBox copyWith(void Function(BoundingBox) updates) => super.copyWith((message) => updates(message as BoundingBox)) as BoundingBox;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BoundingBox copyWith(void Function(BoundingBox) updates) =>
+      super.copyWith((message) => updates(message as BoundingBox))
+          as BoundingBox;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -796,14 +971,18 @@ class BoundingBox extends $pb.GeneratedMessage {
   BoundingBox createEmptyInstance() => create();
   static $pb.PbList<BoundingBox> createRepeated() => $pb.PbList<BoundingBox>();
   @$core.pragma('dart2js:noInline')
-  static BoundingBox getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BoundingBox>(create);
+  static BoundingBox getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BoundingBox>(create);
   static BoundingBox? _defaultInstance;
 
   /// The text found in the bounding box.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -813,7 +992,10 @@ class BoundingBox extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get top => $_getIZ(1);
   @$pb.TagNumber(2)
-  set top($core.int v) { $_setSignedInt32(1, v); }
+  set top($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTop() => $_has(1);
   @$pb.TagNumber(2)
@@ -823,7 +1005,10 @@ class BoundingBox extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get left => $_getIZ(2);
   @$pb.TagNumber(3)
-  set left($core.int v) { $_setSignedInt32(2, v); }
+  set left($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLeft() => $_has(2);
   @$pb.TagNumber(3)
@@ -833,7 +1018,10 @@ class BoundingBox extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get bottom => $_getIZ(3);
   @$pb.TagNumber(4)
-  set bottom($core.int v) { $_setSignedInt32(3, v); }
+  set bottom($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBottom() => $_has(3);
   @$pb.TagNumber(4)
@@ -843,13 +1031,16 @@ class BoundingBox extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get right => $_getIZ(4);
   @$pb.TagNumber(5)
-  set right($core.int v) { $_setSignedInt32(4, v); }
+  set right($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRight() => $_has(4);
   @$pb.TagNumber(5)
   void clearRight() => clearField(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

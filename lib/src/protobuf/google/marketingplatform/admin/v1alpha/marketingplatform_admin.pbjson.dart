@@ -38,9 +38,10 @@ const GetOrganizationRequest$json = {
 };
 
 /// Descriptor for `GetOrganizationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getOrganizationRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRPcmdhbml6YXRpb25SZXF1ZXN0Ek4KBG5hbWUYASABKAlCOuBBAvpBNAoybWFya2V0aW'
-    '5ncGxhdGZvcm1hZG1pbi5nb29nbGVhcGlzLmNvbS9Pcmdhbml6YXRpb25SBG5hbWU=');
+final $typed_data.Uint8List getOrganizationRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRPcmdhbml6YXRpb25SZXF1ZXN0Ek4KBG5hbWUYASABKAlCOuBBAvpBNAoybWFya2V0aW'
+        '5ncGxhdGZvcm1hZG1pbi5nb29nbGVhcGlzLmNvbS9Pcmdhbml6YXRpb25SBG5hbWU=');
 
 @$core.Deprecated('Use listAnalyticsAccountLinksRequestDescriptor instead')
 const ListAnalyticsAccountLinksRequest$json = {
@@ -53,34 +54,51 @@ const ListAnalyticsAccountLinksRequest$json = {
 };
 
 /// Descriptor for `ListAnalyticsAccountLinksRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAnalyticsAccountLinksRequestDescriptor = $convert.base64Decode(
-    'CiBMaXN0QW5hbHl0aWNzQWNjb3VudExpbmtzUmVxdWVzdBJaCgZwYXJlbnQYASABKAlCQuBBAv'
-    'pBPBI6bWFya2V0aW5ncGxhdGZvcm1hZG1pbi5nb29nbGVhcGlzLmNvbS9BbmFseXRpY3NBY2Nv'
-    'dW50TGlua1IGcGFyZW50EiAKCXBhZ2Vfc2l6ZRgCIAEoBUID4EEBUghwYWdlU2l6ZRIiCgpwYW'
-    'dlX3Rva2VuGAMgASgJQgPgQQFSCXBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listAnalyticsAccountLinksRequestDescriptor =
+    $convert.base64Decode(
+        'CiBMaXN0QW5hbHl0aWNzQWNjb3VudExpbmtzUmVxdWVzdBJaCgZwYXJlbnQYASABKAlCQuBBAv'
+        'pBPBI6bWFya2V0aW5ncGxhdGZvcm1hZG1pbi5nb29nbGVhcGlzLmNvbS9BbmFseXRpY3NBY2Nv'
+        'dW50TGlua1IGcGFyZW50EiAKCXBhZ2Vfc2l6ZRgCIAEoBUID4EEBUghwYWdlU2l6ZRIiCgpwYW'
+        'dlX3Rva2VuGAMgASgJQgPgQQFSCXBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use listAnalyticsAccountLinksResponseDescriptor instead')
 const ListAnalyticsAccountLinksResponse$json = {
   '1': 'ListAnalyticsAccountLinksResponse',
   '2': [
-    {'1': 'analytics_account_links', '3': 1, '4': 3, '5': 11, '6': '.google.marketingplatform.admin.v1alpha.AnalyticsAccountLink', '10': 'analyticsAccountLinks'},
+    {
+      '1': 'analytics_account_links',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.marketingplatform.admin.v1alpha.AnalyticsAccountLink',
+      '10': 'analyticsAccountLinks'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListAnalyticsAccountLinksResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAnalyticsAccountLinksResponseDescriptor = $convert.base64Decode(
-    'CiFMaXN0QW5hbHl0aWNzQWNjb3VudExpbmtzUmVzcG9uc2USdAoXYW5hbHl0aWNzX2FjY291bn'
-    'RfbGlua3MYASADKAsyPC5nb29nbGUubWFya2V0aW5ncGxhdGZvcm0uYWRtaW4udjFhbHBoYS5B'
-    'bmFseXRpY3NBY2NvdW50TGlua1IVYW5hbHl0aWNzQWNjb3VudExpbmtzEiYKD25leHRfcGFnZV'
-    '90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listAnalyticsAccountLinksResponseDescriptor =
+    $convert.base64Decode(
+        'CiFMaXN0QW5hbHl0aWNzQWNjb3VudExpbmtzUmVzcG9uc2USdAoXYW5hbHl0aWNzX2FjY291bn'
+        'RfbGlua3MYASADKAsyPC5nb29nbGUubWFya2V0aW5ncGxhdGZvcm0uYWRtaW4udjFhbHBoYS5B'
+        'bmFseXRpY3NBY2NvdW50TGlua1IVYW5hbHl0aWNzQWNjb3VudExpbmtzEiYKD25leHRfcGFnZV'
+        '90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use createAnalyticsAccountLinkRequestDescriptor instead')
 const CreateAnalyticsAccountLinkRequest$json = {
   '1': 'CreateAnalyticsAccountLinkRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'analytics_account_link', '3': 2, '4': 1, '5': 11, '6': '.google.marketingplatform.admin.v1alpha.AnalyticsAccountLink', '8': {}, '10': 'analyticsAccountLink'},
+    {
+      '1': 'analytics_account_link',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.marketingplatform.admin.v1alpha.AnalyticsAccountLink',
+      '8': {},
+      '10': 'analyticsAccountLink'
+    },
   ],
 };
 
@@ -101,18 +119,41 @@ const DeleteAnalyticsAccountLinkRequest$json = {
 };
 
 /// Descriptor for `DeleteAnalyticsAccountLinkRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAnalyticsAccountLinkRequestDescriptor = $convert.base64Decode(
-    'CiFEZWxldGVBbmFseXRpY3NBY2NvdW50TGlua1JlcXVlc3QSVgoEbmFtZRgBIAEoCUJC4EEC+k'
-    'E8CjptYXJrZXRpbmdwbGF0Zm9ybWFkbWluLmdvb2dsZWFwaXMuY29tL0FuYWx5dGljc0FjY291'
-    'bnRMaW5rUgRuYW1l');
+final $typed_data.Uint8List deleteAnalyticsAccountLinkRequestDescriptor =
+    $convert.base64Decode(
+        'CiFEZWxldGVBbmFseXRpY3NBY2NvdW50TGlua1JlcXVlc3QSVgoEbmFtZRgBIAEoCUJC4EEC+k'
+        'E8CjptYXJrZXRpbmdwbGF0Zm9ybWFkbWluLmdvb2dsZWFwaXMuY29tL0FuYWx5dGljc0FjY291'
+        'bnRMaW5rUgRuYW1l');
 
 @$core.Deprecated('Use setPropertyServiceLevelRequestDescriptor instead')
 const SetPropertyServiceLevelRequest$json = {
   '1': 'SetPropertyServiceLevelRequest',
   '2': [
-    {'1': 'analytics_account_link', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'analyticsAccountLink'},
-    {'1': 'analytics_property', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'analyticsProperty'},
-    {'1': 'service_level', '3': 3, '4': 1, '5': 14, '6': '.google.marketingplatform.admin.v1alpha.AnalyticsServiceLevel', '8': {}, '10': 'serviceLevel'},
+    {
+      '1': 'analytics_account_link',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'analyticsAccountLink'
+    },
+    {
+      '1': 'analytics_property',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'analyticsProperty'
+    },
+    {
+      '1': 'service_level',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.marketingplatform.admin.v1alpha.AnalyticsServiceLevel',
+      '8': {},
+      '10': 'serviceLevel'
+    },
   ],
 };
 
@@ -131,6 +172,5 @@ const SetPropertyServiceLevelResponse$json = {
 };
 
 /// Descriptor for `SetPropertyServiceLevelResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List setPropertyServiceLevelResponseDescriptor = $convert.base64Decode(
-    'Ch9TZXRQcm9wZXJ0eVNlcnZpY2VMZXZlbFJlc3BvbnNl');
-
+final $typed_data.Uint8List setPropertyServiceLevelResponseDescriptor =
+    $convert.base64Decode('Ch9TZXRQcm9wZXJ0eVNlcnZpY2VMZXZlbFJlc3BvbnNl');

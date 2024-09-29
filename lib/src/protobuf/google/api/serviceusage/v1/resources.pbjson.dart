@@ -34,8 +34,22 @@ const Service$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'parent', '3': 5, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'config', '3': 2, '4': 1, '5': 11, '6': '.google.api.serviceusage.v1.ServiceConfig', '10': 'config'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.api.serviceusage.v1.State', '10': 'state'},
+    {
+      '1': 'config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1.ServiceConfig',
+      '10': 'config'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.serviceusage.v1.State',
+      '10': 'state'
+    },
   ],
   '7': {},
 };
@@ -56,14 +70,70 @@ const ServiceConfig$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'apis', '3': 3, '4': 3, '5': 11, '6': '.google.protobuf.Api', '10': 'apis'},
-    {'1': 'documentation', '3': 6, '4': 1, '5': 11, '6': '.google.api.Documentation', '10': 'documentation'},
-    {'1': 'quota', '3': 10, '4': 1, '5': 11, '6': '.google.api.Quota', '10': 'quota'},
-    {'1': 'authentication', '3': 11, '4': 1, '5': 11, '6': '.google.api.Authentication', '10': 'authentication'},
-    {'1': 'usage', '3': 15, '4': 1, '5': 11, '6': '.google.api.Usage', '10': 'usage'},
-    {'1': 'endpoints', '3': 18, '4': 3, '5': 11, '6': '.google.api.Endpoint', '10': 'endpoints'},
-    {'1': 'monitored_resources', '3': 25, '4': 3, '5': 11, '6': '.google.api.MonitoredResourceDescriptor', '10': 'monitoredResources'},
-    {'1': 'monitoring', '3': 28, '4': 1, '5': 11, '6': '.google.api.Monitoring', '10': 'monitoring'},
+    {
+      '1': 'apis',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Api',
+      '10': 'apis'
+    },
+    {
+      '1': 'documentation',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Documentation',
+      '10': 'documentation'
+    },
+    {
+      '1': 'quota',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Quota',
+      '10': 'quota'
+    },
+    {
+      '1': 'authentication',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Authentication',
+      '10': 'authentication'
+    },
+    {
+      '1': 'usage',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Usage',
+      '10': 'usage'
+    },
+    {
+      '1': 'endpoints',
+      '3': 18,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Endpoint',
+      '10': 'endpoints'
+    },
+    {
+      '1': 'monitored_resources',
+      '3': 25,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResourceDescriptor',
+      '10': 'monitoredResources'
+    },
+    {
+      '1': 'monitoring',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Monitoring',
+      '10': 'monitoring'
+    },
   ],
 };
 
@@ -92,4 +162,3 @@ const OperationMetadata$json = {
 final $typed_data.Uint8List operationMetadataDescriptor = $convert.base64Decode(
     'ChFPcGVyYXRpb25NZXRhZGF0YRIlCg5yZXNvdXJjZV9uYW1lcxgCIAMoCVINcmVzb3VyY2VOYW'
     '1lcw==');
-

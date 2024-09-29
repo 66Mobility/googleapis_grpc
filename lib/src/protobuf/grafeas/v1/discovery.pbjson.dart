@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const DiscoveryNote$json = {
   '1': 'DiscoveryNote',
   '2': [
-    {'1': 'analysis_kind', '3': 1, '4': 1, '5': 14, '6': '.grafeas.v1.NoteKind', '10': 'analysisKind'},
+    {
+      '1': 'analysis_kind',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.NoteKind',
+      '10': 'analysisKind'
+    },
   ],
 };
 
@@ -30,19 +37,90 @@ final $typed_data.Uint8List discoveryNoteDescriptor = $convert.base64Decode(
 const DiscoveryOccurrence$json = {
   '1': 'DiscoveryOccurrence',
   '2': [
-    {'1': 'continuous_analysis', '3': 1, '4': 1, '5': 14, '6': '.grafeas.v1.DiscoveryOccurrence.ContinuousAnalysis', '10': 'continuousAnalysis'},
-    {'1': 'analysis_status', '3': 2, '4': 1, '5': 14, '6': '.grafeas.v1.DiscoveryOccurrence.AnalysisStatus', '10': 'analysisStatus'},
-    {'1': 'analysis_completed', '3': 7, '4': 1, '5': 11, '6': '.grafeas.v1.DiscoveryOccurrence.AnalysisCompleted', '10': 'analysisCompleted'},
-    {'1': 'analysis_error', '3': 8, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'analysisError'},
-    {'1': 'analysis_status_error', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'analysisStatusError'},
+    {
+      '1': 'continuous_analysis',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.DiscoveryOccurrence.ContinuousAnalysis',
+      '10': 'continuousAnalysis'
+    },
+    {
+      '1': 'analysis_status',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.DiscoveryOccurrence.AnalysisStatus',
+      '10': 'analysisStatus'
+    },
+    {
+      '1': 'analysis_completed',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DiscoveryOccurrence.AnalysisCompleted',
+      '10': 'analysisCompleted'
+    },
+    {
+      '1': 'analysis_error',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'analysisError'
+    },
+    {
+      '1': 'analysis_status_error',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'analysisStatusError'
+    },
     {'1': 'cpe', '3': 4, '4': 1, '5': 9, '10': 'cpe'},
-    {'1': 'last_scan_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastScanTime'},
-    {'1': 'archive_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'archiveTime'},
-    {'1': 'sbom_status', '3': 9, '4': 1, '5': 11, '6': '.grafeas.v1.DiscoveryOccurrence.SBOMStatus', '10': 'sbomStatus'},
-    {'1': 'vulnerability_attestation', '3': 10, '4': 1, '5': 11, '6': '.grafeas.v1.DiscoveryOccurrence.VulnerabilityAttestation', '10': 'vulnerabilityAttestation'},
+    {
+      '1': 'last_scan_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastScanTime'
+    },
+    {
+      '1': 'archive_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'archiveTime'
+    },
+    {
+      '1': 'sbom_status',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DiscoveryOccurrence.SBOMStatus',
+      '10': 'sbomStatus'
+    },
+    {
+      '1': 'vulnerability_attestation',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.DiscoveryOccurrence.VulnerabilityAttestation',
+      '10': 'vulnerabilityAttestation'
+    },
   ],
-  '3': [DiscoveryOccurrence_AnalysisCompleted$json, DiscoveryOccurrence_SBOMStatus$json, DiscoveryOccurrence_VulnerabilityAttestation$json],
-  '4': [DiscoveryOccurrence_ContinuousAnalysis$json, DiscoveryOccurrence_AnalysisStatus$json],
+  '3': [
+    DiscoveryOccurrence_AnalysisCompleted$json,
+    DiscoveryOccurrence_SBOMStatus$json,
+    DiscoveryOccurrence_VulnerabilityAttestation$json
+  ],
+  '4': [
+    DiscoveryOccurrence_ContinuousAnalysis$json,
+    DiscoveryOccurrence_AnalysisStatus$json
+  ],
 };
 
 @$core.Deprecated('Use discoveryOccurrenceDescriptor instead')
@@ -57,7 +135,14 @@ const DiscoveryOccurrence_AnalysisCompleted$json = {
 const DiscoveryOccurrence_SBOMStatus$json = {
   '1': 'SBOMStatus',
   '2': [
-    {'1': 'sbom_state', '3': 1, '4': 1, '5': 14, '6': '.grafeas.v1.DiscoveryOccurrence.SBOMStatus.SBOMState', '10': 'sbomState'},
+    {
+      '1': 'sbom_state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.DiscoveryOccurrence.SBOMStatus.SBOMState',
+      '10': 'sbomState'
+    },
     {'1': 'error', '3': 2, '4': 1, '5': 9, '10': 'error'},
   ],
   '4': [DiscoveryOccurrence_SBOMStatus_SBOMState$json],
@@ -77,15 +162,33 @@ const DiscoveryOccurrence_SBOMStatus_SBOMState$json = {
 const DiscoveryOccurrence_VulnerabilityAttestation$json = {
   '1': 'VulnerabilityAttestation',
   '2': [
-    {'1': 'last_attempt_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastAttemptTime'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.grafeas.v1.DiscoveryOccurrence.VulnerabilityAttestation.VulnerabilityAttestationState', '10': 'state'},
+    {
+      '1': 'last_attempt_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastAttemptTime'
+    },
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.grafeas.v1.DiscoveryOccurrence.VulnerabilityAttestation.VulnerabilityAttestationState',
+      '10': 'state'
+    },
     {'1': 'error', '3': 3, '4': 1, '5': 9, '10': 'error'},
   ],
-  '4': [DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState$json],
+  '4': [
+    DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState$json
+  ],
 };
 
 @$core.Deprecated('Use discoveryOccurrenceDescriptor instead')
-const DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState$json = {
+const DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState$json =
+    {
   '1': 'VulnerabilityAttestationState',
   '2': [
     {'1': 'VULNERABILITY_ATTESTATION_STATE_UNSPECIFIED', '2': 0},
@@ -151,4 +254,3 @@ final $typed_data.Uint8List discoveryOccurrenceDescriptor = $convert.base64Decod
     'VTX1VOU1BFQ0lGSUVEEAASCwoHUEVORElORxABEgwKCFNDQU5OSU5HEAISFAoQRklOSVNIRURf'
     'U1VDQ0VTUxADEgwKCENPTVBMRVRFEAMSEwoPRklOSVNIRURfRkFJTEVEEAQSGAoURklOSVNIRU'
     'RfVU5TVVBQT1JURUQQBRoCEAE=');
-

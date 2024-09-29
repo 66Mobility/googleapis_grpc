@@ -32,40 +32,61 @@ class TransactionOptions_ReadWrite extends $pb.GeneratedMessage {
     return $result;
   }
   TransactionOptions_ReadWrite._() : super();
-  factory TransactionOptions_ReadWrite.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransactionOptions_ReadWrite.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransactionOptions_ReadWrite.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransactionOptions_ReadWrite.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransactionOptions.ReadWrite', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..e<TransactionOptions_ReadWrite_ReadLockMode>(1, _omitFieldNames ? '' : 'readLockMode', $pb.PbFieldType.OE, defaultOrMaker: TransactionOptions_ReadWrite_ReadLockMode.READ_LOCK_MODE_UNSPECIFIED, valueOf: TransactionOptions_ReadWrite_ReadLockMode.valueOf, enumValues: TransactionOptions_ReadWrite_ReadLockMode.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransactionOptions.ReadWrite',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..e<TransactionOptions_ReadWrite_ReadLockMode>(
+        1, _omitFieldNames ? '' : 'readLockMode', $pb.PbFieldType.OE,
+        defaultOrMaker: TransactionOptions_ReadWrite_ReadLockMode
+            .READ_LOCK_MODE_UNSPECIFIED,
+        valueOf: TransactionOptions_ReadWrite_ReadLockMode.valueOf,
+        enumValues: TransactionOptions_ReadWrite_ReadLockMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransactionOptions_ReadWrite clone() => TransactionOptions_ReadWrite()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransactionOptions_ReadWrite copyWith(void Function(TransactionOptions_ReadWrite) updates) => super.copyWith((message) => updates(message as TransactionOptions_ReadWrite)) as TransactionOptions_ReadWrite;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransactionOptions_ReadWrite clone() =>
+      TransactionOptions_ReadWrite()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransactionOptions_ReadWrite copyWith(
+          void Function(TransactionOptions_ReadWrite) updates) =>
+      super.copyWith(
+              (message) => updates(message as TransactionOptions_ReadWrite))
+          as TransactionOptions_ReadWrite;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TransactionOptions_ReadWrite create() => TransactionOptions_ReadWrite._();
+  static TransactionOptions_ReadWrite create() =>
+      TransactionOptions_ReadWrite._();
   TransactionOptions_ReadWrite createEmptyInstance() => create();
-  static $pb.PbList<TransactionOptions_ReadWrite> createRepeated() => $pb.PbList<TransactionOptions_ReadWrite>();
+  static $pb.PbList<TransactionOptions_ReadWrite> createRepeated() =>
+      $pb.PbList<TransactionOptions_ReadWrite>();
   @$core.pragma('dart2js:noInline')
-  static TransactionOptions_ReadWrite getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransactionOptions_ReadWrite>(create);
+  static TransactionOptions_ReadWrite getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransactionOptions_ReadWrite>(create);
   static TransactionOptions_ReadWrite? _defaultInstance;
 
   /// Read lock mode for the transaction.
   @$pb.TagNumber(1)
   TransactionOptions_ReadWrite_ReadLockMode get readLockMode => $_getN(0);
   @$pb.TagNumber(1)
-  set readLockMode(TransactionOptions_ReadWrite_ReadLockMode v) { setField(1, v); }
+  set readLockMode(TransactionOptions_ReadWrite_ReadLockMode v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReadLockMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -76,41 +97,55 @@ class TransactionOptions_ReadWrite extends $pb.GeneratedMessage {
 class TransactionOptions_PartitionedDml extends $pb.GeneratedMessage {
   factory TransactionOptions_PartitionedDml() => create();
   TransactionOptions_PartitionedDml._() : super();
-  factory TransactionOptions_PartitionedDml.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransactionOptions_PartitionedDml.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransactionOptions_PartitionedDml.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransactionOptions_PartitionedDml.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransactionOptions.PartitionedDml', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransactionOptions.PartitionedDml',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransactionOptions_PartitionedDml clone() => TransactionOptions_PartitionedDml()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransactionOptions_PartitionedDml copyWith(void Function(TransactionOptions_PartitionedDml) updates) => super.copyWith((message) => updates(message as TransactionOptions_PartitionedDml)) as TransactionOptions_PartitionedDml;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransactionOptions_PartitionedDml clone() =>
+      TransactionOptions_PartitionedDml()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransactionOptions_PartitionedDml copyWith(
+          void Function(TransactionOptions_PartitionedDml) updates) =>
+      super.copyWith((message) =>
+              updates(message as TransactionOptions_PartitionedDml))
+          as TransactionOptions_PartitionedDml;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TransactionOptions_PartitionedDml create() => TransactionOptions_PartitionedDml._();
+  static TransactionOptions_PartitionedDml create() =>
+      TransactionOptions_PartitionedDml._();
   TransactionOptions_PartitionedDml createEmptyInstance() => create();
-  static $pb.PbList<TransactionOptions_PartitionedDml> createRepeated() => $pb.PbList<TransactionOptions_PartitionedDml>();
+  static $pb.PbList<TransactionOptions_PartitionedDml> createRepeated() =>
+      $pb.PbList<TransactionOptions_PartitionedDml>();
   @$core.pragma('dart2js:noInline')
-  static TransactionOptions_PartitionedDml getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransactionOptions_PartitionedDml>(create);
+  static TransactionOptions_PartitionedDml getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransactionOptions_PartitionedDml>(
+          create);
   static TransactionOptions_PartitionedDml? _defaultInstance;
 }
 
 enum TransactionOptions_ReadOnly_TimestampBound {
-  strong, 
-  minReadTimestamp, 
-  maxStaleness, 
-  readTimestamp, 
-  exactStaleness, 
+  strong,
+  minReadTimestamp,
+  maxStaleness,
+  readTimestamp,
+  exactStaleness,
   notSet
 }
 
@@ -146,50 +181,69 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
     return $result;
   }
   TransactionOptions_ReadOnly._() : super();
-  factory TransactionOptions_ReadOnly.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransactionOptions_ReadOnly.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransactionOptions_ReadOnly.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransactionOptions_ReadOnly.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TransactionOptions_ReadOnly_TimestampBound> _TransactionOptions_ReadOnly_TimestampBoundByTag = {
-    1 : TransactionOptions_ReadOnly_TimestampBound.strong,
-    2 : TransactionOptions_ReadOnly_TimestampBound.minReadTimestamp,
-    3 : TransactionOptions_ReadOnly_TimestampBound.maxStaleness,
-    4 : TransactionOptions_ReadOnly_TimestampBound.readTimestamp,
-    5 : TransactionOptions_ReadOnly_TimestampBound.exactStaleness,
-    0 : TransactionOptions_ReadOnly_TimestampBound.notSet
+  static const $core.Map<$core.int, TransactionOptions_ReadOnly_TimestampBound>
+      _TransactionOptions_ReadOnly_TimestampBoundByTag = {
+    1: TransactionOptions_ReadOnly_TimestampBound.strong,
+    2: TransactionOptions_ReadOnly_TimestampBound.minReadTimestamp,
+    3: TransactionOptions_ReadOnly_TimestampBound.maxStaleness,
+    4: TransactionOptions_ReadOnly_TimestampBound.readTimestamp,
+    5: TransactionOptions_ReadOnly_TimestampBound.exactStaleness,
+    0: TransactionOptions_ReadOnly_TimestampBound.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransactionOptions.ReadOnly', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransactionOptions.ReadOnly',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
     ..aOB(1, _omitFieldNames ? '' : 'strong')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'minReadTimestamp', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'maxStaleness', subBuilder: $264.Duration.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'readTimestamp', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'exactStaleness', subBuilder: $264.Duration.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'minReadTimestamp',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'maxStaleness',
+        subBuilder: $264.Duration.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'readTimestamp',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'exactStaleness',
+        subBuilder: $264.Duration.create)
     ..aOB(6, _omitFieldNames ? '' : 'returnReadTimestamp')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransactionOptions_ReadOnly clone() => TransactionOptions_ReadOnly()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransactionOptions_ReadOnly copyWith(void Function(TransactionOptions_ReadOnly) updates) => super.copyWith((message) => updates(message as TransactionOptions_ReadOnly)) as TransactionOptions_ReadOnly;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransactionOptions_ReadOnly clone() =>
+      TransactionOptions_ReadOnly()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransactionOptions_ReadOnly copyWith(
+          void Function(TransactionOptions_ReadOnly) updates) =>
+      super.copyWith(
+              (message) => updates(message as TransactionOptions_ReadOnly))
+          as TransactionOptions_ReadOnly;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TransactionOptions_ReadOnly create() => TransactionOptions_ReadOnly._();
+  static TransactionOptions_ReadOnly create() =>
+      TransactionOptions_ReadOnly._();
   TransactionOptions_ReadOnly createEmptyInstance() => create();
-  static $pb.PbList<TransactionOptions_ReadOnly> createRepeated() => $pb.PbList<TransactionOptions_ReadOnly>();
+  static $pb.PbList<TransactionOptions_ReadOnly> createRepeated() =>
+      $pb.PbList<TransactionOptions_ReadOnly>();
   @$core.pragma('dart2js:noInline')
-  static TransactionOptions_ReadOnly getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransactionOptions_ReadOnly>(create);
+  static TransactionOptions_ReadOnly getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransactionOptions_ReadOnly>(create);
   static TransactionOptions_ReadOnly? _defaultInstance;
 
-  TransactionOptions_ReadOnly_TimestampBound whichTimestampBound() => _TransactionOptions_ReadOnly_TimestampBoundByTag[$_whichOneof(0)]!;
+  TransactionOptions_ReadOnly_TimestampBound whichTimestampBound() =>
+      _TransactionOptions_ReadOnly_TimestampBoundByTag[$_whichOneof(0)]!;
   void clearTimestampBound() => clearField($_whichOneof(0));
 
   /// Read at a timestamp where all previously committed transactions
@@ -197,7 +251,10 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get strong => $_getBF(0);
   @$pb.TagNumber(1)
-  set strong($core.bool v) { $_setBool(0, v); }
+  set strong($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStrong() => $_has(0);
   @$pb.TagNumber(1)
@@ -216,7 +273,10 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get minReadTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set minReadTimestamp($302.Timestamp v) { setField(2, v); }
+  set minReadTimestamp($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinReadTimestamp() => $_has(1);
   @$pb.TagNumber(2)
@@ -240,7 +300,10 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get maxStaleness => $_getN(2);
   @$pb.TagNumber(3)
-  set maxStaleness($264.Duration v) { setField(3, v); }
+  set maxStaleness($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxStaleness() => $_has(2);
   @$pb.TagNumber(3)
@@ -263,7 +326,10 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get readTimestamp => $_getN(3);
   @$pb.TagNumber(4)
-  set readTimestamp($302.Timestamp v) { setField(4, v); }
+  set readTimestamp($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReadTimestamp() => $_has(3);
   @$pb.TagNumber(4)
@@ -285,7 +351,10 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $264.Duration get exactStaleness => $_getN(4);
   @$pb.TagNumber(5)
-  set exactStaleness($264.Duration v) { setField(5, v); }
+  set exactStaleness($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasExactStaleness() => $_has(4);
   @$pb.TagNumber(5)
@@ -299,19 +368,17 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get returnReadTimestamp => $_getBF(5);
   @$pb.TagNumber(6)
-  set returnReadTimestamp($core.bool v) { $_setBool(5, v); }
+  set returnReadTimestamp($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasReturnReadTimestamp() => $_has(5);
   @$pb.TagNumber(6)
   void clearReturnReadTimestamp() => clearField(6);
 }
 
-enum TransactionOptions_Mode {
-  readWrite, 
-  readOnly, 
-  partitionedDml, 
-  notSet
-}
+enum TransactionOptions_Mode { readWrite, readOnly, partitionedDml, notSet }
 
 ///  Transactions:
 ///
@@ -660,46 +727,61 @@ class TransactionOptions extends $pb.GeneratedMessage {
     return $result;
   }
   TransactionOptions._() : super();
-  factory TransactionOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransactionOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransactionOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransactionOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TransactionOptions_Mode> _TransactionOptions_ModeByTag = {
-    1 : TransactionOptions_Mode.readWrite,
-    2 : TransactionOptions_Mode.readOnly,
-    3 : TransactionOptions_Mode.partitionedDml,
-    0 : TransactionOptions_Mode.notSet
+  static const $core.Map<$core.int, TransactionOptions_Mode>
+      _TransactionOptions_ModeByTag = {
+    1: TransactionOptions_Mode.readWrite,
+    2: TransactionOptions_Mode.readOnly,
+    3: TransactionOptions_Mode.partitionedDml,
+    0: TransactionOptions_Mode.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransactionOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransactionOptions',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<TransactionOptions_ReadWrite>(1, _omitFieldNames ? '' : 'readWrite', subBuilder: TransactionOptions_ReadWrite.create)
-    ..aOM<TransactionOptions_ReadOnly>(2, _omitFieldNames ? '' : 'readOnly', subBuilder: TransactionOptions_ReadOnly.create)
-    ..aOM<TransactionOptions_PartitionedDml>(3, _omitFieldNames ? '' : 'partitionedDml', subBuilder: TransactionOptions_PartitionedDml.create)
+    ..aOM<TransactionOptions_ReadWrite>(1, _omitFieldNames ? '' : 'readWrite',
+        subBuilder: TransactionOptions_ReadWrite.create)
+    ..aOM<TransactionOptions_ReadOnly>(2, _omitFieldNames ? '' : 'readOnly',
+        subBuilder: TransactionOptions_ReadOnly.create)
+    ..aOM<TransactionOptions_PartitionedDml>(
+        3, _omitFieldNames ? '' : 'partitionedDml',
+        subBuilder: TransactionOptions_PartitionedDml.create)
     ..aOB(5, _omitFieldNames ? '' : 'excludeTxnFromChangeStreams')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransactionOptions clone() => TransactionOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransactionOptions copyWith(void Function(TransactionOptions) updates) => super.copyWith((message) => updates(message as TransactionOptions)) as TransactionOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransactionOptions copyWith(void Function(TransactionOptions) updates) =>
+      super.copyWith((message) => updates(message as TransactionOptions))
+          as TransactionOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransactionOptions create() => TransactionOptions._();
   TransactionOptions createEmptyInstance() => create();
-  static $pb.PbList<TransactionOptions> createRepeated() => $pb.PbList<TransactionOptions>();
+  static $pb.PbList<TransactionOptions> createRepeated() =>
+      $pb.PbList<TransactionOptions>();
   @$core.pragma('dart2js:noInline')
-  static TransactionOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransactionOptions>(create);
+  static TransactionOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransactionOptions>(create);
   static TransactionOptions? _defaultInstance;
 
-  TransactionOptions_Mode whichMode() => _TransactionOptions_ModeByTag[$_whichOneof(0)]!;
+  TransactionOptions_Mode whichMode() =>
+      _TransactionOptions_ModeByTag[$_whichOneof(0)]!;
   void clearMode() => clearField($_whichOneof(0));
 
   ///  Transaction may write.
@@ -710,7 +792,10 @@ class TransactionOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TransactionOptions_ReadWrite get readWrite => $_getN(0);
   @$pb.TagNumber(1)
-  set readWrite(TransactionOptions_ReadWrite v) { setField(1, v); }
+  set readWrite(TransactionOptions_ReadWrite v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReadWrite() => $_has(0);
   @$pb.TagNumber(1)
@@ -726,7 +811,10 @@ class TransactionOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TransactionOptions_ReadOnly get readOnly => $_getN(1);
   @$pb.TagNumber(2)
-  set readOnly(TransactionOptions_ReadOnly v) { setField(2, v); }
+  set readOnly(TransactionOptions_ReadOnly v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReadOnly() => $_has(1);
   @$pb.TagNumber(2)
@@ -742,7 +830,10 @@ class TransactionOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TransactionOptions_PartitionedDml get partitionedDml => $_getN(2);
   @$pb.TagNumber(3)
-  set partitionedDml(TransactionOptions_PartitionedDml v) { setField(3, v); }
+  set partitionedDml(TransactionOptions_PartitionedDml v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPartitionedDml() => $_has(2);
   @$pb.TagNumber(3)
@@ -767,7 +858,10 @@ class TransactionOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get excludeTxnFromChangeStreams => $_getBF(3);
   @$pb.TagNumber(5)
-  set excludeTxnFromChangeStreams($core.bool v) { $_setBool(3, v); }
+  set excludeTxnFromChangeStreams($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasExcludeTxnFromChangeStreams() => $_has(3);
   @$pb.TagNumber(5)
@@ -790,25 +884,34 @@ class Transaction extends $pb.GeneratedMessage {
     return $result;
   }
   Transaction._() : super();
-  factory Transaction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Transaction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Transaction.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Transaction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Transaction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OY)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'readTimestamp', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Transaction',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OY)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'readTimestamp',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Transaction clone() => Transaction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Transaction copyWith(void Function(Transaction) updates) => super.copyWith((message) => updates(message as Transaction)) as Transaction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Transaction copyWith(void Function(Transaction) updates) =>
+      super.copyWith((message) => updates(message as Transaction))
+          as Transaction;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -817,7 +920,8 @@ class Transaction extends $pb.GeneratedMessage {
   Transaction createEmptyInstance() => create();
   static $pb.PbList<Transaction> createRepeated() => $pb.PbList<Transaction>();
   @$core.pragma('dart2js:noInline')
-  static Transaction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Transaction>(create);
+  static Transaction getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Transaction>(create);
   static Transaction? _defaultInstance;
 
   ///  `id` may be used to identify the transaction in subsequent
@@ -831,7 +935,10 @@ class Transaction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get id => $_getN(0);
   @$pb.TagNumber(1)
-  set id($core.List<$core.int> v) { $_setBytes(0, v); }
+  set id($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -846,7 +953,10 @@ class Transaction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get readTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set readTimestamp($302.Timestamp v) { setField(2, v); }
+  set readTimestamp($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReadTimestamp() => $_has(1);
   @$pb.TagNumber(2)
@@ -855,12 +965,7 @@ class Transaction extends $pb.GeneratedMessage {
   $302.Timestamp ensureReadTimestamp() => $_ensure(1);
 }
 
-enum TransactionSelector_Selector {
-  singleUse, 
-  id, 
-  begin, 
-  notSet
-}
+enum TransactionSelector_Selector { singleUse, id, begin, notSet }
 
 ///  This message is used to select the transaction in which a
 ///  [Read][google.spanner.v1.Spanner.Read] or
@@ -887,45 +992,59 @@ class TransactionSelector extends $pb.GeneratedMessage {
     return $result;
   }
   TransactionSelector._() : super();
-  factory TransactionSelector.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransactionSelector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransactionSelector.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransactionSelector.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TransactionSelector_Selector> _TransactionSelector_SelectorByTag = {
-    1 : TransactionSelector_Selector.singleUse,
-    2 : TransactionSelector_Selector.id,
-    3 : TransactionSelector_Selector.begin,
-    0 : TransactionSelector_Selector.notSet
+  static const $core.Map<$core.int, TransactionSelector_Selector>
+      _TransactionSelector_SelectorByTag = {
+    1: TransactionSelector_Selector.singleUse,
+    2: TransactionSelector_Selector.id,
+    3: TransactionSelector_Selector.begin,
+    0: TransactionSelector_Selector.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransactionSelector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransactionSelector',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<TransactionOptions>(1, _omitFieldNames ? '' : 'singleUse', subBuilder: TransactionOptions.create)
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OY)
-    ..aOM<TransactionOptions>(3, _omitFieldNames ? '' : 'begin', subBuilder: TransactionOptions.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<TransactionOptions>(1, _omitFieldNames ? '' : 'singleUse',
+        subBuilder: TransactionOptions.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OY)
+    ..aOM<TransactionOptions>(3, _omitFieldNames ? '' : 'begin',
+        subBuilder: TransactionOptions.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransactionSelector clone() => TransactionSelector()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransactionSelector copyWith(void Function(TransactionSelector) updates) => super.copyWith((message) => updates(message as TransactionSelector)) as TransactionSelector;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransactionSelector copyWith(void Function(TransactionSelector) updates) =>
+      super.copyWith((message) => updates(message as TransactionSelector))
+          as TransactionSelector;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransactionSelector create() => TransactionSelector._();
   TransactionSelector createEmptyInstance() => create();
-  static $pb.PbList<TransactionSelector> createRepeated() => $pb.PbList<TransactionSelector>();
+  static $pb.PbList<TransactionSelector> createRepeated() =>
+      $pb.PbList<TransactionSelector>();
   @$core.pragma('dart2js:noInline')
-  static TransactionSelector getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransactionSelector>(create);
+  static TransactionSelector getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransactionSelector>(create);
   static TransactionSelector? _defaultInstance;
 
-  TransactionSelector_Selector whichSelector() => _TransactionSelector_SelectorByTag[$_whichOneof(0)]!;
+  TransactionSelector_Selector whichSelector() =>
+      _TransactionSelector_SelectorByTag[$_whichOneof(0)]!;
   void clearSelector() => clearField($_whichOneof(0));
 
   /// Execute the read or SQL query in a temporary transaction.
@@ -934,7 +1053,10 @@ class TransactionSelector extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TransactionOptions get singleUse => $_getN(0);
   @$pb.TagNumber(1)
-  set singleUse(TransactionOptions v) { setField(1, v); }
+  set singleUse(TransactionOptions v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSingleUse() => $_has(0);
   @$pb.TagNumber(1)
@@ -946,7 +1068,10 @@ class TransactionSelector extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get id => $_getN(1);
   @$pb.TagNumber(2)
-  set id($core.List<$core.int> v) { $_setBytes(1, v); }
+  set id($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -959,7 +1084,10 @@ class TransactionSelector extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TransactionOptions get begin => $_getN(2);
   @$pb.TagNumber(3)
-  set begin(TransactionOptions v) { setField(3, v); }
+  set begin(TransactionOptions v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBegin() => $_has(2);
   @$pb.TagNumber(3)
@@ -968,6 +1096,6 @@ class TransactionSelector extends $pb.GeneratedMessage {
   TransactionOptions ensureBegin() => $_ensure(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

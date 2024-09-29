@@ -24,24 +24,73 @@ const RouteMatrixElementCondition$json = {
 };
 
 /// Descriptor for `RouteMatrixElementCondition`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List routeMatrixElementConditionDescriptor = $convert.base64Decode(
-    'ChtSb3V0ZU1hdHJpeEVsZW1lbnRDb25kaXRpb24SLgoqUk9VVEVfTUFUUklYX0VMRU1FTlRfQ0'
-    '9ORElUSU9OX1VOU1BFQ0lGSUVEEAASEAoMUk9VVEVfRVhJU1RTEAESEwoPUk9VVEVfTk9UX0ZP'
-    'VU5EEAI=');
+final $typed_data.Uint8List routeMatrixElementConditionDescriptor =
+    $convert.base64Decode(
+        'ChtSb3V0ZU1hdHJpeEVsZW1lbnRDb25kaXRpb24SLgoqUk9VVEVfTUFUUklYX0VMRU1FTlRfQ0'
+        '9ORElUSU9OX1VOU1BFQ0lGSUVEEAASEAoMUk9VVEVfRVhJU1RTEAESEwoPUk9VVEVfTk9UX0ZP'
+        'VU5EEAI=');
 
 @$core.Deprecated('Use routeMatrixElementDescriptor instead')
 const RouteMatrixElement$json = {
   '1': 'RouteMatrixElement',
   '2': [
     {'1': 'origin_index', '3': 1, '4': 1, '5': 5, '10': 'originIndex'},
-    {'1': 'destination_index', '3': 2, '4': 1, '5': 5, '10': 'destinationIndex'},
-    {'1': 'status', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'condition', '3': 9, '4': 1, '5': 14, '6': '.google.maps.routes.v1.RouteMatrixElementCondition', '10': 'condition'},
+    {
+      '1': 'destination_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'destinationIndex'
+    },
+    {
+      '1': 'status',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'condition',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.RouteMatrixElementCondition',
+      '10': 'condition'
+    },
     {'1': 'distance_meters', '3': 4, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'duration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'static_duration', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'travel_advisory', '3': 7, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteTravelAdvisory', '10': 'travelAdvisory'},
-    {'1': 'fallback_info', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routes.v1.FallbackInfo', '10': 'fallbackInfo'},
+    {
+      '1': 'duration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
+    {
+      '1': 'fallback_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.FallbackInfo',
+      '10': 'fallbackInfo'
+    },
   ],
 };
 
@@ -57,4 +106,3 @@ final $typed_data.Uint8List routeMatrixElementDescriptor = $convert.base64Decode
     '9uElMKD3RyYXZlbF9hZHZpc29yeRgHIAEoCzIqLmdvb2dsZS5tYXBzLnJvdXRlcy52MS5Sb3V0'
     'ZVRyYXZlbEFkdmlzb3J5Ug50cmF2ZWxBZHZpc29yeRJICg1mYWxsYmFja19pbmZvGAggASgLMi'
     'MuZ29vZ2xlLm1hcHMucm91dGVzLnYxLkZhbGxiYWNrSW5mb1IMZmFsbGJhY2tJbmZv');
-

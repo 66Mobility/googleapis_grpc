@@ -20,7 +20,14 @@ const Photo$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'width_px', '3': 2, '4': 1, '5': 5, '10': 'widthPx'},
     {'1': 'height_px', '3': 3, '4': 1, '5': 5, '10': 'heightPx'},
-    {'1': 'author_attributions', '3': 4, '4': 3, '5': 11, '6': '.google.maps.places.v1.AuthorAttribution', '10': 'authorAttributions'},
+    {
+      '1': 'author_attributions',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.AuthorAttribution',
+      '10': 'authorAttributions'
+    },
   ],
   '7': {},
 };
@@ -32,4 +39,3 @@ final $typed_data.Uint8List photoDescriptor = $convert.base64Decode(
     'GAQgAygLMiguZ29vZ2xlLm1hcHMucGxhY2VzLnYxLkF1dGhvckF0dHJpYnV0aW9uUhJhdXRob3'
     'JBdHRyaWJ1dGlvbnM6TupBSwobcGxhY2VzLmdvb2dsZWFwaXMuY29tL1Bob3RvEh1wbGFjZXMv'
     'e3BsYWNlfS9waG90b3Mve3Bob3RvfSoGcGhvdG9zMgVwaG90bw==');
-

@@ -42,27 +42,34 @@ class Canvas extends $pb.GeneratedMessage {
     return $result;
   }
   Canvas._() : super();
-  factory Canvas.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Canvas.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Canvas.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Canvas.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Canvas', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Canvas',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
     ..aOB(3, _omitFieldNames ? '' : 'suppressMic')
-    ..pc<$261.Value>(4, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM, subBuilder: $261.Value.create)
+    ..pc<$261.Value>(4, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM,
+        subBuilder: $261.Value.create)
     ..aOB(8, _omitFieldNames ? '' : 'enableFullScreen')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Canvas clone() => Canvas()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Canvas copyWith(void Function(Canvas) updates) => super.copyWith((message) => updates(message as Canvas)) as Canvas;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Canvas copyWith(void Function(Canvas) updates) =>
+      super.copyWith((message) => updates(message as Canvas)) as Canvas;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -71,7 +78,8 @@ class Canvas extends $pb.GeneratedMessage {
   Canvas createEmptyInstance() => create();
   static $pb.PbList<Canvas> createRepeated() => $pb.PbList<Canvas>();
   @$core.pragma('dart2js:noInline')
-  static Canvas getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Canvas>(create);
+  static Canvas getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Canvas>(create);
   static Canvas? _defaultInstance;
 
   /// URL of the interactive canvas web app to load. If not set, the url from
@@ -79,7 +87,10 @@ class Canvas extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get url => $_getSZ(0);
   @$pb.TagNumber(1)
-  set url($core.String v) { $_setString(0, v); }
+  set url($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -89,7 +100,10 @@ class Canvas extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get suppressMic => $_getBF(1);
   @$pb.TagNumber(3)
-  set suppressMic($core.bool v) { $_setBool(1, v); }
+  set suppressMic($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSuppressMic() => $_has(1);
   @$pb.TagNumber(3)
@@ -110,13 +124,16 @@ class Canvas extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get enableFullScreen => $_getBF(3);
   @$pb.TagNumber(8)
-  set enableFullScreen($core.bool v) { $_setBool(3, v); }
+  set enableFullScreen($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasEnableFullScreen() => $_has(3);
   @$pb.TagNumber(8)
   void clearEnableFullScreen() => clearField(8);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

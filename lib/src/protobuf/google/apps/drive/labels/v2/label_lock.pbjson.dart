@@ -20,11 +20,51 @@ const LabelLock$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'field_id', '3': 2, '4': 1, '5': 9, '10': 'fieldId'},
     {'1': 'choice_id', '3': 3, '4': 1, '5': 9, '10': 'choiceId'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'creator', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.UserInfo', '8': {}, '10': 'creator'},
-    {'1': 'delete_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'deleteTime'},
-    {'1': 'capabilities', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.LabelLock.Capabilities', '8': {}, '10': 'capabilities'},
-    {'1': 'state', '3': 9, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.LabelLock.State', '8': {}, '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'creator',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.UserInfo',
+      '8': {},
+      '10': 'creator'
+    },
+    {
+      '1': 'delete_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'capabilities',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.LabelLock.Capabilities',
+      '8': {},
+      '10': 'capabilities'
+    },
+    {
+      '1': 'state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.LabelLock.State',
+      '8': {},
+      '10': 'state'
+    },
   ],
   '3': [LabelLock_Capabilities$json],
   '4': [LabelLock_State$json],
@@ -63,4 +103,3 @@ final $typed_data.Uint8List labelLockDescriptor = $convert.base64Decode(
     'EoCFINY2FuVmlld1BvbGljeSI4CgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAAEgoKBkFD'
     'VElWRRABEgwKCERFTEVUSU5HEAI6RupBQwokZHJpdmVsYWJlbHMuZ29vZ2xlYXBpcy5jb20vTG'
     'FiZWxMb2NrEhtsYWJlbHMve2xhYmVsfS9sb2Nrcy97bG9ja30=');
-

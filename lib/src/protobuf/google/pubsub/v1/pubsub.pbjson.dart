@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const MessageStoragePolicy$json = {
   '1': 'MessageStoragePolicy',
   '2': [
-    {'1': 'allowed_persistence_regions', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'allowedPersistenceRegions'},
-    {'1': 'enforce_in_transit', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'enforceInTransit'},
+    {
+      '1': 'allowed_persistence_regions',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'allowedPersistenceRegions'
+    },
+    {
+      '1': 'enforce_in_transit',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'enforceInTransit'
+    },
   ],
 };
 
@@ -33,9 +47,31 @@ const SchemaSettings$json = {
   '1': 'SchemaSettings',
   '2': [
     {'1': 'schema', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'schema'},
-    {'1': 'encoding', '3': 2, '4': 1, '5': 14, '6': '.google.pubsub.v1.Encoding', '8': {}, '10': 'encoding'},
-    {'1': 'first_revision_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'firstRevisionId'},
-    {'1': 'last_revision_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'lastRevisionId'},
+    {
+      '1': 'encoding',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.Encoding',
+      '8': {},
+      '10': 'encoding'
+    },
+    {
+      '1': 'first_revision_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'firstRevisionId'
+    },
+    {
+      '1': 'last_revision_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'lastRevisionId'
+    },
   ],
 };
 
@@ -51,11 +87,40 @@ final $typed_data.Uint8List schemaSettingsDescriptor = $convert.base64Decode(
 const IngestionDataSourceSettings$json = {
   '1': 'IngestionDataSourceSettings',
   '2': [
-    {'1': 'aws_kinesis', '3': 1, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.AwsKinesis', '8': {}, '9': 0, '10': 'awsKinesis'},
-    {'1': 'cloud_storage', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage', '8': {}, '9': 0, '10': 'cloudStorage'},
-    {'1': 'platform_logs_settings', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.PlatformLogsSettings', '8': {}, '10': 'platformLogsSettings'},
+    {
+      '1': 'aws_kinesis',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.IngestionDataSourceSettings.AwsKinesis',
+      '8': {},
+      '9': 0,
+      '10': 'awsKinesis'
+    },
+    {
+      '1': 'cloud_storage',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage',
+      '8': {},
+      '9': 0,
+      '10': 'cloudStorage'
+    },
+    {
+      '1': 'platform_logs_settings',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.PlatformLogsSettings',
+      '8': {},
+      '10': 'platformLogsSettings'
+    },
   ],
-  '3': [IngestionDataSourceSettings_AwsKinesis$json, IngestionDataSourceSettings_CloudStorage$json],
+  '3': [
+    IngestionDataSourceSettings_AwsKinesis$json,
+    IngestionDataSourceSettings_CloudStorage$json
+  ],
   '8': [
     {'1': 'source'},
   ],
@@ -65,11 +130,26 @@ const IngestionDataSourceSettings$json = {
 const IngestionDataSourceSettings_AwsKinesis$json = {
   '1': 'AwsKinesis',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.pubsub.v1.IngestionDataSourceSettings.AwsKinesis.State', '8': {}, '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.IngestionDataSourceSettings.AwsKinesis.State',
+      '8': {},
+      '10': 'state'
+    },
     {'1': 'stream_arn', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'streamArn'},
     {'1': 'consumer_arn', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'consumerArn'},
     {'1': 'aws_role_arn', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'awsRoleArn'},
-    {'1': 'gcp_service_account', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'gcpServiceAccount'},
+    {
+      '1': 'gcp_service_account',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'gcpServiceAccount'
+    },
   ],
   '4': [IngestionDataSourceSettings_AwsKinesis_State$json],
 };
@@ -91,15 +171,65 @@ const IngestionDataSourceSettings_AwsKinesis_State$json = {
 const IngestionDataSourceSettings_CloudStorage$json = {
   '1': 'CloudStorage',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.State', '8': {}, '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.State',
+      '8': {},
+      '10': 'state'
+    },
     {'1': 'bucket', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'text_format', '3': 3, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.TextFormat', '8': {}, '9': 0, '10': 'textFormat'},
-    {'1': 'avro_format', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.AvroFormat', '8': {}, '9': 0, '10': 'avroFormat'},
-    {'1': 'pubsub_avro_format', '3': 5, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.PubSubAvroFormat', '8': {}, '9': 0, '10': 'pubsubAvroFormat'},
-    {'1': 'minimum_object_create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'minimumObjectCreateTime'},
+    {
+      '1': 'text_format',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.TextFormat',
+      '8': {},
+      '9': 0,
+      '10': 'textFormat'
+    },
+    {
+      '1': 'avro_format',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.AvroFormat',
+      '8': {},
+      '9': 0,
+      '10': 'avroFormat'
+    },
+    {
+      '1': 'pubsub_avro_format',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.PubSubAvroFormat',
+      '8': {},
+      '9': 0,
+      '10': 'pubsubAvroFormat'
+    },
+    {
+      '1': 'minimum_object_create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'minimumObjectCreateTime'
+    },
     {'1': 'match_glob', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'matchGlob'},
   ],
-  '3': [IngestionDataSourceSettings_CloudStorage_TextFormat$json, IngestionDataSourceSettings_CloudStorage_AvroFormat$json, IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat$json],
+  '3': [
+    IngestionDataSourceSettings_CloudStorage_TextFormat$json,
+    IngestionDataSourceSettings_CloudStorage_AvroFormat$json,
+    IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat$json
+  ],
   '4': [IngestionDataSourceSettings_CloudStorage_State$json],
   '8': [
     {'1': 'input_format'},
@@ -110,7 +240,16 @@ const IngestionDataSourceSettings_CloudStorage$json = {
 const IngestionDataSourceSettings_CloudStorage_TextFormat$json = {
   '1': 'TextFormat',
   '2': [
-    {'1': 'delimiter', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'delimiter', '17': true},
+    {
+      '1': 'delimiter',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'delimiter',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_delimiter'},
@@ -177,7 +316,15 @@ final $typed_data.Uint8List ingestionDataSourceSettingsDescriptor = $convert.bas
 const PlatformLogsSettings$json = {
   '1': 'PlatformLogsSettings',
   '2': [
-    {'1': 'severity', '3': 1, '4': 1, '5': 14, '6': '.google.pubsub.v1.PlatformLogsSettings.Severity', '8': {}, '10': 'severity'},
+    {
+      '1': 'severity',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.PlatformLogsSettings.Severity',
+      '8': {},
+      '10': 'severity'
+    },
   ],
   '4': [PlatformLogsSettings_Severity$json],
 };
@@ -207,14 +354,69 @@ const Topic$json = {
   '1': 'Topic',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.pubsub.v1.Topic.LabelsEntry', '8': {}, '10': 'labels'},
-    {'1': 'message_storage_policy', '3': 3, '4': 1, '5': 11, '6': '.google.pubsub.v1.MessageStoragePolicy', '8': {}, '10': 'messageStoragePolicy'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Topic.LabelsEntry',
+      '8': {},
+      '10': 'labels'
+    },
+    {
+      '1': 'message_storage_policy',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.MessageStoragePolicy',
+      '8': {},
+      '10': 'messageStoragePolicy'
+    },
     {'1': 'kms_key_name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyName'},
-    {'1': 'schema_settings', '3': 6, '4': 1, '5': 11, '6': '.google.pubsub.v1.SchemaSettings', '8': {}, '10': 'schemaSettings'},
-    {'1': 'satisfies_pzs', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'satisfiesPzs'},
-    {'1': 'message_retention_duration', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'messageRetentionDuration'},
-    {'1': 'state', '3': 9, '4': 1, '5': 14, '6': '.google.pubsub.v1.Topic.State', '8': {}, '10': 'state'},
-    {'1': 'ingestion_data_source_settings', '3': 10, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings', '8': {}, '10': 'ingestionDataSourceSettings'},
+    {
+      '1': 'schema_settings',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.SchemaSettings',
+      '8': {},
+      '10': 'schemaSettings'
+    },
+    {
+      '1': 'satisfies_pzs',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'satisfiesPzs'
+    },
+    {
+      '1': 'message_retention_duration',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'messageRetentionDuration'
+    },
+    {
+      '1': 'state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.Topic.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'ingestion_data_source_settings',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.IngestionDataSourceSettings',
+      '8': {},
+      '10': 'ingestionDataSourceSettings'
+    },
   ],
   '3': [Topic_LabelsEntry$json],
   '4': [Topic_State$json],
@@ -265,9 +467,24 @@ const PubsubMessage$json = {
   '1': 'PubsubMessage',
   '2': [
     {'1': 'data', '3': 1, '4': 1, '5': 12, '8': {}, '10': 'data'},
-    {'1': 'attributes', '3': 2, '4': 3, '5': 11, '6': '.google.pubsub.v1.PubsubMessage.AttributesEntry', '8': {}, '10': 'attributes'},
+    {
+      '1': 'attributes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.PubsubMessage.AttributesEntry',
+      '8': {},
+      '10': 'attributes'
+    },
     {'1': 'message_id', '3': 3, '4': 1, '5': 9, '10': 'messageId'},
-    {'1': 'publish_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'publishTime'},
+    {
+      '1': 'publish_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'publishTime'
+    },
     {'1': 'ordering_key', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'orderingKey'},
   ],
   '3': [PubsubMessage_AttributesEntry$json],
@@ -309,8 +526,24 @@ final $typed_data.Uint8List getTopicRequestDescriptor = $convert.base64Decode(
 const UpdateTopicRequest$json = {
   '1': 'UpdateTopicRequest',
   '2': [
-    {'1': 'topic', '3': 1, '4': 1, '5': 11, '6': '.google.pubsub.v1.Topic', '8': {}, '10': 'topic'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'topic',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Topic',
+      '8': {},
+      '10': 'topic'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -325,7 +558,15 @@ const PublishRequest$json = {
   '1': 'PublishRequest',
   '2': [
     {'1': 'topic', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'topic'},
-    {'1': 'messages', '3': 2, '4': 3, '5': 11, '6': '.google.pubsub.v1.PubsubMessage', '8': {}, '10': 'messages'},
+    {
+      '1': 'messages',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.PubsubMessage',
+      '8': {},
+      '10': 'messages'
+    },
   ],
 };
 
@@ -369,8 +610,23 @@ final $typed_data.Uint8List listTopicsRequestDescriptor = $convert.base64Decode(
 const ListTopicsResponse$json = {
   '1': 'ListTopicsResponse',
   '2': [
-    {'1': 'topics', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1.Topic', '8': {}, '10': 'topics'},
-    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'nextPageToken'},
+    {
+      '1': 'topics',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Topic',
+      '8': {},
+      '10': 'topics'
+    },
+    {
+      '1': 'next_page_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'nextPageToken'
+    },
   ],
 };
 
@@ -391,25 +647,41 @@ const ListTopicSubscriptionsRequest$json = {
 };
 
 /// Descriptor for `ListTopicSubscriptionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTopicSubscriptionsRequestDescriptor = $convert.base64Decode(
-    'Ch1MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVxdWVzdBI5CgV0b3BpYxgBIAEoCUIj4EEC+kEdCh'
-    'twdWJzdWIuZ29vZ2xlYXBpcy5jb20vVG9waWNSBXRvcGljEiAKCXBhZ2Vfc2l6ZRgCIAEoBUID'
-    '4EEBUghwYWdlU2l6ZRIiCgpwYWdlX3Rva2VuGAMgASgJQgPgQQFSCXBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listTopicSubscriptionsRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVxdWVzdBI5CgV0b3BpYxgBIAEoCUIj4EEC+kEdCh'
+        'twdWJzdWIuZ29vZ2xlYXBpcy5jb20vVG9waWNSBXRvcGljEiAKCXBhZ2Vfc2l6ZRgCIAEoBUID'
+        '4EEBUghwYWdlU2l6ZRIiCgpwYWdlX3Rva2VuGAMgASgJQgPgQQFSCXBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use listTopicSubscriptionsResponseDescriptor instead')
 const ListTopicSubscriptionsResponse$json = {
   '1': 'ListTopicSubscriptionsResponse',
   '2': [
-    {'1': 'subscriptions', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'subscriptions'},
-    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'nextPageToken'},
+    {
+      '1': 'subscriptions',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'subscriptions'
+    },
+    {
+      '1': 'next_page_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'nextPageToken'
+    },
   ],
 };
 
 /// Descriptor for `ListTopicSubscriptionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTopicSubscriptionsResponseDescriptor = $convert.base64Decode(
-    'Ch5MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVzcG9uc2USUAoNc3Vic2NyaXB0aW9ucxgBIAMoCU'
-    'Iq4EEB+kEkCiJwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUg1zdWJzY3JpcHRp'
-    'b25zEisKD25leHRfcGFnZV90b2tlbhgCIAEoCUID4EEBUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listTopicSubscriptionsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch5MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVzcG9uc2USUAoNc3Vic2NyaXB0aW9ucxgBIAMoCU'
+        'Iq4EEB+kEkCiJwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUg1zdWJzY3JpcHRp'
+        'b25zEisKD25leHRfcGFnZV90b2tlbhgCIAEoCUID4EEBUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use listTopicSnapshotsRequestDescriptor instead')
 const ListTopicSnapshotsRequest$json = {
@@ -432,14 +704,22 @@ const ListTopicSnapshotsResponse$json = {
   '1': 'ListTopicSnapshotsResponse',
   '2': [
     {'1': 'snapshots', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'snapshots'},
-    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'nextPageToken'},
+    {
+      '1': 'next_page_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'nextPageToken'
+    },
   ],
 };
 
 /// Descriptor for `ListTopicSnapshotsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTopicSnapshotsResponseDescriptor = $convert.base64Decode(
-    'ChpMaXN0VG9waWNTbmFwc2hvdHNSZXNwb25zZRIhCglzbmFwc2hvdHMYASADKAlCA+BBAVIJc2'
-    '5hcHNob3RzEisKD25leHRfcGFnZV90b2tlbhgCIAEoCUID4EEBUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listTopicSnapshotsResponseDescriptor =
+    $convert.base64Decode(
+        'ChpMaXN0VG9waWNTbmFwc2hvdHNSZXNwb25zZRIhCglzbmFwc2hvdHMYASADKAlCA+BBAVIJc2'
+        '5hcHNob3RzEisKD25leHRfcGFnZV90b2tlbhgCIAEoCUID4EEBUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use deleteTopicRequestDescriptor instead')
 const DeleteTopicRequest$json = {
@@ -458,14 +738,22 @@ final $typed_data.Uint8List deleteTopicRequestDescriptor = $convert.base64Decode
 const DetachSubscriptionRequest$json = {
   '1': 'DetachSubscriptionRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
   ],
 };
 
 /// Descriptor for `DetachSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List detachSubscriptionRequestDescriptor = $convert.base64Decode(
-    'ChlEZXRhY2hTdWJzY3JpcHRpb25SZXF1ZXN0Ek4KDHN1YnNjcmlwdGlvbhgBIAEoCUIq4EEC+k'
-    'EkCiJwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUgxzdWJzY3JpcHRpb24=');
+final $typed_data.Uint8List detachSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'ChlEZXRhY2hTdWJzY3JpcHRpb25SZXF1ZXN0Ek4KDHN1YnNjcmlwdGlvbhgBIAEoCUIq4EEC+k'
+        'EkCiJwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUgxzdWJzY3JpcHRpb24=');
 
 @$core.Deprecated('Use detachSubscriptionResponseDescriptor instead')
 const DetachSubscriptionResponse$json = {
@@ -473,8 +761,8 @@ const DetachSubscriptionResponse$json = {
 };
 
 /// Descriptor for `DetachSubscriptionResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List detachSubscriptionResponseDescriptor = $convert.base64Decode(
-    'ChpEZXRhY2hTdWJzY3JpcHRpb25SZXNwb25zZQ==');
+final $typed_data.Uint8List detachSubscriptionResponseDescriptor =
+    $convert.base64Decode('ChpEZXRhY2hTdWJzY3JpcHRpb25SZXNwb25zZQ==');
 
 @$core.Deprecated('Use subscriptionDescriptor instead')
 const Subscription$json = {
@@ -482,25 +770,144 @@ const Subscription$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'topic', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'topic'},
-    {'1': 'push_config', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.PushConfig', '8': {}, '10': 'pushConfig'},
-    {'1': 'bigquery_config', '3': 18, '4': 1, '5': 11, '6': '.google.pubsub.v1.BigQueryConfig', '8': {}, '10': 'bigqueryConfig'},
-    {'1': 'cloud_storage_config', '3': 22, '4': 1, '5': 11, '6': '.google.pubsub.v1.CloudStorageConfig', '8': {}, '10': 'cloudStorageConfig'},
-    {'1': 'ack_deadline_seconds', '3': 5, '4': 1, '5': 5, '8': {}, '10': 'ackDeadlineSeconds'},
-    {'1': 'retain_acked_messages', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'retainAckedMessages'},
-    {'1': 'message_retention_duration', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'messageRetentionDuration'},
-    {'1': 'labels', '3': 9, '4': 3, '5': 11, '6': '.google.pubsub.v1.Subscription.LabelsEntry', '8': {}, '10': 'labels'},
-    {'1': 'enable_message_ordering', '3': 10, '4': 1, '5': 8, '8': {}, '10': 'enableMessageOrdering'},
-    {'1': 'expiration_policy', '3': 11, '4': 1, '5': 11, '6': '.google.pubsub.v1.ExpirationPolicy', '8': {}, '10': 'expirationPolicy'},
+    {
+      '1': 'push_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.PushConfig',
+      '8': {},
+      '10': 'pushConfig'
+    },
+    {
+      '1': 'bigquery_config',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.BigQueryConfig',
+      '8': {},
+      '10': 'bigqueryConfig'
+    },
+    {
+      '1': 'cloud_storage_config',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.CloudStorageConfig',
+      '8': {},
+      '10': 'cloudStorageConfig'
+    },
+    {
+      '1': 'ack_deadline_seconds',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'ackDeadlineSeconds'
+    },
+    {
+      '1': 'retain_acked_messages',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'retainAckedMessages'
+    },
+    {
+      '1': 'message_retention_duration',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'messageRetentionDuration'
+    },
+    {
+      '1': 'labels',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Subscription.LabelsEntry',
+      '8': {},
+      '10': 'labels'
+    },
+    {
+      '1': 'enable_message_ordering',
+      '3': 10,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'enableMessageOrdering'
+    },
+    {
+      '1': 'expiration_policy',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.ExpirationPolicy',
+      '8': {},
+      '10': 'expirationPolicy'
+    },
     {'1': 'filter', '3': 12, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'dead_letter_policy', '3': 13, '4': 1, '5': 11, '6': '.google.pubsub.v1.DeadLetterPolicy', '8': {}, '10': 'deadLetterPolicy'},
-    {'1': 'retry_policy', '3': 14, '4': 1, '5': 11, '6': '.google.pubsub.v1.RetryPolicy', '8': {}, '10': 'retryPolicy'},
+    {
+      '1': 'dead_letter_policy',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.DeadLetterPolicy',
+      '8': {},
+      '10': 'deadLetterPolicy'
+    },
+    {
+      '1': 'retry_policy',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.RetryPolicy',
+      '8': {},
+      '10': 'retryPolicy'
+    },
     {'1': 'detached', '3': 15, '4': 1, '5': 8, '8': {}, '10': 'detached'},
-    {'1': 'enable_exactly_once_delivery', '3': 16, '4': 1, '5': 8, '8': {}, '10': 'enableExactlyOnceDelivery'},
-    {'1': 'topic_message_retention_duration', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'topicMessageRetentionDuration'},
-    {'1': 'state', '3': 19, '4': 1, '5': 14, '6': '.google.pubsub.v1.Subscription.State', '8': {}, '10': 'state'},
-    {'1': 'analytics_hub_subscription_info', '3': 23, '4': 1, '5': 11, '6': '.google.pubsub.v1.Subscription.AnalyticsHubSubscriptionInfo', '8': {}, '10': 'analyticsHubSubscriptionInfo'},
+    {
+      '1': 'enable_exactly_once_delivery',
+      '3': 16,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'enableExactlyOnceDelivery'
+    },
+    {
+      '1': 'topic_message_retention_duration',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'topicMessageRetentionDuration'
+    },
+    {
+      '1': 'state',
+      '3': 19,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.Subscription.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'analytics_hub_subscription_info',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Subscription.AnalyticsHubSubscriptionInfo',
+      '8': {},
+      '10': 'analyticsHubSubscriptionInfo'
+    },
   ],
-  '3': [Subscription_AnalyticsHubSubscriptionInfo$json, Subscription_LabelsEntry$json],
+  '3': [
+    Subscription_AnalyticsHubSubscriptionInfo$json,
+    Subscription_LabelsEntry$json
+  ],
   '4': [Subscription_State$json],
   '7': {},
 };
@@ -510,7 +917,14 @@ const Subscription_AnalyticsHubSubscriptionInfo$json = {
   '1': 'AnalyticsHubSubscriptionInfo',
   '2': [
     {'1': 'listing', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'listing'},
-    {'1': 'subscription', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
   ],
 };
 
@@ -572,8 +986,24 @@ final $typed_data.Uint8List subscriptionDescriptor = $convert.base64Decode(
 const RetryPolicy$json = {
   '1': 'RetryPolicy',
   '2': [
-    {'1': 'minimum_backoff', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'minimumBackoff'},
-    {'1': 'maximum_backoff', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'maximumBackoff'},
+    {
+      '1': 'minimum_backoff',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'minimumBackoff'
+    },
+    {
+      '1': 'maximum_backoff',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'maximumBackoff'
+    },
   ],
 };
 
@@ -587,8 +1017,22 @@ final $typed_data.Uint8List retryPolicyDescriptor = $convert.base64Decode(
 const DeadLetterPolicy$json = {
   '1': 'DeadLetterPolicy',
   '2': [
-    {'1': 'dead_letter_topic', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'deadLetterTopic'},
-    {'1': 'max_delivery_attempts', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'maxDeliveryAttempts'},
+    {
+      '1': 'dead_letter_topic',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'deadLetterTopic'
+    },
+    {
+      '1': 'max_delivery_attempts',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'maxDeliveryAttempts'
+    },
   ],
 };
 
@@ -602,7 +1046,15 @@ final $typed_data.Uint8List deadLetterPolicyDescriptor = $convert.base64Decode(
 const ExpirationPolicy$json = {
   '1': 'ExpirationPolicy',
   '2': [
-    {'1': 'ttl', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'ttl'},
+    {
+      '1': 'ttl',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'ttl'
+    },
   ],
 };
 
@@ -615,13 +1067,60 @@ final $typed_data.Uint8List expirationPolicyDescriptor = $convert.base64Decode(
 const PushConfig$json = {
   '1': 'PushConfig',
   '2': [
-    {'1': 'push_endpoint', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'pushEndpoint'},
-    {'1': 'attributes', '3': 2, '4': 3, '5': 11, '6': '.google.pubsub.v1.PushConfig.AttributesEntry', '8': {}, '10': 'attributes'},
-    {'1': 'oidc_token', '3': 3, '4': 1, '5': 11, '6': '.google.pubsub.v1.PushConfig.OidcToken', '8': {}, '9': 0, '10': 'oidcToken'},
-    {'1': 'pubsub_wrapper', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.PushConfig.PubsubWrapper', '8': {}, '9': 1, '10': 'pubsubWrapper'},
-    {'1': 'no_wrapper', '3': 5, '4': 1, '5': 11, '6': '.google.pubsub.v1.PushConfig.NoWrapper', '8': {}, '9': 1, '10': 'noWrapper'},
+    {
+      '1': 'push_endpoint',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'pushEndpoint'
+    },
+    {
+      '1': 'attributes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.PushConfig.AttributesEntry',
+      '8': {},
+      '10': 'attributes'
+    },
+    {
+      '1': 'oidc_token',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.PushConfig.OidcToken',
+      '8': {},
+      '9': 0,
+      '10': 'oidcToken'
+    },
+    {
+      '1': 'pubsub_wrapper',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.PushConfig.PubsubWrapper',
+      '8': {},
+      '9': 1,
+      '10': 'pubsubWrapper'
+    },
+    {
+      '1': 'no_wrapper',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.PushConfig.NoWrapper',
+      '8': {},
+      '9': 1,
+      '10': 'noWrapper'
+    },
   ],
-  '3': [PushConfig_OidcToken$json, PushConfig_PubsubWrapper$json, PushConfig_NoWrapper$json, PushConfig_AttributesEntry$json],
+  '3': [
+    PushConfig_OidcToken$json,
+    PushConfig_PubsubWrapper$json,
+    PushConfig_NoWrapper$json,
+    PushConfig_AttributesEntry$json
+  ],
   '8': [
     {'1': 'authentication_method'},
     {'1': 'wrapper'},
@@ -632,7 +1131,14 @@ const PushConfig$json = {
 const PushConfig_OidcToken$json = {
   '1': 'OidcToken',
   '2': [
-    {'1': 'service_account_email', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'serviceAccountEmail'},
+    {
+      '1': 'service_account_email',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'serviceAccountEmail'
+    },
     {'1': 'audience', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'audience'},
   ],
 };
@@ -646,7 +1152,14 @@ const PushConfig_PubsubWrapper$json = {
 const PushConfig_NoWrapper$json = {
   '1': 'NoWrapper',
   '2': [
-    {'1': 'write_metadata', '3': 1, '4': 1, '5': 8, '8': {}, '10': 'writeMetadata'},
+    {
+      '1': 'write_metadata',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'writeMetadata'
+    },
   ],
 };
 
@@ -680,12 +1193,55 @@ const BigQueryConfig$json = {
   '1': 'BigQueryConfig',
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'table'},
-    {'1': 'use_topic_schema', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'useTopicSchema'},
-    {'1': 'write_metadata', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'writeMetadata'},
-    {'1': 'drop_unknown_fields', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'dropUnknownFields'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.pubsub.v1.BigQueryConfig.State', '8': {}, '10': 'state'},
-    {'1': 'use_table_schema', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'useTableSchema'},
-    {'1': 'service_account_email', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'serviceAccountEmail'},
+    {
+      '1': 'use_topic_schema',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useTopicSchema'
+    },
+    {
+      '1': 'write_metadata',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'writeMetadata'
+    },
+    {
+      '1': 'drop_unknown_fields',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'dropUnknownFields'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.BigQueryConfig.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'use_table_schema',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useTableSchema'
+    },
+    {
+      '1': 'service_account_email',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'serviceAccountEmail'
+    },
   ],
   '4': [BigQueryConfig_State$json],
 };
@@ -721,16 +1277,78 @@ const CloudStorageConfig$json = {
   '1': 'CloudStorageConfig',
   '2': [
     {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
-    {'1': 'filename_prefix', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'filenamePrefix'},
-    {'1': 'filename_suffix', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'filenameSuffix'},
-    {'1': 'filename_datetime_format', '3': 10, '4': 1, '5': 9, '8': {}, '10': 'filenameDatetimeFormat'},
-    {'1': 'text_config', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.CloudStorageConfig.TextConfig', '8': {}, '9': 0, '10': 'textConfig'},
-    {'1': 'avro_config', '3': 5, '4': 1, '5': 11, '6': '.google.pubsub.v1.CloudStorageConfig.AvroConfig', '8': {}, '9': 0, '10': 'avroConfig'},
-    {'1': 'max_duration', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'maxDuration'},
+    {
+      '1': 'filename_prefix',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'filenamePrefix'
+    },
+    {
+      '1': 'filename_suffix',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'filenameSuffix'
+    },
+    {
+      '1': 'filename_datetime_format',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'filenameDatetimeFormat'
+    },
+    {
+      '1': 'text_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.CloudStorageConfig.TextConfig',
+      '8': {},
+      '9': 0,
+      '10': 'textConfig'
+    },
+    {
+      '1': 'avro_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.CloudStorageConfig.AvroConfig',
+      '8': {},
+      '9': 0,
+      '10': 'avroConfig'
+    },
+    {
+      '1': 'max_duration',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'maxDuration'
+    },
     {'1': 'max_bytes', '3': 7, '4': 1, '5': 3, '8': {}, '10': 'maxBytes'},
     {'1': 'max_messages', '3': 8, '4': 1, '5': 3, '8': {}, '10': 'maxMessages'},
-    {'1': 'state', '3': 9, '4': 1, '5': 14, '6': '.google.pubsub.v1.CloudStorageConfig.State', '8': {}, '10': 'state'},
-    {'1': 'service_account_email', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'serviceAccountEmail'},
+    {
+      '1': 'state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.pubsub.v1.CloudStorageConfig.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'service_account_email',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'serviceAccountEmail'
+    },
   ],
   '3': [CloudStorageConfig_TextConfig$json, CloudStorageConfig_AvroConfig$json],
   '4': [CloudStorageConfig_State$json],
@@ -748,8 +1366,22 @@ const CloudStorageConfig_TextConfig$json = {
 const CloudStorageConfig_AvroConfig$json = {
   '1': 'AvroConfig',
   '2': [
-    {'1': 'write_metadata', '3': 1, '4': 1, '5': 8, '8': {}, '10': 'writeMetadata'},
-    {'1': 'use_topic_schema', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'useTopicSchema'},
+    {
+      '1': 'write_metadata',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'writeMetadata'
+    },
+    {
+      '1': 'use_topic_schema',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useTopicSchema'
+    },
   ],
 };
 
@@ -791,8 +1423,23 @@ const ReceivedMessage$json = {
   '1': 'ReceivedMessage',
   '2': [
     {'1': 'ack_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'ackId'},
-    {'1': 'message', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1.PubsubMessage', '8': {}, '10': 'message'},
-    {'1': 'delivery_attempt', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'deliveryAttempt'},
+    {
+      '1': 'message',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.PubsubMessage',
+      '8': {},
+      '10': 'message'
+    },
+    {
+      '1': 'delivery_attempt',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'deliveryAttempt'
+    },
   ],
 };
 
@@ -806,21 +1453,45 @@ final $typed_data.Uint8List receivedMessageDescriptor = $convert.base64Decode(
 const GetSubscriptionRequest$json = {
   '1': 'GetSubscriptionRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
   ],
 };
 
 /// Descriptor for `GetSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getSubscriptionRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRTdWJzY3JpcHRpb25SZXF1ZXN0Ek4KDHN1YnNjcmlwdGlvbhgBIAEoCUIq4EEC+kEkCi'
-    'JwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUgxzdWJzY3JpcHRpb24=');
+final $typed_data.Uint8List getSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRTdWJzY3JpcHRpb25SZXF1ZXN0Ek4KDHN1YnNjcmlwdGlvbhgBIAEoCUIq4EEC+kEkCi'
+        'JwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUgxzdWJzY3JpcHRpb24=');
 
 @$core.Deprecated('Use updateSubscriptionRequestDescriptor instead')
 const UpdateSubscriptionRequest$json = {
   '1': 'UpdateSubscriptionRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 11, '6': '.google.pubsub.v1.Subscription', '8': {}, '10': 'subscription'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Subscription',
+      '8': {},
+      '10': 'subscription'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -852,8 +1523,23 @@ final $typed_data.Uint8List listSubscriptionsRequestDescriptor = $convert.base64
 const ListSubscriptionsResponse$json = {
   '1': 'ListSubscriptionsResponse',
   '2': [
-    {'1': 'subscriptions', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1.Subscription', '8': {}, '10': 'subscriptions'},
-    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'nextPageToken'},
+    {
+      '1': 'subscriptions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Subscription',
+      '8': {},
+      '10': 'subscriptions'
+    },
+    {
+      '1': 'next_page_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'nextPageToken'
+    },
   ],
 };
 
@@ -867,21 +1553,44 @@ final $typed_data.Uint8List listSubscriptionsResponseDescriptor = $convert.base6
 const DeleteSubscriptionRequest$json = {
   '1': 'DeleteSubscriptionRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
   ],
 };
 
 /// Descriptor for `DeleteSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSubscriptionRequestDescriptor = $convert.base64Decode(
-    'ChlEZWxldGVTdWJzY3JpcHRpb25SZXF1ZXN0Ek4KDHN1YnNjcmlwdGlvbhgBIAEoCUIq4EEC+k'
-    'EkCiJwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUgxzdWJzY3JpcHRpb24=');
+final $typed_data.Uint8List deleteSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'ChlEZWxldGVTdWJzY3JpcHRpb25SZXF1ZXN0Ek4KDHN1YnNjcmlwdGlvbhgBIAEoCUIq4EEC+k'
+        'EkCiJwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW9uUgxzdWJzY3JpcHRpb24=');
 
 @$core.Deprecated('Use modifyPushConfigRequestDescriptor instead')
 const ModifyPushConfigRequest$json = {
   '1': 'ModifyPushConfigRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
-    {'1': 'push_config', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1.PushConfig', '8': {}, '10': 'pushConfig'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
+    {
+      '1': 'push_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.PushConfig',
+      '8': {},
+      '10': 'pushConfig'
+    },
   ],
 };
 
@@ -896,7 +1605,14 @@ final $typed_data.Uint8List modifyPushConfigRequestDescriptor = $convert.base64D
 const PullRequest$json = {
   '1': 'PullRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
     {
       '1': 'return_immediately',
       '3': 2,
@@ -920,7 +1636,15 @@ final $typed_data.Uint8List pullRequestDescriptor = $convert.base64Decode(
 const PullResponse$json = {
   '1': 'PullResponse',
   '2': [
-    {'1': 'received_messages', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1.ReceivedMessage', '8': {}, '10': 'receivedMessages'},
+    {
+      '1': 'received_messages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.ReceivedMessage',
+      '8': {},
+      '10': 'receivedMessages'
+    },
   ],
 };
 
@@ -933,9 +1657,23 @@ final $typed_data.Uint8List pullResponseDescriptor = $convert.base64Decode(
 const ModifyAckDeadlineRequest$json = {
   '1': 'ModifyAckDeadlineRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
     {'1': 'ack_ids', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'ackIds'},
-    {'1': 'ack_deadline_seconds', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'ackDeadlineSeconds'},
+    {
+      '1': 'ack_deadline_seconds',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'ackDeadlineSeconds'
+    },
   ],
 };
 
@@ -950,7 +1688,14 @@ final $typed_data.Uint8List modifyAckDeadlineRequestDescriptor = $convert.base64
 const AcknowledgeRequest$json = {
   '1': 'AcknowledgeRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
     {'1': 'ack_ids', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'ackIds'},
   ],
 };
@@ -965,14 +1710,56 @@ final $typed_data.Uint8List acknowledgeRequestDescriptor = $convert.base64Decode
 const StreamingPullRequest$json = {
   '1': 'StreamingPullRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
     {'1': 'ack_ids', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'ackIds'},
-    {'1': 'modify_deadline_seconds', '3': 3, '4': 3, '5': 5, '8': {}, '10': 'modifyDeadlineSeconds'},
-    {'1': 'modify_deadline_ack_ids', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'modifyDeadlineAckIds'},
-    {'1': 'stream_ack_deadline_seconds', '3': 5, '4': 1, '5': 5, '8': {}, '10': 'streamAckDeadlineSeconds'},
+    {
+      '1': 'modify_deadline_seconds',
+      '3': 3,
+      '4': 3,
+      '5': 5,
+      '8': {},
+      '10': 'modifyDeadlineSeconds'
+    },
+    {
+      '1': 'modify_deadline_ack_ids',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'modifyDeadlineAckIds'
+    },
+    {
+      '1': 'stream_ack_deadline_seconds',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'streamAckDeadlineSeconds'
+    },
     {'1': 'client_id', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'clientId'},
-    {'1': 'max_outstanding_messages', '3': 7, '4': 1, '5': 3, '8': {}, '10': 'maxOutstandingMessages'},
-    {'1': 'max_outstanding_bytes', '3': 8, '4': 1, '5': 3, '8': {}, '10': 'maxOutstandingBytes'},
+    {
+      '1': 'max_outstanding_messages',
+      '3': 7,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'maxOutstandingMessages'
+    },
+    {
+      '1': 'max_outstanding_bytes',
+      '3': 8,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'maxOutstandingBytes'
+    },
   ],
 };
 
@@ -992,12 +1779,49 @@ final $typed_data.Uint8List streamingPullRequestDescriptor = $convert.base64Deco
 const StreamingPullResponse$json = {
   '1': 'StreamingPullResponse',
   '2': [
-    {'1': 'received_messages', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1.ReceivedMessage', '8': {}, '10': 'receivedMessages'},
-    {'1': 'acknowledge_confirmation', '3': 5, '4': 1, '5': 11, '6': '.google.pubsub.v1.StreamingPullResponse.AcknowledgeConfirmation', '8': {}, '10': 'acknowledgeConfirmation'},
-    {'1': 'modify_ack_deadline_confirmation', '3': 3, '4': 1, '5': 11, '6': '.google.pubsub.v1.StreamingPullResponse.ModifyAckDeadlineConfirmation', '8': {}, '10': 'modifyAckDeadlineConfirmation'},
-    {'1': 'subscription_properties', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.StreamingPullResponse.SubscriptionProperties', '8': {}, '10': 'subscriptionProperties'},
+    {
+      '1': 'received_messages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.ReceivedMessage',
+      '8': {},
+      '10': 'receivedMessages'
+    },
+    {
+      '1': 'acknowledge_confirmation',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.StreamingPullResponse.AcknowledgeConfirmation',
+      '8': {},
+      '10': 'acknowledgeConfirmation'
+    },
+    {
+      '1': 'modify_ack_deadline_confirmation',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.pubsub.v1.StreamingPullResponse.ModifyAckDeadlineConfirmation',
+      '8': {},
+      '10': 'modifyAckDeadlineConfirmation'
+    },
+    {
+      '1': 'subscription_properties',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.StreamingPullResponse.SubscriptionProperties',
+      '8': {},
+      '10': 'subscriptionProperties'
+    },
   ],
-  '3': [StreamingPullResponse_AcknowledgeConfirmation$json, StreamingPullResponse_ModifyAckDeadlineConfirmation$json, StreamingPullResponse_SubscriptionProperties$json],
+  '3': [
+    StreamingPullResponse_AcknowledgeConfirmation$json,
+    StreamingPullResponse_ModifyAckDeadlineConfirmation$json,
+    StreamingPullResponse_SubscriptionProperties$json
+  ],
 };
 
 @$core.Deprecated('Use streamingPullResponseDescriptor instead')
@@ -1005,9 +1829,30 @@ const StreamingPullResponse_AcknowledgeConfirmation$json = {
   '1': 'AcknowledgeConfirmation',
   '2': [
     {'1': 'ack_ids', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'ackIds'},
-    {'1': 'invalid_ack_ids', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'invalidAckIds'},
-    {'1': 'unordered_ack_ids', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'unorderedAckIds'},
-    {'1': 'temporary_failed_ack_ids', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'temporaryFailedAckIds'},
+    {
+      '1': 'invalid_ack_ids',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'invalidAckIds'
+    },
+    {
+      '1': 'unordered_ack_ids',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'unorderedAckIds'
+    },
+    {
+      '1': 'temporary_failed_ack_ids',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'temporaryFailedAckIds'
+    },
   ],
 };
 
@@ -1016,8 +1861,22 @@ const StreamingPullResponse_ModifyAckDeadlineConfirmation$json = {
   '1': 'ModifyAckDeadlineConfirmation',
   '2': [
     {'1': 'ack_ids', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'ackIds'},
-    {'1': 'invalid_ack_ids', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'invalidAckIds'},
-    {'1': 'temporary_failed_ack_ids', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'temporaryFailedAckIds'},
+    {
+      '1': 'invalid_ack_ids',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'invalidAckIds'
+    },
+    {
+      '1': 'temporary_failed_ack_ids',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'temporaryFailedAckIds'
+    },
   ],
 };
 
@@ -1025,8 +1884,22 @@ const StreamingPullResponse_ModifyAckDeadlineConfirmation$json = {
 const StreamingPullResponse_SubscriptionProperties$json = {
   '1': 'SubscriptionProperties',
   '2': [
-    {'1': 'exactly_once_delivery_enabled', '3': 1, '4': 1, '5': 8, '8': {}, '10': 'exactlyOnceDeliveryEnabled'},
-    {'1': 'message_ordering_enabled', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'messageOrderingEnabled'},
+    {
+      '1': 'exactly_once_delivery_enabled',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'exactlyOnceDeliveryEnabled'
+    },
+    {
+      '1': 'message_ordering_enabled',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'messageOrderingEnabled'
+    },
   ],
 };
 
@@ -1058,8 +1931,23 @@ const CreateSnapshotRequest$json = {
   '1': 'CreateSnapshotRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'subscription', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.pubsub.v1.CreateSnapshotRequest.LabelsEntry', '8': {}, '10': 'labels'},
+    {
+      '1': 'subscription',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.CreateSnapshotRequest.LabelsEntry',
+      '8': {},
+      '10': 'labels'
+    },
   ],
   '3': [CreateSnapshotRequest_LabelsEntry$json],
 };
@@ -1087,8 +1975,24 @@ final $typed_data.Uint8List createSnapshotRequestDescriptor = $convert.base64Dec
 const UpdateSnapshotRequest$json = {
   '1': 'UpdateSnapshotRequest',
   '2': [
-    {'1': 'snapshot', '3': 1, '4': 1, '5': 11, '6': '.google.pubsub.v1.Snapshot', '8': {}, '10': 'snapshot'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'snapshot',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.Snapshot',
+      '8': {},
+      '10': 'snapshot'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -1104,8 +2008,24 @@ const Snapshot$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'topic', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'topic'},
-    {'1': 'expire_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.pubsub.v1.Snapshot.LabelsEntry', '8': {}, '10': 'labels'},
+    {
+      '1': 'expire_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Snapshot.LabelsEntry',
+      '8': {},
+      '10': 'labels'
+    },
   ],
   '3': [Snapshot_LabelsEntry$json],
   '7': {},
@@ -1165,8 +2085,23 @@ final $typed_data.Uint8List listSnapshotsRequestDescriptor = $convert.base64Deco
 const ListSnapshotsResponse$json = {
   '1': 'ListSnapshotsResponse',
   '2': [
-    {'1': 'snapshots', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1.Snapshot', '8': {}, '10': 'snapshots'},
-    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'nextPageToken'},
+    {
+      '1': 'snapshots',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1.Snapshot',
+      '8': {},
+      '10': 'snapshots'
+    },
+    {
+      '1': 'next_page_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'nextPageToken'
+    },
   ],
 };
 
@@ -1193,9 +2128,33 @@ final $typed_data.Uint8List deleteSnapshotRequestDescriptor = $convert.base64Dec
 const SeekRequest$json = {
   '1': 'SeekRequest',
   '2': [
-    {'1': 'subscription', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
-    {'1': 'time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '9': 0, '10': 'time'},
-    {'1': 'snapshot', '3': 3, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'snapshot'},
+    {
+      '1': 'subscription',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'subscription'
+    },
+    {
+      '1': 'time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '9': 0,
+      '10': 'time'
+    },
+    {
+      '1': 'snapshot',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'snapshot'
+    },
   ],
   '8': [
     {'1': 'target'},
@@ -1216,6 +2175,5 @@ const SeekResponse$json = {
 };
 
 /// Descriptor for `SeekResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List seekResponseDescriptor = $convert.base64Decode(
-    'CgxTZWVrUmVzcG9uc2U=');
-
+final $typed_data.Uint8List seekResponseDescriptor =
+    $convert.base64Decode('CgxTZWVrUmVzcG9uc2U=');

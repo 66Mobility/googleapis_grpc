@@ -28,40 +28,53 @@ class GetCssProductRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetCssProductRequest._() : super();
-  factory GetCssProductRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetCssProductRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetCssProductRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetCssProductRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetCssProductRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetCssProductRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetCssProductRequest clone() => GetCssProductRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetCssProductRequest copyWith(void Function(GetCssProductRequest) updates) => super.copyWith((message) => updates(message as GetCssProductRequest)) as GetCssProductRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetCssProductRequest clone() =>
+      GetCssProductRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetCssProductRequest copyWith(void Function(GetCssProductRequest) updates) =>
+      super.copyWith((message) => updates(message as GetCssProductRequest))
+          as GetCssProductRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetCssProductRequest create() => GetCssProductRequest._();
   GetCssProductRequest createEmptyInstance() => create();
-  static $pb.PbList<GetCssProductRequest> createRepeated() => $pb.PbList<GetCssProductRequest>();
+  static $pb.PbList<GetCssProductRequest> createRepeated() =>
+      $pb.PbList<GetCssProductRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetCssProductRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetCssProductRequest>(create);
+  static GetCssProductRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetCssProductRequest>(create);
   static GetCssProductRequest? _defaultInstance;
 
   /// Required. The name of the CSS product to retrieve.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -104,30 +117,40 @@ class CssProduct extends $pb.GeneratedMessage {
     return $result;
   }
   CssProduct._() : super();
-  factory CssProduct.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CssProduct.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CssProduct.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CssProduct.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CssProduct', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CssProduct',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'rawProvidedId')
     ..aOS(3, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(4, _omitFieldNames ? '' : 'feedLabel')
-    ..aOM<$537.Attributes>(5, _omitFieldNames ? '' : 'attributes', subBuilder: $537.Attributes.create)
-    ..pc<$536.CustomAttribute>(6, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $536.CustomAttribute.create)
-    ..aOM<$537.CssProductStatus>(8, _omitFieldNames ? '' : 'cssProductStatus', subBuilder: $537.CssProductStatus.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$537.Attributes>(5, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $537.Attributes.create)
+    ..pc<$536.CustomAttribute>(
+        6, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
+        subBuilder: $536.CustomAttribute.create)
+    ..aOM<$537.CssProductStatus>(8, _omitFieldNames ? '' : 'cssProductStatus',
+        subBuilder: $537.CssProductStatus.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CssProduct clone() => CssProduct()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CssProduct copyWith(void Function(CssProduct) updates) => super.copyWith((message) => updates(message as CssProduct)) as CssProduct;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CssProduct copyWith(void Function(CssProduct) updates) =>
+      super.copyWith((message) => updates(message as CssProduct)) as CssProduct;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -136,7 +159,8 @@ class CssProduct extends $pb.GeneratedMessage {
   CssProduct createEmptyInstance() => create();
   static $pb.PbList<CssProduct> createRepeated() => $pb.PbList<CssProduct>();
   @$core.pragma('dart2js:noInline')
-  static CssProduct getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CssProduct>(create);
+  static CssProduct getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CssProduct>(create);
   static CssProduct? _defaultInstance;
 
   /// The name of the CSS Product.
@@ -145,7 +169,10 @@ class CssProduct extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -155,7 +182,10 @@ class CssProduct extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get rawProvidedId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set rawProvidedId($core.String v) { $_setString(1, v); }
+  set rawProvidedId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRawProvidedId() => $_has(1);
   @$pb.TagNumber(2)
@@ -167,7 +197,10 @@ class CssProduct extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get contentLanguage => $_getSZ(2);
   @$pb.TagNumber(3)
-  set contentLanguage($core.String v) { $_setString(2, v); }
+  set contentLanguage($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasContentLanguage() => $_has(2);
   @$pb.TagNumber(3)
@@ -177,7 +210,10 @@ class CssProduct extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get feedLabel => $_getSZ(3);
   @$pb.TagNumber(4)
-  set feedLabel($core.String v) { $_setString(3, v); }
+  set feedLabel($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFeedLabel() => $_has(3);
   @$pb.TagNumber(4)
@@ -187,7 +223,10 @@ class CssProduct extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $537.Attributes get attributes => $_getN(4);
   @$pb.TagNumber(5)
-  set attributes($537.Attributes v) { setField(5, v); }
+  set attributes($537.Attributes v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAttributes() => $_has(4);
   @$pb.TagNumber(5)
@@ -209,7 +248,10 @@ class CssProduct extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $537.CssProductStatus get cssProductStatus => $_getN(6);
   @$pb.TagNumber(8)
-  set cssProductStatus($537.CssProductStatus v) { setField(8, v); }
+  set cssProductStatus($537.CssProductStatus v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCssProductStatus() => $_has(6);
   @$pb.TagNumber(8)
@@ -238,35 +280,46 @@ class ListCssProductsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListCssProductsRequest._() : super();
-  factory ListCssProductsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListCssProductsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListCssProductsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListCssProductsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCssProductsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCssProductsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListCssProductsRequest clone() => ListCssProductsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListCssProductsRequest copyWith(void Function(ListCssProductsRequest) updates) => super.copyWith((message) => updates(message as ListCssProductsRequest)) as ListCssProductsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListCssProductsRequest clone() =>
+      ListCssProductsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListCssProductsRequest copyWith(
+          void Function(ListCssProductsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListCssProductsRequest))
+          as ListCssProductsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListCssProductsRequest create() => ListCssProductsRequest._();
   ListCssProductsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListCssProductsRequest> createRepeated() => $pb.PbList<ListCssProductsRequest>();
+  static $pb.PbList<ListCssProductsRequest> createRepeated() =>
+      $pb.PbList<ListCssProductsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListCssProductsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCssProductsRequest>(create);
+  static ListCssProductsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCssProductsRequest>(create);
   static ListCssProductsRequest? _defaultInstance;
 
   /// Required. The account/domain to list processed CSS Products for.
@@ -274,7 +327,10 @@ class ListCssProductsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -287,7 +343,10 @@ class ListCssProductsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -301,7 +360,10 @@ class ListCssProductsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -324,34 +386,47 @@ class ListCssProductsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListCssProductsResponse._() : super();
-  factory ListCssProductsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListCssProductsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListCssProductsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListCssProductsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCssProductsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
-    ..pc<CssProduct>(1, _omitFieldNames ? '' : 'cssProducts', $pb.PbFieldType.PM, subBuilder: CssProduct.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCssProductsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
+    ..pc<CssProduct>(
+        1, _omitFieldNames ? '' : 'cssProducts', $pb.PbFieldType.PM,
+        subBuilder: CssProduct.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListCssProductsResponse clone() => ListCssProductsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListCssProductsResponse copyWith(void Function(ListCssProductsResponse) updates) => super.copyWith((message) => updates(message as ListCssProductsResponse)) as ListCssProductsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListCssProductsResponse clone() =>
+      ListCssProductsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListCssProductsResponse copyWith(
+          void Function(ListCssProductsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListCssProductsResponse))
+          as ListCssProductsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListCssProductsResponse create() => ListCssProductsResponse._();
   ListCssProductsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListCssProductsResponse> createRepeated() => $pb.PbList<ListCssProductsResponse>();
+  static $pb.PbList<ListCssProductsResponse> createRepeated() =>
+      $pb.PbList<ListCssProductsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListCssProductsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCssProductsResponse>(create);
+  static ListCssProductsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCssProductsResponse>(create);
   static ListCssProductsResponse? _defaultInstance;
 
   /// The processed CSS products from the specified account. These are your
@@ -364,13 +439,16 @@ class ListCssProductsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

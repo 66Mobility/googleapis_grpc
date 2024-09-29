@@ -37,35 +37,45 @@ class ChatAppLogEntry extends $pb.GeneratedMessage {
     return $result;
   }
   ChatAppLogEntry._() : super();
-  factory ChatAppLogEntry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ChatAppLogEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ChatAppLogEntry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ChatAppLogEntry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChatAppLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.logging.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ChatAppLogEntry',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chat.logging.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deployment')
-    ..aOM<$322.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $322.Status.create)
+    ..aOM<$322.Status>(2, _omitFieldNames ? '' : 'error',
+        subBuilder: $322.Status.create)
     ..aOS(3, _omitFieldNames ? '' : 'deploymentFunction')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ChatAppLogEntry clone() => ChatAppLogEntry()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ChatAppLogEntry copyWith(void Function(ChatAppLogEntry) updates) => super.copyWith((message) => updates(message as ChatAppLogEntry)) as ChatAppLogEntry;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ChatAppLogEntry copyWith(void Function(ChatAppLogEntry) updates) =>
+      super.copyWith((message) => updates(message as ChatAppLogEntry))
+          as ChatAppLogEntry;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ChatAppLogEntry create() => ChatAppLogEntry._();
   ChatAppLogEntry createEmptyInstance() => create();
-  static $pb.PbList<ChatAppLogEntry> createRepeated() => $pb.PbList<ChatAppLogEntry>();
+  static $pb.PbList<ChatAppLogEntry> createRepeated() =>
+      $pb.PbList<ChatAppLogEntry>();
   @$core.pragma('dart2js:noInline')
-  static ChatAppLogEntry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ChatAppLogEntry>(create);
+  static ChatAppLogEntry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ChatAppLogEntry>(create);
   static ChatAppLogEntry? _defaultInstance;
 
   /// The deployment that caused the error. For Chat bots built in Apps Script,
@@ -73,7 +83,10 @@ class ChatAppLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get deployment => $_getSZ(0);
   @$pb.TagNumber(1)
-  set deployment($core.String v) { $_setString(0, v); }
+  set deployment($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDeployment() => $_has(0);
   @$pb.TagNumber(1)
@@ -83,7 +96,10 @@ class ChatAppLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $322.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($322.Status v) { setField(2, v); }
+  set error($322.Status v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
@@ -96,13 +112,16 @@ class ChatAppLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get deploymentFunction => $_getSZ(2);
   @$pb.TagNumber(3)
-  set deploymentFunction($core.String v) { $_setString(2, v); }
+  set deploymentFunction($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeploymentFunction() => $_has(2);
   @$pb.TagNumber(3)
   void clearDeploymentFunction() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

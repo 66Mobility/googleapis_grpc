@@ -18,7 +18,8 @@ import 'static_image_prompt.pbenum.dart' as $262;
 import 'static_link_prompt.pb.dart' as $263;
 
 /// Item in the collection.
-class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMessage {
+class StaticCollectionBrowsePrompt_CollectionBrowseItem
+    extends $pb.GeneratedMessage {
   factory StaticCollectionBrowsePrompt_CollectionBrowseItem({
     $core.String? title,
     $core.String? description,
@@ -45,44 +46,72 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
     return $result;
   }
   StaticCollectionBrowsePrompt_CollectionBrowseItem._() : super();
-  factory StaticCollectionBrowsePrompt_CollectionBrowseItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticCollectionBrowsePrompt_CollectionBrowseItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticCollectionBrowsePrompt_CollectionBrowseItem.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticCollectionBrowsePrompt_CollectionBrowseItem.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticCollectionBrowsePrompt.CollectionBrowseItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'StaticCollectionBrowsePrompt.CollectionBrowseItem',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'footer')
-    ..aOM<$262.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $262.StaticImagePrompt.create)
-    ..aOM<$263.OpenUrl>(5, _omitFieldNames ? '' : 'openUriAction', subBuilder: $263.OpenUrl.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$262.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: $262.StaticImagePrompt.create)
+    ..aOM<$263.OpenUrl>(5, _omitFieldNames ? '' : 'openUriAction',
+        subBuilder: $263.OpenUrl.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticCollectionBrowsePrompt_CollectionBrowseItem clone() => StaticCollectionBrowsePrompt_CollectionBrowseItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticCollectionBrowsePrompt_CollectionBrowseItem copyWith(void Function(StaticCollectionBrowsePrompt_CollectionBrowseItem) updates) => super.copyWith((message) => updates(message as StaticCollectionBrowsePrompt_CollectionBrowseItem)) as StaticCollectionBrowsePrompt_CollectionBrowseItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticCollectionBrowsePrompt_CollectionBrowseItem clone() =>
+      StaticCollectionBrowsePrompt_CollectionBrowseItem()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticCollectionBrowsePrompt_CollectionBrowseItem copyWith(
+          void Function(StaticCollectionBrowsePrompt_CollectionBrowseItem)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as StaticCollectionBrowsePrompt_CollectionBrowseItem))
+          as StaticCollectionBrowsePrompt_CollectionBrowseItem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StaticCollectionBrowsePrompt_CollectionBrowseItem create() => StaticCollectionBrowsePrompt_CollectionBrowseItem._();
-  StaticCollectionBrowsePrompt_CollectionBrowseItem createEmptyInstance() => create();
-  static $pb.PbList<StaticCollectionBrowsePrompt_CollectionBrowseItem> createRepeated() => $pb.PbList<StaticCollectionBrowsePrompt_CollectionBrowseItem>();
+  static StaticCollectionBrowsePrompt_CollectionBrowseItem create() =>
+      StaticCollectionBrowsePrompt_CollectionBrowseItem._();
+  StaticCollectionBrowsePrompt_CollectionBrowseItem createEmptyInstance() =>
+      create();
+  static $pb.PbList<StaticCollectionBrowsePrompt_CollectionBrowseItem>
+      createRepeated() =>
+          $pb.PbList<StaticCollectionBrowsePrompt_CollectionBrowseItem>();
   @$core.pragma('dart2js:noInline')
-  static StaticCollectionBrowsePrompt_CollectionBrowseItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticCollectionBrowsePrompt_CollectionBrowseItem>(create);
+  static StaticCollectionBrowsePrompt_CollectionBrowseItem getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StaticCollectionBrowsePrompt_CollectionBrowseItem>(create);
   static StaticCollectionBrowsePrompt_CollectionBrowseItem? _defaultInstance;
 
   /// Required. Title of the collection item.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,7 +121,10 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -103,7 +135,10 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
   @$pb.TagNumber(3)
   $core.String get footer => $_getSZ(2);
   @$pb.TagNumber(3)
-  set footer($core.String v) { $_setString(2, v); }
+  set footer($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFooter() => $_has(2);
   @$pb.TagNumber(3)
@@ -113,7 +148,10 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
   @$pb.TagNumber(4)
   $262.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($262.StaticImagePrompt v) { setField(4, v); }
+  set image($262.StaticImagePrompt v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
@@ -125,7 +163,10 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
   @$pb.TagNumber(5)
   $263.OpenUrl get openUriAction => $_getN(4);
   @$pb.TagNumber(5)
-  set openUriAction($263.OpenUrl v) { setField(5, v); }
+  set openUriAction($263.OpenUrl v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOpenUriAction() => $_has(4);
   @$pb.TagNumber(5)
@@ -151,52 +192,76 @@ class StaticCollectionBrowsePrompt extends $pb.GeneratedMessage {
     return $result;
   }
   StaticCollectionBrowsePrompt._() : super();
-  factory StaticCollectionBrowsePrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticCollectionBrowsePrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticCollectionBrowsePrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticCollectionBrowsePrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticCollectionBrowsePrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..pc<StaticCollectionBrowsePrompt_CollectionBrowseItem>(1, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: StaticCollectionBrowsePrompt_CollectionBrowseItem.create)
-    ..e<$262.StaticImagePrompt_ImageFill>(2, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $262.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $262.StaticImagePrompt_ImageFill.valueOf, enumValues: $262.StaticImagePrompt_ImageFill.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticCollectionBrowsePrompt',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
+    ..pc<StaticCollectionBrowsePrompt_CollectionBrowseItem>(
+        1, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
+        subBuilder: StaticCollectionBrowsePrompt_CollectionBrowseItem.create)
+    ..e<$262.StaticImagePrompt_ImageFill>(
+        2, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE,
+        defaultOrMaker: $262.StaticImagePrompt_ImageFill.UNSPECIFIED,
+        valueOf: $262.StaticImagePrompt_ImageFill.valueOf,
+        enumValues: $262.StaticImagePrompt_ImageFill.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticCollectionBrowsePrompt clone() => StaticCollectionBrowsePrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticCollectionBrowsePrompt copyWith(void Function(StaticCollectionBrowsePrompt) updates) => super.copyWith((message) => updates(message as StaticCollectionBrowsePrompt)) as StaticCollectionBrowsePrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticCollectionBrowsePrompt clone() =>
+      StaticCollectionBrowsePrompt()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticCollectionBrowsePrompt copyWith(
+          void Function(StaticCollectionBrowsePrompt) updates) =>
+      super.copyWith(
+              (message) => updates(message as StaticCollectionBrowsePrompt))
+          as StaticCollectionBrowsePrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StaticCollectionBrowsePrompt create() => StaticCollectionBrowsePrompt._();
+  static StaticCollectionBrowsePrompt create() =>
+      StaticCollectionBrowsePrompt._();
   StaticCollectionBrowsePrompt createEmptyInstance() => create();
-  static $pb.PbList<StaticCollectionBrowsePrompt> createRepeated() => $pb.PbList<StaticCollectionBrowsePrompt>();
+  static $pb.PbList<StaticCollectionBrowsePrompt> createRepeated() =>
+      $pb.PbList<StaticCollectionBrowsePrompt>();
   @$core.pragma('dart2js:noInline')
-  static StaticCollectionBrowsePrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticCollectionBrowsePrompt>(create);
+  static StaticCollectionBrowsePrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticCollectionBrowsePrompt>(create);
   static StaticCollectionBrowsePrompt? _defaultInstance;
 
   /// Items in the browse collection. The list size should be in the range [2,
   /// 10].
   @$pb.TagNumber(1)
-  $core.List<StaticCollectionBrowsePrompt_CollectionBrowseItem> get items => $_getList(0);
+  $core.List<StaticCollectionBrowsePrompt_CollectionBrowseItem> get items =>
+      $_getList(0);
 
   /// Image display option for images in the collection.
   @$pb.TagNumber(2)
   $262.StaticImagePrompt_ImageFill get imageFill => $_getN(1);
   @$pb.TagNumber(2)
-  set imageFill($262.StaticImagePrompt_ImageFill v) { setField(2, v); }
+  set imageFill($262.StaticImagePrompt_ImageFill v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasImageFill() => $_has(1);
   @$pb.TagNumber(2)
   void clearImageFill() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

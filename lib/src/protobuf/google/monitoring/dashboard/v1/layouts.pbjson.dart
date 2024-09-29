@@ -18,7 +18,14 @@ const GridLayout$json = {
   '1': 'GridLayout',
   '2': [
     {'1': 'columns', '3': 1, '4': 1, '5': 3, '10': 'columns'},
-    {'1': 'widgets', '3': 2, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.Widget', '10': 'widgets'},
+    {
+      '1': 'widgets',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Widget',
+      '10': 'widgets'
+    },
   ],
 };
 
@@ -32,7 +39,14 @@ const MosaicLayout$json = {
   '1': 'MosaicLayout',
   '2': [
     {'1': 'columns', '3': 1, '4': 1, '5': 5, '10': 'columns'},
-    {'1': 'tiles', '3': 3, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.MosaicLayout.Tile', '10': 'tiles'},
+    {
+      '1': 'tiles',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.MosaicLayout.Tile',
+      '10': 'tiles'
+    },
   ],
   '3': [MosaicLayout_Tile$json],
 };
@@ -45,7 +59,14 @@ const MosaicLayout_Tile$json = {
     {'1': 'y_pos', '3': 2, '4': 1, '5': 5, '10': 'yPos'},
     {'1': 'width', '3': 3, '4': 1, '5': 5, '10': 'width'},
     {'1': 'height', '3': 4, '4': 1, '5': 5, '10': 'height'},
-    {'1': 'widget', '3': 5, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Widget', '10': 'widget'},
+    {
+      '1': 'widget',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Widget',
+      '10': 'widget'
+    },
   ],
 };
 
@@ -61,7 +82,14 @@ final $typed_data.Uint8List mosaicLayoutDescriptor = $convert.base64Decode(
 const RowLayout$json = {
   '1': 'RowLayout',
   '2': [
-    {'1': 'rows', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.RowLayout.Row', '10': 'rows'},
+    {
+      '1': 'rows',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.RowLayout.Row',
+      '10': 'rows'
+    },
   ],
   '3': [RowLayout_Row$json],
 };
@@ -71,7 +99,14 @@ const RowLayout_Row$json = {
   '1': 'Row',
   '2': [
     {'1': 'weight', '3': 1, '4': 1, '5': 3, '10': 'weight'},
-    {'1': 'widgets', '3': 2, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.Widget', '10': 'widgets'},
+    {
+      '1': 'widgets',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Widget',
+      '10': 'widgets'
+    },
   ],
 };
 
@@ -86,7 +121,14 @@ final $typed_data.Uint8List rowLayoutDescriptor = $convert.base64Decode(
 const ColumnLayout$json = {
   '1': 'ColumnLayout',
   '2': [
-    {'1': 'columns', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.ColumnLayout.Column', '10': 'columns'},
+    {
+      '1': 'columns',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.ColumnLayout.Column',
+      '10': 'columns'
+    },
   ],
   '3': [ColumnLayout_Column$json],
 };
@@ -96,7 +138,14 @@ const ColumnLayout_Column$json = {
   '1': 'Column',
   '2': [
     {'1': 'weight', '3': 1, '4': 1, '5': 3, '10': 'weight'},
-    {'1': 'widgets', '3': 2, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.Widget', '10': 'widgets'},
+    {
+      '1': 'widgets',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Widget',
+      '10': 'widgets'
+    },
   ],
 };
 
@@ -106,4 +155,3 @@ final $typed_data.Uint8List columnLayoutDescriptor = $convert.base64Decode(
     'hib2FyZC52MS5Db2x1bW5MYXlvdXQuQ29sdW1uUgdjb2x1bW5zGmIKBkNvbHVtbhIWCgZ3ZWln'
     'aHQYASABKANSBndlaWdodBJACgd3aWRnZXRzGAIgAygLMiYuZ29vZ2xlLm1vbml0b3JpbmcuZG'
     'FzaGJvYXJkLnYxLldpZGdldFIHd2lkZ2V0cw==');
-

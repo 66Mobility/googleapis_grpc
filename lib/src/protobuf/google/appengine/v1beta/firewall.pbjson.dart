@@ -18,7 +18,14 @@ const FirewallRule$json = {
   '1': 'FirewallRule',
   '2': [
     {'1': 'priority', '3': 1, '4': 1, '5': 5, '10': 'priority'},
-    {'1': 'action', '3': 2, '4': 1, '5': 14, '6': '.google.appengine.v1beta.FirewallRule.Action', '10': 'action'},
+    {
+      '1': 'action',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.FirewallRule.Action',
+      '10': 'action'
+    },
     {'1': 'source_range', '3': 3, '4': 1, '5': 9, '10': 'sourceRange'},
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
   ],
@@ -42,4 +49,3 @@ final $typed_data.Uint8List firewallRuleDescriptor = $convert.base64Decode(
     'bhIhCgxzb3VyY2VfcmFuZ2UYAyABKAlSC3NvdXJjZVJhbmdlEiAKC2Rlc2NyaXB0aW9uGAQgAS'
     'gJUgtkZXNjcmlwdGlvbiI1CgZBY3Rpb24SFgoSVU5TUEVDSUZJRURfQUNUSU9OEAASCQoFQUxM'
     'T1cQARIICgRERU5ZEAI=');
-

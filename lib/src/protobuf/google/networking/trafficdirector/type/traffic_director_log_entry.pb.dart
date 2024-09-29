@@ -50,45 +50,69 @@ class TrafficDirectorLogEntry extends $pb.GeneratedMessage {
     return $result;
   }
   TrafficDirectorLogEntry._() : super();
-  factory TrafficDirectorLogEntry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TrafficDirectorLogEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TrafficDirectorLogEntry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TrafficDirectorLogEntry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrafficDirectorLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.networking.trafficdirector.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TrafficDirectorLogEntry',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.networking.trafficdirector.type'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'nodeId')
     ..aOS(2, _omitFieldNames ? '' : 'nodeIp')
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..e<TrafficDirectorLogEntry_ClientType>(5, _omitFieldNames ? '' : 'clientType', $pb.PbFieldType.OE, defaultOrMaker: TrafficDirectorLogEntry_ClientType.CLIENT_TYPE_UNSPECIFIED, valueOf: TrafficDirectorLogEntry_ClientType.valueOf, enumValues: TrafficDirectorLogEntry_ClientType.values)
+    ..e<TrafficDirectorLogEntry_ClientType>(
+        5, _omitFieldNames ? '' : 'clientType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            TrafficDirectorLogEntry_ClientType.CLIENT_TYPE_UNSPECIFIED,
+        valueOf: TrafficDirectorLogEntry_ClientType.valueOf,
+        enumValues: TrafficDirectorLogEntry_ClientType.values)
     ..aOS(6, _omitFieldNames ? '' : 'clientVersion')
-    ..e<TrafficDirectorLogEntry_TransportApiVersion>(7, _omitFieldNames ? '' : 'transportApiVersion', $pb.PbFieldType.OE, defaultOrMaker: TrafficDirectorLogEntry_TransportApiVersion.TRANSPORT_API_VERSION_UNSPECIFIED, valueOf: TrafficDirectorLogEntry_TransportApiVersion.valueOf, enumValues: TrafficDirectorLogEntry_TransportApiVersion.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<TrafficDirectorLogEntry_TransportApiVersion>(
+        7, _omitFieldNames ? '' : 'transportApiVersion', $pb.PbFieldType.OE,
+        defaultOrMaker: TrafficDirectorLogEntry_TransportApiVersion
+            .TRANSPORT_API_VERSION_UNSPECIFIED,
+        valueOf: TrafficDirectorLogEntry_TransportApiVersion.valueOf,
+        enumValues: TrafficDirectorLogEntry_TransportApiVersion.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TrafficDirectorLogEntry clone() => TrafficDirectorLogEntry()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TrafficDirectorLogEntry copyWith(void Function(TrafficDirectorLogEntry) updates) => super.copyWith((message) => updates(message as TrafficDirectorLogEntry)) as TrafficDirectorLogEntry;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TrafficDirectorLogEntry clone() =>
+      TrafficDirectorLogEntry()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TrafficDirectorLogEntry copyWith(
+          void Function(TrafficDirectorLogEntry) updates) =>
+      super.copyWith((message) => updates(message as TrafficDirectorLogEntry))
+          as TrafficDirectorLogEntry;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TrafficDirectorLogEntry create() => TrafficDirectorLogEntry._();
   TrafficDirectorLogEntry createEmptyInstance() => create();
-  static $pb.PbList<TrafficDirectorLogEntry> createRepeated() => $pb.PbList<TrafficDirectorLogEntry>();
+  static $pb.PbList<TrafficDirectorLogEntry> createRepeated() =>
+      $pb.PbList<TrafficDirectorLogEntry>();
   @$core.pragma('dart2js:noInline')
-  static TrafficDirectorLogEntry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TrafficDirectorLogEntry>(create);
+  static TrafficDirectorLogEntry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TrafficDirectorLogEntry>(create);
   static TrafficDirectorLogEntry? _defaultInstance;
 
   /// An ID of xDS-client connecting to the Traffic Director.
   @$pb.TagNumber(1)
   $core.String get nodeId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set nodeId($core.String v) { $_setString(0, v); }
+  set nodeId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasNodeId() => $_has(0);
   @$pb.TagNumber(1)
@@ -103,7 +127,10 @@ class TrafficDirectorLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nodeIp => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nodeIp($core.String v) { $_setString(1, v); }
+  set nodeIp($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNodeIp() => $_has(1);
   @$pb.TagNumber(2)
@@ -113,7 +140,10 @@ class TrafficDirectorLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(4)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(4)
@@ -123,7 +153,10 @@ class TrafficDirectorLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   TrafficDirectorLogEntry_ClientType get clientType => $_getN(3);
   @$pb.TagNumber(5)
-  set clientType(TrafficDirectorLogEntry_ClientType v) { setField(5, v); }
+  set clientType(TrafficDirectorLogEntry_ClientType v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasClientType() => $_has(3);
   @$pb.TagNumber(5)
@@ -133,7 +166,10 @@ class TrafficDirectorLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get clientVersion => $_getSZ(4);
   @$pb.TagNumber(6)
-  set clientVersion($core.String v) { $_setString(4, v); }
+  set clientVersion($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasClientVersion() => $_has(4);
   @$pb.TagNumber(6)
@@ -141,15 +177,19 @@ class TrafficDirectorLogEntry extends $pb.GeneratedMessage {
 
   /// The xDS API version used by xDS clients connecting to Traffic Director.
   @$pb.TagNumber(7)
-  TrafficDirectorLogEntry_TransportApiVersion get transportApiVersion => $_getN(5);
+  TrafficDirectorLogEntry_TransportApiVersion get transportApiVersion =>
+      $_getN(5);
   @$pb.TagNumber(7)
-  set transportApiVersion(TrafficDirectorLogEntry_TransportApiVersion v) { setField(7, v); }
+  set transportApiVersion(TrafficDirectorLogEntry_TransportApiVersion v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTransportApiVersion() => $_has(5);
   @$pb.TagNumber(7)
   void clearTransportApiVersion() => clearField(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

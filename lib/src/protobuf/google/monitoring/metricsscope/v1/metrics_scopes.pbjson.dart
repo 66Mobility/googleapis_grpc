@@ -22,44 +22,73 @@ const GetMetricsScopeRequest$json = {
 };
 
 /// Descriptor for `GetMetricsScopeRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getMetricsScopeRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRNZXRyaWNzU2NvcGVSZXF1ZXN0EkIKBG5hbWUYASABKAlCLuBBAvpBKAombW9uaXRvcm'
-    'luZy5nb29nbGVhcGlzLmNvbS9NZXRyaWNzU2NvcGVSBG5hbWU=');
+final $typed_data.Uint8List getMetricsScopeRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRNZXRyaWNzU2NvcGVSZXF1ZXN0EkIKBG5hbWUYASABKAlCLuBBAvpBKAombW9uaXRvcm'
+        'luZy5nb29nbGVhcGlzLmNvbS9NZXRyaWNzU2NvcGVSBG5hbWU=');
 
-@$core.Deprecated('Use listMetricsScopesByMonitoredProjectRequestDescriptor instead')
+@$core.Deprecated(
+    'Use listMetricsScopesByMonitoredProjectRequestDescriptor instead')
 const ListMetricsScopesByMonitoredProjectRequest$json = {
   '1': 'ListMetricsScopesByMonitoredProjectRequest',
   '2': [
-    {'1': 'monitored_resource_container', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'monitoredResourceContainer'},
+    {
+      '1': 'monitored_resource_container',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'monitoredResourceContainer'
+    },
   ],
 };
 
 /// Descriptor for `ListMetricsScopesByMonitoredProjectRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listMetricsScopesByMonitoredProjectRequestDescriptor = $convert.base64Decode(
-    'CipMaXN0TWV0cmljc1Njb3Blc0J5TW9uaXRvcmVkUHJvamVjdFJlcXVlc3QSRQocbW9uaXRvcm'
-    'VkX3Jlc291cmNlX2NvbnRhaW5lchgBIAEoCUID4EECUhptb25pdG9yZWRSZXNvdXJjZUNvbnRh'
-    'aW5lcg==');
+final $typed_data.Uint8List
+    listMetricsScopesByMonitoredProjectRequestDescriptor =
+    $convert.base64Decode(
+        'CipMaXN0TWV0cmljc1Njb3Blc0J5TW9uaXRvcmVkUHJvamVjdFJlcXVlc3QSRQocbW9uaXRvcm'
+        'VkX3Jlc291cmNlX2NvbnRhaW5lchgBIAEoCUID4EECUhptb25pdG9yZWRSZXNvdXJjZUNvbnRh'
+        'aW5lcg==');
 
-@$core.Deprecated('Use listMetricsScopesByMonitoredProjectResponseDescriptor instead')
+@$core.Deprecated(
+    'Use listMetricsScopesByMonitoredProjectResponseDescriptor instead')
 const ListMetricsScopesByMonitoredProjectResponse$json = {
   '1': 'ListMetricsScopesByMonitoredProjectResponse',
   '2': [
-    {'1': 'metrics_scopes', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.metricsscope.v1.MetricsScope', '10': 'metricsScopes'},
+    {
+      '1': 'metrics_scopes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.metricsscope.v1.MetricsScope',
+      '10': 'metricsScopes'
+    },
   ],
 };
 
 /// Descriptor for `ListMetricsScopesByMonitoredProjectResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listMetricsScopesByMonitoredProjectResponseDescriptor = $convert.base64Decode(
-    'CitMaXN0TWV0cmljc1Njb3Blc0J5TW9uaXRvcmVkUHJvamVjdFJlc3BvbnNlElYKDm1ldHJpY3'
-    'Nfc2NvcGVzGAEgAygLMi8uZ29vZ2xlLm1vbml0b3JpbmcubWV0cmljc3Njb3BlLnYxLk1ldHJp'
-    'Y3NTY29wZVINbWV0cmljc1Njb3Blcw==');
+final $typed_data.Uint8List
+    listMetricsScopesByMonitoredProjectResponseDescriptor =
+    $convert.base64Decode(
+        'CitMaXN0TWV0cmljc1Njb3Blc0J5TW9uaXRvcmVkUHJvamVjdFJlc3BvbnNlElYKDm1ldHJpY3'
+        'Nfc2NvcGVzGAEgAygLMi8uZ29vZ2xlLm1vbml0b3JpbmcubWV0cmljc3Njb3BlLnYxLk1ldHJp'
+        'Y3NTY29wZVINbWV0cmljc1Njb3Blcw==');
 
 @$core.Deprecated('Use createMonitoredProjectRequestDescriptor instead')
 const CreateMonitoredProjectRequest$json = {
   '1': 'CreateMonitoredProjectRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'monitored_project', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.metricsscope.v1.MonitoredProject', '8': {}, '10': 'monitoredProject'},
+    {
+      '1': 'monitored_project',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.metricsscope.v1.MonitoredProject',
+      '8': {},
+      '10': 'monitoredProject'
+    },
   ],
 };
 
@@ -79,17 +108,39 @@ const DeleteMonitoredProjectRequest$json = {
 };
 
 /// Descriptor for `DeleteMonitoredProjectRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteMonitoredProjectRequestDescriptor = $convert.base64Decode(
-    'Ch1EZWxldGVNb25pdG9yZWRQcm9qZWN0UmVxdWVzdBJGCgRuYW1lGAEgASgJQjLgQQL6QSwKKm'
-    '1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTW9uaXRvcmVkUHJvamVjdFIEbmFtZQ==');
+final $typed_data.Uint8List deleteMonitoredProjectRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1EZWxldGVNb25pdG9yZWRQcm9qZWN0UmVxdWVzdBJGCgRuYW1lGAEgASgJQjLgQQL6QSwKKm'
+        '1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTW9uaXRvcmVkUHJvamVjdFIEbmFtZQ==');
 
 @$core.Deprecated('Use operationMetadataDescriptor instead')
 const OperationMetadata$json = {
   '1': 'OperationMetadata',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.monitoring.metricsscope.v1.OperationMetadata.State', '10': 'state'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.metricsscope.v1.OperationMetadata.State',
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
   '4': [OperationMetadata_State$json],
 };
@@ -114,4 +165,3 @@ final $typed_data.Uint8List operationMetadataDescriptor = $convert.base64Decode(
     'VwZGF0ZV90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIKdXBkYXRlVGlt'
     'ZSJRCgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAAEgsKB0NSRUFURUQQARILCgdSVU5OSU'
     '5HEAISCAoERE9ORRADEg0KCUNBTkNFTExFRBAE');
-

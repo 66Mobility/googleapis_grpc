@@ -34,33 +34,45 @@ class DiscoveryNote extends $pb.GeneratedMessage {
     return $result;
   }
   DiscoveryNote._() : super();
-  factory DiscoveryNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DiscoveryNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DiscoveryNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DiscoveryNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..e<$556.NoteKind>(1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE, defaultOrMaker: $556.NoteKind.NOTE_KIND_UNSPECIFIED, valueOf: $556.NoteKind.valueOf, enumValues: $556.NoteKind.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DiscoveryNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..e<$556.NoteKind>(
+        1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE,
+        defaultOrMaker: $556.NoteKind.NOTE_KIND_UNSPECIFIED,
+        valueOf: $556.NoteKind.valueOf,
+        enumValues: $556.NoteKind.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DiscoveryNote clone() => DiscoveryNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DiscoveryNote copyWith(void Function(DiscoveryNote) updates) => super.copyWith((message) => updates(message as DiscoveryNote)) as DiscoveryNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DiscoveryNote copyWith(void Function(DiscoveryNote) updates) =>
+      super.copyWith((message) => updates(message as DiscoveryNote))
+          as DiscoveryNote;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DiscoveryNote create() => DiscoveryNote._();
   DiscoveryNote createEmptyInstance() => create();
-  static $pb.PbList<DiscoveryNote> createRepeated() => $pb.PbList<DiscoveryNote>();
+  static $pb.PbList<DiscoveryNote> createRepeated() =>
+      $pb.PbList<DiscoveryNote>();
   @$core.pragma('dart2js:noInline')
-  static DiscoveryNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryNote>(create);
+  static DiscoveryNote getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DiscoveryNote>(create);
   static DiscoveryNote? _defaultInstance;
 
   /// Required. Immutable. The kind of analysis that is handled by this
@@ -68,7 +80,10 @@ class DiscoveryNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $556.NoteKind get analysisKind => $_getN(0);
   @$pb.TagNumber(1)
-  set analysisKind($556.NoteKind v) { setField(1, v); }
+  set analysisKind($556.NoteKind v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAnalysisKind() => $_has(0);
   @$pb.TagNumber(1)
@@ -88,33 +103,47 @@ class DiscoveryOccurrence_AnalysisCompleted extends $pb.GeneratedMessage {
     return $result;
   }
   DiscoveryOccurrence_AnalysisCompleted._() : super();
-  factory DiscoveryOccurrence_AnalysisCompleted.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DiscoveryOccurrence_AnalysisCompleted.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DiscoveryOccurrence_AnalysisCompleted.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DiscoveryOccurrence_AnalysisCompleted.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryOccurrence.AnalysisCompleted', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DiscoveryOccurrence.AnalysisCompleted',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'analysisType')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DiscoveryOccurrence_AnalysisCompleted clone() => DiscoveryOccurrence_AnalysisCompleted()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DiscoveryOccurrence_AnalysisCompleted copyWith(void Function(DiscoveryOccurrence_AnalysisCompleted) updates) => super.copyWith((message) => updates(message as DiscoveryOccurrence_AnalysisCompleted)) as DiscoveryOccurrence_AnalysisCompleted;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DiscoveryOccurrence_AnalysisCompleted clone() =>
+      DiscoveryOccurrence_AnalysisCompleted()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DiscoveryOccurrence_AnalysisCompleted copyWith(
+          void Function(DiscoveryOccurrence_AnalysisCompleted) updates) =>
+      super.copyWith((message) =>
+              updates(message as DiscoveryOccurrence_AnalysisCompleted))
+          as DiscoveryOccurrence_AnalysisCompleted;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DiscoveryOccurrence_AnalysisCompleted create() => DiscoveryOccurrence_AnalysisCompleted._();
+  static DiscoveryOccurrence_AnalysisCompleted create() =>
+      DiscoveryOccurrence_AnalysisCompleted._();
   DiscoveryOccurrence_AnalysisCompleted createEmptyInstance() => create();
-  static $pb.PbList<DiscoveryOccurrence_AnalysisCompleted> createRepeated() => $pb.PbList<DiscoveryOccurrence_AnalysisCompleted>();
+  static $pb.PbList<DiscoveryOccurrence_AnalysisCompleted> createRepeated() =>
+      $pb.PbList<DiscoveryOccurrence_AnalysisCompleted>();
   @$core.pragma('dart2js:noInline')
-  static DiscoveryOccurrence_AnalysisCompleted getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryOccurrence_AnalysisCompleted>(create);
+  static DiscoveryOccurrence_AnalysisCompleted getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          DiscoveryOccurrence_AnalysisCompleted>(create);
   static DiscoveryOccurrence_AnalysisCompleted? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -137,41 +166,61 @@ class DiscoveryOccurrence_SBOMStatus extends $pb.GeneratedMessage {
     return $result;
   }
   DiscoveryOccurrence_SBOMStatus._() : super();
-  factory DiscoveryOccurrence_SBOMStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DiscoveryOccurrence_SBOMStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DiscoveryOccurrence_SBOMStatus.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DiscoveryOccurrence_SBOMStatus.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryOccurrence.SBOMStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..e<DiscoveryOccurrence_SBOMStatus_SBOMState>(1, _omitFieldNames ? '' : 'sbomState', $pb.PbFieldType.OE, defaultOrMaker: DiscoveryOccurrence_SBOMStatus_SBOMState.SBOM_STATE_UNSPECIFIED, valueOf: DiscoveryOccurrence_SBOMStatus_SBOMState.valueOf, enumValues: DiscoveryOccurrence_SBOMStatus_SBOMState.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DiscoveryOccurrence.SBOMStatus',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..e<DiscoveryOccurrence_SBOMStatus_SBOMState>(
+        1, _omitFieldNames ? '' : 'sbomState', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            DiscoveryOccurrence_SBOMStatus_SBOMState.SBOM_STATE_UNSPECIFIED,
+        valueOf: DiscoveryOccurrence_SBOMStatus_SBOMState.valueOf,
+        enumValues: DiscoveryOccurrence_SBOMStatus_SBOMState.values)
     ..aOS(2, _omitFieldNames ? '' : 'error')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DiscoveryOccurrence_SBOMStatus clone() => DiscoveryOccurrence_SBOMStatus()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DiscoveryOccurrence_SBOMStatus copyWith(void Function(DiscoveryOccurrence_SBOMStatus) updates) => super.copyWith((message) => updates(message as DiscoveryOccurrence_SBOMStatus)) as DiscoveryOccurrence_SBOMStatus;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DiscoveryOccurrence_SBOMStatus clone() =>
+      DiscoveryOccurrence_SBOMStatus()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DiscoveryOccurrence_SBOMStatus copyWith(
+          void Function(DiscoveryOccurrence_SBOMStatus) updates) =>
+      super.copyWith(
+              (message) => updates(message as DiscoveryOccurrence_SBOMStatus))
+          as DiscoveryOccurrence_SBOMStatus;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DiscoveryOccurrence_SBOMStatus create() => DiscoveryOccurrence_SBOMStatus._();
+  static DiscoveryOccurrence_SBOMStatus create() =>
+      DiscoveryOccurrence_SBOMStatus._();
   DiscoveryOccurrence_SBOMStatus createEmptyInstance() => create();
-  static $pb.PbList<DiscoveryOccurrence_SBOMStatus> createRepeated() => $pb.PbList<DiscoveryOccurrence_SBOMStatus>();
+  static $pb.PbList<DiscoveryOccurrence_SBOMStatus> createRepeated() =>
+      $pb.PbList<DiscoveryOccurrence_SBOMStatus>();
   @$core.pragma('dart2js:noInline')
-  static DiscoveryOccurrence_SBOMStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryOccurrence_SBOMStatus>(create);
+  static DiscoveryOccurrence_SBOMStatus getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DiscoveryOccurrence_SBOMStatus>(create);
   static DiscoveryOccurrence_SBOMStatus? _defaultInstance;
 
   /// The progress of the SBOM generation.
   @$pb.TagNumber(1)
   DiscoveryOccurrence_SBOMStatus_SBOMState get sbomState => $_getN(0);
   @$pb.TagNumber(1)
-  set sbomState(DiscoveryOccurrence_SBOMStatus_SBOMState v) { setField(1, v); }
+  set sbomState(DiscoveryOccurrence_SBOMStatus_SBOMState v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSbomState() => $_has(0);
   @$pb.TagNumber(1)
@@ -182,7 +231,10 @@ class DiscoveryOccurrence_SBOMStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get error => $_getSZ(1);
   @$pb.TagNumber(2)
-  set error($core.String v) { $_setString(1, v); }
+  set error($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
@@ -190,10 +242,12 @@ class DiscoveryOccurrence_SBOMStatus extends $pb.GeneratedMessage {
 }
 
 /// The status of an vulnerability attestation generation.
-class DiscoveryOccurrence_VulnerabilityAttestation extends $pb.GeneratedMessage {
+class DiscoveryOccurrence_VulnerabilityAttestation
+    extends $pb.GeneratedMessage {
   factory DiscoveryOccurrence_VulnerabilityAttestation({
     $302.Timestamp? lastAttemptTime,
-    DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState? state,
+    DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState?
+        state,
     $core.String? error,
   }) {
     final $result = create();
@@ -209,42 +263,73 @@ class DiscoveryOccurrence_VulnerabilityAttestation extends $pb.GeneratedMessage 
     return $result;
   }
   DiscoveryOccurrence_VulnerabilityAttestation._() : super();
-  factory DiscoveryOccurrence_VulnerabilityAttestation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DiscoveryOccurrence_VulnerabilityAttestation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DiscoveryOccurrence_VulnerabilityAttestation.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DiscoveryOccurrence_VulnerabilityAttestation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryOccurrence.VulnerabilityAttestation', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'lastAttemptTime', subBuilder: $302.Timestamp.create)
-    ..e<DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState.VULNERABILITY_ATTESTATION_STATE_UNSPECIFIED, valueOf: DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState.valueOf, enumValues: DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DiscoveryOccurrence.VulnerabilityAttestation',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'lastAttemptTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState>(
+        2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState
+                .VULNERABILITY_ATTESTATION_STATE_UNSPECIFIED,
+        valueOf:
+            DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState
+                .valueOf,
+        enumValues:
+            DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState
+                .values)
     ..aOS(3, _omitFieldNames ? '' : 'error')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DiscoveryOccurrence_VulnerabilityAttestation clone() => DiscoveryOccurrence_VulnerabilityAttestation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DiscoveryOccurrence_VulnerabilityAttestation copyWith(void Function(DiscoveryOccurrence_VulnerabilityAttestation) updates) => super.copyWith((message) => updates(message as DiscoveryOccurrence_VulnerabilityAttestation)) as DiscoveryOccurrence_VulnerabilityAttestation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DiscoveryOccurrence_VulnerabilityAttestation clone() =>
+      DiscoveryOccurrence_VulnerabilityAttestation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DiscoveryOccurrence_VulnerabilityAttestation copyWith(
+          void Function(DiscoveryOccurrence_VulnerabilityAttestation)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as DiscoveryOccurrence_VulnerabilityAttestation))
+          as DiscoveryOccurrence_VulnerabilityAttestation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DiscoveryOccurrence_VulnerabilityAttestation create() => DiscoveryOccurrence_VulnerabilityAttestation._();
-  DiscoveryOccurrence_VulnerabilityAttestation createEmptyInstance() => create();
-  static $pb.PbList<DiscoveryOccurrence_VulnerabilityAttestation> createRepeated() => $pb.PbList<DiscoveryOccurrence_VulnerabilityAttestation>();
+  static DiscoveryOccurrence_VulnerabilityAttestation create() =>
+      DiscoveryOccurrence_VulnerabilityAttestation._();
+  DiscoveryOccurrence_VulnerabilityAttestation createEmptyInstance() =>
+      create();
+  static $pb.PbList<DiscoveryOccurrence_VulnerabilityAttestation>
+      createRepeated() =>
+          $pb.PbList<DiscoveryOccurrence_VulnerabilityAttestation>();
   @$core.pragma('dart2js:noInline')
-  static DiscoveryOccurrence_VulnerabilityAttestation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryOccurrence_VulnerabilityAttestation>(create);
+  static DiscoveryOccurrence_VulnerabilityAttestation getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          DiscoveryOccurrence_VulnerabilityAttestation>(create);
   static DiscoveryOccurrence_VulnerabilityAttestation? _defaultInstance;
 
   /// The last time we attempted to generate an attestation.
   @$pb.TagNumber(1)
   $302.Timestamp get lastAttemptTime => $_getN(0);
   @$pb.TagNumber(1)
-  set lastAttemptTime($302.Timestamp v) { setField(1, v); }
+  set lastAttemptTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLastAttemptTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -254,9 +339,15 @@ class DiscoveryOccurrence_VulnerabilityAttestation extends $pb.GeneratedMessage 
 
   /// The success/failure state of the latest attestation attempt.
   @$pb.TagNumber(2)
-  DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState get state => $_getN(1);
+  DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState
+      get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState v) { setField(2, v); }
+  set state(
+      DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState
+          v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -266,7 +357,10 @@ class DiscoveryOccurrence_VulnerabilityAttestation extends $pb.GeneratedMessage 
   @$pb.TagNumber(3)
   $core.String get error => $_getSZ(2);
   @$pb.TagNumber(3)
-  set error($core.String v) { $_setString(2, v); }
+  set error($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
@@ -321,49 +415,81 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   DiscoveryOccurrence._() : super();
-  factory DiscoveryOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DiscoveryOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DiscoveryOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DiscoveryOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..e<DiscoveryOccurrence_ContinuousAnalysis>(1, _omitFieldNames ? '' : 'continuousAnalysis', $pb.PbFieldType.OE, defaultOrMaker: DiscoveryOccurrence_ContinuousAnalysis.CONTINUOUS_ANALYSIS_UNSPECIFIED, valueOf: DiscoveryOccurrence_ContinuousAnalysis.valueOf, enumValues: DiscoveryOccurrence_ContinuousAnalysis.values)
-    ..e<DiscoveryOccurrence_AnalysisStatus>(2, _omitFieldNames ? '' : 'analysisStatus', $pb.PbFieldType.OE, defaultOrMaker: DiscoveryOccurrence_AnalysisStatus.ANALYSIS_STATUS_UNSPECIFIED, valueOf: DiscoveryOccurrence_AnalysisStatus.valueOf, enumValues: DiscoveryOccurrence_AnalysisStatus.values)
-    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'analysisStatusError', subBuilder: $322.Status.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DiscoveryOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..e<DiscoveryOccurrence_ContinuousAnalysis>(
+        1, _omitFieldNames ? '' : 'continuousAnalysis', $pb.PbFieldType.OE,
+        defaultOrMaker: DiscoveryOccurrence_ContinuousAnalysis
+            .CONTINUOUS_ANALYSIS_UNSPECIFIED,
+        valueOf: DiscoveryOccurrence_ContinuousAnalysis.valueOf,
+        enumValues: DiscoveryOccurrence_ContinuousAnalysis.values)
+    ..e<DiscoveryOccurrence_AnalysisStatus>(
+        2, _omitFieldNames ? '' : 'analysisStatus', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            DiscoveryOccurrence_AnalysisStatus.ANALYSIS_STATUS_UNSPECIFIED,
+        valueOf: DiscoveryOccurrence_AnalysisStatus.valueOf,
+        enumValues: DiscoveryOccurrence_AnalysisStatus.values)
+    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'analysisStatusError',
+        subBuilder: $322.Status.create)
     ..aOS(4, _omitFieldNames ? '' : 'cpe')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'lastScanTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'archiveTime', subBuilder: $302.Timestamp.create)
-    ..aOM<DiscoveryOccurrence_AnalysisCompleted>(7, _omitFieldNames ? '' : 'analysisCompleted', subBuilder: DiscoveryOccurrence_AnalysisCompleted.create)
-    ..pc<$322.Status>(8, _omitFieldNames ? '' : 'analysisError', $pb.PbFieldType.PM, subBuilder: $322.Status.create)
-    ..aOM<DiscoveryOccurrence_SBOMStatus>(9, _omitFieldNames ? '' : 'sbomStatus', subBuilder: DiscoveryOccurrence_SBOMStatus.create)
-    ..aOM<DiscoveryOccurrence_VulnerabilityAttestation>(10, _omitFieldNames ? '' : 'vulnerabilityAttestation', subBuilder: DiscoveryOccurrence_VulnerabilityAttestation.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'lastScanTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'archiveTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<DiscoveryOccurrence_AnalysisCompleted>(
+        7, _omitFieldNames ? '' : 'analysisCompleted',
+        subBuilder: DiscoveryOccurrence_AnalysisCompleted.create)
+    ..pc<$322.Status>(
+        8, _omitFieldNames ? '' : 'analysisError', $pb.PbFieldType.PM,
+        subBuilder: $322.Status.create)
+    ..aOM<DiscoveryOccurrence_SBOMStatus>(
+        9, _omitFieldNames ? '' : 'sbomStatus',
+        subBuilder: DiscoveryOccurrence_SBOMStatus.create)
+    ..aOM<DiscoveryOccurrence_VulnerabilityAttestation>(
+        10, _omitFieldNames ? '' : 'vulnerabilityAttestation',
+        subBuilder: DiscoveryOccurrence_VulnerabilityAttestation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DiscoveryOccurrence clone() => DiscoveryOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DiscoveryOccurrence copyWith(void Function(DiscoveryOccurrence) updates) => super.copyWith((message) => updates(message as DiscoveryOccurrence)) as DiscoveryOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DiscoveryOccurrence copyWith(void Function(DiscoveryOccurrence) updates) =>
+      super.copyWith((message) => updates(message as DiscoveryOccurrence))
+          as DiscoveryOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DiscoveryOccurrence create() => DiscoveryOccurrence._();
   DiscoveryOccurrence createEmptyInstance() => create();
-  static $pb.PbList<DiscoveryOccurrence> createRepeated() => $pb.PbList<DiscoveryOccurrence>();
+  static $pb.PbList<DiscoveryOccurrence> createRepeated() =>
+      $pb.PbList<DiscoveryOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static DiscoveryOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryOccurrence>(create);
+  static DiscoveryOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DiscoveryOccurrence>(create);
   static DiscoveryOccurrence? _defaultInstance;
 
   /// Whether the resource is continuously analyzed.
   @$pb.TagNumber(1)
   DiscoveryOccurrence_ContinuousAnalysis get continuousAnalysis => $_getN(0);
   @$pb.TagNumber(1)
-  set continuousAnalysis(DiscoveryOccurrence_ContinuousAnalysis v) { setField(1, v); }
+  set continuousAnalysis(DiscoveryOccurrence_ContinuousAnalysis v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasContinuousAnalysis() => $_has(0);
   @$pb.TagNumber(1)
@@ -373,7 +499,10 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DiscoveryOccurrence_AnalysisStatus get analysisStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set analysisStatus(DiscoveryOccurrence_AnalysisStatus v) { setField(2, v); }
+  set analysisStatus(DiscoveryOccurrence_AnalysisStatus v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAnalysisStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -385,7 +514,10 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $322.Status get analysisStatusError => $_getN(2);
   @$pb.TagNumber(3)
-  set analysisStatusError($322.Status v) { setField(3, v); }
+  set analysisStatusError($322.Status v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAnalysisStatusError() => $_has(2);
   @$pb.TagNumber(3)
@@ -397,7 +529,10 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get cpe => $_getSZ(3);
   @$pb.TagNumber(4)
-  set cpe($core.String v) { $_setString(3, v); }
+  set cpe($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCpe() => $_has(3);
   @$pb.TagNumber(4)
@@ -407,7 +542,10 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get lastScanTime => $_getN(4);
   @$pb.TagNumber(5)
-  set lastScanTime($302.Timestamp v) { setField(5, v); }
+  set lastScanTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasLastScanTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -419,7 +557,10 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get archiveTime => $_getN(5);
   @$pb.TagNumber(6)
-  set archiveTime($302.Timestamp v) { setField(6, v); }
+  set archiveTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasArchiveTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -430,13 +571,17 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DiscoveryOccurrence_AnalysisCompleted get analysisCompleted => $_getN(6);
   @$pb.TagNumber(7)
-  set analysisCompleted(DiscoveryOccurrence_AnalysisCompleted v) { setField(7, v); }
+  set analysisCompleted(DiscoveryOccurrence_AnalysisCompleted v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasAnalysisCompleted() => $_has(6);
   @$pb.TagNumber(7)
   void clearAnalysisCompleted() => clearField(7);
   @$pb.TagNumber(7)
-  DiscoveryOccurrence_AnalysisCompleted ensureAnalysisCompleted() => $_ensure(6);
+  DiscoveryOccurrence_AnalysisCompleted ensureAnalysisCompleted() =>
+      $_ensure(6);
 
   /// Indicates any errors encountered during analysis of a resource. There
   /// could be 0 or more of these errors.
@@ -447,7 +592,10 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   DiscoveryOccurrence_SBOMStatus get sbomStatus => $_getN(8);
   @$pb.TagNumber(9)
-  set sbomStatus(DiscoveryOccurrence_SBOMStatus v) { setField(9, v); }
+  set sbomStatus(DiscoveryOccurrence_SBOMStatus v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSbomStatus() => $_has(8);
   @$pb.TagNumber(9)
@@ -457,17 +605,22 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
 
   /// The status of an vulnerability attestation generation.
   @$pb.TagNumber(10)
-  DiscoveryOccurrence_VulnerabilityAttestation get vulnerabilityAttestation => $_getN(9);
+  DiscoveryOccurrence_VulnerabilityAttestation get vulnerabilityAttestation =>
+      $_getN(9);
   @$pb.TagNumber(10)
-  set vulnerabilityAttestation(DiscoveryOccurrence_VulnerabilityAttestation v) { setField(10, v); }
+  set vulnerabilityAttestation(DiscoveryOccurrence_VulnerabilityAttestation v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasVulnerabilityAttestation() => $_has(9);
   @$pb.TagNumber(10)
   void clearVulnerabilityAttestation() => clearField(10);
   @$pb.TagNumber(10)
-  DiscoveryOccurrence_VulnerabilityAttestation ensureVulnerabilityAttestation() => $_ensure(9);
+  DiscoveryOccurrence_VulnerabilityAttestation
+      ensureVulnerabilityAttestation() => $_ensure(9);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

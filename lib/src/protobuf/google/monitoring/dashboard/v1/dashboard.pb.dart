@@ -17,10 +17,10 @@ import 'dashboard_filter.pb.dart' as $529;
 import 'layouts.pb.dart' as $528;
 
 enum Dashboard_Layout {
-  gridLayout, 
-  mosaicLayout, 
-  rowLayout, 
-  columnLayout, 
+  gridLayout,
+  mosaicLayout,
+  rowLayout,
+  columnLayout,
   notSet
 }
 
@@ -69,40 +69,56 @@ class Dashboard extends $pb.GeneratedMessage {
     return $result;
   }
   Dashboard._() : super();
-  factory Dashboard.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Dashboard.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Dashboard.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Dashboard.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Dashboard_Layout> _Dashboard_LayoutByTag = {
-    5 : Dashboard_Layout.gridLayout,
-    6 : Dashboard_Layout.mosaicLayout,
-    8 : Dashboard_Layout.rowLayout,
-    9 : Dashboard_Layout.columnLayout,
-    0 : Dashboard_Layout.notSet
+    5: Dashboard_Layout.gridLayout,
+    6: Dashboard_Layout.mosaicLayout,
+    8: Dashboard_Layout.rowLayout,
+    9: Dashboard_Layout.columnLayout,
+    0: Dashboard_Layout.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Dashboard', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Dashboard',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..oo(0, [5, 6, 8, 9])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'etag')
-    ..aOM<$528.GridLayout>(5, _omitFieldNames ? '' : 'gridLayout', subBuilder: $528.GridLayout.create)
-    ..aOM<$528.MosaicLayout>(6, _omitFieldNames ? '' : 'mosaicLayout', subBuilder: $528.MosaicLayout.create)
-    ..aOM<$528.RowLayout>(8, _omitFieldNames ? '' : 'rowLayout', subBuilder: $528.RowLayout.create)
-    ..aOM<$528.ColumnLayout>(9, _omitFieldNames ? '' : 'columnLayout', subBuilder: $528.ColumnLayout.create)
-    ..pc<$529.DashboardFilter>(11, _omitFieldNames ? '' : 'dashboardFilters', $pb.PbFieldType.PM, subBuilder: $529.DashboardFilter.create)
-    ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'labels', entryClassName: 'Dashboard.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.dashboard.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$528.GridLayout>(5, _omitFieldNames ? '' : 'gridLayout',
+        subBuilder: $528.GridLayout.create)
+    ..aOM<$528.MosaicLayout>(6, _omitFieldNames ? '' : 'mosaicLayout',
+        subBuilder: $528.MosaicLayout.create)
+    ..aOM<$528.RowLayout>(8, _omitFieldNames ? '' : 'rowLayout',
+        subBuilder: $528.RowLayout.create)
+    ..aOM<$528.ColumnLayout>(9, _omitFieldNames ? '' : 'columnLayout',
+        subBuilder: $528.ColumnLayout.create)
+    ..pc<$529.DashboardFilter>(
+        11, _omitFieldNames ? '' : 'dashboardFilters', $pb.PbFieldType.PM,
+        subBuilder: $529.DashboardFilter.create)
+    ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Dashboard.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.monitoring.dashboard.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Dashboard clone() => Dashboard()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Dashboard copyWith(void Function(Dashboard) updates) => super.copyWith((message) => updates(message as Dashboard)) as Dashboard;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Dashboard copyWith(void Function(Dashboard) updates) =>
+      super.copyWith((message) => updates(message as Dashboard)) as Dashboard;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -111,7 +127,8 @@ class Dashboard extends $pb.GeneratedMessage {
   Dashboard createEmptyInstance() => create();
   static $pb.PbList<Dashboard> createRepeated() => $pb.PbList<Dashboard>();
   @$core.pragma('dart2js:noInline')
-  static Dashboard getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Dashboard>(create);
+  static Dashboard getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Dashboard>(create);
   static Dashboard? _defaultInstance;
 
   Dashboard_Layout whichLayout() => _Dashboard_LayoutByTag[$_whichOneof(0)]!;
@@ -121,7 +138,10 @@ class Dashboard extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -131,7 +151,10 @@ class Dashboard extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -147,7 +170,10 @@ class Dashboard extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get etag => $_getSZ(2);
   @$pb.TagNumber(4)
-  set etag($core.String v) { $_setString(2, v); }
+  set etag($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEtag() => $_has(2);
   @$pb.TagNumber(4)
@@ -158,7 +184,10 @@ class Dashboard extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $528.GridLayout get gridLayout => $_getN(3);
   @$pb.TagNumber(5)
-  set gridLayout($528.GridLayout v) { setField(5, v); }
+  set gridLayout($528.GridLayout v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasGridLayout() => $_has(3);
   @$pb.TagNumber(5)
@@ -171,7 +200,10 @@ class Dashboard extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $528.MosaicLayout get mosaicLayout => $_getN(4);
   @$pb.TagNumber(6)
-  set mosaicLayout($528.MosaicLayout v) { setField(6, v); }
+  set mosaicLayout($528.MosaicLayout v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMosaicLayout() => $_has(4);
   @$pb.TagNumber(6)
@@ -184,7 +216,10 @@ class Dashboard extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $528.RowLayout get rowLayout => $_getN(5);
   @$pb.TagNumber(8)
-  set rowLayout($528.RowLayout v) { setField(8, v); }
+  set rowLayout($528.RowLayout v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasRowLayout() => $_has(5);
   @$pb.TagNumber(8)
@@ -197,7 +232,10 @@ class Dashboard extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $528.ColumnLayout get columnLayout => $_getN(6);
   @$pb.TagNumber(9)
-  set columnLayout($528.ColumnLayout v) { setField(9, v); }
+  set columnLayout($528.ColumnLayout v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasColumnLayout() => $_has(6);
   @$pb.TagNumber(9)
@@ -214,6 +252,6 @@ class Dashboard extends $pb.GeneratedMessage {
   $core.Map<$core.String, $core.String> get labels => $_getMap(8);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

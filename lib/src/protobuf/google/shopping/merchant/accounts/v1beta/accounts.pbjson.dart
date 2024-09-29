@@ -22,8 +22,23 @@ const Account$json = {
     {'1': 'account_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'accountName'},
     {'1': 'adult_content', '3': 4, '4': 1, '5': 8, '10': 'adultContent'},
     {'1': 'test_account', '3': 5, '4': 1, '5': 8, '8': {}, '10': 'testAccount'},
-    {'1': 'time_zone', '3': 6, '4': 1, '5': 11, '6': '.google.type.TimeZone', '8': {}, '10': 'timeZone'},
-    {'1': 'language_code', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
+    {
+      '1': 'time_zone',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.TimeZone',
+      '8': {},
+      '10': 'timeZone'
+    },
+    {
+      '1': 'language_code',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
   ],
   '7': {},
 };
@@ -55,12 +70,51 @@ final $typed_data.Uint8List getAccountRequestDescriptor = $convert.base64Decode(
 const CreateAndConfigureAccountRequest$json = {
   '1': 'CreateAndConfigureAccountRequest',
   '2': [
-    {'1': 'account', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Account', '8': {}, '10': 'account'},
-    {'1': 'users', '3': 2, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.CreateUserRequest', '8': {}, '10': 'users'},
-    {'1': 'accept_terms_of_service', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.CreateAndConfigureAccountRequest.AcceptTermsOfService', '8': {}, '9': 0, '10': 'acceptTermsOfService', '17': true},
-    {'1': 'service', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.CreateAndConfigureAccountRequest.AddAccountService', '8': {}, '10': 'service'},
+    {
+      '1': 'account',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Account',
+      '8': {},
+      '10': 'account'
+    },
+    {
+      '1': 'users',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.CreateUserRequest',
+      '8': {},
+      '10': 'users'
+    },
+    {
+      '1': 'accept_terms_of_service',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.CreateAndConfigureAccountRequest.AcceptTermsOfService',
+      '8': {},
+      '9': 0,
+      '10': 'acceptTermsOfService',
+      '17': true
+    },
+    {
+      '1': 'service',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.CreateAndConfigureAccountRequest.AddAccountService',
+      '8': {},
+      '10': 'service'
+    },
   ],
-  '3': [CreateAndConfigureAccountRequest_AcceptTermsOfService$json, CreateAndConfigureAccountRequest_AddAccountService$json],
+  '3': [
+    CreateAndConfigureAccountRequest_AcceptTermsOfService$json,
+    CreateAndConfigureAccountRequest_AddAccountService$json
+  ],
   '8': [
     {'1': '_accept_terms_of_service'},
   ],
@@ -79,8 +133,25 @@ const CreateAndConfigureAccountRequest_AcceptTermsOfService$json = {
 const CreateAndConfigureAccountRequest_AddAccountService$json = {
   '1': 'AddAccountService',
   '2': [
-    {'1': 'account_aggregation', '3': 103, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AccountAggregation', '9': 0, '10': 'accountAggregation'},
-    {'1': 'provider', '3': 1, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'provider', '17': true},
+    {
+      '1': 'account_aggregation',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.AccountAggregation',
+      '9': 0,
+      '10': 'accountAggregation'
+    },
+    {
+      '1': 'provider',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'provider',
+      '17': true
+    },
   ],
   '8': [
     {'1': 'service_type'},
@@ -125,8 +196,24 @@ final $typed_data.Uint8List deleteAccountRequestDescriptor = $convert.base64Deco
 const UpdateAccountRequest$json = {
   '1': 'UpdateAccountRequest',
   '2': [
-    {'1': 'account', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Account', '8': {}, '10': 'account'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'account',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Account',
+      '8': {},
+      '10': 'account'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -157,7 +244,14 @@ final $typed_data.Uint8List listAccountsRequestDescriptor = $convert.base64Decod
 const ListAccountsResponse$json = {
   '1': 'ListAccountsResponse',
   '2': [
-    {'1': 'accounts', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Account', '10': 'accounts'},
+    {
+      '1': 'accounts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Account',
+      '10': 'accounts'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -189,7 +283,14 @@ final $typed_data.Uint8List listSubAccountsRequestDescriptor = $convert.base64De
 const ListSubAccountsResponse$json = {
   '1': 'ListSubAccountsResponse',
   '2': [
-    {'1': 'accounts', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Account', '10': 'accounts'},
+    {
+      '1': 'accounts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Account',
+      '10': 'accounts'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -199,4 +300,3 @@ final $typed_data.Uint8List listSubAccountsResponseDescriptor = $convert.base64D
     'ChdMaXN0U3ViQWNjb3VudHNSZXNwb25zZRJNCghhY2NvdW50cxgBIAMoCzIxLmdvb2dsZS5zaG'
     '9wcGluZy5tZXJjaGFudC5hY2NvdW50cy52MWJldGEuQWNjb3VudFIIYWNjb3VudHMSJgoPbmV4'
     'dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
-

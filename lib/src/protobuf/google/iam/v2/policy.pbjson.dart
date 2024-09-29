@@ -21,13 +21,58 @@ const Policy$json = {
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'uid'},
     {'1': 'kind', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'kind'},
     {'1': 'display_name', '3': 4, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'annotations', '3': 5, '4': 3, '5': 11, '6': '.google.iam.v2.Policy.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.iam.v2.Policy.AnnotationsEntry',
+      '10': 'annotations'
+    },
     {'1': 'etag', '3': 6, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'delete_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'deleteTime'},
-    {'1': 'rules', '3': 10, '4': 3, '5': 11, '6': '.google.iam.v2.PolicyRule', '10': 'rules'},
-    {'1': 'managing_authority', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'managingAuthority'},
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'rules',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.iam.v2.PolicyRule',
+      '10': 'rules'
+    },
+    {
+      '1': 'managing_authority',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'managingAuthority'
+    },
   ],
   '3': [Policy_AnnotationsEntry$json],
 };
@@ -60,7 +105,15 @@ final $typed_data.Uint8List policyDescriptor = $convert.base64Decode(
 const PolicyRule$json = {
   '1': 'PolicyRule',
   '2': [
-    {'1': 'deny_rule', '3': 2, '4': 1, '5': 11, '6': '.google.iam.v2.DenyRule', '9': 0, '10': 'denyRule'},
+    {
+      '1': 'deny_rule',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v2.DenyRule',
+      '9': 0,
+      '10': 'denyRule'
+    },
     {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
   ],
   '8': [
@@ -92,7 +145,14 @@ final $typed_data.Uint8List listPoliciesRequestDescriptor = $convert.base64Decod
 const ListPoliciesResponse$json = {
   '1': 'ListPoliciesResponse',
   '2': [
-    {'1': 'policies', '3': 1, '4': 3, '5': 11, '6': '.google.iam.v2.Policy', '10': 'policies'},
+    {
+      '1': 'policies',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.iam.v2.Policy',
+      '10': 'policies'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -120,7 +180,15 @@ const CreatePolicyRequest$json = {
   '1': 'CreatePolicyRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'policy', '3': 2, '4': 1, '5': 11, '6': '.google.iam.v2.Policy', '8': {}, '10': 'policy'},
+    {
+      '1': 'policy',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v2.Policy',
+      '8': {},
+      '10': 'policy'
+    },
     {'1': 'policy_id', '3': 3, '4': 1, '5': 9, '10': 'policyId'},
   ],
 };
@@ -135,7 +203,15 @@ final $typed_data.Uint8List createPolicyRequestDescriptor = $convert.base64Decod
 const UpdatePolicyRequest$json = {
   '1': 'UpdatePolicyRequest',
   '2': [
-    {'1': 'policy', '3': 1, '4': 1, '5': 11, '6': '.google.iam.v2.Policy', '8': {}, '10': 'policy'},
+    {
+      '1': 'policy',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v2.Policy',
+      '8': {},
+      '10': 'policy'
+    },
   ],
 };
 
@@ -162,12 +238,19 @@ final $typed_data.Uint8List deletePolicyRequestDescriptor = $convert.base64Decod
 const PolicyOperationMetadata$json = {
   '1': 'PolicyOperationMetadata',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
   ],
 };
 
 /// Descriptor for `PolicyOperationMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List policyOperationMetadataDescriptor = $convert.base64Decode(
-    'ChdQb2xpY3lPcGVyYXRpb25NZXRhZGF0YRI7CgtjcmVhdGVfdGltZRgBIAEoCzIaLmdvb2dsZS'
-    '5wcm90b2J1Zi5UaW1lc3RhbXBSCmNyZWF0ZVRpbWU=');
-
+final $typed_data.Uint8List policyOperationMetadataDescriptor =
+    $convert.base64Decode(
+        'ChdQb2xpY3lPcGVyYXRpb25NZXRhZGF0YRI7CgtjcmVhdGVfdGltZRgBIAEoCzIaLmdvb2dsZS'
+        '5wcm90b2J1Zi5UaW1lc3RhbXBSCmNyZWF0ZVRpbWU=');

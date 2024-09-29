@@ -46,37 +46,48 @@ class ListChildAccountsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListChildAccountsRequest._() : super();
-  factory ListChildAccountsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListChildAccountsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListChildAccountsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListChildAccountsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListChildAccountsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListChildAccountsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aInt64(2, _omitFieldNames ? '' : 'labelId')
     ..aOS(3, _omitFieldNames ? '' : 'fullName')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListChildAccountsRequest clone() => ListChildAccountsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListChildAccountsRequest copyWith(void Function(ListChildAccountsRequest) updates) => super.copyWith((message) => updates(message as ListChildAccountsRequest)) as ListChildAccountsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListChildAccountsRequest clone() =>
+      ListChildAccountsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListChildAccountsRequest copyWith(
+          void Function(ListChildAccountsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListChildAccountsRequest))
+          as ListChildAccountsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListChildAccountsRequest create() => ListChildAccountsRequest._();
   ListChildAccountsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListChildAccountsRequest> createRepeated() => $pb.PbList<ListChildAccountsRequest>();
+  static $pb.PbList<ListChildAccountsRequest> createRepeated() =>
+      $pb.PbList<ListChildAccountsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListChildAccountsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListChildAccountsRequest>(create);
+  static ListChildAccountsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListChildAccountsRequest>(create);
   static ListChildAccountsRequest? _defaultInstance;
 
   /// Required. The parent account. Must be a CSS group or domain.
@@ -84,7 +95,10 @@ class ListChildAccountsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -94,7 +108,10 @@ class ListChildAccountsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get labelId => $_getI64(1);
   @$pb.TagNumber(2)
-  set labelId($fixnum.Int64 v) { $_setInt64(1, v); }
+  set labelId($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLabelId() => $_has(1);
   @$pb.TagNumber(2)
@@ -105,7 +122,10 @@ class ListChildAccountsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get fullName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set fullName($core.String v) { $_setString(2, v); }
+  set fullName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFullName() => $_has(2);
   @$pb.TagNumber(3)
@@ -118,7 +138,10 @@ class ListChildAccountsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(3);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(3, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(3);
   @$pb.TagNumber(4)
@@ -132,7 +155,10 @@ class ListChildAccountsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pageToken => $_getSZ(4);
   @$pb.TagNumber(5)
-  set pageToken($core.String v) { $_setString(4, v); }
+  set pageToken($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPageToken() => $_has(4);
   @$pb.TagNumber(5)
@@ -155,34 +181,46 @@ class ListChildAccountsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListChildAccountsResponse._() : super();
-  factory ListChildAccountsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListChildAccountsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListChildAccountsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListChildAccountsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListChildAccountsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
-    ..pc<Account>(1, _omitFieldNames ? '' : 'accounts', $pb.PbFieldType.PM, subBuilder: Account.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListChildAccountsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
+    ..pc<Account>(1, _omitFieldNames ? '' : 'accounts', $pb.PbFieldType.PM,
+        subBuilder: Account.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListChildAccountsResponse clone() => ListChildAccountsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListChildAccountsResponse copyWith(void Function(ListChildAccountsResponse) updates) => super.copyWith((message) => updates(message as ListChildAccountsResponse)) as ListChildAccountsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListChildAccountsResponse clone() =>
+      ListChildAccountsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListChildAccountsResponse copyWith(
+          void Function(ListChildAccountsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListChildAccountsResponse))
+          as ListChildAccountsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListChildAccountsResponse create() => ListChildAccountsResponse._();
   ListChildAccountsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListChildAccountsResponse> createRepeated() => $pb.PbList<ListChildAccountsResponse>();
+  static $pb.PbList<ListChildAccountsResponse> createRepeated() =>
+      $pb.PbList<ListChildAccountsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListChildAccountsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListChildAccountsResponse>(create);
+  static ListChildAccountsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListChildAccountsResponse>(create);
   static ListChildAccountsResponse? _defaultInstance;
 
   /// The CSS/MC accounts returned for the specified CSS parent account.
@@ -194,7 +232,10 @@ class ListChildAccountsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -217,34 +258,43 @@ class GetAccountRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetAccountRequest._() : super();
-  factory GetAccountRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetAccountRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetAccountRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetAccountRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetAccountRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'parent')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetAccountRequest clone() => GetAccountRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetAccountRequest copyWith(void Function(GetAccountRequest) updates) => super.copyWith((message) => updates(message as GetAccountRequest)) as GetAccountRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetAccountRequest copyWith(void Function(GetAccountRequest) updates) =>
+      super.copyWith((message) => updates(message as GetAccountRequest))
+          as GetAccountRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetAccountRequest create() => GetAccountRequest._();
   GetAccountRequest createEmptyInstance() => create();
-  static $pb.PbList<GetAccountRequest> createRepeated() => $pb.PbList<GetAccountRequest>();
+  static $pb.PbList<GetAccountRequest> createRepeated() =>
+      $pb.PbList<GetAccountRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetAccountRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetAccountRequest>(create);
+  static GetAccountRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetAccountRequest>(create);
   static GetAccountRequest? _defaultInstance;
 
   /// Required. The name of the managed CSS/MC account.
@@ -252,7 +302,10 @@ class GetAccountRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -264,7 +317,10 @@ class GetAccountRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(2)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(2)
@@ -291,35 +347,47 @@ class UpdateAccountLabelsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateAccountLabelsRequest._() : super();
-  factory UpdateAccountLabelsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateAccountLabelsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateAccountLabelsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateAccountLabelsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountLabelsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateAccountLabelsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..p<$fixnum.Int64>(2, _omitFieldNames ? '' : 'labelIds', $pb.PbFieldType.K6)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateAccountLabelsRequest clone() => UpdateAccountLabelsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateAccountLabelsRequest copyWith(void Function(UpdateAccountLabelsRequest) updates) => super.copyWith((message) => updates(message as UpdateAccountLabelsRequest)) as UpdateAccountLabelsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateAccountLabelsRequest clone() =>
+      UpdateAccountLabelsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateAccountLabelsRequest copyWith(
+          void Function(UpdateAccountLabelsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateAccountLabelsRequest))
+          as UpdateAccountLabelsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateAccountLabelsRequest create() => UpdateAccountLabelsRequest._();
   UpdateAccountLabelsRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateAccountLabelsRequest> createRepeated() => $pb.PbList<UpdateAccountLabelsRequest>();
+  static $pb.PbList<UpdateAccountLabelsRequest> createRepeated() =>
+      $pb.PbList<UpdateAccountLabelsRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateAccountLabelsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateAccountLabelsRequest>(create);
+  static UpdateAccountLabelsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateAccountLabelsRequest>(create);
   static UpdateAccountLabelsRequest? _defaultInstance;
 
   /// Required. The label resource name.
@@ -327,7 +395,10 @@ class UpdateAccountLabelsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -344,7 +415,10 @@ class UpdateAccountLabelsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(2);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(2, v); }
+  set parent($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(2);
   @$pb.TagNumber(3)
@@ -391,31 +465,42 @@ class Account extends $pb.GeneratedMessage {
     return $result;
   }
   Account._() : super();
-  factory Account.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Account.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Account.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Account.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Account', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Account',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'fullName')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'homepageUri')
     ..aOS(5, _omitFieldNames ? '' : 'parent')
     ..p<$fixnum.Int64>(6, _omitFieldNames ? '' : 'labelIds', $pb.PbFieldType.K6)
-    ..p<$fixnum.Int64>(7, _omitFieldNames ? '' : 'automaticLabelIds', $pb.PbFieldType.K6)
-    ..e<Account_AccountType>(8, _omitFieldNames ? '' : 'accountType', $pb.PbFieldType.OE, defaultOrMaker: Account_AccountType.ACCOUNT_TYPE_UNSPECIFIED, valueOf: Account_AccountType.valueOf, enumValues: Account_AccountType.values)
-    ..hasRequiredFields = false
-  ;
+    ..p<$fixnum.Int64>(
+        7, _omitFieldNames ? '' : 'automaticLabelIds', $pb.PbFieldType.K6)
+    ..e<Account_AccountType>(
+        8, _omitFieldNames ? '' : 'accountType', $pb.PbFieldType.OE,
+        defaultOrMaker: Account_AccountType.ACCOUNT_TYPE_UNSPECIFIED,
+        valueOf: Account_AccountType.valueOf,
+        enumValues: Account_AccountType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Account clone() => Account()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Account copyWith(void Function(Account) updates) => super.copyWith((message) => updates(message as Account)) as Account;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Account copyWith(void Function(Account) updates) =>
+      super.copyWith((message) => updates(message as Account)) as Account;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -424,7 +509,8 @@ class Account extends $pb.GeneratedMessage {
   Account createEmptyInstance() => create();
   static $pb.PbList<Account> createRepeated() => $pb.PbList<Account>();
   @$core.pragma('dart2js:noInline')
-  static Account getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Account>(create);
+  static Account getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Account>(create);
   static Account? _defaultInstance;
 
   /// The label resource name.
@@ -432,7 +518,10 @@ class Account extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -442,7 +531,10 @@ class Account extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get fullName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set fullName($core.String v) { $_setString(1, v); }
+  set fullName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFullName() => $_has(1);
   @$pb.TagNumber(2)
@@ -452,7 +544,10 @@ class Account extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -462,7 +557,10 @@ class Account extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get homepageUri => $_getSZ(3);
   @$pb.TagNumber(4)
-  set homepageUri($core.String v) { $_setString(3, v); }
+  set homepageUri($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasHomepageUri() => $_has(3);
   @$pb.TagNumber(4)
@@ -474,7 +572,10 @@ class Account extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get parent => $_getSZ(4);
   @$pb.TagNumber(5)
-  set parent($core.String v) { $_setString(4, v); }
+  set parent($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasParent() => $_has(4);
   @$pb.TagNumber(5)
@@ -494,13 +595,16 @@ class Account extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Account_AccountType get accountType => $_getN(7);
   @$pb.TagNumber(8)
-  set accountType(Account_AccountType v) { setField(8, v); }
+  set accountType(Account_AccountType v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasAccountType() => $_has(7);
   @$pb.TagNumber(8)
   void clearAccountType() => clearField(8);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

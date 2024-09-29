@@ -48,8 +48,22 @@ final $typed_data.Uint8List fallbackRoutingModeDescriptor = $convert.base64Decod
 const FallbackInfo$json = {
   '1': 'FallbackInfo',
   '2': [
-    {'1': 'routing_mode', '3': 1, '4': 1, '5': 14, '6': '.google.maps.routing.v2.FallbackRoutingMode', '10': 'routingMode'},
-    {'1': 'reason', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routing.v2.FallbackReason', '10': 'reason'},
+    {
+      '1': 'routing_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.FallbackRoutingMode',
+      '10': 'routingMode'
+    },
+    {
+      '1': 'reason',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.FallbackReason',
+      '10': 'reason'
+    },
   ],
 };
 
@@ -58,4 +72,3 @@ final $typed_data.Uint8List fallbackInfoDescriptor = $convert.base64Decode(
     'CgxGYWxsYmFja0luZm8STgoMcm91dGluZ19tb2RlGAEgASgOMisuZ29vZ2xlLm1hcHMucm91dG'
     'luZy52Mi5GYWxsYmFja1JvdXRpbmdNb2RlUgtyb3V0aW5nTW9kZRI+CgZyZWFzb24YAiABKA4y'
     'Ji5nb29nbGUubWFwcy5yb3V0aW5nLnYyLkZhbGxiYWNrUmVhc29uUgZyZWFzb24=');
-

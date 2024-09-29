@@ -29,33 +29,42 @@ class ExplainOptions extends $pb.GeneratedMessage {
     return $result;
   }
   ExplainOptions._() : super();
-  factory ExplainOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExplainOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExplainOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExplainOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplainOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExplainOptions',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'analyze')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ExplainOptions clone() => ExplainOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExplainOptions copyWith(void Function(ExplainOptions) updates) => super.copyWith((message) => updates(message as ExplainOptions)) as ExplainOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExplainOptions copyWith(void Function(ExplainOptions) updates) =>
+      super.copyWith((message) => updates(message as ExplainOptions))
+          as ExplainOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExplainOptions create() => ExplainOptions._();
   ExplainOptions createEmptyInstance() => create();
-  static $pb.PbList<ExplainOptions> createRepeated() => $pb.PbList<ExplainOptions>();
+  static $pb.PbList<ExplainOptions> createRepeated() =>
+      $pb.PbList<ExplainOptions>();
   @$core.pragma('dart2js:noInline')
-  static ExplainOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExplainOptions>(create);
+  static ExplainOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExplainOptions>(create);
   static ExplainOptions? _defaultInstance;
 
   ///  Optional. Whether to execute this query.
@@ -68,7 +77,10 @@ class ExplainOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get analyze => $_getBF(0);
   @$pb.TagNumber(1)
-  set analyze($core.bool v) { $_setBool(0, v); }
+  set analyze($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAnalyze() => $_has(0);
   @$pb.TagNumber(1)
@@ -91,41 +103,55 @@ class ExplainMetrics extends $pb.GeneratedMessage {
     return $result;
   }
   ExplainMetrics._() : super();
-  factory ExplainMetrics.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExplainMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExplainMetrics.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExplainMetrics.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplainMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<PlanSummary>(1, _omitFieldNames ? '' : 'planSummary', subBuilder: PlanSummary.create)
-    ..aOM<ExecutionStats>(2, _omitFieldNames ? '' : 'executionStats', subBuilder: ExecutionStats.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExplainMetrics',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<PlanSummary>(1, _omitFieldNames ? '' : 'planSummary',
+        subBuilder: PlanSummary.create)
+    ..aOM<ExecutionStats>(2, _omitFieldNames ? '' : 'executionStats',
+        subBuilder: ExecutionStats.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ExplainMetrics clone() => ExplainMetrics()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExplainMetrics copyWith(void Function(ExplainMetrics) updates) => super.copyWith((message) => updates(message as ExplainMetrics)) as ExplainMetrics;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExplainMetrics copyWith(void Function(ExplainMetrics) updates) =>
+      super.copyWith((message) => updates(message as ExplainMetrics))
+          as ExplainMetrics;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExplainMetrics create() => ExplainMetrics._();
   ExplainMetrics createEmptyInstance() => create();
-  static $pb.PbList<ExplainMetrics> createRepeated() => $pb.PbList<ExplainMetrics>();
+  static $pb.PbList<ExplainMetrics> createRepeated() =>
+      $pb.PbList<ExplainMetrics>();
   @$core.pragma('dart2js:noInline')
-  static ExplainMetrics getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExplainMetrics>(create);
+  static ExplainMetrics getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExplainMetrics>(create);
   static ExplainMetrics? _defaultInstance;
 
   /// Planning phase information for the query.
   @$pb.TagNumber(1)
   PlanSummary get planSummary => $_getN(0);
   @$pb.TagNumber(1)
-  set planSummary(PlanSummary v) { setField(1, v); }
+  set planSummary(PlanSummary v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPlanSummary() => $_has(0);
   @$pb.TagNumber(1)
@@ -139,7 +165,10 @@ class ExplainMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ExecutionStats get executionStats => $_getN(1);
   @$pb.TagNumber(2)
-  set executionStats(ExecutionStats v) { setField(2, v); }
+  set executionStats(ExecutionStats v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExecutionStats() => $_has(1);
   @$pb.TagNumber(2)
@@ -160,24 +189,33 @@ class PlanSummary extends $pb.GeneratedMessage {
     return $result;
   }
   PlanSummary._() : super();
-  factory PlanSummary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlanSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlanSummary.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlanSummary.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlanSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..pc<$261.Struct>(1, _omitFieldNames ? '' : 'indexesUsed', $pb.PbFieldType.PM, subBuilder: $261.Struct.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlanSummary',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..pc<$261.Struct>(
+        1, _omitFieldNames ? '' : 'indexesUsed', $pb.PbFieldType.PM,
+        subBuilder: $261.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PlanSummary clone() => PlanSummary()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlanSummary copyWith(void Function(PlanSummary) updates) => super.copyWith((message) => updates(message as PlanSummary)) as PlanSummary;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlanSummary copyWith(void Function(PlanSummary) updates) =>
+      super.copyWith((message) => updates(message as PlanSummary))
+          as PlanSummary;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -186,7 +224,8 @@ class PlanSummary extends $pb.GeneratedMessage {
   PlanSummary createEmptyInstance() => create();
   static $pb.PbList<PlanSummary> createRepeated() => $pb.PbList<PlanSummary>();
   @$core.pragma('dart2js:noInline')
-  static PlanSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlanSummary>(create);
+  static PlanSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PlanSummary>(create);
   static PlanSummary? _defaultInstance;
 
   /// The indexes selected for the query. For example:
@@ -222,36 +261,47 @@ class ExecutionStats extends $pb.GeneratedMessage {
     return $result;
   }
   ExecutionStats._() : super();
-  factory ExecutionStats.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExecutionStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExecutionStats.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExecutionStats.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecutionStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExecutionStats',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'resultsReturned')
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'executionDuration', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'executionDuration',
+        subBuilder: $264.Duration.create)
     ..aInt64(4, _omitFieldNames ? '' : 'readOperations')
-    ..aOM<$261.Struct>(5, _omitFieldNames ? '' : 'debugStats', subBuilder: $261.Struct.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$261.Struct>(5, _omitFieldNames ? '' : 'debugStats',
+        subBuilder: $261.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ExecutionStats clone() => ExecutionStats()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExecutionStats copyWith(void Function(ExecutionStats) updates) => super.copyWith((message) => updates(message as ExecutionStats)) as ExecutionStats;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExecutionStats copyWith(void Function(ExecutionStats) updates) =>
+      super.copyWith((message) => updates(message as ExecutionStats))
+          as ExecutionStats;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExecutionStats create() => ExecutionStats._();
   ExecutionStats createEmptyInstance() => create();
-  static $pb.PbList<ExecutionStats> createRepeated() => $pb.PbList<ExecutionStats>();
+  static $pb.PbList<ExecutionStats> createRepeated() =>
+      $pb.PbList<ExecutionStats>();
   @$core.pragma('dart2js:noInline')
-  static ExecutionStats getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExecutionStats>(create);
+  static ExecutionStats getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExecutionStats>(create);
   static ExecutionStats? _defaultInstance;
 
   /// Total number of results returned, including documents, projections,
@@ -259,7 +309,10 @@ class ExecutionStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get resultsReturned => $_getI64(0);
   @$pb.TagNumber(1)
-  set resultsReturned($fixnum.Int64 v) { $_setInt64(0, v); }
+  set resultsReturned($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasResultsReturned() => $_has(0);
   @$pb.TagNumber(1)
@@ -269,7 +322,10 @@ class ExecutionStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get executionDuration => $_getN(1);
   @$pb.TagNumber(3)
-  set executionDuration($264.Duration v) { setField(3, v); }
+  set executionDuration($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasExecutionDuration() => $_has(1);
   @$pb.TagNumber(3)
@@ -281,7 +337,10 @@ class ExecutionStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get readOperations => $_getI64(2);
   @$pb.TagNumber(4)
-  set readOperations($fixnum.Int64 v) { $_setInt64(2, v); }
+  set readOperations($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReadOperations() => $_has(2);
   @$pb.TagNumber(4)
@@ -302,7 +361,10 @@ class ExecutionStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $261.Struct get debugStats => $_getN(3);
   @$pb.TagNumber(5)
-  set debugStats($261.Struct v) { setField(5, v); }
+  set debugStats($261.Struct v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDebugStats() => $_has(3);
   @$pb.TagNumber(5)
@@ -311,6 +373,6 @@ class ExecutionStats extends $pb.GeneratedMessage {
   $261.Struct ensureDebugStats() => $_ensure(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

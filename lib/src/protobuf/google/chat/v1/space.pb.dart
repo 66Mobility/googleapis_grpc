@@ -36,34 +36,42 @@ class Space_SpaceDetails extends $pb.GeneratedMessage {
     return $result;
   }
   Space_SpaceDetails._() : super();
-  factory Space_SpaceDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Space_SpaceDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Space_SpaceDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Space_SpaceDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Space.SpaceDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Space.SpaceDetails',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'description')
     ..aOS(2, _omitFieldNames ? '' : 'guidelines')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Space_SpaceDetails clone() => Space_SpaceDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Space_SpaceDetails copyWith(void Function(Space_SpaceDetails) updates) => super.copyWith((message) => updates(message as Space_SpaceDetails)) as Space_SpaceDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Space_SpaceDetails copyWith(void Function(Space_SpaceDetails) updates) =>
+      super.copyWith((message) => updates(message as Space_SpaceDetails))
+          as Space_SpaceDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Space_SpaceDetails create() => Space_SpaceDetails._();
   Space_SpaceDetails createEmptyInstance() => create();
-  static $pb.PbList<Space_SpaceDetails> createRepeated() => $pb.PbList<Space_SpaceDetails>();
+  static $pb.PbList<Space_SpaceDetails> createRepeated() =>
+      $pb.PbList<Space_SpaceDetails>();
   @$core.pragma('dart2js:noInline')
-  static Space_SpaceDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space_SpaceDetails>(create);
+  static Space_SpaceDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Space_SpaceDetails>(create);
   static Space_SpaceDetails? _defaultInstance;
 
   ///  Optional. A description of the space. For example, describe the space's
@@ -73,7 +81,10 @@ class Space_SpaceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get description => $_getSZ(0);
   @$pb.TagNumber(1)
-  set description($core.String v) { $_setString(0, v); }
+  set description($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,7 +96,10 @@ class Space_SpaceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get guidelines => $_getSZ(1);
   @$pb.TagNumber(2)
-  set guidelines($core.String v) { $_setString(1, v); }
+  set guidelines($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGuidelines() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,34 +122,46 @@ class Space_MembershipCount extends $pb.GeneratedMessage {
     return $result;
   }
   Space_MembershipCount._() : super();
-  factory Space_MembershipCount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Space_MembershipCount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Space_MembershipCount.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Space_MembershipCount.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Space.MembershipCount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'joinedDirectHumanUserCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'joinedGroupCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Space.MembershipCount',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'joinedDirectHumanUserCount',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'joinedGroupCount', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Space_MembershipCount clone() => Space_MembershipCount()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Space_MembershipCount copyWith(void Function(Space_MembershipCount) updates) => super.copyWith((message) => updates(message as Space_MembershipCount)) as Space_MembershipCount;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Space_MembershipCount clone() =>
+      Space_MembershipCount()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Space_MembershipCount copyWith(
+          void Function(Space_MembershipCount) updates) =>
+      super.copyWith((message) => updates(message as Space_MembershipCount))
+          as Space_MembershipCount;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Space_MembershipCount create() => Space_MembershipCount._();
   Space_MembershipCount createEmptyInstance() => create();
-  static $pb.PbList<Space_MembershipCount> createRepeated() => $pb.PbList<Space_MembershipCount>();
+  static $pb.PbList<Space_MembershipCount> createRepeated() =>
+      $pb.PbList<Space_MembershipCount>();
   @$core.pragma('dart2js:noInline')
-  static Space_MembershipCount getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space_MembershipCount>(create);
+  static Space_MembershipCount getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Space_MembershipCount>(create);
   static Space_MembershipCount? _defaultInstance;
 
   /// Count of human users that have directly joined the space, not counting
@@ -143,7 +169,10 @@ class Space_MembershipCount extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get joinedDirectHumanUserCount => $_getIZ(0);
   @$pb.TagNumber(4)
-  set joinedDirectHumanUserCount($core.int v) { $_setSignedInt32(0, v); }
+  set joinedDirectHumanUserCount($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasJoinedDirectHumanUserCount() => $_has(0);
   @$pb.TagNumber(4)
@@ -153,7 +182,10 @@ class Space_MembershipCount extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get joinedGroupCount => $_getIZ(1);
   @$pb.TagNumber(5)
-  set joinedGroupCount($core.int v) { $_setSignedInt32(1, v); }
+  set joinedGroupCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasJoinedGroupCount() => $_has(1);
   @$pb.TagNumber(5)
@@ -177,41 +209,58 @@ class Space_AccessSettings extends $pb.GeneratedMessage {
     return $result;
   }
   Space_AccessSettings._() : super();
-  factory Space_AccessSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Space_AccessSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Space_AccessSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Space_AccessSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Space.AccessSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..e<Space_AccessSettings_AccessState>(1, _omitFieldNames ? '' : 'accessState', $pb.PbFieldType.OE, defaultOrMaker: Space_AccessSettings_AccessState.ACCESS_STATE_UNSPECIFIED, valueOf: Space_AccessSettings_AccessState.valueOf, enumValues: Space_AccessSettings_AccessState.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Space.AccessSettings',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..e<Space_AccessSettings_AccessState>(
+        1, _omitFieldNames ? '' : 'accessState', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Space_AccessSettings_AccessState.ACCESS_STATE_UNSPECIFIED,
+        valueOf: Space_AccessSettings_AccessState.valueOf,
+        enumValues: Space_AccessSettings_AccessState.values)
     ..aOS(3, _omitFieldNames ? '' : 'audience')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Space_AccessSettings clone() => Space_AccessSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Space_AccessSettings copyWith(void Function(Space_AccessSettings) updates) => super.copyWith((message) => updates(message as Space_AccessSettings)) as Space_AccessSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Space_AccessSettings clone() =>
+      Space_AccessSettings()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Space_AccessSettings copyWith(void Function(Space_AccessSettings) updates) =>
+      super.copyWith((message) => updates(message as Space_AccessSettings))
+          as Space_AccessSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Space_AccessSettings create() => Space_AccessSettings._();
   Space_AccessSettings createEmptyInstance() => create();
-  static $pb.PbList<Space_AccessSettings> createRepeated() => $pb.PbList<Space_AccessSettings>();
+  static $pb.PbList<Space_AccessSettings> createRepeated() =>
+      $pb.PbList<Space_AccessSettings>();
   @$core.pragma('dart2js:noInline')
-  static Space_AccessSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space_AccessSettings>(create);
+  static Space_AccessSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Space_AccessSettings>(create);
   static Space_AccessSettings? _defaultInstance;
 
   /// Output only. Indicates the access state of the space.
   @$pb.TagNumber(1)
   Space_AccessSettings_AccessState get accessState => $_getN(0);
   @$pb.TagNumber(1)
-  set accessState(Space_AccessSettings_AccessState v) { setField(1, v); }
+  set accessState(Space_AccessSettings_AccessState v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAccessState() => $_has(0);
   @$pb.TagNumber(1)
@@ -230,7 +279,10 @@ class Space_AccessSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get audience => $_getSZ(1);
   @$pb.TagNumber(3)
-  set audience($core.String v) { $_setString(1, v); }
+  set audience($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAudience() => $_has(1);
   @$pb.TagNumber(3)
@@ -242,12 +294,10 @@ class Space_AccessSettings extends $pb.GeneratedMessage {
 class Space extends $pb.GeneratedMessage {
   factory Space({
     $core.String? name,
-  @$core.Deprecated('This field is deprecated.')
-    Space_Type? type,
+    @$core.Deprecated('This field is deprecated.') Space_Type? type,
     $core.String? displayName,
     $core.bool? singleUserBotDm,
-  @$core.Deprecated('This field is deprecated.')
-    $core.bool? threaded,
+    @$core.Deprecated('This field is deprecated.') $core.bool? threaded,
     $core.bool? externalUserAllowed,
     Space_SpaceThreadingState? spaceThreadingState,
     Space_SpaceType? spaceType,
@@ -318,40 +368,66 @@ class Space extends $pb.GeneratedMessage {
     return $result;
   }
   Space._() : super();
-  factory Space.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Space.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Space.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Space.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Space', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Space',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<Space_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Space_Type.TYPE_UNSPECIFIED, valueOf: Space_Type.valueOf, enumValues: Space_Type.values)
+    ..e<Space_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: Space_Type.TYPE_UNSPECIFIED,
+        valueOf: Space_Type.valueOf,
+        enumValues: Space_Type.values)
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOB(4, _omitFieldNames ? '' : 'singleUserBotDm')
     ..aOB(5, _omitFieldNames ? '' : 'threaded')
     ..aOB(8, _omitFieldNames ? '' : 'externalUserAllowed')
-    ..e<Space_SpaceThreadingState>(9, _omitFieldNames ? '' : 'spaceThreadingState', $pb.PbFieldType.OE, defaultOrMaker: Space_SpaceThreadingState.SPACE_THREADING_STATE_UNSPECIFIED, valueOf: Space_SpaceThreadingState.valueOf, enumValues: Space_SpaceThreadingState.values)
-    ..e<Space_SpaceType>(10, _omitFieldNames ? '' : 'spaceType', $pb.PbFieldType.OE, defaultOrMaker: Space_SpaceType.SPACE_TYPE_UNSPECIFIED, valueOf: Space_SpaceType.valueOf, enumValues: Space_SpaceType.values)
-    ..aOM<Space_SpaceDetails>(11, _omitFieldNames ? '' : 'spaceDetails', subBuilder: Space_SpaceDetails.create)
-    ..e<$409.HistoryState>(13, _omitFieldNames ? '' : 'spaceHistoryState', $pb.PbFieldType.OE, defaultOrMaker: $409.HistoryState.HISTORY_STATE_UNSPECIFIED, valueOf: $409.HistoryState.valueOf, enumValues: $409.HistoryState.values)
+    ..e<Space_SpaceThreadingState>(
+        9, _omitFieldNames ? '' : 'spaceThreadingState', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Space_SpaceThreadingState.SPACE_THREADING_STATE_UNSPECIFIED,
+        valueOf: Space_SpaceThreadingState.valueOf,
+        enumValues: Space_SpaceThreadingState.values)
+    ..e<Space_SpaceType>(
+        10, _omitFieldNames ? '' : 'spaceType', $pb.PbFieldType.OE,
+        defaultOrMaker: Space_SpaceType.SPACE_TYPE_UNSPECIFIED,
+        valueOf: Space_SpaceType.valueOf,
+        enumValues: Space_SpaceType.values)
+    ..aOM<Space_SpaceDetails>(11, _omitFieldNames ? '' : 'spaceDetails',
+        subBuilder: Space_SpaceDetails.create)
+    ..e<$409.HistoryState>(
+        13, _omitFieldNames ? '' : 'spaceHistoryState', $pb.PbFieldType.OE,
+        defaultOrMaker: $409.HistoryState.HISTORY_STATE_UNSPECIFIED,
+        valueOf: $409.HistoryState.valueOf,
+        enumValues: $409.HistoryState.values)
     ..aOB(16, _omitFieldNames ? '' : 'importMode')
-    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'lastActiveTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'lastActiveTime',
+        subBuilder: $302.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'adminInstalled')
-    ..aOM<Space_MembershipCount>(20, _omitFieldNames ? '' : 'membershipCount', subBuilder: Space_MembershipCount.create)
-    ..aOM<Space_AccessSettings>(23, _omitFieldNames ? '' : 'accessSettings', subBuilder: Space_AccessSettings.create)
+    ..aOM<Space_MembershipCount>(20, _omitFieldNames ? '' : 'membershipCount',
+        subBuilder: Space_MembershipCount.create)
+    ..aOM<Space_AccessSettings>(23, _omitFieldNames ? '' : 'accessSettings',
+        subBuilder: Space_AccessSettings.create)
     ..aOS(25, _omitFieldNames ? '' : 'spaceUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Space clone() => Space()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Space copyWith(void Function(Space) updates) => super.copyWith((message) => updates(message as Space)) as Space;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Space copyWith(void Function(Space) updates) =>
+      super.copyWith((message) => updates(message as Space)) as Space;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -360,7 +436,8 @@ class Space extends $pb.GeneratedMessage {
   Space createEmptyInstance() => create();
   static $pb.PbList<Space> createRepeated() => $pb.PbList<Space>();
   @$core.pragma('dart2js:noInline')
-  static Space getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space>(create);
+  static Space getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space>(create);
   static Space? _defaultInstance;
 
   ///  Resource name of the space.
@@ -369,7 +446,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -382,7 +462,10 @@ class Space extends $pb.GeneratedMessage {
   Space_Type get type => $_getN(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set type(Space_Type v) { setField(2, v); }
+  set type(Space_Type v) {
+    setField(2, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
@@ -403,7 +486,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -414,7 +500,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get singleUserBotDm => $_getBF(3);
   @$pb.TagNumber(4)
-  set singleUserBotDm($core.bool v) { $_setBool(3, v); }
+  set singleUserBotDm($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSingleUserBotDm() => $_has(3);
   @$pb.TagNumber(4)
@@ -427,7 +516,10 @@ class Space extends $pb.GeneratedMessage {
   $core.bool get threaded => $_getBF(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set threaded($core.bool v) { $_setBool(4, v); }
+  set threaded($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasThreaded() => $_has(4);
@@ -456,7 +548,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get externalUserAllowed => $_getBF(5);
   @$pb.TagNumber(8)
-  set externalUserAllowed($core.bool v) { $_setBool(5, v); }
+  set externalUserAllowed($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasExternalUserAllowed() => $_has(5);
   @$pb.TagNumber(8)
@@ -466,7 +561,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Space_SpaceThreadingState get spaceThreadingState => $_getN(6);
   @$pb.TagNumber(9)
-  set spaceThreadingState(Space_SpaceThreadingState v) { setField(9, v); }
+  set spaceThreadingState(Space_SpaceThreadingState v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSpaceThreadingState() => $_has(6);
   @$pb.TagNumber(9)
@@ -477,7 +575,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Space_SpaceType get spaceType => $_getN(7);
   @$pb.TagNumber(10)
-  set spaceType(Space_SpaceType v) { setField(10, v); }
+  set spaceType(Space_SpaceType v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasSpaceType() => $_has(7);
   @$pb.TagNumber(10)
@@ -487,7 +588,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Space_SpaceDetails get spaceDetails => $_getN(8);
   @$pb.TagNumber(11)
-  set spaceDetails(Space_SpaceDetails v) { setField(11, v); }
+  set spaceDetails(Space_SpaceDetails v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasSpaceDetails() => $_has(8);
   @$pb.TagNumber(11)
@@ -499,7 +603,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $409.HistoryState get spaceHistoryState => $_getN(9);
   @$pb.TagNumber(13)
-  set spaceHistoryState($409.HistoryState v) { setField(13, v); }
+  set spaceHistoryState($409.HistoryState v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasSpaceHistoryState() => $_has(9);
   @$pb.TagNumber(13)
@@ -511,7 +618,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool get importMode => $_getBF(10);
   @$pb.TagNumber(16)
-  set importMode($core.bool v) { $_setBool(10, v); }
+  set importMode($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasImportMode() => $_has(10);
   @$pb.TagNumber(16)
@@ -528,7 +638,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $302.Timestamp get createTime => $_getN(11);
   @$pb.TagNumber(17)
-  set createTime($302.Timestamp v) { setField(17, v); }
+  set createTime($302.Timestamp v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasCreateTime() => $_has(11);
   @$pb.TagNumber(17)
@@ -540,7 +653,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $302.Timestamp get lastActiveTime => $_getN(12);
   @$pb.TagNumber(18)
-  set lastActiveTime($302.Timestamp v) { setField(18, v); }
+  set lastActiveTime($302.Timestamp v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasLastActiveTime() => $_has(12);
   @$pb.TagNumber(18)
@@ -557,7 +673,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.bool get adminInstalled => $_getBF(13);
   @$pb.TagNumber(19)
-  set adminInstalled($core.bool v) { $_setBool(13, v); }
+  set adminInstalled($core.bool v) {
+    $_setBool(13, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasAdminInstalled() => $_has(13);
   @$pb.TagNumber(19)
@@ -569,7 +688,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   Space_MembershipCount get membershipCount => $_getN(14);
   @$pb.TagNumber(20)
-  set membershipCount(Space_MembershipCount v) { setField(20, v); }
+  set membershipCount(Space_MembershipCount v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasMembershipCount() => $_has(14);
   @$pb.TagNumber(20)
@@ -583,7 +705,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   Space_AccessSettings get accessSettings => $_getN(15);
   @$pb.TagNumber(23)
-  set accessSettings(Space_AccessSettings v) { setField(23, v); }
+  set accessSettings(Space_AccessSettings v) {
+    setField(23, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasAccessSettings() => $_has(15);
   @$pb.TagNumber(23)
@@ -595,7 +720,10 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.String get spaceUri => $_getSZ(16);
   @$pb.TagNumber(25)
-  set spaceUri($core.String v) { $_setString(16, v); }
+  set spaceUri($core.String v) {
+    $_setString(16, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasSpaceUri() => $_has(16);
   @$pb.TagNumber(25)
@@ -618,34 +746,42 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateSpaceRequest._() : super();
-  factory CreateSpaceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateSpaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateSpaceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateSpaceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateSpaceRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOM<Space>(1, _omitFieldNames ? '' : 'space', subBuilder: Space.create)
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateSpaceRequest clone() => CreateSpaceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateSpaceRequest copyWith(void Function(CreateSpaceRequest) updates) => super.copyWith((message) => updates(message as CreateSpaceRequest)) as CreateSpaceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateSpaceRequest copyWith(void Function(CreateSpaceRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateSpaceRequest))
+          as CreateSpaceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateSpaceRequest create() => CreateSpaceRequest._();
   CreateSpaceRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateSpaceRequest> createRepeated() => $pb.PbList<CreateSpaceRequest>();
+  static $pb.PbList<CreateSpaceRequest> createRepeated() =>
+      $pb.PbList<CreateSpaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateSpaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateSpaceRequest>(create);
+  static CreateSpaceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateSpaceRequest>(create);
   static CreateSpaceRequest? _defaultInstance;
 
   ///  Required. The `displayName` and `spaceType` fields must be populated.  Only
@@ -660,7 +796,10 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Space get space => $_getN(0);
   @$pb.TagNumber(1)
-  set space(Space v) { setField(1, v); }
+  set space(Space v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSpace() => $_has(0);
   @$pb.TagNumber(1)
@@ -677,7 +816,10 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get requestId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set requestId($core.String v) { $_setString(1, v); }
+  set requestId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRequestId() => $_has(1);
   @$pb.TagNumber(2)
@@ -704,35 +846,43 @@ class ListSpacesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListSpacesRequest._() : super();
-  factory ListSpacesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListSpacesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListSpacesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListSpacesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSpacesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListSpacesRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
     ..aOS(3, _omitFieldNames ? '' : 'filter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListSpacesRequest clone() => ListSpacesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListSpacesRequest copyWith(void Function(ListSpacesRequest) updates) => super.copyWith((message) => updates(message as ListSpacesRequest)) as ListSpacesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListSpacesRequest copyWith(void Function(ListSpacesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListSpacesRequest))
+          as ListSpacesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListSpacesRequest create() => ListSpacesRequest._();
   ListSpacesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListSpacesRequest> createRepeated() => $pb.PbList<ListSpacesRequest>();
+  static $pb.PbList<ListSpacesRequest> createRepeated() =>
+      $pb.PbList<ListSpacesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListSpacesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSpacesRequest>(create);
+  static ListSpacesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListSpacesRequest>(create);
   static ListSpacesRequest? _defaultInstance;
 
   ///  Optional. The maximum number of spaces to return. The service might return
@@ -747,7 +897,10 @@ class ListSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get pageSize => $_getIZ(0);
   @$pb.TagNumber(1)
-  set pageSize($core.int v) { $_setSignedInt32(0, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPageSize() => $_has(0);
   @$pb.TagNumber(1)
@@ -761,7 +914,10 @@ class ListSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -789,7 +945,10 @@ class ListSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get filter => $_getSZ(2);
   @$pb.TagNumber(3)
-  set filter($core.String v) { $_setString(2, v); }
+  set filter($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFilter() => $_has(2);
   @$pb.TagNumber(3)
@@ -812,34 +971,43 @@ class ListSpacesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListSpacesResponse._() : super();
-  factory ListSpacesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListSpacesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListSpacesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListSpacesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSpacesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..pc<Space>(1, _omitFieldNames ? '' : 'spaces', $pb.PbFieldType.PM, subBuilder: Space.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListSpacesResponse',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..pc<Space>(1, _omitFieldNames ? '' : 'spaces', $pb.PbFieldType.PM,
+        subBuilder: Space.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListSpacesResponse clone() => ListSpacesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListSpacesResponse copyWith(void Function(ListSpacesResponse) updates) => super.copyWith((message) => updates(message as ListSpacesResponse)) as ListSpacesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListSpacesResponse copyWith(void Function(ListSpacesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListSpacesResponse))
+          as ListSpacesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListSpacesResponse create() => ListSpacesResponse._();
   ListSpacesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListSpacesResponse> createRepeated() => $pb.PbList<ListSpacesResponse>();
+  static $pb.PbList<ListSpacesResponse> createRepeated() =>
+      $pb.PbList<ListSpacesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListSpacesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSpacesResponse>(create);
+  static ListSpacesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListSpacesResponse>(create);
   static ListSpacesResponse? _defaultInstance;
 
   /// List of spaces in the requested (or first) page.
@@ -851,7 +1019,10 @@ class ListSpacesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -874,34 +1045,42 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetSpaceRequest._() : super();
-  factory GetSpaceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetSpaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetSpaceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetSpaceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetSpaceRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetSpaceRequest clone() => GetSpaceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetSpaceRequest copyWith(void Function(GetSpaceRequest) updates) => super.copyWith((message) => updates(message as GetSpaceRequest)) as GetSpaceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetSpaceRequest copyWith(void Function(GetSpaceRequest) updates) =>
+      super.copyWith((message) => updates(message as GetSpaceRequest))
+          as GetSpaceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetSpaceRequest create() => GetSpaceRequest._();
   GetSpaceRequest createEmptyInstance() => create();
-  static $pb.PbList<GetSpaceRequest> createRepeated() => $pb.PbList<GetSpaceRequest>();
+  static $pb.PbList<GetSpaceRequest> createRepeated() =>
+      $pb.PbList<GetSpaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetSpaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetSpaceRequest>(create);
+  static GetSpaceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetSpaceRequest>(create);
   static GetSpaceRequest? _defaultInstance;
 
   ///  Required. Resource name of the space, in the form `spaces/{space}`.
@@ -910,7 +1089,10 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -928,7 +1110,10 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get useAdminAccess => $_getBF(1);
   @$pb.TagNumber(2)
-  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUseAdminAccess() => $_has(1);
   @$pb.TagNumber(2)
@@ -947,33 +1132,43 @@ class FindDirectMessageRequest extends $pb.GeneratedMessage {
     return $result;
   }
   FindDirectMessageRequest._() : super();
-  factory FindDirectMessageRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FindDirectMessageRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FindDirectMessageRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FindDirectMessageRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FindDirectMessageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FindDirectMessageRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  FindDirectMessageRequest clone() => FindDirectMessageRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FindDirectMessageRequest copyWith(void Function(FindDirectMessageRequest) updates) => super.copyWith((message) => updates(message as FindDirectMessageRequest)) as FindDirectMessageRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FindDirectMessageRequest clone() =>
+      FindDirectMessageRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FindDirectMessageRequest copyWith(
+          void Function(FindDirectMessageRequest) updates) =>
+      super.copyWith((message) => updates(message as FindDirectMessageRequest))
+          as FindDirectMessageRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FindDirectMessageRequest create() => FindDirectMessageRequest._();
   FindDirectMessageRequest createEmptyInstance() => create();
-  static $pb.PbList<FindDirectMessageRequest> createRepeated() => $pb.PbList<FindDirectMessageRequest>();
+  static $pb.PbList<FindDirectMessageRequest> createRepeated() =>
+      $pb.PbList<FindDirectMessageRequest>();
   @$core.pragma('dart2js:noInline')
-  static FindDirectMessageRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FindDirectMessageRequest>(create);
+  static FindDirectMessageRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FindDirectMessageRequest>(create);
   static FindDirectMessageRequest? _defaultInstance;
 
   ///  Required. Resource name of the user to find direct message with.
@@ -992,7 +1187,10 @@ class FindDirectMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1019,35 +1217,44 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateSpaceRequest._() : super();
-  factory UpdateSpaceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateSpaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateSpaceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateSpaceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateSpaceRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOM<Space>(1, _omitFieldNames ? '' : 'space', subBuilder: Space.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateSpaceRequest clone() => UpdateSpaceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateSpaceRequest copyWith(void Function(UpdateSpaceRequest) updates) => super.copyWith((message) => updates(message as UpdateSpaceRequest)) as UpdateSpaceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateSpaceRequest copyWith(void Function(UpdateSpaceRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateSpaceRequest))
+          as UpdateSpaceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateSpaceRequest create() => UpdateSpaceRequest._();
   UpdateSpaceRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateSpaceRequest> createRepeated() => $pb.PbList<UpdateSpaceRequest>();
+  static $pb.PbList<UpdateSpaceRequest> createRepeated() =>
+      $pb.PbList<UpdateSpaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateSpaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateSpaceRequest>(create);
+  static UpdateSpaceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateSpaceRequest>(create);
   static UpdateSpaceRequest? _defaultInstance;
 
   /// Required. Space with fields to be updated. `Space.name` must be
@@ -1056,7 +1263,10 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Space get space => $_getN(0);
   @$pb.TagNumber(1)
-  set space(Space v) { setField(1, v); }
+  set space(Space v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSpace() => $_has(0);
   @$pb.TagNumber(1)
@@ -1118,7 +1328,10 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -1141,7 +1354,10 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get useAdminAccess => $_getBF(2);
   @$pb.TagNumber(3)
-  set useAdminAccess($core.bool v) { $_setBool(2, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUseAdminAccess() => $_has(2);
   @$pb.TagNumber(3)
@@ -1176,37 +1392,45 @@ class SearchSpacesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchSpacesRequest._() : super();
-  factory SearchSpacesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchSpacesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchSpacesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchSpacesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchSpacesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchSpacesRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'useAdminAccess')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'query')
     ..aOS(5, _omitFieldNames ? '' : 'orderBy')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchSpacesRequest clone() => SearchSpacesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchSpacesRequest copyWith(void Function(SearchSpacesRequest) updates) => super.copyWith((message) => updates(message as SearchSpacesRequest)) as SearchSpacesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchSpacesRequest copyWith(void Function(SearchSpacesRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchSpacesRequest))
+          as SearchSpacesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchSpacesRequest create() => SearchSpacesRequest._();
   SearchSpacesRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchSpacesRequest> createRepeated() => $pb.PbList<SearchSpacesRequest>();
+  static $pb.PbList<SearchSpacesRequest> createRepeated() =>
+      $pb.PbList<SearchSpacesRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchSpacesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchSpacesRequest>(create);
+  static SearchSpacesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchSpacesRequest>(create);
   static SearchSpacesRequest? _defaultInstance;
 
   ///  When `true`, the method runs using the user's Google Workspace
@@ -1225,7 +1449,10 @@ class SearchSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get useAdminAccess => $_getBF(0);
   @$pb.TagNumber(1)
-  set useAdminAccess($core.bool v) { $_setBool(0, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUseAdminAccess() => $_has(0);
   @$pb.TagNumber(1)
@@ -1241,7 +1468,10 @@ class SearchSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -1256,7 +1486,10 @@ class SearchSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -1333,7 +1566,10 @@ class SearchSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get query => $_getSZ(3);
   @$pb.TagNumber(4)
-  set query($core.String v) { $_setString(3, v); }
+  set query($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasQuery() => $_has(3);
   @$pb.TagNumber(4)
@@ -1366,7 +1602,10 @@ class SearchSpacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get orderBy => $_getSZ(4);
   @$pb.TagNumber(5)
-  set orderBy($core.String v) { $_setString(4, v); }
+  set orderBy($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOrderBy() => $_has(4);
   @$pb.TagNumber(5)
@@ -1393,35 +1632,45 @@ class SearchSpacesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchSpacesResponse._() : super();
-  factory SearchSpacesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchSpacesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchSpacesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchSpacesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchSpacesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..pc<Space>(1, _omitFieldNames ? '' : 'spaces', $pb.PbFieldType.PM, subBuilder: Space.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchSpacesResponse',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..pc<Space>(1, _omitFieldNames ? '' : 'spaces', $pb.PbFieldType.PM,
+        subBuilder: Space.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchSpacesResponse clone() => SearchSpacesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchSpacesResponse copyWith(void Function(SearchSpacesResponse) updates) => super.copyWith((message) => updates(message as SearchSpacesResponse)) as SearchSpacesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchSpacesResponse clone() =>
+      SearchSpacesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchSpacesResponse copyWith(void Function(SearchSpacesResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchSpacesResponse))
+          as SearchSpacesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchSpacesResponse create() => SearchSpacesResponse._();
   SearchSpacesResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchSpacesResponse> createRepeated() => $pb.PbList<SearchSpacesResponse>();
+  static $pb.PbList<SearchSpacesResponse> createRepeated() =>
+      $pb.PbList<SearchSpacesResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchSpacesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchSpacesResponse>(create);
+  static SearchSpacesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchSpacesResponse>(create);
   static SearchSpacesResponse? _defaultInstance;
 
   /// A page of the requested spaces.
@@ -1433,7 +1682,10 @@ class SearchSpacesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1444,7 +1696,10 @@ class SearchSpacesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get totalSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set totalSize($core.int v) { $_setSignedInt32(2, v); }
+  set totalSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTotalSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1467,34 +1722,42 @@ class DeleteSpaceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteSpaceRequest._() : super();
-  factory DeleteSpaceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteSpaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteSpaceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteSpaceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteSpaceRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteSpaceRequest clone() => DeleteSpaceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteSpaceRequest copyWith(void Function(DeleteSpaceRequest) updates) => super.copyWith((message) => updates(message as DeleteSpaceRequest)) as DeleteSpaceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteSpaceRequest copyWith(void Function(DeleteSpaceRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteSpaceRequest))
+          as DeleteSpaceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteSpaceRequest create() => DeleteSpaceRequest._();
   DeleteSpaceRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteSpaceRequest> createRepeated() => $pb.PbList<DeleteSpaceRequest>();
+  static $pb.PbList<DeleteSpaceRequest> createRepeated() =>
+      $pb.PbList<DeleteSpaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteSpaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteSpaceRequest>(create);
+  static DeleteSpaceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteSpaceRequest>(create);
   static DeleteSpaceRequest? _defaultInstance;
 
   ///  Required. Resource name of the space to delete.
@@ -1503,7 +1766,10 @@ class DeleteSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1521,7 +1787,10 @@ class DeleteSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get useAdminAccess => $_getBF(1);
   @$pb.TagNumber(2)
-  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUseAdminAccess() => $_has(1);
   @$pb.TagNumber(2)
@@ -1540,33 +1809,44 @@ class CompleteImportSpaceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CompleteImportSpaceRequest._() : super();
-  factory CompleteImportSpaceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CompleteImportSpaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CompleteImportSpaceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CompleteImportSpaceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompleteImportSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CompleteImportSpaceRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CompleteImportSpaceRequest clone() => CompleteImportSpaceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CompleteImportSpaceRequest copyWith(void Function(CompleteImportSpaceRequest) updates) => super.copyWith((message) => updates(message as CompleteImportSpaceRequest)) as CompleteImportSpaceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CompleteImportSpaceRequest clone() =>
+      CompleteImportSpaceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CompleteImportSpaceRequest copyWith(
+          void Function(CompleteImportSpaceRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CompleteImportSpaceRequest))
+          as CompleteImportSpaceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CompleteImportSpaceRequest create() => CompleteImportSpaceRequest._();
   CompleteImportSpaceRequest createEmptyInstance() => create();
-  static $pb.PbList<CompleteImportSpaceRequest> createRepeated() => $pb.PbList<CompleteImportSpaceRequest>();
+  static $pb.PbList<CompleteImportSpaceRequest> createRepeated() =>
+      $pb.PbList<CompleteImportSpaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static CompleteImportSpaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompleteImportSpaceRequest>(create);
+  static CompleteImportSpaceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CompleteImportSpaceRequest>(create);
   static CompleteImportSpaceRequest? _defaultInstance;
 
   ///  Required. Resource name of the import mode space.
@@ -1575,7 +1855,10 @@ class CompleteImportSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1594,40 +1877,55 @@ class CompleteImportSpaceResponse extends $pb.GeneratedMessage {
     return $result;
   }
   CompleteImportSpaceResponse._() : super();
-  factory CompleteImportSpaceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CompleteImportSpaceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CompleteImportSpaceResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CompleteImportSpaceResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompleteImportSpaceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CompleteImportSpaceResponse',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOM<Space>(1, _omitFieldNames ? '' : 'space', subBuilder: Space.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CompleteImportSpaceResponse clone() => CompleteImportSpaceResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CompleteImportSpaceResponse copyWith(void Function(CompleteImportSpaceResponse) updates) => super.copyWith((message) => updates(message as CompleteImportSpaceResponse)) as CompleteImportSpaceResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CompleteImportSpaceResponse clone() =>
+      CompleteImportSpaceResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CompleteImportSpaceResponse copyWith(
+          void Function(CompleteImportSpaceResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as CompleteImportSpaceResponse))
+          as CompleteImportSpaceResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CompleteImportSpaceResponse create() => CompleteImportSpaceResponse._();
+  static CompleteImportSpaceResponse create() =>
+      CompleteImportSpaceResponse._();
   CompleteImportSpaceResponse createEmptyInstance() => create();
-  static $pb.PbList<CompleteImportSpaceResponse> createRepeated() => $pb.PbList<CompleteImportSpaceResponse>();
+  static $pb.PbList<CompleteImportSpaceResponse> createRepeated() =>
+      $pb.PbList<CompleteImportSpaceResponse>();
   @$core.pragma('dart2js:noInline')
-  static CompleteImportSpaceResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompleteImportSpaceResponse>(create);
+  static CompleteImportSpaceResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CompleteImportSpaceResponse>(create);
   static CompleteImportSpaceResponse? _defaultInstance;
 
   /// The import mode space.
   @$pb.TagNumber(1)
   Space get space => $_getN(0);
   @$pb.TagNumber(1)
-  set space(Space v) { setField(1, v); }
+  set space(Space v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSpace() => $_has(0);
   @$pb.TagNumber(1)
@@ -1636,6 +1934,6 @@ class CompleteImportSpaceResponse extends $pb.GeneratedMessage {
   Space ensureSpace() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

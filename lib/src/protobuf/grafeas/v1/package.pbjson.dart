@@ -33,8 +33,22 @@ const Distribution$json = {
   '1': 'Distribution',
   '2': [
     {'1': 'cpe_uri', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'cpeUri'},
-    {'1': 'architecture', '3': 2, '4': 1, '5': 14, '6': '.grafeas.v1.Architecture', '10': 'architecture'},
-    {'1': 'latest_version', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.Version', '10': 'latestVersion'},
+    {
+      '1': 'architecture',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.Architecture',
+      '10': 'architecture'
+    },
+    {
+      '1': 'latest_version',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Version',
+      '10': 'latestVersion'
+    },
     {'1': 'maintainer', '3': 4, '4': 1, '5': 9, '10': 'maintainer'},
     {'1': 'url', '3': 5, '4': 1, '5': 9, '10': 'url'},
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
@@ -54,7 +68,14 @@ const Location$json = {
   '1': 'Location',
   '2': [
     {'1': 'cpe_uri', '3': 1, '4': 1, '5': 9, '10': 'cpeUri'},
-    {'1': 'version', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Version', '10': 'version'},
+    {
+      '1': 'version',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Version',
+      '10': 'version'
+    },
     {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
   ],
 };
@@ -69,16 +90,51 @@ const PackageNote$json = {
   '1': 'PackageNote',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'distribution', '3': 10, '4': 3, '5': 11, '6': '.grafeas.v1.Distribution', '10': 'distribution'},
+    {
+      '1': 'distribution',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Distribution',
+      '10': 'distribution'
+    },
     {'1': 'package_type', '3': 11, '4': 1, '5': 9, '10': 'packageType'},
     {'1': 'cpe_uri', '3': 12, '4': 1, '5': 9, '10': 'cpeUri'},
-    {'1': 'architecture', '3': 13, '4': 1, '5': 14, '6': '.grafeas.v1.Architecture', '10': 'architecture'},
-    {'1': 'version', '3': 14, '4': 1, '5': 11, '6': '.grafeas.v1.Version', '10': 'version'},
+    {
+      '1': 'architecture',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.Architecture',
+      '10': 'architecture'
+    },
+    {
+      '1': 'version',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Version',
+      '10': 'version'
+    },
     {'1': 'maintainer', '3': 15, '4': 1, '5': 9, '10': 'maintainer'},
     {'1': 'url', '3': 16, '4': 1, '5': 9, '10': 'url'},
     {'1': 'description', '3': 17, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'license', '3': 18, '4': 1, '5': 11, '6': '.grafeas.v1.License', '10': 'license'},
-    {'1': 'digest', '3': 19, '4': 3, '5': 11, '6': '.grafeas.v1.Digest', '10': 'digest'},
+    {
+      '1': 'license',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.License',
+      '10': 'license'
+    },
+    {
+      '1': 'digest',
+      '3': 19,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Digest',
+      '10': 'digest'
+    },
   ],
 };
 
@@ -99,12 +155,42 @@ const PackageOccurrence$json = {
   '1': 'PackageOccurrence',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'location', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.Location', '10': 'location'},
+    {
+      '1': 'location',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Location',
+      '10': 'location'
+    },
     {'1': 'package_type', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'packageType'},
     {'1': 'cpe_uri', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'cpeUri'},
-    {'1': 'architecture', '3': 5, '4': 1, '5': 14, '6': '.grafeas.v1.Architecture', '8': {}, '10': 'architecture'},
-    {'1': 'license', '3': 6, '4': 1, '5': 11, '6': '.grafeas.v1.License', '10': 'license'},
-    {'1': 'version', '3': 7, '4': 1, '5': 11, '6': '.grafeas.v1.Version', '8': {}, '10': 'version'},
+    {
+      '1': 'architecture',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.Architecture',
+      '8': {},
+      '10': 'architecture'
+    },
+    {
+      '1': 'license',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.License',
+      '10': 'license'
+    },
+    {
+      '1': 'version',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Version',
+      '8': {},
+      '10': 'version'
+    },
   ],
 };
 
@@ -125,7 +211,14 @@ const Version$json = {
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'revision', '3': 3, '4': 1, '5': 9, '10': 'revision'},
     {'1': 'inclusive', '3': 6, '4': 1, '5': 8, '10': 'inclusive'},
-    {'1': 'kind', '3': 4, '4': 1, '5': 14, '6': '.grafeas.v1.Version.VersionKind', '10': 'kind'},
+    {
+      '1': 'kind',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.Version.VersionKind',
+      '10': 'kind'
+    },
     {'1': 'full_name', '3': 5, '4': 1, '5': 9, '10': 'fullName'},
   ],
   '4': [Version_VersionKind$json],
@@ -149,4 +242,3 @@ final $typed_data.Uint8List versionDescriptor = $convert.base64Decode(
     'CgRraW5kGAQgASgOMh8uZ3JhZmVhcy52MS5WZXJzaW9uLlZlcnNpb25LaW5kUgRraW5kEhsKCW'
     'Z1bGxfbmFtZRgFIAEoCVIIZnVsbE5hbWUiUQoLVmVyc2lvbktpbmQSHAoYVkVSU0lPTl9LSU5E'
     'X1VOU1BFQ0lGSUVEEAASCgoGTk9STUFMEAESCwoHTUlOSU1VTRACEgsKB01BWElNVU0QAw==');
-

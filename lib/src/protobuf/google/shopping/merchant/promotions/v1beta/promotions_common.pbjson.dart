@@ -107,36 +107,243 @@ final $typed_data.Uint8List couponValueTypeDescriptor = $convert.base64Decode(
 const Attributes$json = {
   '1': 'Attributes',
   '2': [
-    {'1': 'product_applicability', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.merchant.promotions.v1beta.ProductApplicability', '8': {}, '10': 'productApplicability'},
-    {'1': 'offer_type', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.promotions.v1beta.OfferType', '8': {}, '10': 'offerType'},
-    {'1': 'generic_redemption_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'genericRedemptionCode'},
+    {
+      '1': 'product_applicability',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.promotions.v1beta.ProductApplicability',
+      '8': {},
+      '10': 'productApplicability'
+    },
+    {
+      '1': 'offer_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.promotions.v1beta.OfferType',
+      '8': {},
+      '10': 'offerType'
+    },
+    {
+      '1': 'generic_redemption_code',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'genericRedemptionCode'
+    },
     {'1': 'long_title', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'longTitle'},
-    {'1': 'coupon_value_type', '3': 5, '4': 1, '5': 14, '6': '.google.shopping.merchant.promotions.v1beta.CouponValueType', '8': {}, '10': 'couponValueType'},
-    {'1': 'promotion_destinations', '3': 6, '4': 3, '5': 14, '6': '.google.shopping.type.Destination.DestinationEnum', '8': {}, '10': 'promotionDestinations'},
-    {'1': 'item_id_inclusion', '3': 7, '4': 3, '5': 9, '8': {}, '10': 'itemIdInclusion'},
-    {'1': 'brand_inclusion', '3': 8, '4': 3, '5': 9, '8': {}, '10': 'brandInclusion'},
-    {'1': 'item_group_id_inclusion', '3': 9, '4': 3, '5': 9, '8': {}, '10': 'itemGroupIdInclusion'},
-    {'1': 'product_type_inclusion', '3': 10, '4': 3, '5': 9, '8': {}, '10': 'productTypeInclusion'},
-    {'1': 'item_id_exclusion', '3': 11, '4': 3, '5': 9, '8': {}, '10': 'itemIdExclusion'},
-    {'1': 'brand_exclusion', '3': 12, '4': 3, '5': 9, '8': {}, '10': 'brandExclusion'},
-    {'1': 'item_group_id_exclusion', '3': 13, '4': 3, '5': 9, '8': {}, '10': 'itemGroupIdExclusion'},
-    {'1': 'product_type_exclusion', '3': 14, '4': 3, '5': 9, '8': {}, '10': 'productTypeExclusion'},
-    {'1': 'minimum_purchase_amount', '3': 15, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '8': {}, '10': 'minimumPurchaseAmount'},
-    {'1': 'minimum_purchase_quantity', '3': 16, '4': 1, '5': 3, '8': {}, '10': 'minimumPurchaseQuantity'},
-    {'1': 'limit_quantity', '3': 17, '4': 1, '5': 3, '8': {}, '10': 'limitQuantity'},
-    {'1': 'limit_value', '3': 18, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '8': {}, '10': 'limitValue'},
+    {
+      '1': 'coupon_value_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.promotions.v1beta.CouponValueType',
+      '8': {},
+      '10': 'couponValueType'
+    },
+    {
+      '1': 'promotion_destinations',
+      '3': 6,
+      '4': 3,
+      '5': 14,
+      '6': '.google.shopping.type.Destination.DestinationEnum',
+      '8': {},
+      '10': 'promotionDestinations'
+    },
+    {
+      '1': 'item_id_inclusion',
+      '3': 7,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'itemIdInclusion'
+    },
+    {
+      '1': 'brand_inclusion',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'brandInclusion'
+    },
+    {
+      '1': 'item_group_id_inclusion',
+      '3': 9,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'itemGroupIdInclusion'
+    },
+    {
+      '1': 'product_type_inclusion',
+      '3': 10,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'productTypeInclusion'
+    },
+    {
+      '1': 'item_id_exclusion',
+      '3': 11,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'itemIdExclusion'
+    },
+    {
+      '1': 'brand_exclusion',
+      '3': 12,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'brandExclusion'
+    },
+    {
+      '1': 'item_group_id_exclusion',
+      '3': 13,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'itemGroupIdExclusion'
+    },
+    {
+      '1': 'product_type_exclusion',
+      '3': 14,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'productTypeExclusion'
+    },
+    {
+      '1': 'minimum_purchase_amount',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '8': {},
+      '10': 'minimumPurchaseAmount'
+    },
+    {
+      '1': 'minimum_purchase_quantity',
+      '3': 16,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'minimumPurchaseQuantity'
+    },
+    {
+      '1': 'limit_quantity',
+      '3': 17,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'limitQuantity'
+    },
+    {
+      '1': 'limit_value',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '8': {},
+      '10': 'limitValue'
+    },
     {'1': 'percent_off', '3': 19, '4': 1, '5': 3, '8': {}, '10': 'percentOff'},
-    {'1': 'money_off_amount', '3': 20, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '8': {}, '10': 'moneyOffAmount'},
-    {'1': 'get_this_quantity_discounted', '3': 21, '4': 1, '5': 3, '8': {}, '10': 'getThisQuantityDiscounted'},
-    {'1': 'free_gift_value', '3': 22, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '8': {}, '10': 'freeGiftValue'},
-    {'1': 'free_gift_description', '3': 23, '4': 1, '5': 9, '8': {}, '10': 'freeGiftDescription'},
-    {'1': 'free_gift_item_id', '3': 24, '4': 1, '5': 9, '8': {}, '10': 'freeGiftItemId'},
-    {'1': 'promotion_effective_time_period', '3': 25, '4': 1, '5': 11, '6': '.google.type.Interval', '8': {}, '10': 'promotionEffectiveTimePeriod'},
-    {'1': 'promotion_display_time_period', '3': 26, '4': 1, '5': 11, '6': '.google.type.Interval', '8': {}, '10': 'promotionDisplayTimePeriod'},
-    {'1': 'store_applicability', '3': 28, '4': 1, '5': 14, '6': '.google.shopping.merchant.promotions.v1beta.StoreApplicability', '8': {}, '10': 'storeApplicability'},
-    {'1': 'store_codes_inclusion', '3': 29, '4': 3, '5': 9, '8': {}, '10': 'storeCodesInclusion'},
-    {'1': 'store_codes_exclusion', '3': 30, '4': 3, '5': 9, '8': {}, '10': 'storeCodesExclusion'},
-    {'1': 'promotion_url', '3': 31, '4': 1, '5': 9, '8': {}, '10': 'promotionUrl'},
+    {
+      '1': 'money_off_amount',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '8': {},
+      '10': 'moneyOffAmount'
+    },
+    {
+      '1': 'get_this_quantity_discounted',
+      '3': 21,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'getThisQuantityDiscounted'
+    },
+    {
+      '1': 'free_gift_value',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '8': {},
+      '10': 'freeGiftValue'
+    },
+    {
+      '1': 'free_gift_description',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'freeGiftDescription'
+    },
+    {
+      '1': 'free_gift_item_id',
+      '3': 24,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'freeGiftItemId'
+    },
+    {
+      '1': 'promotion_effective_time_period',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Interval',
+      '8': {},
+      '10': 'promotionEffectiveTimePeriod'
+    },
+    {
+      '1': 'promotion_display_time_period',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Interval',
+      '8': {},
+      '10': 'promotionDisplayTimePeriod'
+    },
+    {
+      '1': 'store_applicability',
+      '3': 28,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.promotions.v1beta.StoreApplicability',
+      '8': {},
+      '10': 'storeApplicability'
+    },
+    {
+      '1': 'store_codes_inclusion',
+      '3': 29,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'storeCodesInclusion'
+    },
+    {
+      '1': 'store_codes_exclusion',
+      '3': 30,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'storeCodesExclusion'
+    },
+    {
+      '1': 'promotion_url',
+      '3': 31,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'promotionUrl'
+    },
   ],
 };
 
@@ -185,20 +392,74 @@ final $typed_data.Uint8List attributesDescriptor = $convert.base64Decode(
 const PromotionStatus$json = {
   '1': 'PromotionStatus',
   '2': [
-    {'1': 'destination_statuses', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.promotions.v1beta.PromotionStatus.DestinationStatus', '8': {}, '10': 'destinationStatuses'},
-    {'1': 'item_level_issues', '3': 2, '4': 3, '5': 11, '6': '.google.shopping.merchant.promotions.v1beta.PromotionStatus.ItemLevelIssue', '8': {}, '10': 'itemLevelIssues'},
-    {'1': 'creation_date', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'creationDate'},
-    {'1': 'last_update_date', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'lastUpdateDate'},
+    {
+      '1': 'destination_statuses',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.promotions.v1beta.PromotionStatus.DestinationStatus',
+      '8': {},
+      '10': 'destinationStatuses'
+    },
+    {
+      '1': 'item_level_issues',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.promotions.v1beta.PromotionStatus.ItemLevelIssue',
+      '8': {},
+      '10': 'itemLevelIssues'
+    },
+    {
+      '1': 'creation_date',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'creationDate'
+    },
+    {
+      '1': 'last_update_date',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'lastUpdateDate'
+    },
   ],
-  '3': [PromotionStatus_DestinationStatus$json, PromotionStatus_ItemLevelIssue$json],
+  '3': [
+    PromotionStatus_DestinationStatus$json,
+    PromotionStatus_ItemLevelIssue$json
+  ],
 };
 
 @$core.Deprecated('Use promotionStatusDescriptor instead')
 const PromotionStatus_DestinationStatus$json = {
   '1': 'DestinationStatus',
   '2': [
-    {'1': 'reporting_context', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.type.ReportingContext.ReportingContextEnum', '8': {}, '10': 'reportingContext'},
-    {'1': 'status', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.promotions.v1beta.PromotionStatus.DestinationStatus.State', '8': {}, '10': 'status'},
+    {
+      '1': 'reporting_context',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.ReportingContext.ReportingContextEnum',
+      '8': {},
+      '10': 'reportingContext'
+    },
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.promotions.v1beta.PromotionStatus.DestinationStatus.State',
+      '8': {},
+      '10': 'status'
+    },
   ],
   '4': [PromotionStatus_DestinationStatus_State$json],
 };
@@ -222,14 +483,45 @@ const PromotionStatus_ItemLevelIssue$json = {
   '1': 'ItemLevelIssue',
   '2': [
     {'1': 'code', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'code'},
-    {'1': 'severity', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.promotions.v1beta.PromotionStatus.ItemLevelIssue.Severity', '8': {}, '10': 'severity'},
+    {
+      '1': 'severity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.promotions.v1beta.PromotionStatus.ItemLevelIssue.Severity',
+      '8': {},
+      '10': 'severity'
+    },
     {'1': 'resolution', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'resolution'},
     {'1': 'attribute', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'attribute'},
-    {'1': 'reporting_context', '3': 5, '4': 1, '5': 14, '6': '.google.shopping.type.ReportingContext.ReportingContextEnum', '8': {}, '10': 'reportingContext'},
+    {
+      '1': 'reporting_context',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.ReportingContext.ReportingContextEnum',
+      '8': {},
+      '10': 'reportingContext'
+    },
     {'1': 'description', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'description'},
     {'1': 'detail', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'detail'},
-    {'1': 'documentation', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'documentation'},
-    {'1': 'applicable_countries', '3': 9, '4': 3, '5': 9, '8': {}, '10': 'applicableCountries'},
+    {
+      '1': 'documentation',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'documentation'
+    },
+    {
+      '1': 'applicable_countries',
+      '3': 9,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'applicableCountries'
+    },
   ],
   '4': [PromotionStatus_ItemLevelIssue_Severity$json],
 };
@@ -272,4 +564,3 @@ final $typed_data.Uint8List promotionStatusDescriptor = $convert.base64Decode(
     'Ug1kb2N1bWVudGF0aW9uEjYKFGFwcGxpY2FibGVfY291bnRyaWVzGAkgAygJQgPgQQNSE2FwcG'
     'xpY2FibGVDb3VudHJpZXMiVAoIU2V2ZXJpdHkSGAoUU0VWRVJJVFlfVU5TUEVDSUZJRUQQABIQ'
     'CgxOT1RfSU1QQUNURUQQARILCgdERU1PVEVEEAISDwoLRElTQVBQUk9WRUQQAw==');
-

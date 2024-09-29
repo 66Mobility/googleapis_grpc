@@ -35,26 +35,39 @@ class Intent extends $pb.GeneratedMessage {
     return $result;
   }
   Intent._() : super();
-  factory Intent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Intent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Intent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Intent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Intent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Intent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..m<$core.String, IntentParameterValue>(2, _omitFieldNames ? '' : 'params', entryClassName: 'Intent.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: IntentParameterValue.create, valueDefaultOrMaker: IntentParameterValue.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2.conversation'))
+    ..m<$core.String, IntentParameterValue>(2, _omitFieldNames ? '' : 'params',
+        entryClassName: 'Intent.ParamsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: IntentParameterValue.create,
+        valueDefaultOrMaker: IntentParameterValue.getDefault,
+        packageName:
+            const $pb.PackageName('google.actions.sdk.v2.conversation'))
     ..aOS(3, _omitFieldNames ? '' : 'query')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Intent clone() => Intent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Intent copyWith(void Function(Intent) updates) => super.copyWith((message) => updates(message as Intent)) as Intent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Intent copyWith(void Function(Intent) updates) =>
+      super.copyWith((message) => updates(message as Intent)) as Intent;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -63,14 +76,18 @@ class Intent extends $pb.GeneratedMessage {
   Intent createEmptyInstance() => create();
   static $pb.PbList<Intent> createRepeated() => $pb.PbList<Intent>();
   @$core.pragma('dart2js:noInline')
-  static Intent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Intent>(create);
+  static Intent getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Intent>(create);
   static Intent? _defaultInstance;
 
   /// Required. The name of the last matched intent.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -88,7 +105,10 @@ class Intent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get query => $_getSZ(2);
   @$pb.TagNumber(3)
-  set query($core.String v) { $_setString(2, v); }
+  set query($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasQuery() => $_has(2);
   @$pb.TagNumber(3)
@@ -111,41 +131,55 @@ class IntentParameterValue extends $pb.GeneratedMessage {
     return $result;
   }
   IntentParameterValue._() : super();
-  factory IntentParameterValue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory IntentParameterValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory IntentParameterValue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IntentParameterValue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IntentParameterValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IntentParameterValue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'original')
-    ..aOM<$261.Value>(2, _omitFieldNames ? '' : 'resolved', subBuilder: $261.Value.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$261.Value>(2, _omitFieldNames ? '' : 'resolved',
+        subBuilder: $261.Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  IntentParameterValue clone() => IntentParameterValue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  IntentParameterValue copyWith(void Function(IntentParameterValue) updates) => super.copyWith((message) => updates(message as IntentParameterValue)) as IntentParameterValue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IntentParameterValue clone() =>
+      IntentParameterValue()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IntentParameterValue copyWith(void Function(IntentParameterValue) updates) =>
+      super.copyWith((message) => updates(message as IntentParameterValue))
+          as IntentParameterValue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static IntentParameterValue create() => IntentParameterValue._();
   IntentParameterValue createEmptyInstance() => create();
-  static $pb.PbList<IntentParameterValue> createRepeated() => $pb.PbList<IntentParameterValue>();
+  static $pb.PbList<IntentParameterValue> createRepeated() =>
+      $pb.PbList<IntentParameterValue>();
   @$core.pragma('dart2js:noInline')
-  static IntentParameterValue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IntentParameterValue>(create);
+  static IntentParameterValue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IntentParameterValue>(create);
   static IntentParameterValue? _defaultInstance;
 
   /// Required. Original text value extracted from user utterance.
   @$pb.TagNumber(1)
   $core.String get original => $_getSZ(0);
   @$pb.TagNumber(1)
-  set original($core.String v) { $_setString(0, v); }
+  set original($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOriginal() => $_has(0);
   @$pb.TagNumber(1)
@@ -158,7 +192,10 @@ class IntentParameterValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $261.Value get resolved => $_getN(1);
   @$pb.TagNumber(2)
-  set resolved($261.Value v) { setField(2, v); }
+  set resolved($261.Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResolved() => $_has(1);
   @$pb.TagNumber(2)
@@ -167,6 +204,6 @@ class IntentParameterValue extends $pb.GeneratedMessage {
   $261.Value ensureResolved() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

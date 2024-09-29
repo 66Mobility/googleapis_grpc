@@ -18,14 +18,45 @@ const VulnerabilityAssessmentNote$json = {
   '1': 'VulnerabilityAssessmentNote',
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'short_description', '3': 2, '4': 1, '5': 9, '10': 'shortDescription'},
+    {
+      '1': 'short_description',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'shortDescription'
+    },
     {'1': 'long_description', '3': 3, '4': 1, '5': 9, '10': 'longDescription'},
     {'1': 'language_code', '3': 4, '4': 1, '5': 9, '10': 'languageCode'},
-    {'1': 'publisher', '3': 5, '4': 1, '5': 11, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Publisher', '10': 'publisher'},
-    {'1': 'product', '3': 6, '4': 1, '5': 11, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Product', '10': 'product'},
-    {'1': 'assessment', '3': 7, '4': 1, '5': 11, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment', '10': 'assessment'},
+    {
+      '1': 'publisher',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityAssessmentNote.Publisher',
+      '10': 'publisher'
+    },
+    {
+      '1': 'product',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityAssessmentNote.Product',
+      '10': 'product'
+    },
+    {
+      '1': 'assessment',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment',
+      '10': 'assessment'
+    },
   ],
-  '3': [VulnerabilityAssessmentNote_Publisher$json, VulnerabilityAssessmentNote_Product$json, VulnerabilityAssessmentNote_Assessment$json],
+  '3': [
+    VulnerabilityAssessmentNote_Publisher$json,
+    VulnerabilityAssessmentNote_Product$json,
+    VulnerabilityAssessmentNote_Assessment$json
+  ],
 };
 
 @$core.Deprecated('Use vulnerabilityAssessmentNoteDescriptor instead')
@@ -33,8 +64,20 @@ const VulnerabilityAssessmentNote_Publisher$json = {
   '1': 'Publisher',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'issuing_authority', '3': 2, '4': 1, '5': 9, '10': 'issuingAuthority'},
-    {'1': 'publisher_namespace', '3': 3, '4': 1, '5': 9, '10': 'publisherNamespace'},
+    {
+      '1': 'issuing_authority',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'issuingAuthority'
+    },
+    {
+      '1': 'publisher_namespace',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'publisherNamespace'
+    },
   ],
 };
 
@@ -64,15 +107,52 @@ const VulnerabilityAssessmentNote_Assessment$json = {
       '10': 'cve',
     },
     {'1': 'vulnerability_id', '3': 9, '4': 1, '5': 9, '10': 'vulnerabilityId'},
-    {'1': 'short_description', '3': 2, '4': 1, '5': 9, '10': 'shortDescription'},
+    {
+      '1': 'short_description',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'shortDescription'
+    },
     {'1': 'long_description', '3': 3, '4': 1, '5': 9, '10': 'longDescription'},
-    {'1': 'related_uris', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.RelatedUrl', '10': 'relatedUris'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.State', '10': 'state'},
+    {
+      '1': 'related_uris',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.RelatedUrl',
+      '10': 'relatedUris'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.State',
+      '10': 'state'
+    },
     {'1': 'impacts', '3': 6, '4': 3, '5': 9, '10': 'impacts'},
-    {'1': 'justification', '3': 7, '4': 1, '5': 11, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Justification', '10': 'justification'},
-    {'1': 'remediations', '3': 8, '4': 3, '5': 11, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Remediation', '10': 'remediations'},
+    {
+      '1': 'justification',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Justification',
+      '10': 'justification'
+    },
+    {
+      '1': 'remediations',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Remediation',
+      '10': 'remediations'
+    },
   ],
-  '3': [VulnerabilityAssessmentNote_Assessment_Justification$json, VulnerabilityAssessmentNote_Assessment_Remediation$json],
+  '3': [
+    VulnerabilityAssessmentNote_Assessment_Justification$json,
+    VulnerabilityAssessmentNote_Assessment_Remediation$json
+  ],
   '4': [VulnerabilityAssessmentNote_Assessment_State$json],
 };
 
@@ -80,14 +160,25 @@ const VulnerabilityAssessmentNote_Assessment$json = {
 const VulnerabilityAssessmentNote_Assessment_Justification$json = {
   '1': 'Justification',
   '2': [
-    {'1': 'justification_type', '3': 1, '4': 1, '5': 14, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Justification.JustificationType', '10': 'justificationType'},
+    {
+      '1': 'justification_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Justification.JustificationType',
+      '10': 'justificationType'
+    },
     {'1': 'details', '3': 2, '4': 1, '5': 9, '10': 'details'},
   ],
-  '4': [VulnerabilityAssessmentNote_Assessment_Justification_JustificationType$json],
+  '4': [
+    VulnerabilityAssessmentNote_Assessment_Justification_JustificationType$json
+  ],
 };
 
 @$core.Deprecated('Use vulnerabilityAssessmentNoteDescriptor instead')
-const VulnerabilityAssessmentNote_Assessment_Justification_JustificationType$json = {
+const VulnerabilityAssessmentNote_Assessment_Justification_JustificationType$json =
+    {
   '1': 'JustificationType',
   '2': [
     {'1': 'JUSTIFICATION_TYPE_UNSPECIFIED', '2': 0},
@@ -103,15 +194,33 @@ const VulnerabilityAssessmentNote_Assessment_Justification_JustificationType$jso
 const VulnerabilityAssessmentNote_Assessment_Remediation$json = {
   '1': 'Remediation',
   '2': [
-    {'1': 'remediation_type', '3': 1, '4': 1, '5': 14, '6': '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Remediation.RemediationType', '10': 'remediationType'},
+    {
+      '1': 'remediation_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.grafeas.v1.VulnerabilityAssessmentNote.Assessment.Remediation.RemediationType',
+      '10': 'remediationType'
+    },
     {'1': 'details', '3': 2, '4': 1, '5': 9, '10': 'details'},
-    {'1': 'remediation_uri', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.RelatedUrl', '10': 'remediationUri'},
+    {
+      '1': 'remediation_uri',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.RelatedUrl',
+      '10': 'remediationUri'
+    },
   ],
-  '4': [VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType$json],
+  '4': [
+    VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType$json
+  ],
 };
 
 @$core.Deprecated('Use vulnerabilityAssessmentNoteDescriptor instead')
-const VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType$json = {
+const VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType$json =
+    {
   '1': 'RemediationType',
   '2': [
     {'1': 'REMEDIATION_TYPE_UNSPECIFIED', '2': 0},
@@ -175,4 +284,3 @@ final $typed_data.Uint8List vulnerabilityAssessmentNoteDescriptor = $convert.bas
     'ADEg4KClZFTkRPUl9GSVgQBBIOCgpXT1JLQVJPVU5EEAUiYgoFU3RhdGUSFQoRU1RBVEVfVU5T'
     'UEVDSUZJRUQQABIMCghBRkZFQ1RFRBABEhAKDE5PVF9BRkZFQ1RFRBACEgkKBUZJWEVEEAMSFw'
     'oTVU5ERVJfSU5WRVNUSUdBVElPThAE');
-

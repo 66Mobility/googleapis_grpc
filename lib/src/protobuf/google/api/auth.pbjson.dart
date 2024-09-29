@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Authentication$json = {
   '1': 'Authentication',
   '2': [
-    {'1': 'rules', '3': 3, '4': 3, '5': 11, '6': '.google.api.AuthenticationRule', '10': 'rules'},
-    {'1': 'providers', '3': 4, '4': 3, '5': 11, '6': '.google.api.AuthProvider', '10': 'providers'},
+    {
+      '1': 'rules',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.AuthenticationRule',
+      '10': 'rules'
+    },
+    {
+      '1': 'providers',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.AuthProvider',
+      '10': 'providers'
+    },
   ],
 };
 
@@ -33,9 +47,29 @@ const AuthenticationRule$json = {
   '1': 'AuthenticationRule',
   '2': [
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
-    {'1': 'oauth', '3': 2, '4': 1, '5': 11, '6': '.google.api.OAuthRequirements', '10': 'oauth'},
-    {'1': 'allow_without_credential', '3': 5, '4': 1, '5': 8, '10': 'allowWithoutCredential'},
-    {'1': 'requirements', '3': 7, '4': 3, '5': 11, '6': '.google.api.AuthRequirement', '10': 'requirements'},
+    {
+      '1': 'oauth',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.OAuthRequirements',
+      '10': 'oauth'
+    },
+    {
+      '1': 'allow_without_credential',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'allowWithoutCredential'
+    },
+    {
+      '1': 'requirements',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.AuthRequirement',
+      '10': 'requirements'
+    },
   ],
 };
 
@@ -75,8 +109,21 @@ const AuthProvider$json = {
     {'1': 'issuer', '3': 2, '4': 1, '5': 9, '10': 'issuer'},
     {'1': 'jwks_uri', '3': 3, '4': 1, '5': 9, '10': 'jwksUri'},
     {'1': 'audiences', '3': 4, '4': 1, '5': 9, '10': 'audiences'},
-    {'1': 'authorization_url', '3': 5, '4': 1, '5': 9, '10': 'authorizationUrl'},
-    {'1': 'jwt_locations', '3': 6, '4': 3, '5': 11, '6': '.google.api.JwtLocation', '10': 'jwtLocations'},
+    {
+      '1': 'authorization_url',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'authorizationUrl'
+    },
+    {
+      '1': 'jwt_locations',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.JwtLocation',
+      '10': 'jwtLocations'
+    },
   ],
 };
 
@@ -113,4 +160,3 @@ const AuthRequirement$json = {
 final $typed_data.Uint8List authRequirementDescriptor = $convert.base64Decode(
     'Cg9BdXRoUmVxdWlyZW1lbnQSHwoLcHJvdmlkZXJfaWQYASABKAlSCnByb3ZpZGVySWQSHAoJYX'
     'VkaWVuY2VzGAIgASgJUglhdWRpZW5jZXM=');
-

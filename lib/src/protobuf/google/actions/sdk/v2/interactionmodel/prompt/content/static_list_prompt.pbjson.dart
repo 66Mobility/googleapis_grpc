@@ -19,7 +19,16 @@ const StaticListPrompt$json = {
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'subtitle'},
-    {'1': 'items', '3': 3, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticListPrompt.ListItem', '8': {}, '10': 'items'},
+    {
+      '1': 'items',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticListPrompt.ListItem',
+      '8': {},
+      '10': 'items'
+    },
   ],
   '3': [StaticListPrompt_ListItem$json],
 };
@@ -31,7 +40,15 @@ const StaticListPrompt_ListItem$json = {
     {'1': 'key', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'key'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'title'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'description'},
-    {'1': 'image', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt', '8': {}, '10': 'image'},
+    {
+      '1': 'image',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt',
+      '8': {},
+      '10': 'image'
+    },
   ],
 };
 
@@ -44,4 +61,3 @@ final $typed_data.Uint8List staticListPromptDescriptor = $convert.base64Decode(
     'bGUYAiABKAlCA+BBAlIFdGl0bGUSJQoLZGVzY3JpcHRpb24YAyABKAlCA+BBAVILZGVzY3JpcH'
     'Rpb24SWwoFaW1hZ2UYBCABKAsyQC5nb29nbGUuYWN0aW9ucy5zZGsudjIuaW50ZXJhY3Rpb25t'
     'b2RlbC5wcm9tcHQuU3RhdGljSW1hZ2VQcm9tcHRCA+BBAVIFaW1hZ2U=');
-

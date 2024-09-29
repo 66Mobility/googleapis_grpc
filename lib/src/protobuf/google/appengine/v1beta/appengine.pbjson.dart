@@ -23,8 +23,8 @@ const VersionView$json = {
 };
 
 /// Descriptor for `VersionView`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List versionViewDescriptor = $convert.base64Decode(
-    'CgtWZXJzaW9uVmlldxIJCgVCQVNJQxAAEggKBEZVTEwQAQ==');
+final $typed_data.Uint8List versionViewDescriptor =
+    $convert.base64Decode('CgtWZXJzaW9uVmlldxIJCgVCQVNJQxAAEggKBEZVTEwQAQ==');
 
 @$core.Deprecated('Use authorizedCertificateViewDescriptor instead')
 const AuthorizedCertificateView$json = {
@@ -36,9 +36,10 @@ const AuthorizedCertificateView$json = {
 };
 
 /// Descriptor for `AuthorizedCertificateView`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List authorizedCertificateViewDescriptor = $convert.base64Decode(
-    'ChlBdXRob3JpemVkQ2VydGlmaWNhdGVWaWV3EhUKEUJBU0lDX0NFUlRJRklDQVRFEAASFAoQRl'
-    'VMTF9DRVJUSUZJQ0FURRAB');
+final $typed_data.Uint8List authorizedCertificateViewDescriptor =
+    $convert.base64Decode(
+        'ChlBdXRob3JpemVkQ2VydGlmaWNhdGVWaWV3EhUKEUJBU0lDX0NFUlRJRklDQVRFEAASFAoQRl'
+        'VMTF9DRVJUSUZJQ0FURRAB');
 
 @$core.Deprecated('Use domainOverrideStrategyDescriptor instead')
 const DomainOverrideStrategy$json = {
@@ -51,9 +52,10 @@ const DomainOverrideStrategy$json = {
 };
 
 /// Descriptor for `DomainOverrideStrategy`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List domainOverrideStrategyDescriptor = $convert.base64Decode(
-    'ChZEb21haW5PdmVycmlkZVN0cmF0ZWd5EigKJFVOU1BFQ0lGSUVEX0RPTUFJTl9PVkVSUklERV'
-    '9TVFJBVEVHWRAAEgoKBlNUUklDVBABEgwKCE9WRVJSSURFEAI=');
+final $typed_data.Uint8List domainOverrideStrategyDescriptor =
+    $convert.base64Decode(
+        'ChZEb21haW5PdmVycmlkZVN0cmF0ZWd5EigKJFVOU1BFQ0lGSUVEX0RPTUFJTl9PVkVSUklERV'
+        '9TVFJBVEVHWRAAEgoKBlNUUklDVBABEgwKCE9WRVJSSURFEAI=');
 
 @$core.Deprecated('Use getApplicationRequestDescriptor instead')
 const GetApplicationRequest$json = {
@@ -64,29 +66,52 @@ const GetApplicationRequest$json = {
 };
 
 /// Descriptor for `GetApplicationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getApplicationRequestDescriptor = $convert.base64Decode(
-    'ChVHZXRBcHBsaWNhdGlvblJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List getApplicationRequestDescriptor =
+    $convert.base64Decode(
+        'ChVHZXRBcHBsaWNhdGlvblJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use createApplicationRequestDescriptor instead')
 const CreateApplicationRequest$json = {
   '1': 'CreateApplicationRequest',
   '2': [
-    {'1': 'application', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Application', '10': 'application'},
+    {
+      '1': 'application',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Application',
+      '10': 'application'
+    },
   ],
 };
 
 /// Descriptor for `CreateApplicationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createApplicationRequestDescriptor = $convert.base64Decode(
-    'ChhDcmVhdGVBcHBsaWNhdGlvblJlcXVlc3QSRgoLYXBwbGljYXRpb24YAiABKAsyJC5nb29nbG'
-    'UuYXBwZW5naW5lLnYxYmV0YS5BcHBsaWNhdGlvblILYXBwbGljYXRpb24=');
+final $typed_data.Uint8List createApplicationRequestDescriptor =
+    $convert.base64Decode(
+        'ChhDcmVhdGVBcHBsaWNhdGlvblJlcXVlc3QSRgoLYXBwbGljYXRpb24YAiABKAsyJC5nb29nbG'
+        'UuYXBwZW5naW5lLnYxYmV0YS5BcHBsaWNhdGlvblILYXBwbGljYXRpb24=');
 
 @$core.Deprecated('Use updateApplicationRequestDescriptor instead')
 const UpdateApplicationRequest$json = {
   '1': 'UpdateApplicationRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'application', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Application', '10': 'application'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'application',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Application',
+      '10': 'application'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -106,8 +131,9 @@ const RepairApplicationRequest$json = {
 };
 
 /// Descriptor for `RepairApplicationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List repairApplicationRequestDescriptor = $convert.base64Decode(
-    'ChhSZXBhaXJBcHBsaWNhdGlvblJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List repairApplicationRequestDescriptor =
+    $convert.base64Decode(
+        'ChhSZXBhaXJBcHBsaWNhdGlvblJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use listServicesRequestDescriptor instead')
 const ListServicesRequest$json = {
@@ -128,7 +154,14 @@ final $typed_data.Uint8List listServicesRequestDescriptor = $convert.base64Decod
 const ListServicesResponse$json = {
   '1': 'ListServicesResponse',
   '2': [
-    {'1': 'services', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Service', '10': 'services'},
+    {
+      '1': 'services',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Service',
+      '10': 'services'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -148,16 +181,30 @@ const GetServiceRequest$json = {
 };
 
 /// Descriptor for `GetServiceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getServiceRequestDescriptor = $convert.base64Decode(
-    'ChFHZXRTZXJ2aWNlUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List getServiceRequestDescriptor = $convert
+    .base64Decode('ChFHZXRTZXJ2aWNlUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use updateServiceRequestDescriptor instead')
 const UpdateServiceRequest$json = {
   '1': 'UpdateServiceRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'service', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Service', '10': 'service'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'service',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Service',
+      '10': 'service'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'migrate_traffic', '3': 4, '4': 1, '5': 8, '10': 'migrateTraffic'},
   ],
 };
@@ -178,15 +225,22 @@ const DeleteServiceRequest$json = {
 };
 
 /// Descriptor for `DeleteServiceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteServiceRequestDescriptor = $convert.base64Decode(
-    'ChREZWxldGVTZXJ2aWNlUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List deleteServiceRequestDescriptor = $convert
+    .base64Decode('ChREZWxldGVTZXJ2aWNlUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use listVersionsRequestDescriptor instead')
 const ListVersionsRequest$json = {
   '1': 'ListVersionsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.appengine.v1beta.VersionView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.VersionView',
+      '10': 'view'
+    },
     {'1': 'page_size', '3': 3, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 4, '4': 1, '5': 9, '10': 'pageToken'},
   ],
@@ -202,7 +256,14 @@ final $typed_data.Uint8List listVersionsRequestDescriptor = $convert.base64Decod
 const ListVersionsResponse$json = {
   '1': 'ListVersionsResponse',
   '2': [
-    {'1': 'versions', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Version', '10': 'versions'},
+    {
+      '1': 'versions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Version',
+      '10': 'versions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -218,7 +279,14 @@ const GetVersionRequest$json = {
   '1': 'GetVersionRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.appengine.v1beta.VersionView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.VersionView',
+      '10': 'view'
+    },
   ],
 };
 
@@ -232,7 +300,14 @@ const CreateVersionRequest$json = {
   '1': 'CreateVersionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'version', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Version', '10': 'version'},
+    {
+      '1': 'version',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Version',
+      '10': 'version'
+    },
   ],
 };
 
@@ -246,8 +321,22 @@ const UpdateVersionRequest$json = {
   '1': 'UpdateVersionRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'version', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Version', '10': 'version'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'version',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Version',
+      '10': 'version'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -266,8 +355,8 @@ const DeleteVersionRequest$json = {
 };
 
 /// Descriptor for `DeleteVersionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteVersionRequestDescriptor = $convert.base64Decode(
-    'ChREZWxldGVWZXJzaW9uUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List deleteVersionRequestDescriptor = $convert
+    .base64Decode('ChREZWxldGVWZXJzaW9uUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use listInstancesRequestDescriptor instead')
 const ListInstancesRequest$json = {
@@ -288,7 +377,14 @@ final $typed_data.Uint8List listInstancesRequestDescriptor = $convert.base64Deco
 const ListInstancesResponse$json = {
   '1': 'ListInstancesResponse',
   '2': [
-    {'1': 'instances', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Instance', '10': 'instances'},
+    {
+      '1': 'instances',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Instance',
+      '10': 'instances'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -308,8 +404,8 @@ const GetInstanceRequest$json = {
 };
 
 /// Descriptor for `GetInstanceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getInstanceRequestDescriptor = $convert.base64Decode(
-    'ChJHZXRJbnN0YW5jZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List getInstanceRequestDescriptor = $convert
+    .base64Decode('ChJHZXRJbnN0YW5jZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use deleteInstanceRequestDescriptor instead')
 const DeleteInstanceRequest$json = {
@@ -320,8 +416,9 @@ const DeleteInstanceRequest$json = {
 };
 
 /// Descriptor for `DeleteInstanceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteInstanceRequestDescriptor = $convert.base64Decode(
-    'ChVEZWxldGVJbnN0YW5jZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List deleteInstanceRequestDescriptor =
+    $convert.base64Decode(
+        'ChVEZWxldGVJbnN0YW5jZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use debugInstanceRequestDescriptor instead')
 const DebugInstanceRequest$json = {
@@ -358,7 +455,14 @@ final $typed_data.Uint8List listIngressRulesRequestDescriptor = $convert.base64D
 const ListIngressRulesResponse$json = {
   '1': 'ListIngressRulesResponse',
   '2': [
-    {'1': 'ingress_rules', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.FirewallRule', '10': 'ingressRules'},
+    {
+      '1': 'ingress_rules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.FirewallRule',
+      '10': 'ingressRules'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -374,35 +478,58 @@ const BatchUpdateIngressRulesRequest$json = {
   '1': 'BatchUpdateIngressRulesRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'ingress_rules', '3': 2, '4': 3, '5': 11, '6': '.google.appengine.v1beta.FirewallRule', '10': 'ingressRules'},
+    {
+      '1': 'ingress_rules',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.FirewallRule',
+      '10': 'ingressRules'
+    },
   ],
 };
 
 /// Descriptor for `BatchUpdateIngressRulesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchUpdateIngressRulesRequestDescriptor = $convert.base64Decode(
-    'Ch5CYXRjaFVwZGF0ZUluZ3Jlc3NSdWxlc1JlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZRJKCg'
-    '1pbmdyZXNzX3J1bGVzGAIgAygLMiUuZ29vZ2xlLmFwcGVuZ2luZS52MWJldGEuRmlyZXdhbGxS'
-    'dWxlUgxpbmdyZXNzUnVsZXM=');
+final $typed_data.Uint8List batchUpdateIngressRulesRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5CYXRjaFVwZGF0ZUluZ3Jlc3NSdWxlc1JlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZRJKCg'
+        '1pbmdyZXNzX3J1bGVzGAIgAygLMiUuZ29vZ2xlLmFwcGVuZ2luZS52MWJldGEuRmlyZXdhbGxS'
+        'dWxlUgxpbmdyZXNzUnVsZXM=');
 
 @$core.Deprecated('Use batchUpdateIngressRulesResponseDescriptor instead')
 const BatchUpdateIngressRulesResponse$json = {
   '1': 'BatchUpdateIngressRulesResponse',
   '2': [
-    {'1': 'ingress_rules', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.FirewallRule', '10': 'ingressRules'},
+    {
+      '1': 'ingress_rules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.FirewallRule',
+      '10': 'ingressRules'
+    },
   ],
 };
 
 /// Descriptor for `BatchUpdateIngressRulesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchUpdateIngressRulesResponseDescriptor = $convert.base64Decode(
-    'Ch9CYXRjaFVwZGF0ZUluZ3Jlc3NSdWxlc1Jlc3BvbnNlEkoKDWluZ3Jlc3NfcnVsZXMYASADKA'
-    'syJS5nb29nbGUuYXBwZW5naW5lLnYxYmV0YS5GaXJld2FsbFJ1bGVSDGluZ3Jlc3NSdWxlcw==');
+final $typed_data.Uint8List batchUpdateIngressRulesResponseDescriptor =
+    $convert.base64Decode(
+        'Ch9CYXRjaFVwZGF0ZUluZ3Jlc3NSdWxlc1Jlc3BvbnNlEkoKDWluZ3Jlc3NfcnVsZXMYASADKA'
+        'syJS5nb29nbGUuYXBwZW5naW5lLnYxYmV0YS5GaXJld2FsbFJ1bGVSDGluZ3Jlc3NSdWxlcw==');
 
 @$core.Deprecated('Use createIngressRuleRequestDescriptor instead')
 const CreateIngressRuleRequest$json = {
   '1': 'CreateIngressRuleRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'rule', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.FirewallRule', '10': 'rule'},
+    {
+      '1': 'rule',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.FirewallRule',
+      '10': 'rule'
+    },
   ],
 };
 
@@ -420,16 +547,31 @@ const GetIngressRuleRequest$json = {
 };
 
 /// Descriptor for `GetIngressRuleRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getIngressRuleRequestDescriptor = $convert.base64Decode(
-    'ChVHZXRJbmdyZXNzUnVsZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List getIngressRuleRequestDescriptor =
+    $convert.base64Decode(
+        'ChVHZXRJbmdyZXNzUnVsZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use updateIngressRuleRequestDescriptor instead')
 const UpdateIngressRuleRequest$json = {
   '1': 'UpdateIngressRuleRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'rule', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.FirewallRule', '10': 'rule'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'rule',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.FirewallRule',
+      '10': 'rule'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -449,8 +591,9 @@ const DeleteIngressRuleRequest$json = {
 };
 
 /// Descriptor for `DeleteIngressRuleRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteIngressRuleRequestDescriptor = $convert.base64Decode(
-    'ChhEZWxldGVJbmdyZXNzUnVsZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List deleteIngressRuleRequestDescriptor =
+    $convert.base64Decode(
+        'ChhEZWxldGVJbmdyZXNzUnVsZVJlcXVlc3QSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use listAuthorizedDomainsRequestDescriptor instead')
 const ListAuthorizedDomainsRequest$json = {
@@ -463,105 +606,161 @@ const ListAuthorizedDomainsRequest$json = {
 };
 
 /// Descriptor for `ListAuthorizedDomainsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAuthorizedDomainsRequestDescriptor = $convert.base64Decode(
-    'ChxMaXN0QXV0aG9yaXplZERvbWFpbnNSZXF1ZXN0EhYKBnBhcmVudBgBIAEoCVIGcGFyZW50Eh'
-    'sKCXBhZ2Vfc2l6ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZVRv'
-    'a2Vu');
+final $typed_data.Uint8List listAuthorizedDomainsRequestDescriptor =
+    $convert.base64Decode(
+        'ChxMaXN0QXV0aG9yaXplZERvbWFpbnNSZXF1ZXN0EhYKBnBhcmVudBgBIAEoCVIGcGFyZW50Eh'
+        'sKCXBhZ2Vfc2l6ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZVRv'
+        'a2Vu');
 
 @$core.Deprecated('Use listAuthorizedDomainsResponseDescriptor instead')
 const ListAuthorizedDomainsResponse$json = {
   '1': 'ListAuthorizedDomainsResponse',
   '2': [
-    {'1': 'domains', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.AuthorizedDomain', '10': 'domains'},
+    {
+      '1': 'domains',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.AuthorizedDomain',
+      '10': 'domains'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListAuthorizedDomainsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAuthorizedDomainsResponseDescriptor = $convert.base64Decode(
-    'Ch1MaXN0QXV0aG9yaXplZERvbWFpbnNSZXNwb25zZRJDCgdkb21haW5zGAEgAygLMikuZ29vZ2'
-    'xlLmFwcGVuZ2luZS52MWJldGEuQXV0aG9yaXplZERvbWFpblIHZG9tYWlucxImCg9uZXh0X3Bh'
-    'Z2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List listAuthorizedDomainsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch1MaXN0QXV0aG9yaXplZERvbWFpbnNSZXNwb25zZRJDCgdkb21haW5zGAEgAygLMikuZ29vZ2'
+        'xlLmFwcGVuZ2luZS52MWJldGEuQXV0aG9yaXplZERvbWFpblIHZG9tYWlucxImCg9uZXh0X3Bh'
+        'Z2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use listAuthorizedCertificatesRequestDescriptor instead')
 const ListAuthorizedCertificatesRequest$json = {
   '1': 'ListAuthorizedCertificatesRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'view', '3': 4, '4': 1, '5': 14, '6': '.google.appengine.v1beta.AuthorizedCertificateView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.AuthorizedCertificateView',
+      '10': 'view'
+    },
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
   ],
 };
 
 /// Descriptor for `ListAuthorizedCertificatesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAuthorizedCertificatesRequestDescriptor = $convert.base64Decode(
-    'CiFMaXN0QXV0aG9yaXplZENlcnRpZmljYXRlc1JlcXVlc3QSFgoGcGFyZW50GAEgASgJUgZwYX'
-    'JlbnQSRgoEdmlldxgEIAEoDjIyLmdvb2dsZS5hcHBlbmdpbmUudjFiZXRhLkF1dGhvcml6ZWRD'
-    'ZXJ0aWZpY2F0ZVZpZXdSBHZpZXcSGwoJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYW'
-    'dlX3Rva2VuGAMgASgJUglwYWdlVG9rZW4=');
+final $typed_data.Uint8List listAuthorizedCertificatesRequestDescriptor =
+    $convert.base64Decode(
+        'CiFMaXN0QXV0aG9yaXplZENlcnRpZmljYXRlc1JlcXVlc3QSFgoGcGFyZW50GAEgASgJUgZwYX'
+        'JlbnQSRgoEdmlldxgEIAEoDjIyLmdvb2dsZS5hcHBlbmdpbmUudjFiZXRhLkF1dGhvcml6ZWRD'
+        'ZXJ0aWZpY2F0ZVZpZXdSBHZpZXcSGwoJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYW'
+        'dlX3Rva2VuGAMgASgJUglwYWdlVG9rZW4=');
 
 @$core.Deprecated('Use listAuthorizedCertificatesResponseDescriptor instead')
 const ListAuthorizedCertificatesResponse$json = {
   '1': 'ListAuthorizedCertificatesResponse',
   '2': [
-    {'1': 'certificates', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.AuthorizedCertificate', '10': 'certificates'},
+    {
+      '1': 'certificates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.AuthorizedCertificate',
+      '10': 'certificates'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListAuthorizedCertificatesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAuthorizedCertificatesResponseDescriptor = $convert.base64Decode(
-    'CiJMaXN0QXV0aG9yaXplZENlcnRpZmljYXRlc1Jlc3BvbnNlElIKDGNlcnRpZmljYXRlcxgBIA'
-    'MoCzIuLmdvb2dsZS5hcHBlbmdpbmUudjFiZXRhLkF1dGhvcml6ZWRDZXJ0aWZpY2F0ZVIMY2Vy'
-    'dGlmaWNhdGVzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listAuthorizedCertificatesResponseDescriptor =
+    $convert.base64Decode(
+        'CiJMaXN0QXV0aG9yaXplZENlcnRpZmljYXRlc1Jlc3BvbnNlElIKDGNlcnRpZmljYXRlcxgBIA'
+        'MoCzIuLmdvb2dsZS5hcHBlbmdpbmUudjFiZXRhLkF1dGhvcml6ZWRDZXJ0aWZpY2F0ZVIMY2Vy'
+        'dGlmaWNhdGVzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use getAuthorizedCertificateRequestDescriptor instead')
 const GetAuthorizedCertificateRequest$json = {
   '1': 'GetAuthorizedCertificateRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.appengine.v1beta.AuthorizedCertificateView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.AuthorizedCertificateView',
+      '10': 'view'
+    },
   ],
 };
 
 /// Descriptor for `GetAuthorizedCertificateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getAuthorizedCertificateRequestDescriptor = $convert.base64Decode(
-    'Ch9HZXRBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWUSRg'
-    'oEdmlldxgCIAEoDjIyLmdvb2dsZS5hcHBlbmdpbmUudjFiZXRhLkF1dGhvcml6ZWRDZXJ0aWZp'
-    'Y2F0ZVZpZXdSBHZpZXc=');
+final $typed_data.Uint8List getAuthorizedCertificateRequestDescriptor =
+    $convert.base64Decode(
+        'Ch9HZXRBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWUSRg'
+        'oEdmlldxgCIAEoDjIyLmdvb2dsZS5hcHBlbmdpbmUudjFiZXRhLkF1dGhvcml6ZWRDZXJ0aWZp'
+        'Y2F0ZVZpZXdSBHZpZXc=');
 
 @$core.Deprecated('Use createAuthorizedCertificateRequestDescriptor instead')
 const CreateAuthorizedCertificateRequest$json = {
   '1': 'CreateAuthorizedCertificateRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'certificate', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.AuthorizedCertificate', '10': 'certificate'},
+    {
+      '1': 'certificate',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.AuthorizedCertificate',
+      '10': 'certificate'
+    },
   ],
 };
 
 /// Descriptor for `CreateAuthorizedCertificateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createAuthorizedCertificateRequestDescriptor = $convert.base64Decode(
-    'CiJDcmVhdGVBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhYKBnBhcmVudBgBIAEoCVIGcG'
-    'FyZW50ElAKC2NlcnRpZmljYXRlGAIgASgLMi4uZ29vZ2xlLmFwcGVuZ2luZS52MWJldGEuQXV0'
-    'aG9yaXplZENlcnRpZmljYXRlUgtjZXJ0aWZpY2F0ZQ==');
+final $typed_data.Uint8List createAuthorizedCertificateRequestDescriptor =
+    $convert.base64Decode(
+        'CiJDcmVhdGVBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhYKBnBhcmVudBgBIAEoCVIGcG'
+        'FyZW50ElAKC2NlcnRpZmljYXRlGAIgASgLMi4uZ29vZ2xlLmFwcGVuZ2luZS52MWJldGEuQXV0'
+        'aG9yaXplZENlcnRpZmljYXRlUgtjZXJ0aWZpY2F0ZQ==');
 
 @$core.Deprecated('Use updateAuthorizedCertificateRequestDescriptor instead')
 const UpdateAuthorizedCertificateRequest$json = {
   '1': 'UpdateAuthorizedCertificateRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'certificate', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.AuthorizedCertificate', '10': 'certificate'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'certificate',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.AuthorizedCertificate',
+      '10': 'certificate'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
 /// Descriptor for `UpdateAuthorizedCertificateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateAuthorizedCertificateRequestDescriptor = $convert.base64Decode(
-    'CiJVcGRhdGVBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbW'
-    'USUAoLY2VydGlmaWNhdGUYAiABKAsyLi5nb29nbGUuYXBwZW5naW5lLnYxYmV0YS5BdXRob3Jp'
-    'emVkQ2VydGlmaWNhdGVSC2NlcnRpZmljYXRlEjsKC3VwZGF0ZV9tYXNrGAMgASgLMhouZ29vZ2'
-    'xlLnByb3RvYnVmLkZpZWxkTWFza1IKdXBkYXRlTWFzaw==');
+final $typed_data.Uint8List updateAuthorizedCertificateRequestDescriptor =
+    $convert.base64Decode(
+        'CiJVcGRhdGVBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbW'
+        'USUAoLY2VydGlmaWNhdGUYAiABKAsyLi5nb29nbGUuYXBwZW5naW5lLnYxYmV0YS5BdXRob3Jp'
+        'emVkQ2VydGlmaWNhdGVSC2NlcnRpZmljYXRlEjsKC3VwZGF0ZV9tYXNrGAMgASgLMhouZ29vZ2'
+        'xlLnByb3RvYnVmLkZpZWxkTWFza1IKdXBkYXRlTWFzaw==');
 
 @$core.Deprecated('Use deleteAuthorizedCertificateRequestDescriptor instead')
 const DeleteAuthorizedCertificateRequest$json = {
@@ -572,9 +771,10 @@ const DeleteAuthorizedCertificateRequest$json = {
 };
 
 /// Descriptor for `DeleteAuthorizedCertificateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAuthorizedCertificateRequestDescriptor = $convert.base64Decode(
-    'CiJEZWxldGVBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbW'
-    'U=');
+final $typed_data.Uint8List deleteAuthorizedCertificateRequestDescriptor =
+    $convert.base64Decode(
+        'CiJEZWxldGVBdXRob3JpemVkQ2VydGlmaWNhdGVSZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbW'
+        'U=');
 
 @$core.Deprecated('Use listDomainMappingsRequestDescriptor instead')
 const ListDomainMappingsRequest$json = {
@@ -595,16 +795,24 @@ final $typed_data.Uint8List listDomainMappingsRequestDescriptor = $convert.base6
 const ListDomainMappingsResponse$json = {
   '1': 'ListDomainMappingsResponse',
   '2': [
-    {'1': 'domain_mappings', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.DomainMapping', '10': 'domainMappings'},
+    {
+      '1': 'domain_mappings',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.DomainMapping',
+      '10': 'domainMappings'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListDomainMappingsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listDomainMappingsResponseDescriptor = $convert.base64Decode(
-    'ChpMaXN0RG9tYWluTWFwcGluZ3NSZXNwb25zZRJPCg9kb21haW5fbWFwcGluZ3MYASADKAsyJi'
-    '5nb29nbGUuYXBwZW5naW5lLnYxYmV0YS5Eb21haW5NYXBwaW5nUg5kb21haW5NYXBwaW5ncxIm'
-    'Cg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List listDomainMappingsResponseDescriptor =
+    $convert.base64Decode(
+        'ChpMaXN0RG9tYWluTWFwcGluZ3NSZXNwb25zZRJPCg9kb21haW5fbWFwcGluZ3MYASADKAsyJi'
+        '5nb29nbGUuYXBwZW5naW5lLnYxYmV0YS5Eb21haW5NYXBwaW5nUg5kb21haW5NYXBwaW5ncxIm'
+        'Cg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use getDomainMappingRequestDescriptor instead')
 const GetDomainMappingRequest$json = {
@@ -615,16 +823,31 @@ const GetDomainMappingRequest$json = {
 };
 
 /// Descriptor for `GetDomainMappingRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getDomainMappingRequestDescriptor = $convert.base64Decode(
-    'ChdHZXREb21haW5NYXBwaW5nUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List getDomainMappingRequestDescriptor =
+    $convert.base64Decode(
+        'ChdHZXREb21haW5NYXBwaW5nUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use createDomainMappingRequestDescriptor instead')
 const CreateDomainMappingRequest$json = {
   '1': 'CreateDomainMappingRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'domain_mapping', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.DomainMapping', '10': 'domainMapping'},
-    {'1': 'override_strategy', '3': 4, '4': 1, '5': 14, '6': '.google.appengine.v1beta.DomainOverrideStrategy', '10': 'overrideStrategy'},
+    {
+      '1': 'domain_mapping',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.DomainMapping',
+      '10': 'domainMapping'
+    },
+    {
+      '1': 'override_strategy',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.DomainOverrideStrategy',
+      '10': 'overrideStrategy'
+    },
   ],
 };
 
@@ -641,8 +864,22 @@ const UpdateDomainMappingRequest$json = {
   '1': 'UpdateDomainMappingRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'domain_mapping', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.DomainMapping', '10': 'domainMapping'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'domain_mapping',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.DomainMapping',
+      '10': 'domainMapping'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -662,6 +899,6 @@ const DeleteDomainMappingRequest$json = {
 };
 
 /// Descriptor for `DeleteDomainMappingRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteDomainMappingRequestDescriptor = $convert.base64Decode(
-    'ChpEZWxldGVEb21haW5NYXBwaW5nUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');
-
+final $typed_data.Uint8List deleteDomainMappingRequestDescriptor =
+    $convert.base64Decode(
+        'ChpEZWxldGVEb21haW5NYXBwaW5nUmVxdWVzdBISCgRuYW1lGAEgASgJUgRuYW1l');

@@ -81,10 +81,18 @@ class LocalizedSettings extends $pb.GeneratedMessage {
     return $result;
   }
   LocalizedSettings._() : super();
-  factory LocalizedSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocalizedSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocalizedSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocalizedSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocalizedSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocalizedSettings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
     ..aOS(2, _omitFieldNames ? '' : 'pronunciation')
     ..aOS(3, _omitFieldNames ? '' : 'shortDescription')
@@ -97,30 +105,33 @@ class LocalizedSettings extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'voice')
     ..aOS(11, _omitFieldNames ? '' : 'privacyPolicyUrl')
     ..pPS(12, _omitFieldNames ? '' : 'sampleInvocations')
-    ..aOM<$286.ThemeCustomization>(13, _omitFieldNames ? '' : 'themeCustomization', subBuilder: $286.ThemeCustomization.create)
+    ..aOM<$286.ThemeCustomization>(
+        13, _omitFieldNames ? '' : 'themeCustomization',
+        subBuilder: $286.ThemeCustomization.create)
     ..aOS(14, _omitFieldNames ? '' : 'voiceLocale')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LocalizedSettings clone() => LocalizedSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocalizedSettings copyWith(void Function(LocalizedSettings) updates) => super.copyWith((message) => updates(message as LocalizedSettings)) as LocalizedSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocalizedSettings copyWith(void Function(LocalizedSettings) updates) =>
+      super.copyWith((message) => updates(message as LocalizedSettings))
+          as LocalizedSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocalizedSettings create() => LocalizedSettings._();
   LocalizedSettings createEmptyInstance() => create();
-  static $pb.PbList<LocalizedSettings> createRepeated() => $pb.PbList<LocalizedSettings>();
+  static $pb.PbList<LocalizedSettings> createRepeated() =>
+      $pb.PbList<LocalizedSettings>();
   @$core.pragma('dart2js:noInline')
-  static LocalizedSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocalizedSettings>(create);
+  static LocalizedSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocalizedSettings>(create);
   static LocalizedSettings? _defaultInstance;
 
   /// Required. The default display name for this Actions project (if there is no
@@ -128,7 +139,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get displayName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set displayName($core.String v) { $_setString(0, v); }
+  set displayName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
@@ -139,7 +153,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pronunciation => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pronunciation($core.String v) { $_setString(1, v); }
+  set pronunciation($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPronunciation() => $_has(1);
   @$pb.TagNumber(2)
@@ -150,7 +167,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get shortDescription => $_getSZ(2);
   @$pb.TagNumber(3)
-  set shortDescription($core.String v) { $_setString(2, v); }
+  set shortDescription($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasShortDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -161,7 +181,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get fullDescription => $_getSZ(3);
   @$pb.TagNumber(4)
-  set fullDescription($core.String v) { $_setString(3, v); }
+  set fullDescription($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFullDescription() => $_has(3);
   @$pb.TagNumber(4)
@@ -176,7 +199,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get smallLogoImage => $_getSZ(4);
   @$pb.TagNumber(5)
-  set smallLogoImage($core.String v) { $_setString(4, v); }
+  set smallLogoImage($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSmallLogoImage() => $_has(4);
   @$pb.TagNumber(5)
@@ -191,7 +217,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get largeBannerImage => $_getSZ(5);
   @$pb.TagNumber(6)
-  set largeBannerImage($core.String v) { $_setString(5, v); }
+  set largeBannerImage($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLargeBannerImage() => $_has(5);
   @$pb.TagNumber(6)
@@ -201,7 +230,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get developerName => $_getSZ(6);
   @$pb.TagNumber(7)
-  set developerName($core.String v) { $_setString(6, v); }
+  set developerName($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDeveloperName() => $_has(6);
   @$pb.TagNumber(7)
@@ -211,7 +243,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get developerEmail => $_getSZ(7);
   @$pb.TagNumber(8)
-  set developerEmail($core.String v) { $_setString(7, v); }
+  set developerEmail($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDeveloperEmail() => $_has(7);
   @$pb.TagNumber(8)
@@ -221,7 +256,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get termsOfServiceUrl => $_getSZ(8);
   @$pb.TagNumber(9)
-  set termsOfServiceUrl($core.String v) { $_setString(8, v); }
+  set termsOfServiceUrl($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTermsOfServiceUrl() => $_has(8);
   @$pb.TagNumber(9)
@@ -233,7 +271,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get voice => $_getSZ(9);
   @$pb.TagNumber(10)
-  set voice($core.String v) { $_setString(9, v); }
+  set voice($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasVoice() => $_has(9);
   @$pb.TagNumber(10)
@@ -243,7 +284,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get privacyPolicyUrl => $_getSZ(10);
   @$pb.TagNumber(11)
-  set privacyPolicyUrl($core.String v) { $_setString(10, v); }
+  set privacyPolicyUrl($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasPrivacyPolicyUrl() => $_has(10);
   @$pb.TagNumber(11)
@@ -259,7 +303,10 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $286.ThemeCustomization get themeCustomization => $_getN(12);
   @$pb.TagNumber(13)
-  set themeCustomization($286.ThemeCustomization v) { setField(13, v); }
+  set themeCustomization($286.ThemeCustomization v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasThemeCustomization() => $_has(12);
   @$pb.TagNumber(13)
@@ -273,13 +320,16 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get voiceLocale => $_getSZ(13);
   @$pb.TagNumber(14)
-  set voiceLocale($core.String v) { $_setString(13, v); }
+  set voiceLocale($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasVoiceLocale() => $_has(13);
   @$pb.TagNumber(14)
   void clearVoiceLocale() => clearField(14);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

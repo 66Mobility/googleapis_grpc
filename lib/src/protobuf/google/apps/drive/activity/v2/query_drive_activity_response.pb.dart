@@ -35,34 +35,48 @@ class QueryDriveActivityResponse extends $pb.GeneratedMessage {
     return $result;
   }
   QueryDriveActivityResponse._() : super();
-  factory QueryDriveActivityResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QueryDriveActivityResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QueryDriveActivityResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QueryDriveActivityResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryDriveActivityResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..pc<DriveActivity>(1, _omitFieldNames ? '' : 'activities', $pb.PbFieldType.PM, subBuilder: DriveActivity.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QueryDriveActivityResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
+    ..pc<DriveActivity>(
+        1, _omitFieldNames ? '' : 'activities', $pb.PbFieldType.PM,
+        subBuilder: DriveActivity.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  QueryDriveActivityResponse clone() => QueryDriveActivityResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QueryDriveActivityResponse copyWith(void Function(QueryDriveActivityResponse) updates) => super.copyWith((message) => updates(message as QueryDriveActivityResponse)) as QueryDriveActivityResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  QueryDriveActivityResponse clone() =>
+      QueryDriveActivityResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QueryDriveActivityResponse copyWith(
+          void Function(QueryDriveActivityResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as QueryDriveActivityResponse))
+          as QueryDriveActivityResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static QueryDriveActivityResponse create() => QueryDriveActivityResponse._();
   QueryDriveActivityResponse createEmptyInstance() => create();
-  static $pb.PbList<QueryDriveActivityResponse> createRepeated() => $pb.PbList<QueryDriveActivityResponse>();
+  static $pb.PbList<QueryDriveActivityResponse> createRepeated() =>
+      $pb.PbList<QueryDriveActivityResponse>();
   @$core.pragma('dart2js:noInline')
-  static QueryDriveActivityResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryDriveActivityResponse>(create);
+  static QueryDriveActivityResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QueryDriveActivityResponse>(create);
   static QueryDriveActivityResponse? _defaultInstance;
 
   /// List of activity requested.
@@ -74,18 +88,17 @@ class QueryDriveActivityResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-enum DriveActivity_Time {
-  timestamp, 
-  timeRange, 
-  notSet
-}
+enum DriveActivity_Time { timestamp, timeRange, notSet }
 
 /// A single Drive activity comprising one or more Actions by one or more
 /// Actors on one or more Targets. Some Action groupings occur spontaneously,
@@ -124,44 +137,60 @@ class DriveActivity extends $pb.GeneratedMessage {
     return $result;
   }
   DriveActivity._() : super();
-  factory DriveActivity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveActivity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveActivity.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveActivity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, DriveActivity_Time> _DriveActivity_TimeByTag = {
-    6 : DriveActivity_Time.timestamp,
-    7 : DriveActivity_Time.timeRange,
-    0 : DriveActivity_Time.notSet
+  static const $core.Map<$core.int, DriveActivity_Time>
+      _DriveActivity_TimeByTag = {
+    6: DriveActivity_Time.timestamp,
+    7: DriveActivity_Time.timeRange,
+    0: DriveActivity_Time.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveActivity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveActivity',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..oo(0, [6, 7])
-    ..aOM<$389.ActionDetail>(2, _omitFieldNames ? '' : 'primaryActionDetail', subBuilder: $389.ActionDetail.create)
-    ..pc<$386.Actor>(3, _omitFieldNames ? '' : 'actors', $pb.PbFieldType.PM, subBuilder: $386.Actor.create)
-    ..pc<$389.Action>(4, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: $389.Action.create)
-    ..pc<$388.Target>(5, _omitFieldNames ? '' : 'targets', $pb.PbFieldType.PM, subBuilder: $388.Target.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'timestamp', subBuilder: $302.Timestamp.create)
-    ..aOM<$387.TimeRange>(7, _omitFieldNames ? '' : 'timeRange', subBuilder: $387.TimeRange.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$389.ActionDetail>(2, _omitFieldNames ? '' : 'primaryActionDetail',
+        subBuilder: $389.ActionDetail.create)
+    ..pc<$386.Actor>(3, _omitFieldNames ? '' : 'actors', $pb.PbFieldType.PM,
+        subBuilder: $386.Actor.create)
+    ..pc<$389.Action>(4, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM,
+        subBuilder: $389.Action.create)
+    ..pc<$388.Target>(5, _omitFieldNames ? '' : 'targets', $pb.PbFieldType.PM,
+        subBuilder: $388.Target.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'timestamp',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$387.TimeRange>(7, _omitFieldNames ? '' : 'timeRange',
+        subBuilder: $387.TimeRange.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveActivity clone() => DriveActivity()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveActivity copyWith(void Function(DriveActivity) updates) => super.copyWith((message) => updates(message as DriveActivity)) as DriveActivity;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveActivity copyWith(void Function(DriveActivity) updates) =>
+      super.copyWith((message) => updates(message as DriveActivity))
+          as DriveActivity;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveActivity create() => DriveActivity._();
   DriveActivity createEmptyInstance() => create();
-  static $pb.PbList<DriveActivity> createRepeated() => $pb.PbList<DriveActivity>();
+  static $pb.PbList<DriveActivity> createRepeated() =>
+      $pb.PbList<DriveActivity>();
   @$core.pragma('dart2js:noInline')
-  static DriveActivity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveActivity>(create);
+  static DriveActivity getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveActivity>(create);
   static DriveActivity? _defaultInstance;
 
   DriveActivity_Time whichTime() => _DriveActivity_TimeByTag[$_whichOneof(0)]!;
@@ -173,7 +202,10 @@ class DriveActivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $389.ActionDetail get primaryActionDetail => $_getN(0);
   @$pb.TagNumber(2)
-  set primaryActionDetail($389.ActionDetail v) { setField(2, v); }
+  set primaryActionDetail($389.ActionDetail v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrimaryActionDetail() => $_has(0);
   @$pb.TagNumber(2)
@@ -199,7 +231,10 @@ class DriveActivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get timestamp => $_getN(4);
   @$pb.TagNumber(6)
-  set timestamp($302.Timestamp v) { setField(6, v); }
+  set timestamp($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTimestamp() => $_has(4);
   @$pb.TagNumber(6)
@@ -211,7 +246,10 @@ class DriveActivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $387.TimeRange get timeRange => $_getN(5);
   @$pb.TagNumber(7)
-  set timeRange($387.TimeRange v) { setField(7, v); }
+  set timeRange($387.TimeRange v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTimeRange() => $_has(5);
   @$pb.TagNumber(7)
@@ -220,6 +258,6 @@ class DriveActivity extends $pb.GeneratedMessage {
   $387.TimeRange ensureTimeRange() => $_ensure(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

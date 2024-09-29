@@ -33,7 +33,14 @@ final $typed_data.Uint8List listQuotaInfosRequestDescriptor = $convert.base64Dec
 const ListQuotaInfosResponse$json = {
   '1': 'ListQuotaInfosResponse',
   '2': [
-    {'1': 'quota_infos', '3': 1, '4': 3, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaInfo', '10': 'quotaInfos'},
+    {
+      '1': 'quota_infos',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaInfo',
+      '10': 'quotaInfos'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -81,7 +88,14 @@ final $typed_data.Uint8List listQuotaPreferencesRequestDescriptor = $convert.bas
 const ListQuotaPreferencesResponse$json = {
   '1': 'ListQuotaPreferencesResponse',
   '2': [
-    {'1': 'quota_preferences', '3': 1, '4': 3, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaPreference', '10': 'quotaPreferences'},
+    {
+      '1': 'quota_preferences',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaPreference',
+      '10': 'quotaPreferences'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
   ],
@@ -103,18 +117,41 @@ const GetQuotaPreferenceRequest$json = {
 };
 
 /// Descriptor for `GetQuotaPreferenceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getQuotaPreferenceRequestDescriptor = $convert.base64Decode(
-    'ChlHZXRRdW90YVByZWZlcmVuY2VSZXF1ZXN0EkYKBG5hbWUYASABKAlCMuBBAvpBLAoqY2xvdW'
-    'RxdW90YXMuZ29vZ2xlYXBpcy5jb20vUXVvdGFQcmVmZXJlbmNlUgRuYW1l');
+final $typed_data.Uint8List getQuotaPreferenceRequestDescriptor =
+    $convert.base64Decode(
+        'ChlHZXRRdW90YVByZWZlcmVuY2VSZXF1ZXN0EkYKBG5hbWUYASABKAlCMuBBAvpBLAoqY2xvdW'
+        'RxdW90YXMuZ29vZ2xlYXBpcy5jb20vUXVvdGFQcmVmZXJlbmNlUgRuYW1l');
 
 @$core.Deprecated('Use createQuotaPreferenceRequestDescriptor instead')
 const CreateQuotaPreferenceRequest$json = {
   '1': 'CreateQuotaPreferenceRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'quota_preference_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'quotaPreferenceId'},
-    {'1': 'quota_preference', '3': 3, '4': 1, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaPreference', '8': {}, '10': 'quotaPreference'},
-    {'1': 'ignore_safety_checks', '3': 4, '4': 3, '5': 14, '6': '.google.api.cloudquotas.v1.QuotaSafetyCheck', '10': 'ignoreSafetyChecks'},
+    {
+      '1': 'quota_preference_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'quotaPreferenceId'
+    },
+    {
+      '1': 'quota_preference',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaPreference',
+      '8': {},
+      '10': 'quotaPreference'
+    },
+    {
+      '1': 'ignore_safety_checks',
+      '3': 4,
+      '4': 3,
+      '5': 14,
+      '6': '.google.api.cloudquotas.v1.QuotaSafetyCheck',
+      '10': 'ignoreSafetyChecks'
+    },
   ],
 };
 
@@ -132,11 +169,48 @@ final $typed_data.Uint8List createQuotaPreferenceRequestDescriptor = $convert.ba
 const UpdateQuotaPreferenceRequest$json = {
   '1': 'UpdateQuotaPreferenceRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
-    {'1': 'quota_preference', '3': 2, '4': 1, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaPreference', '8': {}, '10': 'quotaPreference'},
-    {'1': 'allow_missing', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'allowMissing'},
-    {'1': 'validate_only', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'validateOnly'},
-    {'1': 'ignore_safety_checks', '3': 5, '4': 3, '5': 14, '6': '.google.api.cloudquotas.v1.QuotaSafetyCheck', '10': 'ignoreSafetyChecks'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
+    {
+      '1': 'quota_preference',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaPreference',
+      '8': {},
+      '10': 'quotaPreference'
+    },
+    {
+      '1': 'allow_missing',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'allowMissing'
+    },
+    {
+      '1': 'validate_only',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'validateOnly'
+    },
+    {
+      '1': 'ignore_safety_checks',
+      '3': 5,
+      '4': 3,
+      '5': 14,
+      '6': '.google.api.cloudquotas.v1.QuotaSafetyCheck',
+      '10': 'ignoreSafetyChecks'
+    },
   ],
 };
 
@@ -149,4 +223,3 @@ final $typed_data.Uint8List updateQuotaPreferenceRequestDescriptor = $convert.ba
     'd01pc3NpbmcSKAoNdmFsaWRhdGVfb25seRgEIAEoCEID4EEBUgx2YWxpZGF0ZU9ubHkSXQoUaW'
     'dub3JlX3NhZmV0eV9jaGVja3MYBSADKA4yKy5nb29nbGUuYXBpLmNsb3VkcXVvdGFzLnYxLlF1'
     'b3RhU2FmZXR5Q2hlY2tSEmlnbm9yZVNhZmV0eUNoZWNrcw==');
-

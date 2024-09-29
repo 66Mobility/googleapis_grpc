@@ -19,11 +19,7 @@ import 'tuned_model.pbenum.dart';
 
 export 'tuned_model.pbenum.dart';
 
-enum TunedModel_SourceModel {
-  tunedModelSource, 
-  baseModel, 
-  notSet
-}
+enum TunedModel_SourceModel { tunedModelSource, baseModel, notSet }
 
 /// A fine-tuned model created using ModelService.CreateTunedModel.
 class TunedModel extends $pb.GeneratedMessage {
@@ -85,42 +81,58 @@ class TunedModel extends $pb.GeneratedMessage {
     return $result;
   }
   TunedModel._() : super();
-  factory TunedModel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TunedModel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TunedModel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TunedModel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TunedModel_SourceModel> _TunedModel_SourceModelByTag = {
-    3 : TunedModel_SourceModel.tunedModelSource,
-    4 : TunedModel_SourceModel.baseModel,
-    0 : TunedModel_SourceModel.notSet
+  static const $core.Map<$core.int, TunedModel_SourceModel>
+      _TunedModel_SourceModelByTag = {
+    3: TunedModel_SourceModel.tunedModelSource,
+    4: TunedModel_SourceModel.baseModel,
+    0: TunedModel_SourceModel.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TunedModel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TunedModel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<TunedModelSource>(3, _omitFieldNames ? '' : 'tunedModelSource', subBuilder: TunedModelSource.create)
+    ..aOM<TunedModelSource>(3, _omitFieldNames ? '' : 'tunedModelSource',
+        subBuilder: TunedModelSource.create)
     ..aOS(4, _omitFieldNames ? '' : 'baseModel')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'description')
-    ..e<TunedModel_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: TunedModel_State.STATE_UNSPECIFIED, valueOf: TunedModel_State.valueOf, enumValues: TunedModel_State.values)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<TuningTask>(10, _omitFieldNames ? '' : 'tuningTask', subBuilder: TuningTask.create)
-    ..a<$core.double>(11, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
+    ..e<TunedModel_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: TunedModel_State.STATE_UNSPECIFIED,
+        valueOf: TunedModel_State.valueOf,
+        enumValues: TunedModel_State.values)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<TuningTask>(10, _omitFieldNames ? '' : 'tuningTask',
+        subBuilder: TuningTask.create)
+    ..a<$core.double>(
+        11, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
-    ..p<$fixnum.Int64>(14, _omitFieldNames ? '' : 'readerProjectNumbers', $pb.PbFieldType.K6)
-    ..hasRequiredFields = false
-  ;
+    ..p<$fixnum.Int64>(
+        14, _omitFieldNames ? '' : 'readerProjectNumbers', $pb.PbFieldType.K6)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TunedModel clone() => TunedModel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TunedModel copyWith(void Function(TunedModel) updates) => super.copyWith((message) => updates(message as TunedModel)) as TunedModel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TunedModel copyWith(void Function(TunedModel) updates) =>
+      super.copyWith((message) => updates(message as TunedModel)) as TunedModel;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -129,10 +141,12 @@ class TunedModel extends $pb.GeneratedMessage {
   TunedModel createEmptyInstance() => create();
   static $pb.PbList<TunedModel> createRepeated() => $pb.PbList<TunedModel>();
   @$core.pragma('dart2js:noInline')
-  static TunedModel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TunedModel>(create);
+  static TunedModel getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TunedModel>(create);
   static TunedModel? _defaultInstance;
 
-  TunedModel_SourceModel whichSourceModel() => _TunedModel_SourceModelByTag[$_whichOneof(0)]!;
+  TunedModel_SourceModel whichSourceModel() =>
+      _TunedModel_SourceModelByTag[$_whichOneof(0)]!;
   void clearSourceModel() => clearField($_whichOneof(0));
 
   ///  Output only. The tuned model name. A unique name will be generated on
@@ -148,7 +162,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -159,7 +176,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TunedModelSource get tunedModelSource => $_getN(1);
   @$pb.TagNumber(3)
-  set tunedModelSource(TunedModelSource v) { setField(3, v); }
+  set tunedModelSource(TunedModelSource v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTunedModelSource() => $_has(1);
   @$pb.TagNumber(3)
@@ -172,7 +192,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get baseModel => $_getSZ(2);
   @$pb.TagNumber(4)
-  set baseModel($core.String v) { $_setString(2, v); }
+  set baseModel($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBaseModel() => $_has(2);
   @$pb.TagNumber(4)
@@ -183,7 +206,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(5)
-  set displayName($core.String v) { $_setString(3, v); }
+  set displayName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(5)
@@ -193,7 +219,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(6)
-  set description($core.String v) { $_setString(4, v); }
+  set description($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(6)
@@ -203,7 +232,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   TunedModel_State get state => $_getN(5);
   @$pb.TagNumber(7)
-  set state(TunedModel_State v) { setField(7, v); }
+  set state(TunedModel_State v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(7)
@@ -213,7 +245,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($302.Timestamp v) { setField(8, v); }
+  set createTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(8)
@@ -225,7 +260,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) { setField(9, v); }
+  set updateTime($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
@@ -237,7 +275,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   TuningTask get tuningTask => $_getN(8);
   @$pb.TagNumber(10)
-  set tuningTask(TuningTask v) { setField(10, v); }
+  set tuningTask(TuningTask v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasTuningTask() => $_has(8);
   @$pb.TagNumber(10)
@@ -256,7 +297,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.double get temperature => $_getN(9);
   @$pb.TagNumber(11)
-  set temperature($core.double v) { $_setFloat(9, v); }
+  set temperature($core.double v) {
+    $_setFloat(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasTemperature() => $_has(9);
   @$pb.TagNumber(11)
@@ -272,7 +316,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.double get topP => $_getN(10);
   @$pb.TagNumber(12)
-  set topP($core.double v) { $_setFloat(10, v); }
+  set topP($core.double v) {
+    $_setFloat(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasTopP() => $_has(10);
   @$pb.TagNumber(12)
@@ -289,7 +336,10 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.int get topK => $_getIZ(11);
   @$pb.TagNumber(13)
-  set topK($core.int v) { $_setSignedInt32(11, v); }
+  set topK($core.int v) {
+    $_setSignedInt32(11, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasTopK() => $_has(11);
   @$pb.TagNumber(13)
@@ -316,34 +366,43 @@ class TunedModelSource extends $pb.GeneratedMessage {
     return $result;
   }
   TunedModelSource._() : super();
-  factory TunedModelSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TunedModelSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TunedModelSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TunedModelSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TunedModelSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TunedModelSource',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tunedModel')
     ..aOS(2, _omitFieldNames ? '' : 'baseModel')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TunedModelSource clone() => TunedModelSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TunedModelSource copyWith(void Function(TunedModelSource) updates) => super.copyWith((message) => updates(message as TunedModelSource)) as TunedModelSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TunedModelSource copyWith(void Function(TunedModelSource) updates) =>
+      super.copyWith((message) => updates(message as TunedModelSource))
+          as TunedModelSource;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TunedModelSource create() => TunedModelSource._();
   TunedModelSource createEmptyInstance() => create();
-  static $pb.PbList<TunedModelSource> createRepeated() => $pb.PbList<TunedModelSource>();
+  static $pb.PbList<TunedModelSource> createRepeated() =>
+      $pb.PbList<TunedModelSource>();
   @$core.pragma('dart2js:noInline')
-  static TunedModelSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TunedModelSource>(create);
+  static TunedModelSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TunedModelSource>(create);
   static TunedModelSource? _defaultInstance;
 
   /// Immutable. The name of the `TunedModel` to use as the starting point for
@@ -352,7 +411,10 @@ class TunedModelSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tunedModel => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tunedModel($core.String v) { $_setString(0, v); }
+  set tunedModel($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTunedModel() => $_has(0);
   @$pb.TagNumber(1)
@@ -363,7 +425,10 @@ class TunedModelSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get baseModel => $_getSZ(1);
   @$pb.TagNumber(2)
-  set baseModel($core.String v) { $_setString(1, v); }
+  set baseModel($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBaseModel() => $_has(1);
   @$pb.TagNumber(2)
@@ -398,28 +463,40 @@ class TuningTask extends $pb.GeneratedMessage {
     return $result;
   }
   TuningTask._() : super();
-  factory TuningTask.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TuningTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TuningTask.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TuningTask.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TuningTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'completeTime', subBuilder: $302.Timestamp.create)
-    ..pc<TuningSnapshot>(3, _omitFieldNames ? '' : 'snapshots', $pb.PbFieldType.PM, subBuilder: TuningSnapshot.create)
-    ..aOM<Dataset>(4, _omitFieldNames ? '' : 'trainingData', subBuilder: Dataset.create)
-    ..aOM<Hyperparameters>(5, _omitFieldNames ? '' : 'hyperparameters', subBuilder: Hyperparameters.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TuningTask',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'completeTime',
+        subBuilder: $302.Timestamp.create)
+    ..pc<TuningSnapshot>(
+        3, _omitFieldNames ? '' : 'snapshots', $pb.PbFieldType.PM,
+        subBuilder: TuningSnapshot.create)
+    ..aOM<Dataset>(4, _omitFieldNames ? '' : 'trainingData',
+        subBuilder: Dataset.create)
+    ..aOM<Hyperparameters>(5, _omitFieldNames ? '' : 'hyperparameters',
+        subBuilder: Hyperparameters.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TuningTask clone() => TuningTask()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TuningTask copyWith(void Function(TuningTask) updates) => super.copyWith((message) => updates(message as TuningTask)) as TuningTask;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TuningTask copyWith(void Function(TuningTask) updates) =>
+      super.copyWith((message) => updates(message as TuningTask)) as TuningTask;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -428,14 +505,18 @@ class TuningTask extends $pb.GeneratedMessage {
   TuningTask createEmptyInstance() => create();
   static $pb.PbList<TuningTask> createRepeated() => $pb.PbList<TuningTask>();
   @$core.pragma('dart2js:noInline')
-  static TuningTask getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TuningTask>(create);
+  static TuningTask getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TuningTask>(create);
   static TuningTask? _defaultInstance;
 
   /// Output only. The timestamp when tuning this model started.
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -447,7 +528,10 @@ class TuningTask extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get completeTime => $_getN(1);
   @$pb.TagNumber(2)
-  set completeTime($302.Timestamp v) { setField(2, v); }
+  set completeTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCompleteTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -463,7 +547,10 @@ class TuningTask extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Dataset get trainingData => $_getN(3);
   @$pb.TagNumber(4)
-  set trainingData(Dataset v) { setField(4, v); }
+  set trainingData(Dataset v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTrainingData() => $_has(3);
   @$pb.TagNumber(4)
@@ -476,7 +563,10 @@ class TuningTask extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Hyperparameters get hyperparameters => $_getN(4);
   @$pb.TagNumber(5)
-  set hyperparameters(Hyperparameters v) { setField(5, v); }
+  set hyperparameters(Hyperparameters v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasHyperparameters() => $_has(4);
   @$pb.TagNumber(5)
@@ -486,8 +576,8 @@ class TuningTask extends $pb.GeneratedMessage {
 }
 
 enum Hyperparameters_LearningRateOption {
-  learningRate, 
-  learningRateMultiplier, 
+  learningRate,
+  learningRateMultiplier,
   notSet
 }
 
@@ -516,45 +606,58 @@ class Hyperparameters extends $pb.GeneratedMessage {
     return $result;
   }
   Hyperparameters._() : super();
-  factory Hyperparameters.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Hyperparameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Hyperparameters.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Hyperparameters.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Hyperparameters_LearningRateOption> _Hyperparameters_LearningRateOptionByTag = {
-    16 : Hyperparameters_LearningRateOption.learningRate,
-    17 : Hyperparameters_LearningRateOption.learningRateMultiplier,
-    0 : Hyperparameters_LearningRateOption.notSet
+  static const $core.Map<$core.int, Hyperparameters_LearningRateOption>
+      _Hyperparameters_LearningRateOptionByTag = {
+    16: Hyperparameters_LearningRateOption.learningRate,
+    17: Hyperparameters_LearningRateOption.learningRateMultiplier,
+    0: Hyperparameters_LearningRateOption.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Hyperparameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Hyperparameters',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [16, 17])
     ..a<$core.int>(14, _omitFieldNames ? '' : 'epochCount', $pb.PbFieldType.O3)
     ..a<$core.int>(15, _omitFieldNames ? '' : 'batchSize', $pb.PbFieldType.O3)
-    ..a<$core.double>(16, _omitFieldNames ? '' : 'learningRate', $pb.PbFieldType.OF)
-    ..a<$core.double>(17, _omitFieldNames ? '' : 'learningRateMultiplier', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        16, _omitFieldNames ? '' : 'learningRate', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        17, _omitFieldNames ? '' : 'learningRateMultiplier', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Hyperparameters clone() => Hyperparameters()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Hyperparameters copyWith(void Function(Hyperparameters) updates) => super.copyWith((message) => updates(message as Hyperparameters)) as Hyperparameters;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Hyperparameters copyWith(void Function(Hyperparameters) updates) =>
+      super.copyWith((message) => updates(message as Hyperparameters))
+          as Hyperparameters;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Hyperparameters create() => Hyperparameters._();
   Hyperparameters createEmptyInstance() => create();
-  static $pb.PbList<Hyperparameters> createRepeated() => $pb.PbList<Hyperparameters>();
+  static $pb.PbList<Hyperparameters> createRepeated() =>
+      $pb.PbList<Hyperparameters>();
   @$core.pragma('dart2js:noInline')
-  static Hyperparameters getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Hyperparameters>(create);
+  static Hyperparameters getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Hyperparameters>(create);
   static Hyperparameters? _defaultInstance;
 
-  Hyperparameters_LearningRateOption whichLearningRateOption() => _Hyperparameters_LearningRateOptionByTag[$_whichOneof(0)]!;
+  Hyperparameters_LearningRateOption whichLearningRateOption() =>
+      _Hyperparameters_LearningRateOptionByTag[$_whichOneof(0)]!;
   void clearLearningRateOption() => clearField($_whichOneof(0));
 
   /// Immutable. The number of training epochs. An epoch is one pass through the
@@ -562,7 +665,10 @@ class Hyperparameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.int get epochCount => $_getIZ(0);
   @$pb.TagNumber(14)
-  set epochCount($core.int v) { $_setSignedInt32(0, v); }
+  set epochCount($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasEpochCount() => $_has(0);
   @$pb.TagNumber(14)
@@ -574,7 +680,10 @@ class Hyperparameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.int get batchSize => $_getIZ(1);
   @$pb.TagNumber(15)
-  set batchSize($core.int v) { $_setSignedInt32(1, v); }
+  set batchSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasBatchSize() => $_has(1);
   @$pb.TagNumber(15)
@@ -586,7 +695,10 @@ class Hyperparameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.double get learningRate => $_getN(2);
   @$pb.TagNumber(16)
-  set learningRate($core.double v) { $_setFloat(2, v); }
+  set learningRate($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasLearningRate() => $_has(2);
   @$pb.TagNumber(16)
@@ -600,17 +712,17 @@ class Hyperparameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.double get learningRateMultiplier => $_getN(3);
   @$pb.TagNumber(17)
-  set learningRateMultiplier($core.double v) { $_setFloat(3, v); }
+  set learningRateMultiplier($core.double v) {
+    $_setFloat(3, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasLearningRateMultiplier() => $_has(3);
   @$pb.TagNumber(17)
   void clearLearningRateMultiplier() => clearField(17);
 }
 
-enum Dataset_Dataset {
-  examples, 
-  notSet
-}
+enum Dataset_Dataset { examples, notSet }
 
 /// Dataset for training or validation.
 class Dataset extends $pb.GeneratedMessage {
@@ -624,29 +736,36 @@ class Dataset extends $pb.GeneratedMessage {
     return $result;
   }
   Dataset._() : super();
-  factory Dataset.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Dataset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Dataset.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Dataset.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Dataset_Dataset> _Dataset_DatasetByTag = {
-    1 : Dataset_Dataset.examples,
-    0 : Dataset_Dataset.notSet
+    1: Dataset_Dataset.examples,
+    0: Dataset_Dataset.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Dataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Dataset',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<TuningExamples>(1, _omitFieldNames ? '' : 'examples', subBuilder: TuningExamples.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<TuningExamples>(1, _omitFieldNames ? '' : 'examples',
+        subBuilder: TuningExamples.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Dataset clone() => Dataset()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Dataset copyWith(void Function(Dataset) updates) => super.copyWith((message) => updates(message as Dataset)) as Dataset;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Dataset copyWith(void Function(Dataset) updates) =>
+      super.copyWith((message) => updates(message as Dataset)) as Dataset;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -655,7 +774,8 @@ class Dataset extends $pb.GeneratedMessage {
   Dataset createEmptyInstance() => create();
   static $pb.PbList<Dataset> createRepeated() => $pb.PbList<Dataset>();
   @$core.pragma('dart2js:noInline')
-  static Dataset getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Dataset>(create);
+  static Dataset getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Dataset>(create);
   static Dataset? _defaultInstance;
 
   Dataset_Dataset whichDataset() => _Dataset_DatasetByTag[$_whichOneof(0)]!;
@@ -665,7 +785,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TuningExamples get examples => $_getN(0);
   @$pb.TagNumber(1)
-  set examples(TuningExamples v) { setField(1, v); }
+  set examples(TuningExamples v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasExamples() => $_has(0);
   @$pb.TagNumber(1)
@@ -686,33 +809,44 @@ class TuningExamples extends $pb.GeneratedMessage {
     return $result;
   }
   TuningExamples._() : super();
-  factory TuningExamples.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TuningExamples.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TuningExamples.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TuningExamples.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TuningExamples', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<TuningExample>(1, _omitFieldNames ? '' : 'examples', $pb.PbFieldType.PM, subBuilder: TuningExample.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TuningExamples',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<TuningExample>(
+        1, _omitFieldNames ? '' : 'examples', $pb.PbFieldType.PM,
+        subBuilder: TuningExample.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TuningExamples clone() => TuningExamples()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TuningExamples copyWith(void Function(TuningExamples) updates) => super.copyWith((message) => updates(message as TuningExamples)) as TuningExamples;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TuningExamples copyWith(void Function(TuningExamples) updates) =>
+      super.copyWith((message) => updates(message as TuningExamples))
+          as TuningExamples;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TuningExamples create() => TuningExamples._();
   TuningExamples createEmptyInstance() => create();
-  static $pb.PbList<TuningExamples> createRepeated() => $pb.PbList<TuningExamples>();
+  static $pb.PbList<TuningExamples> createRepeated() =>
+      $pb.PbList<TuningExamples>();
   @$core.pragma('dart2js:noInline')
-  static TuningExamples getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TuningExamples>(create);
+  static TuningExamples getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TuningExamples>(create);
   static TuningExamples? _defaultInstance;
 
   /// Required. The examples. Example input can be for text or discuss, but all
@@ -721,10 +855,7 @@ class TuningExamples extends $pb.GeneratedMessage {
   $core.List<TuningExample> get examples => $_getList(0);
 }
 
-enum TuningExample_ModelInput {
-  textInput, 
-  notSet
-}
+enum TuningExample_ModelInput { textInput, notSet }
 
 /// A single example for tuning.
 class TuningExample extends $pb.GeneratedMessage {
@@ -742,49 +873,63 @@ class TuningExample extends $pb.GeneratedMessage {
     return $result;
   }
   TuningExample._() : super();
-  factory TuningExample.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TuningExample.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TuningExample.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TuningExample.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TuningExample_ModelInput> _TuningExample_ModelInputByTag = {
-    1 : TuningExample_ModelInput.textInput,
-    0 : TuningExample_ModelInput.notSet
+  static const $core.Map<$core.int, TuningExample_ModelInput>
+      _TuningExample_ModelInputByTag = {
+    1: TuningExample_ModelInput.textInput,
+    0: TuningExample_ModelInput.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TuningExample', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TuningExample',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'textInput')
     ..aOS(3, _omitFieldNames ? '' : 'output')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TuningExample clone() => TuningExample()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TuningExample copyWith(void Function(TuningExample) updates) => super.copyWith((message) => updates(message as TuningExample)) as TuningExample;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TuningExample copyWith(void Function(TuningExample) updates) =>
+      super.copyWith((message) => updates(message as TuningExample))
+          as TuningExample;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TuningExample create() => TuningExample._();
   TuningExample createEmptyInstance() => create();
-  static $pb.PbList<TuningExample> createRepeated() => $pb.PbList<TuningExample>();
+  static $pb.PbList<TuningExample> createRepeated() =>
+      $pb.PbList<TuningExample>();
   @$core.pragma('dart2js:noInline')
-  static TuningExample getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TuningExample>(create);
+  static TuningExample getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TuningExample>(create);
   static TuningExample? _defaultInstance;
 
-  TuningExample_ModelInput whichModelInput() => _TuningExample_ModelInputByTag[$_whichOneof(0)]!;
+  TuningExample_ModelInput whichModelInput() =>
+      _TuningExample_ModelInputByTag[$_whichOneof(0)]!;
   void clearModelInput() => clearField($_whichOneof(0));
 
   /// Optional. Text model input.
   @$pb.TagNumber(1)
   $core.String get textInput => $_getSZ(0);
   @$pb.TagNumber(1)
-  set textInput($core.String v) { $_setString(0, v); }
+  set textInput($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTextInput() => $_has(0);
   @$pb.TagNumber(1)
@@ -794,7 +939,10 @@ class TuningExample extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get output => $_getSZ(1);
   @$pb.TagNumber(3)
-  set output($core.String v) { $_setString(1, v); }
+  set output($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOutput() => $_has(1);
   @$pb.TagNumber(3)
@@ -825,43 +973,56 @@ class TuningSnapshot extends $pb.GeneratedMessage {
     return $result;
   }
   TuningSnapshot._() : super();
-  factory TuningSnapshot.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TuningSnapshot.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TuningSnapshot.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TuningSnapshot.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TuningSnapshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TuningSnapshot',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'step', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'epoch', $pb.PbFieldType.O3)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'meanLoss', $pb.PbFieldType.OF)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'computeTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'computeTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TuningSnapshot clone() => TuningSnapshot()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TuningSnapshot copyWith(void Function(TuningSnapshot) updates) => super.copyWith((message) => updates(message as TuningSnapshot)) as TuningSnapshot;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TuningSnapshot copyWith(void Function(TuningSnapshot) updates) =>
+      super.copyWith((message) => updates(message as TuningSnapshot))
+          as TuningSnapshot;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TuningSnapshot create() => TuningSnapshot._();
   TuningSnapshot createEmptyInstance() => create();
-  static $pb.PbList<TuningSnapshot> createRepeated() => $pb.PbList<TuningSnapshot>();
+  static $pb.PbList<TuningSnapshot> createRepeated() =>
+      $pb.PbList<TuningSnapshot>();
   @$core.pragma('dart2js:noInline')
-  static TuningSnapshot getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TuningSnapshot>(create);
+  static TuningSnapshot getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TuningSnapshot>(create);
   static TuningSnapshot? _defaultInstance;
 
   /// Output only. The tuning step.
   @$pb.TagNumber(1)
   $core.int get step => $_getIZ(0);
   @$pb.TagNumber(1)
-  set step($core.int v) { $_setSignedInt32(0, v); }
+  set step($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStep() => $_has(0);
   @$pb.TagNumber(1)
@@ -871,7 +1032,10 @@ class TuningSnapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get epoch => $_getIZ(1);
   @$pb.TagNumber(2)
-  set epoch($core.int v) { $_setSignedInt32(1, v); }
+  set epoch($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEpoch() => $_has(1);
   @$pb.TagNumber(2)
@@ -881,7 +1045,10 @@ class TuningSnapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get meanLoss => $_getN(2);
   @$pb.TagNumber(3)
-  set meanLoss($core.double v) { $_setFloat(2, v); }
+  set meanLoss($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMeanLoss() => $_has(2);
   @$pb.TagNumber(3)
@@ -891,7 +1058,10 @@ class TuningSnapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get computeTime => $_getN(3);
   @$pb.TagNumber(4)
-  set computeTime($302.Timestamp v) { setField(4, v); }
+  set computeTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasComputeTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -900,6 +1070,6 @@ class TuningSnapshot extends $pb.GeneratedMessage {
   $302.Timestamp ensureComputeTime() => $_ensure(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

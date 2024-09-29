@@ -18,13 +18,32 @@ const ClientInfo$json = {
   '1': 'ClientInfo',
   '2': [
     {'1': 'application_id', '3': 1, '4': 1, '5': 9, '10': 'applicationId'},
-    {'1': 'application_version', '3': 2, '4': 1, '5': 9, '10': 'applicationVersion'},
-    {'1': 'platform', '3': 3, '4': 1, '5': 14, '6': '.google.maps.unity.ClientInfo.Platform', '10': 'platform'},
+    {
+      '1': 'application_version',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'applicationVersion'
+    },
+    {
+      '1': 'platform',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.unity.ClientInfo.Platform',
+      '10': 'platform'
+    },
     {'1': 'operating_system', '3': 4, '4': 1, '5': 9, '10': 'operatingSystem'},
     {'1': 'api_client', '3': 5, '4': 1, '5': 9, '10': 'apiClient'},
     {'1': 'device_model', '3': 6, '4': 1, '5': 9, '10': 'deviceModel'},
     {'1': 'language_code', '3': 7, '4': 1, '5': 9, '10': 'languageCode'},
-    {'1': 'operating_system_build', '3': 8, '4': 1, '5': 9, '10': 'operatingSystemBuild'},
+    {
+      '1': 'operating_system_build',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'operatingSystemBuild'
+    },
   ],
   '4': [ClientInfo_Platform$json],
 };
@@ -55,4 +74,3 @@ final $typed_data.Uint8List clientInfoDescriptor = $convert.base64Decode(
     'bV9idWlsZBgIIAEoCVIUb3BlcmF0aW5nU3lzdGVtQnVpbGQidgoIUGxhdGZvcm0SGAoUUExBVE'
     'ZPUk1fVU5TUEVDSUZJRUQQABIKCgZFRElUT1IQARIKCgZNQUNfT1MQAhILCgdXSU5ET1dTEAMS'
     'CQoFTElOVVgQBBILCgdBTkRST0lEEAUSBwoDSU9TEAYSCgoGV0VCX0dMEAc=');
-

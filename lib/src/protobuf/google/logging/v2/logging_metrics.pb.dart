@@ -32,7 +32,7 @@ class LogMetric extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     $core.String? filter,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     LogMetric_ApiVersion? version,
     $197.MetricDescriptor? metricDescriptor,
     $core.String? valueExtractor,
@@ -84,35 +84,54 @@ class LogMetric extends $pb.GeneratedMessage {
     return $result;
   }
   LogMetric._() : super();
-  factory LogMetric.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogMetric.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogMetric.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogMetric.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogMetric', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogMetric',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'filter')
-    ..e<LogMetric_ApiVersion>(4, _omitFieldNames ? '' : 'version', $pb.PbFieldType.OE, defaultOrMaker: LogMetric_ApiVersion.V2, valueOf: LogMetric_ApiVersion.valueOf, enumValues: LogMetric_ApiVersion.values)
-    ..aOM<$197.MetricDescriptor>(5, _omitFieldNames ? '' : 'metricDescriptor', subBuilder: $197.MetricDescriptor.create)
+    ..e<LogMetric_ApiVersion>(
+        4, _omitFieldNames ? '' : 'version', $pb.PbFieldType.OE,
+        defaultOrMaker: LogMetric_ApiVersion.V2,
+        valueOf: LogMetric_ApiVersion.valueOf,
+        enumValues: LogMetric_ApiVersion.values)
+    ..aOM<$197.MetricDescriptor>(5, _omitFieldNames ? '' : 'metricDescriptor',
+        subBuilder: $197.MetricDescriptor.create)
     ..aOS(6, _omitFieldNames ? '' : 'valueExtractor')
-    ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labelExtractors', entryClassName: 'LogMetric.LabelExtractorsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.logging.v2'))
-    ..aOM<$367.Distribution_BucketOptions>(8, _omitFieldNames ? '' : 'bucketOptions', subBuilder: $367.Distribution_BucketOptions.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labelExtractors',
+        entryClassName: 'LogMetric.LabelExtractorsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.logging.v2'))
+    ..aOM<$367.Distribution_BucketOptions>(
+        8, _omitFieldNames ? '' : 'bucketOptions',
+        subBuilder: $367.Distribution_BucketOptions.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
     ..aOB(12, _omitFieldNames ? '' : 'disabled')
     ..aOS(13, _omitFieldNames ? '' : 'bucketName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LogMetric clone() => LogMetric()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogMetric copyWith(void Function(LogMetric) updates) => super.copyWith((message) => updates(message as LogMetric)) as LogMetric;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogMetric copyWith(void Function(LogMetric) updates) =>
+      super.copyWith((message) => updates(message as LogMetric)) as LogMetric;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -121,7 +140,8 @@ class LogMetric extends $pb.GeneratedMessage {
   LogMetric createEmptyInstance() => create();
   static $pb.PbList<LogMetric> createRepeated() => $pb.PbList<LogMetric>();
   @$core.pragma('dart2js:noInline')
-  static LogMetric getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogMetric>(create);
+  static LogMetric getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogMetric>(create);
   static LogMetric? _defaultInstance;
 
   ///  Required. The client-assigned metric identifier.
@@ -140,7 +160,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -151,7 +174,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -167,7 +193,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get filter => $_getSZ(2);
   @$pb.TagNumber(3)
-  set filter($core.String v) { $_setString(2, v); }
+  set filter($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFilter() => $_has(2);
   @$pb.TagNumber(3)
@@ -180,7 +209,10 @@ class LogMetric extends $pb.GeneratedMessage {
   LogMetric_ApiVersion get version => $_getN(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set version(LogMetric_ApiVersion v) { setField(4, v); }
+  set version(LogMetric_ApiVersion v) {
+    setField(4, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasVersion() => $_has(3);
@@ -212,7 +244,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $197.MetricDescriptor get metricDescriptor => $_getN(4);
   @$pb.TagNumber(5)
-  set metricDescriptor($197.MetricDescriptor v) { setField(5, v); }
+  set metricDescriptor($197.MetricDescriptor v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMetricDescriptor() => $_has(4);
   @$pb.TagNumber(5)
@@ -243,7 +278,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get valueExtractor => $_getSZ(5);
   @$pb.TagNumber(6)
-  set valueExtractor($core.String v) { $_setString(5, v); }
+  set valueExtractor($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasValueExtractor() => $_has(5);
   @$pb.TagNumber(6)
@@ -272,7 +310,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $367.Distribution_BucketOptions get bucketOptions => $_getN(7);
   @$pb.TagNumber(8)
-  set bucketOptions($367.Distribution_BucketOptions v) { setField(8, v); }
+  set bucketOptions($367.Distribution_BucketOptions v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasBucketOptions() => $_has(7);
   @$pb.TagNumber(8)
@@ -286,7 +327,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($302.Timestamp v) { setField(9, v); }
+  set createTime($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
@@ -300,7 +344,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $302.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($302.Timestamp v) { setField(10, v); }
+  set updateTime($302.Timestamp v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
@@ -313,7 +360,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get disabled => $_getBF(10);
   @$pb.TagNumber(12)
-  set disabled($core.bool v) { $_setBool(10, v); }
+  set disabled($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasDisabled() => $_has(10);
   @$pb.TagNumber(12)
@@ -331,7 +381,10 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get bucketName => $_getSZ(11);
   @$pb.TagNumber(13)
-  set bucketName($core.String v) { $_setString(11, v); }
+  set bucketName($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasBucketName() => $_has(11);
   @$pb.TagNumber(13)
@@ -358,35 +411,46 @@ class ListLogMetricsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListLogMetricsRequest._() : super();
-  factory ListLogMetricsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLogMetricsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLogMetricsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLogMetricsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLogMetricsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLogMetricsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListLogMetricsRequest clone() => ListLogMetricsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLogMetricsRequest copyWith(void Function(ListLogMetricsRequest) updates) => super.copyWith((message) => updates(message as ListLogMetricsRequest)) as ListLogMetricsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListLogMetricsRequest clone() =>
+      ListLogMetricsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLogMetricsRequest copyWith(
+          void Function(ListLogMetricsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListLogMetricsRequest))
+          as ListLogMetricsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLogMetricsRequest create() => ListLogMetricsRequest._();
   ListLogMetricsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListLogMetricsRequest> createRepeated() => $pb.PbList<ListLogMetricsRequest>();
+  static $pb.PbList<ListLogMetricsRequest> createRepeated() =>
+      $pb.PbList<ListLogMetricsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListLogMetricsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLogMetricsRequest>(create);
+  static ListLogMetricsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLogMetricsRequest>(create);
   static ListLogMetricsRequest? _defaultInstance;
 
   ///  Required. The name of the project containing the metrics:
@@ -395,7 +459,10 @@ class ListLogMetricsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -408,7 +475,10 @@ class ListLogMetricsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -420,7 +490,10 @@ class ListLogMetricsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -443,34 +516,46 @@ class ListLogMetricsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListLogMetricsResponse._() : super();
-  factory ListLogMetricsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLogMetricsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLogMetricsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLogMetricsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLogMetricsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..pc<LogMetric>(1, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: LogMetric.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLogMetricsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
+    ..pc<LogMetric>(1, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM,
+        subBuilder: LogMetric.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListLogMetricsResponse clone() => ListLogMetricsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLogMetricsResponse copyWith(void Function(ListLogMetricsResponse) updates) => super.copyWith((message) => updates(message as ListLogMetricsResponse)) as ListLogMetricsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListLogMetricsResponse clone() =>
+      ListLogMetricsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLogMetricsResponse copyWith(
+          void Function(ListLogMetricsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListLogMetricsResponse))
+          as ListLogMetricsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLogMetricsResponse create() => ListLogMetricsResponse._();
   ListLogMetricsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListLogMetricsResponse> createRepeated() => $pb.PbList<ListLogMetricsResponse>();
+  static $pb.PbList<ListLogMetricsResponse> createRepeated() =>
+      $pb.PbList<ListLogMetricsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListLogMetricsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLogMetricsResponse>(create);
+  static ListLogMetricsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLogMetricsResponse>(create);
   static ListLogMetricsResponse? _defaultInstance;
 
   /// A list of logs-based metrics.
@@ -483,7 +568,10 @@ class ListLogMetricsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -502,33 +590,42 @@ class GetLogMetricRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetLogMetricRequest._() : super();
-  factory GetLogMetricRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetLogMetricRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetLogMetricRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetLogMetricRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetLogMetricRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetLogMetricRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'metricName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetLogMetricRequest clone() => GetLogMetricRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetLogMetricRequest copyWith(void Function(GetLogMetricRequest) updates) => super.copyWith((message) => updates(message as GetLogMetricRequest)) as GetLogMetricRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetLogMetricRequest copyWith(void Function(GetLogMetricRequest) updates) =>
+      super.copyWith((message) => updates(message as GetLogMetricRequest))
+          as GetLogMetricRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetLogMetricRequest create() => GetLogMetricRequest._();
   GetLogMetricRequest createEmptyInstance() => create();
-  static $pb.PbList<GetLogMetricRequest> createRepeated() => $pb.PbList<GetLogMetricRequest>();
+  static $pb.PbList<GetLogMetricRequest> createRepeated() =>
+      $pb.PbList<GetLogMetricRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetLogMetricRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetLogMetricRequest>(create);
+  static GetLogMetricRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetLogMetricRequest>(create);
   static GetLogMetricRequest? _defaultInstance;
 
   ///  Required. The resource name of the desired metric:
@@ -537,7 +634,10 @@ class GetLogMetricRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get metricName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set metricName($core.String v) { $_setString(0, v); }
+  set metricName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetricName() => $_has(0);
   @$pb.TagNumber(1)
@@ -560,34 +660,46 @@ class CreateLogMetricRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateLogMetricRequest._() : super();
-  factory CreateLogMetricRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateLogMetricRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateLogMetricRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateLogMetricRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateLogMetricRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateLogMetricRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<LogMetric>(2, _omitFieldNames ? '' : 'metric', subBuilder: LogMetric.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<LogMetric>(2, _omitFieldNames ? '' : 'metric',
+        subBuilder: LogMetric.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateLogMetricRequest clone() => CreateLogMetricRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateLogMetricRequest copyWith(void Function(CreateLogMetricRequest) updates) => super.copyWith((message) => updates(message as CreateLogMetricRequest)) as CreateLogMetricRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateLogMetricRequest clone() =>
+      CreateLogMetricRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateLogMetricRequest copyWith(
+          void Function(CreateLogMetricRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateLogMetricRequest))
+          as CreateLogMetricRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateLogMetricRequest create() => CreateLogMetricRequest._();
   CreateLogMetricRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateLogMetricRequest> createRepeated() => $pb.PbList<CreateLogMetricRequest>();
+  static $pb.PbList<CreateLogMetricRequest> createRepeated() =>
+      $pb.PbList<CreateLogMetricRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateLogMetricRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateLogMetricRequest>(create);
+  static CreateLogMetricRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateLogMetricRequest>(create);
   static CreateLogMetricRequest? _defaultInstance;
 
   ///  Required. The resource name of the project in which to create the metric:
@@ -598,7 +710,10 @@ class CreateLogMetricRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -609,7 +724,10 @@ class CreateLogMetricRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   LogMetric get metric => $_getN(1);
   @$pb.TagNumber(2)
-  set metric(LogMetric v) { setField(2, v); }
+  set metric(LogMetric v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMetric() => $_has(1);
   @$pb.TagNumber(2)
@@ -634,34 +752,46 @@ class UpdateLogMetricRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateLogMetricRequest._() : super();
-  factory UpdateLogMetricRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateLogMetricRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateLogMetricRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateLogMetricRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateLogMetricRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateLogMetricRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'metricName')
-    ..aOM<LogMetric>(2, _omitFieldNames ? '' : 'metric', subBuilder: LogMetric.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<LogMetric>(2, _omitFieldNames ? '' : 'metric',
+        subBuilder: LogMetric.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateLogMetricRequest clone() => UpdateLogMetricRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateLogMetricRequest copyWith(void Function(UpdateLogMetricRequest) updates) => super.copyWith((message) => updates(message as UpdateLogMetricRequest)) as UpdateLogMetricRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateLogMetricRequest clone() =>
+      UpdateLogMetricRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateLogMetricRequest copyWith(
+          void Function(UpdateLogMetricRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateLogMetricRequest))
+          as UpdateLogMetricRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateLogMetricRequest create() => UpdateLogMetricRequest._();
   UpdateLogMetricRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateLogMetricRequest> createRepeated() => $pb.PbList<UpdateLogMetricRequest>();
+  static $pb.PbList<UpdateLogMetricRequest> createRepeated() =>
+      $pb.PbList<UpdateLogMetricRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateLogMetricRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateLogMetricRequest>(create);
+  static UpdateLogMetricRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateLogMetricRequest>(create);
   static UpdateLogMetricRequest? _defaultInstance;
 
   ///  Required. The resource name of the metric to update:
@@ -674,7 +804,10 @@ class UpdateLogMetricRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get metricName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set metricName($core.String v) { $_setString(0, v); }
+  set metricName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetricName() => $_has(0);
   @$pb.TagNumber(1)
@@ -684,7 +817,10 @@ class UpdateLogMetricRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   LogMetric get metric => $_getN(1);
   @$pb.TagNumber(2)
-  set metric(LogMetric v) { setField(2, v); }
+  set metric(LogMetric v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMetric() => $_has(1);
   @$pb.TagNumber(2)
@@ -705,33 +841,44 @@ class DeleteLogMetricRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteLogMetricRequest._() : super();
-  factory DeleteLogMetricRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteLogMetricRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteLogMetricRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteLogMetricRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteLogMetricRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteLogMetricRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'metricName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteLogMetricRequest clone() => DeleteLogMetricRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteLogMetricRequest copyWith(void Function(DeleteLogMetricRequest) updates) => super.copyWith((message) => updates(message as DeleteLogMetricRequest)) as DeleteLogMetricRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteLogMetricRequest clone() =>
+      DeleteLogMetricRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteLogMetricRequest copyWith(
+          void Function(DeleteLogMetricRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteLogMetricRequest))
+          as DeleteLogMetricRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteLogMetricRequest create() => DeleteLogMetricRequest._();
   DeleteLogMetricRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteLogMetricRequest> createRepeated() => $pb.PbList<DeleteLogMetricRequest>();
+  static $pb.PbList<DeleteLogMetricRequest> createRepeated() =>
+      $pb.PbList<DeleteLogMetricRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteLogMetricRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteLogMetricRequest>(create);
+  static DeleteLogMetricRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteLogMetricRequest>(create);
   static DeleteLogMetricRequest? _defaultInstance;
 
   ///  Required. The resource name of the metric to delete:
@@ -740,13 +887,16 @@ class DeleteLogMetricRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get metricName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set metricName($core.String v) { $_setString(0, v); }
+  set metricName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetricName() => $_has(0);
   @$pb.TagNumber(1)
   void clearMetricName() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

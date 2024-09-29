@@ -53,43 +53,58 @@ class CreateVehicleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateVehicleRequest._() : super();
-  factory CreateVehicleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateVehicleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateVehicleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateVehicleRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'vehicleId')
-    ..aOM<$167.Vehicle>(5, _omitFieldNames ? '' : 'vehicle', subBuilder: $167.Vehicle.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$167.Vehicle>(5, _omitFieldNames ? '' : 'vehicle',
+        subBuilder: $167.Vehicle.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateVehicleRequest clone() => CreateVehicleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateVehicleRequest copyWith(void Function(CreateVehicleRequest) updates) => super.copyWith((message) => updates(message as CreateVehicleRequest)) as CreateVehicleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateVehicleRequest clone() =>
+      CreateVehicleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateVehicleRequest copyWith(void Function(CreateVehicleRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateVehicleRequest))
+          as CreateVehicleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateVehicleRequest create() => CreateVehicleRequest._();
   CreateVehicleRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateVehicleRequest> createRepeated() => $pb.PbList<CreateVehicleRequest>();
+  static $pb.PbList<CreateVehicleRequest> createRepeated() =>
+      $pb.PbList<CreateVehicleRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateVehicleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateVehicleRequest>(create);
+  static CreateVehicleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateVehicleRequest>(create);
   static CreateVehicleRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -104,7 +119,10 @@ class CreateVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -122,7 +140,10 @@ class CreateVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get vehicleId => $_getSZ(2);
   @$pb.TagNumber(4)
-  set vehicleId($core.String v) { $_setString(2, v); }
+  set vehicleId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVehicleId() => $_has(2);
   @$pb.TagNumber(4)
@@ -157,7 +178,10 @@ class CreateVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $167.Vehicle get vehicle => $_getN(3);
   @$pb.TagNumber(5)
-  set vehicle($167.Vehicle v) { setField(5, v); }
+  set vehicle($167.Vehicle v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasVehicle() => $_has(3);
   @$pb.TagNumber(5)
@@ -190,43 +214,59 @@ class GetVehicleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetVehicleRequest._() : super();
-  factory GetVehicleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetVehicleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetVehicleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetVehicleRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'currentRouteSegmentVersion', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'waypointsVersion', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(
+        4, _omitFieldNames ? '' : 'currentRouteSegmentVersion',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'waypointsVersion',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetVehicleRequest clone() => GetVehicleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetVehicleRequest copyWith(void Function(GetVehicleRequest) updates) => super.copyWith((message) => updates(message as GetVehicleRequest)) as GetVehicleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetVehicleRequest copyWith(void Function(GetVehicleRequest) updates) =>
+      super.copyWith((message) => updates(message as GetVehicleRequest))
+          as GetVehicleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetVehicleRequest create() => GetVehicleRequest._();
   GetVehicleRequest createEmptyInstance() => create();
-  static $pb.PbList<GetVehicleRequest> createRepeated() => $pb.PbList<GetVehicleRequest>();
+  static $pb.PbList<GetVehicleRequest> createRepeated() =>
+      $pb.PbList<GetVehicleRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetVehicleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetVehicleRequest>(create);
+  static GetVehicleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetVehicleRequest>(create);
   static GetVehicleRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -242,7 +282,10 @@ class GetVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -256,7 +299,10 @@ class GetVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get currentRouteSegmentVersion => $_getN(2);
   @$pb.TagNumber(4)
-  set currentRouteSegmentVersion($302.Timestamp v) { setField(4, v); }
+  set currentRouteSegmentVersion($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCurrentRouteSegmentVersion() => $_has(2);
   @$pb.TagNumber(4)
@@ -271,7 +317,10 @@ class GetVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get waypointsVersion => $_getN(3);
   @$pb.TagNumber(5)
-  set waypointsVersion($302.Timestamp v) { setField(5, v); }
+  set waypointsVersion($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasWaypointsVersion() => $_has(3);
   @$pb.TagNumber(5)
@@ -304,43 +353,59 @@ class UpdateVehicleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateVehicleRequest._() : super();
-  factory UpdateVehicleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateVehicleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateVehicleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateVehicleRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$167.Vehicle>(4, _omitFieldNames ? '' : 'vehicle', subBuilder: $167.Vehicle.create)
-    ..aOM<$333.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$167.Vehicle>(4, _omitFieldNames ? '' : 'vehicle',
+        subBuilder: $167.Vehicle.create)
+    ..aOM<$333.FieldMask>(5, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateVehicleRequest clone() => UpdateVehicleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateVehicleRequest copyWith(void Function(UpdateVehicleRequest) updates) => super.copyWith((message) => updates(message as UpdateVehicleRequest)) as UpdateVehicleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateVehicleRequest clone() =>
+      UpdateVehicleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateVehicleRequest copyWith(void Function(UpdateVehicleRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateVehicleRequest))
+          as UpdateVehicleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateVehicleRequest create() => UpdateVehicleRequest._();
   UpdateVehicleRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateVehicleRequest> createRepeated() => $pb.PbList<UpdateVehicleRequest>();
+  static $pb.PbList<UpdateVehicleRequest> createRepeated() =>
+      $pb.PbList<UpdateVehicleRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateVehicleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateVehicleRequest>(create);
+  static UpdateVehicleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateVehicleRequest>(create);
   static UpdateVehicleRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -356,7 +421,10 @@ class UpdateVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -381,7 +449,10 @@ class UpdateVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $167.Vehicle get vehicle => $_getN(2);
   @$pb.TagNumber(4)
-  set vehicle($167.Vehicle v) { setField(4, v); }
+  set vehicle($167.Vehicle v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVehicle() => $_has(2);
   @$pb.TagNumber(4)
@@ -394,7 +465,10 @@ class UpdateVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $333.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(5)
-  set updateMask($333.FieldMask v) { setField(5, v); }
+  set updateMask($333.FieldMask v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(5)
@@ -423,42 +497,61 @@ class UpdateVehicleAttributesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateVehicleAttributesRequest._() : super();
-  factory UpdateVehicleAttributesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateVehicleAttributesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateVehicleAttributesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateVehicleAttributesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVehicleAttributesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateVehicleAttributesRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..pc<$457.VehicleAttribute>(4, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $457.VehicleAttribute.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$457.VehicleAttribute>(
+        4, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM,
+        subBuilder: $457.VehicleAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateVehicleAttributesRequest clone() => UpdateVehicleAttributesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateVehicleAttributesRequest copyWith(void Function(UpdateVehicleAttributesRequest) updates) => super.copyWith((message) => updates(message as UpdateVehicleAttributesRequest)) as UpdateVehicleAttributesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateVehicleAttributesRequest clone() =>
+      UpdateVehicleAttributesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateVehicleAttributesRequest copyWith(
+          void Function(UpdateVehicleAttributesRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateVehicleAttributesRequest))
+          as UpdateVehicleAttributesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateVehicleAttributesRequest create() => UpdateVehicleAttributesRequest._();
+  static UpdateVehicleAttributesRequest create() =>
+      UpdateVehicleAttributesRequest._();
   UpdateVehicleAttributesRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateVehicleAttributesRequest> createRepeated() => $pb.PbList<UpdateVehicleAttributesRequest>();
+  static $pb.PbList<UpdateVehicleAttributesRequest> createRepeated() =>
+      $pb.PbList<UpdateVehicleAttributesRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateVehicleAttributesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateVehicleAttributesRequest>(create);
+  static UpdateVehicleAttributesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateVehicleAttributesRequest>(create);
   static UpdateVehicleAttributesRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -473,7 +566,10 @@ class UpdateVehicleAttributesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -497,33 +593,49 @@ class UpdateVehicleAttributesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateVehicleAttributesResponse._() : super();
-  factory UpdateVehicleAttributesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateVehicleAttributesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateVehicleAttributesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateVehicleAttributesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVehicleAttributesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<$457.VehicleAttribute>(1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $457.VehicleAttribute.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateVehicleAttributesResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..pc<$457.VehicleAttribute>(
+        1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM,
+        subBuilder: $457.VehicleAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateVehicleAttributesResponse clone() => UpdateVehicleAttributesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateVehicleAttributesResponse copyWith(void Function(UpdateVehicleAttributesResponse) updates) => super.copyWith((message) => updates(message as UpdateVehicleAttributesResponse)) as UpdateVehicleAttributesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateVehicleAttributesResponse clone() =>
+      UpdateVehicleAttributesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateVehicleAttributesResponse copyWith(
+          void Function(UpdateVehicleAttributesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateVehicleAttributesResponse))
+          as UpdateVehicleAttributesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateVehicleAttributesResponse create() => UpdateVehicleAttributesResponse._();
+  static UpdateVehicleAttributesResponse create() =>
+      UpdateVehicleAttributesResponse._();
   UpdateVehicleAttributesResponse createEmptyInstance() => create();
-  static $pb.PbList<UpdateVehicleAttributesResponse> createRepeated() => $pb.PbList<UpdateVehicleAttributesResponse>();
+  static $pb.PbList<UpdateVehicleAttributesResponse> createRepeated() =>
+      $pb.PbList<UpdateVehicleAttributesResponse>();
   @$core.pragma('dart2js:noInline')
-  static UpdateVehicleAttributesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateVehicleAttributesResponse>(create);
+  static UpdateVehicleAttributesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateVehicleAttributesResponse>(
+          create);
   static UpdateVehicleAttributesResponse? _defaultInstance;
 
   /// Required. The updated full list of vehicle attributes, including new,
@@ -612,57 +724,99 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchVehiclesRequest._() : super();
-  factory SearchVehiclesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchVehiclesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchVehiclesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchVehiclesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchVehiclesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchVehiclesRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
-    ..aOM<$457.TerminalLocation>(4, _omitFieldNames ? '' : 'pickupPoint', subBuilder: $457.TerminalLocation.create)
-    ..aOM<$457.TerminalLocation>(5, _omitFieldNames ? '' : 'dropoffPoint', subBuilder: $457.TerminalLocation.create)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'pickupRadiusMeters', $pb.PbFieldType.O3)
+    ..aOM<$457.TerminalLocation>(4, _omitFieldNames ? '' : 'pickupPoint',
+        subBuilder: $457.TerminalLocation.create)
+    ..aOM<$457.TerminalLocation>(5, _omitFieldNames ? '' : 'dropoffPoint',
+        subBuilder: $457.TerminalLocation.create)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'pickupRadiusMeters', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'minimumCapacity', $pb.PbFieldType.O3)
-    ..pc<$457.TripType>(9, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE, valueOf: $457.TripType.valueOf, enumValues: $457.TripType.values, defaultEnumValue: $457.TripType.UNKNOWN_TRIP_TYPE)
-    ..aOM<$264.Duration>(10, _omitFieldNames ? '' : 'maximumStaleness', subBuilder: $264.Duration.create)
-    ..pc<$457.VehicleAttribute>(12, _omitFieldNames ? '' : 'requiredAttributes', $pb.PbFieldType.PM, subBuilder: $457.VehicleAttribute.create)
-    ..e<SearchVehiclesRequest_VehicleMatchOrder>(13, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.OE, defaultOrMaker: SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER, valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf, enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
-    ..pc<$167.Vehicle_VehicleType>(14, _omitFieldNames ? '' : 'vehicleTypes', $pb.PbFieldType.PM, subBuilder: $167.Vehicle_VehicleType.create)
-    ..pc<VehicleAttributeList>(15, _omitFieldNames ? '' : 'requiredOneOfAttributes', $pb.PbFieldType.PM, subBuilder: VehicleAttributeList.create)
+    ..a<$core.int>(
+        8, _omitFieldNames ? '' : 'minimumCapacity', $pb.PbFieldType.O3)
+    ..pc<$457.TripType>(
+        9, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE,
+        valueOf: $457.TripType.valueOf,
+        enumValues: $457.TripType.values,
+        defaultEnumValue: $457.TripType.UNKNOWN_TRIP_TYPE)
+    ..aOM<$264.Duration>(10, _omitFieldNames ? '' : 'maximumStaleness',
+        subBuilder: $264.Duration.create)
+    ..pc<$457.VehicleAttribute>(
+        12, _omitFieldNames ? '' : 'requiredAttributes', $pb.PbFieldType.PM,
+        subBuilder: $457.VehicleAttribute.create)
+    ..e<SearchVehiclesRequest_VehicleMatchOrder>(
+        13, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER,
+        valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf,
+        enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
+    ..pc<$167.Vehicle_VehicleType>(
+        14, _omitFieldNames ? '' : 'vehicleTypes', $pb.PbFieldType.PM,
+        subBuilder: $167.Vehicle_VehicleType.create)
+    ..pc<VehicleAttributeList>(15,
+        _omitFieldNames ? '' : 'requiredOneOfAttributes', $pb.PbFieldType.PM,
+        subBuilder: VehicleAttributeList.create)
     ..aOB(18, _omitFieldNames ? '' : 'includeBackToBack')
     ..aOS(19, _omitFieldNames ? '' : 'tripId')
-    ..pc<VehicleAttributeList>(20, _omitFieldNames ? '' : 'requiredOneOfAttributeSets', $pb.PbFieldType.PM, subBuilder: VehicleAttributeList.create)
-    ..e<SearchVehiclesRequest_CurrentTripsPresent>(21, _omitFieldNames ? '' : 'currentTripsPresent', $pb.PbFieldType.OE, defaultOrMaker: SearchVehiclesRequest_CurrentTripsPresent.CURRENT_TRIPS_PRESENT_UNSPECIFIED, valueOf: SearchVehiclesRequest_CurrentTripsPresent.valueOf, enumValues: SearchVehiclesRequest_CurrentTripsPresent.values)
+    ..pc<VehicleAttributeList>(20,
+        _omitFieldNames ? '' : 'requiredOneOfAttributeSets', $pb.PbFieldType.PM,
+        subBuilder: VehicleAttributeList.create)
+    ..e<SearchVehiclesRequest_CurrentTripsPresent>(
+        21, _omitFieldNames ? '' : 'currentTripsPresent', $pb.PbFieldType.OE,
+        defaultOrMaker: SearchVehiclesRequest_CurrentTripsPresent
+            .CURRENT_TRIPS_PRESENT_UNSPECIFIED,
+        valueOf: SearchVehiclesRequest_CurrentTripsPresent.valueOf,
+        enumValues: SearchVehiclesRequest_CurrentTripsPresent.values)
     ..aOS(22, _omitFieldNames ? '' : 'filter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchVehiclesRequest clone() => SearchVehiclesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchVehiclesRequest copyWith(void Function(SearchVehiclesRequest) updates) => super.copyWith((message) => updates(message as SearchVehiclesRequest)) as SearchVehiclesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchVehiclesRequest clone() =>
+      SearchVehiclesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchVehiclesRequest copyWith(
+          void Function(SearchVehiclesRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchVehiclesRequest))
+          as SearchVehiclesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchVehiclesRequest create() => SearchVehiclesRequest._();
   SearchVehiclesRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchVehiclesRequest> createRepeated() => $pb.PbList<SearchVehiclesRequest>();
+  static $pb.PbList<SearchVehiclesRequest> createRepeated() =>
+      $pb.PbList<SearchVehiclesRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchVehiclesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchVehiclesRequest>(create);
+  static SearchVehiclesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchVehiclesRequest>(create);
   static SearchVehiclesRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -677,7 +831,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -687,7 +844,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $457.TerminalLocation get pickupPoint => $_getN(2);
   @$pb.TagNumber(4)
-  set pickupPoint($457.TerminalLocation v) { setField(4, v); }
+  set pickupPoint($457.TerminalLocation v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPickupPoint() => $_has(2);
   @$pb.TagNumber(4)
@@ -700,7 +860,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $457.TerminalLocation get dropoffPoint => $_getN(3);
   @$pb.TagNumber(5)
-  set dropoffPoint($457.TerminalLocation v) { setField(5, v); }
+  set dropoffPoint($457.TerminalLocation v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDropoffPoint() => $_has(3);
   @$pb.TagNumber(5)
@@ -714,7 +877,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get pickupRadiusMeters => $_getIZ(4);
   @$pb.TagNumber(6)
-  set pickupRadiusMeters($core.int v) { $_setSignedInt32(4, v); }
+  set pickupRadiusMeters($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPickupRadiusMeters() => $_has(4);
   @$pb.TagNumber(6)
@@ -725,7 +891,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get count => $_getIZ(5);
   @$pb.TagNumber(7)
-  set count($core.int v) { $_setSignedInt32(5, v); }
+  set count($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCount() => $_has(5);
   @$pb.TagNumber(7)
@@ -737,7 +906,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get minimumCapacity => $_getIZ(6);
   @$pb.TagNumber(8)
-  set minimumCapacity($core.int v) { $_setSignedInt32(6, v); }
+  set minimumCapacity($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMinimumCapacity() => $_has(6);
   @$pb.TagNumber(8)
@@ -756,7 +928,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $264.Duration get maximumStaleness => $_getN(8);
   @$pb.TagNumber(10)
-  set maximumStaleness($264.Duration v) { setField(10, v); }
+  set maximumStaleness($264.Duration v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasMaximumStaleness() => $_has(8);
   @$pb.TagNumber(10)
@@ -793,7 +968,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   SearchVehiclesRequest_VehicleMatchOrder get orderBy => $_getN(10);
   @$pb.TagNumber(13)
-  set orderBy(SearchVehiclesRequest_VehicleMatchOrder v) { setField(13, v); }
+  set orderBy(SearchVehiclesRequest_VehicleMatchOrder v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasOrderBy() => $_has(10);
   @$pb.TagNumber(13)
@@ -826,7 +1004,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool get includeBackToBack => $_getBF(13);
   @$pb.TagNumber(18)
-  set includeBackToBack($core.bool v) { $_setBool(13, v); }
+  set includeBackToBack($core.bool v) {
+    $_setBool(13, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasIncludeBackToBack() => $_has(13);
   @$pb.TagNumber(18)
@@ -836,7 +1017,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get tripId => $_getSZ(14);
   @$pb.TagNumber(19)
-  set tripId($core.String v) { $_setString(14, v); }
+  set tripId($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasTripId() => $_has(14);
   @$pb.TagNumber(19)
@@ -868,15 +1052,20 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   ///  operation in each `VehicleAttributeList` and inclusive disjunction/OR
   ///  operation across the collection of `VehicleAttributeList`.
   @$pb.TagNumber(20)
-  $core.List<VehicleAttributeList> get requiredOneOfAttributeSets => $_getList(15);
+  $core.List<VehicleAttributeList> get requiredOneOfAttributeSets =>
+      $_getList(15);
 
   /// This indicates if vehicles with active trips are eligible for this search.
   /// This must be set to something other than
   /// `CURRENT_TRIPS_PRESENT_UNSPECIFIED` if `trip_type` includes `SHARED`.
   @$pb.TagNumber(21)
-  SearchVehiclesRequest_CurrentTripsPresent get currentTripsPresent => $_getN(16);
+  SearchVehiclesRequest_CurrentTripsPresent get currentTripsPresent =>
+      $_getN(16);
   @$pb.TagNumber(21)
-  set currentTripsPresent(SearchVehiclesRequest_CurrentTripsPresent v) { setField(21, v); }
+  set currentTripsPresent(SearchVehiclesRequest_CurrentTripsPresent v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasCurrentTripsPresent() => $_has(16);
   @$pb.TagNumber(21)
@@ -907,7 +1096,10 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get filter => $_getSZ(17);
   @$pb.TagNumber(22)
-  set filter($core.String v) { $_setString(17, v); }
+  set filter($core.String v) {
+    $_setString(17, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasFilter() => $_has(17);
   @$pb.TagNumber(22)
@@ -926,33 +1118,45 @@ class SearchVehiclesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchVehiclesResponse._() : super();
-  factory SearchVehiclesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchVehiclesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchVehiclesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchVehiclesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchVehiclesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<VehicleMatch>(1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM, subBuilder: VehicleMatch.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchVehiclesResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..pc<VehicleMatch>(1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+        subBuilder: VehicleMatch.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchVehiclesResponse clone() => SearchVehiclesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchVehiclesResponse copyWith(void Function(SearchVehiclesResponse) updates) => super.copyWith((message) => updates(message as SearchVehiclesResponse)) as SearchVehiclesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchVehiclesResponse clone() =>
+      SearchVehiclesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchVehiclesResponse copyWith(
+          void Function(SearchVehiclesResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchVehiclesResponse))
+          as SearchVehiclesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchVehiclesResponse create() => SearchVehiclesResponse._();
   SearchVehiclesResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchVehiclesResponse> createRepeated() => $pb.PbList<SearchVehiclesResponse>();
+  static $pb.PbList<SearchVehiclesResponse> createRepeated() =>
+      $pb.PbList<SearchVehiclesResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchVehiclesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchVehiclesResponse>(create);
+  static SearchVehiclesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchVehiclesResponse>(create);
   static SearchVehiclesResponse? _defaultInstance;
 
   /// List of vehicles that match the `SearchVehiclesRequest` criteria, ordered
@@ -1029,47 +1233,72 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListVehiclesRequest._() : super();
-  factory ListVehiclesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListVehiclesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListVehiclesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListVehiclesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListVehiclesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListVehiclesRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$307.Int32Value>(6, _omitFieldNames ? '' : 'minimumCapacity', subBuilder: $307.Int32Value.create)
-    ..pc<$457.TripType>(7, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE, valueOf: $457.TripType.valueOf, enumValues: $457.TripType.values, defaultEnumValue: $457.TripType.UNKNOWN_TRIP_TYPE)
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'maximumStaleness', subBuilder: $264.Duration.create)
-    ..pc<$167.Vehicle_VehicleType_Category>(9, _omitFieldNames ? '' : 'vehicleTypeCategories', $pb.PbFieldType.KE, valueOf: $167.Vehicle_VehicleType_Category.valueOf, enumValues: $167.Vehicle_VehicleType_Category.values, defaultEnumValue: $167.Vehicle_VehicleType_Category.UNKNOWN)
+    ..aOM<$307.Int32Value>(6, _omitFieldNames ? '' : 'minimumCapacity',
+        subBuilder: $307.Int32Value.create)
+    ..pc<$457.TripType>(
+        7, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE,
+        valueOf: $457.TripType.valueOf,
+        enumValues: $457.TripType.values,
+        defaultEnumValue: $457.TripType.UNKNOWN_TRIP_TYPE)
+    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'maximumStaleness',
+        subBuilder: $264.Duration.create)
+    ..pc<$167.Vehicle_VehicleType_Category>(
+        9, _omitFieldNames ? '' : 'vehicleTypeCategories', $pb.PbFieldType.KE,
+        valueOf: $167.Vehicle_VehicleType_Category.valueOf,
+        enumValues: $167.Vehicle_VehicleType_Category.values,
+        defaultEnumValue: $167.Vehicle_VehicleType_Category.UNKNOWN)
     ..pPS(10, _omitFieldNames ? '' : 'requiredAttributes')
-    ..e<$167.VehicleState>(11, _omitFieldNames ? '' : 'vehicleState', $pb.PbFieldType.OE, defaultOrMaker: $167.VehicleState.UNKNOWN_VEHICLE_STATE, valueOf: $167.VehicleState.valueOf, enumValues: $167.VehicleState.values)
-    ..aOM<$458.RequestHeader>(12, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+    ..e<$167.VehicleState>(
+        11, _omitFieldNames ? '' : 'vehicleState', $pb.PbFieldType.OE,
+        defaultOrMaker: $167.VehicleState.UNKNOWN_VEHICLE_STATE,
+        valueOf: $167.VehicleState.valueOf,
+        enumValues: $167.VehicleState.values)
+    ..aOM<$458.RequestHeader>(12, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..pPS(13, _omitFieldNames ? '' : 'requiredOneOfAttributes')
     ..aOB(14, _omitFieldNames ? '' : 'onTripOnly')
     ..pPS(15, _omitFieldNames ? '' : 'requiredOneOfAttributeSets')
     ..aOS(16, _omitFieldNames ? '' : 'filter')
-    ..aOM<$449.Viewport>(17, _omitFieldNames ? '' : 'viewport', subBuilder: $449.Viewport.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$449.Viewport>(17, _omitFieldNames ? '' : 'viewport',
+        subBuilder: $449.Viewport.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListVehiclesRequest clone() => ListVehiclesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListVehiclesRequest copyWith(void Function(ListVehiclesRequest) updates) => super.copyWith((message) => updates(message as ListVehiclesRequest)) as ListVehiclesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListVehiclesRequest copyWith(void Function(ListVehiclesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListVehiclesRequest))
+          as ListVehiclesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListVehiclesRequest create() => ListVehiclesRequest._();
   ListVehiclesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListVehiclesRequest> createRepeated() => $pb.PbList<ListVehiclesRequest>();
+  static $pb.PbList<ListVehiclesRequest> createRepeated() =>
+      $pb.PbList<ListVehiclesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListVehiclesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListVehiclesRequest>(create);
+  static ListVehiclesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListVehiclesRequest>(create);
   static ListVehiclesRequest? _defaultInstance;
 
   /// Required. Must be in the format `providers/{provider}`.
@@ -1079,7 +1308,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1090,7 +1322,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(3)
@@ -1103,7 +1338,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(4)
@@ -1115,7 +1353,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $307.Int32Value get minimumCapacity => $_getN(3);
   @$pb.TagNumber(6)
-  set minimumCapacity($307.Int32Value v) { setField(6, v); }
+  set minimumCapacity($307.Int32Value v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMinimumCapacity() => $_has(3);
   @$pb.TagNumber(6)
@@ -1135,7 +1376,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $264.Duration get maximumStaleness => $_getN(5);
   @$pb.TagNumber(8)
-  set maximumStaleness($264.Duration v) { setField(8, v); }
+  set maximumStaleness($264.Duration v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMaximumStaleness() => $_has(5);
   @$pb.TagNumber(8)
@@ -1146,7 +1390,8 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   /// Required. Restricts the response to vehicles with one of the specified type
   /// categories. `UNKNOWN` is not allowed.
   @$pb.TagNumber(9)
-  $core.List<$167.Vehicle_VehicleType_Category> get vehicleTypeCategories => $_getList(6);
+  $core.List<$167.Vehicle_VehicleType_Category> get vehicleTypeCategories =>
+      $_getList(6);
 
   ///  Callers can form complex logical operations using any combination of the
   ///  `required_attributes`, `required_one_of_attributes`, and
@@ -1177,7 +1422,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $167.VehicleState get vehicleState => $_getN(8);
   @$pb.TagNumber(11)
-  set vehicleState($167.VehicleState v) { setField(11, v); }
+  set vehicleState($167.VehicleState v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasVehicleState() => $_has(8);
   @$pb.TagNumber(11)
@@ -1187,7 +1435,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $458.RequestHeader get header => $_getN(9);
   @$pb.TagNumber(12)
-  set header($458.RequestHeader v) { setField(12, v); }
+  set header($458.RequestHeader v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasHeader() => $_has(9);
   @$pb.TagNumber(12)
@@ -1209,7 +1460,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool get onTripOnly => $_getBF(11);
   @$pb.TagNumber(14)
-  set onTripOnly($core.bool v) { $_setBool(11, v); }
+  set onTripOnly($core.bool v) {
+    $_setBool(11, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasOnTripOnly() => $_has(11);
   @$pb.TagNumber(14)
@@ -1269,7 +1523,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get filter => $_getSZ(13);
   @$pb.TagNumber(16)
-  set filter($core.String v) { $_setString(13, v); }
+  set filter($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasFilter() => $_has(13);
   @$pb.TagNumber(16)
@@ -1280,7 +1537,10 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $449.Viewport get viewport => $_getN(14);
   @$pb.TagNumber(17)
-  set viewport($449.Viewport v) { setField(17, v); }
+  set viewport($449.Viewport v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasViewport() => $_has(14);
   @$pb.TagNumber(17)
@@ -1309,35 +1569,46 @@ class ListVehiclesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListVehiclesResponse._() : super();
-  factory ListVehiclesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListVehiclesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListVehiclesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListVehiclesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListVehiclesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<$167.Vehicle>(1, _omitFieldNames ? '' : 'vehicles', $pb.PbFieldType.PM, subBuilder: $167.Vehicle.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListVehiclesResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..pc<$167.Vehicle>(1, _omitFieldNames ? '' : 'vehicles', $pb.PbFieldType.PM,
+        subBuilder: $167.Vehicle.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..aInt64(3, _omitFieldNames ? '' : 'totalSize')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListVehiclesResponse clone() => ListVehiclesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListVehiclesResponse copyWith(void Function(ListVehiclesResponse) updates) => super.copyWith((message) => updates(message as ListVehiclesResponse)) as ListVehiclesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListVehiclesResponse clone() =>
+      ListVehiclesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListVehiclesResponse copyWith(void Function(ListVehiclesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListVehiclesResponse))
+          as ListVehiclesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListVehiclesResponse create() => ListVehiclesResponse._();
   ListVehiclesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListVehiclesResponse> createRepeated() => $pb.PbList<ListVehiclesResponse>();
+  static $pb.PbList<ListVehiclesResponse> createRepeated() =>
+      $pb.PbList<ListVehiclesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListVehiclesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListVehiclesResponse>(create);
+  static ListVehiclesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListVehiclesResponse>(create);
   static ListVehiclesResponse? _defaultInstance;
 
   /// Vehicles matching the criteria in the request.
@@ -1351,7 +1622,10 @@ class ListVehiclesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1362,7 +1636,10 @@ class ListVehiclesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get totalSize => $_getI64(2);
   @$pb.TagNumber(3)
-  set totalSize($fixnum.Int64 v) { $_setInt64(2, v); }
+  set totalSize($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTotalSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1387,25 +1664,33 @@ class Waypoint extends $pb.GeneratedMessage {
     return $result;
   }
   Waypoint._() : super();
-  factory Waypoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Waypoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Waypoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Waypoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Waypoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $325.LatLng.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'eta', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Waypoint',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'eta',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Waypoint clone() => Waypoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Waypoint copyWith(void Function(Waypoint) updates) => super.copyWith((message) => updates(message as Waypoint)) as Waypoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Waypoint copyWith(void Function(Waypoint) updates) =>
+      super.copyWith((message) => updates(message as Waypoint)) as Waypoint;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1414,14 +1699,18 @@ class Waypoint extends $pb.GeneratedMessage {
   Waypoint createEmptyInstance() => create();
   static $pb.PbList<Waypoint> createRepeated() => $pb.PbList<Waypoint>();
   @$core.pragma('dart2js:noInline')
-  static Waypoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Waypoint>(create);
+  static Waypoint getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Waypoint>(create);
   static Waypoint? _defaultInstance;
 
   /// The location of this waypoint.
   @$pb.TagNumber(1)
   $325.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($325.LatLng v) { setField(1, v); }
+  set latLng($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
@@ -1433,7 +1722,10 @@ class Waypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get eta => $_getN(1);
   @$pb.TagNumber(2)
-  set eta($302.Timestamp v) { setField(2, v); }
+  set eta($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEta() => $_has(1);
   @$pb.TagNumber(2)
@@ -1472,7 +1764,8 @@ class VehicleMatch extends $pb.GeneratedMessage {
       $result.vehicleDropoffEta = vehicleDropoffEta;
     }
     if (vehiclePickupToDropoffDistanceMeters != null) {
-      $result.vehiclePickupToDropoffDistanceMeters = vehiclePickupToDropoffDistanceMeters;
+      $result.vehiclePickupToDropoffDistanceMeters =
+          vehiclePickupToDropoffDistanceMeters;
     }
     if (tripType != null) {
       $result.tripType = tripType;
@@ -1490,55 +1783,96 @@ class VehicleMatch extends $pb.GeneratedMessage {
       $result.orderedBy = orderedBy;
     }
     if (vehiclePickupStraightLineDistanceMeters != null) {
-      $result.vehiclePickupStraightLineDistanceMeters = vehiclePickupStraightLineDistanceMeters;
+      $result.vehiclePickupStraightLineDistanceMeters =
+          vehiclePickupStraightLineDistanceMeters;
     }
     return $result;
   }
   VehicleMatch._() : super();
-  factory VehicleMatch.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VehicleMatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VehicleMatch.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VehicleMatch.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleMatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$167.Vehicle>(1, _omitFieldNames ? '' : 'vehicle', subBuilder: $167.Vehicle.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'vehiclePickupEta', subBuilder: $302.Timestamp.create)
-    ..aOM<$307.Int32Value>(3, _omitFieldNames ? '' : 'vehiclePickupDistanceMeters', subBuilder: $307.Int32Value.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'vehicleDropoffEta', subBuilder: $302.Timestamp.create)
-    ..aOM<$307.Int32Value>(5, _omitFieldNames ? '' : 'vehiclePickupToDropoffDistanceMeters', subBuilder: $307.Int32Value.create)
-    ..e<$457.TripType>(6, _omitFieldNames ? '' : 'tripType', $pb.PbFieldType.OE, defaultOrMaker: $457.TripType.UNKNOWN_TRIP_TYPE, valueOf: $457.TripType.valueOf, enumValues: $457.TripType.values)
-    ..pc<Waypoint>(7, _omitFieldNames ? '' : 'vehicleTripsWaypoints', $pb.PbFieldType.PM, subBuilder: Waypoint.create)
-    ..e<VehicleMatch_VehicleMatchType>(8, _omitFieldNames ? '' : 'vehicleMatchType', $pb.PbFieldType.OE, defaultOrMaker: VehicleMatch_VehicleMatchType.UNKNOWN, valueOf: VehicleMatch_VehicleMatchType.valueOf, enumValues: VehicleMatch_VehicleMatchType.values)
-    ..e<SearchVehiclesRequest_VehicleMatchOrder>(9, _omitFieldNames ? '' : 'requestedOrderedBy', $pb.PbFieldType.OE, defaultOrMaker: SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER, valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf, enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
-    ..e<SearchVehiclesRequest_VehicleMatchOrder>(10, _omitFieldNames ? '' : 'orderedBy', $pb.PbFieldType.OE, defaultOrMaker: SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER, valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf, enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
-    ..aOM<$307.Int32Value>(11, _omitFieldNames ? '' : 'vehiclePickupStraightLineDistanceMeters', subBuilder: $307.Int32Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VehicleMatch',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$167.Vehicle>(1, _omitFieldNames ? '' : 'vehicle',
+        subBuilder: $167.Vehicle.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'vehiclePickupEta',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$307.Int32Value>(
+        3, _omitFieldNames ? '' : 'vehiclePickupDistanceMeters',
+        subBuilder: $307.Int32Value.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'vehicleDropoffEta',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$307.Int32Value>(
+        5, _omitFieldNames ? '' : 'vehiclePickupToDropoffDistanceMeters',
+        subBuilder: $307.Int32Value.create)
+    ..e<$457.TripType>(6, _omitFieldNames ? '' : 'tripType', $pb.PbFieldType.OE,
+        defaultOrMaker: $457.TripType.UNKNOWN_TRIP_TYPE,
+        valueOf: $457.TripType.valueOf,
+        enumValues: $457.TripType.values)
+    ..pc<Waypoint>(
+        7, _omitFieldNames ? '' : 'vehicleTripsWaypoints', $pb.PbFieldType.PM,
+        subBuilder: Waypoint.create)
+    ..e<VehicleMatch_VehicleMatchType>(
+        8, _omitFieldNames ? '' : 'vehicleMatchType', $pb.PbFieldType.OE,
+        defaultOrMaker: VehicleMatch_VehicleMatchType.UNKNOWN,
+        valueOf: VehicleMatch_VehicleMatchType.valueOf,
+        enumValues: VehicleMatch_VehicleMatchType.values)
+    ..e<SearchVehiclesRequest_VehicleMatchOrder>(
+        9, _omitFieldNames ? '' : 'requestedOrderedBy', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER,
+        valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf,
+        enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
+    ..e<SearchVehiclesRequest_VehicleMatchOrder>(
+        10, _omitFieldNames ? '' : 'orderedBy', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER,
+        valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf,
+        enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
+    ..aOM<$307.Int32Value>(
+        11, _omitFieldNames ? '' : 'vehiclePickupStraightLineDistanceMeters',
+        subBuilder: $307.Int32Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VehicleMatch clone() => VehicleMatch()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VehicleMatch copyWith(void Function(VehicleMatch) updates) => super.copyWith((message) => updates(message as VehicleMatch)) as VehicleMatch;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VehicleMatch copyWith(void Function(VehicleMatch) updates) =>
+      super.copyWith((message) => updates(message as VehicleMatch))
+          as VehicleMatch;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VehicleMatch create() => VehicleMatch._();
   VehicleMatch createEmptyInstance() => create();
-  static $pb.PbList<VehicleMatch> createRepeated() => $pb.PbList<VehicleMatch>();
+  static $pb.PbList<VehicleMatch> createRepeated() =>
+      $pb.PbList<VehicleMatch>();
   @$core.pragma('dart2js:noInline')
-  static VehicleMatch getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VehicleMatch>(create);
+  static VehicleMatch getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VehicleMatch>(create);
   static VehicleMatch? _defaultInstance;
 
   /// Required. A vehicle that matches the request.
   @$pb.TagNumber(1)
   $167.Vehicle get vehicle => $_getN(0);
   @$pb.TagNumber(1)
-  set vehicle($167.Vehicle v) { setField(1, v); }
+  set vehicle($167.Vehicle v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVehicle() => $_has(0);
   @$pb.TagNumber(1)
@@ -1554,7 +1888,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get vehiclePickupEta => $_getN(1);
   @$pb.TagNumber(2)
-  set vehiclePickupEta($302.Timestamp v) { setField(2, v); }
+  set vehiclePickupEta($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVehiclePickupEta() => $_has(1);
   @$pb.TagNumber(2)
@@ -1572,7 +1909,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $307.Int32Value get vehiclePickupDistanceMeters => $_getN(2);
   @$pb.TagNumber(3)
-  set vehiclePickupDistanceMeters($307.Int32Value v) { setField(3, v); }
+  set vehiclePickupDistanceMeters($307.Int32Value v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVehiclePickupDistanceMeters() => $_has(2);
   @$pb.TagNumber(3)
@@ -1588,7 +1928,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get vehicleDropoffEta => $_getN(3);
   @$pb.TagNumber(4)
-  set vehicleDropoffEta($302.Timestamp v) { setField(4, v); }
+  set vehicleDropoffEta($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVehicleDropoffEta() => $_has(3);
   @$pb.TagNumber(4)
@@ -1607,7 +1950,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $307.Int32Value get vehiclePickupToDropoffDistanceMeters => $_getN(4);
   @$pb.TagNumber(5)
-  set vehiclePickupToDropoffDistanceMeters($307.Int32Value v) { setField(5, v); }
+  set vehiclePickupToDropoffDistanceMeters($307.Int32Value v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasVehiclePickupToDropoffDistanceMeters() => $_has(4);
   @$pb.TagNumber(5)
@@ -1620,7 +1966,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $457.TripType get tripType => $_getN(5);
   @$pb.TagNumber(6)
-  set tripType($457.TripType v) { setField(6, v); }
+  set tripType($457.TripType v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTripType() => $_has(5);
   @$pb.TagNumber(6)
@@ -1638,7 +1987,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   VehicleMatch_VehicleMatchType get vehicleMatchType => $_getN(7);
   @$pb.TagNumber(8)
-  set vehicleMatchType(VehicleMatch_VehicleMatchType v) { setField(8, v); }
+  set vehicleMatchType(VehicleMatch_VehicleMatchType v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasVehicleMatchType() => $_has(7);
   @$pb.TagNumber(8)
@@ -1648,7 +2000,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   SearchVehiclesRequest_VehicleMatchOrder get requestedOrderedBy => $_getN(8);
   @$pb.TagNumber(9)
-  set requestedOrderedBy(SearchVehiclesRequest_VehicleMatchOrder v) { setField(9, v); }
+  set requestedOrderedBy(SearchVehiclesRequest_VehicleMatchOrder v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasRequestedOrderedBy() => $_has(8);
   @$pb.TagNumber(9)
@@ -1661,7 +2016,10 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   SearchVehiclesRequest_VehicleMatchOrder get orderedBy => $_getN(9);
   @$pb.TagNumber(10)
-  set orderedBy(SearchVehiclesRequest_VehicleMatchOrder v) { setField(10, v); }
+  set orderedBy(SearchVehiclesRequest_VehicleMatchOrder v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasOrderedBy() => $_has(9);
   @$pb.TagNumber(10)
@@ -1672,13 +2030,17 @@ class VehicleMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $307.Int32Value get vehiclePickupStraightLineDistanceMeters => $_getN(10);
   @$pb.TagNumber(11)
-  set vehiclePickupStraightLineDistanceMeters($307.Int32Value v) { setField(11, v); }
+  set vehiclePickupStraightLineDistanceMeters($307.Int32Value v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasVehiclePickupStraightLineDistanceMeters() => $_has(10);
   @$pb.TagNumber(11)
   void clearVehiclePickupStraightLineDistanceMeters() => clearField(11);
   @$pb.TagNumber(11)
-  $307.Int32Value ensureVehiclePickupStraightLineDistanceMeters() => $_ensure(10);
+  $307.Int32Value ensureVehiclePickupStraightLineDistanceMeters() =>
+      $_ensure(10);
 }
 
 /// A list-of-lists datatype for vehicle attributes.
@@ -1693,33 +2055,45 @@ class VehicleAttributeList extends $pb.GeneratedMessage {
     return $result;
   }
   VehicleAttributeList._() : super();
-  factory VehicleAttributeList.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VehicleAttributeList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VehicleAttributeList.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VehicleAttributeList.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleAttributeList', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<$457.VehicleAttribute>(1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $457.VehicleAttribute.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VehicleAttributeList',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..pc<$457.VehicleAttribute>(
+        1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM,
+        subBuilder: $457.VehicleAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  VehicleAttributeList clone() => VehicleAttributeList()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VehicleAttributeList copyWith(void Function(VehicleAttributeList) updates) => super.copyWith((message) => updates(message as VehicleAttributeList)) as VehicleAttributeList;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VehicleAttributeList clone() =>
+      VehicleAttributeList()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VehicleAttributeList copyWith(void Function(VehicleAttributeList) updates) =>
+      super.copyWith((message) => updates(message as VehicleAttributeList))
+          as VehicleAttributeList;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VehicleAttributeList create() => VehicleAttributeList._();
   VehicleAttributeList createEmptyInstance() => create();
-  static $pb.PbList<VehicleAttributeList> createRepeated() => $pb.PbList<VehicleAttributeList>();
+  static $pb.PbList<VehicleAttributeList> createRepeated() =>
+      $pb.PbList<VehicleAttributeList>();
   @$core.pragma('dart2js:noInline')
-  static VehicleAttributeList getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VehicleAttributeList>(create);
+  static VehicleAttributeList getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VehicleAttributeList>(create);
   static VehicleAttributeList? _defaultInstance;
 
   /// A list of attributes in this collection.
@@ -1727,6 +2101,6 @@ class VehicleAttributeList extends $pb.GeneratedMessage {
   $core.List<$457.VehicleAttribute> get attributes => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

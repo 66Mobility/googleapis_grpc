@@ -17,12 +17,51 @@ import 'dart:typed_data' as $typed_data;
 const Address$json = {
   '1': 'Address',
   '2': [
-    {'1': 'formatted_address', '3': 2, '4': 1, '5': 9, '10': 'formattedAddress'},
-    {'1': 'postal_address', '3': 3, '4': 1, '5': 11, '6': '.google.type.PostalAddress', '10': 'postalAddress'},
-    {'1': 'address_components', '3': 4, '4': 3, '5': 11, '6': '.google.maps.addressvalidation.v1.AddressComponent', '8': {}, '10': 'addressComponents'},
-    {'1': 'missing_component_types', '3': 5, '4': 3, '5': 9, '10': 'missingComponentTypes'},
-    {'1': 'unconfirmed_component_types', '3': 6, '4': 3, '5': 9, '10': 'unconfirmedComponentTypes'},
-    {'1': 'unresolved_tokens', '3': 7, '4': 3, '5': 9, '10': 'unresolvedTokens'},
+    {
+      '1': 'formatted_address',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'formattedAddress'
+    },
+    {
+      '1': 'postal_address',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.PostalAddress',
+      '10': 'postalAddress'
+    },
+    {
+      '1': 'address_components',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.AddressComponent',
+      '8': {},
+      '10': 'addressComponents'
+    },
+    {
+      '1': 'missing_component_types',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'missingComponentTypes'
+    },
+    {
+      '1': 'unconfirmed_component_types',
+      '3': 6,
+      '4': 3,
+      '5': 9,
+      '10': 'unconfirmedComponentTypes'
+    },
+    {
+      '1': 'unresolved_tokens',
+      '3': 7,
+      '4': 3,
+      '5': 9,
+      '10': 'unresolvedTokens'
+    },
   ],
 };
 
@@ -41,9 +80,24 @@ final $typed_data.Uint8List addressDescriptor = $convert.base64Decode(
 const AddressComponent$json = {
   '1': 'AddressComponent',
   '2': [
-    {'1': 'component_name', '3': 1, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.ComponentName', '10': 'componentName'},
+    {
+      '1': 'component_name',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.ComponentName',
+      '10': 'componentName'
+    },
     {'1': 'component_type', '3': 2, '4': 1, '5': 9, '10': 'componentType'},
-    {'1': 'confirmation_level', '3': 3, '4': 1, '5': 14, '6': '.google.maps.addressvalidation.v1.AddressComponent.ConfirmationLevel', '10': 'confirmationLevel'},
+    {
+      '1': 'confirmation_level',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.maps.addressvalidation.v1.AddressComponent.ConfirmationLevel',
+      '10': 'confirmationLevel'
+    },
     {'1': 'inferred', '3': 4, '4': 1, '5': 8, '10': 'inferred'},
     {'1': 'spell_corrected', '3': 5, '4': 1, '5': 8, '10': 'spellCorrected'},
     {'1': 'replaced', '3': 6, '4': 1, '5': 8, '10': 'replaced'},
@@ -89,4 +143,3 @@ const ComponentName$json = {
 final $typed_data.Uint8List componentNameDescriptor = $convert.base64Decode(
     'Cg1Db21wb25lbnROYW1lEhIKBHRleHQYASABKAlSBHRleHQSIwoNbGFuZ3VhZ2VfY29kZRgCIA'
     'EoCVIMbGFuZ3VhZ2VDb2Rl');
-

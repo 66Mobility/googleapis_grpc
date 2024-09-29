@@ -20,12 +20,7 @@ import 'user.pb.dart' as $406;
 
 export 'annotation.pbenum.dart';
 
-enum Annotation_Metadata {
-  userMention, 
-  slashCommand, 
-  richLinkMetadata, 
-  notSet
-}
+enum Annotation_Metadata { userMention, slashCommand, richLinkMetadata, notSet }
 
 ///  Output only. Annotations associated with the plain-text body of the message.
 ///  To add basic formatting to a text message, see
@@ -85,36 +80,48 @@ class Annotation extends $pb.GeneratedMessage {
     return $result;
   }
   Annotation._() : super();
-  factory Annotation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Annotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Annotation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Annotation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Annotation_Metadata> _Annotation_MetadataByTag = {
-    4 : Annotation_Metadata.userMention,
-    5 : Annotation_Metadata.slashCommand,
-    6 : Annotation_Metadata.richLinkMetadata,
-    0 : Annotation_Metadata.notSet
+  static const $core.Map<$core.int, Annotation_Metadata>
+      _Annotation_MetadataByTag = {
+    4: Annotation_Metadata.userMention,
+    5: Annotation_Metadata.slashCommand,
+    6: Annotation_Metadata.richLinkMetadata,
+    0: Annotation_Metadata.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Annotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Annotation',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..oo(0, [4, 5, 6])
-    ..e<AnnotationType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: AnnotationType.ANNOTATION_TYPE_UNSPECIFIED, valueOf: AnnotationType.valueOf, enumValues: AnnotationType.values)
+    ..e<AnnotationType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: AnnotationType.ANNOTATION_TYPE_UNSPECIFIED,
+        valueOf: AnnotationType.valueOf,
+        enumValues: AnnotationType.values)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'startIndex', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'length', $pb.PbFieldType.O3)
-    ..aOM<UserMentionMetadata>(4, _omitFieldNames ? '' : 'userMention', subBuilder: UserMentionMetadata.create)
-    ..aOM<SlashCommandMetadata>(5, _omitFieldNames ? '' : 'slashCommand', subBuilder: SlashCommandMetadata.create)
-    ..aOM<RichLinkMetadata>(6, _omitFieldNames ? '' : 'richLinkMetadata', subBuilder: RichLinkMetadata.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<UserMentionMetadata>(4, _omitFieldNames ? '' : 'userMention',
+        subBuilder: UserMentionMetadata.create)
+    ..aOM<SlashCommandMetadata>(5, _omitFieldNames ? '' : 'slashCommand',
+        subBuilder: SlashCommandMetadata.create)
+    ..aOM<RichLinkMetadata>(6, _omitFieldNames ? '' : 'richLinkMetadata',
+        subBuilder: RichLinkMetadata.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Annotation clone() => Annotation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Annotation copyWith(void Function(Annotation) updates) => super.copyWith((message) => updates(message as Annotation)) as Annotation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Annotation copyWith(void Function(Annotation) updates) =>
+      super.copyWith((message) => updates(message as Annotation)) as Annotation;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -123,17 +130,22 @@ class Annotation extends $pb.GeneratedMessage {
   Annotation createEmptyInstance() => create();
   static $pb.PbList<Annotation> createRepeated() => $pb.PbList<Annotation>();
   @$core.pragma('dart2js:noInline')
-  static Annotation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Annotation>(create);
+  static Annotation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Annotation>(create);
   static Annotation? _defaultInstance;
 
-  Annotation_Metadata whichMetadata() => _Annotation_MetadataByTag[$_whichOneof(0)]!;
+  Annotation_Metadata whichMetadata() =>
+      _Annotation_MetadataByTag[$_whichOneof(0)]!;
   void clearMetadata() => clearField($_whichOneof(0));
 
   /// The type of this annotation.
   @$pb.TagNumber(1)
   AnnotationType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(AnnotationType v) { setField(1, v); }
+  set type(AnnotationType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -144,7 +156,10 @@ class Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get startIndex => $_getIZ(1);
   @$pb.TagNumber(2)
-  set startIndex($core.int v) { $_setSignedInt32(1, v); }
+  set startIndex($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -155,7 +170,10 @@ class Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get length => $_getIZ(2);
   @$pb.TagNumber(3)
-  set length($core.int v) { $_setSignedInt32(2, v); }
+  set length($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLength() => $_has(2);
   @$pb.TagNumber(3)
@@ -165,7 +183,10 @@ class Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   UserMentionMetadata get userMention => $_getN(3);
   @$pb.TagNumber(4)
-  set userMention(UserMentionMetadata v) { setField(4, v); }
+  set userMention(UserMentionMetadata v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUserMention() => $_has(3);
   @$pb.TagNumber(4)
@@ -177,7 +198,10 @@ class Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   SlashCommandMetadata get slashCommand => $_getN(4);
   @$pb.TagNumber(5)
-  set slashCommand(SlashCommandMetadata v) { setField(5, v); }
+  set slashCommand(SlashCommandMetadata v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSlashCommand() => $_has(4);
   @$pb.TagNumber(5)
@@ -189,7 +213,10 @@ class Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   RichLinkMetadata get richLinkMetadata => $_getN(5);
   @$pb.TagNumber(6)
-  set richLinkMetadata(RichLinkMetadata v) { setField(6, v); }
+  set richLinkMetadata(RichLinkMetadata v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasRichLinkMetadata() => $_has(5);
   @$pb.TagNumber(6)
@@ -214,41 +241,57 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   UserMentionMetadata._() : super();
-  factory UserMentionMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UserMentionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UserMentionMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UserMentionMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserMentionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$406.User>(1, _omitFieldNames ? '' : 'user', subBuilder: $406.User.create)
-    ..e<UserMentionMetadata_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: UserMentionMetadata_Type.TYPE_UNSPECIFIED, valueOf: UserMentionMetadata_Type.valueOf, enumValues: UserMentionMetadata_Type.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UserMentionMetadata',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<$406.User>(1, _omitFieldNames ? '' : 'user',
+        subBuilder: $406.User.create)
+    ..e<UserMentionMetadata_Type>(
+        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: UserMentionMetadata_Type.TYPE_UNSPECIFIED,
+        valueOf: UserMentionMetadata_Type.valueOf,
+        enumValues: UserMentionMetadata_Type.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UserMentionMetadata clone() => UserMentionMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UserMentionMetadata copyWith(void Function(UserMentionMetadata) updates) => super.copyWith((message) => updates(message as UserMentionMetadata)) as UserMentionMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UserMentionMetadata copyWith(void Function(UserMentionMetadata) updates) =>
+      super.copyWith((message) => updates(message as UserMentionMetadata))
+          as UserMentionMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UserMentionMetadata create() => UserMentionMetadata._();
   UserMentionMetadata createEmptyInstance() => create();
-  static $pb.PbList<UserMentionMetadata> createRepeated() => $pb.PbList<UserMentionMetadata>();
+  static $pb.PbList<UserMentionMetadata> createRepeated() =>
+      $pb.PbList<UserMentionMetadata>();
   @$core.pragma('dart2js:noInline')
-  static UserMentionMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UserMentionMetadata>(create);
+  static UserMentionMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UserMentionMetadata>(create);
   static UserMentionMetadata? _defaultInstance;
 
   /// The user mentioned.
   @$pb.TagNumber(1)
   $406.User get user => $_getN(0);
   @$pb.TagNumber(1)
-  set user($406.User v) { setField(1, v); }
+  set user($406.User v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
@@ -260,7 +303,10 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   UserMentionMetadata_Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(UserMentionMetadata_Type v) { setField(2, v); }
+  set type(UserMentionMetadata_Type v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -295,44 +341,61 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   SlashCommandMetadata._() : super();
-  factory SlashCommandMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlashCommandMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlashCommandMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlashCommandMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlashCommandMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$406.User>(1, _omitFieldNames ? '' : 'bot', subBuilder: $406.User.create)
-    ..e<SlashCommandMetadata_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: SlashCommandMetadata_Type.TYPE_UNSPECIFIED, valueOf: SlashCommandMetadata_Type.valueOf, enumValues: SlashCommandMetadata_Type.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlashCommandMetadata',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<$406.User>(1, _omitFieldNames ? '' : 'bot',
+        subBuilder: $406.User.create)
+    ..e<SlashCommandMetadata_Type>(
+        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: SlashCommandMetadata_Type.TYPE_UNSPECIFIED,
+        valueOf: SlashCommandMetadata_Type.valueOf,
+        enumValues: SlashCommandMetadata_Type.values)
     ..aOS(3, _omitFieldNames ? '' : 'commandName')
     ..aInt64(4, _omitFieldNames ? '' : 'commandId')
     ..aOB(5, _omitFieldNames ? '' : 'triggersDialog')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SlashCommandMetadata clone() => SlashCommandMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlashCommandMetadata copyWith(void Function(SlashCommandMetadata) updates) => super.copyWith((message) => updates(message as SlashCommandMetadata)) as SlashCommandMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SlashCommandMetadata clone() =>
+      SlashCommandMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlashCommandMetadata copyWith(void Function(SlashCommandMetadata) updates) =>
+      super.copyWith((message) => updates(message as SlashCommandMetadata))
+          as SlashCommandMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SlashCommandMetadata create() => SlashCommandMetadata._();
   SlashCommandMetadata createEmptyInstance() => create();
-  static $pb.PbList<SlashCommandMetadata> createRepeated() => $pb.PbList<SlashCommandMetadata>();
+  static $pb.PbList<SlashCommandMetadata> createRepeated() =>
+      $pb.PbList<SlashCommandMetadata>();
   @$core.pragma('dart2js:noInline')
-  static SlashCommandMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlashCommandMetadata>(create);
+  static SlashCommandMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlashCommandMetadata>(create);
   static SlashCommandMetadata? _defaultInstance;
 
   /// The Chat app whose command was invoked.
   @$pb.TagNumber(1)
   $406.User get bot => $_getN(0);
   @$pb.TagNumber(1)
-  set bot($406.User v) { setField(1, v); }
+  set bot($406.User v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBot() => $_has(0);
   @$pb.TagNumber(1)
@@ -344,7 +407,10 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SlashCommandMetadata_Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(SlashCommandMetadata_Type v) { setField(2, v); }
+  set type(SlashCommandMetadata_Type v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -354,7 +420,10 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get commandName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set commandName($core.String v) { $_setString(2, v); }
+  set commandName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCommandName() => $_has(2);
   @$pb.TagNumber(3)
@@ -364,7 +433,10 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get commandId => $_getI64(3);
   @$pb.TagNumber(4)
-  set commandId($fixnum.Int64 v) { $_setInt64(3, v); }
+  set commandId($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCommandId() => $_has(3);
   @$pb.TagNumber(4)
@@ -374,18 +446,17 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get triggersDialog => $_getBF(4);
   @$pb.TagNumber(5)
-  set triggersDialog($core.bool v) { $_setBool(4, v); }
+  set triggersDialog($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTriggersDialog() => $_has(4);
   @$pb.TagNumber(5)
   void clearTriggersDialog() => clearField(5);
 }
 
-enum RichLinkMetadata_Data {
-  driveLinkData, 
-  chatSpaceLinkData, 
-  notSet
-}
+enum RichLinkMetadata_Data { driveLinkData, chatSpaceLinkData, notSet }
 
 /// A rich link to a resource.
 class RichLinkMetadata extends $pb.GeneratedMessage {
@@ -411,52 +482,72 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   RichLinkMetadata._() : super();
-  factory RichLinkMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RichLinkMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RichLinkMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RichLinkMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, RichLinkMetadata_Data> _RichLinkMetadata_DataByTag = {
-    3 : RichLinkMetadata_Data.driveLinkData,
-    4 : RichLinkMetadata_Data.chatSpaceLinkData,
-    0 : RichLinkMetadata_Data.notSet
+  static const $core.Map<$core.int, RichLinkMetadata_Data>
+      _RichLinkMetadata_DataByTag = {
+    3: RichLinkMetadata_Data.driveLinkData,
+    4: RichLinkMetadata_Data.chatSpaceLinkData,
+    0: RichLinkMetadata_Data.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RichLinkMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RichLinkMetadata',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..oo(0, [3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'uri')
-    ..e<RichLinkMetadata_RichLinkType>(2, _omitFieldNames ? '' : 'richLinkType', $pb.PbFieldType.OE, defaultOrMaker: RichLinkMetadata_RichLinkType.RICH_LINK_TYPE_UNSPECIFIED, valueOf: RichLinkMetadata_RichLinkType.valueOf, enumValues: RichLinkMetadata_RichLinkType.values)
-    ..aOM<DriveLinkData>(3, _omitFieldNames ? '' : 'driveLinkData', subBuilder: DriveLinkData.create)
-    ..aOM<ChatSpaceLinkData>(4, _omitFieldNames ? '' : 'chatSpaceLinkData', subBuilder: ChatSpaceLinkData.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<RichLinkMetadata_RichLinkType>(
+        2, _omitFieldNames ? '' : 'richLinkType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            RichLinkMetadata_RichLinkType.RICH_LINK_TYPE_UNSPECIFIED,
+        valueOf: RichLinkMetadata_RichLinkType.valueOf,
+        enumValues: RichLinkMetadata_RichLinkType.values)
+    ..aOM<DriveLinkData>(3, _omitFieldNames ? '' : 'driveLinkData',
+        subBuilder: DriveLinkData.create)
+    ..aOM<ChatSpaceLinkData>(4, _omitFieldNames ? '' : 'chatSpaceLinkData',
+        subBuilder: ChatSpaceLinkData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RichLinkMetadata clone() => RichLinkMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RichLinkMetadata copyWith(void Function(RichLinkMetadata) updates) => super.copyWith((message) => updates(message as RichLinkMetadata)) as RichLinkMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RichLinkMetadata copyWith(void Function(RichLinkMetadata) updates) =>
+      super.copyWith((message) => updates(message as RichLinkMetadata))
+          as RichLinkMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RichLinkMetadata create() => RichLinkMetadata._();
   RichLinkMetadata createEmptyInstance() => create();
-  static $pb.PbList<RichLinkMetadata> createRepeated() => $pb.PbList<RichLinkMetadata>();
+  static $pb.PbList<RichLinkMetadata> createRepeated() =>
+      $pb.PbList<RichLinkMetadata>();
   @$core.pragma('dart2js:noInline')
-  static RichLinkMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RichLinkMetadata>(create);
+  static RichLinkMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RichLinkMetadata>(create);
   static RichLinkMetadata? _defaultInstance;
 
-  RichLinkMetadata_Data whichData() => _RichLinkMetadata_DataByTag[$_whichOneof(0)]!;
+  RichLinkMetadata_Data whichData() =>
+      _RichLinkMetadata_DataByTag[$_whichOneof(0)]!;
   void clearData() => clearField($_whichOneof(0));
 
   /// The URI of this link.
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) { $_setString(0, v); }
+  set uri($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -466,7 +557,10 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   RichLinkMetadata_RichLinkType get richLinkType => $_getN(1);
   @$pb.TagNumber(2)
-  set richLinkType(RichLinkMetadata_RichLinkType v) { setField(2, v); }
+  set richLinkType(RichLinkMetadata_RichLinkType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRichLinkType() => $_has(1);
   @$pb.TagNumber(2)
@@ -476,7 +570,10 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DriveLinkData get driveLinkData => $_getN(2);
   @$pb.TagNumber(3)
-  set driveLinkData(DriveLinkData v) { setField(3, v); }
+  set driveLinkData(DriveLinkData v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDriveLinkData() => $_has(2);
   @$pb.TagNumber(3)
@@ -488,7 +585,10 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ChatSpaceLinkData get chatSpaceLinkData => $_getN(3);
   @$pb.TagNumber(4)
-  set chatSpaceLinkData(ChatSpaceLinkData v) { setField(4, v); }
+  set chatSpaceLinkData(ChatSpaceLinkData v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasChatSpaceLinkData() => $_has(3);
   @$pb.TagNumber(4)
@@ -513,34 +613,43 @@ class DriveLinkData extends $pb.GeneratedMessage {
     return $result;
   }
   DriveLinkData._() : super();
-  factory DriveLinkData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveLinkData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveLinkData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveLinkData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveLinkData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$97.DriveDataRef>(1, _omitFieldNames ? '' : 'driveDataRef', subBuilder: $97.DriveDataRef.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveLinkData',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<$97.DriveDataRef>(1, _omitFieldNames ? '' : 'driveDataRef',
+        subBuilder: $97.DriveDataRef.create)
     ..aOS(2, _omitFieldNames ? '' : 'mimeType')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveLinkData clone() => DriveLinkData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveLinkData copyWith(void Function(DriveLinkData) updates) => super.copyWith((message) => updates(message as DriveLinkData)) as DriveLinkData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveLinkData copyWith(void Function(DriveLinkData) updates) =>
+      super.copyWith((message) => updates(message as DriveLinkData))
+          as DriveLinkData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveLinkData create() => DriveLinkData._();
   DriveLinkData createEmptyInstance() => create();
-  static $pb.PbList<DriveLinkData> createRepeated() => $pb.PbList<DriveLinkData>();
+  static $pb.PbList<DriveLinkData> createRepeated() =>
+      $pb.PbList<DriveLinkData>();
   @$core.pragma('dart2js:noInline')
-  static DriveLinkData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveLinkData>(create);
+  static DriveLinkData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveLinkData>(create);
   static DriveLinkData? _defaultInstance;
 
   /// A
@@ -549,7 +658,10 @@ class DriveLinkData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $97.DriveDataRef get driveDataRef => $_getN(0);
   @$pb.TagNumber(1)
-  set driveDataRef($97.DriveDataRef v) { setField(1, v); }
+  set driveDataRef($97.DriveDataRef v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDriveDataRef() => $_has(0);
   @$pb.TagNumber(1)
@@ -561,7 +673,10 @@ class DriveLinkData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get mimeType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set mimeType($core.String v) { $_setString(1, v); }
+  set mimeType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMimeType() => $_has(1);
   @$pb.TagNumber(2)
@@ -588,35 +703,43 @@ class ChatSpaceLinkData extends $pb.GeneratedMessage {
     return $result;
   }
   ChatSpaceLinkData._() : super();
-  factory ChatSpaceLinkData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ChatSpaceLinkData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ChatSpaceLinkData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ChatSpaceLinkData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChatSpaceLinkData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ChatSpaceLinkData',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'space')
     ..aOS(2, _omitFieldNames ? '' : 'thread')
     ..aOS(3, _omitFieldNames ? '' : 'message')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ChatSpaceLinkData clone() => ChatSpaceLinkData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ChatSpaceLinkData copyWith(void Function(ChatSpaceLinkData) updates) => super.copyWith((message) => updates(message as ChatSpaceLinkData)) as ChatSpaceLinkData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ChatSpaceLinkData copyWith(void Function(ChatSpaceLinkData) updates) =>
+      super.copyWith((message) => updates(message as ChatSpaceLinkData))
+          as ChatSpaceLinkData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ChatSpaceLinkData create() => ChatSpaceLinkData._();
   ChatSpaceLinkData createEmptyInstance() => create();
-  static $pb.PbList<ChatSpaceLinkData> createRepeated() => $pb.PbList<ChatSpaceLinkData>();
+  static $pb.PbList<ChatSpaceLinkData> createRepeated() =>
+      $pb.PbList<ChatSpaceLinkData>();
   @$core.pragma('dart2js:noInline')
-  static ChatSpaceLinkData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ChatSpaceLinkData>(create);
+  static ChatSpaceLinkData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ChatSpaceLinkData>(create);
   static ChatSpaceLinkData? _defaultInstance;
 
   ///  The space of the linked Chat space resource.
@@ -625,7 +748,10 @@ class ChatSpaceLinkData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get space => $_getSZ(0);
   @$pb.TagNumber(1)
-  set space($core.String v) { $_setString(0, v); }
+  set space($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSpace() => $_has(0);
   @$pb.TagNumber(1)
@@ -637,7 +763,10 @@ class ChatSpaceLinkData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get thread => $_getSZ(1);
   @$pb.TagNumber(2)
-  set thread($core.String v) { $_setString(1, v); }
+  set thread($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasThread() => $_has(1);
   @$pb.TagNumber(2)
@@ -649,13 +778,16 @@ class ChatSpaceLinkData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get message => $_getSZ(2);
   @$pb.TagNumber(3)
-  set message($core.String v) { $_setString(2, v); }
+  set message($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMessage() => $_has(2);
   @$pb.TagNumber(3)
   void clearMessage() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

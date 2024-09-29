@@ -15,39 +15,54 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Operators for combining conditions.
 class AlertPolicy_ConditionCombinerType extends $pb.ProtobufEnum {
-  static const AlertPolicy_ConditionCombinerType COMBINE_UNSPECIFIED = AlertPolicy_ConditionCombinerType._(0, _omitEnumNames ? '' : 'COMBINE_UNSPECIFIED');
-  static const AlertPolicy_ConditionCombinerType AND = AlertPolicy_ConditionCombinerType._(1, _omitEnumNames ? '' : 'AND');
-  static const AlertPolicy_ConditionCombinerType OR = AlertPolicy_ConditionCombinerType._(2, _omitEnumNames ? '' : 'OR');
-  static const AlertPolicy_ConditionCombinerType AND_WITH_MATCHING_RESOURCE = AlertPolicy_ConditionCombinerType._(3, _omitEnumNames ? '' : 'AND_WITH_MATCHING_RESOURCE');
+  static const AlertPolicy_ConditionCombinerType COMBINE_UNSPECIFIED =
+      AlertPolicy_ConditionCombinerType._(
+          0, _omitEnumNames ? '' : 'COMBINE_UNSPECIFIED');
+  static const AlertPolicy_ConditionCombinerType AND =
+      AlertPolicy_ConditionCombinerType._(1, _omitEnumNames ? '' : 'AND');
+  static const AlertPolicy_ConditionCombinerType OR =
+      AlertPolicy_ConditionCombinerType._(2, _omitEnumNames ? '' : 'OR');
+  static const AlertPolicy_ConditionCombinerType AND_WITH_MATCHING_RESOURCE =
+      AlertPolicy_ConditionCombinerType._(
+          3, _omitEnumNames ? '' : 'AND_WITH_MATCHING_RESOURCE');
 
-  static const $core.List<AlertPolicy_ConditionCombinerType> values = <AlertPolicy_ConditionCombinerType> [
+  static const $core.List<AlertPolicy_ConditionCombinerType> values =
+      <AlertPolicy_ConditionCombinerType>[
     COMBINE_UNSPECIFIED,
     AND,
     OR,
     AND_WITH_MATCHING_RESOURCE,
   ];
 
-  static final $core.Map<$core.int, AlertPolicy_ConditionCombinerType> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static AlertPolicy_ConditionCombinerType? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, AlertPolicy_ConditionCombinerType>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static AlertPolicy_ConditionCombinerType? valueOf($core.int value) =>
+      _byValue[value];
 
-  const AlertPolicy_ConditionCombinerType._($core.int v, $core.String n) : super(v, n);
+  const AlertPolicy_ConditionCombinerType._($core.int v, $core.String n)
+      : super(v, n);
 }
 
 /// An enumeration of possible severity level for an Alert Policy.
 class AlertPolicy_Severity extends $pb.ProtobufEnum {
-  static const AlertPolicy_Severity SEVERITY_UNSPECIFIED = AlertPolicy_Severity._(0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
-  static const AlertPolicy_Severity CRITICAL = AlertPolicy_Severity._(1, _omitEnumNames ? '' : 'CRITICAL');
-  static const AlertPolicy_Severity ERROR = AlertPolicy_Severity._(2, _omitEnumNames ? '' : 'ERROR');
-  static const AlertPolicy_Severity WARNING = AlertPolicy_Severity._(3, _omitEnumNames ? '' : 'WARNING');
+  static const AlertPolicy_Severity SEVERITY_UNSPECIFIED =
+      AlertPolicy_Severity._(0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
+  static const AlertPolicy_Severity CRITICAL =
+      AlertPolicy_Severity._(1, _omitEnumNames ? '' : 'CRITICAL');
+  static const AlertPolicy_Severity ERROR =
+      AlertPolicy_Severity._(2, _omitEnumNames ? '' : 'ERROR');
+  static const AlertPolicy_Severity WARNING =
+      AlertPolicy_Severity._(3, _omitEnumNames ? '' : 'WARNING');
 
-  static const $core.List<AlertPolicy_Severity> values = <AlertPolicy_Severity> [
+  static const $core.List<AlertPolicy_Severity> values = <AlertPolicy_Severity>[
     SEVERITY_UNSPECIFIED,
     CRITICAL,
     ERROR,
     WARNING,
   ];
 
-  static final $core.Map<$core.int, AlertPolicy_Severity> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, AlertPolicy_Severity> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static AlertPolicy_Severity? valueOf($core.int value) => _byValue[value];
 
   const AlertPolicy_Severity._($core.int v, $core.String n) : super(v, n);
@@ -57,23 +72,40 @@ class AlertPolicy_Severity extends $pb.ProtobufEnum {
 /// are evaluated when data stops arriving.
 /// This control doesn't affect metric-absence policies.
 class AlertPolicy_Condition_EvaluationMissingData extends $pb.ProtobufEnum {
-  static const AlertPolicy_Condition_EvaluationMissingData EVALUATION_MISSING_DATA_UNSPECIFIED = AlertPolicy_Condition_EvaluationMissingData._(0, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_UNSPECIFIED');
-  static const AlertPolicy_Condition_EvaluationMissingData EVALUATION_MISSING_DATA_INACTIVE = AlertPolicy_Condition_EvaluationMissingData._(1, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_INACTIVE');
-  static const AlertPolicy_Condition_EvaluationMissingData EVALUATION_MISSING_DATA_ACTIVE = AlertPolicy_Condition_EvaluationMissingData._(2, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_ACTIVE');
-  static const AlertPolicy_Condition_EvaluationMissingData EVALUATION_MISSING_DATA_NO_OP = AlertPolicy_Condition_EvaluationMissingData._(3, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_NO_OP');
+  static const AlertPolicy_Condition_EvaluationMissingData
+      EVALUATION_MISSING_DATA_UNSPECIFIED =
+      AlertPolicy_Condition_EvaluationMissingData._(
+          0, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_UNSPECIFIED');
+  static const AlertPolicy_Condition_EvaluationMissingData
+      EVALUATION_MISSING_DATA_INACTIVE =
+      AlertPolicy_Condition_EvaluationMissingData._(
+          1, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_INACTIVE');
+  static const AlertPolicy_Condition_EvaluationMissingData
+      EVALUATION_MISSING_DATA_ACTIVE =
+      AlertPolicy_Condition_EvaluationMissingData._(
+          2, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_ACTIVE');
+  static const AlertPolicy_Condition_EvaluationMissingData
+      EVALUATION_MISSING_DATA_NO_OP =
+      AlertPolicy_Condition_EvaluationMissingData._(
+          3, _omitEnumNames ? '' : 'EVALUATION_MISSING_DATA_NO_OP');
 
-  static const $core.List<AlertPolicy_Condition_EvaluationMissingData> values = <AlertPolicy_Condition_EvaluationMissingData> [
+  static const $core.List<AlertPolicy_Condition_EvaluationMissingData> values =
+      <AlertPolicy_Condition_EvaluationMissingData>[
     EVALUATION_MISSING_DATA_UNSPECIFIED,
     EVALUATION_MISSING_DATA_INACTIVE,
     EVALUATION_MISSING_DATA_ACTIVE,
     EVALUATION_MISSING_DATA_NO_OP,
   ];
 
-  static final $core.Map<$core.int, AlertPolicy_Condition_EvaluationMissingData> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static AlertPolicy_Condition_EvaluationMissingData? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, AlertPolicy_Condition_EvaluationMissingData>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static AlertPolicy_Condition_EvaluationMissingData? valueOf(
+          $core.int value) =>
+      _byValue[value];
 
-  const AlertPolicy_Condition_EvaluationMissingData._($core.int v, $core.String n) : super(v, n);
+  const AlertPolicy_Condition_EvaluationMissingData._(
+      $core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

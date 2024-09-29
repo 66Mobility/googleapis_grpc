@@ -32,41 +32,55 @@ class ActionStatus extends $pb.GeneratedMessage {
     return $result;
   }
   ActionStatus._() : super();
-  factory ActionStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ActionStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ActionStatus.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ActionStatus.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ActionStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..e<$405.Code>(1, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.OE, defaultOrMaker: $405.Code.OK, valueOf: $405.Code.valueOf, enumValues: $405.Code.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ActionStatus',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..e<$405.Code>(1, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.OE,
+        defaultOrMaker: $405.Code.OK,
+        valueOf: $405.Code.valueOf,
+        enumValues: $405.Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'userFacingMessage')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ActionStatus clone() => ActionStatus()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ActionStatus copyWith(void Function(ActionStatus) updates) => super.copyWith((message) => updates(message as ActionStatus)) as ActionStatus;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ActionStatus copyWith(void Function(ActionStatus) updates) =>
+      super.copyWith((message) => updates(message as ActionStatus))
+          as ActionStatus;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ActionStatus create() => ActionStatus._();
   ActionStatus createEmptyInstance() => create();
-  static $pb.PbList<ActionStatus> createRepeated() => $pb.PbList<ActionStatus>();
+  static $pb.PbList<ActionStatus> createRepeated() =>
+      $pb.PbList<ActionStatus>();
   @$core.pragma('dart2js:noInline')
-  static ActionStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ActionStatus>(create);
+  static ActionStatus getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ActionStatus>(create);
   static ActionStatus? _defaultInstance;
 
   /// The status code.
   @$pb.TagNumber(1)
   $405.Code get statusCode => $_getN(0);
   @$pb.TagNumber(1)
-  set statusCode($405.Code v) { setField(1, v); }
+  set statusCode($405.Code v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStatusCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -77,13 +91,16 @@ class ActionStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get userFacingMessage => $_getSZ(1);
   @$pb.TagNumber(2)
-  set userFacingMessage($core.String v) { $_setString(1, v); }
+  set userFacingMessage($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUserFacingMessage() => $_has(1);
   @$pb.TagNumber(2)
   void clearUserFacingMessage() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

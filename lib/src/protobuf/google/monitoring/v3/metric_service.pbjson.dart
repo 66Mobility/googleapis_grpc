@@ -13,7 +13,8 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
-@$core.Deprecated('Use listMonitoredResourceDescriptorsRequestDescriptor instead')
+@$core
+    .Deprecated('Use listMonitoredResourceDescriptorsRequestDescriptor instead')
 const ListMonitoredResourceDescriptorsRequest$json = {
   '1': 'ListMonitoredResourceDescriptorsRequest',
   '2': [
@@ -25,27 +26,37 @@ const ListMonitoredResourceDescriptorsRequest$json = {
 };
 
 /// Descriptor for `ListMonitoredResourceDescriptorsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listMonitoredResourceDescriptorsRequestDescriptor = $convert.base64Decode(
-    'CidMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1JlcXVlc3QSUQoEbmFtZRgFIAEoCU'
-    'I94EEC+kE3EjVtb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL01vbml0b3JlZFJlc291cmNlRGVz'
-    'Y3JpcHRvclIEbmFtZRIWCgZmaWx0ZXIYAiABKAlSBmZpbHRlchIbCglwYWdlX3NpemUYAyABKA'
-    'VSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YBCABKAlSCXBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listMonitoredResourceDescriptorsRequestDescriptor =
+    $convert.base64Decode(
+        'CidMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1JlcXVlc3QSUQoEbmFtZRgFIAEoCU'
+        'I94EEC+kE3EjVtb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL01vbml0b3JlZFJlc291cmNlRGVz'
+        'Y3JpcHRvclIEbmFtZRIWCgZmaWx0ZXIYAiABKAlSBmZpbHRlchIbCglwYWdlX3NpemUYAyABKA'
+        'VSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YBCABKAlSCXBhZ2VUb2tlbg==');
 
-@$core.Deprecated('Use listMonitoredResourceDescriptorsResponseDescriptor instead')
+@$core.Deprecated(
+    'Use listMonitoredResourceDescriptorsResponseDescriptor instead')
 const ListMonitoredResourceDescriptorsResponse$json = {
   '1': 'ListMonitoredResourceDescriptorsResponse',
   '2': [
-    {'1': 'resource_descriptors', '3': 1, '4': 3, '5': 11, '6': '.google.api.MonitoredResourceDescriptor', '10': 'resourceDescriptors'},
+    {
+      '1': 'resource_descriptors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResourceDescriptor',
+      '10': 'resourceDescriptors'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListMonitoredResourceDescriptorsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listMonitoredResourceDescriptorsResponseDescriptor = $convert.base64Decode(
-    'CihMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1Jlc3BvbnNlEloKFHJlc291cmNlX2'
-    'Rlc2NyaXB0b3JzGAEgAygLMicuZ29vZ2xlLmFwaS5Nb25pdG9yZWRSZXNvdXJjZURlc2NyaXB0'
-    'b3JSE3Jlc291cmNlRGVzY3JpcHRvcnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UG'
-    'FnZVRva2Vu');
+final $typed_data.Uint8List listMonitoredResourceDescriptorsResponseDescriptor =
+    $convert.base64Decode(
+        'CihMaXN0TW9uaXRvcmVkUmVzb3VyY2VEZXNjcmlwdG9yc1Jlc3BvbnNlEloKFHJlc291cmNlX2'
+        'Rlc2NyaXB0b3JzGAEgAygLMicuZ29vZ2xlLmFwaS5Nb25pdG9yZWRSZXNvdXJjZURlc2NyaXB0'
+        'b3JSE3Jlc291cmNlRGVzY3JpcHRvcnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UG'
+        'FnZVRva2Vu');
 
 @$core.Deprecated('Use getMonitoredResourceDescriptorRequestDescriptor instead')
 const GetMonitoredResourceDescriptorRequest$json = {
@@ -56,10 +67,11 @@ const GetMonitoredResourceDescriptorRequest$json = {
 };
 
 /// Descriptor for `GetMonitoredResourceDescriptorRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getMonitoredResourceDescriptorRequestDescriptor = $convert.base64Decode(
-    'CiVHZXRNb25pdG9yZWRSZXNvdXJjZURlc2NyaXB0b3JSZXF1ZXN0ElEKBG5hbWUYAyABKAlCPe'
-    'BBAvpBNwo1bW9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9Nb25pdG9yZWRSZXNvdXJjZURlc2Ny'
-    'aXB0b3JSBG5hbWU=');
+final $typed_data.Uint8List getMonitoredResourceDescriptorRequestDescriptor =
+    $convert.base64Decode(
+        'CiVHZXRNb25pdG9yZWRSZXNvdXJjZURlc2NyaXB0b3JSZXF1ZXN0ElEKBG5hbWUYAyABKAlCPe'
+        'BBAvpBNwo1bW9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9Nb25pdG9yZWRSZXNvdXJjZURlc2Ny'
+        'aXB0b3JSBG5hbWU=');
 
 @$core.Deprecated('Use listMetricDescriptorsRequestDescriptor instead')
 const ListMetricDescriptorsRequest$json = {
@@ -83,16 +95,24 @@ final $typed_data.Uint8List listMetricDescriptorsRequestDescriptor = $convert.ba
 const ListMetricDescriptorsResponse$json = {
   '1': 'ListMetricDescriptorsResponse',
   '2': [
-    {'1': 'metric_descriptors', '3': 1, '4': 3, '5': 11, '6': '.google.api.MetricDescriptor', '10': 'metricDescriptors'},
+    {
+      '1': 'metric_descriptors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MetricDescriptor',
+      '10': 'metricDescriptors'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListMetricDescriptorsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listMetricDescriptorsResponseDescriptor = $convert.base64Decode(
-    'Ch1MaXN0TWV0cmljRGVzY3JpcHRvcnNSZXNwb25zZRJLChJtZXRyaWNfZGVzY3JpcHRvcnMYAS'
-    'ADKAsyHC5nb29nbGUuYXBpLk1ldHJpY0Rlc2NyaXB0b3JSEW1ldHJpY0Rlc2NyaXB0b3JzEiYK'
-    'D25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listMetricDescriptorsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch1MaXN0TWV0cmljRGVzY3JpcHRvcnNSZXNwb25zZRJLChJtZXRyaWNfZGVzY3JpcHRvcnMYAS'
+        'ADKAsyHC5nb29nbGUuYXBpLk1ldHJpY0Rlc2NyaXB0b3JSEW1ldHJpY0Rlc2NyaXB0b3JzEiYK'
+        'D25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use getMetricDescriptorRequestDescriptor instead')
 const GetMetricDescriptorRequest$json = {
@@ -103,16 +123,25 @@ const GetMetricDescriptorRequest$json = {
 };
 
 /// Descriptor for `GetMetricDescriptorRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getMetricDescriptorRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRNZXRyaWNEZXNjcmlwdG9yUmVxdWVzdBJGCgRuYW1lGAMgASgJQjLgQQL6QSwKKm1vbm'
-    'l0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTWV0cmljRGVzY3JpcHRvclIEbmFtZQ==');
+final $typed_data.Uint8List getMetricDescriptorRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRNZXRyaWNEZXNjcmlwdG9yUmVxdWVzdBJGCgRuYW1lGAMgASgJQjLgQQL6QSwKKm1vbm'
+        'l0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTWV0cmljRGVzY3JpcHRvclIEbmFtZQ==');
 
 @$core.Deprecated('Use createMetricDescriptorRequestDescriptor instead')
 const CreateMetricDescriptorRequest$json = {
   '1': 'CreateMetricDescriptorRequest',
   '2': [
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'metric_descriptor', '3': 2, '4': 1, '5': 11, '6': '.google.api.MetricDescriptor', '8': {}, '10': 'metricDescriptor'},
+    {
+      '1': 'metric_descriptor',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MetricDescriptor',
+      '8': {},
+      '10': 'metricDescriptor'
+    },
   ],
 };
 
@@ -132,9 +161,10 @@ const DeleteMetricDescriptorRequest$json = {
 };
 
 /// Descriptor for `DeleteMetricDescriptorRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteMetricDescriptorRequestDescriptor = $convert.base64Decode(
-    'Ch1EZWxldGVNZXRyaWNEZXNjcmlwdG9yUmVxdWVzdBJGCgRuYW1lGAMgASgJQjLgQQL6QSwKKm'
-    '1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTWV0cmljRGVzY3JpcHRvclIEbmFtZQ==');
+final $typed_data.Uint8List deleteMetricDescriptorRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1EZWxldGVNZXRyaWNEZXNjcmlwdG9yUmVxdWVzdBJGCgRuYW1lGAMgASgJQjLgQQL6QSwKKm'
+        '1vbml0b3JpbmcuZ29vZ2xlYXBpcy5jb20vTWV0cmljRGVzY3JpcHRvclIEbmFtZQ==');
 
 @$core.Deprecated('Use listTimeSeriesRequestDescriptor instead')
 const ListTimeSeriesRequest$json = {
@@ -142,11 +172,41 @@ const ListTimeSeriesRequest$json = {
   '2': [
     {'1': 'name', '3': 10, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'filter', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'interval', '3': 4, '4': 1, '5': 11, '6': '.google.monitoring.v3.TimeInterval', '8': {}, '10': 'interval'},
-    {'1': 'aggregation', '3': 5, '4': 1, '5': 11, '6': '.google.monitoring.v3.Aggregation', '10': 'aggregation'},
-    {'1': 'secondary_aggregation', '3': 11, '4': 1, '5': 11, '6': '.google.monitoring.v3.Aggregation', '10': 'secondaryAggregation'},
+    {
+      '1': 'interval',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeInterval',
+      '8': {},
+      '10': 'interval'
+    },
+    {
+      '1': 'aggregation',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.Aggregation',
+      '10': 'aggregation'
+    },
+    {
+      '1': 'secondary_aggregation',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.Aggregation',
+      '10': 'secondaryAggregation'
+    },
     {'1': 'order_by', '3': 6, '4': 1, '5': 9, '10': 'orderBy'},
-    {'1': 'view', '3': 7, '4': 1, '5': 14, '6': '.google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView', '8': {}, '10': 'view'},
+    {
+      '1': 'view',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView',
+      '8': {},
+      '10': 'view'
+    },
     {'1': 'page_size', '3': 8, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 9, '4': 1, '5': 9, '10': 'pageToken'},
   ],
@@ -180,9 +240,23 @@ final $typed_data.Uint8List listTimeSeriesRequestDescriptor = $convert.base64Dec
 const ListTimeSeriesResponse$json = {
   '1': 'ListTimeSeriesResponse',
   '2': [
-    {'1': 'time_series', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.v3.TimeSeries', '10': 'timeSeries'},
+    {
+      '1': 'time_series',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeSeries',
+      '10': 'timeSeries'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'execution_errors', '3': 3, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'executionErrors'},
+    {
+      '1': 'execution_errors',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'executionErrors'
+    },
     {'1': 'unit', '3': 5, '4': 1, '5': 9, '10': 'unit'},
   ],
 };
@@ -199,7 +273,15 @@ const CreateTimeSeriesRequest$json = {
   '1': 'CreateTimeSeriesRequest',
   '2': [
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'time_series', '3': 2, '4': 3, '5': 11, '6': '.google.monitoring.v3.TimeSeries', '8': {}, '10': 'timeSeries'},
+    {
+      '1': 'time_series',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeSeries',
+      '8': {},
+      '10': 'timeSeries'
+    },
   ],
 };
 
@@ -246,8 +328,21 @@ const CreateTimeSeriesSummary$json = {
   '1': 'CreateTimeSeriesSummary',
   '2': [
     {'1': 'total_point_count', '3': 1, '4': 1, '5': 5, '10': 'totalPointCount'},
-    {'1': 'success_point_count', '3': 2, '4': 1, '5': 5, '10': 'successPointCount'},
-    {'1': 'errors', '3': 3, '4': 3, '5': 11, '6': '.google.monitoring.v3.CreateTimeSeriesSummary.Error', '10': 'errors'},
+    {
+      '1': 'success_point_count',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'successPointCount'
+    },
+    {
+      '1': 'errors',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.CreateTimeSeriesSummary.Error',
+      '10': 'errors'
+    },
   ],
   '3': [CreateTimeSeriesSummary_Error$json],
 };
@@ -256,7 +351,14 @@ const CreateTimeSeriesSummary$json = {
 const CreateTimeSeriesSummary_Error$json = {
   '1': 'Error',
   '2': [
-    {'1': 'status', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
     {'1': 'point_count', '3': 2, '4': 1, '5': 5, '10': 'pointCount'},
   ],
 };
@@ -291,10 +393,31 @@ final $typed_data.Uint8List queryTimeSeriesRequestDescriptor = $convert.base64De
 const QueryTimeSeriesResponse$json = {
   '1': 'QueryTimeSeriesResponse',
   '2': [
-    {'1': 'time_series_descriptor', '3': 8, '4': 1, '5': 11, '6': '.google.monitoring.v3.TimeSeriesDescriptor', '10': 'timeSeriesDescriptor'},
-    {'1': 'time_series_data', '3': 9, '4': 3, '5': 11, '6': '.google.monitoring.v3.TimeSeriesData', '10': 'timeSeriesData'},
+    {
+      '1': 'time_series_descriptor',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeSeriesDescriptor',
+      '10': 'timeSeriesDescriptor'
+    },
+    {
+      '1': 'time_series_data',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeSeriesData',
+      '10': 'timeSeriesData'
+    },
     {'1': 'next_page_token', '3': 10, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'partial_errors', '3': 11, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'partialErrors'},
+    {
+      '1': 'partial_errors',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'partialErrors'
+    },
   ],
 };
 
@@ -311,7 +434,14 @@ final $typed_data.Uint8List queryTimeSeriesResponseDescriptor = $convert.base64D
 const QueryErrorList$json = {
   '1': 'QueryErrorList',
   '2': [
-    {'1': 'errors', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.v3.QueryError', '10': 'errors'},
+    {
+      '1': 'errors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.QueryError',
+      '10': 'errors'
+    },
     {'1': 'error_summary', '3': 2, '4': 1, '5': 9, '10': 'errorSummary'},
   ],
 };
@@ -320,4 +450,3 @@ const QueryErrorList$json = {
 final $typed_data.Uint8List queryErrorListDescriptor = $convert.base64Decode(
     'Cg5RdWVyeUVycm9yTGlzdBI4CgZlcnJvcnMYASADKAsyIC5nb29nbGUubW9uaXRvcmluZy52My'
     '5RdWVyeUVycm9yUgZlcnJvcnMSIwoNZXJyb3Jfc3VtbWFyeRgCIAEoCVIMZXJyb3JTdW1tYXJ5');
-

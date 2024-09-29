@@ -55,36 +55,55 @@ class RoutingParameters extends $pb.GeneratedMessage {
     return $result;
   }
   RoutingParameters._() : super();
-  factory RoutingParameters.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RoutingParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RoutingParameters.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RoutingParameters.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RoutingParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'origin', subBuilder: $325.LatLng.create)
-    ..e<$474.TravelMode>(2, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: $474.TravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: $474.TravelMode.valueOf, enumValues: $474.TravelMode.values)
-    ..aOM<$469.RouteModifiers>(3, _omitFieldNames ? '' : 'routeModifiers', subBuilder: $469.RouteModifiers.create)
-    ..e<$475.RoutingPreference>(4, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE, defaultOrMaker: $475.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED, valueOf: $475.RoutingPreference.valueOf, enumValues: $475.RoutingPreference.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RoutingParameters',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'origin',
+        subBuilder: $325.LatLng.create)
+    ..e<$474.TravelMode>(
+        2, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
+        defaultOrMaker: $474.TravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: $474.TravelMode.valueOf,
+        enumValues: $474.TravelMode.values)
+    ..aOM<$469.RouteModifiers>(3, _omitFieldNames ? '' : 'routeModifiers',
+        subBuilder: $469.RouteModifiers.create)
+    ..e<$475.RoutingPreference>(
+        4, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE,
+        defaultOrMaker: $475.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
+        valueOf: $475.RoutingPreference.valueOf,
+        enumValues: $475.RoutingPreference.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RoutingParameters clone() => RoutingParameters()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RoutingParameters copyWith(void Function(RoutingParameters) updates) => super.copyWith((message) => updates(message as RoutingParameters)) as RoutingParameters;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RoutingParameters copyWith(void Function(RoutingParameters) updates) =>
+      super.copyWith((message) => updates(message as RoutingParameters))
+          as RoutingParameters;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RoutingParameters create() => RoutingParameters._();
   RoutingParameters createEmptyInstance() => create();
-  static $pb.PbList<RoutingParameters> createRepeated() => $pb.PbList<RoutingParameters>();
+  static $pb.PbList<RoutingParameters> createRepeated() =>
+      $pb.PbList<RoutingParameters>();
   @$core.pragma('dart2js:noInline')
-  static RoutingParameters getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RoutingParameters>(create);
+  static RoutingParameters getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RoutingParameters>(create);
   static RoutingParameters? _defaultInstance;
 
   /// Optional. An explicit routing origin that overrides the origin defined in
@@ -92,7 +111,10 @@ class RoutingParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get origin => $_getN(0);
   @$pb.TagNumber(1)
-  set origin($325.LatLng v) { setField(1, v); }
+  set origin($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOrigin() => $_has(0);
   @$pb.TagNumber(1)
@@ -104,7 +126,10 @@ class RoutingParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $474.TravelMode get travelMode => $_getN(1);
   @$pb.TagNumber(2)
-  set travelMode($474.TravelMode v) { setField(2, v); }
+  set travelMode($474.TravelMode v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTravelMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -114,7 +139,10 @@ class RoutingParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $469.RouteModifiers get routeModifiers => $_getN(2);
   @$pb.TagNumber(3)
-  set routeModifiers($469.RouteModifiers v) { setField(3, v); }
+  set routeModifiers($469.RouteModifiers v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRouteModifiers() => $_has(2);
   @$pb.TagNumber(3)
@@ -129,17 +157,17 @@ class RoutingParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $475.RoutingPreference get routingPreference => $_getN(3);
   @$pb.TagNumber(4)
-  set routingPreference($475.RoutingPreference v) { setField(4, v); }
+  set routingPreference($475.RoutingPreference v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRoutingPreference() => $_has(3);
   @$pb.TagNumber(4)
   void clearRoutingPreference() => clearField(4);
 }
 
-enum SearchNearbyRequest_LocationRestriction_Type {
-  circle, 
-  notSet
-}
+enum SearchNearbyRequest_LocationRestriction_Type { circle, notSet }
 
 /// The region to search.
 class SearchNearbyRequest_LocationRestriction extends $pb.GeneratedMessage {
@@ -153,48 +181,70 @@ class SearchNearbyRequest_LocationRestriction extends $pb.GeneratedMessage {
     return $result;
   }
   SearchNearbyRequest_LocationRestriction._() : super();
-  factory SearchNearbyRequest_LocationRestriction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchNearbyRequest_LocationRestriction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchNearbyRequest_LocationRestriction.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchNearbyRequest_LocationRestriction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, SearchNearbyRequest_LocationRestriction_Type> _SearchNearbyRequest_LocationRestriction_TypeByTag = {
-    2 : SearchNearbyRequest_LocationRestriction_Type.circle,
-    0 : SearchNearbyRequest_LocationRestriction_Type.notSet
+  static const $core
+      .Map<$core.int, SearchNearbyRequest_LocationRestriction_Type>
+      _SearchNearbyRequest_LocationRestriction_TypeByTag = {
+    2: SearchNearbyRequest_LocationRestriction_Type.circle,
+    0: SearchNearbyRequest_LocationRestriction_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchNearbyRequest.LocationRestriction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchNearbyRequest.LocationRestriction',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle', subBuilder: $470.Circle.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $470.Circle.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchNearbyRequest_LocationRestriction clone() => SearchNearbyRequest_LocationRestriction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchNearbyRequest_LocationRestriction copyWith(void Function(SearchNearbyRequest_LocationRestriction) updates) => super.copyWith((message) => updates(message as SearchNearbyRequest_LocationRestriction)) as SearchNearbyRequest_LocationRestriction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchNearbyRequest_LocationRestriction clone() =>
+      SearchNearbyRequest_LocationRestriction()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchNearbyRequest_LocationRestriction copyWith(
+          void Function(SearchNearbyRequest_LocationRestriction) updates) =>
+      super.copyWith((message) =>
+              updates(message as SearchNearbyRequest_LocationRestriction))
+          as SearchNearbyRequest_LocationRestriction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SearchNearbyRequest_LocationRestriction create() => SearchNearbyRequest_LocationRestriction._();
+  static SearchNearbyRequest_LocationRestriction create() =>
+      SearchNearbyRequest_LocationRestriction._();
   SearchNearbyRequest_LocationRestriction createEmptyInstance() => create();
-  static $pb.PbList<SearchNearbyRequest_LocationRestriction> createRepeated() => $pb.PbList<SearchNearbyRequest_LocationRestriction>();
+  static $pb.PbList<SearchNearbyRequest_LocationRestriction> createRepeated() =>
+      $pb.PbList<SearchNearbyRequest_LocationRestriction>();
   @$core.pragma('dart2js:noInline')
-  static SearchNearbyRequest_LocationRestriction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchNearbyRequest_LocationRestriction>(create);
+  static SearchNearbyRequest_LocationRestriction getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          SearchNearbyRequest_LocationRestriction>(create);
   static SearchNearbyRequest_LocationRestriction? _defaultInstance;
 
-  SearchNearbyRequest_LocationRestriction_Type whichType() => _SearchNearbyRequest_LocationRestriction_TypeByTag[$_whichOneof(0)]!;
+  SearchNearbyRequest_LocationRestriction_Type whichType() =>
+      _SearchNearbyRequest_LocationRestriction_TypeByTag[$_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// A circle defined by center point and radius.
   @$pb.TagNumber(2)
   $470.Circle get circle => $_getN(0);
   @$pb.TagNumber(2)
-  set circle($470.Circle v) { setField(2, v); }
+  set circle($470.Circle v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCircle() => $_has(0);
   @$pb.TagNumber(2)
@@ -251,42 +301,60 @@ class SearchNearbyRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchNearbyRequest._() : super();
-  factory SearchNearbyRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchNearbyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchNearbyRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchNearbyRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchNearbyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchNearbyRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'languageCode')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
     ..pPS(3, _omitFieldNames ? '' : 'includedTypes')
     ..pPS(4, _omitFieldNames ? '' : 'excludedTypes')
     ..pPS(5, _omitFieldNames ? '' : 'includedPrimaryTypes')
     ..pPS(6, _omitFieldNames ? '' : 'excludedPrimaryTypes')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'maxResultCount', $pb.PbFieldType.O3)
-    ..aOM<SearchNearbyRequest_LocationRestriction>(8, _omitFieldNames ? '' : 'locationRestriction', subBuilder: SearchNearbyRequest_LocationRestriction.create)
-    ..e<SearchNearbyRequest_RankPreference>(9, _omitFieldNames ? '' : 'rankPreference', $pb.PbFieldType.OE, defaultOrMaker: SearchNearbyRequest_RankPreference.RANK_PREFERENCE_UNSPECIFIED, valueOf: SearchNearbyRequest_RankPreference.valueOf, enumValues: SearchNearbyRequest_RankPreference.values)
-    ..aOM<RoutingParameters>(10, _omitFieldNames ? '' : 'routingParameters', subBuilder: RoutingParameters.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        7, _omitFieldNames ? '' : 'maxResultCount', $pb.PbFieldType.O3)
+    ..aOM<SearchNearbyRequest_LocationRestriction>(
+        8, _omitFieldNames ? '' : 'locationRestriction',
+        subBuilder: SearchNearbyRequest_LocationRestriction.create)
+    ..e<SearchNearbyRequest_RankPreference>(
+        9, _omitFieldNames ? '' : 'rankPreference', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SearchNearbyRequest_RankPreference.RANK_PREFERENCE_UNSPECIFIED,
+        valueOf: SearchNearbyRequest_RankPreference.valueOf,
+        enumValues: SearchNearbyRequest_RankPreference.values)
+    ..aOM<RoutingParameters>(10, _omitFieldNames ? '' : 'routingParameters',
+        subBuilder: RoutingParameters.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchNearbyRequest clone() => SearchNearbyRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchNearbyRequest copyWith(void Function(SearchNearbyRequest) updates) => super.copyWith((message) => updates(message as SearchNearbyRequest)) as SearchNearbyRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchNearbyRequest copyWith(void Function(SearchNearbyRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchNearbyRequest))
+          as SearchNearbyRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchNearbyRequest create() => SearchNearbyRequest._();
   SearchNearbyRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchNearbyRequest> createRepeated() => $pb.PbList<SearchNearbyRequest>();
+  static $pb.PbList<SearchNearbyRequest> createRepeated() =>
+      $pb.PbList<SearchNearbyRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchNearbyRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchNearbyRequest>(create);
+  static SearchNearbyRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchNearbyRequest>(create);
   static SearchNearbyRequest? _defaultInstance;
 
   ///  Place details will be displayed with the preferred language if available.
@@ -299,7 +367,10 @@ class SearchNearbyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get languageCode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set languageCode($core.String v) { $_setString(0, v); }
+  set languageCode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLanguageCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -318,7 +389,10 @@ class SearchNearbyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get regionCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set regionCode($core.String v) { $_setString(1, v); }
+  set regionCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegionCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -413,7 +487,10 @@ class SearchNearbyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get maxResultCount => $_getIZ(6);
   @$pb.TagNumber(7)
-  set maxResultCount($core.int v) { $_setSignedInt32(6, v); }
+  set maxResultCount($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasMaxResultCount() => $_has(6);
   @$pb.TagNumber(7)
@@ -423,19 +500,26 @@ class SearchNearbyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   SearchNearbyRequest_LocationRestriction get locationRestriction => $_getN(7);
   @$pb.TagNumber(8)
-  set locationRestriction(SearchNearbyRequest_LocationRestriction v) { setField(8, v); }
+  set locationRestriction(SearchNearbyRequest_LocationRestriction v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasLocationRestriction() => $_has(7);
   @$pb.TagNumber(8)
   void clearLocationRestriction() => clearField(8);
   @$pb.TagNumber(8)
-  SearchNearbyRequest_LocationRestriction ensureLocationRestriction() => $_ensure(7);
+  SearchNearbyRequest_LocationRestriction ensureLocationRestriction() =>
+      $_ensure(7);
 
   /// How results will be ranked in the response.
   @$pb.TagNumber(9)
   SearchNearbyRequest_RankPreference get rankPreference => $_getN(8);
   @$pb.TagNumber(9)
-  set rankPreference(SearchNearbyRequest_RankPreference v) { setField(9, v); }
+  set rankPreference(SearchNearbyRequest_RankPreference v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasRankPreference() => $_has(8);
   @$pb.TagNumber(9)
@@ -445,7 +529,10 @@ class SearchNearbyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   RoutingParameters get routingParameters => $_getN(9);
   @$pb.TagNumber(10)
-  set routingParameters(RoutingParameters v) { setField(10, v); }
+  set routingParameters(RoutingParameters v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasRoutingParameters() => $_has(9);
   @$pb.TagNumber(10)
@@ -470,34 +557,47 @@ class SearchNearbyResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchNearbyResponse._() : super();
-  factory SearchNearbyResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchNearbyResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchNearbyResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchNearbyResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchNearbyResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<$171.Place>(1, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM, subBuilder: $171.Place.create)
-    ..pc<$471.RoutingSummary>(2, _omitFieldNames ? '' : 'routingSummaries', $pb.PbFieldType.PM, subBuilder: $471.RoutingSummary.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchNearbyResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..pc<$171.Place>(1, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM,
+        subBuilder: $171.Place.create)
+    ..pc<$471.RoutingSummary>(
+        2, _omitFieldNames ? '' : 'routingSummaries', $pb.PbFieldType.PM,
+        subBuilder: $471.RoutingSummary.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchNearbyResponse clone() => SearchNearbyResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchNearbyResponse copyWith(void Function(SearchNearbyResponse) updates) => super.copyWith((message) => updates(message as SearchNearbyResponse)) as SearchNearbyResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchNearbyResponse clone() =>
+      SearchNearbyResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchNearbyResponse copyWith(void Function(SearchNearbyResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchNearbyResponse))
+          as SearchNearbyResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchNearbyResponse create() => SearchNearbyResponse._();
   SearchNearbyResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchNearbyResponse> createRepeated() => $pb.PbList<SearchNearbyResponse>();
+  static $pb.PbList<SearchNearbyResponse> createRepeated() =>
+      $pb.PbList<SearchNearbyResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchNearbyResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchNearbyResponse>(create);
+  static SearchNearbyResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchNearbyResponse>(create);
   static SearchNearbyResponse? _defaultInstance;
 
   /// A list of places that meets user's requirements like places
@@ -514,11 +614,7 @@ class SearchNearbyResponse extends $pb.GeneratedMessage {
   $core.List<$471.RoutingSummary> get routingSummaries => $_getList(1);
 }
 
-enum SearchTextRequest_LocationBias_Type {
-  rectangle, 
-  circle, 
-  notSet
-}
+enum SearchTextRequest_LocationBias_Type { rectangle, circle, notSet }
 
 /// The region to search. This location serves as a bias which means results
 /// around given location might be returned.
@@ -537,43 +633,60 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
     return $result;
   }
   SearchTextRequest_LocationBias._() : super();
-  factory SearchTextRequest_LocationBias.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTextRequest_LocationBias.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTextRequest_LocationBias.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTextRequest_LocationBias.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, SearchTextRequest_LocationBias_Type> _SearchTextRequest_LocationBias_TypeByTag = {
-    1 : SearchTextRequest_LocationBias_Type.rectangle,
-    2 : SearchTextRequest_LocationBias_Type.circle,
-    0 : SearchTextRequest_LocationBias_Type.notSet
+  static const $core.Map<$core.int, SearchTextRequest_LocationBias_Type>
+      _SearchTextRequest_LocationBias_TypeByTag = {
+    1: SearchTextRequest_LocationBias_Type.rectangle,
+    2: SearchTextRequest_LocationBias_Type.circle,
+    0: SearchTextRequest_LocationBias_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTextRequest.LocationBias', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTextRequest.LocationBias',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle', subBuilder: $449.Viewport.create)
-    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle', subBuilder: $470.Circle.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $449.Viewport.create)
+    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $470.Circle.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_LocationBias clone() => SearchTextRequest_LocationBias()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_LocationBias copyWith(void Function(SearchTextRequest_LocationBias) updates) => super.copyWith((message) => updates(message as SearchTextRequest_LocationBias)) as SearchTextRequest_LocationBias;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_LocationBias clone() =>
+      SearchTextRequest_LocationBias()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_LocationBias copyWith(
+          void Function(SearchTextRequest_LocationBias) updates) =>
+      super.copyWith(
+              (message) => updates(message as SearchTextRequest_LocationBias))
+          as SearchTextRequest_LocationBias;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_LocationBias create() => SearchTextRequest_LocationBias._();
+  static SearchTextRequest_LocationBias create() =>
+      SearchTextRequest_LocationBias._();
   SearchTextRequest_LocationBias createEmptyInstance() => create();
-  static $pb.PbList<SearchTextRequest_LocationBias> createRepeated() => $pb.PbList<SearchTextRequest_LocationBias>();
+  static $pb.PbList<SearchTextRequest_LocationBias> createRepeated() =>
+      $pb.PbList<SearchTextRequest_LocationBias>();
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_LocationBias getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTextRequest_LocationBias>(create);
+  static SearchTextRequest_LocationBias getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchTextRequest_LocationBias>(create);
   static SearchTextRequest_LocationBias? _defaultInstance;
 
-  SearchTextRequest_LocationBias_Type whichType() => _SearchTextRequest_LocationBias_TypeByTag[$_whichOneof(0)]!;
+  SearchTextRequest_LocationBias_Type whichType() =>
+      _SearchTextRequest_LocationBias_TypeByTag[$_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// A rectangle box defined by northeast and southwest corner.
@@ -585,7 +698,10 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $449.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) { setField(1, v); }
+  set rectangle($449.Viewport v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRectangle() => $_has(0);
   @$pb.TagNumber(1)
@@ -597,7 +713,10 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $470.Circle get circle => $_getN(1);
   @$pb.TagNumber(2)
-  set circle($470.Circle v) { setField(2, v); }
+  set circle($470.Circle v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCircle() => $_has(1);
   @$pb.TagNumber(2)
@@ -606,10 +725,7 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
   $470.Circle ensureCircle() => $_ensure(1);
 }
 
-enum SearchTextRequest_LocationRestriction_Type {
-  rectangle, 
-  notSet
-}
+enum SearchTextRequest_LocationRestriction_Type { rectangle, notSet }
 
 /// The region to search. This location serves as a restriction which means
 /// results outside given location will not be returned.
@@ -624,41 +740,59 @@ class SearchTextRequest_LocationRestriction extends $pb.GeneratedMessage {
     return $result;
   }
   SearchTextRequest_LocationRestriction._() : super();
-  factory SearchTextRequest_LocationRestriction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTextRequest_LocationRestriction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTextRequest_LocationRestriction.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTextRequest_LocationRestriction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, SearchTextRequest_LocationRestriction_Type> _SearchTextRequest_LocationRestriction_TypeByTag = {
-    1 : SearchTextRequest_LocationRestriction_Type.rectangle,
-    0 : SearchTextRequest_LocationRestriction_Type.notSet
+  static const $core.Map<$core.int, SearchTextRequest_LocationRestriction_Type>
+      _SearchTextRequest_LocationRestriction_TypeByTag = {
+    1: SearchTextRequest_LocationRestriction_Type.rectangle,
+    0: SearchTextRequest_LocationRestriction_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTextRequest.LocationRestriction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTextRequest.LocationRestriction',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle', subBuilder: $449.Viewport.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $449.Viewport.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_LocationRestriction clone() => SearchTextRequest_LocationRestriction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_LocationRestriction copyWith(void Function(SearchTextRequest_LocationRestriction) updates) => super.copyWith((message) => updates(message as SearchTextRequest_LocationRestriction)) as SearchTextRequest_LocationRestriction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_LocationRestriction clone() =>
+      SearchTextRequest_LocationRestriction()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_LocationRestriction copyWith(
+          void Function(SearchTextRequest_LocationRestriction) updates) =>
+      super.copyWith((message) =>
+              updates(message as SearchTextRequest_LocationRestriction))
+          as SearchTextRequest_LocationRestriction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_LocationRestriction create() => SearchTextRequest_LocationRestriction._();
+  static SearchTextRequest_LocationRestriction create() =>
+      SearchTextRequest_LocationRestriction._();
   SearchTextRequest_LocationRestriction createEmptyInstance() => create();
-  static $pb.PbList<SearchTextRequest_LocationRestriction> createRepeated() => $pb.PbList<SearchTextRequest_LocationRestriction>();
+  static $pb.PbList<SearchTextRequest_LocationRestriction> createRepeated() =>
+      $pb.PbList<SearchTextRequest_LocationRestriction>();
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_LocationRestriction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTextRequest_LocationRestriction>(create);
+  static SearchTextRequest_LocationRestriction getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          SearchTextRequest_LocationRestriction>(create);
   static SearchTextRequest_LocationRestriction? _defaultInstance;
 
-  SearchTextRequest_LocationRestriction_Type whichType() => _SearchTextRequest_LocationRestriction_TypeByTag[$_whichOneof(0)]!;
+  SearchTextRequest_LocationRestriction_Type whichType() =>
+      _SearchTextRequest_LocationRestriction_TypeByTag[$_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// A rectangle box defined by northeast and southwest corner.
@@ -670,7 +804,10 @@ class SearchTextRequest_LocationRestriction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $449.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) { setField(1, v); }
+  set rectangle($449.Viewport v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRectangle() => $_has(0);
   @$pb.TagNumber(1)
@@ -695,34 +832,52 @@ class SearchTextRequest_EVOptions extends $pb.GeneratedMessage {
     return $result;
   }
   SearchTextRequest_EVOptions._() : super();
-  factory SearchTextRequest_EVOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTextRequest_EVOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTextRequest_EVOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTextRequest_EVOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTextRequest.EVOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'minimumChargingRateKw', $pb.PbFieldType.OD)
-    ..pc<$467.EVConnectorType>(2, _omitFieldNames ? '' : 'connectorTypes', $pb.PbFieldType.KE, valueOf: $467.EVConnectorType.valueOf, enumValues: $467.EVConnectorType.values, defaultEnumValue: $467.EVConnectorType.EV_CONNECTOR_TYPE_UNSPECIFIED)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTextRequest.EVOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'minimumChargingRateKw', $pb.PbFieldType.OD)
+    ..pc<$467.EVConnectorType>(
+        2, _omitFieldNames ? '' : 'connectorTypes', $pb.PbFieldType.KE,
+        valueOf: $467.EVConnectorType.valueOf,
+        enumValues: $467.EVConnectorType.values,
+        defaultEnumValue: $467.EVConnectorType.EV_CONNECTOR_TYPE_UNSPECIFIED)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_EVOptions clone() => SearchTextRequest_EVOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_EVOptions copyWith(void Function(SearchTextRequest_EVOptions) updates) => super.copyWith((message) => updates(message as SearchTextRequest_EVOptions)) as SearchTextRequest_EVOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_EVOptions clone() =>
+      SearchTextRequest_EVOptions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_EVOptions copyWith(
+          void Function(SearchTextRequest_EVOptions) updates) =>
+      super.copyWith(
+              (message) => updates(message as SearchTextRequest_EVOptions))
+          as SearchTextRequest_EVOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_EVOptions create() => SearchTextRequest_EVOptions._();
+  static SearchTextRequest_EVOptions create() =>
+      SearchTextRequest_EVOptions._();
   SearchTextRequest_EVOptions createEmptyInstance() => create();
-  static $pb.PbList<SearchTextRequest_EVOptions> createRepeated() => $pb.PbList<SearchTextRequest_EVOptions>();
+  static $pb.PbList<SearchTextRequest_EVOptions> createRepeated() =>
+      $pb.PbList<SearchTextRequest_EVOptions>();
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_EVOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTextRequest_EVOptions>(create);
+  static SearchTextRequest_EVOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchTextRequest_EVOptions>(create);
   static SearchTextRequest_EVOptions? _defaultInstance;
 
   /// Optional. Minimum required charging rate in kilowatts. A place with a
@@ -730,7 +885,10 @@ class SearchTextRequest_EVOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get minimumChargingRateKw => $_getN(0);
   @$pb.TagNumber(1)
-  set minimumChargingRateKw($core.double v) { $_setDouble(0, v); }
+  set minimumChargingRateKw($core.double v) {
+    $_setDouble(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinimumChargingRateKw() => $_has(0);
   @$pb.TagNumber(1)
@@ -756,7 +914,8 @@ class SearchTextRequest_EVOptions extends $pb.GeneratedMessage {
 ///  from origin to destination. The results might be along an alternate route,
 ///  especially if the provided polyline does not define an optimal route from
 ///  origin to destination.
-class SearchTextRequest_SearchAlongRouteParameters extends $pb.GeneratedMessage {
+class SearchTextRequest_SearchAlongRouteParameters
+    extends $pb.GeneratedMessage {
   factory SearchTextRequest_SearchAlongRouteParameters({
     $472.Polyline? polyline,
   }) {
@@ -767,40 +926,62 @@ class SearchTextRequest_SearchAlongRouteParameters extends $pb.GeneratedMessage 
     return $result;
   }
   SearchTextRequest_SearchAlongRouteParameters._() : super();
-  factory SearchTextRequest_SearchAlongRouteParameters.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTextRequest_SearchAlongRouteParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTextRequest_SearchAlongRouteParameters.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTextRequest_SearchAlongRouteParameters.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTextRequest.SearchAlongRouteParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$472.Polyline>(1, _omitFieldNames ? '' : 'polyline', subBuilder: $472.Polyline.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTextRequest.SearchAlongRouteParameters',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<$472.Polyline>(1, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $472.Polyline.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_SearchAlongRouteParameters clone() => SearchTextRequest_SearchAlongRouteParameters()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest_SearchAlongRouteParameters copyWith(void Function(SearchTextRequest_SearchAlongRouteParameters) updates) => super.copyWith((message) => updates(message as SearchTextRequest_SearchAlongRouteParameters)) as SearchTextRequest_SearchAlongRouteParameters;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_SearchAlongRouteParameters clone() =>
+      SearchTextRequest_SearchAlongRouteParameters()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest_SearchAlongRouteParameters copyWith(
+          void Function(SearchTextRequest_SearchAlongRouteParameters)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as SearchTextRequest_SearchAlongRouteParameters))
+          as SearchTextRequest_SearchAlongRouteParameters;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_SearchAlongRouteParameters create() => SearchTextRequest_SearchAlongRouteParameters._();
-  SearchTextRequest_SearchAlongRouteParameters createEmptyInstance() => create();
-  static $pb.PbList<SearchTextRequest_SearchAlongRouteParameters> createRepeated() => $pb.PbList<SearchTextRequest_SearchAlongRouteParameters>();
+  static SearchTextRequest_SearchAlongRouteParameters create() =>
+      SearchTextRequest_SearchAlongRouteParameters._();
+  SearchTextRequest_SearchAlongRouteParameters createEmptyInstance() =>
+      create();
+  static $pb.PbList<SearchTextRequest_SearchAlongRouteParameters>
+      createRepeated() =>
+          $pb.PbList<SearchTextRequest_SearchAlongRouteParameters>();
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest_SearchAlongRouteParameters getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTextRequest_SearchAlongRouteParameters>(create);
+  static SearchTextRequest_SearchAlongRouteParameters getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          SearchTextRequest_SearchAlongRouteParameters>(create);
   static SearchTextRequest_SearchAlongRouteParameters? _defaultInstance;
 
   /// Required. The route polyline.
   @$pb.TagNumber(1)
   $472.Polyline get polyline => $_getN(0);
   @$pb.TagNumber(1)
-  set polyline($472.Polyline v) { setField(1, v); }
+  set polyline($472.Polyline v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPolyline() => $_has(0);
   @$pb.TagNumber(1)
@@ -877,54 +1058,84 @@ class SearchTextRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchTextRequest._() : super();
-  factory SearchTextRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTextRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTextRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTextRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTextRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTextRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'textQuery')
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
     ..aOS(3, _omitFieldNames ? '' : 'regionCode')
-    ..e<SearchTextRequest_RankPreference>(4, _omitFieldNames ? '' : 'rankPreference', $pb.PbFieldType.OE, defaultOrMaker: SearchTextRequest_RankPreference.RANK_PREFERENCE_UNSPECIFIED, valueOf: SearchTextRequest_RankPreference.valueOf, enumValues: SearchTextRequest_RankPreference.values)
+    ..e<SearchTextRequest_RankPreference>(
+        4, _omitFieldNames ? '' : 'rankPreference', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SearchTextRequest_RankPreference.RANK_PREFERENCE_UNSPECIFIED,
+        valueOf: SearchTextRequest_RankPreference.valueOf,
+        enumValues: SearchTextRequest_RankPreference.values)
     ..aOS(6, _omitFieldNames ? '' : 'includedType')
     ..aOB(7, _omitFieldNames ? '' : 'openNow')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'minRating', $pb.PbFieldType.OD)
-    ..a<$core.int>(10, _omitFieldNames ? '' : 'maxResultCount', $pb.PbFieldType.O3)
-    ..pc<$171.PriceLevel>(11, _omitFieldNames ? '' : 'priceLevels', $pb.PbFieldType.KE, valueOf: $171.PriceLevel.valueOf, enumValues: $171.PriceLevel.values, defaultEnumValue: $171.PriceLevel.PRICE_LEVEL_UNSPECIFIED)
+    ..a<$core.int>(
+        10, _omitFieldNames ? '' : 'maxResultCount', $pb.PbFieldType.O3)
+    ..pc<$171.PriceLevel>(
+        11, _omitFieldNames ? '' : 'priceLevels', $pb.PbFieldType.KE,
+        valueOf: $171.PriceLevel.valueOf,
+        enumValues: $171.PriceLevel.values,
+        defaultEnumValue: $171.PriceLevel.PRICE_LEVEL_UNSPECIFIED)
     ..aOB(12, _omitFieldNames ? '' : 'strictTypeFiltering')
-    ..aOM<SearchTextRequest_LocationBias>(13, _omitFieldNames ? '' : 'locationBias', subBuilder: SearchTextRequest_LocationBias.create)
-    ..aOM<SearchTextRequest_LocationRestriction>(14, _omitFieldNames ? '' : 'locationRestriction', subBuilder: SearchTextRequest_LocationRestriction.create)
-    ..aOM<SearchTextRequest_EVOptions>(15, _omitFieldNames ? '' : 'evOptions', subBuilder: SearchTextRequest_EVOptions.create)
-    ..aOM<RoutingParameters>(16, _omitFieldNames ? '' : 'routingParameters', subBuilder: RoutingParameters.create)
-    ..aOM<SearchTextRequest_SearchAlongRouteParameters>(17, _omitFieldNames ? '' : 'searchAlongRouteParameters', subBuilder: SearchTextRequest_SearchAlongRouteParameters.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<SearchTextRequest_LocationBias>(
+        13, _omitFieldNames ? '' : 'locationBias',
+        subBuilder: SearchTextRequest_LocationBias.create)
+    ..aOM<SearchTextRequest_LocationRestriction>(
+        14, _omitFieldNames ? '' : 'locationRestriction',
+        subBuilder: SearchTextRequest_LocationRestriction.create)
+    ..aOM<SearchTextRequest_EVOptions>(15, _omitFieldNames ? '' : 'evOptions',
+        subBuilder: SearchTextRequest_EVOptions.create)
+    ..aOM<RoutingParameters>(16, _omitFieldNames ? '' : 'routingParameters',
+        subBuilder: RoutingParameters.create)
+    ..aOM<SearchTextRequest_SearchAlongRouteParameters>(
+        17, _omitFieldNames ? '' : 'searchAlongRouteParameters',
+        subBuilder: SearchTextRequest_SearchAlongRouteParameters.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchTextRequest clone() => SearchTextRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTextRequest copyWith(void Function(SearchTextRequest) updates) => super.copyWith((message) => updates(message as SearchTextRequest)) as SearchTextRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTextRequest copyWith(void Function(SearchTextRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchTextRequest))
+          as SearchTextRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchTextRequest create() => SearchTextRequest._();
   SearchTextRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchTextRequest> createRepeated() => $pb.PbList<SearchTextRequest>();
+  static $pb.PbList<SearchTextRequest> createRepeated() =>
+      $pb.PbList<SearchTextRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchTextRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTextRequest>(create);
+  static SearchTextRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchTextRequest>(create);
   static SearchTextRequest? _defaultInstance;
 
   /// Required. The text query for textual search.
   @$pb.TagNumber(1)
   $core.String get textQuery => $_getSZ(0);
   @$pb.TagNumber(1)
-  set textQuery($core.String v) { $_setString(0, v); }
+  set textQuery($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTextQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -940,7 +1151,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get languageCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set languageCode($core.String v) { $_setString(1, v); }
+  set languageCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLanguageCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -959,7 +1173,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get regionCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set regionCode($core.String v) { $_setString(2, v); }
+  set regionCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRegionCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -969,7 +1186,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   SearchTextRequest_RankPreference get rankPreference => $_getN(3);
   @$pb.TagNumber(4)
-  set rankPreference(SearchTextRequest_RankPreference v) { setField(4, v); }
+  set rankPreference(SearchTextRequest_RankPreference v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRankPreference() => $_has(3);
   @$pb.TagNumber(4)
@@ -981,7 +1201,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get includedType => $_getSZ(4);
   @$pb.TagNumber(6)
-  set includedType($core.String v) { $_setString(4, v); }
+  set includedType($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasIncludedType() => $_has(4);
   @$pb.TagNumber(6)
@@ -992,7 +1215,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get openNow => $_getBF(5);
   @$pb.TagNumber(7)
-  set openNow($core.bool v) { $_setBool(5, v); }
+  set openNow($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasOpenNow() => $_has(5);
   @$pb.TagNumber(7)
@@ -1006,7 +1232,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get minRating => $_getN(6);
   @$pb.TagNumber(9)
-  set minRating($core.double v) { $_setDouble(6, v); }
+  set minRating($core.double v) {
+    $_setDouble(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasMinRating() => $_has(6);
   @$pb.TagNumber(9)
@@ -1019,7 +1248,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get maxResultCount => $_getIZ(7);
   @$pb.TagNumber(10)
-  set maxResultCount($core.int v) { $_setSignedInt32(7, v); }
+  set maxResultCount($core.int v) {
+    $_setSignedInt32(7, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasMaxResultCount() => $_has(7);
   @$pb.TagNumber(10)
@@ -1036,7 +1268,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get strictTypeFiltering => $_getBF(9);
   @$pb.TagNumber(12)
-  set strictTypeFiltering($core.bool v) { $_setBool(9, v); }
+  set strictTypeFiltering($core.bool v) {
+    $_setBool(9, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasStrictTypeFiltering() => $_has(9);
   @$pb.TagNumber(12)
@@ -1048,7 +1283,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   SearchTextRequest_LocationBias get locationBias => $_getN(10);
   @$pb.TagNumber(13)
-  set locationBias(SearchTextRequest_LocationBias v) { setField(13, v); }
+  set locationBias(SearchTextRequest_LocationBias v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasLocationBias() => $_has(10);
   @$pb.TagNumber(13)
@@ -1062,19 +1300,26 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   SearchTextRequest_LocationRestriction get locationRestriction => $_getN(11);
   @$pb.TagNumber(14)
-  set locationRestriction(SearchTextRequest_LocationRestriction v) { setField(14, v); }
+  set locationRestriction(SearchTextRequest_LocationRestriction v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasLocationRestriction() => $_has(11);
   @$pb.TagNumber(14)
   void clearLocationRestriction() => clearField(14);
   @$pb.TagNumber(14)
-  SearchTextRequest_LocationRestriction ensureLocationRestriction() => $_ensure(11);
+  SearchTextRequest_LocationRestriction ensureLocationRestriction() =>
+      $_ensure(11);
 
   /// Optional. Set the searchable EV options of a place search request.
   @$pb.TagNumber(15)
   SearchTextRequest_EVOptions get evOptions => $_getN(12);
   @$pb.TagNumber(15)
-  set evOptions(SearchTextRequest_EVOptions v) { setField(15, v); }
+  set evOptions(SearchTextRequest_EVOptions v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasEvOptions() => $_has(12);
   @$pb.TagNumber(15)
@@ -1086,7 +1331,10 @@ class SearchTextRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   RoutingParameters get routingParameters => $_getN(13);
   @$pb.TagNumber(16)
-  set routingParameters(RoutingParameters v) { setField(16, v); }
+  set routingParameters(RoutingParameters v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasRoutingParameters() => $_has(13);
   @$pb.TagNumber(16)
@@ -1096,15 +1344,21 @@ class SearchTextRequest extends $pb.GeneratedMessage {
 
   /// Optional. Additional parameters proto for searching along a route.
   @$pb.TagNumber(17)
-  SearchTextRequest_SearchAlongRouteParameters get searchAlongRouteParameters => $_getN(14);
+  SearchTextRequest_SearchAlongRouteParameters get searchAlongRouteParameters =>
+      $_getN(14);
   @$pb.TagNumber(17)
-  set searchAlongRouteParameters(SearchTextRequest_SearchAlongRouteParameters v) { setField(17, v); }
+  set searchAlongRouteParameters(
+      SearchTextRequest_SearchAlongRouteParameters v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasSearchAlongRouteParameters() => $_has(14);
   @$pb.TagNumber(17)
   void clearSearchAlongRouteParameters() => clearField(17);
   @$pb.TagNumber(17)
-  SearchTextRequest_SearchAlongRouteParameters ensureSearchAlongRouteParameters() => $_ensure(14);
+  SearchTextRequest_SearchAlongRouteParameters
+      ensureSearchAlongRouteParameters() => $_ensure(14);
 }
 
 ///  Response proto for SearchText.
@@ -1127,35 +1381,49 @@ class SearchTextResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchTextResponse._() : super();
-  factory SearchTextResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTextResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTextResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTextResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTextResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<$171.Place>(1, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM, subBuilder: $171.Place.create)
-    ..pc<$471.RoutingSummary>(2, _omitFieldNames ? '' : 'routingSummaries', $pb.PbFieldType.PM, subBuilder: $471.RoutingSummary.create)
-    ..pc<$473.ContextualContent>(3, _omitFieldNames ? '' : 'contextualContents', $pb.PbFieldType.PM, subBuilder: $473.ContextualContent.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTextResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..pc<$171.Place>(1, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM,
+        subBuilder: $171.Place.create)
+    ..pc<$471.RoutingSummary>(
+        2, _omitFieldNames ? '' : 'routingSummaries', $pb.PbFieldType.PM,
+        subBuilder: $471.RoutingSummary.create)
+    ..pc<$473.ContextualContent>(
+        3, _omitFieldNames ? '' : 'contextualContents', $pb.PbFieldType.PM,
+        subBuilder: $473.ContextualContent.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchTextResponse clone() => SearchTextResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTextResponse copyWith(void Function(SearchTextResponse) updates) => super.copyWith((message) => updates(message as SearchTextResponse)) as SearchTextResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTextResponse copyWith(void Function(SearchTextResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchTextResponse))
+          as SearchTextResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchTextResponse create() => SearchTextResponse._();
   SearchTextResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchTextResponse> createRepeated() => $pb.PbList<SearchTextResponse>();
+  static $pb.PbList<SearchTextResponse> createRepeated() =>
+      $pb.PbList<SearchTextResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchTextResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTextResponse>(create);
+  static SearchTextResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchTextResponse>(create);
   static SearchTextResponse? _defaultInstance;
 
   /// A list of places that meet the user's text search criteria.
@@ -1209,36 +1477,46 @@ class GetPhotoMediaRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetPhotoMediaRequest._() : super();
-  factory GetPhotoMediaRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetPhotoMediaRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetPhotoMediaRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetPhotoMediaRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetPhotoMediaRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetPhotoMediaRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxWidthPx', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'maxHeightPx', $pb.PbFieldType.O3)
     ..aOB(4, _omitFieldNames ? '' : 'skipHttpRedirect')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetPhotoMediaRequest clone() => GetPhotoMediaRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetPhotoMediaRequest copyWith(void Function(GetPhotoMediaRequest) updates) => super.copyWith((message) => updates(message as GetPhotoMediaRequest)) as GetPhotoMediaRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetPhotoMediaRequest clone() =>
+      GetPhotoMediaRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetPhotoMediaRequest copyWith(void Function(GetPhotoMediaRequest) updates) =>
+      super.copyWith((message) => updates(message as GetPhotoMediaRequest))
+          as GetPhotoMediaRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetPhotoMediaRequest create() => GetPhotoMediaRequest._();
   GetPhotoMediaRequest createEmptyInstance() => create();
-  static $pb.PbList<GetPhotoMediaRequest> createRepeated() => $pb.PbList<GetPhotoMediaRequest>();
+  static $pb.PbList<GetPhotoMediaRequest> createRepeated() =>
+      $pb.PbList<GetPhotoMediaRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetPhotoMediaRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetPhotoMediaRequest>(create);
+  static GetPhotoMediaRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetPhotoMediaRequest>(create);
   static GetPhotoMediaRequest? _defaultInstance;
 
   ///  Required. The resource name of a photo media in the format:
@@ -1251,7 +1529,10 @@ class GetPhotoMediaRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1271,7 +1552,10 @@ class GetPhotoMediaRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxWidthPx => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxWidthPx($core.int v) { $_setSignedInt32(1, v); }
+  set maxWidthPx($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxWidthPx() => $_has(1);
   @$pb.TagNumber(2)
@@ -1291,7 +1575,10 @@ class GetPhotoMediaRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxHeightPx => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxHeightPx($core.int v) { $_setSignedInt32(2, v); }
+  set maxHeightPx($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxHeightPx() => $_has(2);
   @$pb.TagNumber(3)
@@ -1304,7 +1591,10 @@ class GetPhotoMediaRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get skipHttpRedirect => $_getBF(3);
   @$pb.TagNumber(4)
-  set skipHttpRedirect($core.bool v) { $_setBool(3, v); }
+  set skipHttpRedirect($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSkipHttpRedirect() => $_has(3);
   @$pb.TagNumber(4)
@@ -1327,25 +1617,31 @@ class PhotoMedia extends $pb.GeneratedMessage {
     return $result;
   }
   PhotoMedia._() : super();
-  factory PhotoMedia.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PhotoMedia.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PhotoMedia.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PhotoMedia.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhotoMedia', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PhotoMedia',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'photoUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PhotoMedia clone() => PhotoMedia()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PhotoMedia copyWith(void Function(PhotoMedia) updates) => super.copyWith((message) => updates(message as PhotoMedia)) as PhotoMedia;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PhotoMedia copyWith(void Function(PhotoMedia) updates) =>
+      super.copyWith((message) => updates(message as PhotoMedia)) as PhotoMedia;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1354,7 +1650,8 @@ class PhotoMedia extends $pb.GeneratedMessage {
   PhotoMedia createEmptyInstance() => create();
   static $pb.PbList<PhotoMedia> createRepeated() => $pb.PbList<PhotoMedia>();
   @$core.pragma('dart2js:noInline')
-  static PhotoMedia getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhotoMedia>(create);
+  static PhotoMedia getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PhotoMedia>(create);
   static PhotoMedia? _defaultInstance;
 
   /// The resource name of a photo media in the format:
@@ -1362,7 +1659,10 @@ class PhotoMedia extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1372,7 +1672,10 @@ class PhotoMedia extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get photoUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set photoUri($core.String v) { $_setString(1, v); }
+  set photoUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPhotoUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -1404,43 +1707,55 @@ class GetPlaceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetPlaceRequest._() : super();
-  factory GetPlaceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetPlaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetPlaceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetPlaceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetPlaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetPlaceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
     ..aOS(3, _omitFieldNames ? '' : 'regionCode')
     ..aOS(4, _omitFieldNames ? '' : 'sessionToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetPlaceRequest clone() => GetPlaceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetPlaceRequest copyWith(void Function(GetPlaceRequest) updates) => super.copyWith((message) => updates(message as GetPlaceRequest)) as GetPlaceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetPlaceRequest copyWith(void Function(GetPlaceRequest) updates) =>
+      super.copyWith((message) => updates(message as GetPlaceRequest))
+          as GetPlaceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetPlaceRequest create() => GetPlaceRequest._();
   GetPlaceRequest createEmptyInstance() => create();
-  static $pb.PbList<GetPlaceRequest> createRepeated() => $pb.PbList<GetPlaceRequest>();
+  static $pb.PbList<GetPlaceRequest> createRepeated() =>
+      $pb.PbList<GetPlaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetPlaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetPlaceRequest>(create);
+  static GetPlaceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetPlaceRequest>(create);
   static GetPlaceRequest? _defaultInstance;
 
   /// Required. The resource name of a place, in the `places/{place_id}` format.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1454,7 +1769,10 @@ class GetPlaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get languageCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set languageCode($core.String v) { $_setString(1, v); }
+  set languageCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLanguageCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -1472,7 +1790,10 @@ class GetPlaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get regionCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set regionCode($core.String v) { $_setString(2, v); }
+  set regionCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRegionCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -1507,18 +1828,17 @@ class GetPlaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get sessionToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set sessionToken($core.String v) { $_setString(3, v); }
+  set sessionToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSessionToken() => $_has(3);
   @$pb.TagNumber(4)
   void clearSessionToken() => clearField(4);
 }
 
-enum AutocompletePlacesRequest_LocationBias_Type {
-  rectangle, 
-  circle, 
-  notSet
-}
+enum AutocompletePlacesRequest_LocationBias_Type { rectangle, circle, notSet }
 
 /// The region to search. The results may be biased around the specified
 /// region.
@@ -1537,50 +1857,72 @@ class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
     return $result;
   }
   AutocompletePlacesRequest_LocationBias._() : super();
-  factory AutocompletePlacesRequest_LocationBias.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesRequest_LocationBias.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesRequest_LocationBias.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesRequest_LocationBias.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AutocompletePlacesRequest_LocationBias_Type> _AutocompletePlacesRequest_LocationBias_TypeByTag = {
-    1 : AutocompletePlacesRequest_LocationBias_Type.rectangle,
-    2 : AutocompletePlacesRequest_LocationBias_Type.circle,
-    0 : AutocompletePlacesRequest_LocationBias_Type.notSet
+  static const $core.Map<$core.int, AutocompletePlacesRequest_LocationBias_Type>
+      _AutocompletePlacesRequest_LocationBias_TypeByTag = {
+    1: AutocompletePlacesRequest_LocationBias_Type.rectangle,
+    2: AutocompletePlacesRequest_LocationBias_Type.circle,
+    0: AutocompletePlacesRequest_LocationBias_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesRequest.LocationBias', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutocompletePlacesRequest.LocationBias',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle', subBuilder: $449.Viewport.create)
-    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle', subBuilder: $470.Circle.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $449.Viewport.create)
+    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $470.Circle.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesRequest_LocationBias clone() => AutocompletePlacesRequest_LocationBias()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesRequest_LocationBias copyWith(void Function(AutocompletePlacesRequest_LocationBias) updates) => super.copyWith((message) => updates(message as AutocompletePlacesRequest_LocationBias)) as AutocompletePlacesRequest_LocationBias;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesRequest_LocationBias clone() =>
+      AutocompletePlacesRequest_LocationBias()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesRequest_LocationBias copyWith(
+          void Function(AutocompletePlacesRequest_LocationBias) updates) =>
+      super.copyWith((message) =>
+              updates(message as AutocompletePlacesRequest_LocationBias))
+          as AutocompletePlacesRequest_LocationBias;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesRequest_LocationBias create() => AutocompletePlacesRequest_LocationBias._();
+  static AutocompletePlacesRequest_LocationBias create() =>
+      AutocompletePlacesRequest_LocationBias._();
   AutocompletePlacesRequest_LocationBias createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesRequest_LocationBias> createRepeated() => $pb.PbList<AutocompletePlacesRequest_LocationBias>();
+  static $pb.PbList<AutocompletePlacesRequest_LocationBias> createRepeated() =>
+      $pb.PbList<AutocompletePlacesRequest_LocationBias>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesRequest_LocationBias getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesRequest_LocationBias>(create);
+  static AutocompletePlacesRequest_LocationBias getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesRequest_LocationBias>(create);
   static AutocompletePlacesRequest_LocationBias? _defaultInstance;
 
-  AutocompletePlacesRequest_LocationBias_Type whichType() => _AutocompletePlacesRequest_LocationBias_TypeByTag[$_whichOneof(0)]!;
+  AutocompletePlacesRequest_LocationBias_Type whichType() =>
+      _AutocompletePlacesRequest_LocationBias_TypeByTag[$_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// A viewport defined by a northeast and a southwest corner.
   @$pb.TagNumber(1)
   $449.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) { setField(1, v); }
+  set rectangle($449.Viewport v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRectangle() => $_has(0);
   @$pb.TagNumber(1)
@@ -1592,7 +1934,10 @@ class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $470.Circle get circle => $_getN(1);
   @$pb.TagNumber(2)
-  set circle($470.Circle v) { setField(2, v); }
+  set circle($470.Circle v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCircle() => $_has(1);
   @$pb.TagNumber(2)
@@ -1602,14 +1947,15 @@ class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
 }
 
 enum AutocompletePlacesRequest_LocationRestriction_Type {
-  rectangle, 
-  circle, 
+  rectangle,
+  circle,
   notSet
 }
 
 /// The region to search. The results will be restricted to the specified
 /// region.
-class AutocompletePlacesRequest_LocationRestriction extends $pb.GeneratedMessage {
+class AutocompletePlacesRequest_LocationRestriction
+    extends $pb.GeneratedMessage {
   factory AutocompletePlacesRequest_LocationRestriction({
     $449.Viewport? rectangle,
     $470.Circle? circle,
@@ -1624,50 +1970,77 @@ class AutocompletePlacesRequest_LocationRestriction extends $pb.GeneratedMessage
     return $result;
   }
   AutocompletePlacesRequest_LocationRestriction._() : super();
-  factory AutocompletePlacesRequest_LocationRestriction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesRequest_LocationRestriction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesRequest_LocationRestriction.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesRequest_LocationRestriction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AutocompletePlacesRequest_LocationRestriction_Type> _AutocompletePlacesRequest_LocationRestriction_TypeByTag = {
-    1 : AutocompletePlacesRequest_LocationRestriction_Type.rectangle,
-    2 : AutocompletePlacesRequest_LocationRestriction_Type.circle,
-    0 : AutocompletePlacesRequest_LocationRestriction_Type.notSet
+  static const $core
+      .Map<$core.int, AutocompletePlacesRequest_LocationRestriction_Type>
+      _AutocompletePlacesRequest_LocationRestriction_TypeByTag = {
+    1: AutocompletePlacesRequest_LocationRestriction_Type.rectangle,
+    2: AutocompletePlacesRequest_LocationRestriction_Type.circle,
+    0: AutocompletePlacesRequest_LocationRestriction_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesRequest.LocationRestriction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutocompletePlacesRequest.LocationRestriction',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle', subBuilder: $449.Viewport.create)
-    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle', subBuilder: $470.Circle.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $449.Viewport.create)
+    ..aOM<$470.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $470.Circle.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesRequest_LocationRestriction clone() => AutocompletePlacesRequest_LocationRestriction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesRequest_LocationRestriction copyWith(void Function(AutocompletePlacesRequest_LocationRestriction) updates) => super.copyWith((message) => updates(message as AutocompletePlacesRequest_LocationRestriction)) as AutocompletePlacesRequest_LocationRestriction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesRequest_LocationRestriction clone() =>
+      AutocompletePlacesRequest_LocationRestriction()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesRequest_LocationRestriction copyWith(
+          void Function(AutocompletePlacesRequest_LocationRestriction)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as AutocompletePlacesRequest_LocationRestriction))
+          as AutocompletePlacesRequest_LocationRestriction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesRequest_LocationRestriction create() => AutocompletePlacesRequest_LocationRestriction._();
-  AutocompletePlacesRequest_LocationRestriction createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesRequest_LocationRestriction> createRepeated() => $pb.PbList<AutocompletePlacesRequest_LocationRestriction>();
+  static AutocompletePlacesRequest_LocationRestriction create() =>
+      AutocompletePlacesRequest_LocationRestriction._();
+  AutocompletePlacesRequest_LocationRestriction createEmptyInstance() =>
+      create();
+  static $pb.PbList<AutocompletePlacesRequest_LocationRestriction>
+      createRepeated() =>
+          $pb.PbList<AutocompletePlacesRequest_LocationRestriction>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesRequest_LocationRestriction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesRequest_LocationRestriction>(create);
+  static AutocompletePlacesRequest_LocationRestriction getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesRequest_LocationRestriction>(create);
   static AutocompletePlacesRequest_LocationRestriction? _defaultInstance;
 
-  AutocompletePlacesRequest_LocationRestriction_Type whichType() => _AutocompletePlacesRequest_LocationRestriction_TypeByTag[$_whichOneof(0)]!;
+  AutocompletePlacesRequest_LocationRestriction_Type whichType() =>
+      _AutocompletePlacesRequest_LocationRestriction_TypeByTag[
+          $_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// A viewport defined by a northeast and a southwest corner.
   @$pb.TagNumber(1)
   $449.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) { setField(1, v); }
+  set rectangle($449.Viewport v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRectangle() => $_has(0);
   @$pb.TagNumber(1)
@@ -1679,7 +2052,10 @@ class AutocompletePlacesRequest_LocationRestriction extends $pb.GeneratedMessage
   @$pb.TagNumber(2)
   $470.Circle get circle => $_getN(1);
   @$pb.TagNumber(2)
-  set circle($470.Circle v) { setField(2, v); }
+  set circle($470.Circle v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCircle() => $_has(1);
   @$pb.TagNumber(2)
@@ -1740,50 +2116,69 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   AutocompletePlacesRequest._() : super();
-  factory AutocompletePlacesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutocompletePlacesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'input')
-    ..aOM<AutocompletePlacesRequest_LocationBias>(2, _omitFieldNames ? '' : 'locationBias', subBuilder: AutocompletePlacesRequest_LocationBias.create)
-    ..aOM<AutocompletePlacesRequest_LocationRestriction>(3, _omitFieldNames ? '' : 'locationRestriction', subBuilder: AutocompletePlacesRequest_LocationRestriction.create)
+    ..aOM<AutocompletePlacesRequest_LocationBias>(
+        2, _omitFieldNames ? '' : 'locationBias',
+        subBuilder: AutocompletePlacesRequest_LocationBias.create)
+    ..aOM<AutocompletePlacesRequest_LocationRestriction>(
+        3, _omitFieldNames ? '' : 'locationRestriction',
+        subBuilder: AutocompletePlacesRequest_LocationRestriction.create)
     ..pPS(4, _omitFieldNames ? '' : 'includedPrimaryTypes')
     ..pPS(5, _omitFieldNames ? '' : 'includedRegionCodes')
     ..aOS(6, _omitFieldNames ? '' : 'languageCode')
     ..aOS(7, _omitFieldNames ? '' : 'regionCode')
-    ..aOM<$325.LatLng>(8, _omitFieldNames ? '' : 'origin', subBuilder: $325.LatLng.create)
+    ..aOM<$325.LatLng>(8, _omitFieldNames ? '' : 'origin',
+        subBuilder: $325.LatLng.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'inputOffset', $pb.PbFieldType.O3)
     ..aOB(10, _omitFieldNames ? '' : 'includeQueryPredictions')
     ..aOS(11, _omitFieldNames ? '' : 'sessionToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesRequest clone() => AutocompletePlacesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesRequest copyWith(void Function(AutocompletePlacesRequest) updates) => super.copyWith((message) => updates(message as AutocompletePlacesRequest)) as AutocompletePlacesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesRequest clone() =>
+      AutocompletePlacesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesRequest copyWith(
+          void Function(AutocompletePlacesRequest) updates) =>
+      super.copyWith((message) => updates(message as AutocompletePlacesRequest))
+          as AutocompletePlacesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AutocompletePlacesRequest create() => AutocompletePlacesRequest._();
   AutocompletePlacesRequest createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesRequest> createRepeated() => $pb.PbList<AutocompletePlacesRequest>();
+  static $pb.PbList<AutocompletePlacesRequest> createRepeated() =>
+      $pb.PbList<AutocompletePlacesRequest>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesRequest>(create);
+  static AutocompletePlacesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesRequest>(create);
   static AutocompletePlacesRequest? _defaultInstance;
 
   /// Required. The text string on which to search.
   @$pb.TagNumber(1)
   $core.String get input => $_getSZ(0);
   @$pb.TagNumber(1)
-  set input($core.String v) { $_setString(0, v); }
+  set input($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInput() => $_has(0);
   @$pb.TagNumber(1)
@@ -1798,7 +2193,10 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AutocompletePlacesRequest_LocationBias get locationBias => $_getN(1);
   @$pb.TagNumber(2)
-  set locationBias(AutocompletePlacesRequest_LocationBias v) { setField(2, v); }
+  set locationBias(AutocompletePlacesRequest_LocationBias v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLocationBias() => $_has(1);
   @$pb.TagNumber(2)
@@ -1813,15 +2211,20 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   ///  address will be mapped to an imprecise location and used as a biasing
   ///  signal.
   @$pb.TagNumber(3)
-  AutocompletePlacesRequest_LocationRestriction get locationRestriction => $_getN(2);
+  AutocompletePlacesRequest_LocationRestriction get locationRestriction =>
+      $_getN(2);
   @$pb.TagNumber(3)
-  set locationRestriction(AutocompletePlacesRequest_LocationRestriction v) { setField(3, v); }
+  set locationRestriction(AutocompletePlacesRequest_LocationRestriction v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLocationRestriction() => $_has(2);
   @$pb.TagNumber(3)
   void clearLocationRestriction() => clearField(3);
   @$pb.TagNumber(3)
-  AutocompletePlacesRequest_LocationRestriction ensureLocationRestriction() => $_ensure(2);
+  AutocompletePlacesRequest_LocationRestriction ensureLocationRestriction() =>
+      $_ensure(2);
 
   /// Optional. Included primary Place type (for example, "restaurant" or
   /// "gas_station") in Place Types
@@ -1846,7 +2249,10 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get languageCode => $_getSZ(5);
   @$pb.TagNumber(6)
-  set languageCode($core.String v) { $_setString(5, v); }
+  set languageCode($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLanguageCode() => $_has(5);
   @$pb.TagNumber(6)
@@ -1859,7 +2265,10 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get regionCode => $_getSZ(6);
   @$pb.TagNumber(7)
-  set regionCode($core.String v) { $_setString(6, v); }
+  set regionCode($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRegionCode() => $_has(6);
   @$pb.TagNumber(7)
@@ -1871,7 +2280,10 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $325.LatLng get origin => $_getN(7);
   @$pb.TagNumber(8)
-  set origin($325.LatLng v) { setField(8, v); }
+  set origin($325.LatLng v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasOrigin() => $_has(7);
   @$pb.TagNumber(8)
@@ -1887,7 +2299,10 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get inputOffset => $_getIZ(8);
   @$pb.TagNumber(9)
-  set inputOffset($core.int v) { $_setSignedInt32(8, v); }
+  set inputOffset($core.int v) {
+    $_setSignedInt32(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasInputOffset() => $_has(8);
   @$pb.TagNumber(9)
@@ -1898,7 +2313,10 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool get includeQueryPredictions => $_getBF(9);
   @$pb.TagNumber(10)
-  set includeQueryPredictions($core.bool v) { $_setBool(9, v); }
+  set includeQueryPredictions($core.bool v) {
+    $_setBool(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasIncludeQueryPredictions() => $_has(9);
   @$pb.TagNumber(10)
@@ -1933,7 +2351,10 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get sessionToken => $_getSZ(10);
   @$pb.TagNumber(11)
-  set sessionToken($core.String v) { $_setString(10, v); }
+  set sessionToken($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasSessionToken() => $_has(10);
   @$pb.TagNumber(11)
@@ -1941,7 +2362,8 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
 }
 
 /// Identifies a substring within a given text.
-class AutocompletePlacesResponse_Suggestion_StringRange extends $pb.GeneratedMessage {
+class AutocompletePlacesResponse_Suggestion_StringRange
+    extends $pb.GeneratedMessage {
   factory AutocompletePlacesResponse_Suggestion_StringRange({
     $core.int? startOffset,
     $core.int? endOffset,
@@ -1956,34 +2378,56 @@ class AutocompletePlacesResponse_Suggestion_StringRange extends $pb.GeneratedMes
     return $result;
   }
   AutocompletePlacesResponse_Suggestion_StringRange._() : super();
-  factory AutocompletePlacesResponse_Suggestion_StringRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesResponse_Suggestion_StringRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesResponse_Suggestion_StringRange.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesResponse_Suggestion_StringRange.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesResponse.Suggestion.StringRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AutocompletePlacesResponse.Suggestion.StringRange',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'startOffset', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'endOffset', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_StringRange clone() => AutocompletePlacesResponse_Suggestion_StringRange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_StringRange copyWith(void Function(AutocompletePlacesResponse_Suggestion_StringRange) updates) => super.copyWith((message) => updates(message as AutocompletePlacesResponse_Suggestion_StringRange)) as AutocompletePlacesResponse_Suggestion_StringRange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_StringRange clone() =>
+      AutocompletePlacesResponse_Suggestion_StringRange()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_StringRange copyWith(
+          void Function(AutocompletePlacesResponse_Suggestion_StringRange)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AutocompletePlacesResponse_Suggestion_StringRange))
+          as AutocompletePlacesResponse_Suggestion_StringRange;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_StringRange create() => AutocompletePlacesResponse_Suggestion_StringRange._();
-  AutocompletePlacesResponse_Suggestion_StringRange createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesResponse_Suggestion_StringRange> createRepeated() => $pb.PbList<AutocompletePlacesResponse_Suggestion_StringRange>();
+  static AutocompletePlacesResponse_Suggestion_StringRange create() =>
+      AutocompletePlacesResponse_Suggestion_StringRange._();
+  AutocompletePlacesResponse_Suggestion_StringRange createEmptyInstance() =>
+      create();
+  static $pb.PbList<AutocompletePlacesResponse_Suggestion_StringRange>
+      createRepeated() =>
+          $pb.PbList<AutocompletePlacesResponse_Suggestion_StringRange>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_StringRange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse_Suggestion_StringRange>(create);
+  static AutocompletePlacesResponse_Suggestion_StringRange getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesResponse_Suggestion_StringRange>(create);
   static AutocompletePlacesResponse_Suggestion_StringRange? _defaultInstance;
 
   /// Zero-based offset of the first Unicode character of the string
@@ -1991,7 +2435,10 @@ class AutocompletePlacesResponse_Suggestion_StringRange extends $pb.GeneratedMes
   @$pb.TagNumber(1)
   $core.int get startOffset => $_getIZ(0);
   @$pb.TagNumber(1)
-  set startOffset($core.int v) { $_setSignedInt32(0, v); }
+  set startOffset($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(1)
@@ -2001,7 +2448,10 @@ class AutocompletePlacesResponse_Suggestion_StringRange extends $pb.GeneratedMes
   @$pb.TagNumber(2)
   $core.int get endOffset => $_getIZ(1);
   @$pb.TagNumber(2)
-  set endOffset($core.int v) { $_setSignedInt32(1, v); }
+  set endOffset($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndOffset() => $_has(1);
   @$pb.TagNumber(2)
@@ -2010,7 +2460,8 @@ class AutocompletePlacesResponse_Suggestion_StringRange extends $pb.GeneratedMes
 
 /// Text representing a Place or query prediction. The text may be used as is
 /// or formatted.
-class AutocompletePlacesResponse_Suggestion_FormattableText extends $pb.GeneratedMessage {
+class AutocompletePlacesResponse_Suggestion_FormattableText
+    extends $pb.GeneratedMessage {
   factory AutocompletePlacesResponse_Suggestion_FormattableText({
     $core.String? text,
     $core.Iterable<AutocompletePlacesResponse_Suggestion_StringRange>? matches,
@@ -2025,41 +2476,69 @@ class AutocompletePlacesResponse_Suggestion_FormattableText extends $pb.Generate
     return $result;
   }
   AutocompletePlacesResponse_Suggestion_FormattableText._() : super();
-  factory AutocompletePlacesResponse_Suggestion_FormattableText.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesResponse_Suggestion_FormattableText.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesResponse_Suggestion_FormattableText.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesResponse_Suggestion_FormattableText.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesResponse.Suggestion.FormattableText', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AutocompletePlacesResponse.Suggestion.FormattableText',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..pc<AutocompletePlacesResponse_Suggestion_StringRange>(2, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM, subBuilder: AutocompletePlacesResponse_Suggestion_StringRange.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<AutocompletePlacesResponse_Suggestion_StringRange>(
+        2, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+        subBuilder: AutocompletePlacesResponse_Suggestion_StringRange.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_FormattableText clone() => AutocompletePlacesResponse_Suggestion_FormattableText()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_FormattableText copyWith(void Function(AutocompletePlacesResponse_Suggestion_FormattableText) updates) => super.copyWith((message) => updates(message as AutocompletePlacesResponse_Suggestion_FormattableText)) as AutocompletePlacesResponse_Suggestion_FormattableText;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_FormattableText clone() =>
+      AutocompletePlacesResponse_Suggestion_FormattableText()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_FormattableText copyWith(
+          void Function(AutocompletePlacesResponse_Suggestion_FormattableText)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AutocompletePlacesResponse_Suggestion_FormattableText))
+          as AutocompletePlacesResponse_Suggestion_FormattableText;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_FormattableText create() => AutocompletePlacesResponse_Suggestion_FormattableText._();
-  AutocompletePlacesResponse_Suggestion_FormattableText createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesResponse_Suggestion_FormattableText> createRepeated() => $pb.PbList<AutocompletePlacesResponse_Suggestion_FormattableText>();
+  static AutocompletePlacesResponse_Suggestion_FormattableText create() =>
+      AutocompletePlacesResponse_Suggestion_FormattableText._();
+  AutocompletePlacesResponse_Suggestion_FormattableText createEmptyInstance() =>
+      create();
+  static $pb.PbList<AutocompletePlacesResponse_Suggestion_FormattableText>
+      createRepeated() =>
+          $pb.PbList<AutocompletePlacesResponse_Suggestion_FormattableText>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_FormattableText getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse_Suggestion_FormattableText>(create);
-  static AutocompletePlacesResponse_Suggestion_FormattableText? _defaultInstance;
+  static AutocompletePlacesResponse_Suggestion_FormattableText getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesResponse_Suggestion_FormattableText>(create);
+  static AutocompletePlacesResponse_Suggestion_FormattableText?
+      _defaultInstance;
 
   /// Text that may be used as is or formatted with `matches`.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -2074,7 +2553,8 @@ class AutocompletePlacesResponse_Suggestion_FormattableText extends $pb.Generate
   ///  These values are Unicode character offsets of `text`. The ranges are
   ///  guaranteed to be ordered in increasing offset values.
   @$pb.TagNumber(2)
-  $core.List<AutocompletePlacesResponse_Suggestion_StringRange> get matches => $_getList(1);
+  $core.List<AutocompletePlacesResponse_Suggestion_StringRange> get matches =>
+      $_getList(1);
 }
 
 ///  Contains a breakdown of a Place or query prediction into main text
@@ -2085,7 +2565,8 @@ class AutocompletePlacesResponse_Suggestion_FormattableText extends $pb.Generate
 ///
 ///  The secondary text contains additional disambiguating features (such as a
 ///  city or region) to further identify the Place or refine the query.
-class AutocompletePlacesResponse_Suggestion_StructuredFormat extends $pb.GeneratedMessage {
+class AutocompletePlacesResponse_Suggestion_StructuredFormat
+    extends $pb.GeneratedMessage {
   factory AutocompletePlacesResponse_Suggestion_StructuredFormat({
     AutocompletePlacesResponse_Suggestion_FormattableText? mainText,
     AutocompletePlacesResponse_Suggestion_FormattableText? secondaryText,
@@ -2100,64 +2581,104 @@ class AutocompletePlacesResponse_Suggestion_StructuredFormat extends $pb.Generat
     return $result;
   }
   AutocompletePlacesResponse_Suggestion_StructuredFormat._() : super();
-  factory AutocompletePlacesResponse_Suggestion_StructuredFormat.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesResponse_Suggestion_StructuredFormat.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesResponse_Suggestion_StructuredFormat.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesResponse_Suggestion_StructuredFormat.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesResponse.Suggestion.StructuredFormat', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(1, _omitFieldNames ? '' : 'mainText', subBuilder: AutocompletePlacesResponse_Suggestion_FormattableText.create)
-    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(2, _omitFieldNames ? '' : 'secondaryText', subBuilder: AutocompletePlacesResponse_Suggestion_FormattableText.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AutocompletePlacesResponse.Suggestion.StructuredFormat',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(
+        1, _omitFieldNames ? '' : 'mainText',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_FormattableText.create)
+    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(
+        2, _omitFieldNames ? '' : 'secondaryText',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_FormattableText.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_StructuredFormat clone() => AutocompletePlacesResponse_Suggestion_StructuredFormat()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_StructuredFormat copyWith(void Function(AutocompletePlacesResponse_Suggestion_StructuredFormat) updates) => super.copyWith((message) => updates(message as AutocompletePlacesResponse_Suggestion_StructuredFormat)) as AutocompletePlacesResponse_Suggestion_StructuredFormat;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_StructuredFormat clone() =>
+      AutocompletePlacesResponse_Suggestion_StructuredFormat()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_StructuredFormat copyWith(
+          void Function(AutocompletePlacesResponse_Suggestion_StructuredFormat)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as AutocompletePlacesResponse_Suggestion_StructuredFormat))
+          as AutocompletePlacesResponse_Suggestion_StructuredFormat;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_StructuredFormat create() => AutocompletePlacesResponse_Suggestion_StructuredFormat._();
-  AutocompletePlacesResponse_Suggestion_StructuredFormat createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesResponse_Suggestion_StructuredFormat> createRepeated() => $pb.PbList<AutocompletePlacesResponse_Suggestion_StructuredFormat>();
+  static AutocompletePlacesResponse_Suggestion_StructuredFormat create() =>
+      AutocompletePlacesResponse_Suggestion_StructuredFormat._();
+  AutocompletePlacesResponse_Suggestion_StructuredFormat
+      createEmptyInstance() => create();
+  static $pb.PbList<AutocompletePlacesResponse_Suggestion_StructuredFormat>
+      createRepeated() =>
+          $pb.PbList<AutocompletePlacesResponse_Suggestion_StructuredFormat>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_StructuredFormat getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse_Suggestion_StructuredFormat>(create);
-  static AutocompletePlacesResponse_Suggestion_StructuredFormat? _defaultInstance;
+  static AutocompletePlacesResponse_Suggestion_StructuredFormat getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesResponse_Suggestion_StructuredFormat>(create);
+  static AutocompletePlacesResponse_Suggestion_StructuredFormat?
+      _defaultInstance;
 
   /// Represents the name of the Place or query.
   @$pb.TagNumber(1)
-  AutocompletePlacesResponse_Suggestion_FormattableText get mainText => $_getN(0);
+  AutocompletePlacesResponse_Suggestion_FormattableText get mainText =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set mainText(AutocompletePlacesResponse_Suggestion_FormattableText v) { setField(1, v); }
+  set mainText(AutocompletePlacesResponse_Suggestion_FormattableText v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMainText() => $_has(0);
   @$pb.TagNumber(1)
   void clearMainText() => clearField(1);
   @$pb.TagNumber(1)
-  AutocompletePlacesResponse_Suggestion_FormattableText ensureMainText() => $_ensure(0);
+  AutocompletePlacesResponse_Suggestion_FormattableText ensureMainText() =>
+      $_ensure(0);
 
   /// Represents additional disambiguating features (such as a city or
   /// region) to further identify the Place or refine the query.
   @$pb.TagNumber(2)
-  AutocompletePlacesResponse_Suggestion_FormattableText get secondaryText => $_getN(1);
+  AutocompletePlacesResponse_Suggestion_FormattableText get secondaryText =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set secondaryText(AutocompletePlacesResponse_Suggestion_FormattableText v) { setField(2, v); }
+  set secondaryText(AutocompletePlacesResponse_Suggestion_FormattableText v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSecondaryText() => $_has(1);
   @$pb.TagNumber(2)
   void clearSecondaryText() => clearField(2);
   @$pb.TagNumber(2)
-  AutocompletePlacesResponse_Suggestion_FormattableText ensureSecondaryText() => $_ensure(1);
+  AutocompletePlacesResponse_Suggestion_FormattableText ensureSecondaryText() =>
+      $_ensure(1);
 }
 
 /// Prediction results for a Place Autocomplete prediction.
-class AutocompletePlacesResponse_Suggestion_PlacePrediction extends $pb.GeneratedMessage {
+class AutocompletePlacesResponse_Suggestion_PlacePrediction
+    extends $pb.GeneratedMessage {
   factory AutocompletePlacesResponse_Suggestion_PlacePrediction({
     $core.String? place,
     $core.String? placeId,
@@ -2188,46 +2709,79 @@ class AutocompletePlacesResponse_Suggestion_PlacePrediction extends $pb.Generate
     return $result;
   }
   AutocompletePlacesResponse_Suggestion_PlacePrediction._() : super();
-  factory AutocompletePlacesResponse_Suggestion_PlacePrediction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesResponse_Suggestion_PlacePrediction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesResponse_Suggestion_PlacePrediction.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesResponse_Suggestion_PlacePrediction.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesResponse.Suggestion.PlacePrediction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AutocompletePlacesResponse.Suggestion.PlacePrediction',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'place')
     ..aOS(2, _omitFieldNames ? '' : 'placeId')
-    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(3, _omitFieldNames ? '' : 'text', subBuilder: AutocompletePlacesResponse_Suggestion_FormattableText.create)
-    ..aOM<AutocompletePlacesResponse_Suggestion_StructuredFormat>(4, _omitFieldNames ? '' : 'structuredFormat', subBuilder: AutocompletePlacesResponse_Suggestion_StructuredFormat.create)
+    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(
+        3, _omitFieldNames ? '' : 'text',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_FormattableText.create)
+    ..aOM<AutocompletePlacesResponse_Suggestion_StructuredFormat>(
+        4, _omitFieldNames ? '' : 'structuredFormat',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_StructuredFormat.create)
     ..pPS(5, _omitFieldNames ? '' : 'types')
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_PlacePrediction clone() => AutocompletePlacesResponse_Suggestion_PlacePrediction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_PlacePrediction copyWith(void Function(AutocompletePlacesResponse_Suggestion_PlacePrediction) updates) => super.copyWith((message) => updates(message as AutocompletePlacesResponse_Suggestion_PlacePrediction)) as AutocompletePlacesResponse_Suggestion_PlacePrediction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_PlacePrediction clone() =>
+      AutocompletePlacesResponse_Suggestion_PlacePrediction()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_PlacePrediction copyWith(
+          void Function(AutocompletePlacesResponse_Suggestion_PlacePrediction)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AutocompletePlacesResponse_Suggestion_PlacePrediction))
+          as AutocompletePlacesResponse_Suggestion_PlacePrediction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_PlacePrediction create() => AutocompletePlacesResponse_Suggestion_PlacePrediction._();
-  AutocompletePlacesResponse_Suggestion_PlacePrediction createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesResponse_Suggestion_PlacePrediction> createRepeated() => $pb.PbList<AutocompletePlacesResponse_Suggestion_PlacePrediction>();
+  static AutocompletePlacesResponse_Suggestion_PlacePrediction create() =>
+      AutocompletePlacesResponse_Suggestion_PlacePrediction._();
+  AutocompletePlacesResponse_Suggestion_PlacePrediction createEmptyInstance() =>
+      create();
+  static $pb.PbList<AutocompletePlacesResponse_Suggestion_PlacePrediction>
+      createRepeated() =>
+          $pb.PbList<AutocompletePlacesResponse_Suggestion_PlacePrediction>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_PlacePrediction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse_Suggestion_PlacePrediction>(create);
-  static AutocompletePlacesResponse_Suggestion_PlacePrediction? _defaultInstance;
+  static AutocompletePlacesResponse_Suggestion_PlacePrediction getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesResponse_Suggestion_PlacePrediction>(create);
+  static AutocompletePlacesResponse_Suggestion_PlacePrediction?
+      _defaultInstance;
 
   /// The resource name of the suggested Place. This name can be used in
   /// other APIs that accept Place names.
   @$pb.TagNumber(1)
   $core.String get place => $_getSZ(0);
   @$pb.TagNumber(1)
-  set place($core.String v) { $_setString(0, v); }
+  set place($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPlace() => $_has(0);
   @$pb.TagNumber(1)
@@ -2238,7 +2792,10 @@ class AutocompletePlacesResponse_Suggestion_PlacePrediction extends $pb.Generate
   @$pb.TagNumber(2)
   $core.String get placeId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set placeId($core.String v) { $_setString(1, v); }
+  set placeId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPlaceId() => $_has(1);
   @$pb.TagNumber(2)
@@ -2262,13 +2819,17 @@ class AutocompletePlacesResponse_Suggestion_PlacePrediction extends $pb.Generate
   @$pb.TagNumber(3)
   AutocompletePlacesResponse_Suggestion_FormattableText get text => $_getN(2);
   @$pb.TagNumber(3)
-  set text(AutocompletePlacesResponse_Suggestion_FormattableText v) { setField(3, v); }
+  set text(AutocompletePlacesResponse_Suggestion_FormattableText v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasText() => $_has(2);
   @$pb.TagNumber(3)
   void clearText() => clearField(3);
   @$pb.TagNumber(3)
-  AutocompletePlacesResponse_Suggestion_FormattableText ensureText() => $_ensure(2);
+  AutocompletePlacesResponse_Suggestion_FormattableText ensureText() =>
+      $_ensure(2);
 
   ///  A breakdown of the Place prediction into main text containing the name
   ///  of the Place and secondary text containing additional disambiguating
@@ -2280,15 +2841,21 @@ class AutocompletePlacesResponse_Suggestion_PlacePrediction extends $pb.Generate
   ///  different ways to represent a Place prediction. Users should not try to
   ///  parse `structured_format` into `text` or vice versa.
   @$pb.TagNumber(4)
-  AutocompletePlacesResponse_Suggestion_StructuredFormat get structuredFormat => $_getN(3);
+  AutocompletePlacesResponse_Suggestion_StructuredFormat get structuredFormat =>
+      $_getN(3);
   @$pb.TagNumber(4)
-  set structuredFormat(AutocompletePlacesResponse_Suggestion_StructuredFormat v) { setField(4, v); }
+  set structuredFormat(
+      AutocompletePlacesResponse_Suggestion_StructuredFormat v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStructuredFormat() => $_has(3);
   @$pb.TagNumber(4)
   void clearStructuredFormat() => clearField(4);
   @$pb.TagNumber(4)
-  AutocompletePlacesResponse_Suggestion_StructuredFormat ensureStructuredFormat() => $_ensure(3);
+  AutocompletePlacesResponse_Suggestion_StructuredFormat
+      ensureStructuredFormat() => $_ensure(3);
 
   ///  List of types that apply to this Place from Table A or Table B in
   ///  https://developers.google.com/maps/documentation/places/web-service/place-types.
@@ -2304,7 +2871,10 @@ class AutocompletePlacesResponse_Suggestion_PlacePrediction extends $pb.Generate
   @$pb.TagNumber(6)
   $core.int get distanceMeters => $_getIZ(5);
   @$pb.TagNumber(6)
-  set distanceMeters($core.int v) { $_setSignedInt32(5, v); }
+  set distanceMeters($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDistanceMeters() => $_has(5);
   @$pb.TagNumber(6)
@@ -2312,7 +2882,8 @@ class AutocompletePlacesResponse_Suggestion_PlacePrediction extends $pb.Generate
 }
 
 /// Prediction results for a Query Autocomplete prediction.
-class AutocompletePlacesResponse_Suggestion_QueryPrediction extends $pb.GeneratedMessage {
+class AutocompletePlacesResponse_Suggestion_QueryPrediction
+    extends $pb.GeneratedMessage {
   factory AutocompletePlacesResponse_Suggestion_QueryPrediction({
     AutocompletePlacesResponse_Suggestion_FormattableText? text,
     AutocompletePlacesResponse_Suggestion_StructuredFormat? structuredFormat,
@@ -2327,35 +2898,64 @@ class AutocompletePlacesResponse_Suggestion_QueryPrediction extends $pb.Generate
     return $result;
   }
   AutocompletePlacesResponse_Suggestion_QueryPrediction._() : super();
-  factory AutocompletePlacesResponse_Suggestion_QueryPrediction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesResponse_Suggestion_QueryPrediction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesResponse_Suggestion_QueryPrediction.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesResponse_Suggestion_QueryPrediction.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesResponse.Suggestion.QueryPrediction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(1, _omitFieldNames ? '' : 'text', subBuilder: AutocompletePlacesResponse_Suggestion_FormattableText.create)
-    ..aOM<AutocompletePlacesResponse_Suggestion_StructuredFormat>(2, _omitFieldNames ? '' : 'structuredFormat', subBuilder: AutocompletePlacesResponse_Suggestion_StructuredFormat.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AutocompletePlacesResponse.Suggestion.QueryPrediction',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<AutocompletePlacesResponse_Suggestion_FormattableText>(
+        1, _omitFieldNames ? '' : 'text',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_FormattableText.create)
+    ..aOM<AutocompletePlacesResponse_Suggestion_StructuredFormat>(
+        2, _omitFieldNames ? '' : 'structuredFormat',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_StructuredFormat.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_QueryPrediction clone() => AutocompletePlacesResponse_Suggestion_QueryPrediction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion_QueryPrediction copyWith(void Function(AutocompletePlacesResponse_Suggestion_QueryPrediction) updates) => super.copyWith((message) => updates(message as AutocompletePlacesResponse_Suggestion_QueryPrediction)) as AutocompletePlacesResponse_Suggestion_QueryPrediction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_QueryPrediction clone() =>
+      AutocompletePlacesResponse_Suggestion_QueryPrediction()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion_QueryPrediction copyWith(
+          void Function(AutocompletePlacesResponse_Suggestion_QueryPrediction)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AutocompletePlacesResponse_Suggestion_QueryPrediction))
+          as AutocompletePlacesResponse_Suggestion_QueryPrediction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_QueryPrediction create() => AutocompletePlacesResponse_Suggestion_QueryPrediction._();
-  AutocompletePlacesResponse_Suggestion_QueryPrediction createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesResponse_Suggestion_QueryPrediction> createRepeated() => $pb.PbList<AutocompletePlacesResponse_Suggestion_QueryPrediction>();
+  static AutocompletePlacesResponse_Suggestion_QueryPrediction create() =>
+      AutocompletePlacesResponse_Suggestion_QueryPrediction._();
+  AutocompletePlacesResponse_Suggestion_QueryPrediction createEmptyInstance() =>
+      create();
+  static $pb.PbList<AutocompletePlacesResponse_Suggestion_QueryPrediction>
+      createRepeated() =>
+          $pb.PbList<AutocompletePlacesResponse_Suggestion_QueryPrediction>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion_QueryPrediction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse_Suggestion_QueryPrediction>(create);
-  static AutocompletePlacesResponse_Suggestion_QueryPrediction? _defaultInstance;
+  static AutocompletePlacesResponse_Suggestion_QueryPrediction getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesResponse_Suggestion_QueryPrediction>(create);
+  static AutocompletePlacesResponse_Suggestion_QueryPrediction?
+      _defaultInstance;
 
   ///  The predicted text. This text does not represent a Place, but rather a
   ///  text query that could be used in a search endpoint (for example,
@@ -2373,13 +2973,17 @@ class AutocompletePlacesResponse_Suggestion_QueryPrediction extends $pb.Generate
   @$pb.TagNumber(1)
   AutocompletePlacesResponse_Suggestion_FormattableText get text => $_getN(0);
   @$pb.TagNumber(1)
-  set text(AutocompletePlacesResponse_Suggestion_FormattableText v) { setField(1, v); }
+  set text(AutocompletePlacesResponse_Suggestion_FormattableText v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
   void clearText() => clearField(1);
   @$pb.TagNumber(1)
-  AutocompletePlacesResponse_Suggestion_FormattableText ensureText() => $_ensure(0);
+  AutocompletePlacesResponse_Suggestion_FormattableText ensureText() =>
+      $_ensure(0);
 
   ///  A breakdown of the query prediction into main text containing the query
   ///  and secondary text containing additional disambiguating features (such
@@ -2391,20 +2995,26 @@ class AutocompletePlacesResponse_Suggestion_QueryPrediction extends $pb.Generate
   ///  different ways to represent a query prediction. Users should not try to
   ///  parse `structured_format` into `text` or vice versa.
   @$pb.TagNumber(2)
-  AutocompletePlacesResponse_Suggestion_StructuredFormat get structuredFormat => $_getN(1);
+  AutocompletePlacesResponse_Suggestion_StructuredFormat get structuredFormat =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set structuredFormat(AutocompletePlacesResponse_Suggestion_StructuredFormat v) { setField(2, v); }
+  set structuredFormat(
+      AutocompletePlacesResponse_Suggestion_StructuredFormat v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStructuredFormat() => $_has(1);
   @$pb.TagNumber(2)
   void clearStructuredFormat() => clearField(2);
   @$pb.TagNumber(2)
-  AutocompletePlacesResponse_Suggestion_StructuredFormat ensureStructuredFormat() => $_ensure(1);
+  AutocompletePlacesResponse_Suggestion_StructuredFormat
+      ensureStructuredFormat() => $_ensure(1);
 }
 
 enum AutocompletePlacesResponse_Suggestion_Kind {
-  placePrediction, 
-  queryPrediction, 
+  placePrediction,
+  queryPrediction,
   notSet
 }
 
@@ -2424,68 +3034,101 @@ class AutocompletePlacesResponse_Suggestion extends $pb.GeneratedMessage {
     return $result;
   }
   AutocompletePlacesResponse_Suggestion._() : super();
-  factory AutocompletePlacesResponse_Suggestion.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesResponse_Suggestion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesResponse_Suggestion.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesResponse_Suggestion.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AutocompletePlacesResponse_Suggestion_Kind> _AutocompletePlacesResponse_Suggestion_KindByTag = {
-    1 : AutocompletePlacesResponse_Suggestion_Kind.placePrediction,
-    2 : AutocompletePlacesResponse_Suggestion_Kind.queryPrediction,
-    0 : AutocompletePlacesResponse_Suggestion_Kind.notSet
+  static const $core.Map<$core.int, AutocompletePlacesResponse_Suggestion_Kind>
+      _AutocompletePlacesResponse_Suggestion_KindByTag = {
+    1: AutocompletePlacesResponse_Suggestion_Kind.placePrediction,
+    2: AutocompletePlacesResponse_Suggestion_Kind.queryPrediction,
+    0: AutocompletePlacesResponse_Suggestion_Kind.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesResponse.Suggestion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutocompletePlacesResponse.Suggestion',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<AutocompletePlacesResponse_Suggestion_PlacePrediction>(1, _omitFieldNames ? '' : 'placePrediction', subBuilder: AutocompletePlacesResponse_Suggestion_PlacePrediction.create)
-    ..aOM<AutocompletePlacesResponse_Suggestion_QueryPrediction>(2, _omitFieldNames ? '' : 'queryPrediction', subBuilder: AutocompletePlacesResponse_Suggestion_QueryPrediction.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<AutocompletePlacesResponse_Suggestion_PlacePrediction>(
+        1, _omitFieldNames ? '' : 'placePrediction',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_PlacePrediction.create)
+    ..aOM<AutocompletePlacesResponse_Suggestion_QueryPrediction>(
+        2, _omitFieldNames ? '' : 'queryPrediction',
+        subBuilder:
+            AutocompletePlacesResponse_Suggestion_QueryPrediction.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion clone() => AutocompletePlacesResponse_Suggestion()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse_Suggestion copyWith(void Function(AutocompletePlacesResponse_Suggestion) updates) => super.copyWith((message) => updates(message as AutocompletePlacesResponse_Suggestion)) as AutocompletePlacesResponse_Suggestion;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion clone() =>
+      AutocompletePlacesResponse_Suggestion()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse_Suggestion copyWith(
+          void Function(AutocompletePlacesResponse_Suggestion) updates) =>
+      super.copyWith((message) =>
+              updates(message as AutocompletePlacesResponse_Suggestion))
+          as AutocompletePlacesResponse_Suggestion;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion create() => AutocompletePlacesResponse_Suggestion._();
+  static AutocompletePlacesResponse_Suggestion create() =>
+      AutocompletePlacesResponse_Suggestion._();
   AutocompletePlacesResponse_Suggestion createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesResponse_Suggestion> createRepeated() => $pb.PbList<AutocompletePlacesResponse_Suggestion>();
+  static $pb.PbList<AutocompletePlacesResponse_Suggestion> createRepeated() =>
+      $pb.PbList<AutocompletePlacesResponse_Suggestion>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse_Suggestion getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse_Suggestion>(create);
+  static AutocompletePlacesResponse_Suggestion getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutocompletePlacesResponse_Suggestion>(create);
   static AutocompletePlacesResponse_Suggestion? _defaultInstance;
 
-  AutocompletePlacesResponse_Suggestion_Kind whichKind() => _AutocompletePlacesResponse_Suggestion_KindByTag[$_whichOneof(0)]!;
+  AutocompletePlacesResponse_Suggestion_Kind whichKind() =>
+      _AutocompletePlacesResponse_Suggestion_KindByTag[$_whichOneof(0)]!;
   void clearKind() => clearField($_whichOneof(0));
 
   /// A prediction for a Place.
   @$pb.TagNumber(1)
-  AutocompletePlacesResponse_Suggestion_PlacePrediction get placePrediction => $_getN(0);
+  AutocompletePlacesResponse_Suggestion_PlacePrediction get placePrediction =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set placePrediction(AutocompletePlacesResponse_Suggestion_PlacePrediction v) { setField(1, v); }
+  set placePrediction(AutocompletePlacesResponse_Suggestion_PlacePrediction v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPlacePrediction() => $_has(0);
   @$pb.TagNumber(1)
   void clearPlacePrediction() => clearField(1);
   @$pb.TagNumber(1)
-  AutocompletePlacesResponse_Suggestion_PlacePrediction ensurePlacePrediction() => $_ensure(0);
+  AutocompletePlacesResponse_Suggestion_PlacePrediction
+      ensurePlacePrediction() => $_ensure(0);
 
   /// A prediction for a query.
   @$pb.TagNumber(2)
-  AutocompletePlacesResponse_Suggestion_QueryPrediction get queryPrediction => $_getN(1);
+  AutocompletePlacesResponse_Suggestion_QueryPrediction get queryPrediction =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set queryPrediction(AutocompletePlacesResponse_Suggestion_QueryPrediction v) { setField(2, v); }
+  set queryPrediction(AutocompletePlacesResponse_Suggestion_QueryPrediction v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQueryPrediction() => $_has(1);
   @$pb.TagNumber(2)
   void clearQueryPrediction() => clearField(2);
   @$pb.TagNumber(2)
-  AutocompletePlacesResponse_Suggestion_QueryPrediction ensureQueryPrediction() => $_ensure(1);
+  AutocompletePlacesResponse_Suggestion_QueryPrediction
+      ensureQueryPrediction() => $_ensure(1);
 }
 
 /// Response proto for AutocompletePlaces.
@@ -2500,40 +3143,55 @@ class AutocompletePlacesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   AutocompletePlacesResponse._() : super();
-  factory AutocompletePlacesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutocompletePlacesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutocompletePlacesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutocompletePlacesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutocompletePlacesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<AutocompletePlacesResponse_Suggestion>(1, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM, subBuilder: AutocompletePlacesResponse_Suggestion.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutocompletePlacesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..pc<AutocompletePlacesResponse_Suggestion>(
+        1, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM,
+        subBuilder: AutocompletePlacesResponse_Suggestion.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse clone() => AutocompletePlacesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutocompletePlacesResponse copyWith(void Function(AutocompletePlacesResponse) updates) => super.copyWith((message) => updates(message as AutocompletePlacesResponse)) as AutocompletePlacesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse clone() =>
+      AutocompletePlacesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutocompletePlacesResponse copyWith(
+          void Function(AutocompletePlacesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as AutocompletePlacesResponse))
+          as AutocompletePlacesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AutocompletePlacesResponse create() => AutocompletePlacesResponse._();
   AutocompletePlacesResponse createEmptyInstance() => create();
-  static $pb.PbList<AutocompletePlacesResponse> createRepeated() => $pb.PbList<AutocompletePlacesResponse>();
+  static $pb.PbList<AutocompletePlacesResponse> createRepeated() =>
+      $pb.PbList<AutocompletePlacesResponse>();
   @$core.pragma('dart2js:noInline')
-  static AutocompletePlacesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse>(create);
+  static AutocompletePlacesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AutocompletePlacesResponse>(create);
   static AutocompletePlacesResponse? _defaultInstance;
 
   /// Contains a list of suggestions, ordered in descending order of relevance.
   @$pb.TagNumber(1)
-  $core.List<AutocompletePlacesResponse_Suggestion> get suggestions => $_getList(0);
+  $core.List<AutocompletePlacesResponse_Suggestion> get suggestions =>
+      $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

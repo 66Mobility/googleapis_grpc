@@ -19,12 +19,7 @@ import 'target.pbenum.dart';
 
 export 'target.pbenum.dart';
 
-enum Target_Object {
-  driveItem, 
-  fileComment, 
-  drive, 
-  notSet
-}
+enum Target_Object { driveItem, fileComment, drive, notSet }
 
 ///  Information about the target of activity.
 ///
@@ -34,8 +29,7 @@ enum Target_Object {
 class Target extends $pb.GeneratedMessage {
   factory Target({
     DriveItem? driveItem,
-  @$core.Deprecated('This field is deprecated.')
-    TeamDrive? teamDrive,
+    @$core.Deprecated('This field is deprecated.') TeamDrive? teamDrive,
     FileComment? fileComment,
     Drive? drive,
   }) {
@@ -56,34 +50,43 @@ class Target extends $pb.GeneratedMessage {
     return $result;
   }
   Target._() : super();
-  factory Target.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Target.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Target.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Target.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Target_Object> _Target_ObjectByTag = {
-    1 : Target_Object.driveItem,
-    3 : Target_Object.fileComment,
-    5 : Target_Object.drive,
-    0 : Target_Object.notSet
+    1: Target_Object.driveItem,
+    3: Target_Object.fileComment,
+    5: Target_Object.drive,
+    0: Target_Object.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Target', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Target',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 3, 5])
-    ..aOM<DriveItem>(1, _omitFieldNames ? '' : 'driveItem', subBuilder: DriveItem.create)
-    ..aOM<TeamDrive>(2, _omitFieldNames ? '' : 'teamDrive', subBuilder: TeamDrive.create)
-    ..aOM<FileComment>(3, _omitFieldNames ? '' : 'fileComment', subBuilder: FileComment.create)
+    ..aOM<DriveItem>(1, _omitFieldNames ? '' : 'driveItem',
+        subBuilder: DriveItem.create)
+    ..aOM<TeamDrive>(2, _omitFieldNames ? '' : 'teamDrive',
+        subBuilder: TeamDrive.create)
+    ..aOM<FileComment>(3, _omitFieldNames ? '' : 'fileComment',
+        subBuilder: FileComment.create)
     ..aOM<Drive>(5, _omitFieldNames ? '' : 'drive', subBuilder: Drive.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Target clone() => Target()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Target copyWith(void Function(Target) updates) => super.copyWith((message) => updates(message as Target)) as Target;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Target copyWith(void Function(Target) updates) =>
+      super.copyWith((message) => updates(message as Target)) as Target;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -92,7 +95,8 @@ class Target extends $pb.GeneratedMessage {
   Target createEmptyInstance() => create();
   static $pb.PbList<Target> createRepeated() => $pb.PbList<Target>();
   @$core.pragma('dart2js:noInline')
-  static Target getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Target>(create);
+  static Target getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Target>(create);
   static Target? _defaultInstance;
 
   Target_Object whichObject() => _Target_ObjectByTag[$_whichOneof(0)]!;
@@ -102,7 +106,10 @@ class Target extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   DriveItem get driveItem => $_getN(0);
   @$pb.TagNumber(1)
-  set driveItem(DriveItem v) { setField(1, v); }
+  set driveItem(DriveItem v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDriveItem() => $_has(0);
   @$pb.TagNumber(1)
@@ -116,7 +123,10 @@ class Target extends $pb.GeneratedMessage {
   TeamDrive get teamDrive => $_getN(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set teamDrive(TeamDrive v) { setField(2, v); }
+  set teamDrive(TeamDrive v) {
+    setField(2, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasTeamDrive() => $_has(1);
@@ -131,7 +141,10 @@ class Target extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   FileComment get fileComment => $_getN(2);
   @$pb.TagNumber(3)
-  set fileComment(FileComment v) { setField(3, v); }
+  set fileComment(FileComment v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFileComment() => $_has(2);
   @$pb.TagNumber(3)
@@ -143,7 +156,10 @@ class Target extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Drive get drive => $_getN(3);
   @$pb.TagNumber(5)
-  set drive(Drive v) { setField(5, v); }
+  set drive(Drive v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDrive() => $_has(3);
   @$pb.TagNumber(5)
@@ -152,17 +168,13 @@ class Target extends $pb.GeneratedMessage {
   Drive ensureDrive() => $_ensure(3);
 }
 
-enum TargetReference_Object {
-  driveItem, 
-  drive, 
-  notSet
-}
+enum TargetReference_Object { driveItem, drive, notSet }
 
 /// A lightweight reference to the target of activity.
 class TargetReference extends $pb.GeneratedMessage {
   factory TargetReference({
     DriveItemReference? driveItem,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     TeamDriveReference? teamDrive,
     DriveReference? drive,
   }) {
@@ -180,51 +192,68 @@ class TargetReference extends $pb.GeneratedMessage {
     return $result;
   }
   TargetReference._() : super();
-  factory TargetReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TargetReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TargetReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TargetReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TargetReference_Object> _TargetReference_ObjectByTag = {
-    1 : TargetReference_Object.driveItem,
-    3 : TargetReference_Object.drive,
-    0 : TargetReference_Object.notSet
+  static const $core.Map<$core.int, TargetReference_Object>
+      _TargetReference_ObjectByTag = {
+    1: TargetReference_Object.driveItem,
+    3: TargetReference_Object.drive,
+    0: TargetReference_Object.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TargetReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 3])
-    ..aOM<DriveItemReference>(1, _omitFieldNames ? '' : 'driveItem', subBuilder: DriveItemReference.create)
-    ..aOM<TeamDriveReference>(2, _omitFieldNames ? '' : 'teamDrive', subBuilder: TeamDriveReference.create)
-    ..aOM<DriveReference>(3, _omitFieldNames ? '' : 'drive', subBuilder: DriveReference.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DriveItemReference>(1, _omitFieldNames ? '' : 'driveItem',
+        subBuilder: DriveItemReference.create)
+    ..aOM<TeamDriveReference>(2, _omitFieldNames ? '' : 'teamDrive',
+        subBuilder: TeamDriveReference.create)
+    ..aOM<DriveReference>(3, _omitFieldNames ? '' : 'drive',
+        subBuilder: DriveReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TargetReference clone() => TargetReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TargetReference copyWith(void Function(TargetReference) updates) => super.copyWith((message) => updates(message as TargetReference)) as TargetReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TargetReference copyWith(void Function(TargetReference) updates) =>
+      super.copyWith((message) => updates(message as TargetReference))
+          as TargetReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TargetReference create() => TargetReference._();
   TargetReference createEmptyInstance() => create();
-  static $pb.PbList<TargetReference> createRepeated() => $pb.PbList<TargetReference>();
+  static $pb.PbList<TargetReference> createRepeated() =>
+      $pb.PbList<TargetReference>();
   @$core.pragma('dart2js:noInline')
-  static TargetReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TargetReference>(create);
+  static TargetReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TargetReference>(create);
   static TargetReference? _defaultInstance;
 
-  TargetReference_Object whichObject() => _TargetReference_ObjectByTag[$_whichOneof(0)]!;
+  TargetReference_Object whichObject() =>
+      _TargetReference_ObjectByTag[$_whichOneof(0)]!;
   void clearObject() => clearField($_whichOneof(0));
 
   /// The target is a Drive item.
   @$pb.TagNumber(1)
   DriveItemReference get driveItem => $_getN(0);
   @$pb.TagNumber(1)
-  set driveItem(DriveItemReference v) { setField(1, v); }
+  set driveItem(DriveItemReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDriveItem() => $_has(0);
   @$pb.TagNumber(1)
@@ -238,7 +267,10 @@ class TargetReference extends $pb.GeneratedMessage {
   TeamDriveReference get teamDrive => $_getN(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set teamDrive(TeamDriveReference v) { setField(2, v); }
+  set teamDrive(TeamDriveReference v) {
+    setField(2, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasTeamDrive() => $_has(1);
@@ -253,7 +285,10 @@ class TargetReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DriveReference get drive => $_getN(2);
   @$pb.TagNumber(3)
-  set drive(DriveReference v) { setField(3, v); }
+  set drive(DriveReference v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDrive() => $_has(2);
   @$pb.TagNumber(3)
@@ -286,27 +321,35 @@ class FileComment extends $pb.GeneratedMessage {
     return $result;
   }
   FileComment._() : super();
-  factory FileComment.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FileComment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FileComment.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FileComment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileComment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FileComment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'legacyCommentId')
     ..aOS(2, _omitFieldNames ? '' : 'legacyDiscussionId')
     ..aOS(3, _omitFieldNames ? '' : 'linkToDiscussion')
-    ..aOM<DriveItem>(4, _omitFieldNames ? '' : 'parent', subBuilder: DriveItem.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DriveItem>(4, _omitFieldNames ? '' : 'parent',
+        subBuilder: DriveItem.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FileComment clone() => FileComment()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FileComment copyWith(void Function(FileComment) updates) => super.copyWith((message) => updates(message as FileComment)) as FileComment;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FileComment copyWith(void Function(FileComment) updates) =>
+      super.copyWith((message) => updates(message as FileComment))
+          as FileComment;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -315,7 +358,8 @@ class FileComment extends $pb.GeneratedMessage {
   FileComment createEmptyInstance() => create();
   static $pb.PbList<FileComment> createRepeated() => $pb.PbList<FileComment>();
   @$core.pragma('dart2js:noInline')
-  static FileComment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FileComment>(create);
+  static FileComment getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FileComment>(create);
   static FileComment? _defaultInstance;
 
   /// The comment in the discussion thread. This identifier is an opaque string
@@ -324,7 +368,10 @@ class FileComment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get legacyCommentId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set legacyCommentId($core.String v) { $_setString(0, v); }
+  set legacyCommentId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLegacyCommentId() => $_has(0);
   @$pb.TagNumber(1)
@@ -337,7 +384,10 @@ class FileComment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get legacyDiscussionId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set legacyDiscussionId($core.String v) { $_setString(1, v); }
+  set legacyDiscussionId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLegacyDiscussionId() => $_has(1);
   @$pb.TagNumber(2)
@@ -348,7 +398,10 @@ class FileComment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get linkToDiscussion => $_getSZ(2);
   @$pb.TagNumber(3)
-  set linkToDiscussion($core.String v) { $_setString(2, v); }
+  set linkToDiscussion($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLinkToDiscussion() => $_has(2);
   @$pb.TagNumber(3)
@@ -358,7 +411,10 @@ class FileComment extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   DriveItem get parent => $_getN(3);
   @$pb.TagNumber(4)
-  set parent(DriveItem v) { setField(4, v); }
+  set parent(DriveItem v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasParent() => $_has(3);
   @$pb.TagNumber(4)
@@ -371,32 +427,41 @@ class FileComment extends $pb.GeneratedMessage {
 class DriveItem_File extends $pb.GeneratedMessage {
   factory DriveItem_File() => create();
   DriveItem_File._() : super();
-  factory DriveItem_File.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveItem_File.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveItem_File.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveItem_File.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveItem.File', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveItem.File',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveItem_File clone() => DriveItem_File()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveItem_File copyWith(void Function(DriveItem_File) updates) => super.copyWith((message) => updates(message as DriveItem_File)) as DriveItem_File;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveItem_File copyWith(void Function(DriveItem_File) updates) =>
+      super.copyWith((message) => updates(message as DriveItem_File))
+          as DriveItem_File;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveItem_File create() => DriveItem_File._();
   DriveItem_File createEmptyInstance() => create();
-  static $pb.PbList<DriveItem_File> createRepeated() => $pb.PbList<DriveItem_File>();
+  static $pb.PbList<DriveItem_File> createRepeated() =>
+      $pb.PbList<DriveItem_File>();
   @$core.pragma('dart2js:noInline')
-  static DriveItem_File getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveItem_File>(create);
+  static DriveItem_File getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveItem_File>(create);
   static DriveItem_File? _defaultInstance;
 }
 
@@ -412,40 +477,56 @@ class DriveItem_Folder extends $pb.GeneratedMessage {
     return $result;
   }
   DriveItem_Folder._() : super();
-  factory DriveItem_Folder.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveItem_Folder.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveItem_Folder.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveItem_Folder.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveItem.Folder', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..e<DriveItem_Folder_Type>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: DriveItem_Folder_Type.TYPE_UNSPECIFIED, valueOf: DriveItem_Folder_Type.valueOf, enumValues: DriveItem_Folder_Type.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveItem.Folder',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
+    ..e<DriveItem_Folder_Type>(
+        6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: DriveItem_Folder_Type.TYPE_UNSPECIFIED,
+        valueOf: DriveItem_Folder_Type.valueOf,
+        enumValues: DriveItem_Folder_Type.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveItem_Folder clone() => DriveItem_Folder()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveItem_Folder copyWith(void Function(DriveItem_Folder) updates) => super.copyWith((message) => updates(message as DriveItem_Folder)) as DriveItem_Folder;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveItem_Folder copyWith(void Function(DriveItem_Folder) updates) =>
+      super.copyWith((message) => updates(message as DriveItem_Folder))
+          as DriveItem_Folder;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveItem_Folder create() => DriveItem_Folder._();
   DriveItem_Folder createEmptyInstance() => create();
-  static $pb.PbList<DriveItem_Folder> createRepeated() => $pb.PbList<DriveItem_Folder>();
+  static $pb.PbList<DriveItem_Folder> createRepeated() =>
+      $pb.PbList<DriveItem_Folder>();
   @$core.pragma('dart2js:noInline')
-  static DriveItem_Folder getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveItem_Folder>(create);
+  static DriveItem_Folder getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveItem_Folder>(create);
   static DriveItem_Folder? _defaultInstance;
 
   /// This field is deprecated; please see `DriveFolder.type` instead.
   @$pb.TagNumber(6)
   DriveItem_Folder_Type get type => $_getN(0);
   @$pb.TagNumber(6)
-  set type(DriveItem_Folder_Type v) { setField(6, v); }
+  set type(DriveItem_Folder_Type v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(6)
@@ -456,32 +537,41 @@ class DriveItem_Folder extends $pb.GeneratedMessage {
 class DriveItem_DriveFile extends $pb.GeneratedMessage {
   factory DriveItem_DriveFile() => create();
   DriveItem_DriveFile._() : super();
-  factory DriveItem_DriveFile.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveItem_DriveFile.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveItem_DriveFile.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveItem_DriveFile.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveItem.DriveFile', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveItem.DriveFile',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveItem_DriveFile clone() => DriveItem_DriveFile()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveItem_DriveFile copyWith(void Function(DriveItem_DriveFile) updates) => super.copyWith((message) => updates(message as DriveItem_DriveFile)) as DriveItem_DriveFile;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveItem_DriveFile copyWith(void Function(DriveItem_DriveFile) updates) =>
+      super.copyWith((message) => updates(message as DriveItem_DriveFile))
+          as DriveItem_DriveFile;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveItem_DriveFile create() => DriveItem_DriveFile._();
   DriveItem_DriveFile createEmptyInstance() => create();
-  static $pb.PbList<DriveItem_DriveFile> createRepeated() => $pb.PbList<DriveItem_DriveFile>();
+  static $pb.PbList<DriveItem_DriveFile> createRepeated() =>
+      $pb.PbList<DriveItem_DriveFile>();
   @$core.pragma('dart2js:noInline')
-  static DriveItem_DriveFile getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveItem_DriveFile>(create);
+  static DriveItem_DriveFile getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveItem_DriveFile>(create);
   static DriveItem_DriveFile? _defaultInstance;
 }
 
@@ -497,61 +587,73 @@ class DriveItem_DriveFolder extends $pb.GeneratedMessage {
     return $result;
   }
   DriveItem_DriveFolder._() : super();
-  factory DriveItem_DriveFolder.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveItem_DriveFolder.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveItem_DriveFolder.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveItem_DriveFolder.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveItem.DriveFolder', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..e<DriveItem_DriveFolder_Type>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: DriveItem_DriveFolder_Type.TYPE_UNSPECIFIED, valueOf: DriveItem_DriveFolder_Type.valueOf, enumValues: DriveItem_DriveFolder_Type.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveItem.DriveFolder',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
+    ..e<DriveItem_DriveFolder_Type>(
+        6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: DriveItem_DriveFolder_Type.TYPE_UNSPECIFIED,
+        valueOf: DriveItem_DriveFolder_Type.valueOf,
+        enumValues: DriveItem_DriveFolder_Type.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DriveItem_DriveFolder clone() => DriveItem_DriveFolder()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveItem_DriveFolder copyWith(void Function(DriveItem_DriveFolder) updates) => super.copyWith((message) => updates(message as DriveItem_DriveFolder)) as DriveItem_DriveFolder;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DriveItem_DriveFolder clone() =>
+      DriveItem_DriveFolder()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveItem_DriveFolder copyWith(
+          void Function(DriveItem_DriveFolder) updates) =>
+      super.copyWith((message) => updates(message as DriveItem_DriveFolder))
+          as DriveItem_DriveFolder;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveItem_DriveFolder create() => DriveItem_DriveFolder._();
   DriveItem_DriveFolder createEmptyInstance() => create();
-  static $pb.PbList<DriveItem_DriveFolder> createRepeated() => $pb.PbList<DriveItem_DriveFolder>();
+  static $pb.PbList<DriveItem_DriveFolder> createRepeated() =>
+      $pb.PbList<DriveItem_DriveFolder>();
   @$core.pragma('dart2js:noInline')
-  static DriveItem_DriveFolder getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveItem_DriveFolder>(create);
+  static DriveItem_DriveFolder getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveItem_DriveFolder>(create);
   static DriveItem_DriveFolder? _defaultInstance;
 
   /// The type of Drive folder.
   @$pb.TagNumber(6)
   DriveItem_DriveFolder_Type get type => $_getN(0);
   @$pb.TagNumber(6)
-  set type(DriveItem_DriveFolder_Type v) { setField(6, v); }
+  set type(DriveItem_DriveFolder_Type v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(6)
   void clearType() => clearField(6);
 }
 
-enum DriveItem_ItemType {
-  driveFile, 
-  driveFolder, 
-  notSet
-}
+enum DriveItem_ItemType { driveFile, driveFolder, notSet }
 
 /// A Drive item, such as a file or folder.
 class DriveItem extends $pb.GeneratedMessage {
   factory DriveItem({
     $core.String? name,
     $core.String? title,
-  @$core.Deprecated('This field is deprecated.')
-    DriveItem_File? file,
-  @$core.Deprecated('This field is deprecated.')
-    DriveItem_Folder? folder,
+    @$core.Deprecated('This field is deprecated.') DriveItem_File? file,
+    @$core.Deprecated('This field is deprecated.') DriveItem_Folder? folder,
     $core.String? mimeType,
     Owner? owner,
     DriveItem_DriveFile? driveFile,
@@ -587,37 +689,48 @@ class DriveItem extends $pb.GeneratedMessage {
     return $result;
   }
   DriveItem._() : super();
-  factory DriveItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveItem.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveItem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, DriveItem_ItemType> _DriveItem_ItemTypeByTag = {
-    8 : DriveItem_ItemType.driveFile,
-    9 : DriveItem_ItemType.driveFolder,
-    0 : DriveItem_ItemType.notSet
+  static const $core.Map<$core.int, DriveItem_ItemType>
+      _DriveItem_ItemTypeByTag = {
+    8: DriveItem_ItemType.driveFile,
+    9: DriveItem_ItemType.driveFolder,
+    0: DriveItem_ItemType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveItem',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..oo(0, [8, 9])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..aOM<DriveItem_File>(3, _omitFieldNames ? '' : 'file', subBuilder: DriveItem_File.create)
-    ..aOM<DriveItem_Folder>(4, _omitFieldNames ? '' : 'folder', subBuilder: DriveItem_Folder.create)
+    ..aOM<DriveItem_File>(3, _omitFieldNames ? '' : 'file',
+        subBuilder: DriveItem_File.create)
+    ..aOM<DriveItem_Folder>(4, _omitFieldNames ? '' : 'folder',
+        subBuilder: DriveItem_Folder.create)
     ..aOS(6, _omitFieldNames ? '' : 'mimeType')
     ..aOM<Owner>(7, _omitFieldNames ? '' : 'owner', subBuilder: Owner.create)
-    ..aOM<DriveItem_DriveFile>(8, _omitFieldNames ? '' : 'driveFile', subBuilder: DriveItem_DriveFile.create)
-    ..aOM<DriveItem_DriveFolder>(9, _omitFieldNames ? '' : 'driveFolder', subBuilder: DriveItem_DriveFolder.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DriveItem_DriveFile>(8, _omitFieldNames ? '' : 'driveFile',
+        subBuilder: DriveItem_DriveFile.create)
+    ..aOM<DriveItem_DriveFolder>(9, _omitFieldNames ? '' : 'driveFolder',
+        subBuilder: DriveItem_DriveFolder.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveItem clone() => DriveItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveItem copyWith(void Function(DriveItem) updates) => super.copyWith((message) => updates(message as DriveItem)) as DriveItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveItem copyWith(void Function(DriveItem) updates) =>
+      super.copyWith((message) => updates(message as DriveItem)) as DriveItem;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -626,17 +739,22 @@ class DriveItem extends $pb.GeneratedMessage {
   DriveItem createEmptyInstance() => create();
   static $pb.PbList<DriveItem> createRepeated() => $pb.PbList<DriveItem>();
   @$core.pragma('dart2js:noInline')
-  static DriveItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveItem>(create);
+  static DriveItem getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveItem>(create);
   static DriveItem? _defaultInstance;
 
-  DriveItem_ItemType whichItemType() => _DriveItem_ItemTypeByTag[$_whichOneof(0)]!;
+  DriveItem_ItemType whichItemType() =>
+      _DriveItem_ItemTypeByTag[$_whichOneof(0)]!;
   void clearItemType() => clearField($_whichOneof(0));
 
   /// The target Drive item. The format is `items/ITEM_ID`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -646,7 +764,10 @@ class DriveItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -658,7 +779,10 @@ class DriveItem extends $pb.GeneratedMessage {
   DriveItem_File get file => $_getN(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set file(DriveItem_File v) { setField(3, v); }
+  set file(DriveItem_File v) {
+    setField(3, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasFile() => $_has(2);
@@ -675,7 +799,10 @@ class DriveItem extends $pb.GeneratedMessage {
   DriveItem_Folder get folder => $_getN(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set folder(DriveItem_Folder v) { setField(4, v); }
+  set folder(DriveItem_Folder v) {
+    setField(4, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasFolder() => $_has(3);
@@ -691,7 +818,10 @@ class DriveItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get mimeType => $_getSZ(4);
   @$pb.TagNumber(6)
-  set mimeType($core.String v) { $_setString(4, v); }
+  set mimeType($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMimeType() => $_has(4);
   @$pb.TagNumber(6)
@@ -701,7 +831,10 @@ class DriveItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Owner get owner => $_getN(5);
   @$pb.TagNumber(7)
-  set owner(Owner v) { setField(7, v); }
+  set owner(Owner v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasOwner() => $_has(5);
   @$pb.TagNumber(7)
@@ -713,7 +846,10 @@ class DriveItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   DriveItem_DriveFile get driveFile => $_getN(6);
   @$pb.TagNumber(8)
-  set driveFile(DriveItem_DriveFile v) { setField(8, v); }
+  set driveFile(DriveItem_DriveFile v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDriveFile() => $_has(6);
   @$pb.TagNumber(8)
@@ -726,7 +862,10 @@ class DriveItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   DriveItem_DriveFolder get driveFolder => $_getN(7);
   @$pb.TagNumber(9)
-  set driveFolder(DriveItem_DriveFolder v) { setField(9, v); }
+  set driveFolder(DriveItem_DriveFolder v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDriveFolder() => $_has(7);
   @$pb.TagNumber(9)
@@ -735,17 +874,13 @@ class DriveItem extends $pb.GeneratedMessage {
   DriveItem_DriveFolder ensureDriveFolder() => $_ensure(7);
 }
 
-enum Owner_Owner {
-  user, 
-  drive, 
-  notSet
-}
+enum Owner_Owner { user, drive, notSet }
 
 /// Information about the owner of a Drive item.
 class Owner extends $pb.GeneratedMessage {
   factory Owner({
     $386.User? user,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     TeamDriveReference? teamDrive,
     $387.Domain? domain,
     DriveReference? drive,
@@ -767,33 +902,43 @@ class Owner extends $pb.GeneratedMessage {
     return $result;
   }
   Owner._() : super();
-  factory Owner.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Owner.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Owner.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Owner.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Owner_Owner> _Owner_OwnerByTag = {
-    1 : Owner_Owner.user,
-    4 : Owner_Owner.drive,
-    0 : Owner_Owner.notSet
+    1: Owner_Owner.user,
+    4: Owner_Owner.drive,
+    0: Owner_Owner.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Owner', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Owner',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 4])
-    ..aOM<$386.User>(1, _omitFieldNames ? '' : 'user', subBuilder: $386.User.create)
-    ..aOM<TeamDriveReference>(2, _omitFieldNames ? '' : 'teamDrive', subBuilder: TeamDriveReference.create)
-    ..aOM<$387.Domain>(3, _omitFieldNames ? '' : 'domain', subBuilder: $387.Domain.create)
-    ..aOM<DriveReference>(4, _omitFieldNames ? '' : 'drive', subBuilder: DriveReference.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$386.User>(1, _omitFieldNames ? '' : 'user',
+        subBuilder: $386.User.create)
+    ..aOM<TeamDriveReference>(2, _omitFieldNames ? '' : 'teamDrive',
+        subBuilder: TeamDriveReference.create)
+    ..aOM<$387.Domain>(3, _omitFieldNames ? '' : 'domain',
+        subBuilder: $387.Domain.create)
+    ..aOM<DriveReference>(4, _omitFieldNames ? '' : 'drive',
+        subBuilder: DriveReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Owner clone() => Owner()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Owner copyWith(void Function(Owner) updates) => super.copyWith((message) => updates(message as Owner)) as Owner;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Owner copyWith(void Function(Owner) updates) =>
+      super.copyWith((message) => updates(message as Owner)) as Owner;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -802,7 +947,8 @@ class Owner extends $pb.GeneratedMessage {
   Owner createEmptyInstance() => create();
   static $pb.PbList<Owner> createRepeated() => $pb.PbList<Owner>();
   @$core.pragma('dart2js:noInline')
-  static Owner getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Owner>(create);
+  static Owner getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Owner>(create);
   static Owner? _defaultInstance;
 
   Owner_Owner whichOwner() => _Owner_OwnerByTag[$_whichOneof(0)]!;
@@ -812,7 +958,10 @@ class Owner extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $386.User get user => $_getN(0);
   @$pb.TagNumber(1)
-  set user($386.User v) { setField(1, v); }
+  set user($386.User v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
@@ -826,7 +975,10 @@ class Owner extends $pb.GeneratedMessage {
   TeamDriveReference get teamDrive => $_getN(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set teamDrive(TeamDriveReference v) { setField(2, v); }
+  set teamDrive(TeamDriveReference v) {
+    setField(2, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasTeamDrive() => $_has(1);
@@ -841,7 +993,10 @@ class Owner extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $387.Domain get domain => $_getN(2);
   @$pb.TagNumber(3)
-  set domain($387.Domain v) { setField(3, v); }
+  set domain($387.Domain v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDomain() => $_has(2);
   @$pb.TagNumber(3)
@@ -853,7 +1008,10 @@ class Owner extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   DriveReference get drive => $_getN(3);
   @$pb.TagNumber(4)
-  set drive(DriveReference v) { setField(4, v); }
+  set drive(DriveReference v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDrive() => $_has(3);
   @$pb.TagNumber(4)
@@ -882,26 +1040,33 @@ class TeamDrive extends $pb.GeneratedMessage {
     return $result;
   }
   TeamDrive._() : super();
-  factory TeamDrive.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TeamDrive.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TeamDrive.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TeamDrive.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TeamDrive', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TeamDrive',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..aOM<DriveItem>(3, _omitFieldNames ? '' : 'root', subBuilder: DriveItem.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DriveItem>(3, _omitFieldNames ? '' : 'root',
+        subBuilder: DriveItem.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TeamDrive clone() => TeamDrive()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TeamDrive copyWith(void Function(TeamDrive) updates) => super.copyWith((message) => updates(message as TeamDrive)) as TeamDrive;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TeamDrive copyWith(void Function(TeamDrive) updates) =>
+      super.copyWith((message) => updates(message as TeamDrive)) as TeamDrive;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -910,14 +1075,18 @@ class TeamDrive extends $pb.GeneratedMessage {
   TeamDrive createEmptyInstance() => create();
   static $pb.PbList<TeamDrive> createRepeated() => $pb.PbList<TeamDrive>();
   @$core.pragma('dart2js:noInline')
-  static TeamDrive getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TeamDrive>(create);
+  static TeamDrive getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TeamDrive>(create);
   static TeamDrive? _defaultInstance;
 
   /// This field is deprecated; please see `Drive.name` instead.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -927,7 +1096,10 @@ class TeamDrive extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -937,7 +1109,10 @@ class TeamDrive extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DriveItem get root => $_getN(2);
   @$pb.TagNumber(3)
-  set root(DriveItem v) { setField(3, v); }
+  set root(DriveItem v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRoot() => $_has(2);
   @$pb.TagNumber(3)
@@ -966,26 +1141,33 @@ class Drive extends $pb.GeneratedMessage {
     return $result;
   }
   Drive._() : super();
-  factory Drive.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Drive.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Drive.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Drive.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Drive', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Drive',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..aOM<DriveItem>(3, _omitFieldNames ? '' : 'root', subBuilder: DriveItem.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DriveItem>(3, _omitFieldNames ? '' : 'root',
+        subBuilder: DriveItem.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Drive clone() => Drive()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Drive copyWith(void Function(Drive) updates) => super.copyWith((message) => updates(message as Drive)) as Drive;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Drive copyWith(void Function(Drive) updates) =>
+      super.copyWith((message) => updates(message as Drive)) as Drive;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -994,7 +1176,8 @@ class Drive extends $pb.GeneratedMessage {
   Drive createEmptyInstance() => create();
   static $pb.PbList<Drive> createRepeated() => $pb.PbList<Drive>();
   @$core.pragma('dart2js:noInline')
-  static Drive getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Drive>(create);
+  static Drive getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Drive>(create);
   static Drive? _defaultInstance;
 
   /// The resource name of the shared drive. The format is
@@ -1003,7 +1186,10 @@ class Drive extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1013,7 +1199,10 @@ class Drive extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -1023,7 +1212,10 @@ class Drive extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DriveItem get root => $_getN(2);
   @$pb.TagNumber(3)
-  set root(DriveItem v) { setField(3, v); }
+  set root(DriveItem v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRoot() => $_has(2);
   @$pb.TagNumber(3)
@@ -1032,21 +1224,15 @@ class Drive extends $pb.GeneratedMessage {
   DriveItem ensureRoot() => $_ensure(2);
 }
 
-enum DriveItemReference_ItemType {
-  driveFile, 
-  driveFolder, 
-  notSet
-}
+enum DriveItemReference_ItemType { driveFile, driveFolder, notSet }
 
 /// A lightweight reference to a Drive item, such as a file or folder.
 class DriveItemReference extends $pb.GeneratedMessage {
   factory DriveItemReference({
     $core.String? name,
     $core.String? title,
-  @$core.Deprecated('This field is deprecated.')
-    DriveItem_File? file,
-  @$core.Deprecated('This field is deprecated.')
-    DriveItem_Folder? folder,
+    @$core.Deprecated('This field is deprecated.') DriveItem_File? file,
+    @$core.Deprecated('This field is deprecated.') DriveItem_Folder? folder,
     DriveItem_DriveFile? driveFile,
     DriveItem_DriveFolder? driveFolder,
   }) {
@@ -1074,54 +1260,72 @@ class DriveItemReference extends $pb.GeneratedMessage {
     return $result;
   }
   DriveItemReference._() : super();
-  factory DriveItemReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveItemReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveItemReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveItemReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, DriveItemReference_ItemType> _DriveItemReference_ItemTypeByTag = {
-    8 : DriveItemReference_ItemType.driveFile,
-    9 : DriveItemReference_ItemType.driveFolder,
-    0 : DriveItemReference_ItemType.notSet
+  static const $core.Map<$core.int, DriveItemReference_ItemType>
+      _DriveItemReference_ItemTypeByTag = {
+    8: DriveItemReference_ItemType.driveFile,
+    9: DriveItemReference_ItemType.driveFolder,
+    0: DriveItemReference_ItemType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveItemReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveItemReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..oo(0, [8, 9])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..aOM<DriveItem_File>(3, _omitFieldNames ? '' : 'file', subBuilder: DriveItem_File.create)
-    ..aOM<DriveItem_Folder>(4, _omitFieldNames ? '' : 'folder', subBuilder: DriveItem_Folder.create)
-    ..aOM<DriveItem_DriveFile>(8, _omitFieldNames ? '' : 'driveFile', subBuilder: DriveItem_DriveFile.create)
-    ..aOM<DriveItem_DriveFolder>(9, _omitFieldNames ? '' : 'driveFolder', subBuilder: DriveItem_DriveFolder.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DriveItem_File>(3, _omitFieldNames ? '' : 'file',
+        subBuilder: DriveItem_File.create)
+    ..aOM<DriveItem_Folder>(4, _omitFieldNames ? '' : 'folder',
+        subBuilder: DriveItem_Folder.create)
+    ..aOM<DriveItem_DriveFile>(8, _omitFieldNames ? '' : 'driveFile',
+        subBuilder: DriveItem_DriveFile.create)
+    ..aOM<DriveItem_DriveFolder>(9, _omitFieldNames ? '' : 'driveFolder',
+        subBuilder: DriveItem_DriveFolder.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveItemReference clone() => DriveItemReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveItemReference copyWith(void Function(DriveItemReference) updates) => super.copyWith((message) => updates(message as DriveItemReference)) as DriveItemReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveItemReference copyWith(void Function(DriveItemReference) updates) =>
+      super.copyWith((message) => updates(message as DriveItemReference))
+          as DriveItemReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveItemReference create() => DriveItemReference._();
   DriveItemReference createEmptyInstance() => create();
-  static $pb.PbList<DriveItemReference> createRepeated() => $pb.PbList<DriveItemReference>();
+  static $pb.PbList<DriveItemReference> createRepeated() =>
+      $pb.PbList<DriveItemReference>();
   @$core.pragma('dart2js:noInline')
-  static DriveItemReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveItemReference>(create);
+  static DriveItemReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveItemReference>(create);
   static DriveItemReference? _defaultInstance;
 
-  DriveItemReference_ItemType whichItemType() => _DriveItemReference_ItemTypeByTag[$_whichOneof(0)]!;
+  DriveItemReference_ItemType whichItemType() =>
+      _DriveItemReference_ItemTypeByTag[$_whichOneof(0)]!;
   void clearItemType() => clearField($_whichOneof(0));
 
   /// The target Drive item. The format is `items/ITEM_ID`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1131,7 +1335,10 @@ class DriveItemReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -1143,7 +1350,10 @@ class DriveItemReference extends $pb.GeneratedMessage {
   DriveItem_File get file => $_getN(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set file(DriveItem_File v) { setField(3, v); }
+  set file(DriveItem_File v) {
+    setField(3, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasFile() => $_has(2);
@@ -1160,7 +1370,10 @@ class DriveItemReference extends $pb.GeneratedMessage {
   DriveItem_Folder get folder => $_getN(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set folder(DriveItem_Folder v) { setField(4, v); }
+  set folder(DriveItem_Folder v) {
+    setField(4, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasFolder() => $_has(3);
@@ -1175,7 +1388,10 @@ class DriveItemReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   DriveItem_DriveFile get driveFile => $_getN(4);
   @$pb.TagNumber(8)
-  set driveFile(DriveItem_DriveFile v) { setField(8, v); }
+  set driveFile(DriveItem_DriveFile v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDriveFile() => $_has(4);
   @$pb.TagNumber(8)
@@ -1188,7 +1404,10 @@ class DriveItemReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   DriveItem_DriveFolder get driveFolder => $_getN(5);
   @$pb.TagNumber(9)
-  set driveFolder(DriveItem_DriveFolder v) { setField(9, v); }
+  set driveFolder(DriveItem_DriveFolder v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDriveFolder() => $_has(5);
   @$pb.TagNumber(9)
@@ -1213,41 +1432,53 @@ class TeamDriveReference extends $pb.GeneratedMessage {
     return $result;
   }
   TeamDriveReference._() : super();
-  factory TeamDriveReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TeamDriveReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TeamDriveReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TeamDriveReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TeamDriveReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TeamDriveReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TeamDriveReference clone() => TeamDriveReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TeamDriveReference copyWith(void Function(TeamDriveReference) updates) => super.copyWith((message) => updates(message as TeamDriveReference)) as TeamDriveReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TeamDriveReference copyWith(void Function(TeamDriveReference) updates) =>
+      super.copyWith((message) => updates(message as TeamDriveReference))
+          as TeamDriveReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TeamDriveReference create() => TeamDriveReference._();
   TeamDriveReference createEmptyInstance() => create();
-  static $pb.PbList<TeamDriveReference> createRepeated() => $pb.PbList<TeamDriveReference>();
+  static $pb.PbList<TeamDriveReference> createRepeated() =>
+      $pb.PbList<TeamDriveReference>();
   @$core.pragma('dart2js:noInline')
-  static TeamDriveReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TeamDriveReference>(create);
+  static TeamDriveReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TeamDriveReference>(create);
   static TeamDriveReference? _defaultInstance;
 
   /// This field is deprecated; please see `DriveReference.name` instead.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1257,7 +1488,10 @@ class TeamDriveReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -1280,34 +1514,43 @@ class DriveReference extends $pb.GeneratedMessage {
     return $result;
   }
   DriveReference._() : super();
-  factory DriveReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveReference clone() => DriveReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveReference copyWith(void Function(DriveReference) updates) => super.copyWith((message) => updates(message as DriveReference)) as DriveReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveReference copyWith(void Function(DriveReference) updates) =>
+      super.copyWith((message) => updates(message as DriveReference))
+          as DriveReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveReference create() => DriveReference._();
   DriveReference createEmptyInstance() => create();
-  static $pb.PbList<DriveReference> createRepeated() => $pb.PbList<DriveReference>();
+  static $pb.PbList<DriveReference> createRepeated() =>
+      $pb.PbList<DriveReference>();
   @$core.pragma('dart2js:noInline')
-  static DriveReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveReference>(create);
+  static DriveReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveReference>(create);
   static DriveReference? _defaultInstance;
 
   /// The resource name of the shared drive. The format is
@@ -1316,7 +1559,10 @@ class DriveReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1326,13 +1572,16 @@ class DriveReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
   void clearTitle() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

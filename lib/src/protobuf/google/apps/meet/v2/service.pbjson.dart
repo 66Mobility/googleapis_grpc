@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const CreateSpaceRequest$json = {
   '1': 'CreateSpaceRequest',
   '2': [
-    {'1': 'space', '3': 1, '4': 1, '5': 11, '6': '.google.apps.meet.v2.Space', '10': 'space'},
+    {
+      '1': 'space',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.Space',
+      '10': 'space'
+    },
   ],
 };
 
@@ -43,8 +50,24 @@ final $typed_data.Uint8List getSpaceRequestDescriptor = $convert.base64Decode(
 const UpdateSpaceRequest$json = {
   '1': 'UpdateSpaceRequest',
   '2': [
-    {'1': 'space', '3': 1, '4': 1, '5': 11, '6': '.google.apps.meet.v2.Space', '8': {}, '10': 'space'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'space',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.meet.v2.Space',
+      '8': {},
+      '10': 'space'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -63,9 +86,10 @@ const EndActiveConferenceRequest$json = {
 };
 
 /// Descriptor for `EndActiveConferenceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List endActiveConferenceRequestDescriptor = $convert.base64Decode(
-    'ChpFbmRBY3RpdmVDb25mZXJlbmNlUmVxdWVzdBI1CgRuYW1lGAEgASgJQiHgQQL6QRsKGW1lZX'
-    'QuZ29vZ2xlYXBpcy5jb20vU3BhY2VSBG5hbWU=');
+final $typed_data.Uint8List endActiveConferenceRequestDescriptor =
+    $convert.base64Decode(
+        'ChpFbmRBY3RpdmVDb25mZXJlbmNlUmVxdWVzdBI1CgRuYW1lGAEgASgJQiHgQQL6QRsKGW1lZX'
+        'QuZ29vZ2xlYXBpcy5jb20vU3BhY2VSBG5hbWU=');
 
 @$core.Deprecated('Use getConferenceRecordRequestDescriptor instead')
 const GetConferenceRecordRequest$json = {
@@ -76,9 +100,10 @@ const GetConferenceRecordRequest$json = {
 };
 
 /// Descriptor for `GetConferenceRecordRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getConferenceRecordRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRDb25mZXJlbmNlUmVjb3JkUmVxdWVzdBJACgRuYW1lGAEgASgJQizgQQL6QSYKJG1lZX'
-    'QuZ29vZ2xlYXBpcy5jb20vQ29uZmVyZW5jZVJlY29yZFIEbmFtZQ==');
+final $typed_data.Uint8List getConferenceRecordRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRDb25mZXJlbmNlUmVjb3JkUmVxdWVzdBJACgRuYW1lGAEgASgJQizgQQL6QSYKJG1lZX'
+        'QuZ29vZ2xlYXBpcy5jb20vQ29uZmVyZW5jZVJlY29yZFIEbmFtZQ==');
 
 @$core.Deprecated('Use listConferenceRecordsRequestDescriptor instead')
 const ListConferenceRecordsRequest$json = {
@@ -91,25 +116,34 @@ const ListConferenceRecordsRequest$json = {
 };
 
 /// Descriptor for `ListConferenceRecordsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listConferenceRecordsRequestDescriptor = $convert.base64Decode(
-    'ChxMaXN0Q29uZmVyZW5jZVJlY29yZHNSZXF1ZXN0EiAKCXBhZ2Vfc2l6ZRgBIAEoBUID4EEBUg'
-    'hwYWdlU2l6ZRIiCgpwYWdlX3Rva2VuGAIgASgJQgPgQQFSCXBhZ2VUb2tlbhIbCgZmaWx0ZXIY'
-    'AyABKAlCA+BBAVIGZmlsdGVy');
+final $typed_data.Uint8List listConferenceRecordsRequestDescriptor =
+    $convert.base64Decode(
+        'ChxMaXN0Q29uZmVyZW5jZVJlY29yZHNSZXF1ZXN0EiAKCXBhZ2Vfc2l6ZRgBIAEoBUID4EEBUg'
+        'hwYWdlU2l6ZRIiCgpwYWdlX3Rva2VuGAIgASgJQgPgQQFSCXBhZ2VUb2tlbhIbCgZmaWx0ZXIY'
+        'AyABKAlCA+BBAVIGZmlsdGVy');
 
 @$core.Deprecated('Use listConferenceRecordsResponseDescriptor instead')
 const ListConferenceRecordsResponse$json = {
   '1': 'ListConferenceRecordsResponse',
   '2': [
-    {'1': 'conference_records', '3': 1, '4': 3, '5': 11, '6': '.google.apps.meet.v2.ConferenceRecord', '10': 'conferenceRecords'},
+    {
+      '1': 'conference_records',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.meet.v2.ConferenceRecord',
+      '10': 'conferenceRecords'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListConferenceRecordsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listConferenceRecordsResponseDescriptor = $convert.base64Decode(
-    'Ch1MaXN0Q29uZmVyZW5jZVJlY29yZHNSZXNwb25zZRJUChJjb25mZXJlbmNlX3JlY29yZHMYAS'
-    'ADKAsyJS5nb29nbGUuYXBwcy5tZWV0LnYyLkNvbmZlcmVuY2VSZWNvcmRSEWNvbmZlcmVuY2VS'
-    'ZWNvcmRzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listConferenceRecordsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch1MaXN0Q29uZmVyZW5jZVJlY29yZHNSZXNwb25zZRJUChJjb25mZXJlbmNlX3JlY29yZHMYAS'
+        'ADKAsyJS5nb29nbGUuYXBwcy5tZWV0LnYyLkNvbmZlcmVuY2VSZWNvcmRSEWNvbmZlcmVuY2VS'
+        'ZWNvcmRzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use getParticipantRequestDescriptor instead')
 const GetParticipantRequest$json = {
@@ -146,7 +180,14 @@ final $typed_data.Uint8List listParticipantsRequestDescriptor = $convert.base64D
 const ListParticipantsResponse$json = {
   '1': 'ListParticipantsResponse',
   '2': [
-    {'1': 'participants', '3': 1, '4': 3, '5': 11, '6': '.google.apps.meet.v2.Participant', '10': 'participants'},
+    {
+      '1': 'participants',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.meet.v2.Participant',
+      '10': 'participants'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 5, '10': 'totalSize'},
   ],
@@ -168,9 +209,10 @@ const GetParticipantSessionRequest$json = {
 };
 
 /// Descriptor for `GetParticipantSessionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getParticipantSessionRequestDescriptor = $convert.base64Decode(
-    'ChxHZXRQYXJ0aWNpcGFudFNlc3Npb25SZXF1ZXN0EkIKBG5hbWUYASABKAlCLuBBAvpBKAombW'
-    'VldC5nb29nbGVhcGlzLmNvbS9QYXJ0aWNpcGFudFNlc3Npb25SBG5hbWU=');
+final $typed_data.Uint8List getParticipantSessionRequestDescriptor =
+    $convert.base64Decode(
+        'ChxHZXRQYXJ0aWNpcGFudFNlc3Npb25SZXF1ZXN0EkIKBG5hbWUYASABKAlCLuBBAvpBKAombW'
+        'VldC5nb29nbGVhcGlzLmNvbS9QYXJ0aWNpcGFudFNlc3Npb25SBG5hbWU=');
 
 @$core.Deprecated('Use listParticipantSessionsRequestDescriptor instead')
 const ListParticipantSessionsRequest$json = {
@@ -184,26 +226,35 @@ const ListParticipantSessionsRequest$json = {
 };
 
 /// Descriptor for `ListParticipantSessionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listParticipantSessionsRequestDescriptor = $convert.base64Decode(
-    'Ch5MaXN0UGFydGljaXBhbnRTZXNzaW9uc1JlcXVlc3QSRgoGcGFyZW50GAEgASgJQi7gQQL6QS'
-    'gSJm1lZXQuZ29vZ2xlYXBpcy5jb20vUGFydGljaXBhbnRTZXNzaW9uUgZwYXJlbnQSIAoJcGFn'
-    'ZV9zaXplGAIgASgFQgPgQQFSCHBhZ2VTaXplEiIKCnBhZ2VfdG9rZW4YAyABKAlCA+BBAVIJcG'
-    'FnZVRva2VuEhsKBmZpbHRlchgEIAEoCUID4EEBUgZmaWx0ZXI=');
+final $typed_data.Uint8List listParticipantSessionsRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5MaXN0UGFydGljaXBhbnRTZXNzaW9uc1JlcXVlc3QSRgoGcGFyZW50GAEgASgJQi7gQQL6QS'
+        'gSJm1lZXQuZ29vZ2xlYXBpcy5jb20vUGFydGljaXBhbnRTZXNzaW9uUgZwYXJlbnQSIAoJcGFn'
+        'ZV9zaXplGAIgASgFQgPgQQFSCHBhZ2VTaXplEiIKCnBhZ2VfdG9rZW4YAyABKAlCA+BBAVIJcG'
+        'FnZVRva2VuEhsKBmZpbHRlchgEIAEoCUID4EEBUgZmaWx0ZXI=');
 
 @$core.Deprecated('Use listParticipantSessionsResponseDescriptor instead')
 const ListParticipantSessionsResponse$json = {
   '1': 'ListParticipantSessionsResponse',
   '2': [
-    {'1': 'participant_sessions', '3': 1, '4': 3, '5': 11, '6': '.google.apps.meet.v2.ParticipantSession', '10': 'participantSessions'},
+    {
+      '1': 'participant_sessions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.meet.v2.ParticipantSession',
+      '10': 'participantSessions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListParticipantSessionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listParticipantSessionsResponseDescriptor = $convert.base64Decode(
-    'Ch9MaXN0UGFydGljaXBhbnRTZXNzaW9uc1Jlc3BvbnNlEloKFHBhcnRpY2lwYW50X3Nlc3Npb2'
-    '5zGAEgAygLMicuZ29vZ2xlLmFwcHMubWVldC52Mi5QYXJ0aWNpcGFudFNlc3Npb25SE3BhcnRp'
-    'Y2lwYW50U2Vzc2lvbnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listParticipantSessionsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch9MaXN0UGFydGljaXBhbnRTZXNzaW9uc1Jlc3BvbnNlEloKFHBhcnRpY2lwYW50X3Nlc3Npb2'
+        '5zGAEgAygLMicuZ29vZ2xlLmFwcHMubWVldC52Mi5QYXJ0aWNpcGFudFNlc3Npb25SE3BhcnRp'
+        'Y2lwYW50U2Vzc2lvbnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use getRecordingRequestDescriptor instead')
 const GetRecordingRequest$json = {
@@ -238,7 +289,14 @@ final $typed_data.Uint8List listRecordingsRequestDescriptor = $convert.base64Dec
 const ListRecordingsResponse$json = {
   '1': 'ListRecordingsResponse',
   '2': [
-    {'1': 'recordings', '3': 1, '4': 3, '5': 11, '6': '.google.apps.meet.v2.Recording', '10': 'recordings'},
+    {
+      '1': 'recordings',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.meet.v2.Recording',
+      '10': 'recordings'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -282,7 +340,14 @@ final $typed_data.Uint8List listTranscriptsRequestDescriptor = $convert.base64De
 const ListTranscriptsResponse$json = {
   '1': 'ListTranscriptsResponse',
   '2': [
-    {'1': 'transcripts', '3': 1, '4': 3, '5': 11, '6': '.google.apps.meet.v2.Transcript', '10': 'transcripts'},
+    {
+      '1': 'transcripts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.meet.v2.Transcript',
+      '10': 'transcripts'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -302,9 +367,10 @@ const GetTranscriptEntryRequest$json = {
 };
 
 /// Descriptor for `GetTranscriptEntryRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getTranscriptEntryRequestDescriptor = $convert.base64Decode(
-    'ChlHZXRUcmFuc2NyaXB0RW50cnlSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbWVldC'
-    '5nb29nbGVhcGlzLmNvbS9UcmFuc2NyaXB0RW50cnlSBG5hbWU=');
+final $typed_data.Uint8List getTranscriptEntryRequestDescriptor =
+    $convert.base64Decode(
+        'ChlHZXRUcmFuc2NyaXB0RW50cnlSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbWVldC'
+        '5nb29nbGVhcGlzLmNvbS9UcmFuc2NyaXB0RW50cnlSBG5hbWU=');
 
 @$core.Deprecated('Use listTranscriptEntriesRequestDescriptor instead')
 const ListTranscriptEntriesRequest$json = {
@@ -317,23 +383,31 @@ const ListTranscriptEntriesRequest$json = {
 };
 
 /// Descriptor for `ListTranscriptEntriesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTranscriptEntriesRequestDescriptor = $convert.base64Decode(
-    'ChxMaXN0VHJhbnNjcmlwdEVudHJpZXNSZXF1ZXN0EkMKBnBhcmVudBgBIAEoCUIr4EEC+kElEi'
-    'NtZWV0Lmdvb2dsZWFwaXMuY29tL1RyYW5zY3JpcHRFbnRyeVIGcGFyZW50EhsKCXBhZ2Vfc2l6'
-    'ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZVRva2Vu');
+final $typed_data.Uint8List listTranscriptEntriesRequestDescriptor =
+    $convert.base64Decode(
+        'ChxMaXN0VHJhbnNjcmlwdEVudHJpZXNSZXF1ZXN0EkMKBnBhcmVudBgBIAEoCUIr4EEC+kElEi'
+        'NtZWV0Lmdvb2dsZWFwaXMuY29tL1RyYW5zY3JpcHRFbnRyeVIGcGFyZW50EhsKCXBhZ2Vfc2l6'
+        'ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZVRva2Vu');
 
 @$core.Deprecated('Use listTranscriptEntriesResponseDescriptor instead')
 const ListTranscriptEntriesResponse$json = {
   '1': 'ListTranscriptEntriesResponse',
   '2': [
-    {'1': 'transcript_entries', '3': 1, '4': 3, '5': 11, '6': '.google.apps.meet.v2.TranscriptEntry', '10': 'transcriptEntries'},
+    {
+      '1': 'transcript_entries',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.meet.v2.TranscriptEntry',
+      '10': 'transcriptEntries'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListTranscriptEntriesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTranscriptEntriesResponseDescriptor = $convert.base64Decode(
-    'Ch1MaXN0VHJhbnNjcmlwdEVudHJpZXNSZXNwb25zZRJTChJ0cmFuc2NyaXB0X2VudHJpZXMYAS'
-    'ADKAsyJC5nb29nbGUuYXBwcy5tZWV0LnYyLlRyYW5zY3JpcHRFbnRyeVIRdHJhbnNjcmlwdEVu'
-    'dHJpZXMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
-
+final $typed_data.Uint8List listTranscriptEntriesResponseDescriptor =
+    $convert.base64Decode(
+        'Ch1MaXN0VHJhbnNjcmlwdEVudHJpZXNSZXNwb25zZRJTChJ0cmFuc2NyaXB0X2VudHJpZXMYAS'
+        'ADKAsyJC5nb29nbGUuYXBwcy5tZWV0LnYyLlRyYW5zY3JpcHRFbnRyeVIRdHJhbnNjcmlwdEVu'
+        'dHJpZXMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');

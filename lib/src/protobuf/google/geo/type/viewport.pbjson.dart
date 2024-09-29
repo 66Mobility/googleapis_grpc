@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Viewport$json = {
   '1': 'Viewport',
   '2': [
-    {'1': 'low', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'low'},
-    {'1': 'high', '3': 2, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'high'},
+    {
+      '1': 'low',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'low'
+    },
+    {
+      '1': 'high',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'high'
+    },
   ],
 };
 
@@ -26,4 +40,3 @@ const Viewport$json = {
 final $typed_data.Uint8List viewportDescriptor = $convert.base64Decode(
     'CghWaWV3cG9ydBIlCgNsb3cYASABKAsyEy5nb29nbGUudHlwZS5MYXRMbmdSA2xvdxInCgRoaW'
     'doGAIgASgLMhMuZ29vZ2xlLnR5cGUuTGF0TG5nUgRoaWdo');
-

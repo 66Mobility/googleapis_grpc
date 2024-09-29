@@ -18,7 +18,15 @@ const CreatePermissionRequest$json = {
   '1': 'CreatePermissionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'permission', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Permission', '8': {}, '10': 'permission'},
+    {
+      '1': 'permission',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Permission',
+      '8': {},
+      '10': 'permission'
+    },
   ],
 };
 
@@ -62,7 +70,14 @@ final $typed_data.Uint8List listPermissionsRequestDescriptor = $convert.base64De
 const ListPermissionsResponse$json = {
   '1': 'ListPermissionsResponse',
   '2': [
-    {'1': 'permissions', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Permission', '10': 'permissions'},
+    {
+      '1': 'permissions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Permission',
+      '10': 'permissions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -77,8 +92,24 @@ final $typed_data.Uint8List listPermissionsResponseDescriptor = $convert.base64D
 const UpdatePermissionRequest$json = {
   '1': 'UpdatePermissionRequest',
   '2': [
-    {'1': 'permission', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Permission', '8': {}, '10': 'permission'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'permission',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Permission',
+      '8': {},
+      '10': 'permission'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -98,16 +129,24 @@ const DeletePermissionRequest$json = {
 };
 
 /// Descriptor for `DeletePermissionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deletePermissionRequestDescriptor = $convert.base64Decode(
-    'ChdEZWxldGVQZXJtaXNzaW9uUmVxdWVzdBJICgRuYW1lGAEgASgJQjTgQQL6QS4KLGdlbmVyYX'
-    'RpdmVsYW5ndWFnZS5nb29nbGVhcGlzLmNvbS9QZXJtaXNzaW9uUgRuYW1l');
+final $typed_data.Uint8List deletePermissionRequestDescriptor =
+    $convert.base64Decode(
+        'ChdEZWxldGVQZXJtaXNzaW9uUmVxdWVzdBJICgRuYW1lGAEgASgJQjTgQQL6QS4KLGdlbmVyYX'
+        'RpdmVsYW5ndWFnZS5nb29nbGVhcGlzLmNvbS9QZXJtaXNzaW9uUgRuYW1l');
 
 @$core.Deprecated('Use transferOwnershipRequestDescriptor instead')
 const TransferOwnershipRequest$json = {
   '1': 'TransferOwnershipRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'email_address', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'emailAddress'},
+    {
+      '1': 'email_address',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'emailAddress'
+    },
   ],
 };
 
@@ -123,6 +162,5 @@ const TransferOwnershipResponse$json = {
 };
 
 /// Descriptor for `TransferOwnershipResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List transferOwnershipResponseDescriptor = $convert.base64Decode(
-    'ChlUcmFuc2Zlck93bmVyc2hpcFJlc3BvbnNl');
-
+final $typed_data.Uint8List transferOwnershipResponseDescriptor =
+    $convert.base64Decode('ChlUcmFuc2Zlck93bmVyc2hpcFJlc3BvbnNl');

@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Logging$json = {
   '1': 'Logging',
   '2': [
-    {'1': 'producer_destinations', '3': 1, '4': 3, '5': 11, '6': '.google.api.Logging.LoggingDestination', '10': 'producerDestinations'},
-    {'1': 'consumer_destinations', '3': 2, '4': 3, '5': 11, '6': '.google.api.Logging.LoggingDestination', '10': 'consumerDestinations'},
+    {
+      '1': 'producer_destinations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Logging.LoggingDestination',
+      '10': 'producerDestinations'
+    },
+    {
+      '1': 'consumer_destinations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Logging.LoggingDestination',
+      '10': 'consumerDestinations'
+    },
   ],
   '3': [Logging_LoggingDestination$json],
 };
@@ -27,7 +41,13 @@ const Logging$json = {
 const Logging_LoggingDestination$json = {
   '1': 'LoggingDestination',
   '2': [
-    {'1': 'monitored_resource', '3': 3, '4': 1, '5': 9, '10': 'monitoredResource'},
+    {
+      '1': 'monitored_resource',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'monitoredResource'
+    },
     {'1': 'logs', '3': 1, '4': 3, '5': 9, '10': 'logs'},
   ],
 };
@@ -40,4 +60,3 @@ final $typed_data.Uint8List loggingDescriptor = $convert.base64Decode(
     'luYXRpb25SFGNvbnN1bWVyRGVzdGluYXRpb25zGlcKEkxvZ2dpbmdEZXN0aW5hdGlvbhItChJt'
     'b25pdG9yZWRfcmVzb3VyY2UYAyABKAlSEW1vbml0b3JlZFJlc291cmNlEhIKBGxvZ3MYASADKA'
     'lSBGxvZ3M=');
-

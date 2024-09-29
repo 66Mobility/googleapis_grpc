@@ -36,8 +36,22 @@ const ConfigChange$json = {
     {'1': 'element', '3': 1, '4': 1, '5': 9, '10': 'element'},
     {'1': 'old_value', '3': 2, '4': 1, '5': 9, '10': 'oldValue'},
     {'1': 'new_value', '3': 3, '4': 1, '5': 9, '10': 'newValue'},
-    {'1': 'change_type', '3': 4, '4': 1, '5': 14, '6': '.google.api.ChangeType', '10': 'changeType'},
-    {'1': 'advices', '3': 5, '4': 3, '5': 11, '6': '.google.api.Advice', '10': 'advices'},
+    {
+      '1': 'change_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.ChangeType',
+      '10': 'changeType'
+    },
+    {
+      '1': 'advices',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Advice',
+      '10': 'advices'
+    },
   ],
 };
 
@@ -57,6 +71,5 @@ const Advice$json = {
 };
 
 /// Descriptor for `Advice`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List adviceDescriptor = $convert.base64Decode(
-    'CgZBZHZpY2USIAoLZGVzY3JpcHRpb24YAiABKAlSC2Rlc2NyaXB0aW9u');
-
+final $typed_data.Uint8List adviceDescriptor = $convert
+    .base64Decode('CgZBZHZpY2USIAoLZGVzY3JpcHRpb24YAiABKAlSC2Rlc2NyaXB0aW9u');

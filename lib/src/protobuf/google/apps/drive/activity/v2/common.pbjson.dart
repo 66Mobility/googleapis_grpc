@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const TimeRange$json = {
   '1': 'TimeRange',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -54,4 +68,3 @@ const Domain$json = {
 final $typed_data.Uint8List domainDescriptor = $convert.base64Decode(
     'CgZEb21haW4SEgoEbmFtZRgBIAEoCVIEbmFtZRIbCglsZWdhY3lfaWQYAyABKAlSCGxlZ2FjeU'
     'lk');
-

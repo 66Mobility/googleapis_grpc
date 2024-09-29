@@ -26,4 +26,3 @@ const TermsOfServiceKind$json = {
 final $typed_data.Uint8List termsOfServiceKindDescriptor = $convert.base64Decode(
     'ChJUZXJtc09mU2VydmljZUtpbmQSJQohVEVSTVNfT0ZfU0VSVklDRV9LSU5EX1VOU1BFQ0lGSU'
     'VEEAASEwoPTUVSQ0hBTlRfQ0VOVEVSEAE=');
-

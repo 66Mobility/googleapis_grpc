@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const StaticPrompt$json = {
   '1': 'StaticPrompt',
   '2': [
-    {'1': 'candidates', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt.StaticPromptCandidate', '10': 'candidates'},
+    {
+      '1': 'candidates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt.StaticPromptCandidate',
+      '10': 'candidates'
+    },
   ],
   '3': [StaticPrompt_StaticPromptCandidate$json, StaticPrompt_Selector$json],
 };
@@ -26,8 +34,25 @@ const StaticPrompt$json = {
 const StaticPrompt_StaticPromptCandidate$json = {
   '1': 'StaticPromptCandidate',
   '2': [
-    {'1': 'selector', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt.Selector', '8': {}, '10': 'selector'},
-    {'1': 'prompt_response', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt.StaticPromptCandidate.StaticPromptResponse', '10': 'promptResponse'},
+    {
+      '1': 'selector',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt.Selector',
+      '8': {},
+      '10': 'selector'
+    },
+    {
+      '1': 'prompt_response',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticPrompt.StaticPromptCandidate.StaticPromptResponse',
+      '10': 'promptResponse'
+    },
   ],
   '3': [StaticPrompt_StaticPromptCandidate_StaticPromptResponse$json],
 };
@@ -36,13 +61,60 @@ const StaticPrompt_StaticPromptCandidate$json = {
 const StaticPrompt_StaticPromptCandidate_StaticPromptResponse$json = {
   '1': 'StaticPromptResponse',
   '2': [
-    {'1': 'first_simple', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticSimplePrompt', '8': {}, '10': 'firstSimple'},
-    {'1': 'content', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticContentPrompt', '8': {}, '10': 'content'},
-    {'1': 'last_simple', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticSimplePrompt', '8': {}, '10': 'lastSimple'},
-    {'1': 'suggestions', '3': 5, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.Suggestion', '8': {}, '10': 'suggestions'},
-    {'1': 'link', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticLinkPrompt', '8': {}, '10': 'link'},
+    {
+      '1': 'first_simple',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticSimplePrompt',
+      '8': {},
+      '10': 'firstSimple'
+    },
+    {
+      '1': 'content',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticContentPrompt',
+      '8': {},
+      '10': 'content'
+    },
+    {
+      '1': 'last_simple',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticSimplePrompt',
+      '8': {},
+      '10': 'lastSimple'
+    },
+    {
+      '1': 'suggestions',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.Suggestion',
+      '8': {},
+      '10': 'suggestions'
+    },
+    {
+      '1': 'link',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticLinkPrompt',
+      '8': {},
+      '10': 'link'
+    },
     {'1': 'override', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'override'},
-    {'1': 'canvas', '3': 8, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticCanvasPrompt', '10': 'canvas'},
+    {
+      '1': 'canvas',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticCanvasPrompt',
+      '10': 'canvas'
+    },
   ],
 };
 
@@ -50,7 +122,14 @@ const StaticPrompt_StaticPromptCandidate_StaticPromptResponse$json = {
 const StaticPrompt_Selector$json = {
   '1': 'Selector',
   '2': [
-    {'1': 'surface_capabilities', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.SurfaceCapabilities', '10': 'surfaceCapabilities'},
+    {
+      '1': 'surface_capabilities',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.SurfaceCapabilities',
+      '10': 'surfaceCapabilities'
+    },
   ],
 };
 
@@ -78,4 +157,3 @@ final $typed_data.Uint8List staticPromptDescriptor = $convert.base64Decode(
     'EKCFNlbGVjdG9yEnUKFHN1cmZhY2VfY2FwYWJpbGl0aWVzGAEgASgLMkIuZ29vZ2xlLmFjdGlv'
     'bnMuc2RrLnYyLmludGVyYWN0aW9ubW9kZWwucHJvbXB0LlN1cmZhY2VDYXBhYmlsaXRpZXNSE3'
     'N1cmZhY2VDYXBhYmlsaXRpZXM=');
-

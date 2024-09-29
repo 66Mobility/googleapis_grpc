@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const BackupScheduleSpec$json = {
   '1': 'BackupScheduleSpec',
   '2': [
-    {'1': 'cron_spec', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.CrontabSpec', '9': 0, '10': 'cronSpec'},
+    {
+      '1': 'cron_spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.CrontabSpec',
+      '9': 0,
+      '10': 'cronSpec'
+    },
   ],
   '8': [
     {'1': 'schedule_spec'},
@@ -35,12 +43,60 @@ const BackupSchedule$json = {
   '1': 'BackupSchedule',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'spec', '3': 6, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.BackupScheduleSpec', '8': {}, '10': 'spec'},
-    {'1': 'retention_duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'retentionDuration'},
-    {'1': 'encryption_config', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.CreateBackupEncryptionConfig', '8': {}, '10': 'encryptionConfig'},
-    {'1': 'full_backup_spec', '3': 7, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.FullBackupSpec', '9': 0, '10': 'fullBackupSpec'},
-    {'1': 'incremental_backup_spec', '3': 8, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.IncrementalBackupSpec', '9': 0, '10': 'incrementalBackupSpec'},
-    {'1': 'update_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'spec',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.BackupScheduleSpec',
+      '8': {},
+      '10': 'spec'
+    },
+    {
+      '1': 'retention_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'retentionDuration'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.CreateBackupEncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'full_backup_spec',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.FullBackupSpec',
+      '9': 0,
+      '10': 'fullBackupSpec'
+    },
+    {
+      '1': 'incremental_backup_spec',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.IncrementalBackupSpec',
+      '9': 0,
+      '10': 'incrementalBackupSpec'
+    },
+    {
+      '1': 'update_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
   ],
   '7': {},
   '8': [
@@ -71,7 +127,15 @@ const CrontabSpec$json = {
   '2': [
     {'1': 'text', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'text'},
     {'1': 'time_zone', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'timeZone'},
-    {'1': 'creation_window', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'creationWindow'},
+    {
+      '1': 'creation_window',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'creationWindow'
+    },
   ],
 };
 
@@ -86,8 +150,23 @@ const CreateBackupScheduleRequest$json = {
   '1': 'CreateBackupScheduleRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'backup_schedule_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'backupScheduleId'},
-    {'1': 'backup_schedule', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.BackupSchedule', '8': {}, '10': 'backupSchedule'},
+    {
+      '1': 'backup_schedule_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'backupScheduleId'
+    },
+    {
+      '1': 'backup_schedule',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.BackupSchedule',
+      '8': {},
+      '10': 'backupSchedule'
+    },
   ],
 };
 
@@ -108,9 +187,10 @@ const GetBackupScheduleRequest$json = {
 };
 
 /// Descriptor for `GetBackupScheduleRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getBackupScheduleRequestDescriptor = $convert.base64Decode(
-    'ChhHZXRCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcGFubm'
-    'VyLmdvb2dsZWFwaXMuY29tL0JhY2t1cFNjaGVkdWxlUgRuYW1l');
+final $typed_data.Uint8List getBackupScheduleRequestDescriptor =
+    $convert.base64Decode(
+        'ChhHZXRCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcGFubm'
+        'VyLmdvb2dsZWFwaXMuY29tL0JhY2t1cFNjaGVkdWxlUgRuYW1l');
 
 @$core.Deprecated('Use deleteBackupScheduleRequestDescriptor instead')
 const DeleteBackupScheduleRequest$json = {
@@ -121,9 +201,10 @@ const DeleteBackupScheduleRequest$json = {
 };
 
 /// Descriptor for `DeleteBackupScheduleRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteBackupScheduleRequestDescriptor = $convert.base64Decode(
-    'ChtEZWxldGVCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcG'
-    'FubmVyLmdvb2dsZWFwaXMuY29tL0JhY2t1cFNjaGVkdWxlUgRuYW1l');
+final $typed_data.Uint8List deleteBackupScheduleRequestDescriptor =
+    $convert.base64Decode(
+        'ChtEZWxldGVCYWNrdXBTY2hlZHVsZVJlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcG'
+        'FubmVyLmdvb2dsZWFwaXMuY29tL0JhY2t1cFNjaGVkdWxlUgRuYW1l');
 
 @$core.Deprecated('Use listBackupSchedulesRequestDescriptor instead')
 const ListBackupSchedulesRequest$json = {
@@ -145,23 +226,47 @@ final $typed_data.Uint8List listBackupSchedulesRequestDescriptor = $convert.base
 const ListBackupSchedulesResponse$json = {
   '1': 'ListBackupSchedulesResponse',
   '2': [
-    {'1': 'backup_schedules', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.BackupSchedule', '10': 'backupSchedules'},
+    {
+      '1': 'backup_schedules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.BackupSchedule',
+      '10': 'backupSchedules'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListBackupSchedulesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listBackupSchedulesResponseDescriptor = $convert.base64Decode(
-    'ChtMaXN0QmFja3VwU2NoZWR1bGVzUmVzcG9uc2USWwoQYmFja3VwX3NjaGVkdWxlcxgBIAMoCz'
-    'IwLmdvb2dsZS5zcGFubmVyLmFkbWluLmRhdGFiYXNlLnYxLkJhY2t1cFNjaGVkdWxlUg9iYWNr'
-    'dXBTY2hlZHVsZXMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listBackupSchedulesResponseDescriptor =
+    $convert.base64Decode(
+        'ChtMaXN0QmFja3VwU2NoZWR1bGVzUmVzcG9uc2USWwoQYmFja3VwX3NjaGVkdWxlcxgBIAMoCz'
+        'IwLmdvb2dsZS5zcGFubmVyLmFkbWluLmRhdGFiYXNlLnYxLkJhY2t1cFNjaGVkdWxlUg9iYWNr'
+        'dXBTY2hlZHVsZXMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use updateBackupScheduleRequestDescriptor instead')
 const UpdateBackupScheduleRequest$json = {
   '1': 'UpdateBackupScheduleRequest',
   '2': [
-    {'1': 'backup_schedule', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.BackupSchedule', '8': {}, '10': 'backupSchedule'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'backup_schedule',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.BackupSchedule',
+      '8': {},
+      '10': 'backupSchedule'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -171,4 +276,3 @@ final $typed_data.Uint8List updateBackupScheduleRequestDescriptor = $convert.bas
     'AuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uZGF0YWJhc2UudjEuQmFja3VwU2NoZWR1bGVCA+BBAlIO'
     'YmFja3VwU2NoZWR1bGUSQAoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuRm'
     'llbGRNYXNrQgPgQQJSCnVwZGF0ZU1hc2s=');
-

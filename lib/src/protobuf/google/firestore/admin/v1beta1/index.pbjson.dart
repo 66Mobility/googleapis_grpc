@@ -18,7 +18,14 @@ const IndexField$json = {
   '1': 'IndexField',
   '2': [
     {'1': 'field_path', '3': 1, '4': 1, '5': 9, '10': 'fieldPath'},
-    {'1': 'mode', '3': 2, '4': 1, '5': 14, '6': '.google.firestore.admin.v1beta1.IndexField.Mode', '10': 'mode'},
+    {
+      '1': 'mode',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1beta1.IndexField.Mode',
+      '10': 'mode'
+    },
   ],
   '4': [IndexField_Mode$json],
 };
@@ -47,8 +54,22 @@ const Index$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'collection_id', '3': 2, '4': 1, '5': 9, '10': 'collectionId'},
-    {'1': 'fields', '3': 3, '4': 3, '5': 11, '6': '.google.firestore.admin.v1beta1.IndexField', '10': 'fields'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.firestore.admin.v1beta1.Index.State', '10': 'state'},
+    {
+      '1': 'fields',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1beta1.IndexField',
+      '10': 'fields'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1beta1.Index.State',
+      '10': 'state'
+    },
   ],
   '4': [Index_State$json],
 };
@@ -71,4 +92,3 @@ final $typed_data.Uint8List indexDescriptor = $convert.base64Decode(
     'YTEuSW5kZXhGaWVsZFIGZmllbGRzEkEKBXN0YXRlGAYgASgOMisuZ29vZ2xlLmZpcmVzdG9yZS'
     '5hZG1pbi52MWJldGExLkluZGV4LlN0YXRlUgVzdGF0ZSJCCgVTdGF0ZRIVChFTVEFURV9VTlNQ'
     'RUNJRklFRBAAEgwKCENSRUFUSU5HEAMSCQoFUkVBRFkQAhIJCgVFUlJPUhAF');
-

@@ -33,40 +33,56 @@ class Vehicle_VehicleType extends $pb.GeneratedMessage {
     return $result;
   }
   Vehicle_VehicleType._() : super();
-  factory Vehicle_VehicleType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Vehicle_VehicleType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Vehicle_VehicleType.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Vehicle_VehicleType.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle.VehicleType', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..e<Vehicle_VehicleType_Category>(1, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: Vehicle_VehicleType_Category.UNKNOWN, valueOf: Vehicle_VehicleType_Category.valueOf, enumValues: Vehicle_VehicleType_Category.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Vehicle.VehicleType',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..e<Vehicle_VehicleType_Category>(
+        1, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE,
+        defaultOrMaker: Vehicle_VehicleType_Category.UNKNOWN,
+        valueOf: Vehicle_VehicleType_Category.valueOf,
+        enumValues: Vehicle_VehicleType_Category.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Vehicle_VehicleType clone() => Vehicle_VehicleType()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Vehicle_VehicleType copyWith(void Function(Vehicle_VehicleType) updates) => super.copyWith((message) => updates(message as Vehicle_VehicleType)) as Vehicle_VehicleType;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Vehicle_VehicleType copyWith(void Function(Vehicle_VehicleType) updates) =>
+      super.copyWith((message) => updates(message as Vehicle_VehicleType))
+          as Vehicle_VehicleType;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Vehicle_VehicleType create() => Vehicle_VehicleType._();
   Vehicle_VehicleType createEmptyInstance() => create();
-  static $pb.PbList<Vehicle_VehicleType> createRepeated() => $pb.PbList<Vehicle_VehicleType>();
+  static $pb.PbList<Vehicle_VehicleType> createRepeated() =>
+      $pb.PbList<Vehicle_VehicleType>();
   @$core.pragma('dart2js:noInline')
-  static Vehicle_VehicleType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle_VehicleType>(create);
+  static Vehicle_VehicleType getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Vehicle_VehicleType>(create);
   static Vehicle_VehicleType? _defaultInstance;
 
   /// Vehicle type category
   @$pb.TagNumber(1)
   Vehicle_VehicleType_Category get category => $_getN(0);
   @$pb.TagNumber(1)
-  set category(Vehicle_VehicleType_Category v) { setField(1, v); }
+  set category(Vehicle_VehicleType_Category v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCategory() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,7 +101,7 @@ class Vehicle extends $pb.GeneratedMessage {
     $core.Iterable<$457.VehicleAttribute>? attributes,
     Vehicle_VehicleType? vehicleType,
     LicensePlate? licensePlate,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $core.Iterable<$457.TerminalLocation>? route,
     $302.Timestamp? currentRouteSegmentVersion,
     $302.Timestamp? waypointsVersion,
@@ -171,45 +187,84 @@ class Vehicle extends $pb.GeneratedMessage {
     return $result;
   }
   Vehicle._() : super();
-  factory Vehicle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Vehicle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Vehicle.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Vehicle.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Vehicle',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<VehicleState>(2, _omitFieldNames ? '' : 'vehicleState', $pb.PbFieldType.OE, defaultOrMaker: VehicleState.UNKNOWN_VEHICLE_STATE, valueOf: VehicleState.valueOf, enumValues: VehicleState.values)
-    ..pc<$457.TripType>(3, _omitFieldNames ? '' : 'supportedTripTypes', $pb.PbFieldType.KE, valueOf: $457.TripType.valueOf, enumValues: $457.TripType.values, defaultEnumValue: $457.TripType.UNKNOWN_TRIP_TYPE)
+    ..e<VehicleState>(
+        2, _omitFieldNames ? '' : 'vehicleState', $pb.PbFieldType.OE,
+        defaultOrMaker: VehicleState.UNKNOWN_VEHICLE_STATE,
+        valueOf: VehicleState.valueOf,
+        enumValues: VehicleState.values)
+    ..pc<$457.TripType>(
+        3, _omitFieldNames ? '' : 'supportedTripTypes', $pb.PbFieldType.KE,
+        valueOf: $457.TripType.valueOf,
+        enumValues: $457.TripType.values,
+        defaultEnumValue: $457.TripType.UNKNOWN_TRIP_TYPE)
     ..pPS(4, _omitFieldNames ? '' : 'currentTrips')
-    ..aOM<$457.VehicleLocation>(5, _omitFieldNames ? '' : 'lastLocation', subBuilder: $457.VehicleLocation.create)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'maximumCapacity', $pb.PbFieldType.O3)
-    ..pc<$457.VehicleAttribute>(8, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $457.VehicleAttribute.create)
-    ..aOM<Vehicle_VehicleType>(9, _omitFieldNames ? '' : 'vehicleType', subBuilder: Vehicle_VehicleType.create)
-    ..aOM<LicensePlate>(10, _omitFieldNames ? '' : 'licensePlate', subBuilder: LicensePlate.create)
-    ..pc<$457.TerminalLocation>(12, _omitFieldNames ? '' : 'route', $pb.PbFieldType.PM, subBuilder: $457.TerminalLocation.create)
-    ..aOM<$302.Timestamp>(15, _omitFieldNames ? '' : 'currentRouteSegmentVersion', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(16, _omitFieldNames ? '' : 'waypointsVersion', subBuilder: $302.Timestamp.create)
-    ..aOM<$307.Int32Value>(18, _omitFieldNames ? '' : 'remainingDistanceMeters', subBuilder: $307.Int32Value.create)
-    ..aOM<$302.Timestamp>(19, _omitFieldNames ? '' : 'etaToFirstWaypoint', subBuilder: $302.Timestamp.create)
+    ..aOM<$457.VehicleLocation>(5, _omitFieldNames ? '' : 'lastLocation',
+        subBuilder: $457.VehicleLocation.create)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'maximumCapacity', $pb.PbFieldType.O3)
+    ..pc<$457.VehicleAttribute>(
+        8, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM,
+        subBuilder: $457.VehicleAttribute.create)
+    ..aOM<Vehicle_VehicleType>(9, _omitFieldNames ? '' : 'vehicleType',
+        subBuilder: Vehicle_VehicleType.create)
+    ..aOM<LicensePlate>(10, _omitFieldNames ? '' : 'licensePlate',
+        subBuilder: LicensePlate.create)
+    ..pc<$457.TerminalLocation>(
+        12, _omitFieldNames ? '' : 'route', $pb.PbFieldType.PM,
+        subBuilder: $457.TerminalLocation.create)
+    ..aOM<$302.Timestamp>(
+        15, _omitFieldNames ? '' : 'currentRouteSegmentVersion',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(16, _omitFieldNames ? '' : 'waypointsVersion',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$307.Int32Value>(18, _omitFieldNames ? '' : 'remainingDistanceMeters',
+        subBuilder: $307.Int32Value.create)
+    ..aOM<$302.Timestamp>(19, _omitFieldNames ? '' : 'etaToFirstWaypoint',
+        subBuilder: $302.Timestamp.create)
     ..aOS(20, _omitFieldNames ? '' : 'currentRouteSegment')
-    ..pc<$457.TripWaypoint>(22, _omitFieldNames ? '' : 'waypoints', $pb.PbFieldType.PM, subBuilder: $457.TripWaypoint.create)
+    ..pc<$457.TripWaypoint>(
+        22, _omitFieldNames ? '' : 'waypoints', $pb.PbFieldType.PM,
+        subBuilder: $457.TripWaypoint.create)
     ..aOB(23, _omitFieldNames ? '' : 'backToBackEnabled')
-    ..aOM<$457.TripWaypoint>(24, _omitFieldNames ? '' : 'currentRouteSegmentEndPoint', subBuilder: $457.TripWaypoint.create)
-    ..aOM<$307.Int32Value>(25, _omitFieldNames ? '' : 'remainingTimeSeconds', subBuilder: $307.Int32Value.create)
-    ..e<$457.NavigationStatus>(26, _omitFieldNames ? '' : 'navigationStatus', $pb.PbFieldType.OE, defaultOrMaker: $457.NavigationStatus.UNKNOWN_NAVIGATION_STATUS, valueOf: $457.NavigationStatus.valueOf, enumValues: $457.NavigationStatus.values)
-    ..aOM<DeviceSettings>(27, _omitFieldNames ? '' : 'deviceSettings', subBuilder: DeviceSettings.create)
-    ..aOM<TrafficPolylineData>(28, _omitFieldNames ? '' : 'currentRouteSegmentTraffic', subBuilder: TrafficPolylineData.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$457.TripWaypoint>(
+        24, _omitFieldNames ? '' : 'currentRouteSegmentEndPoint',
+        subBuilder: $457.TripWaypoint.create)
+    ..aOM<$307.Int32Value>(25, _omitFieldNames ? '' : 'remainingTimeSeconds',
+        subBuilder: $307.Int32Value.create)
+    ..e<$457.NavigationStatus>(
+        26, _omitFieldNames ? '' : 'navigationStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: $457.NavigationStatus.UNKNOWN_NAVIGATION_STATUS,
+        valueOf: $457.NavigationStatus.valueOf,
+        enumValues: $457.NavigationStatus.values)
+    ..aOM<DeviceSettings>(27, _omitFieldNames ? '' : 'deviceSettings',
+        subBuilder: DeviceSettings.create)
+    ..aOM<TrafficPolylineData>(
+        28, _omitFieldNames ? '' : 'currentRouteSegmentTraffic',
+        subBuilder: TrafficPolylineData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Vehicle clone() => Vehicle()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Vehicle copyWith(void Function(Vehicle) updates) => super.copyWith((message) => updates(message as Vehicle)) as Vehicle;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Vehicle copyWith(void Function(Vehicle) updates) =>
+      super.copyWith((message) => updates(message as Vehicle)) as Vehicle;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -218,7 +273,8 @@ class Vehicle extends $pb.GeneratedMessage {
   Vehicle createEmptyInstance() => create();
   static $pb.PbList<Vehicle> createRepeated() => $pb.PbList<Vehicle>();
   @$core.pragma('dart2js:noInline')
-  static Vehicle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle>(create);
+  static Vehicle getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle>(create);
   static Vehicle? _defaultInstance;
 
   /// Output only. The unique name for this vehicle.
@@ -226,7 +282,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -236,7 +295,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   VehicleState get vehicleState => $_getN(1);
   @$pb.TagNumber(2)
-  set vehicleState(VehicleState v) { setField(2, v); }
+  set vehicleState(VehicleState v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVehicleState() => $_has(1);
   @$pb.TagNumber(2)
@@ -255,7 +317,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $457.VehicleLocation get lastLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set lastLocation($457.VehicleLocation v) { setField(5, v); }
+  set lastLocation($457.VehicleLocation v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasLastLocation() => $_has(4);
   @$pb.TagNumber(5)
@@ -268,7 +333,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get maximumCapacity => $_getIZ(5);
   @$pb.TagNumber(6)
-  set maximumCapacity($core.int v) { $_setSignedInt32(5, v); }
+  set maximumCapacity($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMaximumCapacity() => $_has(5);
   @$pb.TagNumber(6)
@@ -284,7 +352,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Vehicle_VehicleType get vehicleType => $_getN(7);
   @$pb.TagNumber(9)
-  set vehicleType(Vehicle_VehicleType v) { setField(9, v); }
+  set vehicleType(Vehicle_VehicleType v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasVehicleType() => $_has(7);
   @$pb.TagNumber(9)
@@ -296,7 +367,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   LicensePlate get licensePlate => $_getN(8);
   @$pb.TagNumber(10)
-  set licensePlate(LicensePlate v) { setField(10, v); }
+  set licensePlate(LicensePlate v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasLicensePlate() => $_has(8);
   @$pb.TagNumber(10)
@@ -315,7 +389,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $302.Timestamp get currentRouteSegmentVersion => $_getN(10);
   @$pb.TagNumber(15)
-  set currentRouteSegmentVersion($302.Timestamp v) { setField(15, v); }
+  set currentRouteSegmentVersion($302.Timestamp v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasCurrentRouteSegmentVersion() => $_has(10);
   @$pb.TagNumber(15)
@@ -329,7 +406,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $302.Timestamp get waypointsVersion => $_getN(11);
   @$pb.TagNumber(16)
-  set waypointsVersion($302.Timestamp v) { setField(16, v); }
+  set waypointsVersion($302.Timestamp v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasWaypointsVersion() => $_has(11);
   @$pb.TagNumber(16)
@@ -344,7 +424,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $307.Int32Value get remainingDistanceMeters => $_getN(12);
   @$pb.TagNumber(18)
-  set remainingDistanceMeters($307.Int32Value v) { setField(18, v); }
+  set remainingDistanceMeters($307.Int32Value v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasRemainingDistanceMeters() => $_has(12);
   @$pb.TagNumber(18)
@@ -361,7 +444,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $302.Timestamp get etaToFirstWaypoint => $_getN(13);
   @$pb.TagNumber(19)
-  set etaToFirstWaypoint($302.Timestamp v) { setField(19, v); }
+  set etaToFirstWaypoint($302.Timestamp v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasEtaToFirstWaypoint() => $_has(13);
   @$pb.TagNumber(19)
@@ -378,7 +464,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get currentRouteSegment => $_getSZ(14);
   @$pb.TagNumber(20)
-  set currentRouteSegment($core.String v) { $_setString(14, v); }
+  set currentRouteSegment($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasCurrentRouteSegment() => $_has(14);
   @$pb.TagNumber(20)
@@ -394,7 +483,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.bool get backToBackEnabled => $_getBF(16);
   @$pb.TagNumber(23)
-  set backToBackEnabled($core.bool v) { $_setBool(16, v); }
+  set backToBackEnabled($core.bool v) {
+    $_setBool(16, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasBackToBackEnabled() => $_has(16);
   @$pb.TagNumber(23)
@@ -409,7 +501,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $457.TripWaypoint get currentRouteSegmentEndPoint => $_getN(17);
   @$pb.TagNumber(24)
-  set currentRouteSegmentEndPoint($457.TripWaypoint v) { setField(24, v); }
+  set currentRouteSegmentEndPoint($457.TripWaypoint v) {
+    setField(24, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasCurrentRouteSegmentEndPoint() => $_has(17);
   @$pb.TagNumber(24)
@@ -428,7 +523,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $307.Int32Value get remainingTimeSeconds => $_getN(18);
   @$pb.TagNumber(25)
-  set remainingTimeSeconds($307.Int32Value v) { setField(25, v); }
+  set remainingTimeSeconds($307.Int32Value v) {
+    setField(25, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasRemainingTimeSeconds() => $_has(18);
   @$pb.TagNumber(25)
@@ -440,7 +538,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $457.NavigationStatus get navigationStatus => $_getN(19);
   @$pb.TagNumber(26)
-  set navigationStatus($457.NavigationStatus v) { setField(26, v); }
+  set navigationStatus($457.NavigationStatus v) {
+    setField(26, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasNavigationStatus() => $_has(19);
   @$pb.TagNumber(26)
@@ -451,7 +552,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   DeviceSettings get deviceSettings => $_getN(20);
   @$pb.TagNumber(27)
-  set deviceSettings(DeviceSettings v) { setField(27, v); }
+  set deviceSettings(DeviceSettings v) {
+    setField(27, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasDeviceSettings() => $_has(20);
   @$pb.TagNumber(27)
@@ -464,7 +568,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   TrafficPolylineData get currentRouteSegmentTraffic => $_getN(21);
   @$pb.TagNumber(28)
-  set currentRouteSegmentTraffic(TrafficPolylineData v) { setField(28, v); }
+  set currentRouteSegmentTraffic(TrafficPolylineData v) {
+    setField(28, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasCurrentRouteSegmentTraffic() => $_has(21);
   @$pb.TagNumber(28)
@@ -493,26 +600,42 @@ class BatteryInfo extends $pb.GeneratedMessage {
     return $result;
   }
   BatteryInfo._() : super();
-  factory BatteryInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatteryInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatteryInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatteryInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatteryInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..e<BatteryStatus>(1, _omitFieldNames ? '' : 'batteryStatus', $pb.PbFieldType.OE, defaultOrMaker: BatteryStatus.UNKNOWN_BATTERY_STATUS, valueOf: BatteryStatus.valueOf, enumValues: BatteryStatus.values)
-    ..e<PowerSource>(2, _omitFieldNames ? '' : 'powerSource', $pb.PbFieldType.OE, defaultOrMaker: PowerSource.UNKNOWN_POWER_SOURCE, valueOf: PowerSource.valueOf, enumValues: PowerSource.values)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'batteryPercentage', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatteryInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..e<BatteryStatus>(
+        1, _omitFieldNames ? '' : 'batteryStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: BatteryStatus.UNKNOWN_BATTERY_STATUS,
+        valueOf: BatteryStatus.valueOf,
+        enumValues: BatteryStatus.values)
+    ..e<PowerSource>(
+        2, _omitFieldNames ? '' : 'powerSource', $pb.PbFieldType.OE,
+        defaultOrMaker: PowerSource.UNKNOWN_POWER_SOURCE,
+        valueOf: PowerSource.valueOf,
+        enumValues: PowerSource.values)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'batteryPercentage', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BatteryInfo clone() => BatteryInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatteryInfo copyWith(void Function(BatteryInfo) updates) => super.copyWith((message) => updates(message as BatteryInfo)) as BatteryInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatteryInfo copyWith(void Function(BatteryInfo) updates) =>
+      super.copyWith((message) => updates(message as BatteryInfo))
+          as BatteryInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -521,14 +644,18 @@ class BatteryInfo extends $pb.GeneratedMessage {
   BatteryInfo createEmptyInstance() => create();
   static $pb.PbList<BatteryInfo> createRepeated() => $pb.PbList<BatteryInfo>();
   @$core.pragma('dart2js:noInline')
-  static BatteryInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatteryInfo>(create);
+  static BatteryInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatteryInfo>(create);
   static BatteryInfo? _defaultInstance;
 
   /// Status of the battery, whether full or charging etc.
   @$pb.TagNumber(1)
   BatteryStatus get batteryStatus => $_getN(0);
   @$pb.TagNumber(1)
-  set batteryStatus(BatteryStatus v) { setField(1, v); }
+  set batteryStatus(BatteryStatus v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBatteryStatus() => $_has(0);
   @$pb.TagNumber(1)
@@ -538,7 +665,10 @@ class BatteryInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PowerSource get powerSource => $_getN(1);
   @$pb.TagNumber(2)
-  set powerSource(PowerSource v) { setField(2, v); }
+  set powerSource(PowerSource v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPowerSource() => $_has(1);
   @$pb.TagNumber(2)
@@ -548,7 +678,10 @@ class BatteryInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get batteryPercentage => $_getN(2);
   @$pb.TagNumber(3)
-  set batteryPercentage($core.double v) { $_setFloat(2, v); }
+  set batteryPercentage($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBatteryPercentage() => $_has(2);
   @$pb.TagNumber(3)
@@ -579,36 +712,50 @@ class DeviceSettings extends $pb.GeneratedMessage {
     return $result;
   }
   DeviceSettings._() : super();
-  factory DeviceSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeviceSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeviceSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeviceSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..e<LocationPowerSaveMode>(1, _omitFieldNames ? '' : 'locationPowerSaveMode', $pb.PbFieldType.OE, defaultOrMaker: LocationPowerSaveMode.UNKNOWN_LOCATION_POWER_SAVE_MODE, valueOf: LocationPowerSaveMode.valueOf, enumValues: LocationPowerSaveMode.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeviceSettings',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..e<LocationPowerSaveMode>(
+        1, _omitFieldNames ? '' : 'locationPowerSaveMode', $pb.PbFieldType.OE,
+        defaultOrMaker: LocationPowerSaveMode.UNKNOWN_LOCATION_POWER_SAVE_MODE,
+        valueOf: LocationPowerSaveMode.valueOf,
+        enumValues: LocationPowerSaveMode.values)
     ..aOB(2, _omitFieldNames ? '' : 'isPowerSaveMode')
     ..aOB(3, _omitFieldNames ? '' : 'isInteractive')
-    ..aOM<BatteryInfo>(4, _omitFieldNames ? '' : 'batteryInfo', subBuilder: BatteryInfo.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<BatteryInfo>(4, _omitFieldNames ? '' : 'batteryInfo',
+        subBuilder: BatteryInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeviceSettings clone() => DeviceSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeviceSettings copyWith(void Function(DeviceSettings) updates) => super.copyWith((message) => updates(message as DeviceSettings)) as DeviceSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeviceSettings copyWith(void Function(DeviceSettings) updates) =>
+      super.copyWith((message) => updates(message as DeviceSettings))
+          as DeviceSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceSettings create() => DeviceSettings._();
   DeviceSettings createEmptyInstance() => create();
-  static $pb.PbList<DeviceSettings> createRepeated() => $pb.PbList<DeviceSettings>();
+  static $pb.PbList<DeviceSettings> createRepeated() =>
+      $pb.PbList<DeviceSettings>();
   @$core.pragma('dart2js:noInline')
-  static DeviceSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeviceSettings>(create);
+  static DeviceSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeviceSettings>(create);
   static DeviceSettings? _defaultInstance;
 
   /// How location features are set to behave on the device when battery saver is
@@ -616,7 +763,10 @@ class DeviceSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   LocationPowerSaveMode get locationPowerSaveMode => $_getN(0);
   @$pb.TagNumber(1)
-  set locationPowerSaveMode(LocationPowerSaveMode v) { setField(1, v); }
+  set locationPowerSaveMode(LocationPowerSaveMode v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocationPowerSaveMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -626,7 +776,10 @@ class DeviceSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get isPowerSaveMode => $_getBF(1);
   @$pb.TagNumber(2)
-  set isPowerSaveMode($core.bool v) { $_setBool(1, v); }
+  set isPowerSaveMode($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIsPowerSaveMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -636,7 +789,10 @@ class DeviceSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get isInteractive => $_getBF(2);
   @$pb.TagNumber(3)
-  set isInteractive($core.bool v) { $_setBool(2, v); }
+  set isInteractive($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasIsInteractive() => $_has(2);
   @$pb.TagNumber(3)
@@ -646,7 +802,10 @@ class DeviceSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   BatteryInfo get batteryInfo => $_getN(3);
   @$pb.TagNumber(4)
-  set batteryInfo(BatteryInfo v) { setField(4, v); }
+  set batteryInfo(BatteryInfo v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBatteryInfo() => $_has(3);
   @$pb.TagNumber(4)
@@ -673,34 +832,43 @@ class LicensePlate extends $pb.GeneratedMessage {
     return $result;
   }
   LicensePlate._() : super();
-  factory LicensePlate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LicensePlate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LicensePlate.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LicensePlate.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LicensePlate', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LicensePlate',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'countryCode')
     ..aOS(2, _omitFieldNames ? '' : 'lastCharacter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LicensePlate clone() => LicensePlate()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LicensePlate copyWith(void Function(LicensePlate) updates) => super.copyWith((message) => updates(message as LicensePlate)) as LicensePlate;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LicensePlate copyWith(void Function(LicensePlate) updates) =>
+      super.copyWith((message) => updates(message as LicensePlate))
+          as LicensePlate;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LicensePlate create() => LicensePlate._();
   LicensePlate createEmptyInstance() => create();
-  static $pb.PbList<LicensePlate> createRepeated() => $pb.PbList<LicensePlate>();
+  static $pb.PbList<LicensePlate> createRepeated() =>
+      $pb.PbList<LicensePlate>();
   @$core.pragma('dart2js:noInline')
-  static LicensePlate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LicensePlate>(create);
+  static LicensePlate getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LicensePlate>(create);
   static LicensePlate? _defaultInstance;
 
   /// Required. CLDR Country/Region Code.  For example, `US` for United States,
@@ -708,7 +876,10 @@ class LicensePlate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get countryCode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set countryCode($core.String v) { $_setString(0, v); }
+  set countryCode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCountryCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -723,7 +894,10 @@ class LicensePlate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get lastCharacter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set lastCharacter($core.String v) { $_setString(1, v); }
+  set lastCharacter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLastCharacter() => $_has(1);
   @$pb.TagNumber(2)
@@ -731,7 +905,8 @@ class LicensePlate extends $pb.GeneratedMessage {
 }
 
 /// One road stretch that should be rendered.
-class VisualTrafficReportPolylineRendering_RoadStretch extends $pb.GeneratedMessage {
+class VisualTrafficReportPolylineRendering_RoadStretch
+    extends $pb.GeneratedMessage {
   factory VisualTrafficReportPolylineRendering_RoadStretch({
     VisualTrafficReportPolylineRendering_RoadStretch_Style? style,
     $core.int? offsetMeters,
@@ -750,42 +925,73 @@ class VisualTrafficReportPolylineRendering_RoadStretch extends $pb.GeneratedMess
     return $result;
   }
   VisualTrafficReportPolylineRendering_RoadStretch._() : super();
-  factory VisualTrafficReportPolylineRendering_RoadStretch.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VisualTrafficReportPolylineRendering_RoadStretch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VisualTrafficReportPolylineRendering_RoadStretch.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VisualTrafficReportPolylineRendering_RoadStretch.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VisualTrafficReportPolylineRendering.RoadStretch', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..e<VisualTrafficReportPolylineRendering_RoadStretch_Style>(1, _omitFieldNames ? '' : 'style', $pb.PbFieldType.OE, defaultOrMaker: VisualTrafficReportPolylineRendering_RoadStretch_Style.STYLE_UNSPECIFIED, valueOf: VisualTrafficReportPolylineRendering_RoadStretch_Style.valueOf, enumValues: VisualTrafficReportPolylineRendering_RoadStretch_Style.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'VisualTrafficReportPolylineRendering.RoadStretch',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..e<VisualTrafficReportPolylineRendering_RoadStretch_Style>(
+        1, _omitFieldNames ? '' : 'style', $pb.PbFieldType.OE,
+        defaultOrMaker: VisualTrafficReportPolylineRendering_RoadStretch_Style
+            .STYLE_UNSPECIFIED,
+        valueOf: VisualTrafficReportPolylineRendering_RoadStretch_Style.valueOf,
+        enumValues:
+            VisualTrafficReportPolylineRendering_RoadStretch_Style.values)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'offsetMeters', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'lengthMeters', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  VisualTrafficReportPolylineRendering_RoadStretch clone() => VisualTrafficReportPolylineRendering_RoadStretch()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VisualTrafficReportPolylineRendering_RoadStretch copyWith(void Function(VisualTrafficReportPolylineRendering_RoadStretch) updates) => super.copyWith((message) => updates(message as VisualTrafficReportPolylineRendering_RoadStretch)) as VisualTrafficReportPolylineRendering_RoadStretch;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VisualTrafficReportPolylineRendering_RoadStretch clone() =>
+      VisualTrafficReportPolylineRendering_RoadStretch()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VisualTrafficReportPolylineRendering_RoadStretch copyWith(
+          void Function(VisualTrafficReportPolylineRendering_RoadStretch)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as VisualTrafficReportPolylineRendering_RoadStretch))
+          as VisualTrafficReportPolylineRendering_RoadStretch;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static VisualTrafficReportPolylineRendering_RoadStretch create() => VisualTrafficReportPolylineRendering_RoadStretch._();
-  VisualTrafficReportPolylineRendering_RoadStretch createEmptyInstance() => create();
-  static $pb.PbList<VisualTrafficReportPolylineRendering_RoadStretch> createRepeated() => $pb.PbList<VisualTrafficReportPolylineRendering_RoadStretch>();
+  static VisualTrafficReportPolylineRendering_RoadStretch create() =>
+      VisualTrafficReportPolylineRendering_RoadStretch._();
+  VisualTrafficReportPolylineRendering_RoadStretch createEmptyInstance() =>
+      create();
+  static $pb.PbList<VisualTrafficReportPolylineRendering_RoadStretch>
+      createRepeated() =>
+          $pb.PbList<VisualTrafficReportPolylineRendering_RoadStretch>();
   @$core.pragma('dart2js:noInline')
-  static VisualTrafficReportPolylineRendering_RoadStretch getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VisualTrafficReportPolylineRendering_RoadStretch>(create);
+  static VisualTrafficReportPolylineRendering_RoadStretch getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          VisualTrafficReportPolylineRendering_RoadStretch>(create);
   static VisualTrafficReportPolylineRendering_RoadStretch? _defaultInstance;
 
   /// Required. The style to apply.
   @$pb.TagNumber(1)
   VisualTrafficReportPolylineRendering_RoadStretch_Style get style => $_getN(0);
   @$pb.TagNumber(1)
-  set style(VisualTrafficReportPolylineRendering_RoadStretch_Style v) { setField(1, v); }
+  set style(VisualTrafficReportPolylineRendering_RoadStretch_Style v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStyle() => $_has(0);
   @$pb.TagNumber(1)
@@ -796,7 +1002,10 @@ class VisualTrafficReportPolylineRendering_RoadStretch extends $pb.GeneratedMess
   @$pb.TagNumber(2)
   $core.int get offsetMeters => $_getIZ(1);
   @$pb.TagNumber(2)
-  set offsetMeters($core.int v) { $_setSignedInt32(1, v); }
+  set offsetMeters($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOffsetMeters() => $_has(1);
   @$pb.TagNumber(2)
@@ -806,7 +1015,10 @@ class VisualTrafficReportPolylineRendering_RoadStretch extends $pb.GeneratedMess
   @$pb.TagNumber(3)
   $core.int get lengthMeters => $_getIZ(2);
   @$pb.TagNumber(3)
-  set lengthMeters($core.int v) { $_setSignedInt32(2, v); }
+  set lengthMeters($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLengthMeters() => $_has(2);
   @$pb.TagNumber(3)
@@ -817,7 +1029,8 @@ class VisualTrafficReportPolylineRendering_RoadStretch extends $pb.GeneratedMess
 /// route.
 class VisualTrafficReportPolylineRendering extends $pb.GeneratedMessage {
   factory VisualTrafficReportPolylineRendering({
-    $core.Iterable<VisualTrafficReportPolylineRendering_RoadStretch>? roadStretch,
+    $core.Iterable<VisualTrafficReportPolylineRendering_RoadStretch>?
+        roadStretch,
   }) {
     final $result = create();
     if (roadStretch != null) {
@@ -826,33 +1039,50 @@ class VisualTrafficReportPolylineRendering extends $pb.GeneratedMessage {
     return $result;
   }
   VisualTrafficReportPolylineRendering._() : super();
-  factory VisualTrafficReportPolylineRendering.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VisualTrafficReportPolylineRendering.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VisualTrafficReportPolylineRendering.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VisualTrafficReportPolylineRendering.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VisualTrafficReportPolylineRendering', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<VisualTrafficReportPolylineRendering_RoadStretch>(1, _omitFieldNames ? '' : 'roadStretch', $pb.PbFieldType.PM, subBuilder: VisualTrafficReportPolylineRendering_RoadStretch.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VisualTrafficReportPolylineRendering',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..pc<VisualTrafficReportPolylineRendering_RoadStretch>(
+        1, _omitFieldNames ? '' : 'roadStretch', $pb.PbFieldType.PM,
+        subBuilder: VisualTrafficReportPolylineRendering_RoadStretch.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  VisualTrafficReportPolylineRendering clone() => VisualTrafficReportPolylineRendering()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VisualTrafficReportPolylineRendering copyWith(void Function(VisualTrafficReportPolylineRendering) updates) => super.copyWith((message) => updates(message as VisualTrafficReportPolylineRendering)) as VisualTrafficReportPolylineRendering;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VisualTrafficReportPolylineRendering clone() =>
+      VisualTrafficReportPolylineRendering()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VisualTrafficReportPolylineRendering copyWith(
+          void Function(VisualTrafficReportPolylineRendering) updates) =>
+      super.copyWith((message) =>
+              updates(message as VisualTrafficReportPolylineRendering))
+          as VisualTrafficReportPolylineRendering;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static VisualTrafficReportPolylineRendering create() => VisualTrafficReportPolylineRendering._();
+  static VisualTrafficReportPolylineRendering create() =>
+      VisualTrafficReportPolylineRendering._();
   VisualTrafficReportPolylineRendering createEmptyInstance() => create();
-  static $pb.PbList<VisualTrafficReportPolylineRendering> createRepeated() => $pb.PbList<VisualTrafficReportPolylineRendering>();
+  static $pb.PbList<VisualTrafficReportPolylineRendering> createRepeated() =>
+      $pb.PbList<VisualTrafficReportPolylineRendering>();
   @$core.pragma('dart2js:noInline')
-  static VisualTrafficReportPolylineRendering getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VisualTrafficReportPolylineRendering>(create);
+  static VisualTrafficReportPolylineRendering getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          VisualTrafficReportPolylineRendering>(create);
   static VisualTrafficReportPolylineRendering? _defaultInstance;
 
   ///  Optional. Road stretches that should be rendered along the polyline.
@@ -862,7 +1092,8 @@ class VisualTrafficReportPolylineRendering extends $pb.GeneratedMessage {
   ///  In the absence of a road stretch to style, the client should apply the
   ///  default for the route.
   @$pb.TagNumber(1)
-  $core.List<VisualTrafficReportPolylineRendering_RoadStretch> get roadStretch => $_getList(0);
+  $core.List<VisualTrafficReportPolylineRendering_RoadStretch>
+      get roadStretch => $_getList(0);
 }
 
 /// Traffic conditions along the expected vehicle route.
@@ -877,33 +1108,44 @@ class TrafficPolylineData extends $pb.GeneratedMessage {
     return $result;
   }
   TrafficPolylineData._() : super();
-  factory TrafficPolylineData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TrafficPolylineData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TrafficPolylineData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TrafficPolylineData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrafficPolylineData', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<VisualTrafficReportPolylineRendering>(1, _omitFieldNames ? '' : 'trafficRendering', subBuilder: VisualTrafficReportPolylineRendering.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TrafficPolylineData',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<VisualTrafficReportPolylineRendering>(
+        1, _omitFieldNames ? '' : 'trafficRendering',
+        subBuilder: VisualTrafficReportPolylineRendering.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TrafficPolylineData clone() => TrafficPolylineData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TrafficPolylineData copyWith(void Function(TrafficPolylineData) updates) => super.copyWith((message) => updates(message as TrafficPolylineData)) as TrafficPolylineData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TrafficPolylineData copyWith(void Function(TrafficPolylineData) updates) =>
+      super.copyWith((message) => updates(message as TrafficPolylineData))
+          as TrafficPolylineData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TrafficPolylineData create() => TrafficPolylineData._();
   TrafficPolylineData createEmptyInstance() => create();
-  static $pb.PbList<TrafficPolylineData> createRepeated() => $pb.PbList<TrafficPolylineData>();
+  static $pb.PbList<TrafficPolylineData> createRepeated() =>
+      $pb.PbList<TrafficPolylineData>();
   @$core.pragma('dart2js:noInline')
-  static TrafficPolylineData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TrafficPolylineData>(create);
+  static TrafficPolylineData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TrafficPolylineData>(create);
   static TrafficPolylineData? _defaultInstance;
 
   /// A polyline rendering of how fast traffic is for all regions along
@@ -911,7 +1153,10 @@ class TrafficPolylineData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   VisualTrafficReportPolylineRendering get trafficRendering => $_getN(0);
   @$pb.TagNumber(1)
-  set trafficRendering(VisualTrafficReportPolylineRendering v) { setField(1, v); }
+  set trafficRendering(VisualTrafficReportPolylineRendering v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTrafficRendering() => $_has(0);
   @$pb.TagNumber(1)
@@ -920,6 +1165,6 @@ class TrafficPolylineData extends $pb.GeneratedMessage {
   VisualTrafficReportPolylineRendering ensureTrafficRendering() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

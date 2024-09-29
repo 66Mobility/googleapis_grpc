@@ -27,8 +27,22 @@ const Space$json = {
       '8': {'3': true},
       '10': 'type',
     },
-    {'1': 'space_type', '3': 10, '4': 1, '5': 14, '6': '.google.chat.v1.Space.SpaceType', '10': 'spaceType'},
-    {'1': 'single_user_bot_dm', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'singleUserBotDm'},
+    {
+      '1': 'space_type',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.Space.SpaceType',
+      '10': 'spaceType'
+    },
+    {
+      '1': 'single_user_bot_dm',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'singleUserBotDm'
+    },
     {
       '1': 'threaded',
       '3': 5,
@@ -38,19 +52,91 @@ const Space$json = {
       '10': 'threaded',
     },
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'external_user_allowed', '3': 8, '4': 1, '5': 8, '8': {}, '10': 'externalUserAllowed'},
-    {'1': 'space_threading_state', '3': 9, '4': 1, '5': 14, '6': '.google.chat.v1.Space.SpaceThreadingState', '8': {}, '10': 'spaceThreadingState'},
-    {'1': 'space_details', '3': 11, '4': 1, '5': 11, '6': '.google.chat.v1.Space.SpaceDetails', '10': 'spaceDetails'},
-    {'1': 'space_history_state', '3': 13, '4': 1, '5': 14, '6': '.google.chat.v1.HistoryState', '10': 'spaceHistoryState'},
+    {
+      '1': 'external_user_allowed',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'externalUserAllowed'
+    },
+    {
+      '1': 'space_threading_state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.Space.SpaceThreadingState',
+      '8': {},
+      '10': 'spaceThreadingState'
+    },
+    {
+      '1': 'space_details',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.SpaceDetails',
+      '10': 'spaceDetails'
+    },
+    {
+      '1': 'space_history_state',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.HistoryState',
+      '10': 'spaceHistoryState'
+    },
     {'1': 'import_mode', '3': 16, '4': 1, '5': 8, '8': {}, '10': 'importMode'},
-    {'1': 'create_time', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'last_active_time', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'lastActiveTime'},
-    {'1': 'admin_installed', '3': 19, '4': 1, '5': 8, '8': {}, '10': 'adminInstalled'},
-    {'1': 'membership_count', '3': 20, '4': 1, '5': 11, '6': '.google.chat.v1.Space.MembershipCount', '8': {}, '10': 'membershipCount'},
-    {'1': 'access_settings', '3': 23, '4': 1, '5': 11, '6': '.google.chat.v1.Space.AccessSettings', '8': {}, '10': 'accessSettings'},
+    {
+      '1': 'create_time',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'last_active_time',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'lastActiveTime'
+    },
+    {
+      '1': 'admin_installed',
+      '3': 19,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'adminInstalled'
+    },
+    {
+      '1': 'membership_count',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.MembershipCount',
+      '8': {},
+      '10': 'membershipCount'
+    },
+    {
+      '1': 'access_settings',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.AccessSettings',
+      '8': {},
+      '10': 'accessSettings'
+    },
     {'1': 'space_uri', '3': 25, '4': 1, '5': 9, '8': {}, '10': 'spaceUri'},
   ],
-  '3': [Space_SpaceDetails$json, Space_MembershipCount$json, Space_AccessSettings$json],
+  '3': [
+    Space_SpaceDetails$json,
+    Space_MembershipCount$json,
+    Space_AccessSettings$json
+  ],
   '4': [Space_Type$json, Space_SpaceType$json, Space_SpaceThreadingState$json],
   '7': {},
 };
@@ -68,8 +154,20 @@ const Space_SpaceDetails$json = {
 const Space_MembershipCount$json = {
   '1': 'MembershipCount',
   '2': [
-    {'1': 'joined_direct_human_user_count', '3': 4, '4': 1, '5': 5, '10': 'joinedDirectHumanUserCount'},
-    {'1': 'joined_group_count', '3': 5, '4': 1, '5': 5, '10': 'joinedGroupCount'},
+    {
+      '1': 'joined_direct_human_user_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'joinedDirectHumanUserCount'
+    },
+    {
+      '1': 'joined_group_count',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'joinedGroupCount'
+    },
   ],
 };
 
@@ -77,7 +175,15 @@ const Space_MembershipCount$json = {
 const Space_AccessSettings$json = {
   '1': 'AccessSettings',
   '2': [
-    {'1': 'access_state', '3': 1, '4': 1, '5': 14, '6': '.google.chat.v1.Space.AccessSettings.AccessState', '8': {}, '10': 'accessState'},
+    {
+      '1': 'access_state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.Space.AccessSettings.AccessState',
+      '8': {},
+      '10': 'accessState'
+    },
     {'1': 'audience', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'audience'},
   ],
   '4': [Space_AccessSettings_AccessState$json],
@@ -164,7 +270,15 @@ final $typed_data.Uint8List spaceDescriptor = $convert.base64Decode(
 const CreateSpaceRequest$json = {
   '1': 'CreateSpaceRequest',
   '2': [
-    {'1': 'space', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Space', '8': {}, '10': 'space'},
+    {
+      '1': 'space',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space',
+      '8': {},
+      '10': 'space'
+    },
     {'1': 'request_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
 };
@@ -194,7 +308,14 @@ final $typed_data.Uint8List listSpacesRequestDescriptor = $convert.base64Decode(
 const ListSpacesResponse$json = {
   '1': 'ListSpacesResponse',
   '2': [
-    {'1': 'spaces', '3': 1, '4': 3, '5': 11, '6': '.google.chat.v1.Space', '10': 'spaces'},
+    {
+      '1': 'spaces',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Space',
+      '10': 'spaces'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -228,15 +349,31 @@ const FindDirectMessageRequest$json = {
 };
 
 /// Descriptor for `FindDirectMessageRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List findDirectMessageRequestDescriptor = $convert.base64Decode(
-    'ChhGaW5kRGlyZWN0TWVzc2FnZVJlcXVlc3QSFwoEbmFtZRgBIAEoCUID4EECUgRuYW1l');
+final $typed_data.Uint8List findDirectMessageRequestDescriptor =
+    $convert.base64Decode(
+        'ChhGaW5kRGlyZWN0TWVzc2FnZVJlcXVlc3QSFwoEbmFtZRgBIAEoCUID4EECUgRuYW1l');
 
 @$core.Deprecated('Use updateSpaceRequestDescriptor instead')
 const UpdateSpaceRequest$json = {
   '1': 'UpdateSpaceRequest',
   '2': [
-    {'1': 'space', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Space', '8': {}, '10': 'space'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'space',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space',
+      '8': {},
+      '10': 'space'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
     {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
@@ -271,7 +408,14 @@ final $typed_data.Uint8List searchSpacesRequestDescriptor = $convert.base64Decod
 const SearchSpacesResponse$json = {
   '1': 'SearchSpacesResponse',
   '2': [
-    {'1': 'spaces', '3': 1, '4': 3, '5': 11, '6': '.google.chat.v1.Space', '10': 'spaces'},
+    {
+      '1': 'spaces',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Space',
+      '10': 'spaces'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 5, '10': 'totalSize'},
   ],
@@ -307,20 +451,28 @@ const CompleteImportSpaceRequest$json = {
 };
 
 /// Descriptor for `CompleteImportSpaceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List completeImportSpaceRequestDescriptor = $convert.base64Decode(
-    'ChpDb21wbGV0ZUltcG9ydFNwYWNlUmVxdWVzdBI1CgRuYW1lGAEgASgJQiHgQQL6QRsKGWNoYX'
-    'QuZ29vZ2xlYXBpcy5jb20vU3BhY2VSBG5hbWU=');
+final $typed_data.Uint8List completeImportSpaceRequestDescriptor =
+    $convert.base64Decode(
+        'ChpDb21wbGV0ZUltcG9ydFNwYWNlUmVxdWVzdBI1CgRuYW1lGAEgASgJQiHgQQL6QRsKGWNoYX'
+        'QuZ29vZ2xlYXBpcy5jb20vU3BhY2VSBG5hbWU=');
 
 @$core.Deprecated('Use completeImportSpaceResponseDescriptor instead')
 const CompleteImportSpaceResponse$json = {
   '1': 'CompleteImportSpaceResponse',
   '2': [
-    {'1': 'space', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Space', '10': 'space'},
+    {
+      '1': 'space',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space',
+      '10': 'space'
+    },
   ],
 };
 
 /// Descriptor for `CompleteImportSpaceResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List completeImportSpaceResponseDescriptor = $convert.base64Decode(
-    'ChtDb21wbGV0ZUltcG9ydFNwYWNlUmVzcG9uc2USKwoFc3BhY2UYASABKAsyFS5nb29nbGUuY2'
-    'hhdC52MS5TcGFjZVIFc3BhY2U=');
-
+final $typed_data.Uint8List completeImportSpaceResponseDescriptor =
+    $convert.base64Decode(
+        'ChtDb21wbGV0ZUltcG9ydFNwYWNlUmVzcG9uc2USKwoFc3BhY2UYASABKAsyFS5nb29nbGUuY2'
+        'hhdC52MS5TcGFjZVIFc3BhY2U=');

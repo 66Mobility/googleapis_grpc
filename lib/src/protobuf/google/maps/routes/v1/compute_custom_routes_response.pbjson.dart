@@ -17,10 +17,38 @@ import 'dart:typed_data' as $typed_data;
 const ComputeCustomRoutesResponse$json = {
   '1': 'ComputeCustomRoutesResponse',
   '2': [
-    {'1': 'routes', '3': 7, '4': 3, '5': 11, '6': '.google.maps.routes.v1.CustomRoute', '10': 'routes'},
-    {'1': 'fastest_route', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routes.v1.CustomRoute', '10': 'fastestRoute'},
-    {'1': 'shortest_route', '3': 6, '4': 1, '5': 11, '6': '.google.maps.routes.v1.CustomRoute', '10': 'shortestRoute'},
-    {'1': 'fallback_info', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routes.v1.ComputeCustomRoutesResponse.FallbackInfo', '10': 'fallbackInfo'},
+    {
+      '1': 'routes',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.CustomRoute',
+      '10': 'routes'
+    },
+    {
+      '1': 'fastest_route',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.CustomRoute',
+      '10': 'fastestRoute'
+    },
+    {
+      '1': 'shortest_route',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.CustomRoute',
+      '10': 'shortestRoute'
+    },
+    {
+      '1': 'fallback_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.ComputeCustomRoutesResponse.FallbackInfo',
+      '10': 'fallbackInfo'
+    },
   ],
   '3': [ComputeCustomRoutesResponse_FallbackInfo$json],
 };
@@ -29,9 +57,31 @@ const ComputeCustomRoutesResponse$json = {
 const ComputeCustomRoutesResponse_FallbackInfo$json = {
   '1': 'FallbackInfo',
   '2': [
-    {'1': 'routing_mode', '3': 1, '4': 1, '5': 14, '6': '.google.maps.routes.v1.FallbackRoutingMode', '10': 'routingMode'},
-    {'1': 'routing_mode_reason', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routes.v1.FallbackReason', '10': 'routingModeReason'},
-    {'1': 'route_objective', '3': 3, '4': 1, '5': 14, '6': '.google.maps.routes.v1.ComputeCustomRoutesResponse.FallbackInfo.FallbackRouteObjective', '10': 'routeObjective'},
+    {
+      '1': 'routing_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.FallbackRoutingMode',
+      '10': 'routingMode'
+    },
+    {
+      '1': 'routing_mode_reason',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.FallbackReason',
+      '10': 'routingModeReason'
+    },
+    {
+      '1': 'route_objective',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.maps.routes.v1.ComputeCustomRoutesResponse.FallbackInfo.FallbackRouteObjective',
+      '10': 'routeObjective'
+    },
   ],
   '4': [ComputeCustomRoutesResponse_FallbackInfo_FallbackRouteObjective$json],
 };
@@ -61,4 +111,3 @@ final $typed_data.Uint8List computeCustomRoutesResponseDescriptor = $convert.bas
     'ZvLkZhbGxiYWNrUm91dGVPYmplY3RpdmVSDnJvdXRlT2JqZWN0aXZlInEKFkZhbGxiYWNrUm91'
     'dGVPYmplY3RpdmUSKAokRkFMTEJBQ0tfUk9VVEVfT0JKRUNUSVZFX1VOU1BFQ0lGSUVEEAASLQ'
     'opRkFMTEJBQ0tfUkFURUNBUkRfV0lUSE9VVF9UT0xMX1BSSUNFX0RBVEEQAQ==');
-

@@ -18,7 +18,14 @@ const ThreadReadState$json = {
   '1': 'ThreadReadState',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'last_read_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastReadTime'},
+    {
+      '1': 'last_read_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastReadTime'
+    },
   ],
   '7': {},
 };
@@ -40,7 +47,7 @@ const GetThreadReadStateRequest$json = {
 };
 
 /// Descriptor for `GetThreadReadStateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getThreadReadStateRequestDescriptor = $convert.base64Decode(
-    'ChlHZXRUaHJlYWRSZWFkU3RhdGVSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojY2hhdC'
-    '5nb29nbGVhcGlzLmNvbS9UaHJlYWRSZWFkU3RhdGVSBG5hbWU=');
-
+final $typed_data.Uint8List getThreadReadStateRequestDescriptor =
+    $convert.base64Decode(
+        'ChlHZXRUaHJlYWRSZWFkU3RhdGVSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojY2hhdC'
+        '5nb29nbGVhcGlzLmNvbS9UaHJlYWRSZWFkU3RhdGVSBG5hbWU=');

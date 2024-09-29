@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const Polyline$json = {
   '1': 'Polyline',
   '2': [
-    {'1': 'encoded_polyline', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'encodedPolyline'},
+    {
+      '1': 'encoded_polyline',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'encodedPolyline'
+    },
   ],
   '8': [
     {'1': 'polyline_type'},
@@ -28,4 +35,3 @@ const Polyline$json = {
 final $typed_data.Uint8List polylineDescriptor = $convert.base64Decode(
     'CghQb2x5bGluZRIrChBlbmNvZGVkX3BvbHlsaW5lGAEgASgJSABSD2VuY29kZWRQb2x5bGluZU'
     'IPCg1wb2x5bGluZV90eXBl');
-

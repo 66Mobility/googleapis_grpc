@@ -33,34 +33,44 @@ class CreateSnoozeRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateSnoozeRequest._() : super();
-  factory CreateSnoozeRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateSnoozeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateSnoozeRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateSnoozeRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateSnoozeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateSnoozeRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$203.Snooze>(2, _omitFieldNames ? '' : 'snooze', subBuilder: $203.Snooze.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$203.Snooze>(2, _omitFieldNames ? '' : 'snooze',
+        subBuilder: $203.Snooze.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateSnoozeRequest clone() => CreateSnoozeRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateSnoozeRequest copyWith(void Function(CreateSnoozeRequest) updates) => super.copyWith((message) => updates(message as CreateSnoozeRequest)) as CreateSnoozeRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateSnoozeRequest copyWith(void Function(CreateSnoozeRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateSnoozeRequest))
+          as CreateSnoozeRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateSnoozeRequest create() => CreateSnoozeRequest._();
   CreateSnoozeRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateSnoozeRequest> createRepeated() => $pb.PbList<CreateSnoozeRequest>();
+  static $pb.PbList<CreateSnoozeRequest> createRepeated() =>
+      $pb.PbList<CreateSnoozeRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateSnoozeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateSnoozeRequest>(create);
+  static CreateSnoozeRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateSnoozeRequest>(create);
   static CreateSnoozeRequest? _defaultInstance;
 
   ///  Required. The
@@ -71,7 +81,10 @@ class CreateSnoozeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -82,7 +95,10 @@ class CreateSnoozeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $203.Snooze get snooze => $_getN(1);
   @$pb.TagNumber(2)
-  set snooze($203.Snooze v) { setField(2, v); }
+  set snooze($203.Snooze v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSnooze() => $_has(1);
   @$pb.TagNumber(2)
@@ -116,36 +132,45 @@ class ListSnoozesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListSnoozesRequest._() : super();
-  factory ListSnoozesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListSnoozesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListSnoozesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListSnoozesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSnoozesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListSnoozesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListSnoozesRequest clone() => ListSnoozesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListSnoozesRequest copyWith(void Function(ListSnoozesRequest) updates) => super.copyWith((message) => updates(message as ListSnoozesRequest)) as ListSnoozesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListSnoozesRequest copyWith(void Function(ListSnoozesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListSnoozesRequest))
+          as ListSnoozesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListSnoozesRequest create() => ListSnoozesRequest._();
   ListSnoozesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListSnoozesRequest> createRepeated() => $pb.PbList<ListSnoozesRequest>();
+  static $pb.PbList<ListSnoozesRequest> createRepeated() =>
+      $pb.PbList<ListSnoozesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListSnoozesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSnoozesRequest>(create);
+  static ListSnoozesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListSnoozesRequest>(create);
   static ListSnoozesRequest? _defaultInstance;
 
   ///  Required. The
@@ -156,7 +181,10 @@ class ListSnoozesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -177,7 +205,10 @@ class ListSnoozesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -191,7 +222,10 @@ class ListSnoozesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(4)
@@ -202,7 +236,10 @@ class ListSnoozesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(5)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(5)
@@ -226,34 +263,44 @@ class ListSnoozesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListSnoozesResponse._() : super();
-  factory ListSnoozesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListSnoozesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListSnoozesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListSnoozesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSnoozesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$203.Snooze>(1, _omitFieldNames ? '' : 'snoozes', $pb.PbFieldType.PM, subBuilder: $203.Snooze.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListSnoozesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..pc<$203.Snooze>(1, _omitFieldNames ? '' : 'snoozes', $pb.PbFieldType.PM,
+        subBuilder: $203.Snooze.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListSnoozesResponse clone() => ListSnoozesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListSnoozesResponse copyWith(void Function(ListSnoozesResponse) updates) => super.copyWith((message) => updates(message as ListSnoozesResponse)) as ListSnoozesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListSnoozesResponse copyWith(void Function(ListSnoozesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListSnoozesResponse))
+          as ListSnoozesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListSnoozesResponse create() => ListSnoozesResponse._();
   ListSnoozesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListSnoozesResponse> createRepeated() => $pb.PbList<ListSnoozesResponse>();
+  static $pb.PbList<ListSnoozesResponse> createRepeated() =>
+      $pb.PbList<ListSnoozesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListSnoozesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSnoozesResponse>(create);
+  static ListSnoozesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListSnoozesResponse>(create);
   static ListSnoozesResponse? _defaultInstance;
 
   /// `Snooze`s matching this list call.
@@ -265,7 +312,10 @@ class ListSnoozesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -285,33 +335,42 @@ class GetSnoozeRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetSnoozeRequest._() : super();
-  factory GetSnoozeRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetSnoozeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetSnoozeRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetSnoozeRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSnoozeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetSnoozeRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetSnoozeRequest clone() => GetSnoozeRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetSnoozeRequest copyWith(void Function(GetSnoozeRequest) updates) => super.copyWith((message) => updates(message as GetSnoozeRequest)) as GetSnoozeRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetSnoozeRequest copyWith(void Function(GetSnoozeRequest) updates) =>
+      super.copyWith((message) => updates(message as GetSnoozeRequest))
+          as GetSnoozeRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetSnoozeRequest create() => GetSnoozeRequest._();
   GetSnoozeRequest createEmptyInstance() => create();
-  static $pb.PbList<GetSnoozeRequest> createRepeated() => $pb.PbList<GetSnoozeRequest>();
+  static $pb.PbList<GetSnoozeRequest> createRepeated() =>
+      $pb.PbList<GetSnoozeRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetSnoozeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetSnoozeRequest>(create);
+  static GetSnoozeRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetSnoozeRequest>(create);
   static GetSnoozeRequest? _defaultInstance;
 
   ///  Required. The ID of the `Snooze` to retrieve. The format is:
@@ -320,7 +379,10 @@ class GetSnoozeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -355,41 +417,55 @@ class UpdateSnoozeRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateSnoozeRequest._() : super();
-  factory UpdateSnoozeRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateSnoozeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateSnoozeRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateSnoozeRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSnoozeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$203.Snooze>(1, _omitFieldNames ? '' : 'snooze', subBuilder: $203.Snooze.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateSnoozeRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$203.Snooze>(1, _omitFieldNames ? '' : 'snooze',
+        subBuilder: $203.Snooze.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateSnoozeRequest clone() => UpdateSnoozeRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateSnoozeRequest copyWith(void Function(UpdateSnoozeRequest) updates) => super.copyWith((message) => updates(message as UpdateSnoozeRequest)) as UpdateSnoozeRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateSnoozeRequest copyWith(void Function(UpdateSnoozeRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateSnoozeRequest))
+          as UpdateSnoozeRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateSnoozeRequest create() => UpdateSnoozeRequest._();
   UpdateSnoozeRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateSnoozeRequest> createRepeated() => $pb.PbList<UpdateSnoozeRequest>();
+  static $pb.PbList<UpdateSnoozeRequest> createRepeated() =>
+      $pb.PbList<UpdateSnoozeRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateSnoozeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateSnoozeRequest>(create);
+  static UpdateSnoozeRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateSnoozeRequest>(create);
   static UpdateSnoozeRequest? _defaultInstance;
 
   /// Required. The `Snooze` to update. Must have the name field present.
   @$pb.TagNumber(1)
   $203.Snooze get snooze => $_getN(0);
   @$pb.TagNumber(1)
-  set snooze($203.Snooze v) { setField(1, v); }
+  set snooze($203.Snooze v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSnooze() => $_has(0);
   @$pb.TagNumber(1)
@@ -422,7 +498,10 @@ class UpdateSnoozeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -431,6 +510,6 @@ class UpdateSnoozeRequest extends $pb.GeneratedMessage {
   $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

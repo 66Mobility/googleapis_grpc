@@ -32,34 +32,46 @@ class CreatePermissionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreatePermissionRequest._() : super();
-  factory CreatePermissionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreatePermissionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreatePermissionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreatePermissionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreatePermissionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreatePermissionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$18.Permission>(2, _omitFieldNames ? '' : 'permission', subBuilder: $18.Permission.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$18.Permission>(2, _omitFieldNames ? '' : 'permission',
+        subBuilder: $18.Permission.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreatePermissionRequest clone() => CreatePermissionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreatePermissionRequest copyWith(void Function(CreatePermissionRequest) updates) => super.copyWith((message) => updates(message as CreatePermissionRequest)) as CreatePermissionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreatePermissionRequest clone() =>
+      CreatePermissionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreatePermissionRequest copyWith(
+          void Function(CreatePermissionRequest) updates) =>
+      super.copyWith((message) => updates(message as CreatePermissionRequest))
+          as CreatePermissionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreatePermissionRequest create() => CreatePermissionRequest._();
   CreatePermissionRequest createEmptyInstance() => create();
-  static $pb.PbList<CreatePermissionRequest> createRepeated() => $pb.PbList<CreatePermissionRequest>();
+  static $pb.PbList<CreatePermissionRequest> createRepeated() =>
+      $pb.PbList<CreatePermissionRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreatePermissionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreatePermissionRequest>(create);
+  static CreatePermissionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreatePermissionRequest>(create);
   static CreatePermissionRequest? _defaultInstance;
 
   /// Required. The parent resource of the `Permission`.
@@ -69,7 +81,10 @@ class CreatePermissionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -79,7 +94,10 @@ class CreatePermissionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $18.Permission get permission => $_getN(1);
   @$pb.TagNumber(2)
-  set permission($18.Permission v) { setField(2, v); }
+  set permission($18.Permission v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPermission() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,33 +118,43 @@ class GetPermissionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetPermissionRequest._() : super();
-  factory GetPermissionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetPermissionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetPermissionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetPermissionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetPermissionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetPermissionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetPermissionRequest clone() => GetPermissionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetPermissionRequest copyWith(void Function(GetPermissionRequest) updates) => super.copyWith((message) => updates(message as GetPermissionRequest)) as GetPermissionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetPermissionRequest clone() =>
+      GetPermissionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetPermissionRequest copyWith(void Function(GetPermissionRequest) updates) =>
+      super.copyWith((message) => updates(message as GetPermissionRequest))
+          as GetPermissionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetPermissionRequest create() => GetPermissionRequest._();
   GetPermissionRequest createEmptyInstance() => create();
-  static $pb.PbList<GetPermissionRequest> createRepeated() => $pb.PbList<GetPermissionRequest>();
+  static $pb.PbList<GetPermissionRequest> createRepeated() =>
+      $pb.PbList<GetPermissionRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetPermissionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetPermissionRequest>(create);
+  static GetPermissionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetPermissionRequest>(create);
   static GetPermissionRequest? _defaultInstance;
 
   ///  Required. The resource name of the permission.
@@ -137,7 +165,10 @@ class GetPermissionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -164,35 +195,46 @@ class ListPermissionsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListPermissionsRequest._() : super();
-  factory ListPermissionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListPermissionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListPermissionsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListPermissionsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListPermissionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListPermissionsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListPermissionsRequest clone() => ListPermissionsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListPermissionsRequest copyWith(void Function(ListPermissionsRequest) updates) => super.copyWith((message) => updates(message as ListPermissionsRequest)) as ListPermissionsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListPermissionsRequest clone() =>
+      ListPermissionsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListPermissionsRequest copyWith(
+          void Function(ListPermissionsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListPermissionsRequest))
+          as ListPermissionsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListPermissionsRequest create() => ListPermissionsRequest._();
   ListPermissionsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListPermissionsRequest> createRepeated() => $pb.PbList<ListPermissionsRequest>();
+  static $pb.PbList<ListPermissionsRequest> createRepeated() =>
+      $pb.PbList<ListPermissionsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListPermissionsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListPermissionsRequest>(create);
+  static ListPermissionsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListPermissionsRequest>(create);
   static ListPermissionsRequest? _defaultInstance;
 
   /// Required. The parent resource of the permissions.
@@ -202,7 +244,10 @@ class ListPermissionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -217,7 +262,10 @@ class ListPermissionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -233,7 +281,10 @@ class ListPermissionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -257,34 +308,47 @@ class ListPermissionsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListPermissionsResponse._() : super();
-  factory ListPermissionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListPermissionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListPermissionsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListPermissionsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListPermissionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$18.Permission>(1, _omitFieldNames ? '' : 'permissions', $pb.PbFieldType.PM, subBuilder: $18.Permission.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListPermissionsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$18.Permission>(
+        1, _omitFieldNames ? '' : 'permissions', $pb.PbFieldType.PM,
+        subBuilder: $18.Permission.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListPermissionsResponse clone() => ListPermissionsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListPermissionsResponse copyWith(void Function(ListPermissionsResponse) updates) => super.copyWith((message) => updates(message as ListPermissionsResponse)) as ListPermissionsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListPermissionsResponse clone() =>
+      ListPermissionsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListPermissionsResponse copyWith(
+          void Function(ListPermissionsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListPermissionsResponse))
+          as ListPermissionsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListPermissionsResponse create() => ListPermissionsResponse._();
   ListPermissionsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListPermissionsResponse> createRepeated() => $pb.PbList<ListPermissionsResponse>();
+  static $pb.PbList<ListPermissionsResponse> createRepeated() =>
+      $pb.PbList<ListPermissionsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListPermissionsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListPermissionsResponse>(create);
+  static ListPermissionsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListPermissionsResponse>(create);
   static ListPermissionsResponse? _defaultInstance;
 
   /// Returned permissions.
@@ -297,7 +361,10 @@ class ListPermissionsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -320,34 +387,47 @@ class UpdatePermissionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdatePermissionRequest._() : super();
-  factory UpdatePermissionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdatePermissionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdatePermissionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdatePermissionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePermissionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$18.Permission>(1, _omitFieldNames ? '' : 'permission', subBuilder: $18.Permission.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdatePermissionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$18.Permission>(1, _omitFieldNames ? '' : 'permission',
+        subBuilder: $18.Permission.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdatePermissionRequest clone() => UpdatePermissionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdatePermissionRequest copyWith(void Function(UpdatePermissionRequest) updates) => super.copyWith((message) => updates(message as UpdatePermissionRequest)) as UpdatePermissionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdatePermissionRequest clone() =>
+      UpdatePermissionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdatePermissionRequest copyWith(
+          void Function(UpdatePermissionRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdatePermissionRequest))
+          as UpdatePermissionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdatePermissionRequest create() => UpdatePermissionRequest._();
   UpdatePermissionRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdatePermissionRequest> createRepeated() => $pb.PbList<UpdatePermissionRequest>();
+  static $pb.PbList<UpdatePermissionRequest> createRepeated() =>
+      $pb.PbList<UpdatePermissionRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdatePermissionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdatePermissionRequest>(create);
+  static UpdatePermissionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdatePermissionRequest>(create);
   static UpdatePermissionRequest? _defaultInstance;
 
   ///  Required. The permission to update.
@@ -356,7 +436,10 @@ class UpdatePermissionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $18.Permission get permission => $_getN(0);
   @$pb.TagNumber(1)
-  set permission($18.Permission v) { setField(1, v); }
+  set permission($18.Permission v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPermission() => $_has(0);
   @$pb.TagNumber(1)
@@ -369,7 +452,10 @@ class UpdatePermissionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -390,33 +476,44 @@ class DeletePermissionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeletePermissionRequest._() : super();
-  factory DeletePermissionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeletePermissionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeletePermissionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeletePermissionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeletePermissionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeletePermissionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeletePermissionRequest clone() => DeletePermissionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeletePermissionRequest copyWith(void Function(DeletePermissionRequest) updates) => super.copyWith((message) => updates(message as DeletePermissionRequest)) as DeletePermissionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeletePermissionRequest clone() =>
+      DeletePermissionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeletePermissionRequest copyWith(
+          void Function(DeletePermissionRequest) updates) =>
+      super.copyWith((message) => updates(message as DeletePermissionRequest))
+          as DeletePermissionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeletePermissionRequest create() => DeletePermissionRequest._();
   DeletePermissionRequest createEmptyInstance() => create();
-  static $pb.PbList<DeletePermissionRequest> createRepeated() => $pb.PbList<DeletePermissionRequest>();
+  static $pb.PbList<DeletePermissionRequest> createRepeated() =>
+      $pb.PbList<DeletePermissionRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeletePermissionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeletePermissionRequest>(create);
+  static DeletePermissionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeletePermissionRequest>(create);
   static DeletePermissionRequest? _defaultInstance;
 
   /// Required. The resource name of the permission.
@@ -426,7 +523,10 @@ class DeletePermissionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -449,34 +549,45 @@ class TransferOwnershipRequest extends $pb.GeneratedMessage {
     return $result;
   }
   TransferOwnershipRequest._() : super();
-  factory TransferOwnershipRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferOwnershipRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferOwnershipRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferOwnershipRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferOwnershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferOwnershipRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'emailAddress')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransferOwnershipRequest clone() => TransferOwnershipRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferOwnershipRequest copyWith(void Function(TransferOwnershipRequest) updates) => super.copyWith((message) => updates(message as TransferOwnershipRequest)) as TransferOwnershipRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransferOwnershipRequest clone() =>
+      TransferOwnershipRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferOwnershipRequest copyWith(
+          void Function(TransferOwnershipRequest) updates) =>
+      super.copyWith((message) => updates(message as TransferOwnershipRequest))
+          as TransferOwnershipRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransferOwnershipRequest create() => TransferOwnershipRequest._();
   TransferOwnershipRequest createEmptyInstance() => create();
-  static $pb.PbList<TransferOwnershipRequest> createRepeated() => $pb.PbList<TransferOwnershipRequest>();
+  static $pb.PbList<TransferOwnershipRequest> createRepeated() =>
+      $pb.PbList<TransferOwnershipRequest>();
   @$core.pragma('dart2js:noInline')
-  static TransferOwnershipRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferOwnershipRequest>(create);
+  static TransferOwnershipRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferOwnershipRequest>(create);
   static TransferOwnershipRequest? _defaultInstance;
 
   ///  Required. The resource name of the tuned model to transfer ownership.
@@ -485,7 +596,10 @@ class TransferOwnershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -496,7 +610,10 @@ class TransferOwnershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get emailAddress => $_getSZ(1);
   @$pb.TagNumber(2)
-  set emailAddress($core.String v) { $_setString(1, v); }
+  set emailAddress($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEmailAddress() => $_has(1);
   @$pb.TagNumber(2)
@@ -507,35 +624,46 @@ class TransferOwnershipRequest extends $pb.GeneratedMessage {
 class TransferOwnershipResponse extends $pb.GeneratedMessage {
   factory TransferOwnershipResponse() => create();
   TransferOwnershipResponse._() : super();
-  factory TransferOwnershipResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferOwnershipResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferOwnershipResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferOwnershipResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferOwnershipResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferOwnershipResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransferOwnershipResponse clone() => TransferOwnershipResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferOwnershipResponse copyWith(void Function(TransferOwnershipResponse) updates) => super.copyWith((message) => updates(message as TransferOwnershipResponse)) as TransferOwnershipResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransferOwnershipResponse clone() =>
+      TransferOwnershipResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferOwnershipResponse copyWith(
+          void Function(TransferOwnershipResponse) updates) =>
+      super.copyWith((message) => updates(message as TransferOwnershipResponse))
+          as TransferOwnershipResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransferOwnershipResponse create() => TransferOwnershipResponse._();
   TransferOwnershipResponse createEmptyInstance() => create();
-  static $pb.PbList<TransferOwnershipResponse> createRepeated() => $pb.PbList<TransferOwnershipResponse>();
+  static $pb.PbList<TransferOwnershipResponse> createRepeated() =>
+      $pb.PbList<TransferOwnershipResponse>();
   @$core.pragma('dart2js:noInline')
-  static TransferOwnershipResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferOwnershipResponse>(create);
+  static TransferOwnershipResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferOwnershipResponse>(create);
   static TransferOwnershipResponse? _defaultInstance;
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

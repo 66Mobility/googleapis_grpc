@@ -17,8 +17,24 @@ import 'dart:typed_data' as $typed_data;
 const Files$json = {
   '1': 'Files',
   '2': [
-    {'1': 'config_files', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.ConfigFiles', '9': 0, '10': 'configFiles'},
-    {'1': 'data_files', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.DataFiles', '9': 0, '10': 'dataFiles'},
+    {
+      '1': 'config_files',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ConfigFiles',
+      '9': 0,
+      '10': 'configFiles'
+    },
+    {
+      '1': 'data_files',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.DataFiles',
+      '9': 0,
+      '10': 'dataFiles'
+    },
   ],
   '8': [
     {'1': 'file_type'},
@@ -30,4 +46,3 @@ final $typed_data.Uint8List filesDescriptor = $convert.base64Decode(
     'CgVGaWxlcxJHCgxjb25maWdfZmlsZXMYASABKAsyIi5nb29nbGUuYWN0aW9ucy5zZGsudjIuQ2'
     '9uZmlnRmlsZXNIAFILY29uZmlnRmlsZXMSQQoKZGF0YV9maWxlcxgCIAEoCzIgLmdvb2dsZS5h'
     'Y3Rpb25zLnNkay52Mi5EYXRhRmlsZXNIAFIJZGF0YUZpbGVzQgsKCWZpbGVfdHlwZQ==');
-

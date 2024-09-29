@@ -18,10 +18,7 @@ import '../../../../protobuf/field_mask.pb.dart' as $333;
 import '../../../../protobuf/timestamp.pb.dart' as $302;
 import 'backup.pb.dart' as $245;
 
-enum BackupScheduleSpec_ScheduleSpec {
-  cronSpec, 
-  notSet
-}
+enum BackupScheduleSpec_ScheduleSpec { cronSpec, notSet }
 
 /// Defines specifications of the backup schedule.
 class BackupScheduleSpec extends $pb.GeneratedMessage {
@@ -35,48 +32,63 @@ class BackupScheduleSpec extends $pb.GeneratedMessage {
     return $result;
   }
   BackupScheduleSpec._() : super();
-  factory BackupScheduleSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BackupScheduleSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BackupScheduleSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BackupScheduleSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, BackupScheduleSpec_ScheduleSpec> _BackupScheduleSpec_ScheduleSpecByTag = {
-    1 : BackupScheduleSpec_ScheduleSpec.cronSpec,
-    0 : BackupScheduleSpec_ScheduleSpec.notSet
+  static const $core.Map<$core.int, BackupScheduleSpec_ScheduleSpec>
+      _BackupScheduleSpec_ScheduleSpecByTag = {
+    1: BackupScheduleSpec_ScheduleSpec.cronSpec,
+    0: BackupScheduleSpec_ScheduleSpec.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupScheduleSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BackupScheduleSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<CrontabSpec>(1, _omitFieldNames ? '' : 'cronSpec', subBuilder: CrontabSpec.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<CrontabSpec>(1, _omitFieldNames ? '' : 'cronSpec',
+        subBuilder: CrontabSpec.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BackupScheduleSpec clone() => BackupScheduleSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BackupScheduleSpec copyWith(void Function(BackupScheduleSpec) updates) => super.copyWith((message) => updates(message as BackupScheduleSpec)) as BackupScheduleSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BackupScheduleSpec copyWith(void Function(BackupScheduleSpec) updates) =>
+      super.copyWith((message) => updates(message as BackupScheduleSpec))
+          as BackupScheduleSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupScheduleSpec create() => BackupScheduleSpec._();
   BackupScheduleSpec createEmptyInstance() => create();
-  static $pb.PbList<BackupScheduleSpec> createRepeated() => $pb.PbList<BackupScheduleSpec>();
+  static $pb.PbList<BackupScheduleSpec> createRepeated() =>
+      $pb.PbList<BackupScheduleSpec>();
   @$core.pragma('dart2js:noInline')
-  static BackupScheduleSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BackupScheduleSpec>(create);
+  static BackupScheduleSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BackupScheduleSpec>(create);
   static BackupScheduleSpec? _defaultInstance;
 
-  BackupScheduleSpec_ScheduleSpec whichScheduleSpec() => _BackupScheduleSpec_ScheduleSpecByTag[$_whichOneof(0)]!;
+  BackupScheduleSpec_ScheduleSpec whichScheduleSpec() =>
+      _BackupScheduleSpec_ScheduleSpecByTag[$_whichOneof(0)]!;
   void clearScheduleSpec() => clearField($_whichOneof(0));
 
   /// Cron style schedule specification.
   @$pb.TagNumber(1)
   CrontabSpec get cronSpec => $_getN(0);
   @$pb.TagNumber(1)
-  set cronSpec(CrontabSpec v) { setField(1, v); }
+  set cronSpec(CrontabSpec v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCronSpec() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,8 +98,8 @@ class BackupScheduleSpec extends $pb.GeneratedMessage {
 }
 
 enum BackupSchedule_BackupTypeSpec {
-  fullBackupSpec, 
-  incrementalBackupSpec, 
+  fullBackupSpec,
+  incrementalBackupSpec,
   notSet
 }
 
@@ -129,48 +141,67 @@ class BackupSchedule extends $pb.GeneratedMessage {
     return $result;
   }
   BackupSchedule._() : super();
-  factory BackupSchedule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BackupSchedule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BackupSchedule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BackupSchedule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, BackupSchedule_BackupTypeSpec> _BackupSchedule_BackupTypeSpecByTag = {
-    7 : BackupSchedule_BackupTypeSpec.fullBackupSpec,
-    8 : BackupSchedule_BackupTypeSpec.incrementalBackupSpec,
-    0 : BackupSchedule_BackupTypeSpec.notSet
+  static const $core.Map<$core.int, BackupSchedule_BackupTypeSpec>
+      _BackupSchedule_BackupTypeSpecByTag = {
+    7: BackupSchedule_BackupTypeSpec.fullBackupSpec,
+    8: BackupSchedule_BackupTypeSpec.incrementalBackupSpec,
+    0: BackupSchedule_BackupTypeSpec.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupSchedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BackupSchedule',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..oo(0, [7, 8])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'retentionDuration', subBuilder: $264.Duration.create)
-    ..aOM<$245.CreateBackupEncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $245.CreateBackupEncryptionConfig.create)
-    ..aOM<BackupScheduleSpec>(6, _omitFieldNames ? '' : 'spec', subBuilder: BackupScheduleSpec.create)
-    ..aOM<$245.FullBackupSpec>(7, _omitFieldNames ? '' : 'fullBackupSpec', subBuilder: $245.FullBackupSpec.create)
-    ..aOM<$245.IncrementalBackupSpec>(8, _omitFieldNames ? '' : 'incrementalBackupSpec', subBuilder: $245.IncrementalBackupSpec.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'retentionDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$245.CreateBackupEncryptionConfig>(
+        4, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: $245.CreateBackupEncryptionConfig.create)
+    ..aOM<BackupScheduleSpec>(6, _omitFieldNames ? '' : 'spec',
+        subBuilder: BackupScheduleSpec.create)
+    ..aOM<$245.FullBackupSpec>(7, _omitFieldNames ? '' : 'fullBackupSpec',
+        subBuilder: $245.FullBackupSpec.create)
+    ..aOM<$245.IncrementalBackupSpec>(
+        8, _omitFieldNames ? '' : 'incrementalBackupSpec',
+        subBuilder: $245.IncrementalBackupSpec.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BackupSchedule clone() => BackupSchedule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BackupSchedule copyWith(void Function(BackupSchedule) updates) => super.copyWith((message) => updates(message as BackupSchedule)) as BackupSchedule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BackupSchedule copyWith(void Function(BackupSchedule) updates) =>
+      super.copyWith((message) => updates(message as BackupSchedule))
+          as BackupSchedule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupSchedule create() => BackupSchedule._();
   BackupSchedule createEmptyInstance() => create();
-  static $pb.PbList<BackupSchedule> createRepeated() => $pb.PbList<BackupSchedule>();
+  static $pb.PbList<BackupSchedule> createRepeated() =>
+      $pb.PbList<BackupSchedule>();
   @$core.pragma('dart2js:noInline')
-  static BackupSchedule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BackupSchedule>(create);
+  static BackupSchedule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BackupSchedule>(create);
   static BackupSchedule? _defaultInstance;
 
-  BackupSchedule_BackupTypeSpec whichBackupTypeSpec() => _BackupSchedule_BackupTypeSpecByTag[$_whichOneof(0)]!;
+  BackupSchedule_BackupTypeSpec whichBackupTypeSpec() =>
+      _BackupSchedule_BackupTypeSpecByTag[$_whichOneof(0)]!;
   void clearBackupTypeSpec() => clearField($_whichOneof(0));
 
   /// Identifier. Output only for the
@@ -185,7 +216,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -197,7 +231,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get retentionDuration => $_getN(1);
   @$pb.TagNumber(3)
-  set retentionDuration($264.Duration v) { setField(3, v); }
+  set retentionDuration($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRetentionDuration() => $_has(1);
   @$pb.TagNumber(3)
@@ -211,7 +248,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $245.CreateBackupEncryptionConfig get encryptionConfig => $_getN(2);
   @$pb.TagNumber(4)
-  set encryptionConfig($245.CreateBackupEncryptionConfig v) { setField(4, v); }
+  set encryptionConfig($245.CreateBackupEncryptionConfig v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEncryptionConfig() => $_has(2);
   @$pb.TagNumber(4)
@@ -224,7 +264,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   BackupScheduleSpec get spec => $_getN(3);
   @$pb.TagNumber(6)
-  set spec(BackupScheduleSpec v) { setField(6, v); }
+  set spec(BackupScheduleSpec v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSpec() => $_has(3);
   @$pb.TagNumber(6)
@@ -236,7 +279,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $245.FullBackupSpec get fullBackupSpec => $_getN(4);
   @$pb.TagNumber(7)
-  set fullBackupSpec($245.FullBackupSpec v) { setField(7, v); }
+  set fullBackupSpec($245.FullBackupSpec v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasFullBackupSpec() => $_has(4);
   @$pb.TagNumber(7)
@@ -248,7 +294,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $245.IncrementalBackupSpec get incrementalBackupSpec => $_getN(5);
   @$pb.TagNumber(8)
-  set incrementalBackupSpec($245.IncrementalBackupSpec v) { setField(8, v); }
+  set incrementalBackupSpec($245.IncrementalBackupSpec v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasIncrementalBackupSpec() => $_has(5);
   @$pb.TagNumber(8)
@@ -262,7 +311,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) { setField(9, v); }
+  set updateTime($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(9)
@@ -292,26 +344,34 @@ class CrontabSpec extends $pb.GeneratedMessage {
     return $result;
   }
   CrontabSpec._() : super();
-  factory CrontabSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrontabSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrontabSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrontabSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrontabSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrontabSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOS(2, _omitFieldNames ? '' : 'timeZone')
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'creationWindow', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'creationWindow',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CrontabSpec clone() => CrontabSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrontabSpec copyWith(void Function(CrontabSpec) updates) => super.copyWith((message) => updates(message as CrontabSpec)) as CrontabSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrontabSpec copyWith(void Function(CrontabSpec) updates) =>
+      super.copyWith((message) => updates(message as CrontabSpec))
+          as CrontabSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -320,7 +380,8 @@ class CrontabSpec extends $pb.GeneratedMessage {
   CrontabSpec createEmptyInstance() => create();
   static $pb.PbList<CrontabSpec> createRepeated() => $pb.PbList<CrontabSpec>();
   @$core.pragma('dart2js:noInline')
-  static CrontabSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrontabSpec>(create);
+  static CrontabSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrontabSpec>(create);
   static CrontabSpec? _defaultInstance;
 
   ///  Required. Textual representation of the crontab. User can customize the
@@ -338,7 +399,10 @@ class CrontabSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -349,7 +413,10 @@ class CrontabSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get timeZone => $_getSZ(1);
   @$pb.TagNumber(2)
-  set timeZone($core.String v) { $_setString(1, v); }
+  set timeZone($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTimeZone() => $_has(1);
   @$pb.TagNumber(2)
@@ -365,7 +432,10 @@ class CrontabSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get creationWindow => $_getN(2);
   @$pb.TagNumber(3)
-  set creationWindow($264.Duration v) { setField(3, v); }
+  set creationWindow($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCreationWindow() => $_has(2);
   @$pb.TagNumber(3)
@@ -395,42 +465,59 @@ class CreateBackupScheduleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateBackupScheduleRequest._() : super();
-  factory CreateBackupScheduleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateBackupScheduleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateBackupScheduleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateBackupScheduleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateBackupScheduleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateBackupScheduleRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'backupScheduleId')
-    ..aOM<BackupSchedule>(3, _omitFieldNames ? '' : 'backupSchedule', subBuilder: BackupSchedule.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<BackupSchedule>(3, _omitFieldNames ? '' : 'backupSchedule',
+        subBuilder: BackupSchedule.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateBackupScheduleRequest clone() => CreateBackupScheduleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateBackupScheduleRequest copyWith(void Function(CreateBackupScheduleRequest) updates) => super.copyWith((message) => updates(message as CreateBackupScheduleRequest)) as CreateBackupScheduleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateBackupScheduleRequest clone() =>
+      CreateBackupScheduleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateBackupScheduleRequest copyWith(
+          void Function(CreateBackupScheduleRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateBackupScheduleRequest))
+          as CreateBackupScheduleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateBackupScheduleRequest create() => CreateBackupScheduleRequest._();
+  static CreateBackupScheduleRequest create() =>
+      CreateBackupScheduleRequest._();
   CreateBackupScheduleRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateBackupScheduleRequest> createRepeated() => $pb.PbList<CreateBackupScheduleRequest>();
+  static $pb.PbList<CreateBackupScheduleRequest> createRepeated() =>
+      $pb.PbList<CreateBackupScheduleRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateBackupScheduleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateBackupScheduleRequest>(create);
+  static CreateBackupScheduleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateBackupScheduleRequest>(create);
   static CreateBackupScheduleRequest? _defaultInstance;
 
   /// Required. The name of the database that this backup schedule applies to.
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -442,7 +529,10 @@ class CreateBackupScheduleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get backupScheduleId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set backupScheduleId($core.String v) { $_setString(1, v); }
+  set backupScheduleId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBackupScheduleId() => $_has(1);
   @$pb.TagNumber(2)
@@ -452,7 +542,10 @@ class CreateBackupScheduleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   BackupSchedule get backupSchedule => $_getN(2);
   @$pb.TagNumber(3)
-  set backupSchedule(BackupSchedule v) { setField(3, v); }
+  set backupSchedule(BackupSchedule v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBackupSchedule() => $_has(2);
   @$pb.TagNumber(3)
@@ -474,33 +567,44 @@ class GetBackupScheduleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetBackupScheduleRequest._() : super();
-  factory GetBackupScheduleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetBackupScheduleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetBackupScheduleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetBackupScheduleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBackupScheduleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBackupScheduleRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetBackupScheduleRequest clone() => GetBackupScheduleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetBackupScheduleRequest copyWith(void Function(GetBackupScheduleRequest) updates) => super.copyWith((message) => updates(message as GetBackupScheduleRequest)) as GetBackupScheduleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetBackupScheduleRequest clone() =>
+      GetBackupScheduleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetBackupScheduleRequest copyWith(
+          void Function(GetBackupScheduleRequest) updates) =>
+      super.copyWith((message) => updates(message as GetBackupScheduleRequest))
+          as GetBackupScheduleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetBackupScheduleRequest create() => GetBackupScheduleRequest._();
   GetBackupScheduleRequest createEmptyInstance() => create();
-  static $pb.PbList<GetBackupScheduleRequest> createRepeated() => $pb.PbList<GetBackupScheduleRequest>();
+  static $pb.PbList<GetBackupScheduleRequest> createRepeated() =>
+      $pb.PbList<GetBackupScheduleRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetBackupScheduleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBackupScheduleRequest>(create);
+  static GetBackupScheduleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBackupScheduleRequest>(create);
   static GetBackupScheduleRequest? _defaultInstance;
 
   /// Required. The name of the schedule to retrieve.
@@ -509,7 +613,10 @@ class GetBackupScheduleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -529,33 +636,46 @@ class DeleteBackupScheduleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteBackupScheduleRequest._() : super();
-  factory DeleteBackupScheduleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteBackupScheduleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteBackupScheduleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteBackupScheduleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteBackupScheduleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteBackupScheduleRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteBackupScheduleRequest clone() => DeleteBackupScheduleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteBackupScheduleRequest copyWith(void Function(DeleteBackupScheduleRequest) updates) => super.copyWith((message) => updates(message as DeleteBackupScheduleRequest)) as DeleteBackupScheduleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteBackupScheduleRequest clone() =>
+      DeleteBackupScheduleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteBackupScheduleRequest copyWith(
+          void Function(DeleteBackupScheduleRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as DeleteBackupScheduleRequest))
+          as DeleteBackupScheduleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteBackupScheduleRequest create() => DeleteBackupScheduleRequest._();
+  static DeleteBackupScheduleRequest create() =>
+      DeleteBackupScheduleRequest._();
   DeleteBackupScheduleRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteBackupScheduleRequest> createRepeated() => $pb.PbList<DeleteBackupScheduleRequest>();
+  static $pb.PbList<DeleteBackupScheduleRequest> createRepeated() =>
+      $pb.PbList<DeleteBackupScheduleRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteBackupScheduleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteBackupScheduleRequest>(create);
+  static DeleteBackupScheduleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteBackupScheduleRequest>(create);
   static DeleteBackupScheduleRequest? _defaultInstance;
 
   /// Required. The name of the schedule to delete.
@@ -564,7 +684,10 @@ class DeleteBackupScheduleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -592,35 +715,47 @@ class ListBackupSchedulesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListBackupSchedulesRequest._() : super();
-  factory ListBackupSchedulesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBackupSchedulesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBackupSchedulesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBackupSchedulesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBackupSchedulesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBackupSchedulesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListBackupSchedulesRequest clone() => ListBackupSchedulesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBackupSchedulesRequest copyWith(void Function(ListBackupSchedulesRequest) updates) => super.copyWith((message) => updates(message as ListBackupSchedulesRequest)) as ListBackupSchedulesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListBackupSchedulesRequest clone() =>
+      ListBackupSchedulesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBackupSchedulesRequest copyWith(
+          void Function(ListBackupSchedulesRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListBackupSchedulesRequest))
+          as ListBackupSchedulesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListBackupSchedulesRequest create() => ListBackupSchedulesRequest._();
   ListBackupSchedulesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListBackupSchedulesRequest> createRepeated() => $pb.PbList<ListBackupSchedulesRequest>();
+  static $pb.PbList<ListBackupSchedulesRequest> createRepeated() =>
+      $pb.PbList<ListBackupSchedulesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListBackupSchedulesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBackupSchedulesRequest>(create);
+  static ListBackupSchedulesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBackupSchedulesRequest>(create);
   static ListBackupSchedulesRequest? _defaultInstance;
 
   /// Required. Database is the parent resource whose backup schedules should be
@@ -629,7 +764,10 @@ class ListBackupSchedulesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -640,7 +778,10 @@ class ListBackupSchedulesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -654,7 +795,10 @@ class ListBackupSchedulesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(4)
@@ -678,34 +822,49 @@ class ListBackupSchedulesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListBackupSchedulesResponse._() : super();
-  factory ListBackupSchedulesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBackupSchedulesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBackupSchedulesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBackupSchedulesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBackupSchedulesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..pc<BackupSchedule>(1, _omitFieldNames ? '' : 'backupSchedules', $pb.PbFieldType.PM, subBuilder: BackupSchedule.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBackupSchedulesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..pc<BackupSchedule>(
+        1, _omitFieldNames ? '' : 'backupSchedules', $pb.PbFieldType.PM,
+        subBuilder: BackupSchedule.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListBackupSchedulesResponse clone() => ListBackupSchedulesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBackupSchedulesResponse copyWith(void Function(ListBackupSchedulesResponse) updates) => super.copyWith((message) => updates(message as ListBackupSchedulesResponse)) as ListBackupSchedulesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListBackupSchedulesResponse clone() =>
+      ListBackupSchedulesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBackupSchedulesResponse copyWith(
+          void Function(ListBackupSchedulesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListBackupSchedulesResponse))
+          as ListBackupSchedulesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListBackupSchedulesResponse create() => ListBackupSchedulesResponse._();
+  static ListBackupSchedulesResponse create() =>
+      ListBackupSchedulesResponse._();
   ListBackupSchedulesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListBackupSchedulesResponse> createRepeated() => $pb.PbList<ListBackupSchedulesResponse>();
+  static $pb.PbList<ListBackupSchedulesResponse> createRepeated() =>
+      $pb.PbList<ListBackupSchedulesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListBackupSchedulesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBackupSchedulesResponse>(create);
+  static ListBackupSchedulesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBackupSchedulesResponse>(create);
   static ListBackupSchedulesResponse? _defaultInstance;
 
   /// The list of backup schedules for a database.
@@ -718,7 +877,10 @@ class ListBackupSchedulesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -742,34 +904,49 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateBackupScheduleRequest._() : super();
-  factory UpdateBackupScheduleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateBackupScheduleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateBackupScheduleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateBackupScheduleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBackupScheduleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..aOM<BackupSchedule>(1, _omitFieldNames ? '' : 'backupSchedule', subBuilder: BackupSchedule.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateBackupScheduleRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..aOM<BackupSchedule>(1, _omitFieldNames ? '' : 'backupSchedule',
+        subBuilder: BackupSchedule.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateBackupScheduleRequest clone() => UpdateBackupScheduleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateBackupScheduleRequest copyWith(void Function(UpdateBackupScheduleRequest) updates) => super.copyWith((message) => updates(message as UpdateBackupScheduleRequest)) as UpdateBackupScheduleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateBackupScheduleRequest clone() =>
+      UpdateBackupScheduleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateBackupScheduleRequest copyWith(
+          void Function(UpdateBackupScheduleRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateBackupScheduleRequest))
+          as UpdateBackupScheduleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateBackupScheduleRequest create() => UpdateBackupScheduleRequest._();
+  static UpdateBackupScheduleRequest create() =>
+      UpdateBackupScheduleRequest._();
   UpdateBackupScheduleRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateBackupScheduleRequest> createRepeated() => $pb.PbList<UpdateBackupScheduleRequest>();
+  static $pb.PbList<UpdateBackupScheduleRequest> createRepeated() =>
+      $pb.PbList<UpdateBackupScheduleRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateBackupScheduleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateBackupScheduleRequest>(create);
+  static UpdateBackupScheduleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateBackupScheduleRequest>(create);
   static UpdateBackupScheduleRequest? _defaultInstance;
 
   /// Required. The backup schedule to update. `backup_schedule.name`, and the
@@ -778,7 +955,10 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   BackupSchedule get backupSchedule => $_getN(0);
   @$pb.TagNumber(1)
-  set backupSchedule(BackupSchedule v) { setField(1, v); }
+  set backupSchedule(BackupSchedule v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBackupSchedule() => $_has(0);
   @$pb.TagNumber(1)
@@ -794,7 +974,10 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -803,6 +986,6 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
   $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

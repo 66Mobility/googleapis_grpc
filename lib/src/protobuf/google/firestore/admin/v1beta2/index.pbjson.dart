@@ -18,9 +18,30 @@ const Index$json = {
   '1': 'Index',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'query_scope', '3': 2, '4': 1, '5': 14, '6': '.google.firestore.admin.v1beta2.Index.QueryScope', '10': 'queryScope'},
-    {'1': 'fields', '3': 3, '4': 3, '5': 11, '6': '.google.firestore.admin.v1beta2.Index.IndexField', '10': 'fields'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.firestore.admin.v1beta2.Index.State', '10': 'state'},
+    {
+      '1': 'query_scope',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1beta2.Index.QueryScope',
+      '10': 'queryScope'
+    },
+    {
+      '1': 'fields',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1beta2.Index.IndexField',
+      '10': 'fields'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1beta2.Index.State',
+      '10': 'state'
+    },
   ],
   '3': [Index_IndexField$json],
   '4': [Index_QueryScope$json, Index_State$json],
@@ -31,8 +52,24 @@ const Index_IndexField$json = {
   '1': 'IndexField',
   '2': [
     {'1': 'field_path', '3': 1, '4': 1, '5': 9, '10': 'fieldPath'},
-    {'1': 'order', '3': 2, '4': 1, '5': 14, '6': '.google.firestore.admin.v1beta2.Index.IndexField.Order', '9': 0, '10': 'order'},
-    {'1': 'array_config', '3': 3, '4': 1, '5': 14, '6': '.google.firestore.admin.v1beta2.Index.IndexField.ArrayConfig', '9': 0, '10': 'arrayConfig'},
+    {
+      '1': 'order',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1beta2.Index.IndexField.Order',
+      '9': 0,
+      '10': 'order'
+    },
+    {
+      '1': 'array_config',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1beta2.Index.IndexField.ArrayConfig',
+      '9': 0,
+      '10': 'arrayConfig'
+    },
   ],
   '4': [Index_IndexField_Order$json, Index_IndexField_ArrayConfig$json],
   '8': [
@@ -96,4 +133,3 @@ final $typed_data.Uint8List indexDescriptor = $convert.base64Decode(
     'RlIk8KClF1ZXJ5U2NvcGUSGwoXUVVFUllfU0NPUEVfVU5TUEVDSUZJRUQQABIOCgpDT0xMRUNU'
     'SU9OEAESFAoQQ09MTEVDVElPTl9HUk9VUBACIkkKBVN0YXRlEhUKEVNUQVRFX1VOU1BFQ0lGSU'
     'VEEAASDAoIQ1JFQVRJTkcQARIJCgVSRUFEWRACEhAKDE5FRURTX1JFUEFJUhAD');
-

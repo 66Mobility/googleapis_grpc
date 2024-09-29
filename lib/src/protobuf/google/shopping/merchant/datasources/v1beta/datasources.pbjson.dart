@@ -17,16 +17,88 @@ import 'dart:typed_data' as $typed_data;
 const DataSource$json = {
   '1': 'DataSource',
   '2': [
-    {'1': 'primary_product_data_source', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.PrimaryProductDataSource', '8': {}, '9': 0, '10': 'primaryProductDataSource'},
-    {'1': 'supplemental_product_data_source', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.SupplementalProductDataSource', '8': {}, '9': 0, '10': 'supplementalProductDataSource'},
-    {'1': 'local_inventory_data_source', '3': 6, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.LocalInventoryDataSource', '8': {}, '9': 0, '10': 'localInventoryDataSource'},
-    {'1': 'regional_inventory_data_source', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.RegionalInventoryDataSource', '8': {}, '9': 0, '10': 'regionalInventoryDataSource'},
-    {'1': 'promotion_data_source', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.PromotionDataSource', '8': {}, '9': 0, '10': 'promotionDataSource'},
+    {
+      '1': 'primary_product_data_source',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.PrimaryProductDataSource',
+      '8': {},
+      '9': 0,
+      '10': 'primaryProductDataSource'
+    },
+    {
+      '1': 'supplemental_product_data_source',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.SupplementalProductDataSource',
+      '8': {},
+      '9': 0,
+      '10': 'supplementalProductDataSource'
+    },
+    {
+      '1': 'local_inventory_data_source',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.LocalInventoryDataSource',
+      '8': {},
+      '9': 0,
+      '10': 'localInventoryDataSource'
+    },
+    {
+      '1': 'regional_inventory_data_source',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.RegionalInventoryDataSource',
+      '8': {},
+      '9': 0,
+      '10': 'regionalInventoryDataSource'
+    },
+    {
+      '1': 'promotion_data_source',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.PromotionDataSource',
+      '8': {},
+      '9': 0,
+      '10': 'promotionDataSource'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'data_source_id', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'dataSourceId'},
+    {
+      '1': 'data_source_id',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'dataSourceId'
+    },
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'input', '3': 10, '4': 1, '5': 14, '6': '.google.shopping.merchant.datasources.v1beta.DataSource.Input', '8': {}, '10': 'input'},
-    {'1': 'file_input', '3': 11, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.FileInput', '8': {}, '10': 'fileInput'},
+    {
+      '1': 'input',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.datasources.v1beta.DataSource.Input',
+      '8': {},
+      '10': 'input'
+    },
+    {
+      '1': 'file_input',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.FileInput',
+      '8': {},
+      '10': 'fileInput'
+    },
   ],
   '4': [DataSource_Input$json],
   '7': {},
@@ -105,7 +177,14 @@ final $typed_data.Uint8List listDataSourcesRequestDescriptor = $convert.base64De
 const ListDataSourcesResponse$json = {
   '1': 'ListDataSourcesResponse',
   '2': [
-    {'1': 'data_sources', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.DataSource', '10': 'dataSources'},
+    {
+      '1': 'data_sources',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.DataSource',
+      '10': 'dataSources'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -121,7 +200,15 @@ const CreateDataSourceRequest$json = {
   '1': 'CreateDataSourceRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'data_source', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.DataSource', '8': {}, '10': 'dataSource'},
+    {
+      '1': 'data_source',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.DataSource',
+      '8': {},
+      '10': 'dataSource'
+    },
   ],
 };
 
@@ -136,8 +223,24 @@ final $typed_data.Uint8List createDataSourceRequestDescriptor = $convert.base64D
 const UpdateDataSourceRequest$json = {
   '1': 'UpdateDataSourceRequest',
   '2': [
-    {'1': 'data_source', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.DataSource', '8': {}, '10': 'dataSource'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'data_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.DataSource',
+      '8': {},
+      '10': 'dataSource'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -157,9 +260,10 @@ const FetchDataSourceRequest$json = {
 };
 
 /// Descriptor for `FetchDataSourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List fetchDataSourceRequestDescriptor = $convert.base64Decode(
-    'ChZGZXRjaERhdGFTb3VyY2VSZXF1ZXN0EkEKBG5hbWUYASABKAlCLeBBAvpBJwolbWVyY2hhbn'
-    'RhcGkuZ29vZ2xlYXBpcy5jb20vRGF0YVNvdXJjZVIEbmFtZQ==');
+final $typed_data.Uint8List fetchDataSourceRequestDescriptor =
+    $convert.base64Decode(
+        'ChZGZXRjaERhdGFTb3VyY2VSZXF1ZXN0EkEKBG5hbWUYASABKAlCLeBBAvpBJwolbWVyY2hhbn'
+        'RhcGkuZ29vZ2xlYXBpcy5jb20vRGF0YVNvdXJjZVIEbmFtZQ==');
 
 @$core.Deprecated('Use deleteDataSourceRequestDescriptor instead')
 const DeleteDataSourceRequest$json = {
@@ -170,7 +274,7 @@ const DeleteDataSourceRequest$json = {
 };
 
 /// Descriptor for `DeleteDataSourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteDataSourceRequestDescriptor = $convert.base64Decode(
-    'ChdEZWxldGVEYXRhU291cmNlUmVxdWVzdBJBCgRuYW1lGAEgASgJQi3gQQL6QScKJW1lcmNoYW'
-    '50YXBpLmdvb2dsZWFwaXMuY29tL0RhdGFTb3VyY2VSBG5hbWU=');
-
+final $typed_data.Uint8List deleteDataSourceRequestDescriptor =
+    $convert.base64Decode(
+        'ChdEZWxldGVEYXRhU291cmNlUmVxdWVzdBJBCgRuYW1lGAEgASgJQi3gQQL6QScKJW1lcmNoYW'
+        '50YXBpLmdvb2dsZWFwaXMuY29tL0RhdGFTb3VyY2VSBG5hbWU=');

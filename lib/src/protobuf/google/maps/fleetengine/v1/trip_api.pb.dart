@@ -48,43 +48,57 @@ class CreateTripRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateTripRequest._() : super();
-  factory CreateTripRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateTripRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateTripRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateTripRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTripRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateTripRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
-    ..aOM<$165.Trip>(4, _omitFieldNames ? '' : 'trip', subBuilder: $165.Trip.create)
+    ..aOM<$165.Trip>(4, _omitFieldNames ? '' : 'trip',
+        subBuilder: $165.Trip.create)
     ..aOS(5, _omitFieldNames ? '' : 'tripId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateTripRequest clone() => CreateTripRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateTripRequest copyWith(void Function(CreateTripRequest) updates) => super.copyWith((message) => updates(message as CreateTripRequest)) as CreateTripRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateTripRequest copyWith(void Function(CreateTripRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateTripRequest))
+          as CreateTripRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateTripRequest create() => CreateTripRequest._();
   CreateTripRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateTripRequest> createRepeated() => $pb.PbList<CreateTripRequest>();
+  static $pb.PbList<CreateTripRequest> createRepeated() =>
+      $pb.PbList<CreateTripRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateTripRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateTripRequest>(create);
+  static CreateTripRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateTripRequest>(create);
   static CreateTripRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -99,7 +113,10 @@ class CreateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -143,7 +160,10 @@ class CreateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $165.Trip get trip => $_getN(2);
   @$pb.TagNumber(4)
-  set trip($165.Trip v) { setField(4, v); }
+  set trip($165.Trip v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTrip() => $_has(2);
   @$pb.TagNumber(4)
@@ -163,7 +183,10 @@ class CreateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get tripId => $_getSZ(3);
   @$pb.TagNumber(5)
-  set tripId($core.String v) { $_setString(3, v); }
+  set tripId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTripId() => $_has(3);
   @$pb.TagNumber(5)
@@ -199,7 +222,8 @@ class GetTripRequest extends $pb.GeneratedMessage {
       $result.routeFormatType = routeFormatType;
     }
     if (currentRouteSegmentTrafficVersion != null) {
-      $result.currentRouteSegmentTrafficVersion = currentRouteSegmentTrafficVersion;
+      $result.currentRouteSegmentTrafficVersion =
+          currentRouteSegmentTrafficVersion;
     }
     if (remainingWaypointsRouteVersion != null) {
       $result.remainingWaypointsRouteVersion = remainingWaypointsRouteVersion;
@@ -210,47 +234,74 @@ class GetTripRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetTripRequest._() : super();
-  factory GetTripRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetTripRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetTripRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetTripRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetTripRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetTripRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'currentRouteSegmentVersion', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'remainingWaypointsVersion', subBuilder: $302.Timestamp.create)
-    ..e<$457.PolylineFormatType>(8, _omitFieldNames ? '' : 'routeFormatType', $pb.PbFieldType.OE, defaultOrMaker: $457.PolylineFormatType.UNKNOWN_FORMAT_TYPE, valueOf: $457.PolylineFormatType.valueOf, enumValues: $457.PolylineFormatType.values)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'currentRouteSegmentTrafficVersion', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'remainingWaypointsRouteVersion', subBuilder: $302.Timestamp.create)
-    ..e<$165.TripView>(11, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $165.TripView.TRIP_VIEW_UNSPECIFIED, valueOf: $165.TripView.valueOf, enumValues: $165.TripView.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(
+        6, _omitFieldNames ? '' : 'currentRouteSegmentVersion',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'remainingWaypointsVersion',
+        subBuilder: $302.Timestamp.create)
+    ..e<$457.PolylineFormatType>(
+        8, _omitFieldNames ? '' : 'routeFormatType', $pb.PbFieldType.OE,
+        defaultOrMaker: $457.PolylineFormatType.UNKNOWN_FORMAT_TYPE,
+        valueOf: $457.PolylineFormatType.valueOf,
+        enumValues: $457.PolylineFormatType.values)
+    ..aOM<$302.Timestamp>(
+        9, _omitFieldNames ? '' : 'currentRouteSegmentTrafficVersion',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(
+        10, _omitFieldNames ? '' : 'remainingWaypointsRouteVersion',
+        subBuilder: $302.Timestamp.create)
+    ..e<$165.TripView>(11, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE,
+        defaultOrMaker: $165.TripView.TRIP_VIEW_UNSPECIFIED,
+        valueOf: $165.TripView.valueOf,
+        enumValues: $165.TripView.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetTripRequest clone() => GetTripRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetTripRequest copyWith(void Function(GetTripRequest) updates) => super.copyWith((message) => updates(message as GetTripRequest)) as GetTripRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetTripRequest copyWith(void Function(GetTripRequest) updates) =>
+      super.copyWith((message) => updates(message as GetTripRequest))
+          as GetTripRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetTripRequest create() => GetTripRequest._();
   GetTripRequest createEmptyInstance() => create();
-  static $pb.PbList<GetTripRequest> createRepeated() => $pb.PbList<GetTripRequest>();
+  static $pb.PbList<GetTripRequest> createRepeated() =>
+      $pb.PbList<GetTripRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetTripRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetTripRequest>(create);
+  static GetTripRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetTripRequest>(create);
   static GetTripRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -265,7 +316,10 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -278,7 +332,10 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get currentRouteSegmentVersion => $_getN(2);
   @$pb.TagNumber(6)
-  set currentRouteSegmentVersion($302.Timestamp v) { setField(6, v); }
+  set currentRouteSegmentVersion($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCurrentRouteSegmentVersion() => $_has(2);
   @$pb.TagNumber(6)
@@ -293,7 +350,10 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get remainingWaypointsVersion => $_getN(3);
   @$pb.TagNumber(7)
-  set remainingWaypointsVersion($302.Timestamp v) { setField(7, v); }
+  set remainingWaypointsVersion($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRemainingWaypointsVersion() => $_has(3);
   @$pb.TagNumber(7)
@@ -307,7 +367,10 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $457.PolylineFormatType get routeFormatType => $_getN(4);
   @$pb.TagNumber(8)
-  set routeFormatType($457.PolylineFormatType v) { setField(8, v); }
+  set routeFormatType($457.PolylineFormatType v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasRouteFormatType() => $_has(4);
   @$pb.TagNumber(8)
@@ -322,7 +385,10 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get currentRouteSegmentTrafficVersion => $_getN(5);
   @$pb.TagNumber(9)
-  set currentRouteSegmentTrafficVersion($302.Timestamp v) { setField(9, v); }
+  set currentRouteSegmentTrafficVersion($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCurrentRouteSegmentTrafficVersion() => $_has(5);
   @$pb.TagNumber(9)
@@ -339,7 +405,10 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $302.Timestamp get remainingWaypointsRouteVersion => $_getN(6);
   @$pb.TagNumber(10)
-  set remainingWaypointsRouteVersion($302.Timestamp v) { setField(10, v); }
+  set remainingWaypointsRouteVersion($302.Timestamp v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasRemainingWaypointsRouteVersion() => $_has(6);
   @$pb.TagNumber(10)
@@ -351,7 +420,10 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $165.TripView get view => $_getN(7);
   @$pb.TagNumber(11)
-  set view($165.TripView v) { setField(11, v); }
+  set view($165.TripView v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasView() => $_has(7);
   @$pb.TagNumber(11)
@@ -386,37 +458,58 @@ class ReportBillableTripRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ReportBillableTripRequest._() : super();
-  factory ReportBillableTripRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReportBillableTripRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReportBillableTripRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReportBillableTripRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportBillableTripRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReportBillableTripRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'countryCode')
-    ..e<$165.BillingPlatformIdentifier>(5, _omitFieldNames ? '' : 'platform', $pb.PbFieldType.OE, defaultOrMaker: $165.BillingPlatformIdentifier.BILLING_PLATFORM_IDENTIFIER_UNSPECIFIED, valueOf: $165.BillingPlatformIdentifier.valueOf, enumValues: $165.BillingPlatformIdentifier.values)
+    ..e<$165.BillingPlatformIdentifier>(
+        5, _omitFieldNames ? '' : 'platform', $pb.PbFieldType.OE,
+        defaultOrMaker: $165
+            .BillingPlatformIdentifier.BILLING_PLATFORM_IDENTIFIER_UNSPECIFIED,
+        valueOf: $165.BillingPlatformIdentifier.valueOf,
+        enumValues: $165.BillingPlatformIdentifier.values)
     ..pPS(6, _omitFieldNames ? '' : 'relatedIds')
-    ..e<ReportBillableTripRequest_SolutionType>(7, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: ReportBillableTripRequest_SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: ReportBillableTripRequest_SolutionType.valueOf, enumValues: ReportBillableTripRequest_SolutionType.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ReportBillableTripRequest_SolutionType>(
+        7, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            ReportBillableTripRequest_SolutionType.SOLUTION_TYPE_UNSPECIFIED,
+        valueOf: ReportBillableTripRequest_SolutionType.valueOf,
+        enumValues: ReportBillableTripRequest_SolutionType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReportBillableTripRequest clone() => ReportBillableTripRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReportBillableTripRequest copyWith(void Function(ReportBillableTripRequest) updates) => super.copyWith((message) => updates(message as ReportBillableTripRequest)) as ReportBillableTripRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReportBillableTripRequest clone() =>
+      ReportBillableTripRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReportBillableTripRequest copyWith(
+          void Function(ReportBillableTripRequest) updates) =>
+      super.copyWith((message) => updates(message as ReportBillableTripRequest))
+          as ReportBillableTripRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReportBillableTripRequest create() => ReportBillableTripRequest._();
   ReportBillableTripRequest createEmptyInstance() => create();
-  static $pb.PbList<ReportBillableTripRequest> createRepeated() => $pb.PbList<ReportBillableTripRequest>();
+  static $pb.PbList<ReportBillableTripRequest> createRepeated() =>
+      $pb.PbList<ReportBillableTripRequest>();
   @$core.pragma('dart2js:noInline')
-  static ReportBillableTripRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReportBillableTripRequest>(create);
+  static ReportBillableTripRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReportBillableTripRequest>(create);
   static ReportBillableTripRequest? _defaultInstance;
 
   /// Required. Must be in the format
@@ -427,7 +520,10 @@ class ReportBillableTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(2)
@@ -438,7 +534,10 @@ class ReportBillableTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get countryCode => $_getSZ(1);
   @$pb.TagNumber(3)
-  set countryCode($core.String v) { $_setString(1, v); }
+  set countryCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCountryCode() => $_has(1);
   @$pb.TagNumber(3)
@@ -448,7 +547,10 @@ class ReportBillableTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $165.BillingPlatformIdentifier get platform => $_getN(2);
   @$pb.TagNumber(5)
-  set platform($165.BillingPlatformIdentifier v) { setField(5, v); }
+  set platform($165.BillingPlatformIdentifier v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPlatform() => $_has(2);
   @$pb.TagNumber(5)
@@ -466,7 +568,10 @@ class ReportBillableTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   ReportBillableTripRequest_SolutionType get solutionType => $_getN(4);
   @$pb.TagNumber(7)
-  set solutionType(ReportBillableTripRequest_SolutionType v) { setField(7, v); }
+  set solutionType(ReportBillableTripRequest_SolutionType v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasSolutionType() => $_has(4);
   @$pb.TagNumber(7)
@@ -497,43 +602,58 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateTripRequest._() : super();
-  factory UpdateTripRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateTripRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateTripRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateTripRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTripRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateTripRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$165.Trip>(4, _omitFieldNames ? '' : 'trip', subBuilder: $165.Trip.create)
-    ..aOM<$333.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$165.Trip>(4, _omitFieldNames ? '' : 'trip',
+        subBuilder: $165.Trip.create)
+    ..aOM<$333.FieldMask>(5, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateTripRequest clone() => UpdateTripRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateTripRequest copyWith(void Function(UpdateTripRequest) updates) => super.copyWith((message) => updates(message as UpdateTripRequest)) as UpdateTripRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateTripRequest copyWith(void Function(UpdateTripRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateTripRequest))
+          as UpdateTripRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateTripRequest create() => UpdateTripRequest._();
   UpdateTripRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateTripRequest> createRepeated() => $pb.PbList<UpdateTripRequest>();
+  static $pb.PbList<UpdateTripRequest> createRepeated() =>
+      $pb.PbList<UpdateTripRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateTripRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateTripRequest>(create);
+  static UpdateTripRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateTripRequest>(create);
   static UpdateTripRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -548,7 +668,10 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -598,7 +721,10 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $165.Trip get trip => $_getN(2);
   @$pb.TagNumber(4)
-  set trip($165.Trip v) { setField(4, v); }
+  set trip($165.Trip v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTrip() => $_has(2);
   @$pb.TagNumber(4)
@@ -611,7 +737,10 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $333.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(5)
-  set updateMask($333.FieldMask v) { setField(5, v); }
+  set updateMask($333.FieldMask v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(5)
@@ -656,46 +785,60 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchTripsRequest._() : super();
-  factory SearchTripsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTripsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTripsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTripsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTripsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $458.RequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTripsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $458.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'vehicleId')
     ..aOB(5, _omitFieldNames ? '' : 'activeTripsOnly')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(7, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'minimumStaleness', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'minimumStaleness',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchTripsRequest clone() => SearchTripsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTripsRequest copyWith(void Function(SearchTripsRequest) updates) => super.copyWith((message) => updates(message as SearchTripsRequest)) as SearchTripsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTripsRequest copyWith(void Function(SearchTripsRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchTripsRequest))
+          as SearchTripsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchTripsRequest create() => SearchTripsRequest._();
   SearchTripsRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchTripsRequest> createRepeated() => $pb.PbList<SearchTripsRequest>();
+  static $pb.PbList<SearchTripsRequest> createRepeated() =>
+      $pb.PbList<SearchTripsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchTripsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTripsRequest>(create);
+  static SearchTripsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchTripsRequest>(create);
   static SearchTripsRequest? _defaultInstance;
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
   $458.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) { setField(1, v); }
+  set header($458.RequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -710,7 +853,10 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -726,7 +872,10 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get vehicleId => $_getSZ(2);
   @$pb.TagNumber(4)
-  set vehicleId($core.String v) { $_setString(2, v); }
+  set vehicleId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVehicleId() => $_has(2);
   @$pb.TagNumber(4)
@@ -737,7 +886,10 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get activeTripsOnly => $_getBF(3);
   @$pb.TagNumber(5)
-  set activeTripsOnly($core.bool v) { $_setBool(3, v); }
+  set activeTripsOnly($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasActiveTripsOnly() => $_has(3);
   @$pb.TagNumber(5)
@@ -747,7 +899,10 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get pageSize => $_getIZ(4);
   @$pb.TagNumber(6)
-  set pageSize($core.int v) { $_setSignedInt32(4, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPageSize() => $_has(4);
   @$pb.TagNumber(6)
@@ -758,7 +913,10 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get pageToken => $_getSZ(5);
   @$pb.TagNumber(7)
-  set pageToken($core.String v) { $_setString(5, v); }
+  set pageToken($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPageToken() => $_has(5);
   @$pb.TagNumber(7)
@@ -769,7 +927,10 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $264.Duration get minimumStaleness => $_getN(6);
   @$pb.TagNumber(8)
-  set minimumStaleness($264.Duration v) { setField(8, v); }
+  set minimumStaleness($264.Duration v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMinimumStaleness() => $_has(6);
   @$pb.TagNumber(8)
@@ -794,34 +955,44 @@ class SearchTripsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchTripsResponse._() : super();
-  factory SearchTripsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchTripsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchTripsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchTripsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTripsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<$165.Trip>(1, _omitFieldNames ? '' : 'trips', $pb.PbFieldType.PM, subBuilder: $165.Trip.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchTripsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..pc<$165.Trip>(1, _omitFieldNames ? '' : 'trips', $pb.PbFieldType.PM,
+        subBuilder: $165.Trip.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchTripsResponse clone() => SearchTripsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchTripsResponse copyWith(void Function(SearchTripsResponse) updates) => super.copyWith((message) => updates(message as SearchTripsResponse)) as SearchTripsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchTripsResponse copyWith(void Function(SearchTripsResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchTripsResponse))
+          as SearchTripsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchTripsResponse create() => SearchTripsResponse._();
   SearchTripsResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchTripsResponse> createRepeated() => $pb.PbList<SearchTripsResponse>();
+  static $pb.PbList<SearchTripsResponse> createRepeated() =>
+      $pb.PbList<SearchTripsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchTripsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchTripsResponse>(create);
+  static SearchTripsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchTripsResponse>(create);
   static SearchTripsResponse? _defaultInstance;
 
   /// The list of trips for the requested vehicle.
@@ -834,13 +1005,16 @@ class SearchTripsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -19,7 +19,14 @@ const SourceInfo$json = {
   '2': [
     {'1': 'location', '3': 2, '4': 1, '5': 9, '10': 'location'},
     {'1': 'line_offsets', '3': 3, '4': 3, '5': 5, '10': 'lineOffsets'},
-    {'1': 'positions', '3': 4, '4': 3, '5': 11, '6': '.google.api.expr.v1beta1.SourceInfo.PositionsEntry', '10': 'positions'},
+    {
+      '1': 'positions',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.expr.v1beta1.SourceInfo.PositionsEntry',
+      '10': 'positions'
+    },
   ],
   '3': [SourceInfo_PositionsEntry$json],
 };
@@ -57,4 +64,3 @@ final $typed_data.Uint8List sourcePositionDescriptor = $convert.base64Decode(
     'Cg5Tb3VyY2VQb3NpdGlvbhIaCghsb2NhdGlvbhgBIAEoCVIIbG9jYXRpb24SFgoGb2Zmc2V0GA'
     'IgASgFUgZvZmZzZXQSEgoEbGluZRgDIAEoBVIEbGluZRIWCgZjb2x1bW4YBCABKAVSBmNvbHVt'
     'bg==');
-

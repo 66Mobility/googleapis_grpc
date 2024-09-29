@@ -65,34 +65,43 @@ class Model extends $pb.GeneratedMessage {
     return $result;
   }
   Model._() : super();
-  factory Model.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Model.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Model.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Model.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Model',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'baseModelId')
     ..aOS(3, _omitFieldNames ? '' : 'version')
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'inputTokenLimit', $pb.PbFieldType.O3)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'outputTokenLimit', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'inputTokenLimit', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        7, _omitFieldNames ? '' : 'outputTokenLimit', $pb.PbFieldType.O3)
     ..pPS(8, _omitFieldNames ? '' : 'supportedGenerationMethods')
-    ..a<$core.double>(9, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        9, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Model clone() => Model()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Model copyWith(void Function(Model) updates) => super.copyWith((message) => updates(message as Model)) as Model;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Model copyWith(void Function(Model) updates) =>
+      super.copyWith((message) => updates(message as Model)) as Model;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -101,7 +110,8 @@ class Model extends $pb.GeneratedMessage {
   Model createEmptyInstance() => create();
   static $pb.PbList<Model> createRepeated() => $pb.PbList<Model>();
   @$core.pragma('dart2js:noInline')
-  static Model getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Model>(create);
+  static Model getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Model>(create);
   static Model? _defaultInstance;
 
   ///  Required. The resource name of the `Model`.
@@ -116,7 +126,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -130,7 +143,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get baseModelId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set baseModelId($core.String v) { $_setString(1, v); }
+  set baseModelId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBaseModelId() => $_has(1);
   @$pb.TagNumber(2)
@@ -142,7 +158,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get version => $_getSZ(2);
   @$pb.TagNumber(3)
-  set version($core.String v) { $_setString(2, v); }
+  set version($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVersion() => $_has(2);
   @$pb.TagNumber(3)
@@ -155,7 +174,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set displayName($core.String v) { $_setString(3, v); }
+  set displayName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(4)
@@ -165,7 +187,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) { $_setString(4, v); }
+  set description($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -175,7 +200,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get inputTokenLimit => $_getIZ(5);
   @$pb.TagNumber(6)
-  set inputTokenLimit($core.int v) { $_setSignedInt32(5, v); }
+  set inputTokenLimit($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasInputTokenLimit() => $_has(5);
   @$pb.TagNumber(6)
@@ -185,7 +213,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get outputTokenLimit => $_getIZ(6);
   @$pb.TagNumber(7)
-  set outputTokenLimit($core.int v) { $_setSignedInt32(6, v); }
+  set outputTokenLimit($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasOutputTokenLimit() => $_has(6);
   @$pb.TagNumber(7)
@@ -208,7 +239,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get temperature => $_getN(8);
   @$pb.TagNumber(9)
-  set temperature($core.double v) { $_setFloat(8, v); }
+  set temperature($core.double v) {
+    $_setFloat(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTemperature() => $_has(8);
   @$pb.TagNumber(9)
@@ -223,7 +257,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.double get topP => $_getN(9);
   @$pb.TagNumber(10)
-  set topP($core.double v) { $_setFloat(9, v); }
+  set topP($core.double v) {
+    $_setFloat(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasTopP() => $_has(9);
   @$pb.TagNumber(10)
@@ -237,13 +274,16 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.int get topK => $_getIZ(10);
   @$pb.TagNumber(11)
-  set topK($core.int v) { $_setSignedInt32(10, v); }
+  set topK($core.int v) {
+    $_setSignedInt32(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasTopK() => $_has(10);
   @$pb.TagNumber(11)
   void clearTopK() => clearField(11);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Point$json = {
   '1': 'Point',
   '2': [
-    {'1': 'interval', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.v3.TimeInterval', '10': 'interval'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.v3.TypedValue', '10': 'value'},
+    {
+      '1': 'interval',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeInterval',
+      '10': 'interval'
+    },
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TypedValue',
+      '10': 'value'
+    },
   ],
 };
 
@@ -32,12 +46,54 @@ final $typed_data.Uint8List pointDescriptor = $convert.base64Decode(
 const TimeSeries$json = {
   '1': 'TimeSeries',
   '2': [
-    {'1': 'metric', '3': 1, '4': 1, '5': 11, '6': '.google.api.Metric', '10': 'metric'},
-    {'1': 'resource', '3': 2, '4': 1, '5': 11, '6': '.google.api.MonitoredResource', '10': 'resource'},
-    {'1': 'metadata', '3': 7, '4': 1, '5': 11, '6': '.google.api.MonitoredResourceMetadata', '10': 'metadata'},
-    {'1': 'metric_kind', '3': 3, '4': 1, '5': 14, '6': '.google.api.MetricDescriptor.MetricKind', '10': 'metricKind'},
-    {'1': 'value_type', '3': 4, '4': 1, '5': 14, '6': '.google.api.MetricDescriptor.ValueType', '10': 'valueType'},
-    {'1': 'points', '3': 5, '4': 3, '5': 11, '6': '.google.monitoring.v3.Point', '10': 'points'},
+    {
+      '1': 'metric',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Metric',
+      '10': 'metric'
+    },
+    {
+      '1': 'resource',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MonitoredResource',
+      '10': 'resource'
+    },
+    {
+      '1': 'metadata',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MonitoredResourceMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'metric_kind',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.MetricDescriptor.MetricKind',
+      '10': 'metricKind'
+    },
+    {
+      '1': 'value_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.MetricDescriptor.ValueType',
+      '10': 'valueType'
+    },
+    {
+      '1': 'points',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.Point',
+      '10': 'points'
+    },
     {'1': 'unit', '3': 8, '4': 1, '5': 9, '10': 'unit'},
   ],
 };
@@ -57,8 +113,22 @@ final $typed_data.Uint8List timeSeriesDescriptor = $convert.base64Decode(
 const TimeSeriesDescriptor$json = {
   '1': 'TimeSeriesDescriptor',
   '2': [
-    {'1': 'label_descriptors', '3': 1, '4': 3, '5': 11, '6': '.google.api.LabelDescriptor', '10': 'labelDescriptors'},
-    {'1': 'point_descriptors', '3': 5, '4': 3, '5': 11, '6': '.google.monitoring.v3.TimeSeriesDescriptor.ValueDescriptor', '10': 'pointDescriptors'},
+    {
+      '1': 'label_descriptors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.LabelDescriptor',
+      '10': 'labelDescriptors'
+    },
+    {
+      '1': 'point_descriptors',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeSeriesDescriptor.ValueDescriptor',
+      '10': 'pointDescriptors'
+    },
   ],
   '3': [TimeSeriesDescriptor_ValueDescriptor$json],
 };
@@ -68,8 +138,22 @@ const TimeSeriesDescriptor_ValueDescriptor$json = {
   '1': 'ValueDescriptor',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value_type', '3': 2, '4': 1, '5': 14, '6': '.google.api.MetricDescriptor.ValueType', '10': 'valueType'},
-    {'1': 'metric_kind', '3': 3, '4': 1, '5': 14, '6': '.google.api.MetricDescriptor.MetricKind', '10': 'metricKind'},
+    {
+      '1': 'value_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.MetricDescriptor.ValueType',
+      '10': 'valueType'
+    },
+    {
+      '1': 'metric_kind',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.MetricDescriptor.MetricKind',
+      '10': 'metricKind'
+    },
     {'1': 'unit', '3': 4, '4': 1, '5': 9, '10': 'unit'},
   ],
 };
@@ -89,8 +173,22 @@ final $typed_data.Uint8List timeSeriesDescriptorDescriptor = $convert.base64Deco
 const TimeSeriesData$json = {
   '1': 'TimeSeriesData',
   '2': [
-    {'1': 'label_values', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.v3.LabelValue', '10': 'labelValues'},
-    {'1': 'point_data', '3': 2, '4': 3, '5': 11, '6': '.google.monitoring.v3.TimeSeriesData.PointData', '10': 'pointData'},
+    {
+      '1': 'label_values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.LabelValue',
+      '10': 'labelValues'
+    },
+    {
+      '1': 'point_data',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeSeriesData.PointData',
+      '10': 'pointData'
+    },
   ],
   '3': [TimeSeriesData_PointData$json],
 };
@@ -99,8 +197,22 @@ const TimeSeriesData$json = {
 const TimeSeriesData_PointData$json = {
   '1': 'PointData',
   '2': [
-    {'1': 'values', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.v3.TypedValue', '10': 'values'},
-    {'1': 'time_interval', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.v3.TimeInterval', '10': 'timeInterval'},
+    {
+      '1': 'values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.TypedValue',
+      '10': 'values'
+    },
+    {
+      '1': 'time_interval',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeInterval',
+      '10': 'timeInterval'
+    },
   ],
 };
 
@@ -136,7 +248,14 @@ final $typed_data.Uint8List labelValueDescriptor = $convert.base64Decode(
 const QueryError$json = {
   '1': 'QueryError',
   '2': [
-    {'1': 'locator', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.v3.TextLocator', '10': 'locator'},
+    {
+      '1': 'locator',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TextLocator',
+      '10': 'locator'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
   ],
 };
@@ -151,9 +270,30 @@ const TextLocator$json = {
   '1': 'TextLocator',
   '2': [
     {'1': 'source', '3': 1, '4': 1, '5': 9, '10': 'source'},
-    {'1': 'start_position', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.v3.TextLocator.Position', '10': 'startPosition'},
-    {'1': 'end_position', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.v3.TextLocator.Position', '10': 'endPosition'},
-    {'1': 'nested_locator', '3': 4, '4': 1, '5': 11, '6': '.google.monitoring.v3.TextLocator', '10': 'nestedLocator'},
+    {
+      '1': 'start_position',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TextLocator.Position',
+      '10': 'startPosition'
+    },
+    {
+      '1': 'end_position',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TextLocator.Position',
+      '10': 'endPosition'
+    },
+    {
+      '1': 'nested_locator',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TextLocator',
+      '10': 'nestedLocator'
+    },
     {'1': 'nesting_reason', '3': 5, '4': 1, '5': 9, '10': 'nestingReason'},
   ],
   '3': [TextLocator_Position$json],
@@ -177,4 +317,3 @@ final $typed_data.Uint8List textLocatorDescriptor = $convert.base64Decode(
     'CzIhLmdvb2dsZS5tb25pdG9yaW5nLnYzLlRleHRMb2NhdG9yUg1uZXN0ZWRMb2NhdG9yEiUKDm'
     '5lc3RpbmdfcmVhc29uGAUgASgJUg1uZXN0aW5nUmVhc29uGjYKCFBvc2l0aW9uEhIKBGxpbmUY'
     'ASABKAVSBGxpbmUSFgoGY29sdW1uGAIgASgFUgZjb2x1bW4=');
-

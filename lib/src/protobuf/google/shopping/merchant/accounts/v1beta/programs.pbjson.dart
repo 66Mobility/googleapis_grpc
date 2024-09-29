@@ -18,10 +18,40 @@ const Program$json = {
   '1': 'Program',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'documentation_uri', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'documentationUri'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.Program.State', '8': {}, '10': 'state'},
-    {'1': 'active_region_codes', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'activeRegionCodes'},
-    {'1': 'unmet_requirements', '3': 5, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Program.Requirement', '8': {}, '10': 'unmetRequirements'},
+    {
+      '1': 'documentation_uri',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'documentationUri'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.Program.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'active_region_codes',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'activeRegionCodes'
+    },
+    {
+      '1': 'unmet_requirements',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Program.Requirement',
+      '8': {},
+      '10': 'unmetRequirements'
+    },
   ],
   '3': [Program_Requirement$json],
   '4': [Program_State$json],
@@ -33,8 +63,22 @@ const Program_Requirement$json = {
   '1': 'Requirement',
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'title'},
-    {'1': 'documentation_uri', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'documentationUri'},
-    {'1': 'affected_region_codes', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'affectedRegionCodes'},
+    {
+      '1': 'documentation_uri',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'documentationUri'
+    },
+    {
+      '1': 'affected_region_codes',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'affectedRegionCodes'
+    },
   ],
 };
 
@@ -97,7 +141,14 @@ final $typed_data.Uint8List listProgramsRequestDescriptor = $convert.base64Decod
 const ListProgramsResponse$json = {
   '1': 'ListProgramsResponse',
   '2': [
-    {'1': 'programs', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Program', '10': 'programs'},
+    {
+      '1': 'programs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Program',
+      '10': 'programs'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -133,4 +184,3 @@ const DisableProgramRequest$json = {
 final $typed_data.Uint8List disableProgramRequestDescriptor = $convert.base64Decode(
     'ChVEaXNhYmxlUHJvZ3JhbVJlcXVlc3QSPgoEbmFtZRgBIAEoCUIq4EEC+kEkCiJtZXJjaGFudG'
     'FwaS5nb29nbGVhcGlzLmNvbS9Qcm9ncmFtUgRuYW1l');
-

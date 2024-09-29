@@ -42,36 +42,49 @@ class Application_IdentityAwareProxy extends $pb.GeneratedMessage {
     return $result;
   }
   Application_IdentityAwareProxy._() : super();
-  factory Application_IdentityAwareProxy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Application_IdentityAwareProxy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Application_IdentityAwareProxy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Application_IdentityAwareProxy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application.IdentityAwareProxy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Application.IdentityAwareProxy',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..aOS(2, _omitFieldNames ? '' : 'oauth2ClientId')
     ..aOS(3, _omitFieldNames ? '' : 'oauth2ClientSecret')
     ..aOS(4, _omitFieldNames ? '' : 'oauth2ClientSecretSha256')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Application_IdentityAwareProxy clone() => Application_IdentityAwareProxy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Application_IdentityAwareProxy copyWith(void Function(Application_IdentityAwareProxy) updates) => super.copyWith((message) => updates(message as Application_IdentityAwareProxy)) as Application_IdentityAwareProxy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Application_IdentityAwareProxy clone() =>
+      Application_IdentityAwareProxy()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Application_IdentityAwareProxy copyWith(
+          void Function(Application_IdentityAwareProxy) updates) =>
+      super.copyWith(
+              (message) => updates(message as Application_IdentityAwareProxy))
+          as Application_IdentityAwareProxy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Application_IdentityAwareProxy create() => Application_IdentityAwareProxy._();
+  static Application_IdentityAwareProxy create() =>
+      Application_IdentityAwareProxy._();
   Application_IdentityAwareProxy createEmptyInstance() => create();
-  static $pb.PbList<Application_IdentityAwareProxy> createRepeated() => $pb.PbList<Application_IdentityAwareProxy>();
+  static $pb.PbList<Application_IdentityAwareProxy> createRepeated() =>
+      $pb.PbList<Application_IdentityAwareProxy>();
   @$core.pragma('dart2js:noInline')
-  static Application_IdentityAwareProxy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Application_IdentityAwareProxy>(create);
+  static Application_IdentityAwareProxy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Application_IdentityAwareProxy>(create);
   static Application_IdentityAwareProxy? _defaultInstance;
 
   ///  Whether the serving infrastructure will authenticate and
@@ -82,7 +95,10 @@ class Application_IdentityAwareProxy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get enabled => $_getBF(0);
   @$pb.TagNumber(1)
-  set enabled($core.bool v) { $_setBool(0, v); }
+  set enabled($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,7 +108,10 @@ class Application_IdentityAwareProxy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get oauth2ClientId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set oauth2ClientId($core.String v) { $_setString(1, v); }
+  set oauth2ClientId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOauth2ClientId() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,7 +127,10 @@ class Application_IdentityAwareProxy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get oauth2ClientSecret => $_getSZ(2);
   @$pb.TagNumber(3)
-  set oauth2ClientSecret($core.String v) { $_setString(2, v); }
+  set oauth2ClientSecret($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOauth2ClientSecret() => $_has(2);
   @$pb.TagNumber(3)
@@ -120,7 +142,10 @@ class Application_IdentityAwareProxy extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get oauth2ClientSecretSha256 => $_getSZ(3);
   @$pb.TagNumber(4)
-  set oauth2ClientSecretSha256($core.String v) { $_setString(3, v); }
+  set oauth2ClientSecretSha256($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOauth2ClientSecretSha256() => $_has(3);
   @$pb.TagNumber(4)
@@ -144,34 +169,47 @@ class Application_FeatureSettings extends $pb.GeneratedMessage {
     return $result;
   }
   Application_FeatureSettings._() : super();
-  factory Application_FeatureSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Application_FeatureSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Application_FeatureSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Application_FeatureSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application.FeatureSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Application.FeatureSettings',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'splitHealthChecks')
     ..aOB(2, _omitFieldNames ? '' : 'useContainerOptimizedOs')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Application_FeatureSettings clone() => Application_FeatureSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Application_FeatureSettings copyWith(void Function(Application_FeatureSettings) updates) => super.copyWith((message) => updates(message as Application_FeatureSettings)) as Application_FeatureSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Application_FeatureSettings clone() =>
+      Application_FeatureSettings()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Application_FeatureSettings copyWith(
+          void Function(Application_FeatureSettings) updates) =>
+      super.copyWith(
+              (message) => updates(message as Application_FeatureSettings))
+          as Application_FeatureSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Application_FeatureSettings create() => Application_FeatureSettings._();
+  static Application_FeatureSettings create() =>
+      Application_FeatureSettings._();
   Application_FeatureSettings createEmptyInstance() => create();
-  static $pb.PbList<Application_FeatureSettings> createRepeated() => $pb.PbList<Application_FeatureSettings>();
+  static $pb.PbList<Application_FeatureSettings> createRepeated() =>
+      $pb.PbList<Application_FeatureSettings>();
   @$core.pragma('dart2js:noInline')
-  static Application_FeatureSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Application_FeatureSettings>(create);
+  static Application_FeatureSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Application_FeatureSettings>(create);
   static Application_FeatureSettings? _defaultInstance;
 
   /// Boolean value indicating if split health checks should be used instead
@@ -183,7 +221,10 @@ class Application_FeatureSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get splitHealthChecks => $_getBF(0);
   @$pb.TagNumber(1)
-  set splitHealthChecks($core.bool v) { $_setBool(0, v); }
+  set splitHealthChecks($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSplitHealthChecks() => $_has(0);
   @$pb.TagNumber(1)
@@ -194,7 +235,10 @@ class Application_FeatureSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get useContainerOptimizedOs => $_getBF(1);
   @$pb.TagNumber(2)
-  set useContainerOptimizedOs($core.bool v) { $_setBool(1, v); }
+  set useContainerOptimizedOs($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUseContainerOptimizedOs() => $_has(1);
   @$pb.TagNumber(2)
@@ -270,38 +314,59 @@ class Application extends $pb.GeneratedMessage {
     return $result;
   }
   Application._() : super();
-  factory Application.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Application.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Application.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Application.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Application',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..pc<UrlDispatchRule>(3, _omitFieldNames ? '' : 'dispatchRules', $pb.PbFieldType.PM, subBuilder: UrlDispatchRule.create)
+    ..pc<UrlDispatchRule>(
+        3, _omitFieldNames ? '' : 'dispatchRules', $pb.PbFieldType.PM,
+        subBuilder: UrlDispatchRule.create)
     ..aOS(6, _omitFieldNames ? '' : 'authDomain')
     ..aOS(7, _omitFieldNames ? '' : 'locationId')
     ..aOS(8, _omitFieldNames ? '' : 'codeBucket')
-    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'defaultCookieExpiration', subBuilder: $264.Duration.create)
-    ..e<Application_ServingStatus>(10, _omitFieldNames ? '' : 'servingStatus', $pb.PbFieldType.OE, defaultOrMaker: Application_ServingStatus.UNSPECIFIED, valueOf: Application_ServingStatus.valueOf, enumValues: Application_ServingStatus.values)
+    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'defaultCookieExpiration',
+        subBuilder: $264.Duration.create)
+    ..e<Application_ServingStatus>(
+        10, _omitFieldNames ? '' : 'servingStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: Application_ServingStatus.UNSPECIFIED,
+        valueOf: Application_ServingStatus.valueOf,
+        enumValues: Application_ServingStatus.values)
     ..aOS(11, _omitFieldNames ? '' : 'defaultHostname')
     ..aOS(12, _omitFieldNames ? '' : 'defaultBucket')
     ..aOS(13, _omitFieldNames ? '' : 'serviceAccount')
-    ..aOM<Application_IdentityAwareProxy>(14, _omitFieldNames ? '' : 'iap', subBuilder: Application_IdentityAwareProxy.create)
+    ..aOM<Application_IdentityAwareProxy>(14, _omitFieldNames ? '' : 'iap',
+        subBuilder: Application_IdentityAwareProxy.create)
     ..aOS(16, _omitFieldNames ? '' : 'gcrDomain')
-    ..e<Application_DatabaseType>(17, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE, defaultOrMaker: Application_DatabaseType.DATABASE_TYPE_UNSPECIFIED, valueOf: Application_DatabaseType.valueOf, enumValues: Application_DatabaseType.values)
-    ..aOM<Application_FeatureSettings>(18, _omitFieldNames ? '' : 'featureSettings', subBuilder: Application_FeatureSettings.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<Application_DatabaseType>(
+        17, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE,
+        defaultOrMaker: Application_DatabaseType.DATABASE_TYPE_UNSPECIFIED,
+        valueOf: Application_DatabaseType.valueOf,
+        enumValues: Application_DatabaseType.values)
+    ..aOM<Application_FeatureSettings>(
+        18, _omitFieldNames ? '' : 'featureSettings',
+        subBuilder: Application_FeatureSettings.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Application clone() => Application()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Application copyWith(void Function(Application) updates) => super.copyWith((message) => updates(message as Application)) as Application;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Application copyWith(void Function(Application) updates) =>
+      super.copyWith((message) => updates(message as Application))
+          as Application;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -310,7 +375,8 @@ class Application extends $pb.GeneratedMessage {
   Application createEmptyInstance() => create();
   static $pb.PbList<Application> createRepeated() => $pb.PbList<Application>();
   @$core.pragma('dart2js:noInline')
-  static Application getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Application>(create);
+  static Application getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Application>(create);
   static Application? _defaultInstance;
 
   ///  Full path to the Application resource in the API.
@@ -320,7 +386,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -333,7 +402,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -352,7 +424,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get authDomain => $_getSZ(3);
   @$pb.TagNumber(6)
-  set authDomain($core.String v) { $_setString(3, v); }
+  set authDomain($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAuthDomain() => $_has(3);
   @$pb.TagNumber(6)
@@ -369,7 +444,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get locationId => $_getSZ(4);
   @$pb.TagNumber(7)
-  set locationId($core.String v) { $_setString(4, v); }
+  set locationId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasLocationId() => $_has(4);
   @$pb.TagNumber(7)
@@ -383,7 +461,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get codeBucket => $_getSZ(5);
   @$pb.TagNumber(8)
-  set codeBucket($core.String v) { $_setString(5, v); }
+  set codeBucket($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCodeBucket() => $_has(5);
   @$pb.TagNumber(8)
@@ -393,7 +474,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $264.Duration get defaultCookieExpiration => $_getN(6);
   @$pb.TagNumber(9)
-  set defaultCookieExpiration($264.Duration v) { setField(9, v); }
+  set defaultCookieExpiration($264.Duration v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDefaultCookieExpiration() => $_has(6);
   @$pb.TagNumber(9)
@@ -405,7 +489,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Application_ServingStatus get servingStatus => $_getN(7);
   @$pb.TagNumber(10)
-  set servingStatus(Application_ServingStatus v) { setField(10, v); }
+  set servingStatus(Application_ServingStatus v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasServingStatus() => $_has(7);
   @$pb.TagNumber(10)
@@ -417,7 +504,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get defaultHostname => $_getSZ(8);
   @$pb.TagNumber(11)
-  set defaultHostname($core.String v) { $_setString(8, v); }
+  set defaultHostname($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasDefaultHostname() => $_has(8);
   @$pb.TagNumber(11)
@@ -430,7 +520,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get defaultBucket => $_getSZ(9);
   @$pb.TagNumber(12)
-  set defaultBucket($core.String v) { $_setString(9, v); }
+  set defaultBucket($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasDefaultBucket() => $_has(9);
   @$pb.TagNumber(12)
@@ -442,7 +535,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get serviceAccount => $_getSZ(10);
   @$pb.TagNumber(13)
-  set serviceAccount($core.String v) { $_setString(10, v); }
+  set serviceAccount($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasServiceAccount() => $_has(10);
   @$pb.TagNumber(13)
@@ -451,7 +547,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   Application_IdentityAwareProxy get iap => $_getN(11);
   @$pb.TagNumber(14)
-  set iap(Application_IdentityAwareProxy v) { setField(14, v); }
+  set iap(Application_IdentityAwareProxy v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasIap() => $_has(11);
   @$pb.TagNumber(14)
@@ -464,7 +563,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get gcrDomain => $_getSZ(12);
   @$pb.TagNumber(16)
-  set gcrDomain($core.String v) { $_setString(12, v); }
+  set gcrDomain($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasGcrDomain() => $_has(12);
   @$pb.TagNumber(16)
@@ -475,7 +577,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   Application_DatabaseType get databaseType => $_getN(13);
   @$pb.TagNumber(17)
-  set databaseType(Application_DatabaseType v) { setField(17, v); }
+  set databaseType(Application_DatabaseType v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasDatabaseType() => $_has(13);
   @$pb.TagNumber(17)
@@ -485,7 +590,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   Application_FeatureSettings get featureSettings => $_getN(14);
   @$pb.TagNumber(18)
-  set featureSettings(Application_FeatureSettings v) { setField(18, v); }
+  set featureSettings(Application_FeatureSettings v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasFeatureSettings() => $_has(14);
   @$pb.TagNumber(18)
@@ -514,35 +622,44 @@ class UrlDispatchRule extends $pb.GeneratedMessage {
     return $result;
   }
   UrlDispatchRule._() : super();
-  factory UrlDispatchRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UrlDispatchRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UrlDispatchRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UrlDispatchRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UrlDispatchRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UrlDispatchRule',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'domain')
     ..aOS(2, _omitFieldNames ? '' : 'path')
     ..aOS(3, _omitFieldNames ? '' : 'service')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UrlDispatchRule clone() => UrlDispatchRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UrlDispatchRule copyWith(void Function(UrlDispatchRule) updates) => super.copyWith((message) => updates(message as UrlDispatchRule)) as UrlDispatchRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UrlDispatchRule copyWith(void Function(UrlDispatchRule) updates) =>
+      super.copyWith((message) => updates(message as UrlDispatchRule))
+          as UrlDispatchRule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UrlDispatchRule create() => UrlDispatchRule._();
   UrlDispatchRule createEmptyInstance() => create();
-  static $pb.PbList<UrlDispatchRule> createRepeated() => $pb.PbList<UrlDispatchRule>();
+  static $pb.PbList<UrlDispatchRule> createRepeated() =>
+      $pb.PbList<UrlDispatchRule>();
   @$core.pragma('dart2js:noInline')
-  static UrlDispatchRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UrlDispatchRule>(create);
+  static UrlDispatchRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UrlDispatchRule>(create);
   static UrlDispatchRule? _defaultInstance;
 
   ///  Domain name to match against. The wildcard "`*`" is supported if
@@ -552,7 +669,10 @@ class UrlDispatchRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get domain => $_getSZ(0);
   @$pb.TagNumber(1)
-  set domain($core.String v) { $_setString(0, v); }
+  set domain($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDomain() => $_has(0);
   @$pb.TagNumber(1)
@@ -566,7 +686,10 @@ class UrlDispatchRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get path => $_getSZ(1);
   @$pb.TagNumber(2)
-  set path($core.String v) { $_setString(1, v); }
+  set path($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPath() => $_has(1);
   @$pb.TagNumber(2)
@@ -578,13 +701,16 @@ class UrlDispatchRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get service => $_getSZ(2);
   @$pb.TagNumber(3)
-  set service($core.String v) { $_setString(2, v); }
+  set service($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasService() => $_has(2);
   @$pb.TagNumber(3)
   void clearService() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

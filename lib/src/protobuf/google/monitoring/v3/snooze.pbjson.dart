@@ -18,8 +18,24 @@ const Snooze$json = {
   '1': 'Snooze',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'criteria', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.v3.Snooze.Criteria', '8': {}, '10': 'criteria'},
-    {'1': 'interval', '3': 4, '4': 1, '5': 11, '6': '.google.monitoring.v3.TimeInterval', '8': {}, '10': 'interval'},
+    {
+      '1': 'criteria',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.Snooze.Criteria',
+      '8': {},
+      '10': 'criteria'
+    },
+    {
+      '1': 'interval',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.TimeInterval',
+      '8': {},
+      '10': 'interval'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
   ],
   '3': [Snooze_Criteria$json],
@@ -43,4 +59,3 @@ final $typed_data.Uint8List snoozeDescriptor = $convert.base64Decode(
     'ZXJpYRJGCghwb2xpY2llcxgBIAMoCUIq+kEnCiVtb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL0'
     'FsZXJ0UG9saWN5Ughwb2xpY2llczpK6kFHCiBtb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL1Nu'
     'b296ZRIjcHJvamVjdHMve3Byb2plY3R9L3Nub296ZXMve3Nub296ZX0=');
-

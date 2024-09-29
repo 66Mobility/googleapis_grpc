@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const CitationMetadata$json = {
   '1': 'CitationMetadata',
   '2': [
-    {'1': 'citation_sources', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.CitationSource', '10': 'citationSources'},
+    {
+      '1': 'citation_sources',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.CitationSource',
+      '10': 'citationSources'
+    },
   ],
 };
 
@@ -31,10 +38,46 @@ final $typed_data.Uint8List citationMetadataDescriptor = $convert.base64Decode(
 const CitationSource$json = {
   '1': 'CitationSource',
   '2': [
-    {'1': 'start_index', '3': 1, '4': 1, '5': 5, '8': {}, '9': 0, '10': 'startIndex', '17': true},
-    {'1': 'end_index', '3': 2, '4': 1, '5': 5, '8': {}, '9': 1, '10': 'endIndex', '17': true},
-    {'1': 'uri', '3': 3, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'uri', '17': true},
-    {'1': 'license', '3': 4, '4': 1, '5': 9, '8': {}, '9': 3, '10': 'license', '17': true},
+    {
+      '1': 'start_index',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 0,
+      '10': 'startIndex',
+      '17': true
+    },
+    {
+      '1': 'end_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 1,
+      '10': 'endIndex',
+      '17': true
+    },
+    {
+      '1': 'uri',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'uri',
+      '17': true
+    },
+    {
+      '1': 'license',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 3,
+      '10': 'license',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_start_index'},
@@ -50,4 +93,3 @@ final $typed_data.Uint8List citationSourceDescriptor = $convert.base64Decode(
     'iIAQESJQoJZW5kX2luZGV4GAIgASgFQgPgQQFIAVIIZW5kSW5kZXiIAQESGgoDdXJpGAMgASgJ'
     'QgPgQQFIAlIDdXJpiAEBEiIKB2xpY2Vuc2UYBCABKAlCA+BBAUgDUgdsaWNlbnNliAEBQg4KDF'
     '9zdGFydF9pbmRleEIMCgpfZW5kX2luZGV4QgYKBF91cmlCCgoIX2xpY2Vuc2U=');
-

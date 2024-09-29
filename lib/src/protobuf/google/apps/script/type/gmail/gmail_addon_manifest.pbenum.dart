@@ -15,21 +15,26 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// An enum defining the level of data access this compose trigger requires.
 class ComposeTrigger_DraftAccess extends $pb.ProtobufEnum {
-  static const ComposeTrigger_DraftAccess UNSPECIFIED = ComposeTrigger_DraftAccess._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
-  static const ComposeTrigger_DraftAccess NONE = ComposeTrigger_DraftAccess._(1, _omitEnumNames ? '' : 'NONE');
-  static const ComposeTrigger_DraftAccess METADATA = ComposeTrigger_DraftAccess._(2, _omitEnumNames ? '' : 'METADATA');
+  static const ComposeTrigger_DraftAccess UNSPECIFIED =
+      ComposeTrigger_DraftAccess._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
+  static const ComposeTrigger_DraftAccess NONE =
+      ComposeTrigger_DraftAccess._(1, _omitEnumNames ? '' : 'NONE');
+  static const ComposeTrigger_DraftAccess METADATA =
+      ComposeTrigger_DraftAccess._(2, _omitEnumNames ? '' : 'METADATA');
 
-  static const $core.List<ComposeTrigger_DraftAccess> values = <ComposeTrigger_DraftAccess> [
+  static const $core.List<ComposeTrigger_DraftAccess> values =
+      <ComposeTrigger_DraftAccess>[
     UNSPECIFIED,
     NONE,
     METADATA,
   ];
 
-  static final $core.Map<$core.int, ComposeTrigger_DraftAccess> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static ComposeTrigger_DraftAccess? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, ComposeTrigger_DraftAccess> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static ComposeTrigger_DraftAccess? valueOf($core.int value) =>
+      _byValue[value];
 
   const ComposeTrigger_DraftAccess._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

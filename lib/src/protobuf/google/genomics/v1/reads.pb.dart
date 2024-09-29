@@ -46,36 +46,48 @@ class SearchReadGroupSetsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchReadGroupSetsRequest._() : super();
-  factory SearchReadGroupSetsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchReadGroupSetsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchReadGroupSetsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchReadGroupSetsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchReadGroupSetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchReadGroupSetsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'datasetIds')
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchReadGroupSetsRequest clone() => SearchReadGroupSetsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchReadGroupSetsRequest copyWith(void Function(SearchReadGroupSetsRequest) updates) => super.copyWith((message) => updates(message as SearchReadGroupSetsRequest)) as SearchReadGroupSetsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchReadGroupSetsRequest clone() =>
+      SearchReadGroupSetsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchReadGroupSetsRequest copyWith(
+          void Function(SearchReadGroupSetsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as SearchReadGroupSetsRequest))
+          as SearchReadGroupSetsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchReadGroupSetsRequest create() => SearchReadGroupSetsRequest._();
   SearchReadGroupSetsRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchReadGroupSetsRequest> createRepeated() => $pb.PbList<SearchReadGroupSetsRequest>();
+  static $pb.PbList<SearchReadGroupSetsRequest> createRepeated() =>
+      $pb.PbList<SearchReadGroupSetsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchReadGroupSetsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchReadGroupSetsRequest>(create);
+  static SearchReadGroupSetsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchReadGroupSetsRequest>(create);
   static SearchReadGroupSetsRequest? _defaultInstance;
 
   /// Restricts this query to read group sets within the given datasets. At least
@@ -89,7 +101,10 @@ class SearchReadGroupSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,7 +115,10 @@ class SearchReadGroupSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(2, v); }
+  set name($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -111,7 +129,10 @@ class SearchReadGroupSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(3);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(3, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(3);
   @$pb.TagNumber(4)
@@ -134,34 +155,49 @@ class SearchReadGroupSetsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchReadGroupSetsResponse._() : super();
-  factory SearchReadGroupSetsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchReadGroupSetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchReadGroupSetsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchReadGroupSetsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchReadGroupSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<$136.ReadGroupSet>(1, _omitFieldNames ? '' : 'readGroupSets', $pb.PbFieldType.PM, subBuilder: $136.ReadGroupSet.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchReadGroupSetsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..pc<$136.ReadGroupSet>(
+        1, _omitFieldNames ? '' : 'readGroupSets', $pb.PbFieldType.PM,
+        subBuilder: $136.ReadGroupSet.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchReadGroupSetsResponse clone() => SearchReadGroupSetsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchReadGroupSetsResponse copyWith(void Function(SearchReadGroupSetsResponse) updates) => super.copyWith((message) => updates(message as SearchReadGroupSetsResponse)) as SearchReadGroupSetsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchReadGroupSetsResponse clone() =>
+      SearchReadGroupSetsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchReadGroupSetsResponse copyWith(
+          void Function(SearchReadGroupSetsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as SearchReadGroupSetsResponse))
+          as SearchReadGroupSetsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SearchReadGroupSetsResponse create() => SearchReadGroupSetsResponse._();
+  static SearchReadGroupSetsResponse create() =>
+      SearchReadGroupSetsResponse._();
   SearchReadGroupSetsResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchReadGroupSetsResponse> createRepeated() => $pb.PbList<SearchReadGroupSetsResponse>();
+  static $pb.PbList<SearchReadGroupSetsResponse> createRepeated() =>
+      $pb.PbList<SearchReadGroupSetsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchReadGroupSetsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchReadGroupSetsResponse>(create);
+  static SearchReadGroupSetsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchReadGroupSetsResponse>(create);
   static SearchReadGroupSetsResponse? _defaultInstance;
 
   /// The list of matching read group sets.
@@ -174,7 +210,10 @@ class SearchReadGroupSetsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -205,36 +244,53 @@ class ImportReadGroupSetsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ImportReadGroupSetsRequest._() : super();
-  factory ImportReadGroupSetsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportReadGroupSetsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportReadGroupSetsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportReadGroupSetsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportReadGroupSetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportReadGroupSetsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'datasetId')
     ..pPS(2, _omitFieldNames ? '' : 'sourceUris')
     ..aOS(4, _omitFieldNames ? '' : 'referenceSetId')
-    ..e<ImportReadGroupSetsRequest_PartitionStrategy>(5, _omitFieldNames ? '' : 'partitionStrategy', $pb.PbFieldType.OE, defaultOrMaker: ImportReadGroupSetsRequest_PartitionStrategy.PARTITION_STRATEGY_UNSPECIFIED, valueOf: ImportReadGroupSetsRequest_PartitionStrategy.valueOf, enumValues: ImportReadGroupSetsRequest_PartitionStrategy.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ImportReadGroupSetsRequest_PartitionStrategy>(
+        5, _omitFieldNames ? '' : 'partitionStrategy', $pb.PbFieldType.OE,
+        defaultOrMaker: ImportReadGroupSetsRequest_PartitionStrategy
+            .PARTITION_STRATEGY_UNSPECIFIED,
+        valueOf: ImportReadGroupSetsRequest_PartitionStrategy.valueOf,
+        enumValues: ImportReadGroupSetsRequest_PartitionStrategy.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportReadGroupSetsRequest clone() => ImportReadGroupSetsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportReadGroupSetsRequest copyWith(void Function(ImportReadGroupSetsRequest) updates) => super.copyWith((message) => updates(message as ImportReadGroupSetsRequest)) as ImportReadGroupSetsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportReadGroupSetsRequest clone() =>
+      ImportReadGroupSetsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportReadGroupSetsRequest copyWith(
+          void Function(ImportReadGroupSetsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ImportReadGroupSetsRequest))
+          as ImportReadGroupSetsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImportReadGroupSetsRequest create() => ImportReadGroupSetsRequest._();
   ImportReadGroupSetsRequest createEmptyInstance() => create();
-  static $pb.PbList<ImportReadGroupSetsRequest> createRepeated() => $pb.PbList<ImportReadGroupSetsRequest>();
+  static $pb.PbList<ImportReadGroupSetsRequest> createRepeated() =>
+      $pb.PbList<ImportReadGroupSetsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ImportReadGroupSetsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportReadGroupSetsRequest>(create);
+  static ImportReadGroupSetsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportReadGroupSetsRequest>(create);
   static ImportReadGroupSetsRequest? _defaultInstance;
 
   /// Required. The ID of the dataset these read group sets will belong to. The
@@ -242,7 +298,10 @@ class ImportReadGroupSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get datasetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set datasetId($core.String v) { $_setString(0, v); }
+  set datasetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatasetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -268,7 +327,10 @@ class ImportReadGroupSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get referenceSetId => $_getSZ(2);
   @$pb.TagNumber(4)
-  set referenceSetId($core.String v) { $_setString(2, v); }
+  set referenceSetId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReferenceSetId() => $_has(2);
   @$pb.TagNumber(4)
@@ -277,9 +339,13 @@ class ImportReadGroupSetsRequest extends $pb.GeneratedMessage {
   /// The partition strategy describes how read groups are partitioned into read
   /// group sets.
   @$pb.TagNumber(5)
-  ImportReadGroupSetsRequest_PartitionStrategy get partitionStrategy => $_getN(3);
+  ImportReadGroupSetsRequest_PartitionStrategy get partitionStrategy =>
+      $_getN(3);
   @$pb.TagNumber(5)
-  set partitionStrategy(ImportReadGroupSetsRequest_PartitionStrategy v) { setField(5, v); }
+  set partitionStrategy(ImportReadGroupSetsRequest_PartitionStrategy v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPartitionStrategy() => $_has(3);
   @$pb.TagNumber(5)
@@ -298,33 +364,46 @@ class ImportReadGroupSetsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ImportReadGroupSetsResponse._() : super();
-  factory ImportReadGroupSetsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportReadGroupSetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportReadGroupSetsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportReadGroupSetsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportReadGroupSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportReadGroupSetsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'readGroupSetIds')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportReadGroupSetsResponse clone() => ImportReadGroupSetsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportReadGroupSetsResponse copyWith(void Function(ImportReadGroupSetsResponse) updates) => super.copyWith((message) => updates(message as ImportReadGroupSetsResponse)) as ImportReadGroupSetsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportReadGroupSetsResponse clone() =>
+      ImportReadGroupSetsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportReadGroupSetsResponse copyWith(
+          void Function(ImportReadGroupSetsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ImportReadGroupSetsResponse))
+          as ImportReadGroupSetsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ImportReadGroupSetsResponse create() => ImportReadGroupSetsResponse._();
+  static ImportReadGroupSetsResponse create() =>
+      ImportReadGroupSetsResponse._();
   ImportReadGroupSetsResponse createEmptyInstance() => create();
-  static $pb.PbList<ImportReadGroupSetsResponse> createRepeated() => $pb.PbList<ImportReadGroupSetsResponse>();
+  static $pb.PbList<ImportReadGroupSetsResponse> createRepeated() =>
+      $pb.PbList<ImportReadGroupSetsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ImportReadGroupSetsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportReadGroupSetsResponse>(create);
+  static ImportReadGroupSetsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportReadGroupSetsResponse>(create);
   static ImportReadGroupSetsResponse? _defaultInstance;
 
   /// IDs of the read group sets that were created.
@@ -356,36 +435,47 @@ class ExportReadGroupSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ExportReadGroupSetRequest._() : super();
-  factory ExportReadGroupSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportReadGroupSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportReadGroupSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportReadGroupSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportReadGroupSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportReadGroupSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'exportUri')
     ..aOS(3, _omitFieldNames ? '' : 'readGroupSetId')
     ..pPS(4, _omitFieldNames ? '' : 'referenceNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportReadGroupSetRequest clone() => ExportReadGroupSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportReadGroupSetRequest copyWith(void Function(ExportReadGroupSetRequest) updates) => super.copyWith((message) => updates(message as ExportReadGroupSetRequest)) as ExportReadGroupSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportReadGroupSetRequest clone() =>
+      ExportReadGroupSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportReadGroupSetRequest copyWith(
+          void Function(ExportReadGroupSetRequest) updates) =>
+      super.copyWith((message) => updates(message as ExportReadGroupSetRequest))
+          as ExportReadGroupSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportReadGroupSetRequest create() => ExportReadGroupSetRequest._();
   ExportReadGroupSetRequest createEmptyInstance() => create();
-  static $pb.PbList<ExportReadGroupSetRequest> createRepeated() => $pb.PbList<ExportReadGroupSetRequest>();
+  static $pb.PbList<ExportReadGroupSetRequest> createRepeated() =>
+      $pb.PbList<ExportReadGroupSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExportReadGroupSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportReadGroupSetRequest>(create);
+  static ExportReadGroupSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportReadGroupSetRequest>(create);
   static ExportReadGroupSetRequest? _defaultInstance;
 
   /// Required. The Google Cloud project ID that owns this
@@ -393,7 +483,10 @@ class ExportReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -405,7 +498,10 @@ class ExportReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get exportUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set exportUri($core.String v) { $_setString(1, v); }
+  set exportUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExportUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -416,7 +512,10 @@ class ExportReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get readGroupSetId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set readGroupSetId($core.String v) { $_setString(2, v); }
+  set readGroupSetId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReadGroupSetId() => $_has(2);
   @$pb.TagNumber(3)
@@ -448,35 +547,48 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateReadGroupSetRequest._() : super();
-  factory UpdateReadGroupSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateReadGroupSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateReadGroupSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateReadGroupSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateReadGroupSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateReadGroupSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'readGroupSetId')
-    ..aOM<$136.ReadGroupSet>(2, _omitFieldNames ? '' : 'readGroupSet', subBuilder: $136.ReadGroupSet.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$136.ReadGroupSet>(2, _omitFieldNames ? '' : 'readGroupSet',
+        subBuilder: $136.ReadGroupSet.create)
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateReadGroupSetRequest clone() => UpdateReadGroupSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateReadGroupSetRequest copyWith(void Function(UpdateReadGroupSetRequest) updates) => super.copyWith((message) => updates(message as UpdateReadGroupSetRequest)) as UpdateReadGroupSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateReadGroupSetRequest clone() =>
+      UpdateReadGroupSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateReadGroupSetRequest copyWith(
+          void Function(UpdateReadGroupSetRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateReadGroupSetRequest))
+          as UpdateReadGroupSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateReadGroupSetRequest create() => UpdateReadGroupSetRequest._();
   UpdateReadGroupSetRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateReadGroupSetRequest> createRepeated() => $pb.PbList<UpdateReadGroupSetRequest>();
+  static $pb.PbList<UpdateReadGroupSetRequest> createRepeated() =>
+      $pb.PbList<UpdateReadGroupSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateReadGroupSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateReadGroupSetRequest>(create);
+  static UpdateReadGroupSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateReadGroupSetRequest>(create);
   static UpdateReadGroupSetRequest? _defaultInstance;
 
   /// The ID of the read group set to be updated. The caller must have WRITE
@@ -484,7 +596,10 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get readGroupSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set readGroupSetId($core.String v) { $_setString(0, v); }
+  set readGroupSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReadGroupSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -495,7 +610,10 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $136.ReadGroupSet get readGroupSet => $_getN(1);
   @$pb.TagNumber(2)
-  set readGroupSet($136.ReadGroupSet v) { setField(2, v); }
+  set readGroupSet($136.ReadGroupSet v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReadGroupSet() => $_has(1);
   @$pb.TagNumber(2)
@@ -513,7 +631,10 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) { setField(3, v); }
+  set updateMask($333.FieldMask v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
@@ -533,33 +654,44 @@ class DeleteReadGroupSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteReadGroupSetRequest._() : super();
-  factory DeleteReadGroupSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteReadGroupSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteReadGroupSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteReadGroupSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteReadGroupSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteReadGroupSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'readGroupSetId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteReadGroupSetRequest clone() => DeleteReadGroupSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteReadGroupSetRequest copyWith(void Function(DeleteReadGroupSetRequest) updates) => super.copyWith((message) => updates(message as DeleteReadGroupSetRequest)) as DeleteReadGroupSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteReadGroupSetRequest clone() =>
+      DeleteReadGroupSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteReadGroupSetRequest copyWith(
+          void Function(DeleteReadGroupSetRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteReadGroupSetRequest))
+          as DeleteReadGroupSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteReadGroupSetRequest create() => DeleteReadGroupSetRequest._();
   DeleteReadGroupSetRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteReadGroupSetRequest> createRepeated() => $pb.PbList<DeleteReadGroupSetRequest>();
+  static $pb.PbList<DeleteReadGroupSetRequest> createRepeated() =>
+      $pb.PbList<DeleteReadGroupSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteReadGroupSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteReadGroupSetRequest>(create);
+  static DeleteReadGroupSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteReadGroupSetRequest>(create);
   static DeleteReadGroupSetRequest? _defaultInstance;
 
   /// The ID of the read group set to be deleted. The caller must have WRITE
@@ -567,7 +699,10 @@ class DeleteReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get readGroupSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set readGroupSetId($core.String v) { $_setString(0, v); }
+  set readGroupSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReadGroupSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -585,40 +720,54 @@ class GetReadGroupSetRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetReadGroupSetRequest._() : super();
-  factory GetReadGroupSetRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetReadGroupSetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetReadGroupSetRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetReadGroupSetRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetReadGroupSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetReadGroupSetRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'readGroupSetId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetReadGroupSetRequest clone() => GetReadGroupSetRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetReadGroupSetRequest copyWith(void Function(GetReadGroupSetRequest) updates) => super.copyWith((message) => updates(message as GetReadGroupSetRequest)) as GetReadGroupSetRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetReadGroupSetRequest clone() =>
+      GetReadGroupSetRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetReadGroupSetRequest copyWith(
+          void Function(GetReadGroupSetRequest) updates) =>
+      super.copyWith((message) => updates(message as GetReadGroupSetRequest))
+          as GetReadGroupSetRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetReadGroupSetRequest create() => GetReadGroupSetRequest._();
   GetReadGroupSetRequest createEmptyInstance() => create();
-  static $pb.PbList<GetReadGroupSetRequest> createRepeated() => $pb.PbList<GetReadGroupSetRequest>();
+  static $pb.PbList<GetReadGroupSetRequest> createRepeated() =>
+      $pb.PbList<GetReadGroupSetRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetReadGroupSetRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetReadGroupSetRequest>(create);
+  static GetReadGroupSetRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetReadGroupSetRequest>(create);
   static GetReadGroupSetRequest? _defaultInstance;
 
   /// The ID of the read group set.
   @$pb.TagNumber(1)
   $core.String get readGroupSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set readGroupSetId($core.String v) { $_setString(0, v); }
+  set readGroupSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReadGroupSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -660,10 +809,18 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListCoverageBucketsRequest._() : super();
-  factory ListCoverageBucketsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListCoverageBucketsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListCoverageBucketsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListCoverageBucketsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCoverageBucketsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCoverageBucketsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'readGroupSetId')
     ..aOS(3, _omitFieldNames ? '' : 'referenceName')
     ..aInt64(4, _omitFieldNames ? '' : 'start')
@@ -671,35 +828,42 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
     ..aInt64(6, _omitFieldNames ? '' : 'targetBucketWidth')
     ..aOS(7, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(8, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListCoverageBucketsRequest clone() => ListCoverageBucketsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListCoverageBucketsRequest copyWith(void Function(ListCoverageBucketsRequest) updates) => super.copyWith((message) => updates(message as ListCoverageBucketsRequest)) as ListCoverageBucketsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListCoverageBucketsRequest clone() =>
+      ListCoverageBucketsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListCoverageBucketsRequest copyWith(
+          void Function(ListCoverageBucketsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListCoverageBucketsRequest))
+          as ListCoverageBucketsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListCoverageBucketsRequest create() => ListCoverageBucketsRequest._();
   ListCoverageBucketsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListCoverageBucketsRequest> createRepeated() => $pb.PbList<ListCoverageBucketsRequest>();
+  static $pb.PbList<ListCoverageBucketsRequest> createRepeated() =>
+      $pb.PbList<ListCoverageBucketsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListCoverageBucketsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCoverageBucketsRequest>(create);
+  static ListCoverageBucketsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCoverageBucketsRequest>(create);
   static ListCoverageBucketsRequest? _defaultInstance;
 
   /// Required. The ID of the read group set over which coverage is requested.
   @$pb.TagNumber(1)
   $core.String get readGroupSetId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set readGroupSetId($core.String v) { $_setString(0, v); }
+  set readGroupSetId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReadGroupSetId() => $_has(0);
   @$pb.TagNumber(1)
@@ -710,7 +874,10 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get referenceName => $_getSZ(1);
   @$pb.TagNumber(3)
-  set referenceName($core.String v) { $_setString(1, v); }
+  set referenceName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReferenceName() => $_has(1);
   @$pb.TagNumber(3)
@@ -721,7 +888,10 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get start => $_getI64(2);
   @$pb.TagNumber(4)
-  set start($fixnum.Int64 v) { $_setInt64(2, v); }
+  set start($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStart() => $_has(2);
   @$pb.TagNumber(4)
@@ -733,7 +903,10 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get end => $_getI64(3);
   @$pb.TagNumber(5)
-  set end($fixnum.Int64 v) { $_setInt64(3, v); }
+  set end($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEnd() => $_has(3);
   @$pb.TagNumber(5)
@@ -749,7 +922,10 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $fixnum.Int64 get targetBucketWidth => $_getI64(4);
   @$pb.TagNumber(6)
-  set targetBucketWidth($fixnum.Int64 v) { $_setInt64(4, v); }
+  set targetBucketWidth($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTargetBucketWidth() => $_has(4);
   @$pb.TagNumber(6)
@@ -761,7 +937,10 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get pageToken => $_getSZ(5);
   @$pb.TagNumber(7)
-  set pageToken($core.String v) { $_setString(5, v); }
+  set pageToken($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPageToken() => $_has(5);
   @$pb.TagNumber(7)
@@ -772,7 +951,10 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get pageSize => $_getIZ(6);
   @$pb.TagNumber(8)
-  set pageSize($core.int v) { $_setSignedInt32(6, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPageSize() => $_has(6);
   @$pb.TagNumber(8)
@@ -796,41 +978,55 @@ class CoverageBucket extends $pb.GeneratedMessage {
     return $result;
   }
   CoverageBucket._() : super();
-  factory CoverageBucket.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CoverageBucket.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CoverageBucket.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CoverageBucket.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CoverageBucket', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..aOM<$440.Range>(1, _omitFieldNames ? '' : 'range', subBuilder: $440.Range.create)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'meanCoverage', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CoverageBucket',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..aOM<$440.Range>(1, _omitFieldNames ? '' : 'range',
+        subBuilder: $440.Range.create)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'meanCoverage', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CoverageBucket clone() => CoverageBucket()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CoverageBucket copyWith(void Function(CoverageBucket) updates) => super.copyWith((message) => updates(message as CoverageBucket)) as CoverageBucket;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CoverageBucket copyWith(void Function(CoverageBucket) updates) =>
+      super.copyWith((message) => updates(message as CoverageBucket))
+          as CoverageBucket;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CoverageBucket create() => CoverageBucket._();
   CoverageBucket createEmptyInstance() => create();
-  static $pb.PbList<CoverageBucket> createRepeated() => $pb.PbList<CoverageBucket>();
+  static $pb.PbList<CoverageBucket> createRepeated() =>
+      $pb.PbList<CoverageBucket>();
   @$core.pragma('dart2js:noInline')
-  static CoverageBucket getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CoverageBucket>(create);
+  static CoverageBucket getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CoverageBucket>(create);
   static CoverageBucket? _defaultInstance;
 
   /// The genomic coordinate range spanned by this bucket.
   @$pb.TagNumber(1)
   $440.Range get range => $_getN(0);
   @$pb.TagNumber(1)
-  set range($440.Range v) { setField(1, v); }
+  set range($440.Range v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRange() => $_has(0);
   @$pb.TagNumber(1)
@@ -843,7 +1039,10 @@ class CoverageBucket extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get meanCoverage => $_getN(1);
   @$pb.TagNumber(2)
-  set meanCoverage($core.double v) { $_setFloat(1, v); }
+  set meanCoverage($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMeanCoverage() => $_has(1);
   @$pb.TagNumber(2)
@@ -869,35 +1068,50 @@ class ListCoverageBucketsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListCoverageBucketsResponse._() : super();
-  factory ListCoverageBucketsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListCoverageBucketsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListCoverageBucketsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListCoverageBucketsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCoverageBucketsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCoverageBucketsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'bucketWidth')
-    ..pc<CoverageBucket>(2, _omitFieldNames ? '' : 'coverageBuckets', $pb.PbFieldType.PM, subBuilder: CoverageBucket.create)
+    ..pc<CoverageBucket>(
+        2, _omitFieldNames ? '' : 'coverageBuckets', $pb.PbFieldType.PM,
+        subBuilder: CoverageBucket.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListCoverageBucketsResponse clone() => ListCoverageBucketsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListCoverageBucketsResponse copyWith(void Function(ListCoverageBucketsResponse) updates) => super.copyWith((message) => updates(message as ListCoverageBucketsResponse)) as ListCoverageBucketsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListCoverageBucketsResponse clone() =>
+      ListCoverageBucketsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListCoverageBucketsResponse copyWith(
+          void Function(ListCoverageBucketsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListCoverageBucketsResponse))
+          as ListCoverageBucketsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListCoverageBucketsResponse create() => ListCoverageBucketsResponse._();
+  static ListCoverageBucketsResponse create() =>
+      ListCoverageBucketsResponse._();
   ListCoverageBucketsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListCoverageBucketsResponse> createRepeated() => $pb.PbList<ListCoverageBucketsResponse>();
+  static $pb.PbList<ListCoverageBucketsResponse> createRepeated() =>
+      $pb.PbList<ListCoverageBucketsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListCoverageBucketsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCoverageBucketsResponse>(create);
+  static ListCoverageBucketsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCoverageBucketsResponse>(create);
   static ListCoverageBucketsResponse? _defaultInstance;
 
   /// The length of each coverage bucket in base pairs. Note that buckets at the
@@ -907,7 +1121,10 @@ class ListCoverageBucketsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get bucketWidth => $_getI64(0);
   @$pb.TagNumber(1)
-  set bucketWidth($fixnum.Int64 v) { $_setInt64(0, v); }
+  set bucketWidth($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBucketWidth() => $_has(0);
   @$pb.TagNumber(1)
@@ -926,7 +1143,10 @@ class ListCoverageBucketsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get nextPageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set nextPageToken($core.String v) { $_setString(2, v); }
+  set nextPageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNextPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -969,10 +1189,18 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchReadsRequest._() : super();
-  factory SearchReadsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchReadsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchReadsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchReadsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchReadsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchReadsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'readGroupSetIds')
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
@@ -980,28 +1208,29 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'referenceName')
     ..aInt64(8, _omitFieldNames ? '' : 'start')
     ..aInt64(9, _omitFieldNames ? '' : 'end')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchReadsRequest clone() => SearchReadsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchReadsRequest copyWith(void Function(SearchReadsRequest) updates) => super.copyWith((message) => updates(message as SearchReadsRequest)) as SearchReadsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchReadsRequest copyWith(void Function(SearchReadsRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchReadsRequest))
+          as SearchReadsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchReadsRequest create() => SearchReadsRequest._();
   SearchReadsRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchReadsRequest> createRepeated() => $pb.PbList<SearchReadsRequest>();
+  static $pb.PbList<SearchReadsRequest> createRepeated() =>
+      $pb.PbList<SearchReadsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchReadsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchReadsRequest>(create);
+  static SearchReadsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchReadsRequest>(create);
   static SearchReadsRequest? _defaultInstance;
 
   /// The IDs of the read groups sets within which to search for reads. All
@@ -1017,7 +1246,10 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(3)
@@ -1028,7 +1260,10 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(4)
@@ -1046,7 +1281,10 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get referenceName => $_getSZ(4);
   @$pb.TagNumber(7)
-  set referenceName($core.String v) { $_setString(4, v); }
+  set referenceName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasReferenceName() => $_has(4);
   @$pb.TagNumber(7)
@@ -1057,7 +1295,10 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $fixnum.Int64 get start => $_getI64(5);
   @$pb.TagNumber(8)
-  set start($fixnum.Int64 v) { $_setInt64(5, v); }
+  set start($fixnum.Int64 v) {
+    $_setInt64(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasStart() => $_has(5);
   @$pb.TagNumber(8)
@@ -1068,7 +1309,10 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $fixnum.Int64 get end => $_getI64(6);
   @$pb.TagNumber(9)
-  set end($fixnum.Int64 v) { $_setInt64(6, v); }
+  set end($fixnum.Int64 v) {
+    $_setInt64(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasEnd() => $_has(6);
   @$pb.TagNumber(9)
@@ -1091,34 +1335,44 @@ class SearchReadsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchReadsResponse._() : super();
-  factory SearchReadsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchReadsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchReadsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchReadsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchReadsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<$441.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM, subBuilder: $441.Read.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchReadsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..pc<$441.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM,
+        subBuilder: $441.Read.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchReadsResponse clone() => SearchReadsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchReadsResponse copyWith(void Function(SearchReadsResponse) updates) => super.copyWith((message) => updates(message as SearchReadsResponse)) as SearchReadsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchReadsResponse copyWith(void Function(SearchReadsResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchReadsResponse))
+          as SearchReadsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchReadsResponse create() => SearchReadsResponse._();
   SearchReadsResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchReadsResponse> createRepeated() => $pb.PbList<SearchReadsResponse>();
+  static $pb.PbList<SearchReadsResponse> createRepeated() =>
+      $pb.PbList<SearchReadsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchReadsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchReadsResponse>(create);
+  static SearchReadsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchReadsResponse>(create);
   static SearchReadsResponse? _defaultInstance;
 
   /// The list of matching alignments sorted by mapped genomic coordinate,
@@ -1134,7 +1388,10 @@ class SearchReadsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1177,10 +1434,18 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   StreamReadsRequest._() : super();
-  factory StreamReadsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamReadsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamReadsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamReadsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamReadsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamReadsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'readGroupSetId')
     ..aOS(3, _omitFieldNames ? '' : 'referenceName')
@@ -1188,28 +1453,29 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
     ..aInt64(5, _omitFieldNames ? '' : 'end')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'shard', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'totalShards', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StreamReadsRequest clone() => StreamReadsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamReadsRequest copyWith(void Function(StreamReadsRequest) updates) => super.copyWith((message) => updates(message as StreamReadsRequest)) as StreamReadsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamReadsRequest copyWith(void Function(StreamReadsRequest) updates) =>
+      super.copyWith((message) => updates(message as StreamReadsRequest))
+          as StreamReadsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StreamReadsRequest create() => StreamReadsRequest._();
   StreamReadsRequest createEmptyInstance() => create();
-  static $pb.PbList<StreamReadsRequest> createRepeated() => $pb.PbList<StreamReadsRequest>();
+  static $pb.PbList<StreamReadsRequest> createRepeated() =>
+      $pb.PbList<StreamReadsRequest>();
   @$core.pragma('dart2js:noInline')
-  static StreamReadsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamReadsRequest>(create);
+  static StreamReadsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StreamReadsRequest>(create);
   static StreamReadsRequest? _defaultInstance;
 
   /// The Google Cloud project ID which will be billed
@@ -1218,7 +1484,10 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1228,7 +1497,10 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get readGroupSetId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set readGroupSetId($core.String v) { $_setString(1, v); }
+  set readGroupSetId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReadGroupSetId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1240,7 +1512,10 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get referenceName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set referenceName($core.String v) { $_setString(2, v); }
+  set referenceName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReferenceName() => $_has(2);
   @$pb.TagNumber(3)
@@ -1251,7 +1526,10 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get start => $_getI64(3);
   @$pb.TagNumber(4)
-  set start($fixnum.Int64 v) { $_setInt64(3, v); }
+  set start($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStart() => $_has(3);
   @$pb.TagNumber(4)
@@ -1262,7 +1540,10 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get end => $_getI64(4);
   @$pb.TagNumber(5)
-  set end($fixnum.Int64 v) { $_setInt64(4, v); }
+  set end($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEnd() => $_has(4);
   @$pb.TagNumber(5)
@@ -1278,7 +1559,10 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get shard => $_getIZ(5);
   @$pb.TagNumber(6)
-  set shard($core.int v) { $_setSignedInt32(5, v); }
+  set shard($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasShard() => $_has(5);
   @$pb.TagNumber(6)
@@ -1299,7 +1583,10 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get totalShards => $_getIZ(6);
   @$pb.TagNumber(7)
-  set totalShards($core.int v) { $_setSignedInt32(6, v); }
+  set totalShards($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTotalShards() => $_has(6);
   @$pb.TagNumber(7)
@@ -1317,39 +1604,49 @@ class StreamReadsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   StreamReadsResponse._() : super();
-  factory StreamReadsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamReadsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamReadsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamReadsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamReadsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<$441.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM, subBuilder: $441.Read.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamReadsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
+    ..pc<$441.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM,
+        subBuilder: $441.Read.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StreamReadsResponse clone() => StreamReadsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamReadsResponse copyWith(void Function(StreamReadsResponse) updates) => super.copyWith((message) => updates(message as StreamReadsResponse)) as StreamReadsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamReadsResponse copyWith(void Function(StreamReadsResponse) updates) =>
+      super.copyWith((message) => updates(message as StreamReadsResponse))
+          as StreamReadsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StreamReadsResponse create() => StreamReadsResponse._();
   StreamReadsResponse createEmptyInstance() => create();
-  static $pb.PbList<StreamReadsResponse> createRepeated() => $pb.PbList<StreamReadsResponse>();
+  static $pb.PbList<StreamReadsResponse> createRepeated() =>
+      $pb.PbList<StreamReadsResponse>();
   @$core.pragma('dart2js:noInline')
-  static StreamReadsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamReadsResponse>(create);
+  static StreamReadsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StreamReadsResponse>(create);
   static StreamReadsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<$441.Read> get alignments => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

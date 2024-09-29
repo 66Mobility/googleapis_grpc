@@ -28,4 +28,3 @@ final $typed_data.Uint8List positionDescriptor = $convert.base64Decode(
     'CghQb3NpdGlvbhIlCg5yZWZlcmVuY2VfbmFtZRgBIAEoCVINcmVmZXJlbmNlTmFtZRIaCghwb3'
     'NpdGlvbhgCIAEoA1IIcG9zaXRpb24SJQoOcmV2ZXJzZV9zdHJhbmQYAyABKAhSDXJldmVyc2VT'
     'dHJhbmQ=');
-

@@ -77,37 +77,272 @@ const Trip$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'vehicle_id', '3': 2, '4': 1, '5': 9, '10': 'vehicleId'},
-    {'1': 'trip_status', '3': 3, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.TripStatus', '10': 'tripStatus'},
-    {'1': 'trip_type', '3': 4, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.TripType', '10': 'tripType'},
-    {'1': 'pickup_point', '3': 5, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TerminalLocation', '10': 'pickupPoint'},
-    {'1': 'actual_pickup_point', '3': 22, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.StopLocation', '8': {}, '10': 'actualPickupPoint'},
-    {'1': 'actual_pickup_arrival_point', '3': 32, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.StopLocation', '8': {}, '10': 'actualPickupArrivalPoint'},
-    {'1': 'pickup_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'pickupTime'},
-    {'1': 'intermediate_destinations', '3': 14, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.TerminalLocation', '10': 'intermediateDestinations'},
-    {'1': 'intermediate_destinations_version', '3': 25, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'intermediateDestinationsVersion'},
-    {'1': 'intermediate_destination_index', '3': 15, '4': 1, '5': 5, '10': 'intermediateDestinationIndex'},
-    {'1': 'actual_intermediate_destination_arrival_points', '3': 33, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.StopLocation', '8': {}, '10': 'actualIntermediateDestinationArrivalPoints'},
-    {'1': 'actual_intermediate_destinations', '3': 34, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.StopLocation', '8': {}, '10': 'actualIntermediateDestinations'},
-    {'1': 'dropoff_point', '3': 7, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TerminalLocation', '10': 'dropoffPoint'},
-    {'1': 'actual_dropoff_point', '3': 23, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.StopLocation', '8': {}, '10': 'actualDropoffPoint'},
-    {'1': 'dropoff_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'dropoffTime'},
-    {'1': 'remaining_waypoints', '3': 16, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.TripWaypoint', '8': {}, '10': 'remainingWaypoints'},
-    {'1': 'vehicle_waypoints', '3': 20, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.TripWaypoint', '10': 'vehicleWaypoints'},
-    {'1': 'route', '3': 9, '4': 3, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'route'},
-    {'1': 'current_route_segment', '3': 21, '4': 1, '5': 9, '8': {}, '10': 'currentRouteSegment'},
-    {'1': 'current_route_segment_version', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'currentRouteSegmentVersion'},
-    {'1': 'current_route_segment_traffic', '3': 28, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.ConsumableTrafficPolyline', '8': {}, '10': 'currentRouteSegmentTraffic'},
-    {'1': 'current_route_segment_traffic_version', '3': 30, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'currentRouteSegmentTrafficVersion'},
-    {'1': 'current_route_segment_end_point', '3': 24, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TripWaypoint', '8': {}, '10': 'currentRouteSegmentEndPoint'},
-    {'1': 'remaining_distance_meters', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '8': {}, '10': 'remainingDistanceMeters'},
-    {'1': 'eta_to_first_waypoint', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'etaToFirstWaypoint'},
-    {'1': 'remaining_time_to_first_waypoint', '3': 27, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'remainingTimeToFirstWaypoint'},
-    {'1': 'remaining_waypoints_version', '3': 19, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'remainingWaypointsVersion'},
-    {'1': 'remaining_waypoints_route_version', '3': 29, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'remainingWaypointsRouteVersion'},
-    {'1': 'number_of_passengers', '3': 10, '4': 1, '5': 5, '8': {}, '10': 'numberOfPassengers'},
-    {'1': 'last_location', '3': 11, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.VehicleLocation', '8': {}, '10': 'lastLocation'},
-    {'1': 'last_location_snappable', '3': 26, '4': 1, '5': 8, '8': {}, '10': 'lastLocationSnappable'},
-    {'1': 'view', '3': 31, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.TripView', '10': 'view'},
+    {
+      '1': 'trip_status',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripStatus',
+      '10': 'tripStatus'
+    },
+    {
+      '1': 'trip_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripType',
+      '10': 'tripType'
+    },
+    {
+      '1': 'pickup_point',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TerminalLocation',
+      '10': 'pickupPoint'
+    },
+    {
+      '1': 'actual_pickup_point',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.StopLocation',
+      '8': {},
+      '10': 'actualPickupPoint'
+    },
+    {
+      '1': 'actual_pickup_arrival_point',
+      '3': 32,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.StopLocation',
+      '8': {},
+      '10': 'actualPickupArrivalPoint'
+    },
+    {
+      '1': 'pickup_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'pickupTime'
+    },
+    {
+      '1': 'intermediate_destinations',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TerminalLocation',
+      '10': 'intermediateDestinations'
+    },
+    {
+      '1': 'intermediate_destinations_version',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'intermediateDestinationsVersion'
+    },
+    {
+      '1': 'intermediate_destination_index',
+      '3': 15,
+      '4': 1,
+      '5': 5,
+      '10': 'intermediateDestinationIndex'
+    },
+    {
+      '1': 'actual_intermediate_destination_arrival_points',
+      '3': 33,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.StopLocation',
+      '8': {},
+      '10': 'actualIntermediateDestinationArrivalPoints'
+    },
+    {
+      '1': 'actual_intermediate_destinations',
+      '3': 34,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.StopLocation',
+      '8': {},
+      '10': 'actualIntermediateDestinations'
+    },
+    {
+      '1': 'dropoff_point',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TerminalLocation',
+      '10': 'dropoffPoint'
+    },
+    {
+      '1': 'actual_dropoff_point',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.StopLocation',
+      '8': {},
+      '10': 'actualDropoffPoint'
+    },
+    {
+      '1': 'dropoff_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'dropoffTime'
+    },
+    {
+      '1': 'remaining_waypoints',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TripWaypoint',
+      '8': {},
+      '10': 'remainingWaypoints'
+    },
+    {
+      '1': 'vehicle_waypoints',
+      '3': 20,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TripWaypoint',
+      '10': 'vehicleWaypoints'
+    },
+    {
+      '1': 'route',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'route'
+    },
+    {
+      '1': 'current_route_segment',
+      '3': 21,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'currentRouteSegment'
+    },
+    {
+      '1': 'current_route_segment_version',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'currentRouteSegmentVersion'
+    },
+    {
+      '1': 'current_route_segment_traffic',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.ConsumableTrafficPolyline',
+      '8': {},
+      '10': 'currentRouteSegmentTraffic'
+    },
+    {
+      '1': 'current_route_segment_traffic_version',
+      '3': 30,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'currentRouteSegmentTrafficVersion'
+    },
+    {
+      '1': 'current_route_segment_end_point',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TripWaypoint',
+      '8': {},
+      '10': 'currentRouteSegmentEndPoint'
+    },
+    {
+      '1': 'remaining_distance_meters',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '8': {},
+      '10': 'remainingDistanceMeters'
+    },
+    {
+      '1': 'eta_to_first_waypoint',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'etaToFirstWaypoint'
+    },
+    {
+      '1': 'remaining_time_to_first_waypoint',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'remainingTimeToFirstWaypoint'
+    },
+    {
+      '1': 'remaining_waypoints_version',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'remainingWaypointsVersion'
+    },
+    {
+      '1': 'remaining_waypoints_route_version',
+      '3': 29,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'remainingWaypointsRouteVersion'
+    },
+    {
+      '1': 'number_of_passengers',
+      '3': 10,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'numberOfPassengers'
+    },
+    {
+      '1': 'last_location',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleLocation',
+      '8': {},
+      '10': 'lastLocation'
+    },
+    {
+      '1': 'last_location_snappable',
+      '3': 26,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'lastLocationSnappable'
+    },
+    {
+      '1': 'view',
+      '3': 31,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripView',
+      '10': 'view'
+    },
   ],
   '7': {},
 };
@@ -170,8 +405,23 @@ final $typed_data.Uint8List tripDescriptor = $convert.base64Decode(
 const StopLocation$json = {
   '1': 'StopLocation',
   '2': [
-    {'1': 'point', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'point'},
-    {'1': 'timestamp', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timestamp'},
+    {
+      '1': 'point',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'point'
+    },
+    {
+      '1': 'timestamp',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timestamp'
+    },
     {
       '1': 'stop_time',
       '3': 3,
@@ -190,4 +440,3 @@ final $typed_data.Uint8List stopLocationDescriptor = $convert.base64Decode(
     'IFcG9pbnQSOAoJdGltZXN0YW1wGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIJ'
     'dGltZXN0YW1wEj4KCXN0b3BfdGltZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbX'
     'BCBRgB4EEEUghzdG9wVGltZQ==');
-

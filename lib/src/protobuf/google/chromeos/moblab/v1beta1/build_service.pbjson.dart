@@ -22,23 +22,32 @@ const FindMostStableBuildRequest$json = {
 };
 
 /// Descriptor for `FindMostStableBuildRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List findMostStableBuildRequestDescriptor = $convert.base64Decode(
-    'ChpGaW5kTW9zdFN0YWJsZUJ1aWxkUmVxdWVzdBJUCgxidWlsZF90YXJnZXQYASABKAlCMeBBAv'
-    'pBKwopY2hyb21lb3Ntb2JsYWIuZ29vZ2xlYXBpcy5jb20vQnVpbGRUYXJnZXRSC2J1aWxkVGFy'
-    'Z2V0');
+final $typed_data.Uint8List findMostStableBuildRequestDescriptor =
+    $convert.base64Decode(
+        'ChpGaW5kTW9zdFN0YWJsZUJ1aWxkUmVxdWVzdBJUCgxidWlsZF90YXJnZXQYASABKAlCMeBBAv'
+        'pBKwopY2hyb21lb3Ntb2JsYWIuZ29vZ2xlYXBpcy5jb20vQnVpbGRUYXJnZXRSC2J1aWxkVGFy'
+        'Z2V0');
 
 @$core.Deprecated('Use findMostStableBuildResponseDescriptor instead')
 const FindMostStableBuildResponse$json = {
   '1': 'FindMostStableBuildResponse',
   '2': [
-    {'1': 'build', '3': 1, '4': 1, '5': 11, '6': '.google.chromeos.moblab.v1beta1.Build', '10': 'build'},
+    {
+      '1': 'build',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.moblab.v1beta1.Build',
+      '10': 'build'
+    },
   ],
 };
 
 /// Descriptor for `FindMostStableBuildResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List findMostStableBuildResponseDescriptor = $convert.base64Decode(
-    'ChtGaW5kTW9zdFN0YWJsZUJ1aWxkUmVzcG9uc2USOwoFYnVpbGQYASABKAsyJS5nb29nbGUuY2'
-    'hyb21lb3MubW9ibGFiLnYxYmV0YTEuQnVpbGRSBWJ1aWxk');
+final $typed_data.Uint8List findMostStableBuildResponseDescriptor =
+    $convert.base64Decode(
+        'ChtGaW5kTW9zdFN0YWJsZUJ1aWxkUmVzcG9uc2USOwoFYnVpbGQYASABKAsyJS5nb29nbGUuY2'
+        'hyb21lb3MubW9ibGFiLnYxYmV0YTEuQnVpbGRSBWJ1aWxk');
 
 @$core.Deprecated('Use listBuildTargetsRequestDescriptor instead')
 const ListBuildTargetsRequest$json = {
@@ -50,15 +59,23 @@ const ListBuildTargetsRequest$json = {
 };
 
 /// Descriptor for `ListBuildTargetsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listBuildTargetsRequestDescriptor = $convert.base64Decode(
-    'ChdMaXN0QnVpbGRUYXJnZXRzUmVxdWVzdBIgCglwYWdlX3NpemUYASABKAVCA+BBAVIIcGFnZV'
-    'NpemUSIgoKcGFnZV90b2tlbhgCIAEoCUID4EEBUglwYWdlVG9rZW4=');
+final $typed_data.Uint8List listBuildTargetsRequestDescriptor =
+    $convert.base64Decode(
+        'ChdMaXN0QnVpbGRUYXJnZXRzUmVxdWVzdBIgCglwYWdlX3NpemUYASABKAVCA+BBAVIIcGFnZV'
+        'NpemUSIgoKcGFnZV90b2tlbhgCIAEoCUID4EEBUglwYWdlVG9rZW4=');
 
 @$core.Deprecated('Use listBuildTargetsResponseDescriptor instead')
 const ListBuildTargetsResponse$json = {
   '1': 'ListBuildTargetsResponse',
   '2': [
-    {'1': 'build_targets', '3': 1, '4': 3, '5': 11, '6': '.google.chromeos.moblab.v1beta1.BuildTarget', '10': 'buildTargets'},
+    {
+      '1': 'build_targets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chromeos.moblab.v1beta1.BuildTarget',
+      '10': 'buildTargets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 5, '10': 'totalSize'},
   ],
@@ -91,7 +108,14 @@ final $typed_data.Uint8List listModelsRequestDescriptor = $convert.base64Decode(
 const ListModelsResponse$json = {
   '1': 'ListModelsResponse',
   '2': [
-    {'1': 'models', '3': 1, '4': 3, '5': 11, '6': '.google.chromeos.moblab.v1beta1.Model', '10': 'models'},
+    {
+      '1': 'models',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chromeos.moblab.v1beta1.Model',
+      '10': 'models'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 5, '10': 'totalSize'},
   ],
@@ -111,8 +135,24 @@ const ListBuildsRequest$json = {
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
     {'1': 'filter', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'read_mask', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'readMask'},
-    {'1': 'group_by', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'groupBy'},
+    {
+      '1': 'read_mask',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'readMask'
+    },
+    {
+      '1': 'group_by',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'groupBy'
+    },
   ],
 };
 
@@ -129,7 +169,14 @@ final $typed_data.Uint8List listBuildsRequestDescriptor = $convert.base64Decode(
 const ListBuildsResponse$json = {
   '1': 'ListBuildsResponse',
   '2': [
-    {'1': 'builds', '3': 1, '4': 3, '5': 11, '6': '.google.chromeos.moblab.v1beta1.Build', '10': 'builds'},
+    {
+      '1': 'builds',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chromeos.moblab.v1beta1.Build',
+      '10': 'builds'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 5, '10': 'totalSize'},
   ],
@@ -151,18 +198,33 @@ const CheckBuildStageStatusRequest$json = {
 };
 
 /// Descriptor for `CheckBuildStageStatusRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List checkBuildStageStatusRequestDescriptor = $convert.base64Decode(
-    'ChxDaGVja0J1aWxkU3RhZ2VTdGF0dXNSZXF1ZXN0EkcKBG5hbWUYASABKAlCM+BBAvpBLQorY2'
-    'hyb21lb3Ntb2JsYWIuZ29vZ2xlYXBpcy5jb20vQnVpbGRBcnRpZmFjdFIEbmFtZRIbCgZmaWx0'
-    'ZXIYAiABKAlCA+BBAVIGZmlsdGVy');
+final $typed_data.Uint8List checkBuildStageStatusRequestDescriptor =
+    $convert.base64Decode(
+        'ChxDaGVja0J1aWxkU3RhZ2VTdGF0dXNSZXF1ZXN0EkcKBG5hbWUYASABKAlCM+BBAvpBLQorY2'
+        'hyb21lb3Ntb2JsYWIuZ29vZ2xlYXBpcy5jb20vQnVpbGRBcnRpZmFjdFIEbmFtZRIbCgZmaWx0'
+        'ZXIYAiABKAlCA+BBAVIGZmlsdGVy');
 
 @$core.Deprecated('Use checkBuildStageStatusResponseDescriptor instead')
 const CheckBuildStageStatusResponse$json = {
   '1': 'CheckBuildStageStatusResponse',
   '2': [
     {'1': 'is_build_staged', '3': 1, '4': 1, '5': 8, '10': 'isBuildStaged'},
-    {'1': 'staged_build_artifact', '3': 2, '4': 1, '5': 11, '6': '.google.chromeos.moblab.v1beta1.BuildArtifact', '10': 'stagedBuildArtifact'},
-    {'1': 'source_build_artifact', '3': 3, '4': 1, '5': 11, '6': '.google.chromeos.moblab.v1beta1.BuildArtifact', '10': 'sourceBuildArtifact'},
+    {
+      '1': 'staged_build_artifact',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.moblab.v1beta1.BuildArtifact',
+      '10': 'stagedBuildArtifact'
+    },
+    {
+      '1': 'source_build_artifact',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.moblab.v1beta1.BuildArtifact',
+      '10': 'sourceBuildArtifact'
+    },
   ],
 };
 
@@ -193,7 +255,14 @@ final $typed_data.Uint8List stageBuildRequestDescriptor = $convert.base64Decode(
 const StageBuildResponse$json = {
   '1': 'StageBuildResponse',
   '2': [
-    {'1': 'staged_build_artifact', '3': 1, '4': 1, '5': 11, '6': '.google.chromeos.moblab.v1beta1.BuildArtifact', '10': 'stagedBuildArtifact'},
+    {
+      '1': 'staged_build_artifact',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.moblab.v1beta1.BuildArtifact',
+      '10': 'stagedBuildArtifact'
+    },
   ],
 };
 
@@ -208,8 +277,22 @@ const StageBuildMetadata$json = {
   '1': 'StageBuildMetadata',
   '2': [
     {'1': 'progress_percent', '3': 1, '4': 1, '5': 2, '10': 'progressPercent'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -219,4 +302,3 @@ final $typed_data.Uint8List stageBuildMetadataDescriptor = $convert.base64Decode
     'NQZXJjZW50EjkKCnN0YXJ0X3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w'
     'UglzdGFydFRpbWUSNQoIZW5kX3RpbWUYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW'
     '1wUgdlbmRUaW1l');
-

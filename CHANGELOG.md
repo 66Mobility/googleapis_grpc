@@ -1,3 +1,9 @@
+## 1.0.14
+
+- Update protobuf definitions
+- Edit the package description
+- Add `dart format .` as a build step when auto-generating the library
+
 ## 1.0.13
 
 - Update protobuf definitions

@@ -29,25 +29,31 @@ class LogsPanel extends $pb.GeneratedMessage {
     return $result;
   }
   LogsPanel._() : super();
-  factory LogsPanel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogsPanel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogsPanel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogsPanel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogsPanel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogsPanel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filter')
     ..pPS(2, _omitFieldNames ? '' : 'resourceNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LogsPanel clone() => LogsPanel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogsPanel copyWith(void Function(LogsPanel) updates) => super.copyWith((message) => updates(message as LogsPanel)) as LogsPanel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogsPanel copyWith(void Function(LogsPanel) updates) =>
+      super.copyWith((message) => updates(message as LogsPanel)) as LogsPanel;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -56,7 +62,8 @@ class LogsPanel extends $pb.GeneratedMessage {
   LogsPanel createEmptyInstance() => create();
   static $pb.PbList<LogsPanel> createRepeated() => $pb.PbList<LogsPanel>();
   @$core.pragma('dart2js:noInline')
-  static LogsPanel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogsPanel>(create);
+  static LogsPanel getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogsPanel>(create);
   static LogsPanel? _defaultInstance;
 
   /// A filter that chooses which log entries to return.  See [Advanced Logs
@@ -66,7 +73,10 @@ class LogsPanel extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get filter => $_getSZ(0);
   @$pb.TagNumber(1)
-  set filter($core.String v) { $_setString(0, v); }
+  set filter($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -78,6 +88,6 @@ class LogsPanel extends $pb.GeneratedMessage {
   $core.List<$core.String> get resourceNames => $_getList(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

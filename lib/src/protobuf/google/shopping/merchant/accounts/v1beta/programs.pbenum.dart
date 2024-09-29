@@ -15,23 +15,27 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Possible program participation states for the account.
 class Program_State extends $pb.ProtobufEnum {
-  static const Program_State STATE_UNSPECIFIED = Program_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const Program_State NOT_ELIGIBLE = Program_State._(1, _omitEnumNames ? '' : 'NOT_ELIGIBLE');
-  static const Program_State ELIGIBLE = Program_State._(2, _omitEnumNames ? '' : 'ELIGIBLE');
-  static const Program_State ENABLED = Program_State._(3, _omitEnumNames ? '' : 'ENABLED');
+  static const Program_State STATE_UNSPECIFIED =
+      Program_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const Program_State NOT_ELIGIBLE =
+      Program_State._(1, _omitEnumNames ? '' : 'NOT_ELIGIBLE');
+  static const Program_State ELIGIBLE =
+      Program_State._(2, _omitEnumNames ? '' : 'ELIGIBLE');
+  static const Program_State ENABLED =
+      Program_State._(3, _omitEnumNames ? '' : 'ENABLED');
 
-  static const $core.List<Program_State> values = <Program_State> [
+  static const $core.List<Program_State> values = <Program_State>[
     STATE_UNSPECIFIED,
     NOT_ELIGIBLE,
     ELIGIBLE,
     ENABLED,
   ];
 
-  static final $core.Map<$core.int, Program_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Program_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Program_State? valueOf($core.int value) => _byValue[value];
 
   const Program_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

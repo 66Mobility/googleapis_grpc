@@ -47,37 +47,49 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
     return $result;
   }
   SlsaProvenance_SlsaRecipe._() : super();
-  factory SlsaProvenance_SlsaRecipe.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlsaProvenance_SlsaRecipe.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlsaProvenance_SlsaRecipe.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlsaProvenance_SlsaRecipe.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlsaProvenance.SlsaRecipe', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlsaProvenance.SlsaRecipe',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aInt64(2, _omitFieldNames ? '' : 'definedInMaterial')
     ..aOS(3, _omitFieldNames ? '' : 'entryPoint')
-    ..aOM<$321.Any>(4, _omitFieldNames ? '' : 'arguments', subBuilder: $321.Any.create)
-    ..aOM<$321.Any>(5, _omitFieldNames ? '' : 'environment', subBuilder: $321.Any.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$321.Any>(4, _omitFieldNames ? '' : 'arguments',
+        subBuilder: $321.Any.create)
+    ..aOM<$321.Any>(5, _omitFieldNames ? '' : 'environment',
+        subBuilder: $321.Any.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaRecipe clone() => SlsaProvenance_SlsaRecipe()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaRecipe copyWith(void Function(SlsaProvenance_SlsaRecipe) updates) => super.copyWith((message) => updates(message as SlsaProvenance_SlsaRecipe)) as SlsaProvenance_SlsaRecipe;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaRecipe clone() =>
+      SlsaProvenance_SlsaRecipe()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaRecipe copyWith(
+          void Function(SlsaProvenance_SlsaRecipe) updates) =>
+      super.copyWith((message) => updates(message as SlsaProvenance_SlsaRecipe))
+          as SlsaProvenance_SlsaRecipe;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SlsaProvenance_SlsaRecipe create() => SlsaProvenance_SlsaRecipe._();
   SlsaProvenance_SlsaRecipe createEmptyInstance() => create();
-  static $pb.PbList<SlsaProvenance_SlsaRecipe> createRepeated() => $pb.PbList<SlsaProvenance_SlsaRecipe>();
+  static $pb.PbList<SlsaProvenance_SlsaRecipe> createRepeated() =>
+      $pb.PbList<SlsaProvenance_SlsaRecipe>();
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance_SlsaRecipe getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaRecipe>(create);
+  static SlsaProvenance_SlsaRecipe getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaRecipe>(create);
   static SlsaProvenance_SlsaRecipe? _defaultInstance;
 
   /// URI indicating what type of recipe was performed. It determines the
@@ -86,7 +98,10 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) { $_setString(0, v); }
+  set type($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -100,7 +115,10 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get definedInMaterial => $_getI64(1);
   @$pb.TagNumber(2)
-  set definedInMaterial($fixnum.Int64 v) { $_setInt64(1, v); }
+  set definedInMaterial($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDefinedInMaterial() => $_has(1);
   @$pb.TagNumber(2)
@@ -114,7 +132,10 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get entryPoint => $_getSZ(2);
   @$pb.TagNumber(3)
-  set entryPoint($core.String v) { $_setString(2, v); }
+  set entryPoint($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEntryPoint() => $_has(2);
   @$pb.TagNumber(3)
@@ -128,7 +149,10 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $321.Any get arguments => $_getN(3);
   @$pb.TagNumber(4)
-  set arguments($321.Any v) { setField(4, v); }
+  set arguments($321.Any v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasArguments() => $_has(3);
   @$pb.TagNumber(4)
@@ -143,7 +167,10 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $321.Any get environment => $_getN(4);
   @$pb.TagNumber(5)
-  set environment($321.Any v) { setField(5, v); }
+  set environment($321.Any v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEnvironment() => $_has(4);
   @$pb.TagNumber(5)
@@ -173,35 +200,48 @@ class SlsaProvenance_SlsaCompleteness extends $pb.GeneratedMessage {
     return $result;
   }
   SlsaProvenance_SlsaCompleteness._() : super();
-  factory SlsaProvenance_SlsaCompleteness.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlsaProvenance_SlsaCompleteness.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlsaProvenance_SlsaCompleteness.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlsaProvenance_SlsaCompleteness.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlsaProvenance.SlsaCompleteness', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlsaProvenance.SlsaCompleteness',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'arguments')
     ..aOB(2, _omitFieldNames ? '' : 'environment')
     ..aOB(3, _omitFieldNames ? '' : 'materials')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaCompleteness clone() => SlsaProvenance_SlsaCompleteness()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaCompleteness copyWith(void Function(SlsaProvenance_SlsaCompleteness) updates) => super.copyWith((message) => updates(message as SlsaProvenance_SlsaCompleteness)) as SlsaProvenance_SlsaCompleteness;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaCompleteness clone() =>
+      SlsaProvenance_SlsaCompleteness()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaCompleteness copyWith(
+          void Function(SlsaProvenance_SlsaCompleteness) updates) =>
+      super.copyWith(
+              (message) => updates(message as SlsaProvenance_SlsaCompleteness))
+          as SlsaProvenance_SlsaCompleteness;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance_SlsaCompleteness create() => SlsaProvenance_SlsaCompleteness._();
+  static SlsaProvenance_SlsaCompleteness create() =>
+      SlsaProvenance_SlsaCompleteness._();
   SlsaProvenance_SlsaCompleteness createEmptyInstance() => create();
-  static $pb.PbList<SlsaProvenance_SlsaCompleteness> createRepeated() => $pb.PbList<SlsaProvenance_SlsaCompleteness>();
+  static $pb.PbList<SlsaProvenance_SlsaCompleteness> createRepeated() =>
+      $pb.PbList<SlsaProvenance_SlsaCompleteness>();
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance_SlsaCompleteness getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaCompleteness>(create);
+  static SlsaProvenance_SlsaCompleteness getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaCompleteness>(
+          create);
   static SlsaProvenance_SlsaCompleteness? _defaultInstance;
 
   /// If true, the builder claims that recipe.arguments is complete, meaning
@@ -209,7 +249,10 @@ class SlsaProvenance_SlsaCompleteness extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get arguments => $_getBF(0);
   @$pb.TagNumber(1)
-  set arguments($core.bool v) { $_setBool(0, v); }
+  set arguments($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasArguments() => $_has(0);
   @$pb.TagNumber(1)
@@ -220,7 +263,10 @@ class SlsaProvenance_SlsaCompleteness extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get environment => $_getBF(1);
   @$pb.TagNumber(2)
-  set environment($core.bool v) { $_setBool(1, v); }
+  set environment($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnvironment() => $_has(1);
   @$pb.TagNumber(2)
@@ -231,7 +277,10 @@ class SlsaProvenance_SlsaCompleteness extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get materials => $_getBF(2);
   @$pb.TagNumber(3)
-  set materials($core.bool v) { $_setBool(2, v); }
+  set materials($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaterials() => $_has(2);
   @$pb.TagNumber(3)
@@ -266,37 +315,53 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   SlsaProvenance_SlsaMetadata._() : super();
-  factory SlsaProvenance_SlsaMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlsaProvenance_SlsaMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlsaProvenance_SlsaMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlsaProvenance_SlsaMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlsaProvenance.SlsaMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlsaProvenance.SlsaMetadata',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildInvocationId')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn', subBuilder: $302.Timestamp.create)
-    ..aOM<SlsaProvenance_SlsaCompleteness>(4, _omitFieldNames ? '' : 'completeness', subBuilder: SlsaProvenance_SlsaCompleteness.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<SlsaProvenance_SlsaCompleteness>(
+        4, _omitFieldNames ? '' : 'completeness',
+        subBuilder: SlsaProvenance_SlsaCompleteness.create)
     ..aOB(5, _omitFieldNames ? '' : 'reproducible')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaMetadata clone() => SlsaProvenance_SlsaMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaMetadata copyWith(void Function(SlsaProvenance_SlsaMetadata) updates) => super.copyWith((message) => updates(message as SlsaProvenance_SlsaMetadata)) as SlsaProvenance_SlsaMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaMetadata clone() =>
+      SlsaProvenance_SlsaMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaMetadata copyWith(
+          void Function(SlsaProvenance_SlsaMetadata) updates) =>
+      super.copyWith(
+              (message) => updates(message as SlsaProvenance_SlsaMetadata))
+          as SlsaProvenance_SlsaMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance_SlsaMetadata create() => SlsaProvenance_SlsaMetadata._();
+  static SlsaProvenance_SlsaMetadata create() =>
+      SlsaProvenance_SlsaMetadata._();
   SlsaProvenance_SlsaMetadata createEmptyInstance() => create();
-  static $pb.PbList<SlsaProvenance_SlsaMetadata> createRepeated() => $pb.PbList<SlsaProvenance_SlsaMetadata>();
+  static $pb.PbList<SlsaProvenance_SlsaMetadata> createRepeated() =>
+      $pb.PbList<SlsaProvenance_SlsaMetadata>();
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance_SlsaMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaMetadata>(create);
+  static SlsaProvenance_SlsaMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaMetadata>(create);
   static SlsaProvenance_SlsaMetadata? _defaultInstance;
 
   /// Identifies the particular build invocation, which can be useful for
@@ -305,7 +370,10 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get buildInvocationId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set buildInvocationId($core.String v) { $_setString(0, v); }
+  set buildInvocationId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBuildInvocationId() => $_has(0);
   @$pb.TagNumber(1)
@@ -315,7 +383,10 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get buildStartedOn => $_getN(1);
   @$pb.TagNumber(2)
-  set buildStartedOn($302.Timestamp v) { setField(2, v); }
+  set buildStartedOn($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBuildStartedOn() => $_has(1);
   @$pb.TagNumber(2)
@@ -327,7 +398,10 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get buildFinishedOn => $_getN(2);
   @$pb.TagNumber(3)
-  set buildFinishedOn($302.Timestamp v) { setField(3, v); }
+  set buildFinishedOn($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBuildFinishedOn() => $_has(2);
   @$pb.TagNumber(3)
@@ -340,7 +414,10 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   SlsaProvenance_SlsaCompleteness get completeness => $_getN(3);
   @$pb.TagNumber(4)
-  set completeness(SlsaProvenance_SlsaCompleteness v) { setField(4, v); }
+  set completeness(SlsaProvenance_SlsaCompleteness v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCompleteness() => $_has(3);
   @$pb.TagNumber(4)
@@ -353,7 +430,10 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get reproducible => $_getBF(4);
   @$pb.TagNumber(5)
-  set reproducible($core.bool v) { $_setBool(4, v); }
+  set reproducible($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasReproducible() => $_has(4);
   @$pb.TagNumber(5)
@@ -371,39 +451,53 @@ class SlsaProvenance_SlsaBuilder extends $pb.GeneratedMessage {
     return $result;
   }
   SlsaProvenance_SlsaBuilder._() : super();
-  factory SlsaProvenance_SlsaBuilder.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlsaProvenance_SlsaBuilder.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlsaProvenance_SlsaBuilder.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlsaProvenance_SlsaBuilder.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlsaProvenance.SlsaBuilder', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlsaProvenance.SlsaBuilder',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaBuilder clone() => SlsaProvenance_SlsaBuilder()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_SlsaBuilder copyWith(void Function(SlsaProvenance_SlsaBuilder) updates) => super.copyWith((message) => updates(message as SlsaProvenance_SlsaBuilder)) as SlsaProvenance_SlsaBuilder;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaBuilder clone() =>
+      SlsaProvenance_SlsaBuilder()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_SlsaBuilder copyWith(
+          void Function(SlsaProvenance_SlsaBuilder) updates) =>
+      super.copyWith(
+              (message) => updates(message as SlsaProvenance_SlsaBuilder))
+          as SlsaProvenance_SlsaBuilder;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SlsaProvenance_SlsaBuilder create() => SlsaProvenance_SlsaBuilder._();
   SlsaProvenance_SlsaBuilder createEmptyInstance() => create();
-  static $pb.PbList<SlsaProvenance_SlsaBuilder> createRepeated() => $pb.PbList<SlsaProvenance_SlsaBuilder>();
+  static $pb.PbList<SlsaProvenance_SlsaBuilder> createRepeated() =>
+      $pb.PbList<SlsaProvenance_SlsaBuilder>();
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance_SlsaBuilder getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaBuilder>(create);
+  static SlsaProvenance_SlsaBuilder getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_SlsaBuilder>(create);
   static SlsaProvenance_SlsaBuilder? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -425,40 +519,57 @@ class SlsaProvenance_Material extends $pb.GeneratedMessage {
     return $result;
   }
   SlsaProvenance_Material._() : super();
-  factory SlsaProvenance_Material.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlsaProvenance_Material.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlsaProvenance_Material.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlsaProvenance_Material.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlsaProvenance.Material', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlsaProvenance.Material',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uri')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'digest', entryClassName: 'SlsaProvenance.Material.DigestEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('grafeas.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'digest',
+        entryClassName: 'SlsaProvenance.Material.DigestEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('grafeas.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_Material clone() => SlsaProvenance_Material()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance_Material copyWith(void Function(SlsaProvenance_Material) updates) => super.copyWith((message) => updates(message as SlsaProvenance_Material)) as SlsaProvenance_Material;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_Material clone() =>
+      SlsaProvenance_Material()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance_Material copyWith(
+          void Function(SlsaProvenance_Material) updates) =>
+      super.copyWith((message) => updates(message as SlsaProvenance_Material))
+          as SlsaProvenance_Material;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SlsaProvenance_Material create() => SlsaProvenance_Material._();
   SlsaProvenance_Material createEmptyInstance() => create();
-  static $pb.PbList<SlsaProvenance_Material> createRepeated() => $pb.PbList<SlsaProvenance_Material>();
+  static $pb.PbList<SlsaProvenance_Material> createRepeated() =>
+      $pb.PbList<SlsaProvenance_Material>();
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance_Material getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_Material>(create);
+  static SlsaProvenance_Material getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlsaProvenance_Material>(create);
   static SlsaProvenance_Material? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) { $_setString(0, v); }
+  set uri($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -491,42 +602,58 @@ class SlsaProvenance extends $pb.GeneratedMessage {
     return $result;
   }
   SlsaProvenance._() : super();
-  factory SlsaProvenance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlsaProvenance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlsaProvenance.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlsaProvenance.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlsaProvenance', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<SlsaProvenance_SlsaBuilder>(1, _omitFieldNames ? '' : 'builder', subBuilder: SlsaProvenance_SlsaBuilder.create)
-    ..aOM<SlsaProvenance_SlsaRecipe>(2, _omitFieldNames ? '' : 'recipe', subBuilder: SlsaProvenance_SlsaRecipe.create)
-    ..aOM<SlsaProvenance_SlsaMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: SlsaProvenance_SlsaMetadata.create)
-    ..pc<SlsaProvenance_Material>(4, _omitFieldNames ? '' : 'materials', $pb.PbFieldType.PM, subBuilder: SlsaProvenance_Material.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlsaProvenance',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<SlsaProvenance_SlsaBuilder>(1, _omitFieldNames ? '' : 'builder',
+        subBuilder: SlsaProvenance_SlsaBuilder.create)
+    ..aOM<SlsaProvenance_SlsaRecipe>(2, _omitFieldNames ? '' : 'recipe',
+        subBuilder: SlsaProvenance_SlsaRecipe.create)
+    ..aOM<SlsaProvenance_SlsaMetadata>(3, _omitFieldNames ? '' : 'metadata',
+        subBuilder: SlsaProvenance_SlsaMetadata.create)
+    ..pc<SlsaProvenance_Material>(
+        4, _omitFieldNames ? '' : 'materials', $pb.PbFieldType.PM,
+        subBuilder: SlsaProvenance_Material.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SlsaProvenance clone() => SlsaProvenance()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlsaProvenance copyWith(void Function(SlsaProvenance) updates) => super.copyWith((message) => updates(message as SlsaProvenance)) as SlsaProvenance;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlsaProvenance copyWith(void Function(SlsaProvenance) updates) =>
+      super.copyWith((message) => updates(message as SlsaProvenance))
+          as SlsaProvenance;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SlsaProvenance create() => SlsaProvenance._();
   SlsaProvenance createEmptyInstance() => create();
-  static $pb.PbList<SlsaProvenance> createRepeated() => $pb.PbList<SlsaProvenance>();
+  static $pb.PbList<SlsaProvenance> createRepeated() =>
+      $pb.PbList<SlsaProvenance>();
   @$core.pragma('dart2js:noInline')
-  static SlsaProvenance getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlsaProvenance>(create);
+  static SlsaProvenance getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlsaProvenance>(create);
   static SlsaProvenance? _defaultInstance;
 
   @$pb.TagNumber(1)
   SlsaProvenance_SlsaBuilder get builder => $_getN(0);
   @$pb.TagNumber(1)
-  set builder(SlsaProvenance_SlsaBuilder v) { setField(1, v); }
+  set builder(SlsaProvenance_SlsaBuilder v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBuilder() => $_has(0);
   @$pb.TagNumber(1)
@@ -541,7 +668,10 @@ class SlsaProvenance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SlsaProvenance_SlsaRecipe get recipe => $_getN(1);
   @$pb.TagNumber(2)
-  set recipe(SlsaProvenance_SlsaRecipe v) { setField(2, v); }
+  set recipe(SlsaProvenance_SlsaRecipe v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRecipe() => $_has(1);
   @$pb.TagNumber(2)
@@ -552,7 +682,10 @@ class SlsaProvenance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   SlsaProvenance_SlsaMetadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata(SlsaProvenance_SlsaMetadata v) { setField(3, v); }
+  set metadata(SlsaProvenance_SlsaMetadata v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
@@ -568,6 +701,6 @@ class SlsaProvenance extends $pb.GeneratedMessage {
   $core.List<SlsaProvenance_Material> get materials => $_getList(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

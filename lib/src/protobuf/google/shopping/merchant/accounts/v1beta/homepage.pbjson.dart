@@ -18,7 +18,16 @@ const Homepage$json = {
   '1': 'Homepage',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'uri', '3': 2, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'uri', '17': true},
+    {
+      '1': 'uri',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'uri',
+      '17': true
+    },
     {'1': 'claimed', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'claimed'},
   ],
   '7': {},
@@ -51,8 +60,24 @@ final $typed_data.Uint8List getHomepageRequestDescriptor = $convert.base64Decode
 const UpdateHomepageRequest$json = {
   '1': 'UpdateHomepageRequest',
   '2': [
-    {'1': 'homepage', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Homepage', '8': {}, '10': 'homepage'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'homepage',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Homepage',
+      '8': {},
+      '10': 'homepage'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -85,7 +110,7 @@ const UnclaimHomepageRequest$json = {
 };
 
 /// Descriptor for `UnclaimHomepageRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List unclaimHomepageRequestDescriptor = $convert.base64Decode(
-    'ChZVbmNsYWltSG9tZXBhZ2VSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbWVyY2hhbn'
-    'RhcGkuZ29vZ2xlYXBpcy5jb20vSG9tZXBhZ2VSBG5hbWU=');
-
+final $typed_data.Uint8List unclaimHomepageRequestDescriptor =
+    $convert.base64Decode(
+        'ChZVbmNsYWltSG9tZXBhZ2VSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbWVyY2hhbn'
+        'RhcGkuZ29vZ2xlYXBpcy5jb20vSG9tZXBhZ2VSBG5hbWU=');

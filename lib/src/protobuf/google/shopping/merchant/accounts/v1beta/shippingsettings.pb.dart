@@ -44,36 +44,47 @@ class ShippingSettings extends $pb.GeneratedMessage {
     return $result;
   }
   ShippingSettings._() : super();
-  factory ShippingSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShippingSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShippingSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShippingSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShippingSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShippingSettings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<Service>(2, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: Service.create)
-    ..pc<Warehouse>(3, _omitFieldNames ? '' : 'warehouses', $pb.PbFieldType.PM, subBuilder: Warehouse.create)
+    ..pc<Service>(2, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
+        subBuilder: Service.create)
+    ..pc<Warehouse>(3, _omitFieldNames ? '' : 'warehouses', $pb.PbFieldType.PM,
+        subBuilder: Warehouse.create)
     ..aOS(4, _omitFieldNames ? '' : 'etag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ShippingSettings clone() => ShippingSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShippingSettings copyWith(void Function(ShippingSettings) updates) => super.copyWith((message) => updates(message as ShippingSettings)) as ShippingSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShippingSettings copyWith(void Function(ShippingSettings) updates) =>
+      super.copyWith((message) => updates(message as ShippingSettings))
+          as ShippingSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShippingSettings create() => ShippingSettings._();
   ShippingSettings createEmptyInstance() => create();
-  static $pb.PbList<ShippingSettings> createRepeated() => $pb.PbList<ShippingSettings>();
+  static $pb.PbList<ShippingSettings> createRepeated() =>
+      $pb.PbList<ShippingSettings>();
   @$core.pragma('dart2js:noInline')
-  static ShippingSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShippingSettings>(create);
+  static ShippingSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShippingSettings>(create);
   static ShippingSettings? _defaultInstance;
 
   /// Identifier. The resource name of the shipping setting.
@@ -81,7 +92,10 @@ class ShippingSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -116,7 +130,10 @@ class ShippingSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get etag => $_getSZ(3);
   @$pb.TagNumber(4)
-  set etag($core.String v) { $_setString(3, v); }
+  set etag($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEtag() => $_has(3);
   @$pb.TagNumber(4)
@@ -124,7 +141,8 @@ class ShippingSettings extends $pb.GeneratedMessage {
 }
 
 /// Time that local delivery ends for the day.
-class Service_StoreConfig_CutoffConfig_LocalCutoffTime extends $pb.GeneratedMessage {
+class Service_StoreConfig_CutoffConfig_LocalCutoffTime
+    extends $pb.GeneratedMessage {
   factory Service_StoreConfig_CutoffConfig_LocalCutoffTime({
     $fixnum.Int64? hour,
     $fixnum.Int64? minute,
@@ -139,34 +157,56 @@ class Service_StoreConfig_CutoffConfig_LocalCutoffTime extends $pb.GeneratedMess
     return $result;
   }
   Service_StoreConfig_CutoffConfig_LocalCutoffTime._() : super();
-  factory Service_StoreConfig_CutoffConfig_LocalCutoffTime.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service_StoreConfig_CutoffConfig_LocalCutoffTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service_StoreConfig_CutoffConfig_LocalCutoffTime.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service_StoreConfig_CutoffConfig_LocalCutoffTime.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service.StoreConfig.CutoffConfig.LocalCutoffTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'Service.StoreConfig.CutoffConfig.LocalCutoffTime',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'hour')
     ..aInt64(2, _omitFieldNames ? '' : 'minute')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Service_StoreConfig_CutoffConfig_LocalCutoffTime clone() => Service_StoreConfig_CutoffConfig_LocalCutoffTime()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service_StoreConfig_CutoffConfig_LocalCutoffTime copyWith(void Function(Service_StoreConfig_CutoffConfig_LocalCutoffTime) updates) => super.copyWith((message) => updates(message as Service_StoreConfig_CutoffConfig_LocalCutoffTime)) as Service_StoreConfig_CutoffConfig_LocalCutoffTime;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Service_StoreConfig_CutoffConfig_LocalCutoffTime clone() =>
+      Service_StoreConfig_CutoffConfig_LocalCutoffTime()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service_StoreConfig_CutoffConfig_LocalCutoffTime copyWith(
+          void Function(Service_StoreConfig_CutoffConfig_LocalCutoffTime)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as Service_StoreConfig_CutoffConfig_LocalCutoffTime))
+          as Service_StoreConfig_CutoffConfig_LocalCutoffTime;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Service_StoreConfig_CutoffConfig_LocalCutoffTime create() => Service_StoreConfig_CutoffConfig_LocalCutoffTime._();
-  Service_StoreConfig_CutoffConfig_LocalCutoffTime createEmptyInstance() => create();
-  static $pb.PbList<Service_StoreConfig_CutoffConfig_LocalCutoffTime> createRepeated() => $pb.PbList<Service_StoreConfig_CutoffConfig_LocalCutoffTime>();
+  static Service_StoreConfig_CutoffConfig_LocalCutoffTime create() =>
+      Service_StoreConfig_CutoffConfig_LocalCutoffTime._();
+  Service_StoreConfig_CutoffConfig_LocalCutoffTime createEmptyInstance() =>
+      create();
+  static $pb.PbList<Service_StoreConfig_CutoffConfig_LocalCutoffTime>
+      createRepeated() =>
+          $pb.PbList<Service_StoreConfig_CutoffConfig_LocalCutoffTime>();
   @$core.pragma('dart2js:noInline')
-  static Service_StoreConfig_CutoffConfig_LocalCutoffTime getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service_StoreConfig_CutoffConfig_LocalCutoffTime>(create);
+  static Service_StoreConfig_CutoffConfig_LocalCutoffTime getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Service_StoreConfig_CutoffConfig_LocalCutoffTime>(create);
   static Service_StoreConfig_CutoffConfig_LocalCutoffTime? _defaultInstance;
 
   /// Hour local delivery orders must be placed by to process the same
@@ -174,7 +214,10 @@ class Service_StoreConfig_CutoffConfig_LocalCutoffTime extends $pb.GeneratedMess
   @$pb.TagNumber(1)
   $fixnum.Int64 get hour => $_getI64(0);
   @$pb.TagNumber(1)
-  set hour($fixnum.Int64 v) { $_setInt64(0, v); }
+  set hour($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHour() => $_has(0);
   @$pb.TagNumber(1)
@@ -185,7 +228,10 @@ class Service_StoreConfig_CutoffConfig_LocalCutoffTime extends $pb.GeneratedMess
   @$pb.TagNumber(2)
   $fixnum.Int64 get minute => $_getI64(1);
   @$pb.TagNumber(2)
-  set minute($fixnum.Int64 v) { $_setInt64(1, v); }
+  set minute($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinute() => $_has(1);
   @$pb.TagNumber(2)
@@ -212,48 +258,69 @@ class Service_StoreConfig_CutoffConfig extends $pb.GeneratedMessage {
     return $result;
   }
   Service_StoreConfig_CutoffConfig._() : super();
-  factory Service_StoreConfig_CutoffConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service_StoreConfig_CutoffConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service_StoreConfig_CutoffConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service_StoreConfig_CutoffConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service.StoreConfig.CutoffConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..aOM<Service_StoreConfig_CutoffConfig_LocalCutoffTime>(1, _omitFieldNames ? '' : 'localCutoffTime', subBuilder: Service_StoreConfig_CutoffConfig_LocalCutoffTime.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service.StoreConfig.CutoffConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<Service_StoreConfig_CutoffConfig_LocalCutoffTime>(
+        1, _omitFieldNames ? '' : 'localCutoffTime',
+        subBuilder: Service_StoreConfig_CutoffConfig_LocalCutoffTime.create)
     ..aInt64(2, _omitFieldNames ? '' : 'storeCloseOffsetHours')
     ..aOB(3, _omitFieldNames ? '' : 'noDeliveryPostCutoff')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Service_StoreConfig_CutoffConfig clone() => Service_StoreConfig_CutoffConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service_StoreConfig_CutoffConfig copyWith(void Function(Service_StoreConfig_CutoffConfig) updates) => super.copyWith((message) => updates(message as Service_StoreConfig_CutoffConfig)) as Service_StoreConfig_CutoffConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Service_StoreConfig_CutoffConfig clone() =>
+      Service_StoreConfig_CutoffConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service_StoreConfig_CutoffConfig copyWith(
+          void Function(Service_StoreConfig_CutoffConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as Service_StoreConfig_CutoffConfig))
+          as Service_StoreConfig_CutoffConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Service_StoreConfig_CutoffConfig create() => Service_StoreConfig_CutoffConfig._();
+  static Service_StoreConfig_CutoffConfig create() =>
+      Service_StoreConfig_CutoffConfig._();
   Service_StoreConfig_CutoffConfig createEmptyInstance() => create();
-  static $pb.PbList<Service_StoreConfig_CutoffConfig> createRepeated() => $pb.PbList<Service_StoreConfig_CutoffConfig>();
+  static $pb.PbList<Service_StoreConfig_CutoffConfig> createRepeated() =>
+      $pb.PbList<Service_StoreConfig_CutoffConfig>();
   @$core.pragma('dart2js:noInline')
-  static Service_StoreConfig_CutoffConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service_StoreConfig_CutoffConfig>(create);
+  static Service_StoreConfig_CutoffConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Service_StoreConfig_CutoffConfig>(
+          create);
   static Service_StoreConfig_CutoffConfig? _defaultInstance;
 
   /// Time that local delivery ends for the day.
   @$pb.TagNumber(1)
-  Service_StoreConfig_CutoffConfig_LocalCutoffTime get localCutoffTime => $_getN(0);
+  Service_StoreConfig_CutoffConfig_LocalCutoffTime get localCutoffTime =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set localCutoffTime(Service_StoreConfig_CutoffConfig_LocalCutoffTime v) { setField(1, v); }
+  set localCutoffTime(Service_StoreConfig_CutoffConfig_LocalCutoffTime v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocalCutoffTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearLocalCutoffTime() => clearField(1);
   @$pb.TagNumber(1)
-  Service_StoreConfig_CutoffConfig_LocalCutoffTime ensureLocalCutoffTime() => $_ensure(0);
+  Service_StoreConfig_CutoffConfig_LocalCutoffTime ensureLocalCutoffTime() =>
+      $_ensure(0);
 
   /// Only valid with local delivery fulfillment. Represents cutoff time
   /// as the number of hours before store closing. Mutually exclusive
@@ -261,7 +328,10 @@ class Service_StoreConfig_CutoffConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get storeCloseOffsetHours => $_getI64(1);
   @$pb.TagNumber(2)
-  set storeCloseOffsetHours($fixnum.Int64 v) { $_setInt64(1, v); }
+  set storeCloseOffsetHours($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStoreCloseOffsetHours() => $_has(1);
   @$pb.TagNumber(2)
@@ -277,7 +347,10 @@ class Service_StoreConfig_CutoffConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get noDeliveryPostCutoff => $_getBF(2);
   @$pb.TagNumber(3)
-  set noDeliveryPostCutoff($core.bool v) { $_setBool(2, v); }
+  set noDeliveryPostCutoff($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNoDeliveryPostCutoff() => $_has(2);
   @$pb.TagNumber(3)
@@ -309,36 +382,53 @@ class Service_StoreConfig extends $pb.GeneratedMessage {
     return $result;
   }
   Service_StoreConfig._() : super();
-  factory Service_StoreConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service_StoreConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service_StoreConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service_StoreConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service.StoreConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..e<Service_StoreConfig_StoreServiceType>(1, _omitFieldNames ? '' : 'storeServiceType', $pb.PbFieldType.OE, defaultOrMaker: Service_StoreConfig_StoreServiceType.STORE_SERVICE_TYPE_UNSPECIFIED, valueOf: Service_StoreConfig_StoreServiceType.valueOf, enumValues: Service_StoreConfig_StoreServiceType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service.StoreConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..e<Service_StoreConfig_StoreServiceType>(
+        1, _omitFieldNames ? '' : 'storeServiceType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Service_StoreConfig_StoreServiceType.STORE_SERVICE_TYPE_UNSPECIFIED,
+        valueOf: Service_StoreConfig_StoreServiceType.valueOf,
+        enumValues: Service_StoreConfig_StoreServiceType.values)
     ..pPS(2, _omitFieldNames ? '' : 'storeCodes')
-    ..aOM<Service_StoreConfig_CutoffConfig>(3, _omitFieldNames ? '' : 'cutoffConfig', subBuilder: Service_StoreConfig_CutoffConfig.create)
-    ..aOM<Distance>(4, _omitFieldNames ? '' : 'serviceRadius', subBuilder: Distance.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Service_StoreConfig_CutoffConfig>(
+        3, _omitFieldNames ? '' : 'cutoffConfig',
+        subBuilder: Service_StoreConfig_CutoffConfig.create)
+    ..aOM<Distance>(4, _omitFieldNames ? '' : 'serviceRadius',
+        subBuilder: Distance.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Service_StoreConfig clone() => Service_StoreConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service_StoreConfig copyWith(void Function(Service_StoreConfig) updates) => super.copyWith((message) => updates(message as Service_StoreConfig)) as Service_StoreConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service_StoreConfig copyWith(void Function(Service_StoreConfig) updates) =>
+      super.copyWith((message) => updates(message as Service_StoreConfig))
+          as Service_StoreConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Service_StoreConfig create() => Service_StoreConfig._();
   Service_StoreConfig createEmptyInstance() => create();
-  static $pb.PbList<Service_StoreConfig> createRepeated() => $pb.PbList<Service_StoreConfig>();
+  static $pb.PbList<Service_StoreConfig> createRepeated() =>
+      $pb.PbList<Service_StoreConfig>();
   @$core.pragma('dart2js:noInline')
-  static Service_StoreConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service_StoreConfig>(create);
+  static Service_StoreConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Service_StoreConfig>(create);
   static Service_StoreConfig? _defaultInstance;
 
   /// Indicates whether all stores, or selected stores, listed by this
@@ -346,7 +436,10 @@ class Service_StoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Service_StoreConfig_StoreServiceType get storeServiceType => $_getN(0);
   @$pb.TagNumber(1)
-  set storeServiceType(Service_StoreConfig_StoreServiceType v) { setField(1, v); }
+  set storeServiceType(Service_StoreConfig_StoreServiceType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStoreServiceType() => $_has(0);
   @$pb.TagNumber(1)
@@ -361,7 +454,10 @@ class Service_StoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Service_StoreConfig_CutoffConfig get cutoffConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set cutoffConfig(Service_StoreConfig_CutoffConfig v) { setField(3, v); }
+  set cutoffConfig(Service_StoreConfig_CutoffConfig v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCutoffConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -374,7 +470,10 @@ class Service_StoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Distance get serviceRadius => $_getN(3);
   @$pb.TagNumber(4)
-  set serviceRadius(Distance v) { setField(4, v); }
+  set serviceRadius(Distance v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasServiceRadius() => $_has(3);
   @$pb.TagNumber(4)
@@ -395,33 +494,49 @@ class Service_LoyaltyProgram_LoyaltyProgramTiers extends $pb.GeneratedMessage {
     return $result;
   }
   Service_LoyaltyProgram_LoyaltyProgramTiers._() : super();
-  factory Service_LoyaltyProgram_LoyaltyProgramTiers.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service_LoyaltyProgram_LoyaltyProgramTiers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service_LoyaltyProgram_LoyaltyProgramTiers.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service_LoyaltyProgram_LoyaltyProgramTiers.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service.LoyaltyProgram.LoyaltyProgramTiers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service.LoyaltyProgram.LoyaltyProgramTiers',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tierLabel')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Service_LoyaltyProgram_LoyaltyProgramTiers clone() => Service_LoyaltyProgram_LoyaltyProgramTiers()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service_LoyaltyProgram_LoyaltyProgramTiers copyWith(void Function(Service_LoyaltyProgram_LoyaltyProgramTiers) updates) => super.copyWith((message) => updates(message as Service_LoyaltyProgram_LoyaltyProgramTiers)) as Service_LoyaltyProgram_LoyaltyProgramTiers;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Service_LoyaltyProgram_LoyaltyProgramTiers clone() =>
+      Service_LoyaltyProgram_LoyaltyProgramTiers()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service_LoyaltyProgram_LoyaltyProgramTiers copyWith(
+          void Function(Service_LoyaltyProgram_LoyaltyProgramTiers) updates) =>
+      super.copyWith((message) =>
+              updates(message as Service_LoyaltyProgram_LoyaltyProgramTiers))
+          as Service_LoyaltyProgram_LoyaltyProgramTiers;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Service_LoyaltyProgram_LoyaltyProgramTiers create() => Service_LoyaltyProgram_LoyaltyProgramTiers._();
+  static Service_LoyaltyProgram_LoyaltyProgramTiers create() =>
+      Service_LoyaltyProgram_LoyaltyProgramTiers._();
   Service_LoyaltyProgram_LoyaltyProgramTiers createEmptyInstance() => create();
-  static $pb.PbList<Service_LoyaltyProgram_LoyaltyProgramTiers> createRepeated() => $pb.PbList<Service_LoyaltyProgram_LoyaltyProgramTiers>();
+  static $pb.PbList<Service_LoyaltyProgram_LoyaltyProgramTiers>
+      createRepeated() =>
+          $pb.PbList<Service_LoyaltyProgram_LoyaltyProgramTiers>();
   @$core.pragma('dart2js:noInline')
-  static Service_LoyaltyProgram_LoyaltyProgramTiers getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service_LoyaltyProgram_LoyaltyProgramTiers>(create);
+  static Service_LoyaltyProgram_LoyaltyProgramTiers getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Service_LoyaltyProgram_LoyaltyProgramTiers>(create);
   static Service_LoyaltyProgram_LoyaltyProgramTiers? _defaultInstance;
 
   /// The tier label [tier_label] sub-attribute differentiates offer level
@@ -431,7 +546,10 @@ class Service_LoyaltyProgram_LoyaltyProgramTiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tierLabel => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tierLabel($core.String v) { $_setString(0, v); }
+  set tierLabel($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTierLabel() => $_has(0);
   @$pb.TagNumber(1)
@@ -443,7 +561,8 @@ class Service_LoyaltyProgram_LoyaltyProgramTiers extends $pb.GeneratedMessage {
 class Service_LoyaltyProgram extends $pb.GeneratedMessage {
   factory Service_LoyaltyProgram({
     $core.String? programLabel,
-    $core.Iterable<Service_LoyaltyProgram_LoyaltyProgramTiers>? loyaltyProgramTiers,
+    $core.Iterable<Service_LoyaltyProgram_LoyaltyProgramTiers>?
+        loyaltyProgramTiers,
   }) {
     final $result = create();
     if (programLabel != null) {
@@ -455,34 +574,47 @@ class Service_LoyaltyProgram extends $pb.GeneratedMessage {
     return $result;
   }
   Service_LoyaltyProgram._() : super();
-  factory Service_LoyaltyProgram.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service_LoyaltyProgram.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service_LoyaltyProgram.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service_LoyaltyProgram.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service.LoyaltyProgram', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service.LoyaltyProgram',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'programLabel')
-    ..pc<Service_LoyaltyProgram_LoyaltyProgramTiers>(2, _omitFieldNames ? '' : 'loyaltyProgramTiers', $pb.PbFieldType.PM, subBuilder: Service_LoyaltyProgram_LoyaltyProgramTiers.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<Service_LoyaltyProgram_LoyaltyProgramTiers>(
+        2, _omitFieldNames ? '' : 'loyaltyProgramTiers', $pb.PbFieldType.PM,
+        subBuilder: Service_LoyaltyProgram_LoyaltyProgramTiers.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Service_LoyaltyProgram clone() => Service_LoyaltyProgram()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service_LoyaltyProgram copyWith(void Function(Service_LoyaltyProgram) updates) => super.copyWith((message) => updates(message as Service_LoyaltyProgram)) as Service_LoyaltyProgram;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Service_LoyaltyProgram clone() =>
+      Service_LoyaltyProgram()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service_LoyaltyProgram copyWith(
+          void Function(Service_LoyaltyProgram) updates) =>
+      super.copyWith((message) => updates(message as Service_LoyaltyProgram))
+          as Service_LoyaltyProgram;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Service_LoyaltyProgram create() => Service_LoyaltyProgram._();
   Service_LoyaltyProgram createEmptyInstance() => create();
-  static $pb.PbList<Service_LoyaltyProgram> createRepeated() => $pb.PbList<Service_LoyaltyProgram>();
+  static $pb.PbList<Service_LoyaltyProgram> createRepeated() =>
+      $pb.PbList<Service_LoyaltyProgram>();
   @$core.pragma('dart2js:noInline')
-  static Service_LoyaltyProgram getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service_LoyaltyProgram>(create);
+  static Service_LoyaltyProgram getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Service_LoyaltyProgram>(create);
   static Service_LoyaltyProgram? _defaultInstance;
 
   /// This is the loyalty program label set in your loyalty program settings in
@@ -491,7 +623,10 @@ class Service_LoyaltyProgram extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get programLabel => $_getSZ(0);
   @$pb.TagNumber(1)
-  set programLabel($core.String v) { $_setString(0, v); }
+  set programLabel($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProgramLabel() => $_has(0);
   @$pb.TagNumber(1)
@@ -499,7 +634,8 @@ class Service_LoyaltyProgram extends $pb.GeneratedMessage {
 
   /// Optional. Loyalty program tier of this shipping service.
   @$pb.TagNumber(2)
-  $core.List<Service_LoyaltyProgram_LoyaltyProgramTiers> get loyaltyProgramTiers => $_getList(1);
+  $core.List<Service_LoyaltyProgram_LoyaltyProgramTiers>
+      get loyaltyProgramTiers => $_getList(1);
 }
 
 /// Shipping service.
@@ -554,34 +690,52 @@ class Service extends $pb.GeneratedMessage {
     return $result;
   }
   Service._() : super();
-  factory Service.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
     ..aOB(2, _omitFieldNames ? '' : 'active')
     ..pPS(3, _omitFieldNames ? '' : 'deliveryCountries')
     ..aOS(4, _omitFieldNames ? '' : 'currencyCode')
-    ..aOM<DeliveryTime>(5, _omitFieldNames ? '' : 'deliveryTime', subBuilder: DeliveryTime.create)
-    ..pc<RateGroup>(6, _omitFieldNames ? '' : 'rateGroups', $pb.PbFieldType.PM, subBuilder: RateGroup.create)
-    ..e<Service_ShipmentType>(7, _omitFieldNames ? '' : 'shipmentType', $pb.PbFieldType.OE, defaultOrMaker: Service_ShipmentType.SHIPMENT_TYPE_UNSPECIFIED, valueOf: Service_ShipmentType.valueOf, enumValues: Service_ShipmentType.values)
-    ..aOM<$536.Price>(8, _omitFieldNames ? '' : 'minimumOrderValue', subBuilder: $536.Price.create)
-    ..aOM<MinimumOrderValueTable>(9, _omitFieldNames ? '' : 'minimumOrderValueTable', subBuilder: MinimumOrderValueTable.create)
-    ..aOM<Service_StoreConfig>(10, _omitFieldNames ? '' : 'storeConfig', subBuilder: Service_StoreConfig.create)
-    ..pc<Service_LoyaltyProgram>(11, _omitFieldNames ? '' : 'loyaltyPrograms', $pb.PbFieldType.PM, subBuilder: Service_LoyaltyProgram.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DeliveryTime>(5, _omitFieldNames ? '' : 'deliveryTime',
+        subBuilder: DeliveryTime.create)
+    ..pc<RateGroup>(6, _omitFieldNames ? '' : 'rateGroups', $pb.PbFieldType.PM,
+        subBuilder: RateGroup.create)
+    ..e<Service_ShipmentType>(
+        7, _omitFieldNames ? '' : 'shipmentType', $pb.PbFieldType.OE,
+        defaultOrMaker: Service_ShipmentType.SHIPMENT_TYPE_UNSPECIFIED,
+        valueOf: Service_ShipmentType.valueOf,
+        enumValues: Service_ShipmentType.values)
+    ..aOM<$536.Price>(8, _omitFieldNames ? '' : 'minimumOrderValue',
+        subBuilder: $536.Price.create)
+    ..aOM<MinimumOrderValueTable>(
+        9, _omitFieldNames ? '' : 'minimumOrderValueTable',
+        subBuilder: MinimumOrderValueTable.create)
+    ..aOM<Service_StoreConfig>(10, _omitFieldNames ? '' : 'storeConfig',
+        subBuilder: Service_StoreConfig.create)
+    ..pc<Service_LoyaltyProgram>(
+        11, _omitFieldNames ? '' : 'loyaltyPrograms', $pb.PbFieldType.PM,
+        subBuilder: Service_LoyaltyProgram.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Service clone() => Service()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service copyWith(void Function(Service) updates) => super.copyWith((message) => updates(message as Service)) as Service;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service copyWith(void Function(Service) updates) =>
+      super.copyWith((message) => updates(message as Service)) as Service;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -590,7 +744,8 @@ class Service extends $pb.GeneratedMessage {
   Service createEmptyInstance() => create();
   static $pb.PbList<Service> createRepeated() => $pb.PbList<Service>();
   @$core.pragma('dart2js:noInline')
-  static Service getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
+  static Service getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
   static Service? _defaultInstance;
 
   /// Required. Free-form name of the service. Must be unique within target
@@ -598,7 +753,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceName($core.String v) { $_setString(0, v); }
+  set serviceName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -608,7 +766,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get active => $_getBF(1);
   @$pb.TagNumber(2)
-  set active($core.bool v) { $_setBool(1, v); }
+  set active($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasActive() => $_has(1);
   @$pb.TagNumber(2)
@@ -624,7 +785,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get currencyCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set currencyCode($core.String v) { $_setString(3, v); }
+  set currencyCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCurrencyCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -635,7 +799,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DeliveryTime get deliveryTime => $_getN(4);
   @$pb.TagNumber(5)
-  set deliveryTime(DeliveryTime v) { setField(5, v); }
+  set deliveryTime(DeliveryTime v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDeliveryTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -653,7 +820,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Service_ShipmentType get shipmentType => $_getN(6);
   @$pb.TagNumber(7)
-  set shipmentType(Service_ShipmentType v) { setField(7, v); }
+  set shipmentType(Service_ShipmentType v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasShipmentType() => $_has(6);
   @$pb.TagNumber(7)
@@ -666,7 +836,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $536.Price get minimumOrderValue => $_getN(7);
   @$pb.TagNumber(8)
-  set minimumOrderValue($536.Price v) { setField(8, v); }
+  set minimumOrderValue($536.Price v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMinimumOrderValue() => $_has(7);
   @$pb.TagNumber(8)
@@ -679,7 +852,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   MinimumOrderValueTable get minimumOrderValueTable => $_getN(8);
   @$pb.TagNumber(9)
-  set minimumOrderValueTable(MinimumOrderValueTable v) { setField(9, v); }
+  set minimumOrderValueTable(MinimumOrderValueTable v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasMinimumOrderValueTable() => $_has(8);
   @$pb.TagNumber(9)
@@ -692,7 +868,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Service_StoreConfig get storeConfig => $_getN(9);
   @$pb.TagNumber(10)
-  set storeConfig(Service_StoreConfig v) { setField(10, v); }
+  set storeConfig(Service_StoreConfig v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasStoreConfig() => $_has(9);
   @$pb.TagNumber(10)
@@ -722,25 +901,34 @@ class Distance extends $pb.GeneratedMessage {
     return $result;
   }
   Distance._() : super();
-  factory Distance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Distance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Distance.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Distance.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Distance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Distance',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'value')
-    ..e<Distance_Unit>(2, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE, defaultOrMaker: Distance_Unit.UNIT_UNSPECIFIED, valueOf: Distance_Unit.valueOf, enumValues: Distance_Unit.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<Distance_Unit>(2, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE,
+        defaultOrMaker: Distance_Unit.UNIT_UNSPECIFIED,
+        valueOf: Distance_Unit.valueOf,
+        enumValues: Distance_Unit.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Distance clone() => Distance()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Distance copyWith(void Function(Distance) updates) => super.copyWith((message) => updates(message as Distance)) as Distance;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Distance copyWith(void Function(Distance) updates) =>
+      super.copyWith((message) => updates(message as Distance)) as Distance;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -749,14 +937,18 @@ class Distance extends $pb.GeneratedMessage {
   Distance createEmptyInstance() => create();
   static $pb.PbList<Distance> createRepeated() => $pb.PbList<Distance>();
   @$core.pragma('dart2js:noInline')
-  static Distance getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Distance>(create);
+  static Distance getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Distance>(create);
   static Distance? _defaultInstance;
 
   /// Integer value of distance.
   @$pb.TagNumber(1)
   $fixnum.Int64 get value => $_getI64(0);
   @$pb.TagNumber(1)
-  set value($fixnum.Int64 v) { $_setInt64(0, v); }
+  set value($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -767,7 +959,10 @@ class Distance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Distance_Unit get unit => $_getN(1);
   @$pb.TagNumber(2)
-  set unit(Distance_Unit v) { setField(2, v); }
+  set unit(Distance_Unit v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUnit() => $_has(1);
   @$pb.TagNumber(2)
@@ -803,28 +998,37 @@ class Warehouse extends $pb.GeneratedMessage {
     return $result;
   }
   Warehouse._() : super();
-  factory Warehouse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Warehouse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Warehouse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Warehouse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Warehouse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Warehouse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<Address>(2, _omitFieldNames ? '' : 'shippingAddress', subBuilder: Address.create)
-    ..aOM<WarehouseCutoffTime>(3, _omitFieldNames ? '' : 'cutoffTime', subBuilder: WarehouseCutoffTime.create)
+    ..aOM<Address>(2, _omitFieldNames ? '' : 'shippingAddress',
+        subBuilder: Address.create)
+    ..aOM<WarehouseCutoffTime>(3, _omitFieldNames ? '' : 'cutoffTime',
+        subBuilder: WarehouseCutoffTime.create)
     ..aInt64(4, _omitFieldNames ? '' : 'handlingDays')
-    ..aOM<BusinessDayConfig>(5, _omitFieldNames ? '' : 'businessDayConfig', subBuilder: BusinessDayConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<BusinessDayConfig>(5, _omitFieldNames ? '' : 'businessDayConfig',
+        subBuilder: BusinessDayConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Warehouse clone() => Warehouse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Warehouse copyWith(void Function(Warehouse) updates) => super.copyWith((message) => updates(message as Warehouse)) as Warehouse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Warehouse copyWith(void Function(Warehouse) updates) =>
+      super.copyWith((message) => updates(message as Warehouse)) as Warehouse;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -833,14 +1037,18 @@ class Warehouse extends $pb.GeneratedMessage {
   Warehouse createEmptyInstance() => create();
   static $pb.PbList<Warehouse> createRepeated() => $pb.PbList<Warehouse>();
   @$core.pragma('dart2js:noInline')
-  static Warehouse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Warehouse>(create);
+  static Warehouse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Warehouse>(create);
   static Warehouse? _defaultInstance;
 
   /// Required. The name of the warehouse. Must be unique within account.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -850,7 +1058,10 @@ class Warehouse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Address get shippingAddress => $_getN(1);
   @$pb.TagNumber(2)
-  set shippingAddress(Address v) { setField(2, v); }
+  set shippingAddress(Address v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasShippingAddress() => $_has(1);
   @$pb.TagNumber(2)
@@ -864,7 +1075,10 @@ class Warehouse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WarehouseCutoffTime get cutoffTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cutoffTime(WarehouseCutoffTime v) { setField(3, v); }
+  set cutoffTime(WarehouseCutoffTime v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCutoffTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -878,7 +1092,10 @@ class Warehouse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get handlingDays => $_getI64(3);
   @$pb.TagNumber(4)
-  set handlingDays($fixnum.Int64 v) { $_setInt64(3, v); }
+  set handlingDays($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasHandlingDays() => $_has(3);
   @$pb.TagNumber(4)
@@ -889,7 +1106,10 @@ class Warehouse extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   BusinessDayConfig get businessDayConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set businessDayConfig(BusinessDayConfig v) { setField(5, v); }
+  set businessDayConfig(BusinessDayConfig v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBusinessDayConfig() => $_has(4);
   @$pb.TagNumber(5)
@@ -916,34 +1136,43 @@ class WarehouseCutoffTime extends $pb.GeneratedMessage {
     return $result;
   }
   WarehouseCutoffTime._() : super();
-  factory WarehouseCutoffTime.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WarehouseCutoffTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory WarehouseCutoffTime.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WarehouseCutoffTime.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WarehouseCutoffTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'WarehouseCutoffTime',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'hour', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'minute', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   WarehouseCutoffTime clone() => WarehouseCutoffTime()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WarehouseCutoffTime copyWith(void Function(WarehouseCutoffTime) updates) => super.copyWith((message) => updates(message as WarehouseCutoffTime)) as WarehouseCutoffTime;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WarehouseCutoffTime copyWith(void Function(WarehouseCutoffTime) updates) =>
+      super.copyWith((message) => updates(message as WarehouseCutoffTime))
+          as WarehouseCutoffTime;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WarehouseCutoffTime create() => WarehouseCutoffTime._();
   WarehouseCutoffTime createEmptyInstance() => create();
-  static $pb.PbList<WarehouseCutoffTime> createRepeated() => $pb.PbList<WarehouseCutoffTime>();
+  static $pb.PbList<WarehouseCutoffTime> createRepeated() =>
+      $pb.PbList<WarehouseCutoffTime>();
   @$core.pragma('dart2js:noInline')
-  static WarehouseCutoffTime getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WarehouseCutoffTime>(create);
+  static WarehouseCutoffTime getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WarehouseCutoffTime>(create);
   static WarehouseCutoffTime? _defaultInstance;
 
   /// Required. Hour of the cutoff time until which an order has to be placed to
@@ -952,7 +1181,10 @@ class WarehouseCutoffTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get hour => $_getIZ(0);
   @$pb.TagNumber(1)
-  set hour($core.int v) { $_setSignedInt32(0, v); }
+  set hour($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHour() => $_has(0);
   @$pb.TagNumber(1)
@@ -964,7 +1196,10 @@ class WarehouseCutoffTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get minute => $_getIZ(1);
   @$pb.TagNumber(2)
-  set minute($core.int v) { $_setSignedInt32(1, v); }
+  set minute($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinute() => $_has(1);
   @$pb.TagNumber(2)
@@ -999,28 +1234,34 @@ class Address extends $pb.GeneratedMessage {
     return $result;
   }
   Address._() : super();
-  factory Address.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Address.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Address.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Address.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Address', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Address',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'streetAddress')
     ..aOS(2, _omitFieldNames ? '' : 'city')
     ..aOS(3, _omitFieldNames ? '' : 'administrativeArea')
     ..aOS(4, _omitFieldNames ? '' : 'postalCode')
     ..aOS(5, _omitFieldNames ? '' : 'regionCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Address clone() => Address()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Address copyWith(void Function(Address) updates) => super.copyWith((message) => updates(message as Address)) as Address;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Address copyWith(void Function(Address) updates) =>
+      super.copyWith((message) => updates(message as Address)) as Address;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1029,14 +1270,18 @@ class Address extends $pb.GeneratedMessage {
   Address createEmptyInstance() => create();
   static $pb.PbList<Address> createRepeated() => $pb.PbList<Address>();
   @$core.pragma('dart2js:noInline')
-  static Address getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Address>(create);
+  static Address getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Address>(create);
   static Address? _defaultInstance;
 
   /// Street-level part of the address. For example: `111w 31st Street`.
   @$pb.TagNumber(1)
   $core.String get streetAddress => $_getSZ(0);
   @$pb.TagNumber(1)
-  set streetAddress($core.String v) { $_setString(0, v); }
+  set streetAddress($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStreetAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -1047,7 +1292,10 @@ class Address extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get city => $_getSZ(1);
   @$pb.TagNumber(2)
-  set city($core.String v) { $_setString(1, v); }
+  set city($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCity() => $_has(1);
   @$pb.TagNumber(2)
@@ -1058,7 +1306,10 @@ class Address extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get administrativeArea => $_getSZ(2);
   @$pb.TagNumber(3)
-  set administrativeArea($core.String v) { $_setString(2, v); }
+  set administrativeArea($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAdministrativeArea() => $_has(2);
   @$pb.TagNumber(3)
@@ -1068,7 +1319,10 @@ class Address extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get postalCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set postalCode($core.String v) { $_setString(3, v); }
+  set postalCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPostalCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -1080,7 +1334,10 @@ class Address extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get regionCode => $_getSZ(4);
   @$pb.TagNumber(5)
-  set regionCode($core.String v) { $_setString(4, v); }
+  set regionCode($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRegionCode() => $_has(4);
   @$pb.TagNumber(5)
@@ -1131,41 +1388,64 @@ class DeliveryTime extends $pb.GeneratedMessage {
     return $result;
   }
   DeliveryTime._() : super();
-  factory DeliveryTime.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeliveryTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeliveryTime.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeliveryTime.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeliveryTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'minTransitDays', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'maxTransitDays', $pb.PbFieldType.O3)
-    ..aOM<CutoffTime>(3, _omitFieldNames ? '' : 'cutoffTime', subBuilder: CutoffTime.create)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'minHandlingDays', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'maxHandlingDays', $pb.PbFieldType.O3)
-    ..aOM<TransitTable>(6, _omitFieldNames ? '' : 'transitTimeTable', subBuilder: TransitTable.create)
-    ..aOM<BusinessDayConfig>(7, _omitFieldNames ? '' : 'handlingBusinessDayConfig', subBuilder: BusinessDayConfig.create)
-    ..aOM<BusinessDayConfig>(8, _omitFieldNames ? '' : 'transitBusinessDayConfig', subBuilder: BusinessDayConfig.create)
-    ..pc<WarehouseBasedDeliveryTime>(9, _omitFieldNames ? '' : 'warehouseBasedDeliveryTimes', $pb.PbFieldType.PM, subBuilder: WarehouseBasedDeliveryTime.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeliveryTime',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'minTransitDays', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'maxTransitDays', $pb.PbFieldType.O3)
+    ..aOM<CutoffTime>(3, _omitFieldNames ? '' : 'cutoffTime',
+        subBuilder: CutoffTime.create)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'minHandlingDays', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'maxHandlingDays', $pb.PbFieldType.O3)
+    ..aOM<TransitTable>(6, _omitFieldNames ? '' : 'transitTimeTable',
+        subBuilder: TransitTable.create)
+    ..aOM<BusinessDayConfig>(
+        7, _omitFieldNames ? '' : 'handlingBusinessDayConfig',
+        subBuilder: BusinessDayConfig.create)
+    ..aOM<BusinessDayConfig>(
+        8, _omitFieldNames ? '' : 'transitBusinessDayConfig',
+        subBuilder: BusinessDayConfig.create)
+    ..pc<WarehouseBasedDeliveryTime>(
+        9,
+        _omitFieldNames ? '' : 'warehouseBasedDeliveryTimes',
+        $pb.PbFieldType.PM,
+        subBuilder: WarehouseBasedDeliveryTime.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeliveryTime clone() => DeliveryTime()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeliveryTime copyWith(void Function(DeliveryTime) updates) => super.copyWith((message) => updates(message as DeliveryTime)) as DeliveryTime;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeliveryTime copyWith(void Function(DeliveryTime) updates) =>
+      super.copyWith((message) => updates(message as DeliveryTime))
+          as DeliveryTime;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeliveryTime create() => DeliveryTime._();
   DeliveryTime createEmptyInstance() => create();
-  static $pb.PbList<DeliveryTime> createRepeated() => $pb.PbList<DeliveryTime>();
+  static $pb.PbList<DeliveryTime> createRepeated() =>
+      $pb.PbList<DeliveryTime>();
   @$core.pragma('dart2js:noInline')
-  static DeliveryTime getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeliveryTime>(create);
+  static DeliveryTime getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeliveryTime>(create);
   static DeliveryTime? _defaultInstance;
 
   /// Minimum number of business days that is spent in transit. 0 means same
@@ -1175,7 +1455,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get minTransitDays => $_getIZ(0);
   @$pb.TagNumber(1)
-  set minTransitDays($core.int v) { $_setSignedInt32(0, v); }
+  set minTransitDays($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinTransitDays() => $_has(0);
   @$pb.TagNumber(1)
@@ -1187,7 +1470,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxTransitDays => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxTransitDays($core.int v) { $_setSignedInt32(1, v); }
+  set maxTransitDays($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxTransitDays() => $_has(1);
   @$pb.TagNumber(2)
@@ -1198,7 +1484,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   CutoffTime get cutoffTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cutoffTime(CutoffTime v) { setField(3, v); }
+  set cutoffTime(CutoffTime v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCutoffTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -1213,7 +1502,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get minHandlingDays => $_getIZ(3);
   @$pb.TagNumber(4)
-  set minHandlingDays($core.int v) { $_setSignedInt32(3, v); }
+  set minHandlingDays($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMinHandlingDays() => $_has(3);
   @$pb.TagNumber(4)
@@ -1227,7 +1519,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxHandlingDays => $_getIZ(4);
   @$pb.TagNumber(5)
-  set maxHandlingDays($core.int v) { $_setSignedInt32(4, v); }
+  set maxHandlingDays($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaxHandlingDays() => $_has(4);
   @$pb.TagNumber(5)
@@ -1239,7 +1534,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   TransitTable get transitTimeTable => $_getN(5);
   @$pb.TagNumber(6)
-  set transitTimeTable(TransitTable v) { setField(6, v); }
+  set transitTimeTable(TransitTable v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTransitTimeTable() => $_has(5);
   @$pb.TagNumber(6)
@@ -1252,7 +1550,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   BusinessDayConfig get handlingBusinessDayConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set handlingBusinessDayConfig(BusinessDayConfig v) { setField(7, v); }
+  set handlingBusinessDayConfig(BusinessDayConfig v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasHandlingBusinessDayConfig() => $_has(6);
   @$pb.TagNumber(7)
@@ -1265,7 +1566,10 @@ class DeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   BusinessDayConfig get transitBusinessDayConfig => $_getN(7);
   @$pb.TagNumber(8)
-  set transitBusinessDayConfig(BusinessDayConfig v) { setField(8, v); }
+  set transitBusinessDayConfig(BusinessDayConfig v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasTransitBusinessDayConfig() => $_has(7);
   @$pb.TagNumber(8)
@@ -1279,7 +1583,8 @@ class DeliveryTime extends $pb.GeneratedMessage {
   /// time][[google.shopping.content.bundles.ShippingSetting.DeliveryTime] should
   /// be set.
   @$pb.TagNumber(9)
-  $core.List<WarehouseBasedDeliveryTime> get warehouseBasedDeliveryTimes => $_getList(8);
+  $core.List<WarehouseBasedDeliveryTime> get warehouseBasedDeliveryTimes =>
+      $_getList(8);
 }
 
 /// Business days cutoff time definition.
@@ -1302,26 +1607,32 @@ class CutoffTime extends $pb.GeneratedMessage {
     return $result;
   }
   CutoffTime._() : super();
-  factory CutoffTime.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CutoffTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CutoffTime.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CutoffTime.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CutoffTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CutoffTime',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'hour', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'minute', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'timeZone')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CutoffTime clone() => CutoffTime()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CutoffTime copyWith(void Function(CutoffTime) updates) => super.copyWith((message) => updates(message as CutoffTime)) as CutoffTime;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CutoffTime copyWith(void Function(CutoffTime) updates) =>
+      super.copyWith((message) => updates(message as CutoffTime)) as CutoffTime;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1330,7 +1641,8 @@ class CutoffTime extends $pb.GeneratedMessage {
   CutoffTime createEmptyInstance() => create();
   static $pb.PbList<CutoffTime> createRepeated() => $pb.PbList<CutoffTime>();
   @$core.pragma('dart2js:noInline')
-  static CutoffTime getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CutoffTime>(create);
+  static CutoffTime getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CutoffTime>(create);
   static CutoffTime? _defaultInstance;
 
   /// Required. Hour of the cutoff time until which an order has to be placed to
@@ -1338,7 +1650,10 @@ class CutoffTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get hour => $_getIZ(0);
   @$pb.TagNumber(1)
-  set hour($core.int v) { $_setSignedInt32(0, v); }
+  set hour($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHour() => $_has(0);
   @$pb.TagNumber(1)
@@ -1349,7 +1664,10 @@ class CutoffTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get minute => $_getIZ(1);
   @$pb.TagNumber(2)
-  set minute($core.int v) { $_setSignedInt32(1, v); }
+  set minute($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinute() => $_has(1);
   @$pb.TagNumber(2)
@@ -1361,7 +1679,10 @@ class CutoffTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get timeZone => $_getSZ(2);
   @$pb.TagNumber(3)
-  set timeZone($core.String v) { $_setString(2, v); }
+  set timeZone($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTimeZone() => $_has(2);
   @$pb.TagNumber(3)
@@ -1380,33 +1701,46 @@ class BusinessDayConfig extends $pb.GeneratedMessage {
     return $result;
   }
   BusinessDayConfig._() : super();
-  factory BusinessDayConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BusinessDayConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BusinessDayConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BusinessDayConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BusinessDayConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<BusinessDayConfig_Weekday>(1, _omitFieldNames ? '' : 'businessDays', $pb.PbFieldType.KE, valueOf: BusinessDayConfig_Weekday.valueOf, enumValues: BusinessDayConfig_Weekday.values, defaultEnumValue: BusinessDayConfig_Weekday.WEEKDAY_UNSPECIFIED)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BusinessDayConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<BusinessDayConfig_Weekday>(
+        1, _omitFieldNames ? '' : 'businessDays', $pb.PbFieldType.KE,
+        valueOf: BusinessDayConfig_Weekday.valueOf,
+        enumValues: BusinessDayConfig_Weekday.values,
+        defaultEnumValue: BusinessDayConfig_Weekday.WEEKDAY_UNSPECIFIED)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BusinessDayConfig clone() => BusinessDayConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BusinessDayConfig copyWith(void Function(BusinessDayConfig) updates) => super.copyWith((message) => updates(message as BusinessDayConfig)) as BusinessDayConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BusinessDayConfig copyWith(void Function(BusinessDayConfig) updates) =>
+      super.copyWith((message) => updates(message as BusinessDayConfig))
+          as BusinessDayConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BusinessDayConfig create() => BusinessDayConfig._();
   BusinessDayConfig createEmptyInstance() => create();
-  static $pb.PbList<BusinessDayConfig> createRepeated() => $pb.PbList<BusinessDayConfig>();
+  static $pb.PbList<BusinessDayConfig> createRepeated() =>
+      $pb.PbList<BusinessDayConfig>();
   @$core.pragma('dart2js:noInline')
-  static BusinessDayConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BusinessDayConfig>(create);
+  static BusinessDayConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BusinessDayConfig>(create);
   static BusinessDayConfig? _defaultInstance;
 
   /// Required. Regular business days.
@@ -1438,42 +1772,57 @@ class WarehouseBasedDeliveryTime extends $pb.GeneratedMessage {
     return $result;
   }
   WarehouseBasedDeliveryTime._() : super();
-  factory WarehouseBasedDeliveryTime.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WarehouseBasedDeliveryTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory WarehouseBasedDeliveryTime.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WarehouseBasedDeliveryTime.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WarehouseBasedDeliveryTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'WarehouseBasedDeliveryTime',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'carrier')
     ..aOS(2, _omitFieldNames ? '' : 'carrierService')
     ..aOS(3, _omitFieldNames ? '' : 'warehouse')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  WarehouseBasedDeliveryTime clone() => WarehouseBasedDeliveryTime()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WarehouseBasedDeliveryTime copyWith(void Function(WarehouseBasedDeliveryTime) updates) => super.copyWith((message) => updates(message as WarehouseBasedDeliveryTime)) as WarehouseBasedDeliveryTime;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  WarehouseBasedDeliveryTime clone() =>
+      WarehouseBasedDeliveryTime()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WarehouseBasedDeliveryTime copyWith(
+          void Function(WarehouseBasedDeliveryTime) updates) =>
+      super.copyWith(
+              (message) => updates(message as WarehouseBasedDeliveryTime))
+          as WarehouseBasedDeliveryTime;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WarehouseBasedDeliveryTime create() => WarehouseBasedDeliveryTime._();
   WarehouseBasedDeliveryTime createEmptyInstance() => create();
-  static $pb.PbList<WarehouseBasedDeliveryTime> createRepeated() => $pb.PbList<WarehouseBasedDeliveryTime>();
+  static $pb.PbList<WarehouseBasedDeliveryTime> createRepeated() =>
+      $pb.PbList<WarehouseBasedDeliveryTime>();
   @$core.pragma('dart2js:noInline')
-  static WarehouseBasedDeliveryTime getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WarehouseBasedDeliveryTime>(create);
+  static WarehouseBasedDeliveryTime getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WarehouseBasedDeliveryTime>(create);
   static WarehouseBasedDeliveryTime? _defaultInstance;
 
   /// Required. Carrier, such as `"UPS"` or `"Fedex"`.
   @$pb.TagNumber(1)
   $core.String get carrier => $_getSZ(0);
   @$pb.TagNumber(1)
-  set carrier($core.String v) { $_setString(0, v); }
+  set carrier($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCarrier() => $_has(0);
   @$pb.TagNumber(1)
@@ -1484,7 +1833,10 @@ class WarehouseBasedDeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get carrierService => $_getSZ(1);
   @$pb.TagNumber(2)
-  set carrierService($core.String v) { $_setString(1, v); }
+  set carrierService($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCarrierService() => $_has(1);
   @$pb.TagNumber(2)
@@ -1495,7 +1847,10 @@ class WarehouseBasedDeliveryTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get warehouse => $_getSZ(2);
   @$pb.TagNumber(3)
-  set warehouse($core.String v) { $_setString(2, v); }
+  set warehouse($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWarehouse() => $_has(2);
   @$pb.TagNumber(3)
@@ -1537,29 +1892,40 @@ class RateGroup extends $pb.GeneratedMessage {
     return $result;
   }
   RateGroup._() : super();
-  factory RateGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RateGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RateGroup.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RateGroup.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RateGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RateGroup',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'applicableShippingLabels')
-    ..aOM<Value>(2, _omitFieldNames ? '' : 'singleValue', subBuilder: Value.create)
-    ..aOM<Table>(3, _omitFieldNames ? '' : 'mainTable', subBuilder: Table.create)
-    ..pc<Table>(4, _omitFieldNames ? '' : 'subtables', $pb.PbFieldType.PM, subBuilder: Table.create)
-    ..pc<CarrierRate>(5, _omitFieldNames ? '' : 'carrierRates', $pb.PbFieldType.PM, subBuilder: CarrierRate.create)
+    ..aOM<Value>(2, _omitFieldNames ? '' : 'singleValue',
+        subBuilder: Value.create)
+    ..aOM<Table>(3, _omitFieldNames ? '' : 'mainTable',
+        subBuilder: Table.create)
+    ..pc<Table>(4, _omitFieldNames ? '' : 'subtables', $pb.PbFieldType.PM,
+        subBuilder: Table.create)
+    ..pc<CarrierRate>(
+        5, _omitFieldNames ? '' : 'carrierRates', $pb.PbFieldType.PM,
+        subBuilder: CarrierRate.create)
     ..aOS(6, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RateGroup clone() => RateGroup()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RateGroup copyWith(void Function(RateGroup) updates) => super.copyWith((message) => updates(message as RateGroup)) as RateGroup;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RateGroup copyWith(void Function(RateGroup) updates) =>
+      super.copyWith((message) => updates(message as RateGroup)) as RateGroup;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1568,7 +1934,8 @@ class RateGroup extends $pb.GeneratedMessage {
   RateGroup createEmptyInstance() => create();
   static $pb.PbList<RateGroup> createRepeated() => $pb.PbList<RateGroup>();
   @$core.pragma('dart2js:noInline')
-  static RateGroup getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RateGroup>(create);
+  static RateGroup getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RateGroup>(create);
   static RateGroup? _defaultInstance;
 
   /// Required. A list of [shipping
@@ -1584,7 +1951,10 @@ class RateGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Value get singleValue => $_getN(1);
   @$pb.TagNumber(2)
-  set singleValue(Value v) { setField(2, v); }
+  set singleValue(Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSingleValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -1598,7 +1968,10 @@ class RateGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Table get mainTable => $_getN(2);
   @$pb.TagNumber(3)
-  set mainTable(Table v) { setField(3, v); }
+  set mainTable(Table v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMainTable() => $_has(2);
   @$pb.TagNumber(3)
@@ -1621,7 +1994,10 @@ class RateGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get name => $_getSZ(5);
   @$pb.TagNumber(6)
-  set name($core.String v) { $_setString(5, v); }
+  set name($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasName() => $_has(5);
   @$pb.TagNumber(6)
@@ -1653,27 +2029,36 @@ class Table extends $pb.GeneratedMessage {
     return $result;
   }
   Table._() : super();
-  factory Table.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Table.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Table.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Table.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Table', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Table',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<Headers>(2, _omitFieldNames ? '' : 'rowHeaders', subBuilder: Headers.create)
-    ..aOM<Headers>(3, _omitFieldNames ? '' : 'columnHeaders', subBuilder: Headers.create)
-    ..pc<Row>(4, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: Row.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Headers>(2, _omitFieldNames ? '' : 'rowHeaders',
+        subBuilder: Headers.create)
+    ..aOM<Headers>(3, _omitFieldNames ? '' : 'columnHeaders',
+        subBuilder: Headers.create)
+    ..pc<Row>(4, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
+        subBuilder: Row.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Table clone() => Table()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Table copyWith(void Function(Table) updates) => super.copyWith((message) => updates(message as Table)) as Table;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Table copyWith(void Function(Table) updates) =>
+      super.copyWith((message) => updates(message as Table)) as Table;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1682,14 +2067,18 @@ class Table extends $pb.GeneratedMessage {
   Table createEmptyInstance() => create();
   static $pb.PbList<Table> createRepeated() => $pb.PbList<Table>();
   @$core.pragma('dart2js:noInline')
-  static Table getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Table>(create);
+  static Table getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Table>(create);
   static Table? _defaultInstance;
 
   /// Name of the table. Required for subtables, ignored for the main table.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1699,7 +2088,10 @@ class Table extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Headers get rowHeaders => $_getN(1);
   @$pb.TagNumber(2)
-  set rowHeaders(Headers v) { setField(2, v); }
+  set rowHeaders(Headers v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRowHeaders() => $_has(1);
   @$pb.TagNumber(2)
@@ -1712,7 +2104,10 @@ class Table extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Headers get columnHeaders => $_getN(2);
   @$pb.TagNumber(3)
-  set columnHeaders(Headers v) { setField(3, v); }
+  set columnHeaders(Headers v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasColumnHeaders() => $_has(2);
   @$pb.TagNumber(3)
@@ -1727,7 +2122,8 @@ class Table extends $pb.GeneratedMessage {
 }
 
 /// Transit time range (min-max) in business days.
-class TransitTable_TransitTimeRow_TransitTimeValue extends $pb.GeneratedMessage {
+class TransitTable_TransitTimeRow_TransitTimeValue
+    extends $pb.GeneratedMessage {
   factory TransitTable_TransitTimeRow_TransitTimeValue({
     $core.int? minTransitDays,
     $core.int? maxTransitDays,
@@ -1742,34 +2138,54 @@ class TransitTable_TransitTimeRow_TransitTimeValue extends $pb.GeneratedMessage 
     return $result;
   }
   TransitTable_TransitTimeRow_TransitTimeValue._() : super();
-  factory TransitTable_TransitTimeRow_TransitTimeValue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransitTable_TransitTimeRow_TransitTimeValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransitTable_TransitTimeRow_TransitTimeValue.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransitTable_TransitTimeRow_TransitTimeValue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransitTable.TransitTimeRow.TransitTimeValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'minTransitDays', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'maxTransitDays', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransitTable.TransitTimeRow.TransitTimeValue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'minTransitDays', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'maxTransitDays', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransitTable_TransitTimeRow_TransitTimeValue clone() => TransitTable_TransitTimeRow_TransitTimeValue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransitTable_TransitTimeRow_TransitTimeValue copyWith(void Function(TransitTable_TransitTimeRow_TransitTimeValue) updates) => super.copyWith((message) => updates(message as TransitTable_TransitTimeRow_TransitTimeValue)) as TransitTable_TransitTimeRow_TransitTimeValue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransitTable_TransitTimeRow_TransitTimeValue clone() =>
+      TransitTable_TransitTimeRow_TransitTimeValue()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransitTable_TransitTimeRow_TransitTimeValue copyWith(
+          void Function(TransitTable_TransitTimeRow_TransitTimeValue)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as TransitTable_TransitTimeRow_TransitTimeValue))
+          as TransitTable_TransitTimeRow_TransitTimeValue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TransitTable_TransitTimeRow_TransitTimeValue create() => TransitTable_TransitTimeRow_TransitTimeValue._();
-  TransitTable_TransitTimeRow_TransitTimeValue createEmptyInstance() => create();
-  static $pb.PbList<TransitTable_TransitTimeRow_TransitTimeValue> createRepeated() => $pb.PbList<TransitTable_TransitTimeRow_TransitTimeValue>();
+  static TransitTable_TransitTimeRow_TransitTimeValue create() =>
+      TransitTable_TransitTimeRow_TransitTimeValue._();
+  TransitTable_TransitTimeRow_TransitTimeValue createEmptyInstance() =>
+      create();
+  static $pb.PbList<TransitTable_TransitTimeRow_TransitTimeValue>
+      createRepeated() =>
+          $pb.PbList<TransitTable_TransitTimeRow_TransitTimeValue>();
   @$core.pragma('dart2js:noInline')
-  static TransitTable_TransitTimeRow_TransitTimeValue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransitTable_TransitTimeRow_TransitTimeValue>(create);
+  static TransitTable_TransitTimeRow_TransitTimeValue getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          TransitTable_TransitTimeRow_TransitTimeValue>(create);
   static TransitTable_TransitTimeRow_TransitTimeValue? _defaultInstance;
 
   /// Minimum transit time range in business days. 0 means same
@@ -1777,7 +2193,10 @@ class TransitTable_TransitTimeRow_TransitTimeValue extends $pb.GeneratedMessage 
   @$pb.TagNumber(1)
   $core.int get minTransitDays => $_getIZ(0);
   @$pb.TagNumber(1)
-  set minTransitDays($core.int v) { $_setSignedInt32(0, v); }
+  set minTransitDays($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinTransitDays() => $_has(0);
   @$pb.TagNumber(1)
@@ -1787,7 +2206,10 @@ class TransitTable_TransitTimeRow_TransitTimeValue extends $pb.GeneratedMessage 
   @$pb.TagNumber(2)
   $core.int get maxTransitDays => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxTransitDays($core.int v) { $_setSignedInt32(1, v); }
+  set maxTransitDays($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxTransitDays() => $_has(1);
   @$pb.TagNumber(2)
@@ -1810,38 +2232,54 @@ class TransitTable_TransitTimeRow extends $pb.GeneratedMessage {
     return $result;
   }
   TransitTable_TransitTimeRow._() : super();
-  factory TransitTable_TransitTimeRow.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransitTable_TransitTimeRow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransitTable_TransitTimeRow.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransitTable_TransitTimeRow.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransitTable.TransitTimeRow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<TransitTable_TransitTimeRow_TransitTimeValue>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: TransitTable_TransitTimeRow_TransitTimeValue.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransitTable.TransitTimeRow',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<TransitTable_TransitTimeRow_TransitTimeValue>(
+        1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
+        subBuilder: TransitTable_TransitTimeRow_TransitTimeValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransitTable_TransitTimeRow clone() => TransitTable_TransitTimeRow()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransitTable_TransitTimeRow copyWith(void Function(TransitTable_TransitTimeRow) updates) => super.copyWith((message) => updates(message as TransitTable_TransitTimeRow)) as TransitTable_TransitTimeRow;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransitTable_TransitTimeRow clone() =>
+      TransitTable_TransitTimeRow()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransitTable_TransitTimeRow copyWith(
+          void Function(TransitTable_TransitTimeRow) updates) =>
+      super.copyWith(
+              (message) => updates(message as TransitTable_TransitTimeRow))
+          as TransitTable_TransitTimeRow;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TransitTable_TransitTimeRow create() => TransitTable_TransitTimeRow._();
+  static TransitTable_TransitTimeRow create() =>
+      TransitTable_TransitTimeRow._();
   TransitTable_TransitTimeRow createEmptyInstance() => create();
-  static $pb.PbList<TransitTable_TransitTimeRow> createRepeated() => $pb.PbList<TransitTable_TransitTimeRow>();
+  static $pb.PbList<TransitTable_TransitTimeRow> createRepeated() =>
+      $pb.PbList<TransitTable_TransitTimeRow>();
   @$core.pragma('dart2js:noInline')
-  static TransitTable_TransitTimeRow getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransitTable_TransitTimeRow>(create);
+  static TransitTable_TransitTimeRow getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransitTable_TransitTimeRow>(create);
   static TransitTable_TransitTimeRow? _defaultInstance;
 
   /// Required. Transit time range (min-max) in business days.
   @$pb.TagNumber(1)
-  $core.List<TransitTable_TransitTimeRow_TransitTimeValue> get values => $_getList(0);
+  $core.List<TransitTable_TransitTimeRow_TransitTimeValue> get values =>
+      $_getList(0);
 }
 
 /// Transit time table, number of business days spent in transit based on row
@@ -1866,35 +2304,46 @@ class TransitTable extends $pb.GeneratedMessage {
     return $result;
   }
   TransitTable._() : super();
-  factory TransitTable.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransitTable.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransitTable.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransitTable.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransitTable', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransitTable',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'postalCodeGroupNames')
     ..pPS(2, _omitFieldNames ? '' : 'transitTimeLabels')
-    ..pc<TransitTable_TransitTimeRow>(3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: TransitTable_TransitTimeRow.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<TransitTable_TransitTimeRow>(
+        3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
+        subBuilder: TransitTable_TransitTimeRow.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransitTable clone() => TransitTable()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransitTable copyWith(void Function(TransitTable) updates) => super.copyWith((message) => updates(message as TransitTable)) as TransitTable;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransitTable copyWith(void Function(TransitTable) updates) =>
+      super.copyWith((message) => updates(message as TransitTable))
+          as TransitTable;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransitTable create() => TransitTable._();
   TransitTable createEmptyInstance() => create();
-  static $pb.PbList<TransitTable> createRepeated() => $pb.PbList<TransitTable>();
+  static $pb.PbList<TransitTable> createRepeated() =>
+      $pb.PbList<TransitTable>();
   @$core.pragma('dart2js:noInline')
-  static TransitTable getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransitTable>(create);
+  static TransitTable getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransitTable>(create);
   static TransitTable? _defaultInstance;
 
   /// Required. A list of region names
@@ -1941,34 +2390,51 @@ class MinimumOrderValueTable_StoreCodeSetWithMov extends $pb.GeneratedMessage {
     return $result;
   }
   MinimumOrderValueTable_StoreCodeSetWithMov._() : super();
-  factory MinimumOrderValueTable_StoreCodeSetWithMov.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MinimumOrderValueTable_StoreCodeSetWithMov.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MinimumOrderValueTable_StoreCodeSetWithMov.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MinimumOrderValueTable_StoreCodeSetWithMov.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MinimumOrderValueTable.StoreCodeSetWithMov', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MinimumOrderValueTable.StoreCodeSetWithMov',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'storeCodes')
-    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'value', subBuilder: $536.Price.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'value',
+        subBuilder: $536.Price.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MinimumOrderValueTable_StoreCodeSetWithMov clone() => MinimumOrderValueTable_StoreCodeSetWithMov()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MinimumOrderValueTable_StoreCodeSetWithMov copyWith(void Function(MinimumOrderValueTable_StoreCodeSetWithMov) updates) => super.copyWith((message) => updates(message as MinimumOrderValueTable_StoreCodeSetWithMov)) as MinimumOrderValueTable_StoreCodeSetWithMov;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MinimumOrderValueTable_StoreCodeSetWithMov clone() =>
+      MinimumOrderValueTable_StoreCodeSetWithMov()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MinimumOrderValueTable_StoreCodeSetWithMov copyWith(
+          void Function(MinimumOrderValueTable_StoreCodeSetWithMov) updates) =>
+      super.copyWith((message) =>
+              updates(message as MinimumOrderValueTable_StoreCodeSetWithMov))
+          as MinimumOrderValueTable_StoreCodeSetWithMov;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static MinimumOrderValueTable_StoreCodeSetWithMov create() => MinimumOrderValueTable_StoreCodeSetWithMov._();
+  static MinimumOrderValueTable_StoreCodeSetWithMov create() =>
+      MinimumOrderValueTable_StoreCodeSetWithMov._();
   MinimumOrderValueTable_StoreCodeSetWithMov createEmptyInstance() => create();
-  static $pb.PbList<MinimumOrderValueTable_StoreCodeSetWithMov> createRepeated() => $pb.PbList<MinimumOrderValueTable_StoreCodeSetWithMov>();
+  static $pb.PbList<MinimumOrderValueTable_StoreCodeSetWithMov>
+      createRepeated() =>
+          $pb.PbList<MinimumOrderValueTable_StoreCodeSetWithMov>();
   @$core.pragma('dart2js:noInline')
-  static MinimumOrderValueTable_StoreCodeSetWithMov getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MinimumOrderValueTable_StoreCodeSetWithMov>(create);
+  static MinimumOrderValueTable_StoreCodeSetWithMov getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          MinimumOrderValueTable_StoreCodeSetWithMov>(create);
   static MinimumOrderValueTable_StoreCodeSetWithMov? _defaultInstance;
 
   /// Optional. A list of unique store codes or empty for the catch all.
@@ -1979,7 +2445,10 @@ class MinimumOrderValueTable_StoreCodeSetWithMov extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $536.Price get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($536.Price v) { setField(2, v); }
+  set value($536.Price v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -1991,7 +2460,8 @@ class MinimumOrderValueTable_StoreCodeSetWithMov extends $pb.GeneratedMessage {
 /// Table of per store minimum order values for the pickup fulfillment type.
 class MinimumOrderValueTable extends $pb.GeneratedMessage {
   factory MinimumOrderValueTable({
-    $core.Iterable<MinimumOrderValueTable_StoreCodeSetWithMov>? storeCodeSetWithMovs,
+    $core.Iterable<MinimumOrderValueTable_StoreCodeSetWithMov>?
+        storeCodeSetWithMovs,
   }) {
     final $result = create();
     if (storeCodeSetWithMovs != null) {
@@ -2000,33 +2470,46 @@ class MinimumOrderValueTable extends $pb.GeneratedMessage {
     return $result;
   }
   MinimumOrderValueTable._() : super();
-  factory MinimumOrderValueTable.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MinimumOrderValueTable.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MinimumOrderValueTable.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MinimumOrderValueTable.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MinimumOrderValueTable', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<MinimumOrderValueTable_StoreCodeSetWithMov>(1, _omitFieldNames ? '' : 'storeCodeSetWithMovs', $pb.PbFieldType.PM, subBuilder: MinimumOrderValueTable_StoreCodeSetWithMov.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MinimumOrderValueTable',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<MinimumOrderValueTable_StoreCodeSetWithMov>(
+        1, _omitFieldNames ? '' : 'storeCodeSetWithMovs', $pb.PbFieldType.PM,
+        subBuilder: MinimumOrderValueTable_StoreCodeSetWithMov.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MinimumOrderValueTable clone() => MinimumOrderValueTable()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MinimumOrderValueTable copyWith(void Function(MinimumOrderValueTable) updates) => super.copyWith((message) => updates(message as MinimumOrderValueTable)) as MinimumOrderValueTable;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MinimumOrderValueTable clone() =>
+      MinimumOrderValueTable()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MinimumOrderValueTable copyWith(
+          void Function(MinimumOrderValueTable) updates) =>
+      super.copyWith((message) => updates(message as MinimumOrderValueTable))
+          as MinimumOrderValueTable;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MinimumOrderValueTable create() => MinimumOrderValueTable._();
   MinimumOrderValueTable createEmptyInstance() => create();
-  static $pb.PbList<MinimumOrderValueTable> createRepeated() => $pb.PbList<MinimumOrderValueTable>();
+  static $pb.PbList<MinimumOrderValueTable> createRepeated() =>
+      $pb.PbList<MinimumOrderValueTable>();
   @$core.pragma('dart2js:noInline')
-  static MinimumOrderValueTable getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MinimumOrderValueTable>(create);
+  static MinimumOrderValueTable getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MinimumOrderValueTable>(create);
   static MinimumOrderValueTable? _defaultInstance;
 
   /// Required. A list of store code sets sharing the same minimum order value
@@ -2035,7 +2518,8 @@ class MinimumOrderValueTable extends $pb.GeneratedMessage {
   /// across all the sets. All prices within a service must have the same
   /// currency.
   @$pb.TagNumber(1)
-  $core.List<MinimumOrderValueTable_StoreCodeSetWithMov> get storeCodeSetWithMovs => $_getList(0);
+  $core.List<MinimumOrderValueTable_StoreCodeSetWithMov>
+      get storeCodeSetWithMovs => $_getList(0);
 }
 
 /// A non-empty list of row or column headers for a table.
@@ -2069,28 +2553,38 @@ class Headers extends $pb.GeneratedMessage {
     return $result;
   }
   Headers._() : super();
-  factory Headers.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Headers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Headers.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Headers.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Headers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<$536.Price>(1, _omitFieldNames ? '' : 'prices', $pb.PbFieldType.PM, subBuilder: $536.Price.create)
-    ..pc<$536.Weight>(2, _omitFieldNames ? '' : 'weights', $pb.PbFieldType.PM, subBuilder: $536.Weight.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Headers',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$536.Price>(1, _omitFieldNames ? '' : 'prices', $pb.PbFieldType.PM,
+        subBuilder: $536.Price.create)
+    ..pc<$536.Weight>(2, _omitFieldNames ? '' : 'weights', $pb.PbFieldType.PM,
+        subBuilder: $536.Weight.create)
     ..pPS(3, _omitFieldNames ? '' : 'numberOfItems')
     ..pPS(4, _omitFieldNames ? '' : 'postalCodeGroupNames')
-    ..pc<LocationIdSet>(5, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: LocationIdSet.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<LocationIdSet>(
+        5, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM,
+        subBuilder: LocationIdSet.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Headers clone() => Headers()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Headers copyWith(void Function(Headers) updates) => super.copyWith((message) => updates(message as Headers)) as Headers;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Headers copyWith(void Function(Headers) updates) =>
+      super.copyWith((message) => updates(message as Headers)) as Headers;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2099,7 +2593,8 @@ class Headers extends $pb.GeneratedMessage {
   Headers createEmptyInstance() => create();
   static $pb.PbList<Headers> createRepeated() => $pb.PbList<Headers>();
   @$core.pragma('dart2js:noInline')
-  static Headers getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Headers>(create);
+  static Headers getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Headers>(create);
   static Headers? _defaultInstance;
 
   /// Required. A list of inclusive order price upper bounds. The last price's
@@ -2160,33 +2655,42 @@ class LocationIdSet extends $pb.GeneratedMessage {
     return $result;
   }
   LocationIdSet._() : super();
-  factory LocationIdSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocationIdSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocationIdSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocationIdSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationIdSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocationIdSet',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'locationIds')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LocationIdSet clone() => LocationIdSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocationIdSet copyWith(void Function(LocationIdSet) updates) => super.copyWith((message) => updates(message as LocationIdSet)) as LocationIdSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocationIdSet copyWith(void Function(LocationIdSet) updates) =>
+      super.copyWith((message) => updates(message as LocationIdSet))
+          as LocationIdSet;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocationIdSet create() => LocationIdSet._();
   LocationIdSet createEmptyInstance() => create();
-  static $pb.PbList<LocationIdSet> createRepeated() => $pb.PbList<LocationIdSet>();
+  static $pb.PbList<LocationIdSet> createRepeated() =>
+      $pb.PbList<LocationIdSet>();
   @$core.pragma('dart2js:noInline')
-  static LocationIdSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocationIdSet>(create);
+  static LocationIdSet getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocationIdSet>(create);
   static LocationIdSet? _defaultInstance;
 
   /// Required. A non-empty list of
@@ -2210,24 +2714,31 @@ class Row extends $pb.GeneratedMessage {
     return $result;
   }
   Row._() : super();
-  factory Row.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Row.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Row.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Row.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Row', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<Value>(1, _omitFieldNames ? '' : 'cells', $pb.PbFieldType.PM, subBuilder: Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Row',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<Value>(1, _omitFieldNames ? '' : 'cells', $pb.PbFieldType.PM,
+        subBuilder: Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Row clone() => Row()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Row copyWith(void Function(Row) updates) => super.copyWith((message) => updates(message as Row)) as Row;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Row copyWith(void Function(Row) updates) =>
+      super.copyWith((message) => updates(message as Row)) as Row;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2236,7 +2747,8 @@ class Row extends $pb.GeneratedMessage {
   Row createEmptyInstance() => create();
   static $pb.PbList<Row> createRepeated() => $pb.PbList<Row>();
   @$core.pragma('dart2js:noInline')
-  static Row getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Row>(create);
+  static Row getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Row>(create);
   static Row? _defaultInstance;
 
   /// Required. The list of cells that constitute the row. Must have the same
@@ -2277,28 +2789,35 @@ class Value extends $pb.GeneratedMessage {
     return $result;
   }
   Value._() : super();
-  factory Value.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Value.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Value.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Value.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Value', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Value',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'noShipping')
-    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'flatRate', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'flatRate',
+        subBuilder: $536.Price.create)
     ..aOS(3, _omitFieldNames ? '' : 'pricePercentage')
     ..aOS(4, _omitFieldNames ? '' : 'carrierRate')
     ..aOS(5, _omitFieldNames ? '' : 'subtable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Value clone() => Value()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Value copyWith(void Function(Value) updates) => super.copyWith((message) => updates(message as Value)) as Value;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Value copyWith(void Function(Value) updates) =>
+      super.copyWith((message) => updates(message as Value)) as Value;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2307,7 +2826,8 @@ class Value extends $pb.GeneratedMessage {
   Value createEmptyInstance() => create();
   static $pb.PbList<Value> createRepeated() => $pb.PbList<Value>();
   @$core.pragma('dart2js:noInline')
-  static Value getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Value>(create);
+  static Value getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Value>(create);
   static Value? _defaultInstance;
 
   /// If true, then the product can't be shipped. Must be true when set, can only
@@ -2315,7 +2835,10 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get noShipping => $_getBF(0);
   @$pb.TagNumber(1)
-  set noShipping($core.bool v) { $_setBool(0, v); }
+  set noShipping($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasNoShipping() => $_has(0);
   @$pb.TagNumber(1)
@@ -2325,7 +2848,10 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $536.Price get flatRate => $_getN(1);
   @$pb.TagNumber(2)
-  set flatRate($536.Price v) { setField(2, v); }
+  set flatRate($536.Price v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFlatRate() => $_has(1);
   @$pb.TagNumber(2)
@@ -2339,7 +2865,10 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pricePercentage => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pricePercentage($core.String v) { $_setString(2, v); }
+  set pricePercentage($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPricePercentage() => $_has(2);
   @$pb.TagNumber(3)
@@ -2350,7 +2879,10 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get carrierRate => $_getSZ(3);
   @$pb.TagNumber(4)
-  set carrierRate($core.String v) { $_setString(3, v); }
+  set carrierRate($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCarrierRate() => $_has(3);
   @$pb.TagNumber(4)
@@ -2361,7 +2893,10 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get subtable => $_getSZ(4);
   @$pb.TagNumber(5)
-  set subtable($core.String v) { $_setString(4, v); }
+  set subtable($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSubtable() => $_has(4);
   @$pb.TagNumber(5)
@@ -2401,29 +2936,37 @@ class CarrierRate extends $pb.GeneratedMessage {
     return $result;
   }
   CarrierRate._() : super();
-  factory CarrierRate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CarrierRate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CarrierRate.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CarrierRate.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CarrierRate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CarrierRate',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'carrier')
     ..aOS(3, _omitFieldNames ? '' : 'carrierService')
     ..aOS(4, _omitFieldNames ? '' : 'originPostalCode')
     ..aOS(5, _omitFieldNames ? '' : 'percentageAdjustment')
-    ..aOM<$536.Price>(6, _omitFieldNames ? '' : 'flatAdjustment', subBuilder: $536.Price.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$536.Price>(6, _omitFieldNames ? '' : 'flatAdjustment',
+        subBuilder: $536.Price.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CarrierRate clone() => CarrierRate()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CarrierRate copyWith(void Function(CarrierRate) updates) => super.copyWith((message) => updates(message as CarrierRate)) as CarrierRate;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CarrierRate copyWith(void Function(CarrierRate) updates) =>
+      super.copyWith((message) => updates(message as CarrierRate))
+          as CarrierRate;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2432,14 +2975,18 @@ class CarrierRate extends $pb.GeneratedMessage {
   CarrierRate createEmptyInstance() => create();
   static $pb.PbList<CarrierRate> createRepeated() => $pb.PbList<CarrierRate>();
   @$core.pragma('dart2js:noInline')
-  static CarrierRate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CarrierRate>(create);
+  static CarrierRate getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CarrierRate>(create);
   static CarrierRate? _defaultInstance;
 
   /// Required. Name of the carrier rate. Must be unique per rate group.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2449,7 +2996,10 @@ class CarrierRate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get carrier => $_getSZ(1);
   @$pb.TagNumber(2)
-  set carrier($core.String v) { $_setString(1, v); }
+  set carrier($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCarrier() => $_has(1);
   @$pb.TagNumber(2)
@@ -2459,7 +3009,10 @@ class CarrierRate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get carrierService => $_getSZ(2);
   @$pb.TagNumber(3)
-  set carrierService($core.String v) { $_setString(2, v); }
+  set carrierService($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCarrierService() => $_has(2);
   @$pb.TagNumber(3)
@@ -2469,7 +3022,10 @@ class CarrierRate extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get originPostalCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set originPostalCode($core.String v) { $_setString(3, v); }
+  set originPostalCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOriginPostalCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -2481,7 +3037,10 @@ class CarrierRate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get percentageAdjustment => $_getSZ(4);
   @$pb.TagNumber(5)
-  set percentageAdjustment($core.String v) { $_setString(4, v); }
+  set percentageAdjustment($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPercentageAdjustment() => $_has(4);
   @$pb.TagNumber(5)
@@ -2494,7 +3053,10 @@ class CarrierRate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $536.Price get flatAdjustment => $_getN(5);
   @$pb.TagNumber(6)
-  set flatAdjustment($536.Price v) { setField(6, v); }
+  set flatAdjustment($536.Price v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFlatAdjustment() => $_has(5);
   @$pb.TagNumber(6)
@@ -2515,33 +3077,45 @@ class GetShippingSettingsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetShippingSettingsRequest._() : super();
-  factory GetShippingSettingsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetShippingSettingsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetShippingSettingsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetShippingSettingsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetShippingSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetShippingSettingsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetShippingSettingsRequest clone() => GetShippingSettingsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetShippingSettingsRequest copyWith(void Function(GetShippingSettingsRequest) updates) => super.copyWith((message) => updates(message as GetShippingSettingsRequest)) as GetShippingSettingsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetShippingSettingsRequest clone() =>
+      GetShippingSettingsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetShippingSettingsRequest copyWith(
+          void Function(GetShippingSettingsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetShippingSettingsRequest))
+          as GetShippingSettingsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetShippingSettingsRequest create() => GetShippingSettingsRequest._();
   GetShippingSettingsRequest createEmptyInstance() => create();
-  static $pb.PbList<GetShippingSettingsRequest> createRepeated() => $pb.PbList<GetShippingSettingsRequest>();
+  static $pb.PbList<GetShippingSettingsRequest> createRepeated() =>
+      $pb.PbList<GetShippingSettingsRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetShippingSettingsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetShippingSettingsRequest>(create);
+  static GetShippingSettingsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetShippingSettingsRequest>(create);
   static GetShippingSettingsRequest? _defaultInstance;
 
   /// Required. The name of the shipping setting to retrieve.
@@ -2549,7 +3123,10 @@ class GetShippingSettingsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2572,34 +3149,48 @@ class InsertShippingSettingsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   InsertShippingSettingsRequest._() : super();
-  factory InsertShippingSettingsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InsertShippingSettingsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InsertShippingSettingsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InsertShippingSettingsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertShippingSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InsertShippingSettingsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<ShippingSettings>(2, _omitFieldNames ? '' : 'shippingSetting', subBuilder: ShippingSettings.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ShippingSettings>(2, _omitFieldNames ? '' : 'shippingSetting',
+        subBuilder: ShippingSettings.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InsertShippingSettingsRequest clone() => InsertShippingSettingsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InsertShippingSettingsRequest copyWith(void Function(InsertShippingSettingsRequest) updates) => super.copyWith((message) => updates(message as InsertShippingSettingsRequest)) as InsertShippingSettingsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InsertShippingSettingsRequest clone() =>
+      InsertShippingSettingsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InsertShippingSettingsRequest copyWith(
+          void Function(InsertShippingSettingsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as InsertShippingSettingsRequest))
+          as InsertShippingSettingsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static InsertShippingSettingsRequest create() => InsertShippingSettingsRequest._();
+  static InsertShippingSettingsRequest create() =>
+      InsertShippingSettingsRequest._();
   InsertShippingSettingsRequest createEmptyInstance() => create();
-  static $pb.PbList<InsertShippingSettingsRequest> createRepeated() => $pb.PbList<InsertShippingSettingsRequest>();
+  static $pb.PbList<InsertShippingSettingsRequest> createRepeated() =>
+      $pb.PbList<InsertShippingSettingsRequest>();
   @$core.pragma('dart2js:noInline')
-  static InsertShippingSettingsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InsertShippingSettingsRequest>(create);
+  static InsertShippingSettingsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InsertShippingSettingsRequest>(create);
   static InsertShippingSettingsRequest? _defaultInstance;
 
   /// Required. The account where this product will be inserted.
@@ -2607,7 +3198,10 @@ class InsertShippingSettingsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -2617,7 +3211,10 @@ class InsertShippingSettingsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ShippingSettings get shippingSetting => $_getN(1);
   @$pb.TagNumber(2)
-  set shippingSetting(ShippingSettings v) { setField(2, v); }
+  set shippingSetting(ShippingSettings v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasShippingSetting() => $_has(1);
   @$pb.TagNumber(2)
@@ -2626,6 +3223,6 @@ class InsertShippingSettingsRequest extends $pb.GeneratedMessage {
   ShippingSettings ensureShippingSetting() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

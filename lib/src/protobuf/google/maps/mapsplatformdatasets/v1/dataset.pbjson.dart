@@ -35,14 +35,76 @@ const Dataset$json = {
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'version_id', '3': 4, '4': 1, '5': 9, '10': 'versionId'},
-    {'1': 'usage', '3': 5, '4': 3, '5': 14, '6': '.google.maps.mapsplatformdatasets.v1.Usage', '10': 'usage'},
-    {'1': 'local_file_source', '3': 6, '4': 1, '5': 11, '6': '.google.maps.mapsplatformdatasets.v1.LocalFileSource', '9': 0, '10': 'localFileSource'},
-    {'1': 'gcs_source', '3': 7, '4': 1, '5': 11, '6': '.google.maps.mapsplatformdatasets.v1.GcsSource', '9': 0, '10': 'gcsSource'},
-    {'1': 'status', '3': 12, '4': 1, '5': 11, '6': '.google.maps.mapsplatformdatasets.v1.Status', '8': {}, '10': 'status'},
-    {'1': 'create_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'version_create_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'versionCreateTime'},
-    {'1': 'version_description', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'versionDescription'},
+    {
+      '1': 'usage',
+      '3': 5,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.mapsplatformdatasets.v1.Usage',
+      '10': 'usage'
+    },
+    {
+      '1': 'local_file_source',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.mapsplatformdatasets.v1.LocalFileSource',
+      '9': 0,
+      '10': 'localFileSource'
+    },
+    {
+      '1': 'gcs_source',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.mapsplatformdatasets.v1.GcsSource',
+      '9': 0,
+      '10': 'gcsSource'
+    },
+    {
+      '1': 'status',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.mapsplatformdatasets.v1.Status',
+      '8': {},
+      '10': 'status'
+    },
+    {
+      '1': 'create_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'version_create_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'versionCreateTime'
+    },
+    {
+      '1': 'version_description',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'versionDescription'
+    },
   ],
   '7': {},
   '8': [
@@ -72,7 +134,14 @@ final $typed_data.Uint8List datasetDescriptor = $convert.base64Decode(
 const Status$json = {
   '1': 'Status',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.maps.mapsplatformdatasets.v1.Status.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.mapsplatformdatasets.v1.Status.State',
+      '10': 'state'
+    },
     {'1': 'error_message', '3': 2, '4': 1, '5': 9, '10': 'errorMessage'},
   ],
   '4': [Status_State$json],
@@ -107,4 +176,3 @@ final $typed_data.Uint8List statusDescriptor = $convert.base64Decode(
     'RBVEVfUFJPQ0VTU0lORxAGEhsKF1NUQVRFX1BST0NFU1NJTkdfRkFJTEVEEAcSFgoSU1RBVEVf'
     'TkVFRFNfUkVWSUVXEAgSFAoQU1RBVEVfUFVCTElTSElORxAJEhsKF1NUQVRFX1BVQkxJU0hJTk'
     'dfRkFJTEVEEAoSEwoPU1RBVEVfQ09NUExFVEVEEAs=');
-

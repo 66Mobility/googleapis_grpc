@@ -18,8 +18,22 @@ const QueryDriveActivityRequest$json = {
   '1': 'QueryDriveActivityRequest',
   '2': [
     {'1': 'item_name', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'itemName'},
-    {'1': 'ancestor_name', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'ancestorName'},
-    {'1': 'consolidation_strategy', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.ConsolidationStrategy', '10': 'consolidationStrategy'},
+    {
+      '1': 'ancestor_name',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'ancestorName'
+    },
+    {
+      '1': 'consolidation_strategy',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.ConsolidationStrategy',
+      '10': 'consolidationStrategy'
+    },
     {'1': 'page_size', '3': 6, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 7, '4': 1, '5': 9, '10': 'pageToken'},
     {'1': 'filter', '3': 8, '4': 1, '5': 9, '10': 'filter'},
@@ -42,10 +56,30 @@ final $typed_data.Uint8List queryDriveActivityRequestDescriptor = $convert.base6
 const ConsolidationStrategy$json = {
   '1': 'ConsolidationStrategy',
   '2': [
-    {'1': 'none', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.ConsolidationStrategy.NoConsolidation', '9': 0, '10': 'none'},
-    {'1': 'legacy', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.ConsolidationStrategy.Legacy', '9': 0, '10': 'legacy'},
+    {
+      '1': 'none',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.ConsolidationStrategy.NoConsolidation',
+      '9': 0,
+      '10': 'none'
+    },
+    {
+      '1': 'legacy',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.ConsolidationStrategy.Legacy',
+      '9': 0,
+      '10': 'legacy'
+    },
   ],
-  '3': [ConsolidationStrategy_NoConsolidation$json, ConsolidationStrategy_Legacy$json],
+  '3': [
+    ConsolidationStrategy_NoConsolidation$json,
+    ConsolidationStrategy_Legacy$json
+  ],
   '8': [
     {'1': 'strategy'},
   ],
@@ -68,4 +102,3 @@ final $typed_data.Uint8List consolidationStrategyDescriptor = $convert.base64Dec
     'bm9uZRJVCgZsZWdhY3kYAiABKAsyOy5nb29nbGUuYXBwcy5kcml2ZS5hY3Rpdml0eS52Mi5Db2'
     '5zb2xpZGF0aW9uU3RyYXRlZ3kuTGVnYWN5SABSBmxlZ2FjeRoRCg9Ob0NvbnNvbGlkYXRpb24a'
     'CAoGTGVnYWN5QgoKCHN0cmF0ZWd5');
-

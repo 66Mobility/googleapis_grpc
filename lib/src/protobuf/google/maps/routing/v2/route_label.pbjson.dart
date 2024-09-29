@@ -28,4 +28,3 @@ const RouteLabel$json = {
 final $typed_data.Uint8List routeLabelDescriptor = $convert.base64Decode(
     'CgpSb3V0ZUxhYmVsEhsKF1JPVVRFX0xBQkVMX1VOU1BFQ0lGSUVEEAASEQoNREVGQVVMVF9ST1'
     'VURRABEhsKF0RFRkFVTFRfUk9VVEVfQUxURVJOQVRFEAISEgoORlVFTF9FRkZJQ0lFTlQQAw==');
-

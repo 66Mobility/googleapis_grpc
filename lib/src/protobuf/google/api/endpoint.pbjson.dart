@@ -28,4 +28,3 @@ const Endpoint$json = {
 final $typed_data.Uint8List endpointDescriptor = $convert.base64Decode(
     'CghFbmRwb2ludBISCgRuYW1lGAEgASgJUgRuYW1lEhgKB2FsaWFzZXMYAiADKAlSB2FsaWFzZX'
     'MSFgoGdGFyZ2V0GGUgASgJUgZ0YXJnZXQSHQoKYWxsb3dfY29ycxgFIAEoCFIJYWxsb3dDb3Jz');
-

@@ -18,9 +18,33 @@ const MetricsScope$json = {
   '1': 'MetricsScope',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'monitored_projects', '3': 4, '4': 3, '5': 11, '6': '.google.monitoring.metricsscope.v1.MonitoredProject', '8': {}, '10': 'monitoredProjects'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'monitored_projects',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.metricsscope.v1.MonitoredProject',
+      '8': {},
+      '10': 'monitoredProjects'
+    },
   ],
   '7': {},
 };
@@ -40,7 +64,15 @@ const MonitoredProject$json = {
   '1': 'MonitoredProject',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
   ],
   '7': {},
 };
@@ -52,4 +84,3 @@ final $typed_data.Uint8List monitoredProjectDescriptor = $convert.base64Decode(
     '6kFvCiptb25pdG9yaW5nLmdvb2dsZWFwaXMuY29tL01vbml0b3JlZFByb2plY3QSQWxvY2F0aW'
     '9ucy9nbG9iYWwvbWV0cmljc1Njb3Blcy97bWV0cmljc19zY29wZX0vcHJvamVjdHMve3Byb2pl'
     'Y3R9');
-

@@ -20,9 +20,30 @@ const Card$json = {
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '10': 'subtitle'},
     {'1': 'text', '3': 3, '4': 1, '5': 9, '10': 'text'},
-    {'1': 'image', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Image', '10': 'image'},
-    {'1': 'image_fill', '3': 5, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.conversation.Image.ImageFill', '10': 'imageFill'},
-    {'1': 'button', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Link', '10': 'button'},
+    {
+      '1': 'image',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Image',
+      '10': 'image'
+    },
+    {
+      '1': 'image_fill',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.conversation.Image.ImageFill',
+      '10': 'imageFill'
+    },
+    {
+      '1': 'button',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Link',
+      '10': 'button'
+    },
   ],
 };
 
@@ -34,4 +55,3 @@ final $typed_data.Uint8List cardDescriptor = $convert.base64Decode(
     '9nbGUuYWN0aW9ucy5zZGsudjIuY29udmVyc2F0aW9uLkltYWdlLkltYWdlRmlsbFIJaW1hZ2VG'
     'aWxsEkAKBmJ1dHRvbhgGIAEoCzIoLmdvb2dsZS5hY3Rpb25zLnNkay52Mi5jb252ZXJzYXRpb2'
     '4uTGlua1IGYnV0dG9u');
-

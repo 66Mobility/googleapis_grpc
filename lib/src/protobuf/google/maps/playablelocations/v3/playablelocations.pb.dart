@@ -57,41 +57,60 @@ class SamplePlayableLocationsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SamplePlayableLocationsRequest._() : super();
-  factory SamplePlayableLocationsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SamplePlayableLocationsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SamplePlayableLocationsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SamplePlayableLocationsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SamplePlayableLocationsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..aOM<$476.AreaFilter>(1, _omitFieldNames ? '' : 'areaFilter', subBuilder: $476.AreaFilter.create)
-    ..pc<$476.Criterion>(2, _omitFieldNames ? '' : 'criteria', $pb.PbFieldType.PM, subBuilder: $476.Criterion.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SamplePlayableLocationsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
+    ..aOM<$476.AreaFilter>(1, _omitFieldNames ? '' : 'areaFilter',
+        subBuilder: $476.AreaFilter.create)
+    ..pc<$476.Criterion>(
+        2, _omitFieldNames ? '' : 'criteria', $pb.PbFieldType.PM,
+        subBuilder: $476.Criterion.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SamplePlayableLocationsRequest clone() => SamplePlayableLocationsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SamplePlayableLocationsRequest copyWith(void Function(SamplePlayableLocationsRequest) updates) => super.copyWith((message) => updates(message as SamplePlayableLocationsRequest)) as SamplePlayableLocationsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SamplePlayableLocationsRequest clone() =>
+      SamplePlayableLocationsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SamplePlayableLocationsRequest copyWith(
+          void Function(SamplePlayableLocationsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as SamplePlayableLocationsRequest))
+          as SamplePlayableLocationsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SamplePlayableLocationsRequest create() => SamplePlayableLocationsRequest._();
+  static SamplePlayableLocationsRequest create() =>
+      SamplePlayableLocationsRequest._();
   SamplePlayableLocationsRequest createEmptyInstance() => create();
-  static $pb.PbList<SamplePlayableLocationsRequest> createRepeated() => $pb.PbList<SamplePlayableLocationsRequest>();
+  static $pb.PbList<SamplePlayableLocationsRequest> createRepeated() =>
+      $pb.PbList<SamplePlayableLocationsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SamplePlayableLocationsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SamplePlayableLocationsRequest>(create);
+  static SamplePlayableLocationsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SamplePlayableLocationsRequest>(create);
   static SamplePlayableLocationsRequest? _defaultInstance;
 
   /// Required. Specifies the area to search within for playable locations.
   @$pb.TagNumber(1)
   $476.AreaFilter get areaFilter => $_getN(0);
   @$pb.TagNumber(1)
-  set areaFilter($476.AreaFilter v) { setField(1, v); }
+  set areaFilter($476.AreaFilter v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAreaFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -124,40 +143,64 @@ class SamplePlayableLocationsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SamplePlayableLocationsResponse._() : super();
-  factory SamplePlayableLocationsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SamplePlayableLocationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SamplePlayableLocationsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SamplePlayableLocationsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SamplePlayableLocationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..m<$core.int, $476.PlayableLocationList>(1, _omitFieldNames ? '' : 'locationsPerGameObjectType', entryClassName: 'SamplePlayableLocationsResponse.LocationsPerGameObjectTypeEntry', keyFieldType: $pb.PbFieldType.O3, valueFieldType: $pb.PbFieldType.OM, valueCreator: $476.PlayableLocationList.create, valueDefaultOrMaker: $476.PlayableLocationList.getDefault, packageName: const $pb.PackageName('google.maps.playablelocations.v3'))
-    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'ttl', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SamplePlayableLocationsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
+    ..m<$core.int, $476.PlayableLocationList>(
+        1, _omitFieldNames ? '' : 'locationsPerGameObjectType',
+        entryClassName:
+            'SamplePlayableLocationsResponse.LocationsPerGameObjectTypeEntry',
+        keyFieldType: $pb.PbFieldType.O3,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $476.PlayableLocationList.create,
+        valueDefaultOrMaker: $476.PlayableLocationList.getDefault,
+        packageName: const $pb.PackageName('google.maps.playablelocations.v3'))
+    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'ttl',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SamplePlayableLocationsResponse clone() => SamplePlayableLocationsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SamplePlayableLocationsResponse copyWith(void Function(SamplePlayableLocationsResponse) updates) => super.copyWith((message) => updates(message as SamplePlayableLocationsResponse)) as SamplePlayableLocationsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SamplePlayableLocationsResponse clone() =>
+      SamplePlayableLocationsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SamplePlayableLocationsResponse copyWith(
+          void Function(SamplePlayableLocationsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as SamplePlayableLocationsResponse))
+          as SamplePlayableLocationsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SamplePlayableLocationsResponse create() => SamplePlayableLocationsResponse._();
+  static SamplePlayableLocationsResponse create() =>
+      SamplePlayableLocationsResponse._();
   SamplePlayableLocationsResponse createEmptyInstance() => create();
-  static $pb.PbList<SamplePlayableLocationsResponse> createRepeated() => $pb.PbList<SamplePlayableLocationsResponse>();
+  static $pb.PbList<SamplePlayableLocationsResponse> createRepeated() =>
+      $pb.PbList<SamplePlayableLocationsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SamplePlayableLocationsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SamplePlayableLocationsResponse>(create);
+  static SamplePlayableLocationsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SamplePlayableLocationsResponse>(
+          create);
   static SamplePlayableLocationsResponse? _defaultInstance;
 
   /// Each PlayableLocation object corresponds to a game_object_type specified
   /// in the request.
   @$pb.TagNumber(1)
-  $core.Map<$core.int, $476.PlayableLocationList> get locationsPerGameObjectType => $_getMap(0);
+  $core.Map<$core.int, $476.PlayableLocationList>
+      get locationsPerGameObjectType => $_getMap(0);
 
   /// Required. Specifies the "time-to-live" for the set of playable locations.
   /// You can use this value to determine how long to cache the set of playable
@@ -170,7 +213,10 @@ class SamplePlayableLocationsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $264.Duration get ttl => $_getN(1);
   @$pb.TagNumber(9)
-  set ttl($264.Duration v) { setField(9, v); }
+  set ttl($264.Duration v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTtl() => $_has(1);
   @$pb.TagNumber(9)
@@ -199,35 +245,49 @@ class LogPlayerReportsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   LogPlayerReportsRequest._() : super();
-  factory LogPlayerReportsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogPlayerReportsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogPlayerReportsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogPlayerReportsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogPlayerReportsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..pc<$477.PlayerReport>(1, _omitFieldNames ? '' : 'playerReports', $pb.PbFieldType.PM, subBuilder: $477.PlayerReport.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogPlayerReportsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
+    ..pc<$477.PlayerReport>(
+        1, _omitFieldNames ? '' : 'playerReports', $pb.PbFieldType.PM,
+        subBuilder: $477.PlayerReport.create)
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$478.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo', subBuilder: $478.ClientInfo.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$478.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo',
+        subBuilder: $478.ClientInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LogPlayerReportsRequest clone() => LogPlayerReportsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogPlayerReportsRequest copyWith(void Function(LogPlayerReportsRequest) updates) => super.copyWith((message) => updates(message as LogPlayerReportsRequest)) as LogPlayerReportsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LogPlayerReportsRequest clone() =>
+      LogPlayerReportsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogPlayerReportsRequest copyWith(
+          void Function(LogPlayerReportsRequest) updates) =>
+      super.copyWith((message) => updates(message as LogPlayerReportsRequest))
+          as LogPlayerReportsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogPlayerReportsRequest create() => LogPlayerReportsRequest._();
   LogPlayerReportsRequest createEmptyInstance() => create();
-  static $pb.PbList<LogPlayerReportsRequest> createRepeated() => $pb.PbList<LogPlayerReportsRequest>();
+  static $pb.PbList<LogPlayerReportsRequest> createRepeated() =>
+      $pb.PbList<LogPlayerReportsRequest>();
   @$core.pragma('dart2js:noInline')
-  static LogPlayerReportsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogPlayerReportsRequest>(create);
+  static LogPlayerReportsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LogPlayerReportsRequest>(create);
   static LogPlayerReportsRequest? _defaultInstance;
 
   /// Required. Player reports. The maximum number of player reports that you can
@@ -245,7 +305,10 @@ class LogPlayerReportsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get requestId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set requestId($core.String v) { $_setString(1, v); }
+  set requestId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRequestId() => $_has(1);
   @$pb.TagNumber(2)
@@ -256,7 +319,10 @@ class LogPlayerReportsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $478.ClientInfo get clientInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set clientInfo($478.ClientInfo v) { setField(3, v); }
+  set clientInfo($478.ClientInfo v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasClientInfo() => $_has(2);
   @$pb.TagNumber(3)
@@ -273,32 +339,43 @@ class LogPlayerReportsRequest extends $pb.GeneratedMessage {
 class LogPlayerReportsResponse extends $pb.GeneratedMessage {
   factory LogPlayerReportsResponse() => create();
   LogPlayerReportsResponse._() : super();
-  factory LogPlayerReportsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogPlayerReportsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogPlayerReportsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogPlayerReportsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogPlayerReportsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogPlayerReportsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LogPlayerReportsResponse clone() => LogPlayerReportsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogPlayerReportsResponse copyWith(void Function(LogPlayerReportsResponse) updates) => super.copyWith((message) => updates(message as LogPlayerReportsResponse)) as LogPlayerReportsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LogPlayerReportsResponse clone() =>
+      LogPlayerReportsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogPlayerReportsResponse copyWith(
+          void Function(LogPlayerReportsResponse) updates) =>
+      super.copyWith((message) => updates(message as LogPlayerReportsResponse))
+          as LogPlayerReportsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogPlayerReportsResponse create() => LogPlayerReportsResponse._();
   LogPlayerReportsResponse createEmptyInstance() => create();
-  static $pb.PbList<LogPlayerReportsResponse> createRepeated() => $pb.PbList<LogPlayerReportsResponse>();
+  static $pb.PbList<LogPlayerReportsResponse> createRepeated() =>
+      $pb.PbList<LogPlayerReportsResponse>();
   @$core.pragma('dart2js:noInline')
-  static LogPlayerReportsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogPlayerReportsResponse>(create);
+  static LogPlayerReportsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LogPlayerReportsResponse>(create);
   static LogPlayerReportsResponse? _defaultInstance;
 }
 
@@ -322,35 +399,49 @@ class LogImpressionsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   LogImpressionsRequest._() : super();
-  factory LogImpressionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogImpressionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogImpressionsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogImpressionsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogImpressionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..pc<$477.Impression>(1, _omitFieldNames ? '' : 'impressions', $pb.PbFieldType.PM, subBuilder: $477.Impression.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogImpressionsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
+    ..pc<$477.Impression>(
+        1, _omitFieldNames ? '' : 'impressions', $pb.PbFieldType.PM,
+        subBuilder: $477.Impression.create)
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$478.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo', subBuilder: $478.ClientInfo.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$478.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo',
+        subBuilder: $478.ClientInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LogImpressionsRequest clone() => LogImpressionsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogImpressionsRequest copyWith(void Function(LogImpressionsRequest) updates) => super.copyWith((message) => updates(message as LogImpressionsRequest)) as LogImpressionsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LogImpressionsRequest clone() =>
+      LogImpressionsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogImpressionsRequest copyWith(
+          void Function(LogImpressionsRequest) updates) =>
+      super.copyWith((message) => updates(message as LogImpressionsRequest))
+          as LogImpressionsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogImpressionsRequest create() => LogImpressionsRequest._();
   LogImpressionsRequest createEmptyInstance() => create();
-  static $pb.PbList<LogImpressionsRequest> createRepeated() => $pb.PbList<LogImpressionsRequest>();
+  static $pb.PbList<LogImpressionsRequest> createRepeated() =>
+      $pb.PbList<LogImpressionsRequest>();
   @$core.pragma('dart2js:noInline')
-  static LogImpressionsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogImpressionsRequest>(create);
+  static LogImpressionsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LogImpressionsRequest>(create);
   static LogImpressionsRequest? _defaultInstance;
 
   /// Required. Impression event details. The maximum number of impression
@@ -368,7 +459,10 @@ class LogImpressionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get requestId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set requestId($core.String v) { $_setString(1, v); }
+  set requestId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRequestId() => $_has(1);
   @$pb.TagNumber(2)
@@ -379,7 +473,10 @@ class LogImpressionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $478.ClientInfo get clientInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set clientInfo($478.ClientInfo v) { setField(3, v); }
+  set clientInfo($478.ClientInfo v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasClientInfo() => $_has(2);
   @$pb.TagNumber(3)
@@ -394,35 +491,46 @@ class LogImpressionsRequest extends $pb.GeneratedMessage {
 class LogImpressionsResponse extends $pb.GeneratedMessage {
   factory LogImpressionsResponse() => create();
   LogImpressionsResponse._() : super();
-  factory LogImpressionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogImpressionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogImpressionsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogImpressionsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogImpressionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogImpressionsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LogImpressionsResponse clone() => LogImpressionsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogImpressionsResponse copyWith(void Function(LogImpressionsResponse) updates) => super.copyWith((message) => updates(message as LogImpressionsResponse)) as LogImpressionsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LogImpressionsResponse clone() =>
+      LogImpressionsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogImpressionsResponse copyWith(
+          void Function(LogImpressionsResponse) updates) =>
+      super.copyWith((message) => updates(message as LogImpressionsResponse))
+          as LogImpressionsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogImpressionsResponse create() => LogImpressionsResponse._();
   LogImpressionsResponse createEmptyInstance() => create();
-  static $pb.PbList<LogImpressionsResponse> createRepeated() => $pb.PbList<LogImpressionsResponse>();
+  static $pb.PbList<LogImpressionsResponse> createRepeated() =>
+      $pb.PbList<LogImpressionsResponse>();
   @$core.pragma('dart2js:noInline')
-  static LogImpressionsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogImpressionsResponse>(create);
+  static LogImpressionsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LogImpressionsResponse>(create);
   static LogImpressionsResponse? _defaultInstance;
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

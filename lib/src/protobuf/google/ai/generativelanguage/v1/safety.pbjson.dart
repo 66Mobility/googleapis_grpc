@@ -46,8 +46,24 @@ final $typed_data.Uint8List harmCategoryDescriptor = $convert.base64Decode(
 const SafetyRating$json = {
   '1': 'SafetyRating',
   '2': [
-    {'1': 'category', '3': 3, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1.HarmCategory', '8': {}, '10': 'category'},
-    {'1': 'probability', '3': 4, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1.SafetyRating.HarmProbability', '8': {}, '10': 'probability'},
+    {
+      '1': 'category',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1.HarmCategory',
+      '8': {},
+      '10': 'category'
+    },
+    {
+      '1': 'probability',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1.SafetyRating.HarmProbability',
+      '8': {},
+      '10': 'probability'
+    },
     {'1': 'blocked', '3': 5, '4': 1, '5': 8, '10': 'blocked'},
   ],
   '4': [SafetyRating_HarmProbability$json],
@@ -78,8 +94,24 @@ final $typed_data.Uint8List safetyRatingDescriptor = $convert.base64Decode(
 const SafetySetting$json = {
   '1': 'SafetySetting',
   '2': [
-    {'1': 'category', '3': 3, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1.HarmCategory', '8': {}, '10': 'category'},
-    {'1': 'threshold', '3': 4, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1.SafetySetting.HarmBlockThreshold', '8': {}, '10': 'threshold'},
+    {
+      '1': 'category',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1.HarmCategory',
+      '8': {},
+      '10': 'category'
+    },
+    {
+      '1': 'threshold',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1.SafetySetting.HarmBlockThreshold',
+      '8': {},
+      '10': 'threshold'
+    },
   ],
   '4': [SafetySetting_HarmBlockThreshold$json],
 };
@@ -106,4 +138,3 @@ final $typed_data.Uint8List safetySettingDescriptor = $convert.base64Decode(
     'CiBIQVJNX0JMT0NLX1RIUkVTSE9MRF9VTlNQRUNJRklFRBAAEhcKE0JMT0NLX0xPV19BTkRfQU'
     'JPVkUQARIaChZCTE9DS19NRURJVU1fQU5EX0FCT1ZFEAISEwoPQkxPQ0tfT05MWV9ISUdIEAMS'
     'DgoKQkxPQ0tfTk9ORRAEEgcKA09GRhAF');
-

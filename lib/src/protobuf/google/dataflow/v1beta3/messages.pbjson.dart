@@ -38,9 +38,23 @@ const JobMessage$json = {
   '1': 'JobMessage',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'time'},
+    {
+      '1': 'time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'time'
+    },
     {'1': 'message_text', '3': 3, '4': 1, '5': 9, '10': 'messageText'},
-    {'1': 'message_importance', '3': 4, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.JobMessageImportance', '10': 'messageImportance'},
+    {
+      '1': 'message_importance',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.JobMessageImportance',
+      '10': 'messageImportance'
+    },
   ],
 };
 
@@ -57,7 +71,14 @@ const StructuredMessage$json = {
   '2': [
     {'1': 'message_text', '3': 1, '4': 1, '5': 9, '10': 'messageText'},
     {'1': 'message_key', '3': 2, '4': 1, '5': 9, '10': 'messageKey'},
-    {'1': 'parameters', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.StructuredMessage.Parameter', '10': 'parameters'},
+    {
+      '1': 'parameters',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StructuredMessage.Parameter',
+      '10': 'parameters'
+    },
   ],
   '3': [StructuredMessage_Parameter$json],
 };
@@ -67,7 +88,14 @@ const StructuredMessage_Parameter$json = {
   '1': 'Parameter',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'value'
+    },
   ],
 };
 
@@ -83,11 +111,44 @@ final $typed_data.Uint8List structuredMessageDescriptor = $convert.base64Decode(
 const AutoscalingEvent$json = {
   '1': 'AutoscalingEvent',
   '2': [
-    {'1': 'current_num_workers', '3': 1, '4': 1, '5': 3, '10': 'currentNumWorkers'},
-    {'1': 'target_num_workers', '3': 2, '4': 1, '5': 3, '10': 'targetNumWorkers'},
-    {'1': 'event_type', '3': 3, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.AutoscalingEvent.AutoscalingEventType', '10': 'eventType'},
-    {'1': 'description', '3': 4, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.StructuredMessage', '10': 'description'},
-    {'1': 'time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'time'},
+    {
+      '1': 'current_num_workers',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '10': 'currentNumWorkers'
+    },
+    {
+      '1': 'target_num_workers',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'targetNumWorkers'
+    },
+    {
+      '1': 'event_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.AutoscalingEvent.AutoscalingEventType',
+      '10': 'eventType'
+    },
+    {
+      '1': 'description',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StructuredMessage',
+      '10': 'description'
+    },
+    {
+      '1': 'time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'time'
+    },
     {'1': 'worker_pool', '3': 7, '4': 1, '5': 9, '10': 'workerPool'},
   ],
   '4': [AutoscalingEvent_AutoscalingEventType$json],
@@ -124,11 +185,32 @@ const ListJobMessagesRequest$json = {
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'job_id', '3': 2, '4': 1, '5': 9, '10': 'jobId'},
-    {'1': 'minimum_importance', '3': 3, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.JobMessageImportance', '10': 'minimumImportance'},
+    {
+      '1': 'minimum_importance',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.JobMessageImportance',
+      '10': 'minimumImportance'
+    },
     {'1': 'page_size', '3': 4, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 5, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'start_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'location', '3': 8, '4': 1, '5': 9, '10': 'location'},
   ],
 };
@@ -147,9 +229,23 @@ final $typed_data.Uint8List listJobMessagesRequestDescriptor = $convert.base64De
 const ListJobMessagesResponse$json = {
   '1': 'ListJobMessagesResponse',
   '2': [
-    {'1': 'job_messages', '3': 1, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.JobMessage', '10': 'jobMessages'},
+    {
+      '1': 'job_messages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.JobMessage',
+      '10': 'jobMessages'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'autoscaling_events', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.AutoscalingEvent', '10': 'autoscalingEvents'},
+    {
+      '1': 'autoscaling_events',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.AutoscalingEvent',
+      '10': 'autoscalingEvents'
+    },
   ],
 };
 
@@ -160,4 +256,3 @@ final $typed_data.Uint8List listJobMessagesResponseDescriptor = $convert.base64D
     'dG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4SWAoSYXV0b3NjYWxpbmdfZXZlbnRzGAMgAygLMi'
     'kuZ29vZ2xlLmRhdGFmbG93LnYxYmV0YTMuQXV0b3NjYWxpbmdFdmVudFIRYXV0b3NjYWxpbmdF'
     'dmVudHM=');
-

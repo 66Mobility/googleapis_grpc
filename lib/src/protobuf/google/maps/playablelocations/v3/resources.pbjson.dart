@@ -17,9 +17,31 @@ import 'dart:typed_data' as $typed_data;
 const PlayerReport$json = {
   '1': 'PlayerReport',
   '2': [
-    {'1': 'location_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'locationName'},
-    {'1': 'reasons', '3': 2, '4': 3, '5': 14, '6': '.google.maps.playablelocations.v3.PlayerReport.BadLocationReason', '8': {}, '10': 'reasons'},
-    {'1': 'reason_details', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'reasonDetails'},
+    {
+      '1': 'location_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'locationName'
+    },
+    {
+      '1': 'reasons',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.playablelocations.v3.PlayerReport.BadLocationReason',
+      '8': {},
+      '10': 'reasons'
+    },
+    {
+      '1': 'reason_details',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'reasonDetails'
+    },
     {'1': 'language_code', '3': 4, '4': 1, '5': 9, '10': 'languageCode'},
   ],
   '4': [PlayerReport_BadLocationReason$json],
@@ -53,8 +75,23 @@ final $typed_data.Uint8List playerReportDescriptor = $convert.base64Decode(
 const Impression$json = {
   '1': 'Impression',
   '2': [
-    {'1': 'location_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'locationName'},
-    {'1': 'impression_type', '3': 2, '4': 1, '5': 14, '6': '.google.maps.playablelocations.v3.Impression.ImpressionType', '8': {}, '10': 'impressionType'},
+    {
+      '1': 'location_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'locationName'
+    },
+    {
+      '1': 'impression_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.playablelocations.v3.Impression.ImpressionType',
+      '8': {},
+      '10': 'impressionType'
+    },
     {'1': 'game_object_type', '3': 4, '4': 1, '5': 5, '10': 'gameObjectType'},
   ],
   '4': [Impression_ImpressionType$json],
@@ -78,4 +115,3 @@ final $typed_data.Uint8List impressionDescriptor = $convert.base64Decode(
     'FtZV9vYmplY3RfdHlwZRgEIAEoBVIOZ2FtZU9iamVjdFR5cGUiUAoOSW1wcmVzc2lvblR5cGUS'
     'HwobSU1QUkVTU0lPTl9UWVBFX1VOU1BFQ0lGSUVEEAASDQoJUFJFU0VOVEVEEAESDgoKSU5URV'
     'JBQ1RFRBAC');
-

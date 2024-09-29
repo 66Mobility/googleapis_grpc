@@ -17,15 +17,39 @@ import 'dart:typed_data' as $typed_data;
 const UspsAddress$json = {
   '1': 'UspsAddress',
   '2': [
-    {'1': 'first_address_line', '3': 1, '4': 1, '5': 9, '10': 'firstAddressLine'},
+    {
+      '1': 'first_address_line',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'firstAddressLine'
+    },
     {'1': 'firm', '3': 2, '4': 1, '5': 9, '10': 'firm'},
-    {'1': 'second_address_line', '3': 3, '4': 1, '5': 9, '10': 'secondAddressLine'},
+    {
+      '1': 'second_address_line',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'secondAddressLine'
+    },
     {'1': 'urbanization', '3': 4, '4': 1, '5': 9, '10': 'urbanization'},
-    {'1': 'city_state_zip_address_line', '3': 5, '4': 1, '5': 9, '10': 'cityStateZipAddressLine'},
+    {
+      '1': 'city_state_zip_address_line',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'cityStateZipAddressLine'
+    },
     {'1': 'city', '3': 6, '4': 1, '5': 9, '10': 'city'},
     {'1': 'state', '3': 7, '4': 1, '5': 9, '10': 'state'},
     {'1': 'zip_code', '3': 8, '4': 1, '5': 9, '10': 'zipCode'},
-    {'1': 'zip_code_extension', '3': 9, '4': 1, '5': 9, '10': 'zipCodeExtension'},
+    {
+      '1': 'zip_code_extension',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '10': 'zipCodeExtension'
+    },
   ],
 };
 
@@ -43,40 +67,137 @@ final $typed_data.Uint8List uspsAddressDescriptor = $convert.base64Decode(
 const UspsData$json = {
   '1': 'UspsData',
   '2': [
-    {'1': 'standardized_address', '3': 1, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.UspsAddress', '10': 'standardizedAddress'},
-    {'1': 'delivery_point_code', '3': 2, '4': 1, '5': 9, '10': 'deliveryPointCode'},
-    {'1': 'delivery_point_check_digit', '3': 3, '4': 1, '5': 9, '10': 'deliveryPointCheckDigit'},
+    {
+      '1': 'standardized_address',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.UspsAddress',
+      '10': 'standardizedAddress'
+    },
+    {
+      '1': 'delivery_point_code',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'deliveryPointCode'
+    },
+    {
+      '1': 'delivery_point_check_digit',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'deliveryPointCheckDigit'
+    },
     {'1': 'dpv_confirmation', '3': 4, '4': 1, '5': 9, '10': 'dpvConfirmation'},
     {'1': 'dpv_footnote', '3': 5, '4': 1, '5': 9, '10': 'dpvFootnote'},
     {'1': 'dpv_cmra', '3': 6, '4': 1, '5': 9, '10': 'dpvCmra'},
     {'1': 'dpv_vacant', '3': 7, '4': 1, '5': 9, '10': 'dpvVacant'},
     {'1': 'dpv_no_stat', '3': 8, '4': 1, '5': 9, '10': 'dpvNoStat'},
-    {'1': 'dpv_no_stat_reason_code', '3': 29, '4': 1, '5': 5, '10': 'dpvNoStatReasonCode'},
+    {
+      '1': 'dpv_no_stat_reason_code',
+      '3': 29,
+      '4': 1,
+      '5': 5,
+      '10': 'dpvNoStatReasonCode'
+    },
     {'1': 'dpv_drop', '3': 30, '4': 1, '5': 9, '10': 'dpvDrop'},
     {'1': 'dpv_throwback', '3': 31, '4': 1, '5': 9, '10': 'dpvThrowback'},
-    {'1': 'dpv_non_delivery_days', '3': 32, '4': 1, '5': 9, '10': 'dpvNonDeliveryDays'},
-    {'1': 'dpv_non_delivery_days_values', '3': 33, '4': 1, '5': 5, '10': 'dpvNonDeliveryDaysValues'},
-    {'1': 'dpv_no_secure_location', '3': 34, '4': 1, '5': 9, '10': 'dpvNoSecureLocation'},
+    {
+      '1': 'dpv_non_delivery_days',
+      '3': 32,
+      '4': 1,
+      '5': 9,
+      '10': 'dpvNonDeliveryDays'
+    },
+    {
+      '1': 'dpv_non_delivery_days_values',
+      '3': 33,
+      '4': 1,
+      '5': 5,
+      '10': 'dpvNonDeliveryDaysValues'
+    },
+    {
+      '1': 'dpv_no_secure_location',
+      '3': 34,
+      '4': 1,
+      '5': 9,
+      '10': 'dpvNoSecureLocation'
+    },
     {'1': 'dpv_pbsa', '3': 35, '4': 1, '5': 9, '10': 'dpvPbsa'},
-    {'1': 'dpv_door_not_accessible', '3': 36, '4': 1, '5': 9, '10': 'dpvDoorNotAccessible'},
-    {'1': 'dpv_enhanced_delivery_code', '3': 37, '4': 1, '5': 9, '10': 'dpvEnhancedDeliveryCode'},
+    {
+      '1': 'dpv_door_not_accessible',
+      '3': 36,
+      '4': 1,
+      '5': 9,
+      '10': 'dpvDoorNotAccessible'
+    },
+    {
+      '1': 'dpv_enhanced_delivery_code',
+      '3': 37,
+      '4': 1,
+      '5': 9,
+      '10': 'dpvEnhancedDeliveryCode'
+    },
     {'1': 'carrier_route', '3': 9, '4': 1, '5': 9, '10': 'carrierRoute'},
-    {'1': 'carrier_route_indicator', '3': 10, '4': 1, '5': 9, '10': 'carrierRouteIndicator'},
+    {
+      '1': 'carrier_route_indicator',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'carrierRouteIndicator'
+    },
     {'1': 'ews_no_match', '3': 11, '4': 1, '5': 8, '10': 'ewsNoMatch'},
     {'1': 'post_office_city', '3': 12, '4': 1, '5': 9, '10': 'postOfficeCity'},
-    {'1': 'post_office_state', '3': 13, '4': 1, '5': 9, '10': 'postOfficeState'},
+    {
+      '1': 'post_office_state',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '10': 'postOfficeState'
+    },
     {'1': 'abbreviated_city', '3': 14, '4': 1, '5': 9, '10': 'abbreviatedCity'},
     {'1': 'fips_county_code', '3': 15, '4': 1, '5': 9, '10': 'fipsCountyCode'},
     {'1': 'county', '3': 16, '4': 1, '5': 9, '10': 'county'},
     {'1': 'elot_number', '3': 17, '4': 1, '5': 9, '10': 'elotNumber'},
     {'1': 'elot_flag', '3': 18, '4': 1, '5': 9, '10': 'elotFlag'},
-    {'1': 'lacs_link_return_code', '3': 19, '4': 1, '5': 9, '10': 'lacsLinkReturnCode'},
-    {'1': 'lacs_link_indicator', '3': 20, '4': 1, '5': 9, '10': 'lacsLinkIndicator'},
-    {'1': 'po_box_only_postal_code', '3': 21, '4': 1, '5': 8, '10': 'poBoxOnlyPostalCode'},
-    {'1': 'suitelink_footnote', '3': 22, '4': 1, '5': 9, '10': 'suitelinkFootnote'},
+    {
+      '1': 'lacs_link_return_code',
+      '3': 19,
+      '4': 1,
+      '5': 9,
+      '10': 'lacsLinkReturnCode'
+    },
+    {
+      '1': 'lacs_link_indicator',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '10': 'lacsLinkIndicator'
+    },
+    {
+      '1': 'po_box_only_postal_code',
+      '3': 21,
+      '4': 1,
+      '5': 8,
+      '10': 'poBoxOnlyPostalCode'
+    },
+    {
+      '1': 'suitelink_footnote',
+      '3': 22,
+      '4': 1,
+      '5': 9,
+      '10': 'suitelinkFootnote'
+    },
     {'1': 'pmb_designator', '3': 23, '4': 1, '5': 9, '10': 'pmbDesignator'},
     {'1': 'pmb_number', '3': 24, '4': 1, '5': 9, '10': 'pmbNumber'},
-    {'1': 'address_record_type', '3': 25, '4': 1, '5': 9, '10': 'addressRecordType'},
+    {
+      '1': 'address_record_type',
+      '3': 25,
+      '4': 1,
+      '5': 9,
+      '10': 'addressRecordType'
+    },
     {'1': 'default_address', '3': 26, '4': 1, '5': 8, '10': 'defaultAddress'},
     {'1': 'error_message', '3': 27, '4': 1, '5': 9, '10': 'errorMessage'},
     {'1': 'cass_processed', '3': 28, '4': 1, '5': 8, '10': 'cassProcessed'},
@@ -115,4 +236,3 @@ final $typed_data.Uint8List uspsDataDescriptor = $convert.base64Decode(
     'FhZGRyZXNzUmVjb3JkVHlwZRInCg9kZWZhdWx0X2FkZHJlc3MYGiABKAhSDmRlZmF1bHRBZGRy'
     'ZXNzEiMKDWVycm9yX21lc3NhZ2UYGyABKAlSDGVycm9yTWVzc2FnZRIlCg5jYXNzX3Byb2Nlc3'
     'NlZBgcIAEoCFINY2Fzc1Byb2Nlc3NlZA==');
-

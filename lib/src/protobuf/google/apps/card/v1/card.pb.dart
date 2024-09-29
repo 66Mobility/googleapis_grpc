@@ -51,37 +51,50 @@ class Card_CardHeader extends $pb.GeneratedMessage {
     return $result;
   }
   Card_CardHeader._() : super();
-  factory Card_CardHeader.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Card_CardHeader.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Card_CardHeader.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Card_CardHeader.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Card.CardHeader', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Card.CardHeader',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..e<Widget_ImageType>(3, _omitFieldNames ? '' : 'imageType', $pb.PbFieldType.OE, defaultOrMaker: Widget_ImageType.SQUARE, valueOf: Widget_ImageType.valueOf, enumValues: Widget_ImageType.values)
+    ..e<Widget_ImageType>(
+        3, _omitFieldNames ? '' : 'imageType', $pb.PbFieldType.OE,
+        defaultOrMaker: Widget_ImageType.SQUARE,
+        valueOf: Widget_ImageType.valueOf,
+        enumValues: Widget_ImageType.values)
     ..aOS(4, _omitFieldNames ? '' : 'imageUrl')
     ..aOS(5, _omitFieldNames ? '' : 'imageAltText')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Card_CardHeader clone() => Card_CardHeader()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Card_CardHeader copyWith(void Function(Card_CardHeader) updates) => super.copyWith((message) => updates(message as Card_CardHeader)) as Card_CardHeader;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Card_CardHeader copyWith(void Function(Card_CardHeader) updates) =>
+      super.copyWith((message) => updates(message as Card_CardHeader))
+          as Card_CardHeader;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Card_CardHeader create() => Card_CardHeader._();
   Card_CardHeader createEmptyInstance() => create();
-  static $pb.PbList<Card_CardHeader> createRepeated() => $pb.PbList<Card_CardHeader>();
+  static $pb.PbList<Card_CardHeader> createRepeated() =>
+      $pb.PbList<Card_CardHeader>();
   @$core.pragma('dart2js:noInline')
-  static Card_CardHeader getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Card_CardHeader>(create);
+  static Card_CardHeader getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Card_CardHeader>(create);
   static Card_CardHeader? _defaultInstance;
 
   /// Required. The title of the card header.
@@ -91,7 +104,10 @@ class Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -102,7 +118,10 @@ class Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subtitle => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subtitle($core.String v) { $_setString(1, v); }
+  set subtitle($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubtitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -115,7 +134,10 @@ class Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Widget_ImageType get imageType => $_getN(2);
   @$pb.TagNumber(3)
-  set imageType(Widget_ImageType v) { setField(3, v); }
+  set imageType(Widget_ImageType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasImageType() => $_has(2);
   @$pb.TagNumber(3)
@@ -125,7 +147,10 @@ class Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get imageUrl => $_getSZ(3);
   @$pb.TagNumber(4)
-  set imageUrl($core.String v) { $_setString(3, v); }
+  set imageUrl($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImageUrl() => $_has(3);
   @$pb.TagNumber(4)
@@ -135,7 +160,10 @@ class Card_CardHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get imageAltText => $_getSZ(4);
   @$pb.TagNumber(5)
-  set imageAltText($core.String v) { $_setString(4, v); }
+  set imageAltText($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasImageAltText() => $_has(4);
   @$pb.TagNumber(5)
@@ -170,36 +198,47 @@ class Card_Section extends $pb.GeneratedMessage {
     return $result;
   }
   Card_Section._() : super();
-  factory Card_Section.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Card_Section.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Card_Section.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Card_Section.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Card.Section', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Card.Section',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'header')
-    ..pc<Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: Widget.create)
+    ..pc<Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM,
+        subBuilder: Widget.create)
     ..aOB(5, _omitFieldNames ? '' : 'collapsible')
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'uncollapsibleWidgetsCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(6, _omitFieldNames ? '' : 'uncollapsibleWidgetsCount',
+        $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Card_Section clone() => Card_Section()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Card_Section copyWith(void Function(Card_Section) updates) => super.copyWith((message) => updates(message as Card_Section)) as Card_Section;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Card_Section copyWith(void Function(Card_Section) updates) =>
+      super.copyWith((message) => updates(message as Card_Section))
+          as Card_Section;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Card_Section create() => Card_Section._();
   Card_Section createEmptyInstance() => create();
-  static $pb.PbList<Card_Section> createRepeated() => $pb.PbList<Card_Section>();
+  static $pb.PbList<Card_Section> createRepeated() =>
+      $pb.PbList<Card_Section>();
   @$core.pragma('dart2js:noInline')
-  static Card_Section getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Card_Section>(create);
+  static Card_Section getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Card_Section>(create);
   static Card_Section? _defaultInstance;
 
   /// Text that appears at the top of a section.
@@ -214,7 +253,10 @@ class Card_Section extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get header => $_getSZ(0);
   @$pb.TagNumber(1)
-  set header($core.String v) { $_setString(0, v); }
+  set header($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -236,7 +278,10 @@ class Card_Section extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get collapsible => $_getBF(2);
   @$pb.TagNumber(5)
-  set collapsible($core.bool v) { $_setBool(2, v); }
+  set collapsible($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCollapsible() => $_has(2);
   @$pb.TagNumber(5)
@@ -253,7 +298,10 @@ class Card_Section extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get uncollapsibleWidgetsCount => $_getIZ(3);
   @$pb.TagNumber(6)
-  set uncollapsibleWidgetsCount($core.int v) { $_setSignedInt32(3, v); }
+  set uncollapsibleWidgetsCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasUncollapsibleWidgetsCount() => $_has(3);
   @$pb.TagNumber(6)
@@ -281,41 +329,54 @@ class Card_CardAction extends $pb.GeneratedMessage {
     return $result;
   }
   Card_CardAction._() : super();
-  factory Card_CardAction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Card_CardAction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Card_CardAction.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Card_CardAction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Card.CardAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Card.CardAction',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'actionLabel')
-    ..aOM<OnClick>(2, _omitFieldNames ? '' : 'onClick', subBuilder: OnClick.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<OnClick>(2, _omitFieldNames ? '' : 'onClick',
+        subBuilder: OnClick.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Card_CardAction clone() => Card_CardAction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Card_CardAction copyWith(void Function(Card_CardAction) updates) => super.copyWith((message) => updates(message as Card_CardAction)) as Card_CardAction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Card_CardAction copyWith(void Function(Card_CardAction) updates) =>
+      super.copyWith((message) => updates(message as Card_CardAction))
+          as Card_CardAction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Card_CardAction create() => Card_CardAction._();
   Card_CardAction createEmptyInstance() => create();
-  static $pb.PbList<Card_CardAction> createRepeated() => $pb.PbList<Card_CardAction>();
+  static $pb.PbList<Card_CardAction> createRepeated() =>
+      $pb.PbList<Card_CardAction>();
   @$core.pragma('dart2js:noInline')
-  static Card_CardAction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Card_CardAction>(create);
+  static Card_CardAction getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Card_CardAction>(create);
   static Card_CardAction? _defaultInstance;
 
   /// The label that displays as the action menu item.
   @$pb.TagNumber(1)
   $core.String get actionLabel => $_getSZ(0);
   @$pb.TagNumber(1)
-  set actionLabel($core.String v) { $_setString(0, v); }
+  set actionLabel($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasActionLabel() => $_has(0);
   @$pb.TagNumber(1)
@@ -325,7 +386,10 @@ class Card_CardAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OnClick get onClick => $_getN(1);
   @$pb.TagNumber(2)
-  set onClick(OnClick v) { setField(2, v); }
+  set onClick(OnClick v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOnClick() => $_has(1);
   @$pb.TagNumber(2)
@@ -363,34 +427,46 @@ class Card_CardFixedFooter extends $pb.GeneratedMessage {
     return $result;
   }
   Card_CardFixedFooter._() : super();
-  factory Card_CardFixedFooter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Card_CardFixedFooter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Card_CardFixedFooter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Card_CardFixedFooter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Card.CardFixedFooter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..aOM<Button>(1, _omitFieldNames ? '' : 'primaryButton', subBuilder: Button.create)
-    ..aOM<Button>(2, _omitFieldNames ? '' : 'secondaryButton', subBuilder: Button.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Card.CardFixedFooter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..aOM<Button>(1, _omitFieldNames ? '' : 'primaryButton',
+        subBuilder: Button.create)
+    ..aOM<Button>(2, _omitFieldNames ? '' : 'secondaryButton',
+        subBuilder: Button.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Card_CardFixedFooter clone() => Card_CardFixedFooter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Card_CardFixedFooter copyWith(void Function(Card_CardFixedFooter) updates) => super.copyWith((message) => updates(message as Card_CardFixedFooter)) as Card_CardFixedFooter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Card_CardFixedFooter clone() =>
+      Card_CardFixedFooter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Card_CardFixedFooter copyWith(void Function(Card_CardFixedFooter) updates) =>
+      super.copyWith((message) => updates(message as Card_CardFixedFooter))
+          as Card_CardFixedFooter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Card_CardFixedFooter create() => Card_CardFixedFooter._();
   Card_CardFixedFooter createEmptyInstance() => create();
-  static $pb.PbList<Card_CardFixedFooter> createRepeated() => $pb.PbList<Card_CardFixedFooter>();
+  static $pb.PbList<Card_CardFixedFooter> createRepeated() =>
+      $pb.PbList<Card_CardFixedFooter>();
   @$core.pragma('dart2js:noInline')
-  static Card_CardFixedFooter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Card_CardFixedFooter>(create);
+  static Card_CardFixedFooter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Card_CardFixedFooter>(create);
   static Card_CardFixedFooter? _defaultInstance;
 
   /// The primary button of the fixed footer. The button must be a text button
@@ -398,7 +474,10 @@ class Card_CardFixedFooter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Button get primaryButton => $_getN(0);
   @$pb.TagNumber(1)
-  set primaryButton(Button v) { setField(1, v); }
+  set primaryButton(Button v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPrimaryButton() => $_has(0);
   @$pb.TagNumber(1)
@@ -412,7 +491,10 @@ class Card_CardFixedFooter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Button get secondaryButton => $_getN(1);
   @$pb.TagNumber(2)
-  set secondaryButton(Button v) { setField(2, v); }
+  set secondaryButton(Button v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSecondaryButton() => $_has(1);
   @$pb.TagNumber(2)
@@ -564,31 +646,51 @@ class Card extends $pb.GeneratedMessage {
     return $result;
   }
   Card._() : super();
-  factory Card.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Card.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Card.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Card.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Card', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..aOM<Card_CardHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: Card_CardHeader.create)
-    ..pc<Card_Section>(2, _omitFieldNames ? '' : 'sections', $pb.PbFieldType.PM, subBuilder: Card_Section.create)
-    ..pc<Card_CardAction>(3, _omitFieldNames ? '' : 'cardActions', $pb.PbFieldType.PM, subBuilder: Card_CardAction.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Card',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..aOM<Card_CardHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: Card_CardHeader.create)
+    ..pc<Card_Section>(2, _omitFieldNames ? '' : 'sections', $pb.PbFieldType.PM,
+        subBuilder: Card_Section.create)
+    ..pc<Card_CardAction>(
+        3, _omitFieldNames ? '' : 'cardActions', $pb.PbFieldType.PM,
+        subBuilder: Card_CardAction.create)
     ..aOS(4, _omitFieldNames ? '' : 'name')
-    ..aOM<Card_CardFixedFooter>(5, _omitFieldNames ? '' : 'fixedFooter', subBuilder: Card_CardFixedFooter.create)
-    ..e<Card_DisplayStyle>(6, _omitFieldNames ? '' : 'displayStyle', $pb.PbFieldType.OE, defaultOrMaker: Card_DisplayStyle.DISPLAY_STYLE_UNSPECIFIED, valueOf: Card_DisplayStyle.valueOf, enumValues: Card_DisplayStyle.values)
-    ..aOM<Card_CardHeader>(7, _omitFieldNames ? '' : 'peekCardHeader', subBuilder: Card_CardHeader.create)
-    ..e<Card_DividerStyle>(9, _omitFieldNames ? '' : 'sectionDividerStyle', $pb.PbFieldType.OE, defaultOrMaker: Card_DividerStyle.DIVIDER_STYLE_UNSPECIFIED, valueOf: Card_DividerStyle.valueOf, enumValues: Card_DividerStyle.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Card_CardFixedFooter>(5, _omitFieldNames ? '' : 'fixedFooter',
+        subBuilder: Card_CardFixedFooter.create)
+    ..e<Card_DisplayStyle>(
+        6, _omitFieldNames ? '' : 'displayStyle', $pb.PbFieldType.OE,
+        defaultOrMaker: Card_DisplayStyle.DISPLAY_STYLE_UNSPECIFIED,
+        valueOf: Card_DisplayStyle.valueOf,
+        enumValues: Card_DisplayStyle.values)
+    ..aOM<Card_CardHeader>(7, _omitFieldNames ? '' : 'peekCardHeader',
+        subBuilder: Card_CardHeader.create)
+    ..e<Card_DividerStyle>(
+        9, _omitFieldNames ? '' : 'sectionDividerStyle', $pb.PbFieldType.OE,
+        defaultOrMaker: Card_DividerStyle.DIVIDER_STYLE_UNSPECIFIED,
+        valueOf: Card_DividerStyle.valueOf,
+        enumValues: Card_DividerStyle.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Card clone() => Card()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Card copyWith(void Function(Card) updates) => super.copyWith((message) => updates(message as Card)) as Card;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Card copyWith(void Function(Card) updates) =>
+      super.copyWith((message) => updates(message as Card)) as Card;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -597,7 +699,8 @@ class Card extends $pb.GeneratedMessage {
   Card createEmptyInstance() => create();
   static $pb.PbList<Card> createRepeated() => $pb.PbList<Card>();
   @$core.pragma('dart2js:noInline')
-  static Card getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Card>(create);
+  static Card getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Card>(create);
   static Card? _defaultInstance;
 
   /// The header of the card. A header usually contains a leading image and a
@@ -605,7 +708,10 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Card_CardHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header(Card_CardHeader v) { setField(1, v); }
+  set header(Card_CardHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -665,7 +771,10 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get name => $_getSZ(3);
   @$pb.TagNumber(4)
-  set name($core.String v) { $_setString(3, v); }
+  set name($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
@@ -685,7 +794,10 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Card_CardFixedFooter get fixedFooter => $_getN(4);
   @$pb.TagNumber(5)
-  set fixedFooter(Card_CardFixedFooter v) { setField(5, v); }
+  set fixedFooter(Card_CardFixedFooter v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFixedFooter() => $_has(4);
   @$pb.TagNumber(5)
@@ -701,7 +813,10 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Card_DisplayStyle get displayStyle => $_getN(5);
   @$pb.TagNumber(6)
-  set displayStyle(Card_DisplayStyle v) { setField(6, v); }
+  set displayStyle(Card_DisplayStyle v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDisplayStyle() => $_has(5);
   @$pb.TagNumber(6)
@@ -716,7 +831,10 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Card_CardHeader get peekCardHeader => $_getN(6);
   @$pb.TagNumber(7)
-  set peekCardHeader(Card_CardHeader v) { setField(7, v); }
+  set peekCardHeader(Card_CardHeader v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPeekCardHeader() => $_has(6);
   @$pb.TagNumber(7)
@@ -728,7 +846,10 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Card_DividerStyle get sectionDividerStyle => $_getN(7);
   @$pb.TagNumber(9)
-  set sectionDividerStyle(Card_DividerStyle v) { setField(9, v); }
+  set sectionDividerStyle(Card_DividerStyle v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSectionDividerStyle() => $_has(7);
   @$pb.TagNumber(9)
@@ -736,16 +857,16 @@ class Card extends $pb.GeneratedMessage {
 }
 
 enum Widget_Data {
-  textParagraph, 
-  image, 
-  decoratedText, 
-  buttonList, 
-  textInput, 
-  selectionInput, 
-  dateTimePicker, 
-  divider, 
-  grid, 
-  columns, 
+  textParagraph,
+  image,
+  decoratedText,
+  buttonList,
+  textInput,
+  selectionInput,
+  dateTimePicker,
+  divider,
+  grid,
+  columns,
   notSet
 }
 
@@ -804,48 +925,67 @@ class Widget extends $pb.GeneratedMessage {
     return $result;
   }
   Widget._() : super();
-  factory Widget.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Widget.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Widget.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Widget.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Widget_Data> _Widget_DataByTag = {
-    1 : Widget_Data.textParagraph,
-    2 : Widget_Data.image,
-    3 : Widget_Data.decoratedText,
-    4 : Widget_Data.buttonList,
-    5 : Widget_Data.textInput,
-    6 : Widget_Data.selectionInput,
-    7 : Widget_Data.dateTimePicker,
-    9 : Widget_Data.divider,
-    10 : Widget_Data.grid,
-    11 : Widget_Data.columns,
-    0 : Widget_Data.notSet
+    1: Widget_Data.textParagraph,
+    2: Widget_Data.image,
+    3: Widget_Data.decoratedText,
+    4: Widget_Data.buttonList,
+    5: Widget_Data.textInput,
+    6: Widget_Data.selectionInput,
+    7: Widget_Data.dateTimePicker,
+    9: Widget_Data.divider,
+    10: Widget_Data.grid,
+    11: Widget_Data.columns,
+    0: Widget_Data.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Widget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Widget',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7, 9, 10, 11])
-    ..aOM<TextParagraph>(1, _omitFieldNames ? '' : 'textParagraph', subBuilder: TextParagraph.create)
+    ..aOM<TextParagraph>(1, _omitFieldNames ? '' : 'textParagraph',
+        subBuilder: TextParagraph.create)
     ..aOM<Image>(2, _omitFieldNames ? '' : 'image', subBuilder: Image.create)
-    ..aOM<DecoratedText>(3, _omitFieldNames ? '' : 'decoratedText', subBuilder: DecoratedText.create)
-    ..aOM<ButtonList>(4, _omitFieldNames ? '' : 'buttonList', subBuilder: ButtonList.create)
-    ..aOM<TextInput>(5, _omitFieldNames ? '' : 'textInput', subBuilder: TextInput.create)
-    ..aOM<SelectionInput>(6, _omitFieldNames ? '' : 'selectionInput', subBuilder: SelectionInput.create)
-    ..aOM<DateTimePicker>(7, _omitFieldNames ? '' : 'dateTimePicker', subBuilder: DateTimePicker.create)
-    ..e<Widget_HorizontalAlignment>(8, _omitFieldNames ? '' : 'horizontalAlignment', $pb.PbFieldType.OE, defaultOrMaker: Widget_HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED, valueOf: Widget_HorizontalAlignment.valueOf, enumValues: Widget_HorizontalAlignment.values)
-    ..aOM<Divider>(9, _omitFieldNames ? '' : 'divider', subBuilder: Divider.create)
+    ..aOM<DecoratedText>(3, _omitFieldNames ? '' : 'decoratedText',
+        subBuilder: DecoratedText.create)
+    ..aOM<ButtonList>(4, _omitFieldNames ? '' : 'buttonList',
+        subBuilder: ButtonList.create)
+    ..aOM<TextInput>(5, _omitFieldNames ? '' : 'textInput',
+        subBuilder: TextInput.create)
+    ..aOM<SelectionInput>(6, _omitFieldNames ? '' : 'selectionInput',
+        subBuilder: SelectionInput.create)
+    ..aOM<DateTimePicker>(7, _omitFieldNames ? '' : 'dateTimePicker',
+        subBuilder: DateTimePicker.create)
+    ..e<Widget_HorizontalAlignment>(
+        8, _omitFieldNames ? '' : 'horizontalAlignment', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Widget_HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED,
+        valueOf: Widget_HorizontalAlignment.valueOf,
+        enumValues: Widget_HorizontalAlignment.values)
+    ..aOM<Divider>(9, _omitFieldNames ? '' : 'divider',
+        subBuilder: Divider.create)
     ..aOM<Grid>(10, _omitFieldNames ? '' : 'grid', subBuilder: Grid.create)
-    ..aOM<Columns>(11, _omitFieldNames ? '' : 'columns', subBuilder: Columns.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Columns>(11, _omitFieldNames ? '' : 'columns',
+        subBuilder: Columns.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Widget clone() => Widget()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Widget copyWith(void Function(Widget) updates) => super.copyWith((message) => updates(message as Widget)) as Widget;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Widget copyWith(void Function(Widget) updates) =>
+      super.copyWith((message) => updates(message as Widget)) as Widget;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -854,7 +994,8 @@ class Widget extends $pb.GeneratedMessage {
   Widget createEmptyInstance() => create();
   static $pb.PbList<Widget> createRepeated() => $pb.PbList<Widget>();
   @$core.pragma('dart2js:noInline')
-  static Widget getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Widget>(create);
+  static Widget getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Widget>(create);
   static Widget? _defaultInstance;
 
   Widget_Data whichData() => _Widget_DataByTag[$_whichOneof(0)]!;
@@ -878,7 +1019,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TextParagraph get textParagraph => $_getN(0);
   @$pb.TagNumber(1)
-  set textParagraph(TextParagraph v) { setField(1, v); }
+  set textParagraph(TextParagraph v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTextParagraph() => $_has(0);
   @$pb.TagNumber(1)
@@ -899,7 +1043,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Image get image => $_getN(1);
   @$pb.TagNumber(2)
-  set image(Image v) { setField(2, v); }
+  set image(Image v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasImage() => $_has(1);
   @$pb.TagNumber(2)
@@ -930,7 +1077,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DecoratedText get decoratedText => $_getN(2);
   @$pb.TagNumber(3)
-  set decoratedText(DecoratedText v) { setField(3, v); }
+  set decoratedText(DecoratedText v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDecoratedText() => $_has(2);
   @$pb.TagNumber(3)
@@ -973,7 +1123,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ButtonList get buttonList => $_getN(3);
   @$pb.TagNumber(4)
-  set buttonList(ButtonList v) { setField(4, v); }
+  set buttonList(ButtonList v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasButtonList() => $_has(3);
   @$pb.TagNumber(4)
@@ -1020,7 +1173,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   TextInput get textInput => $_getN(4);
   @$pb.TagNumber(5)
-  set textInput(TextInput v) { setField(5, v); }
+  set textInput(TextInput v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTextInput() => $_has(4);
   @$pb.TagNumber(5)
@@ -1066,7 +1222,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   SelectionInput get selectionInput => $_getN(5);
   @$pb.TagNumber(6)
-  set selectionInput(SelectionInput v) { setField(6, v); }
+  set selectionInput(SelectionInput v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSelectionInput() => $_has(5);
   @$pb.TagNumber(6)
@@ -1091,7 +1250,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DateTimePicker get dateTimePicker => $_getN(6);
   @$pb.TagNumber(7)
-  set dateTimePicker(DateTimePicker v) { setField(7, v); }
+  set dateTimePicker(DateTimePicker v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDateTimePicker() => $_has(6);
   @$pb.TagNumber(7)
@@ -1103,7 +1265,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Widget_HorizontalAlignment get horizontalAlignment => $_getN(7);
   @$pb.TagNumber(8)
-  set horizontalAlignment(Widget_HorizontalAlignment v) { setField(8, v); }
+  set horizontalAlignment(Widget_HorizontalAlignment v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasHorizontalAlignment() => $_has(7);
   @$pb.TagNumber(8)
@@ -1119,7 +1284,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Divider get divider => $_getN(8);
   @$pb.TagNumber(9)
-  set divider(Divider v) { setField(9, v); }
+  set divider(Divider v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDivider() => $_has(8);
   @$pb.TagNumber(9)
@@ -1173,7 +1341,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Grid get grid => $_getN(9);
   @$pb.TagNumber(10)
-  set grid(Grid v) { setField(10, v); }
+  set grid(Grid v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasGrid() => $_has(9);
   @$pb.TagNumber(10)
@@ -1221,7 +1392,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Columns get columns => $_getN(10);
   @$pb.TagNumber(11)
-  set columns(Columns v) { setField(11, v); }
+  set columns(Columns v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasColumns() => $_has(10);
   @$pb.TagNumber(11)
@@ -1255,40 +1429,52 @@ class TextParagraph extends $pb.GeneratedMessage {
     return $result;
   }
   TextParagraph._() : super();
-  factory TextParagraph.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TextParagraph.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TextParagraph.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TextParagraph.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextParagraph', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TextParagraph',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TextParagraph clone() => TextParagraph()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TextParagraph copyWith(void Function(TextParagraph) updates) => super.copyWith((message) => updates(message as TextParagraph)) as TextParagraph;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TextParagraph copyWith(void Function(TextParagraph) updates) =>
+      super.copyWith((message) => updates(message as TextParagraph))
+          as TextParagraph;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TextParagraph create() => TextParagraph._();
   TextParagraph createEmptyInstance() => create();
-  static $pb.PbList<TextParagraph> createRepeated() => $pb.PbList<TextParagraph>();
+  static $pb.PbList<TextParagraph> createRepeated() =>
+      $pb.PbList<TextParagraph>();
   @$core.pragma('dart2js:noInline')
-  static TextParagraph getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TextParagraph>(create);
+  static TextParagraph getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TextParagraph>(create);
   static TextParagraph? _defaultInstance;
 
   /// The text that's shown in the widget.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -1320,26 +1506,33 @@ class Image extends $pb.GeneratedMessage {
     return $result;
   }
   Image._() : super();
-  factory Image.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Image.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Image.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Image.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Image', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Image',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'imageUrl')
-    ..aOM<OnClick>(2, _omitFieldNames ? '' : 'onClick', subBuilder: OnClick.create)
+    ..aOM<OnClick>(2, _omitFieldNames ? '' : 'onClick',
+        subBuilder: OnClick.create)
     ..aOS(3, _omitFieldNames ? '' : 'altText')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Image clone() => Image()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Image copyWith(void Function(Image) updates) => super.copyWith((message) => updates(message as Image)) as Image;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Image copyWith(void Function(Image) updates) =>
+      super.copyWith((message) => updates(message as Image)) as Image;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1348,7 +1541,8 @@ class Image extends $pb.GeneratedMessage {
   Image createEmptyInstance() => create();
   static $pb.PbList<Image> createRepeated() => $pb.PbList<Image>();
   @$core.pragma('dart2js:noInline')
-  static Image getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Image>(create);
+  static Image getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Image>(create);
   static Image? _defaultInstance;
 
   ///  The HTTPS URL that hosts the image.
@@ -1361,7 +1555,10 @@ class Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get imageUrl => $_getSZ(0);
   @$pb.TagNumber(1)
-  set imageUrl($core.String v) { $_setString(0, v); }
+  set imageUrl($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasImageUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -1371,7 +1568,10 @@ class Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OnClick get onClick => $_getN(1);
   @$pb.TagNumber(2)
-  set onClick(OnClick v) { setField(2, v); }
+  set onClick(OnClick v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOnClick() => $_has(1);
   @$pb.TagNumber(2)
@@ -1383,7 +1583,10 @@ class Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get altText => $_getSZ(2);
   @$pb.TagNumber(3)
-  set altText($core.String v) { $_setString(2, v); }
+  set altText($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAltText() => $_has(2);
   @$pb.TagNumber(3)
@@ -1406,23 +1609,29 @@ class Image extends $pb.GeneratedMessage {
 class Divider extends $pb.GeneratedMessage {
   factory Divider() => create();
   Divider._() : super();
-  factory Divider.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Divider.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Divider.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Divider.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Divider', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Divider',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Divider clone() => Divider()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Divider copyWith(void Function(Divider) updates) => super.copyWith((message) => updates(message as Divider)) as Divider;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Divider copyWith(void Function(Divider) updates) =>
+      super.copyWith((message) => updates(message as Divider)) as Divider;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1431,7 +1640,8 @@ class Divider extends $pb.GeneratedMessage {
   Divider createEmptyInstance() => create();
   static $pb.PbList<Divider> createRepeated() => $pb.PbList<Divider>();
   @$core.pragma('dart2js:noInline')
-  static Divider getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Divider>(create);
+  static Divider getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Divider>(create);
   static Divider? _defaultInstance;
 }
 
@@ -1468,37 +1678,55 @@ class DecoratedText_SwitchControl extends $pb.GeneratedMessage {
     return $result;
   }
   DecoratedText_SwitchControl._() : super();
-  factory DecoratedText_SwitchControl.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DecoratedText_SwitchControl.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DecoratedText_SwitchControl.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DecoratedText_SwitchControl.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DecoratedText.SwitchControl', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DecoratedText.SwitchControl',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'value')
     ..aOB(3, _omitFieldNames ? '' : 'selected')
-    ..aOM<Action>(4, _omitFieldNames ? '' : 'onChangeAction', subBuilder: Action.create)
-    ..e<DecoratedText_SwitchControl_ControlType>(5, _omitFieldNames ? '' : 'controlType', $pb.PbFieldType.OE, defaultOrMaker: DecoratedText_SwitchControl_ControlType.SWITCH, valueOf: DecoratedText_SwitchControl_ControlType.valueOf, enumValues: DecoratedText_SwitchControl_ControlType.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Action>(4, _omitFieldNames ? '' : 'onChangeAction',
+        subBuilder: Action.create)
+    ..e<DecoratedText_SwitchControl_ControlType>(
+        5, _omitFieldNames ? '' : 'controlType', $pb.PbFieldType.OE,
+        defaultOrMaker: DecoratedText_SwitchControl_ControlType.SWITCH,
+        valueOf: DecoratedText_SwitchControl_ControlType.valueOf,
+        enumValues: DecoratedText_SwitchControl_ControlType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DecoratedText_SwitchControl clone() => DecoratedText_SwitchControl()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DecoratedText_SwitchControl copyWith(void Function(DecoratedText_SwitchControl) updates) => super.copyWith((message) => updates(message as DecoratedText_SwitchControl)) as DecoratedText_SwitchControl;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DecoratedText_SwitchControl clone() =>
+      DecoratedText_SwitchControl()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DecoratedText_SwitchControl copyWith(
+          void Function(DecoratedText_SwitchControl) updates) =>
+      super.copyWith(
+              (message) => updates(message as DecoratedText_SwitchControl))
+          as DecoratedText_SwitchControl;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DecoratedText_SwitchControl create() => DecoratedText_SwitchControl._();
+  static DecoratedText_SwitchControl create() =>
+      DecoratedText_SwitchControl._();
   DecoratedText_SwitchControl createEmptyInstance() => create();
-  static $pb.PbList<DecoratedText_SwitchControl> createRepeated() => $pb.PbList<DecoratedText_SwitchControl>();
+  static $pb.PbList<DecoratedText_SwitchControl> createRepeated() =>
+      $pb.PbList<DecoratedText_SwitchControl>();
   @$core.pragma('dart2js:noInline')
-  static DecoratedText_SwitchControl getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DecoratedText_SwitchControl>(create);
+  static DecoratedText_SwitchControl getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DecoratedText_SwitchControl>(create);
   static DecoratedText_SwitchControl? _defaultInstance;
 
   ///  The name by which the switch widget is identified in a form input event.
@@ -1508,7 +1736,10 @@ class DecoratedText_SwitchControl extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1521,7 +1752,10 @@ class DecoratedText_SwitchControl extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) { $_setString(1, v); }
+  set value($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -1531,7 +1765,10 @@ class DecoratedText_SwitchControl extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get selected => $_getBF(2);
   @$pb.TagNumber(3)
-  set selected($core.bool v) { $_setBool(2, v); }
+  set selected($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSelected() => $_has(2);
   @$pb.TagNumber(3)
@@ -1542,7 +1779,10 @@ class DecoratedText_SwitchControl extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Action get onChangeAction => $_getN(3);
   @$pb.TagNumber(4)
-  set onChangeAction(Action v) { setField(4, v); }
+  set onChangeAction(Action v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOnChangeAction() => $_has(3);
   @$pb.TagNumber(4)
@@ -1557,19 +1797,17 @@ class DecoratedText_SwitchControl extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DecoratedText_SwitchControl_ControlType get controlType => $_getN(4);
   @$pb.TagNumber(5)
-  set controlType(DecoratedText_SwitchControl_ControlType v) { setField(5, v); }
+  set controlType(DecoratedText_SwitchControl_ControlType v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasControlType() => $_has(4);
   @$pb.TagNumber(5)
   void clearControlType() => clearField(5);
 }
 
-enum DecoratedText_Control {
-  button, 
-  switchControl, 
-  endIcon, 
-  notSet
-}
+enum DecoratedText_Control { button, switchControl, endIcon, notSet }
 
 ///  A widget that displays text with optional decorations such as a label above
 ///  or below the text, an icon in front of the text, a selection widget, or a
@@ -1581,8 +1819,7 @@ enum DecoratedText_Control {
 ///  apps](https://developers.google.com/workspace/extend):
 class DecoratedText extends $pb.GeneratedMessage {
   factory DecoratedText({
-  @$core.Deprecated('This field is deprecated.')
-    Icon? icon,
+    @$core.Deprecated('This field is deprecated.') Icon? icon,
     $core.String? topLabel,
     $core.String? text,
     $core.bool? wrapText,
@@ -1628,52 +1865,66 @@ class DecoratedText extends $pb.GeneratedMessage {
     return $result;
   }
   DecoratedText._() : super();
-  factory DecoratedText.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DecoratedText.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DecoratedText.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DecoratedText.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, DecoratedText_Control> _DecoratedText_ControlByTag = {
-    8 : DecoratedText_Control.button,
-    9 : DecoratedText_Control.switchControl,
-    11 : DecoratedText_Control.endIcon,
-    0 : DecoratedText_Control.notSet
+  static const $core.Map<$core.int, DecoratedText_Control>
+      _DecoratedText_ControlByTag = {
+    8: DecoratedText_Control.button,
+    9: DecoratedText_Control.switchControl,
+    11: DecoratedText_Control.endIcon,
+    0: DecoratedText_Control.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DecoratedText', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DecoratedText',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [8, 9, 11])
     ..aOM<Icon>(1, _omitFieldNames ? '' : 'icon', subBuilder: Icon.create)
     ..aOS(3, _omitFieldNames ? '' : 'topLabel')
     ..aOS(4, _omitFieldNames ? '' : 'text')
     ..aOB(5, _omitFieldNames ? '' : 'wrapText')
     ..aOS(6, _omitFieldNames ? '' : 'bottomLabel')
-    ..aOM<OnClick>(7, _omitFieldNames ? '' : 'onClick', subBuilder: OnClick.create)
+    ..aOM<OnClick>(7, _omitFieldNames ? '' : 'onClick',
+        subBuilder: OnClick.create)
     ..aOM<Button>(8, _omitFieldNames ? '' : 'button', subBuilder: Button.create)
-    ..aOM<DecoratedText_SwitchControl>(9, _omitFieldNames ? '' : 'switchControl', subBuilder: DecoratedText_SwitchControl.create)
+    ..aOM<DecoratedText_SwitchControl>(
+        9, _omitFieldNames ? '' : 'switchControl',
+        subBuilder: DecoratedText_SwitchControl.create)
     ..aOM<Icon>(11, _omitFieldNames ? '' : 'endIcon', subBuilder: Icon.create)
     ..aOM<Icon>(12, _omitFieldNames ? '' : 'startIcon', subBuilder: Icon.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DecoratedText clone() => DecoratedText()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DecoratedText copyWith(void Function(DecoratedText) updates) => super.copyWith((message) => updates(message as DecoratedText)) as DecoratedText;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DecoratedText copyWith(void Function(DecoratedText) updates) =>
+      super.copyWith((message) => updates(message as DecoratedText))
+          as DecoratedText;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DecoratedText create() => DecoratedText._();
   DecoratedText createEmptyInstance() => create();
-  static $pb.PbList<DecoratedText> createRepeated() => $pb.PbList<DecoratedText>();
+  static $pb.PbList<DecoratedText> createRepeated() =>
+      $pb.PbList<DecoratedText>();
   @$core.pragma('dart2js:noInline')
-  static DecoratedText getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DecoratedText>(create);
+  static DecoratedText getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DecoratedText>(create);
   static DecoratedText? _defaultInstance;
 
-  DecoratedText_Control whichControl() => _DecoratedText_ControlByTag[$_whichOneof(0)]!;
+  DecoratedText_Control whichControl() =>
+      _DecoratedText_ControlByTag[$_whichOneof(0)]!;
   void clearControl() => clearField($_whichOneof(0));
 
   /// Deprecated in favor of `startIcon`.
@@ -1682,7 +1933,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   Icon get icon => $_getN(0);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  set icon(Icon v) { setField(1, v); }
+  set icon(Icon v) {
+    setField(1, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.bool hasIcon() => $_has(0);
@@ -1697,7 +1951,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get topLabel => $_getSZ(1);
   @$pb.TagNumber(3)
-  set topLabel($core.String v) { $_setString(1, v); }
+  set topLabel($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTopLabel() => $_has(1);
   @$pb.TagNumber(3)
@@ -1716,7 +1973,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get text => $_getSZ(2);
   @$pb.TagNumber(4)
-  set text($core.String v) { $_setString(2, v); }
+  set text($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasText() => $_has(2);
   @$pb.TagNumber(4)
@@ -1729,7 +1989,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get wrapText => $_getBF(3);
   @$pb.TagNumber(5)
-  set wrapText($core.bool v) { $_setBool(3, v); }
+  set wrapText($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasWrapText() => $_has(3);
   @$pb.TagNumber(5)
@@ -1739,7 +2002,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get bottomLabel => $_getSZ(4);
   @$pb.TagNumber(6)
-  set bottomLabel($core.String v) { $_setString(4, v); }
+  set bottomLabel($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBottomLabel() => $_has(4);
   @$pb.TagNumber(6)
@@ -1749,7 +2015,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   OnClick get onClick => $_getN(5);
   @$pb.TagNumber(7)
-  set onClick(OnClick v) { setField(7, v); }
+  set onClick(OnClick v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasOnClick() => $_has(5);
   @$pb.TagNumber(7)
@@ -1761,7 +2030,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Button get button => $_getN(6);
   @$pb.TagNumber(8)
-  set button(Button v) { setField(8, v); }
+  set button(Button v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasButton() => $_has(6);
   @$pb.TagNumber(8)
@@ -1774,7 +2046,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   DecoratedText_SwitchControl get switchControl => $_getN(7);
   @$pb.TagNumber(9)
-  set switchControl(DecoratedText_SwitchControl v) { setField(9, v); }
+  set switchControl(DecoratedText_SwitchControl v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSwitchControl() => $_has(7);
   @$pb.TagNumber(9)
@@ -1792,7 +2067,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Icon get endIcon => $_getN(8);
   @$pb.TagNumber(11)
-  set endIcon(Icon v) { setField(11, v); }
+  set endIcon(Icon v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasEndIcon() => $_has(8);
   @$pb.TagNumber(11)
@@ -1804,7 +2082,10 @@ class DecoratedText extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Icon get startIcon => $_getN(9);
   @$pb.TagNumber(12)
-  set startIcon(Icon v) { setField(12, v); }
+  set startIcon(Icon v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasStartIcon() => $_has(9);
   @$pb.TagNumber(12)
@@ -1871,32 +2152,44 @@ class TextInput extends $pb.GeneratedMessage {
     return $result;
   }
   TextInput._() : super();
-  factory TextInput.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TextInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TextInput.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TextInput.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TextInput',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'label')
     ..aOS(3, _omitFieldNames ? '' : 'hintText')
     ..aOS(4, _omitFieldNames ? '' : 'value')
-    ..e<TextInput_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: TextInput_Type.SINGLE_LINE, valueOf: TextInput_Type.valueOf, enumValues: TextInput_Type.values)
-    ..aOM<Action>(6, _omitFieldNames ? '' : 'onChangeAction', subBuilder: Action.create)
-    ..aOM<Suggestions>(7, _omitFieldNames ? '' : 'initialSuggestions', subBuilder: Suggestions.create)
-    ..aOM<Action>(8, _omitFieldNames ? '' : 'autoCompleteAction', subBuilder: Action.create)
+    ..e<TextInput_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: TextInput_Type.SINGLE_LINE,
+        valueOf: TextInput_Type.valueOf,
+        enumValues: TextInput_Type.values)
+    ..aOM<Action>(6, _omitFieldNames ? '' : 'onChangeAction',
+        subBuilder: Action.create)
+    ..aOM<Suggestions>(7, _omitFieldNames ? '' : 'initialSuggestions',
+        subBuilder: Suggestions.create)
+    ..aOM<Action>(8, _omitFieldNames ? '' : 'autoCompleteAction',
+        subBuilder: Action.create)
     ..aOS(12, _omitFieldNames ? '' : 'placeholderText')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TextInput clone() => TextInput()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TextInput copyWith(void Function(TextInput) updates) => super.copyWith((message) => updates(message as TextInput)) as TextInput;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TextInput copyWith(void Function(TextInput) updates) =>
+      super.copyWith((message) => updates(message as TextInput)) as TextInput;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1905,7 +2198,8 @@ class TextInput extends $pb.GeneratedMessage {
   TextInput createEmptyInstance() => create();
   static $pb.PbList<TextInput> createRepeated() => $pb.PbList<TextInput>();
   @$core.pragma('dart2js:noInline')
-  static TextInput getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TextInput>(create);
+  static TextInput getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TextInput>(create);
   static TextInput? _defaultInstance;
 
   ///  The name by which the text input is identified in a form input event.
@@ -1915,7 +2209,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1931,7 +2228,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get label => $_getSZ(1);
   @$pb.TagNumber(2)
-  set label($core.String v) { $_setString(1, v); }
+  set label($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLabel() => $_has(1);
   @$pb.TagNumber(2)
@@ -1944,7 +2244,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get hintText => $_getSZ(2);
   @$pb.TagNumber(3)
-  set hintText($core.String v) { $_setString(2, v); }
+  set hintText($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasHintText() => $_has(2);
   @$pb.TagNumber(3)
@@ -1957,7 +2260,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get value => $_getSZ(3);
   @$pb.TagNumber(4)
-  set value($core.String v) { $_setString(3, v); }
+  set value($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasValue() => $_has(3);
   @$pb.TagNumber(4)
@@ -1968,7 +2274,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   TextInput_Type get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type(TextInput_Type v) { setField(5, v); }
+  set type(TextInput_Type v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -1983,7 +2292,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Action get onChangeAction => $_getN(5);
   @$pb.TagNumber(6)
-  set onChangeAction(Action v) { setField(6, v); }
+  set onChangeAction(Action v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasOnChangeAction() => $_has(5);
   @$pb.TagNumber(6)
@@ -2012,7 +2324,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Suggestions get initialSuggestions => $_getN(6);
   @$pb.TagNumber(7)
-  set initialSuggestions(Suggestions v) { setField(7, v); }
+  set initialSuggestions(Suggestions v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasInitialSuggestions() => $_has(6);
   @$pb.TagNumber(7)
@@ -2034,7 +2349,10 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Action get autoCompleteAction => $_getN(7);
   @$pb.TagNumber(8)
-  set autoCompleteAction(Action v) { setField(8, v); }
+  set autoCompleteAction(Action v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasAutoCompleteAction() => $_has(7);
   @$pb.TagNumber(8)
@@ -2050,17 +2368,17 @@ class TextInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get placeholderText => $_getSZ(8);
   @$pb.TagNumber(12)
-  set placeholderText($core.String v) { $_setString(8, v); }
+  set placeholderText($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasPlaceholderText() => $_has(8);
   @$pb.TagNumber(12)
   void clearPlaceholderText() => clearField(12);
 }
 
-enum Suggestions_SuggestionItem_Content {
-  text, 
-  notSet
-}
+enum Suggestions_SuggestionItem_Content { text, notSet }
 
 ///  One suggested value that users can enter in a text input field.
 ///
@@ -2077,41 +2395,55 @@ class Suggestions_SuggestionItem extends $pb.GeneratedMessage {
     return $result;
   }
   Suggestions_SuggestionItem._() : super();
-  factory Suggestions_SuggestionItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Suggestions_SuggestionItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Suggestions_SuggestionItem.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Suggestions_SuggestionItem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Suggestions_SuggestionItem_Content> _Suggestions_SuggestionItem_ContentByTag = {
-    1 : Suggestions_SuggestionItem_Content.text,
-    0 : Suggestions_SuggestionItem_Content.notSet
+  static const $core.Map<$core.int, Suggestions_SuggestionItem_Content>
+      _Suggestions_SuggestionItem_ContentByTag = {
+    1: Suggestions_SuggestionItem_Content.text,
+    0: Suggestions_SuggestionItem_Content.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Suggestions.SuggestionItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Suggestions.SuggestionItem',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Suggestions_SuggestionItem clone() => Suggestions_SuggestionItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Suggestions_SuggestionItem copyWith(void Function(Suggestions_SuggestionItem) updates) => super.copyWith((message) => updates(message as Suggestions_SuggestionItem)) as Suggestions_SuggestionItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Suggestions_SuggestionItem clone() =>
+      Suggestions_SuggestionItem()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Suggestions_SuggestionItem copyWith(
+          void Function(Suggestions_SuggestionItem) updates) =>
+      super.copyWith(
+              (message) => updates(message as Suggestions_SuggestionItem))
+          as Suggestions_SuggestionItem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Suggestions_SuggestionItem create() => Suggestions_SuggestionItem._();
   Suggestions_SuggestionItem createEmptyInstance() => create();
-  static $pb.PbList<Suggestions_SuggestionItem> createRepeated() => $pb.PbList<Suggestions_SuggestionItem>();
+  static $pb.PbList<Suggestions_SuggestionItem> createRepeated() =>
+      $pb.PbList<Suggestions_SuggestionItem>();
   @$core.pragma('dart2js:noInline')
-  static Suggestions_SuggestionItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Suggestions_SuggestionItem>(create);
+  static Suggestions_SuggestionItem getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Suggestions_SuggestionItem>(create);
   static Suggestions_SuggestionItem? _defaultInstance;
 
-  Suggestions_SuggestionItem_Content whichContent() => _Suggestions_SuggestionItem_ContentByTag[$_whichOneof(0)]!;
+  Suggestions_SuggestionItem_Content whichContent() =>
+      _Suggestions_SuggestionItem_ContentByTag[$_whichOneof(0)]!;
   void clearContent() => clearField($_whichOneof(0));
 
   /// The value of a suggested input to a text input field. This is
@@ -2119,7 +2451,10 @@ class Suggestions_SuggestionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -2155,24 +2490,33 @@ class Suggestions extends $pb.GeneratedMessage {
     return $result;
   }
   Suggestions._() : super();
-  factory Suggestions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Suggestions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Suggestions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Suggestions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Suggestions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..pc<Suggestions_SuggestionItem>(1, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: Suggestions_SuggestionItem.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Suggestions',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..pc<Suggestions_SuggestionItem>(
+        1, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
+        subBuilder: Suggestions_SuggestionItem.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Suggestions clone() => Suggestions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Suggestions copyWith(void Function(Suggestions) updates) => super.copyWith((message) => updates(message as Suggestions)) as Suggestions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Suggestions copyWith(void Function(Suggestions) updates) =>
+      super.copyWith((message) => updates(message as Suggestions))
+          as Suggestions;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2181,7 +2525,8 @@ class Suggestions extends $pb.GeneratedMessage {
   Suggestions createEmptyInstance() => create();
   static $pb.PbList<Suggestions> createRepeated() => $pb.PbList<Suggestions>();
   @$core.pragma('dart2js:noInline')
-  static Suggestions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Suggestions>(create);
+  static Suggestions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Suggestions>(create);
   static Suggestions? _defaultInstance;
 
   /// A list of suggestions used for autocomplete recommendations in text input
@@ -2208,24 +2553,31 @@ class ButtonList extends $pb.GeneratedMessage {
     return $result;
   }
   ButtonList._() : super();
-  factory ButtonList.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ButtonList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ButtonList.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ButtonList.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ButtonList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..pc<Button>(1, _omitFieldNames ? '' : 'buttons', $pb.PbFieldType.PM, subBuilder: Button.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ButtonList',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..pc<Button>(1, _omitFieldNames ? '' : 'buttons', $pb.PbFieldType.PM,
+        subBuilder: Button.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ButtonList clone() => ButtonList()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ButtonList copyWith(void Function(ButtonList) updates) => super.copyWith((message) => updates(message as ButtonList)) as ButtonList;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ButtonList copyWith(void Function(ButtonList) updates) =>
+      super.copyWith((message) => updates(message as ButtonList)) as ButtonList;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2234,7 +2586,8 @@ class ButtonList extends $pb.GeneratedMessage {
   ButtonList createEmptyInstance() => create();
   static $pb.PbList<ButtonList> createRepeated() => $pb.PbList<ButtonList>();
   @$core.pragma('dart2js:noInline')
-  static ButtonList getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ButtonList>(create);
+  static ButtonList getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ButtonList>(create);
   static ButtonList? _defaultInstance;
 
   /// An array of buttons.
@@ -2274,44 +2627,60 @@ class SelectionInput_SelectionItem extends $pb.GeneratedMessage {
     return $result;
   }
   SelectionInput_SelectionItem._() : super();
-  factory SelectionInput_SelectionItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SelectionInput_SelectionItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SelectionInput_SelectionItem.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SelectionInput_SelectionItem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SelectionInput.SelectionItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SelectionInput.SelectionItem',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOS(2, _omitFieldNames ? '' : 'value')
     ..aOB(3, _omitFieldNames ? '' : 'selected')
     ..aOS(4, _omitFieldNames ? '' : 'startIconUri')
     ..aOS(5, _omitFieldNames ? '' : 'bottomText')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SelectionInput_SelectionItem clone() => SelectionInput_SelectionItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SelectionInput_SelectionItem copyWith(void Function(SelectionInput_SelectionItem) updates) => super.copyWith((message) => updates(message as SelectionInput_SelectionItem)) as SelectionInput_SelectionItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SelectionInput_SelectionItem clone() =>
+      SelectionInput_SelectionItem()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SelectionInput_SelectionItem copyWith(
+          void Function(SelectionInput_SelectionItem) updates) =>
+      super.copyWith(
+              (message) => updates(message as SelectionInput_SelectionItem))
+          as SelectionInput_SelectionItem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SelectionInput_SelectionItem create() => SelectionInput_SelectionItem._();
+  static SelectionInput_SelectionItem create() =>
+      SelectionInput_SelectionItem._();
   SelectionInput_SelectionItem createEmptyInstance() => create();
-  static $pb.PbList<SelectionInput_SelectionItem> createRepeated() => $pb.PbList<SelectionInput_SelectionItem>();
+  static $pb.PbList<SelectionInput_SelectionItem> createRepeated() =>
+      $pb.PbList<SelectionInput_SelectionItem>();
   @$core.pragma('dart2js:noInline')
-  static SelectionInput_SelectionItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SelectionInput_SelectionItem>(create);
+  static SelectionInput_SelectionItem getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SelectionInput_SelectionItem>(create);
   static SelectionInput_SelectionItem? _defaultInstance;
 
   /// The text that identifies or describes the item to users.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -2325,7 +2694,10 @@ class SelectionInput_SelectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) { $_setString(1, v); }
+  set value($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -2337,7 +2709,10 @@ class SelectionInput_SelectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get selected => $_getBF(2);
   @$pb.TagNumber(3)
-  set selected($core.bool v) { $_setBool(2, v); }
+  set selected($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSelected() => $_has(2);
   @$pb.TagNumber(3)
@@ -2350,7 +2725,10 @@ class SelectionInput_SelectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get startIconUri => $_getSZ(3);
   @$pb.TagNumber(4)
-  set startIconUri($core.String v) { $_setString(3, v); }
+  set startIconUri($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartIconUri() => $_has(3);
   @$pb.TagNumber(4)
@@ -2361,17 +2739,17 @@ class SelectionInput_SelectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get bottomText => $_getSZ(4);
   @$pb.TagNumber(5)
-  set bottomText($core.String v) { $_setString(4, v); }
+  set bottomText($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBottomText() => $_has(4);
   @$pb.TagNumber(5)
   void clearBottomText() => clearField(5);
 }
 
-enum SelectionInput_PlatformDataSource_DataSource {
-  commonDataSource, 
-  notSet
-}
+enum SelectionInput_PlatformDataSource_DataSource { commonDataSource, notSet }
 
 ///  For a
 ///  [`SelectionInput`][google.apps.card.v1.SelectionInput] widget that uses a
@@ -2390,49 +2768,75 @@ class SelectionInput_PlatformDataSource extends $pb.GeneratedMessage {
     return $result;
   }
   SelectionInput_PlatformDataSource._() : super();
-  factory SelectionInput_PlatformDataSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SelectionInput_PlatformDataSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SelectionInput_PlatformDataSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SelectionInput_PlatformDataSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, SelectionInput_PlatformDataSource_DataSource> _SelectionInput_PlatformDataSource_DataSourceByTag = {
-    1 : SelectionInput_PlatformDataSource_DataSource.commonDataSource,
-    0 : SelectionInput_PlatformDataSource_DataSource.notSet
+  static const $core
+      .Map<$core.int, SelectionInput_PlatformDataSource_DataSource>
+      _SelectionInput_PlatformDataSource_DataSourceByTag = {
+    1: SelectionInput_PlatformDataSource_DataSource.commonDataSource,
+    0: SelectionInput_PlatformDataSource_DataSource.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SelectionInput.PlatformDataSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SelectionInput.PlatformDataSource',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..e<SelectionInput_PlatformDataSource_CommonDataSource>(1, _omitFieldNames ? '' : 'commonDataSource', $pb.PbFieldType.OE, defaultOrMaker: SelectionInput_PlatformDataSource_CommonDataSource.UNKNOWN, valueOf: SelectionInput_PlatformDataSource_CommonDataSource.valueOf, enumValues: SelectionInput_PlatformDataSource_CommonDataSource.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<SelectionInput_PlatformDataSource_CommonDataSource>(
+        1, _omitFieldNames ? '' : 'commonDataSource', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            SelectionInput_PlatformDataSource_CommonDataSource.UNKNOWN,
+        valueOf: SelectionInput_PlatformDataSource_CommonDataSource.valueOf,
+        enumValues: SelectionInput_PlatformDataSource_CommonDataSource.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SelectionInput_PlatformDataSource clone() => SelectionInput_PlatformDataSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SelectionInput_PlatformDataSource copyWith(void Function(SelectionInput_PlatformDataSource) updates) => super.copyWith((message) => updates(message as SelectionInput_PlatformDataSource)) as SelectionInput_PlatformDataSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SelectionInput_PlatformDataSource clone() =>
+      SelectionInput_PlatformDataSource()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SelectionInput_PlatformDataSource copyWith(
+          void Function(SelectionInput_PlatformDataSource) updates) =>
+      super.copyWith((message) =>
+              updates(message as SelectionInput_PlatformDataSource))
+          as SelectionInput_PlatformDataSource;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SelectionInput_PlatformDataSource create() => SelectionInput_PlatformDataSource._();
+  static SelectionInput_PlatformDataSource create() =>
+      SelectionInput_PlatformDataSource._();
   SelectionInput_PlatformDataSource createEmptyInstance() => create();
-  static $pb.PbList<SelectionInput_PlatformDataSource> createRepeated() => $pb.PbList<SelectionInput_PlatformDataSource>();
+  static $pb.PbList<SelectionInput_PlatformDataSource> createRepeated() =>
+      $pb.PbList<SelectionInput_PlatformDataSource>();
   @$core.pragma('dart2js:noInline')
-  static SelectionInput_PlatformDataSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SelectionInput_PlatformDataSource>(create);
+  static SelectionInput_PlatformDataSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SelectionInput_PlatformDataSource>(
+          create);
   static SelectionInput_PlatformDataSource? _defaultInstance;
 
-  SelectionInput_PlatformDataSource_DataSource whichDataSource() => _SelectionInput_PlatformDataSource_DataSourceByTag[$_whichOneof(0)]!;
+  SelectionInput_PlatformDataSource_DataSource whichDataSource() =>
+      _SelectionInput_PlatformDataSource_DataSourceByTag[$_whichOneof(0)]!;
   void clearDataSource() => clearField($_whichOneof(0));
 
   /// A data source shared by all Google Workspace applications, such as
   /// users in a Google Workspace organization.
   @$pb.TagNumber(1)
-  SelectionInput_PlatformDataSource_CommonDataSource get commonDataSource => $_getN(0);
+  SelectionInput_PlatformDataSource_CommonDataSource get commonDataSource =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set commonDataSource(SelectionInput_PlatformDataSource_CommonDataSource v) { setField(1, v); }
+  set commonDataSource(SelectionInput_PlatformDataSource_CommonDataSource v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCommonDataSource() => $_has(0);
   @$pb.TagNumber(1)
@@ -2440,8 +2844,8 @@ class SelectionInput_PlatformDataSource extends $pb.GeneratedMessage {
 }
 
 enum SelectionInput_MultiSelectDataSource {
-  externalDataSource, 
-  platformDataSource, 
+  externalDataSource,
+  platformDataSource,
   notSet
 }
 
@@ -2503,50 +2907,73 @@ class SelectionInput extends $pb.GeneratedMessage {
     return $result;
   }
   SelectionInput._() : super();
-  factory SelectionInput.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SelectionInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SelectionInput.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SelectionInput.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, SelectionInput_MultiSelectDataSource> _SelectionInput_MultiSelectDataSourceByTag = {
-    8 : SelectionInput_MultiSelectDataSource.externalDataSource,
-    9 : SelectionInput_MultiSelectDataSource.platformDataSource,
-    0 : SelectionInput_MultiSelectDataSource.notSet
+  static const $core.Map<$core.int, SelectionInput_MultiSelectDataSource>
+      _SelectionInput_MultiSelectDataSourceByTag = {
+    8: SelectionInput_MultiSelectDataSource.externalDataSource,
+    9: SelectionInput_MultiSelectDataSource.platformDataSource,
+    0: SelectionInput_MultiSelectDataSource.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SelectionInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SelectionInput',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [8, 9])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'label')
-    ..e<SelectionInput_SelectionType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: SelectionInput_SelectionType.CHECK_BOX, valueOf: SelectionInput_SelectionType.valueOf, enumValues: SelectionInput_SelectionType.values)
-    ..pc<SelectionInput_SelectionItem>(4, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: SelectionInput_SelectionItem.create)
-    ..aOM<Action>(5, _omitFieldNames ? '' : 'onChangeAction', subBuilder: Action.create)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'multiSelectMaxSelectedItems', $pb.PbFieldType.O3)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'multiSelectMinQueryLength', $pb.PbFieldType.O3)
-    ..aOM<Action>(8, _omitFieldNames ? '' : 'externalDataSource', subBuilder: Action.create)
-    ..aOM<SelectionInput_PlatformDataSource>(9, _omitFieldNames ? '' : 'platformDataSource', subBuilder: SelectionInput_PlatformDataSource.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<SelectionInput_SelectionType>(
+        3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: SelectionInput_SelectionType.CHECK_BOX,
+        valueOf: SelectionInput_SelectionType.valueOf,
+        enumValues: SelectionInput_SelectionType.values)
+    ..pc<SelectionInput_SelectionItem>(
+        4, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
+        subBuilder: SelectionInput_SelectionItem.create)
+    ..aOM<Action>(5, _omitFieldNames ? '' : 'onChangeAction',
+        subBuilder: Action.create)
+    ..a<$core.int>(6, _omitFieldNames ? '' : 'multiSelectMaxSelectedItems',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(7, _omitFieldNames ? '' : 'multiSelectMinQueryLength',
+        $pb.PbFieldType.O3)
+    ..aOM<Action>(8, _omitFieldNames ? '' : 'externalDataSource',
+        subBuilder: Action.create)
+    ..aOM<SelectionInput_PlatformDataSource>(
+        9, _omitFieldNames ? '' : 'platformDataSource',
+        subBuilder: SelectionInput_PlatformDataSource.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SelectionInput clone() => SelectionInput()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SelectionInput copyWith(void Function(SelectionInput) updates) => super.copyWith((message) => updates(message as SelectionInput)) as SelectionInput;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SelectionInput copyWith(void Function(SelectionInput) updates) =>
+      super.copyWith((message) => updates(message as SelectionInput))
+          as SelectionInput;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SelectionInput create() => SelectionInput._();
   SelectionInput createEmptyInstance() => create();
-  static $pb.PbList<SelectionInput> createRepeated() => $pb.PbList<SelectionInput>();
+  static $pb.PbList<SelectionInput> createRepeated() =>
+      $pb.PbList<SelectionInput>();
   @$core.pragma('dart2js:noInline')
-  static SelectionInput getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SelectionInput>(create);
+  static SelectionInput getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SelectionInput>(create);
   static SelectionInput? _defaultInstance;
 
-  SelectionInput_MultiSelectDataSource whichMultiSelectDataSource() => _SelectionInput_MultiSelectDataSourceByTag[$_whichOneof(0)]!;
+  SelectionInput_MultiSelectDataSource whichMultiSelectDataSource() =>
+      _SelectionInput_MultiSelectDataSourceByTag[$_whichOneof(0)]!;
   void clearMultiSelectDataSource() => clearField($_whichOneof(0));
 
   ///  The name that identifies the selection input in a form input event.
@@ -2556,7 +2983,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2571,7 +3001,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get label => $_getSZ(1);
   @$pb.TagNumber(2)
-  set label($core.String v) { $_setString(1, v); }
+  set label($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLabel() => $_has(1);
   @$pb.TagNumber(2)
@@ -2584,7 +3017,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   SelectionInput_SelectionType get type => $_getN(2);
   @$pb.TagNumber(3)
-  set type(SelectionInput_SelectionType v) { setField(3, v); }
+  set type(SelectionInput_SelectionType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
@@ -2603,7 +3039,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Action get onChangeAction => $_getN(4);
   @$pb.TagNumber(5)
-  set onChangeAction(Action v) { setField(5, v); }
+  set onChangeAction(Action v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOnChangeAction() => $_has(4);
   @$pb.TagNumber(5)
@@ -2616,7 +3055,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get multiSelectMaxSelectedItems => $_getIZ(5);
   @$pb.TagNumber(6)
-  set multiSelectMaxSelectedItems($core.int v) { $_setSignedInt32(5, v); }
+  set multiSelectMaxSelectedItems($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMultiSelectMaxSelectedItems() => $_has(5);
   @$pb.TagNumber(6)
@@ -2631,7 +3073,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get multiSelectMinQueryLength => $_getIZ(6);
   @$pb.TagNumber(7)
-  set multiSelectMinQueryLength($core.int v) { $_setSignedInt32(6, v); }
+  set multiSelectMinQueryLength($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasMultiSelectMinQueryLength() => $_has(6);
   @$pb.TagNumber(7)
@@ -2641,7 +3086,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Action get externalDataSource => $_getN(7);
   @$pb.TagNumber(8)
-  set externalDataSource(Action v) { setField(8, v); }
+  set externalDataSource(Action v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasExternalDataSource() => $_has(7);
   @$pb.TagNumber(8)
@@ -2653,7 +3101,10 @@ class SelectionInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   SelectionInput_PlatformDataSource get platformDataSource => $_getN(8);
   @$pb.TagNumber(9)
-  set platformDataSource(SelectionInput_PlatformDataSource v) { setField(9, v); }
+  set platformDataSource(SelectionInput_PlatformDataSource v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPlatformDataSource() => $_has(8);
   @$pb.TagNumber(9)
@@ -2703,38 +3154,53 @@ class DateTimePicker extends $pb.GeneratedMessage {
     return $result;
   }
   DateTimePicker._() : super();
-  factory DateTimePicker.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DateTimePicker.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DateTimePicker.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DateTimePicker.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateTimePicker', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DateTimePicker',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'label')
-    ..e<DateTimePicker_DateTimePickerType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: DateTimePicker_DateTimePickerType.DATE_AND_TIME, valueOf: DateTimePicker_DateTimePickerType.valueOf, enumValues: DateTimePicker_DateTimePickerType.values)
+    ..e<DateTimePicker_DateTimePickerType>(
+        3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: DateTimePicker_DateTimePickerType.DATE_AND_TIME,
+        valueOf: DateTimePicker_DateTimePickerType.valueOf,
+        enumValues: DateTimePicker_DateTimePickerType.values)
     ..aInt64(4, _omitFieldNames ? '' : 'valueMsEpoch')
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'timezoneOffsetDate', $pb.PbFieldType.O3)
-    ..aOM<Action>(6, _omitFieldNames ? '' : 'onChangeAction', subBuilder: Action.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'timezoneOffsetDate', $pb.PbFieldType.O3)
+    ..aOM<Action>(6, _omitFieldNames ? '' : 'onChangeAction',
+        subBuilder: Action.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DateTimePicker clone() => DateTimePicker()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DateTimePicker copyWith(void Function(DateTimePicker) updates) => super.copyWith((message) => updates(message as DateTimePicker)) as DateTimePicker;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DateTimePicker copyWith(void Function(DateTimePicker) updates) =>
+      super.copyWith((message) => updates(message as DateTimePicker))
+          as DateTimePicker;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DateTimePicker create() => DateTimePicker._();
   DateTimePicker createEmptyInstance() => create();
-  static $pb.PbList<DateTimePicker> createRepeated() => $pb.PbList<DateTimePicker>();
+  static $pb.PbList<DateTimePicker> createRepeated() =>
+      $pb.PbList<DateTimePicker>();
   @$core.pragma('dart2js:noInline')
-  static DateTimePicker getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DateTimePicker>(create);
+  static DateTimePicker getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DateTimePicker>(create);
   static DateTimePicker? _defaultInstance;
 
   ///  The name by which the `DateTimePicker` is identified in a form input event.
@@ -2744,7 +3210,10 @@ class DateTimePicker extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2756,7 +3225,10 @@ class DateTimePicker extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get label => $_getSZ(1);
   @$pb.TagNumber(2)
-  set label($core.String v) { $_setString(1, v); }
+  set label($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLabel() => $_has(1);
   @$pb.TagNumber(2)
@@ -2766,7 +3238,10 @@ class DateTimePicker extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DateTimePicker_DateTimePickerType get type => $_getN(2);
   @$pb.TagNumber(3)
-  set type(DateTimePicker_DateTimePickerType v) { setField(3, v); }
+  set type(DateTimePicker_DateTimePickerType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
@@ -2786,7 +3261,10 @@ class DateTimePicker extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get valueMsEpoch => $_getI64(3);
   @$pb.TagNumber(4)
-  set valueMsEpoch($fixnum.Int64 v) { $_setInt64(3, v); }
+  set valueMsEpoch($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasValueMsEpoch() => $_has(3);
   @$pb.TagNumber(4)
@@ -2798,7 +3276,10 @@ class DateTimePicker extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get timezoneOffsetDate => $_getIZ(4);
   @$pb.TagNumber(5)
-  set timezoneOffsetDate($core.int v) { $_setSignedInt32(4, v); }
+  set timezoneOffsetDate($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTimezoneOffsetDate() => $_has(4);
   @$pb.TagNumber(5)
@@ -2809,7 +3290,10 @@ class DateTimePicker extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Action get onChangeAction => $_getN(5);
   @$pb.TagNumber(6)
-  set onChangeAction(Action v) { setField(6, v); }
+  set onChangeAction(Action v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasOnChangeAction() => $_has(5);
   @$pb.TagNumber(6)
@@ -2861,29 +3345,37 @@ class Button extends $pb.GeneratedMessage {
     return $result;
   }
   Button._() : super();
-  factory Button.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Button.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Button.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Button.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Button', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Button',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOM<Icon>(2, _omitFieldNames ? '' : 'icon', subBuilder: Icon.create)
-    ..aOM<$385.Color>(3, _omitFieldNames ? '' : 'color', subBuilder: $385.Color.create)
-    ..aOM<OnClick>(4, _omitFieldNames ? '' : 'onClick', subBuilder: OnClick.create)
+    ..aOM<$385.Color>(3, _omitFieldNames ? '' : 'color',
+        subBuilder: $385.Color.create)
+    ..aOM<OnClick>(4, _omitFieldNames ? '' : 'onClick',
+        subBuilder: OnClick.create)
     ..aOB(5, _omitFieldNames ? '' : 'disabled')
     ..aOS(6, _omitFieldNames ? '' : 'altText')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Button clone() => Button()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Button copyWith(void Function(Button) updates) => super.copyWith((message) => updates(message as Button)) as Button;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Button copyWith(void Function(Button) updates) =>
+      super.copyWith((message) => updates(message as Button)) as Button;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2892,14 +3384,18 @@ class Button extends $pb.GeneratedMessage {
   Button createEmptyInstance() => create();
   static $pb.PbList<Button> createRepeated() => $pb.PbList<Button>();
   @$core.pragma('dart2js:noInline')
-  static Button getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Button>(create);
+  static Button getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Button>(create);
   static Button? _defaultInstance;
 
   /// The text displayed inside the button.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -2910,7 +3406,10 @@ class Button extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Icon get icon => $_getN(1);
   @$pb.TagNumber(2)
-  set icon(Icon v) { setField(2, v); }
+  set icon(Icon v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIcon() => $_has(1);
   @$pb.TagNumber(2)
@@ -2953,7 +3452,10 @@ class Button extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $385.Color get color => $_getN(2);
   @$pb.TagNumber(3)
-  set color($385.Color v) { setField(3, v); }
+  set color($385.Color v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(3)
@@ -2966,7 +3468,10 @@ class Button extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   OnClick get onClick => $_getN(3);
   @$pb.TagNumber(4)
-  set onClick(OnClick v) { setField(4, v); }
+  set onClick(OnClick v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOnClick() => $_has(3);
   @$pb.TagNumber(4)
@@ -2979,7 +3484,10 @@ class Button extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get disabled => $_getBF(4);
   @$pb.TagNumber(5)
-  set disabled($core.bool v) { $_setBool(4, v); }
+  set disabled($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDisabled() => $_has(4);
   @$pb.TagNumber(5)
@@ -2994,19 +3502,17 @@ class Button extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get altText => $_getSZ(5);
   @$pb.TagNumber(6)
-  set altText($core.String v) { $_setString(5, v); }
+  set altText($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAltText() => $_has(5);
   @$pb.TagNumber(6)
   void clearAltText() => clearField(6);
 }
 
-enum Icon_Icons {
-  knownIcon, 
-  iconUrl, 
-  materialIcon, 
-  notSet
-}
+enum Icon_Icons { knownIcon, iconUrl, materialIcon, notSet }
 
 ///  An icon displayed in a widget on a card. For an example in Google Chat apps,
 ///  see [Add an
@@ -3047,35 +3553,46 @@ class Icon extends $pb.GeneratedMessage {
     return $result;
   }
   Icon._() : super();
-  factory Icon.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Icon.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Icon.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Icon.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Icon_Icons> _Icon_IconsByTag = {
-    1 : Icon_Icons.knownIcon,
-    2 : Icon_Icons.iconUrl,
-    5 : Icon_Icons.materialIcon,
-    0 : Icon_Icons.notSet
+    1: Icon_Icons.knownIcon,
+    2: Icon_Icons.iconUrl,
+    5: Icon_Icons.materialIcon,
+    0: Icon_Icons.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Icon', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Icon',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 5])
     ..aOS(1, _omitFieldNames ? '' : 'knownIcon')
     ..aOS(2, _omitFieldNames ? '' : 'iconUrl')
     ..aOS(3, _omitFieldNames ? '' : 'altText')
-    ..e<Widget_ImageType>(4, _omitFieldNames ? '' : 'imageType', $pb.PbFieldType.OE, defaultOrMaker: Widget_ImageType.SQUARE, valueOf: Widget_ImageType.valueOf, enumValues: Widget_ImageType.values)
-    ..aOM<MaterialIcon>(5, _omitFieldNames ? '' : 'materialIcon', subBuilder: MaterialIcon.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<Widget_ImageType>(
+        4, _omitFieldNames ? '' : 'imageType', $pb.PbFieldType.OE,
+        defaultOrMaker: Widget_ImageType.SQUARE,
+        valueOf: Widget_ImageType.valueOf,
+        enumValues: Widget_ImageType.values)
+    ..aOM<MaterialIcon>(5, _omitFieldNames ? '' : 'materialIcon',
+        subBuilder: MaterialIcon.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Icon clone() => Icon()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Icon copyWith(void Function(Icon) updates) => super.copyWith((message) => updates(message as Icon)) as Icon;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Icon copyWith(void Function(Icon) updates) =>
+      super.copyWith((message) => updates(message as Icon)) as Icon;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3084,7 +3601,8 @@ class Icon extends $pb.GeneratedMessage {
   Icon createEmptyInstance() => create();
   static $pb.PbList<Icon> createRepeated() => $pb.PbList<Icon>();
   @$core.pragma('dart2js:noInline')
-  static Icon getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Icon>(create);
+  static Icon getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Icon>(create);
   static Icon? _defaultInstance;
 
   Icon_Icons whichIcons() => _Icon_IconsByTag[$_whichOneof(0)]!;
@@ -3100,7 +3618,10 @@ class Icon extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get knownIcon => $_getSZ(0);
   @$pb.TagNumber(1)
-  set knownIcon($core.String v) { $_setString(0, v); }
+  set knownIcon($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKnownIcon() => $_has(0);
   @$pb.TagNumber(1)
@@ -3119,7 +3640,10 @@ class Icon extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get iconUrl => $_getSZ(1);
   @$pb.TagNumber(2)
-  set iconUrl($core.String v) { $_setString(1, v); }
+  set iconUrl($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIconUrl() => $_has(1);
   @$pb.TagNumber(2)
@@ -3138,7 +3662,10 @@ class Icon extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get altText => $_getSZ(2);
   @$pb.TagNumber(3)
-  set altText($core.String v) { $_setString(2, v); }
+  set altText($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAltText() => $_has(2);
   @$pb.TagNumber(3)
@@ -3150,7 +3677,10 @@ class Icon extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Widget_ImageType get imageType => $_getN(3);
   @$pb.TagNumber(4)
-  set imageType(Widget_ImageType v) { setField(4, v); }
+  set imageType(Widget_ImageType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImageType() => $_has(3);
   @$pb.TagNumber(4)
@@ -3172,7 +3702,10 @@ class Icon extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   MaterialIcon get materialIcon => $_getN(4);
   @$pb.TagNumber(5)
-  set materialIcon(MaterialIcon v) { setField(5, v); }
+  set materialIcon(MaterialIcon v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaterialIcon() => $_has(4);
   @$pb.TagNumber(5)
@@ -3221,36 +3754,45 @@ class MaterialIcon extends $pb.GeneratedMessage {
     return $result;
   }
   MaterialIcon._() : super();
-  factory MaterialIcon.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MaterialIcon.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MaterialIcon.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MaterialIcon.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialIcon', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MaterialIcon',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'fill')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'grade', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MaterialIcon clone() => MaterialIcon()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MaterialIcon copyWith(void Function(MaterialIcon) updates) => super.copyWith((message) => updates(message as MaterialIcon)) as MaterialIcon;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MaterialIcon copyWith(void Function(MaterialIcon) updates) =>
+      super.copyWith((message) => updates(message as MaterialIcon))
+          as MaterialIcon;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MaterialIcon create() => MaterialIcon._();
   MaterialIcon createEmptyInstance() => create();
-  static $pb.PbList<MaterialIcon> createRepeated() => $pb.PbList<MaterialIcon>();
+  static $pb.PbList<MaterialIcon> createRepeated() =>
+      $pb.PbList<MaterialIcon>();
   @$core.pragma('dart2js:noInline')
-  static MaterialIcon getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialIcon>(create);
+  static MaterialIcon getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MaterialIcon>(create);
   static MaterialIcon? _defaultInstance;
 
   /// The icon name defined in the [Google Material
@@ -3260,7 +3802,10 @@ class MaterialIcon extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -3274,7 +3819,10 @@ class MaterialIcon extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get fill => $_getBF(1);
   @$pb.TagNumber(2)
-  set fill($core.bool v) { $_setBool(1, v); }
+  set fill($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFill() => $_has(1);
   @$pb.TagNumber(2)
@@ -3290,7 +3838,10 @@ class MaterialIcon extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get weight => $_getIZ(2);
   @$pb.TagNumber(3)
-  set weight($core.int v) { $_setSignedInt32(2, v); }
+  set weight($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWeight() => $_has(2);
   @$pb.TagNumber(3)
@@ -3307,7 +3858,10 @@ class MaterialIcon extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get grade => $_getIZ(3);
   @$pb.TagNumber(4)
-  set grade($core.int v) { $_setSignedInt32(3, v); }
+  set grade($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasGrade() => $_has(3);
   @$pb.TagNumber(4)
@@ -3342,41 +3896,59 @@ class ImageCropStyle extends $pb.GeneratedMessage {
     return $result;
   }
   ImageCropStyle._() : super();
-  factory ImageCropStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImageCropStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImageCropStyle.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImageCropStyle.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageCropStyle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..e<ImageCropStyle_ImageCropType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: ImageCropStyle_ImageCropType.IMAGE_CROP_TYPE_UNSPECIFIED, valueOf: ImageCropStyle_ImageCropType.valueOf, enumValues: ImageCropStyle_ImageCropType.values)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'aspectRatio', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImageCropStyle',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..e<ImageCropStyle_ImageCropType>(
+        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            ImageCropStyle_ImageCropType.IMAGE_CROP_TYPE_UNSPECIFIED,
+        valueOf: ImageCropStyle_ImageCropType.valueOf,
+        enumValues: ImageCropStyle_ImageCropType.values)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'aspectRatio', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ImageCropStyle clone() => ImageCropStyle()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImageCropStyle copyWith(void Function(ImageCropStyle) updates) => super.copyWith((message) => updates(message as ImageCropStyle)) as ImageCropStyle;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImageCropStyle copyWith(void Function(ImageCropStyle) updates) =>
+      super.copyWith((message) => updates(message as ImageCropStyle))
+          as ImageCropStyle;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImageCropStyle create() => ImageCropStyle._();
   ImageCropStyle createEmptyInstance() => create();
-  static $pb.PbList<ImageCropStyle> createRepeated() => $pb.PbList<ImageCropStyle>();
+  static $pb.PbList<ImageCropStyle> createRepeated() =>
+      $pb.PbList<ImageCropStyle>();
   @$core.pragma('dart2js:noInline')
-  static ImageCropStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageCropStyle>(create);
+  static ImageCropStyle getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImageCropStyle>(create);
   static ImageCropStyle? _defaultInstance;
 
   /// The crop type.
   @$pb.TagNumber(1)
   ImageCropStyle_ImageCropType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(ImageCropStyle_ImageCropType v) { setField(1, v); }
+  set type(ImageCropStyle_ImageCropType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -3395,7 +3967,10 @@ class ImageCropStyle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get aspectRatio => $_getN(1);
   @$pb.TagNumber(2)
-  set aspectRatio($core.double v) { $_setDouble(1, v); }
+  set aspectRatio($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAspectRatio() => $_has(1);
   @$pb.TagNumber(2)
@@ -3426,26 +4001,38 @@ class BorderStyle extends $pb.GeneratedMessage {
     return $result;
   }
   BorderStyle._() : super();
-  factory BorderStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BorderStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BorderStyle.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BorderStyle.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BorderStyle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..e<BorderStyle_BorderType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: BorderStyle_BorderType.BORDER_TYPE_UNSPECIFIED, valueOf: BorderStyle_BorderType.valueOf, enumValues: BorderStyle_BorderType.values)
-    ..aOM<$385.Color>(2, _omitFieldNames ? '' : 'strokeColor', subBuilder: $385.Color.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BorderStyle',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..e<BorderStyle_BorderType>(
+        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: BorderStyle_BorderType.BORDER_TYPE_UNSPECIFIED,
+        valueOf: BorderStyle_BorderType.valueOf,
+        enumValues: BorderStyle_BorderType.values)
+    ..aOM<$385.Color>(2, _omitFieldNames ? '' : 'strokeColor',
+        subBuilder: $385.Color.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'cornerRadius', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BorderStyle clone() => BorderStyle()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BorderStyle copyWith(void Function(BorderStyle) updates) => super.copyWith((message) => updates(message as BorderStyle)) as BorderStyle;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BorderStyle copyWith(void Function(BorderStyle) updates) =>
+      super.copyWith((message) => updates(message as BorderStyle))
+          as BorderStyle;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3454,14 +4041,18 @@ class BorderStyle extends $pb.GeneratedMessage {
   BorderStyle createEmptyInstance() => create();
   static $pb.PbList<BorderStyle> createRepeated() => $pb.PbList<BorderStyle>();
   @$core.pragma('dart2js:noInline')
-  static BorderStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BorderStyle>(create);
+  static BorderStyle getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BorderStyle>(create);
   static BorderStyle? _defaultInstance;
 
   /// The border type.
   @$pb.TagNumber(1)
   BorderStyle_BorderType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(BorderStyle_BorderType v) { setField(1, v); }
+  set type(BorderStyle_BorderType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -3471,7 +4062,10 @@ class BorderStyle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $385.Color get strokeColor => $_getN(1);
   @$pb.TagNumber(2)
-  set strokeColor($385.Color v) { setField(2, v); }
+  set strokeColor($385.Color v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStrokeColor() => $_has(1);
   @$pb.TagNumber(2)
@@ -3483,7 +4077,10 @@ class BorderStyle extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get cornerRadius => $_getIZ(2);
   @$pb.TagNumber(3)
-  set cornerRadius($core.int v) { $_setSignedInt32(2, v); }
+  set cornerRadius($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCornerRadius() => $_has(2);
   @$pb.TagNumber(3)
@@ -3517,43 +4114,57 @@ class ImageComponent extends $pb.GeneratedMessage {
     return $result;
   }
   ImageComponent._() : super();
-  factory ImageComponent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImageComponent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImageComponent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImageComponent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageComponent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImageComponent',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'imageUri')
     ..aOS(2, _omitFieldNames ? '' : 'altText')
-    ..aOM<ImageCropStyle>(3, _omitFieldNames ? '' : 'cropStyle', subBuilder: ImageCropStyle.create)
-    ..aOM<BorderStyle>(4, _omitFieldNames ? '' : 'borderStyle', subBuilder: BorderStyle.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ImageCropStyle>(3, _omitFieldNames ? '' : 'cropStyle',
+        subBuilder: ImageCropStyle.create)
+    ..aOM<BorderStyle>(4, _omitFieldNames ? '' : 'borderStyle',
+        subBuilder: BorderStyle.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ImageComponent clone() => ImageComponent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImageComponent copyWith(void Function(ImageComponent) updates) => super.copyWith((message) => updates(message as ImageComponent)) as ImageComponent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImageComponent copyWith(void Function(ImageComponent) updates) =>
+      super.copyWith((message) => updates(message as ImageComponent))
+          as ImageComponent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImageComponent create() => ImageComponent._();
   ImageComponent createEmptyInstance() => create();
-  static $pb.PbList<ImageComponent> createRepeated() => $pb.PbList<ImageComponent>();
+  static $pb.PbList<ImageComponent> createRepeated() =>
+      $pb.PbList<ImageComponent>();
   @$core.pragma('dart2js:noInline')
-  static ImageComponent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageComponent>(create);
+  static ImageComponent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImageComponent>(create);
   static ImageComponent? _defaultInstance;
 
   /// The image URL.
   @$pb.TagNumber(1)
   $core.String get imageUri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set imageUri($core.String v) { $_setString(0, v); }
+  set imageUri($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasImageUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -3563,7 +4174,10 @@ class ImageComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get altText => $_getSZ(1);
   @$pb.TagNumber(2)
-  set altText($core.String v) { $_setString(1, v); }
+  set altText($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAltText() => $_has(1);
   @$pb.TagNumber(2)
@@ -3573,7 +4187,10 @@ class ImageComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ImageCropStyle get cropStyle => $_getN(2);
   @$pb.TagNumber(3)
-  set cropStyle(ImageCropStyle v) { setField(3, v); }
+  set cropStyle(ImageCropStyle v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCropStyle() => $_has(2);
   @$pb.TagNumber(3)
@@ -3585,7 +4202,10 @@ class ImageComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   BorderStyle get borderStyle => $_getN(3);
   @$pb.TagNumber(4)
-  set borderStyle(BorderStyle v) { setField(4, v); }
+  set borderStyle(BorderStyle v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBorderStyle() => $_has(3);
   @$pb.TagNumber(4)
@@ -3626,37 +4246,52 @@ class Grid_GridItem extends $pb.GeneratedMessage {
     return $result;
   }
   Grid_GridItem._() : super();
-  factory Grid_GridItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Grid_GridItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Grid_GridItem.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Grid_GridItem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grid.GridItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Grid.GridItem',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..aOM<ImageComponent>(2, _omitFieldNames ? '' : 'image', subBuilder: ImageComponent.create)
+    ..aOM<ImageComponent>(2, _omitFieldNames ? '' : 'image',
+        subBuilder: ImageComponent.create)
     ..aOS(3, _omitFieldNames ? '' : 'title')
     ..aOS(4, _omitFieldNames ? '' : 'subtitle')
-    ..e<Grid_GridItem_GridItemLayout>(9, _omitFieldNames ? '' : 'layout', $pb.PbFieldType.OE, defaultOrMaker: Grid_GridItem_GridItemLayout.GRID_ITEM_LAYOUT_UNSPECIFIED, valueOf: Grid_GridItem_GridItemLayout.valueOf, enumValues: Grid_GridItem_GridItemLayout.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<Grid_GridItem_GridItemLayout>(
+        9, _omitFieldNames ? '' : 'layout', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Grid_GridItem_GridItemLayout.GRID_ITEM_LAYOUT_UNSPECIFIED,
+        valueOf: Grid_GridItem_GridItemLayout.valueOf,
+        enumValues: Grid_GridItem_GridItemLayout.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Grid_GridItem clone() => Grid_GridItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Grid_GridItem copyWith(void Function(Grid_GridItem) updates) => super.copyWith((message) => updates(message as Grid_GridItem)) as Grid_GridItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Grid_GridItem copyWith(void Function(Grid_GridItem) updates) =>
+      super.copyWith((message) => updates(message as Grid_GridItem))
+          as Grid_GridItem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Grid_GridItem create() => Grid_GridItem._();
   Grid_GridItem createEmptyInstance() => create();
-  static $pb.PbList<Grid_GridItem> createRepeated() => $pb.PbList<Grid_GridItem>();
+  static $pb.PbList<Grid_GridItem> createRepeated() =>
+      $pb.PbList<Grid_GridItem>();
   @$core.pragma('dart2js:noInline')
-  static Grid_GridItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Grid_GridItem>(create);
+  static Grid_GridItem getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Grid_GridItem>(create);
   static Grid_GridItem? _defaultInstance;
 
   /// A user-specified identifier for this grid item. This identifier is
@@ -3664,7 +4299,10 @@ class Grid_GridItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -3674,7 +4312,10 @@ class Grid_GridItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ImageComponent get image => $_getN(1);
   @$pb.TagNumber(2)
-  set image(ImageComponent v) { setField(2, v); }
+  set image(ImageComponent v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasImage() => $_has(1);
   @$pb.TagNumber(2)
@@ -3686,7 +4327,10 @@ class Grid_GridItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get title => $_getSZ(2);
   @$pb.TagNumber(3)
-  set title($core.String v) { $_setString(2, v); }
+  set title($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTitle() => $_has(2);
   @$pb.TagNumber(3)
@@ -3696,7 +4340,10 @@ class Grid_GridItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get subtitle => $_getSZ(3);
   @$pb.TagNumber(4)
-  set subtitle($core.String v) { $_setString(3, v); }
+  set subtitle($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSubtitle() => $_has(3);
   @$pb.TagNumber(4)
@@ -3706,7 +4353,10 @@ class Grid_GridItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Grid_GridItem_GridItemLayout get layout => $_getN(4);
   @$pb.TagNumber(9)
-  set layout(Grid_GridItem_GridItemLayout v) { setField(9, v); }
+  set layout(Grid_GridItem_GridItemLayout v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasLayout() => $_has(4);
   @$pb.TagNumber(9)
@@ -3787,28 +4437,37 @@ class Grid extends $pb.GeneratedMessage {
     return $result;
   }
   Grid._() : super();
-  factory Grid.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Grid.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Grid.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Grid.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grid', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Grid',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
-    ..pc<Grid_GridItem>(2, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: Grid_GridItem.create)
-    ..aOM<BorderStyle>(3, _omitFieldNames ? '' : 'borderStyle', subBuilder: BorderStyle.create)
+    ..pc<Grid_GridItem>(2, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
+        subBuilder: Grid_GridItem.create)
+    ..aOM<BorderStyle>(3, _omitFieldNames ? '' : 'borderStyle',
+        subBuilder: BorderStyle.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'columnCount', $pb.PbFieldType.O3)
-    ..aOM<OnClick>(5, _omitFieldNames ? '' : 'onClick', subBuilder: OnClick.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<OnClick>(5, _omitFieldNames ? '' : 'onClick',
+        subBuilder: OnClick.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Grid clone() => Grid()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Grid copyWith(void Function(Grid) updates) => super.copyWith((message) => updates(message as Grid)) as Grid;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Grid copyWith(void Function(Grid) updates) =>
+      super.copyWith((message) => updates(message as Grid)) as Grid;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3817,14 +4476,18 @@ class Grid extends $pb.GeneratedMessage {
   Grid createEmptyInstance() => create();
   static $pb.PbList<Grid> createRepeated() => $pb.PbList<Grid>();
   @$core.pragma('dart2js:noInline')
-  static Grid getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Grid>(create);
+  static Grid getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Grid>(create);
   static Grid? _defaultInstance;
 
   /// The text that displays in the grid header.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -3838,7 +4501,10 @@ class Grid extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   BorderStyle get borderStyle => $_getN(2);
   @$pb.TagNumber(3)
-  set borderStyle(BorderStyle v) { setField(3, v); }
+  set borderStyle(BorderStyle v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBorderStyle() => $_has(2);
   @$pb.TagNumber(3)
@@ -3852,7 +4518,10 @@ class Grid extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get columnCount => $_getIZ(3);
   @$pb.TagNumber(4)
-  set columnCount($core.int v) { $_setSignedInt32(3, v); }
+  set columnCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasColumnCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -3864,7 +4533,10 @@ class Grid extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   OnClick get onClick => $_getN(4);
   @$pb.TagNumber(5)
-  set onClick(OnClick v) { setField(5, v); }
+  set onClick(OnClick v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOnClick() => $_has(4);
   @$pb.TagNumber(5)
@@ -3874,13 +4546,13 @@ class Grid extends $pb.GeneratedMessage {
 }
 
 enum Columns_Column_Widgets_Data {
-  textParagraph, 
-  image, 
-  decoratedText, 
-  buttonList, 
-  textInput, 
-  selectionInput, 
-  dateTimePicker, 
+  textParagraph,
+  image,
+  decoratedText,
+  buttonList,
+  textInput,
+  selectionInput,
+  dateTimePicker,
   notSet
 }
 
@@ -3925,60 +4597,82 @@ class Columns_Column_Widgets extends $pb.GeneratedMessage {
     return $result;
   }
   Columns_Column_Widgets._() : super();
-  factory Columns_Column_Widgets.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Columns_Column_Widgets.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Columns_Column_Widgets.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Columns_Column_Widgets.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Columns_Column_Widgets_Data> _Columns_Column_Widgets_DataByTag = {
-    1 : Columns_Column_Widgets_Data.textParagraph,
-    2 : Columns_Column_Widgets_Data.image,
-    3 : Columns_Column_Widgets_Data.decoratedText,
-    4 : Columns_Column_Widgets_Data.buttonList,
-    5 : Columns_Column_Widgets_Data.textInput,
-    6 : Columns_Column_Widgets_Data.selectionInput,
-    7 : Columns_Column_Widgets_Data.dateTimePicker,
-    0 : Columns_Column_Widgets_Data.notSet
+  static const $core.Map<$core.int, Columns_Column_Widgets_Data>
+      _Columns_Column_Widgets_DataByTag = {
+    1: Columns_Column_Widgets_Data.textParagraph,
+    2: Columns_Column_Widgets_Data.image,
+    3: Columns_Column_Widgets_Data.decoratedText,
+    4: Columns_Column_Widgets_Data.buttonList,
+    5: Columns_Column_Widgets_Data.textInput,
+    6: Columns_Column_Widgets_Data.selectionInput,
+    7: Columns_Column_Widgets_Data.dateTimePicker,
+    0: Columns_Column_Widgets_Data.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Columns.Column.Widgets', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Columns.Column.Widgets',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7])
-    ..aOM<TextParagraph>(1, _omitFieldNames ? '' : 'textParagraph', subBuilder: TextParagraph.create)
+    ..aOM<TextParagraph>(1, _omitFieldNames ? '' : 'textParagraph',
+        subBuilder: TextParagraph.create)
     ..aOM<Image>(2, _omitFieldNames ? '' : 'image', subBuilder: Image.create)
-    ..aOM<DecoratedText>(3, _omitFieldNames ? '' : 'decoratedText', subBuilder: DecoratedText.create)
-    ..aOM<ButtonList>(4, _omitFieldNames ? '' : 'buttonList', subBuilder: ButtonList.create)
-    ..aOM<TextInput>(5, _omitFieldNames ? '' : 'textInput', subBuilder: TextInput.create)
-    ..aOM<SelectionInput>(6, _omitFieldNames ? '' : 'selectionInput', subBuilder: SelectionInput.create)
-    ..aOM<DateTimePicker>(7, _omitFieldNames ? '' : 'dateTimePicker', subBuilder: DateTimePicker.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DecoratedText>(3, _omitFieldNames ? '' : 'decoratedText',
+        subBuilder: DecoratedText.create)
+    ..aOM<ButtonList>(4, _omitFieldNames ? '' : 'buttonList',
+        subBuilder: ButtonList.create)
+    ..aOM<TextInput>(5, _omitFieldNames ? '' : 'textInput',
+        subBuilder: TextInput.create)
+    ..aOM<SelectionInput>(6, _omitFieldNames ? '' : 'selectionInput',
+        subBuilder: SelectionInput.create)
+    ..aOM<DateTimePicker>(7, _omitFieldNames ? '' : 'dateTimePicker',
+        subBuilder: DateTimePicker.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Columns_Column_Widgets clone() => Columns_Column_Widgets()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Columns_Column_Widgets copyWith(void Function(Columns_Column_Widgets) updates) => super.copyWith((message) => updates(message as Columns_Column_Widgets)) as Columns_Column_Widgets;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Columns_Column_Widgets clone() =>
+      Columns_Column_Widgets()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Columns_Column_Widgets copyWith(
+          void Function(Columns_Column_Widgets) updates) =>
+      super.copyWith((message) => updates(message as Columns_Column_Widgets))
+          as Columns_Column_Widgets;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Columns_Column_Widgets create() => Columns_Column_Widgets._();
   Columns_Column_Widgets createEmptyInstance() => create();
-  static $pb.PbList<Columns_Column_Widgets> createRepeated() => $pb.PbList<Columns_Column_Widgets>();
+  static $pb.PbList<Columns_Column_Widgets> createRepeated() =>
+      $pb.PbList<Columns_Column_Widgets>();
   @$core.pragma('dart2js:noInline')
-  static Columns_Column_Widgets getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Columns_Column_Widgets>(create);
+  static Columns_Column_Widgets getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Columns_Column_Widgets>(create);
   static Columns_Column_Widgets? _defaultInstance;
 
-  Columns_Column_Widgets_Data whichData() => _Columns_Column_Widgets_DataByTag[$_whichOneof(0)]!;
+  Columns_Column_Widgets_Data whichData() =>
+      _Columns_Column_Widgets_DataByTag[$_whichOneof(0)]!;
   void clearData() => clearField($_whichOneof(0));
 
   /// [TextParagraph][google.apps.card.v1.TextParagraph] widget.
   @$pb.TagNumber(1)
   TextParagraph get textParagraph => $_getN(0);
   @$pb.TagNumber(1)
-  set textParagraph(TextParagraph v) { setField(1, v); }
+  set textParagraph(TextParagraph v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTextParagraph() => $_has(0);
   @$pb.TagNumber(1)
@@ -3990,7 +4684,10 @@ class Columns_Column_Widgets extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Image get image => $_getN(1);
   @$pb.TagNumber(2)
-  set image(Image v) { setField(2, v); }
+  set image(Image v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasImage() => $_has(1);
   @$pb.TagNumber(2)
@@ -4002,7 +4699,10 @@ class Columns_Column_Widgets extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DecoratedText get decoratedText => $_getN(2);
   @$pb.TagNumber(3)
-  set decoratedText(DecoratedText v) { setField(3, v); }
+  set decoratedText(DecoratedText v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDecoratedText() => $_has(2);
   @$pb.TagNumber(3)
@@ -4014,7 +4714,10 @@ class Columns_Column_Widgets extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ButtonList get buttonList => $_getN(3);
   @$pb.TagNumber(4)
-  set buttonList(ButtonList v) { setField(4, v); }
+  set buttonList(ButtonList v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasButtonList() => $_has(3);
   @$pb.TagNumber(4)
@@ -4026,7 +4729,10 @@ class Columns_Column_Widgets extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   TextInput get textInput => $_getN(4);
   @$pb.TagNumber(5)
-  set textInput(TextInput v) { setField(5, v); }
+  set textInput(TextInput v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTextInput() => $_has(4);
   @$pb.TagNumber(5)
@@ -4038,7 +4744,10 @@ class Columns_Column_Widgets extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   SelectionInput get selectionInput => $_getN(5);
   @$pb.TagNumber(6)
-  set selectionInput(SelectionInput v) { setField(6, v); }
+  set selectionInput(SelectionInput v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSelectionInput() => $_has(5);
   @$pb.TagNumber(6)
@@ -4050,7 +4759,10 @@ class Columns_Column_Widgets extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DateTimePicker get dateTimePicker => $_getN(6);
   @$pb.TagNumber(7)
-  set dateTimePicker(DateTimePicker v) { setField(7, v); }
+  set dateTimePicker(DateTimePicker v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDateTimePicker() => $_has(6);
   @$pb.TagNumber(7)
@@ -4088,43 +4800,72 @@ class Columns_Column extends $pb.GeneratedMessage {
     return $result;
   }
   Columns_Column._() : super();
-  factory Columns_Column.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Columns_Column.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Columns_Column.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Columns_Column.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Columns.Column', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..e<Columns_Column_HorizontalSizeStyle>(1, _omitFieldNames ? '' : 'horizontalSizeStyle', $pb.PbFieldType.OE, defaultOrMaker: Columns_Column_HorizontalSizeStyle.HORIZONTAL_SIZE_STYLE_UNSPECIFIED, valueOf: Columns_Column_HorizontalSizeStyle.valueOf, enumValues: Columns_Column_HorizontalSizeStyle.values)
-    ..e<Widget_HorizontalAlignment>(2, _omitFieldNames ? '' : 'horizontalAlignment', $pb.PbFieldType.OE, defaultOrMaker: Widget_HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED, valueOf: Widget_HorizontalAlignment.valueOf, enumValues: Widget_HorizontalAlignment.values)
-    ..e<Columns_Column_VerticalAlignment>(3, _omitFieldNames ? '' : 'verticalAlignment', $pb.PbFieldType.OE, defaultOrMaker: Columns_Column_VerticalAlignment.VERTICAL_ALIGNMENT_UNSPECIFIED, valueOf: Columns_Column_VerticalAlignment.valueOf, enumValues: Columns_Column_VerticalAlignment.values)
-    ..pc<Columns_Column_Widgets>(4, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: Columns_Column_Widgets.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Columns.Column',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..e<Columns_Column_HorizontalSizeStyle>(
+        1, _omitFieldNames ? '' : 'horizontalSizeStyle', $pb.PbFieldType.OE,
+        defaultOrMaker: Columns_Column_HorizontalSizeStyle
+            .HORIZONTAL_SIZE_STYLE_UNSPECIFIED,
+        valueOf: Columns_Column_HorizontalSizeStyle.valueOf,
+        enumValues: Columns_Column_HorizontalSizeStyle.values)
+    ..e<Widget_HorizontalAlignment>(
+        2, _omitFieldNames ? '' : 'horizontalAlignment', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Widget_HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED,
+        valueOf: Widget_HorizontalAlignment.valueOf,
+        enumValues: Widget_HorizontalAlignment.values)
+    ..e<Columns_Column_VerticalAlignment>(
+        3, _omitFieldNames ? '' : 'verticalAlignment', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Columns_Column_VerticalAlignment.VERTICAL_ALIGNMENT_UNSPECIFIED,
+        valueOf: Columns_Column_VerticalAlignment.valueOf,
+        enumValues: Columns_Column_VerticalAlignment.values)
+    ..pc<Columns_Column_Widgets>(
+        4, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM,
+        subBuilder: Columns_Column_Widgets.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Columns_Column clone() => Columns_Column()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Columns_Column copyWith(void Function(Columns_Column) updates) => super.copyWith((message) => updates(message as Columns_Column)) as Columns_Column;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Columns_Column copyWith(void Function(Columns_Column) updates) =>
+      super.copyWith((message) => updates(message as Columns_Column))
+          as Columns_Column;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Columns_Column create() => Columns_Column._();
   Columns_Column createEmptyInstance() => create();
-  static $pb.PbList<Columns_Column> createRepeated() => $pb.PbList<Columns_Column>();
+  static $pb.PbList<Columns_Column> createRepeated() =>
+      $pb.PbList<Columns_Column>();
   @$core.pragma('dart2js:noInline')
-  static Columns_Column getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Columns_Column>(create);
+  static Columns_Column getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Columns_Column>(create);
   static Columns_Column? _defaultInstance;
 
   /// Specifies how a column fills the width of the card.
   @$pb.TagNumber(1)
   Columns_Column_HorizontalSizeStyle get horizontalSizeStyle => $_getN(0);
   @$pb.TagNumber(1)
-  set horizontalSizeStyle(Columns_Column_HorizontalSizeStyle v) { setField(1, v); }
+  set horizontalSizeStyle(Columns_Column_HorizontalSizeStyle v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHorizontalSizeStyle() => $_has(0);
   @$pb.TagNumber(1)
@@ -4135,7 +4876,10 @@ class Columns_Column extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Widget_HorizontalAlignment get horizontalAlignment => $_getN(1);
   @$pb.TagNumber(2)
-  set horizontalAlignment(Widget_HorizontalAlignment v) { setField(2, v); }
+  set horizontalAlignment(Widget_HorizontalAlignment v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHorizontalAlignment() => $_has(1);
   @$pb.TagNumber(2)
@@ -4146,7 +4890,10 @@ class Columns_Column extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Columns_Column_VerticalAlignment get verticalAlignment => $_getN(2);
   @$pb.TagNumber(3)
-  set verticalAlignment(Columns_Column_VerticalAlignment v) { setField(3, v); }
+  set verticalAlignment(Columns_Column_VerticalAlignment v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVerticalAlignment() => $_has(2);
   @$pb.TagNumber(3)
@@ -4199,24 +4946,32 @@ class Columns extends $pb.GeneratedMessage {
     return $result;
   }
   Columns._() : super();
-  factory Columns.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Columns.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Columns.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Columns.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Columns', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
-    ..pc<Columns_Column>(2, _omitFieldNames ? '' : 'columnItems', $pb.PbFieldType.PM, subBuilder: Columns_Column.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Columns',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
+    ..pc<Columns_Column>(
+        2, _omitFieldNames ? '' : 'columnItems', $pb.PbFieldType.PM,
+        subBuilder: Columns_Column.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Columns clone() => Columns()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Columns copyWith(void Function(Columns) updates) => super.copyWith((message) => updates(message as Columns)) as Columns;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Columns copyWith(void Function(Columns) updates) =>
+      super.copyWith((message) => updates(message as Columns)) as Columns;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4225,7 +4980,8 @@ class Columns extends $pb.GeneratedMessage {
   Columns createEmptyInstance() => create();
   static $pb.PbList<Columns> createRepeated() => $pb.PbList<Columns>();
   @$core.pragma('dart2js:noInline')
-  static Columns getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Columns>(create);
+  static Columns getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Columns>(create);
   static Columns? _defaultInstance;
 
   /// An array of columns. You can include up to 2 columns in a card or dialog.
@@ -4233,13 +4989,7 @@ class Columns extends $pb.GeneratedMessage {
   $core.List<Columns_Column> get columnItems => $_getList(0);
 }
 
-enum OnClick_Data {
-  action, 
-  openLink, 
-  openDynamicLinkAction, 
-  card, 
-  notSet
-}
+enum OnClick_Data { action, openLink, openDynamicLinkAction, card, notSet }
 
 ///  Represents how to respond when users click an interactive element on
 ///  a card, such as a button.
@@ -4269,35 +5019,43 @@ class OnClick extends $pb.GeneratedMessage {
     return $result;
   }
   OnClick._() : super();
-  factory OnClick.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OnClick.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OnClick.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OnClick.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, OnClick_Data> _OnClick_DataByTag = {
-    1 : OnClick_Data.action,
-    2 : OnClick_Data.openLink,
-    3 : OnClick_Data.openDynamicLinkAction,
-    4 : OnClick_Data.card,
-    0 : OnClick_Data.notSet
+    1: OnClick_Data.action,
+    2: OnClick_Data.openLink,
+    3: OnClick_Data.openDynamicLinkAction,
+    4: OnClick_Data.card,
+    0: OnClick_Data.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OnClick', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OnClick',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4])
     ..aOM<Action>(1, _omitFieldNames ? '' : 'action', subBuilder: Action.create)
-    ..aOM<OpenLink>(2, _omitFieldNames ? '' : 'openLink', subBuilder: OpenLink.create)
-    ..aOM<Action>(3, _omitFieldNames ? '' : 'openDynamicLinkAction', subBuilder: Action.create)
+    ..aOM<OpenLink>(2, _omitFieldNames ? '' : 'openLink',
+        subBuilder: OpenLink.create)
+    ..aOM<Action>(3, _omitFieldNames ? '' : 'openDynamicLinkAction',
+        subBuilder: Action.create)
     ..aOM<Card>(4, _omitFieldNames ? '' : 'card', subBuilder: Card.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OnClick clone() => OnClick()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OnClick copyWith(void Function(OnClick) updates) => super.copyWith((message) => updates(message as OnClick)) as OnClick;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OnClick copyWith(void Function(OnClick) updates) =>
+      super.copyWith((message) => updates(message as OnClick)) as OnClick;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4306,7 +5064,8 @@ class OnClick extends $pb.GeneratedMessage {
   OnClick createEmptyInstance() => create();
   static $pb.PbList<OnClick> createRepeated() => $pb.PbList<OnClick>();
   @$core.pragma('dart2js:noInline')
-  static OnClick getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OnClick>(create);
+  static OnClick getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OnClick>(create);
   static OnClick? _defaultInstance;
 
   OnClick_Data whichData() => _OnClick_DataByTag[$_whichOneof(0)]!;
@@ -4316,7 +5075,10 @@ class OnClick extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Action get action => $_getN(0);
   @$pb.TagNumber(1)
-  set action(Action v) { setField(1, v); }
+  set action(Action v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAction() => $_has(0);
   @$pb.TagNumber(1)
@@ -4328,7 +5090,10 @@ class OnClick extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OpenLink get openLink => $_getN(1);
   @$pb.TagNumber(2)
-  set openLink(OpenLink v) { setField(2, v); }
+  set openLink(OpenLink v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOpenLink() => $_has(1);
   @$pb.TagNumber(2)
@@ -4346,7 +5111,10 @@ class OnClick extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Action get openDynamicLinkAction => $_getN(2);
   @$pb.TagNumber(3)
-  set openDynamicLinkAction(Action v) { setField(3, v); }
+  set openDynamicLinkAction(Action v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOpenDynamicLinkAction() => $_has(2);
   @$pb.TagNumber(3)
@@ -4361,7 +5129,10 @@ class OnClick extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Card get card => $_getN(3);
   @$pb.TagNumber(4)
-  set card(Card v) { setField(4, v); }
+  set card(Card v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCard() => $_has(3);
   @$pb.TagNumber(4)
@@ -4393,26 +5164,39 @@ class OpenLink extends $pb.GeneratedMessage {
     return $result;
   }
   OpenLink._() : super();
-  factory OpenLink.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OpenLink.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OpenLink.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OpenLink.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OpenLink', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OpenLink',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
-    ..e<OpenLink_OpenAs>(2, _omitFieldNames ? '' : 'openAs', $pb.PbFieldType.OE, defaultOrMaker: OpenLink_OpenAs.FULL_SIZE, valueOf: OpenLink_OpenAs.valueOf, enumValues: OpenLink_OpenAs.values)
-    ..e<OpenLink_OnClose>(3, _omitFieldNames ? '' : 'onClose', $pb.PbFieldType.OE, defaultOrMaker: OpenLink_OnClose.NOTHING, valueOf: OpenLink_OnClose.valueOf, enumValues: OpenLink_OnClose.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<OpenLink_OpenAs>(2, _omitFieldNames ? '' : 'openAs', $pb.PbFieldType.OE,
+        defaultOrMaker: OpenLink_OpenAs.FULL_SIZE,
+        valueOf: OpenLink_OpenAs.valueOf,
+        enumValues: OpenLink_OpenAs.values)
+    ..e<OpenLink_OnClose>(
+        3, _omitFieldNames ? '' : 'onClose', $pb.PbFieldType.OE,
+        defaultOrMaker: OpenLink_OnClose.NOTHING,
+        valueOf: OpenLink_OnClose.valueOf,
+        enumValues: OpenLink_OnClose.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OpenLink clone() => OpenLink()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OpenLink copyWith(void Function(OpenLink) updates) => super.copyWith((message) => updates(message as OpenLink)) as OpenLink;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OpenLink copyWith(void Function(OpenLink) updates) =>
+      super.copyWith((message) => updates(message as OpenLink)) as OpenLink;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4421,14 +5205,18 @@ class OpenLink extends $pb.GeneratedMessage {
   OpenLink createEmptyInstance() => create();
   static $pb.PbList<OpenLink> createRepeated() => $pb.PbList<OpenLink>();
   @$core.pragma('dart2js:noInline')
-  static OpenLink getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OpenLink>(create);
+  static OpenLink getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OpenLink>(create);
   static OpenLink? _defaultInstance;
 
   /// The URL to open.
   @$pb.TagNumber(1)
   $core.String get url => $_getSZ(0);
   @$pb.TagNumber(1)
-  set url($core.String v) { $_setString(0, v); }
+  set url($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -4441,7 +5229,10 @@ class OpenLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OpenLink_OpenAs get openAs => $_getN(1);
   @$pb.TagNumber(2)
-  set openAs(OpenLink_OpenAs v) { setField(2, v); }
+  set openAs(OpenLink_OpenAs v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOpenAs() => $_has(1);
   @$pb.TagNumber(2)
@@ -4455,7 +5246,10 @@ class OpenLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   OpenLink_OnClose get onClose => $_getN(2);
   @$pb.TagNumber(3)
-  set onClose(OpenLink_OnClose v) { setField(3, v); }
+  set onClose(OpenLink_OnClose v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOnClose() => $_has(2);
   @$pb.TagNumber(3)
@@ -4487,41 +5281,55 @@ class Action_ActionParameter extends $pb.GeneratedMessage {
     return $result;
   }
   Action_ActionParameter._() : super();
-  factory Action_ActionParameter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Action_ActionParameter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Action_ActionParameter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Action_ActionParameter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Action.ActionParameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Action.ActionParameter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Action_ActionParameter clone() => Action_ActionParameter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Action_ActionParameter copyWith(void Function(Action_ActionParameter) updates) => super.copyWith((message) => updates(message as Action_ActionParameter)) as Action_ActionParameter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Action_ActionParameter clone() =>
+      Action_ActionParameter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Action_ActionParameter copyWith(
+          void Function(Action_ActionParameter) updates) =>
+      super.copyWith((message) => updates(message as Action_ActionParameter))
+          as Action_ActionParameter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Action_ActionParameter create() => Action_ActionParameter._();
   Action_ActionParameter createEmptyInstance() => create();
-  static $pb.PbList<Action_ActionParameter> createRepeated() => $pb.PbList<Action_ActionParameter>();
+  static $pb.PbList<Action_ActionParameter> createRepeated() =>
+      $pb.PbList<Action_ActionParameter>();
   @$core.pragma('dart2js:noInline')
-  static Action_ActionParameter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Action_ActionParameter>(create);
+  static Action_ActionParameter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Action_ActionParameter>(create);
   static Action_ActionParameter? _defaultInstance;
 
   /// The name of the parameter for the action script.
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) { $_setString(0, v); }
+  set key($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -4531,7 +5339,10 @@ class Action_ActionParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) { $_setString(1, v); }
+  set value($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -4571,28 +5382,44 @@ class Action extends $pb.GeneratedMessage {
     return $result;
   }
   Action._() : super();
-  factory Action.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Action.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Action.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Action.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Action', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Action',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.card.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'function')
-    ..pc<Action_ActionParameter>(2, _omitFieldNames ? '' : 'parameters', $pb.PbFieldType.PM, subBuilder: Action_ActionParameter.create)
-    ..e<Action_LoadIndicator>(3, _omitFieldNames ? '' : 'loadIndicator', $pb.PbFieldType.OE, defaultOrMaker: Action_LoadIndicator.SPINNER, valueOf: Action_LoadIndicator.valueOf, enumValues: Action_LoadIndicator.values)
+    ..pc<Action_ActionParameter>(
+        2, _omitFieldNames ? '' : 'parameters', $pb.PbFieldType.PM,
+        subBuilder: Action_ActionParameter.create)
+    ..e<Action_LoadIndicator>(
+        3, _omitFieldNames ? '' : 'loadIndicator', $pb.PbFieldType.OE,
+        defaultOrMaker: Action_LoadIndicator.SPINNER,
+        valueOf: Action_LoadIndicator.valueOf,
+        enumValues: Action_LoadIndicator.values)
     ..aOB(4, _omitFieldNames ? '' : 'persistValues')
-    ..e<Action_Interaction>(5, _omitFieldNames ? '' : 'interaction', $pb.PbFieldType.OE, defaultOrMaker: Action_Interaction.INTERACTION_UNSPECIFIED, valueOf: Action_Interaction.valueOf, enumValues: Action_Interaction.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<Action_Interaction>(
+        5, _omitFieldNames ? '' : 'interaction', $pb.PbFieldType.OE,
+        defaultOrMaker: Action_Interaction.INTERACTION_UNSPECIFIED,
+        valueOf: Action_Interaction.valueOf,
+        enumValues: Action_Interaction.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Action clone() => Action()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Action copyWith(void Function(Action) updates) => super.copyWith((message) => updates(message as Action)) as Action;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Action copyWith(void Function(Action) updates) =>
+      super.copyWith((message) => updates(message as Action)) as Action;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4601,7 +5428,8 @@ class Action extends $pb.GeneratedMessage {
   Action createEmptyInstance() => create();
   static $pb.PbList<Action> createRepeated() => $pb.PbList<Action>();
   @$core.pragma('dart2js:noInline')
-  static Action getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Action>(create);
+  static Action getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Action>(create);
   static Action? _defaultInstance;
 
   ///  A custom function to invoke when the containing element is
@@ -4612,7 +5440,10 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get function => $_getSZ(0);
   @$pb.TagNumber(1)
-  set function($core.String v) { $_setString(0, v); }
+  set function($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFunction() => $_has(0);
   @$pb.TagNumber(1)
@@ -4627,7 +5458,10 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Action_LoadIndicator get loadIndicator => $_getN(2);
   @$pb.TagNumber(3)
-  set loadIndicator(Action_LoadIndicator v) { setField(3, v); }
+  set loadIndicator(Action_LoadIndicator v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLoadIndicator() => $_has(2);
   @$pb.TagNumber(3)
@@ -4655,7 +5489,10 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get persistValues => $_getBF(3);
   @$pb.TagNumber(4)
-  set persistValues($core.bool v) { $_setBool(3, v); }
+  set persistValues($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPersistValues() => $_has(3);
   @$pb.TagNumber(4)
@@ -4680,13 +5517,16 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Action_Interaction get interaction => $_getN(4);
   @$pb.TagNumber(5)
-  set interaction(Action_Interaction v) { setField(5, v); }
+  set interaction(Action_Interaction v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasInteraction() => $_has(4);
   @$pb.TagNumber(5)
   void clearInteraction() => clearField(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

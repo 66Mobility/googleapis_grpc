@@ -56,7 +56,14 @@ final $typed_data.Uint8List migrationStepDescriptor = $convert.base64Decode(
 const MigrationStateEvent$json = {
   '1': 'MigrationStateEvent',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.MigrationState', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.MigrationState',
+      '10': 'state'
+    },
   ],
 };
 
@@ -69,11 +76,39 @@ final $typed_data.Uint8List migrationStateEventDescriptor = $convert.base64Decod
 const MigrationProgressEvent$json = {
   '1': 'MigrationProgressEvent',
   '2': [
-    {'1': 'step', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.MigrationStep', '10': 'step'},
-    {'1': 'prepare_step_details', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.MigrationProgressEvent.PrepareStepDetails', '9': 0, '10': 'prepareStepDetails'},
-    {'1': 'redirect_writes_step_details', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.MigrationProgressEvent.RedirectWritesStepDetails', '9': 0, '10': 'redirectWritesStepDetails'},
+    {
+      '1': 'step',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.MigrationStep',
+      '10': 'step'
+    },
+    {
+      '1': 'prepare_step_details',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.datastore.admin.v1.MigrationProgressEvent.PrepareStepDetails',
+      '9': 0,
+      '10': 'prepareStepDetails'
+    },
+    {
+      '1': 'redirect_writes_step_details',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.datastore.admin.v1.MigrationProgressEvent.RedirectWritesStepDetails',
+      '9': 0,
+      '10': 'redirectWritesStepDetails'
+    },
   ],
-  '3': [MigrationProgressEvent_PrepareStepDetails$json, MigrationProgressEvent_RedirectWritesStepDetails$json],
+  '3': [
+    MigrationProgressEvent_PrepareStepDetails$json,
+    MigrationProgressEvent_RedirectWritesStepDetails$json
+  ],
   '4': [MigrationProgressEvent_ConcurrencyMode$json],
   '8': [
     {'1': 'step_details'},
@@ -84,7 +119,14 @@ const MigrationProgressEvent$json = {
 const MigrationProgressEvent_PrepareStepDetails$json = {
   '1': 'PrepareStepDetails',
   '2': [
-    {'1': 'concurrency_mode', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.MigrationProgressEvent.ConcurrencyMode', '10': 'concurrencyMode'},
+    {
+      '1': 'concurrency_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.MigrationProgressEvent.ConcurrencyMode',
+      '10': 'concurrencyMode'
+    },
   ],
 };
 
@@ -92,7 +134,14 @@ const MigrationProgressEvent_PrepareStepDetails$json = {
 const MigrationProgressEvent_RedirectWritesStepDetails$json = {
   '1': 'RedirectWritesStepDetails',
   '2': [
-    {'1': 'concurrency_mode', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.MigrationProgressEvent.ConcurrencyMode', '10': 'concurrencyMode'},
+    {
+      '1': 'concurrency_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.MigrationProgressEvent.ConcurrencyMode',
+      '10': 'concurrencyMode'
+    },
   ],
 };
 
@@ -123,4 +172,3 @@ final $typed_data.Uint8List migrationProgressEventDescriptor = $convert.base64De
     '9jb25jdXJyZW5jeU1vZGUidwoPQ29uY3VycmVuY3lNb2RlEiAKHENPTkNVUlJFTkNZX01PREVf'
     'VU5TUEVDSUZJRUQQABIPCgtQRVNTSU1JU1RJQxABEg4KCk9QVElNSVNUSUMQAhIhCh1PUFRJTU'
     'lTVElDX1dJVEhfRU5USVRZX0dST1VQUxADQg4KDHN0ZXBfZGV0YWlscw==');
-

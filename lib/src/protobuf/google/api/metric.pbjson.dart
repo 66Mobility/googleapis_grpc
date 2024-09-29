@@ -19,15 +19,56 @@ const MetricDescriptor$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'type', '3': 8, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.api.LabelDescriptor', '10': 'labels'},
-    {'1': 'metric_kind', '3': 3, '4': 1, '5': 14, '6': '.google.api.MetricDescriptor.MetricKind', '10': 'metricKind'},
-    {'1': 'value_type', '3': 4, '4': 1, '5': 14, '6': '.google.api.MetricDescriptor.ValueType', '10': 'valueType'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.LabelDescriptor',
+      '10': 'labels'
+    },
+    {
+      '1': 'metric_kind',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.MetricDescriptor.MetricKind',
+      '10': 'metricKind'
+    },
+    {
+      '1': 'value_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.MetricDescriptor.ValueType',
+      '10': 'valueType'
+    },
     {'1': 'unit', '3': 5, '4': 1, '5': 9, '10': 'unit'},
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
     {'1': 'display_name', '3': 7, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'metadata', '3': 10, '4': 1, '5': 11, '6': '.google.api.MetricDescriptor.MetricDescriptorMetadata', '10': 'metadata'},
-    {'1': 'launch_stage', '3': 12, '4': 1, '5': 14, '6': '.google.api.LaunchStage', '10': 'launchStage'},
-    {'1': 'monitored_resource_types', '3': 13, '4': 3, '5': 9, '10': 'monitoredResourceTypes'},
+    {
+      '1': 'metadata',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MetricDescriptor.MetricDescriptorMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'launch_stage',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.LaunchStage',
+      '10': 'launchStage'
+    },
+    {
+      '1': 'monitored_resource_types',
+      '3': 13,
+      '4': 3,
+      '5': 9,
+      '10': 'monitoredResourceTypes'
+    },
   ],
   '3': [MetricDescriptor_MetricDescriptorMetadata$json],
   '4': [MetricDescriptor_MetricKind$json, MetricDescriptor_ValueType$json],
@@ -46,8 +87,22 @@ const MetricDescriptor_MetricDescriptorMetadata$json = {
       '8': {'3': true},
       '10': 'launchStage',
     },
-    {'1': 'sample_period', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'samplePeriod'},
-    {'1': 'ingest_delay', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'ingestDelay'},
+    {
+      '1': 'sample_period',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'samplePeriod'
+    },
+    {
+      '1': 'ingest_delay',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'ingestDelay'
+    },
   ],
 };
 
@@ -102,7 +157,14 @@ const Metric$json = {
   '1': 'Metric',
   '2': [
     {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.api.Metric.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Metric.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [Metric_LabelsEntry$json],
 };
@@ -122,4 +184,3 @@ final $typed_data.Uint8List metricDescriptor = $convert.base64Decode(
     'CgZNZXRyaWMSEgoEdHlwZRgDIAEoCVIEdHlwZRI2CgZsYWJlbHMYAiADKAsyHi5nb29nbGUuYX'
     'BpLk1ldHJpYy5MYWJlbHNFbnRyeVIGbGFiZWxzGjkKC0xhYmVsc0VudHJ5EhAKA2tleRgBIAEo'
     'CVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAE=');
-

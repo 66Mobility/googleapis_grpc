@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const CreateFileRequest$json = {
   '1': 'CreateFileRequest',
   '2': [
-    {'1': 'file', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.File', '8': {}, '10': 'file'},
+    {
+      '1': 'file',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.File',
+      '8': {},
+      '10': 'file'
+    },
   ],
 };
 
@@ -30,7 +38,14 @@ final $typed_data.Uint8List createFileRequestDescriptor = $convert.base64Decode(
 const CreateFileResponse$json = {
   '1': 'CreateFileResponse',
   '2': [
-    {'1': 'file', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.File', '10': 'file'},
+    {
+      '1': 'file',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.File',
+      '10': 'file'
+    },
   ],
 };
 
@@ -57,7 +72,14 @@ final $typed_data.Uint8List listFilesRequestDescriptor = $convert.base64Decode(
 const ListFilesResponse$json = {
   '1': 'ListFilesResponse',
   '2': [
-    {'1': 'files', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.File', '10': 'files'},
+    {
+      '1': 'files',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.File',
+      '10': 'files'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -93,4 +115,3 @@ const DeleteFileRequest$json = {
 final $typed_data.Uint8List deleteFileRequestDescriptor = $convert.base64Decode(
     'ChFEZWxldGVGaWxlUmVxdWVzdBJCCgRuYW1lGAEgASgJQi7gQQL6QSgKJmdlbmVyYXRpdmVsYW'
     '5ndWFnZS5nb29nbGVhcGlzLmNvbS9GaWxlUgRuYW1l');
-

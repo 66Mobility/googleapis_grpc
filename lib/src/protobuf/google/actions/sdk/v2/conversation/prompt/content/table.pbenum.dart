@@ -15,23 +15,30 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The alignment of the content within the cell.
 class TableColumn_HorizontalAlignment extends $pb.ProtobufEnum {
-  static const TableColumn_HorizontalAlignment UNSPECIFIED = TableColumn_HorizontalAlignment._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
-  static const TableColumn_HorizontalAlignment LEADING = TableColumn_HorizontalAlignment._(1, _omitEnumNames ? '' : 'LEADING');
-  static const TableColumn_HorizontalAlignment CENTER = TableColumn_HorizontalAlignment._(2, _omitEnumNames ? '' : 'CENTER');
-  static const TableColumn_HorizontalAlignment TRAILING = TableColumn_HorizontalAlignment._(3, _omitEnumNames ? '' : 'TRAILING');
+  static const TableColumn_HorizontalAlignment UNSPECIFIED =
+      TableColumn_HorizontalAlignment._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
+  static const TableColumn_HorizontalAlignment LEADING =
+      TableColumn_HorizontalAlignment._(1, _omitEnumNames ? '' : 'LEADING');
+  static const TableColumn_HorizontalAlignment CENTER =
+      TableColumn_HorizontalAlignment._(2, _omitEnumNames ? '' : 'CENTER');
+  static const TableColumn_HorizontalAlignment TRAILING =
+      TableColumn_HorizontalAlignment._(3, _omitEnumNames ? '' : 'TRAILING');
 
-  static const $core.List<TableColumn_HorizontalAlignment> values = <TableColumn_HorizontalAlignment> [
+  static const $core.List<TableColumn_HorizontalAlignment> values =
+      <TableColumn_HorizontalAlignment>[
     UNSPECIFIED,
     LEADING,
     CENTER,
     TRAILING,
   ];
 
-  static final $core.Map<$core.int, TableColumn_HorizontalAlignment> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static TableColumn_HorizontalAlignment? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, TableColumn_HorizontalAlignment> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static TableColumn_HorizontalAlignment? valueOf($core.int value) =>
+      _byValue[value];
 
-  const TableColumn_HorizontalAlignment._($core.int v, $core.String n) : super(v, n);
+  const TableColumn_HorizontalAlignment._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

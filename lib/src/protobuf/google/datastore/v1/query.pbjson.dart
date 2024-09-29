@@ -17,10 +17,31 @@ import 'dart:typed_data' as $typed_data;
 const EntityResult$json = {
   '1': 'EntityResult',
   '2': [
-    {'1': 'entity', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.Entity', '10': 'entity'},
+    {
+      '1': 'entity',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Entity',
+      '10': 'entity'
+    },
     {'1': 'version', '3': 4, '4': 1, '5': 3, '10': 'version'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'cursor', '3': 3, '4': 1, '5': 12, '10': 'cursor'},
   ],
   '4': [EntityResult_ResultType$json],
@@ -50,15 +71,57 @@ final $typed_data.Uint8List entityResultDescriptor = $convert.base64Decode(
 const Query$json = {
   '1': 'Query',
   '2': [
-    {'1': 'projection', '3': 2, '4': 3, '5': 11, '6': '.google.datastore.v1.Projection', '10': 'projection'},
-    {'1': 'kind', '3': 3, '4': 3, '5': 11, '6': '.google.datastore.v1.KindExpression', '10': 'kind'},
-    {'1': 'filter', '3': 4, '4': 1, '5': 11, '6': '.google.datastore.v1.Filter', '10': 'filter'},
-    {'1': 'order', '3': 5, '4': 3, '5': 11, '6': '.google.datastore.v1.PropertyOrder', '10': 'order'},
-    {'1': 'distinct_on', '3': 6, '4': 3, '5': 11, '6': '.google.datastore.v1.PropertyReference', '10': 'distinctOn'},
+    {
+      '1': 'projection',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Projection',
+      '10': 'projection'
+    },
+    {
+      '1': 'kind',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.KindExpression',
+      '10': 'kind'
+    },
+    {
+      '1': 'filter',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Filter',
+      '10': 'filter'
+    },
+    {
+      '1': 'order',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyOrder',
+      '10': 'order'
+    },
+    {
+      '1': 'distinct_on',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyReference',
+      '10': 'distinctOn'
+    },
     {'1': 'start_cursor', '3': 7, '4': 1, '5': 12, '10': 'startCursor'},
     {'1': 'end_cursor', '3': 8, '4': 1, '5': 12, '10': 'endCursor'},
     {'1': 'offset', '3': 10, '4': 1, '5': 5, '10': 'offset'},
-    {'1': 'limit', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'limit'},
+    {
+      '1': 'limit',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'limit'
+    },
   ],
 };
 
@@ -78,8 +141,24 @@ final $typed_data.Uint8List queryDescriptor = $convert.base64Decode(
 const AggregationQuery$json = {
   '1': 'AggregationQuery',
   '2': [
-    {'1': 'nested_query', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.Query', '9': 0, '10': 'nestedQuery'},
-    {'1': 'aggregations', '3': 3, '4': 3, '5': 11, '6': '.google.datastore.v1.AggregationQuery.Aggregation', '8': {}, '10': 'aggregations'},
+    {
+      '1': 'nested_query',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Query',
+      '9': 0,
+      '10': 'nestedQuery'
+    },
+    {
+      '1': 'aggregations',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationQuery.Aggregation',
+      '8': {},
+      '10': 'aggregations'
+    },
   ],
   '3': [AggregationQuery_Aggregation$json],
   '8': [
@@ -91,12 +170,40 @@ const AggregationQuery$json = {
 const AggregationQuery_Aggregation$json = {
   '1': 'Aggregation',
   '2': [
-    {'1': 'count', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.AggregationQuery.Aggregation.Count', '9': 0, '10': 'count'},
-    {'1': 'sum', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.AggregationQuery.Aggregation.Sum', '9': 0, '10': 'sum'},
-    {'1': 'avg', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.v1.AggregationQuery.Aggregation.Avg', '9': 0, '10': 'avg'},
+    {
+      '1': 'count',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationQuery.Aggregation.Count',
+      '9': 0,
+      '10': 'count'
+    },
+    {
+      '1': 'sum',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationQuery.Aggregation.Sum',
+      '9': 0,
+      '10': 'sum'
+    },
+    {
+      '1': 'avg',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationQuery.Aggregation.Avg',
+      '9': 0,
+      '10': 'avg'
+    },
     {'1': 'alias', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'alias'},
   ],
-  '3': [AggregationQuery_Aggregation_Count$json, AggregationQuery_Aggregation_Sum$json, AggregationQuery_Aggregation_Avg$json],
+  '3': [
+    AggregationQuery_Aggregation_Count$json,
+    AggregationQuery_Aggregation_Sum$json,
+    AggregationQuery_Aggregation_Avg$json
+  ],
   '8': [
     {'1': 'operator'},
   ],
@@ -106,7 +213,15 @@ const AggregationQuery_Aggregation$json = {
 const AggregationQuery_Aggregation_Count$json = {
   '1': 'Count',
   '2': [
-    {'1': 'up_to', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '8': {}, '10': 'upTo'},
+    {
+      '1': 'up_to',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '8': {},
+      '10': 'upTo'
+    },
   ],
 };
 
@@ -114,7 +229,14 @@ const AggregationQuery_Aggregation_Count$json = {
 const AggregationQuery_Aggregation_Sum$json = {
   '1': 'Sum',
   '2': [
-    {'1': 'property', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyReference', '10': 'property'},
+    {
+      '1': 'property',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyReference',
+      '10': 'property'
+    },
   ],
 };
 
@@ -122,7 +244,14 @@ const AggregationQuery_Aggregation_Sum$json = {
 const AggregationQuery_Aggregation_Avg$json = {
   '1': 'Avg',
   '2': [
-    {'1': 'property', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyReference', '10': 'property'},
+    {
+      '1': 'property',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyReference',
+      '10': 'property'
+    },
   ],
 };
 
@@ -151,8 +280,8 @@ const KindExpression$json = {
 };
 
 /// Descriptor for `KindExpression`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List kindExpressionDescriptor = $convert.base64Decode(
-    'Cg5LaW5kRXhwcmVzc2lvbhISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List kindExpressionDescriptor =
+    $convert.base64Decode('Cg5LaW5kRXhwcmVzc2lvbhISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use propertyReferenceDescriptor instead')
 const PropertyReference$json = {
@@ -163,14 +292,21 @@ const PropertyReference$json = {
 };
 
 /// Descriptor for `PropertyReference`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List propertyReferenceDescriptor = $convert.base64Decode(
-    'ChFQcm9wZXJ0eVJlZmVyZW5jZRISCgRuYW1lGAIgASgJUgRuYW1l');
+final $typed_data.Uint8List propertyReferenceDescriptor = $convert
+    .base64Decode('ChFQcm9wZXJ0eVJlZmVyZW5jZRISCgRuYW1lGAIgASgJUgRuYW1l');
 
 @$core.Deprecated('Use projectionDescriptor instead')
 const Projection$json = {
   '1': 'Projection',
   '2': [
-    {'1': 'property', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyReference', '10': 'property'},
+    {
+      '1': 'property',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyReference',
+      '10': 'property'
+    },
   ],
 };
 
@@ -183,8 +319,22 @@ final $typed_data.Uint8List projectionDescriptor = $convert.base64Decode(
 const PropertyOrder$json = {
   '1': 'PropertyOrder',
   '2': [
-    {'1': 'property', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyReference', '10': 'property'},
-    {'1': 'direction', '3': 2, '4': 1, '5': 14, '6': '.google.datastore.v1.PropertyOrder.Direction', '10': 'direction'},
+    {
+      '1': 'property',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyReference',
+      '10': 'property'
+    },
+    {
+      '1': 'direction',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.PropertyOrder.Direction',
+      '10': 'direction'
+    },
   ],
   '4': [PropertyOrder_Direction$json],
 };
@@ -211,8 +361,24 @@ final $typed_data.Uint8List propertyOrderDescriptor = $convert.base64Decode(
 const Filter$json = {
   '1': 'Filter',
   '2': [
-    {'1': 'composite_filter', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.CompositeFilter', '9': 0, '10': 'compositeFilter'},
-    {'1': 'property_filter', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyFilter', '9': 0, '10': 'propertyFilter'},
+    {
+      '1': 'composite_filter',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.CompositeFilter',
+      '9': 0,
+      '10': 'compositeFilter'
+    },
+    {
+      '1': 'property_filter',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyFilter',
+      '9': 0,
+      '10': 'propertyFilter'
+    },
   ],
   '8': [
     {'1': 'filter_type'},
@@ -230,8 +396,22 @@ final $typed_data.Uint8List filterDescriptor = $convert.base64Decode(
 const CompositeFilter$json = {
   '1': 'CompositeFilter',
   '2': [
-    {'1': 'op', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.v1.CompositeFilter.Operator', '10': 'op'},
-    {'1': 'filters', '3': 2, '4': 3, '5': 11, '6': '.google.datastore.v1.Filter', '10': 'filters'},
+    {
+      '1': 'op',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.CompositeFilter.Operator',
+      '10': 'op'
+    },
+    {
+      '1': 'filters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Filter',
+      '10': 'filters'
+    },
   ],
   '4': [CompositeFilter_Operator$json],
 };
@@ -257,9 +437,30 @@ final $typed_data.Uint8List compositeFilterDescriptor = $convert.base64Decode(
 const PropertyFilter$json = {
   '1': 'PropertyFilter',
   '2': [
-    {'1': 'property', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyReference', '10': 'property'},
-    {'1': 'op', '3': 2, '4': 1, '5': 14, '6': '.google.datastore.v1.PropertyFilter.Operator', '10': 'op'},
-    {'1': 'value', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.v1.Value', '10': 'value'},
+    {
+      '1': 'property',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyReference',
+      '10': 'property'
+    },
+    {
+      '1': 'op',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.PropertyFilter.Operator',
+      '10': 'op'
+    },
+    {
+      '1': 'value',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '10': 'value'
+    },
   ],
   '4': [PropertyFilter_Operator$json],
 };
@@ -297,8 +498,22 @@ const GqlQuery$json = {
   '2': [
     {'1': 'query_string', '3': 1, '4': 1, '5': 9, '10': 'queryString'},
     {'1': 'allow_literals', '3': 2, '4': 1, '5': 8, '10': 'allowLiterals'},
-    {'1': 'named_bindings', '3': 5, '4': 3, '5': 11, '6': '.google.datastore.v1.GqlQuery.NamedBindingsEntry', '10': 'namedBindings'},
-    {'1': 'positional_bindings', '3': 4, '4': 3, '5': 11, '6': '.google.datastore.v1.GqlQueryParameter', '10': 'positionalBindings'},
+    {
+      '1': 'named_bindings',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.GqlQuery.NamedBindingsEntry',
+      '10': 'namedBindings'
+    },
+    {
+      '1': 'positional_bindings',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.GqlQueryParameter',
+      '10': 'positionalBindings'
+    },
   ],
   '3': [GqlQuery_NamedBindingsEntry$json],
 };
@@ -308,7 +523,14 @@ const GqlQuery_NamedBindingsEntry$json = {
   '1': 'NamedBindingsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.GqlQueryParameter', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.GqlQueryParameter',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -327,7 +549,15 @@ final $typed_data.Uint8List gqlQueryDescriptor = $convert.base64Decode(
 const GqlQueryParameter$json = {
   '1': 'GqlQueryParameter',
   '2': [
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.Value', '9': 0, '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '9': 0,
+      '10': 'value'
+    },
     {'1': 'cursor', '3': 3, '4': 1, '5': 12, '9': 0, '10': 'cursor'},
   ],
   '8': [
@@ -347,12 +577,40 @@ const QueryResultBatch$json = {
   '2': [
     {'1': 'skipped_results', '3': 6, '4': 1, '5': 5, '10': 'skippedResults'},
     {'1': 'skipped_cursor', '3': 3, '4': 1, '5': 12, '10': 'skippedCursor'},
-    {'1': 'entity_result_type', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.v1.EntityResult.ResultType', '10': 'entityResultType'},
-    {'1': 'entity_results', '3': 2, '4': 3, '5': 11, '6': '.google.datastore.v1.EntityResult', '10': 'entityResults'},
+    {
+      '1': 'entity_result_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.EntityResult.ResultType',
+      '10': 'entityResultType'
+    },
+    {
+      '1': 'entity_results',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.EntityResult',
+      '10': 'entityResults'
+    },
     {'1': 'end_cursor', '3': 4, '4': 1, '5': 12, '10': 'endCursor'},
-    {'1': 'more_results', '3': 5, '4': 1, '5': 14, '6': '.google.datastore.v1.QueryResultBatch.MoreResultsType', '10': 'moreResults'},
+    {
+      '1': 'more_results',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.QueryResultBatch.MoreResultsType',
+      '10': 'moreResults'
+    },
     {'1': 'snapshot_version', '3': 7, '4': 1, '5': 3, '10': 'snapshotVersion'},
-    {'1': 'read_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'read_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
   ],
   '4': [QueryResultBatch_MoreResultsType$json],
 };
@@ -383,4 +641,3 @@ final $typed_data.Uint8List queryResultBatchDescriptor = $convert.base64Decode(
     'RzVHlwZRIhCh1NT1JFX1JFU1VMVFNfVFlQRV9VTlNQRUNJRklFRBAAEhAKDE5PVF9GSU5JU0hF'
     'RBABEhwKGE1PUkVfUkVTVUxUU19BRlRFUl9MSU1JVBACEh0KGU1PUkVfUkVTVUxUU19BRlRFUl'
     '9DVVJTT1IQBBITCg9OT19NT1JFX1JFU1VMVFMQAw==');
-

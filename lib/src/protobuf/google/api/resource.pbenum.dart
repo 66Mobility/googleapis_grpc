@@ -16,37 +16,50 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// A description of the historical or future-looking state of the
 /// resource pattern.
 class ResourceDescriptor_History extends $pb.ProtobufEnum {
-  static const ResourceDescriptor_History HISTORY_UNSPECIFIED = ResourceDescriptor_History._(0, _omitEnumNames ? '' : 'HISTORY_UNSPECIFIED');
-  static const ResourceDescriptor_History ORIGINALLY_SINGLE_PATTERN = ResourceDescriptor_History._(1, _omitEnumNames ? '' : 'ORIGINALLY_SINGLE_PATTERN');
-  static const ResourceDescriptor_History FUTURE_MULTI_PATTERN = ResourceDescriptor_History._(2, _omitEnumNames ? '' : 'FUTURE_MULTI_PATTERN');
+  static const ResourceDescriptor_History HISTORY_UNSPECIFIED =
+      ResourceDescriptor_History._(
+          0, _omitEnumNames ? '' : 'HISTORY_UNSPECIFIED');
+  static const ResourceDescriptor_History ORIGINALLY_SINGLE_PATTERN =
+      ResourceDescriptor_History._(
+          1, _omitEnumNames ? '' : 'ORIGINALLY_SINGLE_PATTERN');
+  static const ResourceDescriptor_History FUTURE_MULTI_PATTERN =
+      ResourceDescriptor_History._(
+          2, _omitEnumNames ? '' : 'FUTURE_MULTI_PATTERN');
 
-  static const $core.List<ResourceDescriptor_History> values = <ResourceDescriptor_History> [
+  static const $core.List<ResourceDescriptor_History> values =
+      <ResourceDescriptor_History>[
     HISTORY_UNSPECIFIED,
     ORIGINALLY_SINGLE_PATTERN,
     FUTURE_MULTI_PATTERN,
   ];
 
-  static final $core.Map<$core.int, ResourceDescriptor_History> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static ResourceDescriptor_History? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, ResourceDescriptor_History> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static ResourceDescriptor_History? valueOf($core.int value) =>
+      _byValue[value];
 
   const ResourceDescriptor_History._($core.int v, $core.String n) : super(v, n);
 }
 
 /// A flag representing a specific style that a resource claims to conform to.
 class ResourceDescriptor_Style extends $pb.ProtobufEnum {
-  static const ResourceDescriptor_Style STYLE_UNSPECIFIED = ResourceDescriptor_Style._(0, _omitEnumNames ? '' : 'STYLE_UNSPECIFIED');
-  static const ResourceDescriptor_Style DECLARATIVE_FRIENDLY = ResourceDescriptor_Style._(1, _omitEnumNames ? '' : 'DECLARATIVE_FRIENDLY');
+  static const ResourceDescriptor_Style STYLE_UNSPECIFIED =
+      ResourceDescriptor_Style._(0, _omitEnumNames ? '' : 'STYLE_UNSPECIFIED');
+  static const ResourceDescriptor_Style DECLARATIVE_FRIENDLY =
+      ResourceDescriptor_Style._(
+          1, _omitEnumNames ? '' : 'DECLARATIVE_FRIENDLY');
 
-  static const $core.List<ResourceDescriptor_Style> values = <ResourceDescriptor_Style> [
+  static const $core.List<ResourceDescriptor_Style> values =
+      <ResourceDescriptor_Style>[
     STYLE_UNSPECIFIED,
     DECLARATIVE_FRIENDLY,
   ];
 
-  static final $core.Map<$core.int, ResourceDescriptor_Style> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, ResourceDescriptor_Style> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static ResourceDescriptor_Style? valueOf($core.int value) => _byValue[value];
 
   const ResourceDescriptor_Style._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

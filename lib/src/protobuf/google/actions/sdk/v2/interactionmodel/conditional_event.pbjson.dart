@@ -18,8 +18,23 @@ const ConditionalEvent$json = {
   '1': 'ConditionalEvent',
   '2': [
     {'1': 'condition', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'condition'},
-    {'1': 'transition_to_scene', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'transitionToScene'},
-    {'1': 'handler', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '8': {}, '10': 'handler'},
+    {
+      '1': 'transition_to_scene',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'transitionToScene'
+    },
+    {
+      '1': 'handler',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '8': {},
+      '10': 'handler'
+    },
   ],
 };
 
@@ -29,4 +44,3 @@ final $typed_data.Uint8List conditionalEventDescriptor = $convert.base64Decode(
     'oTdHJhbnNpdGlvbl90b19zY2VuZRgCIAEoCUID4EEBUhF0cmFuc2l0aW9uVG9TY2VuZRJTCgdo'
     'YW5kbGVyGAMgASgLMjQuZ29vZ2xlLmFjdGlvbnMuc2RrLnYyLmludGVyYWN0aW9ubW9kZWwuRX'
     'ZlbnRIYW5kbGVyQgPgQQFSB2hhbmRsZXI=');
-

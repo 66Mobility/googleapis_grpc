@@ -31,34 +31,47 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
     return $result;
   }
   SlidesAddOnManifest._() : super();
-  factory SlidesAddOnManifest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlidesAddOnManifest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlidesAddOnManifest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlidesAddOnManifest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlidesAddOnManifest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.slides'), createEmptyInstance: create)
-    ..aOM<$396.HomepageExtensionPoint>(1, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $396.HomepageExtensionPoint.create)
-    ..aOM<SlidesExtensionPoint>(2, _omitFieldNames ? '' : 'onFileScopeGrantedTrigger', subBuilder: SlidesExtensionPoint.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlidesAddOnManifest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type.slides'),
+      createEmptyInstance: create)
+    ..aOM<$396.HomepageExtensionPoint>(
+        1, _omitFieldNames ? '' : 'homepageTrigger',
+        subBuilder: $396.HomepageExtensionPoint.create)
+    ..aOM<SlidesExtensionPoint>(
+        2, _omitFieldNames ? '' : 'onFileScopeGrantedTrigger',
+        subBuilder: SlidesExtensionPoint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SlidesAddOnManifest clone() => SlidesAddOnManifest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlidesAddOnManifest copyWith(void Function(SlidesAddOnManifest) updates) => super.copyWith((message) => updates(message as SlidesAddOnManifest)) as SlidesAddOnManifest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlidesAddOnManifest copyWith(void Function(SlidesAddOnManifest) updates) =>
+      super.copyWith((message) => updates(message as SlidesAddOnManifest))
+          as SlidesAddOnManifest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SlidesAddOnManifest create() => SlidesAddOnManifest._();
   SlidesAddOnManifest createEmptyInstance() => create();
-  static $pb.PbList<SlidesAddOnManifest> createRepeated() => $pb.PbList<SlidesAddOnManifest>();
+  static $pb.PbList<SlidesAddOnManifest> createRepeated() =>
+      $pb.PbList<SlidesAddOnManifest>();
   @$core.pragma('dart2js:noInline')
-  static SlidesAddOnManifest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlidesAddOnManifest>(create);
+  static SlidesAddOnManifest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlidesAddOnManifest>(create);
   static SlidesAddOnManifest? _defaultInstance;
 
   /// If present, this overrides the configuration from
@@ -66,7 +79,10 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $396.HomepageExtensionPoint get homepageTrigger => $_getN(0);
   @$pb.TagNumber(1)
-  set homepageTrigger($396.HomepageExtensionPoint v) { setField(1, v); }
+  set homepageTrigger($396.HomepageExtensionPoint v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHomepageTrigger() => $_has(0);
   @$pb.TagNumber(1)
@@ -79,7 +95,10 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SlidesExtensionPoint get onFileScopeGrantedTrigger => $_getN(1);
   @$pb.TagNumber(2)
-  set onFileScopeGrantedTrigger(SlidesExtensionPoint v) { setField(2, v); }
+  set onFileScopeGrantedTrigger(SlidesExtensionPoint v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOnFileScopeGrantedTrigger() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,46 +119,59 @@ class SlidesExtensionPoint extends $pb.GeneratedMessage {
     return $result;
   }
   SlidesExtensionPoint._() : super();
-  factory SlidesExtensionPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SlidesExtensionPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SlidesExtensionPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SlidesExtensionPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlidesExtensionPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.slides'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SlidesExtensionPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type.slides'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'runFunction')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SlidesExtensionPoint clone() => SlidesExtensionPoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SlidesExtensionPoint copyWith(void Function(SlidesExtensionPoint) updates) => super.copyWith((message) => updates(message as SlidesExtensionPoint)) as SlidesExtensionPoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SlidesExtensionPoint clone() =>
+      SlidesExtensionPoint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SlidesExtensionPoint copyWith(void Function(SlidesExtensionPoint) updates) =>
+      super.copyWith((message) => updates(message as SlidesExtensionPoint))
+          as SlidesExtensionPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SlidesExtensionPoint create() => SlidesExtensionPoint._();
   SlidesExtensionPoint createEmptyInstance() => create();
-  static $pb.PbList<SlidesExtensionPoint> createRepeated() => $pb.PbList<SlidesExtensionPoint>();
+  static $pb.PbList<SlidesExtensionPoint> createRepeated() =>
+      $pb.PbList<SlidesExtensionPoint>();
   @$core.pragma('dart2js:noInline')
-  static SlidesExtensionPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SlidesExtensionPoint>(create);
+  static SlidesExtensionPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SlidesExtensionPoint>(create);
   static SlidesExtensionPoint? _defaultInstance;
 
   /// Required. The endpoint to execute when this extension point is activated.
   @$pb.TagNumber(1)
   $core.String get runFunction => $_getSZ(0);
   @$pb.TagNumber(1)
-  set runFunction($core.String v) { $_setString(0, v); }
+  set runFunction($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRunFunction() => $_has(0);
   @$pb.TagNumber(1)
   void clearRunFunction() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -16,21 +16,24 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// The history state for messages and spaces. Specifies how long messages and
 /// conversation threads are kept after creation.
 class HistoryState extends $pb.ProtobufEnum {
-  static const HistoryState HISTORY_STATE_UNSPECIFIED = HistoryState._(0, _omitEnumNames ? '' : 'HISTORY_STATE_UNSPECIFIED');
-  static const HistoryState HISTORY_OFF = HistoryState._(1, _omitEnumNames ? '' : 'HISTORY_OFF');
-  static const HistoryState HISTORY_ON = HistoryState._(2, _omitEnumNames ? '' : 'HISTORY_ON');
+  static const HistoryState HISTORY_STATE_UNSPECIFIED =
+      HistoryState._(0, _omitEnumNames ? '' : 'HISTORY_STATE_UNSPECIFIED');
+  static const HistoryState HISTORY_OFF =
+      HistoryState._(1, _omitEnumNames ? '' : 'HISTORY_OFF');
+  static const HistoryState HISTORY_ON =
+      HistoryState._(2, _omitEnumNames ? '' : 'HISTORY_ON');
 
-  static const $core.List<HistoryState> values = <HistoryState> [
+  static const $core.List<HistoryState> values = <HistoryState>[
     HISTORY_STATE_UNSPECIFIED,
     HISTORY_OFF,
     HISTORY_ON,
   ];
 
-  static final $core.Map<$core.int, HistoryState> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, HistoryState> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static HistoryState? valueOf($core.int value) => _byValue[value];
 
   const HistoryState._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

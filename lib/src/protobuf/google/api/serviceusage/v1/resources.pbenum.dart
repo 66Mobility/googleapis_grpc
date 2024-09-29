@@ -15,21 +15,22 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Whether or not a service has been enabled for use by a consumer.
 class State extends $pb.ProtobufEnum {
-  static const State STATE_UNSPECIFIED = State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const State STATE_UNSPECIFIED =
+      State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
   static const State DISABLED = State._(1, _omitEnumNames ? '' : 'DISABLED');
   static const State ENABLED = State._(2, _omitEnumNames ? '' : 'ENABLED');
 
-  static const $core.List<State> values = <State> [
+  static const $core.List<State> values = <State>[
     STATE_UNSPECIFIED,
     DISABLED,
     ENABLED,
   ];
 
-  static final $core.Map<$core.int, State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static State? valueOf($core.int value) => _byValue[value];
 
   const State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

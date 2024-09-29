@@ -36,35 +36,46 @@ class PredictRequest extends $pb.GeneratedMessage {
     return $result;
   }
   PredictRequest._() : super();
-  factory PredictRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PredictRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PredictRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PredictRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PredictRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $261.Value.create)
-    ..aOM<$261.Value>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $261.Value.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
+        subBuilder: $261.Value.create)
+    ..aOM<$261.Value>(3, _omitFieldNames ? '' : 'parameters',
+        subBuilder: $261.Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PredictRequest clone() => PredictRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PredictRequest copyWith(void Function(PredictRequest) updates) => super.copyWith((message) => updates(message as PredictRequest)) as PredictRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PredictRequest copyWith(void Function(PredictRequest) updates) =>
+      super.copyWith((message) => updates(message as PredictRequest))
+          as PredictRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PredictRequest create() => PredictRequest._();
   PredictRequest createEmptyInstance() => create();
-  static $pb.PbList<PredictRequest> createRepeated() => $pb.PbList<PredictRequest>();
+  static $pb.PbList<PredictRequest> createRepeated() =>
+      $pb.PbList<PredictRequest>();
   @$core.pragma('dart2js:noInline')
-  static PredictRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PredictRequest>(create);
+  static PredictRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PredictRequest>(create);
   static PredictRequest? _defaultInstance;
 
   /// Required. The name of the model for prediction.
@@ -72,7 +83,10 @@ class PredictRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get model => $_getSZ(0);
   @$pb.TagNumber(1)
-  set model($core.String v) { $_setString(0, v); }
+  set model($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasModel() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,7 +100,10 @@ class PredictRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $261.Value get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($261.Value v) { setField(3, v); }
+  set parameters($261.Value v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
@@ -107,33 +124,44 @@ class PredictResponse extends $pb.GeneratedMessage {
     return $result;
   }
   PredictResponse._() : super();
-  factory PredictResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PredictResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PredictResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PredictResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$261.Value>(1, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $261.Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PredictResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$261.Value>(
+        1, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM,
+        subBuilder: $261.Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PredictResponse clone() => PredictResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PredictResponse copyWith(void Function(PredictResponse) updates) => super.copyWith((message) => updates(message as PredictResponse)) as PredictResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PredictResponse copyWith(void Function(PredictResponse) updates) =>
+      super.copyWith((message) => updates(message as PredictResponse))
+          as PredictResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PredictResponse create() => PredictResponse._();
   PredictResponse createEmptyInstance() => create();
-  static $pb.PbList<PredictResponse> createRepeated() => $pb.PbList<PredictResponse>();
+  static $pb.PbList<PredictResponse> createRepeated() =>
+      $pb.PbList<PredictResponse>();
   @$core.pragma('dart2js:noInline')
-  static PredictResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PredictResponse>(create);
+  static PredictResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PredictResponse>(create);
   static PredictResponse? _defaultInstance;
 
   /// The outputs of the prediction call.
@@ -141,6 +169,6 @@ class PredictResponse extends $pb.GeneratedMessage {
   $core.List<$261.Value> get predictions => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -32,34 +32,43 @@ class ThreadReadState extends $pb.GeneratedMessage {
     return $result;
   }
   ThreadReadState._() : super();
-  factory ThreadReadState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ThreadReadState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ThreadReadState.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ThreadReadState.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ThreadReadState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ThreadReadState',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ThreadReadState clone() => ThreadReadState()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ThreadReadState copyWith(void Function(ThreadReadState) updates) => super.copyWith((message) => updates(message as ThreadReadState)) as ThreadReadState;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ThreadReadState copyWith(void Function(ThreadReadState) updates) =>
+      super.copyWith((message) => updates(message as ThreadReadState))
+          as ThreadReadState;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ThreadReadState create() => ThreadReadState._();
   ThreadReadState createEmptyInstance() => create();
-  static $pb.PbList<ThreadReadState> createRepeated() => $pb.PbList<ThreadReadState>();
+  static $pb.PbList<ThreadReadState> createRepeated() =>
+      $pb.PbList<ThreadReadState>();
   @$core.pragma('dart2js:noInline')
-  static ThreadReadState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ThreadReadState>(create);
+  static ThreadReadState getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ThreadReadState>(create);
   static ThreadReadState? _defaultInstance;
 
   ///  Resource name of the thread read state.
@@ -68,7 +77,10 @@ class ThreadReadState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -79,7 +91,10 @@ class ThreadReadState extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get lastReadTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lastReadTime($302.Timestamp v) { setField(2, v); }
+  set lastReadTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLastReadTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,33 +115,43 @@ class GetThreadReadStateRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetThreadReadStateRequest._() : super();
-  factory GetThreadReadStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetThreadReadStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetThreadReadStateRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetThreadReadStateRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetThreadReadStateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetThreadReadStateRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetThreadReadStateRequest clone() => GetThreadReadStateRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetThreadReadStateRequest copyWith(void Function(GetThreadReadStateRequest) updates) => super.copyWith((message) => updates(message as GetThreadReadStateRequest)) as GetThreadReadStateRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetThreadReadStateRequest clone() =>
+      GetThreadReadStateRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetThreadReadStateRequest copyWith(
+          void Function(GetThreadReadStateRequest) updates) =>
+      super.copyWith((message) => updates(message as GetThreadReadStateRequest))
+          as GetThreadReadStateRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetThreadReadStateRequest create() => GetThreadReadStateRequest._();
   GetThreadReadStateRequest createEmptyInstance() => create();
-  static $pb.PbList<GetThreadReadStateRequest> createRepeated() => $pb.PbList<GetThreadReadStateRequest>();
+  static $pb.PbList<GetThreadReadStateRequest> createRepeated() =>
+      $pb.PbList<GetThreadReadStateRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetThreadReadStateRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetThreadReadStateRequest>(create);
+  static GetThreadReadStateRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetThreadReadStateRequest>(create);
   static GetThreadReadStateRequest? _defaultInstance;
 
   ///  Required. Resource name of the thread read state to retrieve.
@@ -148,13 +173,16 @@ class GetThreadReadStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

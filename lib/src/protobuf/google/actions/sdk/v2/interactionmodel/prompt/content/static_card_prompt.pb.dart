@@ -49,45 +49,64 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
     return $result;
   }
   StaticCardPrompt._() : super();
-  factory StaticCardPrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticCardPrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticCardPrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticCardPrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticCardPrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticCardPrompt',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
     ..aOS(3, _omitFieldNames ? '' : 'text')
-    ..aOM<$262.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $262.StaticImagePrompt.create)
-    ..e<$262.StaticImagePrompt_ImageFill>(5, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $262.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $262.StaticImagePrompt_ImageFill.valueOf, enumValues: $262.StaticImagePrompt_ImageFill.values)
-    ..aOM<$263.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'button', subBuilder: $263.StaticLinkPrompt.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$262.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: $262.StaticImagePrompt.create)
+    ..e<$262.StaticImagePrompt_ImageFill>(
+        5, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE,
+        defaultOrMaker: $262.StaticImagePrompt_ImageFill.UNSPECIFIED,
+        valueOf: $262.StaticImagePrompt_ImageFill.valueOf,
+        enumValues: $262.StaticImagePrompt_ImageFill.values)
+    ..aOM<$263.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'button',
+        subBuilder: $263.StaticLinkPrompt.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StaticCardPrompt clone() => StaticCardPrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticCardPrompt copyWith(void Function(StaticCardPrompt) updates) => super.copyWith((message) => updates(message as StaticCardPrompt)) as StaticCardPrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticCardPrompt copyWith(void Function(StaticCardPrompt) updates) =>
+      super.copyWith((message) => updates(message as StaticCardPrompt))
+          as StaticCardPrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticCardPrompt create() => StaticCardPrompt._();
   StaticCardPrompt createEmptyInstance() => create();
-  static $pb.PbList<StaticCardPrompt> createRepeated() => $pb.PbList<StaticCardPrompt>();
+  static $pb.PbList<StaticCardPrompt> createRepeated() =>
+      $pb.PbList<StaticCardPrompt>();
   @$core.pragma('dart2js:noInline')
-  static StaticCardPrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticCardPrompt>(create);
+  static StaticCardPrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticCardPrompt>(create);
   static StaticCardPrompt? _defaultInstance;
 
   /// Optional. Overall title of the card.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -97,7 +116,10 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subtitle => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subtitle($core.String v) { $_setString(1, v); }
+  set subtitle($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubtitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,7 +130,10 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get text => $_getSZ(2);
   @$pb.TagNumber(3)
-  set text($core.String v) { $_setString(2, v); }
+  set text($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasText() => $_has(2);
   @$pb.TagNumber(3)
@@ -118,7 +143,10 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $262.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($262.StaticImagePrompt v) { setField(4, v); }
+  set image($262.StaticImagePrompt v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
@@ -130,7 +158,10 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $262.StaticImagePrompt_ImageFill get imageFill => $_getN(4);
   @$pb.TagNumber(5)
-  set imageFill($262.StaticImagePrompt_ImageFill v) { setField(5, v); }
+  set imageFill($262.StaticImagePrompt_ImageFill v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasImageFill() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,7 +171,10 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $263.StaticLinkPrompt get button => $_getN(5);
   @$pb.TagNumber(6)
-  set button($263.StaticLinkPrompt v) { setField(6, v); }
+  set button($263.StaticLinkPrompt v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasButton() => $_has(5);
   @$pb.TagNumber(6)
@@ -149,6 +183,6 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
   $263.StaticLinkPrompt ensureButton() => $_ensure(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

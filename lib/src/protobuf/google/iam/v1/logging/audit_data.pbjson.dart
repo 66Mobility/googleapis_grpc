@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AuditData$json = {
   '1': 'AuditData',
   '2': [
-    {'1': 'policy_delta', '3': 2, '4': 1, '5': 11, '6': '.google.iam.v1.PolicyDelta', '10': 'policyDelta'},
+    {
+      '1': 'policy_delta',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1.PolicyDelta',
+      '10': 'policyDelta'
+    },
   ],
 };
 
@@ -25,4 +32,3 @@ const AuditData$json = {
 final $typed_data.Uint8List auditDataDescriptor = $convert.base64Decode(
     'CglBdWRpdERhdGESPQoMcG9saWN5X2RlbHRhGAIgASgLMhouZ29vZ2xlLmlhbS52MS5Qb2xpY3'
     'lEZWx0YVILcG9saWN5RGVsdGE=');
-

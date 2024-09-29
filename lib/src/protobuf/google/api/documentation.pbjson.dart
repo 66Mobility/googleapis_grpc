@@ -18,9 +18,29 @@ const Documentation$json = {
   '1': 'Documentation',
   '2': [
     {'1': 'summary', '3': 1, '4': 1, '5': 9, '10': 'summary'},
-    {'1': 'pages', '3': 5, '4': 3, '5': 11, '6': '.google.api.Page', '10': 'pages'},
-    {'1': 'rules', '3': 3, '4': 3, '5': 11, '6': '.google.api.DocumentationRule', '10': 'rules'},
-    {'1': 'documentation_root_url', '3': 4, '4': 1, '5': 9, '10': 'documentationRootUrl'},
+    {
+      '1': 'pages',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Page',
+      '10': 'pages'
+    },
+    {
+      '1': 'rules',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.DocumentationRule',
+      '10': 'rules'
+    },
+    {
+      '1': 'documentation_root_url',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'documentationRootUrl'
+    },
     {'1': 'service_root_url', '3': 6, '4': 1, '5': 9, '10': 'serviceRootUrl'},
     {'1': 'overview', '3': 2, '4': 1, '5': 9, '10': 'overview'},
   ],
@@ -40,7 +60,13 @@ const DocumentationRule$json = {
   '2': [
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'deprecation_description', '3': 3, '4': 1, '5': 9, '10': 'deprecationDescription'},
+    {
+      '1': 'deprecation_description',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'deprecationDescription'
+    },
   ],
 };
 
@@ -56,7 +82,14 @@ const Page$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'content', '3': 2, '4': 1, '5': 9, '10': 'content'},
-    {'1': 'subpages', '3': 3, '4': 3, '5': 11, '6': '.google.api.Page', '10': 'subpages'},
+    {
+      '1': 'subpages',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Page',
+      '10': 'subpages'
+    },
   ],
 };
 
@@ -64,4 +97,3 @@ const Page$json = {
 final $typed_data.Uint8List pageDescriptor = $convert.base64Decode(
     'CgRQYWdlEhIKBG5hbWUYASABKAlSBG5hbWUSGAoHY29udGVudBgCIAEoCVIHY29udGVudBIsCg'
     'hzdWJwYWdlcxgDIAMoCzIQLmdvb2dsZS5hcGkuUGFnZVIIc3VicGFnZXM=');
-

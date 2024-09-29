@@ -32,34 +32,49 @@ class RegularExpressionType_Entity extends $pb.GeneratedMessage {
     return $result;
   }
   RegularExpressionType_Entity._() : super();
-  factory RegularExpressionType_Entity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RegularExpressionType_Entity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RegularExpressionType_Entity.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RegularExpressionType_Entity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegularExpressionType.Entity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
-    ..aOM<$282.EntityDisplay>(1, _omitFieldNames ? '' : 'display', subBuilder: $282.EntityDisplay.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RegularExpressionType.Entity',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.type'),
+      createEmptyInstance: create)
+    ..aOM<$282.EntityDisplay>(1, _omitFieldNames ? '' : 'display',
+        subBuilder: $282.EntityDisplay.create)
     ..pPS(2, _omitFieldNames ? '' : 'regularExpressions')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RegularExpressionType_Entity clone() => RegularExpressionType_Entity()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RegularExpressionType_Entity copyWith(void Function(RegularExpressionType_Entity) updates) => super.copyWith((message) => updates(message as RegularExpressionType_Entity)) as RegularExpressionType_Entity;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RegularExpressionType_Entity clone() =>
+      RegularExpressionType_Entity()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RegularExpressionType_Entity copyWith(
+          void Function(RegularExpressionType_Entity) updates) =>
+      super.copyWith(
+              (message) => updates(message as RegularExpressionType_Entity))
+          as RegularExpressionType_Entity;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RegularExpressionType_Entity create() => RegularExpressionType_Entity._();
+  static RegularExpressionType_Entity create() =>
+      RegularExpressionType_Entity._();
   RegularExpressionType_Entity createEmptyInstance() => create();
-  static $pb.PbList<RegularExpressionType_Entity> createRepeated() => $pb.PbList<RegularExpressionType_Entity>();
+  static $pb.PbList<RegularExpressionType_Entity> createRepeated() =>
+      $pb.PbList<RegularExpressionType_Entity>();
   @$core.pragma('dart2js:noInline')
-  static RegularExpressionType_Entity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegularExpressionType_Entity>(create);
+  static RegularExpressionType_Entity getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RegularExpressionType_Entity>(create);
   static RegularExpressionType_Entity? _defaultInstance;
 
   /// Optional. Elements that will be displayed on the canvas once an entity is
@@ -67,7 +82,10 @@ class RegularExpressionType_Entity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $282.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(1)
-  set display($282.EntityDisplay v) { setField(1, v); }
+  set display($282.EntityDisplay v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDisplay() => $_has(0);
   @$pb.TagNumber(1)
@@ -94,40 +112,61 @@ class RegularExpressionType extends $pb.GeneratedMessage {
     return $result;
   }
   RegularExpressionType._() : super();
-  factory RegularExpressionType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RegularExpressionType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RegularExpressionType.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RegularExpressionType.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegularExpressionType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
-    ..m<$core.String, RegularExpressionType_Entity>(1, _omitFieldNames ? '' : 'entities', entryClassName: 'RegularExpressionType.EntitiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: RegularExpressionType_Entity.create, valueDefaultOrMaker: RegularExpressionType_Entity.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2.interactionmodel.type'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RegularExpressionType',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.type'),
+      createEmptyInstance: create)
+    ..m<$core.String, RegularExpressionType_Entity>(
+        1, _omitFieldNames ? '' : 'entities',
+        entryClassName: 'RegularExpressionType.EntitiesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: RegularExpressionType_Entity.create,
+        valueDefaultOrMaker: RegularExpressionType_Entity.getDefault,
+        packageName: const $pb.PackageName(
+            'google.actions.sdk.v2.interactionmodel.type'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RegularExpressionType clone() => RegularExpressionType()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RegularExpressionType copyWith(void Function(RegularExpressionType) updates) => super.copyWith((message) => updates(message as RegularExpressionType)) as RegularExpressionType;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RegularExpressionType clone() =>
+      RegularExpressionType()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RegularExpressionType copyWith(
+          void Function(RegularExpressionType) updates) =>
+      super.copyWith((message) => updates(message as RegularExpressionType))
+          as RegularExpressionType;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RegularExpressionType create() => RegularExpressionType._();
   RegularExpressionType createEmptyInstance() => create();
-  static $pb.PbList<RegularExpressionType> createRepeated() => $pb.PbList<RegularExpressionType>();
+  static $pb.PbList<RegularExpressionType> createRepeated() =>
+      $pb.PbList<RegularExpressionType>();
   @$core.pragma('dart2js:noInline')
-  static RegularExpressionType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegularExpressionType>(create);
+  static RegularExpressionType getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RegularExpressionType>(create);
   static RegularExpressionType? _defaultInstance;
 
   /// Required. Named map of entities which each contain Regex strings.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, RegularExpressionType_Entity> get entities => $_getMap(0);
+  $core.Map<$core.String, RegularExpressionType_Entity> get entities =>
+      $_getMap(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

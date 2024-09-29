@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const SheetsAddOnManifest$json = {
   '1': 'SheetsAddOnManifest',
   '2': [
-    {'1': 'homepage_trigger', '3': 3, '4': 1, '5': 11, '6': '.google.apps.script.type.HomepageExtensionPoint', '10': 'homepageTrigger'},
-    {'1': 'on_file_scope_granted_trigger', '3': 5, '4': 1, '5': 11, '6': '.google.apps.script.type.sheets.SheetsExtensionPoint', '10': 'onFileScopeGrantedTrigger'},
+    {
+      '1': 'homepage_trigger',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.HomepageExtensionPoint',
+      '10': 'homepageTrigger'
+    },
+    {
+      '1': 'on_file_scope_granted_trigger',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.sheets.SheetsExtensionPoint',
+      '10': 'onFileScopeGrantedTrigger'
+    },
   ],
 };
 
@@ -42,4 +56,3 @@ const SheetsExtensionPoint$json = {
 final $typed_data.Uint8List sheetsExtensionPointDescriptor = $convert.base64Decode(
     'ChRTaGVldHNFeHRlbnNpb25Qb2ludBImCgxydW5fZnVuY3Rpb24YASABKAlCA+BBAlILcnVuRn'
     'VuY3Rpb24=');
-

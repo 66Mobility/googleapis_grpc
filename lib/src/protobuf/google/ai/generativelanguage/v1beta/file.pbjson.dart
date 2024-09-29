@@ -17,18 +17,67 @@ import 'dart:typed_data' as $typed_data;
 const File$json = {
   '1': 'File',
   '2': [
-    {'1': 'video_metadata', '3': 12, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.VideoMetadata', '8': {}, '9': 0, '10': 'videoMetadata'},
+    {
+      '1': 'video_metadata',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.VideoMetadata',
+      '8': {},
+      '9': 0,
+      '10': 'videoMetadata'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'mime_type', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'mimeType'},
     {'1': 'size_bytes', '3': 4, '4': 1, '5': 3, '8': {}, '10': 'sizeBytes'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'expiration_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expirationTime'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'expiration_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expirationTime'
+    },
     {'1': 'sha256_hash', '3': 8, '4': 1, '5': 12, '8': {}, '10': 'sha256Hash'},
     {'1': 'uri', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'uri'},
-    {'1': 'state', '3': 10, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.File.State', '8': {}, '10': 'state'},
-    {'1': 'error', '3': 11, '4': 1, '5': 11, '6': '.google.rpc.Status', '8': {}, '10': 'error'},
+    {
+      '1': 'state',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.File.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'error',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '8': {},
+      '10': 'error'
+    },
   ],
   '4': [File_State$json],
   '7': {},
@@ -70,7 +119,14 @@ final $typed_data.Uint8List fileDescriptor = $convert.base64Decode(
 const VideoMetadata$json = {
   '1': 'VideoMetadata',
   '2': [
-    {'1': 'video_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'videoDuration'},
+    {
+      '1': 'video_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'videoDuration'
+    },
   ],
 };
 
@@ -78,4 +134,3 @@ const VideoMetadata$json = {
 final $typed_data.Uint8List videoMetadataDescriptor = $convert.base64Decode(
     'Cg1WaWRlb01ldGFkYXRhEkAKDnZpZGVvX2R1cmF0aW9uGAEgASgLMhkuZ29vZ2xlLnByb3RvYn'
     'VmLkR1cmF0aW9uUg12aWRlb0R1cmF0aW9u');
-

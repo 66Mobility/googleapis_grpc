@@ -19,9 +19,31 @@ const LookupRequest$json = {
   '2': [
     {'1': 'project_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
     {'1': 'database_id', '3': 9, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'read_options', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.ReadOptions', '10': 'readOptions'},
-    {'1': 'keys', '3': 3, '4': 3, '5': 11, '6': '.google.datastore.v1.Key', '8': {}, '10': 'keys'},
-    {'1': 'property_mask', '3': 5, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyMask', '10': 'propertyMask'},
+    {
+      '1': 'read_options',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ReadOptions',
+      '10': 'readOptions'
+    },
+    {
+      '1': 'keys',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Key',
+      '8': {},
+      '10': 'keys'
+    },
+    {
+      '1': 'property_mask',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyMask',
+      '10': 'propertyMask'
+    },
   ],
 };
 
@@ -37,11 +59,39 @@ final $typed_data.Uint8List lookupRequestDescriptor = $convert.base64Decode(
 const LookupResponse$json = {
   '1': 'LookupResponse',
   '2': [
-    {'1': 'found', '3': 1, '4': 3, '5': 11, '6': '.google.datastore.v1.EntityResult', '10': 'found'},
-    {'1': 'missing', '3': 2, '4': 3, '5': 11, '6': '.google.datastore.v1.EntityResult', '10': 'missing'},
-    {'1': 'deferred', '3': 3, '4': 3, '5': 11, '6': '.google.datastore.v1.Key', '10': 'deferred'},
+    {
+      '1': 'found',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.EntityResult',
+      '10': 'found'
+    },
+    {
+      '1': 'missing',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.EntityResult',
+      '10': 'missing'
+    },
+    {
+      '1': 'deferred',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Key',
+      '10': 'deferred'
+    },
     {'1': 'transaction', '3': 5, '4': 1, '5': 12, '10': 'transaction'},
-    {'1': 'read_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'read_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
   ],
 };
 
@@ -60,12 +110,57 @@ const RunQueryRequest$json = {
   '2': [
     {'1': 'project_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
     {'1': 'database_id', '3': 9, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'partition_id', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.PartitionId', '10': 'partitionId'},
-    {'1': 'read_options', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.ReadOptions', '10': 'readOptions'},
-    {'1': 'query', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.v1.Query', '9': 0, '10': 'query'},
-    {'1': 'gql_query', '3': 7, '4': 1, '5': 11, '6': '.google.datastore.v1.GqlQuery', '9': 0, '10': 'gqlQuery'},
-    {'1': 'property_mask', '3': 10, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyMask', '10': 'propertyMask'},
-    {'1': 'explain_options', '3': 12, '4': 1, '5': 11, '6': '.google.datastore.v1.ExplainOptions', '8': {}, '10': 'explainOptions'},
+    {
+      '1': 'partition_id',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PartitionId',
+      '10': 'partitionId'
+    },
+    {
+      '1': 'read_options',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ReadOptions',
+      '10': 'readOptions'
+    },
+    {
+      '1': 'query',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Query',
+      '9': 0,
+      '10': 'query'
+    },
+    {
+      '1': 'gql_query',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.GqlQuery',
+      '9': 0,
+      '10': 'gqlQuery'
+    },
+    {
+      '1': 'property_mask',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyMask',
+      '10': 'propertyMask'
+    },
+    {
+      '1': 'explain_options',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ExplainOptions',
+      '8': {},
+      '10': 'explainOptions'
+    },
   ],
   '8': [
     {'1': 'query_type'},
@@ -89,10 +184,31 @@ final $typed_data.Uint8List runQueryRequestDescriptor = $convert.base64Decode(
 const RunQueryResponse$json = {
   '1': 'RunQueryResponse',
   '2': [
-    {'1': 'batch', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.QueryResultBatch', '10': 'batch'},
-    {'1': 'query', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.Query', '10': 'query'},
+    {
+      '1': 'batch',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.QueryResultBatch',
+      '10': 'batch'
+    },
+    {
+      '1': 'query',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Query',
+      '10': 'query'
+    },
     {'1': 'transaction', '3': 5, '4': 1, '5': 12, '10': 'transaction'},
-    {'1': 'explain_metrics', '3': 9, '4': 1, '5': 11, '6': '.google.datastore.v1.ExplainMetrics', '10': 'explainMetrics'},
+    {
+      '1': 'explain_metrics',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ExplainMetrics',
+      '10': 'explainMetrics'
+    },
   ],
 };
 
@@ -110,11 +226,49 @@ const RunAggregationQueryRequest$json = {
   '2': [
     {'1': 'project_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
     {'1': 'database_id', '3': 9, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'partition_id', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.PartitionId', '10': 'partitionId'},
-    {'1': 'read_options', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.ReadOptions', '10': 'readOptions'},
-    {'1': 'aggregation_query', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.v1.AggregationQuery', '9': 0, '10': 'aggregationQuery'},
-    {'1': 'gql_query', '3': 7, '4': 1, '5': 11, '6': '.google.datastore.v1.GqlQuery', '9': 0, '10': 'gqlQuery'},
-    {'1': 'explain_options', '3': 11, '4': 1, '5': 11, '6': '.google.datastore.v1.ExplainOptions', '8': {}, '10': 'explainOptions'},
+    {
+      '1': 'partition_id',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PartitionId',
+      '10': 'partitionId'
+    },
+    {
+      '1': 'read_options',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ReadOptions',
+      '10': 'readOptions'
+    },
+    {
+      '1': 'aggregation_query',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationQuery',
+      '9': 0,
+      '10': 'aggregationQuery'
+    },
+    {
+      '1': 'gql_query',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.GqlQuery',
+      '9': 0,
+      '10': 'gqlQuery'
+    },
+    {
+      '1': 'explain_options',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ExplainOptions',
+      '8': {},
+      '10': 'explainOptions'
+    },
   ],
   '8': [
     {'1': 'query_type'},
@@ -137,10 +291,31 @@ final $typed_data.Uint8List runAggregationQueryRequestDescriptor = $convert.base
 const RunAggregationQueryResponse$json = {
   '1': 'RunAggregationQueryResponse',
   '2': [
-    {'1': 'batch', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.AggregationResultBatch', '10': 'batch'},
-    {'1': 'query', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.AggregationQuery', '10': 'query'},
+    {
+      '1': 'batch',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationResultBatch',
+      '10': 'batch'
+    },
+    {
+      '1': 'query',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationQuery',
+      '10': 'query'
+    },
     {'1': 'transaction', '3': 5, '4': 1, '5': 12, '10': 'transaction'},
-    {'1': 'explain_metrics', '3': 9, '4': 1, '5': 11, '6': '.google.datastore.v1.ExplainMetrics', '10': 'explainMetrics'},
+    {
+      '1': 'explain_metrics',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ExplainMetrics',
+      '10': 'explainMetrics'
+    },
   ],
 };
 
@@ -158,7 +333,14 @@ const BeginTransactionRequest$json = {
   '2': [
     {'1': 'project_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
     {'1': 'database_id', '3': 9, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'transaction_options', '3': 10, '4': 1, '5': 11, '6': '.google.datastore.v1.TransactionOptions', '10': 'transactionOptions'},
+    {
+      '1': 'transaction_options',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.TransactionOptions',
+      '10': 'transactionOptions'
+    },
   ],
 };
 
@@ -178,9 +360,10 @@ const BeginTransactionResponse$json = {
 };
 
 /// Descriptor for `BeginTransactionResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List beginTransactionResponseDescriptor = $convert.base64Decode(
-    'ChhCZWdpblRyYW5zYWN0aW9uUmVzcG9uc2USIAoLdHJhbnNhY3Rpb24YASABKAxSC3RyYW5zYW'
-    'N0aW9u');
+final $typed_data.Uint8List beginTransactionResponseDescriptor =
+    $convert.base64Decode(
+        'ChhCZWdpblRyYW5zYWN0aW9uUmVzcG9uc2USIAoLdHJhbnNhY3Rpb24YASABKAxSC3RyYW5zYW'
+        'N0aW9u');
 
 @$core.Deprecated('Use rollbackRequestDescriptor instead')
 const RollbackRequest$json = {
@@ -204,8 +387,8 @@ const RollbackResponse$json = {
 };
 
 /// Descriptor for `RollbackResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List rollbackResponseDescriptor = $convert.base64Decode(
-    'ChBSb2xsYmFja1Jlc3BvbnNl');
+final $typed_data.Uint8List rollbackResponseDescriptor =
+    $convert.base64Decode('ChBSb2xsYmFja1Jlc3BvbnNl');
 
 @$core.Deprecated('Use commitRequestDescriptor instead')
 const CommitRequest$json = {
@@ -213,10 +396,32 @@ const CommitRequest$json = {
   '2': [
     {'1': 'project_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
     {'1': 'database_id', '3': 9, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'mode', '3': 5, '4': 1, '5': 14, '6': '.google.datastore.v1.CommitRequest.Mode', '10': 'mode'},
+    {
+      '1': 'mode',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.CommitRequest.Mode',
+      '10': 'mode'
+    },
     {'1': 'transaction', '3': 1, '4': 1, '5': 12, '9': 0, '10': 'transaction'},
-    {'1': 'single_use_transaction', '3': 10, '4': 1, '5': 11, '6': '.google.datastore.v1.TransactionOptions', '9': 0, '10': 'singleUseTransaction'},
-    {'1': 'mutations', '3': 6, '4': 3, '5': 11, '6': '.google.datastore.v1.Mutation', '10': 'mutations'},
+    {
+      '1': 'single_use_transaction',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.TransactionOptions',
+      '9': 0,
+      '10': 'singleUseTransaction'
+    },
+    {
+      '1': 'mutations',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Mutation',
+      '10': 'mutations'
+    },
   ],
   '4': [CommitRequest_Mode$json],
   '8': [
@@ -249,9 +454,23 @@ final $typed_data.Uint8List commitRequestDescriptor = $convert.base64Decode(
 const CommitResponse$json = {
   '1': 'CommitResponse',
   '2': [
-    {'1': 'mutation_results', '3': 3, '4': 3, '5': 11, '6': '.google.datastore.v1.MutationResult', '10': 'mutationResults'},
+    {
+      '1': 'mutation_results',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.MutationResult',
+      '10': 'mutationResults'
+    },
     {'1': 'index_updates', '3': 4, '4': 1, '5': 5, '10': 'indexUpdates'},
-    {'1': 'commit_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'commitTime'},
+    {
+      '1': 'commit_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'commitTime'
+    },
   ],
 };
 
@@ -268,7 +487,15 @@ const AllocateIdsRequest$json = {
   '2': [
     {'1': 'project_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
     {'1': 'database_id', '3': 9, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'keys', '3': 1, '4': 3, '5': 11, '6': '.google.datastore.v1.Key', '8': {}, '10': 'keys'},
+    {
+      '1': 'keys',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Key',
+      '8': {},
+      '10': 'keys'
+    },
   ],
 };
 
@@ -282,7 +509,14 @@ final $typed_data.Uint8List allocateIdsRequestDescriptor = $convert.base64Decode
 const AllocateIdsResponse$json = {
   '1': 'AllocateIdsResponse',
   '2': [
-    {'1': 'keys', '3': 1, '4': 3, '5': 11, '6': '.google.datastore.v1.Key', '10': 'keys'},
+    {
+      '1': 'keys',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Key',
+      '10': 'keys'
+    },
   ],
 };
 
@@ -297,7 +531,15 @@ const ReserveIdsRequest$json = {
   '2': [
     {'1': 'project_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
     {'1': 'database_id', '3': 9, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'keys', '3': 1, '4': 3, '5': 11, '6': '.google.datastore.v1.Key', '8': {}, '10': 'keys'},
+    {
+      '1': 'keys',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Key',
+      '8': {},
+      '10': 'keys'
+    },
   ],
 };
 
@@ -313,20 +555,67 @@ const ReserveIdsResponse$json = {
 };
 
 /// Descriptor for `ReserveIdsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List reserveIdsResponseDescriptor = $convert.base64Decode(
-    'ChJSZXNlcnZlSWRzUmVzcG9uc2U=');
+final $typed_data.Uint8List reserveIdsResponseDescriptor =
+    $convert.base64Decode('ChJSZXNlcnZlSWRzUmVzcG9uc2U=');
 
 @$core.Deprecated('Use mutationDescriptor instead')
 const Mutation$json = {
   '1': 'Mutation',
   '2': [
-    {'1': 'insert', '3': 4, '4': 1, '5': 11, '6': '.google.datastore.v1.Entity', '9': 0, '10': 'insert'},
-    {'1': 'update', '3': 5, '4': 1, '5': 11, '6': '.google.datastore.v1.Entity', '9': 0, '10': 'update'},
-    {'1': 'upsert', '3': 6, '4': 1, '5': 11, '6': '.google.datastore.v1.Entity', '9': 0, '10': 'upsert'},
-    {'1': 'delete', '3': 7, '4': 1, '5': 11, '6': '.google.datastore.v1.Key', '9': 0, '10': 'delete'},
+    {
+      '1': 'insert',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Entity',
+      '9': 0,
+      '10': 'insert'
+    },
+    {
+      '1': 'update',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Entity',
+      '9': 0,
+      '10': 'update'
+    },
+    {
+      '1': 'upsert',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Entity',
+      '9': 0,
+      '10': 'upsert'
+    },
+    {
+      '1': 'delete',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Key',
+      '9': 0,
+      '10': 'delete'
+    },
     {'1': 'base_version', '3': 8, '4': 1, '5': 3, '9': 1, '10': 'baseVersion'},
-    {'1': 'update_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 1, '10': 'updateTime'},
-    {'1': 'property_mask', '3': 9, '4': 1, '5': 11, '6': '.google.datastore.v1.PropertyMask', '10': 'propertyMask'},
+    {
+      '1': 'update_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 1,
+      '10': 'updateTime'
+    },
+    {
+      '1': 'property_mask',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyMask',
+      '10': 'propertyMask'
+    },
   ],
   '8': [
     {'1': 'operation'},
@@ -349,11 +638,38 @@ final $typed_data.Uint8List mutationDescriptor = $convert.base64Decode(
 const MutationResult$json = {
   '1': 'MutationResult',
   '2': [
-    {'1': 'key', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.v1.Key', '10': 'key'},
+    {
+      '1': 'key',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Key',
+      '10': 'key'
+    },
     {'1': 'version', '3': 4, '4': 1, '5': 3, '10': 'version'},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'conflict_detected', '3': 5, '4': 1, '5': 8, '10': 'conflictDetected'},
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'conflict_detected',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'conflictDetected'
+    },
   ],
 };
 
@@ -374,17 +690,41 @@ const PropertyMask$json = {
 };
 
 /// Descriptor for `PropertyMask`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List propertyMaskDescriptor = $convert.base64Decode(
-    'CgxQcm9wZXJ0eU1hc2sSFAoFcGF0aHMYASADKAlSBXBhdGhz');
+final $typed_data.Uint8List propertyMaskDescriptor =
+    $convert.base64Decode('CgxQcm9wZXJ0eU1hc2sSFAoFcGF0aHMYASADKAlSBXBhdGhz');
 
 @$core.Deprecated('Use readOptionsDescriptor instead')
 const ReadOptions$json = {
   '1': 'ReadOptions',
   '2': [
-    {'1': 'read_consistency', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.v1.ReadOptions.ReadConsistency', '9': 0, '10': 'readConsistency'},
+    {
+      '1': 'read_consistency',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.ReadOptions.ReadConsistency',
+      '9': 0,
+      '10': 'readConsistency'
+    },
     {'1': 'transaction', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'transaction'},
-    {'1': 'new_transaction', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.v1.TransactionOptions', '9': 0, '10': 'newTransaction'},
-    {'1': 'read_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'readTime'},
+    {
+      '1': 'new_transaction',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.TransactionOptions',
+      '9': 0,
+      '10': 'newTransaction'
+    },
+    {
+      '1': 'read_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'readTime'
+    },
   ],
   '4': [ReadOptions_ReadConsistency$json],
   '8': [
@@ -416,8 +756,24 @@ final $typed_data.Uint8List readOptionsDescriptor = $convert.base64Decode(
 const TransactionOptions$json = {
   '1': 'TransactionOptions',
   '2': [
-    {'1': 'read_write', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.v1.TransactionOptions.ReadWrite', '9': 0, '10': 'readWrite'},
-    {'1': 'read_only', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.TransactionOptions.ReadOnly', '9': 0, '10': 'readOnly'},
+    {
+      '1': 'read_write',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.TransactionOptions.ReadWrite',
+      '9': 0,
+      '10': 'readWrite'
+    },
+    {
+      '1': 'read_only',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.TransactionOptions.ReadOnly',
+      '9': 0,
+      '10': 'readOnly'
+    },
   ],
   '3': [TransactionOptions_ReadWrite$json, TransactionOptions_ReadOnly$json],
   '8': [
@@ -429,7 +785,13 @@ const TransactionOptions$json = {
 const TransactionOptions_ReadWrite$json = {
   '1': 'ReadWrite',
   '2': [
-    {'1': 'previous_transaction', '3': 1, '4': 1, '5': 12, '10': 'previousTransaction'},
+    {
+      '1': 'previous_transaction',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '10': 'previousTransaction'
+    },
   ],
 };
 
@@ -437,7 +799,14 @@ const TransactionOptions_ReadWrite$json = {
 const TransactionOptions_ReadOnly$json = {
   '1': 'ReadOnly',
   '2': [
-    {'1': 'read_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'read_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
   ],
 };
 
@@ -449,4 +818,3 @@ final $typed_data.Uint8List transactionOptionsDescriptor = $convert.base64Decode
     'VhZE9ubHlIAFIIcmVhZE9ubHkaPgoJUmVhZFdyaXRlEjEKFHByZXZpb3VzX3RyYW5zYWN0aW9u'
     'GAEgASgMUhNwcmV2aW91c1RyYW5zYWN0aW9uGkMKCFJlYWRPbmx5EjcKCXJlYWRfdGltZRgBIA'
     'EoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCHJlYWRUaW1lQgYKBG1vZGU=');
-

@@ -31,7 +31,14 @@ final $typed_data.Uint8List bitSequenceDescriptor = $convert.base64Decode(
 const BloomFilter$json = {
   '1': 'BloomFilter',
   '2': [
-    {'1': 'bits', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.v1.BitSequence', '10': 'bits'},
+    {
+      '1': 'bits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.BitSequence',
+      '10': 'bits'
+    },
     {'1': 'hash_count', '3': 2, '4': 1, '5': 5, '10': 'hashCount'},
   ],
 };
@@ -40,4 +47,3 @@ const BloomFilter$json = {
 final $typed_data.Uint8List bloomFilterDescriptor = $convert.base64Decode(
     'CgtCbG9vbUZpbHRlchI0CgRiaXRzGAEgASgLMiAuZ29vZ2xlLmZpcmVzdG9yZS52MS5CaXRTZX'
     'F1ZW5jZVIEYml0cxIdCgpoYXNoX2NvdW50GAIgASgFUgloYXNoQ291bnQ=');
-

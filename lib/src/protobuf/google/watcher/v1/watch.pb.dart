@@ -34,25 +34,32 @@ class Request extends $pb.GeneratedMessage {
     return $result;
   }
   Request._() : super();
-  factory Request.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Request.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Request.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Request.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Request', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.watcher.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Request',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.watcher.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'target')
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'resumeMarker', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'resumeMarker', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Request clone() => Request()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Request copyWith(void Function(Request) updates) => super.copyWith((message) => updates(message as Request)) as Request;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Request copyWith(void Function(Request) updates) =>
+      super.copyWith((message) => updates(message as Request)) as Request;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -61,7 +68,8 @@ class Request extends $pb.GeneratedMessage {
   Request createEmptyInstance() => create();
   static $pb.PbList<Request> createRepeated() => $pb.PbList<Request>();
   @$core.pragma('dart2js:noInline')
-  static Request getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Request>(create);
+  static Request getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Request>(create);
   static Request? _defaultInstance;
 
   ///  The `target` value **must** be a valid URL path pointing to an entity
@@ -91,7 +99,10 @@ class Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get target => $_getSZ(0);
   @$pb.TagNumber(1)
-  set target($core.String v) { $_setString(0, v); }
+  set target($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTarget() => $_has(0);
   @$pb.TagNumber(1)
@@ -129,7 +140,10 @@ class Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get resumeMarker => $_getN(1);
   @$pb.TagNumber(2)
-  set resumeMarker($core.List<$core.int> v) { $_setBytes(1, v); }
+  set resumeMarker($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResumeMarker() => $_has(1);
   @$pb.TagNumber(2)
@@ -148,24 +162,32 @@ class ChangeBatch extends $pb.GeneratedMessage {
     return $result;
   }
   ChangeBatch._() : super();
-  factory ChangeBatch.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ChangeBatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ChangeBatch.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ChangeBatch.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChangeBatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.watcher.v1'), createEmptyInstance: create)
-    ..pc<Change>(1, _omitFieldNames ? '' : 'changes', $pb.PbFieldType.PM, subBuilder: Change.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ChangeBatch',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.watcher.v1'),
+      createEmptyInstance: create)
+    ..pc<Change>(1, _omitFieldNames ? '' : 'changes', $pb.PbFieldType.PM,
+        subBuilder: Change.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ChangeBatch clone() => ChangeBatch()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ChangeBatch copyWith(void Function(ChangeBatch) updates) => super.copyWith((message) => updates(message as ChangeBatch)) as ChangeBatch;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ChangeBatch copyWith(void Function(ChangeBatch) updates) =>
+      super.copyWith((message) => updates(message as ChangeBatch))
+          as ChangeBatch;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -174,7 +196,8 @@ class ChangeBatch extends $pb.GeneratedMessage {
   ChangeBatch createEmptyInstance() => create();
   static $pb.PbList<ChangeBatch> createRepeated() => $pb.PbList<ChangeBatch>();
   @$core.pragma('dart2js:noInline')
-  static ChangeBatch getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ChangeBatch>(create);
+  static ChangeBatch getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ChangeBatch>(create);
   static ChangeBatch? _defaultInstance;
 
   /// A list of Change messages.
@@ -210,28 +233,39 @@ class Change extends $pb.GeneratedMessage {
     return $result;
   }
   Change._() : super();
-  factory Change.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Change.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Change.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Change.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Change', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.watcher.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Change',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.watcher.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'element')
-    ..e<Change_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Change_State.EXISTS, valueOf: Change_State.valueOf, enumValues: Change_State.values)
-    ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'resumeMarker', $pb.PbFieldType.OY)
+    ..e<Change_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Change_State.EXISTS,
+        valueOf: Change_State.valueOf,
+        enumValues: Change_State.values)
+    ..a<$core.List<$core.int>>(
+        4, _omitFieldNames ? '' : 'resumeMarker', $pb.PbFieldType.OY)
     ..aOB(5, _omitFieldNames ? '' : 'continued')
-    ..aOM<$321.Any>(6, _omitFieldNames ? '' : 'data', subBuilder: $321.Any.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$321.Any>(6, _omitFieldNames ? '' : 'data',
+        subBuilder: $321.Any.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Change clone() => Change()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Change copyWith(void Function(Change) updates) => super.copyWith((message) => updates(message as Change)) as Change;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Change copyWith(void Function(Change) updates) =>
+      super.copyWith((message) => updates(message as Change)) as Change;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -240,7 +274,8 @@ class Change extends $pb.GeneratedMessage {
   Change createEmptyInstance() => create();
   static $pb.PbList<Change> createRepeated() => $pb.PbList<Change>();
   @$core.pragma('dart2js:noInline')
-  static Change getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Change>(create);
+  static Change getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Change>(create);
   static Change? _defaultInstance;
 
   /// Name of the element, interpreted relative to the entity's actual
@@ -249,7 +284,10 @@ class Change extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get element => $_getSZ(0);
   @$pb.TagNumber(1)
-  set element($core.String v) { $_setString(0, v); }
+  set element($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasElement() => $_has(0);
   @$pb.TagNumber(1)
@@ -259,7 +297,10 @@ class Change extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Change_State get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(Change_State v) { setField(2, v); }
+  set state(Change_State v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -273,7 +314,10 @@ class Change extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get resumeMarker => $_getN(2);
   @$pb.TagNumber(4)
-  set resumeMarker($core.List<$core.int> v) { $_setBytes(2, v); }
+  set resumeMarker($core.List<$core.int> v) {
+    $_setBytes(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasResumeMarker() => $_has(2);
   @$pb.TagNumber(4)
@@ -284,7 +328,10 @@ class Change extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get continued => $_getBF(3);
   @$pb.TagNumber(5)
-  set continued($core.bool v) { $_setBool(3, v); }
+  set continued($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasContinued() => $_has(3);
   @$pb.TagNumber(5)
@@ -296,7 +343,10 @@ class Change extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $321.Any get data => $_getN(4);
   @$pb.TagNumber(6)
-  set data($321.Any v) { setField(6, v); }
+  set data($321.Any v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasData() => $_has(4);
   @$pb.TagNumber(6)
@@ -305,6 +355,6 @@ class Change extends $pb.GeneratedMessage {
   $321.Any ensureData() => $_ensure(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -55,39 +55,50 @@ class AccessPolicy extends $pb.GeneratedMessage {
     return $result;
   }
   AccessPolicy._() : super();
-  factory AccessPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AccessPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AccessPolicy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AccessPolicy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccessPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.identity.accesscontextmanager.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AccessPolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.identity.accesscontextmanager.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'parent')
     ..aOS(3, _omitFieldNames ? '' : 'title')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..pPS(7, _omitFieldNames ? '' : 'scopes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AccessPolicy clone() => AccessPolicy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AccessPolicy copyWith(void Function(AccessPolicy) updates) => super.copyWith((message) => updates(message as AccessPolicy)) as AccessPolicy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AccessPolicy copyWith(void Function(AccessPolicy) updates) =>
+      super.copyWith((message) => updates(message as AccessPolicy))
+          as AccessPolicy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AccessPolicy create() => AccessPolicy._();
   AccessPolicy createEmptyInstance() => create();
-  static $pb.PbList<AccessPolicy> createRepeated() => $pb.PbList<AccessPolicy>();
+  static $pb.PbList<AccessPolicy> createRepeated() =>
+      $pb.PbList<AccessPolicy>();
   @$core.pragma('dart2js:noInline')
-  static AccessPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AccessPolicy>(create);
+  static AccessPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AccessPolicy>(create);
   static AccessPolicy? _defaultInstance;
 
   /// Output only. Resource name of the `AccessPolicy`. Format:
@@ -95,7 +106,10 @@ class AccessPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -107,7 +121,10 @@ class AccessPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(2)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(2)
@@ -117,7 +134,10 @@ class AccessPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get title => $_getSZ(2);
   @$pb.TagNumber(3)
-  set title($core.String v) { $_setString(2, v); }
+  set title($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTitle() => $_has(2);
   @$pb.TagNumber(3)
@@ -127,7 +147,10 @@ class AccessPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -139,7 +162,10 @@ class AccessPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($302.Timestamp v) { setField(5, v); }
+  set updateTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -154,7 +180,10 @@ class AccessPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get etag => $_getSZ(5);
   @$pb.TagNumber(6)
-  set etag($core.String v) { $_setString(5, v); }
+  set etag($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasEtag() => $_has(5);
   @$pb.TagNumber(6)
@@ -178,6 +207,6 @@ class AccessPolicy extends $pb.GeneratedMessage {
   $core.List<$core.String> get scopes => $_getList(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

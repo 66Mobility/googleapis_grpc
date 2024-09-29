@@ -17,10 +17,25 @@ import 'dart:typed_data' as $typed_data;
 const CreateTripRequest$json = {
   '1': 'CreateTripRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'trip_id', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'tripId'},
-    {'1': 'trip', '3': 4, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.Trip', '8': {}, '10': 'trip'},
+    {
+      '1': 'trip',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Trip',
+      '8': {},
+      '10': 'trip'
+    },
   ],
 };
 
@@ -36,14 +51,63 @@ final $typed_data.Uint8List createTripRequestDescriptor = $convert.base64Decode(
 const GetTripRequest$json = {
   '1': 'GetTripRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'view', '3': 11, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.TripView', '10': 'view'},
-    {'1': 'current_route_segment_version', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'currentRouteSegmentVersion'},
-    {'1': 'remaining_waypoints_version', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'remainingWaypointsVersion'},
-    {'1': 'route_format_type', '3': 8, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.PolylineFormatType', '10': 'routeFormatType'},
-    {'1': 'current_route_segment_traffic_version', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'currentRouteSegmentTrafficVersion'},
-    {'1': 'remaining_waypoints_route_version', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'remainingWaypointsRouteVersion'},
+    {
+      '1': 'view',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripView',
+      '10': 'view'
+    },
+    {
+      '1': 'current_route_segment_version',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'currentRouteSegmentVersion'
+    },
+    {
+      '1': 'remaining_waypoints_version',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'remainingWaypointsVersion'
+    },
+    {
+      '1': 'route_format_type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.PolylineFormatType',
+      '10': 'routeFormatType'
+    },
+    {
+      '1': 'current_route_segment_traffic_version',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'currentRouteSegmentTrafficVersion'
+    },
+    {
+      '1': 'remaining_waypoints_route_version',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'remainingWaypointsRouteVersion'
+    },
   ],
 };
 
@@ -69,9 +133,23 @@ const ReportBillableTripRequest$json = {
   '2': [
     {'1': 'name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'country_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'countryCode'},
-    {'1': 'platform', '3': 5, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.BillingPlatformIdentifier', '10': 'platform'},
+    {
+      '1': 'platform',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.BillingPlatformIdentifier',
+      '10': 'platform'
+    },
     {'1': 'related_ids', '3': 6, '4': 3, '5': 9, '10': 'relatedIds'},
-    {'1': 'solution_type', '3': 7, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.ReportBillableTripRequest.SolutionType', '10': 'solutionType'},
+    {
+      '1': 'solution_type',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.ReportBillableTripRequest.SolutionType',
+      '10': 'solutionType'
+    },
   ],
   '4': [ReportBillableTripRequest_SolutionType$json],
 };
@@ -100,10 +178,33 @@ final $typed_data.Uint8List reportBillableTripRequestDescriptor = $convert.base6
 const UpdateTripRequest$json = {
   '1': 'UpdateTripRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'trip', '3': 4, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.Trip', '8': {}, '10': 'trip'},
-    {'1': 'update_mask', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'trip',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Trip',
+      '8': {},
+      '10': 'trip'
+    },
+    {
+      '1': 'update_mask',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -118,13 +219,27 @@ final $typed_data.Uint8List updateTripRequestDescriptor = $convert.base64Decode(
 const SearchTripsRequest$json = {
   '1': 'SearchTripsRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.RequestHeader', '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.RequestHeader',
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'vehicle_id', '3': 4, '4': 1, '5': 9, '10': 'vehicleId'},
     {'1': 'active_trips_only', '3': 5, '4': 1, '5': 8, '10': 'activeTripsOnly'},
     {'1': 'page_size', '3': 6, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 7, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'minimum_staleness', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'minimumStaleness'},
+    {
+      '1': 'minimum_staleness',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'minimumStaleness'
+    },
   ],
 };
 
@@ -141,7 +256,14 @@ final $typed_data.Uint8List searchTripsRequestDescriptor = $convert.base64Decode
 const SearchTripsResponse$json = {
   '1': 'SearchTripsResponse',
   '2': [
-    {'1': 'trips', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.Trip', '10': 'trips'},
+    {
+      '1': 'trips',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Trip',
+      '10': 'trips'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -150,4 +272,3 @@ const SearchTripsResponse$json = {
 final $typed_data.Uint8List searchTripsResponseDescriptor = $convert.base64Decode(
     'ChNTZWFyY2hUcmlwc1Jlc3BvbnNlEi8KBXRyaXBzGAEgAygLMhkubWFwcy5mbGVldGVuZ2luZS'
     '52MS5UcmlwUgV0cmlwcxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
-

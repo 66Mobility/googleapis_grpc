@@ -15,14 +15,20 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Snapshot state.
 class SnapshotState extends $pb.ProtobufEnum {
-  static const SnapshotState UNKNOWN_SNAPSHOT_STATE = SnapshotState._(0, _omitEnumNames ? '' : 'UNKNOWN_SNAPSHOT_STATE');
-  static const SnapshotState PENDING = SnapshotState._(1, _omitEnumNames ? '' : 'PENDING');
-  static const SnapshotState RUNNING = SnapshotState._(2, _omitEnumNames ? '' : 'RUNNING');
-  static const SnapshotState READY = SnapshotState._(3, _omitEnumNames ? '' : 'READY');
-  static const SnapshotState FAILED = SnapshotState._(4, _omitEnumNames ? '' : 'FAILED');
-  static const SnapshotState DELETED = SnapshotState._(5, _omitEnumNames ? '' : 'DELETED');
+  static const SnapshotState UNKNOWN_SNAPSHOT_STATE =
+      SnapshotState._(0, _omitEnumNames ? '' : 'UNKNOWN_SNAPSHOT_STATE');
+  static const SnapshotState PENDING =
+      SnapshotState._(1, _omitEnumNames ? '' : 'PENDING');
+  static const SnapshotState RUNNING =
+      SnapshotState._(2, _omitEnumNames ? '' : 'RUNNING');
+  static const SnapshotState READY =
+      SnapshotState._(3, _omitEnumNames ? '' : 'READY');
+  static const SnapshotState FAILED =
+      SnapshotState._(4, _omitEnumNames ? '' : 'FAILED');
+  static const SnapshotState DELETED =
+      SnapshotState._(5, _omitEnumNames ? '' : 'DELETED');
 
-  static const $core.List<SnapshotState> values = <SnapshotState> [
+  static const $core.List<SnapshotState> values = <SnapshotState>[
     UNKNOWN_SNAPSHOT_STATE,
     PENDING,
     RUNNING,
@@ -31,11 +37,11 @@ class SnapshotState extends $pb.ProtobufEnum {
     DELETED,
   ];
 
-  static final $core.Map<$core.int, SnapshotState> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, SnapshotState> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static SnapshotState? valueOf($core.int value) => _byValue[value];
 
   const SnapshotState._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

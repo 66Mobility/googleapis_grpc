@@ -19,8 +19,22 @@ const CheckRequest$json = {
   '2': [
     {'1': 'service_name', '3': 1, '4': 1, '5': 9, '10': 'serviceName'},
     {'1': 'service_config_id', '3': 2, '4': 1, '5': 9, '10': 'serviceConfigId'},
-    {'1': 'attributes', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.context.AttributeContext', '10': 'attributes'},
-    {'1': 'resources', '3': 4, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v2.ResourceInfo', '10': 'resources'},
+    {
+      '1': 'attributes',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.context.AttributeContext',
+      '10': 'attributes'
+    },
+    {
+      '1': 'resources',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v2.ResourceInfo',
+      '10': 'resources'
+    },
     {'1': 'flags', '3': 5, '4': 1, '5': 9, '10': 'flags'},
   ],
 };
@@ -55,8 +69,22 @@ final $typed_data.Uint8List resourceInfoDescriptor = $convert.base64Decode(
 const CheckResponse$json = {
   '1': 'CheckResponse',
   '2': [
-    {'1': 'status', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'headers', '3': 2, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v2.CheckResponse.HeadersEntry', '10': 'headers'},
+    {
+      '1': 'status',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'headers',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v2.CheckResponse.HeadersEntry',
+      '10': 'headers'
+    },
   ],
   '3': [CheckResponse_HeadersEntry$json],
 };
@@ -84,7 +112,14 @@ const ReportRequest$json = {
   '2': [
     {'1': 'service_name', '3': 1, '4': 1, '5': 9, '10': 'serviceName'},
     {'1': 'service_config_id', '3': 2, '4': 1, '5': 9, '10': 'serviceConfigId'},
-    {'1': 'operations', '3': 3, '4': 3, '5': 11, '6': '.google.rpc.context.AttributeContext', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.context.AttributeContext',
+      '10': 'operations'
+    },
   ],
 };
 
@@ -100,14 +135,21 @@ const ReportResponse$json = {
 };
 
 /// Descriptor for `ReportResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List reportResponseDescriptor = $convert.base64Decode(
-    'Cg5SZXBvcnRSZXNwb25zZQ==');
+final $typed_data.Uint8List reportResponseDescriptor =
+    $convert.base64Decode('Cg5SZXBvcnRSZXNwb25zZQ==');
 
 @$core.Deprecated('Use resourceInfoListDescriptor instead')
 const ResourceInfoList$json = {
   '1': 'ResourceInfoList',
   '2': [
-    {'1': 'resources', '3': 1, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v2.ResourceInfo', '10': 'resources'},
+    {
+      '1': 'resources',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v2.ResourceInfo',
+      '10': 'resources'
+    },
   ],
 };
 
@@ -115,4 +157,3 @@ const ResourceInfoList$json = {
 final $typed_data.Uint8List resourceInfoListDescriptor = $convert.base64Decode(
     'ChBSZXNvdXJjZUluZm9MaXN0EkgKCXJlc291cmNlcxgBIAMoCzIqLmdvb2dsZS5hcGkuc2Vydm'
     'ljZWNvbnRyb2wudjIuUmVzb3VyY2VJbmZvUglyZXNvdXJjZXM=');
-

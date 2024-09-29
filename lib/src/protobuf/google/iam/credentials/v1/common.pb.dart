@@ -39,36 +39,49 @@ class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateAccessTokenRequest._() : super();
-  factory GenerateAccessTokenRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateAccessTokenRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateAccessTokenRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateAccessTokenRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateAccessTokenRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateAccessTokenRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(2, _omitFieldNames ? '' : 'delegates')
     ..pPS(4, _omitFieldNames ? '' : 'scope')
-    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'lifetime', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'lifetime',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateAccessTokenRequest clone() => GenerateAccessTokenRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateAccessTokenRequest copyWith(void Function(GenerateAccessTokenRequest) updates) => super.copyWith((message) => updates(message as GenerateAccessTokenRequest)) as GenerateAccessTokenRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateAccessTokenRequest clone() =>
+      GenerateAccessTokenRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateAccessTokenRequest copyWith(
+          void Function(GenerateAccessTokenRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GenerateAccessTokenRequest))
+          as GenerateAccessTokenRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GenerateAccessTokenRequest create() => GenerateAccessTokenRequest._();
   GenerateAccessTokenRequest createEmptyInstance() => create();
-  static $pb.PbList<GenerateAccessTokenRequest> createRepeated() => $pb.PbList<GenerateAccessTokenRequest>();
+  static $pb.PbList<GenerateAccessTokenRequest> createRepeated() =>
+      $pb.PbList<GenerateAccessTokenRequest>();
   @$core.pragma('dart2js:noInline')
-  static GenerateAccessTokenRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateAccessTokenRequest>(create);
+  static GenerateAccessTokenRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateAccessTokenRequest>(create);
   static GenerateAccessTokenRequest? _defaultInstance;
 
   /// Required. The resource name of the service account for which the credentials
@@ -78,7 +91,10 @@ class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -111,7 +127,10 @@ class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $264.Duration get lifetime => $_getN(3);
   @$pb.TagNumber(7)
-  set lifetime($264.Duration v) { setField(7, v); }
+  set lifetime($264.Duration v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasLifetime() => $_has(3);
   @$pb.TagNumber(7)
@@ -135,41 +154,58 @@ class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateAccessTokenResponse._() : super();
-  factory GenerateAccessTokenResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateAccessTokenResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateAccessTokenResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateAccessTokenResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateAccessTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateAccessTokenResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accessToken')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateAccessTokenResponse clone() => GenerateAccessTokenResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateAccessTokenResponse copyWith(void Function(GenerateAccessTokenResponse) updates) => super.copyWith((message) => updates(message as GenerateAccessTokenResponse)) as GenerateAccessTokenResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateAccessTokenResponse clone() =>
+      GenerateAccessTokenResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateAccessTokenResponse copyWith(
+          void Function(GenerateAccessTokenResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as GenerateAccessTokenResponse))
+          as GenerateAccessTokenResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GenerateAccessTokenResponse create() => GenerateAccessTokenResponse._();
+  static GenerateAccessTokenResponse create() =>
+      GenerateAccessTokenResponse._();
   GenerateAccessTokenResponse createEmptyInstance() => create();
-  static $pb.PbList<GenerateAccessTokenResponse> createRepeated() => $pb.PbList<GenerateAccessTokenResponse>();
+  static $pb.PbList<GenerateAccessTokenResponse> createRepeated() =>
+      $pb.PbList<GenerateAccessTokenResponse>();
   @$core.pragma('dart2js:noInline')
-  static GenerateAccessTokenResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateAccessTokenResponse>(create);
+  static GenerateAccessTokenResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateAccessTokenResponse>(create);
   static GenerateAccessTokenResponse? _defaultInstance;
 
   /// The OAuth 2.0 access token.
   @$pb.TagNumber(1)
   $core.String get accessToken => $_getSZ(0);
   @$pb.TagNumber(1)
-  set accessToken($core.String v) { $_setString(0, v); }
+  set accessToken($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAccessToken() => $_has(0);
   @$pb.TagNumber(1)
@@ -180,7 +216,10 @@ class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(3)
-  set expireTime($302.Timestamp v) { setField(3, v); }
+  set expireTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(3)
@@ -208,35 +247,45 @@ class SignBlobRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SignBlobRequest._() : super();
-  factory SignBlobRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SignBlobRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SignBlobRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SignBlobRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SignBlobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SignBlobRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(3, _omitFieldNames ? '' : 'delegates')
-    ..a<$core.List<$core.int>>(5, _omitFieldNames ? '' : 'payload', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        5, _omitFieldNames ? '' : 'payload', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SignBlobRequest clone() => SignBlobRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SignBlobRequest copyWith(void Function(SignBlobRequest) updates) => super.copyWith((message) => updates(message as SignBlobRequest)) as SignBlobRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SignBlobRequest copyWith(void Function(SignBlobRequest) updates) =>
+      super.copyWith((message) => updates(message as SignBlobRequest))
+          as SignBlobRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SignBlobRequest create() => SignBlobRequest._();
   SignBlobRequest createEmptyInstance() => create();
-  static $pb.PbList<SignBlobRequest> createRepeated() => $pb.PbList<SignBlobRequest>();
+  static $pb.PbList<SignBlobRequest> createRepeated() =>
+      $pb.PbList<SignBlobRequest>();
   @$core.pragma('dart2js:noInline')
-  static SignBlobRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SignBlobRequest>(create);
+  static SignBlobRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SignBlobRequest>(create);
   static SignBlobRequest? _defaultInstance;
 
   /// Required. The resource name of the service account for which the credentials
@@ -246,7 +295,10 @@ class SignBlobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -269,7 +321,10 @@ class SignBlobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.List<$core.int> get payload => $_getN(2);
   @$pb.TagNumber(5)
-  set payload($core.List<$core.int> v) { $_setBytes(2, v); }
+  set payload($core.List<$core.int> v) {
+    $_setBytes(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPayload() => $_has(2);
   @$pb.TagNumber(5)
@@ -291,41 +346,54 @@ class SignBlobResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SignBlobResponse._() : super();
-  factory SignBlobResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SignBlobResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SignBlobResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SignBlobResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SignBlobResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SignBlobResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'keyId')
-    ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'signedBlob', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        4, _omitFieldNames ? '' : 'signedBlob', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SignBlobResponse clone() => SignBlobResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SignBlobResponse copyWith(void Function(SignBlobResponse) updates) => super.copyWith((message) => updates(message as SignBlobResponse)) as SignBlobResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SignBlobResponse copyWith(void Function(SignBlobResponse) updates) =>
+      super.copyWith((message) => updates(message as SignBlobResponse))
+          as SignBlobResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SignBlobResponse create() => SignBlobResponse._();
   SignBlobResponse createEmptyInstance() => create();
-  static $pb.PbList<SignBlobResponse> createRepeated() => $pb.PbList<SignBlobResponse>();
+  static $pb.PbList<SignBlobResponse> createRepeated() =>
+      $pb.PbList<SignBlobResponse>();
   @$core.pragma('dart2js:noInline')
-  static SignBlobResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SignBlobResponse>(create);
+  static SignBlobResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SignBlobResponse>(create);
   static SignBlobResponse? _defaultInstance;
 
   /// The ID of the key used to sign the blob.
   @$pb.TagNumber(1)
   $core.String get keyId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set keyId($core.String v) { $_setString(0, v); }
+  set keyId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKeyId() => $_has(0);
   @$pb.TagNumber(1)
@@ -335,7 +403,10 @@ class SignBlobResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get signedBlob => $_getN(1);
   @$pb.TagNumber(4)
-  set signedBlob($core.List<$core.int> v) { $_setBytes(1, v); }
+  set signedBlob($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSignedBlob() => $_has(1);
   @$pb.TagNumber(4)
@@ -361,35 +432,44 @@ class SignJwtRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SignJwtRequest._() : super();
-  factory SignJwtRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SignJwtRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SignJwtRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SignJwtRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SignJwtRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SignJwtRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(3, _omitFieldNames ? '' : 'delegates')
     ..aOS(5, _omitFieldNames ? '' : 'payload')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SignJwtRequest clone() => SignJwtRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SignJwtRequest copyWith(void Function(SignJwtRequest) updates) => super.copyWith((message) => updates(message as SignJwtRequest)) as SignJwtRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SignJwtRequest copyWith(void Function(SignJwtRequest) updates) =>
+      super.copyWith((message) => updates(message as SignJwtRequest))
+          as SignJwtRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SignJwtRequest create() => SignJwtRequest._();
   SignJwtRequest createEmptyInstance() => create();
-  static $pb.PbList<SignJwtRequest> createRepeated() => $pb.PbList<SignJwtRequest>();
+  static $pb.PbList<SignJwtRequest> createRepeated() =>
+      $pb.PbList<SignJwtRequest>();
   @$core.pragma('dart2js:noInline')
-  static SignJwtRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SignJwtRequest>(create);
+  static SignJwtRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SignJwtRequest>(create);
   static SignJwtRequest? _defaultInstance;
 
   /// Required. The resource name of the service account for which the credentials
@@ -399,7 +479,10 @@ class SignJwtRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -422,7 +505,10 @@ class SignJwtRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get payload => $_getSZ(2);
   @$pb.TagNumber(5)
-  set payload($core.String v) { $_setString(2, v); }
+  set payload($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPayload() => $_has(2);
   @$pb.TagNumber(5)
@@ -444,41 +530,53 @@ class SignJwtResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SignJwtResponse._() : super();
-  factory SignJwtResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SignJwtResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SignJwtResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SignJwtResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SignJwtResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SignJwtResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'keyId')
     ..aOS(2, _omitFieldNames ? '' : 'signedJwt')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SignJwtResponse clone() => SignJwtResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SignJwtResponse copyWith(void Function(SignJwtResponse) updates) => super.copyWith((message) => updates(message as SignJwtResponse)) as SignJwtResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SignJwtResponse copyWith(void Function(SignJwtResponse) updates) =>
+      super.copyWith((message) => updates(message as SignJwtResponse))
+          as SignJwtResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SignJwtResponse create() => SignJwtResponse._();
   SignJwtResponse createEmptyInstance() => create();
-  static $pb.PbList<SignJwtResponse> createRepeated() => $pb.PbList<SignJwtResponse>();
+  static $pb.PbList<SignJwtResponse> createRepeated() =>
+      $pb.PbList<SignJwtResponse>();
   @$core.pragma('dart2js:noInline')
-  static SignJwtResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SignJwtResponse>(create);
+  static SignJwtResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SignJwtResponse>(create);
   static SignJwtResponse? _defaultInstance;
 
   /// The ID of the key used to sign the JWT.
   @$pb.TagNumber(1)
   $core.String get keyId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set keyId($core.String v) { $_setString(0, v); }
+  set keyId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKeyId() => $_has(0);
   @$pb.TagNumber(1)
@@ -488,7 +586,10 @@ class SignJwtResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get signedJwt => $_getSZ(1);
   @$pb.TagNumber(2)
-  set signedJwt($core.String v) { $_setString(1, v); }
+  set signedJwt($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSignedJwt() => $_has(1);
   @$pb.TagNumber(2)
@@ -518,36 +619,47 @@ class GenerateIdTokenRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateIdTokenRequest._() : super();
-  factory GenerateIdTokenRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateIdTokenRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateIdTokenRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateIdTokenRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateIdTokenRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateIdTokenRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(2, _omitFieldNames ? '' : 'delegates')
     ..aOS(3, _omitFieldNames ? '' : 'audience')
     ..aOB(4, _omitFieldNames ? '' : 'includeEmail')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateIdTokenRequest clone() => GenerateIdTokenRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateIdTokenRequest copyWith(void Function(GenerateIdTokenRequest) updates) => super.copyWith((message) => updates(message as GenerateIdTokenRequest)) as GenerateIdTokenRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateIdTokenRequest clone() =>
+      GenerateIdTokenRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateIdTokenRequest copyWith(
+          void Function(GenerateIdTokenRequest) updates) =>
+      super.copyWith((message) => updates(message as GenerateIdTokenRequest))
+          as GenerateIdTokenRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GenerateIdTokenRequest create() => GenerateIdTokenRequest._();
   GenerateIdTokenRequest createEmptyInstance() => create();
-  static $pb.PbList<GenerateIdTokenRequest> createRepeated() => $pb.PbList<GenerateIdTokenRequest>();
+  static $pb.PbList<GenerateIdTokenRequest> createRepeated() =>
+      $pb.PbList<GenerateIdTokenRequest>();
   @$core.pragma('dart2js:noInline')
-  static GenerateIdTokenRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateIdTokenRequest>(create);
+  static GenerateIdTokenRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateIdTokenRequest>(create);
   static GenerateIdTokenRequest? _defaultInstance;
 
   /// Required. The resource name of the service account for which the credentials
@@ -557,7 +669,10 @@ class GenerateIdTokenRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -581,7 +696,10 @@ class GenerateIdTokenRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get audience => $_getSZ(2);
   @$pb.TagNumber(3)
-  set audience($core.String v) { $_setString(2, v); }
+  set audience($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAudience() => $_has(2);
   @$pb.TagNumber(3)
@@ -592,7 +710,10 @@ class GenerateIdTokenRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get includeEmail => $_getBF(3);
   @$pb.TagNumber(4)
-  set includeEmail($core.bool v) { $_setBool(3, v); }
+  set includeEmail($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasIncludeEmail() => $_has(3);
   @$pb.TagNumber(4)
@@ -610,46 +731,60 @@ class GenerateIdTokenResponse extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateIdTokenResponse._() : super();
-  factory GenerateIdTokenResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateIdTokenResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateIdTokenResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateIdTokenResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateIdTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateIdTokenResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.credentials.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'token')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateIdTokenResponse clone() => GenerateIdTokenResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateIdTokenResponse copyWith(void Function(GenerateIdTokenResponse) updates) => super.copyWith((message) => updates(message as GenerateIdTokenResponse)) as GenerateIdTokenResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateIdTokenResponse clone() =>
+      GenerateIdTokenResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateIdTokenResponse copyWith(
+          void Function(GenerateIdTokenResponse) updates) =>
+      super.copyWith((message) => updates(message as GenerateIdTokenResponse))
+          as GenerateIdTokenResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GenerateIdTokenResponse create() => GenerateIdTokenResponse._();
   GenerateIdTokenResponse createEmptyInstance() => create();
-  static $pb.PbList<GenerateIdTokenResponse> createRepeated() => $pb.PbList<GenerateIdTokenResponse>();
+  static $pb.PbList<GenerateIdTokenResponse> createRepeated() =>
+      $pb.PbList<GenerateIdTokenResponse>();
   @$core.pragma('dart2js:noInline')
-  static GenerateIdTokenResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateIdTokenResponse>(create);
+  static GenerateIdTokenResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateIdTokenResponse>(create);
   static GenerateIdTokenResponse? _defaultInstance;
 
   /// The OpenId Connect ID token.
   @$pb.TagNumber(1)
   $core.String get token => $_getSZ(0);
   @$pb.TagNumber(1)
-  set token($core.String v) { $_setString(0, v); }
+  set token($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasToken() => $_has(0);
   @$pb.TagNumber(1)
   void clearToken() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -36,34 +36,45 @@ class Scorecard_GaugeView extends $pb.GeneratedMessage {
     return $result;
   }
   Scorecard_GaugeView._() : super();
-  factory Scorecard_GaugeView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Scorecard_GaugeView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Scorecard_GaugeView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Scorecard_GaugeView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Scorecard.GaugeView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'lowerBound', $pb.PbFieldType.OD)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'upperBound', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Scorecard.GaugeView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'lowerBound', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'upperBound', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Scorecard_GaugeView clone() => Scorecard_GaugeView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Scorecard_GaugeView copyWith(void Function(Scorecard_GaugeView) updates) => super.copyWith((message) => updates(message as Scorecard_GaugeView)) as Scorecard_GaugeView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Scorecard_GaugeView copyWith(void Function(Scorecard_GaugeView) updates) =>
+      super.copyWith((message) => updates(message as Scorecard_GaugeView))
+          as Scorecard_GaugeView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Scorecard_GaugeView create() => Scorecard_GaugeView._();
   Scorecard_GaugeView createEmptyInstance() => create();
-  static $pb.PbList<Scorecard_GaugeView> createRepeated() => $pb.PbList<Scorecard_GaugeView>();
+  static $pb.PbList<Scorecard_GaugeView> createRepeated() =>
+      $pb.PbList<Scorecard_GaugeView>();
   @$core.pragma('dart2js:noInline')
-  static Scorecard_GaugeView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Scorecard_GaugeView>(create);
+  static Scorecard_GaugeView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Scorecard_GaugeView>(create);
   static Scorecard_GaugeView? _defaultInstance;
 
   /// The lower bound for this gauge chart. The value of the chart should
@@ -71,7 +82,10 @@ class Scorecard_GaugeView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get lowerBound => $_getN(0);
   @$pb.TagNumber(1)
-  set lowerBound($core.double v) { $_setDouble(0, v); }
+  set lowerBound($core.double v) {
+    $_setDouble(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLowerBound() => $_has(0);
   @$pb.TagNumber(1)
@@ -82,7 +96,10 @@ class Scorecard_GaugeView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get upperBound => $_getN(1);
   @$pb.TagNumber(2)
-  set upperBound($core.double v) { $_setDouble(1, v); }
+  set upperBound($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpperBound() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,41 +125,60 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
     return $result;
   }
   Scorecard_SparkChartView._() : super();
-  factory Scorecard_SparkChartView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Scorecard_SparkChartView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Scorecard_SparkChartView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Scorecard_SparkChartView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Scorecard.SparkChartView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..e<$513.SparkChartType>(1, _omitFieldNames ? '' : 'sparkChartType', $pb.PbFieldType.OE, defaultOrMaker: $513.SparkChartType.SPARK_CHART_TYPE_UNSPECIFIED, valueOf: $513.SparkChartType.valueOf, enumValues: $513.SparkChartType.values)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Scorecard.SparkChartView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..e<$513.SparkChartType>(
+        1, _omitFieldNames ? '' : 'sparkChartType', $pb.PbFieldType.OE,
+        defaultOrMaker: $513.SparkChartType.SPARK_CHART_TYPE_UNSPECIFIED,
+        valueOf: $513.SparkChartType.valueOf,
+        enumValues: $513.SparkChartType.values)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'minAlignmentPeriod',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Scorecard_SparkChartView clone() => Scorecard_SparkChartView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Scorecard_SparkChartView copyWith(void Function(Scorecard_SparkChartView) updates) => super.copyWith((message) => updates(message as Scorecard_SparkChartView)) as Scorecard_SparkChartView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Scorecard_SparkChartView clone() =>
+      Scorecard_SparkChartView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Scorecard_SparkChartView copyWith(
+          void Function(Scorecard_SparkChartView) updates) =>
+      super.copyWith((message) => updates(message as Scorecard_SparkChartView))
+          as Scorecard_SparkChartView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Scorecard_SparkChartView create() => Scorecard_SparkChartView._();
   Scorecard_SparkChartView createEmptyInstance() => create();
-  static $pb.PbList<Scorecard_SparkChartView> createRepeated() => $pb.PbList<Scorecard_SparkChartView>();
+  static $pb.PbList<Scorecard_SparkChartView> createRepeated() =>
+      $pb.PbList<Scorecard_SparkChartView>();
   @$core.pragma('dart2js:noInline')
-  static Scorecard_SparkChartView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Scorecard_SparkChartView>(create);
+  static Scorecard_SparkChartView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Scorecard_SparkChartView>(create);
   static Scorecard_SparkChartView? _defaultInstance;
 
   /// Required. The type of sparkchart to show in this chartView.
   @$pb.TagNumber(1)
   $513.SparkChartType get sparkChartType => $_getN(0);
   @$pb.TagNumber(1)
-  set sparkChartType($513.SparkChartType v) { setField(1, v); }
+  set sparkChartType($513.SparkChartType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSparkChartType() => $_has(0);
   @$pb.TagNumber(1)
@@ -156,7 +192,10 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get minAlignmentPeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set minAlignmentPeriod($264.Duration v) { setField(2, v); }
+  set minAlignmentPeriod($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinAlignmentPeriod() => $_has(1);
   @$pb.TagNumber(2)
@@ -165,12 +204,7 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   $264.Duration ensureMinAlignmentPeriod() => $_ensure(1);
 }
 
-enum Scorecard_DataView {
-  gaugeView, 
-  sparkChartView, 
-  blankView, 
-  notSet
-}
+enum Scorecard_DataView { gaugeView, sparkChartView, blankView, notSet }
 
 /// A widget showing the latest value of a metric, and how this value relates to
 /// one or more thresholds.
@@ -201,35 +235,48 @@ class Scorecard extends $pb.GeneratedMessage {
     return $result;
   }
   Scorecard._() : super();
-  factory Scorecard.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Scorecard.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Scorecard.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Scorecard.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Scorecard_DataView> _Scorecard_DataViewByTag = {
-    4 : Scorecard_DataView.gaugeView,
-    5 : Scorecard_DataView.sparkChartView,
-    7 : Scorecard_DataView.blankView,
-    0 : Scorecard_DataView.notSet
+  static const $core.Map<$core.int, Scorecard_DataView>
+      _Scorecard_DataViewByTag = {
+    4: Scorecard_DataView.gaugeView,
+    5: Scorecard_DataView.sparkChartView,
+    7: Scorecard_DataView.blankView,
+    0: Scorecard_DataView.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Scorecard', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Scorecard',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..oo(0, [4, 5, 7])
-    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $513.TimeSeriesQuery.create)
-    ..aOM<Scorecard_GaugeView>(4, _omitFieldNames ? '' : 'gaugeView', subBuilder: Scorecard_GaugeView.create)
-    ..aOM<Scorecard_SparkChartView>(5, _omitFieldNames ? '' : 'sparkChartView', subBuilder: Scorecard_SparkChartView.create)
-    ..pc<$513.Threshold>(6, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM, subBuilder: $513.Threshold.create)
-    ..aOM<$3.Empty>(7, _omitFieldNames ? '' : 'blankView', subBuilder: $3.Empty.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $513.TimeSeriesQuery.create)
+    ..aOM<Scorecard_GaugeView>(4, _omitFieldNames ? '' : 'gaugeView',
+        subBuilder: Scorecard_GaugeView.create)
+    ..aOM<Scorecard_SparkChartView>(5, _omitFieldNames ? '' : 'sparkChartView',
+        subBuilder: Scorecard_SparkChartView.create)
+    ..pc<$513.Threshold>(
+        6, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM,
+        subBuilder: $513.Threshold.create)
+    ..aOM<$3.Empty>(7, _omitFieldNames ? '' : 'blankView',
+        subBuilder: $3.Empty.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Scorecard clone() => Scorecard()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Scorecard copyWith(void Function(Scorecard) updates) => super.copyWith((message) => updates(message as Scorecard)) as Scorecard;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Scorecard copyWith(void Function(Scorecard) updates) =>
+      super.copyWith((message) => updates(message as Scorecard)) as Scorecard;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -238,10 +285,12 @@ class Scorecard extends $pb.GeneratedMessage {
   Scorecard createEmptyInstance() => create();
   static $pb.PbList<Scorecard> createRepeated() => $pb.PbList<Scorecard>();
   @$core.pragma('dart2js:noInline')
-  static Scorecard getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Scorecard>(create);
+  static Scorecard getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Scorecard>(create);
   static Scorecard? _defaultInstance;
 
-  Scorecard_DataView whichDataView() => _Scorecard_DataViewByTag[$_whichOneof(0)]!;
+  Scorecard_DataView whichDataView() =>
+      _Scorecard_DataViewByTag[$_whichOneof(0)]!;
   void clearDataView() => clearField($_whichOneof(0));
 
   /// Required. Fields for querying time series data from the
@@ -249,7 +298,10 @@ class Scorecard extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $513.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($513.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($513.TimeSeriesQuery v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -261,7 +313,10 @@ class Scorecard extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Scorecard_GaugeView get gaugeView => $_getN(1);
   @$pb.TagNumber(4)
-  set gaugeView(Scorecard_GaugeView v) { setField(4, v); }
+  set gaugeView(Scorecard_GaugeView v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasGaugeView() => $_has(1);
   @$pb.TagNumber(4)
@@ -273,7 +328,10 @@ class Scorecard extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Scorecard_SparkChartView get sparkChartView => $_getN(2);
   @$pb.TagNumber(5)
-  set sparkChartView(Scorecard_SparkChartView v) { setField(5, v); }
+  set sparkChartView(Scorecard_SparkChartView v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSparkChartView() => $_has(2);
   @$pb.TagNumber(5)
@@ -327,7 +385,10 @@ class Scorecard extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $3.Empty get blankView => $_getN(4);
   @$pb.TagNumber(7)
-  set blankView($3.Empty v) { setField(7, v); }
+  set blankView($3.Empty v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasBlankView() => $_has(4);
   @$pb.TagNumber(7)
@@ -336,6 +397,6 @@ class Scorecard extends $pb.GeneratedMessage {
   $3.Empty ensureBlankView() => $_ensure(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

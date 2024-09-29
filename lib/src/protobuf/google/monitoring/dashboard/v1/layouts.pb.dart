@@ -33,25 +33,32 @@ class GridLayout extends $pb.GeneratedMessage {
     return $result;
   }
   GridLayout._() : super();
-  factory GridLayout.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GridLayout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GridLayout.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GridLayout.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GridLayout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GridLayout',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'columns')
-    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $527.Widget.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM,
+        subBuilder: $527.Widget.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GridLayout clone() => GridLayout()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GridLayout copyWith(void Function(GridLayout) updates) => super.copyWith((message) => updates(message as GridLayout)) as GridLayout;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GridLayout copyWith(void Function(GridLayout) updates) =>
+      super.copyWith((message) => updates(message as GridLayout)) as GridLayout;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -60,7 +67,8 @@ class GridLayout extends $pb.GeneratedMessage {
   GridLayout createEmptyInstance() => create();
   static $pb.PbList<GridLayout> createRepeated() => $pb.PbList<GridLayout>();
   @$core.pragma('dart2js:noInline')
-  static GridLayout getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GridLayout>(create);
+  static GridLayout getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GridLayout>(create);
   static GridLayout? _defaultInstance;
 
   /// The number of columns into which the view's width is divided. If omitted
@@ -68,7 +76,10 @@ class GridLayout extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get columns => $_getI64(0);
   @$pb.TagNumber(1)
-  set columns($fixnum.Int64 v) { $_setInt64(0, v); }
+  set columns($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasColumns() => $_has(0);
   @$pb.TagNumber(1)
@@ -108,37 +119,47 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
     return $result;
   }
   MosaicLayout_Tile._() : super();
-  factory MosaicLayout_Tile.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MosaicLayout_Tile.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MosaicLayout_Tile.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MosaicLayout_Tile.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MosaicLayout.Tile', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MosaicLayout.Tile',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'xPos', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'yPos', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
-    ..aOM<$527.Widget>(5, _omitFieldNames ? '' : 'widget', subBuilder: $527.Widget.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$527.Widget>(5, _omitFieldNames ? '' : 'widget',
+        subBuilder: $527.Widget.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MosaicLayout_Tile clone() => MosaicLayout_Tile()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MosaicLayout_Tile copyWith(void Function(MosaicLayout_Tile) updates) => super.copyWith((message) => updates(message as MosaicLayout_Tile)) as MosaicLayout_Tile;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MosaicLayout_Tile copyWith(void Function(MosaicLayout_Tile) updates) =>
+      super.copyWith((message) => updates(message as MosaicLayout_Tile))
+          as MosaicLayout_Tile;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MosaicLayout_Tile create() => MosaicLayout_Tile._();
   MosaicLayout_Tile createEmptyInstance() => create();
-  static $pb.PbList<MosaicLayout_Tile> createRepeated() => $pb.PbList<MosaicLayout_Tile>();
+  static $pb.PbList<MosaicLayout_Tile> createRepeated() =>
+      $pb.PbList<MosaicLayout_Tile>();
   @$core.pragma('dart2js:noInline')
-  static MosaicLayout_Tile getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MosaicLayout_Tile>(create);
+  static MosaicLayout_Tile getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MosaicLayout_Tile>(create);
   static MosaicLayout_Tile? _defaultInstance;
 
   /// The zero-indexed position of the tile in grid blocks relative to the
@@ -147,7 +168,10 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get xPos => $_getIZ(0);
   @$pb.TagNumber(1)
-  set xPos($core.int v) { $_setSignedInt32(0, v); }
+  set xPos($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasXPos() => $_has(0);
   @$pb.TagNumber(1)
@@ -158,7 +182,10 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get yPos => $_getIZ(1);
   @$pb.TagNumber(2)
-  set yPos($core.int v) { $_setSignedInt32(1, v); }
+  set yPos($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasYPos() => $_has(1);
   @$pb.TagNumber(2)
@@ -169,7 +196,10 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get width => $_getIZ(2);
   @$pb.TagNumber(3)
-  set width($core.int v) { $_setSignedInt32(2, v); }
+  set width($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWidth() => $_has(2);
   @$pb.TagNumber(3)
@@ -180,7 +210,10 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get height => $_getIZ(3);
   @$pb.TagNumber(4)
-  set height($core.int v) { $_setSignedInt32(3, v); }
+  set height($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasHeight() => $_has(3);
   @$pb.TagNumber(4)
@@ -190,7 +223,10 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $527.Widget get widget => $_getN(4);
   @$pb.TagNumber(5)
-  set widget($527.Widget v) { setField(5, v); }
+  set widget($527.Widget v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasWidget() => $_has(4);
   @$pb.TagNumber(5)
@@ -217,34 +253,45 @@ class MosaicLayout extends $pb.GeneratedMessage {
     return $result;
   }
   MosaicLayout._() : super();
-  factory MosaicLayout.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MosaicLayout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MosaicLayout.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MosaicLayout.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MosaicLayout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MosaicLayout',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.O3)
-    ..pc<MosaicLayout_Tile>(3, _omitFieldNames ? '' : 'tiles', $pb.PbFieldType.PM, subBuilder: MosaicLayout_Tile.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<MosaicLayout_Tile>(
+        3, _omitFieldNames ? '' : 'tiles', $pb.PbFieldType.PM,
+        subBuilder: MosaicLayout_Tile.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MosaicLayout clone() => MosaicLayout()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MosaicLayout copyWith(void Function(MosaicLayout) updates) => super.copyWith((message) => updates(message as MosaicLayout)) as MosaicLayout;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MosaicLayout copyWith(void Function(MosaicLayout) updates) =>
+      super.copyWith((message) => updates(message as MosaicLayout))
+          as MosaicLayout;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MosaicLayout create() => MosaicLayout._();
   MosaicLayout createEmptyInstance() => create();
-  static $pb.PbList<MosaicLayout> createRepeated() => $pb.PbList<MosaicLayout>();
+  static $pb.PbList<MosaicLayout> createRepeated() =>
+      $pb.PbList<MosaicLayout>();
   @$core.pragma('dart2js:noInline')
-  static MosaicLayout getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MosaicLayout>(create);
+  static MosaicLayout getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MosaicLayout>(create);
   static MosaicLayout? _defaultInstance;
 
   /// The number of columns in the mosaic grid. The number of columns must be
@@ -252,7 +299,10 @@ class MosaicLayout extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get columns => $_getIZ(0);
   @$pb.TagNumber(1)
-  set columns($core.int v) { $_setSignedInt32(0, v); }
+  set columns($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasColumns() => $_has(0);
   @$pb.TagNumber(1)
@@ -279,34 +329,44 @@ class RowLayout_Row extends $pb.GeneratedMessage {
     return $result;
   }
   RowLayout_Row._() : super();
-  factory RowLayout_Row.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RowLayout_Row.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RowLayout_Row.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RowLayout_Row.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RowLayout.Row', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RowLayout.Row',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'weight')
-    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $527.Widget.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM,
+        subBuilder: $527.Widget.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RowLayout_Row clone() => RowLayout_Row()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RowLayout_Row copyWith(void Function(RowLayout_Row) updates) => super.copyWith((message) => updates(message as RowLayout_Row)) as RowLayout_Row;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RowLayout_Row copyWith(void Function(RowLayout_Row) updates) =>
+      super.copyWith((message) => updates(message as RowLayout_Row))
+          as RowLayout_Row;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RowLayout_Row create() => RowLayout_Row._();
   RowLayout_Row createEmptyInstance() => create();
-  static $pb.PbList<RowLayout_Row> createRepeated() => $pb.PbList<RowLayout_Row>();
+  static $pb.PbList<RowLayout_Row> createRepeated() =>
+      $pb.PbList<RowLayout_Row>();
   @$core.pragma('dart2js:noInline')
-  static RowLayout_Row getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RowLayout_Row>(create);
+  static RowLayout_Row getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RowLayout_Row>(create);
   static RowLayout_Row? _defaultInstance;
 
   /// The relative weight of this row. The row weight is used to adjust the
@@ -316,7 +376,10 @@ class RowLayout_Row extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get weight => $_getI64(0);
   @$pb.TagNumber(1)
-  set weight($fixnum.Int64 v) { $_setInt64(0, v); }
+  set weight($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWeight() => $_has(0);
   @$pb.TagNumber(1)
@@ -340,24 +403,31 @@ class RowLayout extends $pb.GeneratedMessage {
     return $result;
   }
   RowLayout._() : super();
-  factory RowLayout.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RowLayout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RowLayout.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RowLayout.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RowLayout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<RowLayout_Row>(1, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: RowLayout_Row.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RowLayout',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..pc<RowLayout_Row>(1, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
+        subBuilder: RowLayout_Row.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RowLayout clone() => RowLayout()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RowLayout copyWith(void Function(RowLayout) updates) => super.copyWith((message) => updates(message as RowLayout)) as RowLayout;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RowLayout copyWith(void Function(RowLayout) updates) =>
+      super.copyWith((message) => updates(message as RowLayout)) as RowLayout;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -366,7 +436,8 @@ class RowLayout extends $pb.GeneratedMessage {
   RowLayout createEmptyInstance() => create();
   static $pb.PbList<RowLayout> createRepeated() => $pb.PbList<RowLayout>();
   @$core.pragma('dart2js:noInline')
-  static RowLayout getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RowLayout>(create);
+  static RowLayout getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RowLayout>(create);
   static RowLayout? _defaultInstance;
 
   /// The rows of content to display.
@@ -390,34 +461,44 @@ class ColumnLayout_Column extends $pb.GeneratedMessage {
     return $result;
   }
   ColumnLayout_Column._() : super();
-  factory ColumnLayout_Column.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ColumnLayout_Column.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ColumnLayout_Column.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ColumnLayout_Column.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnLayout.Column', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ColumnLayout.Column',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'weight')
-    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $527.Widget.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM,
+        subBuilder: $527.Widget.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ColumnLayout_Column clone() => ColumnLayout_Column()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ColumnLayout_Column copyWith(void Function(ColumnLayout_Column) updates) => super.copyWith((message) => updates(message as ColumnLayout_Column)) as ColumnLayout_Column;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ColumnLayout_Column copyWith(void Function(ColumnLayout_Column) updates) =>
+      super.copyWith((message) => updates(message as ColumnLayout_Column))
+          as ColumnLayout_Column;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ColumnLayout_Column create() => ColumnLayout_Column._();
   ColumnLayout_Column createEmptyInstance() => create();
-  static $pb.PbList<ColumnLayout_Column> createRepeated() => $pb.PbList<ColumnLayout_Column>();
+  static $pb.PbList<ColumnLayout_Column> createRepeated() =>
+      $pb.PbList<ColumnLayout_Column>();
   @$core.pragma('dart2js:noInline')
-  static ColumnLayout_Column getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ColumnLayout_Column>(create);
+  static ColumnLayout_Column getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ColumnLayout_Column>(create);
   static ColumnLayout_Column? _defaultInstance;
 
   /// The relative weight of this column. The column weight is used to adjust
@@ -427,7 +508,10 @@ class ColumnLayout_Column extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get weight => $_getI64(0);
   @$pb.TagNumber(1)
-  set weight($fixnum.Int64 v) { $_setInt64(0, v); }
+  set weight($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWeight() => $_has(0);
   @$pb.TagNumber(1)
@@ -451,33 +535,44 @@ class ColumnLayout extends $pb.GeneratedMessage {
     return $result;
   }
   ColumnLayout._() : super();
-  factory ColumnLayout.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ColumnLayout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ColumnLayout.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ColumnLayout.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnLayout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<ColumnLayout_Column>(1, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM, subBuilder: ColumnLayout_Column.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ColumnLayout',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..pc<ColumnLayout_Column>(
+        1, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM,
+        subBuilder: ColumnLayout_Column.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ColumnLayout clone() => ColumnLayout()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ColumnLayout copyWith(void Function(ColumnLayout) updates) => super.copyWith((message) => updates(message as ColumnLayout)) as ColumnLayout;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ColumnLayout copyWith(void Function(ColumnLayout) updates) =>
+      super.copyWith((message) => updates(message as ColumnLayout))
+          as ColumnLayout;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ColumnLayout create() => ColumnLayout._();
   ColumnLayout createEmptyInstance() => create();
-  static $pb.PbList<ColumnLayout> createRepeated() => $pb.PbList<ColumnLayout>();
+  static $pb.PbList<ColumnLayout> createRepeated() =>
+      $pb.PbList<ColumnLayout>();
   @$core.pragma('dart2js:noInline')
-  static ColumnLayout getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ColumnLayout>(create);
+  static ColumnLayout getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ColumnLayout>(create);
   static ColumnLayout? _defaultInstance;
 
   /// The columns of content to display.
@@ -485,6 +580,6 @@ class ColumnLayout extends $pb.GeneratedMessage {
   $core.List<ColumnLayout_Column> get columns => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

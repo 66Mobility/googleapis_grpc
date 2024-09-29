@@ -40,35 +40,47 @@ class OperationProgress extends $pb.GeneratedMessage {
     return $result;
   }
   OperationProgress._() : super();
-  factory OperationProgress.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OperationProgress.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OperationProgress.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OperationProgress.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationProgress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OperationProgress',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OperationProgress clone() => OperationProgress()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OperationProgress copyWith(void Function(OperationProgress) updates) => super.copyWith((message) => updates(message as OperationProgress)) as OperationProgress;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OperationProgress copyWith(void Function(OperationProgress) updates) =>
+      super.copyWith((message) => updates(message as OperationProgress))
+          as OperationProgress;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OperationProgress create() => OperationProgress._();
   OperationProgress createEmptyInstance() => create();
-  static $pb.PbList<OperationProgress> createRepeated() => $pb.PbList<OperationProgress>();
+  static $pb.PbList<OperationProgress> createRepeated() =>
+      $pb.PbList<OperationProgress>();
   @$core.pragma('dart2js:noInline')
-  static OperationProgress getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OperationProgress>(create);
+  static OperationProgress getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OperationProgress>(create);
   static OperationProgress? _defaultInstance;
 
   /// Percent completion of the operation.
@@ -76,7 +88,10 @@ class OperationProgress extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get progressPercent => $_getIZ(0);
   @$pb.TagNumber(1)
-  set progressPercent($core.int v) { $_setSignedInt32(0, v); }
+  set progressPercent($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProgressPercent() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,7 +101,10 @@ class OperationProgress extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -99,7 +117,10 @@ class OperationProgress extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($302.Timestamp v) { setField(3, v); }
+  set endTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -124,34 +145,43 @@ class EncryptionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   EncryptionConfig._() : super();
-  factory EncryptionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EncryptionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EncryptionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EncryptionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EncryptionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyName')
     ..pPS(3, _omitFieldNames ? '' : 'kmsKeyNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EncryptionConfig clone() => EncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EncryptionConfig copyWith(void Function(EncryptionConfig) updates) => super.copyWith((message) => updates(message as EncryptionConfig)) as EncryptionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EncryptionConfig copyWith(void Function(EncryptionConfig) updates) =>
+      super.copyWith((message) => updates(message as EncryptionConfig))
+          as EncryptionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EncryptionConfig create() => EncryptionConfig._();
   EncryptionConfig createEmptyInstance() => create();
-  static $pb.PbList<EncryptionConfig> createRepeated() => $pb.PbList<EncryptionConfig>();
+  static $pb.PbList<EncryptionConfig> createRepeated() =>
+      $pb.PbList<EncryptionConfig>();
   @$core.pragma('dart2js:noInline')
-  static EncryptionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EncryptionConfig>(create);
+  static EncryptionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EncryptionConfig>(create);
   static EncryptionConfig? _defaultInstance;
 
   /// The Cloud KMS key to be used for encrypting and decrypting
@@ -160,7 +190,10 @@ class EncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get kmsKeyName => $_getSZ(0);
   @$pb.TagNumber(2)
-  set kmsKeyName($core.String v) { $_setString(0, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKmsKeyName() => $_has(0);
   @$pb.TagNumber(2)
@@ -205,35 +238,49 @@ class EncryptionInfo extends $pb.GeneratedMessage {
     return $result;
   }
   EncryptionInfo._() : super();
-  factory EncryptionInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EncryptionInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EncryptionInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EncryptionInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EncryptionInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyVersion')
-    ..e<EncryptionInfo_Type>(3, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: EncryptionInfo_Type.TYPE_UNSPECIFIED, valueOf: EncryptionInfo_Type.valueOf, enumValues: EncryptionInfo_Type.values)
-    ..aOM<$322.Status>(4, _omitFieldNames ? '' : 'encryptionStatus', subBuilder: $322.Status.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<EncryptionInfo_Type>(
+        3, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE,
+        defaultOrMaker: EncryptionInfo_Type.TYPE_UNSPECIFIED,
+        valueOf: EncryptionInfo_Type.valueOf,
+        enumValues: EncryptionInfo_Type.values)
+    ..aOM<$322.Status>(4, _omitFieldNames ? '' : 'encryptionStatus',
+        subBuilder: $322.Status.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EncryptionInfo clone() => EncryptionInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EncryptionInfo copyWith(void Function(EncryptionInfo) updates) => super.copyWith((message) => updates(message as EncryptionInfo)) as EncryptionInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EncryptionInfo copyWith(void Function(EncryptionInfo) updates) =>
+      super.copyWith((message) => updates(message as EncryptionInfo))
+          as EncryptionInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EncryptionInfo create() => EncryptionInfo._();
   EncryptionInfo createEmptyInstance() => create();
-  static $pb.PbList<EncryptionInfo> createRepeated() => $pb.PbList<EncryptionInfo>();
+  static $pb.PbList<EncryptionInfo> createRepeated() =>
+      $pb.PbList<EncryptionInfo>();
   @$core.pragma('dart2js:noInline')
-  static EncryptionInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EncryptionInfo>(create);
+  static EncryptionInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EncryptionInfo>(create);
   static EncryptionInfo? _defaultInstance;
 
   /// Output only. A Cloud KMS key version that is being used to protect the
@@ -241,7 +288,10 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get kmsKeyVersion => $_getSZ(0);
   @$pb.TagNumber(2)
-  set kmsKeyVersion($core.String v) { $_setString(0, v); }
+  set kmsKeyVersion($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKmsKeyVersion() => $_has(0);
   @$pb.TagNumber(2)
@@ -251,7 +301,10 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   EncryptionInfo_Type get encryptionType => $_getN(1);
   @$pb.TagNumber(3)
-  set encryptionType(EncryptionInfo_Type v) { setField(3, v); }
+  set encryptionType(EncryptionInfo_Type v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEncryptionType() => $_has(1);
   @$pb.TagNumber(3)
@@ -263,7 +316,10 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $322.Status get encryptionStatus => $_getN(2);
   @$pb.TagNumber(4)
-  set encryptionStatus($322.Status v) { setField(4, v); }
+  set encryptionStatus($322.Status v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEncryptionStatus() => $_has(2);
   @$pb.TagNumber(4)
@@ -272,6 +328,6 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   $322.Status ensureEncryptionStatus() => $_ensure(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -29,34 +29,47 @@ class StaticSimplePrompt_Variant extends $pb.GeneratedMessage {
     return $result;
   }
   StaticSimplePrompt_Variant._() : super();
-  factory StaticSimplePrompt_Variant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticSimplePrompt_Variant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticSimplePrompt_Variant.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticSimplePrompt_Variant.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticSimplePrompt.Variant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticSimplePrompt.Variant',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'speech')
     ..aOS(2, _omitFieldNames ? '' : 'text')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticSimplePrompt_Variant clone() => StaticSimplePrompt_Variant()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticSimplePrompt_Variant copyWith(void Function(StaticSimplePrompt_Variant) updates) => super.copyWith((message) => updates(message as StaticSimplePrompt_Variant)) as StaticSimplePrompt_Variant;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticSimplePrompt_Variant clone() =>
+      StaticSimplePrompt_Variant()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticSimplePrompt_Variant copyWith(
+          void Function(StaticSimplePrompt_Variant) updates) =>
+      super.copyWith(
+              (message) => updates(message as StaticSimplePrompt_Variant))
+          as StaticSimplePrompt_Variant;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticSimplePrompt_Variant create() => StaticSimplePrompt_Variant._();
   StaticSimplePrompt_Variant createEmptyInstance() => create();
-  static $pb.PbList<StaticSimplePrompt_Variant> createRepeated() => $pb.PbList<StaticSimplePrompt_Variant>();
+  static $pb.PbList<StaticSimplePrompt_Variant> createRepeated() =>
+      $pb.PbList<StaticSimplePrompt_Variant>();
   @$core.pragma('dart2js:noInline')
-  static StaticSimplePrompt_Variant getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticSimplePrompt_Variant>(create);
+  static StaticSimplePrompt_Variant getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticSimplePrompt_Variant>(create);
   static StaticSimplePrompt_Variant? _defaultInstance;
 
   /// Optional. Represents the speech to be spoken to the user.  Can be SSML or text to
@@ -68,7 +81,10 @@ class StaticSimplePrompt_Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get speech => $_getSZ(0);
   @$pb.TagNumber(1)
-  set speech($core.String v) { $_setString(0, v); }
+  set speech($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSpeech() => $_has(0);
   @$pb.TagNumber(1)
@@ -82,7 +98,10 @@ class StaticSimplePrompt_Variant extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get text => $_getSZ(1);
   @$pb.TagNumber(2)
-  set text($core.String v) { $_setString(1, v); }
+  set text($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasText() => $_has(1);
   @$pb.TagNumber(2)
@@ -101,33 +120,45 @@ class StaticSimplePrompt extends $pb.GeneratedMessage {
     return $result;
   }
   StaticSimplePrompt._() : super();
-  factory StaticSimplePrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticSimplePrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticSimplePrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticSimplePrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticSimplePrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..pc<StaticSimplePrompt_Variant>(1, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM, subBuilder: StaticSimplePrompt_Variant.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticSimplePrompt',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
+    ..pc<StaticSimplePrompt_Variant>(
+        1, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM,
+        subBuilder: StaticSimplePrompt_Variant.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StaticSimplePrompt clone() => StaticSimplePrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticSimplePrompt copyWith(void Function(StaticSimplePrompt) updates) => super.copyWith((message) => updates(message as StaticSimplePrompt)) as StaticSimplePrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticSimplePrompt copyWith(void Function(StaticSimplePrompt) updates) =>
+      super.copyWith((message) => updates(message as StaticSimplePrompt))
+          as StaticSimplePrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticSimplePrompt create() => StaticSimplePrompt._();
   StaticSimplePrompt createEmptyInstance() => create();
-  static $pb.PbList<StaticSimplePrompt> createRepeated() => $pb.PbList<StaticSimplePrompt>();
+  static $pb.PbList<StaticSimplePrompt> createRepeated() =>
+      $pb.PbList<StaticSimplePrompt>();
   @$core.pragma('dart2js:noInline')
-  static StaticSimplePrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticSimplePrompt>(create);
+  static StaticSimplePrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticSimplePrompt>(create);
   static StaticSimplePrompt? _defaultInstance;
 
   /// List of possible variants.
@@ -135,6 +166,6 @@ class StaticSimplePrompt extends $pb.GeneratedMessage {
   $core.List<StaticSimplePrompt_Variant> get variants => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

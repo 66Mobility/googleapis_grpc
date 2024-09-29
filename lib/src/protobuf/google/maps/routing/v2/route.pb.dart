@@ -53,43 +53,62 @@ class Route_RouteLocalizedValues extends $pb.GeneratedMessage {
     return $result;
   }
   Route_RouteLocalizedValues._() : super();
-  factory Route_RouteLocalizedValues.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Route_RouteLocalizedValues.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Route_RouteLocalizedValues.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Route_RouteLocalizedValues.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Route.RouteLocalizedValues', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'distance', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'duration', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(3, _omitFieldNames ? '' : 'staticDuration', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(4, _omitFieldNames ? '' : 'transitFare', subBuilder: $460.LocalizedText.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Route.RouteLocalizedValues',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'distance',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(3, _omitFieldNames ? '' : 'staticDuration',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(4, _omitFieldNames ? '' : 'transitFare',
+        subBuilder: $460.LocalizedText.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Route_RouteLocalizedValues clone() => Route_RouteLocalizedValues()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Route_RouteLocalizedValues copyWith(void Function(Route_RouteLocalizedValues) updates) => super.copyWith((message) => updates(message as Route_RouteLocalizedValues)) as Route_RouteLocalizedValues;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Route_RouteLocalizedValues clone() =>
+      Route_RouteLocalizedValues()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Route_RouteLocalizedValues copyWith(
+          void Function(Route_RouteLocalizedValues) updates) =>
+      super.copyWith(
+              (message) => updates(message as Route_RouteLocalizedValues))
+          as Route_RouteLocalizedValues;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Route_RouteLocalizedValues create() => Route_RouteLocalizedValues._();
   Route_RouteLocalizedValues createEmptyInstance() => create();
-  static $pb.PbList<Route_RouteLocalizedValues> createRepeated() => $pb.PbList<Route_RouteLocalizedValues>();
+  static $pb.PbList<Route_RouteLocalizedValues> createRepeated() =>
+      $pb.PbList<Route_RouteLocalizedValues>();
   @$core.pragma('dart2js:noInline')
-  static Route_RouteLocalizedValues getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Route_RouteLocalizedValues>(create);
+  static Route_RouteLocalizedValues getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Route_RouteLocalizedValues>(create);
   static Route_RouteLocalizedValues? _defaultInstance;
 
   /// Travel distance represented in text form.
   @$pb.TagNumber(1)
   $460.LocalizedText get distance => $_getN(0);
   @$pb.TagNumber(1)
-  set distance($460.LocalizedText v) { setField(1, v); }
+  set distance($460.LocalizedText v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDistance() => $_has(0);
   @$pb.TagNumber(1)
@@ -103,7 +122,10 @@ class Route_RouteLocalizedValues extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $460.LocalizedText get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($460.LocalizedText v) { setField(2, v); }
+  set duration($460.LocalizedText v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -116,7 +138,10 @@ class Route_RouteLocalizedValues extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $460.LocalizedText get staticDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set staticDuration($460.LocalizedText v) { setField(3, v); }
+  set staticDuration($460.LocalizedText v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStaticDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -128,7 +153,10 @@ class Route_RouteLocalizedValues extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $460.LocalizedText get transitFare => $_getN(3);
   @$pb.TagNumber(4)
-  set transitFare($460.LocalizedText v) { setField(4, v); }
+  set transitFare($460.LocalizedText v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTransitFare() => $_has(3);
   @$pb.TagNumber(4)
@@ -184,7 +212,8 @@ class Route extends $pb.GeneratedMessage {
       $result.travelAdvisory = travelAdvisory;
     }
     if (optimizedIntermediateWaypointIndex != null) {
-      $result.optimizedIntermediateWaypointIndex.addAll(optimizedIntermediateWaypointIndex);
+      $result.optimizedIntermediateWaypointIndex
+          .addAll(optimizedIntermediateWaypointIndex);
     }
     if (localizedValues != null) {
       $result.localizedValues = localizedValues;
@@ -198,36 +227,58 @@ class Route extends $pb.GeneratedMessage {
     return $result;
   }
   Route._() : super();
-  factory Route.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Route.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Route.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Route.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Route', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..pc<RouteLeg>(1, _omitFieldNames ? '' : 'legs', $pb.PbFieldType.PM, subBuilder: RouteLeg.create)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'staticDuration', subBuilder: $264.Duration.create)
-    ..aOM<$491.Polyline>(5, _omitFieldNames ? '' : 'polyline', subBuilder: $491.Polyline.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Route',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..pc<RouteLeg>(1, _omitFieldNames ? '' : 'legs', $pb.PbFieldType.PM,
+        subBuilder: RouteLeg.create)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'staticDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$491.Polyline>(5, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $491.Polyline.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..pPS(7, _omitFieldNames ? '' : 'warnings')
-    ..aOM<$449.Viewport>(8, _omitFieldNames ? '' : 'viewport', subBuilder: $449.Viewport.create)
-    ..aOM<RouteTravelAdvisory>(9, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: RouteTravelAdvisory.create)
-    ..p<$core.int>(10, _omitFieldNames ? '' : 'optimizedIntermediateWaypointIndex', $pb.PbFieldType.K3)
-    ..aOM<Route_RouteLocalizedValues>(11, _omitFieldNames ? '' : 'localizedValues', subBuilder: Route_RouteLocalizedValues.create)
+    ..aOM<$449.Viewport>(8, _omitFieldNames ? '' : 'viewport',
+        subBuilder: $449.Viewport.create)
+    ..aOM<RouteTravelAdvisory>(9, _omitFieldNames ? '' : 'travelAdvisory',
+        subBuilder: RouteTravelAdvisory.create)
+    ..p<$core.int>(
+        10,
+        _omitFieldNames ? '' : 'optimizedIntermediateWaypointIndex',
+        $pb.PbFieldType.K3)
+    ..aOM<Route_RouteLocalizedValues>(
+        11, _omitFieldNames ? '' : 'localizedValues',
+        subBuilder: Route_RouteLocalizedValues.create)
     ..aOS(12, _omitFieldNames ? '' : 'routeToken')
-    ..pc<$497.RouteLabel>(13, _omitFieldNames ? '' : 'routeLabels', $pb.PbFieldType.KE, valueOf: $497.RouteLabel.valueOf, enumValues: $497.RouteLabel.values, defaultEnumValue: $497.RouteLabel.ROUTE_LABEL_UNSPECIFIED)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$497.RouteLabel>(
+        13, _omitFieldNames ? '' : 'routeLabels', $pb.PbFieldType.KE,
+        valueOf: $497.RouteLabel.valueOf,
+        enumValues: $497.RouteLabel.values,
+        defaultEnumValue: $497.RouteLabel.ROUTE_LABEL_UNSPECIFIED)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Route clone() => Route()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Route copyWith(void Function(Route) updates) => super.copyWith((message) => updates(message as Route)) as Route;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Route copyWith(void Function(Route) updates) =>
+      super.copyWith((message) => updates(message as Route)) as Route;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -236,7 +287,8 @@ class Route extends $pb.GeneratedMessage {
   Route createEmptyInstance() => create();
   static $pb.PbList<Route> createRepeated() => $pb.PbList<Route>();
   @$core.pragma('dart2js:noInline')
-  static Route getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Route>(create);
+  static Route getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Route>(create);
   static Route? _defaultInstance;
 
   /// A collection of legs (path segments between waypoints) that make up the
@@ -253,7 +305,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get distanceMeters => $_getIZ(1);
   @$pb.TagNumber(2)
-  set distanceMeters($core.int v) { $_setSignedInt32(1, v); }
+  set distanceMeters($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDistanceMeters() => $_has(1);
   @$pb.TagNumber(2)
@@ -267,7 +322,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($264.Duration v) { setField(3, v); }
+  set duration($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -280,7 +338,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $264.Duration get staticDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set staticDuration($264.Duration v) { setField(4, v); }
+  set staticDuration($264.Duration v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStaticDuration() => $_has(3);
   @$pb.TagNumber(4)
@@ -293,7 +354,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $491.Polyline get polyline => $_getN(4);
   @$pb.TagNumber(5)
-  set polyline($491.Polyline v) { setField(5, v); }
+  set polyline($491.Polyline v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPolyline() => $_has(4);
   @$pb.TagNumber(5)
@@ -305,7 +369,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(6)
-  set description($core.String v) { $_setString(5, v); }
+  set description($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
@@ -319,7 +386,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $449.Viewport get viewport => $_getN(7);
   @$pb.TagNumber(8)
-  set viewport($449.Viewport v) { setField(8, v); }
+  set viewport($449.Viewport v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasViewport() => $_has(7);
   @$pb.TagNumber(8)
@@ -331,7 +401,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   RouteTravelAdvisory get travelAdvisory => $_getN(8);
   @$pb.TagNumber(9)
-  set travelAdvisory(RouteTravelAdvisory v) { setField(9, v); }
+  set travelAdvisory(RouteTravelAdvisory v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTravelAdvisory() => $_has(8);
   @$pb.TagNumber(9)
@@ -355,7 +428,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Route_RouteLocalizedValues get localizedValues => $_getN(10);
   @$pb.TagNumber(11)
-  set localizedValues(Route_RouteLocalizedValues v) { setField(11, v); }
+  set localizedValues(Route_RouteLocalizedValues v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasLocalizedValues() => $_has(10);
   @$pb.TagNumber(11)
@@ -375,7 +451,10 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get routeToken => $_getSZ(11);
   @$pb.TagNumber(12)
-  set routeToken($core.String v) { $_setString(11, v); }
+  set routeToken($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasRouteToken() => $_has(11);
   @$pb.TagNumber(12)
@@ -408,7 +487,8 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
       $result.fuelConsumptionMicroliters = fuelConsumptionMicroliters;
     }
     if (routeRestrictionsPartiallyIgnored != null) {
-      $result.routeRestrictionsPartiallyIgnored = routeRestrictionsPartiallyIgnored;
+      $result.routeRestrictionsPartiallyIgnored =
+          routeRestrictionsPartiallyIgnored;
     }
     if (transitFare != null) {
       $result.transitFare = transitFare;
@@ -416,37 +496,50 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
     return $result;
   }
   RouteTravelAdvisory._() : super();
-  factory RouteTravelAdvisory.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteTravelAdvisory.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteTravelAdvisory.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteTravelAdvisory.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteTravelAdvisory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$492.TollInfo>(2, _omitFieldNames ? '' : 'tollInfo', subBuilder: $492.TollInfo.create)
-    ..pc<$493.SpeedReadingInterval>(3, _omitFieldNames ? '' : 'speedReadingIntervals', $pb.PbFieldType.PM, subBuilder: $493.SpeedReadingInterval.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteTravelAdvisory',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$492.TollInfo>(2, _omitFieldNames ? '' : 'tollInfo',
+        subBuilder: $492.TollInfo.create)
+    ..pc<$493.SpeedReadingInterval>(
+        3, _omitFieldNames ? '' : 'speedReadingIntervals', $pb.PbFieldType.PM,
+        subBuilder: $493.SpeedReadingInterval.create)
     ..aInt64(5, _omitFieldNames ? '' : 'fuelConsumptionMicroliters')
     ..aOB(6, _omitFieldNames ? '' : 'routeRestrictionsPartiallyIgnored')
-    ..aOM<$465.Money>(7, _omitFieldNames ? '' : 'transitFare', subBuilder: $465.Money.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$465.Money>(7, _omitFieldNames ? '' : 'transitFare',
+        subBuilder: $465.Money.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RouteTravelAdvisory clone() => RouteTravelAdvisory()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteTravelAdvisory copyWith(void Function(RouteTravelAdvisory) updates) => super.copyWith((message) => updates(message as RouteTravelAdvisory)) as RouteTravelAdvisory;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteTravelAdvisory copyWith(void Function(RouteTravelAdvisory) updates) =>
+      super.copyWith((message) => updates(message as RouteTravelAdvisory))
+          as RouteTravelAdvisory;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteTravelAdvisory create() => RouteTravelAdvisory._();
   RouteTravelAdvisory createEmptyInstance() => create();
-  static $pb.PbList<RouteTravelAdvisory> createRepeated() => $pb.PbList<RouteTravelAdvisory>();
+  static $pb.PbList<RouteTravelAdvisory> createRepeated() =>
+      $pb.PbList<RouteTravelAdvisory>();
   @$core.pragma('dart2js:noInline')
-  static RouteTravelAdvisory getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteTravelAdvisory>(create);
+  static RouteTravelAdvisory getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteTravelAdvisory>(create);
   static RouteTravelAdvisory? _defaultInstance;
 
   /// Contains information about tolls on the route. This field is only populated
@@ -457,7 +550,10 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $492.TollInfo get tollInfo => $_getN(0);
   @$pb.TagNumber(2)
-  set tollInfo($492.TollInfo v) { setField(2, v); }
+  set tollInfo($492.TollInfo v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTollInfo() => $_has(0);
   @$pb.TagNumber(2)
@@ -476,13 +572,17 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
   ///      polyline: A ---- B ---- C ---- D ---- E ---- F ---- G
   ///      speed_reading_intervals: [A,C), [C,D), [D,G).
   @$pb.TagNumber(3)
-  $core.List<$493.SpeedReadingInterval> get speedReadingIntervals => $_getList(1);
+  $core.List<$493.SpeedReadingInterval> get speedReadingIntervals =>
+      $_getList(1);
 
   /// The predicted fuel consumption in microliters.
   @$pb.TagNumber(5)
   $fixnum.Int64 get fuelConsumptionMicroliters => $_getI64(2);
   @$pb.TagNumber(5)
-  set fuelConsumptionMicroliters($fixnum.Int64 v) { $_setInt64(2, v); }
+  set fuelConsumptionMicroliters($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFuelConsumptionMicroliters() => $_has(2);
   @$pb.TagNumber(5)
@@ -493,7 +593,10 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get routeRestrictionsPartiallyIgnored => $_getBF(3);
   @$pb.TagNumber(6)
-  set routeRestrictionsPartiallyIgnored($core.bool v) { $_setBool(3, v); }
+  set routeRestrictionsPartiallyIgnored($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasRouteRestrictionsPartiallyIgnored() => $_has(3);
   @$pb.TagNumber(6)
@@ -505,7 +608,10 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $465.Money get transitFare => $_getN(4);
   @$pb.TagNumber(7)
-  set transitFare($465.Money v) { setField(7, v); }
+  set transitFare($465.Money v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTransitFare() => $_has(4);
   @$pb.TagNumber(7)
@@ -531,34 +637,48 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLegTravelAdvisory._() : super();
-  factory RouteLegTravelAdvisory.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLegTravelAdvisory.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLegTravelAdvisory.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLegTravelAdvisory.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegTravelAdvisory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$492.TollInfo>(1, _omitFieldNames ? '' : 'tollInfo', subBuilder: $492.TollInfo.create)
-    ..pc<$493.SpeedReadingInterval>(2, _omitFieldNames ? '' : 'speedReadingIntervals', $pb.PbFieldType.PM, subBuilder: $493.SpeedReadingInterval.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLegTravelAdvisory',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$492.TollInfo>(1, _omitFieldNames ? '' : 'tollInfo',
+        subBuilder: $492.TollInfo.create)
+    ..pc<$493.SpeedReadingInterval>(
+        2, _omitFieldNames ? '' : 'speedReadingIntervals', $pb.PbFieldType.PM,
+        subBuilder: $493.SpeedReadingInterval.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLegTravelAdvisory clone() => RouteLegTravelAdvisory()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLegTravelAdvisory copyWith(void Function(RouteLegTravelAdvisory) updates) => super.copyWith((message) => updates(message as RouteLegTravelAdvisory)) as RouteLegTravelAdvisory;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLegTravelAdvisory clone() =>
+      RouteLegTravelAdvisory()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLegTravelAdvisory copyWith(
+          void Function(RouteLegTravelAdvisory) updates) =>
+      super.copyWith((message) => updates(message as RouteLegTravelAdvisory))
+          as RouteLegTravelAdvisory;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteLegTravelAdvisory create() => RouteLegTravelAdvisory._();
   RouteLegTravelAdvisory createEmptyInstance() => create();
-  static $pb.PbList<RouteLegTravelAdvisory> createRepeated() => $pb.PbList<RouteLegTravelAdvisory>();
+  static $pb.PbList<RouteLegTravelAdvisory> createRepeated() =>
+      $pb.PbList<RouteLegTravelAdvisory>();
   @$core.pragma('dart2js:noInline')
-  static RouteLegTravelAdvisory getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegTravelAdvisory>(create);
+  static RouteLegTravelAdvisory getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteLegTravelAdvisory>(create);
   static RouteLegTravelAdvisory? _defaultInstance;
 
   /// Contains information about tolls on the specific `RouteLeg`.
@@ -570,7 +690,10 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $492.TollInfo get tollInfo => $_getN(0);
   @$pb.TagNumber(1)
-  set tollInfo($492.TollInfo v) { setField(1, v); }
+  set tollInfo($492.TollInfo v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTollInfo() => $_has(0);
   @$pb.TagNumber(1)
@@ -589,7 +712,8 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
   ///      polyline: A ---- B ---- C ---- D ---- E ---- F ---- G
   ///      speed_reading_intervals: [A,C), [C,D), [D,G).
   @$pb.TagNumber(2)
-  $core.List<$493.SpeedReadingInterval> get speedReadingIntervals => $_getList(1);
+  $core.List<$493.SpeedReadingInterval> get speedReadingIntervals =>
+      $_getList(1);
 }
 
 /// Contains the additional information that the user should be informed
@@ -605,38 +729,53 @@ class RouteLegStepTravelAdvisory extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLegStepTravelAdvisory._() : super();
-  factory RouteLegStepTravelAdvisory.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLegStepTravelAdvisory.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLegStepTravelAdvisory.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLegStepTravelAdvisory.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegStepTravelAdvisory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..pc<$493.SpeedReadingInterval>(1, _omitFieldNames ? '' : 'speedReadingIntervals', $pb.PbFieldType.PM, subBuilder: $493.SpeedReadingInterval.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLegStepTravelAdvisory',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..pc<$493.SpeedReadingInterval>(
+        1, _omitFieldNames ? '' : 'speedReadingIntervals', $pb.PbFieldType.PM,
+        subBuilder: $493.SpeedReadingInterval.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTravelAdvisory clone() => RouteLegStepTravelAdvisory()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTravelAdvisory copyWith(void Function(RouteLegStepTravelAdvisory) updates) => super.copyWith((message) => updates(message as RouteLegStepTravelAdvisory)) as RouteLegStepTravelAdvisory;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTravelAdvisory clone() =>
+      RouteLegStepTravelAdvisory()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTravelAdvisory copyWith(
+          void Function(RouteLegStepTravelAdvisory) updates) =>
+      super.copyWith(
+              (message) => updates(message as RouteLegStepTravelAdvisory))
+          as RouteLegStepTravelAdvisory;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteLegStepTravelAdvisory create() => RouteLegStepTravelAdvisory._();
   RouteLegStepTravelAdvisory createEmptyInstance() => create();
-  static $pb.PbList<RouteLegStepTravelAdvisory> createRepeated() => $pb.PbList<RouteLegStepTravelAdvisory>();
+  static $pb.PbList<RouteLegStepTravelAdvisory> createRepeated() =>
+      $pb.PbList<RouteLegStepTravelAdvisory>();
   @$core.pragma('dart2js:noInline')
-  static RouteLegStepTravelAdvisory getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegStepTravelAdvisory>(create);
+  static RouteLegStepTravelAdvisory getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteLegStepTravelAdvisory>(create);
   static RouteLegStepTravelAdvisory? _defaultInstance;
 
   /// NOTE: This field is not currently populated.
   @$pb.TagNumber(1)
-  $core.List<$493.SpeedReadingInterval> get speedReadingIntervals => $_getList(0);
+  $core.List<$493.SpeedReadingInterval> get speedReadingIntervals =>
+      $_getList(0);
 }
 
 /// Text representations of certain properties.
@@ -659,42 +798,62 @@ class RouteLeg_RouteLegLocalizedValues extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLeg_RouteLegLocalizedValues._() : super();
-  factory RouteLeg_RouteLegLocalizedValues.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLeg_RouteLegLocalizedValues.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLeg_RouteLegLocalizedValues.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLeg_RouteLegLocalizedValues.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLeg.RouteLegLocalizedValues', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'distance', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'duration', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(3, _omitFieldNames ? '' : 'staticDuration', subBuilder: $460.LocalizedText.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLeg.RouteLegLocalizedValues',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'distance',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(3, _omitFieldNames ? '' : 'staticDuration',
+        subBuilder: $460.LocalizedText.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLeg_RouteLegLocalizedValues clone() => RouteLeg_RouteLegLocalizedValues()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLeg_RouteLegLocalizedValues copyWith(void Function(RouteLeg_RouteLegLocalizedValues) updates) => super.copyWith((message) => updates(message as RouteLeg_RouteLegLocalizedValues)) as RouteLeg_RouteLegLocalizedValues;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLeg_RouteLegLocalizedValues clone() =>
+      RouteLeg_RouteLegLocalizedValues()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLeg_RouteLegLocalizedValues copyWith(
+          void Function(RouteLeg_RouteLegLocalizedValues) updates) =>
+      super.copyWith(
+              (message) => updates(message as RouteLeg_RouteLegLocalizedValues))
+          as RouteLeg_RouteLegLocalizedValues;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RouteLeg_RouteLegLocalizedValues create() => RouteLeg_RouteLegLocalizedValues._();
+  static RouteLeg_RouteLegLocalizedValues create() =>
+      RouteLeg_RouteLegLocalizedValues._();
   RouteLeg_RouteLegLocalizedValues createEmptyInstance() => create();
-  static $pb.PbList<RouteLeg_RouteLegLocalizedValues> createRepeated() => $pb.PbList<RouteLeg_RouteLegLocalizedValues>();
+  static $pb.PbList<RouteLeg_RouteLegLocalizedValues> createRepeated() =>
+      $pb.PbList<RouteLeg_RouteLegLocalizedValues>();
   @$core.pragma('dart2js:noInline')
-  static RouteLeg_RouteLegLocalizedValues getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLeg_RouteLegLocalizedValues>(create);
+  static RouteLeg_RouteLegLocalizedValues getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteLeg_RouteLegLocalizedValues>(
+          create);
   static RouteLeg_RouteLegLocalizedValues? _defaultInstance;
 
   /// Travel distance represented in text form.
   @$pb.TagNumber(1)
   $460.LocalizedText get distance => $_getN(0);
   @$pb.TagNumber(1)
-  set distance($460.LocalizedText v) { setField(1, v); }
+  set distance($460.LocalizedText v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDistance() => $_has(0);
   @$pb.TagNumber(1)
@@ -708,7 +867,10 @@ class RouteLeg_RouteLegLocalizedValues extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $460.LocalizedText get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($460.LocalizedText v) { setField(2, v); }
+  set duration($460.LocalizedText v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -721,7 +883,10 @@ class RouteLeg_RouteLegLocalizedValues extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $460.LocalizedText get staticDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set staticDuration($460.LocalizedText v) { setField(3, v); }
+  set staticDuration($460.LocalizedText v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStaticDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -758,36 +923,59 @@ class RouteLeg_StepsOverview_MultiModalSegment extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLeg_StepsOverview_MultiModalSegment._() : super();
-  factory RouteLeg_StepsOverview_MultiModalSegment.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLeg_StepsOverview_MultiModalSegment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLeg_StepsOverview_MultiModalSegment.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLeg_StepsOverview_MultiModalSegment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLeg.StepsOverview.MultiModalSegment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'stepStartIndex', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLeg.StepsOverview.MultiModalSegment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'stepStartIndex', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'stepEndIndex', $pb.PbFieldType.O3)
-    ..aOM<$494.NavigationInstruction>(3, _omitFieldNames ? '' : 'navigationInstruction', subBuilder: $494.NavigationInstruction.create)
-    ..e<$498.RouteTravelMode>(4, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: $498.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: $498.RouteTravelMode.valueOf, enumValues: $498.RouteTravelMode.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$494.NavigationInstruction>(
+        3, _omitFieldNames ? '' : 'navigationInstruction',
+        subBuilder: $494.NavigationInstruction.create)
+    ..e<$498.RouteTravelMode>(
+        4, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
+        defaultOrMaker: $498.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: $498.RouteTravelMode.valueOf,
+        enumValues: $498.RouteTravelMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLeg_StepsOverview_MultiModalSegment clone() => RouteLeg_StepsOverview_MultiModalSegment()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLeg_StepsOverview_MultiModalSegment copyWith(void Function(RouteLeg_StepsOverview_MultiModalSegment) updates) => super.copyWith((message) => updates(message as RouteLeg_StepsOverview_MultiModalSegment)) as RouteLeg_StepsOverview_MultiModalSegment;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLeg_StepsOverview_MultiModalSegment clone() =>
+      RouteLeg_StepsOverview_MultiModalSegment()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLeg_StepsOverview_MultiModalSegment copyWith(
+          void Function(RouteLeg_StepsOverview_MultiModalSegment) updates) =>
+      super.copyWith((message) =>
+              updates(message as RouteLeg_StepsOverview_MultiModalSegment))
+          as RouteLeg_StepsOverview_MultiModalSegment;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RouteLeg_StepsOverview_MultiModalSegment create() => RouteLeg_StepsOverview_MultiModalSegment._();
+  static RouteLeg_StepsOverview_MultiModalSegment create() =>
+      RouteLeg_StepsOverview_MultiModalSegment._();
   RouteLeg_StepsOverview_MultiModalSegment createEmptyInstance() => create();
-  static $pb.PbList<RouteLeg_StepsOverview_MultiModalSegment> createRepeated() => $pb.PbList<RouteLeg_StepsOverview_MultiModalSegment>();
+  static $pb.PbList<RouteLeg_StepsOverview_MultiModalSegment>
+      createRepeated() =>
+          $pb.PbList<RouteLeg_StepsOverview_MultiModalSegment>();
   @$core.pragma('dart2js:noInline')
-  static RouteLeg_StepsOverview_MultiModalSegment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLeg_StepsOverview_MultiModalSegment>(create);
+  static RouteLeg_StepsOverview_MultiModalSegment getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          RouteLeg_StepsOverview_MultiModalSegment>(create);
   static RouteLeg_StepsOverview_MultiModalSegment? _defaultInstance;
 
   /// The corresponding `RouteLegStep` index that is the start of a
@@ -795,7 +983,10 @@ class RouteLeg_StepsOverview_MultiModalSegment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get stepStartIndex => $_getIZ(0);
   @$pb.TagNumber(1)
-  set stepStartIndex($core.int v) { $_setSignedInt32(0, v); }
+  set stepStartIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStepStartIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -806,7 +997,10 @@ class RouteLeg_StepsOverview_MultiModalSegment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get stepEndIndex => $_getIZ(1);
   @$pb.TagNumber(2)
-  set stepEndIndex($core.int v) { $_setSignedInt32(1, v); }
+  set stepEndIndex($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStepEndIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -816,7 +1010,10 @@ class RouteLeg_StepsOverview_MultiModalSegment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $494.NavigationInstruction get navigationInstruction => $_getN(2);
   @$pb.TagNumber(3)
-  set navigationInstruction($494.NavigationInstruction v) { setField(3, v); }
+  set navigationInstruction($494.NavigationInstruction v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNavigationInstruction() => $_has(2);
   @$pb.TagNumber(3)
@@ -828,7 +1025,10 @@ class RouteLeg_StepsOverview_MultiModalSegment extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $498.RouteTravelMode get travelMode => $_getN(3);
   @$pb.TagNumber(4)
-  set travelMode($498.RouteTravelMode v) { setField(4, v); }
+  set travelMode($498.RouteTravelMode v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTravelMode() => $_has(3);
   @$pb.TagNumber(4)
@@ -838,7 +1038,8 @@ class RouteLeg_StepsOverview_MultiModalSegment extends $pb.GeneratedMessage {
 /// Provides overview information about a list of `RouteLegStep`s.
 class RouteLeg_StepsOverview extends $pb.GeneratedMessage {
   factory RouteLeg_StepsOverview({
-    $core.Iterable<RouteLeg_StepsOverview_MultiModalSegment>? multiModalSegments,
+    $core.Iterable<RouteLeg_StepsOverview_MultiModalSegment>?
+        multiModalSegments,
   }) {
     final $result = create();
     if (multiModalSegments != null) {
@@ -847,40 +1048,54 @@ class RouteLeg_StepsOverview extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLeg_StepsOverview._() : super();
-  factory RouteLeg_StepsOverview.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLeg_StepsOverview.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLeg_StepsOverview.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLeg_StepsOverview.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLeg.StepsOverview', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..pc<RouteLeg_StepsOverview_MultiModalSegment>(1, _omitFieldNames ? '' : 'multiModalSegments', $pb.PbFieldType.PM, subBuilder: RouteLeg_StepsOverview_MultiModalSegment.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLeg.StepsOverview',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..pc<RouteLeg_StepsOverview_MultiModalSegment>(
+        1, _omitFieldNames ? '' : 'multiModalSegments', $pb.PbFieldType.PM,
+        subBuilder: RouteLeg_StepsOverview_MultiModalSegment.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLeg_StepsOverview clone() => RouteLeg_StepsOverview()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLeg_StepsOverview copyWith(void Function(RouteLeg_StepsOverview) updates) => super.copyWith((message) => updates(message as RouteLeg_StepsOverview)) as RouteLeg_StepsOverview;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLeg_StepsOverview clone() =>
+      RouteLeg_StepsOverview()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLeg_StepsOverview copyWith(
+          void Function(RouteLeg_StepsOverview) updates) =>
+      super.copyWith((message) => updates(message as RouteLeg_StepsOverview))
+          as RouteLeg_StepsOverview;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteLeg_StepsOverview create() => RouteLeg_StepsOverview._();
   RouteLeg_StepsOverview createEmptyInstance() => create();
-  static $pb.PbList<RouteLeg_StepsOverview> createRepeated() => $pb.PbList<RouteLeg_StepsOverview>();
+  static $pb.PbList<RouteLeg_StepsOverview> createRepeated() =>
+      $pb.PbList<RouteLeg_StepsOverview>();
   @$core.pragma('dart2js:noInline')
-  static RouteLeg_StepsOverview getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLeg_StepsOverview>(create);
+  static RouteLeg_StepsOverview getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteLeg_StepsOverview>(create);
   static RouteLeg_StepsOverview? _defaultInstance;
 
   /// Summarized information about different multi-modal segments of
   /// the `RouteLeg.steps`. This field is not populated if the `RouteLeg` does
   /// not contain any multi-modal segments in the steps.
   @$pb.TagNumber(1)
-  $core.List<RouteLeg_StepsOverview_MultiModalSegment> get multiModalSegments => $_getList(0);
+  $core.List<RouteLeg_StepsOverview_MultiModalSegment> get multiModalSegments =>
+      $_getList(0);
 }
 
 /// Contains a segment between non-`via` waypoints.
@@ -931,33 +1146,50 @@ class RouteLeg extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLeg._() : super();
-  factory RouteLeg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLeg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLeg.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLeg.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLeg', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'staticDuration', subBuilder: $264.Duration.create)
-    ..aOM<$491.Polyline>(4, _omitFieldNames ? '' : 'polyline', subBuilder: $491.Polyline.create)
-    ..aOM<$490.Location>(5, _omitFieldNames ? '' : 'startLocation', subBuilder: $490.Location.create)
-    ..aOM<$490.Location>(6, _omitFieldNames ? '' : 'endLocation', subBuilder: $490.Location.create)
-    ..pc<RouteLegStep>(7, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: RouteLegStep.create)
-    ..aOM<RouteLegTravelAdvisory>(8, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: RouteLegTravelAdvisory.create)
-    ..aOM<RouteLeg_RouteLegLocalizedValues>(9, _omitFieldNames ? '' : 'localizedValues', subBuilder: RouteLeg_RouteLegLocalizedValues.create)
-    ..aOM<RouteLeg_StepsOverview>(10, _omitFieldNames ? '' : 'stepsOverview', subBuilder: RouteLeg_StepsOverview.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLeg',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'staticDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$491.Polyline>(4, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $491.Polyline.create)
+    ..aOM<$490.Location>(5, _omitFieldNames ? '' : 'startLocation',
+        subBuilder: $490.Location.create)
+    ..aOM<$490.Location>(6, _omitFieldNames ? '' : 'endLocation',
+        subBuilder: $490.Location.create)
+    ..pc<RouteLegStep>(7, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM,
+        subBuilder: RouteLegStep.create)
+    ..aOM<RouteLegTravelAdvisory>(8, _omitFieldNames ? '' : 'travelAdvisory',
+        subBuilder: RouteLegTravelAdvisory.create)
+    ..aOM<RouteLeg_RouteLegLocalizedValues>(
+        9, _omitFieldNames ? '' : 'localizedValues',
+        subBuilder: RouteLeg_RouteLegLocalizedValues.create)
+    ..aOM<RouteLeg_StepsOverview>(10, _omitFieldNames ? '' : 'stepsOverview',
+        subBuilder: RouteLeg_StepsOverview.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RouteLeg clone() => RouteLeg()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLeg copyWith(void Function(RouteLeg) updates) => super.copyWith((message) => updates(message as RouteLeg)) as RouteLeg;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLeg copyWith(void Function(RouteLeg) updates) =>
+      super.copyWith((message) => updates(message as RouteLeg)) as RouteLeg;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -966,14 +1198,18 @@ class RouteLeg extends $pb.GeneratedMessage {
   RouteLeg createEmptyInstance() => create();
   static $pb.PbList<RouteLeg> createRepeated() => $pb.PbList<RouteLeg>();
   @$core.pragma('dart2js:noInline')
-  static RouteLeg getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLeg>(create);
+  static RouteLeg getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLeg>(create);
   static RouteLeg? _defaultInstance;
 
   /// The travel distance of the route leg, in meters.
   @$pb.TagNumber(1)
   $core.int get distanceMeters => $_getIZ(0);
   @$pb.TagNumber(1)
-  set distanceMeters($core.int v) { $_setSignedInt32(0, v); }
+  set distanceMeters($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDistanceMeters() => $_has(0);
   @$pb.TagNumber(1)
@@ -987,7 +1223,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) { setField(2, v); }
+  set duration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -1000,7 +1239,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get staticDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set staticDuration($264.Duration v) { setField(3, v); }
+  set staticDuration($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStaticDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -1013,7 +1255,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $491.Polyline get polyline => $_getN(3);
   @$pb.TagNumber(4)
-  set polyline($491.Polyline v) { setField(4, v); }
+  set polyline($491.Polyline v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPolyline() => $_has(3);
   @$pb.TagNumber(4)
@@ -1027,7 +1272,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $490.Location get startLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set startLocation($490.Location v) { setField(5, v); }
+  set startLocation($490.Location v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStartLocation() => $_has(4);
   @$pb.TagNumber(5)
@@ -1041,7 +1289,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $490.Location get endLocation => $_getN(5);
   @$pb.TagNumber(6)
-  set endLocation($490.Location v) { setField(6, v); }
+  set endLocation($490.Location v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasEndLocation() => $_has(5);
   @$pb.TagNumber(6)
@@ -1059,7 +1310,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   RouteLegTravelAdvisory get travelAdvisory => $_getN(7);
   @$pb.TagNumber(8)
-  set travelAdvisory(RouteLegTravelAdvisory v) { setField(8, v); }
+  set travelAdvisory(RouteLegTravelAdvisory v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasTravelAdvisory() => $_has(7);
   @$pb.TagNumber(8)
@@ -1071,7 +1325,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   RouteLeg_RouteLegLocalizedValues get localizedValues => $_getN(8);
   @$pb.TagNumber(9)
-  set localizedValues(RouteLeg_RouteLegLocalizedValues v) { setField(9, v); }
+  set localizedValues(RouteLeg_RouteLegLocalizedValues v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasLocalizedValues() => $_has(8);
   @$pb.TagNumber(9)
@@ -1084,7 +1341,10 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   RouteLeg_StepsOverview get stepsOverview => $_getN(9);
   @$pb.TagNumber(10)
-  set stepsOverview(RouteLeg_StepsOverview v) { setField(10, v); }
+  set stepsOverview(RouteLeg_StepsOverview v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasStepsOverview() => $_has(9);
   @$pb.TagNumber(10)
@@ -1109,41 +1369,62 @@ class RouteLegStep_RouteLegStepLocalizedValues extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLegStep_RouteLegStepLocalizedValues._() : super();
-  factory RouteLegStep_RouteLegStepLocalizedValues.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLegStep_RouteLegStepLocalizedValues.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLegStep_RouteLegStepLocalizedValues.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLegStep_RouteLegStepLocalizedValues.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegStep.RouteLegStepLocalizedValues', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'distance', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(3, _omitFieldNames ? '' : 'staticDuration', subBuilder: $460.LocalizedText.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLegStep.RouteLegStepLocalizedValues',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'distance',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(3, _omitFieldNames ? '' : 'staticDuration',
+        subBuilder: $460.LocalizedText.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLegStep_RouteLegStepLocalizedValues clone() => RouteLegStep_RouteLegStepLocalizedValues()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLegStep_RouteLegStepLocalizedValues copyWith(void Function(RouteLegStep_RouteLegStepLocalizedValues) updates) => super.copyWith((message) => updates(message as RouteLegStep_RouteLegStepLocalizedValues)) as RouteLegStep_RouteLegStepLocalizedValues;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLegStep_RouteLegStepLocalizedValues clone() =>
+      RouteLegStep_RouteLegStepLocalizedValues()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLegStep_RouteLegStepLocalizedValues copyWith(
+          void Function(RouteLegStep_RouteLegStepLocalizedValues) updates) =>
+      super.copyWith((message) =>
+              updates(message as RouteLegStep_RouteLegStepLocalizedValues))
+          as RouteLegStep_RouteLegStepLocalizedValues;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RouteLegStep_RouteLegStepLocalizedValues create() => RouteLegStep_RouteLegStepLocalizedValues._();
+  static RouteLegStep_RouteLegStepLocalizedValues create() =>
+      RouteLegStep_RouteLegStepLocalizedValues._();
   RouteLegStep_RouteLegStepLocalizedValues createEmptyInstance() => create();
-  static $pb.PbList<RouteLegStep_RouteLegStepLocalizedValues> createRepeated() => $pb.PbList<RouteLegStep_RouteLegStepLocalizedValues>();
+  static $pb.PbList<RouteLegStep_RouteLegStepLocalizedValues>
+      createRepeated() =>
+          $pb.PbList<RouteLegStep_RouteLegStepLocalizedValues>();
   @$core.pragma('dart2js:noInline')
-  static RouteLegStep_RouteLegStepLocalizedValues getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegStep_RouteLegStepLocalizedValues>(create);
+  static RouteLegStep_RouteLegStepLocalizedValues getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          RouteLegStep_RouteLegStepLocalizedValues>(create);
   static RouteLegStep_RouteLegStepLocalizedValues? _defaultInstance;
 
   /// Travel distance represented in text form.
   @$pb.TagNumber(1)
   $460.LocalizedText get distance => $_getN(0);
   @$pb.TagNumber(1)
-  set distance($460.LocalizedText v) { setField(1, v); }
+  set distance($460.LocalizedText v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDistance() => $_has(0);
   @$pb.TagNumber(1)
@@ -1156,7 +1437,10 @@ class RouteLegStep_RouteLegStepLocalizedValues extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $460.LocalizedText get staticDuration => $_getN(1);
   @$pb.TagNumber(3)
-  set staticDuration($460.LocalizedText v) { setField(3, v); }
+  set staticDuration($460.LocalizedText v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStaticDuration() => $_has(1);
   @$pb.TagNumber(3)
@@ -1215,42 +1499,68 @@ class RouteLegStep extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLegStep._() : super();
-  factory RouteLegStep.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLegStep.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLegStep.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLegStep.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'staticDuration', subBuilder: $264.Duration.create)
-    ..aOM<$491.Polyline>(3, _omitFieldNames ? '' : 'polyline', subBuilder: $491.Polyline.create)
-    ..aOM<$490.Location>(4, _omitFieldNames ? '' : 'startLocation', subBuilder: $490.Location.create)
-    ..aOM<$490.Location>(5, _omitFieldNames ? '' : 'endLocation', subBuilder: $490.Location.create)
-    ..aOM<$494.NavigationInstruction>(6, _omitFieldNames ? '' : 'navigationInstruction', subBuilder: $494.NavigationInstruction.create)
-    ..aOM<RouteLegStepTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: RouteLegStepTravelAdvisory.create)
-    ..aOM<RouteLegStep_RouteLegStepLocalizedValues>(8, _omitFieldNames ? '' : 'localizedValues', subBuilder: RouteLegStep_RouteLegStepLocalizedValues.create)
-    ..aOM<RouteLegStepTransitDetails>(9, _omitFieldNames ? '' : 'transitDetails', subBuilder: RouteLegStepTransitDetails.create)
-    ..e<$498.RouteTravelMode>(10, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: $498.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: $498.RouteTravelMode.valueOf, enumValues: $498.RouteTravelMode.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLegStep',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'staticDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$491.Polyline>(3, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $491.Polyline.create)
+    ..aOM<$490.Location>(4, _omitFieldNames ? '' : 'startLocation',
+        subBuilder: $490.Location.create)
+    ..aOM<$490.Location>(5, _omitFieldNames ? '' : 'endLocation',
+        subBuilder: $490.Location.create)
+    ..aOM<$494.NavigationInstruction>(
+        6, _omitFieldNames ? '' : 'navigationInstruction',
+        subBuilder: $494.NavigationInstruction.create)
+    ..aOM<RouteLegStepTravelAdvisory>(
+        7, _omitFieldNames ? '' : 'travelAdvisory',
+        subBuilder: RouteLegStepTravelAdvisory.create)
+    ..aOM<RouteLegStep_RouteLegStepLocalizedValues>(
+        8, _omitFieldNames ? '' : 'localizedValues',
+        subBuilder: RouteLegStep_RouteLegStepLocalizedValues.create)
+    ..aOM<RouteLegStepTransitDetails>(
+        9, _omitFieldNames ? '' : 'transitDetails',
+        subBuilder: RouteLegStepTransitDetails.create)
+    ..e<$498.RouteTravelMode>(
+        10, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
+        defaultOrMaker: $498.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: $498.RouteTravelMode.valueOf,
+        enumValues: $498.RouteTravelMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RouteLegStep clone() => RouteLegStep()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLegStep copyWith(void Function(RouteLegStep) updates) => super.copyWith((message) => updates(message as RouteLegStep)) as RouteLegStep;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLegStep copyWith(void Function(RouteLegStep) updates) =>
+      super.copyWith((message) => updates(message as RouteLegStep))
+          as RouteLegStep;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteLegStep create() => RouteLegStep._();
   RouteLegStep createEmptyInstance() => create();
-  static $pb.PbList<RouteLegStep> createRepeated() => $pb.PbList<RouteLegStep>();
+  static $pb.PbList<RouteLegStep> createRepeated() =>
+      $pb.PbList<RouteLegStep>();
   @$core.pragma('dart2js:noInline')
-  static RouteLegStep getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegStep>(create);
+  static RouteLegStep getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteLegStep>(create);
   static RouteLegStep? _defaultInstance;
 
   /// The travel distance of this step, in meters. In some circumstances, this
@@ -1258,7 +1568,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get distanceMeters => $_getIZ(0);
   @$pb.TagNumber(1)
-  set distanceMeters($core.int v) { $_setSignedInt32(0, v); }
+  set distanceMeters($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDistanceMeters() => $_has(0);
   @$pb.TagNumber(1)
@@ -1270,7 +1583,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get staticDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set staticDuration($264.Duration v) { setField(2, v); }
+  set staticDuration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStaticDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -1282,7 +1598,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $491.Polyline get polyline => $_getN(2);
   @$pb.TagNumber(3)
-  set polyline($491.Polyline v) { setField(3, v); }
+  set polyline($491.Polyline v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPolyline() => $_has(2);
   @$pb.TagNumber(3)
@@ -1294,7 +1613,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $490.Location get startLocation => $_getN(3);
   @$pb.TagNumber(4)
-  set startLocation($490.Location v) { setField(4, v); }
+  set startLocation($490.Location v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartLocation() => $_has(3);
   @$pb.TagNumber(4)
@@ -1306,7 +1628,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $490.Location get endLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set endLocation($490.Location v) { setField(5, v); }
+  set endLocation($490.Location v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndLocation() => $_has(4);
   @$pb.TagNumber(5)
@@ -1318,7 +1643,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $494.NavigationInstruction get navigationInstruction => $_getN(5);
   @$pb.TagNumber(6)
-  set navigationInstruction($494.NavigationInstruction v) { setField(6, v); }
+  set navigationInstruction($494.NavigationInstruction v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasNavigationInstruction() => $_has(5);
   @$pb.TagNumber(6)
@@ -1331,7 +1659,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   RouteLegStepTravelAdvisory get travelAdvisory => $_getN(6);
   @$pb.TagNumber(7)
-  set travelAdvisory(RouteLegStepTravelAdvisory v) { setField(7, v); }
+  set travelAdvisory(RouteLegStepTravelAdvisory v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTravelAdvisory() => $_has(6);
   @$pb.TagNumber(7)
@@ -1343,19 +1674,26 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   RouteLegStep_RouteLegStepLocalizedValues get localizedValues => $_getN(7);
   @$pb.TagNumber(8)
-  set localizedValues(RouteLegStep_RouteLegStepLocalizedValues v) { setField(8, v); }
+  set localizedValues(RouteLegStep_RouteLegStepLocalizedValues v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasLocalizedValues() => $_has(7);
   @$pb.TagNumber(8)
   void clearLocalizedValues() => clearField(8);
   @$pb.TagNumber(8)
-  RouteLegStep_RouteLegStepLocalizedValues ensureLocalizedValues() => $_ensure(7);
+  RouteLegStep_RouteLegStepLocalizedValues ensureLocalizedValues() =>
+      $_ensure(7);
 
   /// Details pertaining to this step if the travel mode is `TRANSIT`.
   @$pb.TagNumber(9)
   RouteLegStepTransitDetails get transitDetails => $_getN(8);
   @$pb.TagNumber(9)
-  set transitDetails(RouteLegStepTransitDetails v) { setField(9, v); }
+  set transitDetails(RouteLegStepTransitDetails v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTransitDetails() => $_has(8);
   @$pb.TagNumber(9)
@@ -1367,7 +1705,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $498.RouteTravelMode get travelMode => $_getN(9);
   @$pb.TagNumber(10)
-  set travelMode($498.RouteTravelMode v) { setField(10, v); }
+  set travelMode($498.RouteTravelMode v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasTravelMode() => $_has(9);
   @$pb.TagNumber(10)
@@ -1375,7 +1716,8 @@ class RouteLegStep extends $pb.GeneratedMessage {
 }
 
 /// Details about the transit stops for the `RouteLegStep`.
-class RouteLegStepTransitDetails_TransitStopDetails extends $pb.GeneratedMessage {
+class RouteLegStepTransitDetails_TransitStopDetails
+    extends $pb.GeneratedMessage {
   factory RouteLegStepTransitDetails_TransitStopDetails({
     $495.TransitStop? arrivalStop,
     $302.Timestamp? arrivalTime,
@@ -1398,43 +1740,68 @@ class RouteLegStepTransitDetails_TransitStopDetails extends $pb.GeneratedMessage
     return $result;
   }
   RouteLegStepTransitDetails_TransitStopDetails._() : super();
-  factory RouteLegStepTransitDetails_TransitStopDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLegStepTransitDetails_TransitStopDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLegStepTransitDetails_TransitStopDetails.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLegStepTransitDetails_TransitStopDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegStepTransitDetails.TransitStopDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$495.TransitStop>(1, _omitFieldNames ? '' : 'arrivalStop', subBuilder: $495.TransitStop.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'arrivalTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$495.TransitStop>(3, _omitFieldNames ? '' : 'departureStop', subBuilder: $495.TransitStop.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'departureTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLegStepTransitDetails.TransitStopDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$495.TransitStop>(1, _omitFieldNames ? '' : 'arrivalStop',
+        subBuilder: $495.TransitStop.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'arrivalTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$495.TransitStop>(3, _omitFieldNames ? '' : 'departureStop',
+        subBuilder: $495.TransitStop.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'departureTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTransitDetails_TransitStopDetails clone() => RouteLegStepTransitDetails_TransitStopDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTransitDetails_TransitStopDetails copyWith(void Function(RouteLegStepTransitDetails_TransitStopDetails) updates) => super.copyWith((message) => updates(message as RouteLegStepTransitDetails_TransitStopDetails)) as RouteLegStepTransitDetails_TransitStopDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTransitDetails_TransitStopDetails clone() =>
+      RouteLegStepTransitDetails_TransitStopDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTransitDetails_TransitStopDetails copyWith(
+          void Function(RouteLegStepTransitDetails_TransitStopDetails)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as RouteLegStepTransitDetails_TransitStopDetails))
+          as RouteLegStepTransitDetails_TransitStopDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RouteLegStepTransitDetails_TransitStopDetails create() => RouteLegStepTransitDetails_TransitStopDetails._();
-  RouteLegStepTransitDetails_TransitStopDetails createEmptyInstance() => create();
-  static $pb.PbList<RouteLegStepTransitDetails_TransitStopDetails> createRepeated() => $pb.PbList<RouteLegStepTransitDetails_TransitStopDetails>();
+  static RouteLegStepTransitDetails_TransitStopDetails create() =>
+      RouteLegStepTransitDetails_TransitStopDetails._();
+  RouteLegStepTransitDetails_TransitStopDetails createEmptyInstance() =>
+      create();
+  static $pb.PbList<RouteLegStepTransitDetails_TransitStopDetails>
+      createRepeated() =>
+          $pb.PbList<RouteLegStepTransitDetails_TransitStopDetails>();
   @$core.pragma('dart2js:noInline')
-  static RouteLegStepTransitDetails_TransitStopDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegStepTransitDetails_TransitStopDetails>(create);
+  static RouteLegStepTransitDetails_TransitStopDetails getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          RouteLegStepTransitDetails_TransitStopDetails>(create);
   static RouteLegStepTransitDetails_TransitStopDetails? _defaultInstance;
 
   /// Information about the arrival stop for the step.
   @$pb.TagNumber(1)
   $495.TransitStop get arrivalStop => $_getN(0);
   @$pb.TagNumber(1)
-  set arrivalStop($495.TransitStop v) { setField(1, v); }
+  set arrivalStop($495.TransitStop v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasArrivalStop() => $_has(0);
   @$pb.TagNumber(1)
@@ -1446,7 +1813,10 @@ class RouteLegStepTransitDetails_TransitStopDetails extends $pb.GeneratedMessage
   @$pb.TagNumber(2)
   $302.Timestamp get arrivalTime => $_getN(1);
   @$pb.TagNumber(2)
-  set arrivalTime($302.Timestamp v) { setField(2, v); }
+  set arrivalTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasArrivalTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1458,7 +1828,10 @@ class RouteLegStepTransitDetails_TransitStopDetails extends $pb.GeneratedMessage
   @$pb.TagNumber(3)
   $495.TransitStop get departureStop => $_getN(2);
   @$pb.TagNumber(3)
-  set departureStop($495.TransitStop v) { setField(3, v); }
+  set departureStop($495.TransitStop v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDepartureStop() => $_has(2);
   @$pb.TagNumber(3)
@@ -1470,7 +1843,10 @@ class RouteLegStepTransitDetails_TransitStopDetails extends $pb.GeneratedMessage
   @$pb.TagNumber(4)
   $302.Timestamp get departureTime => $_getN(3);
   @$pb.TagNumber(4)
-  set departureTime($302.Timestamp v) { setField(4, v); }
+  set departureTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDepartureTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -1480,7 +1856,8 @@ class RouteLegStepTransitDetails_TransitStopDetails extends $pb.GeneratedMessage
 }
 
 /// Localized descriptions of values for `RouteTransitDetails`.
-class RouteLegStepTransitDetails_TransitDetailsLocalizedValues extends $pb.GeneratedMessage {
+class RouteLegStepTransitDetails_TransitDetailsLocalizedValues
+    extends $pb.GeneratedMessage {
   factory RouteLegStepTransitDetails_TransitDetailsLocalizedValues({
     $496.LocalizedTime? arrivalTime,
     $496.LocalizedTime? departureTime,
@@ -1495,41 +1872,70 @@ class RouteLegStepTransitDetails_TransitDetailsLocalizedValues extends $pb.Gener
     return $result;
   }
   RouteLegStepTransitDetails_TransitDetailsLocalizedValues._() : super();
-  factory RouteLegStepTransitDetails_TransitDetailsLocalizedValues.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLegStepTransitDetails_TransitDetailsLocalizedValues.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLegStepTransitDetails_TransitDetailsLocalizedValues.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLegStepTransitDetails_TransitDetailsLocalizedValues.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegStepTransitDetails.TransitDetailsLocalizedValues', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$496.LocalizedTime>(1, _omitFieldNames ? '' : 'arrivalTime', subBuilder: $496.LocalizedTime.create)
-    ..aOM<$496.LocalizedTime>(2, _omitFieldNames ? '' : 'departureTime', subBuilder: $496.LocalizedTime.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'RouteLegStepTransitDetails.TransitDetailsLocalizedValues',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$496.LocalizedTime>(1, _omitFieldNames ? '' : 'arrivalTime',
+        subBuilder: $496.LocalizedTime.create)
+    ..aOM<$496.LocalizedTime>(2, _omitFieldNames ? '' : 'departureTime',
+        subBuilder: $496.LocalizedTime.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTransitDetails_TransitDetailsLocalizedValues clone() => RouteLegStepTransitDetails_TransitDetailsLocalizedValues()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTransitDetails_TransitDetailsLocalizedValues copyWith(void Function(RouteLegStepTransitDetails_TransitDetailsLocalizedValues) updates) => super.copyWith((message) => updates(message as RouteLegStepTransitDetails_TransitDetailsLocalizedValues)) as RouteLegStepTransitDetails_TransitDetailsLocalizedValues;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTransitDetails_TransitDetailsLocalizedValues clone() =>
+      RouteLegStepTransitDetails_TransitDetailsLocalizedValues()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTransitDetails_TransitDetailsLocalizedValues copyWith(
+          void Function(
+                  RouteLegStepTransitDetails_TransitDetailsLocalizedValues)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as RouteLegStepTransitDetails_TransitDetailsLocalizedValues))
+          as RouteLegStepTransitDetails_TransitDetailsLocalizedValues;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RouteLegStepTransitDetails_TransitDetailsLocalizedValues create() => RouteLegStepTransitDetails_TransitDetailsLocalizedValues._();
-  RouteLegStepTransitDetails_TransitDetailsLocalizedValues createEmptyInstance() => create();
-  static $pb.PbList<RouteLegStepTransitDetails_TransitDetailsLocalizedValues> createRepeated() => $pb.PbList<RouteLegStepTransitDetails_TransitDetailsLocalizedValues>();
+  static RouteLegStepTransitDetails_TransitDetailsLocalizedValues create() =>
+      RouteLegStepTransitDetails_TransitDetailsLocalizedValues._();
+  RouteLegStepTransitDetails_TransitDetailsLocalizedValues
+      createEmptyInstance() => create();
+  static $pb.PbList<RouteLegStepTransitDetails_TransitDetailsLocalizedValues>
+      createRepeated() => $pb.PbList<
+          RouteLegStepTransitDetails_TransitDetailsLocalizedValues>();
   @$core.pragma('dart2js:noInline')
-  static RouteLegStepTransitDetails_TransitDetailsLocalizedValues getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegStepTransitDetails_TransitDetailsLocalizedValues>(create);
-  static RouteLegStepTransitDetails_TransitDetailsLocalizedValues? _defaultInstance;
+  static RouteLegStepTransitDetails_TransitDetailsLocalizedValues
+      getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          RouteLegStepTransitDetails_TransitDetailsLocalizedValues>(create);
+  static RouteLegStepTransitDetails_TransitDetailsLocalizedValues?
+      _defaultInstance;
 
   /// Time in its formatted text representation with a corresponding time zone.
   @$pb.TagNumber(1)
   $496.LocalizedTime get arrivalTime => $_getN(0);
   @$pb.TagNumber(1)
-  set arrivalTime($496.LocalizedTime v) { setField(1, v); }
+  set arrivalTime($496.LocalizedTime v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasArrivalTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1541,7 +1947,10 @@ class RouteLegStepTransitDetails_TransitDetailsLocalizedValues extends $pb.Gener
   @$pb.TagNumber(2)
   $496.LocalizedTime get departureTime => $_getN(1);
   @$pb.TagNumber(2)
-  set departureTime($496.LocalizedTime v) { setField(2, v); }
+  set departureTime($496.LocalizedTime v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDepartureTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1586,64 +1995,93 @@ class RouteLegStepTransitDetails extends $pb.GeneratedMessage {
     return $result;
   }
   RouteLegStepTransitDetails._() : super();
-  factory RouteLegStepTransitDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteLegStepTransitDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteLegStepTransitDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteLegStepTransitDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegStepTransitDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<RouteLegStepTransitDetails_TransitStopDetails>(1, _omitFieldNames ? '' : 'stopDetails', subBuilder: RouteLegStepTransitDetails_TransitStopDetails.create)
-    ..aOM<RouteLegStepTransitDetails_TransitDetailsLocalizedValues>(2, _omitFieldNames ? '' : 'localizedValues', subBuilder: RouteLegStepTransitDetails_TransitDetailsLocalizedValues.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteLegStepTransitDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<RouteLegStepTransitDetails_TransitStopDetails>(
+        1, _omitFieldNames ? '' : 'stopDetails',
+        subBuilder: RouteLegStepTransitDetails_TransitStopDetails.create)
+    ..aOM<RouteLegStepTransitDetails_TransitDetailsLocalizedValues>(
+        2, _omitFieldNames ? '' : 'localizedValues',
+        subBuilder:
+            RouteLegStepTransitDetails_TransitDetailsLocalizedValues.create)
     ..aOS(3, _omitFieldNames ? '' : 'headsign')
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'headway', subBuilder: $264.Duration.create)
-    ..aOM<$495.TransitLine>(5, _omitFieldNames ? '' : 'transitLine', subBuilder: $495.TransitLine.create)
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'headway',
+        subBuilder: $264.Duration.create)
+    ..aOM<$495.TransitLine>(5, _omitFieldNames ? '' : 'transitLine',
+        subBuilder: $495.TransitLine.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'stopCount', $pb.PbFieldType.O3)
     ..aOS(7, _omitFieldNames ? '' : 'tripShortText')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTransitDetails clone() => RouteLegStepTransitDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteLegStepTransitDetails copyWith(void Function(RouteLegStepTransitDetails) updates) => super.copyWith((message) => updates(message as RouteLegStepTransitDetails)) as RouteLegStepTransitDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTransitDetails clone() =>
+      RouteLegStepTransitDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteLegStepTransitDetails copyWith(
+          void Function(RouteLegStepTransitDetails) updates) =>
+      super.copyWith(
+              (message) => updates(message as RouteLegStepTransitDetails))
+          as RouteLegStepTransitDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteLegStepTransitDetails create() => RouteLegStepTransitDetails._();
   RouteLegStepTransitDetails createEmptyInstance() => create();
-  static $pb.PbList<RouteLegStepTransitDetails> createRepeated() => $pb.PbList<RouteLegStepTransitDetails>();
+  static $pb.PbList<RouteLegStepTransitDetails> createRepeated() =>
+      $pb.PbList<RouteLegStepTransitDetails>();
   @$core.pragma('dart2js:noInline')
-  static RouteLegStepTransitDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegStepTransitDetails>(create);
+  static RouteLegStepTransitDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteLegStepTransitDetails>(create);
   static RouteLegStepTransitDetails? _defaultInstance;
 
   /// Information about the arrival and departure stops for the step.
   @$pb.TagNumber(1)
   RouteLegStepTransitDetails_TransitStopDetails get stopDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set stopDetails(RouteLegStepTransitDetails_TransitStopDetails v) { setField(1, v); }
+  set stopDetails(RouteLegStepTransitDetails_TransitStopDetails v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStopDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearStopDetails() => clearField(1);
   @$pb.TagNumber(1)
-  RouteLegStepTransitDetails_TransitStopDetails ensureStopDetails() => $_ensure(0);
+  RouteLegStepTransitDetails_TransitStopDetails ensureStopDetails() =>
+      $_ensure(0);
 
   /// Text representations of properties of the `RouteLegStepTransitDetails`.
   @$pb.TagNumber(2)
-  RouteLegStepTransitDetails_TransitDetailsLocalizedValues get localizedValues => $_getN(1);
+  RouteLegStepTransitDetails_TransitDetailsLocalizedValues
+      get localizedValues => $_getN(1);
   @$pb.TagNumber(2)
-  set localizedValues(RouteLegStepTransitDetails_TransitDetailsLocalizedValues v) { setField(2, v); }
+  set localizedValues(
+      RouteLegStepTransitDetails_TransitDetailsLocalizedValues v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLocalizedValues() => $_has(1);
   @$pb.TagNumber(2)
   void clearLocalizedValues() => clearField(2);
   @$pb.TagNumber(2)
-  RouteLegStepTransitDetails_TransitDetailsLocalizedValues ensureLocalizedValues() => $_ensure(1);
+  RouteLegStepTransitDetails_TransitDetailsLocalizedValues
+      ensureLocalizedValues() => $_ensure(1);
 
   /// Specifies the direction in which to travel on this line as marked on
   /// the vehicle or at the departure stop. The direction is often the terminus
@@ -1651,7 +2089,10 @@ class RouteLegStepTransitDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get headsign => $_getSZ(2);
   @$pb.TagNumber(3)
-  set headsign($core.String v) { $_setString(2, v); }
+  set headsign($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasHeadsign() => $_has(2);
   @$pb.TagNumber(3)
@@ -1663,7 +2104,10 @@ class RouteLegStepTransitDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $264.Duration get headway => $_getN(3);
   @$pb.TagNumber(4)
-  set headway($264.Duration v) { setField(4, v); }
+  set headway($264.Duration v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasHeadway() => $_has(3);
   @$pb.TagNumber(4)
@@ -1675,7 +2119,10 @@ class RouteLegStepTransitDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $495.TransitLine get transitLine => $_getN(4);
   @$pb.TagNumber(5)
-  set transitLine($495.TransitLine v) { setField(5, v); }
+  set transitLine($495.TransitLine v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTransitLine() => $_has(4);
   @$pb.TagNumber(5)
@@ -1690,7 +2137,10 @@ class RouteLegStepTransitDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get stopCount => $_getIZ(5);
   @$pb.TagNumber(6)
-  set stopCount($core.int v) { $_setSignedInt32(5, v); }
+  set stopCount($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStopCount() => $_has(5);
   @$pb.TagNumber(6)
@@ -1703,13 +2153,16 @@ class RouteLegStepTransitDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get tripShortText => $_getSZ(6);
   @$pb.TagNumber(7)
-  set tripShortText($core.String v) { $_setString(6, v); }
+  set tripShortText($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTripShortText() => $_has(6);
   @$pb.TagNumber(7)
   void clearTripShortText() => clearField(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

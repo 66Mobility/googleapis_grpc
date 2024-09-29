@@ -17,9 +17,30 @@ import 'dart:typed_data' as $typed_data;
 const Aggregation$json = {
   '1': 'Aggregation',
   '2': [
-    {'1': 'alignment_period', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'alignmentPeriod'},
-    {'1': 'per_series_aligner', '3': 2, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Aggregation.Aligner', '10': 'perSeriesAligner'},
-    {'1': 'cross_series_reducer', '3': 4, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.Aggregation.Reducer', '10': 'crossSeriesReducer'},
+    {
+      '1': 'alignment_period',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'alignmentPeriod'
+    },
+    {
+      '1': 'per_series_aligner',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Aggregation.Aligner',
+      '10': 'perSeriesAligner'
+    },
+    {
+      '1': 'cross_series_reducer',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.Aggregation.Reducer',
+      '10': 'crossSeriesReducer'
+    },
     {'1': 'group_by_fields', '3': 5, '4': 3, '5': 9, '10': 'groupByFields'},
   ],
   '4': [Aggregation_Aligner$json, Aggregation_Reducer$json],
@@ -98,10 +119,31 @@ final $typed_data.Uint8List aggregationDescriptor = $convert.base64Decode(
 const PickTimeSeriesFilter$json = {
   '1': 'PickTimeSeriesFilter',
   '2': [
-    {'1': 'ranking_method', '3': 1, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter.Method', '10': 'rankingMethod'},
+    {
+      '1': 'ranking_method',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter.Method',
+      '10': 'rankingMethod'
+    },
     {'1': 'num_time_series', '3': 2, '4': 1, '5': 5, '10': 'numTimeSeries'},
-    {'1': 'direction', '3': 3, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter.Direction', '10': 'direction'},
-    {'1': 'interval', '3': 4, '4': 1, '5': 11, '6': '.google.type.Interval', '10': 'interval'},
+    {
+      '1': 'direction',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.PickTimeSeriesFilter.Direction',
+      '10': 'direction'
+    },
+    {
+      '1': 'interval',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Interval',
+      '10': 'interval'
+    },
   ],
   '4': [PickTimeSeriesFilter_Method$json, PickTimeSeriesFilter_Direction$json],
 };
@@ -145,7 +187,14 @@ final $typed_data.Uint8List pickTimeSeriesFilterDescriptor = $convert.base64Deco
 const StatisticalTimeSeriesFilter$json = {
   '1': 'StatisticalTimeSeriesFilter',
   '2': [
-    {'1': 'ranking_method', '3': 1, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilter.Method', '10': 'rankingMethod'},
+    {
+      '1': 'ranking_method',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilter.Method',
+      '10': 'rankingMethod'
+    },
     {'1': 'num_time_series', '3': 2, '4': 1, '5': 5, '10': 'numTimeSeries'},
   ],
   '4': [StatisticalTimeSeriesFilter_Method$json],
@@ -167,4 +216,3 @@ final $typed_data.Uint8List statisticalTimeSeriesFilterDescriptor = $convert.bas
     'dGVyLk1ldGhvZFINcmFua2luZ01ldGhvZBImCg9udW1fdGltZV9zZXJpZXMYAiABKAVSDW51bV'
     'RpbWVTZXJpZXMiPAoGTWV0aG9kEhYKEk1FVEhPRF9VTlNQRUNJRklFRBAAEhoKFk1FVEhPRF9D'
     'TFVTVEVSX09VVExJRVIQAQ==');
-

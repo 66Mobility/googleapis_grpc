@@ -49,27 +49,37 @@ class Service extends $pb.GeneratedMessage {
     return $result;
   }
   Service._() : super();
-  factory Service.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<ServiceConfig>(2, _omitFieldNames ? '' : 'config', subBuilder: ServiceConfig.create)
-    ..e<State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: State.STATE_UNSPECIFIED, valueOf: State.valueOf, enumValues: State.values)
+    ..aOM<ServiceConfig>(2, _omitFieldNames ? '' : 'config',
+        subBuilder: ServiceConfig.create)
+    ..e<State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: State.STATE_UNSPECIFIED,
+        valueOf: State.valueOf,
+        enumValues: State.values)
     ..aOS(5, _omitFieldNames ? '' : 'parent')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Service clone() => Service()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service copyWith(void Function(Service) updates) => super.copyWith((message) => updates(message as Service)) as Service;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service copyWith(void Function(Service) updates) =>
+      super.copyWith((message) => updates(message as Service)) as Service;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -78,7 +88,8 @@ class Service extends $pb.GeneratedMessage {
   Service createEmptyInstance() => create();
   static $pb.PbList<Service> createRepeated() => $pb.PbList<Service>();
   @$core.pragma('dart2js:noInline')
-  static Service getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
+  static Service getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
   static Service? _defaultInstance;
 
   ///  The resource name of the consumer and service.
@@ -88,7 +99,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -101,7 +115,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ServiceConfig get config => $_getN(1);
   @$pb.TagNumber(2)
-  set config(ServiceConfig v) { setField(2, v); }
+  set config(ServiceConfig v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -113,7 +130,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   State get state => $_getN(2);
   @$pb.TagNumber(4)
-  set state(State v) { setField(4, v); }
+  set state(State v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(4)
@@ -126,7 +146,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get parent => $_getSZ(3);
   @$pb.TagNumber(5)
-  set parent($core.String v) { $_setString(3, v); }
+  set parent($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasParent() => $_has(3);
   @$pb.TagNumber(5)
@@ -181,42 +204,61 @@ class ServiceConfig extends $pb.GeneratedMessage {
     return $result;
   }
   ServiceConfig._() : super();
-  factory ServiceConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServiceConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ServiceConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ServiceConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ServiceConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..pc<$351.Api>(3, _omitFieldNames ? '' : 'apis', $pb.PbFieldType.PM, subBuilder: $351.Api.create)
-    ..aOM<$352.Documentation>(6, _omitFieldNames ? '' : 'documentation', subBuilder: $352.Documentation.create)
-    ..aOM<$354.Quota>(10, _omitFieldNames ? '' : 'quota', subBuilder: $354.Quota.create)
-    ..aOM<$355.Authentication>(11, _omitFieldNames ? '' : 'authentication', subBuilder: $355.Authentication.create)
-    ..aOM<$357.Usage>(15, _omitFieldNames ? '' : 'usage', subBuilder: $357.Usage.create)
-    ..pc<$358.Endpoint>(18, _omitFieldNames ? '' : 'endpoints', $pb.PbFieldType.PM, subBuilder: $358.Endpoint.create)
-    ..pc<$196.MonitoredResourceDescriptor>(25, _omitFieldNames ? '' : 'monitoredResources', $pb.PbFieldType.PM, subBuilder: $196.MonitoredResourceDescriptor.create)
-    ..aOM<$363.Monitoring>(28, _omitFieldNames ? '' : 'monitoring', subBuilder: $363.Monitoring.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$351.Api>(3, _omitFieldNames ? '' : 'apis', $pb.PbFieldType.PM,
+        subBuilder: $351.Api.create)
+    ..aOM<$352.Documentation>(6, _omitFieldNames ? '' : 'documentation',
+        subBuilder: $352.Documentation.create)
+    ..aOM<$354.Quota>(10, _omitFieldNames ? '' : 'quota',
+        subBuilder: $354.Quota.create)
+    ..aOM<$355.Authentication>(11, _omitFieldNames ? '' : 'authentication',
+        subBuilder: $355.Authentication.create)
+    ..aOM<$357.Usage>(15, _omitFieldNames ? '' : 'usage',
+        subBuilder: $357.Usage.create)
+    ..pc<$358.Endpoint>(
+        18, _omitFieldNames ? '' : 'endpoints', $pb.PbFieldType.PM,
+        subBuilder: $358.Endpoint.create)
+    ..pc<$196.MonitoredResourceDescriptor>(
+        25, _omitFieldNames ? '' : 'monitoredResources', $pb.PbFieldType.PM,
+        subBuilder: $196.MonitoredResourceDescriptor.create)
+    ..aOM<$363.Monitoring>(28, _omitFieldNames ? '' : 'monitoring',
+        subBuilder: $363.Monitoring.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ServiceConfig clone() => ServiceConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServiceConfig copyWith(void Function(ServiceConfig) updates) => super.copyWith((message) => updates(message as ServiceConfig)) as ServiceConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ServiceConfig copyWith(void Function(ServiceConfig) updates) =>
+      super.copyWith((message) => updates(message as ServiceConfig))
+          as ServiceConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConfig create() => ServiceConfig._();
   ServiceConfig createEmptyInstance() => create();
-  static $pb.PbList<ServiceConfig> createRepeated() => $pb.PbList<ServiceConfig>();
+  static $pb.PbList<ServiceConfig> createRepeated() =>
+      $pb.PbList<ServiceConfig>();
   @$core.pragma('dart2js:noInline')
-  static ServiceConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceConfig>(create);
+  static ServiceConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ServiceConfig>(create);
   static ServiceConfig? _defaultInstance;
 
   ///  The DNS address at which this service is available.
@@ -226,7 +268,10 @@ class ServiceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -236,7 +281,10 @@ class ServiceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -252,7 +300,10 @@ class ServiceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $352.Documentation get documentation => $_getN(3);
   @$pb.TagNumber(6)
-  set documentation($352.Documentation v) { setField(6, v); }
+  set documentation($352.Documentation v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDocumentation() => $_has(3);
   @$pb.TagNumber(6)
@@ -264,7 +315,10 @@ class ServiceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $354.Quota get quota => $_getN(4);
   @$pb.TagNumber(10)
-  set quota($354.Quota v) { setField(10, v); }
+  set quota($354.Quota v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasQuota() => $_has(4);
   @$pb.TagNumber(10)
@@ -276,7 +330,10 @@ class ServiceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $355.Authentication get authentication => $_getN(5);
   @$pb.TagNumber(11)
-  set authentication($355.Authentication v) { setField(11, v); }
+  set authentication($355.Authentication v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasAuthentication() => $_has(5);
   @$pb.TagNumber(11)
@@ -288,7 +345,10 @@ class ServiceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $357.Usage get usage => $_getN(6);
   @$pb.TagNumber(15)
-  set usage($357.Usage v) { setField(15, v); }
+  set usage($357.Usage v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasUsage() => $_has(6);
   @$pb.TagNumber(15)
@@ -305,14 +365,18 @@ class ServiceConfig extends $pb.GeneratedMessage {
   /// by the [Service.monitoring][google.api.Service.monitoring] and
   /// [Service.logging][google.api.Service.logging] configurations.
   @$pb.TagNumber(25)
-  $core.List<$196.MonitoredResourceDescriptor> get monitoredResources => $_getList(8);
+  $core.List<$196.MonitoredResourceDescriptor> get monitoredResources =>
+      $_getList(8);
 
   /// Monitoring configuration.
   /// This should not include the 'producer_destinations' field.
   @$pb.TagNumber(28)
   $363.Monitoring get monitoring => $_getN(9);
   @$pb.TagNumber(28)
-  set monitoring($363.Monitoring v) { setField(28, v); }
+  set monitoring($363.Monitoring v) {
+    setField(28, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasMonitoring() => $_has(9);
   @$pb.TagNumber(28)
@@ -333,33 +397,42 @@ class OperationMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   OperationMetadata._() : super();
-  factory OperationMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OperationMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OperationMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OperationMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
+      createEmptyInstance: create)
     ..pPS(2, _omitFieldNames ? '' : 'resourceNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OperationMetadata clone() => OperationMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OperationMetadata copyWith(void Function(OperationMetadata) updates) => super.copyWith((message) => updates(message as OperationMetadata)) as OperationMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OperationMetadata copyWith(void Function(OperationMetadata) updates) =>
+      super.copyWith((message) => updates(message as OperationMetadata))
+          as OperationMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OperationMetadata create() => OperationMetadata._();
   OperationMetadata createEmptyInstance() => create();
-  static $pb.PbList<OperationMetadata> createRepeated() => $pb.PbList<OperationMetadata>();
+  static $pb.PbList<OperationMetadata> createRepeated() =>
+      $pb.PbList<OperationMetadata>();
   @$core.pragma('dart2js:noInline')
-  static OperationMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OperationMetadata>(create);
+  static OperationMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OperationMetadata>(create);
   static OperationMetadata? _defaultInstance;
 
   /// The full name of the resources that this operation is directly
@@ -368,6 +441,6 @@ class OperationMetadata extends $pb.GeneratedMessage {
   $core.List<$core.String> get resourceNames => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

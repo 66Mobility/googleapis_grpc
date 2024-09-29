@@ -34,25 +34,34 @@ class Weight extends $pb.GeneratedMessage {
     return $result;
   }
   Weight._() : super();
-  factory Weight.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Weight.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Weight.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Weight.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Weight', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Weight',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.type'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'amountMicros')
-    ..e<Weight_WeightUnit>(2, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE, defaultOrMaker: Weight_WeightUnit.WEIGHT_UNIT_UNSPECIFIED, valueOf: Weight_WeightUnit.valueOf, enumValues: Weight_WeightUnit.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<Weight_WeightUnit>(2, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE,
+        defaultOrMaker: Weight_WeightUnit.WEIGHT_UNIT_UNSPECIFIED,
+        valueOf: Weight_WeightUnit.valueOf,
+        enumValues: Weight_WeightUnit.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Weight clone() => Weight()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Weight copyWith(void Function(Weight) updates) => super.copyWith((message) => updates(message as Weight)) as Weight;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Weight copyWith(void Function(Weight) updates) =>
+      super.copyWith((message) => updates(message as Weight)) as Weight;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -61,7 +70,8 @@ class Weight extends $pb.GeneratedMessage {
   Weight createEmptyInstance() => create();
   static $pb.PbList<Weight> createRepeated() => $pb.PbList<Weight>();
   @$core.pragma('dart2js:noInline')
-  static Weight getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Weight>(create);
+  static Weight getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Weight>(create);
   static Weight? _defaultInstance;
 
   /// Required. The weight represented as a number in micros (1 million micros is
@@ -72,7 +82,10 @@ class Weight extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get amountMicros => $_getI64(0);
   @$pb.TagNumber(1)
-  set amountMicros($fixnum.Int64 v) { $_setInt64(0, v); }
+  set amountMicros($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAmountMicros() => $_has(0);
   @$pb.TagNumber(1)
@@ -83,7 +96,10 @@ class Weight extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Weight_WeightUnit get unit => $_getN(1);
   @$pb.TagNumber(2)
-  set unit(Weight_WeightUnit v) { setField(2, v); }
+  set unit(Weight_WeightUnit v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUnit() => $_has(1);
   @$pb.TagNumber(2)
@@ -106,25 +122,31 @@ class Price extends $pb.GeneratedMessage {
     return $result;
   }
   Price._() : super();
-  factory Price.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Price.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Price.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Price.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Price', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Price',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.type'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'amountMicros')
     ..aOS(2, _omitFieldNames ? '' : 'currencyCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Price clone() => Price()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Price copyWith(void Function(Price) updates) => super.copyWith((message) => updates(message as Price)) as Price;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Price copyWith(void Function(Price) updates) =>
+      super.copyWith((message) => updates(message as Price)) as Price;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -133,7 +155,8 @@ class Price extends $pb.GeneratedMessage {
   Price createEmptyInstance() => create();
   static $pb.PbList<Price> createRepeated() => $pb.PbList<Price>();
   @$core.pragma('dart2js:noInline')
-  static Price getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Price>(create);
+  static Price getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Price>(create);
   static Price? _defaultInstance;
 
   /// The price represented as a number in micros (1 million micros is an
@@ -142,7 +165,10 @@ class Price extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get amountMicros => $_getI64(0);
   @$pb.TagNumber(1)
-  set amountMicros($fixnum.Int64 v) { $_setInt64(0, v); }
+  set amountMicros($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAmountMicros() => $_has(0);
   @$pb.TagNumber(1)
@@ -153,7 +179,10 @@ class Price extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get currencyCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set currencyCode($core.String v) { $_setString(1, v); }
+  set currencyCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCurrencyCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -181,42 +210,56 @@ class CustomAttribute extends $pb.GeneratedMessage {
     return $result;
   }
   CustomAttribute._() : super();
-  factory CustomAttribute.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomAttribute.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomAttribute.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomAttribute.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomAttribute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomAttribute',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.type'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..pc<CustomAttribute>(3, _omitFieldNames ? '' : 'groupValues', $pb.PbFieldType.PM, subBuilder: CustomAttribute.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<CustomAttribute>(
+        3, _omitFieldNames ? '' : 'groupValues', $pb.PbFieldType.PM,
+        subBuilder: CustomAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CustomAttribute clone() => CustomAttribute()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomAttribute copyWith(void Function(CustomAttribute) updates) => super.copyWith((message) => updates(message as CustomAttribute)) as CustomAttribute;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomAttribute copyWith(void Function(CustomAttribute) updates) =>
+      super.copyWith((message) => updates(message as CustomAttribute))
+          as CustomAttribute;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomAttribute create() => CustomAttribute._();
   CustomAttribute createEmptyInstance() => create();
-  static $pb.PbList<CustomAttribute> createRepeated() => $pb.PbList<CustomAttribute>();
+  static $pb.PbList<CustomAttribute> createRepeated() =>
+      $pb.PbList<CustomAttribute>();
   @$core.pragma('dart2js:noInline')
-  static CustomAttribute getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomAttribute>(create);
+  static CustomAttribute getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomAttribute>(create);
   static CustomAttribute? _defaultInstance;
 
   /// The name of the attribute.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -227,7 +270,10 @@ class CustomAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) { $_setString(1, v); }
+  set value($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -246,23 +292,30 @@ class CustomAttribute extends $pb.GeneratedMessage {
 class Destination extends $pb.GeneratedMessage {
   factory Destination() => create();
   Destination._() : super();
-  factory Destination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Destination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Destination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Destination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Destination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.type'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Destination',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.type'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Destination clone() => Destination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Destination copyWith(void Function(Destination) updates) => super.copyWith((message) => updates(message as Destination)) as Destination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Destination copyWith(void Function(Destination) updates) =>
+      super.copyWith((message) => updates(message as Destination))
+          as Destination;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -271,7 +324,8 @@ class Destination extends $pb.GeneratedMessage {
   Destination createEmptyInstance() => create();
   static $pb.PbList<Destination> createRepeated() => $pb.PbList<Destination>();
   @$core.pragma('dart2js:noInline')
-  static Destination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Destination>(create);
+  static Destination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Destination>(create);
   static Destination? _defaultInstance;
 }
 
@@ -285,32 +339,41 @@ class Destination extends $pb.GeneratedMessage {
 class ReportingContext extends $pb.GeneratedMessage {
   factory ReportingContext() => create();
   ReportingContext._() : super();
-  factory ReportingContext.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReportingContext.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReportingContext.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReportingContext.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportingContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.type'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReportingContext',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.type'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReportingContext clone() => ReportingContext()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReportingContext copyWith(void Function(ReportingContext) updates) => super.copyWith((message) => updates(message as ReportingContext)) as ReportingContext;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReportingContext copyWith(void Function(ReportingContext) updates) =>
+      super.copyWith((message) => updates(message as ReportingContext))
+          as ReportingContext;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReportingContext create() => ReportingContext._();
   ReportingContext createEmptyInstance() => create();
-  static $pb.PbList<ReportingContext> createRepeated() => $pb.PbList<ReportingContext>();
+  static $pb.PbList<ReportingContext> createRepeated() =>
+      $pb.PbList<ReportingContext>();
   @$core.pragma('dart2js:noInline')
-  static ReportingContext getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReportingContext>(create);
+  static ReportingContext getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReportingContext>(create);
   static ReportingContext? _defaultInstance;
 }
 
@@ -320,23 +383,29 @@ class ReportingContext extends $pb.GeneratedMessage {
 class Channel extends $pb.GeneratedMessage {
   factory Channel() => create();
   Channel._() : super();
-  factory Channel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Channel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Channel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Channel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Channel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.type'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Channel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.type'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Channel clone() => Channel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Channel copyWith(void Function(Channel) updates) => super.copyWith((message) => updates(message as Channel)) as Channel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Channel copyWith(void Function(Channel) updates) =>
+      super.copyWith((message) => updates(message as Channel)) as Channel;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -345,10 +414,11 @@ class Channel extends $pb.GeneratedMessage {
   Channel createEmptyInstance() => create();
   static $pb.PbList<Channel> createRepeated() => $pb.PbList<Channel>();
   @$core.pragma('dart2js:noInline')
-  static Channel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Channel>(create);
+  static Channel getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Channel>(create);
   static Channel? _defaultInstance;
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

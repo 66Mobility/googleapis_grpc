@@ -27,4 +27,3 @@ const HistoryState$json = {
 final $typed_data.Uint8List historyStateDescriptor = $convert.base64Decode(
     'CgxIaXN0b3J5U3RhdGUSHQoZSElTVE9SWV9TVEFURV9VTlNQRUNJRklFRBAAEg8KC0hJU1RPUl'
     'lfT0ZGEAESDgoKSElTVE9SWV9PThAC');
-

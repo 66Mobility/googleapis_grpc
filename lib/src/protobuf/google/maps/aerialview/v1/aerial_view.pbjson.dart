@@ -17,9 +17,30 @@ import 'dart:typed_data' as $typed_data;
 const Video$json = {
   '1': 'Video',
   '2': [
-    {'1': 'uris', '3': 1, '4': 3, '5': 11, '6': '.google.maps.aerialview.v1.Video.UrisEntry', '10': 'uris'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.maps.aerialview.v1.Video.State', '10': 'state'},
-    {'1': 'metadata', '3': 3, '4': 1, '5': 11, '6': '.google.maps.aerialview.v1.VideoMetadata', '10': 'metadata'},
+    {
+      '1': 'uris',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.aerialview.v1.Video.UrisEntry',
+      '10': 'uris'
+    },
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.aerialview.v1.Video.State',
+      '10': 'state'
+    },
+    {
+      '1': 'metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.aerialview.v1.VideoMetadata',
+      '10': 'metadata'
+    },
   ],
   '3': [Video_UrisEntry$json],
   '4': [Video_State$json],
@@ -30,7 +51,14 @@ const Video_UrisEntry$json = {
   '1': 'UrisEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.aerialview.v1.Uris', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.aerialview.v1.Uris',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -75,8 +103,22 @@ const VideoMetadata$json = {
   '1': 'VideoMetadata',
   '2': [
     {'1': 'video_id', '3': 1, '4': 1, '5': 9, '10': 'videoId'},
-    {'1': 'capture_date', '3': 2, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'captureDate'},
-    {'1': 'duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
+    {
+      '1': 'capture_date',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'captureDate'
+    },
+    {
+      '1': 'duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
   ],
 };
 
@@ -95,15 +137,30 @@ const RenderVideoRequest$json = {
 };
 
 /// Descriptor for `RenderVideoRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List renderVideoRequestDescriptor = $convert.base64Decode(
-    'ChJSZW5kZXJWaWRlb1JlcXVlc3QSHQoHYWRkcmVzcxgBIAEoCUID4EECUgdhZGRyZXNz');
+final $typed_data.Uint8List renderVideoRequestDescriptor =
+    $convert.base64Decode(
+        'ChJSZW5kZXJWaWRlb1JlcXVlc3QSHQoHYWRkcmVzcxgBIAEoCUID4EECUgdhZGRyZXNz');
 
 @$core.Deprecated('Use renderVideoResponseDescriptor instead')
 const RenderVideoResponse$json = {
   '1': 'RenderVideoResponse',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.maps.aerialview.v1.Video.State', '10': 'state'},
-    {'1': 'metadata', '3': 2, '4': 1, '5': 11, '6': '.google.maps.aerialview.v1.VideoMetadata', '10': 'metadata'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.aerialview.v1.Video.State',
+      '10': 'state'
+    },
+    {
+      '1': 'metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.aerialview.v1.VideoMetadata',
+      '10': 'metadata'
+    },
   ],
 };
 
@@ -129,4 +186,3 @@ const LookupVideoRequest$json = {
 final $typed_data.Uint8List lookupVideoRequestDescriptor = $convert.base64Decode(
     'ChJMb29rdXBWaWRlb1JlcXVlc3QSGwoIdmlkZW9faWQYASABKAlIAFIHdmlkZW9JZBIaCgdhZG'
     'RyZXNzGAIgASgJSABSB2FkZHJlc3NCBQoDa2V5');
-

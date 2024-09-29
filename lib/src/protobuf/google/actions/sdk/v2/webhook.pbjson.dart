@@ -17,11 +17,38 @@ import 'dart:typed_data' as $typed_data;
 const Webhook$json = {
   '1': 'Webhook',
   '2': [
-    {'1': 'handlers', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.Webhook.Handler', '10': 'handlers'},
-    {'1': 'https_endpoint', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Webhook.HttpsEndpoint', '9': 0, '10': 'httpsEndpoint'},
-    {'1': 'inline_cloud_function', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Webhook.InlineCloudFunction', '9': 0, '10': 'inlineCloudFunction'},
+    {
+      '1': 'handlers',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Webhook.Handler',
+      '10': 'handlers'
+    },
+    {
+      '1': 'https_endpoint',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Webhook.HttpsEndpoint',
+      '9': 0,
+      '10': 'httpsEndpoint'
+    },
+    {
+      '1': 'inline_cloud_function',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Webhook.InlineCloudFunction',
+      '9': 0,
+      '10': 'inlineCloudFunction'
+    },
   ],
-  '3': [Webhook_Handler$json, Webhook_HttpsEndpoint$json, Webhook_InlineCloudFunction$json],
+  '3': [
+    Webhook_Handler$json,
+    Webhook_HttpsEndpoint$json,
+    Webhook_InlineCloudFunction$json
+  ],
   '8': [
     {'1': 'webhook_type'},
   ],
@@ -40,8 +67,21 @@ const Webhook_HttpsEndpoint$json = {
   '1': 'HttpsEndpoint',
   '2': [
     {'1': 'base_url', '3': 1, '4': 1, '5': 9, '10': 'baseUrl'},
-    {'1': 'http_headers', '3': 2, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.Webhook.HttpsEndpoint.HttpHeadersEntry', '10': 'httpHeaders'},
-    {'1': 'endpoint_api_version', '3': 3, '4': 1, '5': 5, '10': 'endpointApiVersion'},
+    {
+      '1': 'http_headers',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Webhook.HttpsEndpoint.HttpHeadersEntry',
+      '10': 'httpHeaders'
+    },
+    {
+      '1': 'endpoint_api_version',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'endpointApiVersion'
+    },
   ],
   '3': [Webhook_HttpsEndpoint_HttpHeadersEntry$json],
 };
@@ -78,4 +118,3 @@ final $typed_data.Uint8List webhookDescriptor = $convert.base64Decode(
     'o+ChBIdHRwSGVhZGVyc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2'
     'YWx1ZToCOAEaQAoTSW5saW5lQ2xvdWRGdW5jdGlvbhIpChBleGVjdXRlX2Z1bmN0aW9uGAEgAS'
     'gJUg9leGVjdXRlRnVuY3Rpb25CDgoMd2ViaG9va190eXBl');
-

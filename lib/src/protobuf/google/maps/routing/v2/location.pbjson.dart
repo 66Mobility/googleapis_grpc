@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Location$json = {
   '1': 'Location',
   '2': [
-    {'1': 'lat_lng', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'latLng'},
-    {'1': 'heading', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'heading'},
+    {
+      '1': 'lat_lng',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'latLng'
+    },
+    {
+      '1': 'heading',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'heading'
+    },
   ],
 };
 
@@ -26,4 +40,3 @@ const Location$json = {
 final $typed_data.Uint8List locationDescriptor = $convert.base64Decode(
     'CghMb2NhdGlvbhIsCgdsYXRfbG5nGAEgASgLMhMuZ29vZ2xlLnR5cGUuTGF0TG5nUgZsYXRMbm'
     'cSNQoHaGVhZGluZxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlUgdoZWFkaW5n');
-

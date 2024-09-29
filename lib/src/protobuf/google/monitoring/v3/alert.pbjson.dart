@@ -19,19 +19,101 @@ const AlertPolicy$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'documentation', '3': 13, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Documentation', '10': 'documentation'},
-    {'1': 'user_labels', '3': 16, '4': 3, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.UserLabelsEntry', '10': 'userLabels'},
-    {'1': 'conditions', '3': 12, '4': 3, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition', '10': 'conditions'},
-    {'1': 'combiner', '3': 6, '4': 1, '5': 14, '6': '.google.monitoring.v3.AlertPolicy.ConditionCombinerType', '10': 'combiner'},
-    {'1': 'enabled', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'enabled'},
-    {'1': 'validity', '3': 18, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'validity'},
-    {'1': 'notification_channels', '3': 14, '4': 3, '5': 9, '10': 'notificationChannels'},
-    {'1': 'creation_record', '3': 10, '4': 1, '5': 11, '6': '.google.monitoring.v3.MutationRecord', '10': 'creationRecord'},
-    {'1': 'mutation_record', '3': 11, '4': 1, '5': 11, '6': '.google.monitoring.v3.MutationRecord', '10': 'mutationRecord'},
-    {'1': 'alert_strategy', '3': 21, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.AlertStrategy', '10': 'alertStrategy'},
-    {'1': 'severity', '3': 22, '4': 1, '5': 14, '6': '.google.monitoring.v3.AlertPolicy.Severity', '8': {}, '10': 'severity'},
+    {
+      '1': 'documentation',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Documentation',
+      '10': 'documentation'
+    },
+    {
+      '1': 'user_labels',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.UserLabelsEntry',
+      '10': 'userLabels'
+    },
+    {
+      '1': 'conditions',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition',
+      '10': 'conditions'
+    },
+    {
+      '1': 'combiner',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.AlertPolicy.ConditionCombinerType',
+      '10': 'combiner'
+    },
+    {
+      '1': 'enabled',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'enabled'
+    },
+    {
+      '1': 'validity',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'validity'
+    },
+    {
+      '1': 'notification_channels',
+      '3': 14,
+      '4': 3,
+      '5': 9,
+      '10': 'notificationChannels'
+    },
+    {
+      '1': 'creation_record',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.MutationRecord',
+      '10': 'creationRecord'
+    },
+    {
+      '1': 'mutation_record',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.MutationRecord',
+      '10': 'mutationRecord'
+    },
+    {
+      '1': 'alert_strategy',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.AlertStrategy',
+      '10': 'alertStrategy'
+    },
+    {
+      '1': 'severity',
+      '3': 22,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.AlertPolicy.Severity',
+      '8': {},
+      '10': 'severity'
+    },
   ],
-  '3': [AlertPolicy_Documentation$json, AlertPolicy_Condition$json, AlertPolicy_AlertStrategy$json, AlertPolicy_UserLabelsEntry$json],
+  '3': [
+    AlertPolicy_Documentation$json,
+    AlertPolicy_Condition$json,
+    AlertPolicy_AlertStrategy$json,
+    AlertPolicy_UserLabelsEntry$json
+  ],
   '4': [AlertPolicy_ConditionCombinerType$json, AlertPolicy_Severity$json],
   '7': {},
 };
@@ -43,7 +125,15 @@ const AlertPolicy_Documentation$json = {
     {'1': 'content', '3': 1, '4': 1, '5': 9, '10': 'content'},
     {'1': 'mime_type', '3': 2, '4': 1, '5': 9, '10': 'mimeType'},
     {'1': 'subject', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'subject'},
-    {'1': 'links', '3': 4, '4': 3, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Documentation.Link', '8': {}, '10': 'links'},
+    {
+      '1': 'links',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Documentation.Link',
+      '8': {},
+      '10': 'links'
+    },
   ],
   '3': [AlertPolicy_Documentation_Link$json],
 };
@@ -63,13 +153,62 @@ const AlertPolicy_Condition$json = {
   '2': [
     {'1': 'name', '3': 12, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 6, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'condition_threshold', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.MetricThreshold', '9': 0, '10': 'conditionThreshold'},
-    {'1': 'condition_absent', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.MetricAbsence', '9': 0, '10': 'conditionAbsent'},
-    {'1': 'condition_matched_log', '3': 20, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.LogMatch', '9': 0, '10': 'conditionMatchedLog'},
-    {'1': 'condition_monitoring_query_language', '3': 19, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.MonitoringQueryLanguageCondition', '9': 0, '10': 'conditionMonitoringQueryLanguage'},
-    {'1': 'condition_prometheus_query_language', '3': 21, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.PrometheusQueryLanguageCondition', '9': 0, '10': 'conditionPrometheusQueryLanguage'},
+    {
+      '1': 'condition_threshold',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.MetricThreshold',
+      '9': 0,
+      '10': 'conditionThreshold'
+    },
+    {
+      '1': 'condition_absent',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.MetricAbsence',
+      '9': 0,
+      '10': 'conditionAbsent'
+    },
+    {
+      '1': 'condition_matched_log',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.LogMatch',
+      '9': 0,
+      '10': 'conditionMatchedLog'
+    },
+    {
+      '1': 'condition_monitoring_query_language',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.monitoring.v3.AlertPolicy.Condition.MonitoringQueryLanguageCondition',
+      '9': 0,
+      '10': 'conditionMonitoringQueryLanguage'
+    },
+    {
+      '1': 'condition_prometheus_query_language',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.monitoring.v3.AlertPolicy.Condition.PrometheusQueryLanguageCondition',
+      '9': 0,
+      '10': 'conditionPrometheusQueryLanguage'
+    },
   ],
-  '3': [AlertPolicy_Condition_Trigger$json, AlertPolicy_Condition_MetricThreshold$json, AlertPolicy_Condition_MetricAbsence$json, AlertPolicy_Condition_LogMatch$json, AlertPolicy_Condition_MonitoringQueryLanguageCondition$json, AlertPolicy_Condition_PrometheusQueryLanguageCondition$json],
+  '3': [
+    AlertPolicy_Condition_Trigger$json,
+    AlertPolicy_Condition_MetricThreshold$json,
+    AlertPolicy_Condition_MetricAbsence$json,
+    AlertPolicy_Condition_LogMatch$json,
+    AlertPolicy_Condition_MonitoringQueryLanguageCondition$json,
+    AlertPolicy_Condition_PrometheusQueryLanguageCondition$json
+  ],
   '4': [AlertPolicy_Condition_EvaluationMissingData$json],
   '7': {},
   '8': [
@@ -94,15 +233,71 @@ const AlertPolicy_Condition_MetricThreshold$json = {
   '1': 'MetricThreshold',
   '2': [
     {'1': 'filter', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'aggregations', '3': 8, '4': 3, '5': 11, '6': '.google.monitoring.v3.Aggregation', '10': 'aggregations'},
-    {'1': 'denominator_filter', '3': 9, '4': 1, '5': 9, '10': 'denominatorFilter'},
-    {'1': 'denominator_aggregations', '3': 10, '4': 3, '5': 11, '6': '.google.monitoring.v3.Aggregation', '10': 'denominatorAggregations'},
-    {'1': 'forecast_options', '3': 12, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.MetricThreshold.ForecastOptions', '10': 'forecastOptions'},
-    {'1': 'comparison', '3': 4, '4': 1, '5': 14, '6': '.google.monitoring.v3.ComparisonType', '10': 'comparison'},
+    {
+      '1': 'aggregations',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.Aggregation',
+      '10': 'aggregations'
+    },
+    {
+      '1': 'denominator_filter',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '10': 'denominatorFilter'
+    },
+    {
+      '1': 'denominator_aggregations',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.Aggregation',
+      '10': 'denominatorAggregations'
+    },
+    {
+      '1': 'forecast_options',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.monitoring.v3.AlertPolicy.Condition.MetricThreshold.ForecastOptions',
+      '10': 'forecastOptions'
+    },
+    {
+      '1': 'comparison',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.ComparisonType',
+      '10': 'comparison'
+    },
     {'1': 'threshold_value', '3': 5, '4': 1, '5': 1, '10': 'thresholdValue'},
-    {'1': 'duration', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'trigger', '3': 7, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.Trigger', '10': 'trigger'},
-    {'1': 'evaluation_missing_data', '3': 11, '4': 1, '5': 14, '6': '.google.monitoring.v3.AlertPolicy.Condition.EvaluationMissingData', '10': 'evaluationMissingData'},
+    {
+      '1': 'duration',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'trigger',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.Trigger',
+      '10': 'trigger'
+    },
+    {
+      '1': 'evaluation_missing_data',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.EvaluationMissingData',
+      '10': 'evaluationMissingData'
+    },
   ],
   '3': [AlertPolicy_Condition_MetricThreshold_ForecastOptions$json],
 };
@@ -111,7 +306,15 @@ const AlertPolicy_Condition_MetricThreshold$json = {
 const AlertPolicy_Condition_MetricThreshold_ForecastOptions$json = {
   '1': 'ForecastOptions',
   '2': [
-    {'1': 'forecast_horizon', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'forecastHorizon'},
+    {
+      '1': 'forecast_horizon',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'forecastHorizon'
+    },
   ],
 };
 
@@ -120,9 +323,30 @@ const AlertPolicy_Condition_MetricAbsence$json = {
   '1': 'MetricAbsence',
   '2': [
     {'1': 'filter', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'aggregations', '3': 5, '4': 3, '5': 11, '6': '.google.monitoring.v3.Aggregation', '10': 'aggregations'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'trigger', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.Trigger', '10': 'trigger'},
+    {
+      '1': 'aggregations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.Aggregation',
+      '10': 'aggregations'
+    },
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'trigger',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.Trigger',
+      '10': 'trigger'
+    },
   ],
 };
 
@@ -131,7 +355,15 @@ const AlertPolicy_Condition_LogMatch$json = {
   '1': 'LogMatch',
   '2': [
     {'1': 'filter', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'label_extractors', '3': 2, '4': 3, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.LogMatch.LabelExtractorsEntry', '10': 'labelExtractors'},
+    {
+      '1': 'label_extractors',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.monitoring.v3.AlertPolicy.Condition.LogMatch.LabelExtractorsEntry',
+      '10': 'labelExtractors'
+    },
   ],
   '3': [AlertPolicy_Condition_LogMatch_LabelExtractorsEntry$json],
 };
@@ -151,9 +383,30 @@ const AlertPolicy_Condition_MonitoringQueryLanguageCondition$json = {
   '1': 'MonitoringQueryLanguageCondition',
   '2': [
     {'1': 'query', '3': 1, '4': 1, '5': 9, '10': 'query'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'trigger', '3': 3, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.Trigger', '10': 'trigger'},
-    {'1': 'evaluation_missing_data', '3': 4, '4': 1, '5': 14, '6': '.google.monitoring.v3.AlertPolicy.Condition.EvaluationMissingData', '10': 'evaluationMissingData'},
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'trigger',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.Trigger',
+      '10': 'trigger'
+    },
+    {
+      '1': 'evaluation_missing_data',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.v3.AlertPolicy.Condition.EvaluationMissingData',
+      '10': 'evaluationMissingData'
+    },
   ],
 };
 
@@ -162,17 +415,45 @@ const AlertPolicy_Condition_PrometheusQueryLanguageCondition$json = {
   '1': 'PrometheusQueryLanguageCondition',
   '2': [
     {'1': 'query', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'query'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'duration'},
-    {'1': 'evaluation_interval', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'evaluationInterval'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.Condition.PrometheusQueryLanguageCondition.LabelsEntry', '8': {}, '10': 'labels'},
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'duration'
+    },
+    {
+      '1': 'evaluation_interval',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'evaluationInterval'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.monitoring.v3.AlertPolicy.Condition.PrometheusQueryLanguageCondition.LabelsEntry',
+      '8': {},
+      '10': 'labels'
+    },
     {'1': 'rule_group', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'ruleGroup'},
     {'1': 'alert_rule', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'alertRule'},
   ],
-  '3': [AlertPolicy_Condition_PrometheusQueryLanguageCondition_LabelsEntry$json],
+  '3': [
+    AlertPolicy_Condition_PrometheusQueryLanguageCondition_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use alertPolicyDescriptor instead')
-const AlertPolicy_Condition_PrometheusQueryLanguageCondition_LabelsEntry$json = {
+const AlertPolicy_Condition_PrometheusQueryLanguageCondition_LabelsEntry$json =
+    {
   '1': 'LabelsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
@@ -196,18 +477,51 @@ const AlertPolicy_Condition_EvaluationMissingData$json = {
 const AlertPolicy_AlertStrategy$json = {
   '1': 'AlertStrategy',
   '2': [
-    {'1': 'notification_rate_limit', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.AlertStrategy.NotificationRateLimit', '10': 'notificationRateLimit'},
-    {'1': 'auto_close', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'autoClose'},
-    {'1': 'notification_channel_strategy', '3': 4, '4': 3, '5': 11, '6': '.google.monitoring.v3.AlertPolicy.AlertStrategy.NotificationChannelStrategy', '10': 'notificationChannelStrategy'},
+    {
+      '1': 'notification_rate_limit',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.monitoring.v3.AlertPolicy.AlertStrategy.NotificationRateLimit',
+      '10': 'notificationRateLimit'
+    },
+    {
+      '1': 'auto_close',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'autoClose'
+    },
+    {
+      '1': 'notification_channel_strategy',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.monitoring.v3.AlertPolicy.AlertStrategy.NotificationChannelStrategy',
+      '10': 'notificationChannelStrategy'
+    },
   ],
-  '3': [AlertPolicy_AlertStrategy_NotificationRateLimit$json, AlertPolicy_AlertStrategy_NotificationChannelStrategy$json],
+  '3': [
+    AlertPolicy_AlertStrategy_NotificationRateLimit$json,
+    AlertPolicy_AlertStrategy_NotificationChannelStrategy$json
+  ],
 };
 
 @$core.Deprecated('Use alertPolicyDescriptor instead')
 const AlertPolicy_AlertStrategy_NotificationRateLimit$json = {
   '1': 'NotificationRateLimit',
   '2': [
-    {'1': 'period', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'period'},
+    {
+      '1': 'period',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'period'
+    },
   ],
 };
 
@@ -215,8 +529,21 @@ const AlertPolicy_AlertStrategy_NotificationRateLimit$json = {
 const AlertPolicy_AlertStrategy_NotificationChannelStrategy$json = {
   '1': 'NotificationChannelStrategy',
   '2': [
-    {'1': 'notification_channel_names', '3': 1, '4': 3, '5': 9, '10': 'notificationChannelNames'},
-    {'1': 'renotify_interval', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'renotifyInterval'},
+    {
+      '1': 'notification_channel_names',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'notificationChannelNames'
+    },
+    {
+      '1': 'renotify_interval',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'renotifyInterval'
+    },
   ],
 };
 
@@ -354,4 +681,3 @@ final $typed_data.Uint8List alertPolicyDescriptor = $convert.base64Decode(
     '97YWxlcnRfcG9saWN5fRI5b3JnYW5pemF0aW9ucy97b3JnYW5pemF0aW9ufS9hbGVydFBvbGlj'
     'aWVzL3thbGVydF9wb2xpY3l9Ei1mb2xkZXJzL3tmb2xkZXJ9L2FsZXJ0UG9saWNpZXMve2FsZX'
     'J0X3BvbGljeX0SASo=');
-

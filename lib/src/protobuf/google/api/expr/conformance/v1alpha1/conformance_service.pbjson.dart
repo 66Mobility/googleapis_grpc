@@ -34,8 +34,22 @@ final $typed_data.Uint8List parseRequestDescriptor = $convert.base64Decode(
 const ParseResponse$json = {
   '1': 'ParseResponse',
   '2': [
-    {'1': 'parsed_expr', '3': 1, '4': 1, '5': 11, '6': '.google.api.expr.v1alpha1.ParsedExpr', '10': 'parsedExpr'},
-    {'1': 'issues', '3': 2, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'issues'},
+    {
+      '1': 'parsed_expr',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.ParsedExpr',
+      '10': 'parsedExpr'
+    },
+    {
+      '1': 'issues',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'issues'
+    },
   ],
 };
 
@@ -49,8 +63,22 @@ final $typed_data.Uint8List parseResponseDescriptor = $convert.base64Decode(
 const CheckRequest$json = {
   '1': 'CheckRequest',
   '2': [
-    {'1': 'parsed_expr', '3': 1, '4': 1, '5': 11, '6': '.google.api.expr.v1alpha1.ParsedExpr', '10': 'parsedExpr'},
-    {'1': 'type_env', '3': 2, '4': 3, '5': 11, '6': '.google.api.expr.v1alpha1.Decl', '10': 'typeEnv'},
+    {
+      '1': 'parsed_expr',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.ParsedExpr',
+      '10': 'parsedExpr'
+    },
+    {
+      '1': 'type_env',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.Decl',
+      '10': 'typeEnv'
+    },
     {'1': 'container', '3': 3, '4': 1, '5': 9, '10': 'container'},
     {'1': 'no_std_env', '3': 4, '4': 1, '5': 8, '10': 'noStdEnv'},
   ],
@@ -67,8 +95,22 @@ final $typed_data.Uint8List checkRequestDescriptor = $convert.base64Decode(
 const CheckResponse$json = {
   '1': 'CheckResponse',
   '2': [
-    {'1': 'checked_expr', '3': 1, '4': 1, '5': 11, '6': '.google.api.expr.v1alpha1.CheckedExpr', '10': 'checkedExpr'},
-    {'1': 'issues', '3': 2, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'issues'},
+    {
+      '1': 'checked_expr',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.CheckedExpr',
+      '10': 'checkedExpr'
+    },
+    {
+      '1': 'issues',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'issues'
+    },
   ],
 };
 
@@ -82,9 +124,32 @@ final $typed_data.Uint8List checkResponseDescriptor = $convert.base64Decode(
 const EvalRequest$json = {
   '1': 'EvalRequest',
   '2': [
-    {'1': 'parsed_expr', '3': 1, '4': 1, '5': 11, '6': '.google.api.expr.v1alpha1.ParsedExpr', '9': 0, '10': 'parsedExpr'},
-    {'1': 'checked_expr', '3': 2, '4': 1, '5': 11, '6': '.google.api.expr.v1alpha1.CheckedExpr', '9': 0, '10': 'checkedExpr'},
-    {'1': 'bindings', '3': 3, '4': 3, '5': 11, '6': '.google.api.expr.conformance.v1alpha1.EvalRequest.BindingsEntry', '10': 'bindings'},
+    {
+      '1': 'parsed_expr',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.ParsedExpr',
+      '9': 0,
+      '10': 'parsedExpr'
+    },
+    {
+      '1': 'checked_expr',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.CheckedExpr',
+      '9': 0,
+      '10': 'checkedExpr'
+    },
+    {
+      '1': 'bindings',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.expr.conformance.v1alpha1.EvalRequest.BindingsEntry',
+      '10': 'bindings'
+    },
     {'1': 'container', '3': 4, '4': 1, '5': 9, '10': 'container'},
   ],
   '3': [EvalRequest_BindingsEntry$json],
@@ -98,7 +163,14 @@ const EvalRequest_BindingsEntry$json = {
   '1': 'BindingsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.api.expr.v1alpha1.ExprValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.ExprValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -118,8 +190,22 @@ final $typed_data.Uint8List evalRequestDescriptor = $convert.base64Decode(
 const EvalResponse$json = {
   '1': 'EvalResponse',
   '2': [
-    {'1': 'result', '3': 1, '4': 1, '5': 11, '6': '.google.api.expr.v1alpha1.ExprValue', '10': 'result'},
-    {'1': 'issues', '3': 2, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'issues'},
+    {
+      '1': 'result',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.v1alpha1.ExprValue',
+      '10': 'result'
+    },
+    {
+      '1': 'issues',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'issues'
+    },
   ],
 };
 
@@ -150,8 +236,22 @@ final $typed_data.Uint8List sourcePositionDescriptor = $convert.base64Decode(
 const IssueDetails$json = {
   '1': 'IssueDetails',
   '2': [
-    {'1': 'severity', '3': 1, '4': 1, '5': 14, '6': '.google.api.expr.conformance.v1alpha1.IssueDetails.Severity', '10': 'severity'},
-    {'1': 'position', '3': 2, '4': 1, '5': 11, '6': '.google.api.expr.conformance.v1alpha1.SourcePosition', '10': 'position'},
+    {
+      '1': 'severity',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.expr.conformance.v1alpha1.IssueDetails.Severity',
+      '10': 'severity'
+    },
+    {
+      '1': 'position',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.expr.conformance.v1alpha1.SourcePosition',
+      '10': 'position'
+    },
     {'1': 'id', '3': 3, '4': 1, '5': 3, '10': 'id'},
   ],
   '4': [IssueDetails_Severity$json],
@@ -176,4 +276,3 @@ final $typed_data.Uint8List issueDetailsDescriptor = $convert.base64Decode(
     'VQb3NpdGlvblIIcG9zaXRpb24SDgoCaWQYAyABKANSAmlkIk0KCFNldmVyaXR5EhgKFFNFVkVS'
     'SVRZX1VOU1BFQ0lGSUVEEAASDwoLREVQUkVDQVRJT04QARILCgdXQVJOSU5HEAISCQoFRVJST1'
     'IQAw==');
-

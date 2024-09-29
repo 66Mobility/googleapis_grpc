@@ -16,18 +16,33 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// Enum indicating the states that a Version can take. This enum is not yet
 /// frozen and values maybe added later.
 class Version_VersionState_State extends $pb.ProtobufEnum {
-  static const Version_VersionState_State STATE_UNSPECIFIED = Version_VersionState_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const Version_VersionState_State CREATION_IN_PROGRESS = Version_VersionState_State._(1, _omitEnumNames ? '' : 'CREATION_IN_PROGRESS');
-  static const Version_VersionState_State CREATION_FAILED = Version_VersionState_State._(2, _omitEnumNames ? '' : 'CREATION_FAILED');
-  static const Version_VersionState_State CREATED = Version_VersionState_State._(3, _omitEnumNames ? '' : 'CREATED');
-  static const Version_VersionState_State REVIEW_IN_PROGRESS = Version_VersionState_State._(4, _omitEnumNames ? '' : 'REVIEW_IN_PROGRESS');
-  static const Version_VersionState_State APPROVED = Version_VersionState_State._(5, _omitEnumNames ? '' : 'APPROVED');
-  static const Version_VersionState_State CONDITIONALLY_APPROVED = Version_VersionState_State._(6, _omitEnumNames ? '' : 'CONDITIONALLY_APPROVED');
-  static const Version_VersionState_State DENIED = Version_VersionState_State._(7, _omitEnumNames ? '' : 'DENIED');
-  static const Version_VersionState_State UNDER_TAKEDOWN = Version_VersionState_State._(8, _omitEnumNames ? '' : 'UNDER_TAKEDOWN');
-  static const Version_VersionState_State DELETED = Version_VersionState_State._(9, _omitEnumNames ? '' : 'DELETED');
+  static const Version_VersionState_State STATE_UNSPECIFIED =
+      Version_VersionState_State._(
+          0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const Version_VersionState_State CREATION_IN_PROGRESS =
+      Version_VersionState_State._(
+          1, _omitEnumNames ? '' : 'CREATION_IN_PROGRESS');
+  static const Version_VersionState_State CREATION_FAILED =
+      Version_VersionState_State._(2, _omitEnumNames ? '' : 'CREATION_FAILED');
+  static const Version_VersionState_State CREATED =
+      Version_VersionState_State._(3, _omitEnumNames ? '' : 'CREATED');
+  static const Version_VersionState_State REVIEW_IN_PROGRESS =
+      Version_VersionState_State._(
+          4, _omitEnumNames ? '' : 'REVIEW_IN_PROGRESS');
+  static const Version_VersionState_State APPROVED =
+      Version_VersionState_State._(5, _omitEnumNames ? '' : 'APPROVED');
+  static const Version_VersionState_State CONDITIONALLY_APPROVED =
+      Version_VersionState_State._(
+          6, _omitEnumNames ? '' : 'CONDITIONALLY_APPROVED');
+  static const Version_VersionState_State DENIED =
+      Version_VersionState_State._(7, _omitEnumNames ? '' : 'DENIED');
+  static const Version_VersionState_State UNDER_TAKEDOWN =
+      Version_VersionState_State._(8, _omitEnumNames ? '' : 'UNDER_TAKEDOWN');
+  static const Version_VersionState_State DELETED =
+      Version_VersionState_State._(9, _omitEnumNames ? '' : 'DELETED');
 
-  static const $core.List<Version_VersionState_State> values = <Version_VersionState_State> [
+  static const $core.List<Version_VersionState_State> values =
+      <Version_VersionState_State>[
     STATE_UNSPECIFIED,
     CREATION_IN_PROGRESS,
     CREATION_FAILED,
@@ -40,11 +55,12 @@ class Version_VersionState_State extends $pb.ProtobufEnum {
     DELETED,
   ];
 
-  static final $core.Map<$core.int, Version_VersionState_State> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static Version_VersionState_State? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, Version_VersionState_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static Version_VersionState_State? valueOf($core.int value) =>
+      _byValue[value];
 
   const Version_VersionState_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

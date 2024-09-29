@@ -148,7 +148,15 @@ final $typed_data.Uint8List terminalPointIdDescriptor = $convert.base64Decode(
 const TerminalLocation$json = {
   '1': 'TerminalLocation',
   '2': [
-    {'1': 'point', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'point'},
+    {
+      '1': 'point',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'point'
+    },
     {
       '1': 'terminal_point_id',
       '3': 2,
@@ -199,15 +207,70 @@ final $typed_data.Uint8List terminalLocationDescriptor = $convert.base64Decode(
 const TripWaypoint$json = {
   '1': 'TripWaypoint',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TerminalLocation', '10': 'location'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TerminalLocation',
+      '10': 'location'
+    },
     {'1': 'trip_id', '3': 2, '4': 1, '5': 9, '10': 'tripId'},
-    {'1': 'waypoint_type', '3': 3, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.WaypointType', '10': 'waypointType'},
-    {'1': 'path_to_waypoint', '3': 4, '4': 3, '5': 11, '6': '.google.type.LatLng', '10': 'pathToWaypoint'},
-    {'1': 'encoded_path_to_waypoint', '3': 5, '4': 1, '5': 9, '10': 'encodedPathToWaypoint'},
-    {'1': 'traffic_to_waypoint', '3': 10, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.ConsumableTrafficPolyline', '10': 'trafficToWaypoint'},
-    {'1': 'distance_meters', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'distanceMeters'},
-    {'1': 'eta', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eta'},
-    {'1': 'duration', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
+    {
+      '1': 'waypoint_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.WaypointType',
+      '10': 'waypointType'
+    },
+    {
+      '1': 'path_to_waypoint',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'pathToWaypoint'
+    },
+    {
+      '1': 'encoded_path_to_waypoint',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'encodedPathToWaypoint'
+    },
+    {
+      '1': 'traffic_to_waypoint',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.ConsumableTrafficPolyline',
+      '10': 'trafficToWaypoint'
+    },
+    {
+      '1': 'distance_meters',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'distanceMeters'
+    },
+    {
+      '1': 'eta',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eta'
+    },
+    {
+      '1': 'duration',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
   ],
 };
 
@@ -251,7 +314,14 @@ final $typed_data.Uint8List vehicleAttributeDescriptor = $convert.base64Decode(
 const VehicleLocation$json = {
   '1': 'VehicleLocation',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'location'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'location'
+    },
     {
       '1': 'horizontal_accuracy',
       '3': 8,
@@ -261,8 +331,22 @@ const VehicleLocation$json = {
       '8': {'3': true},
       '10': 'horizontalAccuracy',
     },
-    {'1': 'latlng_accuracy', '3': 22, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'latlngAccuracy'},
-    {'1': 'heading', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'heading'},
+    {
+      '1': 'latlng_accuracy',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'latlngAccuracy'
+    },
+    {
+      '1': 'heading',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'heading'
+    },
     {
       '1': 'bearing_accuracy',
       '3': 10,
@@ -272,8 +356,22 @@ const VehicleLocation$json = {
       '8': {'3': true},
       '10': 'bearingAccuracy',
     },
-    {'1': 'heading_accuracy', '3': 23, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'headingAccuracy'},
-    {'1': 'altitude', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'altitude'},
+    {
+      '1': 'heading_accuracy',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'headingAccuracy'
+    },
+    {
+      '1': 'altitude',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'altitude'
+    },
     {
       '1': 'vertical_accuracy',
       '3': 9,
@@ -283,7 +381,14 @@ const VehicleLocation$json = {
       '8': {'3': true},
       '10': 'verticalAccuracy',
     },
-    {'1': 'altitude_accuracy', '3': 24, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'altitudeAccuracy'},
+    {
+      '1': 'altitude_accuracy',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'altitudeAccuracy'
+    },
     {
       '1': 'speed_kmph',
       '3': 3,
@@ -293,14 +398,73 @@ const VehicleLocation$json = {
       '8': {'3': true},
       '10': 'speedKmph',
     },
-    {'1': 'speed', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'speed'},
-    {'1': 'speed_accuracy', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'speedAccuracy'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'server_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'serverTime'},
-    {'1': 'location_sensor', '3': 11, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.LocationSensor', '10': 'locationSensor'},
-    {'1': 'is_road_snapped', '3': 27, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'isRoadSnapped'},
-    {'1': 'is_gps_sensor_enabled', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '8': {}, '10': 'isGpsSensorEnabled'},
-    {'1': 'time_since_update', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '8': {}, '10': 'timeSinceUpdate'},
+    {
+      '1': 'speed',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'speed'
+    },
+    {
+      '1': 'speed_accuracy',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'speedAccuracy'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'server_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'serverTime'
+    },
+    {
+      '1': 'location_sensor',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.LocationSensor',
+      '10': 'locationSensor'
+    },
+    {
+      '1': 'is_road_snapped',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'isRoadSnapped'
+    },
+    {
+      '1': 'is_gps_sensor_enabled',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '8': {},
+      '10': 'isGpsSensorEnabled'
+    },
+    {
+      '1': 'time_since_update',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '8': {},
+      '10': 'timeSinceUpdate'
+    },
     {
       '1': 'num_stale_updates',
       '3': 15,
@@ -310,14 +474,70 @@ const VehicleLocation$json = {
       '8': {'3': true},
       '10': 'numStaleUpdates',
     },
-    {'1': 'raw_location', '3': 16, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'rawLocation'},
-    {'1': 'raw_location_time', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'rawLocationTime'},
-    {'1': 'raw_location_sensor', '3': 28, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.LocationSensor', '10': 'rawLocationSensor'},
-    {'1': 'raw_location_accuracy', '3': 25, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'rawLocationAccuracy'},
-    {'1': 'supplemental_location', '3': 18, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'supplementalLocation'},
-    {'1': 'supplemental_location_time', '3': 19, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'supplementalLocationTime'},
-    {'1': 'supplemental_location_sensor', '3': 20, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.LocationSensor', '10': 'supplementalLocationSensor'},
-    {'1': 'supplemental_location_accuracy', '3': 21, '4': 1, '5': 11, '6': '.google.protobuf.DoubleValue', '10': 'supplementalLocationAccuracy'},
+    {
+      '1': 'raw_location',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'rawLocation'
+    },
+    {
+      '1': 'raw_location_time',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'rawLocationTime'
+    },
+    {
+      '1': 'raw_location_sensor',
+      '3': 28,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.LocationSensor',
+      '10': 'rawLocationSensor'
+    },
+    {
+      '1': 'raw_location_accuracy',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'rawLocationAccuracy'
+    },
+    {
+      '1': 'supplemental_location',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'supplementalLocation'
+    },
+    {
+      '1': 'supplemental_location_time',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'supplementalLocationTime'
+    },
+    {
+      '1': 'supplemental_location_sensor',
+      '3': 20,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.LocationSensor',
+      '10': 'supplementalLocationSensor'
+    },
+    {
+      '1': 'supplemental_location_accuracy',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '10': 'supplementalLocationAccuracy'
+    },
     {
       '1': 'road_snapped',
       '3': 26,
@@ -368,4 +588,3 @@ final $typed_data.Uint8List vehicleLocationDescriptor = $convert.base64Decode(
     'Y2F0aW9uU2Vuc29yEmIKHnN1cHBsZW1lbnRhbF9sb2NhdGlvbl9hY2N1cmFjeRgVIAEoCzIcLm'
     'dvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZVIcc3VwcGxlbWVudGFsTG9jYXRpb25BY2N1cmFj'
     'eRIlCgxyb2FkX3NuYXBwZWQYGiABKAhCAhgBUgtyb2FkU25hcHBlZA==');
-

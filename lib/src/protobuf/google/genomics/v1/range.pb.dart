@@ -34,26 +34,32 @@ class Range extends $pb.GeneratedMessage {
     return $result;
   }
   Range._() : super();
-  factory Range.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Range.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Range.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Range.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Range', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Range',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'referenceName')
     ..aInt64(2, _omitFieldNames ? '' : 'start')
     ..aInt64(3, _omitFieldNames ? '' : 'end')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Range clone() => Range()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Range copyWith(void Function(Range) updates) => super.copyWith((message) => updates(message as Range)) as Range;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Range copyWith(void Function(Range) updates) =>
+      super.copyWith((message) => updates(message as Range)) as Range;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -62,7 +68,8 @@ class Range extends $pb.GeneratedMessage {
   Range createEmptyInstance() => create();
   static $pb.PbList<Range> createRepeated() => $pb.PbList<Range>();
   @$core.pragma('dart2js:noInline')
-  static Range getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Range>(create);
+  static Range getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Range>(create);
   static Range? _defaultInstance;
 
   /// The reference sequence name, for example `chr1`,
@@ -70,7 +77,10 @@ class Range extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get referenceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set referenceName($core.String v) { $_setString(0, v); }
+  set referenceName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReferenceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -80,7 +90,10 @@ class Range extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get start => $_getI64(1);
   @$pb.TagNumber(2)
-  set start($fixnum.Int64 v) { $_setInt64(1, v); }
+  set start($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStart() => $_has(1);
   @$pb.TagNumber(2)
@@ -90,13 +103,16 @@ class Range extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get end => $_getI64(2);
   @$pb.TagNumber(3)
-  set end($fixnum.Int64 v) { $_setInt64(2, v); }
+  set end($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEnd() => $_has(2);
   @$pb.TagNumber(3)
   void clearEnd() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

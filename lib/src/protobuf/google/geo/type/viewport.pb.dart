@@ -65,25 +65,33 @@ class Viewport extends $pb.GeneratedMessage {
     return $result;
   }
   Viewport._() : super();
-  factory Viewport.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Viewport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Viewport.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Viewport.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Viewport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.geo.type'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'low', subBuilder: $325.LatLng.create)
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'high', subBuilder: $325.LatLng.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Viewport',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.geo.type'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'low',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'high',
+        subBuilder: $325.LatLng.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Viewport clone() => Viewport()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Viewport copyWith(void Function(Viewport) updates) => super.copyWith((message) => updates(message as Viewport)) as Viewport;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Viewport copyWith(void Function(Viewport) updates) =>
+      super.copyWith((message) => updates(message as Viewport)) as Viewport;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -92,14 +100,18 @@ class Viewport extends $pb.GeneratedMessage {
   Viewport createEmptyInstance() => create();
   static $pb.PbList<Viewport> createRepeated() => $pb.PbList<Viewport>();
   @$core.pragma('dart2js:noInline')
-  static Viewport getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Viewport>(create);
+  static Viewport getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Viewport>(create);
   static Viewport? _defaultInstance;
 
   /// Required. The low point of the viewport.
   @$pb.TagNumber(1)
   $325.LatLng get low => $_getN(0);
   @$pb.TagNumber(1)
-  set low($325.LatLng v) { setField(1, v); }
+  set low($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLow() => $_has(0);
   @$pb.TagNumber(1)
@@ -111,7 +123,10 @@ class Viewport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $325.LatLng get high => $_getN(1);
   @$pb.TagNumber(2)
-  set high($325.LatLng v) { setField(2, v); }
+  set high($325.LatLng v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHigh() => $_has(1);
   @$pb.TagNumber(2)
@@ -120,6 +135,6 @@ class Viewport extends $pb.GeneratedMessage {
   $325.LatLng ensureHigh() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

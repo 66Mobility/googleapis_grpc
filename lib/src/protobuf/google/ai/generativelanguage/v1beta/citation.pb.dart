@@ -25,33 +25,44 @@ class CitationMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CitationMetadata._() : super();
-  factory CitationMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CitationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CitationMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CitationMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CitationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<CitationSource>(1, _omitFieldNames ? '' : 'citationSources', $pb.PbFieldType.PM, subBuilder: CitationSource.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CitationMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<CitationSource>(
+        1, _omitFieldNames ? '' : 'citationSources', $pb.PbFieldType.PM,
+        subBuilder: CitationSource.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CitationMetadata clone() => CitationMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CitationMetadata copyWith(void Function(CitationMetadata) updates) => super.copyWith((message) => updates(message as CitationMetadata)) as CitationMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CitationMetadata copyWith(void Function(CitationMetadata) updates) =>
+      super.copyWith((message) => updates(message as CitationMetadata))
+          as CitationMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CitationMetadata create() => CitationMetadata._();
   CitationMetadata createEmptyInstance() => create();
-  static $pb.PbList<CitationMetadata> createRepeated() => $pb.PbList<CitationMetadata>();
+  static $pb.PbList<CitationMetadata> createRepeated() =>
+      $pb.PbList<CitationMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CitationMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CitationMetadata>(create);
+  static CitationMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CitationMetadata>(create);
   static CitationMetadata? _defaultInstance;
 
   /// Citations to sources for a specific response.
@@ -83,36 +94,45 @@ class CitationSource extends $pb.GeneratedMessage {
     return $result;
   }
   CitationSource._() : super();
-  factory CitationSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CitationSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CitationSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CitationSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CitationSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CitationSource',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'startIndex', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'endIndex', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'uri')
     ..aOS(4, _omitFieldNames ? '' : 'license')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CitationSource clone() => CitationSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CitationSource copyWith(void Function(CitationSource) updates) => super.copyWith((message) => updates(message as CitationSource)) as CitationSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CitationSource copyWith(void Function(CitationSource) updates) =>
+      super.copyWith((message) => updates(message as CitationSource))
+          as CitationSource;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CitationSource create() => CitationSource._();
   CitationSource createEmptyInstance() => create();
-  static $pb.PbList<CitationSource> createRepeated() => $pb.PbList<CitationSource>();
+  static $pb.PbList<CitationSource> createRepeated() =>
+      $pb.PbList<CitationSource>();
   @$core.pragma('dart2js:noInline')
-  static CitationSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CitationSource>(create);
+  static CitationSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CitationSource>(create);
   static CitationSource? _defaultInstance;
 
   ///  Optional. Start of segment of the response that is attributed to this
@@ -122,7 +142,10 @@ class CitationSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get startIndex => $_getIZ(0);
   @$pb.TagNumber(1)
-  set startIndex($core.int v) { $_setSignedInt32(0, v); }
+  set startIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -132,7 +155,10 @@ class CitationSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get endIndex => $_getIZ(1);
   @$pb.TagNumber(2)
-  set endIndex($core.int v) { $_setSignedInt32(1, v); }
+  set endIndex($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -142,7 +168,10 @@ class CitationSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get uri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set uri($core.String v) { $_setString(2, v); }
+  set uri($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUri() => $_has(2);
   @$pb.TagNumber(3)
@@ -155,13 +184,16 @@ class CitationSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get license => $_getSZ(3);
   @$pb.TagNumber(4)
-  set license($core.String v) { $_setString(3, v); }
+  set license($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLicense() => $_has(3);
   @$pb.TagNumber(4)
   void clearLicense() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

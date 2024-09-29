@@ -150,16 +150,41 @@ class Attributes extends $pb.GeneratedMessage {
     return $result;
   }
   Attributes._() : super();
-  factory Attributes.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Attributes.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Attributes.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Attributes.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Attributes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.promotions.v1beta'), createEmptyInstance: create)
-    ..e<ProductApplicability>(1, _omitFieldNames ? '' : 'productApplicability', $pb.PbFieldType.OE, defaultOrMaker: ProductApplicability.PRODUCT_APPLICABILITY_UNSPECIFIED, valueOf: ProductApplicability.valueOf, enumValues: ProductApplicability.values)
-    ..e<OfferType>(2, _omitFieldNames ? '' : 'offerType', $pb.PbFieldType.OE, defaultOrMaker: OfferType.OFFER_TYPE_UNSPECIFIED, valueOf: OfferType.valueOf, enumValues: OfferType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Attributes',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.promotions.v1beta'),
+      createEmptyInstance: create)
+    ..e<ProductApplicability>(
+        1, _omitFieldNames ? '' : 'productApplicability', $pb.PbFieldType.OE,
+        defaultOrMaker: ProductApplicability.PRODUCT_APPLICABILITY_UNSPECIFIED,
+        valueOf: ProductApplicability.valueOf,
+        enumValues: ProductApplicability.values)
+    ..e<OfferType>(2, _omitFieldNames ? '' : 'offerType', $pb.PbFieldType.OE,
+        defaultOrMaker: OfferType.OFFER_TYPE_UNSPECIFIED,
+        valueOf: OfferType.valueOf,
+        enumValues: OfferType.values)
     ..aOS(3, _omitFieldNames ? '' : 'genericRedemptionCode')
     ..aOS(4, _omitFieldNames ? '' : 'longTitle')
-    ..e<CouponValueType>(5, _omitFieldNames ? '' : 'couponValueType', $pb.PbFieldType.OE, defaultOrMaker: CouponValueType.COUPON_VALUE_TYPE_UNSPECIFIED, valueOf: CouponValueType.valueOf, enumValues: CouponValueType.values)
-    ..pc<$536.Destination_DestinationEnum>(6, _omitFieldNames ? '' : 'promotionDestinations', $pb.PbFieldType.KE, valueOf: $536.Destination_DestinationEnum.valueOf, enumValues: $536.Destination_DestinationEnum.values, defaultEnumValue: $536.Destination_DestinationEnum.DESTINATION_ENUM_UNSPECIFIED)
+    ..e<CouponValueType>(
+        5, _omitFieldNames ? '' : 'couponValueType', $pb.PbFieldType.OE,
+        defaultOrMaker: CouponValueType.COUPON_VALUE_TYPE_UNSPECIFIED,
+        valueOf: CouponValueType.valueOf,
+        enumValues: CouponValueType.values)
+    ..pc<$536.Destination_DestinationEnum>(
+        6, _omitFieldNames ? '' : 'promotionDestinations', $pb.PbFieldType.KE,
+        valueOf: $536.Destination_DestinationEnum.valueOf,
+        enumValues: $536.Destination_DestinationEnum.values,
+        defaultEnumValue:
+            $536.Destination_DestinationEnum.DESTINATION_ENUM_UNSPECIFIED)
     ..pPS(7, _omitFieldNames ? '' : 'itemIdInclusion')
     ..pPS(8, _omitFieldNames ? '' : 'brandInclusion')
     ..pPS(9, _omitFieldNames ? '' : 'itemGroupIdInclusion')
@@ -168,35 +193,45 @@ class Attributes extends $pb.GeneratedMessage {
     ..pPS(12, _omitFieldNames ? '' : 'brandExclusion')
     ..pPS(13, _omitFieldNames ? '' : 'itemGroupIdExclusion')
     ..pPS(14, _omitFieldNames ? '' : 'productTypeExclusion')
-    ..aOM<$536.Price>(15, _omitFieldNames ? '' : 'minimumPurchaseAmount', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(15, _omitFieldNames ? '' : 'minimumPurchaseAmount',
+        subBuilder: $536.Price.create)
     ..aInt64(16, _omitFieldNames ? '' : 'minimumPurchaseQuantity')
     ..aInt64(17, _omitFieldNames ? '' : 'limitQuantity')
-    ..aOM<$536.Price>(18, _omitFieldNames ? '' : 'limitValue', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(18, _omitFieldNames ? '' : 'limitValue',
+        subBuilder: $536.Price.create)
     ..aInt64(19, _omitFieldNames ? '' : 'percentOff')
-    ..aOM<$536.Price>(20, _omitFieldNames ? '' : 'moneyOffAmount', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(20, _omitFieldNames ? '' : 'moneyOffAmount',
+        subBuilder: $536.Price.create)
     ..aInt64(21, _omitFieldNames ? '' : 'getThisQuantityDiscounted')
-    ..aOM<$536.Price>(22, _omitFieldNames ? '' : 'freeGiftValue', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(22, _omitFieldNames ? '' : 'freeGiftValue',
+        subBuilder: $536.Price.create)
     ..aOS(23, _omitFieldNames ? '' : 'freeGiftDescription')
     ..aOS(24, _omitFieldNames ? '' : 'freeGiftItemId')
-    ..aOM<$511.Interval>(25, _omitFieldNames ? '' : 'promotionEffectiveTimePeriod', subBuilder: $511.Interval.create)
-    ..aOM<$511.Interval>(26, _omitFieldNames ? '' : 'promotionDisplayTimePeriod', subBuilder: $511.Interval.create)
-    ..e<StoreApplicability>(28, _omitFieldNames ? '' : 'storeApplicability', $pb.PbFieldType.OE, defaultOrMaker: StoreApplicability.STORE_APPLICABILITY_UNSPECIFIED, valueOf: StoreApplicability.valueOf, enumValues: StoreApplicability.values)
+    ..aOM<$511.Interval>(
+        25, _omitFieldNames ? '' : 'promotionEffectiveTimePeriod',
+        subBuilder: $511.Interval.create)
+    ..aOM<$511.Interval>(
+        26, _omitFieldNames ? '' : 'promotionDisplayTimePeriod',
+        subBuilder: $511.Interval.create)
+    ..e<StoreApplicability>(
+        28, _omitFieldNames ? '' : 'storeApplicability', $pb.PbFieldType.OE,
+        defaultOrMaker: StoreApplicability.STORE_APPLICABILITY_UNSPECIFIED,
+        valueOf: StoreApplicability.valueOf,
+        enumValues: StoreApplicability.values)
     ..pPS(29, _omitFieldNames ? '' : 'storeCodesInclusion')
     ..pPS(30, _omitFieldNames ? '' : 'storeCodesExclusion')
     ..aOS(31, _omitFieldNames ? '' : 'promotionUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Attributes clone() => Attributes()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Attributes copyWith(void Function(Attributes) updates) => super.copyWith((message) => updates(message as Attributes)) as Attributes;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Attributes copyWith(void Function(Attributes) updates) =>
+      super.copyWith((message) => updates(message as Attributes)) as Attributes;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -205,7 +240,8 @@ class Attributes extends $pb.GeneratedMessage {
   Attributes createEmptyInstance() => create();
   static $pb.PbList<Attributes> createRepeated() => $pb.PbList<Attributes>();
   @$core.pragma('dart2js:noInline')
-  static Attributes getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Attributes>(create);
+  static Attributes getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Attributes>(create);
   static Attributes? _defaultInstance;
 
   /// Required. Applicability of the promotion to either all products or
@@ -214,7 +250,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ProductApplicability get productApplicability => $_getN(0);
   @$pb.TagNumber(1)
-  set productApplicability(ProductApplicability v) { setField(1, v); }
+  set productApplicability(ProductApplicability v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProductApplicability() => $_has(0);
   @$pb.TagNumber(1)
@@ -227,7 +266,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OfferType get offerType => $_getN(1);
   @$pb.TagNumber(2)
-  set offerType(OfferType v) { setField(2, v); }
+  set offerType(OfferType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOfferType() => $_has(1);
   @$pb.TagNumber(2)
@@ -239,7 +281,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get genericRedemptionCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set genericRedemptionCode($core.String v) { $_setString(2, v); }
+  set genericRedemptionCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGenericRedemptionCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -251,7 +296,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get longTitle => $_getSZ(3);
   @$pb.TagNumber(4)
-  set longTitle($core.String v) { $_setString(3, v); }
+  set longTitle($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLongTitle() => $_has(3);
   @$pb.TagNumber(4)
@@ -265,7 +313,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   CouponValueType get couponValueType => $_getN(4);
   @$pb.TagNumber(5)
-  set couponValueType(CouponValueType v) { setField(5, v); }
+  set couponValueType(CouponValueType v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCouponValueType() => $_has(4);
   @$pb.TagNumber(5)
@@ -283,7 +334,8 @@ class Attributes extends $pb.GeneratedMessage {
   ///  [Promotion
   ///  destination](https://support.google.com/merchants/answer/13837465?sjid=5155774230887277618-NC)
   @$pb.TagNumber(6)
-  $core.List<$536.Destination_DestinationEnum> get promotionDestinations => $_getList(5);
+  $core.List<$536.Destination_DestinationEnum> get promotionDestinations =>
+      $_getList(5);
 
   /// Optional. Product filter by [item
   /// ID](https://support.google.com/merchants/answer/13861565?ref_topic=13773355&sjid=17642868584668136159-NC)
@@ -357,7 +409,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $536.Price get minimumPurchaseAmount => $_getN(14);
   @$pb.TagNumber(15)
-  set minimumPurchaseAmount($536.Price v) { setField(15, v); }
+  set minimumPurchaseAmount($536.Price v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasMinimumPurchaseAmount() => $_has(14);
   @$pb.TagNumber(15)
@@ -371,7 +426,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $fixnum.Int64 get minimumPurchaseQuantity => $_getI64(15);
   @$pb.TagNumber(16)
-  set minimumPurchaseQuantity($fixnum.Int64 v) { $_setInt64(15, v); }
+  set minimumPurchaseQuantity($fixnum.Int64 v) {
+    $_setInt64(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasMinimumPurchaseQuantity() => $_has(15);
   @$pb.TagNumber(16)
@@ -383,7 +441,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $fixnum.Int64 get limitQuantity => $_getI64(16);
   @$pb.TagNumber(17)
-  set limitQuantity($fixnum.Int64 v) { $_setInt64(16, v); }
+  set limitQuantity($fixnum.Int64 v) {
+    $_setInt64(16, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasLimitQuantity() => $_has(16);
   @$pb.TagNumber(17)
@@ -395,7 +456,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $536.Price get limitValue => $_getN(17);
   @$pb.TagNumber(18)
-  set limitValue($536.Price v) { setField(18, v); }
+  set limitValue($536.Price v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasLimitValue() => $_has(17);
   @$pb.TagNumber(18)
@@ -409,7 +473,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $fixnum.Int64 get percentOff => $_getI64(18);
   @$pb.TagNumber(19)
-  set percentOff($fixnum.Int64 v) { $_setInt64(18, v); }
+  set percentOff($fixnum.Int64 v) {
+    $_setInt64(18, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasPercentOff() => $_has(18);
   @$pb.TagNumber(19)
@@ -421,7 +488,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $536.Price get moneyOffAmount => $_getN(19);
   @$pb.TagNumber(20)
-  set moneyOffAmount($536.Price v) { setField(20, v); }
+  set moneyOffAmount($536.Price v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasMoneyOffAmount() => $_has(19);
   @$pb.TagNumber(20)
@@ -435,7 +505,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $fixnum.Int64 get getThisQuantityDiscounted => $_getI64(20);
   @$pb.TagNumber(21)
-  set getThisQuantityDiscounted($fixnum.Int64 v) { $_setInt64(20, v); }
+  set getThisQuantityDiscounted($fixnum.Int64 v) {
+    $_setInt64(20, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasGetThisQuantityDiscounted() => $_has(20);
   @$pb.TagNumber(21)
@@ -447,7 +520,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $536.Price get freeGiftValue => $_getN(21);
   @$pb.TagNumber(22)
-  set freeGiftValue($536.Price v) { setField(22, v); }
+  set freeGiftValue($536.Price v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasFreeGiftValue() => $_has(21);
   @$pb.TagNumber(22)
@@ -461,7 +537,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.String get freeGiftDescription => $_getSZ(22);
   @$pb.TagNumber(23)
-  set freeGiftDescription($core.String v) { $_setString(22, v); }
+  set freeGiftDescription($core.String v) {
+    $_setString(22, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasFreeGiftDescription() => $_has(22);
   @$pb.TagNumber(23)
@@ -473,7 +552,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.String get freeGiftItemId => $_getSZ(23);
   @$pb.TagNumber(24)
-  set freeGiftItemId($core.String v) { $_setString(23, v); }
+  set freeGiftItemId($core.String v) {
+    $_setString(23, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasFreeGiftItemId() => $_has(23);
   @$pb.TagNumber(24)
@@ -485,7 +567,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $511.Interval get promotionEffectiveTimePeriod => $_getN(24);
   @$pb.TagNumber(25)
-  set promotionEffectiveTimePeriod($511.Interval v) { setField(25, v); }
+  set promotionEffectiveTimePeriod($511.Interval v) {
+    setField(25, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasPromotionEffectiveTimePeriod() => $_has(24);
   @$pb.TagNumber(25)
@@ -503,7 +588,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $511.Interval get promotionDisplayTimePeriod => $_getN(25);
   @$pb.TagNumber(26)
-  set promotionDisplayTimePeriod($511.Interval v) { setField(26, v); }
+  set promotionDisplayTimePeriod($511.Interval v) {
+    setField(26, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasPromotionDisplayTimePeriod() => $_has(25);
   @$pb.TagNumber(26)
@@ -520,7 +608,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   StoreApplicability get storeApplicability => $_getN(26);
   @$pb.TagNumber(28)
-  set storeApplicability(StoreApplicability v) { setField(28, v); }
+  set storeApplicability(StoreApplicability v) {
+    setField(28, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasStoreApplicability() => $_has(26);
   @$pb.TagNumber(28)
@@ -555,7 +646,10 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $core.String get promotionUrl => $_getSZ(29);
   @$pb.TagNumber(31)
-  set promotionUrl($core.String v) { $_setString(29, v); }
+  set promotionUrl($core.String v) {
+    $_setString(29, v);
+  }
+
   @$pb.TagNumber(31)
   $core.bool hasPromotionUrl() => $_has(29);
   @$pb.TagNumber(31)
@@ -578,41 +672,69 @@ class PromotionStatus_DestinationStatus extends $pb.GeneratedMessage {
     return $result;
   }
   PromotionStatus_DestinationStatus._() : super();
-  factory PromotionStatus_DestinationStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PromotionStatus_DestinationStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PromotionStatus_DestinationStatus.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PromotionStatus_DestinationStatus.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PromotionStatus.DestinationStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.promotions.v1beta'), createEmptyInstance: create)
-    ..e<$536.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $536.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $536.ReportingContext_ReportingContextEnum.valueOf, enumValues: $536.ReportingContext_ReportingContextEnum.values)
-    ..e<PromotionStatus_DestinationStatus_State>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: PromotionStatus_DestinationStatus_State.STATE_UNSPECIFIED, valueOf: PromotionStatus_DestinationStatus_State.valueOf, enumValues: PromotionStatus_DestinationStatus_State.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PromotionStatus.DestinationStatus',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.promotions.v1beta'),
+      createEmptyInstance: create)
+    ..e<$536.ReportingContext_ReportingContextEnum>(
+        1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
+        defaultOrMaker: $536.ReportingContext_ReportingContextEnum
+            .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
+        valueOf: $536.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $536.ReportingContext_ReportingContextEnum.values)
+    ..e<PromotionStatus_DestinationStatus_State>(
+        2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            PromotionStatus_DestinationStatus_State.STATE_UNSPECIFIED,
+        valueOf: PromotionStatus_DestinationStatus_State.valueOf,
+        enumValues: PromotionStatus_DestinationStatus_State.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PromotionStatus_DestinationStatus clone() => PromotionStatus_DestinationStatus()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PromotionStatus_DestinationStatus copyWith(void Function(PromotionStatus_DestinationStatus) updates) => super.copyWith((message) => updates(message as PromotionStatus_DestinationStatus)) as PromotionStatus_DestinationStatus;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PromotionStatus_DestinationStatus clone() =>
+      PromotionStatus_DestinationStatus()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PromotionStatus_DestinationStatus copyWith(
+          void Function(PromotionStatus_DestinationStatus) updates) =>
+      super.copyWith((message) =>
+              updates(message as PromotionStatus_DestinationStatus))
+          as PromotionStatus_DestinationStatus;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PromotionStatus_DestinationStatus create() => PromotionStatus_DestinationStatus._();
+  static PromotionStatus_DestinationStatus create() =>
+      PromotionStatus_DestinationStatus._();
   PromotionStatus_DestinationStatus createEmptyInstance() => create();
-  static $pb.PbList<PromotionStatus_DestinationStatus> createRepeated() => $pb.PbList<PromotionStatus_DestinationStatus>();
+  static $pb.PbList<PromotionStatus_DestinationStatus> createRepeated() =>
+      $pb.PbList<PromotionStatus_DestinationStatus>();
   @$core.pragma('dart2js:noInline')
-  static PromotionStatus_DestinationStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PromotionStatus_DestinationStatus>(create);
+  static PromotionStatus_DestinationStatus getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PromotionStatus_DestinationStatus>(
+          create);
   static PromotionStatus_DestinationStatus? _defaultInstance;
 
   /// Output only. The name of the promotion destination.
   @$pb.TagNumber(1)
   $536.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($536.ReportingContext_ReportingContextEnum v) { setField(1, v); }
+  set reportingContext($536.ReportingContext_ReportingContextEnum v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReportingContext() => $_has(0);
   @$pb.TagNumber(1)
@@ -622,7 +744,10 @@ class PromotionStatus_DestinationStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PromotionStatus_DestinationStatus_State get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status(PromotionStatus_DestinationStatus_State v) { setField(2, v); }
+  set status(PromotionStatus_DestinationStatus_State v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -673,48 +798,75 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
     return $result;
   }
   PromotionStatus_ItemLevelIssue._() : super();
-  factory PromotionStatus_ItemLevelIssue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PromotionStatus_ItemLevelIssue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PromotionStatus_ItemLevelIssue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PromotionStatus_ItemLevelIssue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PromotionStatus.ItemLevelIssue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.promotions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PromotionStatus.ItemLevelIssue',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.promotions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'code')
-    ..e<PromotionStatus_ItemLevelIssue_Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: PromotionStatus_ItemLevelIssue_Severity.SEVERITY_UNSPECIFIED, valueOf: PromotionStatus_ItemLevelIssue_Severity.valueOf, enumValues: PromotionStatus_ItemLevelIssue_Severity.values)
+    ..e<PromotionStatus_ItemLevelIssue_Severity>(
+        2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            PromotionStatus_ItemLevelIssue_Severity.SEVERITY_UNSPECIFIED,
+        valueOf: PromotionStatus_ItemLevelIssue_Severity.valueOf,
+        enumValues: PromotionStatus_ItemLevelIssue_Severity.values)
     ..aOS(3, _omitFieldNames ? '' : 'resolution')
     ..aOS(4, _omitFieldNames ? '' : 'attribute')
-    ..e<$536.ReportingContext_ReportingContextEnum>(5, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $536.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $536.ReportingContext_ReportingContextEnum.valueOf, enumValues: $536.ReportingContext_ReportingContextEnum.values)
+    ..e<$536.ReportingContext_ReportingContextEnum>(
+        5, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
+        defaultOrMaker: $536.ReportingContext_ReportingContextEnum
+            .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
+        valueOf: $536.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $536.ReportingContext_ReportingContextEnum.values)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOS(7, _omitFieldNames ? '' : 'detail')
     ..aOS(8, _omitFieldNames ? '' : 'documentation')
     ..pPS(9, _omitFieldNames ? '' : 'applicableCountries')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PromotionStatus_ItemLevelIssue clone() => PromotionStatus_ItemLevelIssue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PromotionStatus_ItemLevelIssue copyWith(void Function(PromotionStatus_ItemLevelIssue) updates) => super.copyWith((message) => updates(message as PromotionStatus_ItemLevelIssue)) as PromotionStatus_ItemLevelIssue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PromotionStatus_ItemLevelIssue clone() =>
+      PromotionStatus_ItemLevelIssue()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PromotionStatus_ItemLevelIssue copyWith(
+          void Function(PromotionStatus_ItemLevelIssue) updates) =>
+      super.copyWith(
+              (message) => updates(message as PromotionStatus_ItemLevelIssue))
+          as PromotionStatus_ItemLevelIssue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PromotionStatus_ItemLevelIssue create() => PromotionStatus_ItemLevelIssue._();
+  static PromotionStatus_ItemLevelIssue create() =>
+      PromotionStatus_ItemLevelIssue._();
   PromotionStatus_ItemLevelIssue createEmptyInstance() => create();
-  static $pb.PbList<PromotionStatus_ItemLevelIssue> createRepeated() => $pb.PbList<PromotionStatus_ItemLevelIssue>();
+  static $pb.PbList<PromotionStatus_ItemLevelIssue> createRepeated() =>
+      $pb.PbList<PromotionStatus_ItemLevelIssue>();
   @$core.pragma('dart2js:noInline')
-  static PromotionStatus_ItemLevelIssue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PromotionStatus_ItemLevelIssue>(create);
+  static PromotionStatus_ItemLevelIssue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PromotionStatus_ItemLevelIssue>(create);
   static PromotionStatus_ItemLevelIssue? _defaultInstance;
 
   /// Output only. The error code of the issue.
   @$pb.TagNumber(1)
   $core.String get code => $_getSZ(0);
   @$pb.TagNumber(1)
-  set code($core.String v) { $_setString(0, v); }
+  set code($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -724,7 +876,10 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PromotionStatus_ItemLevelIssue_Severity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity(PromotionStatus_ItemLevelIssue_Severity v) { setField(2, v); }
+  set severity(PromotionStatus_ItemLevelIssue_Severity v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSeverity() => $_has(1);
   @$pb.TagNumber(2)
@@ -734,7 +889,10 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get resolution => $_getSZ(2);
   @$pb.TagNumber(3)
-  set resolution($core.String v) { $_setString(2, v); }
+  set resolution($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResolution() => $_has(2);
   @$pb.TagNumber(3)
@@ -745,7 +903,10 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get attribute => $_getSZ(3);
   @$pb.TagNumber(4)
-  set attribute($core.String v) { $_setString(3, v); }
+  set attribute($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAttribute() => $_has(3);
   @$pb.TagNumber(4)
@@ -755,7 +916,10 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $536.ReportingContext_ReportingContextEnum get reportingContext => $_getN(4);
   @$pb.TagNumber(5)
-  set reportingContext($536.ReportingContext_ReportingContextEnum v) { setField(5, v); }
+  set reportingContext($536.ReportingContext_ReportingContextEnum v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasReportingContext() => $_has(4);
   @$pb.TagNumber(5)
@@ -765,7 +929,10 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(6)
-  set description($core.String v) { $_setString(5, v); }
+  set description($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
@@ -775,7 +942,10 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get detail => $_getSZ(6);
   @$pb.TagNumber(7)
-  set detail($core.String v) { $_setString(6, v); }
+  set detail($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDetail() => $_has(6);
   @$pb.TagNumber(7)
@@ -785,7 +955,10 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get documentation => $_getSZ(7);
   @$pb.TagNumber(8)
-  set documentation($core.String v) { $_setString(7, v); }
+  set documentation($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDocumentation() => $_has(7);
   @$pb.TagNumber(8)
@@ -821,45 +994,63 @@ class PromotionStatus extends $pb.GeneratedMessage {
     return $result;
   }
   PromotionStatus._() : super();
-  factory PromotionStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PromotionStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PromotionStatus.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PromotionStatus.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PromotionStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.promotions.v1beta'), createEmptyInstance: create)
-    ..pc<PromotionStatus_DestinationStatus>(1, _omitFieldNames ? '' : 'destinationStatuses', $pb.PbFieldType.PM, subBuilder: PromotionStatus_DestinationStatus.create)
-    ..pc<PromotionStatus_ItemLevelIssue>(2, _omitFieldNames ? '' : 'itemLevelIssues', $pb.PbFieldType.PM, subBuilder: PromotionStatus_ItemLevelIssue.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'creationDate', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'lastUpdateDate', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PromotionStatus',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.promotions.v1beta'),
+      createEmptyInstance: create)
+    ..pc<PromotionStatus_DestinationStatus>(
+        1, _omitFieldNames ? '' : 'destinationStatuses', $pb.PbFieldType.PM,
+        subBuilder: PromotionStatus_DestinationStatus.create)
+    ..pc<PromotionStatus_ItemLevelIssue>(
+        2, _omitFieldNames ? '' : 'itemLevelIssues', $pb.PbFieldType.PM,
+        subBuilder: PromotionStatus_ItemLevelIssue.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'creationDate',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'lastUpdateDate',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PromotionStatus clone() => PromotionStatus()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PromotionStatus copyWith(void Function(PromotionStatus) updates) => super.copyWith((message) => updates(message as PromotionStatus)) as PromotionStatus;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PromotionStatus copyWith(void Function(PromotionStatus) updates) =>
+      super.copyWith((message) => updates(message as PromotionStatus))
+          as PromotionStatus;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PromotionStatus create() => PromotionStatus._();
   PromotionStatus createEmptyInstance() => create();
-  static $pb.PbList<PromotionStatus> createRepeated() => $pb.PbList<PromotionStatus>();
+  static $pb.PbList<PromotionStatus> createRepeated() =>
+      $pb.PbList<PromotionStatus>();
   @$core.pragma('dart2js:noInline')
-  static PromotionStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PromotionStatus>(create);
+  static PromotionStatus getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PromotionStatus>(create);
   static PromotionStatus? _defaultInstance;
 
   /// Output only. The intended destinations for the promotion.
   @$pb.TagNumber(1)
-  $core.List<PromotionStatus_DestinationStatus> get destinationStatuses => $_getList(0);
+  $core.List<PromotionStatus_DestinationStatus> get destinationStatuses =>
+      $_getList(0);
 
   /// Output only. A list of issues associated with the promotion.
   @$pb.TagNumber(2)
-  $core.List<PromotionStatus_ItemLevelIssue> get itemLevelIssues => $_getList(1);
+  $core.List<PromotionStatus_ItemLevelIssue> get itemLevelIssues =>
+      $_getList(1);
 
   /// Output only. Date on which the promotion has been created
   /// in [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time,
@@ -868,7 +1059,10 @@ class PromotionStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get creationDate => $_getN(2);
   @$pb.TagNumber(3)
-  set creationDate($302.Timestamp v) { setField(3, v); }
+  set creationDate($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCreationDate() => $_has(2);
   @$pb.TagNumber(3)
@@ -883,7 +1077,10 @@ class PromotionStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get lastUpdateDate => $_getN(3);
   @$pb.TagNumber(4)
-  set lastUpdateDate($302.Timestamp v) { setField(4, v); }
+  set lastUpdateDate($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLastUpdateDate() => $_has(3);
   @$pb.TagNumber(4)
@@ -892,6 +1089,6 @@ class PromotionStatus extends $pb.GeneratedMessage {
   $302.Timestamp ensureLastUpdateDate() => $_ensure(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

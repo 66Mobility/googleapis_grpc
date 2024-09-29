@@ -17,7 +17,16 @@ import 'dart:typed_data' as $typed_data;
 const SurfaceCapabilities$json = {
   '1': 'SurfaceCapabilities',
   '2': [
-    {'1': 'capabilities', '3': 1, '4': 3, '5': 14, '6': '.google.actions.sdk.v2.interactionmodel.prompt.SurfaceCapabilities.Capability', '8': {}, '10': 'capabilities'},
+    {
+      '1': 'capabilities',
+      '3': 1,
+      '4': 3,
+      '5': 14,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.SurfaceCapabilities.Capability',
+      '8': {},
+      '10': 'capabilities'
+    },
   ],
   '4': [SurfaceCapabilities_Capability$json],
 };
@@ -44,4 +53,3 @@ final $typed_data.Uint8List surfaceCapabilitiesDescriptor = $convert.base64Decod
     'lGSUVEEAASCgoGU1BFRUNIEAESEQoNUklDSF9SRVNQT05TRRACEhMKD0xPTkdfRk9STV9BVURJ'
     'TxADEhYKEklOVEVSQUNUSVZFX0NBTlZBUxAEEgwKCFdFQl9MSU5LEAUSEAoMSE9NRV9TVE9SQU'
     'dFEAY=');
-

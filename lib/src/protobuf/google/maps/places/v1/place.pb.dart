@@ -52,36 +52,47 @@ class Place_AddressComponent extends $pb.GeneratedMessage {
     return $result;
   }
   Place_AddressComponent._() : super();
-  factory Place_AddressComponent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_AddressComponent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_AddressComponent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_AddressComponent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.AddressComponent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.AddressComponent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'longText')
     ..aOS(2, _omitFieldNames ? '' : 'shortText')
     ..pPS(3, _omitFieldNames ? '' : 'types')
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_AddressComponent clone() => Place_AddressComponent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_AddressComponent copyWith(void Function(Place_AddressComponent) updates) => super.copyWith((message) => updates(message as Place_AddressComponent)) as Place_AddressComponent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_AddressComponent clone() =>
+      Place_AddressComponent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_AddressComponent copyWith(
+          void Function(Place_AddressComponent) updates) =>
+      super.copyWith((message) => updates(message as Place_AddressComponent))
+          as Place_AddressComponent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_AddressComponent create() => Place_AddressComponent._();
   Place_AddressComponent createEmptyInstance() => create();
-  static $pb.PbList<Place_AddressComponent> createRepeated() => $pb.PbList<Place_AddressComponent>();
+  static $pb.PbList<Place_AddressComponent> createRepeated() =>
+      $pb.PbList<Place_AddressComponent>();
   @$core.pragma('dart2js:noInline')
-  static Place_AddressComponent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_AddressComponent>(create);
+  static Place_AddressComponent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_AddressComponent>(create);
   static Place_AddressComponent? _defaultInstance;
 
   /// The full text description or name of the address component. For example,
@@ -90,7 +101,10 @@ class Place_AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get longText => $_getSZ(0);
   @$pb.TagNumber(1)
-  set longText($core.String v) { $_setString(0, v); }
+  set longText($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLongText() => $_has(0);
   @$pb.TagNumber(1)
@@ -102,7 +116,10 @@ class Place_AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get shortText => $_getSZ(1);
   @$pb.TagNumber(2)
-  set shortText($core.String v) { $_setString(1, v); }
+  set shortText($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasShortText() => $_has(1);
   @$pb.TagNumber(2)
@@ -116,7 +133,10 @@ class Place_AddressComponent extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get languageCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set languageCode($core.String v) { $_setString(3, v); }
+  set languageCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLanguageCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -141,34 +161,43 @@ class Place_PlusCode extends $pb.GeneratedMessage {
     return $result;
   }
   Place_PlusCode._() : super();
-  factory Place_PlusCode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_PlusCode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_PlusCode.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_PlusCode.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.PlusCode', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.PlusCode',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'globalCode')
     ..aOS(2, _omitFieldNames ? '' : 'compoundCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Place_PlusCode clone() => Place_PlusCode()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_PlusCode copyWith(void Function(Place_PlusCode) updates) => super.copyWith((message) => updates(message as Place_PlusCode)) as Place_PlusCode;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_PlusCode copyWith(void Function(Place_PlusCode) updates) =>
+      super.copyWith((message) => updates(message as Place_PlusCode))
+          as Place_PlusCode;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_PlusCode create() => Place_PlusCode._();
   Place_PlusCode createEmptyInstance() => create();
-  static $pb.PbList<Place_PlusCode> createRepeated() => $pb.PbList<Place_PlusCode>();
+  static $pb.PbList<Place_PlusCode> createRepeated() =>
+      $pb.PbList<Place_PlusCode>();
   @$core.pragma('dart2js:noInline')
-  static Place_PlusCode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_PlusCode>(create);
+  static Place_PlusCode getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_PlusCode>(create);
   static Place_PlusCode? _defaultInstance;
 
   /// Place's global (full) code, such as "9FWM33GV+HQ", representing an
@@ -176,7 +205,10 @@ class Place_PlusCode extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get globalCode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set globalCode($core.String v) { $_setString(0, v); }
+  set globalCode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGlobalCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -188,7 +220,10 @@ class Place_PlusCode extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get compoundCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set compoundCode($core.String v) { $_setString(1, v); }
+  set compoundCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCompoundCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -223,37 +258,52 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
     return $result;
   }
   Place_OpeningHours_Period_Point._() : super();
-  factory Place_OpeningHours_Period_Point.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_OpeningHours_Period_Point.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_OpeningHours_Period_Point.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_OpeningHours_Period_Point.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.OpeningHours.Period.Point', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.OpeningHours.Period.Point',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'hour', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'minute', $pb.PbFieldType.O3)
     ..aOB(5, _omitFieldNames ? '' : 'truncated')
-    ..aOM<$327.Date>(6, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$327.Date>(6, _omitFieldNames ? '' : 'date',
+        subBuilder: $327.Date.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_OpeningHours_Period_Point clone() => Place_OpeningHours_Period_Point()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_OpeningHours_Period_Point copyWith(void Function(Place_OpeningHours_Period_Point) updates) => super.copyWith((message) => updates(message as Place_OpeningHours_Period_Point)) as Place_OpeningHours_Period_Point;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_OpeningHours_Period_Point clone() =>
+      Place_OpeningHours_Period_Point()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_OpeningHours_Period_Point copyWith(
+          void Function(Place_OpeningHours_Period_Point) updates) =>
+      super.copyWith(
+              (message) => updates(message as Place_OpeningHours_Period_Point))
+          as Place_OpeningHours_Period_Point;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Place_OpeningHours_Period_Point create() => Place_OpeningHours_Period_Point._();
+  static Place_OpeningHours_Period_Point create() =>
+      Place_OpeningHours_Period_Point._();
   Place_OpeningHours_Period_Point createEmptyInstance() => create();
-  static $pb.PbList<Place_OpeningHours_Period_Point> createRepeated() => $pb.PbList<Place_OpeningHours_Period_Point>();
+  static $pb.PbList<Place_OpeningHours_Period_Point> createRepeated() =>
+      $pb.PbList<Place_OpeningHours_Period_Point>();
   @$core.pragma('dart2js:noInline')
-  static Place_OpeningHours_Period_Point getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours_Period_Point>(create);
+  static Place_OpeningHours_Period_Point getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours_Period_Point>(
+          create);
   static Place_OpeningHours_Period_Point? _defaultInstance;
 
   /// A day of the week, as an integer in the range 0-6.  0 is Sunday, 1 is
@@ -261,7 +311,10 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get day => $_getIZ(0);
   @$pb.TagNumber(1)
-  set day($core.int v) { $_setSignedInt32(0, v); }
+  set day($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDay() => $_has(0);
   @$pb.TagNumber(1)
@@ -271,7 +324,10 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get hour => $_getIZ(1);
   @$pb.TagNumber(2)
-  set hour($core.int v) { $_setSignedInt32(1, v); }
+  set hour($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHour() => $_has(1);
   @$pb.TagNumber(2)
@@ -281,7 +337,10 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get minute => $_getIZ(2);
   @$pb.TagNumber(3)
-  set minute($core.int v) { $_setSignedInt32(2, v); }
+  set minute($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMinute() => $_has(2);
   @$pb.TagNumber(3)
@@ -295,7 +354,10 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get truncated => $_getBF(3);
   @$pb.TagNumber(5)
-  set truncated($core.bool v) { $_setBool(3, v); }
+  set truncated($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTruncated() => $_has(3);
   @$pb.TagNumber(5)
@@ -305,7 +367,10 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $327.Date get date => $_getN(4);
   @$pb.TagNumber(6)
-  set date($327.Date v) { setField(6, v); }
+  set date($327.Date v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDate() => $_has(4);
   @$pb.TagNumber(6)
@@ -330,41 +395,57 @@ class Place_OpeningHours_Period extends $pb.GeneratedMessage {
     return $result;
   }
   Place_OpeningHours_Period._() : super();
-  factory Place_OpeningHours_Period.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_OpeningHours_Period.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_OpeningHours_Period.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_OpeningHours_Period.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.OpeningHours.Period', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<Place_OpeningHours_Period_Point>(1, _omitFieldNames ? '' : 'open', subBuilder: Place_OpeningHours_Period_Point.create)
-    ..aOM<Place_OpeningHours_Period_Point>(2, _omitFieldNames ? '' : 'close', subBuilder: Place_OpeningHours_Period_Point.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.OpeningHours.Period',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<Place_OpeningHours_Period_Point>(1, _omitFieldNames ? '' : 'open',
+        subBuilder: Place_OpeningHours_Period_Point.create)
+    ..aOM<Place_OpeningHours_Period_Point>(2, _omitFieldNames ? '' : 'close',
+        subBuilder: Place_OpeningHours_Period_Point.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_OpeningHours_Period clone() => Place_OpeningHours_Period()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_OpeningHours_Period copyWith(void Function(Place_OpeningHours_Period) updates) => super.copyWith((message) => updates(message as Place_OpeningHours_Period)) as Place_OpeningHours_Period;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_OpeningHours_Period clone() =>
+      Place_OpeningHours_Period()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_OpeningHours_Period copyWith(
+          void Function(Place_OpeningHours_Period) updates) =>
+      super.copyWith((message) => updates(message as Place_OpeningHours_Period))
+          as Place_OpeningHours_Period;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_OpeningHours_Period create() => Place_OpeningHours_Period._();
   Place_OpeningHours_Period createEmptyInstance() => create();
-  static $pb.PbList<Place_OpeningHours_Period> createRepeated() => $pb.PbList<Place_OpeningHours_Period>();
+  static $pb.PbList<Place_OpeningHours_Period> createRepeated() =>
+      $pb.PbList<Place_OpeningHours_Period>();
   @$core.pragma('dart2js:noInline')
-  static Place_OpeningHours_Period getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours_Period>(create);
+  static Place_OpeningHours_Period getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours_Period>(create);
   static Place_OpeningHours_Period? _defaultInstance;
 
   /// The time that the place starts to be open.
   @$pb.TagNumber(1)
   Place_OpeningHours_Period_Point get open => $_getN(0);
   @$pb.TagNumber(1)
-  set open(Place_OpeningHours_Period_Point v) { setField(1, v); }
+  set open(Place_OpeningHours_Period_Point v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOpen() => $_has(0);
   @$pb.TagNumber(1)
@@ -376,7 +457,10 @@ class Place_OpeningHours_Period extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Place_OpeningHours_Period_Point get close => $_getN(1);
   @$pb.TagNumber(2)
-  set close(Place_OpeningHours_Period_Point v) { setField(2, v); }
+  set close(Place_OpeningHours_Period_Point v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasClose() => $_has(1);
   @$pb.TagNumber(2)
@@ -399,40 +483,57 @@ class Place_OpeningHours_SpecialDay extends $pb.GeneratedMessage {
     return $result;
   }
   Place_OpeningHours_SpecialDay._() : super();
-  factory Place_OpeningHours_SpecialDay.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_OpeningHours_SpecialDay.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_OpeningHours_SpecialDay.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_OpeningHours_SpecialDay.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.OpeningHours.SpecialDay', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.OpeningHours.SpecialDay',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $327.Date.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_OpeningHours_SpecialDay clone() => Place_OpeningHours_SpecialDay()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_OpeningHours_SpecialDay copyWith(void Function(Place_OpeningHours_SpecialDay) updates) => super.copyWith((message) => updates(message as Place_OpeningHours_SpecialDay)) as Place_OpeningHours_SpecialDay;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_OpeningHours_SpecialDay clone() =>
+      Place_OpeningHours_SpecialDay()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_OpeningHours_SpecialDay copyWith(
+          void Function(Place_OpeningHours_SpecialDay) updates) =>
+      super.copyWith(
+              (message) => updates(message as Place_OpeningHours_SpecialDay))
+          as Place_OpeningHours_SpecialDay;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Place_OpeningHours_SpecialDay create() => Place_OpeningHours_SpecialDay._();
+  static Place_OpeningHours_SpecialDay create() =>
+      Place_OpeningHours_SpecialDay._();
   Place_OpeningHours_SpecialDay createEmptyInstance() => create();
-  static $pb.PbList<Place_OpeningHours_SpecialDay> createRepeated() => $pb.PbList<Place_OpeningHours_SpecialDay>();
+  static $pb.PbList<Place_OpeningHours_SpecialDay> createRepeated() =>
+      $pb.PbList<Place_OpeningHours_SpecialDay>();
   @$core.pragma('dart2js:noInline')
-  static Place_OpeningHours_SpecialDay getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours_SpecialDay>(create);
+  static Place_OpeningHours_SpecialDay getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours_SpecialDay>(create);
   static Place_OpeningHours_SpecialDay? _defaultInstance;
 
   /// The date of this special day.
   @$pb.TagNumber(1)
   $327.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) { setField(1, v); }
+  set date($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -469,37 +570,55 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
     return $result;
   }
   Place_OpeningHours._() : super();
-  factory Place_OpeningHours.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_OpeningHours.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_OpeningHours.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_OpeningHours.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.OpeningHours', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.OpeningHours',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'openNow')
-    ..pc<Place_OpeningHours_Period>(2, _omitFieldNames ? '' : 'periods', $pb.PbFieldType.PM, subBuilder: Place_OpeningHours_Period.create)
+    ..pc<Place_OpeningHours_Period>(
+        2, _omitFieldNames ? '' : 'periods', $pb.PbFieldType.PM,
+        subBuilder: Place_OpeningHours_Period.create)
     ..pPS(3, _omitFieldNames ? '' : 'weekdayDescriptions')
-    ..e<Place_OpeningHours_SecondaryHoursType>(4, _omitFieldNames ? '' : 'secondaryHoursType', $pb.PbFieldType.OE, defaultOrMaker: Place_OpeningHours_SecondaryHoursType.SECONDARY_HOURS_TYPE_UNSPECIFIED, valueOf: Place_OpeningHours_SecondaryHoursType.valueOf, enumValues: Place_OpeningHours_SecondaryHoursType.values)
-    ..pc<Place_OpeningHours_SpecialDay>(5, _omitFieldNames ? '' : 'specialDays', $pb.PbFieldType.PM, subBuilder: Place_OpeningHours_SpecialDay.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<Place_OpeningHours_SecondaryHoursType>(
+        4, _omitFieldNames ? '' : 'secondaryHoursType', $pb.PbFieldType.OE,
+        defaultOrMaker: Place_OpeningHours_SecondaryHoursType
+            .SECONDARY_HOURS_TYPE_UNSPECIFIED,
+        valueOf: Place_OpeningHours_SecondaryHoursType.valueOf,
+        enumValues: Place_OpeningHours_SecondaryHoursType.values)
+    ..pc<Place_OpeningHours_SpecialDay>(
+        5, _omitFieldNames ? '' : 'specialDays', $pb.PbFieldType.PM,
+        subBuilder: Place_OpeningHours_SpecialDay.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Place_OpeningHours clone() => Place_OpeningHours()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_OpeningHours copyWith(void Function(Place_OpeningHours) updates) => super.copyWith((message) => updates(message as Place_OpeningHours)) as Place_OpeningHours;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_OpeningHours copyWith(void Function(Place_OpeningHours) updates) =>
+      super.copyWith((message) => updates(message as Place_OpeningHours))
+          as Place_OpeningHours;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_OpeningHours create() => Place_OpeningHours._();
   Place_OpeningHours createEmptyInstance() => create();
-  static $pb.PbList<Place_OpeningHours> createRepeated() => $pb.PbList<Place_OpeningHours>();
+  static $pb.PbList<Place_OpeningHours> createRepeated() =>
+      $pb.PbList<Place_OpeningHours>();
   @$core.pragma('dart2js:noInline')
-  static Place_OpeningHours getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours>(create);
+  static Place_OpeningHours getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours>(create);
   static Place_OpeningHours? _defaultInstance;
 
   /// Whether the opening hours period is currently active. For regular opening
@@ -509,7 +628,10 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get openNow => $_getBF(0);
   @$pb.TagNumber(1)
-  set openNow($core.bool v) { $_setBool(0, v); }
+  set openNow($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOpenNow() => $_has(0);
   @$pb.TagNumber(1)
@@ -532,7 +654,10 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Place_OpeningHours_SecondaryHoursType get secondaryHoursType => $_getN(3);
   @$pb.TagNumber(4)
-  set secondaryHoursType(Place_OpeningHours_SecondaryHoursType v) { setField(4, v); }
+  set secondaryHoursType(Place_OpeningHours_SecondaryHoursType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSecondaryHoursType() => $_has(3);
   @$pb.TagNumber(4)
@@ -563,41 +688,53 @@ class Place_Attribution extends $pb.GeneratedMessage {
     return $result;
   }
   Place_Attribution._() : super();
-  factory Place_Attribution.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_Attribution.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_Attribution.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_Attribution.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.Attribution', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.Attribution',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'provider')
     ..aOS(2, _omitFieldNames ? '' : 'providerUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Place_Attribution clone() => Place_Attribution()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_Attribution copyWith(void Function(Place_Attribution) updates) => super.copyWith((message) => updates(message as Place_Attribution)) as Place_Attribution;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_Attribution copyWith(void Function(Place_Attribution) updates) =>
+      super.copyWith((message) => updates(message as Place_Attribution))
+          as Place_Attribution;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_Attribution create() => Place_Attribution._();
   Place_Attribution createEmptyInstance() => create();
-  static $pb.PbList<Place_Attribution> createRepeated() => $pb.PbList<Place_Attribution>();
+  static $pb.PbList<Place_Attribution> createRepeated() =>
+      $pb.PbList<Place_Attribution>();
   @$core.pragma('dart2js:noInline')
-  static Place_Attribution getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_Attribution>(create);
+  static Place_Attribution getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_Attribution>(create);
   static Place_Attribution? _defaultInstance;
 
   /// Name of the Place's data provider.
   @$pb.TagNumber(1)
   $core.String get provider => $_getSZ(0);
   @$pb.TagNumber(1)
-  set provider($core.String v) { $_setString(0, v); }
+  set provider($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProvider() => $_has(0);
   @$pb.TagNumber(1)
@@ -607,7 +744,10 @@ class Place_Attribution extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get providerUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set providerUri($core.String v) { $_setString(1, v); }
+  set providerUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProviderUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -638,43 +778,56 @@ class Place_PaymentOptions extends $pb.GeneratedMessage {
     return $result;
   }
   Place_PaymentOptions._() : super();
-  factory Place_PaymentOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_PaymentOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_PaymentOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_PaymentOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.PaymentOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.PaymentOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'acceptsCreditCards')
     ..aOB(2, _omitFieldNames ? '' : 'acceptsDebitCards')
     ..aOB(3, _omitFieldNames ? '' : 'acceptsCashOnly')
     ..aOB(4, _omitFieldNames ? '' : 'acceptsNfc')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_PaymentOptions clone() => Place_PaymentOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_PaymentOptions copyWith(void Function(Place_PaymentOptions) updates) => super.copyWith((message) => updates(message as Place_PaymentOptions)) as Place_PaymentOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_PaymentOptions clone() =>
+      Place_PaymentOptions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_PaymentOptions copyWith(void Function(Place_PaymentOptions) updates) =>
+      super.copyWith((message) => updates(message as Place_PaymentOptions))
+          as Place_PaymentOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_PaymentOptions create() => Place_PaymentOptions._();
   Place_PaymentOptions createEmptyInstance() => create();
-  static $pb.PbList<Place_PaymentOptions> createRepeated() => $pb.PbList<Place_PaymentOptions>();
+  static $pb.PbList<Place_PaymentOptions> createRepeated() =>
+      $pb.PbList<Place_PaymentOptions>();
   @$core.pragma('dart2js:noInline')
-  static Place_PaymentOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_PaymentOptions>(create);
+  static Place_PaymentOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_PaymentOptions>(create);
   static Place_PaymentOptions? _defaultInstance;
 
   /// Place accepts credit cards as payment.
   @$pb.TagNumber(1)
   $core.bool get acceptsCreditCards => $_getBF(0);
   @$pb.TagNumber(1)
-  set acceptsCreditCards($core.bool v) { $_setBool(0, v); }
+  set acceptsCreditCards($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAcceptsCreditCards() => $_has(0);
   @$pb.TagNumber(1)
@@ -684,7 +837,10 @@ class Place_PaymentOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get acceptsDebitCards => $_getBF(1);
   @$pb.TagNumber(2)
-  set acceptsDebitCards($core.bool v) { $_setBool(1, v); }
+  set acceptsDebitCards($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAcceptsDebitCards() => $_has(1);
   @$pb.TagNumber(2)
@@ -695,7 +851,10 @@ class Place_PaymentOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get acceptsCashOnly => $_getBF(2);
   @$pb.TagNumber(3)
-  set acceptsCashOnly($core.bool v) { $_setBool(2, v); }
+  set acceptsCashOnly($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAcceptsCashOnly() => $_has(2);
   @$pb.TagNumber(3)
@@ -705,7 +864,10 @@ class Place_PaymentOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get acceptsNfc => $_getBF(3);
   @$pb.TagNumber(4)
-  set acceptsNfc($core.bool v) { $_setBool(3, v); }
+  set acceptsNfc($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAcceptsNfc() => $_has(3);
   @$pb.TagNumber(4)
@@ -749,10 +911,18 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
     return $result;
   }
   Place_ParkingOptions._() : super();
-  factory Place_ParkingOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_ParkingOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_ParkingOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_ParkingOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.ParkingOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.ParkingOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'freeParkingLot')
     ..aOB(2, _omitFieldNames ? '' : 'paidParkingLot')
     ..aOB(3, _omitFieldNames ? '' : 'freeStreetParking')
@@ -760,35 +930,40 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
     ..aOB(5, _omitFieldNames ? '' : 'valetParking')
     ..aOB(6, _omitFieldNames ? '' : 'freeGarageParking')
     ..aOB(7, _omitFieldNames ? '' : 'paidGarageParking')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_ParkingOptions clone() => Place_ParkingOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_ParkingOptions copyWith(void Function(Place_ParkingOptions) updates) => super.copyWith((message) => updates(message as Place_ParkingOptions)) as Place_ParkingOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_ParkingOptions clone() =>
+      Place_ParkingOptions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_ParkingOptions copyWith(void Function(Place_ParkingOptions) updates) =>
+      super.copyWith((message) => updates(message as Place_ParkingOptions))
+          as Place_ParkingOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_ParkingOptions create() => Place_ParkingOptions._();
   Place_ParkingOptions createEmptyInstance() => create();
-  static $pb.PbList<Place_ParkingOptions> createRepeated() => $pb.PbList<Place_ParkingOptions>();
+  static $pb.PbList<Place_ParkingOptions> createRepeated() =>
+      $pb.PbList<Place_ParkingOptions>();
   @$core.pragma('dart2js:noInline')
-  static Place_ParkingOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_ParkingOptions>(create);
+  static Place_ParkingOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_ParkingOptions>(create);
   static Place_ParkingOptions? _defaultInstance;
 
   /// Place offers free parking lots.
   @$pb.TagNumber(1)
   $core.bool get freeParkingLot => $_getBF(0);
   @$pb.TagNumber(1)
-  set freeParkingLot($core.bool v) { $_setBool(0, v); }
+  set freeParkingLot($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFreeParkingLot() => $_has(0);
   @$pb.TagNumber(1)
@@ -798,7 +973,10 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get paidParkingLot => $_getBF(1);
   @$pb.TagNumber(2)
-  set paidParkingLot($core.bool v) { $_setBool(1, v); }
+  set paidParkingLot($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPaidParkingLot() => $_has(1);
   @$pb.TagNumber(2)
@@ -808,7 +986,10 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get freeStreetParking => $_getBF(2);
   @$pb.TagNumber(3)
-  set freeStreetParking($core.bool v) { $_setBool(2, v); }
+  set freeStreetParking($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFreeStreetParking() => $_has(2);
   @$pb.TagNumber(3)
@@ -818,7 +999,10 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get paidStreetParking => $_getBF(3);
   @$pb.TagNumber(4)
-  set paidStreetParking($core.bool v) { $_setBool(3, v); }
+  set paidStreetParking($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPaidStreetParking() => $_has(3);
   @$pb.TagNumber(4)
@@ -828,7 +1012,10 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get valetParking => $_getBF(4);
   @$pb.TagNumber(5)
-  set valetParking($core.bool v) { $_setBool(4, v); }
+  set valetParking($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasValetParking() => $_has(4);
   @$pb.TagNumber(5)
@@ -838,7 +1025,10 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get freeGarageParking => $_getBF(5);
   @$pb.TagNumber(6)
-  set freeGarageParking($core.bool v) { $_setBool(5, v); }
+  set freeGarageParking($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFreeGarageParking() => $_has(5);
   @$pb.TagNumber(6)
@@ -848,7 +1038,10 @@ class Place_ParkingOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get paidGarageParking => $_getBF(6);
   @$pb.TagNumber(7)
-  set paidGarageParking($core.bool v) { $_setBool(6, v); }
+  set paidGarageParking($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPaidGarageParking() => $_has(6);
   @$pb.TagNumber(7)
@@ -872,41 +1065,54 @@ class Place_SubDestination extends $pb.GeneratedMessage {
     return $result;
   }
   Place_SubDestination._() : super();
-  factory Place_SubDestination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_SubDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_SubDestination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_SubDestination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.SubDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.SubDestination',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_SubDestination clone() => Place_SubDestination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_SubDestination copyWith(void Function(Place_SubDestination) updates) => super.copyWith((message) => updates(message as Place_SubDestination)) as Place_SubDestination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_SubDestination clone() =>
+      Place_SubDestination()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_SubDestination copyWith(void Function(Place_SubDestination) updates) =>
+      super.copyWith((message) => updates(message as Place_SubDestination))
+          as Place_SubDestination;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_SubDestination create() => Place_SubDestination._();
   Place_SubDestination createEmptyInstance() => create();
-  static $pb.PbList<Place_SubDestination> createRepeated() => $pb.PbList<Place_SubDestination>();
+  static $pb.PbList<Place_SubDestination> createRepeated() =>
+      $pb.PbList<Place_SubDestination>();
   @$core.pragma('dart2js:noInline')
-  static Place_SubDestination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_SubDestination>(create);
+  static Place_SubDestination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_SubDestination>(create);
   static Place_SubDestination? _defaultInstance;
 
   /// The resource name of the sub destination.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -916,7 +1122,10 @@ class Place_SubDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -947,43 +1156,58 @@ class Place_AccessibilityOptions extends $pb.GeneratedMessage {
     return $result;
   }
   Place_AccessibilityOptions._() : super();
-  factory Place_AccessibilityOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_AccessibilityOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_AccessibilityOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_AccessibilityOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.AccessibilityOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.AccessibilityOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'wheelchairAccessibleParking')
     ..aOB(2, _omitFieldNames ? '' : 'wheelchairAccessibleEntrance')
     ..aOB(3, _omitFieldNames ? '' : 'wheelchairAccessibleRestroom')
     ..aOB(4, _omitFieldNames ? '' : 'wheelchairAccessibleSeating')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_AccessibilityOptions clone() => Place_AccessibilityOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_AccessibilityOptions copyWith(void Function(Place_AccessibilityOptions) updates) => super.copyWith((message) => updates(message as Place_AccessibilityOptions)) as Place_AccessibilityOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_AccessibilityOptions clone() =>
+      Place_AccessibilityOptions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_AccessibilityOptions copyWith(
+          void Function(Place_AccessibilityOptions) updates) =>
+      super.copyWith(
+              (message) => updates(message as Place_AccessibilityOptions))
+          as Place_AccessibilityOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_AccessibilityOptions create() => Place_AccessibilityOptions._();
   Place_AccessibilityOptions createEmptyInstance() => create();
-  static $pb.PbList<Place_AccessibilityOptions> createRepeated() => $pb.PbList<Place_AccessibilityOptions>();
+  static $pb.PbList<Place_AccessibilityOptions> createRepeated() =>
+      $pb.PbList<Place_AccessibilityOptions>();
   @$core.pragma('dart2js:noInline')
-  static Place_AccessibilityOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_AccessibilityOptions>(create);
+  static Place_AccessibilityOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_AccessibilityOptions>(create);
   static Place_AccessibilityOptions? _defaultInstance;
 
   /// Place offers wheelchair accessible parking.
   @$pb.TagNumber(1)
   $core.bool get wheelchairAccessibleParking => $_getBF(0);
   @$pb.TagNumber(1)
-  set wheelchairAccessibleParking($core.bool v) { $_setBool(0, v); }
+  set wheelchairAccessibleParking($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWheelchairAccessibleParking() => $_has(0);
   @$pb.TagNumber(1)
@@ -993,7 +1217,10 @@ class Place_AccessibilityOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get wheelchairAccessibleEntrance => $_getBF(1);
   @$pb.TagNumber(2)
-  set wheelchairAccessibleEntrance($core.bool v) { $_setBool(1, v); }
+  set wheelchairAccessibleEntrance($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasWheelchairAccessibleEntrance() => $_has(1);
   @$pb.TagNumber(2)
@@ -1003,7 +1230,10 @@ class Place_AccessibilityOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get wheelchairAccessibleRestroom => $_getBF(2);
   @$pb.TagNumber(3)
-  set wheelchairAccessibleRestroom($core.bool v) { $_setBool(2, v); }
+  set wheelchairAccessibleRestroom($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWheelchairAccessibleRestroom() => $_has(2);
   @$pb.TagNumber(3)
@@ -1013,7 +1243,10 @@ class Place_AccessibilityOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get wheelchairAccessibleSeating => $_getBF(3);
   @$pb.TagNumber(4)
-  set wheelchairAccessibleSeating($core.bool v) { $_setBool(3, v); }
+  set wheelchairAccessibleSeating($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasWheelchairAccessibleSeating() => $_has(3);
   @$pb.TagNumber(4)
@@ -1044,42 +1277,59 @@ class Place_GenerativeSummary extends $pb.GeneratedMessage {
     return $result;
   }
   Place_GenerativeSummary._() : super();
-  factory Place_GenerativeSummary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_GenerativeSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_GenerativeSummary.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_GenerativeSummary.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.GenerativeSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'overview', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'description', subBuilder: $460.LocalizedText.create)
-    ..aOM<$463.References>(3, _omitFieldNames ? '' : 'references', subBuilder: $463.References.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.GenerativeSummary',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'overview',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'description',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$463.References>(3, _omitFieldNames ? '' : 'references',
+        subBuilder: $463.References.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Place_GenerativeSummary clone() => Place_GenerativeSummary()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_GenerativeSummary copyWith(void Function(Place_GenerativeSummary) updates) => super.copyWith((message) => updates(message as Place_GenerativeSummary)) as Place_GenerativeSummary;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_GenerativeSummary clone() =>
+      Place_GenerativeSummary()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_GenerativeSummary copyWith(
+          void Function(Place_GenerativeSummary) updates) =>
+      super.copyWith((message) => updates(message as Place_GenerativeSummary))
+          as Place_GenerativeSummary;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_GenerativeSummary create() => Place_GenerativeSummary._();
   Place_GenerativeSummary createEmptyInstance() => create();
-  static $pb.PbList<Place_GenerativeSummary> createRepeated() => $pb.PbList<Place_GenerativeSummary>();
+  static $pb.PbList<Place_GenerativeSummary> createRepeated() =>
+      $pb.PbList<Place_GenerativeSummary>();
   @$core.pragma('dart2js:noInline')
-  static Place_GenerativeSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_GenerativeSummary>(create);
+  static Place_GenerativeSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_GenerativeSummary>(create);
   static Place_GenerativeSummary? _defaultInstance;
 
   /// The overview of the place.
   @$pb.TagNumber(1)
   $460.LocalizedText get overview => $_getN(0);
   @$pb.TagNumber(1)
-  set overview($460.LocalizedText v) { setField(1, v); }
+  set overview($460.LocalizedText v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOverview() => $_has(0);
   @$pb.TagNumber(1)
@@ -1091,7 +1341,10 @@ class Place_GenerativeSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $460.LocalizedText get description => $_getN(1);
   @$pb.TagNumber(2)
-  set description($460.LocalizedText v) { setField(2, v); }
+  set description($460.LocalizedText v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -1103,7 +1356,10 @@ class Place_GenerativeSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $463.References get references => $_getN(2);
   @$pb.TagNumber(3)
-  set references($463.References v) { setField(3, v); }
+  set references($463.References v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReferences() => $_has(2);
   @$pb.TagNumber(3)
@@ -1128,33 +1384,44 @@ class Place_AreaSummary extends $pb.GeneratedMessage {
     return $result;
   }
   Place_AreaSummary._() : super();
-  factory Place_AreaSummary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place_AreaSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place_AreaSummary.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_AreaSummary.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.AreaSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<$468.ContentBlock>(4, _omitFieldNames ? '' : 'contentBlocks', $pb.PbFieldType.PM, subBuilder: $468.ContentBlock.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.AreaSummary',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..pc<$468.ContentBlock>(
+        4, _omitFieldNames ? '' : 'contentBlocks', $pb.PbFieldType.PM,
+        subBuilder: $468.ContentBlock.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Place_AreaSummary clone() => Place_AreaSummary()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place_AreaSummary copyWith(void Function(Place_AreaSummary) updates) => super.copyWith((message) => updates(message as Place_AreaSummary)) as Place_AreaSummary;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_AreaSummary copyWith(void Function(Place_AreaSummary) updates) =>
+      super.copyWith((message) => updates(message as Place_AreaSummary))
+          as Place_AreaSummary;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Place_AreaSummary create() => Place_AreaSummary._();
   Place_AreaSummary createEmptyInstance() => create();
-  static $pb.PbList<Place_AreaSummary> createRepeated() => $pb.PbList<Place_AreaSummary>();
+  static $pb.PbList<Place_AreaSummary> createRepeated() =>
+      $pb.PbList<Place_AreaSummary>();
   @$core.pragma('dart2js:noInline')
-  static Place_AreaSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_AreaSummary>(create);
+  static Place_AreaSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_AreaSummary>(create);
   static Place_AreaSummary? _defaultInstance;
 
   /// Content blocks that compose the area summary. Each block has a separate
@@ -1423,34 +1690,62 @@ class Place extends $pb.GeneratedMessage {
     return $result;
   }
   Place._() : super();
-  factory Place.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..pPS(5, _omitFieldNames ? '' : 'types')
     ..aOS(7, _omitFieldNames ? '' : 'nationalPhoneNumber')
     ..aOS(8, _omitFieldNames ? '' : 'internationalPhoneNumber')
     ..aOS(9, _omitFieldNames ? '' : 'formattedAddress')
-    ..pc<Place_AddressComponent>(10, _omitFieldNames ? '' : 'addressComponents', $pb.PbFieldType.PM, subBuilder: Place_AddressComponent.create)
-    ..aOM<Place_PlusCode>(11, _omitFieldNames ? '' : 'plusCode', subBuilder: Place_PlusCode.create)
-    ..aOM<$325.LatLng>(12, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
-    ..aOM<$449.Viewport>(13, _omitFieldNames ? '' : 'viewport', subBuilder: $449.Viewport.create)
+    ..pc<Place_AddressComponent>(
+        10, _omitFieldNames ? '' : 'addressComponents', $pb.PbFieldType.PM,
+        subBuilder: Place_AddressComponent.create)
+    ..aOM<Place_PlusCode>(11, _omitFieldNames ? '' : 'plusCode',
+        subBuilder: Place_PlusCode.create)
+    ..aOM<$325.LatLng>(12, _omitFieldNames ? '' : 'location',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$449.Viewport>(13, _omitFieldNames ? '' : 'viewport',
+        subBuilder: $449.Viewport.create)
     ..a<$core.double>(14, _omitFieldNames ? '' : 'rating', $pb.PbFieldType.OD)
     ..aOS(15, _omitFieldNames ? '' : 'googleMapsUri')
     ..aOS(16, _omitFieldNames ? '' : 'websiteUri')
-    ..aOM<Place_OpeningHours>(21, _omitFieldNames ? '' : 'regularOpeningHours', subBuilder: Place_OpeningHours.create)
-    ..a<$core.int>(22, _omitFieldNames ? '' : 'utcOffsetMinutes', $pb.PbFieldType.O3)
+    ..aOM<Place_OpeningHours>(21, _omitFieldNames ? '' : 'regularOpeningHours',
+        subBuilder: Place_OpeningHours.create)
+    ..a<$core.int>(
+        22, _omitFieldNames ? '' : 'utcOffsetMinutes', $pb.PbFieldType.O3)
     ..aOS(24, _omitFieldNames ? '' : 'adrFormatAddress')
-    ..e<Place_BusinessStatus>(25, _omitFieldNames ? '' : 'businessStatus', $pb.PbFieldType.OE, defaultOrMaker: Place_BusinessStatus.BUSINESS_STATUS_UNSPECIFIED, valueOf: Place_BusinessStatus.valueOf, enumValues: Place_BusinessStatus.values)
-    ..e<PriceLevel>(26, _omitFieldNames ? '' : 'priceLevel', $pb.PbFieldType.OE, defaultOrMaker: PriceLevel.PRICE_LEVEL_UNSPECIFIED, valueOf: PriceLevel.valueOf, enumValues: PriceLevel.values)
-    ..pc<Place_Attribution>(27, _omitFieldNames ? '' : 'attributions', $pb.PbFieldType.PM, subBuilder: Place_Attribution.create)
-    ..a<$core.int>(28, _omitFieldNames ? '' : 'userRatingCount', $pb.PbFieldType.O3)
+    ..e<Place_BusinessStatus>(
+        25, _omitFieldNames ? '' : 'businessStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: Place_BusinessStatus.BUSINESS_STATUS_UNSPECIFIED,
+        valueOf: Place_BusinessStatus.valueOf,
+        enumValues: Place_BusinessStatus.values)
+    ..e<PriceLevel>(26, _omitFieldNames ? '' : 'priceLevel', $pb.PbFieldType.OE,
+        defaultOrMaker: PriceLevel.PRICE_LEVEL_UNSPECIFIED,
+        valueOf: PriceLevel.valueOf,
+        enumValues: PriceLevel.values)
+    ..pc<Place_Attribution>(
+        27, _omitFieldNames ? '' : 'attributions', $pb.PbFieldType.PM,
+        subBuilder: Place_Attribution.create)
+    ..a<$core.int>(
+        28, _omitFieldNames ? '' : 'userRatingCount', $pb.PbFieldType.O3)
     ..aOS(29, _omitFieldNames ? '' : 'iconMaskBaseUri')
     ..aOS(30, _omitFieldNames ? '' : 'iconBackgroundColor')
-    ..aOM<$460.LocalizedText>(31, _omitFieldNames ? '' : 'displayName', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(32, _omitFieldNames ? '' : 'primaryTypeDisplayName', subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(31, _omitFieldNames ? '' : 'displayName',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(
+        32, _omitFieldNames ? '' : 'primaryTypeDisplayName',
+        subBuilder: $460.LocalizedText.create)
     ..aOB(33, _omitFieldNames ? '' : 'takeout')
     ..aOB(34, _omitFieldNames ? '' : 'delivery')
     ..aOB(35, _omitFieldNames ? '' : 'dineIn')
@@ -1463,14 +1758,26 @@ class Place extends $pb.GeneratedMessage {
     ..aOB(43, _omitFieldNames ? '' : 'servesWine')
     ..aOB(44, _omitFieldNames ? '' : 'servesBrunch')
     ..aOB(45, _omitFieldNames ? '' : 'servesVegetarianFood')
-    ..aOM<Place_OpeningHours>(46, _omitFieldNames ? '' : 'currentOpeningHours', subBuilder: Place_OpeningHours.create)
-    ..pc<Place_OpeningHours>(47, _omitFieldNames ? '' : 'currentSecondaryOpeningHours', $pb.PbFieldType.PM, subBuilder: Place_OpeningHours.create)
-    ..pc<Place_OpeningHours>(49, _omitFieldNames ? '' : 'regularSecondaryOpeningHours', $pb.PbFieldType.PM, subBuilder: Place_OpeningHours.create)
+    ..aOM<Place_OpeningHours>(46, _omitFieldNames ? '' : 'currentOpeningHours',
+        subBuilder: Place_OpeningHours.create)
+    ..pc<Place_OpeningHours>(
+        47,
+        _omitFieldNames ? '' : 'currentSecondaryOpeningHours',
+        $pb.PbFieldType.PM,
+        subBuilder: Place_OpeningHours.create)
+    ..pc<Place_OpeningHours>(
+        49,
+        _omitFieldNames ? '' : 'regularSecondaryOpeningHours',
+        $pb.PbFieldType.PM,
+        subBuilder: Place_OpeningHours.create)
     ..aOS(50, _omitFieldNames ? '' : 'primaryType')
     ..aOS(51, _omitFieldNames ? '' : 'shortFormattedAddress')
-    ..aOM<$460.LocalizedText>(52, _omitFieldNames ? '' : 'editorialSummary', subBuilder: $460.LocalizedText.create)
-    ..pc<$462.Review>(53, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM, subBuilder: $462.Review.create)
-    ..pc<$464.Photo>(54, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM, subBuilder: $464.Photo.create)
+    ..aOM<$460.LocalizedText>(52, _omitFieldNames ? '' : 'editorialSummary',
+        subBuilder: $460.LocalizedText.create)
+    ..pc<$462.Review>(53, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM,
+        subBuilder: $462.Review.create)
+    ..pc<$464.Photo>(54, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM,
+        subBuilder: $464.Photo.create)
     ..aOB(55, _omitFieldNames ? '' : 'outdoorSeating')
     ..aOB(56, _omitFieldNames ? '' : 'liveMusic')
     ..aOB(57, _omitFieldNames ? '' : 'menuForChildren')
@@ -1482,27 +1789,36 @@ class Place extends $pb.GeneratedMessage {
     ..aOB(64, _omitFieldNames ? '' : 'restroom')
     ..aOB(65, _omitFieldNames ? '' : 'goodForGroups')
     ..aOB(66, _omitFieldNames ? '' : 'goodForWatchingSports')
-    ..aOM<Place_PaymentOptions>(67, _omitFieldNames ? '' : 'paymentOptions', subBuilder: Place_PaymentOptions.create)
-    ..aOM<Place_ParkingOptions>(70, _omitFieldNames ? '' : 'parkingOptions', subBuilder: Place_ParkingOptions.create)
-    ..pc<Place_SubDestination>(71, _omitFieldNames ? '' : 'subDestinations', $pb.PbFieldType.PM, subBuilder: Place_SubDestination.create)
-    ..aOM<Place_AccessibilityOptions>(72, _omitFieldNames ? '' : 'accessibilityOptions', subBuilder: Place_AccessibilityOptions.create)
-    ..aOM<$466.FuelOptions>(78, _omitFieldNames ? '' : 'fuelOptions', subBuilder: $466.FuelOptions.create)
-    ..aOM<$467.EVChargeOptions>(79, _omitFieldNames ? '' : 'evChargeOptions', subBuilder: $467.EVChargeOptions.create)
-    ..aOM<Place_GenerativeSummary>(80, _omitFieldNames ? '' : 'generativeSummary', subBuilder: Place_GenerativeSummary.create)
-    ..aOM<Place_AreaSummary>(81, _omitFieldNames ? '' : 'areaSummary', subBuilder: Place_AreaSummary.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Place_PaymentOptions>(67, _omitFieldNames ? '' : 'paymentOptions',
+        subBuilder: Place_PaymentOptions.create)
+    ..aOM<Place_ParkingOptions>(70, _omitFieldNames ? '' : 'parkingOptions',
+        subBuilder: Place_ParkingOptions.create)
+    ..pc<Place_SubDestination>(
+        71, _omitFieldNames ? '' : 'subDestinations', $pb.PbFieldType.PM,
+        subBuilder: Place_SubDestination.create)
+    ..aOM<Place_AccessibilityOptions>(
+        72, _omitFieldNames ? '' : 'accessibilityOptions',
+        subBuilder: Place_AccessibilityOptions.create)
+    ..aOM<$466.FuelOptions>(78, _omitFieldNames ? '' : 'fuelOptions',
+        subBuilder: $466.FuelOptions.create)
+    ..aOM<$467.EVChargeOptions>(79, _omitFieldNames ? '' : 'evChargeOptions',
+        subBuilder: $467.EVChargeOptions.create)
+    ..aOM<Place_GenerativeSummary>(
+        80, _omitFieldNames ? '' : 'generativeSummary',
+        subBuilder: Place_GenerativeSummary.create)
+    ..aOM<Place_AreaSummary>(81, _omitFieldNames ? '' : 'areaSummary',
+        subBuilder: Place_AreaSummary.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Place clone() => Place()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place copyWith(void Function(Place) updates) => super.copyWith((message) => updates(message as Place)) as Place;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place copyWith(void Function(Place) updates) =>
+      super.copyWith((message) => updates(message as Place)) as Place;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1511,7 +1827,8 @@ class Place extends $pb.GeneratedMessage {
   Place createEmptyInstance() => create();
   static $pb.PbList<Place> createRepeated() => $pb.PbList<Place>();
   @$core.pragma('dart2js:noInline')
-  static Place getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place>(create);
+  static Place getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place>(create);
   static Place? _defaultInstance;
 
   /// This Place's resource name, in `places/{place_id}` format.  Can be used to
@@ -1519,7 +1836,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1529,7 +1849,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1546,7 +1869,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get nationalPhoneNumber => $_getSZ(3);
   @$pb.TagNumber(7)
-  set nationalPhoneNumber($core.String v) { $_setString(3, v); }
+  set nationalPhoneNumber($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasNationalPhoneNumber() => $_has(3);
   @$pb.TagNumber(7)
@@ -1556,7 +1882,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get internationalPhoneNumber => $_getSZ(4);
   @$pb.TagNumber(8)
-  set internationalPhoneNumber($core.String v) { $_setString(4, v); }
+  set internationalPhoneNumber($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasInternationalPhoneNumber() => $_has(4);
   @$pb.TagNumber(8)
@@ -1566,7 +1895,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get formattedAddress => $_getSZ(5);
   @$pb.TagNumber(9)
-  set formattedAddress($core.String v) { $_setString(5, v); }
+  set formattedAddress($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasFormattedAddress() => $_has(5);
   @$pb.TagNumber(9)
@@ -1593,7 +1925,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Place_PlusCode get plusCode => $_getN(7);
   @$pb.TagNumber(11)
-  set plusCode(Place_PlusCode v) { setField(11, v); }
+  set plusCode(Place_PlusCode v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasPlusCode() => $_has(7);
   @$pb.TagNumber(11)
@@ -1605,7 +1940,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $325.LatLng get location => $_getN(8);
   @$pb.TagNumber(12)
-  set location($325.LatLng v) { setField(12, v); }
+  set location($325.LatLng v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasLocation() => $_has(8);
   @$pb.TagNumber(12)
@@ -1617,7 +1955,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $449.Viewport get viewport => $_getN(9);
   @$pb.TagNumber(13)
-  set viewport($449.Viewport v) { setField(13, v); }
+  set viewport($449.Viewport v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasViewport() => $_has(9);
   @$pb.TagNumber(13)
@@ -1629,7 +1970,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.double get rating => $_getN(10);
   @$pb.TagNumber(14)
-  set rating($core.double v) { $_setDouble(10, v); }
+  set rating($core.double v) {
+    $_setDouble(10, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasRating() => $_has(10);
   @$pb.TagNumber(14)
@@ -1639,7 +1983,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get googleMapsUri => $_getSZ(11);
   @$pb.TagNumber(15)
-  set googleMapsUri($core.String v) { $_setString(11, v); }
+  set googleMapsUri($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasGoogleMapsUri() => $_has(11);
   @$pb.TagNumber(15)
@@ -1652,7 +1999,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get websiteUri => $_getSZ(12);
   @$pb.TagNumber(16)
-  set websiteUri($core.String v) { $_setString(12, v); }
+  set websiteUri($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasWebsiteUri() => $_has(12);
   @$pb.TagNumber(16)
@@ -1662,7 +2012,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   Place_OpeningHours get regularOpeningHours => $_getN(13);
   @$pb.TagNumber(21)
-  set regularOpeningHours(Place_OpeningHours v) { setField(21, v); }
+  set regularOpeningHours(Place_OpeningHours v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasRegularOpeningHours() => $_has(13);
   @$pb.TagNumber(21)
@@ -1676,7 +2029,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.int get utcOffsetMinutes => $_getIZ(14);
   @$pb.TagNumber(22)
-  set utcOffsetMinutes($core.int v) { $_setSignedInt32(14, v); }
+  set utcOffsetMinutes($core.int v) {
+    $_setSignedInt32(14, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasUtcOffsetMinutes() => $_has(14);
   @$pb.TagNumber(22)
@@ -1686,7 +2042,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.String get adrFormatAddress => $_getSZ(15);
   @$pb.TagNumber(24)
-  set adrFormatAddress($core.String v) { $_setString(15, v); }
+  set adrFormatAddress($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasAdrFormatAddress() => $_has(15);
   @$pb.TagNumber(24)
@@ -1696,7 +2055,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   Place_BusinessStatus get businessStatus => $_getN(16);
   @$pb.TagNumber(25)
-  set businessStatus(Place_BusinessStatus v) { setField(25, v); }
+  set businessStatus(Place_BusinessStatus v) {
+    setField(25, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasBusinessStatus() => $_has(16);
   @$pb.TagNumber(25)
@@ -1706,7 +2068,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   PriceLevel get priceLevel => $_getN(17);
   @$pb.TagNumber(26)
-  set priceLevel(PriceLevel v) { setField(26, v); }
+  set priceLevel(PriceLevel v) {
+    setField(26, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasPriceLevel() => $_has(17);
   @$pb.TagNumber(26)
@@ -1720,7 +2085,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   $core.int get userRatingCount => $_getIZ(19);
   @$pb.TagNumber(28)
-  set userRatingCount($core.int v) { $_setSignedInt32(19, v); }
+  set userRatingCount($core.int v) {
+    $_setSignedInt32(19, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasUserRatingCount() => $_has(19);
   @$pb.TagNumber(28)
@@ -1731,7 +2099,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   $core.String get iconMaskBaseUri => $_getSZ(20);
   @$pb.TagNumber(29)
-  set iconMaskBaseUri($core.String v) { $_setString(20, v); }
+  set iconMaskBaseUri($core.String v) {
+    $_setString(20, v);
+  }
+
   @$pb.TagNumber(29)
   $core.bool hasIconMaskBaseUri() => $_has(20);
   @$pb.TagNumber(29)
@@ -1741,7 +2112,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   $core.String get iconBackgroundColor => $_getSZ(21);
   @$pb.TagNumber(30)
-  set iconBackgroundColor($core.String v) { $_setString(21, v); }
+  set iconBackgroundColor($core.String v) {
+    $_setString(21, v);
+  }
+
   @$pb.TagNumber(30)
   $core.bool hasIconBackgroundColor() => $_has(21);
   @$pb.TagNumber(30)
@@ -1752,7 +2126,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $460.LocalizedText get displayName => $_getN(22);
   @$pb.TagNumber(31)
-  set displayName($460.LocalizedText v) { setField(31, v); }
+  set displayName($460.LocalizedText v) {
+    setField(31, v);
+  }
+
   @$pb.TagNumber(31)
   $core.bool hasDisplayName() => $_has(22);
   @$pb.TagNumber(31)
@@ -1767,7 +2144,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(32)
   $460.LocalizedText get primaryTypeDisplayName => $_getN(23);
   @$pb.TagNumber(32)
-  set primaryTypeDisplayName($460.LocalizedText v) { setField(32, v); }
+  set primaryTypeDisplayName($460.LocalizedText v) {
+    setField(32, v);
+  }
+
   @$pb.TagNumber(32)
   $core.bool hasPrimaryTypeDisplayName() => $_has(23);
   @$pb.TagNumber(32)
@@ -1779,7 +2159,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   $core.bool get takeout => $_getBF(24);
   @$pb.TagNumber(33)
-  set takeout($core.bool v) { $_setBool(24, v); }
+  set takeout($core.bool v) {
+    $_setBool(24, v);
+  }
+
   @$pb.TagNumber(33)
   $core.bool hasTakeout() => $_has(24);
   @$pb.TagNumber(33)
@@ -1789,7 +2172,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(34)
   $core.bool get delivery => $_getBF(25);
   @$pb.TagNumber(34)
-  set delivery($core.bool v) { $_setBool(25, v); }
+  set delivery($core.bool v) {
+    $_setBool(25, v);
+  }
+
   @$pb.TagNumber(34)
   $core.bool hasDelivery() => $_has(25);
   @$pb.TagNumber(34)
@@ -1799,7 +2185,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   $core.bool get dineIn => $_getBF(26);
   @$pb.TagNumber(35)
-  set dineIn($core.bool v) { $_setBool(26, v); }
+  set dineIn($core.bool v) {
+    $_setBool(26, v);
+  }
+
   @$pb.TagNumber(35)
   $core.bool hasDineIn() => $_has(26);
   @$pb.TagNumber(35)
@@ -1809,7 +2198,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(36)
   $core.bool get curbsidePickup => $_getBF(27);
   @$pb.TagNumber(36)
-  set curbsidePickup($core.bool v) { $_setBool(27, v); }
+  set curbsidePickup($core.bool v) {
+    $_setBool(27, v);
+  }
+
   @$pb.TagNumber(36)
   $core.bool hasCurbsidePickup() => $_has(27);
   @$pb.TagNumber(36)
@@ -1819,7 +2211,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(38)
   $core.bool get reservable => $_getBF(28);
   @$pb.TagNumber(38)
-  set reservable($core.bool v) { $_setBool(28, v); }
+  set reservable($core.bool v) {
+    $_setBool(28, v);
+  }
+
   @$pb.TagNumber(38)
   $core.bool hasReservable() => $_has(28);
   @$pb.TagNumber(38)
@@ -1829,7 +2224,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(39)
   $core.bool get servesBreakfast => $_getBF(29);
   @$pb.TagNumber(39)
-  set servesBreakfast($core.bool v) { $_setBool(29, v); }
+  set servesBreakfast($core.bool v) {
+    $_setBool(29, v);
+  }
+
   @$pb.TagNumber(39)
   $core.bool hasServesBreakfast() => $_has(29);
   @$pb.TagNumber(39)
@@ -1839,7 +2237,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(40)
   $core.bool get servesLunch => $_getBF(30);
   @$pb.TagNumber(40)
-  set servesLunch($core.bool v) { $_setBool(30, v); }
+  set servesLunch($core.bool v) {
+    $_setBool(30, v);
+  }
+
   @$pb.TagNumber(40)
   $core.bool hasServesLunch() => $_has(30);
   @$pb.TagNumber(40)
@@ -1849,7 +2250,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(41)
   $core.bool get servesDinner => $_getBF(31);
   @$pb.TagNumber(41)
-  set servesDinner($core.bool v) { $_setBool(31, v); }
+  set servesDinner($core.bool v) {
+    $_setBool(31, v);
+  }
+
   @$pb.TagNumber(41)
   $core.bool hasServesDinner() => $_has(31);
   @$pb.TagNumber(41)
@@ -1859,7 +2263,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(42)
   $core.bool get servesBeer => $_getBF(32);
   @$pb.TagNumber(42)
-  set servesBeer($core.bool v) { $_setBool(32, v); }
+  set servesBeer($core.bool v) {
+    $_setBool(32, v);
+  }
+
   @$pb.TagNumber(42)
   $core.bool hasServesBeer() => $_has(32);
   @$pb.TagNumber(42)
@@ -1869,7 +2276,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(43)
   $core.bool get servesWine => $_getBF(33);
   @$pb.TagNumber(43)
-  set servesWine($core.bool v) { $_setBool(33, v); }
+  set servesWine($core.bool v) {
+    $_setBool(33, v);
+  }
+
   @$pb.TagNumber(43)
   $core.bool hasServesWine() => $_has(33);
   @$pb.TagNumber(43)
@@ -1879,7 +2289,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(44)
   $core.bool get servesBrunch => $_getBF(34);
   @$pb.TagNumber(44)
-  set servesBrunch($core.bool v) { $_setBool(34, v); }
+  set servesBrunch($core.bool v) {
+    $_setBool(34, v);
+  }
+
   @$pb.TagNumber(44)
   $core.bool hasServesBrunch() => $_has(34);
   @$pb.TagNumber(44)
@@ -1889,7 +2302,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(45)
   $core.bool get servesVegetarianFood => $_getBF(35);
   @$pb.TagNumber(45)
-  set servesVegetarianFood($core.bool v) { $_setBool(35, v); }
+  set servesVegetarianFood($core.bool v) {
+    $_setBool(35, v);
+  }
+
   @$pb.TagNumber(45)
   $core.bool hasServesVegetarianFood() => $_has(35);
   @$pb.TagNumber(45)
@@ -1902,7 +2318,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(46)
   Place_OpeningHours get currentOpeningHours => $_getN(36);
   @$pb.TagNumber(46)
-  set currentOpeningHours(Place_OpeningHours v) { setField(46, v); }
+  set currentOpeningHours(Place_OpeningHours v) {
+    setField(46, v);
+  }
+
   @$pb.TagNumber(46)
   $core.bool hasCurrentOpeningHours() => $_has(36);
   @$pb.TagNumber(46)
@@ -1919,7 +2338,8 @@ class Place extends $pb.GeneratedMessage {
   /// place. This field includes the special_days subfield of all hours, set for
   /// dates that have exceptional hours.
   @$pb.TagNumber(47)
-  $core.List<Place_OpeningHours> get currentSecondaryOpeningHours => $_getList(37);
+  $core.List<Place_OpeningHours> get currentSecondaryOpeningHours =>
+      $_getList(37);
 
   /// Contains an array of entries for information about regular secondary hours
   /// of a business. Secondary hours are different from a business's main hours.
@@ -1928,7 +2348,8 @@ class Place extends $pb.GeneratedMessage {
   /// from a predefined list of opening hours types (such as DRIVE_THROUGH,
   /// PICKUP, or TAKEOUT) based on the types of the place.
   @$pb.TagNumber(49)
-  $core.List<Place_OpeningHours> get regularSecondaryOpeningHours => $_getList(38);
+  $core.List<Place_OpeningHours> get regularSecondaryOpeningHours =>
+      $_getList(38);
 
   /// The primary type of the given result. This type must one of the Places API
   /// supported types. For example, "restaurant", "cafe", "airport", etc.  A
@@ -1938,7 +2359,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(50)
   $core.String get primaryType => $_getSZ(39);
   @$pb.TagNumber(50)
-  set primaryType($core.String v) { $_setString(39, v); }
+  set primaryType($core.String v) {
+    $_setString(39, v);
+  }
+
   @$pb.TagNumber(50)
   $core.bool hasPrimaryType() => $_has(39);
   @$pb.TagNumber(50)
@@ -1948,7 +2372,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(51)
   $core.String get shortFormattedAddress => $_getSZ(40);
   @$pb.TagNumber(51)
-  set shortFormattedAddress($core.String v) { $_setString(40, v); }
+  set shortFormattedAddress($core.String v) {
+    $_setString(40, v);
+  }
+
   @$pb.TagNumber(51)
   $core.bool hasShortFormattedAddress() => $_has(40);
   @$pb.TagNumber(51)
@@ -1960,7 +2387,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(52)
   $460.LocalizedText get editorialSummary => $_getN(41);
   @$pb.TagNumber(52)
-  set editorialSummary($460.LocalizedText v) { setField(52, v); }
+  set editorialSummary($460.LocalizedText v) {
+    setField(52, v);
+  }
+
   @$pb.TagNumber(52)
   $core.bool hasEditorialSummary() => $_has(41);
   @$pb.TagNumber(52)
@@ -1982,7 +2412,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(55)
   $core.bool get outdoorSeating => $_getBF(44);
   @$pb.TagNumber(55)
-  set outdoorSeating($core.bool v) { $_setBool(44, v); }
+  set outdoorSeating($core.bool v) {
+    $_setBool(44, v);
+  }
+
   @$pb.TagNumber(55)
   $core.bool hasOutdoorSeating() => $_has(44);
   @$pb.TagNumber(55)
@@ -1992,7 +2425,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(56)
   $core.bool get liveMusic => $_getBF(45);
   @$pb.TagNumber(56)
-  set liveMusic($core.bool v) { $_setBool(45, v); }
+  set liveMusic($core.bool v) {
+    $_setBool(45, v);
+  }
+
   @$pb.TagNumber(56)
   $core.bool hasLiveMusic() => $_has(45);
   @$pb.TagNumber(56)
@@ -2002,7 +2438,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(57)
   $core.bool get menuForChildren => $_getBF(46);
   @$pb.TagNumber(57)
-  set menuForChildren($core.bool v) { $_setBool(46, v); }
+  set menuForChildren($core.bool v) {
+    $_setBool(46, v);
+  }
+
   @$pb.TagNumber(57)
   $core.bool hasMenuForChildren() => $_has(46);
   @$pb.TagNumber(57)
@@ -2012,7 +2451,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(58)
   $core.bool get servesCocktails => $_getBF(47);
   @$pb.TagNumber(58)
-  set servesCocktails($core.bool v) { $_setBool(47, v); }
+  set servesCocktails($core.bool v) {
+    $_setBool(47, v);
+  }
+
   @$pb.TagNumber(58)
   $core.bool hasServesCocktails() => $_has(47);
   @$pb.TagNumber(58)
@@ -2022,7 +2464,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(59)
   $core.bool get servesDessert => $_getBF(48);
   @$pb.TagNumber(59)
-  set servesDessert($core.bool v) { $_setBool(48, v); }
+  set servesDessert($core.bool v) {
+    $_setBool(48, v);
+  }
+
   @$pb.TagNumber(59)
   $core.bool hasServesDessert() => $_has(48);
   @$pb.TagNumber(59)
@@ -2032,7 +2477,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(60)
   $core.bool get servesCoffee => $_getBF(49);
   @$pb.TagNumber(60)
-  set servesCoffee($core.bool v) { $_setBool(49, v); }
+  set servesCoffee($core.bool v) {
+    $_setBool(49, v);
+  }
+
   @$pb.TagNumber(60)
   $core.bool hasServesCoffee() => $_has(49);
   @$pb.TagNumber(60)
@@ -2042,7 +2490,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(62)
   $core.bool get goodForChildren => $_getBF(50);
   @$pb.TagNumber(62)
-  set goodForChildren($core.bool v) { $_setBool(50, v); }
+  set goodForChildren($core.bool v) {
+    $_setBool(50, v);
+  }
+
   @$pb.TagNumber(62)
   $core.bool hasGoodForChildren() => $_has(50);
   @$pb.TagNumber(62)
@@ -2052,7 +2503,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(63)
   $core.bool get allowsDogs => $_getBF(51);
   @$pb.TagNumber(63)
-  set allowsDogs($core.bool v) { $_setBool(51, v); }
+  set allowsDogs($core.bool v) {
+    $_setBool(51, v);
+  }
+
   @$pb.TagNumber(63)
   $core.bool hasAllowsDogs() => $_has(51);
   @$pb.TagNumber(63)
@@ -2062,7 +2516,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(64)
   $core.bool get restroom => $_getBF(52);
   @$pb.TagNumber(64)
-  set restroom($core.bool v) { $_setBool(52, v); }
+  set restroom($core.bool v) {
+    $_setBool(52, v);
+  }
+
   @$pb.TagNumber(64)
   $core.bool hasRestroom() => $_has(52);
   @$pb.TagNumber(64)
@@ -2072,7 +2529,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(65)
   $core.bool get goodForGroups => $_getBF(53);
   @$pb.TagNumber(65)
-  set goodForGroups($core.bool v) { $_setBool(53, v); }
+  set goodForGroups($core.bool v) {
+    $_setBool(53, v);
+  }
+
   @$pb.TagNumber(65)
   $core.bool hasGoodForGroups() => $_has(53);
   @$pb.TagNumber(65)
@@ -2082,7 +2542,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(66)
   $core.bool get goodForWatchingSports => $_getBF(54);
   @$pb.TagNumber(66)
-  set goodForWatchingSports($core.bool v) { $_setBool(54, v); }
+  set goodForWatchingSports($core.bool v) {
+    $_setBool(54, v);
+  }
+
   @$pb.TagNumber(66)
   $core.bool hasGoodForWatchingSports() => $_has(54);
   @$pb.TagNumber(66)
@@ -2093,7 +2556,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(67)
   Place_PaymentOptions get paymentOptions => $_getN(55);
   @$pb.TagNumber(67)
-  set paymentOptions(Place_PaymentOptions v) { setField(67, v); }
+  set paymentOptions(Place_PaymentOptions v) {
+    setField(67, v);
+  }
+
   @$pb.TagNumber(67)
   $core.bool hasPaymentOptions() => $_has(55);
   @$pb.TagNumber(67)
@@ -2105,7 +2571,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(70)
   Place_ParkingOptions get parkingOptions => $_getN(56);
   @$pb.TagNumber(70)
-  set parkingOptions(Place_ParkingOptions v) { setField(70, v); }
+  set parkingOptions(Place_ParkingOptions v) {
+    setField(70, v);
+  }
+
   @$pb.TagNumber(70)
   $core.bool hasParkingOptions() => $_has(56);
   @$pb.TagNumber(70)
@@ -2121,7 +2590,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(72)
   Place_AccessibilityOptions get accessibilityOptions => $_getN(58);
   @$pb.TagNumber(72)
-  set accessibilityOptions(Place_AccessibilityOptions v) { setField(72, v); }
+  set accessibilityOptions(Place_AccessibilityOptions v) {
+    setField(72, v);
+  }
+
   @$pb.TagNumber(72)
   $core.bool hasAccessibilityOptions() => $_has(58);
   @$pb.TagNumber(72)
@@ -2134,7 +2606,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(78)
   $466.FuelOptions get fuelOptions => $_getN(59);
   @$pb.TagNumber(78)
-  set fuelOptions($466.FuelOptions v) { setField(78, v); }
+  set fuelOptions($466.FuelOptions v) {
+    setField(78, v);
+  }
+
   @$pb.TagNumber(78)
   $core.bool hasFuelOptions() => $_has(59);
   @$pb.TagNumber(78)
@@ -2146,7 +2621,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(79)
   $467.EVChargeOptions get evChargeOptions => $_getN(60);
   @$pb.TagNumber(79)
-  set evChargeOptions($467.EVChargeOptions v) { setField(79, v); }
+  set evChargeOptions($467.EVChargeOptions v) {
+    setField(79, v);
+  }
+
   @$pb.TagNumber(79)
   $core.bool hasEvChargeOptions() => $_has(60);
   @$pb.TagNumber(79)
@@ -2162,7 +2640,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(80)
   Place_GenerativeSummary get generativeSummary => $_getN(61);
   @$pb.TagNumber(80)
-  set generativeSummary(Place_GenerativeSummary v) { setField(80, v); }
+  set generativeSummary(Place_GenerativeSummary v) {
+    setField(80, v);
+  }
+
   @$pb.TagNumber(80)
   $core.bool hasGenerativeSummary() => $_has(61);
   @$pb.TagNumber(80)
@@ -2178,7 +2659,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(81)
   Place_AreaSummary get areaSummary => $_getN(62);
   @$pb.TagNumber(81)
-  set areaSummary(Place_AreaSummary v) { setField(81, v); }
+  set areaSummary(Place_AreaSummary v) {
+    setField(81, v);
+  }
+
   @$pb.TagNumber(81)
   $core.bool hasAreaSummary() => $_has(62);
   @$pb.TagNumber(81)
@@ -2187,6 +2671,6 @@ class Place extends $pb.GeneratedMessage {
   Place_AreaSummary ensureAreaSummary() => $_ensure(62);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

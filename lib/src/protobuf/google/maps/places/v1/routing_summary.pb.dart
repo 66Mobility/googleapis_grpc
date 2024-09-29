@@ -31,41 +31,55 @@ class RoutingSummary_Leg extends $pb.GeneratedMessage {
     return $result;
   }
   RoutingSummary_Leg._() : super();
-  factory RoutingSummary_Leg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RoutingSummary_Leg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RoutingSummary_Leg.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RoutingSummary_Leg.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RoutingSummary.Leg', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RoutingSummary.Leg',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RoutingSummary_Leg clone() => RoutingSummary_Leg()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RoutingSummary_Leg copyWith(void Function(RoutingSummary_Leg) updates) => super.copyWith((message) => updates(message as RoutingSummary_Leg)) as RoutingSummary_Leg;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RoutingSummary_Leg copyWith(void Function(RoutingSummary_Leg) updates) =>
+      super.copyWith((message) => updates(message as RoutingSummary_Leg))
+          as RoutingSummary_Leg;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RoutingSummary_Leg create() => RoutingSummary_Leg._();
   RoutingSummary_Leg createEmptyInstance() => create();
-  static $pb.PbList<RoutingSummary_Leg> createRepeated() => $pb.PbList<RoutingSummary_Leg>();
+  static $pb.PbList<RoutingSummary_Leg> createRepeated() =>
+      $pb.PbList<RoutingSummary_Leg>();
   @$core.pragma('dart2js:noInline')
-  static RoutingSummary_Leg getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RoutingSummary_Leg>(create);
+  static RoutingSummary_Leg getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RoutingSummary_Leg>(create);
   static RoutingSummary_Leg? _defaultInstance;
 
   /// The time it takes to complete this leg of the trip.
   @$pb.TagNumber(1)
   $264.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($264.Duration v) { setField(1, v); }
+  set duration($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
@@ -77,7 +91,10 @@ class RoutingSummary_Leg extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get distanceMeters => $_getIZ(1);
   @$pb.TagNumber(2)
-  set distanceMeters($core.int v) { $_setSignedInt32(1, v); }
+  set distanceMeters($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDistanceMeters() => $_has(1);
   @$pb.TagNumber(2)
@@ -101,33 +118,44 @@ class RoutingSummary extends $pb.GeneratedMessage {
     return $result;
   }
   RoutingSummary._() : super();
-  factory RoutingSummary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RoutingSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RoutingSummary.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RoutingSummary.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RoutingSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<RoutingSummary_Leg>(1, _omitFieldNames ? '' : 'legs', $pb.PbFieldType.PM, subBuilder: RoutingSummary_Leg.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RoutingSummary',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..pc<RoutingSummary_Leg>(
+        1, _omitFieldNames ? '' : 'legs', $pb.PbFieldType.PM,
+        subBuilder: RoutingSummary_Leg.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RoutingSummary clone() => RoutingSummary()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RoutingSummary copyWith(void Function(RoutingSummary) updates) => super.copyWith((message) => updates(message as RoutingSummary)) as RoutingSummary;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RoutingSummary copyWith(void Function(RoutingSummary) updates) =>
+      super.copyWith((message) => updates(message as RoutingSummary))
+          as RoutingSummary;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RoutingSummary create() => RoutingSummary._();
   RoutingSummary createEmptyInstance() => create();
-  static $pb.PbList<RoutingSummary> createRepeated() => $pb.PbList<RoutingSummary>();
+  static $pb.PbList<RoutingSummary> createRepeated() =>
+      $pb.PbList<RoutingSummary>();
   @$core.pragma('dart2js:noInline')
-  static RoutingSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RoutingSummary>(create);
+  static RoutingSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RoutingSummary>(create);
   static RoutingSummary? _defaultInstance;
 
   ///  The legs of the trip.
@@ -141,6 +169,6 @@ class RoutingSummary extends $pb.GeneratedMessage {
   $core.List<RoutingSummary_Leg> get legs => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

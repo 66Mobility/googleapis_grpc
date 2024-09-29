@@ -31,40 +31,58 @@ class ComplianceNote_CisBenchmark extends $pb.GeneratedMessage {
     return $result;
   }
   ComplianceNote_CisBenchmark._() : super();
-  factory ComplianceNote_CisBenchmark.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComplianceNote_CisBenchmark.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComplianceNote_CisBenchmark.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComplianceNote_CisBenchmark.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComplianceNote.CisBenchmark', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComplianceNote.CisBenchmark',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'profileLevel', $pb.PbFieldType.O3)
-    ..e<$562.Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $562.Severity.SEVERITY_UNSPECIFIED, valueOf: $562.Severity.valueOf, enumValues: $562.Severity.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<$562.Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
+        defaultOrMaker: $562.Severity.SEVERITY_UNSPECIFIED,
+        valueOf: $562.Severity.valueOf,
+        enumValues: $562.Severity.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ComplianceNote_CisBenchmark clone() => ComplianceNote_CisBenchmark()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComplianceNote_CisBenchmark copyWith(void Function(ComplianceNote_CisBenchmark) updates) => super.copyWith((message) => updates(message as ComplianceNote_CisBenchmark)) as ComplianceNote_CisBenchmark;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ComplianceNote_CisBenchmark clone() =>
+      ComplianceNote_CisBenchmark()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComplianceNote_CisBenchmark copyWith(
+          void Function(ComplianceNote_CisBenchmark) updates) =>
+      super.copyWith(
+              (message) => updates(message as ComplianceNote_CisBenchmark))
+          as ComplianceNote_CisBenchmark;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ComplianceNote_CisBenchmark create() => ComplianceNote_CisBenchmark._();
+  static ComplianceNote_CisBenchmark create() =>
+      ComplianceNote_CisBenchmark._();
   ComplianceNote_CisBenchmark createEmptyInstance() => create();
-  static $pb.PbList<ComplianceNote_CisBenchmark> createRepeated() => $pb.PbList<ComplianceNote_CisBenchmark>();
+  static $pb.PbList<ComplianceNote_CisBenchmark> createRepeated() =>
+      $pb.PbList<ComplianceNote_CisBenchmark>();
   @$core.pragma('dart2js:noInline')
-  static ComplianceNote_CisBenchmark getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComplianceNote_CisBenchmark>(create);
+  static ComplianceNote_CisBenchmark getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComplianceNote_CisBenchmark>(create);
   static ComplianceNote_CisBenchmark? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get profileLevel => $_getIZ(0);
   @$pb.TagNumber(1)
-  set profileLevel($core.int v) { $_setSignedInt32(0, v); }
+  set profileLevel($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProfileLevel() => $_has(0);
   @$pb.TagNumber(1)
@@ -73,22 +91,19 @@ class ComplianceNote_CisBenchmark extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $562.Severity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity($562.Severity v) { setField(2, v); }
+  set severity($562.Severity v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSeverity() => $_has(1);
   @$pb.TagNumber(2)
   void clearSeverity() => clearField(2);
 }
 
-enum ComplianceNote_ComplianceType {
-  cisBenchmark, 
-  notSet
-}
+enum ComplianceNote_ComplianceType { cisBenchmark, notSet }
 
-enum ComplianceNote_PotentialImpact {
-  impact, 
-  notSet
-}
+enum ComplianceNote_PotentialImpact { impact, notSet }
 
 class ComplianceNote extends $pb.GeneratedMessage {
   factory ComplianceNote({
@@ -129,63 +144,82 @@ class ComplianceNote extends $pb.GeneratedMessage {
     return $result;
   }
   ComplianceNote._() : super();
-  factory ComplianceNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComplianceNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComplianceNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComplianceNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ComplianceNote_ComplianceType> _ComplianceNote_ComplianceTypeByTag = {
-    6 : ComplianceNote_ComplianceType.cisBenchmark,
-    0 : ComplianceNote_ComplianceType.notSet
+  static const $core.Map<$core.int, ComplianceNote_ComplianceType>
+      _ComplianceNote_ComplianceTypeByTag = {
+    6: ComplianceNote_ComplianceType.cisBenchmark,
+    0: ComplianceNote_ComplianceType.notSet
   };
-  static const $core.Map<$core.int, ComplianceNote_PotentialImpact> _ComplianceNote_PotentialImpactByTag = {
-    8 : ComplianceNote_PotentialImpact.impact,
-    0 : ComplianceNote_PotentialImpact.notSet
+  static const $core.Map<$core.int, ComplianceNote_PotentialImpact>
+      _ComplianceNote_PotentialImpactByTag = {
+    8: ComplianceNote_PotentialImpact.impact,
+    0: ComplianceNote_PotentialImpact.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComplianceNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComplianceNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..oo(0, [6])
     ..oo(1, [8])
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..pc<ComplianceVersion>(3, _omitFieldNames ? '' : 'version', $pb.PbFieldType.PM, subBuilder: ComplianceVersion.create)
+    ..pc<ComplianceVersion>(
+        3, _omitFieldNames ? '' : 'version', $pb.PbFieldType.PM,
+        subBuilder: ComplianceVersion.create)
     ..aOS(4, _omitFieldNames ? '' : 'rationale')
     ..aOS(5, _omitFieldNames ? '' : 'remediation')
-    ..aOM<ComplianceNote_CisBenchmark>(6, _omitFieldNames ? '' : 'cisBenchmark', subBuilder: ComplianceNote_CisBenchmark.create)
-    ..a<$core.List<$core.int>>(7, _omitFieldNames ? '' : 'scanInstructions', $pb.PbFieldType.OY)
+    ..aOM<ComplianceNote_CisBenchmark>(6, _omitFieldNames ? '' : 'cisBenchmark',
+        subBuilder: ComplianceNote_CisBenchmark.create)
+    ..a<$core.List<$core.int>>(
+        7, _omitFieldNames ? '' : 'scanInstructions', $pb.PbFieldType.OY)
     ..aOS(8, _omitFieldNames ? '' : 'impact')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ComplianceNote clone() => ComplianceNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComplianceNote copyWith(void Function(ComplianceNote) updates) => super.copyWith((message) => updates(message as ComplianceNote)) as ComplianceNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComplianceNote copyWith(void Function(ComplianceNote) updates) =>
+      super.copyWith((message) => updates(message as ComplianceNote))
+          as ComplianceNote;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComplianceNote create() => ComplianceNote._();
   ComplianceNote createEmptyInstance() => create();
-  static $pb.PbList<ComplianceNote> createRepeated() => $pb.PbList<ComplianceNote>();
+  static $pb.PbList<ComplianceNote> createRepeated() =>
+      $pb.PbList<ComplianceNote>();
   @$core.pragma('dart2js:noInline')
-  static ComplianceNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComplianceNote>(create);
+  static ComplianceNote getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComplianceNote>(create);
   static ComplianceNote? _defaultInstance;
 
-  ComplianceNote_ComplianceType whichComplianceType() => _ComplianceNote_ComplianceTypeByTag[$_whichOneof(0)]!;
+  ComplianceNote_ComplianceType whichComplianceType() =>
+      _ComplianceNote_ComplianceTypeByTag[$_whichOneof(0)]!;
   void clearComplianceType() => clearField($_whichOneof(0));
 
-  ComplianceNote_PotentialImpact whichPotentialImpact() => _ComplianceNote_PotentialImpactByTag[$_whichOneof(1)]!;
+  ComplianceNote_PotentialImpact whichPotentialImpact() =>
+      _ComplianceNote_PotentialImpactByTag[$_whichOneof(1)]!;
   void clearPotentialImpact() => clearField($_whichOneof(1));
 
   /// The title that identifies this compliance check.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -195,7 +229,10 @@ class ComplianceNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -209,7 +246,10 @@ class ComplianceNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get rationale => $_getSZ(3);
   @$pb.TagNumber(4)
-  set rationale($core.String v) { $_setString(3, v); }
+  set rationale($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRationale() => $_has(3);
   @$pb.TagNumber(4)
@@ -219,7 +259,10 @@ class ComplianceNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get remediation => $_getSZ(4);
   @$pb.TagNumber(5)
-  set remediation($core.String v) { $_setString(4, v); }
+  set remediation($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRemediation() => $_has(4);
   @$pb.TagNumber(5)
@@ -228,7 +271,10 @@ class ComplianceNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   ComplianceNote_CisBenchmark get cisBenchmark => $_getN(5);
   @$pb.TagNumber(6)
-  set cisBenchmark(ComplianceNote_CisBenchmark v) { setField(6, v); }
+  set cisBenchmark(ComplianceNote_CisBenchmark v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCisBenchmark() => $_has(5);
   @$pb.TagNumber(6)
@@ -240,7 +286,10 @@ class ComplianceNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.List<$core.int> get scanInstructions => $_getN(6);
   @$pb.TagNumber(7)
-  set scanInstructions($core.List<$core.int> v) { $_setBytes(6, v); }
+  set scanInstructions($core.List<$core.int> v) {
+    $_setBytes(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasScanInstructions() => $_has(6);
   @$pb.TagNumber(7)
@@ -249,7 +298,10 @@ class ComplianceNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get impact => $_getSZ(7);
   @$pb.TagNumber(8)
-  set impact($core.String v) { $_setString(7, v); }
+  set impact($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasImpact() => $_has(7);
   @$pb.TagNumber(8)
@@ -277,35 +329,43 @@ class ComplianceVersion extends $pb.GeneratedMessage {
     return $result;
   }
   ComplianceVersion._() : super();
-  factory ComplianceVersion.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComplianceVersion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComplianceVersion.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComplianceVersion.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComplianceVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComplianceVersion',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cpeUri')
     ..aOS(2, _omitFieldNames ? '' : 'version')
     ..aOS(3, _omitFieldNames ? '' : 'benchmarkDocument')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ComplianceVersion clone() => ComplianceVersion()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComplianceVersion copyWith(void Function(ComplianceVersion) updates) => super.copyWith((message) => updates(message as ComplianceVersion)) as ComplianceVersion;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComplianceVersion copyWith(void Function(ComplianceVersion) updates) =>
+      super.copyWith((message) => updates(message as ComplianceVersion))
+          as ComplianceVersion;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComplianceVersion create() => ComplianceVersion._();
   ComplianceVersion createEmptyInstance() => create();
-  static $pb.PbList<ComplianceVersion> createRepeated() => $pb.PbList<ComplianceVersion>();
+  static $pb.PbList<ComplianceVersion> createRepeated() =>
+      $pb.PbList<ComplianceVersion>();
   @$core.pragma('dart2js:noInline')
-  static ComplianceVersion getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComplianceVersion>(create);
+  static ComplianceVersion getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComplianceVersion>(create);
   static ComplianceVersion? _defaultInstance;
 
   /// The CPE URI (https://cpe.mitre.org/specification/) this benchmark is
@@ -313,7 +373,10 @@ class ComplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get cpeUri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set cpeUri($core.String v) { $_setString(0, v); }
+  set cpeUri($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCpeUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -324,7 +387,10 @@ class ComplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
   @$pb.TagNumber(2)
-  set version($core.String v) { $_setString(1, v); }
+  set version($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -335,7 +401,10 @@ class ComplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get benchmarkDocument => $_getSZ(2);
   @$pb.TagNumber(3)
-  set benchmarkDocument($core.String v) { $_setString(2, v); }
+  set benchmarkDocument($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBenchmarkDocument() => $_has(2);
   @$pb.TagNumber(3)
@@ -363,35 +432,47 @@ class ComplianceOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   ComplianceOccurrence._() : super();
-  factory ComplianceOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComplianceOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComplianceOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComplianceOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComplianceOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..pc<NonCompliantFile>(2, _omitFieldNames ? '' : 'nonCompliantFiles', $pb.PbFieldType.PM, subBuilder: NonCompliantFile.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComplianceOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..pc<NonCompliantFile>(
+        2, _omitFieldNames ? '' : 'nonCompliantFiles', $pb.PbFieldType.PM,
+        subBuilder: NonCompliantFile.create)
     ..aOS(3, _omitFieldNames ? '' : 'nonComplianceReason')
-    ..aOM<ComplianceVersion>(4, _omitFieldNames ? '' : 'version', subBuilder: ComplianceVersion.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ComplianceVersion>(4, _omitFieldNames ? '' : 'version',
+        subBuilder: ComplianceVersion.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ComplianceOccurrence clone() => ComplianceOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComplianceOccurrence copyWith(void Function(ComplianceOccurrence) updates) => super.copyWith((message) => updates(message as ComplianceOccurrence)) as ComplianceOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ComplianceOccurrence clone() =>
+      ComplianceOccurrence()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComplianceOccurrence copyWith(void Function(ComplianceOccurrence) updates) =>
+      super.copyWith((message) => updates(message as ComplianceOccurrence))
+          as ComplianceOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComplianceOccurrence create() => ComplianceOccurrence._();
   ComplianceOccurrence createEmptyInstance() => create();
-  static $pb.PbList<ComplianceOccurrence> createRepeated() => $pb.PbList<ComplianceOccurrence>();
+  static $pb.PbList<ComplianceOccurrence> createRepeated() =>
+      $pb.PbList<ComplianceOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static ComplianceOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComplianceOccurrence>(create);
+  static ComplianceOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComplianceOccurrence>(create);
   static ComplianceOccurrence? _defaultInstance;
 
   @$pb.TagNumber(2)
@@ -400,7 +481,10 @@ class ComplianceOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get nonComplianceReason => $_getSZ(1);
   @$pb.TagNumber(3)
-  set nonComplianceReason($core.String v) { $_setString(1, v); }
+  set nonComplianceReason($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNonComplianceReason() => $_has(1);
   @$pb.TagNumber(3)
@@ -410,7 +494,10 @@ class ComplianceOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ComplianceVersion get version => $_getN(2);
   @$pb.TagNumber(4)
-  set version(ComplianceVersion v) { setField(4, v); }
+  set version(ComplianceVersion v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVersion() => $_has(2);
   @$pb.TagNumber(4)
@@ -439,42 +526,53 @@ class NonCompliantFile extends $pb.GeneratedMessage {
     return $result;
   }
   NonCompliantFile._() : super();
-  factory NonCompliantFile.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NonCompliantFile.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NonCompliantFile.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NonCompliantFile.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NonCompliantFile', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NonCompliantFile',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOS(2, _omitFieldNames ? '' : 'displayCommand')
     ..aOS(3, _omitFieldNames ? '' : 'reason')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NonCompliantFile clone() => NonCompliantFile()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NonCompliantFile copyWith(void Function(NonCompliantFile) updates) => super.copyWith((message) => updates(message as NonCompliantFile)) as NonCompliantFile;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NonCompliantFile copyWith(void Function(NonCompliantFile) updates) =>
+      super.copyWith((message) => updates(message as NonCompliantFile))
+          as NonCompliantFile;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NonCompliantFile create() => NonCompliantFile._();
   NonCompliantFile createEmptyInstance() => create();
-  static $pb.PbList<NonCompliantFile> createRepeated() => $pb.PbList<NonCompliantFile>();
+  static $pb.PbList<NonCompliantFile> createRepeated() =>
+      $pb.PbList<NonCompliantFile>();
   @$core.pragma('dart2js:noInline')
-  static NonCompliantFile getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NonCompliantFile>(create);
+  static NonCompliantFile getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NonCompliantFile>(create);
   static NonCompliantFile? _defaultInstance;
 
   /// Empty if `display_command` is set.
   @$pb.TagNumber(1)
   $core.String get path => $_getSZ(0);
   @$pb.TagNumber(1)
-  set path($core.String v) { $_setString(0, v); }
+  set path($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
@@ -484,7 +582,10 @@ class NonCompliantFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayCommand => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayCommand($core.String v) { $_setString(1, v); }
+  set displayCommand($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayCommand() => $_has(1);
   @$pb.TagNumber(2)
@@ -494,13 +595,16 @@ class NonCompliantFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get reason => $_getSZ(2);
   @$pb.TagNumber(3)
-  set reason($core.String v) { $_setString(2, v); }
+  set reason($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReason() => $_has(2);
   @$pb.TagNumber(3)
   void clearReason() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

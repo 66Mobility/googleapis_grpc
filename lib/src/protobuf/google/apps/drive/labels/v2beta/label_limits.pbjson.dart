@@ -19,11 +19,36 @@ const LabelLimits$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'max_title_length', '3': 2, '4': 1, '5': 5, '10': 'maxTitleLength'},
-    {'1': 'max_description_length', '3': 3, '4': 1, '5': 5, '10': 'maxDescriptionLength'},
+    {
+      '1': 'max_description_length',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'maxDescriptionLength'
+    },
     {'1': 'max_fields', '3': 4, '4': 1, '5': 5, '10': 'maxFields'},
-    {'1': 'max_deleted_fields', '3': 5, '4': 1, '5': 5, '10': 'maxDeletedFields'},
-    {'1': 'max_draft_revisions', '3': 6, '4': 1, '5': 5, '10': 'maxDraftRevisions'},
-    {'1': 'field_limits', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.FieldLimits', '10': 'fieldLimits'},
+    {
+      '1': 'max_deleted_fields',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'maxDeletedFields'
+    },
+    {
+      '1': 'max_draft_revisions',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '10': 'maxDraftRevisions'
+    },
+    {
+      '1': 'field_limits',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.FieldLimits',
+      '10': 'fieldLimits'
+    },
   ],
   '7': {},
 };
@@ -44,14 +69,68 @@ const FieldLimits$json = {
   '1': 'FieldLimits',
   '2': [
     {'1': 'max_id_length', '3': 1, '4': 1, '5': 5, '10': 'maxIdLength'},
-    {'1': 'max_display_name_length', '3': 2, '4': 1, '5': 5, '10': 'maxDisplayNameLength'},
-    {'1': 'max_description_length', '3': 3, '4': 1, '5': 5, '10': 'maxDescriptionLength'},
-    {'1': 'text_limits', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.TextLimits', '10': 'textLimits'},
-    {'1': 'long_text_limits', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.LongTextLimits', '10': 'longTextLimits'},
-    {'1': 'integer_limits', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.IntegerLimits', '10': 'integerLimits'},
-    {'1': 'date_limits', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.DateLimits', '10': 'dateLimits'},
-    {'1': 'user_limits', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserLimits', '10': 'userLimits'},
-    {'1': 'selection_limits', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.SelectionLimits', '10': 'selectionLimits'},
+    {
+      '1': 'max_display_name_length',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'maxDisplayNameLength'
+    },
+    {
+      '1': 'max_description_length',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'maxDescriptionLength'
+    },
+    {
+      '1': 'text_limits',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.TextLimits',
+      '10': 'textLimits'
+    },
+    {
+      '1': 'long_text_limits',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.LongTextLimits',
+      '10': 'longTextLimits'
+    },
+    {
+      '1': 'integer_limits',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.IntegerLimits',
+      '10': 'integerLimits'
+    },
+    {
+      '1': 'date_limits',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.DateLimits',
+      '10': 'dateLimits'
+    },
+    {
+      '1': 'user_limits',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserLimits',
+      '10': 'userLimits'
+    },
+    {
+      '1': 'selection_limits',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.SelectionLimits',
+      '10': 'selectionLimits'
+    },
   ],
 };
 
@@ -128,8 +207,22 @@ final $typed_data.Uint8List integerLimitsDescriptor = $convert.base64Decode(
 const DateLimits$json = {
   '1': 'DateLimits',
   '2': [
-    {'1': 'min_value', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'minValue'},
-    {'1': 'max_value', '3': 2, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'maxValue'},
+    {
+      '1': 'min_value',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'minValue'
+    },
+    {
+      '1': 'max_value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'maxValue'
+    },
   ],
 };
 
@@ -142,11 +235,30 @@ final $typed_data.Uint8List dateLimitsDescriptor = $convert.base64Decode(
 const SelectionLimits$json = {
   '1': 'SelectionLimits',
   '2': [
-    {'1': 'list_limits', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.ListLimits', '10': 'listLimits'},
+    {
+      '1': 'list_limits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.ListLimits',
+      '10': 'listLimits'
+    },
     {'1': 'max_id_length', '3': 2, '4': 1, '5': 5, '10': 'maxIdLength'},
-    {'1': 'max_display_name_length', '3': 3, '4': 1, '5': 5, '10': 'maxDisplayNameLength'},
+    {
+      '1': 'max_display_name_length',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'maxDisplayNameLength'
+    },
     {'1': 'max_choices', '3': 4, '4': 1, '5': 5, '10': 'maxChoices'},
-    {'1': 'max_deleted_choices', '3': 5, '4': 1, '5': 5, '10': 'maxDeletedChoices'},
+    {
+      '1': 'max_deleted_choices',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'maxDeletedChoices'
+    },
   ],
 };
 
@@ -162,7 +274,14 @@ final $typed_data.Uint8List selectionLimitsDescriptor = $convert.base64Decode(
 const UserLimits$json = {
   '1': 'UserLimits',
   '2': [
-    {'1': 'list_limits', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.ListLimits', '10': 'listLimits'},
+    {
+      '1': 'list_limits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.ListLimits',
+      '10': 'listLimits'
+    },
   ],
 };
 
@@ -170,4 +289,3 @@ const UserLimits$json = {
 final $typed_data.Uint8List userLimitsDescriptor = $convert.base64Decode(
     'CgpVc2VyTGltaXRzEkwKC2xpc3RfbGltaXRzGAEgASgLMisuZ29vZ2xlLmFwcHMuZHJpdmUubG'
     'FiZWxzLnYyYmV0YS5MaXN0TGltaXRzUgpsaXN0TGltaXRz');
-

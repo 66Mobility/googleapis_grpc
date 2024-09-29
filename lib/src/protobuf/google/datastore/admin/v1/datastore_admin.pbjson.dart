@@ -35,11 +35,46 @@ final $typed_data.Uint8List operationTypeDescriptor = $convert.base64Decode(
 const CommonMetadata$json = {
   '1': 'CommonMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'operation_type', '3': 3, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.OperationType', '10': 'operationType'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.datastore.admin.v1.CommonMetadata.LabelsEntry', '10': 'labels'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.CommonMetadata.State', '10': 'state'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'operation_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.OperationType',
+      '10': 'operationType'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.CommonMetadata.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.CommonMetadata.State',
+      '10': 'state'
+    },
   ],
   '3': [CommonMetadata_LabelsEntry$json],
   '4': [CommonMetadata_State$json],
@@ -103,9 +138,30 @@ const ExportEntitiesRequest$json = {
   '1': 'ExportEntitiesRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.datastore.admin.v1.ExportEntitiesRequest.LabelsEntry', '10': 'labels'},
-    {'1': 'entity_filter', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.EntityFilter', '10': 'entityFilter'},
-    {'1': 'output_url_prefix', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'outputUrlPrefix'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.ExportEntitiesRequest.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'entity_filter',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.EntityFilter',
+      '10': 'entityFilter'
+    },
+    {
+      '1': 'output_url_prefix',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'outputUrlPrefix'
+    },
   ],
   '3': [ExportEntitiesRequest_LabelsEntry$json],
 };
@@ -134,9 +190,23 @@ const ImportEntitiesRequest$json = {
   '1': 'ImportEntitiesRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'projectId'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.datastore.admin.v1.ImportEntitiesRequest.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.ImportEntitiesRequest.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'input_url', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'inputUrl'},
-    {'1': 'entity_filter', '3': 4, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.EntityFilter', '10': 'entityFilter'},
+    {
+      '1': 'entity_filter',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.EntityFilter',
+      '10': 'entityFilter'
+    },
   ],
   '3': [ImportEntitiesRequest_LabelsEntry$json],
 };
@@ -169,18 +239,47 @@ const ExportEntitiesResponse$json = {
 };
 
 /// Descriptor for `ExportEntitiesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List exportEntitiesResponseDescriptor = $convert.base64Decode(
-    'ChZFeHBvcnRFbnRpdGllc1Jlc3BvbnNlEh0KCm91dHB1dF91cmwYASABKAlSCW91dHB1dFVybA'
-    '==');
+final $typed_data.Uint8List exportEntitiesResponseDescriptor =
+    $convert.base64Decode(
+        'ChZFeHBvcnRFbnRpdGllc1Jlc3BvbnNlEh0KCm91dHB1dF91cmwYASABKAlSCW91dHB1dFVybA'
+        '==');
 
 @$core.Deprecated('Use exportEntitiesMetadataDescriptor instead')
 const ExportEntitiesMetadata$json = {
   '1': 'ExportEntitiesMetadata',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.CommonMetadata', '10': 'common'},
-    {'1': 'progress_entities', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.Progress', '10': 'progressEntities'},
-    {'1': 'progress_bytes', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.Progress', '10': 'progressBytes'},
-    {'1': 'entity_filter', '3': 4, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.EntityFilter', '10': 'entityFilter'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.CommonMetadata',
+      '10': 'common'
+    },
+    {
+      '1': 'progress_entities',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.Progress',
+      '10': 'progressEntities'
+    },
+    {
+      '1': 'progress_bytes',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.Progress',
+      '10': 'progressBytes'
+    },
+    {
+      '1': 'entity_filter',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.EntityFilter',
+      '10': 'entityFilter'
+    },
     {'1': 'output_url_prefix', '3': 5, '4': 1, '5': 9, '10': 'outputUrlPrefix'},
   ],
 };
@@ -199,10 +298,38 @@ final $typed_data.Uint8List exportEntitiesMetadataDescriptor = $convert.base64De
 const ImportEntitiesMetadata$json = {
   '1': 'ImportEntitiesMetadata',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.CommonMetadata', '10': 'common'},
-    {'1': 'progress_entities', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.Progress', '10': 'progressEntities'},
-    {'1': 'progress_bytes', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.Progress', '10': 'progressBytes'},
-    {'1': 'entity_filter', '3': 4, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.EntityFilter', '10': 'entityFilter'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.CommonMetadata',
+      '10': 'common'
+    },
+    {
+      '1': 'progress_entities',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.Progress',
+      '10': 'progressEntities'
+    },
+    {
+      '1': 'progress_bytes',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.Progress',
+      '10': 'progressBytes'
+    },
+    {
+      '1': 'entity_filter',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.EntityFilter',
+      '10': 'entityFilter'
+    },
     {'1': 'input_url', '3': 5, '4': 1, '5': 9, '10': 'inputUrl'},
   ],
 };
@@ -236,7 +363,14 @@ const CreateIndexRequest$json = {
   '1': 'CreateIndexRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'index', '3': 3, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.Index', '10': 'index'},
+    {
+      '1': 'index',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.Index',
+      '10': 'index'
+    },
   ],
 };
 
@@ -294,7 +428,14 @@ final $typed_data.Uint8List listIndexesRequestDescriptor = $convert.base64Decode
 const ListIndexesResponse$json = {
   '1': 'ListIndexesResponse',
   '2': [
-    {'1': 'indexes', '3': 1, '4': 3, '5': 11, '6': '.google.datastore.admin.v1.Index', '10': 'indexes'},
+    {
+      '1': 'indexes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.Index',
+      '10': 'indexes'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -309,8 +450,22 @@ final $typed_data.Uint8List listIndexesResponseDescriptor = $convert.base64Decod
 const IndexOperationMetadata$json = {
   '1': 'IndexOperationMetadata',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.CommonMetadata', '10': 'common'},
-    {'1': 'progress_entities', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.admin.v1.Progress', '10': 'progressEntities'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.CommonMetadata',
+      '10': 'common'
+    },
+    {
+      '1': 'progress_entities',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.admin.v1.Progress',
+      '10': 'progressEntities'
+    },
     {'1': 'index_id', '3': 3, '4': 1, '5': 9, '10': 'indexId'},
   ],
 };
@@ -326,15 +481,29 @@ final $typed_data.Uint8List indexOperationMetadataDescriptor = $convert.base64De
 const DatastoreFirestoreMigrationMetadata$json = {
   '1': 'DatastoreFirestoreMigrationMetadata',
   '2': [
-    {'1': 'migration_state', '3': 1, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.MigrationState', '10': 'migrationState'},
-    {'1': 'migration_step', '3': 2, '4': 1, '5': 14, '6': '.google.datastore.admin.v1.MigrationStep', '10': 'migrationStep'},
+    {
+      '1': 'migration_state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.MigrationState',
+      '10': 'migrationState'
+    },
+    {
+      '1': 'migration_step',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.admin.v1.MigrationStep',
+      '10': 'migrationStep'
+    },
   ],
 };
 
 /// Descriptor for `DatastoreFirestoreMigrationMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List datastoreFirestoreMigrationMetadataDescriptor = $convert.base64Decode(
-    'CiNEYXRhc3RvcmVGaXJlc3RvcmVNaWdyYXRpb25NZXRhZGF0YRJSCg9taWdyYXRpb25fc3RhdG'
-    'UYASABKA4yKS5nb29nbGUuZGF0YXN0b3JlLmFkbWluLnYxLk1pZ3JhdGlvblN0YXRlUg5taWdy'
-    'YXRpb25TdGF0ZRJPCg5taWdyYXRpb25fc3RlcBgCIAEoDjIoLmdvb2dsZS5kYXRhc3RvcmUuYW'
-    'RtaW4udjEuTWlncmF0aW9uU3RlcFINbWlncmF0aW9uU3RlcA==');
-
+final $typed_data.Uint8List datastoreFirestoreMigrationMetadataDescriptor =
+    $convert.base64Decode(
+        'CiNEYXRhc3RvcmVGaXJlc3RvcmVNaWdyYXRpb25NZXRhZGF0YRJSCg9taWdyYXRpb25fc3RhdG'
+        'UYASABKA4yKS5nb29nbGUuZGF0YXN0b3JlLmFkbWluLnYxLk1pZ3JhdGlvblN0YXRlUg5taWdy'
+        'YXRpb25TdGF0ZRJPCg5taWdyYXRpb25fc3RlcBgCIAEoDjIoLmdvb2dsZS5kYXRhc3RvcmUuYW'
+        'RtaW4udjEuTWlncmF0aW9uU3RlcFINbWlncmF0aW9uU3RlcA==');

@@ -51,7 +51,15 @@ final $typed_data.Uint8List shelfDescriptor = $convert.base64Decode(
 const CreateShelfRequest$json = {
   '1': 'CreateShelfRequest',
   '2': [
-    {'1': 'shelf', '3': 1, '4': 1, '5': 11, '6': '.google.example.library.v1.Shelf', '8': {}, '10': 'shelf'},
+    {
+      '1': 'shelf',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.example.library.v1.Shelf',
+      '8': {},
+      '10': 'shelf'
+    },
   ],
 };
 
@@ -91,7 +99,14 @@ final $typed_data.Uint8List listShelvesRequestDescriptor = $convert.base64Decode
 const ListShelvesResponse$json = {
   '1': 'ListShelvesResponse',
   '2': [
-    {'1': 'shelves', '3': 1, '4': 3, '5': 11, '6': '.google.example.library.v1.Shelf', '10': 'shelves'},
+    {
+      '1': 'shelves',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.example.library.v1.Shelf',
+      '10': 'shelves'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -136,7 +151,15 @@ const CreateBookRequest$json = {
   '1': 'CreateBookRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'book', '3': 2, '4': 1, '5': 11, '6': '.google.example.library.v1.Book', '8': {}, '10': 'book'},
+    {
+      '1': 'book',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.example.library.v1.Book',
+      '8': {},
+      '10': 'book'
+    },
   ],
 };
 
@@ -179,7 +202,14 @@ final $typed_data.Uint8List listBooksRequestDescriptor = $convert.base64Decode(
 const ListBooksResponse$json = {
   '1': 'ListBooksResponse',
   '2': [
-    {'1': 'books', '3': 1, '4': 3, '5': 11, '6': '.google.example.library.v1.Book', '10': 'books'},
+    {
+      '1': 'books',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.example.library.v1.Book',
+      '10': 'books'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -194,8 +224,24 @@ final $typed_data.Uint8List listBooksResponseDescriptor = $convert.base64Decode(
 const UpdateBookRequest$json = {
   '1': 'UpdateBookRequest',
   '2': [
-    {'1': 'book', '3': 1, '4': 1, '5': 11, '6': '.google.example.library.v1.Book', '8': {}, '10': 'book'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'book',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.example.library.v1.Book',
+      '8': {},
+      '10': 'book'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -223,7 +269,14 @@ const MoveBookRequest$json = {
   '1': 'MoveBookRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'other_shelf_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'otherShelfName'},
+    {
+      '1': 'other_shelf_name',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'otherShelfName'
+    },
   ],
 };
 
@@ -233,4 +286,3 @@ final $typed_data.Uint8List moveBookRequestDescriptor = $convert.base64Decode(
     'UuZ29vZ2xlYXBpcy5jb20vQm9va1IEbmFtZRJWChBvdGhlcl9zaGVsZl9uYW1lGAIgASgJQizg'
     'QQL6QSYKJGxpYnJhcnktZXhhbXBsZS5nb29nbGVhcGlzLmNvbS9TaGVsZlIOb3RoZXJTaGVsZk'
     '5hbWU=');
-

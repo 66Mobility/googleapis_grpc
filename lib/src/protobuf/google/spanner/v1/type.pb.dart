@@ -46,28 +46,43 @@ class Type extends $pb.GeneratedMessage {
     return $result;
   }
   Type._() : super();
-  factory Type.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Type.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Type.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Type.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Type', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..e<TypeCode>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: TypeCode.TYPE_CODE_UNSPECIFIED, valueOf: TypeCode.valueOf, enumValues: TypeCode.values)
-    ..aOM<Type>(2, _omitFieldNames ? '' : 'arrayElementType', subBuilder: Type.create)
-    ..aOM<StructType>(3, _omitFieldNames ? '' : 'structType', subBuilder: StructType.create)
-    ..e<TypeAnnotationCode>(4, _omitFieldNames ? '' : 'typeAnnotation', $pb.PbFieldType.OE, defaultOrMaker: TypeAnnotationCode.TYPE_ANNOTATION_CODE_UNSPECIFIED, valueOf: TypeAnnotationCode.valueOf, enumValues: TypeAnnotationCode.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Type',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..e<TypeCode>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
+        defaultOrMaker: TypeCode.TYPE_CODE_UNSPECIFIED,
+        valueOf: TypeCode.valueOf,
+        enumValues: TypeCode.values)
+    ..aOM<Type>(2, _omitFieldNames ? '' : 'arrayElementType',
+        subBuilder: Type.create)
+    ..aOM<StructType>(3, _omitFieldNames ? '' : 'structType',
+        subBuilder: StructType.create)
+    ..e<TypeAnnotationCode>(
+        4, _omitFieldNames ? '' : 'typeAnnotation', $pb.PbFieldType.OE,
+        defaultOrMaker: TypeAnnotationCode.TYPE_ANNOTATION_CODE_UNSPECIFIED,
+        valueOf: TypeAnnotationCode.valueOf,
+        enumValues: TypeAnnotationCode.values)
     ..aOS(5, _omitFieldNames ? '' : 'protoTypeFqn')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Type clone() => Type()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Type copyWith(void Function(Type) updates) => super.copyWith((message) => updates(message as Type)) as Type;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Type copyWith(void Function(Type) updates) =>
+      super.copyWith((message) => updates(message as Type)) as Type;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -76,14 +91,18 @@ class Type extends $pb.GeneratedMessage {
   Type createEmptyInstance() => create();
   static $pb.PbList<Type> createRepeated() => $pb.PbList<Type>();
   @$core.pragma('dart2js:noInline')
-  static Type getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Type>(create);
+  static Type getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Type>(create);
   static Type? _defaultInstance;
 
   /// Required. The [TypeCode][google.spanner.v1.TypeCode] for this type.
   @$pb.TagNumber(1)
   TypeCode get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(TypeCode v) { setField(1, v); }
+  set code(TypeCode v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -94,7 +113,10 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Type get arrayElementType => $_getN(1);
   @$pb.TagNumber(2)
-  set arrayElementType(Type v) { setField(2, v); }
+  set arrayElementType(Type v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasArrayElementType() => $_has(1);
   @$pb.TagNumber(2)
@@ -107,7 +129,10 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   StructType get structType => $_getN(2);
   @$pb.TagNumber(3)
-  set structType(StructType v) { setField(3, v); }
+  set structType(StructType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStructType() => $_has(2);
   @$pb.TagNumber(3)
@@ -124,7 +149,10 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TypeAnnotationCode get typeAnnotation => $_getN(3);
   @$pb.TagNumber(4)
-  set typeAnnotation(TypeAnnotationCode v) { setField(4, v); }
+  set typeAnnotation(TypeAnnotationCode v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTypeAnnotation() => $_has(3);
   @$pb.TagNumber(4)
@@ -138,7 +166,10 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get protoTypeFqn => $_getSZ(4);
   @$pb.TagNumber(5)
-  set protoTypeFqn($core.String v) { $_setString(4, v); }
+  set protoTypeFqn($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasProtoTypeFqn() => $_has(4);
   @$pb.TagNumber(5)
@@ -161,34 +192,43 @@ class StructType_Field extends $pb.GeneratedMessage {
     return $result;
   }
   StructType_Field._() : super();
-  factory StructType_Field.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructType_Field.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructType_Field.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructType_Field.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructType.Field', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructType.Field',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Type>(2, _omitFieldNames ? '' : 'type', subBuilder: Type.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StructType_Field clone() => StructType_Field()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructType_Field copyWith(void Function(StructType_Field) updates) => super.copyWith((message) => updates(message as StructType_Field)) as StructType_Field;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructType_Field copyWith(void Function(StructType_Field) updates) =>
+      super.copyWith((message) => updates(message as StructType_Field))
+          as StructType_Field;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StructType_Field create() => StructType_Field._();
   StructType_Field createEmptyInstance() => create();
-  static $pb.PbList<StructType_Field> createRepeated() => $pb.PbList<StructType_Field>();
+  static $pb.PbList<StructType_Field> createRepeated() =>
+      $pb.PbList<StructType_Field>();
   @$core.pragma('dart2js:noInline')
-  static StructType_Field getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructType_Field>(create);
+  static StructType_Field getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructType_Field>(create);
   static StructType_Field? _defaultInstance;
 
   /// The name of the field. For reads, this is the column name. For
@@ -201,7 +241,10 @@ class StructType_Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -211,7 +254,10 @@ class StructType_Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(Type v) { setField(2, v); }
+  set type(Type v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -232,24 +278,32 @@ class StructType extends $pb.GeneratedMessage {
     return $result;
   }
   StructType._() : super();
-  factory StructType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructType.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructType.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..pc<StructType_Field>(1, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: StructType_Field.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructType',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..pc<StructType_Field>(
+        1, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM,
+        subBuilder: StructType_Field.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StructType clone() => StructType()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructType copyWith(void Function(StructType) updates) => super.copyWith((message) => updates(message as StructType)) as StructType;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructType copyWith(void Function(StructType) updates) =>
+      super.copyWith((message) => updates(message as StructType)) as StructType;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -258,7 +312,8 @@ class StructType extends $pb.GeneratedMessage {
   StructType createEmptyInstance() => create();
   static $pb.PbList<StructType> createRepeated() => $pb.PbList<StructType>();
   @$core.pragma('dart2js:noInline')
-  static StructType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructType>(create);
+  static StructType getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructType>(create);
   static StructType? _defaultInstance;
 
   /// The list of fields that make up this struct. Order is
@@ -271,6 +326,6 @@ class StructType extends $pb.GeneratedMessage {
   $core.List<StructType_Field> get fields => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

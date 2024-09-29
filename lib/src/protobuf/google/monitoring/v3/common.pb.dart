@@ -22,11 +22,11 @@ import 'common.pbenum.dart';
 export 'common.pbenum.dart';
 
 enum TypedValue_Value {
-  boolValue, 
-  int64Value, 
-  doubleValue, 
-  stringValue, 
-  distributionValue, 
+  boolValue,
+  int64Value,
+  doubleValue,
+  stringValue,
+  distributionValue,
   notSet
 }
 
@@ -58,37 +58,45 @@ class TypedValue extends $pb.GeneratedMessage {
     return $result;
   }
   TypedValue._() : super();
-  factory TypedValue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TypedValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TypedValue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TypedValue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, TypedValue_Value> _TypedValue_ValueByTag = {
-    1 : TypedValue_Value.boolValue,
-    2 : TypedValue_Value.int64Value,
-    3 : TypedValue_Value.doubleValue,
-    4 : TypedValue_Value.stringValue,
-    5 : TypedValue_Value.distributionValue,
-    0 : TypedValue_Value.notSet
+    1: TypedValue_Value.boolValue,
+    2: TypedValue_Value.int64Value,
+    3: TypedValue_Value.doubleValue,
+    4: TypedValue_Value.stringValue,
+    5: TypedValue_Value.distributionValue,
+    0: TypedValue_Value.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TypedValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TypedValue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
     ..aOB(1, _omitFieldNames ? '' : 'boolValue')
     ..aInt64(2, _omitFieldNames ? '' : 'int64Value')
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aOS(4, _omitFieldNames ? '' : 'stringValue')
-    ..aOM<$367.Distribution>(5, _omitFieldNames ? '' : 'distributionValue', subBuilder: $367.Distribution.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$367.Distribution>(5, _omitFieldNames ? '' : 'distributionValue',
+        subBuilder: $367.Distribution.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TypedValue clone() => TypedValue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TypedValue copyWith(void Function(TypedValue) updates) => super.copyWith((message) => updates(message as TypedValue)) as TypedValue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TypedValue copyWith(void Function(TypedValue) updates) =>
+      super.copyWith((message) => updates(message as TypedValue)) as TypedValue;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -97,7 +105,8 @@ class TypedValue extends $pb.GeneratedMessage {
   TypedValue createEmptyInstance() => create();
   static $pb.PbList<TypedValue> createRepeated() => $pb.PbList<TypedValue>();
   @$core.pragma('dart2js:noInline')
-  static TypedValue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TypedValue>(create);
+  static TypedValue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TypedValue>(create);
   static TypedValue? _defaultInstance;
 
   TypedValue_Value whichValue() => _TypedValue_ValueByTag[$_whichOneof(0)]!;
@@ -107,7 +116,10 @@ class TypedValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get boolValue => $_getBF(0);
   @$pb.TagNumber(1)
-  set boolValue($core.bool v) { $_setBool(0, v); }
+  set boolValue($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBoolValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -117,7 +129,10 @@ class TypedValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get int64Value => $_getI64(1);
   @$pb.TagNumber(2)
-  set int64Value($fixnum.Int64 v) { $_setInt64(1, v); }
+  set int64Value($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInt64Value() => $_has(1);
   @$pb.TagNumber(2)
@@ -129,7 +144,10 @@ class TypedValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get doubleValue => $_getN(2);
   @$pb.TagNumber(3)
-  set doubleValue($core.double v) { $_setDouble(2, v); }
+  set doubleValue($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDoubleValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -139,7 +157,10 @@ class TypedValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get stringValue => $_getSZ(3);
   @$pb.TagNumber(4)
-  set stringValue($core.String v) { $_setString(3, v); }
+  set stringValue($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStringValue() => $_has(3);
   @$pb.TagNumber(4)
@@ -149,7 +170,10 @@ class TypedValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $367.Distribution get distributionValue => $_getN(4);
   @$pb.TagNumber(5)
-  set distributionValue($367.Distribution v) { setField(5, v); }
+  set distributionValue($367.Distribution v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDistributionValue() => $_has(4);
   @$pb.TagNumber(5)
@@ -211,34 +235,45 @@ class TimeInterval extends $pb.GeneratedMessage {
     return $result;
   }
   TimeInterval._() : super();
-  factory TimeInterval.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TimeInterval.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TimeInterval.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TimeInterval.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeInterval', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimeInterval',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TimeInterval clone() => TimeInterval()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TimeInterval copyWith(void Function(TimeInterval) updates) => super.copyWith((message) => updates(message as TimeInterval)) as TimeInterval;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TimeInterval copyWith(void Function(TimeInterval) updates) =>
+      super.copyWith((message) => updates(message as TimeInterval))
+          as TimeInterval;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TimeInterval create() => TimeInterval._();
   TimeInterval createEmptyInstance() => create();
-  static $pb.PbList<TimeInterval> createRepeated() => $pb.PbList<TimeInterval>();
+  static $pb.PbList<TimeInterval> createRepeated() =>
+      $pb.PbList<TimeInterval>();
   @$core.pragma('dart2js:noInline')
-  static TimeInterval getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeInterval>(create);
+  static TimeInterval getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TimeInterval>(create);
   static TimeInterval? _defaultInstance;
 
   /// Optional. The beginning of the time interval.  The default value
@@ -247,7 +282,10 @@ class TimeInterval extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -259,7 +297,10 @@ class TimeInterval extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -317,27 +358,43 @@ class Aggregation extends $pb.GeneratedMessage {
     return $result;
   }
   Aggregation._() : super();
-  factory Aggregation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Aggregation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Aggregation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Aggregation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Aggregation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod', subBuilder: $264.Duration.create)
-    ..e<Aggregation_Aligner>(2, _omitFieldNames ? '' : 'perSeriesAligner', $pb.PbFieldType.OE, defaultOrMaker: Aggregation_Aligner.ALIGN_NONE, valueOf: Aggregation_Aligner.valueOf, enumValues: Aggregation_Aligner.values)
-    ..e<Aggregation_Reducer>(4, _omitFieldNames ? '' : 'crossSeriesReducer', $pb.PbFieldType.OE, defaultOrMaker: Aggregation_Reducer.REDUCE_NONE, valueOf: Aggregation_Reducer.valueOf, enumValues: Aggregation_Reducer.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Aggregation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod',
+        subBuilder: $264.Duration.create)
+    ..e<Aggregation_Aligner>(
+        2, _omitFieldNames ? '' : 'perSeriesAligner', $pb.PbFieldType.OE,
+        defaultOrMaker: Aggregation_Aligner.ALIGN_NONE,
+        valueOf: Aggregation_Aligner.valueOf,
+        enumValues: Aggregation_Aligner.values)
+    ..e<Aggregation_Reducer>(
+        4, _omitFieldNames ? '' : 'crossSeriesReducer', $pb.PbFieldType.OE,
+        defaultOrMaker: Aggregation_Reducer.REDUCE_NONE,
+        valueOf: Aggregation_Reducer.valueOf,
+        enumValues: Aggregation_Reducer.values)
     ..pPS(5, _omitFieldNames ? '' : 'groupByFields')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Aggregation clone() => Aggregation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Aggregation copyWith(void Function(Aggregation) updates) => super.copyWith((message) => updates(message as Aggregation)) as Aggregation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Aggregation copyWith(void Function(Aggregation) updates) =>
+      super.copyWith((message) => updates(message as Aggregation))
+          as Aggregation;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -346,7 +403,8 @@ class Aggregation extends $pb.GeneratedMessage {
   Aggregation createEmptyInstance() => create();
   static $pb.PbList<Aggregation> createRepeated() => $pb.PbList<Aggregation>();
   @$core.pragma('dart2js:noInline')
-  static Aggregation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Aggregation>(create);
+  static Aggregation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Aggregation>(create);
   static Aggregation? _defaultInstance;
 
   ///  The `alignment_period` specifies a time interval, in seconds, that is used
@@ -365,7 +423,10 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get alignmentPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set alignmentPeriod($264.Duration v) { setField(1, v); }
+  set alignmentPeriod($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAlignmentPeriod() => $_has(0);
   @$pb.TagNumber(1)
@@ -392,7 +453,10 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Aggregation_Aligner get perSeriesAligner => $_getN(1);
   @$pb.TagNumber(2)
-  set perSeriesAligner(Aggregation_Aligner v) { setField(2, v); }
+  set perSeriesAligner(Aggregation_Aligner v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPerSeriesAligner() => $_has(1);
   @$pb.TagNumber(2)
@@ -415,7 +479,10 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Aggregation_Reducer get crossSeriesReducer => $_getN(2);
   @$pb.TagNumber(4)
-  set crossSeriesReducer(Aggregation_Reducer v) { setField(4, v); }
+  set crossSeriesReducer(Aggregation_Reducer v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCrossSeriesReducer() => $_has(2);
   @$pb.TagNumber(4)
@@ -439,6 +506,6 @@ class Aggregation extends $pb.GeneratedMessage {
   $core.List<$core.String> get groupByFields => $_getList(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

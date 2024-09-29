@@ -17,9 +17,34 @@ import 'dart:typed_data' as $typed_data;
 const TimeSeriesTable$json = {
   '1': 'TimeSeriesTable',
   '2': [
-    {'1': 'data_sets', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesTable.TableDataSet', '8': {}, '10': 'dataSets'},
-    {'1': 'metric_visualization', '3': 2, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.TimeSeriesTable.MetricVisualization', '8': {}, '10': 'metricVisualization'},
-    {'1': 'column_settings', '3': 4, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesTable.ColumnSettings', '8': {}, '10': 'columnSettings'},
+    {
+      '1': 'data_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesTable.TableDataSet',
+      '8': {},
+      '10': 'dataSets'
+    },
+    {
+      '1': 'metric_visualization',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.monitoring.dashboard.v1.TimeSeriesTable.MetricVisualization',
+      '8': {},
+      '10': 'metricVisualization'
+    },
+    {
+      '1': 'column_settings',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesTable.ColumnSettings',
+      '8': {},
+      '10': 'columnSettings'
+    },
   ],
   '3': [TimeSeriesTable_TableDataSet$json, TimeSeriesTable_ColumnSettings$json],
   '4': [TimeSeriesTable_MetricVisualization$json],
@@ -29,10 +54,41 @@ const TimeSeriesTable$json = {
 const TimeSeriesTable_TableDataSet$json = {
   '1': 'TableDataSet',
   '2': [
-    {'1': 'time_series_query', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery', '8': {}, '10': 'timeSeriesQuery'},
-    {'1': 'table_template', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'tableTemplate'},
-    {'1': 'min_alignment_period', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'minAlignmentPeriod'},
-    {'1': 'table_display_options', '3': 4, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TableDisplayOptions', '8': {}, '10': 'tableDisplayOptions'},
+    {
+      '1': 'time_series_query',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery',
+      '8': {},
+      '10': 'timeSeriesQuery'
+    },
+    {
+      '1': 'table_template',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'tableTemplate'
+    },
+    {
+      '1': 'min_alignment_period',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'minAlignmentPeriod'
+    },
+    {
+      '1': 'table_display_options',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TableDisplayOptions',
+      '8': {},
+      '10': 'tableDisplayOptions'
+    },
   ],
 };
 
@@ -73,4 +129,3 @@ final $typed_data.Uint8List timeSeriesTableDescriptor = $convert.base64Decode(
     'NvbHVtbhgBIAEoCUID4EECUgZjb2x1bW4SHQoHdmlzaWJsZRgCIAEoCEID4EECUgd2aXNpYmxl'
     'IlAKE01ldHJpY1Zpc3VhbGl6YXRpb24SJAogTUVUUklDX1ZJU1VBTElaQVRJT05fVU5TUEVDSU'
     'ZJRUQQABIKCgZOVU1CRVIQARIHCgNCQVIQAg==');
-

@@ -18,7 +18,13 @@ const RegionMatch$json = {
   '1': 'RegionMatch',
   '2': [
     {'1': 'matched_place_id', '3': 1, '4': 1, '5': 9, '10': 'matchedPlaceId'},
-    {'1': 'candidate_place_ids', '3': 2, '4': 3, '5': 9, '10': 'candidatePlaceIds'},
+    {
+      '1': 'candidate_place_ids',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'candidatePlaceIds'
+    },
     {'1': 'debug_info', '3': 3, '4': 1, '5': 9, '10': 'debugInfo'},
   ],
 };
@@ -28,4 +34,3 @@ final $typed_data.Uint8List regionMatchDescriptor = $convert.base64Decode(
     'CgtSZWdpb25NYXRjaBIoChBtYXRjaGVkX3BsYWNlX2lkGAEgASgJUg5tYXRjaGVkUGxhY2VJZB'
     'IuChNjYW5kaWRhdGVfcGxhY2VfaWRzGAIgAygJUhFjYW5kaWRhdGVQbGFjZUlkcxIdCgpkZWJ1'
     'Z19pbmZvGAMgASgJUglkZWJ1Z0luZm8=');
-

@@ -39,69 +39,492 @@ const Place$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'display_name', '3': 31, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'displayName'},
+    {
+      '1': 'display_name',
+      '3': 31,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'displayName'
+    },
     {'1': 'types', '3': 5, '4': 3, '5': 9, '10': 'types'},
     {'1': 'primary_type', '3': 50, '4': 1, '5': 9, '10': 'primaryType'},
-    {'1': 'primary_type_display_name', '3': 32, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'primaryTypeDisplayName'},
-    {'1': 'national_phone_number', '3': 7, '4': 1, '5': 9, '10': 'nationalPhoneNumber'},
-    {'1': 'international_phone_number', '3': 8, '4': 1, '5': 9, '10': 'internationalPhoneNumber'},
-    {'1': 'formatted_address', '3': 9, '4': 1, '5': 9, '10': 'formattedAddress'},
-    {'1': 'short_formatted_address', '3': 51, '4': 1, '5': 9, '10': 'shortFormattedAddress'},
-    {'1': 'address_components', '3': 10, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place.AddressComponent', '10': 'addressComponents'},
-    {'1': 'plus_code', '3': 11, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.PlusCode', '10': 'plusCode'},
-    {'1': 'location', '3': 12, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'location'},
-    {'1': 'viewport', '3': 13, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '10': 'viewport'},
+    {
+      '1': 'primary_type_display_name',
+      '3': 32,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'primaryTypeDisplayName'
+    },
+    {
+      '1': 'national_phone_number',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'nationalPhoneNumber'
+    },
+    {
+      '1': 'international_phone_number',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'internationalPhoneNumber'
+    },
+    {
+      '1': 'formatted_address',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '10': 'formattedAddress'
+    },
+    {
+      '1': 'short_formatted_address',
+      '3': 51,
+      '4': 1,
+      '5': 9,
+      '10': 'shortFormattedAddress'
+    },
+    {
+      '1': 'address_components',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.AddressComponent',
+      '10': 'addressComponents'
+    },
+    {
+      '1': 'plus_code',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.PlusCode',
+      '10': 'plusCode'
+    },
+    {
+      '1': 'location',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'location'
+    },
+    {
+      '1': 'viewport',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '10': 'viewport'
+    },
     {'1': 'rating', '3': 14, '4': 1, '5': 1, '10': 'rating'},
     {'1': 'google_maps_uri', '3': 15, '4': 1, '5': 9, '10': 'googleMapsUri'},
     {'1': 'website_uri', '3': 16, '4': 1, '5': 9, '10': 'websiteUri'},
-    {'1': 'reviews', '3': 53, '4': 3, '5': 11, '6': '.google.maps.places.v1.Review', '10': 'reviews'},
-    {'1': 'regular_opening_hours', '3': 21, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours', '10': 'regularOpeningHours'},
-    {'1': 'utc_offset_minutes', '3': 22, '4': 1, '5': 5, '9': 0, '10': 'utcOffsetMinutes', '17': true},
-    {'1': 'photos', '3': 54, '4': 3, '5': 11, '6': '.google.maps.places.v1.Photo', '10': 'photos'},
-    {'1': 'adr_format_address', '3': 24, '4': 1, '5': 9, '10': 'adrFormatAddress'},
-    {'1': 'business_status', '3': 25, '4': 1, '5': 14, '6': '.google.maps.places.v1.Place.BusinessStatus', '10': 'businessStatus'},
-    {'1': 'price_level', '3': 26, '4': 1, '5': 14, '6': '.google.maps.places.v1.PriceLevel', '10': 'priceLevel'},
-    {'1': 'attributions', '3': 27, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place.Attribution', '10': 'attributions'},
-    {'1': 'user_rating_count', '3': 28, '4': 1, '5': 5, '9': 1, '10': 'userRatingCount', '17': true},
-    {'1': 'icon_mask_base_uri', '3': 29, '4': 1, '5': 9, '10': 'iconMaskBaseUri'},
-    {'1': 'icon_background_color', '3': 30, '4': 1, '5': 9, '10': 'iconBackgroundColor'},
-    {'1': 'takeout', '3': 33, '4': 1, '5': 8, '9': 2, '10': 'takeout', '17': true},
-    {'1': 'delivery', '3': 34, '4': 1, '5': 8, '9': 3, '10': 'delivery', '17': true},
-    {'1': 'dine_in', '3': 35, '4': 1, '5': 8, '9': 4, '10': 'dineIn', '17': true},
-    {'1': 'curbside_pickup', '3': 36, '4': 1, '5': 8, '9': 5, '10': 'curbsidePickup', '17': true},
-    {'1': 'reservable', '3': 38, '4': 1, '5': 8, '9': 6, '10': 'reservable', '17': true},
-    {'1': 'serves_breakfast', '3': 39, '4': 1, '5': 8, '9': 7, '10': 'servesBreakfast', '17': true},
-    {'1': 'serves_lunch', '3': 40, '4': 1, '5': 8, '9': 8, '10': 'servesLunch', '17': true},
-    {'1': 'serves_dinner', '3': 41, '4': 1, '5': 8, '9': 9, '10': 'servesDinner', '17': true},
-    {'1': 'serves_beer', '3': 42, '4': 1, '5': 8, '9': 10, '10': 'servesBeer', '17': true},
-    {'1': 'serves_wine', '3': 43, '4': 1, '5': 8, '9': 11, '10': 'servesWine', '17': true},
-    {'1': 'serves_brunch', '3': 44, '4': 1, '5': 8, '9': 12, '10': 'servesBrunch', '17': true},
-    {'1': 'serves_vegetarian_food', '3': 45, '4': 1, '5': 8, '9': 13, '10': 'servesVegetarianFood', '17': true},
-    {'1': 'current_opening_hours', '3': 46, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours', '10': 'currentOpeningHours'},
-    {'1': 'current_secondary_opening_hours', '3': 47, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours', '10': 'currentSecondaryOpeningHours'},
-    {'1': 'regular_secondary_opening_hours', '3': 49, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours', '10': 'regularSecondaryOpeningHours'},
-    {'1': 'editorial_summary', '3': 52, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'editorialSummary'},
-    {'1': 'outdoor_seating', '3': 55, '4': 1, '5': 8, '9': 14, '10': 'outdoorSeating', '17': true},
-    {'1': 'live_music', '3': 56, '4': 1, '5': 8, '9': 15, '10': 'liveMusic', '17': true},
-    {'1': 'menu_for_children', '3': 57, '4': 1, '5': 8, '9': 16, '10': 'menuForChildren', '17': true},
-    {'1': 'serves_cocktails', '3': 58, '4': 1, '5': 8, '9': 17, '10': 'servesCocktails', '17': true},
-    {'1': 'serves_dessert', '3': 59, '4': 1, '5': 8, '9': 18, '10': 'servesDessert', '17': true},
-    {'1': 'serves_coffee', '3': 60, '4': 1, '5': 8, '9': 19, '10': 'servesCoffee', '17': true},
-    {'1': 'good_for_children', '3': 62, '4': 1, '5': 8, '9': 20, '10': 'goodForChildren', '17': true},
-    {'1': 'allows_dogs', '3': 63, '4': 1, '5': 8, '9': 21, '10': 'allowsDogs', '17': true},
-    {'1': 'restroom', '3': 64, '4': 1, '5': 8, '9': 22, '10': 'restroom', '17': true},
-    {'1': 'good_for_groups', '3': 65, '4': 1, '5': 8, '9': 23, '10': 'goodForGroups', '17': true},
-    {'1': 'good_for_watching_sports', '3': 66, '4': 1, '5': 8, '9': 24, '10': 'goodForWatchingSports', '17': true},
-    {'1': 'payment_options', '3': 67, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.PaymentOptions', '10': 'paymentOptions'},
-    {'1': 'parking_options', '3': 70, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.ParkingOptions', '10': 'parkingOptions'},
-    {'1': 'sub_destinations', '3': 71, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place.SubDestination', '10': 'subDestinations'},
-    {'1': 'accessibility_options', '3': 72, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.AccessibilityOptions', '9': 25, '10': 'accessibilityOptions', '17': true},
-    {'1': 'fuel_options', '3': 78, '4': 1, '5': 11, '6': '.google.maps.places.v1.FuelOptions', '10': 'fuelOptions'},
-    {'1': 'ev_charge_options', '3': 79, '4': 1, '5': 11, '6': '.google.maps.places.v1.EVChargeOptions', '10': 'evChargeOptions'},
-    {'1': 'generative_summary', '3': 80, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.GenerativeSummary', '10': 'generativeSummary'},
-    {'1': 'area_summary', '3': 81, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.AreaSummary', '10': 'areaSummary'},
+    {
+      '1': 'reviews',
+      '3': 53,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Review',
+      '10': 'reviews'
+    },
+    {
+      '1': 'regular_opening_hours',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours',
+      '10': 'regularOpeningHours'
+    },
+    {
+      '1': 'utc_offset_minutes',
+      '3': 22,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'utcOffsetMinutes',
+      '17': true
+    },
+    {
+      '1': 'photos',
+      '3': 54,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Photo',
+      '10': 'photos'
+    },
+    {
+      '1': 'adr_format_address',
+      '3': 24,
+      '4': 1,
+      '5': 9,
+      '10': 'adrFormatAddress'
+    },
+    {
+      '1': 'business_status',
+      '3': 25,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.Place.BusinessStatus',
+      '10': 'businessStatus'
+    },
+    {
+      '1': 'price_level',
+      '3': 26,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.PriceLevel',
+      '10': 'priceLevel'
+    },
+    {
+      '1': 'attributions',
+      '3': 27,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.Attribution',
+      '10': 'attributions'
+    },
+    {
+      '1': 'user_rating_count',
+      '3': 28,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'userRatingCount',
+      '17': true
+    },
+    {
+      '1': 'icon_mask_base_uri',
+      '3': 29,
+      '4': 1,
+      '5': 9,
+      '10': 'iconMaskBaseUri'
+    },
+    {
+      '1': 'icon_background_color',
+      '3': 30,
+      '4': 1,
+      '5': 9,
+      '10': 'iconBackgroundColor'
+    },
+    {
+      '1': 'takeout',
+      '3': 33,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'takeout',
+      '17': true
+    },
+    {
+      '1': 'delivery',
+      '3': 34,
+      '4': 1,
+      '5': 8,
+      '9': 3,
+      '10': 'delivery',
+      '17': true
+    },
+    {
+      '1': 'dine_in',
+      '3': 35,
+      '4': 1,
+      '5': 8,
+      '9': 4,
+      '10': 'dineIn',
+      '17': true
+    },
+    {
+      '1': 'curbside_pickup',
+      '3': 36,
+      '4': 1,
+      '5': 8,
+      '9': 5,
+      '10': 'curbsidePickup',
+      '17': true
+    },
+    {
+      '1': 'reservable',
+      '3': 38,
+      '4': 1,
+      '5': 8,
+      '9': 6,
+      '10': 'reservable',
+      '17': true
+    },
+    {
+      '1': 'serves_breakfast',
+      '3': 39,
+      '4': 1,
+      '5': 8,
+      '9': 7,
+      '10': 'servesBreakfast',
+      '17': true
+    },
+    {
+      '1': 'serves_lunch',
+      '3': 40,
+      '4': 1,
+      '5': 8,
+      '9': 8,
+      '10': 'servesLunch',
+      '17': true
+    },
+    {
+      '1': 'serves_dinner',
+      '3': 41,
+      '4': 1,
+      '5': 8,
+      '9': 9,
+      '10': 'servesDinner',
+      '17': true
+    },
+    {
+      '1': 'serves_beer',
+      '3': 42,
+      '4': 1,
+      '5': 8,
+      '9': 10,
+      '10': 'servesBeer',
+      '17': true
+    },
+    {
+      '1': 'serves_wine',
+      '3': 43,
+      '4': 1,
+      '5': 8,
+      '9': 11,
+      '10': 'servesWine',
+      '17': true
+    },
+    {
+      '1': 'serves_brunch',
+      '3': 44,
+      '4': 1,
+      '5': 8,
+      '9': 12,
+      '10': 'servesBrunch',
+      '17': true
+    },
+    {
+      '1': 'serves_vegetarian_food',
+      '3': 45,
+      '4': 1,
+      '5': 8,
+      '9': 13,
+      '10': 'servesVegetarianFood',
+      '17': true
+    },
+    {
+      '1': 'current_opening_hours',
+      '3': 46,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours',
+      '10': 'currentOpeningHours'
+    },
+    {
+      '1': 'current_secondary_opening_hours',
+      '3': 47,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours',
+      '10': 'currentSecondaryOpeningHours'
+    },
+    {
+      '1': 'regular_secondary_opening_hours',
+      '3': 49,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours',
+      '10': 'regularSecondaryOpeningHours'
+    },
+    {
+      '1': 'editorial_summary',
+      '3': 52,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'editorialSummary'
+    },
+    {
+      '1': 'outdoor_seating',
+      '3': 55,
+      '4': 1,
+      '5': 8,
+      '9': 14,
+      '10': 'outdoorSeating',
+      '17': true
+    },
+    {
+      '1': 'live_music',
+      '3': 56,
+      '4': 1,
+      '5': 8,
+      '9': 15,
+      '10': 'liveMusic',
+      '17': true
+    },
+    {
+      '1': 'menu_for_children',
+      '3': 57,
+      '4': 1,
+      '5': 8,
+      '9': 16,
+      '10': 'menuForChildren',
+      '17': true
+    },
+    {
+      '1': 'serves_cocktails',
+      '3': 58,
+      '4': 1,
+      '5': 8,
+      '9': 17,
+      '10': 'servesCocktails',
+      '17': true
+    },
+    {
+      '1': 'serves_dessert',
+      '3': 59,
+      '4': 1,
+      '5': 8,
+      '9': 18,
+      '10': 'servesDessert',
+      '17': true
+    },
+    {
+      '1': 'serves_coffee',
+      '3': 60,
+      '4': 1,
+      '5': 8,
+      '9': 19,
+      '10': 'servesCoffee',
+      '17': true
+    },
+    {
+      '1': 'good_for_children',
+      '3': 62,
+      '4': 1,
+      '5': 8,
+      '9': 20,
+      '10': 'goodForChildren',
+      '17': true
+    },
+    {
+      '1': 'allows_dogs',
+      '3': 63,
+      '4': 1,
+      '5': 8,
+      '9': 21,
+      '10': 'allowsDogs',
+      '17': true
+    },
+    {
+      '1': 'restroom',
+      '3': 64,
+      '4': 1,
+      '5': 8,
+      '9': 22,
+      '10': 'restroom',
+      '17': true
+    },
+    {
+      '1': 'good_for_groups',
+      '3': 65,
+      '4': 1,
+      '5': 8,
+      '9': 23,
+      '10': 'goodForGroups',
+      '17': true
+    },
+    {
+      '1': 'good_for_watching_sports',
+      '3': 66,
+      '4': 1,
+      '5': 8,
+      '9': 24,
+      '10': 'goodForWatchingSports',
+      '17': true
+    },
+    {
+      '1': 'payment_options',
+      '3': 67,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.PaymentOptions',
+      '10': 'paymentOptions'
+    },
+    {
+      '1': 'parking_options',
+      '3': 70,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.ParkingOptions',
+      '10': 'parkingOptions'
+    },
+    {
+      '1': 'sub_destinations',
+      '3': 71,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.SubDestination',
+      '10': 'subDestinations'
+    },
+    {
+      '1': 'accessibility_options',
+      '3': 72,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.AccessibilityOptions',
+      '9': 25,
+      '10': 'accessibilityOptions',
+      '17': true
+    },
+    {
+      '1': 'fuel_options',
+      '3': 78,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.FuelOptions',
+      '10': 'fuelOptions'
+    },
+    {
+      '1': 'ev_charge_options',
+      '3': 79,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.EVChargeOptions',
+      '10': 'evChargeOptions'
+    },
+    {
+      '1': 'generative_summary',
+      '3': 80,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.GenerativeSummary',
+      '10': 'generativeSummary'
+    },
+    {
+      '1': 'area_summary',
+      '3': 81,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.AreaSummary',
+      '10': 'areaSummary'
+    },
   ],
-  '3': [Place_AddressComponent$json, Place_PlusCode$json, Place_OpeningHours$json, Place_Attribution$json, Place_PaymentOptions$json, Place_ParkingOptions$json, Place_SubDestination$json, Place_AccessibilityOptions$json, Place_GenerativeSummary$json, Place_AreaSummary$json],
+  '3': [
+    Place_AddressComponent$json,
+    Place_PlusCode$json,
+    Place_OpeningHours$json,
+    Place_Attribution$json,
+    Place_PaymentOptions$json,
+    Place_ParkingOptions$json,
+    Place_SubDestination$json,
+    Place_AccessibilityOptions$json,
+    Place_GenerativeSummary$json,
+    Place_AreaSummary$json
+  ],
   '4': [Place_BusinessStatus$json],
   '7': {},
   '8': [
@@ -158,11 +581,46 @@ const Place_PlusCode$json = {
 const Place_OpeningHours$json = {
   '1': 'OpeningHours',
   '2': [
-    {'1': 'open_now', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'openNow', '17': true},
-    {'1': 'periods', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours.Period', '10': 'periods'},
-    {'1': 'weekday_descriptions', '3': 3, '4': 3, '5': 9, '10': 'weekdayDescriptions'},
-    {'1': 'secondary_hours_type', '3': 4, '4': 1, '5': 14, '6': '.google.maps.places.v1.Place.OpeningHours.SecondaryHoursType', '10': 'secondaryHoursType'},
-    {'1': 'special_days', '3': 5, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours.SpecialDay', '10': 'specialDays'},
+    {
+      '1': 'open_now',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'openNow',
+      '17': true
+    },
+    {
+      '1': 'periods',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours.Period',
+      '10': 'periods'
+    },
+    {
+      '1': 'weekday_descriptions',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'weekdayDescriptions'
+    },
+    {
+      '1': 'secondary_hours_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.places.v1.Place.OpeningHours.SecondaryHoursType',
+      '10': 'secondaryHoursType'
+    },
+    {
+      '1': 'special_days',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours.SpecialDay',
+      '10': 'specialDays'
+    },
   ],
   '3': [Place_OpeningHours_Period$json, Place_OpeningHours_SpecialDay$json],
   '4': [Place_OpeningHours_SecondaryHoursType$json],
@@ -175,8 +633,22 @@ const Place_OpeningHours$json = {
 const Place_OpeningHours_Period$json = {
   '1': 'Period',
   '2': [
-    {'1': 'open', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours.Period.Point', '10': 'open'},
-    {'1': 'close', '3': 2, '4': 1, '5': 11, '6': '.google.maps.places.v1.Place.OpeningHours.Period.Point', '10': 'close'},
+    {
+      '1': 'open',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours.Period.Point',
+      '10': 'open'
+    },
+    {
+      '1': 'close',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.Place.OpeningHours.Period.Point',
+      '10': 'close'
+    },
   ],
   '3': [Place_OpeningHours_Period_Point$json],
 };
@@ -188,7 +660,14 @@ const Place_OpeningHours_Period_Point$json = {
     {'1': 'day', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'day', '17': true},
     {'1': 'hour', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'hour', '17': true},
     {'1': 'minute', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'minute', '17': true},
-    {'1': 'date', '3': 6, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'date'},
+    {
+      '1': 'date',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'date'
+    },
     {'1': 'truncated', '3': 5, '4': 1, '5': 8, '10': 'truncated'},
   ],
   '8': [
@@ -202,7 +681,14 @@ const Place_OpeningHours_Period_Point$json = {
 const Place_OpeningHours_SpecialDay$json = {
   '1': 'SpecialDay',
   '2': [
-    {'1': 'date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'date'},
+    {
+      '1': 'date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'date'
+    },
   ],
 };
 
@@ -240,10 +726,42 @@ const Place_Attribution$json = {
 const Place_PaymentOptions$json = {
   '1': 'PaymentOptions',
   '2': [
-    {'1': 'accepts_credit_cards', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'acceptsCreditCards', '17': true},
-    {'1': 'accepts_debit_cards', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'acceptsDebitCards', '17': true},
-    {'1': 'accepts_cash_only', '3': 3, '4': 1, '5': 8, '9': 2, '10': 'acceptsCashOnly', '17': true},
-    {'1': 'accepts_nfc', '3': 4, '4': 1, '5': 8, '9': 3, '10': 'acceptsNfc', '17': true},
+    {
+      '1': 'accepts_credit_cards',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'acceptsCreditCards',
+      '17': true
+    },
+    {
+      '1': 'accepts_debit_cards',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'acceptsDebitCards',
+      '17': true
+    },
+    {
+      '1': 'accepts_cash_only',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'acceptsCashOnly',
+      '17': true
+    },
+    {
+      '1': 'accepts_nfc',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '9': 3,
+      '10': 'acceptsNfc',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_accepts_credit_cards'},
@@ -257,13 +775,69 @@ const Place_PaymentOptions$json = {
 const Place_ParkingOptions$json = {
   '1': 'ParkingOptions',
   '2': [
-    {'1': 'free_parking_lot', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'freeParkingLot', '17': true},
-    {'1': 'paid_parking_lot', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'paidParkingLot', '17': true},
-    {'1': 'free_street_parking', '3': 3, '4': 1, '5': 8, '9': 2, '10': 'freeStreetParking', '17': true},
-    {'1': 'paid_street_parking', '3': 4, '4': 1, '5': 8, '9': 3, '10': 'paidStreetParking', '17': true},
-    {'1': 'valet_parking', '3': 5, '4': 1, '5': 8, '9': 4, '10': 'valetParking', '17': true},
-    {'1': 'free_garage_parking', '3': 6, '4': 1, '5': 8, '9': 5, '10': 'freeGarageParking', '17': true},
-    {'1': 'paid_garage_parking', '3': 7, '4': 1, '5': 8, '9': 6, '10': 'paidGarageParking', '17': true},
+    {
+      '1': 'free_parking_lot',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'freeParkingLot',
+      '17': true
+    },
+    {
+      '1': 'paid_parking_lot',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'paidParkingLot',
+      '17': true
+    },
+    {
+      '1': 'free_street_parking',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'freeStreetParking',
+      '17': true
+    },
+    {
+      '1': 'paid_street_parking',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '9': 3,
+      '10': 'paidStreetParking',
+      '17': true
+    },
+    {
+      '1': 'valet_parking',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '9': 4,
+      '10': 'valetParking',
+      '17': true
+    },
+    {
+      '1': 'free_garage_parking',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '9': 5,
+      '10': 'freeGarageParking',
+      '17': true
+    },
+    {
+      '1': 'paid_garage_parking',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '9': 6,
+      '10': 'paidGarageParking',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_free_parking_lot'},
@@ -289,10 +863,42 @@ const Place_SubDestination$json = {
 const Place_AccessibilityOptions$json = {
   '1': 'AccessibilityOptions',
   '2': [
-    {'1': 'wheelchair_accessible_parking', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'wheelchairAccessibleParking', '17': true},
-    {'1': 'wheelchair_accessible_entrance', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'wheelchairAccessibleEntrance', '17': true},
-    {'1': 'wheelchair_accessible_restroom', '3': 3, '4': 1, '5': 8, '9': 2, '10': 'wheelchairAccessibleRestroom', '17': true},
-    {'1': 'wheelchair_accessible_seating', '3': 4, '4': 1, '5': 8, '9': 3, '10': 'wheelchairAccessibleSeating', '17': true},
+    {
+      '1': 'wheelchair_accessible_parking',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'wheelchairAccessibleParking',
+      '17': true
+    },
+    {
+      '1': 'wheelchair_accessible_entrance',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'wheelchairAccessibleEntrance',
+      '17': true
+    },
+    {
+      '1': 'wheelchair_accessible_restroom',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'wheelchairAccessibleRestroom',
+      '17': true
+    },
+    {
+      '1': 'wheelchair_accessible_seating',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '9': 3,
+      '10': 'wheelchairAccessibleSeating',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_wheelchair_accessible_parking'},
@@ -306,9 +912,30 @@ const Place_AccessibilityOptions$json = {
 const Place_GenerativeSummary$json = {
   '1': 'GenerativeSummary',
   '2': [
-    {'1': 'overview', '3': 1, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'overview'},
-    {'1': 'description', '3': 2, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'description'},
-    {'1': 'references', '3': 3, '4': 1, '5': 11, '6': '.google.maps.places.v1.References', '10': 'references'},
+    {
+      '1': 'overview',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'overview'
+    },
+    {
+      '1': 'description',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'description'
+    },
+    {
+      '1': 'references',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.places.v1.References',
+      '10': 'references'
+    },
   ],
 };
 
@@ -316,7 +943,14 @@ const Place_GenerativeSummary$json = {
 const Place_AreaSummary$json = {
   '1': 'AreaSummary',
   '2': [
-    {'1': 'content_blocks', '3': 4, '4': 3, '5': 11, '6': '.google.maps.places.v1.ContentBlock', '10': 'contentBlocks'},
+    {
+      '1': 'content_blocks',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.ContentBlock',
+      '10': 'contentBlocks'
+    },
   ],
 };
 
@@ -464,4 +1098,3 @@ final $typed_data.Uint8List placeDescriptor = $convert.base64Decode(
     'QhEKD19zZXJ2ZXNfZGVzc2VydEIQCg5fc2VydmVzX2NvZmZlZUIUChJfZ29vZF9mb3JfY2hpbG'
     'RyZW5CDgoMX2FsbG93c19kb2dzQgsKCV9yZXN0cm9vbUISChBfZ29vZF9mb3JfZ3JvdXBzQhsK'
     'GV9nb29kX2Zvcl93YXRjaGluZ19zcG9ydHNCGAoWX2FjY2Vzc2liaWxpdHlfb3B0aW9ucw==');
-

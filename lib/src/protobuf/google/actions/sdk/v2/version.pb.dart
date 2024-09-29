@@ -34,41 +34,58 @@ class Version_VersionState extends $pb.GeneratedMessage {
     return $result;
   }
   Version_VersionState._() : super();
-  factory Version_VersionState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Version_VersionState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Version_VersionState.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Version_VersionState.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Version.VersionState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..e<Version_VersionState_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Version_VersionState_State.STATE_UNSPECIFIED, valueOf: Version_VersionState_State.valueOf, enumValues: Version_VersionState_State.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Version.VersionState',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..e<Version_VersionState_State>(
+        1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Version_VersionState_State.STATE_UNSPECIFIED,
+        valueOf: Version_VersionState_State.valueOf,
+        enumValues: Version_VersionState_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Version_VersionState clone() => Version_VersionState()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Version_VersionState copyWith(void Function(Version_VersionState) updates) => super.copyWith((message) => updates(message as Version_VersionState)) as Version_VersionState;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Version_VersionState clone() =>
+      Version_VersionState()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Version_VersionState copyWith(void Function(Version_VersionState) updates) =>
+      super.copyWith((message) => updates(message as Version_VersionState))
+          as Version_VersionState;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Version_VersionState create() => Version_VersionState._();
   Version_VersionState createEmptyInstance() => create();
-  static $pb.PbList<Version_VersionState> createRepeated() => $pb.PbList<Version_VersionState>();
+  static $pb.PbList<Version_VersionState> createRepeated() =>
+      $pb.PbList<Version_VersionState>();
   @$core.pragma('dart2js:noInline')
-  static Version_VersionState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version_VersionState>(create);
+  static Version_VersionState getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Version_VersionState>(create);
   static Version_VersionState? _defaultInstance;
 
   /// The current state of the version.
   @$pb.TagNumber(1)
   Version_VersionState_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(Version_VersionState_State v) { setField(1, v); }
+  set state(Version_VersionState_State v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -78,7 +95,10 @@ class Version_VersionState extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get message => $_getSZ(1);
   @$pb.TagNumber(2)
-  set message($core.String v) { $_setString(1, v); }
+  set message($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
@@ -109,27 +129,35 @@ class Version extends $pb.GeneratedMessage {
     return $result;
   }
   Version._() : super();
-  factory Version.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Version.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Version.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Version.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Version', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Version',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<Version_VersionState>(2, _omitFieldNames ? '' : 'versionState', subBuilder: Version_VersionState.create)
+    ..aOM<Version_VersionState>(2, _omitFieldNames ? '' : 'versionState',
+        subBuilder: Version_VersionState.create)
     ..aOS(3, _omitFieldNames ? '' : 'creator')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Version clone() => Version()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Version copyWith(void Function(Version) updates) => super.copyWith((message) => updates(message as Version)) as Version;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Version copyWith(void Function(Version) updates) =>
+      super.copyWith((message) => updates(message as Version)) as Version;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -138,7 +166,8 @@ class Version extends $pb.GeneratedMessage {
   Version createEmptyInstance() => create();
   static $pb.PbList<Version> createRepeated() => $pb.PbList<Version>();
   @$core.pragma('dart2js:noInline')
-  static Version getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version>(create);
+  static Version getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version>(create);
   static Version? _defaultInstance;
 
   /// The unique identifier of the version in the following format.
@@ -146,7 +175,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -156,7 +188,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Version_VersionState get versionState => $_getN(1);
   @$pb.TagNumber(2)
-  set versionState(Version_VersionState v) { setField(2, v); }
+  set versionState(Version_VersionState v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVersionState() => $_has(1);
   @$pb.TagNumber(2)
@@ -168,7 +203,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get creator => $_getSZ(2);
   @$pb.TagNumber(3)
-  set creator($core.String v) { $_setString(2, v); }
+  set creator($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCreator() => $_has(2);
   @$pb.TagNumber(3)
@@ -178,7 +216,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($302.Timestamp v) { setField(4, v); }
+  set updateTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -187,6 +228,6 @@ class Version extends $pb.GeneratedMessage {
   $302.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,12 +17,54 @@ import 'dart:typed_data' as $typed_data;
 const CalendarAddOnManifest$json = {
   '1': 'CalendarAddOnManifest',
   '2': [
-    {'1': 'homepage_trigger', '3': 6, '4': 1, '5': 11, '6': '.google.apps.script.type.HomepageExtensionPoint', '10': 'homepageTrigger'},
-    {'1': 'conference_solution', '3': 3, '4': 3, '5': 11, '6': '.google.apps.script.type.calendar.ConferenceSolution', '10': 'conferenceSolution'},
-    {'1': 'create_settings_url_function', '3': 5, '4': 1, '5': 9, '10': 'createSettingsUrlFunction'},
-    {'1': 'event_open_trigger', '3': 10, '4': 1, '5': 11, '6': '.google.apps.script.type.calendar.CalendarExtensionPoint', '10': 'eventOpenTrigger'},
-    {'1': 'event_update_trigger', '3': 11, '4': 1, '5': 11, '6': '.google.apps.script.type.calendar.CalendarExtensionPoint', '10': 'eventUpdateTrigger'},
-    {'1': 'current_event_access', '3': 12, '4': 1, '5': 14, '6': '.google.apps.script.type.calendar.CalendarAddOnManifest.EventAccess', '10': 'currentEventAccess'},
+    {
+      '1': 'homepage_trigger',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.HomepageExtensionPoint',
+      '10': 'homepageTrigger'
+    },
+    {
+      '1': 'conference_solution',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.script.type.calendar.ConferenceSolution',
+      '10': 'conferenceSolution'
+    },
+    {
+      '1': 'create_settings_url_function',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'createSettingsUrlFunction'
+    },
+    {
+      '1': 'event_open_trigger',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.calendar.CalendarExtensionPoint',
+      '10': 'eventOpenTrigger'
+    },
+    {
+      '1': 'event_update_trigger',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.calendar.CalendarExtensionPoint',
+      '10': 'eventUpdateTrigger'
+    },
+    {
+      '1': 'current_event_access',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.apps.script.type.calendar.CalendarAddOnManifest.EventAccess',
+      '10': 'currentEventAccess'
+    },
   ],
   '4': [CalendarAddOnManifest_EventAccess$json],
 };
@@ -59,7 +101,14 @@ final $typed_data.Uint8List calendarAddOnManifestDescriptor = $convert.base64Dec
 const ConferenceSolution$json = {
   '1': 'ConferenceSolution',
   '2': [
-    {'1': 'on_create_function', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'onCreateFunction'},
+    {
+      '1': 'on_create_function',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'onCreateFunction'
+    },
     {'1': 'id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'id'},
     {'1': 'name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'logo_url', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'logoUrl'},
@@ -81,7 +130,7 @@ const CalendarExtensionPoint$json = {
 };
 
 /// Descriptor for `CalendarExtensionPoint`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List calendarExtensionPointDescriptor = $convert.base64Decode(
-    'ChZDYWxlbmRhckV4dGVuc2lvblBvaW50EiYKDHJ1bl9mdW5jdGlvbhgBIAEoCUID4EECUgtydW'
-    '5GdW5jdGlvbg==');
-
+final $typed_data.Uint8List calendarExtensionPointDescriptor =
+    $convert.base64Decode(
+        'ChZDYWxlbmRhckV4dGVuc2lvblBvaW50EiYKDHJ1bl9mdW5jdGlvbhgBIAEoCUID4EECUgtydW'
+        '5GdW5jdGlvbg==');

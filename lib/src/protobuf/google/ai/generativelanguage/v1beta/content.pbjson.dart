@@ -36,7 +36,14 @@ final $typed_data.Uint8List typeDescriptor = $convert.base64Decode(
 const Content$json = {
   '1': 'Content',
   '2': [
-    {'1': 'parts', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Part', '10': 'parts'},
+    {
+      '1': 'parts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Part',
+      '10': 'parts'
+    },
     {'1': 'role', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'role'},
   ],
 };
@@ -51,12 +58,60 @@ const Part$json = {
   '1': 'Part',
   '2': [
     {'1': 'text', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'text'},
-    {'1': 'inline_data', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Blob', '9': 0, '10': 'inlineData'},
-    {'1': 'function_call', '3': 4, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.FunctionCall', '9': 0, '10': 'functionCall'},
-    {'1': 'function_response', '3': 5, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.FunctionResponse', '9': 0, '10': 'functionResponse'},
-    {'1': 'file_data', '3': 6, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.FileData', '9': 0, '10': 'fileData'},
-    {'1': 'executable_code', '3': 9, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.ExecutableCode', '9': 0, '10': 'executableCode'},
-    {'1': 'code_execution_result', '3': 10, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CodeExecutionResult', '9': 0, '10': 'codeExecutionResult'},
+    {
+      '1': 'inline_data',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Blob',
+      '9': 0,
+      '10': 'inlineData'
+    },
+    {
+      '1': 'function_call',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.FunctionCall',
+      '9': 0,
+      '10': 'functionCall'
+    },
+    {
+      '1': 'function_response',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.FunctionResponse',
+      '9': 0,
+      '10': 'functionResponse'
+    },
+    {
+      '1': 'file_data',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.FileData',
+      '9': 0,
+      '10': 'fileData'
+    },
+    {
+      '1': 'executable_code',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.ExecutableCode',
+      '9': 0,
+      '10': 'executableCode'
+    },
+    {
+      '1': 'code_execution_result',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.CodeExecutionResult',
+      '9': 0,
+      '10': 'codeExecutionResult'
+    },
   ],
   '8': [
     {'1': 'data'},
@@ -109,7 +164,15 @@ final $typed_data.Uint8List fileDataDescriptor = $convert.base64Decode(
 const ExecutableCode$json = {
   '1': 'ExecutableCode',
   '2': [
-    {'1': 'language', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.ExecutableCode.Language', '8': {}, '10': 'language'},
+    {
+      '1': 'language',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.ExecutableCode.Language',
+      '8': {},
+      '10': 'language'
+    },
     {'1': 'code', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'code'},
   ],
   '4': [ExecutableCode_Language$json],
@@ -135,7 +198,15 @@ final $typed_data.Uint8List executableCodeDescriptor = $convert.base64Decode(
 const CodeExecutionResult$json = {
   '1': 'CodeExecutionResult',
   '2': [
-    {'1': 'outcome', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.CodeExecutionResult.Outcome', '8': {}, '10': 'outcome'},
+    {
+      '1': 'outcome',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.CodeExecutionResult.Outcome',
+      '8': {},
+      '10': 'outcome'
+    },
     {'1': 'output', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'output'},
   ],
   '4': [CodeExecutionResult_Outcome$json],
@@ -164,9 +235,33 @@ final $typed_data.Uint8List codeExecutionResultDescriptor = $convert.base64Decod
 const Tool$json = {
   '1': 'Tool',
   '2': [
-    {'1': 'function_declarations', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.FunctionDeclaration', '8': {}, '10': 'functionDeclarations'},
-    {'1': 'google_search_retrieval', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GoogleSearchRetrieval', '8': {}, '10': 'googleSearchRetrieval'},
-    {'1': 'code_execution', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CodeExecution', '8': {}, '10': 'codeExecution'},
+    {
+      '1': 'function_declarations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.FunctionDeclaration',
+      '8': {},
+      '10': 'functionDeclarations'
+    },
+    {
+      '1': 'google_search_retrieval',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GoogleSearchRetrieval',
+      '8': {},
+      '10': 'googleSearchRetrieval'
+    },
+    {
+      '1': 'code_execution',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.CodeExecution',
+      '8': {},
+      '10': 'codeExecution'
+    },
   ],
 };
 
@@ -184,7 +279,14 @@ final $typed_data.Uint8List toolDescriptor = $convert.base64Decode(
 const GoogleSearchRetrieval$json = {
   '1': 'GoogleSearchRetrieval',
   '2': [
-    {'1': 'dynamic_retrieval_config', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.DynamicRetrievalConfig', '10': 'dynamicRetrievalConfig'},
+    {
+      '1': 'dynamic_retrieval_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.DynamicRetrievalConfig',
+      '10': 'dynamicRetrievalConfig'
+    },
   ],
 };
 
@@ -198,8 +300,23 @@ final $typed_data.Uint8List googleSearchRetrievalDescriptor = $convert.base64Dec
 const DynamicRetrievalConfig$json = {
   '1': 'DynamicRetrievalConfig',
   '2': [
-    {'1': 'mode', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.DynamicRetrievalConfig.Mode', '10': 'mode'},
-    {'1': 'dynamic_threshold', '3': 2, '4': 1, '5': 2, '9': 0, '10': 'dynamicThreshold', '17': true},
+    {
+      '1': 'mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.DynamicRetrievalConfig.Mode',
+      '10': 'mode'
+    },
+    {
+      '1': 'dynamic_threshold',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '9': 0,
+      '10': 'dynamicThreshold',
+      '17': true
+    },
   ],
   '4': [DynamicRetrievalConfig_Mode$json],
   '8': [
@@ -230,14 +347,22 @@ const CodeExecution$json = {
 };
 
 /// Descriptor for `CodeExecution`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List codeExecutionDescriptor = $convert.base64Decode(
-    'Cg1Db2RlRXhlY3V0aW9u');
+final $typed_data.Uint8List codeExecutionDescriptor =
+    $convert.base64Decode('Cg1Db2RlRXhlY3V0aW9u');
 
 @$core.Deprecated('Use toolConfigDescriptor instead')
 const ToolConfig$json = {
   '1': 'ToolConfig',
   '2': [
-    {'1': 'function_calling_config', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.FunctionCallingConfig', '8': {}, '10': 'functionCallingConfig'},
+    {
+      '1': 'function_calling_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.FunctionCallingConfig',
+      '8': {},
+      '10': 'functionCallingConfig'
+    },
   ],
 };
 
@@ -251,8 +376,23 @@ final $typed_data.Uint8List toolConfigDescriptor = $convert.base64Decode(
 const FunctionCallingConfig$json = {
   '1': 'FunctionCallingConfig',
   '2': [
-    {'1': 'mode', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.FunctionCallingConfig.Mode', '8': {}, '10': 'mode'},
-    {'1': 'allowed_function_names', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'allowedFunctionNames'},
+    {
+      '1': 'mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.FunctionCallingConfig.Mode',
+      '8': {},
+      '10': 'mode'
+    },
+    {
+      '1': 'allowed_function_names',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'allowedFunctionNames'
+    },
   ],
   '4': [FunctionCallingConfig_Mode$json],
 };
@@ -282,7 +422,17 @@ const FunctionDeclaration$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'description'},
-    {'1': 'parameters', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Schema', '8': {}, '9': 0, '10': 'parameters', '17': true},
+    {
+      '1': 'parameters',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Schema',
+      '8': {},
+      '9': 0,
+      '10': 'parameters',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_parameters'},
@@ -301,7 +451,17 @@ const FunctionCall$json = {
   '1': 'FunctionCall',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'args', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '8': {}, '9': 0, '10': 'args', '17': true},
+    {
+      '1': 'args',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '8': {},
+      '9': 0,
+      '10': 'args',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_args'},
@@ -318,7 +478,15 @@ const FunctionResponse$json = {
   '1': 'FunctionResponse',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'response', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '8': {}, '10': 'response'},
+    {
+      '1': 'response',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '8': {},
+      '10': 'response'
+    },
   ],
 };
 
@@ -331,15 +499,41 @@ final $typed_data.Uint8List functionResponseDescriptor = $convert.base64Decode(
 const Schema$json = {
   '1': 'Schema',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.Type', '8': {}, '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.Type',
+      '8': {},
+      '10': 'type'
+    },
     {'1': 'format', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'format'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'description'},
     {'1': 'nullable', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'nullable'},
     {'1': 'enum', '3': 5, '4': 3, '5': 9, '8': {}, '10': 'enum'},
-    {'1': 'items', '3': 6, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Schema', '8': {}, '9': 0, '10': 'items', '17': true},
+    {
+      '1': 'items',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Schema',
+      '8': {},
+      '9': 0,
+      '10': 'items',
+      '17': true
+    },
     {'1': 'max_items', '3': 21, '4': 1, '5': 3, '8': {}, '10': 'maxItems'},
     {'1': 'min_items', '3': 22, '4': 1, '5': 3, '8': {}, '10': 'minItems'},
-    {'1': 'properties', '3': 7, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Schema.PropertiesEntry', '8': {}, '10': 'properties'},
+    {
+      '1': 'properties',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Schema.PropertiesEntry',
+      '8': {},
+      '10': 'properties'
+    },
     {'1': 'required', '3': 8, '4': 3, '5': 9, '8': {}, '10': 'required'},
   ],
   '3': [Schema_PropertiesEntry$json],
@@ -353,7 +547,14 @@ const Schema_PropertiesEntry$json = {
   '1': 'PropertiesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Schema', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Schema',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -377,7 +578,14 @@ const GroundingPassage$json = {
   '1': 'GroundingPassage',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'content', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '10': 'content'},
+    {
+      '1': 'content',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '10': 'content'
+    },
   ],
 };
 
@@ -390,7 +598,14 @@ final $typed_data.Uint8List groundingPassageDescriptor = $convert.base64Decode(
 const GroundingPassages$json = {
   '1': 'GroundingPassages',
   '2': [
-    {'1': 'passages', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GroundingPassage', '10': 'passages'},
+    {
+      '1': 'passages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GroundingPassage',
+      '10': 'passages'
+    },
   ],
 };
 
@@ -398,4 +613,3 @@ const GroundingPassages$json = {
 final $typed_data.Uint8List groundingPassagesDescriptor = $convert.base64Decode(
     'ChFHcm91bmRpbmdQYXNzYWdlcxJRCghwYXNzYWdlcxgBIAMoCzI1Lmdvb2dsZS5haS5nZW5lcm'
     'F0aXZlbGFuZ3VhZ2UudjFiZXRhLkdyb3VuZGluZ1Bhc3NhZ2VSCHBhc3NhZ2Vz');
-

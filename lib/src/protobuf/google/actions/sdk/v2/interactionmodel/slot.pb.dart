@@ -53,46 +53,65 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
     return $result;
   }
   Slot_PromptSettings._() : super();
-  factory Slot_PromptSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Slot_PromptSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Slot_PromptSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Slot_PromptSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Slot.PromptSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
-    ..aOM<$277.EventHandler>(1, _omitFieldNames ? '' : 'initialPrompt', subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(2, _omitFieldNames ? '' : 'noMatchPrompt1', subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(3, _omitFieldNames ? '' : 'noMatchPrompt2', subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(4, _omitFieldNames ? '' : 'noMatchFinalPrompt', subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(5, _omitFieldNames ? '' : 'noInputPrompt1', subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(6, _omitFieldNames ? '' : 'noInputPrompt2', subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(7, _omitFieldNames ? '' : 'noInputFinalPrompt', subBuilder: $277.EventHandler.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Slot.PromptSettings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
+    ..aOM<$277.EventHandler>(1, _omitFieldNames ? '' : 'initialPrompt',
+        subBuilder: $277.EventHandler.create)
+    ..aOM<$277.EventHandler>(2, _omitFieldNames ? '' : 'noMatchPrompt1',
+        subBuilder: $277.EventHandler.create)
+    ..aOM<$277.EventHandler>(3, _omitFieldNames ? '' : 'noMatchPrompt2',
+        subBuilder: $277.EventHandler.create)
+    ..aOM<$277.EventHandler>(4, _omitFieldNames ? '' : 'noMatchFinalPrompt',
+        subBuilder: $277.EventHandler.create)
+    ..aOM<$277.EventHandler>(5, _omitFieldNames ? '' : 'noInputPrompt1',
+        subBuilder: $277.EventHandler.create)
+    ..aOM<$277.EventHandler>(6, _omitFieldNames ? '' : 'noInputPrompt2',
+        subBuilder: $277.EventHandler.create)
+    ..aOM<$277.EventHandler>(7, _omitFieldNames ? '' : 'noInputFinalPrompt',
+        subBuilder: $277.EventHandler.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Slot_PromptSettings clone() => Slot_PromptSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Slot_PromptSettings copyWith(void Function(Slot_PromptSettings) updates) => super.copyWith((message) => updates(message as Slot_PromptSettings)) as Slot_PromptSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Slot_PromptSettings copyWith(void Function(Slot_PromptSettings) updates) =>
+      super.copyWith((message) => updates(message as Slot_PromptSettings))
+          as Slot_PromptSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Slot_PromptSettings create() => Slot_PromptSettings._();
   Slot_PromptSettings createEmptyInstance() => create();
-  static $pb.PbList<Slot_PromptSettings> createRepeated() => $pb.PbList<Slot_PromptSettings>();
+  static $pb.PbList<Slot_PromptSettings> createRepeated() =>
+      $pb.PbList<Slot_PromptSettings>();
   @$core.pragma('dart2js:noInline')
-  static Slot_PromptSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Slot_PromptSettings>(create);
+  static Slot_PromptSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Slot_PromptSettings>(create);
   static Slot_PromptSettings? _defaultInstance;
 
   /// Prompt for the slot value itself. Example: "What size did you want?"
   @$pb.TagNumber(1)
   $277.EventHandler get initialPrompt => $_getN(0);
   @$pb.TagNumber(1)
-  set initialPrompt($277.EventHandler v) { setField(1, v); }
+  set initialPrompt($277.EventHandler v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInitialPrompt() => $_has(0);
   @$pb.TagNumber(1)
@@ -106,7 +125,10 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $277.EventHandler get noMatchPrompt1 => $_getN(1);
   @$pb.TagNumber(2)
-  set noMatchPrompt1($277.EventHandler v) { setField(2, v); }
+  set noMatchPrompt1($277.EventHandler v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNoMatchPrompt1() => $_has(1);
   @$pb.TagNumber(2)
@@ -120,7 +142,10 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $277.EventHandler get noMatchPrompt2 => $_getN(2);
   @$pb.TagNumber(3)
-  set noMatchPrompt2($277.EventHandler v) { setField(3, v); }
+  set noMatchPrompt2($277.EventHandler v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNoMatchPrompt2() => $_has(2);
   @$pb.TagNumber(3)
@@ -134,7 +159,10 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $277.EventHandler get noMatchFinalPrompt => $_getN(3);
   @$pb.TagNumber(4)
-  set noMatchFinalPrompt($277.EventHandler v) { setField(4, v); }
+  set noMatchFinalPrompt($277.EventHandler v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasNoMatchFinalPrompt() => $_has(3);
   @$pb.TagNumber(4)
@@ -147,7 +175,10 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $277.EventHandler get noInputPrompt1 => $_getN(4);
   @$pb.TagNumber(5)
-  set noInputPrompt1($277.EventHandler v) { setField(5, v); }
+  set noInputPrompt1($277.EventHandler v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasNoInputPrompt1() => $_has(4);
   @$pb.TagNumber(5)
@@ -160,7 +191,10 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $277.EventHandler get noInputPrompt2 => $_getN(5);
   @$pb.TagNumber(6)
-  set noInputPrompt2($277.EventHandler v) { setField(6, v); }
+  set noInputPrompt2($277.EventHandler v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasNoInputPrompt2() => $_has(5);
   @$pb.TagNumber(6)
@@ -173,7 +207,10 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $277.EventHandler get noInputFinalPrompt => $_getN(6);
   @$pb.TagNumber(7)
-  set noInputFinalPrompt($277.EventHandler v) { setField(7, v); }
+  set noInputFinalPrompt($277.EventHandler v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasNoInputFinalPrompt() => $_has(6);
   @$pb.TagNumber(7)
@@ -195,33 +232,42 @@ class Slot_CommitBehavior extends $pb.GeneratedMessage {
     return $result;
   }
   Slot_CommitBehavior._() : super();
-  factory Slot_CommitBehavior.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Slot_CommitBehavior.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Slot_CommitBehavior.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Slot_CommitBehavior.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Slot.CommitBehavior', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Slot.CommitBehavior',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'writeSessionParam')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Slot_CommitBehavior clone() => Slot_CommitBehavior()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Slot_CommitBehavior copyWith(void Function(Slot_CommitBehavior) updates) => super.copyWith((message) => updates(message as Slot_CommitBehavior)) as Slot_CommitBehavior;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Slot_CommitBehavior copyWith(void Function(Slot_CommitBehavior) updates) =>
+      super.copyWith((message) => updates(message as Slot_CommitBehavior))
+          as Slot_CommitBehavior;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Slot_CommitBehavior create() => Slot_CommitBehavior._();
   Slot_CommitBehavior createEmptyInstance() => create();
-  static $pb.PbList<Slot_CommitBehavior> createRepeated() => $pb.PbList<Slot_CommitBehavior>();
+  static $pb.PbList<Slot_CommitBehavior> createRepeated() =>
+      $pb.PbList<Slot_CommitBehavior>();
   @$core.pragma('dart2js:noInline')
-  static Slot_CommitBehavior getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Slot_CommitBehavior>(create);
+  static Slot_CommitBehavior getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Slot_CommitBehavior>(create);
   static Slot_CommitBehavior? _defaultInstance;
 
   /// The session parameter to write the slot value after it is filled. Note
@@ -232,7 +278,10 @@ class Slot_CommitBehavior extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get writeSessionParam => $_getSZ(0);
   @$pb.TagNumber(1)
-  set writeSessionParam($core.String v) { $_setString(0, v); }
+  set writeSessionParam($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWriteSessionParam() => $_has(0);
   @$pb.TagNumber(1)
@@ -255,34 +304,44 @@ class Slot_DefaultValue extends $pb.GeneratedMessage {
     return $result;
   }
   Slot_DefaultValue._() : super();
-  factory Slot_DefaultValue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Slot_DefaultValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Slot_DefaultValue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Slot_DefaultValue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Slot.DefaultValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Slot.DefaultValue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sessionParam')
-    ..aOM<$261.Value>(2, _omitFieldNames ? '' : 'constant', subBuilder: $261.Value.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$261.Value>(2, _omitFieldNames ? '' : 'constant',
+        subBuilder: $261.Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Slot_DefaultValue clone() => Slot_DefaultValue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Slot_DefaultValue copyWith(void Function(Slot_DefaultValue) updates) => super.copyWith((message) => updates(message as Slot_DefaultValue)) as Slot_DefaultValue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Slot_DefaultValue copyWith(void Function(Slot_DefaultValue) updates) =>
+      super.copyWith((message) => updates(message as Slot_DefaultValue))
+          as Slot_DefaultValue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Slot_DefaultValue create() => Slot_DefaultValue._();
   Slot_DefaultValue createEmptyInstance() => create();
-  static $pb.PbList<Slot_DefaultValue> createRepeated() => $pb.PbList<Slot_DefaultValue>();
+  static $pb.PbList<Slot_DefaultValue> createRepeated() =>
+      $pb.PbList<Slot_DefaultValue>();
   @$core.pragma('dart2js:noInline')
-  static Slot_DefaultValue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Slot_DefaultValue>(create);
+  static Slot_DefaultValue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Slot_DefaultValue>(create);
   static Slot_DefaultValue? _defaultInstance;
 
   /// Optional. The session parameter to be used to initialize the slot value, if it has
@@ -293,7 +352,10 @@ class Slot_DefaultValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get sessionParam => $_getSZ(0);
   @$pb.TagNumber(1)
-  set sessionParam($core.String v) { $_setString(0, v); }
+  set sessionParam($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSessionParam() => $_has(0);
   @$pb.TagNumber(1)
@@ -305,7 +367,10 @@ class Slot_DefaultValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $261.Value get constant => $_getN(1);
   @$pb.TagNumber(2)
-  set constant($261.Value v) { setField(2, v); }
+  set constant($261.Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConstant() => $_has(1);
   @$pb.TagNumber(2)
@@ -352,30 +417,41 @@ class Slot extends $pb.GeneratedMessage {
     return $result;
   }
   Slot._() : super();
-  factory Slot.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Slot.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Slot.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Slot.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Slot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Slot',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$278.ClassReference>(2, _omitFieldNames ? '' : 'type', subBuilder: $278.ClassReference.create)
+    ..aOM<$278.ClassReference>(2, _omitFieldNames ? '' : 'type',
+        subBuilder: $278.ClassReference.create)
     ..aOB(3, _omitFieldNames ? '' : 'required')
-    ..aOM<Slot_PromptSettings>(4, _omitFieldNames ? '' : 'promptSettings', subBuilder: Slot_PromptSettings.create)
-    ..aOM<Slot_CommitBehavior>(5, _omitFieldNames ? '' : 'commitBehavior', subBuilder: Slot_CommitBehavior.create)
-    ..aOM<$261.Value>(6, _omitFieldNames ? '' : 'config', subBuilder: $261.Value.create)
-    ..aOM<Slot_DefaultValue>(7, _omitFieldNames ? '' : 'defaultValue', subBuilder: Slot_DefaultValue.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Slot_PromptSettings>(4, _omitFieldNames ? '' : 'promptSettings',
+        subBuilder: Slot_PromptSettings.create)
+    ..aOM<Slot_CommitBehavior>(5, _omitFieldNames ? '' : 'commitBehavior',
+        subBuilder: Slot_CommitBehavior.create)
+    ..aOM<$261.Value>(6, _omitFieldNames ? '' : 'config',
+        subBuilder: $261.Value.create)
+    ..aOM<Slot_DefaultValue>(7, _omitFieldNames ? '' : 'defaultValue',
+        subBuilder: Slot_DefaultValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Slot clone() => Slot()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Slot copyWith(void Function(Slot) updates) => super.copyWith((message) => updates(message as Slot)) as Slot;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Slot copyWith(void Function(Slot) updates) =>
+      super.copyWith((message) => updates(message as Slot)) as Slot;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -384,14 +460,18 @@ class Slot extends $pb.GeneratedMessage {
   Slot createEmptyInstance() => create();
   static $pb.PbList<Slot> createRepeated() => $pb.PbList<Slot>();
   @$core.pragma('dart2js:noInline')
-  static Slot getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Slot>(create);
+  static Slot getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Slot>(create);
   static Slot? _defaultInstance;
 
   /// Required. Name of the slot.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -401,7 +481,10 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $278.ClassReference get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($278.ClassReference v) { setField(2, v); }
+  set type($278.ClassReference v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -415,7 +498,10 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get required => $_getBF(2);
   @$pb.TagNumber(3)
-  set required($core.bool v) { $_setBool(2, v); }
+  set required($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequired() => $_has(2);
   @$pb.TagNumber(3)
@@ -425,7 +511,10 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Slot_PromptSettings get promptSettings => $_getN(3);
   @$pb.TagNumber(4)
-  set promptSettings(Slot_PromptSettings v) { setField(4, v); }
+  set promptSettings(Slot_PromptSettings v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPromptSettings() => $_has(3);
   @$pb.TagNumber(4)
@@ -437,7 +526,10 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Slot_CommitBehavior get commitBehavior => $_getN(4);
   @$pb.TagNumber(5)
-  set commitBehavior(Slot_CommitBehavior v) { setField(5, v); }
+  set commitBehavior(Slot_CommitBehavior v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCommitBehavior() => $_has(4);
   @$pb.TagNumber(5)
@@ -468,7 +560,10 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $261.Value get config => $_getN(5);
   @$pb.TagNumber(6)
-  set config($261.Value v) { setField(6, v); }
+  set config($261.Value v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasConfig() => $_has(5);
   @$pb.TagNumber(6)
@@ -480,7 +575,10 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Slot_DefaultValue get defaultValue => $_getN(6);
   @$pb.TagNumber(7)
-  set defaultValue(Slot_DefaultValue v) { setField(7, v); }
+  set defaultValue(Slot_DefaultValue v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDefaultValue() => $_has(6);
   @$pb.TagNumber(7)
@@ -489,6 +587,6 @@ class Slot extends $pb.GeneratedMessage {
   Slot_DefaultValue ensureDefaultValue() => $_ensure(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

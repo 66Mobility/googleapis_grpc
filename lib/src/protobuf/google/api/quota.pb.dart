@@ -78,25 +78,33 @@ class Quota extends $pb.GeneratedMessage {
     return $result;
   }
   Quota._() : super();
-  factory Quota.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Quota.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Quota.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Quota.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Quota', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<QuotaLimit>(3, _omitFieldNames ? '' : 'limits', $pb.PbFieldType.PM, subBuilder: QuotaLimit.create)
-    ..pc<MetricRule>(4, _omitFieldNames ? '' : 'metricRules', $pb.PbFieldType.PM, subBuilder: MetricRule.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Quota',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<QuotaLimit>(3, _omitFieldNames ? '' : 'limits', $pb.PbFieldType.PM,
+        subBuilder: QuotaLimit.create)
+    ..pc<MetricRule>(
+        4, _omitFieldNames ? '' : 'metricRules', $pb.PbFieldType.PM,
+        subBuilder: MetricRule.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Quota clone() => Quota()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Quota copyWith(void Function(Quota) updates) => super.copyWith((message) => updates(message as Quota)) as Quota;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Quota copyWith(void Function(Quota) updates) =>
+      super.copyWith((message) => updates(message as Quota)) as Quota;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -105,7 +113,8 @@ class Quota extends $pb.GeneratedMessage {
   Quota createEmptyInstance() => create();
   static $pb.PbList<Quota> createRepeated() => $pb.PbList<Quota>();
   @$core.pragma('dart2js:noInline')
-  static Quota getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Quota>(create);
+  static Quota getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Quota>(create);
   static Quota? _defaultInstance;
 
   /// List of QuotaLimit definitions for the service.
@@ -135,25 +144,34 @@ class MetricRule extends $pb.GeneratedMessage {
     return $result;
   }
   MetricRule._() : super();
-  factory MetricRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetricRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetricRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetricRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetricRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetricRule',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'selector')
-    ..m<$core.String, $fixnum.Int64>(2, _omitFieldNames ? '' : 'metricCosts', entryClassName: 'MetricRule.MetricCostsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.O6, packageName: const $pb.PackageName('google.api'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $fixnum.Int64>(2, _omitFieldNames ? '' : 'metricCosts',
+        entryClassName: 'MetricRule.MetricCostsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.O6,
+        packageName: const $pb.PackageName('google.api'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MetricRule clone() => MetricRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetricRule copyWith(void Function(MetricRule) updates) => super.copyWith((message) => updates(message as MetricRule)) as MetricRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetricRule copyWith(void Function(MetricRule) updates) =>
+      super.copyWith((message) => updates(message as MetricRule)) as MetricRule;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -162,7 +180,8 @@ class MetricRule extends $pb.GeneratedMessage {
   MetricRule createEmptyInstance() => create();
   static $pb.PbList<MetricRule> createRepeated() => $pb.PbList<MetricRule>();
   @$core.pragma('dart2js:noInline')
-  static MetricRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetricRule>(create);
+  static MetricRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetricRule>(create);
   static MetricRule? _defaultInstance;
 
   ///  Selects the methods to which this rule applies.
@@ -172,7 +191,10 @@ class MetricRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get selector => $_getSZ(0);
   @$pb.TagNumber(1)
-  set selector($core.String v) { $_setString(0, v); }
+  set selector($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -238,10 +260,17 @@ class QuotaLimit extends $pb.GeneratedMessage {
     return $result;
   }
   QuotaLimit._() : super();
-  factory QuotaLimit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QuotaLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QuotaLimit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QuotaLimit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QuotaLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QuotaLimit',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aInt64(3, _omitFieldNames ? '' : 'defaultLimit')
     ..aInt64(4, _omitFieldNames ? '' : 'maxLimit')
@@ -250,21 +279,23 @@ class QuotaLimit extends $pb.GeneratedMessage {
     ..aInt64(7, _omitFieldNames ? '' : 'freeTier')
     ..aOS(8, _omitFieldNames ? '' : 'metric')
     ..aOS(9, _omitFieldNames ? '' : 'unit')
-    ..m<$core.String, $fixnum.Int64>(10, _omitFieldNames ? '' : 'values', entryClassName: 'QuotaLimit.ValuesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.O6, packageName: const $pb.PackageName('google.api'))
+    ..m<$core.String, $fixnum.Int64>(10, _omitFieldNames ? '' : 'values',
+        entryClassName: 'QuotaLimit.ValuesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.O6,
+        packageName: const $pb.PackageName('google.api'))
     ..aOS(12, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   QuotaLimit clone() => QuotaLimit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QuotaLimit copyWith(void Function(QuotaLimit) updates) => super.copyWith((message) => updates(message as QuotaLimit)) as QuotaLimit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QuotaLimit copyWith(void Function(QuotaLimit) updates) =>
+      super.copyWith((message) => updates(message as QuotaLimit)) as QuotaLimit;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -273,7 +304,8 @@ class QuotaLimit extends $pb.GeneratedMessage {
   QuotaLimit createEmptyInstance() => create();
   static $pb.PbList<QuotaLimit> createRepeated() => $pb.PbList<QuotaLimit>();
   @$core.pragma('dart2js:noInline')
-  static QuotaLimit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QuotaLimit>(create);
+  static QuotaLimit getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QuotaLimit>(create);
   static QuotaLimit? _defaultInstance;
 
   /// Optional. User-visible, extended description for this quota limit.
@@ -282,7 +314,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(0);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(0, v); }
+  set description($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(2)
@@ -301,7 +336,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get defaultLimit => $_getI64(1);
   @$pb.TagNumber(3)
-  set defaultLimit($fixnum.Int64 v) { $_setInt64(1, v); }
+  set defaultLimit($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDefaultLimit() => $_has(1);
   @$pb.TagNumber(3)
@@ -319,7 +357,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get maxLimit => $_getI64(2);
   @$pb.TagNumber(4)
-  set maxLimit($fixnum.Int64 v) { $_setInt64(2, v); }
+  set maxLimit($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxLimit() => $_has(2);
   @$pb.TagNumber(4)
@@ -331,7 +372,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get duration => $_getSZ(3);
   @$pb.TagNumber(5)
-  set duration($core.String v) { $_setString(3, v); }
+  set duration($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(5)
@@ -346,7 +390,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get name => $_getSZ(4);
   @$pb.TagNumber(6)
-  set name($core.String v) { $_setString(4, v); }
+  set name($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasName() => $_has(4);
   @$pb.TagNumber(6)
@@ -363,7 +410,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $fixnum.Int64 get freeTier => $_getI64(5);
   @$pb.TagNumber(7)
-  set freeTier($fixnum.Int64 v) { $_setInt64(5, v); }
+  set freeTier($fixnum.Int64 v) {
+    $_setInt64(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasFreeTier() => $_has(5);
   @$pb.TagNumber(7)
@@ -375,7 +425,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get metric => $_getSZ(6);
   @$pb.TagNumber(8)
-  set metric($core.String v) { $_setString(6, v); }
+  set metric($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMetric() => $_has(6);
   @$pb.TagNumber(8)
@@ -393,7 +446,10 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get unit => $_getSZ(7);
   @$pb.TagNumber(9)
-  set unit($core.String v) { $_setString(7, v); }
+  set unit($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasUnit() => $_has(7);
   @$pb.TagNumber(9)
@@ -412,13 +468,16 @@ class QuotaLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get displayName => $_getSZ(9);
   @$pb.TagNumber(12)
-  set displayName($core.String v) { $_setString(9, v); }
+  set displayName($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasDisplayName() => $_has(9);
   @$pb.TagNumber(12)
   void clearDisplayName() => clearField(12);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

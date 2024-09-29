@@ -40,26 +40,32 @@ class FieldPolicy extends $pb.GeneratedMessage {
     return $result;
   }
   FieldPolicy._() : super();
-  factory FieldPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FieldPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FieldPolicy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FieldPolicy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FieldPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FieldPolicy',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'selector')
     ..aOS(2, _omitFieldNames ? '' : 'resourcePermission')
     ..aOS(3, _omitFieldNames ? '' : 'resourceType')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FieldPolicy clone() => FieldPolicy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FieldPolicy copyWith(void Function(FieldPolicy) updates) => super.copyWith((message) => updates(message as FieldPolicy)) as FieldPolicy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FieldPolicy copyWith(void Function(FieldPolicy) updates) =>
+      super.copyWith((message) => updates(message as FieldPolicy))
+          as FieldPolicy;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -68,7 +74,8 @@ class FieldPolicy extends $pb.GeneratedMessage {
   FieldPolicy createEmptyInstance() => create();
   static $pb.PbList<FieldPolicy> createRepeated() => $pb.PbList<FieldPolicy>();
   @$core.pragma('dart2js:noInline')
-  static FieldPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FieldPolicy>(create);
+  static FieldPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FieldPolicy>(create);
   static FieldPolicy? _defaultInstance;
 
   ///  Selects one or more request or response message fields to apply this
@@ -84,7 +91,10 @@ class FieldPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get selector => $_getSZ(0);
   @$pb.TagNumber(1)
-  set selector($core.String v) { $_setString(0, v); }
+  set selector($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -97,7 +107,10 @@ class FieldPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get resourcePermission => $_getSZ(1);
   @$pb.TagNumber(2)
-  set resourcePermission($core.String v) { $_setString(1, v); }
+  set resourcePermission($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResourcePermission() => $_has(1);
   @$pb.TagNumber(2)
@@ -107,7 +120,10 @@ class FieldPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get resourceType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set resourceType($core.String v) { $_setString(2, v); }
+  set resourceType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResourceType() => $_has(2);
   @$pb.TagNumber(3)
@@ -130,34 +146,44 @@ class MethodPolicy extends $pb.GeneratedMessage {
     return $result;
   }
   MethodPolicy._() : super();
-  factory MethodPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MethodPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MethodPolicy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MethodPolicy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MethodPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<FieldPolicy>(2, _omitFieldNames ? '' : 'requestPolicies', $pb.PbFieldType.PM, subBuilder: FieldPolicy.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MethodPolicy',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<FieldPolicy>(
+        2, _omitFieldNames ? '' : 'requestPolicies', $pb.PbFieldType.PM,
+        subBuilder: FieldPolicy.create)
     ..aOS(9, _omitFieldNames ? '' : 'selector')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MethodPolicy clone() => MethodPolicy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MethodPolicy copyWith(void Function(MethodPolicy) updates) => super.copyWith((message) => updates(message as MethodPolicy)) as MethodPolicy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MethodPolicy copyWith(void Function(MethodPolicy) updates) =>
+      super.copyWith((message) => updates(message as MethodPolicy))
+          as MethodPolicy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MethodPolicy create() => MethodPolicy._();
   MethodPolicy createEmptyInstance() => create();
-  static $pb.PbList<MethodPolicy> createRepeated() => $pb.PbList<MethodPolicy>();
+  static $pb.PbList<MethodPolicy> createRepeated() =>
+      $pb.PbList<MethodPolicy>();
   @$core.pragma('dart2js:noInline')
-  static MethodPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MethodPolicy>(create);
+  static MethodPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MethodPolicy>(create);
   static MethodPolicy? _defaultInstance;
 
   /// Policies that are applicable to the request message.
@@ -175,7 +201,10 @@ class MethodPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get selector => $_getSZ(1);
   @$pb.TagNumber(9)
-  set selector($core.String v) { $_setString(1, v); }
+  set selector($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSelector() => $_has(1);
   @$pb.TagNumber(9)
@@ -183,14 +212,26 @@ class MethodPolicy extends $pb.GeneratedMessage {
 }
 
 class Policy {
-  static final fieldPolicy = $pb.Extension<FieldPolicy>(_omitMessageNames ? '' : 'google.protobuf.FieldOptions', _omitFieldNames ? '' : 'fieldPolicy', 158361448, $pb.PbFieldType.OM, defaultOrMaker: FieldPolicy.getDefault, subBuilder: FieldPolicy.create);
-  static final methodPolicy = $pb.Extension<MethodPolicy>(_omitMessageNames ? '' : 'google.protobuf.MethodOptions', _omitFieldNames ? '' : 'methodPolicy', 161893301, $pb.PbFieldType.OM, defaultOrMaker: MethodPolicy.getDefault, subBuilder: MethodPolicy.create);
+  static final fieldPolicy = $pb.Extension<FieldPolicy>(
+      _omitMessageNames ? '' : 'google.protobuf.FieldOptions',
+      _omitFieldNames ? '' : 'fieldPolicy',
+      158361448,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: FieldPolicy.getDefault,
+      subBuilder: FieldPolicy.create);
+  static final methodPolicy = $pb.Extension<MethodPolicy>(
+      _omitMessageNames ? '' : 'google.protobuf.MethodOptions',
+      _omitFieldNames ? '' : 'methodPolicy',
+      161893301,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: MethodPolicy.getDefault,
+      subBuilder: MethodPolicy.create);
   static void registerAllExtensions($pb.ExtensionRegistry registry) {
     registry.add(fieldPolicy);
     registry.add(methodPolicy);
   }
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

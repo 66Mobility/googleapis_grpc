@@ -31,41 +31,54 @@ class LocalizedTime extends $pb.GeneratedMessage {
     return $result;
   }
   LocalizedTime._() : super();
-  factory LocalizedTime.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LocalizedTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LocalizedTime.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LocalizedTime.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocalizedTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'time', subBuilder: $460.LocalizedText.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LocalizedTime',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'time',
+        subBuilder: $460.LocalizedText.create)
     ..aOS(2, _omitFieldNames ? '' : 'timeZone')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LocalizedTime clone() => LocalizedTime()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LocalizedTime copyWith(void Function(LocalizedTime) updates) => super.copyWith((message) => updates(message as LocalizedTime)) as LocalizedTime;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LocalizedTime copyWith(void Function(LocalizedTime) updates) =>
+      super.copyWith((message) => updates(message as LocalizedTime))
+          as LocalizedTime;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LocalizedTime create() => LocalizedTime._();
   LocalizedTime createEmptyInstance() => create();
-  static $pb.PbList<LocalizedTime> createRepeated() => $pb.PbList<LocalizedTime>();
+  static $pb.PbList<LocalizedTime> createRepeated() =>
+      $pb.PbList<LocalizedTime>();
   @$core.pragma('dart2js:noInline')
-  static LocalizedTime getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LocalizedTime>(create);
+  static LocalizedTime getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LocalizedTime>(create);
   static LocalizedTime? _defaultInstance;
 
   /// The time specified as a string in a given time zone.
   @$pb.TagNumber(1)
   $460.LocalizedText get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($460.LocalizedText v) { setField(1, v); }
+  set time($460.LocalizedText v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -79,13 +92,16 @@ class LocalizedTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get timeZone => $_getSZ(1);
   @$pb.TagNumber(2)
-  set timeZone($core.String v) { $_setString(1, v); }
+  set timeZone($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTimeZone() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeZone() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

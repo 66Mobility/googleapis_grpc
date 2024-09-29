@@ -22,39 +22,48 @@ export 'drive_activity_service.pb.dart';
 
 @$pb.GrpcServiceName('google.apps.drive.activity.v2.DriveActivityService')
 class DriveActivityServiceClient extends $grpc.Client {
-  static final _$queryDriveActivity = $grpc.ClientMethod<$66.QueryDriveActivityRequest, $67.QueryDriveActivityResponse>(
+  static final _$queryDriveActivity = $grpc.ClientMethod<
+          $66.QueryDriveActivityRequest, $67.QueryDriveActivityResponse>(
       '/google.apps.drive.activity.v2.DriveActivityService/QueryDriveActivity',
       ($66.QueryDriveActivityRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $67.QueryDriveActivityResponse.fromBuffer(value));
+      ($core.List<$core.int> value) =>
+          $67.QueryDriveActivityResponse.fromBuffer(value));
 
   DriveActivityServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$67.QueryDriveActivityResponse> queryDriveActivity($66.QueryDriveActivityRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$67.QueryDriveActivityResponse> queryDriveActivity(
+      $66.QueryDriveActivityRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$queryDriveActivity, request, options: options);
   }
 }
 
 @$pb.GrpcServiceName('google.apps.drive.activity.v2.DriveActivityService')
 abstract class DriveActivityServiceBase extends $grpc.Service {
-  $core.String get $name => 'google.apps.drive.activity.v2.DriveActivityService';
+  $core.String get $name =>
+      'google.apps.drive.activity.v2.DriveActivityService';
 
   DriveActivityServiceBase() {
-    $addMethod($grpc.ServiceMethod<$66.QueryDriveActivityRequest, $67.QueryDriveActivityResponse>(
+    $addMethod($grpc.ServiceMethod<$66.QueryDriveActivityRequest,
+            $67.QueryDriveActivityResponse>(
         'QueryDriveActivity',
         queryDriveActivity_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $66.QueryDriveActivityRequest.fromBuffer(value),
+        ($core.List<$core.int> value) =>
+            $66.QueryDriveActivityRequest.fromBuffer(value),
         ($67.QueryDriveActivityResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$67.QueryDriveActivityResponse> queryDriveActivity_Pre($grpc.ServiceCall call, $async.Future<$66.QueryDriveActivityRequest> request) async {
+  $async.Future<$67.QueryDriveActivityResponse> queryDriveActivity_Pre(
+      $grpc.ServiceCall call,
+      $async.Future<$66.QueryDriveActivityRequest> request) async {
     return queryDriveActivity(call, await request);
   }
 
-  $async.Future<$67.QueryDriveActivityResponse> queryDriveActivity($grpc.ServiceCall call, $66.QueryDriveActivityRequest request);
+  $async.Future<$67.QueryDriveActivityResponse> queryDriveActivity(
+      $grpc.ServiceCall call, $66.QueryDriveActivityRequest request);
 }

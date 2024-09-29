@@ -18,8 +18,24 @@ const UiDetectionRequest$json = {
   '1': 'UiDetectionRequest',
   '2': [
     {'1': 'image_png', '3': 1, '4': 1, '5': 12, '8': {}, '10': 'imagePng'},
-    {'1': 'request', '3': 2, '4': 1, '5': 11, '6': '.google.chromeos.uidetection.v1.DetectionRequest', '8': {}, '10': 'request'},
-    {'1': 'resize_image', '3': 3, '4': 1, '5': 8, '9': 0, '10': 'resizeImage', '17': true},
+    {
+      '1': 'request',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.uidetection.v1.DetectionRequest',
+      '8': {},
+      '10': 'request'
+    },
+    {
+      '1': 'resize_image',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'resizeImage',
+      '17': true
+    },
     {
       '1': 'test_id',
       '3': 4,
@@ -28,9 +44,31 @@ const UiDetectionRequest$json = {
       '8': {'3': true},
       '10': 'testId',
     },
-    {'1': 'test_metadata', '3': 5, '4': 1, '5': 11, '6': '.google.chromeos.uidetection.v1.TestMetadata', '8': {}, '10': 'testMetadata'},
-    {'1': 'force_image_resizing', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'forceImageResizing'},
-    {'1': 'return_transformed_image', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'returnTransformedImage'},
+    {
+      '1': 'test_metadata',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.uidetection.v1.TestMetadata',
+      '8': {},
+      '10': 'testMetadata'
+    },
+    {
+      '1': 'force_image_resizing',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'forceImageResizing'
+    },
+    {
+      '1': 'return_transformed_image',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'returnTransformedImage'
+    },
   ],
   '8': [
     {'1': '_resize_image'},
@@ -52,9 +90,33 @@ final $typed_data.Uint8List uiDetectionRequestDescriptor = $convert.base64Decode
 const DetectionRequest$json = {
   '1': 'DetectionRequest',
   '2': [
-    {'1': 'word_detection_request', '3': 1, '4': 1, '5': 11, '6': '.google.chromeos.uidetection.v1.WordDetectionRequest', '9': 0, '10': 'wordDetectionRequest'},
-    {'1': 'text_block_detection_request', '3': 2, '4': 1, '5': 11, '6': '.google.chromeos.uidetection.v1.TextBlockDetectionRequest', '9': 0, '10': 'textBlockDetectionRequest'},
-    {'1': 'custom_icon_detection_request', '3': 3, '4': 1, '5': 11, '6': '.google.chromeos.uidetection.v1.CustomIconDetectionRequest', '9': 0, '10': 'customIconDetectionRequest'},
+    {
+      '1': 'word_detection_request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.uidetection.v1.WordDetectionRequest',
+      '9': 0,
+      '10': 'wordDetectionRequest'
+    },
+    {
+      '1': 'text_block_detection_request',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.uidetection.v1.TextBlockDetectionRequest',
+      '9': 0,
+      '10': 'textBlockDetectionRequest'
+    },
+    {
+      '1': 'custom_icon_detection_request',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chromeos.uidetection.v1.CustomIconDetectionRequest',
+      '9': 0,
+      '10': 'customIconDetectionRequest'
+    },
   ],
   '8': [
     {'1': 'detection_request_type'},
@@ -95,8 +157,22 @@ const WordDetectionRequest$json = {
   '2': [
     {'1': 'word', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'word'},
     {'1': 'regex_mode', '3': 2, '4': 1, '5': 8, '10': 'regexMode'},
-    {'1': 'disable_approx_match', '3': 3, '4': 1, '5': 8, '10': 'disableApproxMatch'},
-    {'1': 'max_edit_distance', '3': 4, '4': 1, '5': 5, '9': 0, '10': 'maxEditDistance', '17': true},
+    {
+      '1': 'disable_approx_match',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'disableApproxMatch'
+    },
+    {
+      '1': 'max_edit_distance',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'maxEditDistance',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_max_edit_distance'},
@@ -116,9 +192,29 @@ const TextBlockDetectionRequest$json = {
   '2': [
     {'1': 'words', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'words'},
     {'1': 'regex_mode', '3': 2, '4': 1, '5': 8, '10': 'regexMode'},
-    {'1': 'disable_approx_match', '3': 3, '4': 1, '5': 8, '10': 'disableApproxMatch'},
-    {'1': 'max_edit_distance', '3': 4, '4': 1, '5': 5, '9': 0, '10': 'maxEditDistance', '17': true},
-    {'1': 'specified_words_only', '3': 5, '4': 1, '5': 8, '10': 'specifiedWordsOnly'},
+    {
+      '1': 'disable_approx_match',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'disableApproxMatch'
+    },
+    {
+      '1': 'max_edit_distance',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'maxEditDistance',
+      '17': true
+    },
+    {
+      '1': 'specified_words_only',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'specifiedWordsOnly'
+    },
   ],
   '8': [
     {'1': '_max_edit_distance'},
@@ -139,23 +235,49 @@ const CustomIconDetectionRequest$json = {
   '2': [
     {'1': 'icon_png', '3': 1, '4': 1, '5': 12, '8': {}, '10': 'iconPng'},
     {'1': 'match_count', '3': 2, '4': 1, '5': 5, '10': 'matchCount'},
-    {'1': 'min_confidence_threshold', '3': 3, '4': 1, '5': 1, '10': 'minConfidenceThreshold'},
+    {
+      '1': 'min_confidence_threshold',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '10': 'minConfidenceThreshold'
+    },
   ],
 };
 
 /// Descriptor for `CustomIconDetectionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List customIconDetectionRequestDescriptor = $convert.base64Decode(
-    'ChpDdXN0b21JY29uRGV0ZWN0aW9uUmVxdWVzdBIeCghpY29uX3BuZxgBIAEoDEID4EECUgdpY2'
-    '9uUG5nEh8KC21hdGNoX2NvdW50GAIgASgFUgptYXRjaENvdW50EjgKGG1pbl9jb25maWRlbmNl'
-    'X3RocmVzaG9sZBgDIAEoAVIWbWluQ29uZmlkZW5jZVRocmVzaG9sZA==');
+final $typed_data.Uint8List customIconDetectionRequestDescriptor =
+    $convert.base64Decode(
+        'ChpDdXN0b21JY29uRGV0ZWN0aW9uUmVxdWVzdBIeCghpY29uX3BuZxgBIAEoDEID4EECUgdpY2'
+        '9uUG5nEh8KC21hdGNoX2NvdW50GAIgASgFUgptYXRjaENvdW50EjgKGG1pbl9jb25maWRlbmNl'
+        'X3RocmVzaG9sZBgDIAEoAVIWbWluQ29uZmlkZW5jZVRocmVzaG9sZA==');
 
 @$core.Deprecated('Use uiDetectionResponseDescriptor instead')
 const UiDetectionResponse$json = {
   '1': 'UiDetectionResponse',
   '2': [
-    {'1': 'bounding_boxes', '3': 1, '4': 3, '5': 11, '6': '.google.chromeos.uidetection.v1.BoundingBox', '10': 'boundingBoxes'},
-    {'1': 'transformed_image_png', '3': 2, '4': 1, '5': 12, '10': 'transformedImagePng'},
-    {'1': 'resizing_scale_factor', '3': 3, '4': 1, '5': 2, '10': 'resizingScaleFactor'},
+    {
+      '1': 'bounding_boxes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chromeos.uidetection.v1.BoundingBox',
+      '10': 'boundingBoxes'
+    },
+    {
+      '1': 'transformed_image_png',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '10': 'transformedImagePng'
+    },
+    {
+      '1': 'resizing_scale_factor',
+      '3': 3,
+      '4': 1,
+      '5': 2,
+      '10': 'resizingScaleFactor'
+    },
   ],
 };
 
@@ -183,4 +305,3 @@ final $typed_data.Uint8List boundingBoxDescriptor = $convert.base64Decode(
     'CgtCb3VuZGluZ0JveBISCgR0ZXh0GAEgASgJUgR0ZXh0EhAKA3RvcBgCIAEoBVIDdG9wEhIKBG'
     'xlZnQYAyABKAVSBGxlZnQSFgoGYm90dG9tGAQgASgFUgZib3R0b20SFAoFcmlnaHQYBSABKAVS'
     'BXJpZ2h0');
-

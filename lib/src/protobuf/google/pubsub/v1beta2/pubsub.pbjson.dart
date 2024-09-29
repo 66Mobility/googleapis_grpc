@@ -22,15 +22,22 @@ const Topic$json = {
 };
 
 /// Descriptor for `Topic`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List topicDescriptor = $convert.base64Decode(
-    'CgVUb3BpYxISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List topicDescriptor =
+    $convert.base64Decode('CgVUb3BpYxISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use pubsubMessageDescriptor instead')
 const PubsubMessage$json = {
   '1': 'PubsubMessage',
   '2': [
     {'1': 'data', '3': 1, '4': 1, '5': 12, '10': 'data'},
-    {'1': 'attributes', '3': 2, '4': 3, '5': 11, '6': '.google.pubsub.v1beta2.PubsubMessage.AttributesEntry', '10': 'attributes'},
+    {
+      '1': 'attributes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.PubsubMessage.AttributesEntry',
+      '10': 'attributes'
+    },
     {'1': 'message_id', '3': 3, '4': 1, '5': 9, '10': 'messageId'},
   ],
   '3': [PubsubMessage_AttributesEntry$json],
@@ -62,15 +69,22 @@ const GetTopicRequest$json = {
 };
 
 /// Descriptor for `GetTopicRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getTopicRequestDescriptor = $convert.base64Decode(
-    'Cg9HZXRUb3BpY1JlcXVlc3QSFAoFdG9waWMYASABKAlSBXRvcGlj');
+final $typed_data.Uint8List getTopicRequestDescriptor = $convert
+    .base64Decode('Cg9HZXRUb3BpY1JlcXVlc3QSFAoFdG9waWMYASABKAlSBXRvcGlj');
 
 @$core.Deprecated('Use publishRequestDescriptor instead')
 const PublishRequest$json = {
   '1': 'PublishRequest',
   '2': [
     {'1': 'topic', '3': 1, '4': 1, '5': 9, '10': 'topic'},
-    {'1': 'messages', '3': 2, '4': 3, '5': 11, '6': '.google.pubsub.v1beta2.PubsubMessage', '10': 'messages'},
+    {
+      '1': 'messages',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.PubsubMessage',
+      '10': 'messages'
+    },
   ],
 };
 
@@ -110,7 +124,14 @@ final $typed_data.Uint8List listTopicsRequestDescriptor = $convert.base64Decode(
 const ListTopicsResponse$json = {
   '1': 'ListTopicsResponse',
   '2': [
-    {'1': 'topics', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1beta2.Topic', '10': 'topics'},
+    {
+      '1': 'topics',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.Topic',
+      '10': 'topics'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -132,10 +153,11 @@ const ListTopicSubscriptionsRequest$json = {
 };
 
 /// Descriptor for `ListTopicSubscriptionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTopicSubscriptionsRequestDescriptor = $convert.base64Decode(
-    'Ch1MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVxdWVzdBIUCgV0b3BpYxgBIAEoCVIFdG9waWMSGw'
-    'oJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYWdlX3Rva2VuGAMgASgJUglwYWdlVG9r'
-    'ZW4=');
+final $typed_data.Uint8List listTopicSubscriptionsRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVxdWVzdBIUCgV0b3BpYxgBIAEoCVIFdG9waWMSGw'
+        'oJcGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYWdlX3Rva2VuGAMgASgJUglwYWdlVG9r'
+        'ZW4=');
 
 @$core.Deprecated('Use listTopicSubscriptionsResponseDescriptor instead')
 const ListTopicSubscriptionsResponse$json = {
@@ -147,9 +169,10 @@ const ListTopicSubscriptionsResponse$json = {
 };
 
 /// Descriptor for `ListTopicSubscriptionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTopicSubscriptionsResponseDescriptor = $convert.base64Decode(
-    'Ch5MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVzcG9uc2USJAoNc3Vic2NyaXB0aW9ucxgBIAMoCV'
-    'INc3Vic2NyaXB0aW9ucxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List listTopicSubscriptionsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch5MaXN0VG9waWNTdWJzY3JpcHRpb25zUmVzcG9uc2USJAoNc3Vic2NyaXB0aW9ucxgBIAMoCV'
+        'INc3Vic2NyaXB0aW9ucxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use deleteTopicRequestDescriptor instead')
 const DeleteTopicRequest$json = {
@@ -160,8 +183,8 @@ const DeleteTopicRequest$json = {
 };
 
 /// Descriptor for `DeleteTopicRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteTopicRequestDescriptor = $convert.base64Decode(
-    'ChJEZWxldGVUb3BpY1JlcXVlc3QSFAoFdG9waWMYASABKAlSBXRvcGlj');
+final $typed_data.Uint8List deleteTopicRequestDescriptor = $convert
+    .base64Decode('ChJEZWxldGVUb3BpY1JlcXVlc3QSFAoFdG9waWMYASABKAlSBXRvcGlj');
 
 @$core.Deprecated('Use subscriptionDescriptor instead')
 const Subscription$json = {
@@ -169,8 +192,21 @@ const Subscription$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'topic', '3': 2, '4': 1, '5': 9, '10': 'topic'},
-    {'1': 'push_config', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1beta2.PushConfig', '10': 'pushConfig'},
-    {'1': 'ack_deadline_seconds', '3': 5, '4': 1, '5': 5, '10': 'ackDeadlineSeconds'},
+    {
+      '1': 'push_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.PushConfig',
+      '10': 'pushConfig'
+    },
+    {
+      '1': 'ack_deadline_seconds',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'ackDeadlineSeconds'
+    },
   ],
 };
 
@@ -186,7 +222,14 @@ const PushConfig$json = {
   '1': 'PushConfig',
   '2': [
     {'1': 'push_endpoint', '3': 1, '4': 1, '5': 9, '10': 'pushEndpoint'},
-    {'1': 'attributes', '3': 2, '4': 3, '5': 11, '6': '.google.pubsub.v1beta2.PushConfig.AttributesEntry', '10': 'attributes'},
+    {
+      '1': 'attributes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.PushConfig.AttributesEntry',
+      '10': 'attributes'
+    },
   ],
   '3': [PushConfig_AttributesEntry$json],
 };
@@ -213,7 +256,14 @@ const ReceivedMessage$json = {
   '1': 'ReceivedMessage',
   '2': [
     {'1': 'ack_id', '3': 1, '4': 1, '5': 9, '10': 'ackId'},
-    {'1': 'message', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1beta2.PubsubMessage', '10': 'message'},
+    {
+      '1': 'message',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.PubsubMessage',
+      '10': 'message'
+    },
   ],
 };
 
@@ -231,9 +281,10 @@ const GetSubscriptionRequest$json = {
 };
 
 /// Descriptor for `GetSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getSubscriptionRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRTdWJzY3JpcHRpb25SZXF1ZXN0EiIKDHN1YnNjcmlwdGlvbhgBIAEoCVIMc3Vic2NyaX'
-    'B0aW9u');
+final $typed_data.Uint8List getSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRTdWJzY3JpcHRpb25SZXF1ZXN0EiIKDHN1YnNjcmlwdGlvbhgBIAEoCVIMc3Vic2NyaX'
+        'B0aW9u');
 
 @$core.Deprecated('Use listSubscriptionsRequestDescriptor instead')
 const ListSubscriptionsRequest$json = {
@@ -255,7 +306,14 @@ final $typed_data.Uint8List listSubscriptionsRequestDescriptor = $convert.base64
 const ListSubscriptionsResponse$json = {
   '1': 'ListSubscriptionsResponse',
   '2': [
-    {'1': 'subscriptions', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1beta2.Subscription', '10': 'subscriptions'},
+    {
+      '1': 'subscriptions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.Subscription',
+      '10': 'subscriptions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -275,16 +333,24 @@ const DeleteSubscriptionRequest$json = {
 };
 
 /// Descriptor for `DeleteSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSubscriptionRequestDescriptor = $convert.base64Decode(
-    'ChlEZWxldGVTdWJzY3JpcHRpb25SZXF1ZXN0EiIKDHN1YnNjcmlwdGlvbhgBIAEoCVIMc3Vic2'
-    'NyaXB0aW9u');
+final $typed_data.Uint8List deleteSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'ChlEZWxldGVTdWJzY3JpcHRpb25SZXF1ZXN0EiIKDHN1YnNjcmlwdGlvbhgBIAEoCVIMc3Vic2'
+        'NyaXB0aW9u');
 
 @$core.Deprecated('Use modifyPushConfigRequestDescriptor instead')
 const ModifyPushConfigRequest$json = {
   '1': 'ModifyPushConfigRequest',
   '2': [
     {'1': 'subscription', '3': 1, '4': 1, '5': 9, '10': 'subscription'},
-    {'1': 'push_config', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1beta2.PushConfig', '10': 'pushConfig'},
+    {
+      '1': 'push_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.PushConfig',
+      '10': 'pushConfig'
+    },
   ],
 };
 
@@ -299,7 +365,13 @@ const PullRequest$json = {
   '1': 'PullRequest',
   '2': [
     {'1': 'subscription', '3': 1, '4': 1, '5': 9, '10': 'subscription'},
-    {'1': 'return_immediately', '3': 2, '4': 1, '5': 8, '10': 'returnImmediately'},
+    {
+      '1': 'return_immediately',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'returnImmediately'
+    },
     {'1': 'max_messages', '3': 3, '4': 1, '5': 5, '10': 'maxMessages'},
   ],
 };
@@ -314,7 +386,14 @@ final $typed_data.Uint8List pullRequestDescriptor = $convert.base64Decode(
 const PullResponse$json = {
   '1': 'PullResponse',
   '2': [
-    {'1': 'received_messages', '3': 1, '4': 3, '5': 11, '6': '.google.pubsub.v1beta2.ReceivedMessage', '10': 'receivedMessages'},
+    {
+      '1': 'received_messages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.pubsub.v1beta2.ReceivedMessage',
+      '10': 'receivedMessages'
+    },
   ],
 };
 
@@ -329,7 +408,13 @@ const ModifyAckDeadlineRequest$json = {
   '2': [
     {'1': 'subscription', '3': 1, '4': 1, '5': 9, '10': 'subscription'},
     {'1': 'ack_id', '3': 2, '4': 1, '5': 9, '10': 'ackId'},
-    {'1': 'ack_deadline_seconds', '3': 3, '4': 1, '5': 5, '10': 'ackDeadlineSeconds'},
+    {
+      '1': 'ack_deadline_seconds',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'ackDeadlineSeconds'
+    },
   ],
 };
 
@@ -352,4 +437,3 @@ const AcknowledgeRequest$json = {
 final $typed_data.Uint8List acknowledgeRequestDescriptor = $convert.base64Decode(
     'ChJBY2tub3dsZWRnZVJlcXVlc3QSIgoMc3Vic2NyaXB0aW9uGAEgASgJUgxzdWJzY3JpcHRpb2'
     '4SFwoHYWNrX2lkcxgCIAMoCVIGYWNrSWRz');
-

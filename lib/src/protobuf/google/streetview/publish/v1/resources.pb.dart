@@ -21,10 +21,7 @@ import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
 
-enum UploadRef_FileSource {
-  uploadUrl, 
-  notSet
-}
+enum UploadRef_FileSource { uploadUrl, notSet }
 
 /// Upload reference for media files.
 class UploadRef extends $pb.GeneratedMessage {
@@ -38,29 +35,36 @@ class UploadRef extends $pb.GeneratedMessage {
     return $result;
   }
   UploadRef._() : super();
-  factory UploadRef.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UploadRef.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UploadRef.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UploadRef.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, UploadRef_FileSource> _UploadRef_FileSourceByTag = {
-    1 : UploadRef_FileSource.uploadUrl,
-    0 : UploadRef_FileSource.notSet
+  static const $core.Map<$core.int, UploadRef_FileSource>
+      _UploadRef_FileSourceByTag = {
+    1: UploadRef_FileSource.uploadUrl,
+    0: UploadRef_FileSource.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadRef', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UploadRef',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'uploadUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UploadRef clone() => UploadRef()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UploadRef copyWith(void Function(UploadRef) updates) => super.copyWith((message) => updates(message as UploadRef)) as UploadRef;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UploadRef copyWith(void Function(UploadRef) updates) =>
+      super.copyWith((message) => updates(message as UploadRef)) as UploadRef;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -69,10 +73,12 @@ class UploadRef extends $pb.GeneratedMessage {
   UploadRef createEmptyInstance() => create();
   static $pb.PbList<UploadRef> createRepeated() => $pb.PbList<UploadRef>();
   @$core.pragma('dart2js:noInline')
-  static UploadRef getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UploadRef>(create);
+  static UploadRef getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UploadRef>(create);
   static UploadRef? _defaultInstance;
 
-  UploadRef_FileSource whichFileSource() => _UploadRef_FileSourceByTag[$_whichOneof(0)]!;
+  UploadRef_FileSource whichFileSource() =>
+      _UploadRef_FileSourceByTag[$_whichOneof(0)]!;
   void clearFileSource() => clearField($_whichOneof(0));
 
   /// An upload reference should be unique for each user. It follows
@@ -81,7 +87,10 @@ class UploadRef extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uploadUrl => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uploadUrl($core.String v) { $_setString(0, v); }
+  set uploadUrl($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUploadUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -100,24 +109,30 @@ class PhotoId extends $pb.GeneratedMessage {
     return $result;
   }
   PhotoId._() : super();
-  factory PhotoId.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PhotoId.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PhotoId.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PhotoId.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhotoId', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PhotoId',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PhotoId clone() => PhotoId()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PhotoId copyWith(void Function(PhotoId) updates) => super.copyWith((message) => updates(message as PhotoId)) as PhotoId;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PhotoId copyWith(void Function(PhotoId) updates) =>
+      super.copyWith((message) => updates(message as PhotoId)) as PhotoId;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -126,14 +141,18 @@ class PhotoId extends $pb.GeneratedMessage {
   PhotoId createEmptyInstance() => create();
   static $pb.PbList<PhotoId> createRepeated() => $pb.PbList<PhotoId>();
   @$core.pragma('dart2js:noInline')
-  static PhotoId getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhotoId>(create);
+  static PhotoId getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhotoId>(create);
   static PhotoId? _defaultInstance;
 
   /// A unique identifier for a photo.
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -156,25 +175,31 @@ class Level extends $pb.GeneratedMessage {
     return $result;
   }
   Level._() : super();
-  factory Level.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Level.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Level.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Level.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Level', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Level',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'number', $pb.PbFieldType.OD)
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Level clone() => Level()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Level copyWith(void Function(Level) updates) => super.copyWith((message) => updates(message as Level)) as Level;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Level copyWith(void Function(Level) updates) =>
+      super.copyWith((message) => updates(message as Level)) as Level;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -183,7 +208,8 @@ class Level extends $pb.GeneratedMessage {
   Level createEmptyInstance() => create();
   static $pb.PbList<Level> createRepeated() => $pb.PbList<Level>();
   @$core.pragma('dart2js:noInline')
-  static Level getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Level>(create);
+  static Level getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Level>(create);
   static Level? _defaultInstance;
 
   /// Optional. Floor number, used for ordering. 0 indicates the ground level, 1
@@ -192,7 +218,10 @@ class Level extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get number => $_getN(0);
   @$pb.TagNumber(1)
-  set number($core.double v) { $_setDouble(0, v); }
+  set number($core.double v) {
+    $_setDouble(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasNumber() => $_has(0);
   @$pb.TagNumber(1)
@@ -204,7 +233,10 @@ class Level extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -251,31 +283,41 @@ class Pose extends $pb.GeneratedMessage {
     return $result;
   }
   Pose._() : super();
-  factory Pose.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Pose.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Pose.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Pose.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Pose', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLngPair', subBuilder: $325.LatLng.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Pose',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLngPair',
+        subBuilder: $325.LatLng.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'altitude', $pb.PbFieldType.OD)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'heading', $pb.PbFieldType.OD)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'pitch', $pb.PbFieldType.OD)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'roll', $pb.PbFieldType.OD)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'gpsRecordTimestampUnixEpoch', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(
+        6, _omitFieldNames ? '' : 'gpsRecordTimestampUnixEpoch',
+        subBuilder: $302.Timestamp.create)
     ..aOM<Level>(7, _omitFieldNames ? '' : 'level', subBuilder: Level.create)
-    ..a<$core.double>(9, _omitFieldNames ? '' : 'accuracyMeters', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        9, _omitFieldNames ? '' : 'accuracyMeters', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Pose clone() => Pose()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Pose copyWith(void Function(Pose) updates) => super.copyWith((message) => updates(message as Pose)) as Pose;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Pose copyWith(void Function(Pose) updates) =>
+      super.copyWith((message) => updates(message as Pose)) as Pose;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -284,7 +326,8 @@ class Pose extends $pb.GeneratedMessage {
   Pose createEmptyInstance() => create();
   static $pb.PbList<Pose> createRepeated() => $pb.PbList<Pose>();
   @$core.pragma('dart2js:noInline')
-  static Pose getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Pose>(create);
+  static Pose getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Pose>(create);
   static Pose? _defaultInstance;
 
   /// Latitude and longitude pair of the pose, as explained here:
@@ -296,7 +339,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get latLngPair => $_getN(0);
   @$pb.TagNumber(1)
-  set latLngPair($325.LatLng v) { setField(1, v); }
+  set latLngPair($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLatLngPair() => $_has(0);
   @$pb.TagNumber(1)
@@ -309,7 +355,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get altitude => $_getN(1);
   @$pb.TagNumber(2)
-  set altitude($core.double v) { $_setDouble(1, v); }
+  set altitude($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAltitude() => $_has(1);
   @$pb.TagNumber(2)
@@ -323,7 +372,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get heading => $_getN(2);
   @$pb.TagNumber(3)
-  set heading($core.double v) { $_setDouble(2, v); }
+  set heading($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasHeading() => $_has(2);
   @$pb.TagNumber(3)
@@ -336,7 +388,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get pitch => $_getN(3);
   @$pb.TagNumber(4)
-  set pitch($core.double v) { $_setDouble(3, v); }
+  set pitch($core.double v) {
+    $_setDouble(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPitch() => $_has(3);
   @$pb.TagNumber(4)
@@ -348,7 +403,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get roll => $_getN(4);
   @$pb.TagNumber(5)
-  set roll($core.double v) { $_setDouble(4, v); }
+  set roll($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRoll() => $_has(4);
   @$pb.TagNumber(5)
@@ -358,7 +416,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get gpsRecordTimestampUnixEpoch => $_getN(5);
   @$pb.TagNumber(6)
-  set gpsRecordTimestampUnixEpoch($302.Timestamp v) { setField(6, v); }
+  set gpsRecordTimestampUnixEpoch($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasGpsRecordTimestampUnixEpoch() => $_has(5);
   @$pb.TagNumber(6)
@@ -370,7 +431,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Level get level => $_getN(6);
   @$pb.TagNumber(7)
-  set level(Level v) { setField(7, v); }
+  set level(Level v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasLevel() => $_has(6);
   @$pb.TagNumber(7)
@@ -387,7 +451,10 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get accuracyMeters => $_getN(7);
   @$pb.TagNumber(9)
-  set accuracyMeters($core.double v) { $_setFloat(7, v); }
+  set accuracyMeters($core.double v) {
+    $_setFloat(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasAccuracyMeters() => $_has(7);
   @$pb.TagNumber(9)
@@ -418,43 +485,56 @@ class Imu_Measurement3d extends $pb.GeneratedMessage {
     return $result;
   }
   Imu_Measurement3d._() : super();
-  factory Imu_Measurement3d.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Imu_Measurement3d.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Imu_Measurement3d.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Imu_Measurement3d.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Imu.Measurement3d', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'captureTime', subBuilder: $302.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Imu.Measurement3d',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'captureTime',
+        subBuilder: $302.Timestamp.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'x', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'y', $pb.PbFieldType.OF)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'z', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Imu_Measurement3d clone() => Imu_Measurement3d()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Imu_Measurement3d copyWith(void Function(Imu_Measurement3d) updates) => super.copyWith((message) => updates(message as Imu_Measurement3d)) as Imu_Measurement3d;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Imu_Measurement3d copyWith(void Function(Imu_Measurement3d) updates) =>
+      super.copyWith((message) => updates(message as Imu_Measurement3d))
+          as Imu_Measurement3d;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Imu_Measurement3d create() => Imu_Measurement3d._();
   Imu_Measurement3d createEmptyInstance() => create();
-  static $pb.PbList<Imu_Measurement3d> createRepeated() => $pb.PbList<Imu_Measurement3d>();
+  static $pb.PbList<Imu_Measurement3d> createRepeated() =>
+      $pb.PbList<Imu_Measurement3d>();
   @$core.pragma('dart2js:noInline')
-  static Imu_Measurement3d getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Imu_Measurement3d>(create);
+  static Imu_Measurement3d getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Imu_Measurement3d>(create);
   static Imu_Measurement3d? _defaultInstance;
 
   /// The timestamp of the IMU measurement.
   @$pb.TagNumber(1)
   $302.Timestamp get captureTime => $_getN(0);
   @$pb.TagNumber(1)
-  set captureTime($302.Timestamp v) { setField(1, v); }
+  set captureTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCaptureTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -466,7 +546,10 @@ class Imu_Measurement3d extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get x => $_getN(1);
   @$pb.TagNumber(2)
-  set x($core.double v) { $_setFloat(1, v); }
+  set x($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasX() => $_has(1);
   @$pb.TagNumber(2)
@@ -476,7 +559,10 @@ class Imu_Measurement3d extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get y => $_getN(2);
   @$pb.TagNumber(3)
-  set y($core.double v) { $_setFloat(2, v); }
+  set y($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasY() => $_has(2);
   @$pb.TagNumber(3)
@@ -486,7 +572,10 @@ class Imu_Measurement3d extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get z => $_getN(3);
   @$pb.TagNumber(4)
-  set z($core.double v) { $_setFloat(3, v); }
+  set z($core.double v) {
+    $_setFloat(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasZ() => $_has(3);
   @$pb.TagNumber(4)
@@ -513,26 +602,38 @@ class Imu extends $pb.GeneratedMessage {
     return $result;
   }
   Imu._() : super();
-  factory Imu.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Imu.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Imu.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Imu.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Imu', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..pc<Imu_Measurement3d>(1, _omitFieldNames ? '' : 'accelMpsps', $pb.PbFieldType.PM, subBuilder: Imu_Measurement3d.create)
-    ..pc<Imu_Measurement3d>(2, _omitFieldNames ? '' : 'gyroRps', $pb.PbFieldType.PM, subBuilder: Imu_Measurement3d.create)
-    ..pc<Imu_Measurement3d>(3, _omitFieldNames ? '' : 'magUt', $pb.PbFieldType.PM, subBuilder: Imu_Measurement3d.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Imu',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..pc<Imu_Measurement3d>(
+        1, _omitFieldNames ? '' : 'accelMpsps', $pb.PbFieldType.PM,
+        subBuilder: Imu_Measurement3d.create)
+    ..pc<Imu_Measurement3d>(
+        2, _omitFieldNames ? '' : 'gyroRps', $pb.PbFieldType.PM,
+        subBuilder: Imu_Measurement3d.create)
+    ..pc<Imu_Measurement3d>(
+        3, _omitFieldNames ? '' : 'magUt', $pb.PbFieldType.PM,
+        subBuilder: Imu_Measurement3d.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Imu clone() => Imu()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Imu copyWith(void Function(Imu) updates) => super.copyWith((message) => updates(message as Imu)) as Imu;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Imu copyWith(void Function(Imu) updates) =>
+      super.copyWith((message) => updates(message as Imu)) as Imu;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -541,7 +642,8 @@ class Imu extends $pb.GeneratedMessage {
   Imu createEmptyInstance() => create();
   static $pb.PbList<Imu> createRepeated() => $pb.PbList<Imu>();
   @$core.pragma('dart2js:noInline')
-  static Imu getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Imu>(create);
+  static Imu getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Imu>(create);
   static Imu? _defaultInstance;
 
   /// The accelerometer measurements in meters/sec^2 with increasing timestamps
@@ -580,26 +682,32 @@ class Place extends $pb.GeneratedMessage {
     return $result;
   }
   Place._() : super();
-  factory Place.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Place.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Place.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'placeId')
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Place clone() => Place()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Place copyWith(void Function(Place) updates) => super.copyWith((message) => updates(message as Place)) as Place;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place copyWith(void Function(Place) updates) =>
+      super.copyWith((message) => updates(message as Place)) as Place;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -608,7 +716,8 @@ class Place extends $pb.GeneratedMessage {
   Place createEmptyInstance() => create();
   static $pb.PbList<Place> createRepeated() => $pb.PbList<Place>();
   @$core.pragma('dart2js:noInline')
-  static Place getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place>(create);
+  static Place getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place>(create);
   static Place? _defaultInstance;
 
   /// Place identifier, as described in
@@ -616,7 +725,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get placeId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set placeId($core.String v) { $_setString(0, v); }
+  set placeId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPlaceId() => $_has(0);
   @$pb.TagNumber(1)
@@ -626,7 +738,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -637,7 +752,10 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get languageCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set languageCode($core.String v) { $_setString(2, v); }
+  set languageCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLanguageCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -656,24 +774,31 @@ class Connection extends $pb.GeneratedMessage {
     return $result;
   }
   Connection._() : super();
-  factory Connection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Connection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Connection.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Connection.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Connection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<PhotoId>(1, _omitFieldNames ? '' : 'target', subBuilder: PhotoId.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Connection',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<PhotoId>(1, _omitFieldNames ? '' : 'target',
+        subBuilder: PhotoId.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Connection clone() => Connection()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Connection copyWith(void Function(Connection) updates) => super.copyWith((message) => updates(message as Connection)) as Connection;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Connection copyWith(void Function(Connection) updates) =>
+      super.copyWith((message) => updates(message as Connection)) as Connection;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -682,7 +807,8 @@ class Connection extends $pb.GeneratedMessage {
   Connection createEmptyInstance() => create();
   static $pb.PbList<Connection> createRepeated() => $pb.PbList<Connection>();
   @$core.pragma('dart2js:noInline')
-  static Connection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Connection>(create);
+  static Connection getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Connection>(create);
   static Connection? _defaultInstance;
 
   /// Required. The destination of the connection from the containing photo to
@@ -690,7 +816,10 @@ class Connection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PhotoId get target => $_getN(0);
   @$pb.TagNumber(1)
-  set target(PhotoId v) { setField(1, v); }
+  set target(PhotoId v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTarget() => $_has(0);
   @$pb.TagNumber(1)
@@ -759,36 +888,57 @@ class Photo extends $pb.GeneratedMessage {
     return $result;
   }
   Photo._() : super();
-  factory Photo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Photo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Photo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Photo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Photo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<PhotoId>(1, _omitFieldNames ? '' : 'photoId', subBuilder: PhotoId.create)
-    ..aOM<UploadRef>(2, _omitFieldNames ? '' : 'uploadReference', subBuilder: UploadRef.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Photo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<PhotoId>(1, _omitFieldNames ? '' : 'photoId',
+        subBuilder: PhotoId.create)
+    ..aOM<UploadRef>(2, _omitFieldNames ? '' : 'uploadReference',
+        subBuilder: UploadRef.create)
     ..aOS(3, _omitFieldNames ? '' : 'downloadUrl')
     ..aOM<Pose>(4, _omitFieldNames ? '' : 'pose', subBuilder: Pose.create)
-    ..pc<Connection>(5, _omitFieldNames ? '' : 'connections', $pb.PbFieldType.PM, subBuilder: Connection.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'captureTime', subBuilder: $302.Timestamp.create)
-    ..pc<Place>(7, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM, subBuilder: Place.create)
+    ..pc<Connection>(
+        5, _omitFieldNames ? '' : 'connections', $pb.PbFieldType.PM,
+        subBuilder: Connection.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'captureTime',
+        subBuilder: $302.Timestamp.create)
+    ..pc<Place>(7, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM,
+        subBuilder: Place.create)
     ..aOS(9, _omitFieldNames ? '' : 'thumbnailUrl')
     ..aInt64(10, _omitFieldNames ? '' : 'viewCount')
     ..aOS(11, _omitFieldNames ? '' : 'shareLink')
-    ..e<Photo_TransferStatus>(12, _omitFieldNames ? '' : 'transferStatus', $pb.PbFieldType.OE, defaultOrMaker: Photo_TransferStatus.TRANSFER_STATUS_UNKNOWN, valueOf: Photo_TransferStatus.valueOf, enumValues: Photo_TransferStatus.values)
-    ..e<Photo_MapsPublishStatus>(13, _omitFieldNames ? '' : 'mapsPublishStatus', $pb.PbFieldType.OE, defaultOrMaker: Photo_MapsPublishStatus.UNSPECIFIED_MAPS_PUBLISH_STATUS, valueOf: Photo_MapsPublishStatus.valueOf, enumValues: Photo_MapsPublishStatus.values)
-    ..aOM<$302.Timestamp>(14, _omitFieldNames ? '' : 'uploadTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<Photo_TransferStatus>(
+        12, _omitFieldNames ? '' : 'transferStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: Photo_TransferStatus.TRANSFER_STATUS_UNKNOWN,
+        valueOf: Photo_TransferStatus.valueOf,
+        enumValues: Photo_TransferStatus.values)
+    ..e<Photo_MapsPublishStatus>(
+        13, _omitFieldNames ? '' : 'mapsPublishStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: Photo_MapsPublishStatus.UNSPECIFIED_MAPS_PUBLISH_STATUS,
+        valueOf: Photo_MapsPublishStatus.valueOf,
+        enumValues: Photo_MapsPublishStatus.values)
+    ..aOM<$302.Timestamp>(14, _omitFieldNames ? '' : 'uploadTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Photo clone() => Photo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Photo copyWith(void Function(Photo) updates) => super.copyWith((message) => updates(message as Photo)) as Photo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Photo copyWith(void Function(Photo) updates) =>
+      super.copyWith((message) => updates(message as Photo)) as Photo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -797,7 +947,8 @@ class Photo extends $pb.GeneratedMessage {
   Photo createEmptyInstance() => create();
   static $pb.PbList<Photo> createRepeated() => $pb.PbList<Photo>();
   @$core.pragma('dart2js:noInline')
-  static Photo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Photo>(create);
+  static Photo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Photo>(create);
   static Photo? _defaultInstance;
 
   /// Required. Output only. Required when updating a photo. Output only when
@@ -806,7 +957,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PhotoId get photoId => $_getN(0);
   @$pb.TagNumber(1)
-  set photoId(PhotoId v) { setField(1, v); }
+  set photoId(PhotoId v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPhotoId() => $_has(0);
   @$pb.TagNumber(1)
@@ -819,7 +973,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   UploadRef get uploadReference => $_getN(1);
   @$pb.TagNumber(2)
-  set uploadReference(UploadRef v) { setField(2, v); }
+  set uploadReference(UploadRef v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUploadReference() => $_has(1);
   @$pb.TagNumber(2)
@@ -835,7 +992,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get downloadUrl => $_getSZ(2);
   @$pb.TagNumber(3)
-  set downloadUrl($core.String v) { $_setString(2, v); }
+  set downloadUrl($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDownloadUrl() => $_has(2);
   @$pb.TagNumber(3)
@@ -845,7 +1005,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Pose get pose => $_getN(3);
   @$pb.TagNumber(4)
-  set pose(Pose v) { setField(4, v); }
+  set pose(Pose v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPose() => $_has(3);
   @$pb.TagNumber(4)
@@ -864,7 +1027,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get captureTime => $_getN(5);
   @$pb.TagNumber(6)
-  set captureTime($302.Timestamp v) { setField(6, v); }
+  set captureTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCaptureTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -880,7 +1046,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get thumbnailUrl => $_getSZ(7);
   @$pb.TagNumber(9)
-  set thumbnailUrl($core.String v) { $_setString(7, v); }
+  set thumbnailUrl($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasThumbnailUrl() => $_has(7);
   @$pb.TagNumber(9)
@@ -890,7 +1059,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $fixnum.Int64 get viewCount => $_getI64(8);
   @$pb.TagNumber(10)
-  set viewCount($fixnum.Int64 v) { $_setInt64(8, v); }
+  set viewCount($fixnum.Int64 v) {
+    $_setInt64(8, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasViewCount() => $_has(8);
   @$pb.TagNumber(10)
@@ -900,7 +1072,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get shareLink => $_getSZ(9);
   @$pb.TagNumber(11)
-  set shareLink($core.String v) { $_setString(9, v); }
+  set shareLink($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasShareLink() => $_has(9);
   @$pb.TagNumber(11)
@@ -910,7 +1085,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Photo_TransferStatus get transferStatus => $_getN(10);
   @$pb.TagNumber(12)
-  set transferStatus(Photo_TransferStatus v) { setField(12, v); }
+  set transferStatus(Photo_TransferStatus v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasTransferStatus() => $_has(10);
   @$pb.TagNumber(12)
@@ -921,7 +1099,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   Photo_MapsPublishStatus get mapsPublishStatus => $_getN(11);
   @$pb.TagNumber(13)
-  set mapsPublishStatus(Photo_MapsPublishStatus v) { setField(13, v); }
+  set mapsPublishStatus(Photo_MapsPublishStatus v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasMapsPublishStatus() => $_has(11);
   @$pb.TagNumber(13)
@@ -931,7 +1112,10 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $302.Timestamp get uploadTime => $_getN(12);
   @$pb.TagNumber(14)
-  set uploadTime($302.Timestamp v) { setField(14, v); }
+  set uploadTime($302.Timestamp v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasUploadTime() => $_has(12);
   @$pb.TagNumber(14)
@@ -1008,47 +1192,77 @@ class PhotoSequence extends $pb.GeneratedMessage {
     return $result;
   }
   PhotoSequence._() : super();
-  factory PhotoSequence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PhotoSequence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PhotoSequence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PhotoSequence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhotoSequence', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PhotoSequence',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..pc<Photo>(2, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM, subBuilder: Photo.create)
-    ..aOM<UploadRef>(3, _omitFieldNames ? '' : 'uploadReference', subBuilder: UploadRef.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'captureTimeOverride', subBuilder: $302.Timestamp.create)
-    ..pc<Pose>(7, _omitFieldNames ? '' : 'rawGpsTimeline', $pb.PbFieldType.PM, subBuilder: Pose.create)
-    ..e<PhotoSequence_GpsSource>(8, _omitFieldNames ? '' : 'gpsSource', $pb.PbFieldType.OE, defaultOrMaker: PhotoSequence_GpsSource.PHOTO_SEQUENCE, valueOf: PhotoSequence_GpsSource.valueOf, enumValues: PhotoSequence_GpsSource.values)
+    ..pc<Photo>(2, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM,
+        subBuilder: Photo.create)
+    ..aOM<UploadRef>(3, _omitFieldNames ? '' : 'uploadReference',
+        subBuilder: UploadRef.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'captureTimeOverride',
+        subBuilder: $302.Timestamp.create)
+    ..pc<Pose>(7, _omitFieldNames ? '' : 'rawGpsTimeline', $pb.PbFieldType.PM,
+        subBuilder: Pose.create)
+    ..e<PhotoSequence_GpsSource>(
+        8, _omitFieldNames ? '' : 'gpsSource', $pb.PbFieldType.OE,
+        defaultOrMaker: PhotoSequence_GpsSource.PHOTO_SEQUENCE,
+        valueOf: PhotoSequence_GpsSource.valueOf,
+        enumValues: PhotoSequence_GpsSource.values)
     ..aOM<Imu>(11, _omitFieldNames ? '' : 'imu', subBuilder: Imu.create)
-    ..e<ProcessingState>(12, _omitFieldNames ? '' : 'processingState', $pb.PbFieldType.OE, defaultOrMaker: ProcessingState.PROCESSING_STATE_UNSPECIFIED, valueOf: ProcessingState.valueOf, enumValues: ProcessingState.values)
-    ..e<ProcessingFailureReason>(13, _omitFieldNames ? '' : 'failureReason', $pb.PbFieldType.OE, defaultOrMaker: ProcessingFailureReason.PROCESSING_FAILURE_REASON_UNSPECIFIED, valueOf: ProcessingFailureReason.valueOf, enumValues: ProcessingFailureReason.values)
-    ..a<$core.double>(16, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.OD)
-    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'uploadTime', subBuilder: $302.Timestamp.create)
-    ..aOM<LatLngBounds>(20, _omitFieldNames ? '' : 'sequenceBounds', subBuilder: LatLngBounds.create)
+    ..e<ProcessingState>(
+        12, _omitFieldNames ? '' : 'processingState', $pb.PbFieldType.OE,
+        defaultOrMaker: ProcessingState.PROCESSING_STATE_UNSPECIFIED,
+        valueOf: ProcessingState.valueOf,
+        enumValues: ProcessingState.values)
+    ..e<ProcessingFailureReason>(
+        13, _omitFieldNames ? '' : 'failureReason', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            ProcessingFailureReason.PROCESSING_FAILURE_REASON_UNSPECIFIED,
+        valueOf: ProcessingFailureReason.valueOf,
+        enumValues: ProcessingFailureReason.values)
+    ..a<$core.double>(
+        16, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.OD)
+    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'uploadTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<LatLngBounds>(20, _omitFieldNames ? '' : 'sequenceBounds',
+        subBuilder: LatLngBounds.create)
     ..aInt64(21, _omitFieldNames ? '' : 'viewCount')
     ..aOS(22, _omitFieldNames ? '' : 'filename')
-    ..aOM<ProcessingFailureDetails>(23, _omitFieldNames ? '' : 'failureDetails', subBuilder: ProcessingFailureDetails.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ProcessingFailureDetails>(23, _omitFieldNames ? '' : 'failureDetails',
+        subBuilder: ProcessingFailureDetails.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PhotoSequence clone() => PhotoSequence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PhotoSequence copyWith(void Function(PhotoSequence) updates) => super.copyWith((message) => updates(message as PhotoSequence)) as PhotoSequence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PhotoSequence copyWith(void Function(PhotoSequence) updates) =>
+      super.copyWith((message) => updates(message as PhotoSequence))
+          as PhotoSequence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PhotoSequence create() => PhotoSequence._();
   PhotoSequence createEmptyInstance() => create();
-  static $pb.PbList<PhotoSequence> createRepeated() => $pb.PbList<PhotoSequence>();
+  static $pb.PbList<PhotoSequence> createRepeated() =>
+      $pb.PbList<PhotoSequence>();
   @$core.pragma('dart2js:noInline')
-  static PhotoSequence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhotoSequence>(create);
+  static PhotoSequence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PhotoSequence>(create);
   static PhotoSequence? _defaultInstance;
 
   /// Output only. Unique identifier for the photo sequence.
@@ -1057,7 +1271,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1072,7 +1289,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   UploadRef get uploadReference => $_getN(2);
   @$pb.TagNumber(3)
-  set uploadReference(UploadRef v) { setField(3, v); }
+  set uploadReference(UploadRef v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUploadReference() => $_has(2);
   @$pb.TagNumber(3)
@@ -1087,7 +1307,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get captureTimeOverride => $_getN(3);
   @$pb.TagNumber(4)
-  set captureTimeOverride($302.Timestamp v) { setField(4, v); }
+  set captureTimeOverride($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCaptureTimeOverride() => $_has(3);
   @$pb.TagNumber(4)
@@ -1111,7 +1334,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   PhotoSequence_GpsSource get gpsSource => $_getN(5);
   @$pb.TagNumber(8)
-  set gpsSource(PhotoSequence_GpsSource v) { setField(8, v); }
+  set gpsSource(PhotoSequence_GpsSource v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasGpsSource() => $_has(5);
   @$pb.TagNumber(8)
@@ -1124,7 +1350,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Imu get imu => $_getN(6);
   @$pb.TagNumber(11)
-  set imu(Imu v) { setField(11, v); }
+  set imu(Imu v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasImu() => $_has(6);
   @$pb.TagNumber(11)
@@ -1136,7 +1365,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   ProcessingState get processingState => $_getN(7);
   @$pb.TagNumber(12)
-  set processingState(ProcessingState v) { setField(12, v); }
+  set processingState(ProcessingState v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasProcessingState() => $_has(7);
   @$pb.TagNumber(12)
@@ -1148,7 +1380,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   ProcessingFailureReason get failureReason => $_getN(8);
   @$pb.TagNumber(13)
-  set failureReason(ProcessingFailureReason v) { setField(13, v); }
+  set failureReason(ProcessingFailureReason v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasFailureReason() => $_has(8);
   @$pb.TagNumber(13)
@@ -1158,7 +1393,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.double get distanceMeters => $_getN(9);
   @$pb.TagNumber(16)
-  set distanceMeters($core.double v) { $_setDouble(9, v); }
+  set distanceMeters($core.double v) {
+    $_setDouble(9, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasDistanceMeters() => $_has(9);
   @$pb.TagNumber(16)
@@ -1168,7 +1406,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $302.Timestamp get uploadTime => $_getN(10);
   @$pb.TagNumber(18)
-  set uploadTime($302.Timestamp v) { setField(18, v); }
+  set uploadTime($302.Timestamp v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasUploadTime() => $_has(10);
   @$pb.TagNumber(18)
@@ -1181,7 +1422,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   LatLngBounds get sequenceBounds => $_getN(11);
   @$pb.TagNumber(20)
-  set sequenceBounds(LatLngBounds v) { setField(20, v); }
+  set sequenceBounds(LatLngBounds v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasSequenceBounds() => $_has(11);
   @$pb.TagNumber(20)
@@ -1194,7 +1438,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $fixnum.Int64 get viewCount => $_getI64(12);
   @$pb.TagNumber(21)
-  set viewCount($fixnum.Int64 v) { $_setInt64(12, v); }
+  set viewCount($fixnum.Int64 v) {
+    $_setInt64(12, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasViewCount() => $_has(12);
   @$pb.TagNumber(21)
@@ -1206,7 +1453,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get filename => $_getSZ(13);
   @$pb.TagNumber(22)
-  set filename($core.String v) { $_setString(13, v); }
+  set filename($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasFilename() => $_has(13);
   @$pb.TagNumber(22)
@@ -1217,7 +1467,10 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   ProcessingFailureDetails get failureDetails => $_getN(14);
   @$pb.TagNumber(23)
-  set failureDetails(ProcessingFailureDetails v) { setField(23, v); }
+  set failureDetails(ProcessingFailureDetails v) {
+    setField(23, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasFailureDetails() => $_has(14);
   @$pb.TagNumber(23)
@@ -1242,41 +1495,55 @@ class LatLngBounds extends $pb.GeneratedMessage {
     return $result;
   }
   LatLngBounds._() : super();
-  factory LatLngBounds.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LatLngBounds.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LatLngBounds.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LatLngBounds.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LatLngBounds', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'southwest', subBuilder: $325.LatLng.create)
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'northeast', subBuilder: $325.LatLng.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LatLngBounds',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'southwest',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'northeast',
+        subBuilder: $325.LatLng.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LatLngBounds clone() => LatLngBounds()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LatLngBounds copyWith(void Function(LatLngBounds) updates) => super.copyWith((message) => updates(message as LatLngBounds)) as LatLngBounds;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LatLngBounds copyWith(void Function(LatLngBounds) updates) =>
+      super.copyWith((message) => updates(message as LatLngBounds))
+          as LatLngBounds;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LatLngBounds create() => LatLngBounds._();
   LatLngBounds createEmptyInstance() => create();
-  static $pb.PbList<LatLngBounds> createRepeated() => $pb.PbList<LatLngBounds>();
+  static $pb.PbList<LatLngBounds> createRepeated() =>
+      $pb.PbList<LatLngBounds>();
   @$core.pragma('dart2js:noInline')
-  static LatLngBounds getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LatLngBounds>(create);
+  static LatLngBounds getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LatLngBounds>(create);
   static LatLngBounds? _defaultInstance;
 
   /// The southwest corner of these bounds.
   @$pb.TagNumber(1)
   $325.LatLng get southwest => $_getN(0);
   @$pb.TagNumber(1)
-  set southwest($325.LatLng v) { setField(1, v); }
+  set southwest($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSouthwest() => $_has(0);
   @$pb.TagNumber(1)
@@ -1288,7 +1555,10 @@ class LatLngBounds extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $325.LatLng get northeast => $_getN(1);
   @$pb.TagNumber(2)
-  set northeast($325.LatLng v) { setField(2, v); }
+  set northeast($325.LatLng v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNortheast() => $_has(1);
   @$pb.TagNumber(2)
@@ -1298,11 +1568,11 @@ class LatLngBounds extends $pb.GeneratedMessage {
 }
 
 enum ProcessingFailureDetails_Details {
-  insufficientGpsDetails, 
-  gpsDataGapDetails, 
-  imuDataGapDetails, 
-  notOutdoorsDetails, 
-  noOverlapGpsDetails, 
+  insufficientGpsDetails,
+  gpsDataGapDetails,
+  imuDataGapDetails,
+  notOutdoorsDetails,
+  noOverlapGpsDetails,
   notSet
 }
 
@@ -1337,56 +1607,82 @@ class ProcessingFailureDetails extends $pb.GeneratedMessage {
     return $result;
   }
   ProcessingFailureDetails._() : super();
-  factory ProcessingFailureDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessingFailureDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessingFailureDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessingFailureDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ProcessingFailureDetails_Details> _ProcessingFailureDetails_DetailsByTag = {
-    1 : ProcessingFailureDetails_Details.insufficientGpsDetails,
-    2 : ProcessingFailureDetails_Details.gpsDataGapDetails,
-    3 : ProcessingFailureDetails_Details.imuDataGapDetails,
-    4 : ProcessingFailureDetails_Details.notOutdoorsDetails,
-    5 : ProcessingFailureDetails_Details.noOverlapGpsDetails,
-    0 : ProcessingFailureDetails_Details.notSet
+  static const $core.Map<$core.int, ProcessingFailureDetails_Details>
+      _ProcessingFailureDetails_DetailsByTag = {
+    1: ProcessingFailureDetails_Details.insufficientGpsDetails,
+    2: ProcessingFailureDetails_Details.gpsDataGapDetails,
+    3: ProcessingFailureDetails_Details.imuDataGapDetails,
+    4: ProcessingFailureDetails_Details.notOutdoorsDetails,
+    5: ProcessingFailureDetails_Details.noOverlapGpsDetails,
+    0: ProcessingFailureDetails_Details.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessingFailureDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProcessingFailureDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
-    ..aOM<InsufficientGpsFailureDetails>(1, _omitFieldNames ? '' : 'insufficientGpsDetails', subBuilder: InsufficientGpsFailureDetails.create)
-    ..aOM<GpsDataGapFailureDetails>(2, _omitFieldNames ? '' : 'gpsDataGapDetails', subBuilder: GpsDataGapFailureDetails.create)
-    ..aOM<ImuDataGapFailureDetails>(3, _omitFieldNames ? '' : 'imuDataGapDetails', subBuilder: ImuDataGapFailureDetails.create)
-    ..aOM<NotOutdoorsFailureDetails>(4, _omitFieldNames ? '' : 'notOutdoorsDetails', subBuilder: NotOutdoorsFailureDetails.create)
-    ..aOM<NoOverlapGpsFailureDetails>(5, _omitFieldNames ? '' : 'noOverlapGpsDetails', subBuilder: NoOverlapGpsFailureDetails.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<InsufficientGpsFailureDetails>(
+        1, _omitFieldNames ? '' : 'insufficientGpsDetails',
+        subBuilder: InsufficientGpsFailureDetails.create)
+    ..aOM<GpsDataGapFailureDetails>(
+        2, _omitFieldNames ? '' : 'gpsDataGapDetails',
+        subBuilder: GpsDataGapFailureDetails.create)
+    ..aOM<ImuDataGapFailureDetails>(
+        3, _omitFieldNames ? '' : 'imuDataGapDetails',
+        subBuilder: ImuDataGapFailureDetails.create)
+    ..aOM<NotOutdoorsFailureDetails>(
+        4, _omitFieldNames ? '' : 'notOutdoorsDetails',
+        subBuilder: NotOutdoorsFailureDetails.create)
+    ..aOM<NoOverlapGpsFailureDetails>(
+        5, _omitFieldNames ? '' : 'noOverlapGpsDetails',
+        subBuilder: NoOverlapGpsFailureDetails.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProcessingFailureDetails clone() => ProcessingFailureDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessingFailureDetails copyWith(void Function(ProcessingFailureDetails) updates) => super.copyWith((message) => updates(message as ProcessingFailureDetails)) as ProcessingFailureDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProcessingFailureDetails clone() =>
+      ProcessingFailureDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessingFailureDetails copyWith(
+          void Function(ProcessingFailureDetails) updates) =>
+      super.copyWith((message) => updates(message as ProcessingFailureDetails))
+          as ProcessingFailureDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProcessingFailureDetails create() => ProcessingFailureDetails._();
   ProcessingFailureDetails createEmptyInstance() => create();
-  static $pb.PbList<ProcessingFailureDetails> createRepeated() => $pb.PbList<ProcessingFailureDetails>();
+  static $pb.PbList<ProcessingFailureDetails> createRepeated() =>
+      $pb.PbList<ProcessingFailureDetails>();
   @$core.pragma('dart2js:noInline')
-  static ProcessingFailureDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessingFailureDetails>(create);
+  static ProcessingFailureDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProcessingFailureDetails>(create);
   static ProcessingFailureDetails? _defaultInstance;
 
-  ProcessingFailureDetails_Details whichDetails() => _ProcessingFailureDetails_DetailsByTag[$_whichOneof(0)]!;
+  ProcessingFailureDetails_Details whichDetails() =>
+      _ProcessingFailureDetails_DetailsByTag[$_whichOneof(0)]!;
   void clearDetails() => clearField($_whichOneof(0));
 
   /// See InsufficientGpsFailureDetails.
   @$pb.TagNumber(1)
   InsufficientGpsFailureDetails get insufficientGpsDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set insufficientGpsDetails(InsufficientGpsFailureDetails v) { setField(1, v); }
+  set insufficientGpsDetails(InsufficientGpsFailureDetails v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInsufficientGpsDetails() => $_has(0);
   @$pb.TagNumber(1)
@@ -1398,7 +1694,10 @@ class ProcessingFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   GpsDataGapFailureDetails get gpsDataGapDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set gpsDataGapDetails(GpsDataGapFailureDetails v) { setField(2, v); }
+  set gpsDataGapDetails(GpsDataGapFailureDetails v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGpsDataGapDetails() => $_has(1);
   @$pb.TagNumber(2)
@@ -1410,7 +1709,10 @@ class ProcessingFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ImuDataGapFailureDetails get imuDataGapDetails => $_getN(2);
   @$pb.TagNumber(3)
-  set imuDataGapDetails(ImuDataGapFailureDetails v) { setField(3, v); }
+  set imuDataGapDetails(ImuDataGapFailureDetails v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasImuDataGapDetails() => $_has(2);
   @$pb.TagNumber(3)
@@ -1422,7 +1724,10 @@ class ProcessingFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   NotOutdoorsFailureDetails get notOutdoorsDetails => $_getN(3);
   @$pb.TagNumber(4)
-  set notOutdoorsDetails(NotOutdoorsFailureDetails v) { setField(4, v); }
+  set notOutdoorsDetails(NotOutdoorsFailureDetails v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasNotOutdoorsDetails() => $_has(3);
   @$pb.TagNumber(4)
@@ -1434,7 +1739,10 @@ class ProcessingFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   NoOverlapGpsFailureDetails get noOverlapGpsDetails => $_getN(4);
   @$pb.TagNumber(5)
-  set noOverlapGpsDetails(NoOverlapGpsFailureDetails v) { setField(5, v); }
+  set noOverlapGpsDetails(NoOverlapGpsFailureDetails v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasNoOverlapGpsDetails() => $_has(4);
   @$pb.TagNumber(5)
@@ -1455,40 +1763,57 @@ class InsufficientGpsFailureDetails extends $pb.GeneratedMessage {
     return $result;
   }
   InsufficientGpsFailureDetails._() : super();
-  factory InsufficientGpsFailureDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InsufficientGpsFailureDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InsufficientGpsFailureDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InsufficientGpsFailureDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsufficientGpsFailureDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'gpsPointsFound', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InsufficientGpsFailureDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'gpsPointsFound', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InsufficientGpsFailureDetails clone() => InsufficientGpsFailureDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InsufficientGpsFailureDetails copyWith(void Function(InsufficientGpsFailureDetails) updates) => super.copyWith((message) => updates(message as InsufficientGpsFailureDetails)) as InsufficientGpsFailureDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InsufficientGpsFailureDetails clone() =>
+      InsufficientGpsFailureDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InsufficientGpsFailureDetails copyWith(
+          void Function(InsufficientGpsFailureDetails) updates) =>
+      super.copyWith(
+              (message) => updates(message as InsufficientGpsFailureDetails))
+          as InsufficientGpsFailureDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static InsufficientGpsFailureDetails create() => InsufficientGpsFailureDetails._();
+  static InsufficientGpsFailureDetails create() =>
+      InsufficientGpsFailureDetails._();
   InsufficientGpsFailureDetails createEmptyInstance() => create();
-  static $pb.PbList<InsufficientGpsFailureDetails> createRepeated() => $pb.PbList<InsufficientGpsFailureDetails>();
+  static $pb.PbList<InsufficientGpsFailureDetails> createRepeated() =>
+      $pb.PbList<InsufficientGpsFailureDetails>();
   @$core.pragma('dart2js:noInline')
-  static InsufficientGpsFailureDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InsufficientGpsFailureDetails>(create);
+  static InsufficientGpsFailureDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InsufficientGpsFailureDetails>(create);
   static InsufficientGpsFailureDetails? _defaultInstance;
 
   /// The number of GPS points that were found in the video.
   @$pb.TagNumber(1)
   $core.int get gpsPointsFound => $_getIZ(0);
   @$pb.TagNumber(1)
-  set gpsPointsFound($core.int v) { $_setSignedInt32(0, v); }
+  set gpsPointsFound($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGpsPointsFound() => $_has(0);
   @$pb.TagNumber(1)
@@ -1513,41 +1838,57 @@ class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
     return $result;
   }
   GpsDataGapFailureDetails._() : super();
-  factory GpsDataGapFailureDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GpsDataGapFailureDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GpsDataGapFailureDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GpsDataGapFailureDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GpsDataGapFailureDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'gapDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'gapStartTime', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GpsDataGapFailureDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'gapDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'gapStartTime',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GpsDataGapFailureDetails clone() => GpsDataGapFailureDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GpsDataGapFailureDetails copyWith(void Function(GpsDataGapFailureDetails) updates) => super.copyWith((message) => updates(message as GpsDataGapFailureDetails)) as GpsDataGapFailureDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GpsDataGapFailureDetails clone() =>
+      GpsDataGapFailureDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GpsDataGapFailureDetails copyWith(
+          void Function(GpsDataGapFailureDetails) updates) =>
+      super.copyWith((message) => updates(message as GpsDataGapFailureDetails))
+          as GpsDataGapFailureDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GpsDataGapFailureDetails create() => GpsDataGapFailureDetails._();
   GpsDataGapFailureDetails createEmptyInstance() => create();
-  static $pb.PbList<GpsDataGapFailureDetails> createRepeated() => $pb.PbList<GpsDataGapFailureDetails>();
+  static $pb.PbList<GpsDataGapFailureDetails> createRepeated() =>
+      $pb.PbList<GpsDataGapFailureDetails>();
   @$core.pragma('dart2js:noInline')
-  static GpsDataGapFailureDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GpsDataGapFailureDetails>(create);
+  static GpsDataGapFailureDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GpsDataGapFailureDetails>(create);
   static GpsDataGapFailureDetails? _defaultInstance;
 
   /// The duration of the gap in GPS data that was found.
   @$pb.TagNumber(1)
   $264.Duration get gapDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set gapDuration($264.Duration v) { setField(1, v); }
+  set gapDuration($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGapDuration() => $_has(0);
   @$pb.TagNumber(1)
@@ -1559,7 +1900,10 @@ class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get gapStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set gapStartTime($264.Duration v) { setField(2, v); }
+  set gapStartTime($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGapStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1586,41 +1930,57 @@ class ImuDataGapFailureDetails extends $pb.GeneratedMessage {
     return $result;
   }
   ImuDataGapFailureDetails._() : super();
-  factory ImuDataGapFailureDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImuDataGapFailureDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImuDataGapFailureDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImuDataGapFailureDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImuDataGapFailureDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'gapDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'gapStartTime', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImuDataGapFailureDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'gapDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'gapStartTime',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImuDataGapFailureDetails clone() => ImuDataGapFailureDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImuDataGapFailureDetails copyWith(void Function(ImuDataGapFailureDetails) updates) => super.copyWith((message) => updates(message as ImuDataGapFailureDetails)) as ImuDataGapFailureDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImuDataGapFailureDetails clone() =>
+      ImuDataGapFailureDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImuDataGapFailureDetails copyWith(
+          void Function(ImuDataGapFailureDetails) updates) =>
+      super.copyWith((message) => updates(message as ImuDataGapFailureDetails))
+          as ImuDataGapFailureDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImuDataGapFailureDetails create() => ImuDataGapFailureDetails._();
   ImuDataGapFailureDetails createEmptyInstance() => create();
-  static $pb.PbList<ImuDataGapFailureDetails> createRepeated() => $pb.PbList<ImuDataGapFailureDetails>();
+  static $pb.PbList<ImuDataGapFailureDetails> createRepeated() =>
+      $pb.PbList<ImuDataGapFailureDetails>();
   @$core.pragma('dart2js:noInline')
-  static ImuDataGapFailureDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImuDataGapFailureDetails>(create);
+  static ImuDataGapFailureDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImuDataGapFailureDetails>(create);
   static ImuDataGapFailureDetails? _defaultInstance;
 
   /// The duration of the gap in IMU data that was found.
   @$pb.TagNumber(1)
   $264.Duration get gapDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set gapDuration($264.Duration v) { setField(1, v); }
+  set gapDuration($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGapDuration() => $_has(0);
   @$pb.TagNumber(1)
@@ -1632,7 +1992,10 @@ class ImuDataGapFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get gapStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set gapStartTime($264.Duration v) { setField(2, v); }
+  set gapStartTime($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGapStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1654,33 +2017,45 @@ class NotOutdoorsFailureDetails extends $pb.GeneratedMessage {
     return $result;
   }
   NotOutdoorsFailureDetails._() : super();
-  factory NotOutdoorsFailureDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NotOutdoorsFailureDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NotOutdoorsFailureDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NotOutdoorsFailureDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotOutdoorsFailureDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NotOutdoorsFailureDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NotOutdoorsFailureDetails clone() => NotOutdoorsFailureDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NotOutdoorsFailureDetails copyWith(void Function(NotOutdoorsFailureDetails) updates) => super.copyWith((message) => updates(message as NotOutdoorsFailureDetails)) as NotOutdoorsFailureDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NotOutdoorsFailureDetails clone() =>
+      NotOutdoorsFailureDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NotOutdoorsFailureDetails copyWith(
+          void Function(NotOutdoorsFailureDetails) updates) =>
+      super.copyWith((message) => updates(message as NotOutdoorsFailureDetails))
+          as NotOutdoorsFailureDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NotOutdoorsFailureDetails create() => NotOutdoorsFailureDetails._();
   NotOutdoorsFailureDetails createEmptyInstance() => create();
-  static $pb.PbList<NotOutdoorsFailureDetails> createRepeated() => $pb.PbList<NotOutdoorsFailureDetails>();
+  static $pb.PbList<NotOutdoorsFailureDetails> createRepeated() =>
+      $pb.PbList<NotOutdoorsFailureDetails>();
   @$core.pragma('dart2js:noInline')
-  static NotOutdoorsFailureDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotOutdoorsFailureDetails>(create);
+  static NotOutdoorsFailureDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NotOutdoorsFailureDetails>(create);
   static NotOutdoorsFailureDetails? _defaultInstance;
 
   /// Relative time (from the start of the video stream) when an indoor frame was
@@ -1688,7 +2063,10 @@ class NotOutdoorsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($264.Duration v) { setField(1, v); }
+  set startTime($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1721,43 +2099,62 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
     return $result;
   }
   NoOverlapGpsFailureDetails._() : super();
-  factory NoOverlapGpsFailureDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NoOverlapGpsFailureDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NoOverlapGpsFailureDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NoOverlapGpsFailureDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NoOverlapGpsFailureDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'gpsStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'gpsEndTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'videoStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'videoEndTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NoOverlapGpsFailureDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.streetview.publish.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'gpsStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'gpsEndTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'videoStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'videoEndTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NoOverlapGpsFailureDetails clone() => NoOverlapGpsFailureDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NoOverlapGpsFailureDetails copyWith(void Function(NoOverlapGpsFailureDetails) updates) => super.copyWith((message) => updates(message as NoOverlapGpsFailureDetails)) as NoOverlapGpsFailureDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NoOverlapGpsFailureDetails clone() =>
+      NoOverlapGpsFailureDetails()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NoOverlapGpsFailureDetails copyWith(
+          void Function(NoOverlapGpsFailureDetails) updates) =>
+      super.copyWith(
+              (message) => updates(message as NoOverlapGpsFailureDetails))
+          as NoOverlapGpsFailureDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NoOverlapGpsFailureDetails create() => NoOverlapGpsFailureDetails._();
   NoOverlapGpsFailureDetails createEmptyInstance() => create();
-  static $pb.PbList<NoOverlapGpsFailureDetails> createRepeated() => $pb.PbList<NoOverlapGpsFailureDetails>();
+  static $pb.PbList<NoOverlapGpsFailureDetails> createRepeated() =>
+      $pb.PbList<NoOverlapGpsFailureDetails>();
   @$core.pragma('dart2js:noInline')
-  static NoOverlapGpsFailureDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NoOverlapGpsFailureDetails>(create);
+  static NoOverlapGpsFailureDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NoOverlapGpsFailureDetails>(create);
   static NoOverlapGpsFailureDetails? _defaultInstance;
 
   /// Time of first recorded GPS point.
   @$pb.TagNumber(1)
   $302.Timestamp get gpsStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set gpsStartTime($302.Timestamp v) { setField(1, v); }
+  set gpsStartTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGpsStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1769,7 +2166,10 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get gpsEndTime => $_getN(1);
   @$pb.TagNumber(2)
-  set gpsEndTime($302.Timestamp v) { setField(2, v); }
+  set gpsEndTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGpsEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1781,7 +2181,10 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get videoStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set videoStartTime($302.Timestamp v) { setField(3, v); }
+  set videoStartTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVideoStartTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -1793,7 +2196,10 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get videoEndTime => $_getN(3);
   @$pb.TagNumber(4)
-  set videoEndTime($302.Timestamp v) { setField(4, v); }
+  set videoEndTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVideoEndTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -1802,6 +2208,6 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   $302.Timestamp ensureVideoEndTime() => $_ensure(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

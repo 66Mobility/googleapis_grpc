@@ -17,9 +17,20 @@ import 'dart:typed_data' as $typed_data;
 const Actions$json = {
   '1': 'Actions',
   '2': [
-    {'1': 'custom', '3': 3, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.Actions.CustomEntry', '10': 'custom'},
+    {
+      '1': 'custom',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Actions.CustomEntry',
+      '10': 'custom'
+    },
   ],
-  '3': [Actions_Engagement$json, Actions_CustomAction$json, Actions_CustomEntry$json],
+  '3': [
+    Actions_Engagement$json,
+    Actions_CustomAction$json,
+    Actions_CustomEntry$json
+  ],
 };
 
 @$core.Deprecated('Use actionsDescriptor instead')
@@ -27,8 +38,23 @@ const Actions_Engagement$json = {
   '1': 'Engagement',
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'push_notification', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Actions.Engagement.PushNotification', '10': 'pushNotification'},
-    {'1': 'daily_update', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Actions.Engagement.DailyUpdate', '9': 0, '10': 'dailyUpdate'},
+    {
+      '1': 'push_notification',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Actions.Engagement.PushNotification',
+      '10': 'pushNotification'
+    },
+    {
+      '1': 'daily_update',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Actions.Engagement.DailyUpdate',
+      '9': 0,
+      '10': 'dailyUpdate'
+    },
     {
       '1': 'action_link',
       '3': 4,
@@ -38,9 +64,21 @@ const Actions_Engagement$json = {
       '8': {'3': true},
       '10': 'actionLink',
     },
-    {'1': 'assistant_link', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Actions.Engagement.AssistantLink', '10': 'assistantLink'},
+    {
+      '1': 'assistant_link',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Actions.Engagement.AssistantLink',
+      '10': 'assistantLink'
+    },
   ],
-  '3': [Actions_Engagement_PushNotification$json, Actions_Engagement_DailyUpdate$json, Actions_Engagement_ActionLink$json, Actions_Engagement_AssistantLink$json],
+  '3': [
+    Actions_Engagement_PushNotification$json,
+    Actions_Engagement_DailyUpdate$json,
+    Actions_Engagement_ActionLink$json,
+    Actions_Engagement_AssistantLink$json
+  ],
   '8': [
     {'1': 'recurring_update'},
   ],
@@ -77,7 +115,14 @@ const Actions_Engagement_AssistantLink$json = {
 const Actions_CustomAction$json = {
   '1': 'CustomAction',
   '2': [
-    {'1': 'engagement', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Actions.Engagement', '10': 'engagement'},
+    {
+      '1': 'engagement',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Actions.Engagement',
+      '10': 'engagement'
+    },
   ],
 };
 
@@ -86,7 +131,14 @@ const Actions_CustomEntry$json = {
   '1': 'CustomEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Actions.CustomAction', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Actions.CustomAction',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -108,4 +160,3 @@ final $typed_data.Uint8List actionsDescriptor = $convert.base64Decode(
     'KAsyKS5nb29nbGUuYWN0aW9ucy5zZGsudjIuQWN0aW9ucy5FbmdhZ2VtZW50UgplbmdhZ2VtZW'
     '50GmYKC0N1c3RvbUVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EkEKBXZhbHVlGAIgASgLMisuZ29v'
     'Z2xlLmFjdGlvbnMuc2RrLnYyLkFjdGlvbnMuQ3VzdG9tQWN0aW9uUgV2YWx1ZToCOAE=');
-

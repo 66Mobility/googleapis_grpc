@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const CommitResponse$json = {
   '1': 'CommitResponse',
   '2': [
-    {'1': 'commit_timestamp', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'commitTimestamp'},
-    {'1': 'commit_stats', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.CommitResponse.CommitStats', '10': 'commitStats'},
+    {
+      '1': 'commit_timestamp',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'commitTimestamp'
+    },
+    {
+      '1': 'commit_stats',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.CommitResponse.CommitStats',
+      '10': 'commitStats'
+    },
   ],
   '3': [CommitResponse_CommitStats$json],
 };
@@ -38,4 +52,3 @@ final $typed_data.Uint8List commitResponseDescriptor = $convert.base64Decode(
     'Lmdvb2dsZS5zcGFubmVyLnYxLkNvbW1pdFJlc3BvbnNlLkNvbW1pdFN0YXRzUgtjb21taXRTdG'
     'F0cxo0CgtDb21taXRTdGF0cxIlCg5tdXRhdGlvbl9jb3VudBgBIAEoA1INbXV0YXRpb25Db3Vu'
     'dA==');
-

@@ -13,22 +13,36 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-class ContextualAddOnMarkup_Card_CardHeader_ImageStyle extends $pb.ProtobufEnum {
-  static const ContextualAddOnMarkup_Card_CardHeader_ImageStyle IMAGE_STYLE_UNSPECIFIED = ContextualAddOnMarkup_Card_CardHeader_ImageStyle._(0, _omitEnumNames ? '' : 'IMAGE_STYLE_UNSPECIFIED');
-  static const ContextualAddOnMarkup_Card_CardHeader_ImageStyle IMAGE = ContextualAddOnMarkup_Card_CardHeader_ImageStyle._(1, _omitEnumNames ? '' : 'IMAGE');
-  static const ContextualAddOnMarkup_Card_CardHeader_ImageStyle AVATAR = ContextualAddOnMarkup_Card_CardHeader_ImageStyle._(2, _omitEnumNames ? '' : 'AVATAR');
+class ContextualAddOnMarkup_Card_CardHeader_ImageStyle
+    extends $pb.ProtobufEnum {
+  static const ContextualAddOnMarkup_Card_CardHeader_ImageStyle
+      IMAGE_STYLE_UNSPECIFIED =
+      ContextualAddOnMarkup_Card_CardHeader_ImageStyle._(
+          0, _omitEnumNames ? '' : 'IMAGE_STYLE_UNSPECIFIED');
+  static const ContextualAddOnMarkup_Card_CardHeader_ImageStyle IMAGE =
+      ContextualAddOnMarkup_Card_CardHeader_ImageStyle._(
+          1, _omitEnumNames ? '' : 'IMAGE');
+  static const ContextualAddOnMarkup_Card_CardHeader_ImageStyle AVATAR =
+      ContextualAddOnMarkup_Card_CardHeader_ImageStyle._(
+          2, _omitEnumNames ? '' : 'AVATAR');
 
-  static const $core.List<ContextualAddOnMarkup_Card_CardHeader_ImageStyle> values = <ContextualAddOnMarkup_Card_CardHeader_ImageStyle> [
+  static const $core.List<ContextualAddOnMarkup_Card_CardHeader_ImageStyle>
+      values = <ContextualAddOnMarkup_Card_CardHeader_ImageStyle>[
     IMAGE_STYLE_UNSPECIFIED,
     IMAGE,
     AVATAR,
   ];
 
-  static final $core.Map<$core.int, ContextualAddOnMarkup_Card_CardHeader_ImageStyle> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static ContextualAddOnMarkup_Card_CardHeader_ImageStyle? valueOf($core.int value) => _byValue[value];
+  static final $core
+      .Map<$core.int, ContextualAddOnMarkup_Card_CardHeader_ImageStyle>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static ContextualAddOnMarkup_Card_CardHeader_ImageStyle? valueOf(
+          $core.int value) =>
+      _byValue[value];
 
-  const ContextualAddOnMarkup_Card_CardHeader_ImageStyle._($core.int v, $core.String n) : super(v, n);
+  const ContextualAddOnMarkup_Card_CardHeader_ImageStyle._(
+      $core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

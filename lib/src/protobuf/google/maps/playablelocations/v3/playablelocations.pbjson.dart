@@ -17,24 +17,56 @@ import 'dart:typed_data' as $typed_data;
 const SamplePlayableLocationsRequest$json = {
   '1': 'SamplePlayableLocationsRequest',
   '2': [
-    {'1': 'area_filter', '3': 1, '4': 1, '5': 11, '6': '.google.maps.playablelocations.v3.sample.AreaFilter', '8': {}, '10': 'areaFilter'},
-    {'1': 'criteria', '3': 2, '4': 3, '5': 11, '6': '.google.maps.playablelocations.v3.sample.Criterion', '8': {}, '10': 'criteria'},
+    {
+      '1': 'area_filter',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.sample.AreaFilter',
+      '8': {},
+      '10': 'areaFilter'
+    },
+    {
+      '1': 'criteria',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.sample.Criterion',
+      '8': {},
+      '10': 'criteria'
+    },
   ],
 };
 
 /// Descriptor for `SamplePlayableLocationsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List samplePlayableLocationsRequestDescriptor = $convert.base64Decode(
-    'Ch5TYW1wbGVQbGF5YWJsZUxvY2F0aW9uc1JlcXVlc3QSWQoLYXJlYV9maWx0ZXIYASABKAsyMy'
-    '5nb29nbGUubWFwcy5wbGF5YWJsZWxvY2F0aW9ucy52My5zYW1wbGUuQXJlYUZpbHRlckID4EEC'
-    'UgphcmVhRmlsdGVyElMKCGNyaXRlcmlhGAIgAygLMjIuZ29vZ2xlLm1hcHMucGxheWFibGVsb2'
-    'NhdGlvbnMudjMuc2FtcGxlLkNyaXRlcmlvbkID4EECUghjcml0ZXJpYQ==');
+final $typed_data.Uint8List samplePlayableLocationsRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5TYW1wbGVQbGF5YWJsZUxvY2F0aW9uc1JlcXVlc3QSWQoLYXJlYV9maWx0ZXIYASABKAsyMy'
+        '5nb29nbGUubWFwcy5wbGF5YWJsZWxvY2F0aW9ucy52My5zYW1wbGUuQXJlYUZpbHRlckID4EEC'
+        'UgphcmVhRmlsdGVyElMKCGNyaXRlcmlhGAIgAygLMjIuZ29vZ2xlLm1hcHMucGxheWFibGVsb2'
+        'NhdGlvbnMudjMuc2FtcGxlLkNyaXRlcmlvbkID4EECUghjcml0ZXJpYQ==');
 
 @$core.Deprecated('Use samplePlayableLocationsResponseDescriptor instead')
 const SamplePlayableLocationsResponse$json = {
   '1': 'SamplePlayableLocationsResponse',
   '2': [
-    {'1': 'locations_per_game_object_type', '3': 1, '4': 3, '5': 11, '6': '.google.maps.playablelocations.v3.SamplePlayableLocationsResponse.LocationsPerGameObjectTypeEntry', '10': 'locationsPerGameObjectType'},
-    {'1': 'ttl', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'ttl'},
+    {
+      '1': 'locations_per_game_object_type',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.playablelocations.v3.SamplePlayableLocationsResponse.LocationsPerGameObjectTypeEntry',
+      '10': 'locationsPerGameObjectType'
+    },
+    {
+      '1': 'ttl',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'ttl'
+    },
   ],
   '3': [SamplePlayableLocationsResponse_LocationsPerGameObjectTypeEntry$json],
 };
@@ -44,7 +76,14 @@ const SamplePlayableLocationsResponse_LocationsPerGameObjectTypeEntry$json = {
   '1': 'LocationsPerGameObjectTypeEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 5, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.playablelocations.v3.sample.PlayableLocationList', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.sample.PlayableLocationList',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -64,9 +103,25 @@ final $typed_data.Uint8List samplePlayableLocationsResponseDescriptor = $convert
 const LogPlayerReportsRequest$json = {
   '1': 'LogPlayerReportsRequest',
   '2': [
-    {'1': 'player_reports', '3': 1, '4': 3, '5': 11, '6': '.google.maps.playablelocations.v3.PlayerReport', '8': {}, '10': 'playerReports'},
+    {
+      '1': 'player_reports',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.PlayerReport',
+      '8': {},
+      '10': 'playerReports'
+    },
     {'1': 'request_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
-    {'1': 'client_info', '3': 3, '4': 1, '5': 11, '6': '.google.maps.unity.ClientInfo', '8': {}, '10': 'clientInfo'},
+    {
+      '1': 'client_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.unity.ClientInfo',
+      '8': {},
+      '10': 'clientInfo'
+    },
   ],
 };
 
@@ -83,16 +138,32 @@ const LogPlayerReportsResponse$json = {
 };
 
 /// Descriptor for `LogPlayerReportsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List logPlayerReportsResponseDescriptor = $convert.base64Decode(
-    'ChhMb2dQbGF5ZXJSZXBvcnRzUmVzcG9uc2U=');
+final $typed_data.Uint8List logPlayerReportsResponseDescriptor =
+    $convert.base64Decode('ChhMb2dQbGF5ZXJSZXBvcnRzUmVzcG9uc2U=');
 
 @$core.Deprecated('Use logImpressionsRequestDescriptor instead')
 const LogImpressionsRequest$json = {
   '1': 'LogImpressionsRequest',
   '2': [
-    {'1': 'impressions', '3': 1, '4': 3, '5': 11, '6': '.google.maps.playablelocations.v3.Impression', '8': {}, '10': 'impressions'},
+    {
+      '1': 'impressions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.playablelocations.v3.Impression',
+      '8': {},
+      '10': 'impressions'
+    },
     {'1': 'request_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
-    {'1': 'client_info', '3': 3, '4': 1, '5': 11, '6': '.google.maps.unity.ClientInfo', '8': {}, '10': 'clientInfo'},
+    {
+      '1': 'client_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.unity.ClientInfo',
+      '8': {},
+      '10': 'clientInfo'
+    },
   ],
 };
 
@@ -109,6 +180,5 @@ const LogImpressionsResponse$json = {
 };
 
 /// Descriptor for `LogImpressionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List logImpressionsResponseDescriptor = $convert.base64Decode(
-    'ChZMb2dJbXByZXNzaW9uc1Jlc3BvbnNl');
-
+final $typed_data.Uint8List logImpressionsResponseDescriptor =
+    $convert.base64Decode('ChZMb2dJbXByZXNzaW9uc1Jlc3BvbnNl');

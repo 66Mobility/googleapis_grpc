@@ -30,41 +30,55 @@ class AccountLinkingSecret extends $pb.GeneratedMessage {
     return $result;
   }
   AccountLinkingSecret._() : super();
-  factory AccountLinkingSecret.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AccountLinkingSecret.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AccountLinkingSecret.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AccountLinkingSecret.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountLinkingSecret', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'encryptedClientSecret', $pb.PbFieldType.OY)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AccountLinkingSecret',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'encryptedClientSecret', $pb.PbFieldType.OY)
     ..aOS(2, _omitFieldNames ? '' : 'encryptionKeyVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AccountLinkingSecret clone() => AccountLinkingSecret()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AccountLinkingSecret copyWith(void Function(AccountLinkingSecret) updates) => super.copyWith((message) => updates(message as AccountLinkingSecret)) as AccountLinkingSecret;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AccountLinkingSecret clone() =>
+      AccountLinkingSecret()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AccountLinkingSecret copyWith(void Function(AccountLinkingSecret) updates) =>
+      super.copyWith((message) => updates(message as AccountLinkingSecret))
+          as AccountLinkingSecret;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AccountLinkingSecret create() => AccountLinkingSecret._();
   AccountLinkingSecret createEmptyInstance() => create();
-  static $pb.PbList<AccountLinkingSecret> createRepeated() => $pb.PbList<AccountLinkingSecret>();
+  static $pb.PbList<AccountLinkingSecret> createRepeated() =>
+      $pb.PbList<AccountLinkingSecret>();
   @$core.pragma('dart2js:noInline')
-  static AccountLinkingSecret getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AccountLinkingSecret>(create);
+  static AccountLinkingSecret getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AccountLinkingSecret>(create);
   static AccountLinkingSecret? _defaultInstance;
 
   /// Encrypted account linking client secret ciphertext.
   @$pb.TagNumber(1)
   $core.List<$core.int> get encryptedClientSecret => $_getN(0);
   @$pb.TagNumber(1)
-  set encryptedClientSecret($core.List<$core.int> v) { $_setBytes(0, v); }
+  set encryptedClientSecret($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEncryptedClientSecret() => $_has(0);
   @$pb.TagNumber(1)
@@ -77,13 +91,16 @@ class AccountLinkingSecret extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get encryptionKeyVersion => $_getSZ(1);
   @$pb.TagNumber(2)
-  set encryptionKeyVersion($core.String v) { $_setString(1, v); }
+  set encryptionKeyVersion($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEncryptionKeyVersion() => $_has(1);
   @$pb.TagNumber(2)
   void clearEncryptionKeyVersion() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

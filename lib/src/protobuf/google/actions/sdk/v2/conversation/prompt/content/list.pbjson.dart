@@ -19,7 +19,14 @@ const List_$json = {
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '10': 'subtitle'},
-    {'1': 'items', '3': 3, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.List.ListItem', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.List.ListItem',
+      '10': 'items'
+    },
   ],
   '3': [List__ListItem$json],
 };
@@ -37,4 +44,3 @@ final $typed_data.Uint8List list_Descriptor = $convert.base64Decode(
     'CgRMaXN0EhQKBXRpdGxlGAEgASgJUgV0aXRsZRIaCghzdWJ0aXRsZRgCIAEoCVIIc3VidGl0bG'
     'USRwoFaXRlbXMYAyADKAsyMS5nb29nbGUuYWN0aW9ucy5zZGsudjIuY29udmVyc2F0aW9uLkxp'
     'c3QuTGlzdEl0ZW1SBWl0ZW1zGhwKCExpc3RJdGVtEhAKA2tleRgBIAEoCVIDa2V5');
-

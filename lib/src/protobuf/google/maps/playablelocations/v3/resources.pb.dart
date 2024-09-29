@@ -42,43 +42,60 @@ class PlayerReport extends $pb.GeneratedMessage {
     return $result;
   }
   PlayerReport._() : super();
-  factory PlayerReport.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlayerReport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlayerReport.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlayerReport.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlayerReport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlayerReport',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'locationName')
-    ..pc<PlayerReport_BadLocationReason>(2, _omitFieldNames ? '' : 'reasons', $pb.PbFieldType.KE, valueOf: PlayerReport_BadLocationReason.valueOf, enumValues: PlayerReport_BadLocationReason.values, defaultEnumValue: PlayerReport_BadLocationReason.BAD_LOCATION_REASON_UNSPECIFIED)
+    ..pc<PlayerReport_BadLocationReason>(
+        2, _omitFieldNames ? '' : 'reasons', $pb.PbFieldType.KE,
+        valueOf: PlayerReport_BadLocationReason.valueOf,
+        enumValues: PlayerReport_BadLocationReason.values,
+        defaultEnumValue:
+            PlayerReport_BadLocationReason.BAD_LOCATION_REASON_UNSPECIFIED)
     ..aOS(3, _omitFieldNames ? '' : 'reasonDetails')
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PlayerReport clone() => PlayerReport()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlayerReport copyWith(void Function(PlayerReport) updates) => super.copyWith((message) => updates(message as PlayerReport)) as PlayerReport;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlayerReport copyWith(void Function(PlayerReport) updates) =>
+      super.copyWith((message) => updates(message as PlayerReport))
+          as PlayerReport;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlayerReport create() => PlayerReport._();
   PlayerReport createEmptyInstance() => create();
-  static $pb.PbList<PlayerReport> createRepeated() => $pb.PbList<PlayerReport>();
+  static $pb.PbList<PlayerReport> createRepeated() =>
+      $pb.PbList<PlayerReport>();
   @$core.pragma('dart2js:noInline')
-  static PlayerReport getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlayerReport>(create);
+  static PlayerReport getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PlayerReport>(create);
   static PlayerReport? _defaultInstance;
 
   /// Required. The name of the playable location.
   @$pb.TagNumber(1)
   $core.String get locationName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set locationName($core.String v) { $_setString(0, v); }
+  set locationName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocationName() => $_has(0);
   @$pb.TagNumber(1)
@@ -93,7 +110,10 @@ class PlayerReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get reasonDetails => $_getSZ(2);
   @$pb.TagNumber(3)
-  set reasonDetails($core.String v) { $_setString(2, v); }
+  set reasonDetails($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReasonDetails() => $_has(2);
   @$pb.TagNumber(3)
@@ -106,7 +126,10 @@ class PlayerReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get languageCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set languageCode($core.String v) { $_setString(3, v); }
+  set languageCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLanguageCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -133,26 +156,37 @@ class Impression extends $pb.GeneratedMessage {
     return $result;
   }
   Impression._() : super();
-  factory Impression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Impression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Impression.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Impression.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Impression', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Impression',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.playablelocations.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'locationName')
-    ..e<Impression_ImpressionType>(2, _omitFieldNames ? '' : 'impressionType', $pb.PbFieldType.OE, defaultOrMaker: Impression_ImpressionType.IMPRESSION_TYPE_UNSPECIFIED, valueOf: Impression_ImpressionType.valueOf, enumValues: Impression_ImpressionType.values)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'gameObjectType', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..e<Impression_ImpressionType>(
+        2, _omitFieldNames ? '' : 'impressionType', $pb.PbFieldType.OE,
+        defaultOrMaker: Impression_ImpressionType.IMPRESSION_TYPE_UNSPECIFIED,
+        valueOf: Impression_ImpressionType.valueOf,
+        enumValues: Impression_ImpressionType.values)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'gameObjectType', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Impression clone() => Impression()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Impression copyWith(void Function(Impression) updates) => super.copyWith((message) => updates(message as Impression)) as Impression;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Impression copyWith(void Function(Impression) updates) =>
+      super.copyWith((message) => updates(message as Impression)) as Impression;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -161,14 +195,18 @@ class Impression extends $pb.GeneratedMessage {
   Impression createEmptyInstance() => create();
   static $pb.PbList<Impression> createRepeated() => $pb.PbList<Impression>();
   @$core.pragma('dart2js:noInline')
-  static Impression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Impression>(create);
+  static Impression getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Impression>(create);
   static Impression? _defaultInstance;
 
   /// Required. The name of the playable location.
   @$pb.TagNumber(1)
   $core.String get locationName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set locationName($core.String v) { $_setString(0, v); }
+  set locationName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocationName() => $_has(0);
   @$pb.TagNumber(1)
@@ -178,7 +216,10 @@ class Impression extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Impression_ImpressionType get impressionType => $_getN(1);
   @$pb.TagNumber(2)
-  set impressionType(Impression_ImpressionType v) { setField(2, v); }
+  set impressionType(Impression_ImpressionType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasImpressionType() => $_has(1);
   @$pb.TagNumber(2)
@@ -197,13 +238,16 @@ class Impression extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get gameObjectType => $_getIZ(2);
   @$pb.TagNumber(4)
-  set gameObjectType($core.int v) { $_setSignedInt32(2, v); }
+  set gameObjectType($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasGameObjectType() => $_has(2);
   @$pb.TagNumber(4)
   void clearGameObjectType() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

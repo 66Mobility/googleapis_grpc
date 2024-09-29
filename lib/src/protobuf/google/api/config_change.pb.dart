@@ -50,37 +50,49 @@ class ConfigChange extends $pb.GeneratedMessage {
     return $result;
   }
   ConfigChange._() : super();
-  factory ConfigChange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConfigChange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConfigChange.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConfigChange.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfigChange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConfigChange',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'element')
     ..aOS(2, _omitFieldNames ? '' : 'oldValue')
     ..aOS(3, _omitFieldNames ? '' : 'newValue')
-    ..e<ChangeType>(4, _omitFieldNames ? '' : 'changeType', $pb.PbFieldType.OE, defaultOrMaker: ChangeType.CHANGE_TYPE_UNSPECIFIED, valueOf: ChangeType.valueOf, enumValues: ChangeType.values)
-    ..pc<Advice>(5, _omitFieldNames ? '' : 'advices', $pb.PbFieldType.PM, subBuilder: Advice.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<ChangeType>(4, _omitFieldNames ? '' : 'changeType', $pb.PbFieldType.OE,
+        defaultOrMaker: ChangeType.CHANGE_TYPE_UNSPECIFIED,
+        valueOf: ChangeType.valueOf,
+        enumValues: ChangeType.values)
+    ..pc<Advice>(5, _omitFieldNames ? '' : 'advices', $pb.PbFieldType.PM,
+        subBuilder: Advice.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ConfigChange clone() => ConfigChange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConfigChange copyWith(void Function(ConfigChange) updates) => super.copyWith((message) => updates(message as ConfigChange)) as ConfigChange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConfigChange copyWith(void Function(ConfigChange) updates) =>
+      super.copyWith((message) => updates(message as ConfigChange))
+          as ConfigChange;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ConfigChange create() => ConfigChange._();
   ConfigChange createEmptyInstance() => create();
-  static $pb.PbList<ConfigChange> createRepeated() => $pb.PbList<ConfigChange>();
+  static $pb.PbList<ConfigChange> createRepeated() =>
+      $pb.PbList<ConfigChange>();
   @$core.pragma('dart2js:noInline')
-  static ConfigChange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConfigChange>(create);
+  static ConfigChange getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConfigChange>(create);
   static ConfigChange? _defaultInstance;
 
   /// Object hierarchy path to the change, with levels separated by a '.'
@@ -95,7 +107,10 @@ class ConfigChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get element => $_getSZ(0);
   @$pb.TagNumber(1)
-  set element($core.String v) { $_setString(0, v); }
+  set element($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasElement() => $_has(0);
   @$pb.TagNumber(1)
@@ -106,7 +121,10 @@ class ConfigChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get oldValue => $_getSZ(1);
   @$pb.TagNumber(2)
-  set oldValue($core.String v) { $_setString(1, v); }
+  set oldValue($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOldValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -117,7 +135,10 @@ class ConfigChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get newValue => $_getSZ(2);
   @$pb.TagNumber(3)
-  set newValue($core.String v) { $_setString(2, v); }
+  set newValue($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNewValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -127,7 +148,10 @@ class ConfigChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ChangeType get changeType => $_getN(3);
   @$pb.TagNumber(4)
-  set changeType(ChangeType v) { setField(4, v); }
+  set changeType(ChangeType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasChangeType() => $_has(3);
   @$pb.TagNumber(4)
@@ -152,24 +176,29 @@ class Advice extends $pb.GeneratedMessage {
     return $result;
   }
   Advice._() : super();
-  factory Advice.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Advice.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Advice.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Advice.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Advice', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Advice',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Advice clone() => Advice()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Advice copyWith(void Function(Advice) updates) => super.copyWith((message) => updates(message as Advice)) as Advice;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Advice copyWith(void Function(Advice) updates) =>
+      super.copyWith((message) => updates(message as Advice)) as Advice;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -178,7 +207,8 @@ class Advice extends $pb.GeneratedMessage {
   Advice createEmptyInstance() => create();
   static $pb.PbList<Advice> createRepeated() => $pb.PbList<Advice>();
   @$core.pragma('dart2js:noInline')
-  static Advice getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Advice>(create);
+  static Advice getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Advice>(create);
   static Advice? _defaultInstance;
 
   /// Useful description for why this advice was applied and what actions should
@@ -186,13 +216,16 @@ class Advice extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(0);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(0, v); }
+  set description($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(2)
   void clearDescription() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

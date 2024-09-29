@@ -18,10 +18,33 @@ const Operation$json = {
   '1': 'Operation',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'metadata', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'metadata'},
+    {
+      '1': 'metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'metadata'
+    },
     {'1': 'done', '3': 3, '4': 1, '5': 8, '10': 'done'},
-    {'1': 'error', '3': 4, '4': 1, '5': 11, '6': '.google.rpc.Status', '9': 0, '10': 'error'},
-    {'1': 'response', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Any', '9': 0, '10': 'response'},
+    {
+      '1': 'error',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '9': 0,
+      '10': 'error'
+    },
+    {
+      '1': 'response',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '9': 0,
+      '10': 'response'
+    },
   ],
   '8': [
     {'1': 'result'},
@@ -44,8 +67,8 @@ const GetOperationRequest$json = {
 };
 
 /// Descriptor for `GetOperationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getOperationRequestDescriptor = $convert.base64Decode(
-    'ChNHZXRPcGVyYXRpb25SZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
+final $typed_data.Uint8List getOperationRequestDescriptor = $convert
+    .base64Decode('ChNHZXRPcGVyYXRpb25SZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
 
 @$core.Deprecated('Use listOperationsRequestDescriptor instead')
 const ListOperationsRequest$json = {
@@ -68,7 +91,14 @@ final $typed_data.Uint8List listOperationsRequestDescriptor = $convert.base64Dec
 const ListOperationsResponse$json = {
   '1': 'ListOperationsResponse',
   '2': [
-    {'1': 'operations', '3': 1, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'operations'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -88,8 +118,9 @@ const CancelOperationRequest$json = {
 };
 
 /// Descriptor for `CancelOperationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List cancelOperationRequestDescriptor = $convert.base64Decode(
-    'ChZDYW5jZWxPcGVyYXRpb25SZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
+final $typed_data.Uint8List cancelOperationRequestDescriptor =
+    $convert.base64Decode(
+        'ChZDYW5jZWxPcGVyYXRpb25SZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
 
 @$core.Deprecated('Use deleteOperationRequestDescriptor instead')
 const DeleteOperationRequest$json = {
@@ -100,15 +131,23 @@ const DeleteOperationRequest$json = {
 };
 
 /// Descriptor for `DeleteOperationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteOperationRequestDescriptor = $convert.base64Decode(
-    'ChZEZWxldGVPcGVyYXRpb25SZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
+final $typed_data.Uint8List deleteOperationRequestDescriptor =
+    $convert.base64Decode(
+        'ChZEZWxldGVPcGVyYXRpb25SZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5hbWU=');
 
 @$core.Deprecated('Use waitOperationRequestDescriptor instead')
 const WaitOperationRequest$json = {
   '1': 'WaitOperationRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'timeout', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
+    {
+      '1': 'timeout',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
   ],
 };
 
@@ -130,4 +169,3 @@ const OperationInfo$json = {
 final $typed_data.Uint8List operationInfoDescriptor = $convert.base64Decode(
     'Cg1PcGVyYXRpb25JbmZvEiMKDXJlc3BvbnNlX3R5cGUYASABKAlSDHJlc3BvbnNlVHlwZRIjCg'
     '1tZXRhZGF0YV90eXBlGAIgASgJUgxtZXRhZGF0YVR5cGU=');
-

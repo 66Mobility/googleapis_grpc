@@ -16,16 +16,23 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// The launch stage as defined by [Google Cloud Platform
 /// Launch Stages](https://cloud.google.com/terms/launch-stages).
 class LaunchStage extends $pb.ProtobufEnum {
-  static const LaunchStage LAUNCH_STAGE_UNSPECIFIED = LaunchStage._(0, _omitEnumNames ? '' : 'LAUNCH_STAGE_UNSPECIFIED');
-  static const LaunchStage UNIMPLEMENTED = LaunchStage._(6, _omitEnumNames ? '' : 'UNIMPLEMENTED');
-  static const LaunchStage PRELAUNCH = LaunchStage._(7, _omitEnumNames ? '' : 'PRELAUNCH');
-  static const LaunchStage EARLY_ACCESS = LaunchStage._(1, _omitEnumNames ? '' : 'EARLY_ACCESS');
-  static const LaunchStage ALPHA = LaunchStage._(2, _omitEnumNames ? '' : 'ALPHA');
-  static const LaunchStage BETA = LaunchStage._(3, _omitEnumNames ? '' : 'BETA');
+  static const LaunchStage LAUNCH_STAGE_UNSPECIFIED =
+      LaunchStage._(0, _omitEnumNames ? '' : 'LAUNCH_STAGE_UNSPECIFIED');
+  static const LaunchStage UNIMPLEMENTED =
+      LaunchStage._(6, _omitEnumNames ? '' : 'UNIMPLEMENTED');
+  static const LaunchStage PRELAUNCH =
+      LaunchStage._(7, _omitEnumNames ? '' : 'PRELAUNCH');
+  static const LaunchStage EARLY_ACCESS =
+      LaunchStage._(1, _omitEnumNames ? '' : 'EARLY_ACCESS');
+  static const LaunchStage ALPHA =
+      LaunchStage._(2, _omitEnumNames ? '' : 'ALPHA');
+  static const LaunchStage BETA =
+      LaunchStage._(3, _omitEnumNames ? '' : 'BETA');
   static const LaunchStage GA = LaunchStage._(4, _omitEnumNames ? '' : 'GA');
-  static const LaunchStage DEPRECATED = LaunchStage._(5, _omitEnumNames ? '' : 'DEPRECATED');
+  static const LaunchStage DEPRECATED =
+      LaunchStage._(5, _omitEnumNames ? '' : 'DEPRECATED');
 
-  static const $core.List<LaunchStage> values = <LaunchStage> [
+  static const $core.List<LaunchStage> values = <LaunchStage>[
     LAUNCH_STAGE_UNSPECIFIED,
     UNIMPLEMENTED,
     PRELAUNCH,
@@ -36,11 +43,11 @@ class LaunchStage extends $pb.ProtobufEnum {
     DEPRECATED,
   ];
 
-  static final $core.Map<$core.int, LaunchStage> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, LaunchStage> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static LaunchStage? valueOf($core.int value) => _byValue[value];
 
   const LaunchStage._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

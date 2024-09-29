@@ -15,21 +15,24 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The possible states of a user.
 class User_State extends $pb.ProtobufEnum {
-  static const User_State STATE_UNSPECIFIED = User_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const User_State PENDING = User_State._(1, _omitEnumNames ? '' : 'PENDING');
-  static const User_State VERIFIED = User_State._(2, _omitEnumNames ? '' : 'VERIFIED');
+  static const User_State STATE_UNSPECIFIED =
+      User_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const User_State PENDING =
+      User_State._(1, _omitEnumNames ? '' : 'PENDING');
+  static const User_State VERIFIED =
+      User_State._(2, _omitEnumNames ? '' : 'VERIFIED');
 
-  static const $core.List<User_State> values = <User_State> [
+  static const $core.List<User_State> values = <User_State>[
     STATE_UNSPECIFIED,
     PENDING,
     VERIFIED,
   ];
 
-  static final $core.Map<$core.int, User_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, User_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static User_State? valueOf($core.int value) => _byValue[value];
 
   const User_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -22,6 +22,5 @@ const Manifest$json = {
 };
 
 /// Descriptor for `Manifest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List manifestDescriptor = $convert.base64Decode(
-    'CghNYW5pZmVzdBIYCgd2ZXJzaW9uGAEgASgJUgd2ZXJzaW9u');
-
+final $typed_data.Uint8List manifestDescriptor =
+    $convert.base64Decode('CghNYW5pZmVzdBIYCgd2ZXJzaW9uGAEgASgJUgd2ZXJzaW9u');

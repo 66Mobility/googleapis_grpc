@@ -37,42 +37,54 @@ class Program_Requirement extends $pb.GeneratedMessage {
     return $result;
   }
   Program_Requirement._() : super();
-  factory Program_Requirement.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Program_Requirement.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Program_Requirement.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Program_Requirement.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Program.Requirement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Program.Requirement',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'documentationUri')
     ..pPS(3, _omitFieldNames ? '' : 'affectedRegionCodes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Program_Requirement clone() => Program_Requirement()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Program_Requirement copyWith(void Function(Program_Requirement) updates) => super.copyWith((message) => updates(message as Program_Requirement)) as Program_Requirement;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Program_Requirement copyWith(void Function(Program_Requirement) updates) =>
+      super.copyWith((message) => updates(message as Program_Requirement))
+          as Program_Requirement;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Program_Requirement create() => Program_Requirement._();
   Program_Requirement createEmptyInstance() => create();
-  static $pb.PbList<Program_Requirement> createRepeated() => $pb.PbList<Program_Requirement>();
+  static $pb.PbList<Program_Requirement> createRepeated() =>
+      $pb.PbList<Program_Requirement>();
   @$core.pragma('dart2js:noInline')
-  static Program_Requirement getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Program_Requirement>(create);
+  static Program_Requirement getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Program_Requirement>(create);
   static Program_Requirement? _defaultInstance;
 
   /// Output only. Name of the requirement.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -82,7 +94,10 @@ class Program_Requirement extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get documentationUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set documentationUri($core.String v) { $_setString(1, v); }
+  set documentationUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDocumentationUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -132,28 +147,39 @@ class Program extends $pb.GeneratedMessage {
     return $result;
   }
   Program._() : super();
-  factory Program.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Program.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Program.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Program.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Program', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Program',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'documentationUri')
-    ..e<Program_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Program_State.STATE_UNSPECIFIED, valueOf: Program_State.valueOf, enumValues: Program_State.values)
+    ..e<Program_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Program_State.STATE_UNSPECIFIED,
+        valueOf: Program_State.valueOf,
+        enumValues: Program_State.values)
     ..pPS(4, _omitFieldNames ? '' : 'activeRegionCodes')
-    ..pc<Program_Requirement>(5, _omitFieldNames ? '' : 'unmetRequirements', $pb.PbFieldType.PM, subBuilder: Program_Requirement.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<Program_Requirement>(
+        5, _omitFieldNames ? '' : 'unmetRequirements', $pb.PbFieldType.PM,
+        subBuilder: Program_Requirement.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Program clone() => Program()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Program copyWith(void Function(Program) updates) => super.copyWith((message) => updates(message as Program)) as Program;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Program copyWith(void Function(Program) updates) =>
+      super.copyWith((message) => updates(message as Program)) as Program;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -162,7 +188,8 @@ class Program extends $pb.GeneratedMessage {
   Program createEmptyInstance() => create();
   static $pb.PbList<Program> createRepeated() => $pb.PbList<Program>();
   @$core.pragma('dart2js:noInline')
-  static Program getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Program>(create);
+  static Program getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Program>(create);
   static Program? _defaultInstance;
 
   /// Identifier. The resource name of the program.
@@ -170,7 +197,10 @@ class Program extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -180,7 +210,10 @@ class Program extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get documentationUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set documentationUri($core.String v) { $_setString(1, v); }
+  set documentationUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDocumentationUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -190,7 +223,10 @@ class Program extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Program_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(Program_State v) { setField(3, v); }
+  set state(Program_State v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -224,33 +260,42 @@ class GetProgramRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetProgramRequest._() : super();
-  factory GetProgramRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetProgramRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetProgramRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetProgramRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetProgramRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetProgramRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetProgramRequest clone() => GetProgramRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetProgramRequest copyWith(void Function(GetProgramRequest) updates) => super.copyWith((message) => updates(message as GetProgramRequest)) as GetProgramRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetProgramRequest copyWith(void Function(GetProgramRequest) updates) =>
+      super.copyWith((message) => updates(message as GetProgramRequest))
+          as GetProgramRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetProgramRequest create() => GetProgramRequest._();
   GetProgramRequest createEmptyInstance() => create();
-  static $pb.PbList<GetProgramRequest> createRepeated() => $pb.PbList<GetProgramRequest>();
+  static $pb.PbList<GetProgramRequest> createRepeated() =>
+      $pb.PbList<GetProgramRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetProgramRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetProgramRequest>(create);
+  static GetProgramRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetProgramRequest>(create);
   static GetProgramRequest? _defaultInstance;
 
   /// Required. The name of the program to retrieve.
@@ -258,7 +303,10 @@ class GetProgramRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -285,35 +333,44 @@ class ListProgramsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListProgramsRequest._() : super();
-  factory ListProgramsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListProgramsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListProgramsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListProgramsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProgramsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListProgramsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListProgramsRequest clone() => ListProgramsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListProgramsRequest copyWith(void Function(ListProgramsRequest) updates) => super.copyWith((message) => updates(message as ListProgramsRequest)) as ListProgramsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListProgramsRequest copyWith(void Function(ListProgramsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListProgramsRequest))
+          as ListProgramsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListProgramsRequest create() => ListProgramsRequest._();
   ListProgramsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListProgramsRequest> createRepeated() => $pb.PbList<ListProgramsRequest>();
+  static $pb.PbList<ListProgramsRequest> createRepeated() =>
+      $pb.PbList<ListProgramsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListProgramsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProgramsRequest>(create);
+  static ListProgramsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListProgramsRequest>(create);
   static ListProgramsRequest? _defaultInstance;
 
   /// Required. The name of the account for which to retrieve all programs.
@@ -321,7 +378,10 @@ class ListProgramsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -333,7 +393,10 @@ class ListProgramsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -344,7 +407,10 @@ class ListProgramsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -367,34 +433,45 @@ class ListProgramsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListProgramsResponse._() : super();
-  factory ListProgramsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListProgramsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListProgramsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListProgramsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProgramsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<Program>(1, _omitFieldNames ? '' : 'programs', $pb.PbFieldType.PM, subBuilder: Program.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListProgramsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<Program>(1, _omitFieldNames ? '' : 'programs', $pb.PbFieldType.PM,
+        subBuilder: Program.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListProgramsResponse clone() => ListProgramsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListProgramsResponse copyWith(void Function(ListProgramsResponse) updates) => super.copyWith((message) => updates(message as ListProgramsResponse)) as ListProgramsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListProgramsResponse clone() =>
+      ListProgramsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListProgramsResponse copyWith(void Function(ListProgramsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListProgramsResponse))
+          as ListProgramsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListProgramsResponse create() => ListProgramsResponse._();
   ListProgramsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListProgramsResponse> createRepeated() => $pb.PbList<ListProgramsResponse>();
+  static $pb.PbList<ListProgramsResponse> createRepeated() =>
+      $pb.PbList<ListProgramsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListProgramsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProgramsResponse>(create);
+  static ListProgramsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListProgramsResponse>(create);
   static ListProgramsResponse? _defaultInstance;
 
   /// The programs for the given account.
@@ -406,7 +483,10 @@ class ListProgramsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -425,33 +505,43 @@ class EnableProgramRequest extends $pb.GeneratedMessage {
     return $result;
   }
   EnableProgramRequest._() : super();
-  factory EnableProgramRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EnableProgramRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EnableProgramRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EnableProgramRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnableProgramRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnableProgramRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  EnableProgramRequest clone() => EnableProgramRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EnableProgramRequest copyWith(void Function(EnableProgramRequest) updates) => super.copyWith((message) => updates(message as EnableProgramRequest)) as EnableProgramRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  EnableProgramRequest clone() =>
+      EnableProgramRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EnableProgramRequest copyWith(void Function(EnableProgramRequest) updates) =>
+      super.copyWith((message) => updates(message as EnableProgramRequest))
+          as EnableProgramRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EnableProgramRequest create() => EnableProgramRequest._();
   EnableProgramRequest createEmptyInstance() => create();
-  static $pb.PbList<EnableProgramRequest> createRepeated() => $pb.PbList<EnableProgramRequest>();
+  static $pb.PbList<EnableProgramRequest> createRepeated() =>
+      $pb.PbList<EnableProgramRequest>();
   @$core.pragma('dart2js:noInline')
-  static EnableProgramRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnableProgramRequest>(create);
+  static EnableProgramRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnableProgramRequest>(create);
   static EnableProgramRequest? _defaultInstance;
 
   /// Required. The name of the program for which to enable participation for the
@@ -459,7 +549,10 @@ class EnableProgramRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -478,33 +571,44 @@ class DisableProgramRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DisableProgramRequest._() : super();
-  factory DisableProgramRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DisableProgramRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DisableProgramRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DisableProgramRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DisableProgramRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DisableProgramRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DisableProgramRequest clone() => DisableProgramRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DisableProgramRequest copyWith(void Function(DisableProgramRequest) updates) => super.copyWith((message) => updates(message as DisableProgramRequest)) as DisableProgramRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DisableProgramRequest clone() =>
+      DisableProgramRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DisableProgramRequest copyWith(
+          void Function(DisableProgramRequest) updates) =>
+      super.copyWith((message) => updates(message as DisableProgramRequest))
+          as DisableProgramRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DisableProgramRequest create() => DisableProgramRequest._();
   DisableProgramRequest createEmptyInstance() => create();
-  static $pb.PbList<DisableProgramRequest> createRepeated() => $pb.PbList<DisableProgramRequest>();
+  static $pb.PbList<DisableProgramRequest> createRepeated() =>
+      $pb.PbList<DisableProgramRequest>();
   @$core.pragma('dart2js:noInline')
-  static DisableProgramRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DisableProgramRequest>(create);
+  static DisableProgramRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DisableProgramRequest>(create);
   static DisableProgramRequest? _defaultInstance;
 
   /// Required. The name of the program for which to disable participation for
@@ -512,13 +616,16 @@ class DisableProgramRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

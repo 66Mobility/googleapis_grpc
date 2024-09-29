@@ -17,9 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const CigarUnit$json = {
   '1': 'CigarUnit',
   '2': [
-    {'1': 'operation', '3': 1, '4': 1, '5': 14, '6': '.google.genomics.v1.CigarUnit.Operation', '10': 'operation'},
+    {
+      '1': 'operation',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.CigarUnit.Operation',
+      '10': 'operation'
+    },
     {'1': 'operation_length', '3': 2, '4': 1, '5': 3, '10': 'operationLength'},
-    {'1': 'reference_sequence', '3': 3, '4': 1, '5': 9, '10': 'referenceSequence'},
+    {
+      '1': 'reference_sequence',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'referenceSequence'
+    },
   ],
   '4': [CigarUnit_Operation$json],
 };
@@ -50,4 +63,3 @@ final $typed_data.Uint8List cigarUnitDescriptor = $convert.base64Decode(
     'TUVOVF9NQVRDSBABEgoKBklOU0VSVBACEgoKBkRFTEVURRADEggKBFNLSVAQBBINCglDTElQX1'
     'NPRlQQBRINCglDTElQX0hBUkQQBhIHCgNQQUQQBxISCg5TRVFVRU5DRV9NQVRDSBAIEhUKEVNF'
     'UVVFTkNFX01JU01BVENIEAk=');
-

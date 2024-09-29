@@ -15,14 +15,20 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Price level of the place.
 class PriceLevel extends $pb.ProtobufEnum {
-  static const PriceLevel PRICE_LEVEL_UNSPECIFIED = PriceLevel._(0, _omitEnumNames ? '' : 'PRICE_LEVEL_UNSPECIFIED');
-  static const PriceLevel PRICE_LEVEL_FREE = PriceLevel._(1, _omitEnumNames ? '' : 'PRICE_LEVEL_FREE');
-  static const PriceLevel PRICE_LEVEL_INEXPENSIVE = PriceLevel._(2, _omitEnumNames ? '' : 'PRICE_LEVEL_INEXPENSIVE');
-  static const PriceLevel PRICE_LEVEL_MODERATE = PriceLevel._(3, _omitEnumNames ? '' : 'PRICE_LEVEL_MODERATE');
-  static const PriceLevel PRICE_LEVEL_EXPENSIVE = PriceLevel._(4, _omitEnumNames ? '' : 'PRICE_LEVEL_EXPENSIVE');
-  static const PriceLevel PRICE_LEVEL_VERY_EXPENSIVE = PriceLevel._(5, _omitEnumNames ? '' : 'PRICE_LEVEL_VERY_EXPENSIVE');
+  static const PriceLevel PRICE_LEVEL_UNSPECIFIED =
+      PriceLevel._(0, _omitEnumNames ? '' : 'PRICE_LEVEL_UNSPECIFIED');
+  static const PriceLevel PRICE_LEVEL_FREE =
+      PriceLevel._(1, _omitEnumNames ? '' : 'PRICE_LEVEL_FREE');
+  static const PriceLevel PRICE_LEVEL_INEXPENSIVE =
+      PriceLevel._(2, _omitEnumNames ? '' : 'PRICE_LEVEL_INEXPENSIVE');
+  static const PriceLevel PRICE_LEVEL_MODERATE =
+      PriceLevel._(3, _omitEnumNames ? '' : 'PRICE_LEVEL_MODERATE');
+  static const PriceLevel PRICE_LEVEL_EXPENSIVE =
+      PriceLevel._(4, _omitEnumNames ? '' : 'PRICE_LEVEL_EXPENSIVE');
+  static const PriceLevel PRICE_LEVEL_VERY_EXPENSIVE =
+      PriceLevel._(5, _omitEnumNames ? '' : 'PRICE_LEVEL_VERY_EXPENSIVE');
 
-  static const $core.List<PriceLevel> values = <PriceLevel> [
+  static const $core.List<PriceLevel> values = <PriceLevel>[
     PRICE_LEVEL_UNSPECIFIED,
     PRICE_LEVEL_FREE,
     PRICE_LEVEL_INEXPENSIVE,
@@ -31,7 +37,8 @@ class PriceLevel extends $pb.ProtobufEnum {
     PRICE_LEVEL_VERY_EXPENSIVE,
   ];
 
-  static final $core.Map<$core.int, PriceLevel> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, PriceLevel> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static PriceLevel? valueOf($core.int value) => _byValue[value];
 
   const PriceLevel._($core.int v, $core.String n) : super(v, n);
@@ -39,19 +46,25 @@ class PriceLevel extends $pb.ProtobufEnum {
 
 /// Business status for the place.
 class Place_BusinessStatus extends $pb.ProtobufEnum {
-  static const Place_BusinessStatus BUSINESS_STATUS_UNSPECIFIED = Place_BusinessStatus._(0, _omitEnumNames ? '' : 'BUSINESS_STATUS_UNSPECIFIED');
-  static const Place_BusinessStatus OPERATIONAL = Place_BusinessStatus._(1, _omitEnumNames ? '' : 'OPERATIONAL');
-  static const Place_BusinessStatus CLOSED_TEMPORARILY = Place_BusinessStatus._(2, _omitEnumNames ? '' : 'CLOSED_TEMPORARILY');
-  static const Place_BusinessStatus CLOSED_PERMANENTLY = Place_BusinessStatus._(3, _omitEnumNames ? '' : 'CLOSED_PERMANENTLY');
+  static const Place_BusinessStatus BUSINESS_STATUS_UNSPECIFIED =
+      Place_BusinessStatus._(
+          0, _omitEnumNames ? '' : 'BUSINESS_STATUS_UNSPECIFIED');
+  static const Place_BusinessStatus OPERATIONAL =
+      Place_BusinessStatus._(1, _omitEnumNames ? '' : 'OPERATIONAL');
+  static const Place_BusinessStatus CLOSED_TEMPORARILY =
+      Place_BusinessStatus._(2, _omitEnumNames ? '' : 'CLOSED_TEMPORARILY');
+  static const Place_BusinessStatus CLOSED_PERMANENTLY =
+      Place_BusinessStatus._(3, _omitEnumNames ? '' : 'CLOSED_PERMANENTLY');
 
-  static const $core.List<Place_BusinessStatus> values = <Place_BusinessStatus> [
+  static const $core.List<Place_BusinessStatus> values = <Place_BusinessStatus>[
     BUSINESS_STATUS_UNSPECIFIED,
     OPERATIONAL,
     CLOSED_TEMPORARILY,
     CLOSED_PERMANENTLY,
   ];
 
-  static final $core.Map<$core.int, Place_BusinessStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Place_BusinessStatus> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Place_BusinessStatus? valueOf($core.int value) => _byValue[value];
 
   const Place_BusinessStatus._($core.int v, $core.String n) : super(v, n);
@@ -59,22 +72,51 @@ class Place_BusinessStatus extends $pb.ProtobufEnum {
 
 /// A type used to identify the type of secondary hours.
 class Place_OpeningHours_SecondaryHoursType extends $pb.ProtobufEnum {
-  static const Place_OpeningHours_SecondaryHoursType SECONDARY_HOURS_TYPE_UNSPECIFIED = Place_OpeningHours_SecondaryHoursType._(0, _omitEnumNames ? '' : 'SECONDARY_HOURS_TYPE_UNSPECIFIED');
-  static const Place_OpeningHours_SecondaryHoursType DRIVE_THROUGH = Place_OpeningHours_SecondaryHoursType._(1, _omitEnumNames ? '' : 'DRIVE_THROUGH');
-  static const Place_OpeningHours_SecondaryHoursType HAPPY_HOUR = Place_OpeningHours_SecondaryHoursType._(2, _omitEnumNames ? '' : 'HAPPY_HOUR');
-  static const Place_OpeningHours_SecondaryHoursType DELIVERY = Place_OpeningHours_SecondaryHoursType._(3, _omitEnumNames ? '' : 'DELIVERY');
-  static const Place_OpeningHours_SecondaryHoursType TAKEOUT = Place_OpeningHours_SecondaryHoursType._(4, _omitEnumNames ? '' : 'TAKEOUT');
-  static const Place_OpeningHours_SecondaryHoursType KITCHEN = Place_OpeningHours_SecondaryHoursType._(5, _omitEnumNames ? '' : 'KITCHEN');
-  static const Place_OpeningHours_SecondaryHoursType BREAKFAST = Place_OpeningHours_SecondaryHoursType._(6, _omitEnumNames ? '' : 'BREAKFAST');
-  static const Place_OpeningHours_SecondaryHoursType LUNCH = Place_OpeningHours_SecondaryHoursType._(7, _omitEnumNames ? '' : 'LUNCH');
-  static const Place_OpeningHours_SecondaryHoursType DINNER = Place_OpeningHours_SecondaryHoursType._(8, _omitEnumNames ? '' : 'DINNER');
-  static const Place_OpeningHours_SecondaryHoursType BRUNCH = Place_OpeningHours_SecondaryHoursType._(9, _omitEnumNames ? '' : 'BRUNCH');
-  static const Place_OpeningHours_SecondaryHoursType PICKUP = Place_OpeningHours_SecondaryHoursType._(10, _omitEnumNames ? '' : 'PICKUP');
-  static const Place_OpeningHours_SecondaryHoursType ACCESS = Place_OpeningHours_SecondaryHoursType._(11, _omitEnumNames ? '' : 'ACCESS');
-  static const Place_OpeningHours_SecondaryHoursType SENIOR_HOURS = Place_OpeningHours_SecondaryHoursType._(12, _omitEnumNames ? '' : 'SENIOR_HOURS');
-  static const Place_OpeningHours_SecondaryHoursType ONLINE_SERVICE_HOURS = Place_OpeningHours_SecondaryHoursType._(13, _omitEnumNames ? '' : 'ONLINE_SERVICE_HOURS');
+  static const Place_OpeningHours_SecondaryHoursType
+      SECONDARY_HOURS_TYPE_UNSPECIFIED =
+      Place_OpeningHours_SecondaryHoursType._(
+          0, _omitEnumNames ? '' : 'SECONDARY_HOURS_TYPE_UNSPECIFIED');
+  static const Place_OpeningHours_SecondaryHoursType DRIVE_THROUGH =
+      Place_OpeningHours_SecondaryHoursType._(
+          1, _omitEnumNames ? '' : 'DRIVE_THROUGH');
+  static const Place_OpeningHours_SecondaryHoursType HAPPY_HOUR =
+      Place_OpeningHours_SecondaryHoursType._(
+          2, _omitEnumNames ? '' : 'HAPPY_HOUR');
+  static const Place_OpeningHours_SecondaryHoursType DELIVERY =
+      Place_OpeningHours_SecondaryHoursType._(
+          3, _omitEnumNames ? '' : 'DELIVERY');
+  static const Place_OpeningHours_SecondaryHoursType TAKEOUT =
+      Place_OpeningHours_SecondaryHoursType._(
+          4, _omitEnumNames ? '' : 'TAKEOUT');
+  static const Place_OpeningHours_SecondaryHoursType KITCHEN =
+      Place_OpeningHours_SecondaryHoursType._(
+          5, _omitEnumNames ? '' : 'KITCHEN');
+  static const Place_OpeningHours_SecondaryHoursType BREAKFAST =
+      Place_OpeningHours_SecondaryHoursType._(
+          6, _omitEnumNames ? '' : 'BREAKFAST');
+  static const Place_OpeningHours_SecondaryHoursType LUNCH =
+      Place_OpeningHours_SecondaryHoursType._(7, _omitEnumNames ? '' : 'LUNCH');
+  static const Place_OpeningHours_SecondaryHoursType DINNER =
+      Place_OpeningHours_SecondaryHoursType._(
+          8, _omitEnumNames ? '' : 'DINNER');
+  static const Place_OpeningHours_SecondaryHoursType BRUNCH =
+      Place_OpeningHours_SecondaryHoursType._(
+          9, _omitEnumNames ? '' : 'BRUNCH');
+  static const Place_OpeningHours_SecondaryHoursType PICKUP =
+      Place_OpeningHours_SecondaryHoursType._(
+          10, _omitEnumNames ? '' : 'PICKUP');
+  static const Place_OpeningHours_SecondaryHoursType ACCESS =
+      Place_OpeningHours_SecondaryHoursType._(
+          11, _omitEnumNames ? '' : 'ACCESS');
+  static const Place_OpeningHours_SecondaryHoursType SENIOR_HOURS =
+      Place_OpeningHours_SecondaryHoursType._(
+          12, _omitEnumNames ? '' : 'SENIOR_HOURS');
+  static const Place_OpeningHours_SecondaryHoursType ONLINE_SERVICE_HOURS =
+      Place_OpeningHours_SecondaryHoursType._(
+          13, _omitEnumNames ? '' : 'ONLINE_SERVICE_HOURS');
 
-  static const $core.List<Place_OpeningHours_SecondaryHoursType> values = <Place_OpeningHours_SecondaryHoursType> [
+  static const $core.List<Place_OpeningHours_SecondaryHoursType> values =
+      <Place_OpeningHours_SecondaryHoursType>[
     SECONDARY_HOURS_TYPE_UNSPECIFIED,
     DRIVE_THROUGH,
     HAPPY_HOUR,
@@ -91,11 +133,13 @@ class Place_OpeningHours_SecondaryHoursType extends $pb.ProtobufEnum {
     ONLINE_SERVICE_HOURS,
   ];
 
-  static final $core.Map<$core.int, Place_OpeningHours_SecondaryHoursType> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static Place_OpeningHours_SecondaryHoursType? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, Place_OpeningHours_SecondaryHoursType>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Place_OpeningHours_SecondaryHoursType? valueOf($core.int value) =>
+      _byValue[value];
 
-  const Place_OpeningHours_SecondaryHoursType._($core.int v, $core.String n) : super(v, n);
+  const Place_OpeningHours_SecondaryHoursType._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

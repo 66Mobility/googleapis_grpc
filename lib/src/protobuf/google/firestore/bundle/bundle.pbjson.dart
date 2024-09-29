@@ -18,8 +18,23 @@ const BundledQuery$json = {
   '1': 'BundledQuery',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'structured_query', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.v1.StructuredQuery', '9': 0, '10': 'structuredQuery'},
-    {'1': 'limit_type', '3': 3, '4': 1, '5': 14, '6': '.google.firestore.bundle.BundledQuery.LimitType', '10': 'limitType'},
+    {
+      '1': 'structured_query',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.StructuredQuery',
+      '9': 0,
+      '10': 'structuredQuery'
+    },
+    {
+      '1': 'limit_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.bundle.BundledQuery.LimitType',
+      '10': 'limitType'
+    },
   ],
   '4': [BundledQuery_LimitType$json],
   '8': [
@@ -49,8 +64,22 @@ const NamedQuery$json = {
   '1': 'NamedQuery',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'bundled_query', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.bundle.BundledQuery', '10': 'bundledQuery'},
-    {'1': 'read_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'bundled_query',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.bundle.BundledQuery',
+      '10': 'bundledQuery'
+    },
+    {
+      '1': 'read_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
   ],
 };
 
@@ -65,7 +94,14 @@ const BundledDocumentMetadata$json = {
   '1': 'BundledDocumentMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'read_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'read_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
     {'1': 'exists', '3': 3, '4': 1, '5': 8, '10': 'exists'},
     {'1': 'queries', '3': 4, '4': 3, '5': 9, '10': 'queries'},
   ],
@@ -82,7 +118,14 @@ const BundleMetadata$json = {
   '1': 'BundleMetadata',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
     {'1': 'version', '3': 3, '4': 1, '5': 13, '10': 'version'},
     {'1': 'total_documents', '3': 4, '4': 1, '5': 13, '10': 'totalDocuments'},
     {'1': 'total_bytes', '3': 5, '4': 1, '5': 4, '10': 'totalBytes'},
@@ -100,10 +143,42 @@ final $typed_data.Uint8List bundleMetadataDescriptor = $convert.base64Decode(
 const BundleElement$json = {
   '1': 'BundleElement',
   '2': [
-    {'1': 'metadata', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.bundle.BundleMetadata', '9': 0, '10': 'metadata'},
-    {'1': 'named_query', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.bundle.NamedQuery', '9': 0, '10': 'namedQuery'},
-    {'1': 'document_metadata', '3': 3, '4': 1, '5': 11, '6': '.google.firestore.bundle.BundledDocumentMetadata', '9': 0, '10': 'documentMetadata'},
-    {'1': 'document', '3': 4, '4': 1, '5': 11, '6': '.google.firestore.v1.Document', '9': 0, '10': 'document'},
+    {
+      '1': 'metadata',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.bundle.BundleMetadata',
+      '9': 0,
+      '10': 'metadata'
+    },
+    {
+      '1': 'named_query',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.bundle.NamedQuery',
+      '9': 0,
+      '10': 'namedQuery'
+    },
+    {
+      '1': 'document_metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.bundle.BundledDocumentMetadata',
+      '9': 0,
+      '10': 'documentMetadata'
+    },
+    {
+      '1': 'document',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.v1.Document',
+      '9': 0,
+      '10': 'document'
+    },
   ],
   '8': [
     {'1': 'element_type'},
@@ -118,4 +193,3 @@ final $typed_data.Uint8List bundleElementDescriptor = $convert.base64Decode(
     '1lbnRfbWV0YWRhdGEYAyABKAsyMC5nb29nbGUuZmlyZXN0b3JlLmJ1bmRsZS5CdW5kbGVkRG9j'
     'dW1lbnRNZXRhZGF0YUgAUhBkb2N1bWVudE1ldGFkYXRhEjsKCGRvY3VtZW50GAQgASgLMh0uZ2'
     '9vZ2xlLmZpcmVzdG9yZS52MS5Eb2N1bWVudEgAUghkb2N1bWVudEIOCgxlbGVtZW50X3R5cGU=');
-

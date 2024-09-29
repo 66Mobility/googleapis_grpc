@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const Waypoint$json = {
   '1': 'Waypoint',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Location', '9': 0, '10': 'location'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Location',
+      '9': 0,
+      '10': 'location'
+    },
     {'1': 'place_id', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'placeId'},
     {'1': 'address', '3': 7, '4': 1, '5': 9, '9': 0, '10': 'address'},
     {'1': 'via', '3': 3, '4': 1, '5': 8, '10': 'via'},
@@ -36,4 +44,3 @@ final $typed_data.Uint8List waypointDescriptor = $convert.base64Decode(
     'ZXNzGAcgASgJSABSB2FkZHJlc3MSEAoDdmlhGAMgASgIUgN2aWESKQoQdmVoaWNsZV9zdG9wb3'
     'ZlchgEIAEoCFIPdmVoaWNsZVN0b3BvdmVyEiAKDHNpZGVfb2Zfcm9hZBgFIAEoCFIKc2lkZU9m'
     'Um9hZEIPCg1sb2NhdGlvbl90eXBl');
-

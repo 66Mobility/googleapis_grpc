@@ -24,4 +24,3 @@ const CollapsibleGroup$json = {
 /// Descriptor for `CollapsibleGroup`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List collapsibleGroupDescriptor = $convert.base64Decode(
     'ChBDb2xsYXBzaWJsZUdyb3VwEhwKCWNvbGxhcHNlZBgBIAEoCFIJY29sbGFwc2Vk');
-

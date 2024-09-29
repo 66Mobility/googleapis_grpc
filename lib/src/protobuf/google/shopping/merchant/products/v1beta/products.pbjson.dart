@@ -18,15 +18,63 @@ const Product$json = {
   '1': 'Product',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'channel', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.type.Channel.ChannelEnum', '8': {}, '10': 'channel'},
+    {
+      '1': 'channel',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.Channel.ChannelEnum',
+      '8': {},
+      '10': 'channel'
+    },
     {'1': 'offer_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'offerId'},
-    {'1': 'content_language', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'content_language',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
     {'1': 'feed_label', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'feedLabel'},
     {'1': 'data_source', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'dataSource'},
-    {'1': 'version_number', '3': 7, '4': 1, '5': 3, '8': {}, '9': 0, '10': 'versionNumber', '17': true},
-    {'1': 'attributes', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.Attributes', '8': {}, '10': 'attributes'},
-    {'1': 'custom_attributes', '3': 9, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '8': {}, '10': 'customAttributes'},
-    {'1': 'product_status', '3': 10, '4': 1, '5': 11, '6': '.google.shopping.merchant.products.v1beta.ProductStatus', '8': {}, '10': 'productStatus'},
+    {
+      '1': 'version_number',
+      '3': 7,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '9': 0,
+      '10': 'versionNumber',
+      '17': true
+    },
+    {
+      '1': 'attributes',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.Attributes',
+      '8': {},
+      '10': 'attributes'
+    },
+    {
+      '1': 'custom_attributes',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '8': {},
+      '10': 'customAttributes'
+    },
+    {
+      '1': 'product_status',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.ProductStatus',
+      '8': {},
+      '10': 'productStatus'
+    },
   ],
   '7': {},
   '8': [
@@ -83,7 +131,14 @@ final $typed_data.Uint8List listProductsRequestDescriptor = $convert.base64Decod
 const ListProductsResponse$json = {
   '1': 'ListProductsResponse',
   '2': [
-    {'1': 'products', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.products.v1beta.Product', '10': 'products'},
+    {
+      '1': 'products',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.products.v1beta.Product',
+      '10': 'products'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -93,4 +148,3 @@ final $typed_data.Uint8List listProductsResponseDescriptor = $convert.base64Deco
     'ChRMaXN0UHJvZHVjdHNSZXNwb25zZRJNCghwcm9kdWN0cxgBIAMoCzIxLmdvb2dsZS5zaG9wcG'
     'luZy5tZXJjaGFudC5wcm9kdWN0cy52MWJldGEuUHJvZHVjdFIIcHJvZHVjdHMSJgoPbmV4dF9w'
     'YWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
-

@@ -33,7 +33,16 @@ const BatchOptimizeToursRequest$json = {
   '1': 'BatchOptimizeToursRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'model_configs', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.BatchOptimizeToursRequest.AsyncModelConfig', '8': {}, '10': 'modelConfigs'},
+    {
+      '1': 'model_configs',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.BatchOptimizeToursRequest.AsyncModelConfig',
+      '8': {},
+      '10': 'modelConfigs'
+    },
   ],
   '3': [BatchOptimizeToursRequest_AsyncModelConfig$json],
 };
@@ -43,8 +52,24 @@ const BatchOptimizeToursRequest_AsyncModelConfig$json = {
   '1': 'AsyncModelConfig',
   '2': [
     {'1': 'display_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'input_config', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.InputConfig', '8': {}, '10': 'inputConfig'},
-    {'1': 'output_config', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.OutputConfig', '8': {}, '10': 'outputConfig'},
+    {
+      '1': 'input_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.InputConfig',
+      '8': {},
+      '10': 'inputConfig'
+    },
+    {
+      '1': 'output_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.OutputConfig',
+      '8': {},
+      '10': 'outputConfig'
+    },
   ],
 };
 
@@ -65,8 +90,8 @@ const BatchOptimizeToursResponse$json = {
 };
 
 /// Descriptor for `BatchOptimizeToursResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchOptimizeToursResponseDescriptor = $convert.base64Decode(
-    'ChpCYXRjaE9wdGltaXplVG91cnNSZXNwb25zZQ==');
+final $typed_data.Uint8List batchOptimizeToursResponseDescriptor =
+    $convert.base64Decode('ChpCYXRjaE9wdGltaXplVG91cnNSZXNwb25zZQ==');
 
 @$core.Deprecated('Use batchOptimizeToursMetadataDescriptor instead')
 const BatchOptimizeToursMetadata$json = {
@@ -74,32 +99,136 @@ const BatchOptimizeToursMetadata$json = {
 };
 
 /// Descriptor for `BatchOptimizeToursMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchOptimizeToursMetadataDescriptor = $convert.base64Decode(
-    'ChpCYXRjaE9wdGltaXplVG91cnNNZXRhZGF0YQ==');
+final $typed_data.Uint8List batchOptimizeToursMetadataDescriptor =
+    $convert.base64Decode('ChpCYXRjaE9wdGltaXplVG91cnNNZXRhZGF0YQ==');
 
 @$core.Deprecated('Use optimizeToursRequestDescriptor instead')
 const OptimizeToursRequest$json = {
   '1': 'OptimizeToursRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'timeout', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
-    {'1': 'model', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentModel', '10': 'model'},
-    {'1': 'solving_mode', '3': 4, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.OptimizeToursRequest.SolvingMode', '10': 'solvingMode'},
-    {'1': 'search_mode', '3': 6, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.OptimizeToursRequest.SearchMode', '10': 'searchMode'},
-    {'1': 'injected_first_solution_routes', '3': 7, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute', '10': 'injectedFirstSolutionRoutes'},
-    {'1': 'injected_solution_constraint', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.InjectedSolutionConstraint', '10': 'injectedSolutionConstraint'},
-    {'1': 'refresh_details_routes', '3': 9, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute', '10': 'refreshDetailsRoutes'},
-    {'1': 'interpret_injected_solutions_using_labels', '3': 10, '4': 1, '5': 8, '10': 'interpretInjectedSolutionsUsingLabels'},
-    {'1': 'consider_road_traffic', '3': 11, '4': 1, '5': 8, '10': 'considerRoadTraffic'},
-    {'1': 'populate_polylines', '3': 12, '4': 1, '5': 8, '10': 'populatePolylines'},
-    {'1': 'populate_transition_polylines', '3': 13, '4': 1, '5': 8, '10': 'populateTransitionPolylines'},
-    {'1': 'allow_large_deadline_despite_interruption_risk', '3': 14, '4': 1, '5': 8, '10': 'allowLargeDeadlineDespiteInterruptionRisk'},
-    {'1': 'use_geodesic_distances', '3': 15, '4': 1, '5': 8, '10': 'useGeodesicDistances'},
-    {'1': 'geodesic_meters_per_second', '3': 16, '4': 1, '5': 1, '9': 0, '10': 'geodesicMetersPerSecond', '17': true},
-    {'1': 'max_validation_errors', '3': 5, '4': 1, '5': 5, '9': 1, '10': 'maxValidationErrors', '17': true},
+    {
+      '1': 'timeout',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
+    {
+      '1': 'model',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentModel',
+      '10': 'model'
+    },
+    {
+      '1': 'solving_mode',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routeoptimization.v1.OptimizeToursRequest.SolvingMode',
+      '10': 'solvingMode'
+    },
+    {
+      '1': 'search_mode',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routeoptimization.v1.OptimizeToursRequest.SearchMode',
+      '10': 'searchMode'
+    },
+    {
+      '1': 'injected_first_solution_routes',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute',
+      '10': 'injectedFirstSolutionRoutes'
+    },
+    {
+      '1': 'injected_solution_constraint',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.InjectedSolutionConstraint',
+      '10': 'injectedSolutionConstraint'
+    },
+    {
+      '1': 'refresh_details_routes',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute',
+      '10': 'refreshDetailsRoutes'
+    },
+    {
+      '1': 'interpret_injected_solutions_using_labels',
+      '3': 10,
+      '4': 1,
+      '5': 8,
+      '10': 'interpretInjectedSolutionsUsingLabels'
+    },
+    {
+      '1': 'consider_road_traffic',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '10': 'considerRoadTraffic'
+    },
+    {
+      '1': 'populate_polylines',
+      '3': 12,
+      '4': 1,
+      '5': 8,
+      '10': 'populatePolylines'
+    },
+    {
+      '1': 'populate_transition_polylines',
+      '3': 13,
+      '4': 1,
+      '5': 8,
+      '10': 'populateTransitionPolylines'
+    },
+    {
+      '1': 'allow_large_deadline_despite_interruption_risk',
+      '3': 14,
+      '4': 1,
+      '5': 8,
+      '10': 'allowLargeDeadlineDespiteInterruptionRisk'
+    },
+    {
+      '1': 'use_geodesic_distances',
+      '3': 15,
+      '4': 1,
+      '5': 8,
+      '10': 'useGeodesicDistances'
+    },
+    {
+      '1': 'geodesic_meters_per_second',
+      '3': 16,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'geodesicMetersPerSecond',
+      '17': true
+    },
+    {
+      '1': 'max_validation_errors',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'maxValidationErrors',
+      '17': true
+    },
     {'1': 'label', '3': 17, '4': 1, '5': 9, '10': 'label'},
   ],
-  '4': [OptimizeToursRequest_SolvingMode$json, OptimizeToursRequest_SearchMode$json],
+  '4': [
+    OptimizeToursRequest_SolvingMode$json,
+    OptimizeToursRequest_SearchMode$json
+  ],
   '8': [
     {'1': '_geodesic_meters_per_second'},
     {'1': '_max_validation_errors'},
@@ -161,11 +290,39 @@ final $typed_data.Uint8List optimizeToursRequestDescriptor = $convert.base64Deco
 const OptimizeToursResponse$json = {
   '1': 'OptimizeToursResponse',
   '2': [
-    {'1': 'routes', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute', '10': 'routes'},
+    {
+      '1': 'routes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute',
+      '10': 'routes'
+    },
     {'1': 'request_label', '3': 3, '4': 1, '5': 9, '10': 'requestLabel'},
-    {'1': 'skipped_shipments', '3': 4, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.SkippedShipment', '10': 'skippedShipments'},
-    {'1': 'validation_errors', '3': 5, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.OptimizeToursValidationError', '10': 'validationErrors'},
-    {'1': 'metrics', '3': 6, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.OptimizeToursResponse.Metrics', '10': 'metrics'},
+    {
+      '1': 'skipped_shipments',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.SkippedShipment',
+      '10': 'skippedShipments'
+    },
+    {
+      '1': 'validation_errors',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.OptimizeToursValidationError',
+      '10': 'validationErrors'
+    },
+    {
+      '1': 'metrics',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.OptimizeToursResponse.Metrics',
+      '10': 'metrics'
+    },
   ],
   '3': [OptimizeToursResponse_Metrics$json],
 };
@@ -174,12 +331,53 @@ const OptimizeToursResponse$json = {
 const OptimizeToursResponse_Metrics$json = {
   '1': 'Metrics',
   '2': [
-    {'1': 'aggregated_route_metrics', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.AggregatedMetrics', '10': 'aggregatedRouteMetrics'},
-    {'1': 'skipped_mandatory_shipment_count', '3': 2, '4': 1, '5': 5, '10': 'skippedMandatoryShipmentCount'},
-    {'1': 'used_vehicle_count', '3': 3, '4': 1, '5': 5, '10': 'usedVehicleCount'},
-    {'1': 'earliest_vehicle_start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'earliestVehicleStartTime'},
-    {'1': 'latest_vehicle_end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'latestVehicleEndTime'},
-    {'1': 'costs', '3': 10, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.OptimizeToursResponse.Metrics.CostsEntry', '10': 'costs'},
+    {
+      '1': 'aggregated_route_metrics',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.AggregatedMetrics',
+      '10': 'aggregatedRouteMetrics'
+    },
+    {
+      '1': 'skipped_mandatory_shipment_count',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'skippedMandatoryShipmentCount'
+    },
+    {
+      '1': 'used_vehicle_count',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'usedVehicleCount'
+    },
+    {
+      '1': 'earliest_vehicle_start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'earliestVehicleStartTime'
+    },
+    {
+      '1': 'latest_vehicle_end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'latestVehicleEndTime'
+    },
+    {
+      '1': 'costs',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.OptimizeToursResponse.Metrics.CostsEntry',
+      '10': 'costs'
+    },
     {'1': 'total_cost', '3': 6, '4': 1, '5': 1, '10': 'totalCost'},
   ],
   '3': [OptimizeToursResponse_Metrics_CostsEntry$json],
@@ -221,21 +419,114 @@ final $typed_data.Uint8List optimizeToursResponseDescriptor = $convert.base64Dec
 const ShipmentModel$json = {
   '1': 'ShipmentModel',
   '2': [
-    {'1': 'shipments', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment', '10': 'shipments'},
-    {'1': 'vehicles', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle', '10': 'vehicles'},
-    {'1': 'max_active_vehicles', '3': 4, '4': 1, '5': 5, '9': 0, '10': 'maxActiveVehicles', '17': true},
-    {'1': 'global_start_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'globalStartTime'},
-    {'1': 'global_end_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'globalEndTime'},
-    {'1': 'global_duration_cost_per_hour', '3': 7, '4': 1, '5': 1, '10': 'globalDurationCostPerHour'},
-    {'1': 'duration_distance_matrices', '3': 8, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentModel.DurationDistanceMatrix', '10': 'durationDistanceMatrices'},
-    {'1': 'duration_distance_matrix_src_tags', '3': 9, '4': 3, '5': 9, '10': 'durationDistanceMatrixSrcTags'},
-    {'1': 'duration_distance_matrix_dst_tags', '3': 10, '4': 3, '5': 9, '10': 'durationDistanceMatrixDstTags'},
-    {'1': 'transition_attributes', '3': 11, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.TransitionAttributes', '10': 'transitionAttributes'},
-    {'1': 'shipment_type_incompatibilities', '3': 12, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentTypeIncompatibility', '10': 'shipmentTypeIncompatibilities'},
-    {'1': 'shipment_type_requirements', '3': 13, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentTypeRequirement', '10': 'shipmentTypeRequirements'},
-    {'1': 'precedence_rules', '3': 14, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentModel.PrecedenceRule', '10': 'precedenceRules'},
+    {
+      '1': 'shipments',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Shipment',
+      '10': 'shipments'
+    },
+    {
+      '1': 'vehicles',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Vehicle',
+      '10': 'vehicles'
+    },
+    {
+      '1': 'max_active_vehicles',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'maxActiveVehicles',
+      '17': true
+    },
+    {
+      '1': 'global_start_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'globalStartTime'
+    },
+    {
+      '1': 'global_end_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'globalEndTime'
+    },
+    {
+      '1': 'global_duration_cost_per_hour',
+      '3': 7,
+      '4': 1,
+      '5': 1,
+      '10': 'globalDurationCostPerHour'
+    },
+    {
+      '1': 'duration_distance_matrices',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.ShipmentModel.DurationDistanceMatrix',
+      '10': 'durationDistanceMatrices'
+    },
+    {
+      '1': 'duration_distance_matrix_src_tags',
+      '3': 9,
+      '4': 3,
+      '5': 9,
+      '10': 'durationDistanceMatrixSrcTags'
+    },
+    {
+      '1': 'duration_distance_matrix_dst_tags',
+      '3': 10,
+      '4': 3,
+      '5': 9,
+      '10': 'durationDistanceMatrixDstTags'
+    },
+    {
+      '1': 'transition_attributes',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.TransitionAttributes',
+      '10': 'transitionAttributes'
+    },
+    {
+      '1': 'shipment_type_incompatibilities',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentTypeIncompatibility',
+      '10': 'shipmentTypeIncompatibilities'
+    },
+    {
+      '1': 'shipment_type_requirements',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentTypeRequirement',
+      '10': 'shipmentTypeRequirements'
+    },
+    {
+      '1': 'precedence_rules',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentModel.PrecedenceRule',
+      '10': 'precedenceRules'
+    },
   ],
-  '3': [ShipmentModel_DurationDistanceMatrix$json, ShipmentModel_PrecedenceRule$json],
+  '3': [
+    ShipmentModel_DurationDistanceMatrix$json,
+    ShipmentModel_PrecedenceRule$json
+  ],
   '8': [
     {'1': '_max_active_vehicles'},
   ],
@@ -245,7 +536,15 @@ const ShipmentModel$json = {
 const ShipmentModel_DurationDistanceMatrix$json = {
   '1': 'DurationDistanceMatrix',
   '2': [
-    {'1': 'rows', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentModel.DurationDistanceMatrix.Row', '10': 'rows'},
+    {
+      '1': 'rows',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.ShipmentModel.DurationDistanceMatrix.Row',
+      '10': 'rows'
+    },
     {'1': 'vehicle_start_tag', '3': 2, '4': 1, '5': 9, '10': 'vehicleStartTag'},
   ],
   '3': [ShipmentModel_DurationDistanceMatrix_Row$json],
@@ -255,7 +554,14 @@ const ShipmentModel_DurationDistanceMatrix$json = {
 const ShipmentModel_DurationDistanceMatrix_Row$json = {
   '1': 'Row',
   '2': [
-    {'1': 'durations', '3': 1, '4': 3, '5': 11, '6': '.google.protobuf.Duration', '10': 'durations'},
+    {
+      '1': 'durations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'durations'
+    },
     {'1': 'meters', '3': 2, '4': 3, '5': 1, '10': 'meters'},
   ],
 };
@@ -264,11 +570,40 @@ const ShipmentModel_DurationDistanceMatrix_Row$json = {
 const ShipmentModel_PrecedenceRule$json = {
   '1': 'PrecedenceRule',
   '2': [
-    {'1': 'first_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'firstIndex', '17': true},
+    {
+      '1': 'first_index',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'firstIndex',
+      '17': true
+    },
     {'1': 'first_is_delivery', '3': 3, '4': 1, '5': 8, '10': 'firstIsDelivery'},
-    {'1': 'second_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'secondIndex', '17': true},
-    {'1': 'second_is_delivery', '3': 4, '4': 1, '5': 8, '10': 'secondIsDelivery'},
-    {'1': 'offset_duration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'offsetDuration'},
+    {
+      '1': 'second_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'secondIndex',
+      '17': true
+    },
+    {
+      '1': 'second_is_delivery',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'secondIsDelivery'
+    },
+    {
+      '1': 'offset_duration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'offsetDuration'
+    },
   ],
   '8': [
     {'1': '_first_index'},
@@ -316,21 +651,88 @@ const Shipment$json = {
   '1': 'Shipment',
   '2': [
     {'1': 'display_name', '3': 16, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'pickups', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment.VisitRequest', '10': 'pickups'},
-    {'1': 'deliveries', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment.VisitRequest', '10': 'deliveries'},
-    {'1': 'load_demands', '3': 14, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment.LoadDemandsEntry', '10': 'loadDemands'},
-    {'1': 'penalty_cost', '3': 4, '4': 1, '5': 1, '9': 0, '10': 'penaltyCost', '17': true},
-    {'1': 'allowed_vehicle_indices', '3': 5, '4': 3, '5': 5, '10': 'allowedVehicleIndices'},
+    {
+      '1': 'pickups',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Shipment.VisitRequest',
+      '10': 'pickups'
+    },
+    {
+      '1': 'deliveries',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Shipment.VisitRequest',
+      '10': 'deliveries'
+    },
+    {
+      '1': 'load_demands',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Shipment.LoadDemandsEntry',
+      '10': 'loadDemands'
+    },
+    {
+      '1': 'penalty_cost',
+      '3': 4,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'penaltyCost',
+      '17': true
+    },
+    {
+      '1': 'allowed_vehicle_indices',
+      '3': 5,
+      '4': 3,
+      '5': 5,
+      '10': 'allowedVehicleIndices'
+    },
     {'1': 'costs_per_vehicle', '3': 6, '4': 3, '5': 1, '10': 'costsPerVehicle'},
-    {'1': 'costs_per_vehicle_indices', '3': 7, '4': 3, '5': 5, '10': 'costsPerVehicleIndices'},
-    {'1': 'pickup_to_delivery_relative_detour_limit', '3': 8, '4': 1, '5': 1, '9': 1, '10': 'pickupToDeliveryRelativeDetourLimit', '17': true},
-    {'1': 'pickup_to_delivery_absolute_detour_limit', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'pickupToDeliveryAbsoluteDetourLimit'},
-    {'1': 'pickup_to_delivery_time_limit', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'pickupToDeliveryTimeLimit'},
+    {
+      '1': 'costs_per_vehicle_indices',
+      '3': 7,
+      '4': 3,
+      '5': 5,
+      '10': 'costsPerVehicleIndices'
+    },
+    {
+      '1': 'pickup_to_delivery_relative_detour_limit',
+      '3': 8,
+      '4': 1,
+      '5': 1,
+      '9': 1,
+      '10': 'pickupToDeliveryRelativeDetourLimit',
+      '17': true
+    },
+    {
+      '1': 'pickup_to_delivery_absolute_detour_limit',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'pickupToDeliveryAbsoluteDetourLimit'
+    },
+    {
+      '1': 'pickup_to_delivery_time_limit',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'pickupToDeliveryTimeLimit'
+    },
     {'1': 'shipment_type', '3': 11, '4': 1, '5': 9, '10': 'shipmentType'},
     {'1': 'label', '3': 12, '4': 1, '5': 9, '10': 'label'},
     {'1': 'ignore', '3': 13, '4': 1, '5': 8, '10': 'ignore'},
   ],
-  '3': [Shipment_VisitRequest$json, Shipment_Load$json, Shipment_LoadDemandsEntry$json],
+  '3': [
+    Shipment_VisitRequest$json,
+    Shipment_Load$json,
+    Shipment_LoadDemandsEntry$json
+  ],
   '8': [
     {'1': '_penalty_cost'},
     {'1': '_pickup_to_delivery_relative_detour_limit'},
@@ -341,15 +743,65 @@ const Shipment$json = {
 const Shipment_VisitRequest$json = {
   '1': 'VisitRequest',
   '2': [
-    {'1': 'arrival_location', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'arrivalLocation'},
-    {'1': 'arrival_waypoint', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Waypoint', '10': 'arrivalWaypoint'},
-    {'1': 'departure_location', '3': 3, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'departureLocation'},
-    {'1': 'departure_waypoint', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Waypoint', '10': 'departureWaypoint'},
+    {
+      '1': 'arrival_location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'arrivalLocation'
+    },
+    {
+      '1': 'arrival_waypoint',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Waypoint',
+      '10': 'arrivalWaypoint'
+    },
+    {
+      '1': 'departure_location',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'departureLocation'
+    },
+    {
+      '1': 'departure_waypoint',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Waypoint',
+      '10': 'departureWaypoint'
+    },
     {'1': 'tags', '3': 5, '4': 3, '5': 9, '10': 'tags'},
-    {'1': 'time_windows', '3': 6, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.TimeWindow', '10': 'timeWindows'},
-    {'1': 'duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
+    {
+      '1': 'time_windows',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.TimeWindow',
+      '10': 'timeWindows'
+    },
+    {
+      '1': 'duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
     {'1': 'cost', '3': 8, '4': 1, '5': 1, '10': 'cost'},
-    {'1': 'load_demands', '3': 12, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment.VisitRequest.LoadDemandsEntry', '10': 'loadDemands'},
+    {
+      '1': 'load_demands',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.Shipment.VisitRequest.LoadDemandsEntry',
+      '10': 'loadDemands'
+    },
     {'1': 'visit_types', '3': 10, '4': 3, '5': 9, '10': 'visitTypes'},
     {'1': 'label', '3': 11, '4': 1, '5': 9, '10': 'label'},
   ],
@@ -361,7 +813,14 @@ const Shipment_VisitRequest_LoadDemandsEntry$json = {
   '1': 'LoadDemandsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment.Load', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Shipment.Load',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -379,7 +838,14 @@ const Shipment_LoadDemandsEntry$json = {
   '1': 'LoadDemandsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment.Load', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Shipment.Load',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -426,7 +892,15 @@ const ShipmentTypeIncompatibility$json = {
   '1': 'ShipmentTypeIncompatibility',
   '2': [
     {'1': 'types', '3': 1, '4': 3, '5': 9, '10': 'types'},
-    {'1': 'incompatibility_mode', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.ShipmentTypeIncompatibility.IncompatibilityMode', '10': 'incompatibilityMode'},
+    {
+      '1': 'incompatibility_mode',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.maps.routeoptimization.v1.ShipmentTypeIncompatibility.IncompatibilityMode',
+      '10': 'incompatibilityMode'
+    },
   ],
   '4': [ShipmentTypeIncompatibility_IncompatibilityMode$json],
 };
@@ -454,9 +928,29 @@ final $typed_data.Uint8List shipmentTypeIncompatibilityDescriptor = $convert.bas
 const ShipmentTypeRequirement$json = {
   '1': 'ShipmentTypeRequirement',
   '2': [
-    {'1': 'required_shipment_type_alternatives', '3': 1, '4': 3, '5': 9, '10': 'requiredShipmentTypeAlternatives'},
-    {'1': 'dependent_shipment_types', '3': 2, '4': 3, '5': 9, '10': 'dependentShipmentTypes'},
-    {'1': 'requirement_mode', '3': 3, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.ShipmentTypeRequirement.RequirementMode', '10': 'requirementMode'},
+    {
+      '1': 'required_shipment_type_alternatives',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'requiredShipmentTypeAlternatives'
+    },
+    {
+      '1': 'dependent_shipment_types',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'dependentShipmentTypes'
+    },
+    {
+      '1': 'requirement_mode',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.maps.routeoptimization.v1.ShipmentTypeRequirement.RequirementMode',
+      '10': 'requirementMode'
+    },
   ],
   '4': [ShipmentTypeRequirement_RequirementMode$json],
 };
@@ -505,33 +999,170 @@ const Vehicle$json = {
   '1': 'Vehicle',
   '2': [
     {'1': 'display_name', '3': 32, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'travel_mode', '3': 1, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.Vehicle.TravelMode', '10': 'travelMode'},
-    {'1': 'route_modifiers', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.RouteModifiers', '10': 'routeModifiers'},
-    {'1': 'start_location', '3': 3, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'startLocation'},
-    {'1': 'start_waypoint', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Waypoint', '10': 'startWaypoint'},
-    {'1': 'end_location', '3': 5, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'endLocation'},
-    {'1': 'end_waypoint', '3': 6, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Waypoint', '10': 'endWaypoint'},
+    {
+      '1': 'travel_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.TravelMode',
+      '10': 'travelMode'
+    },
+    {
+      '1': 'route_modifiers',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.RouteModifiers',
+      '10': 'routeModifiers'
+    },
+    {
+      '1': 'start_location',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'startLocation'
+    },
+    {
+      '1': 'start_waypoint',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Waypoint',
+      '10': 'startWaypoint'
+    },
+    {
+      '1': 'end_location',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'endLocation'
+    },
+    {
+      '1': 'end_waypoint',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Waypoint',
+      '10': 'endWaypoint'
+    },
     {'1': 'start_tags', '3': 7, '4': 3, '5': 9, '10': 'startTags'},
     {'1': 'end_tags', '3': 8, '4': 3, '5': 9, '10': 'endTags'},
-    {'1': 'start_time_windows', '3': 9, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.TimeWindow', '10': 'startTimeWindows'},
-    {'1': 'end_time_windows', '3': 10, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.TimeWindow', '10': 'endTimeWindows'},
-    {'1': 'travel_duration_multiple', '3': 11, '4': 1, '5': 1, '9': 0, '10': 'travelDurationMultiple', '17': true},
-    {'1': 'unloading_policy', '3': 12, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.Vehicle.UnloadingPolicy', '10': 'unloadingPolicy'},
-    {'1': 'load_limits', '3': 30, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimitsEntry', '10': 'loadLimits'},
+    {
+      '1': 'start_time_windows',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.TimeWindow',
+      '10': 'startTimeWindows'
+    },
+    {
+      '1': 'end_time_windows',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.TimeWindow',
+      '10': 'endTimeWindows'
+    },
+    {
+      '1': 'travel_duration_multiple',
+      '3': 11,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'travelDurationMultiple',
+      '17': true
+    },
+    {
+      '1': 'unloading_policy',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.UnloadingPolicy',
+      '10': 'unloadingPolicy'
+    },
+    {
+      '1': 'load_limits',
+      '3': 30,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimitsEntry',
+      '10': 'loadLimits'
+    },
     {'1': 'cost_per_hour', '3': 16, '4': 1, '5': 1, '10': 'costPerHour'},
-    {'1': 'cost_per_traveled_hour', '3': 17, '4': 1, '5': 1, '10': 'costPerTraveledHour'},
-    {'1': 'cost_per_kilometer', '3': 18, '4': 1, '5': 1, '10': 'costPerKilometer'},
+    {
+      '1': 'cost_per_traveled_hour',
+      '3': 17,
+      '4': 1,
+      '5': 1,
+      '10': 'costPerTraveledHour'
+    },
+    {
+      '1': 'cost_per_kilometer',
+      '3': 18,
+      '4': 1,
+      '5': 1,
+      '10': 'costPerKilometer'
+    },
     {'1': 'fixed_cost', '3': 19, '4': 1, '5': 1, '10': 'fixedCost'},
-    {'1': 'used_if_route_is_empty', '3': 20, '4': 1, '5': 8, '10': 'usedIfRouteIsEmpty'},
-    {'1': 'route_duration_limit', '3': 21, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle.DurationLimit', '10': 'routeDurationLimit'},
-    {'1': 'travel_duration_limit', '3': 22, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle.DurationLimit', '10': 'travelDurationLimit'},
-    {'1': 'route_distance_limit', '3': 23, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.DistanceLimit', '10': 'routeDistanceLimit'},
-    {'1': 'extra_visit_duration_for_visit_type', '3': 24, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle.ExtraVisitDurationForVisitTypeEntry', '10': 'extraVisitDurationForVisitType'},
-    {'1': 'break_rule', '3': 25, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.BreakRule', '10': 'breakRule'},
+    {
+      '1': 'used_if_route_is_empty',
+      '3': 20,
+      '4': 1,
+      '5': 8,
+      '10': 'usedIfRouteIsEmpty'
+    },
+    {
+      '1': 'route_duration_limit',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.DurationLimit',
+      '10': 'routeDurationLimit'
+    },
+    {
+      '1': 'travel_duration_limit',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.DurationLimit',
+      '10': 'travelDurationLimit'
+    },
+    {
+      '1': 'route_distance_limit',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.DistanceLimit',
+      '10': 'routeDistanceLimit'
+    },
+    {
+      '1': 'extra_visit_duration_for_visit_type',
+      '3': 24,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.Vehicle.ExtraVisitDurationForVisitTypeEntry',
+      '10': 'extraVisitDurationForVisitType'
+    },
+    {
+      '1': 'break_rule',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.BreakRule',
+      '10': 'breakRule'
+    },
     {'1': 'label', '3': 27, '4': 1, '5': 9, '10': 'label'},
     {'1': 'ignore', '3': 28, '4': 1, '5': 8, '10': 'ignore'},
   ],
-  '3': [Vehicle_LoadLimit$json, Vehicle_DurationLimit$json, Vehicle_LoadLimitsEntry$json, Vehicle_ExtraVisitDurationForVisitTypeEntry$json],
+  '3': [
+    Vehicle_LoadLimit$json,
+    Vehicle_DurationLimit$json,
+    Vehicle_LoadLimitsEntry$json,
+    Vehicle_ExtraVisitDurationForVisitTypeEntry$json
+  ],
   '4': [Vehicle_TravelMode$json, Vehicle_UnloadingPolicy$json],
   '8': [
     {'1': '_travel_duration_multiple'},
@@ -542,11 +1173,39 @@ const Vehicle$json = {
 const Vehicle_LoadLimit$json = {
   '1': 'LoadLimit',
   '2': [
-    {'1': 'max_load', '3': 1, '4': 1, '5': 3, '9': 0, '10': 'maxLoad', '17': true},
+    {
+      '1': 'max_load',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'maxLoad',
+      '17': true
+    },
     {'1': 'soft_max_load', '3': 2, '4': 1, '5': 3, '10': 'softMaxLoad'},
-    {'1': 'cost_per_unit_above_soft_max', '3': 3, '4': 1, '5': 1, '10': 'costPerUnitAboveSoftMax'},
-    {'1': 'start_load_interval', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimit.Interval', '10': 'startLoadInterval'},
-    {'1': 'end_load_interval', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimit.Interval', '10': 'endLoadInterval'},
+    {
+      '1': 'cost_per_unit_above_soft_max',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '10': 'costPerUnitAboveSoftMax'
+    },
+    {
+      '1': 'start_load_interval',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimit.Interval',
+      '10': 'startLoadInterval'
+    },
+    {
+      '1': 'end_load_interval',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimit.Interval',
+      '10': 'endLoadInterval'
+    },
   ],
   '3': [Vehicle_LoadLimit_Interval$json],
   '8': [
@@ -570,11 +1229,48 @@ const Vehicle_LoadLimit_Interval$json = {
 const Vehicle_DurationLimit$json = {
   '1': 'DurationLimit',
   '2': [
-    {'1': 'max_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maxDuration'},
-    {'1': 'soft_max_duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'softMaxDuration'},
-    {'1': 'cost_per_hour_after_soft_max', '3': 3, '4': 1, '5': 1, '9': 0, '10': 'costPerHourAfterSoftMax', '17': true},
-    {'1': 'quadratic_soft_max_duration', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'quadraticSoftMaxDuration'},
-    {'1': 'cost_per_square_hour_after_quadratic_soft_max', '3': 5, '4': 1, '5': 1, '9': 1, '10': 'costPerSquareHourAfterQuadraticSoftMax', '17': true},
+    {
+      '1': 'max_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maxDuration'
+    },
+    {
+      '1': 'soft_max_duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'softMaxDuration'
+    },
+    {
+      '1': 'cost_per_hour_after_soft_max',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'costPerHourAfterSoftMax',
+      '17': true
+    },
+    {
+      '1': 'quadratic_soft_max_duration',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'quadraticSoftMaxDuration'
+    },
+    {
+      '1': 'cost_per_square_hour_after_quadratic_soft_max',
+      '3': 5,
+      '4': 1,
+      '5': 1,
+      '9': 1,
+      '10': 'costPerSquareHourAfterQuadraticSoftMax',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_cost_per_hour_after_soft_max'},
@@ -587,7 +1283,14 @@ const Vehicle_LoadLimitsEntry$json = {
   '1': 'LoadLimitsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimit', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Vehicle.LoadLimit',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -597,7 +1300,14 @@ const Vehicle_ExtraVisitDurationForVisitTypeEntry$json = {
   '1': 'ExtraVisitDurationForVisitTypeEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -686,12 +1396,56 @@ final $typed_data.Uint8List vehicleDescriptor = $convert.base64Decode(
 const TimeWindow$json = {
   '1': 'TimeWindow',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'soft_start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'softStartTime'},
-    {'1': 'soft_end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'softEndTime'},
-    {'1': 'cost_per_hour_before_soft_start_time', '3': 5, '4': 1, '5': 1, '9': 0, '10': 'costPerHourBeforeSoftStartTime', '17': true},
-    {'1': 'cost_per_hour_after_soft_end_time', '3': 6, '4': 1, '5': 1, '9': 1, '10': 'costPerHourAfterSoftEndTime', '17': true},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'soft_start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'softStartTime'
+    },
+    {
+      '1': 'soft_end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'softEndTime'
+    },
+    {
+      '1': 'cost_per_hour_before_soft_start_time',
+      '3': 5,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'costPerHourBeforeSoftStartTime',
+      '17': true
+    },
+    {
+      '1': 'cost_per_hour_after_soft_end_time',
+      '3': 6,
+      '4': 1,
+      '5': 1,
+      '9': 1,
+      '10': 'costPerHourAfterSoftEndTime',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_cost_per_hour_before_soft_start_time'},
@@ -715,10 +1469,42 @@ final $typed_data.Uint8List timeWindowDescriptor = $convert.base64Decode(
 const DistanceLimit$json = {
   '1': 'DistanceLimit',
   '2': [
-    {'1': 'max_meters', '3': 1, '4': 1, '5': 3, '9': 0, '10': 'maxMeters', '17': true},
-    {'1': 'soft_max_meters', '3': 2, '4': 1, '5': 3, '9': 1, '10': 'softMaxMeters', '17': true},
-    {'1': 'cost_per_kilometer_below_soft_max', '3': 4, '4': 1, '5': 1, '9': 2, '10': 'costPerKilometerBelowSoftMax', '17': true},
-    {'1': 'cost_per_kilometer_above_soft_max', '3': 3, '4': 1, '5': 1, '9': 3, '10': 'costPerKilometerAboveSoftMax', '17': true},
+    {
+      '1': 'max_meters',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'maxMeters',
+      '17': true
+    },
+    {
+      '1': 'soft_max_meters',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'softMaxMeters',
+      '17': true
+    },
+    {
+      '1': 'cost_per_kilometer_below_soft_max',
+      '3': 4,
+      '4': 1,
+      '5': 1,
+      '9': 2,
+      '10': 'costPerKilometerBelowSoftMax',
+      '17': true
+    },
+    {
+      '1': 'cost_per_kilometer_above_soft_max',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '9': 3,
+      '10': 'costPerKilometerAboveSoftMax',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_max_meters'},
@@ -747,9 +1533,29 @@ const TransitionAttributes$json = {
     {'1': 'dst_tag', '3': 3, '4': 1, '5': 9, '10': 'dstTag'},
     {'1': 'excluded_dst_tag', '3': 4, '4': 1, '5': 9, '10': 'excludedDstTag'},
     {'1': 'cost', '3': 5, '4': 1, '5': 1, '10': 'cost'},
-    {'1': 'cost_per_kilometer', '3': 6, '4': 1, '5': 1, '10': 'costPerKilometer'},
-    {'1': 'distance_limit', '3': 7, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.DistanceLimit', '10': 'distanceLimit'},
-    {'1': 'delay', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'delay'},
+    {
+      '1': 'cost_per_kilometer',
+      '3': 6,
+      '4': 1,
+      '5': 1,
+      '10': 'costPerKilometer'
+    },
+    {
+      '1': 'distance_limit',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.DistanceLimit',
+      '10': 'distanceLimit'
+    },
+    {
+      '1': 'delay',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'delay'
+    },
   ],
 };
 
@@ -767,7 +1573,15 @@ final $typed_data.Uint8List transitionAttributesDescriptor = $convert.base64Deco
 const Waypoint$json = {
   '1': 'Waypoint',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Location', '9': 0, '10': 'location'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Location',
+      '9': 0,
+      '10': 'location'
+    },
     {'1': 'place_id', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'placeId'},
     {'1': 'side_of_road', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'sideOfRoad'},
   ],
@@ -787,8 +1601,23 @@ final $typed_data.Uint8List waypointDescriptor = $convert.base64Decode(
 const Location$json = {
   '1': 'Location',
   '2': [
-    {'1': 'lat_lng', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'latLng'},
-    {'1': 'heading', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'heading', '17': true},
+    {
+      '1': 'lat_lng',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'latLng'
+    },
+    {
+      '1': 'heading',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'heading',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_heading'},
@@ -804,8 +1633,22 @@ final $typed_data.Uint8List locationDescriptor = $convert.base64Decode(
 const BreakRule$json = {
   '1': 'BreakRule',
   '2': [
-    {'1': 'break_requests', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.BreakRule.BreakRequest', '10': 'breakRequests'},
-    {'1': 'frequency_constraints', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.BreakRule.FrequencyConstraint', '10': 'frequencyConstraints'},
+    {
+      '1': 'break_requests',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.BreakRule.BreakRequest',
+      '10': 'breakRequests'
+    },
+    {
+      '1': 'frequency_constraints',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.BreakRule.FrequencyConstraint',
+      '10': 'frequencyConstraints'
+    },
   ],
   '3': [BreakRule_BreakRequest$json, BreakRule_FrequencyConstraint$json],
 };
@@ -814,9 +1657,33 @@ const BreakRule$json = {
 const BreakRule_BreakRequest$json = {
   '1': 'BreakRequest',
   '2': [
-    {'1': 'earliest_start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'earliestStartTime'},
-    {'1': 'latest_start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'latestStartTime'},
-    {'1': 'min_duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'minDuration'},
+    {
+      '1': 'earliest_start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'earliestStartTime'
+    },
+    {
+      '1': 'latest_start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'latestStartTime'
+    },
+    {
+      '1': 'min_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'minDuration'
+    },
   ],
 };
 
@@ -824,8 +1691,24 @@ const BreakRule_BreakRequest$json = {
 const BreakRule_FrequencyConstraint$json = {
   '1': 'FrequencyConstraint',
   '2': [
-    {'1': 'min_break_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'minBreakDuration'},
-    {'1': 'max_inter_break_duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'maxInterBreakDuration'},
+    {
+      '1': 'min_break_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'minBreakDuration'
+    },
+    {
+      '1': 'max_inter_break_duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'maxInterBreakDuration'
+    },
   ],
 };
 
@@ -850,18 +1733,87 @@ const ShipmentRoute$json = {
   '2': [
     {'1': 'vehicle_index', '3': 1, '4': 1, '5': 5, '10': 'vehicleIndex'},
     {'1': 'vehicle_label', '3': 2, '4': 1, '5': 9, '10': 'vehicleLabel'},
-    {'1': 'vehicle_start_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'vehicleStartTime'},
-    {'1': 'vehicle_end_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'vehicleEndTime'},
-    {'1': 'visits', '3': 7, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Visit', '10': 'visits'},
-    {'1': 'transitions', '3': 8, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Transition', '10': 'transitions'},
-    {'1': 'has_traffic_infeasibilities', '3': 9, '4': 1, '5': 8, '10': 'hasTrafficInfeasibilities'},
-    {'1': 'route_polyline', '3': 10, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.EncodedPolyline', '10': 'routePolyline'},
-    {'1': 'breaks', '3': 11, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Break', '10': 'breaks'},
-    {'1': 'metrics', '3': 12, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.AggregatedMetrics', '10': 'metrics'},
-    {'1': 'route_costs', '3': 17, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.RouteCostsEntry', '10': 'routeCosts'},
+    {
+      '1': 'vehicle_start_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'vehicleStartTime'
+    },
+    {
+      '1': 'vehicle_end_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'vehicleEndTime'
+    },
+    {
+      '1': 'visits',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Visit',
+      '10': 'visits'
+    },
+    {
+      '1': 'transitions',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Transition',
+      '10': 'transitions'
+    },
+    {
+      '1': 'has_traffic_infeasibilities',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '10': 'hasTrafficInfeasibilities'
+    },
+    {
+      '1': 'route_polyline',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.EncodedPolyline',
+      '10': 'routePolyline'
+    },
+    {
+      '1': 'breaks',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Break',
+      '10': 'breaks'
+    },
+    {
+      '1': 'metrics',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.AggregatedMetrics',
+      '10': 'metrics'
+    },
+    {
+      '1': 'route_costs',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.RouteCostsEntry',
+      '10': 'routeCosts'
+    },
     {'1': 'route_total_cost', '3': 18, '4': 1, '5': 1, '10': 'routeTotalCost'},
   ],
-  '3': [ShipmentRoute_Visit$json, ShipmentRoute_Transition$json, ShipmentRoute_VehicleLoad$json, ShipmentRoute_EncodedPolyline$json, ShipmentRoute_Break$json, ShipmentRoute_RouteCostsEntry$json],
+  '3': [
+    ShipmentRoute_Visit$json,
+    ShipmentRoute_Transition$json,
+    ShipmentRoute_VehicleLoad$json,
+    ShipmentRoute_EncodedPolyline$json,
+    ShipmentRoute_Break$json,
+    ShipmentRoute_RouteCostsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use shipmentRouteDescriptor instead')
@@ -870,10 +1822,38 @@ const ShipmentRoute_Visit$json = {
   '2': [
     {'1': 'shipment_index', '3': 1, '4': 1, '5': 5, '10': 'shipmentIndex'},
     {'1': 'is_pickup', '3': 2, '4': 1, '5': 8, '10': 'isPickup'},
-    {'1': 'visit_request_index', '3': 3, '4': 1, '5': 5, '10': 'visitRequestIndex'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'load_demands', '3': 11, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Visit.LoadDemandsEntry', '10': 'loadDemands'},
-    {'1': 'detour', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'detour'},
+    {
+      '1': 'visit_request_index',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'visitRequestIndex'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'load_demands',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.ShipmentRoute.Visit.LoadDemandsEntry',
+      '10': 'loadDemands'
+    },
+    {
+      '1': 'detour',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'detour'
+    },
     {'1': 'shipment_label', '3': 7, '4': 1, '5': 9, '10': 'shipmentLabel'},
     {'1': 'visit_label', '3': 8, '4': 1, '5': 9, '10': 'visitLabel'},
   ],
@@ -885,7 +1865,14 @@ const ShipmentRoute_Visit_LoadDemandsEntry$json = {
   '1': 'LoadDemandsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.Shipment.Load', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.Shipment.Load',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -894,17 +1881,86 @@ const ShipmentRoute_Visit_LoadDemandsEntry$json = {
 const ShipmentRoute_Transition$json = {
   '1': 'Transition',
   '2': [
-    {'1': 'travel_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'travelDuration'},
-    {'1': 'travel_distance_meters', '3': 2, '4': 1, '5': 1, '10': 'travelDistanceMeters'},
-    {'1': 'traffic_info_unavailable', '3': 3, '4': 1, '5': 8, '10': 'trafficInfoUnavailable'},
-    {'1': 'delay_duration', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'delayDuration'},
-    {'1': 'break_duration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'breakDuration'},
-    {'1': 'wait_duration', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'waitDuration'},
-    {'1': 'total_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'totalDuration'},
-    {'1': 'start_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'route_polyline', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.EncodedPolyline', '10': 'routePolyline'},
+    {
+      '1': 'travel_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'travelDuration'
+    },
+    {
+      '1': 'travel_distance_meters',
+      '3': 2,
+      '4': 1,
+      '5': 1,
+      '10': 'travelDistanceMeters'
+    },
+    {
+      '1': 'traffic_info_unavailable',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'trafficInfoUnavailable'
+    },
+    {
+      '1': 'delay_duration',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'delayDuration'
+    },
+    {
+      '1': 'break_duration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'breakDuration'
+    },
+    {
+      '1': 'wait_duration',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'waitDuration'
+    },
+    {
+      '1': 'total_duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'totalDuration'
+    },
+    {
+      '1': 'start_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'route_polyline',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.EncodedPolyline',
+      '10': 'routePolyline'
+    },
     {'1': 'route_token', '3': 12, '4': 1, '5': 9, '8': {}, '10': 'routeToken'},
-    {'1': 'vehicle_loads', '3': 11, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Transition.VehicleLoadsEntry', '10': 'vehicleLoads'},
+    {
+      '1': 'vehicle_loads',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.ShipmentRoute.Transition.VehicleLoadsEntry',
+      '10': 'vehicleLoads'
+    },
   ],
   '3': [ShipmentRoute_Transition_VehicleLoadsEntry$json],
 };
@@ -914,7 +1970,14 @@ const ShipmentRoute_Transition_VehicleLoadsEntry$json = {
   '1': 'VehicleLoadsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.VehicleLoad', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.VehicleLoad',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -939,8 +2002,22 @@ const ShipmentRoute_EncodedPolyline$json = {
 const ShipmentRoute_Break$json = {
   '1': 'Break',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
   ],
 };
 
@@ -1010,7 +2087,14 @@ const SkippedShipment$json = {
   '2': [
     {'1': 'index', '3': 1, '4': 1, '5': 5, '10': 'index'},
     {'1': 'label', '3': 2, '4': 1, '5': 9, '10': 'label'},
-    {'1': 'reasons', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.SkippedShipment.Reason', '10': 'reasons'},
+    {
+      '1': 'reasons',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.SkippedShipment.Reason',
+      '10': 'reasons'
+    },
   ],
   '3': [SkippedShipment_Reason$json],
 };
@@ -1019,9 +2103,30 @@ const SkippedShipment$json = {
 const SkippedShipment_Reason$json = {
   '1': 'Reason',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.SkippedShipment.Reason.Code', '10': 'code'},
-    {'1': 'example_vehicle_index', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'exampleVehicleIndex', '17': true},
-    {'1': 'example_exceeded_capacity_type', '3': 3, '4': 1, '5': 9, '10': 'exampleExceededCapacityType'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routeoptimization.v1.SkippedShipment.Reason.Code',
+      '10': 'code'
+    },
+    {
+      '1': 'example_vehicle_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'exampleVehicleIndex',
+      '17': true
+    },
+    {
+      '1': 'example_exceeded_capacity_type',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'exampleExceededCapacityType'
+    },
   ],
   '4': [SkippedShipment_Reason_Code$json],
   '8': [
@@ -1065,15 +2170,76 @@ final $typed_data.Uint8List skippedShipmentDescriptor = $convert.base64Decode(
 const AggregatedMetrics$json = {
   '1': 'AggregatedMetrics',
   '2': [
-    {'1': 'performed_shipment_count', '3': 1, '4': 1, '5': 5, '10': 'performedShipmentCount'},
-    {'1': 'travel_duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'travelDuration'},
-    {'1': 'wait_duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'waitDuration'},
-    {'1': 'delay_duration', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'delayDuration'},
-    {'1': 'break_duration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'breakDuration'},
-    {'1': 'visit_duration', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'visitDuration'},
-    {'1': 'total_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'totalDuration'},
-    {'1': 'travel_distance_meters', '3': 8, '4': 1, '5': 1, '10': 'travelDistanceMeters'},
-    {'1': 'max_loads', '3': 9, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.AggregatedMetrics.MaxLoadsEntry', '10': 'maxLoads'},
+    {
+      '1': 'performed_shipment_count',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'performedShipmentCount'
+    },
+    {
+      '1': 'travel_duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'travelDuration'
+    },
+    {
+      '1': 'wait_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'waitDuration'
+    },
+    {
+      '1': 'delay_duration',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'delayDuration'
+    },
+    {
+      '1': 'break_duration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'breakDuration'
+    },
+    {
+      '1': 'visit_duration',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'visitDuration'
+    },
+    {
+      '1': 'total_duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'totalDuration'
+    },
+    {
+      '1': 'travel_distance_meters',
+      '3': 8,
+      '4': 1,
+      '5': 1,
+      '10': 'travelDistanceMeters'
+    },
+    {
+      '1': 'max_loads',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.AggregatedMetrics.MaxLoadsEntry',
+      '10': 'maxLoads'
+    },
   ],
   '3': [AggregatedMetrics_MaxLoadsEntry$json],
 };
@@ -1083,7 +2249,14 @@ const AggregatedMetrics_MaxLoadsEntry$json = {
   '1': 'MaxLoadsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.VehicleLoad', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute.VehicleLoad',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -1109,9 +2282,31 @@ final $typed_data.Uint8List aggregatedMetricsDescriptor = $convert.base64Decode(
 const InjectedSolutionConstraint$json = {
   '1': 'InjectedSolutionConstraint',
   '2': [
-    {'1': 'routes', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute', '10': 'routes'},
-    {'1': 'skipped_shipments', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.SkippedShipment', '10': 'skippedShipments'},
-    {'1': 'constraint_relaxations', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.InjectedSolutionConstraint.ConstraintRelaxation', '10': 'constraintRelaxations'},
+    {
+      '1': 'routes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.ShipmentRoute',
+      '10': 'routes'
+    },
+    {
+      '1': 'skipped_shipments',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.SkippedShipment',
+      '10': 'skippedShipments'
+    },
+    {
+      '1': 'constraint_relaxations',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.InjectedSolutionConstraint.ConstraintRelaxation',
+      '10': 'constraintRelaxations'
+    },
   ],
   '3': [InjectedSolutionConstraint_ConstraintRelaxation$json],
 };
@@ -1120,7 +2315,15 @@ const InjectedSolutionConstraint$json = {
 const InjectedSolutionConstraint_ConstraintRelaxation$json = {
   '1': 'ConstraintRelaxation',
   '2': [
-    {'1': 'relaxations', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.InjectedSolutionConstraint.ConstraintRelaxation.Relaxation', '10': 'relaxations'},
+    {
+      '1': 'relaxations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.InjectedSolutionConstraint.ConstraintRelaxation.Relaxation',
+      '10': 'relaxations'
+    },
     {'1': 'vehicle_indices', '3': 2, '4': 3, '5': 5, '10': 'vehicleIndices'},
   ],
   '3': [InjectedSolutionConstraint_ConstraintRelaxation_Relaxation$json],
@@ -1130,9 +2333,30 @@ const InjectedSolutionConstraint_ConstraintRelaxation$json = {
 const InjectedSolutionConstraint_ConstraintRelaxation_Relaxation$json = {
   '1': 'Relaxation',
   '2': [
-    {'1': 'level', '3': 1, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.InjectedSolutionConstraint.ConstraintRelaxation.Relaxation.Level', '10': 'level'},
-    {'1': 'threshold_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'thresholdTime'},
-    {'1': 'threshold_visit_count', '3': 3, '4': 1, '5': 5, '10': 'thresholdVisitCount'},
+    {
+      '1': 'level',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.maps.routeoptimization.v1.InjectedSolutionConstraint.ConstraintRelaxation.Relaxation.Level',
+      '10': 'level'
+    },
+    {
+      '1': 'threshold_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'thresholdTime'
+    },
+    {
+      '1': 'threshold_visit_count',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'thresholdVisitCount'
+    },
   ],
   '4': [InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level$json],
 };
@@ -1174,7 +2398,15 @@ const OptimizeToursValidationError$json = {
   '2': [
     {'1': 'code', '3': 1, '4': 1, '5': 5, '10': 'code'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'fields', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.OptimizeToursValidationError.FieldReference', '10': 'fields'},
+    {
+      '1': 'fields',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.OptimizeToursValidationError.FieldReference',
+      '10': 'fields'
+    },
     {'1': 'error_message', '3': 4, '4': 1, '5': 9, '10': 'errorMessage'},
     {'1': 'offending_values', '3': 5, '4': 1, '5': 9, '10': 'offendingValues'},
   ],
@@ -1188,7 +2420,15 @@ const OptimizeToursValidationError_FieldReference$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'index', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'index'},
     {'1': 'key', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'key'},
-    {'1': 'sub_field', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.OptimizeToursValidationError.FieldReference', '10': 'subField'},
+    {
+      '1': 'sub_field',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.routeoptimization.v1.OptimizeToursValidationError.FieldReference',
+      '10': 'subField'
+    },
   ],
   '8': [
     {'1': 'index_or_key'},
@@ -1211,8 +2451,24 @@ final $typed_data.Uint8List optimizeToursValidationErrorDescriptor = $convert.ba
 const InputConfig$json = {
   '1': 'InputConfig',
   '2': [
-    {'1': 'gcs_source', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.GcsSource', '9': 0, '10': 'gcsSource'},
-    {'1': 'data_format', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.DataFormat', '8': {}, '10': 'dataFormat'},
+    {
+      '1': 'gcs_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.GcsSource',
+      '9': 0,
+      '10': 'gcsSource'
+    },
+    {
+      '1': 'data_format',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routeoptimization.v1.DataFormat',
+      '8': {},
+      '10': 'dataFormat'
+    },
   ],
   '8': [
     {'1': 'source'},
@@ -1230,8 +2486,24 @@ final $typed_data.Uint8List inputConfigDescriptor = $convert.base64Decode(
 const OutputConfig$json = {
   '1': 'OutputConfig',
   '2': [
-    {'1': 'gcs_destination', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.GcsDestination', '9': 0, '10': 'gcsDestination'},
-    {'1': 'data_format', '3': 2, '4': 1, '5': 14, '6': '.google.maps.routeoptimization.v1.DataFormat', '8': {}, '10': 'dataFormat'},
+    {
+      '1': 'gcs_destination',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routeoptimization.v1.GcsDestination',
+      '9': 0,
+      '10': 'gcsDestination'
+    },
+    {
+      '1': 'data_format',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routeoptimization.v1.DataFormat',
+      '8': {},
+      '10': 'dataFormat'
+    },
   ],
   '8': [
     {'1': 'destination'},
@@ -1254,8 +2526,8 @@ const GcsSource$json = {
 };
 
 /// Descriptor for `GcsSource`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List gcsSourceDescriptor = $convert.base64Decode(
-    'CglHY3NTb3VyY2USFQoDdXJpGAEgASgJQgPgQQJSA3VyaQ==');
+final $typed_data.Uint8List gcsSourceDescriptor =
+    $convert.base64Decode('CglHY3NTb3VyY2USFQoDdXJpGAEgASgJQgPgQQJSA3VyaQ==');
 
 @$core.Deprecated('Use gcsDestinationDescriptor instead')
 const GcsDestination$json = {
@@ -1266,6 +2538,5 @@ const GcsDestination$json = {
 };
 
 /// Descriptor for `GcsDestination`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List gcsDestinationDescriptor = $convert.base64Decode(
-    'Cg5HY3NEZXN0aW5hdGlvbhIVCgN1cmkYASABKAlCA+BBAlIDdXJp');
-
+final $typed_data.Uint8List gcsDestinationDescriptor = $convert
+    .base64Decode('Cg5HY3NEZXN0aW5hdGlvbhIVCgN1cmkYASABKAlCA+BBAlIDdXJp');

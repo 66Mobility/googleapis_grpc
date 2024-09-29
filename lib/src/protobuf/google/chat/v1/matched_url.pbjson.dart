@@ -22,6 +22,5 @@ const MatchedUrl$json = {
 };
 
 /// Descriptor for `MatchedUrl`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List matchedUrlDescriptor = $convert.base64Decode(
-    'CgpNYXRjaGVkVXJsEhUKA3VybBgCIAEoCUID4EEDUgN1cmw=');
-
+final $typed_data.Uint8List matchedUrlDescriptor =
+    $convert.base64Decode('CgpNYXRjaGVkVXJsEhUKA3VybBgCIAEoCUID4EEDUgN1cmw=');

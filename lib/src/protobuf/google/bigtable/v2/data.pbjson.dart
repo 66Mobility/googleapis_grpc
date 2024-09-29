@@ -18,7 +18,14 @@ const Row$json = {
   '1': 'Row',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 12, '10': 'key'},
-    {'1': 'families', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.Family', '10': 'families'},
+    {
+      '1': 'families',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Family',
+      '10': 'families'
+    },
   ],
 };
 
@@ -32,7 +39,14 @@ const Family$json = {
   '1': 'Family',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'columns', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.Column', '10': 'columns'},
+    {
+      '1': 'columns',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Column',
+      '10': 'columns'
+    },
   ],
 };
 
@@ -46,7 +60,14 @@ const Column$json = {
   '1': 'Column',
   '2': [
     {'1': 'qualifier', '3': 1, '4': 1, '5': 12, '10': 'qualifier'},
-    {'1': 'cells', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.Cell', '10': 'cells'},
+    {
+      '1': 'cells',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Cell',
+      '10': 'cells'
+    },
   ],
 };
 
@@ -74,17 +95,55 @@ final $typed_data.Uint8List cellDescriptor = $convert.base64Decode(
 const Value$json = {
   '1': 'Value',
   '2': [
-    {'1': 'type', '3': 7, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '10': 'type'
+    },
     {'1': 'raw_value', '3': 8, '4': 1, '5': 12, '9': 0, '10': 'rawValue'},
-    {'1': 'raw_timestamp_micros', '3': 9, '4': 1, '5': 3, '9': 0, '10': 'rawTimestampMicros'},
+    {
+      '1': 'raw_timestamp_micros',
+      '3': 9,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'rawTimestampMicros'
+    },
     {'1': 'bytes_value', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'bytesValue'},
     {'1': 'string_value', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'stringValue'},
     {'1': 'int_value', '3': 6, '4': 1, '5': 3, '9': 0, '10': 'intValue'},
     {'1': 'bool_value', '3': 10, '4': 1, '5': 8, '9': 0, '10': 'boolValue'},
     {'1': 'float_value', '3': 11, '4': 1, '5': 1, '9': 0, '10': 'floatValue'},
-    {'1': 'timestamp_value', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'timestampValue'},
-    {'1': 'date_value', '3': 13, '4': 1, '5': 11, '6': '.google.type.Date', '9': 0, '10': 'dateValue'},
-    {'1': 'array_value', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.v2.ArrayValue', '9': 0, '10': 'arrayValue'},
+    {
+      '1': 'timestamp_value',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'timestampValue'
+    },
+    {
+      '1': 'date_value',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '9': 0,
+      '10': 'dateValue'
+    },
+    {
+      '1': 'array_value',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ArrayValue',
+      '9': 0,
+      '10': 'arrayValue'
+    },
   ],
   '8': [
     {'1': 'kind'},
@@ -108,7 +167,14 @@ final $typed_data.Uint8List valueDescriptor = $convert.base64Decode(
 const ArrayValue$json = {
   '1': 'ArrayValue',
   '2': [
-    {'1': 'values', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'values'
+    },
   ],
 };
 
@@ -121,10 +187,31 @@ final $typed_data.Uint8List arrayValueDescriptor = $convert.base64Decode(
 const RowRange$json = {
   '1': 'RowRange',
   '2': [
-    {'1': 'start_key_closed', '3': 1, '4': 1, '5': 12, '9': 0, '10': 'startKeyClosed'},
-    {'1': 'start_key_open', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'startKeyOpen'},
+    {
+      '1': 'start_key_closed',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'startKeyClosed'
+    },
+    {
+      '1': 'start_key_open',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'startKeyOpen'
+    },
     {'1': 'end_key_open', '3': 3, '4': 1, '5': 12, '9': 1, '10': 'endKeyOpen'},
-    {'1': 'end_key_closed', '3': 4, '4': 1, '5': 12, '9': 1, '10': 'endKeyClosed'},
+    {
+      '1': 'end_key_closed',
+      '3': 4,
+      '4': 1,
+      '5': 12,
+      '9': 1,
+      '10': 'endKeyClosed'
+    },
   ],
   '8': [
     {'1': 'start_key'},
@@ -144,7 +231,14 @@ const RowSet$json = {
   '1': 'RowSet',
   '2': [
     {'1': 'row_keys', '3': 1, '4': 3, '5': 12, '10': 'rowKeys'},
-    {'1': 'row_ranges', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.RowRange', '10': 'rowRanges'},
+    {
+      '1': 'row_ranges',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowRange',
+      '10': 'rowRanges'
+    },
   ],
 };
 
@@ -158,10 +252,38 @@ const ColumnRange$json = {
   '1': 'ColumnRange',
   '2': [
     {'1': 'family_name', '3': 1, '4': 1, '5': 9, '10': 'familyName'},
-    {'1': 'start_qualifier_closed', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'startQualifierClosed'},
-    {'1': 'start_qualifier_open', '3': 3, '4': 1, '5': 12, '9': 0, '10': 'startQualifierOpen'},
-    {'1': 'end_qualifier_closed', '3': 4, '4': 1, '5': 12, '9': 1, '10': 'endQualifierClosed'},
-    {'1': 'end_qualifier_open', '3': 5, '4': 1, '5': 12, '9': 1, '10': 'endQualifierOpen'},
+    {
+      '1': 'start_qualifier_closed',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'startQualifierClosed'
+    },
+    {
+      '1': 'start_qualifier_open',
+      '3': 3,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'startQualifierOpen'
+    },
+    {
+      '1': 'end_qualifier_closed',
+      '3': 4,
+      '4': 1,
+      '5': 12,
+      '9': 1,
+      '10': 'endQualifierClosed'
+    },
+    {
+      '1': 'end_qualifier_open',
+      '3': 5,
+      '4': 1,
+      '5': 12,
+      '9': 1,
+      '10': 'endQualifierOpen'
+    },
   ],
   '8': [
     {'1': 'start_qualifier'},
@@ -182,8 +304,20 @@ final $typed_data.Uint8List columnRangeDescriptor = $convert.base64Decode(
 const TimestampRange$json = {
   '1': 'TimestampRange',
   '2': [
-    {'1': 'start_timestamp_micros', '3': 1, '4': 1, '5': 3, '10': 'startTimestampMicros'},
-    {'1': 'end_timestamp_micros', '3': 2, '4': 1, '5': 3, '10': 'endTimestampMicros'},
+    {
+      '1': 'start_timestamp_micros',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '10': 'startTimestampMicros'
+    },
+    {
+      '1': 'end_timestamp_micros',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'endTimestampMicros'
+    },
   ],
 };
 
@@ -197,10 +331,38 @@ final $typed_data.Uint8List timestampRangeDescriptor = $convert.base64Decode(
 const ValueRange$json = {
   '1': 'ValueRange',
   '2': [
-    {'1': 'start_value_closed', '3': 1, '4': 1, '5': 12, '9': 0, '10': 'startValueClosed'},
-    {'1': 'start_value_open', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'startValueOpen'},
-    {'1': 'end_value_closed', '3': 3, '4': 1, '5': 12, '9': 1, '10': 'endValueClosed'},
-    {'1': 'end_value_open', '3': 4, '4': 1, '5': 12, '9': 1, '10': 'endValueOpen'},
+    {
+      '1': 'start_value_closed',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'startValueClosed'
+    },
+    {
+      '1': 'start_value_open',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'startValueOpen'
+    },
+    {
+      '1': 'end_value_closed',
+      '3': 3,
+      '4': 1,
+      '5': 12,
+      '9': 1,
+      '10': 'endValueClosed'
+    },
+    {
+      '1': 'end_value_open',
+      '3': 4,
+      '4': 1,
+      '5': 12,
+      '9': 1,
+      '10': 'endValueOpen'
+    },
   ],
   '8': [
     {'1': 'start_value'},
@@ -219,27 +381,163 @@ final $typed_data.Uint8List valueRangeDescriptor = $convert.base64Decode(
 const RowFilter$json = {
   '1': 'RowFilter',
   '2': [
-    {'1': 'chain', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter.Chain', '9': 0, '10': 'chain'},
-    {'1': 'interleave', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter.Interleave', '9': 0, '10': 'interleave'},
-    {'1': 'condition', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter.Condition', '9': 0, '10': 'condition'},
+    {
+      '1': 'chain',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter.Chain',
+      '9': 0,
+      '10': 'chain'
+    },
+    {
+      '1': 'interleave',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter.Interleave',
+      '9': 0,
+      '10': 'interleave'
+    },
+    {
+      '1': 'condition',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter.Condition',
+      '9': 0,
+      '10': 'condition'
+    },
     {'1': 'sink', '3': 16, '4': 1, '5': 8, '9': 0, '10': 'sink'},
-    {'1': 'pass_all_filter', '3': 17, '4': 1, '5': 8, '9': 0, '10': 'passAllFilter'},
-    {'1': 'block_all_filter', '3': 18, '4': 1, '5': 8, '9': 0, '10': 'blockAllFilter'},
-    {'1': 'row_key_regex_filter', '3': 4, '4': 1, '5': 12, '9': 0, '10': 'rowKeyRegexFilter'},
-    {'1': 'row_sample_filter', '3': 14, '4': 1, '5': 1, '9': 0, '10': 'rowSampleFilter'},
-    {'1': 'family_name_regex_filter', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'familyNameRegexFilter'},
-    {'1': 'column_qualifier_regex_filter', '3': 6, '4': 1, '5': 12, '9': 0, '10': 'columnQualifierRegexFilter'},
-    {'1': 'column_range_filter', '3': 7, '4': 1, '5': 11, '6': '.google.bigtable.v2.ColumnRange', '9': 0, '10': 'columnRangeFilter'},
-    {'1': 'timestamp_range_filter', '3': 8, '4': 1, '5': 11, '6': '.google.bigtable.v2.TimestampRange', '9': 0, '10': 'timestampRangeFilter'},
-    {'1': 'value_regex_filter', '3': 9, '4': 1, '5': 12, '9': 0, '10': 'valueRegexFilter'},
-    {'1': 'value_range_filter', '3': 15, '4': 1, '5': 11, '6': '.google.bigtable.v2.ValueRange', '9': 0, '10': 'valueRangeFilter'},
-    {'1': 'cells_per_row_offset_filter', '3': 10, '4': 1, '5': 5, '9': 0, '10': 'cellsPerRowOffsetFilter'},
-    {'1': 'cells_per_row_limit_filter', '3': 11, '4': 1, '5': 5, '9': 0, '10': 'cellsPerRowLimitFilter'},
-    {'1': 'cells_per_column_limit_filter', '3': 12, '4': 1, '5': 5, '9': 0, '10': 'cellsPerColumnLimitFilter'},
-    {'1': 'strip_value_transformer', '3': 13, '4': 1, '5': 8, '9': 0, '10': 'stripValueTransformer'},
-    {'1': 'apply_label_transformer', '3': 19, '4': 1, '5': 9, '9': 0, '10': 'applyLabelTransformer'},
+    {
+      '1': 'pass_all_filter',
+      '3': 17,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'passAllFilter'
+    },
+    {
+      '1': 'block_all_filter',
+      '3': 18,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'blockAllFilter'
+    },
+    {
+      '1': 'row_key_regex_filter',
+      '3': 4,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'rowKeyRegexFilter'
+    },
+    {
+      '1': 'row_sample_filter',
+      '3': 14,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'rowSampleFilter'
+    },
+    {
+      '1': 'family_name_regex_filter',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'familyNameRegexFilter'
+    },
+    {
+      '1': 'column_qualifier_regex_filter',
+      '3': 6,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'columnQualifierRegexFilter'
+    },
+    {
+      '1': 'column_range_filter',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ColumnRange',
+      '9': 0,
+      '10': 'columnRangeFilter'
+    },
+    {
+      '1': 'timestamp_range_filter',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.TimestampRange',
+      '9': 0,
+      '10': 'timestampRangeFilter'
+    },
+    {
+      '1': 'value_regex_filter',
+      '3': 9,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'valueRegexFilter'
+    },
+    {
+      '1': 'value_range_filter',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ValueRange',
+      '9': 0,
+      '10': 'valueRangeFilter'
+    },
+    {
+      '1': 'cells_per_row_offset_filter',
+      '3': 10,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'cellsPerRowOffsetFilter'
+    },
+    {
+      '1': 'cells_per_row_limit_filter',
+      '3': 11,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'cellsPerRowLimitFilter'
+    },
+    {
+      '1': 'cells_per_column_limit_filter',
+      '3': 12,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'cellsPerColumnLimitFilter'
+    },
+    {
+      '1': 'strip_value_transformer',
+      '3': 13,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'stripValueTransformer'
+    },
+    {
+      '1': 'apply_label_transformer',
+      '3': 19,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'applyLabelTransformer'
+    },
   ],
-  '3': [RowFilter_Chain$json, RowFilter_Interleave$json, RowFilter_Condition$json],
+  '3': [
+    RowFilter_Chain$json,
+    RowFilter_Interleave$json,
+    RowFilter_Condition$json
+  ],
   '8': [
     {'1': 'filter'},
   ],
@@ -249,7 +547,14 @@ const RowFilter$json = {
 const RowFilter_Chain$json = {
   '1': 'Chain',
   '2': [
-    {'1': 'filters', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.RowFilter', '10': 'filters'},
+    {
+      '1': 'filters',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter',
+      '10': 'filters'
+    },
   ],
 };
 
@@ -257,7 +562,14 @@ const RowFilter_Chain$json = {
 const RowFilter_Interleave$json = {
   '1': 'Interleave',
   '2': [
-    {'1': 'filters', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.RowFilter', '10': 'filters'},
+    {
+      '1': 'filters',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter',
+      '10': 'filters'
+    },
   ],
 };
 
@@ -265,9 +577,30 @@ const RowFilter_Interleave$json = {
 const RowFilter_Condition$json = {
   '1': 'Condition',
   '2': [
-    {'1': 'predicate_filter', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter', '10': 'predicateFilter'},
-    {'1': 'true_filter', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter', '10': 'trueFilter'},
-    {'1': 'false_filter', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter', '10': 'falseFilter'},
+    {
+      '1': 'predicate_filter',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter',
+      '10': 'predicateFilter'
+    },
+    {
+      '1': 'true_filter',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter',
+      '10': 'trueFilter'
+    },
+    {
+      '1': 'false_filter',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter',
+      '10': 'falseFilter'
+    },
   ],
 };
 
@@ -306,14 +639,69 @@ final $typed_data.Uint8List rowFilterDescriptor = $convert.base64Decode(
 const Mutation$json = {
   '1': 'Mutation',
   '2': [
-    {'1': 'set_cell', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Mutation.SetCell', '9': 0, '10': 'setCell'},
-    {'1': 'add_to_cell', '3': 5, '4': 1, '5': 11, '6': '.google.bigtable.v2.Mutation.AddToCell', '9': 0, '10': 'addToCell'},
-    {'1': 'merge_to_cell', '3': 6, '4': 1, '5': 11, '6': '.google.bigtable.v2.Mutation.MergeToCell', '9': 0, '10': 'mergeToCell'},
-    {'1': 'delete_from_column', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Mutation.DeleteFromColumn', '9': 0, '10': 'deleteFromColumn'},
-    {'1': 'delete_from_family', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.Mutation.DeleteFromFamily', '9': 0, '10': 'deleteFromFamily'},
-    {'1': 'delete_from_row', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.v2.Mutation.DeleteFromRow', '9': 0, '10': 'deleteFromRow'},
+    {
+      '1': 'set_cell',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation.SetCell',
+      '9': 0,
+      '10': 'setCell'
+    },
+    {
+      '1': 'add_to_cell',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation.AddToCell',
+      '9': 0,
+      '10': 'addToCell'
+    },
+    {
+      '1': 'merge_to_cell',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation.MergeToCell',
+      '9': 0,
+      '10': 'mergeToCell'
+    },
+    {
+      '1': 'delete_from_column',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation.DeleteFromColumn',
+      '9': 0,
+      '10': 'deleteFromColumn'
+    },
+    {
+      '1': 'delete_from_family',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation.DeleteFromFamily',
+      '9': 0,
+      '10': 'deleteFromFamily'
+    },
+    {
+      '1': 'delete_from_row',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation.DeleteFromRow',
+      '9': 0,
+      '10': 'deleteFromRow'
+    },
   ],
-  '3': [Mutation_SetCell$json, Mutation_AddToCell$json, Mutation_MergeToCell$json, Mutation_DeleteFromColumn$json, Mutation_DeleteFromFamily$json, Mutation_DeleteFromRow$json],
+  '3': [
+    Mutation_SetCell$json,
+    Mutation_AddToCell$json,
+    Mutation_MergeToCell$json,
+    Mutation_DeleteFromColumn$json,
+    Mutation_DeleteFromFamily$json,
+    Mutation_DeleteFromRow$json
+  ],
   '8': [
     {'1': 'mutation'},
   ],
@@ -335,9 +723,30 @@ const Mutation_AddToCell$json = {
   '1': 'AddToCell',
   '2': [
     {'1': 'family_name', '3': 1, '4': 1, '5': 9, '10': 'familyName'},
-    {'1': 'column_qualifier', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'columnQualifier'},
-    {'1': 'timestamp', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'timestamp'},
-    {'1': 'input', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'input'},
+    {
+      '1': 'column_qualifier',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'columnQualifier'
+    },
+    {
+      '1': 'timestamp',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'timestamp'
+    },
+    {
+      '1': 'input',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'input'
+    },
   ],
 };
 
@@ -346,9 +755,30 @@ const Mutation_MergeToCell$json = {
   '1': 'MergeToCell',
   '2': [
     {'1': 'family_name', '3': 1, '4': 1, '5': 9, '10': 'familyName'},
-    {'1': 'column_qualifier', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'columnQualifier'},
-    {'1': 'timestamp', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'timestamp'},
-    {'1': 'input', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'input'},
+    {
+      '1': 'column_qualifier',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'columnQualifier'
+    },
+    {
+      '1': 'timestamp',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'timestamp'
+    },
+    {
+      '1': 'input',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'input'
+    },
   ],
 };
 
@@ -358,7 +788,14 @@ const Mutation_DeleteFromColumn$json = {
   '2': [
     {'1': 'family_name', '3': 1, '4': 1, '5': 9, '10': 'familyName'},
     {'1': 'column_qualifier', '3': 2, '4': 1, '5': 12, '10': 'columnQualifier'},
-    {'1': 'time_range', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.TimestampRange', '10': 'timeRange'},
+    {
+      '1': 'time_range',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.TimestampRange',
+      '10': 'timeRange'
+    },
   ],
 };
 
@@ -410,7 +847,14 @@ const ReadModifyWriteRule$json = {
     {'1': 'family_name', '3': 1, '4': 1, '5': 9, '10': 'familyName'},
     {'1': 'column_qualifier', '3': 2, '4': 1, '5': 12, '10': 'columnQualifier'},
     {'1': 'append_value', '3': 3, '4': 1, '5': 12, '9': 0, '10': 'appendValue'},
-    {'1': 'increment_amount', '3': 4, '4': 1, '5': 3, '9': 0, '10': 'incrementAmount'},
+    {
+      '1': 'increment_amount',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'incrementAmount'
+    },
   ],
   '8': [
     {'1': 'rule'},
@@ -428,7 +872,14 @@ final $typed_data.Uint8List readModifyWriteRuleDescriptor = $convert.base64Decod
 const StreamPartition$json = {
   '1': 'StreamPartition',
   '2': [
-    {'1': 'row_range', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowRange', '10': 'rowRange'},
+    {
+      '1': 'row_range',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowRange',
+      '10': 'rowRange'
+    },
   ],
 };
 
@@ -441,20 +892,35 @@ final $typed_data.Uint8List streamPartitionDescriptor = $convert.base64Decode(
 const StreamContinuationTokens$json = {
   '1': 'StreamContinuationTokens',
   '2': [
-    {'1': 'tokens', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.StreamContinuationToken', '10': 'tokens'},
+    {
+      '1': 'tokens',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamContinuationToken',
+      '10': 'tokens'
+    },
   ],
 };
 
 /// Descriptor for `StreamContinuationTokens`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List streamContinuationTokensDescriptor = $convert.base64Decode(
-    'ChhTdHJlYW1Db250aW51YXRpb25Ub2tlbnMSQwoGdG9rZW5zGAEgAygLMisuZ29vZ2xlLmJpZ3'
-    'RhYmxlLnYyLlN0cmVhbUNvbnRpbnVhdGlvblRva2VuUgZ0b2tlbnM=');
+final $typed_data.Uint8List streamContinuationTokensDescriptor =
+    $convert.base64Decode(
+        'ChhTdHJlYW1Db250aW51YXRpb25Ub2tlbnMSQwoGdG9rZW5zGAEgAygLMisuZ29vZ2xlLmJpZ3'
+        'RhYmxlLnYyLlN0cmVhbUNvbnRpbnVhdGlvblRva2VuUgZ0b2tlbnM=');
 
 @$core.Deprecated('Use streamContinuationTokenDescriptor instead')
 const StreamContinuationToken$json = {
   '1': 'StreamContinuationToken',
   '2': [
-    {'1': 'partition', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.StreamPartition', '10': 'partition'},
+    {
+      '1': 'partition',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamPartition',
+      '10': 'partition'
+    },
     {'1': 'token', '3': 2, '4': 1, '5': 9, '10': 'token'},
   ],
 };
@@ -471,15 +937,22 @@ const ProtoFormat$json = {
 };
 
 /// Descriptor for `ProtoFormat`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List protoFormatDescriptor = $convert.base64Decode(
-    'CgtQcm90b0Zvcm1hdA==');
+final $typed_data.Uint8List protoFormatDescriptor =
+    $convert.base64Decode('CgtQcm90b0Zvcm1hdA==');
 
 @$core.Deprecated('Use columnMetadataDescriptor instead')
 const ColumnMetadata$json = {
   '1': 'ColumnMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '10': 'type'
+    },
   ],
 };
 
@@ -492,7 +965,14 @@ final $typed_data.Uint8List columnMetadataDescriptor = $convert.base64Decode(
 const ProtoSchema$json = {
   '1': 'ProtoSchema',
   '2': [
-    {'1': 'columns', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.ColumnMetadata', '10': 'columns'},
+    {
+      '1': 'columns',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.ColumnMetadata',
+      '10': 'columns'
+    },
   ],
 };
 
@@ -505,7 +985,15 @@ final $typed_data.Uint8List protoSchemaDescriptor = $convert.base64Decode(
 const ResultSetMetadata$json = {
   '1': 'ResultSetMetadata',
   '2': [
-    {'1': 'proto_schema', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.ProtoSchema', '9': 0, '10': 'protoSchema'},
+    {
+      '1': 'proto_schema',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ProtoSchema',
+      '9': 0,
+      '10': 'protoSchema'
+    },
   ],
   '8': [
     {'1': 'schema'},
@@ -521,7 +1009,14 @@ final $typed_data.Uint8List resultSetMetadataDescriptor = $convert.base64Decode(
 const ProtoRows$json = {
   '1': 'ProtoRows',
   '2': [
-    {'1': 'values', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'values'
+    },
   ],
 };
 
@@ -546,9 +1041,23 @@ final $typed_data.Uint8List protoRowsBatchDescriptor = $convert.base64Decode(
 const PartialResultSet$json = {
   '1': 'PartialResultSet',
   '2': [
-    {'1': 'proto_rows_batch', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.ProtoRowsBatch', '9': 0, '10': 'protoRowsBatch'},
+    {
+      '1': 'proto_rows_batch',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ProtoRowsBatch',
+      '9': 0,
+      '10': 'protoRowsBatch'
+    },
     {'1': 'resume_token', '3': 5, '4': 1, '5': 12, '10': 'resumeToken'},
-    {'1': 'estimated_batch_size', '3': 4, '4': 1, '5': 5, '10': 'estimatedBatchSize'},
+    {
+      '1': 'estimated_batch_size',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'estimatedBatchSize'
+    },
   ],
   '8': [
     {'1': 'partial_rows'},
@@ -561,4 +1070,3 @@ final $typed_data.Uint8List partialResultSetDescriptor = $convert.base64Decode(
     'lndGFibGUudjIuUHJvdG9Sb3dzQmF0Y2hIAFIOcHJvdG9Sb3dzQmF0Y2gSIQoMcmVzdW1lX3Rv'
     'a2VuGAUgASgMUgtyZXN1bWVUb2tlbhIwChRlc3RpbWF0ZWRfYmF0Y2hfc2l6ZRgEIAEoBVISZX'
     'N0aW1hdGVkQmF0Y2hTaXplQg4KDHBhcnRpYWxfcm93cw==');
-

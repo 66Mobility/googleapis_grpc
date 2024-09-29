@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const FreeTextType$json = {
   '1': 'FreeTextType',
   '2': [
-    {'1': 'display', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.type.EntityDisplay', '8': {}, '10': 'display'},
+    {
+      '1': 'display',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.type.EntityDisplay',
+      '8': {},
+      '10': 'display'
+    },
   ],
 };
 
@@ -25,4 +33,3 @@ const FreeTextType$json = {
 final $typed_data.Uint8List freeTextTypeDescriptor = $convert.base64Decode(
     'CgxGcmVlVGV4dFR5cGUSWQoHZGlzcGxheRgCIAEoCzI6Lmdvb2dsZS5hY3Rpb25zLnNkay52Mi'
     '5pbnRlcmFjdGlvbm1vZGVsLnR5cGUuRW50aXR5RGlzcGxheUID4EEBUgdkaXNwbGF5');
-

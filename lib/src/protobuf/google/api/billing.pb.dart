@@ -30,34 +30,45 @@ class Billing_BillingDestination extends $pb.GeneratedMessage {
     return $result;
   }
   Billing_BillingDestination._() : super();
-  factory Billing_BillingDestination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Billing_BillingDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Billing_BillingDestination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Billing_BillingDestination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Billing.BillingDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Billing.BillingDestination',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'monitoredResource')
     ..pPS(2, _omitFieldNames ? '' : 'metrics')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Billing_BillingDestination clone() => Billing_BillingDestination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Billing_BillingDestination copyWith(void Function(Billing_BillingDestination) updates) => super.copyWith((message) => updates(message as Billing_BillingDestination)) as Billing_BillingDestination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Billing_BillingDestination clone() =>
+      Billing_BillingDestination()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Billing_BillingDestination copyWith(
+          void Function(Billing_BillingDestination) updates) =>
+      super.copyWith(
+              (message) => updates(message as Billing_BillingDestination))
+          as Billing_BillingDestination;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Billing_BillingDestination create() => Billing_BillingDestination._();
   Billing_BillingDestination createEmptyInstance() => create();
-  static $pb.PbList<Billing_BillingDestination> createRepeated() => $pb.PbList<Billing_BillingDestination>();
+  static $pb.PbList<Billing_BillingDestination> createRepeated() =>
+      $pb.PbList<Billing_BillingDestination>();
   @$core.pragma('dart2js:noInline')
-  static Billing_BillingDestination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Billing_BillingDestination>(create);
+  static Billing_BillingDestination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Billing_BillingDestination>(create);
   static Billing_BillingDestination? _defaultInstance;
 
   /// The monitored resource type. The type must be defined in
@@ -66,7 +77,10 @@ class Billing_BillingDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get monitoredResource => $_getSZ(0);
   @$pb.TagNumber(1)
-  set monitoredResource($core.String v) { $_setString(0, v); }
+  set monitoredResource($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMonitoredResource() => $_has(0);
   @$pb.TagNumber(1)
@@ -122,24 +136,31 @@ class Billing extends $pb.GeneratedMessage {
     return $result;
   }
   Billing._() : super();
-  factory Billing.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Billing.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Billing.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Billing.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Billing', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<Billing_BillingDestination>(8, _omitFieldNames ? '' : 'consumerDestinations', $pb.PbFieldType.PM, subBuilder: Billing_BillingDestination.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Billing',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<Billing_BillingDestination>(
+        8, _omitFieldNames ? '' : 'consumerDestinations', $pb.PbFieldType.PM,
+        subBuilder: Billing_BillingDestination.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Billing clone() => Billing()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Billing copyWith(void Function(Billing) updates) => super.copyWith((message) => updates(message as Billing)) as Billing;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Billing copyWith(void Function(Billing) updates) =>
+      super.copyWith((message) => updates(message as Billing)) as Billing;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -148,7 +169,8 @@ class Billing extends $pb.GeneratedMessage {
   Billing createEmptyInstance() => create();
   static $pb.PbList<Billing> createRepeated() => $pb.PbList<Billing>();
   @$core.pragma('dart2js:noInline')
-  static Billing getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Billing>(create);
+  static Billing getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Billing>(create);
   static Billing? _defaultInstance;
 
   /// Billing configurations for sending metrics to the consumer project.
@@ -156,9 +178,10 @@ class Billing extends $pb.GeneratedMessage {
   /// a different monitored resource type. A metric can be used in at most
   /// one consumer destination.
   @$pb.TagNumber(8)
-  $core.List<Billing_BillingDestination> get consumerDestinations => $_getList(0);
+  $core.List<Billing_BillingDestination> get consumerDestinations =>
+      $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,11 +17,51 @@ import 'dart:typed_data' as $typed_data;
 const ComputeRouteMatrixRequest$json = {
   '1': 'ComputeRouteMatrixRequest',
   '2': [
-    {'1': 'origins', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routes.v1.RouteMatrixOrigin', '8': {}, '10': 'origins'},
-    {'1': 'destinations', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routes.v1.RouteMatrixDestination', '8': {}, '10': 'destinations'},
-    {'1': 'travel_mode', '3': 3, '4': 1, '5': 14, '6': '.google.maps.routes.v1.RouteTravelMode', '8': {}, '10': 'travelMode'},
-    {'1': 'routing_preference', '3': 4, '4': 1, '5': 14, '6': '.google.maps.routes.v1.RoutingPreference', '8': {}, '10': 'routingPreference'},
-    {'1': 'departure_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'departureTime'},
+    {
+      '1': 'origins',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteMatrixOrigin',
+      '8': {},
+      '10': 'origins'
+    },
+    {
+      '1': 'destinations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteMatrixDestination',
+      '8': {},
+      '10': 'destinations'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.RouteTravelMode',
+      '8': {},
+      '10': 'travelMode'
+    },
+    {
+      '1': 'routing_preference',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.RoutingPreference',
+      '8': {},
+      '10': 'routingPreference'
+    },
+    {
+      '1': 'departure_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'departureTime'
+    },
   ],
 };
 
@@ -40,8 +80,24 @@ final $typed_data.Uint8List computeRouteMatrixRequestDescriptor = $convert.base6
 const RouteMatrixOrigin$json = {
   '1': 'RouteMatrixOrigin',
   '2': [
-    {'1': 'waypoint', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '8': {}, '10': 'waypoint'},
-    {'1': 'route_modifiers', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteModifiers', '8': {}, '10': 'routeModifiers'},
+    {
+      '1': 'waypoint',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '8': {},
+      '10': 'waypoint'
+    },
+    {
+      '1': 'route_modifiers',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteModifiers',
+      '8': {},
+      '10': 'routeModifiers'
+    },
   ],
 };
 
@@ -56,12 +112,20 @@ final $typed_data.Uint8List routeMatrixOriginDescriptor = $convert.base64Decode(
 const RouteMatrixDestination$json = {
   '1': 'RouteMatrixDestination',
   '2': [
-    {'1': 'waypoint', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '8': {}, '10': 'waypoint'},
+    {
+      '1': 'waypoint',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '8': {},
+      '10': 'waypoint'
+    },
   ],
 };
 
 /// Descriptor for `RouteMatrixDestination`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List routeMatrixDestinationDescriptor = $convert.base64Decode(
-    'ChZSb3V0ZU1hdHJpeERlc3RpbmF0aW9uEkAKCHdheXBvaW50GAEgASgLMh8uZ29vZ2xlLm1hcH'
-    'Mucm91dGVzLnYxLldheXBvaW50QgPgQQJSCHdheXBvaW50');
-
+final $typed_data.Uint8List routeMatrixDestinationDescriptor =
+    $convert.base64Decode(
+        'ChZSb3V0ZU1hdHJpeERlc3RpbmF0aW9uEkAKCHdheXBvaW50GAEgASgLMh8uZ29vZ2xlLm1hcH'
+        'Mucm91dGVzLnYxLldheXBvaW50QgPgQQJSCHdheXBvaW50');

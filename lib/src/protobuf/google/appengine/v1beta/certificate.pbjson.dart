@@ -42,11 +42,44 @@ const AuthorizedCertificate$json = {
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'domain_names', '3': 4, '4': 3, '5': 9, '10': 'domainNames'},
-    {'1': 'expire_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
-    {'1': 'certificate_raw_data', '3': 6, '4': 1, '5': 11, '6': '.google.appengine.v1beta.CertificateRawData', '10': 'certificateRawData'},
-    {'1': 'managed_certificate', '3': 7, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ManagedCertificate', '10': 'managedCertificate'},
-    {'1': 'visible_domain_mappings', '3': 8, '4': 3, '5': 9, '10': 'visibleDomainMappings'},
-    {'1': 'domain_mappings_count', '3': 9, '4': 1, '5': 5, '10': 'domainMappingsCount'},
+    {
+      '1': 'expire_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
+    {
+      '1': 'certificate_raw_data',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.CertificateRawData',
+      '10': 'certificateRawData'
+    },
+    {
+      '1': 'managed_certificate',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ManagedCertificate',
+      '10': 'managedCertificate'
+    },
+    {
+      '1': 'visible_domain_mappings',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '10': 'visibleDomainMappings'
+    },
+    {
+      '1': 'domain_mappings_count',
+      '3': 9,
+      '4': 1,
+      '5': 5,
+      '10': 'domainMappingsCount'
+    },
   ],
 };
 
@@ -66,7 +99,13 @@ final $typed_data.Uint8List authorizedCertificateDescriptor = $convert.base64Dec
 const CertificateRawData$json = {
   '1': 'CertificateRawData',
   '2': [
-    {'1': 'public_certificate', '3': 1, '4': 1, '5': 9, '10': 'publicCertificate'},
+    {
+      '1': 'public_certificate',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'publicCertificate'
+    },
     {'1': 'private_key', '3': 2, '4': 1, '5': 9, '10': 'privateKey'},
   ],
 };
@@ -80,8 +119,22 @@ final $typed_data.Uint8List certificateRawDataDescriptor = $convert.base64Decode
 const ManagedCertificate$json = {
   '1': 'ManagedCertificate',
   '2': [
-    {'1': 'last_renewal_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastRenewalTime'},
-    {'1': 'status', '3': 2, '4': 1, '5': 14, '6': '.google.appengine.v1beta.ManagementStatus', '10': 'status'},
+    {
+      '1': 'last_renewal_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastRenewalTime'
+    },
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.ManagementStatus',
+      '10': 'status'
+    },
   ],
 };
 
@@ -90,4 +143,3 @@ final $typed_data.Uint8List managedCertificateDescriptor = $convert.base64Decode
     'ChJNYW5hZ2VkQ2VydGlmaWNhdGUSRgoRbGFzdF9yZW5ld2FsX3RpbWUYASABKAsyGi5nb29nbG'
     'UucHJvdG9idWYuVGltZXN0YW1wUg9sYXN0UmVuZXdhbFRpbWUSQQoGc3RhdHVzGAIgASgOMiku'
     'Z29vZ2xlLmFwcGVuZ2luZS52MWJldGEuTWFuYWdlbWVudFN0YXR1c1IGc3RhdHVz');
-

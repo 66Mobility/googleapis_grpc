@@ -22,12 +22,7 @@ import 'version.pbenum.dart';
 
 export 'version.pbenum.dart';
 
-enum Version_Scaling {
-  automaticScaling, 
-  basicScaling, 
-  manualScaling, 
-  notSet
-}
+enum Version_Scaling { automaticScaling, basicScaling, manualScaling, notSet }
 
 /// A Version resource is a specific set of source code and configuration files
 /// that are deployed into a service.
@@ -198,70 +193,119 @@ class Version extends $pb.GeneratedMessage {
     return $result;
   }
   Version._() : super();
-  factory Version.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Version.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Version.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Version.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Version_Scaling> _Version_ScalingByTag = {
-    3 : Version_Scaling.automaticScaling,
-    4 : Version_Scaling.basicScaling,
-    5 : Version_Scaling.manualScaling,
-    0 : Version_Scaling.notSet
+    3: Version_Scaling.automaticScaling,
+    4: Version_Scaling.basicScaling,
+    5: Version_Scaling.manualScaling,
+    0: Version_Scaling.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Version', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Version',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [3, 4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<AutomaticScaling>(3, _omitFieldNames ? '' : 'automaticScaling', subBuilder: AutomaticScaling.create)
-    ..aOM<BasicScaling>(4, _omitFieldNames ? '' : 'basicScaling', subBuilder: BasicScaling.create)
-    ..aOM<ManualScaling>(5, _omitFieldNames ? '' : 'manualScaling', subBuilder: ManualScaling.create)
-    ..pc<InboundServiceType>(6, _omitFieldNames ? '' : 'inboundServices', $pb.PbFieldType.KE, valueOf: InboundServiceType.valueOf, enumValues: InboundServiceType.values, defaultEnumValue: InboundServiceType.INBOUND_SERVICE_UNSPECIFIED)
+    ..aOM<AutomaticScaling>(3, _omitFieldNames ? '' : 'automaticScaling',
+        subBuilder: AutomaticScaling.create)
+    ..aOM<BasicScaling>(4, _omitFieldNames ? '' : 'basicScaling',
+        subBuilder: BasicScaling.create)
+    ..aOM<ManualScaling>(5, _omitFieldNames ? '' : 'manualScaling',
+        subBuilder: ManualScaling.create)
+    ..pc<InboundServiceType>(
+        6, _omitFieldNames ? '' : 'inboundServices', $pb.PbFieldType.KE,
+        valueOf: InboundServiceType.valueOf,
+        enumValues: InboundServiceType.values,
+        defaultEnumValue: InboundServiceType.INBOUND_SERVICE_UNSPECIFIED)
     ..aOS(7, _omitFieldNames ? '' : 'instanceClass')
-    ..aOM<Network>(8, _omitFieldNames ? '' : 'network', subBuilder: Network.create)
-    ..aOM<Resources>(9, _omitFieldNames ? '' : 'resources', subBuilder: Resources.create)
+    ..aOM<Network>(8, _omitFieldNames ? '' : 'network',
+        subBuilder: Network.create)
+    ..aOM<Resources>(9, _omitFieldNames ? '' : 'resources',
+        subBuilder: Resources.create)
     ..aOS(10, _omitFieldNames ? '' : 'runtime')
     ..aOB(11, _omitFieldNames ? '' : 'threadsafe')
     ..aOB(12, _omitFieldNames ? '' : 'vm')
-    ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'betaSettings', entryClassName: 'Version.BetaSettingsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.appengine.v1beta'))
+    ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'betaSettings',
+        entryClassName: 'Version.BetaSettingsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.appengine.v1beta'))
     ..aOS(14, _omitFieldNames ? '' : 'env')
-    ..e<ServingStatus>(15, _omitFieldNames ? '' : 'servingStatus', $pb.PbFieldType.OE, defaultOrMaker: ServingStatus.SERVING_STATUS_UNSPECIFIED, valueOf: ServingStatus.valueOf, enumValues: ServingStatus.values)
+    ..e<ServingStatus>(
+        15, _omitFieldNames ? '' : 'servingStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: ServingStatus.SERVING_STATUS_UNSPECIFIED,
+        valueOf: ServingStatus.valueOf,
+        enumValues: ServingStatus.values)
     ..aOS(16, _omitFieldNames ? '' : 'createdBy')
-    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
     ..aInt64(18, _omitFieldNames ? '' : 'diskUsageBytes')
     ..aOS(21, _omitFieldNames ? '' : 'runtimeApiVersion')
     ..aOS(22, _omitFieldNames ? '' : 'runtimeMainExecutablePath')
-    ..pc<$381.UrlMap>(100, _omitFieldNames ? '' : 'handlers', $pb.PbFieldType.PM, subBuilder: $381.UrlMap.create)
-    ..pc<$381.ErrorHandler>(101, _omitFieldNames ? '' : 'errorHandlers', $pb.PbFieldType.PM, subBuilder: $381.ErrorHandler.create)
-    ..pc<$381.Library>(102, _omitFieldNames ? '' : 'libraries', $pb.PbFieldType.PM, subBuilder: $381.Library.create)
-    ..aOM<$381.ApiConfigHandler>(103, _omitFieldNames ? '' : 'apiConfig', subBuilder: $381.ApiConfigHandler.create)
-    ..m<$core.String, $core.String>(104, _omitFieldNames ? '' : 'envVariables', entryClassName: 'Version.EnvVariablesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.appengine.v1beta'))
-    ..aOM<$264.Duration>(105, _omitFieldNames ? '' : 'defaultExpiration', subBuilder: $264.Duration.create)
-    ..aOM<$381.HealthCheck>(106, _omitFieldNames ? '' : 'healthCheck', subBuilder: $381.HealthCheck.create)
+    ..pc<$381.UrlMap>(
+        100, _omitFieldNames ? '' : 'handlers', $pb.PbFieldType.PM,
+        subBuilder: $381.UrlMap.create)
+    ..pc<$381.ErrorHandler>(
+        101, _omitFieldNames ? '' : 'errorHandlers', $pb.PbFieldType.PM,
+        subBuilder: $381.ErrorHandler.create)
+    ..pc<$381.Library>(
+        102, _omitFieldNames ? '' : 'libraries', $pb.PbFieldType.PM,
+        subBuilder: $381.Library.create)
+    ..aOM<$381.ApiConfigHandler>(103, _omitFieldNames ? '' : 'apiConfig',
+        subBuilder: $381.ApiConfigHandler.create)
+    ..m<$core.String, $core.String>(104, _omitFieldNames ? '' : 'envVariables',
+        entryClassName: 'Version.EnvVariablesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.appengine.v1beta'))
+    ..aOM<$264.Duration>(105, _omitFieldNames ? '' : 'defaultExpiration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$381.HealthCheck>(106, _omitFieldNames ? '' : 'healthCheck',
+        subBuilder: $381.HealthCheck.create)
     ..aOS(107, _omitFieldNames ? '' : 'nobuildFilesRegex')
-    ..aOM<$382.Deployment>(108, _omitFieldNames ? '' : 'deployment', subBuilder: $382.Deployment.create)
+    ..aOM<$382.Deployment>(108, _omitFieldNames ? '' : 'deployment',
+        subBuilder: $382.Deployment.create)
     ..aOS(109, _omitFieldNames ? '' : 'versionUrl')
-    ..aOM<EndpointsApiService>(110, _omitFieldNames ? '' : 'endpointsApiService', subBuilder: EndpointsApiService.create)
-    ..aOM<$381.ReadinessCheck>(112, _omitFieldNames ? '' : 'readinessCheck', subBuilder: $381.ReadinessCheck.create)
-    ..aOM<$381.LivenessCheck>(113, _omitFieldNames ? '' : 'livenessCheck', subBuilder: $381.LivenessCheck.create)
+    ..aOM<EndpointsApiService>(
+        110, _omitFieldNames ? '' : 'endpointsApiService',
+        subBuilder: EndpointsApiService.create)
+    ..aOM<$381.ReadinessCheck>(112, _omitFieldNames ? '' : 'readinessCheck',
+        subBuilder: $381.ReadinessCheck.create)
+    ..aOM<$381.LivenessCheck>(113, _omitFieldNames ? '' : 'livenessCheck',
+        subBuilder: $381.LivenessCheck.create)
     ..aOS(117, _omitFieldNames ? '' : 'runtimeChannel')
     ..pPS(118, _omitFieldNames ? '' : 'zones')
-    ..aOM<VpcAccessConnector>(121, _omitFieldNames ? '' : 'vpcAccessConnector', subBuilder: VpcAccessConnector.create)
-    ..aOM<Entrypoint>(122, _omitFieldNames ? '' : 'entrypoint', subBuilder: Entrypoint.create)
-    ..m<$core.String, $core.String>(125, _omitFieldNames ? '' : 'buildEnvVariables', entryClassName: 'Version.BuildEnvVariablesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.appengine.v1beta'))
+    ..aOM<VpcAccessConnector>(121, _omitFieldNames ? '' : 'vpcAccessConnector',
+        subBuilder: VpcAccessConnector.create)
+    ..aOM<Entrypoint>(122, _omitFieldNames ? '' : 'entrypoint',
+        subBuilder: Entrypoint.create)
+    ..m<$core.String, $core.String>(
+        125, _omitFieldNames ? '' : 'buildEnvVariables',
+        entryClassName: 'Version.BuildEnvVariablesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.appengine.v1beta'))
     ..aOS(127, _omitFieldNames ? '' : 'serviceAccount')
     ..aOB(128, _omitFieldNames ? '' : 'appEngineApis')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Version clone() => Version()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Version copyWith(void Function(Version) updates) => super.copyWith((message) => updates(message as Version)) as Version;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Version copyWith(void Function(Version) updates) =>
+      super.copyWith((message) => updates(message as Version)) as Version;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -270,7 +314,8 @@ class Version extends $pb.GeneratedMessage {
   Version createEmptyInstance() => create();
   static $pb.PbList<Version> createRepeated() => $pb.PbList<Version>();
   @$core.pragma('dart2js:noInline')
-  static Version getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version>(create);
+  static Version getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version>(create);
   static Version? _defaultInstance;
 
   Version_Scaling whichScaling() => _Version_ScalingByTag[$_whichOneof(0)]!;
@@ -283,7 +328,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -295,7 +343,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -307,7 +358,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AutomaticScaling get automaticScaling => $_getN(2);
   @$pb.TagNumber(3)
-  set automaticScaling(AutomaticScaling v) { setField(3, v); }
+  set automaticScaling(AutomaticScaling v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAutomaticScaling() => $_has(2);
   @$pb.TagNumber(3)
@@ -322,7 +376,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   BasicScaling get basicScaling => $_getN(3);
   @$pb.TagNumber(4)
-  set basicScaling(BasicScaling v) { setField(4, v); }
+  set basicScaling(BasicScaling v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBasicScaling() => $_has(3);
   @$pb.TagNumber(4)
@@ -336,7 +393,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ManualScaling get manualScaling => $_getN(4);
   @$pb.TagNumber(5)
-  set manualScaling(ManualScaling v) { setField(5, v); }
+  set manualScaling(ManualScaling v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasManualScaling() => $_has(4);
   @$pb.TagNumber(5)
@@ -359,7 +419,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get instanceClass => $_getSZ(6);
   @$pb.TagNumber(7)
-  set instanceClass($core.String v) { $_setString(6, v); }
+  set instanceClass($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasInstanceClass() => $_has(6);
   @$pb.TagNumber(7)
@@ -370,7 +433,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Network get network => $_getN(7);
   @$pb.TagNumber(8)
-  set network(Network v) { setField(8, v); }
+  set network(Network v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasNetwork() => $_has(7);
   @$pb.TagNumber(8)
@@ -383,7 +449,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Resources get resources => $_getN(8);
   @$pb.TagNumber(9)
-  set resources(Resources v) { setField(9, v); }
+  set resources(Resources v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasResources() => $_has(8);
   @$pb.TagNumber(9)
@@ -395,7 +464,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get runtime => $_getSZ(9);
   @$pb.TagNumber(10)
-  set runtime($core.String v) { $_setString(9, v); }
+  set runtime($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasRuntime() => $_has(9);
   @$pb.TagNumber(10)
@@ -405,7 +477,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get threadsafe => $_getBF(10);
   @$pb.TagNumber(11)
-  set threadsafe($core.bool v) { $_setBool(10, v); }
+  set threadsafe($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasThreadsafe() => $_has(10);
   @$pb.TagNumber(11)
@@ -415,7 +490,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get vm => $_getBF(11);
   @$pb.TagNumber(12)
-  set vm($core.bool v) { $_setBool(11, v); }
+  set vm($core.bool v) {
+    $_setBool(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasVm() => $_has(11);
   @$pb.TagNumber(12)
@@ -432,7 +510,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get env => $_getSZ(13);
   @$pb.TagNumber(14)
-  set env($core.String v) { $_setString(13, v); }
+  set env($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasEnv() => $_has(13);
   @$pb.TagNumber(14)
@@ -445,7 +526,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   ServingStatus get servingStatus => $_getN(14);
   @$pb.TagNumber(15)
-  set servingStatus(ServingStatus v) { setField(15, v); }
+  set servingStatus(ServingStatus v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasServingStatus() => $_has(14);
   @$pb.TagNumber(15)
@@ -457,7 +541,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get createdBy => $_getSZ(15);
   @$pb.TagNumber(16)
-  set createdBy($core.String v) { $_setString(15, v); }
+  set createdBy($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasCreatedBy() => $_has(15);
   @$pb.TagNumber(16)
@@ -469,7 +556,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $302.Timestamp get createTime => $_getN(16);
   @$pb.TagNumber(17)
-  set createTime($302.Timestamp v) { setField(17, v); }
+  set createTime($302.Timestamp v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasCreateTime() => $_has(16);
   @$pb.TagNumber(17)
@@ -484,7 +574,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $fixnum.Int64 get diskUsageBytes => $_getI64(17);
   @$pb.TagNumber(18)
-  set diskUsageBytes($fixnum.Int64 v) { $_setInt64(17, v); }
+  set diskUsageBytes($fixnum.Int64 v) {
+    $_setInt64(17, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasDiskUsageBytes() => $_has(17);
   @$pb.TagNumber(18)
@@ -496,7 +589,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.String get runtimeApiVersion => $_getSZ(18);
   @$pb.TagNumber(21)
-  set runtimeApiVersion($core.String v) { $_setString(18, v); }
+  set runtimeApiVersion($core.String v) {
+    $_setString(18, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasRuntimeApiVersion() => $_has(18);
   @$pb.TagNumber(21)
@@ -506,7 +602,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get runtimeMainExecutablePath => $_getSZ(19);
   @$pb.TagNumber(22)
-  set runtimeMainExecutablePath($core.String v) { $_setString(19, v); }
+  set runtimeMainExecutablePath($core.String v) {
+    $_setString(19, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasRuntimeMainExecutablePath() => $_has(19);
   @$pb.TagNumber(22)
@@ -540,7 +639,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(103)
   $381.ApiConfigHandler get apiConfig => $_getN(23);
   @$pb.TagNumber(103)
-  set apiConfig($381.ApiConfigHandler v) { setField(103, v); }
+  set apiConfig($381.ApiConfigHandler v) {
+    setField(103, v);
+  }
+
   @$pb.TagNumber(103)
   $core.bool hasApiConfig() => $_has(23);
   @$pb.TagNumber(103)
@@ -563,7 +665,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(105)
   $264.Duration get defaultExpiration => $_getN(25);
   @$pb.TagNumber(105)
-  set defaultExpiration($264.Duration v) { setField(105, v); }
+  set defaultExpiration($264.Duration v) {
+    setField(105, v);
+  }
+
   @$pb.TagNumber(105)
   $core.bool hasDefaultExpiration() => $_has(25);
   @$pb.TagNumber(105)
@@ -579,7 +684,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(106)
   $381.HealthCheck get healthCheck => $_getN(26);
   @$pb.TagNumber(106)
-  set healthCheck($381.HealthCheck v) { setField(106, v); }
+  set healthCheck($381.HealthCheck v) {
+    setField(106, v);
+  }
+
   @$pb.TagNumber(106)
   $core.bool hasHealthCheck() => $_has(26);
   @$pb.TagNumber(106)
@@ -594,7 +702,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(107)
   $core.String get nobuildFilesRegex => $_getSZ(27);
   @$pb.TagNumber(107)
-  set nobuildFilesRegex($core.String v) { $_setString(27, v); }
+  set nobuildFilesRegex($core.String v) {
+    $_setString(27, v);
+  }
+
   @$pb.TagNumber(107)
   $core.bool hasNobuildFilesRegex() => $_has(27);
   @$pb.TagNumber(107)
@@ -606,7 +717,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(108)
   $382.Deployment get deployment => $_getN(28);
   @$pb.TagNumber(108)
-  set deployment($382.Deployment v) { setField(108, v); }
+  set deployment($382.Deployment v) {
+    setField(108, v);
+  }
+
   @$pb.TagNumber(108)
   $core.bool hasDeployment() => $_has(28);
   @$pb.TagNumber(108)
@@ -621,7 +735,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(109)
   $core.String get versionUrl => $_getSZ(29);
   @$pb.TagNumber(109)
-  set versionUrl($core.String v) { $_setString(29, v); }
+  set versionUrl($core.String v) {
+    $_setString(29, v);
+  }
+
   @$pb.TagNumber(109)
   $core.bool hasVersionUrl() => $_has(29);
   @$pb.TagNumber(109)
@@ -634,7 +751,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(110)
   EndpointsApiService get endpointsApiService => $_getN(30);
   @$pb.TagNumber(110)
-  set endpointsApiService(EndpointsApiService v) { setField(110, v); }
+  set endpointsApiService(EndpointsApiService v) {
+    setField(110, v);
+  }
+
   @$pb.TagNumber(110)
   $core.bool hasEndpointsApiService() => $_has(30);
   @$pb.TagNumber(110)
@@ -649,7 +769,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(112)
   $381.ReadinessCheck get readinessCheck => $_getN(31);
   @$pb.TagNumber(112)
-  set readinessCheck($381.ReadinessCheck v) { setField(112, v); }
+  set readinessCheck($381.ReadinessCheck v) {
+    setField(112, v);
+  }
+
   @$pb.TagNumber(112)
   $core.bool hasReadinessCheck() => $_has(31);
   @$pb.TagNumber(112)
@@ -664,7 +787,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(113)
   $381.LivenessCheck get livenessCheck => $_getN(32);
   @$pb.TagNumber(113)
-  set livenessCheck($381.LivenessCheck v) { setField(113, v); }
+  set livenessCheck($381.LivenessCheck v) {
+    setField(113, v);
+  }
+
   @$pb.TagNumber(113)
   $core.bool hasLivenessCheck() => $_has(32);
   @$pb.TagNumber(113)
@@ -677,7 +803,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(117)
   $core.String get runtimeChannel => $_getSZ(33);
   @$pb.TagNumber(117)
-  set runtimeChannel($core.String v) { $_setString(33, v); }
+  set runtimeChannel($core.String v) {
+    $_setString(33, v);
+  }
+
   @$pb.TagNumber(117)
   $core.bool hasRuntimeChannel() => $_has(33);
   @$pb.TagNumber(117)
@@ -692,7 +821,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(121)
   VpcAccessConnector get vpcAccessConnector => $_getN(35);
   @$pb.TagNumber(121)
-  set vpcAccessConnector(VpcAccessConnector v) { setField(121, v); }
+  set vpcAccessConnector(VpcAccessConnector v) {
+    setField(121, v);
+  }
+
   @$pb.TagNumber(121)
   $core.bool hasVpcAccessConnector() => $_has(35);
   @$pb.TagNumber(121)
@@ -704,7 +836,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(122)
   Entrypoint get entrypoint => $_getN(36);
   @$pb.TagNumber(122)
-  set entrypoint(Entrypoint v) { setField(122, v); }
+  set entrypoint(Entrypoint v) {
+    setField(122, v);
+  }
+
   @$pb.TagNumber(122)
   $core.bool hasEntrypoint() => $_has(36);
   @$pb.TagNumber(122)
@@ -724,7 +859,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(127)
   $core.String get serviceAccount => $_getSZ(38);
   @$pb.TagNumber(127)
-  set serviceAccount($core.String v) { $_setString(38, v); }
+  set serviceAccount($core.String v) {
+    $_setString(38, v);
+  }
+
   @$pb.TagNumber(127)
   $core.bool hasServiceAccount() => $_has(38);
   @$pb.TagNumber(127)
@@ -735,7 +873,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(128)
   $core.bool get appEngineApis => $_getBF(39);
   @$pb.TagNumber(128)
-  set appEngineApis($core.bool v) { $_setBool(39, v); }
+  set appEngineApis($core.bool v) {
+    $_setBool(39, v);
+  }
+
   @$pb.TagNumber(128)
   $core.bool hasAppEngineApis() => $_has(39);
   @$pb.TagNumber(128)
@@ -772,36 +913,50 @@ class EndpointsApiService extends $pb.GeneratedMessage {
     return $result;
   }
   EndpointsApiService._() : super();
-  factory EndpointsApiService.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EndpointsApiService.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EndpointsApiService.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EndpointsApiService.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EndpointsApiService', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EndpointsApiService',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'configId')
-    ..e<EndpointsApiService_RolloutStrategy>(3, _omitFieldNames ? '' : 'rolloutStrategy', $pb.PbFieldType.OE, defaultOrMaker: EndpointsApiService_RolloutStrategy.UNSPECIFIED_ROLLOUT_STRATEGY, valueOf: EndpointsApiService_RolloutStrategy.valueOf, enumValues: EndpointsApiService_RolloutStrategy.values)
+    ..e<EndpointsApiService_RolloutStrategy>(
+        3, _omitFieldNames ? '' : 'rolloutStrategy', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            EndpointsApiService_RolloutStrategy.UNSPECIFIED_ROLLOUT_STRATEGY,
+        valueOf: EndpointsApiService_RolloutStrategy.valueOf,
+        enumValues: EndpointsApiService_RolloutStrategy.values)
     ..aOB(4, _omitFieldNames ? '' : 'disableTraceSampling')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EndpointsApiService clone() => EndpointsApiService()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EndpointsApiService copyWith(void Function(EndpointsApiService) updates) => super.copyWith((message) => updates(message as EndpointsApiService)) as EndpointsApiService;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EndpointsApiService copyWith(void Function(EndpointsApiService) updates) =>
+      super.copyWith((message) => updates(message as EndpointsApiService))
+          as EndpointsApiService;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EndpointsApiService create() => EndpointsApiService._();
   EndpointsApiService createEmptyInstance() => create();
-  static $pb.PbList<EndpointsApiService> createRepeated() => $pb.PbList<EndpointsApiService>();
+  static $pb.PbList<EndpointsApiService> createRepeated() =>
+      $pb.PbList<EndpointsApiService>();
   @$core.pragma('dart2js:noInline')
-  static EndpointsApiService getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EndpointsApiService>(create);
+  static EndpointsApiService getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EndpointsApiService>(create);
   static EndpointsApiService? _defaultInstance;
 
   /// Endpoints service name which is the name of the "service" resource in the
@@ -809,7 +964,10 @@ class EndpointsApiService extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -830,7 +988,10 @@ class EndpointsApiService extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get configId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set configId($core.String v) { $_setString(1, v); }
+  set configId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConfigId() => $_has(1);
   @$pb.TagNumber(2)
@@ -841,7 +1002,10 @@ class EndpointsApiService extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   EndpointsApiService_RolloutStrategy get rolloutStrategy => $_getN(2);
   @$pb.TagNumber(3)
-  set rolloutStrategy(EndpointsApiService_RolloutStrategy v) { setField(3, v); }
+  set rolloutStrategy(EndpointsApiService_RolloutStrategy v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRolloutStrategy() => $_has(2);
   @$pb.TagNumber(3)
@@ -852,7 +1016,10 @@ class EndpointsApiService extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get disableTraceSampling => $_getBF(3);
   @$pb.TagNumber(4)
-  set disableTraceSampling($core.bool v) { $_setBool(3, v); }
+  set disableTraceSampling($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDisableTraceSampling() => $_has(3);
   @$pb.TagNumber(4)
@@ -924,46 +1091,71 @@ class AutomaticScaling extends $pb.GeneratedMessage {
     return $result;
   }
   AutomaticScaling._() : super();
-  factory AutomaticScaling.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutomaticScaling.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutomaticScaling.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutomaticScaling.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutomaticScaling', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'coolDownPeriod', subBuilder: $264.Duration.create)
-    ..aOM<CpuUtilization>(2, _omitFieldNames ? '' : 'cpuUtilization', subBuilder: CpuUtilization.create)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'maxConcurrentRequests', $pb.PbFieldType.O3)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'maxIdleInstances', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'maxTotalInstances', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'maxPendingLatency', subBuilder: $264.Duration.create)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'minIdleInstances', $pb.PbFieldType.O3)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'minTotalInstances', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'minPendingLatency', subBuilder: $264.Duration.create)
-    ..aOM<RequestUtilization>(10, _omitFieldNames ? '' : 'requestUtilization', subBuilder: RequestUtilization.create)
-    ..aOM<DiskUtilization>(11, _omitFieldNames ? '' : 'diskUtilization', subBuilder: DiskUtilization.create)
-    ..aOM<NetworkUtilization>(12, _omitFieldNames ? '' : 'networkUtilization', subBuilder: NetworkUtilization.create)
-    ..aOM<StandardSchedulerSettings>(20, _omitFieldNames ? '' : 'standardSchedulerSettings', subBuilder: StandardSchedulerSettings.create)
-    ..pc<CustomMetric>(21, _omitFieldNames ? '' : 'customMetrics', $pb.PbFieldType.PM, subBuilder: CustomMetric.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutomaticScaling',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'coolDownPeriod',
+        subBuilder: $264.Duration.create)
+    ..aOM<CpuUtilization>(2, _omitFieldNames ? '' : 'cpuUtilization',
+        subBuilder: CpuUtilization.create)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'maxConcurrentRequests', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'maxIdleInstances', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'maxTotalInstances', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'maxPendingLatency',
+        subBuilder: $264.Duration.create)
+    ..a<$core.int>(
+        7, _omitFieldNames ? '' : 'minIdleInstances', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        8, _omitFieldNames ? '' : 'minTotalInstances', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'minPendingLatency',
+        subBuilder: $264.Duration.create)
+    ..aOM<RequestUtilization>(10, _omitFieldNames ? '' : 'requestUtilization',
+        subBuilder: RequestUtilization.create)
+    ..aOM<DiskUtilization>(11, _omitFieldNames ? '' : 'diskUtilization',
+        subBuilder: DiskUtilization.create)
+    ..aOM<NetworkUtilization>(12, _omitFieldNames ? '' : 'networkUtilization',
+        subBuilder: NetworkUtilization.create)
+    ..aOM<StandardSchedulerSettings>(
+        20, _omitFieldNames ? '' : 'standardSchedulerSettings',
+        subBuilder: StandardSchedulerSettings.create)
+    ..pc<CustomMetric>(
+        21, _omitFieldNames ? '' : 'customMetrics', $pb.PbFieldType.PM,
+        subBuilder: CustomMetric.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AutomaticScaling clone() => AutomaticScaling()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutomaticScaling copyWith(void Function(AutomaticScaling) updates) => super.copyWith((message) => updates(message as AutomaticScaling)) as AutomaticScaling;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutomaticScaling copyWith(void Function(AutomaticScaling) updates) =>
+      super.copyWith((message) => updates(message as AutomaticScaling))
+          as AutomaticScaling;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AutomaticScaling create() => AutomaticScaling._();
   AutomaticScaling createEmptyInstance() => create();
-  static $pb.PbList<AutomaticScaling> createRepeated() => $pb.PbList<AutomaticScaling>();
+  static $pb.PbList<AutomaticScaling> createRepeated() =>
+      $pb.PbList<AutomaticScaling>();
   @$core.pragma('dart2js:noInline')
-  static AutomaticScaling getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutomaticScaling>(create);
+  static AutomaticScaling getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AutomaticScaling>(create);
   static AutomaticScaling? _defaultInstance;
 
   /// The time period that the
@@ -975,7 +1167,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get coolDownPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set coolDownPeriod($264.Duration v) { setField(1, v); }
+  set coolDownPeriod($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCoolDownPeriod() => $_has(0);
   @$pb.TagNumber(1)
@@ -987,7 +1182,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CpuUtilization get cpuUtilization => $_getN(1);
   @$pb.TagNumber(2)
-  set cpuUtilization(CpuUtilization v) { setField(2, v); }
+  set cpuUtilization(CpuUtilization v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCpuUtilization() => $_has(1);
   @$pb.TagNumber(2)
@@ -1002,7 +1200,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxConcurrentRequests => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxConcurrentRequests($core.int v) { $_setSignedInt32(2, v); }
+  set maxConcurrentRequests($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxConcurrentRequests() => $_has(2);
   @$pb.TagNumber(3)
@@ -1013,7 +1214,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxIdleInstances => $_getIZ(3);
   @$pb.TagNumber(4)
-  set maxIdleInstances($core.int v) { $_setSignedInt32(3, v); }
+  set maxIdleInstances($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxIdleInstances() => $_has(3);
   @$pb.TagNumber(4)
@@ -1024,7 +1228,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxTotalInstances => $_getIZ(4);
   @$pb.TagNumber(5)
-  set maxTotalInstances($core.int v) { $_setSignedInt32(4, v); }
+  set maxTotalInstances($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaxTotalInstances() => $_has(4);
   @$pb.TagNumber(5)
@@ -1035,7 +1242,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $264.Duration get maxPendingLatency => $_getN(5);
   @$pb.TagNumber(6)
-  set maxPendingLatency($264.Duration v) { setField(6, v); }
+  set maxPendingLatency($264.Duration v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMaxPendingLatency() => $_has(5);
   @$pb.TagNumber(6)
@@ -1048,7 +1258,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get minIdleInstances => $_getIZ(6);
   @$pb.TagNumber(7)
-  set minIdleInstances($core.int v) { $_setSignedInt32(6, v); }
+  set minIdleInstances($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasMinIdleInstances() => $_has(6);
   @$pb.TagNumber(7)
@@ -1059,7 +1272,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get minTotalInstances => $_getIZ(7);
   @$pb.TagNumber(8)
-  set minTotalInstances($core.int v) { $_setSignedInt32(7, v); }
+  set minTotalInstances($core.int v) {
+    $_setSignedInt32(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMinTotalInstances() => $_has(7);
   @$pb.TagNumber(8)
@@ -1070,7 +1286,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $264.Duration get minPendingLatency => $_getN(8);
   @$pb.TagNumber(9)
-  set minPendingLatency($264.Duration v) { setField(9, v); }
+  set minPendingLatency($264.Duration v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasMinPendingLatency() => $_has(8);
   @$pb.TagNumber(9)
@@ -1082,7 +1301,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   RequestUtilization get requestUtilization => $_getN(9);
   @$pb.TagNumber(10)
-  set requestUtilization(RequestUtilization v) { setField(10, v); }
+  set requestUtilization(RequestUtilization v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasRequestUtilization() => $_has(9);
   @$pb.TagNumber(10)
@@ -1094,7 +1316,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   DiskUtilization get diskUtilization => $_getN(10);
   @$pb.TagNumber(11)
-  set diskUtilization(DiskUtilization v) { setField(11, v); }
+  set diskUtilization(DiskUtilization v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasDiskUtilization() => $_has(10);
   @$pb.TagNumber(11)
@@ -1106,7 +1331,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   NetworkUtilization get networkUtilization => $_getN(11);
   @$pb.TagNumber(12)
-  set networkUtilization(NetworkUtilization v) { setField(12, v); }
+  set networkUtilization(NetworkUtilization v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasNetworkUtilization() => $_has(11);
   @$pb.TagNumber(12)
@@ -1118,7 +1346,10 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   StandardSchedulerSettings get standardSchedulerSettings => $_getN(12);
   @$pb.TagNumber(20)
-  set standardSchedulerSettings(StandardSchedulerSettings v) { setField(20, v); }
+  set standardSchedulerSettings(StandardSchedulerSettings v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasStandardSchedulerSettings() => $_has(12);
   @$pb.TagNumber(20)
@@ -1151,34 +1382,44 @@ class BasicScaling extends $pb.GeneratedMessage {
     return $result;
   }
   BasicScaling._() : super();
-  factory BasicScaling.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BasicScaling.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BasicScaling.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BasicScaling.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BasicScaling', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'idleTimeout', subBuilder: $264.Duration.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BasicScaling',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'idleTimeout',
+        subBuilder: $264.Duration.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxInstances', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BasicScaling clone() => BasicScaling()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BasicScaling copyWith(void Function(BasicScaling) updates) => super.copyWith((message) => updates(message as BasicScaling)) as BasicScaling;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BasicScaling copyWith(void Function(BasicScaling) updates) =>
+      super.copyWith((message) => updates(message as BasicScaling))
+          as BasicScaling;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BasicScaling create() => BasicScaling._();
   BasicScaling createEmptyInstance() => create();
-  static $pb.PbList<BasicScaling> createRepeated() => $pb.PbList<BasicScaling>();
+  static $pb.PbList<BasicScaling> createRepeated() =>
+      $pb.PbList<BasicScaling>();
   @$core.pragma('dart2js:noInline')
-  static BasicScaling getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BasicScaling>(create);
+  static BasicScaling getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BasicScaling>(create);
   static BasicScaling? _defaultInstance;
 
   /// Duration of time after the last request that an instance must wait before
@@ -1186,7 +1427,10 @@ class BasicScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get idleTimeout => $_getN(0);
   @$pb.TagNumber(1)
-  set idleTimeout($264.Duration v) { setField(1, v); }
+  set idleTimeout($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIdleTimeout() => $_has(0);
   @$pb.TagNumber(1)
@@ -1198,7 +1442,10 @@ class BasicScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxInstances => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxInstances($core.int v) { $_setSignedInt32(1, v); }
+  set maxInstances($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxInstances() => $_has(1);
   @$pb.TagNumber(2)
@@ -1218,33 +1465,42 @@ class ManualScaling extends $pb.GeneratedMessage {
     return $result;
   }
   ManualScaling._() : super();
-  factory ManualScaling.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ManualScaling.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ManualScaling.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ManualScaling.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ManualScaling', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ManualScaling',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ManualScaling clone() => ManualScaling()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ManualScaling copyWith(void Function(ManualScaling) updates) => super.copyWith((message) => updates(message as ManualScaling)) as ManualScaling;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ManualScaling copyWith(void Function(ManualScaling) updates) =>
+      super.copyWith((message) => updates(message as ManualScaling))
+          as ManualScaling;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ManualScaling create() => ManualScaling._();
   ManualScaling createEmptyInstance() => create();
-  static $pb.PbList<ManualScaling> createRepeated() => $pb.PbList<ManualScaling>();
+  static $pb.PbList<ManualScaling> createRepeated() =>
+      $pb.PbList<ManualScaling>();
   @$core.pragma('dart2js:noInline')
-  static ManualScaling getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ManualScaling>(create);
+  static ManualScaling getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ManualScaling>(create);
   static ManualScaling? _defaultInstance;
 
   /// Number of instances to assign to the service at the start. This number
@@ -1254,7 +1510,10 @@ class ManualScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get instances => $_getIZ(0);
   @$pb.TagNumber(1)
-  set instances($core.int v) { $_setSignedInt32(0, v); }
+  set instances($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstances() => $_has(0);
   @$pb.TagNumber(1)
@@ -1277,41 +1536,55 @@ class CpuUtilization extends $pb.GeneratedMessage {
     return $result;
   }
   CpuUtilization._() : super();
-  factory CpuUtilization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CpuUtilization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CpuUtilization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CpuUtilization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CpuUtilization', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'aggregationWindowLength', subBuilder: $264.Duration.create)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'targetUtilization', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CpuUtilization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'aggregationWindowLength',
+        subBuilder: $264.Duration.create)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'targetUtilization', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CpuUtilization clone() => CpuUtilization()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CpuUtilization copyWith(void Function(CpuUtilization) updates) => super.copyWith((message) => updates(message as CpuUtilization)) as CpuUtilization;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CpuUtilization copyWith(void Function(CpuUtilization) updates) =>
+      super.copyWith((message) => updates(message as CpuUtilization))
+          as CpuUtilization;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CpuUtilization create() => CpuUtilization._();
   CpuUtilization createEmptyInstance() => create();
-  static $pb.PbList<CpuUtilization> createRepeated() => $pb.PbList<CpuUtilization>();
+  static $pb.PbList<CpuUtilization> createRepeated() =>
+      $pb.PbList<CpuUtilization>();
   @$core.pragma('dart2js:noInline')
-  static CpuUtilization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CpuUtilization>(create);
+  static CpuUtilization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CpuUtilization>(create);
   static CpuUtilization? _defaultInstance;
 
   /// Period of time over which CPU utilization is calculated.
   @$pb.TagNumber(1)
   $264.Duration get aggregationWindowLength => $_getN(0);
   @$pb.TagNumber(1)
-  set aggregationWindowLength($264.Duration v) { setField(1, v); }
+  set aggregationWindowLength($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAggregationWindowLength() => $_has(0);
   @$pb.TagNumber(1)
@@ -1324,7 +1597,10 @@ class CpuUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get targetUtilization => $_getN(1);
   @$pb.TagNumber(2)
-  set targetUtilization($core.double v) { $_setDouble(1, v); }
+  set targetUtilization($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetUtilization() => $_has(1);
   @$pb.TagNumber(2)
@@ -1348,41 +1624,55 @@ class RequestUtilization extends $pb.GeneratedMessage {
     return $result;
   }
   RequestUtilization._() : super();
-  factory RequestUtilization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RequestUtilization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RequestUtilization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RequestUtilization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestUtilization', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'targetRequestCountPerSecond', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'targetConcurrentRequests', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RequestUtilization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'targetRequestCountPerSecond',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'targetConcurrentRequests',
+        $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RequestUtilization clone() => RequestUtilization()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RequestUtilization copyWith(void Function(RequestUtilization) updates) => super.copyWith((message) => updates(message as RequestUtilization)) as RequestUtilization;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RequestUtilization copyWith(void Function(RequestUtilization) updates) =>
+      super.copyWith((message) => updates(message as RequestUtilization))
+          as RequestUtilization;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RequestUtilization create() => RequestUtilization._();
   RequestUtilization createEmptyInstance() => create();
-  static $pb.PbList<RequestUtilization> createRepeated() => $pb.PbList<RequestUtilization>();
+  static $pb.PbList<RequestUtilization> createRepeated() =>
+      $pb.PbList<RequestUtilization>();
   @$core.pragma('dart2js:noInline')
-  static RequestUtilization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RequestUtilization>(create);
+  static RequestUtilization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RequestUtilization>(create);
   static RequestUtilization? _defaultInstance;
 
   /// Target requests per second.
   @$pb.TagNumber(1)
   $core.int get targetRequestCountPerSecond => $_getIZ(0);
   @$pb.TagNumber(1)
-  set targetRequestCountPerSecond($core.int v) { $_setSignedInt32(0, v); }
+  set targetRequestCountPerSecond($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTargetRequestCountPerSecond() => $_has(0);
   @$pb.TagNumber(1)
@@ -1392,7 +1682,10 @@ class RequestUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get targetConcurrentRequests => $_getIZ(1);
   @$pb.TagNumber(2)
-  set targetConcurrentRequests($core.int v) { $_setSignedInt32(1, v); }
+  set targetConcurrentRequests($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetConcurrentRequests() => $_has(1);
   @$pb.TagNumber(2)
@@ -1424,43 +1717,59 @@ class DiskUtilization extends $pb.GeneratedMessage {
     return $result;
   }
   DiskUtilization._() : super();
-  factory DiskUtilization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DiskUtilization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DiskUtilization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DiskUtilization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiskUtilization', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..a<$core.int>(14, _omitFieldNames ? '' : 'targetWriteBytesPerSecond', $pb.PbFieldType.O3)
-    ..a<$core.int>(15, _omitFieldNames ? '' : 'targetWriteOpsPerSecond', $pb.PbFieldType.O3)
-    ..a<$core.int>(16, _omitFieldNames ? '' : 'targetReadBytesPerSecond', $pb.PbFieldType.O3)
-    ..a<$core.int>(17, _omitFieldNames ? '' : 'targetReadOpsPerSecond', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DiskUtilization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.int>(14, _omitFieldNames ? '' : 'targetWriteBytesPerSecond',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(15, _omitFieldNames ? '' : 'targetWriteOpsPerSecond',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(16, _omitFieldNames ? '' : 'targetReadBytesPerSecond',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        17, _omitFieldNames ? '' : 'targetReadOpsPerSecond', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DiskUtilization clone() => DiskUtilization()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DiskUtilization copyWith(void Function(DiskUtilization) updates) => super.copyWith((message) => updates(message as DiskUtilization)) as DiskUtilization;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DiskUtilization copyWith(void Function(DiskUtilization) updates) =>
+      super.copyWith((message) => updates(message as DiskUtilization))
+          as DiskUtilization;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DiskUtilization create() => DiskUtilization._();
   DiskUtilization createEmptyInstance() => create();
-  static $pb.PbList<DiskUtilization> createRepeated() => $pb.PbList<DiskUtilization>();
+  static $pb.PbList<DiskUtilization> createRepeated() =>
+      $pb.PbList<DiskUtilization>();
   @$core.pragma('dart2js:noInline')
-  static DiskUtilization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiskUtilization>(create);
+  static DiskUtilization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DiskUtilization>(create);
   static DiskUtilization? _defaultInstance;
 
   /// Target bytes written per second.
   @$pb.TagNumber(14)
   $core.int get targetWriteBytesPerSecond => $_getIZ(0);
   @$pb.TagNumber(14)
-  set targetWriteBytesPerSecond($core.int v) { $_setSignedInt32(0, v); }
+  set targetWriteBytesPerSecond($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasTargetWriteBytesPerSecond() => $_has(0);
   @$pb.TagNumber(14)
@@ -1470,7 +1779,10 @@ class DiskUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.int get targetWriteOpsPerSecond => $_getIZ(1);
   @$pb.TagNumber(15)
-  set targetWriteOpsPerSecond($core.int v) { $_setSignedInt32(1, v); }
+  set targetWriteOpsPerSecond($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasTargetWriteOpsPerSecond() => $_has(1);
   @$pb.TagNumber(15)
@@ -1480,7 +1792,10 @@ class DiskUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.int get targetReadBytesPerSecond => $_getIZ(2);
   @$pb.TagNumber(16)
-  set targetReadBytesPerSecond($core.int v) { $_setSignedInt32(2, v); }
+  set targetReadBytesPerSecond($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasTargetReadBytesPerSecond() => $_has(2);
   @$pb.TagNumber(16)
@@ -1490,7 +1805,10 @@ class DiskUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.int get targetReadOpsPerSecond => $_getIZ(3);
   @$pb.TagNumber(17)
-  set targetReadOpsPerSecond($core.int v) { $_setSignedInt32(3, v); }
+  set targetReadOpsPerSecond($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasTargetReadOpsPerSecond() => $_has(3);
   @$pb.TagNumber(17)
@@ -1522,43 +1840,59 @@ class NetworkUtilization extends $pb.GeneratedMessage {
     return $result;
   }
   NetworkUtilization._() : super();
-  factory NetworkUtilization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NetworkUtilization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NetworkUtilization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NetworkUtilization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NetworkUtilization', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'targetSentBytesPerSecond', $pb.PbFieldType.O3)
-    ..a<$core.int>(11, _omitFieldNames ? '' : 'targetSentPacketsPerSecond', $pb.PbFieldType.O3)
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'targetReceivedBytesPerSecond', $pb.PbFieldType.O3)
-    ..a<$core.int>(13, _omitFieldNames ? '' : 'targetReceivedPacketsPerSecond', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NetworkUtilization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'targetSentBytesPerSecond',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(11, _omitFieldNames ? '' : 'targetSentPacketsPerSecond',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(12, _omitFieldNames ? '' : 'targetReceivedBytesPerSecond',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(13, _omitFieldNames ? '' : 'targetReceivedPacketsPerSecond',
+        $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NetworkUtilization clone() => NetworkUtilization()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NetworkUtilization copyWith(void Function(NetworkUtilization) updates) => super.copyWith((message) => updates(message as NetworkUtilization)) as NetworkUtilization;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NetworkUtilization copyWith(void Function(NetworkUtilization) updates) =>
+      super.copyWith((message) => updates(message as NetworkUtilization))
+          as NetworkUtilization;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NetworkUtilization create() => NetworkUtilization._();
   NetworkUtilization createEmptyInstance() => create();
-  static $pb.PbList<NetworkUtilization> createRepeated() => $pb.PbList<NetworkUtilization>();
+  static $pb.PbList<NetworkUtilization> createRepeated() =>
+      $pb.PbList<NetworkUtilization>();
   @$core.pragma('dart2js:noInline')
-  static NetworkUtilization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NetworkUtilization>(create);
+  static NetworkUtilization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NetworkUtilization>(create);
   static NetworkUtilization? _defaultInstance;
 
   /// Target bytes sent per second.
   @$pb.TagNumber(1)
   $core.int get targetSentBytesPerSecond => $_getIZ(0);
   @$pb.TagNumber(1)
-  set targetSentBytesPerSecond($core.int v) { $_setSignedInt32(0, v); }
+  set targetSentBytesPerSecond($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTargetSentBytesPerSecond() => $_has(0);
   @$pb.TagNumber(1)
@@ -1568,7 +1902,10 @@ class NetworkUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.int get targetSentPacketsPerSecond => $_getIZ(1);
   @$pb.TagNumber(11)
-  set targetSentPacketsPerSecond($core.int v) { $_setSignedInt32(1, v); }
+  set targetSentPacketsPerSecond($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasTargetSentPacketsPerSecond() => $_has(1);
   @$pb.TagNumber(11)
@@ -1578,7 +1915,10 @@ class NetworkUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get targetReceivedBytesPerSecond => $_getIZ(2);
   @$pb.TagNumber(12)
-  set targetReceivedBytesPerSecond($core.int v) { $_setSignedInt32(2, v); }
+  set targetReceivedBytesPerSecond($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasTargetReceivedBytesPerSecond() => $_has(2);
   @$pb.TagNumber(12)
@@ -1588,7 +1928,10 @@ class NetworkUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.int get targetReceivedPacketsPerSecond => $_getIZ(3);
   @$pb.TagNumber(13)
-  set targetReceivedPacketsPerSecond($core.int v) { $_setSignedInt32(3, v); }
+  set targetReceivedPacketsPerSecond($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasTargetReceivedPacketsPerSecond() => $_has(3);
   @$pb.TagNumber(13)
@@ -1596,8 +1939,8 @@ class NetworkUtilization extends $pb.GeneratedMessage {
 }
 
 enum CustomMetric_TargetSpec {
-  targetUtilization, 
-  singleInstanceAssignment, 
+  targetUtilization,
+  singleInstanceAssignment,
   notSet
 }
 
@@ -1629,53 +1972,69 @@ class CustomMetric extends $pb.GeneratedMessage {
     return $result;
   }
   CustomMetric._() : super();
-  factory CustomMetric.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomMetric.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomMetric.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomMetric.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, CustomMetric_TargetSpec> _CustomMetric_TargetSpecByTag = {
-    3 : CustomMetric_TargetSpec.targetUtilization,
-    4 : CustomMetric_TargetSpec.singleInstanceAssignment,
-    0 : CustomMetric_TargetSpec.notSet
+  static const $core.Map<$core.int, CustomMetric_TargetSpec>
+      _CustomMetric_TargetSpecByTag = {
+    3: CustomMetric_TargetSpec.targetUtilization,
+    4: CustomMetric_TargetSpec.singleInstanceAssignment,
+    0: CustomMetric_TargetSpec.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomMetric', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomMetric',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'metricName')
     ..aOS(2, _omitFieldNames ? '' : 'targetType')
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'targetUtilization', $pb.PbFieldType.OD)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'singleInstanceAssignment', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'targetUtilization', $pb.PbFieldType.OD)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'singleInstanceAssignment',
+        $pb.PbFieldType.OD)
     ..aOS(5, _omitFieldNames ? '' : 'filter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CustomMetric clone() => CustomMetric()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomMetric copyWith(void Function(CustomMetric) updates) => super.copyWith((message) => updates(message as CustomMetric)) as CustomMetric;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomMetric copyWith(void Function(CustomMetric) updates) =>
+      super.copyWith((message) => updates(message as CustomMetric))
+          as CustomMetric;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomMetric create() => CustomMetric._();
   CustomMetric createEmptyInstance() => create();
-  static $pb.PbList<CustomMetric> createRepeated() => $pb.PbList<CustomMetric>();
+  static $pb.PbList<CustomMetric> createRepeated() =>
+      $pb.PbList<CustomMetric>();
   @$core.pragma('dart2js:noInline')
-  static CustomMetric getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomMetric>(create);
+  static CustomMetric getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomMetric>(create);
   static CustomMetric? _defaultInstance;
 
-  CustomMetric_TargetSpec whichTargetSpec() => _CustomMetric_TargetSpecByTag[$_whichOneof(0)]!;
+  CustomMetric_TargetSpec whichTargetSpec() =>
+      _CustomMetric_TargetSpecByTag[$_whichOneof(0)]!;
   void clearTargetSpec() => clearField($_whichOneof(0));
 
   /// The name of the metric.
   @$pb.TagNumber(1)
   $core.String get metricName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set metricName($core.String v) { $_setString(0, v); }
+  set metricName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetricName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1686,7 +2045,10 @@ class CustomMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get targetType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set targetType($core.String v) { $_setString(1, v); }
+  set targetType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetType() => $_has(1);
   @$pb.TagNumber(2)
@@ -1696,7 +2058,10 @@ class CustomMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get targetUtilization => $_getN(2);
   @$pb.TagNumber(3)
-  set targetUtilization($core.double v) { $_setDouble(2, v); }
+  set targetUtilization($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTargetUtilization() => $_has(2);
   @$pb.TagNumber(3)
@@ -1710,7 +2075,10 @@ class CustomMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get singleInstanceAssignment => $_getN(3);
   @$pb.TagNumber(4)
-  set singleInstanceAssignment($core.double v) { $_setDouble(3, v); }
+  set singleInstanceAssignment($core.double v) {
+    $_setDouble(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSingleInstanceAssignment() => $_has(3);
   @$pb.TagNumber(4)
@@ -1720,7 +2088,10 @@ class CustomMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get filter => $_getSZ(4);
   @$pb.TagNumber(5)
-  set filter($core.String v) { $_setString(4, v); }
+  set filter($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFilter() => $_has(4);
   @$pb.TagNumber(5)
@@ -1751,43 +2122,59 @@ class StandardSchedulerSettings extends $pb.GeneratedMessage {
     return $result;
   }
   StandardSchedulerSettings._() : super();
-  factory StandardSchedulerSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StandardSchedulerSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StandardSchedulerSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StandardSchedulerSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StandardSchedulerSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'targetCpuUtilization', $pb.PbFieldType.OD)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'targetThroughputUtilization', $pb.PbFieldType.OD)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StandardSchedulerSettings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'targetCpuUtilization', $pb.PbFieldType.OD)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'targetThroughputUtilization',
+        $pb.PbFieldType.OD)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'minInstances', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'maxInstances', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StandardSchedulerSettings clone() => StandardSchedulerSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StandardSchedulerSettings copyWith(void Function(StandardSchedulerSettings) updates) => super.copyWith((message) => updates(message as StandardSchedulerSettings)) as StandardSchedulerSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StandardSchedulerSettings clone() =>
+      StandardSchedulerSettings()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StandardSchedulerSettings copyWith(
+          void Function(StandardSchedulerSettings) updates) =>
+      super.copyWith((message) => updates(message as StandardSchedulerSettings))
+          as StandardSchedulerSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StandardSchedulerSettings create() => StandardSchedulerSettings._();
   StandardSchedulerSettings createEmptyInstance() => create();
-  static $pb.PbList<StandardSchedulerSettings> createRepeated() => $pb.PbList<StandardSchedulerSettings>();
+  static $pb.PbList<StandardSchedulerSettings> createRepeated() =>
+      $pb.PbList<StandardSchedulerSettings>();
   @$core.pragma('dart2js:noInline')
-  static StandardSchedulerSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StandardSchedulerSettings>(create);
+  static StandardSchedulerSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StandardSchedulerSettings>(create);
   static StandardSchedulerSettings? _defaultInstance;
 
   /// Target CPU utilization ratio to maintain when scaling.
   @$pb.TagNumber(1)
   $core.double get targetCpuUtilization => $_getN(0);
   @$pb.TagNumber(1)
-  set targetCpuUtilization($core.double v) { $_setDouble(0, v); }
+  set targetCpuUtilization($core.double v) {
+    $_setDouble(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTargetCpuUtilization() => $_has(0);
   @$pb.TagNumber(1)
@@ -1797,7 +2184,10 @@ class StandardSchedulerSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get targetThroughputUtilization => $_getN(1);
   @$pb.TagNumber(2)
-  set targetThroughputUtilization($core.double v) { $_setDouble(1, v); }
+  set targetThroughputUtilization($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetThroughputUtilization() => $_has(1);
   @$pb.TagNumber(2)
@@ -1808,7 +2198,10 @@ class StandardSchedulerSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get minInstances => $_getIZ(2);
   @$pb.TagNumber(3)
-  set minInstances($core.int v) { $_setSignedInt32(2, v); }
+  set minInstances($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMinInstances() => $_has(2);
   @$pb.TagNumber(3)
@@ -1819,7 +2212,10 @@ class StandardSchedulerSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxInstances => $_getIZ(3);
   @$pb.TagNumber(4)
-  set maxInstances($core.int v) { $_setSignedInt32(3, v); }
+  set maxInstances($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxInstances() => $_has(3);
   @$pb.TagNumber(4)
@@ -1855,28 +2251,34 @@ class Network extends $pb.GeneratedMessage {
     return $result;
   }
   Network._() : super();
-  factory Network.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Network.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Network.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Network.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Network', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Network',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'forwardedPorts')
     ..aOS(2, _omitFieldNames ? '' : 'instanceTag')
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'subnetworkName')
     ..aOB(5, _omitFieldNames ? '' : 'sessionAffinity')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Network clone() => Network()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Network copyWith(void Function(Network) updates) => super.copyWith((message) => updates(message as Network)) as Network;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Network copyWith(void Function(Network) updates) =>
+      super.copyWith((message) => updates(message as Network)) as Network;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1885,7 +2287,8 @@ class Network extends $pb.GeneratedMessage {
   Network createEmptyInstance() => create();
   static $pb.PbList<Network> createRepeated() => $pb.PbList<Network>();
   @$core.pragma('dart2js:noInline')
-  static Network getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Network>(create);
+  static Network getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Network>(create);
   static Network? _defaultInstance;
 
   /// List of ports, or port pairs, to forward from the virtual machine to the
@@ -1899,7 +2302,10 @@ class Network extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get instanceTag => $_getSZ(1);
   @$pb.TagNumber(2)
-  set instanceTag($core.String v) { $_setString(1, v); }
+  set instanceTag($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInstanceTag() => $_has(1);
   @$pb.TagNumber(2)
@@ -1912,7 +2318,10 @@ class Network extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(2, v); }
+  set name($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -1939,7 +2348,10 @@ class Network extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get subnetworkName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set subnetworkName($core.String v) { $_setString(3, v); }
+  set subnetworkName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSubnetworkName() => $_has(3);
   @$pb.TagNumber(4)
@@ -1950,7 +2362,10 @@ class Network extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get sessionAffinity => $_getBF(4);
   @$pb.TagNumber(5)
-  set sessionAffinity($core.bool v) { $_setBool(4, v); }
+  set sessionAffinity($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSessionAffinity() => $_has(4);
   @$pb.TagNumber(5)
@@ -1978,26 +2393,32 @@ class Volume extends $pb.GeneratedMessage {
     return $result;
   }
   Volume._() : super();
-  factory Volume.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Volume.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Volume.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Volume.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Volume', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Volume',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'volumeType')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'sizeGb', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Volume clone() => Volume()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Volume copyWith(void Function(Volume) updates) => super.copyWith((message) => updates(message as Volume)) as Volume;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Volume copyWith(void Function(Volume) updates) =>
+      super.copyWith((message) => updates(message as Volume)) as Volume;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2006,14 +2427,18 @@ class Volume extends $pb.GeneratedMessage {
   Volume createEmptyInstance() => create();
   static $pb.PbList<Volume> createRepeated() => $pb.PbList<Volume>();
   @$core.pragma('dart2js:noInline')
-  static Volume getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Volume>(create);
+  static Volume getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Volume>(create);
   static Volume? _defaultInstance;
 
   /// Unique name for the volume.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2023,7 +2448,10 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get volumeType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set volumeType($core.String v) { $_setString(1, v); }
+  set volumeType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVolumeType() => $_has(1);
   @$pb.TagNumber(2)
@@ -2033,7 +2461,10 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get sizeGb => $_getN(2);
   @$pb.TagNumber(3)
-  set sizeGb($core.double v) { $_setDouble(2, v); }
+  set sizeGb($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSizeGb() => $_has(2);
   @$pb.TagNumber(3)
@@ -2068,28 +2499,35 @@ class Resources extends $pb.GeneratedMessage {
     return $result;
   }
   Resources._() : super();
-  factory Resources.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Resources.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Resources.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Resources.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Resources', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Resources',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'cpu', $pb.PbFieldType.OD)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'diskGb', $pb.PbFieldType.OD)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'memoryGb', $pb.PbFieldType.OD)
-    ..pc<Volume>(4, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: Volume.create)
+    ..pc<Volume>(4, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM,
+        subBuilder: Volume.create)
     ..aOS(5, _omitFieldNames ? '' : 'kmsKeyReference')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Resources clone() => Resources()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Resources copyWith(void Function(Resources) updates) => super.copyWith((message) => updates(message as Resources)) as Resources;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Resources copyWith(void Function(Resources) updates) =>
+      super.copyWith((message) => updates(message as Resources)) as Resources;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2098,14 +2536,18 @@ class Resources extends $pb.GeneratedMessage {
   Resources createEmptyInstance() => create();
   static $pb.PbList<Resources> createRepeated() => $pb.PbList<Resources>();
   @$core.pragma('dart2js:noInline')
-  static Resources getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Resources>(create);
+  static Resources getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Resources>(create);
   static Resources? _defaultInstance;
 
   /// Number of CPU cores needed.
   @$pb.TagNumber(1)
   $core.double get cpu => $_getN(0);
   @$pb.TagNumber(1)
-  set cpu($core.double v) { $_setDouble(0, v); }
+  set cpu($core.double v) {
+    $_setDouble(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCpu() => $_has(0);
   @$pb.TagNumber(1)
@@ -2115,7 +2557,10 @@ class Resources extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get diskGb => $_getN(1);
   @$pb.TagNumber(2)
-  set diskGb($core.double v) { $_setDouble(1, v); }
+  set diskGb($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDiskGb() => $_has(1);
   @$pb.TagNumber(2)
@@ -2125,7 +2570,10 @@ class Resources extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get memoryGb => $_getN(2);
   @$pb.TagNumber(3)
-  set memoryGb($core.double v) { $_setDouble(2, v); }
+  set memoryGb($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMemoryGb() => $_has(2);
   @$pb.TagNumber(3)
@@ -2140,7 +2588,10 @@ class Resources extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get kmsKeyReference => $_getSZ(4);
   @$pb.TagNumber(5)
-  set kmsKeyReference($core.String v) { $_setString(4, v); }
+  set kmsKeyReference($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasKmsKeyReference() => $_has(4);
   @$pb.TagNumber(5)
@@ -2159,33 +2610,42 @@ class VpcAccessConnector extends $pb.GeneratedMessage {
     return $result;
   }
   VpcAccessConnector._() : super();
-  factory VpcAccessConnector.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VpcAccessConnector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VpcAccessConnector.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VpcAccessConnector.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VpcAccessConnector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VpcAccessConnector',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VpcAccessConnector clone() => VpcAccessConnector()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VpcAccessConnector copyWith(void Function(VpcAccessConnector) updates) => super.copyWith((message) => updates(message as VpcAccessConnector)) as VpcAccessConnector;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VpcAccessConnector copyWith(void Function(VpcAccessConnector) updates) =>
+      super.copyWith((message) => updates(message as VpcAccessConnector))
+          as VpcAccessConnector;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VpcAccessConnector create() => VpcAccessConnector._();
   VpcAccessConnector createEmptyInstance() => create();
-  static $pb.PbList<VpcAccessConnector> createRepeated() => $pb.PbList<VpcAccessConnector>();
+  static $pb.PbList<VpcAccessConnector> createRepeated() =>
+      $pb.PbList<VpcAccessConnector>();
   @$core.pragma('dart2js:noInline')
-  static VpcAccessConnector getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VpcAccessConnector>(create);
+  static VpcAccessConnector getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VpcAccessConnector>(create);
   static VpcAccessConnector? _defaultInstance;
 
   /// Full Serverless VPC Access Connector name e.g.
@@ -2193,17 +2653,17 @@ class VpcAccessConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 }
 
-enum Entrypoint_Command {
-  shell, 
-  notSet
-}
+enum Entrypoint_Command { shell, notSet }
 
 /// The entrypoint for the application.
 class Entrypoint extends $pb.GeneratedMessage {
@@ -2217,29 +2677,36 @@ class Entrypoint extends $pb.GeneratedMessage {
     return $result;
   }
   Entrypoint._() : super();
-  factory Entrypoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Entrypoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Entrypoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Entrypoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Entrypoint_Command> _Entrypoint_CommandByTag = {
-    1 : Entrypoint_Command.shell,
-    0 : Entrypoint_Command.notSet
+  static const $core.Map<$core.int, Entrypoint_Command>
+      _Entrypoint_CommandByTag = {
+    1: Entrypoint_Command.shell,
+    0: Entrypoint_Command.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Entrypoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Entrypoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'shell')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Entrypoint clone() => Entrypoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Entrypoint copyWith(void Function(Entrypoint) updates) => super.copyWith((message) => updates(message as Entrypoint)) as Entrypoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Entrypoint copyWith(void Function(Entrypoint) updates) =>
+      super.copyWith((message) => updates(message as Entrypoint)) as Entrypoint;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2248,23 +2715,28 @@ class Entrypoint extends $pb.GeneratedMessage {
   Entrypoint createEmptyInstance() => create();
   static $pb.PbList<Entrypoint> createRepeated() => $pb.PbList<Entrypoint>();
   @$core.pragma('dart2js:noInline')
-  static Entrypoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Entrypoint>(create);
+  static Entrypoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Entrypoint>(create);
   static Entrypoint? _defaultInstance;
 
-  Entrypoint_Command whichCommand() => _Entrypoint_CommandByTag[$_whichOneof(0)]!;
+  Entrypoint_Command whichCommand() =>
+      _Entrypoint_CommandByTag[$_whichOneof(0)]!;
   void clearCommand() => clearField($_whichOneof(0));
 
   /// The format should be a shell command that can be fed to `bash -c`.
   @$pb.TagNumber(1)
   $core.String get shell => $_getSZ(0);
   @$pb.TagNumber(1)
-  set shell($core.String v) { $_setString(0, v); }
+  set shell($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasShell() => $_has(0);
   @$pb.TagNumber(1)
   void clearShell() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

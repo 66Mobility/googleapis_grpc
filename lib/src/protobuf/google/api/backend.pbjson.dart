@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const Backend$json = {
   '1': 'Backend',
   '2': [
-    {'1': 'rules', '3': 1, '4': 3, '5': 11, '6': '.google.api.BackendRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.BackendRule',
+      '10': 'rules'
+    },
   ],
 };
 
@@ -41,12 +48,32 @@ const BackendRule$json = {
       '8': {'3': true},
       '10': 'minDeadline',
     },
-    {'1': 'operation_deadline', '3': 5, '4': 1, '5': 1, '10': 'operationDeadline'},
-    {'1': 'path_translation', '3': 6, '4': 1, '5': 14, '6': '.google.api.BackendRule.PathTranslation', '10': 'pathTranslation'},
+    {
+      '1': 'operation_deadline',
+      '3': 5,
+      '4': 1,
+      '5': 1,
+      '10': 'operationDeadline'
+    },
+    {
+      '1': 'path_translation',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.BackendRule.PathTranslation',
+      '10': 'pathTranslation'
+    },
     {'1': 'jwt_audience', '3': 7, '4': 1, '5': 9, '9': 0, '10': 'jwtAudience'},
     {'1': 'disable_auth', '3': 8, '4': 1, '5': 8, '9': 0, '10': 'disableAuth'},
     {'1': 'protocol', '3': 9, '4': 1, '5': 9, '10': 'protocol'},
-    {'1': 'overrides_by_request_protocol', '3': 10, '4': 3, '5': 11, '6': '.google.api.BackendRule.OverridesByRequestProtocolEntry', '10': 'overridesByRequestProtocol'},
+    {
+      '1': 'overrides_by_request_protocol',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.BackendRule.OverridesByRequestProtocolEntry',
+      '10': 'overridesByRequestProtocol'
+    },
   ],
   '3': [BackendRule_OverridesByRequestProtocolEntry$json],
   '4': [BackendRule_PathTranslation$json],
@@ -60,7 +87,14 @@ const BackendRule_OverridesByRequestProtocolEntry$json = {
   '1': 'OverridesByRequestProtocolEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.api.BackendRule', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.BackendRule',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -90,4 +124,3 @@ final $typed_data.Uint8List backendRuleDescriptor = $convert.base64Decode(
     'IAEoCzIXLmdvb2dsZS5hcGkuQmFja2VuZFJ1bGVSBXZhbHVlOgI4ASJlCg9QYXRoVHJhbnNsYX'
     'Rpb24SIAocUEFUSF9UUkFOU0xBVElPTl9VTlNQRUNJRklFRBAAEhQKEENPTlNUQU5UX0FERFJF'
     'U1MQARIaChZBUFBFTkRfUEFUSF9UT19BRERSRVNTEAJCEAoOYXV0aGVudGljYXRpb24=');
-

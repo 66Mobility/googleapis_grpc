@@ -19,25 +19,126 @@ const Database$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'uid'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'delete_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'deleteTime'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'deleteTime'
+    },
     {'1': 'location_id', '3': 9, '4': 1, '5': 9, '10': 'locationId'},
-    {'1': 'type', '3': 10, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Database.DatabaseType', '10': 'type'},
-    {'1': 'concurrency_mode', '3': 15, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Database.ConcurrencyMode', '10': 'concurrencyMode'},
-    {'1': 'version_retention_period', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'versionRetentionPeriod'},
-    {'1': 'earliest_version_time', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'earliestVersionTime'},
-    {'1': 'point_in_time_recovery_enablement', '3': 21, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Database.PointInTimeRecoveryEnablement', '10': 'pointInTimeRecoveryEnablement'},
-    {'1': 'app_engine_integration_mode', '3': 19, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Database.AppEngineIntegrationMode', '10': 'appEngineIntegrationMode'},
+    {
+      '1': 'type',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Database.DatabaseType',
+      '10': 'type'
+    },
+    {
+      '1': 'concurrency_mode',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Database.ConcurrencyMode',
+      '10': 'concurrencyMode'
+    },
+    {
+      '1': 'version_retention_period',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'versionRetentionPeriod'
+    },
+    {
+      '1': 'earliest_version_time',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'earliestVersionTime'
+    },
+    {
+      '1': 'point_in_time_recovery_enablement',
+      '3': 21,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Database.PointInTimeRecoveryEnablement',
+      '10': 'pointInTimeRecoveryEnablement'
+    },
+    {
+      '1': 'app_engine_integration_mode',
+      '3': 19,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Database.AppEngineIntegrationMode',
+      '10': 'appEngineIntegrationMode'
+    },
     {'1': 'key_prefix', '3': 20, '4': 1, '5': 9, '8': {}, '10': 'keyPrefix'},
-    {'1': 'delete_protection_state', '3': 22, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Database.DeleteProtectionState', '10': 'deleteProtectionState'},
-    {'1': 'cmek_config', '3': 23, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.CmekConfig', '8': {}, '10': 'cmekConfig'},
+    {
+      '1': 'delete_protection_state',
+      '3': 22,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Database.DeleteProtectionState',
+      '10': 'deleteProtectionState'
+    },
+    {
+      '1': 'cmek_config',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Database.CmekConfig',
+      '8': {},
+      '10': 'cmekConfig'
+    },
     {'1': 'previous_id', '3': 25, '4': 1, '5': 9, '8': {}, '10': 'previousId'},
-    {'1': 'source_info', '3': 26, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.SourceInfo', '8': {}, '10': 'sourceInfo'},
+    {
+      '1': 'source_info',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Database.SourceInfo',
+      '8': {},
+      '10': 'sourceInfo'
+    },
     {'1': 'etag', '3': 99, '4': 1, '5': 9, '10': 'etag'},
   ],
-  '3': [Database_CmekConfig$json, Database_SourceInfo$json, Database_EncryptionConfig$json],
-  '4': [Database_DatabaseType$json, Database_ConcurrencyMode$json, Database_PointInTimeRecoveryEnablement$json, Database_AppEngineIntegrationMode$json, Database_DeleteProtectionState$json],
+  '3': [
+    Database_CmekConfig$json,
+    Database_SourceInfo$json,
+    Database_EncryptionConfig$json
+  ],
+  '4': [
+    Database_DatabaseType$json,
+    Database_ConcurrencyMode$json,
+    Database_PointInTimeRecoveryEnablement$json,
+    Database_AppEngineIntegrationMode$json,
+    Database_DeleteProtectionState$json
+  ],
   '7': {},
 };
 
@@ -46,7 +147,14 @@ const Database_CmekConfig$json = {
   '1': 'CmekConfig',
   '2': [
     {'1': 'kms_key_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyName'},
-    {'1': 'active_key_version', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'activeKeyVersion'},
+    {
+      '1': 'active_key_version',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'activeKeyVersion'
+    },
   ],
 };
 
@@ -54,7 +162,15 @@ const Database_CmekConfig$json = {
 const Database_SourceInfo$json = {
   '1': 'SourceInfo',
   '2': [
-    {'1': 'backup', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.SourceInfo.BackupSource', '9': 0, '10': 'backup'},
+    {
+      '1': 'backup',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Database.SourceInfo.BackupSource',
+      '9': 0,
+      '10': 'backup'
+    },
     {'1': 'operation', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'operation'},
   ],
   '3': [Database_SourceInfo_BackupSource$json],
@@ -75,11 +191,42 @@ const Database_SourceInfo_BackupSource$json = {
 const Database_EncryptionConfig$json = {
   '1': 'EncryptionConfig',
   '2': [
-    {'1': 'google_default_encryption', '3': 1, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.EncryptionConfig.GoogleDefaultEncryptionOptions', '9': 0, '10': 'googleDefaultEncryption'},
-    {'1': 'use_source_encryption', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.EncryptionConfig.SourceEncryptionOptions', '9': 0, '10': 'useSourceEncryption'},
-    {'1': 'customer_managed_encryption', '3': 3, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.EncryptionConfig.CustomerManagedEncryptionOptions', '9': 0, '10': 'customerManagedEncryption'},
+    {
+      '1': 'google_default_encryption',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.firestore.admin.v1.Database.EncryptionConfig.GoogleDefaultEncryptionOptions',
+      '9': 0,
+      '10': 'googleDefaultEncryption'
+    },
+    {
+      '1': 'use_source_encryption',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.firestore.admin.v1.Database.EncryptionConfig.SourceEncryptionOptions',
+      '9': 0,
+      '10': 'useSourceEncryption'
+    },
+    {
+      '1': 'customer_managed_encryption',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.firestore.admin.v1.Database.EncryptionConfig.CustomerManagedEncryptionOptions',
+      '9': 0,
+      '10': 'customerManagedEncryption'
+    },
   ],
-  '3': [Database_EncryptionConfig_GoogleDefaultEncryptionOptions$json, Database_EncryptionConfig_SourceEncryptionOptions$json, Database_EncryptionConfig_CustomerManagedEncryptionOptions$json],
+  '3': [
+    Database_EncryptionConfig_GoogleDefaultEncryptionOptions$json,
+    Database_EncryptionConfig_SourceEncryptionOptions$json,
+    Database_EncryptionConfig_CustomerManagedEncryptionOptions$json
+  ],
   '8': [
     {'1': 'encryption_type'},
   ],
@@ -209,4 +356,3 @@ final $typed_data.Uint8List databaseDescriptor = $convert.base64Decode(
     'Q0lGSUVEEAASHgoaREVMRVRFX1BST1RFQ1RJT05fRElTQUJMRUQQARIdChlERUxFVEVfUFJPVE'
     'VDVElPTl9FTkFCTEVEEAI6UupBTwohZmlyZXN0b3JlLmdvb2dsZWFwaXMuY29tL0RhdGFiYXNl'
     'Eidwcm9qZWN0cy97cHJvamVjdH0vZGF0YWJhc2VzL3tkYXRhYmFzZX1SAQE=');
-

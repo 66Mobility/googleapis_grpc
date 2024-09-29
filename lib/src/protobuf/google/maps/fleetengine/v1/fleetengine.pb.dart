@@ -22,22 +22,15 @@ import 'traffic.pb.dart' as $456;
 
 export 'fleetengine.pbenum.dart';
 
-enum TerminalPointId_Id {
-  placeId, 
-  generatedId, 
-  notSet
-}
+enum TerminalPointId_Id { placeId, generatedId, notSet }
 
 /// Deprecated: TerminalPoints are no longer supported in Fleet Engine. Use
 /// `TerminalLocation.point` instead.
 class TerminalPointId extends $pb.GeneratedMessage {
   factory TerminalPointId({
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? placeId,
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? generatedId,
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? value,
+    @$core.Deprecated('This field is deprecated.') $core.String? placeId,
+    @$core.Deprecated('This field is deprecated.') $core.String? generatedId,
+    @$core.Deprecated('This field is deprecated.') $core.String? value,
   }) {
     final $result = create();
     if (placeId != null) {
@@ -55,41 +48,51 @@ class TerminalPointId extends $pb.GeneratedMessage {
     return $result;
   }
   TerminalPointId._() : super();
-  factory TerminalPointId.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TerminalPointId.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TerminalPointId.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TerminalPointId.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TerminalPointId_Id> _TerminalPointId_IdByTag = {
-    2 : TerminalPointId_Id.placeId,
-    3 : TerminalPointId_Id.generatedId,
-    0 : TerminalPointId_Id.notSet
+  static const $core.Map<$core.int, TerminalPointId_Id>
+      _TerminalPointId_IdByTag = {
+    2: TerminalPointId_Id.placeId,
+    3: TerminalPointId_Id.generatedId,
+    0: TerminalPointId_Id.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TerminalPointId', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TerminalPointId',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(2, _omitFieldNames ? '' : 'placeId')
     ..aOS(3, _omitFieldNames ? '' : 'generatedId')
     ..aOS(4, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TerminalPointId clone() => TerminalPointId()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TerminalPointId copyWith(void Function(TerminalPointId) updates) => super.copyWith((message) => updates(message as TerminalPointId)) as TerminalPointId;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TerminalPointId copyWith(void Function(TerminalPointId) updates) =>
+      super.copyWith((message) => updates(message as TerminalPointId))
+          as TerminalPointId;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TerminalPointId create() => TerminalPointId._();
   TerminalPointId createEmptyInstance() => create();
-  static $pb.PbList<TerminalPointId> createRepeated() => $pb.PbList<TerminalPointId>();
+  static $pb.PbList<TerminalPointId> createRepeated() =>
+      $pb.PbList<TerminalPointId>();
   @$core.pragma('dart2js:noInline')
-  static TerminalPointId getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TerminalPointId>(create);
+  static TerminalPointId getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TerminalPointId>(create);
   static TerminalPointId? _defaultInstance;
 
   TerminalPointId_Id whichId() => _TerminalPointId_IdByTag[$_whichOneof(0)]!;
@@ -101,7 +104,10 @@ class TerminalPointId extends $pb.GeneratedMessage {
   $core.String get placeId => $_getSZ(0);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set placeId($core.String v) { $_setString(0, v); }
+  set placeId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasPlaceId() => $_has(0);
@@ -115,7 +121,10 @@ class TerminalPointId extends $pb.GeneratedMessage {
   $core.String get generatedId => $_getSZ(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set generatedId($core.String v) { $_setString(1, v); }
+  set generatedId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasGeneratedId() => $_has(1);
@@ -129,7 +138,10 @@ class TerminalPointId extends $pb.GeneratedMessage {
   $core.String get value => $_getSZ(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set value($core.String v) { $_setString(2, v); }
+  set value($core.String v) {
+    $_setString(2, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasValue() => $_has(2);
@@ -142,13 +154,11 @@ class TerminalPointId extends $pb.GeneratedMessage {
 class TerminalLocation extends $pb.GeneratedMessage {
   factory TerminalLocation({
     $325.LatLng? point,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     TerminalPointId? terminalPointId,
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? accessPointId,
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? tripId,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.') $core.String? accessPointId,
+    @$core.Deprecated('This field is deprecated.') $core.String? tripId,
+    @$core.Deprecated('This field is deprecated.')
     WaypointType? terminalLocationType,
   }) {
     final $result = create();
@@ -174,44 +184,62 @@ class TerminalLocation extends $pb.GeneratedMessage {
     return $result;
   }
   TerminalLocation._() : super();
-  factory TerminalLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TerminalLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TerminalLocation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TerminalLocation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TerminalLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'point', subBuilder: $325.LatLng.create)
-    ..aOM<TerminalPointId>(2, _omitFieldNames ? '' : 'terminalPointId', subBuilder: TerminalPointId.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TerminalLocation',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'point',
+        subBuilder: $325.LatLng.create)
+    ..aOM<TerminalPointId>(2, _omitFieldNames ? '' : 'terminalPointId',
+        subBuilder: TerminalPointId.create)
     ..aOS(3, _omitFieldNames ? '' : 'accessPointId')
     ..aOS(4, _omitFieldNames ? '' : 'tripId')
-    ..e<WaypointType>(5, _omitFieldNames ? '' : 'terminalLocationType', $pb.PbFieldType.OE, defaultOrMaker: WaypointType.UNKNOWN_WAYPOINT_TYPE, valueOf: WaypointType.valueOf, enumValues: WaypointType.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<WaypointType>(
+        5, _omitFieldNames ? '' : 'terminalLocationType', $pb.PbFieldType.OE,
+        defaultOrMaker: WaypointType.UNKNOWN_WAYPOINT_TYPE,
+        valueOf: WaypointType.valueOf,
+        enumValues: WaypointType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TerminalLocation clone() => TerminalLocation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TerminalLocation copyWith(void Function(TerminalLocation) updates) => super.copyWith((message) => updates(message as TerminalLocation)) as TerminalLocation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TerminalLocation copyWith(void Function(TerminalLocation) updates) =>
+      super.copyWith((message) => updates(message as TerminalLocation))
+          as TerminalLocation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TerminalLocation create() => TerminalLocation._();
   TerminalLocation createEmptyInstance() => create();
-  static $pb.PbList<TerminalLocation> createRepeated() => $pb.PbList<TerminalLocation>();
+  static $pb.PbList<TerminalLocation> createRepeated() =>
+      $pb.PbList<TerminalLocation>();
   @$core.pragma('dart2js:noInline')
-  static TerminalLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TerminalLocation>(create);
+  static TerminalLocation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TerminalLocation>(create);
   static TerminalLocation? _defaultInstance;
 
   /// Required. Denotes the location of a trip waypoint.
   @$pb.TagNumber(1)
   $325.LatLng get point => $_getN(0);
   @$pb.TagNumber(1)
-  set point($325.LatLng v) { setField(1, v); }
+  set point($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPoint() => $_has(0);
   @$pb.TagNumber(1)
@@ -225,7 +253,10 @@ class TerminalLocation extends $pb.GeneratedMessage {
   TerminalPointId get terminalPointId => $_getN(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set terminalPointId(TerminalPointId v) { setField(2, v); }
+  set terminalPointId(TerminalPointId v) {
+    setField(2, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasTerminalPointId() => $_has(1);
@@ -242,7 +273,10 @@ class TerminalLocation extends $pb.GeneratedMessage {
   $core.String get accessPointId => $_getSZ(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set accessPointId($core.String v) { $_setString(2, v); }
+  set accessPointId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasAccessPointId() => $_has(2);
@@ -256,7 +290,10 @@ class TerminalLocation extends $pb.GeneratedMessage {
   $core.String get tripId => $_getSZ(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set tripId($core.String v) { $_setString(3, v); }
+  set tripId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasTripId() => $_has(3);
@@ -270,7 +307,10 @@ class TerminalLocation extends $pb.GeneratedMessage {
   WaypointType get terminalLocationType => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set terminalLocationType(WaypointType v) { setField(5, v); }
+  set terminalLocationType(WaypointType v) {
+    setField(5, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasTerminalLocationType() => $_has(4);
@@ -324,48 +364,72 @@ class TripWaypoint extends $pb.GeneratedMessage {
     return $result;
   }
   TripWaypoint._() : super();
-  factory TripWaypoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TripWaypoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TripWaypoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TripWaypoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TripWaypoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<TerminalLocation>(1, _omitFieldNames ? '' : 'location', subBuilder: TerminalLocation.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TripWaypoint',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<TerminalLocation>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: TerminalLocation.create)
     ..aOS(2, _omitFieldNames ? '' : 'tripId')
-    ..e<WaypointType>(3, _omitFieldNames ? '' : 'waypointType', $pb.PbFieldType.OE, defaultOrMaker: WaypointType.UNKNOWN_WAYPOINT_TYPE, valueOf: WaypointType.valueOf, enumValues: WaypointType.values)
-    ..pc<$325.LatLng>(4, _omitFieldNames ? '' : 'pathToWaypoint', $pb.PbFieldType.PM, subBuilder: $325.LatLng.create)
+    ..e<WaypointType>(
+        3, _omitFieldNames ? '' : 'waypointType', $pb.PbFieldType.OE,
+        defaultOrMaker: WaypointType.UNKNOWN_WAYPOINT_TYPE,
+        valueOf: WaypointType.valueOf,
+        enumValues: WaypointType.values)
+    ..pc<$325.LatLng>(
+        4, _omitFieldNames ? '' : 'pathToWaypoint', $pb.PbFieldType.PM,
+        subBuilder: $325.LatLng.create)
     ..aOS(5, _omitFieldNames ? '' : 'encodedPathToWaypoint')
-    ..aOM<$307.Int32Value>(6, _omitFieldNames ? '' : 'distanceMeters', subBuilder: $307.Int32Value.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'eta', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<$456.ConsumableTrafficPolyline>(10, _omitFieldNames ? '' : 'trafficToWaypoint', subBuilder: $456.ConsumableTrafficPolyline.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$307.Int32Value>(6, _omitFieldNames ? '' : 'distanceMeters',
+        subBuilder: $307.Int32Value.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'eta',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$456.ConsumableTrafficPolyline>(
+        10, _omitFieldNames ? '' : 'trafficToWaypoint',
+        subBuilder: $456.ConsumableTrafficPolyline.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TripWaypoint clone() => TripWaypoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TripWaypoint copyWith(void Function(TripWaypoint) updates) => super.copyWith((message) => updates(message as TripWaypoint)) as TripWaypoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TripWaypoint copyWith(void Function(TripWaypoint) updates) =>
+      super.copyWith((message) => updates(message as TripWaypoint))
+          as TripWaypoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TripWaypoint create() => TripWaypoint._();
   TripWaypoint createEmptyInstance() => create();
-  static $pb.PbList<TripWaypoint> createRepeated() => $pb.PbList<TripWaypoint>();
+  static $pb.PbList<TripWaypoint> createRepeated() =>
+      $pb.PbList<TripWaypoint>();
   @$core.pragma('dart2js:noInline')
-  static TripWaypoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TripWaypoint>(create);
+  static TripWaypoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TripWaypoint>(create);
   static TripWaypoint? _defaultInstance;
 
   /// The location of this waypoint.
   @$pb.TagNumber(1)
   TerminalLocation get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location(TerminalLocation v) { setField(1, v); }
+  set location(TerminalLocation v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -377,7 +441,10 @@ class TripWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get tripId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set tripId($core.String v) { $_setString(1, v); }
+  set tripId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTripId() => $_has(1);
   @$pb.TagNumber(2)
@@ -387,7 +454,10 @@ class TripWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WaypointType get waypointType => $_getN(2);
   @$pb.TagNumber(3)
-  set waypointType(WaypointType v) { setField(3, v); }
+  set waypointType(WaypointType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWaypointType() => $_has(2);
   @$pb.TagNumber(3)
@@ -405,7 +475,10 @@ class TripWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get encodedPathToWaypoint => $_getSZ(4);
   @$pb.TagNumber(5)
-  set encodedPathToWaypoint($core.String v) { $_setString(4, v); }
+  set encodedPathToWaypoint($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEncodedPathToWaypoint() => $_has(4);
   @$pb.TagNumber(5)
@@ -416,7 +489,10 @@ class TripWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $307.Int32Value get distanceMeters => $_getN(5);
   @$pb.TagNumber(6)
-  set distanceMeters($307.Int32Value v) { setField(6, v); }
+  set distanceMeters($307.Int32Value v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDistanceMeters() => $_has(5);
   @$pb.TagNumber(6)
@@ -429,7 +505,10 @@ class TripWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get eta => $_getN(6);
   @$pb.TagNumber(7)
-  set eta($302.Timestamp v) { setField(7, v); }
+  set eta($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEta() => $_has(6);
   @$pb.TagNumber(7)
@@ -442,7 +521,10 @@ class TripWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $264.Duration get duration => $_getN(7);
   @$pb.TagNumber(8)
-  set duration($264.Duration v) { setField(8, v); }
+  set duration($264.Duration v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDuration() => $_has(7);
   @$pb.TagNumber(8)
@@ -456,7 +538,10 @@ class TripWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $456.ConsumableTrafficPolyline get trafficToWaypoint => $_getN(8);
   @$pb.TagNumber(10)
-  set trafficToWaypoint($456.ConsumableTrafficPolyline v) { setField(10, v); }
+  set trafficToWaypoint($456.ConsumableTrafficPolyline v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasTrafficToWaypoint() => $_has(8);
   @$pb.TagNumber(10)
@@ -466,9 +551,9 @@ class TripWaypoint extends $pb.GeneratedMessage {
 }
 
 enum VehicleAttribute_VehicleAttributeValue {
-  stringValue, 
-  boolValue, 
-  numberValue, 
+  stringValue,
+  boolValue,
+  numberValue,
   notSet
 }
 
@@ -501,54 +586,69 @@ class VehicleAttribute extends $pb.GeneratedMessage {
     return $result;
   }
   VehicleAttribute._() : super();
-  factory VehicleAttribute.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VehicleAttribute.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VehicleAttribute.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VehicleAttribute.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, VehicleAttribute_VehicleAttributeValue> _VehicleAttribute_VehicleAttributeValueByTag = {
-    3 : VehicleAttribute_VehicleAttributeValue.stringValue,
-    4 : VehicleAttribute_VehicleAttributeValue.boolValue,
-    5 : VehicleAttribute_VehicleAttributeValue.numberValue,
-    0 : VehicleAttribute_VehicleAttributeValue.notSet
+  static const $core.Map<$core.int, VehicleAttribute_VehicleAttributeValue>
+      _VehicleAttribute_VehicleAttributeValueByTag = {
+    3: VehicleAttribute_VehicleAttributeValue.stringValue,
+    4: VehicleAttribute_VehicleAttributeValue.boolValue,
+    5: VehicleAttribute_VehicleAttributeValue.numberValue,
+    0: VehicleAttribute_VehicleAttributeValue.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleAttribute', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VehicleAttribute',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
     ..oo(0, [3, 4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'value')
     ..aOS(3, _omitFieldNames ? '' : 'stringValue')
     ..aOB(4, _omitFieldNames ? '' : 'boolValue')
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'numberValue', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        5, _omitFieldNames ? '' : 'numberValue', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VehicleAttribute clone() => VehicleAttribute()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VehicleAttribute copyWith(void Function(VehicleAttribute) updates) => super.copyWith((message) => updates(message as VehicleAttribute)) as VehicleAttribute;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VehicleAttribute copyWith(void Function(VehicleAttribute) updates) =>
+      super.copyWith((message) => updates(message as VehicleAttribute))
+          as VehicleAttribute;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VehicleAttribute create() => VehicleAttribute._();
   VehicleAttribute createEmptyInstance() => create();
-  static $pb.PbList<VehicleAttribute> createRepeated() => $pb.PbList<VehicleAttribute>();
+  static $pb.PbList<VehicleAttribute> createRepeated() =>
+      $pb.PbList<VehicleAttribute>();
   @$core.pragma('dart2js:noInline')
-  static VehicleAttribute getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VehicleAttribute>(create);
+  static VehicleAttribute getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VehicleAttribute>(create);
   static VehicleAttribute? _defaultInstance;
 
-  VehicleAttribute_VehicleAttributeValue whichVehicleAttributeValue() => _VehicleAttribute_VehicleAttributeValueByTag[$_whichOneof(0)]!;
+  VehicleAttribute_VehicleAttributeValue whichVehicleAttributeValue() =>
+      _VehicleAttribute_VehicleAttributeValueByTag[$_whichOneof(0)]!;
   void clearVehicleAttributeValue() => clearField($_whichOneof(0));
 
   /// The attribute's key. Keys may not contain the colon character (:).
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) { $_setString(0, v); }
+  set key($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -558,7 +658,10 @@ class VehicleAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) { $_setString(1, v); }
+  set value($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -574,7 +677,10 @@ class VehicleAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get stringValue => $_getSZ(2);
   @$pb.TagNumber(3)
-  set stringValue($core.String v) { $_setString(2, v); }
+  set stringValue($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStringValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -584,7 +690,10 @@ class VehicleAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get boolValue => $_getBF(3);
   @$pb.TagNumber(4)
-  set boolValue($core.bool v) { $_setBool(3, v); }
+  set boolValue($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBoolValue() => $_has(3);
   @$pb.TagNumber(4)
@@ -594,7 +703,10 @@ class VehicleAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get numberValue => $_getN(4);
   @$pb.TagNumber(5)
-  set numberValue($core.double v) { $_setDouble(4, v); }
+  set numberValue($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasNumberValue() => $_has(4);
   @$pb.TagNumber(5)
@@ -606,23 +718,22 @@ class VehicleLocation extends $pb.GeneratedMessage {
   factory VehicleLocation({
     $325.LatLng? location,
     $307.Int32Value? heading,
-  @$core.Deprecated('This field is deprecated.')
-    $307.Int32Value? speedKmph,
+    @$core.Deprecated('This field is deprecated.') $307.Int32Value? speedKmph,
     $302.Timestamp? updateTime,
     $307.DoubleValue? altitude,
     $307.DoubleValue? speed,
     $307.DoubleValue? speedAccuracy,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $307.DoubleValue? horizontalAccuracy,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $307.DoubleValue? verticalAccuracy,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $307.DoubleValue? bearingAccuracy,
     LocationSensor? locationSensor,
     $307.BoolValue? isGpsSensorEnabled,
     $302.Timestamp? serverTime,
     $307.Int32Value? timeSinceUpdate,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $307.Int32Value? numStaleUpdates,
     $325.LatLng? rawLocation,
     $302.Timestamp? rawLocationTime,
@@ -634,8 +745,7 @@ class VehicleLocation extends $pb.GeneratedMessage {
     $307.DoubleValue? headingAccuracy,
     $307.DoubleValue? altitudeAccuracy,
     $307.DoubleValue? rawLocationAccuracy,
-  @$core.Deprecated('This field is deprecated.')
-    $core.bool? roadSnapped,
+    @$core.Deprecated('This field is deprecated.') $core.bool? roadSnapped,
     $307.BoolValue? isRoadSnapped,
     LocationSensor? rawLocationSensor,
   }) {
@@ -733,60 +843,106 @@ class VehicleLocation extends $pb.GeneratedMessage {
     return $result;
   }
   VehicleLocation._() : super();
-  factory VehicleLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VehicleLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VehicleLocation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VehicleLocation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
-    ..aOM<$307.Int32Value>(2, _omitFieldNames ? '' : 'heading', subBuilder: $307.Int32Value.create)
-    ..aOM<$307.Int32Value>(3, _omitFieldNames ? '' : 'speedKmph', subBuilder: $307.Int32Value.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$307.DoubleValue>(5, _omitFieldNames ? '' : 'altitude', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'speed', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(7, _omitFieldNames ? '' : 'speedAccuracy', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(8, _omitFieldNames ? '' : 'horizontalAccuracy', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(9, _omitFieldNames ? '' : 'verticalAccuracy', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(10, _omitFieldNames ? '' : 'bearingAccuracy', subBuilder: $307.DoubleValue.create)
-    ..e<LocationSensor>(11, _omitFieldNames ? '' : 'locationSensor', $pb.PbFieldType.OE, defaultOrMaker: LocationSensor.UNKNOWN_SENSOR, valueOf: LocationSensor.valueOf, enumValues: LocationSensor.values)
-    ..aOM<$307.BoolValue>(12, _omitFieldNames ? '' : 'isGpsSensorEnabled', subBuilder: $307.BoolValue.create)
-    ..aOM<$302.Timestamp>(13, _omitFieldNames ? '' : 'serverTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$307.Int32Value>(14, _omitFieldNames ? '' : 'timeSinceUpdate', subBuilder: $307.Int32Value.create)
-    ..aOM<$307.Int32Value>(15, _omitFieldNames ? '' : 'numStaleUpdates', subBuilder: $307.Int32Value.create)
-    ..aOM<$325.LatLng>(16, _omitFieldNames ? '' : 'rawLocation', subBuilder: $325.LatLng.create)
-    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'rawLocationTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$325.LatLng>(18, _omitFieldNames ? '' : 'supplementalLocation', subBuilder: $325.LatLng.create)
-    ..aOM<$302.Timestamp>(19, _omitFieldNames ? '' : 'supplementalLocationTime', subBuilder: $302.Timestamp.create)
-    ..e<LocationSensor>(20, _omitFieldNames ? '' : 'supplementalLocationSensor', $pb.PbFieldType.OE, defaultOrMaker: LocationSensor.UNKNOWN_SENSOR, valueOf: LocationSensor.valueOf, enumValues: LocationSensor.values)
-    ..aOM<$307.DoubleValue>(21, _omitFieldNames ? '' : 'supplementalLocationAccuracy', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(22, _omitFieldNames ? '' : 'latlngAccuracy', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(23, _omitFieldNames ? '' : 'headingAccuracy', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(24, _omitFieldNames ? '' : 'altitudeAccuracy', subBuilder: $307.DoubleValue.create)
-    ..aOM<$307.DoubleValue>(25, _omitFieldNames ? '' : 'rawLocationAccuracy', subBuilder: $307.DoubleValue.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VehicleLocation',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$307.Int32Value>(2, _omitFieldNames ? '' : 'heading',
+        subBuilder: $307.Int32Value.create)
+    ..aOM<$307.Int32Value>(3, _omitFieldNames ? '' : 'speedKmph',
+        subBuilder: $307.Int32Value.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$307.DoubleValue>(5, _omitFieldNames ? '' : 'altitude',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'speed',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(7, _omitFieldNames ? '' : 'speedAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(8, _omitFieldNames ? '' : 'horizontalAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(9, _omitFieldNames ? '' : 'verticalAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(10, _omitFieldNames ? '' : 'bearingAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..e<LocationSensor>(
+        11, _omitFieldNames ? '' : 'locationSensor', $pb.PbFieldType.OE,
+        defaultOrMaker: LocationSensor.UNKNOWN_SENSOR,
+        valueOf: LocationSensor.valueOf,
+        enumValues: LocationSensor.values)
+    ..aOM<$307.BoolValue>(12, _omitFieldNames ? '' : 'isGpsSensorEnabled',
+        subBuilder: $307.BoolValue.create)
+    ..aOM<$302.Timestamp>(13, _omitFieldNames ? '' : 'serverTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$307.Int32Value>(14, _omitFieldNames ? '' : 'timeSinceUpdate',
+        subBuilder: $307.Int32Value.create)
+    ..aOM<$307.Int32Value>(15, _omitFieldNames ? '' : 'numStaleUpdates',
+        subBuilder: $307.Int32Value.create)
+    ..aOM<$325.LatLng>(16, _omitFieldNames ? '' : 'rawLocation',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'rawLocationTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$325.LatLng>(18, _omitFieldNames ? '' : 'supplementalLocation',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$302.Timestamp>(19, _omitFieldNames ? '' : 'supplementalLocationTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<LocationSensor>(20, _omitFieldNames ? '' : 'supplementalLocationSensor',
+        $pb.PbFieldType.OE,
+        defaultOrMaker: LocationSensor.UNKNOWN_SENSOR,
+        valueOf: LocationSensor.valueOf,
+        enumValues: LocationSensor.values)
+    ..aOM<$307.DoubleValue>(
+        21, _omitFieldNames ? '' : 'supplementalLocationAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(22, _omitFieldNames ? '' : 'latlngAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(23, _omitFieldNames ? '' : 'headingAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(24, _omitFieldNames ? '' : 'altitudeAccuracy',
+        subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(25, _omitFieldNames ? '' : 'rawLocationAccuracy',
+        subBuilder: $307.DoubleValue.create)
     ..aOB(26, _omitFieldNames ? '' : 'roadSnapped')
-    ..aOM<$307.BoolValue>(27, _omitFieldNames ? '' : 'isRoadSnapped', subBuilder: $307.BoolValue.create)
-    ..e<LocationSensor>(28, _omitFieldNames ? '' : 'rawLocationSensor', $pb.PbFieldType.OE, defaultOrMaker: LocationSensor.UNKNOWN_SENSOR, valueOf: LocationSensor.valueOf, enumValues: LocationSensor.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$307.BoolValue>(27, _omitFieldNames ? '' : 'isRoadSnapped',
+        subBuilder: $307.BoolValue.create)
+    ..e<LocationSensor>(
+        28, _omitFieldNames ? '' : 'rawLocationSensor', $pb.PbFieldType.OE,
+        defaultOrMaker: LocationSensor.UNKNOWN_SENSOR,
+        valueOf: LocationSensor.valueOf,
+        enumValues: LocationSensor.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VehicleLocation clone() => VehicleLocation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VehicleLocation copyWith(void Function(VehicleLocation) updates) => super.copyWith((message) => updates(message as VehicleLocation)) as VehicleLocation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VehicleLocation copyWith(void Function(VehicleLocation) updates) =>
+      super.copyWith((message) => updates(message as VehicleLocation))
+          as VehicleLocation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VehicleLocation create() => VehicleLocation._();
   VehicleLocation createEmptyInstance() => create();
-  static $pb.PbList<VehicleLocation> createRepeated() => $pb.PbList<VehicleLocation>();
+  static $pb.PbList<VehicleLocation> createRepeated() =>
+      $pb.PbList<VehicleLocation>();
   @$core.pragma('dart2js:noInline')
-  static VehicleLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VehicleLocation>(create);
+  static VehicleLocation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VehicleLocation>(create);
   static VehicleLocation? _defaultInstance;
 
   /// The location of the vehicle.
@@ -797,7 +953,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($325.LatLng v) { setField(1, v); }
+  set location($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -810,7 +969,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $307.Int32Value get heading => $_getN(1);
   @$pb.TagNumber(2)
-  set heading($307.Int32Value v) { setField(2, v); }
+  set heading($307.Int32Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHeading() => $_has(1);
   @$pb.TagNumber(2)
@@ -825,7 +987,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   $307.Int32Value get speedKmph => $_getN(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set speedKmph($307.Int32Value v) { setField(3, v); }
+  set speedKmph($307.Int32Value v) {
+    setField(3, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasSpeedKmph() => $_has(2);
@@ -841,7 +1006,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($302.Timestamp v) { setField(4, v); }
+  set updateTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -853,7 +1021,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $307.DoubleValue get altitude => $_getN(4);
   @$pb.TagNumber(5)
-  set altitude($307.DoubleValue v) { setField(5, v); }
+  set altitude($307.DoubleValue v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAltitude() => $_has(4);
   @$pb.TagNumber(5)
@@ -865,7 +1036,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $307.DoubleValue get speed => $_getN(5);
   @$pb.TagNumber(6)
-  set speed($307.DoubleValue v) { setField(6, v); }
+  set speed($307.DoubleValue v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSpeed() => $_has(5);
   @$pb.TagNumber(6)
@@ -877,7 +1051,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $307.DoubleValue get speedAccuracy => $_getN(6);
   @$pb.TagNumber(7)
-  set speedAccuracy($307.DoubleValue v) { setField(7, v); }
+  set speedAccuracy($307.DoubleValue v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasSpeedAccuracy() => $_has(6);
   @$pb.TagNumber(7)
@@ -891,7 +1068,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   $307.DoubleValue get horizontalAccuracy => $_getN(7);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
-  set horizontalAccuracy($307.DoubleValue v) { setField(8, v); }
+  set horizontalAccuracy($307.DoubleValue v) {
+    setField(8, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
   $core.bool hasHorizontalAccuracy() => $_has(7);
@@ -908,7 +1088,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   $307.DoubleValue get verticalAccuracy => $_getN(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  set verticalAccuracy($307.DoubleValue v) { setField(9, v); }
+  set verticalAccuracy($307.DoubleValue v) {
+    setField(9, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
   $core.bool hasVerticalAccuracy() => $_has(8);
@@ -925,7 +1108,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   $307.DoubleValue get bearingAccuracy => $_getN(9);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  set bearingAccuracy($307.DoubleValue v) { setField(10, v); }
+  set bearingAccuracy($307.DoubleValue v) {
+    setField(10, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
   $core.bool hasBearingAccuracy() => $_has(9);
@@ -940,7 +1126,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   LocationSensor get locationSensor => $_getN(10);
   @$pb.TagNumber(11)
-  set locationSensor(LocationSensor v) { setField(11, v); }
+  set locationSensor(LocationSensor v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasLocationSensor() => $_has(10);
   @$pb.TagNumber(11)
@@ -951,7 +1140,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $307.BoolValue get isGpsSensorEnabled => $_getN(11);
   @$pb.TagNumber(12)
-  set isGpsSensorEnabled($307.BoolValue v) { setField(12, v); }
+  set isGpsSensorEnabled($307.BoolValue v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasIsGpsSensorEnabled() => $_has(11);
   @$pb.TagNumber(12)
@@ -963,7 +1155,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $302.Timestamp get serverTime => $_getN(12);
   @$pb.TagNumber(13)
-  set serverTime($302.Timestamp v) { setField(13, v); }
+  set serverTime($302.Timestamp v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasServerTime() => $_has(12);
   @$pb.TagNumber(13)
@@ -977,7 +1172,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $307.Int32Value get timeSinceUpdate => $_getN(13);
   @$pb.TagNumber(14)
-  set timeSinceUpdate($307.Int32Value v) { setField(14, v); }
+  set timeSinceUpdate($307.Int32Value v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasTimeSinceUpdate() => $_has(13);
   @$pb.TagNumber(14)
@@ -992,7 +1190,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   $307.Int32Value get numStaleUpdates => $_getN(14);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  set numStaleUpdates($307.Int32Value v) { setField(15, v); }
+  set numStaleUpdates($307.Int32Value v) {
+    setField(15, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
   $core.bool hasNumStaleUpdates() => $_has(14);
@@ -1007,7 +1208,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $325.LatLng get rawLocation => $_getN(15);
   @$pb.TagNumber(16)
-  set rawLocation($325.LatLng v) { setField(16, v); }
+  set rawLocation($325.LatLng v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasRawLocation() => $_has(15);
   @$pb.TagNumber(16)
@@ -1019,7 +1223,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $302.Timestamp get rawLocationTime => $_getN(16);
   @$pb.TagNumber(17)
-  set rawLocationTime($302.Timestamp v) { setField(17, v); }
+  set rawLocationTime($302.Timestamp v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasRawLocationTime() => $_has(16);
   @$pb.TagNumber(17)
@@ -1031,7 +1238,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $325.LatLng get supplementalLocation => $_getN(17);
   @$pb.TagNumber(18)
-  set supplementalLocation($325.LatLng v) { setField(18, v); }
+  set supplementalLocation($325.LatLng v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasSupplementalLocation() => $_has(17);
   @$pb.TagNumber(18)
@@ -1043,7 +1253,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $302.Timestamp get supplementalLocationTime => $_getN(18);
   @$pb.TagNumber(19)
-  set supplementalLocationTime($302.Timestamp v) { setField(19, v); }
+  set supplementalLocationTime($302.Timestamp v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasSupplementalLocationTime() => $_has(18);
   @$pb.TagNumber(19)
@@ -1056,7 +1269,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   LocationSensor get supplementalLocationSensor => $_getN(19);
   @$pb.TagNumber(20)
-  set supplementalLocationSensor(LocationSensor v) { setField(20, v); }
+  set supplementalLocationSensor(LocationSensor v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasSupplementalLocationSensor() => $_has(19);
   @$pb.TagNumber(20)
@@ -1066,7 +1282,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $307.DoubleValue get supplementalLocationAccuracy => $_getN(20);
   @$pb.TagNumber(21)
-  set supplementalLocationAccuracy($307.DoubleValue v) { setField(21, v); }
+  set supplementalLocationAccuracy($307.DoubleValue v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasSupplementalLocationAccuracy() => $_has(20);
   @$pb.TagNumber(21)
@@ -1078,7 +1297,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $307.DoubleValue get latlngAccuracy => $_getN(21);
   @$pb.TagNumber(22)
-  set latlngAccuracy($307.DoubleValue v) { setField(22, v); }
+  set latlngAccuracy($307.DoubleValue v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasLatlngAccuracy() => $_has(21);
   @$pb.TagNumber(22)
@@ -1090,7 +1312,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $307.DoubleValue get headingAccuracy => $_getN(22);
   @$pb.TagNumber(23)
-  set headingAccuracy($307.DoubleValue v) { setField(23, v); }
+  set headingAccuracy($307.DoubleValue v) {
+    setField(23, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasHeadingAccuracy() => $_has(22);
   @$pb.TagNumber(23)
@@ -1102,7 +1327,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $307.DoubleValue get altitudeAccuracy => $_getN(23);
   @$pb.TagNumber(24)
-  set altitudeAccuracy($307.DoubleValue v) { setField(24, v); }
+  set altitudeAccuracy($307.DoubleValue v) {
+    setField(24, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasAltitudeAccuracy() => $_has(23);
   @$pb.TagNumber(24)
@@ -1114,7 +1342,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $307.DoubleValue get rawLocationAccuracy => $_getN(24);
   @$pb.TagNumber(25)
-  set rawLocationAccuracy($307.DoubleValue v) { setField(25, v); }
+  set rawLocationAccuracy($307.DoubleValue v) {
+    setField(25, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasRawLocationAccuracy() => $_has(24);
   @$pb.TagNumber(25)
@@ -1128,7 +1359,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   $core.bool get roadSnapped => $_getBF(25);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(26)
-  set roadSnapped($core.bool v) { $_setBool(25, v); }
+  set roadSnapped($core.bool v) {
+    $_setBool(25, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(26)
   $core.bool hasRoadSnapped() => $_has(25);
@@ -1140,7 +1374,10 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $307.BoolValue get isRoadSnapped => $_getN(26);
   @$pb.TagNumber(27)
-  set isRoadSnapped($307.BoolValue v) { setField(27, v); }
+  set isRoadSnapped($307.BoolValue v) {
+    setField(27, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasIsRoadSnapped() => $_has(26);
   @$pb.TagNumber(27)
@@ -1152,13 +1389,16 @@ class VehicleLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   LocationSensor get rawLocationSensor => $_getN(27);
   @$pb.TagNumber(28)
-  set rawLocationSensor(LocationSensor v) { setField(28, v); }
+  set rawLocationSensor(LocationSensor v) {
+    setField(28, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasRawLocationSensor() => $_has(27);
   @$pb.TagNumber(28)
   void clearRawLocationSensor() => clearField(28);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

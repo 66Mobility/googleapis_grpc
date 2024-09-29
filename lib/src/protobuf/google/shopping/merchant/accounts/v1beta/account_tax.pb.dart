@@ -37,26 +37,33 @@ class AccountTax extends $pb.GeneratedMessage {
     return $result;
   }
   AccountTax._() : super();
-  factory AccountTax.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AccountTax.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AccountTax.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AccountTax.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountTax', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AccountTax',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
-    ..pc<$538.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM, subBuilder: $538.TaxRule.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$538.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM,
+        subBuilder: $538.TaxRule.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AccountTax clone() => AccountTax()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AccountTax copyWith(void Function(AccountTax) updates) => super.copyWith((message) => updates(message as AccountTax)) as AccountTax;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AccountTax copyWith(void Function(AccountTax) updates) =>
+      super.copyWith((message) => updates(message as AccountTax)) as AccountTax;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -65,7 +72,8 @@ class AccountTax extends $pb.GeneratedMessage {
   AccountTax createEmptyInstance() => create();
   static $pb.PbList<AccountTax> createRepeated() => $pb.PbList<AccountTax>();
   @$core.pragma('dart2js:noInline')
-  static AccountTax getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AccountTax>(create);
+  static AccountTax getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AccountTax>(create);
   static AccountTax? _defaultInstance;
 
   /// Identifier. The name of the tax setting.
@@ -74,7 +82,10 @@ class AccountTax extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,7 +96,10 @@ class AccountTax extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get account => $_getI64(1);
   @$pb.TagNumber(2)
-  set account($fixnum.Int64 v) { $_setInt64(1, v); }
+  set account($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAccount() => $_has(1);
   @$pb.TagNumber(2)
@@ -109,40 +123,53 @@ class GetAccountTaxRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetAccountTaxRequest._() : super();
-  factory GetAccountTaxRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetAccountTaxRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetAccountTaxRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetAccountTaxRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAccountTaxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetAccountTaxRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetAccountTaxRequest clone() => GetAccountTaxRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetAccountTaxRequest copyWith(void Function(GetAccountTaxRequest) updates) => super.copyWith((message) => updates(message as GetAccountTaxRequest)) as GetAccountTaxRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetAccountTaxRequest clone() =>
+      GetAccountTaxRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetAccountTaxRequest copyWith(void Function(GetAccountTaxRequest) updates) =>
+      super.copyWith((message) => updates(message as GetAccountTaxRequest))
+          as GetAccountTaxRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetAccountTaxRequest create() => GetAccountTaxRequest._();
   GetAccountTaxRequest createEmptyInstance() => create();
-  static $pb.PbList<GetAccountTaxRequest> createRepeated() => $pb.PbList<GetAccountTaxRequest>();
+  static $pb.PbList<GetAccountTaxRequest> createRepeated() =>
+      $pb.PbList<GetAccountTaxRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetAccountTaxRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetAccountTaxRequest>(create);
+  static GetAccountTaxRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetAccountTaxRequest>(create);
   static GetAccountTaxRequest? _defaultInstance;
 
   /// Required. The name from which tax settings will be retrieved
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -165,41 +192,57 @@ class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateAccountTaxRequest._() : super();
-  factory UpdateAccountTaxRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateAccountTaxRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateAccountTaxRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateAccountTaxRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountTaxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..aOM<AccountTax>(1, _omitFieldNames ? '' : 'accountTax', subBuilder: AccountTax.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateAccountTaxRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<AccountTax>(1, _omitFieldNames ? '' : 'accountTax',
+        subBuilder: AccountTax.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateAccountTaxRequest clone() => UpdateAccountTaxRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateAccountTaxRequest copyWith(void Function(UpdateAccountTaxRequest) updates) => super.copyWith((message) => updates(message as UpdateAccountTaxRequest)) as UpdateAccountTaxRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateAccountTaxRequest clone() =>
+      UpdateAccountTaxRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateAccountTaxRequest copyWith(
+          void Function(UpdateAccountTaxRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateAccountTaxRequest))
+          as UpdateAccountTaxRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateAccountTaxRequest create() => UpdateAccountTaxRequest._();
   UpdateAccountTaxRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateAccountTaxRequest> createRepeated() => $pb.PbList<UpdateAccountTaxRequest>();
+  static $pb.PbList<UpdateAccountTaxRequest> createRepeated() =>
+      $pb.PbList<UpdateAccountTaxRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateAccountTaxRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateAccountTaxRequest>(create);
+  static UpdateAccountTaxRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateAccountTaxRequest>(create);
   static UpdateAccountTaxRequest? _defaultInstance;
 
   /// Required. The tax setting that will be updated
   @$pb.TagNumber(1)
   AccountTax get accountTax => $_getN(0);
   @$pb.TagNumber(1)
-  set accountTax(AccountTax v) { setField(1, v); }
+  set accountTax(AccountTax v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAccountTax() => $_has(0);
   @$pb.TagNumber(1)
@@ -211,7 +254,10 @@ class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -242,35 +288,46 @@ class ListAccountTaxRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListAccountTaxRequest._() : super();
-  factory ListAccountTaxRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListAccountTaxRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListAccountTaxRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListAccountTaxRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAccountTaxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListAccountTaxRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListAccountTaxRequest clone() => ListAccountTaxRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListAccountTaxRequest copyWith(void Function(ListAccountTaxRequest) updates) => super.copyWith((message) => updates(message as ListAccountTaxRequest)) as ListAccountTaxRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListAccountTaxRequest clone() =>
+      ListAccountTaxRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListAccountTaxRequest copyWith(
+          void Function(ListAccountTaxRequest) updates) =>
+      super.copyWith((message) => updates(message as ListAccountTaxRequest))
+          as ListAccountTaxRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListAccountTaxRequest create() => ListAccountTaxRequest._();
   ListAccountTaxRequest createEmptyInstance() => create();
-  static $pb.PbList<ListAccountTaxRequest> createRepeated() => $pb.PbList<ListAccountTaxRequest>();
+  static $pb.PbList<ListAccountTaxRequest> createRepeated() =>
+      $pb.PbList<ListAccountTaxRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListAccountTaxRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListAccountTaxRequest>(create);
+  static ListAccountTaxRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListAccountTaxRequest>(create);
   static ListAccountTaxRequest? _defaultInstance;
 
   /// Required. The parent, which owns this collection of account tax.
@@ -278,7 +335,10 @@ class ListAccountTaxRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -289,7 +349,10 @@ class ListAccountTaxRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -299,7 +362,10 @@ class ListAccountTaxRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -324,34 +390,47 @@ class ListAccountTaxResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListAccountTaxResponse._() : super();
-  factory ListAccountTaxResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListAccountTaxResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListAccountTaxResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListAccountTaxResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAccountTaxResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<AccountTax>(1, _omitFieldNames ? '' : 'accountTaxes', $pb.PbFieldType.PM, subBuilder: AccountTax.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListAccountTaxResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<AccountTax>(
+        1, _omitFieldNames ? '' : 'accountTaxes', $pb.PbFieldType.PM,
+        subBuilder: AccountTax.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListAccountTaxResponse clone() => ListAccountTaxResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListAccountTaxResponse copyWith(void Function(ListAccountTaxResponse) updates) => super.copyWith((message) => updates(message as ListAccountTaxResponse)) as ListAccountTaxResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListAccountTaxResponse clone() =>
+      ListAccountTaxResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListAccountTaxResponse copyWith(
+          void Function(ListAccountTaxResponse) updates) =>
+      super.copyWith((message) => updates(message as ListAccountTaxResponse))
+          as ListAccountTaxResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListAccountTaxResponse create() => ListAccountTaxResponse._();
   ListAccountTaxResponse createEmptyInstance() => create();
-  static $pb.PbList<ListAccountTaxResponse> createRepeated() => $pb.PbList<ListAccountTaxResponse>();
+  static $pb.PbList<ListAccountTaxResponse> createRepeated() =>
+      $pb.PbList<ListAccountTaxResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListAccountTaxResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListAccountTaxResponse>(create);
+  static ListAccountTaxResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListAccountTaxResponse>(create);
   static ListAccountTaxResponse? _defaultInstance;
 
   /// Page of accounttax settings
@@ -362,13 +441,16 @@ class ListAccountTaxResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

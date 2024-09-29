@@ -53,45 +53,67 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   IndexOperationMetadata._() : super();
-  factory IndexOperationMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory IndexOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory IndexOperationMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IndexOperationMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IndexOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IndexOperationMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'index')
-    ..e<IndexOperationMetadata_OperationType>(4, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: IndexOperationMetadata_OperationType.OPERATION_TYPE_UNSPECIFIED, valueOf: IndexOperationMetadata_OperationType.valueOf, enumValues: IndexOperationMetadata_OperationType.values)
+    ..e<IndexOperationMetadata_OperationType>(
+        4, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            IndexOperationMetadata_OperationType.OPERATION_TYPE_UNSPECIFIED,
+        valueOf: IndexOperationMetadata_OperationType.valueOf,
+        enumValues: IndexOperationMetadata_OperationType.values)
     ..aOB(5, _omitFieldNames ? '' : 'cancelled')
-    ..aOM<Progress>(6, _omitFieldNames ? '' : 'documentProgress', subBuilder: Progress.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Progress>(6, _omitFieldNames ? '' : 'documentProgress',
+        subBuilder: Progress.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  IndexOperationMetadata clone() => IndexOperationMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  IndexOperationMetadata copyWith(void Function(IndexOperationMetadata) updates) => super.copyWith((message) => updates(message as IndexOperationMetadata)) as IndexOperationMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IndexOperationMetadata clone() =>
+      IndexOperationMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IndexOperationMetadata copyWith(
+          void Function(IndexOperationMetadata) updates) =>
+      super.copyWith((message) => updates(message as IndexOperationMetadata))
+          as IndexOperationMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static IndexOperationMetadata create() => IndexOperationMetadata._();
   IndexOperationMetadata createEmptyInstance() => create();
-  static $pb.PbList<IndexOperationMetadata> createRepeated() => $pb.PbList<IndexOperationMetadata>();
+  static $pb.PbList<IndexOperationMetadata> createRepeated() =>
+      $pb.PbList<IndexOperationMetadata>();
   @$core.pragma('dart2js:noInline')
-  static IndexOperationMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IndexOperationMetadata>(create);
+  static IndexOperationMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IndexOperationMetadata>(create);
   static IndexOperationMetadata? _defaultInstance;
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -104,7 +126,10 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -117,7 +142,10 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get index => $_getSZ(2);
   @$pb.TagNumber(3)
-  set index($core.String v) { $_setString(2, v); }
+  set index($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasIndex() => $_has(2);
   @$pb.TagNumber(3)
@@ -127,7 +155,10 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   IndexOperationMetadata_OperationType get operationType => $_getN(3);
   @$pb.TagNumber(4)
-  set operationType(IndexOperationMetadata_OperationType v) { setField(4, v); }
+  set operationType(IndexOperationMetadata_OperationType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOperationType() => $_has(3);
   @$pb.TagNumber(4)
@@ -139,7 +170,10 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get cancelled => $_getBF(4);
   @$pb.TagNumber(5)
-  set cancelled($core.bool v) { $_setBool(4, v); }
+  set cancelled($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCancelled() => $_has(4);
   @$pb.TagNumber(5)
@@ -149,7 +183,10 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Progress get documentProgress => $_getN(5);
   @$pb.TagNumber(6)
-  set documentProgress(Progress v) { setField(6, v); }
+  set documentProgress(Progress v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDocumentProgress() => $_has(5);
   @$pb.TagNumber(6)
@@ -174,25 +211,31 @@ class Progress extends $pb.GeneratedMessage {
     return $result;
   }
   Progress._() : super();
-  factory Progress.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Progress.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Progress.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Progress.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Progress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Progress',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'workCompleted')
     ..aInt64(2, _omitFieldNames ? '' : 'workEstimated')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Progress clone() => Progress()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Progress copyWith(void Function(Progress) updates) => super.copyWith((message) => updates(message as Progress)) as Progress;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Progress copyWith(void Function(Progress) updates) =>
+      super.copyWith((message) => updates(message as Progress)) as Progress;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -201,7 +244,8 @@ class Progress extends $pb.GeneratedMessage {
   Progress createEmptyInstance() => create();
   static $pb.PbList<Progress> createRepeated() => $pb.PbList<Progress>();
   @$core.pragma('dart2js:noInline')
-  static Progress getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Progress>(create);
+  static Progress getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Progress>(create);
   static Progress? _defaultInstance;
 
   /// An estimate of how much work has been completed. Note that this may be
@@ -209,7 +253,10 @@ class Progress extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get workCompleted => $_getI64(0);
   @$pb.TagNumber(1)
-  set workCompleted($fixnum.Int64 v) { $_setInt64(0, v); }
+  set workCompleted($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasWorkCompleted() => $_has(0);
   @$pb.TagNumber(1)
@@ -220,7 +267,10 @@ class Progress extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get workEstimated => $_getI64(1);
   @$pb.TagNumber(2)
-  set workEstimated($fixnum.Int64 v) { $_setInt64(1, v); }
+  set workEstimated($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasWorkEstimated() => $_has(1);
   @$pb.TagNumber(2)
@@ -243,34 +293,44 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateIndexRequest._() : super();
-  factory CreateIndexRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateIndexRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateIndexRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateIndexRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateIndexRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateIndexRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$125.Index>(2, _omitFieldNames ? '' : 'index', subBuilder: $125.Index.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$125.Index>(2, _omitFieldNames ? '' : 'index',
+        subBuilder: $125.Index.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateIndexRequest clone() => CreateIndexRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateIndexRequest copyWith(void Function(CreateIndexRequest) updates) => super.copyWith((message) => updates(message as CreateIndexRequest)) as CreateIndexRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateIndexRequest copyWith(void Function(CreateIndexRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateIndexRequest))
+          as CreateIndexRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateIndexRequest create() => CreateIndexRequest._();
   CreateIndexRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateIndexRequest> createRepeated() => $pb.PbList<CreateIndexRequest>();
+  static $pb.PbList<CreateIndexRequest> createRepeated() =>
+      $pb.PbList<CreateIndexRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateIndexRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateIndexRequest>(create);
+  static CreateIndexRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateIndexRequest>(create);
   static CreateIndexRequest? _defaultInstance;
 
   /// The name of the database this index will apply to. For example:
@@ -278,7 +338,10 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -289,7 +352,10 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $125.Index get index => $_getN(1);
   @$pb.TagNumber(2)
-  set index($125.Index v) { setField(2, v); }
+  set index($125.Index v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -310,33 +376,42 @@ class GetIndexRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetIndexRequest._() : super();
-  factory GetIndexRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetIndexRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetIndexRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetIndexRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetIndexRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetIndexRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetIndexRequest clone() => GetIndexRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetIndexRequest copyWith(void Function(GetIndexRequest) updates) => super.copyWith((message) => updates(message as GetIndexRequest)) as GetIndexRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetIndexRequest copyWith(void Function(GetIndexRequest) updates) =>
+      super.copyWith((message) => updates(message as GetIndexRequest))
+          as GetIndexRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetIndexRequest create() => GetIndexRequest._();
   GetIndexRequest createEmptyInstance() => create();
-  static $pb.PbList<GetIndexRequest> createRepeated() => $pb.PbList<GetIndexRequest>();
+  static $pb.PbList<GetIndexRequest> createRepeated() =>
+      $pb.PbList<GetIndexRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetIndexRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetIndexRequest>(create);
+  static GetIndexRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetIndexRequest>(create);
   static GetIndexRequest? _defaultInstance;
 
   /// The name of the index. For example:
@@ -344,7 +419,10 @@ class GetIndexRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -375,36 +453,45 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListIndexesRequest._() : super();
-  factory ListIndexesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListIndexesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListIndexesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListIndexesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListIndexesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListIndexesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListIndexesRequest clone() => ListIndexesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListIndexesRequest copyWith(void Function(ListIndexesRequest) updates) => super.copyWith((message) => updates(message as ListIndexesRequest)) as ListIndexesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListIndexesRequest copyWith(void Function(ListIndexesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListIndexesRequest))
+          as ListIndexesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListIndexesRequest create() => ListIndexesRequest._();
   ListIndexesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListIndexesRequest> createRepeated() => $pb.PbList<ListIndexesRequest>();
+  static $pb.PbList<ListIndexesRequest> createRepeated() =>
+      $pb.PbList<ListIndexesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListIndexesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListIndexesRequest>(create);
+  static ListIndexesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListIndexesRequest>(create);
   static ListIndexesRequest? _defaultInstance;
 
   /// The database name. For example:
@@ -412,7 +499,10 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -421,7 +511,10 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -431,7 +524,10 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -441,7 +537,10 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -460,33 +559,42 @@ class DeleteIndexRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteIndexRequest._() : super();
-  factory DeleteIndexRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteIndexRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteIndexRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteIndexRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteIndexRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteIndexRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteIndexRequest clone() => DeleteIndexRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteIndexRequest copyWith(void Function(DeleteIndexRequest) updates) => super.copyWith((message) => updates(message as DeleteIndexRequest)) as DeleteIndexRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteIndexRequest copyWith(void Function(DeleteIndexRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteIndexRequest))
+          as DeleteIndexRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteIndexRequest create() => DeleteIndexRequest._();
   DeleteIndexRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteIndexRequest> createRepeated() => $pb.PbList<DeleteIndexRequest>();
+  static $pb.PbList<DeleteIndexRequest> createRepeated() =>
+      $pb.PbList<DeleteIndexRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteIndexRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteIndexRequest>(create);
+  static DeleteIndexRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteIndexRequest>(create);
   static DeleteIndexRequest? _defaultInstance;
 
   /// The index name. For example:
@@ -494,7 +602,10 @@ class DeleteIndexRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -517,34 +628,44 @@ class ListIndexesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListIndexesResponse._() : super();
-  factory ListIndexesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListIndexesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListIndexesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListIndexesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListIndexesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
-    ..pc<$125.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM, subBuilder: $125.Index.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListIndexesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
+    ..pc<$125.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM,
+        subBuilder: $125.Index.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListIndexesResponse clone() => ListIndexesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListIndexesResponse copyWith(void Function(ListIndexesResponse) updates) => super.copyWith((message) => updates(message as ListIndexesResponse)) as ListIndexesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListIndexesResponse copyWith(void Function(ListIndexesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListIndexesResponse))
+          as ListIndexesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListIndexesResponse create() => ListIndexesResponse._();
   ListIndexesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListIndexesResponse> createRepeated() => $pb.PbList<ListIndexesResponse>();
+  static $pb.PbList<ListIndexesResponse> createRepeated() =>
+      $pb.PbList<ListIndexesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListIndexesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListIndexesResponse>(create);
+  static ListIndexesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListIndexesResponse>(create);
   static ListIndexesResponse? _defaultInstance;
 
   /// The indexes.
@@ -555,7 +676,10 @@ class ListIndexesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -582,35 +706,46 @@ class ExportDocumentsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ExportDocumentsRequest._() : super();
-  factory ExportDocumentsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportDocumentsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportDocumentsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportDocumentsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDocumentsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportDocumentsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(3, _omitFieldNames ? '' : 'collectionIds')
     ..aOS(4, _omitFieldNames ? '' : 'outputUriPrefix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportDocumentsRequest clone() => ExportDocumentsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportDocumentsRequest copyWith(void Function(ExportDocumentsRequest) updates) => super.copyWith((message) => updates(message as ExportDocumentsRequest)) as ExportDocumentsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportDocumentsRequest clone() =>
+      ExportDocumentsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportDocumentsRequest copyWith(
+          void Function(ExportDocumentsRequest) updates) =>
+      super.copyWith((message) => updates(message as ExportDocumentsRequest))
+          as ExportDocumentsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportDocumentsRequest create() => ExportDocumentsRequest._();
   ExportDocumentsRequest createEmptyInstance() => create();
-  static $pb.PbList<ExportDocumentsRequest> createRepeated() => $pb.PbList<ExportDocumentsRequest>();
+  static $pb.PbList<ExportDocumentsRequest> createRepeated() =>
+      $pb.PbList<ExportDocumentsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExportDocumentsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportDocumentsRequest>(create);
+  static ExportDocumentsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportDocumentsRequest>(create);
   static ExportDocumentsRequest? _defaultInstance;
 
   /// Database to export. Should be of the form:
@@ -618,7 +753,10 @@ class ExportDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -639,7 +777,10 @@ class ExportDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get outputUriPrefix => $_getSZ(2);
   @$pb.TagNumber(4)
-  set outputUriPrefix($core.String v) { $_setString(2, v); }
+  set outputUriPrefix($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOutputUriPrefix() => $_has(2);
   @$pb.TagNumber(4)
@@ -666,35 +807,46 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ImportDocumentsRequest._() : super();
-  factory ImportDocumentsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportDocumentsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportDocumentsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportDocumentsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportDocumentsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(3, _omitFieldNames ? '' : 'collectionIds')
     ..aOS(4, _omitFieldNames ? '' : 'inputUriPrefix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportDocumentsRequest clone() => ImportDocumentsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportDocumentsRequest copyWith(void Function(ImportDocumentsRequest) updates) => super.copyWith((message) => updates(message as ImportDocumentsRequest)) as ImportDocumentsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportDocumentsRequest clone() =>
+      ImportDocumentsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportDocumentsRequest copyWith(
+          void Function(ImportDocumentsRequest) updates) =>
+      super.copyWith((message) => updates(message as ImportDocumentsRequest))
+          as ImportDocumentsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImportDocumentsRequest create() => ImportDocumentsRequest._();
   ImportDocumentsRequest createEmptyInstance() => create();
-  static $pb.PbList<ImportDocumentsRequest> createRepeated() => $pb.PbList<ImportDocumentsRequest>();
+  static $pb.PbList<ImportDocumentsRequest> createRepeated() =>
+      $pb.PbList<ImportDocumentsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ImportDocumentsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportDocumentsRequest>(create);
+  static ImportDocumentsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportDocumentsRequest>(create);
   static ImportDocumentsRequest? _defaultInstance;
 
   /// Database to import into. Should be of the form:
@@ -702,7 +854,10 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -721,7 +876,10 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get inputUriPrefix => $_getSZ(2);
   @$pb.TagNumber(4)
-  set inputUriPrefix($core.String v) { $_setString(2, v); }
+  set inputUriPrefix($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasInputUriPrefix() => $_has(2);
   @$pb.TagNumber(4)
@@ -740,33 +898,44 @@ class ExportDocumentsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ExportDocumentsResponse._() : super();
-  factory ExportDocumentsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportDocumentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportDocumentsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportDocumentsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDocumentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportDocumentsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'outputUriPrefix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportDocumentsResponse clone() => ExportDocumentsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportDocumentsResponse copyWith(void Function(ExportDocumentsResponse) updates) => super.copyWith((message) => updates(message as ExportDocumentsResponse)) as ExportDocumentsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportDocumentsResponse clone() =>
+      ExportDocumentsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportDocumentsResponse copyWith(
+          void Function(ExportDocumentsResponse) updates) =>
+      super.copyWith((message) => updates(message as ExportDocumentsResponse))
+          as ExportDocumentsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportDocumentsResponse create() => ExportDocumentsResponse._();
   ExportDocumentsResponse createEmptyInstance() => create();
-  static $pb.PbList<ExportDocumentsResponse> createRepeated() => $pb.PbList<ExportDocumentsResponse>();
+  static $pb.PbList<ExportDocumentsResponse> createRepeated() =>
+      $pb.PbList<ExportDocumentsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ExportDocumentsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportDocumentsResponse>(create);
+  static ExportDocumentsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportDocumentsResponse>(create);
   static ExportDocumentsResponse? _defaultInstance;
 
   /// Location of the output files. This can be used to begin an import
@@ -775,7 +944,10 @@ class ExportDocumentsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get outputUriPrefix => $_getSZ(0);
   @$pb.TagNumber(1)
-  set outputUriPrefix($core.String v) { $_setString(0, v); }
+  set outputUriPrefix($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOutputUriPrefix() => $_has(0);
   @$pb.TagNumber(1)
@@ -818,46 +990,68 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   ExportDocumentsMetadata._() : super();
-  factory ExportDocumentsMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExportDocumentsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExportDocumentsMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExportDocumentsMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDocumentsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..e<OperationState>(3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE, defaultOrMaker: OperationState.STATE_UNSPECIFIED, valueOf: OperationState.valueOf, enumValues: OperationState.values)
-    ..aOM<Progress>(4, _omitFieldNames ? '' : 'progressDocuments', subBuilder: Progress.create)
-    ..aOM<Progress>(5, _omitFieldNames ? '' : 'progressBytes', subBuilder: Progress.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExportDocumentsMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<OperationState>(
+        3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE,
+        defaultOrMaker: OperationState.STATE_UNSPECIFIED,
+        valueOf: OperationState.valueOf,
+        enumValues: OperationState.values)
+    ..aOM<Progress>(4, _omitFieldNames ? '' : 'progressDocuments',
+        subBuilder: Progress.create)
+    ..aOM<Progress>(5, _omitFieldNames ? '' : 'progressBytes',
+        subBuilder: Progress.create)
     ..pPS(6, _omitFieldNames ? '' : 'collectionIds')
     ..aOS(7, _omitFieldNames ? '' : 'outputUriPrefix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExportDocumentsMetadata clone() => ExportDocumentsMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExportDocumentsMetadata copyWith(void Function(ExportDocumentsMetadata) updates) => super.copyWith((message) => updates(message as ExportDocumentsMetadata)) as ExportDocumentsMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExportDocumentsMetadata clone() =>
+      ExportDocumentsMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExportDocumentsMetadata copyWith(
+          void Function(ExportDocumentsMetadata) updates) =>
+      super.copyWith((message) => updates(message as ExportDocumentsMetadata))
+          as ExportDocumentsMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExportDocumentsMetadata create() => ExportDocumentsMetadata._();
   ExportDocumentsMetadata createEmptyInstance() => create();
-  static $pb.PbList<ExportDocumentsMetadata> createRepeated() => $pb.PbList<ExportDocumentsMetadata>();
+  static $pb.PbList<ExportDocumentsMetadata> createRepeated() =>
+      $pb.PbList<ExportDocumentsMetadata>();
   @$core.pragma('dart2js:noInline')
-  static ExportDocumentsMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExportDocumentsMetadata>(create);
+  static ExportDocumentsMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExportDocumentsMetadata>(create);
   static ExportDocumentsMetadata? _defaultInstance;
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -870,7 +1064,10 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -882,7 +1079,10 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   OperationState get operationState => $_getN(2);
   @$pb.TagNumber(3)
-  set operationState(OperationState v) { setField(3, v); }
+  set operationState(OperationState v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOperationState() => $_has(2);
   @$pb.TagNumber(3)
@@ -892,7 +1092,10 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Progress get progressDocuments => $_getN(3);
   @$pb.TagNumber(4)
-  set progressDocuments(Progress v) { setField(4, v); }
+  set progressDocuments(Progress v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasProgressDocuments() => $_has(3);
   @$pb.TagNumber(4)
@@ -904,7 +1107,10 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Progress get progressBytes => $_getN(4);
   @$pb.TagNumber(5)
-  set progressBytes(Progress v) { setField(5, v); }
+  set progressBytes(Progress v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasProgressBytes() => $_has(4);
   @$pb.TagNumber(5)
@@ -920,7 +1126,10 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get outputUriPrefix => $_getSZ(6);
   @$pb.TagNumber(7)
-  set outputUriPrefix($core.String v) { $_setString(6, v); }
+  set outputUriPrefix($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasOutputUriPrefix() => $_has(6);
   @$pb.TagNumber(7)
@@ -963,46 +1172,68 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   ImportDocumentsMetadata._() : super();
-  factory ImportDocumentsMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImportDocumentsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImportDocumentsMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImportDocumentsMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..e<OperationState>(3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE, defaultOrMaker: OperationState.STATE_UNSPECIFIED, valueOf: OperationState.valueOf, enumValues: OperationState.values)
-    ..aOM<Progress>(4, _omitFieldNames ? '' : 'progressDocuments', subBuilder: Progress.create)
-    ..aOM<Progress>(5, _omitFieldNames ? '' : 'progressBytes', subBuilder: Progress.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImportDocumentsMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<OperationState>(
+        3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE,
+        defaultOrMaker: OperationState.STATE_UNSPECIFIED,
+        valueOf: OperationState.valueOf,
+        enumValues: OperationState.values)
+    ..aOM<Progress>(4, _omitFieldNames ? '' : 'progressDocuments',
+        subBuilder: Progress.create)
+    ..aOM<Progress>(5, _omitFieldNames ? '' : 'progressBytes',
+        subBuilder: Progress.create)
     ..pPS(6, _omitFieldNames ? '' : 'collectionIds')
     ..aOS(7, _omitFieldNames ? '' : 'inputUriPrefix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ImportDocumentsMetadata clone() => ImportDocumentsMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImportDocumentsMetadata copyWith(void Function(ImportDocumentsMetadata) updates) => super.copyWith((message) => updates(message as ImportDocumentsMetadata)) as ImportDocumentsMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ImportDocumentsMetadata clone() =>
+      ImportDocumentsMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImportDocumentsMetadata copyWith(
+          void Function(ImportDocumentsMetadata) updates) =>
+      super.copyWith((message) => updates(message as ImportDocumentsMetadata))
+          as ImportDocumentsMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImportDocumentsMetadata create() => ImportDocumentsMetadata._();
   ImportDocumentsMetadata createEmptyInstance() => create();
-  static $pb.PbList<ImportDocumentsMetadata> createRepeated() => $pb.PbList<ImportDocumentsMetadata>();
+  static $pb.PbList<ImportDocumentsMetadata> createRepeated() =>
+      $pb.PbList<ImportDocumentsMetadata>();
   @$core.pragma('dart2js:noInline')
-  static ImportDocumentsMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImportDocumentsMetadata>(create);
+  static ImportDocumentsMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImportDocumentsMetadata>(create);
   static ImportDocumentsMetadata? _defaultInstance;
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1015,7 +1246,10 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1027,7 +1261,10 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   OperationState get operationState => $_getN(2);
   @$pb.TagNumber(3)
-  set operationState(OperationState v) { setField(3, v); }
+  set operationState(OperationState v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOperationState() => $_has(2);
   @$pb.TagNumber(3)
@@ -1037,7 +1274,10 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Progress get progressDocuments => $_getN(3);
   @$pb.TagNumber(4)
-  set progressDocuments(Progress v) { setField(4, v); }
+  set progressDocuments(Progress v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasProgressDocuments() => $_has(3);
   @$pb.TagNumber(4)
@@ -1049,7 +1289,10 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Progress get progressBytes => $_getN(4);
   @$pb.TagNumber(5)
-  set progressBytes(Progress v) { setField(5, v); }
+  set progressBytes(Progress v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasProgressBytes() => $_has(4);
   @$pb.TagNumber(5)
@@ -1065,13 +1308,16 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get inputUriPrefix => $_getSZ(6);
   @$pb.TagNumber(7)
-  set inputUriPrefix($core.String v) { $_setString(6, v); }
+  set inputUriPrefix($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasInputUriPrefix() => $_has(6);
   @$pb.TagNumber(7)
   void clearInputUriPrefix() => clearField(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

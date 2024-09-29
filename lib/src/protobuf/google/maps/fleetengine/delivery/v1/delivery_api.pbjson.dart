@@ -17,10 +17,33 @@ import 'dart:typed_data' as $typed_data;
 const CreateDeliveryVehicleRequest$json = {
   '1': 'CreateDeliveryVehicleRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'delivery_vehicle_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'deliveryVehicleId'},
-    {'1': 'delivery_vehicle', '3': 5, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle', '8': {}, '10': 'deliveryVehicle'},
+    {
+      '1': 'delivery_vehicle_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'deliveryVehicleId'
+    },
+    {
+      '1': 'delivery_vehicle',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle',
+      '8': {},
+      '10': 'deliveryVehicle'
+    },
   ],
 };
 
@@ -37,7 +60,15 @@ final $typed_data.Uint8List createDeliveryVehicleRequestDescriptor = $convert.ba
 const GetDeliveryVehicleRequest$json = {
   '1': 'GetDeliveryVehicleRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
   ],
 };
@@ -53,12 +84,28 @@ final $typed_data.Uint8List getDeliveryVehicleRequestDescriptor = $convert.base6
 const ListDeliveryVehiclesRequest$json = {
   '1': 'ListDeliveryVehiclesRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'page_size', '3': 4, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
     {'1': 'filter', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'filter'},
-    {'1': 'viewport', '3': 7, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '8': {}, '10': 'viewport'},
+    {
+      '1': 'viewport',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '8': {},
+      '10': 'viewport'
+    },
   ],
 };
 
@@ -76,7 +123,14 @@ final $typed_data.Uint8List listDeliveryVehiclesRequestDescriptor = $convert.bas
 const ListDeliveryVehiclesResponse$json = {
   '1': 'ListDeliveryVehiclesResponse',
   '2': [
-    {'1': 'delivery_vehicles', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle', '10': 'deliveryVehicles'},
+    {
+      '1': 'delivery_vehicles',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle',
+      '10': 'deliveryVehicles'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 3, '10': 'totalSize'},
   ],
@@ -93,9 +147,33 @@ final $typed_data.Uint8List listDeliveryVehiclesResponseDescriptor = $convert.ba
 const UpdateDeliveryVehicleRequest$json = {
   '1': 'UpdateDeliveryVehicleRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
-    {'1': 'delivery_vehicle', '3': 3, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle', '8': {}, '10': 'deliveryVehicle'},
-    {'1': 'update_mask', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
+    {
+      '1': 'delivery_vehicle',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryVehicle',
+      '8': {},
+      '10': 'deliveryVehicle'
+    },
+    {
+      '1': 'update_mask',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -111,9 +189,25 @@ final $typed_data.Uint8List updateDeliveryVehicleRequestDescriptor = $convert.ba
 const BatchCreateTasksRequest$json = {
   '1': 'BatchCreateTasksRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'requests', '3': 4, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.CreateTaskRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.CreateTaskRequest',
+      '8': {},
+      '10': 'requests'
+    },
   ],
 };
 
@@ -129,23 +223,47 @@ final $typed_data.Uint8List batchCreateTasksRequestDescriptor = $convert.base64D
 const BatchCreateTasksResponse$json = {
   '1': 'BatchCreateTasksResponse',
   '2': [
-    {'1': 'tasks', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.Task', '10': 'tasks'},
+    {
+      '1': 'tasks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.Task',
+      '10': 'tasks'
+    },
   ],
 };
 
 /// Descriptor for `BatchCreateTasksResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateTasksResponseDescriptor = $convert.base64Decode(
-    'ChhCYXRjaENyZWF0ZVRhc2tzUmVzcG9uc2USOAoFdGFza3MYASADKAsyIi5tYXBzLmZsZWV0ZW'
-    '5naW5lLmRlbGl2ZXJ5LnYxLlRhc2tSBXRhc2tz');
+final $typed_data.Uint8List batchCreateTasksResponseDescriptor =
+    $convert.base64Decode(
+        'ChhCYXRjaENyZWF0ZVRhc2tzUmVzcG9uc2USOAoFdGFza3MYASADKAsyIi5tYXBzLmZsZWV0ZW'
+        '5naW5lLmRlbGl2ZXJ5LnYxLlRhc2tSBXRhc2tz');
 
 @$core.Deprecated('Use createTaskRequestDescriptor instead')
 const CreateTaskRequest$json = {
   '1': 'CreateTaskRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'task_id', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'taskId'},
-    {'1': 'task', '3': 4, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.Task', '8': {}, '10': 'task'},
+    {
+      '1': 'task',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.Task',
+      '8': {},
+      '10': 'task'
+    },
   ],
 };
 
@@ -160,7 +278,15 @@ final $typed_data.Uint8List createTaskRequestDescriptor = $convert.base64Decode(
 const GetTaskRequest$json = {
   '1': 'GetTaskRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
   ],
 };
@@ -175,9 +301,33 @@ final $typed_data.Uint8List getTaskRequestDescriptor = $convert.base64Decode(
 const UpdateTaskRequest$json = {
   '1': 'UpdateTaskRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
-    {'1': 'task', '3': 3, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.Task', '8': {}, '10': 'task'},
-    {'1': 'update_mask', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
+    {
+      '1': 'task',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.Task',
+      '8': {},
+      '10': 'task'
+    },
+    {
+      '1': 'update_mask',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -193,7 +343,15 @@ final $typed_data.Uint8List updateTaskRequestDescriptor = $convert.base64Decode(
 const ListTasksRequest$json = {
   '1': 'ListTasksRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'parent', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'page_size', '3': 4, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
@@ -213,7 +371,14 @@ final $typed_data.Uint8List listTasksRequestDescriptor = $convert.base64Decode(
 const ListTasksResponse$json = {
   '1': 'ListTasksResponse',
   '2': [
-    {'1': 'tasks', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.delivery.v1.Task', '10': 'tasks'},
+    {
+      '1': 'tasks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.Task',
+      '10': 'tasks'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'total_size', '3': 3, '4': 1, '5': 3, '10': 'totalSize'},
   ],
@@ -229,7 +394,15 @@ final $typed_data.Uint8List listTasksResponseDescriptor = $convert.base64Decode(
 const GetTaskTrackingInfoRequest$json = {
   '1': 'GetTaskTrackingInfoRequest',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader', '8': {}, '10': 'header'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.delivery.v1.DeliveryRequestHeader',
+      '8': {},
+      '10': 'header'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'name'},
   ],
 };
@@ -240,4 +413,3 @@ final $typed_data.Uint8List getTaskTrackingInfoRequestDescriptor = $convert.base
     'V0ZW5naW5lLmRlbGl2ZXJ5LnYxLkRlbGl2ZXJ5UmVxdWVzdEhlYWRlckID4EEBUgZoZWFkZXIS'
     'RwoEbmFtZRgDIAEoCUIz4EEC+kEtCitmbGVldGVuZ2luZS5nb29nbGVhcGlzLmNvbS9UYXNrVH'
     'JhY2tpbmdJbmZvUgRuYW1l');
-

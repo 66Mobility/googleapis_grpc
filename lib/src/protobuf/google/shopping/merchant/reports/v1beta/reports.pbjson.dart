@@ -34,7 +34,14 @@ final $typed_data.Uint8List searchRequestDescriptor = $convert.base64Decode(
 const SearchResponse$json = {
   '1': 'SearchResponse',
   '2': [
-    {'1': 'results', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.ReportRow', '10': 'results'},
+    {
+      '1': 'results',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.reports.v1beta.ReportRow',
+      '10': 'results'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -49,16 +56,91 @@ final $typed_data.Uint8List searchResponseDescriptor = $convert.base64Decode(
 const ReportRow$json = {
   '1': 'ReportRow',
   '2': [
-    {'1': 'product_performance_view', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.ProductPerformanceView', '10': 'productPerformanceView'},
-    {'1': 'non_product_performance_view', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.NonProductPerformanceView', '10': 'nonProductPerformanceView'},
-    {'1': 'product_view', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.ProductView', '10': 'productView'},
-    {'1': 'price_competitiveness_product_view', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.PriceCompetitivenessProductView', '10': 'priceCompetitivenessProductView'},
-    {'1': 'price_insights_product_view', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.PriceInsightsProductView', '10': 'priceInsightsProductView'},
-    {'1': 'best_sellers_product_cluster_view', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.BestSellersProductClusterView', '10': 'bestSellersProductClusterView'},
-    {'1': 'best_sellers_brand_view', '3': 6, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.BestSellersBrandView', '10': 'bestSellersBrandView'},
-    {'1': 'competitive_visibility_competitor_view', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.CompetitiveVisibilityCompetitorView', '10': 'competitiveVisibilityCompetitorView'},
-    {'1': 'competitive_visibility_top_merchant_view', '3': 9, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.CompetitiveVisibilityTopMerchantView', '10': 'competitiveVisibilityTopMerchantView'},
-    {'1': 'competitive_visibility_benchmark_view', '3': 10, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.CompetitiveVisibilityBenchmarkView', '10': 'competitiveVisibilityBenchmarkView'},
+    {
+      '1': 'product_performance_view',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.reports.v1beta.ProductPerformanceView',
+      '10': 'productPerformanceView'
+    },
+    {
+      '1': 'non_product_performance_view',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.reports.v1beta.NonProductPerformanceView',
+      '10': 'nonProductPerformanceView'
+    },
+    {
+      '1': 'product_view',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.reports.v1beta.ProductView',
+      '10': 'productView'
+    },
+    {
+      '1': 'price_competitiveness_product_view',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.PriceCompetitivenessProductView',
+      '10': 'priceCompetitivenessProductView'
+    },
+    {
+      '1': 'price_insights_product_view',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.reports.v1beta.PriceInsightsProductView',
+      '10': 'priceInsightsProductView'
+    },
+    {
+      '1': 'best_sellers_product_cluster_view',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.BestSellersProductClusterView',
+      '10': 'bestSellersProductClusterView'
+    },
+    {
+      '1': 'best_sellers_brand_view',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.reports.v1beta.BestSellersBrandView',
+      '10': 'bestSellersBrandView'
+    },
+    {
+      '1': 'competitive_visibility_competitor_view',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.CompetitiveVisibilityCompetitorView',
+      '10': 'competitiveVisibilityCompetitorView'
+    },
+    {
+      '1': 'competitive_visibility_top_merchant_view',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.CompetitiveVisibilityTopMerchantView',
+      '10': 'competitiveVisibilityTopMerchantView'
+    },
+    {
+      '1': 'competitive_visibility_benchmark_view',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.CompetitiveVisibilityBenchmarkView',
+      '10': 'competitiveVisibilityBenchmarkView'
+    },
   ],
 };
 
@@ -95,34 +177,241 @@ final $typed_data.Uint8List reportRowDescriptor = $convert.base64Decode(
 const ProductPerformanceView$json = {
   '1': 'ProductPerformanceView',
   '2': [
-    {'1': 'marketing_method', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.MarketingMethod.MarketingMethodEnum', '9': 0, '10': 'marketingMethod', '17': true},
-    {'1': 'date', '3': 2, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'date'},
-    {'1': 'week', '3': 3, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'week'},
-    {'1': 'customer_country_code', '3': 4, '4': 1, '5': 9, '9': 1, '10': 'customerCountryCode', '17': true},
-    {'1': 'offer_id', '3': 5, '4': 1, '5': 9, '9': 2, '10': 'offerId', '17': true},
+    {
+      '1': 'marketing_method',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.MarketingMethod.MarketingMethodEnum',
+      '9': 0,
+      '10': 'marketingMethod',
+      '17': true
+    },
+    {
+      '1': 'date',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'date'
+    },
+    {
+      '1': 'week',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'week'
+    },
+    {
+      '1': 'customer_country_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'customerCountryCode',
+      '17': true
+    },
+    {
+      '1': 'offer_id',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'offerId',
+      '17': true
+    },
     {'1': 'title', '3': 6, '4': 1, '5': 9, '9': 3, '10': 'title', '17': true},
     {'1': 'brand', '3': 7, '4': 1, '5': 9, '9': 4, '10': 'brand', '17': true},
-    {'1': 'category_l1', '3': 8, '4': 1, '5': 9, '9': 5, '10': 'categoryL1', '17': true},
-    {'1': 'category_l2', '3': 9, '4': 1, '5': 9, '9': 6, '10': 'categoryL2', '17': true},
-    {'1': 'category_l3', '3': 10, '4': 1, '5': 9, '9': 7, '10': 'categoryL3', '17': true},
-    {'1': 'category_l4', '3': 11, '4': 1, '5': 9, '9': 8, '10': 'categoryL4', '17': true},
-    {'1': 'category_l5', '3': 12, '4': 1, '5': 9, '9': 9, '10': 'categoryL5', '17': true},
-    {'1': 'product_type_l1', '3': 13, '4': 1, '5': 9, '9': 10, '10': 'productTypeL1', '17': true},
-    {'1': 'product_type_l2', '3': 14, '4': 1, '5': 9, '9': 11, '10': 'productTypeL2', '17': true},
-    {'1': 'product_type_l3', '3': 15, '4': 1, '5': 9, '9': 12, '10': 'productTypeL3', '17': true},
-    {'1': 'product_type_l4', '3': 16, '4': 1, '5': 9, '9': 13, '10': 'productTypeL4', '17': true},
-    {'1': 'product_type_l5', '3': 17, '4': 1, '5': 9, '9': 14, '10': 'productTypeL5', '17': true},
-    {'1': 'custom_label0', '3': 18, '4': 1, '5': 9, '9': 15, '10': 'customLabel0', '17': true},
-    {'1': 'custom_label1', '3': 19, '4': 1, '5': 9, '9': 16, '10': 'customLabel1', '17': true},
-    {'1': 'custom_label2', '3': 20, '4': 1, '5': 9, '9': 17, '10': 'customLabel2', '17': true},
-    {'1': 'custom_label3', '3': 21, '4': 1, '5': 9, '9': 18, '10': 'customLabel3', '17': true},
-    {'1': 'custom_label4', '3': 22, '4': 1, '5': 9, '9': 19, '10': 'customLabel4', '17': true},
-    {'1': 'clicks', '3': 23, '4': 1, '5': 3, '9': 20, '10': 'clicks', '17': true},
-    {'1': 'impressions', '3': 24, '4': 1, '5': 3, '9': 21, '10': 'impressions', '17': true},
-    {'1': 'click_through_rate', '3': 25, '4': 1, '5': 1, '9': 22, '10': 'clickThroughRate', '17': true},
-    {'1': 'conversions', '3': 26, '4': 1, '5': 1, '9': 23, '10': 'conversions', '17': true},
-    {'1': 'conversion_value', '3': 27, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'conversionValue'},
-    {'1': 'conversion_rate', '3': 28, '4': 1, '5': 1, '9': 24, '10': 'conversionRate', '17': true},
+    {
+      '1': 'category_l1',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 5,
+      '10': 'categoryL1',
+      '17': true
+    },
+    {
+      '1': 'category_l2',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 6,
+      '10': 'categoryL2',
+      '17': true
+    },
+    {
+      '1': 'category_l3',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 7,
+      '10': 'categoryL3',
+      '17': true
+    },
+    {
+      '1': 'category_l4',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 8,
+      '10': 'categoryL4',
+      '17': true
+    },
+    {
+      '1': 'category_l5',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '9': 9,
+      '10': 'categoryL5',
+      '17': true
+    },
+    {
+      '1': 'product_type_l1',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '9': 10,
+      '10': 'productTypeL1',
+      '17': true
+    },
+    {
+      '1': 'product_type_l2',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '9': 11,
+      '10': 'productTypeL2',
+      '17': true
+    },
+    {
+      '1': 'product_type_l3',
+      '3': 15,
+      '4': 1,
+      '5': 9,
+      '9': 12,
+      '10': 'productTypeL3',
+      '17': true
+    },
+    {
+      '1': 'product_type_l4',
+      '3': 16,
+      '4': 1,
+      '5': 9,
+      '9': 13,
+      '10': 'productTypeL4',
+      '17': true
+    },
+    {
+      '1': 'product_type_l5',
+      '3': 17,
+      '4': 1,
+      '5': 9,
+      '9': 14,
+      '10': 'productTypeL5',
+      '17': true
+    },
+    {
+      '1': 'custom_label0',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '9': 15,
+      '10': 'customLabel0',
+      '17': true
+    },
+    {
+      '1': 'custom_label1',
+      '3': 19,
+      '4': 1,
+      '5': 9,
+      '9': 16,
+      '10': 'customLabel1',
+      '17': true
+    },
+    {
+      '1': 'custom_label2',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '9': 17,
+      '10': 'customLabel2',
+      '17': true
+    },
+    {
+      '1': 'custom_label3',
+      '3': 21,
+      '4': 1,
+      '5': 9,
+      '9': 18,
+      '10': 'customLabel3',
+      '17': true
+    },
+    {
+      '1': 'custom_label4',
+      '3': 22,
+      '4': 1,
+      '5': 9,
+      '9': 19,
+      '10': 'customLabel4',
+      '17': true
+    },
+    {
+      '1': 'clicks',
+      '3': 23,
+      '4': 1,
+      '5': 3,
+      '9': 20,
+      '10': 'clicks',
+      '17': true
+    },
+    {
+      '1': 'impressions',
+      '3': 24,
+      '4': 1,
+      '5': 3,
+      '9': 21,
+      '10': 'impressions',
+      '17': true
+    },
+    {
+      '1': 'click_through_rate',
+      '3': 25,
+      '4': 1,
+      '5': 1,
+      '9': 22,
+      '10': 'clickThroughRate',
+      '17': true
+    },
+    {
+      '1': 'conversions',
+      '3': 26,
+      '4': 1,
+      '5': 1,
+      '9': 23,
+      '10': 'conversions',
+      '17': true
+    },
+    {
+      '1': 'conversion_value',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'conversionValue'
+    },
+    {
+      '1': 'conversion_rate',
+      '3': 28,
+      '4': 1,
+      '5': 1,
+      '9': 24,
+      '10': 'conversionRate',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_marketing_method'},
@@ -192,38 +481,248 @@ const ProductView$json = {
   '1': 'ProductView',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'id', '17': true},
-    {'1': 'channel', '3': 28, '4': 1, '5': 14, '6': '.google.shopping.type.Channel.ChannelEnum', '9': 1, '10': 'channel', '17': true},
-    {'1': 'language_code', '3': 2, '4': 1, '5': 9, '9': 2, '10': 'languageCode', '17': true},
-    {'1': 'feed_label', '3': 3, '4': 1, '5': 9, '9': 3, '10': 'feedLabel', '17': true},
-    {'1': 'offer_id', '3': 4, '4': 1, '5': 9, '9': 4, '10': 'offerId', '17': true},
+    {
+      '1': 'channel',
+      '3': 28,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.Channel.ChannelEnum',
+      '9': 1,
+      '10': 'channel',
+      '17': true
+    },
+    {
+      '1': 'language_code',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'languageCode',
+      '17': true
+    },
+    {
+      '1': 'feed_label',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 3,
+      '10': 'feedLabel',
+      '17': true
+    },
+    {
+      '1': 'offer_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'offerId',
+      '17': true
+    },
     {'1': 'title', '3': 5, '4': 1, '5': 9, '9': 5, '10': 'title', '17': true},
     {'1': 'brand', '3': 6, '4': 1, '5': 9, '9': 6, '10': 'brand', '17': true},
-    {'1': 'category_l1', '3': 7, '4': 1, '5': 9, '9': 7, '10': 'categoryL1', '17': true},
-    {'1': 'category_l2', '3': 8, '4': 1, '5': 9, '9': 8, '10': 'categoryL2', '17': true},
-    {'1': 'category_l3', '3': 9, '4': 1, '5': 9, '9': 9, '10': 'categoryL3', '17': true},
-    {'1': 'category_l4', '3': 10, '4': 1, '5': 9, '9': 10, '10': 'categoryL4', '17': true},
-    {'1': 'category_l5', '3': 11, '4': 1, '5': 9, '9': 11, '10': 'categoryL5', '17': true},
-    {'1': 'product_type_l1', '3': 12, '4': 1, '5': 9, '9': 12, '10': 'productTypeL1', '17': true},
-    {'1': 'product_type_l2', '3': 13, '4': 1, '5': 9, '9': 13, '10': 'productTypeL2', '17': true},
-    {'1': 'product_type_l3', '3': 14, '4': 1, '5': 9, '9': 14, '10': 'productTypeL3', '17': true},
-    {'1': 'product_type_l4', '3': 15, '4': 1, '5': 9, '9': 15, '10': 'productTypeL4', '17': true},
-    {'1': 'product_type_l5', '3': 16, '4': 1, '5': 9, '9': 16, '10': 'productTypeL5', '17': true},
-    {'1': 'price', '3': 17, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'price'},
-    {'1': 'condition', '3': 18, '4': 1, '5': 9, '9': 17, '10': 'condition', '17': true},
-    {'1': 'availability', '3': 19, '4': 1, '5': 9, '9': 18, '10': 'availability', '17': true},
-    {'1': 'shipping_label', '3': 20, '4': 1, '5': 9, '9': 19, '10': 'shippingLabel', '17': true},
+    {
+      '1': 'category_l1',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '9': 7,
+      '10': 'categoryL1',
+      '17': true
+    },
+    {
+      '1': 'category_l2',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 8,
+      '10': 'categoryL2',
+      '17': true
+    },
+    {
+      '1': 'category_l3',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 9,
+      '10': 'categoryL3',
+      '17': true
+    },
+    {
+      '1': 'category_l4',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 10,
+      '10': 'categoryL4',
+      '17': true
+    },
+    {
+      '1': 'category_l5',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 11,
+      '10': 'categoryL5',
+      '17': true
+    },
+    {
+      '1': 'product_type_l1',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '9': 12,
+      '10': 'productTypeL1',
+      '17': true
+    },
+    {
+      '1': 'product_type_l2',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '9': 13,
+      '10': 'productTypeL2',
+      '17': true
+    },
+    {
+      '1': 'product_type_l3',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '9': 14,
+      '10': 'productTypeL3',
+      '17': true
+    },
+    {
+      '1': 'product_type_l4',
+      '3': 15,
+      '4': 1,
+      '5': 9,
+      '9': 15,
+      '10': 'productTypeL4',
+      '17': true
+    },
+    {
+      '1': 'product_type_l5',
+      '3': 16,
+      '4': 1,
+      '5': 9,
+      '9': 16,
+      '10': 'productTypeL5',
+      '17': true
+    },
+    {
+      '1': 'price',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'price'
+    },
+    {
+      '1': 'condition',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '9': 17,
+      '10': 'condition',
+      '17': true
+    },
+    {
+      '1': 'availability',
+      '3': 19,
+      '4': 1,
+      '5': 9,
+      '9': 18,
+      '10': 'availability',
+      '17': true
+    },
+    {
+      '1': 'shipping_label',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '9': 19,
+      '10': 'shippingLabel',
+      '17': true
+    },
     {'1': 'gtin', '3': 21, '4': 3, '5': 9, '10': 'gtin'},
-    {'1': 'item_group_id', '3': 22, '4': 1, '5': 9, '9': 20, '10': 'itemGroupId', '17': true},
-    {'1': 'thumbnail_link', '3': 23, '4': 1, '5': 9, '9': 21, '10': 'thumbnailLink', '17': true},
-    {'1': 'creation_time', '3': 24, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'creationTime'},
-    {'1': 'expiration_date', '3': 25, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'expirationDate'},
-    {'1': 'aggregated_reporting_context_status', '3': 26, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.ProductView.AggregatedReportingContextStatus', '9': 22, '10': 'aggregatedReportingContextStatus', '17': true},
-    {'1': 'item_issues', '3': 27, '4': 3, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue', '10': 'itemIssues'},
-    {'1': 'click_potential', '3': 29, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.ProductView.ClickPotential', '10': 'clickPotential'},
-    {'1': 'click_potential_rank', '3': 30, '4': 1, '5': 3, '9': 23, '10': 'clickPotentialRank', '17': true},
+    {
+      '1': 'item_group_id',
+      '3': 22,
+      '4': 1,
+      '5': 9,
+      '9': 20,
+      '10': 'itemGroupId',
+      '17': true
+    },
+    {
+      '1': 'thumbnail_link',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '9': 21,
+      '10': 'thumbnailLink',
+      '17': true
+    },
+    {
+      '1': 'creation_time',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'creationTime'
+    },
+    {
+      '1': 'expiration_date',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'expirationDate'
+    },
+    {
+      '1': 'aggregated_reporting_context_status',
+      '3': 26,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ProductView.AggregatedReportingContextStatus',
+      '9': 22,
+      '10': 'aggregatedReportingContextStatus',
+      '17': true
+    },
+    {
+      '1': 'item_issues',
+      '3': 27,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue',
+      '10': 'itemIssues'
+    },
+    {
+      '1': 'click_potential',
+      '3': 29,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ProductView.ClickPotential',
+      '10': 'clickPotential'
+    },
+    {
+      '1': 'click_potential_rank',
+      '3': 30,
+      '4': 1,
+      '5': 3,
+      '9': 23,
+      '10': 'clickPotentialRank',
+      '17': true
+    },
   ],
   '3': [ProductView_ItemIssue$json],
-  '4': [ProductView_AggregatedReportingContextStatus$json, ProductView_ClickPotential$json],
+  '4': [
+    ProductView_AggregatedReportingContextStatus$json,
+    ProductView_ClickPotential$json
+  ],
   '8': [
     {'1': '_id'},
     {'1': '_channel'},
@@ -256,11 +755,40 @@ const ProductView$json = {
 const ProductView_ItemIssue$json = {
   '1': 'ItemIssue',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueType', '10': 'type'},
-    {'1': 'severity', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueSeverity', '10': 'severity'},
-    {'1': 'resolution', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueResolution', '9': 0, '10': 'resolution', '17': true},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueType',
+      '10': 'type'
+    },
+    {
+      '1': 'severity',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueSeverity',
+      '10': 'severity'
+    },
+    {
+      '1': 'resolution',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueResolution',
+      '9': 0,
+      '10': 'resolution',
+      '17': true
+    },
   ],
-  '3': [ProductView_ItemIssue_ItemIssueType$json, ProductView_ItemIssue_ItemIssueSeverity$json],
+  '3': [
+    ProductView_ItemIssue_ItemIssueType$json,
+    ProductView_ItemIssue_ItemIssueSeverity$json
+  ],
   '4': [ProductView_ItemIssue_ItemIssueResolution$json],
   '8': [
     {'1': '_resolution'},
@@ -272,7 +800,15 @@ const ProductView_ItemIssue_ItemIssueType$json = {
   '1': 'ItemIssueType',
   '2': [
     {'1': 'code', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'code', '17': true},
-    {'1': 'canonical_attribute', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'canonicalAttribute', '17': true},
+    {
+      '1': 'canonical_attribute',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'canonicalAttribute',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_code'},
@@ -284,10 +820,30 @@ const ProductView_ItemIssue_ItemIssueType$json = {
 const ProductView_ItemIssue_ItemIssueSeverity$json = {
   '1': 'ItemIssueSeverity',
   '2': [
-    {'1': 'severity_per_reporting_context', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueSeverity.IssueSeverityPerReportingContext', '10': 'severityPerReportingContext'},
-    {'1': 'aggregated_severity', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueSeverity.AggregatedIssueSeverity', '9': 0, '10': 'aggregatedSeverity', '17': true},
+    {
+      '1': 'severity_per_reporting_context',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueSeverity.IssueSeverityPerReportingContext',
+      '10': 'severityPerReportingContext'
+    },
+    {
+      '1': 'aggregated_severity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ProductView.ItemIssue.ItemIssueSeverity.AggregatedIssueSeverity',
+      '9': 0,
+      '10': 'aggregatedSeverity',
+      '17': true
+    },
   ],
-  '3': [ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext$json],
+  '3': [
+    ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext$json
+  ],
   '4': [ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity$json],
   '8': [
     {'1': '_aggregated_severity'},
@@ -295,12 +851,34 @@ const ProductView_ItemIssue_ItemIssueSeverity$json = {
 };
 
 @$core.Deprecated('Use productViewDescriptor instead')
-const ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext$json = {
+const ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext$json =
+    {
   '1': 'IssueSeverityPerReportingContext',
   '2': [
-    {'1': 'reporting_context', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.type.ReportingContext.ReportingContextEnum', '9': 0, '10': 'reportingContext', '17': true},
-    {'1': 'disapproved_countries', '3': 2, '4': 3, '5': 9, '10': 'disapprovedCountries'},
-    {'1': 'demoted_countries', '3': 3, '4': 3, '5': 9, '10': 'demotedCountries'},
+    {
+      '1': 'reporting_context',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.ReportingContext.ReportingContextEnum',
+      '9': 0,
+      '10': 'reportingContext',
+      '17': true
+    },
+    {
+      '1': 'disapproved_countries',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'disapprovedCountries'
+    },
+    {
+      '1': 'demoted_countries',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'demotedCountries'
+    },
   ],
   '8': [
     {'1': '_reporting_context'},
@@ -423,23 +1001,133 @@ final $typed_data.Uint8List productViewDescriptor = $convert.base64Decode(
 const PriceCompetitivenessProductView$json = {
   '1': 'PriceCompetitivenessProductView',
   '2': [
-    {'1': 'report_country_code', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'reportCountryCode', '17': true},
+    {
+      '1': 'report_country_code',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'reportCountryCode',
+      '17': true
+    },
     {'1': 'id', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'id', '17': true},
-    {'1': 'offer_id', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'offerId', '17': true},
+    {
+      '1': 'offer_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'offerId',
+      '17': true
+    },
     {'1': 'title', '3': 4, '4': 1, '5': 9, '9': 3, '10': 'title', '17': true},
     {'1': 'brand', '3': 5, '4': 1, '5': 9, '9': 4, '10': 'brand', '17': true},
-    {'1': 'category_l1', '3': 6, '4': 1, '5': 9, '9': 5, '10': 'categoryL1', '17': true},
-    {'1': 'category_l2', '3': 7, '4': 1, '5': 9, '9': 6, '10': 'categoryL2', '17': true},
-    {'1': 'category_l3', '3': 8, '4': 1, '5': 9, '9': 7, '10': 'categoryL3', '17': true},
-    {'1': 'category_l4', '3': 9, '4': 1, '5': 9, '9': 8, '10': 'categoryL4', '17': true},
-    {'1': 'category_l5', '3': 10, '4': 1, '5': 9, '9': 9, '10': 'categoryL5', '17': true},
-    {'1': 'product_type_l1', '3': 11, '4': 1, '5': 9, '9': 10, '10': 'productTypeL1', '17': true},
-    {'1': 'product_type_l2', '3': 12, '4': 1, '5': 9, '9': 11, '10': 'productTypeL2', '17': true},
-    {'1': 'product_type_l3', '3': 13, '4': 1, '5': 9, '9': 12, '10': 'productTypeL3', '17': true},
-    {'1': 'product_type_l4', '3': 14, '4': 1, '5': 9, '9': 13, '10': 'productTypeL4', '17': true},
-    {'1': 'product_type_l5', '3': 15, '4': 1, '5': 9, '9': 14, '10': 'productTypeL5', '17': true},
-    {'1': 'price', '3': 16, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'price'},
-    {'1': 'benchmark_price', '3': 17, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'benchmarkPrice'},
+    {
+      '1': 'category_l1',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '9': 5,
+      '10': 'categoryL1',
+      '17': true
+    },
+    {
+      '1': 'category_l2',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '9': 6,
+      '10': 'categoryL2',
+      '17': true
+    },
+    {
+      '1': 'category_l3',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 7,
+      '10': 'categoryL3',
+      '17': true
+    },
+    {
+      '1': 'category_l4',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 8,
+      '10': 'categoryL4',
+      '17': true
+    },
+    {
+      '1': 'category_l5',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 9,
+      '10': 'categoryL5',
+      '17': true
+    },
+    {
+      '1': 'product_type_l1',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 10,
+      '10': 'productTypeL1',
+      '17': true
+    },
+    {
+      '1': 'product_type_l2',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '9': 11,
+      '10': 'productTypeL2',
+      '17': true
+    },
+    {
+      '1': 'product_type_l3',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '9': 12,
+      '10': 'productTypeL3',
+      '17': true
+    },
+    {
+      '1': 'product_type_l4',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '9': 13,
+      '10': 'productTypeL4',
+      '17': true
+    },
+    {
+      '1': 'product_type_l5',
+      '3': 15,
+      '4': 1,
+      '5': 9,
+      '9': 14,
+      '10': 'productTypeL5',
+      '17': true
+    },
+    {
+      '1': 'price',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'price'
+    },
+    {
+      '1': 'benchmark_price',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'benchmarkPrice'
+    },
   ],
   '8': [
     {'1': '_report_country_code'},
@@ -486,25 +1174,159 @@ const PriceInsightsProductView$json = {
   '1': 'PriceInsightsProductView',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'id', '17': true},
-    {'1': 'offer_id', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'offerId', '17': true},
+    {
+      '1': 'offer_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'offerId',
+      '17': true
+    },
     {'1': 'title', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'title', '17': true},
     {'1': 'brand', '3': 4, '4': 1, '5': 9, '9': 3, '10': 'brand', '17': true},
-    {'1': 'category_l1', '3': 5, '4': 1, '5': 9, '9': 4, '10': 'categoryL1', '17': true},
-    {'1': 'category_l2', '3': 6, '4': 1, '5': 9, '9': 5, '10': 'categoryL2', '17': true},
-    {'1': 'category_l3', '3': 7, '4': 1, '5': 9, '9': 6, '10': 'categoryL3', '17': true},
-    {'1': 'category_l4', '3': 8, '4': 1, '5': 9, '9': 7, '10': 'categoryL4', '17': true},
-    {'1': 'category_l5', '3': 9, '4': 1, '5': 9, '9': 8, '10': 'categoryL5', '17': true},
-    {'1': 'product_type_l1', '3': 10, '4': 1, '5': 9, '9': 9, '10': 'productTypeL1', '17': true},
-    {'1': 'product_type_l2', '3': 11, '4': 1, '5': 9, '9': 10, '10': 'productTypeL2', '17': true},
-    {'1': 'product_type_l3', '3': 12, '4': 1, '5': 9, '9': 11, '10': 'productTypeL3', '17': true},
-    {'1': 'product_type_l4', '3': 13, '4': 1, '5': 9, '9': 12, '10': 'productTypeL4', '17': true},
-    {'1': 'product_type_l5', '3': 14, '4': 1, '5': 9, '9': 13, '10': 'productTypeL5', '17': true},
-    {'1': 'price', '3': 15, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'price'},
-    {'1': 'suggested_price', '3': 16, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'suggestedPrice'},
-    {'1': 'predicted_impressions_change_fraction', '3': 17, '4': 1, '5': 1, '9': 14, '10': 'predictedImpressionsChangeFraction', '17': true},
-    {'1': 'predicted_clicks_change_fraction', '3': 18, '4': 1, '5': 1, '9': 15, '10': 'predictedClicksChangeFraction', '17': true},
-    {'1': 'predicted_conversions_change_fraction', '3': 19, '4': 1, '5': 1, '9': 16, '10': 'predictedConversionsChangeFraction', '17': true},
-    {'1': 'effectiveness', '3': 22, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.PriceInsightsProductView.Effectiveness', '10': 'effectiveness'},
+    {
+      '1': 'category_l1',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'categoryL1',
+      '17': true
+    },
+    {
+      '1': 'category_l2',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '9': 5,
+      '10': 'categoryL2',
+      '17': true
+    },
+    {
+      '1': 'category_l3',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '9': 6,
+      '10': 'categoryL3',
+      '17': true
+    },
+    {
+      '1': 'category_l4',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 7,
+      '10': 'categoryL4',
+      '17': true
+    },
+    {
+      '1': 'category_l5',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 8,
+      '10': 'categoryL5',
+      '17': true
+    },
+    {
+      '1': 'product_type_l1',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 9,
+      '10': 'productTypeL1',
+      '17': true
+    },
+    {
+      '1': 'product_type_l2',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 10,
+      '10': 'productTypeL2',
+      '17': true
+    },
+    {
+      '1': 'product_type_l3',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '9': 11,
+      '10': 'productTypeL3',
+      '17': true
+    },
+    {
+      '1': 'product_type_l4',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '9': 12,
+      '10': 'productTypeL4',
+      '17': true
+    },
+    {
+      '1': 'product_type_l5',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '9': 13,
+      '10': 'productTypeL5',
+      '17': true
+    },
+    {
+      '1': 'price',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'price'
+    },
+    {
+      '1': 'suggested_price',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'suggestedPrice'
+    },
+    {
+      '1': 'predicted_impressions_change_fraction',
+      '3': 17,
+      '4': 1,
+      '5': 1,
+      '9': 14,
+      '10': 'predictedImpressionsChangeFraction',
+      '17': true
+    },
+    {
+      '1': 'predicted_clicks_change_fraction',
+      '3': 18,
+      '4': 1,
+      '5': 1,
+      '9': 15,
+      '10': 'predictedClicksChangeFraction',
+      '17': true
+    },
+    {
+      '1': 'predicted_conversions_change_fraction',
+      '3': 19,
+      '4': 1,
+      '5': 1,
+      '9': 16,
+      '10': 'predictedConversionsChangeFraction',
+      '17': true
+    },
+    {
+      '1': 'effectiveness',
+      '3': 22,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.PriceInsightsProductView.Effectiveness',
+      '10': 'effectiveness'
+    },
   ],
   '4': [PriceInsightsProductView_Effectiveness$json],
   '8': [
@@ -573,25 +1395,156 @@ final $typed_data.Uint8List priceInsightsProductViewDescriptor = $convert.base64
 const BestSellersProductClusterView$json = {
   '1': 'BestSellersProductClusterView',
   '2': [
-    {'1': 'report_date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'reportDate'},
-    {'1': 'report_granularity', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.ReportGranularity.ReportGranularityEnum', '9': 0, '10': 'reportGranularity', '17': true},
-    {'1': 'report_country_code', '3': 3, '4': 1, '5': 9, '9': 1, '10': 'reportCountryCode', '17': true},
-    {'1': 'report_category_id', '3': 4, '4': 1, '5': 3, '9': 2, '10': 'reportCategoryId', '17': true},
+    {
+      '1': 'report_date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'reportDate'
+    },
+    {
+      '1': 'report_granularity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ReportGranularity.ReportGranularityEnum',
+      '9': 0,
+      '10': 'reportGranularity',
+      '17': true
+    },
+    {
+      '1': 'report_country_code',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'reportCountryCode',
+      '17': true
+    },
+    {
+      '1': 'report_category_id',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 2,
+      '10': 'reportCategoryId',
+      '17': true
+    },
     {'1': 'title', '3': 6, '4': 1, '5': 9, '9': 3, '10': 'title', '17': true},
     {'1': 'brand', '3': 7, '4': 1, '5': 9, '9': 4, '10': 'brand', '17': true},
-    {'1': 'category_l1', '3': 8, '4': 1, '5': 9, '9': 5, '10': 'categoryL1', '17': true},
-    {'1': 'category_l2', '3': 9, '4': 1, '5': 9, '9': 6, '10': 'categoryL2', '17': true},
-    {'1': 'category_l3', '3': 10, '4': 1, '5': 9, '9': 7, '10': 'categoryL3', '17': true},
-    {'1': 'category_l4', '3': 11, '4': 1, '5': 9, '9': 8, '10': 'categoryL4', '17': true},
-    {'1': 'category_l5', '3': 12, '4': 1, '5': 9, '9': 9, '10': 'categoryL5', '17': true},
+    {
+      '1': 'category_l1',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 5,
+      '10': 'categoryL1',
+      '17': true
+    },
+    {
+      '1': 'category_l2',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 6,
+      '10': 'categoryL2',
+      '17': true
+    },
+    {
+      '1': 'category_l3',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 7,
+      '10': 'categoryL3',
+      '17': true
+    },
+    {
+      '1': 'category_l4',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 8,
+      '10': 'categoryL4',
+      '17': true
+    },
+    {
+      '1': 'category_l5',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '9': 9,
+      '10': 'categoryL5',
+      '17': true
+    },
     {'1': 'variant_gtins', '3': 13, '4': 3, '5': 9, '10': 'variantGtins'},
-    {'1': 'inventory_status', '3': 14, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.BestSellersProductClusterView.InventoryStatus', '9': 10, '10': 'inventoryStatus', '17': true},
-    {'1': 'brand_inventory_status', '3': 15, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.BestSellersProductClusterView.InventoryStatus', '9': 11, '10': 'brandInventoryStatus', '17': true},
+    {
+      '1': 'inventory_status',
+      '3': 14,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.BestSellersProductClusterView.InventoryStatus',
+      '9': 10,
+      '10': 'inventoryStatus',
+      '17': true
+    },
+    {
+      '1': 'brand_inventory_status',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.BestSellersProductClusterView.InventoryStatus',
+      '9': 11,
+      '10': 'brandInventoryStatus',
+      '17': true
+    },
     {'1': 'rank', '3': 16, '4': 1, '5': 3, '9': 12, '10': 'rank', '17': true},
-    {'1': 'previous_rank', '3': 17, '4': 1, '5': 3, '9': 13, '10': 'previousRank', '17': true},
-    {'1': 'relative_demand', '3': 18, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum', '9': 14, '10': 'relativeDemand', '17': true},
-    {'1': 'previous_relative_demand', '3': 19, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum', '9': 15, '10': 'previousRelativeDemand', '17': true},
-    {'1': 'relative_demand_change', '3': 20, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.RelativeDemandChangeType.RelativeDemandChangeTypeEnum', '9': 16, '10': 'relativeDemandChange', '17': true},
+    {
+      '1': 'previous_rank',
+      '3': 17,
+      '4': 1,
+      '5': 3,
+      '9': 13,
+      '10': 'previousRank',
+      '17': true
+    },
+    {
+      '1': 'relative_demand',
+      '3': 18,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum',
+      '9': 14,
+      '10': 'relativeDemand',
+      '17': true
+    },
+    {
+      '1': 'previous_relative_demand',
+      '3': 19,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum',
+      '9': 15,
+      '10': 'previousRelativeDemand',
+      '17': true
+    },
+    {
+      '1': 'relative_demand_change',
+      '3': 20,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.RelativeDemandChangeType.RelativeDemandChangeTypeEnum',
+      '9': 16,
+      '10': 'relativeDemandChange',
+      '17': true
+    },
   ],
   '4': [BestSellersProductClusterView_InventoryStatus$json],
   '8': [
@@ -666,16 +1619,87 @@ final $typed_data.Uint8List bestSellersProductClusterViewDescriptor = $convert.b
 const BestSellersBrandView$json = {
   '1': 'BestSellersBrandView',
   '2': [
-    {'1': 'report_date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'reportDate'},
-    {'1': 'report_granularity', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.ReportGranularity.ReportGranularityEnum', '9': 0, '10': 'reportGranularity', '17': true},
-    {'1': 'report_country_code', '3': 3, '4': 1, '5': 9, '9': 1, '10': 'reportCountryCode', '17': true},
-    {'1': 'report_category_id', '3': 4, '4': 1, '5': 3, '9': 2, '10': 'reportCategoryId', '17': true},
+    {
+      '1': 'report_date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'reportDate'
+    },
+    {
+      '1': 'report_granularity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.ReportGranularity.ReportGranularityEnum',
+      '9': 0,
+      '10': 'reportGranularity',
+      '17': true
+    },
+    {
+      '1': 'report_country_code',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'reportCountryCode',
+      '17': true
+    },
+    {
+      '1': 'report_category_id',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 2,
+      '10': 'reportCategoryId',
+      '17': true
+    },
     {'1': 'brand', '3': 6, '4': 1, '5': 9, '9': 3, '10': 'brand', '17': true},
     {'1': 'rank', '3': 7, '4': 1, '5': 3, '9': 4, '10': 'rank', '17': true},
-    {'1': 'previous_rank', '3': 8, '4': 1, '5': 3, '9': 5, '10': 'previousRank', '17': true},
-    {'1': 'relative_demand', '3': 9, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum', '9': 6, '10': 'relativeDemand', '17': true},
-    {'1': 'previous_relative_demand', '3': 10, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum', '9': 7, '10': 'previousRelativeDemand', '17': true},
-    {'1': 'relative_demand_change', '3': 11, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.RelativeDemandChangeType.RelativeDemandChangeTypeEnum', '9': 8, '10': 'relativeDemandChange', '17': true},
+    {
+      '1': 'previous_rank',
+      '3': 8,
+      '4': 1,
+      '5': 3,
+      '9': 5,
+      '10': 'previousRank',
+      '17': true
+    },
+    {
+      '1': 'relative_demand',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum',
+      '9': 6,
+      '10': 'relativeDemand',
+      '17': true
+    },
+    {
+      '1': 'previous_relative_demand',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.RelativeDemand.RelativeDemandEnum',
+      '9': 7,
+      '10': 'previousRelativeDemand',
+      '17': true
+    },
+    {
+      '1': 'relative_demand_change',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.RelativeDemandChangeType.RelativeDemandChangeTypeEnum',
+      '9': 8,
+      '10': 'relativeDemandChange',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_report_granularity'},
@@ -716,11 +1740,41 @@ final $typed_data.Uint8List bestSellersBrandViewDescriptor = $convert.base64Deco
 const NonProductPerformanceView$json = {
   '1': 'NonProductPerformanceView',
   '2': [
-    {'1': 'date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'date'},
-    {'1': 'week', '3': 2, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'week'},
+    {
+      '1': 'date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'date'
+    },
+    {
+      '1': 'week',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'week'
+    },
     {'1': 'clicks', '3': 3, '4': 1, '5': 3, '9': 0, '10': 'clicks', '17': true},
-    {'1': 'impressions', '3': 4, '4': 1, '5': 3, '9': 1, '10': 'impressions', '17': true},
-    {'1': 'click_through_rate', '3': 5, '4': 1, '5': 1, '9': 2, '10': 'clickThroughRate', '17': true},
+    {
+      '1': 'impressions',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'impressions',
+      '17': true
+    },
+    {
+      '1': 'click_through_rate',
+      '3': 5,
+      '4': 1,
+      '5': 1,
+      '9': 2,
+      '10': 'clickThroughRate',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_clicks'},
@@ -741,17 +1795,90 @@ final $typed_data.Uint8List nonProductPerformanceViewDescriptor = $convert.base6
 const CompetitiveVisibilityCompetitorView$json = {
   '1': 'CompetitiveVisibilityCompetitorView',
   '2': [
-    {'1': 'date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'date'},
+    {
+      '1': 'date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'date'
+    },
     {'1': 'domain', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'domain', '17': true},
-    {'1': 'is_your_domain', '3': 3, '4': 1, '5': 8, '9': 1, '10': 'isYourDomain', '17': true},
-    {'1': 'report_country_code', '3': 4, '4': 1, '5': 9, '9': 2, '10': 'reportCountryCode', '17': true},
-    {'1': 'report_category_id', '3': 5, '4': 1, '5': 3, '9': 3, '10': 'reportCategoryId', '17': true},
-    {'1': 'traffic_source', '3': 6, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.TrafficSource.TrafficSourceEnum', '9': 4, '10': 'trafficSource', '17': true},
+    {
+      '1': 'is_your_domain',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'isYourDomain',
+      '17': true
+    },
+    {
+      '1': 'report_country_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'reportCountryCode',
+      '17': true
+    },
+    {
+      '1': 'report_category_id',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 3,
+      '10': 'reportCategoryId',
+      '17': true
+    },
+    {
+      '1': 'traffic_source',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.TrafficSource.TrafficSourceEnum',
+      '9': 4,
+      '10': 'trafficSource',
+      '17': true
+    },
     {'1': 'rank', '3': 7, '4': 1, '5': 3, '9': 5, '10': 'rank', '17': true},
-    {'1': 'ads_organic_ratio', '3': 8, '4': 1, '5': 1, '9': 6, '10': 'adsOrganicRatio', '17': true},
-    {'1': 'page_overlap_rate', '3': 9, '4': 1, '5': 1, '9': 7, '10': 'pageOverlapRate', '17': true},
-    {'1': 'higher_position_rate', '3': 10, '4': 1, '5': 1, '9': 8, '10': 'higherPositionRate', '17': true},
-    {'1': 'relative_visibility', '3': 11, '4': 1, '5': 1, '9': 9, '10': 'relativeVisibility', '17': true},
+    {
+      '1': 'ads_organic_ratio',
+      '3': 8,
+      '4': 1,
+      '5': 1,
+      '9': 6,
+      '10': 'adsOrganicRatio',
+      '17': true
+    },
+    {
+      '1': 'page_overlap_rate',
+      '3': 9,
+      '4': 1,
+      '5': 1,
+      '9': 7,
+      '10': 'pageOverlapRate',
+      '17': true
+    },
+    {
+      '1': 'higher_position_rate',
+      '3': 10,
+      '4': 1,
+      '5': 1,
+      '9': 8,
+      '10': 'higherPositionRate',
+      '17': true
+    },
+    {
+      '1': 'relative_visibility',
+      '3': 11,
+      '4': 1,
+      '5': 1,
+      '9': 9,
+      '10': 'relativeVisibility',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_domain'},
@@ -789,16 +1916,81 @@ final $typed_data.Uint8List competitiveVisibilityCompetitorViewDescriptor = $con
 const CompetitiveVisibilityTopMerchantView$json = {
   '1': 'CompetitiveVisibilityTopMerchantView',
   '2': [
-    {'1': 'date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'date'},
+    {
+      '1': 'date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'date'
+    },
     {'1': 'domain', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'domain', '17': true},
-    {'1': 'is_your_domain', '3': 3, '4': 1, '5': 8, '9': 1, '10': 'isYourDomain', '17': true},
-    {'1': 'report_country_code', '3': 4, '4': 1, '5': 9, '9': 2, '10': 'reportCountryCode', '17': true},
-    {'1': 'report_category_id', '3': 5, '4': 1, '5': 3, '9': 3, '10': 'reportCategoryId', '17': true},
-    {'1': 'traffic_source', '3': 6, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.TrafficSource.TrafficSourceEnum', '9': 4, '10': 'trafficSource', '17': true},
+    {
+      '1': 'is_your_domain',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'isYourDomain',
+      '17': true
+    },
+    {
+      '1': 'report_country_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'reportCountryCode',
+      '17': true
+    },
+    {
+      '1': 'report_category_id',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 3,
+      '10': 'reportCategoryId',
+      '17': true
+    },
+    {
+      '1': 'traffic_source',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.TrafficSource.TrafficSourceEnum',
+      '9': 4,
+      '10': 'trafficSource',
+      '17': true
+    },
     {'1': 'rank', '3': 7, '4': 1, '5': 3, '9': 5, '10': 'rank', '17': true},
-    {'1': 'ads_organic_ratio', '3': 8, '4': 1, '5': 1, '9': 6, '10': 'adsOrganicRatio', '17': true},
-    {'1': 'page_overlap_rate', '3': 9, '4': 1, '5': 1, '9': 7, '10': 'pageOverlapRate', '17': true},
-    {'1': 'higher_position_rate', '3': 10, '4': 1, '5': 1, '9': 8, '10': 'higherPositionRate', '17': true},
+    {
+      '1': 'ads_organic_ratio',
+      '3': 8,
+      '4': 1,
+      '5': 1,
+      '9': 6,
+      '10': 'adsOrganicRatio',
+      '17': true
+    },
+    {
+      '1': 'page_overlap_rate',
+      '3': 9,
+      '4': 1,
+      '5': 1,
+      '9': 7,
+      '10': 'pageOverlapRate',
+      '17': true
+    },
+    {
+      '1': 'higher_position_rate',
+      '3': 10,
+      '4': 1,
+      '5': 1,
+      '9': 8,
+      '10': 'higherPositionRate',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_domain'},
@@ -834,12 +2026,61 @@ final $typed_data.Uint8List competitiveVisibilityTopMerchantViewDescriptor = $co
 const CompetitiveVisibilityBenchmarkView$json = {
   '1': 'CompetitiveVisibilityBenchmarkView',
   '2': [
-    {'1': 'date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'date'},
-    {'1': 'report_country_code', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'reportCountryCode', '17': true},
-    {'1': 'report_category_id', '3': 3, '4': 1, '5': 3, '9': 1, '10': 'reportCategoryId', '17': true},
-    {'1': 'traffic_source', '3': 4, '4': 1, '5': 14, '6': '.google.shopping.merchant.reports.v1beta.TrafficSource.TrafficSourceEnum', '9': 2, '10': 'trafficSource', '17': true},
-    {'1': 'your_domain_visibility_trend', '3': 5, '4': 1, '5': 1, '9': 3, '10': 'yourDomainVisibilityTrend', '17': true},
-    {'1': 'category_benchmark_visibility_trend', '3': 6, '4': 1, '5': 1, '9': 4, '10': 'categoryBenchmarkVisibilityTrend', '17': true},
+    {
+      '1': 'date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'date'
+    },
+    {
+      '1': 'report_country_code',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'reportCountryCode',
+      '17': true
+    },
+    {
+      '1': 'report_category_id',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'reportCategoryId',
+      '17': true
+    },
+    {
+      '1': 'traffic_source',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.reports.v1beta.TrafficSource.TrafficSourceEnum',
+      '9': 2,
+      '10': 'trafficSource',
+      '17': true
+    },
+    {
+      '1': 'your_domain_visibility_trend',
+      '3': 5,
+      '4': 1,
+      '5': 1,
+      '9': 3,
+      '10': 'yourDomainVisibilityTrend',
+      '17': true
+    },
+    {
+      '1': 'category_benchmark_visibility_trend',
+      '3': 6,
+      '4': 1,
+      '5': 1,
+      '9': 4,
+      '10': 'categoryBenchmarkVisibilityTrend',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_report_country_code'},
@@ -975,4 +2216,3 @@ const TrafficSource_TrafficSourceEnum$json = {
 final $typed_data.Uint8List trafficSourceDescriptor = $convert.base64Decode(
     'Cg1UcmFmZmljU291cmNlIlcKEVRyYWZmaWNTb3VyY2VFbnVtEiMKH1RSQUZGSUNfU09VUkNFX0'
     'VOVU1fVU5TUEVDSUZJRUQQABILCgdPUkdBTklDEAESBwoDQURTEAISBwoDQUxMEAM=');
-

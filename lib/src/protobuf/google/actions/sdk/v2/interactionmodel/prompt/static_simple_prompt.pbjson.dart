@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const StaticSimplePrompt$json = {
   '1': 'StaticSimplePrompt',
   '2': [
-    {'1': 'variants', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticSimplePrompt.Variant', '10': 'variants'},
+    {
+      '1': 'variants',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticSimplePrompt.Variant',
+      '10': 'variants'
+    },
   ],
   '3': [StaticSimplePrompt_Variant$json],
 };
@@ -37,4 +45,3 @@ final $typed_data.Uint8List staticSimplePromptDescriptor = $convert.base64Decode
     '5zZGsudjIuaW50ZXJhY3Rpb25tb2RlbC5wcm9tcHQuU3RhdGljU2ltcGxlUHJvbXB0LlZhcmlh'
     'bnRSCHZhcmlhbnRzGj8KB1ZhcmlhbnQSGwoGc3BlZWNoGAEgASgJQgPgQQFSBnNwZWVjaBIXCg'
     'R0ZXh0GAIgASgJQgPgQQFSBHRleHQ=');
-

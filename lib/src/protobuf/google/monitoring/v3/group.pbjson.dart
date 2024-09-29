@@ -34,4 +34,3 @@ final $typed_data.Uint8List groupDescriptor = $convert.base64Decode(
     'luZy5nb29nbGVhcGlzLmNvbS9Hcm91cBIhcHJvamVjdHMve3Byb2plY3R9L2dyb3Vwcy97Z3Jv'
     'dXB9Eitvcmdhbml6YXRpb25zL3tvcmdhbml6YXRpb259L2dyb3Vwcy97Z3JvdXB9Eh9mb2xkZX'
     'JzL3tmb2xkZXJ9L2dyb3Vwcy97Z3JvdXB9EgEq');
-

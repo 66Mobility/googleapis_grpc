@@ -18,7 +18,15 @@ const CreateSessionRequest$json = {
   '1': 'CreateSessionRequest',
   '2': [
     {'1': 'database', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'database'},
-    {'1': 'session', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Session', '8': {}, '10': 'session'},
+    {
+      '1': 'session',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Session',
+      '8': {},
+      '10': 'session'
+    },
   ],
 };
 
@@ -33,8 +41,22 @@ const BatchCreateSessionsRequest$json = {
   '1': 'BatchCreateSessionsRequest',
   '2': [
     {'1': 'database', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'database'},
-    {'1': 'session_template', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Session', '10': 'sessionTemplate'},
-    {'1': 'session_count', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'sessionCount'},
+    {
+      '1': 'session_template',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Session',
+      '10': 'sessionTemplate'
+    },
+    {
+      '1': 'session_count',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'sessionCount'
+    },
   ],
 };
 
@@ -49,23 +71,54 @@ final $typed_data.Uint8List batchCreateSessionsRequestDescriptor = $convert.base
 const BatchCreateSessionsResponse$json = {
   '1': 'BatchCreateSessionsResponse',
   '2': [
-    {'1': 'session', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.Session', '10': 'session'},
+    {
+      '1': 'session',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Session',
+      '10': 'session'
+    },
   ],
 };
 
 /// Descriptor for `BatchCreateSessionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateSessionsResponseDescriptor = $convert.base64Decode(
-    'ChtCYXRjaENyZWF0ZVNlc3Npb25zUmVzcG9uc2USNAoHc2Vzc2lvbhgBIAMoCzIaLmdvb2dsZS'
-    '5zcGFubmVyLnYxLlNlc3Npb25SB3Nlc3Npb24=');
+final $typed_data.Uint8List batchCreateSessionsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtCYXRjaENyZWF0ZVNlc3Npb25zUmVzcG9uc2USNAoHc2Vzc2lvbhgBIAMoCzIaLmdvb2dsZS'
+        '5zcGFubmVyLnYxLlNlc3Npb25SB3Nlc3Npb24=');
 
 @$core.Deprecated('Use sessionDescriptor instead')
 const Session$json = {
   '1': 'Session',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.v1.Session.LabelsEntry', '10': 'labels'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'approximate_last_use_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'approximateLastUseTime'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Session.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'approximate_last_use_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'approximateLastUseTime'
+    },
     {'1': 'creator_role', '3': 5, '4': 1, '5': 9, '10': 'creatorRole'},
     {'1': 'multiplexed', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'multiplexed'},
   ],
@@ -131,7 +184,14 @@ final $typed_data.Uint8List listSessionsRequestDescriptor = $convert.base64Decod
 const ListSessionsResponse$json = {
   '1': 'ListSessionsResponse',
   '2': [
-    {'1': 'sessions', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.Session', '10': 'sessions'},
+    {
+      '1': 'sessions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Session',
+      '10': 'sessions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -159,7 +219,14 @@ final $typed_data.Uint8List deleteSessionRequestDescriptor = $convert.base64Deco
 const RequestOptions$json = {
   '1': 'RequestOptions',
   '2': [
-    {'1': 'priority', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.v1.RequestOptions.Priority', '10': 'priority'},
+    {
+      '1': 'priority',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.RequestOptions.Priority',
+      '10': 'priority'
+    },
     {'1': 'request_tag', '3': 2, '4': 1, '5': 9, '10': 'requestTag'},
     {'1': 'transaction_tag', '3': 3, '4': 1, '5': 9, '10': 'transactionTag'},
   ],
@@ -189,10 +256,30 @@ final $typed_data.Uint8List requestOptionsDescriptor = $convert.base64Decode(
 const DirectedReadOptions$json = {
   '1': 'DirectedReadOptions',
   '2': [
-    {'1': 'include_replicas', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.DirectedReadOptions.IncludeReplicas', '9': 0, '10': 'includeReplicas'},
-    {'1': 'exclude_replicas', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.DirectedReadOptions.ExcludeReplicas', '9': 0, '10': 'excludeReplicas'},
+    {
+      '1': 'include_replicas',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.DirectedReadOptions.IncludeReplicas',
+      '9': 0,
+      '10': 'includeReplicas'
+    },
+    {
+      '1': 'exclude_replicas',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.DirectedReadOptions.ExcludeReplicas',
+      '9': 0,
+      '10': 'excludeReplicas'
+    },
   ],
-  '3': [DirectedReadOptions_ReplicaSelection$json, DirectedReadOptions_IncludeReplicas$json, DirectedReadOptions_ExcludeReplicas$json],
+  '3': [
+    DirectedReadOptions_ReplicaSelection$json,
+    DirectedReadOptions_IncludeReplicas$json,
+    DirectedReadOptions_ExcludeReplicas$json
+  ],
   '8': [
     {'1': 'replicas'},
   ],
@@ -203,7 +290,14 @@ const DirectedReadOptions_ReplicaSelection$json = {
   '1': 'ReplicaSelection',
   '2': [
     {'1': 'location', '3': 1, '4': 1, '5': 9, '10': 'location'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.spanner.v1.DirectedReadOptions.ReplicaSelection.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.DirectedReadOptions.ReplicaSelection.Type',
+      '10': 'type'
+    },
   ],
   '4': [DirectedReadOptions_ReplicaSelection_Type$json],
 };
@@ -222,8 +316,21 @@ const DirectedReadOptions_ReplicaSelection_Type$json = {
 const DirectedReadOptions_IncludeReplicas$json = {
   '1': 'IncludeReplicas',
   '2': [
-    {'1': 'replica_selections', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.DirectedReadOptions.ReplicaSelection', '10': 'replicaSelections'},
-    {'1': 'auto_failover_disabled', '3': 2, '4': 1, '5': 8, '10': 'autoFailoverDisabled'},
+    {
+      '1': 'replica_selections',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.DirectedReadOptions.ReplicaSelection',
+      '10': 'replicaSelections'
+    },
+    {
+      '1': 'auto_failover_disabled',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'autoFailoverDisabled'
+    },
   ],
 };
 
@@ -231,7 +338,14 @@ const DirectedReadOptions_IncludeReplicas$json = {
 const DirectedReadOptions_ExcludeReplicas$json = {
   '1': 'ExcludeReplicas',
   '2': [
-    {'1': 'replica_selections', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.DirectedReadOptions.ReplicaSelection', '10': 'replicaSelections'},
+    {
+      '1': 'replica_selections',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.DirectedReadOptions.ReplicaSelection',
+      '10': 'replicaSelections'
+    },
   ],
 };
 
@@ -257,20 +371,78 @@ const ExecuteSqlRequest$json = {
   '1': 'ExecuteSqlRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'transaction', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionSelector', '10': 'transaction'},
+    {
+      '1': 'transaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionSelector',
+      '10': 'transaction'
+    },
     {'1': 'sql', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'sql'},
-    {'1': 'params', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'params'},
-    {'1': 'param_types', '3': 5, '4': 3, '5': 11, '6': '.google.spanner.v1.ExecuteSqlRequest.ParamTypesEntry', '10': 'paramTypes'},
+    {
+      '1': 'params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'params'
+    },
+    {
+      '1': 'param_types',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.ExecuteSqlRequest.ParamTypesEntry',
+      '10': 'paramTypes'
+    },
     {'1': 'resume_token', '3': 6, '4': 1, '5': 12, '10': 'resumeToken'},
-    {'1': 'query_mode', '3': 7, '4': 1, '5': 14, '6': '.google.spanner.v1.ExecuteSqlRequest.QueryMode', '10': 'queryMode'},
+    {
+      '1': 'query_mode',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.ExecuteSqlRequest.QueryMode',
+      '10': 'queryMode'
+    },
     {'1': 'partition_token', '3': 8, '4': 1, '5': 12, '10': 'partitionToken'},
     {'1': 'seqno', '3': 9, '4': 1, '5': 3, '10': 'seqno'},
-    {'1': 'query_options', '3': 10, '4': 1, '5': 11, '6': '.google.spanner.v1.ExecuteSqlRequest.QueryOptions', '10': 'queryOptions'},
-    {'1': 'request_options', '3': 11, '4': 1, '5': 11, '6': '.google.spanner.v1.RequestOptions', '10': 'requestOptions'},
-    {'1': 'directed_read_options', '3': 15, '4': 1, '5': 11, '6': '.google.spanner.v1.DirectedReadOptions', '10': 'directedReadOptions'},
-    {'1': 'data_boost_enabled', '3': 16, '4': 1, '5': 8, '10': 'dataBoostEnabled'},
+    {
+      '1': 'query_options',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.ExecuteSqlRequest.QueryOptions',
+      '10': 'queryOptions'
+    },
+    {
+      '1': 'request_options',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.RequestOptions',
+      '10': 'requestOptions'
+    },
+    {
+      '1': 'directed_read_options',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.DirectedReadOptions',
+      '10': 'directedReadOptions'
+    },
+    {
+      '1': 'data_boost_enabled',
+      '3': 16,
+      '4': 1,
+      '5': 8,
+      '10': 'dataBoostEnabled'
+    },
   ],
-  '3': [ExecuteSqlRequest_QueryOptions$json, ExecuteSqlRequest_ParamTypesEntry$json],
+  '3': [
+    ExecuteSqlRequest_QueryOptions$json,
+    ExecuteSqlRequest_ParamTypesEntry$json
+  ],
   '4': [ExecuteSqlRequest_QueryMode$json],
 };
 
@@ -278,8 +450,20 @@ const ExecuteSqlRequest$json = {
 const ExecuteSqlRequest_QueryOptions$json = {
   '1': 'QueryOptions',
   '2': [
-    {'1': 'optimizer_version', '3': 1, '4': 1, '5': 9, '10': 'optimizerVersion'},
-    {'1': 'optimizer_statistics_package', '3': 2, '4': 1, '5': 9, '10': 'optimizerStatisticsPackage'},
+    {
+      '1': 'optimizer_version',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'optimizerVersion'
+    },
+    {
+      '1': 'optimizer_statistics_package',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'optimizerStatisticsPackage'
+    },
   ],
 };
 
@@ -288,7 +472,14 @@ const ExecuteSqlRequest_ParamTypesEntry$json = {
   '1': 'ParamTypesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -331,10 +522,33 @@ const ExecuteBatchDmlRequest$json = {
   '1': 'ExecuteBatchDmlRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'transaction', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionSelector', '8': {}, '10': 'transaction'},
-    {'1': 'statements', '3': 3, '4': 3, '5': 11, '6': '.google.spanner.v1.ExecuteBatchDmlRequest.Statement', '8': {}, '10': 'statements'},
+    {
+      '1': 'transaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionSelector',
+      '8': {},
+      '10': 'transaction'
+    },
+    {
+      '1': 'statements',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.ExecuteBatchDmlRequest.Statement',
+      '8': {},
+      '10': 'statements'
+    },
     {'1': 'seqno', '3': 4, '4': 1, '5': 3, '8': {}, '10': 'seqno'},
-    {'1': 'request_options', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.v1.RequestOptions', '10': 'requestOptions'},
+    {
+      '1': 'request_options',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.RequestOptions',
+      '10': 'requestOptions'
+    },
   ],
   '3': [ExecuteBatchDmlRequest_Statement$json],
 };
@@ -344,8 +558,23 @@ const ExecuteBatchDmlRequest_Statement$json = {
   '1': 'Statement',
   '2': [
     {'1': 'sql', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'sql'},
-    {'1': 'params', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'params'},
-    {'1': 'param_types', '3': 3, '4': 3, '5': 11, '6': '.google.spanner.v1.ExecuteBatchDmlRequest.Statement.ParamTypesEntry', '10': 'paramTypes'},
+    {
+      '1': 'params',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'params'
+    },
+    {
+      '1': 'param_types',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.spanner.v1.ExecuteBatchDmlRequest.Statement.ParamTypesEntry',
+      '10': 'paramTypes'
+    },
   ],
   '3': [ExecuteBatchDmlRequest_Statement_ParamTypesEntry$json],
 };
@@ -355,7 +584,14 @@ const ExecuteBatchDmlRequest_Statement_ParamTypesEntry$json = {
   '1': 'ParamTypesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -379,8 +615,22 @@ final $typed_data.Uint8List executeBatchDmlRequestDescriptor = $convert.base64De
 const ExecuteBatchDmlResponse$json = {
   '1': 'ExecuteBatchDmlResponse',
   '2': [
-    {'1': 'result_sets', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.ResultSet', '10': 'resultSets'},
-    {'1': 'status', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
+    {
+      '1': 'result_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.ResultSet',
+      '10': 'resultSets'
+    },
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
   ],
 };
 
@@ -394,7 +644,13 @@ final $typed_data.Uint8List executeBatchDmlResponseDescriptor = $convert.base64D
 const PartitionOptions$json = {
   '1': 'PartitionOptions',
   '2': [
-    {'1': 'partition_size_bytes', '3': 1, '4': 1, '5': 3, '10': 'partitionSizeBytes'},
+    {
+      '1': 'partition_size_bytes',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '10': 'partitionSizeBytes'
+    },
     {'1': 'max_partitions', '3': 2, '4': 1, '5': 3, '10': 'maxPartitions'},
   ],
 };
@@ -409,11 +665,39 @@ const PartitionQueryRequest$json = {
   '1': 'PartitionQueryRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'transaction', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionSelector', '10': 'transaction'},
+    {
+      '1': 'transaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionSelector',
+      '10': 'transaction'
+    },
     {'1': 'sql', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'sql'},
-    {'1': 'params', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'params'},
-    {'1': 'param_types', '3': 5, '4': 3, '5': 11, '6': '.google.spanner.v1.PartitionQueryRequest.ParamTypesEntry', '10': 'paramTypes'},
-    {'1': 'partition_options', '3': 6, '4': 1, '5': 11, '6': '.google.spanner.v1.PartitionOptions', '10': 'partitionOptions'},
+    {
+      '1': 'params',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'params'
+    },
+    {
+      '1': 'param_types',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.PartitionQueryRequest.ParamTypesEntry',
+      '10': 'paramTypes'
+    },
+    {
+      '1': 'partition_options',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.PartitionOptions',
+      '10': 'partitionOptions'
+    },
   ],
   '3': [PartitionQueryRequest_ParamTypesEntry$json],
 };
@@ -423,7 +707,14 @@ const PartitionQueryRequest_ParamTypesEntry$json = {
   '1': 'ParamTypesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -445,12 +736,34 @@ const PartitionReadRequest$json = {
   '1': 'PartitionReadRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'transaction', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionSelector', '10': 'transaction'},
+    {
+      '1': 'transaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionSelector',
+      '10': 'transaction'
+    },
     {'1': 'table', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'table'},
     {'1': 'index', '3': 4, '4': 1, '5': 9, '10': 'index'},
     {'1': 'columns', '3': 5, '4': 3, '5': 9, '10': 'columns'},
-    {'1': 'key_set', '3': 6, '4': 1, '5': 11, '6': '.google.spanner.v1.KeySet', '8': {}, '10': 'keySet'},
-    {'1': 'partition_options', '3': 9, '4': 1, '5': 11, '6': '.google.spanner.v1.PartitionOptions', '10': 'partitionOptions'},
+    {
+      '1': 'key_set',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.KeySet',
+      '8': {},
+      '10': 'keySet'
+    },
+    {
+      '1': 'partition_options',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.PartitionOptions',
+      '10': 'partitionOptions'
+    },
   ],
 };
 
@@ -480,8 +793,22 @@ final $typed_data.Uint8List partitionDescriptor = $convert.base64Decode(
 const PartitionResponse$json = {
   '1': 'PartitionResponse',
   '2': [
-    {'1': 'partitions', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.Partition', '10': 'partitions'},
-    {'1': 'transaction', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Transaction', '10': 'transaction'},
+    {
+      '1': 'partitions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Partition',
+      '10': 'partitions'
+    },
+    {
+      '1': 'transaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Transaction',
+      '10': 'transaction'
+    },
   ],
 };
 
@@ -496,19 +823,70 @@ const ReadRequest$json = {
   '1': 'ReadRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'transaction', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionSelector', '10': 'transaction'},
+    {
+      '1': 'transaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionSelector',
+      '10': 'transaction'
+    },
     {'1': 'table', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'table'},
     {'1': 'index', '3': 4, '4': 1, '5': 9, '10': 'index'},
     {'1': 'columns', '3': 5, '4': 3, '5': 9, '8': {}, '10': 'columns'},
-    {'1': 'key_set', '3': 6, '4': 1, '5': 11, '6': '.google.spanner.v1.KeySet', '8': {}, '10': 'keySet'},
+    {
+      '1': 'key_set',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.KeySet',
+      '8': {},
+      '10': 'keySet'
+    },
     {'1': 'limit', '3': 8, '4': 1, '5': 3, '10': 'limit'},
     {'1': 'resume_token', '3': 9, '4': 1, '5': 12, '10': 'resumeToken'},
     {'1': 'partition_token', '3': 10, '4': 1, '5': 12, '10': 'partitionToken'},
-    {'1': 'request_options', '3': 11, '4': 1, '5': 11, '6': '.google.spanner.v1.RequestOptions', '10': 'requestOptions'},
-    {'1': 'directed_read_options', '3': 14, '4': 1, '5': 11, '6': '.google.spanner.v1.DirectedReadOptions', '10': 'directedReadOptions'},
-    {'1': 'data_boost_enabled', '3': 15, '4': 1, '5': 8, '10': 'dataBoostEnabled'},
-    {'1': 'order_by', '3': 16, '4': 1, '5': 14, '6': '.google.spanner.v1.ReadRequest.OrderBy', '8': {}, '10': 'orderBy'},
-    {'1': 'lock_hint', '3': 17, '4': 1, '5': 14, '6': '.google.spanner.v1.ReadRequest.LockHint', '8': {}, '10': 'lockHint'},
+    {
+      '1': 'request_options',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.RequestOptions',
+      '10': 'requestOptions'
+    },
+    {
+      '1': 'directed_read_options',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.DirectedReadOptions',
+      '10': 'directedReadOptions'
+    },
+    {
+      '1': 'data_boost_enabled',
+      '3': 15,
+      '4': 1,
+      '5': 8,
+      '10': 'dataBoostEnabled'
+    },
+    {
+      '1': 'order_by',
+      '3': 16,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.ReadRequest.OrderBy',
+      '8': {},
+      '10': 'orderBy'
+    },
+    {
+      '1': 'lock_hint',
+      '3': 17,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.ReadRequest.LockHint',
+      '8': {},
+      '10': 'lockHint'
+    },
   ],
   '4': [ReadRequest_OrderBy$json, ReadRequest_LockHint$json],
 };
@@ -558,8 +936,23 @@ const BeginTransactionRequest$json = {
   '1': 'BeginTransactionRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'options', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionOptions', '8': {}, '10': 'options'},
-    {'1': 'request_options', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.RequestOptions', '10': 'requestOptions'},
+    {
+      '1': 'options',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionOptions',
+      '8': {},
+      '10': 'options'
+    },
+    {
+      '1': 'request_options',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.RequestOptions',
+      '10': 'requestOptions'
+    },
   ],
 };
 
@@ -576,12 +969,55 @@ const CommitRequest$json = {
   '1': 'CommitRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'transaction_id', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'transactionId'},
-    {'1': 'single_use_transaction', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.TransactionOptions', '9': 0, '10': 'singleUseTransaction'},
-    {'1': 'mutations', '3': 4, '4': 3, '5': 11, '6': '.google.spanner.v1.Mutation', '10': 'mutations'},
-    {'1': 'return_commit_stats', '3': 5, '4': 1, '5': 8, '10': 'returnCommitStats'},
-    {'1': 'max_commit_delay', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'maxCommitDelay'},
-    {'1': 'request_options', '3': 6, '4': 1, '5': 11, '6': '.google.spanner.v1.RequestOptions', '10': 'requestOptions'},
+    {
+      '1': 'transaction_id',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'transactionId'
+    },
+    {
+      '1': 'single_use_transaction',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.TransactionOptions',
+      '9': 0,
+      '10': 'singleUseTransaction'
+    },
+    {
+      '1': 'mutations',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation',
+      '10': 'mutations'
+    },
+    {
+      '1': 'return_commit_stats',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'returnCommitStats'
+    },
+    {
+      '1': 'max_commit_delay',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'maxCommitDelay'
+    },
+    {
+      '1': 'request_options',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.RequestOptions',
+      '10': 'requestOptions'
+    },
   ],
   '8': [
     {'1': 'transaction'},
@@ -605,7 +1041,14 @@ const RollbackRequest$json = {
   '1': 'RollbackRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'transaction_id', '3': 2, '4': 1, '5': 12, '8': {}, '10': 'transactionId'},
+    {
+      '1': 'transaction_id',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '8': {},
+      '10': 'transactionId'
+    },
   ],
 };
 
@@ -620,9 +1063,31 @@ const BatchWriteRequest$json = {
   '1': 'BatchWriteRequest',
   '2': [
     {'1': 'session', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'session'},
-    {'1': 'request_options', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.RequestOptions', '10': 'requestOptions'},
-    {'1': 'mutation_groups', '3': 4, '4': 3, '5': 11, '6': '.google.spanner.v1.BatchWriteRequest.MutationGroup', '8': {}, '10': 'mutationGroups'},
-    {'1': 'exclude_txn_from_change_streams', '3': 5, '4': 1, '5': 8, '8': {}, '10': 'excludeTxnFromChangeStreams'},
+    {
+      '1': 'request_options',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.RequestOptions',
+      '10': 'requestOptions'
+    },
+    {
+      '1': 'mutation_groups',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.BatchWriteRequest.MutationGroup',
+      '8': {},
+      '10': 'mutationGroups'
+    },
+    {
+      '1': 'exclude_txn_from_change_streams',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'excludeTxnFromChangeStreams'
+    },
   ],
   '3': [BatchWriteRequest_MutationGroup$json],
 };
@@ -631,7 +1096,15 @@ const BatchWriteRequest$json = {
 const BatchWriteRequest_MutationGroup$json = {
   '1': 'MutationGroup',
   '2': [
-    {'1': 'mutations', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.Mutation', '8': {}, '10': 'mutations'},
+    {
+      '1': 'mutations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation',
+      '8': {},
+      '10': 'mutations'
+    },
   ],
 };
 
@@ -651,8 +1124,22 @@ const BatchWriteResponse$json = {
   '1': 'BatchWriteResponse',
   '2': [
     {'1': 'indexes', '3': 1, '4': 3, '5': 5, '10': 'indexes'},
-    {'1': 'status', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'commit_timestamp', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'commitTimestamp'},
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'commit_timestamp',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'commitTimestamp'
+    },
   ],
 };
 
@@ -661,4 +1148,3 @@ final $typed_data.Uint8List batchWriteResponseDescriptor = $convert.base64Decode
     'ChJCYXRjaFdyaXRlUmVzcG9uc2USGAoHaW5kZXhlcxgBIAMoBVIHaW5kZXhlcxIqCgZzdGF0dX'
     'MYAiABKAsyEi5nb29nbGUucnBjLlN0YXR1c1IGc3RhdHVzEkUKEGNvbW1pdF90aW1lc3RhbXAY'
     'AyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUg9jb21taXRUaW1lc3RhbXA=');
-

@@ -32,34 +32,47 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ComputeRoutesResponse._() : super();
-  factory ComputeRoutesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ComputeRoutesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ComputeRoutesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ComputeRoutesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeRoutesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..pc<$486.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM, subBuilder: $486.Route.create)
-    ..aOM<$488.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo', subBuilder: $488.FallbackInfo.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ComputeRoutesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routes.v1'),
+      createEmptyInstance: create)
+    ..pc<$486.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM,
+        subBuilder: $486.Route.create)
+    ..aOM<$488.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo',
+        subBuilder: $488.FallbackInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ComputeRoutesResponse clone() => ComputeRoutesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ComputeRoutesResponse copyWith(void Function(ComputeRoutesResponse) updates) => super.copyWith((message) => updates(message as ComputeRoutesResponse)) as ComputeRoutesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ComputeRoutesResponse clone() =>
+      ComputeRoutesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ComputeRoutesResponse copyWith(
+          void Function(ComputeRoutesResponse) updates) =>
+      super.copyWith((message) => updates(message as ComputeRoutesResponse))
+          as ComputeRoutesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeRoutesResponse create() => ComputeRoutesResponse._();
   ComputeRoutesResponse createEmptyInstance() => create();
-  static $pb.PbList<ComputeRoutesResponse> createRepeated() => $pb.PbList<ComputeRoutesResponse>();
+  static $pb.PbList<ComputeRoutesResponse> createRepeated() =>
+      $pb.PbList<ComputeRoutesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ComputeRoutesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ComputeRoutesResponse>(create);
+  static ComputeRoutesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ComputeRoutesResponse>(create);
   static ComputeRoutesResponse? _defaultInstance;
 
   /// Contains an array of computed routes (up to three) when you specify
@@ -77,7 +90,10 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $488.FallbackInfo get fallbackInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set fallbackInfo($488.FallbackInfo v) { setField(2, v); }
+  set fallbackInfo($488.FallbackInfo v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFallbackInfo() => $_has(1);
   @$pb.TagNumber(2)
@@ -86,6 +102,6 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   $488.FallbackInfo ensureFallbackInfo() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -27,4 +27,3 @@ const Units$json = {
 final $typed_data.Uint8List unitsDescriptor = $convert.base64Decode(
     'CgVVbml0cxIVChFVTklUU19VTlNQRUNJRklFRBAAEgoKBk1FVFJJQxABEgwKCElNUEVSSUFMEA'
     'I=');
-

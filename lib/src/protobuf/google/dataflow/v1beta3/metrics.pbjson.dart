@@ -39,7 +39,14 @@ const MetricStructuredName$json = {
   '2': [
     {'1': 'origin', '3': 1, '4': 1, '5': 9, '10': 'origin'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'context', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.MetricStructuredName.ContextEntry', '10': 'context'},
+    {
+      '1': 'context',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.MetricStructuredName.ContextEntry',
+      '10': 'context'
+    },
   ],
   '3': [MetricStructuredName_ContextEntry$json],
 };
@@ -65,17 +72,80 @@ final $typed_data.Uint8List metricStructuredNameDescriptor = $convert.base64Deco
 const MetricUpdate$json = {
   '1': 'MetricUpdate',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.MetricStructuredName', '10': 'name'},
+    {
+      '1': 'name',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.MetricStructuredName',
+      '10': 'name'
+    },
     {'1': 'kind', '3': 2, '4': 1, '5': 9, '10': 'kind'},
     {'1': 'cumulative', '3': 3, '4': 1, '5': 8, '10': 'cumulative'},
-    {'1': 'scalar', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'scalar'},
-    {'1': 'mean_sum', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'meanSum'},
-    {'1': 'mean_count', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'meanCount'},
-    {'1': 'set', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'set'},
-    {'1': 'distribution', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'distribution'},
-    {'1': 'gauge', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'gauge'},
-    {'1': 'internal', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'internal'},
-    {'1': 'update_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'scalar',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'scalar'
+    },
+    {
+      '1': 'mean_sum',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'meanSum'
+    },
+    {
+      '1': 'mean_count',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'meanCount'
+    },
+    {
+      '1': 'set',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'set'
+    },
+    {
+      '1': 'distribution',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'distribution'
+    },
+    {
+      '1': 'gauge',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'gauge'
+    },
+    {
+      '1': 'internal',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'internal'
+    },
+    {
+      '1': 'update_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
 };
 
@@ -98,7 +168,14 @@ const GetJobMetricsRequest$json = {
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'job_id', '3': 2, '4': 1, '5': 9, '10': 'jobId'},
-    {'1': 'start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
+    {
+      '1': 'start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
     {'1': 'location', '3': 4, '4': 1, '5': 9, '10': 'location'},
   ],
 };
@@ -113,8 +190,22 @@ final $typed_data.Uint8List getJobMetricsRequestDescriptor = $convert.base64Deco
 const JobMetrics$json = {
   '1': 'JobMetrics',
   '2': [
-    {'1': 'metric_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'metricTime'},
-    {'1': 'metrics', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.MetricUpdate', '10': 'metrics'},
+    {
+      '1': 'metric_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'metricTime'
+    },
+    {
+      '1': 'metrics',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.MetricUpdate',
+      '10': 'metrics'
+    },
   ],
 };
 
@@ -148,7 +239,14 @@ const ProgressTimeseries$json = {
   '1': 'ProgressTimeseries',
   '2': [
     {'1': 'current_progress', '3': 1, '4': 1, '5': 1, '10': 'currentProgress'},
-    {'1': 'data_points', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.ProgressTimeseries.Point', '10': 'dataPoints'},
+    {
+      '1': 'data_points',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ProgressTimeseries.Point',
+      '10': 'dataPoints'
+    },
   ],
   '3': [ProgressTimeseries_Point$json],
 };
@@ -157,7 +255,14 @@ const ProgressTimeseries$json = {
 const ProgressTimeseries_Point$json = {
   '1': 'Point',
   '2': [
-    {'1': 'time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'time'},
+    {
+      '1': 'time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'time'
+    },
     {'1': 'value', '3': 2, '4': 1, '5': 1, '10': 'value'},
   ],
 };
@@ -175,11 +280,46 @@ const StageSummary$json = {
   '1': 'StageSummary',
   '2': [
     {'1': 'stage_id', '3': 1, '4': 1, '5': 9, '10': 'stageId'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.ExecutionState', '10': 'state'},
-    {'1': 'start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'progress', '3': 5, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.ProgressTimeseries', '10': 'progress'},
-    {'1': 'metrics', '3': 6, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.MetricUpdate', '10': 'metrics'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.ExecutionState',
+      '10': 'state'
+    },
+    {
+      '1': 'start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'progress',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ProgressTimeseries',
+      '10': 'progress'
+    },
+    {
+      '1': 'metrics',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.MetricUpdate',
+      '10': 'metrics'
+    },
   ],
 };
 
@@ -197,7 +337,14 @@ final $typed_data.Uint8List stageSummaryDescriptor = $convert.base64Decode(
 const JobExecutionDetails$json = {
   '1': 'JobExecutionDetails',
   '2': [
-    {'1': 'stages', '3': 1, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.StageSummary', '10': 'stages'},
+    {
+      '1': 'stages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StageSummary',
+      '10': 'stages'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -218,8 +365,22 @@ const GetStageExecutionDetailsRequest$json = {
     {'1': 'stage_id', '3': 4, '4': 1, '5': 9, '10': 'stageId'},
     {'1': 'page_size', '3': 5, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 6, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'start_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -238,11 +399,46 @@ const WorkItemDetails$json = {
   '2': [
     {'1': 'task_id', '3': 1, '4': 1, '5': 9, '10': 'taskId'},
     {'1': 'attempt_id', '3': 2, '4': 1, '5': 9, '10': 'attemptId'},
-    {'1': 'start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.ExecutionState', '10': 'state'},
-    {'1': 'progress', '3': 6, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.ProgressTimeseries', '10': 'progress'},
-    {'1': 'metrics', '3': 7, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.MetricUpdate', '10': 'metrics'},
+    {
+      '1': 'start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.ExecutionState',
+      '10': 'state'
+    },
+    {
+      '1': 'progress',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ProgressTimeseries',
+      '10': 'progress'
+    },
+    {
+      '1': 'metrics',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.MetricUpdate',
+      '10': 'metrics'
+    },
   ],
 };
 
@@ -262,7 +458,14 @@ const WorkerDetails$json = {
   '1': 'WorkerDetails',
   '2': [
     {'1': 'worker_name', '3': 1, '4': 1, '5': 9, '10': 'workerName'},
-    {'1': 'work_items', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.WorkItemDetails', '10': 'workItems'},
+    {
+      '1': 'work_items',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.WorkItemDetails',
+      '10': 'workItems'
+    },
   ],
 };
 
@@ -276,7 +479,14 @@ final $typed_data.Uint8List workerDetailsDescriptor = $convert.base64Decode(
 const StageExecutionDetails$json = {
   '1': 'StageExecutionDetails',
   '2': [
-    {'1': 'workers', '3': 1, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.WorkerDetails', '10': 'workers'},
+    {
+      '1': 'workers',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.WorkerDetails',
+      '10': 'workers'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -286,4 +496,3 @@ final $typed_data.Uint8List stageExecutionDetailsDescriptor = $convert.base64Dec
     'ChVTdGFnZUV4ZWN1dGlvbkRldGFpbHMSQAoHd29ya2VycxgBIAMoCzImLmdvb2dsZS5kYXRhZm'
     'xvdy52MWJldGEzLldvcmtlckRldGFpbHNSB3dvcmtlcnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIg'
     'ASgJUg1uZXh0UGFnZVRva2Vu');
-

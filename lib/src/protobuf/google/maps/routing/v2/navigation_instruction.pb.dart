@@ -32,34 +32,48 @@ class NavigationInstruction extends $pb.GeneratedMessage {
     return $result;
   }
   NavigationInstruction._() : super();
-  factory NavigationInstruction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NavigationInstruction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NavigationInstruction.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NavigationInstruction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NavigationInstruction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..e<$489.Maneuver>(1, _omitFieldNames ? '' : 'maneuver', $pb.PbFieldType.OE, defaultOrMaker: $489.Maneuver.MANEUVER_UNSPECIFIED, valueOf: $489.Maneuver.valueOf, enumValues: $489.Maneuver.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NavigationInstruction',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..e<$489.Maneuver>(1, _omitFieldNames ? '' : 'maneuver', $pb.PbFieldType.OE,
+        defaultOrMaker: $489.Maneuver.MANEUVER_UNSPECIFIED,
+        valueOf: $489.Maneuver.valueOf,
+        enumValues: $489.Maneuver.values)
     ..aOS(2, _omitFieldNames ? '' : 'instructions')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NavigationInstruction clone() => NavigationInstruction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NavigationInstruction copyWith(void Function(NavigationInstruction) updates) => super.copyWith((message) => updates(message as NavigationInstruction)) as NavigationInstruction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NavigationInstruction clone() =>
+      NavigationInstruction()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NavigationInstruction copyWith(
+          void Function(NavigationInstruction) updates) =>
+      super.copyWith((message) => updates(message as NavigationInstruction))
+          as NavigationInstruction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NavigationInstruction create() => NavigationInstruction._();
   NavigationInstruction createEmptyInstance() => create();
-  static $pb.PbList<NavigationInstruction> createRepeated() => $pb.PbList<NavigationInstruction>();
+  static $pb.PbList<NavigationInstruction> createRepeated() =>
+      $pb.PbList<NavigationInstruction>();
   @$core.pragma('dart2js:noInline')
-  static NavigationInstruction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NavigationInstruction>(create);
+  static NavigationInstruction getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NavigationInstruction>(create);
   static NavigationInstruction? _defaultInstance;
 
   /// Encapsulates the navigation instructions for the current step (for example,
@@ -68,7 +82,10 @@ class NavigationInstruction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $489.Maneuver get maneuver => $_getN(0);
   @$pb.TagNumber(1)
-  set maneuver($489.Maneuver v) { setField(1, v); }
+  set maneuver($489.Maneuver v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasManeuver() => $_has(0);
   @$pb.TagNumber(1)
@@ -78,13 +95,16 @@ class NavigationInstruction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get instructions => $_getSZ(1);
   @$pb.TagNumber(2)
-  set instructions($core.String v) { $_setString(1, v); }
+  set instructions($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInstructions() => $_has(1);
   @$pb.TagNumber(2)
   void clearInstructions() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

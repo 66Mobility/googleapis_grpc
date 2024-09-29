@@ -18,7 +18,14 @@ const Intent$json = {
   '1': 'Intent',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'params', '3': 2, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.Intent.ParamsEntry', '10': 'params'},
+    {
+      '1': 'params',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Intent.ParamsEntry',
+      '10': 'params'
+    },
     {'1': 'query', '3': 3, '4': 1, '5': 9, '10': 'query'},
   ],
   '3': [Intent_ParamsEntry$json],
@@ -29,7 +36,14 @@ const Intent_ParamsEntry$json = {
   '1': 'ParamsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.IntentParameterValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.IntentParameterValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -47,7 +61,14 @@ const IntentParameterValue$json = {
   '1': 'IntentParameterValue',
   '2': [
     {'1': 'original', '3': 1, '4': 1, '5': 9, '10': 'original'},
-    {'1': 'resolved', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'resolved'},
+    {
+      '1': 'resolved',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'resolved'
+    },
   ],
 };
 
@@ -55,4 +76,3 @@ const IntentParameterValue$json = {
 final $typed_data.Uint8List intentParameterValueDescriptor = $convert.base64Decode(
     'ChRJbnRlbnRQYXJhbWV0ZXJWYWx1ZRIaCghvcmlnaW5hbBgBIAEoCVIIb3JpZ2luYWwSMgoIcm'
     'Vzb2x2ZWQYAiABKAsyFi5nb29nbGUucHJvdG9idWYuVmFsdWVSCHJlc29sdmVk');
-

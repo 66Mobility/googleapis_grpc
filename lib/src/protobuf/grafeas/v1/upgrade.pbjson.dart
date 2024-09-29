@@ -18,9 +18,30 @@ const UpgradeNote$json = {
   '1': 'UpgradeNote',
   '2': [
     {'1': 'package', '3': 1, '4': 1, '5': 9, '10': 'package'},
-    {'1': 'version', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.Version', '10': 'version'},
-    {'1': 'distributions', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.UpgradeDistribution', '10': 'distributions'},
-    {'1': 'windows_update', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.WindowsUpdate', '10': 'windowsUpdate'},
+    {
+      '1': 'version',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Version',
+      '10': 'version'
+    },
+    {
+      '1': 'distributions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.UpgradeDistribution',
+      '10': 'distributions'
+    },
+    {
+      '1': 'windows_update',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.WindowsUpdate',
+      '10': 'windowsUpdate'
+    },
   ],
 };
 
@@ -53,13 +74,34 @@ final $typed_data.Uint8List upgradeDistributionDescriptor = $convert.base64Decod
 const WindowsUpdate$json = {
   '1': 'WindowsUpdate',
   '2': [
-    {'1': 'identity', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.WindowsUpdate.Identity', '10': 'identity'},
+    {
+      '1': 'identity',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.WindowsUpdate.Identity',
+      '10': 'identity'
+    },
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'categories', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.WindowsUpdate.Category', '10': 'categories'},
+    {
+      '1': 'categories',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.WindowsUpdate.Category',
+      '10': 'categories'
+    },
     {'1': 'kb_article_ids', '3': 5, '4': 3, '5': 9, '10': 'kbArticleIds'},
     {'1': 'support_url', '3': 6, '4': 1, '5': 9, '10': 'supportUrl'},
-    {'1': 'last_published_timestamp', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastPublishedTimestamp'},
+    {
+      '1': 'last_published_timestamp',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastPublishedTimestamp'
+    },
   ],
   '3': [WindowsUpdate_Identity$json, WindowsUpdate_Category$json],
 };
@@ -99,9 +141,30 @@ const UpgradeOccurrence$json = {
   '1': 'UpgradeOccurrence',
   '2': [
     {'1': 'package', '3': 1, '4': 1, '5': 9, '10': 'package'},
-    {'1': 'parsed_version', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.Version', '10': 'parsedVersion'},
-    {'1': 'distribution', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.UpgradeDistribution', '10': 'distribution'},
-    {'1': 'windows_update', '3': 5, '4': 1, '5': 11, '6': '.grafeas.v1.WindowsUpdate', '10': 'windowsUpdate'},
+    {
+      '1': 'parsed_version',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Version',
+      '10': 'parsedVersion'
+    },
+    {
+      '1': 'distribution',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.UpgradeDistribution',
+      '10': 'distribution'
+    },
+    {
+      '1': 'windows_update',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.WindowsUpdate',
+      '10': 'windowsUpdate'
+    },
   ],
 };
 
@@ -112,4 +175,3 @@ final $typed_data.Uint8List upgradeOccurrenceDescriptor = $convert.base64Decode(
     'c3RyaWJ1dGlvbhgEIAEoCzIfLmdyYWZlYXMudjEuVXBncmFkZURpc3RyaWJ1dGlvblIMZGlzdH'
     'JpYnV0aW9uEkAKDndpbmRvd3NfdXBkYXRlGAUgASgLMhkuZ3JhZmVhcy52MS5XaW5kb3dzVXBk'
     'YXRlUg13aW5kb3dzVXBkYXRl');
-

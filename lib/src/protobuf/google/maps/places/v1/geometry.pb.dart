@@ -31,25 +31,32 @@ class Circle extends $pb.GeneratedMessage {
     return $result;
   }
   Circle._() : super();
-  factory Circle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Circle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Circle.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Circle.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Circle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'center', subBuilder: $325.LatLng.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Circle',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'center',
+        subBuilder: $325.LatLng.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Circle clone() => Circle()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Circle copyWith(void Function(Circle) updates) => super.copyWith((message) => updates(message as Circle)) as Circle;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Circle copyWith(void Function(Circle) updates) =>
+      super.copyWith((message) => updates(message as Circle)) as Circle;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -58,7 +65,8 @@ class Circle extends $pb.GeneratedMessage {
   Circle createEmptyInstance() => create();
   static $pb.PbList<Circle> createRepeated() => $pb.PbList<Circle>();
   @$core.pragma('dart2js:noInline')
-  static Circle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Circle>(create);
+  static Circle getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Circle>(create);
   static Circle? _defaultInstance;
 
   ///  Required. Center latitude and longitude.
@@ -68,7 +76,10 @@ class Circle extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get center => $_getN(0);
   @$pb.TagNumber(1)
-  set center($325.LatLng v) { setField(1, v); }
+  set center($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCenter() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,13 +92,16 @@ class Circle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get radius => $_getN(1);
   @$pb.TagNumber(2)
-  set radius($core.double v) { $_setDouble(1, v); }
+  set radius($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRadius() => $_has(1);
   @$pb.TagNumber(2)
   void clearRadius() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

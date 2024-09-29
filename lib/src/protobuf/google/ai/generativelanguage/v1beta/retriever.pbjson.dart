@@ -19,8 +19,24 @@ const Corpus$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
   ],
   '7': {},
 };
@@ -40,9 +56,33 @@ const Document$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'custom_metadata', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CustomMetadata', '8': {}, '10': 'customMetadata'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
+    {
+      '1': 'custom_metadata',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.CustomMetadata',
+      '8': {},
+      '10': 'customMetadata'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
   ],
   '7': {},
 };
@@ -67,16 +107,31 @@ const StringList$json = {
 };
 
 /// Descriptor for `StringList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stringListDescriptor = $convert.base64Decode(
-    'CgpTdHJpbmdMaXN0EhYKBnZhbHVlcxgBIAMoCVIGdmFsdWVz');
+final $typed_data.Uint8List stringListDescriptor =
+    $convert.base64Decode('CgpTdHJpbmdMaXN0EhYKBnZhbHVlcxgBIAMoCVIGdmFsdWVz');
 
 @$core.Deprecated('Use customMetadataDescriptor instead')
 const CustomMetadata$json = {
   '1': 'CustomMetadata',
   '2': [
     {'1': 'string_value', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'stringValue'},
-    {'1': 'string_list_value', '3': 6, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.StringList', '9': 0, '10': 'stringListValue'},
-    {'1': 'numeric_value', '3': 7, '4': 1, '5': 2, '9': 0, '10': 'numericValue'},
+    {
+      '1': 'string_list_value',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.StringList',
+      '9': 0,
+      '10': 'stringListValue'
+    },
+    {
+      '1': 'numeric_value',
+      '3': 7,
+      '4': 1,
+      '5': 2,
+      '9': 0,
+      '10': 'numericValue'
+    },
     {'1': 'key', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'key'},
   ],
   '8': [
@@ -96,7 +151,15 @@ const MetadataFilter$json = {
   '1': 'MetadataFilter',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'key'},
-    {'1': 'conditions', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Condition', '8': {}, '10': 'conditions'},
+    {
+      '1': 'conditions',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Condition',
+      '8': {},
+      '10': 'conditions'
+    },
   ],
 };
 
@@ -111,8 +174,23 @@ const Condition$json = {
   '1': 'Condition',
   '2': [
     {'1': 'string_value', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'stringValue'},
-    {'1': 'numeric_value', '3': 6, '4': 1, '5': 2, '9': 0, '10': 'numericValue'},
-    {'1': 'operation', '3': 5, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.Condition.Operator', '8': {}, '10': 'operation'},
+    {
+      '1': 'numeric_value',
+      '3': 6,
+      '4': 1,
+      '5': 2,
+      '9': 0,
+      '10': 'numericValue'
+    },
+    {
+      '1': 'operation',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.Condition.Operator',
+      '8': {},
+      '10': 'operation'
+    },
   ],
   '4': [Condition_Operator$json],
   '8': [
@@ -151,11 +229,51 @@ const Chunk$json = {
   '1': 'Chunk',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'data', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.ChunkData', '8': {}, '10': 'data'},
-    {'1': 'custom_metadata', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CustomMetadata', '8': {}, '10': 'customMetadata'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.Chunk.State', '8': {}, '10': 'state'},
+    {
+      '1': 'data',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.ChunkData',
+      '8': {},
+      '10': 'data'
+    },
+    {
+      '1': 'custom_metadata',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.CustomMetadata',
+      '8': {},
+      '10': 'customMetadata'
+    },
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.Chunk.State',
+      '8': {},
+      '10': 'state'
+    },
   ],
   '4': [Chunk_State$json],
   '7': {},
@@ -202,4 +320,3 @@ const ChunkData$json = {
 final $typed_data.Uint8List chunkDataDescriptor = $convert.base64Decode(
     'CglDaHVua0RhdGESIwoMc3RyaW5nX3ZhbHVlGAEgASgJSABSC3N0cmluZ1ZhbHVlQgYKBGRhdG'
     'E=');
-

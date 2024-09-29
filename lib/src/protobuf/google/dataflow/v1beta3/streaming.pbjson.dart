@@ -17,11 +17,45 @@ import 'dart:typed_data' as $typed_data;
 const TopologyConfig$json = {
   '1': 'TopologyConfig',
   '2': [
-    {'1': 'computations', '3': 1, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.ComputationTopology', '10': 'computations'},
-    {'1': 'data_disk_assignments', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.DataDiskAssignment', '10': 'dataDiskAssignments'},
-    {'1': 'user_stage_to_computation_name_map', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.TopologyConfig.UserStageToComputationNameMapEntry', '10': 'userStageToComputationNameMap'},
-    {'1': 'forwarding_key_bits', '3': 4, '4': 1, '5': 5, '10': 'forwardingKeyBits'},
-    {'1': 'persistent_state_version', '3': 5, '4': 1, '5': 5, '10': 'persistentStateVersion'},
+    {
+      '1': 'computations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ComputationTopology',
+      '10': 'computations'
+    },
+    {
+      '1': 'data_disk_assignments',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.DataDiskAssignment',
+      '10': 'dataDiskAssignments'
+    },
+    {
+      '1': 'user_stage_to_computation_name_map',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.TopologyConfig.UserStageToComputationNameMapEntry',
+      '10': 'userStageToComputationNameMap'
+    },
+    {
+      '1': 'forwarding_key_bits',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'forwardingKeyBits'
+    },
+    {
+      '1': 'persistent_state_version',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'persistentStateVersion'
+    },
   ],
   '3': [TopologyConfig_UserStageToComputationNameMapEntry$json],
 };
@@ -58,7 +92,13 @@ const PubsubLocation$json = {
     {'1': 'timestamp_label', '3': 3, '4': 1, '5': 9, '10': 'timestampLabel'},
     {'1': 'id_label', '3': 4, '4': 1, '5': 9, '10': 'idLabel'},
     {'1': 'drop_late_data', '3': 5, '4': 1, '5': 8, '10': 'dropLateData'},
-    {'1': 'tracking_subscription', '3': 6, '4': 1, '5': 9, '10': 'trackingSubscription'},
+    {
+      '1': 'tracking_subscription',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'trackingSubscription'
+    },
     {'1': 'with_attributes', '3': 7, '4': 1, '5': 8, '10': 'withAttributes'},
   ],
 };
@@ -80,8 +120,9 @@ const StreamingStageLocation$json = {
 };
 
 /// Descriptor for `StreamingStageLocation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List streamingStageLocationDescriptor = $convert.base64Decode(
-    'ChZTdHJlYW1pbmdTdGFnZUxvY2F0aW9uEhsKCXN0cmVhbV9pZBgBIAEoCVIIc3RyZWFtSWQ=');
+final $typed_data.Uint8List streamingStageLocationDescriptor =
+    $convert.base64Decode(
+        'ChZTdHJlYW1pbmdTdGFnZUxvY2F0aW9uEhsKCXN0cmVhbV9pZBgBIAEoCVIIc3RyZWFtSWQ=');
 
 @$core.Deprecated('Use streamingSideInputLocationDescriptor instead')
 const StreamingSideInputLocation$json = {
@@ -93,9 +134,10 @@ const StreamingSideInputLocation$json = {
 };
 
 /// Descriptor for `StreamingSideInputLocation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List streamingSideInputLocationDescriptor = $convert.base64Decode(
-    'ChpTdHJlYW1pbmdTaWRlSW5wdXRMb2NhdGlvbhIQCgN0YWcYASABKAlSA3RhZxIhCgxzdGF0ZV'
-    '9mYW1pbHkYAiABKAlSC3N0YXRlRmFtaWx5');
+final $typed_data.Uint8List streamingSideInputLocationDescriptor =
+    $convert.base64Decode(
+        'ChpTdHJlYW1pbmdTaWRlSW5wdXRMb2NhdGlvbhIQCgN0YWcYASABKAlSA3RhZxIhCgxzdGF0ZV'
+        '9mYW1pbHkYAiABKAlSC3N0YXRlRmFtaWx5');
 
 @$core.Deprecated('Use customSourceLocationDescriptor instead')
 const CustomSourceLocation$json = {
@@ -106,17 +148,50 @@ const CustomSourceLocation$json = {
 };
 
 /// Descriptor for `CustomSourceLocation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List customSourceLocationDescriptor = $convert.base64Decode(
-    'ChRDdXN0b21Tb3VyY2VMb2NhdGlvbhIaCghzdGF0ZWZ1bBgBIAEoCFIIc3RhdGVmdWw=');
+final $typed_data.Uint8List customSourceLocationDescriptor =
+    $convert.base64Decode(
+        'ChRDdXN0b21Tb3VyY2VMb2NhdGlvbhIaCghzdGF0ZWZ1bBgBIAEoCFIIc3RhdGVmdWw=');
 
 @$core.Deprecated('Use streamLocationDescriptor instead')
 const StreamLocation$json = {
   '1': 'StreamLocation',
   '2': [
-    {'1': 'streaming_stage_location', '3': 1, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.StreamingStageLocation', '9': 0, '10': 'streamingStageLocation'},
-    {'1': 'pubsub_location', '3': 2, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.PubsubLocation', '9': 0, '10': 'pubsubLocation'},
-    {'1': 'side_input_location', '3': 3, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.StreamingSideInputLocation', '9': 0, '10': 'sideInputLocation'},
-    {'1': 'custom_source_location', '3': 4, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.CustomSourceLocation', '9': 0, '10': 'customSourceLocation'},
+    {
+      '1': 'streaming_stage_location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StreamingStageLocation',
+      '9': 0,
+      '10': 'streamingStageLocation'
+    },
+    {
+      '1': 'pubsub_location',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.PubsubLocation',
+      '9': 0,
+      '10': 'pubsubLocation'
+    },
+    {
+      '1': 'side_input_location',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StreamingSideInputLocation',
+      '9': 0,
+      '10': 'sideInputLocation'
+    },
+    {
+      '1': 'custom_source_location',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.CustomSourceLocation',
+      '9': 0,
+      '10': 'customSourceLocation'
+    },
   ],
   '8': [
     {'1': 'location'},
@@ -154,10 +229,38 @@ const ComputationTopology$json = {
   '2': [
     {'1': 'system_stage_name', '3': 1, '4': 1, '5': 9, '10': 'systemStageName'},
     {'1': 'computation_id', '3': 5, '4': 1, '5': 9, '10': 'computationId'},
-    {'1': 'key_ranges', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.KeyRangeLocation', '10': 'keyRanges'},
-    {'1': 'inputs', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.StreamLocation', '10': 'inputs'},
-    {'1': 'outputs', '3': 4, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.StreamLocation', '10': 'outputs'},
-    {'1': 'state_families', '3': 7, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.StateFamilyConfig', '10': 'stateFamilies'},
+    {
+      '1': 'key_ranges',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.KeyRangeLocation',
+      '10': 'keyRanges'
+    },
+    {
+      '1': 'inputs',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StreamLocation',
+      '10': 'inputs'
+    },
+    {
+      '1': 'outputs',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StreamLocation',
+      '10': 'outputs'
+    },
+    {
+      '1': 'state_families',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.StateFamilyConfig',
+      '10': 'stateFamilies'
+    },
   ],
 };
 
@@ -178,7 +281,13 @@ const KeyRangeLocation$json = {
   '2': [
     {'1': 'start', '3': 1, '4': 1, '5': 9, '10': 'start'},
     {'1': 'end', '3': 2, '4': 1, '5': 9, '10': 'end'},
-    {'1': 'delivery_endpoint', '3': 3, '4': 1, '5': 9, '10': 'deliveryEndpoint'},
+    {
+      '1': 'delivery_endpoint',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'deliveryEndpoint'
+    },
     {'1': 'data_disk', '3': 5, '4': 1, '5': 9, '10': 'dataDisk'},
     {
       '1': 'deprecated_persistent_directory',
@@ -235,16 +344,24 @@ const KeyRangeDataDiskAssignment$json = {
 };
 
 /// Descriptor for `KeyRangeDataDiskAssignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List keyRangeDataDiskAssignmentDescriptor = $convert.base64Decode(
-    'ChpLZXlSYW5nZURhdGFEaXNrQXNzaWdubWVudBIUCgVzdGFydBgBIAEoCVIFc3RhcnQSEAoDZW'
-    '5kGAIgASgJUgNlbmQSGwoJZGF0YV9kaXNrGAMgASgJUghkYXRhRGlzaw==');
+final $typed_data.Uint8List keyRangeDataDiskAssignmentDescriptor =
+    $convert.base64Decode(
+        'ChpLZXlSYW5nZURhdGFEaXNrQXNzaWdubWVudBIUCgVzdGFydBgBIAEoCVIFc3RhcnQSEAoDZW'
+        '5kGAIgASgJUgNlbmQSGwoJZGF0YV9kaXNrGAMgASgJUghkYXRhRGlzaw==');
 
 @$core.Deprecated('Use streamingComputationRangesDescriptor instead')
 const StreamingComputationRanges$json = {
   '1': 'StreamingComputationRanges',
   '2': [
     {'1': 'computation_id', '3': 1, '4': 1, '5': 9, '10': 'computationId'},
-    {'1': 'range_assignments', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.KeyRangeDataDiskAssignment', '10': 'rangeAssignments'},
+    {
+      '1': 'range_assignments',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.KeyRangeDataDiskAssignment',
+      '10': 'rangeAssignments'
+    },
   ],
 };
 
@@ -259,13 +376,19 @@ const StreamingApplianceSnapshotConfig$json = {
   '1': 'StreamingApplianceSnapshotConfig',
   '2': [
     {'1': 'snapshot_id', '3': 1, '4': 1, '5': 9, '10': 'snapshotId'},
-    {'1': 'import_state_endpoint', '3': 2, '4': 1, '5': 9, '10': 'importStateEndpoint'},
+    {
+      '1': 'import_state_endpoint',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'importStateEndpoint'
+    },
   ],
 };
 
 /// Descriptor for `StreamingApplianceSnapshotConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List streamingApplianceSnapshotConfigDescriptor = $convert.base64Decode(
-    'CiBTdHJlYW1pbmdBcHBsaWFuY2VTbmFwc2hvdENvbmZpZxIfCgtzbmFwc2hvdF9pZBgBIAEoCV'
-    'IKc25hcHNob3RJZBIyChVpbXBvcnRfc3RhdGVfZW5kcG9pbnQYAiABKAlSE2ltcG9ydFN0YXRl'
-    'RW5kcG9pbnQ=');
-
+final $typed_data.Uint8List streamingApplianceSnapshotConfigDescriptor =
+    $convert.base64Decode(
+        'CiBTdHJlYW1pbmdBcHBsaWFuY2VTbmFwc2hvdENvbmZpZxIfCgtzbmFwc2hvdF9pZBgBIAEoCV'
+        'IKc25hcHNob3RJZBIyChVpbXBvcnRfc3RhdGVfZW5kcG9pbnQYAiABKAlSE2ltcG9ydFN0YXRl'
+        'RW5kcG9pbnQ=');

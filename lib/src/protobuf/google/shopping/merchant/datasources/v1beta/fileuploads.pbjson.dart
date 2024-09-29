@@ -18,13 +18,59 @@ const FileUpload$json = {
   '1': 'FileUpload',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'data_source_id', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'dataSourceId'},
-    {'1': 'processing_state', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.datasources.v1beta.FileUpload.ProcessingState', '8': {}, '10': 'processingState'},
-    {'1': 'issues', '3': 4, '4': 3, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.FileUpload.Issue', '8': {}, '10': 'issues'},
+    {
+      '1': 'data_source_id',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'dataSourceId'
+    },
+    {
+      '1': 'processing_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.FileUpload.ProcessingState',
+      '8': {},
+      '10': 'processingState'
+    },
+    {
+      '1': 'issues',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.FileUpload.Issue',
+      '8': {},
+      '10': 'issues'
+    },
     {'1': 'items_total', '3': 5, '4': 1, '5': 3, '8': {}, '10': 'itemsTotal'},
-    {'1': 'items_created', '3': 6, '4': 1, '5': 3, '8': {}, '10': 'itemsCreated'},
-    {'1': 'items_updated', '3': 7, '4': 1, '5': 3, '8': {}, '10': 'itemsUpdated'},
-    {'1': 'upload_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'uploadTime'},
+    {
+      '1': 'items_created',
+      '3': 6,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'itemsCreated'
+    },
+    {
+      '1': 'items_updated',
+      '3': 7,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'itemsUpdated'
+    },
+    {
+      '1': 'upload_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'uploadTime'
+    },
   ],
   '3': [FileUpload_Issue$json],
   '4': [FileUpload_ProcessingState$json],
@@ -39,8 +85,24 @@ const FileUpload_Issue$json = {
     {'1': 'description', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'description'},
     {'1': 'code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'code'},
     {'1': 'count', '3': 4, '4': 1, '5': 3, '8': {}, '10': 'count'},
-    {'1': 'severity', '3': 5, '4': 1, '5': 14, '6': '.google.shopping.merchant.datasources.v1beta.FileUpload.Issue.Severity', '8': {}, '10': 'severity'},
-    {'1': 'documentation_uri', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'documentationUri'},
+    {
+      '1': 'severity',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.FileUpload.Issue.Severity',
+      '8': {},
+      '10': 'severity'
+    },
+    {
+      '1': 'documentation_uri',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'documentationUri'
+    },
   ],
   '4': [FileUpload_Issue_Severity$json],
 };
@@ -101,4 +163,3 @@ const GetFileUploadRequest$json = {
 final $typed_data.Uint8List getFileUploadRequestDescriptor = $convert.base64Decode(
     'ChRHZXRGaWxlVXBsb2FkUmVxdWVzdBJBCgRuYW1lGAEgASgJQi3gQQL6QScKJW1lcmNoYW50YX'
     'BpLmdvb2dsZWFwaXMuY29tL0ZpbGVVcGxvYWRSBG5hbWU=');
-

@@ -17,8 +17,24 @@ import 'dart:typed_data' as $typed_data;
 const AuditData$json = {
   '1': 'AuditData',
   '2': [
-    {'1': 'update_service', '3': 1, '4': 1, '5': 11, '6': '.google.appengine.v1beta.UpdateServiceMethod', '9': 0, '10': 'updateService'},
-    {'1': 'create_version', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.CreateVersionMethod', '9': 0, '10': 'createVersion'},
+    {
+      '1': 'update_service',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.UpdateServiceMethod',
+      '9': 0,
+      '10': 'updateService'
+    },
+    {
+      '1': 'create_version',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.CreateVersionMethod',
+      '9': 0,
+      '10': 'createVersion'
+    },
   ],
   '8': [
     {'1': 'method'},
@@ -36,7 +52,14 @@ final $typed_data.Uint8List auditDataDescriptor = $convert.base64Decode(
 const UpdateServiceMethod$json = {
   '1': 'UpdateServiceMethod',
   '2': [
-    {'1': 'request', '3': 1, '4': 1, '5': 11, '6': '.google.appengine.v1beta.UpdateServiceRequest', '10': 'request'},
+    {
+      '1': 'request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.UpdateServiceRequest',
+      '10': 'request'
+    },
   ],
 };
 
@@ -49,7 +72,14 @@ final $typed_data.Uint8List updateServiceMethodDescriptor = $convert.base64Decod
 const CreateVersionMethod$json = {
   '1': 'CreateVersionMethod',
   '2': [
-    {'1': 'request', '3': 1, '4': 1, '5': 11, '6': '.google.appengine.v1beta.CreateVersionRequest', '10': 'request'},
+    {
+      '1': 'request',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.CreateVersionRequest',
+      '10': 'request'
+    },
   ],
 };
 
@@ -57,4 +87,3 @@ const CreateVersionMethod$json = {
 final $typed_data.Uint8List createVersionMethodDescriptor = $convert.base64Decode(
     'ChNDcmVhdGVWZXJzaW9uTWV0aG9kEkcKB3JlcXVlc3QYASABKAsyLS5nb29nbGUuYXBwZW5naW'
     '5lLnYxYmV0YS5DcmVhdGVWZXJzaW9uUmVxdWVzdFIHcmVxdWVzdA==');
-

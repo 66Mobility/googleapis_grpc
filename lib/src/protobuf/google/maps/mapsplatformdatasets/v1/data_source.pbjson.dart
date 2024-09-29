@@ -34,7 +34,14 @@ const LocalFileSource$json = {
   '1': 'LocalFileSource',
   '2': [
     {'1': 'filename', '3': 1, '4': 1, '5': 9, '10': 'filename'},
-    {'1': 'file_format', '3': 2, '4': 1, '5': 14, '6': '.google.maps.mapsplatformdatasets.v1.FileFormat', '10': 'fileFormat'},
+    {
+      '1': 'file_format',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.mapsplatformdatasets.v1.FileFormat',
+      '10': 'fileFormat'
+    },
   ],
 };
 
@@ -49,7 +56,14 @@ const GcsSource$json = {
   '1': 'GcsSource',
   '2': [
     {'1': 'input_uri', '3': 1, '4': 1, '5': 9, '10': 'inputUri'},
-    {'1': 'file_format', '3': 2, '4': 1, '5': 14, '6': '.google.maps.mapsplatformdatasets.v1.FileFormat', '10': 'fileFormat'},
+    {
+      '1': 'file_format',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.mapsplatformdatasets.v1.FileFormat',
+      '10': 'fileFormat'
+    },
   ],
 };
 
@@ -58,4 +72,3 @@ final $typed_data.Uint8List gcsSourceDescriptor = $convert.base64Decode(
     'CglHY3NTb3VyY2USGwoJaW5wdXRfdXJpGAEgASgJUghpbnB1dFVyaRJQCgtmaWxlX2Zvcm1hdB'
     'gCIAEoDjIvLmdvb2dsZS5tYXBzLm1hcHNwbGF0Zm9ybWRhdGFzZXRzLnYxLkZpbGVGb3JtYXRS'
     'CmZpbGVGb3JtYXQ=');
-

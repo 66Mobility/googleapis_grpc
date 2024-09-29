@@ -60,40 +60,53 @@ class CssProductInput extends $pb.GeneratedMessage {
     return $result;
   }
   CssProductInput._() : super();
-  factory CssProductInput.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CssProductInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CssProductInput.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CssProductInput.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CssProductInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CssProductInput',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'finalName')
     ..aOS(3, _omitFieldNames ? '' : 'rawProvidedId')
     ..aOS(4, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(5, _omitFieldNames ? '' : 'feedLabel')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'freshnessTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$537.Attributes>(7, _omitFieldNames ? '' : 'attributes', subBuilder: $537.Attributes.create)
-    ..pc<$536.CustomAttribute>(8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $536.CustomAttribute.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'freshnessTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$537.Attributes>(7, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $537.Attributes.create)
+    ..pc<$536.CustomAttribute>(
+        8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
+        subBuilder: $536.CustomAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CssProductInput clone() => CssProductInput()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CssProductInput copyWith(void Function(CssProductInput) updates) => super.copyWith((message) => updates(message as CssProductInput)) as CssProductInput;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CssProductInput copyWith(void Function(CssProductInput) updates) =>
+      super.copyWith((message) => updates(message as CssProductInput))
+          as CssProductInput;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CssProductInput create() => CssProductInput._();
   CssProductInput createEmptyInstance() => create();
-  static $pb.PbList<CssProductInput> createRepeated() => $pb.PbList<CssProductInput>();
+  static $pb.PbList<CssProductInput> createRepeated() =>
+      $pb.PbList<CssProductInput>();
   @$core.pragma('dart2js:noInline')
-  static CssProductInput getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CssProductInput>(create);
+  static CssProductInput getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CssProductInput>(create);
   static CssProductInput? _defaultInstance;
 
   /// The name of the CSS Product input.
@@ -102,7 +115,10 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -115,7 +131,10 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get finalName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set finalName($core.String v) { $_setString(1, v); }
+  set finalName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFinalName() => $_has(1);
   @$pb.TagNumber(2)
@@ -129,7 +148,10 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get rawProvidedId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set rawProvidedId($core.String v) { $_setString(2, v); }
+  set rawProvidedId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRawProvidedId() => $_has(2);
   @$pb.TagNumber(3)
@@ -141,7 +163,10 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get contentLanguage => $_getSZ(3);
   @$pb.TagNumber(4)
-  set contentLanguage($core.String v) { $_setString(3, v); }
+  set contentLanguage($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasContentLanguage() => $_has(3);
   @$pb.TagNumber(4)
@@ -155,7 +180,10 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get feedLabel => $_getSZ(4);
   @$pb.TagNumber(5)
-  set feedLabel($core.String v) { $_setString(4, v); }
+  set feedLabel($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFeedLabel() => $_has(4);
   @$pb.TagNumber(5)
@@ -181,7 +209,10 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get freshnessTime => $_getN(5);
   @$pb.TagNumber(6)
-  set freshnessTime($302.Timestamp v) { setField(6, v); }
+  set freshnessTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFreshnessTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -193,7 +224,10 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $537.Attributes get attributes => $_getN(6);
   @$pb.TagNumber(7)
-  set attributes($537.Attributes v) { setField(7, v); }
+  set attributes($537.Attributes v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasAttributes() => $_has(6);
   @$pb.TagNumber(7)
@@ -231,35 +265,49 @@ class InsertCssProductInputRequest extends $pb.GeneratedMessage {
     return $result;
   }
   InsertCssProductInputRequest._() : super();
-  factory InsertCssProductInputRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InsertCssProductInputRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InsertCssProductInputRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InsertCssProductInputRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertCssProductInputRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InsertCssProductInputRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<CssProductInput>(2, _omitFieldNames ? '' : 'cssProductInput', subBuilder: CssProductInput.create)
+    ..aOM<CssProductInput>(2, _omitFieldNames ? '' : 'cssProductInput',
+        subBuilder: CssProductInput.create)
     ..aInt64(3, _omitFieldNames ? '' : 'feedId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InsertCssProductInputRequest clone() => InsertCssProductInputRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InsertCssProductInputRequest copyWith(void Function(InsertCssProductInputRequest) updates) => super.copyWith((message) => updates(message as InsertCssProductInputRequest)) as InsertCssProductInputRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InsertCssProductInputRequest clone() =>
+      InsertCssProductInputRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InsertCssProductInputRequest copyWith(
+          void Function(InsertCssProductInputRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as InsertCssProductInputRequest))
+          as InsertCssProductInputRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static InsertCssProductInputRequest create() => InsertCssProductInputRequest._();
+  static InsertCssProductInputRequest create() =>
+      InsertCssProductInputRequest._();
   InsertCssProductInputRequest createEmptyInstance() => create();
-  static $pb.PbList<InsertCssProductInputRequest> createRepeated() => $pb.PbList<InsertCssProductInputRequest>();
+  static $pb.PbList<InsertCssProductInputRequest> createRepeated() =>
+      $pb.PbList<InsertCssProductInputRequest>();
   @$core.pragma('dart2js:noInline')
-  static InsertCssProductInputRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InsertCssProductInputRequest>(create);
+  static InsertCssProductInputRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InsertCssProductInputRequest>(create);
   static InsertCssProductInputRequest? _defaultInstance;
 
   /// Required. The account where this CSS Product will be inserted.
@@ -267,7 +315,10 @@ class InsertCssProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -277,7 +328,10 @@ class InsertCssProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CssProductInput get cssProductInput => $_getN(1);
   @$pb.TagNumber(2)
-  set cssProductInput(CssProductInput v) { setField(2, v); }
+  set cssProductInput(CssProductInput v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCssProductInput() => $_has(1);
   @$pb.TagNumber(2)
@@ -293,7 +347,10 @@ class InsertCssProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get feedId => $_getI64(2);
   @$pb.TagNumber(3)
-  set feedId($fixnum.Int64 v) { $_setInt64(2, v); }
+  set feedId($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFeedId() => $_has(2);
   @$pb.TagNumber(3)
@@ -316,34 +373,47 @@ class DeleteCssProductInputRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteCssProductInputRequest._() : super();
-  factory DeleteCssProductInputRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteCssProductInputRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteCssProductInputRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteCssProductInputRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteCssProductInputRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteCssProductInputRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'supplementalFeedId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteCssProductInputRequest clone() => DeleteCssProductInputRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteCssProductInputRequest copyWith(void Function(DeleteCssProductInputRequest) updates) => super.copyWith((message) => updates(message as DeleteCssProductInputRequest)) as DeleteCssProductInputRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteCssProductInputRequest clone() =>
+      DeleteCssProductInputRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteCssProductInputRequest copyWith(
+          void Function(DeleteCssProductInputRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as DeleteCssProductInputRequest))
+          as DeleteCssProductInputRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteCssProductInputRequest create() => DeleteCssProductInputRequest._();
+  static DeleteCssProductInputRequest create() =>
+      DeleteCssProductInputRequest._();
   DeleteCssProductInputRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteCssProductInputRequest> createRepeated() => $pb.PbList<DeleteCssProductInputRequest>();
+  static $pb.PbList<DeleteCssProductInputRequest> createRepeated() =>
+      $pb.PbList<DeleteCssProductInputRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteCssProductInputRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteCssProductInputRequest>(create);
+  static DeleteCssProductInputRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteCssProductInputRequest>(create);
   static DeleteCssProductInputRequest? _defaultInstance;
 
   /// Required. The name of the CSS product input resource to delete.
@@ -351,7 +421,10 @@ class DeleteCssProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -364,13 +437,16 @@ class DeleteCssProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get supplementalFeedId => $_getI64(1);
   @$pb.TagNumber(2)
-  set supplementalFeedId($fixnum.Int64 v) { $_setInt64(1, v); }
+  set supplementalFeedId($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSupplementalFeedId() => $_has(1);
   @$pb.TagNumber(2)
   void clearSupplementalFeedId() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const References$json = {
   '1': 'References',
   '2': [
-    {'1': 'reviews', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.Review', '10': 'reviews'},
+    {
+      '1': 'reviews',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.places.v1.Review',
+      '10': 'reviews'
+    },
     {'1': 'places', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'places'},
   ],
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List referencesDescriptor = $convert.base64Decode(
     'CgpSZWZlcmVuY2VzEjcKB3Jldmlld3MYASADKAsyHS5nb29nbGUubWFwcy5wbGFjZXMudjEuUm'
     'V2aWV3UgdyZXZpZXdzEjgKBnBsYWNlcxgCIAMoCUIg+kEdChtwbGFjZXMuZ29vZ2xlYXBpcy5j'
     'b20vUGxhY2VSBnBsYWNlcw==');
-

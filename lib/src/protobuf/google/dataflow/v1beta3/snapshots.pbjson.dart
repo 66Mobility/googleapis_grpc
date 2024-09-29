@@ -37,7 +37,14 @@ const PubsubSnapshotMetadata$json = {
   '2': [
     {'1': 'topic_name', '3': 1, '4': 1, '5': 9, '10': 'topicName'},
     {'1': 'snapshot_name', '3': 2, '4': 1, '5': 9, '10': 'snapshotName'},
-    {'1': 'expire_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
+    {
+      '1': 'expire_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
   ],
 };
 
@@ -54,10 +61,38 @@ const Snapshot$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'source_job_id', '3': 3, '4': 1, '5': 9, '10': 'sourceJobId'},
-    {'1': 'creation_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'creationTime'},
-    {'1': 'ttl', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'ttl'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.SnapshotState', '10': 'state'},
-    {'1': 'pubsub_metadata', '3': 7, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.PubsubSnapshotMetadata', '10': 'pubsubMetadata'},
+    {
+      '1': 'creation_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'creationTime'
+    },
+    {
+      '1': 'ttl',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'ttl'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.SnapshotState',
+      '10': 'state'
+    },
+    {
+      '1': 'pubsub_metadata',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.PubsubSnapshotMetadata',
+      '10': 'pubsubMetadata'
+    },
     {'1': 'description', '3': 8, '4': 1, '5': 9, '10': 'description'},
     {'1': 'disk_size_bytes', '3': 9, '4': 1, '5': 3, '10': 'diskSizeBytes'},
     {'1': 'region', '3': 10, '4': 1, '5': 9, '10': 'region'},
@@ -114,8 +149,8 @@ const DeleteSnapshotResponse$json = {
 };
 
 /// Descriptor for `DeleteSnapshotResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSnapshotResponseDescriptor = $convert.base64Decode(
-    'ChZEZWxldGVTbmFwc2hvdFJlc3BvbnNl');
+final $typed_data.Uint8List deleteSnapshotResponseDescriptor =
+    $convert.base64Decode('ChZEZWxldGVTbmFwc2hvdFJlc3BvbnNl');
 
 @$core.Deprecated('Use listSnapshotsRequestDescriptor instead')
 const ListSnapshotsRequest$json = {
@@ -136,7 +171,14 @@ final $typed_data.Uint8List listSnapshotsRequestDescriptor = $convert.base64Deco
 const ListSnapshotsResponse$json = {
   '1': 'ListSnapshotsResponse',
   '2': [
-    {'1': 'snapshots', '3': 1, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.Snapshot', '10': 'snapshots'},
+    {
+      '1': 'snapshots',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.Snapshot',
+      '10': 'snapshots'
+    },
   ],
 };
 
@@ -144,4 +186,3 @@ const ListSnapshotsResponse$json = {
 final $typed_data.Uint8List listSnapshotsResponseDescriptor = $convert.base64Decode(
     'ChVMaXN0U25hcHNob3RzUmVzcG9uc2USPwoJc25hcHNob3RzGAEgAygLMiEuZ29vZ2xlLmRhdG'
     'FmbG93LnYxYmV0YTMuU25hcHNob3RSCXNuYXBzaG90cw==');
-

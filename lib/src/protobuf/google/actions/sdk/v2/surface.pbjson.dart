@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const SurfaceRequirements$json = {
   '1': 'SurfaceRequirements',
   '2': [
-    {'1': 'minimum_requirements', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.CapabilityRequirement', '10': 'minimumRequirements'},
+    {
+      '1': 'minimum_requirements',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.CapabilityRequirement',
+      '10': 'minimumRequirements'
+    },
   ],
 };
 
@@ -31,7 +38,14 @@ final $typed_data.Uint8List surfaceRequirementsDescriptor = $convert.base64Decod
 const CapabilityRequirement$json = {
   '1': 'CapabilityRequirement',
   '2': [
-    {'1': 'capability', '3': 1, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.CapabilityRequirement.SurfaceCapability', '10': 'capability'},
+    {
+      '1': 'capability',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.CapabilityRequirement.SurfaceCapability',
+      '10': 'capability'
+    },
   ],
   '4': [CapabilityRequirement_SurfaceCapability$json],
 };
@@ -59,4 +73,3 @@ final $typed_data.Uint8List capabilityRequirementDescriptor = $convert.base64Dec
     'NQRUNJRklFRBAAEhAKDEFVRElPX09VVFBVVBABEhEKDVNDUkVFTl9PVVRQVVQQAhIYChRNRURJ'
     'QV9SRVNQT05TRV9BVURJTxADEg8KC1dFQl9CUk9XU0VSEAQSEwoPQUNDT1VOVF9MSU5LSU5HEA'
     'cSFgoSSU5URVJBQ1RJVkVfQ0FOVkFTEAgSEAoMSE9NRV9TVE9SQUdFEAk=');
-

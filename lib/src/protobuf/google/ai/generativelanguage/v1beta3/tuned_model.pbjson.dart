@@ -17,18 +17,94 @@ import 'dart:typed_data' as $typed_data;
 const TunedModel$json = {
   '1': 'TunedModel',
   '2': [
-    {'1': 'tuned_model_source', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.TunedModelSource', '8': {}, '9': 0, '10': 'tunedModelSource'},
-    {'1': 'base_model', '3': 4, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'baseModel'},
+    {
+      '1': 'tuned_model_source',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.TunedModelSource',
+      '8': {},
+      '9': 0,
+      '10': 'tunedModelSource'
+    },
+    {
+      '1': 'base_model',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'baseModel'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'description', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'description'},
-    {'1': 'temperature', '3': 11, '4': 1, '5': 2, '8': {}, '9': 1, '10': 'temperature', '17': true},
-    {'1': 'top_p', '3': 12, '4': 1, '5': 2, '8': {}, '9': 2, '10': 'topP', '17': true},
-    {'1': 'top_k', '3': 13, '4': 1, '5': 5, '8': {}, '9': 3, '10': 'topK', '17': true},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta3.TunedModel.State', '8': {}, '10': 'state'},
-    {'1': 'create_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'tuning_task', '3': 10, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.TuningTask', '8': {}, '10': 'tuningTask'},
+    {
+      '1': 'temperature',
+      '3': 11,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 1,
+      '10': 'temperature',
+      '17': true
+    },
+    {
+      '1': 'top_p',
+      '3': 12,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 2,
+      '10': 'topP',
+      '17': true
+    },
+    {
+      '1': 'top_k',
+      '3': 13,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 3,
+      '10': 'topK',
+      '17': true
+    },
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta3.TunedModel.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'tuning_task',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.TuningTask',
+      '8': {},
+      '10': 'tuningTask'
+    },
   ],
   '4': [TunedModel_State$json],
   '7': {},
@@ -91,11 +167,51 @@ final $typed_data.Uint8List tunedModelSourceDescriptor = $convert.base64Decode(
 const TuningTask$json = {
   '1': 'TuningTask',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
-    {'1': 'complete_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'completeTime'},
-    {'1': 'snapshots', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.TuningSnapshot', '8': {}, '10': 'snapshots'},
-    {'1': 'training_data', '3': 4, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Dataset', '8': {}, '10': 'trainingData'},
-    {'1': 'hyperparameters', '3': 5, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Hyperparameters', '8': {}, '10': 'hyperparameters'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
+    {
+      '1': 'complete_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'completeTime'
+    },
+    {
+      '1': 'snapshots',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.TuningSnapshot',
+      '8': {},
+      '10': 'snapshots'
+    },
+    {
+      '1': 'training_data',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Dataset',
+      '8': {},
+      '10': 'trainingData'
+    },
+    {
+      '1': 'hyperparameters',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Hyperparameters',
+      '8': {},
+      '10': 'hyperparameters'
+    },
   ],
 };
 
@@ -114,9 +230,36 @@ final $typed_data.Uint8List tuningTaskDescriptor = $convert.base64Decode(
 const Hyperparameters$json = {
   '1': 'Hyperparameters',
   '2': [
-    {'1': 'epoch_count', '3': 14, '4': 1, '5': 5, '8': {}, '9': 0, '10': 'epochCount', '17': true},
-    {'1': 'batch_size', '3': 15, '4': 1, '5': 5, '8': {}, '9': 1, '10': 'batchSize', '17': true},
-    {'1': 'learning_rate', '3': 16, '4': 1, '5': 2, '8': {}, '9': 2, '10': 'learningRate', '17': true},
+    {
+      '1': 'epoch_count',
+      '3': 14,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 0,
+      '10': 'epochCount',
+      '17': true
+    },
+    {
+      '1': 'batch_size',
+      '3': 15,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 1,
+      '10': 'batchSize',
+      '17': true
+    },
+    {
+      '1': 'learning_rate',
+      '3': 16,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 2,
+      '10': 'learningRate',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_epoch_count'},
@@ -136,7 +279,16 @@ final $typed_data.Uint8List hyperparametersDescriptor = $convert.base64Decode(
 const Dataset$json = {
   '1': 'Dataset',
   '2': [
-    {'1': 'examples', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.TuningExamples', '8': {}, '9': 0, '10': 'examples'},
+    {
+      '1': 'examples',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.TuningExamples',
+      '8': {},
+      '9': 0,
+      '10': 'examples'
+    },
   ],
   '8': [
     {'1': 'dataset'},
@@ -152,7 +304,15 @@ final $typed_data.Uint8List datasetDescriptor = $convert.base64Decode(
 const TuningExamples$json = {
   '1': 'TuningExamples',
   '2': [
-    {'1': 'examples', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.TuningExample', '8': {}, '10': 'examples'},
+    {
+      '1': 'examples',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.TuningExample',
+      '8': {},
+      '10': 'examples'
+    },
   ],
 };
 
@@ -165,7 +325,15 @@ final $typed_data.Uint8List tuningExamplesDescriptor = $convert.base64Decode(
 const TuningExample$json = {
   '1': 'TuningExample',
   '2': [
-    {'1': 'text_input', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'textInput'},
+    {
+      '1': 'text_input',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'textInput'
+    },
     {'1': 'output', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'output'},
   ],
   '8': [
@@ -185,7 +353,15 @@ const TuningSnapshot$json = {
     {'1': 'step', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'step'},
     {'1': 'epoch', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'epoch'},
     {'1': 'mean_loss', '3': 3, '4': 1, '5': 2, '8': {}, '10': 'meanLoss'},
-    {'1': 'compute_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'computeTime'},
+    {
+      '1': 'compute_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'computeTime'
+    },
   ],
 };
 
@@ -195,4 +371,3 @@ final $typed_data.Uint8List tuningSnapshotDescriptor = $convert.base64Decode(
     'VCA+BBA1IFZXBvY2gSIAoJbWVhbl9sb3NzGAMgASgCQgPgQQNSCG1lYW5Mb3NzEkIKDGNvbXB1'
     'dGVfdGltZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1ILY29tcHV0ZV'
     'RpbWU=');
-

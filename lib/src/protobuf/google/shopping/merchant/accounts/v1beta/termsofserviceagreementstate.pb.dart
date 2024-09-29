@@ -65,37 +65,57 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
     return $result;
   }
   TermsOfServiceAgreementState._() : super();
-  factory TermsOfServiceAgreementState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TermsOfServiceAgreementState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TermsOfServiceAgreementState.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TermsOfServiceAgreementState.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TermsOfServiceAgreementState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TermsOfServiceAgreementState',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
-    ..e<$544.TermsOfServiceKind>(3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE, defaultOrMaker: $544.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED, valueOf: $544.TermsOfServiceKind.valueOf, enumValues: $544.TermsOfServiceKind.values)
-    ..aOM<Accepted>(4, _omitFieldNames ? '' : 'accepted', subBuilder: Accepted.create)
-    ..aOM<Required>(5, _omitFieldNames ? '' : 'required', subBuilder: Required.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<$544.TermsOfServiceKind>(
+        3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            $544.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED,
+        valueOf: $544.TermsOfServiceKind.valueOf,
+        enumValues: $544.TermsOfServiceKind.values)
+    ..aOM<Accepted>(4, _omitFieldNames ? '' : 'accepted',
+        subBuilder: Accepted.create)
+    ..aOM<Required>(5, _omitFieldNames ? '' : 'required',
+        subBuilder: Required.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TermsOfServiceAgreementState clone() => TermsOfServiceAgreementState()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TermsOfServiceAgreementState copyWith(void Function(TermsOfServiceAgreementState) updates) => super.copyWith((message) => updates(message as TermsOfServiceAgreementState)) as TermsOfServiceAgreementState;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TermsOfServiceAgreementState clone() =>
+      TermsOfServiceAgreementState()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TermsOfServiceAgreementState copyWith(
+          void Function(TermsOfServiceAgreementState) updates) =>
+      super.copyWith(
+              (message) => updates(message as TermsOfServiceAgreementState))
+          as TermsOfServiceAgreementState;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TermsOfServiceAgreementState create() => TermsOfServiceAgreementState._();
+  static TermsOfServiceAgreementState create() =>
+      TermsOfServiceAgreementState._();
   TermsOfServiceAgreementState createEmptyInstance() => create();
-  static $pb.PbList<TermsOfServiceAgreementState> createRepeated() => $pb.PbList<TermsOfServiceAgreementState>();
+  static $pb.PbList<TermsOfServiceAgreementState> createRepeated() =>
+      $pb.PbList<TermsOfServiceAgreementState>();
   @$core.pragma('dart2js:noInline')
-  static TermsOfServiceAgreementState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TermsOfServiceAgreementState>(create);
+  static TermsOfServiceAgreementState getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TermsOfServiceAgreementState>(create);
   static TermsOfServiceAgreementState? _defaultInstance;
 
   /// Identifier. The resource name of the terms of service version.
@@ -105,7 +125,10 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -116,7 +139,10 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get regionCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set regionCode($core.String v) { $_setString(1, v); }
+  set regionCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegionCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -126,7 +152,10 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $544.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
   @$pb.TagNumber(3)
-  set termsOfServiceKind($544.TermsOfServiceKind v) { setField(3, v); }
+  set termsOfServiceKind($544.TermsOfServiceKind v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTermsOfServiceKind() => $_has(2);
   @$pb.TagNumber(3)
@@ -137,7 +166,10 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Accepted get accepted => $_getN(3);
   @$pb.TagNumber(4)
-  set accepted(Accepted v) { setField(4, v); }
+  set accepted(Accepted v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAccepted() => $_has(3);
   @$pb.TagNumber(4)
@@ -149,7 +181,10 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Required get required => $_getN(4);
   @$pb.TagNumber(5)
-  set required(Required v) { setField(5, v); }
+  set required(Required v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRequired() => $_has(4);
   @$pb.TagNumber(5)
@@ -178,26 +213,33 @@ class Accepted extends $pb.GeneratedMessage {
     return $result;
   }
   Accepted._() : super();
-  factory Accepted.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Accepted.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Accepted.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Accepted.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Accepted', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Accepted',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'termsOfService')
     ..aOS(2, _omitFieldNames ? '' : 'acceptedBy')
-    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'validUntil', subBuilder: $327.Date.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'validUntil',
+        subBuilder: $327.Date.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Accepted clone() => Accepted()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Accepted copyWith(void Function(Accepted) updates) => super.copyWith((message) => updates(message as Accepted)) as Accepted;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Accepted copyWith(void Function(Accepted) updates) =>
+      super.copyWith((message) => updates(message as Accepted)) as Accepted;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -206,7 +248,8 @@ class Accepted extends $pb.GeneratedMessage {
   Accepted createEmptyInstance() => create();
   static $pb.PbList<Accepted> createRepeated() => $pb.PbList<Accepted>();
   @$core.pragma('dart2js:noInline')
-  static Accepted getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Accepted>(create);
+  static Accepted getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Accepted>(create);
   static Accepted? _defaultInstance;
 
   /// The accepted
@@ -214,7 +257,10 @@ class Accepted extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get termsOfService => $_getSZ(0);
   @$pb.TagNumber(1)
-  set termsOfService($core.String v) { $_setString(0, v); }
+  set termsOfService($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTermsOfService() => $_has(0);
   @$pb.TagNumber(1)
@@ -225,7 +271,10 @@ class Accepted extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get acceptedBy => $_getSZ(1);
   @$pb.TagNumber(2)
-  set acceptedBy($core.String v) { $_setString(1, v); }
+  set acceptedBy($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAcceptedBy() => $_has(1);
   @$pb.TagNumber(2)
@@ -240,7 +289,10 @@ class Accepted extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $327.Date get validUntil => $_getN(2);
   @$pb.TagNumber(3)
-  set validUntil($327.Date v) { setField(3, v); }
+  set validUntil($327.Date v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValidUntil() => $_has(2);
   @$pb.TagNumber(3)
@@ -265,25 +317,31 @@ class Required extends $pb.GeneratedMessage {
     return $result;
   }
   Required._() : super();
-  factory Required.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Required.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Required.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Required.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Required', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Required',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'termsOfService')
     ..aOS(2, _omitFieldNames ? '' : 'tosFileUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Required clone() => Required()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Required copyWith(void Function(Required) updates) => super.copyWith((message) => updates(message as Required)) as Required;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Required copyWith(void Function(Required) updates) =>
+      super.copyWith((message) => updates(message as Required)) as Required;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -292,7 +350,8 @@ class Required extends $pb.GeneratedMessage {
   Required createEmptyInstance() => create();
   static $pb.PbList<Required> createRepeated() => $pb.PbList<Required>();
   @$core.pragma('dart2js:noInline')
-  static Required getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Required>(create);
+  static Required getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Required>(create);
   static Required? _defaultInstance;
 
   /// The
@@ -301,7 +360,10 @@ class Required extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get termsOfService => $_getSZ(0);
   @$pb.TagNumber(1)
-  set termsOfService($core.String v) { $_setString(0, v); }
+  set termsOfService($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTermsOfService() => $_has(0);
   @$pb.TagNumber(1)
@@ -313,7 +375,10 @@ class Required extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get tosFileUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set tosFileUri($core.String v) { $_setString(1, v); }
+  set tosFileUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTosFileUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -332,33 +397,48 @@ class GetTermsOfServiceAgreementStateRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetTermsOfServiceAgreementStateRequest._() : super();
-  factory GetTermsOfServiceAgreementStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetTermsOfServiceAgreementStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetTermsOfServiceAgreementStateRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetTermsOfServiceAgreementStateRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetTermsOfServiceAgreementStateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetTermsOfServiceAgreementStateRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetTermsOfServiceAgreementStateRequest clone() => GetTermsOfServiceAgreementStateRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetTermsOfServiceAgreementStateRequest copyWith(void Function(GetTermsOfServiceAgreementStateRequest) updates) => super.copyWith((message) => updates(message as GetTermsOfServiceAgreementStateRequest)) as GetTermsOfServiceAgreementStateRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetTermsOfServiceAgreementStateRequest clone() =>
+      GetTermsOfServiceAgreementStateRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetTermsOfServiceAgreementStateRequest copyWith(
+          void Function(GetTermsOfServiceAgreementStateRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as GetTermsOfServiceAgreementStateRequest))
+          as GetTermsOfServiceAgreementStateRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetTermsOfServiceAgreementStateRequest create() => GetTermsOfServiceAgreementStateRequest._();
+  static GetTermsOfServiceAgreementStateRequest create() =>
+      GetTermsOfServiceAgreementStateRequest._();
   GetTermsOfServiceAgreementStateRequest createEmptyInstance() => create();
-  static $pb.PbList<GetTermsOfServiceAgreementStateRequest> createRepeated() => $pb.PbList<GetTermsOfServiceAgreementStateRequest>();
+  static $pb.PbList<GetTermsOfServiceAgreementStateRequest> createRepeated() =>
+      $pb.PbList<GetTermsOfServiceAgreementStateRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetTermsOfServiceAgreementStateRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetTermsOfServiceAgreementStateRequest>(create);
+  static GetTermsOfServiceAgreementStateRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          GetTermsOfServiceAgreementStateRequest>(create);
   static GetTermsOfServiceAgreementStateRequest? _defaultInstance;
 
   /// Required. The resource name of the terms of service version.
@@ -367,7 +447,10 @@ class GetTermsOfServiceAgreementStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -376,7 +459,8 @@ class GetTermsOfServiceAgreementStateRequest extends $pb.GeneratedMessage {
 
 /// Request message for the `RetrieveForApplicationTermsOfServiceAgreementState`
 /// method.
-class RetrieveForApplicationTermsOfServiceAgreementStateRequest extends $pb.GeneratedMessage {
+class RetrieveForApplicationTermsOfServiceAgreementStateRequest
+    extends $pb.GeneratedMessage {
   factory RetrieveForApplicationTermsOfServiceAgreementStateRequest({
     $core.String? parent,
   }) {
@@ -387,47 +471,74 @@ class RetrieveForApplicationTermsOfServiceAgreementStateRequest extends $pb.Gene
     return $result;
   }
   RetrieveForApplicationTermsOfServiceAgreementStateRequest._() : super();
-  factory RetrieveForApplicationTermsOfServiceAgreementStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RetrieveForApplicationTermsOfServiceAgreementStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RetrieveForApplicationTermsOfServiceAgreementStateRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RetrieveForApplicationTermsOfServiceAgreementStateRequest.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetrieveForApplicationTermsOfServiceAgreementStateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'RetrieveForApplicationTermsOfServiceAgreementStateRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RetrieveForApplicationTermsOfServiceAgreementStateRequest clone() => RetrieveForApplicationTermsOfServiceAgreementStateRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RetrieveForApplicationTermsOfServiceAgreementStateRequest copyWith(void Function(RetrieveForApplicationTermsOfServiceAgreementStateRequest) updates) => super.copyWith((message) => updates(message as RetrieveForApplicationTermsOfServiceAgreementStateRequest)) as RetrieveForApplicationTermsOfServiceAgreementStateRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RetrieveForApplicationTermsOfServiceAgreementStateRequest clone() =>
+      RetrieveForApplicationTermsOfServiceAgreementStateRequest()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RetrieveForApplicationTermsOfServiceAgreementStateRequest copyWith(
+          void Function(
+                  RetrieveForApplicationTermsOfServiceAgreementStateRequest)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as RetrieveForApplicationTermsOfServiceAgreementStateRequest))
+          as RetrieveForApplicationTermsOfServiceAgreementStateRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RetrieveForApplicationTermsOfServiceAgreementStateRequest create() => RetrieveForApplicationTermsOfServiceAgreementStateRequest._();
-  RetrieveForApplicationTermsOfServiceAgreementStateRequest createEmptyInstance() => create();
-  static $pb.PbList<RetrieveForApplicationTermsOfServiceAgreementStateRequest> createRepeated() => $pb.PbList<RetrieveForApplicationTermsOfServiceAgreementStateRequest>();
+  static RetrieveForApplicationTermsOfServiceAgreementStateRequest create() =>
+      RetrieveForApplicationTermsOfServiceAgreementStateRequest._();
+  RetrieveForApplicationTermsOfServiceAgreementStateRequest
+      createEmptyInstance() => create();
+  static $pb.PbList<RetrieveForApplicationTermsOfServiceAgreementStateRequest>
+      createRepeated() => $pb.PbList<
+          RetrieveForApplicationTermsOfServiceAgreementStateRequest>();
   @$core.pragma('dart2js:noInline')
-  static RetrieveForApplicationTermsOfServiceAgreementStateRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RetrieveForApplicationTermsOfServiceAgreementStateRequest>(create);
-  static RetrieveForApplicationTermsOfServiceAgreementStateRequest? _defaultInstance;
+  static RetrieveForApplicationTermsOfServiceAgreementStateRequest
+      getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          RetrieveForApplicationTermsOfServiceAgreementStateRequest>(create);
+  static RetrieveForApplicationTermsOfServiceAgreementStateRequest?
+      _defaultInstance;
 
   /// Required. The account for which to get a TermsOfServiceAgreementState
   /// Format: `accounts/{account}`
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
   void clearParent() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

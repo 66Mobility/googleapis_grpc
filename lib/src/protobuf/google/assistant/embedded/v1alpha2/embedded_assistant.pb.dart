@@ -18,11 +18,7 @@ import 'embedded_assistant.pbenum.dart';
 
 export 'embedded_assistant.pbenum.dart';
 
-enum AssistRequest_Type {
-  config, 
-  audioIn, 
-  notSet
-}
+enum AssistRequest_Type { config, audioIn, notSet }
 
 /// The top-level message sent by the client. Clients must send at least two, and
 /// typically numerous `AssistRequest` messages. The first message must
@@ -44,40 +40,52 @@ class AssistRequest extends $pb.GeneratedMessage {
     return $result;
   }
   AssistRequest._() : super();
-  factory AssistRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AssistRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AssistRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AssistRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AssistRequest_Type> _AssistRequest_TypeByTag = {
-    1 : AssistRequest_Type.config,
-    2 : AssistRequest_Type.audioIn,
-    0 : AssistRequest_Type.notSet
+  static const $core.Map<$core.int, AssistRequest_Type>
+      _AssistRequest_TypeByTag = {
+    1: AssistRequest_Type.config,
+    2: AssistRequest_Type.audioIn,
+    0: AssistRequest_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssistRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AssistRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<AssistConfig>(1, _omitFieldNames ? '' : 'config', subBuilder: AssistConfig.create)
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'audioIn', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<AssistConfig>(1, _omitFieldNames ? '' : 'config',
+        subBuilder: AssistConfig.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'audioIn', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AssistRequest clone() => AssistRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AssistRequest copyWith(void Function(AssistRequest) updates) => super.copyWith((message) => updates(message as AssistRequest)) as AssistRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AssistRequest copyWith(void Function(AssistRequest) updates) =>
+      super.copyWith((message) => updates(message as AssistRequest))
+          as AssistRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AssistRequest create() => AssistRequest._();
   AssistRequest createEmptyInstance() => create();
-  static $pb.PbList<AssistRequest> createRepeated() => $pb.PbList<AssistRequest>();
+  static $pb.PbList<AssistRequest> createRepeated() =>
+      $pb.PbList<AssistRequest>();
   @$core.pragma('dart2js:noInline')
-  static AssistRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AssistRequest>(create);
+  static AssistRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AssistRequest>(create);
   static AssistRequest? _defaultInstance;
 
   AssistRequest_Type whichType() => _AssistRequest_TypeByTag[$_whichOneof(0)]!;
@@ -89,7 +97,10 @@ class AssistRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AssistConfig get config => $_getN(0);
   @$pb.TagNumber(1)
-  set config(AssistConfig v) { setField(1, v); }
+  set config(AssistConfig v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -108,7 +119,10 @@ class AssistRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get audioIn => $_getN(1);
   @$pb.TagNumber(2)
-  set audioIn($core.List<$core.int> v) { $_setBytes(1, v); }
+  set audioIn($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAudioIn() => $_has(1);
   @$pb.TagNumber(2)
@@ -152,46 +166,69 @@ class AssistResponse extends $pb.GeneratedMessage {
     return $result;
   }
   AssistResponse._() : super();
-  factory AssistResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AssistResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AssistResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AssistResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssistResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
-    ..e<AssistResponse_EventType>(1, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: AssistResponse_EventType.EVENT_TYPE_UNSPECIFIED, valueOf: AssistResponse_EventType.valueOf, enumValues: AssistResponse_EventType.values)
-    ..pc<SpeechRecognitionResult>(2, _omitFieldNames ? '' : 'speechResults', $pb.PbFieldType.PM, subBuilder: SpeechRecognitionResult.create)
-    ..aOM<AudioOut>(3, _omitFieldNames ? '' : 'audioOut', subBuilder: AudioOut.create)
-    ..aOM<ScreenOut>(4, _omitFieldNames ? '' : 'screenOut', subBuilder: ScreenOut.create)
-    ..aOM<DialogStateOut>(5, _omitFieldNames ? '' : 'dialogStateOut', subBuilder: DialogStateOut.create)
-    ..aOM<DeviceAction>(6, _omitFieldNames ? '' : 'deviceAction', subBuilder: DeviceAction.create)
-    ..aOM<DebugInfo>(8, _omitFieldNames ? '' : 'debugInfo', subBuilder: DebugInfo.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AssistResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
+    ..e<AssistResponse_EventType>(
+        1, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE,
+        defaultOrMaker: AssistResponse_EventType.EVENT_TYPE_UNSPECIFIED,
+        valueOf: AssistResponse_EventType.valueOf,
+        enumValues: AssistResponse_EventType.values)
+    ..pc<SpeechRecognitionResult>(
+        2, _omitFieldNames ? '' : 'speechResults', $pb.PbFieldType.PM,
+        subBuilder: SpeechRecognitionResult.create)
+    ..aOM<AudioOut>(3, _omitFieldNames ? '' : 'audioOut',
+        subBuilder: AudioOut.create)
+    ..aOM<ScreenOut>(4, _omitFieldNames ? '' : 'screenOut',
+        subBuilder: ScreenOut.create)
+    ..aOM<DialogStateOut>(5, _omitFieldNames ? '' : 'dialogStateOut',
+        subBuilder: DialogStateOut.create)
+    ..aOM<DeviceAction>(6, _omitFieldNames ? '' : 'deviceAction',
+        subBuilder: DeviceAction.create)
+    ..aOM<DebugInfo>(8, _omitFieldNames ? '' : 'debugInfo',
+        subBuilder: DebugInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AssistResponse clone() => AssistResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AssistResponse copyWith(void Function(AssistResponse) updates) => super.copyWith((message) => updates(message as AssistResponse)) as AssistResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AssistResponse copyWith(void Function(AssistResponse) updates) =>
+      super.copyWith((message) => updates(message as AssistResponse))
+          as AssistResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AssistResponse create() => AssistResponse._();
   AssistResponse createEmptyInstance() => create();
-  static $pb.PbList<AssistResponse> createRepeated() => $pb.PbList<AssistResponse>();
+  static $pb.PbList<AssistResponse> createRepeated() =>
+      $pb.PbList<AssistResponse>();
   @$core.pragma('dart2js:noInline')
-  static AssistResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AssistResponse>(create);
+  static AssistResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AssistResponse>(create);
   static AssistResponse? _defaultInstance;
 
   /// *Output-only* Indicates the type of event.
   @$pb.TagNumber(1)
   AssistResponse_EventType get eventType => $_getN(0);
   @$pb.TagNumber(1)
-  set eventType(AssistResponse_EventType v) { setField(1, v); }
+  set eventType(AssistResponse_EventType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEventType() => $_has(0);
   @$pb.TagNumber(1)
@@ -211,7 +248,10 @@ class AssistResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AudioOut get audioOut => $_getN(2);
   @$pb.TagNumber(3)
-  set audioOut(AudioOut v) { setField(3, v); }
+  set audioOut(AudioOut v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAudioOut() => $_has(2);
   @$pb.TagNumber(3)
@@ -223,7 +263,10 @@ class AssistResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ScreenOut get screenOut => $_getN(3);
   @$pb.TagNumber(4)
-  set screenOut(ScreenOut v) { setField(4, v); }
+  set screenOut(ScreenOut v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasScreenOut() => $_has(3);
   @$pb.TagNumber(4)
@@ -235,7 +278,10 @@ class AssistResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DialogStateOut get dialogStateOut => $_getN(4);
   @$pb.TagNumber(5)
-  set dialogStateOut(DialogStateOut v) { setField(5, v); }
+  set dialogStateOut(DialogStateOut v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDialogStateOut() => $_has(4);
   @$pb.TagNumber(5)
@@ -248,7 +294,10 @@ class AssistResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   DeviceAction get deviceAction => $_getN(5);
   @$pb.TagNumber(6)
-  set deviceAction(DeviceAction v) { setField(6, v); }
+  set deviceAction(DeviceAction v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDeviceAction() => $_has(5);
   @$pb.TagNumber(6)
@@ -261,7 +310,10 @@ class AssistResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   DebugInfo get debugInfo => $_getN(6);
   @$pb.TagNumber(8)
-  set debugInfo(DebugInfo v) { setField(8, v); }
+  set debugInfo(DebugInfo v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDebugInfo() => $_has(6);
   @$pb.TagNumber(8)
@@ -283,24 +335,30 @@ class DebugInfo extends $pb.GeneratedMessage {
     return $result;
   }
   DebugInfo._() : super();
-  factory DebugInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DebugInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DebugInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DebugInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DebugInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DebugInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'aogAgentToAssistantJson')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DebugInfo clone() => DebugInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DebugInfo copyWith(void Function(DebugInfo) updates) => super.copyWith((message) => updates(message as DebugInfo)) as DebugInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DebugInfo copyWith(void Function(DebugInfo) updates) =>
+      super.copyWith((message) => updates(message as DebugInfo)) as DebugInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -309,7 +367,8 @@ class DebugInfo extends $pb.GeneratedMessage {
   DebugInfo createEmptyInstance() => create();
   static $pb.PbList<DebugInfo> createRepeated() => $pb.PbList<DebugInfo>();
   @$core.pragma('dart2js:noInline')
-  static DebugInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DebugInfo>(create);
+  static DebugInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DebugInfo>(create);
   static DebugInfo? _defaultInstance;
 
   /// The original JSON response from an Action-on-Google agent to Google server.
@@ -320,18 +379,17 @@ class DebugInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get aogAgentToAssistantJson => $_getSZ(0);
   @$pb.TagNumber(1)
-  set aogAgentToAssistantJson($core.String v) { $_setString(0, v); }
+  set aogAgentToAssistantJson($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAogAgentToAssistantJson() => $_has(0);
   @$pb.TagNumber(1)
   void clearAogAgentToAssistantJson() => clearField(1);
 }
 
-enum AssistConfig_Type {
-  audioInConfig, 
-  textQuery, 
-  notSet
-}
+enum AssistConfig_Type { audioInConfig, textQuery, notSet }
 
 /// Specifies how to process the `AssistRequest` messages.
 class AssistConfig extends $pb.GeneratedMessage {
@@ -369,45 +427,61 @@ class AssistConfig extends $pb.GeneratedMessage {
     return $result;
   }
   AssistConfig._() : super();
-  factory AssistConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AssistConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AssistConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AssistConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AssistConfig_Type> _AssistConfig_TypeByTag = {
-    1 : AssistConfig_Type.audioInConfig,
-    6 : AssistConfig_Type.textQuery,
-    0 : AssistConfig_Type.notSet
+  static const $core.Map<$core.int, AssistConfig_Type> _AssistConfig_TypeByTag =
+      {
+    1: AssistConfig_Type.audioInConfig,
+    6: AssistConfig_Type.textQuery,
+    0: AssistConfig_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssistConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AssistConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 6])
-    ..aOM<AudioInConfig>(1, _omitFieldNames ? '' : 'audioInConfig', subBuilder: AudioInConfig.create)
-    ..aOM<AudioOutConfig>(2, _omitFieldNames ? '' : 'audioOutConfig', subBuilder: AudioOutConfig.create)
-    ..aOM<DialogStateIn>(3, _omitFieldNames ? '' : 'dialogStateIn', subBuilder: DialogStateIn.create)
-    ..aOM<DeviceConfig>(4, _omitFieldNames ? '' : 'deviceConfig', subBuilder: DeviceConfig.create)
-    ..aOM<DebugConfig>(5, _omitFieldNames ? '' : 'debugConfig', subBuilder: DebugConfig.create)
+    ..aOM<AudioInConfig>(1, _omitFieldNames ? '' : 'audioInConfig',
+        subBuilder: AudioInConfig.create)
+    ..aOM<AudioOutConfig>(2, _omitFieldNames ? '' : 'audioOutConfig',
+        subBuilder: AudioOutConfig.create)
+    ..aOM<DialogStateIn>(3, _omitFieldNames ? '' : 'dialogStateIn',
+        subBuilder: DialogStateIn.create)
+    ..aOM<DeviceConfig>(4, _omitFieldNames ? '' : 'deviceConfig',
+        subBuilder: DeviceConfig.create)
+    ..aOM<DebugConfig>(5, _omitFieldNames ? '' : 'debugConfig',
+        subBuilder: DebugConfig.create)
     ..aOS(6, _omitFieldNames ? '' : 'textQuery')
-    ..aOM<ScreenOutConfig>(8, _omitFieldNames ? '' : 'screenOutConfig', subBuilder: ScreenOutConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ScreenOutConfig>(8, _omitFieldNames ? '' : 'screenOutConfig',
+        subBuilder: ScreenOutConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AssistConfig clone() => AssistConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AssistConfig copyWith(void Function(AssistConfig) updates) => super.copyWith((message) => updates(message as AssistConfig)) as AssistConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AssistConfig copyWith(void Function(AssistConfig) updates) =>
+      super.copyWith((message) => updates(message as AssistConfig))
+          as AssistConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AssistConfig create() => AssistConfig._();
   AssistConfig createEmptyInstance() => create();
-  static $pb.PbList<AssistConfig> createRepeated() => $pb.PbList<AssistConfig>();
+  static $pb.PbList<AssistConfig> createRepeated() =>
+      $pb.PbList<AssistConfig>();
   @$core.pragma('dart2js:noInline')
-  static AssistConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AssistConfig>(create);
+  static AssistConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AssistConfig>(create);
   static AssistConfig? _defaultInstance;
 
   AssistConfig_Type whichType() => _AssistConfig_TypeByTag[$_whichOneof(0)]!;
@@ -419,7 +493,10 @@ class AssistConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AudioInConfig get audioInConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set audioInConfig(AudioInConfig v) { setField(1, v); }
+  set audioInConfig(AudioInConfig v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAudioInConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -431,7 +508,10 @@ class AssistConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AudioOutConfig get audioOutConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set audioOutConfig(AudioOutConfig v) { setField(2, v); }
+  set audioOutConfig(AudioOutConfig v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAudioOutConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -443,7 +523,10 @@ class AssistConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DialogStateIn get dialogStateIn => $_getN(2);
   @$pb.TagNumber(3)
-  set dialogStateIn(DialogStateIn v) { setField(3, v); }
+  set dialogStateIn(DialogStateIn v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDialogStateIn() => $_has(2);
   @$pb.TagNumber(3)
@@ -455,7 +538,10 @@ class AssistConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   DeviceConfig get deviceConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set deviceConfig(DeviceConfig v) { setField(4, v); }
+  set deviceConfig(DeviceConfig v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDeviceConfig() => $_has(3);
   @$pb.TagNumber(4)
@@ -467,7 +553,10 @@ class AssistConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DebugConfig get debugConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set debugConfig(DebugConfig v) { setField(5, v); }
+  set debugConfig(DebugConfig v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDebugConfig() => $_has(4);
   @$pb.TagNumber(5)
@@ -480,7 +569,10 @@ class AssistConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get textQuery => $_getSZ(5);
   @$pb.TagNumber(6)
-  set textQuery($core.String v) { $_setString(5, v); }
+  set textQuery($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTextQuery() => $_has(5);
   @$pb.TagNumber(6)
@@ -491,7 +583,10 @@ class AssistConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   ScreenOutConfig get screenOutConfig => $_getN(6);
   @$pb.TagNumber(8)
-  set screenOutConfig(ScreenOutConfig v) { setField(8, v); }
+  set screenOutConfig(ScreenOutConfig v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasScreenOutConfig() => $_has(6);
   @$pb.TagNumber(8)
@@ -519,41 +614,58 @@ class AudioInConfig extends $pb.GeneratedMessage {
     return $result;
   }
   AudioInConfig._() : super();
-  factory AudioInConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AudioInConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AudioInConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AudioInConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudioInConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
-    ..e<AudioInConfig_Encoding>(1, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE, defaultOrMaker: AudioInConfig_Encoding.ENCODING_UNSPECIFIED, valueOf: AudioInConfig_Encoding.valueOf, enumValues: AudioInConfig_Encoding.values)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'sampleRateHertz', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AudioInConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
+    ..e<AudioInConfig_Encoding>(
+        1, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE,
+        defaultOrMaker: AudioInConfig_Encoding.ENCODING_UNSPECIFIED,
+        valueOf: AudioInConfig_Encoding.valueOf,
+        enumValues: AudioInConfig_Encoding.values)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'sampleRateHertz', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AudioInConfig clone() => AudioInConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AudioInConfig copyWith(void Function(AudioInConfig) updates) => super.copyWith((message) => updates(message as AudioInConfig)) as AudioInConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AudioInConfig copyWith(void Function(AudioInConfig) updates) =>
+      super.copyWith((message) => updates(message as AudioInConfig))
+          as AudioInConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AudioInConfig create() => AudioInConfig._();
   AudioInConfig createEmptyInstance() => create();
-  static $pb.PbList<AudioInConfig> createRepeated() => $pb.PbList<AudioInConfig>();
+  static $pb.PbList<AudioInConfig> createRepeated() =>
+      $pb.PbList<AudioInConfig>();
   @$core.pragma('dart2js:noInline')
-  static AudioInConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AudioInConfig>(create);
+  static AudioInConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AudioInConfig>(create);
   static AudioInConfig? _defaultInstance;
 
   /// *Required* Encoding of audio data sent in all `audio_in` messages.
   @$pb.TagNumber(1)
   AudioInConfig_Encoding get encoding => $_getN(0);
   @$pb.TagNumber(1)
-  set encoding(AudioInConfig_Encoding v) { setField(1, v); }
+  set encoding(AudioInConfig_Encoding v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEncoding() => $_has(0);
   @$pb.TagNumber(1)
@@ -567,7 +679,10 @@ class AudioInConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get sampleRateHertz => $_getIZ(1);
   @$pb.TagNumber(2)
-  set sampleRateHertz($core.int v) { $_setSignedInt32(1, v); }
+  set sampleRateHertz($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSampleRateHertz() => $_has(1);
   @$pb.TagNumber(2)
@@ -595,35 +710,50 @@ class AudioOutConfig extends $pb.GeneratedMessage {
     return $result;
   }
   AudioOutConfig._() : super();
-  factory AudioOutConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AudioOutConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AudioOutConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AudioOutConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudioOutConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
-    ..e<AudioOutConfig_Encoding>(1, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE, defaultOrMaker: AudioOutConfig_Encoding.ENCODING_UNSPECIFIED, valueOf: AudioOutConfig_Encoding.valueOf, enumValues: AudioOutConfig_Encoding.values)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'sampleRateHertz', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'volumePercentage', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AudioOutConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
+    ..e<AudioOutConfig_Encoding>(
+        1, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE,
+        defaultOrMaker: AudioOutConfig_Encoding.ENCODING_UNSPECIFIED,
+        valueOf: AudioOutConfig_Encoding.valueOf,
+        enumValues: AudioOutConfig_Encoding.values)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'sampleRateHertz', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'volumePercentage', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AudioOutConfig clone() => AudioOutConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AudioOutConfig copyWith(void Function(AudioOutConfig) updates) => super.copyWith((message) => updates(message as AudioOutConfig)) as AudioOutConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AudioOutConfig copyWith(void Function(AudioOutConfig) updates) =>
+      super.copyWith((message) => updates(message as AudioOutConfig))
+          as AudioOutConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AudioOutConfig create() => AudioOutConfig._();
   AudioOutConfig createEmptyInstance() => create();
-  static $pb.PbList<AudioOutConfig> createRepeated() => $pb.PbList<AudioOutConfig>();
+  static $pb.PbList<AudioOutConfig> createRepeated() =>
+      $pb.PbList<AudioOutConfig>();
   @$core.pragma('dart2js:noInline')
-  static AudioOutConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AudioOutConfig>(create);
+  static AudioOutConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AudioOutConfig>(create);
   static AudioOutConfig? _defaultInstance;
 
   /// *Required* The encoding of audio data to be returned in all `audio_out`
@@ -631,7 +761,10 @@ class AudioOutConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AudioOutConfig_Encoding get encoding => $_getN(0);
   @$pb.TagNumber(1)
-  set encoding(AudioOutConfig_Encoding v) { setField(1, v); }
+  set encoding(AudioOutConfig_Encoding v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEncoding() => $_has(0);
   @$pb.TagNumber(1)
@@ -642,7 +775,10 @@ class AudioOutConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get sampleRateHertz => $_getIZ(1);
   @$pb.TagNumber(2)
-  set sampleRateHertz($core.int v) { $_setSignedInt32(1, v); }
+  set sampleRateHertz($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSampleRateHertz() => $_has(1);
   @$pb.TagNumber(2)
@@ -653,7 +789,10 @@ class AudioOutConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get volumePercentage => $_getIZ(2);
   @$pb.TagNumber(3)
-  set volumePercentage($core.int v) { $_setSignedInt32(2, v); }
+  set volumePercentage($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVolumePercentage() => $_has(2);
   @$pb.TagNumber(3)
@@ -673,40 +812,56 @@ class ScreenOutConfig extends $pb.GeneratedMessage {
     return $result;
   }
   ScreenOutConfig._() : super();
-  factory ScreenOutConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ScreenOutConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ScreenOutConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ScreenOutConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScreenOutConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
-    ..e<ScreenOutConfig_ScreenMode>(1, _omitFieldNames ? '' : 'screenMode', $pb.PbFieldType.OE, defaultOrMaker: ScreenOutConfig_ScreenMode.SCREEN_MODE_UNSPECIFIED, valueOf: ScreenOutConfig_ScreenMode.valueOf, enumValues: ScreenOutConfig_ScreenMode.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ScreenOutConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
+    ..e<ScreenOutConfig_ScreenMode>(
+        1, _omitFieldNames ? '' : 'screenMode', $pb.PbFieldType.OE,
+        defaultOrMaker: ScreenOutConfig_ScreenMode.SCREEN_MODE_UNSPECIFIED,
+        valueOf: ScreenOutConfig_ScreenMode.valueOf,
+        enumValues: ScreenOutConfig_ScreenMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ScreenOutConfig clone() => ScreenOutConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ScreenOutConfig copyWith(void Function(ScreenOutConfig) updates) => super.copyWith((message) => updates(message as ScreenOutConfig)) as ScreenOutConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ScreenOutConfig copyWith(void Function(ScreenOutConfig) updates) =>
+      super.copyWith((message) => updates(message as ScreenOutConfig))
+          as ScreenOutConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ScreenOutConfig create() => ScreenOutConfig._();
   ScreenOutConfig createEmptyInstance() => create();
-  static $pb.PbList<ScreenOutConfig> createRepeated() => $pb.PbList<ScreenOutConfig>();
+  static $pb.PbList<ScreenOutConfig> createRepeated() =>
+      $pb.PbList<ScreenOutConfig>();
   @$core.pragma('dart2js:noInline')
-  static ScreenOutConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ScreenOutConfig>(create);
+  static ScreenOutConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ScreenOutConfig>(create);
   static ScreenOutConfig? _defaultInstance;
 
   /// Current visual screen-mode for the device while issuing the query.
   @$pb.TagNumber(1)
   ScreenOutConfig_ScreenMode get screenMode => $_getN(0);
   @$pb.TagNumber(1)
-  set screenMode(ScreenOutConfig_ScreenMode v) { setField(1, v); }
+  set screenMode(ScreenOutConfig_ScreenMode v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasScreenMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -737,36 +892,47 @@ class DialogStateIn extends $pb.GeneratedMessage {
     return $result;
   }
   DialogStateIn._() : super();
-  factory DialogStateIn.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DialogStateIn.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DialogStateIn.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DialogStateIn.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DialogStateIn', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'conversationState', $pb.PbFieldType.OY)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DialogStateIn',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'conversationState', $pb.PbFieldType.OY)
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<DeviceLocation>(5, _omitFieldNames ? '' : 'deviceLocation', subBuilder: DeviceLocation.create)
+    ..aOM<DeviceLocation>(5, _omitFieldNames ? '' : 'deviceLocation',
+        subBuilder: DeviceLocation.create)
     ..aOB(7, _omitFieldNames ? '' : 'isNewConversation')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DialogStateIn clone() => DialogStateIn()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DialogStateIn copyWith(void Function(DialogStateIn) updates) => super.copyWith((message) => updates(message as DialogStateIn)) as DialogStateIn;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DialogStateIn copyWith(void Function(DialogStateIn) updates) =>
+      super.copyWith((message) => updates(message as DialogStateIn))
+          as DialogStateIn;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DialogStateIn create() => DialogStateIn._();
   DialogStateIn createEmptyInstance() => create();
-  static $pb.PbList<DialogStateIn> createRepeated() => $pb.PbList<DialogStateIn>();
+  static $pb.PbList<DialogStateIn> createRepeated() =>
+      $pb.PbList<DialogStateIn>();
   @$core.pragma('dart2js:noInline')
-  static DialogStateIn getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DialogStateIn>(create);
+  static DialogStateIn getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DialogStateIn>(create);
   static DialogStateIn? _defaultInstance;
 
   /// *Required* This field must always be set to the
@@ -778,7 +944,10 @@ class DialogStateIn extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get conversationState => $_getN(0);
   @$pb.TagNumber(1)
-  set conversationState($core.List<$core.int> v) { $_setBytes(0, v); }
+  set conversationState($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConversationState() => $_has(0);
   @$pb.TagNumber(1)
@@ -796,7 +965,10 @@ class DialogStateIn extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get languageCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set languageCode($core.String v) { $_setString(1, v); }
+  set languageCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLanguageCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -806,7 +978,10 @@ class DialogStateIn extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DeviceLocation get deviceLocation => $_getN(2);
   @$pb.TagNumber(5)
-  set deviceLocation(DeviceLocation v) { setField(5, v); }
+  set deviceLocation(DeviceLocation v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDeviceLocation() => $_has(2);
   @$pb.TagNumber(5)
@@ -821,7 +996,10 @@ class DialogStateIn extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get isNewConversation => $_getBF(3);
   @$pb.TagNumber(7)
-  set isNewConversation($core.bool v) { $_setBool(3, v); }
+  set isNewConversation($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasIsNewConversation() => $_has(3);
   @$pb.TagNumber(7)
@@ -853,34 +1031,43 @@ class DeviceConfig extends $pb.GeneratedMessage {
     return $result;
   }
   DeviceConfig._() : super();
-  factory DeviceConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeviceConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeviceConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeviceConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeviceConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deviceId')
     ..aOS(3, _omitFieldNames ? '' : 'deviceModelId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeviceConfig clone() => DeviceConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeviceConfig copyWith(void Function(DeviceConfig) updates) => super.copyWith((message) => updates(message as DeviceConfig)) as DeviceConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeviceConfig copyWith(void Function(DeviceConfig) updates) =>
+      super.copyWith((message) => updates(message as DeviceConfig))
+          as DeviceConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceConfig create() => DeviceConfig._();
   DeviceConfig createEmptyInstance() => create();
-  static $pb.PbList<DeviceConfig> createRepeated() => $pb.PbList<DeviceConfig>();
+  static $pb.PbList<DeviceConfig> createRepeated() =>
+      $pb.PbList<DeviceConfig>();
   @$core.pragma('dart2js:noInline')
-  static DeviceConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeviceConfig>(create);
+  static DeviceConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeviceConfig>(create);
   static DeviceConfig? _defaultInstance;
 
   /// *Required* Unique identifier for the device. The id length must be 128
@@ -893,7 +1080,10 @@ class DeviceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get deviceId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set deviceId($core.String v) { $_setString(0, v); }
+  set deviceId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDeviceId() => $_has(0);
   @$pb.TagNumber(1)
@@ -905,7 +1095,10 @@ class DeviceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get deviceModelId => $_getSZ(1);
   @$pb.TagNumber(3)
-  set deviceModelId($core.String v) { $_setString(1, v); }
+  set deviceModelId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeviceModelId() => $_has(1);
   @$pb.TagNumber(3)
@@ -925,24 +1118,31 @@ class AudioOut extends $pb.GeneratedMessage {
     return $result;
   }
   AudioOut._() : super();
-  factory AudioOut.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AudioOut.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AudioOut.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AudioOut.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudioOut', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'audioData', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AudioOut',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'audioData', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AudioOut clone() => AudioOut()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AudioOut copyWith(void Function(AudioOut) updates) => super.copyWith((message) => updates(message as AudioOut)) as AudioOut;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AudioOut copyWith(void Function(AudioOut) updates) =>
+      super.copyWith((message) => updates(message as AudioOut)) as AudioOut;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -951,7 +1151,8 @@ class AudioOut extends $pb.GeneratedMessage {
   AudioOut createEmptyInstance() => create();
   static $pb.PbList<AudioOut> createRepeated() => $pb.PbList<AudioOut>();
   @$core.pragma('dart2js:noInline')
-  static AudioOut getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AudioOut>(create);
+  static AudioOut getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AudioOut>(create);
   static AudioOut? _defaultInstance;
 
   /// *Output-only* The audio data containing the Assistant's response to the
@@ -960,7 +1161,10 @@ class AudioOut extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get audioData => $_getN(0);
   @$pb.TagNumber(1)
-  set audioData($core.List<$core.int> v) { $_setBytes(0, v); }
+  set audioData($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAudioData() => $_has(0);
   @$pb.TagNumber(1)
@@ -984,25 +1188,36 @@ class ScreenOut extends $pb.GeneratedMessage {
     return $result;
   }
   ScreenOut._() : super();
-  factory ScreenOut.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ScreenOut.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ScreenOut.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ScreenOut.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScreenOut', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
-    ..e<ScreenOut_Format>(1, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE, defaultOrMaker: ScreenOut_Format.FORMAT_UNSPECIFIED, valueOf: ScreenOut_Format.valueOf, enumValues: ScreenOut_Format.values)
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ScreenOut',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
+    ..e<ScreenOut_Format>(
+        1, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE,
+        defaultOrMaker: ScreenOut_Format.FORMAT_UNSPECIFIED,
+        valueOf: ScreenOut_Format.valueOf,
+        enumValues: ScreenOut_Format.values)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ScreenOut clone() => ScreenOut()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ScreenOut copyWith(void Function(ScreenOut) updates) => super.copyWith((message) => updates(message as ScreenOut)) as ScreenOut;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ScreenOut copyWith(void Function(ScreenOut) updates) =>
+      super.copyWith((message) => updates(message as ScreenOut)) as ScreenOut;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1011,14 +1226,18 @@ class ScreenOut extends $pb.GeneratedMessage {
   ScreenOut createEmptyInstance() => create();
   static $pb.PbList<ScreenOut> createRepeated() => $pb.PbList<ScreenOut>();
   @$core.pragma('dart2js:noInline')
-  static ScreenOut getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ScreenOut>(create);
+  static ScreenOut getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ScreenOut>(create);
   static ScreenOut? _defaultInstance;
 
   /// *Output-only* The format of the provided screen data.
   @$pb.TagNumber(1)
   ScreenOut_Format get format => $_getN(0);
   @$pb.TagNumber(1)
-  set format(ScreenOut_Format v) { setField(1, v); }
+  set format(ScreenOut_Format v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -1029,7 +1248,10 @@ class ScreenOut extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get data => $_getN(1);
   @$pb.TagNumber(2)
-  set data($core.List<$core.int> v) { $_setBytes(1, v); }
+  set data($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasData() => $_has(1);
   @$pb.TagNumber(2)
@@ -1051,33 +1273,42 @@ class DeviceAction extends $pb.GeneratedMessage {
     return $result;
   }
   DeviceAction._() : super();
-  factory DeviceAction.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeviceAction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeviceAction.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeviceAction.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeviceAction',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deviceRequestJson')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeviceAction clone() => DeviceAction()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeviceAction copyWith(void Function(DeviceAction) updates) => super.copyWith((message) => updates(message as DeviceAction)) as DeviceAction;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeviceAction copyWith(void Function(DeviceAction) updates) =>
+      super.copyWith((message) => updates(message as DeviceAction))
+          as DeviceAction;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceAction create() => DeviceAction._();
   DeviceAction createEmptyInstance() => create();
-  static $pb.PbList<DeviceAction> createRepeated() => $pb.PbList<DeviceAction>();
+  static $pb.PbList<DeviceAction> createRepeated() =>
+      $pb.PbList<DeviceAction>();
   @$core.pragma('dart2js:noInline')
-  static DeviceAction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeviceAction>(create);
+  static DeviceAction getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeviceAction>(create);
   static DeviceAction? _defaultInstance;
 
   /// JSON containing the device command response generated from the triggered
@@ -1087,7 +1318,10 @@ class DeviceAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get deviceRequestJson => $_getSZ(0);
   @$pb.TagNumber(1)
-  set deviceRequestJson($core.String v) { $_setString(0, v); }
+  set deviceRequestJson($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDeviceRequestJson() => $_has(0);
   @$pb.TagNumber(1)
@@ -1111,41 +1345,55 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
     return $result;
   }
   SpeechRecognitionResult._() : super();
-  factory SpeechRecognitionResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SpeechRecognitionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SpeechRecognitionResult.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SpeechRecognitionResult.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpeechRecognitionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SpeechRecognitionResult',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'transcript')
     ..a<$core.double>(2, _omitFieldNames ? '' : 'stability', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SpeechRecognitionResult clone() => SpeechRecognitionResult()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SpeechRecognitionResult copyWith(void Function(SpeechRecognitionResult) updates) => super.copyWith((message) => updates(message as SpeechRecognitionResult)) as SpeechRecognitionResult;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SpeechRecognitionResult clone() =>
+      SpeechRecognitionResult()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SpeechRecognitionResult copyWith(
+          void Function(SpeechRecognitionResult) updates) =>
+      super.copyWith((message) => updates(message as SpeechRecognitionResult))
+          as SpeechRecognitionResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpeechRecognitionResult create() => SpeechRecognitionResult._();
   SpeechRecognitionResult createEmptyInstance() => create();
-  static $pb.PbList<SpeechRecognitionResult> createRepeated() => $pb.PbList<SpeechRecognitionResult>();
+  static $pb.PbList<SpeechRecognitionResult> createRepeated() =>
+      $pb.PbList<SpeechRecognitionResult>();
   @$core.pragma('dart2js:noInline')
-  static SpeechRecognitionResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SpeechRecognitionResult>(create);
+  static SpeechRecognitionResult getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SpeechRecognitionResult>(create);
   static SpeechRecognitionResult? _defaultInstance;
 
   /// *Output-only* Transcript text representing the words that the user spoke.
   @$pb.TagNumber(1)
   $core.String get transcript => $_getSZ(0);
   @$pb.TagNumber(1)
-  set transcript($core.String v) { $_setString(0, v); }
+  set transcript($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTranscript() => $_has(0);
   @$pb.TagNumber(1)
@@ -1158,7 +1406,10 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get stability => $_getN(1);
   @$pb.TagNumber(2)
-  set stability($core.double v) { $_setFloat(1, v); }
+  set stability($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStability() => $_has(1);
   @$pb.TagNumber(2)
@@ -1190,36 +1441,52 @@ class DialogStateOut extends $pb.GeneratedMessage {
     return $result;
   }
   DialogStateOut._() : super();
-  factory DialogStateOut.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DialogStateOut.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DialogStateOut.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DialogStateOut.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DialogStateOut', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DialogStateOut',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'supplementalDisplayText')
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'conversationState', $pb.PbFieldType.OY)
-    ..e<DialogStateOut_MicrophoneMode>(3, _omitFieldNames ? '' : 'microphoneMode', $pb.PbFieldType.OE, defaultOrMaker: DialogStateOut_MicrophoneMode.MICROPHONE_MODE_UNSPECIFIED, valueOf: DialogStateOut_MicrophoneMode.valueOf, enumValues: DialogStateOut_MicrophoneMode.values)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'volumePercentage', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'conversationState', $pb.PbFieldType.OY)
+    ..e<DialogStateOut_MicrophoneMode>(
+        3, _omitFieldNames ? '' : 'microphoneMode', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            DialogStateOut_MicrophoneMode.MICROPHONE_MODE_UNSPECIFIED,
+        valueOf: DialogStateOut_MicrophoneMode.valueOf,
+        enumValues: DialogStateOut_MicrophoneMode.values)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'volumePercentage', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DialogStateOut clone() => DialogStateOut()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DialogStateOut copyWith(void Function(DialogStateOut) updates) => super.copyWith((message) => updates(message as DialogStateOut)) as DialogStateOut;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DialogStateOut copyWith(void Function(DialogStateOut) updates) =>
+      super.copyWith((message) => updates(message as DialogStateOut))
+          as DialogStateOut;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DialogStateOut create() => DialogStateOut._();
   DialogStateOut createEmptyInstance() => create();
-  static $pb.PbList<DialogStateOut> createRepeated() => $pb.PbList<DialogStateOut>();
+  static $pb.PbList<DialogStateOut> createRepeated() =>
+      $pb.PbList<DialogStateOut>();
   @$core.pragma('dart2js:noInline')
-  static DialogStateOut getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DialogStateOut>(create);
+  static DialogStateOut getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DialogStateOut>(create);
   static DialogStateOut? _defaultInstance;
 
   /// *Output-only* Supplemental display text from the Assistant. This could be
@@ -1228,7 +1495,10 @@ class DialogStateOut extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get supplementalDisplayText => $_getSZ(0);
   @$pb.TagNumber(1)
-  set supplementalDisplayText($core.String v) { $_setString(0, v); }
+  set supplementalDisplayText($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSupplementalDisplayText() => $_has(0);
   @$pb.TagNumber(1)
@@ -1244,7 +1514,10 @@ class DialogStateOut extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get conversationState => $_getN(1);
   @$pb.TagNumber(2)
-  set conversationState($core.List<$core.int> v) { $_setBytes(1, v); }
+  set conversationState($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConversationState() => $_has(1);
   @$pb.TagNumber(2)
@@ -1255,7 +1528,10 @@ class DialogStateOut extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DialogStateOut_MicrophoneMode get microphoneMode => $_getN(2);
   @$pb.TagNumber(3)
-  set microphoneMode(DialogStateOut_MicrophoneMode v) { setField(3, v); }
+  set microphoneMode(DialogStateOut_MicrophoneMode v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMicrophoneMode() => $_has(2);
   @$pb.TagNumber(3)
@@ -1273,7 +1549,10 @@ class DialogStateOut extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get volumePercentage => $_getIZ(3);
   @$pb.TagNumber(4)
-  set volumePercentage($core.int v) { $_setSignedInt32(3, v); }
+  set volumePercentage($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVolumePercentage() => $_has(3);
   @$pb.TagNumber(4)
@@ -1292,24 +1571,31 @@ class DebugConfig extends $pb.GeneratedMessage {
     return $result;
   }
   DebugConfig._() : super();
-  factory DebugConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DebugConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DebugConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DebugConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DebugConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DebugConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..aOB(6, _omitFieldNames ? '' : 'returnDebugInfo')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DebugConfig clone() => DebugConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DebugConfig copyWith(void Function(DebugConfig) updates) => super.copyWith((message) => updates(message as DebugConfig)) as DebugConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DebugConfig copyWith(void Function(DebugConfig) updates) =>
+      super.copyWith((message) => updates(message as DebugConfig))
+          as DebugConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1318,7 +1604,8 @@ class DebugConfig extends $pb.GeneratedMessage {
   DebugConfig createEmptyInstance() => create();
   static $pb.PbList<DebugConfig> createRepeated() => $pb.PbList<DebugConfig>();
   @$core.pragma('dart2js:noInline')
-  static DebugConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DebugConfig>(create);
+  static DebugConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DebugConfig>(create);
   static DebugConfig? _defaultInstance;
 
   /// When this field is set to true, the `debug_info` field in `AssistResponse`
@@ -1327,17 +1614,17 @@ class DebugConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get returnDebugInfo => $_getBF(0);
   @$pb.TagNumber(6)
-  set returnDebugInfo($core.bool v) { $_setBool(0, v); }
+  set returnDebugInfo($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasReturnDebugInfo() => $_has(0);
   @$pb.TagNumber(6)
   void clearReturnDebugInfo() => clearField(6);
 }
 
-enum DeviceLocation_Type {
-  coordinates, 
-  notSet
-}
+enum DeviceLocation_Type { coordinates, notSet }
 
 ///  There are three sources of locations. They are used with this precedence:
 ///
@@ -1358,48 +1645,63 @@ class DeviceLocation extends $pb.GeneratedMessage {
     return $result;
   }
   DeviceLocation._() : super();
-  factory DeviceLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeviceLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeviceLocation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeviceLocation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, DeviceLocation_Type> _DeviceLocation_TypeByTag = {
-    1 : DeviceLocation_Type.coordinates,
-    0 : DeviceLocation_Type.notSet
+  static const $core.Map<$core.int, DeviceLocation_Type>
+      _DeviceLocation_TypeByTag = {
+    1: DeviceLocation_Type.coordinates,
+    0: DeviceLocation_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeviceLocation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates', subBuilder: $325.LatLng.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates',
+        subBuilder: $325.LatLng.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeviceLocation clone() => DeviceLocation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeviceLocation copyWith(void Function(DeviceLocation) updates) => super.copyWith((message) => updates(message as DeviceLocation)) as DeviceLocation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeviceLocation copyWith(void Function(DeviceLocation) updates) =>
+      super.copyWith((message) => updates(message as DeviceLocation))
+          as DeviceLocation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceLocation create() => DeviceLocation._();
   DeviceLocation createEmptyInstance() => create();
-  static $pb.PbList<DeviceLocation> createRepeated() => $pb.PbList<DeviceLocation>();
+  static $pb.PbList<DeviceLocation> createRepeated() =>
+      $pb.PbList<DeviceLocation>();
   @$core.pragma('dart2js:noInline')
-  static DeviceLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeviceLocation>(create);
+  static DeviceLocation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeviceLocation>(create);
   static DeviceLocation? _defaultInstance;
 
-  DeviceLocation_Type whichType() => _DeviceLocation_TypeByTag[$_whichOneof(0)]!;
+  DeviceLocation_Type whichType() =>
+      _DeviceLocation_TypeByTag[$_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// Latitude and longitude of device.
   @$pb.TagNumber(1)
   $325.LatLng get coordinates => $_getN(0);
   @$pb.TagNumber(1)
-  set coordinates($325.LatLng v) { setField(1, v); }
+  set coordinates($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCoordinates() => $_has(0);
   @$pb.TagNumber(1)
@@ -1408,6 +1710,6 @@ class DeviceLocation extends $pb.GeneratedMessage {
   $325.LatLng ensureCoordinates() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

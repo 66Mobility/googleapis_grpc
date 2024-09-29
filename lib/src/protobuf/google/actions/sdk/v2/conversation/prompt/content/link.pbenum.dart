@@ -15,19 +15,20 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Different types of url hints.
 class UrlHint extends $pb.ProtobufEnum {
-  static const UrlHint LINK_UNSPECIFIED = UrlHint._(0, _omitEnumNames ? '' : 'LINK_UNSPECIFIED');
+  static const UrlHint LINK_UNSPECIFIED =
+      UrlHint._(0, _omitEnumNames ? '' : 'LINK_UNSPECIFIED');
   static const UrlHint AMP = UrlHint._(1, _omitEnumNames ? '' : 'AMP');
 
-  static const $core.List<UrlHint> values = <UrlHint> [
+  static const $core.List<UrlHint> values = <UrlHint>[
     LINK_UNSPECIFIED,
     AMP,
   ];
 
-  static final $core.Map<$core.int, UrlHint> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, UrlHint> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static UrlHint? valueOf($core.int value) => _byValue[value];
 
   const UrlHint._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

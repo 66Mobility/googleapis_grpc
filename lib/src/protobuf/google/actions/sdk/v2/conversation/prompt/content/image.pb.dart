@@ -39,27 +39,33 @@ class Image extends $pb.GeneratedMessage {
     return $result;
   }
   Image._() : super();
-  factory Image.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Image.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Image.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Image.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Image', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Image',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
     ..aOS(2, _omitFieldNames ? '' : 'alt')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Image clone() => Image()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Image copyWith(void Function(Image) updates) => super.copyWith((message) => updates(message as Image)) as Image;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Image copyWith(void Function(Image) updates) =>
+      super.copyWith((message) => updates(message as Image)) as Image;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -68,7 +74,8 @@ class Image extends $pb.GeneratedMessage {
   Image createEmptyInstance() => create();
   static $pb.PbList<Image> createRepeated() => $pb.PbList<Image>();
   @$core.pragma('dart2js:noInline')
-  static Image getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Image>(create);
+  static Image getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Image>(create);
   static Image? _defaultInstance;
 
   /// The source url of the image. Images can be JPG, PNG and GIF (animated and
@@ -76,7 +83,10 @@ class Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get url => $_getSZ(0);
   @$pb.TagNumber(1)
-  set url($core.String v) { $_setString(0, v); }
+  set url($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -88,7 +98,10 @@ class Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get alt => $_getSZ(1);
   @$pb.TagNumber(2)
-  set alt($core.String v) { $_setString(1, v); }
+  set alt($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAlt() => $_has(1);
   @$pb.TagNumber(2)
@@ -99,7 +112,10 @@ class Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get height => $_getIZ(2);
   @$pb.TagNumber(3)
-  set height($core.int v) { $_setSignedInt32(2, v); }
+  set height($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasHeight() => $_has(2);
   @$pb.TagNumber(3)
@@ -110,13 +126,16 @@ class Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get width => $_getIZ(3);
   @$pb.TagNumber(4)
-  set width($core.int v) { $_setSignedInt32(3, v); }
+  set width($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasWidth() => $_has(3);
   @$pb.TagNumber(4)
   void clearWidth() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -46,36 +46,48 @@ class ValidateAddressRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ValidateAddressRequest._() : super();
-  factory ValidateAddressRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ValidateAddressRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ValidateAddressRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ValidateAddressRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidateAddressRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..aOM<$448.PostalAddress>(1, _omitFieldNames ? '' : 'address', subBuilder: $448.PostalAddress.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ValidateAddressRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..aOM<$448.PostalAddress>(1, _omitFieldNames ? '' : 'address',
+        subBuilder: $448.PostalAddress.create)
     ..aOS(2, _omitFieldNames ? '' : 'previousResponseId')
     ..aOB(3, _omitFieldNames ? '' : 'enableUspsCass')
     ..aOS(5, _omitFieldNames ? '' : 'sessionToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ValidateAddressRequest clone() => ValidateAddressRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ValidateAddressRequest copyWith(void Function(ValidateAddressRequest) updates) => super.copyWith((message) => updates(message as ValidateAddressRequest)) as ValidateAddressRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ValidateAddressRequest clone() =>
+      ValidateAddressRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ValidateAddressRequest copyWith(
+          void Function(ValidateAddressRequest) updates) =>
+      super.copyWith((message) => updates(message as ValidateAddressRequest))
+          as ValidateAddressRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ValidateAddressRequest create() => ValidateAddressRequest._();
   ValidateAddressRequest createEmptyInstance() => create();
-  static $pb.PbList<ValidateAddressRequest> createRepeated() => $pb.PbList<ValidateAddressRequest>();
+  static $pb.PbList<ValidateAddressRequest> createRepeated() =>
+      $pb.PbList<ValidateAddressRequest>();
   @$core.pragma('dart2js:noInline')
-  static ValidateAddressRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ValidateAddressRequest>(create);
+  static ValidateAddressRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ValidateAddressRequest>(create);
   static ValidateAddressRequest? _defaultInstance;
 
   ///  Required. The address being validated. Unformatted addresses should be
@@ -99,7 +111,10 @@ class ValidateAddressRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $448.PostalAddress get address => $_getN(0);
   @$pb.TagNumber(1)
-  set address($448.PostalAddress v) { setField(1, v); }
+  set address($448.PostalAddress v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -117,7 +132,10 @@ class ValidateAddressRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get previousResponseId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set previousResponseId($core.String v) { $_setString(1, v); }
+  set previousResponseId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPreviousResponseId() => $_has(1);
   @$pb.TagNumber(2)
@@ -138,7 +156,10 @@ class ValidateAddressRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get enableUspsCass => $_getBF(2);
   @$pb.TagNumber(3)
-  set enableUspsCass($core.bool v) { $_setBool(2, v); }
+  set enableUspsCass($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEnableUspsCass() => $_has(2);
   @$pb.TagNumber(3)
@@ -167,7 +188,10 @@ class ValidateAddressRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get sessionToken => $_getSZ(3);
   @$pb.TagNumber(5)
-  set sessionToken($core.String v) { $_setString(3, v); }
+  set sessionToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSessionToken() => $_has(3);
   @$pb.TagNumber(5)
@@ -190,41 +214,56 @@ class ValidateAddressResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ValidateAddressResponse._() : super();
-  factory ValidateAddressResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ValidateAddressResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ValidateAddressResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ValidateAddressResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidateAddressResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..aOM<ValidationResult>(1, _omitFieldNames ? '' : 'result', subBuilder: ValidationResult.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ValidateAddressResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..aOM<ValidationResult>(1, _omitFieldNames ? '' : 'result',
+        subBuilder: ValidationResult.create)
     ..aOS(2, _omitFieldNames ? '' : 'responseId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ValidateAddressResponse clone() => ValidateAddressResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ValidateAddressResponse copyWith(void Function(ValidateAddressResponse) updates) => super.copyWith((message) => updates(message as ValidateAddressResponse)) as ValidateAddressResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ValidateAddressResponse clone() =>
+      ValidateAddressResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ValidateAddressResponse copyWith(
+          void Function(ValidateAddressResponse) updates) =>
+      super.copyWith((message) => updates(message as ValidateAddressResponse))
+          as ValidateAddressResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ValidateAddressResponse create() => ValidateAddressResponse._();
   ValidateAddressResponse createEmptyInstance() => create();
-  static $pb.PbList<ValidateAddressResponse> createRepeated() => $pb.PbList<ValidateAddressResponse>();
+  static $pb.PbList<ValidateAddressResponse> createRepeated() =>
+      $pb.PbList<ValidateAddressResponse>();
   @$core.pragma('dart2js:noInline')
-  static ValidateAddressResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ValidateAddressResponse>(create);
+  static ValidateAddressResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ValidateAddressResponse>(create);
   static ValidateAddressResponse? _defaultInstance;
 
   /// The result of the address validation.
   @$pb.TagNumber(1)
   ValidationResult get result => $_getN(0);
   @$pb.TagNumber(1)
-  set result(ValidationResult v) { setField(1, v); }
+  set result(ValidationResult v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
@@ -237,7 +276,10 @@ class ValidateAddressResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get responseId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set responseId($core.String v) { $_setString(1, v); }
+  set responseId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResponseId() => $_has(1);
   @$pb.TagNumber(2)
@@ -260,34 +302,54 @@ class ProvideValidationFeedbackRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ProvideValidationFeedbackRequest._() : super();
-  factory ProvideValidationFeedbackRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProvideValidationFeedbackRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProvideValidationFeedbackRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProvideValidationFeedbackRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProvideValidationFeedbackRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..e<ProvideValidationFeedbackRequest_ValidationConclusion>(1, _omitFieldNames ? '' : 'conclusion', $pb.PbFieldType.OE, defaultOrMaker: ProvideValidationFeedbackRequest_ValidationConclusion.VALIDATION_CONCLUSION_UNSPECIFIED, valueOf: ProvideValidationFeedbackRequest_ValidationConclusion.valueOf, enumValues: ProvideValidationFeedbackRequest_ValidationConclusion.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProvideValidationFeedbackRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..e<ProvideValidationFeedbackRequest_ValidationConclusion>(
+        1, _omitFieldNames ? '' : 'conclusion', $pb.PbFieldType.OE,
+        defaultOrMaker: ProvideValidationFeedbackRequest_ValidationConclusion
+            .VALIDATION_CONCLUSION_UNSPECIFIED,
+        valueOf: ProvideValidationFeedbackRequest_ValidationConclusion.valueOf,
+        enumValues:
+            ProvideValidationFeedbackRequest_ValidationConclusion.values)
     ..aOS(2, _omitFieldNames ? '' : 'responseId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProvideValidationFeedbackRequest clone() => ProvideValidationFeedbackRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProvideValidationFeedbackRequest copyWith(void Function(ProvideValidationFeedbackRequest) updates) => super.copyWith((message) => updates(message as ProvideValidationFeedbackRequest)) as ProvideValidationFeedbackRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProvideValidationFeedbackRequest clone() =>
+      ProvideValidationFeedbackRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProvideValidationFeedbackRequest copyWith(
+          void Function(ProvideValidationFeedbackRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ProvideValidationFeedbackRequest))
+          as ProvideValidationFeedbackRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProvideValidationFeedbackRequest create() => ProvideValidationFeedbackRequest._();
+  static ProvideValidationFeedbackRequest create() =>
+      ProvideValidationFeedbackRequest._();
   ProvideValidationFeedbackRequest createEmptyInstance() => create();
-  static $pb.PbList<ProvideValidationFeedbackRequest> createRepeated() => $pb.PbList<ProvideValidationFeedbackRequest>();
+  static $pb.PbList<ProvideValidationFeedbackRequest> createRepeated() =>
+      $pb.PbList<ProvideValidationFeedbackRequest>();
   @$core.pragma('dart2js:noInline')
-  static ProvideValidationFeedbackRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProvideValidationFeedbackRequest>(create);
+  static ProvideValidationFeedbackRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProvideValidationFeedbackRequest>(
+          create);
   static ProvideValidationFeedbackRequest? _defaultInstance;
 
   ///  Required. The outcome of the sequence of validation attempts.
@@ -295,9 +357,13 @@ class ProvideValidationFeedbackRequest extends $pb.GeneratedMessage {
   ///  If this field is set to `VALIDATION_CONCLUSION_UNSPECIFIED`, an
   ///  `INVALID_ARGUMENT` error will be returned.
   @$pb.TagNumber(1)
-  ProvideValidationFeedbackRequest_ValidationConclusion get conclusion => $_getN(0);
+  ProvideValidationFeedbackRequest_ValidationConclusion get conclusion =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set conclusion(ProvideValidationFeedbackRequest_ValidationConclusion v) { setField(1, v); }
+  set conclusion(ProvideValidationFeedbackRequest_ValidationConclusion v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConclusion() => $_has(0);
   @$pb.TagNumber(1)
@@ -310,7 +376,10 @@ class ProvideValidationFeedbackRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get responseId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set responseId($core.String v) { $_setString(1, v); }
+  set responseId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResponseId() => $_has(1);
   @$pb.TagNumber(2)
@@ -323,32 +392,46 @@ class ProvideValidationFeedbackRequest extends $pb.GeneratedMessage {
 class ProvideValidationFeedbackResponse extends $pb.GeneratedMessage {
   factory ProvideValidationFeedbackResponse() => create();
   ProvideValidationFeedbackResponse._() : super();
-  factory ProvideValidationFeedbackResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProvideValidationFeedbackResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProvideValidationFeedbackResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProvideValidationFeedbackResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProvideValidationFeedbackResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProvideValidationFeedbackResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProvideValidationFeedbackResponse clone() => ProvideValidationFeedbackResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProvideValidationFeedbackResponse copyWith(void Function(ProvideValidationFeedbackResponse) updates) => super.copyWith((message) => updates(message as ProvideValidationFeedbackResponse)) as ProvideValidationFeedbackResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProvideValidationFeedbackResponse clone() =>
+      ProvideValidationFeedbackResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProvideValidationFeedbackResponse copyWith(
+          void Function(ProvideValidationFeedbackResponse) updates) =>
+      super.copyWith((message) =>
+              updates(message as ProvideValidationFeedbackResponse))
+          as ProvideValidationFeedbackResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProvideValidationFeedbackResponse create() => ProvideValidationFeedbackResponse._();
+  static ProvideValidationFeedbackResponse create() =>
+      ProvideValidationFeedbackResponse._();
   ProvideValidationFeedbackResponse createEmptyInstance() => create();
-  static $pb.PbList<ProvideValidationFeedbackResponse> createRepeated() => $pb.PbList<ProvideValidationFeedbackResponse>();
+  static $pb.PbList<ProvideValidationFeedbackResponse> createRepeated() =>
+      $pb.PbList<ProvideValidationFeedbackResponse>();
   @$core.pragma('dart2js:noInline')
-  static ProvideValidationFeedbackResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProvideValidationFeedbackResponse>(create);
+  static ProvideValidationFeedbackResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProvideValidationFeedbackResponse>(
+          create);
   static ProvideValidationFeedbackResponse? _defaultInstance;
 }
 
@@ -380,44 +463,61 @@ class ValidationResult extends $pb.GeneratedMessage {
     return $result;
   }
   ValidationResult._() : super();
-  factory ValidationResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ValidationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ValidationResult.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ValidationResult.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..aOM<Verdict>(1, _omitFieldNames ? '' : 'verdict', subBuilder: Verdict.create)
-    ..aOM<$450.Address>(2, _omitFieldNames ? '' : 'address', subBuilder: $450.Address.create)
-    ..aOM<$451.Geocode>(3, _omitFieldNames ? '' : 'geocode', subBuilder: $451.Geocode.create)
-    ..aOM<$452.AddressMetadata>(4, _omitFieldNames ? '' : 'metadata', subBuilder: $452.AddressMetadata.create)
-    ..aOM<$453.UspsData>(5, _omitFieldNames ? '' : 'uspsData', subBuilder: $453.UspsData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ValidationResult',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..aOM<Verdict>(1, _omitFieldNames ? '' : 'verdict',
+        subBuilder: Verdict.create)
+    ..aOM<$450.Address>(2, _omitFieldNames ? '' : 'address',
+        subBuilder: $450.Address.create)
+    ..aOM<$451.Geocode>(3, _omitFieldNames ? '' : 'geocode',
+        subBuilder: $451.Geocode.create)
+    ..aOM<$452.AddressMetadata>(4, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $452.AddressMetadata.create)
+    ..aOM<$453.UspsData>(5, _omitFieldNames ? '' : 'uspsData',
+        subBuilder: $453.UspsData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ValidationResult clone() => ValidationResult()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ValidationResult copyWith(void Function(ValidationResult) updates) => super.copyWith((message) => updates(message as ValidationResult)) as ValidationResult;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ValidationResult copyWith(void Function(ValidationResult) updates) =>
+      super.copyWith((message) => updates(message as ValidationResult))
+          as ValidationResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ValidationResult create() => ValidationResult._();
   ValidationResult createEmptyInstance() => create();
-  static $pb.PbList<ValidationResult> createRepeated() => $pb.PbList<ValidationResult>();
+  static $pb.PbList<ValidationResult> createRepeated() =>
+      $pb.PbList<ValidationResult>();
   @$core.pragma('dart2js:noInline')
-  static ValidationResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ValidationResult>(create);
+  static ValidationResult getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ValidationResult>(create);
   static ValidationResult? _defaultInstance;
 
   /// Overall verdict flags
   @$pb.TagNumber(1)
   Verdict get verdict => $_getN(0);
   @$pb.TagNumber(1)
-  set verdict(Verdict v) { setField(1, v); }
+  set verdict(Verdict v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVerdict() => $_has(0);
   @$pb.TagNumber(1)
@@ -429,7 +529,10 @@ class ValidationResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $450.Address get address => $_getN(1);
   @$pb.TagNumber(2)
-  set address($450.Address v) { setField(2, v); }
+  set address($450.Address v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAddress() => $_has(1);
   @$pb.TagNumber(2)
@@ -441,7 +544,10 @@ class ValidationResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $451.Geocode get geocode => $_getN(2);
   @$pb.TagNumber(3)
-  set geocode($451.Geocode v) { setField(3, v); }
+  set geocode($451.Geocode v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGeocode() => $_has(2);
   @$pb.TagNumber(3)
@@ -454,7 +560,10 @@ class ValidationResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $452.AddressMetadata get metadata => $_getN(3);
   @$pb.TagNumber(4)
-  set metadata($452.AddressMetadata v) { setField(4, v); }
+  set metadata($452.AddressMetadata v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMetadata() => $_has(3);
   @$pb.TagNumber(4)
@@ -467,7 +576,10 @@ class ValidationResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $453.UspsData get uspsData => $_getN(4);
   @$pb.TagNumber(5)
-  set uspsData($453.UspsData v) { setField(5, v); }
+  set uspsData($453.UspsData v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUspsData() => $_has(4);
   @$pb.TagNumber(5)
@@ -512,30 +624,48 @@ class Verdict extends $pb.GeneratedMessage {
     return $result;
   }
   Verdict._() : super();
-  factory Verdict.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Verdict.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Verdict.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Verdict.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Verdict', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..e<Verdict_Granularity>(1, _omitFieldNames ? '' : 'inputGranularity', $pb.PbFieldType.OE, defaultOrMaker: Verdict_Granularity.GRANULARITY_UNSPECIFIED, valueOf: Verdict_Granularity.valueOf, enumValues: Verdict_Granularity.values)
-    ..e<Verdict_Granularity>(2, _omitFieldNames ? '' : 'validationGranularity', $pb.PbFieldType.OE, defaultOrMaker: Verdict_Granularity.GRANULARITY_UNSPECIFIED, valueOf: Verdict_Granularity.valueOf, enumValues: Verdict_Granularity.values)
-    ..e<Verdict_Granularity>(3, _omitFieldNames ? '' : 'geocodeGranularity', $pb.PbFieldType.OE, defaultOrMaker: Verdict_Granularity.GRANULARITY_UNSPECIFIED, valueOf: Verdict_Granularity.valueOf, enumValues: Verdict_Granularity.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Verdict',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..e<Verdict_Granularity>(
+        1, _omitFieldNames ? '' : 'inputGranularity', $pb.PbFieldType.OE,
+        defaultOrMaker: Verdict_Granularity.GRANULARITY_UNSPECIFIED,
+        valueOf: Verdict_Granularity.valueOf,
+        enumValues: Verdict_Granularity.values)
+    ..e<Verdict_Granularity>(
+        2, _omitFieldNames ? '' : 'validationGranularity', $pb.PbFieldType.OE,
+        defaultOrMaker: Verdict_Granularity.GRANULARITY_UNSPECIFIED,
+        valueOf: Verdict_Granularity.valueOf,
+        enumValues: Verdict_Granularity.values)
+    ..e<Verdict_Granularity>(
+        3, _omitFieldNames ? '' : 'geocodeGranularity', $pb.PbFieldType.OE,
+        defaultOrMaker: Verdict_Granularity.GRANULARITY_UNSPECIFIED,
+        valueOf: Verdict_Granularity.valueOf,
+        enumValues: Verdict_Granularity.values)
     ..aOB(4, _omitFieldNames ? '' : 'addressComplete')
     ..aOB(5, _omitFieldNames ? '' : 'hasUnconfirmedComponents')
     ..aOB(6, _omitFieldNames ? '' : 'hasInferredComponents')
     ..aOB(7, _omitFieldNames ? '' : 'hasReplacedComponents')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Verdict clone() => Verdict()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Verdict copyWith(void Function(Verdict) updates) => super.copyWith((message) => updates(message as Verdict)) as Verdict;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Verdict copyWith(void Function(Verdict) updates) =>
+      super.copyWith((message) => updates(message as Verdict)) as Verdict;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -544,7 +674,8 @@ class Verdict extends $pb.GeneratedMessage {
   Verdict createEmptyInstance() => create();
   static $pb.PbList<Verdict> createRepeated() => $pb.PbList<Verdict>();
   @$core.pragma('dart2js:noInline')
-  static Verdict getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Verdict>(create);
+  static Verdict getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Verdict>(create);
   static Verdict? _defaultInstance;
 
   ///  The granularity of the **input** address. This is the result of parsing the
@@ -558,7 +689,10 @@ class Verdict extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Verdict_Granularity get inputGranularity => $_getN(0);
   @$pb.TagNumber(1)
-  set inputGranularity(Verdict_Granularity v) { setField(1, v); }
+  set inputGranularity(Verdict_Granularity v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInputGranularity() => $_has(0);
   @$pb.TagNumber(1)
@@ -573,7 +707,10 @@ class Verdict extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Verdict_Granularity get validationGranularity => $_getN(1);
   @$pb.TagNumber(2)
-  set validationGranularity(Verdict_Granularity v) { setField(2, v); }
+  set validationGranularity(Verdict_Granularity v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValidationGranularity() => $_has(1);
   @$pb.TagNumber(2)
@@ -592,7 +729,10 @@ class Verdict extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Verdict_Granularity get geocodeGranularity => $_getN(2);
   @$pb.TagNumber(3)
-  set geocodeGranularity(Verdict_Granularity v) { setField(3, v); }
+  set geocodeGranularity(Verdict_Granularity v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGeocodeGranularity() => $_has(2);
   @$pb.TagNumber(3)
@@ -608,7 +748,10 @@ class Verdict extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get addressComplete => $_getBF(3);
   @$pb.TagNumber(4)
-  set addressComplete($core.bool v) { $_setBool(3, v); }
+  set addressComplete($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAddressComplete() => $_has(3);
   @$pb.TagNumber(4)
@@ -620,7 +763,10 @@ class Verdict extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get hasUnconfirmedComponents => $_getBF(4);
   @$pb.TagNumber(5)
-  set hasUnconfirmedComponents($core.bool v) { $_setBool(4, v); }
+  set hasUnconfirmedComponents($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasHasUnconfirmedComponents() => $_has(4);
   @$pb.TagNumber(5)
@@ -633,7 +779,10 @@ class Verdict extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get hasInferredComponents => $_getBF(5);
   @$pb.TagNumber(6)
-  set hasInferredComponents($core.bool v) { $_setBool(5, v); }
+  set hasInferredComponents($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasHasInferredComponents() => $_has(5);
   @$pb.TagNumber(6)
@@ -645,13 +794,16 @@ class Verdict extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get hasReplacedComponents => $_getBF(6);
   @$pb.TagNumber(7)
-  set hasReplacedComponents($core.bool v) { $_setBool(6, v); }
+  set hasReplacedComponents($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasHasReplacedComponents() => $_has(6);
   @$pb.TagNumber(7)
   void clearHasReplacedComponents() => clearField(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

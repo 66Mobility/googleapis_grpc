@@ -17,23 +17,30 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// This should be used for when the image's aspect ratio does not match the
 /// image container's aspect ratio.
 class StaticImagePrompt_ImageFill extends $pb.ProtobufEnum {
-  static const StaticImagePrompt_ImageFill UNSPECIFIED = StaticImagePrompt_ImageFill._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
-  static const StaticImagePrompt_ImageFill GRAY = StaticImagePrompt_ImageFill._(1, _omitEnumNames ? '' : 'GRAY');
-  static const StaticImagePrompt_ImageFill WHITE = StaticImagePrompt_ImageFill._(2, _omitEnumNames ? '' : 'WHITE');
-  static const StaticImagePrompt_ImageFill CROPPED = StaticImagePrompt_ImageFill._(3, _omitEnumNames ? '' : 'CROPPED');
+  static const StaticImagePrompt_ImageFill UNSPECIFIED =
+      StaticImagePrompt_ImageFill._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
+  static const StaticImagePrompt_ImageFill GRAY =
+      StaticImagePrompt_ImageFill._(1, _omitEnumNames ? '' : 'GRAY');
+  static const StaticImagePrompt_ImageFill WHITE =
+      StaticImagePrompt_ImageFill._(2, _omitEnumNames ? '' : 'WHITE');
+  static const StaticImagePrompt_ImageFill CROPPED =
+      StaticImagePrompt_ImageFill._(3, _omitEnumNames ? '' : 'CROPPED');
 
-  static const $core.List<StaticImagePrompt_ImageFill> values = <StaticImagePrompt_ImageFill> [
+  static const $core.List<StaticImagePrompt_ImageFill> values =
+      <StaticImagePrompt_ImageFill>[
     UNSPECIFIED,
     GRAY,
     WHITE,
     CROPPED,
   ];
 
-  static final $core.Map<$core.int, StaticImagePrompt_ImageFill> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static StaticImagePrompt_ImageFill? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, StaticImagePrompt_ImageFill> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static StaticImagePrompt_ImageFill? valueOf($core.int value) =>
+      _byValue[value];
 
-  const StaticImagePrompt_ImageFill._($core.int v, $core.String n) : super(v, n);
+  const StaticImagePrompt_ImageFill._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

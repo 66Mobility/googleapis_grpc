@@ -31,8 +31,22 @@ final $typed_data.Uint8List googleServiceAccountDescriptor = $convert.base64Deco
 const AwsAccessKey$json = {
   '1': 'AwsAccessKey',
   '2': [
-    {'1': 'access_key_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'accessKeyId'},
-    {'1': 'secret_access_key', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'secretAccessKey'},
+    {
+      '1': 'access_key_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'accessKeyId'
+    },
+    {
+      '1': 'secret_access_key',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'secretAccessKey'
+    },
   ],
 };
 
@@ -57,12 +71,40 @@ final $typed_data.Uint8List azureCredentialsDescriptor = $convert.base64Decode(
 const ObjectConditions$json = {
   '1': 'ObjectConditions',
   '2': [
-    {'1': 'min_time_elapsed_since_last_modification', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'minTimeElapsedSinceLastModification'},
-    {'1': 'max_time_elapsed_since_last_modification', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maxTimeElapsedSinceLastModification'},
+    {
+      '1': 'min_time_elapsed_since_last_modification',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'minTimeElapsedSinceLastModification'
+    },
+    {
+      '1': 'max_time_elapsed_since_last_modification',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maxTimeElapsedSinceLastModification'
+    },
     {'1': 'include_prefixes', '3': 3, '4': 3, '5': 9, '10': 'includePrefixes'},
     {'1': 'exclude_prefixes', '3': 4, '4': 3, '5': 9, '10': 'excludePrefixes'},
-    {'1': 'last_modified_since', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastModifiedSince'},
-    {'1': 'last_modified_before', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastModifiedBefore'},
+    {
+      '1': 'last_modified_since',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastModifiedSince'
+    },
+    {
+      '1': 'last_modified_before',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastModifiedBefore'
+    },
   ],
 };
 
@@ -84,7 +126,13 @@ const GcsData$json = {
   '2': [
     {'1': 'bucket_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucketName'},
     {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
-    {'1': 'managed_folder_transfer_enabled', '3': 4, '4': 1, '5': 8, '10': 'managedFolderTransferEnabled'},
+    {
+      '1': 'managed_folder_transfer_enabled',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'managedFolderTransferEnabled'
+    },
   ],
 };
 
@@ -99,12 +147,41 @@ const AwsS3Data$json = {
   '1': 'AwsS3Data',
   '2': [
     {'1': 'bucket_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucketName'},
-    {'1': 'aws_access_key', '3': 2, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AwsAccessKey', '8': {}, '10': 'awsAccessKey'},
+    {
+      '1': 'aws_access_key',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AwsAccessKey',
+      '8': {},
+      '10': 'awsAccessKey'
+    },
     {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
     {'1': 'role_arn', '3': 4, '4': 1, '5': 9, '10': 'roleArn'},
-    {'1': 'cloudfront_domain', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'cloudfrontDomain'},
-    {'1': 'credentials_secret', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'credentialsSecret'},
-    {'1': 'managed_private_network', '3': 8, '4': 1, '5': 8, '9': 0, '10': 'managedPrivateNetwork'},
+    {
+      '1': 'cloudfront_domain',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'cloudfrontDomain'
+    },
+    {
+      '1': 'credentials_secret',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'credentialsSecret'
+    },
+    {
+      '1': 'managed_private_network',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'managedPrivateNetwork'
+    },
   ],
   '8': [
     {'1': 'private_network'},
@@ -125,11 +202,33 @@ final $typed_data.Uint8List awsS3DataDescriptor = $convert.base64Decode(
 const AzureBlobStorageData$json = {
   '1': 'AzureBlobStorageData',
   '2': [
-    {'1': 'storage_account', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'storageAccount'},
-    {'1': 'azure_credentials', '3': 2, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AzureCredentials', '8': {}, '10': 'azureCredentials'},
+    {
+      '1': 'storage_account',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'storageAccount'
+    },
+    {
+      '1': 'azure_credentials',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AzureCredentials',
+      '8': {},
+      '10': 'azureCredentials'
+    },
     {'1': 'container', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'container'},
     {'1': 'path', '3': 5, '4': 1, '5': 9, '10': 'path'},
-    {'1': 'credentials_secret', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'credentialsSecret'},
+    {
+      '1': 'credentials_secret',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'credentialsSecret'
+    },
   ],
 };
 
@@ -150,8 +249,8 @@ const HttpData$json = {
 };
 
 /// Descriptor for `HttpData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List httpDataDescriptor = $convert.base64Decode(
-    'CghIdHRwRGF0YRIeCghsaXN0X3VybBgBIAEoCUID4EECUgdsaXN0VXJs');
+final $typed_data.Uint8List httpDataDescriptor = $convert
+    .base64Decode('CghIdHRwRGF0YRIeCghsaXN0X3VybBgBIAEoCUID4EECUgdsaXN0VXJs');
 
 @$core.Deprecated('Use posixFilesystemDescriptor instead')
 const PosixFilesystem$json = {
@@ -175,8 +274,8 @@ const HdfsData$json = {
 };
 
 /// Descriptor for `HdfsData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List hdfsDataDescriptor = $convert.base64Decode(
-    'CghIZGZzRGF0YRISCgRwYXRoGAEgASgJUgRwYXRo');
+final $typed_data.Uint8List hdfsDataDescriptor =
+    $convert.base64Decode('CghIZGZzRGF0YRISCgRwYXRoGAEgASgJUgRwYXRo');
 
 @$core.Deprecated('Use awsS3CompatibleDataDescriptor instead')
 const AwsS3CompatibleData$json = {
@@ -186,7 +285,15 @@ const AwsS3CompatibleData$json = {
     {'1': 'path', '3': 2, '4': 1, '5': 9, '10': 'path'},
     {'1': 'endpoint', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'endpoint'},
     {'1': 'region', '3': 5, '4': 1, '5': 9, '10': 'region'},
-    {'1': 's3_metadata', '3': 4, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.S3CompatibleMetadata', '9': 0, '10': 's3Metadata'},
+    {
+      '1': 's3_metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.S3CompatibleMetadata',
+      '9': 0,
+      '10': 's3Metadata'
+    },
   ],
   '8': [
     {'1': 'data_provider'},
@@ -205,12 +312,45 @@ final $typed_data.Uint8List awsS3CompatibleDataDescriptor = $convert.base64Decod
 const S3CompatibleMetadata$json = {
   '1': 'S3CompatibleMetadata',
   '2': [
-    {'1': 'auth_method', '3': 1, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.S3CompatibleMetadata.AuthMethod', '10': 'authMethod'},
-    {'1': 'request_model', '3': 2, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.S3CompatibleMetadata.RequestModel', '10': 'requestModel'},
-    {'1': 'protocol', '3': 3, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.S3CompatibleMetadata.NetworkProtocol', '10': 'protocol'},
-    {'1': 'list_api', '3': 4, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.S3CompatibleMetadata.ListApi', '10': 'listApi'},
+    {
+      '1': 'auth_method',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.S3CompatibleMetadata.AuthMethod',
+      '10': 'authMethod'
+    },
+    {
+      '1': 'request_model',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.S3CompatibleMetadata.RequestModel',
+      '10': 'requestModel'
+    },
+    {
+      '1': 'protocol',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.S3CompatibleMetadata.NetworkProtocol',
+      '10': 'protocol'
+    },
+    {
+      '1': 'list_api',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.S3CompatibleMetadata.ListApi',
+      '10': 'listApi'
+    },
   ],
-  '4': [S3CompatibleMetadata_AuthMethod$json, S3CompatibleMetadata_RequestModel$json, S3CompatibleMetadata_NetworkProtocol$json, S3CompatibleMetadata_ListApi$json],
+  '4': [
+    S3CompatibleMetadata_AuthMethod$json,
+    S3CompatibleMetadata_RequestModel$json,
+    S3CompatibleMetadata_NetworkProtocol$json,
+    S3CompatibleMetadata_ListApi$json
+  ],
 };
 
 @$core.Deprecated('Use s3CompatibleMetadataDescriptor instead')
@@ -277,8 +417,23 @@ const AgentPool$json = {
   '2': [
     {'1': 'name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.AgentPool.State', '8': {}, '10': 'state'},
-    {'1': 'bandwidth_limit', '3': 5, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AgentPool.BandwidthLimit', '10': 'bandwidthLimit'},
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.AgentPool.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'bandwidth_limit',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AgentPool.BandwidthLimit',
+      '10': 'bandwidthLimit'
+    },
   ],
   '3': [AgentPool_BandwidthLimit$json],
   '4': [AgentPool_State$json],
@@ -320,11 +475,43 @@ final $typed_data.Uint8List agentPoolDescriptor = $convert.base64Decode(
 const TransferOptions$json = {
   '1': 'TransferOptions',
   '2': [
-    {'1': 'overwrite_objects_already_existing_in_sink', '3': 1, '4': 1, '5': 8, '10': 'overwriteObjectsAlreadyExistingInSink'},
-    {'1': 'delete_objects_unique_in_sink', '3': 2, '4': 1, '5': 8, '10': 'deleteObjectsUniqueInSink'},
-    {'1': 'delete_objects_from_source_after_transfer', '3': 3, '4': 1, '5': 8, '10': 'deleteObjectsFromSourceAfterTransfer'},
-    {'1': 'overwrite_when', '3': 4, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.TransferOptions.OverwriteWhen', '10': 'overwriteWhen'},
-    {'1': 'metadata_options', '3': 5, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.MetadataOptions', '10': 'metadataOptions'},
+    {
+      '1': 'overwrite_objects_already_existing_in_sink',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'overwriteObjectsAlreadyExistingInSink'
+    },
+    {
+      '1': 'delete_objects_unique_in_sink',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'deleteObjectsUniqueInSink'
+    },
+    {
+      '1': 'delete_objects_from_source_after_transfer',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'deleteObjectsFromSourceAfterTransfer'
+    },
+    {
+      '1': 'overwrite_when',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.TransferOptions.OverwriteWhen',
+      '10': 'overwriteWhen'
+    },
+    {
+      '1': 'metadata_options',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.MetadataOptions',
+      '10': 'metadataOptions'
+    },
   ],
   '4': [TransferOptions_OverwriteWhen$json],
 };
@@ -357,21 +544,134 @@ final $typed_data.Uint8List transferOptionsDescriptor = $convert.base64Decode(
 const TransferSpec$json = {
   '1': 'TransferSpec',
   '2': [
-    {'1': 'gcs_data_sink', '3': 4, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.GcsData', '9': 0, '10': 'gcsDataSink'},
-    {'1': 'posix_data_sink', '3': 13, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.PosixFilesystem', '9': 0, '10': 'posixDataSink'},
-    {'1': 'gcs_data_source', '3': 1, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.GcsData', '9': 1, '10': 'gcsDataSource'},
-    {'1': 'aws_s3_data_source', '3': 2, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AwsS3Data', '9': 1, '10': 'awsS3DataSource'},
-    {'1': 'http_data_source', '3': 3, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.HttpData', '9': 1, '10': 'httpDataSource'},
-    {'1': 'posix_data_source', '3': 14, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.PosixFilesystem', '9': 1, '10': 'posixDataSource'},
-    {'1': 'azure_blob_storage_data_source', '3': 8, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AzureBlobStorageData', '9': 1, '10': 'azureBlobStorageDataSource'},
-    {'1': 'aws_s3_compatible_data_source', '3': 19, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.AwsS3CompatibleData', '9': 1, '10': 'awsS3CompatibleDataSource'},
-    {'1': 'hdfs_data_source', '3': 20, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.HdfsData', '9': 1, '10': 'hdfsDataSource'},
-    {'1': 'gcs_intermediate_data_location', '3': 16, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.GcsData', '9': 2, '10': 'gcsIntermediateDataLocation'},
-    {'1': 'object_conditions', '3': 5, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.ObjectConditions', '10': 'objectConditions'},
-    {'1': 'transfer_options', '3': 6, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.TransferOptions', '10': 'transferOptions'},
-    {'1': 'transfer_manifest', '3': 15, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.TransferManifest', '10': 'transferManifest'},
-    {'1': 'source_agent_pool_name', '3': 17, '4': 1, '5': 9, '10': 'sourceAgentPoolName'},
-    {'1': 'sink_agent_pool_name', '3': 18, '4': 1, '5': 9, '10': 'sinkAgentPoolName'},
+    {
+      '1': 'gcs_data_sink',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.GcsData',
+      '9': 0,
+      '10': 'gcsDataSink'
+    },
+    {
+      '1': 'posix_data_sink',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.PosixFilesystem',
+      '9': 0,
+      '10': 'posixDataSink'
+    },
+    {
+      '1': 'gcs_data_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.GcsData',
+      '9': 1,
+      '10': 'gcsDataSource'
+    },
+    {
+      '1': 'aws_s3_data_source',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AwsS3Data',
+      '9': 1,
+      '10': 'awsS3DataSource'
+    },
+    {
+      '1': 'http_data_source',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.HttpData',
+      '9': 1,
+      '10': 'httpDataSource'
+    },
+    {
+      '1': 'posix_data_source',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.PosixFilesystem',
+      '9': 1,
+      '10': 'posixDataSource'
+    },
+    {
+      '1': 'azure_blob_storage_data_source',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AzureBlobStorageData',
+      '9': 1,
+      '10': 'azureBlobStorageDataSource'
+    },
+    {
+      '1': 'aws_s3_compatible_data_source',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.AwsS3CompatibleData',
+      '9': 1,
+      '10': 'awsS3CompatibleDataSource'
+    },
+    {
+      '1': 'hdfs_data_source',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.HdfsData',
+      '9': 1,
+      '10': 'hdfsDataSource'
+    },
+    {
+      '1': 'gcs_intermediate_data_location',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.GcsData',
+      '9': 2,
+      '10': 'gcsIntermediateDataLocation'
+    },
+    {
+      '1': 'object_conditions',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.ObjectConditions',
+      '10': 'objectConditions'
+    },
+    {
+      '1': 'transfer_options',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferOptions',
+      '10': 'transferOptions'
+    },
+    {
+      '1': 'transfer_manifest',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferManifest',
+      '10': 'transferManifest'
+    },
+    {
+      '1': 'source_agent_pool_name',
+      '3': 17,
+      '4': 1,
+      '5': 9,
+      '10': 'sourceAgentPoolName'
+    },
+    {
+      '1': 'sink_agent_pool_name',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '10': 'sinkAgentPoolName'
+    },
   ],
   '8': [
     {'1': 'data_sink'},
@@ -412,17 +712,90 @@ final $typed_data.Uint8List transferSpecDescriptor = $convert.base64Decode(
 const MetadataOptions$json = {
   '1': 'MetadataOptions',
   '2': [
-    {'1': 'symlink', '3': 1, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.Symlink', '10': 'symlink'},
-    {'1': 'mode', '3': 2, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.Mode', '10': 'mode'},
-    {'1': 'gid', '3': 3, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.GID', '10': 'gid'},
-    {'1': 'uid', '3': 4, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.UID', '10': 'uid'},
-    {'1': 'acl', '3': 5, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.Acl', '10': 'acl'},
-    {'1': 'storage_class', '3': 6, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.StorageClass', '10': 'storageClass'},
-    {'1': 'temporary_hold', '3': 7, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.TemporaryHold', '10': 'temporaryHold'},
-    {'1': 'kms_key', '3': 8, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.KmsKey', '10': 'kmsKey'},
-    {'1': 'time_created', '3': 9, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.MetadataOptions.TimeCreated', '10': 'timeCreated'},
+    {
+      '1': 'symlink',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.Symlink',
+      '10': 'symlink'
+    },
+    {
+      '1': 'mode',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.Mode',
+      '10': 'mode'
+    },
+    {
+      '1': 'gid',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.GID',
+      '10': 'gid'
+    },
+    {
+      '1': 'uid',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.UID',
+      '10': 'uid'
+    },
+    {
+      '1': 'acl',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.Acl',
+      '10': 'acl'
+    },
+    {
+      '1': 'storage_class',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.StorageClass',
+      '10': 'storageClass'
+    },
+    {
+      '1': 'temporary_hold',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.TemporaryHold',
+      '10': 'temporaryHold'
+    },
+    {
+      '1': 'kms_key',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.KmsKey',
+      '10': 'kmsKey'
+    },
+    {
+      '1': 'time_created',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.MetadataOptions.TimeCreated',
+      '10': 'timeCreated'
+    },
   ],
-  '4': [MetadataOptions_Symlink$json, MetadataOptions_Mode$json, MetadataOptions_GID$json, MetadataOptions_UID$json, MetadataOptions_Acl$json, MetadataOptions_StorageClass$json, MetadataOptions_TemporaryHold$json, MetadataOptions_KmsKey$json, MetadataOptions_TimeCreated$json],
+  '4': [
+    MetadataOptions_Symlink$json,
+    MetadataOptions_Mode$json,
+    MetadataOptions_GID$json,
+    MetadataOptions_UID$json,
+    MetadataOptions_Acl$json,
+    MetadataOptions_StorageClass$json,
+    MetadataOptions_TemporaryHold$json,
+    MetadataOptions_KmsKey$json,
+    MetadataOptions_TimeCreated$json
+  ],
 };
 
 @$core.Deprecated('Use metadataOptionsDescriptor instead')
@@ -567,11 +940,47 @@ final $typed_data.Uint8List transferManifestDescriptor = $convert.base64Decode(
 const Schedule$json = {
   '1': 'Schedule',
   '2': [
-    {'1': 'schedule_start_date', '3': 1, '4': 1, '5': 11, '6': '.google.type.Date', '8': {}, '10': 'scheduleStartDate'},
-    {'1': 'schedule_end_date', '3': 2, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'scheduleEndDate'},
-    {'1': 'start_time_of_day', '3': 3, '4': 1, '5': 11, '6': '.google.type.TimeOfDay', '10': 'startTimeOfDay'},
-    {'1': 'end_time_of_day', '3': 4, '4': 1, '5': 11, '6': '.google.type.TimeOfDay', '10': 'endTimeOfDay'},
-    {'1': 'repeat_interval', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'repeatInterval'},
+    {
+      '1': 'schedule_start_date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '8': {},
+      '10': 'scheduleStartDate'
+    },
+    {
+      '1': 'schedule_end_date',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'scheduleEndDate'
+    },
+    {
+      '1': 'start_time_of_day',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.TimeOfDay',
+      '10': 'startTimeOfDay'
+    },
+    {
+      '1': 'end_time_of_day',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.TimeOfDay',
+      '10': 'endTimeOfDay'
+    },
+    {
+      '1': 'repeat_interval',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'repeatInterval'
+    },
   ],
 };
 
@@ -590,8 +999,22 @@ const EventStream$json = {
   '1': 'EventStream',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'event_stream_start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eventStreamStartTime'},
-    {'1': 'event_stream_expiration_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eventStreamExpirationTime'},
+    {
+      '1': 'event_stream_start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eventStreamStartTime'
+    },
+    {
+      '1': 'event_stream_expiration_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eventStreamExpirationTime'
+    },
   ],
 };
 
@@ -609,16 +1032,88 @@ const TransferJob$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
     {'1': 'project_id', '3': 3, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'transfer_spec', '3': 4, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.TransferSpec', '10': 'transferSpec'},
-    {'1': 'notification_config', '3': 11, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.NotificationConfig', '10': 'notificationConfig'},
-    {'1': 'logging_config', '3': 14, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.LoggingConfig', '10': 'loggingConfig'},
-    {'1': 'schedule', '3': 5, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.Schedule', '10': 'schedule'},
-    {'1': 'event_stream', '3': 15, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.EventStream', '10': 'eventStream'},
-    {'1': 'status', '3': 6, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.TransferJob.Status', '10': 'status'},
-    {'1': 'creation_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'creationTime'},
-    {'1': 'last_modification_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'lastModificationTime'},
-    {'1': 'deletion_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'deletionTime'},
-    {'1': 'latest_operation_name', '3': 12, '4': 1, '5': 9, '10': 'latestOperationName'},
+    {
+      '1': 'transfer_spec',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferSpec',
+      '10': 'transferSpec'
+    },
+    {
+      '1': 'notification_config',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.NotificationConfig',
+      '10': 'notificationConfig'
+    },
+    {
+      '1': 'logging_config',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.LoggingConfig',
+      '10': 'loggingConfig'
+    },
+    {
+      '1': 'schedule',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.Schedule',
+      '10': 'schedule'
+    },
+    {
+      '1': 'event_stream',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.EventStream',
+      '10': 'eventStream'
+    },
+    {
+      '1': 'status',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.TransferJob.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'creation_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'creationTime'
+    },
+    {
+      '1': 'last_modification_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'lastModificationTime'
+    },
+    {
+      '1': 'deletion_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'deletionTime'
+    },
+    {
+      '1': 'latest_operation_name',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'latestOperationName'
+    },
   ],
   '4': [TransferJob_Status$json],
 };
@@ -672,9 +1167,24 @@ final $typed_data.Uint8List errorLogEntryDescriptor = $convert.base64Decode(
 const ErrorSummary$json = {
   '1': 'ErrorSummary',
   '2': [
-    {'1': 'error_code', '3': 1, '4': 1, '5': 14, '6': '.google.rpc.Code', '8': {}, '10': 'errorCode'},
+    {
+      '1': 'error_code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.rpc.Code',
+      '8': {},
+      '10': 'errorCode'
+    },
     {'1': 'error_count', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'errorCount'},
-    {'1': 'error_log_entries', '3': 3, '4': 3, '5': 11, '6': '.google.storagetransfer.v1.ErrorLogEntry', '10': 'errorLogEntries'},
+    {
+      '1': 'error_log_entries',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.ErrorLogEntry',
+      '10': 'errorLogEntries'
+    },
   ],
 };
 
@@ -689,27 +1199,153 @@ final $typed_data.Uint8List errorSummaryDescriptor = $convert.base64Decode(
 const TransferCounters$json = {
   '1': 'TransferCounters',
   '2': [
-    {'1': 'objects_found_from_source', '3': 1, '4': 1, '5': 3, '10': 'objectsFoundFromSource'},
-    {'1': 'bytes_found_from_source', '3': 2, '4': 1, '5': 3, '10': 'bytesFoundFromSource'},
-    {'1': 'objects_found_only_from_sink', '3': 3, '4': 1, '5': 3, '10': 'objectsFoundOnlyFromSink'},
-    {'1': 'bytes_found_only_from_sink', '3': 4, '4': 1, '5': 3, '10': 'bytesFoundOnlyFromSink'},
-    {'1': 'objects_from_source_skipped_by_sync', '3': 5, '4': 1, '5': 3, '10': 'objectsFromSourceSkippedBySync'},
-    {'1': 'bytes_from_source_skipped_by_sync', '3': 6, '4': 1, '5': 3, '10': 'bytesFromSourceSkippedBySync'},
-    {'1': 'objects_copied_to_sink', '3': 7, '4': 1, '5': 3, '10': 'objectsCopiedToSink'},
-    {'1': 'bytes_copied_to_sink', '3': 8, '4': 1, '5': 3, '10': 'bytesCopiedToSink'},
-    {'1': 'objects_deleted_from_source', '3': 9, '4': 1, '5': 3, '10': 'objectsDeletedFromSource'},
-    {'1': 'bytes_deleted_from_source', '3': 10, '4': 1, '5': 3, '10': 'bytesDeletedFromSource'},
-    {'1': 'objects_deleted_from_sink', '3': 11, '4': 1, '5': 3, '10': 'objectsDeletedFromSink'},
-    {'1': 'bytes_deleted_from_sink', '3': 12, '4': 1, '5': 3, '10': 'bytesDeletedFromSink'},
-    {'1': 'objects_from_source_failed', '3': 13, '4': 1, '5': 3, '10': 'objectsFromSourceFailed'},
-    {'1': 'bytes_from_source_failed', '3': 14, '4': 1, '5': 3, '10': 'bytesFromSourceFailed'},
-    {'1': 'objects_failed_to_delete_from_sink', '3': 15, '4': 1, '5': 3, '10': 'objectsFailedToDeleteFromSink'},
-    {'1': 'bytes_failed_to_delete_from_sink', '3': 16, '4': 1, '5': 3, '10': 'bytesFailedToDeleteFromSink'},
-    {'1': 'directories_found_from_source', '3': 17, '4': 1, '5': 3, '10': 'directoriesFoundFromSource'},
-    {'1': 'directories_failed_to_list_from_source', '3': 18, '4': 1, '5': 3, '10': 'directoriesFailedToListFromSource'},
-    {'1': 'directories_successfully_listed_from_source', '3': 19, '4': 1, '5': 3, '10': 'directoriesSuccessfullyListedFromSource'},
-    {'1': 'intermediate_objects_cleaned_up', '3': 22, '4': 1, '5': 3, '10': 'intermediateObjectsCleanedUp'},
-    {'1': 'intermediate_objects_failed_cleaned_up', '3': 23, '4': 1, '5': 3, '10': 'intermediateObjectsFailedCleanedUp'},
+    {
+      '1': 'objects_found_from_source',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsFoundFromSource'
+    },
+    {
+      '1': 'bytes_found_from_source',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesFoundFromSource'
+    },
+    {
+      '1': 'objects_found_only_from_sink',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsFoundOnlyFromSink'
+    },
+    {
+      '1': 'bytes_found_only_from_sink',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesFoundOnlyFromSink'
+    },
+    {
+      '1': 'objects_from_source_skipped_by_sync',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsFromSourceSkippedBySync'
+    },
+    {
+      '1': 'bytes_from_source_skipped_by_sync',
+      '3': 6,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesFromSourceSkippedBySync'
+    },
+    {
+      '1': 'objects_copied_to_sink',
+      '3': 7,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsCopiedToSink'
+    },
+    {
+      '1': 'bytes_copied_to_sink',
+      '3': 8,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesCopiedToSink'
+    },
+    {
+      '1': 'objects_deleted_from_source',
+      '3': 9,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsDeletedFromSource'
+    },
+    {
+      '1': 'bytes_deleted_from_source',
+      '3': 10,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesDeletedFromSource'
+    },
+    {
+      '1': 'objects_deleted_from_sink',
+      '3': 11,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsDeletedFromSink'
+    },
+    {
+      '1': 'bytes_deleted_from_sink',
+      '3': 12,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesDeletedFromSink'
+    },
+    {
+      '1': 'objects_from_source_failed',
+      '3': 13,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsFromSourceFailed'
+    },
+    {
+      '1': 'bytes_from_source_failed',
+      '3': 14,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesFromSourceFailed'
+    },
+    {
+      '1': 'objects_failed_to_delete_from_sink',
+      '3': 15,
+      '4': 1,
+      '5': 3,
+      '10': 'objectsFailedToDeleteFromSink'
+    },
+    {
+      '1': 'bytes_failed_to_delete_from_sink',
+      '3': 16,
+      '4': 1,
+      '5': 3,
+      '10': 'bytesFailedToDeleteFromSink'
+    },
+    {
+      '1': 'directories_found_from_source',
+      '3': 17,
+      '4': 1,
+      '5': 3,
+      '10': 'directoriesFoundFromSource'
+    },
+    {
+      '1': 'directories_failed_to_list_from_source',
+      '3': 18,
+      '4': 1,
+      '5': 3,
+      '10': 'directoriesFailedToListFromSource'
+    },
+    {
+      '1': 'directories_successfully_listed_from_source',
+      '3': 19,
+      '4': 1,
+      '5': 3,
+      '10': 'directoriesSuccessfullyListedFromSource'
+    },
+    {
+      '1': 'intermediate_objects_cleaned_up',
+      '3': 22,
+      '4': 1,
+      '5': 3,
+      '10': 'intermediateObjectsCleanedUp'
+    },
+    {
+      '1': 'intermediate_objects_failed_cleaned_up',
+      '3': 23,
+      '4': 1,
+      '5': 3,
+      '10': 'intermediateObjectsFailedCleanedUp'
+    },
   ],
 };
 
@@ -747,10 +1383,28 @@ const NotificationConfig$json = {
   '1': 'NotificationConfig',
   '2': [
     {'1': 'pubsub_topic', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'pubsubTopic'},
-    {'1': 'event_types', '3': 2, '4': 3, '5': 14, '6': '.google.storagetransfer.v1.NotificationConfig.EventType', '10': 'eventTypes'},
-    {'1': 'payload_format', '3': 3, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.NotificationConfig.PayloadFormat', '8': {}, '10': 'payloadFormat'},
+    {
+      '1': 'event_types',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.NotificationConfig.EventType',
+      '10': 'eventTypes'
+    },
+    {
+      '1': 'payload_format',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.NotificationConfig.PayloadFormat',
+      '8': {},
+      '10': 'payloadFormat'
+    },
   ],
-  '4': [NotificationConfig_EventType$json, NotificationConfig_PayloadFormat$json],
+  '4': [
+    NotificationConfig_EventType$json,
+    NotificationConfig_PayloadFormat$json
+  ],
 };
 
 @$core.Deprecated('Use notificationConfigDescriptor instead')
@@ -790,11 +1444,34 @@ final $typed_data.Uint8List notificationConfigDescriptor = $convert.base64Decode
 const LoggingConfig$json = {
   '1': 'LoggingConfig',
   '2': [
-    {'1': 'log_actions', '3': 1, '4': 3, '5': 14, '6': '.google.storagetransfer.v1.LoggingConfig.LoggableAction', '10': 'logActions'},
-    {'1': 'log_action_states', '3': 2, '4': 3, '5': 14, '6': '.google.storagetransfer.v1.LoggingConfig.LoggableActionState', '10': 'logActionStates'},
-    {'1': 'enable_onprem_gcs_transfer_logs', '3': 3, '4': 1, '5': 8, '10': 'enableOnpremGcsTransferLogs'},
+    {
+      '1': 'log_actions',
+      '3': 1,
+      '4': 3,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.LoggingConfig.LoggableAction',
+      '10': 'logActions'
+    },
+    {
+      '1': 'log_action_states',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.LoggingConfig.LoggableActionState',
+      '10': 'logActionStates'
+    },
+    {
+      '1': 'enable_onprem_gcs_transfer_logs',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'enableOnpremGcsTransferLogs'
+    },
   ],
-  '4': [LoggingConfig_LoggableAction$json, LoggingConfig_LoggableActionState$json],
+  '4': [
+    LoggingConfig_LoggableAction$json,
+    LoggingConfig_LoggableActionState$json
+  ],
 };
 
 @$core.Deprecated('Use loggingConfigDescriptor instead')
@@ -836,14 +1513,70 @@ const TransferOperation$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'transfer_spec', '3': 3, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.TransferSpec', '10': 'transferSpec'},
-    {'1': 'notification_config', '3': 10, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.NotificationConfig', '10': 'notificationConfig'},
-    {'1': 'logging_config', '3': 12, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.LoggingConfig', '10': 'loggingConfig'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'status', '3': 6, '4': 1, '5': 14, '6': '.google.storagetransfer.v1.TransferOperation.Status', '10': 'status'},
-    {'1': 'counters', '3': 7, '4': 1, '5': 11, '6': '.google.storagetransfer.v1.TransferCounters', '10': 'counters'},
-    {'1': 'error_breakdowns', '3': 8, '4': 3, '5': 11, '6': '.google.storagetransfer.v1.ErrorSummary', '10': 'errorBreakdowns'},
+    {
+      '1': 'transfer_spec',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferSpec',
+      '10': 'transferSpec'
+    },
+    {
+      '1': 'notification_config',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.NotificationConfig',
+      '10': 'notificationConfig'
+    },
+    {
+      '1': 'logging_config',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.LoggingConfig',
+      '10': 'loggingConfig'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'status',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.storagetransfer.v1.TransferOperation.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'counters',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferCounters',
+      '10': 'counters'
+    },
+    {
+      '1': 'error_breakdowns',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.ErrorSummary',
+      '10': 'errorBreakdowns'
+    },
     {'1': 'transfer_job_name', '3': 9, '4': 1, '5': 9, '10': 'transferJobName'},
   ],
   '4': [TransferOperation_Status$json],
@@ -882,4 +1615,3 @@ final $typed_data.Uint8List transferOperationDescriptor = $convert.base64Decode(
     'N0YXR1cxIWChJTVEFUVVNfVU5TUEVDSUZJRUQQABIPCgtJTl9QUk9HUkVTUxABEgoKBlBBVVNF'
     'RBACEgsKB1NVQ0NFU1MQAxIKCgZGQUlMRUQQBBILCgdBQk9SVEVEEAUSCgoGUVVFVUVEEAYSDg'
     'oKU1VTUEVORElORxAH');
-

@@ -68,10 +68,31 @@ final $typed_data.Uint8List securityLevelDescriptor = $convert.base64Decode(
 const ApiConfigHandler$json = {
   '1': 'ApiConfigHandler',
   '2': [
-    {'1': 'auth_fail_action', '3': 1, '4': 1, '5': 14, '6': '.google.appengine.v1beta.AuthFailAction', '10': 'authFailAction'},
-    {'1': 'login', '3': 2, '4': 1, '5': 14, '6': '.google.appengine.v1beta.LoginRequirement', '10': 'login'},
+    {
+      '1': 'auth_fail_action',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.AuthFailAction',
+      '10': 'authFailAction'
+    },
+    {
+      '1': 'login',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.LoginRequirement',
+      '10': 'login'
+    },
     {'1': 'script', '3': 3, '4': 1, '5': 9, '10': 'script'},
-    {'1': 'security_level', '3': 4, '4': 1, '5': 14, '6': '.google.appengine.v1beta.SecurityLevel', '10': 'securityLevel'},
+    {
+      '1': 'security_level',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.SecurityLevel',
+      '10': 'securityLevel'
+    },
     {'1': 'url', '3': 5, '4': 1, '5': 9, '10': 'url'},
   ],
 };
@@ -89,7 +110,14 @@ final $typed_data.Uint8List apiConfigHandlerDescriptor = $convert.base64Decode(
 const ErrorHandler$json = {
   '1': 'ErrorHandler',
   '2': [
-    {'1': 'error_code', '3': 1, '4': 1, '5': 14, '6': '.google.appengine.v1beta.ErrorHandler.ErrorCode', '10': 'errorCode'},
+    {
+      '1': 'error_code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.ErrorHandler.ErrorCode',
+      '10': 'errorCode'
+    },
     {'1': 'static_file', '3': 2, '4': 1, '5': 9, '10': 'staticFile'},
     {'1': 'mime_type', '3': 3, '4': 1, '5': 9, '10': 'mimeType'},
   ],
@@ -123,13 +151,65 @@ const UrlMap$json = {
   '1': 'UrlMap',
   '2': [
     {'1': 'url_regex', '3': 1, '4': 1, '5': 9, '10': 'urlRegex'},
-    {'1': 'static_files', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.StaticFilesHandler', '9': 0, '10': 'staticFiles'},
-    {'1': 'script', '3': 3, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ScriptHandler', '9': 0, '10': 'script'},
-    {'1': 'api_endpoint', '3': 4, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ApiEndpointHandler', '9': 0, '10': 'apiEndpoint'},
-    {'1': 'security_level', '3': 5, '4': 1, '5': 14, '6': '.google.appengine.v1beta.SecurityLevel', '10': 'securityLevel'},
-    {'1': 'login', '3': 6, '4': 1, '5': 14, '6': '.google.appengine.v1beta.LoginRequirement', '10': 'login'},
-    {'1': 'auth_fail_action', '3': 7, '4': 1, '5': 14, '6': '.google.appengine.v1beta.AuthFailAction', '10': 'authFailAction'},
-    {'1': 'redirect_http_response_code', '3': 8, '4': 1, '5': 14, '6': '.google.appengine.v1beta.UrlMap.RedirectHttpResponseCode', '10': 'redirectHttpResponseCode'},
+    {
+      '1': 'static_files',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.StaticFilesHandler',
+      '9': 0,
+      '10': 'staticFiles'
+    },
+    {
+      '1': 'script',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ScriptHandler',
+      '9': 0,
+      '10': 'script'
+    },
+    {
+      '1': 'api_endpoint',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ApiEndpointHandler',
+      '9': 0,
+      '10': 'apiEndpoint'
+    },
+    {
+      '1': 'security_level',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.SecurityLevel',
+      '10': 'securityLevel'
+    },
+    {
+      '1': 'login',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.LoginRequirement',
+      '10': 'login'
+    },
+    {
+      '1': 'auth_fail_action',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.AuthFailAction',
+      '10': 'authFailAction'
+    },
+    {
+      '1': 'redirect_http_response_code',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.UrlMap.RedirectHttpResponseCode',
+      '10': 'redirectHttpResponseCode'
+    },
   ],
   '4': [UrlMap_RedirectHttpResponseCode$json],
   '8': [
@@ -174,11 +254,37 @@ const StaticFilesHandler$json = {
   '2': [
     {'1': 'path', '3': 1, '4': 1, '5': 9, '10': 'path'},
     {'1': 'upload_path_regex', '3': 2, '4': 1, '5': 9, '10': 'uploadPathRegex'},
-    {'1': 'http_headers', '3': 3, '4': 3, '5': 11, '6': '.google.appengine.v1beta.StaticFilesHandler.HttpHeadersEntry', '10': 'httpHeaders'},
+    {
+      '1': 'http_headers',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.StaticFilesHandler.HttpHeadersEntry',
+      '10': 'httpHeaders'
+    },
     {'1': 'mime_type', '3': 4, '4': 1, '5': 9, '10': 'mimeType'},
-    {'1': 'expiration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'expiration'},
-    {'1': 'require_matching_file', '3': 6, '4': 1, '5': 8, '10': 'requireMatchingFile'},
-    {'1': 'application_readable', '3': 7, '4': 1, '5': 8, '10': 'applicationReadable'},
+    {
+      '1': 'expiration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'expiration'
+    },
+    {
+      '1': 'require_matching_file',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '10': 'requireMatchingFile'
+    },
+    {
+      '1': 'application_readable',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'applicationReadable'
+    },
   ],
   '3': [StaticFilesHandler_HttpHeadersEntry$json],
 };
@@ -232,13 +338,51 @@ final $typed_data.Uint8List apiEndpointHandlerDescriptor = $convert.base64Decode
 const HealthCheck$json = {
   '1': 'HealthCheck',
   '2': [
-    {'1': 'disable_health_check', '3': 1, '4': 1, '5': 8, '10': 'disableHealthCheck'},
+    {
+      '1': 'disable_health_check',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'disableHealthCheck'
+    },
     {'1': 'host', '3': 2, '4': 1, '5': 9, '10': 'host'},
-    {'1': 'healthy_threshold', '3': 3, '4': 1, '5': 13, '10': 'healthyThreshold'},
-    {'1': 'unhealthy_threshold', '3': 4, '4': 1, '5': 13, '10': 'unhealthyThreshold'},
-    {'1': 'restart_threshold', '3': 5, '4': 1, '5': 13, '10': 'restartThreshold'},
-    {'1': 'check_interval', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'checkInterval'},
-    {'1': 'timeout', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
+    {
+      '1': 'healthy_threshold',
+      '3': 3,
+      '4': 1,
+      '5': 13,
+      '10': 'healthyThreshold'
+    },
+    {
+      '1': 'unhealthy_threshold',
+      '3': 4,
+      '4': 1,
+      '5': 13,
+      '10': 'unhealthyThreshold'
+    },
+    {
+      '1': 'restart_threshold',
+      '3': 5,
+      '4': 1,
+      '5': 13,
+      '10': 'restartThreshold'
+    },
+    {
+      '1': 'check_interval',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'checkInterval'
+    },
+    {
+      '1': 'timeout',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
   ],
 };
 
@@ -258,11 +402,44 @@ const ReadinessCheck$json = {
   '2': [
     {'1': 'path', '3': 1, '4': 1, '5': 9, '10': 'path'},
     {'1': 'host', '3': 2, '4': 1, '5': 9, '10': 'host'},
-    {'1': 'failure_threshold', '3': 3, '4': 1, '5': 13, '10': 'failureThreshold'},
-    {'1': 'success_threshold', '3': 4, '4': 1, '5': 13, '10': 'successThreshold'},
-    {'1': 'check_interval', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'checkInterval'},
-    {'1': 'timeout', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
-    {'1': 'app_start_timeout', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'appStartTimeout'},
+    {
+      '1': 'failure_threshold',
+      '3': 3,
+      '4': 1,
+      '5': 13,
+      '10': 'failureThreshold'
+    },
+    {
+      '1': 'success_threshold',
+      '3': 4,
+      '4': 1,
+      '5': 13,
+      '10': 'successThreshold'
+    },
+    {
+      '1': 'check_interval',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'checkInterval'
+    },
+    {
+      '1': 'timeout',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
+    {
+      '1': 'app_start_timeout',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'appStartTimeout'
+    },
   ],
 };
 
@@ -282,11 +459,44 @@ const LivenessCheck$json = {
   '2': [
     {'1': 'path', '3': 1, '4': 1, '5': 9, '10': 'path'},
     {'1': 'host', '3': 2, '4': 1, '5': 9, '10': 'host'},
-    {'1': 'failure_threshold', '3': 3, '4': 1, '5': 13, '10': 'failureThreshold'},
-    {'1': 'success_threshold', '3': 4, '4': 1, '5': 13, '10': 'successThreshold'},
-    {'1': 'check_interval', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'checkInterval'},
-    {'1': 'timeout', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
-    {'1': 'initial_delay', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'initialDelay'},
+    {
+      '1': 'failure_threshold',
+      '3': 3,
+      '4': 1,
+      '5': 13,
+      '10': 'failureThreshold'
+    },
+    {
+      '1': 'success_threshold',
+      '3': 4,
+      '4': 1,
+      '5': 13,
+      '10': 'successThreshold'
+    },
+    {
+      '1': 'check_interval',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'checkInterval'
+    },
+    {
+      '1': 'timeout',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
+    {
+      '1': 'initial_delay',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'initialDelay'
+    },
   ],
 };
 
@@ -312,4 +522,3 @@ const Library$json = {
 final $typed_data.Uint8List libraryDescriptor = $convert.base64Decode(
     'CgdMaWJyYXJ5EhIKBG5hbWUYASABKAlSBG5hbWUSGAoHdmVyc2lvbhgCIAEoCVIHdmVyc2lvbg'
     '==');
-

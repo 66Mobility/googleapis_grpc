@@ -82,41 +82,57 @@ class ProductInput extends $pb.GeneratedMessage {
     return $result;
   }
   ProductInput._() : super();
-  factory ProductInput.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProductInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProductInput.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductInput.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProductInput',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'product')
-    ..e<$536.Channel_ChannelEnum>(3, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $536.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED, valueOf: $536.Channel_ChannelEnum.valueOf, enumValues: $536.Channel_ChannelEnum.values)
+    ..e<$536.Channel_ChannelEnum>(
+        3, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE,
+        defaultOrMaker: $536.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
+        valueOf: $536.Channel_ChannelEnum.valueOf,
+        enumValues: $536.Channel_ChannelEnum.values)
     ..aOS(4, _omitFieldNames ? '' : 'offerId')
     ..aOS(5, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(6, _omitFieldNames ? '' : 'feedLabel')
     ..aInt64(7, _omitFieldNames ? '' : 'versionNumber')
-    ..aOM<$547.Attributes>(8, _omitFieldNames ? '' : 'attributes', subBuilder: $547.Attributes.create)
-    ..pc<$536.CustomAttribute>(9, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $536.CustomAttribute.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$547.Attributes>(8, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $547.Attributes.create)
+    ..pc<$536.CustomAttribute>(
+        9, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
+        subBuilder: $536.CustomAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProductInput clone() => ProductInput()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProductInput copyWith(void Function(ProductInput) updates) => super.copyWith((message) => updates(message as ProductInput)) as ProductInput;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductInput copyWith(void Function(ProductInput) updates) =>
+      super.copyWith((message) => updates(message as ProductInput))
+          as ProductInput;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProductInput create() => ProductInput._();
   ProductInput createEmptyInstance() => create();
-  static $pb.PbList<ProductInput> createRepeated() => $pb.PbList<ProductInput>();
+  static $pb.PbList<ProductInput> createRepeated() =>
+      $pb.PbList<ProductInput>();
   @$core.pragma('dart2js:noInline')
-  static ProductInput getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProductInput>(create);
+  static ProductInput getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProductInput>(create);
   static ProductInput? _defaultInstance;
 
   /// Identifier. The name of the product input.
@@ -125,7 +141,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -137,7 +156,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get product => $_getSZ(1);
   @$pb.TagNumber(2)
-  set product($core.String v) { $_setString(1, v); }
+  set product($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProduct() => $_has(1);
   @$pb.TagNumber(2)
@@ -149,7 +171,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $536.Channel_ChannelEnum get channel => $_getN(2);
   @$pb.TagNumber(3)
-  set channel($536.Channel_ChannelEnum v) { setField(3, v); }
+  set channel($536.Channel_ChannelEnum v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasChannel() => $_has(2);
   @$pb.TagNumber(3)
@@ -164,7 +189,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get offerId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set offerId($core.String v) { $_setString(3, v); }
+  set offerId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOfferId() => $_has(3);
   @$pb.TagNumber(4)
@@ -176,7 +204,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get contentLanguage => $_getSZ(4);
   @$pb.TagNumber(5)
-  set contentLanguage($core.String v) { $_setString(4, v); }
+  set contentLanguage($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasContentLanguage() => $_has(4);
   @$pb.TagNumber(5)
@@ -188,7 +219,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get feedLabel => $_getSZ(5);
   @$pb.TagNumber(6)
-  set feedLabel($core.String v) { $_setString(5, v); }
+  set feedLabel($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFeedLabel() => $_has(5);
   @$pb.TagNumber(6)
@@ -210,7 +244,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $fixnum.Int64 get versionNumber => $_getI64(6);
   @$pb.TagNumber(7)
-  set versionNumber($fixnum.Int64 v) { $_setInt64(6, v); }
+  set versionNumber($fixnum.Int64 v) {
+    $_setInt64(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasVersionNumber() => $_has(6);
   @$pb.TagNumber(7)
@@ -220,7 +257,10 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $547.Attributes get attributes => $_getN(7);
   @$pb.TagNumber(8)
-  set attributes($547.Attributes v) { setField(8, v); }
+  set attributes($547.Attributes v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasAttributes() => $_has(7);
   @$pb.TagNumber(8)
@@ -263,35 +303,47 @@ class InsertProductInputRequest extends $pb.GeneratedMessage {
     return $result;
   }
   InsertProductInputRequest._() : super();
-  factory InsertProductInputRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InsertProductInputRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InsertProductInputRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InsertProductInputRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertProductInputRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InsertProductInputRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<ProductInput>(2, _omitFieldNames ? '' : 'productInput', subBuilder: ProductInput.create)
+    ..aOM<ProductInput>(2, _omitFieldNames ? '' : 'productInput',
+        subBuilder: ProductInput.create)
     ..aOS(3, _omitFieldNames ? '' : 'dataSource')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InsertProductInputRequest clone() => InsertProductInputRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InsertProductInputRequest copyWith(void Function(InsertProductInputRequest) updates) => super.copyWith((message) => updates(message as InsertProductInputRequest)) as InsertProductInputRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InsertProductInputRequest clone() =>
+      InsertProductInputRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InsertProductInputRequest copyWith(
+          void Function(InsertProductInputRequest) updates) =>
+      super.copyWith((message) => updates(message as InsertProductInputRequest))
+          as InsertProductInputRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InsertProductInputRequest create() => InsertProductInputRequest._();
   InsertProductInputRequest createEmptyInstance() => create();
-  static $pb.PbList<InsertProductInputRequest> createRepeated() => $pb.PbList<InsertProductInputRequest>();
+  static $pb.PbList<InsertProductInputRequest> createRepeated() =>
+      $pb.PbList<InsertProductInputRequest>();
   @$core.pragma('dart2js:noInline')
-  static InsertProductInputRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InsertProductInputRequest>(create);
+  static InsertProductInputRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InsertProductInputRequest>(create);
   static InsertProductInputRequest? _defaultInstance;
 
   /// Required. The account where this product will be inserted.
@@ -299,7 +351,10 @@ class InsertProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -309,7 +364,10 @@ class InsertProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ProductInput get productInput => $_getN(1);
   @$pb.TagNumber(2)
-  set productInput(ProductInput v) { setField(2, v); }
+  set productInput(ProductInput v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProductInput() => $_has(1);
   @$pb.TagNumber(2)
@@ -324,7 +382,10 @@ class InsertProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get dataSource => $_getSZ(2);
   @$pb.TagNumber(3)
-  set dataSource($core.String v) { $_setString(2, v); }
+  set dataSource($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDataSource() => $_has(2);
   @$pb.TagNumber(3)
@@ -347,34 +408,45 @@ class DeleteProductInputRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteProductInputRequest._() : super();
-  factory DeleteProductInputRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteProductInputRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteProductInputRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteProductInputRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteProductInputRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteProductInputRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'dataSource')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteProductInputRequest clone() => DeleteProductInputRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteProductInputRequest copyWith(void Function(DeleteProductInputRequest) updates) => super.copyWith((message) => updates(message as DeleteProductInputRequest)) as DeleteProductInputRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteProductInputRequest clone() =>
+      DeleteProductInputRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteProductInputRequest copyWith(
+          void Function(DeleteProductInputRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteProductInputRequest))
+          as DeleteProductInputRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteProductInputRequest create() => DeleteProductInputRequest._();
   DeleteProductInputRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteProductInputRequest> createRepeated() => $pb.PbList<DeleteProductInputRequest>();
+  static $pb.PbList<DeleteProductInputRequest> createRepeated() =>
+      $pb.PbList<DeleteProductInputRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteProductInputRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteProductInputRequest>(create);
+  static DeleteProductInputRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteProductInputRequest>(create);
   static DeleteProductInputRequest? _defaultInstance;
 
   /// Required. The name of the product input resource to delete.
@@ -382,7 +454,10 @@ class DeleteProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -394,13 +469,16 @@ class DeleteProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get dataSource => $_getSZ(1);
   @$pb.TagNumber(2)
-  set dataSource($core.String v) { $_setString(1, v); }
+  set dataSource($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDataSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearDataSource() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

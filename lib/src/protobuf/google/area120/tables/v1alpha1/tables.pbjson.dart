@@ -57,7 +57,14 @@ final $typed_data.Uint8List listTablesRequestDescriptor = $convert.base64Decode(
 const ListTablesResponse$json = {
   '1': 'ListTablesResponse',
   '2': [
-    {'1': 'tables', '3': 1, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.Table', '10': 'tables'},
+    {
+      '1': 'tables',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Table',
+      '10': 'tables'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -99,7 +106,14 @@ final $typed_data.Uint8List listWorkspacesRequestDescriptor = $convert.base64Dec
 const ListWorkspacesResponse$json = {
   '1': 'ListWorkspacesResponse',
   '2': [
-    {'1': 'workspaces', '3': 1, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.Workspace', '10': 'workspaces'},
+    {
+      '1': 'workspaces',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Workspace',
+      '10': 'workspaces'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -115,7 +129,15 @@ const GetRowRequest$json = {
   '1': 'GetRowRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 14, '6': '.google.area120.tables.v1alpha1.View', '8': {}, '10': 'view'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.area120.tables.v1alpha1.View',
+      '8': {},
+      '10': 'view'
+    },
   ],
 };
 
@@ -132,7 +154,15 @@ const ListRowsRequest$json = {
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'view', '3': 4, '4': 1, '5': 14, '6': '.google.area120.tables.v1alpha1.View', '8': {}, '10': 'view'},
+    {
+      '1': 'view',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.area120.tables.v1alpha1.View',
+      '8': {},
+      '10': 'view'
+    },
     {'1': 'filter', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'filter'},
   ],
 };
@@ -148,7 +178,14 @@ final $typed_data.Uint8List listRowsRequestDescriptor = $convert.base64Decode(
 const ListRowsResponse$json = {
   '1': 'ListRowsResponse',
   '2': [
-    {'1': 'rows', '3': 1, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.Row', '10': 'rows'},
+    {
+      '1': 'rows',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Row',
+      '10': 'rows'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -164,8 +201,24 @@ const CreateRowRequest$json = {
   '1': 'CreateRowRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'row', '3': 2, '4': 1, '5': 11, '6': '.google.area120.tables.v1alpha1.Row', '8': {}, '10': 'row'},
-    {'1': 'view', '3': 3, '4': 1, '5': 14, '6': '.google.area120.tables.v1alpha1.View', '8': {}, '10': 'view'},
+    {
+      '1': 'row',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Row',
+      '8': {},
+      '10': 'row'
+    },
+    {
+      '1': 'view',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.area120.tables.v1alpha1.View',
+      '8': {},
+      '10': 'view'
+    },
   ],
 };
 
@@ -181,7 +234,15 @@ const BatchCreateRowsRequest$json = {
   '1': 'BatchCreateRowsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'requests', '3': 2, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.CreateRowRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.CreateRowRequest',
+      '8': {},
+      '10': 'requests'
+    },
   ],
 };
 
@@ -195,22 +256,53 @@ final $typed_data.Uint8List batchCreateRowsRequestDescriptor = $convert.base64De
 const BatchCreateRowsResponse$json = {
   '1': 'BatchCreateRowsResponse',
   '2': [
-    {'1': 'rows', '3': 1, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.Row', '10': 'rows'},
+    {
+      '1': 'rows',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Row',
+      '10': 'rows'
+    },
   ],
 };
 
 /// Descriptor for `BatchCreateRowsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateRowsResponseDescriptor = $convert.base64Decode(
-    'ChdCYXRjaENyZWF0ZVJvd3NSZXNwb25zZRI3CgRyb3dzGAEgAygLMiMuZ29vZ2xlLmFyZWExMj'
-    'AudGFibGVzLnYxYWxwaGExLlJvd1IEcm93cw==');
+final $typed_data.Uint8List batchCreateRowsResponseDescriptor =
+    $convert.base64Decode(
+        'ChdCYXRjaENyZWF0ZVJvd3NSZXNwb25zZRI3CgRyb3dzGAEgAygLMiMuZ29vZ2xlLmFyZWExMj'
+        'AudGFibGVzLnYxYWxwaGExLlJvd1IEcm93cw==');
 
 @$core.Deprecated('Use updateRowRequestDescriptor instead')
 const UpdateRowRequest$json = {
   '1': 'UpdateRowRequest',
   '2': [
-    {'1': 'row', '3': 1, '4': 1, '5': 11, '6': '.google.area120.tables.v1alpha1.Row', '8': {}, '10': 'row'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'view', '3': 3, '4': 1, '5': 14, '6': '.google.area120.tables.v1alpha1.View', '8': {}, '10': 'view'},
+    {
+      '1': 'row',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Row',
+      '8': {},
+      '10': 'row'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'view',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.area120.tables.v1alpha1.View',
+      '8': {},
+      '10': 'view'
+    },
   ],
 };
 
@@ -226,7 +318,15 @@ const BatchUpdateRowsRequest$json = {
   '1': 'BatchUpdateRowsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'requests', '3': 2, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.UpdateRowRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.UpdateRowRequest',
+      '8': {},
+      '10': 'requests'
+    },
   ],
 };
 
@@ -240,14 +340,22 @@ final $typed_data.Uint8List batchUpdateRowsRequestDescriptor = $convert.base64De
 const BatchUpdateRowsResponse$json = {
   '1': 'BatchUpdateRowsResponse',
   '2': [
-    {'1': 'rows', '3': 1, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.Row', '10': 'rows'},
+    {
+      '1': 'rows',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Row',
+      '10': 'rows'
+    },
   ],
 };
 
 /// Descriptor for `BatchUpdateRowsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchUpdateRowsResponseDescriptor = $convert.base64Decode(
-    'ChdCYXRjaFVwZGF0ZVJvd3NSZXNwb25zZRI3CgRyb3dzGAEgAygLMiMuZ29vZ2xlLmFyZWExMj'
-    'AudGFibGVzLnYxYWxwaGExLlJvd1IEcm93cw==');
+final $typed_data.Uint8List batchUpdateRowsResponseDescriptor =
+    $convert.base64Decode(
+        'ChdCYXRjaFVwZGF0ZVJvd3NSZXNwb25zZRI3CgRyb3dzGAEgAygLMiMuZ29vZ2xlLmFyZWExMj'
+        'AudGFibGVzLnYxYWxwaGExLlJvd1IEcm93cw==');
 
 @$core.Deprecated('Use deleteRowRequestDescriptor instead')
 const DeleteRowRequest$json = {
@@ -283,7 +391,14 @@ const Table$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'columns', '3': 3, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.ColumnDescription', '10': 'columns'},
+    {
+      '1': 'columns',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.ColumnDescription',
+      '10': 'columns'
+    },
   ],
   '7': {},
 };
@@ -302,9 +417,33 @@ const ColumnDescription$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'data_type', '3': 2, '4': 1, '5': 9, '10': 'dataType'},
     {'1': 'id', '3': 3, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.LabeledItem', '8': {}, '10': 'labels'},
-    {'1': 'relationship_details', '3': 5, '4': 1, '5': 11, '6': '.google.area120.tables.v1alpha1.RelationshipDetails', '8': {}, '10': 'relationshipDetails'},
-    {'1': 'lookup_details', '3': 6, '4': 1, '5': 11, '6': '.google.area120.tables.v1alpha1.LookupDetails', '8': {}, '10': 'lookupDetails'},
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.LabeledItem',
+      '8': {},
+      '10': 'labels'
+    },
+    {
+      '1': 'relationship_details',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.RelationshipDetails',
+      '8': {},
+      '10': 'relationshipDetails'
+    },
+    {
+      '1': 'lookup_details',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.LookupDetails',
+      '8': {},
+      '10': 'lookupDetails'
+    },
   ],
 };
 
@@ -348,8 +487,20 @@ final $typed_data.Uint8List relationshipDetailsDescriptor = $convert.base64Decod
 const LookupDetails$json = {
   '1': 'LookupDetails',
   '2': [
-    {'1': 'relationship_column', '3': 1, '4': 1, '5': 9, '10': 'relationshipColumn'},
-    {'1': 'relationship_column_id', '3': 2, '4': 1, '5': 9, '10': 'relationshipColumnId'},
+    {
+      '1': 'relationship_column',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'relationshipColumn'
+    },
+    {
+      '1': 'relationship_column_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'relationshipColumnId'
+    },
   ],
 };
 
@@ -364,7 +515,14 @@ const Row$json = {
   '1': 'Row',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'values', '3': 2, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.Row.ValuesEntry', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Row.ValuesEntry',
+      '10': 'values'
+    },
   ],
   '3': [Row_ValuesEntry$json],
   '7': {},
@@ -375,7 +533,14 @@ const Row_ValuesEntry$json = {
   '1': 'ValuesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -394,7 +559,14 @@ const Workspace$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'tables', '3': 3, '4': 3, '5': 11, '6': '.google.area120.tables.v1alpha1.Table', '10': 'tables'},
+    {
+      '1': 'tables',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.area120.tables.v1alpha1.Table',
+      '10': 'tables'
+    },
   ],
   '7': {},
 };
@@ -405,4 +577,3 @@ final $typed_data.Uint8List workspaceDescriptor = $convert.base64Decode(
     'Rpc3BsYXlOYW1lEj0KBnRhYmxlcxgDIAMoCzIlLmdvb2dsZS5hcmVhMTIwLnRhYmxlcy52MWFs'
     'cGhhMS5UYWJsZVIGdGFibGVzOkPqQUAKJmFyZWExMjB0YWJsZXMuZ29vZ2xlYXBpcy5jb20vV2'
     '9ya3NwYWNlEhZ3b3Jrc3BhY2VzL3t3b3Jrc3BhY2V9');
-

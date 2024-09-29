@@ -18,13 +18,52 @@ const GenerateTextRequest$json = {
   '1': 'GenerateTextRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'prompt', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.TextPrompt', '8': {}, '10': 'prompt'},
-    {'1': 'temperature', '3': 3, '4': 1, '5': 2, '9': 0, '10': 'temperature', '17': true},
-    {'1': 'candidate_count', '3': 4, '4': 1, '5': 5, '9': 1, '10': 'candidateCount', '17': true},
-    {'1': 'max_output_tokens', '3': 5, '4': 1, '5': 5, '9': 2, '10': 'maxOutputTokens', '17': true},
+    {
+      '1': 'prompt',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.TextPrompt',
+      '8': {},
+      '10': 'prompt'
+    },
+    {
+      '1': 'temperature',
+      '3': 3,
+      '4': 1,
+      '5': 2,
+      '9': 0,
+      '10': 'temperature',
+      '17': true
+    },
+    {
+      '1': 'candidate_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'candidateCount',
+      '17': true
+    },
+    {
+      '1': 'max_output_tokens',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '9': 2,
+      '10': 'maxOutputTokens',
+      '17': true
+    },
     {'1': 'top_p', '3': 6, '4': 1, '5': 2, '9': 3, '10': 'topP', '17': true},
     {'1': 'top_k', '3': 7, '4': 1, '5': 5, '9': 4, '10': 'topK', '17': true},
-    {'1': 'safety_settings', '3': 8, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.SafetySetting', '10': 'safetySettings'},
+    {
+      '1': 'safety_settings',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.SafetySetting',
+      '10': 'safetySettings'
+    },
     {'1': 'stop_sequences', '3': 9, '4': 3, '5': 9, '10': 'stopSequences'},
   ],
   '8': [
@@ -54,9 +93,30 @@ final $typed_data.Uint8List generateTextRequestDescriptor = $convert.base64Decod
 const GenerateTextResponse$json = {
   '1': 'GenerateTextResponse',
   '2': [
-    {'1': 'candidates', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.TextCompletion', '10': 'candidates'},
-    {'1': 'filters', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.ContentFilter', '10': 'filters'},
-    {'1': 'safety_feedback', '3': 4, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.SafetyFeedback', '10': 'safetyFeedback'},
+    {
+      '1': 'candidates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.TextCompletion',
+      '10': 'candidates'
+    },
+    {
+      '1': 'filters',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.ContentFilter',
+      '10': 'filters'
+    },
+    {
+      '1': 'safety_feedback',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.SafetyFeedback',
+      '10': 'safetyFeedback'
+    },
   ],
 };
 
@@ -78,16 +138,33 @@ const TextPrompt$json = {
 };
 
 /// Descriptor for `TextPrompt`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List textPromptDescriptor = $convert.base64Decode(
-    'CgpUZXh0UHJvbXB0EhcKBHRleHQYASABKAlCA+BBAlIEdGV4dA==');
+final $typed_data.Uint8List textPromptDescriptor = $convert
+    .base64Decode('CgpUZXh0UHJvbXB0EhcKBHRleHQYASABKAlCA+BBAlIEdGV4dA==');
 
 @$core.Deprecated('Use textCompletionDescriptor instead')
 const TextCompletion$json = {
   '1': 'TextCompletion',
   '2': [
     {'1': 'output', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'output'},
-    {'1': 'safety_ratings', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.SafetyRating', '10': 'safetyRatings'},
-    {'1': 'citation_metadata', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.CitationMetadata', '8': {}, '9': 0, '10': 'citationMetadata', '17': true},
+    {
+      '1': 'safety_ratings',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.SafetyRating',
+      '10': 'safetyRatings'
+    },
+    {
+      '1': 'citation_metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.CitationMetadata',
+      '8': {},
+      '9': 0,
+      '10': 'citationMetadata',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_citation_metadata'},
@@ -121,7 +198,17 @@ final $typed_data.Uint8List embedTextRequestDescriptor = $convert.base64Decode(
 const EmbedTextResponse$json = {
   '1': 'EmbedTextResponse',
   '2': [
-    {'1': 'embedding', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.Embedding', '8': {}, '9': 0, '10': 'embedding', '17': true},
+    {
+      '1': 'embedding',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.Embedding',
+      '8': {},
+      '9': 0,
+      '10': 'embedding',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_embedding'},
@@ -143,6 +230,5 @@ const Embedding$json = {
 };
 
 /// Descriptor for `Embedding`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List embeddingDescriptor = $convert.base64Decode(
-    'CglFbWJlZGRpbmcSFAoFdmFsdWUYASADKAJSBXZhbHVl');
-
+final $typed_data.Uint8List embeddingDescriptor =
+    $convert.base64Decode('CglFbWJlZGRpbmcSFAoFdmFsdWUYASADKAJSBXZhbHVl');

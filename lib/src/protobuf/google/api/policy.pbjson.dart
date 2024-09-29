@@ -18,7 +18,13 @@ const FieldPolicy$json = {
   '1': 'FieldPolicy',
   '2': [
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
-    {'1': 'resource_permission', '3': 2, '4': 1, '5': 9, '10': 'resourcePermission'},
+    {
+      '1': 'resource_permission',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'resourcePermission'
+    },
     {'1': 'resource_type', '3': 3, '4': 1, '5': 9, '10': 'resourceType'},
   ],
 };
@@ -34,7 +40,14 @@ const MethodPolicy$json = {
   '1': 'MethodPolicy',
   '2': [
     {'1': 'selector', '3': 9, '4': 1, '5': 9, '10': 'selector'},
-    {'1': 'request_policies', '3': 2, '4': 3, '5': 11, '6': '.google.api.FieldPolicy', '10': 'requestPolicies'},
+    {
+      '1': 'request_policies',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.FieldPolicy',
+      '10': 'requestPolicies'
+    },
   ],
 };
 
@@ -42,4 +55,3 @@ const MethodPolicy$json = {
 final $typed_data.Uint8List methodPolicyDescriptor = $convert.base64Decode(
     'CgxNZXRob2RQb2xpY3kSGgoIc2VsZWN0b3IYCSABKAlSCHNlbGVjdG9yEkIKEHJlcXVlc3RfcG'
     '9saWNpZXMYAiADKAsyFy5nb29nbGUuYXBpLkZpZWxkUG9saWN5Ug9yZXF1ZXN0UG9saWNpZXM=');
-

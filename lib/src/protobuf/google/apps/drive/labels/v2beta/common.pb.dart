@@ -36,34 +36,45 @@ class Lifecycle_DisabledPolicy extends $pb.GeneratedMessage {
     return $result;
   }
   Lifecycle_DisabledPolicy._() : super();
-  factory Lifecycle_DisabledPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Lifecycle_DisabledPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Lifecycle_DisabledPolicy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Lifecycle_DisabledPolicy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Lifecycle.DisabledPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Lifecycle.DisabledPolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'hideInSearch')
     ..aOB(2, _omitFieldNames ? '' : 'showInApply')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Lifecycle_DisabledPolicy clone() => Lifecycle_DisabledPolicy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Lifecycle_DisabledPolicy copyWith(void Function(Lifecycle_DisabledPolicy) updates) => super.copyWith((message) => updates(message as Lifecycle_DisabledPolicy)) as Lifecycle_DisabledPolicy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Lifecycle_DisabledPolicy clone() =>
+      Lifecycle_DisabledPolicy()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Lifecycle_DisabledPolicy copyWith(
+          void Function(Lifecycle_DisabledPolicy) updates) =>
+      super.copyWith((message) => updates(message as Lifecycle_DisabledPolicy))
+          as Lifecycle_DisabledPolicy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Lifecycle_DisabledPolicy create() => Lifecycle_DisabledPolicy._();
   Lifecycle_DisabledPolicy createEmptyInstance() => create();
-  static $pb.PbList<Lifecycle_DisabledPolicy> createRepeated() => $pb.PbList<Lifecycle_DisabledPolicy>();
+  static $pb.PbList<Lifecycle_DisabledPolicy> createRepeated() =>
+      $pb.PbList<Lifecycle_DisabledPolicy>();
   @$core.pragma('dart2js:noInline')
-  static Lifecycle_DisabledPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Lifecycle_DisabledPolicy>(create);
+  static Lifecycle_DisabledPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Lifecycle_DisabledPolicy>(create);
   static Lifecycle_DisabledPolicy? _defaultInstance;
 
   ///  Whether to hide this disabled object in the search menu for Drive items.
@@ -75,7 +86,10 @@ class Lifecycle_DisabledPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get hideInSearch => $_getBF(0);
   @$pb.TagNumber(1)
-  set hideInSearch($core.bool v) { $_setBool(0, v); }
+  set hideInSearch($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHideInSearch() => $_has(0);
   @$pb.TagNumber(1)
@@ -89,7 +103,10 @@ class Lifecycle_DisabledPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get showInApply => $_getBF(1);
   @$pb.TagNumber(2)
-  set showInApply($core.bool v) { $_setBool(1, v); }
+  set showInApply($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasShowInApply() => $_has(1);
   @$pb.TagNumber(2)
@@ -133,26 +150,36 @@ class Lifecycle extends $pb.GeneratedMessage {
     return $result;
   }
   Lifecycle._() : super();
-  factory Lifecycle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Lifecycle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Lifecycle.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Lifecycle.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Lifecycle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..e<Lifecycle_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Lifecycle_State.STATE_UNSPECIFIED, valueOf: Lifecycle_State.valueOf, enumValues: Lifecycle_State.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Lifecycle',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
+    ..e<Lifecycle_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Lifecycle_State.STATE_UNSPECIFIED,
+        valueOf: Lifecycle_State.valueOf,
+        enumValues: Lifecycle_State.values)
     ..aOB(2, _omitFieldNames ? '' : 'hasUnpublishedChanges')
-    ..aOM<Lifecycle_DisabledPolicy>(3, _omitFieldNames ? '' : 'disabledPolicy', subBuilder: Lifecycle_DisabledPolicy.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Lifecycle_DisabledPolicy>(3, _omitFieldNames ? '' : 'disabledPolicy',
+        subBuilder: Lifecycle_DisabledPolicy.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Lifecycle clone() => Lifecycle()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Lifecycle copyWith(void Function(Lifecycle) updates) => super.copyWith((message) => updates(message as Lifecycle)) as Lifecycle;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Lifecycle copyWith(void Function(Lifecycle) updates) =>
+      super.copyWith((message) => updates(message as Lifecycle)) as Lifecycle;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -161,14 +188,18 @@ class Lifecycle extends $pb.GeneratedMessage {
   Lifecycle createEmptyInstance() => create();
   static $pb.PbList<Lifecycle> createRepeated() => $pb.PbList<Lifecycle>();
   @$core.pragma('dart2js:noInline')
-  static Lifecycle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Lifecycle>(create);
+  static Lifecycle getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Lifecycle>(create);
   static Lifecycle? _defaultInstance;
 
   /// Output only. The state of the object associated with this lifecycle.
   @$pb.TagNumber(1)
   Lifecycle_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(Lifecycle_State v) { setField(1, v); }
+  set state(Lifecycle_State v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -179,7 +210,10 @@ class Lifecycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get hasUnpublishedChanges => $_getBF(1);
   @$pb.TagNumber(2)
-  set hasUnpublishedChanges($core.bool v) { $_setBool(1, v); }
+  set hasUnpublishedChanges($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHasUnpublishedChanges() => $_has(1);
   @$pb.TagNumber(2)
@@ -190,7 +224,10 @@ class Lifecycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Lifecycle_DisabledPolicy get disabledPolicy => $_getN(2);
   @$pb.TagNumber(3)
-  set disabledPolicy(Lifecycle_DisabledPolicy v) { setField(3, v); }
+  set disabledPolicy(Lifecycle_DisabledPolicy v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisabledPolicy() => $_has(2);
   @$pb.TagNumber(3)
@@ -211,24 +248,30 @@ class UserInfo extends $pb.GeneratedMessage {
     return $result;
   }
   UserInfo._() : super();
-  factory UserInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UserInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UserInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UserInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UserInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'person')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UserInfo clone() => UserInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UserInfo copyWith(void Function(UserInfo) updates) => super.copyWith((message) => updates(message as UserInfo)) as UserInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UserInfo copyWith(void Function(UserInfo) updates) =>
+      super.copyWith((message) => updates(message as UserInfo)) as UserInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -237,7 +280,8 @@ class UserInfo extends $pb.GeneratedMessage {
   UserInfo createEmptyInstance() => create();
   static $pb.PbList<UserInfo> createRepeated() => $pb.PbList<UserInfo>();
   @$core.pragma('dart2js:noInline')
-  static UserInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UserInfo>(create);
+  static UserInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UserInfo>(create);
   static UserInfo? _defaultInstance;
 
   /// The identifier for this user that can be used with the People API to get
@@ -246,7 +290,10 @@ class UserInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get person => $_getSZ(0);
   @$pb.TagNumber(1)
-  set person($core.String v) { $_setString(0, v); }
+  set person($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPerson() => $_has(0);
   @$pb.TagNumber(1)
@@ -269,25 +316,33 @@ class BadgeConfig extends $pb.GeneratedMessage {
     return $result;
   }
   BadgeConfig._() : super();
-  factory BadgeConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BadgeConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BadgeConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BadgeConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BadgeConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$385.Color>(1, _omitFieldNames ? '' : 'color', subBuilder: $385.Color.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BadgeConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
+    ..aOM<$385.Color>(1, _omitFieldNames ? '' : 'color',
+        subBuilder: $385.Color.create)
     ..aInt64(2, _omitFieldNames ? '' : 'priorityOverride')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BadgeConfig clone() => BadgeConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BadgeConfig copyWith(void Function(BadgeConfig) updates) => super.copyWith((message) => updates(message as BadgeConfig)) as BadgeConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BadgeConfig copyWith(void Function(BadgeConfig) updates) =>
+      super.copyWith((message) => updates(message as BadgeConfig))
+          as BadgeConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -296,7 +351,8 @@ class BadgeConfig extends $pb.GeneratedMessage {
   BadgeConfig createEmptyInstance() => create();
   static $pb.PbList<BadgeConfig> createRepeated() => $pb.PbList<BadgeConfig>();
   @$core.pragma('dart2js:noInline')
-  static BadgeConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BadgeConfig>(create);
+  static BadgeConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BadgeConfig>(create);
   static BadgeConfig? _defaultInstance;
 
   /// The color of the badge. When not specified, no badge is rendered.
@@ -305,7 +361,10 @@ class BadgeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $385.Color get color => $_getN(0);
   @$pb.TagNumber(1)
-  set color($385.Color v) { setField(1, v); }
+  set color($385.Color v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasColor() => $_has(0);
   @$pb.TagNumber(1)
@@ -318,7 +377,10 @@ class BadgeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get priorityOverride => $_getI64(1);
   @$pb.TagNumber(2)
-  set priorityOverride($fixnum.Int64 v) { $_setInt64(1, v); }
+  set priorityOverride($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPriorityOverride() => $_has(1);
   @$pb.TagNumber(2)
@@ -346,26 +408,36 @@ class BadgeColors extends $pb.GeneratedMessage {
     return $result;
   }
   BadgeColors._() : super();
-  factory BadgeColors.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BadgeColors.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BadgeColors.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BadgeColors.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BadgeColors', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$385.Color>(1, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $385.Color.create)
-    ..aOM<$385.Color>(2, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $385.Color.create)
-    ..aOM<$385.Color>(3, _omitFieldNames ? '' : 'soloColor', subBuilder: $385.Color.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BadgeColors',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
+    ..aOM<$385.Color>(1, _omitFieldNames ? '' : 'backgroundColor',
+        subBuilder: $385.Color.create)
+    ..aOM<$385.Color>(2, _omitFieldNames ? '' : 'foregroundColor',
+        subBuilder: $385.Color.create)
+    ..aOM<$385.Color>(3, _omitFieldNames ? '' : 'soloColor',
+        subBuilder: $385.Color.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BadgeColors clone() => BadgeColors()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BadgeColors copyWith(void Function(BadgeColors) updates) => super.copyWith((message) => updates(message as BadgeColors)) as BadgeColors;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BadgeColors copyWith(void Function(BadgeColors) updates) =>
+      super.copyWith((message) => updates(message as BadgeColors))
+          as BadgeColors;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -374,14 +446,18 @@ class BadgeColors extends $pb.GeneratedMessage {
   BadgeColors createEmptyInstance() => create();
   static $pb.PbList<BadgeColors> createRepeated() => $pb.PbList<BadgeColors>();
   @$core.pragma('dart2js:noInline')
-  static BadgeColors getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BadgeColors>(create);
+  static BadgeColors getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BadgeColors>(create);
   static BadgeColors? _defaultInstance;
 
   /// Output only. Badge background that pairs with the foreground.
   @$pb.TagNumber(1)
   $385.Color get backgroundColor => $_getN(0);
   @$pb.TagNumber(1)
-  set backgroundColor($385.Color v) { setField(1, v); }
+  set backgroundColor($385.Color v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBackgroundColor() => $_has(0);
   @$pb.TagNumber(1)
@@ -393,7 +469,10 @@ class BadgeColors extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $385.Color get foregroundColor => $_getN(1);
   @$pb.TagNumber(2)
-  set foregroundColor($385.Color v) { setField(2, v); }
+  set foregroundColor($385.Color v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasForegroundColor() => $_has(1);
   @$pb.TagNumber(2)
@@ -405,7 +484,10 @@ class BadgeColors extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $385.Color get soloColor => $_getN(2);
   @$pb.TagNumber(3)
-  set soloColor($385.Color v) { setField(3, v); }
+  set soloColor($385.Color v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSoloColor() => $_has(2);
   @$pb.TagNumber(3)
@@ -427,24 +509,30 @@ class LockStatus extends $pb.GeneratedMessage {
     return $result;
   }
   LockStatus._() : super();
-  factory LockStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LockStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LockStatus.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LockStatus.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LockStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LockStatus',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'locked')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LockStatus clone() => LockStatus()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LockStatus copyWith(void Function(LockStatus) updates) => super.copyWith((message) => updates(message as LockStatus)) as LockStatus;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LockStatus copyWith(void Function(LockStatus) updates) =>
+      super.copyWith((message) => updates(message as LockStatus)) as LockStatus;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -453,7 +541,8 @@ class LockStatus extends $pb.GeneratedMessage {
   LockStatus createEmptyInstance() => create();
   static $pb.PbList<LockStatus> createRepeated() => $pb.PbList<LockStatus>();
   @$core.pragma('dart2js:noInline')
-  static LockStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LockStatus>(create);
+  static LockStatus getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LockStatus>(create);
   static LockStatus? _defaultInstance;
 
   /// Output only. Indicates whether this label component is the (direct) target
@@ -463,13 +552,16 @@ class LockStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get locked => $_getBF(0);
   @$pb.TagNumber(1)
-  set locked($core.bool v) { $_setBool(0, v); }
+  set locked($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocked() => $_has(0);
   @$pb.TagNumber(1)
   void clearLocked() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

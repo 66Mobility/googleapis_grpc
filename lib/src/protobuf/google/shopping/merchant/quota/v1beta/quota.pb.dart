@@ -44,28 +44,36 @@ class QuotaGroup extends $pb.GeneratedMessage {
     return $result;
   }
   QuotaGroup._() : super();
-  factory QuotaGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QuotaGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QuotaGroup.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QuotaGroup.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QuotaGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QuotaGroup',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'quotaUsage')
     ..aInt64(3, _omitFieldNames ? '' : 'quotaLimit')
-    ..pc<MethodDetails>(4, _omitFieldNames ? '' : 'methodDetails', $pb.PbFieldType.PM, subBuilder: MethodDetails.create)
+    ..pc<MethodDetails>(
+        4, _omitFieldNames ? '' : 'methodDetails', $pb.PbFieldType.PM,
+        subBuilder: MethodDetails.create)
     ..aInt64(5, _omitFieldNames ? '' : 'quotaMinuteLimit')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   QuotaGroup clone() => QuotaGroup()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QuotaGroup copyWith(void Function(QuotaGroup) updates) => super.copyWith((message) => updates(message as QuotaGroup)) as QuotaGroup;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QuotaGroup copyWith(void Function(QuotaGroup) updates) =>
+      super.copyWith((message) => updates(message as QuotaGroup)) as QuotaGroup;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -74,7 +82,8 @@ class QuotaGroup extends $pb.GeneratedMessage {
   QuotaGroup createEmptyInstance() => create();
   static $pb.PbList<QuotaGroup> createRepeated() => $pb.PbList<QuotaGroup>();
   @$core.pragma('dart2js:noInline')
-  static QuotaGroup getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QuotaGroup>(create);
+  static QuotaGroup getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QuotaGroup>(create);
   static QuotaGroup? _defaultInstance;
 
   /// Identifier. The resource name of the quota group.
@@ -83,7 +92,10 @@ class QuotaGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -95,7 +107,10 @@ class QuotaGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get quotaUsage => $_getI64(1);
   @$pb.TagNumber(2)
-  set quotaUsage($fixnum.Int64 v) { $_setInt64(1, v); }
+  set quotaUsage($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQuotaUsage() => $_has(1);
   @$pb.TagNumber(2)
@@ -105,7 +120,10 @@ class QuotaGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get quotaLimit => $_getI64(2);
   @$pb.TagNumber(3)
-  set quotaLimit($fixnum.Int64 v) { $_setInt64(2, v); }
+  set quotaLimit($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasQuotaLimit() => $_has(2);
   @$pb.TagNumber(3)
@@ -119,7 +137,10 @@ class QuotaGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get quotaMinuteLimit => $_getI64(4);
   @$pb.TagNumber(5)
-  set quotaMinuteLimit($fixnum.Int64 v) { $_setInt64(4, v); }
+  set quotaMinuteLimit($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasQuotaMinuteLimit() => $_has(4);
   @$pb.TagNumber(5)
@@ -150,43 +171,55 @@ class MethodDetails extends $pb.GeneratedMessage {
     return $result;
   }
   MethodDetails._() : super();
-  factory MethodDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MethodDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MethodDetails.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MethodDetails.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MethodDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MethodDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'method')
     ..aOS(2, _omitFieldNames ? '' : 'version')
     ..aOS(3, _omitFieldNames ? '' : 'subapi')
     ..aOS(4, _omitFieldNames ? '' : 'path')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MethodDetails clone() => MethodDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MethodDetails copyWith(void Function(MethodDetails) updates) => super.copyWith((message) => updates(message as MethodDetails)) as MethodDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MethodDetails copyWith(void Function(MethodDetails) updates) =>
+      super.copyWith((message) => updates(message as MethodDetails))
+          as MethodDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MethodDetails create() => MethodDetails._();
   MethodDetails createEmptyInstance() => create();
-  static $pb.PbList<MethodDetails> createRepeated() => $pb.PbList<MethodDetails>();
+  static $pb.PbList<MethodDetails> createRepeated() =>
+      $pb.PbList<MethodDetails>();
   @$core.pragma('dart2js:noInline')
-  static MethodDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MethodDetails>(create);
+  static MethodDetails getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MethodDetails>(create);
   static MethodDetails? _defaultInstance;
 
   /// Output only. The name of the method for example `products.list`.
   @$pb.TagNumber(1)
   $core.String get method => $_getSZ(0);
   @$pb.TagNumber(1)
-  set method($core.String v) { $_setString(0, v); }
+  set method($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -196,7 +229,10 @@ class MethodDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
   @$pb.TagNumber(2)
-  set version($core.String v) { $_setString(1, v); }
+  set version($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -206,7 +242,10 @@ class MethodDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get subapi => $_getSZ(2);
   @$pb.TagNumber(3)
-  set subapi($core.String v) { $_setString(2, v); }
+  set subapi($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSubapi() => $_has(2);
   @$pb.TagNumber(3)
@@ -217,7 +256,10 @@ class MethodDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get path => $_getSZ(3);
   @$pb.TagNumber(4)
-  set path($core.String v) { $_setString(3, v); }
+  set path($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPath() => $_has(3);
   @$pb.TagNumber(4)
@@ -244,35 +286,46 @@ class ListQuotaGroupsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListQuotaGroupsRequest._() : super();
-  factory ListQuotaGroupsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListQuotaGroupsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListQuotaGroupsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListQuotaGroupsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListQuotaGroupsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListQuotaGroupsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListQuotaGroupsRequest clone() => ListQuotaGroupsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListQuotaGroupsRequest copyWith(void Function(ListQuotaGroupsRequest) updates) => super.copyWith((message) => updates(message as ListQuotaGroupsRequest)) as ListQuotaGroupsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListQuotaGroupsRequest clone() =>
+      ListQuotaGroupsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListQuotaGroupsRequest copyWith(
+          void Function(ListQuotaGroupsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListQuotaGroupsRequest))
+          as ListQuotaGroupsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListQuotaGroupsRequest create() => ListQuotaGroupsRequest._();
   ListQuotaGroupsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListQuotaGroupsRequest> createRepeated() => $pb.PbList<ListQuotaGroupsRequest>();
+  static $pb.PbList<ListQuotaGroupsRequest> createRepeated() =>
+      $pb.PbList<ListQuotaGroupsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListQuotaGroupsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListQuotaGroupsRequest>(create);
+  static ListQuotaGroupsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListQuotaGroupsRequest>(create);
   static ListQuotaGroupsRequest? _defaultInstance;
 
   /// Required. The merchant account who owns the collection of method quotas
@@ -280,7 +333,10 @@ class ListQuotaGroupsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -291,7 +347,10 @@ class ListQuotaGroupsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -302,7 +361,10 @@ class ListQuotaGroupsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -325,34 +387,47 @@ class ListQuotaGroupsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListQuotaGroupsResponse._() : super();
-  factory ListQuotaGroupsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListQuotaGroupsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListQuotaGroupsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListQuotaGroupsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListQuotaGroupsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'), createEmptyInstance: create)
-    ..pc<QuotaGroup>(1, _omitFieldNames ? '' : 'quotaGroups', $pb.PbFieldType.PM, subBuilder: QuotaGroup.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListQuotaGroupsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.quota.v1beta'),
+      createEmptyInstance: create)
+    ..pc<QuotaGroup>(
+        1, _omitFieldNames ? '' : 'quotaGroups', $pb.PbFieldType.PM,
+        subBuilder: QuotaGroup.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListQuotaGroupsResponse clone() => ListQuotaGroupsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListQuotaGroupsResponse copyWith(void Function(ListQuotaGroupsResponse) updates) => super.copyWith((message) => updates(message as ListQuotaGroupsResponse)) as ListQuotaGroupsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListQuotaGroupsResponse clone() =>
+      ListQuotaGroupsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListQuotaGroupsResponse copyWith(
+          void Function(ListQuotaGroupsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListQuotaGroupsResponse))
+          as ListQuotaGroupsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListQuotaGroupsResponse create() => ListQuotaGroupsResponse._();
   ListQuotaGroupsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListQuotaGroupsResponse> createRepeated() => $pb.PbList<ListQuotaGroupsResponse>();
+  static $pb.PbList<ListQuotaGroupsResponse> createRepeated() =>
+      $pb.PbList<ListQuotaGroupsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListQuotaGroupsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListQuotaGroupsResponse>(create);
+  static ListQuotaGroupsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListQuotaGroupsResponse>(create);
   static ListQuotaGroupsResponse? _defaultInstance;
 
   /// The methods, current quota usage and limits per each group. The quota is
@@ -367,13 +442,16 @@ class ListQuotaGroupsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

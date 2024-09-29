@@ -33,34 +33,43 @@ class SpaceReadState extends $pb.GeneratedMessage {
     return $result;
   }
   SpaceReadState._() : super();
-  factory SpaceReadState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SpaceReadState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SpaceReadState.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SpaceReadState.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceReadState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SpaceReadState',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SpaceReadState clone() => SpaceReadState()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SpaceReadState copyWith(void Function(SpaceReadState) updates) => super.copyWith((message) => updates(message as SpaceReadState)) as SpaceReadState;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SpaceReadState copyWith(void Function(SpaceReadState) updates) =>
+      super.copyWith((message) => updates(message as SpaceReadState))
+          as SpaceReadState;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpaceReadState create() => SpaceReadState._();
   SpaceReadState createEmptyInstance() => create();
-  static $pb.PbList<SpaceReadState> createRepeated() => $pb.PbList<SpaceReadState>();
+  static $pb.PbList<SpaceReadState> createRepeated() =>
+      $pb.PbList<SpaceReadState>();
   @$core.pragma('dart2js:noInline')
-  static SpaceReadState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SpaceReadState>(create);
+  static SpaceReadState getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SpaceReadState>(create);
   static SpaceReadState? _defaultInstance;
 
   ///  Resource name of the space read state.
@@ -69,7 +78,10 @@ class SpaceReadState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,7 +93,10 @@ class SpaceReadState extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get lastReadTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lastReadTime($302.Timestamp v) { setField(2, v); }
+  set lastReadTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLastReadTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -102,33 +117,43 @@ class GetSpaceReadStateRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetSpaceReadStateRequest._() : super();
-  factory GetSpaceReadStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetSpaceReadStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetSpaceReadStateRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetSpaceReadStateRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceReadStateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetSpaceReadStateRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetSpaceReadStateRequest clone() => GetSpaceReadStateRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetSpaceReadStateRequest copyWith(void Function(GetSpaceReadStateRequest) updates) => super.copyWith((message) => updates(message as GetSpaceReadStateRequest)) as GetSpaceReadStateRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetSpaceReadStateRequest clone() =>
+      GetSpaceReadStateRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetSpaceReadStateRequest copyWith(
+          void Function(GetSpaceReadStateRequest) updates) =>
+      super.copyWith((message) => updates(message as GetSpaceReadStateRequest))
+          as GetSpaceReadStateRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetSpaceReadStateRequest create() => GetSpaceReadStateRequest._();
   GetSpaceReadStateRequest createEmptyInstance() => create();
-  static $pb.PbList<GetSpaceReadStateRequest> createRepeated() => $pb.PbList<GetSpaceReadStateRequest>();
+  static $pb.PbList<GetSpaceReadStateRequest> createRepeated() =>
+      $pb.PbList<GetSpaceReadStateRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetSpaceReadStateRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetSpaceReadStateRequest>(create);
+  static GetSpaceReadStateRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetSpaceReadStateRequest>(create);
   static GetSpaceReadStateRequest? _defaultInstance;
 
   ///  Required. Resource name of the space read state to retrieve.
@@ -149,7 +174,10 @@ class GetSpaceReadStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -172,34 +200,48 @@ class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateSpaceReadStateRequest._() : super();
-  factory UpdateSpaceReadStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateSpaceReadStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateSpaceReadStateRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateSpaceReadStateRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSpaceReadStateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<SpaceReadState>(1, _omitFieldNames ? '' : 'spaceReadState', subBuilder: SpaceReadState.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateSpaceReadStateRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<SpaceReadState>(1, _omitFieldNames ? '' : 'spaceReadState',
+        subBuilder: SpaceReadState.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateSpaceReadStateRequest clone() => UpdateSpaceReadStateRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateSpaceReadStateRequest copyWith(void Function(UpdateSpaceReadStateRequest) updates) => super.copyWith((message) => updates(message as UpdateSpaceReadStateRequest)) as UpdateSpaceReadStateRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateSpaceReadStateRequest clone() =>
+      UpdateSpaceReadStateRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateSpaceReadStateRequest copyWith(
+          void Function(UpdateSpaceReadStateRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateSpaceReadStateRequest))
+          as UpdateSpaceReadStateRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateSpaceReadStateRequest create() => UpdateSpaceReadStateRequest._();
+  static UpdateSpaceReadStateRequest create() =>
+      UpdateSpaceReadStateRequest._();
   UpdateSpaceReadStateRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateSpaceReadStateRequest> createRepeated() => $pb.PbList<UpdateSpaceReadStateRequest>();
+  static $pb.PbList<UpdateSpaceReadStateRequest> createRepeated() =>
+      $pb.PbList<UpdateSpaceReadStateRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateSpaceReadStateRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateSpaceReadStateRequest>(create);
+  static UpdateSpaceReadStateRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateSpaceReadStateRequest>(create);
   static UpdateSpaceReadStateRequest? _defaultInstance;
 
   ///  Required. The space read state and fields to update.
@@ -220,7 +262,10 @@ class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   SpaceReadState get spaceReadState => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceReadState(SpaceReadState v) { setField(1, v); }
+  set spaceReadState(SpaceReadState v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSpaceReadState() => $_has(0);
   @$pb.TagNumber(1)
@@ -244,7 +289,10 @@ class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -253,6 +301,6 @@ class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
   $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

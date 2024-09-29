@@ -44,27 +44,45 @@ class Media extends $pb.GeneratedMessage {
     return $result;
   }
   Media._() : super();
-  factory Media.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Media.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Media.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Media.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Media', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'startOffset', subBuilder: $264.Duration.create)
-    ..pc<Media_OptionalMediaControls>(6, _omitFieldNames ? '' : 'optionalMediaControls', $pb.PbFieldType.KE, valueOf: Media_OptionalMediaControls.valueOf, enumValues: Media_OptionalMediaControls.values, defaultEnumValue: Media_OptionalMediaControls.OPTIONAL_MEDIA_CONTROLS_UNSPECIFIED)
-    ..pc<MediaObject>(7, _omitFieldNames ? '' : 'mediaObjects', $pb.PbFieldType.PM, subBuilder: MediaObject.create)
-    ..e<Media_MediaType>(8, _omitFieldNames ? '' : 'mediaType', $pb.PbFieldType.OE, defaultOrMaker: Media_MediaType.MEDIA_TYPE_UNSPECIFIED, valueOf: Media_MediaType.valueOf, enumValues: Media_MediaType.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Media',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'startOffset',
+        subBuilder: $264.Duration.create)
+    ..pc<Media_OptionalMediaControls>(
+        6, _omitFieldNames ? '' : 'optionalMediaControls', $pb.PbFieldType.KE,
+        valueOf: Media_OptionalMediaControls.valueOf,
+        enumValues: Media_OptionalMediaControls.values,
+        defaultEnumValue:
+            Media_OptionalMediaControls.OPTIONAL_MEDIA_CONTROLS_UNSPECIFIED)
+    ..pc<MediaObject>(
+        7, _omitFieldNames ? '' : 'mediaObjects', $pb.PbFieldType.PM,
+        subBuilder: MediaObject.create)
+    ..e<Media_MediaType>(
+        8, _omitFieldNames ? '' : 'mediaType', $pb.PbFieldType.OE,
+        defaultOrMaker: Media_MediaType.MEDIA_TYPE_UNSPECIFIED,
+        valueOf: Media_MediaType.valueOf,
+        enumValues: Media_MediaType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Media clone() => Media()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Media copyWith(void Function(Media) updates) => super.copyWith((message) => updates(message as Media)) as Media;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Media copyWith(void Function(Media) updates) =>
+      super.copyWith((message) => updates(message as Media)) as Media;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -73,14 +91,18 @@ class Media extends $pb.GeneratedMessage {
   Media createEmptyInstance() => create();
   static $pb.PbList<Media> createRepeated() => $pb.PbList<Media>();
   @$core.pragma('dart2js:noInline')
-  static Media getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Media>(create);
+  static Media getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Media>(create);
   static Media? _defaultInstance;
 
   /// Start offset of the first media object.
   @$pb.TagNumber(5)
   $264.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(5)
-  set startOffset($264.Duration v) { setField(5, v); }
+  set startOffset($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(5)
@@ -93,7 +115,8 @@ class Media extends $pb.GeneratedMessage {
   /// If not set, 3p must still handle two default control type, FINISHED and
   /// FAILED.
   @$pb.TagNumber(6)
-  $core.List<Media_OptionalMediaControls> get optionalMediaControls => $_getList(1);
+  $core.List<Media_OptionalMediaControls> get optionalMediaControls =>
+      $_getList(1);
 
   /// List of Media Objects
   @$pb.TagNumber(7)
@@ -103,7 +126,10 @@ class Media extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Media_MediaType get mediaType => $_getN(3);
   @$pb.TagNumber(8)
-  set mediaType(Media_MediaType v) { setField(8, v); }
+  set mediaType(Media_MediaType v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMediaType() => $_has(3);
   @$pb.TagNumber(8)
@@ -134,27 +160,35 @@ class MediaObject extends $pb.GeneratedMessage {
     return $result;
   }
   MediaObject._() : super();
-  factory MediaObject.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MediaObject.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MediaObject.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MediaObject.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MediaObject', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MediaObject',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'url')
-    ..aOM<MediaImage>(4, _omitFieldNames ? '' : 'image', subBuilder: MediaImage.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<MediaImage>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: MediaImage.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MediaObject clone() => MediaObject()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MediaObject copyWith(void Function(MediaObject) updates) => super.copyWith((message) => updates(message as MediaObject)) as MediaObject;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MediaObject copyWith(void Function(MediaObject) updates) =>
+      super.copyWith((message) => updates(message as MediaObject))
+          as MediaObject;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -163,14 +197,18 @@ class MediaObject extends $pb.GeneratedMessage {
   MediaObject createEmptyInstance() => create();
   static $pb.PbList<MediaObject> createRepeated() => $pb.PbList<MediaObject>();
   @$core.pragma('dart2js:noInline')
-  static MediaObject getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MediaObject>(create);
+  static MediaObject getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MediaObject>(create);
   static MediaObject? _defaultInstance;
 
   /// Name of this media object.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -180,7 +218,10 @@ class MediaObject extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -190,7 +231,10 @@ class MediaObject extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get url => $_getSZ(2);
   @$pb.TagNumber(3)
-  set url($core.String v) { $_setString(2, v); }
+  set url($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUrl() => $_has(2);
   @$pb.TagNumber(3)
@@ -200,7 +244,10 @@ class MediaObject extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   MediaImage get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image(MediaImage v) { setField(4, v); }
+  set image(MediaImage v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
@@ -209,11 +256,7 @@ class MediaObject extends $pb.GeneratedMessage {
   MediaImage ensureImage() => $_ensure(3);
 }
 
-enum MediaImage_Image {
-  large, 
-  icon, 
-  notSet
-}
+enum MediaImage_Image { large, icon, notSet }
 
 /// Image to show with the media card.
 class MediaImage extends $pb.GeneratedMessage {
@@ -231,31 +274,39 @@ class MediaImage extends $pb.GeneratedMessage {
     return $result;
   }
   MediaImage._() : super();
-  factory MediaImage.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MediaImage.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MediaImage.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MediaImage.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, MediaImage_Image> _MediaImage_ImageByTag = {
-    1 : MediaImage_Image.large,
-    2 : MediaImage_Image.icon,
-    0 : MediaImage_Image.notSet
+    1: MediaImage_Image.large,
+    2: MediaImage_Image.icon,
+    0: MediaImage_Image.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MediaImage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MediaImage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$309.Image>(1, _omitFieldNames ? '' : 'large', subBuilder: $309.Image.create)
-    ..aOM<$309.Image>(2, _omitFieldNames ? '' : 'icon', subBuilder: $309.Image.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$309.Image>(1, _omitFieldNames ? '' : 'large',
+        subBuilder: $309.Image.create)
+    ..aOM<$309.Image>(2, _omitFieldNames ? '' : 'icon',
+        subBuilder: $309.Image.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MediaImage clone() => MediaImage()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MediaImage copyWith(void Function(MediaImage) updates) => super.copyWith((message) => updates(message as MediaImage)) as MediaImage;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MediaImage copyWith(void Function(MediaImage) updates) =>
+      super.copyWith((message) => updates(message as MediaImage)) as MediaImage;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -264,7 +315,8 @@ class MediaImage extends $pb.GeneratedMessage {
   MediaImage createEmptyInstance() => create();
   static $pb.PbList<MediaImage> createRepeated() => $pb.PbList<MediaImage>();
   @$core.pragma('dart2js:noInline')
-  static MediaImage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MediaImage>(create);
+  static MediaImage getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MediaImage>(create);
   static MediaImage? _defaultInstance;
 
   MediaImage_Image whichImage() => _MediaImage_ImageByTag[$_whichOneof(0)]!;
@@ -274,7 +326,10 @@ class MediaImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $309.Image get large => $_getN(0);
   @$pb.TagNumber(1)
-  set large($309.Image v) { setField(1, v); }
+  set large($309.Image v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLarge() => $_has(0);
   @$pb.TagNumber(1)
@@ -287,7 +342,10 @@ class MediaImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $309.Image get icon => $_getN(1);
   @$pb.TagNumber(2)
-  set icon($309.Image v) { setField(2, v); }
+  set icon($309.Image v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIcon() => $_has(1);
   @$pb.TagNumber(2)
@@ -296,6 +354,6 @@ class MediaImage extends $pb.GeneratedMessage {
   $309.Image ensureIcon() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

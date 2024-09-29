@@ -22,9 +22,10 @@ const GetOnlineReturnPolicyRequest$json = {
 };
 
 /// Descriptor for `GetOnlineReturnPolicyRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getOnlineReturnPolicyRequestDescriptor = $convert.base64Decode(
-    'ChxHZXRPbmxpbmVSZXR1cm5Qb2xpY3lSZXF1ZXN0EkkKBG5hbWUYASABKAlCNeBBAvpBLwotbW'
-    'VyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vT25saW5lUmV0dXJuUG9saWN5UgRuYW1l');
+final $typed_data.Uint8List getOnlineReturnPolicyRequestDescriptor =
+    $convert.base64Decode(
+        'ChxHZXRPbmxpbmVSZXR1cm5Qb2xpY3lSZXF1ZXN0EkkKBG5hbWUYASABKAlCNeBBAvpBLwotbW'
+        'VyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vT25saW5lUmV0dXJuUG9saWN5UgRuYW1l');
 
 @$core.Deprecated('Use listOnlineReturnPoliciesRequestDescriptor instead')
 const ListOnlineReturnPoliciesRequest$json = {
@@ -37,48 +38,141 @@ const ListOnlineReturnPoliciesRequest$json = {
 };
 
 /// Descriptor for `ListOnlineReturnPoliciesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listOnlineReturnPoliciesRequestDescriptor = $convert.base64Decode(
-    'Ch9MaXN0T25saW5lUmV0dXJuUG9saWNpZXNSZXF1ZXN0Ek0KBnBhcmVudBgBIAEoCUI14EEC+k'
-    'EvEi1tZXJjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9PbmxpbmVSZXR1cm5Qb2xpY3lSBnBhcmVu'
-    'dBIgCglwYWdlX3NpemUYAiABKAVCA+BBAVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgDIAEoCU'
-    'ID4EEBUglwYWdlVG9rZW4=');
+final $typed_data.Uint8List listOnlineReturnPoliciesRequestDescriptor =
+    $convert.base64Decode(
+        'Ch9MaXN0T25saW5lUmV0dXJuUG9saWNpZXNSZXF1ZXN0Ek0KBnBhcmVudBgBIAEoCUI14EEC+k'
+        'EvEi1tZXJjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9PbmxpbmVSZXR1cm5Qb2xpY3lSBnBhcmVu'
+        'dBIgCglwYWdlX3NpemUYAiABKAVCA+BBAVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgDIAEoCU'
+        'ID4EEBUglwYWdlVG9rZW4=');
 
 @$core.Deprecated('Use listOnlineReturnPoliciesResponseDescriptor instead')
 const ListOnlineReturnPoliciesResponse$json = {
   '1': 'ListOnlineReturnPoliciesResponse',
   '2': [
-    {'1': 'online_return_policies', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy', '10': 'onlineReturnPolicies'},
+    {
+      '1': 'online_return_policies',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy',
+      '10': 'onlineReturnPolicies'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListOnlineReturnPoliciesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listOnlineReturnPoliciesResponseDescriptor = $convert.base64Decode(
-    'CiBMaXN0T25saW5lUmV0dXJuUG9saWNpZXNSZXNwb25zZRJyChZvbmxpbmVfcmV0dXJuX3BvbG'
-    'ljaWVzGAEgAygLMjwuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmFjY291bnRzLnYxYmV0YS5P'
-    'bmxpbmVSZXR1cm5Qb2xpY3lSFG9ubGluZVJldHVyblBvbGljaWVzEiYKD25leHRfcGFnZV90b2'
-    'tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listOnlineReturnPoliciesResponseDescriptor =
+    $convert.base64Decode(
+        'CiBMaXN0T25saW5lUmV0dXJuUG9saWNpZXNSZXNwb25zZRJyChZvbmxpbmVfcmV0dXJuX3BvbG'
+        'ljaWVzGAEgAygLMjwuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmFjY291bnRzLnYxYmV0YS5P'
+        'bmxpbmVSZXR1cm5Qb2xpY3lSFG9ubGluZVJldHVyblBvbGljaWVzEiYKD25leHRfcGFnZV90b2'
+        'tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use onlineReturnPolicyDescriptor instead')
 const OnlineReturnPolicy$json = {
   '1': 'OnlineReturnPolicy',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'return_policy_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'returnPolicyId'},
+    {
+      '1': 'return_policy_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'returnPolicyId'
+    },
     {'1': 'label', '3': 3, '4': 1, '5': 9, '10': 'label'},
     {'1': 'countries', '3': 4, '4': 3, '5': 9, '10': 'countries'},
-    {'1': 'policy', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.Policy', '10': 'policy'},
-    {'1': 'restocking_fee', '3': 6, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.RestockingFee', '10': 'restockingFee'},
-    {'1': 'return_methods', '3': 7, '4': 3, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ReturnMethod', '10': 'returnMethods'},
-    {'1': 'item_conditions', '3': 8, '4': 3, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ItemCondition', '10': 'itemConditions'},
-    {'1': 'return_shipping_fee', '3': 9, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ReturnShippingFee', '10': 'returnShippingFee'},
-    {'1': 'return_policy_uri', '3': 10, '4': 1, '5': 9, '10': 'returnPolicyUri'},
-    {'1': 'accept_defective_only', '3': 11, '4': 1, '5': 8, '9': 0, '10': 'acceptDefectiveOnly', '17': true},
-    {'1': 'process_refund_days', '3': 12, '4': 1, '5': 5, '9': 1, '10': 'processRefundDays', '17': true},
-    {'1': 'accept_exchange', '3': 13, '4': 1, '5': 8, '9': 2, '10': 'acceptExchange', '17': true},
+    {
+      '1': 'policy',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.Policy',
+      '10': 'policy'
+    },
+    {
+      '1': 'restocking_fee',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.RestockingFee',
+      '10': 'restockingFee'
+    },
+    {
+      '1': 'return_methods',
+      '3': 7,
+      '4': 3,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ReturnMethod',
+      '10': 'returnMethods'
+    },
+    {
+      '1': 'item_conditions',
+      '3': 8,
+      '4': 3,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ItemCondition',
+      '10': 'itemConditions'
+    },
+    {
+      '1': 'return_shipping_fee',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ReturnShippingFee',
+      '10': 'returnShippingFee'
+    },
+    {
+      '1': 'return_policy_uri',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'returnPolicyUri'
+    },
+    {
+      '1': 'accept_defective_only',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'acceptDefectiveOnly',
+      '17': true
+    },
+    {
+      '1': 'process_refund_days',
+      '3': 12,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'processRefundDays',
+      '17': true
+    },
+    {
+      '1': 'accept_exchange',
+      '3': 13,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'acceptExchange',
+      '17': true
+    },
   ],
-  '3': [OnlineReturnPolicy_ReturnShippingFee$json, OnlineReturnPolicy_RestockingFee$json, OnlineReturnPolicy_Policy$json],
-  '4': [OnlineReturnPolicy_ReturnMethod$json, OnlineReturnPolicy_ItemCondition$json],
+  '3': [
+    OnlineReturnPolicy_ReturnShippingFee$json,
+    OnlineReturnPolicy_RestockingFee$json,
+    OnlineReturnPolicy_Policy$json
+  ],
+  '4': [
+    OnlineReturnPolicy_ReturnMethod$json,
+    OnlineReturnPolicy_ItemCondition$json
+  ],
   '7': {},
   '8': [
     {'1': '_accept_defective_only'},
@@ -91,8 +185,23 @@ const OnlineReturnPolicy$json = {
 const OnlineReturnPolicy_ReturnShippingFee$json = {
   '1': 'ReturnShippingFee',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ReturnShippingFee.Type', '10': 'type'},
-    {'1': 'fixed_fee', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'fixedFee'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.ReturnShippingFee.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'fixed_fee',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'fixedFee'
+    },
   ],
   '4': [OnlineReturnPolicy_ReturnShippingFee_Type$json],
 };
@@ -111,8 +220,23 @@ const OnlineReturnPolicy_ReturnShippingFee_Type$json = {
 const OnlineReturnPolicy_RestockingFee$json = {
   '1': 'RestockingFee',
   '2': [
-    {'1': 'fixed_fee', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '9': 0, '10': 'fixedFee'},
-    {'1': 'micro_percent', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'microPercent'},
+    {
+      '1': 'fixed_fee',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '9': 0,
+      '10': 'fixedFee'
+    },
+    {
+      '1': 'micro_percent',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'microPercent'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -123,7 +247,15 @@ const OnlineReturnPolicy_RestockingFee$json = {
 const OnlineReturnPolicy_Policy$json = {
   '1': 'Policy',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.Policy.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.OnlineReturnPolicy.Policy.Type',
+      '10': 'type'
+    },
     {'1': 'days', '3': 2, '4': 1, '5': 3, '10': 'days'},
   ],
   '4': [OnlineReturnPolicy_Policy_Type$json],
@@ -198,4 +330,3 @@ final $typed_data.Uint8List onlineReturnPolicyDescriptor = $convert.base64Decode
     'cmV0dXJuX3BvbGljeX0qFG9ubGluZVJldHVyblBvbGljaWVzMhJvbmxpbmVSZXR1cm5Qb2xpY3'
     'lCGAoWX2FjY2VwdF9kZWZlY3RpdmVfb25seUIWChRfcHJvY2Vzc19yZWZ1bmRfZGF5c0ISChBf'
     'YWNjZXB0X2V4Y2hhbmdl');
-

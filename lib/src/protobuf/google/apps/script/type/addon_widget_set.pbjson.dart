@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AddOnWidgetSet$json = {
   '1': 'AddOnWidgetSet',
   '2': [
-    {'1': 'used_widgets', '3': 1, '4': 3, '5': 14, '6': '.google.apps.script.type.AddOnWidgetSet.WidgetType', '10': 'usedWidgets'},
+    {
+      '1': 'used_widgets',
+      '3': 1,
+      '4': 3,
+      '5': 14,
+      '6': '.google.apps.script.type.AddOnWidgetSet.WidgetType',
+      '10': 'usedWidgets'
+    },
   ],
   '4': [AddOnWidgetSet_WidgetType$json],
 };
@@ -45,4 +52,3 @@ final $typed_data.Uint8List addOnWidgetSetDescriptor = $convert.base64Decode(
     'oOU1RZTEVEX0JVVFRPTlMQAhIUChBQRVJTSVNURU5UX0ZPUk1TEAMSEAoMRklYRURfRk9PVEVS'
     'EAQSIQodVVBEQVRFX1NVQkpFQ1RfQU5EX1JFQ0lQSUVOVFMQBRIPCgtHUklEX1dJREdFVBAGEh'
     'sKF0FERE9OX0NPTVBPU0VfVUlfQUNUSU9OEAc=');
-

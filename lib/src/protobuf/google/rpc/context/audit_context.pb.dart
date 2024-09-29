@@ -43,44 +43,60 @@ class AuditContext extends $pb.GeneratedMessage {
     return $result;
   }
   AuditContext._() : super();
-  factory AuditContext.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuditContext.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuditContext.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuditContext.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuditContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.rpc.context'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'auditLog', $pb.PbFieldType.OY)
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'scrubbedRequest', subBuilder: $261.Struct.create)
-    ..aOM<$261.Struct>(3, _omitFieldNames ? '' : 'scrubbedResponse', subBuilder: $261.Struct.create)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'scrubbedResponseItemCount', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuditContext',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.rpc.context'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'auditLog', $pb.PbFieldType.OY)
+    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'scrubbedRequest',
+        subBuilder: $261.Struct.create)
+    ..aOM<$261.Struct>(3, _omitFieldNames ? '' : 'scrubbedResponse',
+        subBuilder: $261.Struct.create)
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'scrubbedResponseItemCount',
+        $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'targetResource')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuditContext clone() => AuditContext()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuditContext copyWith(void Function(AuditContext) updates) => super.copyWith((message) => updates(message as AuditContext)) as AuditContext;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuditContext copyWith(void Function(AuditContext) updates) =>
+      super.copyWith((message) => updates(message as AuditContext))
+          as AuditContext;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuditContext create() => AuditContext._();
   AuditContext createEmptyInstance() => create();
-  static $pb.PbList<AuditContext> createRepeated() => $pb.PbList<AuditContext>();
+  static $pb.PbList<AuditContext> createRepeated() =>
+      $pb.PbList<AuditContext>();
   @$core.pragma('dart2js:noInline')
-  static AuditContext getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditContext>(create);
+  static AuditContext getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuditContext>(create);
   static AuditContext? _defaultInstance;
 
   /// Serialized audit log.
   @$pb.TagNumber(1)
   $core.List<$core.int> get auditLog => $_getN(0);
   @$pb.TagNumber(1)
-  set auditLog($core.List<$core.int> v) { $_setBytes(0, v); }
+  set auditLog($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAuditLog() => $_has(0);
   @$pb.TagNumber(1)
@@ -93,7 +109,10 @@ class AuditContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $261.Struct get scrubbedRequest => $_getN(1);
   @$pb.TagNumber(2)
-  set scrubbedRequest($261.Struct v) { setField(2, v); }
+  set scrubbedRequest($261.Struct v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasScrubbedRequest() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,7 +127,10 @@ class AuditContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $261.Struct get scrubbedResponse => $_getN(2);
   @$pb.TagNumber(3)
-  set scrubbedResponse($261.Struct v) { setField(3, v); }
+  set scrubbedResponse($261.Struct v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasScrubbedResponse() => $_has(2);
   @$pb.TagNumber(3)
@@ -120,7 +142,10 @@ class AuditContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get scrubbedResponseItemCount => $_getIZ(3);
   @$pb.TagNumber(4)
-  set scrubbedResponseItemCount($core.int v) { $_setSignedInt32(3, v); }
+  set scrubbedResponseItemCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasScrubbedResponseItemCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -130,13 +155,16 @@ class AuditContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get targetResource => $_getSZ(4);
   @$pb.TagNumber(5)
-  set targetResource($core.String v) { $_setString(4, v); }
+  set targetResource($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTargetResource() => $_has(4);
   @$pb.TagNumber(5)
   void clearTargetResource() => clearField(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

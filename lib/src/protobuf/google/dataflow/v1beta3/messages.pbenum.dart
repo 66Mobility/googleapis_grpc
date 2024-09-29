@@ -15,14 +15,21 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Indicates the importance of the message.
 class JobMessageImportance extends $pb.ProtobufEnum {
-  static const JobMessageImportance JOB_MESSAGE_IMPORTANCE_UNKNOWN = JobMessageImportance._(0, _omitEnumNames ? '' : 'JOB_MESSAGE_IMPORTANCE_UNKNOWN');
-  static const JobMessageImportance JOB_MESSAGE_DEBUG = JobMessageImportance._(1, _omitEnumNames ? '' : 'JOB_MESSAGE_DEBUG');
-  static const JobMessageImportance JOB_MESSAGE_DETAILED = JobMessageImportance._(2, _omitEnumNames ? '' : 'JOB_MESSAGE_DETAILED');
-  static const JobMessageImportance JOB_MESSAGE_BASIC = JobMessageImportance._(5, _omitEnumNames ? '' : 'JOB_MESSAGE_BASIC');
-  static const JobMessageImportance JOB_MESSAGE_WARNING = JobMessageImportance._(3, _omitEnumNames ? '' : 'JOB_MESSAGE_WARNING');
-  static const JobMessageImportance JOB_MESSAGE_ERROR = JobMessageImportance._(4, _omitEnumNames ? '' : 'JOB_MESSAGE_ERROR');
+  static const JobMessageImportance JOB_MESSAGE_IMPORTANCE_UNKNOWN =
+      JobMessageImportance._(
+          0, _omitEnumNames ? '' : 'JOB_MESSAGE_IMPORTANCE_UNKNOWN');
+  static const JobMessageImportance JOB_MESSAGE_DEBUG =
+      JobMessageImportance._(1, _omitEnumNames ? '' : 'JOB_MESSAGE_DEBUG');
+  static const JobMessageImportance JOB_MESSAGE_DETAILED =
+      JobMessageImportance._(2, _omitEnumNames ? '' : 'JOB_MESSAGE_DETAILED');
+  static const JobMessageImportance JOB_MESSAGE_BASIC =
+      JobMessageImportance._(5, _omitEnumNames ? '' : 'JOB_MESSAGE_BASIC');
+  static const JobMessageImportance JOB_MESSAGE_WARNING =
+      JobMessageImportance._(3, _omitEnumNames ? '' : 'JOB_MESSAGE_WARNING');
+  static const JobMessageImportance JOB_MESSAGE_ERROR =
+      JobMessageImportance._(4, _omitEnumNames ? '' : 'JOB_MESSAGE_ERROR');
 
-  static const $core.List<JobMessageImportance> values = <JobMessageImportance> [
+  static const $core.List<JobMessageImportance> values = <JobMessageImportance>[
     JOB_MESSAGE_IMPORTANCE_UNKNOWN,
     JOB_MESSAGE_DEBUG,
     JOB_MESSAGE_DETAILED,
@@ -31,7 +38,8 @@ class JobMessageImportance extends $pb.ProtobufEnum {
     JOB_MESSAGE_ERROR,
   ];
 
-  static final $core.Map<$core.int, JobMessageImportance> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, JobMessageImportance> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static JobMessageImportance? valueOf($core.int value) => _byValue[value];
 
   const JobMessageImportance._($core.int v, $core.String n) : super(v, n);
@@ -39,13 +47,24 @@ class JobMessageImportance extends $pb.ProtobufEnum {
 
 /// Indicates the type of autoscaling event.
 class AutoscalingEvent_AutoscalingEventType extends $pb.ProtobufEnum {
-  static const AutoscalingEvent_AutoscalingEventType TYPE_UNKNOWN = AutoscalingEvent_AutoscalingEventType._(0, _omitEnumNames ? '' : 'TYPE_UNKNOWN');
-  static const AutoscalingEvent_AutoscalingEventType TARGET_NUM_WORKERS_CHANGED = AutoscalingEvent_AutoscalingEventType._(1, _omitEnumNames ? '' : 'TARGET_NUM_WORKERS_CHANGED');
-  static const AutoscalingEvent_AutoscalingEventType CURRENT_NUM_WORKERS_CHANGED = AutoscalingEvent_AutoscalingEventType._(2, _omitEnumNames ? '' : 'CURRENT_NUM_WORKERS_CHANGED');
-  static const AutoscalingEvent_AutoscalingEventType ACTUATION_FAILURE = AutoscalingEvent_AutoscalingEventType._(3, _omitEnumNames ? '' : 'ACTUATION_FAILURE');
-  static const AutoscalingEvent_AutoscalingEventType NO_CHANGE = AutoscalingEvent_AutoscalingEventType._(4, _omitEnumNames ? '' : 'NO_CHANGE');
+  static const AutoscalingEvent_AutoscalingEventType TYPE_UNKNOWN =
+      AutoscalingEvent_AutoscalingEventType._(
+          0, _omitEnumNames ? '' : 'TYPE_UNKNOWN');
+  static const AutoscalingEvent_AutoscalingEventType
+      TARGET_NUM_WORKERS_CHANGED = AutoscalingEvent_AutoscalingEventType._(
+          1, _omitEnumNames ? '' : 'TARGET_NUM_WORKERS_CHANGED');
+  static const AutoscalingEvent_AutoscalingEventType
+      CURRENT_NUM_WORKERS_CHANGED = AutoscalingEvent_AutoscalingEventType._(
+          2, _omitEnumNames ? '' : 'CURRENT_NUM_WORKERS_CHANGED');
+  static const AutoscalingEvent_AutoscalingEventType ACTUATION_FAILURE =
+      AutoscalingEvent_AutoscalingEventType._(
+          3, _omitEnumNames ? '' : 'ACTUATION_FAILURE');
+  static const AutoscalingEvent_AutoscalingEventType NO_CHANGE =
+      AutoscalingEvent_AutoscalingEventType._(
+          4, _omitEnumNames ? '' : 'NO_CHANGE');
 
-  static const $core.List<AutoscalingEvent_AutoscalingEventType> values = <AutoscalingEvent_AutoscalingEventType> [
+  static const $core.List<AutoscalingEvent_AutoscalingEventType> values =
+      <AutoscalingEvent_AutoscalingEventType>[
     TYPE_UNKNOWN,
     TARGET_NUM_WORKERS_CHANGED,
     CURRENT_NUM_WORKERS_CHANGED,
@@ -53,11 +72,13 @@ class AutoscalingEvent_AutoscalingEventType extends $pb.ProtobufEnum {
     NO_CHANGE,
   ];
 
-  static final $core.Map<$core.int, AutoscalingEvent_AutoscalingEventType> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static AutoscalingEvent_AutoscalingEventType? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, AutoscalingEvent_AutoscalingEventType>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static AutoscalingEvent_AutoscalingEventType? valueOf($core.int value) =>
+      _byValue[value];
 
-  const AutoscalingEvent_AutoscalingEventType._($core.int v, $core.String n) : super(v, n);
+  const AutoscalingEvent_AutoscalingEventType._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

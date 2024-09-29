@@ -39,34 +39,44 @@ class GlobalIntentEvent extends $pb.GeneratedMessage {
     return $result;
   }
   GlobalIntentEvent._() : super();
-  factory GlobalIntentEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GlobalIntentEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GlobalIntentEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GlobalIntentEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GlobalIntentEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GlobalIntentEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'transitionToScene')
-    ..aOM<$277.EventHandler>(2, _omitFieldNames ? '' : 'handler', subBuilder: $277.EventHandler.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$277.EventHandler>(2, _omitFieldNames ? '' : 'handler',
+        subBuilder: $277.EventHandler.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GlobalIntentEvent clone() => GlobalIntentEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GlobalIntentEvent copyWith(void Function(GlobalIntentEvent) updates) => super.copyWith((message) => updates(message as GlobalIntentEvent)) as GlobalIntentEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GlobalIntentEvent copyWith(void Function(GlobalIntentEvent) updates) =>
+      super.copyWith((message) => updates(message as GlobalIntentEvent))
+          as GlobalIntentEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GlobalIntentEvent create() => GlobalIntentEvent._();
   GlobalIntentEvent createEmptyInstance() => create();
-  static $pb.PbList<GlobalIntentEvent> createRepeated() => $pb.PbList<GlobalIntentEvent>();
+  static $pb.PbList<GlobalIntentEvent> createRepeated() =>
+      $pb.PbList<GlobalIntentEvent>();
   @$core.pragma('dart2js:noInline')
-  static GlobalIntentEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GlobalIntentEvent>(create);
+  static GlobalIntentEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GlobalIntentEvent>(create);
   static GlobalIntentEvent? _defaultInstance;
 
   /// Optional. Destination scene which the conversation should jump to. The state of the
@@ -74,7 +84,10 @@ class GlobalIntentEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get transitionToScene => $_getSZ(0);
   @$pb.TagNumber(1)
-  set transitionToScene($core.String v) { $_setString(0, v); }
+  set transitionToScene($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTransitionToScene() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,7 +99,10 @@ class GlobalIntentEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $277.EventHandler get handler => $_getN(1);
   @$pb.TagNumber(2)
-  set handler($277.EventHandler v) { setField(2, v); }
+  set handler($277.EventHandler v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHandler() => $_has(1);
   @$pb.TagNumber(2)
@@ -95,6 +111,6 @@ class GlobalIntentEvent extends $pb.GeneratedMessage {
   $277.EventHandler ensureHandler() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

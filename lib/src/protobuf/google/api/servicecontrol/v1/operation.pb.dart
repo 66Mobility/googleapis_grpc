@@ -69,33 +69,54 @@ class Operation extends $pb.GeneratedMessage {
     return $result;
   }
   Operation._() : super();
-  factory Operation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Operation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Operation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Operation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Operation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicecontrol.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Operation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.servicecontrol.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
     ..aOS(2, _omitFieldNames ? '' : 'operationName')
     ..aOS(3, _omitFieldNames ? '' : 'consumerId')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Operation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.servicecontrol.v1'))
-    ..pc<$371.MetricValueSet>(7, _omitFieldNames ? '' : 'metricValueSets', $pb.PbFieldType.PM, subBuilder: $371.MetricValueSet.create)
-    ..pc<$372.LogEntry>(8, _omitFieldNames ? '' : 'logEntries', $pb.PbFieldType.PM, subBuilder: $372.LogEntry.create)
-    ..e<Operation_Importance>(11, _omitFieldNames ? '' : 'importance', $pb.PbFieldType.OE, defaultOrMaker: Operation_Importance.LOW, valueOf: Operation_Importance.valueOf, enumValues: Operation_Importance.values)
-    ..pc<$321.Any>(16, _omitFieldNames ? '' : 'extensions', $pb.PbFieldType.PM, subBuilder: $321.Any.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Operation.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.api.servicecontrol.v1'))
+    ..pc<$371.MetricValueSet>(
+        7, _omitFieldNames ? '' : 'metricValueSets', $pb.PbFieldType.PM,
+        subBuilder: $371.MetricValueSet.create)
+    ..pc<$372.LogEntry>(
+        8, _omitFieldNames ? '' : 'logEntries', $pb.PbFieldType.PM,
+        subBuilder: $372.LogEntry.create)
+    ..e<Operation_Importance>(
+        11, _omitFieldNames ? '' : 'importance', $pb.PbFieldType.OE,
+        defaultOrMaker: Operation_Importance.LOW,
+        valueOf: Operation_Importance.valueOf,
+        enumValues: Operation_Importance.values)
+    ..pc<$321.Any>(16, _omitFieldNames ? '' : 'extensions', $pb.PbFieldType.PM,
+        subBuilder: $321.Any.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Operation clone() => Operation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Operation copyWith(void Function(Operation) updates) => super.copyWith((message) => updates(message as Operation)) as Operation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Operation copyWith(void Function(Operation) updates) =>
+      super.copyWith((message) => updates(message as Operation)) as Operation;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -104,7 +125,8 @@ class Operation extends $pb.GeneratedMessage {
   Operation createEmptyInstance() => create();
   static $pb.PbList<Operation> createRepeated() => $pb.PbList<Operation>();
   @$core.pragma('dart2js:noInline')
-  static Operation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Operation>(create);
+  static Operation getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Operation>(create);
   static Operation? _defaultInstance;
 
   ///  Identity of the operation. This must be unique within the scope of the
@@ -119,7 +141,10 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get operationId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set operationId($core.String v) { $_setString(0, v); }
+  set operationId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOperationId() => $_has(0);
   @$pb.TagNumber(1)
@@ -129,7 +154,10 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get operationName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set operationName($core.String v) { $_setString(1, v); }
+  set operationName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOperationName() => $_has(1);
   @$pb.TagNumber(2)
@@ -150,7 +178,10 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get consumerId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set consumerId($core.String v) { $_setString(2, v); }
+  set consumerId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasConsumerId() => $_has(2);
   @$pb.TagNumber(3)
@@ -160,7 +191,10 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) { setField(4, v); }
+  set startTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -176,7 +210,10 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) { setField(5, v); }
+  set endTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -224,7 +261,10 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Operation_Importance get importance => $_getN(8);
   @$pb.TagNumber(11)
-  set importance(Operation_Importance v) { setField(11, v); }
+  set importance(Operation_Importance v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasImportance() => $_has(8);
   @$pb.TagNumber(11)
@@ -235,6 +275,6 @@ class Operation extends $pb.GeneratedMessage {
   $core.List<$321.Any> get extensions => $_getList(9);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const DateTimeRange$json = {
   '1': 'DateTimeRange',
   '2': [
-    {'1': 'start', '3': 1, '4': 1, '5': 11, '6': '.google.type.DateTime', '10': 'start'},
-    {'1': 'end', '3': 2, '4': 1, '5': 11, '6': '.google.type.DateTime', '10': 'end'},
+    {
+      '1': 'start',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.DateTime',
+      '10': 'start'
+    },
+    {
+      '1': 'end',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.DateTime',
+      '10': 'end'
+    },
   ],
 };
 
@@ -26,4 +40,3 @@ const DateTimeRange$json = {
 final $typed_data.Uint8List dateTimeRangeDescriptor = $convert.base64Decode(
     'Cg1EYXRlVGltZVJhbmdlEisKBXN0YXJ0GAEgASgLMhUuZ29vZ2xlLnR5cGUuRGF0ZVRpbWVSBX'
     'N0YXJ0EicKA2VuZBgCIAEoCzIVLmdvb2dsZS50eXBlLkRhdGVUaW1lUgNlbmQ=');
-

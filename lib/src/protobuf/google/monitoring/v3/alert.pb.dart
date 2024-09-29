@@ -39,34 +39,47 @@ class AlertPolicy_Documentation_Link extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy_Documentation_Link._() : super();
-  factory AlertPolicy_Documentation_Link.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Documentation_Link.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Documentation_Link.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Documentation_Link.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Documentation.Link', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Documentation.Link',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
     ..aOS(2, _omitFieldNames ? '' : 'url')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Documentation_Link clone() => AlertPolicy_Documentation_Link()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Documentation_Link copyWith(void Function(AlertPolicy_Documentation_Link) updates) => super.copyWith((message) => updates(message as AlertPolicy_Documentation_Link)) as AlertPolicy_Documentation_Link;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Documentation_Link clone() =>
+      AlertPolicy_Documentation_Link()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Documentation_Link copyWith(
+          void Function(AlertPolicy_Documentation_Link) updates) =>
+      super.copyWith(
+              (message) => updates(message as AlertPolicy_Documentation_Link))
+          as AlertPolicy_Documentation_Link;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Documentation_Link create() => AlertPolicy_Documentation_Link._();
+  static AlertPolicy_Documentation_Link create() =>
+      AlertPolicy_Documentation_Link._();
   AlertPolicy_Documentation_Link createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Documentation_Link> createRepeated() => $pb.PbList<AlertPolicy_Documentation_Link>();
+  static $pb.PbList<AlertPolicy_Documentation_Link> createRepeated() =>
+      $pb.PbList<AlertPolicy_Documentation_Link>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Documentation_Link getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Documentation_Link>(create);
+  static AlertPolicy_Documentation_Link getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Documentation_Link>(create);
   static AlertPolicy_Documentation_Link? _defaultInstance;
 
   /// A short display name for the link. The display name must not be empty
@@ -74,7 +87,10 @@ class AlertPolicy_Documentation_Link extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get displayName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set displayName($core.String v) { $_setString(0, v); }
+  set displayName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
@@ -88,7 +104,10 @@ class AlertPolicy_Documentation_Link extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get url => $_getSZ(1);
   @$pb.TagNumber(2)
-  set url($core.String v) { $_setString(1, v); }
+  set url($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUrl() => $_has(1);
   @$pb.TagNumber(2)
@@ -120,36 +139,49 @@ class AlertPolicy_Documentation extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy_Documentation._() : super();
-  factory AlertPolicy_Documentation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Documentation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Documentation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Documentation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Documentation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Documentation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'content')
     ..aOS(2, _omitFieldNames ? '' : 'mimeType')
     ..aOS(3, _omitFieldNames ? '' : 'subject')
-    ..pc<AlertPolicy_Documentation_Link>(4, _omitFieldNames ? '' : 'links', $pb.PbFieldType.PM, subBuilder: AlertPolicy_Documentation_Link.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<AlertPolicy_Documentation_Link>(
+        4, _omitFieldNames ? '' : 'links', $pb.PbFieldType.PM,
+        subBuilder: AlertPolicy_Documentation_Link.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Documentation clone() => AlertPolicy_Documentation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Documentation copyWith(void Function(AlertPolicy_Documentation) updates) => super.copyWith((message) => updates(message as AlertPolicy_Documentation)) as AlertPolicy_Documentation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Documentation clone() =>
+      AlertPolicy_Documentation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Documentation copyWith(
+          void Function(AlertPolicy_Documentation) updates) =>
+      super.copyWith((message) => updates(message as AlertPolicy_Documentation))
+          as AlertPolicy_Documentation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlertPolicy_Documentation create() => AlertPolicy_Documentation._();
   AlertPolicy_Documentation createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Documentation> createRepeated() => $pb.PbList<AlertPolicy_Documentation>();
+  static $pb.PbList<AlertPolicy_Documentation> createRepeated() =>
+      $pb.PbList<AlertPolicy_Documentation>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Documentation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Documentation>(create);
+  static AlertPolicy_Documentation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Documentation>(create);
   static AlertPolicy_Documentation? _defaultInstance;
 
   /// The body of the documentation, interpreted according to `mime_type`.
@@ -160,7 +192,10 @@ class AlertPolicy_Documentation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get content => $_getSZ(0);
   @$pb.TagNumber(1)
-  set content($core.String v) { $_setString(0, v); }
+  set content($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasContent() => $_has(0);
   @$pb.TagNumber(1)
@@ -172,7 +207,10 @@ class AlertPolicy_Documentation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get mimeType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set mimeType($core.String v) { $_setString(1, v); }
+  set mimeType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMimeType() => $_has(1);
   @$pb.TagNumber(2)
@@ -194,7 +232,10 @@ class AlertPolicy_Documentation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get subject => $_getSZ(2);
   @$pb.TagNumber(3)
-  set subject($core.String v) { $_setString(2, v); }
+  set subject($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSubject() => $_has(2);
   @$pb.TagNumber(3)
@@ -206,11 +247,7 @@ class AlertPolicy_Documentation extends $pb.GeneratedMessage {
   $core.List<AlertPolicy_Documentation_Link> get links => $_getList(3);
 }
 
-enum AlertPolicy_Condition_Trigger_Type {
-  count, 
-  percent, 
-  notSet
-}
+enum AlertPolicy_Condition_Trigger_Type { count, percent, notSet }
 
 /// Specifies how many time series must fail a predicate to trigger a
 /// condition. If not specified, then a `{count: 1}` trigger is used.
@@ -229,43 +266,58 @@ class AlertPolicy_Condition_Trigger extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy_Condition_Trigger._() : super();
-  factory AlertPolicy_Condition_Trigger.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition_Trigger.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition_Trigger.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_Trigger.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AlertPolicy_Condition_Trigger_Type> _AlertPolicy_Condition_Trigger_TypeByTag = {
-    1 : AlertPolicy_Condition_Trigger_Type.count,
-    2 : AlertPolicy_Condition_Trigger_Type.percent,
-    0 : AlertPolicy_Condition_Trigger_Type.notSet
+  static const $core.Map<$core.int, AlertPolicy_Condition_Trigger_Type>
+      _AlertPolicy_Condition_Trigger_TypeByTag = {
+    1: AlertPolicy_Condition_Trigger_Type.count,
+    2: AlertPolicy_Condition_Trigger_Type.percent,
+    0: AlertPolicy_Condition_Trigger_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition.Trigger', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.Trigger',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'percent', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_Trigger clone() => AlertPolicy_Condition_Trigger()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_Trigger copyWith(void Function(AlertPolicy_Condition_Trigger) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition_Trigger)) as AlertPolicy_Condition_Trigger;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_Trigger clone() =>
+      AlertPolicy_Condition_Trigger()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_Trigger copyWith(
+          void Function(AlertPolicy_Condition_Trigger) updates) =>
+      super.copyWith(
+              (message) => updates(message as AlertPolicy_Condition_Trigger))
+          as AlertPolicy_Condition_Trigger;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_Trigger create() => AlertPolicy_Condition_Trigger._();
+  static AlertPolicy_Condition_Trigger create() =>
+      AlertPolicy_Condition_Trigger._();
   AlertPolicy_Condition_Trigger createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition_Trigger> createRepeated() => $pb.PbList<AlertPolicy_Condition_Trigger>();
+  static $pb.PbList<AlertPolicy_Condition_Trigger> createRepeated() =>
+      $pb.PbList<AlertPolicy_Condition_Trigger>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_Trigger getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_Trigger>(create);
+  static AlertPolicy_Condition_Trigger getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_Trigger>(create);
   static AlertPolicy_Condition_Trigger? _defaultInstance;
 
-  AlertPolicy_Condition_Trigger_Type whichType() => _AlertPolicy_Condition_Trigger_TypeByTag[$_whichOneof(0)]!;
+  AlertPolicy_Condition_Trigger_Type whichType() =>
+      _AlertPolicy_Condition_Trigger_TypeByTag[$_whichOneof(0)]!;
   void clearType() => clearField($_whichOneof(0));
 
   /// The absolute number of time series that must fail
@@ -273,7 +325,10 @@ class AlertPolicy_Condition_Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get count => $_getIZ(0);
   @$pb.TagNumber(1)
-  set count($core.int v) { $_setSignedInt32(0, v); }
+  set count($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -284,7 +339,10 @@ class AlertPolicy_Condition_Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get percent => $_getN(1);
   @$pb.TagNumber(2)
-  set percent($core.double v) { $_setDouble(1, v); }
+  set percent($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPercent() => $_has(1);
   @$pb.TagNumber(2)
@@ -293,7 +351,8 @@ class AlertPolicy_Condition_Trigger extends $pb.GeneratedMessage {
 
 /// Options used when forecasting the time series and testing
 /// the predicted value against the threshold.
-class AlertPolicy_Condition_MetricThreshold_ForecastOptions extends $pb.GeneratedMessage {
+class AlertPolicy_Condition_MetricThreshold_ForecastOptions
+    extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricThreshold_ForecastOptions({
     $264.Duration? forecastHorizon,
   }) {
@@ -304,34 +363,58 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions extends $pb.Generate
     return $result;
   }
   AlertPolicy_Condition_MetricThreshold_ForecastOptions._() : super();
-  factory AlertPolicy_Condition_MetricThreshold_ForecastOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition_MetricThreshold_ForecastOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition_MetricThreshold_ForecastOptions.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_MetricThreshold_ForecastOptions.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition.MetricThreshold.ForecastOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'forecastHorizon', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AlertPolicy.Condition.MetricThreshold.ForecastOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'forecastHorizon',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MetricThreshold_ForecastOptions clone() => AlertPolicy_Condition_MetricThreshold_ForecastOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MetricThreshold_ForecastOptions copyWith(void Function(AlertPolicy_Condition_MetricThreshold_ForecastOptions) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition_MetricThreshold_ForecastOptions)) as AlertPolicy_Condition_MetricThreshold_ForecastOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MetricThreshold_ForecastOptions clone() =>
+      AlertPolicy_Condition_MetricThreshold_ForecastOptions()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MetricThreshold_ForecastOptions copyWith(
+          void Function(AlertPolicy_Condition_MetricThreshold_ForecastOptions)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AlertPolicy_Condition_MetricThreshold_ForecastOptions))
+          as AlertPolicy_Condition_MetricThreshold_ForecastOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MetricThreshold_ForecastOptions create() => AlertPolicy_Condition_MetricThreshold_ForecastOptions._();
-  AlertPolicy_Condition_MetricThreshold_ForecastOptions createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition_MetricThreshold_ForecastOptions> createRepeated() => $pb.PbList<AlertPolicy_Condition_MetricThreshold_ForecastOptions>();
+  static AlertPolicy_Condition_MetricThreshold_ForecastOptions create() =>
+      AlertPolicy_Condition_MetricThreshold_ForecastOptions._();
+  AlertPolicy_Condition_MetricThreshold_ForecastOptions createEmptyInstance() =>
+      create();
+  static $pb.PbList<AlertPolicy_Condition_MetricThreshold_ForecastOptions>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_MetricThreshold_ForecastOptions>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MetricThreshold_ForecastOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_MetricThreshold_ForecastOptions>(create);
-  static AlertPolicy_Condition_MetricThreshold_ForecastOptions? _defaultInstance;
+  static AlertPolicy_Condition_MetricThreshold_ForecastOptions getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_MetricThreshold_ForecastOptions>(create);
+  static AlertPolicy_Condition_MetricThreshold_ForecastOptions?
+      _defaultInstance;
 
   /// Required. The length of time into the future to forecast whether a
   /// time series will violate the threshold. If the predicted value is
@@ -342,7 +425,10 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions extends $pb.Generate
   @$pb.TagNumber(1)
   $264.Duration get forecastHorizon => $_getN(0);
   @$pb.TagNumber(1)
-  set forecastHorizon($264.Duration v) { setField(1, v); }
+  set forecastHorizon($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasForecastHorizon() => $_has(0);
   @$pb.TagNumber(1)
@@ -400,42 +486,76 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy_Condition_MetricThreshold._() : super();
-  factory AlertPolicy_Condition_MetricThreshold.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition_MetricThreshold.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition_MetricThreshold.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_MetricThreshold.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition.MetricThreshold', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.MetricThreshold',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'filter')
-    ..e<$531.ComparisonType>(4, _omitFieldNames ? '' : 'comparison', $pb.PbFieldType.OE, defaultOrMaker: $531.ComparisonType.COMPARISON_UNSPECIFIED, valueOf: $531.ComparisonType.valueOf, enumValues: $531.ComparisonType.values)
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'thresholdValue', $pb.PbFieldType.OD)
-    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<AlertPolicy_Condition_Trigger>(7, _omitFieldNames ? '' : 'trigger', subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$531.Aggregation>(8, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM, subBuilder: $531.Aggregation.create)
+    ..e<$531.ComparisonType>(
+        4, _omitFieldNames ? '' : 'comparison', $pb.PbFieldType.OE,
+        defaultOrMaker: $531.ComparisonType.COMPARISON_UNSPECIFIED,
+        valueOf: $531.ComparisonType.valueOf,
+        enumValues: $531.ComparisonType.values)
+    ..a<$core.double>(
+        5, _omitFieldNames ? '' : 'thresholdValue', $pb.PbFieldType.OD)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<AlertPolicy_Condition_Trigger>(7, _omitFieldNames ? '' : 'trigger',
+        subBuilder: AlertPolicy_Condition_Trigger.create)
+    ..pc<$531.Aggregation>(
+        8, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
+        subBuilder: $531.Aggregation.create)
     ..aOS(9, _omitFieldNames ? '' : 'denominatorFilter')
-    ..pc<$531.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations', $pb.PbFieldType.PM, subBuilder: $531.Aggregation.create)
-    ..e<AlertPolicy_Condition_EvaluationMissingData>(11, _omitFieldNames ? '' : 'evaluationMissingData', $pb.PbFieldType.OE, defaultOrMaker: AlertPolicy_Condition_EvaluationMissingData.EVALUATION_MISSING_DATA_UNSPECIFIED, valueOf: AlertPolicy_Condition_EvaluationMissingData.valueOf, enumValues: AlertPolicy_Condition_EvaluationMissingData.values)
-    ..aOM<AlertPolicy_Condition_MetricThreshold_ForecastOptions>(12, _omitFieldNames ? '' : 'forecastOptions', subBuilder: AlertPolicy_Condition_MetricThreshold_ForecastOptions.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$531.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations',
+        $pb.PbFieldType.PM,
+        subBuilder: $531.Aggregation.create)
+    ..e<AlertPolicy_Condition_EvaluationMissingData>(
+        11, _omitFieldNames ? '' : 'evaluationMissingData', $pb.PbFieldType.OE,
+        defaultOrMaker: AlertPolicy_Condition_EvaluationMissingData
+            .EVALUATION_MISSING_DATA_UNSPECIFIED,
+        valueOf: AlertPolicy_Condition_EvaluationMissingData.valueOf,
+        enumValues: AlertPolicy_Condition_EvaluationMissingData.values)
+    ..aOM<AlertPolicy_Condition_MetricThreshold_ForecastOptions>(
+        12, _omitFieldNames ? '' : 'forecastOptions',
+        subBuilder:
+            AlertPolicy_Condition_MetricThreshold_ForecastOptions.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MetricThreshold clone() => AlertPolicy_Condition_MetricThreshold()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MetricThreshold copyWith(void Function(AlertPolicy_Condition_MetricThreshold) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition_MetricThreshold)) as AlertPolicy_Condition_MetricThreshold;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MetricThreshold clone() =>
+      AlertPolicy_Condition_MetricThreshold()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MetricThreshold copyWith(
+          void Function(AlertPolicy_Condition_MetricThreshold) updates) =>
+      super.copyWith((message) =>
+              updates(message as AlertPolicy_Condition_MetricThreshold))
+          as AlertPolicy_Condition_MetricThreshold;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MetricThreshold create() => AlertPolicy_Condition_MetricThreshold._();
+  static AlertPolicy_Condition_MetricThreshold create() =>
+      AlertPolicy_Condition_MetricThreshold._();
   AlertPolicy_Condition_MetricThreshold createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition_MetricThreshold> createRepeated() => $pb.PbList<AlertPolicy_Condition_MetricThreshold>();
+  static $pb.PbList<AlertPolicy_Condition_MetricThreshold> createRepeated() =>
+      $pb.PbList<AlertPolicy_Condition_MetricThreshold>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MetricThreshold getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_MetricThreshold>(create);
+  static AlertPolicy_Condition_MetricThreshold getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_MetricThreshold>(create);
   static AlertPolicy_Condition_MetricThreshold? _defaultInstance;
 
   ///  Required. A
@@ -452,7 +572,10 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(0);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(0, v); }
+  set filter($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(0);
   @$pb.TagNumber(2)
@@ -467,7 +590,10 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $531.ComparisonType get comparison => $_getN(1);
   @$pb.TagNumber(4)
-  set comparison($531.ComparisonType v) { setField(4, v); }
+  set comparison($531.ComparisonType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasComparison() => $_has(1);
   @$pb.TagNumber(4)
@@ -477,7 +603,10 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get thresholdValue => $_getN(2);
   @$pb.TagNumber(5)
-  set thresholdValue($core.double v) { $_setDouble(2, v); }
+  set thresholdValue($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasThresholdValue() => $_has(2);
   @$pb.TagNumber(5)
@@ -496,7 +625,10 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $264.Duration get duration => $_getN(3);
   @$pb.TagNumber(6)
-  set duration($264.Duration v) { setField(6, v); }
+  set duration($264.Duration v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(6)
@@ -513,7 +645,10 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   AlertPolicy_Condition_Trigger get trigger => $_getN(4);
   @$pb.TagNumber(7)
-  set trigger(AlertPolicy_Condition_Trigger v) { setField(7, v); }
+  set trigger(AlertPolicy_Condition_Trigger v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTrigger() => $_has(4);
   @$pb.TagNumber(7)
@@ -547,7 +682,10 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get denominatorFilter => $_getSZ(6);
   @$pb.TagNumber(9)
-  set denominatorFilter($core.String v) { $_setString(6, v); }
+  set denominatorFilter($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDenominatorFilter() => $_has(6);
   @$pb.TagNumber(9)
@@ -570,9 +708,13 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   /// are evaluated when data stops arriving. To use this control, the value
   /// of the `duration` field must be greater than or equal to 60 seconds.
   @$pb.TagNumber(11)
-  AlertPolicy_Condition_EvaluationMissingData get evaluationMissingData => $_getN(8);
+  AlertPolicy_Condition_EvaluationMissingData get evaluationMissingData =>
+      $_getN(8);
   @$pb.TagNumber(11)
-  set evaluationMissingData(AlertPolicy_Condition_EvaluationMissingData v) { setField(11, v); }
+  set evaluationMissingData(AlertPolicy_Condition_EvaluationMissingData v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasEvaluationMissingData() => $_has(8);
   @$pb.TagNumber(11)
@@ -584,15 +726,20 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   /// `MetricThreshold` tests the current value of the timeseries against the
   /// threshold.
   @$pb.TagNumber(12)
-  AlertPolicy_Condition_MetricThreshold_ForecastOptions get forecastOptions => $_getN(9);
+  AlertPolicy_Condition_MetricThreshold_ForecastOptions get forecastOptions =>
+      $_getN(9);
   @$pb.TagNumber(12)
-  set forecastOptions(AlertPolicy_Condition_MetricThreshold_ForecastOptions v) { setField(12, v); }
+  set forecastOptions(AlertPolicy_Condition_MetricThreshold_ForecastOptions v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasForecastOptions() => $_has(9);
   @$pb.TagNumber(12)
   void clearForecastOptions() => clearField(12);
   @$pb.TagNumber(12)
-  AlertPolicy_Condition_MetricThreshold_ForecastOptions ensureForecastOptions() => $_ensure(9);
+  AlertPolicy_Condition_MetricThreshold_ForecastOptions
+      ensureForecastOptions() => $_ensure(9);
 }
 
 /// A condition type that checks that monitored resources
@@ -623,36 +770,55 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy_Condition_MetricAbsence._() : super();
-  factory AlertPolicy_Condition_MetricAbsence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition_MetricAbsence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition_MetricAbsence.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_MetricAbsence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition.MetricAbsence', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.MetricAbsence',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filter')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger', subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$531.Aggregation>(5, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM, subBuilder: $531.Aggregation.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger',
+        subBuilder: AlertPolicy_Condition_Trigger.create)
+    ..pc<$531.Aggregation>(
+        5, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
+        subBuilder: $531.Aggregation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MetricAbsence clone() => AlertPolicy_Condition_MetricAbsence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MetricAbsence copyWith(void Function(AlertPolicy_Condition_MetricAbsence) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition_MetricAbsence)) as AlertPolicy_Condition_MetricAbsence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MetricAbsence clone() =>
+      AlertPolicy_Condition_MetricAbsence()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MetricAbsence copyWith(
+          void Function(AlertPolicy_Condition_MetricAbsence) updates) =>
+      super.copyWith((message) =>
+              updates(message as AlertPolicy_Condition_MetricAbsence))
+          as AlertPolicy_Condition_MetricAbsence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MetricAbsence create() => AlertPolicy_Condition_MetricAbsence._();
+  static AlertPolicy_Condition_MetricAbsence create() =>
+      AlertPolicy_Condition_MetricAbsence._();
   AlertPolicy_Condition_MetricAbsence createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition_MetricAbsence> createRepeated() => $pb.PbList<AlertPolicy_Condition_MetricAbsence>();
+  static $pb.PbList<AlertPolicy_Condition_MetricAbsence> createRepeated() =>
+      $pb.PbList<AlertPolicy_Condition_MetricAbsence>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MetricAbsence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_MetricAbsence>(create);
+  static AlertPolicy_Condition_MetricAbsence getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_MetricAbsence>(create);
   static AlertPolicy_Condition_MetricAbsence? _defaultInstance;
 
   ///  Required. A
@@ -669,7 +835,10 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get filter => $_getSZ(0);
   @$pb.TagNumber(1)
-  set filter($core.String v) { $_setString(0, v); }
+  set filter($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -685,7 +854,10 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) { setField(2, v); }
+  set duration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -700,7 +872,10 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AlertPolicy_Condition_Trigger get trigger => $_getN(2);
   @$pb.TagNumber(3)
-  set trigger(AlertPolicy_Condition_Trigger v) { setField(3, v); }
+  set trigger(AlertPolicy_Condition_Trigger v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTrigger() => $_has(2);
   @$pb.TagNumber(3)
@@ -742,34 +917,51 @@ class AlertPolicy_Condition_LogMatch extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy_Condition_LogMatch._() : super();
-  factory AlertPolicy_Condition_LogMatch.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition_LogMatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition_LogMatch.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_LogMatch.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition.LogMatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.LogMatch',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filter')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labelExtractors', entryClassName: 'AlertPolicy.Condition.LogMatch.LabelExtractorsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.v3'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labelExtractors',
+        entryClassName: 'AlertPolicy.Condition.LogMatch.LabelExtractorsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.monitoring.v3'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_LogMatch clone() => AlertPolicy_Condition_LogMatch()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_LogMatch copyWith(void Function(AlertPolicy_Condition_LogMatch) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition_LogMatch)) as AlertPolicy_Condition_LogMatch;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_LogMatch clone() =>
+      AlertPolicy_Condition_LogMatch()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_LogMatch copyWith(
+          void Function(AlertPolicy_Condition_LogMatch) updates) =>
+      super.copyWith(
+              (message) => updates(message as AlertPolicy_Condition_LogMatch))
+          as AlertPolicy_Condition_LogMatch;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_LogMatch create() => AlertPolicy_Condition_LogMatch._();
+  static AlertPolicy_Condition_LogMatch create() =>
+      AlertPolicy_Condition_LogMatch._();
   AlertPolicy_Condition_LogMatch createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition_LogMatch> createRepeated() => $pb.PbList<AlertPolicy_Condition_LogMatch>();
+  static $pb.PbList<AlertPolicy_Condition_LogMatch> createRepeated() =>
+      $pb.PbList<AlertPolicy_Condition_LogMatch>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_LogMatch getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_LogMatch>(create);
+  static AlertPolicy_Condition_LogMatch getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_LogMatch>(create);
   static AlertPolicy_Condition_LogMatch? _defaultInstance;
 
   /// Required. A logs-based filter. See [Advanced Logs
@@ -778,7 +970,10 @@ class AlertPolicy_Condition_LogMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get filter => $_getSZ(0);
   @$pb.TagNumber(1)
-  set filter($core.String v) { $_setString(0, v); }
+  set filter($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -801,7 +996,8 @@ class AlertPolicy_Condition_LogMatch extends $pb.GeneratedMessage {
 
 /// A condition type that allows alert policies to be defined using
 /// [Monitoring Query Language](https://cloud.google.com/monitoring/mql).
-class AlertPolicy_Condition_MonitoringQueryLanguageCondition extends $pb.GeneratedMessage {
+class AlertPolicy_Condition_MonitoringQueryLanguageCondition
+    extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MonitoringQueryLanguageCondition({
     $core.String? query,
     $264.Duration? duration,
@@ -824,44 +1020,77 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition extends $pb.Generat
     return $result;
   }
   AlertPolicy_Condition_MonitoringQueryLanguageCondition._() : super();
-  factory AlertPolicy_Condition_MonitoringQueryLanguageCondition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition_MonitoringQueryLanguageCondition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition_MonitoringQueryLanguageCondition.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_MonitoringQueryLanguageCondition.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition.MonitoringQueryLanguageCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AlertPolicy.Condition.MonitoringQueryLanguageCondition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger', subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..e<AlertPolicy_Condition_EvaluationMissingData>(4, _omitFieldNames ? '' : 'evaluationMissingData', $pb.PbFieldType.OE, defaultOrMaker: AlertPolicy_Condition_EvaluationMissingData.EVALUATION_MISSING_DATA_UNSPECIFIED, valueOf: AlertPolicy_Condition_EvaluationMissingData.valueOf, enumValues: AlertPolicy_Condition_EvaluationMissingData.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger',
+        subBuilder: AlertPolicy_Condition_Trigger.create)
+    ..e<AlertPolicy_Condition_EvaluationMissingData>(
+        4, _omitFieldNames ? '' : 'evaluationMissingData', $pb.PbFieldType.OE,
+        defaultOrMaker: AlertPolicy_Condition_EvaluationMissingData
+            .EVALUATION_MISSING_DATA_UNSPECIFIED,
+        valueOf: AlertPolicy_Condition_EvaluationMissingData.valueOf,
+        enumValues: AlertPolicy_Condition_EvaluationMissingData.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MonitoringQueryLanguageCondition clone() => AlertPolicy_Condition_MonitoringQueryLanguageCondition()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_MonitoringQueryLanguageCondition copyWith(void Function(AlertPolicy_Condition_MonitoringQueryLanguageCondition) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition_MonitoringQueryLanguageCondition)) as AlertPolicy_Condition_MonitoringQueryLanguageCondition;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MonitoringQueryLanguageCondition clone() =>
+      AlertPolicy_Condition_MonitoringQueryLanguageCondition()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_MonitoringQueryLanguageCondition copyWith(
+          void Function(AlertPolicy_Condition_MonitoringQueryLanguageCondition)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as AlertPolicy_Condition_MonitoringQueryLanguageCondition))
+          as AlertPolicy_Condition_MonitoringQueryLanguageCondition;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MonitoringQueryLanguageCondition create() => AlertPolicy_Condition_MonitoringQueryLanguageCondition._();
-  AlertPolicy_Condition_MonitoringQueryLanguageCondition createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition_MonitoringQueryLanguageCondition> createRepeated() => $pb.PbList<AlertPolicy_Condition_MonitoringQueryLanguageCondition>();
+  static AlertPolicy_Condition_MonitoringQueryLanguageCondition create() =>
+      AlertPolicy_Condition_MonitoringQueryLanguageCondition._();
+  AlertPolicy_Condition_MonitoringQueryLanguageCondition
+      createEmptyInstance() => create();
+  static $pb.PbList<AlertPolicy_Condition_MonitoringQueryLanguageCondition>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_MonitoringQueryLanguageCondition>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_MonitoringQueryLanguageCondition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_MonitoringQueryLanguageCondition>(create);
-  static AlertPolicy_Condition_MonitoringQueryLanguageCondition? _defaultInstance;
+  static AlertPolicy_Condition_MonitoringQueryLanguageCondition getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_MonitoringQueryLanguageCondition>(create);
+  static AlertPolicy_Condition_MonitoringQueryLanguageCondition?
+      _defaultInstance;
 
   /// [Monitoring Query Language](https://cloud.google.com/monitoring/mql)
   /// query that outputs a boolean stream.
   @$pb.TagNumber(1)
   $core.String get query => $_getSZ(0);
   @$pb.TagNumber(1)
-  set query($core.String v) { $_setString(0, v); }
+  set query($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -880,7 +1109,10 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition extends $pb.Generat
   @$pb.TagNumber(2)
   $264.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) { setField(2, v); }
+  set duration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -897,7 +1129,10 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition extends $pb.Generat
   @$pb.TagNumber(3)
   AlertPolicy_Condition_Trigger get trigger => $_getN(2);
   @$pb.TagNumber(3)
-  set trigger(AlertPolicy_Condition_Trigger v) { setField(3, v); }
+  set trigger(AlertPolicy_Condition_Trigger v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTrigger() => $_has(2);
   @$pb.TagNumber(3)
@@ -908,9 +1143,13 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition extends $pb.Generat
   /// A condition control that determines how metric-threshold conditions
   /// are evaluated when data stops arriving.
   @$pb.TagNumber(4)
-  AlertPolicy_Condition_EvaluationMissingData get evaluationMissingData => $_getN(3);
+  AlertPolicy_Condition_EvaluationMissingData get evaluationMissingData =>
+      $_getN(3);
   @$pb.TagNumber(4)
-  set evaluationMissingData(AlertPolicy_Condition_EvaluationMissingData v) { setField(4, v); }
+  set evaluationMissingData(AlertPolicy_Condition_EvaluationMissingData v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEvaluationMissingData() => $_has(3);
   @$pb.TagNumber(4)
@@ -948,7 +1187,8 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition extends $pb.Generat
 ///  buffer may change in the future to support future rule group and/or
 ///  alerting rule features. There are no new such features at the present
 ///  time (2023-06-26).
-class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.GeneratedMessage {
+class AlertPolicy_Condition_PrometheusQueryLanguageCondition
+    extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_PrometheusQueryLanguageCondition({
     $core.String? query,
     $264.Duration? duration,
@@ -979,39 +1219,69 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.Generat
     return $result;
   }
   AlertPolicy_Condition_PrometheusQueryLanguageCondition._() : super();
-  factory AlertPolicy_Condition_PrometheusQueryLanguageCondition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition_PrometheusQueryLanguageCondition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition_PrometheusQueryLanguageCondition.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_PrometheusQueryLanguageCondition.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition.PrometheusQueryLanguageCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AlertPolicy.Condition.PrometheusQueryLanguageCondition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'evaluationInterval', subBuilder: $264.Duration.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'AlertPolicy.Condition.PrometheusQueryLanguageCondition.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.v3'))
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'evaluationInterval',
+        subBuilder: $264.Duration.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName:
+            'AlertPolicy.Condition.PrometheusQueryLanguageCondition.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.monitoring.v3'))
     ..aOS(5, _omitFieldNames ? '' : 'ruleGroup')
     ..aOS(6, _omitFieldNames ? '' : 'alertRule')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_PrometheusQueryLanguageCondition clone() => AlertPolicy_Condition_PrometheusQueryLanguageCondition()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition_PrometheusQueryLanguageCondition copyWith(void Function(AlertPolicy_Condition_PrometheusQueryLanguageCondition) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition_PrometheusQueryLanguageCondition)) as AlertPolicy_Condition_PrometheusQueryLanguageCondition;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_PrometheusQueryLanguageCondition clone() =>
+      AlertPolicy_Condition_PrometheusQueryLanguageCondition()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_PrometheusQueryLanguageCondition copyWith(
+          void Function(AlertPolicy_Condition_PrometheusQueryLanguageCondition)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as AlertPolicy_Condition_PrometheusQueryLanguageCondition))
+          as AlertPolicy_Condition_PrometheusQueryLanguageCondition;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_PrometheusQueryLanguageCondition create() => AlertPolicy_Condition_PrometheusQueryLanguageCondition._();
-  AlertPolicy_Condition_PrometheusQueryLanguageCondition createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition_PrometheusQueryLanguageCondition> createRepeated() => $pb.PbList<AlertPolicy_Condition_PrometheusQueryLanguageCondition>();
+  static AlertPolicy_Condition_PrometheusQueryLanguageCondition create() =>
+      AlertPolicy_Condition_PrometheusQueryLanguageCondition._();
+  AlertPolicy_Condition_PrometheusQueryLanguageCondition
+      createEmptyInstance() => create();
+  static $pb.PbList<AlertPolicy_Condition_PrometheusQueryLanguageCondition>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_PrometheusQueryLanguageCondition>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition_PrometheusQueryLanguageCondition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_PrometheusQueryLanguageCondition>(create);
-  static AlertPolicy_Condition_PrometheusQueryLanguageCondition? _defaultInstance;
+  static AlertPolicy_Condition_PrometheusQueryLanguageCondition getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_PrometheusQueryLanguageCondition>(create);
+  static AlertPolicy_Condition_PrometheusQueryLanguageCondition?
+      _defaultInstance;
 
   /// Required. The PromQL expression to evaluate. Every evaluation cycle
   /// this expression is evaluated at the current time, and all resultant
@@ -1019,7 +1289,10 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.Generat
   @$pb.TagNumber(1)
   $core.String get query => $_getSZ(0);
   @$pb.TagNumber(1)
-  set query($core.String v) { $_setString(0, v); }
+  set query($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -1034,7 +1307,10 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.Generat
   @$pb.TagNumber(2)
   $264.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) { setField(2, v); }
+  set duration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -1051,7 +1327,10 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.Generat
   @$pb.TagNumber(3)
   $264.Duration get evaluationInterval => $_getN(2);
   @$pb.TagNumber(3)
-  set evaluationInterval($264.Duration v) { setField(3, v); }
+  set evaluationInterval($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEvaluationInterval() => $_has(2);
   @$pb.TagNumber(3)
@@ -1084,7 +1363,10 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.Generat
   @$pb.TagNumber(5)
   $core.String get ruleGroup => $_getSZ(4);
   @$pb.TagNumber(5)
-  set ruleGroup($core.String v) { $_setString(4, v); }
+  set ruleGroup($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRuleGroup() => $_has(4);
   @$pb.TagNumber(5)
@@ -1106,7 +1388,10 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.Generat
   @$pb.TagNumber(6)
   $core.String get alertRule => $_getSZ(5);
   @$pb.TagNumber(6)
-  set alertRule($core.String v) { $_setString(5, v); }
+  set alertRule($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAlertRule() => $_has(5);
   @$pb.TagNumber(6)
@@ -1114,11 +1399,11 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition extends $pb.Generat
 }
 
 enum AlertPolicy_Condition_Condition {
-  conditionThreshold, 
-  conditionAbsent, 
-  conditionMonitoringQueryLanguage, 
-  conditionMatchedLog, 
-  conditionPrometheusQueryLanguage, 
+  conditionThreshold,
+  conditionAbsent,
+  conditionMonitoringQueryLanguage,
+  conditionMatchedLog,
+  conditionPrometheusQueryLanguage,
   notSet
 }
 
@@ -1131,9 +1416,11 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
     AlertPolicy_Condition_MetricAbsence? conditionAbsent,
     $core.String? displayName,
     $core.String? name,
-    AlertPolicy_Condition_MonitoringQueryLanguageCondition? conditionMonitoringQueryLanguage,
+    AlertPolicy_Condition_MonitoringQueryLanguageCondition?
+        conditionMonitoringQueryLanguage,
     AlertPolicy_Condition_LogMatch? conditionMatchedLog,
-    AlertPolicy_Condition_PrometheusQueryLanguageCondition? conditionPrometheusQueryLanguage,
+    AlertPolicy_Condition_PrometheusQueryLanguageCondition?
+        conditionPrometheusQueryLanguage,
   }) {
     final $result = create();
     if (conditionThreshold != null) {
@@ -1149,82 +1436,116 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
       $result.name = name;
     }
     if (conditionMonitoringQueryLanguage != null) {
-      $result.conditionMonitoringQueryLanguage = conditionMonitoringQueryLanguage;
+      $result.conditionMonitoringQueryLanguage =
+          conditionMonitoringQueryLanguage;
     }
     if (conditionMatchedLog != null) {
       $result.conditionMatchedLog = conditionMatchedLog;
     }
     if (conditionPrometheusQueryLanguage != null) {
-      $result.conditionPrometheusQueryLanguage = conditionPrometheusQueryLanguage;
+      $result.conditionPrometheusQueryLanguage =
+          conditionPrometheusQueryLanguage;
     }
     return $result;
   }
   AlertPolicy_Condition._() : super();
-  factory AlertPolicy_Condition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_Condition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_Condition.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AlertPolicy_Condition_Condition> _AlertPolicy_Condition_ConditionByTag = {
-    1 : AlertPolicy_Condition_Condition.conditionThreshold,
-    2 : AlertPolicy_Condition_Condition.conditionAbsent,
-    19 : AlertPolicy_Condition_Condition.conditionMonitoringQueryLanguage,
-    20 : AlertPolicy_Condition_Condition.conditionMatchedLog,
-    21 : AlertPolicy_Condition_Condition.conditionPrometheusQueryLanguage,
-    0 : AlertPolicy_Condition_Condition.notSet
+  static const $core.Map<$core.int, AlertPolicy_Condition_Condition>
+      _AlertPolicy_Condition_ConditionByTag = {
+    1: AlertPolicy_Condition_Condition.conditionThreshold,
+    2: AlertPolicy_Condition_Condition.conditionAbsent,
+    19: AlertPolicy_Condition_Condition.conditionMonitoringQueryLanguage,
+    20: AlertPolicy_Condition_Condition.conditionMatchedLog,
+    21: AlertPolicy_Condition_Condition.conditionPrometheusQueryLanguage,
+    0: AlertPolicy_Condition_Condition.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.Condition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 19, 20, 21])
-    ..aOM<AlertPolicy_Condition_MetricThreshold>(1, _omitFieldNames ? '' : 'conditionThreshold', subBuilder: AlertPolicy_Condition_MetricThreshold.create)
-    ..aOM<AlertPolicy_Condition_MetricAbsence>(2, _omitFieldNames ? '' : 'conditionAbsent', subBuilder: AlertPolicy_Condition_MetricAbsence.create)
+    ..aOM<AlertPolicy_Condition_MetricThreshold>(
+        1, _omitFieldNames ? '' : 'conditionThreshold',
+        subBuilder: AlertPolicy_Condition_MetricThreshold.create)
+    ..aOM<AlertPolicy_Condition_MetricAbsence>(
+        2, _omitFieldNames ? '' : 'conditionAbsent',
+        subBuilder: AlertPolicy_Condition_MetricAbsence.create)
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..aOS(12, _omitFieldNames ? '' : 'name')
-    ..aOM<AlertPolicy_Condition_MonitoringQueryLanguageCondition>(19, _omitFieldNames ? '' : 'conditionMonitoringQueryLanguage', subBuilder: AlertPolicy_Condition_MonitoringQueryLanguageCondition.create)
-    ..aOM<AlertPolicy_Condition_LogMatch>(20, _omitFieldNames ? '' : 'conditionMatchedLog', subBuilder: AlertPolicy_Condition_LogMatch.create)
-    ..aOM<AlertPolicy_Condition_PrometheusQueryLanguageCondition>(21, _omitFieldNames ? '' : 'conditionPrometheusQueryLanguage', subBuilder: AlertPolicy_Condition_PrometheusQueryLanguageCondition.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<AlertPolicy_Condition_MonitoringQueryLanguageCondition>(
+        19, _omitFieldNames ? '' : 'conditionMonitoringQueryLanguage',
+        subBuilder:
+            AlertPolicy_Condition_MonitoringQueryLanguageCondition.create)
+    ..aOM<AlertPolicy_Condition_LogMatch>(
+        20, _omitFieldNames ? '' : 'conditionMatchedLog',
+        subBuilder: AlertPolicy_Condition_LogMatch.create)
+    ..aOM<AlertPolicy_Condition_PrometheusQueryLanguageCondition>(
+        21, _omitFieldNames ? '' : 'conditionPrometheusQueryLanguage',
+        subBuilder:
+            AlertPolicy_Condition_PrometheusQueryLanguageCondition.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition clone() => AlertPolicy_Condition()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_Condition copyWith(void Function(AlertPolicy_Condition) updates) => super.copyWith((message) => updates(message as AlertPolicy_Condition)) as AlertPolicy_Condition;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition clone() =>
+      AlertPolicy_Condition()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition copyWith(
+          void Function(AlertPolicy_Condition) updates) =>
+      super.copyWith((message) => updates(message as AlertPolicy_Condition))
+          as AlertPolicy_Condition;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlertPolicy_Condition create() => AlertPolicy_Condition._();
   AlertPolicy_Condition createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_Condition> createRepeated() => $pb.PbList<AlertPolicy_Condition>();
+  static $pb.PbList<AlertPolicy_Condition> createRepeated() =>
+      $pb.PbList<AlertPolicy_Condition>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_Condition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition>(create);
+  static AlertPolicy_Condition getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition>(create);
   static AlertPolicy_Condition? _defaultInstance;
 
-  AlertPolicy_Condition_Condition whichCondition() => _AlertPolicy_Condition_ConditionByTag[$_whichOneof(0)]!;
+  AlertPolicy_Condition_Condition whichCondition() =>
+      _AlertPolicy_Condition_ConditionByTag[$_whichOneof(0)]!;
   void clearCondition() => clearField($_whichOneof(0));
 
   /// A condition that compares a time series against a threshold.
   @$pb.TagNumber(1)
   AlertPolicy_Condition_MetricThreshold get conditionThreshold => $_getN(0);
   @$pb.TagNumber(1)
-  set conditionThreshold(AlertPolicy_Condition_MetricThreshold v) { setField(1, v); }
+  set conditionThreshold(AlertPolicy_Condition_MetricThreshold v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConditionThreshold() => $_has(0);
   @$pb.TagNumber(1)
   void clearConditionThreshold() => clearField(1);
   @$pb.TagNumber(1)
-  AlertPolicy_Condition_MetricThreshold ensureConditionThreshold() => $_ensure(0);
+  AlertPolicy_Condition_MetricThreshold ensureConditionThreshold() =>
+      $_ensure(0);
 
   /// A condition that checks that a time series continues to
   /// receive new data points.
   @$pb.TagNumber(2)
   AlertPolicy_Condition_MetricAbsence get conditionAbsent => $_getN(1);
   @$pb.TagNumber(2)
-  set conditionAbsent(AlertPolicy_Condition_MetricAbsence v) { setField(2, v); }
+  set conditionAbsent(AlertPolicy_Condition_MetricAbsence v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConditionAbsent() => $_has(1);
   @$pb.TagNumber(2)
@@ -1238,7 +1559,10 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(6)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(6)
@@ -1272,7 +1596,10 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get name => $_getSZ(3);
   @$pb.TagNumber(12)
-  set name($core.String v) { $_setString(3, v); }
+  set name($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(12)
@@ -1281,22 +1608,31 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
   /// A condition that uses the Monitoring Query Language to define
   /// alerts.
   @$pb.TagNumber(19)
-  AlertPolicy_Condition_MonitoringQueryLanguageCondition get conditionMonitoringQueryLanguage => $_getN(4);
+  AlertPolicy_Condition_MonitoringQueryLanguageCondition
+      get conditionMonitoringQueryLanguage => $_getN(4);
   @$pb.TagNumber(19)
-  set conditionMonitoringQueryLanguage(AlertPolicy_Condition_MonitoringQueryLanguageCondition v) { setField(19, v); }
+  set conditionMonitoringQueryLanguage(
+      AlertPolicy_Condition_MonitoringQueryLanguageCondition v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasConditionMonitoringQueryLanguage() => $_has(4);
   @$pb.TagNumber(19)
   void clearConditionMonitoringQueryLanguage() => clearField(19);
   @$pb.TagNumber(19)
-  AlertPolicy_Condition_MonitoringQueryLanguageCondition ensureConditionMonitoringQueryLanguage() => $_ensure(4);
+  AlertPolicy_Condition_MonitoringQueryLanguageCondition
+      ensureConditionMonitoringQueryLanguage() => $_ensure(4);
 
   /// A condition that checks for log messages matching given constraints. If
   /// set, no other conditions can be present.
   @$pb.TagNumber(20)
   AlertPolicy_Condition_LogMatch get conditionMatchedLog => $_getN(5);
   @$pb.TagNumber(20)
-  set conditionMatchedLog(AlertPolicy_Condition_LogMatch v) { setField(20, v); }
+  set conditionMatchedLog(AlertPolicy_Condition_LogMatch v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasConditionMatchedLog() => $_has(5);
   @$pb.TagNumber(20)
@@ -1306,20 +1642,27 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
 
   /// A condition that uses the Prometheus query language to define alerts.
   @$pb.TagNumber(21)
-  AlertPolicy_Condition_PrometheusQueryLanguageCondition get conditionPrometheusQueryLanguage => $_getN(6);
+  AlertPolicy_Condition_PrometheusQueryLanguageCondition
+      get conditionPrometheusQueryLanguage => $_getN(6);
   @$pb.TagNumber(21)
-  set conditionPrometheusQueryLanguage(AlertPolicy_Condition_PrometheusQueryLanguageCondition v) { setField(21, v); }
+  set conditionPrometheusQueryLanguage(
+      AlertPolicy_Condition_PrometheusQueryLanguageCondition v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasConditionPrometheusQueryLanguage() => $_has(6);
   @$pb.TagNumber(21)
   void clearConditionPrometheusQueryLanguage() => clearField(21);
   @$pb.TagNumber(21)
-  AlertPolicy_Condition_PrometheusQueryLanguageCondition ensureConditionPrometheusQueryLanguage() => $_ensure(6);
+  AlertPolicy_Condition_PrometheusQueryLanguageCondition
+      ensureConditionPrometheusQueryLanguage() => $_ensure(6);
 }
 
 /// Control over the rate of notifications sent to this alert policy's
 /// notification channels.
-class AlertPolicy_AlertStrategy_NotificationRateLimit extends $pb.GeneratedMessage {
+class AlertPolicy_AlertStrategy_NotificationRateLimit
+    extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy_NotificationRateLimit({
     $264.Duration? period,
   }) {
@@ -1330,40 +1673,65 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit extends $pb.GeneratedMessa
     return $result;
   }
   AlertPolicy_AlertStrategy_NotificationRateLimit._() : super();
-  factory AlertPolicy_AlertStrategy_NotificationRateLimit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_AlertStrategy_NotificationRateLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_AlertStrategy_NotificationRateLimit.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_AlertStrategy_NotificationRateLimit.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.AlertStrategy.NotificationRateLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'period', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AlertPolicy.AlertStrategy.NotificationRateLimit',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'period',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_AlertStrategy_NotificationRateLimit clone() => AlertPolicy_AlertStrategy_NotificationRateLimit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_AlertStrategy_NotificationRateLimit copyWith(void Function(AlertPolicy_AlertStrategy_NotificationRateLimit) updates) => super.copyWith((message) => updates(message as AlertPolicy_AlertStrategy_NotificationRateLimit)) as AlertPolicy_AlertStrategy_NotificationRateLimit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_AlertStrategy_NotificationRateLimit clone() =>
+      AlertPolicy_AlertStrategy_NotificationRateLimit()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_AlertStrategy_NotificationRateLimit copyWith(
+          void Function(AlertPolicy_AlertStrategy_NotificationRateLimit)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AlertPolicy_AlertStrategy_NotificationRateLimit))
+          as AlertPolicy_AlertStrategy_NotificationRateLimit;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_AlertStrategy_NotificationRateLimit create() => AlertPolicy_AlertStrategy_NotificationRateLimit._();
-  AlertPolicy_AlertStrategy_NotificationRateLimit createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_AlertStrategy_NotificationRateLimit> createRepeated() => $pb.PbList<AlertPolicy_AlertStrategy_NotificationRateLimit>();
+  static AlertPolicy_AlertStrategy_NotificationRateLimit create() =>
+      AlertPolicy_AlertStrategy_NotificationRateLimit._();
+  AlertPolicy_AlertStrategy_NotificationRateLimit createEmptyInstance() =>
+      create();
+  static $pb.PbList<AlertPolicy_AlertStrategy_NotificationRateLimit>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_AlertStrategy_NotificationRateLimit>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_AlertStrategy_NotificationRateLimit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_AlertStrategy_NotificationRateLimit>(create);
+  static AlertPolicy_AlertStrategy_NotificationRateLimit getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_AlertStrategy_NotificationRateLimit>(create);
   static AlertPolicy_AlertStrategy_NotificationRateLimit? _defaultInstance;
 
   /// Not more than one notification per `period`.
   @$pb.TagNumber(1)
   $264.Duration get period => $_getN(0);
   @$pb.TagNumber(1)
-  set period($264.Duration v) { setField(1, v); }
+  set period($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPeriod() => $_has(0);
   @$pb.TagNumber(1)
@@ -1374,7 +1742,8 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit extends $pb.GeneratedMessa
 
 /// Control over how the notification channels in `notification_channels`
 /// are notified when this alert fires, on a per-channel basis.
-class AlertPolicy_AlertStrategy_NotificationChannelStrategy extends $pb.GeneratedMessage {
+class AlertPolicy_AlertStrategy_NotificationChannelStrategy
+    extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy_NotificationChannelStrategy({
     $core.Iterable<$core.String>? notificationChannelNames,
     $264.Duration? renotifyInterval,
@@ -1389,35 +1758,59 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy extends $pb.Generate
     return $result;
   }
   AlertPolicy_AlertStrategy_NotificationChannelStrategy._() : super();
-  factory AlertPolicy_AlertStrategy_NotificationChannelStrategy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_AlertStrategy_NotificationChannelStrategy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_AlertStrategy_NotificationChannelStrategy.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_AlertStrategy_NotificationChannelStrategy.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.AlertStrategy.NotificationChannelStrategy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AlertPolicy.AlertStrategy.NotificationChannelStrategy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'notificationChannelNames')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'renotifyInterval', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'renotifyInterval',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_AlertStrategy_NotificationChannelStrategy clone() => AlertPolicy_AlertStrategy_NotificationChannelStrategy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_AlertStrategy_NotificationChannelStrategy copyWith(void Function(AlertPolicy_AlertStrategy_NotificationChannelStrategy) updates) => super.copyWith((message) => updates(message as AlertPolicy_AlertStrategy_NotificationChannelStrategy)) as AlertPolicy_AlertStrategy_NotificationChannelStrategy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_AlertStrategy_NotificationChannelStrategy clone() =>
+      AlertPolicy_AlertStrategy_NotificationChannelStrategy()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_AlertStrategy_NotificationChannelStrategy copyWith(
+          void Function(AlertPolicy_AlertStrategy_NotificationChannelStrategy)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AlertPolicy_AlertStrategy_NotificationChannelStrategy))
+          as AlertPolicy_AlertStrategy_NotificationChannelStrategy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_AlertStrategy_NotificationChannelStrategy create() => AlertPolicy_AlertStrategy_NotificationChannelStrategy._();
-  AlertPolicy_AlertStrategy_NotificationChannelStrategy createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_AlertStrategy_NotificationChannelStrategy> createRepeated() => $pb.PbList<AlertPolicy_AlertStrategy_NotificationChannelStrategy>();
+  static AlertPolicy_AlertStrategy_NotificationChannelStrategy create() =>
+      AlertPolicy_AlertStrategy_NotificationChannelStrategy._();
+  AlertPolicy_AlertStrategy_NotificationChannelStrategy createEmptyInstance() =>
+      create();
+  static $pb.PbList<AlertPolicy_AlertStrategy_NotificationChannelStrategy>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_AlertStrategy_NotificationChannelStrategy>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_AlertStrategy_NotificationChannelStrategy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_AlertStrategy_NotificationChannelStrategy>(create);
-  static AlertPolicy_AlertStrategy_NotificationChannelStrategy? _defaultInstance;
+  static AlertPolicy_AlertStrategy_NotificationChannelStrategy getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_AlertStrategy_NotificationChannelStrategy>(create);
+  static AlertPolicy_AlertStrategy_NotificationChannelStrategy?
+      _defaultInstance;
 
   ///  The full REST resource name for the notification channels that these
   ///  settings apply to. Each of these correspond to the name field in one
@@ -1434,7 +1827,10 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy extends $pb.Generate
   @$pb.TagNumber(2)
   $264.Duration get renotifyInterval => $_getN(1);
   @$pb.TagNumber(2)
-  set renotifyInterval($264.Duration v) { setField(2, v); }
+  set renotifyInterval($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRenotifyInterval() => $_has(1);
   @$pb.TagNumber(2)
@@ -1449,7 +1845,8 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy({
     AlertPolicy_AlertStrategy_NotificationRateLimit? notificationRateLimit,
     $264.Duration? autoClose,
-    $core.Iterable<AlertPolicy_AlertStrategy_NotificationChannelStrategy>? notificationChannelStrategy,
+    $core.Iterable<AlertPolicy_AlertStrategy_NotificationChannelStrategy>?
+        notificationChannelStrategy,
   }) {
     final $result = create();
     if (notificationRateLimit != null) {
@@ -1464,57 +1861,84 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy_AlertStrategy._() : super();
-  factory AlertPolicy_AlertStrategy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy_AlertStrategy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy_AlertStrategy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_AlertStrategy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy.AlertStrategy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<AlertPolicy_AlertStrategy_NotificationRateLimit>(1, _omitFieldNames ? '' : 'notificationRateLimit', subBuilder: AlertPolicy_AlertStrategy_NotificationRateLimit.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'autoClose', subBuilder: $264.Duration.create)
-    ..pc<AlertPolicy_AlertStrategy_NotificationChannelStrategy>(4, _omitFieldNames ? '' : 'notificationChannelStrategy', $pb.PbFieldType.PM, subBuilder: AlertPolicy_AlertStrategy_NotificationChannelStrategy.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.AlertStrategy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<AlertPolicy_AlertStrategy_NotificationRateLimit>(
+        1, _omitFieldNames ? '' : 'notificationRateLimit',
+        subBuilder: AlertPolicy_AlertStrategy_NotificationRateLimit.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'autoClose',
+        subBuilder: $264.Duration.create)
+    ..pc<AlertPolicy_AlertStrategy_NotificationChannelStrategy>(
+        4,
+        _omitFieldNames ? '' : 'notificationChannelStrategy',
+        $pb.PbFieldType.PM,
+        subBuilder:
+            AlertPolicy_AlertStrategy_NotificationChannelStrategy.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_AlertStrategy clone() => AlertPolicy_AlertStrategy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy_AlertStrategy copyWith(void Function(AlertPolicy_AlertStrategy) updates) => super.copyWith((message) => updates(message as AlertPolicy_AlertStrategy)) as AlertPolicy_AlertStrategy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_AlertStrategy clone() =>
+      AlertPolicy_AlertStrategy()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_AlertStrategy copyWith(
+          void Function(AlertPolicy_AlertStrategy) updates) =>
+      super.copyWith((message) => updates(message as AlertPolicy_AlertStrategy))
+          as AlertPolicy_AlertStrategy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlertPolicy_AlertStrategy create() => AlertPolicy_AlertStrategy._();
   AlertPolicy_AlertStrategy createEmptyInstance() => create();
-  static $pb.PbList<AlertPolicy_AlertStrategy> createRepeated() => $pb.PbList<AlertPolicy_AlertStrategy>();
+  static $pb.PbList<AlertPolicy_AlertStrategy> createRepeated() =>
+      $pb.PbList<AlertPolicy_AlertStrategy>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy_AlertStrategy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy_AlertStrategy>(create);
+  static AlertPolicy_AlertStrategy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy_AlertStrategy>(create);
   static AlertPolicy_AlertStrategy? _defaultInstance;
 
   ///  Required for alert policies with a `LogMatch` condition.
   ///
   ///  This limit is not implemented for alert policies that are not log-based.
   @$pb.TagNumber(1)
-  AlertPolicy_AlertStrategy_NotificationRateLimit get notificationRateLimit => $_getN(0);
+  AlertPolicy_AlertStrategy_NotificationRateLimit get notificationRateLimit =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set notificationRateLimit(AlertPolicy_AlertStrategy_NotificationRateLimit v) { setField(1, v); }
+  set notificationRateLimit(AlertPolicy_AlertStrategy_NotificationRateLimit v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasNotificationRateLimit() => $_has(0);
   @$pb.TagNumber(1)
   void clearNotificationRateLimit() => clearField(1);
   @$pb.TagNumber(1)
-  AlertPolicy_AlertStrategy_NotificationRateLimit ensureNotificationRateLimit() => $_ensure(0);
+  AlertPolicy_AlertStrategy_NotificationRateLimit
+      ensureNotificationRateLimit() => $_ensure(0);
 
   /// If an alert policy that was active has no data for this long, any open
   /// incidents will close
   @$pb.TagNumber(3)
   $264.Duration get autoClose => $_getN(1);
   @$pb.TagNumber(3)
-  set autoClose($264.Duration v) { setField(3, v); }
+  set autoClose($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAutoClose() => $_has(1);
   @$pb.TagNumber(3)
@@ -1524,7 +1948,8 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
 
   /// Control how notifications will be sent out, on a per-channel basis.
   @$pb.TagNumber(4)
-  $core.List<AlertPolicy_AlertStrategy_NotificationChannelStrategy> get notificationChannelStrategy => $_getList(2);
+  $core.List<AlertPolicy_AlertStrategy_NotificationChannelStrategy>
+      get notificationChannelStrategy => $_getList(2);
 }
 
 ///  A description of the conditions under which some aspect of your system is
@@ -1590,36 +2015,63 @@ class AlertPolicy extends $pb.GeneratedMessage {
     return $result;
   }
   AlertPolicy._() : super();
-  factory AlertPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AlertPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AlertPolicy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlertPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<AlertPolicy_ConditionCombinerType>(6, _omitFieldNames ? '' : 'combiner', $pb.PbFieldType.OE, defaultOrMaker: AlertPolicy_ConditionCombinerType.COMBINE_UNSPECIFIED, valueOf: AlertPolicy_ConditionCombinerType.valueOf, enumValues: AlertPolicy_ConditionCombinerType.values)
-    ..aOM<$530.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord', subBuilder: $530.MutationRecord.create)
-    ..aOM<$530.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord', subBuilder: $530.MutationRecord.create)
-    ..pc<AlertPolicy_Condition>(12, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: AlertPolicy_Condition.create)
-    ..aOM<AlertPolicy_Documentation>(13, _omitFieldNames ? '' : 'documentation', subBuilder: AlertPolicy_Documentation.create)
+    ..e<AlertPolicy_ConditionCombinerType>(
+        6, _omitFieldNames ? '' : 'combiner', $pb.PbFieldType.OE,
+        defaultOrMaker: AlertPolicy_ConditionCombinerType.COMBINE_UNSPECIFIED,
+        valueOf: AlertPolicy_ConditionCombinerType.valueOf,
+        enumValues: AlertPolicy_ConditionCombinerType.values)
+    ..aOM<$530.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord',
+        subBuilder: $530.MutationRecord.create)
+    ..aOM<$530.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord',
+        subBuilder: $530.MutationRecord.create)
+    ..pc<AlertPolicy_Condition>(
+        12, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM,
+        subBuilder: AlertPolicy_Condition.create)
+    ..aOM<AlertPolicy_Documentation>(13, _omitFieldNames ? '' : 'documentation',
+        subBuilder: AlertPolicy_Documentation.create)
     ..pPS(14, _omitFieldNames ? '' : 'notificationChannels')
-    ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'userLabels', entryClassName: 'AlertPolicy.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.v3'))
-    ..aOM<$307.BoolValue>(17, _omitFieldNames ? '' : 'enabled', subBuilder: $307.BoolValue.create)
-    ..aOM<$322.Status>(18, _omitFieldNames ? '' : 'validity', subBuilder: $322.Status.create)
-    ..aOM<AlertPolicy_AlertStrategy>(21, _omitFieldNames ? '' : 'alertStrategy', subBuilder: AlertPolicy_AlertStrategy.create)
-    ..e<AlertPolicy_Severity>(22, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: AlertPolicy_Severity.SEVERITY_UNSPECIFIED, valueOf: AlertPolicy_Severity.valueOf, enumValues: AlertPolicy_Severity.values)
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'userLabels',
+        entryClassName: 'AlertPolicy.UserLabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.monitoring.v3'))
+    ..aOM<$307.BoolValue>(17, _omitFieldNames ? '' : 'enabled',
+        subBuilder: $307.BoolValue.create)
+    ..aOM<$322.Status>(18, _omitFieldNames ? '' : 'validity',
+        subBuilder: $322.Status.create)
+    ..aOM<AlertPolicy_AlertStrategy>(21, _omitFieldNames ? '' : 'alertStrategy',
+        subBuilder: AlertPolicy_AlertStrategy.create)
+    ..e<AlertPolicy_Severity>(
+        22, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
+        defaultOrMaker: AlertPolicy_Severity.SEVERITY_UNSPECIFIED,
+        valueOf: AlertPolicy_Severity.valueOf,
+        enumValues: AlertPolicy_Severity.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AlertPolicy clone() => AlertPolicy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AlertPolicy copyWith(void Function(AlertPolicy) updates) => super.copyWith((message) => updates(message as AlertPolicy)) as AlertPolicy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy copyWith(void Function(AlertPolicy) updates) =>
+      super.copyWith((message) => updates(message as AlertPolicy))
+          as AlertPolicy;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1628,7 +2080,8 @@ class AlertPolicy extends $pb.GeneratedMessage {
   AlertPolicy createEmptyInstance() => create();
   static $pb.PbList<AlertPolicy> createRepeated() => $pb.PbList<AlertPolicy>();
   @$core.pragma('dart2js:noInline')
-  static AlertPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlertPolicy>(create);
+  static AlertPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy>(create);
   static AlertPolicy? _defaultInstance;
 
   ///  Required if the policy exists. The resource name for this policy. The
@@ -1644,7 +2097,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1663,7 +2119,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1676,7 +2135,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   AlertPolicy_ConditionCombinerType get combiner => $_getN(2);
   @$pb.TagNumber(6)
-  set combiner(AlertPolicy_ConditionCombinerType v) { setField(6, v); }
+  set combiner(AlertPolicy_ConditionCombinerType v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCombiner() => $_has(2);
   @$pb.TagNumber(6)
@@ -1687,7 +2149,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $530.MutationRecord get creationRecord => $_getN(3);
   @$pb.TagNumber(10)
-  set creationRecord($530.MutationRecord v) { setField(10, v); }
+  set creationRecord($530.MutationRecord v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCreationRecord() => $_has(3);
   @$pb.TagNumber(10)
@@ -1700,7 +2165,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $530.MutationRecord get mutationRecord => $_getN(4);
   @$pb.TagNumber(11)
-  set mutationRecord($530.MutationRecord v) { setField(11, v); }
+  set mutationRecord($530.MutationRecord v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasMutationRecord() => $_has(4);
   @$pb.TagNumber(11)
@@ -1727,7 +2195,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   AlertPolicy_Documentation get documentation => $_getN(6);
   @$pb.TagNumber(13)
-  set documentation(AlertPolicy_Documentation v) { setField(13, v); }
+  set documentation(AlertPolicy_Documentation v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasDocumentation() => $_has(6);
   @$pb.TagNumber(13)
@@ -1773,7 +2244,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $307.BoolValue get enabled => $_getN(9);
   @$pb.TagNumber(17)
-  set enabled($307.BoolValue v) { setField(17, v); }
+  set enabled($307.BoolValue v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasEnabled() => $_has(9);
   @$pb.TagNumber(17)
@@ -1787,7 +2261,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $322.Status get validity => $_getN(10);
   @$pb.TagNumber(18)
-  set validity($322.Status v) { setField(18, v); }
+  set validity($322.Status v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasValidity() => $_has(10);
   @$pb.TagNumber(18)
@@ -1799,7 +2276,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   AlertPolicy_AlertStrategy get alertStrategy => $_getN(11);
   @$pb.TagNumber(21)
-  set alertStrategy(AlertPolicy_AlertStrategy v) { setField(21, v); }
+  set alertStrategy(AlertPolicy_AlertStrategy v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasAlertStrategy() => $_has(11);
   @$pb.TagNumber(21)
@@ -1813,13 +2293,16 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   AlertPolicy_Severity get severity => $_getN(12);
   @$pb.TagNumber(22)
-  set severity(AlertPolicy_Severity v) { setField(22, v); }
+  set severity(AlertPolicy_Severity v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasSeverity() => $_has(12);
   @$pb.TagNumber(22)
   void clearSeverity() => clearField(22);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

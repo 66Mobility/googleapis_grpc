@@ -38,8 +38,8 @@ const ReadResponse$json = {
 };
 
 /// Descriptor for `ReadResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List readResponseDescriptor = $convert.base64Decode(
-    'CgxSZWFkUmVzcG9uc2USEgoEZGF0YRgKIAEoDFIEZGF0YQ==');
+final $typed_data.Uint8List readResponseDescriptor =
+    $convert.base64Decode('CgxSZWFkUmVzcG9uc2USEgoEZGF0YRgKIAEoDFIEZGF0YQ==');
 
 @$core.Deprecated('Use writeRequestDescriptor instead')
 const WriteRequest$json = {
@@ -79,9 +79,10 @@ const QueryWriteStatusRequest$json = {
 };
 
 /// Descriptor for `QueryWriteStatusRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List queryWriteStatusRequestDescriptor = $convert.base64Decode(
-    'ChdRdWVyeVdyaXRlU3RhdHVzUmVxdWVzdBIjCg1yZXNvdXJjZV9uYW1lGAEgASgJUgxyZXNvdX'
-    'JjZU5hbWU=');
+final $typed_data.Uint8List queryWriteStatusRequestDescriptor =
+    $convert.base64Decode(
+        'ChdRdWVyeVdyaXRlU3RhdHVzUmVxdWVzdBIjCg1yZXNvdXJjZV9uYW1lGAEgASgJUgxyZXNvdX'
+        'JjZU5hbWU=');
 
 @$core.Deprecated('Use queryWriteStatusResponseDescriptor instead')
 const QueryWriteStatusResponse$json = {
@@ -93,7 +94,7 @@ const QueryWriteStatusResponse$json = {
 };
 
 /// Descriptor for `QueryWriteStatusResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List queryWriteStatusResponseDescriptor = $convert.base64Decode(
-    'ChhRdWVyeVdyaXRlU3RhdHVzUmVzcG9uc2USJQoOY29tbWl0dGVkX3NpemUYASABKANSDWNvbW'
-    '1pdHRlZFNpemUSGgoIY29tcGxldGUYAiABKAhSCGNvbXBsZXRl');
-
+final $typed_data.Uint8List queryWriteStatusResponseDescriptor =
+    $convert.base64Decode(
+        'ChhRdWVyeVdyaXRlU3RhdHVzUmVzcG9uc2USJQoOY29tbWl0dGVkX3NpemUYASABKANSDWNvbW'
+        '1pdHRlZFNpemUSGgoIY29tcGxldGUYAiABKAhSCGNvbXBsZXRl');

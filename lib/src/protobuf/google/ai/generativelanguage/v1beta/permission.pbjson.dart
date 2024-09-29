@@ -18,9 +18,38 @@ const Permission$json = {
   '1': 'Permission',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'grantee_type', '3': 2, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.Permission.GranteeType', '8': {}, '9': 0, '10': 'granteeType', '17': true},
-    {'1': 'email_address', '3': 3, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'emailAddress', '17': true},
-    {'1': 'role', '3': 4, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.Permission.Role', '8': {}, '9': 2, '10': 'role', '17': true},
+    {
+      '1': 'grantee_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.Permission.GranteeType',
+      '8': {},
+      '9': 0,
+      '10': 'granteeType',
+      '17': true
+    },
+    {
+      '1': 'email_address',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'emailAddress',
+      '17': true
+    },
+    {
+      '1': 'role',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.Permission.Role',
+      '8': {},
+      '9': 2,
+      '10': 'role',
+      '17': true
+    },
   ],
   '4': [Permission_GranteeType$json, Permission_Role$json],
   '7': {},
@@ -67,4 +96,3 @@ final $typed_data.Uint8List permissionDescriptor = $convert.base64Decode(
     'VkX21vZGVsfS9wZXJtaXNzaW9ucy97cGVybWlzc2lvbn0SKWNvcnBvcmEve2NvcnB1c30vcGVy'
     'bWlzc2lvbnMve3Blcm1pc3Npb259KgtwZXJtaXNzaW9uczIKcGVybWlzc2lvbkIPCg1fZ3Jhbn'
     'RlZV90eXBlQhAKDl9lbWFpbF9hZGRyZXNzQgcKBV9yb2xl');
-

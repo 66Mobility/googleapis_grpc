@@ -26,4 +26,3 @@ const LocalizedText$json = {
 final $typed_data.Uint8List localizedTextDescriptor = $convert.base64Decode(
     'Cg1Mb2NhbGl6ZWRUZXh0EhIKBHRleHQYASABKAlSBHRleHQSIwoNbGFuZ3VhZ2VfY29kZRgCIA'
     'EoCVIMbGFuZ3VhZ2VDb2Rl');
-

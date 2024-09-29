@@ -20,27 +20,168 @@ const Label$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'id'},
     {'1': 'revision_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'revisionId'},
-    {'1': 'label_type', '3': 4, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.Label.LabelType', '8': {}, '10': 'labelType'},
-    {'1': 'creator', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.UserInfo', '8': {}, '10': 'creator'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'revision_creator', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.UserInfo', '8': {}, '10': 'revisionCreator'},
-    {'1': 'revision_create_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'revisionCreateTime'},
-    {'1': 'publisher', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.UserInfo', '8': {}, '10': 'publisher'},
-    {'1': 'publish_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'publishTime'},
-    {'1': 'disabler', '3': 11, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.UserInfo', '8': {}, '10': 'disabler'},
-    {'1': 'disable_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'disableTime'},
+    {
+      '1': 'label_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.Label.LabelType',
+      '8': {},
+      '10': 'labelType'
+    },
+    {
+      '1': 'creator',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.UserInfo',
+      '8': {},
+      '10': 'creator'
+    },
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'revision_creator',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.UserInfo',
+      '8': {},
+      '10': 'revisionCreator'
+    },
+    {
+      '1': 'revision_create_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'revisionCreateTime'
+    },
+    {
+      '1': 'publisher',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.UserInfo',
+      '8': {},
+      '10': 'publisher'
+    },
+    {
+      '1': 'publish_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'publishTime'
+    },
+    {
+      '1': 'disabler',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.UserInfo',
+      '8': {},
+      '10': 'disabler'
+    },
+    {
+      '1': 'disable_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'disableTime'
+    },
     {'1': 'customer', '3': 13, '4': 1, '5': 9, '8': {}, '10': 'customer'},
-    {'1': 'properties', '3': 14, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label.Properties', '8': {}, '10': 'properties'},
-    {'1': 'lifecycle', '3': 15, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Lifecycle', '8': {}, '10': 'lifecycle'},
-    {'1': 'display_hints', '3': 16, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label.DisplayHints', '8': {}, '10': 'displayHints'},
-    {'1': 'applied_capabilities', '3': 17, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label.AppliedCapabilities', '8': {}, '10': 'appliedCapabilities'},
-    {'1': 'schema_capabilities', '3': 18, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label.SchemaCapabilities', '8': {}, '10': 'schemaCapabilities'},
-    {'1': 'applied_label_policy', '3': 19, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.Label.AppliedLabelPolicy', '8': {}, '10': 'appliedLabelPolicy'},
-    {'1': 'fields', '3': 20, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2.Field', '10': 'fields'},
+    {
+      '1': 'properties',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label.Properties',
+      '8': {},
+      '10': 'properties'
+    },
+    {
+      '1': 'lifecycle',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Lifecycle',
+      '8': {},
+      '10': 'lifecycle'
+    },
+    {
+      '1': 'display_hints',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label.DisplayHints',
+      '8': {},
+      '10': 'displayHints'
+    },
+    {
+      '1': 'applied_capabilities',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label.AppliedCapabilities',
+      '8': {},
+      '10': 'appliedCapabilities'
+    },
+    {
+      '1': 'schema_capabilities',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label.SchemaCapabilities',
+      '8': {},
+      '10': 'schemaCapabilities'
+    },
+    {
+      '1': 'applied_label_policy',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Label.AppliedLabelPolicy',
+      '8': {},
+      '10': 'appliedLabelPolicy'
+    },
+    {
+      '1': 'fields',
+      '3': 20,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.Field',
+      '10': 'fields'
+    },
     {'1': 'learn_more_uri', '3': 21, '4': 1, '5': 9, '10': 'learnMoreUri'},
-    {'1': 'lock_status', '3': 22, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2.LockStatus', '8': {}, '10': 'lockStatus'},
+    {
+      '1': 'lock_status',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2.LockStatus',
+      '8': {},
+      '10': 'lockStatus'
+    },
   ],
-  '3': [Label_Properties$json, Label_DisplayHints$json, Label_AppliedCapabilities$json, Label_SchemaCapabilities$json, Label_AppliedLabelPolicy$json],
+  '3': [
+    Label_Properties$json,
+    Label_DisplayHints$json,
+    Label_AppliedCapabilities$json,
+    Label_SchemaCapabilities$json,
+    Label_AppliedLabelPolicy$json
+  ],
   '4': [Label_LabelType$json],
   '7': {},
 };
@@ -90,7 +231,14 @@ const Label_SchemaCapabilities$json = {
 const Label_AppliedLabelPolicy$json = {
   '1': 'AppliedLabelPolicy',
   '2': [
-    {'1': 'copy_mode', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2.Label.AppliedLabelPolicy.CopyMode', '10': 'copyMode'},
+    {
+      '1': 'copy_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2.Label.AppliedLabelPolicy.CopyMode',
+      '10': 'copyMode'
+    },
   ],
   '4': [Label_AppliedLabelPolicy_CopyMode$json],
 };
@@ -163,4 +311,3 @@ final $typed_data.Uint8List labelDescriptor = $convert.base64Decode(
     '9QWV9BUFBMSUFCTEUQAyJOCglMYWJlbFR5cGUSGgoWTEFCRUxfVFlQRV9VTlNQRUNJRklFRBAA'
     'EgoKBlNIQVJFRBABEgkKBUFETUlOEAISDgoKR09PR0xFX0FQUBADOjLqQS8KIGRyaXZlbGFiZW'
     'xzLmdvb2dsZWFwaXMuY29tL0xhYmVsEgtsYWJlbHMve2lkfQ==');
-

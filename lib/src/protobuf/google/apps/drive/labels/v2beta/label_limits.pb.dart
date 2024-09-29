@@ -53,30 +53,42 @@ class LabelLimits extends $pb.GeneratedMessage {
     return $result;
   }
   LabelLimits._() : super();
-  factory LabelLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LabelLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LabelLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LabelLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LabelLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'maxTitleLength', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'maxDescriptionLength', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'maxTitleLength', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'maxDescriptionLength', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'maxFields', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'maxDeletedFields', $pb.PbFieldType.O3)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'maxDraftRevisions', $pb.PbFieldType.O3)
-    ..aOM<FieldLimits>(7, _omitFieldNames ? '' : 'fieldLimits', subBuilder: FieldLimits.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'maxDeletedFields', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        6, _omitFieldNames ? '' : 'maxDraftRevisions', $pb.PbFieldType.O3)
+    ..aOM<FieldLimits>(7, _omitFieldNames ? '' : 'fieldLimits',
+        subBuilder: FieldLimits.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LabelLimits clone() => LabelLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LabelLimits copyWith(void Function(LabelLimits) updates) => super.copyWith((message) => updates(message as LabelLimits)) as LabelLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LabelLimits copyWith(void Function(LabelLimits) updates) =>
+      super.copyWith((message) => updates(message as LabelLimits))
+          as LabelLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -85,14 +97,18 @@ class LabelLimits extends $pb.GeneratedMessage {
   LabelLimits createEmptyInstance() => create();
   static $pb.PbList<LabelLimits> createRepeated() => $pb.PbList<LabelLimits>();
   @$core.pragma('dart2js:noInline')
-  static LabelLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LabelLimits>(create);
+  static LabelLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LabelLimits>(create);
   static LabelLimits? _defaultInstance;
 
   /// Resource name.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -102,7 +118,10 @@ class LabelLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxTitleLength => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxTitleLength($core.int v) { $_setSignedInt32(1, v); }
+  set maxTitleLength($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxTitleLength() => $_has(1);
   @$pb.TagNumber(2)
@@ -112,7 +131,10 @@ class LabelLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxDescriptionLength => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxDescriptionLength($core.int v) { $_setSignedInt32(2, v); }
+  set maxDescriptionLength($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxDescriptionLength() => $_has(2);
   @$pb.TagNumber(3)
@@ -122,7 +144,10 @@ class LabelLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxFields => $_getIZ(3);
   @$pb.TagNumber(4)
-  set maxFields($core.int v) { $_setSignedInt32(3, v); }
+  set maxFields($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxFields() => $_has(3);
   @$pb.TagNumber(4)
@@ -132,7 +157,10 @@ class LabelLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxDeletedFields => $_getIZ(4);
   @$pb.TagNumber(5)
-  set maxDeletedFields($core.int v) { $_setSignedInt32(4, v); }
+  set maxDeletedFields($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaxDeletedFields() => $_has(4);
   @$pb.TagNumber(5)
@@ -143,7 +171,10 @@ class LabelLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get maxDraftRevisions => $_getIZ(5);
   @$pb.TagNumber(6)
-  set maxDraftRevisions($core.int v) { $_setSignedInt32(5, v); }
+  set maxDraftRevisions($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMaxDraftRevisions() => $_has(5);
   @$pb.TagNumber(6)
@@ -153,7 +184,10 @@ class LabelLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   FieldLimits get fieldLimits => $_getN(6);
   @$pb.TagNumber(7)
-  set fieldLimits(FieldLimits v) { setField(7, v); }
+  set fieldLimits(FieldLimits v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasFieldLimits() => $_has(6);
   @$pb.TagNumber(7)
@@ -207,32 +241,47 @@ class FieldLimits extends $pb.GeneratedMessage {
     return $result;
   }
   FieldLimits._() : super();
-  factory FieldLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FieldLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FieldLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FieldLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FieldLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FieldLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'maxIdLength', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'maxDisplayNameLength', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'maxDescriptionLength', $pb.PbFieldType.O3)
-    ..aOM<TextLimits>(4, _omitFieldNames ? '' : 'textLimits', subBuilder: TextLimits.create)
-    ..aOM<LongTextLimits>(5, _omitFieldNames ? '' : 'longTextLimits', subBuilder: LongTextLimits.create)
-    ..aOM<IntegerLimits>(6, _omitFieldNames ? '' : 'integerLimits', subBuilder: IntegerLimits.create)
-    ..aOM<DateLimits>(7, _omitFieldNames ? '' : 'dateLimits', subBuilder: DateLimits.create)
-    ..aOM<UserLimits>(8, _omitFieldNames ? '' : 'userLimits', subBuilder: UserLimits.create)
-    ..aOM<SelectionLimits>(9, _omitFieldNames ? '' : 'selectionLimits', subBuilder: SelectionLimits.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'maxDisplayNameLength', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'maxDescriptionLength', $pb.PbFieldType.O3)
+    ..aOM<TextLimits>(4, _omitFieldNames ? '' : 'textLimits',
+        subBuilder: TextLimits.create)
+    ..aOM<LongTextLimits>(5, _omitFieldNames ? '' : 'longTextLimits',
+        subBuilder: LongTextLimits.create)
+    ..aOM<IntegerLimits>(6, _omitFieldNames ? '' : 'integerLimits',
+        subBuilder: IntegerLimits.create)
+    ..aOM<DateLimits>(7, _omitFieldNames ? '' : 'dateLimits',
+        subBuilder: DateLimits.create)
+    ..aOM<UserLimits>(8, _omitFieldNames ? '' : 'userLimits',
+        subBuilder: UserLimits.create)
+    ..aOM<SelectionLimits>(9, _omitFieldNames ? '' : 'selectionLimits',
+        subBuilder: SelectionLimits.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FieldLimits clone() => FieldLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FieldLimits copyWith(void Function(FieldLimits) updates) => super.copyWith((message) => updates(message as FieldLimits)) as FieldLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FieldLimits copyWith(void Function(FieldLimits) updates) =>
+      super.copyWith((message) => updates(message as FieldLimits))
+          as FieldLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -241,14 +290,18 @@ class FieldLimits extends $pb.GeneratedMessage {
   FieldLimits createEmptyInstance() => create();
   static $pb.PbList<FieldLimits> createRepeated() => $pb.PbList<FieldLimits>();
   @$core.pragma('dart2js:noInline')
-  static FieldLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FieldLimits>(create);
+  static FieldLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FieldLimits>(create);
   static FieldLimits? _defaultInstance;
 
   /// Max length for the id.
   @$pb.TagNumber(1)
   $core.int get maxIdLength => $_getIZ(0);
   @$pb.TagNumber(1)
-  set maxIdLength($core.int v) { $_setSignedInt32(0, v); }
+  set maxIdLength($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxIdLength() => $_has(0);
   @$pb.TagNumber(1)
@@ -258,7 +311,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxDisplayNameLength => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxDisplayNameLength($core.int v) { $_setSignedInt32(1, v); }
+  set maxDisplayNameLength($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxDisplayNameLength() => $_has(1);
   @$pb.TagNumber(2)
@@ -268,7 +324,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxDescriptionLength => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxDescriptionLength($core.int v) { $_setSignedInt32(2, v); }
+  set maxDescriptionLength($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxDescriptionLength() => $_has(2);
   @$pb.TagNumber(3)
@@ -279,7 +338,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TextLimits get textLimits => $_getN(3);
   @$pb.TagNumber(4)
-  set textLimits(TextLimits v) { setField(4, v); }
+  set textLimits(TextLimits v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTextLimits() => $_has(3);
   @$pb.TagNumber(4)
@@ -291,7 +353,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   LongTextLimits get longTextLimits => $_getN(4);
   @$pb.TagNumber(5)
-  set longTextLimits(LongTextLimits v) { setField(5, v); }
+  set longTextLimits(LongTextLimits v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasLongTextLimits() => $_has(4);
   @$pb.TagNumber(5)
@@ -303,7 +368,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   IntegerLimits get integerLimits => $_getN(5);
   @$pb.TagNumber(6)
-  set integerLimits(IntegerLimits v) { setField(6, v); }
+  set integerLimits(IntegerLimits v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasIntegerLimits() => $_has(5);
   @$pb.TagNumber(6)
@@ -315,7 +383,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DateLimits get dateLimits => $_getN(6);
   @$pb.TagNumber(7)
-  set dateLimits(DateLimits v) { setField(7, v); }
+  set dateLimits(DateLimits v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDateLimits() => $_has(6);
   @$pb.TagNumber(7)
@@ -327,7 +398,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   UserLimits get userLimits => $_getN(7);
   @$pb.TagNumber(8)
-  set userLimits(UserLimits v) { setField(8, v); }
+  set userLimits(UserLimits v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasUserLimits() => $_has(7);
   @$pb.TagNumber(8)
@@ -339,7 +413,10 @@ class FieldLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   SelectionLimits get selectionLimits => $_getN(8);
   @$pb.TagNumber(9)
-  set selectionLimits(SelectionLimits v) { setField(9, v); }
+  set selectionLimits(SelectionLimits v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSelectionLimits() => $_has(8);
   @$pb.TagNumber(9)
@@ -360,24 +437,30 @@ class ListLimits extends $pb.GeneratedMessage {
     return $result;
   }
   ListLimits._() : super();
-  factory ListLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'maxEntries', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListLimits clone() => ListLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLimits copyWith(void Function(ListLimits) updates) => super.copyWith((message) => updates(message as ListLimits)) as ListLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLimits copyWith(void Function(ListLimits) updates) =>
+      super.copyWith((message) => updates(message as ListLimits)) as ListLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -386,14 +469,18 @@ class ListLimits extends $pb.GeneratedMessage {
   ListLimits createEmptyInstance() => create();
   static $pb.PbList<ListLimits> createRepeated() => $pb.PbList<ListLimits>();
   @$core.pragma('dart2js:noInline')
-  static ListLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLimits>(create);
+  static ListLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLimits>(create);
   static ListLimits? _defaultInstance;
 
   /// Maximum number of values allowed for the Field type.
   @$pb.TagNumber(1)
   $core.int get maxEntries => $_getIZ(0);
   @$pb.TagNumber(1)
-  set maxEntries($core.int v) { $_setSignedInt32(0, v); }
+  set maxEntries($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxEntries() => $_has(0);
   @$pb.TagNumber(1)
@@ -416,25 +503,31 @@ class TextLimits extends $pb.GeneratedMessage {
     return $result;
   }
   TextLimits._() : super();
-  factory TextLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TextLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TextLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TextLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TextLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'minLength', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxLength', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TextLimits clone() => TextLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TextLimits copyWith(void Function(TextLimits) updates) => super.copyWith((message) => updates(message as TextLimits)) as TextLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TextLimits copyWith(void Function(TextLimits) updates) =>
+      super.copyWith((message) => updates(message as TextLimits)) as TextLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -443,14 +536,18 @@ class TextLimits extends $pb.GeneratedMessage {
   TextLimits createEmptyInstance() => create();
   static $pb.PbList<TextLimits> createRepeated() => $pb.PbList<TextLimits>();
   @$core.pragma('dart2js:noInline')
-  static TextLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TextLimits>(create);
+  static TextLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TextLimits>(create);
   static TextLimits? _defaultInstance;
 
   /// Minimum length allowed for a text Field type.
   @$pb.TagNumber(1)
   $core.int get minLength => $_getIZ(0);
   @$pb.TagNumber(1)
-  set minLength($core.int v) { $_setSignedInt32(0, v); }
+  set minLength($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinLength() => $_has(0);
   @$pb.TagNumber(1)
@@ -460,7 +557,10 @@ class TextLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxLength => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxLength($core.int v) { $_setSignedInt32(1, v); }
+  set maxLength($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxLength() => $_has(1);
   @$pb.TagNumber(2)
@@ -483,41 +583,53 @@ class LongTextLimits extends $pb.GeneratedMessage {
     return $result;
   }
   LongTextLimits._() : super();
-  factory LongTextLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LongTextLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LongTextLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LongTextLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LongTextLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LongTextLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'minLength', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxLength', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LongTextLimits clone() => LongTextLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LongTextLimits copyWith(void Function(LongTextLimits) updates) => super.copyWith((message) => updates(message as LongTextLimits)) as LongTextLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LongTextLimits copyWith(void Function(LongTextLimits) updates) =>
+      super.copyWith((message) => updates(message as LongTextLimits))
+          as LongTextLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LongTextLimits create() => LongTextLimits._();
   LongTextLimits createEmptyInstance() => create();
-  static $pb.PbList<LongTextLimits> createRepeated() => $pb.PbList<LongTextLimits>();
+  static $pb.PbList<LongTextLimits> createRepeated() =>
+      $pb.PbList<LongTextLimits>();
   @$core.pragma('dart2js:noInline')
-  static LongTextLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LongTextLimits>(create);
+  static LongTextLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LongTextLimits>(create);
   static LongTextLimits? _defaultInstance;
 
   /// Minimum length allowed for a long text Field type.
   @$pb.TagNumber(1)
   $core.int get minLength => $_getIZ(0);
   @$pb.TagNumber(1)
-  set minLength($core.int v) { $_setSignedInt32(0, v); }
+  set minLength($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinLength() => $_has(0);
   @$pb.TagNumber(1)
@@ -527,7 +639,10 @@ class LongTextLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxLength => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxLength($core.int v) { $_setSignedInt32(1, v); }
+  set maxLength($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxLength() => $_has(1);
   @$pb.TagNumber(2)
@@ -550,41 +665,53 @@ class IntegerLimits extends $pb.GeneratedMessage {
     return $result;
   }
   IntegerLimits._() : super();
-  factory IntegerLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory IntegerLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory IntegerLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IntegerLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IntegerLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IntegerLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'minValue')
     ..aInt64(2, _omitFieldNames ? '' : 'maxValue')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   IntegerLimits clone() => IntegerLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  IntegerLimits copyWith(void Function(IntegerLimits) updates) => super.copyWith((message) => updates(message as IntegerLimits)) as IntegerLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IntegerLimits copyWith(void Function(IntegerLimits) updates) =>
+      super.copyWith((message) => updates(message as IntegerLimits))
+          as IntegerLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static IntegerLimits create() => IntegerLimits._();
   IntegerLimits createEmptyInstance() => create();
-  static $pb.PbList<IntegerLimits> createRepeated() => $pb.PbList<IntegerLimits>();
+  static $pb.PbList<IntegerLimits> createRepeated() =>
+      $pb.PbList<IntegerLimits>();
   @$core.pragma('dart2js:noInline')
-  static IntegerLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IntegerLimits>(create);
+  static IntegerLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IntegerLimits>(create);
   static IntegerLimits? _defaultInstance;
 
   /// Minimum value for an integer Field type.
   @$pb.TagNumber(1)
   $fixnum.Int64 get minValue => $_getI64(0);
   @$pb.TagNumber(1)
-  set minValue($fixnum.Int64 v) { $_setInt64(0, v); }
+  set minValue($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -594,7 +721,10 @@ class IntegerLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get maxValue => $_getI64(1);
   @$pb.TagNumber(2)
-  set maxValue($fixnum.Int64 v) { $_setInt64(1, v); }
+  set maxValue($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -617,25 +747,33 @@ class DateLimits extends $pb.GeneratedMessage {
     return $result;
   }
   DateLimits._() : super();
-  factory DateLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DateLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DateLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DateLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'minValue', subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'maxValue', subBuilder: $327.Date.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DateLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'minValue',
+        subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'maxValue',
+        subBuilder: $327.Date.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DateLimits clone() => DateLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DateLimits copyWith(void Function(DateLimits) updates) => super.copyWith((message) => updates(message as DateLimits)) as DateLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DateLimits copyWith(void Function(DateLimits) updates) =>
+      super.copyWith((message) => updates(message as DateLimits)) as DateLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -644,14 +782,18 @@ class DateLimits extends $pb.GeneratedMessage {
   DateLimits createEmptyInstance() => create();
   static $pb.PbList<DateLimits> createRepeated() => $pb.PbList<DateLimits>();
   @$core.pragma('dart2js:noInline')
-  static DateLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DateLimits>(create);
+  static DateLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DateLimits>(create);
   static DateLimits? _defaultInstance;
 
   /// Minimum value for the date Field type.
   @$pb.TagNumber(1)
   $327.Date get minValue => $_getN(0);
   @$pb.TagNumber(1)
-  set minValue($327.Date v) { setField(1, v); }
+  set minValue($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -663,7 +805,10 @@ class DateLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $327.Date get maxValue => $_getN(1);
   @$pb.TagNumber(2)
-  set maxValue($327.Date v) { setField(2, v); }
+  set maxValue($327.Date v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -700,44 +845,59 @@ class SelectionLimits extends $pb.GeneratedMessage {
     return $result;
   }
   SelectionLimits._() : super();
-  factory SelectionLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SelectionLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SelectionLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SelectionLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SelectionLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<ListLimits>(1, _omitFieldNames ? '' : 'listLimits', subBuilder: ListLimits.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SelectionLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
+    ..aOM<ListLimits>(1, _omitFieldNames ? '' : 'listLimits',
+        subBuilder: ListLimits.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxIdLength', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'maxDisplayNameLength', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'maxDisplayNameLength', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'maxChoices', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'maxDeletedChoices', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'maxDeletedChoices', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SelectionLimits clone() => SelectionLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SelectionLimits copyWith(void Function(SelectionLimits) updates) => super.copyWith((message) => updates(message as SelectionLimits)) as SelectionLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SelectionLimits copyWith(void Function(SelectionLimits) updates) =>
+      super.copyWith((message) => updates(message as SelectionLimits))
+          as SelectionLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SelectionLimits create() => SelectionLimits._();
   SelectionLimits createEmptyInstance() => create();
-  static $pb.PbList<SelectionLimits> createRepeated() => $pb.PbList<SelectionLimits>();
+  static $pb.PbList<SelectionLimits> createRepeated() =>
+      $pb.PbList<SelectionLimits>();
   @$core.pragma('dart2js:noInline')
-  static SelectionLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SelectionLimits>(create);
+  static SelectionLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SelectionLimits>(create);
   static SelectionLimits? _defaultInstance;
 
   /// Limits for list-variant of a Field type.
   @$pb.TagNumber(1)
   ListLimits get listLimits => $_getN(0);
   @$pb.TagNumber(1)
-  set listLimits(ListLimits v) { setField(1, v); }
+  set listLimits(ListLimits v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasListLimits() => $_has(0);
   @$pb.TagNumber(1)
@@ -749,7 +909,10 @@ class SelectionLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxIdLength => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxIdLength($core.int v) { $_setSignedInt32(1, v); }
+  set maxIdLength($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxIdLength() => $_has(1);
   @$pb.TagNumber(2)
@@ -759,7 +922,10 @@ class SelectionLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxDisplayNameLength => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxDisplayNameLength($core.int v) { $_setSignedInt32(2, v); }
+  set maxDisplayNameLength($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxDisplayNameLength() => $_has(2);
   @$pb.TagNumber(3)
@@ -769,7 +935,10 @@ class SelectionLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxChoices => $_getIZ(3);
   @$pb.TagNumber(4)
-  set maxChoices($core.int v) { $_setSignedInt32(3, v); }
+  set maxChoices($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxChoices() => $_has(3);
   @$pb.TagNumber(4)
@@ -779,7 +948,10 @@ class SelectionLimits extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxDeletedChoices => $_getIZ(4);
   @$pb.TagNumber(5)
-  set maxDeletedChoices($core.int v) { $_setSignedInt32(4, v); }
+  set maxDeletedChoices($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaxDeletedChoices() => $_has(4);
   @$pb.TagNumber(5)
@@ -798,24 +970,31 @@ class UserLimits extends $pb.GeneratedMessage {
     return $result;
   }
   UserLimits._() : super();
-  factory UserLimits.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UserLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UserLimits.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UserLimits.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<ListLimits>(1, _omitFieldNames ? '' : 'listLimits', subBuilder: ListLimits.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UserLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
+    ..aOM<ListLimits>(1, _omitFieldNames ? '' : 'listLimits',
+        subBuilder: ListLimits.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UserLimits clone() => UserLimits()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UserLimits copyWith(void Function(UserLimits) updates) => super.copyWith((message) => updates(message as UserLimits)) as UserLimits;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UserLimits copyWith(void Function(UserLimits) updates) =>
+      super.copyWith((message) => updates(message as UserLimits)) as UserLimits;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -824,14 +1003,18 @@ class UserLimits extends $pb.GeneratedMessage {
   UserLimits createEmptyInstance() => create();
   static $pb.PbList<UserLimits> createRepeated() => $pb.PbList<UserLimits>();
   @$core.pragma('dart2js:noInline')
-  static UserLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UserLimits>(create);
+  static UserLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UserLimits>(create);
   static UserLimits? _defaultInstance;
 
   /// Limits for list-variant of a Field type.
   @$pb.TagNumber(1)
   ListLimits get listLimits => $_getN(0);
   @$pb.TagNumber(1)
-  set listLimits(ListLimits v) { setField(1, v); }
+  set listLimits(ListLimits v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasListLimits() => $_has(0);
   @$pb.TagNumber(1)
@@ -840,6 +1023,6 @@ class UserLimits extends $pb.GeneratedMessage {
   ListLimits ensureListLimits() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

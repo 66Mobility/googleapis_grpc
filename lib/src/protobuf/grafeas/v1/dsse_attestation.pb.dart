@@ -34,33 +34,45 @@ class DSSEAttestationNote_DSSEHint extends $pb.GeneratedMessage {
     return $result;
   }
   DSSEAttestationNote_DSSEHint._() : super();
-  factory DSSEAttestationNote_DSSEHint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DSSEAttestationNote_DSSEHint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DSSEAttestationNote_DSSEHint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DSSEAttestationNote_DSSEHint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DSSEAttestationNote.DSSEHint', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DSSEAttestationNote.DSSEHint',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'humanReadableName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DSSEAttestationNote_DSSEHint clone() => DSSEAttestationNote_DSSEHint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DSSEAttestationNote_DSSEHint copyWith(void Function(DSSEAttestationNote_DSSEHint) updates) => super.copyWith((message) => updates(message as DSSEAttestationNote_DSSEHint)) as DSSEAttestationNote_DSSEHint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DSSEAttestationNote_DSSEHint clone() =>
+      DSSEAttestationNote_DSSEHint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DSSEAttestationNote_DSSEHint copyWith(
+          void Function(DSSEAttestationNote_DSSEHint) updates) =>
+      super.copyWith(
+              (message) => updates(message as DSSEAttestationNote_DSSEHint))
+          as DSSEAttestationNote_DSSEHint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DSSEAttestationNote_DSSEHint create() => DSSEAttestationNote_DSSEHint._();
+  static DSSEAttestationNote_DSSEHint create() =>
+      DSSEAttestationNote_DSSEHint._();
   DSSEAttestationNote_DSSEHint createEmptyInstance() => create();
-  static $pb.PbList<DSSEAttestationNote_DSSEHint> createRepeated() => $pb.PbList<DSSEAttestationNote_DSSEHint>();
+  static $pb.PbList<DSSEAttestationNote_DSSEHint> createRepeated() =>
+      $pb.PbList<DSSEAttestationNote_DSSEHint>();
   @$core.pragma('dart2js:noInline')
-  static DSSEAttestationNote_DSSEHint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DSSEAttestationNote_DSSEHint>(create);
+  static DSSEAttestationNote_DSSEHint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DSSEAttestationNote_DSSEHint>(create);
   static DSSEAttestationNote_DSSEHint? _defaultInstance;
 
   /// Required. The human readable name of this attestation authority, for
@@ -68,7 +80,10 @@ class DSSEAttestationNote_DSSEHint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get humanReadableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set humanReadableName($core.String v) { $_setString(0, v); }
+  set humanReadableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHumanReadableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,40 +101,52 @@ class DSSEAttestationNote extends $pb.GeneratedMessage {
     return $result;
   }
   DSSEAttestationNote._() : super();
-  factory DSSEAttestationNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DSSEAttestationNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DSSEAttestationNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DSSEAttestationNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DSSEAttestationNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<DSSEAttestationNote_DSSEHint>(1, _omitFieldNames ? '' : 'hint', subBuilder: DSSEAttestationNote_DSSEHint.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DSSEAttestationNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<DSSEAttestationNote_DSSEHint>(1, _omitFieldNames ? '' : 'hint',
+        subBuilder: DSSEAttestationNote_DSSEHint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DSSEAttestationNote clone() => DSSEAttestationNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DSSEAttestationNote copyWith(void Function(DSSEAttestationNote) updates) => super.copyWith((message) => updates(message as DSSEAttestationNote)) as DSSEAttestationNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DSSEAttestationNote copyWith(void Function(DSSEAttestationNote) updates) =>
+      super.copyWith((message) => updates(message as DSSEAttestationNote))
+          as DSSEAttestationNote;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DSSEAttestationNote create() => DSSEAttestationNote._();
   DSSEAttestationNote createEmptyInstance() => create();
-  static $pb.PbList<DSSEAttestationNote> createRepeated() => $pb.PbList<DSSEAttestationNote>();
+  static $pb.PbList<DSSEAttestationNote> createRepeated() =>
+      $pb.PbList<DSSEAttestationNote>();
   @$core.pragma('dart2js:noInline')
-  static DSSEAttestationNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DSSEAttestationNote>(create);
+  static DSSEAttestationNote getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DSSEAttestationNote>(create);
   static DSSEAttestationNote? _defaultInstance;
 
   /// DSSEHint hints at the purpose of the attestation authority.
   @$pb.TagNumber(1)
   DSSEAttestationNote_DSSEHint get hint => $_getN(0);
   @$pb.TagNumber(1)
-  set hint(DSSEAttestationNote_DSSEHint v) { setField(1, v); }
+  set hint(DSSEAttestationNote_DSSEHint v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHint() => $_has(0);
   @$pb.TagNumber(1)
@@ -128,10 +155,7 @@ class DSSEAttestationNote extends $pb.GeneratedMessage {
   DSSEAttestationNote_DSSEHint ensureHint() => $_ensure(0);
 }
 
-enum DSSEAttestationOccurrence_DecodedPayload {
-  statement, 
-  notSet
-}
+enum DSSEAttestationOccurrence_DecodedPayload { statement, notSet }
 
 /// Deprecated. Prefer to use a regular Occurrence, and populate the
 /// Envelope at the top level of the Occurrence.
@@ -150,42 +174,56 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   DSSEAttestationOccurrence._() : super();
-  factory DSSEAttestationOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DSSEAttestationOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DSSEAttestationOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DSSEAttestationOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, DSSEAttestationOccurrence_DecodedPayload> _DSSEAttestationOccurrence_DecodedPayloadByTag = {
-    2 : DSSEAttestationOccurrence_DecodedPayload.statement,
-    0 : DSSEAttestationOccurrence_DecodedPayload.notSet
+  static const $core.Map<$core.int, DSSEAttestationOccurrence_DecodedPayload>
+      _DSSEAttestationOccurrence_DecodedPayloadByTag = {
+    2: DSSEAttestationOccurrence_DecodedPayload.statement,
+    0: DSSEAttestationOccurrence_DecodedPayload.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DSSEAttestationOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DSSEAttestationOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$556.Envelope>(1, _omitFieldNames ? '' : 'envelope', subBuilder: $556.Envelope.create)
-    ..aOM<$561.InTotoStatement>(2, _omitFieldNames ? '' : 'statement', subBuilder: $561.InTotoStatement.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$556.Envelope>(1, _omitFieldNames ? '' : 'envelope',
+        subBuilder: $556.Envelope.create)
+    ..aOM<$561.InTotoStatement>(2, _omitFieldNames ? '' : 'statement',
+        subBuilder: $561.InTotoStatement.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DSSEAttestationOccurrence clone() => DSSEAttestationOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DSSEAttestationOccurrence copyWith(void Function(DSSEAttestationOccurrence) updates) => super.copyWith((message) => updates(message as DSSEAttestationOccurrence)) as DSSEAttestationOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DSSEAttestationOccurrence clone() =>
+      DSSEAttestationOccurrence()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DSSEAttestationOccurrence copyWith(
+          void Function(DSSEAttestationOccurrence) updates) =>
+      super.copyWith((message) => updates(message as DSSEAttestationOccurrence))
+          as DSSEAttestationOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DSSEAttestationOccurrence create() => DSSEAttestationOccurrence._();
   DSSEAttestationOccurrence createEmptyInstance() => create();
-  static $pb.PbList<DSSEAttestationOccurrence> createRepeated() => $pb.PbList<DSSEAttestationOccurrence>();
+  static $pb.PbList<DSSEAttestationOccurrence> createRepeated() =>
+      $pb.PbList<DSSEAttestationOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static DSSEAttestationOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DSSEAttestationOccurrence>(create);
+  static DSSEAttestationOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DSSEAttestationOccurrence>(create);
   static DSSEAttestationOccurrence? _defaultInstance;
 
-  DSSEAttestationOccurrence_DecodedPayload whichDecodedPayload() => _DSSEAttestationOccurrence_DecodedPayloadByTag[$_whichOneof(0)]!;
+  DSSEAttestationOccurrence_DecodedPayload whichDecodedPayload() =>
+      _DSSEAttestationOccurrence_DecodedPayloadByTag[$_whichOneof(0)]!;
   void clearDecodedPayload() => clearField($_whichOneof(0));
 
   /// If doing something security critical, make sure to verify the signatures in
@@ -193,7 +231,10 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $556.Envelope get envelope => $_getN(0);
   @$pb.TagNumber(1)
-  set envelope($556.Envelope v) { setField(1, v); }
+  set envelope($556.Envelope v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnvelope() => $_has(0);
   @$pb.TagNumber(1)
@@ -204,7 +245,10 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $561.InTotoStatement get statement => $_getN(1);
   @$pb.TagNumber(2)
-  set statement($561.InTotoStatement v) { setField(2, v); }
+  set statement($561.InTotoStatement v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStatement() => $_has(1);
   @$pb.TagNumber(2)
@@ -213,6 +257,6 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   $561.InTotoStatement ensureStatement() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

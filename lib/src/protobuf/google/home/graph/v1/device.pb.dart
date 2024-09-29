@@ -71,35 +71,47 @@ class Device extends $pb.GeneratedMessage {
     return $result;
   }
   Device._() : super();
-  factory Device.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Device.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Device.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Device.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Device', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.graph.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Device',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.graph.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..pPS(3, _omitFieldNames ? '' : 'traits')
-    ..aOM<DeviceNames>(4, _omitFieldNames ? '' : 'name', subBuilder: DeviceNames.create)
+    ..aOM<DeviceNames>(4, _omitFieldNames ? '' : 'name',
+        subBuilder: DeviceNames.create)
     ..aOB(5, _omitFieldNames ? '' : 'willReportState')
     ..aOS(6, _omitFieldNames ? '' : 'roomHint')
     ..aOS(7, _omitFieldNames ? '' : 'structureHint')
-    ..aOM<DeviceInfo>(8, _omitFieldNames ? '' : 'deviceInfo', subBuilder: DeviceInfo.create)
-    ..aOM<$261.Struct>(9, _omitFieldNames ? '' : 'attributes', subBuilder: $261.Struct.create)
-    ..aOM<$261.Struct>(10, _omitFieldNames ? '' : 'customData', subBuilder: $261.Struct.create)
-    ..pc<AgentOtherDeviceId>(11, _omitFieldNames ? '' : 'otherDeviceIds', $pb.PbFieldType.PM, subBuilder: AgentOtherDeviceId.create)
+    ..aOM<DeviceInfo>(8, _omitFieldNames ? '' : 'deviceInfo',
+        subBuilder: DeviceInfo.create)
+    ..aOM<$261.Struct>(9, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $261.Struct.create)
+    ..aOM<$261.Struct>(10, _omitFieldNames ? '' : 'customData',
+        subBuilder: $261.Struct.create)
+    ..pc<AgentOtherDeviceId>(
+        11, _omitFieldNames ? '' : 'otherDeviceIds', $pb.PbFieldType.PM,
+        subBuilder: AgentOtherDeviceId.create)
     ..aOB(12, _omitFieldNames ? '' : 'notificationSupportedByAgent')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Device clone() => Device()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Device copyWith(void Function(Device) updates) => super.copyWith((message) => updates(message as Device)) as Device;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Device copyWith(void Function(Device) updates) =>
+      super.copyWith((message) => updates(message as Device)) as Device;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -108,14 +120,18 @@ class Device extends $pb.GeneratedMessage {
   Device createEmptyInstance() => create();
   static $pb.PbList<Device> createRepeated() => $pb.PbList<Device>();
   @$core.pragma('dart2js:noInline')
-  static Device getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Device>(create);
+  static Device getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Device>(create);
   static Device? _defaultInstance;
 
   /// Third-party device ID.
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -127,7 +143,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get type => $_getSZ(1);
   @$pb.TagNumber(2)
-  set type($core.String v) { $_setString(1, v); }
+  set type($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -143,7 +162,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   DeviceNames get name => $_getN(3);
   @$pb.TagNumber(4)
-  set name(DeviceNames v) { setField(4, v); }
+  set name(DeviceNames v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
@@ -157,7 +179,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get willReportState => $_getBF(4);
   @$pb.TagNumber(5)
-  set willReportState($core.bool v) { $_setBool(4, v); }
+  set willReportState($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasWillReportState() => $_has(4);
   @$pb.TagNumber(5)
@@ -168,7 +193,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get roomHint => $_getSZ(5);
   @$pb.TagNumber(6)
-  set roomHint($core.String v) { $_setString(5, v); }
+  set roomHint($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasRoomHint() => $_has(5);
   @$pb.TagNumber(6)
@@ -179,7 +207,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get structureHint => $_getSZ(6);
   @$pb.TagNumber(7)
-  set structureHint($core.String v) { $_setString(6, v); }
+  set structureHint($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasStructureHint() => $_has(6);
   @$pb.TagNumber(7)
@@ -189,7 +220,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   DeviceInfo get deviceInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set deviceInfo(DeviceInfo v) { setField(8, v); }
+  set deviceInfo(DeviceInfo v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDeviceInfo() => $_has(7);
   @$pb.TagNumber(8)
@@ -201,7 +235,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $261.Struct get attributes => $_getN(8);
   @$pb.TagNumber(9)
-  set attributes($261.Struct v) { setField(9, v); }
+  set attributes($261.Struct v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasAttributes() => $_has(8);
   @$pb.TagNumber(9)
@@ -220,7 +257,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $261.Struct get customData => $_getN(9);
   @$pb.TagNumber(10)
-  set customData($261.Struct v) { setField(10, v); }
+  set customData($261.Struct v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCustomData() => $_has(9);
   @$pb.TagNumber(10)
@@ -244,7 +284,10 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get notificationSupportedByAgent => $_getBF(11);
   @$pb.TagNumber(12)
-  set notificationSupportedByAgent($core.bool v) { $_setBool(11, v); }
+  set notificationSupportedByAgent($core.bool v) {
+    $_setBool(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasNotificationSupportedByAgent() => $_has(11);
   @$pb.TagNumber(12)
@@ -271,26 +314,33 @@ class DeviceNames extends $pb.GeneratedMessage {
     return $result;
   }
   DeviceNames._() : super();
-  factory DeviceNames.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeviceNames.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeviceNames.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeviceNames.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceNames', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.graph.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeviceNames',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.graph.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(2, _omitFieldNames ? '' : 'nicknames')
     ..pPS(3, _omitFieldNames ? '' : 'defaultNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeviceNames clone() => DeviceNames()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeviceNames copyWith(void Function(DeviceNames) updates) => super.copyWith((message) => updates(message as DeviceNames)) as DeviceNames;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeviceNames copyWith(void Function(DeviceNames) updates) =>
+      super.copyWith((message) => updates(message as DeviceNames))
+          as DeviceNames;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -299,14 +349,18 @@ class DeviceNames extends $pb.GeneratedMessage {
   DeviceNames createEmptyInstance() => create();
   static $pb.PbList<DeviceNames> createRepeated() => $pb.PbList<DeviceNames>();
   @$core.pragma('dart2js:noInline')
-  static DeviceNames getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeviceNames>(create);
+  static DeviceNames getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeviceNames>(create);
   static DeviceNames? _defaultInstance;
 
   /// Primary name of the device, generally provided by the user.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -346,27 +400,33 @@ class DeviceInfo extends $pb.GeneratedMessage {
     return $result;
   }
   DeviceInfo._() : super();
-  factory DeviceInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeviceInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeviceInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeviceInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.graph.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeviceInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.graph.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'manufacturer')
     ..aOS(2, _omitFieldNames ? '' : 'model')
     ..aOS(3, _omitFieldNames ? '' : 'hwVersion')
     ..aOS(4, _omitFieldNames ? '' : 'swVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeviceInfo clone() => DeviceInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeviceInfo copyWith(void Function(DeviceInfo) updates) => super.copyWith((message) => updates(message as DeviceInfo)) as DeviceInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeviceInfo copyWith(void Function(DeviceInfo) updates) =>
+      super.copyWith((message) => updates(message as DeviceInfo)) as DeviceInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -375,14 +435,18 @@ class DeviceInfo extends $pb.GeneratedMessage {
   DeviceInfo createEmptyInstance() => create();
   static $pb.PbList<DeviceInfo> createRepeated() => $pb.PbList<DeviceInfo>();
   @$core.pragma('dart2js:noInline')
-  static DeviceInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeviceInfo>(create);
+  static DeviceInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeviceInfo>(create);
   static DeviceInfo? _defaultInstance;
 
   /// Device manufacturer.
   @$pb.TagNumber(1)
   $core.String get manufacturer => $_getSZ(0);
   @$pb.TagNumber(1)
-  set manufacturer($core.String v) { $_setString(0, v); }
+  set manufacturer($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasManufacturer() => $_has(0);
   @$pb.TagNumber(1)
@@ -392,7 +456,10 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get model => $_getSZ(1);
   @$pb.TagNumber(2)
-  set model($core.String v) { $_setString(1, v); }
+  set model($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasModel() => $_has(1);
   @$pb.TagNumber(2)
@@ -402,7 +469,10 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get hwVersion => $_getSZ(2);
   @$pb.TagNumber(3)
-  set hwVersion($core.String v) { $_setString(2, v); }
+  set hwVersion($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasHwVersion() => $_has(2);
   @$pb.TagNumber(3)
@@ -412,7 +482,10 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get swVersion => $_getSZ(3);
   @$pb.TagNumber(4)
-  set swVersion($core.String v) { $_setString(3, v); }
+  set swVersion($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSwVersion() => $_has(3);
   @$pb.TagNumber(4)
@@ -435,41 +508,53 @@ class AgentOtherDeviceId extends $pb.GeneratedMessage {
     return $result;
   }
   AgentOtherDeviceId._() : super();
-  factory AgentOtherDeviceId.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AgentOtherDeviceId.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AgentOtherDeviceId.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AgentOtherDeviceId.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgentOtherDeviceId', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.graph.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AgentOtherDeviceId',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.home.graph.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'agentId')
     ..aOS(2, _omitFieldNames ? '' : 'deviceId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AgentOtherDeviceId clone() => AgentOtherDeviceId()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AgentOtherDeviceId copyWith(void Function(AgentOtherDeviceId) updates) => super.copyWith((message) => updates(message as AgentOtherDeviceId)) as AgentOtherDeviceId;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AgentOtherDeviceId copyWith(void Function(AgentOtherDeviceId) updates) =>
+      super.copyWith((message) => updates(message as AgentOtherDeviceId))
+          as AgentOtherDeviceId;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AgentOtherDeviceId create() => AgentOtherDeviceId._();
   AgentOtherDeviceId createEmptyInstance() => create();
-  static $pb.PbList<AgentOtherDeviceId> createRepeated() => $pb.PbList<AgentOtherDeviceId>();
+  static $pb.PbList<AgentOtherDeviceId> createRepeated() =>
+      $pb.PbList<AgentOtherDeviceId>();
   @$core.pragma('dart2js:noInline')
-  static AgentOtherDeviceId getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgentOtherDeviceId>(create);
+  static AgentOtherDeviceId getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AgentOtherDeviceId>(create);
   static AgentOtherDeviceId? _defaultInstance;
 
   /// Project ID for your smart home Action.
   @$pb.TagNumber(1)
   $core.String get agentId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set agentId($core.String v) { $_setString(0, v); }
+  set agentId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAgentId() => $_has(0);
   @$pb.TagNumber(1)
@@ -479,13 +564,16 @@ class AgentOtherDeviceId extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get deviceId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set deviceId($core.String v) { $_setString(1, v); }
+  set deviceId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDeviceId() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeviceId() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

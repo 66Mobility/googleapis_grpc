@@ -20,7 +20,15 @@ const WorkloadIdentityPool$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.iam.v1beta.WorkloadIdentityPool.State', '8': {}, '10': 'state'},
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.iam.v1beta.WorkloadIdentityPool.State',
+      '8': {},
+      '10': 'state'
+    },
     {'1': 'disabled', '3': 5, '4': 1, '5': 8, '10': 'disabled'},
   ],
   '4': [WorkloadIdentityPool_State$json],
@@ -55,14 +63,56 @@ const WorkloadIdentityPoolProvider$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider.State', '8': {}, '10': 'state'},
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider.State',
+      '8': {},
+      '10': 'state'
+    },
     {'1': 'disabled', '3': 5, '4': 1, '5': 8, '10': 'disabled'},
-    {'1': 'attribute_mapping', '3': 6, '4': 3, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider.AttributeMappingEntry', '10': 'attributeMapping'},
-    {'1': 'attribute_condition', '3': 7, '4': 1, '5': 9, '10': 'attributeCondition'},
-    {'1': 'aws', '3': 8, '4': 1, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider.Aws', '9': 0, '10': 'aws'},
-    {'1': 'oidc', '3': 9, '4': 1, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider.Oidc', '9': 0, '10': 'oidc'},
+    {
+      '1': 'attribute_mapping',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.iam.v1beta.WorkloadIdentityPoolProvider.AttributeMappingEntry',
+      '10': 'attributeMapping'
+    },
+    {
+      '1': 'attribute_condition',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'attributeCondition'
+    },
+    {
+      '1': 'aws',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider.Aws',
+      '9': 0,
+      '10': 'aws'
+    },
+    {
+      '1': 'oidc',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider.Oidc',
+      '9': 0,
+      '10': 'oidc'
+    },
   ],
-  '3': [WorkloadIdentityPoolProvider_Aws$json, WorkloadIdentityPoolProvider_Oidc$json, WorkloadIdentityPoolProvider_AttributeMappingEntry$json],
+  '3': [
+    WorkloadIdentityPoolProvider_Aws$json,
+    WorkloadIdentityPoolProvider_Oidc$json,
+    WorkloadIdentityPoolProvider_AttributeMappingEntry$json
+  ],
   '4': [WorkloadIdentityPoolProvider_State$json],
   '7': {},
   '8': [
@@ -83,7 +133,13 @@ const WorkloadIdentityPoolProvider_Oidc$json = {
   '1': 'Oidc',
   '2': [
     {'1': 'issuer_uri', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'issuerUri'},
-    {'1': 'allowed_audiences', '3': 2, '4': 3, '5': 9, '10': 'allowedAudiences'},
+    {
+      '1': 'allowed_audiences',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'allowedAudiences'
+    },
   ],
 };
 
@@ -141,27 +197,36 @@ const ListWorkloadIdentityPoolsRequest$json = {
 };
 
 /// Descriptor for `ListWorkloadIdentityPoolsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listWorkloadIdentityPoolsRequestDescriptor = $convert.base64Decode(
-    'CiBMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xzUmVxdWVzdBJLCgZwYXJlbnQYASABKAlCM+BBAv'
-    'pBLQorY2xvdWRyZXNvdXJjZW1hbmFnZXIuZ29vZ2xlYXBpcy5jb20vUHJvamVjdFIGcGFyZW50'
-    'EhsKCXBhZ2Vfc2l6ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZV'
-    'Rva2VuEiEKDHNob3dfZGVsZXRlZBgEIAEoCFILc2hvd0RlbGV0ZWQ=');
+final $typed_data.Uint8List listWorkloadIdentityPoolsRequestDescriptor =
+    $convert.base64Decode(
+        'CiBMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xzUmVxdWVzdBJLCgZwYXJlbnQYASABKAlCM+BBAv'
+        'pBLQorY2xvdWRyZXNvdXJjZW1hbmFnZXIuZ29vZ2xlYXBpcy5jb20vUHJvamVjdFIGcGFyZW50'
+        'EhsKCXBhZ2Vfc2l6ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZV'
+        'Rva2VuEiEKDHNob3dfZGVsZXRlZBgEIAEoCFILc2hvd0RlbGV0ZWQ=');
 
 @$core.Deprecated('Use listWorkloadIdentityPoolsResponseDescriptor instead')
 const ListWorkloadIdentityPoolsResponse$json = {
   '1': 'ListWorkloadIdentityPoolsResponse',
   '2': [
-    {'1': 'workload_identity_pools', '3': 1, '4': 3, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPool', '10': 'workloadIdentityPools'},
+    {
+      '1': 'workload_identity_pools',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPool',
+      '10': 'workloadIdentityPools'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListWorkloadIdentityPoolsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listWorkloadIdentityPoolsResponseDescriptor = $convert.base64Decode(
-    'CiFMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xzUmVzcG9uc2USXwoXd29ya2xvYWRfaWRlbnRpdH'
-    'lfcG9vbHMYASADKAsyJy5nb29nbGUuaWFtLnYxYmV0YS5Xb3JrbG9hZElkZW50aXR5UG9vbFIV'
-    'd29ya2xvYWRJZGVudGl0eVBvb2xzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2'
-    'VUb2tlbg==');
+final $typed_data.Uint8List listWorkloadIdentityPoolsResponseDescriptor =
+    $convert.base64Decode(
+        'CiFMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xzUmVzcG9uc2USXwoXd29ya2xvYWRfaWRlbnRpdH'
+        'lfcG9vbHMYASADKAsyJy5nb29nbGUuaWFtLnYxYmV0YS5Xb3JrbG9hZElkZW50aXR5UG9vbFIV'
+        'd29ya2xvYWRJZGVudGl0eVBvb2xzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2'
+        'VUb2tlbg==');
 
 @$core.Deprecated('Use getWorkloadIdentityPoolRequestDescriptor instead')
 const GetWorkloadIdentityPoolRequest$json = {
@@ -172,17 +237,33 @@ const GetWorkloadIdentityPoolRequest$json = {
 };
 
 /// Descriptor for `GetWorkloadIdentityPoolRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getWorkloadIdentityPoolRequestDescriptor = $convert.base64Decode(
-    'Ch5HZXRXb3JrbG9hZElkZW50aXR5UG9vbFJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+kEpCi'
-    'dpYW0uZ29vZ2xlYXBpcy5jb20vV29ya2xvYWRJZGVudGl0eVBvb2xSBG5hbWU=');
+final $typed_data.Uint8List getWorkloadIdentityPoolRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5HZXRXb3JrbG9hZElkZW50aXR5UG9vbFJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+kEpCi'
+        'dpYW0uZ29vZ2xlYXBpcy5jb20vV29ya2xvYWRJZGVudGl0eVBvb2xSBG5hbWU=');
 
 @$core.Deprecated('Use createWorkloadIdentityPoolRequestDescriptor instead')
 const CreateWorkloadIdentityPoolRequest$json = {
   '1': 'CreateWorkloadIdentityPoolRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'workload_identity_pool', '3': 2, '4': 1, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPool', '8': {}, '10': 'workloadIdentityPool'},
-    {'1': 'workload_identity_pool_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'workloadIdentityPoolId'},
+    {
+      '1': 'workload_identity_pool',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPool',
+      '8': {},
+      '10': 'workloadIdentityPool'
+    },
+    {
+      '1': 'workload_identity_pool_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'workloadIdentityPoolId'
+    },
   ],
 };
 
@@ -198,17 +279,34 @@ final $typed_data.Uint8List createWorkloadIdentityPoolRequestDescriptor = $conve
 const UpdateWorkloadIdentityPoolRequest$json = {
   '1': 'UpdateWorkloadIdentityPoolRequest',
   '2': [
-    {'1': 'workload_identity_pool', '3': 1, '4': 1, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPool', '8': {}, '10': 'workloadIdentityPool'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'workload_identity_pool',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPool',
+      '8': {},
+      '10': 'workloadIdentityPool'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
 /// Descriptor for `UpdateWorkloadIdentityPoolRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateWorkloadIdentityPoolRequestDescriptor = $convert.base64Decode(
-    'CiFVcGRhdGVXb3JrbG9hZElkZW50aXR5UG9vbFJlcXVlc3QSYgoWd29ya2xvYWRfaWRlbnRpdH'
-    'lfcG9vbBgBIAEoCzInLmdvb2dsZS5pYW0udjFiZXRhLldvcmtsb2FkSWRlbnRpdHlQb29sQgPg'
-    'QQJSFHdvcmtsb2FkSWRlbnRpdHlQb29sEkAKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLn'
-    'Byb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNr');
+final $typed_data.Uint8List updateWorkloadIdentityPoolRequestDescriptor =
+    $convert.base64Decode(
+        'CiFVcGRhdGVXb3JrbG9hZElkZW50aXR5UG9vbFJlcXVlc3QSYgoWd29ya2xvYWRfaWRlbnRpdH'
+        'lfcG9vbBgBIAEoCzInLmdvb2dsZS5pYW0udjFiZXRhLldvcmtsb2FkSWRlbnRpdHlQb29sQgPg'
+        'QQJSFHdvcmtsb2FkSWRlbnRpdHlQb29sEkAKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLn'
+        'Byb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNr');
 
 @$core.Deprecated('Use deleteWorkloadIdentityPoolRequestDescriptor instead')
 const DeleteWorkloadIdentityPoolRequest$json = {
@@ -219,9 +317,10 @@ const DeleteWorkloadIdentityPoolRequest$json = {
 };
 
 /// Descriptor for `DeleteWorkloadIdentityPoolRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteWorkloadIdentityPoolRequestDescriptor = $convert.base64Decode(
-    'CiFEZWxldGVXb3JrbG9hZElkZW50aXR5UG9vbFJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+k'
-    'EpCidpYW0uZ29vZ2xlYXBpcy5jb20vV29ya2xvYWRJZGVudGl0eVBvb2xSBG5hbWU=');
+final $typed_data.Uint8List deleteWorkloadIdentityPoolRequestDescriptor =
+    $convert.base64Decode(
+        'CiFEZWxldGVXb3JrbG9hZElkZW50aXR5UG9vbFJlcXVlc3QSQwoEbmFtZRgBIAEoCUIv4EEC+k'
+        'EpCidpYW0uZ29vZ2xlYXBpcy5jb20vV29ya2xvYWRJZGVudGl0eVBvb2xSBG5hbWU=');
 
 @$core.Deprecated('Use undeleteWorkloadIdentityPoolRequestDescriptor instead')
 const UndeleteWorkloadIdentityPoolRequest$json = {
@@ -232,11 +331,13 @@ const UndeleteWorkloadIdentityPoolRequest$json = {
 };
 
 /// Descriptor for `UndeleteWorkloadIdentityPoolRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List undeleteWorkloadIdentityPoolRequestDescriptor = $convert.base64Decode(
-    'CiNVbmRlbGV0ZVdvcmtsb2FkSWRlbnRpdHlQb29sUmVxdWVzdBJDCgRuYW1lGAEgASgJQi/gQQ'
-    'L6QSkKJ2lhbS5nb29nbGVhcGlzLmNvbS9Xb3JrbG9hZElkZW50aXR5UG9vbFIEbmFtZQ==');
+final $typed_data.Uint8List undeleteWorkloadIdentityPoolRequestDescriptor =
+    $convert.base64Decode(
+        'CiNVbmRlbGV0ZVdvcmtsb2FkSWRlbnRpdHlQb29sUmVxdWVzdBJDCgRuYW1lGAEgASgJQi/gQQ'
+        'L6QSkKJ2lhbS5nb29nbGVhcGlzLmNvbS9Xb3JrbG9hZElkZW50aXR5UG9vbFIEbmFtZQ==');
 
-@$core.Deprecated('Use listWorkloadIdentityPoolProvidersRequestDescriptor instead')
+@$core.Deprecated(
+    'Use listWorkloadIdentityPoolProvidersRequestDescriptor instead')
 const ListWorkloadIdentityPoolProvidersRequest$json = {
   '1': 'ListWorkloadIdentityPoolProvidersRequest',
   '2': [
@@ -248,29 +349,40 @@ const ListWorkloadIdentityPoolProvidersRequest$json = {
 };
 
 /// Descriptor for `ListWorkloadIdentityPoolProvidersRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listWorkloadIdentityPoolProvidersRequestDescriptor = $convert.base64Decode(
-    'CihMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xQcm92aWRlcnNSZXF1ZXN0EkcKBnBhcmVudBgBIA'
-    'EoCUIv4EEC+kEpCidpYW0uZ29vZ2xlYXBpcy5jb20vV29ya2xvYWRJZGVudGl0eVBvb2xSBnBh'
-    'cmVudBIbCglwYWdlX3NpemUYAiABKAVSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YAyABKAlSCX'
-    'BhZ2VUb2tlbhIhCgxzaG93X2RlbGV0ZWQYBCABKAhSC3Nob3dEZWxldGVk');
+final $typed_data.Uint8List listWorkloadIdentityPoolProvidersRequestDescriptor =
+    $convert.base64Decode(
+        'CihMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xQcm92aWRlcnNSZXF1ZXN0EkcKBnBhcmVudBgBIA'
+        'EoCUIv4EEC+kEpCidpYW0uZ29vZ2xlYXBpcy5jb20vV29ya2xvYWRJZGVudGl0eVBvb2xSBnBh'
+        'cmVudBIbCglwYWdlX3NpemUYAiABKAVSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YAyABKAlSCX'
+        'BhZ2VUb2tlbhIhCgxzaG93X2RlbGV0ZWQYBCABKAhSC3Nob3dEZWxldGVk');
 
-@$core.Deprecated('Use listWorkloadIdentityPoolProvidersResponseDescriptor instead')
+@$core.Deprecated(
+    'Use listWorkloadIdentityPoolProvidersResponseDescriptor instead')
 const ListWorkloadIdentityPoolProvidersResponse$json = {
   '1': 'ListWorkloadIdentityPoolProvidersResponse',
   '2': [
-    {'1': 'workload_identity_pool_providers', '3': 1, '4': 3, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider', '10': 'workloadIdentityPoolProviders'},
+    {
+      '1': 'workload_identity_pool_providers',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider',
+      '10': 'workloadIdentityPoolProviders'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListWorkloadIdentityPoolProvidersResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listWorkloadIdentityPoolProvidersResponseDescriptor = $convert.base64Decode(
-    'CilMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xQcm92aWRlcnNSZXNwb25zZRJ4CiB3b3JrbG9hZF'
-    '9pZGVudGl0eV9wb29sX3Byb3ZpZGVycxgBIAMoCzIvLmdvb2dsZS5pYW0udjFiZXRhLldvcmts'
-    'b2FkSWRlbnRpdHlQb29sUHJvdmlkZXJSHXdvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJzEi'
-    'YKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List
+    listWorkloadIdentityPoolProvidersResponseDescriptor = $convert.base64Decode(
+        'CilMaXN0V29ya2xvYWRJZGVudGl0eVBvb2xQcm92aWRlcnNSZXNwb25zZRJ4CiB3b3JrbG9hZF'
+        '9pZGVudGl0eV9wb29sX3Byb3ZpZGVycxgBIAMoCzIvLmdvb2dsZS5pYW0udjFiZXRhLldvcmts'
+        'b2FkSWRlbnRpdHlQb29sUHJvdmlkZXJSHXdvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJzEi'
+        'YKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
-@$core.Deprecated('Use getWorkloadIdentityPoolProviderRequestDescriptor instead')
+@$core
+    .Deprecated('Use getWorkloadIdentityPoolProviderRequestDescriptor instead')
 const GetWorkloadIdentityPoolProviderRequest$json = {
   '1': 'GetWorkloadIdentityPoolProviderRequest',
   '2': [
@@ -279,48 +391,85 @@ const GetWorkloadIdentityPoolProviderRequest$json = {
 };
 
 /// Descriptor for `GetWorkloadIdentityPoolProviderRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
-    'CiZHZXRXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJLCgRuYW1lGAEgASgJQj'
-    'fgQQL6QTEKL2lhbS5nb29nbGVhcGlzLmNvbS9Xb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVy'
-    'UgRuYW1l');
+final $typed_data.Uint8List getWorkloadIdentityPoolProviderRequestDescriptor =
+    $convert.base64Decode(
+        'CiZHZXRXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJLCgRuYW1lGAEgASgJQj'
+        'fgQQL6QTEKL2lhbS5nb29nbGVhcGlzLmNvbS9Xb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVy'
+        'UgRuYW1l');
 
-@$core.Deprecated('Use createWorkloadIdentityPoolProviderRequestDescriptor instead')
+@$core.Deprecated(
+    'Use createWorkloadIdentityPoolProviderRequestDescriptor instead')
 const CreateWorkloadIdentityPoolProviderRequest$json = {
   '1': 'CreateWorkloadIdentityPoolProviderRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'workload_identity_pool_provider', '3': 2, '4': 1, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider', '8': {}, '10': 'workloadIdentityPoolProvider'},
-    {'1': 'workload_identity_pool_provider_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'workloadIdentityPoolProviderId'},
+    {
+      '1': 'workload_identity_pool_provider',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider',
+      '8': {},
+      '10': 'workloadIdentityPoolProvider'
+    },
+    {
+      '1': 'workload_identity_pool_provider_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'workloadIdentityPoolProviderId'
+    },
   ],
 };
 
 /// Descriptor for `CreateWorkloadIdentityPoolProviderRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
-    'CilDcmVhdGVXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJHCgZwYXJlbnQYAS'
-    'ABKAlCL+BBAvpBKQonaWFtLmdvb2dsZWFwaXMuY29tL1dvcmtsb2FkSWRlbnRpdHlQb29sUgZw'
-    'YXJlbnQSewofd29ya2xvYWRfaWRlbnRpdHlfcG9vbF9wcm92aWRlchgCIAEoCzIvLmdvb2dsZS'
-    '5pYW0udjFiZXRhLldvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJCA+BBAlIcd29ya2xvYWRJ'
-    'ZGVudGl0eVBvb2xQcm92aWRlchJPCiJ3b3JrbG9hZF9pZGVudGl0eV9wb29sX3Byb3ZpZGVyX2'
-    'lkGAMgASgJQgPgQQJSHndvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJJZA==');
+final $typed_data.Uint8List
+    createWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
+        'CilDcmVhdGVXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJHCgZwYXJlbnQYAS'
+        'ABKAlCL+BBAvpBKQonaWFtLmdvb2dsZWFwaXMuY29tL1dvcmtsb2FkSWRlbnRpdHlQb29sUgZw'
+        'YXJlbnQSewofd29ya2xvYWRfaWRlbnRpdHlfcG9vbF9wcm92aWRlchgCIAEoCzIvLmdvb2dsZS'
+        '5pYW0udjFiZXRhLldvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJCA+BBAlIcd29ya2xvYWRJ'
+        'ZGVudGl0eVBvb2xQcm92aWRlchJPCiJ3b3JrbG9hZF9pZGVudGl0eV9wb29sX3Byb3ZpZGVyX2'
+        'lkGAMgASgJQgPgQQJSHndvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJJZA==');
 
-@$core.Deprecated('Use updateWorkloadIdentityPoolProviderRequestDescriptor instead')
+@$core.Deprecated(
+    'Use updateWorkloadIdentityPoolProviderRequestDescriptor instead')
 const UpdateWorkloadIdentityPoolProviderRequest$json = {
   '1': 'UpdateWorkloadIdentityPoolProviderRequest',
   '2': [
-    {'1': 'workload_identity_pool_provider', '3': 1, '4': 1, '5': 11, '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider', '8': {}, '10': 'workloadIdentityPoolProvider'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'workload_identity_pool_provider',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1beta.WorkloadIdentityPoolProvider',
+      '8': {},
+      '10': 'workloadIdentityPoolProvider'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
 /// Descriptor for `UpdateWorkloadIdentityPoolProviderRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
-    'CilVcGRhdGVXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJ7Ch93b3JrbG9hZF'
-    '9pZGVudGl0eV9wb29sX3Byb3ZpZGVyGAEgASgLMi8uZ29vZ2xlLmlhbS52MWJldGEuV29ya2xv'
-    'YWRJZGVudGl0eVBvb2xQcm92aWRlckID4EECUhx3b3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZG'
-    'VyEkAKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EEC'
-    'Ugp1cGRhdGVNYXNr');
+final $typed_data.Uint8List
+    updateWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
+        'CilVcGRhdGVXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJ7Ch93b3JrbG9hZF'
+        '9pZGVudGl0eV9wb29sX3Byb3ZpZGVyGAEgASgLMi8uZ29vZ2xlLmlhbS52MWJldGEuV29ya2xv'
+        'YWRJZGVudGl0eVBvb2xQcm92aWRlckID4EECUhx3b3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZG'
+        'VyEkAKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EEC'
+        'Ugp1cGRhdGVNYXNr');
 
-@$core.Deprecated('Use deleteWorkloadIdentityPoolProviderRequestDescriptor instead')
+@$core.Deprecated(
+    'Use deleteWorkloadIdentityPoolProviderRequestDescriptor instead')
 const DeleteWorkloadIdentityPoolProviderRequest$json = {
   '1': 'DeleteWorkloadIdentityPoolProviderRequest',
   '2': [
@@ -329,12 +478,14 @@ const DeleteWorkloadIdentityPoolProviderRequest$json = {
 };
 
 /// Descriptor for `DeleteWorkloadIdentityPoolProviderRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
-    'CilEZWxldGVXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJLCgRuYW1lGAEgAS'
-    'gJQjfgQQL6QTEKL2lhbS5nb29nbGVhcGlzLmNvbS9Xb3JrbG9hZElkZW50aXR5UG9vbFByb3Zp'
-    'ZGVyUgRuYW1l');
+final $typed_data.Uint8List
+    deleteWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
+        'CilEZWxldGVXb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyUmVxdWVzdBJLCgRuYW1lGAEgAS'
+        'gJQjfgQQL6QTEKL2lhbS5nb29nbGVhcGlzLmNvbS9Xb3JrbG9hZElkZW50aXR5UG9vbFByb3Zp'
+        'ZGVyUgRuYW1l');
 
-@$core.Deprecated('Use undeleteWorkloadIdentityPoolProviderRequestDescriptor instead')
+@$core.Deprecated(
+    'Use undeleteWorkloadIdentityPoolProviderRequestDescriptor instead')
 const UndeleteWorkloadIdentityPoolProviderRequest$json = {
   '1': 'UndeleteWorkloadIdentityPoolProviderRequest',
   '2': [
@@ -343,10 +494,12 @@ const UndeleteWorkloadIdentityPoolProviderRequest$json = {
 };
 
 /// Descriptor for `UndeleteWorkloadIdentityPoolProviderRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List undeleteWorkloadIdentityPoolProviderRequestDescriptor = $convert.base64Decode(
-    'CitVbmRlbGV0ZVdvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJSZXF1ZXN0EksKBG5hbWUYAS'
-    'ABKAlCN+BBAvpBMQovaWFtLmdvb2dsZWFwaXMuY29tL1dvcmtsb2FkSWRlbnRpdHlQb29sUHJv'
-    'dmlkZXJSBG5hbWU=');
+final $typed_data.Uint8List
+    undeleteWorkloadIdentityPoolProviderRequestDescriptor =
+    $convert.base64Decode(
+        'CitVbmRlbGV0ZVdvcmtsb2FkSWRlbnRpdHlQb29sUHJvdmlkZXJSZXF1ZXN0EksKBG5hbWUYAS'
+        'ABKAlCN+BBAvpBMQovaWFtLmdvb2dsZWFwaXMuY29tL1dvcmtsb2FkSWRlbnRpdHlQb29sUHJv'
+        'dmlkZXJSBG5hbWU=');
 
 @$core.Deprecated('Use workloadIdentityPoolOperationMetadataDescriptor instead')
 const WorkloadIdentityPoolOperationMetadata$json = {
@@ -354,15 +507,18 @@ const WorkloadIdentityPoolOperationMetadata$json = {
 };
 
 /// Descriptor for `WorkloadIdentityPoolOperationMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List workloadIdentityPoolOperationMetadataDescriptor = $convert.base64Decode(
-    'CiVXb3JrbG9hZElkZW50aXR5UG9vbE9wZXJhdGlvbk1ldGFkYXRh');
+final $typed_data.Uint8List workloadIdentityPoolOperationMetadataDescriptor =
+    $convert
+        .base64Decode('CiVXb3JrbG9hZElkZW50aXR5UG9vbE9wZXJhdGlvbk1ldGFkYXRh');
 
-@$core.Deprecated('Use workloadIdentityPoolProviderOperationMetadataDescriptor instead')
+@$core.Deprecated(
+    'Use workloadIdentityPoolProviderOperationMetadataDescriptor instead')
 const WorkloadIdentityPoolProviderOperationMetadata$json = {
   '1': 'WorkloadIdentityPoolProviderOperationMetadata',
 };
 
 /// Descriptor for `WorkloadIdentityPoolProviderOperationMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List workloadIdentityPoolProviderOperationMetadataDescriptor = $convert.base64Decode(
-    'Ci1Xb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyT3BlcmF0aW9uTWV0YWRhdGE=');
-
+final $typed_data.Uint8List
+    workloadIdentityPoolProviderOperationMetadataDescriptor =
+    $convert.base64Decode(
+        'Ci1Xb3JrbG9hZElkZW50aXR5UG9vbFByb3ZpZGVyT3BlcmF0aW9uTWV0YWRhdGE=');

@@ -33,25 +33,36 @@ class FieldInfo extends $pb.GeneratedMessage {
     return $result;
   }
   FieldInfo._() : super();
-  factory FieldInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FieldInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FieldInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FieldInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FieldInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..e<FieldInfo_Format>(1, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE, defaultOrMaker: FieldInfo_Format.FORMAT_UNSPECIFIED, valueOf: FieldInfo_Format.valueOf, enumValues: FieldInfo_Format.values)
-    ..pc<TypeReference>(2, _omitFieldNames ? '' : 'referencedTypes', $pb.PbFieldType.PM, subBuilder: TypeReference.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FieldInfo',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..e<FieldInfo_Format>(
+        1, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE,
+        defaultOrMaker: FieldInfo_Format.FORMAT_UNSPECIFIED,
+        valueOf: FieldInfo_Format.valueOf,
+        enumValues: FieldInfo_Format.values)
+    ..pc<TypeReference>(
+        2, _omitFieldNames ? '' : 'referencedTypes', $pb.PbFieldType.PM,
+        subBuilder: TypeReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FieldInfo clone() => FieldInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FieldInfo copyWith(void Function(FieldInfo) updates) => super.copyWith((message) => updates(message as FieldInfo)) as FieldInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FieldInfo copyWith(void Function(FieldInfo) updates) =>
+      super.copyWith((message) => updates(message as FieldInfo)) as FieldInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -60,7 +71,8 @@ class FieldInfo extends $pb.GeneratedMessage {
   FieldInfo createEmptyInstance() => create();
   static $pb.PbList<FieldInfo> createRepeated() => $pb.PbList<FieldInfo>();
   @$core.pragma('dart2js:noInline')
-  static FieldInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FieldInfo>(create);
+  static FieldInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FieldInfo>(create);
   static FieldInfo? _defaultInstance;
 
   /// The standard format of a field value. This does not explicitly configure
@@ -69,7 +81,10 @@ class FieldInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   FieldInfo_Format get format => $_getN(0);
   @$pb.TagNumber(1)
-  set format(FieldInfo_Format v) { setField(1, v); }
+  set format(FieldInfo_Format v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -95,33 +110,41 @@ class TypeReference extends $pb.GeneratedMessage {
     return $result;
   }
   TypeReference._() : super();
-  factory TypeReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TypeReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TypeReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TypeReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TypeReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TypeReference',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'typeName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TypeReference clone() => TypeReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TypeReference copyWith(void Function(TypeReference) updates) => super.copyWith((message) => updates(message as TypeReference)) as TypeReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TypeReference copyWith(void Function(TypeReference) updates) =>
+      super.copyWith((message) => updates(message as TypeReference))
+          as TypeReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TypeReference create() => TypeReference._();
   TypeReference createEmptyInstance() => create();
-  static $pb.PbList<TypeReference> createRepeated() => $pb.PbList<TypeReference>();
+  static $pb.PbList<TypeReference> createRepeated() =>
+      $pb.PbList<TypeReference>();
   @$core.pragma('dart2js:noInline')
-  static TypeReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TypeReference>(create);
+  static TypeReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TypeReference>(create);
   static TypeReference? _defaultInstance;
 
   ///  The name of the type that the annotated, generic field may represent.
@@ -136,7 +159,10 @@ class TypeReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get typeName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set typeName($core.String v) { $_setString(0, v); }
+  set typeName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTypeName() => $_has(0);
   @$pb.TagNumber(1)
@@ -144,12 +170,18 @@ class TypeReference extends $pb.GeneratedMessage {
 }
 
 class Field_info {
-  static final fieldInfo = $pb.Extension<FieldInfo>(_omitMessageNames ? '' : 'google.protobuf.FieldOptions', _omitFieldNames ? '' : 'fieldInfo', 291403980, $pb.PbFieldType.OM, defaultOrMaker: FieldInfo.getDefault, subBuilder: FieldInfo.create);
+  static final fieldInfo = $pb.Extension<FieldInfo>(
+      _omitMessageNames ? '' : 'google.protobuf.FieldOptions',
+      _omitFieldNames ? '' : 'fieldInfo',
+      291403980,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: FieldInfo.getDefault,
+      subBuilder: FieldInfo.create);
   static void registerAllExtensions($pb.ExtensionRegistry registry) {
     registry.add(fieldInfo);
   }
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

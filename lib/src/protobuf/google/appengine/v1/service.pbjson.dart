@@ -19,9 +19,30 @@ const Service$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'split', '3': 3, '4': 1, '5': 11, '6': '.google.appengine.v1.TrafficSplit', '10': 'split'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.appengine.v1.Service.LabelsEntry', '10': 'labels'},
-    {'1': 'network_settings', '3': 6, '4': 1, '5': 11, '6': '.google.appengine.v1.NetworkSettings', '10': 'networkSettings'},
+    {
+      '1': 'split',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1.TrafficSplit',
+      '10': 'split'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1.Service.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'network_settings',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1.NetworkSettings',
+      '10': 'networkSettings'
+    },
   ],
   '3': [Service_LabelsEntry$json],
 };
@@ -49,8 +70,22 @@ final $typed_data.Uint8List serviceDescriptor = $convert.base64Decode(
 const TrafficSplit$json = {
   '1': 'TrafficSplit',
   '2': [
-    {'1': 'shard_by', '3': 1, '4': 1, '5': 14, '6': '.google.appengine.v1.TrafficSplit.ShardBy', '10': 'shardBy'},
-    {'1': 'allocations', '3': 2, '4': 3, '5': 11, '6': '.google.appengine.v1.TrafficSplit.AllocationsEntry', '10': 'allocations'},
+    {
+      '1': 'shard_by',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1.TrafficSplit.ShardBy',
+      '10': 'shardBy'
+    },
+    {
+      '1': 'allocations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1.TrafficSplit.AllocationsEntry',
+      '10': 'allocations'
+    },
   ],
   '3': [TrafficSplit_AllocationsEntry$json],
   '4': [TrafficSplit_ShardBy$json],
@@ -85,4 +120,3 @@ final $typed_data.Uint8List trafficSplitDescriptor = $convert.base64Decode(
     'lvbnMaPgoQQWxsb2NhdGlvbnNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEo'
     'AVIFdmFsdWU6AjgBIjoKB1NoYXJkQnkSDwoLVU5TUEVDSUZJRUQQABIKCgZDT09LSUUQARIGCg'
     'JJUBACEgoKBlJBTkRPTRAD');
-

@@ -18,11 +18,55 @@ const GenerateMessageRequest$json = {
   '1': 'GenerateMessageRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'prompt', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.MessagePrompt', '8': {}, '10': 'prompt'},
-    {'1': 'temperature', '3': 3, '4': 1, '5': 2, '8': {}, '9': 0, '10': 'temperature', '17': true},
-    {'1': 'candidate_count', '3': 4, '4': 1, '5': 5, '8': {}, '9': 1, '10': 'candidateCount', '17': true},
-    {'1': 'top_p', '3': 5, '4': 1, '5': 2, '8': {}, '9': 2, '10': 'topP', '17': true},
-    {'1': 'top_k', '3': 6, '4': 1, '5': 5, '8': {}, '9': 3, '10': 'topK', '17': true},
+    {
+      '1': 'prompt',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.MessagePrompt',
+      '8': {},
+      '10': 'prompt'
+    },
+    {
+      '1': 'temperature',
+      '3': 3,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 0,
+      '10': 'temperature',
+      '17': true
+    },
+    {
+      '1': 'candidate_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 1,
+      '10': 'candidateCount',
+      '17': true
+    },
+    {
+      '1': 'top_p',
+      '3': 5,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 2,
+      '10': 'topP',
+      '17': true
+    },
+    {
+      '1': 'top_k',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 3,
+      '10': 'topK',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_temperature'},
@@ -47,9 +91,30 @@ final $typed_data.Uint8List generateMessageRequestDescriptor = $convert.base64De
 const GenerateMessageResponse$json = {
   '1': 'GenerateMessageResponse',
   '2': [
-    {'1': 'candidates', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Message', '10': 'candidates'},
-    {'1': 'messages', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Message', '10': 'messages'},
-    {'1': 'filters', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.ContentFilter', '10': 'filters'},
+    {
+      '1': 'candidates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Message',
+      '10': 'candidates'
+    },
+    {
+      '1': 'messages',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Message',
+      '10': 'messages'
+    },
+    {
+      '1': 'filters',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.ContentFilter',
+      '10': 'filters'
+    },
   ],
 };
 
@@ -67,7 +132,17 @@ const Message$json = {
   '2': [
     {'1': 'author', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'author'},
     {'1': 'content', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'content'},
-    {'1': 'citation_metadata', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.CitationMetadata', '8': {}, '9': 0, '10': 'citationMetadata', '17': true},
+    {
+      '1': 'citation_metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.CitationMetadata',
+      '8': {},
+      '9': 0,
+      '10': 'citationMetadata',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_citation_metadata'},
@@ -86,8 +161,24 @@ const MessagePrompt$json = {
   '1': 'MessagePrompt',
   '2': [
     {'1': 'context', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'context'},
-    {'1': 'examples', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Example', '8': {}, '10': 'examples'},
-    {'1': 'messages', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Message', '8': {}, '10': 'messages'},
+    {
+      '1': 'examples',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Example',
+      '8': {},
+      '10': 'examples'
+    },
+    {
+      '1': 'messages',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Message',
+      '8': {},
+      '10': 'messages'
+    },
   ],
 };
 
@@ -102,8 +193,24 @@ final $typed_data.Uint8List messagePromptDescriptor = $convert.base64Decode(
 const Example$json = {
   '1': 'Example',
   '2': [
-    {'1': 'input', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Message', '8': {}, '10': 'input'},
-    {'1': 'output', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.Message', '8': {}, '10': 'output'},
+    {
+      '1': 'input',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Message',
+      '8': {},
+      '10': 'input'
+    },
+    {
+      '1': 'output',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.Message',
+      '8': {},
+      '10': 'output'
+    },
   ],
 };
 
@@ -118,7 +225,15 @@ const CountMessageTokensRequest$json = {
   '1': 'CountMessageTokensRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'prompt', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta3.MessagePrompt', '8': {}, '10': 'prompt'},
+    {
+      '1': 'prompt',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta3.MessagePrompt',
+      '8': {},
+      '10': 'prompt'
+    },
   ],
 };
 
@@ -138,7 +253,7 @@ const CountMessageTokensResponse$json = {
 };
 
 /// Descriptor for `CountMessageTokensResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List countMessageTokensResponseDescriptor = $convert.base64Decode(
-    'ChpDb3VudE1lc3NhZ2VUb2tlbnNSZXNwb25zZRIfCgt0b2tlbl9jb3VudBgBIAEoBVIKdG9rZW'
-    '5Db3VudA==');
-
+final $typed_data.Uint8List countMessageTokensResponseDescriptor =
+    $convert.base64Decode(
+        'ChpDb3VudE1lc3NhZ2VUb2tlbnNSZXNwb25zZRIfCgt0b2tlbl9jb3VudBgBIAEoBVIKdG9rZW'
+        '5Db3VudA==');

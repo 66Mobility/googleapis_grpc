@@ -33,11 +33,39 @@ final $typed_data.Uint8List slotFillingStatusDescriptor = $convert.base64Decode(
 const Slot$json = {
   '1': 'Slot',
   '2': [
-    {'1': 'mode', '3': 1, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.conversation.Slot.SlotMode', '10': 'mode'},
-    {'1': 'status', '3': 2, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.conversation.Slot.SlotStatus', '10': 'status'},
-    {'1': 'value', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'value'},
+    {
+      '1': 'mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.conversation.Slot.SlotMode',
+      '10': 'mode'
+    },
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.conversation.Slot.SlotStatus',
+      '10': 'status'
+    },
+    {
+      '1': 'value',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'value'
+    },
     {'1': 'updated', '3': 4, '4': 1, '5': 8, '10': 'updated'},
-    {'1': 'prompt', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Prompt', '10': 'prompt'},
+    {
+      '1': 'prompt',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Prompt',
+      '10': 'prompt'
+    },
   ],
   '4': [Slot_SlotMode$json, Slot_SlotStatus$json],
 };
@@ -73,4 +101,3 @@ final $typed_data.Uint8List slotDescriptor = $convert.base64Decode(
     '9uLlByb21wdFIGcHJvbXB0IjwKCFNsb3RNb2RlEhQKEE1PREVfVU5TUEVDSUZJRUQQABIMCghP'
     'UFRJT05BTBABEgwKCFJFUVVJUkVEEAIiRgoKU2xvdFN0YXR1cxIUChBTTE9UX1VOU1BFQ0lGSU'
     'VEEAASCQoFRU1QVFkQARILCgdJTlZBTElEEAISCgoGRklMTEVEEAM=');
-

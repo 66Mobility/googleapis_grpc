@@ -17,11 +17,47 @@ import 'dart:typed_data' as $typed_data;
 const PrimaryProductDataSource$json = {
   '1': 'PrimaryProductDataSource',
   '2': [
-    {'1': 'channel', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.datasources.v1beta.PrimaryProductDataSource.Channel', '8': {}, '10': 'channel'},
-    {'1': 'feed_label', '3': 4, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'feedLabel', '17': true},
-    {'1': 'content_language', '3': 5, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'contentLanguage', '17': true},
+    {
+      '1': 'channel',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.PrimaryProductDataSource.Channel',
+      '8': {},
+      '10': 'channel'
+    },
+    {
+      '1': 'feed_label',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'feedLabel',
+      '17': true
+    },
+    {
+      '1': 'content_language',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'contentLanguage',
+      '17': true
+    },
     {'1': 'countries', '3': 6, '4': 3, '5': 9, '8': {}, '10': 'countries'},
-    {'1': 'default_rule', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.PrimaryProductDataSource.DefaultRule', '8': {}, '10': 'defaultRule'},
+    {
+      '1': 'default_rule',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.PrimaryProductDataSource.DefaultRule',
+      '8': {},
+      '10': 'defaultRule'
+    },
   ],
   '3': [PrimaryProductDataSource_DefaultRule$json],
   '4': [PrimaryProductDataSource_Channel$json],
@@ -35,7 +71,15 @@ const PrimaryProductDataSource$json = {
 const PrimaryProductDataSource_DefaultRule$json = {
   '1': 'DefaultRule',
   '2': [
-    {'1': 'take_from_data_sources', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.DataSourceReference', '8': {}, '10': 'takeFromDataSources'},
+    {
+      '1': 'take_from_data_sources',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.DataSourceReference',
+      '8': {},
+      '10': 'takeFromDataSources'
+    },
   ],
 };
 
@@ -69,9 +113,35 @@ final $typed_data.Uint8List primaryProductDataSourceDescriptor = $convert.base64
 const SupplementalProductDataSource$json = {
   '1': 'SupplementalProductDataSource',
   '2': [
-    {'1': 'feed_label', '3': 4, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'feedLabel', '17': true},
-    {'1': 'content_language', '3': 5, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'contentLanguage', '17': true},
-    {'1': 'referencing_primary_data_sources', '3': 7, '4': 3, '5': 11, '6': '.google.shopping.merchant.datasources.v1beta.DataSourceReference', '8': {}, '10': 'referencingPrimaryDataSources'},
+    {
+      '1': 'feed_label',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'feedLabel',
+      '17': true
+    },
+    {
+      '1': 'content_language',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'contentLanguage',
+      '17': true
+    },
+    {
+      '1': 'referencing_primary_data_sources',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.datasources.v1beta.DataSourceReference',
+      '8': {},
+      '10': 'referencingPrimaryDataSources'
+    },
   ],
   '8': [
     {'1': '_feed_label'},
@@ -93,7 +163,14 @@ const LocalInventoryDataSource$json = {
   '1': 'LocalInventoryDataSource',
   '2': [
     {'1': 'feed_label', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'feedLabel'},
-    {'1': 'content_language', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'content_language',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
   ],
 };
 
@@ -108,22 +185,44 @@ const RegionalInventoryDataSource$json = {
   '1': 'RegionalInventoryDataSource',
   '2': [
     {'1': 'feed_label', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'feedLabel'},
-    {'1': 'content_language', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'content_language',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
   ],
 };
 
 /// Descriptor for `RegionalInventoryDataSource`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List regionalInventoryDataSourceDescriptor = $convert.base64Decode(
-    'ChtSZWdpb25hbEludmVudG9yeURhdGFTb3VyY2USJQoKZmVlZF9sYWJlbBgEIAEoCUIG4EEC4E'
-    'EFUglmZWVkTGFiZWwSMQoQY29udGVudF9sYW5ndWFnZRgFIAEoCUIG4EEC4EEFUg9jb250ZW50'
-    'TGFuZ3VhZ2U=');
+final $typed_data.Uint8List regionalInventoryDataSourceDescriptor =
+    $convert.base64Decode(
+        'ChtSZWdpb25hbEludmVudG9yeURhdGFTb3VyY2USJQoKZmVlZF9sYWJlbBgEIAEoCUIG4EEC4E'
+        'EFUglmZWVkTGFiZWwSMQoQY29udGVudF9sYW5ndWFnZRgFIAEoCUIG4EEC4EEFUg9jb250ZW50'
+        'TGFuZ3VhZ2U=');
 
 @$core.Deprecated('Use promotionDataSourceDescriptor instead')
 const PromotionDataSource$json = {
   '1': 'PromotionDataSource',
   '2': [
-    {'1': 'target_country', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'targetCountry'},
-    {'1': 'content_language', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'target_country',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'targetCountry'
+    },
+    {
+      '1': 'content_language',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
   ],
 };
 
@@ -138,8 +237,24 @@ const DataSourceReference$json = {
   '1': 'DataSourceReference',
   '2': [
     {'1': 'self', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'self'},
-    {'1': 'primary_data_source_name', '3': 3, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'primaryDataSourceName'},
-    {'1': 'supplemental_data_source_name', '3': 2, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'supplementalDataSourceName'},
+    {
+      '1': 'primary_data_source_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'primaryDataSourceName'
+    },
+    {
+      '1': 'supplemental_data_source_name',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'supplementalDataSourceName'
+    },
   ],
   '8': [
     {'1': 'data_source_id'},
@@ -152,4 +267,3 @@ final $typed_data.Uint8List dataSourceReferenceDescriptor = $convert.base64Decod
     'RhdGFfc291cmNlX25hbWUYAyABKAlCA+BBAUgAUhVwcmltYXJ5RGF0YVNvdXJjZU5hbWUSSAod'
     'c3VwcGxlbWVudGFsX2RhdGFfc291cmNlX25hbWUYAiABKAlCA+BBAUgAUhpzdXBwbGVtZW50YW'
     'xEYXRhU291cmNlTmFtZUIQCg5kYXRhX3NvdXJjZV9pZA==');
-

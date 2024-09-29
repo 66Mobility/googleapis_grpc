@@ -19,8 +19,22 @@ const DomainMapping$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'ssl_settings', '3': 3, '4': 1, '5': 11, '6': '.google.appengine.v1beta.SslSettings', '10': 'sslSettings'},
-    {'1': 'resource_records', '3': 4, '4': 3, '5': 11, '6': '.google.appengine.v1beta.ResourceRecord', '10': 'resourceRecords'},
+    {
+      '1': 'ssl_settings',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.SslSettings',
+      '10': 'sslSettings'
+    },
+    {
+      '1': 'resource_records',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ResourceRecord',
+      '10': 'resourceRecords'
+    },
   ],
 };
 
@@ -36,8 +50,21 @@ const SslSettings$json = {
   '1': 'SslSettings',
   '2': [
     {'1': 'certificate_id', '3': 1, '4': 1, '5': 9, '10': 'certificateId'},
-    {'1': 'ssl_management_type', '3': 3, '4': 1, '5': 14, '6': '.google.appengine.v1beta.SslSettings.SslManagementType', '10': 'sslManagementType'},
-    {'1': 'pending_managed_certificate_id', '3': 4, '4': 1, '5': 9, '10': 'pendingManagedCertificateId'},
+    {
+      '1': 'ssl_management_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.SslSettings.SslManagementType',
+      '10': 'sslManagementType'
+    },
+    {
+      '1': 'pending_managed_certificate_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'pendingManagedCertificateId'
+    },
   ],
   '4': [SslSettings_SslManagementType$json],
 };
@@ -65,7 +92,14 @@ const ResourceRecord$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'rrdata', '3': 2, '4': 1, '5': 9, '10': 'rrdata'},
-    {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.google.appengine.v1beta.ResourceRecord.RecordType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.ResourceRecord.RecordType',
+      '10': 'type'
+    },
   ],
   '4': [ResourceRecord_RecordType$json],
 };
@@ -86,4 +120,3 @@ final $typed_data.Uint8List resourceRecordDescriptor = $convert.base64Decode(
     'JkYXRhEkYKBHR5cGUYAyABKA4yMi5nb29nbGUuYXBwZW5naW5lLnYxYmV0YS5SZXNvdXJjZVJl'
     'Y29yZC5SZWNvcmRUeXBlUgR0eXBlIigKClJlY29yZFR5cGUSBQoBQRAAEggKBEFBQUEQARIJCg'
     'VDTkFNRRAC');
-

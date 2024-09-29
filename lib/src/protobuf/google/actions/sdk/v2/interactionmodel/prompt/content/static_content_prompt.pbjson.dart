@@ -17,13 +17,71 @@ import 'dart:typed_data' as $typed_data;
 const StaticContentPrompt$json = {
   '1': 'StaticContentPrompt',
   '2': [
-    {'1': 'card', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticCardPrompt', '9': 0, '10': 'card'},
-    {'1': 'image', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt', '9': 0, '10': 'image'},
-    {'1': 'table', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticTablePrompt', '9': 0, '10': 'table'},
-    {'1': 'media', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt', '9': 0, '10': 'media'},
-    {'1': 'list', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticListPrompt', '9': 0, '10': 'list'},
-    {'1': 'collection', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticCollectionPrompt', '9': 0, '10': 'collection'},
-    {'1': 'collection_browse', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticCollectionBrowsePrompt', '9': 0, '10': 'collectionBrowse'},
+    {
+      '1': 'card',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticCardPrompt',
+      '9': 0,
+      '10': 'card'
+    },
+    {
+      '1': 'image',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt',
+      '9': 0,
+      '10': 'image'
+    },
+    {
+      '1': 'table',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticTablePrompt',
+      '9': 0,
+      '10': 'table'
+    },
+    {
+      '1': 'media',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticMediaPrompt',
+      '9': 0,
+      '10': 'media'
+    },
+    {
+      '1': 'list',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticListPrompt',
+      '9': 0,
+      '10': 'list'
+    },
+    {
+      '1': 'collection',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticCollectionPrompt',
+      '9': 0,
+      '10': 'collection'
+    },
+    {
+      '1': 'collection_browse',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticCollectionBrowsePrompt',
+      '9': 0,
+      '10': 'collectionBrowse'
+    },
   ],
   '8': [
     {'1': 'content'},
@@ -45,4 +103,3 @@ final $typed_data.Uint8List staticContentPromptDescriptor = $convert.base64Decod
     'dEgAUgpjb2xsZWN0aW9uEnoKEWNvbGxlY3Rpb25fYnJvd3NlGAcgASgLMksuZ29vZ2xlLmFjdG'
     'lvbnMuc2RrLnYyLmludGVyYWN0aW9ubW9kZWwucHJvbXB0LlN0YXRpY0NvbGxlY3Rpb25Ccm93'
     'c2VQcm9tcHRIAFIQY29sbGVjdGlvbkJyb3dzZUIJCgdjb250ZW50');
-

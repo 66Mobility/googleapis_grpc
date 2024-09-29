@@ -42,4 +42,3 @@ final $typed_data.Uint8List staticImagePromptDescriptor = $convert.base64Decode(
     'ID4EECUgNhbHQSGwoGaGVpZ2h0GAMgASgFQgPgQQFSBmhlaWdodBIZCgV3aWR0aBgEIAEoBUID'
     '4EEBUgV3aWR0aCI+CglJbWFnZUZpbGwSDwoLVU5TUEVDSUZJRUQQABIICgRHUkFZEAESCQoFV0'
     'hJVEUQAhILCgdDUk9QUEVEEAM=');
-

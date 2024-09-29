@@ -22,12 +22,32 @@ const RequestHeader$json = {
     {'1': 'sdk_version', '3': 3, '4': 1, '5': 9, '10': 'sdkVersion'},
     {'1': 'os_version', '3': 4, '4': 1, '5': 9, '10': 'osVersion'},
     {'1': 'device_model', '3': 5, '4': 1, '5': 9, '10': 'deviceModel'},
-    {'1': 'sdk_type', '3': 6, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.RequestHeader.SdkType', '10': 'sdkType'},
+    {
+      '1': 'sdk_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.RequestHeader.SdkType',
+      '10': 'sdkType'
+    },
     {'1': 'maps_sdk_version', '3': 7, '4': 1, '5': 9, '10': 'mapsSdkVersion'},
     {'1': 'nav_sdk_version', '3': 8, '4': 1, '5': 9, '10': 'navSdkVersion'},
-    {'1': 'platform', '3': 9, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.RequestHeader.Platform', '10': 'platform'},
+    {
+      '1': 'platform',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.RequestHeader.Platform',
+      '10': 'platform'
+    },
     {'1': 'manufacturer', '3': 10, '4': 1, '5': 9, '10': 'manufacturer'},
-    {'1': 'android_api_level', '3': 11, '4': 1, '5': 5, '10': 'androidApiLevel'},
+    {
+      '1': 'android_api_level',
+      '3': 11,
+      '4': 1,
+      '5': 5,
+      '10': 'androidApiLevel'
+    },
     {'1': 'trace_id', '3': 12, '4': 1, '5': 9, '10': 'traceId'},
   ],
   '4': [RequestHeader_SdkType$json, RequestHeader_Platform$json],
@@ -70,4 +90,3 @@ final $typed_data.Uint8List requestHeaderDescriptor = $convert.base64Decode(
     'RUQQABIMCghDT05TVU1FUhABEgoKBkRSSVZFUhACEg4KCkpBVkFTQ1JJUFQQAyJDCghQbGF0Zm'
     '9ybRIYChRQTEFURk9STV9VTlNQRUNJRklFRBAAEgsKB0FORFJPSUQQARIHCgNJT1MQAhIHCgNX'
     'RUIQAw==');
-

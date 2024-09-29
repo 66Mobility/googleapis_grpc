@@ -17,10 +17,38 @@ import 'dart:typed_data' as $typed_data;
 const Media$json = {
   '1': 'Media',
   '2': [
-    {'1': 'media_type', '3': 8, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.conversation.Media.MediaType', '10': 'mediaType'},
-    {'1': 'start_offset', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startOffset'},
-    {'1': 'optional_media_controls', '3': 6, '4': 3, '5': 14, '6': '.google.actions.sdk.v2.conversation.Media.OptionalMediaControls', '10': 'optionalMediaControls'},
-    {'1': 'media_objects', '3': 7, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.MediaObject', '10': 'mediaObjects'},
+    {
+      '1': 'media_type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.conversation.Media.MediaType',
+      '10': 'mediaType'
+    },
+    {
+      '1': 'start_offset',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startOffset'
+    },
+    {
+      '1': 'optional_media_controls',
+      '3': 6,
+      '4': 3,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.conversation.Media.OptionalMediaControls',
+      '10': 'optionalMediaControls'
+    },
+    {
+      '1': 'media_objects',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.MediaObject',
+      '10': 'mediaObjects'
+    },
   ],
   '4': [Media_MediaType$json, Media_OptionalMediaControls$json],
 };
@@ -65,7 +93,14 @@ const MediaObject$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
     {'1': 'url', '3': 3, '4': 1, '5': 9, '10': 'url'},
-    {'1': 'image', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.MediaImage', '10': 'image'},
+    {
+      '1': 'image',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.MediaImage',
+      '10': 'image'
+    },
   ],
 };
 
@@ -79,8 +114,24 @@ final $typed_data.Uint8List mediaObjectDescriptor = $convert.base64Decode(
 const MediaImage$json = {
   '1': 'MediaImage',
   '2': [
-    {'1': 'large', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Image', '9': 0, '10': 'large'},
-    {'1': 'icon', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Image', '9': 0, '10': 'icon'},
+    {
+      '1': 'large',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Image',
+      '9': 0,
+      '10': 'large'
+    },
+    {
+      '1': 'icon',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Image',
+      '9': 0,
+      '10': 'icon'
+    },
   ],
   '8': [
     {'1': 'image'},
@@ -92,4 +143,3 @@ final $typed_data.Uint8List mediaImageDescriptor = $convert.base64Decode(
     'CgpNZWRpYUltYWdlEkEKBWxhcmdlGAEgASgLMikuZ29vZ2xlLmFjdGlvbnMuc2RrLnYyLmNvbn'
     'ZlcnNhdGlvbi5JbWFnZUgAUgVsYXJnZRI/CgRpY29uGAIgASgLMikuZ29vZ2xlLmFjdGlvbnMu'
     'c2RrLnYyLmNvbnZlcnNhdGlvbi5JbWFnZUgAUgRpY29uQgcKBWltYWdl');
-

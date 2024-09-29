@@ -30,4 +30,3 @@ final $typed_data.Uint8List releaseChannelDescriptor = $convert.base64Decode(
     'gCIAEoCVIOY3VycmVudFZlcnNpb24SJwoPcGVuZGluZ192ZXJzaW9uGAMgASgJUg5wZW5kaW5n'
     'VmVyc2lvbjpg6kFdCiVhY3Rpb25zLmdvb2dsZWFwaXMuY29tL1JlbGVhc2VDaGFubmVsEjRwcm'
     '9qZWN0cy97cHJvamVjdH0vcmVsZWFzZUNoYW5uZWxzL3tyZWxlYXNlX2NoYW5uZWx9');
-

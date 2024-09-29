@@ -42,36 +42,49 @@ class FirewallRule extends $pb.GeneratedMessage {
     return $result;
   }
   FirewallRule._() : super();
-  factory FirewallRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FirewallRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FirewallRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FirewallRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FirewallRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FirewallRule',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'priority', $pb.PbFieldType.O3)
-    ..e<FirewallRule_Action>(2, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE, defaultOrMaker: FirewallRule_Action.UNSPECIFIED_ACTION, valueOf: FirewallRule_Action.valueOf, enumValues: FirewallRule_Action.values)
+    ..e<FirewallRule_Action>(
+        2, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE,
+        defaultOrMaker: FirewallRule_Action.UNSPECIFIED_ACTION,
+        valueOf: FirewallRule_Action.valueOf,
+        enumValues: FirewallRule_Action.values)
     ..aOS(3, _omitFieldNames ? '' : 'sourceRange')
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FirewallRule clone() => FirewallRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FirewallRule copyWith(void Function(FirewallRule) updates) => super.copyWith((message) => updates(message as FirewallRule)) as FirewallRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FirewallRule copyWith(void Function(FirewallRule) updates) =>
+      super.copyWith((message) => updates(message as FirewallRule))
+          as FirewallRule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FirewallRule create() => FirewallRule._();
   FirewallRule createEmptyInstance() => create();
-  static $pb.PbList<FirewallRule> createRepeated() => $pb.PbList<FirewallRule>();
+  static $pb.PbList<FirewallRule> createRepeated() =>
+      $pb.PbList<FirewallRule>();
   @$core.pragma('dart2js:noInline')
-  static FirewallRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FirewallRule>(create);
+  static FirewallRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FirewallRule>(create);
   static FirewallRule? _defaultInstance;
 
   ///  A positive integer between [1, Int32.MaxValue-1] that defines the order of
@@ -83,7 +96,10 @@ class FirewallRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get priority => $_getIZ(0);
   @$pb.TagNumber(1)
-  set priority($core.int v) { $_setSignedInt32(0, v); }
+  set priority($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPriority() => $_has(0);
   @$pb.TagNumber(1)
@@ -93,7 +109,10 @@ class FirewallRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   FirewallRule_Action get action => $_getN(1);
   @$pb.TagNumber(2)
-  set action(FirewallRule_Action v) { setField(2, v); }
+  set action(FirewallRule_Action v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
@@ -113,7 +132,10 @@ class FirewallRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceRange => $_getSZ(2);
   @$pb.TagNumber(3)
-  set sourceRange($core.String v) { $_setString(2, v); }
+  set sourceRange($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSourceRange() => $_has(2);
   @$pb.TagNumber(3)
@@ -124,13 +146,16 @@ class FirewallRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get description => $_getSZ(3);
   @$pb.TagNumber(4)
-  set description($core.String v) { $_setString(3, v); }
+  set description($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
   void clearDescription() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

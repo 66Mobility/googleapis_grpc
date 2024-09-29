@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const ProjectProperties$json = {
   '1': 'ProjectProperties',
   '2': [
-    {'1': 'properties', '3': 1, '4': 3, '5': 11, '6': '.google.api.Property', '10': 'properties'},
+    {
+      '1': 'properties',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Property',
+      '10': 'properties'
+    },
   ],
 };
 
@@ -31,7 +38,14 @@ const Property$json = {
   '1': 'Property',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.api.Property.PropertyType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.Property.PropertyType',
+      '10': 'type'
+    },
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
   ],
   '4': [Property_PropertyType$json],
@@ -55,4 +69,3 @@ final $typed_data.Uint8List propertyDescriptor = $convert.base64Decode(
     'BpLlByb3BlcnR5LlByb3BlcnR5VHlwZVIEdHlwZRIgCgtkZXNjcmlwdGlvbhgDIAEoCVILZGVz'
     'Y3JpcHRpb24iTAoMUHJvcGVydHlUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCQoFSU5UNjQQARIICg'
     'RCT09MEAISCgoGU1RSSU5HEAMSCgoGRE9VQkxFEAQ=');
-

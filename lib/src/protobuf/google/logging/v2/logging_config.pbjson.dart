@@ -74,8 +74,24 @@ const IndexConfig$json = {
   '1': 'IndexConfig',
   '2': [
     {'1': 'field_path', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'fieldPath'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.logging.v2.IndexType', '8': {}, '10': 'type'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.v2.IndexType',
+      '8': {},
+      '10': 'type'
+    },
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
   ],
 };
 
@@ -92,15 +108,65 @@ const LogBucket$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
     {'1': 'retention_days', '3': 11, '4': 1, '5': 5, '10': 'retentionDays'},
     {'1': 'locked', '3': 9, '4': 1, '5': 8, '10': 'locked'},
-    {'1': 'lifecycle_state', '3': 12, '4': 1, '5': 14, '6': '.google.logging.v2.LifecycleState', '8': {}, '10': 'lifecycleState'},
-    {'1': 'analytics_enabled', '3': 14, '4': 1, '5': 8, '10': 'analyticsEnabled'},
-    {'1': 'restricted_fields', '3': 15, '4': 3, '5': 9, '10': 'restrictedFields'},
-    {'1': 'index_configs', '3': 17, '4': 3, '5': 11, '6': '.google.logging.v2.IndexConfig', '10': 'indexConfigs'},
-    {'1': 'cmek_settings', '3': 19, '4': 1, '5': 11, '6': '.google.logging.v2.CmekSettings', '10': 'cmekSettings'},
+    {
+      '1': 'lifecycle_state',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.v2.LifecycleState',
+      '8': {},
+      '10': 'lifecycleState'
+    },
+    {
+      '1': 'analytics_enabled',
+      '3': 14,
+      '4': 1,
+      '5': 8,
+      '10': 'analyticsEnabled'
+    },
+    {
+      '1': 'restricted_fields',
+      '3': 15,
+      '4': 3,
+      '5': 9,
+      '10': 'restrictedFields'
+    },
+    {
+      '1': 'index_configs',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.IndexConfig',
+      '10': 'indexConfigs'
+    },
+    {
+      '1': 'cmek_settings',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.CmekSettings',
+      '10': 'cmekSettings'
+    },
   ],
   '7': {},
 };
@@ -130,8 +196,24 @@ const LogView$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
     {'1': 'filter', '3': 7, '4': 1, '5': 9, '10': 'filter'},
   ],
   '7': {},
@@ -160,7 +242,15 @@ const LogSink$json = {
     {'1': 'filter', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'filter'},
     {'1': 'description', '3': 18, '4': 1, '5': 9, '8': {}, '10': 'description'},
     {'1': 'disabled', '3': 19, '4': 1, '5': 8, '8': {}, '10': 'disabled'},
-    {'1': 'exclusions', '3': 16, '4': 3, '5': 11, '6': '.google.logging.v2.LogExclusion', '8': {}, '10': 'exclusions'},
+    {
+      '1': 'exclusions',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogExclusion',
+      '8': {},
+      '10': 'exclusions'
+    },
     {
       '1': 'output_version_format',
       '3': 6,
@@ -170,11 +260,50 @@ const LogSink$json = {
       '8': {'3': true},
       '10': 'outputVersionFormat',
     },
-    {'1': 'writer_identity', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'writerIdentity'},
-    {'1': 'include_children', '3': 9, '4': 1, '5': 8, '8': {}, '10': 'includeChildren'},
-    {'1': 'bigquery_options', '3': 12, '4': 1, '5': 11, '6': '.google.logging.v2.BigQueryOptions', '8': {}, '9': 0, '10': 'bigqueryOptions'},
-    {'1': 'create_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'writer_identity',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'writerIdentity'
+    },
+    {
+      '1': 'include_children',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'includeChildren'
+    },
+    {
+      '1': 'bigquery_options',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.BigQueryOptions',
+      '8': {},
+      '9': 0,
+      '10': 'bigqueryOptions'
+    },
+    {
+      '1': 'create_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
   ],
   '4': [LogSink_VersionFormat$json],
   '7': {},
@@ -231,9 +360,32 @@ const Link$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'lifecycle_state', '3': 4, '4': 1, '5': 14, '6': '.google.logging.v2.LifecycleState', '8': {}, '10': 'lifecycleState'},
-    {'1': 'bigquery_dataset', '3': 5, '4': 1, '5': 11, '6': '.google.logging.v2.BigQueryDataset', '10': 'bigqueryDataset'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'lifecycle_state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.v2.LifecycleState',
+      '8': {},
+      '10': 'lifecycleState'
+    },
+    {
+      '1': 'bigquery_dataset',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.BigQueryDataset',
+      '10': 'bigqueryDataset'
+    },
   ],
   '7': {},
 };
@@ -257,8 +409,22 @@ final $typed_data.Uint8List linkDescriptor = $convert.base64Decode(
 const BigQueryOptions$json = {
   '1': 'BigQueryOptions',
   '2': [
-    {'1': 'use_partitioned_tables', '3': 1, '4': 1, '5': 8, '8': {}, '10': 'usePartitionedTables'},
-    {'1': 'uses_timestamp_column_partitioning', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'usesTimestampColumnPartitioning'},
+    {
+      '1': 'use_partitioned_tables',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'usePartitionedTables'
+    },
+    {
+      '1': 'uses_timestamp_column_partitioning',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'usesTimestampColumnPartitioning'
+    },
   ],
 };
 
@@ -288,7 +454,14 @@ final $typed_data.Uint8List listBucketsRequestDescriptor = $convert.base64Decode
 const ListBucketsResponse$json = {
   '1': 'ListBucketsResponse',
   '2': [
-    {'1': 'buckets', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.LogBucket', '10': 'buckets'},
+    {
+      '1': 'buckets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogBucket',
+      '10': 'buckets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -305,7 +478,15 @@ const CreateBucketRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'bucket_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'bucketId'},
-    {'1': 'bucket', '3': 3, '4': 1, '5': 11, '6': '.google.logging.v2.LogBucket', '8': {}, '10': 'bucket'},
+    {
+      '1': 'bucket',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogBucket',
+      '8': {},
+      '10': 'bucket'
+    },
   ],
 };
 
@@ -321,8 +502,24 @@ const UpdateBucketRequest$json = {
   '1': 'UpdateBucketRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'bucket', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogBucket', '8': {}, '10': 'bucket'},
-    {'1': 'update_mask', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'bucket',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogBucket',
+      '8': {},
+      '10': 'bucket'
+    },
+    {
+      '1': 'update_mask',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -392,7 +589,14 @@ final $typed_data.Uint8List listViewsRequestDescriptor = $convert.base64Decode(
 const ListViewsResponse$json = {
   '1': 'ListViewsResponse',
   '2': [
-    {'1': 'views', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.LogView', '10': 'views'},
+    {
+      '1': 'views',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogView',
+      '10': 'views'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -408,7 +612,15 @@ const CreateViewRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'view_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'viewId'},
-    {'1': 'view', '3': 3, '4': 1, '5': 11, '6': '.google.logging.v2.LogView', '8': {}, '10': 'view'},
+    {
+      '1': 'view',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogView',
+      '8': {},
+      '10': 'view'
+    },
   ],
 };
 
@@ -423,8 +635,24 @@ const UpdateViewRequest$json = {
   '1': 'UpdateViewRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'view', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogView', '8': {}, '10': 'view'},
-    {'1': 'update_mask', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'view',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogView',
+      '8': {},
+      '10': 'view'
+    },
+    {
+      '1': 'update_mask',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -480,7 +708,14 @@ final $typed_data.Uint8List listSinksRequestDescriptor = $convert.base64Decode(
 const ListSinksResponse$json = {
   '1': 'ListSinksResponse',
   '2': [
-    {'1': 'sinks', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.LogSink', '10': 'sinks'},
+    {
+      '1': 'sinks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogSink',
+      '10': 'sinks'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -508,8 +743,23 @@ const CreateSinkRequest$json = {
   '1': 'CreateSinkRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'sink', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogSink', '8': {}, '10': 'sink'},
-    {'1': 'unique_writer_identity', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'uniqueWriterIdentity'},
+    {
+      '1': 'sink',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogSink',
+      '8': {},
+      '10': 'sink'
+    },
+    {
+      '1': 'unique_writer_identity',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'uniqueWriterIdentity'
+    },
   ],
 };
 
@@ -525,9 +775,32 @@ const UpdateSinkRequest$json = {
   '1': 'UpdateSinkRequest',
   '2': [
     {'1': 'sink_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'sinkName'},
-    {'1': 'sink', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogSink', '8': {}, '10': 'sink'},
-    {'1': 'unique_writer_identity', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'uniqueWriterIdentity'},
-    {'1': 'update_mask', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'sink',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogSink',
+      '8': {},
+      '10': 'sink'
+    },
+    {
+      '1': 'unique_writer_identity',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'uniqueWriterIdentity'
+    },
+    {
+      '1': 'update_mask',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -557,7 +830,15 @@ const CreateLinkRequest$json = {
   '1': 'CreateLinkRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'link', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.Link', '8': {}, '10': 'link'},
+    {
+      '1': 'link',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.Link',
+      '8': {},
+      '10': 'link'
+    },
     {'1': 'link_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'linkId'},
   ],
 };
@@ -601,7 +882,14 @@ final $typed_data.Uint8List listLinksRequestDescriptor = $convert.base64Decode(
 const ListLinksResponse$json = {
   '1': 'ListLinksResponse',
   '2': [
-    {'1': 'links', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.Link', '10': 'links'},
+    {
+      '1': 'links',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.Link',
+      '10': 'links'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -632,8 +920,24 @@ const LogExclusion$json = {
     {'1': 'description', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'description'},
     {'1': 'filter', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'filter'},
     {'1': 'disabled', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'disabled'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
   ],
   '7': {},
 };
@@ -671,7 +975,14 @@ final $typed_data.Uint8List listExclusionsRequestDescriptor = $convert.base64Dec
 const ListExclusionsResponse$json = {
   '1': 'ListExclusionsResponse',
   '2': [
-    {'1': 'exclusions', '3': 1, '4': 3, '5': 11, '6': '.google.logging.v2.LogExclusion', '10': 'exclusions'},
+    {
+      '1': 'exclusions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.logging.v2.LogExclusion',
+      '10': 'exclusions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -700,7 +1011,15 @@ const CreateExclusionRequest$json = {
   '1': 'CreateExclusionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'exclusion', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogExclusion', '8': {}, '10': 'exclusion'},
+    {
+      '1': 'exclusion',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogExclusion',
+      '8': {},
+      '10': 'exclusion'
+    },
   ],
 };
 
@@ -715,8 +1034,24 @@ const UpdateExclusionRequest$json = {
   '1': 'UpdateExclusionRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'exclusion', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.LogExclusion', '8': {}, '10': 'exclusion'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'exclusion',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.LogExclusion',
+      '8': {},
+      '10': 'exclusion'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -737,9 +1072,10 @@ const DeleteExclusionRequest$json = {
 };
 
 /// Descriptor for `DeleteExclusionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteExclusionRequestDescriptor = $convert.base64Decode(
-    'ChZEZWxldGVFeGNsdXNpb25SZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbG9nZ2luZy'
-    '5nb29nbGVhcGlzLmNvbS9Mb2dFeGNsdXNpb25SBG5hbWU=');
+final $typed_data.Uint8List deleteExclusionRequestDescriptor =
+    $convert.base64Decode(
+        'ChZEZWxldGVFeGNsdXNpb25SZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbG9nZ2luZy'
+        '5nb29nbGVhcGlzLmNvbS9Mb2dFeGNsdXNpb25SBG5hbWU=');
 
 @$core.Deprecated('Use getCmekSettingsRequestDescriptor instead')
 const GetCmekSettingsRequest$json = {
@@ -750,17 +1086,34 @@ const GetCmekSettingsRequest$json = {
 };
 
 /// Descriptor for `GetCmekSettingsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getCmekSettingsRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRDbWVrU2V0dGluZ3NSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbG9nZ2luZy'
-    '5nb29nbGVhcGlzLmNvbS9DbWVrU2V0dGluZ3NSBG5hbWU=');
+final $typed_data.Uint8List getCmekSettingsRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRDbWVrU2V0dGluZ3NSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbG9nZ2luZy'
+        '5nb29nbGVhcGlzLmNvbS9DbWVrU2V0dGluZ3NSBG5hbWU=');
 
 @$core.Deprecated('Use updateCmekSettingsRequestDescriptor instead')
 const UpdateCmekSettingsRequest$json = {
   '1': 'UpdateCmekSettingsRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'cmek_settings', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.CmekSettings', '8': {}, '10': 'cmekSettings'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'cmek_settings',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.CmekSettings',
+      '8': {},
+      '10': 'cmekSettings'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -777,8 +1130,21 @@ const CmekSettings$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'kms_key_name', '3': 2, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'kms_key_version_name', '3': 4, '4': 1, '5': 9, '10': 'kmsKeyVersionName'},
-    {'1': 'service_account_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'serviceAccountId'},
+    {
+      '1': 'kms_key_version_name',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'kmsKeyVersionName'
+    },
+    {
+      '1': 'service_account_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'serviceAccountId'
+    },
   ],
   '7': {},
 };
@@ -811,8 +1177,24 @@ const UpdateSettingsRequest$json = {
   '1': 'UpdateSettingsRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'settings', '3': 2, '4': 1, '5': 11, '6': '.google.logging.v2.Settings', '8': {}, '10': 'settings'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'settings',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.Settings',
+      '8': {},
+      '10': 'settings'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -829,9 +1211,30 @@ const Settings$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'kms_key_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyName'},
-    {'1': 'kms_service_account_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'kmsServiceAccountId'},
-    {'1': 'storage_location', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'storageLocation'},
-    {'1': 'disable_default_sink', '3': 5, '4': 1, '5': 8, '8': {}, '10': 'disableDefaultSink'},
+    {
+      '1': 'kms_service_account_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'kmsServiceAccountId'
+    },
+    {
+      '1': 'storage_location',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'storageLocation'
+    },
+    {
+      '1': 'disable_default_sink',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'disableDefaultSink'
+    },
   ],
   '7': {},
 };
@@ -867,11 +1270,45 @@ final $typed_data.Uint8List copyLogEntriesRequestDescriptor = $convert.base64Dec
 const CopyLogEntriesMetadata$json = {
   '1': 'CopyLogEntriesMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.logging.v2.OperationState', '10': 'state'},
-    {'1': 'cancellation_requested', '3': 4, '4': 1, '5': 8, '10': 'cancellationRequested'},
-    {'1': 'request', '3': 5, '4': 1, '5': 11, '6': '.google.logging.v2.CopyLogEntriesRequest', '10': 'request'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.v2.OperationState',
+      '10': 'state'
+    },
+    {
+      '1': 'cancellation_requested',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'cancellationRequested'
+    },
+    {
+      '1': 'request',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.CopyLogEntriesRequest',
+      '10': 'request'
+    },
     {'1': 'progress', '3': 6, '4': 1, '5': 5, '10': 'progress'},
     {'1': 'writer_identity', '3': 7, '4': 1, '5': 9, '10': 'writerIdentity'},
   ],
@@ -891,24 +1328,68 @@ final $typed_data.Uint8List copyLogEntriesMetadataDescriptor = $convert.base64De
 const CopyLogEntriesResponse$json = {
   '1': 'CopyLogEntriesResponse',
   '2': [
-    {'1': 'log_entries_copied_count', '3': 1, '4': 1, '5': 3, '10': 'logEntriesCopiedCount'},
+    {
+      '1': 'log_entries_copied_count',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '10': 'logEntriesCopiedCount'
+    },
   ],
 };
 
 /// Descriptor for `CopyLogEntriesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List copyLogEntriesResponseDescriptor = $convert.base64Decode(
-    'ChZDb3B5TG9nRW50cmllc1Jlc3BvbnNlEjcKGGxvZ19lbnRyaWVzX2NvcGllZF9jb3VudBgBIA'
-    'EoA1IVbG9nRW50cmllc0NvcGllZENvdW50');
+final $typed_data.Uint8List copyLogEntriesResponseDescriptor =
+    $convert.base64Decode(
+        'ChZDb3B5TG9nRW50cmllc1Jlc3BvbnNlEjcKGGxvZ19lbnRyaWVzX2NvcGllZF9jb3VudBgBIA'
+        'EoA1IVbG9nRW50cmllc0NvcGllZENvdW50');
 
 @$core.Deprecated('Use bucketMetadataDescriptor instead')
 const BucketMetadata$json = {
   '1': 'BucketMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.logging.v2.OperationState', '10': 'state'},
-    {'1': 'create_bucket_request', '3': 4, '4': 1, '5': 11, '6': '.google.logging.v2.CreateBucketRequest', '9': 0, '10': 'createBucketRequest'},
-    {'1': 'update_bucket_request', '3': 5, '4': 1, '5': 11, '6': '.google.logging.v2.UpdateBucketRequest', '9': 0, '10': 'updateBucketRequest'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.v2.OperationState',
+      '10': 'state'
+    },
+    {
+      '1': 'create_bucket_request',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.CreateBucketRequest',
+      '9': 0,
+      '10': 'createBucketRequest'
+    },
+    {
+      '1': 'update_bucket_request',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.UpdateBucketRequest',
+      '9': 0,
+      '10': 'updateBucketRequest'
+    },
   ],
   '8': [
     {'1': 'request'},
@@ -929,11 +1410,48 @@ final $typed_data.Uint8List bucketMetadataDescriptor = $convert.base64Decode(
 const LinkMetadata$json = {
   '1': 'LinkMetadata',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.logging.v2.OperationState', '10': 'state'},
-    {'1': 'create_link_request', '3': 4, '4': 1, '5': 11, '6': '.google.logging.v2.CreateLinkRequest', '9': 0, '10': 'createLinkRequest'},
-    {'1': 'delete_link_request', '3': 5, '4': 1, '5': 11, '6': '.google.logging.v2.DeleteLinkRequest', '9': 0, '10': 'deleteLinkRequest'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.logging.v2.OperationState',
+      '10': 'state'
+    },
+    {
+      '1': 'create_link_request',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.CreateLinkRequest',
+      '9': 0,
+      '10': 'createLinkRequest'
+    },
+    {
+      '1': 'delete_link_request',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.logging.v2.DeleteLinkRequest',
+      '9': 0,
+      '10': 'deleteLinkRequest'
+    },
   ],
   '8': [
     {'1': 'request'},
@@ -954,7 +1472,13 @@ final $typed_data.Uint8List linkMetadataDescriptor = $convert.base64Decode(
 const LocationMetadata$json = {
   '1': 'LocationMetadata',
   '2': [
-    {'1': 'log_analytics_enabled', '3': 1, '4': 1, '5': 8, '10': 'logAnalyticsEnabled'},
+    {
+      '1': 'log_analytics_enabled',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'logAnalyticsEnabled'
+    },
   ],
 };
 
@@ -962,4 +1486,3 @@ const LocationMetadata$json = {
 final $typed_data.Uint8List locationMetadataDescriptor = $convert.base64Decode(
     'ChBMb2NhdGlvbk1ldGFkYXRhEjIKFWxvZ19hbmFseXRpY3NfZW5hYmxlZBgBIAEoCFITbG9nQW'
     '5hbHl0aWNzRW5hYmxlZA==');
-

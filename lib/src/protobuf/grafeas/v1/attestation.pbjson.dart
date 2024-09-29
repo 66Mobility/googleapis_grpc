@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AttestationNote$json = {
   '1': 'AttestationNote',
   '2': [
-    {'1': 'hint', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.AttestationNote.Hint', '10': 'hint'},
+    {
+      '1': 'hint',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.AttestationNote.Hint',
+      '10': 'hint'
+    },
   ],
   '3': [AttestationNote_Hint$json],
 };
@@ -26,7 +33,13 @@ const AttestationNote$json = {
 const AttestationNote_Hint$json = {
   '1': 'Hint',
   '2': [
-    {'1': 'human_readable_name', '3': 1, '4': 1, '5': 9, '10': 'humanReadableName'},
+    {
+      '1': 'human_readable_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'humanReadableName'
+    },
   ],
 };
 
@@ -45,16 +58,36 @@ const Jwt$json = {
 };
 
 /// Descriptor for `Jwt`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List jwtDescriptor = $convert.base64Decode(
-    'CgNKd3QSHwoLY29tcGFjdF9qd3QYASABKAlSCmNvbXBhY3RKd3Q=');
+final $typed_data.Uint8List jwtDescriptor = $convert
+    .base64Decode('CgNKd3QSHwoLY29tcGFjdF9qd3QYASABKAlSCmNvbXBhY3RKd3Q=');
 
 @$core.Deprecated('Use attestationOccurrenceDescriptor instead')
 const AttestationOccurrence$json = {
   '1': 'AttestationOccurrence',
   '2': [
-    {'1': 'serialized_payload', '3': 1, '4': 1, '5': 12, '10': 'serializedPayload'},
-    {'1': 'signatures', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.Signature', '10': 'signatures'},
-    {'1': 'jwts', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.Jwt', '10': 'jwts'},
+    {
+      '1': 'serialized_payload',
+      '3': 1,
+      '4': 1,
+      '5': 12,
+      '10': 'serializedPayload'
+    },
+    {
+      '1': 'signatures',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Signature',
+      '10': 'signatures'
+    },
+    {
+      '1': 'jwts',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Jwt',
+      '10': 'jwts'
+    },
   ],
 };
 
@@ -63,4 +96,3 @@ final $typed_data.Uint8List attestationOccurrenceDescriptor = $convert.base64Dec
     'ChVBdHRlc3RhdGlvbk9jY3VycmVuY2USLQoSc2VyaWFsaXplZF9wYXlsb2FkGAEgASgMUhFzZX'
     'JpYWxpemVkUGF5bG9hZBI1CgpzaWduYXR1cmVzGAIgAygLMhUuZ3JhZmVhcy52MS5TaWduYXR1'
     'cmVSCnNpZ25hdHVyZXMSIwoEand0cxgDIAMoCzIPLmdyYWZlYXMudjEuSnd0UgRqd3Rz');
-

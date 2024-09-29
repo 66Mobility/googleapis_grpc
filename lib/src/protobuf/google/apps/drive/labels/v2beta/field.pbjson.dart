@@ -17,28 +17,182 @@ import 'dart:typed_data' as $typed_data;
 const Field$json = {
   '1': 'Field',
   '2': [
-    {'1': 'text_options', '3': 16, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.TextOptions', '9': 0, '10': 'textOptions'},
-    {'1': 'integer_options', '3': 18, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.IntegerOptions', '9': 0, '10': 'integerOptions'},
-    {'1': 'date_options', '3': 19, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.DateOptions', '9': 0, '10': 'dateOptions'},
-    {'1': 'selection_options', '3': 20, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions', '9': 0, '10': 'selectionOptions'},
-    {'1': 'user_options', '3': 21, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.UserOptions', '9': 0, '10': 'userOptions'},
+    {
+      '1': 'text_options',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.TextOptions',
+      '9': 0,
+      '10': 'textOptions'
+    },
+    {
+      '1': 'integer_options',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.IntegerOptions',
+      '9': 0,
+      '10': 'integerOptions'
+    },
+    {
+      '1': 'date_options',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.DateOptions',
+      '9': 0,
+      '10': 'dateOptions'
+    },
+    {
+      '1': 'selection_options',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions',
+      '9': 0,
+      '10': 'selectionOptions'
+    },
+    {
+      '1': 'user_options',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.UserOptions',
+      '9': 0,
+      '10': 'userOptions'
+    },
     {'1': 'id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'id'},
     {'1': 'query_key', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'queryKey'},
-    {'1': 'properties', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.Properties', '10': 'properties'},
-    {'1': 'lifecycle', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Lifecycle', '8': {}, '10': 'lifecycle'},
-    {'1': 'display_hints', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.DisplayHints', '8': {}, '10': 'displayHints'},
-    {'1': 'schema_capabilities', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.SchemaCapabilities', '8': {}, '10': 'schemaCapabilities'},
-    {'1': 'applied_capabilities', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.AppliedCapabilities', '8': {}, '10': 'appliedCapabilities'},
-    {'1': 'creator', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'creator'},
-    {'1': 'create_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'updater', '3': 10, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'updater'},
-    {'1': 'update_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'publisher', '3': 12, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'publisher'},
-    {'1': 'disabler', '3': 13, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'disabler'},
-    {'1': 'disable_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'disableTime'},
-    {'1': 'lock_status', '3': 15, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.LockStatus', '8': {}, '10': 'lockStatus'},
+    {
+      '1': 'properties',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.Properties',
+      '10': 'properties'
+    },
+    {
+      '1': 'lifecycle',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Lifecycle',
+      '8': {},
+      '10': 'lifecycle'
+    },
+    {
+      '1': 'display_hints',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.DisplayHints',
+      '8': {},
+      '10': 'displayHints'
+    },
+    {
+      '1': 'schema_capabilities',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.SchemaCapabilities',
+      '8': {},
+      '10': 'schemaCapabilities'
+    },
+    {
+      '1': 'applied_capabilities',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.AppliedCapabilities',
+      '8': {},
+      '10': 'appliedCapabilities'
+    },
+    {
+      '1': 'creator',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'creator'
+    },
+    {
+      '1': 'create_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'updater',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'updater'
+    },
+    {
+      '1': 'update_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'publisher',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'publisher'
+    },
+    {
+      '1': 'disabler',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'disabler'
+    },
+    {
+      '1': 'disable_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'disableTime'
+    },
+    {
+      '1': 'lock_status',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.LockStatus',
+      '8': {},
+      '10': 'lockStatus'
+    },
   ],
-  '3': [Field_Properties$json, Field_DisplayHints$json, Field_SchemaCapabilities$json, Field_AppliedCapabilities$json, Field_ListOptions$json, Field_TextOptions$json, Field_IntegerOptions$json, Field_DateOptions$json, Field_SelectionOptions$json, Field_UserOptions$json],
+  '3': [
+    Field_Properties$json,
+    Field_DisplayHints$json,
+    Field_SchemaCapabilities$json,
+    Field_AppliedCapabilities$json,
+    Field_ListOptions$json,
+    Field_TextOptions$json,
+    Field_IntegerOptions$json,
+    Field_DateOptions$json,
+    Field_SelectionOptions$json,
+    Field_UserOptions$json
+  ],
   '8': [
     {'1': 'type'},
   ],
@@ -50,7 +204,14 @@ const Field_Properties$json = {
   '2': [
     {'1': 'display_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'required', '3': 2, '4': 1, '5': 8, '10': 'required'},
-    {'1': 'insert_before_field', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'insertBeforeField'},
+    {
+      '1': 'insert_before_field',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'insertBeforeField'
+    },
   ],
 };
 
@@ -116,10 +277,33 @@ const Field_IntegerOptions$json = {
 const Field_DateOptions$json = {
   '1': 'DateOptions',
   '2': [
-    {'1': 'date_format_type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2beta.Field.DateOptions.DateFormat', '10': 'dateFormatType'},
+    {
+      '1': 'date_format_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2beta.Field.DateOptions.DateFormat',
+      '10': 'dateFormatType'
+    },
     {'1': 'date_format', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'dateFormat'},
-    {'1': 'min_value', '3': 3, '4': 1, '5': 11, '6': '.google.type.Date', '8': {}, '10': 'minValue'},
-    {'1': 'max_value', '3': 4, '4': 1, '5': 11, '6': '.google.type.Date', '8': {}, '10': 'maxValue'},
+    {
+      '1': 'min_value',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '8': {},
+      '10': 'minValue'
+    },
+    {
+      '1': 'max_value',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '8': {},
+      '10': 'maxValue'
+    },
   ],
   '4': [Field_DateOptions_DateFormat$json],
 };
@@ -138,8 +322,22 @@ const Field_DateOptions_DateFormat$json = {
 const Field_SelectionOptions$json = {
   '1': 'SelectionOptions',
   '2': [
-    {'1': 'list_options', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.ListOptions', '10': 'listOptions'},
-    {'1': 'choices', '3': 2, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice', '10': 'choices'},
+    {
+      '1': 'list_options',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.ListOptions',
+      '10': 'listOptions'
+    },
+    {
+      '1': 'choices',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice',
+      '10': 'choices'
+    },
   ],
   '3': [Field_SelectionOptions_Choice$json],
 };
@@ -149,22 +347,142 @@ const Field_SelectionOptions_Choice$json = {
   '1': 'Choice',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'properties', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.Properties', '10': 'properties'},
-    {'1': 'lifecycle', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Lifecycle', '8': {}, '10': 'lifecycle'},
-    {'1': 'display_hints', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.DisplayHints', '8': {}, '10': 'displayHints'},
-    {'1': 'schema_capabilities', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.SchemaCapabilities', '8': {}, '10': 'schemaCapabilities'},
-    {'1': 'applied_capabilities', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.AppliedCapabilities', '8': {}, '10': 'appliedCapabilities'},
-    {'1': 'creator', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'creator'},
-    {'1': 'create_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'updater', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'updater'},
-    {'1': 'update_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'publisher', '3': 11, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'publisher'},
-    {'1': 'publish_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'publishTime'},
-    {'1': 'disabler', '3': 13, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.UserInfo', '8': {}, '10': 'disabler'},
-    {'1': 'disable_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'disableTime'},
-    {'1': 'lock_status', '3': 15, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.LockStatus', '8': {}, '10': 'lockStatus'},
+    {
+      '1': 'properties',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.Properties',
+      '10': 'properties'
+    },
+    {
+      '1': 'lifecycle',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Lifecycle',
+      '8': {},
+      '10': 'lifecycle'
+    },
+    {
+      '1': 'display_hints',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.DisplayHints',
+      '8': {},
+      '10': 'displayHints'
+    },
+    {
+      '1': 'schema_capabilities',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.SchemaCapabilities',
+      '8': {},
+      '10': 'schemaCapabilities'
+    },
+    {
+      '1': 'applied_capabilities',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.labels.v2beta.Field.SelectionOptions.Choice.AppliedCapabilities',
+      '8': {},
+      '10': 'appliedCapabilities'
+    },
+    {
+      '1': 'creator',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'creator'
+    },
+    {
+      '1': 'create_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'updater',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'updater'
+    },
+    {
+      '1': 'update_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'publisher',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'publisher'
+    },
+    {
+      '1': 'publish_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'publishTime'
+    },
+    {
+      '1': 'disabler',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.UserInfo',
+      '8': {},
+      '10': 'disabler'
+    },
+    {
+      '1': 'disable_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'disableTime'
+    },
+    {
+      '1': 'lock_status',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.LockStatus',
+      '8': {},
+      '10': 'lockStatus'
+    },
   ],
-  '3': [Field_SelectionOptions_Choice_Properties$json, Field_SelectionOptions_Choice_DisplayHints$json, Field_SelectionOptions_Choice_SchemaCapabilities$json, Field_SelectionOptions_Choice_AppliedCapabilities$json],
+  '3': [
+    Field_SelectionOptions_Choice_Properties$json,
+    Field_SelectionOptions_Choice_DisplayHints$json,
+    Field_SelectionOptions_Choice_SchemaCapabilities$json,
+    Field_SelectionOptions_Choice_AppliedCapabilities$json
+  ],
 };
 
 @$core.Deprecated('Use fieldDescriptor instead')
@@ -173,8 +491,22 @@ const Field_SelectionOptions_Choice_Properties$json = {
   '2': [
     {'1': 'display_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'badge_config', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.BadgeConfig', '10': 'badgeConfig'},
-    {'1': 'insert_before_choice', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'insertBeforeChoice'},
+    {
+      '1': 'badge_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.BadgeConfig',
+      '10': 'badgeConfig'
+    },
+    {
+      '1': 'insert_before_choice',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'insertBeforeChoice'
+    },
   ],
 };
 
@@ -185,8 +517,22 @@ const Field_SelectionOptions_Choice_DisplayHints$json = {
     {'1': 'disabled', '3': 1, '4': 1, '5': 8, '10': 'disabled'},
     {'1': 'hidden_in_search', '3': 2, '4': 1, '5': 8, '10': 'hiddenInSearch'},
     {'1': 'shown_in_apply', '3': 3, '4': 1, '5': 8, '10': 'shownInApply'},
-    {'1': 'badge_colors', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.BadgeColors', '10': 'badgeColors'},
-    {'1': 'dark_badge_colors', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.BadgeColors', '10': 'darkBadgeColors'},
+    {
+      '1': 'badge_colors',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.BadgeColors',
+      '10': 'badgeColors'
+    },
+    {
+      '1': 'dark_badge_colors',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.BadgeColors',
+      '10': 'darkBadgeColors'
+    },
     {'1': 'badge_priority', '3': 6, '4': 1, '5': 3, '10': 'badgePriority'},
   ],
 };
@@ -216,7 +562,14 @@ const Field_SelectionOptions_Choice_AppliedCapabilities$json = {
 const Field_UserOptions$json = {
   '1': 'UserOptions',
   '2': [
-    {'1': 'list_options', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.labels.v2beta.Field.ListOptions', '10': 'listOptions'},
+    {
+      '1': 'list_options',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.Field.ListOptions',
+      '10': 'listOptions'
+    },
   ],
 };
 
@@ -314,4 +667,3 @@ final $typed_data.Uint8List fieldDescriptor = $convert.base64Decode(
     'NlYXJjaBgCIAEoCFIJY2FuU2VhcmNoEh0KCmNhbl9zZWxlY3QYAyABKAhSCWNhblNlbGVjdBpk'
     'CgtVc2VyT3B0aW9ucxJVCgxsaXN0X29wdGlvbnMYASABKAsyMi5nb29nbGUuYXBwcy5kcml2ZS'
     '5sYWJlbHMudjJiZXRhLkZpZWxkLkxpc3RPcHRpb25zUgtsaXN0T3B0aW9uc0IGCgR0eXBl');
-

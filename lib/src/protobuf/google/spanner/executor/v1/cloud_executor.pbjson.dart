@@ -18,7 +18,14 @@ const SpannerAsyncActionRequest$json = {
   '1': 'SpannerAsyncActionRequest',
   '2': [
     {'1': 'action_id', '3': 1, '4': 1, '5': 5, '10': 'actionId'},
-    {'1': 'action', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.SpannerAction', '10': 'action'},
+    {
+      '1': 'action',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.SpannerAction',
+      '10': 'action'
+    },
   ],
 };
 
@@ -33,39 +40,190 @@ const SpannerAsyncActionResponse$json = {
   '1': 'SpannerAsyncActionResponse',
   '2': [
     {'1': 'action_id', '3': 1, '4': 1, '5': 5, '10': 'actionId'},
-    {'1': 'outcome', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.SpannerActionOutcome', '10': 'outcome'},
+    {
+      '1': 'outcome',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.SpannerActionOutcome',
+      '10': 'outcome'
+    },
   ],
 };
 
 /// Descriptor for `SpannerAsyncActionResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List spannerAsyncActionResponseDescriptor = $convert.base64Decode(
-    'ChpTcGFubmVyQXN5bmNBY3Rpb25SZXNwb25zZRIbCglhY3Rpb25faWQYASABKAVSCGFjdGlvbk'
-    'lkEkoKB291dGNvbWUYAiABKAsyMC5nb29nbGUuc3Bhbm5lci5leGVjdXRvci52MS5TcGFubmVy'
-    'QWN0aW9uT3V0Y29tZVIHb3V0Y29tZQ==');
+final $typed_data.Uint8List spannerAsyncActionResponseDescriptor =
+    $convert.base64Decode(
+        'ChpTcGFubmVyQXN5bmNBY3Rpb25SZXNwb25zZRIbCglhY3Rpb25faWQYASABKAVSCGFjdGlvbk'
+        'lkEkoKB291dGNvbWUYAiABKAsyMC5nb29nbGUuc3Bhbm5lci5leGVjdXRvci52MS5TcGFubmVy'
+        'QWN0aW9uT3V0Y29tZVIHb3V0Y29tZQ==');
 
 @$core.Deprecated('Use spannerActionDescriptor instead')
 const SpannerAction$json = {
   '1': 'SpannerAction',
   '2': [
     {'1': 'database_path', '3': 1, '4': 1, '5': 9, '10': 'databasePath'},
-    {'1': 'spanner_options', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.SpannerOptions', '10': 'spannerOptions'},
-    {'1': 'start', '3': 10, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.StartTransactionAction', '9': 0, '10': 'start'},
-    {'1': 'finish', '3': 11, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.FinishTransactionAction', '9': 0, '10': 'finish'},
-    {'1': 'read', '3': 20, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ReadAction', '9': 0, '10': 'read'},
-    {'1': 'query', '3': 21, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.QueryAction', '9': 0, '10': 'query'},
-    {'1': 'mutation', '3': 22, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.MutationAction', '9': 0, '10': 'mutation'},
-    {'1': 'dml', '3': 23, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.DmlAction', '9': 0, '10': 'dml'},
-    {'1': 'batch_dml', '3': 24, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.BatchDmlAction', '9': 0, '10': 'batchDml'},
-    {'1': 'write', '3': 25, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.WriteMutationsAction', '9': 0, '10': 'write'},
-    {'1': 'partitioned_update', '3': 27, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.PartitionedUpdateAction', '9': 0, '10': 'partitionedUpdate'},
-    {'1': 'admin', '3': 30, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.AdminAction', '9': 0, '10': 'admin'},
-    {'1': 'start_batch_txn', '3': 40, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.StartBatchTransactionAction', '9': 0, '10': 'startBatchTxn'},
-    {'1': 'close_batch_txn', '3': 41, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CloseBatchTransactionAction', '9': 0, '10': 'closeBatchTxn'},
-    {'1': 'generate_db_partitions_read', '3': 42, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.GenerateDbPartitionsForReadAction', '9': 0, '10': 'generateDbPartitionsRead'},
-    {'1': 'generate_db_partitions_query', '3': 43, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.GenerateDbPartitionsForQueryAction', '9': 0, '10': 'generateDbPartitionsQuery'},
-    {'1': 'execute_partition', '3': 44, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ExecutePartitionAction', '9': 0, '10': 'executePartition'},
-    {'1': 'execute_change_stream_query', '3': 50, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ExecuteChangeStreamQuery', '9': 0, '10': 'executeChangeStreamQuery'},
-    {'1': 'query_cancellation', '3': 51, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.QueryCancellationAction', '9': 0, '10': 'queryCancellation'},
+    {
+      '1': 'spanner_options',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.SpannerOptions',
+      '10': 'spannerOptions'
+    },
+    {
+      '1': 'start',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.StartTransactionAction',
+      '9': 0,
+      '10': 'start'
+    },
+    {
+      '1': 'finish',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.FinishTransactionAction',
+      '9': 0,
+      '10': 'finish'
+    },
+    {
+      '1': 'read',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ReadAction',
+      '9': 0,
+      '10': 'read'
+    },
+    {
+      '1': 'query',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryAction',
+      '9': 0,
+      '10': 'query'
+    },
+    {
+      '1': 'mutation',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.MutationAction',
+      '9': 0,
+      '10': 'mutation'
+    },
+    {
+      '1': 'dml',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DmlAction',
+      '9': 0,
+      '10': 'dml'
+    },
+    {
+      '1': 'batch_dml',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.BatchDmlAction',
+      '9': 0,
+      '10': 'batchDml'
+    },
+    {
+      '1': 'write',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.WriteMutationsAction',
+      '9': 0,
+      '10': 'write'
+    },
+    {
+      '1': 'partitioned_update',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.PartitionedUpdateAction',
+      '9': 0,
+      '10': 'partitionedUpdate'
+    },
+    {
+      '1': 'admin',
+      '3': 30,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.AdminAction',
+      '9': 0,
+      '10': 'admin'
+    },
+    {
+      '1': 'start_batch_txn',
+      '3': 40,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.StartBatchTransactionAction',
+      '9': 0,
+      '10': 'startBatchTxn'
+    },
+    {
+      '1': 'close_batch_txn',
+      '3': 41,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CloseBatchTransactionAction',
+      '9': 0,
+      '10': 'closeBatchTxn'
+    },
+    {
+      '1': 'generate_db_partitions_read',
+      '3': 42,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.GenerateDbPartitionsForReadAction',
+      '9': 0,
+      '10': 'generateDbPartitionsRead'
+    },
+    {
+      '1': 'generate_db_partitions_query',
+      '3': 43,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.GenerateDbPartitionsForQueryAction',
+      '9': 0,
+      '10': 'generateDbPartitionsQuery'
+    },
+    {
+      '1': 'execute_partition',
+      '3': 44,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ExecutePartitionAction',
+      '9': 0,
+      '10': 'executePartition'
+    },
+    {
+      '1': 'execute_change_stream_query',
+      '3': 50,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ExecuteChangeStreamQuery',
+      '9': 0,
+      '10': 'executeChangeStreamQuery'
+    },
+    {
+      '1': 'query_cancellation',
+      '3': 51,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryCancellationAction',
+      '9': 0,
+      '10': 'queryCancellation'
+    },
   ],
   '8': [
     {'1': 'action'},
@@ -112,7 +270,14 @@ const ReadAction$json = {
     {'1': 'table', '3': 1, '4': 1, '5': 9, '10': 'table'},
     {'1': 'index', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'index', '17': true},
     {'1': 'column', '3': 3, '4': 3, '5': 9, '10': 'column'},
-    {'1': 'keys', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.KeySet', '10': 'keys'},
+    {
+      '1': 'keys',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.KeySet',
+      '10': 'keys'
+    },
     {'1': 'limit', '3': 5, '4': 1, '5': 5, '10': 'limit'},
   ],
   '8': [
@@ -132,7 +297,14 @@ const QueryAction$json = {
   '1': 'QueryAction',
   '2': [
     {'1': 'sql', '3': 1, '4': 1, '5': 9, '10': 'sql'},
-    {'1': 'params', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.QueryAction.Parameter', '10': 'params'},
+    {
+      '1': 'params',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryAction.Parameter',
+      '10': 'params'
+    },
   ],
   '3': [QueryAction_Parameter$json],
 };
@@ -142,8 +314,22 @@ const QueryAction_Parameter$json = {
   '1': 'Parameter',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '10': 'type'},
-    {'1': 'value', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.Value', '10': 'value'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'value',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.Value',
+      '10': 'value'
+    },
   ],
 };
 
@@ -159,8 +345,23 @@ final $typed_data.Uint8List queryActionDescriptor = $convert.base64Decode(
 const DmlAction$json = {
   '1': 'DmlAction',
   '2': [
-    {'1': 'update', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.QueryAction', '10': 'update'},
-    {'1': 'autocommit_if_supported', '3': 2, '4': 1, '5': 8, '9': 0, '10': 'autocommitIfSupported', '17': true},
+    {
+      '1': 'update',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryAction',
+      '10': 'update'
+    },
+    {
+      '1': 'autocommit_if_supported',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'autocommitIfSupported',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_autocommit_if_supported'},
@@ -177,7 +378,14 @@ final $typed_data.Uint8List dmlActionDescriptor = $convert.base64Decode(
 const BatchDmlAction$json = {
   '1': 'BatchDmlAction',
   '2': [
-    {'1': 'updates', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.QueryAction', '10': 'updates'},
+    {
+      '1': 'updates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryAction',
+      '10': 'updates'
+    },
   ],
 };
 
@@ -196,12 +404,59 @@ const Value$json = {
     {'1': 'double_value', '3': 4, '4': 1, '5': 1, '9': 0, '10': 'doubleValue'},
     {'1': 'bytes_value', '3': 5, '4': 1, '5': 12, '9': 0, '10': 'bytesValue'},
     {'1': 'string_value', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'stringValue'},
-    {'1': 'struct_value', '3': 7, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '9': 0, '10': 'structValue'},
-    {'1': 'timestamp_value', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'timestampValue'},
-    {'1': 'date_days_value', '3': 9, '4': 1, '5': 5, '9': 0, '10': 'dateDaysValue'},
-    {'1': 'is_commit_timestamp', '3': 10, '4': 1, '5': 8, '9': 0, '10': 'isCommitTimestamp'},
-    {'1': 'array_value', '3': 11, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '9': 0, '10': 'arrayValue'},
-    {'1': 'array_type', '3': 12, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '9': 1, '10': 'arrayType', '17': true},
+    {
+      '1': 'struct_value',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '9': 0,
+      '10': 'structValue'
+    },
+    {
+      '1': 'timestamp_value',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'timestampValue'
+    },
+    {
+      '1': 'date_days_value',
+      '3': 9,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'dateDaysValue'
+    },
+    {
+      '1': 'is_commit_timestamp',
+      '3': 10,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'isCommitTimestamp'
+    },
+    {
+      '1': 'array_value',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '9': 0,
+      '10': 'arrayValue'
+    },
+    {
+      '1': 'array_type',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '9': 1,
+      '10': 'arrayType',
+      '17': true
+    },
   ],
   '8': [
     {'1': 'value_type'},
@@ -228,9 +483,32 @@ final $typed_data.Uint8List valueDescriptor = $convert.base64Decode(
 const KeyRange$json = {
   '1': 'KeyRange',
   '2': [
-    {'1': 'start', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '10': 'start'},
-    {'1': 'limit', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '10': 'limit'},
-    {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.google.spanner.executor.v1.KeyRange.Type', '9': 0, '10': 'type', '17': true},
+    {
+      '1': 'start',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '10': 'start'
+    },
+    {
+      '1': 'limit',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '10': 'limit'
+    },
+    {
+      '1': 'type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.executor.v1.KeyRange.Type',
+      '9': 0,
+      '10': 'type',
+      '17': true
+    },
   ],
   '4': [KeyRange_Type$json],
   '8': [
@@ -263,8 +541,22 @@ final $typed_data.Uint8List keyRangeDescriptor = $convert.base64Decode(
 const KeySet$json = {
   '1': 'KeySet',
   '2': [
-    {'1': 'point', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '10': 'point'},
-    {'1': 'range', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.KeyRange', '10': 'range'},
+    {
+      '1': 'point',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '10': 'point'
+    },
+    {
+      '1': 'range',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.KeyRange',
+      '10': 'range'
+    },
     {'1': 'all', '3': 3, '4': 1, '5': 8, '10': 'all'},
   ],
 };
@@ -279,7 +571,14 @@ final $typed_data.Uint8List keySetDescriptor = $convert.base64Decode(
 const ValueList$json = {
   '1': 'ValueList',
   '2': [
-    {'1': 'value', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.Value', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.Value',
+      '10': 'value'
+    },
   ],
 };
 
@@ -292,9 +591,20 @@ final $typed_data.Uint8List valueListDescriptor = $convert.base64Decode(
 const MutationAction$json = {
   '1': 'MutationAction',
   '2': [
-    {'1': 'mod', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.MutationAction.Mod', '10': 'mod'},
+    {
+      '1': 'mod',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.MutationAction.Mod',
+      '10': 'mod'
+    },
   ],
-  '3': [MutationAction_InsertArgs$json, MutationAction_UpdateArgs$json, MutationAction_Mod$json],
+  '3': [
+    MutationAction_InsertArgs$json,
+    MutationAction_UpdateArgs$json,
+    MutationAction_Mod$json
+  ],
 };
 
 @$core.Deprecated('Use mutationActionDescriptor instead')
@@ -302,8 +612,22 @@ const MutationAction_InsertArgs$json = {
   '1': 'InsertArgs',
   '2': [
     {'1': 'column', '3': 1, '4': 3, '5': 9, '10': 'column'},
-    {'1': 'type', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.v1.Type', '10': 'type'},
-    {'1': 'values', '3': 3, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '10': 'values'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'values',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '10': 'values'
+    },
   ],
 };
 
@@ -312,8 +636,22 @@ const MutationAction_UpdateArgs$json = {
   '1': 'UpdateArgs',
   '2': [
     {'1': 'column', '3': 1, '4': 3, '5': 9, '10': 'column'},
-    {'1': 'type', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.v1.Type', '10': 'type'},
-    {'1': 'values', '3': 3, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '10': 'values'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'values',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '10': 'values'
+    },
   ],
 };
 
@@ -322,11 +660,46 @@ const MutationAction_Mod$json = {
   '1': 'Mod',
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '10': 'table'},
-    {'1': 'insert', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.MutationAction.InsertArgs', '10': 'insert'},
-    {'1': 'update', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.MutationAction.UpdateArgs', '10': 'update'},
-    {'1': 'insert_or_update', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.MutationAction.InsertArgs', '10': 'insertOrUpdate'},
-    {'1': 'replace', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.MutationAction.InsertArgs', '10': 'replace'},
-    {'1': 'delete_keys', '3': 6, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.KeySet', '10': 'deleteKeys'},
+    {
+      '1': 'insert',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.MutationAction.InsertArgs',
+      '10': 'insert'
+    },
+    {
+      '1': 'update',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.MutationAction.UpdateArgs',
+      '10': 'update'
+    },
+    {
+      '1': 'insert_or_update',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.MutationAction.InsertArgs',
+      '10': 'insertOrUpdate'
+    },
+    {
+      '1': 'replace',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.MutationAction.InsertArgs',
+      '10': 'replace'
+    },
+    {
+      '1': 'delete_keys',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.KeySet',
+      '10': 'deleteKeys'
+    },
   ],
 };
 
@@ -352,7 +725,14 @@ final $typed_data.Uint8List mutationActionDescriptor = $convert.base64Decode(
 const WriteMutationsAction$json = {
   '1': 'WriteMutationsAction',
   '2': [
-    {'1': 'mutation', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.MutationAction', '10': 'mutation'},
+    {
+      '1': 'mutation',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.MutationAction',
+      '10': 'mutation'
+    },
   ],
 };
 
@@ -365,8 +745,25 @@ final $typed_data.Uint8List writeMutationsActionDescriptor = $convert.base64Deco
 const PartitionedUpdateAction$json = {
   '1': 'PartitionedUpdateAction',
   '2': [
-    {'1': 'options', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.PartitionedUpdateAction.ExecutePartitionedUpdateOptions', '9': 0, '10': 'options', '17': true},
-    {'1': 'update', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.QueryAction', '10': 'update'},
+    {
+      '1': 'options',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.spanner.executor.v1.PartitionedUpdateAction.ExecutePartitionedUpdateOptions',
+      '9': 0,
+      '10': 'options',
+      '17': true
+    },
+    {
+      '1': 'update',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryAction',
+      '10': 'update'
+    },
   ],
   '3': [PartitionedUpdateAction_ExecutePartitionedUpdateOptions$json],
   '8': [
@@ -378,7 +775,16 @@ const PartitionedUpdateAction$json = {
 const PartitionedUpdateAction_ExecutePartitionedUpdateOptions$json = {
   '1': 'ExecutePartitionedUpdateOptions',
   '2': [
-    {'1': 'rpc_priority', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.v1.RequestOptions.Priority', '9': 0, '10': 'rpcPriority', '17': true},
+    {
+      '1': 'rpc_priority',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.RequestOptions.Priority',
+      '9': 0,
+      '10': 'rpcPriority',
+      '17': true
+    },
     {'1': 'tag', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'tag', '17': true},
   ],
   '8': [
@@ -401,10 +807,35 @@ final $typed_data.Uint8List partitionedUpdateActionDescriptor = $convert.base64D
 const StartTransactionAction$json = {
   '1': 'StartTransactionAction',
   '2': [
-    {'1': 'concurrency', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.Concurrency', '9': 0, '10': 'concurrency', '17': true},
-    {'1': 'table', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.TableMetadata', '10': 'table'},
+    {
+      '1': 'concurrency',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.Concurrency',
+      '9': 0,
+      '10': 'concurrency',
+      '17': true
+    },
+    {
+      '1': 'table',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.TableMetadata',
+      '10': 'table'
+    },
     {'1': 'transaction_seed', '3': 3, '4': 1, '5': 9, '10': 'transactionSeed'},
-    {'1': 'execution_options', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.TransactionExecutionOptions', '9': 1, '10': 'executionOptions', '17': true},
+    {
+      '1': 'execution_options',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.TransactionExecutionOptions',
+      '9': 1,
+      '10': 'executionOptions',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_concurrency'},
@@ -426,15 +857,61 @@ final $typed_data.Uint8List startTransactionActionDescriptor = $convert.base64De
 const Concurrency$json = {
   '1': 'Concurrency',
   '2': [
-    {'1': 'staleness_seconds', '3': 1, '4': 1, '5': 1, '9': 0, '10': 'stalenessSeconds'},
-    {'1': 'min_read_timestamp_micros', '3': 2, '4': 1, '5': 3, '9': 0, '10': 'minReadTimestampMicros'},
-    {'1': 'max_staleness_seconds', '3': 3, '4': 1, '5': 1, '9': 0, '10': 'maxStalenessSeconds'},
-    {'1': 'exact_timestamp_micros', '3': 4, '4': 1, '5': 3, '9': 0, '10': 'exactTimestampMicros'},
+    {
+      '1': 'staleness_seconds',
+      '3': 1,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'stalenessSeconds'
+    },
+    {
+      '1': 'min_read_timestamp_micros',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'minReadTimestampMicros'
+    },
+    {
+      '1': 'max_staleness_seconds',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '9': 0,
+      '10': 'maxStalenessSeconds'
+    },
+    {
+      '1': 'exact_timestamp_micros',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'exactTimestampMicros'
+    },
     {'1': 'strong', '3': 5, '4': 1, '5': 8, '9': 0, '10': 'strong'},
     {'1': 'batch', '3': 6, '4': 1, '5': 8, '9': 0, '10': 'batch'},
-    {'1': 'snapshot_epoch_read', '3': 7, '4': 1, '5': 8, '10': 'snapshotEpochRead'},
-    {'1': 'snapshot_epoch_root_table', '3': 8, '4': 1, '5': 9, '10': 'snapshotEpochRootTable'},
-    {'1': 'batch_read_timestamp_micros', '3': 9, '4': 1, '5': 3, '10': 'batchReadTimestampMicros'},
+    {
+      '1': 'snapshot_epoch_read',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'snapshotEpochRead'
+    },
+    {
+      '1': 'snapshot_epoch_root_table',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'snapshotEpochRootTable'
+    },
+    {
+      '1': 'batch_read_timestamp_micros',
+      '3': 9,
+      '4': 1,
+      '5': 3,
+      '10': 'batchReadTimestampMicros'
+    },
   ],
   '8': [
     {'1': 'concurrency_mode'},
@@ -458,8 +935,22 @@ const TableMetadata$json = {
   '1': 'TableMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'column', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ColumnMetadata', '10': 'column'},
-    {'1': 'key_column', '3': 3, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ColumnMetadata', '10': 'keyColumn'},
+    {
+      '1': 'column',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ColumnMetadata',
+      '10': 'column'
+    },
+    {
+      '1': 'key_column',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ColumnMetadata',
+      '10': 'keyColumn'
+    },
   ],
 };
 
@@ -475,7 +966,14 @@ const ColumnMetadata$json = {
   '1': 'ColumnMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'type'
+    },
   ],
 };
 
@@ -493,15 +991,23 @@ const TransactionExecutionOptions$json = {
 };
 
 /// Descriptor for `TransactionExecutionOptions`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List transactionExecutionOptionsDescriptor = $convert.base64Decode(
-    'ChtUcmFuc2FjdGlvbkV4ZWN1dGlvbk9wdGlvbnMSHgoKb3B0aW1pc3RpYxgBIAEoCFIKb3B0aW'
-    '1pc3RpYw==');
+final $typed_data.Uint8List transactionExecutionOptionsDescriptor =
+    $convert.base64Decode(
+        'ChtUcmFuc2FjdGlvbkV4ZWN1dGlvbk9wdGlvbnMSHgoKb3B0aW1pc3RpYxgBIAEoCFIKb3B0aW'
+        '1pc3RpYw==');
 
 @$core.Deprecated('Use finishTransactionActionDescriptor instead')
 const FinishTransactionAction$json = {
   '1': 'FinishTransactionAction',
   '2': [
-    {'1': 'mode', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.executor.v1.FinishTransactionAction.Mode', '10': 'mode'},
+    {
+      '1': 'mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.executor.v1.FinishTransactionAction.Mode',
+      '10': 'mode'
+    },
   ],
   '4': [FinishTransactionAction_Mode$json],
 };
@@ -526,34 +1032,258 @@ final $typed_data.Uint8List finishTransactionActionDescriptor = $convert.base64D
 const AdminAction$json = {
   '1': 'AdminAction',
   '2': [
-    {'1': 'create_user_instance_config', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CreateUserInstanceConfigAction', '9': 0, '10': 'createUserInstanceConfig'},
-    {'1': 'update_user_instance_config', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.UpdateUserInstanceConfigAction', '9': 0, '10': 'updateUserInstanceConfig'},
-    {'1': 'delete_user_instance_config', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.DeleteUserInstanceConfigAction', '9': 0, '10': 'deleteUserInstanceConfig'},
-    {'1': 'get_cloud_instance_config', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.GetCloudInstanceConfigAction', '9': 0, '10': 'getCloudInstanceConfig'},
-    {'1': 'list_instance_configs', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ListCloudInstanceConfigsAction', '9': 0, '10': 'listInstanceConfigs'},
-    {'1': 'create_cloud_instance', '3': 6, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CreateCloudInstanceAction', '9': 0, '10': 'createCloudInstance'},
-    {'1': 'update_cloud_instance', '3': 7, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.UpdateCloudInstanceAction', '9': 0, '10': 'updateCloudInstance'},
-    {'1': 'delete_cloud_instance', '3': 8, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.DeleteCloudInstanceAction', '9': 0, '10': 'deleteCloudInstance'},
-    {'1': 'list_cloud_instances', '3': 9, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ListCloudInstancesAction', '9': 0, '10': 'listCloudInstances'},
-    {'1': 'get_cloud_instance', '3': 10, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.GetCloudInstanceAction', '9': 0, '10': 'getCloudInstance'},
-    {'1': 'create_cloud_database', '3': 11, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CreateCloudDatabaseAction', '9': 0, '10': 'createCloudDatabase'},
-    {'1': 'update_cloud_database_ddl', '3': 12, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.UpdateCloudDatabaseDdlAction', '9': 0, '10': 'updateCloudDatabaseDdl'},
-    {'1': 'update_cloud_database', '3': 27, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.UpdateCloudDatabaseAction', '9': 0, '10': 'updateCloudDatabase'},
-    {'1': 'drop_cloud_database', '3': 13, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.DropCloudDatabaseAction', '9': 0, '10': 'dropCloudDatabase'},
-    {'1': 'list_cloud_databases', '3': 14, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ListCloudDatabasesAction', '9': 0, '10': 'listCloudDatabases'},
-    {'1': 'list_cloud_database_operations', '3': 15, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ListCloudDatabaseOperationsAction', '9': 0, '10': 'listCloudDatabaseOperations'},
-    {'1': 'restore_cloud_database', '3': 16, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.RestoreCloudDatabaseAction', '9': 0, '10': 'restoreCloudDatabase'},
-    {'1': 'get_cloud_database', '3': 17, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.GetCloudDatabaseAction', '9': 0, '10': 'getCloudDatabase'},
-    {'1': 'create_cloud_backup', '3': 18, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CreateCloudBackupAction', '9': 0, '10': 'createCloudBackup'},
-    {'1': 'copy_cloud_backup', '3': 19, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CopyCloudBackupAction', '9': 0, '10': 'copyCloudBackup'},
-    {'1': 'get_cloud_backup', '3': 20, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.GetCloudBackupAction', '9': 0, '10': 'getCloudBackup'},
-    {'1': 'update_cloud_backup', '3': 21, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.UpdateCloudBackupAction', '9': 0, '10': 'updateCloudBackup'},
-    {'1': 'delete_cloud_backup', '3': 22, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.DeleteCloudBackupAction', '9': 0, '10': 'deleteCloudBackup'},
-    {'1': 'list_cloud_backups', '3': 23, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ListCloudBackupsAction', '9': 0, '10': 'listCloudBackups'},
-    {'1': 'list_cloud_backup_operations', '3': 24, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ListCloudBackupOperationsAction', '9': 0, '10': 'listCloudBackupOperations'},
-    {'1': 'get_operation', '3': 25, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.GetOperationAction', '9': 0, '10': 'getOperation'},
-    {'1': 'cancel_operation', '3': 26, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CancelOperationAction', '9': 0, '10': 'cancelOperation'},
-    {'1': 'change_quorum_cloud_database', '3': 28, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ChangeQuorumCloudDatabaseAction', '9': 0, '10': 'changeQuorumCloudDatabase'},
+    {
+      '1': 'create_user_instance_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CreateUserInstanceConfigAction',
+      '9': 0,
+      '10': 'createUserInstanceConfig'
+    },
+    {
+      '1': 'update_user_instance_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.UpdateUserInstanceConfigAction',
+      '9': 0,
+      '10': 'updateUserInstanceConfig'
+    },
+    {
+      '1': 'delete_user_instance_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DeleteUserInstanceConfigAction',
+      '9': 0,
+      '10': 'deleteUserInstanceConfig'
+    },
+    {
+      '1': 'get_cloud_instance_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.GetCloudInstanceConfigAction',
+      '9': 0,
+      '10': 'getCloudInstanceConfig'
+    },
+    {
+      '1': 'list_instance_configs',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ListCloudInstanceConfigsAction',
+      '9': 0,
+      '10': 'listInstanceConfigs'
+    },
+    {
+      '1': 'create_cloud_instance',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CreateCloudInstanceAction',
+      '9': 0,
+      '10': 'createCloudInstance'
+    },
+    {
+      '1': 'update_cloud_instance',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.UpdateCloudInstanceAction',
+      '9': 0,
+      '10': 'updateCloudInstance'
+    },
+    {
+      '1': 'delete_cloud_instance',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DeleteCloudInstanceAction',
+      '9': 0,
+      '10': 'deleteCloudInstance'
+    },
+    {
+      '1': 'list_cloud_instances',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ListCloudInstancesAction',
+      '9': 0,
+      '10': 'listCloudInstances'
+    },
+    {
+      '1': 'get_cloud_instance',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.GetCloudInstanceAction',
+      '9': 0,
+      '10': 'getCloudInstance'
+    },
+    {
+      '1': 'create_cloud_database',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CreateCloudDatabaseAction',
+      '9': 0,
+      '10': 'createCloudDatabase'
+    },
+    {
+      '1': 'update_cloud_database_ddl',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.UpdateCloudDatabaseDdlAction',
+      '9': 0,
+      '10': 'updateCloudDatabaseDdl'
+    },
+    {
+      '1': 'update_cloud_database',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.UpdateCloudDatabaseAction',
+      '9': 0,
+      '10': 'updateCloudDatabase'
+    },
+    {
+      '1': 'drop_cloud_database',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DropCloudDatabaseAction',
+      '9': 0,
+      '10': 'dropCloudDatabase'
+    },
+    {
+      '1': 'list_cloud_databases',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ListCloudDatabasesAction',
+      '9': 0,
+      '10': 'listCloudDatabases'
+    },
+    {
+      '1': 'list_cloud_database_operations',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ListCloudDatabaseOperationsAction',
+      '9': 0,
+      '10': 'listCloudDatabaseOperations'
+    },
+    {
+      '1': 'restore_cloud_database',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.RestoreCloudDatabaseAction',
+      '9': 0,
+      '10': 'restoreCloudDatabase'
+    },
+    {
+      '1': 'get_cloud_database',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.GetCloudDatabaseAction',
+      '9': 0,
+      '10': 'getCloudDatabase'
+    },
+    {
+      '1': 'create_cloud_backup',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CreateCloudBackupAction',
+      '9': 0,
+      '10': 'createCloudBackup'
+    },
+    {
+      '1': 'copy_cloud_backup',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CopyCloudBackupAction',
+      '9': 0,
+      '10': 'copyCloudBackup'
+    },
+    {
+      '1': 'get_cloud_backup',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.GetCloudBackupAction',
+      '9': 0,
+      '10': 'getCloudBackup'
+    },
+    {
+      '1': 'update_cloud_backup',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.UpdateCloudBackupAction',
+      '9': 0,
+      '10': 'updateCloudBackup'
+    },
+    {
+      '1': 'delete_cloud_backup',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DeleteCloudBackupAction',
+      '9': 0,
+      '10': 'deleteCloudBackup'
+    },
+    {
+      '1': 'list_cloud_backups',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ListCloudBackupsAction',
+      '9': 0,
+      '10': 'listCloudBackups'
+    },
+    {
+      '1': 'list_cloud_backup_operations',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ListCloudBackupOperationsAction',
+      '9': 0,
+      '10': 'listCloudBackupOperations'
+    },
+    {
+      '1': 'get_operation',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.GetOperationAction',
+      '9': 0,
+      '10': 'getOperation'
+    },
+    {
+      '1': 'cancel_operation',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CancelOperationAction',
+      '9': 0,
+      '10': 'cancelOperation'
+    },
+    {
+      '1': 'change_quorum_cloud_database',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ChangeQuorumCloudDatabaseAction',
+      '9': 0,
+      '10': 'changeQuorumCloudDatabase'
+    },
   ],
   '8': [
     {'1': 'action'},
@@ -626,16 +1356,24 @@ const CreateUserInstanceConfigAction$json = {
     {'1': 'user_config_id', '3': 1, '4': 1, '5': 9, '10': 'userConfigId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'base_config_id', '3': 3, '4': 1, '5': 9, '10': 'baseConfigId'},
-    {'1': 'replicas', '3': 4, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.ReplicaInfo', '10': 'replicas'},
+    {
+      '1': 'replicas',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.ReplicaInfo',
+      '10': 'replicas'
+    },
   ],
 };
 
 /// Descriptor for `CreateUserInstanceConfigAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createUserInstanceConfigActionDescriptor = $convert.base64Decode(
-    'Ch5DcmVhdGVVc2VySW5zdGFuY2VDb25maWdBY3Rpb24SJAoOdXNlcl9jb25maWdfaWQYASABKA'
-    'lSDHVzZXJDb25maWdJZBIdCgpwcm9qZWN0X2lkGAIgASgJUglwcm9qZWN0SWQSJAoOYmFzZV9j'
-    'b25maWdfaWQYAyABKAlSDGJhc2VDb25maWdJZBJJCghyZXBsaWNhcxgEIAMoCzItLmdvb2dsZS'
-    '5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLlJlcGxpY2FJbmZvUghyZXBsaWNhcw==');
+final $typed_data.Uint8List createUserInstanceConfigActionDescriptor =
+    $convert.base64Decode(
+        'Ch5DcmVhdGVVc2VySW5zdGFuY2VDb25maWdBY3Rpb24SJAoOdXNlcl9jb25maWdfaWQYASABKA'
+        'lSDHVzZXJDb25maWdJZBIdCgpwcm9qZWN0X2lkGAIgASgJUglwcm9qZWN0SWQSJAoOYmFzZV9j'
+        'b25maWdfaWQYAyABKAlSDGJhc2VDb25maWdJZBJJCghyZXBsaWNhcxgEIAMoCzItLmdvb2dsZS'
+        '5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLlJlcGxpY2FJbmZvUghyZXBsaWNhcw==');
 
 @$core.Deprecated('Use updateUserInstanceConfigActionDescriptor instead')
 const UpdateUserInstanceConfigAction$json = {
@@ -643,8 +1381,24 @@ const UpdateUserInstanceConfigAction$json = {
   '2': [
     {'1': 'user_config_id', '3': 1, '4': 1, '5': 9, '10': 'userConfigId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'display_name', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'displayName', '17': true},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.UpdateUserInstanceConfigAction.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'display_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'displayName',
+      '17': true
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.spanner.executor.v1.UpdateUserInstanceConfigAction.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [UpdateUserInstanceConfigAction_LabelsEntry$json],
   '8': [
@@ -675,15 +1429,22 @@ final $typed_data.Uint8List updateUserInstanceConfigActionDescriptor = $convert.
 const GetCloudInstanceConfigAction$json = {
   '1': 'GetCloudInstanceConfigAction',
   '2': [
-    {'1': 'instance_config_id', '3': 1, '4': 1, '5': 9, '10': 'instanceConfigId'},
+    {
+      '1': 'instance_config_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'instanceConfigId'
+    },
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
   ],
 };
 
 /// Descriptor for `GetCloudInstanceConfigAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getCloudInstanceConfigActionDescriptor = $convert.base64Decode(
-    'ChxHZXRDbG91ZEluc3RhbmNlQ29uZmlnQWN0aW9uEiwKEmluc3RhbmNlX2NvbmZpZ19pZBgBIA'
-    'EoCVIQaW5zdGFuY2VDb25maWdJZBIdCgpwcm9qZWN0X2lkGAIgASgJUglwcm9qZWN0SWQ=');
+final $typed_data.Uint8List getCloudInstanceConfigActionDescriptor =
+    $convert.base64Decode(
+        'ChxHZXRDbG91ZEluc3RhbmNlQ29uZmlnQWN0aW9uEiwKEmluc3RhbmNlX2NvbmZpZ19pZBgBIA'
+        'EoCVIQaW5zdGFuY2VDb25maWdJZBIdCgpwcm9qZWN0X2lkGAIgASgJUglwcm9qZWN0SWQ=');
 
 @$core.Deprecated('Use deleteUserInstanceConfigActionDescriptor instead')
 const DeleteUserInstanceConfigAction$json = {
@@ -695,17 +1456,34 @@ const DeleteUserInstanceConfigAction$json = {
 };
 
 /// Descriptor for `DeleteUserInstanceConfigAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteUserInstanceConfigActionDescriptor = $convert.base64Decode(
-    'Ch5EZWxldGVVc2VySW5zdGFuY2VDb25maWdBY3Rpb24SJAoOdXNlcl9jb25maWdfaWQYASABKA'
-    'lSDHVzZXJDb25maWdJZBIdCgpwcm9qZWN0X2lkGAIgASgJUglwcm9qZWN0SWQ=');
+final $typed_data.Uint8List deleteUserInstanceConfigActionDescriptor =
+    $convert.base64Decode(
+        'Ch5EZWxldGVVc2VySW5zdGFuY2VDb25maWdBY3Rpb24SJAoOdXNlcl9jb25maWdfaWQYASABKA'
+        'lSDHVzZXJDb25maWdJZBIdCgpwcm9qZWN0X2lkGAIgASgJUglwcm9qZWN0SWQ=');
 
 @$core.Deprecated('Use listCloudInstanceConfigsActionDescriptor instead')
 const ListCloudInstanceConfigsAction$json = {
   '1': 'ListCloudInstanceConfigsAction',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'pageSize', '17': true},
-    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '9': 1, '10': 'pageToken', '17': true},
+    {
+      '1': 'page_size',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'pageSize',
+      '17': true
+    },
+    {
+      '1': 'page_token',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'pageToken',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_page_size'},
@@ -714,10 +1492,11 @@ const ListCloudInstanceConfigsAction$json = {
 };
 
 /// Descriptor for `ListCloudInstanceConfigsAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listCloudInstanceConfigsActionDescriptor = $convert.base64Decode(
-    'Ch5MaXN0Q2xvdWRJbnN0YW5jZUNvbmZpZ3NBY3Rpb24SHQoKcHJvamVjdF9pZBgBIAEoCVIJcH'
-    'JvamVjdElkEiAKCXBhZ2Vfc2l6ZRgCIAEoBUgAUghwYWdlU2l6ZYgBARIiCgpwYWdlX3Rva2Vu'
-    'GAMgASgJSAFSCXBhZ2VUb2tlbogBAUIMCgpfcGFnZV9zaXplQg0KC19wYWdlX3Rva2Vu');
+final $typed_data.Uint8List listCloudInstanceConfigsActionDescriptor =
+    $convert.base64Decode(
+        'Ch5MaXN0Q2xvdWRJbnN0YW5jZUNvbmZpZ3NBY3Rpb24SHQoKcHJvamVjdF9pZBgBIAEoCVIJcH'
+        'JvamVjdElkEiAKCXBhZ2Vfc2l6ZRgCIAEoBUgAUghwYWdlU2l6ZYgBARIiCgpwYWdlX3Rva2Vu'
+        'GAMgASgJSAFSCXBhZ2VUb2tlbogBAUIMCgpfcGFnZV9zaXplQg0KC19wYWdlX3Rva2Vu');
 
 @$core.Deprecated('Use createCloudInstanceActionDescriptor instead')
 const CreateCloudInstanceAction$json = {
@@ -725,11 +1504,49 @@ const CreateCloudInstanceAction$json = {
   '2': [
     {'1': 'instance_id', '3': 1, '4': 1, '5': 9, '10': 'instanceId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'instance_config_id', '3': 3, '4': 1, '5': 9, '10': 'instanceConfigId'},
-    {'1': 'node_count', '3': 4, '4': 1, '5': 5, '9': 0, '10': 'nodeCount', '17': true},
-    {'1': 'processing_units', '3': 6, '4': 1, '5': 5, '9': 1, '10': 'processingUnits', '17': true},
-    {'1': 'autoscaling_config', '3': 7, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.AutoscalingConfig', '9': 2, '10': 'autoscalingConfig', '17': true},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.CreateCloudInstanceAction.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'instance_config_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'instanceConfigId'
+    },
+    {
+      '1': 'node_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'nodeCount',
+      '17': true
+    },
+    {
+      '1': 'processing_units',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'processingUnits',
+      '17': true
+    },
+    {
+      '1': 'autoscaling_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.AutoscalingConfig',
+      '9': 2,
+      '10': 'autoscalingConfig',
+      '17': true
+    },
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CreateCloudInstanceAction.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [CreateCloudInstanceAction_LabelsEntry$json],
   '8': [
@@ -768,11 +1585,51 @@ const UpdateCloudInstanceAction$json = {
   '2': [
     {'1': 'instance_id', '3': 1, '4': 1, '5': 9, '10': 'instanceId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'display_name', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'displayName', '17': true},
-    {'1': 'node_count', '3': 4, '4': 1, '5': 5, '9': 1, '10': 'nodeCount', '17': true},
-    {'1': 'processing_units', '3': 5, '4': 1, '5': 5, '9': 2, '10': 'processingUnits', '17': true},
-    {'1': 'autoscaling_config', '3': 7, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.AutoscalingConfig', '9': 3, '10': 'autoscalingConfig', '17': true},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.UpdateCloudInstanceAction.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'display_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'displayName',
+      '17': true
+    },
+    {
+      '1': 'node_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'nodeCount',
+      '17': true
+    },
+    {
+      '1': 'processing_units',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '9': 2,
+      '10': 'processingUnits',
+      '17': true
+    },
+    {
+      '1': 'autoscaling_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.AutoscalingConfig',
+      '9': 3,
+      '10': 'autoscalingConfig',
+      '17': true
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.UpdateCloudInstanceAction.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [UpdateCloudInstanceAction_LabelsEntry$json],
   '8': [
@@ -816,9 +1673,10 @@ const DeleteCloudInstanceAction$json = {
 };
 
 /// Descriptor for `DeleteCloudInstanceAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteCloudInstanceActionDescriptor = $convert.base64Decode(
-    'ChlEZWxldGVDbG91ZEluc3RhbmNlQWN0aW9uEh8KC2luc3RhbmNlX2lkGAEgASgJUgppbnN0YW'
-    '5jZUlkEh0KCnByb2plY3RfaWQYAiABKAlSCXByb2plY3RJZA==');
+final $typed_data.Uint8List deleteCloudInstanceActionDescriptor =
+    $convert.base64Decode(
+        'ChlEZWxldGVDbG91ZEluc3RhbmNlQWN0aW9uEh8KC2luc3RhbmNlX2lkGAEgASgJUgppbnN0YW'
+        '5jZUlkEh0KCnByb2plY3RfaWQYAiABKAlSCXByb2plY3RJZA==');
 
 @$core.Deprecated('Use createCloudDatabaseActionDescriptor instead')
 const CreateCloudDatabaseAction$json = {
@@ -828,9 +1686,32 @@ const CreateCloudDatabaseAction$json = {
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'database_id', '3': 3, '4': 1, '5': 9, '10': 'databaseId'},
     {'1': 'sdl_statement', '3': 4, '4': 3, '5': 9, '10': 'sdlStatement'},
-    {'1': 'encryption_config', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionConfig', '10': 'encryptionConfig'},
-    {'1': 'dialect', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'dialect', '17': true},
-    {'1': 'proto_descriptors', '3': 7, '4': 1, '5': 12, '9': 1, '10': 'protoDescriptors', '17': true},
+    {
+      '1': 'encryption_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'dialect',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'dialect',
+      '17': true
+    },
+    {
+      '1': 'proto_descriptors',
+      '3': 7,
+      '4': 1,
+      '5': 12,
+      '9': 1,
+      '10': 'protoDescriptors',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_dialect'},
@@ -857,7 +1738,15 @@ const UpdateCloudDatabaseDdlAction$json = {
     {'1': 'database_id', '3': 3, '4': 1, '5': 9, '10': 'databaseId'},
     {'1': 'sdl_statement', '3': 4, '4': 3, '5': 9, '10': 'sdlStatement'},
     {'1': 'operation_id', '3': 5, '4': 1, '5': 9, '10': 'operationId'},
-    {'1': 'proto_descriptors', '3': 6, '4': 1, '5': 12, '9': 0, '10': 'protoDescriptors', '17': true},
+    {
+      '1': 'proto_descriptors',
+      '3': 6,
+      '4': 1,
+      '5': 12,
+      '9': 0,
+      '10': 'protoDescriptors',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_proto_descriptors'},
@@ -879,7 +1768,13 @@ const UpdateCloudDatabaseAction$json = {
     {'1': 'instance_id', '3': 1, '4': 1, '5': 9, '10': 'instanceId'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'database_name', '3': 3, '4': 1, '5': 9, '10': 'databaseName'},
-    {'1': 'enable_drop_protection', '3': 4, '4': 1, '5': 8, '10': 'enableDropProtection'},
+    {
+      '1': 'enable_drop_protection',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'enableDropProtection'
+    },
   ],
 };
 
@@ -910,8 +1805,22 @@ final $typed_data.Uint8List dropCloudDatabaseActionDescriptor = $convert.base64D
 const ChangeQuorumCloudDatabaseAction$json = {
   '1': 'ChangeQuorumCloudDatabaseAction',
   '2': [
-    {'1': 'database_uri', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'databaseUri', '17': true},
-    {'1': 'serving_locations', '3': 2, '4': 3, '5': 9, '10': 'servingLocations'},
+    {
+      '1': 'database_uri',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'databaseUri',
+      '17': true
+    },
+    {
+      '1': 'serving_locations',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'servingLocations'
+    },
   ],
   '8': [
     {'1': '_database_uri'},
@@ -919,10 +1828,11 @@ const ChangeQuorumCloudDatabaseAction$json = {
 };
 
 /// Descriptor for `ChangeQuorumCloudDatabaseAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List changeQuorumCloudDatabaseActionDescriptor = $convert.base64Decode(
-    'Ch9DaGFuZ2VRdW9ydW1DbG91ZERhdGFiYXNlQWN0aW9uEiYKDGRhdGFiYXNlX3VyaRgBIAEoCU'
-    'gAUgtkYXRhYmFzZVVyaYgBARIrChFzZXJ2aW5nX2xvY2F0aW9ucxgCIAMoCVIQc2VydmluZ0xv'
-    'Y2F0aW9uc0IPCg1fZGF0YWJhc2VfdXJp');
+final $typed_data.Uint8List changeQuorumCloudDatabaseActionDescriptor =
+    $convert.base64Decode(
+        'Ch9DaGFuZ2VRdW9ydW1DbG91ZERhdGFiYXNlQWN0aW9uEiYKDGRhdGFiYXNlX3VyaRgBIAEoCU'
+        'gAUgtkYXRhYmFzZVVyaYgBARIrChFzZXJ2aW5nX2xvY2F0aW9ucxgCIAMoCVIQc2VydmluZ0xv'
+        'Y2F0aW9uc0IPCg1fZGF0YWJhc2VfdXJp');
 
 @$core.Deprecated('Use listCloudDatabasesActionDescriptor instead')
 const ListCloudDatabasesAction$json = {
@@ -947,8 +1857,24 @@ const ListCloudInstancesAction$json = {
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'filter', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'filter', '17': true},
-    {'1': 'page_size', '3': 3, '4': 1, '5': 5, '9': 1, '10': 'pageSize', '17': true},
-    {'1': 'page_token', '3': 4, '4': 1, '5': 9, '9': 2, '10': 'pageToken', '17': true},
+    {
+      '1': 'page_size',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'pageSize',
+      '17': true
+    },
+    {
+      '1': 'page_token',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'pageToken',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_filter'},
@@ -974,9 +1900,10 @@ const GetCloudInstanceAction$json = {
 };
 
 /// Descriptor for `GetCloudInstanceAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getCloudInstanceActionDescriptor = $convert.base64Decode(
-    'ChZHZXRDbG91ZEluc3RhbmNlQWN0aW9uEh0KCnByb2plY3RfaWQYASABKAlSCXByb2plY3RJZB'
-    'IfCgtpbnN0YW5jZV9pZBgCIAEoCVIKaW5zdGFuY2VJZA==');
+final $typed_data.Uint8List getCloudInstanceActionDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRDbG91ZEluc3RhbmNlQWN0aW9uEh0KCnByb2plY3RfaWQYASABKAlSCXByb2plY3RJZB'
+        'IfCgtpbnN0YW5jZV9pZBgCIAEoCVIKaW5zdGFuY2VJZA==');
 
 @$core.Deprecated('Use listCloudDatabaseOperationsActionDescriptor instead')
 const ListCloudDatabaseOperationsAction$json = {
@@ -991,22 +1918,42 @@ const ListCloudDatabaseOperationsAction$json = {
 };
 
 /// Descriptor for `ListCloudDatabaseOperationsAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listCloudDatabaseOperationsActionDescriptor = $convert.base64Decode(
-    'CiFMaXN0Q2xvdWREYXRhYmFzZU9wZXJhdGlvbnNBY3Rpb24SHQoKcHJvamVjdF9pZBgBIAEoCV'
-    'IJcHJvamVjdElkEh8KC2luc3RhbmNlX2lkGAIgASgJUgppbnN0YW5jZUlkEhYKBmZpbHRlchgD'
-    'IAEoCVIGZmlsdGVyEhsKCXBhZ2Vfc2l6ZRgEIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbh'
-    'gFIAEoCVIJcGFnZVRva2Vu');
+final $typed_data.Uint8List listCloudDatabaseOperationsActionDescriptor =
+    $convert.base64Decode(
+        'CiFMaXN0Q2xvdWREYXRhYmFzZU9wZXJhdGlvbnNBY3Rpb24SHQoKcHJvamVjdF9pZBgBIAEoCV'
+        'IJcHJvamVjdElkEh8KC2luc3RhbmNlX2lkGAIgASgJUgppbnN0YW5jZUlkEhYKBmZpbHRlchgD'
+        'IAEoCVIGZmlsdGVyEhsKCXBhZ2Vfc2l6ZRgEIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbh'
+        'gFIAEoCVIJcGFnZVRva2Vu');
 
 @$core.Deprecated('Use restoreCloudDatabaseActionDescriptor instead')
 const RestoreCloudDatabaseAction$json = {
   '1': 'RestoreCloudDatabaseAction',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'backup_instance_id', '3': 2, '4': 1, '5': 9, '10': 'backupInstanceId'},
+    {
+      '1': 'backup_instance_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'backupInstanceId'
+    },
     {'1': 'backup_id', '3': 3, '4': 1, '5': 9, '10': 'backupId'},
-    {'1': 'database_instance_id', '3': 4, '4': 1, '5': 9, '10': 'databaseInstanceId'},
+    {
+      '1': 'database_instance_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'databaseInstanceId'
+    },
     {'1': 'database_id', '3': 5, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'encryption_config', '3': 7, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionConfig', '10': 'encryptionConfig'},
+    {
+      '1': 'encryption_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
   ],
 };
 
@@ -1043,9 +1990,33 @@ const CreateCloudBackupAction$json = {
     {'1': 'instance_id', '3': 2, '4': 1, '5': 9, '10': 'instanceId'},
     {'1': 'backup_id', '3': 3, '4': 1, '5': 9, '10': 'backupId'},
     {'1': 'database_id', '3': 4, '4': 1, '5': 9, '10': 'databaseId'},
-    {'1': 'expire_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
-    {'1': 'version_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'versionTime', '17': true},
-    {'1': 'encryption_config', '3': 7, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionConfig', '10': 'encryptionConfig'},
+    {
+      '1': 'expire_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
+    {
+      '1': 'version_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'versionTime',
+      '17': true
+    },
+    {
+      '1': 'encryption_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
   ],
   '8': [
     {'1': '_version_time'},
@@ -1071,7 +2042,15 @@ const CopyCloudBackupAction$json = {
     {'1': 'instance_id', '3': 2, '4': 1, '5': 9, '10': 'instanceId'},
     {'1': 'backup_id', '3': 3, '4': 1, '5': 9, '10': 'backupId'},
     {'1': 'source_backup', '3': 4, '4': 1, '5': 9, '10': 'sourceBackup'},
-    {'1': 'expire_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
+    {
+      '1': 'expire_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
   ],
 };
 
@@ -1105,7 +2084,15 @@ const UpdateCloudBackupAction$json = {
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'instance_id', '3': 2, '4': 1, '5': 9, '10': 'instanceId'},
     {'1': 'backup_id', '3': 3, '4': 1, '5': 9, '10': 'backupId'},
-    {'1': 'expire_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
+    {
+      '1': 'expire_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
   ],
 };
 
@@ -1164,11 +2151,12 @@ const ListCloudBackupOperationsAction$json = {
 };
 
 /// Descriptor for `ListCloudBackupOperationsAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listCloudBackupOperationsActionDescriptor = $convert.base64Decode(
-    'Ch9MaXN0Q2xvdWRCYWNrdXBPcGVyYXRpb25zQWN0aW9uEh0KCnByb2plY3RfaWQYASABKAlSCX'
-    'Byb2plY3RJZBIfCgtpbnN0YW5jZV9pZBgCIAEoCVIKaW5zdGFuY2VJZBIWCgZmaWx0ZXIYAyAB'
-    'KAlSBmZpbHRlchIbCglwYWdlX3NpemUYBCABKAVSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YBS'
-    'ABKAlSCXBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listCloudBackupOperationsActionDescriptor =
+    $convert.base64Decode(
+        'Ch9MaXN0Q2xvdWRCYWNrdXBPcGVyYXRpb25zQWN0aW9uEh0KCnByb2plY3RfaWQYASABKAlSCX'
+        'Byb2plY3RJZBIfCgtpbnN0YW5jZV9pZBgCIAEoCVIKaW5zdGFuY2VJZBIWCgZmaWx0ZXIYAyAB'
+        'KAlSBmZpbHRlchIbCglwYWdlX3NpemUYBCABKAVSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YBS'
+        'ABKAlSCXBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use getOperationActionDescriptor instead')
 const GetOperationAction$json = {
@@ -1179,8 +2167,9 @@ const GetOperationAction$json = {
 };
 
 /// Descriptor for `GetOperationAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getOperationActionDescriptor = $convert.base64Decode(
-    'ChJHZXRPcGVyYXRpb25BY3Rpb24SHAoJb3BlcmF0aW9uGAEgASgJUglvcGVyYXRpb24=');
+final $typed_data.Uint8List getOperationActionDescriptor =
+    $convert.base64Decode(
+        'ChJHZXRPcGVyYXRpb25BY3Rpb24SHAoJb3BlcmF0aW9uGAEgASgJUglvcGVyYXRpb24=');
 
 @$core.Deprecated('Use queryCancellationActionDescriptor instead')
 const QueryCancellationAction$json = {
@@ -1192,9 +2181,10 @@ const QueryCancellationAction$json = {
 };
 
 /// Descriptor for `QueryCancellationAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List queryCancellationActionDescriptor = $convert.base64Decode(
-    'ChdRdWVyeUNhbmNlbGxhdGlvbkFjdGlvbhIoChBsb25nX3J1bm5pbmdfc3FsGAEgASgJUg5sb2'
-    '5nUnVubmluZ1NxbBIhCgxjYW5jZWxfcXVlcnkYAiABKAlSC2NhbmNlbFF1ZXJ5');
+final $typed_data.Uint8List queryCancellationActionDescriptor =
+    $convert.base64Decode(
+        'ChdRdWVyeUNhbmNlbGxhdGlvbkFjdGlvbhIoChBsb25nX3J1bm5pbmdfc3FsGAEgASgJUg5sb2'
+        '5nUnVubmluZ1NxbBIhCgxjYW5jZWxfcXVlcnkYAiABKAlSC2NhbmNlbFF1ZXJ5');
 
 @$core.Deprecated('Use cancelOperationActionDescriptor instead')
 const CancelOperationAction$json = {
@@ -1212,9 +2202,23 @@ final $typed_data.Uint8List cancelOperationActionDescriptor = $convert.base64Dec
 const StartBatchTransactionAction$json = {
   '1': 'StartBatchTransactionAction',
   '2': [
-    {'1': 'batch_txn_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'batchTxnTime'},
+    {
+      '1': 'batch_txn_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'batchTxnTime'
+    },
     {'1': 'tid', '3': 2, '4': 1, '5': 12, '9': 0, '10': 'tid'},
-    {'1': 'cloud_database_role', '3': 3, '4': 1, '5': 9, '10': 'cloudDatabaseRole'},
+    {
+      '1': 'cloud_database_role',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'cloudDatabaseRole'
+    },
   ],
   '8': [
     {'1': 'param'},
@@ -1237,18 +2241,49 @@ const CloseBatchTransactionAction$json = {
 };
 
 /// Descriptor for `CloseBatchTransactionAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List closeBatchTransactionActionDescriptor = $convert.base64Decode(
-    'ChtDbG9zZUJhdGNoVHJhbnNhY3Rpb25BY3Rpb24SGAoHY2xlYW51cBgBIAEoCFIHY2xlYW51cA'
-    '==');
+final $typed_data.Uint8List closeBatchTransactionActionDescriptor =
+    $convert.base64Decode(
+        'ChtDbG9zZUJhdGNoVHJhbnNhY3Rpb25BY3Rpb24SGAoHY2xlYW51cBgBIAEoCFIHY2xlYW51cA'
+        '==');
 
 @$core.Deprecated('Use generateDbPartitionsForReadActionDescriptor instead')
 const GenerateDbPartitionsForReadAction$json = {
   '1': 'GenerateDbPartitionsForReadAction',
   '2': [
-    {'1': 'read', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ReadAction', '10': 'read'},
-    {'1': 'table', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.TableMetadata', '10': 'table'},
-    {'1': 'desired_bytes_per_partition', '3': 3, '4': 1, '5': 3, '9': 0, '10': 'desiredBytesPerPartition', '17': true},
-    {'1': 'max_partition_count', '3': 4, '4': 1, '5': 3, '9': 1, '10': 'maxPartitionCount', '17': true},
+    {
+      '1': 'read',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ReadAction',
+      '10': 'read'
+    },
+    {
+      '1': 'table',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.TableMetadata',
+      '10': 'table'
+    },
+    {
+      '1': 'desired_bytes_per_partition',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'desiredBytesPerPartition',
+      '17': true
+    },
+    {
+      '1': 'max_partition_count',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'maxPartitionCount',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_desired_bytes_per_partition'},
@@ -1270,8 +2305,23 @@ final $typed_data.Uint8List generateDbPartitionsForReadActionDescriptor = $conve
 const GenerateDbPartitionsForQueryAction$json = {
   '1': 'GenerateDbPartitionsForQueryAction',
   '2': [
-    {'1': 'query', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.QueryAction', '10': 'query'},
-    {'1': 'desired_bytes_per_partition', '3': 2, '4': 1, '5': 3, '9': 0, '10': 'desiredBytesPerPartition', '17': true},
+    {
+      '1': 'query',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryAction',
+      '10': 'query'
+    },
+    {
+      '1': 'desired_bytes_per_partition',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'desiredBytesPerPartition',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_desired_bytes_per_partition'},
@@ -1279,11 +2329,12 @@ const GenerateDbPartitionsForQueryAction$json = {
 };
 
 /// Descriptor for `GenerateDbPartitionsForQueryAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generateDbPartitionsForQueryActionDescriptor = $convert.base64Decode(
-    'CiJHZW5lcmF0ZURiUGFydGl0aW9uc0ZvclF1ZXJ5QWN0aW9uEj0KBXF1ZXJ5GAEgASgLMicuZ2'
-    '9vZ2xlLnNwYW5uZXIuZXhlY3V0b3IudjEuUXVlcnlBY3Rpb25SBXF1ZXJ5EkIKG2Rlc2lyZWRf'
-    'Ynl0ZXNfcGVyX3BhcnRpdGlvbhgCIAEoA0gAUhhkZXNpcmVkQnl0ZXNQZXJQYXJ0aXRpb26IAQ'
-    'FCHgocX2Rlc2lyZWRfYnl0ZXNfcGVyX3BhcnRpdGlvbg==');
+final $typed_data.Uint8List generateDbPartitionsForQueryActionDescriptor =
+    $convert.base64Decode(
+        'CiJHZW5lcmF0ZURiUGFydGl0aW9uc0ZvclF1ZXJ5QWN0aW9uEj0KBXF1ZXJ5GAEgASgLMicuZ2'
+        '9vZ2xlLnNwYW5uZXIuZXhlY3V0b3IudjEuUXVlcnlBY3Rpb25SBXF1ZXJ5EkIKG2Rlc2lyZWRf'
+        'Ynl0ZXNfcGVyX3BhcnRpdGlvbhgCIAEoA0gAUhhkZXNpcmVkQnl0ZXNQZXJQYXJ0aXRpb26IAQ'
+        'FCHgocX2Rlc2lyZWRfYnl0ZXNfcGVyX3BhcnRpdGlvbg==');
 
 @$core.Deprecated('Use batchPartitionDescriptor instead')
 const BatchPartition$json = {
@@ -1310,27 +2361,83 @@ final $typed_data.Uint8List batchPartitionDescriptor = $convert.base64Decode(
 const ExecutePartitionAction$json = {
   '1': 'ExecutePartitionAction',
   '2': [
-    {'1': 'partition', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.BatchPartition', '10': 'partition'},
+    {
+      '1': 'partition',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.BatchPartition',
+      '10': 'partition'
+    },
   ],
 };
 
 /// Descriptor for `ExecutePartitionAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List executePartitionActionDescriptor = $convert.base64Decode(
-    'ChZFeGVjdXRlUGFydGl0aW9uQWN0aW9uEkgKCXBhcnRpdGlvbhgBIAEoCzIqLmdvb2dsZS5zcG'
-    'FubmVyLmV4ZWN1dG9yLnYxLkJhdGNoUGFydGl0aW9uUglwYXJ0aXRpb24=');
+final $typed_data.Uint8List executePartitionActionDescriptor =
+    $convert.base64Decode(
+        'ChZFeGVjdXRlUGFydGl0aW9uQWN0aW9uEkgKCXBhcnRpdGlvbhgBIAEoCzIqLmdvb2dsZS5zcG'
+        'FubmVyLmV4ZWN1dG9yLnYxLkJhdGNoUGFydGl0aW9uUglwYXJ0aXRpb24=');
 
 @$core.Deprecated('Use executeChangeStreamQueryDescriptor instead')
 const ExecuteChangeStreamQuery$json = {
   '1': 'ExecuteChangeStreamQuery',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'endTime', '17': true},
-    {'1': 'partition_token', '3': 4, '4': 1, '5': 9, '9': 1, '10': 'partitionToken', '17': true},
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'endTime',
+      '17': true
+    },
+    {
+      '1': 'partition_token',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'partitionToken',
+      '17': true
+    },
     {'1': 'read_options', '3': 5, '4': 3, '5': 9, '10': 'readOptions'},
-    {'1': 'heartbeat_milliseconds', '3': 6, '4': 1, '5': 5, '9': 2, '10': 'heartbeatMilliseconds', '17': true},
-    {'1': 'deadline_seconds', '3': 7, '4': 1, '5': 3, '9': 3, '10': 'deadlineSeconds', '17': true},
-    {'1': 'cloud_database_role', '3': 8, '4': 1, '5': 9, '9': 4, '10': 'cloudDatabaseRole', '17': true},
+    {
+      '1': 'heartbeat_milliseconds',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '9': 2,
+      '10': 'heartbeatMilliseconds',
+      '17': true
+    },
+    {
+      '1': 'deadline_seconds',
+      '3': 7,
+      '4': 1,
+      '5': 3,
+      '9': 3,
+      '10': 'deadlineSeconds',
+      '17': true
+    },
+    {
+      '1': 'cloud_database_role',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'cloudDatabaseRole',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_end_time'},
@@ -1358,16 +2465,91 @@ final $typed_data.Uint8List executeChangeStreamQueryDescriptor = $convert.base64
 const SpannerActionOutcome$json = {
   '1': 'SpannerActionOutcome',
   '2': [
-    {'1': 'status', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '9': 0, '10': 'status', '17': true},
-    {'1': 'commit_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 1, '10': 'commitTime', '17': true},
-    {'1': 'read_result', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ReadResult', '9': 2, '10': 'readResult', '17': true},
-    {'1': 'query_result', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.QueryResult', '9': 3, '10': 'queryResult', '17': true},
-    {'1': 'transaction_restarted', '3': 5, '4': 1, '5': 8, '9': 4, '10': 'transactionRestarted', '17': true},
-    {'1': 'batch_txn_id', '3': 6, '4': 1, '5': 12, '9': 5, '10': 'batchTxnId', '17': true},
-    {'1': 'db_partition', '3': 7, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.BatchPartition', '10': 'dbPartition'},
-    {'1': 'admin_result', '3': 8, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.AdminResult', '9': 6, '10': 'adminResult', '17': true},
+    {
+      '1': 'status',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '9': 0,
+      '10': 'status',
+      '17': true
+    },
+    {
+      '1': 'commit_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 1,
+      '10': 'commitTime',
+      '17': true
+    },
+    {
+      '1': 'read_result',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ReadResult',
+      '9': 2,
+      '10': 'readResult',
+      '17': true
+    },
+    {
+      '1': 'query_result',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.QueryResult',
+      '9': 3,
+      '10': 'queryResult',
+      '17': true
+    },
+    {
+      '1': 'transaction_restarted',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '9': 4,
+      '10': 'transactionRestarted',
+      '17': true
+    },
+    {
+      '1': 'batch_txn_id',
+      '3': 6,
+      '4': 1,
+      '5': 12,
+      '9': 5,
+      '10': 'batchTxnId',
+      '17': true
+    },
+    {
+      '1': 'db_partition',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.BatchPartition',
+      '10': 'dbPartition'
+    },
+    {
+      '1': 'admin_result',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.AdminResult',
+      '9': 6,
+      '10': 'adminResult',
+      '17': true
+    },
     {'1': 'dml_rows_modified', '3': 9, '4': 3, '5': 3, '10': 'dmlRowsModified'},
-    {'1': 'change_stream_records', '3': 10, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ChangeStreamRecord', '10': 'changeStreamRecords'},
+    {
+      '1': 'change_stream_records',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ChangeStreamRecord',
+      '10': 'changeStreamRecords'
+    },
   ],
   '8': [
     {'1': '_status'},
@@ -1402,11 +2584,46 @@ final $typed_data.Uint8List spannerActionOutcomeDescriptor = $convert.base64Deco
 const AdminResult$json = {
   '1': 'AdminResult',
   '2': [
-    {'1': 'backup_response', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CloudBackupResponse', '10': 'backupResponse'},
-    {'1': 'operation_response', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.OperationResponse', '10': 'operationResponse'},
-    {'1': 'database_response', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CloudDatabaseResponse', '10': 'databaseResponse'},
-    {'1': 'instance_response', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CloudInstanceResponse', '10': 'instanceResponse'},
-    {'1': 'instance_config_response', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.CloudInstanceConfigResponse', '10': 'instanceConfigResponse'},
+    {
+      '1': 'backup_response',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CloudBackupResponse',
+      '10': 'backupResponse'
+    },
+    {
+      '1': 'operation_response',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.OperationResponse',
+      '10': 'operationResponse'
+    },
+    {
+      '1': 'database_response',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CloudDatabaseResponse',
+      '10': 'databaseResponse'
+    },
+    {
+      '1': 'instance_response',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CloudInstanceResponse',
+      '10': 'instanceResponse'
+    },
+    {
+      '1': 'instance_config_response',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.CloudInstanceConfigResponse',
+      '10': 'instanceConfigResponse'
+    },
   ],
 };
 
@@ -1427,10 +2644,31 @@ final $typed_data.Uint8List adminResultDescriptor = $convert.base64Decode(
 const CloudBackupResponse$json = {
   '1': 'CloudBackupResponse',
   '2': [
-    {'1': 'listed_backups', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.Backup', '10': 'listedBackups'},
-    {'1': 'listed_backup_operations', '3': 2, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'listedBackupOperations'},
+    {
+      '1': 'listed_backups',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Backup',
+      '10': 'listedBackups'
+    },
+    {
+      '1': 'listed_backup_operations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'listedBackupOperations'
+    },
     {'1': 'next_page_token', '3': 3, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'backup', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.Backup', '10': 'backup'},
+    {
+      '1': 'backup',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Backup',
+      '10': 'backup'
+    },
   ],
 };
 
@@ -1447,9 +2685,23 @@ final $typed_data.Uint8List cloudBackupResponseDescriptor = $convert.base64Decod
 const OperationResponse$json = {
   '1': 'OperationResponse',
   '2': [
-    {'1': 'listed_operations', '3': 1, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'listedOperations'},
+    {
+      '1': 'listed_operations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'listedOperations'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'operation', '3': 3, '4': 1, '5': 11, '6': '.google.longrunning.Operation', '10': 'operation'},
+    {
+      '1': 'operation',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'operation'
+    },
   ],
 };
 
@@ -1464,9 +2716,23 @@ final $typed_data.Uint8List operationResponseDescriptor = $convert.base64Decode(
 const CloudInstanceResponse$json = {
   '1': 'CloudInstanceResponse',
   '2': [
-    {'1': 'listed_instances', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance', '10': 'listedInstances'},
+    {
+      '1': 'listed_instances',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance',
+      '10': 'listedInstances'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'instance', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance', '10': 'instance'},
+    {
+      '1': 'instance',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance',
+      '10': 'instance'
+    },
   ],
 };
 
@@ -1481,9 +2747,23 @@ final $typed_data.Uint8List cloudInstanceResponseDescriptor = $convert.base64Dec
 const CloudInstanceConfigResponse$json = {
   '1': 'CloudInstanceConfigResponse',
   '2': [
-    {'1': 'listed_instance_configs', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig', '10': 'listedInstanceConfigs'},
+    {
+      '1': 'listed_instance_configs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig',
+      '10': 'listedInstanceConfigs'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'instance_config', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig', '10': 'instanceConfig'},
+    {
+      '1': 'instance_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig',
+      '10': 'instanceConfig'
+    },
   ],
 };
 
@@ -1499,10 +2779,31 @@ final $typed_data.Uint8List cloudInstanceConfigResponseDescriptor = $convert.bas
 const CloudDatabaseResponse$json = {
   '1': 'CloudDatabaseResponse',
   '2': [
-    {'1': 'listed_databases', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.Database', '10': 'listedDatabases'},
-    {'1': 'listed_database_operations', '3': 2, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'listedDatabaseOperations'},
+    {
+      '1': 'listed_databases',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Database',
+      '10': 'listedDatabases'
+    },
+    {
+      '1': 'listed_database_operations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'listedDatabaseOperations'
+    },
     {'1': 'next_page_token', '3': 3, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'database', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.Database', '10': 'database'},
+    {
+      '1': 'database',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Database',
+      '10': 'database'
+    },
   ],
 };
 
@@ -1521,9 +2822,33 @@ const ReadResult$json = {
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '10': 'table'},
     {'1': 'index', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'index', '17': true},
-    {'1': 'request_index', '3': 3, '4': 1, '5': 5, '9': 1, '10': 'requestIndex', '17': true},
-    {'1': 'row', '3': 4, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '10': 'row'},
-    {'1': 'row_type', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.v1.StructType', '9': 2, '10': 'rowType', '17': true},
+    {
+      '1': 'request_index',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'requestIndex',
+      '17': true
+    },
+    {
+      '1': 'row',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '10': 'row'
+    },
+    {
+      '1': 'row_type',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.StructType',
+      '9': 2,
+      '10': 'rowType',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_index'},
@@ -1544,8 +2869,24 @@ final $typed_data.Uint8List readResultDescriptor = $convert.base64Decode(
 const QueryResult$json = {
   '1': 'QueryResult',
   '2': [
-    {'1': 'row', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ValueList', '10': 'row'},
-    {'1': 'row_type', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.StructType', '9': 0, '10': 'rowType', '17': true},
+    {
+      '1': 'row',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ValueList',
+      '10': 'row'
+    },
+    {
+      '1': 'row_type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.StructType',
+      '9': 0,
+      '10': 'rowType',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_row_type'},
@@ -1562,9 +2903,33 @@ final $typed_data.Uint8List queryResultDescriptor = $convert.base64Decode(
 const ChangeStreamRecord$json = {
   '1': 'ChangeStreamRecord',
   '2': [
-    {'1': 'data_change', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.DataChangeRecord', '9': 0, '10': 'dataChange'},
-    {'1': 'child_partition', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.ChildPartitionsRecord', '9': 0, '10': 'childPartition'},
-    {'1': 'heartbeat', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.HeartbeatRecord', '9': 0, '10': 'heartbeat'},
+    {
+      '1': 'data_change',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DataChangeRecord',
+      '9': 0,
+      '10': 'dataChange'
+    },
+    {
+      '1': 'child_partition',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ChildPartitionsRecord',
+      '9': 0,
+      '10': 'childPartition'
+    },
+    {
+      '1': 'heartbeat',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.HeartbeatRecord',
+      '9': 0,
+      '10': 'heartbeat'
+    },
   ],
   '8': [
     {'1': 'record'},
@@ -1584,19 +2949,52 @@ final $typed_data.Uint8List changeStreamRecordDescriptor = $convert.base64Decode
 const DataChangeRecord$json = {
   '1': 'DataChangeRecord',
   '2': [
-    {'1': 'commit_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'commitTime'},
+    {
+      '1': 'commit_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'commitTime'
+    },
     {'1': 'record_sequence', '3': 2, '4': 1, '5': 9, '10': 'recordSequence'},
     {'1': 'transaction_id', '3': 3, '4': 1, '5': 9, '10': 'transactionId'},
     {'1': 'is_last_record', '3': 4, '4': 1, '5': 8, '10': 'isLastRecord'},
     {'1': 'table', '3': 5, '4': 1, '5': 9, '10': 'table'},
-    {'1': 'column_types', '3': 6, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.DataChangeRecord.ColumnType', '10': 'columnTypes'},
-    {'1': 'mods', '3': 7, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.DataChangeRecord.Mod', '10': 'mods'},
+    {
+      '1': 'column_types',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DataChangeRecord.ColumnType',
+      '10': 'columnTypes'
+    },
+    {
+      '1': 'mods',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.DataChangeRecord.Mod',
+      '10': 'mods'
+    },
     {'1': 'mod_type', '3': 8, '4': 1, '5': 9, '10': 'modType'},
-    {'1': 'value_capture_type', '3': 9, '4': 1, '5': 9, '10': 'valueCaptureType'},
+    {
+      '1': 'value_capture_type',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '10': 'valueCaptureType'
+    },
     {'1': 'record_count', '3': 10, '4': 1, '5': 3, '10': 'recordCount'},
     {'1': 'partition_count', '3': 11, '4': 1, '5': 3, '10': 'partitionCount'},
     {'1': 'transaction_tag', '3': 12, '4': 1, '5': 9, '10': 'transactionTag'},
-    {'1': 'is_system_transaction', '3': 13, '4': 1, '5': 8, '10': 'isSystemTransaction'},
+    {
+      '1': 'is_system_transaction',
+      '3': 13,
+      '4': 1,
+      '5': 8,
+      '10': 'isSystemTransaction'
+    },
   ],
   '3': [DataChangeRecord_ColumnType$json, DataChangeRecord_Mod$json],
 };
@@ -1645,9 +3043,23 @@ final $typed_data.Uint8List dataChangeRecordDescriptor = $convert.base64Decode(
 const ChildPartitionsRecord$json = {
   '1': 'ChildPartitionsRecord',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
     {'1': 'record_sequence', '3': 2, '4': 1, '5': 9, '10': 'recordSequence'},
-    {'1': 'child_partitions', '3': 3, '4': 3, '5': 11, '6': '.google.spanner.executor.v1.ChildPartitionsRecord.ChildPartition', '10': 'childPartitions'},
+    {
+      '1': 'child_partitions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.ChildPartitionsRecord.ChildPartition',
+      '10': 'childPartitions'
+    },
   ],
   '3': [ChildPartitionsRecord_ChildPartition$json],
 };
@@ -1657,7 +3069,13 @@ const ChildPartitionsRecord_ChildPartition$json = {
   '1': 'ChildPartition',
   '2': [
     {'1': 'token', '3': 1, '4': 1, '5': 9, '10': 'token'},
-    {'1': 'parent_partition_tokens', '3': 2, '4': 3, '5': 9, '10': 'parentPartitionTokens'},
+    {
+      '1': 'parent_partition_tokens',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'parentPartitionTokens'
+    },
   ],
 };
 
@@ -1674,7 +3092,14 @@ final $typed_data.Uint8List childPartitionsRecordDescriptor = $convert.base64Dec
 const HeartbeatRecord$json = {
   '1': 'HeartbeatRecord',
   '2': [
-    {'1': 'heartbeat_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'heartbeatTime'},
+    {
+      '1': 'heartbeat_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'heartbeatTime'
+    },
   ],
 };
 
@@ -1687,7 +3112,14 @@ final $typed_data.Uint8List heartbeatRecordDescriptor = $convert.base64Decode(
 const SpannerOptions$json = {
   '1': 'SpannerOptions',
   '2': [
-    {'1': 'session_pool_options', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.executor.v1.SessionPoolOptions', '10': 'sessionPoolOptions'},
+    {
+      '1': 'session_pool_options',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.executor.v1.SessionPoolOptions',
+      '10': 'sessionPoolOptions'
+    },
   ],
 };
 
@@ -1709,4 +3141,3 @@ const SessionPoolOptions$json = {
 final $typed_data.Uint8List sessionPoolOptionsDescriptor = $convert.base64Decode(
     'ChJTZXNzaW9uUG9vbE9wdGlvbnMSJwoPdXNlX211bHRpcGxleGVkGAEgASgIUg51c2VNdWx0aX'
     'BsZXhlZA==');
-

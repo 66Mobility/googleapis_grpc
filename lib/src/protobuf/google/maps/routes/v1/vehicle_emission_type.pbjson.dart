@@ -28,4 +28,3 @@ const VehicleEmissionType$json = {
 final $typed_data.Uint8List vehicleEmissionTypeDescriptor = $convert.base64Decode(
     'ChNWZWhpY2xlRW1pc3Npb25UeXBlEiUKIVZFSElDTEVfRU1JU1NJT05fVFlQRV9VTlNQRUNJRk'
     'lFRBAAEgwKCEdBU09MSU5FEAESDAoIRUxFQ1RSSUMQAhIKCgZIWUJSSUQQAw==');
-

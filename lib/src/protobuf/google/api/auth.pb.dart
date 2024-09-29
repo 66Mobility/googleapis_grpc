@@ -46,34 +46,46 @@ class Authentication extends $pb.GeneratedMessage {
     return $result;
   }
   Authentication._() : super();
-  factory Authentication.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Authentication.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Authentication.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Authentication.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Authentication', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<AuthenticationRule>(3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: AuthenticationRule.create)
-    ..pc<AuthProvider>(4, _omitFieldNames ? '' : 'providers', $pb.PbFieldType.PM, subBuilder: AuthProvider.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Authentication',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<AuthenticationRule>(
+        3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+        subBuilder: AuthenticationRule.create)
+    ..pc<AuthProvider>(
+        4, _omitFieldNames ? '' : 'providers', $pb.PbFieldType.PM,
+        subBuilder: AuthProvider.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Authentication clone() => Authentication()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Authentication copyWith(void Function(Authentication) updates) => super.copyWith((message) => updates(message as Authentication)) as Authentication;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Authentication copyWith(void Function(Authentication) updates) =>
+      super.copyWith((message) => updates(message as Authentication))
+          as Authentication;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Authentication create() => Authentication._();
   Authentication createEmptyInstance() => create();
-  static $pb.PbList<Authentication> createRepeated() => $pb.PbList<Authentication>();
+  static $pb.PbList<Authentication> createRepeated() =>
+      $pb.PbList<Authentication>();
   @$core.pragma('dart2js:noInline')
-  static Authentication getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Authentication>(create);
+  static Authentication getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Authentication>(create);
   static Authentication? _defaultInstance;
 
   ///  A list of authentication rules that apply to individual API methods.
@@ -119,36 +131,47 @@ class AuthenticationRule extends $pb.GeneratedMessage {
     return $result;
   }
   AuthenticationRule._() : super();
-  factory AuthenticationRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuthenticationRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuthenticationRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuthenticationRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthenticationRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuthenticationRule',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'selector')
-    ..aOM<OAuthRequirements>(2, _omitFieldNames ? '' : 'oauth', subBuilder: OAuthRequirements.create)
+    ..aOM<OAuthRequirements>(2, _omitFieldNames ? '' : 'oauth',
+        subBuilder: OAuthRequirements.create)
     ..aOB(5, _omitFieldNames ? '' : 'allowWithoutCredential')
-    ..pc<AuthRequirement>(7, _omitFieldNames ? '' : 'requirements', $pb.PbFieldType.PM, subBuilder: AuthRequirement.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<AuthRequirement>(
+        7, _omitFieldNames ? '' : 'requirements', $pb.PbFieldType.PM,
+        subBuilder: AuthRequirement.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuthenticationRule clone() => AuthenticationRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuthenticationRule copyWith(void Function(AuthenticationRule) updates) => super.copyWith((message) => updates(message as AuthenticationRule)) as AuthenticationRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuthenticationRule copyWith(void Function(AuthenticationRule) updates) =>
+      super.copyWith((message) => updates(message as AuthenticationRule))
+          as AuthenticationRule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthenticationRule create() => AuthenticationRule._();
   AuthenticationRule createEmptyInstance() => create();
-  static $pb.PbList<AuthenticationRule> createRepeated() => $pb.PbList<AuthenticationRule>();
+  static $pb.PbList<AuthenticationRule> createRepeated() =>
+      $pb.PbList<AuthenticationRule>();
   @$core.pragma('dart2js:noInline')
-  static AuthenticationRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuthenticationRule>(create);
+  static AuthenticationRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuthenticationRule>(create);
   static AuthenticationRule? _defaultInstance;
 
   ///  Selects the methods to which this rule applies.
@@ -158,7 +181,10 @@ class AuthenticationRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get selector => $_getSZ(0);
   @$pb.TagNumber(1)
-  set selector($core.String v) { $_setString(0, v); }
+  set selector($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -168,7 +194,10 @@ class AuthenticationRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OAuthRequirements get oauth => $_getN(1);
   @$pb.TagNumber(2)
-  set oauth(OAuthRequirements v) { setField(2, v); }
+  set oauth(OAuthRequirements v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOauth() => $_has(1);
   @$pb.TagNumber(2)
@@ -181,7 +210,10 @@ class AuthenticationRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get allowWithoutCredential => $_getBF(2);
   @$pb.TagNumber(5)
-  set allowWithoutCredential($core.bool v) { $_setBool(2, v); }
+  set allowWithoutCredential($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAllowWithoutCredential() => $_has(2);
   @$pb.TagNumber(5)
@@ -192,12 +224,7 @@ class AuthenticationRule extends $pb.GeneratedMessage {
   $core.List<AuthRequirement> get requirements => $_getList(3);
 }
 
-enum JwtLocation_In {
-  header, 
-  query, 
-  cookie, 
-  notSet
-}
+enum JwtLocation_In { header, query, cookie, notSet }
 
 /// Specifies a location to extract JWT from an API request.
 class JwtLocation extends $pb.GeneratedMessage {
@@ -223,34 +250,40 @@ class JwtLocation extends $pb.GeneratedMessage {
     return $result;
   }
   JwtLocation._() : super();
-  factory JwtLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory JwtLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory JwtLocation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory JwtLocation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, JwtLocation_In> _JwtLocation_InByTag = {
-    1 : JwtLocation_In.header,
-    2 : JwtLocation_In.query,
-    4 : JwtLocation_In.cookie,
-    0 : JwtLocation_In.notSet
+    1: JwtLocation_In.header,
+    2: JwtLocation_In.query,
+    4: JwtLocation_In.cookie,
+    0: JwtLocation_In.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JwtLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'JwtLocation',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 4])
     ..aOS(1, _omitFieldNames ? '' : 'header')
     ..aOS(2, _omitFieldNames ? '' : 'query')
     ..aOS(3, _omitFieldNames ? '' : 'valuePrefix')
     ..aOS(4, _omitFieldNames ? '' : 'cookie')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   JwtLocation clone() => JwtLocation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  JwtLocation copyWith(void Function(JwtLocation) updates) => super.copyWith((message) => updates(message as JwtLocation)) as JwtLocation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  JwtLocation copyWith(void Function(JwtLocation) updates) =>
+      super.copyWith((message) => updates(message as JwtLocation))
+          as JwtLocation;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -259,7 +292,8 @@ class JwtLocation extends $pb.GeneratedMessage {
   JwtLocation createEmptyInstance() => create();
   static $pb.PbList<JwtLocation> createRepeated() => $pb.PbList<JwtLocation>();
   @$core.pragma('dart2js:noInline')
-  static JwtLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<JwtLocation>(create);
+  static JwtLocation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<JwtLocation>(create);
   static JwtLocation? _defaultInstance;
 
   JwtLocation_In whichIn() => _JwtLocation_InByTag[$_whichOneof(0)]!;
@@ -269,7 +303,10 @@ class JwtLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get header => $_getSZ(0);
   @$pb.TagNumber(1)
-  set header($core.String v) { $_setString(0, v); }
+  set header($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -279,7 +316,10 @@ class JwtLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get query => $_getSZ(1);
   @$pb.TagNumber(2)
-  set query($core.String v) { $_setString(1, v); }
+  set query($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQuery() => $_has(1);
   @$pb.TagNumber(2)
@@ -296,7 +336,10 @@ class JwtLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get valuePrefix => $_getSZ(2);
   @$pb.TagNumber(3)
-  set valuePrefix($core.String v) { $_setString(2, v); }
+  set valuePrefix($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValuePrefix() => $_has(2);
   @$pb.TagNumber(3)
@@ -306,7 +349,10 @@ class JwtLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get cookie => $_getSZ(3);
   @$pb.TagNumber(4)
-  set cookie($core.String v) { $_setString(3, v); }
+  set cookie($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCookie() => $_has(3);
   @$pb.TagNumber(4)
@@ -347,38 +393,48 @@ class AuthProvider extends $pb.GeneratedMessage {
     return $result;
   }
   AuthProvider._() : super();
-  factory AuthProvider.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuthProvider.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuthProvider.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuthProvider.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthProvider', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuthProvider',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'issuer')
     ..aOS(3, _omitFieldNames ? '' : 'jwksUri')
     ..aOS(4, _omitFieldNames ? '' : 'audiences')
     ..aOS(5, _omitFieldNames ? '' : 'authorizationUrl')
-    ..pc<JwtLocation>(6, _omitFieldNames ? '' : 'jwtLocations', $pb.PbFieldType.PM, subBuilder: JwtLocation.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<JwtLocation>(
+        6, _omitFieldNames ? '' : 'jwtLocations', $pb.PbFieldType.PM,
+        subBuilder: JwtLocation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuthProvider clone() => AuthProvider()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuthProvider copyWith(void Function(AuthProvider) updates) => super.copyWith((message) => updates(message as AuthProvider)) as AuthProvider;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuthProvider copyWith(void Function(AuthProvider) updates) =>
+      super.copyWith((message) => updates(message as AuthProvider))
+          as AuthProvider;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthProvider create() => AuthProvider._();
   AuthProvider createEmptyInstance() => create();
-  static $pb.PbList<AuthProvider> createRepeated() => $pb.PbList<AuthProvider>();
+  static $pb.PbList<AuthProvider> createRepeated() =>
+      $pb.PbList<AuthProvider>();
   @$core.pragma('dart2js:noInline')
-  static AuthProvider getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuthProvider>(create);
+  static AuthProvider getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuthProvider>(create);
   static AuthProvider? _defaultInstance;
 
   ///  The unique identifier of the auth provider. It will be referred to by
@@ -388,7 +444,10 @@ class AuthProvider extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -403,7 +462,10 @@ class AuthProvider extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get issuer => $_getSZ(1);
   @$pb.TagNumber(2)
-  set issuer($core.String v) { $_setString(1, v); }
+  set issuer($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIssuer() => $_has(1);
   @$pb.TagNumber(2)
@@ -424,7 +486,10 @@ class AuthProvider extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get jwksUri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set jwksUri($core.String v) { $_setString(2, v); }
+  set jwksUri($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasJwksUri() => $_has(2);
   @$pb.TagNumber(3)
@@ -450,7 +515,10 @@ class AuthProvider extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get audiences => $_getSZ(3);
   @$pb.TagNumber(4)
-  set audiences($core.String v) { $_setString(3, v); }
+  set audiences($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAudiences() => $_has(3);
   @$pb.TagNumber(4)
@@ -461,7 +529,10 @@ class AuthProvider extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get authorizationUrl => $_getSZ(4);
   @$pb.TagNumber(5)
-  set authorizationUrl($core.String v) { $_setString(4, v); }
+  set authorizationUrl($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAuthorizationUrl() => $_has(4);
   @$pb.TagNumber(5)
@@ -518,33 +589,41 @@ class OAuthRequirements extends $pb.GeneratedMessage {
     return $result;
   }
   OAuthRequirements._() : super();
-  factory OAuthRequirements.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OAuthRequirements.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OAuthRequirements.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OAuthRequirements.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OAuthRequirements', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OAuthRequirements',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'canonicalScopes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OAuthRequirements clone() => OAuthRequirements()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OAuthRequirements copyWith(void Function(OAuthRequirements) updates) => super.copyWith((message) => updates(message as OAuthRequirements)) as OAuthRequirements;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OAuthRequirements copyWith(void Function(OAuthRequirements) updates) =>
+      super.copyWith((message) => updates(message as OAuthRequirements))
+          as OAuthRequirements;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OAuthRequirements create() => OAuthRequirements._();
   OAuthRequirements createEmptyInstance() => create();
-  static $pb.PbList<OAuthRequirements> createRepeated() => $pb.PbList<OAuthRequirements>();
+  static $pb.PbList<OAuthRequirements> createRepeated() =>
+      $pb.PbList<OAuthRequirements>();
   @$core.pragma('dart2js:noInline')
-  static OAuthRequirements getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OAuthRequirements>(create);
+  static OAuthRequirements getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OAuthRequirements>(create);
   static OAuthRequirements? _defaultInstance;
 
   ///  The list of publicly documented OAuth scopes that are allowed access. An
@@ -557,7 +636,10 @@ class OAuthRequirements extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get canonicalScopes => $_getSZ(0);
   @$pb.TagNumber(1)
-  set canonicalScopes($core.String v) { $_setString(0, v); }
+  set canonicalScopes($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCanonicalScopes() => $_has(0);
   @$pb.TagNumber(1)
@@ -582,34 +664,42 @@ class AuthRequirement extends $pb.GeneratedMessage {
     return $result;
   }
   AuthRequirement._() : super();
-  factory AuthRequirement.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuthRequirement.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuthRequirement.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuthRequirement.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthRequirement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuthRequirement',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'providerId')
     ..aOS(2, _omitFieldNames ? '' : 'audiences')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuthRequirement clone() => AuthRequirement()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuthRequirement copyWith(void Function(AuthRequirement) updates) => super.copyWith((message) => updates(message as AuthRequirement)) as AuthRequirement;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuthRequirement copyWith(void Function(AuthRequirement) updates) =>
+      super.copyWith((message) => updates(message as AuthRequirement))
+          as AuthRequirement;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthRequirement create() => AuthRequirement._();
   AuthRequirement createEmptyInstance() => create();
-  static $pb.PbList<AuthRequirement> createRepeated() => $pb.PbList<AuthRequirement>();
+  static $pb.PbList<AuthRequirement> createRepeated() =>
+      $pb.PbList<AuthRequirement>();
   @$core.pragma('dart2js:noInline')
-  static AuthRequirement getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuthRequirement>(create);
+  static AuthRequirement getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuthRequirement>(create);
   static AuthRequirement? _defaultInstance;
 
   ///  [id][google.api.AuthProvider.id] from authentication provider.
@@ -620,7 +710,10 @@ class AuthRequirement extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get providerId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set providerId($core.String v) { $_setString(0, v); }
+  set providerId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProviderId() => $_has(0);
   @$pb.TagNumber(1)
@@ -645,13 +738,16 @@ class AuthRequirement extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get audiences => $_getSZ(1);
   @$pb.TagNumber(2)
-  set audiences($core.String v) { $_setString(1, v); }
+  set audiences($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAudiences() => $_has(1);
   @$pb.TagNumber(2)
   void clearAudiences() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -41,23 +41,52 @@ final $typed_data.Uint8List parameterTypeDescriptor = $convert.base64Decode(
 const LaunchFlexTemplateResponse$json = {
   '1': 'LaunchFlexTemplateResponse',
   '2': [
-    {'1': 'job', '3': 1, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.Job', '10': 'job'},
+    {
+      '1': 'job',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.Job',
+      '10': 'job'
+    },
   ],
 };
 
 /// Descriptor for `LaunchFlexTemplateResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List launchFlexTemplateResponseDescriptor = $convert.base64Decode(
-    'ChpMYXVuY2hGbGV4VGVtcGxhdGVSZXNwb25zZRIuCgNqb2IYASABKAsyHC5nb29nbGUuZGF0YW'
-    'Zsb3cudjFiZXRhMy5Kb2JSA2pvYg==');
+final $typed_data.Uint8List launchFlexTemplateResponseDescriptor =
+    $convert.base64Decode(
+        'ChpMYXVuY2hGbGV4VGVtcGxhdGVSZXNwb25zZRIuCgNqb2IYASABKAsyHC5nb29nbGUuZGF0YW'
+        'Zsb3cudjFiZXRhMy5Kb2JSA2pvYg==');
 
 @$core.Deprecated('Use containerSpecDescriptor instead')
 const ContainerSpec$json = {
   '1': 'ContainerSpec',
   '2': [
     {'1': 'image', '3': 1, '4': 1, '5': 9, '10': 'image'},
-    {'1': 'metadata', '3': 2, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.TemplateMetadata', '10': 'metadata'},
-    {'1': 'sdk_info', '3': 3, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.SDKInfo', '10': 'sdkInfo'},
-    {'1': 'default_environment', '3': 4, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.FlexTemplateRuntimeEnvironment', '10': 'defaultEnvironment'},
+    {
+      '1': 'metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.TemplateMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'sdk_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.SDKInfo',
+      '10': 'sdkInfo'
+    },
+    {
+      '1': 'default_environment',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.FlexTemplateRuntimeEnvironment',
+      '10': 'defaultEnvironment'
+    },
   ],
 };
 
@@ -74,15 +103,65 @@ const LaunchFlexTemplateParameter$json = {
   '1': 'LaunchFlexTemplateParameter',
   '2': [
     {'1': 'job_name', '3': 1, '4': 1, '5': 9, '10': 'jobName'},
-    {'1': 'container_spec', '3': 4, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.ContainerSpec', '9': 0, '10': 'containerSpec'},
-    {'1': 'container_spec_gcs_path', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'containerSpecGcsPath'},
-    {'1': 'parameters', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.LaunchFlexTemplateParameter.ParametersEntry', '10': 'parameters'},
-    {'1': 'launch_options', '3': 6, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.LaunchFlexTemplateParameter.LaunchOptionsEntry', '10': 'launchOptions'},
-    {'1': 'environment', '3': 7, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.FlexTemplateRuntimeEnvironment', '10': 'environment'},
+    {
+      '1': 'container_spec',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ContainerSpec',
+      '9': 0,
+      '10': 'containerSpec'
+    },
+    {
+      '1': 'container_spec_gcs_path',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'containerSpecGcsPath'
+    },
+    {
+      '1': 'parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.LaunchFlexTemplateParameter.ParametersEntry',
+      '10': 'parameters'
+    },
+    {
+      '1': 'launch_options',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.LaunchFlexTemplateParameter.LaunchOptionsEntry',
+      '10': 'launchOptions'
+    },
+    {
+      '1': 'environment',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.FlexTemplateRuntimeEnvironment',
+      '10': 'environment'
+    },
     {'1': 'update', '3': 8, '4': 1, '5': 8, '10': 'update'},
-    {'1': 'transform_name_mappings', '3': 9, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.LaunchFlexTemplateParameter.TransformNameMappingsEntry', '10': 'transformNameMappings'},
+    {
+      '1': 'transform_name_mappings',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.LaunchFlexTemplateParameter.TransformNameMappingsEntry',
+      '10': 'transformNameMappings'
+    },
   ],
-  '3': [LaunchFlexTemplateParameter_ParametersEntry$json, LaunchFlexTemplateParameter_LaunchOptionsEntry$json, LaunchFlexTemplateParameter_TransformNameMappingsEntry$json],
+  '3': [
+    LaunchFlexTemplateParameter_ParametersEntry$json,
+    LaunchFlexTemplateParameter_LaunchOptionsEntry$json,
+    LaunchFlexTemplateParameter_TransformNameMappingsEntry$json
+  ],
   '8': [
     {'1': 'template'},
   ],
@@ -144,26 +223,91 @@ const FlexTemplateRuntimeEnvironment$json = {
     {'1': 'num_workers', '3': 1, '4': 1, '5': 5, '10': 'numWorkers'},
     {'1': 'max_workers', '3': 2, '4': 1, '5': 5, '10': 'maxWorkers'},
     {'1': 'zone', '3': 3, '4': 1, '5': 9, '10': 'zone'},
-    {'1': 'service_account_email', '3': 4, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
+    {
+      '1': 'service_account_email',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
     {'1': 'temp_location', '3': 5, '4': 1, '5': 9, '10': 'tempLocation'},
     {'1': 'machine_type', '3': 6, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'additional_experiments', '3': 7, '4': 3, '5': 9, '10': 'additionalExperiments'},
+    {
+      '1': 'additional_experiments',
+      '3': 7,
+      '4': 3,
+      '5': 9,
+      '10': 'additionalExperiments'
+    },
     {'1': 'network', '3': 8, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnetwork', '3': 9, '4': 1, '5': 9, '10': 'subnetwork'},
-    {'1': 'additional_user_labels', '3': 10, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.FlexTemplateRuntimeEnvironment.AdditionalUserLabelsEntry', '10': 'additionalUserLabels'},
+    {
+      '1': 'additional_user_labels',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.FlexTemplateRuntimeEnvironment.AdditionalUserLabelsEntry',
+      '10': 'additionalUserLabels'
+    },
     {'1': 'kms_key_name', '3': 11, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'ip_configuration', '3': 12, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.WorkerIPAddressConfiguration', '10': 'ipConfiguration'},
+    {
+      '1': 'ip_configuration',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.WorkerIPAddressConfiguration',
+      '10': 'ipConfiguration'
+    },
     {'1': 'worker_region', '3': 13, '4': 1, '5': 9, '10': 'workerRegion'},
     {'1': 'worker_zone', '3': 14, '4': 1, '5': 9, '10': 'workerZone'},
-    {'1': 'enable_streaming_engine', '3': 15, '4': 1, '5': 8, '10': 'enableStreamingEngine'},
-    {'1': 'flexrs_goal', '3': 16, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.FlexResourceSchedulingGoal', '10': 'flexrsGoal'},
+    {
+      '1': 'enable_streaming_engine',
+      '3': 15,
+      '4': 1,
+      '5': 8,
+      '10': 'enableStreamingEngine'
+    },
+    {
+      '1': 'flexrs_goal',
+      '3': 16,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.FlexResourceSchedulingGoal',
+      '10': 'flexrsGoal'
+    },
     {'1': 'staging_location', '3': 17, '4': 1, '5': 9, '10': 'stagingLocation'},
-    {'1': 'sdk_container_image', '3': 18, '4': 1, '5': 9, '10': 'sdkContainerImage'},
+    {
+      '1': 'sdk_container_image',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '10': 'sdkContainerImage'
+    },
     {'1': 'disk_size_gb', '3': 20, '4': 1, '5': 5, '10': 'diskSizeGb'},
-    {'1': 'autoscaling_algorithm', '3': 21, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.AutoscalingAlgorithm', '10': 'autoscalingAlgorithm'},
+    {
+      '1': 'autoscaling_algorithm',
+      '3': 21,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.AutoscalingAlgorithm',
+      '10': 'autoscalingAlgorithm'
+    },
     {'1': 'dump_heap_on_oom', '3': 22, '4': 1, '5': 8, '10': 'dumpHeapOnOom'},
-    {'1': 'save_heap_dumps_to_gcs_path', '3': 23, '4': 1, '5': 9, '10': 'saveHeapDumpsToGcsPath'},
-    {'1': 'launcher_machine_type', '3': 24, '4': 1, '5': 9, '10': 'launcherMachineType'},
+    {
+      '1': 'save_heap_dumps_to_gcs_path',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '10': 'saveHeapDumpsToGcsPath'
+    },
+    {
+      '1': 'launcher_machine_type',
+      '3': 24,
+      '4': 1,
+      '5': 9,
+      '10': 'launcherMachineType'
+    },
   ],
   '3': [FlexTemplateRuntimeEnvironment_AdditionalUserLabelsEntry$json],
 };
@@ -210,7 +354,14 @@ const LaunchFlexTemplateRequest$json = {
   '1': 'LaunchFlexTemplateRequest',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'launch_parameter', '3': 2, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.LaunchFlexTemplateParameter', '10': 'launchParameter'},
+    {
+      '1': 'launch_parameter',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.LaunchFlexTemplateParameter',
+      '10': 'launchParameter'
+    },
     {'1': 'location', '3': 3, '4': 1, '5': 9, '10': 'location'},
     {'1': 'validate_only', '3': 4, '4': 1, '5': 8, '10': 'validateOnly'},
   ],
@@ -230,19 +381,58 @@ const RuntimeEnvironment$json = {
     {'1': 'num_workers', '3': 11, '4': 1, '5': 5, '10': 'numWorkers'},
     {'1': 'max_workers', '3': 1, '4': 1, '5': 5, '10': 'maxWorkers'},
     {'1': 'zone', '3': 2, '4': 1, '5': 9, '10': 'zone'},
-    {'1': 'service_account_email', '3': 3, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
+    {
+      '1': 'service_account_email',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
     {'1': 'temp_location', '3': 4, '4': 1, '5': 9, '10': 'tempLocation'},
-    {'1': 'bypass_temp_dir_validation', '3': 5, '4': 1, '5': 8, '10': 'bypassTempDirValidation'},
+    {
+      '1': 'bypass_temp_dir_validation',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'bypassTempDirValidation'
+    },
     {'1': 'machine_type', '3': 6, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'additional_experiments', '3': 7, '4': 3, '5': 9, '10': 'additionalExperiments'},
+    {
+      '1': 'additional_experiments',
+      '3': 7,
+      '4': 3,
+      '5': 9,
+      '10': 'additionalExperiments'
+    },
     {'1': 'network', '3': 8, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnetwork', '3': 9, '4': 1, '5': 9, '10': 'subnetwork'},
-    {'1': 'additional_user_labels', '3': 10, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.RuntimeEnvironment.AdditionalUserLabelsEntry', '10': 'additionalUserLabels'},
+    {
+      '1': 'additional_user_labels',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.RuntimeEnvironment.AdditionalUserLabelsEntry',
+      '10': 'additionalUserLabels'
+    },
     {'1': 'kms_key_name', '3': 12, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'ip_configuration', '3': 14, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.WorkerIPAddressConfiguration', '10': 'ipConfiguration'},
+    {
+      '1': 'ip_configuration',
+      '3': 14,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.WorkerIPAddressConfiguration',
+      '10': 'ipConfiguration'
+    },
     {'1': 'worker_region', '3': 15, '4': 1, '5': 9, '10': 'workerRegion'},
     {'1': 'worker_zone', '3': 16, '4': 1, '5': 9, '10': 'workerZone'},
-    {'1': 'enable_streaming_engine', '3': 17, '4': 1, '5': 8, '10': 'enableStreamingEngine'},
+    {
+      '1': 'enable_streaming_engine',
+      '3': 17,
+      '4': 1,
+      '5': 8,
+      '10': 'enableStreamingEngine'
+    },
   ],
   '3': [RuntimeEnvironment_AdditionalUserLabelsEntry$json],
 };
@@ -285,8 +475,22 @@ const ParameterMetadata$json = {
     {'1': 'help_text', '3': 3, '4': 1, '5': 9, '10': 'helpText'},
     {'1': 'is_optional', '3': 4, '4': 1, '5': 8, '10': 'isOptional'},
     {'1': 'regexes', '3': 5, '4': 3, '5': 9, '10': 'regexes'},
-    {'1': 'param_type', '3': 6, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.ParameterType', '10': 'paramType'},
-    {'1': 'custom_metadata', '3': 7, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.ParameterMetadata.CustomMetadataEntry', '10': 'customMetadata'},
+    {
+      '1': 'param_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.ParameterType',
+      '10': 'paramType'
+    },
+    {
+      '1': 'custom_metadata',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ParameterMetadata.CustomMetadataEntry',
+      '10': 'customMetadata'
+    },
   ],
   '3': [ParameterMetadata_CustomMetadataEntry$json],
 };
@@ -318,7 +522,14 @@ const TemplateMetadata$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'parameters', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.ParameterMetadata', '10': 'parameters'},
+    {
+      '1': 'parameters',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ParameterMetadata',
+      '10': 'parameters'
+    },
   ],
 };
 
@@ -332,7 +543,14 @@ final $typed_data.Uint8List templateMetadataDescriptor = $convert.base64Decode(
 const SDKInfo$json = {
   '1': 'SDKInfo',
   '2': [
-    {'1': 'language', '3': 1, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.SDKInfo.Language', '10': 'language'},
+    {
+      '1': 'language',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.SDKInfo.Language',
+      '10': 'language'
+    },
     {'1': 'version', '3': 2, '4': 1, '5': 9, '10': 'version'},
   ],
   '4': [SDKInfo_Language$json],
@@ -358,8 +576,22 @@ final $typed_data.Uint8List sDKInfoDescriptor = $convert.base64Decode(
 const RuntimeMetadata$json = {
   '1': 'RuntimeMetadata',
   '2': [
-    {'1': 'sdk_info', '3': 1, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.SDKInfo', '10': 'sdkInfo'},
-    {'1': 'parameters', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.ParameterMetadata', '10': 'parameters'},
+    {
+      '1': 'sdk_info',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.SDKInfo',
+      '10': 'sdkInfo'
+    },
+    {
+      '1': 'parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.ParameterMetadata',
+      '10': 'parameters'
+    },
   ],
 };
 
@@ -376,8 +608,23 @@ const CreateJobFromTemplateRequest$json = {
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'job_name', '3': 4, '4': 1, '5': 9, '10': 'jobName'},
     {'1': 'gcs_path', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'gcsPath'},
-    {'1': 'parameters', '3': 3, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.CreateJobFromTemplateRequest.ParametersEntry', '10': 'parameters'},
-    {'1': 'environment', '3': 5, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.RuntimeEnvironment', '10': 'environment'},
+    {
+      '1': 'parameters',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.CreateJobFromTemplateRequest.ParametersEntry',
+      '10': 'parameters'
+    },
+    {
+      '1': 'environment',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.RuntimeEnvironment',
+      '10': 'environment'
+    },
     {'1': 'location', '3': 6, '4': 1, '5': 9, '10': 'location'},
   ],
   '3': [CreateJobFromTemplateRequest_ParametersEntry$json],
@@ -413,7 +660,14 @@ const GetTemplateRequest$json = {
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'gcs_path', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'gcsPath'},
-    {'1': 'view', '3': 3, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.GetTemplateRequest.TemplateView', '10': 'view'},
+    {
+      '1': 'view',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.GetTemplateRequest.TemplateView',
+      '10': 'view'
+    },
     {'1': 'location', '3': 4, '4': 1, '5': 9, '10': 'location'},
   ],
   '4': [GetTemplateRequest_TemplateView$json],
@@ -442,10 +696,38 @@ final $typed_data.Uint8List getTemplateRequestDescriptor = $convert.base64Decode
 const GetTemplateResponse$json = {
   '1': 'GetTemplateResponse',
   '2': [
-    {'1': 'status', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'metadata', '3': 2, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.TemplateMetadata', '10': 'metadata'},
-    {'1': 'template_type', '3': 3, '4': 1, '5': 14, '6': '.google.dataflow.v1beta3.GetTemplateResponse.TemplateType', '10': 'templateType'},
-    {'1': 'runtime_metadata', '3': 4, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.RuntimeMetadata', '10': 'runtimeMetadata'},
+    {
+      '1': 'status',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.TemplateMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'template_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.dataflow.v1beta3.GetTemplateResponse.TemplateType',
+      '10': 'templateType'
+    },
+    {
+      '1': 'runtime_metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.RuntimeMetadata',
+      '10': 'runtimeMetadata'
+    },
   ],
   '4': [GetTemplateResponse_TemplateType$json],
 };
@@ -475,12 +757,37 @@ const LaunchTemplateParameters$json = {
   '1': 'LaunchTemplateParameters',
   '2': [
     {'1': 'job_name', '3': 1, '4': 1, '5': 9, '10': 'jobName'},
-    {'1': 'parameters', '3': 2, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.LaunchTemplateParameters.ParametersEntry', '10': 'parameters'},
-    {'1': 'environment', '3': 3, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.RuntimeEnvironment', '10': 'environment'},
+    {
+      '1': 'parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.LaunchTemplateParameters.ParametersEntry',
+      '10': 'parameters'
+    },
+    {
+      '1': 'environment',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.RuntimeEnvironment',
+      '10': 'environment'
+    },
     {'1': 'update', '3': 4, '4': 1, '5': 8, '10': 'update'},
-    {'1': 'transform_name_mapping', '3': 5, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.LaunchTemplateParameters.TransformNameMappingEntry', '10': 'transformNameMapping'},
+    {
+      '1': 'transform_name_mapping',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.LaunchTemplateParameters.TransformNameMappingEntry',
+      '10': 'transformNameMapping'
+    },
   ],
-  '3': [LaunchTemplateParameters_ParametersEntry$json, LaunchTemplateParameters_TransformNameMappingEntry$json],
+  '3': [
+    LaunchTemplateParameters_ParametersEntry$json,
+    LaunchTemplateParameters_TransformNameMappingEntry$json
+  ],
 };
 
 @$core.Deprecated('Use launchTemplateParametersDescriptor instead')
@@ -523,8 +830,23 @@ const LaunchTemplateRequest$json = {
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'validate_only', '3': 2, '4': 1, '5': 8, '10': 'validateOnly'},
     {'1': 'gcs_path', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'gcsPath'},
-    {'1': 'dynamic_template', '3': 6, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.DynamicTemplateLaunchParams', '9': 0, '10': 'dynamicTemplate'},
-    {'1': 'launch_parameters', '3': 4, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.LaunchTemplateParameters', '10': 'launchParameters'},
+    {
+      '1': 'dynamic_template',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.DynamicTemplateLaunchParams',
+      '9': 0,
+      '10': 'dynamicTemplate'
+    },
+    {
+      '1': 'launch_parameters',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.LaunchTemplateParameters',
+      '10': 'launchParameters'
+    },
     {'1': 'location', '3': 5, '4': 1, '5': 9, '10': 'location'},
   ],
   '8': [
@@ -546,20 +868,36 @@ final $typed_data.Uint8List launchTemplateRequestDescriptor = $convert.base64Dec
 const LaunchTemplateResponse$json = {
   '1': 'LaunchTemplateResponse',
   '2': [
-    {'1': 'job', '3': 1, '4': 1, '5': 11, '6': '.google.dataflow.v1beta3.Job', '10': 'job'},
+    {
+      '1': 'job',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.dataflow.v1beta3.Job',
+      '10': 'job'
+    },
   ],
 };
 
 /// Descriptor for `LaunchTemplateResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List launchTemplateResponseDescriptor = $convert.base64Decode(
-    'ChZMYXVuY2hUZW1wbGF0ZVJlc3BvbnNlEi4KA2pvYhgBIAEoCzIcLmdvb2dsZS5kYXRhZmxvdy'
-    '52MWJldGEzLkpvYlIDam9i');
+final $typed_data.Uint8List launchTemplateResponseDescriptor =
+    $convert.base64Decode(
+        'ChZMYXVuY2hUZW1wbGF0ZVJlc3BvbnNlEi4KA2pvYhgBIAEoCzIcLmdvb2dsZS5kYXRhZmxvdy'
+        '52MWJldGEzLkpvYlIDam9i');
 
 @$core.Deprecated('Use invalidTemplateParametersDescriptor instead')
 const InvalidTemplateParameters$json = {
   '1': 'InvalidTemplateParameters',
   '2': [
-    {'1': 'parameter_violations', '3': 1, '4': 3, '5': 11, '6': '.google.dataflow.v1beta3.InvalidTemplateParameters.ParameterViolation', '10': 'parameterViolations'},
+    {
+      '1': 'parameter_violations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.dataflow.v1beta3.InvalidTemplateParameters.ParameterViolation',
+      '10': 'parameterViolations'
+    },
   ],
   '3': [InvalidTemplateParameters_ParameterViolation$json],
 };
@@ -591,7 +929,7 @@ const DynamicTemplateLaunchParams$json = {
 };
 
 /// Descriptor for `DynamicTemplateLaunchParams`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dynamicTemplateLaunchParamsDescriptor = $convert.base64Decode(
-    'ChtEeW5hbWljVGVtcGxhdGVMYXVuY2hQYXJhbXMSGQoIZ2NzX3BhdGgYASABKAlSB2djc1BhdG'
-    'gSKQoQc3RhZ2luZ19sb2NhdGlvbhgCIAEoCVIPc3RhZ2luZ0xvY2F0aW9u');
-
+final $typed_data.Uint8List dynamicTemplateLaunchParamsDescriptor =
+    $convert.base64Decode(
+        'ChtEeW5hbWljVGVtcGxhdGVMYXVuY2hQYXJhbXMSGQoIZ2NzX3BhdGgYASABKAlSB2djc1BhdG'
+        'gSKQoQc3RhZ2luZ19sb2NhdGlvbhgCIAEoCVIPc3RhZ2luZ0xvY2F0aW9u');

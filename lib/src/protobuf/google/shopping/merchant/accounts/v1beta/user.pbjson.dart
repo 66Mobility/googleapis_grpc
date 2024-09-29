@@ -18,8 +18,24 @@ const User$json = {
   '1': 'User',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.User.State', '8': {}, '10': 'state'},
-    {'1': 'access_rights', '3': 4, '4': 3, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.AccessRight', '8': {}, '10': 'accessRights'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.User.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'access_rights',
+      '3': 4,
+      '4': 3,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.AccessRight',
+      '8': {},
+      '10': 'accessRights'
+    },
   ],
   '4': [User_State$json],
   '7': {},
@@ -64,7 +80,15 @@ const CreateUserRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'user_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'userId'},
-    {'1': 'user', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.User', '8': {}, '10': 'user'},
+    {
+      '1': 'user',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.User',
+      '8': {},
+      '10': 'user'
+    },
   ],
 };
 
@@ -92,8 +116,24 @@ final $typed_data.Uint8List deleteUserRequestDescriptor = $convert.base64Decode(
 const UpdateUserRequest$json = {
   '1': 'UpdateUserRequest',
   '2': [
-    {'1': 'user', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.User', '8': {}, '10': 'user'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'user',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.User',
+      '8': {},
+      '10': 'user'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -123,7 +163,14 @@ final $typed_data.Uint8List listUsersRequestDescriptor = $convert.base64Decode(
 const ListUsersResponse$json = {
   '1': 'ListUsersResponse',
   '2': [
-    {'1': 'users', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.User', '10': 'users'},
+    {
+      '1': 'users',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.User',
+      '10': 'users'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -133,4 +180,3 @@ final $typed_data.Uint8List listUsersResponseDescriptor = $convert.base64Decode(
     'ChFMaXN0VXNlcnNSZXNwb25zZRJECgV1c2VycxgBIAMoCzIuLmdvb2dsZS5zaG9wcGluZy5tZX'
     'JjaGFudC5hY2NvdW50cy52MWJldGEuVXNlclIFdXNlcnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIg'
     'ASgJUg1uZXh0UGFnZVRva2Vu');
-

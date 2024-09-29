@@ -47,37 +47,56 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
     return $result;
   }
   XyChart_DataSet._() : super();
-  factory XyChart_DataSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory XyChart_DataSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory XyChart_DataSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory XyChart_DataSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'XyChart.DataSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $513.TimeSeriesQuery.create)
-    ..e<XyChart_DataSet_PlotType>(2, _omitFieldNames ? '' : 'plotType', $pb.PbFieldType.OE, defaultOrMaker: XyChart_DataSet_PlotType.PLOT_TYPE_UNSPECIFIED, valueOf: XyChart_DataSet_PlotType.valueOf, enumValues: XyChart_DataSet_PlotType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'XyChart.DataSet',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $513.TimeSeriesQuery.create)
+    ..e<XyChart_DataSet_PlotType>(
+        2, _omitFieldNames ? '' : 'plotType', $pb.PbFieldType.OE,
+        defaultOrMaker: XyChart_DataSet_PlotType.PLOT_TYPE_UNSPECIFIED,
+        valueOf: XyChart_DataSet_PlotType.valueOf,
+        enumValues: XyChart_DataSet_PlotType.values)
     ..aOS(3, _omitFieldNames ? '' : 'legendTemplate')
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $264.Duration.create)
-    ..e<XyChart_DataSet_TargetAxis>(5, _omitFieldNames ? '' : 'targetAxis', $pb.PbFieldType.OE, defaultOrMaker: XyChart_DataSet_TargetAxis.TARGET_AXIS_UNSPECIFIED, valueOf: XyChart_DataSet_TargetAxis.valueOf, enumValues: XyChart_DataSet_TargetAxis.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'minAlignmentPeriod',
+        subBuilder: $264.Duration.create)
+    ..e<XyChart_DataSet_TargetAxis>(
+        5, _omitFieldNames ? '' : 'targetAxis', $pb.PbFieldType.OE,
+        defaultOrMaker: XyChart_DataSet_TargetAxis.TARGET_AXIS_UNSPECIFIED,
+        valueOf: XyChart_DataSet_TargetAxis.valueOf,
+        enumValues: XyChart_DataSet_TargetAxis.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   XyChart_DataSet clone() => XyChart_DataSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  XyChart_DataSet copyWith(void Function(XyChart_DataSet) updates) => super.copyWith((message) => updates(message as XyChart_DataSet)) as XyChart_DataSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  XyChart_DataSet copyWith(void Function(XyChart_DataSet) updates) =>
+      super.copyWith((message) => updates(message as XyChart_DataSet))
+          as XyChart_DataSet;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static XyChart_DataSet create() => XyChart_DataSet._();
   XyChart_DataSet createEmptyInstance() => create();
-  static $pb.PbList<XyChart_DataSet> createRepeated() => $pb.PbList<XyChart_DataSet>();
+  static $pb.PbList<XyChart_DataSet> createRepeated() =>
+      $pb.PbList<XyChart_DataSet>();
   @$core.pragma('dart2js:noInline')
-  static XyChart_DataSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<XyChart_DataSet>(create);
+  static XyChart_DataSet getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<XyChart_DataSet>(create);
   static XyChart_DataSet? _defaultInstance;
 
   /// Required. Fields for querying time series data from the
@@ -85,7 +104,10 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $513.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($513.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($513.TimeSeriesQuery v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -97,7 +119,10 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   XyChart_DataSet_PlotType get plotType => $_getN(1);
   @$pb.TagNumber(2)
-  set plotType(XyChart_DataSet_PlotType v) { setField(2, v); }
+  set plotType(XyChart_DataSet_PlotType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPlotType() => $_has(1);
   @$pb.TagNumber(2)
@@ -109,7 +134,10 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get legendTemplate => $_getSZ(2);
   @$pb.TagNumber(3)
-  set legendTemplate($core.String v) { $_setString(2, v); }
+  set legendTemplate($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLegendTemplate() => $_has(2);
   @$pb.TagNumber(3)
@@ -123,7 +151,10 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $264.Duration get minAlignmentPeriod => $_getN(3);
   @$pb.TagNumber(4)
-  set minAlignmentPeriod($264.Duration v) { setField(4, v); }
+  set minAlignmentPeriod($264.Duration v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMinAlignmentPeriod() => $_has(3);
   @$pb.TagNumber(4)
@@ -135,7 +166,10 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   XyChart_DataSet_TargetAxis get targetAxis => $_getN(4);
   @$pb.TagNumber(5)
-  set targetAxis(XyChart_DataSet_TargetAxis v) { setField(5, v); }
+  set targetAxis(XyChart_DataSet_TargetAxis v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTargetAxis() => $_has(4);
   @$pb.TagNumber(5)
@@ -158,41 +192,57 @@ class XyChart_Axis extends $pb.GeneratedMessage {
     return $result;
   }
   XyChart_Axis._() : super();
-  factory XyChart_Axis.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory XyChart_Axis.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory XyChart_Axis.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory XyChart_Axis.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'XyChart.Axis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'XyChart.Axis',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'label')
-    ..e<XyChart_Axis_Scale>(2, _omitFieldNames ? '' : 'scale', $pb.PbFieldType.OE, defaultOrMaker: XyChart_Axis_Scale.SCALE_UNSPECIFIED, valueOf: XyChart_Axis_Scale.valueOf, enumValues: XyChart_Axis_Scale.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<XyChart_Axis_Scale>(
+        2, _omitFieldNames ? '' : 'scale', $pb.PbFieldType.OE,
+        defaultOrMaker: XyChart_Axis_Scale.SCALE_UNSPECIFIED,
+        valueOf: XyChart_Axis_Scale.valueOf,
+        enumValues: XyChart_Axis_Scale.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   XyChart_Axis clone() => XyChart_Axis()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  XyChart_Axis copyWith(void Function(XyChart_Axis) updates) => super.copyWith((message) => updates(message as XyChart_Axis)) as XyChart_Axis;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  XyChart_Axis copyWith(void Function(XyChart_Axis) updates) =>
+      super.copyWith((message) => updates(message as XyChart_Axis))
+          as XyChart_Axis;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static XyChart_Axis create() => XyChart_Axis._();
   XyChart_Axis createEmptyInstance() => create();
-  static $pb.PbList<XyChart_Axis> createRepeated() => $pb.PbList<XyChart_Axis>();
+  static $pb.PbList<XyChart_Axis> createRepeated() =>
+      $pb.PbList<XyChart_Axis>();
   @$core.pragma('dart2js:noInline')
-  static XyChart_Axis getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<XyChart_Axis>(create);
+  static XyChart_Axis getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<XyChart_Axis>(create);
   static XyChart_Axis? _defaultInstance;
 
   /// The label of the axis.
   @$pb.TagNumber(1)
   $core.String get label => $_getSZ(0);
   @$pb.TagNumber(1)
-  set label($core.String v) { $_setString(0, v); }
+  set label($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLabel() => $_has(0);
   @$pb.TagNumber(1)
@@ -202,7 +252,10 @@ class XyChart_Axis extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   XyChart_Axis_Scale get scale => $_getN(1);
   @$pb.TagNumber(2)
-  set scale(XyChart_Axis_Scale v) { setField(2, v); }
+  set scale(XyChart_Axis_Scale v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasScale() => $_has(1);
   @$pb.TagNumber(2)
@@ -245,30 +298,45 @@ class XyChart extends $pb.GeneratedMessage {
     return $result;
   }
   XyChart._() : super();
-  factory XyChart.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory XyChart.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory XyChart.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory XyChart.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'XyChart', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<XyChart_DataSet>(1, _omitFieldNames ? '' : 'dataSets', $pb.PbFieldType.PM, subBuilder: XyChart_DataSet.create)
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'timeshiftDuration', subBuilder: $264.Duration.create)
-    ..pc<$513.Threshold>(5, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM, subBuilder: $513.Threshold.create)
-    ..aOM<XyChart_Axis>(6, _omitFieldNames ? '' : 'xAxis', subBuilder: XyChart_Axis.create)
-    ..aOM<XyChart_Axis>(7, _omitFieldNames ? '' : 'yAxis', subBuilder: XyChart_Axis.create)
-    ..aOM<ChartOptions>(8, _omitFieldNames ? '' : 'chartOptions', subBuilder: ChartOptions.create)
-    ..aOM<XyChart_Axis>(9, _omitFieldNames ? '' : 'y2Axis', subBuilder: XyChart_Axis.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'XyChart',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..pc<XyChart_DataSet>(
+        1, _omitFieldNames ? '' : 'dataSets', $pb.PbFieldType.PM,
+        subBuilder: XyChart_DataSet.create)
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'timeshiftDuration',
+        subBuilder: $264.Duration.create)
+    ..pc<$513.Threshold>(
+        5, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM,
+        subBuilder: $513.Threshold.create)
+    ..aOM<XyChart_Axis>(6, _omitFieldNames ? '' : 'xAxis',
+        subBuilder: XyChart_Axis.create)
+    ..aOM<XyChart_Axis>(7, _omitFieldNames ? '' : 'yAxis',
+        subBuilder: XyChart_Axis.create)
+    ..aOM<ChartOptions>(8, _omitFieldNames ? '' : 'chartOptions',
+        subBuilder: ChartOptions.create)
+    ..aOM<XyChart_Axis>(9, _omitFieldNames ? '' : 'y2Axis',
+        subBuilder: XyChart_Axis.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   XyChart clone() => XyChart()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  XyChart copyWith(void Function(XyChart) updates) => super.copyWith((message) => updates(message as XyChart)) as XyChart;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  XyChart copyWith(void Function(XyChart) updates) =>
+      super.copyWith((message) => updates(message as XyChart)) as XyChart;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -277,7 +345,8 @@ class XyChart extends $pb.GeneratedMessage {
   XyChart createEmptyInstance() => create();
   static $pb.PbList<XyChart> createRepeated() => $pb.PbList<XyChart>();
   @$core.pragma('dart2js:noInline')
-  static XyChart getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<XyChart>(create);
+  static XyChart getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<XyChart>(create);
   static XyChart? _defaultInstance;
 
   /// Required. The data displayed in this chart.
@@ -292,7 +361,10 @@ class XyChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $264.Duration get timeshiftDuration => $_getN(1);
   @$pb.TagNumber(4)
-  set timeshiftDuration($264.Duration v) { setField(4, v); }
+  set timeshiftDuration($264.Duration v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTimeshiftDuration() => $_has(1);
   @$pb.TagNumber(4)
@@ -308,7 +380,10 @@ class XyChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   XyChart_Axis get xAxis => $_getN(3);
   @$pb.TagNumber(6)
-  set xAxis(XyChart_Axis v) { setField(6, v); }
+  set xAxis(XyChart_Axis v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasXAxis() => $_has(3);
   @$pb.TagNumber(6)
@@ -320,7 +395,10 @@ class XyChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   XyChart_Axis get yAxis => $_getN(4);
   @$pb.TagNumber(7)
-  set yAxis(XyChart_Axis v) { setField(7, v); }
+  set yAxis(XyChart_Axis v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasYAxis() => $_has(4);
   @$pb.TagNumber(7)
@@ -332,7 +410,10 @@ class XyChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   ChartOptions get chartOptions => $_getN(5);
   @$pb.TagNumber(8)
-  set chartOptions(ChartOptions v) { setField(8, v); }
+  set chartOptions(ChartOptions v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasChartOptions() => $_has(5);
   @$pb.TagNumber(8)
@@ -344,7 +425,10 @@ class XyChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   XyChart_Axis get y2Axis => $_getN(6);
   @$pb.TagNumber(9)
-  set y2Axis(XyChart_Axis v) { setField(9, v); }
+  set y2Axis(XyChart_Axis v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasY2Axis() => $_has(6);
   @$pb.TagNumber(9)
@@ -365,46 +449,61 @@ class ChartOptions extends $pb.GeneratedMessage {
     return $result;
   }
   ChartOptions._() : super();
-  factory ChartOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ChartOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ChartOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ChartOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChartOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..e<ChartOptions_Mode>(1, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: ChartOptions_Mode.MODE_UNSPECIFIED, valueOf: ChartOptions_Mode.valueOf, enumValues: ChartOptions_Mode.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ChartOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..e<ChartOptions_Mode>(1, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE,
+        defaultOrMaker: ChartOptions_Mode.MODE_UNSPECIFIED,
+        valueOf: ChartOptions_Mode.valueOf,
+        enumValues: ChartOptions_Mode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ChartOptions clone() => ChartOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ChartOptions copyWith(void Function(ChartOptions) updates) => super.copyWith((message) => updates(message as ChartOptions)) as ChartOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ChartOptions copyWith(void Function(ChartOptions) updates) =>
+      super.copyWith((message) => updates(message as ChartOptions))
+          as ChartOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ChartOptions create() => ChartOptions._();
   ChartOptions createEmptyInstance() => create();
-  static $pb.PbList<ChartOptions> createRepeated() => $pb.PbList<ChartOptions>();
+  static $pb.PbList<ChartOptions> createRepeated() =>
+      $pb.PbList<ChartOptions>();
   @$core.pragma('dart2js:noInline')
-  static ChartOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ChartOptions>(create);
+  static ChartOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ChartOptions>(create);
   static ChartOptions? _defaultInstance;
 
   /// The chart mode.
   @$pb.TagNumber(1)
   ChartOptions_Mode get mode => $_getN(0);
   @$pb.TagNumber(1)
-  set mode(ChartOptions_Mode v) { setField(1, v); }
+  set mode(ChartOptions_Mode v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMode() => $_has(0);
   @$pb.TagNumber(1)
   void clearMode() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

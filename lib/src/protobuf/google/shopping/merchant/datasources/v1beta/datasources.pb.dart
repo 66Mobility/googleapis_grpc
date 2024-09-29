@@ -22,11 +22,11 @@ import 'fileinputs.pb.dart' as $546;
 export 'datasources.pbenum.dart';
 
 enum DataSource_Type {
-  primaryProductDataSource, 
-  supplementalProductDataSource, 
-  localInventoryDataSource, 
-  regionalInventoryDataSource, 
-  promotionDataSource, 
+  primaryProductDataSource,
+  supplementalProductDataSource,
+  localInventoryDataSource,
+  regionalInventoryDataSource,
+  promotionDataSource,
   notSet
 }
 
@@ -79,42 +79,64 @@ class DataSource extends $pb.GeneratedMessage {
     return $result;
   }
   DataSource._() : super();
-  factory DataSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DataSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DataSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DataSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, DataSource_Type> _DataSource_TypeByTag = {
-    4 : DataSource_Type.primaryProductDataSource,
-    5 : DataSource_Type.supplementalProductDataSource,
-    6 : DataSource_Type.localInventoryDataSource,
-    7 : DataSource_Type.regionalInventoryDataSource,
-    8 : DataSource_Type.promotionDataSource,
-    0 : DataSource_Type.notSet
+    4: DataSource_Type.primaryProductDataSource,
+    5: DataSource_Type.supplementalProductDataSource,
+    6: DataSource_Type.localInventoryDataSource,
+    7: DataSource_Type.regionalInventoryDataSource,
+    8: DataSource_Type.promotionDataSource,
+    0: DataSource_Type.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DataSource',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [4, 5, 6, 7, 8])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'dataSourceId')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$545.PrimaryProductDataSource>(4, _omitFieldNames ? '' : 'primaryProductDataSource', subBuilder: $545.PrimaryProductDataSource.create)
-    ..aOM<$545.SupplementalProductDataSource>(5, _omitFieldNames ? '' : 'supplementalProductDataSource', subBuilder: $545.SupplementalProductDataSource.create)
-    ..aOM<$545.LocalInventoryDataSource>(6, _omitFieldNames ? '' : 'localInventoryDataSource', subBuilder: $545.LocalInventoryDataSource.create)
-    ..aOM<$545.RegionalInventoryDataSource>(7, _omitFieldNames ? '' : 'regionalInventoryDataSource', subBuilder: $545.RegionalInventoryDataSource.create)
-    ..aOM<$545.PromotionDataSource>(8, _omitFieldNames ? '' : 'promotionDataSource', subBuilder: $545.PromotionDataSource.create)
-    ..e<DataSource_Input>(10, _omitFieldNames ? '' : 'input', $pb.PbFieldType.OE, defaultOrMaker: DataSource_Input.INPUT_UNSPECIFIED, valueOf: DataSource_Input.valueOf, enumValues: DataSource_Input.values)
-    ..aOM<$546.FileInput>(11, _omitFieldNames ? '' : 'fileInput', subBuilder: $546.FileInput.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$545.PrimaryProductDataSource>(
+        4, _omitFieldNames ? '' : 'primaryProductDataSource',
+        subBuilder: $545.PrimaryProductDataSource.create)
+    ..aOM<$545.SupplementalProductDataSource>(
+        5, _omitFieldNames ? '' : 'supplementalProductDataSource',
+        subBuilder: $545.SupplementalProductDataSource.create)
+    ..aOM<$545.LocalInventoryDataSource>(
+        6, _omitFieldNames ? '' : 'localInventoryDataSource',
+        subBuilder: $545.LocalInventoryDataSource.create)
+    ..aOM<$545.RegionalInventoryDataSource>(
+        7, _omitFieldNames ? '' : 'regionalInventoryDataSource',
+        subBuilder: $545.RegionalInventoryDataSource.create)
+    ..aOM<$545.PromotionDataSource>(
+        8, _omitFieldNames ? '' : 'promotionDataSource',
+        subBuilder: $545.PromotionDataSource.create)
+    ..e<DataSource_Input>(
+        10, _omitFieldNames ? '' : 'input', $pb.PbFieldType.OE,
+        defaultOrMaker: DataSource_Input.INPUT_UNSPECIFIED,
+        valueOf: DataSource_Input.valueOf,
+        enumValues: DataSource_Input.values)
+    ..aOM<$546.FileInput>(11, _omitFieldNames ? '' : 'fileInput',
+        subBuilder: $546.FileInput.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DataSource clone() => DataSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DataSource copyWith(void Function(DataSource) updates) => super.copyWith((message) => updates(message as DataSource)) as DataSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DataSource copyWith(void Function(DataSource) updates) =>
+      super.copyWith((message) => updates(message as DataSource)) as DataSource;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -123,7 +145,8 @@ class DataSource extends $pb.GeneratedMessage {
   DataSource createEmptyInstance() => create();
   static $pb.PbList<DataSource> createRepeated() => $pb.PbList<DataSource>();
   @$core.pragma('dart2js:noInline')
-  static DataSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataSource>(create);
+  static DataSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DataSource>(create);
   static DataSource? _defaultInstance;
 
   DataSource_Type whichType() => _DataSource_TypeByTag[$_whichOneof(0)]!;
@@ -135,7 +158,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -145,7 +171,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get dataSourceId => $_getI64(1);
   @$pb.TagNumber(2)
-  set dataSourceId($fixnum.Int64 v) { $_setInt64(1, v); }
+  set dataSourceId($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDataSourceId() => $_has(1);
   @$pb.TagNumber(2)
@@ -155,7 +184,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -167,7 +199,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $545.PrimaryProductDataSource get primaryProductDataSource => $_getN(3);
   @$pb.TagNumber(4)
-  set primaryProductDataSource($545.PrimaryProductDataSource v) { setField(4, v); }
+  set primaryProductDataSource($545.PrimaryProductDataSource v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPrimaryProductDataSource() => $_has(3);
   @$pb.TagNumber(4)
@@ -179,15 +214,20 @@ class DataSource extends $pb.GeneratedMessage {
   /// source](https://support.google.com/merchants/answer/7439058) for local
   /// and online products.
   @$pb.TagNumber(5)
-  $545.SupplementalProductDataSource get supplementalProductDataSource => $_getN(4);
+  $545.SupplementalProductDataSource get supplementalProductDataSource =>
+      $_getN(4);
   @$pb.TagNumber(5)
-  set supplementalProductDataSource($545.SupplementalProductDataSource v) { setField(5, v); }
+  set supplementalProductDataSource($545.SupplementalProductDataSource v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSupplementalProductDataSource() => $_has(4);
   @$pb.TagNumber(5)
   void clearSupplementalProductDataSource() => clearField(5);
   @$pb.TagNumber(5)
-  $545.SupplementalProductDataSource ensureSupplementalProductDataSource() => $_ensure(4);
+  $545.SupplementalProductDataSource ensureSupplementalProductDataSource() =>
+      $_ensure(4);
 
   /// Required. The [local
   /// inventory](https://support.google.com/merchants/answer/7023001) data
@@ -195,7 +235,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $545.LocalInventoryDataSource get localInventoryDataSource => $_getN(5);
   @$pb.TagNumber(6)
-  set localInventoryDataSource($545.LocalInventoryDataSource v) { setField(6, v); }
+  set localInventoryDataSource($545.LocalInventoryDataSource v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLocalInventoryDataSource() => $_has(5);
   @$pb.TagNumber(6)
@@ -209,13 +252,17 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $545.RegionalInventoryDataSource get regionalInventoryDataSource => $_getN(6);
   @$pb.TagNumber(7)
-  set regionalInventoryDataSource($545.RegionalInventoryDataSource v) { setField(7, v); }
+  set regionalInventoryDataSource($545.RegionalInventoryDataSource v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRegionalInventoryDataSource() => $_has(6);
   @$pb.TagNumber(7)
   void clearRegionalInventoryDataSource() => clearField(7);
   @$pb.TagNumber(7)
-  $545.RegionalInventoryDataSource ensureRegionalInventoryDataSource() => $_ensure(6);
+  $545.RegionalInventoryDataSource ensureRegionalInventoryDataSource() =>
+      $_ensure(6);
 
   /// Required. The
   /// [promotion](https://support.google.com/merchants/answer/2906014) data
@@ -223,7 +270,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $545.PromotionDataSource get promotionDataSource => $_getN(7);
   @$pb.TagNumber(8)
-  set promotionDataSource($545.PromotionDataSource v) { setField(8, v); }
+  set promotionDataSource($545.PromotionDataSource v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPromotionDataSource() => $_has(7);
   @$pb.TagNumber(8)
@@ -237,7 +287,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   DataSource_Input get input => $_getN(8);
   @$pb.TagNumber(10)
-  set input(DataSource_Input v) { setField(10, v); }
+  set input(DataSource_Input v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasInput() => $_has(8);
   @$pb.TagNumber(10)
@@ -247,7 +300,10 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $546.FileInput get fileInput => $_getN(9);
   @$pb.TagNumber(11)
-  set fileInput($546.FileInput v) { setField(11, v); }
+  set fileInput($546.FileInput v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasFileInput() => $_has(9);
   @$pb.TagNumber(11)
@@ -268,33 +324,44 @@ class GetDataSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDataSourceRequest._() : super();
-  factory GetDataSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDataSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDataSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDataSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDataSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDataSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetDataSourceRequest clone() => GetDataSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDataSourceRequest copyWith(void Function(GetDataSourceRequest) updates) => super.copyWith((message) => updates(message as GetDataSourceRequest)) as GetDataSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetDataSourceRequest clone() =>
+      GetDataSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDataSourceRequest copyWith(void Function(GetDataSourceRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDataSourceRequest))
+          as GetDataSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDataSourceRequest create() => GetDataSourceRequest._();
   GetDataSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDataSourceRequest> createRepeated() => $pb.PbList<GetDataSourceRequest>();
+  static $pb.PbList<GetDataSourceRequest> createRepeated() =>
+      $pb.PbList<GetDataSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDataSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDataSourceRequest>(create);
+  static GetDataSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDataSourceRequest>(create);
   static GetDataSourceRequest? _defaultInstance;
 
   /// Required. The name of the data source to retrieve.
@@ -302,7 +369,10 @@ class GetDataSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -329,35 +399,47 @@ class ListDataSourcesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDataSourcesRequest._() : super();
-  factory ListDataSourcesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDataSourcesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDataSourcesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDataSourcesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDataSourcesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDataSourcesRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDataSourcesRequest clone() => ListDataSourcesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDataSourcesRequest copyWith(void Function(ListDataSourcesRequest) updates) => super.copyWith((message) => updates(message as ListDataSourcesRequest)) as ListDataSourcesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDataSourcesRequest clone() =>
+      ListDataSourcesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDataSourcesRequest copyWith(
+          void Function(ListDataSourcesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListDataSourcesRequest))
+          as ListDataSourcesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDataSourcesRequest create() => ListDataSourcesRequest._();
   ListDataSourcesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDataSourcesRequest> createRepeated() => $pb.PbList<ListDataSourcesRequest>();
+  static $pb.PbList<ListDataSourcesRequest> createRepeated() =>
+      $pb.PbList<ListDataSourcesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDataSourcesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDataSourcesRequest>(create);
+  static ListDataSourcesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDataSourcesRequest>(create);
   static ListDataSourcesRequest? _defaultInstance;
 
   /// Required. The account to list data sources for.
@@ -365,7 +447,10 @@ class ListDataSourcesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -378,7 +463,10 @@ class ListDataSourcesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -392,7 +480,10 @@ class ListDataSourcesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -415,34 +506,48 @@ class ListDataSourcesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDataSourcesResponse._() : super();
-  factory ListDataSourcesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDataSourcesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDataSourcesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDataSourcesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDataSourcesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
-    ..pc<DataSource>(1, _omitFieldNames ? '' : 'dataSources', $pb.PbFieldType.PM, subBuilder: DataSource.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDataSourcesResponse',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
+    ..pc<DataSource>(
+        1, _omitFieldNames ? '' : 'dataSources', $pb.PbFieldType.PM,
+        subBuilder: DataSource.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDataSourcesResponse clone() => ListDataSourcesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDataSourcesResponse copyWith(void Function(ListDataSourcesResponse) updates) => super.copyWith((message) => updates(message as ListDataSourcesResponse)) as ListDataSourcesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDataSourcesResponse clone() =>
+      ListDataSourcesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDataSourcesResponse copyWith(
+          void Function(ListDataSourcesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListDataSourcesResponse))
+          as ListDataSourcesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDataSourcesResponse create() => ListDataSourcesResponse._();
   ListDataSourcesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDataSourcesResponse> createRepeated() => $pb.PbList<ListDataSourcesResponse>();
+  static $pb.PbList<ListDataSourcesResponse> createRepeated() =>
+      $pb.PbList<ListDataSourcesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDataSourcesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDataSourcesResponse>(create);
+  static ListDataSourcesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDataSourcesResponse>(create);
   static ListDataSourcesResponse? _defaultInstance;
 
   /// The data sources from the specified account.
@@ -454,7 +559,10 @@ class ListDataSourcesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -477,34 +585,47 @@ class CreateDataSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateDataSourceRequest._() : super();
-  factory CreateDataSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateDataSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateDataSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateDataSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDataSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDataSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<DataSource>(2, _omitFieldNames ? '' : 'dataSource', subBuilder: DataSource.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DataSource>(2, _omitFieldNames ? '' : 'dataSource',
+        subBuilder: DataSource.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateDataSourceRequest clone() => CreateDataSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateDataSourceRequest copyWith(void Function(CreateDataSourceRequest) updates) => super.copyWith((message) => updates(message as CreateDataSourceRequest)) as CreateDataSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateDataSourceRequest clone() =>
+      CreateDataSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateDataSourceRequest copyWith(
+          void Function(CreateDataSourceRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateDataSourceRequest))
+          as CreateDataSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateDataSourceRequest create() => CreateDataSourceRequest._();
   CreateDataSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateDataSourceRequest> createRepeated() => $pb.PbList<CreateDataSourceRequest>();
+  static $pb.PbList<CreateDataSourceRequest> createRepeated() =>
+      $pb.PbList<CreateDataSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateDataSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDataSourceRequest>(create);
+  static CreateDataSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDataSourceRequest>(create);
   static CreateDataSourceRequest? _defaultInstance;
 
   /// Required. The account where this data source will be created.
@@ -512,7 +633,10 @@ class CreateDataSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -522,7 +646,10 @@ class CreateDataSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DataSource get dataSource => $_getN(1);
   @$pb.TagNumber(2)
-  set dataSource(DataSource v) { setField(2, v); }
+  set dataSource(DataSource v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDataSource() => $_has(1);
   @$pb.TagNumber(2)
@@ -547,41 +674,58 @@ class UpdateDataSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDataSourceRequest._() : super();
-  factory UpdateDataSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDataSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDataSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDataSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
-    ..aOM<DataSource>(1, _omitFieldNames ? '' : 'dataSource', subBuilder: DataSource.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDataSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<DataSource>(1, _omitFieldNames ? '' : 'dataSource',
+        subBuilder: DataSource.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDataSourceRequest clone() => UpdateDataSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDataSourceRequest copyWith(void Function(UpdateDataSourceRequest) updates) => super.copyWith((message) => updates(message as UpdateDataSourceRequest)) as UpdateDataSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDataSourceRequest clone() =>
+      UpdateDataSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDataSourceRequest copyWith(
+          void Function(UpdateDataSourceRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateDataSourceRequest))
+          as UpdateDataSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateDataSourceRequest create() => UpdateDataSourceRequest._();
   UpdateDataSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateDataSourceRequest> createRepeated() => $pb.PbList<UpdateDataSourceRequest>();
+  static $pb.PbList<UpdateDataSourceRequest> createRepeated() =>
+      $pb.PbList<UpdateDataSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDataSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDataSourceRequest>(create);
+  static UpdateDataSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDataSourceRequest>(create);
   static UpdateDataSourceRequest? _defaultInstance;
 
   /// Required. The data source resource to update.
   @$pb.TagNumber(1)
   DataSource get dataSource => $_getN(0);
   @$pb.TagNumber(1)
-  set dataSource(DataSource v) { setField(1, v); }
+  set dataSource(DataSource v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDataSource() => $_has(0);
   @$pb.TagNumber(1)
@@ -599,7 +743,10 @@ class UpdateDataSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -620,33 +767,45 @@ class FetchDataSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   FetchDataSourceRequest._() : super();
-  factory FetchDataSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FetchDataSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FetchDataSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FetchDataSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchDataSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FetchDataSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  FetchDataSourceRequest clone() => FetchDataSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FetchDataSourceRequest copyWith(void Function(FetchDataSourceRequest) updates) => super.copyWith((message) => updates(message as FetchDataSourceRequest)) as FetchDataSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FetchDataSourceRequest clone() =>
+      FetchDataSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FetchDataSourceRequest copyWith(
+          void Function(FetchDataSourceRequest) updates) =>
+      super.copyWith((message) => updates(message as FetchDataSourceRequest))
+          as FetchDataSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FetchDataSourceRequest create() => FetchDataSourceRequest._();
   FetchDataSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<FetchDataSourceRequest> createRepeated() => $pb.PbList<FetchDataSourceRequest>();
+  static $pb.PbList<FetchDataSourceRequest> createRepeated() =>
+      $pb.PbList<FetchDataSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static FetchDataSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FetchDataSourceRequest>(create);
+  static FetchDataSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FetchDataSourceRequest>(create);
   static FetchDataSourceRequest? _defaultInstance;
 
   /// Required. The name of the data source resource to fetch.
@@ -654,7 +813,10 @@ class FetchDataSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -673,33 +835,45 @@ class DeleteDataSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteDataSourceRequest._() : super();
-  factory DeleteDataSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteDataSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteDataSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteDataSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteDataSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteDataSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteDataSourceRequest clone() => DeleteDataSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteDataSourceRequest copyWith(void Function(DeleteDataSourceRequest) updates) => super.copyWith((message) => updates(message as DeleteDataSourceRequest)) as DeleteDataSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteDataSourceRequest clone() =>
+      DeleteDataSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteDataSourceRequest copyWith(
+          void Function(DeleteDataSourceRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteDataSourceRequest))
+          as DeleteDataSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteDataSourceRequest create() => DeleteDataSourceRequest._();
   DeleteDataSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteDataSourceRequest> createRepeated() => $pb.PbList<DeleteDataSourceRequest>();
+  static $pb.PbList<DeleteDataSourceRequest> createRepeated() =>
+      $pb.PbList<DeleteDataSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteDataSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteDataSourceRequest>(create);
+  static DeleteDataSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteDataSourceRequest>(create);
   static DeleteDataSourceRequest? _defaultInstance;
 
   /// Required. The name of the data source to delete.
@@ -707,13 +881,16 @@ class DeleteDataSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

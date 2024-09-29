@@ -17,10 +17,42 @@ import 'dart:typed_data' as $typed_data;
 const KeyRange$json = {
   '1': 'KeyRange',
   '2': [
-    {'1': 'start_closed', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '9': 0, '10': 'startClosed'},
-    {'1': 'start_open', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '9': 0, '10': 'startOpen'},
-    {'1': 'end_closed', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '9': 1, '10': 'endClosed'},
-    {'1': 'end_open', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '9': 1, '10': 'endOpen'},
+    {
+      '1': 'start_closed',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '9': 0,
+      '10': 'startClosed'
+    },
+    {
+      '1': 'start_open',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '9': 0,
+      '10': 'startOpen'
+    },
+    {
+      '1': 'end_closed',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '9': 1,
+      '10': 'endClosed'
+    },
+    {
+      '1': 'end_open',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '9': 1,
+      '10': 'endOpen'
+    },
   ],
   '8': [
     {'1': 'start_key_type'},
@@ -41,8 +73,22 @@ final $typed_data.Uint8List keyRangeDescriptor = $convert.base64Decode(
 const KeySet$json = {
   '1': 'KeySet',
   '2': [
-    {'1': 'keys', '3': 1, '4': 3, '5': 11, '6': '.google.protobuf.ListValue', '10': 'keys'},
-    {'1': 'ranges', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.v1.KeyRange', '10': 'ranges'},
+    {
+      '1': 'keys',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'keys'
+    },
+    {
+      '1': 'ranges',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.KeyRange',
+      '10': 'ranges'
+    },
     {'1': 'all', '3': 3, '4': 1, '5': 8, '10': 'all'},
   ],
 };
@@ -52,4 +98,3 @@ final $typed_data.Uint8List keySetDescriptor = $convert.base64Decode(
     'CgZLZXlTZXQSLgoEa2V5cxgBIAMoCzIaLmdvb2dsZS5wcm90b2J1Zi5MaXN0VmFsdWVSBGtleX'
     'MSMwoGcmFuZ2VzGAIgAygLMhsuZ29vZ2xlLnNwYW5uZXIudjEuS2V5UmFuZ2VSBnJhbmdlcxIQ'
     'CgNhbGwYAyABKAhSA2FsbA==');
-

@@ -18,13 +18,41 @@ const OperationMetadataV1$json = {
   '1': 'OperationMetadataV1',
   '2': [
     {'1': 'method', '3': 1, '4': 1, '5': 9, '10': 'method'},
-    {'1': 'insert_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'insertTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'insert_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'insertTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'user', '3': 4, '4': 1, '5': 9, '10': 'user'},
     {'1': 'target', '3': 5, '4': 1, '5': 9, '10': 'target'},
-    {'1': 'ephemeral_message', '3': 6, '4': 1, '5': 9, '10': 'ephemeralMessage'},
+    {
+      '1': 'ephemeral_message',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'ephemeralMessage'
+    },
     {'1': 'warning', '3': 7, '4': 3, '5': 9, '10': 'warning'},
-    {'1': 'create_version_metadata', '3': 8, '4': 1, '5': 11, '6': '.google.appengine.v1.CreateVersionMetadataV1', '9': 0, '10': 'createVersionMetadata'},
+    {
+      '1': 'create_version_metadata',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1.CreateVersionMetadataV1',
+      '9': 0,
+      '10': 'createVersionMetadata'
+    },
   ],
   '8': [
     {'1': 'method_metadata'},
@@ -51,7 +79,7 @@ const CreateVersionMetadataV1$json = {
 };
 
 /// Descriptor for `CreateVersionMetadataV1`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createVersionMetadataV1Descriptor = $convert.base64Decode(
-    'ChdDcmVhdGVWZXJzaW9uTWV0YWRhdGFWMRIkCg5jbG91ZF9idWlsZF9pZBgBIAEoCVIMY2xvdW'
-    'RCdWlsZElk');
-
+final $typed_data.Uint8List createVersionMetadataV1Descriptor =
+    $convert.base64Decode(
+        'ChdDcmVhdGVWZXJzaW9uTWV0YWRhdGFWMRIkCg5jbG91ZF9idWlsZF9pZBgBIAEoCVIMY2xvdW'
+        'RCdWlsZElk');

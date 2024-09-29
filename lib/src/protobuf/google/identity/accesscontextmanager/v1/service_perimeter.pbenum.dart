@@ -29,18 +29,26 @@ import 'package:protobuf/protobuf.dart' as $pb;
 ///  with many independent perimeters that need to share some data with a common
 ///  perimeter, but should not be able to share data among themselves.
 class ServicePerimeter_PerimeterType extends $pb.ProtobufEnum {
-  static const ServicePerimeter_PerimeterType PERIMETER_TYPE_REGULAR = ServicePerimeter_PerimeterType._(0, _omitEnumNames ? '' : 'PERIMETER_TYPE_REGULAR');
-  static const ServicePerimeter_PerimeterType PERIMETER_TYPE_BRIDGE = ServicePerimeter_PerimeterType._(1, _omitEnumNames ? '' : 'PERIMETER_TYPE_BRIDGE');
+  static const ServicePerimeter_PerimeterType PERIMETER_TYPE_REGULAR =
+      ServicePerimeter_PerimeterType._(
+          0, _omitEnumNames ? '' : 'PERIMETER_TYPE_REGULAR');
+  static const ServicePerimeter_PerimeterType PERIMETER_TYPE_BRIDGE =
+      ServicePerimeter_PerimeterType._(
+          1, _omitEnumNames ? '' : 'PERIMETER_TYPE_BRIDGE');
 
-  static const $core.List<ServicePerimeter_PerimeterType> values = <ServicePerimeter_PerimeterType> [
+  static const $core.List<ServicePerimeter_PerimeterType> values =
+      <ServicePerimeter_PerimeterType>[
     PERIMETER_TYPE_REGULAR,
     PERIMETER_TYPE_BRIDGE,
   ];
 
-  static final $core.Map<$core.int, ServicePerimeter_PerimeterType> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static ServicePerimeter_PerimeterType? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, ServicePerimeter_PerimeterType> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static ServicePerimeter_PerimeterType? valueOf($core.int value) =>
+      _byValue[value];
 
-  const ServicePerimeter_PerimeterType._($core.int v, $core.String n) : super(v, n);
+  const ServicePerimeter_PerimeterType._($core.int v, $core.String n)
+      : super(v, n);
 }
 
 /// Specifies the types of identities that are allowed access in either
@@ -50,23 +58,34 @@ class ServicePerimeter_PerimeterType extends $pb.ProtobufEnum {
 /// [google.identity.accesscontextmanager.v1.ServicePerimeterConfig.EgressFrom]
 /// rules.
 class ServicePerimeterConfig_IdentityType extends $pb.ProtobufEnum {
-  static const ServicePerimeterConfig_IdentityType IDENTITY_TYPE_UNSPECIFIED = ServicePerimeterConfig_IdentityType._(0, _omitEnumNames ? '' : 'IDENTITY_TYPE_UNSPECIFIED');
-  static const ServicePerimeterConfig_IdentityType ANY_IDENTITY = ServicePerimeterConfig_IdentityType._(1, _omitEnumNames ? '' : 'ANY_IDENTITY');
-  static const ServicePerimeterConfig_IdentityType ANY_USER_ACCOUNT = ServicePerimeterConfig_IdentityType._(2, _omitEnumNames ? '' : 'ANY_USER_ACCOUNT');
-  static const ServicePerimeterConfig_IdentityType ANY_SERVICE_ACCOUNT = ServicePerimeterConfig_IdentityType._(3, _omitEnumNames ? '' : 'ANY_SERVICE_ACCOUNT');
+  static const ServicePerimeterConfig_IdentityType IDENTITY_TYPE_UNSPECIFIED =
+      ServicePerimeterConfig_IdentityType._(
+          0, _omitEnumNames ? '' : 'IDENTITY_TYPE_UNSPECIFIED');
+  static const ServicePerimeterConfig_IdentityType ANY_IDENTITY =
+      ServicePerimeterConfig_IdentityType._(
+          1, _omitEnumNames ? '' : 'ANY_IDENTITY');
+  static const ServicePerimeterConfig_IdentityType ANY_USER_ACCOUNT =
+      ServicePerimeterConfig_IdentityType._(
+          2, _omitEnumNames ? '' : 'ANY_USER_ACCOUNT');
+  static const ServicePerimeterConfig_IdentityType ANY_SERVICE_ACCOUNT =
+      ServicePerimeterConfig_IdentityType._(
+          3, _omitEnumNames ? '' : 'ANY_SERVICE_ACCOUNT');
 
-  static const $core.List<ServicePerimeterConfig_IdentityType> values = <ServicePerimeterConfig_IdentityType> [
+  static const $core.List<ServicePerimeterConfig_IdentityType> values =
+      <ServicePerimeterConfig_IdentityType>[
     IDENTITY_TYPE_UNSPECIFIED,
     ANY_IDENTITY,
     ANY_USER_ACCOUNT,
     ANY_SERVICE_ACCOUNT,
   ];
 
-  static final $core.Map<$core.int, ServicePerimeterConfig_IdentityType> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static ServicePerimeterConfig_IdentityType? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, ServicePerimeterConfig_IdentityType>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static ServicePerimeterConfig_IdentityType? valueOf($core.int value) =>
+      _byValue[value];
 
-  const ServicePerimeterConfig_IdentityType._($core.int v, $core.String n) : super(v, n);
+  const ServicePerimeterConfig_IdentityType._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

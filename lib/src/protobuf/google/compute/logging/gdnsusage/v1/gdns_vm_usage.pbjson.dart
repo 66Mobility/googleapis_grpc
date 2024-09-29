@@ -17,10 +17,44 @@ import 'dart:typed_data' as $typed_data;
 const GdnsVmUsagePlatformLog$json = {
   '1': 'GdnsVmUsagePlatformLog',
   '2': [
-    {'1': 'source_vm', '3': 1, '4': 1, '5': 11, '6': '.google.compute.logging.gdnsusage.v1.VmInfo', '9': 0, '10': 'sourceVm', '17': true},
-    {'1': 'destination_vm', '3': 2, '4': 1, '5': 11, '6': '.google.compute.logging.gdnsusage.v1.VmInfo', '9': 1, '10': 'destinationVm', '17': true},
-    {'1': 'debug_message', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'debugMessage', '17': true},
-    {'1': 'query_count', '3': 5, '4': 1, '5': 5, '9': 3, '10': 'queryCount', '17': true},
+    {
+      '1': 'source_vm',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.compute.logging.gdnsusage.v1.VmInfo',
+      '9': 0,
+      '10': 'sourceVm',
+      '17': true
+    },
+    {
+      '1': 'destination_vm',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.compute.logging.gdnsusage.v1.VmInfo',
+      '9': 1,
+      '10': 'destinationVm',
+      '17': true
+    },
+    {
+      '1': 'debug_message',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'debugMessage',
+      '17': true
+    },
+    {
+      '1': 'query_count',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '9': 3,
+      '10': 'queryCount',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_source_vm'},
@@ -44,7 +78,15 @@ final $typed_data.Uint8List gdnsVmUsagePlatformLogDescriptor = $convert.base64De
 const VmInfo$json = {
   '1': 'VmInfo',
   '2': [
-    {'1': 'project_id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'projectId', '17': true},
+    {
+      '1': 'project_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'projectId',
+      '17': true
+    },
     {'1': 'vm', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'vm', '17': true},
     {'1': 'zone', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'zone', '17': true},
   ],
@@ -60,4 +102,3 @@ final $typed_data.Uint8List vmInfoDescriptor = $convert.base64Decode(
     'CgZWbUluZm8SIgoKcHJvamVjdF9pZBgBIAEoCUgAUglwcm9qZWN0SWSIAQESEwoCdm0YAiABKA'
     'lIAVICdm2IAQESFwoEem9uZRgDIAEoCUgCUgR6b25liAEBQg0KC19wcm9qZWN0X2lkQgUKA192'
     'bUIHCgVfem9uZQ==');
-

@@ -29,11 +29,12 @@ class WatcherClient extends $grpc.Client {
   WatcherClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseStream<$259.ChangeBatch> watch($259.Request request, {$grpc.CallOptions? options}) {
-    return $createStreamingCall(_$watch, $async.Stream.fromIterable([request]), options: options);
+  $grpc.ResponseStream<$259.ChangeBatch> watch($259.Request request,
+      {$grpc.CallOptions? options}) {
+    return $createStreamingCall(_$watch, $async.Stream.fromIterable([request]),
+        options: options);
   }
 }
 
@@ -51,9 +52,11 @@ abstract class WatcherServiceBase extends $grpc.Service {
         ($259.ChangeBatch value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$259.ChangeBatch> watch_Pre($grpc.ServiceCall call, $async.Future<$259.Request> request) async* {
+  $async.Stream<$259.ChangeBatch> watch_Pre(
+      $grpc.ServiceCall call, $async.Future<$259.Request> request) async* {
     yield* watch(call, await request);
   }
 
-  $async.Stream<$259.ChangeBatch> watch($grpc.ServiceCall call, $259.Request request);
+  $async.Stream<$259.ChangeBatch> watch(
+      $grpc.ServiceCall call, $259.Request request);
 }

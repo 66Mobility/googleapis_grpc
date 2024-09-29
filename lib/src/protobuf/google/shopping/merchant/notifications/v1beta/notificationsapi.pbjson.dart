@@ -48,44 +48,72 @@ const GetNotificationSubscriptionRequest$json = {
 };
 
 /// Descriptor for `GetNotificationSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getNotificationSubscriptionRequestDescriptor = $convert.base64Decode(
-    'CiJHZXROb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0Ek8KBG5hbWUYASABKAlCO+BBAv'
-    'pBNQozbWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uU3Vic2NyaXB0aW9u'
-    'UgRuYW1l');
+final $typed_data.Uint8List getNotificationSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'CiJHZXROb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0Ek8KBG5hbWUYASABKAlCO+BBAv'
+        'pBNQozbWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uU3Vic2NyaXB0aW9u'
+        'UgRuYW1l');
 
 @$core.Deprecated('Use createNotificationSubscriptionRequestDescriptor instead')
 const CreateNotificationSubscriptionRequest$json = {
   '1': 'CreateNotificationSubscriptionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'notification_subscription', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.notifications.v1beta.NotificationSubscription', '8': {}, '10': 'notificationSubscription'},
+    {
+      '1': 'notification_subscription',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.notifications.v1beta.NotificationSubscription',
+      '8': {},
+      '10': 'notificationSubscription'
+    },
   ],
 };
 
 /// Descriptor for `CreateNotificationSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createNotificationSubscriptionRequestDescriptor = $convert.base64Decode(
-    'CiVDcmVhdGVOb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0ElMKBnBhcmVudBgBIAEoCU'
-    'I74EEC+kE1EjNtZXJjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25TdWJzY3Jp'
-    'cHRpb25SBnBhcmVudBKJAQoZbm90aWZpY2F0aW9uX3N1YnNjcmlwdGlvbhgCIAEoCzJHLmdvb2'
-    'dsZS5zaG9wcGluZy5tZXJjaGFudC5ub3RpZmljYXRpb25zLnYxYmV0YS5Ob3RpZmljYXRpb25T'
-    'dWJzY3JpcHRpb25CA+BBAlIYbm90aWZpY2F0aW9uU3Vic2NyaXB0aW9u');
+final $typed_data.Uint8List createNotificationSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'CiVDcmVhdGVOb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0ElMKBnBhcmVudBgBIAEoCU'
+        'I74EEC+kE1EjNtZXJjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25TdWJzY3Jp'
+        'cHRpb25SBnBhcmVudBKJAQoZbm90aWZpY2F0aW9uX3N1YnNjcmlwdGlvbhgCIAEoCzJHLmdvb2'
+        'dsZS5zaG9wcGluZy5tZXJjaGFudC5ub3RpZmljYXRpb25zLnYxYmV0YS5Ob3RpZmljYXRpb25T'
+        'dWJzY3JpcHRpb25CA+BBAlIYbm90aWZpY2F0aW9uU3Vic2NyaXB0aW9u');
 
 @$core.Deprecated('Use updateNotificationSubscriptionRequestDescriptor instead')
 const UpdateNotificationSubscriptionRequest$json = {
   '1': 'UpdateNotificationSubscriptionRequest',
   '2': [
-    {'1': 'notification_subscription', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.notifications.v1beta.NotificationSubscription', '8': {}, '10': 'notificationSubscription'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'notification_subscription',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.notifications.v1beta.NotificationSubscription',
+      '8': {},
+      '10': 'notificationSubscription'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
 /// Descriptor for `UpdateNotificationSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateNotificationSubscriptionRequestDescriptor = $convert.base64Decode(
-    'CiVVcGRhdGVOb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0EokBChlub3RpZmljYXRpb2'
-    '5fc3Vic2NyaXB0aW9uGAEgASgLMkcuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50Lm5vdGlmaWNh'
-    'dGlvbnMudjFiZXRhLk5vdGlmaWNhdGlvblN1YnNjcmlwdGlvbkID4EECUhhub3RpZmljYXRpb2'
-    '5TdWJzY3JpcHRpb24SOwoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuRmll'
-    'bGRNYXNrUgp1cGRhdGVNYXNr');
+final $typed_data.Uint8List updateNotificationSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'CiVVcGRhdGVOb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0EokBChlub3RpZmljYXRpb2'
+        '5fc3Vic2NyaXB0aW9uGAEgASgLMkcuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50Lm5vdGlmaWNh'
+        'dGlvbnMudjFiZXRhLk5vdGlmaWNhdGlvblN1YnNjcmlwdGlvbkID4EECUhhub3RpZmljYXRpb2'
+        '5TdWJzY3JpcHRpb24SOwoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuRmll'
+        'bGRNYXNrUgp1cGRhdGVNYXNr');
 
 @$core.Deprecated('Use deleteNotificationSubscriptionRequestDescriptor instead')
 const DeleteNotificationSubscriptionRequest$json = {
@@ -96,10 +124,11 @@ const DeleteNotificationSubscriptionRequest$json = {
 };
 
 /// Descriptor for `DeleteNotificationSubscriptionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteNotificationSubscriptionRequestDescriptor = $convert.base64Decode(
-    'CiVEZWxldGVOb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0Ek8KBG5hbWUYASABKAlCO+'
-    'BBAvpBNQozbWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uU3Vic2NyaXB0'
-    'aW9uUgRuYW1l');
+final $typed_data.Uint8List deleteNotificationSubscriptionRequestDescriptor =
+    $convert.base64Decode(
+        'CiVEZWxldGVOb3RpZmljYXRpb25TdWJzY3JpcHRpb25SZXF1ZXN0Ek8KBG5hbWUYASABKAlCO+'
+        'BBAvpBNQozbWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uU3Vic2NyaXB0'
+        'aW9uUgRuYW1l');
 
 @$core.Deprecated('Use listNotificationSubscriptionsRequestDescriptor instead')
 const ListNotificationSubscriptionsRequest$json = {
@@ -112,36 +141,68 @@ const ListNotificationSubscriptionsRequest$json = {
 };
 
 /// Descriptor for `ListNotificationSubscriptionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationSubscriptionsRequestDescriptor = $convert.base64Decode(
-    'CiRMaXN0Tm90aWZpY2F0aW9uU3Vic2NyaXB0aW9uc1JlcXVlc3QSUwoGcGFyZW50GAEgASgJQj'
-    'vgQQL6QTUSM21lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvblN1YnNjcmlw'
-    'dGlvblIGcGFyZW50EhsKCXBhZ2Vfc2l6ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbh'
-    'gDIAEoCVIJcGFnZVRva2Vu');
+final $typed_data.Uint8List listNotificationSubscriptionsRequestDescriptor =
+    $convert.base64Decode(
+        'CiRMaXN0Tm90aWZpY2F0aW9uU3Vic2NyaXB0aW9uc1JlcXVlc3QSUwoGcGFyZW50GAEgASgJQj'
+        'vgQQL6QTUSM21lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvblN1YnNjcmlw'
+        'dGlvblIGcGFyZW50EhsKCXBhZ2Vfc2l6ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbh'
+        'gDIAEoCVIJcGFnZVRva2Vu');
 
 @$core.Deprecated('Use listNotificationSubscriptionsResponseDescriptor instead')
 const ListNotificationSubscriptionsResponse$json = {
   '1': 'ListNotificationSubscriptionsResponse',
   '2': [
-    {'1': 'notification_subscriptions', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.notifications.v1beta.NotificationSubscription', '10': 'notificationSubscriptions'},
+    {
+      '1': 'notification_subscriptions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.notifications.v1beta.NotificationSubscription',
+      '10': 'notificationSubscriptions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListNotificationSubscriptionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationSubscriptionsResponseDescriptor = $convert.base64Decode(
-    'CiVMaXN0Tm90aWZpY2F0aW9uU3Vic2NyaXB0aW9uc1Jlc3BvbnNlEoYBChpub3RpZmljYXRpb2'
-    '5fc3Vic2NyaXB0aW9ucxgBIAMoCzJHLmdvb2dsZS5zaG9wcGluZy5tZXJjaGFudC5ub3RpZmlj'
-    'YXRpb25zLnYxYmV0YS5Ob3RpZmljYXRpb25TdWJzY3JpcHRpb25SGW5vdGlmaWNhdGlvblN1Yn'
-    'NjcmlwdGlvbnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listNotificationSubscriptionsResponseDescriptor =
+    $convert.base64Decode(
+        'CiVMaXN0Tm90aWZpY2F0aW9uU3Vic2NyaXB0aW9uc1Jlc3BvbnNlEoYBChpub3RpZmljYXRpb2'
+        '5fc3Vic2NyaXB0aW9ucxgBIAMoCzJHLmdvb2dsZS5zaG9wcGluZy5tZXJjaGFudC5ub3RpZmlj'
+        'YXRpb25zLnYxYmV0YS5Ob3RpZmljYXRpb25TdWJzY3JpcHRpb25SGW5vdGlmaWNhdGlvblN1Yn'
+        'NjcmlwdGlvbnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use notificationSubscriptionDescriptor instead')
 const NotificationSubscription$json = {
   '1': 'NotificationSubscription',
   '2': [
-    {'1': 'all_managed_accounts', '3': 3, '4': 1, '5': 8, '9': 0, '10': 'allManagedAccounts'},
-    {'1': 'target_account', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'targetAccount'},
+    {
+      '1': 'all_managed_accounts',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'allManagedAccounts'
+    },
+    {
+      '1': 'target_account',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'targetAccount'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'registered_event', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.notifications.v1beta.NotificationSubscription.NotificationEventType', '10': 'registeredEvent'},
+    {
+      '1': 'registered_event',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.notifications.v1beta.NotificationSubscription.NotificationEventType',
+      '10': 'registeredEvent'
+    },
     {'1': 'call_back_uri', '3': 5, '4': 1, '5': 9, '10': 'callBackUri'},
   ],
   '4': [NotificationSubscription_NotificationEventType$json],
@@ -178,10 +239,43 @@ final $typed_data.Uint8List notificationSubscriptionDescriptor = $convert.base64
 const ProductChange$json = {
   '1': 'ProductChange',
   '2': [
-    {'1': 'old_value', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'oldValue', '17': true},
-    {'1': 'new_value', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'newValue', '17': true},
-    {'1': 'region_code', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'regionCode', '17': true},
-    {'1': 'reporting_context', '3': 4, '4': 1, '5': 14, '6': '.google.shopping.type.ReportingContext.ReportingContextEnum', '9': 3, '10': 'reportingContext', '17': true},
+    {
+      '1': 'old_value',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'oldValue',
+      '17': true
+    },
+    {
+      '1': 'new_value',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'newValue',
+      '17': true
+    },
+    {
+      '1': 'region_code',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'regionCode',
+      '17': true
+    },
+    {
+      '1': 'reporting_context',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.ReportingContext.ReportingContextEnum',
+      '9': 3,
+      '10': 'reportingContext',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_old_value'},
@@ -204,13 +298,70 @@ final $typed_data.Uint8List productChangeDescriptor = $convert.base64Decode(
 const ProductStatusChangeMessage$json = {
   '1': 'ProductStatusChangeMessage',
   '2': [
-    {'1': 'account', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'account', '17': true},
-    {'1': 'managing_account', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'managingAccount', '17': true},
-    {'1': 'resource_type', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.notifications.v1beta.Resource', '9': 2, '10': 'resourceType', '17': true},
-    {'1': 'attribute', '3': 4, '4': 1, '5': 14, '6': '.google.shopping.merchant.notifications.v1beta.Attribute', '9': 3, '10': 'attribute', '17': true},
-    {'1': 'changes', '3': 5, '4': 3, '5': 11, '6': '.google.shopping.merchant.notifications.v1beta.ProductChange', '10': 'changes'},
-    {'1': 'resource_id', '3': 6, '4': 1, '5': 9, '9': 4, '10': 'resourceId', '17': true},
-    {'1': 'resource', '3': 7, '4': 1, '5': 9, '9': 5, '10': 'resource', '17': true},
+    {
+      '1': 'account',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'account',
+      '17': true
+    },
+    {
+      '1': 'managing_account',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'managingAccount',
+      '17': true
+    },
+    {
+      '1': 'resource_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.notifications.v1beta.Resource',
+      '9': 2,
+      '10': 'resourceType',
+      '17': true
+    },
+    {
+      '1': 'attribute',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.notifications.v1beta.Attribute',
+      '9': 3,
+      '10': 'attribute',
+      '17': true
+    },
+    {
+      '1': 'changes',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.notifications.v1beta.ProductChange',
+      '10': 'changes'
+    },
+    {
+      '1': 'resource_id',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'resourceId',
+      '17': true
+    },
+    {
+      '1': 'resource',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '9': 5,
+      '10': 'resource',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_account'},
@@ -234,4 +385,3 @@ final $typed_data.Uint8List productStatusChangeMessageDescriptor = $convert.base
     'QKC3Jlc291cmNlX2lkGAYgASgJSARSCnJlc291cmNlSWSIAQESHwoIcmVzb3VyY2UYByABKAlI'
     'BVIIcmVzb3VyY2WIAQFCCgoIX2FjY291bnRCEwoRX21hbmFnaW5nX2FjY291bnRCEAoOX3Jlc2'
     '91cmNlX3R5cGVCDAoKX2F0dHJpYnV0ZUIOCgxfcmVzb3VyY2VfaWRCCwoJX3Jlc291cmNl');
-

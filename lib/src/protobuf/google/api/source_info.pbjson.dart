@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const SourceInfo$json = {
   '1': 'SourceInfo',
   '2': [
-    {'1': 'source_files', '3': 1, '4': 3, '5': 11, '6': '.google.protobuf.Any', '10': 'sourceFiles'},
+    {
+      '1': 'source_files',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'sourceFiles'
+    },
   ],
 };
 
@@ -25,4 +32,3 @@ const SourceInfo$json = {
 final $typed_data.Uint8List sourceInfoDescriptor = $convert.base64Decode(
     'CgpTb3VyY2VJbmZvEjcKDHNvdXJjZV9maWxlcxgBIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5Bbn'
     'lSC3NvdXJjZUZpbGVz');
-

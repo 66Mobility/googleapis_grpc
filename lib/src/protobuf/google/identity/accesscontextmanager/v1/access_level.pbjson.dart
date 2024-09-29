@@ -20,10 +20,40 @@ const AccessLevel$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'basic', '3': 4, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.BasicLevel', '9': 0, '10': 'basic'},
-    {'1': 'custom', '3': 5, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.CustomLevel', '9': 0, '10': 'custom'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'basic',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.identity.accesscontextmanager.v1.BasicLevel',
+      '9': 0,
+      '10': 'basic'
+    },
+    {
+      '1': 'custom',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.identity.accesscontextmanager.v1.CustomLevel',
+      '9': 0,
+      '10': 'custom'
+    },
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
   '7': {},
   '8': [
@@ -47,8 +77,23 @@ final $typed_data.Uint8List accessLevelDescriptor = $convert.base64Decode(
 const BasicLevel$json = {
   '1': 'BasicLevel',
   '2': [
-    {'1': 'conditions', '3': 1, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.Condition', '10': 'conditions'},
-    {'1': 'combining_function', '3': 2, '4': 1, '5': 14, '6': '.google.identity.accesscontextmanager.v1.BasicLevel.ConditionCombiningFunction', '10': 'combiningFunction'},
+    {
+      '1': 'conditions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.identity.accesscontextmanager.v1.Condition',
+      '10': 'conditions'
+    },
+    {
+      '1': 'combining_function',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.identity.accesscontextmanager.v1.BasicLevel.ConditionCombiningFunction',
+      '10': 'combiningFunction'
+    },
   ],
   '4': [BasicLevel_ConditionCombiningFunction$json],
 };
@@ -75,8 +120,21 @@ const Condition$json = {
   '1': 'Condition',
   '2': [
     {'1': 'ip_subnetworks', '3': 1, '4': 3, '5': 9, '10': 'ipSubnetworks'},
-    {'1': 'device_policy', '3': 2, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.DevicePolicy', '10': 'devicePolicy'},
-    {'1': 'required_access_levels', '3': 3, '4': 3, '5': 9, '10': 'requiredAccessLevels'},
+    {
+      '1': 'device_policy',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.identity.accesscontextmanager.v1.DevicePolicy',
+      '10': 'devicePolicy'
+    },
+    {
+      '1': 'required_access_levels',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'requiredAccessLevels'
+    },
     {'1': 'negate', '3': 5, '4': 1, '5': 8, '10': 'negate'},
     {'1': 'members', '3': 6, '4': 3, '5': 9, '10': 'members'},
     {'1': 'regions', '3': 7, '4': 3, '5': 9, '10': 'regions'},
@@ -95,7 +153,14 @@ final $typed_data.Uint8List conditionDescriptor = $convert.base64Decode(
 const CustomLevel$json = {
   '1': 'CustomLevel',
   '2': [
-    {'1': 'expr', '3': 1, '4': 1, '5': 11, '6': '.google.type.Expr', '10': 'expr'},
+    {
+      '1': 'expr',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Expr',
+      '10': 'expr'
+    },
   ],
 };
 
@@ -107,12 +172,51 @@ final $typed_data.Uint8List customLevelDescriptor = $convert.base64Decode(
 const DevicePolicy$json = {
   '1': 'DevicePolicy',
   '2': [
-    {'1': 'require_screenlock', '3': 1, '4': 1, '5': 8, '10': 'requireScreenlock'},
-    {'1': 'allowed_encryption_statuses', '3': 2, '4': 3, '5': 14, '6': '.google.identity.accesscontextmanager.type.DeviceEncryptionStatus', '10': 'allowedEncryptionStatuses'},
-    {'1': 'os_constraints', '3': 3, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.OsConstraint', '10': 'osConstraints'},
-    {'1': 'allowed_device_management_levels', '3': 6, '4': 3, '5': 14, '6': '.google.identity.accesscontextmanager.type.DeviceManagementLevel', '10': 'allowedDeviceManagementLevels'},
-    {'1': 'require_admin_approval', '3': 7, '4': 1, '5': 8, '10': 'requireAdminApproval'},
-    {'1': 'require_corp_owned', '3': 8, '4': 1, '5': 8, '10': 'requireCorpOwned'},
+    {
+      '1': 'require_screenlock',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'requireScreenlock'
+    },
+    {
+      '1': 'allowed_encryption_statuses',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6': '.google.identity.accesscontextmanager.type.DeviceEncryptionStatus',
+      '10': 'allowedEncryptionStatuses'
+    },
+    {
+      '1': 'os_constraints',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.identity.accesscontextmanager.v1.OsConstraint',
+      '10': 'osConstraints'
+    },
+    {
+      '1': 'allowed_device_management_levels',
+      '3': 6,
+      '4': 3,
+      '5': 14,
+      '6': '.google.identity.accesscontextmanager.type.DeviceManagementLevel',
+      '10': 'allowedDeviceManagementLevels'
+    },
+    {
+      '1': 'require_admin_approval',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'requireAdminApproval'
+    },
+    {
+      '1': 'require_corp_owned',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '10': 'requireCorpOwned'
+    },
   ],
 };
 
@@ -133,9 +237,22 @@ final $typed_data.Uint8List devicePolicyDescriptor = $convert.base64Decode(
 const OsConstraint$json = {
   '1': 'OsConstraint',
   '2': [
-    {'1': 'os_type', '3': 1, '4': 1, '5': 14, '6': '.google.identity.accesscontextmanager.type.OsType', '10': 'osType'},
+    {
+      '1': 'os_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.identity.accesscontextmanager.type.OsType',
+      '10': 'osType'
+    },
     {'1': 'minimum_version', '3': 2, '4': 1, '5': 9, '10': 'minimumVersion'},
-    {'1': 'require_verified_chrome_os', '3': 3, '4': 1, '5': 8, '10': 'requireVerifiedChromeOs'},
+    {
+      '1': 'require_verified_chrome_os',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'requireVerifiedChromeOs'
+    },
   ],
 };
 
@@ -145,4 +262,3 @@ final $typed_data.Uint8List osConstraintDescriptor = $convert.base64Decode(
     'Njb250ZXh0bWFuYWdlci50eXBlLk9zVHlwZVIGb3NUeXBlEicKD21pbmltdW1fdmVyc2lvbhgC'
     'IAEoCVIObWluaW11bVZlcnNpb24SOwoacmVxdWlyZV92ZXJpZmllZF9jaHJvbWVfb3MYAyABKA'
     'hSF3JlcXVpcmVWZXJpZmllZENocm9tZU9z');
-

@@ -14,21 +14,22 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class User_Type extends $pb.ProtobufEnum {
-  static const User_Type TYPE_UNSPECIFIED = User_Type._(0, _omitEnumNames ? '' : 'TYPE_UNSPECIFIED');
+  static const User_Type TYPE_UNSPECIFIED =
+      User_Type._(0, _omitEnumNames ? '' : 'TYPE_UNSPECIFIED');
   static const User_Type HUMAN = User_Type._(1, _omitEnumNames ? '' : 'HUMAN');
   static const User_Type BOT = User_Type._(2, _omitEnumNames ? '' : 'BOT');
 
-  static const $core.List<User_Type> values = <User_Type> [
+  static const $core.List<User_Type> values = <User_Type>[
     TYPE_UNSPECIFIED,
     HUMAN,
     BOT,
   ];
 
-  static final $core.Map<$core.int, User_Type> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, User_Type> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static User_Type? valueOf($core.int value) => _byValue[value];
 
   const User_Type._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

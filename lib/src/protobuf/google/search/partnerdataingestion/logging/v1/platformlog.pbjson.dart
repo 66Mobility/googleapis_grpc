@@ -17,7 +17,13 @@ import 'dart:typed_data' as $typed_data;
 const IngestDetailsLog$json = {
   '1': 'IngestDetailsLog',
   '2': [
-    {'1': 'ingestion_tracking_id', '3': 1, '4': 1, '5': 9, '10': 'ingestionTrackingId'},
+    {
+      '1': 'ingestion_tracking_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'ingestionTrackingId'
+    },
     {'1': 'content', '3': 2, '4': 1, '5': 9, '10': 'content'},
   ],
 };
@@ -26,4 +32,3 @@ const IngestDetailsLog$json = {
 final $typed_data.Uint8List ingestDetailsLogDescriptor = $convert.base64Decode(
     'ChBJbmdlc3REZXRhaWxzTG9nEjIKFWluZ2VzdGlvbl90cmFja2luZ19pZBgBIAEoCVITaW5nZX'
     'N0aW9uVHJhY2tpbmdJZBIYCgdjb250ZW50GAIgASgJUgdjb250ZW50');
-

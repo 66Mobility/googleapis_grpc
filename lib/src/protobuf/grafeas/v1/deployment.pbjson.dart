@@ -30,12 +30,33 @@ const DeploymentOccurrence$json = {
   '1': 'DeploymentOccurrence',
   '2': [
     {'1': 'user_email', '3': 1, '4': 1, '5': 9, '10': 'userEmail'},
-    {'1': 'deploy_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deployTime'},
-    {'1': 'undeploy_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'undeployTime'},
+    {
+      '1': 'deploy_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deployTime'
+    },
+    {
+      '1': 'undeploy_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'undeployTime'
+    },
     {'1': 'config', '3': 4, '4': 1, '5': 9, '10': 'config'},
     {'1': 'address', '3': 5, '4': 1, '5': 9, '10': 'address'},
     {'1': 'resource_uri', '3': 6, '4': 3, '5': 9, '10': 'resourceUri'},
-    {'1': 'platform', '3': 7, '4': 1, '5': 14, '6': '.grafeas.v1.DeploymentOccurrence.Platform', '10': 'platform'},
+    {
+      '1': 'platform',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.DeploymentOccurrence.Platform',
+      '10': 'platform'
+    },
   ],
   '4': [DeploymentOccurrence_Platform$json],
 };
@@ -61,4 +82,3 @@ final $typed_data.Uint8List deploymentOccurrenceDescriptor = $convert.base64Deco
     'cgASgOMikuZ3JhZmVhcy52MS5EZXBsb3ltZW50T2NjdXJyZW5jZS5QbGF0Zm9ybVIIcGxhdGZv'
     'cm0iQwoIUGxhdGZvcm0SGAoUUExBVEZPUk1fVU5TUEVDSUZJRUQQABIHCgNHS0UQARIICgRGTE'
     'VYEAISCgoGQ1VTVE9NEAM=');
-

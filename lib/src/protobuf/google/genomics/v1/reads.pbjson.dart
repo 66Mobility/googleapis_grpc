@@ -25,25 +25,34 @@ const SearchReadGroupSetsRequest$json = {
 };
 
 /// Descriptor for `SearchReadGroupSetsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List searchReadGroupSetsRequestDescriptor = $convert.base64Decode(
-    'ChpTZWFyY2hSZWFkR3JvdXBTZXRzUmVxdWVzdBIfCgtkYXRhc2V0X2lkcxgBIAMoCVIKZGF0YX'
-    'NldElkcxISCgRuYW1lGAMgASgJUgRuYW1lEh0KCnBhZ2VfdG9rZW4YAiABKAlSCXBhZ2VUb2tl'
-    'bhIbCglwYWdlX3NpemUYBCABKAVSCHBhZ2VTaXpl');
+final $typed_data.Uint8List searchReadGroupSetsRequestDescriptor =
+    $convert.base64Decode(
+        'ChpTZWFyY2hSZWFkR3JvdXBTZXRzUmVxdWVzdBIfCgtkYXRhc2V0X2lkcxgBIAMoCVIKZGF0YX'
+        'NldElkcxISCgRuYW1lGAMgASgJUgRuYW1lEh0KCnBhZ2VfdG9rZW4YAiABKAlSCXBhZ2VUb2tl'
+        'bhIbCglwYWdlX3NpemUYBCABKAVSCHBhZ2VTaXpl');
 
 @$core.Deprecated('Use searchReadGroupSetsResponseDescriptor instead')
 const SearchReadGroupSetsResponse$json = {
   '1': 'SearchReadGroupSetsResponse',
   '2': [
-    {'1': 'read_group_sets', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.ReadGroupSet', '10': 'readGroupSets'},
+    {
+      '1': 'read_group_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.ReadGroupSet',
+      '10': 'readGroupSets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `SearchReadGroupSetsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List searchReadGroupSetsResponseDescriptor = $convert.base64Decode(
-    'ChtTZWFyY2hSZWFkR3JvdXBTZXRzUmVzcG9uc2USSAoPcmVhZF9ncm91cF9zZXRzGAEgAygLMi'
-    'AuZ29vZ2xlLmdlbm9taWNzLnYxLlJlYWRHcm91cFNldFINcmVhZEdyb3VwU2V0cxImCg9uZXh0'
-    'X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List searchReadGroupSetsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtTZWFyY2hSZWFkR3JvdXBTZXRzUmVzcG9uc2USSAoPcmVhZF9ncm91cF9zZXRzGAEgAygLMi'
+        'AuZ29vZ2xlLmdlbm9taWNzLnYxLlJlYWRHcm91cFNldFINcmVhZEdyb3VwU2V0cxImCg9uZXh0'
+        'X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use importReadGroupSetsRequestDescriptor instead')
 const ImportReadGroupSetsRequest$json = {
@@ -52,7 +61,14 @@ const ImportReadGroupSetsRequest$json = {
     {'1': 'dataset_id', '3': 1, '4': 1, '5': 9, '10': 'datasetId'},
     {'1': 'reference_set_id', '3': 4, '4': 1, '5': 9, '10': 'referenceSetId'},
     {'1': 'source_uris', '3': 2, '4': 3, '5': 9, '10': 'sourceUris'},
-    {'1': 'partition_strategy', '3': 5, '4': 1, '5': 14, '6': '.google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy', '10': 'partitionStrategy'},
+    {
+      '1': 'partition_strategy',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy',
+      '10': 'partitionStrategy'
+    },
   ],
   '4': [ImportReadGroupSetsRequest_PartitionStrategy$json],
 };
@@ -81,14 +97,21 @@ final $typed_data.Uint8List importReadGroupSetsRequestDescriptor = $convert.base
 const ImportReadGroupSetsResponse$json = {
   '1': 'ImportReadGroupSetsResponse',
   '2': [
-    {'1': 'read_group_set_ids', '3': 1, '4': 3, '5': 9, '10': 'readGroupSetIds'},
+    {
+      '1': 'read_group_set_ids',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'readGroupSetIds'
+    },
   ],
 };
 
 /// Descriptor for `ImportReadGroupSetsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List importReadGroupSetsResponseDescriptor = $convert.base64Decode(
-    'ChtJbXBvcnRSZWFkR3JvdXBTZXRzUmVzcG9uc2USKwoScmVhZF9ncm91cF9zZXRfaWRzGAEgAy'
-    'gJUg9yZWFkR3JvdXBTZXRJZHM=');
+final $typed_data.Uint8List importReadGroupSetsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtJbXBvcnRSZWFkR3JvdXBTZXRzUmVzcG9uc2USKwoScmVhZF9ncm91cF9zZXRfaWRzGAEgAy'
+        'gJUg9yZWFkR3JvdXBTZXRJZHM=');
 
 @$core.Deprecated('Use exportReadGroupSetRequestDescriptor instead')
 const ExportReadGroupSetRequest$json = {
@@ -113,8 +136,22 @@ const UpdateReadGroupSetRequest$json = {
   '1': 'UpdateReadGroupSetRequest',
   '2': [
     {'1': 'read_group_set_id', '3': 1, '4': 1, '5': 9, '10': 'readGroupSetId'},
-    {'1': 'read_group_set', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.ReadGroupSet', '10': 'readGroupSet'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'read_group_set',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.ReadGroupSet',
+      '10': 'readGroupSet'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -134,9 +171,10 @@ const DeleteReadGroupSetRequest$json = {
 };
 
 /// Descriptor for `DeleteReadGroupSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteReadGroupSetRequestDescriptor = $convert.base64Decode(
-    'ChlEZWxldGVSZWFkR3JvdXBTZXRSZXF1ZXN0EikKEXJlYWRfZ3JvdXBfc2V0X2lkGAEgASgJUg'
-    '5yZWFkR3JvdXBTZXRJZA==');
+final $typed_data.Uint8List deleteReadGroupSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChlEZWxldGVSZWFkR3JvdXBTZXRSZXF1ZXN0EikKEXJlYWRfZ3JvdXBfc2V0X2lkGAEgASgJUg'
+        '5yZWFkR3JvdXBTZXRJZA==');
 
 @$core.Deprecated('Use getReadGroupSetRequestDescriptor instead')
 const GetReadGroupSetRequest$json = {
@@ -147,9 +185,10 @@ const GetReadGroupSetRequest$json = {
 };
 
 /// Descriptor for `GetReadGroupSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getReadGroupSetRequestDescriptor = $convert.base64Decode(
-    'ChZHZXRSZWFkR3JvdXBTZXRSZXF1ZXN0EikKEXJlYWRfZ3JvdXBfc2V0X2lkGAEgASgJUg5yZW'
-    'FkR3JvdXBTZXRJZA==');
+final $typed_data.Uint8List getReadGroupSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRSZWFkR3JvdXBTZXRSZXF1ZXN0EikKEXJlYWRfZ3JvdXBfc2V0X2lkGAEgASgJUg5yZW'
+        'FkR3JvdXBTZXRJZA==');
 
 @$core.Deprecated('Use listCoverageBucketsRequestDescriptor instead')
 const ListCoverageBucketsRequest$json = {
@@ -159,7 +198,13 @@ const ListCoverageBucketsRequest$json = {
     {'1': 'reference_name', '3': 3, '4': 1, '5': 9, '10': 'referenceName'},
     {'1': 'start', '3': 4, '4': 1, '5': 3, '10': 'start'},
     {'1': 'end', '3': 5, '4': 1, '5': 3, '10': 'end'},
-    {'1': 'target_bucket_width', '3': 6, '4': 1, '5': 3, '10': 'targetBucketWidth'},
+    {
+      '1': 'target_bucket_width',
+      '3': 6,
+      '4': 1,
+      '5': 3,
+      '10': 'targetBucketWidth'
+    },
     {'1': 'page_token', '3': 7, '4': 1, '5': 9, '10': 'pageToken'},
     {'1': 'page_size', '3': 8, '4': 1, '5': 5, '10': 'pageSize'},
   ],
@@ -177,7 +222,14 @@ final $typed_data.Uint8List listCoverageBucketsRequestDescriptor = $convert.base
 const CoverageBucket$json = {
   '1': 'CoverageBucket',
   '2': [
-    {'1': 'range', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1.Range', '10': 'range'},
+    {
+      '1': 'range',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Range',
+      '10': 'range'
+    },
     {'1': 'mean_coverage', '3': 2, '4': 1, '5': 2, '10': 'meanCoverage'},
   ],
 };
@@ -192,7 +244,14 @@ const ListCoverageBucketsResponse$json = {
   '1': 'ListCoverageBucketsResponse',
   '2': [
     {'1': 'bucket_width', '3': 1, '4': 1, '5': 3, '10': 'bucketWidth'},
-    {'1': 'coverage_buckets', '3': 2, '4': 3, '5': 11, '6': '.google.genomics.v1.CoverageBucket', '10': 'coverageBuckets'},
+    {
+      '1': 'coverage_buckets',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.CoverageBucket',
+      '10': 'coverageBuckets'
+    },
     {'1': 'next_page_token', '3': 3, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -208,7 +267,13 @@ final $typed_data.Uint8List listCoverageBucketsResponseDescriptor = $convert.bas
 const SearchReadsRequest$json = {
   '1': 'SearchReadsRequest',
   '2': [
-    {'1': 'read_group_set_ids', '3': 1, '4': 3, '5': 9, '10': 'readGroupSetIds'},
+    {
+      '1': 'read_group_set_ids',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'readGroupSetIds'
+    },
     {'1': 'read_group_ids', '3': 5, '4': 3, '5': 9, '10': 'readGroupIds'},
     {'1': 'reference_name', '3': 7, '4': 1, '5': 9, '10': 'referenceName'},
     {'1': 'start', '3': 8, '4': 1, '5': 3, '10': 'start'},
@@ -230,7 +295,14 @@ final $typed_data.Uint8List searchReadsRequestDescriptor = $convert.base64Decode
 const SearchReadsResponse$json = {
   '1': 'SearchReadsResponse',
   '2': [
-    {'1': 'alignments', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Read', '10': 'alignments'},
+    {
+      '1': 'alignments',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Read',
+      '10': 'alignments'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -267,7 +339,14 @@ final $typed_data.Uint8List streamReadsRequestDescriptor = $convert.base64Decode
 const StreamReadsResponse$json = {
   '1': 'StreamReadsResponse',
   '2': [
-    {'1': 'alignments', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Read', '10': 'alignments'},
+    {
+      '1': 'alignments',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Read',
+      '10': 'alignments'
+    },
   ],
 };
 
@@ -275,4 +354,3 @@ const StreamReadsResponse$json = {
 final $typed_data.Uint8List streamReadsResponseDescriptor = $convert.base64Decode(
     'ChNTdHJlYW1SZWFkc1Jlc3BvbnNlEjgKCmFsaWdubWVudHMYASADKAsyGC5nb29nbGUuZ2Vub2'
     '1pY3MudjEuUmVhZFIKYWxpZ25tZW50cw==');
-

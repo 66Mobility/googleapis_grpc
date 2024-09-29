@@ -30,4 +30,3 @@ const Severity$json = {
 final $typed_data.Uint8List severityDescriptor = $convert.base64Decode(
     'CghTZXZlcml0eRIYChRTRVZFUklUWV9VTlNQRUNJRklFRBAAEgsKB01JTklNQUwQARIHCgNMT1'
     'cQAhIKCgZNRURJVU0QAxIICgRISUdIEAQSDAoIQ1JJVElDQUwQBQ==');
-

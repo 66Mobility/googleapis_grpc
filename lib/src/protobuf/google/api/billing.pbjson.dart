@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const Billing$json = {
   '1': 'Billing',
   '2': [
-    {'1': 'consumer_destinations', '3': 8, '4': 3, '5': 11, '6': '.google.api.Billing.BillingDestination', '10': 'consumerDestinations'},
+    {
+      '1': 'consumer_destinations',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Billing.BillingDestination',
+      '10': 'consumerDestinations'
+    },
   ],
   '3': [Billing_BillingDestination$json],
 };
@@ -26,7 +33,13 @@ const Billing$json = {
 const Billing_BillingDestination$json = {
   '1': 'BillingDestination',
   '2': [
-    {'1': 'monitored_resource', '3': 1, '4': 1, '5': 9, '10': 'monitoredResource'},
+    {
+      '1': 'monitored_resource',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'monitoredResource'
+    },
     {'1': 'metrics', '3': 2, '4': 3, '5': 9, '10': 'metrics'},
   ],
 };
@@ -37,4 +50,3 @@ final $typed_data.Uint8List billingDescriptor = $convert.base64Decode(
     'lsbGluZy5CaWxsaW5nRGVzdGluYXRpb25SFGNvbnN1bWVyRGVzdGluYXRpb25zGl0KEkJpbGxp'
     'bmdEZXN0aW5hdGlvbhItChJtb25pdG9yZWRfcmVzb3VyY2UYASABKAlSEW1vbml0b3JlZFJlc2'
     '91cmNlEhgKB21ldHJpY3MYAiADKAlSB21ldHJpY3M=');
-

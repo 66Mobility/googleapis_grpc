@@ -44,7 +44,14 @@ final $typed_data.Uint8List listModelsRequestDescriptor = $convert.base64Decode(
 const ListModelsResponse$json = {
   '1': 'ListModelsResponse',
   '2': [
-    {'1': 'models', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Model', '10': 'models'},
+    {
+      '1': 'models',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Model',
+      '10': 'models'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -88,7 +95,14 @@ final $typed_data.Uint8List listTunedModelsRequestDescriptor = $convert.base64De
 const ListTunedModelsResponse$json = {
   '1': 'ListTunedModelsResponse',
   '2': [
-    {'1': 'tuned_models', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.TunedModel', '10': 'tunedModels'},
+    {
+      '1': 'tuned_models',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.TunedModel',
+      '10': 'tunedModels'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -103,8 +117,25 @@ final $typed_data.Uint8List listTunedModelsResponseDescriptor = $convert.base64D
 const CreateTunedModelRequest$json = {
   '1': 'CreateTunedModelRequest',
   '2': [
-    {'1': 'tuned_model_id', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'tunedModelId', '17': true},
-    {'1': 'tuned_model', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.TunedModel', '8': {}, '10': 'tunedModel'},
+    {
+      '1': 'tuned_model_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'tunedModelId',
+      '17': true
+    },
+    {
+      '1': 'tuned_model',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.TunedModel',
+      '8': {},
+      '10': 'tunedModel'
+    },
   ],
   '8': [
     {'1': '_tuned_model_id'},
@@ -125,8 +156,21 @@ const CreateTunedModelMetadata$json = {
     {'1': 'tuned_model', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'tunedModel'},
     {'1': 'total_steps', '3': 1, '4': 1, '5': 5, '10': 'totalSteps'},
     {'1': 'completed_steps', '3': 2, '4': 1, '5': 5, '10': 'completedSteps'},
-    {'1': 'completed_percent', '3': 3, '4': 1, '5': 2, '10': 'completedPercent'},
-    {'1': 'snapshots', '3': 4, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.TuningSnapshot', '10': 'snapshots'},
+    {
+      '1': 'completed_percent',
+      '3': 3,
+      '4': 1,
+      '5': 2,
+      '10': 'completedPercent'
+    },
+    {
+      '1': 'snapshots',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.TuningSnapshot',
+      '10': 'snapshots'
+    },
   ],
 };
 
@@ -143,8 +187,24 @@ final $typed_data.Uint8List createTunedModelMetadataDescriptor = $convert.base64
 const UpdateTunedModelRequest$json = {
   '1': 'UpdateTunedModelRequest',
   '2': [
-    {'1': 'tuned_model', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.TunedModel', '8': {}, '10': 'tunedModel'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'tuned_model',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.TunedModel',
+      '8': {},
+      '10': 'tunedModel'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -164,7 +224,7 @@ const DeleteTunedModelRequest$json = {
 };
 
 /// Descriptor for `DeleteTunedModelRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteTunedModelRequestDescriptor = $convert.base64Decode(
-    'ChdEZWxldGVUdW5lZE1vZGVsUmVxdWVzdBJICgRuYW1lGAEgASgJQjTgQQL6QS4KLGdlbmVyYX'
-    'RpdmVsYW5ndWFnZS5nb29nbGVhcGlzLmNvbS9UdW5lZE1vZGVsUgRuYW1l');
-
+final $typed_data.Uint8List deleteTunedModelRequestDescriptor =
+    $convert.base64Decode(
+        'ChdEZWxldGVUdW5lZE1vZGVsUmVxdWVzdBJICgRuYW1lGAEgASgJQjTgQQL6QS4KLGdlbmVyYX'
+        'RpdmVsYW5ndWFnZS5nb29nbGVhcGlzLmNvbS9UdW5lZE1vZGVsUgRuYW1l');

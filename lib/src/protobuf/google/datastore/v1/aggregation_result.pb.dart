@@ -33,33 +33,49 @@ class AggregationResult extends $pb.GeneratedMessage {
     return $result;
   }
   AggregationResult._() : super();
-  factory AggregationResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregationResult.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregationResult.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..m<$core.String, $421.Value>(2, _omitFieldNames ? '' : 'aggregateProperties', entryClassName: 'AggregationResult.AggregatePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $421.Value.create, valueDefaultOrMaker: $421.Value.getDefault, packageName: const $pb.PackageName('google.datastore.v1'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregationResult',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..m<$core.String, $421.Value>(
+        2, _omitFieldNames ? '' : 'aggregateProperties',
+        entryClassName: 'AggregationResult.AggregatePropertiesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $421.Value.create,
+        valueDefaultOrMaker: $421.Value.getDefault,
+        packageName: const $pb.PackageName('google.datastore.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AggregationResult clone() => AggregationResult()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregationResult copyWith(void Function(AggregationResult) updates) => super.copyWith((message) => updates(message as AggregationResult)) as AggregationResult;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregationResult copyWith(void Function(AggregationResult) updates) =>
+      super.copyWith((message) => updates(message as AggregationResult))
+          as AggregationResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AggregationResult create() => AggregationResult._();
   AggregationResult createEmptyInstance() => create();
-  static $pb.PbList<AggregationResult> createRepeated() => $pb.PbList<AggregationResult>();
+  static $pb.PbList<AggregationResult> createRepeated() =>
+      $pb.PbList<AggregationResult>();
   @$core.pragma('dart2js:noInline')
-  static AggregationResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregationResult>(create);
+  static AggregationResult getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregationResult>(create);
   static AggregationResult? _defaultInstance;
 
   ///  The result of the aggregation functions, ex: `COUNT(*) AS total_entities`.
@@ -92,35 +108,54 @@ class AggregationResultBatch extends $pb.GeneratedMessage {
     return $result;
   }
   AggregationResultBatch._() : super();
-  factory AggregationResultBatch.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregationResultBatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregationResultBatch.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregationResultBatch.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationResultBatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..pc<AggregationResult>(1, _omitFieldNames ? '' : 'aggregationResults', $pb.PbFieldType.PM, subBuilder: AggregationResult.create)
-    ..e<$422.QueryResultBatch_MoreResultsType>(2, _omitFieldNames ? '' : 'moreResults', $pb.PbFieldType.OE, defaultOrMaker: $422.QueryResultBatch_MoreResultsType.MORE_RESULTS_TYPE_UNSPECIFIED, valueOf: $422.QueryResultBatch_MoreResultsType.valueOf, enumValues: $422.QueryResultBatch_MoreResultsType.values)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'readTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregationResultBatch',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..pc<AggregationResult>(
+        1, _omitFieldNames ? '' : 'aggregationResults', $pb.PbFieldType.PM,
+        subBuilder: AggregationResult.create)
+    ..e<$422.QueryResultBatch_MoreResultsType>(
+        2, _omitFieldNames ? '' : 'moreResults', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            $422.QueryResultBatch_MoreResultsType.MORE_RESULTS_TYPE_UNSPECIFIED,
+        valueOf: $422.QueryResultBatch_MoreResultsType.valueOf,
+        enumValues: $422.QueryResultBatch_MoreResultsType.values)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'readTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AggregationResultBatch clone() => AggregationResultBatch()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregationResultBatch copyWith(void Function(AggregationResultBatch) updates) => super.copyWith((message) => updates(message as AggregationResultBatch)) as AggregationResultBatch;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AggregationResultBatch clone() =>
+      AggregationResultBatch()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregationResultBatch copyWith(
+          void Function(AggregationResultBatch) updates) =>
+      super.copyWith((message) => updates(message as AggregationResultBatch))
+          as AggregationResultBatch;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AggregationResultBatch create() => AggregationResultBatch._();
   AggregationResultBatch createEmptyInstance() => create();
-  static $pb.PbList<AggregationResultBatch> createRepeated() => $pb.PbList<AggregationResultBatch>();
+  static $pb.PbList<AggregationResultBatch> createRepeated() =>
+      $pb.PbList<AggregationResultBatch>();
   @$core.pragma('dart2js:noInline')
-  static AggregationResultBatch getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregationResultBatch>(create);
+  static AggregationResultBatch getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregationResultBatch>(create);
   static AggregationResultBatch? _defaultInstance;
 
   /// The aggregation results for this batch.
@@ -133,7 +168,10 @@ class AggregationResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $422.QueryResultBatch_MoreResultsType get moreResults => $_getN(1);
   @$pb.TagNumber(2)
-  set moreResults($422.QueryResultBatch_MoreResultsType v) { setField(2, v); }
+  set moreResults($422.QueryResultBatch_MoreResultsType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMoreResults() => $_has(1);
   @$pb.TagNumber(2)
@@ -147,7 +185,10 @@ class AggregationResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get readTime => $_getN(2);
   @$pb.TagNumber(3)
-  set readTime($302.Timestamp v) { setField(3, v); }
+  set readTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReadTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -156,6 +197,6 @@ class AggregationResultBatch extends $pb.GeneratedMessage {
   $302.Timestamp ensureReadTime() => $_ensure(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

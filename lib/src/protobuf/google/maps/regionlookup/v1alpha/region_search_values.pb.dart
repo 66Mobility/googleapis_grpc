@@ -18,12 +18,7 @@ import 'region_search_values.pbenum.dart';
 
 export 'region_search_values.pbenum.dart';
 
-enum RegionSearchValue_Location {
-  address, 
-  latlng, 
-  placeId, 
-  notSet
-}
+enum RegionSearchValue_Location { address, latlng, placeId, notSet }
 
 ///  Region Search Values.
 ///
@@ -95,48 +90,64 @@ class RegionSearchValue extends $pb.GeneratedMessage {
     return $result;
   }
   RegionSearchValue._() : super();
-  factory RegionSearchValue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RegionSearchValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RegionSearchValue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RegionSearchValue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, RegionSearchValue_Location> _RegionSearchValue_LocationByTag = {
-    1 : RegionSearchValue_Location.address,
-    2 : RegionSearchValue_Location.latlng,
-    3 : RegionSearchValue_Location.placeId,
-    0 : RegionSearchValue_Location.notSet
+  static const $core.Map<$core.int, RegionSearchValue_Location>
+      _RegionSearchValue_LocationByTag = {
+    1: RegionSearchValue_Location.address,
+    2: RegionSearchValue_Location.latlng,
+    3: RegionSearchValue_Location.placeId,
+    0: RegionSearchValue_Location.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegionSearchValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RegionSearchValue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'address')
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'latlng', subBuilder: $325.LatLng.create)
+    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'latlng',
+        subBuilder: $325.LatLng.create)
     ..aOS(3, _omitFieldNames ? '' : 'placeId')
-    ..e<RegionSearchValue_PlaceType>(6, _omitFieldNames ? '' : 'placeType', $pb.PbFieldType.OE, defaultOrMaker: RegionSearchValue_PlaceType.PLACE_TYPE_UNSPECIFIED, valueOf: RegionSearchValue_PlaceType.valueOf, enumValues: RegionSearchValue_PlaceType.values)
+    ..e<RegionSearchValue_PlaceType>(
+        6, _omitFieldNames ? '' : 'placeType', $pb.PbFieldType.OE,
+        defaultOrMaker: RegionSearchValue_PlaceType.PLACE_TYPE_UNSPECIFIED,
+        valueOf: RegionSearchValue_PlaceType.valueOf,
+        enumValues: RegionSearchValue_PlaceType.values)
     ..aOS(7, _omitFieldNames ? '' : 'languageCode')
     ..aOS(8, _omitFieldNames ? '' : 'regionCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RegionSearchValue clone() => RegionSearchValue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RegionSearchValue copyWith(void Function(RegionSearchValue) updates) => super.copyWith((message) => updates(message as RegionSearchValue)) as RegionSearchValue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RegionSearchValue copyWith(void Function(RegionSearchValue) updates) =>
+      super.copyWith((message) => updates(message as RegionSearchValue))
+          as RegionSearchValue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RegionSearchValue create() => RegionSearchValue._();
   RegionSearchValue createEmptyInstance() => create();
-  static $pb.PbList<RegionSearchValue> createRepeated() => $pb.PbList<RegionSearchValue>();
+  static $pb.PbList<RegionSearchValue> createRepeated() =>
+      $pb.PbList<RegionSearchValue>();
   @$core.pragma('dart2js:noInline')
-  static RegionSearchValue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegionSearchValue>(create);
+  static RegionSearchValue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RegionSearchValue>(create);
   static RegionSearchValue? _defaultInstance;
 
-  RegionSearchValue_Location whichLocation() => _RegionSearchValue_LocationByTag[$_whichOneof(0)]!;
+  RegionSearchValue_Location whichLocation() =>
+      _RegionSearchValue_LocationByTag[$_whichOneof(0)]!;
   void clearLocation() => clearField($_whichOneof(0));
 
   /// The unstructured street address that is contained inside a region to
@@ -144,7 +155,10 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get address => $_getSZ(0);
   @$pb.TagNumber(1)
-  set address($core.String v) { $_setString(0, v); }
+  set address($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -154,7 +168,10 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $325.LatLng get latlng => $_getN(1);
   @$pb.TagNumber(2)
-  set latlng($325.LatLng v) { setField(2, v); }
+  set latlng($325.LatLng v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLatlng() => $_has(1);
   @$pb.TagNumber(2)
@@ -166,7 +183,10 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get placeId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set placeId($core.String v) { $_setString(2, v); }
+  set placeId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPlaceId() => $_has(2);
   @$pb.TagNumber(3)
@@ -176,7 +196,10 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   RegionSearchValue_PlaceType get placeType => $_getN(3);
   @$pb.TagNumber(6)
-  set placeType(RegionSearchValue_PlaceType v) { setField(6, v); }
+  set placeType(RegionSearchValue_PlaceType v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPlaceType() => $_has(3);
   @$pb.TagNumber(6)
@@ -188,7 +211,10 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get languageCode => $_getSZ(4);
   @$pb.TagNumber(7)
-  set languageCode($core.String v) { $_setString(4, v); }
+  set languageCode($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasLanguageCode() => $_has(4);
   @$pb.TagNumber(7)
@@ -199,13 +225,16 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get regionCode => $_getSZ(5);
   @$pb.TagNumber(8)
-  set regionCode($core.String v) { $_setString(5, v); }
+  set regionCode($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasRegionCode() => $_has(5);
   @$pb.TagNumber(8)
   void clearRegionCode() => clearField(8);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

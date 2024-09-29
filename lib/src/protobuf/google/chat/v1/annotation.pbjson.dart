@@ -33,12 +33,51 @@ final $typed_data.Uint8List annotationTypeDescriptor = $convert.base64Decode(
 const Annotation$json = {
   '1': 'Annotation',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.chat.v1.AnnotationType', '10': 'type'},
-    {'1': 'start_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'startIndex', '17': true},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.AnnotationType',
+      '10': 'type'
+    },
+    {
+      '1': 'start_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'startIndex',
+      '17': true
+    },
     {'1': 'length', '3': 3, '4': 1, '5': 5, '10': 'length'},
-    {'1': 'user_mention', '3': 4, '4': 1, '5': 11, '6': '.google.chat.v1.UserMentionMetadata', '9': 0, '10': 'userMention'},
-    {'1': 'slash_command', '3': 5, '4': 1, '5': 11, '6': '.google.chat.v1.SlashCommandMetadata', '9': 0, '10': 'slashCommand'},
-    {'1': 'rich_link_metadata', '3': 6, '4': 1, '5': 11, '6': '.google.chat.v1.RichLinkMetadata', '9': 0, '10': 'richLinkMetadata'},
+    {
+      '1': 'user_mention',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.UserMentionMetadata',
+      '9': 0,
+      '10': 'userMention'
+    },
+    {
+      '1': 'slash_command',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.SlashCommandMetadata',
+      '9': 0,
+      '10': 'slashCommand'
+    },
+    {
+      '1': 'rich_link_metadata',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.RichLinkMetadata',
+      '9': 0,
+      '10': 'richLinkMetadata'
+    },
   ],
   '8': [
     {'1': 'metadata'},
@@ -60,8 +99,22 @@ final $typed_data.Uint8List annotationDescriptor = $convert.base64Decode(
 const UserMentionMetadata$json = {
   '1': 'UserMentionMetadata',
   '2': [
-    {'1': 'user', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.User', '10': 'user'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.chat.v1.UserMentionMetadata.Type', '10': 'type'},
+    {
+      '1': 'user',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.User',
+      '10': 'user'
+    },
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.UserMentionMetadata.Type',
+      '10': 'type'
+    },
   ],
   '4': [UserMentionMetadata_Type$json],
 };
@@ -87,8 +140,22 @@ final $typed_data.Uint8List userMentionMetadataDescriptor = $convert.base64Decod
 const SlashCommandMetadata$json = {
   '1': 'SlashCommandMetadata',
   '2': [
-    {'1': 'bot', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.User', '10': 'bot'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.chat.v1.SlashCommandMetadata.Type', '10': 'type'},
+    {
+      '1': 'bot',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.User',
+      '10': 'bot'
+    },
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.SlashCommandMetadata.Type',
+      '10': 'type'
+    },
     {'1': 'command_name', '3': 3, '4': 1, '5': 9, '10': 'commandName'},
     {'1': 'command_id', '3': 4, '4': 1, '5': 3, '10': 'commandId'},
     {'1': 'triggers_dialog', '3': 5, '4': 1, '5': 8, '10': 'triggersDialog'},
@@ -120,9 +187,32 @@ const RichLinkMetadata$json = {
   '1': 'RichLinkMetadata',
   '2': [
     {'1': 'uri', '3': 1, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'rich_link_type', '3': 2, '4': 1, '5': 14, '6': '.google.chat.v1.RichLinkMetadata.RichLinkType', '10': 'richLinkType'},
-    {'1': 'drive_link_data', '3': 3, '4': 1, '5': 11, '6': '.google.chat.v1.DriveLinkData', '9': 0, '10': 'driveLinkData'},
-    {'1': 'chat_space_link_data', '3': 4, '4': 1, '5': 11, '6': '.google.chat.v1.ChatSpaceLinkData', '9': 0, '10': 'chatSpaceLinkData'},
+    {
+      '1': 'rich_link_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.RichLinkMetadata.RichLinkType',
+      '10': 'richLinkType'
+    },
+    {
+      '1': 'drive_link_data',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.DriveLinkData',
+      '9': 0,
+      '10': 'driveLinkData'
+    },
+    {
+      '1': 'chat_space_link_data',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ChatSpaceLinkData',
+      '9': 0,
+      '10': 'chatSpaceLinkData'
+    },
   ],
   '4': [RichLinkMetadata_RichLinkType$json],
   '8': [
@@ -154,7 +244,14 @@ final $typed_data.Uint8List richLinkMetadataDescriptor = $convert.base64Decode(
 const DriveLinkData$json = {
   '1': 'DriveLinkData',
   '2': [
-    {'1': 'drive_data_ref', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.DriveDataRef', '10': 'driveDataRef'},
+    {
+      '1': 'drive_data_ref',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.DriveDataRef',
+      '10': 'driveDataRef'
+    },
     {'1': 'mime_type', '3': 2, '4': 1, '5': 9, '10': 'mimeType'},
   ],
 };
@@ -181,4 +278,3 @@ final $typed_data.Uint8List chatSpaceLinkDataDescriptor = $convert.base64Decode(
     'MuY29tL1NwYWNlUgVzcGFjZRI3CgZ0aHJlYWQYAiABKAlCH/pBHAoaY2hhdC5nb29nbGVhcGlz'
     'LmNvbS9UaHJlYWRSBnRocmVhZBI6CgdtZXNzYWdlGAMgASgJQiD6QR0KG2NoYXQuZ29vZ2xlYX'
     'Bpcy5jb20vTWVzc2FnZVIHbWVzc2FnZQ==');
-

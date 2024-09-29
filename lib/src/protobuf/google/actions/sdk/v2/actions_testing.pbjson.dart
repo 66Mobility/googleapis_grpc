@@ -18,9 +18,31 @@ const SendInteractionRequest$json = {
   '1': 'SendInteractionRequest',
   '2': [
     {'1': 'project', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'project'},
-    {'1': 'input', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.UserInput', '8': {}, '10': 'input'},
-    {'1': 'device_properties', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.DeviceProperties', '8': {}, '10': 'deviceProperties'},
-    {'1': 'conversation_token', '3': 4, '4': 1, '5': 9, '10': 'conversationToken'},
+    {
+      '1': 'input',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.UserInput',
+      '8': {},
+      '10': 'input'
+    },
+    {
+      '1': 'device_properties',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.DeviceProperties',
+      '8': {},
+      '10': 'deviceProperties'
+    },
+    {
+      '1': 'conversation_token',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'conversationToken'
+    },
   ],
 };
 
@@ -37,7 +59,14 @@ const UserInput$json = {
   '1': 'UserInput',
   '2': [
     {'1': 'query', '3': 1, '4': 1, '5': 9, '10': 'query'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.UserInput.InputType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.UserInput.InputType',
+      '10': 'type'
+    },
   ],
   '4': [UserInput_InputType$json],
 };
@@ -65,8 +94,22 @@ final $typed_data.Uint8List userInputDescriptor = $convert.base64Decode(
 const DeviceProperties$json = {
   '1': 'DeviceProperties',
   '2': [
-    {'1': 'surface', '3': 1, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.DeviceProperties.Surface', '10': 'surface'},
-    {'1': 'location', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Location', '10': 'location'},
+    {
+      '1': 'surface',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.DeviceProperties.Surface',
+      '10': 'surface'
+    },
+    {
+      '1': 'location',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Location',
+      '10': 'location'
+    },
     {'1': 'locale', '3': 3, '4': 1, '5': 9, '10': 'locale'},
     {'1': 'time_zone', '3': 4, '4': 1, '5': 9, '10': 'timeZone'},
   ],
@@ -99,8 +142,21 @@ final $typed_data.Uint8List devicePropertiesDescriptor = $convert.base64Decode(
 const Location$json = {
   '1': 'Location',
   '2': [
-    {'1': 'coordinates', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'coordinates'},
-    {'1': 'formatted_address', '3': 2, '4': 1, '5': 9, '10': 'formattedAddress'},
+    {
+      '1': 'coordinates',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'coordinates'
+    },
+    {
+      '1': 'formatted_address',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'formattedAddress'
+    },
     {'1': 'zip_code', '3': 3, '4': 1, '5': 9, '10': 'zipCode'},
     {'1': 'city', '3': 4, '4': 1, '5': 9, '10': 'city'},
   ],
@@ -116,9 +172,29 @@ final $typed_data.Uint8List locationDescriptor = $convert.base64Decode(
 const SendInteractionResponse$json = {
   '1': 'SendInteractionResponse',
   '2': [
-    {'1': 'output', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Output', '10': 'output'},
-    {'1': 'diagnostics', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Diagnostics', '10': 'diagnostics'},
-    {'1': 'conversation_token', '3': 3, '4': 1, '5': 9, '10': 'conversationToken'},
+    {
+      '1': 'output',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Output',
+      '10': 'output'
+    },
+    {
+      '1': 'diagnostics',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Diagnostics',
+      '10': 'diagnostics'
+    },
+    {
+      '1': 'conversation_token',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'conversationToken'
+    },
   ],
 };
 
@@ -135,8 +211,22 @@ const Output$json = {
   '2': [
     {'1': 'text', '3': 1, '4': 1, '5': 9, '10': 'text'},
     {'1': 'speech', '3': 2, '4': 3, '5': 9, '10': 'speech'},
-    {'1': 'canvas', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Canvas', '10': 'canvas'},
-    {'1': 'actions_builder_prompt', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Prompt', '10': 'actionsBuilderPrompt'},
+    {
+      '1': 'canvas',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Canvas',
+      '10': 'canvas'
+    },
+    {
+      '1': 'actions_builder_prompt',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Prompt',
+      '10': 'actionsBuilderPrompt'
+    },
   ],
 };
 
@@ -151,7 +241,14 @@ final $typed_data.Uint8List outputDescriptor = $convert.base64Decode(
 const Diagnostics$json = {
   '1': 'Diagnostics',
   '2': [
-    {'1': 'actions_builder_events', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.ExecutionEvent', '10': 'actionsBuilderEvents'},
+    {
+      '1': 'actions_builder_events',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.ExecutionEvent',
+      '10': 'actionsBuilderEvents'
+    },
   ],
 };
 
@@ -179,7 +276,14 @@ final $typed_data.Uint8List matchIntentsRequestDescriptor = $convert.base64Decod
 const MatchIntentsResponse$json = {
   '1': 'MatchIntentsResponse',
   '2': [
-    {'1': 'matched_intents', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.Intent', '10': 'matchedIntents'},
+    {
+      '1': 'matched_intents',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Intent',
+      '10': 'matchedIntents'
+    },
   ],
 };
 
@@ -197,7 +301,7 @@ const SetWebAndAppActivityControlRequest$json = {
 };
 
 /// Descriptor for `SetWebAndAppActivityControlRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List setWebAndAppActivityControlRequestDescriptor = $convert.base64Decode(
-    'CiJTZXRXZWJBbmRBcHBBY3Rpdml0eUNvbnRyb2xSZXF1ZXN0EhgKB2VuYWJsZWQYASABKAhSB2'
-    'VuYWJsZWQ=');
-
+final $typed_data.Uint8List setWebAndAppActivityControlRequestDescriptor =
+    $convert.base64Decode(
+        'CiJTZXRXZWJBbmRBcHBBY3Rpdml0eUNvbnRyb2xSZXF1ZXN0EhgKB2VuYWJsZWQYASABKAhSB2'
+        'VuYWJsZWQ=');

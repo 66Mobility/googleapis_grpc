@@ -29,24 +29,31 @@ class AuditData extends $pb.GeneratedMessage {
     return $result;
   }
   AuditData._() : super();
-  factory AuditData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuditData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuditData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuditData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuditData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1.logging'), createEmptyInstance: create)
-    ..aOM<$88.PolicyDelta>(2, _omitFieldNames ? '' : 'policyDelta', subBuilder: $88.PolicyDelta.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuditData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.iam.v1.logging'),
+      createEmptyInstance: create)
+    ..aOM<$88.PolicyDelta>(2, _omitFieldNames ? '' : 'policyDelta',
+        subBuilder: $88.PolicyDelta.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuditData clone() => AuditData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuditData copyWith(void Function(AuditData) updates) => super.copyWith((message) => updates(message as AuditData)) as AuditData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuditData copyWith(void Function(AuditData) updates) =>
+      super.copyWith((message) => updates(message as AuditData)) as AuditData;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -55,14 +62,18 @@ class AuditData extends $pb.GeneratedMessage {
   AuditData createEmptyInstance() => create();
   static $pb.PbList<AuditData> createRepeated() => $pb.PbList<AuditData>();
   @$core.pragma('dart2js:noInline')
-  static AuditData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditData>(create);
+  static AuditData getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditData>(create);
   static AuditData? _defaultInstance;
 
   /// Policy delta between the original policy and the newly set policy.
   @$pb.TagNumber(2)
   $88.PolicyDelta get policyDelta => $_getN(0);
   @$pb.TagNumber(2)
-  set policyDelta($88.PolicyDelta v) { setField(2, v); }
+  set policyDelta($88.PolicyDelta v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPolicyDelta() => $_has(0);
   @$pb.TagNumber(2)
@@ -71,6 +82,6 @@ class AuditData extends $pb.GeneratedMessage {
   $88.PolicyDelta ensurePolicyDelta() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

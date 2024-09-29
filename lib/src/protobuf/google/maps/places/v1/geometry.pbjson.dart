@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const Circle$json = {
   '1': 'Circle',
   '2': [
-    {'1': 'center', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'center'},
+    {
+      '1': 'center',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'center'
+    },
     {'1': 'radius', '3': 2, '4': 1, '5': 1, '8': {}, '10': 'radius'},
   ],
 };
@@ -26,4 +34,3 @@ const Circle$json = {
 final $typed_data.Uint8List circleDescriptor = $convert.base64Decode(
     'CgZDaXJjbGUSMAoGY2VudGVyGAEgASgLMhMuZ29vZ2xlLnR5cGUuTGF0TG5nQgPgQQJSBmNlbn'
     'RlchIbCgZyYWRpdXMYAiABKAFCA+BBAlIGcmFkaXVz');
-

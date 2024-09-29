@@ -26,4 +26,3 @@ const EntityDisplay$json = {
 final $typed_data.Uint8List entityDisplayDescriptor = $convert.base64Decode(
     'Cg1FbnRpdHlEaXNwbGF5EiIKCmljb25fdGl0bGUYASABKAlCA+BBAVIJaWNvblRpdGxlEh4KCG'
     'ljb25fdXJsGAIgASgJQgPgQQJSB2ljb25Vcmw=');
-

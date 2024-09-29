@@ -29,24 +29,30 @@ class Backend extends $pb.GeneratedMessage {
     return $result;
   }
   Backend._() : super();
-  factory Backend.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Backend.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Backend.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Backend.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Backend', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<BackendRule>(1, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: BackendRule.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Backend',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<BackendRule>(1, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+        subBuilder: BackendRule.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Backend clone() => Backend()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Backend copyWith(void Function(Backend) updates) => super.copyWith((message) => updates(message as Backend)) as Backend;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Backend copyWith(void Function(Backend) updates) =>
+      super.copyWith((message) => updates(message as Backend)) as Backend;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -55,7 +61,8 @@ class Backend extends $pb.GeneratedMessage {
   Backend createEmptyInstance() => create();
   static $pb.PbList<Backend> createRepeated() => $pb.PbList<Backend>();
   @$core.pragma('dart2js:noInline')
-  static Backend getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backend>(create);
+  static Backend getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backend>(create);
   static Backend? _defaultInstance;
 
   ///  A list of API backend rules that apply to individual API methods.
@@ -65,11 +72,7 @@ class Backend extends $pb.GeneratedMessage {
   $core.List<BackendRule> get rules => $_getList(0);
 }
 
-enum BackendRule_Authentication {
-  jwtAudience, 
-  disableAuth, 
-  notSet
-}
+enum BackendRule_Authentication { jwtAudience, disableAuth, notSet }
 
 /// A backend rule provides configuration for an individual API element.
 class BackendRule extends $pb.GeneratedMessage {
@@ -77,8 +80,7 @@ class BackendRule extends $pb.GeneratedMessage {
     $core.String? selector,
     $core.String? address,
     $core.double? deadline,
-  @$core.Deprecated('This field is deprecated.')
-    $core.double? minDeadline,
+    @$core.Deprecated('This field is deprecated.') $core.double? minDeadline,
     $core.double? operationDeadline,
     BackendRule_PathTranslation? pathTranslation,
     $core.String? jwtAudience,
@@ -121,39 +123,60 @@ class BackendRule extends $pb.GeneratedMessage {
     return $result;
   }
   BackendRule._() : super();
-  factory BackendRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BackendRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BackendRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BackendRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, BackendRule_Authentication> _BackendRule_AuthenticationByTag = {
-    7 : BackendRule_Authentication.jwtAudience,
-    8 : BackendRule_Authentication.disableAuth,
-    0 : BackendRule_Authentication.notSet
+  static const $core.Map<$core.int, BackendRule_Authentication>
+      _BackendRule_AuthenticationByTag = {
+    7: BackendRule_Authentication.jwtAudience,
+    8: BackendRule_Authentication.disableAuth,
+    0: BackendRule_Authentication.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackendRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BackendRule',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..oo(0, [7, 8])
     ..aOS(1, _omitFieldNames ? '' : 'selector')
     ..aOS(2, _omitFieldNames ? '' : 'address')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'deadline', $pb.PbFieldType.OD)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'minDeadline', $pb.PbFieldType.OD)
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'operationDeadline', $pb.PbFieldType.OD)
-    ..e<BackendRule_PathTranslation>(6, _omitFieldNames ? '' : 'pathTranslation', $pb.PbFieldType.OE, defaultOrMaker: BackendRule_PathTranslation.PATH_TRANSLATION_UNSPECIFIED, valueOf: BackendRule_PathTranslation.valueOf, enumValues: BackendRule_PathTranslation.values)
+    ..a<$core.double>(
+        4, _omitFieldNames ? '' : 'minDeadline', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        5, _omitFieldNames ? '' : 'operationDeadline', $pb.PbFieldType.OD)
+    ..e<BackendRule_PathTranslation>(
+        6, _omitFieldNames ? '' : 'pathTranslation', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            BackendRule_PathTranslation.PATH_TRANSLATION_UNSPECIFIED,
+        valueOf: BackendRule_PathTranslation.valueOf,
+        enumValues: BackendRule_PathTranslation.values)
     ..aOS(7, _omitFieldNames ? '' : 'jwtAudience')
     ..aOB(8, _omitFieldNames ? '' : 'disableAuth')
     ..aOS(9, _omitFieldNames ? '' : 'protocol')
-    ..m<$core.String, BackendRule>(10, _omitFieldNames ? '' : 'overridesByRequestProtocol', entryClassName: 'BackendRule.OverridesByRequestProtocolEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: BackendRule.create, valueDefaultOrMaker: BackendRule.getDefault, packageName: const $pb.PackageName('google.api'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, BackendRule>(
+        10, _omitFieldNames ? '' : 'overridesByRequestProtocol',
+        entryClassName: 'BackendRule.OverridesByRequestProtocolEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: BackendRule.create,
+        valueDefaultOrMaker: BackendRule.getDefault,
+        packageName: const $pb.PackageName('google.api'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BackendRule clone() => BackendRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BackendRule copyWith(void Function(BackendRule) updates) => super.copyWith((message) => updates(message as BackendRule)) as BackendRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BackendRule copyWith(void Function(BackendRule) updates) =>
+      super.copyWith((message) => updates(message as BackendRule))
+          as BackendRule;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -162,10 +185,12 @@ class BackendRule extends $pb.GeneratedMessage {
   BackendRule createEmptyInstance() => create();
   static $pb.PbList<BackendRule> createRepeated() => $pb.PbList<BackendRule>();
   @$core.pragma('dart2js:noInline')
-  static BackendRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BackendRule>(create);
+  static BackendRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BackendRule>(create);
   static BackendRule? _defaultInstance;
 
-  BackendRule_Authentication whichAuthentication() => _BackendRule_AuthenticationByTag[$_whichOneof(0)]!;
+  BackendRule_Authentication whichAuthentication() =>
+      _BackendRule_AuthenticationByTag[$_whichOneof(0)]!;
   void clearAuthentication() => clearField($_whichOneof(0));
 
   ///  Selects the methods to which this rule applies.
@@ -175,7 +200,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get selector => $_getSZ(0);
   @$pb.TagNumber(1)
-  set selector($core.String v) { $_setString(0, v); }
+  set selector($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -204,7 +232,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get address => $_getSZ(1);
   @$pb.TagNumber(2)
-  set address($core.String v) { $_setString(1, v); }
+  set address($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAddress() => $_has(1);
   @$pb.TagNumber(2)
@@ -215,7 +246,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get deadline => $_getN(2);
   @$pb.TagNumber(3)
-  set deadline($core.double v) { $_setDouble(2, v); }
+  set deadline($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeadline() => $_has(2);
   @$pb.TagNumber(3)
@@ -227,7 +261,10 @@ class BackendRule extends $pb.GeneratedMessage {
   $core.double get minDeadline => $_getN(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set minDeadline($core.double v) { $_setDouble(3, v); }
+  set minDeadline($core.double v) {
+    $_setDouble(3, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasMinDeadline() => $_has(3);
@@ -240,7 +277,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get operationDeadline => $_getN(4);
   @$pb.TagNumber(5)
-  set operationDeadline($core.double v) { $_setDouble(4, v); }
+  set operationDeadline($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOperationDeadline() => $_has(4);
   @$pb.TagNumber(5)
@@ -249,7 +289,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   BackendRule_PathTranslation get pathTranslation => $_getN(5);
   @$pb.TagNumber(6)
-  set pathTranslation(BackendRule_PathTranslation v) { setField(6, v); }
+  set pathTranslation(BackendRule_PathTranslation v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPathTranslation() => $_has(5);
   @$pb.TagNumber(6)
@@ -261,7 +304,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get jwtAudience => $_getSZ(6);
   @$pb.TagNumber(7)
-  set jwtAudience($core.String v) { $_setString(6, v); }
+  set jwtAudience($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasJwtAudience() => $_has(6);
   @$pb.TagNumber(7)
@@ -274,7 +320,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get disableAuth => $_getBF(7);
   @$pb.TagNumber(8)
-  set disableAuth($core.bool v) { $_setBool(7, v); }
+  set disableAuth($core.bool v) {
+    $_setBool(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDisableAuth() => $_has(7);
   @$pb.TagNumber(8)
@@ -304,7 +353,10 @@ class BackendRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get protocol => $_getSZ(8);
   @$pb.TagNumber(9)
-  set protocol($core.String v) { $_setString(8, v); }
+  set protocol($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasProtocol() => $_has(8);
   @$pb.TagNumber(9)
@@ -312,9 +364,10 @@ class BackendRule extends $pb.GeneratedMessage {
 
   /// The map between request protocol and the backend address.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, BackendRule> get overridesByRequestProtocol => $_getMap(9);
+  $core.Map<$core.String, BackendRule> get overridesByRequestProtocol =>
+      $_getMap(9);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

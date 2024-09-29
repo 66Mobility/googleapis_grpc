@@ -17,12 +17,56 @@ import 'dart:typed_data' as $typed_data;
 const ConversionSource$json = {
   '1': 'ConversionSource',
   '2': [
-    {'1': 'google_analytics_link', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.GoogleAnalyticsLink', '8': {}, '9': 0, '10': 'googleAnalyticsLink'},
-    {'1': 'merchant_center_destination', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.MerchantCenterDestination', '9': 0, '10': 'merchantCenterDestination'},
+    {
+      '1': 'google_analytics_link',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.conversions.v1beta.GoogleAnalyticsLink',
+      '8': {},
+      '9': 0,
+      '10': 'googleAnalyticsLink'
+    },
+    {
+      '1': 'merchant_center_destination',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.conversions.v1beta.MerchantCenterDestination',
+      '9': 0,
+      '10': 'merchantCenterDestination'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource.State', '8': {}, '10': 'state'},
-    {'1': 'expire_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
-    {'1': 'controller', '3': 7, '4': 1, '5': 14, '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource.Controller', '8': {}, '10': 'controller'},
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.conversions.v1beta.ConversionSource.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'expire_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
+    {
+      '1': 'controller',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.conversions.v1beta.ConversionSource.Controller',
+      '8': {},
+      '10': 'controller'
+    },
   ],
   '4': [ConversionSource_State$json, ConversionSource_Controller$json],
   '7': {},
@@ -76,9 +120,34 @@ final $typed_data.Uint8List conversionSourceDescriptor = $convert.base64Decode(
 const AttributionSettings$json = {
   '1': 'AttributionSettings',
   '2': [
-    {'1': 'attribution_lookback_window_days', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'attributionLookbackWindowDays'},
-    {'1': 'attribution_model', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.conversions.v1beta.AttributionSettings.AttributionModel', '8': {}, '10': 'attributionModel'},
-    {'1': 'conversion_type', '3': 3, '4': 3, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.AttributionSettings.ConversionType', '8': {}, '10': 'conversionType'},
+    {
+      '1': 'attribution_lookback_window_days',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'attributionLookbackWindowDays'
+    },
+    {
+      '1': 'attribution_model',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.conversions.v1beta.AttributionSettings.AttributionModel',
+      '8': {},
+      '10': 'attributionModel'
+    },
+    {
+      '1': 'conversion_type',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.conversions.v1beta.AttributionSettings.ConversionType',
+      '8': {},
+      '10': 'conversionType'
+    },
   ],
   '3': [AttributionSettings_ConversionType$json],
   '4': [AttributionSettings_AttributionModel$json],
@@ -129,7 +198,15 @@ const GoogleAnalyticsLink$json = {
   '1': 'GoogleAnalyticsLink',
   '2': [
     {'1': 'property_id', '3': 1, '4': 1, '5': 3, '8': {}, '10': 'propertyId'},
-    {'1': 'attribution_settings', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.AttributionSettings', '8': {}, '10': 'attributionSettings'},
+    {
+      '1': 'attribution_settings',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.conversions.v1beta.AttributionSettings',
+      '8': {},
+      '10': 'attributionSettings'
+    },
     {'1': 'property', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'property'},
   ],
 };
@@ -146,9 +223,24 @@ const MerchantCenterDestination$json = {
   '1': 'MerchantCenterDestination',
   '2': [
     {'1': 'destination', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'destination'},
-    {'1': 'attribution_settings', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.AttributionSettings', '8': {}, '10': 'attributionSettings'},
+    {
+      '1': 'attribution_settings',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.conversions.v1beta.AttributionSettings',
+      '8': {},
+      '10': 'attributionSettings'
+    },
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'currency_code', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'currencyCode'},
+    {
+      '1': 'currency_code',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'currencyCode'
+    },
   ],
 };
 
@@ -165,7 +257,15 @@ const CreateConversionSourceRequest$json = {
   '1': 'CreateConversionSourceRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'conversion_source', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource', '8': {}, '10': 'conversionSource'},
+    {
+      '1': 'conversion_source',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource',
+      '8': {},
+      '10': 'conversionSource'
+    },
   ],
 };
 
@@ -180,8 +280,24 @@ final $typed_data.Uint8List createConversionSourceRequestDescriptor = $convert.b
 const UpdateConversionSourceRequest$json = {
   '1': 'UpdateConversionSourceRequest',
   '2': [
-    {'1': 'conversion_source', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource', '8': {}, '10': 'conversionSource'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'conversion_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource',
+      '8': {},
+      '10': 'conversionSource'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -201,9 +317,10 @@ const DeleteConversionSourceRequest$json = {
 };
 
 /// Descriptor for `DeleteConversionSourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteConversionSourceRequestDescriptor = $convert.base64Decode(
-    'Ch1EZWxldGVDb252ZXJzaW9uU291cmNlUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK2'
-    '1lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL0NvbnZlcnNpb25Tb3VyY2VSBG5hbWU=');
+final $typed_data.Uint8List deleteConversionSourceRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1EZWxldGVDb252ZXJzaW9uU291cmNlUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK2'
+        '1lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL0NvbnZlcnNpb25Tb3VyY2VSBG5hbWU=');
 
 @$core.Deprecated('Use undeleteConversionSourceRequestDescriptor instead')
 const UndeleteConversionSourceRequest$json = {
@@ -214,9 +331,10 @@ const UndeleteConversionSourceRequest$json = {
 };
 
 /// Descriptor for `UndeleteConversionSourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List undeleteConversionSourceRequestDescriptor = $convert.base64Decode(
-    'Ch9VbmRlbGV0ZUNvbnZlcnNpb25Tb3VyY2VSZXF1ZXN0EkcKBG5hbWUYASABKAlCM+BBAvpBLQ'
-    'orbWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vQ29udmVyc2lvblNvdXJjZVIEbmFtZQ==');
+final $typed_data.Uint8List undeleteConversionSourceRequestDescriptor =
+    $convert.base64Decode(
+        'Ch9VbmRlbGV0ZUNvbnZlcnNpb25Tb3VyY2VSZXF1ZXN0EkcKBG5hbWUYASABKAlCM+BBAvpBLQ'
+        'orbWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vQ29udmVyc2lvblNvdXJjZVIEbmFtZQ==');
 
 @$core.Deprecated('Use getConversionSourceRequestDescriptor instead')
 const GetConversionSourceRequest$json = {
@@ -227,9 +345,10 @@ const GetConversionSourceRequest$json = {
 };
 
 /// Descriptor for `GetConversionSourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getConversionSourceRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRDb252ZXJzaW9uU291cmNlUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
-    'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0NvbnZlcnNpb25Tb3VyY2VSBG5hbWU=');
+final $typed_data.Uint8List getConversionSourceRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRDb252ZXJzaW9uU291cmNlUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
+        'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0NvbnZlcnNpb25Tb3VyY2VSBG5hbWU=');
 
 @$core.Deprecated('Use listConversionSourcesRequestDescriptor instead')
 const ListConversionSourcesRequest$json = {
@@ -253,7 +372,14 @@ final $typed_data.Uint8List listConversionSourcesRequestDescriptor = $convert.ba
 const ListConversionSourcesResponse$json = {
   '1': 'ListConversionSourcesResponse',
   '2': [
-    {'1': 'conversion_sources', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource', '10': 'conversionSources'},
+    {
+      '1': 'conversion_sources',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.conversions.v1beta.ConversionSource',
+      '10': 'conversionSources'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -264,4 +390,3 @@ final $typed_data.Uint8List listConversionSourcesResponseDescriptor = $convert.b
     'ADKAsyPS5nb29nbGUuc2hvcHBpbmcubWVyY2hhbnQuY29udmVyc2lvbnMudjFiZXRhLkNvbnZl'
     'cnNpb25Tb3VyY2VSEWNvbnZlcnNpb25Tb3VyY2VzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCV'
     'INbmV4dFBhZ2VUb2tlbg==');
-

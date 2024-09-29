@@ -18,7 +18,16 @@ const EmailPreferences$json = {
   '1': 'EmailPreferences',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'news_and_tips', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.EmailPreferences.OptInState', '8': {}, '10': 'newsAndTips'},
+    {
+      '1': 'news_and_tips',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.EmailPreferences.OptInState',
+      '8': {},
+      '10': 'newsAndTips'
+    },
   ],
   '4': [EmailPreferences_OptInState$json],
   '7': {},
@@ -54,16 +63,33 @@ const GetEmailPreferencesRequest$json = {
 };
 
 /// Descriptor for `GetEmailPreferencesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getEmailPreferencesRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRFbWFpbFByZWZlcmVuY2VzUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
-    'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0VtYWlsUHJlZmVyZW5jZXNSBG5hbWU=');
+final $typed_data.Uint8List getEmailPreferencesRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRFbWFpbFByZWZlcmVuY2VzUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
+        'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0VtYWlsUHJlZmVyZW5jZXNSBG5hbWU=');
 
 @$core.Deprecated('Use updateEmailPreferencesRequestDescriptor instead')
 const UpdateEmailPreferencesRequest$json = {
   '1': 'UpdateEmailPreferencesRequest',
   '2': [
-    {'1': 'email_preferences', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.EmailPreferences', '8': {}, '10': 'emailPreferences'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'email_preferences',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.EmailPreferences',
+      '8': {},
+      '10': 'emailPreferences'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -73,4 +99,3 @@ final $typed_data.Uint8List updateEmailPreferencesRequestDescriptor = $convert.b
     'EoCzI6Lmdvb2dsZS5zaG9wcGluZy5tZXJjaGFudC5hY2NvdW50cy52MWJldGEuRW1haWxQcmVm'
     'ZXJlbmNlc0ID4EECUhBlbWFpbFByZWZlcmVuY2VzEkAKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ2'
     '9vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNr');
-

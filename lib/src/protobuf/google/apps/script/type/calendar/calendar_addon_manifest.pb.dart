@@ -50,38 +50,60 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
     return $result;
   }
   CalendarAddOnManifest._() : super();
-  factory CalendarAddOnManifest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CalendarAddOnManifest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CalendarAddOnManifest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CalendarAddOnManifest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CalendarAddOnManifest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.calendar'), createEmptyInstance: create)
-    ..pc<ConferenceSolution>(3, _omitFieldNames ? '' : 'conferenceSolution', $pb.PbFieldType.PM, subBuilder: ConferenceSolution.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CalendarAddOnManifest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type.calendar'),
+      createEmptyInstance: create)
+    ..pc<ConferenceSolution>(
+        3, _omitFieldNames ? '' : 'conferenceSolution', $pb.PbFieldType.PM,
+        subBuilder: ConferenceSolution.create)
     ..aOS(5, _omitFieldNames ? '' : 'createSettingsUrlFunction')
-    ..aOM<$396.HomepageExtensionPoint>(6, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $396.HomepageExtensionPoint.create)
-    ..aOM<CalendarExtensionPoint>(10, _omitFieldNames ? '' : 'eventOpenTrigger', subBuilder: CalendarExtensionPoint.create)
-    ..aOM<CalendarExtensionPoint>(11, _omitFieldNames ? '' : 'eventUpdateTrigger', subBuilder: CalendarExtensionPoint.create)
-    ..e<CalendarAddOnManifest_EventAccess>(12, _omitFieldNames ? '' : 'currentEventAccess', $pb.PbFieldType.OE, defaultOrMaker: CalendarAddOnManifest_EventAccess.UNSPECIFIED, valueOf: CalendarAddOnManifest_EventAccess.valueOf, enumValues: CalendarAddOnManifest_EventAccess.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$396.HomepageExtensionPoint>(
+        6, _omitFieldNames ? '' : 'homepageTrigger',
+        subBuilder: $396.HomepageExtensionPoint.create)
+    ..aOM<CalendarExtensionPoint>(10, _omitFieldNames ? '' : 'eventOpenTrigger',
+        subBuilder: CalendarExtensionPoint.create)
+    ..aOM<CalendarExtensionPoint>(
+        11, _omitFieldNames ? '' : 'eventUpdateTrigger',
+        subBuilder: CalendarExtensionPoint.create)
+    ..e<CalendarAddOnManifest_EventAccess>(
+        12, _omitFieldNames ? '' : 'currentEventAccess', $pb.PbFieldType.OE,
+        defaultOrMaker: CalendarAddOnManifest_EventAccess.UNSPECIFIED,
+        valueOf: CalendarAddOnManifest_EventAccess.valueOf,
+        enumValues: CalendarAddOnManifest_EventAccess.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CalendarAddOnManifest clone() => CalendarAddOnManifest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CalendarAddOnManifest copyWith(void Function(CalendarAddOnManifest) updates) => super.copyWith((message) => updates(message as CalendarAddOnManifest)) as CalendarAddOnManifest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CalendarAddOnManifest clone() =>
+      CalendarAddOnManifest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CalendarAddOnManifest copyWith(
+          void Function(CalendarAddOnManifest) updates) =>
+      super.copyWith((message) => updates(message as CalendarAddOnManifest))
+          as CalendarAddOnManifest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CalendarAddOnManifest create() => CalendarAddOnManifest._();
   CalendarAddOnManifest createEmptyInstance() => create();
-  static $pb.PbList<CalendarAddOnManifest> createRepeated() => $pb.PbList<CalendarAddOnManifest>();
+  static $pb.PbList<CalendarAddOnManifest> createRepeated() =>
+      $pb.PbList<CalendarAddOnManifest>();
   @$core.pragma('dart2js:noInline')
-  static CalendarAddOnManifest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CalendarAddOnManifest>(create);
+  static CalendarAddOnManifest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CalendarAddOnManifest>(create);
   static CalendarAddOnManifest? _defaultInstance;
 
   /// Defines conference solutions provided by this add-on.
@@ -92,7 +114,10 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get createSettingsUrlFunction => $_getSZ(1);
   @$pb.TagNumber(5)
-  set createSettingsUrlFunction($core.String v) { $_setString(1, v); }
+  set createSettingsUrlFunction($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCreateSettingsUrlFunction() => $_has(1);
   @$pb.TagNumber(5)
@@ -108,7 +133,10 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $396.HomepageExtensionPoint get homepageTrigger => $_getN(2);
   @$pb.TagNumber(6)
-  set homepageTrigger($396.HomepageExtensionPoint v) { setField(6, v); }
+  set homepageTrigger($396.HomepageExtensionPoint v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasHomepageTrigger() => $_has(2);
   @$pb.TagNumber(6)
@@ -120,7 +148,10 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   CalendarExtensionPoint get eventOpenTrigger => $_getN(3);
   @$pb.TagNumber(10)
-  set eventOpenTrigger(CalendarExtensionPoint v) { setField(10, v); }
+  set eventOpenTrigger(CalendarExtensionPoint v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasEventOpenTrigger() => $_has(3);
   @$pb.TagNumber(10)
@@ -132,7 +163,10 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   CalendarExtensionPoint get eventUpdateTrigger => $_getN(4);
   @$pb.TagNumber(11)
-  set eventUpdateTrigger(CalendarExtensionPoint v) { setField(11, v); }
+  set eventUpdateTrigger(CalendarExtensionPoint v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasEventUpdateTrigger() => $_has(4);
   @$pb.TagNumber(11)
@@ -144,7 +178,10 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   CalendarAddOnManifest_EventAccess get currentEventAccess => $_getN(5);
   @$pb.TagNumber(12)
-  set currentEventAccess(CalendarAddOnManifest_EventAccess v) { setField(12, v); }
+  set currentEventAccess(CalendarAddOnManifest_EventAccess v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasCurrentEventAccess() => $_has(5);
   @$pb.TagNumber(12)
@@ -175,43 +212,55 @@ class ConferenceSolution extends $pb.GeneratedMessage {
     return $result;
   }
   ConferenceSolution._() : super();
-  factory ConferenceSolution.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConferenceSolution.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConferenceSolution.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConferenceSolution.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConferenceSolution', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.calendar'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConferenceSolution',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type.calendar'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'onCreateFunction')
     ..aOS(4, _omitFieldNames ? '' : 'id')
     ..aOS(5, _omitFieldNames ? '' : 'name')
     ..aOS(6, _omitFieldNames ? '' : 'logoUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ConferenceSolution clone() => ConferenceSolution()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConferenceSolution copyWith(void Function(ConferenceSolution) updates) => super.copyWith((message) => updates(message as ConferenceSolution)) as ConferenceSolution;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConferenceSolution copyWith(void Function(ConferenceSolution) updates) =>
+      super.copyWith((message) => updates(message as ConferenceSolution))
+          as ConferenceSolution;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ConferenceSolution create() => ConferenceSolution._();
   ConferenceSolution createEmptyInstance() => create();
-  static $pb.PbList<ConferenceSolution> createRepeated() => $pb.PbList<ConferenceSolution>();
+  static $pb.PbList<ConferenceSolution> createRepeated() =>
+      $pb.PbList<ConferenceSolution>();
   @$core.pragma('dart2js:noInline')
-  static ConferenceSolution getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConferenceSolution>(create);
+  static ConferenceSolution getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConferenceSolution>(create);
   static ConferenceSolution? _defaultInstance;
 
   /// Required. The endpoint to call when ConferenceData should be created.
   @$pb.TagNumber(1)
   $core.String get onCreateFunction => $_getSZ(0);
   @$pb.TagNumber(1)
-  set onCreateFunction($core.String v) { $_setString(0, v); }
+  set onCreateFunction($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOnCreateFunction() => $_has(0);
   @$pb.TagNumber(1)
@@ -225,7 +274,10 @@ class ConferenceSolution extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(4)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(4)
@@ -235,7 +287,10 @@ class ConferenceSolution extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(5)
-  set name($core.String v) { $_setString(2, v); }
+  set name($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(5)
@@ -245,7 +300,10 @@ class ConferenceSolution extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get logoUrl => $_getSZ(3);
   @$pb.TagNumber(6)
-  set logoUrl($core.String v) { $_setString(3, v); }
+  set logoUrl($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLogoUrl() => $_has(3);
   @$pb.TagNumber(6)
@@ -264,33 +322,44 @@ class CalendarExtensionPoint extends $pb.GeneratedMessage {
     return $result;
   }
   CalendarExtensionPoint._() : super();
-  factory CalendarExtensionPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CalendarExtensionPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CalendarExtensionPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CalendarExtensionPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CalendarExtensionPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.calendar'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CalendarExtensionPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type.calendar'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'runFunction')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CalendarExtensionPoint clone() => CalendarExtensionPoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CalendarExtensionPoint copyWith(void Function(CalendarExtensionPoint) updates) => super.copyWith((message) => updates(message as CalendarExtensionPoint)) as CalendarExtensionPoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CalendarExtensionPoint clone() =>
+      CalendarExtensionPoint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CalendarExtensionPoint copyWith(
+          void Function(CalendarExtensionPoint) updates) =>
+      super.copyWith((message) => updates(message as CalendarExtensionPoint))
+          as CalendarExtensionPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CalendarExtensionPoint create() => CalendarExtensionPoint._();
   CalendarExtensionPoint createEmptyInstance() => create();
-  static $pb.PbList<CalendarExtensionPoint> createRepeated() => $pb.PbList<CalendarExtensionPoint>();
+  static $pb.PbList<CalendarExtensionPoint> createRepeated() =>
+      $pb.PbList<CalendarExtensionPoint>();
   @$core.pragma('dart2js:noInline')
-  static CalendarExtensionPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CalendarExtensionPoint>(create);
+  static CalendarExtensionPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CalendarExtensionPoint>(create);
   static CalendarExtensionPoint? _defaultInstance;
 
   /// Required. The endpoint to execute when this extension point is
@@ -298,13 +367,16 @@ class CalendarExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get runFunction => $_getSZ(0);
   @$pb.TagNumber(1)
-  set runFunction($core.String v) { $_setString(0, v); }
+  set runFunction($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRunFunction() => $_has(0);
   @$pb.TagNumber(1)
   void clearRunFunction() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

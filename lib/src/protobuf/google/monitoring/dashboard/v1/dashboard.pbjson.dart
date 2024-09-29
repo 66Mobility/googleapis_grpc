@@ -20,12 +20,58 @@ const Dashboard$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'etag', '3': 4, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'grid_layout', '3': 5, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.GridLayout', '9': 0, '10': 'gridLayout'},
-    {'1': 'mosaic_layout', '3': 6, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.MosaicLayout', '9': 0, '10': 'mosaicLayout'},
-    {'1': 'row_layout', '3': 8, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.RowLayout', '9': 0, '10': 'rowLayout'},
-    {'1': 'column_layout', '3': 9, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.ColumnLayout', '9': 0, '10': 'columnLayout'},
-    {'1': 'dashboard_filters', '3': 11, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.DashboardFilter', '10': 'dashboardFilters'},
-    {'1': 'labels', '3': 12, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.Dashboard.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'grid_layout',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.GridLayout',
+      '9': 0,
+      '10': 'gridLayout'
+    },
+    {
+      '1': 'mosaic_layout',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.MosaicLayout',
+      '9': 0,
+      '10': 'mosaicLayout'
+    },
+    {
+      '1': 'row_layout',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.RowLayout',
+      '9': 0,
+      '10': 'rowLayout'
+    },
+    {
+      '1': 'column_layout',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.ColumnLayout',
+      '9': 0,
+      '10': 'columnLayout'
+    },
+    {
+      '1': 'dashboard_filters',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.DashboardFilter',
+      '10': 'dashboardFilters'
+    },
+    {
+      '1': 'labels',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Dashboard.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [Dashboard_LabelsEntry$json],
   '7': {},
@@ -60,4 +106,3 @@ final $typed_data.Uint8List dashboardDescriptor = $convert.base64Decode(
     'AKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAE6U+pBUAojbW9uaXRv'
     'cmluZy5nb29nbGVhcGlzLmNvbS9EYXNoYm9hcmQSKXByb2plY3RzL3twcm9qZWN0fS9kYXNoYm'
     '9hcmRzL3tkYXNoYm9hcmR9QggKBmxheW91dA==');
-

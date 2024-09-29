@@ -19,8 +19,22 @@ const Collection$json = {
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '10': 'subtitle'},
-    {'1': 'items', '3': 3, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.conversation.Collection.CollectionItem', '10': 'items'},
-    {'1': 'image_fill', '3': 4, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.conversation.Image.ImageFill', '10': 'imageFill'},
+    {
+      '1': 'items',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Collection.CollectionItem',
+      '10': 'items'
+    },
+    {
+      '1': 'image_fill',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.conversation.Image.ImageFill',
+      '10': 'imageFill'
+    },
   ],
   '3': [Collection_CollectionItem$json],
 };
@@ -40,4 +54,3 @@ final $typed_data.Uint8List collectionDescriptor = $convert.base64Decode(
     'aW9uLkNvbGxlY3Rpb24uQ29sbGVjdGlvbkl0ZW1SBWl0ZW1zElIKCmltYWdlX2ZpbGwYBCABKA'
     '4yMy5nb29nbGUuYWN0aW9ucy5zZGsudjIuY29udmVyc2F0aW9uLkltYWdlLkltYWdlRmlsbFIJ'
     'aW1hZ2VGaWxsGiIKDkNvbGxlY3Rpb25JdGVtEhAKA2tleRgBIAEoCVIDa2V5');
-

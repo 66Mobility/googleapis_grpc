@@ -18,7 +18,15 @@ const CreateSnoozeRequest$json = {
   '1': 'CreateSnoozeRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'snooze', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.v3.Snooze', '8': {}, '10': 'snooze'},
+    {
+      '1': 'snooze',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.Snooze',
+      '8': {},
+      '10': 'snooze'
+    },
   ],
 };
 
@@ -50,7 +58,14 @@ final $typed_data.Uint8List listSnoozesRequestDescriptor = $convert.base64Decode
 const ListSnoozesResponse$json = {
   '1': 'ListSnoozesResponse',
   '2': [
-    {'1': 'snoozes', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.v3.Snooze', '10': 'snoozes'},
+    {
+      '1': 'snoozes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.Snooze',
+      '10': 'snoozes'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -78,8 +93,24 @@ final $typed_data.Uint8List getSnoozeRequestDescriptor = $convert.base64Decode(
 const UpdateSnoozeRequest$json = {
   '1': 'UpdateSnoozeRequest',
   '2': [
-    {'1': 'snooze', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.v3.Snooze', '8': {}, '10': 'snooze'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'snooze',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.v3.Snooze',
+      '8': {},
+      '10': 'snooze'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -88,4 +119,3 @@ final $typed_data.Uint8List updateSnoozeRequestDescriptor = $convert.base64Decod
     'ChNVcGRhdGVTbm9vemVSZXF1ZXN0EjkKBnNub296ZRgBIAEoCzIcLmdvb2dsZS5tb25pdG9yaW'
     '5nLnYzLlNub296ZUID4EECUgZzbm9vemUSQAoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUu'
     'cHJvdG9idWYuRmllbGRNYXNrQgPgQQJSCnVwZGF0ZU1hc2s=');
-

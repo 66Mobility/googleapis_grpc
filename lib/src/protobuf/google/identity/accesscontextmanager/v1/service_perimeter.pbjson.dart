@@ -20,12 +20,54 @@ const ServicePerimeter$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'perimeter_type', '3': 6, '4': 1, '5': 14, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeter.PerimeterType', '10': 'perimeterType'},
-    {'1': 'status', '3': 7, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig', '10': 'status'},
-    {'1': 'spec', '3': 8, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig', '10': 'spec'},
-    {'1': 'use_explicit_dry_run_spec', '3': 9, '4': 1, '5': 8, '10': 'useExplicitDryRunSpec'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'perimeter_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeter.PerimeterType',
+      '10': 'perimeterType'
+    },
+    {
+      '1': 'status',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig',
+      '10': 'status'
+    },
+    {
+      '1': 'spec',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig',
+      '10': 'spec'
+    },
+    {
+      '1': 'use_explicit_dry_run_spec',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '10': 'useExplicitDryRunSpec'
+    },
   ],
   '4': [ServicePerimeter_PerimeterType$json],
   '7': {},
@@ -63,12 +105,53 @@ const ServicePerimeterConfig$json = {
   '2': [
     {'1': 'resources', '3': 1, '4': 3, '5': 9, '10': 'resources'},
     {'1': 'access_levels', '3': 2, '4': 3, '5': 9, '10': 'accessLevels'},
-    {'1': 'restricted_services', '3': 4, '4': 3, '5': 9, '10': 'restrictedServices'},
-    {'1': 'vpc_accessible_services', '3': 10, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.VpcAccessibleServices', '10': 'vpcAccessibleServices'},
-    {'1': 'ingress_policies', '3': 8, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressPolicy', '10': 'ingressPolicies'},
-    {'1': 'egress_policies', '3': 9, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.EgressPolicy', '10': 'egressPolicies'},
+    {
+      '1': 'restricted_services',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'restrictedServices'
+    },
+    {
+      '1': 'vpc_accessible_services',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.VpcAccessibleServices',
+      '10': 'vpcAccessibleServices'
+    },
+    {
+      '1': 'ingress_policies',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressPolicy',
+      '10': 'ingressPolicies'
+    },
+    {
+      '1': 'egress_policies',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.EgressPolicy',
+      '10': 'egressPolicies'
+    },
   ],
-  '3': [ServicePerimeterConfig_VpcAccessibleServices$json, ServicePerimeterConfig_MethodSelector$json, ServicePerimeterConfig_ApiOperation$json, ServicePerimeterConfig_IngressSource$json, ServicePerimeterConfig_IngressFrom$json, ServicePerimeterConfig_IngressTo$json, ServicePerimeterConfig_IngressPolicy$json, ServicePerimeterConfig_EgressFrom$json, ServicePerimeterConfig_EgressTo$json, ServicePerimeterConfig_EgressPolicy$json],
+  '3': [
+    ServicePerimeterConfig_VpcAccessibleServices$json,
+    ServicePerimeterConfig_MethodSelector$json,
+    ServicePerimeterConfig_ApiOperation$json,
+    ServicePerimeterConfig_IngressSource$json,
+    ServicePerimeterConfig_IngressFrom$json,
+    ServicePerimeterConfig_IngressTo$json,
+    ServicePerimeterConfig_IngressPolicy$json,
+    ServicePerimeterConfig_EgressFrom$json,
+    ServicePerimeterConfig_EgressTo$json,
+    ServicePerimeterConfig_EgressPolicy$json
+  ],
   '4': [ServicePerimeterConfig_IdentityType$json],
 };
 
@@ -76,7 +159,13 @@ const ServicePerimeterConfig$json = {
 const ServicePerimeterConfig_VpcAccessibleServices$json = {
   '1': 'VpcAccessibleServices',
   '2': [
-    {'1': 'enable_restriction', '3': 1, '4': 1, '5': 8, '10': 'enableRestriction'},
+    {
+      '1': 'enable_restriction',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enableRestriction'
+    },
     {'1': 'allowed_services', '3': 2, '4': 3, '5': 9, '10': 'allowedServices'},
   ],
 };
@@ -98,7 +187,15 @@ const ServicePerimeterConfig_ApiOperation$json = {
   '1': 'ApiOperation',
   '2': [
     {'1': 'service_name', '3': 1, '4': 1, '5': 9, '10': 'serviceName'},
-    {'1': 'method_selectors', '3': 2, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.MethodSelector', '10': 'methodSelectors'},
+    {
+      '1': 'method_selectors',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.MethodSelector',
+      '10': 'methodSelectors'
+    },
   ],
 };
 
@@ -118,9 +215,25 @@ const ServicePerimeterConfig_IngressSource$json = {
 const ServicePerimeterConfig_IngressFrom$json = {
   '1': 'IngressFrom',
   '2': [
-    {'1': 'sources', '3': 1, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressSource', '10': 'sources'},
+    {
+      '1': 'sources',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressSource',
+      '10': 'sources'
+    },
     {'1': 'identities', '3': 2, '4': 3, '5': 9, '10': 'identities'},
-    {'1': 'identity_type', '3': 3, '4': 1, '5': 14, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IdentityType', '10': 'identityType'},
+    {
+      '1': 'identity_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IdentityType',
+      '10': 'identityType'
+    },
   ],
 };
 
@@ -128,7 +241,15 @@ const ServicePerimeterConfig_IngressFrom$json = {
 const ServicePerimeterConfig_IngressTo$json = {
   '1': 'IngressTo',
   '2': [
-    {'1': 'operations', '3': 1, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.ApiOperation', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.ApiOperation',
+      '10': 'operations'
+    },
     {'1': 'resources', '3': 2, '4': 3, '5': 9, '10': 'resources'},
   ],
 };
@@ -137,8 +258,24 @@ const ServicePerimeterConfig_IngressTo$json = {
 const ServicePerimeterConfig_IngressPolicy$json = {
   '1': 'IngressPolicy',
   '2': [
-    {'1': 'ingress_from', '3': 1, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressFrom', '10': 'ingressFrom'},
-    {'1': 'ingress_to', '3': 2, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressTo', '10': 'ingressTo'},
+    {
+      '1': 'ingress_from',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressFrom',
+      '10': 'ingressFrom'
+    },
+    {
+      '1': 'ingress_to',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IngressTo',
+      '10': 'ingressTo'
+    },
   ],
 };
 
@@ -147,7 +284,15 @@ const ServicePerimeterConfig_EgressFrom$json = {
   '1': 'EgressFrom',
   '2': [
     {'1': 'identities', '3': 1, '4': 3, '5': 9, '10': 'identities'},
-    {'1': 'identity_type', '3': 2, '4': 1, '5': 14, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IdentityType', '10': 'identityType'},
+    {
+      '1': 'identity_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.IdentityType',
+      '10': 'identityType'
+    },
   ],
 };
 
@@ -156,8 +301,22 @@ const ServicePerimeterConfig_EgressTo$json = {
   '1': 'EgressTo',
   '2': [
     {'1': 'resources', '3': 1, '4': 3, '5': 9, '10': 'resources'},
-    {'1': 'operations', '3': 2, '4': 3, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.ApiOperation', '10': 'operations'},
-    {'1': 'external_resources', '3': 3, '4': 3, '5': 9, '10': 'externalResources'},
+    {
+      '1': 'operations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.ApiOperation',
+      '10': 'operations'
+    },
+    {
+      '1': 'external_resources',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'externalResources'
+    },
   ],
 };
 
@@ -165,8 +324,24 @@ const ServicePerimeterConfig_EgressTo$json = {
 const ServicePerimeterConfig_EgressPolicy$json = {
   '1': 'EgressPolicy',
   '2': [
-    {'1': 'egress_from', '3': 1, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.EgressFrom', '10': 'egressFrom'},
-    {'1': 'egress_to', '3': 2, '4': 1, '5': 11, '6': '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.EgressTo', '10': 'egressTo'},
+    {
+      '1': 'egress_from',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.EgressFrom',
+      '10': 'egressFrom'
+    },
+    {
+      '1': 'egress_to',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.identity.accesscontextmanager.v1.ServicePerimeterConfig.EgressTo',
+      '10': 'egressTo'
+    },
   ],
 };
 
@@ -226,4 +401,3 @@ final $typed_data.Uint8List servicePerimeterConfigDescriptor = $convert.base64De
     'b25maWcuRWdyZXNzVG9SCGVncmVzc1RvIm4KDElkZW50aXR5VHlwZRIdChlJREVOVElUWV9UWV'
     'BFX1VOU1BFQ0lGSUVEEAASEAoMQU5ZX0lERU5USVRZEAESFAoQQU5ZX1VTRVJfQUNDT1VOVBAC'
     'EhcKE0FOWV9TRVJWSUNFX0FDQ09VTlQQAw==');
-

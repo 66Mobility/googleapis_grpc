@@ -18,16 +18,90 @@ const LfpStore$json = {
   '1': 'LfpStore',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'target_account', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'targetAccount'},
+    {
+      '1': 'target_account',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'targetAccount'
+    },
     {'1': 'store_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'storeCode'},
-    {'1': 'store_address', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'storeAddress'},
-    {'1': 'store_name', '3': 5, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'storeName', '17': true},
-    {'1': 'phone_number', '3': 6, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'phoneNumber', '17': true},
-    {'1': 'website_uri', '3': 7, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'websiteUri', '17': true},
-    {'1': 'gcid_category', '3': 8, '4': 3, '5': 9, '8': {}, '10': 'gcidCategory'},
-    {'1': 'place_id', '3': 9, '4': 1, '5': 9, '8': {}, '9': 3, '10': 'placeId', '17': true},
-    {'1': 'matching_state', '3': 10, '4': 1, '5': 14, '6': '.google.shopping.merchant.lfp.v1beta.LfpStore.StoreMatchingState', '8': {}, '10': 'matchingState'},
-    {'1': 'matching_state_hint', '3': 11, '4': 1, '5': 9, '8': {}, '9': 4, '10': 'matchingStateHint', '17': true},
+    {
+      '1': 'store_address',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'storeAddress'
+    },
+    {
+      '1': 'store_name',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'storeName',
+      '17': true
+    },
+    {
+      '1': 'phone_number',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'phoneNumber',
+      '17': true
+    },
+    {
+      '1': 'website_uri',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'websiteUri',
+      '17': true
+    },
+    {
+      '1': 'gcid_category',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'gcidCategory'
+    },
+    {
+      '1': 'place_id',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 3,
+      '10': 'placeId',
+      '17': true
+    },
+    {
+      '1': 'matching_state',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.lfp.v1beta.LfpStore.StoreMatchingState',
+      '8': {},
+      '10': 'matchingState'
+    },
+    {
+      '1': 'matching_state_hint',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 4,
+      '10': 'matchingStateHint',
+      '17': true
+    },
   ],
   '4': [LfpStore_StoreMatchingState$json],
   '7': {},
@@ -87,7 +161,15 @@ const InsertLfpStoreRequest$json = {
   '1': 'InsertLfpStoreRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'lfp_store', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.lfp.v1beta.LfpStore', '8': {}, '10': 'lfpStore'},
+    {
+      '1': 'lfp_store',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.lfp.v1beta.LfpStore',
+      '8': {},
+      '10': 'lfpStore'
+    },
   ],
 };
 
@@ -116,7 +198,14 @@ const ListLfpStoresRequest$json = {
   '1': 'ListLfpStoresRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'target_account', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'targetAccount'},
+    {
+      '1': 'target_account',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'targetAccount'
+    },
     {'1': 'page_size', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
   ],
@@ -133,7 +222,14 @@ final $typed_data.Uint8List listLfpStoresRequestDescriptor = $convert.base64Deco
 const ListLfpStoresResponse$json = {
   '1': 'ListLfpStoresResponse',
   '2': [
-    {'1': 'lfp_stores', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.lfp.v1beta.LfpStore', '10': 'lfpStores'},
+    {
+      '1': 'lfp_stores',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.lfp.v1beta.LfpStore',
+      '10': 'lfpStores'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -143,4 +239,3 @@ final $typed_data.Uint8List listLfpStoresResponseDescriptor = $convert.base64Dec
     'ChVMaXN0TGZwU3RvcmVzUmVzcG9uc2USTAoKbGZwX3N0b3JlcxgBIAMoCzItLmdvb2dsZS5zaG'
     '9wcGluZy5tZXJjaGFudC5sZnAudjFiZXRhLkxmcFN0b3JlUglsZnBTdG9yZXMSJgoPbmV4dF9w'
     'YWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
-

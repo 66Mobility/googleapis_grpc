@@ -62,40 +62,55 @@ class RegionalInventory extends $pb.GeneratedMessage {
     return $result;
   }
   RegionalInventory._() : super();
-  factory RegionalInventory.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RegionalInventory.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RegionalInventory.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RegionalInventory.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegionalInventory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.inventories.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RegionalInventory',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.inventories.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
     ..aOS(3, _omitFieldNames ? '' : 'region')
-    ..aOM<$536.Price>(4, _omitFieldNames ? '' : 'price', subBuilder: $536.Price.create)
-    ..aOM<$536.Price>(5, _omitFieldNames ? '' : 'salePrice', subBuilder: $536.Price.create)
-    ..aOM<$511.Interval>(6, _omitFieldNames ? '' : 'salePriceEffectiveDate', subBuilder: $511.Interval.create)
+    ..aOM<$536.Price>(4, _omitFieldNames ? '' : 'price',
+        subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(5, _omitFieldNames ? '' : 'salePrice',
+        subBuilder: $536.Price.create)
+    ..aOM<$511.Interval>(6, _omitFieldNames ? '' : 'salePriceEffectiveDate',
+        subBuilder: $511.Interval.create)
     ..aOS(7, _omitFieldNames ? '' : 'availability')
-    ..pc<$536.CustomAttribute>(8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $536.CustomAttribute.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$536.CustomAttribute>(
+        8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
+        subBuilder: $536.CustomAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RegionalInventory clone() => RegionalInventory()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RegionalInventory copyWith(void Function(RegionalInventory) updates) => super.copyWith((message) => updates(message as RegionalInventory)) as RegionalInventory;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RegionalInventory copyWith(void Function(RegionalInventory) updates) =>
+      super.copyWith((message) => updates(message as RegionalInventory))
+          as RegionalInventory;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RegionalInventory create() => RegionalInventory._();
   RegionalInventory createEmptyInstance() => create();
-  static $pb.PbList<RegionalInventory> createRepeated() => $pb.PbList<RegionalInventory>();
+  static $pb.PbList<RegionalInventory> createRepeated() =>
+      $pb.PbList<RegionalInventory>();
   @$core.pragma('dart2js:noInline')
-  static RegionalInventory getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegionalInventory>(create);
+  static RegionalInventory getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RegionalInventory>(create);
   static RegionalInventory? _defaultInstance;
 
   /// Output only. The name of the `RegionalInventory` resource.
@@ -104,7 +119,10 @@ class RegionalInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -115,7 +133,10 @@ class RegionalInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get account => $_getI64(1);
   @$pb.TagNumber(2)
-  set account($fixnum.Int64 v) { $_setInt64(1, v); }
+  set account($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAccount() => $_has(1);
   @$pb.TagNumber(2)
@@ -128,7 +149,10 @@ class RegionalInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get region => $_getSZ(2);
   @$pb.TagNumber(3)
-  set region($core.String v) { $_setString(2, v); }
+  set region($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRegion() => $_has(2);
   @$pb.TagNumber(3)
@@ -138,7 +162,10 @@ class RegionalInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $536.Price get price => $_getN(3);
   @$pb.TagNumber(4)
-  set price($536.Price v) { setField(4, v); }
+  set price($536.Price v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPrice() => $_has(3);
   @$pb.TagNumber(4)
@@ -152,7 +179,10 @@ class RegionalInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $536.Price get salePrice => $_getN(4);
   @$pb.TagNumber(5)
-  set salePrice($536.Price v) { setField(5, v); }
+  set salePrice($536.Price v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSalePrice() => $_has(4);
   @$pb.TagNumber(5)
@@ -165,7 +195,10 @@ class RegionalInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $511.Interval get salePriceEffectiveDate => $_getN(5);
   @$pb.TagNumber(6)
-  set salePriceEffectiveDate($511.Interval v) { setField(6, v); }
+  set salePriceEffectiveDate($511.Interval v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSalePriceEffectiveDate() => $_has(5);
   @$pb.TagNumber(6)
@@ -179,7 +212,10 @@ class RegionalInventory extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get availability => $_getSZ(6);
   @$pb.TagNumber(7)
-  set availability($core.String v) { $_setString(6, v); }
+  set availability($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasAvailability() => $_has(6);
   @$pb.TagNumber(7)
@@ -212,35 +248,49 @@ class ListRegionalInventoriesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListRegionalInventoriesRequest._() : super();
-  factory ListRegionalInventoriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListRegionalInventoriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListRegionalInventoriesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListRegionalInventoriesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRegionalInventoriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.inventories.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListRegionalInventoriesRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.inventories.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListRegionalInventoriesRequest clone() => ListRegionalInventoriesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListRegionalInventoriesRequest copyWith(void Function(ListRegionalInventoriesRequest) updates) => super.copyWith((message) => updates(message as ListRegionalInventoriesRequest)) as ListRegionalInventoriesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListRegionalInventoriesRequest clone() =>
+      ListRegionalInventoriesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListRegionalInventoriesRequest copyWith(
+          void Function(ListRegionalInventoriesRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListRegionalInventoriesRequest))
+          as ListRegionalInventoriesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListRegionalInventoriesRequest create() => ListRegionalInventoriesRequest._();
+  static ListRegionalInventoriesRequest create() =>
+      ListRegionalInventoriesRequest._();
   ListRegionalInventoriesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListRegionalInventoriesRequest> createRepeated() => $pb.PbList<ListRegionalInventoriesRequest>();
+  static $pb.PbList<ListRegionalInventoriesRequest> createRepeated() =>
+      $pb.PbList<ListRegionalInventoriesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListRegionalInventoriesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListRegionalInventoriesRequest>(create);
+  static ListRegionalInventoriesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListRegionalInventoriesRequest>(create);
   static ListRegionalInventoriesRequest? _defaultInstance;
 
   /// Required. The `name` of the parent product to list `RegionalInventory`
@@ -248,7 +298,10 @@ class ListRegionalInventoriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -262,7 +315,10 @@ class ListRegionalInventoriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -278,7 +334,10 @@ class ListRegionalInventoriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -301,34 +360,51 @@ class ListRegionalInventoriesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListRegionalInventoriesResponse._() : super();
-  factory ListRegionalInventoriesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListRegionalInventoriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListRegionalInventoriesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListRegionalInventoriesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRegionalInventoriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.inventories.v1beta'), createEmptyInstance: create)
-    ..pc<RegionalInventory>(1, _omitFieldNames ? '' : 'regionalInventories', $pb.PbFieldType.PM, subBuilder: RegionalInventory.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListRegionalInventoriesResponse',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.inventories.v1beta'),
+      createEmptyInstance: create)
+    ..pc<RegionalInventory>(
+        1, _omitFieldNames ? '' : 'regionalInventories', $pb.PbFieldType.PM,
+        subBuilder: RegionalInventory.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListRegionalInventoriesResponse clone() => ListRegionalInventoriesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListRegionalInventoriesResponse copyWith(void Function(ListRegionalInventoriesResponse) updates) => super.copyWith((message) => updates(message as ListRegionalInventoriesResponse)) as ListRegionalInventoriesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListRegionalInventoriesResponse clone() =>
+      ListRegionalInventoriesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListRegionalInventoriesResponse copyWith(
+          void Function(ListRegionalInventoriesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListRegionalInventoriesResponse))
+          as ListRegionalInventoriesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListRegionalInventoriesResponse create() => ListRegionalInventoriesResponse._();
+  static ListRegionalInventoriesResponse create() =>
+      ListRegionalInventoriesResponse._();
   ListRegionalInventoriesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListRegionalInventoriesResponse> createRepeated() => $pb.PbList<ListRegionalInventoriesResponse>();
+  static $pb.PbList<ListRegionalInventoriesResponse> createRepeated() =>
+      $pb.PbList<ListRegionalInventoriesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListRegionalInventoriesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListRegionalInventoriesResponse>(create);
+  static ListRegionalInventoriesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListRegionalInventoriesResponse>(
+          create);
   static ListRegionalInventoriesResponse? _defaultInstance;
 
   /// The `RegionalInventory` resources for the given product from the specified
@@ -341,7 +417,10 @@ class ListRegionalInventoriesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -364,34 +443,49 @@ class InsertRegionalInventoryRequest extends $pb.GeneratedMessage {
     return $result;
   }
   InsertRegionalInventoryRequest._() : super();
-  factory InsertRegionalInventoryRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InsertRegionalInventoryRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InsertRegionalInventoryRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InsertRegionalInventoryRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertRegionalInventoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.inventories.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InsertRegionalInventoryRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.inventories.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<RegionalInventory>(2, _omitFieldNames ? '' : 'regionalInventory', subBuilder: RegionalInventory.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<RegionalInventory>(2, _omitFieldNames ? '' : 'regionalInventory',
+        subBuilder: RegionalInventory.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InsertRegionalInventoryRequest clone() => InsertRegionalInventoryRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InsertRegionalInventoryRequest copyWith(void Function(InsertRegionalInventoryRequest) updates) => super.copyWith((message) => updates(message as InsertRegionalInventoryRequest)) as InsertRegionalInventoryRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InsertRegionalInventoryRequest clone() =>
+      InsertRegionalInventoryRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InsertRegionalInventoryRequest copyWith(
+          void Function(InsertRegionalInventoryRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as InsertRegionalInventoryRequest))
+          as InsertRegionalInventoryRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static InsertRegionalInventoryRequest create() => InsertRegionalInventoryRequest._();
+  static InsertRegionalInventoryRequest create() =>
+      InsertRegionalInventoryRequest._();
   InsertRegionalInventoryRequest createEmptyInstance() => create();
-  static $pb.PbList<InsertRegionalInventoryRequest> createRepeated() => $pb.PbList<InsertRegionalInventoryRequest>();
+  static $pb.PbList<InsertRegionalInventoryRequest> createRepeated() =>
+      $pb.PbList<InsertRegionalInventoryRequest>();
   @$core.pragma('dart2js:noInline')
-  static InsertRegionalInventoryRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InsertRegionalInventoryRequest>(create);
+  static InsertRegionalInventoryRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InsertRegionalInventoryRequest>(create);
   static InsertRegionalInventoryRequest? _defaultInstance;
 
   /// Required. The account and product where this inventory will be inserted.
@@ -399,7 +493,10 @@ class InsertRegionalInventoryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -411,7 +508,10 @@ class InsertRegionalInventoryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   RegionalInventory get regionalInventory => $_getN(1);
   @$pb.TagNumber(2)
-  set regionalInventory(RegionalInventory v) { setField(2, v); }
+  set regionalInventory(RegionalInventory v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegionalInventory() => $_has(1);
   @$pb.TagNumber(2)
@@ -432,33 +532,47 @@ class DeleteRegionalInventoryRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteRegionalInventoryRequest._() : super();
-  factory DeleteRegionalInventoryRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteRegionalInventoryRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteRegionalInventoryRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteRegionalInventoryRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteRegionalInventoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.inventories.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteRegionalInventoryRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.inventories.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteRegionalInventoryRequest clone() => DeleteRegionalInventoryRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteRegionalInventoryRequest copyWith(void Function(DeleteRegionalInventoryRequest) updates) => super.copyWith((message) => updates(message as DeleteRegionalInventoryRequest)) as DeleteRegionalInventoryRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteRegionalInventoryRequest clone() =>
+      DeleteRegionalInventoryRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteRegionalInventoryRequest copyWith(
+          void Function(DeleteRegionalInventoryRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as DeleteRegionalInventoryRequest))
+          as DeleteRegionalInventoryRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteRegionalInventoryRequest create() => DeleteRegionalInventoryRequest._();
+  static DeleteRegionalInventoryRequest create() =>
+      DeleteRegionalInventoryRequest._();
   DeleteRegionalInventoryRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteRegionalInventoryRequest> createRepeated() => $pb.PbList<DeleteRegionalInventoryRequest>();
+  static $pb.PbList<DeleteRegionalInventoryRequest> createRepeated() =>
+      $pb.PbList<DeleteRegionalInventoryRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteRegionalInventoryRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteRegionalInventoryRequest>(create);
+  static DeleteRegionalInventoryRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteRegionalInventoryRequest>(create);
   static DeleteRegionalInventoryRequest? _defaultInstance;
 
   /// Required. The name of the `RegionalInventory` resource to delete.
@@ -467,13 +581,16 @@ class DeleteRegionalInventoryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

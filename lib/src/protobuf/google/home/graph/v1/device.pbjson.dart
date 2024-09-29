@@ -20,15 +20,56 @@ const Device$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'type', '3': 2, '4': 1, '5': 9, '10': 'type'},
     {'1': 'traits', '3': 3, '4': 3, '5': 9, '10': 'traits'},
-    {'1': 'name', '3': 4, '4': 1, '5': 11, '6': '.google.home.graph.v1.DeviceNames', '10': 'name'},
+    {
+      '1': 'name',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.home.graph.v1.DeviceNames',
+      '10': 'name'
+    },
     {'1': 'will_report_state', '3': 5, '4': 1, '5': 8, '10': 'willReportState'},
     {'1': 'room_hint', '3': 6, '4': 1, '5': 9, '10': 'roomHint'},
     {'1': 'structure_hint', '3': 7, '4': 1, '5': 9, '10': 'structureHint'},
-    {'1': 'device_info', '3': 8, '4': 1, '5': 11, '6': '.google.home.graph.v1.DeviceInfo', '10': 'deviceInfo'},
-    {'1': 'attributes', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'attributes'},
-    {'1': 'custom_data', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'customData'},
-    {'1': 'other_device_ids', '3': 11, '4': 3, '5': 11, '6': '.google.home.graph.v1.AgentOtherDeviceId', '10': 'otherDeviceIds'},
-    {'1': 'notification_supported_by_agent', '3': 12, '4': 1, '5': 8, '10': 'notificationSupportedByAgent'},
+    {
+      '1': 'device_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.home.graph.v1.DeviceInfo',
+      '10': 'deviceInfo'
+    },
+    {
+      '1': 'attributes',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'attributes'
+    },
+    {
+      '1': 'custom_data',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'customData'
+    },
+    {
+      '1': 'other_device_ids',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.graph.v1.AgentOtherDeviceId',
+      '10': 'otherDeviceIds'
+    },
+    {
+      '1': 'notification_supported_by_agent',
+      '3': 12,
+      '4': 1,
+      '5': 8,
+      '10': 'notificationSupportedByAgent'
+    },
   ],
 };
 
@@ -91,4 +132,3 @@ const AgentOtherDeviceId$json = {
 final $typed_data.Uint8List agentOtherDeviceIdDescriptor = $convert.base64Decode(
     'ChJBZ2VudE90aGVyRGV2aWNlSWQSGQoIYWdlbnRfaWQYASABKAlSB2FnZW50SWQSGwoJZGV2aW'
     'NlX2lkGAIgASgJUghkZXZpY2VJZA==');
-

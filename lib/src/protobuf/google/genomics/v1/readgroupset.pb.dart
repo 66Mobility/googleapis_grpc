@@ -62,46 +62,66 @@ class ReadGroupSet extends $pb.GeneratedMessage {
     return $result;
   }
   ReadGroupSet._() : super();
-  factory ReadGroupSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadGroupSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadGroupSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadGroupSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadGroupSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadGroupSet',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
     ..aOS(3, _omitFieldNames ? '' : 'referenceSetId')
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'filename')
-    ..pc<$439.ReadGroup>(6, _omitFieldNames ? '' : 'readGroups', $pb.PbFieldType.PM, subBuilder: $439.ReadGroup.create)
-    ..m<$core.String, $261.ListValue>(7, _omitFieldNames ? '' : 'info', entryClassName: 'ReadGroupSet.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $261.ListValue.create, valueDefaultOrMaker: $261.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..pc<$439.ReadGroup>(
+        6, _omitFieldNames ? '' : 'readGroups', $pb.PbFieldType.PM,
+        subBuilder: $439.ReadGroup.create)
+    ..m<$core.String, $261.ListValue>(7, _omitFieldNames ? '' : 'info',
+        entryClassName: 'ReadGroupSet.InfoEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $261.ListValue.create,
+        valueDefaultOrMaker: $261.ListValue.getDefault,
+        packageName: const $pb.PackageName('google.genomics.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReadGroupSet clone() => ReadGroupSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadGroupSet copyWith(void Function(ReadGroupSet) updates) => super.copyWith((message) => updates(message as ReadGroupSet)) as ReadGroupSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadGroupSet copyWith(void Function(ReadGroupSet) updates) =>
+      super.copyWith((message) => updates(message as ReadGroupSet))
+          as ReadGroupSet;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadGroupSet create() => ReadGroupSet._();
   ReadGroupSet createEmptyInstance() => create();
-  static $pb.PbList<ReadGroupSet> createRepeated() => $pb.PbList<ReadGroupSet>();
+  static $pb.PbList<ReadGroupSet> createRepeated() =>
+      $pb.PbList<ReadGroupSet>();
   @$core.pragma('dart2js:noInline')
-  static ReadGroupSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadGroupSet>(create);
+  static ReadGroupSet getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadGroupSet>(create);
   static ReadGroupSet? _defaultInstance;
 
   /// The server-generated read group set ID, unique for all read group sets.
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -111,7 +131,10 @@ class ReadGroupSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get datasetId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set datasetId($core.String v) { $_setString(1, v); }
+  set datasetId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDatasetId() => $_has(1);
   @$pb.TagNumber(2)
@@ -121,7 +144,10 @@ class ReadGroupSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get referenceSetId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set referenceSetId($core.String v) { $_setString(2, v); }
+  set referenceSetId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReferenceSetId() => $_has(2);
   @$pb.TagNumber(3)
@@ -132,7 +158,10 @@ class ReadGroupSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get name => $_getSZ(3);
   @$pb.TagNumber(4)
-  set name($core.String v) { $_setString(3, v); }
+  set name($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
@@ -142,7 +171,10 @@ class ReadGroupSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get filename => $_getSZ(4);
   @$pb.TagNumber(5)
-  set filename($core.String v) { $_setString(4, v); }
+  set filename($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFilename() => $_has(4);
   @$pb.TagNumber(5)
@@ -158,6 +190,6 @@ class ReadGroupSet extends $pb.GeneratedMessage {
   $core.Map<$core.String, $261.ListValue> get info => $_getMap(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

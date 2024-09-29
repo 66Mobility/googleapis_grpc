@@ -17,20 +17,129 @@ import 'dart:typed_data' as $typed_data;
 const Type$json = {
   '1': 'Type',
   '2': [
-    {'1': 'bytes_type', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Bytes', '9': 0, '10': 'bytesType'},
-    {'1': 'string_type', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.String', '9': 0, '10': 'stringType'},
-    {'1': 'int64_type', '3': 5, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Int64', '9': 0, '10': 'int64Type'},
-    {'1': 'float32_type', '3': 12, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Float32', '9': 0, '10': 'float32Type'},
-    {'1': 'float64_type', '3': 9, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Float64', '9': 0, '10': 'float64Type'},
-    {'1': 'bool_type', '3': 8, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Bool', '9': 0, '10': 'boolType'},
-    {'1': 'timestamp_type', '3': 10, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Timestamp', '9': 0, '10': 'timestampType'},
-    {'1': 'date_type', '3': 11, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Date', '9': 0, '10': 'dateType'},
-    {'1': 'aggregate_type', '3': 6, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Aggregate', '9': 0, '10': 'aggregateType'},
-    {'1': 'struct_type', '3': 7, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Struct', '9': 0, '10': 'structType'},
-    {'1': 'array_type', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Array', '9': 0, '10': 'arrayType'},
-    {'1': 'map_type', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Map', '9': 0, '10': 'mapType'},
+    {
+      '1': 'bytes_type',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Bytes',
+      '9': 0,
+      '10': 'bytesType'
+    },
+    {
+      '1': 'string_type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.String',
+      '9': 0,
+      '10': 'stringType'
+    },
+    {
+      '1': 'int64_type',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Int64',
+      '9': 0,
+      '10': 'int64Type'
+    },
+    {
+      '1': 'float32_type',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Float32',
+      '9': 0,
+      '10': 'float32Type'
+    },
+    {
+      '1': 'float64_type',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Float64',
+      '9': 0,
+      '10': 'float64Type'
+    },
+    {
+      '1': 'bool_type',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Bool',
+      '9': 0,
+      '10': 'boolType'
+    },
+    {
+      '1': 'timestamp_type',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Timestamp',
+      '9': 0,
+      '10': 'timestampType'
+    },
+    {
+      '1': 'date_type',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Date',
+      '9': 0,
+      '10': 'dateType'
+    },
+    {
+      '1': 'aggregate_type',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Aggregate',
+      '9': 0,
+      '10': 'aggregateType'
+    },
+    {
+      '1': 'struct_type',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Struct',
+      '9': 0,
+      '10': 'structType'
+    },
+    {
+      '1': 'array_type',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Array',
+      '9': 0,
+      '10': 'arrayType'
+    },
+    {
+      '1': 'map_type',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Map',
+      '9': 0,
+      '10': 'mapType'
+    },
   ],
-  '3': [Type_Bytes$json, Type_String$json, Type_Int64$json, Type_Bool$json, Type_Float32$json, Type_Float64$json, Type_Timestamp$json, Type_Date$json, Type_Struct$json, Type_Array$json, Type_Map$json, Type_Aggregate$json],
+  '3': [
+    Type_Bytes$json,
+    Type_String$json,
+    Type_Int64$json,
+    Type_Bool$json,
+    Type_Float32$json,
+    Type_Float64$json,
+    Type_Timestamp$json,
+    Type_Date$json,
+    Type_Struct$json,
+    Type_Array$json,
+    Type_Map$json,
+    Type_Aggregate$json
+  ],
   '8': [
     {'1': 'kind'},
   ],
@@ -40,7 +149,14 @@ const Type$json = {
 const Type_Bytes$json = {
   '1': 'Bytes',
   '2': [
-    {'1': 'encoding', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Bytes.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Bytes.Encoding',
+      '10': 'encoding'
+    },
   ],
   '3': [Type_Bytes_Encoding$json],
 };
@@ -49,7 +165,15 @@ const Type_Bytes$json = {
 const Type_Bytes_Encoding$json = {
   '1': 'Encoding',
   '2': [
-    {'1': 'raw', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Bytes.Encoding.Raw', '9': 0, '10': 'raw'},
+    {
+      '1': 'raw',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Bytes.Encoding.Raw',
+      '9': 0,
+      '10': 'raw'
+    },
   ],
   '3': [Type_Bytes_Encoding_Raw$json],
   '8': [
@@ -66,7 +190,14 @@ const Type_Bytes_Encoding_Raw$json = {
 const Type_String$json = {
   '1': 'String',
   '2': [
-    {'1': 'encoding', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.String.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.String.Encoding',
+      '10': 'encoding'
+    },
   ],
   '3': [Type_String_Encoding$json],
 };
@@ -85,7 +216,15 @@ const Type_String_Encoding$json = {
       '9': 0,
       '10': 'utf8Raw',
     },
-    {'1': 'utf8_bytes', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.String.Encoding.Utf8Bytes', '9': 0, '10': 'utf8Bytes'},
+    {
+      '1': 'utf8_bytes',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.String.Encoding.Utf8Bytes',
+      '9': 0,
+      '10': 'utf8Bytes'
+    },
   ],
   '3': [Type_String_Encoding_Utf8Raw$json, Type_String_Encoding_Utf8Bytes$json],
   '8': [
@@ -108,7 +247,14 @@ const Type_String_Encoding_Utf8Bytes$json = {
 const Type_Int64$json = {
   '1': 'Int64',
   '2': [
-    {'1': 'encoding', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Int64.Encoding', '10': 'encoding'},
+    {
+      '1': 'encoding',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Int64.Encoding',
+      '10': 'encoding'
+    },
   ],
   '3': [Type_Int64_Encoding$json],
 };
@@ -117,7 +263,15 @@ const Type_Int64$json = {
 const Type_Int64_Encoding$json = {
   '1': 'Encoding',
   '2': [
-    {'1': 'big_endian_bytes', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Int64.Encoding.BigEndianBytes', '9': 0, '10': 'bigEndianBytes'},
+    {
+      '1': 'big_endian_bytes',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Int64.Encoding.BigEndianBytes',
+      '9': 0,
+      '10': 'bigEndianBytes'
+    },
   ],
   '3': [Type_Int64_Encoding_BigEndianBytes$json],
   '8': [
@@ -129,7 +283,14 @@ const Type_Int64_Encoding$json = {
 const Type_Int64_Encoding_BigEndianBytes$json = {
   '1': 'BigEndianBytes',
   '2': [
-    {'1': 'bytes_type', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Bytes', '10': 'bytesType'},
+    {
+      '1': 'bytes_type',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Bytes',
+      '10': 'bytesType'
+    },
   ],
 };
 
@@ -162,7 +323,14 @@ const Type_Date$json = {
 const Type_Struct$json = {
   '1': 'Struct',
   '2': [
-    {'1': 'fields', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.Type.Struct.Field', '10': 'fields'},
+    {
+      '1': 'fields',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Struct.Field',
+      '10': 'fields'
+    },
   ],
   '3': [Type_Struct_Field$json],
 };
@@ -172,7 +340,14 @@ const Type_Struct_Field$json = {
   '1': 'Field',
   '2': [
     {'1': 'field_name', '3': 1, '4': 1, '5': 9, '10': 'fieldName'},
-    {'1': 'type', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '10': 'type'
+    },
   ],
 };
 
@@ -180,7 +355,14 @@ const Type_Struct_Field$json = {
 const Type_Array$json = {
   '1': 'Array',
   '2': [
-    {'1': 'element_type', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '10': 'elementType'},
+    {
+      '1': 'element_type',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '10': 'elementType'
+    },
   ],
 };
 
@@ -188,8 +370,22 @@ const Type_Array$json = {
 const Type_Map$json = {
   '1': 'Map',
   '2': [
-    {'1': 'key_type', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '10': 'keyType'},
-    {'1': 'value_type', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '10': 'valueType'},
+    {
+      '1': 'key_type',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '10': 'keyType'
+    },
+    {
+      '1': 'value_type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '10': 'valueType'
+    },
   ],
 };
 
@@ -197,14 +393,66 @@ const Type_Map$json = {
 const Type_Aggregate$json = {
   '1': 'Aggregate',
   '2': [
-    {'1': 'input_type', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '10': 'inputType'},
-    {'1': 'state_type', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type', '8': {}, '10': 'stateType'},
-    {'1': 'sum', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Aggregate.Sum', '9': 0, '10': 'sum'},
-    {'1': 'hllpp_unique_count', '3': 5, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Aggregate.HyperLogLogPlusPlusUniqueCount', '9': 0, '10': 'hllppUniqueCount'},
-    {'1': 'max', '3': 6, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Aggregate.Max', '9': 0, '10': 'max'},
-    {'1': 'min', '3': 7, '4': 1, '5': 11, '6': '.google.bigtable.v2.Type.Aggregate.Min', '9': 0, '10': 'min'},
+    {
+      '1': 'input_type',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '10': 'inputType'
+    },
+    {
+      '1': 'state_type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type',
+      '8': {},
+      '10': 'stateType'
+    },
+    {
+      '1': 'sum',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Aggregate.Sum',
+      '9': 0,
+      '10': 'sum'
+    },
+    {
+      '1': 'hllpp_unique_count',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Aggregate.HyperLogLogPlusPlusUniqueCount',
+      '9': 0,
+      '10': 'hllppUniqueCount'
+    },
+    {
+      '1': 'max',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Aggregate.Max',
+      '9': 0,
+      '10': 'max'
+    },
+    {
+      '1': 'min',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Type.Aggregate.Min',
+      '9': 0,
+      '10': 'min'
+    },
   ],
-  '3': [Type_Aggregate_Sum$json, Type_Aggregate_Max$json, Type_Aggregate_Min$json, Type_Aggregate_HyperLogLogPlusPlusUniqueCount$json],
+  '3': [
+    Type_Aggregate_Sum$json,
+    Type_Aggregate_Max$json,
+    Type_Aggregate_Min$json,
+    Type_Aggregate_HyperLogLogPlusPlusUniqueCount$json
+  ],
   '8': [
     {'1': 'aggregator'},
   ],
@@ -277,4 +525,3 @@ final $typed_data.Uint8List typeDescriptor = $convert.base64Decode(
     'dGUuTWF4SABSA21heBI6CgNtaW4YByABKAsyJi5nb29nbGUuYmlndGFibGUudjIuVHlwZS5BZ2'
     'dyZWdhdGUuTWluSABSA21pbhoFCgNTdW0aBQoDTWF4GgUKA01pbhogCh5IeXBlckxvZ0xvZ1Bs'
     'dXNQbHVzVW5pcXVlQ291bnRCDAoKYWdncmVnYXRvckIGCgRraW5k');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const DroppedLabels$json = {
   '1': 'DroppedLabels',
   '2': [
-    {'1': 'label', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.v3.DroppedLabels.LabelEntry', '10': 'label'},
+    {
+      '1': 'label',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.v3.DroppedLabels.LabelEntry',
+      '10': 'label'
+    },
   ],
   '3': [DroppedLabels_LabelEntry$json],
 };
@@ -37,4 +44,3 @@ final $typed_data.Uint8List droppedLabelsDescriptor = $convert.base64Decode(
     'Cg1Ecm9wcGVkTGFiZWxzEkQKBWxhYmVsGAEgAygLMi4uZ29vZ2xlLm1vbml0b3JpbmcudjMuRH'
     'JvcHBlZExhYmVscy5MYWJlbEVudHJ5UgVsYWJlbBo4CgpMYWJlbEVudHJ5EhAKA2tleRgBIAEo'
     'CVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAE=');
-

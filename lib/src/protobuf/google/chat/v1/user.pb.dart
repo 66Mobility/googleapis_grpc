@@ -49,28 +49,36 @@ class User extends $pb.GeneratedMessage {
     return $result;
   }
   User._() : super();
-  factory User.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory User.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory User.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory User.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'User', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'User',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<User_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: User_Type.TYPE_UNSPECIFIED, valueOf: User_Type.valueOf, enumValues: User_Type.values)
+    ..e<User_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: User_Type.TYPE_UNSPECIFIED,
+        valueOf: User_Type.valueOf,
+        enumValues: User_Type.values)
     ..aOS(6, _omitFieldNames ? '' : 'domainId')
     ..aOB(7, _omitFieldNames ? '' : 'isAnonymous')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   User clone() => User()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  User copyWith(void Function(User) updates) => super.copyWith((message) => updates(message as User)) as User;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  User copyWith(void Function(User) updates) =>
+      super.copyWith((message) => updates(message as User)) as User;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -79,7 +87,8 @@ class User extends $pb.GeneratedMessage {
   User createEmptyInstance() => create();
   static $pb.PbList<User> createRepeated() => $pb.PbList<User>();
   @$core.pragma('dart2js:noInline')
-  static User getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<User>(create);
+  static User getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<User>(create);
   static User? _defaultInstance;
 
   ///  Resource name for a Google Chat [user][google.chat.v1.User].
@@ -107,7 +116,10 @@ class User extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -117,7 +129,10 @@ class User extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -127,7 +142,10 @@ class User extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   User_Type get type => $_getN(2);
   @$pb.TagNumber(5)
-  set type(User_Type v) { setField(5, v); }
+  set type(User_Type v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(5)
@@ -137,7 +155,10 @@ class User extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get domainId => $_getSZ(3);
   @$pb.TagNumber(6)
-  set domainId($core.String v) { $_setString(3, v); }
+  set domainId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDomainId() => $_has(3);
   @$pb.TagNumber(6)
@@ -148,13 +169,16 @@ class User extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get isAnonymous => $_getBF(4);
   @$pb.TagNumber(7)
-  set isAnonymous($core.bool v) { $_setBool(4, v); }
+  set isAnonymous($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasIsAnonymous() => $_has(4);
   @$pb.TagNumber(7)
   void clearIsAnonymous() => clearField(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

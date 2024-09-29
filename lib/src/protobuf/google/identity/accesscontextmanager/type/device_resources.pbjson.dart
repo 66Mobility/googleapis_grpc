@@ -65,4 +65,3 @@ const DeviceManagementLevel$json = {
 final $typed_data.Uint8List deviceManagementLevelDescriptor = $convert.base64Decode(
     'ChVEZXZpY2VNYW5hZ2VtZW50TGV2ZWwSGgoWTUFOQUdFTUVOVF9VTlNQRUNJRklFRBAAEggKBE'
     '5PTkUQARIJCgVCQVNJQxACEgwKCENPTVBMRVRFEAM=');
-

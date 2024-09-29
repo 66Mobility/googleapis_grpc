@@ -18,9 +18,22 @@ const Canvas$json = {
   '1': 'Canvas',
   '2': [
     {'1': 'url', '3': 1, '4': 1, '5': 9, '10': 'url'},
-    {'1': 'data', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.Value', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'data'
+    },
     {'1': 'suppress_mic', '3': 3, '4': 1, '5': 8, '10': 'suppressMic'},
-    {'1': 'enable_full_screen', '3': 8, '4': 1, '5': 8, '10': 'enableFullScreen'},
+    {
+      '1': 'enable_full_screen',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '10': 'enableFullScreen'
+    },
   ],
 };
 
@@ -29,4 +42,3 @@ final $typed_data.Uint8List canvasDescriptor = $convert.base64Decode(
     'CgZDYW52YXMSEAoDdXJsGAEgASgJUgN1cmwSKgoEZGF0YRgEIAMoCzIWLmdvb2dsZS5wcm90b2'
     'J1Zi5WYWx1ZVIEZGF0YRIhCgxzdXBwcmVzc19taWMYAyABKAhSC3N1cHByZXNzTWljEiwKEmVu'
     'YWJsZV9mdWxsX3NjcmVlbhgIIAEoCFIQZW5hYmxlRnVsbFNjcmVlbg==');
-

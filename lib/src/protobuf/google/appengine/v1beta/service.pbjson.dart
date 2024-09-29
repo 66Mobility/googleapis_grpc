@@ -19,8 +19,22 @@ const Service$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'split', '3': 3, '4': 1, '5': 11, '6': '.google.appengine.v1beta.TrafficSplit', '10': 'split'},
-    {'1': 'network_settings', '3': 6, '4': 1, '5': 11, '6': '.google.appengine.v1beta.NetworkSettings', '10': 'networkSettings'},
+    {
+      '1': 'split',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.TrafficSplit',
+      '10': 'split'
+    },
+    {
+      '1': 'network_settings',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.NetworkSettings',
+      '10': 'networkSettings'
+    },
   ],
 };
 
@@ -35,8 +49,22 @@ final $typed_data.Uint8List serviceDescriptor = $convert.base64Decode(
 const TrafficSplit$json = {
   '1': 'TrafficSplit',
   '2': [
-    {'1': 'shard_by', '3': 1, '4': 1, '5': 14, '6': '.google.appengine.v1beta.TrafficSplit.ShardBy', '10': 'shardBy'},
-    {'1': 'allocations', '3': 2, '4': 3, '5': 11, '6': '.google.appengine.v1beta.TrafficSplit.AllocationsEntry', '10': 'allocations'},
+    {
+      '1': 'shard_by',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.TrafficSplit.ShardBy',
+      '10': 'shardBy'
+    },
+    {
+      '1': 'allocations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.TrafficSplit.AllocationsEntry',
+      '10': 'allocations'
+    },
   ],
   '3': [TrafficSplit_AllocationsEntry$json],
   '4': [TrafficSplit_ShardBy$json],
@@ -71,4 +99,3 @@ final $typed_data.Uint8List trafficSplitDescriptor = $convert.base64Decode(
     'thbGxvY2F0aW9ucxo+ChBBbGxvY2F0aW9uc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZh'
     'bHVlGAIgASgBUgV2YWx1ZToCOAEiOgoHU2hhcmRCeRIPCgtVTlNQRUNJRklFRBAAEgoKBkNPT0'
     'tJRRABEgYKAklQEAISCgoGUkFORE9NEAM=');
-

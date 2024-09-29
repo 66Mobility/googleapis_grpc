@@ -18,27 +18,120 @@ const Slot$json = {
   '1': 'Slot',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.type.ClassReference', '8': {}, '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.type.ClassReference',
+      '8': {},
+      '10': 'type'
+    },
     {'1': 'required', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'required'},
-    {'1': 'prompt_settings', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Slot.PromptSettings', '8': {}, '10': 'promptSettings'},
-    {'1': 'commit_behavior', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Slot.CommitBehavior', '8': {}, '10': 'commitBehavior'},
-    {'1': 'config', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Value', '8': {}, '10': 'config'},
-    {'1': 'default_value', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.Slot.DefaultValue', '8': {}, '10': 'defaultValue'},
+    {
+      '1': 'prompt_settings',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.Slot.PromptSettings',
+      '8': {},
+      '10': 'promptSettings'
+    },
+    {
+      '1': 'commit_behavior',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.Slot.CommitBehavior',
+      '8': {},
+      '10': 'commitBehavior'
+    },
+    {
+      '1': 'config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '8': {},
+      '10': 'config'
+    },
+    {
+      '1': 'default_value',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.Slot.DefaultValue',
+      '8': {},
+      '10': 'defaultValue'
+    },
   ],
-  '3': [Slot_PromptSettings$json, Slot_CommitBehavior$json, Slot_DefaultValue$json],
+  '3': [
+    Slot_PromptSettings$json,
+    Slot_CommitBehavior$json,
+    Slot_DefaultValue$json
+  ],
 };
 
 @$core.Deprecated('Use slotDescriptor instead')
 const Slot_PromptSettings$json = {
   '1': 'PromptSettings',
   '2': [
-    {'1': 'initial_prompt', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'initialPrompt'},
-    {'1': 'no_match_prompt1', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'noMatchPrompt1'},
-    {'1': 'no_match_prompt2', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'noMatchPrompt2'},
-    {'1': 'no_match_final_prompt', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'noMatchFinalPrompt'},
-    {'1': 'no_input_prompt1', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'noInputPrompt1'},
-    {'1': 'no_input_prompt2', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'noInputPrompt2'},
-    {'1': 'no_input_final_prompt', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EventHandler', '10': 'noInputFinalPrompt'},
+    {
+      '1': 'initial_prompt',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'initialPrompt'
+    },
+    {
+      '1': 'no_match_prompt1',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'noMatchPrompt1'
+    },
+    {
+      '1': 'no_match_prompt2',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'noMatchPrompt2'
+    },
+    {
+      '1': 'no_match_final_prompt',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'noMatchFinalPrompt'
+    },
+    {
+      '1': 'no_input_prompt1',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'noInputPrompt1'
+    },
+    {
+      '1': 'no_input_prompt2',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'noInputPrompt2'
+    },
+    {
+      '1': 'no_input_final_prompt',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EventHandler',
+      '10': 'noInputFinalPrompt'
+    },
   ],
 };
 
@@ -46,7 +139,13 @@ const Slot_PromptSettings$json = {
 const Slot_CommitBehavior$json = {
   '1': 'CommitBehavior',
   '2': [
-    {'1': 'write_session_param', '3': 1, '4': 1, '5': 9, '10': 'writeSessionParam'},
+    {
+      '1': 'write_session_param',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'writeSessionParam'
+    },
   ],
 };
 
@@ -54,8 +153,23 @@ const Slot_CommitBehavior$json = {
 const Slot_DefaultValue$json = {
   '1': 'DefaultValue',
   '2': [
-    {'1': 'session_param', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'sessionParam'},
-    {'1': 'constant', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Value', '8': {}, '10': 'constant'},
+    {
+      '1': 'session_param',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sessionParam'
+    },
+    {
+      '1': 'constant',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '8': {},
+      '10': 'constant'
+    },
   ],
 };
 
@@ -87,4 +201,3 @@ final $typed_data.Uint8List slotDescriptor = $convert.base64Decode(
     'RlU2Vzc2lvblBhcmFtGnEKDERlZmF1bHRWYWx1ZRIoCg1zZXNzaW9uX3BhcmFtGAEgASgJQgPg'
     'QQFSDHNlc3Npb25QYXJhbRI3Cghjb25zdGFudBgCIAEoCzIWLmdvb2dsZS5wcm90b2J1Zi5WYW'
     'x1ZUID4EEBUghjb25zdGFudA==');
-

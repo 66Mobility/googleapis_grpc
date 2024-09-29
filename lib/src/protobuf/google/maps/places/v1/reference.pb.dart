@@ -35,25 +35,32 @@ class References extends $pb.GeneratedMessage {
     return $result;
   }
   References._() : super();
-  factory References.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory References.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory References.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory References.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'References', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<$462.Review>(1, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM, subBuilder: $462.Review.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'References',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..pc<$462.Review>(1, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM,
+        subBuilder: $462.Review.create)
     ..pPS(2, _omitFieldNames ? '' : 'places')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   References clone() => References()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  References copyWith(void Function(References) updates) => super.copyWith((message) => updates(message as References)) as References;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  References copyWith(void Function(References) updates) =>
+      super.copyWith((message) => updates(message as References)) as References;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -62,7 +69,8 @@ class References extends $pb.GeneratedMessage {
   References createEmptyInstance() => create();
   static $pb.PbList<References> createRepeated() => $pb.PbList<References>();
   @$core.pragma('dart2js:noInline')
-  static References getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<References>(create);
+  static References getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<References>(create);
   static References? _defaultInstance;
 
   /// Reviews that serve as references.
@@ -75,6 +83,6 @@ class References extends $pb.GeneratedMessage {
   $core.List<$core.String> get places => $_getList(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

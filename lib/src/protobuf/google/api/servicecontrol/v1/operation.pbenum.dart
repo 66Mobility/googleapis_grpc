@@ -15,19 +15,21 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Defines the importance of the data contained in the operation.
 class Operation_Importance extends $pb.ProtobufEnum {
-  static const Operation_Importance LOW = Operation_Importance._(0, _omitEnumNames ? '' : 'LOW');
-  static const Operation_Importance HIGH = Operation_Importance._(1, _omitEnumNames ? '' : 'HIGH');
+  static const Operation_Importance LOW =
+      Operation_Importance._(0, _omitEnumNames ? '' : 'LOW');
+  static const Operation_Importance HIGH =
+      Operation_Importance._(1, _omitEnumNames ? '' : 'HIGH');
 
-  static const $core.List<Operation_Importance> values = <Operation_Importance> [
+  static const $core.List<Operation_Importance> values = <Operation_Importance>[
     LOW,
     HIGH,
   ];
 
-  static final $core.Map<$core.int, Operation_Importance> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Operation_Importance> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Operation_Importance? valueOf($core.int value) => _byValue[value];
 
   const Operation_Importance._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

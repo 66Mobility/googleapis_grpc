@@ -21,11 +21,7 @@ import 'user.pb.dart' as $406;
 
 export 'membership.pbenum.dart';
 
-enum Membership_MemberType {
-  member, 
-  groupMember, 
-  notSet
-}
+enum Membership_MemberType { member, groupMember, notSet }
 
 /// Represents a membership relation in Google Chat, such as whether a user or
 /// Chat app is invited to, part of, or absent from a space.
@@ -64,36 +60,54 @@ class Membership extends $pb.GeneratedMessage {
     return $result;
   }
   Membership._() : super();
-  factory Membership.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Membership.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Membership.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Membership.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Membership_MemberType> _Membership_MemberTypeByTag = {
-    3 : Membership_MemberType.member,
-    5 : Membership_MemberType.groupMember,
-    0 : Membership_MemberType.notSet
+  static const $core.Map<$core.int, Membership_MemberType>
+      _Membership_MemberTypeByTag = {
+    3: Membership_MemberType.member,
+    5: Membership_MemberType.groupMember,
+    0: Membership_MemberType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Membership', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Membership',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..oo(0, [3, 5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<Membership_MembershipState>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Membership_MembershipState.MEMBERSHIP_STATE_UNSPECIFIED, valueOf: Membership_MembershipState.valueOf, enumValues: Membership_MembershipState.values)
-    ..aOM<$406.User>(3, _omitFieldNames ? '' : 'member', subBuilder: $406.User.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$407.Group>(5, _omitFieldNames ? '' : 'groupMember', subBuilder: $407.Group.create)
-    ..e<Membership_MembershipRole>(7, _omitFieldNames ? '' : 'role', $pb.PbFieldType.OE, defaultOrMaker: Membership_MembershipRole.MEMBERSHIP_ROLE_UNSPECIFIED, valueOf: Membership_MembershipRole.valueOf, enumValues: Membership_MembershipRole.values)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<Membership_MembershipState>(
+        2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Membership_MembershipState.MEMBERSHIP_STATE_UNSPECIFIED,
+        valueOf: Membership_MembershipState.valueOf,
+        enumValues: Membership_MembershipState.values)
+    ..aOM<$406.User>(3, _omitFieldNames ? '' : 'member',
+        subBuilder: $406.User.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$407.Group>(5, _omitFieldNames ? '' : 'groupMember',
+        subBuilder: $407.Group.create)
+    ..e<Membership_MembershipRole>(
+        7, _omitFieldNames ? '' : 'role', $pb.PbFieldType.OE,
+        defaultOrMaker: Membership_MembershipRole.MEMBERSHIP_ROLE_UNSPECIFIED,
+        valueOf: Membership_MembershipRole.valueOf,
+        enumValues: Membership_MembershipRole.values)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Membership clone() => Membership()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Membership copyWith(void Function(Membership) updates) => super.copyWith((message) => updates(message as Membership)) as Membership;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Membership copyWith(void Function(Membership) updates) =>
+      super.copyWith((message) => updates(message as Membership)) as Membership;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -102,10 +116,12 @@ class Membership extends $pb.GeneratedMessage {
   Membership createEmptyInstance() => create();
   static $pb.PbList<Membership> createRepeated() => $pb.PbList<Membership>();
   @$core.pragma('dart2js:noInline')
-  static Membership getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Membership>(create);
+  static Membership getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Membership>(create);
   static Membership? _defaultInstance;
 
-  Membership_MemberType whichMemberType() => _Membership_MemberTypeByTag[$_whichOneof(0)]!;
+  Membership_MemberType whichMemberType() =>
+      _Membership_MemberTypeByTag[$_whichOneof(0)]!;
   void clearMemberType() => clearField($_whichOneof(0));
 
   ///  Resource name of the membership, assigned by the server.
@@ -114,7 +130,10 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -124,7 +143,10 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Membership_MembershipState get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(Membership_MembershipState v) { setField(2, v); }
+  set state(Membership_MembershipState v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -139,7 +161,10 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $406.User get member => $_getN(2);
   @$pb.TagNumber(3)
-  set member($406.User v) { setField(3, v); }
+  set member($406.User v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMember() => $_has(2);
   @$pb.TagNumber(3)
@@ -153,7 +178,10 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -165,7 +193,10 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $407.Group get groupMember => $_getN(4);
   @$pb.TagNumber(5)
-  set groupMember($407.Group v) { setField(5, v); }
+  set groupMember($407.Group v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasGroupMember() => $_has(4);
   @$pb.TagNumber(5)
@@ -180,7 +211,10 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Membership_MembershipRole get role => $_getN(5);
   @$pb.TagNumber(7)
-  set role(Membership_MembershipRole v) { setField(7, v); }
+  set role(Membership_MembershipRole v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRole() => $_has(5);
   @$pb.TagNumber(7)
@@ -192,7 +226,10 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(8)
-  set deleteTime($302.Timestamp v) { setField(8, v); }
+  set deleteTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(8)
@@ -221,35 +258,46 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateMembershipRequest._() : super();
-  factory CreateMembershipRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateMembershipRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateMembershipRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateMembershipRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateMembershipRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<Membership>(2, _omitFieldNames ? '' : 'membership', subBuilder: Membership.create)
+    ..aOM<Membership>(2, _omitFieldNames ? '' : 'membership',
+        subBuilder: Membership.create)
     ..aOB(5, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateMembershipRequest clone() => CreateMembershipRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateMembershipRequest copyWith(void Function(CreateMembershipRequest) updates) => super.copyWith((message) => updates(message as CreateMembershipRequest)) as CreateMembershipRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateMembershipRequest clone() =>
+      CreateMembershipRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateMembershipRequest copyWith(
+          void Function(CreateMembershipRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateMembershipRequest))
+          as CreateMembershipRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateMembershipRequest create() => CreateMembershipRequest._();
   CreateMembershipRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateMembershipRequest> createRepeated() => $pb.PbList<CreateMembershipRequest>();
+  static $pb.PbList<CreateMembershipRequest> createRepeated() =>
+      $pb.PbList<CreateMembershipRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateMembershipRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateMembershipRequest>(create);
+  static CreateMembershipRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateMembershipRequest>(create);
   static CreateMembershipRequest? _defaultInstance;
 
   ///  Required. The resource name of the space for which to create the
@@ -259,7 +307,10 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -284,7 +335,10 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Membership get membership => $_getN(1);
   @$pb.TagNumber(2)
-  set membership(Membership v) { setField(2, v); }
+  set membership(Membership v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMembership() => $_has(1);
   @$pb.TagNumber(2)
@@ -308,7 +362,10 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get useAdminAccess => $_getBF(2);
   @$pb.TagNumber(5)
-  set useAdminAccess($core.bool v) { $_setBool(2, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUseAdminAccess() => $_has(2);
   @$pb.TagNumber(5)
@@ -335,35 +392,47 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateMembershipRequest._() : super();
-  factory UpdateMembershipRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateMembershipRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateMembershipRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateMembershipRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: Membership.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateMembershipRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<Membership>(1, _omitFieldNames ? '' : 'membership',
+        subBuilder: Membership.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateMembershipRequest clone() => UpdateMembershipRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateMembershipRequest copyWith(void Function(UpdateMembershipRequest) updates) => super.copyWith((message) => updates(message as UpdateMembershipRequest)) as UpdateMembershipRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateMembershipRequest clone() =>
+      UpdateMembershipRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateMembershipRequest copyWith(
+          void Function(UpdateMembershipRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateMembershipRequest))
+          as UpdateMembershipRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateMembershipRequest create() => UpdateMembershipRequest._();
   UpdateMembershipRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateMembershipRequest> createRepeated() => $pb.PbList<UpdateMembershipRequest>();
+  static $pb.PbList<UpdateMembershipRequest> createRepeated() =>
+      $pb.PbList<UpdateMembershipRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateMembershipRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateMembershipRequest>(create);
+  static UpdateMembershipRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateMembershipRequest>(create);
   static UpdateMembershipRequest? _defaultInstance;
 
   /// Required. The membership to update. Only fields specified by `update_mask`
@@ -371,7 +440,10 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Membership get membership => $_getN(0);
   @$pb.TagNumber(1)
-  set membership(Membership v) { setField(1, v); }
+  set membership(Membership v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMembership() => $_has(0);
   @$pb.TagNumber(1)
@@ -388,7 +460,10 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -408,7 +483,10 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get useAdminAccess => $_getBF(2);
   @$pb.TagNumber(3)
-  set useAdminAccess($core.bool v) { $_setBool(2, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUseAdminAccess() => $_has(2);
   @$pb.TagNumber(3)
@@ -451,10 +529,17 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListMembershipsRequest._() : super();
-  factory ListMembershipsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListMembershipsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListMembershipsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListMembershipsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMembershipsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListMembershipsRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
@@ -462,28 +547,31 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
     ..aOB(6, _omitFieldNames ? '' : 'showGroups')
     ..aOB(7, _omitFieldNames ? '' : 'showInvited')
     ..aOB(8, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListMembershipsRequest clone() => ListMembershipsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListMembershipsRequest copyWith(void Function(ListMembershipsRequest) updates) => super.copyWith((message) => updates(message as ListMembershipsRequest)) as ListMembershipsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListMembershipsRequest clone() =>
+      ListMembershipsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListMembershipsRequest copyWith(
+          void Function(ListMembershipsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListMembershipsRequest))
+          as ListMembershipsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListMembershipsRequest create() => ListMembershipsRequest._();
   ListMembershipsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListMembershipsRequest> createRepeated() => $pb.PbList<ListMembershipsRequest>();
+  static $pb.PbList<ListMembershipsRequest> createRepeated() =>
+      $pb.PbList<ListMembershipsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListMembershipsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListMembershipsRequest>(create);
+  static ListMembershipsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListMembershipsRequest>(create);
   static ListMembershipsRequest? _defaultInstance;
 
   ///  Required. The resource name of the space for which to fetch a membership
@@ -493,7 +581,10 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -511,7 +602,10 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -526,7 +620,10 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -572,7 +669,10 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(5)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(5)
@@ -587,7 +687,10 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get showGroups => $_getBF(4);
   @$pb.TagNumber(6)
-  set showGroups($core.bool v) { $_setBool(4, v); }
+  set showGroups($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasShowGroups() => $_has(4);
   @$pb.TagNumber(6)
@@ -605,7 +708,10 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get showInvited => $_getBF(5);
   @$pb.TagNumber(7)
-  set showInvited($core.bool v) { $_setBool(5, v); }
+  set showInvited($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasShowInvited() => $_has(5);
   @$pb.TagNumber(7)
@@ -626,7 +732,10 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get useAdminAccess => $_getBF(6);
   @$pb.TagNumber(8)
-  set useAdminAccess($core.bool v) { $_setBool(6, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasUseAdminAccess() => $_has(6);
   @$pb.TagNumber(8)
@@ -649,34 +758,46 @@ class ListMembershipsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListMembershipsResponse._() : super();
-  factory ListMembershipsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListMembershipsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListMembershipsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListMembershipsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMembershipsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..pc<Membership>(1, _omitFieldNames ? '' : 'memberships', $pb.PbFieldType.PM, subBuilder: Membership.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListMembershipsResponse',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..pc<Membership>(
+        1, _omitFieldNames ? '' : 'memberships', $pb.PbFieldType.PM,
+        subBuilder: Membership.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListMembershipsResponse clone() => ListMembershipsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListMembershipsResponse copyWith(void Function(ListMembershipsResponse) updates) => super.copyWith((message) => updates(message as ListMembershipsResponse)) as ListMembershipsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListMembershipsResponse clone() =>
+      ListMembershipsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListMembershipsResponse copyWith(
+          void Function(ListMembershipsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListMembershipsResponse))
+          as ListMembershipsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListMembershipsResponse create() => ListMembershipsResponse._();
   ListMembershipsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListMembershipsResponse> createRepeated() => $pb.PbList<ListMembershipsResponse>();
+  static $pb.PbList<ListMembershipsResponse> createRepeated() =>
+      $pb.PbList<ListMembershipsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListMembershipsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListMembershipsResponse>(create);
+  static ListMembershipsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListMembershipsResponse>(create);
   static ListMembershipsResponse? _defaultInstance;
 
   /// Unordered list. List of memberships in the requested (or first) page.
@@ -688,7 +809,10 @@ class ListMembershipsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -711,34 +835,43 @@ class GetMembershipRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetMembershipRequest._() : super();
-  factory GetMembershipRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetMembershipRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetMembershipRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetMembershipRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetMembershipRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetMembershipRequest clone() => GetMembershipRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetMembershipRequest copyWith(void Function(GetMembershipRequest) updates) => super.copyWith((message) => updates(message as GetMembershipRequest)) as GetMembershipRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetMembershipRequest clone() =>
+      GetMembershipRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetMembershipRequest copyWith(void Function(GetMembershipRequest) updates) =>
+      super.copyWith((message) => updates(message as GetMembershipRequest))
+          as GetMembershipRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetMembershipRequest create() => GetMembershipRequest._();
   GetMembershipRequest createEmptyInstance() => create();
-  static $pb.PbList<GetMembershipRequest> createRepeated() => $pb.PbList<GetMembershipRequest>();
+  static $pb.PbList<GetMembershipRequest> createRepeated() =>
+      $pb.PbList<GetMembershipRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetMembershipRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetMembershipRequest>(create);
+  static GetMembershipRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetMembershipRequest>(create);
   static GetMembershipRequest? _defaultInstance;
 
   ///  Required. Resource name of the membership to retrieve.
@@ -757,7 +890,10 @@ class GetMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -778,7 +914,10 @@ class GetMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get useAdminAccess => $_getBF(1);
   @$pb.TagNumber(3)
-  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUseAdminAccess() => $_has(1);
   @$pb.TagNumber(3)
@@ -801,34 +940,44 @@ class DeleteMembershipRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteMembershipRequest._() : super();
-  factory DeleteMembershipRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteMembershipRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteMembershipRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteMembershipRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteMembershipRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'useAdminAccess')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteMembershipRequest clone() => DeleteMembershipRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteMembershipRequest copyWith(void Function(DeleteMembershipRequest) updates) => super.copyWith((message) => updates(message as DeleteMembershipRequest)) as DeleteMembershipRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteMembershipRequest clone() =>
+      DeleteMembershipRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteMembershipRequest copyWith(
+          void Function(DeleteMembershipRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteMembershipRequest))
+          as DeleteMembershipRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteMembershipRequest create() => DeleteMembershipRequest._();
   DeleteMembershipRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteMembershipRequest> createRepeated() => $pb.PbList<DeleteMembershipRequest>();
+  static $pb.PbList<DeleteMembershipRequest> createRepeated() =>
+      $pb.PbList<DeleteMembershipRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteMembershipRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteMembershipRequest>(create);
+  static DeleteMembershipRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteMembershipRequest>(create);
   static DeleteMembershipRequest? _defaultInstance;
 
   ///  Required. Resource name of the membership to delete. Chat apps can delete
@@ -848,7 +997,10 @@ class DeleteMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -868,13 +1020,16 @@ class DeleteMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get useAdminAccess => $_getBF(1);
   @$pb.TagNumber(2)
-  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  set useAdminAccess($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUseAdminAccess() => $_has(1);
   @$pb.TagNumber(2)
   void clearUseAdminAccess() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

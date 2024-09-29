@@ -33,26 +33,32 @@ class Usage extends $pb.GeneratedMessage {
     return $result;
   }
   Usage._() : super();
-  factory Usage.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Usage.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Usage.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Usage.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Usage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Usage',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'requirements')
-    ..pc<UsageRule>(6, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: UsageRule.create)
+    ..pc<UsageRule>(6, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+        subBuilder: UsageRule.create)
     ..aOS(7, _omitFieldNames ? '' : 'producerNotificationChannel')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Usage clone() => Usage()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Usage copyWith(void Function(Usage) updates) => super.copyWith((message) => updates(message as Usage)) as Usage;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Usage copyWith(void Function(Usage) updates) =>
+      super.copyWith((message) => updates(message as Usage)) as Usage;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -61,7 +67,8 @@ class Usage extends $pb.GeneratedMessage {
   Usage createEmptyInstance() => create();
   static $pb.PbList<Usage> createRepeated() => $pb.PbList<Usage>();
   @$core.pragma('dart2js:noInline')
-  static Usage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Usage>(create);
+  static Usage getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Usage>(create);
   static Usage? _defaultInstance;
 
   ///  Requirements that must be satisfied before a consumer project can use the
@@ -93,7 +100,10 @@ class Usage extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get producerNotificationChannel => $_getSZ(2);
   @$pb.TagNumber(7)
-  set producerNotificationChannel($core.String v) { $_setString(2, v); }
+  set producerNotificationChannel($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasProducerNotificationChannel() => $_has(2);
   @$pb.TagNumber(7)
@@ -144,26 +154,31 @@ class UsageRule extends $pb.GeneratedMessage {
     return $result;
   }
   UsageRule._() : super();
-  factory UsageRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UsageRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UsageRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UsageRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsageRule',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'selector')
     ..aOB(2, _omitFieldNames ? '' : 'allowUnregisteredCalls')
     ..aOB(3, _omitFieldNames ? '' : 'skipServiceControl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UsageRule clone() => UsageRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UsageRule copyWith(void Function(UsageRule) updates) => super.copyWith((message) => updates(message as UsageRule)) as UsageRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UsageRule copyWith(void Function(UsageRule) updates) =>
+      super.copyWith((message) => updates(message as UsageRule)) as UsageRule;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -172,7 +187,8 @@ class UsageRule extends $pb.GeneratedMessage {
   UsageRule createEmptyInstance() => create();
   static $pb.PbList<UsageRule> createRepeated() => $pb.PbList<UsageRule>();
   @$core.pragma('dart2js:noInline')
-  static UsageRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsageRule>(create);
+  static UsageRule getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsageRule>(create);
   static UsageRule? _defaultInstance;
 
   ///  Selects the methods to which this rule applies. Use '*' to indicate all
@@ -183,7 +199,10 @@ class UsageRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get selector => $_getSZ(0);
   @$pb.TagNumber(1)
-  set selector($core.String v) { $_setString(0, v); }
+  set selector($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -194,7 +213,10 @@ class UsageRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get allowUnregisteredCalls => $_getBF(1);
   @$pb.TagNumber(2)
-  set allowUnregisteredCalls($core.bool v) { $_setBool(1, v); }
+  set allowUnregisteredCalls($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAllowUnregisteredCalls() => $_has(1);
   @$pb.TagNumber(2)
@@ -207,13 +229,16 @@ class UsageRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get skipServiceControl => $_getBF(2);
   @$pb.TagNumber(3)
-  set skipServiceControl($core.bool v) { $_setBool(2, v); }
+  set skipServiceControl($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSkipServiceControl() => $_has(2);
   @$pb.TagNumber(3)
   void clearSkipServiceControl() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

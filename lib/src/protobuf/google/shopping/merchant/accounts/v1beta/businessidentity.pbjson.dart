@@ -18,12 +18,66 @@ const BusinessIdentity$json = {
   '1': 'BusinessIdentity',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'promotions_consent', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.PromotionsConsent', '8': {}, '10': 'promotionsConsent'},
-    {'1': 'black_owned', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute', '8': {}, '10': 'blackOwned'},
-    {'1': 'women_owned', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute', '8': {}, '10': 'womenOwned'},
-    {'1': 'veteran_owned', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute', '8': {}, '10': 'veteranOwned'},
-    {'1': 'latino_owned', '3': 6, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute', '8': {}, '10': 'latinoOwned'},
-    {'1': 'small_business', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute', '8': {}, '10': 'smallBusiness'},
+    {
+      '1': 'promotions_consent',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.PromotionsConsent',
+      '8': {},
+      '10': 'promotionsConsent'
+    },
+    {
+      '1': 'black_owned',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute',
+      '8': {},
+      '10': 'blackOwned'
+    },
+    {
+      '1': 'women_owned',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute',
+      '8': {},
+      '10': 'womenOwned'
+    },
+    {
+      '1': 'veteran_owned',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute',
+      '8': {},
+      '10': 'veteranOwned'
+    },
+    {
+      '1': 'latino_owned',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute',
+      '8': {},
+      '10': 'latinoOwned'
+    },
+    {
+      '1': 'small_business',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute',
+      '8': {},
+      '10': 'smallBusiness'
+    },
   ],
   '3': [BusinessIdentity_IdentityAttribute$json],
   '4': [BusinessIdentity_PromotionsConsent$json],
@@ -34,7 +88,16 @@ const BusinessIdentity$json = {
 const BusinessIdentity_IdentityAttribute$json = {
   '1': 'IdentityAttribute',
   '2': [
-    {'1': 'identity_declaration', '3': 1, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute.IdentityDeclaration', '8': {}, '10': 'identityDeclaration'},
+    {
+      '1': 'identity_declaration',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.BusinessIdentity.IdentityAttribute.IdentityDeclaration',
+      '8': {},
+      '10': 'identityDeclaration'
+    },
   ],
   '4': [BusinessIdentity_IdentityAttribute_IdentityDeclaration$json],
 };
@@ -95,16 +158,33 @@ const GetBusinessIdentityRequest$json = {
 };
 
 /// Descriptor for `GetBusinessIdentityRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getBusinessIdentityRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRCdXNpbmVzc0lkZW50aXR5UmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
-    'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0J1c2luZXNzSWRlbnRpdHlSBG5hbWU=');
+final $typed_data.Uint8List getBusinessIdentityRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRCdXNpbmVzc0lkZW50aXR5UmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
+        'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0J1c2luZXNzSWRlbnRpdHlSBG5hbWU=');
 
 @$core.Deprecated('Use updateBusinessIdentityRequestDescriptor instead')
 const UpdateBusinessIdentityRequest$json = {
   '1': 'UpdateBusinessIdentityRequest',
   '2': [
-    {'1': 'business_identity', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity', '8': {}, '10': 'businessIdentity'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'business_identity',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.BusinessIdentity',
+      '8': {},
+      '10': 'businessIdentity'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -114,4 +194,3 @@ final $typed_data.Uint8List updateBusinessIdentityRequestDescriptor = $convert.b
     'EoCzI6Lmdvb2dsZS5zaG9wcGluZy5tZXJjaGFudC5hY2NvdW50cy52MWJldGEuQnVzaW5lc3NJ'
     'ZGVudGl0eUID4EECUhBidXNpbmVzc0lkZW50aXR5EkAKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ2'
     '9vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNr');
-

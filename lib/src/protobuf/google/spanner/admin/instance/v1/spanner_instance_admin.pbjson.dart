@@ -18,8 +18,21 @@ const ReplicaInfo$json = {
   '1': 'ReplicaInfo',
   '2': [
     {'1': 'location', '3': 1, '4': 1, '5': 9, '10': 'location'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.ReplicaInfo.ReplicaType', '10': 'type'},
-    {'1': 'default_leader_location', '3': 3, '4': 1, '5': 8, '10': 'defaultLeaderLocation'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.ReplicaInfo.ReplicaType',
+      '10': 'type'
+    },
+    {
+      '1': 'default_leader_location',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'defaultLeaderLocation'
+    },
   ],
   '4': [ReplicaInfo_ReplicaType$json],
 };
@@ -49,15 +62,53 @@ const InstanceConfig$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'config_type', '3': 5, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.InstanceConfig.Type', '8': {}, '10': 'configType'},
-    {'1': 'replicas', '3': 3, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.ReplicaInfo', '10': 'replicas'},
-    {'1': 'optional_replicas', '3': 6, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.ReplicaInfo', '8': {}, '10': 'optionalReplicas'},
+    {
+      '1': 'config_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig.Type',
+      '8': {},
+      '10': 'configType'
+    },
+    {
+      '1': 'replicas',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.ReplicaInfo',
+      '10': 'replicas'
+    },
+    {
+      '1': 'optional_replicas',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.ReplicaInfo',
+      '8': {},
+      '10': 'optionalReplicas'
+    },
     {'1': 'base_config', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'baseConfig'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'etag', '3': 9, '4': 1, '5': 9, '10': 'etag'},
     {'1': 'leader_options', '3': 4, '4': 3, '5': 9, '10': 'leaderOptions'},
     {'1': 'reconciling', '3': 10, '4': 1, '5': 8, '8': {}, '10': 'reconciling'},
-    {'1': 'state', '3': 11, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.InstanceConfig.State', '8': {}, '10': 'state'},
+    {
+      '1': 'state',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig.State',
+      '8': {},
+      '10': 'state'
+    },
   ],
   '3': [InstanceConfig_LabelsEntry$json],
   '4': [InstanceConfig_Type$json, InstanceConfig_State$json],
@@ -119,10 +170,31 @@ final $typed_data.Uint8List instanceConfigDescriptor = $convert.base64Decode(
 const AutoscalingConfig$json = {
   '1': 'AutoscalingConfig',
   '2': [
-    {'1': 'autoscaling_limits', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.AutoscalingConfig.AutoscalingLimits', '8': {}, '10': 'autoscalingLimits'},
-    {'1': 'autoscaling_targets', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.AutoscalingConfig.AutoscalingTargets', '8': {}, '10': 'autoscalingTargets'},
+    {
+      '1': 'autoscaling_limits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.spanner.admin.instance.v1.AutoscalingConfig.AutoscalingLimits',
+      '8': {},
+      '10': 'autoscalingLimits'
+    },
+    {
+      '1': 'autoscaling_targets',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.spanner.admin.instance.v1.AutoscalingConfig.AutoscalingTargets',
+      '8': {},
+      '10': 'autoscalingTargets'
+    },
   ],
-  '3': [AutoscalingConfig_AutoscalingLimits$json, AutoscalingConfig_AutoscalingTargets$json],
+  '3': [
+    AutoscalingConfig_AutoscalingLimits$json,
+    AutoscalingConfig_AutoscalingTargets$json
+  ],
 };
 
 @$core.Deprecated('Use autoscalingConfigDescriptor instead')
@@ -130,9 +202,23 @@ const AutoscalingConfig_AutoscalingLimits$json = {
   '1': 'AutoscalingLimits',
   '2': [
     {'1': 'min_nodes', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'minNodes'},
-    {'1': 'min_processing_units', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'minProcessingUnits'},
+    {
+      '1': 'min_processing_units',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'minProcessingUnits'
+    },
     {'1': 'max_nodes', '3': 3, '4': 1, '5': 5, '9': 1, '10': 'maxNodes'},
-    {'1': 'max_processing_units', '3': 4, '4': 1, '5': 5, '9': 1, '10': 'maxProcessingUnits'},
+    {
+      '1': 'max_processing_units',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'maxProcessingUnits'
+    },
   ],
   '8': [
     {'1': 'min_limit'},
@@ -144,8 +230,22 @@ const AutoscalingConfig_AutoscalingLimits$json = {
 const AutoscalingConfig_AutoscalingTargets$json = {
   '1': 'AutoscalingTargets',
   '2': [
-    {'1': 'high_priority_cpu_utilization_percent', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'highPriorityCpuUtilizationPercent'},
-    {'1': 'storage_utilization_percent', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'storageUtilizationPercent'},
+    {
+      '1': 'high_priority_cpu_utilization_percent',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'highPriorityCpuUtilizationPercent'
+    },
+    {
+      '1': 'storage_utilization_percent',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'storageUtilizationPercent'
+    },
   ],
 };
 
@@ -173,13 +273,60 @@ const Instance$json = {
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'node_count', '3': 5, '4': 1, '5': 5, '10': 'nodeCount'},
     {'1': 'processing_units', '3': 9, '4': 1, '5': 5, '10': 'processingUnits'},
-    {'1': 'autoscaling_config', '3': 17, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.AutoscalingConfig', '8': {}, '10': 'autoscalingConfig'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.Instance.State', '8': {}, '10': 'state'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'autoscaling_config',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.AutoscalingConfig',
+      '8': {},
+      '10': 'autoscalingConfig'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.Instance.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'endpoint_uris', '3': 8, '4': 3, '5': 9, '10': 'endpointUris'},
-    {'1': 'create_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'edition', '3': 20, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.Instance.Edition', '8': {}, '10': 'edition'},
+    {
+      '1': 'create_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'edition',
+      '3': 20,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.Instance.Edition',
+      '8': {},
+      '10': 'edition'
+    },
   ],
   '3': [Instance_LabelsEntry$json],
   '4': [Instance_State$json, Instance_Edition$json],
@@ -259,16 +406,24 @@ final $typed_data.Uint8List listInstanceConfigsRequestDescriptor = $convert.base
 const ListInstanceConfigsResponse$json = {
   '1': 'ListInstanceConfigsResponse',
   '2': [
-    {'1': 'instance_configs', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig', '10': 'instanceConfigs'},
+    {
+      '1': 'instance_configs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig',
+      '10': 'instanceConfigs'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListInstanceConfigsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listInstanceConfigsResponseDescriptor = $convert.base64Decode(
-    'ChtMaXN0SW5zdGFuY2VDb25maWdzUmVzcG9uc2USWwoQaW5zdGFuY2VfY29uZmlncxgBIAMoCz'
-    'IwLmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkluc3RhbmNlQ29uZmlnUg9pbnN0'
-    'YW5jZUNvbmZpZ3MSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listInstanceConfigsResponseDescriptor =
+    $convert.base64Decode(
+        'ChtMaXN0SW5zdGFuY2VDb25maWdzUmVzcG9uc2USWwoQaW5zdGFuY2VfY29uZmlncxgBIAMoCz'
+        'IwLmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkluc3RhbmNlQ29uZmlnUg9pbnN0'
+        'YW5jZUNvbmZpZ3MSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use getInstanceConfigRequestDescriptor instead')
 const GetInstanceConfigRequest$json = {
@@ -279,17 +434,33 @@ const GetInstanceConfigRequest$json = {
 };
 
 /// Descriptor for `GetInstanceConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getInstanceConfigRequestDescriptor = $convert.base64Decode(
-    'ChhHZXRJbnN0YW5jZUNvbmZpZ1JlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcGFubm'
-    'VyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlQ29uZmlnUgRuYW1l');
+final $typed_data.Uint8List getInstanceConfigRequestDescriptor =
+    $convert.base64Decode(
+        'ChhHZXRJbnN0YW5jZUNvbmZpZ1JlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcGFubm'
+        'VyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlQ29uZmlnUgRuYW1l');
 
 @$core.Deprecated('Use createInstanceConfigRequestDescriptor instead')
 const CreateInstanceConfigRequest$json = {
   '1': 'CreateInstanceConfigRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'instance_config_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'instanceConfigId'},
-    {'1': 'instance_config', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig', '8': {}, '10': 'instanceConfig'},
+    {
+      '1': 'instance_config_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'instanceConfigId'
+    },
+    {
+      '1': 'instance_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig',
+      '8': {},
+      '10': 'instanceConfig'
+    },
     {'1': 'validate_only', '3': 4, '4': 1, '5': 8, '10': 'validateOnly'},
   ],
 };
@@ -307,8 +478,24 @@ final $typed_data.Uint8List createInstanceConfigRequestDescriptor = $convert.bas
 const UpdateInstanceConfigRequest$json = {
   '1': 'UpdateInstanceConfigRequest',
   '2': [
-    {'1': 'instance_config', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig', '8': {}, '10': 'instanceConfig'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'instance_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig',
+      '8': {},
+      '10': 'instanceConfig'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
     {'1': 'validate_only', '3': 3, '4': 1, '5': 8, '10': 'validateOnly'},
   ],
 };
@@ -332,10 +519,11 @@ const DeleteInstanceConfigRequest$json = {
 };
 
 /// Descriptor for `DeleteInstanceConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteInstanceConfigRequestDescriptor = $convert.base64Decode(
-    'ChtEZWxldGVJbnN0YW5jZUNvbmZpZ1JlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcG'
-    'FubmVyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlQ29uZmlnUgRuYW1lEhIKBGV0YWcYAiABKAlS'
-    'BGV0YWcSIwoNdmFsaWRhdGVfb25seRgDIAEoCFIMdmFsaWRhdGVPbmx5');
+final $typed_data.Uint8List deleteInstanceConfigRequestDescriptor =
+    $convert.base64Decode(
+        'ChtEZWxldGVJbnN0YW5jZUNvbmZpZ1JlcXVlc3QSQQoEbmFtZRgBIAEoCUIt4EEC+kEnCiVzcG'
+        'FubmVyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlQ29uZmlnUgRuYW1lEhIKBGV0YWcYAiABKAlS'
+        'BGV0YWcSIwoNdmFsaWRhdGVfb25seRgDIAEoCFIMdmFsaWRhdGVPbmx5');
 
 @$core.Deprecated('Use listInstanceConfigOperationsRequestDescriptor instead')
 const ListInstanceConfigOperationsRequest$json = {
@@ -349,33 +537,49 @@ const ListInstanceConfigOperationsRequest$json = {
 };
 
 /// Descriptor for `ListInstanceConfigOperationsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listInstanceConfigOperationsRequestDescriptor = $convert.base64Decode(
-    'CiNMaXN0SW5zdGFuY2VDb25maWdPcGVyYXRpb25zUmVxdWVzdBJLCgZwYXJlbnQYASABKAlCM+'
-    'BBAvpBLQorY2xvdWRyZXNvdXJjZW1hbmFnZXIuZ29vZ2xlYXBpcy5jb20vUHJvamVjdFIGcGFy'
-    'ZW50EhYKBmZpbHRlchgCIAEoCVIGZmlsdGVyEhsKCXBhZ2Vfc2l6ZRgDIAEoBVIIcGFnZVNpem'
-    'USHQoKcGFnZV90b2tlbhgEIAEoCVIJcGFnZVRva2Vu');
+final $typed_data.Uint8List listInstanceConfigOperationsRequestDescriptor =
+    $convert.base64Decode(
+        'CiNMaXN0SW5zdGFuY2VDb25maWdPcGVyYXRpb25zUmVxdWVzdBJLCgZwYXJlbnQYASABKAlCM+'
+        'BBAvpBLQorY2xvdWRyZXNvdXJjZW1hbmFnZXIuZ29vZ2xlYXBpcy5jb20vUHJvamVjdFIGcGFy'
+        'ZW50EhYKBmZpbHRlchgCIAEoCVIGZmlsdGVyEhsKCXBhZ2Vfc2l6ZRgDIAEoBVIIcGFnZVNpem'
+        'USHQoKcGFnZV90b2tlbhgEIAEoCVIJcGFnZVRva2Vu');
 
 @$core.Deprecated('Use listInstanceConfigOperationsResponseDescriptor instead')
 const ListInstanceConfigOperationsResponse$json = {
   '1': 'ListInstanceConfigOperationsResponse',
   '2': [
-    {'1': 'operations', '3': 1, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'operations'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListInstanceConfigOperationsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listInstanceConfigOperationsResponseDescriptor = $convert.base64Decode(
-    'CiRMaXN0SW5zdGFuY2VDb25maWdPcGVyYXRpb25zUmVzcG9uc2USPQoKb3BlcmF0aW9ucxgBIA'
-    'MoCzIdLmdvb2dsZS5sb25ncnVubmluZy5PcGVyYXRpb25SCm9wZXJhdGlvbnMSJgoPbmV4dF9w'
-    'YWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
+final $typed_data.Uint8List listInstanceConfigOperationsResponseDescriptor =
+    $convert.base64Decode(
+        'CiRMaXN0SW5zdGFuY2VDb25maWdPcGVyYXRpb25zUmVzcG9uc2USPQoKb3BlcmF0aW9ucxgBIA'
+        'MoCzIdLmdvb2dsZS5sb25ncnVubmluZy5PcGVyYXRpb25SCm9wZXJhdGlvbnMSJgoPbmV4dF9w'
+        'YWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
 
 @$core.Deprecated('Use getInstanceRequestDescriptor instead')
 const GetInstanceRequest$json = {
   '1': 'GetInstanceRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'field_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'fieldMask'},
+    {
+      '1': 'field_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'fieldMask'
+    },
   ],
 };
 
@@ -391,7 +595,15 @@ const CreateInstanceRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'instance_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'instanceId'},
-    {'1': 'instance', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance', '8': {}, '10': 'instance'},
+    {
+      '1': 'instance',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance',
+      '8': {},
+      '10': 'instance'
+    },
   ],
 };
 
@@ -410,7 +622,14 @@ const ListInstancesRequest$json = {
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
     {'1': 'filter', '3': 4, '4': 1, '5': 9, '10': 'filter'},
-    {'1': 'instance_deadline', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'instanceDeadline'},
+    {
+      '1': 'instance_deadline',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'instanceDeadline'
+    },
   ],
 };
 
@@ -426,7 +645,14 @@ final $typed_data.Uint8List listInstancesRequestDescriptor = $convert.base64Deco
 const ListInstancesResponse$json = {
   '1': 'ListInstancesResponse',
   '2': [
-    {'1': 'instances', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance', '10': 'instances'},
+    {
+      '1': 'instances',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance',
+      '10': 'instances'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
   ],
@@ -443,8 +669,24 @@ final $typed_data.Uint8List listInstancesResponseDescriptor = $convert.base64Dec
 const UpdateInstanceRequest$json = {
   '1': 'UpdateInstanceRequest',
   '2': [
-    {'1': 'instance', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance', '8': {}, '10': 'instance'},
-    {'1': 'field_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'fieldMask'},
+    {
+      '1': 'instance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance',
+      '8': {},
+      '10': 'instance'
+    },
+    {
+      '1': 'field_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'fieldMask'
+    },
   ],
 };
 
@@ -471,11 +713,46 @@ final $typed_data.Uint8List deleteInstanceRequestDescriptor = $convert.base64Dec
 const CreateInstanceMetadata$json = {
   '1': 'CreateInstanceMetadata',
   '2': [
-    {'1': 'instance', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance', '10': 'instance'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'expected_fulfillment_period', '3': 5, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.FulfillmentPeriod', '10': 'expectedFulfillmentPeriod'},
+    {
+      '1': 'instance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance',
+      '10': 'instance'
+    },
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'expected_fulfillment_period',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.FulfillmentPeriod',
+      '10': 'expectedFulfillmentPeriod'
+    },
   ],
 };
 
@@ -494,11 +771,46 @@ final $typed_data.Uint8List createInstanceMetadataDescriptor = $convert.base64De
 const UpdateInstanceMetadata$json = {
   '1': 'UpdateInstanceMetadata',
   '2': [
-    {'1': 'instance', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.Instance', '10': 'instance'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'expected_fulfillment_period', '3': 5, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.FulfillmentPeriod', '10': 'expectedFulfillmentPeriod'},
+    {
+      '1': 'instance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.Instance',
+      '10': 'instance'
+    },
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'expected_fulfillment_period',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.FulfillmentPeriod',
+      '10': 'expectedFulfillmentPeriod'
+    },
   ],
 };
 
@@ -517,9 +829,30 @@ final $typed_data.Uint8List updateInstanceMetadataDescriptor = $convert.base64De
 const CreateInstanceConfigMetadata$json = {
   '1': 'CreateInstanceConfigMetadata',
   '2': [
-    {'1': 'instance_config', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig', '10': 'instanceConfig'},
-    {'1': 'progress', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.OperationProgress', '10': 'progress'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
+    {
+      '1': 'instance_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig',
+      '10': 'instanceConfig'
+    },
+    {
+      '1': 'progress',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
   ],
 };
 
@@ -535,9 +868,30 @@ final $typed_data.Uint8List createInstanceConfigMetadataDescriptor = $convert.ba
 const UpdateInstanceConfigMetadata$json = {
   '1': 'UpdateInstanceConfigMetadata',
   '2': [
-    {'1': 'instance_config', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstanceConfig', '10': 'instanceConfig'},
-    {'1': 'progress', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.OperationProgress', '10': 'progress'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
+    {
+      '1': 'instance_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig',
+      '10': 'instanceConfig'
+    },
+    {
+      '1': 'progress',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
   ],
 };
 
@@ -557,12 +911,57 @@ const InstancePartition$json = {
     {'1': 'config', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'config'},
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'node_count', '3': 5, '4': 1, '5': 5, '9': 0, '10': 'nodeCount'},
-    {'1': 'processing_units', '3': 6, '4': 1, '5': 5, '9': 0, '10': 'processingUnits'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.spanner.admin.instance.v1.InstancePartition.State', '8': {}, '10': 'state'},
-    {'1': 'create_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'referencing_databases', '3': 10, '4': 3, '5': 9, '8': {}, '10': 'referencingDatabases'},
-    {'1': 'referencing_backups', '3': 11, '4': 3, '5': 9, '8': {}, '10': 'referencingBackups'},
+    {
+      '1': 'processing_units',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'processingUnits'
+    },
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.InstancePartition.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'referencing_databases',
+      '3': 10,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'referencingDatabases'
+    },
+    {
+      '1': 'referencing_backups',
+      '3': 11,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'referencingBackups'
+    },
     {'1': 'etag', '3': 12, '4': 1, '5': 9, '10': 'etag'},
   ],
   '4': [InstancePartition_State$json],
@@ -604,10 +1003,38 @@ final $typed_data.Uint8List instancePartitionDescriptor = $convert.base64Decode(
 const CreateInstancePartitionMetadata$json = {
   '1': 'CreateInstancePartitionMetadata',
   '2': [
-    {'1': 'instance_partition', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstancePartition', '10': 'instancePartition'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'instance_partition',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstancePartition',
+      '10': 'instancePartition'
+    },
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -625,8 +1052,23 @@ const CreateInstancePartitionRequest$json = {
   '1': 'CreateInstancePartitionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'instance_partition_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'instancePartitionId'},
-    {'1': 'instance_partition', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstancePartition', '8': {}, '10': 'instancePartition'},
+    {
+      '1': 'instance_partition_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'instancePartitionId'
+    },
+    {
+      '1': 'instance_partition',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstancePartition',
+      '8': {},
+      '10': 'instancePartition'
+    },
   ],
 };
 
@@ -648,10 +1090,11 @@ const DeleteInstancePartitionRequest$json = {
 };
 
 /// Descriptor for `DeleteInstancePartitionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteInstancePartitionRequestDescriptor = $convert.base64Decode(
-    'Ch5EZWxldGVJbnN0YW5jZVBhcnRpdGlvblJlcXVlc3QSRAoEbmFtZRgBIAEoCUIw4EEC+kEqCi'
-    'hzcGFubmVyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlUGFydGl0aW9uUgRuYW1lEhIKBGV0YWcY'
-    'AiABKAlSBGV0YWc=');
+final $typed_data.Uint8List deleteInstancePartitionRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5EZWxldGVJbnN0YW5jZVBhcnRpdGlvblJlcXVlc3QSRAoEbmFtZRgBIAEoCUIw4EEC+kEqCi'
+        'hzcGFubmVyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlUGFydGl0aW9uUgRuYW1lEhIKBGV0YWcY'
+        'AiABKAlSBGV0YWc=');
 
 @$core.Deprecated('Use getInstancePartitionRequestDescriptor instead')
 const GetInstancePartitionRequest$json = {
@@ -662,34 +1105,80 @@ const GetInstancePartitionRequest$json = {
 };
 
 /// Descriptor for `GetInstancePartitionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getInstancePartitionRequestDescriptor = $convert.base64Decode(
-    'ChtHZXRJbnN0YW5jZVBhcnRpdGlvblJlcXVlc3QSRAoEbmFtZRgBIAEoCUIw4EEC+kEqCihzcG'
-    'FubmVyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlUGFydGl0aW9uUgRuYW1l');
+final $typed_data.Uint8List getInstancePartitionRequestDescriptor =
+    $convert.base64Decode(
+        'ChtHZXRJbnN0YW5jZVBhcnRpdGlvblJlcXVlc3QSRAoEbmFtZRgBIAEoCUIw4EEC+kEqCihzcG'
+        'FubmVyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlUGFydGl0aW9uUgRuYW1l');
 
 @$core.Deprecated('Use updateInstancePartitionRequestDescriptor instead')
 const UpdateInstancePartitionRequest$json = {
   '1': 'UpdateInstancePartitionRequest',
   '2': [
-    {'1': 'instance_partition', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstancePartition', '8': {}, '10': 'instancePartition'},
-    {'1': 'field_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'fieldMask'},
+    {
+      '1': 'instance_partition',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstancePartition',
+      '8': {},
+      '10': 'instancePartition'
+    },
+    {
+      '1': 'field_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'fieldMask'
+    },
   ],
 };
 
 /// Descriptor for `UpdateInstancePartitionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateInstancePartitionRequestDescriptor = $convert.base64Decode(
-    'Ch5VcGRhdGVJbnN0YW5jZVBhcnRpdGlvblJlcXVlc3QSZwoSaW5zdGFuY2VfcGFydGl0aW9uGA'
-    'EgASgLMjMuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2VQYXJ0aXRp'
-    'b25CA+BBAlIRaW5zdGFuY2VQYXJ0aXRpb24SPgoKZmllbGRfbWFzaxgCIAEoCzIaLmdvb2dsZS'
-    '5wcm90b2J1Zi5GaWVsZE1hc2tCA+BBAlIJZmllbGRNYXNr');
+final $typed_data.Uint8List updateInstancePartitionRequestDescriptor =
+    $convert.base64Decode(
+        'Ch5VcGRhdGVJbnN0YW5jZVBhcnRpdGlvblJlcXVlc3QSZwoSaW5zdGFuY2VfcGFydGl0aW9uGA'
+        'EgASgLMjMuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2VQYXJ0aXRp'
+        'b25CA+BBAlIRaW5zdGFuY2VQYXJ0aXRpb24SPgoKZmllbGRfbWFzaxgCIAEoCzIaLmdvb2dsZS'
+        '5wcm90b2J1Zi5GaWVsZE1hc2tCA+BBAlIJZmllbGRNYXNr');
 
 @$core.Deprecated('Use updateInstancePartitionMetadataDescriptor instead')
 const UpdateInstancePartitionMetadata$json = {
   '1': 'UpdateInstancePartitionMetadata',
   '2': [
-    {'1': 'instance_partition', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.InstancePartition', '10': 'instancePartition'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'instance_partition',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstancePartition',
+      '10': 'instancePartition'
+    },
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -709,7 +1198,15 @@ const ListInstancePartitionsRequest$json = {
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
-    {'1': 'instance_partition_deadline', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'instancePartitionDeadline'},
+    {
+      '1': 'instance_partition_deadline',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'instancePartitionDeadline'
+    },
   ],
 };
 
@@ -725,20 +1222,29 @@ final $typed_data.Uint8List listInstancePartitionsRequestDescriptor = $convert.b
 const ListInstancePartitionsResponse$json = {
   '1': 'ListInstancePartitionsResponse',
   '2': [
-    {'1': 'instance_partitions', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.instance.v1.InstancePartition', '10': 'instancePartitions'},
+    {
+      '1': 'instance_partitions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.InstancePartition',
+      '10': 'instancePartitions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
   ],
 };
 
 /// Descriptor for `ListInstancePartitionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listInstancePartitionsResponseDescriptor = $convert.base64Decode(
-    'Ch5MaXN0SW5zdGFuY2VQYXJ0aXRpb25zUmVzcG9uc2USZAoTaW5zdGFuY2VfcGFydGl0aW9ucx'
-    'gBIAMoCzIzLmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkluc3RhbmNlUGFydGl0'
-    'aW9uUhJpbnN0YW5jZVBhcnRpdGlvbnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UG'
-    'FnZVRva2VuEiAKC3VucmVhY2hhYmxlGAMgAygJUgt1bnJlYWNoYWJsZQ==');
+final $typed_data.Uint8List listInstancePartitionsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch5MaXN0SW5zdGFuY2VQYXJ0aXRpb25zUmVzcG9uc2USZAoTaW5zdGFuY2VfcGFydGl0aW9ucx'
+        'gBIAMoCzIzLmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkluc3RhbmNlUGFydGl0'
+        'aW9uUhJpbnN0YW5jZVBhcnRpdGlvbnMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UG'
+        'FnZVRva2VuEiAKC3VucmVhY2hhYmxlGAMgAygJUgt1bnJlYWNoYWJsZQ==');
 
-@$core.Deprecated('Use listInstancePartitionOperationsRequestDescriptor instead')
+@$core
+    .Deprecated('Use listInstancePartitionOperationsRequestDescriptor instead')
 const ListInstancePartitionOperationsRequest$json = {
   '1': 'ListInstancePartitionOperationsRequest',
   '2': [
@@ -746,42 +1252,73 @@ const ListInstancePartitionOperationsRequest$json = {
     {'1': 'filter', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'filter'},
     {'1': 'page_size', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
-    {'1': 'instance_partition_deadline', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'instancePartitionDeadline'},
+    {
+      '1': 'instance_partition_deadline',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'instancePartitionDeadline'
+    },
   ],
 };
 
 /// Descriptor for `ListInstancePartitionOperationsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listInstancePartitionOperationsRequestDescriptor = $convert.base64Decode(
-    'CiZMaXN0SW5zdGFuY2VQYXJ0aXRpb25PcGVyYXRpb25zUmVxdWVzdBI/CgZwYXJlbnQYASABKA'
-    'lCJ+BBAvpBIQofc3Bhbm5lci5nb29nbGVhcGlzLmNvbS9JbnN0YW5jZVIGcGFyZW50EhsKBmZp'
-    'bHRlchgCIAEoCUID4EEBUgZmaWx0ZXISIAoJcGFnZV9zaXplGAMgASgFQgPgQQFSCHBhZ2VTaX'
-    'plEiIKCnBhZ2VfdG9rZW4YBCABKAlCA+BBAVIJcGFnZVRva2VuEl8KG2luc3RhbmNlX3BhcnRp'
-    'dGlvbl9kZWFkbGluZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAVIZaW'
-    '5zdGFuY2VQYXJ0aXRpb25EZWFkbGluZQ==');
+final $typed_data.Uint8List listInstancePartitionOperationsRequestDescriptor =
+    $convert.base64Decode(
+        'CiZMaXN0SW5zdGFuY2VQYXJ0aXRpb25PcGVyYXRpb25zUmVxdWVzdBI/CgZwYXJlbnQYASABKA'
+        'lCJ+BBAvpBIQofc3Bhbm5lci5nb29nbGVhcGlzLmNvbS9JbnN0YW5jZVIGcGFyZW50EhsKBmZp'
+        'bHRlchgCIAEoCUID4EEBUgZmaWx0ZXISIAoJcGFnZV9zaXplGAMgASgFQgPgQQFSCHBhZ2VTaX'
+        'plEiIKCnBhZ2VfdG9rZW4YBCABKAlCA+BBAVIJcGFnZVRva2VuEl8KG2luc3RhbmNlX3BhcnRp'
+        'dGlvbl9kZWFkbGluZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAVIZaW'
+        '5zdGFuY2VQYXJ0aXRpb25EZWFkbGluZQ==');
 
-@$core.Deprecated('Use listInstancePartitionOperationsResponseDescriptor instead')
+@$core
+    .Deprecated('Use listInstancePartitionOperationsResponseDescriptor instead')
 const ListInstancePartitionOperationsResponse$json = {
   '1': 'ListInstancePartitionOperationsResponse',
   '2': [
-    {'1': 'operations', '3': 1, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'operations'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'unreachable_instance_partitions', '3': 3, '4': 3, '5': 9, '10': 'unreachableInstancePartitions'},
+    {
+      '1': 'unreachable_instance_partitions',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'unreachableInstancePartitions'
+    },
   ],
 };
 
 /// Descriptor for `ListInstancePartitionOperationsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listInstancePartitionOperationsResponseDescriptor = $convert.base64Decode(
-    'CidMaXN0SW5zdGFuY2VQYXJ0aXRpb25PcGVyYXRpb25zUmVzcG9uc2USPQoKb3BlcmF0aW9ucx'
-    'gBIAMoCzIdLmdvb2dsZS5sb25ncnVubmluZy5PcGVyYXRpb25SCm9wZXJhdGlvbnMSJgoPbmV4'
-    'dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2VuEkYKH3VucmVhY2hhYmxlX2luc3Rhbm'
-    'NlX3BhcnRpdGlvbnMYAyADKAlSHXVucmVhY2hhYmxlSW5zdGFuY2VQYXJ0aXRpb25z');
+final $typed_data.Uint8List listInstancePartitionOperationsResponseDescriptor =
+    $convert.base64Decode(
+        'CidMaXN0SW5zdGFuY2VQYXJ0aXRpb25PcGVyYXRpb25zUmVzcG9uc2USPQoKb3BlcmF0aW9ucx'
+        'gBIAMoCzIdLmdvb2dsZS5sb25ncnVubmluZy5PcGVyYXRpb25SCm9wZXJhdGlvbnMSJgoPbmV4'
+        'dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2VuEkYKH3VucmVhY2hhYmxlX2luc3Rhbm'
+        'NlX3BhcnRpdGlvbnMYAyADKAlSHXVucmVhY2hhYmxlSW5zdGFuY2VQYXJ0aXRpb25z');
 
 @$core.Deprecated('Use moveInstanceRequestDescriptor instead')
 const MoveInstanceRequest$json = {
   '1': 'MoveInstanceRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'target_config', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'targetConfig'},
+    {
+      '1': 'target_config',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'targetConfig'
+    },
   ],
 };
 
@@ -798,16 +1335,30 @@ const MoveInstanceResponse$json = {
 };
 
 /// Descriptor for `MoveInstanceResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List moveInstanceResponseDescriptor = $convert.base64Decode(
-    'ChRNb3ZlSW5zdGFuY2VSZXNwb25zZQ==');
+final $typed_data.Uint8List moveInstanceResponseDescriptor =
+    $convert.base64Decode('ChRNb3ZlSW5zdGFuY2VSZXNwb25zZQ==');
 
 @$core.Deprecated('Use moveInstanceMetadataDescriptor instead')
 const MoveInstanceMetadata$json = {
   '1': 'MoveInstanceMetadata',
   '2': [
     {'1': 'target_config', '3': 1, '4': 1, '5': 9, '10': 'targetConfig'},
-    {'1': 'progress', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.admin.instance.v1.OperationProgress', '10': 'progress'},
-    {'1': 'cancel_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
+    {
+      '1': 'progress',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
   ],
 };
 
@@ -817,4 +1368,3 @@ final $typed_data.Uint8List moveInstanceMetadataDescriptor = $convert.base64Deco
     '5maWcSTwoIcHJvZ3Jlc3MYAiABKAsyMy5nb29nbGUuc3Bhbm5lci5hZG1pbi5pbnN0YW5jZS52'
     'MS5PcGVyYXRpb25Qcm9ncmVzc1IIcHJvZ3Jlc3MSOwoLY2FuY2VsX3RpbWUYAyABKAsyGi5nb2'
     '9nbGUucHJvdG9idWYuVGltZXN0YW1wUgpjYW5jZWxUaW1l');
-

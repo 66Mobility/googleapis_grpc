@@ -75,25 +75,33 @@ class DateRange extends $pb.GeneratedMessage {
     return $result;
   }
   DateRange._() : super();
-  factory DateRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DateRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DateRange.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DateRange.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.type'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'start', subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'end', subBuilder: $327.Date.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DateRange',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.type'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'start',
+        subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'end',
+        subBuilder: $327.Date.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DateRange clone() => DateRange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DateRange copyWith(void Function(DateRange) updates) => super.copyWith((message) => updates(message as DateRange)) as DateRange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DateRange copyWith(void Function(DateRange) updates) =>
+      super.copyWith((message) => updates(message as DateRange)) as DateRange;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -102,7 +110,8 @@ class DateRange extends $pb.GeneratedMessage {
   DateRange createEmptyInstance() => create();
   static $pb.PbList<DateRange> createRepeated() => $pb.PbList<DateRange>();
   @$core.pragma('dart2js:noInline')
-  static DateRange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DateRange>(create);
+  static DateRange getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DateRange>(create);
   static DateRange? _defaultInstance;
 
   /// Date at which the date range begins. If unset, the date range has no
@@ -110,7 +119,10 @@ class DateRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get start => $_getN(0);
   @$pb.TagNumber(1)
-  set start($327.Date v) { setField(1, v); }
+  set start($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
@@ -123,7 +135,10 @@ class DateRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $327.Date get end => $_getN(1);
   @$pb.TagNumber(2)
-  set end($327.Date v) { setField(2, v); }
+  set end($327.Date v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
@@ -132,6 +147,6 @@ class DateRange extends $pb.GeneratedMessage {
   $327.Date ensureEnd() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

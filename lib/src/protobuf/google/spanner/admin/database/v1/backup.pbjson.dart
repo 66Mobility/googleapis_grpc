@@ -18,23 +18,135 @@ const Backup$json = {
   '1': 'Backup',
   '2': [
     {'1': 'database', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'database'},
-    {'1': 'version_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'versionTime'},
-    {'1': 'expire_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
+    {
+      '1': 'version_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'versionTime'
+    },
+    {
+      '1': 'expire_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
     {'1': 'size_bytes', '3': 5, '4': 1, '5': 3, '8': {}, '10': 'sizeBytes'},
-    {'1': 'freeable_size_bytes', '3': 15, '4': 1, '5': 3, '8': {}, '10': 'freeableSizeBytes'},
-    {'1': 'exclusive_size_bytes', '3': 16, '4': 1, '5': 3, '8': {}, '10': 'exclusiveSizeBytes'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.Backup.State', '8': {}, '10': 'state'},
-    {'1': 'referencing_databases', '3': 7, '4': 3, '5': 9, '8': {}, '10': 'referencingDatabases'},
-    {'1': 'encryption_info', '3': 8, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionInfo', '8': {}, '10': 'encryptionInfo'},
-    {'1': 'encryption_information', '3': 13, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.EncryptionInfo', '8': {}, '10': 'encryptionInformation'},
-    {'1': 'database_dialect', '3': 10, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.DatabaseDialect', '8': {}, '10': 'databaseDialect'},
-    {'1': 'referencing_backups', '3': 11, '4': 3, '5': 9, '8': {}, '10': 'referencingBackups'},
-    {'1': 'max_expire_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'maxExpireTime'},
-    {'1': 'backup_schedules', '3': 14, '4': 3, '5': 9, '8': {}, '10': 'backupSchedules'},
-    {'1': 'incremental_backup_chain_id', '3': 17, '4': 1, '5': 9, '8': {}, '10': 'incrementalBackupChainId'},
-    {'1': 'oldest_version_time', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'oldestVersionTime'},
+    {
+      '1': 'freeable_size_bytes',
+      '3': 15,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'freeableSizeBytes'
+    },
+    {
+      '1': 'exclusive_size_bytes',
+      '3': 16,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'exclusiveSizeBytes'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.Backup.State',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'referencing_databases',
+      '3': 7,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'referencingDatabases'
+    },
+    {
+      '1': 'encryption_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionInfo',
+      '8': {},
+      '10': 'encryptionInfo'
+    },
+    {
+      '1': 'encryption_information',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.EncryptionInfo',
+      '8': {},
+      '10': 'encryptionInformation'
+    },
+    {
+      '1': 'database_dialect',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.DatabaseDialect',
+      '8': {},
+      '10': 'databaseDialect'
+    },
+    {
+      '1': 'referencing_backups',
+      '3': 11,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'referencingBackups'
+    },
+    {
+      '1': 'max_expire_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'maxExpireTime'
+    },
+    {
+      '1': 'backup_schedules',
+      '3': 14,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'backupSchedules'
+    },
+    {
+      '1': 'incremental_backup_chain_id',
+      '3': 17,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'incrementalBackupChainId'
+    },
+    {
+      '1': 'oldest_version_time',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'oldestVersionTime'
+    },
   ],
   '4': [Backup_State$json],
   '7': {},
@@ -86,8 +198,24 @@ const CreateBackupRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'backup_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'backupId'},
-    {'1': 'backup', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.Backup', '8': {}, '10': 'backup'},
-    {'1': 'encryption_config', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.CreateBackupEncryptionConfig', '8': {}, '10': 'encryptionConfig'},
+    {
+      '1': 'backup',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Backup',
+      '8': {},
+      '10': 'backup'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.CreateBackupEncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
   ],
 };
 
@@ -106,8 +234,22 @@ const CreateBackupMetadata$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'database', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'database'},
-    {'1': 'progress', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.OperationProgress', '10': 'progress'},
-    {'1': 'cancel_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
+    {
+      '1': 'progress',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
   ],
 };
 
@@ -126,9 +268,32 @@ const CopyBackupRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'backup_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'backupId'},
-    {'1': 'source_backup', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'sourceBackup'},
-    {'1': 'expire_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
-    {'1': 'encryption_config', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.CopyBackupEncryptionConfig', '8': {}, '10': 'encryptionConfig'},
+    {
+      '1': 'source_backup',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceBackup'
+    },
+    {
+      '1': 'expire_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.CopyBackupEncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
   ],
 };
 
@@ -147,9 +312,30 @@ const CopyBackupMetadata$json = {
   '1': 'CopyBackupMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'source_backup', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'sourceBackup'},
-    {'1': 'progress', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.OperationProgress', '10': 'progress'},
-    {'1': 'cancel_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cancelTime'},
+    {
+      '1': 'source_backup',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceBackup'
+    },
+    {
+      '1': 'progress',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.OperationProgress',
+      '10': 'progress'
+    },
+    {
+      '1': 'cancel_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cancelTime'
+    },
   ],
 };
 
@@ -166,8 +352,24 @@ final $typed_data.Uint8List copyBackupMetadataDescriptor = $convert.base64Decode
 const UpdateBackupRequest$json = {
   '1': 'UpdateBackupRequest',
   '2': [
-    {'1': 'backup', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.admin.database.v1.Backup', '8': {}, '10': 'backup'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'backup',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Backup',
+      '8': {},
+      '10': 'backup'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -225,7 +427,14 @@ final $typed_data.Uint8List listBackupsRequestDescriptor = $convert.base64Decode
 const ListBackupsResponse$json = {
   '1': 'ListBackupsResponse',
   '2': [
-    {'1': 'backups', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.admin.database.v1.Backup', '10': 'backups'},
+    {
+      '1': 'backups',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.database.v1.Backup',
+      '10': 'backups'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -258,25 +467,54 @@ final $typed_data.Uint8List listBackupOperationsRequestDescriptor = $convert.bas
 const ListBackupOperationsResponse$json = {
   '1': 'ListBackupOperationsResponse',
   '2': [
-    {'1': 'operations', '3': 1, '4': 3, '5': 11, '6': '.google.longrunning.Operation', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.longrunning.Operation',
+      '10': 'operations'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListBackupOperationsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listBackupOperationsResponseDescriptor = $convert.base64Decode(
-    'ChxMaXN0QmFja3VwT3BlcmF0aW9uc1Jlc3BvbnNlEj0KCm9wZXJhdGlvbnMYASADKAsyHS5nb2'
-    '9nbGUubG9uZ3J1bm5pbmcuT3BlcmF0aW9uUgpvcGVyYXRpb25zEiYKD25leHRfcGFnZV90b2tl'
-    'bhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+final $typed_data.Uint8List listBackupOperationsResponseDescriptor =
+    $convert.base64Decode(
+        'ChxMaXN0QmFja3VwT3BlcmF0aW9uc1Jlc3BvbnNlEj0KCm9wZXJhdGlvbnMYASADKAsyHS5nb2'
+        '9nbGUubG9uZ3J1bm5pbmcuT3BlcmF0aW9uUgpvcGVyYXRpb25zEiYKD25leHRfcGFnZV90b2tl'
+        'bhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
 
 @$core.Deprecated('Use backupInfoDescriptor instead')
 const BackupInfo$json = {
   '1': 'BackupInfo',
   '2': [
     {'1': 'backup', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'backup'},
-    {'1': 'version_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'versionTime'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'source_database', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'sourceDatabase'},
+    {
+      '1': 'version_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'versionTime'
+    },
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'source_database',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sourceDatabase'
+    },
   ],
 };
 
@@ -292,9 +530,25 @@ final $typed_data.Uint8List backupInfoDescriptor = $convert.base64Decode(
 const CreateBackupEncryptionConfig$json = {
   '1': 'CreateBackupEncryptionConfig',
   '2': [
-    {'1': 'encryption_type', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.CreateBackupEncryptionConfig.EncryptionType', '8': {}, '10': 'encryptionType'},
+    {
+      '1': 'encryption_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.spanner.admin.database.v1.CreateBackupEncryptionConfig.EncryptionType',
+      '8': {},
+      '10': 'encryptionType'
+    },
     {'1': 'kms_key_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyName'},
-    {'1': 'kms_key_names', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'kmsKeyNames'},
+    {
+      '1': 'kms_key_names',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'kmsKeyNames'
+    },
   ],
   '4': [CreateBackupEncryptionConfig_EncryptionType$json],
 };
@@ -326,9 +580,25 @@ final $typed_data.Uint8List createBackupEncryptionConfigDescriptor = $convert.ba
 const CopyBackupEncryptionConfig$json = {
   '1': 'CopyBackupEncryptionConfig',
   '2': [
-    {'1': 'encryption_type', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.CopyBackupEncryptionConfig.EncryptionType', '8': {}, '10': 'encryptionType'},
+    {
+      '1': 'encryption_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.spanner.admin.database.v1.CopyBackupEncryptionConfig.EncryptionType',
+      '8': {},
+      '10': 'encryptionType'
+    },
     {'1': 'kms_key_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyName'},
-    {'1': 'kms_key_names', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'kmsKeyNames'},
+    {
+      '1': 'kms_key_names',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'kmsKeyNames'
+    },
   ],
   '4': [CopyBackupEncryptionConfig_EncryptionType$json],
 };
@@ -362,8 +632,8 @@ const FullBackupSpec$json = {
 };
 
 /// Descriptor for `FullBackupSpec`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List fullBackupSpecDescriptor = $convert.base64Decode(
-    'Cg5GdWxsQmFja3VwU3BlYw==');
+final $typed_data.Uint8List fullBackupSpecDescriptor =
+    $convert.base64Decode('Cg5GdWxsQmFja3VwU3BlYw==');
 
 @$core.Deprecated('Use incrementalBackupSpecDescriptor instead')
 const IncrementalBackupSpec$json = {
@@ -371,6 +641,5 @@ const IncrementalBackupSpec$json = {
 };
 
 /// Descriptor for `IncrementalBackupSpec`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List incrementalBackupSpecDescriptor = $convert.base64Decode(
-    'ChVJbmNyZW1lbnRhbEJhY2t1cFNwZWM=');
-
+final $typed_data.Uint8List incrementalBackupSpecDescriptor =
+    $convert.base64Decode('ChVJbmNyZW1lbnRhbEJhY2t1cFNwZWM=');

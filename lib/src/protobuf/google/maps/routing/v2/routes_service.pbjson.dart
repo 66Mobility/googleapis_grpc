@@ -24,36 +24,181 @@ const RouteMatrixElementCondition$json = {
 };
 
 /// Descriptor for `RouteMatrixElementCondition`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List routeMatrixElementConditionDescriptor = $convert.base64Decode(
-    'ChtSb3V0ZU1hdHJpeEVsZW1lbnRDb25kaXRpb24SLgoqUk9VVEVfTUFUUklYX0VMRU1FTlRfQ0'
-    '9ORElUSU9OX1VOU1BFQ0lGSUVEEAASEAoMUk9VVEVfRVhJU1RTEAESEwoPUk9VVEVfTk9UX0ZP'
-    'VU5EEAI=');
+final $typed_data.Uint8List routeMatrixElementConditionDescriptor =
+    $convert.base64Decode(
+        'ChtSb3V0ZU1hdHJpeEVsZW1lbnRDb25kaXRpb24SLgoqUk9VVEVfTUFUUklYX0VMRU1FTlRfQ0'
+        '9ORElUSU9OX1VOU1BFQ0lGSUVEEAASEAoMUk9VVEVfRVhJU1RTEAESEwoPUk9VVEVfTk9UX0ZP'
+        'VU5EEAI=');
 
 @$core.Deprecated('Use computeRoutesRequestDescriptor instead')
 const ComputeRoutesRequest$json = {
   '1': 'ComputeRoutesRequest',
   '2': [
-    {'1': 'origin', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Waypoint', '8': {}, '10': 'origin'},
-    {'1': 'destination', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Waypoint', '8': {}, '10': 'destination'},
-    {'1': 'intermediates', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routing.v2.Waypoint', '8': {}, '10': 'intermediates'},
-    {'1': 'travel_mode', '3': 4, '4': 1, '5': 14, '6': '.google.maps.routing.v2.RouteTravelMode', '8': {}, '10': 'travelMode'},
-    {'1': 'routing_preference', '3': 5, '4': 1, '5': 14, '6': '.google.maps.routing.v2.RoutingPreference', '8': {}, '10': 'routingPreference'},
-    {'1': 'polyline_quality', '3': 6, '4': 1, '5': 14, '6': '.google.maps.routing.v2.PolylineQuality', '8': {}, '10': 'polylineQuality'},
-    {'1': 'polyline_encoding', '3': 12, '4': 1, '5': 14, '6': '.google.maps.routing.v2.PolylineEncoding', '8': {}, '10': 'polylineEncoding'},
-    {'1': 'departure_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'departureTime'},
-    {'1': 'arrival_time', '3': 19, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'arrivalTime'},
-    {'1': 'compute_alternative_routes', '3': 8, '4': 1, '5': 8, '8': {}, '10': 'computeAlternativeRoutes'},
-    {'1': 'route_modifiers', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteModifiers', '8': {}, '10': 'routeModifiers'},
-    {'1': 'language_code', '3': 10, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
+    {
+      '1': 'origin',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Waypoint',
+      '8': {},
+      '10': 'origin'
+    },
+    {
+      '1': 'destination',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Waypoint',
+      '8': {},
+      '10': 'destination'
+    },
+    {
+      '1': 'intermediates',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Waypoint',
+      '8': {},
+      '10': 'intermediates'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RouteTravelMode',
+      '8': {},
+      '10': 'travelMode'
+    },
+    {
+      '1': 'routing_preference',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RoutingPreference',
+      '8': {},
+      '10': 'routingPreference'
+    },
+    {
+      '1': 'polyline_quality',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.PolylineQuality',
+      '8': {},
+      '10': 'polylineQuality'
+    },
+    {
+      '1': 'polyline_encoding',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.PolylineEncoding',
+      '8': {},
+      '10': 'polylineEncoding'
+    },
+    {
+      '1': 'departure_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'departureTime'
+    },
+    {
+      '1': 'arrival_time',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'arrivalTime'
+    },
+    {
+      '1': 'compute_alternative_routes',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'computeAlternativeRoutes'
+    },
+    {
+      '1': 'route_modifiers',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteModifiers',
+      '8': {},
+      '10': 'routeModifiers'
+    },
+    {
+      '1': 'language_code',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
     {'1': 'region_code', '3': 16, '4': 1, '5': 9, '8': {}, '10': 'regionCode'},
-    {'1': 'units', '3': 11, '4': 1, '5': 14, '6': '.google.maps.routing.v2.Units', '8': {}, '10': 'units'},
-    {'1': 'optimize_waypoint_order', '3': 13, '4': 1, '5': 8, '8': {}, '10': 'optimizeWaypointOrder'},
-    {'1': 'requested_reference_routes', '3': 14, '4': 3, '5': 14, '6': '.google.maps.routing.v2.ComputeRoutesRequest.ReferenceRoute', '8': {}, '10': 'requestedReferenceRoutes'},
-    {'1': 'extra_computations', '3': 15, '4': 3, '5': 14, '6': '.google.maps.routing.v2.ComputeRoutesRequest.ExtraComputation', '8': {}, '10': 'extraComputations'},
-    {'1': 'traffic_model', '3': 18, '4': 1, '5': 14, '6': '.google.maps.routing.v2.TrafficModel', '8': {}, '10': 'trafficModel'},
-    {'1': 'transit_preferences', '3': 20, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TransitPreferences', '8': {}, '10': 'transitPreferences'},
+    {
+      '1': 'units',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.Units',
+      '8': {},
+      '10': 'units'
+    },
+    {
+      '1': 'optimize_waypoint_order',
+      '3': 13,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'optimizeWaypointOrder'
+    },
+    {
+      '1': 'requested_reference_routes',
+      '3': 14,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.routing.v2.ComputeRoutesRequest.ReferenceRoute',
+      '8': {},
+      '10': 'requestedReferenceRoutes'
+    },
+    {
+      '1': 'extra_computations',
+      '3': 15,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.routing.v2.ComputeRoutesRequest.ExtraComputation',
+      '8': {},
+      '10': 'extraComputations'
+    },
+    {
+      '1': 'traffic_model',
+      '3': 18,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.TrafficModel',
+      '8': {},
+      '10': 'trafficModel'
+    },
+    {
+      '1': 'transit_preferences',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TransitPreferences',
+      '8': {},
+      '10': 'transitPreferences'
+    },
   ],
-  '4': [ComputeRoutesRequest_ReferenceRoute$json, ComputeRoutesRequest_ExtraComputation$json],
+  '4': [
+    ComputeRoutesRequest_ReferenceRoute$json,
+    ComputeRoutesRequest_ExtraComputation$json
+  ],
 };
 
 @$core.Deprecated('Use computeRoutesRequestDescriptor instead')
@@ -116,9 +261,30 @@ final $typed_data.Uint8List computeRoutesRequestDescriptor = $convert.base64Deco
 const ComputeRoutesResponse$json = {
   '1': 'ComputeRoutesResponse',
   '2': [
-    {'1': 'routes', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routing.v2.Route', '10': 'routes'},
-    {'1': 'fallback_info', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.FallbackInfo', '10': 'fallbackInfo'},
-    {'1': 'geocoding_results', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routing.v2.GeocodingResults', '10': 'geocodingResults'},
+    {
+      '1': 'routes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Route',
+      '10': 'routes'
+    },
+    {
+      '1': 'fallback_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.FallbackInfo',
+      '10': 'fallbackInfo'
+    },
+    {
+      '1': 'geocoding_results',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.GeocodingResults',
+      '10': 'geocodingResults'
+    },
   ],
 };
 
@@ -134,18 +300,105 @@ final $typed_data.Uint8List computeRoutesResponseDescriptor = $convert.base64Dec
 const ComputeRouteMatrixRequest$json = {
   '1': 'ComputeRouteMatrixRequest',
   '2': [
-    {'1': 'origins', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routing.v2.RouteMatrixOrigin', '8': {}, '10': 'origins'},
-    {'1': 'destinations', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routing.v2.RouteMatrixDestination', '8': {}, '10': 'destinations'},
-    {'1': 'travel_mode', '3': 3, '4': 1, '5': 14, '6': '.google.maps.routing.v2.RouteTravelMode', '8': {}, '10': 'travelMode'},
-    {'1': 'routing_preference', '3': 4, '4': 1, '5': 14, '6': '.google.maps.routing.v2.RoutingPreference', '8': {}, '10': 'routingPreference'},
-    {'1': 'departure_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'departureTime'},
-    {'1': 'arrival_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'arrivalTime'},
-    {'1': 'language_code', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
+    {
+      '1': 'origins',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteMatrixOrigin',
+      '8': {},
+      '10': 'origins'
+    },
+    {
+      '1': 'destinations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteMatrixDestination',
+      '8': {},
+      '10': 'destinations'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RouteTravelMode',
+      '8': {},
+      '10': 'travelMode'
+    },
+    {
+      '1': 'routing_preference',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RoutingPreference',
+      '8': {},
+      '10': 'routingPreference'
+    },
+    {
+      '1': 'departure_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'departureTime'
+    },
+    {
+      '1': 'arrival_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'arrivalTime'
+    },
+    {
+      '1': 'language_code',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
     {'1': 'region_code', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'regionCode'},
-    {'1': 'units', '3': 7, '4': 1, '5': 14, '6': '.google.maps.routing.v2.Units', '8': {}, '10': 'units'},
-    {'1': 'extra_computations', '3': 8, '4': 3, '5': 14, '6': '.google.maps.routing.v2.ComputeRouteMatrixRequest.ExtraComputation', '8': {}, '10': 'extraComputations'},
-    {'1': 'traffic_model', '3': 10, '4': 1, '5': 14, '6': '.google.maps.routing.v2.TrafficModel', '8': {}, '10': 'trafficModel'},
-    {'1': 'transit_preferences', '3': 12, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TransitPreferences', '8': {}, '10': 'transitPreferences'},
+    {
+      '1': 'units',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.Units',
+      '8': {},
+      '10': 'units'
+    },
+    {
+      '1': 'extra_computations',
+      '3': 8,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.routing.v2.ComputeRouteMatrixRequest.ExtraComputation',
+      '8': {},
+      '10': 'extraComputations'
+    },
+    {
+      '1': 'traffic_model',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.TrafficModel',
+      '8': {},
+      '10': 'trafficModel'
+    },
+    {
+      '1': 'transit_preferences',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TransitPreferences',
+      '8': {},
+      '10': 'transitPreferences'
+    },
   ],
   '4': [ComputeRouteMatrixRequest_ExtraComputation$json],
 };
@@ -185,8 +438,24 @@ final $typed_data.Uint8List computeRouteMatrixRequestDescriptor = $convert.base6
 const RouteMatrixOrigin$json = {
   '1': 'RouteMatrixOrigin',
   '2': [
-    {'1': 'waypoint', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Waypoint', '8': {}, '10': 'waypoint'},
-    {'1': 'route_modifiers', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteModifiers', '8': {}, '10': 'routeModifiers'},
+    {
+      '1': 'waypoint',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Waypoint',
+      '8': {},
+      '10': 'waypoint'
+    },
+    {
+      '1': 'route_modifiers',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteModifiers',
+      '8': {},
+      '10': 'routeModifiers'
+    },
   ],
 };
 
@@ -201,29 +470,103 @@ final $typed_data.Uint8List routeMatrixOriginDescriptor = $convert.base64Decode(
 const RouteMatrixDestination$json = {
   '1': 'RouteMatrixDestination',
   '2': [
-    {'1': 'waypoint', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Waypoint', '8': {}, '10': 'waypoint'},
+    {
+      '1': 'waypoint',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Waypoint',
+      '8': {},
+      '10': 'waypoint'
+    },
   ],
 };
 
 /// Descriptor for `RouteMatrixDestination`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List routeMatrixDestinationDescriptor = $convert.base64Decode(
-    'ChZSb3V0ZU1hdHJpeERlc3RpbmF0aW9uEkEKCHdheXBvaW50GAEgASgLMiAuZ29vZ2xlLm1hcH'
-    'Mucm91dGluZy52Mi5XYXlwb2ludEID4EECUgh3YXlwb2ludA==');
+final $typed_data.Uint8List routeMatrixDestinationDescriptor =
+    $convert.base64Decode(
+        'ChZSb3V0ZU1hdHJpeERlc3RpbmF0aW9uEkEKCHdheXBvaW50GAEgASgLMiAuZ29vZ2xlLm1hcH'
+        'Mucm91dGluZy52Mi5XYXlwb2ludEID4EECUgh3YXlwb2ludA==');
 
 @$core.Deprecated('Use routeMatrixElementDescriptor instead')
 const RouteMatrixElement$json = {
   '1': 'RouteMatrixElement',
   '2': [
-    {'1': 'origin_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'originIndex', '17': true},
-    {'1': 'destination_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'destinationIndex', '17': true},
-    {'1': 'status', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'condition', '3': 9, '4': 1, '5': 14, '6': '.google.maps.routing.v2.RouteMatrixElementCondition', '10': 'condition'},
+    {
+      '1': 'origin_index',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'originIndex',
+      '17': true
+    },
+    {
+      '1': 'destination_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'destinationIndex',
+      '17': true
+    },
+    {
+      '1': 'status',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'condition',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RouteMatrixElementCondition',
+      '10': 'condition'
+    },
     {'1': 'distance_meters', '3': 4, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'duration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'static_duration', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'travel_advisory', '3': 7, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteTravelAdvisory', '10': 'travelAdvisory'},
-    {'1': 'fallback_info', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routing.v2.FallbackInfo', '10': 'fallbackInfo'},
-    {'1': 'localized_values', '3': 10, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteMatrixElement.LocalizedValues', '10': 'localizedValues'},
+    {
+      '1': 'duration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
+    {
+      '1': 'fallback_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.FallbackInfo',
+      '10': 'fallbackInfo'
+    },
+    {
+      '1': 'localized_values',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteMatrixElement.LocalizedValues',
+      '10': 'localizedValues'
+    },
   ],
   '3': [RouteMatrixElement_LocalizedValues$json],
   '8': [
@@ -236,10 +579,38 @@ const RouteMatrixElement$json = {
 const RouteMatrixElement_LocalizedValues$json = {
   '1': 'LocalizedValues',
   '2': [
-    {'1': 'distance', '3': 1, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'distance'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'duration'},
-    {'1': 'static_duration', '3': 3, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'staticDuration'},
-    {'1': 'transit_fare', '3': 4, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'transitFare'},
+    {
+      '1': 'distance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'distance'
+    },
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'transit_fare',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'transitFare'
+    },
   ],
 };
 
@@ -263,4 +634,3 @@ final $typed_data.Uint8List routeMatrixElementDescriptor = $convert.base64Decode
     'R5cGUuTG9jYWxpemVkVGV4dFIOc3RhdGljRHVyYXRpb24SPQoMdHJhbnNpdF9mYXJlGAQgASgL'
     'MhouZ29vZ2xlLnR5cGUuTG9jYWxpemVkVGV4dFILdHJhbnNpdEZhcmVCDwoNX29yaWdpbl9pbm'
     'RleEIUChJfZGVzdGluYXRpb25faW5kZXg=');
-

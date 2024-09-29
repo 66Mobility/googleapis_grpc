@@ -23,12 +23,37 @@ const ContextualAddOnMarkup$json = {
 const ContextualAddOnMarkup_Card$json = {
   '1': 'Card',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.ContextualAddOnMarkup.Card.CardHeader', '10': 'header'},
-    {'1': 'sections', '3': 2, '4': 3, '5': 11, '6': '.google.chat.v1.ContextualAddOnMarkup.Card.Section', '10': 'sections'},
-    {'1': 'card_actions', '3': 3, '4': 3, '5': 11, '6': '.google.chat.v1.ContextualAddOnMarkup.Card.CardAction', '10': 'cardActions'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ContextualAddOnMarkup.Card.CardHeader',
+      '10': 'header'
+    },
+    {
+      '1': 'sections',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.ContextualAddOnMarkup.Card.Section',
+      '10': 'sections'
+    },
+    {
+      '1': 'card_actions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.ContextualAddOnMarkup.Card.CardAction',
+      '10': 'cardActions'
+    },
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
   ],
-  '3': [ContextualAddOnMarkup_Card_CardHeader$json, ContextualAddOnMarkup_Card_Section$json, ContextualAddOnMarkup_Card_CardAction$json],
+  '3': [
+    ContextualAddOnMarkup_Card_CardHeader$json,
+    ContextualAddOnMarkup_Card_Section$json,
+    ContextualAddOnMarkup_Card_CardAction$json
+  ],
 };
 
 @$core.Deprecated('Use contextualAddOnMarkupDescriptor instead')
@@ -37,7 +62,14 @@ const ContextualAddOnMarkup_Card_CardHeader$json = {
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '10': 'subtitle'},
-    {'1': 'image_style', '3': 3, '4': 1, '5': 14, '6': '.google.chat.v1.ContextualAddOnMarkup.Card.CardHeader.ImageStyle', '10': 'imageStyle'},
+    {
+      '1': 'image_style',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.ContextualAddOnMarkup.Card.CardHeader.ImageStyle',
+      '10': 'imageStyle'
+    },
     {'1': 'image_url', '3': 4, '4': 1, '5': 9, '10': 'imageUrl'},
   ],
   '4': [ContextualAddOnMarkup_Card_CardHeader_ImageStyle$json],
@@ -58,7 +90,14 @@ const ContextualAddOnMarkup_Card_Section$json = {
   '1': 'Section',
   '2': [
     {'1': 'header', '3': 1, '4': 1, '5': 9, '10': 'header'},
-    {'1': 'widgets', '3': 2, '4': 3, '5': 11, '6': '.google.chat.v1.WidgetMarkup', '10': 'widgets'},
+    {
+      '1': 'widgets',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup',
+      '10': 'widgets'
+    },
   ],
 };
 
@@ -67,7 +106,14 @@ const ContextualAddOnMarkup_Card_CardAction$json = {
   '1': 'CardAction',
   '2': [
     {'1': 'action_label', '3': 1, '4': 1, '5': 9, '10': 'actionLabel'},
-    {'1': 'on_click', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.OnClick', '10': 'onClick'},
+    {
+      '1': 'on_click',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.OnClick',
+      '10': 'onClick'
+    },
   ],
 };
 
@@ -87,4 +133,3 @@ final $typed_data.Uint8List contextualAddOnMarkupDescriptor = $convert.base64Dec
     'gLMhwuZ29vZ2xlLmNoYXQudjEuV2lkZ2V0TWFya3VwUgd3aWRnZXRzGnAKCkNhcmRBY3Rpb24S'
     'IQoMYWN0aW9uX2xhYmVsGAEgASgJUgthY3Rpb25MYWJlbBI/Cghvbl9jbGljaxgCIAEoCzIkLm'
     'dvb2dsZS5jaGF0LnYxLldpZGdldE1hcmt1cC5PbkNsaWNrUgdvbkNsaWNr');
-

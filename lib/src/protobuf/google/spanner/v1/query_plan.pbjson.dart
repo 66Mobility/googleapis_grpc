@@ -18,12 +18,47 @@ const PlanNode$json = {
   '1': 'PlanNode',
   '2': [
     {'1': 'index', '3': 1, '4': 1, '5': 5, '10': 'index'},
-    {'1': 'kind', '3': 2, '4': 1, '5': 14, '6': '.google.spanner.v1.PlanNode.Kind', '10': 'kind'},
+    {
+      '1': 'kind',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.PlanNode.Kind',
+      '10': 'kind'
+    },
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'child_links', '3': 4, '4': 3, '5': 11, '6': '.google.spanner.v1.PlanNode.ChildLink', '10': 'childLinks'},
-    {'1': 'short_representation', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.v1.PlanNode.ShortRepresentation', '10': 'shortRepresentation'},
-    {'1': 'metadata', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'metadata'},
-    {'1': 'execution_stats', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'executionStats'},
+    {
+      '1': 'child_links',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.PlanNode.ChildLink',
+      '10': 'childLinks'
+    },
+    {
+      '1': 'short_representation',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.PlanNode.ShortRepresentation',
+      '10': 'shortRepresentation'
+    },
+    {
+      '1': 'metadata',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'metadata'
+    },
+    {
+      '1': 'execution_stats',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'executionStats'
+    },
   ],
   '3': [PlanNode_ChildLink$json, PlanNode_ShortRepresentation$json],
   '4': [PlanNode_Kind$json],
@@ -44,7 +79,14 @@ const PlanNode_ShortRepresentation$json = {
   '1': 'ShortRepresentation',
   '2': [
     {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'subqueries', '3': 2, '4': 3, '5': 11, '6': '.google.spanner.v1.PlanNode.ShortRepresentation.SubqueriesEntry', '10': 'subqueries'},
+    {
+      '1': 'subqueries',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.PlanNode.ShortRepresentation.SubqueriesEntry',
+      '10': 'subqueries'
+    },
   ],
   '3': [PlanNode_ShortRepresentation_SubqueriesEntry$json],
 };
@@ -91,7 +133,14 @@ final $typed_data.Uint8List planNodeDescriptor = $convert.base64Decode(
 const QueryPlan$json = {
   '1': 'QueryPlan',
   '2': [
-    {'1': 'plan_nodes', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.PlanNode', '10': 'planNodes'},
+    {
+      '1': 'plan_nodes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.PlanNode',
+      '10': 'planNodes'
+    },
   ],
 };
 
@@ -99,4 +148,3 @@ const QueryPlan$json = {
 final $typed_data.Uint8List queryPlanDescriptor = $convert.base64Decode(
     'CglRdWVyeVBsYW4SOgoKcGxhbl9ub2RlcxgBIAMoCzIbLmdvb2dsZS5zcGFubmVyLnYxLlBsYW'
     '5Ob2RlUglwbGFuTm9kZXM=');
-

@@ -19,9 +19,34 @@ const TermsOfServiceAgreementState$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'region_code', '3': 2, '4': 1, '5': 9, '10': 'regionCode'},
-    {'1': 'terms_of_service_kind', '3': 3, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.TermsOfServiceKind', '10': 'termsOfServiceKind'},
-    {'1': 'accepted', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Accepted', '9': 0, '10': 'accepted', '17': true},
-    {'1': 'required', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.Required', '9': 1, '10': 'required', '17': true},
+    {
+      '1': 'terms_of_service_kind',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.merchant.accounts.v1beta.TermsOfServiceKind',
+      '10': 'termsOfServiceKind'
+    },
+    {
+      '1': 'accepted',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Accepted',
+      '9': 0,
+      '10': 'accepted',
+      '17': true
+    },
+    {
+      '1': 'required',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.Required',
+      '9': 1,
+      '10': 'required',
+      '17': true
+    },
   ],
   '7': {},
   '8': [
@@ -48,9 +73,25 @@ final $typed_data.Uint8List termsOfServiceAgreementStateDescriptor = $convert.ba
 const Accepted$json = {
   '1': 'Accepted',
   '2': [
-    {'1': 'terms_of_service', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'termsOfService'},
+    {
+      '1': 'terms_of_service',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'termsOfService'
+    },
     {'1': 'accepted_by', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'acceptedBy'},
-    {'1': 'valid_until', '3': 3, '4': 1, '5': 11, '6': '.google.type.Date', '9': 0, '10': 'validUntil', '17': true},
+    {
+      '1': 'valid_until',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '9': 0,
+      '10': 'validUntil',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_valid_until'},
@@ -69,7 +110,14 @@ final $typed_data.Uint8List acceptedDescriptor = $convert.base64Decode(
 const Required$json = {
   '1': 'Required',
   '2': [
-    {'1': 'terms_of_service', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'termsOfService'},
+    {
+      '1': 'terms_of_service',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'termsOfService'
+    },
     {'1': 'tos_file_uri', '3': 2, '4': 1, '5': 9, '10': 'tosFileUri'},
   ],
 };
@@ -80,7 +128,8 @@ final $typed_data.Uint8List requiredDescriptor = $convert.base64Decode(
     'dvb2dsZWFwaXMuY29tL1Rlcm1zT2ZTZXJ2aWNlUg50ZXJtc09mU2VydmljZRIgCgx0b3NfZmls'
     'ZV91cmkYAiABKAlSCnRvc0ZpbGVVcmk=');
 
-@$core.Deprecated('Use getTermsOfServiceAgreementStateRequestDescriptor instead')
+@$core
+    .Deprecated('Use getTermsOfServiceAgreementStateRequestDescriptor instead')
 const GetTermsOfServiceAgreementStateRequest$json = {
   '1': 'GetTermsOfServiceAgreementStateRequest',
   '2': [
@@ -89,12 +138,14 @@ const GetTermsOfServiceAgreementStateRequest$json = {
 };
 
 /// Descriptor for `GetTermsOfServiceAgreementStateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getTermsOfServiceAgreementStateRequestDescriptor = $convert.base64Decode(
-    'CiZHZXRUZXJtc09mU2VydmljZUFncmVlbWVudFN0YXRlUmVxdWVzdBJTCgRuYW1lGAEgASgJQj'
-    '/gQQL6QTkKN21lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL1Rlcm1zT2ZTZXJ2aWNlQWdyZWVt'
-    'ZW50U3RhdGVSBG5hbWU=');
+final $typed_data.Uint8List getTermsOfServiceAgreementStateRequestDescriptor =
+    $convert.base64Decode(
+        'CiZHZXRUZXJtc09mU2VydmljZUFncmVlbWVudFN0YXRlUmVxdWVzdBJTCgRuYW1lGAEgASgJQj'
+        '/gQQL6QTkKN21lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL1Rlcm1zT2ZTZXJ2aWNlQWdyZWVt'
+        'ZW50U3RhdGVSBG5hbWU=');
 
-@$core.Deprecated('Use retrieveForApplicationTermsOfServiceAgreementStateRequestDescriptor instead')
+@$core.Deprecated(
+    'Use retrieveForApplicationTermsOfServiceAgreementStateRequestDescriptor instead')
 const RetrieveForApplicationTermsOfServiceAgreementStateRequest$json = {
   '1': 'RetrieveForApplicationTermsOfServiceAgreementStateRequest',
   '2': [
@@ -103,8 +154,9 @@ const RetrieveForApplicationTermsOfServiceAgreementStateRequest$json = {
 };
 
 /// Descriptor for `RetrieveForApplicationTermsOfServiceAgreementStateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List retrieveForApplicationTermsOfServiceAgreementStateRequestDescriptor = $convert.base64Decode(
-    'CjlSZXRyaWV2ZUZvckFwcGxpY2F0aW9uVGVybXNPZlNlcnZpY2VBZ3JlZW1lbnRTdGF0ZVJlcX'
-    'Vlc3QSVwoGcGFyZW50GAEgASgJQj/gQQL6QTkSN21lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29t'
-    'L1Rlcm1zT2ZTZXJ2aWNlQWdyZWVtZW50U3RhdGVSBnBhcmVudA==');
-
+final $typed_data.Uint8List
+    retrieveForApplicationTermsOfServiceAgreementStateRequestDescriptor =
+    $convert.base64Decode(
+        'CjlSZXRyaWV2ZUZvckFwcGxpY2F0aW9uVGVybXNPZlNlcnZpY2VBZ3JlZW1lbnRTdGF0ZVJlcX'
+        'Vlc3QSVwoGcGFyZW50GAEgASgJQj/gQQL6QTkSN21lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29t'
+        'L1Rlcm1zT2ZTZXJ2aWNlQWdyZWVtZW50U3RhdGVSBnBhcmVudA==');

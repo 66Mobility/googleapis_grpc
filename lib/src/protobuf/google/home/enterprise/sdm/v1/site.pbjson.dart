@@ -18,7 +18,14 @@ const Structure$json = {
   '1': 'Structure',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'traits', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'traits'},
+    {
+      '1': 'traits',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'traits'
+    },
   ],
   '7': {},
 };
@@ -35,7 +42,14 @@ const Room$json = {
   '1': 'Room',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'traits', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'traits'},
+    {
+      '1': 'traits',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'traits'
+    },
   ],
   '7': {},
 };
@@ -46,4 +60,3 @@ final $typed_data.Uint8List roomDescriptor = $convert.base64Decode(
     'UucHJvdG9idWYuU3RydWN0UgZ0cmFpdHM6bOpBaQopc21hcnRkZXZpY2VtYW5hZ2VtZW50Lmdv'
     'b2dsZWFwaXMuY29tL1Jvb20SPGVudGVycHJpc2VzL3tlbnRlcnByaXNlfS9zdHJ1Y3R1cmVzL3'
     'tzdHJ1Y3R1cmV9L3Jvb21zL3tyb29tfQ==');
-

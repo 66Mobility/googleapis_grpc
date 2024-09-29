@@ -15,23 +15,27 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Available sharding mechanisms.
 class TrafficSplit_ShardBy extends $pb.ProtobufEnum {
-  static const TrafficSplit_ShardBy UNSPECIFIED = TrafficSplit_ShardBy._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
-  static const TrafficSplit_ShardBy COOKIE = TrafficSplit_ShardBy._(1, _omitEnumNames ? '' : 'COOKIE');
-  static const TrafficSplit_ShardBy IP = TrafficSplit_ShardBy._(2, _omitEnumNames ? '' : 'IP');
-  static const TrafficSplit_ShardBy RANDOM = TrafficSplit_ShardBy._(3, _omitEnumNames ? '' : 'RANDOM');
+  static const TrafficSplit_ShardBy UNSPECIFIED =
+      TrafficSplit_ShardBy._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
+  static const TrafficSplit_ShardBy COOKIE =
+      TrafficSplit_ShardBy._(1, _omitEnumNames ? '' : 'COOKIE');
+  static const TrafficSplit_ShardBy IP =
+      TrafficSplit_ShardBy._(2, _omitEnumNames ? '' : 'IP');
+  static const TrafficSplit_ShardBy RANDOM =
+      TrafficSplit_ShardBy._(3, _omitEnumNames ? '' : 'RANDOM');
 
-  static const $core.List<TrafficSplit_ShardBy> values = <TrafficSplit_ShardBy> [
+  static const $core.List<TrafficSplit_ShardBy> values = <TrafficSplit_ShardBy>[
     UNSPECIFIED,
     COOKIE,
     IP,
     RANDOM,
   ];
 
-  static final $core.Map<$core.int, TrafficSplit_ShardBy> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, TrafficSplit_ShardBy> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static TrafficSplit_ShardBy? valueOf($core.int value) => _byValue[value];
 
   const TrafficSplit_ShardBy._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

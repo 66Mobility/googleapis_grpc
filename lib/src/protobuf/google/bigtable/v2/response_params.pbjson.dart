@@ -17,8 +17,24 @@ import 'dart:typed_data' as $typed_data;
 const ResponseParams$json = {
   '1': 'ResponseParams',
   '2': [
-    {'1': 'zone_id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'zoneId', '17': true},
-    {'1': 'cluster_id', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'clusterId', '17': true},
+    {
+      '1': 'zone_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'zoneId',
+      '17': true
+    },
+    {
+      '1': 'cluster_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'clusterId',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_zone_id'},
@@ -30,4 +46,3 @@ const ResponseParams$json = {
 final $typed_data.Uint8List responseParamsDescriptor = $convert.base64Decode(
     'Cg5SZXNwb25zZVBhcmFtcxIcCgd6b25lX2lkGAEgASgJSABSBnpvbmVJZIgBARIiCgpjbHVzdG'
     'VyX2lkGAIgASgJSAFSCWNsdXN0ZXJJZIgBAUIKCghfem9uZV9pZEINCgtfY2x1c3Rlcl9pZA==');
-

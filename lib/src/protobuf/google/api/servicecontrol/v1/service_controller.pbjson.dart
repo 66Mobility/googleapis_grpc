@@ -18,7 +18,14 @@ const CheckRequest$json = {
   '1': 'CheckRequest',
   '2': [
     {'1': 'service_name', '3': 1, '4': 1, '5': 9, '10': 'serviceName'},
-    {'1': 'operation', '3': 2, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.Operation', '10': 'operation'},
+    {
+      '1': 'operation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.Operation',
+      '10': 'operation'
+    },
     {'1': 'service_config_id', '3': 4, '4': 1, '5': 9, '10': 'serviceConfigId'},
   ],
 };
@@ -34,10 +41,30 @@ const CheckResponse$json = {
   '1': 'CheckResponse',
   '2': [
     {'1': 'operation_id', '3': 1, '4': 1, '5': 9, '10': 'operationId'},
-    {'1': 'check_errors', '3': 2, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.CheckError', '10': 'checkErrors'},
+    {
+      '1': 'check_errors',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.CheckError',
+      '10': 'checkErrors'
+    },
     {'1': 'service_config_id', '3': 5, '4': 1, '5': 9, '10': 'serviceConfigId'},
-    {'1': 'service_rollout_id', '3': 11, '4': 1, '5': 9, '10': 'serviceRolloutId'},
-    {'1': 'check_info', '3': 6, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.CheckResponse.CheckInfo', '10': 'checkInfo'},
+    {
+      '1': 'service_rollout_id',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceRolloutId'
+    },
+    {
+      '1': 'check_info',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.CheckResponse.CheckInfo',
+      '10': 'checkInfo'
+    },
   ],
   '3': [CheckResponse_CheckInfo$json, CheckResponse_ConsumerInfo$json],
 };
@@ -47,7 +74,14 @@ const CheckResponse_CheckInfo$json = {
   '1': 'CheckInfo',
   '2': [
     {'1': 'unused_arguments', '3': 1, '4': 3, '5': 9, '10': 'unusedArguments'},
-    {'1': 'consumer_info', '3': 2, '4': 1, '5': 11, '6': '.google.api.servicecontrol.v1.CheckResponse.ConsumerInfo', '10': 'consumerInfo'},
+    {
+      '1': 'consumer_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.CheckResponse.ConsumerInfo',
+      '10': 'consumerInfo'
+    },
     {'1': 'api_key_uid', '3': 5, '4': 1, '5': 9, '10': 'apiKeyUid'},
   ],
 };
@@ -57,7 +91,15 @@ const CheckResponse_ConsumerInfo$json = {
   '1': 'ConsumerInfo',
   '2': [
     {'1': 'project_number', '3': 1, '4': 1, '5': 3, '10': 'projectNumber'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.api.servicecontrol.v1.CheckResponse.ConsumerInfo.ConsumerType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.api.servicecontrol.v1.CheckResponse.ConsumerInfo.ConsumerType',
+      '10': 'type'
+    },
     {'1': 'consumer_number', '3': 3, '4': 1, '5': 3, '10': 'consumerNumber'},
   ],
   '4': [CheckResponse_ConsumerInfo_ConsumerType$json],
@@ -98,7 +140,14 @@ const ReportRequest$json = {
   '1': 'ReportRequest',
   '2': [
     {'1': 'service_name', '3': 1, '4': 1, '5': 9, '10': 'serviceName'},
-    {'1': 'operations', '3': 2, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.Operation', '10': 'operations'},
+    {
+      '1': 'operations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.Operation',
+      '10': 'operations'
+    },
     {'1': 'service_config_id', '3': 3, '4': 1, '5': 9, '10': 'serviceConfigId'},
   ],
 };
@@ -114,9 +163,22 @@ final $typed_data.Uint8List reportRequestDescriptor = $convert.base64Decode(
 const ReportResponse$json = {
   '1': 'ReportResponse',
   '2': [
-    {'1': 'report_errors', '3': 1, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.ReportResponse.ReportError', '10': 'reportErrors'},
+    {
+      '1': 'report_errors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.ReportResponse.ReportError',
+      '10': 'reportErrors'
+    },
     {'1': 'service_config_id', '3': 2, '4': 1, '5': 9, '10': 'serviceConfigId'},
-    {'1': 'service_rollout_id', '3': 4, '4': 1, '5': 9, '10': 'serviceRolloutId'},
+    {
+      '1': 'service_rollout_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceRolloutId'
+    },
   ],
   '3': [ReportResponse_ReportError$json],
 };
@@ -126,7 +188,14 @@ const ReportResponse_ReportError$json = {
   '1': 'ReportError',
   '2': [
     {'1': 'operation_id', '3': 1, '4': 1, '5': 9, '10': 'operationId'},
-    {'1': 'status', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
   ],
 };
 
@@ -138,4 +207,3 @@ final $typed_data.Uint8List reportResponseDescriptor = $convert.base64Decode(
     '9yb2xsb3V0X2lkGAQgASgJUhBzZXJ2aWNlUm9sbG91dElkGlwKC1JlcG9ydEVycm9yEiEKDG9w'
     'ZXJhdGlvbl9pZBgBIAEoCVILb3BlcmF0aW9uSWQSKgoGc3RhdHVzGAIgASgLMhIuZ29vZ2xlLn'
     'JwYy5TdGF0dXNSBnN0YXR1cw==');
-

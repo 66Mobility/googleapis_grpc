@@ -46,36 +46,45 @@ class SearchRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchRequest._() : super();
-  factory SearchRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'query')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchRequest clone() => SearchRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchRequest copyWith(void Function(SearchRequest) updates) => super.copyWith((message) => updates(message as SearchRequest)) as SearchRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchRequest copyWith(void Function(SearchRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchRequest))
+          as SearchRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchRequest create() => SearchRequest._();
   SearchRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchRequest> createRepeated() => $pb.PbList<SearchRequest>();
+  static $pb.PbList<SearchRequest> createRepeated() =>
+      $pb.PbList<SearchRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchRequest>(create);
+  static SearchRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchRequest>(create);
   static SearchRequest? _defaultInstance;
 
   /// Required. Id of the account making the call. Must be a standalone account
@@ -83,7 +92,10 @@ class SearchRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -97,7 +109,10 @@ class SearchRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get query => $_getSZ(1);
   @$pb.TagNumber(2)
-  set query($core.String v) { $_setString(1, v); }
+  set query($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQuery() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,7 +123,10 @@ class SearchRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -121,7 +139,10 @@ class SearchRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -144,34 +165,44 @@ class SearchResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchResponse._() : super();
-  factory SearchResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..pc<ReportRow>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: ReportRow.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..pc<ReportRow>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM,
+        subBuilder: ReportRow.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchResponse clone() => SearchResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchResponse copyWith(void Function(SearchResponse) updates) => super.copyWith((message) => updates(message as SearchResponse)) as SearchResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchResponse copyWith(void Function(SearchResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchResponse))
+          as SearchResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchResponse create() => SearchResponse._();
   SearchResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchResponse> createRepeated() => $pb.PbList<SearchResponse>();
+  static $pb.PbList<SearchResponse> createRepeated() =>
+      $pb.PbList<SearchResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchResponse>(create);
+  static SearchResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchResponse>(create);
   static SearchResponse? _defaultInstance;
 
   /// Rows that matched the search query.
@@ -183,7 +214,10 @@ class SearchResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -231,44 +265,72 @@ class ReportRow extends $pb.GeneratedMessage {
       $result.nonProductPerformanceView = nonProductPerformanceView;
     }
     if (competitiveVisibilityCompetitorView != null) {
-      $result.competitiveVisibilityCompetitorView = competitiveVisibilityCompetitorView;
+      $result.competitiveVisibilityCompetitorView =
+          competitiveVisibilityCompetitorView;
     }
     if (competitiveVisibilityTopMerchantView != null) {
-      $result.competitiveVisibilityTopMerchantView = competitiveVisibilityTopMerchantView;
+      $result.competitiveVisibilityTopMerchantView =
+          competitiveVisibilityTopMerchantView;
     }
     if (competitiveVisibilityBenchmarkView != null) {
-      $result.competitiveVisibilityBenchmarkView = competitiveVisibilityBenchmarkView;
+      $result.competitiveVisibilityBenchmarkView =
+          competitiveVisibilityBenchmarkView;
     }
     return $result;
   }
   ReportRow._() : super();
-  factory ReportRow.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReportRow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReportRow.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReportRow.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportRow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<ProductPerformanceView>(1, _omitFieldNames ? '' : 'productPerformanceView', subBuilder: ProductPerformanceView.create)
-    ..aOM<ProductView>(2, _omitFieldNames ? '' : 'productView', subBuilder: ProductView.create)
-    ..aOM<PriceCompetitivenessProductView>(3, _omitFieldNames ? '' : 'priceCompetitivenessProductView', subBuilder: PriceCompetitivenessProductView.create)
-    ..aOM<PriceInsightsProductView>(4, _omitFieldNames ? '' : 'priceInsightsProductView', subBuilder: PriceInsightsProductView.create)
-    ..aOM<BestSellersProductClusterView>(5, _omitFieldNames ? '' : 'bestSellersProductClusterView', subBuilder: BestSellersProductClusterView.create)
-    ..aOM<BestSellersBrandView>(6, _omitFieldNames ? '' : 'bestSellersBrandView', subBuilder: BestSellersBrandView.create)
-    ..aOM<NonProductPerformanceView>(7, _omitFieldNames ? '' : 'nonProductPerformanceView', subBuilder: NonProductPerformanceView.create)
-    ..aOM<CompetitiveVisibilityCompetitorView>(8, _omitFieldNames ? '' : 'competitiveVisibilityCompetitorView', subBuilder: CompetitiveVisibilityCompetitorView.create)
-    ..aOM<CompetitiveVisibilityTopMerchantView>(9, _omitFieldNames ? '' : 'competitiveVisibilityTopMerchantView', subBuilder: CompetitiveVisibilityTopMerchantView.create)
-    ..aOM<CompetitiveVisibilityBenchmarkView>(10, _omitFieldNames ? '' : 'competitiveVisibilityBenchmarkView', subBuilder: CompetitiveVisibilityBenchmarkView.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReportRow',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<ProductPerformanceView>(
+        1, _omitFieldNames ? '' : 'productPerformanceView',
+        subBuilder: ProductPerformanceView.create)
+    ..aOM<ProductView>(2, _omitFieldNames ? '' : 'productView',
+        subBuilder: ProductView.create)
+    ..aOM<PriceCompetitivenessProductView>(
+        3, _omitFieldNames ? '' : 'priceCompetitivenessProductView',
+        subBuilder: PriceCompetitivenessProductView.create)
+    ..aOM<PriceInsightsProductView>(
+        4, _omitFieldNames ? '' : 'priceInsightsProductView',
+        subBuilder: PriceInsightsProductView.create)
+    ..aOM<BestSellersProductClusterView>(
+        5, _omitFieldNames ? '' : 'bestSellersProductClusterView',
+        subBuilder: BestSellersProductClusterView.create)
+    ..aOM<BestSellersBrandView>(
+        6, _omitFieldNames ? '' : 'bestSellersBrandView',
+        subBuilder: BestSellersBrandView.create)
+    ..aOM<NonProductPerformanceView>(
+        7, _omitFieldNames ? '' : 'nonProductPerformanceView',
+        subBuilder: NonProductPerformanceView.create)
+    ..aOM<CompetitiveVisibilityCompetitorView>(
+        8, _omitFieldNames ? '' : 'competitiveVisibilityCompetitorView',
+        subBuilder: CompetitiveVisibilityCompetitorView.create)
+    ..aOM<CompetitiveVisibilityTopMerchantView>(
+        9, _omitFieldNames ? '' : 'competitiveVisibilityTopMerchantView',
+        subBuilder: CompetitiveVisibilityTopMerchantView.create)
+    ..aOM<CompetitiveVisibilityBenchmarkView>(
+        10, _omitFieldNames ? '' : 'competitiveVisibilityBenchmarkView',
+        subBuilder: CompetitiveVisibilityBenchmarkView.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReportRow clone() => ReportRow()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReportRow copyWith(void Function(ReportRow) updates) => super.copyWith((message) => updates(message as ReportRow)) as ReportRow;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReportRow copyWith(void Function(ReportRow) updates) =>
+      super.copyWith((message) => updates(message as ReportRow)) as ReportRow;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -277,14 +339,18 @@ class ReportRow extends $pb.GeneratedMessage {
   ReportRow createEmptyInstance() => create();
   static $pb.PbList<ReportRow> createRepeated() => $pb.PbList<ReportRow>();
   @$core.pragma('dart2js:noInline')
-  static ReportRow getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReportRow>(create);
+  static ReportRow getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReportRow>(create);
   static ReportRow? _defaultInstance;
 
   /// Fields available for query in `product_performance_view` table.
   @$pb.TagNumber(1)
   ProductPerformanceView get productPerformanceView => $_getN(0);
   @$pb.TagNumber(1)
-  set productPerformanceView(ProductPerformanceView v) { setField(1, v); }
+  set productPerformanceView(ProductPerformanceView v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProductPerformanceView() => $_has(0);
   @$pb.TagNumber(1)
@@ -296,7 +362,10 @@ class ReportRow extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ProductView get productView => $_getN(1);
   @$pb.TagNumber(2)
-  set productView(ProductView v) { setField(2, v); }
+  set productView(ProductView v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProductView() => $_has(1);
   @$pb.TagNumber(2)
@@ -306,21 +375,29 @@ class ReportRow extends $pb.GeneratedMessage {
 
   /// Fields available for query in `price_competitiveness_product_view` table.
   @$pb.TagNumber(3)
-  PriceCompetitivenessProductView get priceCompetitivenessProductView => $_getN(2);
+  PriceCompetitivenessProductView get priceCompetitivenessProductView =>
+      $_getN(2);
   @$pb.TagNumber(3)
-  set priceCompetitivenessProductView(PriceCompetitivenessProductView v) { setField(3, v); }
+  set priceCompetitivenessProductView(PriceCompetitivenessProductView v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPriceCompetitivenessProductView() => $_has(2);
   @$pb.TagNumber(3)
   void clearPriceCompetitivenessProductView() => clearField(3);
   @$pb.TagNumber(3)
-  PriceCompetitivenessProductView ensurePriceCompetitivenessProductView() => $_ensure(2);
+  PriceCompetitivenessProductView ensurePriceCompetitivenessProductView() =>
+      $_ensure(2);
 
   /// Fields available for query in `price_insights_product_view` table.
   @$pb.TagNumber(4)
   PriceInsightsProductView get priceInsightsProductView => $_getN(3);
   @$pb.TagNumber(4)
-  set priceInsightsProductView(PriceInsightsProductView v) { setField(4, v); }
+  set priceInsightsProductView(PriceInsightsProductView v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPriceInsightsProductView() => $_has(3);
   @$pb.TagNumber(4)
@@ -332,19 +409,26 @@ class ReportRow extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   BestSellersProductClusterView get bestSellersProductClusterView => $_getN(4);
   @$pb.TagNumber(5)
-  set bestSellersProductClusterView(BestSellersProductClusterView v) { setField(5, v); }
+  set bestSellersProductClusterView(BestSellersProductClusterView v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBestSellersProductClusterView() => $_has(4);
   @$pb.TagNumber(5)
   void clearBestSellersProductClusterView() => clearField(5);
   @$pb.TagNumber(5)
-  BestSellersProductClusterView ensureBestSellersProductClusterView() => $_ensure(4);
+  BestSellersProductClusterView ensureBestSellersProductClusterView() =>
+      $_ensure(4);
 
   /// Fields available for query in `best_sellers_brand_view` table.
   @$pb.TagNumber(6)
   BestSellersBrandView get bestSellersBrandView => $_getN(5);
   @$pb.TagNumber(6)
-  set bestSellersBrandView(BestSellersBrandView v) { setField(6, v); }
+  set bestSellersBrandView(BestSellersBrandView v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBestSellersBrandView() => $_has(5);
   @$pb.TagNumber(6)
@@ -356,7 +440,10 @@ class ReportRow extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   NonProductPerformanceView get nonProductPerformanceView => $_getN(6);
   @$pb.TagNumber(7)
-  set nonProductPerformanceView(NonProductPerformanceView v) { setField(7, v); }
+  set nonProductPerformanceView(NonProductPerformanceView v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasNonProductPerformanceView() => $_has(6);
   @$pb.TagNumber(7)
@@ -367,41 +454,58 @@ class ReportRow extends $pb.GeneratedMessage {
   /// Fields available for query in `competitive_visibility_competitor_view`
   /// table.
   @$pb.TagNumber(8)
-  CompetitiveVisibilityCompetitorView get competitiveVisibilityCompetitorView => $_getN(7);
+  CompetitiveVisibilityCompetitorView get competitiveVisibilityCompetitorView =>
+      $_getN(7);
   @$pb.TagNumber(8)
-  set competitiveVisibilityCompetitorView(CompetitiveVisibilityCompetitorView v) { setField(8, v); }
+  set competitiveVisibilityCompetitorView(
+      CompetitiveVisibilityCompetitorView v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCompetitiveVisibilityCompetitorView() => $_has(7);
   @$pb.TagNumber(8)
   void clearCompetitiveVisibilityCompetitorView() => clearField(8);
   @$pb.TagNumber(8)
-  CompetitiveVisibilityCompetitorView ensureCompetitiveVisibilityCompetitorView() => $_ensure(7);
+  CompetitiveVisibilityCompetitorView
+      ensureCompetitiveVisibilityCompetitorView() => $_ensure(7);
 
   /// Fields available for query in `competitive_visibility_top_merchant_view`
   /// table.
   @$pb.TagNumber(9)
-  CompetitiveVisibilityTopMerchantView get competitiveVisibilityTopMerchantView => $_getN(8);
+  CompetitiveVisibilityTopMerchantView
+      get competitiveVisibilityTopMerchantView => $_getN(8);
   @$pb.TagNumber(9)
-  set competitiveVisibilityTopMerchantView(CompetitiveVisibilityTopMerchantView v) { setField(9, v); }
+  set competitiveVisibilityTopMerchantView(
+      CompetitiveVisibilityTopMerchantView v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCompetitiveVisibilityTopMerchantView() => $_has(8);
   @$pb.TagNumber(9)
   void clearCompetitiveVisibilityTopMerchantView() => clearField(9);
   @$pb.TagNumber(9)
-  CompetitiveVisibilityTopMerchantView ensureCompetitiveVisibilityTopMerchantView() => $_ensure(8);
+  CompetitiveVisibilityTopMerchantView
+      ensureCompetitiveVisibilityTopMerchantView() => $_ensure(8);
 
   /// Fields available for query in `competitive_visibility_benchmark_view`
   /// table.
   @$pb.TagNumber(10)
-  CompetitiveVisibilityBenchmarkView get competitiveVisibilityBenchmarkView => $_getN(9);
+  CompetitiveVisibilityBenchmarkView get competitiveVisibilityBenchmarkView =>
+      $_getN(9);
   @$pb.TagNumber(10)
-  set competitiveVisibilityBenchmarkView(CompetitiveVisibilityBenchmarkView v) { setField(10, v); }
+  set competitiveVisibilityBenchmarkView(CompetitiveVisibilityBenchmarkView v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCompetitiveVisibilityBenchmarkView() => $_has(9);
   @$pb.TagNumber(10)
   void clearCompetitiveVisibilityBenchmarkView() => clearField(10);
   @$pb.TagNumber(10)
-  CompetitiveVisibilityBenchmarkView ensureCompetitiveVisibilityBenchmarkView() => $_ensure(9);
+  CompetitiveVisibilityBenchmarkView
+      ensureCompetitiveVisibilityBenchmarkView() => $_ensure(9);
 }
 
 ///  Fields available for query in `product_performance_view` table.
@@ -535,13 +639,28 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
     return $result;
   }
   ProductPerformanceView._() : super();
-  factory ProductPerformanceView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProductPerformanceView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProductPerformanceView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductPerformanceView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductPerformanceView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..e<MarketingMethod_MarketingMethodEnum>(1, _omitFieldNames ? '' : 'marketingMethod', $pb.PbFieldType.OE, defaultOrMaker: MarketingMethod_MarketingMethodEnum.MARKETING_METHOD_ENUM_UNSPECIFIED, valueOf: MarketingMethod_MarketingMethodEnum.valueOf, enumValues: MarketingMethod_MarketingMethodEnum.values)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'week', subBuilder: $327.Date.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProductPerformanceView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..e<MarketingMethod_MarketingMethodEnum>(
+        1, _omitFieldNames ? '' : 'marketingMethod', $pb.PbFieldType.OE,
+        defaultOrMaker: MarketingMethod_MarketingMethodEnum
+            .MARKETING_METHOD_ENUM_UNSPECIFIED,
+        valueOf: MarketingMethod_MarketingMethodEnum.valueOf,
+        enumValues: MarketingMethod_MarketingMethodEnum.values)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'date',
+        subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'week',
+        subBuilder: $327.Date.create)
     ..aOS(4, _omitFieldNames ? '' : 'customerCountryCode')
     ..aOS(5, _omitFieldNames ? '' : 'offerId')
     ..aOS(6, _omitFieldNames ? '' : 'title')
@@ -563,39 +682,49 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
     ..aOS(22, _omitFieldNames ? '' : 'customLabel4')
     ..aInt64(23, _omitFieldNames ? '' : 'clicks')
     ..aInt64(24, _omitFieldNames ? '' : 'impressions')
-    ..a<$core.double>(25, _omitFieldNames ? '' : 'clickThroughRate', $pb.PbFieldType.OD)
-    ..a<$core.double>(26, _omitFieldNames ? '' : 'conversions', $pb.PbFieldType.OD)
-    ..aOM<$536.Price>(27, _omitFieldNames ? '' : 'conversionValue', subBuilder: $536.Price.create)
-    ..a<$core.double>(28, _omitFieldNames ? '' : 'conversionRate', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        25, _omitFieldNames ? '' : 'clickThroughRate', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        26, _omitFieldNames ? '' : 'conversions', $pb.PbFieldType.OD)
+    ..aOM<$536.Price>(27, _omitFieldNames ? '' : 'conversionValue',
+        subBuilder: $536.Price.create)
+    ..a<$core.double>(
+        28, _omitFieldNames ? '' : 'conversionRate', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProductPerformanceView clone() => ProductPerformanceView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProductPerformanceView copyWith(void Function(ProductPerformanceView) updates) => super.copyWith((message) => updates(message as ProductPerformanceView)) as ProductPerformanceView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProductPerformanceView clone() =>
+      ProductPerformanceView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductPerformanceView copyWith(
+          void Function(ProductPerformanceView) updates) =>
+      super.copyWith((message) => updates(message as ProductPerformanceView))
+          as ProductPerformanceView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProductPerformanceView create() => ProductPerformanceView._();
   ProductPerformanceView createEmptyInstance() => create();
-  static $pb.PbList<ProductPerformanceView> createRepeated() => $pb.PbList<ProductPerformanceView>();
+  static $pb.PbList<ProductPerformanceView> createRepeated() =>
+      $pb.PbList<ProductPerformanceView>();
   @$core.pragma('dart2js:noInline')
-  static ProductPerformanceView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProductPerformanceView>(create);
+  static ProductPerformanceView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProductPerformanceView>(create);
   static ProductPerformanceView? _defaultInstance;
 
   /// Marketing method to which metrics apply. Segment.
   @$pb.TagNumber(1)
   MarketingMethod_MarketingMethodEnum get marketingMethod => $_getN(0);
   @$pb.TagNumber(1)
-  set marketingMethod(MarketingMethod_MarketingMethodEnum v) { setField(1, v); }
+  set marketingMethod(MarketingMethod_MarketingMethodEnum v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMarketingMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -607,7 +736,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $327.Date get date => $_getN(1);
   @$pb.TagNumber(2)
-  set date($327.Date v) { setField(2, v); }
+  set date($327.Date v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDate() => $_has(1);
   @$pb.TagNumber(2)
@@ -620,7 +752,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $327.Date get week => $_getN(2);
   @$pb.TagNumber(3)
-  set week($327.Date v) { setField(3, v); }
+  set week($327.Date v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWeek() => $_has(2);
   @$pb.TagNumber(3)
@@ -636,7 +771,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get customerCountryCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set customerCountryCode($core.String v) { $_setString(3, v); }
+  set customerCountryCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCustomerCountryCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -646,7 +784,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get offerId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set offerId($core.String v) { $_setString(4, v); }
+  set offerId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOfferId() => $_has(4);
   @$pb.TagNumber(5)
@@ -656,7 +797,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get title => $_getSZ(5);
   @$pb.TagNumber(6)
-  set title($core.String v) { $_setString(5, v); }
+  set title($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTitle() => $_has(5);
   @$pb.TagNumber(6)
@@ -666,7 +810,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get brand => $_getSZ(6);
   @$pb.TagNumber(7)
-  set brand($core.String v) { $_setString(6, v); }
+  set brand($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasBrand() => $_has(6);
   @$pb.TagNumber(7)
@@ -678,7 +825,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get categoryL1 => $_getSZ(7);
   @$pb.TagNumber(8)
-  set categoryL1($core.String v) { $_setString(7, v); }
+  set categoryL1($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCategoryL1() => $_has(7);
   @$pb.TagNumber(8)
@@ -690,7 +840,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get categoryL2 => $_getSZ(8);
   @$pb.TagNumber(9)
-  set categoryL2($core.String v) { $_setString(8, v); }
+  set categoryL2($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCategoryL2() => $_has(8);
   @$pb.TagNumber(9)
@@ -702,7 +855,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get categoryL3 => $_getSZ(9);
   @$pb.TagNumber(10)
-  set categoryL3($core.String v) { $_setString(9, v); }
+  set categoryL3($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCategoryL3() => $_has(9);
   @$pb.TagNumber(10)
@@ -714,7 +870,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get categoryL4 => $_getSZ(10);
   @$pb.TagNumber(11)
-  set categoryL4($core.String v) { $_setString(10, v); }
+  set categoryL4($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasCategoryL4() => $_has(10);
   @$pb.TagNumber(11)
@@ -726,7 +885,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get categoryL5 => $_getSZ(11);
   @$pb.TagNumber(12)
-  set categoryL5($core.String v) { $_setString(11, v); }
+  set categoryL5($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasCategoryL5() => $_has(11);
   @$pb.TagNumber(12)
@@ -738,7 +900,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get productTypeL1 => $_getSZ(12);
   @$pb.TagNumber(13)
-  set productTypeL1($core.String v) { $_setString(12, v); }
+  set productTypeL1($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasProductTypeL1() => $_has(12);
   @$pb.TagNumber(13)
@@ -750,7 +915,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get productTypeL2 => $_getSZ(13);
   @$pb.TagNumber(14)
-  set productTypeL2($core.String v) { $_setString(13, v); }
+  set productTypeL2($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasProductTypeL2() => $_has(13);
   @$pb.TagNumber(14)
@@ -762,7 +930,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get productTypeL3 => $_getSZ(14);
   @$pb.TagNumber(15)
-  set productTypeL3($core.String v) { $_setString(14, v); }
+  set productTypeL3($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasProductTypeL3() => $_has(14);
   @$pb.TagNumber(15)
@@ -774,7 +945,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get productTypeL4 => $_getSZ(15);
   @$pb.TagNumber(16)
-  set productTypeL4($core.String v) { $_setString(15, v); }
+  set productTypeL4($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasProductTypeL4() => $_has(15);
   @$pb.TagNumber(16)
@@ -786,7 +960,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get productTypeL5 => $_getSZ(16);
   @$pb.TagNumber(17)
-  set productTypeL5($core.String v) { $_setString(16, v); }
+  set productTypeL5($core.String v) {
+    $_setString(16, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasProductTypeL5() => $_has(16);
   @$pb.TagNumber(17)
@@ -796,7 +973,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get customLabel0 => $_getSZ(17);
   @$pb.TagNumber(18)
-  set customLabel0($core.String v) { $_setString(17, v); }
+  set customLabel0($core.String v) {
+    $_setString(17, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasCustomLabel0() => $_has(17);
   @$pb.TagNumber(18)
@@ -806,7 +986,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get customLabel1 => $_getSZ(18);
   @$pb.TagNumber(19)
-  set customLabel1($core.String v) { $_setString(18, v); }
+  set customLabel1($core.String v) {
+    $_setString(18, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasCustomLabel1() => $_has(18);
   @$pb.TagNumber(19)
@@ -816,7 +999,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get customLabel2 => $_getSZ(19);
   @$pb.TagNumber(20)
-  set customLabel2($core.String v) { $_setString(19, v); }
+  set customLabel2($core.String v) {
+    $_setString(19, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasCustomLabel2() => $_has(19);
   @$pb.TagNumber(20)
@@ -826,7 +1012,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.String get customLabel3 => $_getSZ(20);
   @$pb.TagNumber(21)
-  set customLabel3($core.String v) { $_setString(20, v); }
+  set customLabel3($core.String v) {
+    $_setString(20, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasCustomLabel3() => $_has(20);
   @$pb.TagNumber(21)
@@ -836,7 +1025,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get customLabel4 => $_getSZ(21);
   @$pb.TagNumber(22)
-  set customLabel4($core.String v) { $_setString(21, v); }
+  set customLabel4($core.String v) {
+    $_setString(21, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasCustomLabel4() => $_has(21);
   @$pb.TagNumber(22)
@@ -846,7 +1038,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $fixnum.Int64 get clicks => $_getI64(22);
   @$pb.TagNumber(23)
-  set clicks($fixnum.Int64 v) { $_setInt64(22, v); }
+  set clicks($fixnum.Int64 v) {
+    $_setInt64(22, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasClicks() => $_has(22);
   @$pb.TagNumber(23)
@@ -856,7 +1051,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $fixnum.Int64 get impressions => $_getI64(23);
   @$pb.TagNumber(24)
-  set impressions($fixnum.Int64 v) { $_setInt64(23, v); }
+  set impressions($fixnum.Int64 v) {
+    $_setInt64(23, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasImpressions() => $_has(23);
   @$pb.TagNumber(24)
@@ -868,7 +1066,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.double get clickThroughRate => $_getN(24);
   @$pb.TagNumber(25)
-  set clickThroughRate($core.double v) { $_setDouble(24, v); }
+  set clickThroughRate($core.double v) {
+    $_setDouble(24, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasClickThroughRate() => $_has(24);
   @$pb.TagNumber(25)
@@ -883,7 +1084,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $core.double get conversions => $_getN(25);
   @$pb.TagNumber(26)
-  set conversions($core.double v) { $_setDouble(25, v); }
+  set conversions($core.double v) {
+    $_setDouble(25, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasConversions() => $_has(25);
   @$pb.TagNumber(26)
@@ -896,7 +1100,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $536.Price get conversionValue => $_getN(26);
   @$pb.TagNumber(27)
-  set conversionValue($536.Price v) { setField(27, v); }
+  set conversionValue($536.Price v) {
+    setField(27, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasConversionValue() => $_has(26);
   @$pb.TagNumber(27)
@@ -911,7 +1118,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   $core.double get conversionRate => $_getN(27);
   @$pb.TagNumber(28)
-  set conversionRate($core.double v) { $_setDouble(27, v); }
+  set conversionRate($core.double v) {
+    $_setDouble(27, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasConversionRate() => $_has(27);
   @$pb.TagNumber(28)
@@ -934,34 +1144,49 @@ class ProductView_ItemIssue_ItemIssueType extends $pb.GeneratedMessage {
     return $result;
   }
   ProductView_ItemIssue_ItemIssueType._() : super();
-  factory ProductView_ItemIssue_ItemIssueType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProductView_ItemIssue_ItemIssueType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProductView_ItemIssue_ItemIssueType.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductView_ItemIssue_ItemIssueType.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductView.ItemIssue.ItemIssueType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProductView.ItemIssue.ItemIssueType',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'code')
     ..aOS(2, _omitFieldNames ? '' : 'canonicalAttribute')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue_ItemIssueType clone() => ProductView_ItemIssue_ItemIssueType()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue_ItemIssueType copyWith(void Function(ProductView_ItemIssue_ItemIssueType) updates) => super.copyWith((message) => updates(message as ProductView_ItemIssue_ItemIssueType)) as ProductView_ItemIssue_ItemIssueType;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue_ItemIssueType clone() =>
+      ProductView_ItemIssue_ItemIssueType()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue_ItemIssueType copyWith(
+          void Function(ProductView_ItemIssue_ItemIssueType) updates) =>
+      super.copyWith((message) =>
+              updates(message as ProductView_ItemIssue_ItemIssueType))
+          as ProductView_ItemIssue_ItemIssueType;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProductView_ItemIssue_ItemIssueType create() => ProductView_ItemIssue_ItemIssueType._();
+  static ProductView_ItemIssue_ItemIssueType create() =>
+      ProductView_ItemIssue_ItemIssueType._();
   ProductView_ItemIssue_ItemIssueType createEmptyInstance() => create();
-  static $pb.PbList<ProductView_ItemIssue_ItemIssueType> createRepeated() => $pb.PbList<ProductView_ItemIssue_ItemIssueType>();
+  static $pb.PbList<ProductView_ItemIssue_ItemIssueType> createRepeated() =>
+      $pb.PbList<ProductView_ItemIssue_ItemIssueType>();
   @$core.pragma('dart2js:noInline')
-  static ProductView_ItemIssue_ItemIssueType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProductView_ItemIssue_ItemIssueType>(create);
+  static ProductView_ItemIssue_ItemIssueType getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ProductView_ItemIssue_ItemIssueType>(create);
   static ProductView_ItemIssue_ItemIssueType? _defaultInstance;
 
   /// Error code of the issue, equivalent to the `code` of [Product
@@ -969,7 +1194,10 @@ class ProductView_ItemIssue_ItemIssueType extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get code => $_getSZ(0);
   @$pb.TagNumber(1)
-  set code($core.String v) { $_setString(0, v); }
+  set code($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -979,7 +1207,10 @@ class ProductView_ItemIssue_ItemIssueType extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get canonicalAttribute => $_getSZ(1);
   @$pb.TagNumber(2)
-  set canonicalAttribute($core.String v) { $_setString(1, v); }
+  set canonicalAttribute($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCanonicalAttribute() => $_has(1);
   @$pb.TagNumber(2)
@@ -987,7 +1218,8 @@ class ProductView_ItemIssue_ItemIssueType extends $pb.GeneratedMessage {
 }
 
 /// Issue severity per reporting context.
-class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext extends $pb.GeneratedMessage {
+class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
+    extends $pb.GeneratedMessage {
   factory ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext({
     $536.ReportingContext_ReportingContextEnum? reportingContext,
     $core.Iterable<$core.String>? disapprovedCountries,
@@ -1005,43 +1237,81 @@ class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext e
     }
     return $result;
   }
-  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext._() : super();
-  factory ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext._()
+      : super();
+  factory ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductView.ItemIssue.ItemIssueSeverity.IssueSeverityPerReportingContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..e<$536.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $536.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $536.ReportingContext_ReportingContextEnum.valueOf, enumValues: $536.ReportingContext_ReportingContextEnum.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'ProductView.ItemIssue.ItemIssueSeverity.IssueSeverityPerReportingContext',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..e<$536.ReportingContext_ReportingContextEnum>(
+        1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
+        defaultOrMaker: $536.ReportingContext_ReportingContextEnum
+            .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
+        valueOf: $536.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $536.ReportingContext_ReportingContextEnum.values)
     ..pPS(2, _omitFieldNames ? '' : 'disapprovedCountries')
     ..pPS(3, _omitFieldNames ? '' : 'demotedCountries')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext clone() => ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext copyWith(void Function(ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext) updates) => super.copyWith((message) => updates(message as ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext)) as ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
+      clone() =>
+          ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext()
+            ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext copyWith(
+          void Function(
+                  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext))
+          as ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext create() => ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext._();
-  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext createEmptyInstance() => create();
-  static $pb.PbList<ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext> createRepeated() => $pb.PbList<ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>();
+  static ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
+      create() =>
+          ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
+              ._();
+  ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
+      createEmptyInstance() => create();
+  static $pb.PbList<
+          ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>
+      createRepeated() => $pb.PbList<
+          ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>();
   @$core.pragma('dart2js:noInline')
-  static ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>(create);
-  static ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext? _defaultInstance;
+  static ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
+      getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+              ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>(
+          create);
+  static ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext?
+      _defaultInstance;
 
   /// Reporting context the issue applies to.
   @$pb.TagNumber(1)
   $536.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($536.ReportingContext_ReportingContextEnum v) { setField(1, v); }
+  set reportingContext($536.ReportingContext_ReportingContextEnum v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReportingContext() => $_has(0);
   @$pb.TagNumber(1)
@@ -1061,8 +1331,11 @@ class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext e
 /// How the issue affects the serving of the product.
 class ProductView_ItemIssue_ItemIssueSeverity extends $pb.GeneratedMessage {
   factory ProductView_ItemIssue_ItemIssueSeverity({
-    $core.Iterable<ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>? severityPerReportingContext,
-    ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity? aggregatedSeverity,
+    $core.Iterable<
+            ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>?
+        severityPerReportingContext,
+    ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity?
+        aggregatedSeverity,
   }) {
     final $result = create();
     if (severityPerReportingContext != null) {
@@ -1074,47 +1347,84 @@ class ProductView_ItemIssue_ItemIssueSeverity extends $pb.GeneratedMessage {
     return $result;
   }
   ProductView_ItemIssue_ItemIssueSeverity._() : super();
-  factory ProductView_ItemIssue_ItemIssueSeverity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProductView_ItemIssue_ItemIssueSeverity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProductView_ItemIssue_ItemIssueSeverity.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductView_ItemIssue_ItemIssueSeverity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductView.ItemIssue.ItemIssueSeverity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..pc<ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>(1, _omitFieldNames ? '' : 'severityPerReportingContext', $pb.PbFieldType.PM, subBuilder: ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext.create)
-    ..e<ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity>(2, _omitFieldNames ? '' : 'aggregatedSeverity', $pb.PbFieldType.OE, defaultOrMaker: ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity.AGGREGATED_ISSUE_SEVERITY_UNSPECIFIED, valueOf: ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity.valueOf, enumValues: ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProductView.ItemIssue.ItemIssueSeverity',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..pc<ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>(
+        1,
+        _omitFieldNames ? '' : 'severityPerReportingContext',
+        $pb.PbFieldType.PM,
+        subBuilder:
+            ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
+                .create)
+    ..e<ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity>(
+        2, _omitFieldNames ? '' : 'aggregatedSeverity', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity
+                .AGGREGATED_ISSUE_SEVERITY_UNSPECIFIED,
+        valueOf: ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity
+            .valueOf,
+        enumValues:
+            ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity
+                .values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue_ItemIssueSeverity clone() => ProductView_ItemIssue_ItemIssueSeverity()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue_ItemIssueSeverity copyWith(void Function(ProductView_ItemIssue_ItemIssueSeverity) updates) => super.copyWith((message) => updates(message as ProductView_ItemIssue_ItemIssueSeverity)) as ProductView_ItemIssue_ItemIssueSeverity;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue_ItemIssueSeverity clone() =>
+      ProductView_ItemIssue_ItemIssueSeverity()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue_ItemIssueSeverity copyWith(
+          void Function(ProductView_ItemIssue_ItemIssueSeverity) updates) =>
+      super.copyWith((message) =>
+              updates(message as ProductView_ItemIssue_ItemIssueSeverity))
+          as ProductView_ItemIssue_ItemIssueSeverity;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProductView_ItemIssue_ItemIssueSeverity create() => ProductView_ItemIssue_ItemIssueSeverity._();
+  static ProductView_ItemIssue_ItemIssueSeverity create() =>
+      ProductView_ItemIssue_ItemIssueSeverity._();
   ProductView_ItemIssue_ItemIssueSeverity createEmptyInstance() => create();
-  static $pb.PbList<ProductView_ItemIssue_ItemIssueSeverity> createRepeated() => $pb.PbList<ProductView_ItemIssue_ItemIssueSeverity>();
+  static $pb.PbList<ProductView_ItemIssue_ItemIssueSeverity> createRepeated() =>
+      $pb.PbList<ProductView_ItemIssue_ItemIssueSeverity>();
   @$core.pragma('dart2js:noInline')
-  static ProductView_ItemIssue_ItemIssueSeverity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProductView_ItemIssue_ItemIssueSeverity>(create);
+  static ProductView_ItemIssue_ItemIssueSeverity getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ProductView_ItemIssue_ItemIssueSeverity>(create);
   static ProductView_ItemIssue_ItemIssueSeverity? _defaultInstance;
 
   /// Issue severity per reporting context.
   @$pb.TagNumber(1)
-  $core.List<ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext> get severityPerReportingContext => $_getList(0);
+  $core.List<
+          ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext>
+      get severityPerReportingContext => $_getList(0);
 
   ///  Aggregated severity of the issue for all reporting contexts it affects.
   ///
   ///  **This field can be used for filtering the results.**
   @$pb.TagNumber(2)
-  ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity get aggregatedSeverity => $_getN(1);
+  ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity
+      get aggregatedSeverity => $_getN(1);
   @$pb.TagNumber(2)
-  set aggregatedSeverity(ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity v) { setField(2, v); }
+  set aggregatedSeverity(
+      ProductView_ItemIssue_ItemIssueSeverity_AggregatedIssueSeverity v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAggregatedSeverity() => $_has(1);
   @$pb.TagNumber(2)
@@ -1141,42 +1451,64 @@ class ProductView_ItemIssue extends $pb.GeneratedMessage {
     return $result;
   }
   ProductView_ItemIssue._() : super();
-  factory ProductView_ItemIssue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProductView_ItemIssue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProductView_ItemIssue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductView_ItemIssue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductView.ItemIssue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<ProductView_ItemIssue_ItemIssueType>(1, _omitFieldNames ? '' : 'type', subBuilder: ProductView_ItemIssue_ItemIssueType.create)
-    ..aOM<ProductView_ItemIssue_ItemIssueSeverity>(2, _omitFieldNames ? '' : 'severity', subBuilder: ProductView_ItemIssue_ItemIssueSeverity.create)
-    ..e<ProductView_ItemIssue_ItemIssueResolution>(3, _omitFieldNames ? '' : 'resolution', $pb.PbFieldType.OE, defaultOrMaker: ProductView_ItemIssue_ItemIssueResolution.ITEM_ISSUE_RESOLUTION_UNSPECIFIED, valueOf: ProductView_ItemIssue_ItemIssueResolution.valueOf, enumValues: ProductView_ItemIssue_ItemIssueResolution.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProductView.ItemIssue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<ProductView_ItemIssue_ItemIssueType>(1, _omitFieldNames ? '' : 'type',
+        subBuilder: ProductView_ItemIssue_ItemIssueType.create)
+    ..aOM<ProductView_ItemIssue_ItemIssueSeverity>(
+        2, _omitFieldNames ? '' : 'severity',
+        subBuilder: ProductView_ItemIssue_ItemIssueSeverity.create)
+    ..e<ProductView_ItemIssue_ItemIssueResolution>(
+        3, _omitFieldNames ? '' : 'resolution', $pb.PbFieldType.OE,
+        defaultOrMaker: ProductView_ItemIssue_ItemIssueResolution
+            .ITEM_ISSUE_RESOLUTION_UNSPECIFIED,
+        valueOf: ProductView_ItemIssue_ItemIssueResolution.valueOf,
+        enumValues: ProductView_ItemIssue_ItemIssueResolution.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue clone() => ProductView_ItemIssue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProductView_ItemIssue copyWith(void Function(ProductView_ItemIssue) updates) => super.copyWith((message) => updates(message as ProductView_ItemIssue)) as ProductView_ItemIssue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue clone() =>
+      ProductView_ItemIssue()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductView_ItemIssue copyWith(
+          void Function(ProductView_ItemIssue) updates) =>
+      super.copyWith((message) => updates(message as ProductView_ItemIssue))
+          as ProductView_ItemIssue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProductView_ItemIssue create() => ProductView_ItemIssue._();
   ProductView_ItemIssue createEmptyInstance() => create();
-  static $pb.PbList<ProductView_ItemIssue> createRepeated() => $pb.PbList<ProductView_ItemIssue>();
+  static $pb.PbList<ProductView_ItemIssue> createRepeated() =>
+      $pb.PbList<ProductView_ItemIssue>();
   @$core.pragma('dart2js:noInline')
-  static ProductView_ItemIssue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProductView_ItemIssue>(create);
+  static ProductView_ItemIssue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProductView_ItemIssue>(create);
   static ProductView_ItemIssue? _defaultInstance;
 
   /// Item issue type.
   @$pb.TagNumber(1)
   ProductView_ItemIssue_ItemIssueType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(ProductView_ItemIssue_ItemIssueType v) { setField(1, v); }
+  set type(ProductView_ItemIssue_ItemIssueType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1188,7 +1520,10 @@ class ProductView_ItemIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ProductView_ItemIssue_ItemIssueSeverity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity(ProductView_ItemIssue_ItemIssueSeverity v) { setField(2, v); }
+  set severity(ProductView_ItemIssue_ItemIssueSeverity v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSeverity() => $_has(1);
   @$pb.TagNumber(2)
@@ -1200,7 +1535,10 @@ class ProductView_ItemIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ProductView_ItemIssue_ItemIssueResolution get resolution => $_getN(2);
   @$pb.TagNumber(3)
-  set resolution(ProductView_ItemIssue_ItemIssueResolution v) { setField(3, v); }
+  set resolution(ProductView_ItemIssue_ItemIssueResolution v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResolution() => $_has(2);
   @$pb.TagNumber(3)
@@ -1245,7 +1583,8 @@ class ProductView extends $pb.GeneratedMessage {
     $core.String? thumbnailLink,
     $302.Timestamp? creationTime,
     $327.Date? expirationDate,
-    ProductView_AggregatedReportingContextStatus? aggregatedReportingContextStatus,
+    ProductView_AggregatedReportingContextStatus?
+        aggregatedReportingContextStatus,
     $core.Iterable<ProductView_ItemIssue>? itemIssues,
     $536.Channel_ChannelEnum? channel,
     ProductView_ClickPotential? clickPotential,
@@ -1328,7 +1667,8 @@ class ProductView extends $pb.GeneratedMessage {
       $result.expirationDate = expirationDate;
     }
     if (aggregatedReportingContextStatus != null) {
-      $result.aggregatedReportingContextStatus = aggregatedReportingContextStatus;
+      $result.aggregatedReportingContextStatus =
+          aggregatedReportingContextStatus;
     }
     if (itemIssues != null) {
       $result.itemIssues.addAll(itemIssues);
@@ -1345,10 +1685,18 @@ class ProductView extends $pb.GeneratedMessage {
     return $result;
   }
   ProductView._() : super();
-  factory ProductView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProductView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProductView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProductView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
     ..aOS(3, _omitFieldNames ? '' : 'feedLabel')
@@ -1365,33 +1713,52 @@ class ProductView extends $pb.GeneratedMessage {
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(15, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(16, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$536.Price>(17, _omitFieldNames ? '' : 'price', subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(17, _omitFieldNames ? '' : 'price',
+        subBuilder: $536.Price.create)
     ..aOS(18, _omitFieldNames ? '' : 'condition')
     ..aOS(19, _omitFieldNames ? '' : 'availability')
     ..aOS(20, _omitFieldNames ? '' : 'shippingLabel')
     ..pPS(21, _omitFieldNames ? '' : 'gtin')
     ..aOS(22, _omitFieldNames ? '' : 'itemGroupId')
     ..aOS(23, _omitFieldNames ? '' : 'thumbnailLink')
-    ..aOM<$302.Timestamp>(24, _omitFieldNames ? '' : 'creationTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$327.Date>(25, _omitFieldNames ? '' : 'expirationDate', subBuilder: $327.Date.create)
-    ..e<ProductView_AggregatedReportingContextStatus>(26, _omitFieldNames ? '' : 'aggregatedReportingContextStatus', $pb.PbFieldType.OE, defaultOrMaker: ProductView_AggregatedReportingContextStatus.AGGREGATED_REPORTING_CONTEXT_STATUS_UNSPECIFIED, valueOf: ProductView_AggregatedReportingContextStatus.valueOf, enumValues: ProductView_AggregatedReportingContextStatus.values)
-    ..pc<ProductView_ItemIssue>(27, _omitFieldNames ? '' : 'itemIssues', $pb.PbFieldType.PM, subBuilder: ProductView_ItemIssue.create)
-    ..e<$536.Channel_ChannelEnum>(28, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $536.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED, valueOf: $536.Channel_ChannelEnum.valueOf, enumValues: $536.Channel_ChannelEnum.values)
-    ..e<ProductView_ClickPotential>(29, _omitFieldNames ? '' : 'clickPotential', $pb.PbFieldType.OE, defaultOrMaker: ProductView_ClickPotential.CLICK_POTENTIAL_UNSPECIFIED, valueOf: ProductView_ClickPotential.valueOf, enumValues: ProductView_ClickPotential.values)
+    ..aOM<$302.Timestamp>(24, _omitFieldNames ? '' : 'creationTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$327.Date>(25, _omitFieldNames ? '' : 'expirationDate',
+        subBuilder: $327.Date.create)
+    ..e<ProductView_AggregatedReportingContextStatus>(
+        26,
+        _omitFieldNames ? '' : 'aggregatedReportingContextStatus',
+        $pb.PbFieldType.OE,
+        defaultOrMaker: ProductView_AggregatedReportingContextStatus
+            .AGGREGATED_REPORTING_CONTEXT_STATUS_UNSPECIFIED,
+        valueOf: ProductView_AggregatedReportingContextStatus.valueOf,
+        enumValues: ProductView_AggregatedReportingContextStatus.values)
+    ..pc<ProductView_ItemIssue>(
+        27, _omitFieldNames ? '' : 'itemIssues', $pb.PbFieldType.PM,
+        subBuilder: ProductView_ItemIssue.create)
+    ..e<$536.Channel_ChannelEnum>(
+        28, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE,
+        defaultOrMaker: $536.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
+        valueOf: $536.Channel_ChannelEnum.valueOf,
+        enumValues: $536.Channel_ChannelEnum.values)
+    ..e<ProductView_ClickPotential>(
+        29, _omitFieldNames ? '' : 'clickPotential', $pb.PbFieldType.OE,
+        defaultOrMaker: ProductView_ClickPotential.CLICK_POTENTIAL_UNSPECIFIED,
+        valueOf: ProductView_ClickPotential.valueOf,
+        enumValues: ProductView_ClickPotential.values)
     ..aInt64(30, _omitFieldNames ? '' : 'clickPotentialRank')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProductView clone() => ProductView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProductView copyWith(void Function(ProductView) updates) => super.copyWith((message) => updates(message as ProductView)) as ProductView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductView copyWith(void Function(ProductView) updates) =>
+      super.copyWith((message) => updates(message as ProductView))
+          as ProductView;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1400,7 +1767,8 @@ class ProductView extends $pb.GeneratedMessage {
   ProductView createEmptyInstance() => create();
   static $pb.PbList<ProductView> createRepeated() => $pb.PbList<ProductView>();
   @$core.pragma('dart2js:noInline')
-  static ProductView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProductView>(create);
+  static ProductView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProductView>(create);
   static ProductView? _defaultInstance;
 
   ///  REST ID of the product, in the form of
@@ -1411,7 +1779,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1421,7 +1792,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get languageCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set languageCode($core.String v) { $_setString(1, v); }
+  set languageCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLanguageCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -1431,7 +1805,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get feedLabel => $_getSZ(2);
   @$pb.TagNumber(3)
-  set feedLabel($core.String v) { $_setString(2, v); }
+  set feedLabel($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFeedLabel() => $_has(2);
   @$pb.TagNumber(3)
@@ -1441,7 +1818,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get offerId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set offerId($core.String v) { $_setString(3, v); }
+  set offerId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOfferId() => $_has(3);
   @$pb.TagNumber(4)
@@ -1451,7 +1831,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get title => $_getSZ(4);
   @$pb.TagNumber(5)
-  set title($core.String v) { $_setString(4, v); }
+  set title($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTitle() => $_has(4);
   @$pb.TagNumber(5)
@@ -1461,7 +1844,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get brand => $_getSZ(5);
   @$pb.TagNumber(6)
-  set brand($core.String v) { $_setString(5, v); }
+  set brand($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBrand() => $_has(5);
   @$pb.TagNumber(6)
@@ -1472,7 +1858,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get categoryL1 => $_getSZ(6);
   @$pb.TagNumber(7)
-  set categoryL1($core.String v) { $_setString(6, v); }
+  set categoryL1($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCategoryL1() => $_has(6);
   @$pb.TagNumber(7)
@@ -1483,7 +1872,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get categoryL2 => $_getSZ(7);
   @$pb.TagNumber(8)
-  set categoryL2($core.String v) { $_setString(7, v); }
+  set categoryL2($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCategoryL2() => $_has(7);
   @$pb.TagNumber(8)
@@ -1494,7 +1886,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get categoryL3 => $_getSZ(8);
   @$pb.TagNumber(9)
-  set categoryL3($core.String v) { $_setString(8, v); }
+  set categoryL3($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCategoryL3() => $_has(8);
   @$pb.TagNumber(9)
@@ -1505,7 +1900,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get categoryL4 => $_getSZ(9);
   @$pb.TagNumber(10)
-  set categoryL4($core.String v) { $_setString(9, v); }
+  set categoryL4($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCategoryL4() => $_has(9);
   @$pb.TagNumber(10)
@@ -1516,7 +1914,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get categoryL5 => $_getSZ(10);
   @$pb.TagNumber(11)
-  set categoryL5($core.String v) { $_setString(10, v); }
+  set categoryL5($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasCategoryL5() => $_has(10);
   @$pb.TagNumber(11)
@@ -1527,7 +1928,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get productTypeL1 => $_getSZ(11);
   @$pb.TagNumber(12)
-  set productTypeL1($core.String v) { $_setString(11, v); }
+  set productTypeL1($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasProductTypeL1() => $_has(11);
   @$pb.TagNumber(12)
@@ -1538,7 +1942,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get productTypeL2 => $_getSZ(12);
   @$pb.TagNumber(13)
-  set productTypeL2($core.String v) { $_setString(12, v); }
+  set productTypeL2($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasProductTypeL2() => $_has(12);
   @$pb.TagNumber(13)
@@ -1549,7 +1956,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get productTypeL3 => $_getSZ(13);
   @$pb.TagNumber(14)
-  set productTypeL3($core.String v) { $_setString(13, v); }
+  set productTypeL3($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasProductTypeL3() => $_has(13);
   @$pb.TagNumber(14)
@@ -1560,7 +1970,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get productTypeL4 => $_getSZ(14);
   @$pb.TagNumber(15)
-  set productTypeL4($core.String v) { $_setString(14, v); }
+  set productTypeL4($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasProductTypeL4() => $_has(14);
   @$pb.TagNumber(15)
@@ -1571,7 +1984,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get productTypeL5 => $_getSZ(15);
   @$pb.TagNumber(16)
-  set productTypeL5($core.String v) { $_setString(15, v); }
+  set productTypeL5($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasProductTypeL5() => $_has(15);
   @$pb.TagNumber(16)
@@ -1582,7 +1998,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $536.Price get price => $_getN(16);
   @$pb.TagNumber(17)
-  set price($536.Price v) { setField(17, v); }
+  set price($536.Price v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasPrice() => $_has(16);
   @$pb.TagNumber(17)
@@ -1595,7 +2014,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get condition => $_getSZ(17);
   @$pb.TagNumber(18)
-  set condition($core.String v) { $_setString(17, v); }
+  set condition($core.String v) {
+    $_setString(17, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasCondition() => $_has(17);
   @$pb.TagNumber(18)
@@ -1606,7 +2028,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get availability => $_getSZ(18);
   @$pb.TagNumber(19)
-  set availability($core.String v) { $_setString(18, v); }
+  set availability($core.String v) {
+    $_setString(18, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasAvailability() => $_has(18);
   @$pb.TagNumber(19)
@@ -1618,7 +2043,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get shippingLabel => $_getSZ(19);
   @$pb.TagNumber(20)
-  set shippingLabel($core.String v) { $_setString(19, v); }
+  set shippingLabel($core.String v) {
+    $_setString(19, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasShippingLabel() => $_has(19);
   @$pb.TagNumber(20)
@@ -1632,7 +2060,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get itemGroupId => $_getSZ(21);
   @$pb.TagNumber(22)
-  set itemGroupId($core.String v) { $_setString(21, v); }
+  set itemGroupId($core.String v) {
+    $_setString(21, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasItemGroupId() => $_has(21);
   @$pb.TagNumber(22)
@@ -1643,7 +2074,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.String get thumbnailLink => $_getSZ(22);
   @$pb.TagNumber(23)
-  set thumbnailLink($core.String v) { $_setString(22, v); }
+  set thumbnailLink($core.String v) {
+    $_setString(22, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasThumbnailLink() => $_has(22);
   @$pb.TagNumber(23)
@@ -1653,7 +2087,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $302.Timestamp get creationTime => $_getN(23);
   @$pb.TagNumber(24)
-  set creationTime($302.Timestamp v) { setField(24, v); }
+  set creationTime($302.Timestamp v) {
+    setField(24, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasCreationTime() => $_has(23);
   @$pb.TagNumber(24)
@@ -1665,7 +2102,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $327.Date get expirationDate => $_getN(24);
   @$pb.TagNumber(25)
-  set expirationDate($327.Date v) { setField(25, v); }
+  set expirationDate($327.Date v) {
+    setField(25, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasExpirationDate() => $_has(24);
   @$pb.TagNumber(25)
@@ -1675,9 +2115,14 @@ class ProductView extends $pb.GeneratedMessage {
 
   /// Aggregated status.
   @$pb.TagNumber(26)
-  ProductView_AggregatedReportingContextStatus get aggregatedReportingContextStatus => $_getN(25);
+  ProductView_AggregatedReportingContextStatus
+      get aggregatedReportingContextStatus => $_getN(25);
   @$pb.TagNumber(26)
-  set aggregatedReportingContextStatus(ProductView_AggregatedReportingContextStatus v) { setField(26, v); }
+  set aggregatedReportingContextStatus(
+      ProductView_AggregatedReportingContextStatus v) {
+    setField(26, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasAggregatedReportingContextStatus() => $_has(25);
   @$pb.TagNumber(26)
@@ -1697,7 +2142,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   $536.Channel_ChannelEnum get channel => $_getN(27);
   @$pb.TagNumber(28)
-  set channel($536.Channel_ChannelEnum v) { setField(28, v); }
+  set channel($536.Channel_ChannelEnum v) {
+    setField(28, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasChannel() => $_has(27);
   @$pb.TagNumber(28)
@@ -1708,7 +2156,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   ProductView_ClickPotential get clickPotential => $_getN(28);
   @$pb.TagNumber(29)
-  set clickPotential(ProductView_ClickPotential v) { setField(29, v); }
+  set clickPotential(ProductView_ClickPotential v) {
+    setField(29, v);
+  }
+
   @$pb.TagNumber(29)
   $core.bool hasClickPotential() => $_has(28);
   @$pb.TagNumber(29)
@@ -1720,7 +2171,10 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   $fixnum.Int64 get clickPotentialRank => $_getI64(29);
   @$pb.TagNumber(30)
-  set clickPotentialRank($fixnum.Int64 v) { $_setInt64(29, v); }
+  set clickPotentialRank($fixnum.Int64 v) {
+    $_setInt64(29, v);
+  }
+
   @$pb.TagNumber(30)
   $core.bool hasClickPotentialRank() => $_has(29);
   @$pb.TagNumber(30)
@@ -1809,10 +2263,18 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
     return $result;
   }
   PriceCompetitivenessProductView._() : super();
-  factory PriceCompetitivenessProductView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PriceCompetitivenessProductView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PriceCompetitivenessProductView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PriceCompetitivenessProductView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PriceCompetitivenessProductView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PriceCompetitivenessProductView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'reportCountryCode')
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'offerId')
@@ -1828,30 +2290,38 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
     ..aOS(13, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(15, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$536.Price>(16, _omitFieldNames ? '' : 'price', subBuilder: $536.Price.create)
-    ..aOM<$536.Price>(17, _omitFieldNames ? '' : 'benchmarkPrice', subBuilder: $536.Price.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$536.Price>(16, _omitFieldNames ? '' : 'price',
+        subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(17, _omitFieldNames ? '' : 'benchmarkPrice',
+        subBuilder: $536.Price.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PriceCompetitivenessProductView clone() => PriceCompetitivenessProductView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PriceCompetitivenessProductView copyWith(void Function(PriceCompetitivenessProductView) updates) => super.copyWith((message) => updates(message as PriceCompetitivenessProductView)) as PriceCompetitivenessProductView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PriceCompetitivenessProductView clone() =>
+      PriceCompetitivenessProductView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PriceCompetitivenessProductView copyWith(
+          void Function(PriceCompetitivenessProductView) updates) =>
+      super.copyWith(
+              (message) => updates(message as PriceCompetitivenessProductView))
+          as PriceCompetitivenessProductView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PriceCompetitivenessProductView create() => PriceCompetitivenessProductView._();
+  static PriceCompetitivenessProductView create() =>
+      PriceCompetitivenessProductView._();
   PriceCompetitivenessProductView createEmptyInstance() => create();
-  static $pb.PbList<PriceCompetitivenessProductView> createRepeated() => $pb.PbList<PriceCompetitivenessProductView>();
+  static $pb.PbList<PriceCompetitivenessProductView> createRepeated() =>
+      $pb.PbList<PriceCompetitivenessProductView>();
   @$core.pragma('dart2js:noInline')
-  static PriceCompetitivenessProductView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PriceCompetitivenessProductView>(create);
+  static PriceCompetitivenessProductView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PriceCompetitivenessProductView>(
+          create);
   static PriceCompetitivenessProductView? _defaultInstance;
 
   ///  Country of the price benchmark. Represented in the ISO 3166 format.
@@ -1860,7 +2330,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get reportCountryCode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set reportCountryCode($core.String v) { $_setString(0, v); }
+  set reportCountryCode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReportCountryCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -1874,7 +2347,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1884,7 +2360,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get offerId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set offerId($core.String v) { $_setString(2, v); }
+  set offerId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOfferId() => $_has(2);
   @$pb.TagNumber(3)
@@ -1894,7 +2373,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get title => $_getSZ(3);
   @$pb.TagNumber(4)
-  set title($core.String v) { $_setString(3, v); }
+  set title($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTitle() => $_has(3);
   @$pb.TagNumber(4)
@@ -1904,7 +2386,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get brand => $_getSZ(4);
   @$pb.TagNumber(5)
-  set brand($core.String v) { $_setString(4, v); }
+  set brand($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBrand() => $_has(4);
   @$pb.TagNumber(5)
@@ -1915,7 +2400,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get categoryL1 => $_getSZ(5);
   @$pb.TagNumber(6)
-  set categoryL1($core.String v) { $_setString(5, v); }
+  set categoryL1($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCategoryL1() => $_has(5);
   @$pb.TagNumber(6)
@@ -1926,7 +2414,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get categoryL2 => $_getSZ(6);
   @$pb.TagNumber(7)
-  set categoryL2($core.String v) { $_setString(6, v); }
+  set categoryL2($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCategoryL2() => $_has(6);
   @$pb.TagNumber(7)
@@ -1937,7 +2428,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get categoryL3 => $_getSZ(7);
   @$pb.TagNumber(8)
-  set categoryL3($core.String v) { $_setString(7, v); }
+  set categoryL3($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCategoryL3() => $_has(7);
   @$pb.TagNumber(8)
@@ -1948,7 +2442,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get categoryL4 => $_getSZ(8);
   @$pb.TagNumber(9)
-  set categoryL4($core.String v) { $_setString(8, v); }
+  set categoryL4($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCategoryL4() => $_has(8);
   @$pb.TagNumber(9)
@@ -1959,7 +2456,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get categoryL5 => $_getSZ(9);
   @$pb.TagNumber(10)
-  set categoryL5($core.String v) { $_setString(9, v); }
+  set categoryL5($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCategoryL5() => $_has(9);
   @$pb.TagNumber(10)
@@ -1970,7 +2470,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get productTypeL1 => $_getSZ(10);
   @$pb.TagNumber(11)
-  set productTypeL1($core.String v) { $_setString(10, v); }
+  set productTypeL1($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasProductTypeL1() => $_has(10);
   @$pb.TagNumber(11)
@@ -1981,7 +2484,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get productTypeL2 => $_getSZ(11);
   @$pb.TagNumber(12)
-  set productTypeL2($core.String v) { $_setString(11, v); }
+  set productTypeL2($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasProductTypeL2() => $_has(11);
   @$pb.TagNumber(12)
@@ -1992,7 +2498,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get productTypeL3 => $_getSZ(12);
   @$pb.TagNumber(13)
-  set productTypeL3($core.String v) { $_setString(12, v); }
+  set productTypeL3($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasProductTypeL3() => $_has(12);
   @$pb.TagNumber(13)
@@ -2003,7 +2512,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get productTypeL4 => $_getSZ(13);
   @$pb.TagNumber(14)
-  set productTypeL4($core.String v) { $_setString(13, v); }
+  set productTypeL4($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasProductTypeL4() => $_has(13);
   @$pb.TagNumber(14)
@@ -2014,7 +2526,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get productTypeL5 => $_getSZ(14);
   @$pb.TagNumber(15)
-  set productTypeL5($core.String v) { $_setString(14, v); }
+  set productTypeL5($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasProductTypeL5() => $_has(14);
   @$pb.TagNumber(15)
@@ -2024,7 +2539,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $536.Price get price => $_getN(15);
   @$pb.TagNumber(16)
-  set price($536.Price v) { setField(16, v); }
+  set price($536.Price v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasPrice() => $_has(15);
   @$pb.TagNumber(16)
@@ -2037,7 +2555,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $536.Price get benchmarkPrice => $_getN(16);
   @$pb.TagNumber(17)
-  set benchmarkPrice($536.Price v) { setField(17, v); }
+  set benchmarkPrice($536.Price v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasBenchmarkPrice() => $_has(16);
   @$pb.TagNumber(17)
@@ -2126,13 +2647,15 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
       $result.suggestedPrice = suggestedPrice;
     }
     if (predictedImpressionsChangeFraction != null) {
-      $result.predictedImpressionsChangeFraction = predictedImpressionsChangeFraction;
+      $result.predictedImpressionsChangeFraction =
+          predictedImpressionsChangeFraction;
     }
     if (predictedClicksChangeFraction != null) {
       $result.predictedClicksChangeFraction = predictedClicksChangeFraction;
     }
     if (predictedConversionsChangeFraction != null) {
-      $result.predictedConversionsChangeFraction = predictedConversionsChangeFraction;
+      $result.predictedConversionsChangeFraction =
+          predictedConversionsChangeFraction;
     }
     if (effectiveness != null) {
       $result.effectiveness = effectiveness;
@@ -2140,10 +2663,18 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
     return $result;
   }
   PriceInsightsProductView._() : super();
-  factory PriceInsightsProductView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PriceInsightsProductView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PriceInsightsProductView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PriceInsightsProductView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PriceInsightsProductView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PriceInsightsProductView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'offerId')
     ..aOS(3, _omitFieldNames ? '' : 'title')
@@ -2158,34 +2689,53 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(13, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$536.Price>(15, _omitFieldNames ? '' : 'price', subBuilder: $536.Price.create)
-    ..aOM<$536.Price>(16, _omitFieldNames ? '' : 'suggestedPrice', subBuilder: $536.Price.create)
-    ..a<$core.double>(17, _omitFieldNames ? '' : 'predictedImpressionsChangeFraction', $pb.PbFieldType.OD)
-    ..a<$core.double>(18, _omitFieldNames ? '' : 'predictedClicksChangeFraction', $pb.PbFieldType.OD)
-    ..a<$core.double>(19, _omitFieldNames ? '' : 'predictedConversionsChangeFraction', $pb.PbFieldType.OD)
-    ..e<PriceInsightsProductView_Effectiveness>(22, _omitFieldNames ? '' : 'effectiveness', $pb.PbFieldType.OE, defaultOrMaker: PriceInsightsProductView_Effectiveness.EFFECTIVENESS_UNSPECIFIED, valueOf: PriceInsightsProductView_Effectiveness.valueOf, enumValues: PriceInsightsProductView_Effectiveness.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$536.Price>(15, _omitFieldNames ? '' : 'price',
+        subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(16, _omitFieldNames ? '' : 'suggestedPrice',
+        subBuilder: $536.Price.create)
+    ..a<$core.double>(
+        17,
+        _omitFieldNames ? '' : 'predictedImpressionsChangeFraction',
+        $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        18,
+        _omitFieldNames ? '' : 'predictedClicksChangeFraction',
+        $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        19,
+        _omitFieldNames ? '' : 'predictedConversionsChangeFraction',
+        $pb.PbFieldType.OD)
+    ..e<PriceInsightsProductView_Effectiveness>(
+        22, _omitFieldNames ? '' : 'effectiveness', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            PriceInsightsProductView_Effectiveness.EFFECTIVENESS_UNSPECIFIED,
+        valueOf: PriceInsightsProductView_Effectiveness.valueOf,
+        enumValues: PriceInsightsProductView_Effectiveness.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PriceInsightsProductView clone() => PriceInsightsProductView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PriceInsightsProductView copyWith(void Function(PriceInsightsProductView) updates) => super.copyWith((message) => updates(message as PriceInsightsProductView)) as PriceInsightsProductView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PriceInsightsProductView clone() =>
+      PriceInsightsProductView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PriceInsightsProductView copyWith(
+          void Function(PriceInsightsProductView) updates) =>
+      super.copyWith((message) => updates(message as PriceInsightsProductView))
+          as PriceInsightsProductView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PriceInsightsProductView create() => PriceInsightsProductView._();
   PriceInsightsProductView createEmptyInstance() => create();
-  static $pb.PbList<PriceInsightsProductView> createRepeated() => $pb.PbList<PriceInsightsProductView>();
+  static $pb.PbList<PriceInsightsProductView> createRepeated() =>
+      $pb.PbList<PriceInsightsProductView>();
   @$core.pragma('dart2js:noInline')
-  static PriceInsightsProductView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PriceInsightsProductView>(create);
+  static PriceInsightsProductView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PriceInsightsProductView>(create);
   static PriceInsightsProductView? _defaultInstance;
 
   ///  REST ID of the product, in the form of
@@ -2196,7 +2746,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2206,7 +2759,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get offerId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set offerId($core.String v) { $_setString(1, v); }
+  set offerId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOfferId() => $_has(1);
   @$pb.TagNumber(2)
@@ -2216,7 +2772,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get title => $_getSZ(2);
   @$pb.TagNumber(3)
-  set title($core.String v) { $_setString(2, v); }
+  set title($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTitle() => $_has(2);
   @$pb.TagNumber(3)
@@ -2226,7 +2785,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get brand => $_getSZ(3);
   @$pb.TagNumber(4)
-  set brand($core.String v) { $_setString(3, v); }
+  set brand($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBrand() => $_has(3);
   @$pb.TagNumber(4)
@@ -2237,7 +2799,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get categoryL1 => $_getSZ(4);
   @$pb.TagNumber(5)
-  set categoryL1($core.String v) { $_setString(4, v); }
+  set categoryL1($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCategoryL1() => $_has(4);
   @$pb.TagNumber(5)
@@ -2248,7 +2813,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get categoryL2 => $_getSZ(5);
   @$pb.TagNumber(6)
-  set categoryL2($core.String v) { $_setString(5, v); }
+  set categoryL2($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCategoryL2() => $_has(5);
   @$pb.TagNumber(6)
@@ -2259,7 +2827,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get categoryL3 => $_getSZ(6);
   @$pb.TagNumber(7)
-  set categoryL3($core.String v) { $_setString(6, v); }
+  set categoryL3($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCategoryL3() => $_has(6);
   @$pb.TagNumber(7)
@@ -2270,7 +2841,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get categoryL4 => $_getSZ(7);
   @$pb.TagNumber(8)
-  set categoryL4($core.String v) { $_setString(7, v); }
+  set categoryL4($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCategoryL4() => $_has(7);
   @$pb.TagNumber(8)
@@ -2281,7 +2855,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get categoryL5 => $_getSZ(8);
   @$pb.TagNumber(9)
-  set categoryL5($core.String v) { $_setString(8, v); }
+  set categoryL5($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCategoryL5() => $_has(8);
   @$pb.TagNumber(9)
@@ -2292,7 +2869,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get productTypeL1 => $_getSZ(9);
   @$pb.TagNumber(10)
-  set productTypeL1($core.String v) { $_setString(9, v); }
+  set productTypeL1($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasProductTypeL1() => $_has(9);
   @$pb.TagNumber(10)
@@ -2303,7 +2883,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get productTypeL2 => $_getSZ(10);
   @$pb.TagNumber(11)
-  set productTypeL2($core.String v) { $_setString(10, v); }
+  set productTypeL2($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasProductTypeL2() => $_has(10);
   @$pb.TagNumber(11)
@@ -2314,7 +2897,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get productTypeL3 => $_getSZ(11);
   @$pb.TagNumber(12)
-  set productTypeL3($core.String v) { $_setString(11, v); }
+  set productTypeL3($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasProductTypeL3() => $_has(11);
   @$pb.TagNumber(12)
@@ -2325,7 +2911,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get productTypeL4 => $_getSZ(12);
   @$pb.TagNumber(13)
-  set productTypeL4($core.String v) { $_setString(12, v); }
+  set productTypeL4($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasProductTypeL4() => $_has(12);
   @$pb.TagNumber(13)
@@ -2336,7 +2925,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get productTypeL5 => $_getSZ(13);
   @$pb.TagNumber(14)
-  set productTypeL5($core.String v) { $_setString(13, v); }
+  set productTypeL5($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasProductTypeL5() => $_has(13);
   @$pb.TagNumber(14)
@@ -2346,7 +2938,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $536.Price get price => $_getN(14);
   @$pb.TagNumber(15)
-  set price($536.Price v) { setField(15, v); }
+  set price($536.Price v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasPrice() => $_has(14);
   @$pb.TagNumber(15)
@@ -2358,7 +2953,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $536.Price get suggestedPrice => $_getN(15);
   @$pb.TagNumber(16)
-  set suggestedPrice($536.Price v) { setField(16, v); }
+  set suggestedPrice($536.Price v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasSuggestedPrice() => $_has(15);
   @$pb.TagNumber(16)
@@ -2372,7 +2970,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.double get predictedImpressionsChangeFraction => $_getN(16);
   @$pb.TagNumber(17)
-  set predictedImpressionsChangeFraction($core.double v) { $_setDouble(16, v); }
+  set predictedImpressionsChangeFraction($core.double v) {
+    $_setDouble(16, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasPredictedImpressionsChangeFraction() => $_has(16);
   @$pb.TagNumber(17)
@@ -2384,7 +2985,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.double get predictedClicksChangeFraction => $_getN(17);
   @$pb.TagNumber(18)
-  set predictedClicksChangeFraction($core.double v) { $_setDouble(17, v); }
+  set predictedClicksChangeFraction($core.double v) {
+    $_setDouble(17, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasPredictedClicksChangeFraction() => $_has(17);
   @$pb.TagNumber(18)
@@ -2396,7 +3000,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.double get predictedConversionsChangeFraction => $_getN(18);
   @$pb.TagNumber(19)
-  set predictedConversionsChangeFraction($core.double v) { $_setDouble(18, v); }
+  set predictedConversionsChangeFraction($core.double v) {
+    $_setDouble(18, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasPredictedConversionsChangeFraction() => $_has(18);
   @$pb.TagNumber(19)
@@ -2406,7 +3013,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   PriceInsightsProductView_Effectiveness get effectiveness => $_getN(19);
   @$pb.TagNumber(22)
-  set effectiveness(PriceInsightsProductView_Effectiveness v) { setField(22, v); }
+  set effectiveness(PriceInsightsProductView_Effectiveness v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasEffectiveness() => $_has(19);
   @$pb.TagNumber(22)
@@ -2505,12 +3115,26 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
     return $result;
   }
   BestSellersProductClusterView._() : super();
-  factory BestSellersProductClusterView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BestSellersProductClusterView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BestSellersProductClusterView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BestSellersProductClusterView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BestSellersProductClusterView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'reportDate', subBuilder: $327.Date.create)
-    ..e<ReportGranularity_ReportGranularityEnum>(2, _omitFieldNames ? '' : 'reportGranularity', $pb.PbFieldType.OE, defaultOrMaker: ReportGranularity_ReportGranularityEnum.REPORT_GRANULARITY_ENUM_UNSPECIFIED, valueOf: ReportGranularity_ReportGranularityEnum.valueOf, enumValues: ReportGranularity_ReportGranularityEnum.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BestSellersProductClusterView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'reportDate',
+        subBuilder: $327.Date.create)
+    ..e<ReportGranularity_ReportGranularityEnum>(
+        2, _omitFieldNames ? '' : 'reportGranularity', $pb.PbFieldType.OE,
+        defaultOrMaker: ReportGranularity_ReportGranularityEnum
+            .REPORT_GRANULARITY_ENUM_UNSPECIFIED,
+        valueOf: ReportGranularity_ReportGranularityEnum.valueOf,
+        enumValues: ReportGranularity_ReportGranularityEnum.values)
     ..aOS(3, _omitFieldNames ? '' : 'reportCountryCode')
     ..aInt64(4, _omitFieldNames ? '' : 'reportCategoryId')
     ..aOS(6, _omitFieldNames ? '' : 'title')
@@ -2521,35 +3145,66 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'categoryL4')
     ..aOS(12, _omitFieldNames ? '' : 'categoryL5')
     ..pPS(13, _omitFieldNames ? '' : 'variantGtins')
-    ..e<BestSellersProductClusterView_InventoryStatus>(14, _omitFieldNames ? '' : 'inventoryStatus', $pb.PbFieldType.OE, defaultOrMaker: BestSellersProductClusterView_InventoryStatus.INVENTORY_STATUS_UNSPECIFIED, valueOf: BestSellersProductClusterView_InventoryStatus.valueOf, enumValues: BestSellersProductClusterView_InventoryStatus.values)
-    ..e<BestSellersProductClusterView_InventoryStatus>(15, _omitFieldNames ? '' : 'brandInventoryStatus', $pb.PbFieldType.OE, defaultOrMaker: BestSellersProductClusterView_InventoryStatus.INVENTORY_STATUS_UNSPECIFIED, valueOf: BestSellersProductClusterView_InventoryStatus.valueOf, enumValues: BestSellersProductClusterView_InventoryStatus.values)
+    ..e<BestSellersProductClusterView_InventoryStatus>(
+        14, _omitFieldNames ? '' : 'inventoryStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: BestSellersProductClusterView_InventoryStatus
+            .INVENTORY_STATUS_UNSPECIFIED,
+        valueOf: BestSellersProductClusterView_InventoryStatus.valueOf,
+        enumValues: BestSellersProductClusterView_InventoryStatus.values)
+    ..e<BestSellersProductClusterView_InventoryStatus>(
+        15, _omitFieldNames ? '' : 'brandInventoryStatus', $pb.PbFieldType.OE,
+        defaultOrMaker: BestSellersProductClusterView_InventoryStatus
+            .INVENTORY_STATUS_UNSPECIFIED,
+        valueOf: BestSellersProductClusterView_InventoryStatus.valueOf,
+        enumValues: BestSellersProductClusterView_InventoryStatus.values)
     ..aInt64(16, _omitFieldNames ? '' : 'rank')
     ..aInt64(17, _omitFieldNames ? '' : 'previousRank')
-    ..e<RelativeDemand_RelativeDemandEnum>(18, _omitFieldNames ? '' : 'relativeDemand', $pb.PbFieldType.OE, defaultOrMaker: RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED, valueOf: RelativeDemand_RelativeDemandEnum.valueOf, enumValues: RelativeDemand_RelativeDemandEnum.values)
-    ..e<RelativeDemand_RelativeDemandEnum>(19, _omitFieldNames ? '' : 'previousRelativeDemand', $pb.PbFieldType.OE, defaultOrMaker: RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED, valueOf: RelativeDemand_RelativeDemandEnum.valueOf, enumValues: RelativeDemand_RelativeDemandEnum.values)
-    ..e<RelativeDemandChangeType_RelativeDemandChangeTypeEnum>(20, _omitFieldNames ? '' : 'relativeDemandChange', $pb.PbFieldType.OE, defaultOrMaker: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.RELATIVE_DEMAND_CHANGE_TYPE_ENUM_UNSPECIFIED, valueOf: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.valueOf, enumValues: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<RelativeDemand_RelativeDemandEnum>(
+        18, _omitFieldNames ? '' : 'relativeDemand', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED,
+        valueOf: RelativeDemand_RelativeDemandEnum.valueOf,
+        enumValues: RelativeDemand_RelativeDemandEnum.values)
+    ..e<RelativeDemand_RelativeDemandEnum>(
+        19, _omitFieldNames ? '' : 'previousRelativeDemand', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED,
+        valueOf: RelativeDemand_RelativeDemandEnum.valueOf,
+        enumValues: RelativeDemand_RelativeDemandEnum.values)
+    ..e<RelativeDemandChangeType_RelativeDemandChangeTypeEnum>(
+        20, _omitFieldNames ? '' : 'relativeDemandChange', $pb.PbFieldType.OE,
+        defaultOrMaker: RelativeDemandChangeType_RelativeDemandChangeTypeEnum
+            .RELATIVE_DEMAND_CHANGE_TYPE_ENUM_UNSPECIFIED,
+        valueOf: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.valueOf,
+        enumValues:
+            RelativeDemandChangeType_RelativeDemandChangeTypeEnum.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BestSellersProductClusterView clone() => BestSellersProductClusterView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BestSellersProductClusterView copyWith(void Function(BestSellersProductClusterView) updates) => super.copyWith((message) => updates(message as BestSellersProductClusterView)) as BestSellersProductClusterView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BestSellersProductClusterView clone() =>
+      BestSellersProductClusterView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BestSellersProductClusterView copyWith(
+          void Function(BestSellersProductClusterView) updates) =>
+      super.copyWith(
+              (message) => updates(message as BestSellersProductClusterView))
+          as BestSellersProductClusterView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static BestSellersProductClusterView create() => BestSellersProductClusterView._();
+  static BestSellersProductClusterView create() =>
+      BestSellersProductClusterView._();
   BestSellersProductClusterView createEmptyInstance() => create();
-  static $pb.PbList<BestSellersProductClusterView> createRepeated() => $pb.PbList<BestSellersProductClusterView>();
+  static $pb.PbList<BestSellersProductClusterView> createRepeated() =>
+      $pb.PbList<BestSellersProductClusterView>();
   @$core.pragma('dart2js:noInline')
-  static BestSellersProductClusterView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BestSellersProductClusterView>(create);
+  static BestSellersProductClusterView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BestSellersProductClusterView>(create);
   static BestSellersProductClusterView? _defaultInstance;
 
   ///  Report date. The value of this field can only be one of the following:
@@ -2563,7 +3218,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get reportDate => $_getN(0);
   @$pb.TagNumber(1)
-  set reportDate($327.Date v) { setField(1, v); }
+  set reportDate($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReportDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -2579,7 +3237,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ReportGranularity_ReportGranularityEnum get reportGranularity => $_getN(1);
   @$pb.TagNumber(2)
-  set reportGranularity(ReportGranularity_ReportGranularityEnum v) { setField(2, v); }
+  set reportGranularity(ReportGranularity_ReportGranularityEnum v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReportGranularity() => $_has(1);
   @$pb.TagNumber(2)
@@ -2593,7 +3254,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get reportCountryCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set reportCountryCode($core.String v) { $_setString(2, v); }
+  set reportCountryCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReportCountryCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -2609,7 +3273,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get reportCategoryId => $_getI64(3);
   @$pb.TagNumber(4)
-  set reportCategoryId($fixnum.Int64 v) { $_setInt64(3, v); }
+  set reportCategoryId($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReportCategoryId() => $_has(3);
   @$pb.TagNumber(4)
@@ -2619,7 +3286,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get title => $_getSZ(4);
   @$pb.TagNumber(6)
-  set title($core.String v) { $_setString(4, v); }
+  set title($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTitle() => $_has(4);
   @$pb.TagNumber(6)
@@ -2629,7 +3299,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get brand => $_getSZ(5);
   @$pb.TagNumber(7)
-  set brand($core.String v) { $_setString(5, v); }
+  set brand($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasBrand() => $_has(5);
   @$pb.TagNumber(7)
@@ -2641,7 +3314,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get categoryL1 => $_getSZ(6);
   @$pb.TagNumber(8)
-  set categoryL1($core.String v) { $_setString(6, v); }
+  set categoryL1($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCategoryL1() => $_has(6);
   @$pb.TagNumber(8)
@@ -2653,7 +3329,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get categoryL2 => $_getSZ(7);
   @$pb.TagNumber(9)
-  set categoryL2($core.String v) { $_setString(7, v); }
+  set categoryL2($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCategoryL2() => $_has(7);
   @$pb.TagNumber(9)
@@ -2665,7 +3344,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get categoryL3 => $_getSZ(8);
   @$pb.TagNumber(10)
-  set categoryL3($core.String v) { $_setString(8, v); }
+  set categoryL3($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCategoryL3() => $_has(8);
   @$pb.TagNumber(10)
@@ -2677,7 +3359,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get categoryL4 => $_getSZ(9);
   @$pb.TagNumber(11)
-  set categoryL4($core.String v) { $_setString(9, v); }
+  set categoryL4($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasCategoryL4() => $_has(9);
   @$pb.TagNumber(11)
@@ -2689,7 +3374,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get categoryL5 => $_getSZ(10);
   @$pb.TagNumber(12)
-  set categoryL5($core.String v) { $_setString(10, v); }
+  set categoryL5($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasCategoryL5() => $_has(10);
   @$pb.TagNumber(12)
@@ -2705,9 +3393,13 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   ///
   ///  The field doesn't take the Best sellers report country filter into account.
   @$pb.TagNumber(14)
-  BestSellersProductClusterView_InventoryStatus get inventoryStatus => $_getN(12);
+  BestSellersProductClusterView_InventoryStatus get inventoryStatus =>
+      $_getN(12);
   @$pb.TagNumber(14)
-  set inventoryStatus(BestSellersProductClusterView_InventoryStatus v) { setField(14, v); }
+  set inventoryStatus(BestSellersProductClusterView_InventoryStatus v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasInventoryStatus() => $_has(12);
   @$pb.TagNumber(14)
@@ -2720,9 +3412,13 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   ///
   ///  The field doesn't take the Best sellers report country filter into account.
   @$pb.TagNumber(15)
-  BestSellersProductClusterView_InventoryStatus get brandInventoryStatus => $_getN(13);
+  BestSellersProductClusterView_InventoryStatus get brandInventoryStatus =>
+      $_getN(13);
   @$pb.TagNumber(15)
-  set brandInventoryStatus(BestSellersProductClusterView_InventoryStatus v) { setField(15, v); }
+  set brandInventoryStatus(BestSellersProductClusterView_InventoryStatus v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasBrandInventoryStatus() => $_has(13);
   @$pb.TagNumber(15)
@@ -2733,7 +3429,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $fixnum.Int64 get rank => $_getI64(14);
   @$pb.TagNumber(16)
-  set rank($fixnum.Int64 v) { $_setInt64(14, v); }
+  set rank($fixnum.Int64 v) {
+    $_setInt64(14, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasRank() => $_has(14);
   @$pb.TagNumber(16)
@@ -2743,7 +3442,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $fixnum.Int64 get previousRank => $_getI64(15);
   @$pb.TagNumber(17)
-  set previousRank($fixnum.Int64 v) { $_setInt64(15, v); }
+  set previousRank($fixnum.Int64 v) {
+    $_setInt64(15, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasPreviousRank() => $_has(15);
   @$pb.TagNumber(17)
@@ -2754,7 +3456,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   RelativeDemand_RelativeDemandEnum get relativeDemand => $_getN(16);
   @$pb.TagNumber(18)
-  set relativeDemand(RelativeDemand_RelativeDemandEnum v) { setField(18, v); }
+  set relativeDemand(RelativeDemand_RelativeDemandEnum v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasRelativeDemand() => $_has(16);
   @$pb.TagNumber(18)
@@ -2766,7 +3471,10 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   RelativeDemand_RelativeDemandEnum get previousRelativeDemand => $_getN(17);
   @$pb.TagNumber(19)
-  set previousRelativeDemand(RelativeDemand_RelativeDemandEnum v) { setField(19, v); }
+  set previousRelativeDemand(RelativeDemand_RelativeDemandEnum v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasPreviousRelativeDemand() => $_has(17);
   @$pb.TagNumber(19)
@@ -2774,9 +3482,14 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
 
   /// Change in the estimated demand. Whether it rose, sank or remained flat.
   @$pb.TagNumber(20)
-  RelativeDemandChangeType_RelativeDemandChangeTypeEnum get relativeDemandChange => $_getN(18);
+  RelativeDemandChangeType_RelativeDemandChangeTypeEnum
+      get relativeDemandChange => $_getN(18);
   @$pb.TagNumber(20)
-  set relativeDemandChange(RelativeDemandChangeType_RelativeDemandChangeTypeEnum v) { setField(20, v); }
+  set relativeDemandChange(
+      RelativeDemandChangeType_RelativeDemandChangeTypeEnum v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasRelativeDemandChange() => $_has(18);
   @$pb.TagNumber(20)
@@ -2837,42 +3550,74 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
     return $result;
   }
   BestSellersBrandView._() : super();
-  factory BestSellersBrandView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BestSellersBrandView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BestSellersBrandView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BestSellersBrandView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BestSellersBrandView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'reportDate', subBuilder: $327.Date.create)
-    ..e<ReportGranularity_ReportGranularityEnum>(2, _omitFieldNames ? '' : 'reportGranularity', $pb.PbFieldType.OE, defaultOrMaker: ReportGranularity_ReportGranularityEnum.REPORT_GRANULARITY_ENUM_UNSPECIFIED, valueOf: ReportGranularity_ReportGranularityEnum.valueOf, enumValues: ReportGranularity_ReportGranularityEnum.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BestSellersBrandView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'reportDate',
+        subBuilder: $327.Date.create)
+    ..e<ReportGranularity_ReportGranularityEnum>(
+        2, _omitFieldNames ? '' : 'reportGranularity', $pb.PbFieldType.OE,
+        defaultOrMaker: ReportGranularity_ReportGranularityEnum
+            .REPORT_GRANULARITY_ENUM_UNSPECIFIED,
+        valueOf: ReportGranularity_ReportGranularityEnum.valueOf,
+        enumValues: ReportGranularity_ReportGranularityEnum.values)
     ..aOS(3, _omitFieldNames ? '' : 'reportCountryCode')
     ..aInt64(4, _omitFieldNames ? '' : 'reportCategoryId')
     ..aOS(6, _omitFieldNames ? '' : 'brand')
     ..aInt64(7, _omitFieldNames ? '' : 'rank')
     ..aInt64(8, _omitFieldNames ? '' : 'previousRank')
-    ..e<RelativeDemand_RelativeDemandEnum>(9, _omitFieldNames ? '' : 'relativeDemand', $pb.PbFieldType.OE, defaultOrMaker: RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED, valueOf: RelativeDemand_RelativeDemandEnum.valueOf, enumValues: RelativeDemand_RelativeDemandEnum.values)
-    ..e<RelativeDemand_RelativeDemandEnum>(10, _omitFieldNames ? '' : 'previousRelativeDemand', $pb.PbFieldType.OE, defaultOrMaker: RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED, valueOf: RelativeDemand_RelativeDemandEnum.valueOf, enumValues: RelativeDemand_RelativeDemandEnum.values)
-    ..e<RelativeDemandChangeType_RelativeDemandChangeTypeEnum>(11, _omitFieldNames ? '' : 'relativeDemandChange', $pb.PbFieldType.OE, defaultOrMaker: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.RELATIVE_DEMAND_CHANGE_TYPE_ENUM_UNSPECIFIED, valueOf: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.valueOf, enumValues: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<RelativeDemand_RelativeDemandEnum>(
+        9, _omitFieldNames ? '' : 'relativeDemand', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED,
+        valueOf: RelativeDemand_RelativeDemandEnum.valueOf,
+        enumValues: RelativeDemand_RelativeDemandEnum.values)
+    ..e<RelativeDemand_RelativeDemandEnum>(
+        10, _omitFieldNames ? '' : 'previousRelativeDemand', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            RelativeDemand_RelativeDemandEnum.RELATIVE_DEMAND_ENUM_UNSPECIFIED,
+        valueOf: RelativeDemand_RelativeDemandEnum.valueOf,
+        enumValues: RelativeDemand_RelativeDemandEnum.values)
+    ..e<RelativeDemandChangeType_RelativeDemandChangeTypeEnum>(
+        11, _omitFieldNames ? '' : 'relativeDemandChange', $pb.PbFieldType.OE,
+        defaultOrMaker: RelativeDemandChangeType_RelativeDemandChangeTypeEnum
+            .RELATIVE_DEMAND_CHANGE_TYPE_ENUM_UNSPECIFIED,
+        valueOf: RelativeDemandChangeType_RelativeDemandChangeTypeEnum.valueOf,
+        enumValues:
+            RelativeDemandChangeType_RelativeDemandChangeTypeEnum.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BestSellersBrandView clone() => BestSellersBrandView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BestSellersBrandView copyWith(void Function(BestSellersBrandView) updates) => super.copyWith((message) => updates(message as BestSellersBrandView)) as BestSellersBrandView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BestSellersBrandView clone() =>
+      BestSellersBrandView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BestSellersBrandView copyWith(void Function(BestSellersBrandView) updates) =>
+      super.copyWith((message) => updates(message as BestSellersBrandView))
+          as BestSellersBrandView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BestSellersBrandView create() => BestSellersBrandView._();
   BestSellersBrandView createEmptyInstance() => create();
-  static $pb.PbList<BestSellersBrandView> createRepeated() => $pb.PbList<BestSellersBrandView>();
+  static $pb.PbList<BestSellersBrandView> createRepeated() =>
+      $pb.PbList<BestSellersBrandView>();
   @$core.pragma('dart2js:noInline')
-  static BestSellersBrandView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BestSellersBrandView>(create);
+  static BestSellersBrandView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BestSellersBrandView>(create);
   static BestSellersBrandView? _defaultInstance;
 
   ///  Report date. The value of this field can only be one of the following:
@@ -2886,7 +3631,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get reportDate => $_getN(0);
   @$pb.TagNumber(1)
-  set reportDate($327.Date v) { setField(1, v); }
+  set reportDate($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReportDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -2902,7 +3650,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ReportGranularity_ReportGranularityEnum get reportGranularity => $_getN(1);
   @$pb.TagNumber(2)
-  set reportGranularity(ReportGranularity_ReportGranularityEnum v) { setField(2, v); }
+  set reportGranularity(ReportGranularity_ReportGranularityEnum v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReportGranularity() => $_has(1);
   @$pb.TagNumber(2)
@@ -2916,7 +3667,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get reportCountryCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set reportCountryCode($core.String v) { $_setString(2, v); }
+  set reportCountryCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReportCountryCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -2932,7 +3686,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get reportCategoryId => $_getI64(3);
   @$pb.TagNumber(4)
-  set reportCategoryId($fixnum.Int64 v) { $_setInt64(3, v); }
+  set reportCategoryId($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReportCategoryId() => $_has(3);
   @$pb.TagNumber(4)
@@ -2942,7 +3699,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get brand => $_getSZ(4);
   @$pb.TagNumber(6)
-  set brand($core.String v) { $_setString(4, v); }
+  set brand($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBrand() => $_has(4);
   @$pb.TagNumber(6)
@@ -2953,7 +3713,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $fixnum.Int64 get rank => $_getI64(5);
   @$pb.TagNumber(7)
-  set rank($fixnum.Int64 v) { $_setInt64(5, v); }
+  set rank($fixnum.Int64 v) {
+    $_setInt64(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRank() => $_has(5);
   @$pb.TagNumber(7)
@@ -2963,7 +3726,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $fixnum.Int64 get previousRank => $_getI64(6);
   @$pb.TagNumber(8)
-  set previousRank($fixnum.Int64 v) { $_setInt64(6, v); }
+  set previousRank($fixnum.Int64 v) {
+    $_setInt64(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPreviousRank() => $_has(6);
   @$pb.TagNumber(8)
@@ -2974,7 +3740,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   RelativeDemand_RelativeDemandEnum get relativeDemand => $_getN(7);
   @$pb.TagNumber(9)
-  set relativeDemand(RelativeDemand_RelativeDemandEnum v) { setField(9, v); }
+  set relativeDemand(RelativeDemand_RelativeDemandEnum v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasRelativeDemand() => $_has(7);
   @$pb.TagNumber(9)
@@ -2985,7 +3754,10 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   RelativeDemand_RelativeDemandEnum get previousRelativeDemand => $_getN(8);
   @$pb.TagNumber(10)
-  set previousRelativeDemand(RelativeDemand_RelativeDemandEnum v) { setField(10, v); }
+  set previousRelativeDemand(RelativeDemand_RelativeDemandEnum v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasPreviousRelativeDemand() => $_has(8);
   @$pb.TagNumber(10)
@@ -2993,9 +3765,14 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
 
   /// Change in the estimated demand. Whether it rose, sank or remained flat.
   @$pb.TagNumber(11)
-  RelativeDemandChangeType_RelativeDemandChangeTypeEnum get relativeDemandChange => $_getN(9);
+  RelativeDemandChangeType_RelativeDemandChangeTypeEnum
+      get relativeDemandChange => $_getN(9);
   @$pb.TagNumber(11)
-  set relativeDemandChange(RelativeDemandChangeType_RelativeDemandChangeTypeEnum v) { setField(11, v); }
+  set relativeDemandChange(
+      RelativeDemandChangeType_RelativeDemandChangeTypeEnum v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasRelativeDemandChange() => $_has(9);
   @$pb.TagNumber(11)
@@ -3041,37 +3818,51 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
     return $result;
   }
   NonProductPerformanceView._() : super();
-  factory NonProductPerformanceView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NonProductPerformanceView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NonProductPerformanceView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NonProductPerformanceView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NonProductPerformanceView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'week', subBuilder: $327.Date.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NonProductPerformanceView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'week',
+        subBuilder: $327.Date.create)
     ..aInt64(3, _omitFieldNames ? '' : 'clicks')
     ..aInt64(4, _omitFieldNames ? '' : 'impressions')
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'clickThroughRate', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        5, _omitFieldNames ? '' : 'clickThroughRate', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NonProductPerformanceView clone() => NonProductPerformanceView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NonProductPerformanceView copyWith(void Function(NonProductPerformanceView) updates) => super.copyWith((message) => updates(message as NonProductPerformanceView)) as NonProductPerformanceView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NonProductPerformanceView clone() =>
+      NonProductPerformanceView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NonProductPerformanceView copyWith(
+          void Function(NonProductPerformanceView) updates) =>
+      super.copyWith((message) => updates(message as NonProductPerformanceView))
+          as NonProductPerformanceView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NonProductPerformanceView create() => NonProductPerformanceView._();
   NonProductPerformanceView createEmptyInstance() => create();
-  static $pb.PbList<NonProductPerformanceView> createRepeated() => $pb.PbList<NonProductPerformanceView>();
+  static $pb.PbList<NonProductPerformanceView> createRepeated() =>
+      $pb.PbList<NonProductPerformanceView>();
   @$core.pragma('dart2js:noInline')
-  static NonProductPerformanceView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NonProductPerformanceView>(create);
+  static NonProductPerformanceView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NonProductPerformanceView>(create);
   static NonProductPerformanceView? _defaultInstance;
 
   ///  Date in the merchant timezone to which metrics apply. Segment.
@@ -3080,7 +3871,10 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) { setField(1, v); }
+  set date($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -3093,7 +3887,10 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $327.Date get week => $_getN(1);
   @$pb.TagNumber(2)
-  set week($327.Date v) { setField(2, v); }
+  set week($327.Date v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasWeek() => $_has(1);
   @$pb.TagNumber(2)
@@ -3106,7 +3903,10 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get clicks => $_getI64(2);
   @$pb.TagNumber(3)
-  set clicks($fixnum.Int64 v) { $_setInt64(2, v); }
+  set clicks($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasClicks() => $_has(2);
   @$pb.TagNumber(3)
@@ -3117,7 +3917,10 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get impressions => $_getI64(3);
   @$pb.TagNumber(4)
-  set impressions($fixnum.Int64 v) { $_setInt64(3, v); }
+  set impressions($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImpressions() => $_has(3);
   @$pb.TagNumber(4)
@@ -3129,7 +3932,10 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get clickThroughRate => $_getN(4);
   @$pb.TagNumber(5)
-  set clickThroughRate($core.double v) { $_setDouble(4, v); }
+  set clickThroughRate($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasClickThroughRate() => $_has(4);
   @$pb.TagNumber(5)
@@ -3195,43 +4001,68 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
     return $result;
   }
   CompetitiveVisibilityCompetitorView._() : super();
-  factory CompetitiveVisibilityCompetitorView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CompetitiveVisibilityCompetitorView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CompetitiveVisibilityCompetitorView.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CompetitiveVisibilityCompetitorView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompetitiveVisibilityCompetitorView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CompetitiveVisibilityCompetitorView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $327.Date.create)
     ..aOS(2, _omitFieldNames ? '' : 'domain')
     ..aOB(3, _omitFieldNames ? '' : 'isYourDomain')
     ..aOS(4, _omitFieldNames ? '' : 'reportCountryCode')
     ..aInt64(5, _omitFieldNames ? '' : 'reportCategoryId')
-    ..e<TrafficSource_TrafficSourceEnum>(6, _omitFieldNames ? '' : 'trafficSource', $pb.PbFieldType.OE, defaultOrMaker: TrafficSource_TrafficSourceEnum.TRAFFIC_SOURCE_ENUM_UNSPECIFIED, valueOf: TrafficSource_TrafficSourceEnum.valueOf, enumValues: TrafficSource_TrafficSourceEnum.values)
+    ..e<TrafficSource_TrafficSourceEnum>(
+        6, _omitFieldNames ? '' : 'trafficSource', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            TrafficSource_TrafficSourceEnum.TRAFFIC_SOURCE_ENUM_UNSPECIFIED,
+        valueOf: TrafficSource_TrafficSourceEnum.valueOf,
+        enumValues: TrafficSource_TrafficSourceEnum.values)
     ..aInt64(7, _omitFieldNames ? '' : 'rank')
-    ..a<$core.double>(8, _omitFieldNames ? '' : 'adsOrganicRatio', $pb.PbFieldType.OD)
-    ..a<$core.double>(9, _omitFieldNames ? '' : 'pageOverlapRate', $pb.PbFieldType.OD)
-    ..a<$core.double>(10, _omitFieldNames ? '' : 'higherPositionRate', $pb.PbFieldType.OD)
-    ..a<$core.double>(11, _omitFieldNames ? '' : 'relativeVisibility', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        8, _omitFieldNames ? '' : 'adsOrganicRatio', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        9, _omitFieldNames ? '' : 'pageOverlapRate', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        10, _omitFieldNames ? '' : 'higherPositionRate', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        11, _omitFieldNames ? '' : 'relativeVisibility', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CompetitiveVisibilityCompetitorView clone() => CompetitiveVisibilityCompetitorView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CompetitiveVisibilityCompetitorView copyWith(void Function(CompetitiveVisibilityCompetitorView) updates) => super.copyWith((message) => updates(message as CompetitiveVisibilityCompetitorView)) as CompetitiveVisibilityCompetitorView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CompetitiveVisibilityCompetitorView clone() =>
+      CompetitiveVisibilityCompetitorView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CompetitiveVisibilityCompetitorView copyWith(
+          void Function(CompetitiveVisibilityCompetitorView) updates) =>
+      super.copyWith((message) =>
+              updates(message as CompetitiveVisibilityCompetitorView))
+          as CompetitiveVisibilityCompetitorView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CompetitiveVisibilityCompetitorView create() => CompetitiveVisibilityCompetitorView._();
+  static CompetitiveVisibilityCompetitorView create() =>
+      CompetitiveVisibilityCompetitorView._();
   CompetitiveVisibilityCompetitorView createEmptyInstance() => create();
-  static $pb.PbList<CompetitiveVisibilityCompetitorView> createRepeated() => $pb.PbList<CompetitiveVisibilityCompetitorView>();
+  static $pb.PbList<CompetitiveVisibilityCompetitorView> createRepeated() =>
+      $pb.PbList<CompetitiveVisibilityCompetitorView>();
   @$core.pragma('dart2js:noInline')
-  static CompetitiveVisibilityCompetitorView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompetitiveVisibilityCompetitorView>(create);
+  static CompetitiveVisibilityCompetitorView getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          CompetitiveVisibilityCompetitorView>(create);
   static CompetitiveVisibilityCompetitorView? _defaultInstance;
 
   ///  Date of this row.
@@ -3240,7 +4071,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) { setField(1, v); }
+  set date($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -3255,7 +4089,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get domain => $_getSZ(1);
   @$pb.TagNumber(2)
-  set domain($core.String v) { $_setString(1, v); }
+  set domain($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDomain() => $_has(1);
   @$pb.TagNumber(2)
@@ -3267,7 +4104,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get isYourDomain => $_getBF(2);
   @$pb.TagNumber(3)
-  set isYourDomain($core.bool v) { $_setBool(2, v); }
+  set isYourDomain($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasIsYourDomain() => $_has(2);
   @$pb.TagNumber(3)
@@ -3280,7 +4120,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get reportCountryCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set reportCountryCode($core.String v) { $_setString(3, v); }
+  set reportCountryCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReportCountryCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -3295,7 +4138,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get reportCategoryId => $_getI64(4);
   @$pb.TagNumber(5)
-  set reportCategoryId($fixnum.Int64 v) { $_setInt64(4, v); }
+  set reportCategoryId($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasReportCategoryId() => $_has(4);
   @$pb.TagNumber(5)
@@ -3307,7 +4153,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   TrafficSource_TrafficSourceEnum get trafficSource => $_getN(5);
   @$pb.TagNumber(6)
-  set trafficSource(TrafficSource_TrafficSourceEnum v) { setField(6, v); }
+  set trafficSource(TrafficSource_TrafficSourceEnum v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTrafficSource() => $_has(5);
   @$pb.TagNumber(6)
@@ -3321,7 +4170,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $fixnum.Int64 get rank => $_getI64(6);
   @$pb.TagNumber(7)
-  set rank($fixnum.Int64 v) { $_setInt64(6, v); }
+  set rank($fixnum.Int64 v) {
+    $_setInt64(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRank() => $_has(6);
   @$pb.TagNumber(7)
@@ -3336,7 +4188,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.double get adsOrganicRatio => $_getN(7);
   @$pb.TagNumber(8)
-  set adsOrganicRatio($core.double v) { $_setDouble(7, v); }
+  set adsOrganicRatio($core.double v) {
+    $_setDouble(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasAdsOrganicRatio() => $_has(7);
   @$pb.TagNumber(8)
@@ -3351,7 +4206,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get pageOverlapRate => $_getN(8);
   @$pb.TagNumber(9)
-  set pageOverlapRate($core.double v) { $_setDouble(8, v); }
+  set pageOverlapRate($core.double v) {
+    $_setDouble(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPageOverlapRate() => $_has(8);
   @$pb.TagNumber(9)
@@ -3366,7 +4224,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.double get higherPositionRate => $_getN(9);
   @$pb.TagNumber(10)
-  set higherPositionRate($core.double v) { $_setDouble(9, v); }
+  set higherPositionRate($core.double v) {
+    $_setDouble(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasHigherPositionRate() => $_has(9);
   @$pb.TagNumber(10)
@@ -3383,7 +4244,10 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.double get relativeVisibility => $_getN(10);
   @$pb.TagNumber(11)
-  set relativeVisibility($core.double v) { $_setDouble(10, v); }
+  set relativeVisibility($core.double v) {
+    $_setDouble(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasRelativeVisibility() => $_has(10);
   @$pb.TagNumber(11)
@@ -3446,42 +4310,66 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
     return $result;
   }
   CompetitiveVisibilityTopMerchantView._() : super();
-  factory CompetitiveVisibilityTopMerchantView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CompetitiveVisibilityTopMerchantView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CompetitiveVisibilityTopMerchantView.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CompetitiveVisibilityTopMerchantView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompetitiveVisibilityTopMerchantView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CompetitiveVisibilityTopMerchantView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $327.Date.create)
     ..aOS(2, _omitFieldNames ? '' : 'domain')
     ..aOB(3, _omitFieldNames ? '' : 'isYourDomain')
     ..aOS(4, _omitFieldNames ? '' : 'reportCountryCode')
     ..aInt64(5, _omitFieldNames ? '' : 'reportCategoryId')
-    ..e<TrafficSource_TrafficSourceEnum>(6, _omitFieldNames ? '' : 'trafficSource', $pb.PbFieldType.OE, defaultOrMaker: TrafficSource_TrafficSourceEnum.TRAFFIC_SOURCE_ENUM_UNSPECIFIED, valueOf: TrafficSource_TrafficSourceEnum.valueOf, enumValues: TrafficSource_TrafficSourceEnum.values)
+    ..e<TrafficSource_TrafficSourceEnum>(
+        6, _omitFieldNames ? '' : 'trafficSource', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            TrafficSource_TrafficSourceEnum.TRAFFIC_SOURCE_ENUM_UNSPECIFIED,
+        valueOf: TrafficSource_TrafficSourceEnum.valueOf,
+        enumValues: TrafficSource_TrafficSourceEnum.values)
     ..aInt64(7, _omitFieldNames ? '' : 'rank')
-    ..a<$core.double>(8, _omitFieldNames ? '' : 'adsOrganicRatio', $pb.PbFieldType.OD)
-    ..a<$core.double>(9, _omitFieldNames ? '' : 'pageOverlapRate', $pb.PbFieldType.OD)
-    ..a<$core.double>(10, _omitFieldNames ? '' : 'higherPositionRate', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        8, _omitFieldNames ? '' : 'adsOrganicRatio', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        9, _omitFieldNames ? '' : 'pageOverlapRate', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        10, _omitFieldNames ? '' : 'higherPositionRate', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CompetitiveVisibilityTopMerchantView clone() => CompetitiveVisibilityTopMerchantView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CompetitiveVisibilityTopMerchantView copyWith(void Function(CompetitiveVisibilityTopMerchantView) updates) => super.copyWith((message) => updates(message as CompetitiveVisibilityTopMerchantView)) as CompetitiveVisibilityTopMerchantView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CompetitiveVisibilityTopMerchantView clone() =>
+      CompetitiveVisibilityTopMerchantView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CompetitiveVisibilityTopMerchantView copyWith(
+          void Function(CompetitiveVisibilityTopMerchantView) updates) =>
+      super.copyWith((message) =>
+              updates(message as CompetitiveVisibilityTopMerchantView))
+          as CompetitiveVisibilityTopMerchantView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CompetitiveVisibilityTopMerchantView create() => CompetitiveVisibilityTopMerchantView._();
+  static CompetitiveVisibilityTopMerchantView create() =>
+      CompetitiveVisibilityTopMerchantView._();
   CompetitiveVisibilityTopMerchantView createEmptyInstance() => create();
-  static $pb.PbList<CompetitiveVisibilityTopMerchantView> createRepeated() => $pb.PbList<CompetitiveVisibilityTopMerchantView>();
+  static $pb.PbList<CompetitiveVisibilityTopMerchantView> createRepeated() =>
+      $pb.PbList<CompetitiveVisibilityTopMerchantView>();
   @$core.pragma('dart2js:noInline')
-  static CompetitiveVisibilityTopMerchantView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompetitiveVisibilityTopMerchantView>(create);
+  static CompetitiveVisibilityTopMerchantView getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          CompetitiveVisibilityTopMerchantView>(create);
   static CompetitiveVisibilityTopMerchantView? _defaultInstance;
 
   ///  Date of this row.
@@ -3491,7 +4379,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) { setField(1, v); }
+  set date($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -3506,7 +4397,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get domain => $_getSZ(1);
   @$pb.TagNumber(2)
-  set domain($core.String v) { $_setString(1, v); }
+  set domain($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDomain() => $_has(1);
   @$pb.TagNumber(2)
@@ -3518,7 +4412,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get isYourDomain => $_getBF(2);
   @$pb.TagNumber(3)
-  set isYourDomain($core.bool v) { $_setBool(2, v); }
+  set isYourDomain($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasIsYourDomain() => $_has(2);
   @$pb.TagNumber(3)
@@ -3531,7 +4428,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get reportCountryCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set reportCountryCode($core.String v) { $_setString(3, v); }
+  set reportCountryCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReportCountryCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -3546,7 +4446,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get reportCategoryId => $_getI64(4);
   @$pb.TagNumber(5)
-  set reportCategoryId($fixnum.Int64 v) { $_setInt64(4, v); }
+  set reportCategoryId($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasReportCategoryId() => $_has(4);
   @$pb.TagNumber(5)
@@ -3558,7 +4461,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   TrafficSource_TrafficSourceEnum get trafficSource => $_getN(5);
   @$pb.TagNumber(6)
-  set trafficSource(TrafficSource_TrafficSourceEnum v) { setField(6, v); }
+  set trafficSource(TrafficSource_TrafficSourceEnum v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTrafficSource() => $_has(5);
   @$pb.TagNumber(6)
@@ -3572,7 +4478,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $fixnum.Int64 get rank => $_getI64(6);
   @$pb.TagNumber(7)
-  set rank($fixnum.Int64 v) { $_setInt64(6, v); }
+  set rank($fixnum.Int64 v) {
+    $_setInt64(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRank() => $_has(6);
   @$pb.TagNumber(7)
@@ -3587,7 +4496,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.double get adsOrganicRatio => $_getN(7);
   @$pb.TagNumber(8)
-  set adsOrganicRatio($core.double v) { $_setDouble(7, v); }
+  set adsOrganicRatio($core.double v) {
+    $_setDouble(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasAdsOrganicRatio() => $_has(7);
   @$pb.TagNumber(8)
@@ -3602,7 +4514,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get pageOverlapRate => $_getN(8);
   @$pb.TagNumber(9)
-  set pageOverlapRate($core.double v) { $_setDouble(8, v); }
+  set pageOverlapRate($core.double v) {
+    $_setDouble(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPageOverlapRate() => $_has(8);
   @$pb.TagNumber(9)
@@ -3617,7 +4532,10 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.double get higherPositionRate => $_getN(9);
   @$pb.TagNumber(10)
-  set higherPositionRate($core.double v) { $_setDouble(9, v); }
+  set higherPositionRate($core.double v) {
+    $_setDouble(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasHigherPositionRate() => $_has(9);
   @$pb.TagNumber(10)
@@ -3658,43 +4576,68 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
       $result.yourDomainVisibilityTrend = yourDomainVisibilityTrend;
     }
     if (categoryBenchmarkVisibilityTrend != null) {
-      $result.categoryBenchmarkVisibilityTrend = categoryBenchmarkVisibilityTrend;
+      $result.categoryBenchmarkVisibilityTrend =
+          categoryBenchmarkVisibilityTrend;
     }
     return $result;
   }
   CompetitiveVisibilityBenchmarkView._() : super();
-  factory CompetitiveVisibilityBenchmarkView.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CompetitiveVisibilityBenchmarkView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CompetitiveVisibilityBenchmarkView.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CompetitiveVisibilityBenchmarkView.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompetitiveVisibilityBenchmarkView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CompetitiveVisibilityBenchmarkView',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $327.Date.create)
     ..aOS(2, _omitFieldNames ? '' : 'reportCountryCode')
     ..aInt64(3, _omitFieldNames ? '' : 'reportCategoryId')
-    ..e<TrafficSource_TrafficSourceEnum>(4, _omitFieldNames ? '' : 'trafficSource', $pb.PbFieldType.OE, defaultOrMaker: TrafficSource_TrafficSourceEnum.TRAFFIC_SOURCE_ENUM_UNSPECIFIED, valueOf: TrafficSource_TrafficSourceEnum.valueOf, enumValues: TrafficSource_TrafficSourceEnum.values)
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'yourDomainVisibilityTrend', $pb.PbFieldType.OD)
-    ..a<$core.double>(6, _omitFieldNames ? '' : 'categoryBenchmarkVisibilityTrend', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..e<TrafficSource_TrafficSourceEnum>(
+        4, _omitFieldNames ? '' : 'trafficSource', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            TrafficSource_TrafficSourceEnum.TRAFFIC_SOURCE_ENUM_UNSPECIFIED,
+        valueOf: TrafficSource_TrafficSourceEnum.valueOf,
+        enumValues: TrafficSource_TrafficSourceEnum.values)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'yourDomainVisibilityTrend',
+        $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        6,
+        _omitFieldNames ? '' : 'categoryBenchmarkVisibilityTrend',
+        $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CompetitiveVisibilityBenchmarkView clone() => CompetitiveVisibilityBenchmarkView()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CompetitiveVisibilityBenchmarkView copyWith(void Function(CompetitiveVisibilityBenchmarkView) updates) => super.copyWith((message) => updates(message as CompetitiveVisibilityBenchmarkView)) as CompetitiveVisibilityBenchmarkView;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CompetitiveVisibilityBenchmarkView clone() =>
+      CompetitiveVisibilityBenchmarkView()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CompetitiveVisibilityBenchmarkView copyWith(
+          void Function(CompetitiveVisibilityBenchmarkView) updates) =>
+      super.copyWith((message) =>
+              updates(message as CompetitiveVisibilityBenchmarkView))
+          as CompetitiveVisibilityBenchmarkView;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CompetitiveVisibilityBenchmarkView create() => CompetitiveVisibilityBenchmarkView._();
+  static CompetitiveVisibilityBenchmarkView create() =>
+      CompetitiveVisibilityBenchmarkView._();
   CompetitiveVisibilityBenchmarkView createEmptyInstance() => create();
-  static $pb.PbList<CompetitiveVisibilityBenchmarkView> createRepeated() => $pb.PbList<CompetitiveVisibilityBenchmarkView>();
+  static $pb.PbList<CompetitiveVisibilityBenchmarkView> createRepeated() =>
+      $pb.PbList<CompetitiveVisibilityBenchmarkView>();
   @$core.pragma('dart2js:noInline')
-  static CompetitiveVisibilityBenchmarkView getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompetitiveVisibilityBenchmarkView>(create);
+  static CompetitiveVisibilityBenchmarkView getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CompetitiveVisibilityBenchmarkView>(
+          create);
   static CompetitiveVisibilityBenchmarkView? _defaultInstance;
 
   ///  Date of this row.
@@ -3704,7 +4647,10 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) { setField(1, v); }
+  set date($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -3719,7 +4665,10 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get reportCountryCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set reportCountryCode($core.String v) { $_setString(1, v); }
+  set reportCountryCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReportCountryCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -3734,7 +4683,10 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get reportCategoryId => $_getI64(2);
   @$pb.TagNumber(3)
-  set reportCategoryId($fixnum.Int64 v) { $_setInt64(2, v); }
+  set reportCategoryId($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReportCategoryId() => $_has(2);
   @$pb.TagNumber(3)
@@ -3746,7 +4698,10 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TrafficSource_TrafficSourceEnum get trafficSource => $_getN(3);
   @$pb.TagNumber(4)
-  set trafficSource(TrafficSource_TrafficSourceEnum v) { setField(4, v); }
+  set trafficSource(TrafficSource_TrafficSourceEnum v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTrafficSource() => $_has(3);
   @$pb.TagNumber(4)
@@ -3760,7 +4715,10 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get yourDomainVisibilityTrend => $_getN(4);
   @$pb.TagNumber(5)
-  set yourDomainVisibilityTrend($core.double v) { $_setDouble(4, v); }
+  set yourDomainVisibilityTrend($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasYourDomainVisibilityTrend() => $_has(4);
   @$pb.TagNumber(5)
@@ -3775,7 +4733,10 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get categoryBenchmarkVisibilityTrend => $_getN(5);
   @$pb.TagNumber(6)
-  set categoryBenchmarkVisibilityTrend($core.double v) { $_setDouble(5, v); }
+  set categoryBenchmarkVisibilityTrend($core.double v) {
+    $_setDouble(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCategoryBenchmarkVisibilityTrend() => $_has(5);
   @$pb.TagNumber(6)
@@ -3787,32 +4748,41 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
 class MarketingMethod extends $pb.GeneratedMessage {
   factory MarketingMethod() => create();
   MarketingMethod._() : super();
-  factory MarketingMethod.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MarketingMethod.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MarketingMethod.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MarketingMethod.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MarketingMethod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MarketingMethod',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MarketingMethod clone() => MarketingMethod()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MarketingMethod copyWith(void Function(MarketingMethod) updates) => super.copyWith((message) => updates(message as MarketingMethod)) as MarketingMethod;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MarketingMethod copyWith(void Function(MarketingMethod) updates) =>
+      super.copyWith((message) => updates(message as MarketingMethod))
+          as MarketingMethod;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MarketingMethod create() => MarketingMethod._();
   MarketingMethod createEmptyInstance() => create();
-  static $pb.PbList<MarketingMethod> createRepeated() => $pb.PbList<MarketingMethod>();
+  static $pb.PbList<MarketingMethod> createRepeated() =>
+      $pb.PbList<MarketingMethod>();
   @$core.pragma('dart2js:noInline')
-  static MarketingMethod getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MarketingMethod>(create);
+  static MarketingMethod getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MarketingMethod>(create);
   static MarketingMethod? _defaultInstance;
 }
 
@@ -3821,32 +4791,41 @@ class MarketingMethod extends $pb.GeneratedMessage {
 class ReportGranularity extends $pb.GeneratedMessage {
   factory ReportGranularity() => create();
   ReportGranularity._() : super();
-  factory ReportGranularity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReportGranularity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReportGranularity.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReportGranularity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportGranularity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReportGranularity',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReportGranularity clone() => ReportGranularity()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReportGranularity copyWith(void Function(ReportGranularity) updates) => super.copyWith((message) => updates(message as ReportGranularity)) as ReportGranularity;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReportGranularity copyWith(void Function(ReportGranularity) updates) =>
+      super.copyWith((message) => updates(message as ReportGranularity))
+          as ReportGranularity;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReportGranularity create() => ReportGranularity._();
   ReportGranularity createEmptyInstance() => create();
-  static $pb.PbList<ReportGranularity> createRepeated() => $pb.PbList<ReportGranularity>();
+  static $pb.PbList<ReportGranularity> createRepeated() =>
+      $pb.PbList<ReportGranularity>();
   @$core.pragma('dart2js:noInline')
-  static ReportGranularity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReportGranularity>(create);
+  static ReportGranularity getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReportGranularity>(create);
   static ReportGranularity? _defaultInstance;
 }
 
@@ -3854,32 +4833,41 @@ class ReportGranularity extends $pb.GeneratedMessage {
 class RelativeDemand extends $pb.GeneratedMessage {
   factory RelativeDemand() => create();
   RelativeDemand._() : super();
-  factory RelativeDemand.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RelativeDemand.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RelativeDemand.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RelativeDemand.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RelativeDemand', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RelativeDemand',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RelativeDemand clone() => RelativeDemand()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RelativeDemand copyWith(void Function(RelativeDemand) updates) => super.copyWith((message) => updates(message as RelativeDemand)) as RelativeDemand;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RelativeDemand copyWith(void Function(RelativeDemand) updates) =>
+      super.copyWith((message) => updates(message as RelativeDemand))
+          as RelativeDemand;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RelativeDemand create() => RelativeDemand._();
   RelativeDemand createEmptyInstance() => create();
-  static $pb.PbList<RelativeDemand> createRepeated() => $pb.PbList<RelativeDemand>();
+  static $pb.PbList<RelativeDemand> createRepeated() =>
+      $pb.PbList<RelativeDemand>();
   @$core.pragma('dart2js:noInline')
-  static RelativeDemand getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RelativeDemand>(create);
+  static RelativeDemand getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RelativeDemand>(create);
   static RelativeDemand? _defaultInstance;
 }
 
@@ -3888,32 +4876,43 @@ class RelativeDemand extends $pb.GeneratedMessage {
 class RelativeDemandChangeType extends $pb.GeneratedMessage {
   factory RelativeDemandChangeType() => create();
   RelativeDemandChangeType._() : super();
-  factory RelativeDemandChangeType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RelativeDemandChangeType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RelativeDemandChangeType.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RelativeDemandChangeType.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RelativeDemandChangeType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RelativeDemandChangeType',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RelativeDemandChangeType clone() => RelativeDemandChangeType()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RelativeDemandChangeType copyWith(void Function(RelativeDemandChangeType) updates) => super.copyWith((message) => updates(message as RelativeDemandChangeType)) as RelativeDemandChangeType;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RelativeDemandChangeType clone() =>
+      RelativeDemandChangeType()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RelativeDemandChangeType copyWith(
+          void Function(RelativeDemandChangeType) updates) =>
+      super.copyWith((message) => updates(message as RelativeDemandChangeType))
+          as RelativeDemandChangeType;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RelativeDemandChangeType create() => RelativeDemandChangeType._();
   RelativeDemandChangeType createEmptyInstance() => create();
-  static $pb.PbList<RelativeDemandChangeType> createRepeated() => $pb.PbList<RelativeDemandChangeType>();
+  static $pb.PbList<RelativeDemandChangeType> createRepeated() =>
+      $pb.PbList<RelativeDemandChangeType>();
   @$core.pragma('dart2js:noInline')
-  static RelativeDemandChangeType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RelativeDemandChangeType>(create);
+  static RelativeDemandChangeType getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RelativeDemandChangeType>(create);
   static RelativeDemandChangeType? _defaultInstance;
 }
 
@@ -3921,35 +4920,44 @@ class RelativeDemandChangeType extends $pb.GeneratedMessage {
 class TrafficSource extends $pb.GeneratedMessage {
   factory TrafficSource() => create();
   TrafficSource._() : super();
-  factory TrafficSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TrafficSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TrafficSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TrafficSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrafficSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TrafficSource',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TrafficSource clone() => TrafficSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TrafficSource copyWith(void Function(TrafficSource) updates) => super.copyWith((message) => updates(message as TrafficSource)) as TrafficSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TrafficSource copyWith(void Function(TrafficSource) updates) =>
+      super.copyWith((message) => updates(message as TrafficSource))
+          as TrafficSource;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TrafficSource create() => TrafficSource._();
   TrafficSource createEmptyInstance() => create();
-  static $pb.PbList<TrafficSource> createRepeated() => $pb.PbList<TrafficSource>();
+  static $pb.PbList<TrafficSource> createRepeated() =>
+      $pb.PbList<TrafficSource>();
   @$core.pragma('dart2js:noInline')
-  static TrafficSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TrafficSource>(create);
+  static TrafficSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TrafficSource>(create);
   static TrafficSource? _defaultInstance;
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

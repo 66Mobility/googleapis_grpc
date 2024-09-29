@@ -15,17 +15,21 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// A set of values that specify the quality of the polyline.
 class PolylineQuality extends $pb.ProtobufEnum {
-  static const PolylineQuality POLYLINE_QUALITY_UNSPECIFIED = PolylineQuality._(0, _omitEnumNames ? '' : 'POLYLINE_QUALITY_UNSPECIFIED');
-  static const PolylineQuality HIGH_QUALITY = PolylineQuality._(1, _omitEnumNames ? '' : 'HIGH_QUALITY');
-  static const PolylineQuality OVERVIEW = PolylineQuality._(2, _omitEnumNames ? '' : 'OVERVIEW');
+  static const PolylineQuality POLYLINE_QUALITY_UNSPECIFIED = PolylineQuality._(
+      0, _omitEnumNames ? '' : 'POLYLINE_QUALITY_UNSPECIFIED');
+  static const PolylineQuality HIGH_QUALITY =
+      PolylineQuality._(1, _omitEnumNames ? '' : 'HIGH_QUALITY');
+  static const PolylineQuality OVERVIEW =
+      PolylineQuality._(2, _omitEnumNames ? '' : 'OVERVIEW');
 
-  static const $core.List<PolylineQuality> values = <PolylineQuality> [
+  static const $core.List<PolylineQuality> values = <PolylineQuality>[
     POLYLINE_QUALITY_UNSPECIFIED,
     HIGH_QUALITY,
     OVERVIEW,
   ];
 
-  static final $core.Map<$core.int, PolylineQuality> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, PolylineQuality> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static PolylineQuality? valueOf($core.int value) => _byValue[value];
 
   const PolylineQuality._($core.int v, $core.String n) : super(v, n);
@@ -33,21 +37,25 @@ class PolylineQuality extends $pb.ProtobufEnum {
 
 /// Specifies the preferred type of polyline to be returned.
 class PolylineEncoding extends $pb.ProtobufEnum {
-  static const PolylineEncoding POLYLINE_ENCODING_UNSPECIFIED = PolylineEncoding._(0, _omitEnumNames ? '' : 'POLYLINE_ENCODING_UNSPECIFIED');
-  static const PolylineEncoding ENCODED_POLYLINE = PolylineEncoding._(1, _omitEnumNames ? '' : 'ENCODED_POLYLINE');
-  static const PolylineEncoding GEO_JSON_LINESTRING = PolylineEncoding._(2, _omitEnumNames ? '' : 'GEO_JSON_LINESTRING');
+  static const PolylineEncoding POLYLINE_ENCODING_UNSPECIFIED =
+      PolylineEncoding._(
+          0, _omitEnumNames ? '' : 'POLYLINE_ENCODING_UNSPECIFIED');
+  static const PolylineEncoding ENCODED_POLYLINE =
+      PolylineEncoding._(1, _omitEnumNames ? '' : 'ENCODED_POLYLINE');
+  static const PolylineEncoding GEO_JSON_LINESTRING =
+      PolylineEncoding._(2, _omitEnumNames ? '' : 'GEO_JSON_LINESTRING');
 
-  static const $core.List<PolylineEncoding> values = <PolylineEncoding> [
+  static const $core.List<PolylineEncoding> values = <PolylineEncoding>[
     POLYLINE_ENCODING_UNSPECIFIED,
     ENCODED_POLYLINE,
     GEO_JSON_LINESTRING,
   ];
 
-  static final $core.Map<$core.int, PolylineEncoding> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, PolylineEncoding> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static PolylineEncoding? valueOf($core.int value) => _byValue[value];
 
   const PolylineEncoding._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

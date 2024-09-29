@@ -17,18 +17,113 @@ import 'dart:typed_data' as $typed_data;
 const ComputeCustomRoutesRequest$json = {
   '1': 'ComputeCustomRoutesRequest',
   '2': [
-    {'1': 'origin', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '8': {}, '10': 'origin'},
-    {'1': 'destination', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '8': {}, '10': 'destination'},
-    {'1': 'intermediates', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routes.v1.Waypoint', '8': {}, '10': 'intermediates'},
-    {'1': 'travel_mode', '3': 4, '4': 1, '5': 14, '6': '.google.maps.routes.v1.RouteTravelMode', '8': {}, '10': 'travelMode'},
-    {'1': 'routing_preference', '3': 5, '4': 1, '5': 14, '6': '.google.maps.routes.v1.RoutingPreference', '8': {}, '10': 'routingPreference'},
-    {'1': 'polyline_quality', '3': 6, '4': 1, '5': 14, '6': '.google.maps.routes.v1.PolylineQuality', '8': {}, '10': 'polylineQuality'},
-    {'1': 'polyline_encoding', '3': 13, '4': 1, '5': 14, '6': '.google.maps.routes.v1.PolylineEncoding', '8': {}, '10': 'polylineEncoding'},
-    {'1': 'departure_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'departureTime'},
-    {'1': 'route_modifiers', '3': 11, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteModifiers', '8': {}, '10': 'routeModifiers'},
-    {'1': 'route_objective', '3': 12, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteObjective', '8': {}, '10': 'routeObjective'},
-    {'1': 'language_code', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
-    {'1': 'units', '3': 10, '4': 1, '5': 14, '6': '.google.maps.routes.v1.Units', '8': {}, '10': 'units'},
+    {
+      '1': 'origin',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '8': {},
+      '10': 'origin'
+    },
+    {
+      '1': 'destination',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '8': {},
+      '10': 'destination'
+    },
+    {
+      '1': 'intermediates',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routes.v1.Waypoint',
+      '8': {},
+      '10': 'intermediates'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.RouteTravelMode',
+      '8': {},
+      '10': 'travelMode'
+    },
+    {
+      '1': 'routing_preference',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.RoutingPreference',
+      '8': {},
+      '10': 'routingPreference'
+    },
+    {
+      '1': 'polyline_quality',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.PolylineQuality',
+      '8': {},
+      '10': 'polylineQuality'
+    },
+    {
+      '1': 'polyline_encoding',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.PolylineEncoding',
+      '8': {},
+      '10': 'polylineEncoding'
+    },
+    {
+      '1': 'departure_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'departureTime'
+    },
+    {
+      '1': 'route_modifiers',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteModifiers',
+      '8': {},
+      '10': 'routeModifiers'
+    },
+    {
+      '1': 'route_objective',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteObjective',
+      '8': {},
+      '10': 'routeObjective'
+    },
+    {
+      '1': 'language_code',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
+    {
+      '1': 'units',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routes.v1.Units',
+      '8': {},
+      '10': 'units'
+    },
   ],
 };
 
@@ -56,8 +151,24 @@ final $typed_data.Uint8List computeCustomRoutesRequestDescriptor = $convert.base
 const RouteObjective$json = {
   '1': 'RouteObjective',
   '2': [
-    {'1': 'rate_card', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteObjective.RateCard', '9': 0, '10': 'rateCard'},
-    {'1': 'custom_layer', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteObjective.CustomLayer', '8': {}, '10': 'customLayer'},
+    {
+      '1': 'rate_card',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteObjective.RateCard',
+      '9': 0,
+      '10': 'rateCard'
+    },
+    {
+      '1': 'custom_layer',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteObjective.CustomLayer',
+      '8': {},
+      '10': 'customLayer'
+    },
   ],
   '3': [RouteObjective_RateCard$json, RouteObjective_CustomLayer$json],
   '8': [
@@ -69,9 +180,32 @@ const RouteObjective$json = {
 const RouteObjective_RateCard$json = {
   '1': 'RateCard',
   '2': [
-    {'1': 'cost_per_minute', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteObjective.RateCard.MonetaryCost', '8': {}, '10': 'costPerMinute'},
-    {'1': 'cost_per_km', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteObjective.RateCard.MonetaryCost', '8': {}, '10': 'costPerKm'},
-    {'1': 'include_tolls', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'includeTolls'},
+    {
+      '1': 'cost_per_minute',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteObjective.RateCard.MonetaryCost',
+      '8': {},
+      '10': 'costPerMinute'
+    },
+    {
+      '1': 'cost_per_km',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteObjective.RateCard.MonetaryCost',
+      '8': {},
+      '10': 'costPerKm'
+    },
+    {
+      '1': 'include_tolls',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'includeTolls'
+    },
   ],
   '3': [RouteObjective_RateCard_MonetaryCost$json],
 };
@@ -88,7 +222,15 @@ const RouteObjective_RateCard_MonetaryCost$json = {
 const RouteObjective_CustomLayer$json = {
   '1': 'CustomLayer',
   '2': [
-    {'1': 'dataset_info', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.RouteObjective.CustomLayer.DatasetInfo', '8': {}, '10': 'datasetInfo'},
+    {
+      '1': 'dataset_info',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.RouteObjective.CustomLayer.DatasetInfo',
+      '8': {},
+      '10': 'datasetInfo'
+    },
   ],
   '3': [RouteObjective_CustomLayer_DatasetInfo$json],
 };
@@ -124,4 +266,3 @@ final $typed_data.Uint8List routeObjectiveDescriptor = $convert.base64Decode(
     'ZU9iamVjdGl2ZS5DdXN0b21MYXllci5EYXRhc2V0SW5mb0ID4EECUgtkYXRhc2V0SW5mbxpbCg'
     'tEYXRhc2V0SW5mbxIkCgpkYXRhc2V0X2lkGAEgASgJQgUYAeBBAVIJZGF0YXNldElkEiYKDGRp'
     'c3BsYXlfbmFtZRgCIAEoCUID4EEBUgtkaXNwbGF5TmFtZUILCglvYmplY3RpdmU=');
-

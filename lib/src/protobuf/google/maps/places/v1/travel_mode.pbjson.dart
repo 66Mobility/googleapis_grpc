@@ -29,4 +29,3 @@ const TravelMode$json = {
 final $typed_data.Uint8List travelModeDescriptor = $convert.base64Decode(
     'CgpUcmF2ZWxNb2RlEhsKF1RSQVZFTF9NT0RFX1VOU1BFQ0lGSUVEEAASCQoFRFJJVkUQARILCg'
     'dCSUNZQ0xFEAISCAoEV0FMSxADEg8KC1RXT19XSEVFTEVSEAQ=');
-

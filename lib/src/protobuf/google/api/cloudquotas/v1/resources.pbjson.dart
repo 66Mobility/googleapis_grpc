@@ -39,16 +39,55 @@ const QuotaInfo$json = {
     {'1': 'service', '3': 4, '4': 1, '5': 9, '10': 'service'},
     {'1': 'is_precise', '3': 5, '4': 1, '5': 8, '10': 'isPrecise'},
     {'1': 'refresh_interval', '3': 6, '4': 1, '5': 9, '10': 'refreshInterval'},
-    {'1': 'container_type', '3': 7, '4': 1, '5': 14, '6': '.google.api.cloudquotas.v1.QuotaInfo.ContainerType', '10': 'containerType'},
+    {
+      '1': 'container_type',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.cloudquotas.v1.QuotaInfo.ContainerType',
+      '10': 'containerType'
+    },
     {'1': 'dimensions', '3': 8, '4': 3, '5': 9, '10': 'dimensions'},
-    {'1': 'metric_display_name', '3': 9, '4': 1, '5': 9, '10': 'metricDisplayName'},
-    {'1': 'quota_display_name', '3': 10, '4': 1, '5': 9, '10': 'quotaDisplayName'},
+    {
+      '1': 'metric_display_name',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '10': 'metricDisplayName'
+    },
+    {
+      '1': 'quota_display_name',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'quotaDisplayName'
+    },
     {'1': 'metric_unit', '3': 11, '4': 1, '5': 9, '10': 'metricUnit'},
-    {'1': 'quota_increase_eligibility', '3': 12, '4': 1, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaIncreaseEligibility', '10': 'quotaIncreaseEligibility'},
+    {
+      '1': 'quota_increase_eligibility',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaIncreaseEligibility',
+      '10': 'quotaIncreaseEligibility'
+    },
     {'1': 'is_fixed', '3': 13, '4': 1, '5': 8, '10': 'isFixed'},
-    {'1': 'dimensions_infos', '3': 14, '4': 3, '5': 11, '6': '.google.api.cloudquotas.v1.DimensionsInfo', '10': 'dimensionsInfos'},
+    {
+      '1': 'dimensions_infos',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.DimensionsInfo',
+      '10': 'dimensionsInfos'
+    },
     {'1': 'is_concurrent', '3': 15, '4': 1, '5': 8, '10': 'isConcurrent'},
-    {'1': 'service_request_quota_uri', '3': 17, '4': 1, '5': 9, '10': 'serviceRequestQuotaUri'},
+    {
+      '1': 'service_request_quota_uri',
+      '3': 17,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceRequestQuotaUri'
+    },
   ],
   '4': [QuotaInfo_ContainerType$json],
   '7': {},
@@ -94,7 +133,15 @@ const QuotaIncreaseEligibility$json = {
   '1': 'QuotaIncreaseEligibility',
   '2': [
     {'1': 'is_eligible', '3': 1, '4': 1, '5': 8, '10': 'isEligible'},
-    {'1': 'ineligibility_reason', '3': 2, '4': 1, '5': 14, '6': '.google.api.cloudquotas.v1.QuotaIncreaseEligibility.IneligibilityReason', '10': 'ineligibilityReason'},
+    {
+      '1': 'ineligibility_reason',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.api.cloudquotas.v1.QuotaIncreaseEligibility.IneligibilityReason',
+      '10': 'ineligibilityReason'
+    },
   ],
   '4': [QuotaIncreaseEligibility_IneligibilityReason$json],
 };
@@ -123,16 +170,55 @@ const QuotaPreference$json = {
   '1': 'QuotaPreference',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'dimensions', '3': 2, '4': 3, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaPreference.DimensionsEntry', '8': {}, '10': 'dimensions'},
-    {'1': 'quota_config', '3': 3, '4': 1, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaConfig', '8': {}, '10': 'quotaConfig'},
+    {
+      '1': 'dimensions',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaPreference.DimensionsEntry',
+      '8': {},
+      '10': 'dimensions'
+    },
+    {
+      '1': 'quota_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaConfig',
+      '8': {},
+      '10': 'quotaConfig'
+    },
     {'1': 'etag', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'etag'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
     {'1': 'service', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'service'},
     {'1': 'quota_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'quotaId'},
     {'1': 'reconciling', '3': 10, '4': 1, '5': 8, '8': {}, '10': 'reconciling'},
     {'1': 'justification', '3': 11, '4': 1, '5': 9, '10': 'justification'},
-    {'1': 'contact_email', '3': 12, '4': 1, '5': 9, '8': {}, '10': 'contactEmail'},
+    {
+      '1': 'contact_email',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contactEmail'
+    },
   ],
   '3': [QuotaPreference_DimensionsEntry$json],
   '7': {},
@@ -172,12 +258,43 @@ final $typed_data.Uint8List quotaPreferenceDescriptor = $convert.base64Decode(
 const QuotaConfig$json = {
   '1': 'QuotaConfig',
   '2': [
-    {'1': 'preferred_value', '3': 1, '4': 1, '5': 3, '8': {}, '10': 'preferredValue'},
+    {
+      '1': 'preferred_value',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'preferredValue'
+    },
     {'1': 'state_detail', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'stateDetail'},
-    {'1': 'granted_value', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '8': {}, '10': 'grantedValue'},
+    {
+      '1': 'granted_value',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '8': {},
+      '10': 'grantedValue'
+    },
     {'1': 'trace_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'traceId'},
-    {'1': 'annotations', '3': 5, '4': 3, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaConfig.AnnotationsEntry', '8': {}, '10': 'annotations'},
-    {'1': 'request_origin', '3': 6, '4': 1, '5': 14, '6': '.google.api.cloudquotas.v1.QuotaConfig.Origin', '8': {}, '10': 'requestOrigin'},
+    {
+      '1': 'annotations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaConfig.AnnotationsEntry',
+      '8': {},
+      '10': 'annotations'
+    },
+    {
+      '1': 'request_origin',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.cloudquotas.v1.QuotaConfig.Origin',
+      '8': {},
+      '10': 'requestOrigin'
+    },
   ],
   '3': [QuotaConfig_AnnotationsEntry$json],
   '4': [QuotaConfig_Origin$json],
@@ -220,9 +337,29 @@ final $typed_data.Uint8List quotaConfigDescriptor = $convert.base64Decode(
 const DimensionsInfo$json = {
   '1': 'DimensionsInfo',
   '2': [
-    {'1': 'dimensions', '3': 1, '4': 3, '5': 11, '6': '.google.api.cloudquotas.v1.DimensionsInfo.DimensionsEntry', '10': 'dimensions'},
-    {'1': 'details', '3': 2, '4': 1, '5': 11, '6': '.google.api.cloudquotas.v1.QuotaDetails', '10': 'details'},
-    {'1': 'applicable_locations', '3': 3, '4': 3, '5': 9, '10': 'applicableLocations'},
+    {
+      '1': 'dimensions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.DimensionsInfo.DimensionsEntry',
+      '10': 'dimensions'
+    },
+    {
+      '1': 'details',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.QuotaDetails',
+      '10': 'details'
+    },
+    {
+      '1': 'applicable_locations',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'applicableLocations'
+    },
   ],
   '3': [DimensionsInfo_DimensionsEntry$json],
 };
@@ -251,7 +388,14 @@ const QuotaDetails$json = {
   '1': 'QuotaDetails',
   '2': [
     {'1': 'value', '3': 1, '4': 1, '5': 3, '10': 'value'},
-    {'1': 'rollout_info', '3': 3, '4': 1, '5': 11, '6': '.google.api.cloudquotas.v1.RolloutInfo', '10': 'rolloutInfo'},
+    {
+      '1': 'rollout_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.cloudquotas.v1.RolloutInfo',
+      '10': 'rolloutInfo'
+    },
   ],
 };
 
@@ -271,4 +415,3 @@ const RolloutInfo$json = {
 /// Descriptor for `RolloutInfo`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List rolloutInfoDescriptor = $convert.base64Decode(
     'CgtSb2xsb3V0SW5mbxInCg9vbmdvaW5nX3JvbGxvdXQYASABKAhSDm9uZ29pbmdSb2xsb3V0');
-

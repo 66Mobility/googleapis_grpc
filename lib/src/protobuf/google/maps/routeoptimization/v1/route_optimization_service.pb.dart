@@ -41,35 +41,53 @@ class BatchOptimizeToursRequest_AsyncModelConfig extends $pb.GeneratedMessage {
     return $result;
   }
   BatchOptimizeToursRequest_AsyncModelConfig._() : super();
-  factory BatchOptimizeToursRequest_AsyncModelConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchOptimizeToursRequest_AsyncModelConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchOptimizeToursRequest_AsyncModelConfig.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchOptimizeToursRequest_AsyncModelConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchOptimizeToursRequest.AsyncModelConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchOptimizeToursRequest.AsyncModelConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
-    ..aOM<InputConfig>(2, _omitFieldNames ? '' : 'inputConfig', subBuilder: InputConfig.create)
-    ..aOM<OutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: OutputConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<InputConfig>(2, _omitFieldNames ? '' : 'inputConfig',
+        subBuilder: InputConfig.create)
+    ..aOM<OutputConfig>(3, _omitFieldNames ? '' : 'outputConfig',
+        subBuilder: OutputConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursRequest_AsyncModelConfig clone() => BatchOptimizeToursRequest_AsyncModelConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursRequest_AsyncModelConfig copyWith(void Function(BatchOptimizeToursRequest_AsyncModelConfig) updates) => super.copyWith((message) => updates(message as BatchOptimizeToursRequest_AsyncModelConfig)) as BatchOptimizeToursRequest_AsyncModelConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursRequest_AsyncModelConfig clone() =>
+      BatchOptimizeToursRequest_AsyncModelConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursRequest_AsyncModelConfig copyWith(
+          void Function(BatchOptimizeToursRequest_AsyncModelConfig) updates) =>
+      super.copyWith((message) =>
+              updates(message as BatchOptimizeToursRequest_AsyncModelConfig))
+          as BatchOptimizeToursRequest_AsyncModelConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static BatchOptimizeToursRequest_AsyncModelConfig create() => BatchOptimizeToursRequest_AsyncModelConfig._();
+  static BatchOptimizeToursRequest_AsyncModelConfig create() =>
+      BatchOptimizeToursRequest_AsyncModelConfig._();
   BatchOptimizeToursRequest_AsyncModelConfig createEmptyInstance() => create();
-  static $pb.PbList<BatchOptimizeToursRequest_AsyncModelConfig> createRepeated() => $pb.PbList<BatchOptimizeToursRequest_AsyncModelConfig>();
+  static $pb.PbList<BatchOptimizeToursRequest_AsyncModelConfig>
+      createRepeated() =>
+          $pb.PbList<BatchOptimizeToursRequest_AsyncModelConfig>();
   @$core.pragma('dart2js:noInline')
-  static BatchOptimizeToursRequest_AsyncModelConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchOptimizeToursRequest_AsyncModelConfig>(create);
+  static BatchOptimizeToursRequest_AsyncModelConfig getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          BatchOptimizeToursRequest_AsyncModelConfig>(create);
   static BatchOptimizeToursRequest_AsyncModelConfig? _defaultInstance;
 
   /// Optional. User defined model name, can be used as alias by users to keep
@@ -77,7 +95,10 @@ class BatchOptimizeToursRequest_AsyncModelConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get displayName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set displayName($core.String v) { $_setString(0, v); }
+  set displayName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
@@ -87,7 +108,10 @@ class BatchOptimizeToursRequest_AsyncModelConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   InputConfig get inputConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set inputConfig(InputConfig v) { setField(2, v); }
+  set inputConfig(InputConfig v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInputConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -99,7 +123,10 @@ class BatchOptimizeToursRequest_AsyncModelConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   OutputConfig get outputConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set outputConfig(OutputConfig v) { setField(3, v); }
+  set outputConfig(OutputConfig v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOutputConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -128,34 +155,47 @@ class BatchOptimizeToursRequest extends $pb.GeneratedMessage {
     return $result;
   }
   BatchOptimizeToursRequest._() : super();
-  factory BatchOptimizeToursRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchOptimizeToursRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchOptimizeToursRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchOptimizeToursRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchOptimizeToursRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchOptimizeToursRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..pc<BatchOptimizeToursRequest_AsyncModelConfig>(2, _omitFieldNames ? '' : 'modelConfigs', $pb.PbFieldType.PM, subBuilder: BatchOptimizeToursRequest_AsyncModelConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<BatchOptimizeToursRequest_AsyncModelConfig>(
+        2, _omitFieldNames ? '' : 'modelConfigs', $pb.PbFieldType.PM,
+        subBuilder: BatchOptimizeToursRequest_AsyncModelConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursRequest clone() => BatchOptimizeToursRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursRequest copyWith(void Function(BatchOptimizeToursRequest) updates) => super.copyWith((message) => updates(message as BatchOptimizeToursRequest)) as BatchOptimizeToursRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursRequest clone() =>
+      BatchOptimizeToursRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursRequest copyWith(
+          void Function(BatchOptimizeToursRequest) updates) =>
+      super.copyWith((message) => updates(message as BatchOptimizeToursRequest))
+          as BatchOptimizeToursRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchOptimizeToursRequest create() => BatchOptimizeToursRequest._();
   BatchOptimizeToursRequest createEmptyInstance() => create();
-  static $pb.PbList<BatchOptimizeToursRequest> createRepeated() => $pb.PbList<BatchOptimizeToursRequest>();
+  static $pb.PbList<BatchOptimizeToursRequest> createRepeated() =>
+      $pb.PbList<BatchOptimizeToursRequest>();
   @$core.pragma('dart2js:noInline')
-  static BatchOptimizeToursRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchOptimizeToursRequest>(create);
+  static BatchOptimizeToursRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchOptimizeToursRequest>(create);
   static BatchOptimizeToursRequest? _defaultInstance;
 
   ///  Required. Target project and location to make a call.
@@ -168,7 +208,10 @@ class BatchOptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -177,7 +220,8 @@ class BatchOptimizeToursRequest extends $pb.GeneratedMessage {
   /// Required. Input/Output information each purchase model, such as file paths
   /// and data formats.
   @$pb.TagNumber(2)
-  $core.List<BatchOptimizeToursRequest_AsyncModelConfig> get modelConfigs => $_getList(1);
+  $core.List<BatchOptimizeToursRequest_AsyncModelConfig> get modelConfigs =>
+      $_getList(1);
 }
 
 /// Response to a `BatchOptimizeToursRequest`. This is returned in
@@ -185,32 +229,44 @@ class BatchOptimizeToursRequest extends $pb.GeneratedMessage {
 class BatchOptimizeToursResponse extends $pb.GeneratedMessage {
   factory BatchOptimizeToursResponse() => create();
   BatchOptimizeToursResponse._() : super();
-  factory BatchOptimizeToursResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchOptimizeToursResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchOptimizeToursResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchOptimizeToursResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchOptimizeToursResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchOptimizeToursResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursResponse clone() => BatchOptimizeToursResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursResponse copyWith(void Function(BatchOptimizeToursResponse) updates) => super.copyWith((message) => updates(message as BatchOptimizeToursResponse)) as BatchOptimizeToursResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursResponse clone() =>
+      BatchOptimizeToursResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursResponse copyWith(
+          void Function(BatchOptimizeToursResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as BatchOptimizeToursResponse))
+          as BatchOptimizeToursResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchOptimizeToursResponse create() => BatchOptimizeToursResponse._();
   BatchOptimizeToursResponse createEmptyInstance() => create();
-  static $pb.PbList<BatchOptimizeToursResponse> createRepeated() => $pb.PbList<BatchOptimizeToursResponse>();
+  static $pb.PbList<BatchOptimizeToursResponse> createRepeated() =>
+      $pb.PbList<BatchOptimizeToursResponse>();
   @$core.pragma('dart2js:noInline')
-  static BatchOptimizeToursResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchOptimizeToursResponse>(create);
+  static BatchOptimizeToursResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchOptimizeToursResponse>(create);
   static BatchOptimizeToursResponse? _defaultInstance;
 }
 
@@ -218,32 +274,44 @@ class BatchOptimizeToursResponse extends $pb.GeneratedMessage {
 class BatchOptimizeToursMetadata extends $pb.GeneratedMessage {
   factory BatchOptimizeToursMetadata() => create();
   BatchOptimizeToursMetadata._() : super();
-  factory BatchOptimizeToursMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchOptimizeToursMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchOptimizeToursMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchOptimizeToursMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchOptimizeToursMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchOptimizeToursMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursMetadata clone() => BatchOptimizeToursMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchOptimizeToursMetadata copyWith(void Function(BatchOptimizeToursMetadata) updates) => super.copyWith((message) => updates(message as BatchOptimizeToursMetadata)) as BatchOptimizeToursMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursMetadata clone() =>
+      BatchOptimizeToursMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchOptimizeToursMetadata copyWith(
+          void Function(BatchOptimizeToursMetadata) updates) =>
+      super.copyWith(
+              (message) => updates(message as BatchOptimizeToursMetadata))
+          as BatchOptimizeToursMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchOptimizeToursMetadata create() => BatchOptimizeToursMetadata._();
   BatchOptimizeToursMetadata createEmptyInstance() => create();
-  static $pb.PbList<BatchOptimizeToursMetadata> createRepeated() => $pb.PbList<BatchOptimizeToursMetadata>();
+  static $pb.PbList<BatchOptimizeToursMetadata> createRepeated() =>
+      $pb.PbList<BatchOptimizeToursMetadata>();
   @$core.pragma('dart2js:noInline')
-  static BatchOptimizeToursMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchOptimizeToursMetadata>(create);
+  static BatchOptimizeToursMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchOptimizeToursMetadata>(create);
   static BatchOptimizeToursMetadata? _defaultInstance;
 }
 
@@ -298,7 +366,8 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
       $result.refreshDetailsRoutes.addAll(refreshDetailsRoutes);
     }
     if (interpretInjectedSolutionsUsingLabels != null) {
-      $result.interpretInjectedSolutionsUsingLabels = interpretInjectedSolutionsUsingLabels;
+      $result.interpretInjectedSolutionsUsingLabels =
+          interpretInjectedSolutionsUsingLabels;
     }
     if (considerRoadTraffic != null) {
       $result.considerRoadTraffic = considerRoadTraffic;
@@ -310,7 +379,8 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
       $result.populateTransitionPolylines = populateTransitionPolylines;
     }
     if (allowLargeDeadlineDespiteInterruptionRisk != null) {
-      $result.allowLargeDeadlineDespiteInterruptionRisk = allowLargeDeadlineDespiteInterruptionRisk;
+      $result.allowLargeDeadlineDespiteInterruptionRisk =
+          allowLargeDeadlineDespiteInterruptionRisk;
     }
     if (useGeodesicDistances != null) {
       $result.useGeodesicDistances = useGeodesicDistances;
@@ -324,49 +394,78 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
     return $result;
   }
   OptimizeToursRequest._() : super();
-  factory OptimizeToursRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OptimizeToursRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OptimizeToursRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OptimizeToursRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeToursRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OptimizeToursRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'timeout', subBuilder: $264.Duration.create)
-    ..aOM<ShipmentModel>(3, _omitFieldNames ? '' : 'model', subBuilder: ShipmentModel.create)
-    ..e<OptimizeToursRequest_SolvingMode>(4, _omitFieldNames ? '' : 'solvingMode', $pb.PbFieldType.OE, defaultOrMaker: OptimizeToursRequest_SolvingMode.DEFAULT_SOLVE, valueOf: OptimizeToursRequest_SolvingMode.valueOf, enumValues: OptimizeToursRequest_SolvingMode.values)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'maxValidationErrors', $pb.PbFieldType.O3)
-    ..e<OptimizeToursRequest_SearchMode>(6, _omitFieldNames ? '' : 'searchMode', $pb.PbFieldType.OE, defaultOrMaker: OptimizeToursRequest_SearchMode.SEARCH_MODE_UNSPECIFIED, valueOf: OptimizeToursRequest_SearchMode.valueOf, enumValues: OptimizeToursRequest_SearchMode.values)
-    ..pc<ShipmentRoute>(7, _omitFieldNames ? '' : 'injectedFirstSolutionRoutes', $pb.PbFieldType.PM, subBuilder: ShipmentRoute.create)
-    ..aOM<InjectedSolutionConstraint>(8, _omitFieldNames ? '' : 'injectedSolutionConstraint', subBuilder: InjectedSolutionConstraint.create)
-    ..pc<ShipmentRoute>(9, _omitFieldNames ? '' : 'refreshDetailsRoutes', $pb.PbFieldType.PM, subBuilder: ShipmentRoute.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $264.Duration.create)
+    ..aOM<ShipmentModel>(3, _omitFieldNames ? '' : 'model',
+        subBuilder: ShipmentModel.create)
+    ..e<OptimizeToursRequest_SolvingMode>(
+        4, _omitFieldNames ? '' : 'solvingMode', $pb.PbFieldType.OE,
+        defaultOrMaker: OptimizeToursRequest_SolvingMode.DEFAULT_SOLVE,
+        valueOf: OptimizeToursRequest_SolvingMode.valueOf,
+        enumValues: OptimizeToursRequest_SolvingMode.values)
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'maxValidationErrors', $pb.PbFieldType.O3)
+    ..e<OptimizeToursRequest_SearchMode>(
+        6, _omitFieldNames ? '' : 'searchMode', $pb.PbFieldType.OE,
+        defaultOrMaker: OptimizeToursRequest_SearchMode.SEARCH_MODE_UNSPECIFIED,
+        valueOf: OptimizeToursRequest_SearchMode.valueOf,
+        enumValues: OptimizeToursRequest_SearchMode.values)
+    ..pc<ShipmentRoute>(7, _omitFieldNames ? '' : 'injectedFirstSolutionRoutes',
+        $pb.PbFieldType.PM,
+        subBuilder: ShipmentRoute.create)
+    ..aOM<InjectedSolutionConstraint>(
+        8, _omitFieldNames ? '' : 'injectedSolutionConstraint',
+        subBuilder: InjectedSolutionConstraint.create)
+    ..pc<ShipmentRoute>(
+        9, _omitFieldNames ? '' : 'refreshDetailsRoutes', $pb.PbFieldType.PM,
+        subBuilder: ShipmentRoute.create)
     ..aOB(10, _omitFieldNames ? '' : 'interpretInjectedSolutionsUsingLabels')
     ..aOB(11, _omitFieldNames ? '' : 'considerRoadTraffic')
     ..aOB(12, _omitFieldNames ? '' : 'populatePolylines')
     ..aOB(13, _omitFieldNames ? '' : 'populateTransitionPolylines')
-    ..aOB(14, _omitFieldNames ? '' : 'allowLargeDeadlineDespiteInterruptionRisk')
+    ..aOB(
+        14, _omitFieldNames ? '' : 'allowLargeDeadlineDespiteInterruptionRisk')
     ..aOB(15, _omitFieldNames ? '' : 'useGeodesicDistances')
-    ..a<$core.double>(16, _omitFieldNames ? '' : 'geodesicMetersPerSecond', $pb.PbFieldType.OD)
+    ..a<$core.double>(16, _omitFieldNames ? '' : 'geodesicMetersPerSecond',
+        $pb.PbFieldType.OD)
     ..aOS(17, _omitFieldNames ? '' : 'label')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OptimizeToursRequest clone() => OptimizeToursRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OptimizeToursRequest copyWith(void Function(OptimizeToursRequest) updates) => super.copyWith((message) => updates(message as OptimizeToursRequest)) as OptimizeToursRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OptimizeToursRequest clone() =>
+      OptimizeToursRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OptimizeToursRequest copyWith(void Function(OptimizeToursRequest) updates) =>
+      super.copyWith((message) => updates(message as OptimizeToursRequest))
+          as OptimizeToursRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OptimizeToursRequest create() => OptimizeToursRequest._();
   OptimizeToursRequest createEmptyInstance() => create();
-  static $pb.PbList<OptimizeToursRequest> createRepeated() => $pb.PbList<OptimizeToursRequest>();
+  static $pb.PbList<OptimizeToursRequest> createRepeated() =>
+      $pb.PbList<OptimizeToursRequest>();
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OptimizeToursRequest>(create);
+  static OptimizeToursRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OptimizeToursRequest>(create);
   static OptimizeToursRequest? _defaultInstance;
 
   ///  Required. Target project or location to make a call.
@@ -379,7 +478,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -394,7 +496,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get timeout => $_getN(1);
   @$pb.TagNumber(2)
-  set timeout($264.Duration v) { setField(2, v); }
+  set timeout($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTimeout() => $_has(1);
   @$pb.TagNumber(2)
@@ -406,7 +511,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ShipmentModel get model => $_getN(2);
   @$pb.TagNumber(3)
-  set model(ShipmentModel v) { setField(3, v); }
+  set model(ShipmentModel v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasModel() => $_has(2);
   @$pb.TagNumber(3)
@@ -418,7 +526,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   OptimizeToursRequest_SolvingMode get solvingMode => $_getN(3);
   @$pb.TagNumber(4)
-  set solvingMode(OptimizeToursRequest_SolvingMode v) { setField(4, v); }
+  set solvingMode(OptimizeToursRequest_SolvingMode v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSolvingMode() => $_has(3);
   @$pb.TagNumber(4)
@@ -434,7 +545,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxValidationErrors => $_getIZ(4);
   @$pb.TagNumber(5)
-  set maxValidationErrors($core.int v) { $_setSignedInt32(4, v); }
+  set maxValidationErrors($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMaxValidationErrors() => $_has(4);
   @$pb.TagNumber(5)
@@ -444,7 +558,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   OptimizeToursRequest_SearchMode get searchMode => $_getN(5);
   @$pb.TagNumber(6)
-  set searchMode(OptimizeToursRequest_SearchMode v) { setField(6, v); }
+  set searchMode(OptimizeToursRequest_SearchMode v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasSearchMode() => $_has(5);
   @$pb.TagNumber(6)
@@ -493,7 +610,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   InjectedSolutionConstraint get injectedSolutionConstraint => $_getN(7);
   @$pb.TagNumber(8)
-  set injectedSolutionConstraint(InjectedSolutionConstraint v) { setField(8, v); }
+  set injectedSolutionConstraint(InjectedSolutionConstraint v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasInjectedSolutionConstraint() => $_has(7);
   @$pb.TagNumber(8)
@@ -588,7 +708,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool get interpretInjectedSolutionsUsingLabels => $_getBF(9);
   @$pb.TagNumber(10)
-  set interpretInjectedSolutionsUsingLabels($core.bool v) { $_setBool(9, v); }
+  set interpretInjectedSolutionsUsingLabels($core.bool v) {
+    $_setBool(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasInterpretInjectedSolutionsUsingLabels() => $_has(9);
   @$pb.TagNumber(10)
@@ -605,7 +728,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get considerRoadTraffic => $_getBF(10);
   @$pb.TagNumber(11)
-  set considerRoadTraffic($core.bool v) { $_setBool(10, v); }
+  set considerRoadTraffic($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasConsiderRoadTraffic() => $_has(10);
   @$pb.TagNumber(11)
@@ -615,7 +741,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get populatePolylines => $_getBF(11);
   @$pb.TagNumber(12)
-  set populatePolylines($core.bool v) { $_setBool(11, v); }
+  set populatePolylines($core.bool v) {
+    $_setBool(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasPopulatePolylines() => $_has(11);
   @$pb.TagNumber(12)
@@ -626,7 +755,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool get populateTransitionPolylines => $_getBF(12);
   @$pb.TagNumber(13)
-  set populateTransitionPolylines($core.bool v) { $_setBool(12, v); }
+  set populateTransitionPolylines($core.bool v) {
+    $_setBool(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasPopulateTransitionPolylines() => $_has(12);
   @$pb.TagNumber(13)
@@ -640,7 +772,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool get allowLargeDeadlineDespiteInterruptionRisk => $_getBF(13);
   @$pb.TagNumber(14)
-  set allowLargeDeadlineDespiteInterruptionRisk($core.bool v) { $_setBool(13, v); }
+  set allowLargeDeadlineDespiteInterruptionRisk($core.bool v) {
+    $_setBool(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasAllowLargeDeadlineDespiteInterruptionRisk() => $_has(13);
   @$pb.TagNumber(14)
@@ -652,7 +787,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool get useGeodesicDistances => $_getBF(14);
   @$pb.TagNumber(15)
-  set useGeodesicDistances($core.bool v) { $_setBool(14, v); }
+  set useGeodesicDistances($core.bool v) {
+    $_setBool(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasUseGeodesicDistances() => $_has(14);
   @$pb.TagNumber(15)
@@ -664,7 +802,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.double get geodesicMetersPerSecond => $_getN(15);
   @$pb.TagNumber(16)
-  set geodesicMetersPerSecond($core.double v) { $_setDouble(15, v); }
+  set geodesicMetersPerSecond($core.double v) {
+    $_setDouble(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasGeodesicMetersPerSecond() => $_has(15);
   @$pb.TagNumber(16)
@@ -675,7 +816,10 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get label => $_getSZ(16);
   @$pb.TagNumber(17)
-  set label($core.String v) { $_setString(16, v); }
+  set label($core.String v) {
+    $_setString(16, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasLabel() => $_has(16);
   @$pb.TagNumber(17)
@@ -718,39 +862,61 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
     return $result;
   }
   OptimizeToursResponse_Metrics._() : super();
-  factory OptimizeToursResponse_Metrics.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OptimizeToursResponse_Metrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OptimizeToursResponse_Metrics.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OptimizeToursResponse_Metrics.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeToursResponse.Metrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<AggregatedMetrics>(1, _omitFieldNames ? '' : 'aggregatedRouteMetrics', subBuilder: AggregatedMetrics.create)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'skippedMandatoryShipmentCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'usedVehicleCount', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'earliestVehicleStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'latestVehicleEndTime', subBuilder: $302.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OptimizeToursResponse.Metrics',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<AggregatedMetrics>(1, _omitFieldNames ? '' : 'aggregatedRouteMetrics',
+        subBuilder: AggregatedMetrics.create)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'skippedMandatoryShipmentCount',
+        $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'usedVehicleCount', $pb.PbFieldType.O3)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'earliestVehicleStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'latestVehicleEndTime',
+        subBuilder: $302.Timestamp.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'totalCost', $pb.PbFieldType.OD)
-    ..m<$core.String, $core.double>(10, _omitFieldNames ? '' : 'costs', entryClassName: 'OptimizeToursResponse.Metrics.CostsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.double>(10, _omitFieldNames ? '' : 'costs',
+        entryClassName: 'OptimizeToursResponse.Metrics.CostsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OD,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OptimizeToursResponse_Metrics clone() => OptimizeToursResponse_Metrics()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OptimizeToursResponse_Metrics copyWith(void Function(OptimizeToursResponse_Metrics) updates) => super.copyWith((message) => updates(message as OptimizeToursResponse_Metrics)) as OptimizeToursResponse_Metrics;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OptimizeToursResponse_Metrics clone() =>
+      OptimizeToursResponse_Metrics()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OptimizeToursResponse_Metrics copyWith(
+          void Function(OptimizeToursResponse_Metrics) updates) =>
+      super.copyWith(
+              (message) => updates(message as OptimizeToursResponse_Metrics))
+          as OptimizeToursResponse_Metrics;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursResponse_Metrics create() => OptimizeToursResponse_Metrics._();
+  static OptimizeToursResponse_Metrics create() =>
+      OptimizeToursResponse_Metrics._();
   OptimizeToursResponse_Metrics createEmptyInstance() => create();
-  static $pb.PbList<OptimizeToursResponse_Metrics> createRepeated() => $pb.PbList<OptimizeToursResponse_Metrics>();
+  static $pb.PbList<OptimizeToursResponse_Metrics> createRepeated() =>
+      $pb.PbList<OptimizeToursResponse_Metrics>();
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursResponse_Metrics getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OptimizeToursResponse_Metrics>(create);
+  static OptimizeToursResponse_Metrics getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OptimizeToursResponse_Metrics>(create);
   static OptimizeToursResponse_Metrics? _defaultInstance;
 
   /// Aggregated over the routes. Each metric is the sum (or max, for loads)
@@ -760,7 +926,10 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AggregatedMetrics get aggregatedRouteMetrics => $_getN(0);
   @$pb.TagNumber(1)
-  set aggregatedRouteMetrics(AggregatedMetrics v) { setField(1, v); }
+  set aggregatedRouteMetrics(AggregatedMetrics v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAggregatedRouteMetrics() => $_has(0);
   @$pb.TagNumber(1)
@@ -772,7 +941,10 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get skippedMandatoryShipmentCount => $_getIZ(1);
   @$pb.TagNumber(2)
-  set skippedMandatoryShipmentCount($core.int v) { $_setSignedInt32(1, v); }
+  set skippedMandatoryShipmentCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSkippedMandatoryShipmentCount() => $_has(1);
   @$pb.TagNumber(2)
@@ -784,7 +956,10 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get usedVehicleCount => $_getIZ(2);
   @$pb.TagNumber(3)
-  set usedVehicleCount($core.int v) { $_setSignedInt32(2, v); }
+  set usedVehicleCount($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUsedVehicleCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -796,7 +971,10 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get earliestVehicleStartTime => $_getN(3);
   @$pb.TagNumber(4)
-  set earliestVehicleStartTime($302.Timestamp v) { setField(4, v); }
+  set earliestVehicleStartTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEarliestVehicleStartTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -810,7 +988,10 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get latestVehicleEndTime => $_getN(4);
   @$pb.TagNumber(5)
-  set latestVehicleEndTime($302.Timestamp v) { setField(5, v); }
+  set latestVehicleEndTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasLatestVehicleEndTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -822,7 +1003,10 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get totalCost => $_getN(5);
   @$pb.TagNumber(6)
-  set totalCost($core.double v) { $_setDouble(5, v); }
+  set totalCost($core.double v) {
+    $_setDouble(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTotalCost() => $_has(5);
   @$pb.TagNumber(6)
@@ -871,37 +1055,54 @@ class OptimizeToursResponse extends $pb.GeneratedMessage {
     return $result;
   }
   OptimizeToursResponse._() : super();
-  factory OptimizeToursResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OptimizeToursResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OptimizeToursResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OptimizeToursResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeToursResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<ShipmentRoute>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM, subBuilder: ShipmentRoute.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OptimizeToursResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<ShipmentRoute>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM,
+        subBuilder: ShipmentRoute.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestLabel')
-    ..pc<SkippedShipment>(4, _omitFieldNames ? '' : 'skippedShipments', $pb.PbFieldType.PM, subBuilder: SkippedShipment.create)
-    ..pc<OptimizeToursValidationError>(5, _omitFieldNames ? '' : 'validationErrors', $pb.PbFieldType.PM, subBuilder: OptimizeToursValidationError.create)
-    ..aOM<OptimizeToursResponse_Metrics>(6, _omitFieldNames ? '' : 'metrics', subBuilder: OptimizeToursResponse_Metrics.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<SkippedShipment>(
+        4, _omitFieldNames ? '' : 'skippedShipments', $pb.PbFieldType.PM,
+        subBuilder: SkippedShipment.create)
+    ..pc<OptimizeToursValidationError>(
+        5, _omitFieldNames ? '' : 'validationErrors', $pb.PbFieldType.PM,
+        subBuilder: OptimizeToursValidationError.create)
+    ..aOM<OptimizeToursResponse_Metrics>(6, _omitFieldNames ? '' : 'metrics',
+        subBuilder: OptimizeToursResponse_Metrics.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OptimizeToursResponse clone() => OptimizeToursResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OptimizeToursResponse copyWith(void Function(OptimizeToursResponse) updates) => super.copyWith((message) => updates(message as OptimizeToursResponse)) as OptimizeToursResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OptimizeToursResponse clone() =>
+      OptimizeToursResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OptimizeToursResponse copyWith(
+          void Function(OptimizeToursResponse) updates) =>
+      super.copyWith((message) => updates(message as OptimizeToursResponse))
+          as OptimizeToursResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OptimizeToursResponse create() => OptimizeToursResponse._();
   OptimizeToursResponse createEmptyInstance() => create();
-  static $pb.PbList<OptimizeToursResponse> createRepeated() => $pb.PbList<OptimizeToursResponse>();
+  static $pb.PbList<OptimizeToursResponse> createRepeated() =>
+      $pb.PbList<OptimizeToursResponse>();
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OptimizeToursResponse>(create);
+  static OptimizeToursResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OptimizeToursResponse>(create);
   static OptimizeToursResponse? _defaultInstance;
 
   /// Routes computed for each vehicle; the i-th route corresponds to the i-th
@@ -915,7 +1116,10 @@ class OptimizeToursResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get requestLabel => $_getSZ(1);
   @$pb.TagNumber(3)
-  set requestLabel($core.String v) { $_setString(1, v); }
+  set requestLabel($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequestLabel() => $_has(1);
   @$pb.TagNumber(3)
@@ -937,7 +1141,10 @@ class OptimizeToursResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   OptimizeToursResponse_Metrics get metrics => $_getN(4);
   @$pb.TagNumber(6)
-  set metrics(OptimizeToursResponse_Metrics v) { setField(6, v); }
+  set metrics(OptimizeToursResponse_Metrics v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMetrics() => $_has(4);
   @$pb.TagNumber(6)
@@ -962,34 +1169,52 @@ class ShipmentModel_DurationDistanceMatrix_Row extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentModel_DurationDistanceMatrix_Row._() : super();
-  factory ShipmentModel_DurationDistanceMatrix_Row.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentModel_DurationDistanceMatrix_Row.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentModel_DurationDistanceMatrix_Row.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentModel_DurationDistanceMatrix_Row.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentModel.DurationDistanceMatrix.Row', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<$264.Duration>(1, _omitFieldNames ? '' : 'durations', $pb.PbFieldType.PM, subBuilder: $264.Duration.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentModel.DurationDistanceMatrix.Row',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<$264.Duration>(
+        1, _omitFieldNames ? '' : 'durations', $pb.PbFieldType.PM,
+        subBuilder: $264.Duration.create)
     ..p<$core.double>(2, _omitFieldNames ? '' : 'meters', $pb.PbFieldType.KD)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentModel_DurationDistanceMatrix_Row clone() => ShipmentModel_DurationDistanceMatrix_Row()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentModel_DurationDistanceMatrix_Row copyWith(void Function(ShipmentModel_DurationDistanceMatrix_Row) updates) => super.copyWith((message) => updates(message as ShipmentModel_DurationDistanceMatrix_Row)) as ShipmentModel_DurationDistanceMatrix_Row;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentModel_DurationDistanceMatrix_Row clone() =>
+      ShipmentModel_DurationDistanceMatrix_Row()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentModel_DurationDistanceMatrix_Row copyWith(
+          void Function(ShipmentModel_DurationDistanceMatrix_Row) updates) =>
+      super.copyWith((message) =>
+              updates(message as ShipmentModel_DurationDistanceMatrix_Row))
+          as ShipmentModel_DurationDistanceMatrix_Row;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ShipmentModel_DurationDistanceMatrix_Row create() => ShipmentModel_DurationDistanceMatrix_Row._();
+  static ShipmentModel_DurationDistanceMatrix_Row create() =>
+      ShipmentModel_DurationDistanceMatrix_Row._();
   ShipmentModel_DurationDistanceMatrix_Row createEmptyInstance() => create();
-  static $pb.PbList<ShipmentModel_DurationDistanceMatrix_Row> createRepeated() => $pb.PbList<ShipmentModel_DurationDistanceMatrix_Row>();
+  static $pb.PbList<ShipmentModel_DurationDistanceMatrix_Row>
+      createRepeated() =>
+          $pb.PbList<ShipmentModel_DurationDistanceMatrix_Row>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentModel_DurationDistanceMatrix_Row getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentModel_DurationDistanceMatrix_Row>(create);
+  static ShipmentModel_DurationDistanceMatrix_Row getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ShipmentModel_DurationDistanceMatrix_Row>(create);
   static ShipmentModel_DurationDistanceMatrix_Row? _defaultInstance;
 
   /// Duration values for a given row. It must have as many elements as
@@ -1021,34 +1246,51 @@ class ShipmentModel_DurationDistanceMatrix extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentModel_DurationDistanceMatrix._() : super();
-  factory ShipmentModel_DurationDistanceMatrix.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentModel_DurationDistanceMatrix.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentModel_DurationDistanceMatrix.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentModel_DurationDistanceMatrix.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentModel.DurationDistanceMatrix', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<ShipmentModel_DurationDistanceMatrix_Row>(1, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: ShipmentModel_DurationDistanceMatrix_Row.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentModel.DurationDistanceMatrix',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<ShipmentModel_DurationDistanceMatrix_Row>(
+        1, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
+        subBuilder: ShipmentModel_DurationDistanceMatrix_Row.create)
     ..aOS(2, _omitFieldNames ? '' : 'vehicleStartTag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentModel_DurationDistanceMatrix clone() => ShipmentModel_DurationDistanceMatrix()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentModel_DurationDistanceMatrix copyWith(void Function(ShipmentModel_DurationDistanceMatrix) updates) => super.copyWith((message) => updates(message as ShipmentModel_DurationDistanceMatrix)) as ShipmentModel_DurationDistanceMatrix;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentModel_DurationDistanceMatrix clone() =>
+      ShipmentModel_DurationDistanceMatrix()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentModel_DurationDistanceMatrix copyWith(
+          void Function(ShipmentModel_DurationDistanceMatrix) updates) =>
+      super.copyWith((message) =>
+              updates(message as ShipmentModel_DurationDistanceMatrix))
+          as ShipmentModel_DurationDistanceMatrix;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ShipmentModel_DurationDistanceMatrix create() => ShipmentModel_DurationDistanceMatrix._();
+  static ShipmentModel_DurationDistanceMatrix create() =>
+      ShipmentModel_DurationDistanceMatrix._();
   ShipmentModel_DurationDistanceMatrix createEmptyInstance() => create();
-  static $pb.PbList<ShipmentModel_DurationDistanceMatrix> createRepeated() => $pb.PbList<ShipmentModel_DurationDistanceMatrix>();
+  static $pb.PbList<ShipmentModel_DurationDistanceMatrix> createRepeated() =>
+      $pb.PbList<ShipmentModel_DurationDistanceMatrix>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentModel_DurationDistanceMatrix getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentModel_DurationDistanceMatrix>(create);
+  static ShipmentModel_DurationDistanceMatrix getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ShipmentModel_DurationDistanceMatrix>(create);
   static ShipmentModel_DurationDistanceMatrix? _defaultInstance;
 
   /// Specifies the rows of the duration and distance matrix. It must have as
@@ -1069,7 +1311,10 @@ class ShipmentModel_DurationDistanceMatrix extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get vehicleStartTag => $_getSZ(1);
   @$pb.TagNumber(2)
-  set vehicleStartTag($core.String v) { $_setString(1, v); }
+  set vehicleStartTag($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVehicleStartTag() => $_has(1);
   @$pb.TagNumber(2)
@@ -1113,44 +1358,61 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentModel_PrecedenceRule._() : super();
-  factory ShipmentModel_PrecedenceRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentModel_PrecedenceRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentModel_PrecedenceRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentModel_PrecedenceRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentModel.PrecedenceRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentModel.PrecedenceRule',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'firstIndex', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'secondIndex', $pb.PbFieldType.O3)
     ..aOB(3, _omitFieldNames ? '' : 'firstIsDelivery')
     ..aOB(4, _omitFieldNames ? '' : 'secondIsDelivery')
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'offsetDuration', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'offsetDuration',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentModel_PrecedenceRule clone() => ShipmentModel_PrecedenceRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentModel_PrecedenceRule copyWith(void Function(ShipmentModel_PrecedenceRule) updates) => super.copyWith((message) => updates(message as ShipmentModel_PrecedenceRule)) as ShipmentModel_PrecedenceRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentModel_PrecedenceRule clone() =>
+      ShipmentModel_PrecedenceRule()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentModel_PrecedenceRule copyWith(
+          void Function(ShipmentModel_PrecedenceRule) updates) =>
+      super.copyWith(
+              (message) => updates(message as ShipmentModel_PrecedenceRule))
+          as ShipmentModel_PrecedenceRule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ShipmentModel_PrecedenceRule create() => ShipmentModel_PrecedenceRule._();
+  static ShipmentModel_PrecedenceRule create() =>
+      ShipmentModel_PrecedenceRule._();
   ShipmentModel_PrecedenceRule createEmptyInstance() => create();
-  static $pb.PbList<ShipmentModel_PrecedenceRule> createRepeated() => $pb.PbList<ShipmentModel_PrecedenceRule>();
+  static $pb.PbList<ShipmentModel_PrecedenceRule> createRepeated() =>
+      $pb.PbList<ShipmentModel_PrecedenceRule>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentModel_PrecedenceRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentModel_PrecedenceRule>(create);
+  static ShipmentModel_PrecedenceRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentModel_PrecedenceRule>(create);
   static ShipmentModel_PrecedenceRule? _defaultInstance;
 
   /// Shipment index of the "first" event. This field must be specified.
   @$pb.TagNumber(1)
   $core.int get firstIndex => $_getIZ(0);
   @$pb.TagNumber(1)
-  set firstIndex($core.int v) { $_setSignedInt32(0, v); }
+  set firstIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFirstIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -1160,7 +1422,10 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get secondIndex => $_getIZ(1);
   @$pb.TagNumber(2)
-  set secondIndex($core.int v) { $_setSignedInt32(1, v); }
+  set secondIndex($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSecondIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -1170,7 +1435,10 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get firstIsDelivery => $_getBF(2);
   @$pb.TagNumber(3)
-  set firstIsDelivery($core.bool v) { $_setBool(2, v); }
+  set firstIsDelivery($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFirstIsDelivery() => $_has(2);
   @$pb.TagNumber(3)
@@ -1180,7 +1448,10 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get secondIsDelivery => $_getBF(3);
   @$pb.TagNumber(4)
-  set secondIsDelivery($core.bool v) { $_setBool(3, v); }
+  set secondIsDelivery($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSecondIsDelivery() => $_has(3);
   @$pb.TagNumber(4)
@@ -1190,7 +1461,10 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $264.Duration get offsetDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set offsetDuration($264.Duration v) { setField(5, v); }
+  set offsetDuration($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOffsetDuration() => $_has(4);
   @$pb.TagNumber(5)
@@ -1214,7 +1488,8 @@ class ShipmentModel extends $pb.GeneratedMessage {
     $302.Timestamp? globalStartTime,
     $302.Timestamp? globalEndTime,
     $core.double? globalDurationCostPerHour,
-    $core.Iterable<ShipmentModel_DurationDistanceMatrix>? durationDistanceMatrices,
+    $core.Iterable<ShipmentModel_DurationDistanceMatrix>?
+        durationDistanceMatrices,
     $core.Iterable<$core.String>? durationDistanceMatrixSrcTags,
     $core.Iterable<$core.String>? durationDistanceMatrixDstTags,
     $core.Iterable<TransitionAttributes>? transitionAttributes,
@@ -1245,16 +1520,19 @@ class ShipmentModel extends $pb.GeneratedMessage {
       $result.durationDistanceMatrices.addAll(durationDistanceMatrices);
     }
     if (durationDistanceMatrixSrcTags != null) {
-      $result.durationDistanceMatrixSrcTags.addAll(durationDistanceMatrixSrcTags);
+      $result.durationDistanceMatrixSrcTags
+          .addAll(durationDistanceMatrixSrcTags);
     }
     if (durationDistanceMatrixDstTags != null) {
-      $result.durationDistanceMatrixDstTags.addAll(durationDistanceMatrixDstTags);
+      $result.durationDistanceMatrixDstTags
+          .addAll(durationDistanceMatrixDstTags);
     }
     if (transitionAttributes != null) {
       $result.transitionAttributes.addAll(transitionAttributes);
     }
     if (shipmentTypeIncompatibilities != null) {
-      $result.shipmentTypeIncompatibilities.addAll(shipmentTypeIncompatibilities);
+      $result.shipmentTypeIncompatibilities
+          .addAll(shipmentTypeIncompatibilities);
     }
     if (shipmentTypeRequirements != null) {
       $result.shipmentTypeRequirements.addAll(shipmentTypeRequirements);
@@ -1265,45 +1543,72 @@ class ShipmentModel extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentModel._() : super();
-  factory ShipmentModel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentModel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentModel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentModel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentModel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<Shipment>(1, _omitFieldNames ? '' : 'shipments', $pb.PbFieldType.PM, subBuilder: Shipment.create)
-    ..pc<Vehicle>(2, _omitFieldNames ? '' : 'vehicles', $pb.PbFieldType.PM, subBuilder: Vehicle.create)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'maxActiveVehicles', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'globalStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'globalEndTime', subBuilder: $302.Timestamp.create)
-    ..a<$core.double>(7, _omitFieldNames ? '' : 'globalDurationCostPerHour', $pb.PbFieldType.OD)
-    ..pc<ShipmentModel_DurationDistanceMatrix>(8, _omitFieldNames ? '' : 'durationDistanceMatrices', $pb.PbFieldType.PM, subBuilder: ShipmentModel_DurationDistanceMatrix.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentModel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<Shipment>(1, _omitFieldNames ? '' : 'shipments', $pb.PbFieldType.PM,
+        subBuilder: Shipment.create)
+    ..pc<Vehicle>(2, _omitFieldNames ? '' : 'vehicles', $pb.PbFieldType.PM,
+        subBuilder: Vehicle.create)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'maxActiveVehicles', $pb.PbFieldType.O3)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'globalStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'globalEndTime',
+        subBuilder: $302.Timestamp.create)
+    ..a<$core.double>(7, _omitFieldNames ? '' : 'globalDurationCostPerHour',
+        $pb.PbFieldType.OD)
+    ..pc<ShipmentModel_DurationDistanceMatrix>(8,
+        _omitFieldNames ? '' : 'durationDistanceMatrices', $pb.PbFieldType.PM,
+        subBuilder: ShipmentModel_DurationDistanceMatrix.create)
     ..pPS(9, _omitFieldNames ? '' : 'durationDistanceMatrixSrcTags')
     ..pPS(10, _omitFieldNames ? '' : 'durationDistanceMatrixDstTags')
-    ..pc<TransitionAttributes>(11, _omitFieldNames ? '' : 'transitionAttributes', $pb.PbFieldType.PM, subBuilder: TransitionAttributes.create)
-    ..pc<ShipmentTypeIncompatibility>(12, _omitFieldNames ? '' : 'shipmentTypeIncompatibilities', $pb.PbFieldType.PM, subBuilder: ShipmentTypeIncompatibility.create)
-    ..pc<ShipmentTypeRequirement>(13, _omitFieldNames ? '' : 'shipmentTypeRequirements', $pb.PbFieldType.PM, subBuilder: ShipmentTypeRequirement.create)
-    ..pc<ShipmentModel_PrecedenceRule>(14, _omitFieldNames ? '' : 'precedenceRules', $pb.PbFieldType.PM, subBuilder: ShipmentModel_PrecedenceRule.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<TransitionAttributes>(
+        11, _omitFieldNames ? '' : 'transitionAttributes', $pb.PbFieldType.PM,
+        subBuilder: TransitionAttributes.create)
+    ..pc<ShipmentTypeIncompatibility>(
+        12,
+        _omitFieldNames ? '' : 'shipmentTypeIncompatibilities',
+        $pb.PbFieldType.PM,
+        subBuilder: ShipmentTypeIncompatibility.create)
+    ..pc<ShipmentTypeRequirement>(13,
+        _omitFieldNames ? '' : 'shipmentTypeRequirements', $pb.PbFieldType.PM,
+        subBuilder: ShipmentTypeRequirement.create)
+    ..pc<ShipmentModel_PrecedenceRule>(
+        14, _omitFieldNames ? '' : 'precedenceRules', $pb.PbFieldType.PM,
+        subBuilder: ShipmentModel_PrecedenceRule.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ShipmentModel clone() => ShipmentModel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentModel copyWith(void Function(ShipmentModel) updates) => super.copyWith((message) => updates(message as ShipmentModel)) as ShipmentModel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentModel copyWith(void Function(ShipmentModel) updates) =>
+      super.copyWith((message) => updates(message as ShipmentModel))
+          as ShipmentModel;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShipmentModel create() => ShipmentModel._();
   ShipmentModel createEmptyInstance() => create();
-  static $pb.PbList<ShipmentModel> createRepeated() => $pb.PbList<ShipmentModel>();
+  static $pb.PbList<ShipmentModel> createRepeated() =>
+      $pb.PbList<ShipmentModel>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentModel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentModel>(create);
+  static ShipmentModel getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentModel>(create);
   static ShipmentModel? _defaultInstance;
 
   /// Set of shipments which must be performed in the model.
@@ -1323,7 +1628,10 @@ class ShipmentModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get maxActiveVehicles => $_getIZ(2);
   @$pb.TagNumber(4)
-  set maxActiveVehicles($core.int v) { $_setSignedInt32(2, v); }
+  set maxActiveVehicles($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxActiveVehicles() => $_has(2);
   @$pb.TagNumber(4)
@@ -1343,7 +1651,10 @@ class ShipmentModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get globalStartTime => $_getN(3);
   @$pb.TagNumber(5)
-  set globalStartTime($302.Timestamp v) { setField(5, v); }
+  set globalStartTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasGlobalStartTime() => $_has(3);
   @$pb.TagNumber(5)
@@ -1356,7 +1667,10 @@ class ShipmentModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get globalEndTime => $_getN(4);
   @$pb.TagNumber(6)
-  set globalEndTime($302.Timestamp v) { setField(6, v); }
+  set globalEndTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasGlobalEndTime() => $_has(4);
   @$pb.TagNumber(6)
@@ -1373,7 +1687,10 @@ class ShipmentModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.double get globalDurationCostPerHour => $_getN(5);
   @$pb.TagNumber(7)
-  set globalDurationCostPerHour($core.double v) { $_setDouble(5, v); }
+  set globalDurationCostPerHour($core.double v) {
+    $_setDouble(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasGlobalDurationCostPerHour() => $_has(5);
   @$pb.TagNumber(7)
@@ -1467,7 +1784,8 @@ class ShipmentModel extends $pb.GeneratedMessage {
   ///  }
   ///  ```
   @$pb.TagNumber(8)
-  $core.List<ShipmentModel_DurationDistanceMatrix> get durationDistanceMatrices => $_getList(6);
+  $core.List<ShipmentModel_DurationDistanceMatrix>
+      get durationDistanceMatrices => $_getList(6);
 
   ///  Tags defining the sources of the duration and distance matrices;
   ///  `duration_distance_matrices(i).rows(j)` defines durations and distances
@@ -1511,11 +1829,13 @@ class ShipmentModel extends $pb.GeneratedMessage {
 
   /// Sets of incompatible shipment_types (see `ShipmentTypeIncompatibility`).
   @$pb.TagNumber(12)
-  $core.List<ShipmentTypeIncompatibility> get shipmentTypeIncompatibilities => $_getList(10);
+  $core.List<ShipmentTypeIncompatibility> get shipmentTypeIncompatibilities =>
+      $_getList(10);
 
   /// Sets of `shipment_type` requirements (see `ShipmentTypeRequirement`).
   @$pb.TagNumber(13)
-  $core.List<ShipmentTypeRequirement> get shipmentTypeRequirements => $_getList(11);
+  $core.List<ShipmentTypeRequirement> get shipmentTypeRequirements =>
+      $_getList(11);
 
   /// Set of precedence rules which must be enforced in the model.
   @$pb.TagNumber(14)
@@ -1577,43 +1897,67 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
     return $result;
   }
   Shipment_VisitRequest._() : super();
-  factory Shipment_VisitRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Shipment_VisitRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Shipment_VisitRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Shipment_VisitRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Shipment.VisitRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'arrivalLocation', subBuilder: $325.LatLng.create)
-    ..aOM<Waypoint>(2, _omitFieldNames ? '' : 'arrivalWaypoint', subBuilder: Waypoint.create)
-    ..aOM<$325.LatLng>(3, _omitFieldNames ? '' : 'departureLocation', subBuilder: $325.LatLng.create)
-    ..aOM<Waypoint>(4, _omitFieldNames ? '' : 'departureWaypoint', subBuilder: Waypoint.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Shipment.VisitRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'arrivalLocation',
+        subBuilder: $325.LatLng.create)
+    ..aOM<Waypoint>(2, _omitFieldNames ? '' : 'arrivalWaypoint',
+        subBuilder: Waypoint.create)
+    ..aOM<$325.LatLng>(3, _omitFieldNames ? '' : 'departureLocation',
+        subBuilder: $325.LatLng.create)
+    ..aOM<Waypoint>(4, _omitFieldNames ? '' : 'departureWaypoint',
+        subBuilder: Waypoint.create)
     ..pPS(5, _omitFieldNames ? '' : 'tags')
-    ..pc<TimeWindow>(6, _omitFieldNames ? '' : 'timeWindows', $pb.PbFieldType.PM, subBuilder: TimeWindow.create)
-    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
+    ..pc<TimeWindow>(
+        6, _omitFieldNames ? '' : 'timeWindows', $pb.PbFieldType.PM,
+        subBuilder: TimeWindow.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OD)
     ..pPS(10, _omitFieldNames ? '' : 'visitTypes')
     ..aOS(11, _omitFieldNames ? '' : 'label')
-    ..m<$core.String, Shipment_Load>(12, _omitFieldNames ? '' : 'loadDemands', entryClassName: 'Shipment.VisitRequest.LoadDemandsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Shipment_Load.create, valueDefaultOrMaker: Shipment_Load.getDefault, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, Shipment_Load>(12, _omitFieldNames ? '' : 'loadDemands',
+        entryClassName: 'Shipment.VisitRequest.LoadDemandsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: Shipment_Load.create,
+        valueDefaultOrMaker: Shipment_Load.getDefault,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Shipment_VisitRequest clone() => Shipment_VisitRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Shipment_VisitRequest copyWith(void Function(Shipment_VisitRequest) updates) => super.copyWith((message) => updates(message as Shipment_VisitRequest)) as Shipment_VisitRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Shipment_VisitRequest clone() =>
+      Shipment_VisitRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Shipment_VisitRequest copyWith(
+          void Function(Shipment_VisitRequest) updates) =>
+      super.copyWith((message) => updates(message as Shipment_VisitRequest))
+          as Shipment_VisitRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Shipment_VisitRequest create() => Shipment_VisitRequest._();
   Shipment_VisitRequest createEmptyInstance() => create();
-  static $pb.PbList<Shipment_VisitRequest> createRepeated() => $pb.PbList<Shipment_VisitRequest>();
+  static $pb.PbList<Shipment_VisitRequest> createRepeated() =>
+      $pb.PbList<Shipment_VisitRequest>();
   @$core.pragma('dart2js:noInline')
-  static Shipment_VisitRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Shipment_VisitRequest>(create);
+  static Shipment_VisitRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Shipment_VisitRequest>(create);
   static Shipment_VisitRequest? _defaultInstance;
 
   /// The geo-location where the vehicle arrives when performing this
@@ -1622,7 +1966,10 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get arrivalLocation => $_getN(0);
   @$pb.TagNumber(1)
-  set arrivalLocation($325.LatLng v) { setField(1, v); }
+  set arrivalLocation($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasArrivalLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -1636,7 +1983,10 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Waypoint get arrivalWaypoint => $_getN(1);
   @$pb.TagNumber(2)
-  set arrivalWaypoint(Waypoint v) { setField(2, v); }
+  set arrivalWaypoint(Waypoint v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasArrivalWaypoint() => $_has(1);
   @$pb.TagNumber(2)
@@ -1651,7 +2001,10 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $325.LatLng get departureLocation => $_getN(2);
   @$pb.TagNumber(3)
-  set departureLocation($325.LatLng v) { setField(3, v); }
+  set departureLocation($325.LatLng v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDepartureLocation() => $_has(2);
   @$pb.TagNumber(3)
@@ -1666,7 +2019,10 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Waypoint get departureWaypoint => $_getN(3);
   @$pb.TagNumber(4)
-  set departureWaypoint(Waypoint v) { setField(4, v); }
+  set departureWaypoint(Waypoint v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDepartureWaypoint() => $_has(3);
   @$pb.TagNumber(4)
@@ -1702,7 +2058,10 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $264.Duration get duration => $_getN(6);
   @$pb.TagNumber(7)
-  set duration($264.Duration v) { setField(7, v); }
+  set duration($264.Duration v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDuration() => $_has(6);
   @$pb.TagNumber(7)
@@ -1717,7 +2076,10 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.double get cost => $_getN(7);
   @$pb.TagNumber(8)
-  set cost($core.double v) { $_setDouble(7, v); }
+  set cost($core.double v) {
+    $_setDouble(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCost() => $_has(7);
   @$pb.TagNumber(8)
@@ -1737,7 +2099,10 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get label => $_getSZ(9);
   @$pb.TagNumber(11)
-  set label($core.String v) { $_setString(9, v); }
+  set label($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasLabel() => $_has(9);
   @$pb.TagNumber(11)
@@ -1770,33 +2135,42 @@ class Shipment_Load extends $pb.GeneratedMessage {
     return $result;
   }
   Shipment_Load._() : super();
-  factory Shipment_Load.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Shipment_Load.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Shipment_Load.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Shipment_Load.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Shipment.Load', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Shipment.Load',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aInt64(2, _omitFieldNames ? '' : 'amount')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Shipment_Load clone() => Shipment_Load()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Shipment_Load copyWith(void Function(Shipment_Load) updates) => super.copyWith((message) => updates(message as Shipment_Load)) as Shipment_Load;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Shipment_Load copyWith(void Function(Shipment_Load) updates) =>
+      super.copyWith((message) => updates(message as Shipment_Load))
+          as Shipment_Load;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Shipment_Load create() => Shipment_Load._();
   Shipment_Load createEmptyInstance() => create();
-  static $pb.PbList<Shipment_Load> createRepeated() => $pb.PbList<Shipment_Load>();
+  static $pb.PbList<Shipment_Load> createRepeated() =>
+      $pb.PbList<Shipment_Load>();
   @$core.pragma('dart2js:noInline')
-  static Shipment_Load getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Shipment_Load>(create);
+  static Shipment_Load getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Shipment_Load>(create);
   static Shipment_Load? _defaultInstance;
 
   /// The amount by which the load of the vehicle performing the corresponding
@@ -1805,7 +2179,10 @@ class Shipment_Load extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get amount => $_getI64(0);
   @$pb.TagNumber(2)
-  set amount($fixnum.Int64 v) { $_setInt64(0, v); }
+  set amount($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAmount() => $_has(0);
   @$pb.TagNumber(2)
@@ -1854,10 +2231,12 @@ class Shipment extends $pb.GeneratedMessage {
       $result.costsPerVehicleIndices.addAll(costsPerVehicleIndices);
     }
     if (pickupToDeliveryRelativeDetourLimit != null) {
-      $result.pickupToDeliveryRelativeDetourLimit = pickupToDeliveryRelativeDetourLimit;
+      $result.pickupToDeliveryRelativeDetourLimit =
+          pickupToDeliveryRelativeDetourLimit;
     }
     if (pickupToDeliveryAbsoluteDetourLimit != null) {
-      $result.pickupToDeliveryAbsoluteDetourLimit = pickupToDeliveryAbsoluteDetourLimit;
+      $result.pickupToDeliveryAbsoluteDetourLimit =
+          pickupToDeliveryAbsoluteDetourLimit;
     }
     if (pickupToDeliveryTimeLimit != null) {
       $result.pickupToDeliveryTimeLimit = pickupToDeliveryTimeLimit;
@@ -1880,37 +2259,63 @@ class Shipment extends $pb.GeneratedMessage {
     return $result;
   }
   Shipment._() : super();
-  factory Shipment.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Shipment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Shipment.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Shipment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Shipment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<Shipment_VisitRequest>(1, _omitFieldNames ? '' : 'pickups', $pb.PbFieldType.PM, subBuilder: Shipment_VisitRequest.create)
-    ..pc<Shipment_VisitRequest>(2, _omitFieldNames ? '' : 'deliveries', $pb.PbFieldType.PM, subBuilder: Shipment_VisitRequest.create)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'penaltyCost', $pb.PbFieldType.OD)
-    ..p<$core.int>(5, _omitFieldNames ? '' : 'allowedVehicleIndices', $pb.PbFieldType.K3)
-    ..p<$core.double>(6, _omitFieldNames ? '' : 'costsPerVehicle', $pb.PbFieldType.KD)
-    ..p<$core.int>(7, _omitFieldNames ? '' : 'costsPerVehicleIndices', $pb.PbFieldType.K3)
-    ..a<$core.double>(8, _omitFieldNames ? '' : 'pickupToDeliveryRelativeDetourLimit', $pb.PbFieldType.OD)
-    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'pickupToDeliveryAbsoluteDetourLimit', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(10, _omitFieldNames ? '' : 'pickupToDeliveryTimeLimit', subBuilder: $264.Duration.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Shipment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<Shipment_VisitRequest>(
+        1, _omitFieldNames ? '' : 'pickups', $pb.PbFieldType.PM,
+        subBuilder: Shipment_VisitRequest.create)
+    ..pc<Shipment_VisitRequest>(
+        2, _omitFieldNames ? '' : 'deliveries', $pb.PbFieldType.PM,
+        subBuilder: Shipment_VisitRequest.create)
+    ..a<$core.double>(
+        4, _omitFieldNames ? '' : 'penaltyCost', $pb.PbFieldType.OD)
+    ..p<$core.int>(
+        5, _omitFieldNames ? '' : 'allowedVehicleIndices', $pb.PbFieldType.K3)
+    ..p<$core.double>(
+        6, _omitFieldNames ? '' : 'costsPerVehicle', $pb.PbFieldType.KD)
+    ..p<$core.int>(
+        7, _omitFieldNames ? '' : 'costsPerVehicleIndices', $pb.PbFieldType.K3)
+    ..a<$core.double>(
+        8,
+        _omitFieldNames ? '' : 'pickupToDeliveryRelativeDetourLimit',
+        $pb.PbFieldType.OD)
+    ..aOM<$264.Duration>(
+        9, _omitFieldNames ? '' : 'pickupToDeliveryAbsoluteDetourLimit',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(10, _omitFieldNames ? '' : 'pickupToDeliveryTimeLimit',
+        subBuilder: $264.Duration.create)
     ..aOS(11, _omitFieldNames ? '' : 'shipmentType')
     ..aOS(12, _omitFieldNames ? '' : 'label')
     ..aOB(13, _omitFieldNames ? '' : 'ignore')
-    ..m<$core.String, Shipment_Load>(14, _omitFieldNames ? '' : 'loadDemands', entryClassName: 'Shipment.LoadDemandsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Shipment_Load.create, valueDefaultOrMaker: Shipment_Load.getDefault, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..m<$core.String, Shipment_Load>(14, _omitFieldNames ? '' : 'loadDemands',
+        entryClassName: 'Shipment.LoadDemandsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: Shipment_Load.create,
+        valueDefaultOrMaker: Shipment_Load.getDefault,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
     ..aOS(16, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Shipment clone() => Shipment()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Shipment copyWith(void Function(Shipment) updates) => super.copyWith((message) => updates(message as Shipment)) as Shipment;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Shipment copyWith(void Function(Shipment) updates) =>
+      super.copyWith((message) => updates(message as Shipment)) as Shipment;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1919,7 +2324,8 @@ class Shipment extends $pb.GeneratedMessage {
   Shipment createEmptyInstance() => create();
   static $pb.PbList<Shipment> createRepeated() => $pb.PbList<Shipment>();
   @$core.pragma('dart2js:noInline')
-  static Shipment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Shipment>(create);
+  static Shipment getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Shipment>(create);
   static Shipment? _defaultInstance;
 
   /// Set of pickup alternatives associated to the shipment. If not specified,
@@ -1943,7 +2349,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get penaltyCost => $_getN(2);
   @$pb.TagNumber(4)
-  set penaltyCost($core.double v) { $_setDouble(2, v); }
+  set penaltyCost($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPenaltyCost() => $_has(2);
   @$pb.TagNumber(4)
@@ -1996,7 +2405,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.double get pickupToDeliveryRelativeDetourLimit => $_getN(6);
   @$pb.TagNumber(8)
-  set pickupToDeliveryRelativeDetourLimit($core.double v) { $_setDouble(6, v); }
+  set pickupToDeliveryRelativeDetourLimit($core.double v) {
+    $_setDouble(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPickupToDeliveryRelativeDetourLimit() => $_has(6);
   @$pb.TagNumber(8)
@@ -2022,7 +2434,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $264.Duration get pickupToDeliveryAbsoluteDetourLimit => $_getN(7);
   @$pb.TagNumber(9)
-  set pickupToDeliveryAbsoluteDetourLimit($264.Duration v) { setField(9, v); }
+  set pickupToDeliveryAbsoluteDetourLimit($264.Duration v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPickupToDeliveryAbsoluteDetourLimit() => $_has(7);
   @$pb.TagNumber(9)
@@ -2039,7 +2454,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $264.Duration get pickupToDeliveryTimeLimit => $_getN(8);
   @$pb.TagNumber(10)
-  set pickupToDeliveryTimeLimit($264.Duration v) { setField(10, v); }
+  set pickupToDeliveryTimeLimit($264.Duration v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasPickupToDeliveryTimeLimit() => $_has(8);
   @$pb.TagNumber(10)
@@ -2058,7 +2476,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get shipmentType => $_getSZ(9);
   @$pb.TagNumber(11)
-  set shipmentType($core.String v) { $_setString(9, v); }
+  set shipmentType($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasShipmentType() => $_has(9);
   @$pb.TagNumber(11)
@@ -2070,7 +2491,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get label => $_getSZ(10);
   @$pb.TagNumber(12)
-  set label($core.String v) { $_setString(10, v); }
+  set label($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasLabel() => $_has(10);
   @$pb.TagNumber(12)
@@ -2088,7 +2512,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool get ignore => $_getBF(11);
   @$pb.TagNumber(13)
-  set ignore($core.bool v) { $_setBool(11, v); }
+  set ignore($core.bool v) {
+    $_setBool(11, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasIgnore() => $_has(11);
   @$pb.TagNumber(13)
@@ -2108,7 +2535,10 @@ class Shipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get displayName => $_getSZ(13);
   @$pb.TagNumber(16)
-  set displayName($core.String v) { $_setString(13, v); }
+  set displayName($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasDisplayName() => $_has(13);
   @$pb.TagNumber(16)
@@ -2133,34 +2563,52 @@ class ShipmentTypeIncompatibility extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentTypeIncompatibility._() : super();
-  factory ShipmentTypeIncompatibility.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentTypeIncompatibility.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentTypeIncompatibility.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentTypeIncompatibility.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentTypeIncompatibility', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentTypeIncompatibility',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'types')
-    ..e<ShipmentTypeIncompatibility_IncompatibilityMode>(2, _omitFieldNames ? '' : 'incompatibilityMode', $pb.PbFieldType.OE, defaultOrMaker: ShipmentTypeIncompatibility_IncompatibilityMode.INCOMPATIBILITY_MODE_UNSPECIFIED, valueOf: ShipmentTypeIncompatibility_IncompatibilityMode.valueOf, enumValues: ShipmentTypeIncompatibility_IncompatibilityMode.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ShipmentTypeIncompatibility_IncompatibilityMode>(
+        2, _omitFieldNames ? '' : 'incompatibilityMode', $pb.PbFieldType.OE,
+        defaultOrMaker: ShipmentTypeIncompatibility_IncompatibilityMode
+            .INCOMPATIBILITY_MODE_UNSPECIFIED,
+        valueOf: ShipmentTypeIncompatibility_IncompatibilityMode.valueOf,
+        enumValues: ShipmentTypeIncompatibility_IncompatibilityMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentTypeIncompatibility clone() => ShipmentTypeIncompatibility()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentTypeIncompatibility copyWith(void Function(ShipmentTypeIncompatibility) updates) => super.copyWith((message) => updates(message as ShipmentTypeIncompatibility)) as ShipmentTypeIncompatibility;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentTypeIncompatibility clone() =>
+      ShipmentTypeIncompatibility()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentTypeIncompatibility copyWith(
+          void Function(ShipmentTypeIncompatibility) updates) =>
+      super.copyWith(
+              (message) => updates(message as ShipmentTypeIncompatibility))
+          as ShipmentTypeIncompatibility;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ShipmentTypeIncompatibility create() => ShipmentTypeIncompatibility._();
+  static ShipmentTypeIncompatibility create() =>
+      ShipmentTypeIncompatibility._();
   ShipmentTypeIncompatibility createEmptyInstance() => create();
-  static $pb.PbList<ShipmentTypeIncompatibility> createRepeated() => $pb.PbList<ShipmentTypeIncompatibility>();
+  static $pb.PbList<ShipmentTypeIncompatibility> createRepeated() =>
+      $pb.PbList<ShipmentTypeIncompatibility>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentTypeIncompatibility getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentTypeIncompatibility>(create);
+  static ShipmentTypeIncompatibility getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentTypeIncompatibility>(create);
   static ShipmentTypeIncompatibility? _defaultInstance;
 
   /// List of incompatible types. Two shipments having different `shipment_types`
@@ -2170,9 +2618,13 @@ class ShipmentTypeIncompatibility extends $pb.GeneratedMessage {
 
   /// Mode applied to the incompatibility.
   @$pb.TagNumber(2)
-  ShipmentTypeIncompatibility_IncompatibilityMode get incompatibilityMode => $_getN(1);
+  ShipmentTypeIncompatibility_IncompatibilityMode get incompatibilityMode =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set incompatibilityMode(ShipmentTypeIncompatibility_IncompatibilityMode v) { setField(2, v); }
+  set incompatibilityMode(ShipmentTypeIncompatibility_IncompatibilityMode v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIncompatibilityMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -2189,7 +2641,8 @@ class ShipmentTypeRequirement extends $pb.GeneratedMessage {
   }) {
     final $result = create();
     if (requiredShipmentTypeAlternatives != null) {
-      $result.requiredShipmentTypeAlternatives.addAll(requiredShipmentTypeAlternatives);
+      $result.requiredShipmentTypeAlternatives
+          .addAll(requiredShipmentTypeAlternatives);
     }
     if (dependentShipmentTypes != null) {
       $result.dependentShipmentTypes.addAll(dependentShipmentTypes);
@@ -2200,35 +2653,51 @@ class ShipmentTypeRequirement extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentTypeRequirement._() : super();
-  factory ShipmentTypeRequirement.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentTypeRequirement.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentTypeRequirement.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentTypeRequirement.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentTypeRequirement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentTypeRequirement',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'requiredShipmentTypeAlternatives')
     ..pPS(2, _omitFieldNames ? '' : 'dependentShipmentTypes')
-    ..e<ShipmentTypeRequirement_RequirementMode>(3, _omitFieldNames ? '' : 'requirementMode', $pb.PbFieldType.OE, defaultOrMaker: ShipmentTypeRequirement_RequirementMode.REQUIREMENT_MODE_UNSPECIFIED, valueOf: ShipmentTypeRequirement_RequirementMode.valueOf, enumValues: ShipmentTypeRequirement_RequirementMode.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ShipmentTypeRequirement_RequirementMode>(
+        3, _omitFieldNames ? '' : 'requirementMode', $pb.PbFieldType.OE,
+        defaultOrMaker: ShipmentTypeRequirement_RequirementMode
+            .REQUIREMENT_MODE_UNSPECIFIED,
+        valueOf: ShipmentTypeRequirement_RequirementMode.valueOf,
+        enumValues: ShipmentTypeRequirement_RequirementMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentTypeRequirement clone() => ShipmentTypeRequirement()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentTypeRequirement copyWith(void Function(ShipmentTypeRequirement) updates) => super.copyWith((message) => updates(message as ShipmentTypeRequirement)) as ShipmentTypeRequirement;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentTypeRequirement clone() =>
+      ShipmentTypeRequirement()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentTypeRequirement copyWith(
+          void Function(ShipmentTypeRequirement) updates) =>
+      super.copyWith((message) => updates(message as ShipmentTypeRequirement))
+          as ShipmentTypeRequirement;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShipmentTypeRequirement create() => ShipmentTypeRequirement._();
   ShipmentTypeRequirement createEmptyInstance() => create();
-  static $pb.PbList<ShipmentTypeRequirement> createRepeated() => $pb.PbList<ShipmentTypeRequirement>();
+  static $pb.PbList<ShipmentTypeRequirement> createRepeated() =>
+      $pb.PbList<ShipmentTypeRequirement>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentTypeRequirement getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentTypeRequirement>(create);
+  static ShipmentTypeRequirement getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentTypeRequirement>(create);
   static ShipmentTypeRequirement? _defaultInstance;
 
   /// List of alternative shipment types required by the
@@ -2249,7 +2718,10 @@ class ShipmentTypeRequirement extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ShipmentTypeRequirement_RequirementMode get requirementMode => $_getN(2);
   @$pb.TagNumber(3)
-  set requirementMode(ShipmentTypeRequirement_RequirementMode v) { setField(3, v); }
+  set requirementMode(ShipmentTypeRequirement_RequirementMode v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequirementMode() => $_has(2);
   @$pb.TagNumber(3)
@@ -2283,36 +2755,45 @@ class RouteModifiers extends $pb.GeneratedMessage {
     return $result;
   }
   RouteModifiers._() : super();
-  factory RouteModifiers.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteModifiers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteModifiers.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteModifiers.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteModifiers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteModifiers',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOB(2, _omitFieldNames ? '' : 'avoidTolls')
     ..aOB(3, _omitFieldNames ? '' : 'avoidHighways')
     ..aOB(4, _omitFieldNames ? '' : 'avoidFerries')
     ..aOB(5, _omitFieldNames ? '' : 'avoidIndoor')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RouteModifiers clone() => RouteModifiers()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteModifiers copyWith(void Function(RouteModifiers) updates) => super.copyWith((message) => updates(message as RouteModifiers)) as RouteModifiers;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteModifiers copyWith(void Function(RouteModifiers) updates) =>
+      super.copyWith((message) => updates(message as RouteModifiers))
+          as RouteModifiers;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteModifiers create() => RouteModifiers._();
   RouteModifiers createEmptyInstance() => create();
-  static $pb.PbList<RouteModifiers> createRepeated() => $pb.PbList<RouteModifiers>();
+  static $pb.PbList<RouteModifiers> createRepeated() =>
+      $pb.PbList<RouteModifiers>();
   @$core.pragma('dart2js:noInline')
-  static RouteModifiers getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteModifiers>(create);
+  static RouteModifiers getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteModifiers>(create);
   static RouteModifiers? _defaultInstance;
 
   /// Specifies whether to avoid toll roads where reasonable. Preference will be
@@ -2321,7 +2802,10 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get avoidTolls => $_getBF(0);
   @$pb.TagNumber(2)
-  set avoidTolls($core.bool v) { $_setBool(0, v); }
+  set avoidTolls($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAvoidTolls() => $_has(0);
   @$pb.TagNumber(2)
@@ -2333,7 +2817,10 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get avoidHighways => $_getBF(1);
   @$pb.TagNumber(3)
-  set avoidHighways($core.bool v) { $_setBool(1, v); }
+  set avoidHighways($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAvoidHighways() => $_has(1);
   @$pb.TagNumber(3)
@@ -2345,7 +2832,10 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get avoidFerries => $_getBF(2);
   @$pb.TagNumber(4)
-  set avoidFerries($core.bool v) { $_setBool(2, v); }
+  set avoidFerries($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAvoidFerries() => $_has(2);
   @$pb.TagNumber(4)
@@ -2357,7 +2847,10 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get avoidIndoor => $_getBF(3);
   @$pb.TagNumber(5)
-  set avoidIndoor($core.bool v) { $_setBool(3, v); }
+  set avoidIndoor($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAvoidIndoor() => $_has(3);
   @$pb.TagNumber(5)
@@ -2380,34 +2873,46 @@ class Vehicle_LoadLimit_Interval extends $pb.GeneratedMessage {
     return $result;
   }
   Vehicle_LoadLimit_Interval._() : super();
-  factory Vehicle_LoadLimit_Interval.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Vehicle_LoadLimit_Interval.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Vehicle_LoadLimit_Interval.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Vehicle_LoadLimit_Interval.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle.LoadLimit.Interval', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Vehicle.LoadLimit.Interval',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'min')
     ..aInt64(2, _omitFieldNames ? '' : 'max')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Vehicle_LoadLimit_Interval clone() => Vehicle_LoadLimit_Interval()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Vehicle_LoadLimit_Interval copyWith(void Function(Vehicle_LoadLimit_Interval) updates) => super.copyWith((message) => updates(message as Vehicle_LoadLimit_Interval)) as Vehicle_LoadLimit_Interval;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Vehicle_LoadLimit_Interval clone() =>
+      Vehicle_LoadLimit_Interval()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Vehicle_LoadLimit_Interval copyWith(
+          void Function(Vehicle_LoadLimit_Interval) updates) =>
+      super.copyWith(
+              (message) => updates(message as Vehicle_LoadLimit_Interval))
+          as Vehicle_LoadLimit_Interval;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Vehicle_LoadLimit_Interval create() => Vehicle_LoadLimit_Interval._();
   Vehicle_LoadLimit_Interval createEmptyInstance() => create();
-  static $pb.PbList<Vehicle_LoadLimit_Interval> createRepeated() => $pb.PbList<Vehicle_LoadLimit_Interval>();
+  static $pb.PbList<Vehicle_LoadLimit_Interval> createRepeated() =>
+      $pb.PbList<Vehicle_LoadLimit_Interval>();
   @$core.pragma('dart2js:noInline')
-  static Vehicle_LoadLimit_Interval getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle_LoadLimit_Interval>(create);
+  static Vehicle_LoadLimit_Interval getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Vehicle_LoadLimit_Interval>(create);
   static Vehicle_LoadLimit_Interval? _defaultInstance;
 
   /// A minimum acceptable load. Must be ≥ 0.
@@ -2418,7 +2923,10 @@ class Vehicle_LoadLimit_Interval extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get min => $_getI64(0);
   @$pb.TagNumber(1)
-  set min($fixnum.Int64 v) { $_setInt64(0, v); }
+  set min($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMin() => $_has(0);
   @$pb.TagNumber(1)
@@ -2433,7 +2941,10 @@ class Vehicle_LoadLimit_Interval extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get max => $_getI64(1);
   @$pb.TagNumber(2)
-  set max($fixnum.Int64 v) { $_setInt64(1, v); }
+  set max($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMax() => $_has(1);
   @$pb.TagNumber(2)
@@ -2470,44 +2981,61 @@ class Vehicle_LoadLimit extends $pb.GeneratedMessage {
     return $result;
   }
   Vehicle_LoadLimit._() : super();
-  factory Vehicle_LoadLimit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Vehicle_LoadLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Vehicle_LoadLimit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Vehicle_LoadLimit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle.LoadLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Vehicle.LoadLimit',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'maxLoad')
     ..aInt64(2, _omitFieldNames ? '' : 'softMaxLoad')
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'costPerUnitAboveSoftMax', $pb.PbFieldType.OD)
-    ..aOM<Vehicle_LoadLimit_Interval>(4, _omitFieldNames ? '' : 'startLoadInterval', subBuilder: Vehicle_LoadLimit_Interval.create)
-    ..aOM<Vehicle_LoadLimit_Interval>(5, _omitFieldNames ? '' : 'endLoadInterval', subBuilder: Vehicle_LoadLimit_Interval.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'costPerUnitAboveSoftMax', $pb.PbFieldType.OD)
+    ..aOM<Vehicle_LoadLimit_Interval>(
+        4, _omitFieldNames ? '' : 'startLoadInterval',
+        subBuilder: Vehicle_LoadLimit_Interval.create)
+    ..aOM<Vehicle_LoadLimit_Interval>(
+        5, _omitFieldNames ? '' : 'endLoadInterval',
+        subBuilder: Vehicle_LoadLimit_Interval.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Vehicle_LoadLimit clone() => Vehicle_LoadLimit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Vehicle_LoadLimit copyWith(void Function(Vehicle_LoadLimit) updates) => super.copyWith((message) => updates(message as Vehicle_LoadLimit)) as Vehicle_LoadLimit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Vehicle_LoadLimit copyWith(void Function(Vehicle_LoadLimit) updates) =>
+      super.copyWith((message) => updates(message as Vehicle_LoadLimit))
+          as Vehicle_LoadLimit;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Vehicle_LoadLimit create() => Vehicle_LoadLimit._();
   Vehicle_LoadLimit createEmptyInstance() => create();
-  static $pb.PbList<Vehicle_LoadLimit> createRepeated() => $pb.PbList<Vehicle_LoadLimit>();
+  static $pb.PbList<Vehicle_LoadLimit> createRepeated() =>
+      $pb.PbList<Vehicle_LoadLimit>();
   @$core.pragma('dart2js:noInline')
-  static Vehicle_LoadLimit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle_LoadLimit>(create);
+  static Vehicle_LoadLimit getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Vehicle_LoadLimit>(create);
   static Vehicle_LoadLimit? _defaultInstance;
 
   /// The maximum acceptable amount of load.
   @$pb.TagNumber(1)
   $fixnum.Int64 get maxLoad => $_getI64(0);
   @$pb.TagNumber(1)
-  set maxLoad($fixnum.Int64 v) { $_setInt64(0, v); }
+  set maxLoad($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxLoad() => $_has(0);
   @$pb.TagNumber(1)
@@ -2518,7 +3046,10 @@ class Vehicle_LoadLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get softMaxLoad => $_getI64(1);
   @$pb.TagNumber(2)
-  set softMaxLoad($fixnum.Int64 v) { $_setInt64(1, v); }
+  set softMaxLoad($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSoftMaxLoad() => $_has(1);
   @$pb.TagNumber(2)
@@ -2535,7 +3066,10 @@ class Vehicle_LoadLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get costPerUnitAboveSoftMax => $_getN(2);
   @$pb.TagNumber(3)
-  set costPerUnitAboveSoftMax($core.double v) { $_setDouble(2, v); }
+  set costPerUnitAboveSoftMax($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCostPerUnitAboveSoftMax() => $_has(2);
   @$pb.TagNumber(3)
@@ -2545,7 +3079,10 @@ class Vehicle_LoadLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Vehicle_LoadLimit_Interval get startLoadInterval => $_getN(3);
   @$pb.TagNumber(4)
-  set startLoadInterval(Vehicle_LoadLimit_Interval v) { setField(4, v); }
+  set startLoadInterval(Vehicle_LoadLimit_Interval v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartLoadInterval() => $_has(3);
   @$pb.TagNumber(4)
@@ -2557,7 +3094,10 @@ class Vehicle_LoadLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Vehicle_LoadLimit_Interval get endLoadInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set endLoadInterval(Vehicle_LoadLimit_Interval v) { setField(5, v); }
+  set endLoadInterval(Vehicle_LoadLimit_Interval v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndLoadInterval() => $_has(4);
   @$pb.TagNumber(5)
@@ -2593,49 +3133,71 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
       $result.quadraticSoftMaxDuration = quadraticSoftMaxDuration;
     }
     if (costPerSquareHourAfterQuadraticSoftMax != null) {
-      $result.costPerSquareHourAfterQuadraticSoftMax = costPerSquareHourAfterQuadraticSoftMax;
+      $result.costPerSquareHourAfterQuadraticSoftMax =
+          costPerSquareHourAfterQuadraticSoftMax;
     }
     return $result;
   }
   Vehicle_DurationLimit._() : super();
-  factory Vehicle_DurationLimit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Vehicle_DurationLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Vehicle_DurationLimit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Vehicle_DurationLimit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle.DurationLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'maxDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'softMaxDuration', subBuilder: $264.Duration.create)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'costPerHourAfterSoftMax', $pb.PbFieldType.OD)
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'quadraticSoftMaxDuration', subBuilder: $264.Duration.create)
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'costPerSquareHourAfterQuadraticSoftMax', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Vehicle.DurationLimit',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'maxDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'softMaxDuration',
+        subBuilder: $264.Duration.create)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'costPerHourAfterSoftMax', $pb.PbFieldType.OD)
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'quadraticSoftMaxDuration',
+        subBuilder: $264.Duration.create)
+    ..a<$core.double>(
+        5,
+        _omitFieldNames ? '' : 'costPerSquareHourAfterQuadraticSoftMax',
+        $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Vehicle_DurationLimit clone() => Vehicle_DurationLimit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Vehicle_DurationLimit copyWith(void Function(Vehicle_DurationLimit) updates) => super.copyWith((message) => updates(message as Vehicle_DurationLimit)) as Vehicle_DurationLimit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Vehicle_DurationLimit clone() =>
+      Vehicle_DurationLimit()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Vehicle_DurationLimit copyWith(
+          void Function(Vehicle_DurationLimit) updates) =>
+      super.copyWith((message) => updates(message as Vehicle_DurationLimit))
+          as Vehicle_DurationLimit;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Vehicle_DurationLimit create() => Vehicle_DurationLimit._();
   Vehicle_DurationLimit createEmptyInstance() => create();
-  static $pb.PbList<Vehicle_DurationLimit> createRepeated() => $pb.PbList<Vehicle_DurationLimit>();
+  static $pb.PbList<Vehicle_DurationLimit> createRepeated() =>
+      $pb.PbList<Vehicle_DurationLimit>();
   @$core.pragma('dart2js:noInline')
-  static Vehicle_DurationLimit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle_DurationLimit>(create);
+  static Vehicle_DurationLimit getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Vehicle_DurationLimit>(create);
   static Vehicle_DurationLimit? _defaultInstance;
 
   /// A hard limit constraining the duration to be at most max_duration.
   @$pb.TagNumber(1)
   $264.Duration get maxDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set maxDuration($264.Duration v) { setField(1, v); }
+  set maxDuration($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxDuration() => $_has(0);
   @$pb.TagNumber(1)
@@ -2652,7 +3214,10 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get softMaxDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set softMaxDuration($264.Duration v) { setField(2, v); }
+  set softMaxDuration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSoftMaxDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -2670,7 +3235,10 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get costPerHourAfterSoftMax => $_getN(2);
   @$pb.TagNumber(3)
-  set costPerHourAfterSoftMax($core.double v) { $_setDouble(2, v); }
+  set costPerHourAfterSoftMax($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCostPerHourAfterSoftMax() => $_has(2);
   @$pb.TagNumber(3)
@@ -2689,7 +3257,10 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $264.Duration get quadraticSoftMaxDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set quadraticSoftMaxDuration($264.Duration v) { setField(4, v); }
+  set quadraticSoftMaxDuration($264.Duration v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasQuadraticSoftMaxDuration() => $_has(3);
   @$pb.TagNumber(4)
@@ -2712,7 +3283,10 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get costPerSquareHourAfterQuadraticSoftMax => $_getN(4);
   @$pb.TagNumber(5)
-  set costPerSquareHourAfterQuadraticSoftMax($core.double v) { $_setDouble(4, v); }
+  set costPerSquareHourAfterQuadraticSoftMax($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCostPerSquareHourAfterQuadraticSoftMax() => $_has(4);
   @$pb.TagNumber(5)
@@ -2813,7 +3387,8 @@ class Vehicle extends $pb.GeneratedMessage {
       $result.routeDistanceLimit = routeDistanceLimit;
     }
     if (extraVisitDurationForVisitType != null) {
-      $result.extraVisitDurationForVisitType.addAll(extraVisitDurationForVisitType);
+      $result.extraVisitDurationForVisitType
+          .addAll(extraVisitDurationForVisitType);
     }
     if (breakRule != null) {
       $result.breakRule = breakRule;
@@ -2833,49 +3408,97 @@ class Vehicle extends $pb.GeneratedMessage {
     return $result;
   }
   Vehicle._() : super();
-  factory Vehicle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Vehicle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Vehicle.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Vehicle.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..e<Vehicle_TravelMode>(1, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: Vehicle_TravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: Vehicle_TravelMode.valueOf, enumValues: Vehicle_TravelMode.values)
-    ..aOM<RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers', subBuilder: RouteModifiers.create)
-    ..aOM<$325.LatLng>(3, _omitFieldNames ? '' : 'startLocation', subBuilder: $325.LatLng.create)
-    ..aOM<Waypoint>(4, _omitFieldNames ? '' : 'startWaypoint', subBuilder: Waypoint.create)
-    ..aOM<$325.LatLng>(5, _omitFieldNames ? '' : 'endLocation', subBuilder: $325.LatLng.create)
-    ..aOM<Waypoint>(6, _omitFieldNames ? '' : 'endWaypoint', subBuilder: Waypoint.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Vehicle',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..e<Vehicle_TravelMode>(
+        1, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
+        defaultOrMaker: Vehicle_TravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: Vehicle_TravelMode.valueOf,
+        enumValues: Vehicle_TravelMode.values)
+    ..aOM<RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers',
+        subBuilder: RouteModifiers.create)
+    ..aOM<$325.LatLng>(3, _omitFieldNames ? '' : 'startLocation',
+        subBuilder: $325.LatLng.create)
+    ..aOM<Waypoint>(4, _omitFieldNames ? '' : 'startWaypoint',
+        subBuilder: Waypoint.create)
+    ..aOM<$325.LatLng>(5, _omitFieldNames ? '' : 'endLocation',
+        subBuilder: $325.LatLng.create)
+    ..aOM<Waypoint>(6, _omitFieldNames ? '' : 'endWaypoint',
+        subBuilder: Waypoint.create)
     ..pPS(7, _omitFieldNames ? '' : 'startTags')
     ..pPS(8, _omitFieldNames ? '' : 'endTags')
-    ..pc<TimeWindow>(9, _omitFieldNames ? '' : 'startTimeWindows', $pb.PbFieldType.PM, subBuilder: TimeWindow.create)
-    ..pc<TimeWindow>(10, _omitFieldNames ? '' : 'endTimeWindows', $pb.PbFieldType.PM, subBuilder: TimeWindow.create)
-    ..a<$core.double>(11, _omitFieldNames ? '' : 'travelDurationMultiple', $pb.PbFieldType.OD)
-    ..e<Vehicle_UnloadingPolicy>(12, _omitFieldNames ? '' : 'unloadingPolicy', $pb.PbFieldType.OE, defaultOrMaker: Vehicle_UnloadingPolicy.UNLOADING_POLICY_UNSPECIFIED, valueOf: Vehicle_UnloadingPolicy.valueOf, enumValues: Vehicle_UnloadingPolicy.values)
-    ..a<$core.double>(16, _omitFieldNames ? '' : 'costPerHour', $pb.PbFieldType.OD)
-    ..a<$core.double>(17, _omitFieldNames ? '' : 'costPerTraveledHour', $pb.PbFieldType.OD)
-    ..a<$core.double>(18, _omitFieldNames ? '' : 'costPerKilometer', $pb.PbFieldType.OD)
-    ..a<$core.double>(19, _omitFieldNames ? '' : 'fixedCost', $pb.PbFieldType.OD)
+    ..pc<TimeWindow>(
+        9, _omitFieldNames ? '' : 'startTimeWindows', $pb.PbFieldType.PM,
+        subBuilder: TimeWindow.create)
+    ..pc<TimeWindow>(
+        10, _omitFieldNames ? '' : 'endTimeWindows', $pb.PbFieldType.PM,
+        subBuilder: TimeWindow.create)
+    ..a<$core.double>(
+        11, _omitFieldNames ? '' : 'travelDurationMultiple', $pb.PbFieldType.OD)
+    ..e<Vehicle_UnloadingPolicy>(
+        12, _omitFieldNames ? '' : 'unloadingPolicy', $pb.PbFieldType.OE,
+        defaultOrMaker: Vehicle_UnloadingPolicy.UNLOADING_POLICY_UNSPECIFIED,
+        valueOf: Vehicle_UnloadingPolicy.valueOf,
+        enumValues: Vehicle_UnloadingPolicy.values)
+    ..a<$core.double>(
+        16, _omitFieldNames ? '' : 'costPerHour', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        17, _omitFieldNames ? '' : 'costPerTraveledHour', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        18, _omitFieldNames ? '' : 'costPerKilometer', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        19, _omitFieldNames ? '' : 'fixedCost', $pb.PbFieldType.OD)
     ..aOB(20, _omitFieldNames ? '' : 'usedIfRouteIsEmpty')
-    ..aOM<Vehicle_DurationLimit>(21, _omitFieldNames ? '' : 'routeDurationLimit', subBuilder: Vehicle_DurationLimit.create)
-    ..aOM<Vehicle_DurationLimit>(22, _omitFieldNames ? '' : 'travelDurationLimit', subBuilder: Vehicle_DurationLimit.create)
-    ..aOM<DistanceLimit>(23, _omitFieldNames ? '' : 'routeDistanceLimit', subBuilder: DistanceLimit.create)
-    ..m<$core.String, $264.Duration>(24, _omitFieldNames ? '' : 'extraVisitDurationForVisitType', entryClassName: 'Vehicle.ExtraVisitDurationForVisitTypeEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $264.Duration.create, valueDefaultOrMaker: $264.Duration.getDefault, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
-    ..aOM<BreakRule>(25, _omitFieldNames ? '' : 'breakRule', subBuilder: BreakRule.create)
+    ..aOM<Vehicle_DurationLimit>(
+        21, _omitFieldNames ? '' : 'routeDurationLimit',
+        subBuilder: Vehicle_DurationLimit.create)
+    ..aOM<Vehicle_DurationLimit>(
+        22, _omitFieldNames ? '' : 'travelDurationLimit',
+        subBuilder: Vehicle_DurationLimit.create)
+    ..aOM<DistanceLimit>(23, _omitFieldNames ? '' : 'routeDistanceLimit',
+        subBuilder: DistanceLimit.create)
+    ..m<$core.String, $264.Duration>(
+        24, _omitFieldNames ? '' : 'extraVisitDurationForVisitType',
+        entryClassName: 'Vehicle.ExtraVisitDurationForVisitTypeEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $264.Duration.create,
+        valueDefaultOrMaker: $264.Duration.getDefault,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..aOM<BreakRule>(25, _omitFieldNames ? '' : 'breakRule',
+        subBuilder: BreakRule.create)
     ..aOS(27, _omitFieldNames ? '' : 'label')
     ..aOB(28, _omitFieldNames ? '' : 'ignore')
-    ..m<$core.String, Vehicle_LoadLimit>(30, _omitFieldNames ? '' : 'loadLimits', entryClassName: 'Vehicle.LoadLimitsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Vehicle_LoadLimit.create, valueDefaultOrMaker: Vehicle_LoadLimit.getDefault, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..m<$core.String, Vehicle_LoadLimit>(
+        30, _omitFieldNames ? '' : 'loadLimits',
+        entryClassName: 'Vehicle.LoadLimitsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: Vehicle_LoadLimit.create,
+        valueDefaultOrMaker: Vehicle_LoadLimit.getDefault,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
     ..aOS(32, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Vehicle clone() => Vehicle()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Vehicle copyWith(void Function(Vehicle) updates) => super.copyWith((message) => updates(message as Vehicle)) as Vehicle;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Vehicle copyWith(void Function(Vehicle) updates) =>
+      super.copyWith((message) => updates(message as Vehicle)) as Vehicle;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2884,7 +3507,8 @@ class Vehicle extends $pb.GeneratedMessage {
   Vehicle createEmptyInstance() => create();
   static $pb.PbList<Vehicle> createRepeated() => $pb.PbList<Vehicle>();
   @$core.pragma('dart2js:noInline')
-  static Vehicle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle>(create);
+  static Vehicle getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vehicle>(create);
   static Vehicle? _defaultInstance;
 
   /// The travel mode which affects the roads usable by the vehicle and its
@@ -2892,7 +3516,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Vehicle_TravelMode get travelMode => $_getN(0);
   @$pb.TagNumber(1)
-  set travelMode(Vehicle_TravelMode v) { setField(1, v); }
+  set travelMode(Vehicle_TravelMode v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTravelMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -2903,7 +3530,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   RouteModifiers get routeModifiers => $_getN(1);
   @$pb.TagNumber(2)
-  set routeModifiers(RouteModifiers v) { setField(2, v); }
+  set routeModifiers(RouteModifiers v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRouteModifiers() => $_has(1);
   @$pb.TagNumber(2)
@@ -2918,7 +3548,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $325.LatLng get startLocation => $_getN(2);
   @$pb.TagNumber(3)
-  set startLocation($325.LatLng v) { setField(3, v); }
+  set startLocation($325.LatLng v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStartLocation() => $_has(2);
   @$pb.TagNumber(3)
@@ -2934,7 +3567,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Waypoint get startWaypoint => $_getN(3);
   @$pb.TagNumber(4)
-  set startWaypoint(Waypoint v) { setField(4, v); }
+  set startWaypoint(Waypoint v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartWaypoint() => $_has(3);
   @$pb.TagNumber(4)
@@ -2950,7 +3586,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $325.LatLng get endLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set endLocation($325.LatLng v) { setField(5, v); }
+  set endLocation($325.LatLng v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndLocation() => $_has(4);
   @$pb.TagNumber(5)
@@ -2967,7 +3606,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Waypoint get endWaypoint => $_getN(5);
   @$pb.TagNumber(6)
-  set endWaypoint(Waypoint v) { setField(6, v); }
+  set endWaypoint(Waypoint v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasEndWaypoint() => $_has(5);
   @$pb.TagNumber(6)
@@ -3033,7 +3675,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.double get travelDurationMultiple => $_getN(10);
   @$pb.TagNumber(11)
-  set travelDurationMultiple($core.double v) { $_setDouble(10, v); }
+  set travelDurationMultiple($core.double v) {
+    $_setDouble(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasTravelDurationMultiple() => $_has(10);
   @$pb.TagNumber(11)
@@ -3043,7 +3688,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Vehicle_UnloadingPolicy get unloadingPolicy => $_getN(11);
   @$pb.TagNumber(12)
-  set unloadingPolicy(Vehicle_UnloadingPolicy v) { setField(12, v); }
+  set unloadingPolicy(Vehicle_UnloadingPolicy v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasUnloadingPolicy() => $_has(11);
   @$pb.TagNumber(12)
@@ -3059,7 +3707,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.double get costPerHour => $_getN(12);
   @$pb.TagNumber(16)
-  set costPerHour($core.double v) { $_setDouble(12, v); }
+  set costPerHour($core.double v) {
+    $_setDouble(12, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasCostPerHour() => $_has(12);
   @$pb.TagNumber(16)
@@ -3072,7 +3723,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.double get costPerTraveledHour => $_getN(13);
   @$pb.TagNumber(17)
-  set costPerTraveledHour($core.double v) { $_setDouble(13, v); }
+  set costPerTraveledHour($core.double v) {
+    $_setDouble(13, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasCostPerTraveledHour() => $_has(13);
   @$pb.TagNumber(17)
@@ -3086,7 +3740,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.double get costPerKilometer => $_getN(14);
   @$pb.TagNumber(18)
-  set costPerKilometer($core.double v) { $_setDouble(14, v); }
+  set costPerKilometer($core.double v) {
+    $_setDouble(14, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasCostPerKilometer() => $_has(14);
   @$pb.TagNumber(18)
@@ -3096,7 +3753,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.double get fixedCost => $_getN(15);
   @$pb.TagNumber(19)
-  set fixedCost($core.double v) { $_setDouble(15, v); }
+  set fixedCost($core.double v) {
+    $_setDouble(15, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasFixedCost() => $_has(15);
   @$pb.TagNumber(19)
@@ -3117,7 +3777,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.bool get usedIfRouteIsEmpty => $_getBF(16);
   @$pb.TagNumber(20)
-  set usedIfRouteIsEmpty($core.bool v) { $_setBool(16, v); }
+  set usedIfRouteIsEmpty($core.bool v) {
+    $_setBool(16, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasUsedIfRouteIsEmpty() => $_has(16);
   @$pb.TagNumber(20)
@@ -3129,7 +3792,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   Vehicle_DurationLimit get routeDurationLimit => $_getN(17);
   @$pb.TagNumber(21)
-  set routeDurationLimit(Vehicle_DurationLimit v) { setField(21, v); }
+  set routeDurationLimit(Vehicle_DurationLimit v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasRouteDurationLimit() => $_has(17);
   @$pb.TagNumber(21)
@@ -3143,7 +3809,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   Vehicle_DurationLimit get travelDurationLimit => $_getN(18);
   @$pb.TagNumber(22)
-  set travelDurationLimit(Vehicle_DurationLimit v) { setField(22, v); }
+  set travelDurationLimit(Vehicle_DurationLimit v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasTravelDurationLimit() => $_has(18);
   @$pb.TagNumber(22)
@@ -3157,7 +3826,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   DistanceLimit get routeDistanceLimit => $_getN(19);
   @$pb.TagNumber(23)
-  set routeDistanceLimit(DistanceLimit v) { setField(23, v); }
+  set routeDistanceLimit(DistanceLimit v) {
+    setField(23, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasRouteDistanceLimit() => $_has(19);
   @$pb.TagNumber(23)
@@ -3175,14 +3847,18 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  If a visit request has multiple types, a duration will be added for each
   ///  type in the map.
   @$pb.TagNumber(24)
-  $core.Map<$core.String, $264.Duration> get extraVisitDurationForVisitType => $_getMap(20);
+  $core.Map<$core.String, $264.Duration> get extraVisitDurationForVisitType =>
+      $_getMap(20);
 
   /// Describes the break schedule to be enforced on this vehicle.
   /// If empty, no breaks will be scheduled for this vehicle.
   @$pb.TagNumber(25)
   BreakRule get breakRule => $_getN(21);
   @$pb.TagNumber(25)
-  set breakRule(BreakRule v) { setField(25, v); }
+  set breakRule(BreakRule v) {
+    setField(25, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasBreakRule() => $_has(21);
   @$pb.TagNumber(25)
@@ -3196,7 +3872,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.String get label => $_getSZ(22);
   @$pb.TagNumber(27)
-  set label($core.String v) { $_setString(22, v); }
+  set label($core.String v) {
+    $_setString(22, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasLabel() => $_has(22);
   @$pb.TagNumber(27)
@@ -3218,7 +3897,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   $core.bool get ignore => $_getBF(23);
   @$pb.TagNumber(28)
-  set ignore($core.bool v) { $_setBool(23, v); }
+  set ignore($core.bool v) {
+    $_setBool(23, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasIgnore() => $_has(23);
   @$pb.TagNumber(28)
@@ -3238,7 +3920,10 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(32)
   $core.String get displayName => $_getSZ(25);
   @$pb.TagNumber(32)
-  set displayName($core.String v) { $_setString(25, v); }
+  set displayName($core.String v) {
+    $_setString(25, v);
+  }
+
   @$pb.TagNumber(32)
   $core.bool hasDisplayName() => $_has(25);
   @$pb.TagNumber(32)
@@ -3298,29 +3983,43 @@ class TimeWindow extends $pb.GeneratedMessage {
     return $result;
   }
   TimeWindow._() : super();
-  factory TimeWindow.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TimeWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TimeWindow.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TimeWindow.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'softStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'softEndTime', subBuilder: $302.Timestamp.create)
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'costPerHourBeforeSoftStartTime', $pb.PbFieldType.OD)
-    ..a<$core.double>(6, _omitFieldNames ? '' : 'costPerHourAfterSoftEndTime', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimeWindow',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'softStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'softEndTime',
+        subBuilder: $302.Timestamp.create)
+    ..a<$core.double>(
+        5,
+        _omitFieldNames ? '' : 'costPerHourBeforeSoftStartTime',
+        $pb.PbFieldType.OD)
+    ..a<$core.double>(6, _omitFieldNames ? '' : 'costPerHourAfterSoftEndTime',
+        $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TimeWindow clone() => TimeWindow()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TimeWindow copyWith(void Function(TimeWindow) updates) => super.copyWith((message) => updates(message as TimeWindow)) as TimeWindow;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TimeWindow copyWith(void Function(TimeWindow) updates) =>
+      super.copyWith((message) => updates(message as TimeWindow)) as TimeWindow;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3329,7 +4028,8 @@ class TimeWindow extends $pb.GeneratedMessage {
   TimeWindow createEmptyInstance() => create();
   static $pb.PbList<TimeWindow> createRepeated() => $pb.PbList<TimeWindow>();
   @$core.pragma('dart2js:noInline')
-  static TimeWindow getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeWindow>(create);
+  static TimeWindow getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TimeWindow>(create);
   static TimeWindow? _defaultInstance;
 
   /// The hard time window start time. If unspecified it will be set to
@@ -3337,7 +4037,10 @@ class TimeWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -3350,7 +4053,10 @@ class TimeWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -3362,7 +4068,10 @@ class TimeWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get softStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set softStartTime($302.Timestamp v) { setField(3, v); }
+  set softStartTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSoftStartTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -3374,7 +4083,10 @@ class TimeWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get softEndTime => $_getN(3);
   @$pb.TagNumber(4)
-  set softEndTime($302.Timestamp v) { setField(4, v); }
+  set softEndTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSoftEndTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -3396,7 +4108,10 @@ class TimeWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get costPerHourBeforeSoftStartTime => $_getN(4);
   @$pb.TagNumber(5)
-  set costPerHourBeforeSoftStartTime($core.double v) { $_setDouble(4, v); }
+  set costPerHourBeforeSoftStartTime($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCostPerHourBeforeSoftStartTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -3416,7 +4131,10 @@ class TimeWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get costPerHourAfterSoftEndTime => $_getN(5);
   @$pb.TagNumber(6)
-  set costPerHourAfterSoftEndTime($core.double v) { $_setDouble(5, v); }
+  set costPerHourAfterSoftEndTime($core.double v) {
+    $_setDouble(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCostPerHourAfterSoftEndTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -3451,36 +4169,47 @@ class DistanceLimit extends $pb.GeneratedMessage {
     return $result;
   }
   DistanceLimit._() : super();
-  factory DistanceLimit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DistanceLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DistanceLimit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DistanceLimit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DistanceLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DistanceLimit',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'maxMeters')
     ..aInt64(2, _omitFieldNames ? '' : 'softMaxMeters')
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'costPerKilometerAboveSoftMax', $pb.PbFieldType.OD)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'costPerKilometerBelowSoftMax', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'costPerKilometerAboveSoftMax',
+        $pb.PbFieldType.OD)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'costPerKilometerBelowSoftMax',
+        $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DistanceLimit clone() => DistanceLimit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DistanceLimit copyWith(void Function(DistanceLimit) updates) => super.copyWith((message) => updates(message as DistanceLimit)) as DistanceLimit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DistanceLimit copyWith(void Function(DistanceLimit) updates) =>
+      super.copyWith((message) => updates(message as DistanceLimit))
+          as DistanceLimit;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DistanceLimit create() => DistanceLimit._();
   DistanceLimit createEmptyInstance() => create();
-  static $pb.PbList<DistanceLimit> createRepeated() => $pb.PbList<DistanceLimit>();
+  static $pb.PbList<DistanceLimit> createRepeated() =>
+      $pb.PbList<DistanceLimit>();
   @$core.pragma('dart2js:noInline')
-  static DistanceLimit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DistanceLimit>(create);
+  static DistanceLimit getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DistanceLimit>(create);
   static DistanceLimit? _defaultInstance;
 
   /// A hard limit constraining the distance to be at most max_meters. The limit
@@ -3488,7 +4217,10 @@ class DistanceLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get maxMeters => $_getI64(0);
   @$pb.TagNumber(1)
-  set maxMeters($fixnum.Int64 v) { $_setInt64(0, v); }
+  set maxMeters($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxMeters() => $_has(0);
   @$pb.TagNumber(1)
@@ -3503,7 +4235,10 @@ class DistanceLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get softMaxMeters => $_getI64(1);
   @$pb.TagNumber(2)
-  set softMaxMeters($fixnum.Int64 v) { $_setInt64(1, v); }
+  set softMaxMeters($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSoftMaxMeters() => $_has(1);
   @$pb.TagNumber(2)
@@ -3520,7 +4255,10 @@ class DistanceLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get costPerKilometerAboveSoftMax => $_getN(2);
   @$pb.TagNumber(3)
-  set costPerKilometerAboveSoftMax($core.double v) { $_setDouble(2, v); }
+  set costPerKilometerAboveSoftMax($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCostPerKilometerAboveSoftMax() => $_has(2);
   @$pb.TagNumber(3)
@@ -3536,7 +4274,10 @@ class DistanceLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get costPerKilometerBelowSoftMax => $_getN(3);
   @$pb.TagNumber(4)
-  set costPerKilometerBelowSoftMax($core.double v) { $_setDouble(3, v); }
+  set costPerKilometerBelowSoftMax($core.double v) {
+    $_setDouble(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCostPerKilometerBelowSoftMax() => $_has(3);
   @$pb.TagNumber(4)
@@ -3586,40 +4327,53 @@ class TransitionAttributes extends $pb.GeneratedMessage {
     return $result;
   }
   TransitionAttributes._() : super();
-  factory TransitionAttributes.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransitionAttributes.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransitionAttributes.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransitionAttributes.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransitionAttributes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransitionAttributes',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'srcTag')
     ..aOS(2, _omitFieldNames ? '' : 'excludedSrcTag')
     ..aOS(3, _omitFieldNames ? '' : 'dstTag')
     ..aOS(4, _omitFieldNames ? '' : 'excludedDstTag')
     ..a<$core.double>(5, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OD)
-    ..a<$core.double>(6, _omitFieldNames ? '' : 'costPerKilometer', $pb.PbFieldType.OD)
-    ..aOM<DistanceLimit>(7, _omitFieldNames ? '' : 'distanceLimit', subBuilder: DistanceLimit.create)
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'delay', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.double>(
+        6, _omitFieldNames ? '' : 'costPerKilometer', $pb.PbFieldType.OD)
+    ..aOM<DistanceLimit>(7, _omitFieldNames ? '' : 'distanceLimit',
+        subBuilder: DistanceLimit.create)
+    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'delay',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TransitionAttributes clone() => TransitionAttributes()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransitionAttributes copyWith(void Function(TransitionAttributes) updates) => super.copyWith((message) => updates(message as TransitionAttributes)) as TransitionAttributes;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TransitionAttributes clone() =>
+      TransitionAttributes()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransitionAttributes copyWith(void Function(TransitionAttributes) updates) =>
+      super.copyWith((message) => updates(message as TransitionAttributes))
+          as TransitionAttributes;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransitionAttributes create() => TransitionAttributes._();
   TransitionAttributes createEmptyInstance() => create();
-  static $pb.PbList<TransitionAttributes> createRepeated() => $pb.PbList<TransitionAttributes>();
+  static $pb.PbList<TransitionAttributes> createRepeated() =>
+      $pb.PbList<TransitionAttributes>();
   @$core.pragma('dart2js:noInline')
-  static TransitionAttributes getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransitionAttributes>(create);
+  static TransitionAttributes getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransitionAttributes>(create);
   static TransitionAttributes? _defaultInstance;
 
   ///  Tags defining the set of (src->dst) transitions these attributes apply to.
@@ -3633,7 +4387,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get srcTag => $_getSZ(0);
   @$pb.TagNumber(1)
-  set srcTag($core.String v) { $_setString(0, v); }
+  set srcTag($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSrcTag() => $_has(0);
   @$pb.TagNumber(1)
@@ -3644,7 +4401,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get excludedSrcTag => $_getSZ(1);
   @$pb.TagNumber(2)
-  set excludedSrcTag($core.String v) { $_setString(1, v); }
+  set excludedSrcTag($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExcludedSrcTag() => $_has(1);
   @$pb.TagNumber(2)
@@ -3658,7 +4418,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get dstTag => $_getSZ(2);
   @$pb.TagNumber(3)
-  set dstTag($core.String v) { $_setString(2, v); }
+  set dstTag($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDstTag() => $_has(2);
   @$pb.TagNumber(3)
@@ -3669,7 +4432,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get excludedDstTag => $_getSZ(3);
   @$pb.TagNumber(4)
-  set excludedDstTag($core.String v) { $_setString(3, v); }
+  set excludedDstTag($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasExcludedDstTag() => $_has(3);
   @$pb.TagNumber(4)
@@ -3681,7 +4447,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get cost => $_getN(4);
   @$pb.TagNumber(5)
-  set cost($core.double v) { $_setDouble(4, v); }
+  set cost($core.double v) {
+    $_setDouble(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCost() => $_has(4);
   @$pb.TagNumber(5)
@@ -3694,7 +4463,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get costPerKilometer => $_getN(5);
   @$pb.TagNumber(6)
-  set costPerKilometer($core.double v) { $_setDouble(5, v); }
+  set costPerKilometer($core.double v) {
+    $_setDouble(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCostPerKilometer() => $_has(5);
   @$pb.TagNumber(6)
@@ -3707,7 +4479,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DistanceLimit get distanceLimit => $_getN(6);
   @$pb.TagNumber(7)
-  set distanceLimit(DistanceLimit v) { setField(7, v); }
+  set distanceLimit(DistanceLimit v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDistanceLimit() => $_has(6);
   @$pb.TagNumber(7)
@@ -3722,7 +4497,10 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $264.Duration get delay => $_getN(7);
   @$pb.TagNumber(8)
-  set delay($264.Duration v) { setField(8, v); }
+  set delay($264.Duration v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDelay() => $_has(7);
   @$pb.TagNumber(8)
@@ -3731,11 +4509,7 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   $264.Duration ensureDelay() => $_ensure(7);
 }
 
-enum Waypoint_LocationType {
-  location, 
-  placeId, 
-  notSet
-}
+enum Waypoint_LocationType { location, placeId, notSet }
 
 /// Encapsulates a waypoint. Waypoints mark arrival and departure locations of
 /// VisitRequests, and start and end locations of Vehicles.
@@ -3758,32 +4532,40 @@ class Waypoint extends $pb.GeneratedMessage {
     return $result;
   }
   Waypoint._() : super();
-  factory Waypoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Waypoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Waypoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Waypoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Waypoint_LocationType> _Waypoint_LocationTypeByTag = {
-    1 : Waypoint_LocationType.location,
-    2 : Waypoint_LocationType.placeId,
-    0 : Waypoint_LocationType.notSet
+  static const $core.Map<$core.int, Waypoint_LocationType>
+      _Waypoint_LocationTypeByTag = {
+    1: Waypoint_LocationType.location,
+    2: Waypoint_LocationType.placeId,
+    0: Waypoint_LocationType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Waypoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Waypoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<Location>(1, _omitFieldNames ? '' : 'location', subBuilder: Location.create)
+    ..aOM<Location>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: Location.create)
     ..aOS(2, _omitFieldNames ? '' : 'placeId')
     ..aOB(3, _omitFieldNames ? '' : 'sideOfRoad')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Waypoint clone() => Waypoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Waypoint copyWith(void Function(Waypoint) updates) => super.copyWith((message) => updates(message as Waypoint)) as Waypoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Waypoint copyWith(void Function(Waypoint) updates) =>
+      super.copyWith((message) => updates(message as Waypoint)) as Waypoint;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3792,10 +4574,12 @@ class Waypoint extends $pb.GeneratedMessage {
   Waypoint createEmptyInstance() => create();
   static $pb.PbList<Waypoint> createRepeated() => $pb.PbList<Waypoint>();
   @$core.pragma('dart2js:noInline')
-  static Waypoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Waypoint>(create);
+  static Waypoint getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Waypoint>(create);
   static Waypoint? _defaultInstance;
 
-  Waypoint_LocationType whichLocationType() => _Waypoint_LocationTypeByTag[$_whichOneof(0)]!;
+  Waypoint_LocationType whichLocationType() =>
+      _Waypoint_LocationTypeByTag[$_whichOneof(0)]!;
   void clearLocationType() => clearField($_whichOneof(0));
 
   /// A point specified using geographic coordinates, including an optional
@@ -3803,7 +4587,10 @@ class Waypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Location get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location(Location v) { setField(1, v); }
+  set location(Location v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -3815,7 +4602,10 @@ class Waypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get placeId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set placeId($core.String v) { $_setString(1, v); }
+  set placeId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPlaceId() => $_has(1);
   @$pb.TagNumber(2)
@@ -3830,7 +4620,10 @@ class Waypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get sideOfRoad => $_getBF(2);
   @$pb.TagNumber(3)
-  set sideOfRoad($core.bool v) { $_setBool(2, v); }
+  set sideOfRoad($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSideOfRoad() => $_has(2);
   @$pb.TagNumber(3)
@@ -3853,25 +4646,32 @@ class Location extends $pb.GeneratedMessage {
     return $result;
   }
   Location._() : super();
-  factory Location.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Location.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Location.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Location.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Location', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $325.LatLng.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Location',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng',
+        subBuilder: $325.LatLng.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'heading', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Location clone() => Location()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Location copyWith(void Function(Location) updates) => super.copyWith((message) => updates(message as Location)) as Location;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Location copyWith(void Function(Location) updates) =>
+      super.copyWith((message) => updates(message as Location)) as Location;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3880,14 +4680,18 @@ class Location extends $pb.GeneratedMessage {
   Location createEmptyInstance() => create();
   static $pb.PbList<Location> createRepeated() => $pb.PbList<Location>();
   @$core.pragma('dart2js:noInline')
-  static Location getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Location>(create);
+  static Location getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Location>(create);
   static Location? _defaultInstance;
 
   /// The waypoint's geographic coordinates.
   @$pb.TagNumber(1)
   $325.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($325.LatLng v) { setField(1, v); }
+  set latLng($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
@@ -3902,7 +4706,10 @@ class Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get heading => $_getIZ(1);
   @$pb.TagNumber(2)
-  set heading($core.int v) { $_setSignedInt32(1, v); }
+  set heading($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHeading() => $_has(1);
   @$pb.TagNumber(2)
@@ -3933,42 +4740,59 @@ class BreakRule_BreakRequest extends $pb.GeneratedMessage {
     return $result;
   }
   BreakRule_BreakRequest._() : super();
-  factory BreakRule_BreakRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BreakRule_BreakRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BreakRule_BreakRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BreakRule_BreakRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BreakRule.BreakRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'earliestStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'latestStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minDuration', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BreakRule.BreakRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'earliestStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'latestStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minDuration',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BreakRule_BreakRequest clone() => BreakRule_BreakRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BreakRule_BreakRequest copyWith(void Function(BreakRule_BreakRequest) updates) => super.copyWith((message) => updates(message as BreakRule_BreakRequest)) as BreakRule_BreakRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BreakRule_BreakRequest clone() =>
+      BreakRule_BreakRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BreakRule_BreakRequest copyWith(
+          void Function(BreakRule_BreakRequest) updates) =>
+      super.copyWith((message) => updates(message as BreakRule_BreakRequest))
+          as BreakRule_BreakRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BreakRule_BreakRequest create() => BreakRule_BreakRequest._();
   BreakRule_BreakRequest createEmptyInstance() => create();
-  static $pb.PbList<BreakRule_BreakRequest> createRepeated() => $pb.PbList<BreakRule_BreakRequest>();
+  static $pb.PbList<BreakRule_BreakRequest> createRepeated() =>
+      $pb.PbList<BreakRule_BreakRequest>();
   @$core.pragma('dart2js:noInline')
-  static BreakRule_BreakRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BreakRule_BreakRequest>(create);
+  static BreakRule_BreakRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BreakRule_BreakRequest>(create);
   static BreakRule_BreakRequest? _defaultInstance;
 
   /// Required. Lower bound (inclusive) on the start of the break.
   @$pb.TagNumber(1)
   $302.Timestamp get earliestStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set earliestStartTime($302.Timestamp v) { setField(1, v); }
+  set earliestStartTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEarliestStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -3980,7 +4804,10 @@ class BreakRule_BreakRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get latestStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set latestStartTime($302.Timestamp v) { setField(2, v); }
+  set latestStartTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLatestStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -3992,7 +4819,10 @@ class BreakRule_BreakRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get minDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set minDuration($264.Duration v) { setField(3, v); }
+  set minDuration($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMinDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -4049,34 +4879,49 @@ class BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
     return $result;
   }
   BreakRule_FrequencyConstraint._() : super();
-  factory BreakRule_FrequencyConstraint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BreakRule_FrequencyConstraint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BreakRule_FrequencyConstraint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BreakRule_FrequencyConstraint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BreakRule.FrequencyConstraint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'minBreakDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'maxInterBreakDuration', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BreakRule.FrequencyConstraint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'minBreakDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'maxInterBreakDuration',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BreakRule_FrequencyConstraint clone() => BreakRule_FrequencyConstraint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BreakRule_FrequencyConstraint copyWith(void Function(BreakRule_FrequencyConstraint) updates) => super.copyWith((message) => updates(message as BreakRule_FrequencyConstraint)) as BreakRule_FrequencyConstraint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BreakRule_FrequencyConstraint clone() =>
+      BreakRule_FrequencyConstraint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BreakRule_FrequencyConstraint copyWith(
+          void Function(BreakRule_FrequencyConstraint) updates) =>
+      super.copyWith(
+              (message) => updates(message as BreakRule_FrequencyConstraint))
+          as BreakRule_FrequencyConstraint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static BreakRule_FrequencyConstraint create() => BreakRule_FrequencyConstraint._();
+  static BreakRule_FrequencyConstraint create() =>
+      BreakRule_FrequencyConstraint._();
   BreakRule_FrequencyConstraint createEmptyInstance() => create();
-  static $pb.PbList<BreakRule_FrequencyConstraint> createRepeated() => $pb.PbList<BreakRule_FrequencyConstraint>();
+  static $pb.PbList<BreakRule_FrequencyConstraint> createRepeated() =>
+      $pb.PbList<BreakRule_FrequencyConstraint>();
   @$core.pragma('dart2js:noInline')
-  static BreakRule_FrequencyConstraint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BreakRule_FrequencyConstraint>(create);
+  static BreakRule_FrequencyConstraint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BreakRule_FrequencyConstraint>(create);
   static BreakRule_FrequencyConstraint? _defaultInstance;
 
   /// Required. Minimum break duration for this constraint. Nonnegative.
@@ -4084,7 +4929,10 @@ class BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get minBreakDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set minBreakDuration($264.Duration v) { setField(1, v); }
+  set minBreakDuration($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinBreakDuration() => $_has(0);
   @$pb.TagNumber(1)
@@ -4098,7 +4946,10 @@ class BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get maxInterBreakDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set maxInterBreakDuration($264.Duration v) { setField(2, v); }
+  set maxInterBreakDuration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxInterBreakDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -4132,25 +4983,35 @@ class BreakRule extends $pb.GeneratedMessage {
     return $result;
   }
   BreakRule._() : super();
-  factory BreakRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BreakRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BreakRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BreakRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BreakRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<BreakRule_BreakRequest>(1, _omitFieldNames ? '' : 'breakRequests', $pb.PbFieldType.PM, subBuilder: BreakRule_BreakRequest.create)
-    ..pc<BreakRule_FrequencyConstraint>(2, _omitFieldNames ? '' : 'frequencyConstraints', $pb.PbFieldType.PM, subBuilder: BreakRule_FrequencyConstraint.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BreakRule',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<BreakRule_BreakRequest>(
+        1, _omitFieldNames ? '' : 'breakRequests', $pb.PbFieldType.PM,
+        subBuilder: BreakRule_BreakRequest.create)
+    ..pc<BreakRule_FrequencyConstraint>(
+        2, _omitFieldNames ? '' : 'frequencyConstraints', $pb.PbFieldType.PM,
+        subBuilder: BreakRule_FrequencyConstraint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BreakRule clone() => BreakRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BreakRule copyWith(void Function(BreakRule) updates) => super.copyWith((message) => updates(message as BreakRule)) as BreakRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BreakRule copyWith(void Function(BreakRule) updates) =>
+      super.copyWith((message) => updates(message as BreakRule)) as BreakRule;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4159,7 +5020,8 @@ class BreakRule extends $pb.GeneratedMessage {
   BreakRule createEmptyInstance() => create();
   static $pb.PbList<BreakRule> createRepeated() => $pb.PbList<BreakRule>();
   @$core.pragma('dart2js:noInline')
-  static BreakRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BreakRule>(create);
+  static BreakRule getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BreakRule>(create);
   static BreakRule? _defaultInstance;
 
   /// Sequence of breaks. See the `BreakRequest` message.
@@ -4169,7 +5031,8 @@ class BreakRule extends $pb.GeneratedMessage {
   /// Several `FrequencyConstraint` may apply. They must all be satisfied by
   /// the `BreakRequest`s of this `BreakRule`. See `FrequencyConstraint`.
   @$pb.TagNumber(2)
-  $core.List<BreakRule_FrequencyConstraint> get frequencyConstraints => $_getList(1);
+  $core.List<BreakRule_FrequencyConstraint> get frequencyConstraints =>
+      $_getList(1);
 }
 
 /// A visit performed during a route. This visit corresponds to a pickup or a
@@ -4213,40 +5076,59 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentRoute_Visit._() : super();
-  factory ShipmentRoute_Visit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentRoute_Visit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentRoute_Visit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentRoute_Visit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.Visit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'shipmentIndex', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentRoute.Visit',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'shipmentIndex', $pb.PbFieldType.O3)
     ..aOB(2, _omitFieldNames ? '' : 'isPickup')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'visitRequestIndex', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'detour', subBuilder: $264.Duration.create)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'visitRequestIndex', $pb.PbFieldType.O3)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'detour',
+        subBuilder: $264.Duration.create)
     ..aOS(7, _omitFieldNames ? '' : 'shipmentLabel')
     ..aOS(8, _omitFieldNames ? '' : 'visitLabel')
-    ..m<$core.String, Shipment_Load>(11, _omitFieldNames ? '' : 'loadDemands', entryClassName: 'ShipmentRoute.Visit.LoadDemandsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Shipment_Load.create, valueDefaultOrMaker: Shipment_Load.getDefault, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, Shipment_Load>(11, _omitFieldNames ? '' : 'loadDemands',
+        entryClassName: 'ShipmentRoute.Visit.LoadDemandsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: Shipment_Load.create,
+        valueDefaultOrMaker: Shipment_Load.getDefault,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ShipmentRoute_Visit clone() => ShipmentRoute_Visit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_Visit copyWith(void Function(ShipmentRoute_Visit) updates) => super.copyWith((message) => updates(message as ShipmentRoute_Visit)) as ShipmentRoute_Visit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_Visit copyWith(void Function(ShipmentRoute_Visit) updates) =>
+      super.copyWith((message) => updates(message as ShipmentRoute_Visit))
+          as ShipmentRoute_Visit;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShipmentRoute_Visit create() => ShipmentRoute_Visit._();
   ShipmentRoute_Visit createEmptyInstance() => create();
-  static $pb.PbList<ShipmentRoute_Visit> createRepeated() => $pb.PbList<ShipmentRoute_Visit>();
+  static $pb.PbList<ShipmentRoute_Visit> createRepeated() =>
+      $pb.PbList<ShipmentRoute_Visit>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentRoute_Visit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_Visit>(create);
+  static ShipmentRoute_Visit getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_Visit>(create);
   static ShipmentRoute_Visit? _defaultInstance;
 
   /// Index of the `shipments` field in the source
@@ -4254,7 +5136,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get shipmentIndex => $_getIZ(0);
   @$pb.TagNumber(1)
-  set shipmentIndex($core.int v) { $_setSignedInt32(0, v); }
+  set shipmentIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasShipmentIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -4265,7 +5150,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get isPickup => $_getBF(1);
   @$pb.TagNumber(2)
-  set isPickup($core.bool v) { $_setBool(1, v); }
+  set isPickup($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIsPickup() => $_has(1);
   @$pb.TagNumber(2)
@@ -4276,7 +5164,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get visitRequestIndex => $_getIZ(2);
   @$pb.TagNumber(3)
-  set visitRequestIndex($core.int v) { $_setSignedInt32(2, v); }
+  set visitRequestIndex($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVisitRequestIndex() => $_has(2);
   @$pb.TagNumber(3)
@@ -4288,7 +5179,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) { setField(4, v); }
+  set startTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -4314,7 +5208,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $264.Duration get detour => $_getN(4);
   @$pb.TagNumber(6)
-  set detour($264.Duration v) { setField(6, v); }
+  set detour($264.Duration v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDetour() => $_has(4);
   @$pb.TagNumber(6)
@@ -4327,7 +5224,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get shipmentLabel => $_getSZ(5);
   @$pb.TagNumber(7)
-  set shipmentLabel($core.String v) { $_setString(5, v); }
+  set shipmentLabel($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasShipmentLabel() => $_has(5);
   @$pb.TagNumber(7)
@@ -4339,7 +5239,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get visitLabel => $_getSZ(6);
   @$pb.TagNumber(8)
-  set visitLabel($core.String v) { $_setString(6, v); }
+  set visitLabel($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasVisitLabel() => $_has(6);
   @$pb.TagNumber(8)
@@ -4410,50 +5313,80 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentRoute_Transition._() : super();
-  factory ShipmentRoute_Transition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentRoute_Transition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentRoute_Transition.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentRoute_Transition.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.Transition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'travelDuration', subBuilder: $264.Duration.create)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'travelDistanceMeters', $pb.PbFieldType.OD)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentRoute.Transition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'travelDuration',
+        subBuilder: $264.Duration.create)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'travelDistanceMeters', $pb.PbFieldType.OD)
     ..aOB(3, _omitFieldNames ? '' : 'trafficInfoUnavailable')
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'delayDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'breakDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'waitDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'totalDuration', subBuilder: $264.Duration.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<ShipmentRoute_EncodedPolyline>(9, _omitFieldNames ? '' : 'routePolyline', subBuilder: ShipmentRoute_EncodedPolyline.create)
-    ..m<$core.String, ShipmentRoute_VehicleLoad>(11, _omitFieldNames ? '' : 'vehicleLoads', entryClassName: 'ShipmentRoute.Transition.VehicleLoadsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ShipmentRoute_VehicleLoad.create, valueDefaultOrMaker: ShipmentRoute_VehicleLoad.getDefault, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'delayDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'breakDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'waitDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'totalDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<ShipmentRoute_EncodedPolyline>(
+        9, _omitFieldNames ? '' : 'routePolyline',
+        subBuilder: ShipmentRoute_EncodedPolyline.create)
+    ..m<$core.String, ShipmentRoute_VehicleLoad>(
+        11, _omitFieldNames ? '' : 'vehicleLoads',
+        entryClassName: 'ShipmentRoute.Transition.VehicleLoadsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: ShipmentRoute_VehicleLoad.create,
+        valueDefaultOrMaker: ShipmentRoute_VehicleLoad.getDefault,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
     ..aOS(12, _omitFieldNames ? '' : 'routeToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_Transition clone() => ShipmentRoute_Transition()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_Transition copyWith(void Function(ShipmentRoute_Transition) updates) => super.copyWith((message) => updates(message as ShipmentRoute_Transition)) as ShipmentRoute_Transition;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_Transition clone() =>
+      ShipmentRoute_Transition()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_Transition copyWith(
+          void Function(ShipmentRoute_Transition) updates) =>
+      super.copyWith((message) => updates(message as ShipmentRoute_Transition))
+          as ShipmentRoute_Transition;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShipmentRoute_Transition create() => ShipmentRoute_Transition._();
   ShipmentRoute_Transition createEmptyInstance() => create();
-  static $pb.PbList<ShipmentRoute_Transition> createRepeated() => $pb.PbList<ShipmentRoute_Transition>();
+  static $pb.PbList<ShipmentRoute_Transition> createRepeated() =>
+      $pb.PbList<ShipmentRoute_Transition>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentRoute_Transition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_Transition>(create);
+  static ShipmentRoute_Transition getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_Transition>(create);
   static ShipmentRoute_Transition? _defaultInstance;
 
   /// Travel duration during this transition.
   @$pb.TagNumber(1)
   $264.Duration get travelDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set travelDuration($264.Duration v) { setField(1, v); }
+  set travelDuration($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTravelDuration() => $_has(0);
   @$pb.TagNumber(1)
@@ -4465,7 +5398,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get travelDistanceMeters => $_getN(1);
   @$pb.TagNumber(2)
-  set travelDistanceMeters($core.double v) { $_setDouble(1, v); }
+  set travelDistanceMeters($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTravelDistanceMeters() => $_has(1);
   @$pb.TagNumber(2)
@@ -4480,7 +5416,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get trafficInfoUnavailable => $_getBF(2);
   @$pb.TagNumber(3)
-  set trafficInfoUnavailable($core.bool v) { $_setBool(2, v); }
+  set trafficInfoUnavailable($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTrafficInfoUnavailable() => $_has(2);
   @$pb.TagNumber(3)
@@ -4493,7 +5432,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $264.Duration get delayDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set delayDuration($264.Duration v) { setField(4, v); }
+  set delayDuration($264.Duration v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDelayDuration() => $_has(3);
   @$pb.TagNumber(4)
@@ -4507,7 +5449,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $264.Duration get breakDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set breakDuration($264.Duration v) { setField(5, v); }
+  set breakDuration($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBreakDuration() => $_has(4);
   @$pb.TagNumber(5)
@@ -4521,7 +5466,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $264.Duration get waitDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set waitDuration($264.Duration v) { setField(6, v); }
+  set waitDuration($264.Duration v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasWaitDuration() => $_has(5);
   @$pb.TagNumber(6)
@@ -4540,7 +5488,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $264.Duration get totalDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set totalDuration($264.Duration v) { setField(7, v); }
+  set totalDuration($264.Duration v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTotalDuration() => $_has(6);
   @$pb.TagNumber(7)
@@ -4552,7 +5503,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get startTime => $_getN(7);
   @$pb.TagNumber(8)
-  set startTime($302.Timestamp v) { setField(8, v); }
+  set startTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(7);
   @$pb.TagNumber(8)
@@ -4568,7 +5522,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   ShipmentRoute_EncodedPolyline get routePolyline => $_getN(8);
   @$pb.TagNumber(9)
-  set routePolyline(ShipmentRoute_EncodedPolyline v) { setField(9, v); }
+  set routePolyline(ShipmentRoute_EncodedPolyline v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasRoutePolyline() => $_has(8);
   @$pb.TagNumber(9)
@@ -4588,7 +5545,8 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   ///  either added or subtracted to get the next transition's loads, depending
   ///  on whether the visit was a pickup or a delivery.
   @$pb.TagNumber(11)
-  $core.Map<$core.String, ShipmentRoute_VehicleLoad> get vehicleLoads => $_getMap(9);
+  $core.Map<$core.String, ShipmentRoute_VehicleLoad> get vehicleLoads =>
+      $_getMap(9);
 
   /// Output only. An opaque token that can be passed to [Navigation
   /// SDK](https://developers.google.com/maps/documentation/navigation) to
@@ -4602,7 +5560,10 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get routeToken => $_getSZ(10);
   @$pb.TagNumber(12)
-  set routeToken($core.String v) { $_setString(10, v); }
+  set routeToken($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasRouteToken() => $_has(10);
   @$pb.TagNumber(12)
@@ -4623,33 +5584,44 @@ class ShipmentRoute_VehicleLoad extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentRoute_VehicleLoad._() : super();
-  factory ShipmentRoute_VehicleLoad.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentRoute_VehicleLoad.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentRoute_VehicleLoad.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentRoute_VehicleLoad.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.VehicleLoad', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentRoute.VehicleLoad',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'amount')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_VehicleLoad clone() => ShipmentRoute_VehicleLoad()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_VehicleLoad copyWith(void Function(ShipmentRoute_VehicleLoad) updates) => super.copyWith((message) => updates(message as ShipmentRoute_VehicleLoad)) as ShipmentRoute_VehicleLoad;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_VehicleLoad clone() =>
+      ShipmentRoute_VehicleLoad()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_VehicleLoad copyWith(
+          void Function(ShipmentRoute_VehicleLoad) updates) =>
+      super.copyWith((message) => updates(message as ShipmentRoute_VehicleLoad))
+          as ShipmentRoute_VehicleLoad;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShipmentRoute_VehicleLoad create() => ShipmentRoute_VehicleLoad._();
   ShipmentRoute_VehicleLoad createEmptyInstance() => create();
-  static $pb.PbList<ShipmentRoute_VehicleLoad> createRepeated() => $pb.PbList<ShipmentRoute_VehicleLoad>();
+  static $pb.PbList<ShipmentRoute_VehicleLoad> createRepeated() =>
+      $pb.PbList<ShipmentRoute_VehicleLoad>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentRoute_VehicleLoad getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_VehicleLoad>(create);
+  static ShipmentRoute_VehicleLoad getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_VehicleLoad>(create);
   static ShipmentRoute_VehicleLoad? _defaultInstance;
 
   /// The amount of load on the vehicle, for the given type. The unit of load
@@ -4658,7 +5630,10 @@ class ShipmentRoute_VehicleLoad extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get amount => $_getI64(0);
   @$pb.TagNumber(1)
-  set amount($fixnum.Int64 v) { $_setInt64(0, v); }
+  set amount($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAmount() => $_has(0);
   @$pb.TagNumber(1)
@@ -4680,40 +5655,56 @@ class ShipmentRoute_EncodedPolyline extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentRoute_EncodedPolyline._() : super();
-  factory ShipmentRoute_EncodedPolyline.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentRoute_EncodedPolyline.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentRoute_EncodedPolyline.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentRoute_EncodedPolyline.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.EncodedPolyline', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentRoute.EncodedPolyline',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'points')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_EncodedPolyline clone() => ShipmentRoute_EncodedPolyline()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_EncodedPolyline copyWith(void Function(ShipmentRoute_EncodedPolyline) updates) => super.copyWith((message) => updates(message as ShipmentRoute_EncodedPolyline)) as ShipmentRoute_EncodedPolyline;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_EncodedPolyline clone() =>
+      ShipmentRoute_EncodedPolyline()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_EncodedPolyline copyWith(
+          void Function(ShipmentRoute_EncodedPolyline) updates) =>
+      super.copyWith(
+              (message) => updates(message as ShipmentRoute_EncodedPolyline))
+          as ShipmentRoute_EncodedPolyline;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ShipmentRoute_EncodedPolyline create() => ShipmentRoute_EncodedPolyline._();
+  static ShipmentRoute_EncodedPolyline create() =>
+      ShipmentRoute_EncodedPolyline._();
   ShipmentRoute_EncodedPolyline createEmptyInstance() => create();
-  static $pb.PbList<ShipmentRoute_EncodedPolyline> createRepeated() => $pb.PbList<ShipmentRoute_EncodedPolyline>();
+  static $pb.PbList<ShipmentRoute_EncodedPolyline> createRepeated() =>
+      $pb.PbList<ShipmentRoute_EncodedPolyline>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentRoute_EncodedPolyline getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_EncodedPolyline>(create);
+  static ShipmentRoute_EncodedPolyline getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_EncodedPolyline>(create);
   static ShipmentRoute_EncodedPolyline? _defaultInstance;
 
   /// String representing encoded points of the polyline.
   @$pb.TagNumber(1)
   $core.String get points => $_getSZ(0);
   @$pb.TagNumber(1)
-  set points($core.String v) { $_setString(0, v); }
+  set points($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPoints() => $_has(0);
   @$pb.TagNumber(1)
@@ -4736,41 +5727,55 @@ class ShipmentRoute_Break extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentRoute_Break._() : super();
-  factory ShipmentRoute_Break.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentRoute_Break.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentRoute_Break.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentRoute_Break.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.Break', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentRoute.Break',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ShipmentRoute_Break clone() => ShipmentRoute_Break()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute_Break copyWith(void Function(ShipmentRoute_Break) updates) => super.copyWith((message) => updates(message as ShipmentRoute_Break)) as ShipmentRoute_Break;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute_Break copyWith(void Function(ShipmentRoute_Break) updates) =>
+      super.copyWith((message) => updates(message as ShipmentRoute_Break))
+          as ShipmentRoute_Break;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShipmentRoute_Break create() => ShipmentRoute_Break._();
   ShipmentRoute_Break createEmptyInstance() => create();
-  static $pb.PbList<ShipmentRoute_Break> createRepeated() => $pb.PbList<ShipmentRoute_Break>();
+  static $pb.PbList<ShipmentRoute_Break> createRepeated() =>
+      $pb.PbList<ShipmentRoute_Break>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentRoute_Break getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_Break>(create);
+  static ShipmentRoute_Break getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentRoute_Break>(create);
   static ShipmentRoute_Break? _defaultInstance;
 
   /// Start time of a break.
   @$pb.TagNumber(1)
   $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -4782,7 +5787,10 @@ class ShipmentRoute_Break extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) { setField(2, v); }
+  set duration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -4930,44 +5938,69 @@ class ShipmentRoute extends $pb.GeneratedMessage {
     return $result;
   }
   ShipmentRoute._() : super();
-  factory ShipmentRoute.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ShipmentRoute.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ShipmentRoute.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ShipmentRoute.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ShipmentRoute',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'vehicleIndex', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'vehicleLabel')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'vehicleStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'vehicleEndTime', subBuilder: $302.Timestamp.create)
-    ..pc<ShipmentRoute_Visit>(7, _omitFieldNames ? '' : 'visits', $pb.PbFieldType.PM, subBuilder: ShipmentRoute_Visit.create)
-    ..pc<ShipmentRoute_Transition>(8, _omitFieldNames ? '' : 'transitions', $pb.PbFieldType.PM, subBuilder: ShipmentRoute_Transition.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'vehicleStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'vehicleEndTime',
+        subBuilder: $302.Timestamp.create)
+    ..pc<ShipmentRoute_Visit>(
+        7, _omitFieldNames ? '' : 'visits', $pb.PbFieldType.PM,
+        subBuilder: ShipmentRoute_Visit.create)
+    ..pc<ShipmentRoute_Transition>(
+        8, _omitFieldNames ? '' : 'transitions', $pb.PbFieldType.PM,
+        subBuilder: ShipmentRoute_Transition.create)
     ..aOB(9, _omitFieldNames ? '' : 'hasTrafficInfeasibilities')
-    ..aOM<ShipmentRoute_EncodedPolyline>(10, _omitFieldNames ? '' : 'routePolyline', subBuilder: ShipmentRoute_EncodedPolyline.create)
-    ..pc<ShipmentRoute_Break>(11, _omitFieldNames ? '' : 'breaks', $pb.PbFieldType.PM, subBuilder: ShipmentRoute_Break.create)
-    ..aOM<AggregatedMetrics>(12, _omitFieldNames ? '' : 'metrics', subBuilder: AggregatedMetrics.create)
-    ..m<$core.String, $core.double>(17, _omitFieldNames ? '' : 'routeCosts', entryClassName: 'ShipmentRoute.RouteCostsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
-    ..a<$core.double>(18, _omitFieldNames ? '' : 'routeTotalCost', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ShipmentRoute_EncodedPolyline>(
+        10, _omitFieldNames ? '' : 'routePolyline',
+        subBuilder: ShipmentRoute_EncodedPolyline.create)
+    ..pc<ShipmentRoute_Break>(
+        11, _omitFieldNames ? '' : 'breaks', $pb.PbFieldType.PM,
+        subBuilder: ShipmentRoute_Break.create)
+    ..aOM<AggregatedMetrics>(12, _omitFieldNames ? '' : 'metrics',
+        subBuilder: AggregatedMetrics.create)
+    ..m<$core.String, $core.double>(17, _omitFieldNames ? '' : 'routeCosts',
+        entryClassName: 'ShipmentRoute.RouteCostsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OD,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..a<$core.double>(
+        18, _omitFieldNames ? '' : 'routeTotalCost', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ShipmentRoute clone() => ShipmentRoute()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ShipmentRoute copyWith(void Function(ShipmentRoute) updates) => super.copyWith((message) => updates(message as ShipmentRoute)) as ShipmentRoute;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ShipmentRoute copyWith(void Function(ShipmentRoute) updates) =>
+      super.copyWith((message) => updates(message as ShipmentRoute))
+          as ShipmentRoute;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShipmentRoute create() => ShipmentRoute._();
   ShipmentRoute createEmptyInstance() => create();
-  static $pb.PbList<ShipmentRoute> createRepeated() => $pb.PbList<ShipmentRoute>();
+  static $pb.PbList<ShipmentRoute> createRepeated() =>
+      $pb.PbList<ShipmentRoute>();
   @$core.pragma('dart2js:noInline')
-  static ShipmentRoute getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShipmentRoute>(create);
+  static ShipmentRoute getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ShipmentRoute>(create);
   static ShipmentRoute? _defaultInstance;
 
   /// Vehicle performing the route, identified by its index in the source
@@ -4975,7 +6008,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get vehicleIndex => $_getIZ(0);
   @$pb.TagNumber(1)
-  set vehicleIndex($core.int v) { $_setSignedInt32(0, v); }
+  set vehicleIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVehicleIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -4986,7 +6022,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get vehicleLabel => $_getSZ(1);
   @$pb.TagNumber(2)
-  set vehicleLabel($core.String v) { $_setString(1, v); }
+  set vehicleLabel($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVehicleLabel() => $_has(1);
   @$pb.TagNumber(2)
@@ -4996,7 +6035,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get vehicleStartTime => $_getN(2);
   @$pb.TagNumber(5)
-  set vehicleStartTime($302.Timestamp v) { setField(5, v); }
+  set vehicleStartTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasVehicleStartTime() => $_has(2);
   @$pb.TagNumber(5)
@@ -5008,7 +6050,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get vehicleEndTime => $_getN(3);
   @$pb.TagNumber(6)
-  set vehicleEndTime($302.Timestamp v) { setField(6, v); }
+  set vehicleEndTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasVehicleEndTime() => $_has(3);
   @$pb.TagNumber(6)
@@ -5047,7 +6092,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool get hasTrafficInfeasibilities => $_getBF(6);
   @$pb.TagNumber(9)
-  set hasTrafficInfeasibilities($core.bool v) { $_setBool(6, v); }
+  set hasTrafficInfeasibilities($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasHasTrafficInfeasibilities() => $_has(6);
   @$pb.TagNumber(9)
@@ -5060,7 +6108,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   ShipmentRoute_EncodedPolyline get routePolyline => $_getN(7);
   @$pb.TagNumber(10)
-  set routePolyline(ShipmentRoute_EncodedPolyline v) { setField(10, v); }
+  set routePolyline(ShipmentRoute_EncodedPolyline v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasRoutePolyline() => $_has(7);
   @$pb.TagNumber(10)
@@ -5084,7 +6135,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   AggregatedMetrics get metrics => $_getN(9);
   @$pb.TagNumber(12)
-  set metrics(AggregatedMetrics v) { setField(12, v); }
+  set metrics(AggregatedMetrics v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasMetrics() => $_has(9);
   @$pb.TagNumber(12)
@@ -5107,7 +6161,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.double get routeTotalCost => $_getN(11);
   @$pb.TagNumber(18)
-  set routeTotalCost($core.double v) { $_setDouble(11, v); }
+  set routeTotalCost($core.double v) {
+    $_setDouble(11, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasRouteTotalCost() => $_has(11);
   @$pb.TagNumber(18)
@@ -5159,42 +6216,61 @@ class SkippedShipment_Reason extends $pb.GeneratedMessage {
     return $result;
   }
   SkippedShipment_Reason._() : super();
-  factory SkippedShipment_Reason.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SkippedShipment_Reason.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SkippedShipment_Reason.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SkippedShipment_Reason.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SkippedShipment.Reason', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..e<SkippedShipment_Reason_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: SkippedShipment_Reason_Code.CODE_UNSPECIFIED, valueOf: SkippedShipment_Reason_Code.valueOf, enumValues: SkippedShipment_Reason_Code.values)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'exampleVehicleIndex', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SkippedShipment.Reason',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..e<SkippedShipment_Reason_Code>(
+        1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
+        defaultOrMaker: SkippedShipment_Reason_Code.CODE_UNSPECIFIED,
+        valueOf: SkippedShipment_Reason_Code.valueOf,
+        enumValues: SkippedShipment_Reason_Code.values)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'exampleVehicleIndex', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'exampleExceededCapacityType')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SkippedShipment_Reason clone() => SkippedShipment_Reason()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SkippedShipment_Reason copyWith(void Function(SkippedShipment_Reason) updates) => super.copyWith((message) => updates(message as SkippedShipment_Reason)) as SkippedShipment_Reason;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SkippedShipment_Reason clone() =>
+      SkippedShipment_Reason()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SkippedShipment_Reason copyWith(
+          void Function(SkippedShipment_Reason) updates) =>
+      super.copyWith((message) => updates(message as SkippedShipment_Reason))
+          as SkippedShipment_Reason;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SkippedShipment_Reason create() => SkippedShipment_Reason._();
   SkippedShipment_Reason createEmptyInstance() => create();
-  static $pb.PbList<SkippedShipment_Reason> createRepeated() => $pb.PbList<SkippedShipment_Reason>();
+  static $pb.PbList<SkippedShipment_Reason> createRepeated() =>
+      $pb.PbList<SkippedShipment_Reason>();
   @$core.pragma('dart2js:noInline')
-  static SkippedShipment_Reason getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SkippedShipment_Reason>(create);
+  static SkippedShipment_Reason getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SkippedShipment_Reason>(create);
   static SkippedShipment_Reason? _defaultInstance;
 
   /// Refer to the comments of Code.
   @$pb.TagNumber(1)
   SkippedShipment_Reason_Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(SkippedShipment_Reason_Code v) { setField(1, v); }
+  set code(SkippedShipment_Reason_Code v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -5205,7 +6281,10 @@ class SkippedShipment_Reason extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get exampleVehicleIndex => $_getIZ(1);
   @$pb.TagNumber(2)
-  set exampleVehicleIndex($core.int v) { $_setSignedInt32(1, v); }
+  set exampleVehicleIndex($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExampleVehicleIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -5216,7 +6295,10 @@ class SkippedShipment_Reason extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get exampleExceededCapacityType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set exampleExceededCapacityType($core.String v) { $_setString(2, v); }
+  set exampleExceededCapacityType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasExampleExceededCapacityType() => $_has(2);
   @$pb.TagNumber(3)
@@ -5245,35 +6327,46 @@ class SkippedShipment extends $pb.GeneratedMessage {
     return $result;
   }
   SkippedShipment._() : super();
-  factory SkippedShipment.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SkippedShipment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SkippedShipment.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SkippedShipment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SkippedShipment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SkippedShipment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'label')
-    ..pc<SkippedShipment_Reason>(3, _omitFieldNames ? '' : 'reasons', $pb.PbFieldType.PM, subBuilder: SkippedShipment_Reason.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<SkippedShipment_Reason>(
+        3, _omitFieldNames ? '' : 'reasons', $pb.PbFieldType.PM,
+        subBuilder: SkippedShipment_Reason.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SkippedShipment clone() => SkippedShipment()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SkippedShipment copyWith(void Function(SkippedShipment) updates) => super.copyWith((message) => updates(message as SkippedShipment)) as SkippedShipment;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SkippedShipment copyWith(void Function(SkippedShipment) updates) =>
+      super.copyWith((message) => updates(message as SkippedShipment))
+          as SkippedShipment;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SkippedShipment create() => SkippedShipment._();
   SkippedShipment createEmptyInstance() => create();
-  static $pb.PbList<SkippedShipment> createRepeated() => $pb.PbList<SkippedShipment>();
+  static $pb.PbList<SkippedShipment> createRepeated() =>
+      $pb.PbList<SkippedShipment>();
   @$core.pragma('dart2js:noInline')
-  static SkippedShipment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SkippedShipment>(create);
+  static SkippedShipment getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SkippedShipment>(create);
   static SkippedShipment? _defaultInstance;
 
   /// The index corresponds to the index of the shipment in the source
@@ -5281,7 +6374,10 @@ class SkippedShipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get index => $_getIZ(0);
   @$pb.TagNumber(1)
-  set index($core.int v) { $_setSignedInt32(0, v); }
+  set index($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -5293,7 +6389,10 @@ class SkippedShipment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get label => $_getSZ(1);
   @$pb.TagNumber(2)
-  set label($core.String v) { $_setString(1, v); }
+  set label($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLabel() => $_has(1);
   @$pb.TagNumber(2)
@@ -5357,41 +6456,65 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
     return $result;
   }
   AggregatedMetrics._() : super();
-  factory AggregatedMetrics.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AggregatedMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AggregatedMetrics.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AggregatedMetrics.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregatedMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'performedShipmentCount', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'travelDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'waitDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'delayDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'breakDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'visitDuration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'totalDuration', subBuilder: $264.Duration.create)
-    ..a<$core.double>(8, _omitFieldNames ? '' : 'travelDistanceMeters', $pb.PbFieldType.OD)
-    ..m<$core.String, ShipmentRoute_VehicleLoad>(9, _omitFieldNames ? '' : 'maxLoads', entryClassName: 'AggregatedMetrics.MaxLoadsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ShipmentRoute_VehicleLoad.create, valueDefaultOrMaker: ShipmentRoute_VehicleLoad.getDefault, packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AggregatedMetrics',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'performedShipmentCount', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'travelDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'waitDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'delayDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'breakDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'visitDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'totalDuration',
+        subBuilder: $264.Duration.create)
+    ..a<$core.double>(
+        8, _omitFieldNames ? '' : 'travelDistanceMeters', $pb.PbFieldType.OD)
+    ..m<$core.String, ShipmentRoute_VehicleLoad>(
+        9, _omitFieldNames ? '' : 'maxLoads',
+        entryClassName: 'AggregatedMetrics.MaxLoadsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: ShipmentRoute_VehicleLoad.create,
+        valueDefaultOrMaker: ShipmentRoute_VehicleLoad.getDefault,
+        packageName: const $pb.PackageName('google.maps.routeoptimization.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AggregatedMetrics clone() => AggregatedMetrics()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AggregatedMetrics copyWith(void Function(AggregatedMetrics) updates) => super.copyWith((message) => updates(message as AggregatedMetrics)) as AggregatedMetrics;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AggregatedMetrics copyWith(void Function(AggregatedMetrics) updates) =>
+      super.copyWith((message) => updates(message as AggregatedMetrics))
+          as AggregatedMetrics;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AggregatedMetrics create() => AggregatedMetrics._();
   AggregatedMetrics createEmptyInstance() => create();
-  static $pb.PbList<AggregatedMetrics> createRepeated() => $pb.PbList<AggregatedMetrics>();
+  static $pb.PbList<AggregatedMetrics> createRepeated() =>
+      $pb.PbList<AggregatedMetrics>();
   @$core.pragma('dart2js:noInline')
-  static AggregatedMetrics getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AggregatedMetrics>(create);
+  static AggregatedMetrics getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AggregatedMetrics>(create);
   static AggregatedMetrics? _defaultInstance;
 
   /// Number of shipments performed. Note that a pickup and delivery pair only
@@ -5399,7 +6522,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get performedShipmentCount => $_getIZ(0);
   @$pb.TagNumber(1)
-  set performedShipmentCount($core.int v) { $_setSignedInt32(0, v); }
+  set performedShipmentCount($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPerformedShipmentCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -5409,7 +6535,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get travelDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set travelDuration($264.Duration v) { setField(2, v); }
+  set travelDuration($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTravelDuration() => $_has(1);
   @$pb.TagNumber(2)
@@ -5421,7 +6550,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get waitDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set waitDuration($264.Duration v) { setField(3, v); }
+  set waitDuration($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWaitDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -5433,7 +6565,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $264.Duration get delayDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set delayDuration($264.Duration v) { setField(4, v); }
+  set delayDuration($264.Duration v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDelayDuration() => $_has(3);
   @$pb.TagNumber(4)
@@ -5445,7 +6580,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $264.Duration get breakDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set breakDuration($264.Duration v) { setField(5, v); }
+  set breakDuration($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBreakDuration() => $_has(4);
   @$pb.TagNumber(5)
@@ -5457,7 +6595,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $264.Duration get visitDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set visitDuration($264.Duration v) { setField(6, v); }
+  set visitDuration($264.Duration v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasVisitDuration() => $_has(5);
   @$pb.TagNumber(6)
@@ -5475,7 +6616,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $264.Duration get totalDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set totalDuration($264.Duration v) { setField(7, v); }
+  set totalDuration($264.Duration v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTotalDuration() => $_has(6);
   @$pb.TagNumber(7)
@@ -5487,7 +6631,10 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.double get travelDistanceMeters => $_getN(7);
   @$pb.TagNumber(8)
-  set travelDistanceMeters($core.double v) { $_setDouble(7, v); }
+  set travelDistanceMeters($core.double v) {
+    $_setDouble(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasTravelDistanceMeters() => $_has(7);
   @$pb.TagNumber(8)
@@ -5500,7 +6647,8 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   /// (resp.
   /// [ShipmentRoute.metrics.max_loads][google.maps.routeoptimization.v1.AggregatedMetrics.max_loads].
   @$pb.TagNumber(9)
-  $core.Map<$core.String, ShipmentRoute_VehicleLoad> get maxLoads => $_getMap(8);
+  $core.Map<$core.String, ShipmentRoute_VehicleLoad> get maxLoads =>
+      $_getMap(8);
 }
 
 ///  If `relaxations` is empty, the start time and sequence of all visits
@@ -5538,7 +6686,8 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
 ///  and no visits may be inserted into these sequences. Also, if a
 ///  vehicle start or end does not satisfy the conditions of any
 ///  relaxation the time is fixed, unless the vehicle is empty.
-class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.GeneratedMessage {
+class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation
+    extends $pb.GeneratedMessage {
   factory InjectedSolutionConstraint_ConstraintRelaxation_Relaxation({
     InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level? level,
     $302.Timestamp? thresholdTime,
@@ -5557,44 +6706,85 @@ class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.Gen
     return $result;
   }
   InjectedSolutionConstraint_ConstraintRelaxation_Relaxation._() : super();
-  factory InjectedSolutionConstraint_ConstraintRelaxation_Relaxation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InjectedSolutionConstraint_ConstraintRelaxation_Relaxation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InjectedSolutionConstraint_ConstraintRelaxation_Relaxation.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InjectedSolutionConstraint_ConstraintRelaxation_Relaxation.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InjectedSolutionConstraint.ConstraintRelaxation.Relaxation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..e<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level>(1, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level.LEVEL_UNSPECIFIED, valueOf: InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level.valueOf, enumValues: InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level.values)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'thresholdTime', subBuilder: $302.Timestamp.create)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'thresholdVisitCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'InjectedSolutionConstraint.ConstraintRelaxation.Relaxation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..e<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level>(
+        1, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level
+                .LEVEL_UNSPECIFIED,
+        valueOf:
+            InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level
+                .valueOf,
+        enumValues:
+            InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level
+                .values)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'thresholdTime',
+        subBuilder: $302.Timestamp.create)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'thresholdVisitCount', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation clone() => InjectedSolutionConstraint_ConstraintRelaxation_Relaxation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation copyWith(void Function(InjectedSolutionConstraint_ConstraintRelaxation_Relaxation) updates) => super.copyWith((message) => updates(message as InjectedSolutionConstraint_ConstraintRelaxation_Relaxation)) as InjectedSolutionConstraint_ConstraintRelaxation_Relaxation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation clone() =>
+      InjectedSolutionConstraint_ConstraintRelaxation_Relaxation()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation copyWith(
+          void Function(
+                  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as InjectedSolutionConstraint_ConstraintRelaxation_Relaxation))
+          as InjectedSolutionConstraint_ConstraintRelaxation_Relaxation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static InjectedSolutionConstraint_ConstraintRelaxation_Relaxation create() => InjectedSolutionConstraint_ConstraintRelaxation_Relaxation._();
-  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation createEmptyInstance() => create();
-  static $pb.PbList<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation> createRepeated() => $pb.PbList<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>();
+  static InjectedSolutionConstraint_ConstraintRelaxation_Relaxation create() =>
+      InjectedSolutionConstraint_ConstraintRelaxation_Relaxation._();
+  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation
+      createEmptyInstance() => create();
+  static $pb.PbList<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>
+      createRepeated() => $pb.PbList<
+          InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>();
   @$core.pragma('dart2js:noInline')
-  static InjectedSolutionConstraint_ConstraintRelaxation_Relaxation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>(create);
-  static InjectedSolutionConstraint_ConstraintRelaxation_Relaxation? _defaultInstance;
+  static InjectedSolutionConstraint_ConstraintRelaxation_Relaxation
+      getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>(create);
+  static InjectedSolutionConstraint_ConstraintRelaxation_Relaxation?
+      _defaultInstance;
 
   /// The constraint relaxation level that applies when the conditions
   /// at or after `threshold_time` AND at least `threshold_visit_count` are
   /// satisfied.
   @$pb.TagNumber(1)
-  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level get level => $_getN(0);
+  InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level get level =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set level(InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level v) { setField(1, v); }
+  set level(
+      InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLevel() => $_has(0);
   @$pb.TagNumber(1)
@@ -5604,7 +6794,10 @@ class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.Gen
   @$pb.TagNumber(2)
   $302.Timestamp get thresholdTime => $_getN(1);
   @$pb.TagNumber(2)
-  set thresholdTime($302.Timestamp v) { setField(2, v); }
+  set thresholdTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasThresholdTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -5622,7 +6815,10 @@ class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.Gen
   @$pb.TagNumber(3)
   $core.int get thresholdVisitCount => $_getIZ(2);
   @$pb.TagNumber(3)
-  set thresholdVisitCount($core.int v) { $_setSignedInt32(2, v); }
+  set thresholdVisitCount($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasThresholdVisitCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -5633,9 +6829,11 @@ class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.Gen
 /// visits will be relaxed and to which level. Shipments listed in
 /// the `skipped_shipment` field are constrained to be skipped; i.e., they
 /// cannot be performed.
-class InjectedSolutionConstraint_ConstraintRelaxation extends $pb.GeneratedMessage {
+class InjectedSolutionConstraint_ConstraintRelaxation
+    extends $pb.GeneratedMessage {
   factory InjectedSolutionConstraint_ConstraintRelaxation({
-    $core.Iterable<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>? relaxations,
+    $core.Iterable<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>?
+        relaxations,
     $core.Iterable<$core.int>? vehicleIndices,
   }) {
     final $result = create();
@@ -5648,40 +6846,66 @@ class InjectedSolutionConstraint_ConstraintRelaxation extends $pb.GeneratedMessa
     return $result;
   }
   InjectedSolutionConstraint_ConstraintRelaxation._() : super();
-  factory InjectedSolutionConstraint_ConstraintRelaxation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InjectedSolutionConstraint_ConstraintRelaxation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InjectedSolutionConstraint_ConstraintRelaxation.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InjectedSolutionConstraint_ConstraintRelaxation.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InjectedSolutionConstraint.ConstraintRelaxation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>(1, _omitFieldNames ? '' : 'relaxations', $pb.PbFieldType.PM, subBuilder: InjectedSolutionConstraint_ConstraintRelaxation_Relaxation.create)
-    ..p<$core.int>(2, _omitFieldNames ? '' : 'vehicleIndices', $pb.PbFieldType.K3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'InjectedSolutionConstraint.ConstraintRelaxation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>(
+        1, _omitFieldNames ? '' : 'relaxations', $pb.PbFieldType.PM,
+        subBuilder:
+            InjectedSolutionConstraint_ConstraintRelaxation_Relaxation.create)
+    ..p<$core.int>(
+        2, _omitFieldNames ? '' : 'vehicleIndices', $pb.PbFieldType.K3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InjectedSolutionConstraint_ConstraintRelaxation clone() => InjectedSolutionConstraint_ConstraintRelaxation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InjectedSolutionConstraint_ConstraintRelaxation copyWith(void Function(InjectedSolutionConstraint_ConstraintRelaxation) updates) => super.copyWith((message) => updates(message as InjectedSolutionConstraint_ConstraintRelaxation)) as InjectedSolutionConstraint_ConstraintRelaxation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InjectedSolutionConstraint_ConstraintRelaxation clone() =>
+      InjectedSolutionConstraint_ConstraintRelaxation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InjectedSolutionConstraint_ConstraintRelaxation copyWith(
+          void Function(InjectedSolutionConstraint_ConstraintRelaxation)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as InjectedSolutionConstraint_ConstraintRelaxation))
+          as InjectedSolutionConstraint_ConstraintRelaxation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static InjectedSolutionConstraint_ConstraintRelaxation create() => InjectedSolutionConstraint_ConstraintRelaxation._();
-  InjectedSolutionConstraint_ConstraintRelaxation createEmptyInstance() => create();
-  static $pb.PbList<InjectedSolutionConstraint_ConstraintRelaxation> createRepeated() => $pb.PbList<InjectedSolutionConstraint_ConstraintRelaxation>();
+  static InjectedSolutionConstraint_ConstraintRelaxation create() =>
+      InjectedSolutionConstraint_ConstraintRelaxation._();
+  InjectedSolutionConstraint_ConstraintRelaxation createEmptyInstance() =>
+      create();
+  static $pb.PbList<InjectedSolutionConstraint_ConstraintRelaxation>
+      createRepeated() =>
+          $pb.PbList<InjectedSolutionConstraint_ConstraintRelaxation>();
   @$core.pragma('dart2js:noInline')
-  static InjectedSolutionConstraint_ConstraintRelaxation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InjectedSolutionConstraint_ConstraintRelaxation>(create);
+  static InjectedSolutionConstraint_ConstraintRelaxation getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          InjectedSolutionConstraint_ConstraintRelaxation>(create);
   static InjectedSolutionConstraint_ConstraintRelaxation? _defaultInstance;
 
   /// All the visit constraint relaxations that will apply to visits on
   /// routes with vehicles in `vehicle_indices`.
   @$pb.TagNumber(1)
-  $core.List<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation> get relaxations => $_getList(0);
+  $core.List<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation>
+      get relaxations => $_getList(0);
 
   ///  Specifies the vehicle indices to which the visit constraint
   ///  `relaxations` apply. If empty, this is considered the default and the
@@ -5705,7 +6929,8 @@ class InjectedSolutionConstraint extends $pb.GeneratedMessage {
   factory InjectedSolutionConstraint({
     $core.Iterable<ShipmentRoute>? routes,
     $core.Iterable<SkippedShipment>? skippedShipments,
-    $core.Iterable<InjectedSolutionConstraint_ConstraintRelaxation>? constraintRelaxations,
+    $core.Iterable<InjectedSolutionConstraint_ConstraintRelaxation>?
+        constraintRelaxations,
   }) {
     final $result = create();
     if (routes != null) {
@@ -5720,35 +6945,52 @@ class InjectedSolutionConstraint extends $pb.GeneratedMessage {
     return $result;
   }
   InjectedSolutionConstraint._() : super();
-  factory InjectedSolutionConstraint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InjectedSolutionConstraint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InjectedSolutionConstraint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InjectedSolutionConstraint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InjectedSolutionConstraint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
-    ..pc<ShipmentRoute>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM, subBuilder: ShipmentRoute.create)
-    ..pc<SkippedShipment>(2, _omitFieldNames ? '' : 'skippedShipments', $pb.PbFieldType.PM, subBuilder: SkippedShipment.create)
-    ..pc<InjectedSolutionConstraint_ConstraintRelaxation>(3, _omitFieldNames ? '' : 'constraintRelaxations', $pb.PbFieldType.PM, subBuilder: InjectedSolutionConstraint_ConstraintRelaxation.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InjectedSolutionConstraint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
+    ..pc<ShipmentRoute>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM,
+        subBuilder: ShipmentRoute.create)
+    ..pc<SkippedShipment>(
+        2, _omitFieldNames ? '' : 'skippedShipments', $pb.PbFieldType.PM,
+        subBuilder: SkippedShipment.create)
+    ..pc<InjectedSolutionConstraint_ConstraintRelaxation>(
+        3, _omitFieldNames ? '' : 'constraintRelaxations', $pb.PbFieldType.PM,
+        subBuilder: InjectedSolutionConstraint_ConstraintRelaxation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InjectedSolutionConstraint clone() => InjectedSolutionConstraint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InjectedSolutionConstraint copyWith(void Function(InjectedSolutionConstraint) updates) => super.copyWith((message) => updates(message as InjectedSolutionConstraint)) as InjectedSolutionConstraint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InjectedSolutionConstraint clone() =>
+      InjectedSolutionConstraint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InjectedSolutionConstraint copyWith(
+          void Function(InjectedSolutionConstraint) updates) =>
+      super.copyWith(
+              (message) => updates(message as InjectedSolutionConstraint))
+          as InjectedSolutionConstraint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InjectedSolutionConstraint create() => InjectedSolutionConstraint._();
   InjectedSolutionConstraint createEmptyInstance() => create();
-  static $pb.PbList<InjectedSolutionConstraint> createRepeated() => $pb.PbList<InjectedSolutionConstraint>();
+  static $pb.PbList<InjectedSolutionConstraint> createRepeated() =>
+      $pb.PbList<InjectedSolutionConstraint>();
   @$core.pragma('dart2js:noInline')
-  static InjectedSolutionConstraint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InjectedSolutionConstraint>(create);
+  static InjectedSolutionConstraint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InjectedSolutionConstraint>(create);
   static InjectedSolutionConstraint? _defaultInstance;
 
   /// Routes of the solution to inject. Some routes may be omitted from the
@@ -5766,12 +7008,13 @@ class InjectedSolutionConstraint extends $pb.GeneratedMessage {
   /// constraints. If this field is empty, all non-empty vehicle routes are
   /// fully constrained.
   @$pb.TagNumber(3)
-  $core.List<InjectedSolutionConstraint_ConstraintRelaxation> get constraintRelaxations => $_getList(2);
+  $core.List<InjectedSolutionConstraint_ConstraintRelaxation>
+      get constraintRelaxations => $_getList(2);
 }
 
 enum OptimizeToursValidationError_FieldReference_IndexOrKey {
-  index_, 
-  key, 
+  index_,
+  key,
   notSet
 }
 
@@ -5807,52 +7050,77 @@ class OptimizeToursValidationError_FieldReference extends $pb.GeneratedMessage {
     return $result;
   }
   OptimizeToursValidationError_FieldReference._() : super();
-  factory OptimizeToursValidationError_FieldReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OptimizeToursValidationError_FieldReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OptimizeToursValidationError_FieldReference.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OptimizeToursValidationError_FieldReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, OptimizeToursValidationError_FieldReference_IndexOrKey> _OptimizeToursValidationError_FieldReference_IndexOrKeyByTag = {
-    2 : OptimizeToursValidationError_FieldReference_IndexOrKey.index_,
-    4 : OptimizeToursValidationError_FieldReference_IndexOrKey.key,
-    0 : OptimizeToursValidationError_FieldReference_IndexOrKey.notSet
+  static const $core
+      .Map<$core.int, OptimizeToursValidationError_FieldReference_IndexOrKey>
+      _OptimizeToursValidationError_FieldReference_IndexOrKeyByTag = {
+    2: OptimizeToursValidationError_FieldReference_IndexOrKey.index_,
+    4: OptimizeToursValidationError_FieldReference_IndexOrKey.key,
+    0: OptimizeToursValidationError_FieldReference_IndexOrKey.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeToursValidationError.FieldReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OptimizeToursValidationError.FieldReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2, 4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
-    ..aOM<OptimizeToursValidationError_FieldReference>(3, _omitFieldNames ? '' : 'subField', subBuilder: OptimizeToursValidationError_FieldReference.create)
+    ..aOM<OptimizeToursValidationError_FieldReference>(
+        3, _omitFieldNames ? '' : 'subField',
+        subBuilder: OptimizeToursValidationError_FieldReference.create)
     ..aOS(4, _omitFieldNames ? '' : 'key')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OptimizeToursValidationError_FieldReference clone() => OptimizeToursValidationError_FieldReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OptimizeToursValidationError_FieldReference copyWith(void Function(OptimizeToursValidationError_FieldReference) updates) => super.copyWith((message) => updates(message as OptimizeToursValidationError_FieldReference)) as OptimizeToursValidationError_FieldReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OptimizeToursValidationError_FieldReference clone() =>
+      OptimizeToursValidationError_FieldReference()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OptimizeToursValidationError_FieldReference copyWith(
+          void Function(OptimizeToursValidationError_FieldReference) updates) =>
+      super.copyWith((message) =>
+              updates(message as OptimizeToursValidationError_FieldReference))
+          as OptimizeToursValidationError_FieldReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursValidationError_FieldReference create() => OptimizeToursValidationError_FieldReference._();
+  static OptimizeToursValidationError_FieldReference create() =>
+      OptimizeToursValidationError_FieldReference._();
   OptimizeToursValidationError_FieldReference createEmptyInstance() => create();
-  static $pb.PbList<OptimizeToursValidationError_FieldReference> createRepeated() => $pb.PbList<OptimizeToursValidationError_FieldReference>();
+  static $pb.PbList<OptimizeToursValidationError_FieldReference>
+      createRepeated() =>
+          $pb.PbList<OptimizeToursValidationError_FieldReference>();
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursValidationError_FieldReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OptimizeToursValidationError_FieldReference>(create);
+  static OptimizeToursValidationError_FieldReference getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          OptimizeToursValidationError_FieldReference>(create);
   static OptimizeToursValidationError_FieldReference? _defaultInstance;
 
-  OptimizeToursValidationError_FieldReference_IndexOrKey whichIndexOrKey() => _OptimizeToursValidationError_FieldReference_IndexOrKeyByTag[$_whichOneof(0)]!;
+  OptimizeToursValidationError_FieldReference_IndexOrKey whichIndexOrKey() =>
+      _OptimizeToursValidationError_FieldReference_IndexOrKeyByTag[
+          $_whichOneof(0)]!;
   void clearIndexOrKey() => clearField($_whichOneof(0));
 
   /// Name of the field, e.g., "vehicles".
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5862,7 +7130,10 @@ class OptimizeToursValidationError_FieldReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get index => $_getIZ(1);
   @$pb.TagNumber(2)
-  set index($core.int v) { $_setSignedInt32(1, v); }
+  set index($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -5872,7 +7143,10 @@ class OptimizeToursValidationError_FieldReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   OptimizeToursValidationError_FieldReference get subField => $_getN(2);
   @$pb.TagNumber(3)
-  set subField(OptimizeToursValidationError_FieldReference v) { setField(3, v); }
+  set subField(OptimizeToursValidationError_FieldReference v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSubField() => $_has(2);
   @$pb.TagNumber(3)
@@ -5884,7 +7158,10 @@ class OptimizeToursValidationError_FieldReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get key => $_getSZ(3);
   @$pb.TagNumber(4)
-  set key($core.String v) { $_setString(3, v); }
+  set key($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasKey() => $_has(3);
   @$pb.TagNumber(4)
@@ -5920,37 +7197,52 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
     return $result;
   }
   OptimizeToursValidationError._() : super();
-  factory OptimizeToursValidationError.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OptimizeToursValidationError.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OptimizeToursValidationError.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OptimizeToursValidationError.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeToursValidationError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OptimizeToursValidationError',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..pc<OptimizeToursValidationError_FieldReference>(3, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: OptimizeToursValidationError_FieldReference.create)
+    ..pc<OptimizeToursValidationError_FieldReference>(
+        3, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM,
+        subBuilder: OptimizeToursValidationError_FieldReference.create)
     ..aOS(4, _omitFieldNames ? '' : 'errorMessage')
     ..aOS(5, _omitFieldNames ? '' : 'offendingValues')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OptimizeToursValidationError clone() => OptimizeToursValidationError()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OptimizeToursValidationError copyWith(void Function(OptimizeToursValidationError) updates) => super.copyWith((message) => updates(message as OptimizeToursValidationError)) as OptimizeToursValidationError;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OptimizeToursValidationError clone() =>
+      OptimizeToursValidationError()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OptimizeToursValidationError copyWith(
+          void Function(OptimizeToursValidationError) updates) =>
+      super.copyWith(
+              (message) => updates(message as OptimizeToursValidationError))
+          as OptimizeToursValidationError;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursValidationError create() => OptimizeToursValidationError._();
+  static OptimizeToursValidationError create() =>
+      OptimizeToursValidationError._();
   OptimizeToursValidationError createEmptyInstance() => create();
-  static $pb.PbList<OptimizeToursValidationError> createRepeated() => $pb.PbList<OptimizeToursValidationError>();
+  static $pb.PbList<OptimizeToursValidationError> createRepeated() =>
+      $pb.PbList<OptimizeToursValidationError>();
   @$core.pragma('dart2js:noInline')
-  static OptimizeToursValidationError getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OptimizeToursValidationError>(create);
+  static OptimizeToursValidationError getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OptimizeToursValidationError>(create);
   static OptimizeToursValidationError? _defaultInstance;
 
   ///  A validation error is defined by the pair (`code`, `display_name`) which
@@ -5974,7 +7266,10 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get code => $_getIZ(0);
   @$pb.TagNumber(1)
-  set code($core.int v) { $_setSignedInt32(0, v); }
+  set code($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -5984,7 +7279,10 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -6000,7 +7298,8 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   /// Note, however, that the cardinality of `fields` should not change for a
   /// given error code.
   @$pb.TagNumber(3)
-  $core.List<OptimizeToursValidationError_FieldReference> get fields => $_getList(2);
+  $core.List<OptimizeToursValidationError_FieldReference> get fields =>
+      $_getList(2);
 
   ///  Human-readable string describing the error. There is a 1:1 mapping
   ///  between `code` and `error_message` (when code != "UNSPECIFIED").
@@ -6011,7 +7310,10 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get errorMessage => $_getSZ(3);
   @$pb.TagNumber(4)
-  set errorMessage($core.String v) { $_setString(3, v); }
+  set errorMessage($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasErrorMessage() => $_has(3);
   @$pb.TagNumber(4)
@@ -6023,17 +7325,17 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get offendingValues => $_getSZ(4);
   @$pb.TagNumber(5)
-  set offendingValues($core.String v) { $_setString(4, v); }
+  set offendingValues($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOffendingValues() => $_has(4);
   @$pb.TagNumber(5)
   void clearOffendingValues() => clearField(5);
 }
 
-enum InputConfig_Source {
-  gcsSource, 
-  notSet
-}
+enum InputConfig_Source { gcsSource, notSet }
 
 /// Specify an input for
 /// [BatchOptimizeTours][google.maps.routeoptimization.v1.RouteOptimizationService.BatchOptimizeTours].
@@ -6052,30 +7354,42 @@ class InputConfig extends $pb.GeneratedMessage {
     return $result;
   }
   InputConfig._() : super();
-  factory InputConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InputConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InputConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InputConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, InputConfig_Source> _InputConfig_SourceByTag = {
-    1 : InputConfig_Source.gcsSource,
-    0 : InputConfig_Source.notSet
+  static const $core.Map<$core.int, InputConfig_Source>
+      _InputConfig_SourceByTag = {
+    1: InputConfig_Source.gcsSource,
+    0: InputConfig_Source.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InputConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<GcsSource>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: GcsSource.create)
-    ..e<DataFormat>(2, _omitFieldNames ? '' : 'dataFormat', $pb.PbFieldType.OE, defaultOrMaker: DataFormat.DATA_FORMAT_UNSPECIFIED, valueOf: DataFormat.valueOf, enumValues: DataFormat.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<GcsSource>(1, _omitFieldNames ? '' : 'gcsSource',
+        subBuilder: GcsSource.create)
+    ..e<DataFormat>(2, _omitFieldNames ? '' : 'dataFormat', $pb.PbFieldType.OE,
+        defaultOrMaker: DataFormat.DATA_FORMAT_UNSPECIFIED,
+        valueOf: DataFormat.valueOf,
+        enumValues: DataFormat.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   InputConfig clone() => InputConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InputConfig copyWith(void Function(InputConfig) updates) => super.copyWith((message) => updates(message as InputConfig)) as InputConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InputConfig copyWith(void Function(InputConfig) updates) =>
+      super.copyWith((message) => updates(message as InputConfig))
+          as InputConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -6084,17 +7398,22 @@ class InputConfig extends $pb.GeneratedMessage {
   InputConfig createEmptyInstance() => create();
   static $pb.PbList<InputConfig> createRepeated() => $pb.PbList<InputConfig>();
   @$core.pragma('dart2js:noInline')
-  static InputConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InputConfig>(create);
+  static InputConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InputConfig>(create);
   static InputConfig? _defaultInstance;
 
-  InputConfig_Source whichSource() => _InputConfig_SourceByTag[$_whichOneof(0)]!;
+  InputConfig_Source whichSource() =>
+      _InputConfig_SourceByTag[$_whichOneof(0)]!;
   void clearSource() => clearField($_whichOneof(0));
 
   /// A Google Cloud Storage location. This must be a single object (file).
   @$pb.TagNumber(1)
   GcsSource get gcsSource => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsSource(GcsSource v) { setField(1, v); }
+  set gcsSource(GcsSource v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGcsSource() => $_has(0);
   @$pb.TagNumber(1)
@@ -6106,17 +7425,17 @@ class InputConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DataFormat get dataFormat => $_getN(1);
   @$pb.TagNumber(2)
-  set dataFormat(DataFormat v) { setField(2, v); }
+  set dataFormat(DataFormat v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDataFormat() => $_has(1);
   @$pb.TagNumber(2)
   void clearDataFormat() => clearField(2);
 }
 
-enum OutputConfig_Destination {
-  gcsDestination, 
-  notSet
-}
+enum OutputConfig_Destination { gcsDestination, notSet }
 
 /// Specify a destination for
 /// [BatchOptimizeTours][google.maps.routeoptimization.v1.RouteOptimizationService.BatchOptimizeTours]
@@ -6136,49 +7455,67 @@ class OutputConfig extends $pb.GeneratedMessage {
     return $result;
   }
   OutputConfig._() : super();
-  factory OutputConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OutputConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OutputConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OutputConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, OutputConfig_Destination> _OutputConfig_DestinationByTag = {
-    1 : OutputConfig_Destination.gcsDestination,
-    0 : OutputConfig_Destination.notSet
+  static const $core.Map<$core.int, OutputConfig_Destination>
+      _OutputConfig_DestinationByTag = {
+    1: OutputConfig_Destination.gcsDestination,
+    0: OutputConfig_Destination.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OutputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OutputConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<GcsDestination>(1, _omitFieldNames ? '' : 'gcsDestination', subBuilder: GcsDestination.create)
-    ..e<DataFormat>(2, _omitFieldNames ? '' : 'dataFormat', $pb.PbFieldType.OE, defaultOrMaker: DataFormat.DATA_FORMAT_UNSPECIFIED, valueOf: DataFormat.valueOf, enumValues: DataFormat.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<GcsDestination>(1, _omitFieldNames ? '' : 'gcsDestination',
+        subBuilder: GcsDestination.create)
+    ..e<DataFormat>(2, _omitFieldNames ? '' : 'dataFormat', $pb.PbFieldType.OE,
+        defaultOrMaker: DataFormat.DATA_FORMAT_UNSPECIFIED,
+        valueOf: DataFormat.valueOf,
+        enumValues: DataFormat.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OutputConfig clone() => OutputConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OutputConfig copyWith(void Function(OutputConfig) updates) => super.copyWith((message) => updates(message as OutputConfig)) as OutputConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OutputConfig copyWith(void Function(OutputConfig) updates) =>
+      super.copyWith((message) => updates(message as OutputConfig))
+          as OutputConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OutputConfig create() => OutputConfig._();
   OutputConfig createEmptyInstance() => create();
-  static $pb.PbList<OutputConfig> createRepeated() => $pb.PbList<OutputConfig>();
+  static $pb.PbList<OutputConfig> createRepeated() =>
+      $pb.PbList<OutputConfig>();
   @$core.pragma('dart2js:noInline')
-  static OutputConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OutputConfig>(create);
+  static OutputConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OutputConfig>(create);
   static OutputConfig? _defaultInstance;
 
-  OutputConfig_Destination whichDestination() => _OutputConfig_DestinationByTag[$_whichOneof(0)]!;
+  OutputConfig_Destination whichDestination() =>
+      _OutputConfig_DestinationByTag[$_whichOneof(0)]!;
   void clearDestination() => clearField($_whichOneof(0));
 
   /// The Google Cloud Storage location to write the output to.
   @$pb.TagNumber(1)
   GcsDestination get gcsDestination => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsDestination(GcsDestination v) { setField(1, v); }
+  set gcsDestination(GcsDestination v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGcsDestination() => $_has(0);
   @$pb.TagNumber(1)
@@ -6190,7 +7527,10 @@ class OutputConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DataFormat get dataFormat => $_getN(1);
   @$pb.TagNumber(2)
-  set dataFormat(DataFormat v) { setField(2, v); }
+  set dataFormat(DataFormat v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDataFormat() => $_has(1);
   @$pb.TagNumber(2)
@@ -6209,24 +7549,30 @@ class GcsSource extends $pb.GeneratedMessage {
     return $result;
   }
   GcsSource._() : super();
-  factory GcsSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GcsSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GcsSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GcsSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcsSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GcsSource',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GcsSource clone() => GcsSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GcsSource copyWith(void Function(GcsSource) updates) => super.copyWith((message) => updates(message as GcsSource)) as GcsSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GcsSource copyWith(void Function(GcsSource) updates) =>
+      super.copyWith((message) => updates(message as GcsSource)) as GcsSource;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -6235,7 +7581,8 @@ class GcsSource extends $pb.GeneratedMessage {
   GcsSource createEmptyInstance() => create();
   static $pb.PbList<GcsSource> createRepeated() => $pb.PbList<GcsSource>();
   @$core.pragma('dart2js:noInline')
-  static GcsSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcsSource>(create);
+  static GcsSource getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcsSource>(create);
   static GcsSource? _defaultInstance;
 
   /// Required. URI of a Google Cloud Storage object with the format
@@ -6243,7 +7590,10 @@ class GcsSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) { $_setString(0, v); }
+  set uri($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -6263,46 +7613,58 @@ class GcsDestination extends $pb.GeneratedMessage {
     return $result;
   }
   GcsDestination._() : super();
-  factory GcsDestination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GcsDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GcsDestination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GcsDestination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcsDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GcsDestination',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routeoptimization.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GcsDestination clone() => GcsDestination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GcsDestination copyWith(void Function(GcsDestination) updates) => super.copyWith((message) => updates(message as GcsDestination)) as GcsDestination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GcsDestination copyWith(void Function(GcsDestination) updates) =>
+      super.copyWith((message) => updates(message as GcsDestination))
+          as GcsDestination;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GcsDestination create() => GcsDestination._();
   GcsDestination createEmptyInstance() => create();
-  static $pb.PbList<GcsDestination> createRepeated() => $pb.PbList<GcsDestination>();
+  static $pb.PbList<GcsDestination> createRepeated() =>
+      $pb.PbList<GcsDestination>();
   @$core.pragma('dart2js:noInline')
-  static GcsDestination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcsDestination>(create);
+  static GcsDestination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GcsDestination>(create);
   static GcsDestination? _defaultInstance;
 
   /// Required. Google Cloud Storage URI.
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) { $_setString(0, v); }
+  set uri($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
   void clearUri() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

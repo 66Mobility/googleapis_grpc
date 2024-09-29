@@ -17,15 +17,23 @@ import 'dart:typed_data' as $typed_data;
 const RequestSyncDevicesRequest$json = {
   '1': 'RequestSyncDevicesRequest',
   '2': [
-    {'1': 'agent_user_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'agentUserId'},
+    {
+      '1': 'agent_user_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'agentUserId'
+    },
     {'1': 'async', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'async'},
   ],
 };
 
 /// Descriptor for `RequestSyncDevicesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List requestSyncDevicesRequestDescriptor = $convert.base64Decode(
-    'ChlSZXF1ZXN0U3luY0RldmljZXNSZXF1ZXN0EicKDWFnZW50X3VzZXJfaWQYASABKAlCA+BBAl'
-    'ILYWdlbnRVc2VySWQSGQoFYXN5bmMYAiABKAhCA+BBAVIFYXN5bmM=');
+final $typed_data.Uint8List requestSyncDevicesRequestDescriptor =
+    $convert.base64Decode(
+        'ChlSZXF1ZXN0U3luY0RldmljZXNSZXF1ZXN0EicKDWFnZW50X3VzZXJfaWQYASABKAlCA+BBAl'
+        'ILYWdlbnRVc2VySWQSGQoFYXN5bmMYAiABKAhCA+BBAVIFYXN5bmM=');
 
 @$core.Deprecated('Use requestSyncDevicesResponseDescriptor instead')
 const RequestSyncDevicesResponse$json = {
@@ -33,8 +41,8 @@ const RequestSyncDevicesResponse$json = {
 };
 
 /// Descriptor for `RequestSyncDevicesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List requestSyncDevicesResponseDescriptor = $convert.base64Decode(
-    'ChpSZXF1ZXN0U3luY0RldmljZXNSZXNwb25zZQ==');
+final $typed_data.Uint8List requestSyncDevicesResponseDescriptor =
+    $convert.base64Decode('ChpSZXF1ZXN0U3luY0RldmljZXNSZXNwb25zZQ==');
 
 @$core.Deprecated('Use reportStateAndNotificationRequestDescriptor instead')
 const ReportStateAndNotificationRequest$json = {
@@ -42,7 +50,14 @@ const ReportStateAndNotificationRequest$json = {
   '2': [
     {'1': 'request_id', '3': 1, '4': 1, '5': 9, '10': 'requestId'},
     {'1': 'event_id', '3': 4, '4': 1, '5': 9, '10': 'eventId'},
-    {'1': 'agent_user_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'agentUserId'},
+    {
+      '1': 'agent_user_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'agentUserId'
+    },
     {
       '1': 'follow_up_token',
       '3': 5,
@@ -51,7 +66,15 @@ const ReportStateAndNotificationRequest$json = {
       '8': {'3': true},
       '10': 'followUpToken',
     },
-    {'1': 'payload', '3': 3, '4': 1, '5': 11, '6': '.google.home.graph.v1.StateAndNotificationPayload', '8': {}, '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.home.graph.v1.StateAndNotificationPayload',
+      '8': {},
+      '10': 'payload'
+    },
   ],
 };
 
@@ -72,44 +95,75 @@ const ReportStateAndNotificationResponse$json = {
 };
 
 /// Descriptor for `ReportStateAndNotificationResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List reportStateAndNotificationResponseDescriptor = $convert.base64Decode(
-    'CiJSZXBvcnRTdGF0ZUFuZE5vdGlmaWNhdGlvblJlc3BvbnNlEh0KCnJlcXVlc3RfaWQYASABKA'
-    'lSCXJlcXVlc3RJZA==');
+final $typed_data.Uint8List reportStateAndNotificationResponseDescriptor =
+    $convert.base64Decode(
+        'CiJSZXBvcnRTdGF0ZUFuZE5vdGlmaWNhdGlvblJlc3BvbnNlEh0KCnJlcXVlc3RfaWQYASABKA'
+        'lSCXJlcXVlc3RJZA==');
 
 @$core.Deprecated('Use stateAndNotificationPayloadDescriptor instead')
 const StateAndNotificationPayload$json = {
   '1': 'StateAndNotificationPayload',
   '2': [
-    {'1': 'devices', '3': 1, '4': 1, '5': 11, '6': '.google.home.graph.v1.ReportStateAndNotificationDevice', '10': 'devices'},
+    {
+      '1': 'devices',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.home.graph.v1.ReportStateAndNotificationDevice',
+      '10': 'devices'
+    },
   ],
 };
 
 /// Descriptor for `StateAndNotificationPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stateAndNotificationPayloadDescriptor = $convert.base64Decode(
-    'ChtTdGF0ZUFuZE5vdGlmaWNhdGlvblBheWxvYWQSUAoHZGV2aWNlcxgBIAEoCzI2Lmdvb2dsZS'
-    '5ob21lLmdyYXBoLnYxLlJlcG9ydFN0YXRlQW5kTm90aWZpY2F0aW9uRGV2aWNlUgdkZXZpY2Vz');
+final $typed_data.Uint8List stateAndNotificationPayloadDescriptor =
+    $convert.base64Decode(
+        'ChtTdGF0ZUFuZE5vdGlmaWNhdGlvblBheWxvYWQSUAoHZGV2aWNlcxgBIAEoCzI2Lmdvb2dsZS'
+        '5ob21lLmdyYXBoLnYxLlJlcG9ydFN0YXRlQW5kTm90aWZpY2F0aW9uRGV2aWNlUgdkZXZpY2Vz');
 
 @$core.Deprecated('Use reportStateAndNotificationDeviceDescriptor instead')
 const ReportStateAndNotificationDevice$json = {
   '1': 'ReportStateAndNotificationDevice',
   '2': [
-    {'1': 'states', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'states'},
-    {'1': 'notifications', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'notifications'},
+    {
+      '1': 'states',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'states'
+    },
+    {
+      '1': 'notifications',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'notifications'
+    },
   ],
 };
 
 /// Descriptor for `ReportStateAndNotificationDevice`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List reportStateAndNotificationDeviceDescriptor = $convert.base64Decode(
-    'CiBSZXBvcnRTdGF0ZUFuZE5vdGlmaWNhdGlvbkRldmljZRIvCgZzdGF0ZXMYASABKAsyFy5nb2'
-    '9nbGUucHJvdG9idWYuU3RydWN0UgZzdGF0ZXMSPQoNbm90aWZpY2F0aW9ucxgCIAEoCzIXLmdv'
-    'b2dsZS5wcm90b2J1Zi5TdHJ1Y3RSDW5vdGlmaWNhdGlvbnM=');
+final $typed_data.Uint8List reportStateAndNotificationDeviceDescriptor =
+    $convert.base64Decode(
+        'CiBSZXBvcnRTdGF0ZUFuZE5vdGlmaWNhdGlvbkRldmljZRIvCgZzdGF0ZXMYASABKAsyFy5nb2'
+        '9nbGUucHJvdG9idWYuU3RydWN0UgZzdGF0ZXMSPQoNbm90aWZpY2F0aW9ucxgCIAEoCzIXLmdv'
+        'b2dsZS5wcm90b2J1Zi5TdHJ1Y3RSDW5vdGlmaWNhdGlvbnM=');
 
 @$core.Deprecated('Use deleteAgentUserRequestDescriptor instead')
 const DeleteAgentUserRequest$json = {
   '1': 'DeleteAgentUserRequest',
   '2': [
     {'1': 'request_id', '3': 1, '4': 1, '5': 9, '10': 'requestId'},
-    {'1': 'agent_user_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'agentUserId'},
+    {
+      '1': 'agent_user_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'agentUserId'
+    },
   ],
 };
 
@@ -124,8 +178,23 @@ const QueryRequest$json = {
   '1': 'QueryRequest',
   '2': [
     {'1': 'request_id', '3': 1, '4': 1, '5': 9, '10': 'requestId'},
-    {'1': 'agent_user_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'agentUserId'},
-    {'1': 'inputs', '3': 3, '4': 3, '5': 11, '6': '.google.home.graph.v1.QueryRequestInput', '8': {}, '10': 'inputs'},
+    {
+      '1': 'agent_user_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'agentUserId'
+    },
+    {
+      '1': 'inputs',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.graph.v1.QueryRequestInput',
+      '8': {},
+      '10': 'inputs'
+    },
   ],
 };
 
@@ -139,7 +208,14 @@ final $typed_data.Uint8List queryRequestDescriptor = $convert.base64Decode(
 const QueryRequestInput$json = {
   '1': 'QueryRequestInput',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.home.graph.v1.QueryRequestPayload', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.home.graph.v1.QueryRequestPayload',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -152,7 +228,14 @@ final $typed_data.Uint8List queryRequestInputDescriptor = $convert.base64Decode(
 const QueryRequestPayload$json = {
   '1': 'QueryRequestPayload',
   '2': [
-    {'1': 'devices', '3': 1, '4': 3, '5': 11, '6': '.google.home.graph.v1.AgentDeviceId', '10': 'devices'},
+    {
+      '1': 'devices',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.graph.v1.AgentDeviceId',
+      '10': 'devices'
+    },
   ],
 };
 
@@ -170,15 +253,22 @@ const AgentDeviceId$json = {
 };
 
 /// Descriptor for `AgentDeviceId`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List agentDeviceIdDescriptor = $convert.base64Decode(
-    'Cg1BZ2VudERldmljZUlkEg4KAmlkGAEgASgJUgJpZA==');
+final $typed_data.Uint8List agentDeviceIdDescriptor =
+    $convert.base64Decode('Cg1BZ2VudERldmljZUlkEg4KAmlkGAEgASgJUgJpZA==');
 
 @$core.Deprecated('Use queryResponseDescriptor instead')
 const QueryResponse$json = {
   '1': 'QueryResponse',
   '2': [
     {'1': 'request_id', '3': 1, '4': 1, '5': 9, '10': 'requestId'},
-    {'1': 'payload', '3': 2, '4': 1, '5': 11, '6': '.google.home.graph.v1.QueryResponsePayload', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.home.graph.v1.QueryResponsePayload',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -192,7 +282,14 @@ final $typed_data.Uint8List queryResponseDescriptor = $convert.base64Decode(
 const QueryResponsePayload$json = {
   '1': 'QueryResponsePayload',
   '2': [
-    {'1': 'devices', '3': 1, '4': 3, '5': 11, '6': '.google.home.graph.v1.QueryResponsePayload.DevicesEntry', '10': 'devices'},
+    {
+      '1': 'devices',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.graph.v1.QueryResponsePayload.DevicesEntry',
+      '10': 'devices'
+    },
   ],
   '3': [QueryResponsePayload_DevicesEntry$json],
 };
@@ -202,7 +299,14 @@ const QueryResponsePayload_DevicesEntry$json = {
   '1': 'DevicesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -219,7 +323,14 @@ const SyncRequest$json = {
   '1': 'SyncRequest',
   '2': [
     {'1': 'request_id', '3': 1, '4': 1, '5': 9, '10': 'requestId'},
-    {'1': 'agent_user_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'agentUserId'},
+    {
+      '1': 'agent_user_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'agentUserId'
+    },
   ],
 };
 
@@ -233,7 +344,14 @@ const SyncResponse$json = {
   '1': 'SyncResponse',
   '2': [
     {'1': 'request_id', '3': 1, '4': 1, '5': 9, '10': 'requestId'},
-    {'1': 'payload', '3': 2, '4': 1, '5': 11, '6': '.google.home.graph.v1.SyncResponsePayload', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.home.graph.v1.SyncResponsePayload',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -248,7 +366,14 @@ const SyncResponsePayload$json = {
   '1': 'SyncResponsePayload',
   '2': [
     {'1': 'agent_user_id', '3': 1, '4': 1, '5': 9, '10': 'agentUserId'},
-    {'1': 'devices', '3': 2, '4': 3, '5': 11, '6': '.google.home.graph.v1.Device', '10': 'devices'},
+    {
+      '1': 'devices',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.graph.v1.Device',
+      '10': 'devices'
+    },
   ],
 };
 
@@ -257,4 +382,3 @@ final $typed_data.Uint8List syncResponsePayloadDescriptor = $convert.base64Decod
     'ChNTeW5jUmVzcG9uc2VQYXlsb2FkEiIKDWFnZW50X3VzZXJfaWQYASABKAlSC2FnZW50VXNlck'
     'lkEjYKB2RldmljZXMYAiADKAsyHC5nb29nbGUuaG9tZS5ncmFwaC52MS5EZXZpY2VSB2Rldmlj'
     'ZXM=');
-

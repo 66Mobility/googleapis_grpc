@@ -17,9 +17,28 @@ import 'dart:typed_data' as $typed_data;
 const SpeedReadingInterval$json = {
   '1': 'SpeedReadingInterval',
   '2': [
-    {'1': 'start_polyline_point_index', '3': 1, '4': 1, '5': 5, '10': 'startPolylinePointIndex'},
-    {'1': 'end_polyline_point_index', '3': 2, '4': 1, '5': 5, '10': 'endPolylinePointIndex'},
-    {'1': 'speed', '3': 3, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.SpeedReadingInterval.Speed', '10': 'speed'},
+    {
+      '1': 'start_polyline_point_index',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'startPolylinePointIndex'
+    },
+    {
+      '1': 'end_polyline_point_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'endPolylinePointIndex'
+    },
+    {
+      '1': 'speed',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.SpeedReadingInterval.Speed',
+      '10': 'speed'
+    },
   ],
   '4': [SpeedReadingInterval_Speed$json],
 };
@@ -48,8 +67,21 @@ final $typed_data.Uint8List speedReadingIntervalDescriptor = $convert.base64Deco
 const ConsumableTrafficPolyline$json = {
   '1': 'ConsumableTrafficPolyline',
   '2': [
-    {'1': 'speed_reading_interval', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.SpeedReadingInterval', '10': 'speedReadingInterval'},
-    {'1': 'encoded_path_to_waypoint', '3': 2, '4': 1, '5': 9, '10': 'encodedPathToWaypoint'},
+    {
+      '1': 'speed_reading_interval',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.SpeedReadingInterval',
+      '10': 'speedReadingInterval'
+    },
+    {
+      '1': 'encoded_path_to_waypoint',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'encodedPathToWaypoint'
+    },
   ],
 };
 
@@ -59,4 +91,3 @@ final $typed_data.Uint8List consumableTrafficPolylineDescriptor = $convert.base6
     'ADKAsyKS5tYXBzLmZsZWV0ZW5naW5lLnYxLlNwZWVkUmVhZGluZ0ludGVydmFsUhRzcGVlZFJl'
     'YWRpbmdJbnRlcnZhbBI3ChhlbmNvZGVkX3BhdGhfdG9fd2F5cG9pbnQYAiABKAlSFWVuY29kZW'
     'RQYXRoVG9XYXlwb2ludA==');
-

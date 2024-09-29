@@ -38,24 +38,33 @@ class ConfigFiles extends $pb.GeneratedMessage {
     return $result;
   }
   ConfigFiles._() : super();
-  factory ConfigFiles.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConfigFiles.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConfigFiles.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConfigFiles.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfigFiles', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..pc<ConfigFile>(1, _omitFieldNames ? '' : 'configFiles', $pb.PbFieldType.PM, subBuilder: ConfigFile.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConfigFiles',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..pc<ConfigFile>(
+        1, _omitFieldNames ? '' : 'configFiles', $pb.PbFieldType.PM,
+        subBuilder: ConfigFile.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ConfigFiles clone() => ConfigFiles()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConfigFiles copyWith(void Function(ConfigFiles) updates) => super.copyWith((message) => updates(message as ConfigFiles)) as ConfigFiles;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConfigFiles copyWith(void Function(ConfigFiles) updates) =>
+      super.copyWith((message) => updates(message as ConfigFiles))
+          as ConfigFiles;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -64,7 +73,8 @@ class ConfigFiles extends $pb.GeneratedMessage {
   ConfigFiles createEmptyInstance() => create();
   static $pb.PbList<ConfigFiles> createRepeated() => $pb.PbList<ConfigFiles>();
   @$core.pragma('dart2js:noInline')
-  static ConfigFiles getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConfigFiles>(create);
+  static ConfigFiles getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConfigFiles>(create);
   static ConfigFiles? _defaultInstance;
 
   /// Multiple config files.
@@ -73,18 +83,18 @@ class ConfigFiles extends $pb.GeneratedMessage {
 }
 
 enum ConfigFile_File {
-  manifest, 
-  actions, 
-  settings, 
-  webhook, 
-  intent, 
-  type, 
-  globalIntentEvent, 
-  scene, 
-  staticPrompt, 
-  resourceBundle, 
-  accountLinkingSecret, 
-  entitySet, 
+  manifest,
+  actions,
+  settings,
+  webhook,
+  intent,
+  type,
+  globalIntentEvent,
+  scene,
+  staticPrompt,
+  resourceBundle,
+  accountLinkingSecret,
+  entitySet,
   notSet
 }
 
@@ -150,52 +160,71 @@ class ConfigFile extends $pb.GeneratedMessage {
     return $result;
   }
   ConfigFile._() : super();
-  factory ConfigFile.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConfigFile.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConfigFile.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConfigFile.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, ConfigFile_File> _ConfigFile_FileByTag = {
-    2 : ConfigFile_File.manifest,
-    3 : ConfigFile_File.actions,
-    4 : ConfigFile_File.settings,
-    6 : ConfigFile_File.webhook,
-    7 : ConfigFile_File.intent,
-    8 : ConfigFile_File.type,
-    9 : ConfigFile_File.globalIntentEvent,
-    10 : ConfigFile_File.scene,
-    11 : ConfigFile_File.staticPrompt,
-    12 : ConfigFile_File.resourceBundle,
-    13 : ConfigFile_File.accountLinkingSecret,
-    15 : ConfigFile_File.entitySet,
-    0 : ConfigFile_File.notSet
+    2: ConfigFile_File.manifest,
+    3: ConfigFile_File.actions,
+    4: ConfigFile_File.settings,
+    6: ConfigFile_File.webhook,
+    7: ConfigFile_File.intent,
+    8: ConfigFile_File.type,
+    9: ConfigFile_File.globalIntentEvent,
+    10: ConfigFile_File.scene,
+    11: ConfigFile_File.staticPrompt,
+    12: ConfigFile_File.resourceBundle,
+    13: ConfigFile_File.accountLinkingSecret,
+    15: ConfigFile_File.entitySet,
+    0: ConfigFile_File.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfigFile', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConfigFile',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 15])
     ..aOS(1, _omitFieldNames ? '' : 'filePath')
-    ..aOM<$290.Manifest>(2, _omitFieldNames ? '' : 'manifest', subBuilder: $290.Manifest.create)
-    ..aOM<$291.Actions>(3, _omitFieldNames ? '' : 'actions', subBuilder: $291.Actions.create)
-    ..aOM<$292.Settings>(4, _omitFieldNames ? '' : 'settings', subBuilder: $292.Settings.create)
-    ..aOM<$293.Webhook>(6, _omitFieldNames ? '' : 'webhook', subBuilder: $293.Webhook.create)
-    ..aOM<$294.Intent>(7, _omitFieldNames ? '' : 'intent', subBuilder: $294.Intent.create)
-    ..aOM<$295.Type>(8, _omitFieldNames ? '' : 'type', subBuilder: $295.Type.create)
-    ..aOM<$296.GlobalIntentEvent>(9, _omitFieldNames ? '' : 'globalIntentEvent', subBuilder: $296.GlobalIntentEvent.create)
-    ..aOM<$297.Scene>(10, _omitFieldNames ? '' : 'scene', subBuilder: $297.Scene.create)
-    ..aOM<$276.StaticPrompt>(11, _omitFieldNames ? '' : 'staticPrompt', subBuilder: $276.StaticPrompt.create)
-    ..aOM<$261.Struct>(12, _omitFieldNames ? '' : 'resourceBundle', subBuilder: $261.Struct.create)
-    ..aOM<$298.AccountLinkingSecret>(13, _omitFieldNames ? '' : 'accountLinkingSecret', subBuilder: $298.AccountLinkingSecret.create)
-    ..aOM<$299.EntitySet>(15, _omitFieldNames ? '' : 'entitySet', subBuilder: $299.EntitySet.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$290.Manifest>(2, _omitFieldNames ? '' : 'manifest',
+        subBuilder: $290.Manifest.create)
+    ..aOM<$291.Actions>(3, _omitFieldNames ? '' : 'actions',
+        subBuilder: $291.Actions.create)
+    ..aOM<$292.Settings>(4, _omitFieldNames ? '' : 'settings',
+        subBuilder: $292.Settings.create)
+    ..aOM<$293.Webhook>(6, _omitFieldNames ? '' : 'webhook',
+        subBuilder: $293.Webhook.create)
+    ..aOM<$294.Intent>(7, _omitFieldNames ? '' : 'intent',
+        subBuilder: $294.Intent.create)
+    ..aOM<$295.Type>(8, _omitFieldNames ? '' : 'type',
+        subBuilder: $295.Type.create)
+    ..aOM<$296.GlobalIntentEvent>(9, _omitFieldNames ? '' : 'globalIntentEvent',
+        subBuilder: $296.GlobalIntentEvent.create)
+    ..aOM<$297.Scene>(10, _omitFieldNames ? '' : 'scene',
+        subBuilder: $297.Scene.create)
+    ..aOM<$276.StaticPrompt>(11, _omitFieldNames ? '' : 'staticPrompt',
+        subBuilder: $276.StaticPrompt.create)
+    ..aOM<$261.Struct>(12, _omitFieldNames ? '' : 'resourceBundle',
+        subBuilder: $261.Struct.create)
+    ..aOM<$298.AccountLinkingSecret>(
+        13, _omitFieldNames ? '' : 'accountLinkingSecret',
+        subBuilder: $298.AccountLinkingSecret.create)
+    ..aOM<$299.EntitySet>(15, _omitFieldNames ? '' : 'entitySet',
+        subBuilder: $299.EntitySet.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ConfigFile clone() => ConfigFile()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConfigFile copyWith(void Function(ConfigFile) updates) => super.copyWith((message) => updates(message as ConfigFile)) as ConfigFile;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConfigFile copyWith(void Function(ConfigFile) updates) =>
+      super.copyWith((message) => updates(message as ConfigFile)) as ConfigFile;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -204,7 +233,8 @@ class ConfigFile extends $pb.GeneratedMessage {
   ConfigFile createEmptyInstance() => create();
   static $pb.PbList<ConfigFile> createRepeated() => $pb.PbList<ConfigFile>();
   @$core.pragma('dart2js:noInline')
-  static ConfigFile getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConfigFile>(create);
+  static ConfigFile getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConfigFile>(create);
   static ConfigFile? _defaultInstance;
 
   ConfigFile_File whichFile() => _ConfigFile_FileByTag[$_whichOneof(0)]!;
@@ -216,7 +246,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get filePath => $_getSZ(0);
   @$pb.TagNumber(1)
-  set filePath($core.String v) { $_setString(0, v); }
+  set filePath($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFilePath() => $_has(0);
   @$pb.TagNumber(1)
@@ -227,7 +260,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $290.Manifest get manifest => $_getN(1);
   @$pb.TagNumber(2)
-  set manifest($290.Manifest v) { setField(2, v); }
+  set manifest($290.Manifest v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasManifest() => $_has(1);
   @$pb.TagNumber(2)
@@ -240,7 +276,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $291.Actions get actions => $_getN(2);
   @$pb.TagNumber(3)
-  set actions($291.Actions v) { setField(3, v); }
+  set actions($291.Actions v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasActions() => $_has(2);
   @$pb.TagNumber(3)
@@ -258,7 +297,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $292.Settings get settings => $_getN(3);
   @$pb.TagNumber(4)
-  set settings($292.Settings v) { setField(4, v); }
+  set settings($292.Settings v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSettings() => $_has(3);
   @$pb.TagNumber(4)
@@ -271,7 +313,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $293.Webhook get webhook => $_getN(4);
   @$pb.TagNumber(6)
-  set webhook($293.Webhook v) { setField(6, v); }
+  set webhook($293.Webhook v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasWebhook() => $_has(4);
   @$pb.TagNumber(6)
@@ -284,7 +329,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $294.Intent get intent => $_getN(5);
   @$pb.TagNumber(7)
-  set intent($294.Intent v) { setField(7, v); }
+  set intent($294.Intent v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasIntent() => $_has(5);
   @$pb.TagNumber(7)
@@ -297,7 +345,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $295.Type get type => $_getN(6);
   @$pb.TagNumber(8)
-  set type($295.Type v) { setField(8, v); }
+  set type($295.Type v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasType() => $_has(6);
   @$pb.TagNumber(8)
@@ -312,7 +363,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $296.GlobalIntentEvent get globalIntentEvent => $_getN(7);
   @$pb.TagNumber(9)
-  set globalIntentEvent($296.GlobalIntentEvent v) { setField(9, v); }
+  set globalIntentEvent($296.GlobalIntentEvent v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasGlobalIntentEvent() => $_has(7);
   @$pb.TagNumber(9)
@@ -325,7 +379,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $297.Scene get scene => $_getN(8);
   @$pb.TagNumber(10)
-  set scene($297.Scene v) { setField(10, v); }
+  set scene($297.Scene v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasScene() => $_has(8);
   @$pb.TagNumber(10)
@@ -338,7 +395,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $276.StaticPrompt get staticPrompt => $_getN(9);
   @$pb.TagNumber(11)
-  set staticPrompt($276.StaticPrompt v) { setField(11, v); }
+  set staticPrompt($276.StaticPrompt v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasStaticPrompt() => $_has(9);
   @$pb.TagNumber(11)
@@ -354,7 +414,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $261.Struct get resourceBundle => $_getN(10);
   @$pb.TagNumber(12)
-  set resourceBundle($261.Struct v) { setField(12, v); }
+  set resourceBundle($261.Struct v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasResourceBundle() => $_has(10);
   @$pb.TagNumber(12)
@@ -367,7 +430,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $298.AccountLinkingSecret get accountLinkingSecret => $_getN(11);
   @$pb.TagNumber(13)
-  set accountLinkingSecret($298.AccountLinkingSecret v) { setField(13, v); }
+  set accountLinkingSecret($298.AccountLinkingSecret v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasAccountLinkingSecret() => $_has(11);
   @$pb.TagNumber(13)
@@ -380,7 +446,10 @@ class ConfigFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $299.EntitySet get entitySet => $_getN(12);
   @$pb.TagNumber(15)
-  set entitySet($299.EntitySet v) { setField(15, v); }
+  set entitySet($299.EntitySet v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasEntitySet() => $_has(12);
   @$pb.TagNumber(15)
@@ -389,6 +458,6 @@ class ConfigFile extends $pb.GeneratedMessage {
   $299.EntitySet ensureEntitySet() => $_ensure(12);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

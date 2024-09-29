@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const MutationRecord$json = {
   '1': 'MutationRecord',
   '2': [
-    {'1': 'mutate_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'mutateTime'},
+    {
+      '1': 'mutate_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'mutateTime'
+    },
     {'1': 'mutated_by', '3': 2, '4': 1, '5': 9, '10': 'mutatedBy'},
   ],
 };
@@ -26,4 +33,3 @@ const MutationRecord$json = {
 final $typed_data.Uint8List mutationRecordDescriptor = $convert.base64Decode(
     'Cg5NdXRhdGlvblJlY29yZBI7CgttdXRhdGVfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi'
     '5UaW1lc3RhbXBSCm11dGF0ZVRpbWUSHQoKbXV0YXRlZF9ieRgCIAEoCVIJbXV0YXRlZEJ5');
-

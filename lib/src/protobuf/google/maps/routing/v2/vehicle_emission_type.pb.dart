@@ -12,4 +12,3 @@
 import 'dart:core' as $core;
 
 export 'vehicle_emission_type.pbenum.dart';
-

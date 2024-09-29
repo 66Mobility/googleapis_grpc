@@ -39,8 +39,22 @@ const AnnotationSet$json = {
     {'1': 'reference_set_id', '3': 3, '4': 1, '5': 9, '10': 'referenceSetId'},
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
     {'1': 'source_uri', '3': 5, '4': 1, '5': 9, '10': 'sourceUri'},
-    {'1': 'type', '3': 6, '4': 1, '5': 14, '6': '.google.genomics.v1.AnnotationType', '10': 'type'},
-    {'1': 'info', '3': 17, '4': 3, '5': 11, '6': '.google.genomics.v1.AnnotationSet.InfoEntry', '10': 'info'},
+    {
+      '1': 'type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.AnnotationType',
+      '10': 'type'
+    },
+    {
+      '1': 'info',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.AnnotationSet.InfoEntry',
+      '10': 'info'
+    },
   ],
   '3': [AnnotationSet_InfoEntry$json],
 };
@@ -50,7 +64,14 @@ const AnnotationSet_InfoEntry$json = {
   '1': 'InfoEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -77,10 +98,40 @@ const Annotation$json = {
     {'1': 'start', '3': 6, '4': 1, '5': 3, '10': 'start'},
     {'1': 'end', '3': 7, '4': 1, '5': 3, '10': 'end'},
     {'1': 'reverse_strand', '3': 8, '4': 1, '5': 8, '10': 'reverseStrand'},
-    {'1': 'type', '3': 9, '4': 1, '5': 14, '6': '.google.genomics.v1.AnnotationType', '10': 'type'},
-    {'1': 'variant', '3': 10, '4': 1, '5': 11, '6': '.google.genomics.v1.VariantAnnotation', '9': 0, '10': 'variant'},
-    {'1': 'transcript', '3': 11, '4': 1, '5': 11, '6': '.google.genomics.v1.Transcript', '9': 0, '10': 'transcript'},
-    {'1': 'info', '3': 12, '4': 3, '5': 11, '6': '.google.genomics.v1.Annotation.InfoEntry', '10': 'info'},
+    {
+      '1': 'type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.AnnotationType',
+      '10': 'type'
+    },
+    {
+      '1': 'variant',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantAnnotation',
+      '9': 0,
+      '10': 'variant'
+    },
+    {
+      '1': 'transcript',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Transcript',
+      '9': 0,
+      '10': 'transcript'
+    },
+    {
+      '1': 'info',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Annotation.InfoEntry',
+      '10': 'info'
+    },
   ],
   '3': [Annotation_InfoEntry$json],
   '8': [
@@ -93,7 +144,14 @@ const Annotation_InfoEntry$json = {
   '1': 'InfoEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -116,16 +174,48 @@ final $typed_data.Uint8List annotationDescriptor = $convert.base64Decode(
 const VariantAnnotation$json = {
   '1': 'VariantAnnotation',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.genomics.v1.VariantAnnotation.Type', '10': 'type'},
-    {'1': 'effect', '3': 2, '4': 1, '5': 14, '6': '.google.genomics.v1.VariantAnnotation.Effect', '10': 'effect'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.VariantAnnotation.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'effect',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.VariantAnnotation.Effect',
+      '10': 'effect'
+    },
     {'1': 'alternate_bases', '3': 3, '4': 1, '5': 9, '10': 'alternateBases'},
     {'1': 'gene_id', '3': 4, '4': 1, '5': 9, '10': 'geneId'},
     {'1': 'transcript_ids', '3': 5, '4': 3, '5': 9, '10': 'transcriptIds'},
-    {'1': 'conditions', '3': 6, '4': 3, '5': 11, '6': '.google.genomics.v1.VariantAnnotation.ClinicalCondition', '10': 'conditions'},
-    {'1': 'clinical_significance', '3': 7, '4': 1, '5': 14, '6': '.google.genomics.v1.VariantAnnotation.ClinicalSignificance', '10': 'clinicalSignificance'},
+    {
+      '1': 'conditions',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.VariantAnnotation.ClinicalCondition',
+      '10': 'conditions'
+    },
+    {
+      '1': 'clinical_significance',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1.VariantAnnotation.ClinicalSignificance',
+      '10': 'clinicalSignificance'
+    },
   ],
   '3': [VariantAnnotation_ClinicalCondition$json],
-  '4': [VariantAnnotation_Type$json, VariantAnnotation_Effect$json, VariantAnnotation_ClinicalSignificance$json],
+  '4': [
+    VariantAnnotation_Type$json,
+    VariantAnnotation_Effect$json,
+    VariantAnnotation_ClinicalSignificance$json
+  ],
 };
 
 @$core.Deprecated('Use variantAnnotationDescriptor instead')
@@ -133,7 +223,14 @@ const VariantAnnotation_ClinicalCondition$json = {
   '1': 'ClinicalCondition',
   '2': [
     {'1': 'names', '3': 1, '4': 3, '5': 9, '10': 'names'},
-    {'1': 'external_ids', '3': 2, '4': 3, '5': 11, '6': '.google.genomics.v1.ExternalId', '10': 'externalIds'},
+    {
+      '1': 'external_ids',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.ExternalId',
+      '10': 'externalIds'
+    },
     {'1': 'concept_id', '3': 3, '4': 1, '5': 9, '10': 'conceptId'},
     {'1': 'omim_id', '3': 4, '4': 1, '5': 9, '10': 'omimId'},
   ],
@@ -222,8 +319,22 @@ const Transcript$json = {
   '1': 'Transcript',
   '2': [
     {'1': 'gene_id', '3': 1, '4': 1, '5': 9, '10': 'geneId'},
-    {'1': 'exons', '3': 2, '4': 3, '5': 11, '6': '.google.genomics.v1.Transcript.Exon', '10': 'exons'},
-    {'1': 'coding_sequence', '3': 3, '4': 1, '5': 11, '6': '.google.genomics.v1.Transcript.CodingSequence', '10': 'codingSequence'},
+    {
+      '1': 'exons',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Transcript.Exon',
+      '10': 'exons'
+    },
+    {
+      '1': 'coding_sequence',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Transcript.CodingSequence',
+      '10': 'codingSequence'
+    },
   ],
   '3': [Transcript_Exon$json, Transcript_CodingSequence$json],
 };
@@ -234,7 +345,14 @@ const Transcript_Exon$json = {
   '2': [
     {'1': 'start', '3': 1, '4': 1, '5': 3, '10': 'start'},
     {'1': 'end', '3': 2, '4': 1, '5': 3, '10': 'end'},
-    {'1': 'frame', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'frame'},
+    {
+      '1': 'frame',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'frame'
+    },
   ],
 };
 
@@ -275,14 +393,22 @@ final $typed_data.Uint8List externalIdDescriptor = $convert.base64Decode(
 const CreateAnnotationSetRequest$json = {
   '1': 'CreateAnnotationSetRequest',
   '2': [
-    {'1': 'annotation_set', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1.AnnotationSet', '10': 'annotationSet'},
+    {
+      '1': 'annotation_set',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.AnnotationSet',
+      '10': 'annotationSet'
+    },
   ],
 };
 
 /// Descriptor for `CreateAnnotationSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createAnnotationSetRequestDescriptor = $convert.base64Decode(
-    'ChpDcmVhdGVBbm5vdGF0aW9uU2V0UmVxdWVzdBJICg5hbm5vdGF0aW9uX3NldBgBIAEoCzIhLm'
-    'dvb2dsZS5nZW5vbWljcy52MS5Bbm5vdGF0aW9uU2V0Ug1hbm5vdGF0aW9uU2V0');
+final $typed_data.Uint8List createAnnotationSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChpDcmVhdGVBbm5vdGF0aW9uU2V0UmVxdWVzdBJICg5hbm5vdGF0aW9uX3NldBgBIAEoCzIhLm'
+        'dvb2dsZS5nZW5vbWljcy52MS5Bbm5vdGF0aW9uU2V0Ug1hbm5vdGF0aW9uU2V0');
 
 @$core.Deprecated('Use getAnnotationSetRequestDescriptor instead')
 const GetAnnotationSetRequest$json = {
@@ -293,17 +419,32 @@ const GetAnnotationSetRequest$json = {
 };
 
 /// Descriptor for `GetAnnotationSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getAnnotationSetRequestDescriptor = $convert.base64Decode(
-    'ChdHZXRBbm5vdGF0aW9uU2V0UmVxdWVzdBIqChFhbm5vdGF0aW9uX3NldF9pZBgBIAEoCVIPYW'
-    '5ub3RhdGlvblNldElk');
+final $typed_data.Uint8List getAnnotationSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChdHZXRBbm5vdGF0aW9uU2V0UmVxdWVzdBIqChFhbm5vdGF0aW9uX3NldF9pZBgBIAEoCVIPYW'
+        '5ub3RhdGlvblNldElk');
 
 @$core.Deprecated('Use updateAnnotationSetRequestDescriptor instead')
 const UpdateAnnotationSetRequest$json = {
   '1': 'UpdateAnnotationSetRequest',
   '2': [
     {'1': 'annotation_set_id', '3': 1, '4': 1, '5': 9, '10': 'annotationSetId'},
-    {'1': 'annotation_set', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.AnnotationSet', '10': 'annotationSet'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'annotation_set',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.AnnotationSet',
+      '10': 'annotationSet'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -323,9 +464,10 @@ const DeleteAnnotationSetRequest$json = {
 };
 
 /// Descriptor for `DeleteAnnotationSetRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAnnotationSetRequestDescriptor = $convert.base64Decode(
-    'ChpEZWxldGVBbm5vdGF0aW9uU2V0UmVxdWVzdBIqChFhbm5vdGF0aW9uX3NldF9pZBgBIAEoCV'
-    'IPYW5ub3RhdGlvblNldElk');
+final $typed_data.Uint8List deleteAnnotationSetRequestDescriptor =
+    $convert.base64Decode(
+        'ChpEZWxldGVBbm5vdGF0aW9uU2V0UmVxdWVzdBIqChFhbm5vdGF0aW9uX3NldF9pZBgBIAEoCV'
+        'IPYW5ub3RhdGlvblNldElk');
 
 @$core.Deprecated('Use searchAnnotationSetsRequestDescriptor instead')
 const SearchAnnotationSetsRequest$json = {
@@ -334,7 +476,14 @@ const SearchAnnotationSetsRequest$json = {
     {'1': 'dataset_ids', '3': 1, '4': 3, '5': 9, '10': 'datasetIds'},
     {'1': 'reference_set_id', '3': 2, '4': 1, '5': 9, '10': 'referenceSetId'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'types', '3': 4, '4': 3, '5': 14, '6': '.google.genomics.v1.AnnotationType', '10': 'types'},
+    {
+      '1': 'types',
+      '3': 4,
+      '4': 3,
+      '5': 14,
+      '6': '.google.genomics.v1.AnnotationType',
+      '10': 'types'
+    },
     {'1': 'page_token', '3': 5, '4': 1, '5': 9, '10': 'pageToken'},
     {'1': 'page_size', '3': 6, '4': 1, '5': 5, '10': 'pageSize'},
   ],
@@ -352,50 +501,81 @@ final $typed_data.Uint8List searchAnnotationSetsRequestDescriptor = $convert.bas
 const SearchAnnotationSetsResponse$json = {
   '1': 'SearchAnnotationSetsResponse',
   '2': [
-    {'1': 'annotation_sets', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.AnnotationSet', '10': 'annotationSets'},
+    {
+      '1': 'annotation_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.AnnotationSet',
+      '10': 'annotationSets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `SearchAnnotationSetsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List searchAnnotationSetsResponseDescriptor = $convert.base64Decode(
-    'ChxTZWFyY2hBbm5vdGF0aW9uU2V0c1Jlc3BvbnNlEkoKD2Fubm90YXRpb25fc2V0cxgBIAMoCz'
-    'IhLmdvb2dsZS5nZW5vbWljcy52MS5Bbm5vdGF0aW9uU2V0Ug5hbm5vdGF0aW9uU2V0cxImCg9u'
-    'ZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List searchAnnotationSetsResponseDescriptor =
+    $convert.base64Decode(
+        'ChxTZWFyY2hBbm5vdGF0aW9uU2V0c1Jlc3BvbnNlEkoKD2Fubm90YXRpb25fc2V0cxgBIAMoCz'
+        'IhLmdvb2dsZS5nZW5vbWljcy52MS5Bbm5vdGF0aW9uU2V0Ug5hbm5vdGF0aW9uU2V0cxImCg9u'
+        'ZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use createAnnotationRequestDescriptor instead')
 const CreateAnnotationRequest$json = {
   '1': 'CreateAnnotationRequest',
   '2': [
-    {'1': 'annotation', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1.Annotation', '10': 'annotation'},
+    {
+      '1': 'annotation',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Annotation',
+      '10': 'annotation'
+    },
   ],
 };
 
 /// Descriptor for `CreateAnnotationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createAnnotationRequestDescriptor = $convert.base64Decode(
-    'ChdDcmVhdGVBbm5vdGF0aW9uUmVxdWVzdBI+Cgphbm5vdGF0aW9uGAEgASgLMh4uZ29vZ2xlLm'
-    'dlbm9taWNzLnYxLkFubm90YXRpb25SCmFubm90YXRpb24=');
+final $typed_data.Uint8List createAnnotationRequestDescriptor =
+    $convert.base64Decode(
+        'ChdDcmVhdGVBbm5vdGF0aW9uUmVxdWVzdBI+Cgphbm5vdGF0aW9uGAEgASgLMh4uZ29vZ2xlLm'
+        'dlbm9taWNzLnYxLkFubm90YXRpb25SCmFubm90YXRpb24=');
 
 @$core.Deprecated('Use batchCreateAnnotationsRequestDescriptor instead')
 const BatchCreateAnnotationsRequest$json = {
   '1': 'BatchCreateAnnotationsRequest',
   '2': [
-    {'1': 'annotations', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Annotation', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Annotation',
+      '10': 'annotations'
+    },
     {'1': 'request_id', '3': 2, '4': 1, '5': 9, '10': 'requestId'},
   ],
 };
 
 /// Descriptor for `BatchCreateAnnotationsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateAnnotationsRequestDescriptor = $convert.base64Decode(
-    'Ch1CYXRjaENyZWF0ZUFubm90YXRpb25zUmVxdWVzdBJACgthbm5vdGF0aW9ucxgBIAMoCzIeLm'
-    'dvb2dsZS5nZW5vbWljcy52MS5Bbm5vdGF0aW9uUgthbm5vdGF0aW9ucxIdCgpyZXF1ZXN0X2lk'
-    'GAIgASgJUglyZXF1ZXN0SWQ=');
+final $typed_data.Uint8List batchCreateAnnotationsRequestDescriptor =
+    $convert.base64Decode(
+        'Ch1CYXRjaENyZWF0ZUFubm90YXRpb25zUmVxdWVzdBJACgthbm5vdGF0aW9ucxgBIAMoCzIeLm'
+        'dvb2dsZS5nZW5vbWljcy52MS5Bbm5vdGF0aW9uUgthbm5vdGF0aW9ucxIdCgpyZXF1ZXN0X2lk'
+        'GAIgASgJUglyZXF1ZXN0SWQ=');
 
 @$core.Deprecated('Use batchCreateAnnotationsResponseDescriptor instead')
 const BatchCreateAnnotationsResponse$json = {
   '1': 'BatchCreateAnnotationsResponse',
   '2': [
-    {'1': 'entries', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.BatchCreateAnnotationsResponse.Entry', '10': 'entries'},
+    {
+      '1': 'entries',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.BatchCreateAnnotationsResponse.Entry',
+      '10': 'entries'
+    },
   ],
   '3': [BatchCreateAnnotationsResponse_Entry$json],
 };
@@ -404,8 +584,22 @@ const BatchCreateAnnotationsResponse$json = {
 const BatchCreateAnnotationsResponse_Entry$json = {
   '1': 'Entry',
   '2': [
-    {'1': 'status', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'annotation', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.Annotation', '10': 'annotation'},
+    {
+      '1': 'status',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'annotation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Annotation',
+      '10': 'annotation'
+    },
   ],
 };
 
@@ -435,8 +629,22 @@ const UpdateAnnotationRequest$json = {
   '1': 'UpdateAnnotationRequest',
   '2': [
     {'1': 'annotation_id', '3': 1, '4': 1, '5': 9, '10': 'annotationId'},
-    {'1': 'annotation', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1.Annotation', '10': 'annotation'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'annotation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1.Annotation',
+      '10': 'annotation'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -456,17 +664,31 @@ const DeleteAnnotationRequest$json = {
 };
 
 /// Descriptor for `DeleteAnnotationRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteAnnotationRequestDescriptor = $convert.base64Decode(
-    'ChdEZWxldGVBbm5vdGF0aW9uUmVxdWVzdBIjCg1hbm5vdGF0aW9uX2lkGAEgASgJUgxhbm5vdG'
-    'F0aW9uSWQ=');
+final $typed_data.Uint8List deleteAnnotationRequestDescriptor =
+    $convert.base64Decode(
+        'ChdEZWxldGVBbm5vdGF0aW9uUmVxdWVzdBIjCg1hbm5vdGF0aW9uX2lkGAEgASgJUgxhbm5vdG'
+        'F0aW9uSWQ=');
 
 @$core.Deprecated('Use searchAnnotationsRequestDescriptor instead')
 const SearchAnnotationsRequest$json = {
   '1': 'SearchAnnotationsRequest',
   '2': [
-    {'1': 'annotation_set_ids', '3': 1, '4': 3, '5': 9, '10': 'annotationSetIds'},
+    {
+      '1': 'annotation_set_ids',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'annotationSetIds'
+    },
     {'1': 'reference_id', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'referenceId'},
-    {'1': 'reference_name', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'referenceName'},
+    {
+      '1': 'reference_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'referenceName'
+    },
     {'1': 'start', '3': 4, '4': 1, '5': 3, '10': 'start'},
     {'1': 'end', '3': 5, '4': 1, '5': 3, '10': 'end'},
     {'1': 'page_token', '3': 6, '4': 1, '5': 9, '10': 'pageToken'},
@@ -489,7 +711,14 @@ final $typed_data.Uint8List searchAnnotationsRequestDescriptor = $convert.base64
 const SearchAnnotationsResponse$json = {
   '1': 'SearchAnnotationsResponse',
   '2': [
-    {'1': 'annotations', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1.Annotation', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1.Annotation',
+      '10': 'annotations'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -499,4 +728,3 @@ final $typed_data.Uint8List searchAnnotationsResponseDescriptor = $convert.base6
     'ChlTZWFyY2hBbm5vdGF0aW9uc1Jlc3BvbnNlEkAKC2Fubm90YXRpb25zGAEgAygLMh4uZ29vZ2'
     'xlLmdlbm9taWNzLnYxLkFubm90YXRpb25SC2Fubm90YXRpb25zEiYKD25leHRfcGFnZV90b2tl'
     'bhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
-

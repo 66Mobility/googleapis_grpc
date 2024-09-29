@@ -15,23 +15,27 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Indicate the current state of the backup.
 class Backup_State extends $pb.ProtobufEnum {
-  static const Backup_State STATE_UNSPECIFIED = Backup_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const Backup_State CREATING = Backup_State._(1, _omitEnumNames ? '' : 'CREATING');
-  static const Backup_State READY = Backup_State._(2, _omitEnumNames ? '' : 'READY');
-  static const Backup_State NOT_AVAILABLE = Backup_State._(3, _omitEnumNames ? '' : 'NOT_AVAILABLE');
+  static const Backup_State STATE_UNSPECIFIED =
+      Backup_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const Backup_State CREATING =
+      Backup_State._(1, _omitEnumNames ? '' : 'CREATING');
+  static const Backup_State READY =
+      Backup_State._(2, _omitEnumNames ? '' : 'READY');
+  static const Backup_State NOT_AVAILABLE =
+      Backup_State._(3, _omitEnumNames ? '' : 'NOT_AVAILABLE');
 
-  static const $core.List<Backup_State> values = <Backup_State> [
+  static const $core.List<Backup_State> values = <Backup_State>[
     STATE_UNSPECIFIED,
     CREATING,
     READY,
     NOT_AVAILABLE,
   ];
 
-  static final $core.Map<$core.int, Backup_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Backup_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Backup_State? valueOf($core.int value) => _byValue[value];
 
   const Backup_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const EntitySet$json = {
   '1': 'EntitySet',
   '2': [
-    {'1': 'entities', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.EntitySet.Entity', '8': {}, '10': 'entities'},
+    {
+      '1': 'entities',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.EntitySet.Entity',
+      '8': {},
+      '10': 'entities'
+    },
   ],
   '3': [EntitySet_Entity$json],
 };
@@ -35,4 +43,3 @@ final $typed_data.Uint8List entitySetDescriptor = $convert.base64Decode(
     'CglFbnRpdHlTZXQSWQoIZW50aXRpZXMYASADKAsyOC5nb29nbGUuYWN0aW9ucy5zZGsudjIuaW'
     '50ZXJhY3Rpb25tb2RlbC5FbnRpdHlTZXQuRW50aXR5QgPgQQJSCGVudGl0aWVzGh0KBkVudGl0'
     'eRITCgJpZBgBIAEoCUID4EECUgJpZA==');
-

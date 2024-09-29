@@ -28,33 +28,46 @@ class GetGoogleServiceAccountRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetGoogleServiceAccountRequest._() : super();
-  factory GetGoogleServiceAccountRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetGoogleServiceAccountRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetGoogleServiceAccountRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetGoogleServiceAccountRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetGoogleServiceAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetGoogleServiceAccountRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetGoogleServiceAccountRequest clone() => GetGoogleServiceAccountRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetGoogleServiceAccountRequest copyWith(void Function(GetGoogleServiceAccountRequest) updates) => super.copyWith((message) => updates(message as GetGoogleServiceAccountRequest)) as GetGoogleServiceAccountRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetGoogleServiceAccountRequest clone() =>
+      GetGoogleServiceAccountRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetGoogleServiceAccountRequest copyWith(
+          void Function(GetGoogleServiceAccountRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetGoogleServiceAccountRequest))
+          as GetGoogleServiceAccountRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetGoogleServiceAccountRequest create() => GetGoogleServiceAccountRequest._();
+  static GetGoogleServiceAccountRequest create() =>
+      GetGoogleServiceAccountRequest._();
   GetGoogleServiceAccountRequest createEmptyInstance() => create();
-  static $pb.PbList<GetGoogleServiceAccountRequest> createRepeated() => $pb.PbList<GetGoogleServiceAccountRequest>();
+  static $pb.PbList<GetGoogleServiceAccountRequest> createRepeated() =>
+      $pb.PbList<GetGoogleServiceAccountRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetGoogleServiceAccountRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetGoogleServiceAccountRequest>(create);
+  static GetGoogleServiceAccountRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetGoogleServiceAccountRequest>(create);
   static GetGoogleServiceAccountRequest? _defaultInstance;
 
   /// Required. The ID of the Google Cloud project that the Google service
@@ -62,7 +75,10 @@ class GetGoogleServiceAccountRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,40 +97,55 @@ class CreateTransferJobRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateTransferJobRequest._() : super();
-  factory CreateTransferJobRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateTransferJobRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateTransferJobRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateTransferJobRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTransferJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..aOM<$256.TransferJob>(1, _omitFieldNames ? '' : 'transferJob', subBuilder: $256.TransferJob.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateTransferJobRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..aOM<$256.TransferJob>(1, _omitFieldNames ? '' : 'transferJob',
+        subBuilder: $256.TransferJob.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateTransferJobRequest clone() => CreateTransferJobRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateTransferJobRequest copyWith(void Function(CreateTransferJobRequest) updates) => super.copyWith((message) => updates(message as CreateTransferJobRequest)) as CreateTransferJobRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateTransferJobRequest clone() =>
+      CreateTransferJobRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateTransferJobRequest copyWith(
+          void Function(CreateTransferJobRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateTransferJobRequest))
+          as CreateTransferJobRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateTransferJobRequest create() => CreateTransferJobRequest._();
   CreateTransferJobRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateTransferJobRequest> createRepeated() => $pb.PbList<CreateTransferJobRequest>();
+  static $pb.PbList<CreateTransferJobRequest> createRepeated() =>
+      $pb.PbList<CreateTransferJobRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateTransferJobRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateTransferJobRequest>(create);
+  static CreateTransferJobRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateTransferJobRequest>(create);
   static CreateTransferJobRequest? _defaultInstance;
 
   /// Required. The job to create.
   @$pb.TagNumber(1)
   $256.TransferJob get transferJob => $_getN(0);
   @$pb.TagNumber(1)
-  set transferJob($256.TransferJob v) { setField(1, v); }
+  set transferJob($256.TransferJob v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTransferJob() => $_has(0);
   @$pb.TagNumber(1)
@@ -147,43 +178,60 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateTransferJobRequest._() : super();
-  factory UpdateTransferJobRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateTransferJobRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateTransferJobRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateTransferJobRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTransferJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateTransferJobRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'jobName')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$256.TransferJob>(3, _omitFieldNames ? '' : 'transferJob', subBuilder: $256.TransferJob.create)
-    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateTransferJobFieldMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$256.TransferJob>(3, _omitFieldNames ? '' : 'transferJob',
+        subBuilder: $256.TransferJob.create)
+    ..aOM<$333.FieldMask>(
+        4, _omitFieldNames ? '' : 'updateTransferJobFieldMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateTransferJobRequest clone() => UpdateTransferJobRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateTransferJobRequest copyWith(void Function(UpdateTransferJobRequest) updates) => super.copyWith((message) => updates(message as UpdateTransferJobRequest)) as UpdateTransferJobRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateTransferJobRequest clone() =>
+      UpdateTransferJobRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateTransferJobRequest copyWith(
+          void Function(UpdateTransferJobRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateTransferJobRequest))
+          as UpdateTransferJobRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateTransferJobRequest create() => UpdateTransferJobRequest._();
   UpdateTransferJobRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateTransferJobRequest> createRepeated() => $pb.PbList<UpdateTransferJobRequest>();
+  static $pb.PbList<UpdateTransferJobRequest> createRepeated() =>
+      $pb.PbList<UpdateTransferJobRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateTransferJobRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateTransferJobRequest>(create);
+  static UpdateTransferJobRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateTransferJobRequest>(create);
   static UpdateTransferJobRequest? _defaultInstance;
 
   /// Required. The name of job to update.
   @$pb.TagNumber(1)
   $core.String get jobName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set jobName($core.String v) { $_setString(0, v); }
+  set jobName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasJobName() => $_has(0);
   @$pb.TagNumber(1)
@@ -194,7 +242,10 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get projectId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set projectId($core.String v) { $_setString(1, v); }
+  set projectId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
@@ -215,7 +266,10 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $256.TransferJob get transferJob => $_getN(2);
   @$pb.TagNumber(3)
-  set transferJob($256.TransferJob v) { setField(3, v); }
+  set transferJob($256.TransferJob v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTransferJob() => $_has(2);
   @$pb.TagNumber(3)
@@ -237,7 +291,10 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $333.FieldMask get updateTransferJobFieldMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTransferJobFieldMask($333.FieldMask v) { setField(4, v); }
+  set updateTransferJobFieldMask($333.FieldMask v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUpdateTransferJobFieldMask() => $_has(3);
   @$pb.TagNumber(4)
@@ -262,41 +319,55 @@ class GetTransferJobRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetTransferJobRequest._() : super();
-  factory GetTransferJobRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetTransferJobRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetTransferJobRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetTransferJobRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetTransferJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetTransferJobRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'jobName')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetTransferJobRequest clone() => GetTransferJobRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetTransferJobRequest copyWith(void Function(GetTransferJobRequest) updates) => super.copyWith((message) => updates(message as GetTransferJobRequest)) as GetTransferJobRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetTransferJobRequest clone() =>
+      GetTransferJobRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetTransferJobRequest copyWith(
+          void Function(GetTransferJobRequest) updates) =>
+      super.copyWith((message) => updates(message as GetTransferJobRequest))
+          as GetTransferJobRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetTransferJobRequest create() => GetTransferJobRequest._();
   GetTransferJobRequest createEmptyInstance() => create();
-  static $pb.PbList<GetTransferJobRequest> createRepeated() => $pb.PbList<GetTransferJobRequest>();
+  static $pb.PbList<GetTransferJobRequest> createRepeated() =>
+      $pb.PbList<GetTransferJobRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetTransferJobRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetTransferJobRequest>(create);
+  static GetTransferJobRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetTransferJobRequest>(create);
   static GetTransferJobRequest? _defaultInstance;
 
   /// Required. The job to get.
   @$pb.TagNumber(1)
   $core.String get jobName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set jobName($core.String v) { $_setString(0, v); }
+  set jobName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasJobName() => $_has(0);
   @$pb.TagNumber(1)
@@ -307,7 +378,10 @@ class GetTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get projectId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set projectId($core.String v) { $_setString(1, v); }
+  set projectId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
@@ -330,41 +404,55 @@ class DeleteTransferJobRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteTransferJobRequest._() : super();
-  factory DeleteTransferJobRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteTransferJobRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteTransferJobRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteTransferJobRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteTransferJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteTransferJobRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'jobName')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteTransferJobRequest clone() => DeleteTransferJobRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteTransferJobRequest copyWith(void Function(DeleteTransferJobRequest) updates) => super.copyWith((message) => updates(message as DeleteTransferJobRequest)) as DeleteTransferJobRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteTransferJobRequest clone() =>
+      DeleteTransferJobRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteTransferJobRequest copyWith(
+          void Function(DeleteTransferJobRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteTransferJobRequest))
+          as DeleteTransferJobRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteTransferJobRequest create() => DeleteTransferJobRequest._();
   DeleteTransferJobRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteTransferJobRequest> createRepeated() => $pb.PbList<DeleteTransferJobRequest>();
+  static $pb.PbList<DeleteTransferJobRequest> createRepeated() =>
+      $pb.PbList<DeleteTransferJobRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteTransferJobRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteTransferJobRequest>(create);
+  static DeleteTransferJobRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteTransferJobRequest>(create);
   static DeleteTransferJobRequest? _defaultInstance;
 
   /// Required. The job to delete.
   @$pb.TagNumber(1)
   $core.String get jobName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set jobName($core.String v) { $_setString(0, v); }
+  set jobName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasJobName() => $_has(0);
   @$pb.TagNumber(1)
@@ -375,7 +463,10 @@ class DeleteTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get projectId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set projectId($core.String v) { $_setString(1, v); }
+  set projectId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
@@ -403,35 +494,46 @@ class ListTransferJobsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListTransferJobsRequest._() : super();
-  factory ListTransferJobsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListTransferJobsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListTransferJobsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListTransferJobsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTransferJobsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTransferJobsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListTransferJobsRequest clone() => ListTransferJobsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListTransferJobsRequest copyWith(void Function(ListTransferJobsRequest) updates) => super.copyWith((message) => updates(message as ListTransferJobsRequest)) as ListTransferJobsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListTransferJobsRequest clone() =>
+      ListTransferJobsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListTransferJobsRequest copyWith(
+          void Function(ListTransferJobsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListTransferJobsRequest))
+          as ListTransferJobsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListTransferJobsRequest create() => ListTransferJobsRequest._();
   ListTransferJobsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListTransferJobsRequest> createRepeated() => $pb.PbList<ListTransferJobsRequest>();
+  static $pb.PbList<ListTransferJobsRequest> createRepeated() =>
+      $pb.PbList<ListTransferJobsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListTransferJobsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTransferJobsRequest>(create);
+  static ListTransferJobsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTransferJobsRequest>(create);
   static ListTransferJobsRequest? _defaultInstance;
 
   ///  Required. A list of query parameters specified as JSON text in the form of:
@@ -449,7 +551,10 @@ class ListTransferJobsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get filter => $_getSZ(0);
   @$pb.TagNumber(1)
-  set filter($core.String v) { $_setString(0, v); }
+  set filter($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -459,7 +564,10 @@ class ListTransferJobsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(4)
@@ -469,7 +577,10 @@ class ListTransferJobsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(5)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(5)
@@ -492,34 +603,47 @@ class ListTransferJobsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListTransferJobsResponse._() : super();
-  factory ListTransferJobsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListTransferJobsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListTransferJobsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListTransferJobsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTransferJobsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..pc<$256.TransferJob>(1, _omitFieldNames ? '' : 'transferJobs', $pb.PbFieldType.PM, subBuilder: $256.TransferJob.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTransferJobsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..pc<$256.TransferJob>(
+        1, _omitFieldNames ? '' : 'transferJobs', $pb.PbFieldType.PM,
+        subBuilder: $256.TransferJob.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListTransferJobsResponse clone() => ListTransferJobsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListTransferJobsResponse copyWith(void Function(ListTransferJobsResponse) updates) => super.copyWith((message) => updates(message as ListTransferJobsResponse)) as ListTransferJobsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListTransferJobsResponse clone() =>
+      ListTransferJobsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListTransferJobsResponse copyWith(
+          void Function(ListTransferJobsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListTransferJobsResponse))
+          as ListTransferJobsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListTransferJobsResponse create() => ListTransferJobsResponse._();
   ListTransferJobsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListTransferJobsResponse> createRepeated() => $pb.PbList<ListTransferJobsResponse>();
+  static $pb.PbList<ListTransferJobsResponse> createRepeated() =>
+      $pb.PbList<ListTransferJobsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListTransferJobsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTransferJobsResponse>(create);
+  static ListTransferJobsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTransferJobsResponse>(create);
   static ListTransferJobsResponse? _defaultInstance;
 
   /// A list of transfer jobs.
@@ -530,7 +654,10 @@ class ListTransferJobsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -549,40 +676,56 @@ class PauseTransferOperationRequest extends $pb.GeneratedMessage {
     return $result;
   }
   PauseTransferOperationRequest._() : super();
-  factory PauseTransferOperationRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PauseTransferOperationRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PauseTransferOperationRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PauseTransferOperationRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PauseTransferOperationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PauseTransferOperationRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PauseTransferOperationRequest clone() => PauseTransferOperationRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PauseTransferOperationRequest copyWith(void Function(PauseTransferOperationRequest) updates) => super.copyWith((message) => updates(message as PauseTransferOperationRequest)) as PauseTransferOperationRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PauseTransferOperationRequest clone() =>
+      PauseTransferOperationRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PauseTransferOperationRequest copyWith(
+          void Function(PauseTransferOperationRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as PauseTransferOperationRequest))
+          as PauseTransferOperationRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PauseTransferOperationRequest create() => PauseTransferOperationRequest._();
+  static PauseTransferOperationRequest create() =>
+      PauseTransferOperationRequest._();
   PauseTransferOperationRequest createEmptyInstance() => create();
-  static $pb.PbList<PauseTransferOperationRequest> createRepeated() => $pb.PbList<PauseTransferOperationRequest>();
+  static $pb.PbList<PauseTransferOperationRequest> createRepeated() =>
+      $pb.PbList<PauseTransferOperationRequest>();
   @$core.pragma('dart2js:noInline')
-  static PauseTransferOperationRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PauseTransferOperationRequest>(create);
+  static PauseTransferOperationRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PauseTransferOperationRequest>(create);
   static PauseTransferOperationRequest? _defaultInstance;
 
   /// Required. The name of the transfer operation.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -601,40 +744,56 @@ class ResumeTransferOperationRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ResumeTransferOperationRequest._() : super();
-  factory ResumeTransferOperationRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ResumeTransferOperationRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ResumeTransferOperationRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ResumeTransferOperationRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResumeTransferOperationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResumeTransferOperationRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ResumeTransferOperationRequest clone() => ResumeTransferOperationRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ResumeTransferOperationRequest copyWith(void Function(ResumeTransferOperationRequest) updates) => super.copyWith((message) => updates(message as ResumeTransferOperationRequest)) as ResumeTransferOperationRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ResumeTransferOperationRequest clone() =>
+      ResumeTransferOperationRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ResumeTransferOperationRequest copyWith(
+          void Function(ResumeTransferOperationRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ResumeTransferOperationRequest))
+          as ResumeTransferOperationRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ResumeTransferOperationRequest create() => ResumeTransferOperationRequest._();
+  static ResumeTransferOperationRequest create() =>
+      ResumeTransferOperationRequest._();
   ResumeTransferOperationRequest createEmptyInstance() => create();
-  static $pb.PbList<ResumeTransferOperationRequest> createRepeated() => $pb.PbList<ResumeTransferOperationRequest>();
+  static $pb.PbList<ResumeTransferOperationRequest> createRepeated() =>
+      $pb.PbList<ResumeTransferOperationRequest>();
   @$core.pragma('dart2js:noInline')
-  static ResumeTransferOperationRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResumeTransferOperationRequest>(create);
+  static ResumeTransferOperationRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResumeTransferOperationRequest>(create);
   static ResumeTransferOperationRequest? _defaultInstance;
 
   /// Required. The name of the transfer operation.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -657,41 +816,55 @@ class RunTransferJobRequest extends $pb.GeneratedMessage {
     return $result;
   }
   RunTransferJobRequest._() : super();
-  factory RunTransferJobRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RunTransferJobRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RunTransferJobRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RunTransferJobRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunTransferJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RunTransferJobRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'jobName')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RunTransferJobRequest clone() => RunTransferJobRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RunTransferJobRequest copyWith(void Function(RunTransferJobRequest) updates) => super.copyWith((message) => updates(message as RunTransferJobRequest)) as RunTransferJobRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RunTransferJobRequest clone() =>
+      RunTransferJobRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RunTransferJobRequest copyWith(
+          void Function(RunTransferJobRequest) updates) =>
+      super.copyWith((message) => updates(message as RunTransferJobRequest))
+          as RunTransferJobRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RunTransferJobRequest create() => RunTransferJobRequest._();
   RunTransferJobRequest createEmptyInstance() => create();
-  static $pb.PbList<RunTransferJobRequest> createRepeated() => $pb.PbList<RunTransferJobRequest>();
+  static $pb.PbList<RunTransferJobRequest> createRepeated() =>
+      $pb.PbList<RunTransferJobRequest>();
   @$core.pragma('dart2js:noInline')
-  static RunTransferJobRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RunTransferJobRequest>(create);
+  static RunTransferJobRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RunTransferJobRequest>(create);
   static RunTransferJobRequest? _defaultInstance;
 
   /// Required. The name of the transfer job.
   @$pb.TagNumber(1)
   $core.String get jobName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set jobName($core.String v) { $_setString(0, v); }
+  set jobName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasJobName() => $_has(0);
   @$pb.TagNumber(1)
@@ -702,7 +875,10 @@ class RunTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get projectId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set projectId($core.String v) { $_setString(1, v); }
+  set projectId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
@@ -729,35 +905,47 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateAgentPoolRequest._() : super();
-  factory CreateAgentPoolRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateAgentPoolRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateAgentPoolRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateAgentPoolRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAgentPoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateAgentPoolRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$256.AgentPool>(2, _omitFieldNames ? '' : 'agentPool', subBuilder: $256.AgentPool.create)
+    ..aOM<$256.AgentPool>(2, _omitFieldNames ? '' : 'agentPool',
+        subBuilder: $256.AgentPool.create)
     ..aOS(3, _omitFieldNames ? '' : 'agentPoolId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateAgentPoolRequest clone() => CreateAgentPoolRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateAgentPoolRequest copyWith(void Function(CreateAgentPoolRequest) updates) => super.copyWith((message) => updates(message as CreateAgentPoolRequest)) as CreateAgentPoolRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateAgentPoolRequest clone() =>
+      CreateAgentPoolRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateAgentPoolRequest copyWith(
+          void Function(CreateAgentPoolRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateAgentPoolRequest))
+          as CreateAgentPoolRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateAgentPoolRequest create() => CreateAgentPoolRequest._();
   CreateAgentPoolRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateAgentPoolRequest> createRepeated() => $pb.PbList<CreateAgentPoolRequest>();
+  static $pb.PbList<CreateAgentPoolRequest> createRepeated() =>
+      $pb.PbList<CreateAgentPoolRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateAgentPoolRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateAgentPoolRequest>(create);
+  static CreateAgentPoolRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateAgentPoolRequest>(create);
   static CreateAgentPoolRequest? _defaultInstance;
 
   /// Required. The ID of the Google Cloud project that owns the
@@ -765,7 +953,10 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -775,7 +966,10 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $256.AgentPool get agentPool => $_getN(1);
   @$pb.TagNumber(2)
-  set agentPool($256.AgentPool v) { setField(2, v); }
+  set agentPool($256.AgentPool v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAgentPool() => $_has(1);
   @$pb.TagNumber(2)
@@ -799,7 +993,10 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get agentPoolId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set agentPoolId($core.String v) { $_setString(2, v); }
+  set agentPoolId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAgentPoolId() => $_has(2);
   @$pb.TagNumber(3)
@@ -822,34 +1019,47 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateAgentPoolRequest._() : super();
-  factory UpdateAgentPoolRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateAgentPoolRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateAgentPoolRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateAgentPoolRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAgentPoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..aOM<$256.AgentPool>(1, _omitFieldNames ? '' : 'agentPool', subBuilder: $256.AgentPool.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateAgentPoolRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..aOM<$256.AgentPool>(1, _omitFieldNames ? '' : 'agentPool',
+        subBuilder: $256.AgentPool.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateAgentPoolRequest clone() => UpdateAgentPoolRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateAgentPoolRequest copyWith(void Function(UpdateAgentPoolRequest) updates) => super.copyWith((message) => updates(message as UpdateAgentPoolRequest)) as UpdateAgentPoolRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateAgentPoolRequest clone() =>
+      UpdateAgentPoolRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateAgentPoolRequest copyWith(
+          void Function(UpdateAgentPoolRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateAgentPoolRequest))
+          as UpdateAgentPoolRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateAgentPoolRequest create() => UpdateAgentPoolRequest._();
   UpdateAgentPoolRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateAgentPoolRequest> createRepeated() => $pb.PbList<UpdateAgentPoolRequest>();
+  static $pb.PbList<UpdateAgentPoolRequest> createRepeated() =>
+      $pb.PbList<UpdateAgentPoolRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateAgentPoolRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateAgentPoolRequest>(create);
+  static UpdateAgentPoolRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateAgentPoolRequest>(create);
   static UpdateAgentPoolRequest? _defaultInstance;
 
   ///  Required. The agent pool to update. `agent_pool` is expected to specify
@@ -865,7 +1075,10 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $256.AgentPool get agentPool => $_getN(0);
   @$pb.TagNumber(1)
-  set agentPool($256.AgentPool v) { setField(1, v); }
+  set agentPool($256.AgentPool v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAgentPool() => $_has(0);
   @$pb.TagNumber(1)
@@ -884,7 +1097,10 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -905,40 +1121,52 @@ class GetAgentPoolRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetAgentPoolRequest._() : super();
-  factory GetAgentPoolRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetAgentPoolRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetAgentPoolRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetAgentPoolRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAgentPoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetAgentPoolRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetAgentPoolRequest clone() => GetAgentPoolRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetAgentPoolRequest copyWith(void Function(GetAgentPoolRequest) updates) => super.copyWith((message) => updates(message as GetAgentPoolRequest)) as GetAgentPoolRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetAgentPoolRequest copyWith(void Function(GetAgentPoolRequest) updates) =>
+      super.copyWith((message) => updates(message as GetAgentPoolRequest))
+          as GetAgentPoolRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetAgentPoolRequest create() => GetAgentPoolRequest._();
   GetAgentPoolRequest createEmptyInstance() => create();
-  static $pb.PbList<GetAgentPoolRequest> createRepeated() => $pb.PbList<GetAgentPoolRequest>();
+  static $pb.PbList<GetAgentPoolRequest> createRepeated() =>
+      $pb.PbList<GetAgentPoolRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetAgentPoolRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetAgentPoolRequest>(create);
+  static GetAgentPoolRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetAgentPoolRequest>(create);
   static GetAgentPoolRequest? _defaultInstance;
 
   /// Required. The name of the agent pool to get.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -957,40 +1185,54 @@ class DeleteAgentPoolRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteAgentPoolRequest._() : super();
-  factory DeleteAgentPoolRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteAgentPoolRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteAgentPoolRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteAgentPoolRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteAgentPoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteAgentPoolRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteAgentPoolRequest clone() => DeleteAgentPoolRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteAgentPoolRequest copyWith(void Function(DeleteAgentPoolRequest) updates) => super.copyWith((message) => updates(message as DeleteAgentPoolRequest)) as DeleteAgentPoolRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteAgentPoolRequest clone() =>
+      DeleteAgentPoolRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteAgentPoolRequest copyWith(
+          void Function(DeleteAgentPoolRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteAgentPoolRequest))
+          as DeleteAgentPoolRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteAgentPoolRequest create() => DeleteAgentPoolRequest._();
   DeleteAgentPoolRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteAgentPoolRequest> createRepeated() => $pb.PbList<DeleteAgentPoolRequest>();
+  static $pb.PbList<DeleteAgentPoolRequest> createRepeated() =>
+      $pb.PbList<DeleteAgentPoolRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteAgentPoolRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteAgentPoolRequest>(create);
+  static DeleteAgentPoolRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteAgentPoolRequest>(create);
   static DeleteAgentPoolRequest? _defaultInstance;
 
   /// Required. The name of the agent pool to delete.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1021,43 +1263,57 @@ class ListAgentPoolsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListAgentPoolsRequest._() : super();
-  factory ListAgentPoolsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListAgentPoolsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListAgentPoolsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListAgentPoolsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAgentPoolsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListAgentPoolsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListAgentPoolsRequest clone() => ListAgentPoolsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListAgentPoolsRequest copyWith(void Function(ListAgentPoolsRequest) updates) => super.copyWith((message) => updates(message as ListAgentPoolsRequest)) as ListAgentPoolsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListAgentPoolsRequest clone() =>
+      ListAgentPoolsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListAgentPoolsRequest copyWith(
+          void Function(ListAgentPoolsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListAgentPoolsRequest))
+          as ListAgentPoolsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListAgentPoolsRequest create() => ListAgentPoolsRequest._();
   ListAgentPoolsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListAgentPoolsRequest> createRepeated() => $pb.PbList<ListAgentPoolsRequest>();
+  static $pb.PbList<ListAgentPoolsRequest> createRepeated() =>
+      $pb.PbList<ListAgentPoolsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListAgentPoolsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListAgentPoolsRequest>(create);
+  static ListAgentPoolsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListAgentPoolsRequest>(create);
   static ListAgentPoolsRequest? _defaultInstance;
 
   /// Required. The ID of the Google Cloud project that owns the job.
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1074,7 +1330,10 @@ class ListAgentPoolsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -1084,7 +1343,10 @@ class ListAgentPoolsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1094,7 +1356,10 @@ class ListAgentPoolsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -1117,34 +1382,47 @@ class ListAgentPoolsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListAgentPoolsResponse._() : super();
-  factory ListAgentPoolsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListAgentPoolsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListAgentPoolsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListAgentPoolsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAgentPoolsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..pc<$256.AgentPool>(1, _omitFieldNames ? '' : 'agentPools', $pb.PbFieldType.PM, subBuilder: $256.AgentPool.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListAgentPoolsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..pc<$256.AgentPool>(
+        1, _omitFieldNames ? '' : 'agentPools', $pb.PbFieldType.PM,
+        subBuilder: $256.AgentPool.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListAgentPoolsResponse clone() => ListAgentPoolsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListAgentPoolsResponse copyWith(void Function(ListAgentPoolsResponse) updates) => super.copyWith((message) => updates(message as ListAgentPoolsResponse)) as ListAgentPoolsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListAgentPoolsResponse clone() =>
+      ListAgentPoolsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListAgentPoolsResponse copyWith(
+          void Function(ListAgentPoolsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListAgentPoolsResponse))
+          as ListAgentPoolsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListAgentPoolsResponse create() => ListAgentPoolsResponse._();
   ListAgentPoolsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListAgentPoolsResponse> createRepeated() => $pb.PbList<ListAgentPoolsResponse>();
+  static $pb.PbList<ListAgentPoolsResponse> createRepeated() =>
+      $pb.PbList<ListAgentPoolsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListAgentPoolsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListAgentPoolsResponse>(create);
+  static ListAgentPoolsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListAgentPoolsResponse>(create);
   static ListAgentPoolsResponse? _defaultInstance;
 
   /// A list of agent pools.
@@ -1155,13 +1433,16 @@ class ListAgentPoolsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

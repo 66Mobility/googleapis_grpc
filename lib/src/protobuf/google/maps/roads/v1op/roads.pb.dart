@@ -44,36 +44,48 @@ class SnapToRoadsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SnapToRoadsRequest._() : super();
-  factory SnapToRoadsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SnapToRoadsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SnapToRoadsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SnapToRoadsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SnapToRoadsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.roads.v1op'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SnapToRoadsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.roads.v1op'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOB(2, _omitFieldNames ? '' : 'interpolate')
     ..aOS(3, _omitFieldNames ? '' : 'assetId')
-    ..e<TravelMode>(4, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: TravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: TravelMode.valueOf, enumValues: TravelMode.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<TravelMode>(4, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
+        defaultOrMaker: TravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: TravelMode.valueOf,
+        enumValues: TravelMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SnapToRoadsRequest clone() => SnapToRoadsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SnapToRoadsRequest copyWith(void Function(SnapToRoadsRequest) updates) => super.copyWith((message) => updates(message as SnapToRoadsRequest)) as SnapToRoadsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SnapToRoadsRequest copyWith(void Function(SnapToRoadsRequest) updates) =>
+      super.copyWith((message) => updates(message as SnapToRoadsRequest))
+          as SnapToRoadsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SnapToRoadsRequest create() => SnapToRoadsRequest._();
   SnapToRoadsRequest createEmptyInstance() => create();
-  static $pb.PbList<SnapToRoadsRequest> createRepeated() => $pb.PbList<SnapToRoadsRequest>();
+  static $pb.PbList<SnapToRoadsRequest> createRepeated() =>
+      $pb.PbList<SnapToRoadsRequest>();
   @$core.pragma('dart2js:noInline')
-  static SnapToRoadsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SnapToRoadsRequest>(create);
+  static SnapToRoadsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SnapToRoadsRequest>(create);
   static SnapToRoadsRequest? _defaultInstance;
 
   /// The path to be snapped as a series of lat, lng points. Specified as
@@ -81,7 +93,10 @@ class SnapToRoadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get path => $_getSZ(0);
   @$pb.TagNumber(1)
-  set path($core.String v) { $_setString(0, v); }
+  set path($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
@@ -91,7 +106,10 @@ class SnapToRoadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get interpolate => $_getBF(1);
   @$pb.TagNumber(2)
-  set interpolate($core.bool v) { $_setBool(1, v); }
+  set interpolate($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInterpolate() => $_has(1);
   @$pb.TagNumber(2)
@@ -102,7 +120,10 @@ class SnapToRoadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get assetId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set assetId($core.String v) { $_setString(2, v); }
+  set assetId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAssetId() => $_has(2);
   @$pb.TagNumber(3)
@@ -112,7 +133,10 @@ class SnapToRoadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TravelMode get travelMode => $_getN(3);
   @$pb.TagNumber(4)
-  set travelMode(TravelMode v) { setField(4, v); }
+  set travelMode(TravelMode v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTravelMode() => $_has(3);
   @$pb.TagNumber(4)
@@ -139,42 +163,56 @@ class SnappedPoint extends $pb.GeneratedMessage {
     return $result;
   }
   SnappedPoint._() : super();
-  factory SnappedPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SnappedPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SnappedPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SnappedPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SnappedPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.roads.v1op'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
-    ..aOM<$307.UInt32Value>(2, _omitFieldNames ? '' : 'originalIndex', subBuilder: $307.UInt32Value.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SnappedPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.roads.v1op'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $325.LatLng.create)
+    ..aOM<$307.UInt32Value>(2, _omitFieldNames ? '' : 'originalIndex',
+        subBuilder: $307.UInt32Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'placeId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SnappedPoint clone() => SnappedPoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SnappedPoint copyWith(void Function(SnappedPoint) updates) => super.copyWith((message) => updates(message as SnappedPoint)) as SnappedPoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SnappedPoint copyWith(void Function(SnappedPoint) updates) =>
+      super.copyWith((message) => updates(message as SnappedPoint))
+          as SnappedPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SnappedPoint create() => SnappedPoint._();
   SnappedPoint createEmptyInstance() => create();
-  static $pb.PbList<SnappedPoint> createRepeated() => $pb.PbList<SnappedPoint>();
+  static $pb.PbList<SnappedPoint> createRepeated() =>
+      $pb.PbList<SnappedPoint>();
   @$core.pragma('dart2js:noInline')
-  static SnappedPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SnappedPoint>(create);
+  static SnappedPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SnappedPoint>(create);
   static SnappedPoint? _defaultInstance;
 
   /// The lat,lng of the snapped location.
   @$pb.TagNumber(1)
   $325.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($325.LatLng v) { setField(1, v); }
+  set location($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -188,7 +226,10 @@ class SnappedPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $307.UInt32Value get originalIndex => $_getN(1);
   @$pb.TagNumber(2)
-  set originalIndex($307.UInt32Value v) { setField(2, v); }
+  set originalIndex($307.UInt32Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOriginalIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -201,7 +242,10 @@ class SnappedPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get placeId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set placeId($core.String v) { $_setString(2, v); }
+  set placeId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPlaceId() => $_has(2);
   @$pb.TagNumber(3)
@@ -225,34 +269,45 @@ class SnapToRoadsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SnapToRoadsResponse._() : super();
-  factory SnapToRoadsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SnapToRoadsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SnapToRoadsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SnapToRoadsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SnapToRoadsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.roads.v1op'), createEmptyInstance: create)
-    ..pc<SnappedPoint>(1, _omitFieldNames ? '' : 'snappedPoints', $pb.PbFieldType.PM, subBuilder: SnappedPoint.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SnapToRoadsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.roads.v1op'),
+      createEmptyInstance: create)
+    ..pc<SnappedPoint>(
+        1, _omitFieldNames ? '' : 'snappedPoints', $pb.PbFieldType.PM,
+        subBuilder: SnappedPoint.create)
     ..aOS(2, _omitFieldNames ? '' : 'warningMessage')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SnapToRoadsResponse clone() => SnapToRoadsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SnapToRoadsResponse copyWith(void Function(SnapToRoadsResponse) updates) => super.copyWith((message) => updates(message as SnapToRoadsResponse)) as SnapToRoadsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SnapToRoadsResponse copyWith(void Function(SnapToRoadsResponse) updates) =>
+      super.copyWith((message) => updates(message as SnapToRoadsResponse))
+          as SnapToRoadsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SnapToRoadsResponse create() => SnapToRoadsResponse._();
   SnapToRoadsResponse createEmptyInstance() => create();
-  static $pb.PbList<SnapToRoadsResponse> createRepeated() => $pb.PbList<SnapToRoadsResponse>();
+  static $pb.PbList<SnapToRoadsResponse> createRepeated() =>
+      $pb.PbList<SnapToRoadsResponse>();
   @$core.pragma('dart2js:noInline')
-  static SnapToRoadsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SnapToRoadsResponse>(create);
+  static SnapToRoadsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SnapToRoadsResponse>(create);
   static SnapToRoadsResponse? _defaultInstance;
 
   /// A list of snapped points.
@@ -264,7 +319,10 @@ class SnapToRoadsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get warningMessage => $_getSZ(1);
   @$pb.TagNumber(2)
-  set warningMessage($core.String v) { $_setString(1, v); }
+  set warningMessage($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasWarningMessage() => $_has(1);
   @$pb.TagNumber(2)
@@ -288,34 +346,48 @@ class ListNearestRoadsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListNearestRoadsRequest._() : super();
-  factory ListNearestRoadsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNearestRoadsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListNearestRoadsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListNearestRoadsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNearestRoadsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.roads.v1op'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListNearestRoadsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.roads.v1op'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'points')
-    ..e<TravelMode>(2, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: TravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: TravelMode.valueOf, enumValues: TravelMode.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<TravelMode>(2, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
+        defaultOrMaker: TravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: TravelMode.valueOf,
+        enumValues: TravelMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNearestRoadsRequest clone() => ListNearestRoadsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNearestRoadsRequest copyWith(void Function(ListNearestRoadsRequest) updates) => super.copyWith((message) => updates(message as ListNearestRoadsRequest)) as ListNearestRoadsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListNearestRoadsRequest clone() =>
+      ListNearestRoadsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListNearestRoadsRequest copyWith(
+          void Function(ListNearestRoadsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListNearestRoadsRequest))
+          as ListNearestRoadsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListNearestRoadsRequest create() => ListNearestRoadsRequest._();
   ListNearestRoadsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListNearestRoadsRequest> createRepeated() => $pb.PbList<ListNearestRoadsRequest>();
+  static $pb.PbList<ListNearestRoadsRequest> createRepeated() =>
+      $pb.PbList<ListNearestRoadsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListNearestRoadsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNearestRoadsRequest>(create);
+  static ListNearestRoadsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListNearestRoadsRequest>(create);
   static ListNearestRoadsRequest? _defaultInstance;
 
   /// The points to be snapped as a series of lat, lng points. Specified as
@@ -323,7 +395,10 @@ class ListNearestRoadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get points => $_getSZ(0);
   @$pb.TagNumber(1)
-  set points($core.String v) { $_setString(0, v); }
+  set points($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPoints() => $_has(0);
   @$pb.TagNumber(1)
@@ -333,7 +408,10 @@ class ListNearestRoadsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TravelMode get travelMode => $_getN(1);
   @$pb.TagNumber(2)
-  set travelMode(TravelMode v) { setField(2, v); }
+  set travelMode(TravelMode v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTravelMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -353,33 +431,46 @@ class ListNearestRoadsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListNearestRoadsResponse._() : super();
-  factory ListNearestRoadsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNearestRoadsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListNearestRoadsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListNearestRoadsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNearestRoadsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.roads.v1op'), createEmptyInstance: create)
-    ..pc<SnappedPoint>(1, _omitFieldNames ? '' : 'snappedPoints', $pb.PbFieldType.PM, subBuilder: SnappedPoint.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListNearestRoadsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.roads.v1op'),
+      createEmptyInstance: create)
+    ..pc<SnappedPoint>(
+        1, _omitFieldNames ? '' : 'snappedPoints', $pb.PbFieldType.PM,
+        subBuilder: SnappedPoint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNearestRoadsResponse clone() => ListNearestRoadsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNearestRoadsResponse copyWith(void Function(ListNearestRoadsResponse) updates) => super.copyWith((message) => updates(message as ListNearestRoadsResponse)) as ListNearestRoadsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListNearestRoadsResponse clone() =>
+      ListNearestRoadsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListNearestRoadsResponse copyWith(
+          void Function(ListNearestRoadsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListNearestRoadsResponse))
+          as ListNearestRoadsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListNearestRoadsResponse create() => ListNearestRoadsResponse._();
   ListNearestRoadsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListNearestRoadsResponse> createRepeated() => $pb.PbList<ListNearestRoadsResponse>();
+  static $pb.PbList<ListNearestRoadsResponse> createRepeated() =>
+      $pb.PbList<ListNearestRoadsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListNearestRoadsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNearestRoadsResponse>(create);
+  static ListNearestRoadsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListNearestRoadsResponse>(create);
   static ListNearestRoadsResponse? _defaultInstance;
 
   /// A list of snapped points.
@@ -387,6 +478,6 @@ class ListNearestRoadsResponse extends $pb.GeneratedMessage {
   $core.List<SnappedPoint> get snappedPoints => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

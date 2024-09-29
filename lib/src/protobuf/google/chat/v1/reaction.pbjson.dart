@@ -18,8 +18,23 @@ const Reaction$json = {
   '1': 'Reaction',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'user', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.User', '8': {}, '10': 'user'},
-    {'1': 'emoji', '3': 3, '4': 1, '5': 11, '6': '.google.chat.v1.Emoji', '10': 'emoji'},
+    {
+      '1': 'user',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.User',
+      '8': {},
+      '10': 'user'
+    },
+    {
+      '1': 'emoji',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Emoji',
+      '10': 'emoji'
+    },
   ],
   '7': {},
 };
@@ -36,7 +51,16 @@ const Emoji$json = {
   '1': 'Emoji',
   '2': [
     {'1': 'unicode', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'unicode'},
-    {'1': 'custom_emoji', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.CustomEmoji', '8': {}, '9': 0, '10': 'customEmoji'},
+    {
+      '1': 'custom_emoji',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.CustomEmoji',
+      '8': {},
+      '9': 0,
+      '10': 'customEmoji'
+    },
   ],
   '8': [
     {'1': 'content'},
@@ -58,15 +82,30 @@ const CustomEmoji$json = {
 };
 
 /// Descriptor for `CustomEmoji`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List customEmojiDescriptor = $convert.base64Decode(
-    'CgtDdXN0b21FbW9qaRIVCgN1aWQYASABKAlCA+BBA1IDdWlk');
+final $typed_data.Uint8List customEmojiDescriptor =
+    $convert.base64Decode('CgtDdXN0b21FbW9qaRIVCgN1aWQYASABKAlCA+BBA1IDdWlk');
 
 @$core.Deprecated('Use emojiReactionSummaryDescriptor instead')
 const EmojiReactionSummary$json = {
   '1': 'EmojiReactionSummary',
   '2': [
-    {'1': 'emoji', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Emoji', '10': 'emoji'},
-    {'1': 'reaction_count', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'reactionCount', '17': true},
+    {
+      '1': 'emoji',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Emoji',
+      '10': 'emoji'
+    },
+    {
+      '1': 'reaction_count',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'reactionCount',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_reaction_count'},
@@ -84,7 +123,15 @@ const CreateReactionRequest$json = {
   '1': 'CreateReactionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'reaction', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.Reaction', '8': {}, '10': 'reaction'},
+    {
+      '1': 'reaction',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Reaction',
+      '8': {},
+      '10': 'reaction'
+    },
   ],
 };
 
@@ -116,7 +163,14 @@ final $typed_data.Uint8List listReactionsRequestDescriptor = $convert.base64Deco
 const ListReactionsResponse$json = {
   '1': 'ListReactionsResponse',
   '2': [
-    {'1': 'reactions', '3': 1, '4': 3, '5': 11, '6': '.google.chat.v1.Reaction', '10': 'reactions'},
+    {
+      '1': 'reactions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Reaction',
+      '10': 'reactions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -139,4 +193,3 @@ const DeleteReactionRequest$json = {
 final $typed_data.Uint8List deleteReactionRequestDescriptor = $convert.base64Decode(
     'ChVEZWxldGVSZWFjdGlvblJlcXVlc3QSOAoEbmFtZRgBIAEoCUIk4EEC+kEeChxjaGF0Lmdvb2'
     'dsZWFwaXMuY29tL1JlYWN0aW9uUgRuYW1l');
-

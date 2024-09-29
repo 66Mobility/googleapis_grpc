@@ -28,24 +28,32 @@ class TollInfo extends $pb.GeneratedMessage {
     return $result;
   }
   TollInfo._() : super();
-  factory TollInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TollInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TollInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TollInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TollInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..pc<$465.Money>(1, _omitFieldNames ? '' : 'estimatedPrice', $pb.PbFieldType.PM, subBuilder: $465.Money.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TollInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routing.v2'),
+      createEmptyInstance: create)
+    ..pc<$465.Money>(
+        1, _omitFieldNames ? '' : 'estimatedPrice', $pb.PbFieldType.PM,
+        subBuilder: $465.Money.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TollInfo clone() => TollInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TollInfo copyWith(void Function(TollInfo) updates) => super.copyWith((message) => updates(message as TollInfo)) as TollInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TollInfo copyWith(void Function(TollInfo) updates) =>
+      super.copyWith((message) => updates(message as TollInfo)) as TollInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -54,7 +62,8 @@ class TollInfo extends $pb.GeneratedMessage {
   TollInfo createEmptyInstance() => create();
   static $pb.PbList<TollInfo> createRepeated() => $pb.PbList<TollInfo>();
   @$core.pragma('dart2js:noInline')
-  static TollInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TollInfo>(create);
+  static TollInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TollInfo>(create);
   static TollInfo? _defaultInstance;
 
   /// The monetary amount of tolls for the corresponding
@@ -68,6 +77,6 @@ class TollInfo extends $pb.GeneratedMessage {
   $core.List<$465.Money> get estimatedPrice => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

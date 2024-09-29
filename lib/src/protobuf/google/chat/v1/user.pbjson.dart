@@ -20,7 +20,14 @@ const User$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'domain_id', '3': 6, '4': 1, '5': 9, '10': 'domainId'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.chat.v1.User.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.User.Type',
+      '10': 'type'
+    },
     {'1': 'is_anonymous', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'isAnonymous'},
   ],
   '4': [User_Type$json],
@@ -43,4 +50,3 @@ final $typed_data.Uint8List userDescriptor = $convert.base64Decode(
     'Lmdvb2dsZS5jaGF0LnYxLlVzZXIuVHlwZVIEdHlwZRImCgxpc19hbm9ueW1vdXMYByABKAhCA+'
     'BBA1ILaXNBbm9ueW1vdXMiMAoEVHlwZRIUChBUWVBFX1VOU1BFQ0lGSUVEEAASCQoFSFVNQU4Q'
     'ARIHCgNCT1QQAg==');
-

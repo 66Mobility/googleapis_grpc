@@ -18,12 +18,60 @@ const Membership$json = {
   '1': 'Membership',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.chat.v1.Membership.MembershipState', '8': {}, '10': 'state'},
-    {'1': 'role', '3': 7, '4': 1, '5': 14, '6': '.google.chat.v1.Membership.MembershipRole', '8': {}, '10': 'role'},
-    {'1': 'member', '3': 3, '4': 1, '5': 11, '6': '.google.chat.v1.User', '9': 0, '10': 'member'},
-    {'1': 'group_member', '3': 5, '4': 1, '5': 11, '6': '.google.chat.v1.Group', '9': 0, '10': 'groupMember'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'delete_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'deleteTime'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.Membership.MembershipState',
+      '8': {},
+      '10': 'state'
+    },
+    {
+      '1': 'role',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.Membership.MembershipRole',
+      '8': {},
+      '10': 'role'
+    },
+    {
+      '1': 'member',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.User',
+      '9': 0,
+      '10': 'member'
+    },
+    {
+      '1': 'group_member',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Group',
+      '9': 0,
+      '10': 'groupMember'
+    },
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'deleteTime'
+    },
   ],
   '4': [Membership_MembershipState$json, Membership_MembershipRole$json],
   '7': {},
@@ -74,7 +122,15 @@ const CreateMembershipRequest$json = {
   '1': 'CreateMembershipRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'membership', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.Membership', '8': {}, '10': 'membership'},
+    {
+      '1': 'membership',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Membership',
+      '8': {},
+      '10': 'membership'
+    },
     {'1': 'use_admin_access', '3': 5, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
@@ -90,8 +146,24 @@ final $typed_data.Uint8List createMembershipRequestDescriptor = $convert.base64D
 const UpdateMembershipRequest$json = {
   '1': 'UpdateMembershipRequest',
   '2': [
-    {'1': 'membership', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Membership', '8': {}, '10': 'membership'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'membership',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Membership',
+      '8': {},
+      '10': 'membership'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
     {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
@@ -130,7 +202,15 @@ final $typed_data.Uint8List listMembershipsRequestDescriptor = $convert.base64De
 const ListMembershipsResponse$json = {
   '1': 'ListMembershipsResponse',
   '2': [
-    {'1': 'memberships', '3': 1, '4': 3, '5': 11, '6': '.google.chat.v1.Membership', '8': {}, '10': 'memberships'},
+    {
+      '1': 'memberships',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Membership',
+      '8': {},
+      '10': 'memberships'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -170,4 +250,3 @@ final $typed_data.Uint8List deleteMembershipRequestDescriptor = $convert.base64D
     'ChdEZWxldGVNZW1iZXJzaGlwUmVxdWVzdBI6CgRuYW1lGAEgASgJQibgQQL6QSAKHmNoYXQuZ2'
     '9vZ2xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZRIoChB1c2VfYWRtaW5fYWNjZXNzGAIgASgI'
     'Ug51c2VBZG1pbkFjY2Vzcw==');
-

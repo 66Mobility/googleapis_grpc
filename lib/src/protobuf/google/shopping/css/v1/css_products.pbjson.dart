@@ -31,12 +31,50 @@ const CssProduct$json = {
   '1': 'CssProduct',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'raw_provided_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'rawProvidedId'},
-    {'1': 'content_language', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
+    {
+      '1': 'raw_provided_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'rawProvidedId'
+    },
+    {
+      '1': 'content_language',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
     {'1': 'feed_label', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'feedLabel'},
-    {'1': 'attributes', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.css.v1.Attributes', '8': {}, '10': 'attributes'},
-    {'1': 'custom_attributes', '3': 6, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '8': {}, '10': 'customAttributes'},
-    {'1': 'css_product_status', '3': 8, '4': 1, '5': 11, '6': '.google.shopping.css.v1.CssProductStatus', '8': {}, '10': 'cssProductStatus'},
+    {
+      '1': 'attributes',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.Attributes',
+      '8': {},
+      '10': 'attributes'
+    },
+    {
+      '1': 'custom_attributes',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '8': {},
+      '10': 'customAttributes'
+    },
+    {
+      '1': 'css_product_status',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.CssProductStatus',
+      '8': {},
+      '10': 'cssProductStatus'
+    },
   ],
   '7': {},
 };
@@ -74,7 +112,14 @@ final $typed_data.Uint8List listCssProductsRequestDescriptor = $convert.base64De
 const ListCssProductsResponse$json = {
   '1': 'ListCssProductsResponse',
   '2': [
-    {'1': 'css_products', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.css.v1.CssProduct', '10': 'cssProducts'},
+    {
+      '1': 'css_products',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.css.v1.CssProduct',
+      '10': 'cssProducts'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -84,4 +129,3 @@ final $typed_data.Uint8List listCssProductsResponseDescriptor = $convert.base64D
     'ChdMaXN0Q3NzUHJvZHVjdHNSZXNwb25zZRJFCgxjc3NfcHJvZHVjdHMYASADKAsyIi5nb29nbG'
     'Uuc2hvcHBpbmcuY3NzLnYxLkNzc1Byb2R1Y3RSC2Nzc1Byb2R1Y3RzEiYKD25leHRfcGFnZV90'
     'b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
-

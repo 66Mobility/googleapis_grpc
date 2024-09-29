@@ -17,12 +17,46 @@ import 'dart:typed_data' as $typed_data;
 const SlsaProvenance$json = {
   '1': 'SlsaProvenance',
   '2': [
-    {'1': 'builder', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenance.SlsaBuilder', '10': 'builder'},
-    {'1': 'recipe', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenance.SlsaRecipe', '10': 'recipe'},
-    {'1': 'metadata', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenance.SlsaMetadata', '10': 'metadata'},
-    {'1': 'materials', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.SlsaProvenance.Material', '10': 'materials'},
+    {
+      '1': 'builder',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenance.SlsaBuilder',
+      '10': 'builder'
+    },
+    {
+      '1': 'recipe',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenance.SlsaRecipe',
+      '10': 'recipe'
+    },
+    {
+      '1': 'metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenance.SlsaMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'materials',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenance.Material',
+      '10': 'materials'
+    },
   ],
-  '3': [SlsaProvenance_SlsaRecipe$json, SlsaProvenance_SlsaCompleteness$json, SlsaProvenance_SlsaMetadata$json, SlsaProvenance_SlsaBuilder$json, SlsaProvenance_Material$json],
+  '3': [
+    SlsaProvenance_SlsaRecipe$json,
+    SlsaProvenance_SlsaCompleteness$json,
+    SlsaProvenance_SlsaMetadata$json,
+    SlsaProvenance_SlsaBuilder$json,
+    SlsaProvenance_Material$json
+  ],
 };
 
 @$core.Deprecated('Use slsaProvenanceDescriptor instead')
@@ -30,10 +64,30 @@ const SlsaProvenance_SlsaRecipe$json = {
   '1': 'SlsaRecipe',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'defined_in_material', '3': 2, '4': 1, '5': 3, '10': 'definedInMaterial'},
+    {
+      '1': 'defined_in_material',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'definedInMaterial'
+    },
     {'1': 'entry_point', '3': 3, '4': 1, '5': 9, '10': 'entryPoint'},
-    {'1': 'arguments', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'arguments'},
-    {'1': 'environment', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'environment'},
+    {
+      '1': 'arguments',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'arguments'
+    },
+    {
+      '1': 'environment',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'environment'
+    },
   ],
 };
 
@@ -51,10 +105,37 @@ const SlsaProvenance_SlsaCompleteness$json = {
 const SlsaProvenance_SlsaMetadata$json = {
   '1': 'SlsaMetadata',
   '2': [
-    {'1': 'build_invocation_id', '3': 1, '4': 1, '5': 9, '10': 'buildInvocationId'},
-    {'1': 'build_started_on', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'buildStartedOn'},
-    {'1': 'build_finished_on', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'buildFinishedOn'},
-    {'1': 'completeness', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.SlsaProvenance.SlsaCompleteness', '10': 'completeness'},
+    {
+      '1': 'build_invocation_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'buildInvocationId'
+    },
+    {
+      '1': 'build_started_on',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'buildStartedOn'
+    },
+    {
+      '1': 'build_finished_on',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'buildFinishedOn'
+    },
+    {
+      '1': 'completeness',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenance.SlsaCompleteness',
+      '10': 'completeness'
+    },
     {'1': 'reproducible', '3': 5, '4': 1, '5': 8, '10': 'reproducible'},
   ],
 };
@@ -72,7 +153,14 @@ const SlsaProvenance_Material$json = {
   '1': 'Material',
   '2': [
     {'1': 'uri', '3': 1, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'digest', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.SlsaProvenance.Material.DigestEntry', '10': 'digest'},
+    {
+      '1': 'digest',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SlsaProvenance.Material.DigestEntry',
+      '10': 'digest'
+    },
   ],
   '3': [SlsaProvenance_Material_DigestEntry$json],
 };
@@ -110,4 +198,3 @@ final $typed_data.Uint8List slsaProvenanceDescriptor = $convert.base64Decode(
     'CVIDdXJpEkcKBmRpZ2VzdBgCIAMoCzIvLmdyYWZlYXMudjEuU2xzYVByb3ZlbmFuY2UuTWF0ZX'
     'JpYWwuRGlnZXN0RW50cnlSBmRpZ2VzdBo5CgtEaWdlc3RFbnRyeRIQCgNrZXkYASABKAlSA2tl'
     'eRIUCgV2YWx1ZRgCIAEoCVIFdmFsdWU6AjgB');
-

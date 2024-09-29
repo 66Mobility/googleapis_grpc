@@ -27,24 +27,30 @@ class SourceInfo extends $pb.GeneratedMessage {
     return $result;
   }
   SourceInfo._() : super();
-  factory SourceInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SourceInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SourceInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SourceInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SourceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<$321.Any>(1, _omitFieldNames ? '' : 'sourceFiles', $pb.PbFieldType.PM, subBuilder: $321.Any.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SourceInfo',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<$321.Any>(1, _omitFieldNames ? '' : 'sourceFiles', $pb.PbFieldType.PM,
+        subBuilder: $321.Any.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SourceInfo clone() => SourceInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SourceInfo copyWith(void Function(SourceInfo) updates) => super.copyWith((message) => updates(message as SourceInfo)) as SourceInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SourceInfo copyWith(void Function(SourceInfo) updates) =>
+      super.copyWith((message) => updates(message as SourceInfo)) as SourceInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -53,7 +59,8 @@ class SourceInfo extends $pb.GeneratedMessage {
   SourceInfo createEmptyInstance() => create();
   static $pb.PbList<SourceInfo> createRepeated() => $pb.PbList<SourceInfo>();
   @$core.pragma('dart2js:noInline')
-  static SourceInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SourceInfo>(create);
+  static SourceInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SourceInfo>(create);
   static SourceInfo? _defaultInstance;
 
   /// All files used during config generation.
@@ -61,6 +68,6 @@ class SourceInfo extends $pb.GeneratedMessage {
   $core.List<$321.Any> get sourceFiles => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

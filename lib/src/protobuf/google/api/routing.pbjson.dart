@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const RoutingRule$json = {
   '1': 'RoutingRule',
   '2': [
-    {'1': 'routing_parameters', '3': 2, '4': 3, '5': 11, '6': '.google.api.RoutingParameter', '10': 'routingParameters'},
+    {
+      '1': 'routing_parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.RoutingParameter',
+      '10': 'routingParameters'
+    },
   ],
 };
 
@@ -39,4 +46,3 @@ const RoutingParameter$json = {
 final $typed_data.Uint8List routingParameterDescriptor = $convert.base64Decode(
     'ChBSb3V0aW5nUGFyYW1ldGVyEhQKBWZpZWxkGAEgASgJUgVmaWVsZBIjCg1wYXRoX3RlbXBsYX'
     'RlGAIgASgJUgxwYXRoVGVtcGxhdGU=');
-

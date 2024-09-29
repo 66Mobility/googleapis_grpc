@@ -46,36 +46,49 @@ class SendInteractionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SendInteractionRequest._() : super();
-  factory SendInteractionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SendInteractionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SendInteractionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SendInteractionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SendInteractionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SendInteractionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'project')
-    ..aOM<UserInput>(2, _omitFieldNames ? '' : 'input', subBuilder: UserInput.create)
-    ..aOM<DeviceProperties>(3, _omitFieldNames ? '' : 'deviceProperties', subBuilder: DeviceProperties.create)
+    ..aOM<UserInput>(2, _omitFieldNames ? '' : 'input',
+        subBuilder: UserInput.create)
+    ..aOM<DeviceProperties>(3, _omitFieldNames ? '' : 'deviceProperties',
+        subBuilder: DeviceProperties.create)
     ..aOS(4, _omitFieldNames ? '' : 'conversationToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SendInteractionRequest clone() => SendInteractionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SendInteractionRequest copyWith(void Function(SendInteractionRequest) updates) => super.copyWith((message) => updates(message as SendInteractionRequest)) as SendInteractionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SendInteractionRequest clone() =>
+      SendInteractionRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SendInteractionRequest copyWith(
+          void Function(SendInteractionRequest) updates) =>
+      super.copyWith((message) => updates(message as SendInteractionRequest))
+          as SendInteractionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SendInteractionRequest create() => SendInteractionRequest._();
   SendInteractionRequest createEmptyInstance() => create();
-  static $pb.PbList<SendInteractionRequest> createRepeated() => $pb.PbList<SendInteractionRequest>();
+  static $pb.PbList<SendInteractionRequest> createRepeated() =>
+      $pb.PbList<SendInteractionRequest>();
   @$core.pragma('dart2js:noInline')
-  static SendInteractionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SendInteractionRequest>(create);
+  static SendInteractionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SendInteractionRequest>(create);
   static SendInteractionRequest? _defaultInstance;
 
   /// Required. The project being tested, indicated by the Project ID.
@@ -83,7 +96,10 @@ class SendInteractionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get project => $_getSZ(0);
   @$pb.TagNumber(1)
-  set project($core.String v) { $_setString(0, v); }
+  set project($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProject() => $_has(0);
   @$pb.TagNumber(1)
@@ -93,7 +109,10 @@ class SendInteractionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   UserInput get input => $_getN(1);
   @$pb.TagNumber(2)
-  set input(UserInput v) { setField(2, v); }
+  set input(UserInput v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInput() => $_has(1);
   @$pb.TagNumber(2)
@@ -105,7 +124,10 @@ class SendInteractionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DeviceProperties get deviceProperties => $_getN(2);
   @$pb.TagNumber(3)
-  set deviceProperties(DeviceProperties v) { setField(3, v); }
+  set deviceProperties(DeviceProperties v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeviceProperties() => $_has(2);
   @$pb.TagNumber(3)
@@ -120,7 +142,10 @@ class SendInteractionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get conversationToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set conversationToken($core.String v) { $_setString(3, v); }
+  set conversationToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasConversationToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -143,25 +168,35 @@ class UserInput extends $pb.GeneratedMessage {
     return $result;
   }
   UserInput._() : super();
-  factory UserInput.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UserInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UserInput.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UserInput.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UserInput',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..e<UserInput_InputType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: UserInput_InputType.INPUT_TYPE_UNSPECIFIED, valueOf: UserInput_InputType.valueOf, enumValues: UserInput_InputType.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<UserInput_InputType>(
+        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: UserInput_InputType.INPUT_TYPE_UNSPECIFIED,
+        valueOf: UserInput_InputType.valueOf,
+        enumValues: UserInput_InputType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UserInput clone() => UserInput()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UserInput copyWith(void Function(UserInput) updates) => super.copyWith((message) => updates(message as UserInput)) as UserInput;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UserInput copyWith(void Function(UserInput) updates) =>
+      super.copyWith((message) => updates(message as UserInput)) as UserInput;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -170,14 +205,18 @@ class UserInput extends $pb.GeneratedMessage {
   UserInput createEmptyInstance() => create();
   static $pb.PbList<UserInput> createRepeated() => $pb.PbList<UserInput>();
   @$core.pragma('dart2js:noInline')
-  static UserInput getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UserInput>(create);
+  static UserInput getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UserInput>(create);
   static UserInput? _defaultInstance;
 
   /// Content of the input sent by the user.
   @$pb.TagNumber(1)
   $core.String get query => $_getSZ(0);
   @$pb.TagNumber(1)
-  set query($core.String v) { $_setString(0, v); }
+  set query($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -187,7 +226,10 @@ class UserInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   UserInput_InputType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(UserInput_InputType v) { setField(2, v); }
+  set type(UserInput_InputType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -218,43 +260,60 @@ class DeviceProperties extends $pb.GeneratedMessage {
     return $result;
   }
   DeviceProperties._() : super();
-  factory DeviceProperties.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeviceProperties.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeviceProperties.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeviceProperties.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceProperties', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..e<DeviceProperties_Surface>(1, _omitFieldNames ? '' : 'surface', $pb.PbFieldType.OE, defaultOrMaker: DeviceProperties_Surface.SURFACE_UNSPECIFIED, valueOf: DeviceProperties_Surface.valueOf, enumValues: DeviceProperties_Surface.values)
-    ..aOM<Location>(2, _omitFieldNames ? '' : 'location', subBuilder: Location.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeviceProperties',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..e<DeviceProperties_Surface>(
+        1, _omitFieldNames ? '' : 'surface', $pb.PbFieldType.OE,
+        defaultOrMaker: DeviceProperties_Surface.SURFACE_UNSPECIFIED,
+        valueOf: DeviceProperties_Surface.valueOf,
+        enumValues: DeviceProperties_Surface.values)
+    ..aOM<Location>(2, _omitFieldNames ? '' : 'location',
+        subBuilder: Location.create)
     ..aOS(3, _omitFieldNames ? '' : 'locale')
     ..aOS(4, _omitFieldNames ? '' : 'timeZone')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeviceProperties clone() => DeviceProperties()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeviceProperties copyWith(void Function(DeviceProperties) updates) => super.copyWith((message) => updates(message as DeviceProperties)) as DeviceProperties;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeviceProperties copyWith(void Function(DeviceProperties) updates) =>
+      super.copyWith((message) => updates(message as DeviceProperties))
+          as DeviceProperties;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceProperties create() => DeviceProperties._();
   DeviceProperties createEmptyInstance() => create();
-  static $pb.PbList<DeviceProperties> createRepeated() => $pb.PbList<DeviceProperties>();
+  static $pb.PbList<DeviceProperties> createRepeated() =>
+      $pb.PbList<DeviceProperties>();
   @$core.pragma('dart2js:noInline')
-  static DeviceProperties getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeviceProperties>(create);
+  static DeviceProperties getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeviceProperties>(create);
   static DeviceProperties? _defaultInstance;
 
   /// Surface used for interacting with the Action.
   @$pb.TagNumber(1)
   DeviceProperties_Surface get surface => $_getN(0);
   @$pb.TagNumber(1)
-  set surface(DeviceProperties_Surface v) { setField(1, v); }
+  set surface(DeviceProperties_Surface v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSurface() => $_has(0);
   @$pb.TagNumber(1)
@@ -264,7 +323,10 @@ class DeviceProperties extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Location get location => $_getN(1);
   @$pb.TagNumber(2)
-  set location(Location v) { setField(2, v); }
+  set location(Location v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLocation() => $_has(1);
   @$pb.TagNumber(2)
@@ -279,7 +341,10 @@ class DeviceProperties extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get locale => $_getSZ(2);
   @$pb.TagNumber(3)
-  set locale($core.String v) { $_setString(2, v); }
+  set locale($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLocale() => $_has(2);
   @$pb.TagNumber(3)
@@ -291,7 +356,10 @@ class DeviceProperties extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get timeZone => $_getSZ(3);
   @$pb.TagNumber(4)
-  set timeZone($core.String v) { $_setString(3, v); }
+  set timeZone($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTimeZone() => $_has(3);
   @$pb.TagNumber(4)
@@ -322,27 +390,34 @@ class Location extends $pb.GeneratedMessage {
     return $result;
   }
   Location._() : super();
-  factory Location.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Location.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Location.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Location.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Location', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates', subBuilder: $325.LatLng.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Location',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates',
+        subBuilder: $325.LatLng.create)
     ..aOS(2, _omitFieldNames ? '' : 'formattedAddress')
     ..aOS(3, _omitFieldNames ? '' : 'zipCode')
     ..aOS(4, _omitFieldNames ? '' : 'city')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Location clone() => Location()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Location copyWith(void Function(Location) updates) => super.copyWith((message) => updates(message as Location)) as Location;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Location copyWith(void Function(Location) updates) =>
+      super.copyWith((message) => updates(message as Location)) as Location;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -351,7 +426,8 @@ class Location extends $pb.GeneratedMessage {
   Location createEmptyInstance() => create();
   static $pb.PbList<Location> createRepeated() => $pb.PbList<Location>();
   @$core.pragma('dart2js:noInline')
-  static Location getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Location>(create);
+  static Location getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Location>(create);
   static Location? _defaultInstance;
 
   /// Geo coordinates.
@@ -360,7 +436,10 @@ class Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get coordinates => $_getN(0);
   @$pb.TagNumber(1)
-  set coordinates($325.LatLng v) { setField(1, v); }
+  set coordinates($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCoordinates() => $_has(0);
   @$pb.TagNumber(1)
@@ -374,7 +453,10 @@ class Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get formattedAddress => $_getSZ(1);
   @$pb.TagNumber(2)
-  set formattedAddress($core.String v) { $_setString(1, v); }
+  set formattedAddress($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFormattedAddress() => $_has(1);
   @$pb.TagNumber(2)
@@ -388,7 +470,10 @@ class Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get zipCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set zipCode($core.String v) { $_setString(2, v); }
+  set zipCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasZipCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -402,7 +487,10 @@ class Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get city => $_getSZ(3);
   @$pb.TagNumber(4)
-  set city($core.String v) { $_setString(3, v); }
+  set city($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCity() => $_has(3);
   @$pb.TagNumber(4)
@@ -429,42 +517,57 @@ class SendInteractionResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SendInteractionResponse._() : super();
-  factory SendInteractionResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SendInteractionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SendInteractionResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SendInteractionResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SendInteractionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SendInteractionResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOM<Output>(1, _omitFieldNames ? '' : 'output', subBuilder: Output.create)
-    ..aOM<Diagnostics>(2, _omitFieldNames ? '' : 'diagnostics', subBuilder: Diagnostics.create)
+    ..aOM<Diagnostics>(2, _omitFieldNames ? '' : 'diagnostics',
+        subBuilder: Diagnostics.create)
     ..aOS(3, _omitFieldNames ? '' : 'conversationToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SendInteractionResponse clone() => SendInteractionResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SendInteractionResponse copyWith(void Function(SendInteractionResponse) updates) => super.copyWith((message) => updates(message as SendInteractionResponse)) as SendInteractionResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SendInteractionResponse clone() =>
+      SendInteractionResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SendInteractionResponse copyWith(
+          void Function(SendInteractionResponse) updates) =>
+      super.copyWith((message) => updates(message as SendInteractionResponse))
+          as SendInteractionResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SendInteractionResponse create() => SendInteractionResponse._();
   SendInteractionResponse createEmptyInstance() => create();
-  static $pb.PbList<SendInteractionResponse> createRepeated() => $pb.PbList<SendInteractionResponse>();
+  static $pb.PbList<SendInteractionResponse> createRepeated() =>
+      $pb.PbList<SendInteractionResponse>();
   @$core.pragma('dart2js:noInline')
-  static SendInteractionResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SendInteractionResponse>(create);
+  static SendInteractionResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SendInteractionResponse>(create);
   static SendInteractionResponse? _defaultInstance;
 
   /// Output provided to the user.
   @$pb.TagNumber(1)
   Output get output => $_getN(0);
   @$pb.TagNumber(1)
-  set output(Output v) { setField(1, v); }
+  set output(Output v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOutput() => $_has(0);
   @$pb.TagNumber(1)
@@ -476,7 +579,10 @@ class SendInteractionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Diagnostics get diagnostics => $_getN(1);
   @$pb.TagNumber(2)
-  set diagnostics(Diagnostics v) { setField(2, v); }
+  set diagnostics(Diagnostics v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDiagnostics() => $_has(1);
   @$pb.TagNumber(2)
@@ -489,7 +595,10 @@ class SendInteractionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get conversationToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set conversationToken($core.String v) { $_setString(2, v); }
+  set conversationToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasConversationToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -520,27 +629,35 @@ class Output extends $pb.GeneratedMessage {
     return $result;
   }
   Output._() : super();
-  factory Output.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Output.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Output.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Output.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Output', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Output',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..pPS(2, _omitFieldNames ? '' : 'speech')
-    ..aOM<$314.Canvas>(3, _omitFieldNames ? '' : 'canvas', subBuilder: $314.Canvas.create)
-    ..aOM<$320.Prompt>(4, _omitFieldNames ? '' : 'actionsBuilderPrompt', subBuilder: $320.Prompt.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$314.Canvas>(3, _omitFieldNames ? '' : 'canvas',
+        subBuilder: $314.Canvas.create)
+    ..aOM<$320.Prompt>(4, _omitFieldNames ? '' : 'actionsBuilderPrompt',
+        subBuilder: $320.Prompt.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Output clone() => Output()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Output copyWith(void Function(Output) updates) => super.copyWith((message) => updates(message as Output)) as Output;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Output copyWith(void Function(Output) updates) =>
+      super.copyWith((message) => updates(message as Output)) as Output;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -549,14 +666,18 @@ class Output extends $pb.GeneratedMessage {
   Output createEmptyInstance() => create();
   static $pb.PbList<Output> createRepeated() => $pb.PbList<Output>();
   @$core.pragma('dart2js:noInline')
-  static Output getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Output>(create);
+  static Output getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Output>(create);
   static Output? _defaultInstance;
 
   /// Spoken response sent to user as a plain string.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -571,7 +692,10 @@ class Output extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $314.Canvas get canvas => $_getN(2);
   @$pb.TagNumber(3)
-  set canvas($314.Canvas v) { setField(3, v); }
+  set canvas($314.Canvas v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCanvas() => $_has(2);
   @$pb.TagNumber(3)
@@ -585,7 +709,10 @@ class Output extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $320.Prompt get actionsBuilderPrompt => $_getN(3);
   @$pb.TagNumber(4)
-  set actionsBuilderPrompt($320.Prompt v) { setField(4, v); }
+  set actionsBuilderPrompt($320.Prompt v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasActionsBuilderPrompt() => $_has(3);
   @$pb.TagNumber(4)
@@ -606,24 +733,33 @@ class Diagnostics extends $pb.GeneratedMessage {
     return $result;
   }
   Diagnostics._() : super();
-  factory Diagnostics.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Diagnostics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Diagnostics.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Diagnostics.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Diagnostics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..pc<$326.ExecutionEvent>(1, _omitFieldNames ? '' : 'actionsBuilderEvents', $pb.PbFieldType.PM, subBuilder: $326.ExecutionEvent.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Diagnostics',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..pc<$326.ExecutionEvent>(
+        1, _omitFieldNames ? '' : 'actionsBuilderEvents', $pb.PbFieldType.PM,
+        subBuilder: $326.ExecutionEvent.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Diagnostics clone() => Diagnostics()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Diagnostics copyWith(void Function(Diagnostics) updates) => super.copyWith((message) => updates(message as Diagnostics)) as Diagnostics;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Diagnostics copyWith(void Function(Diagnostics) updates) =>
+      super.copyWith((message) => updates(message as Diagnostics))
+          as Diagnostics;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -632,7 +768,8 @@ class Diagnostics extends $pb.GeneratedMessage {
   Diagnostics createEmptyInstance() => create();
   static $pb.PbList<Diagnostics> createRepeated() => $pb.PbList<Diagnostics>();
   @$core.pragma('dart2js:noInline')
-  static Diagnostics getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Diagnostics>(create);
+  static Diagnostics getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Diagnostics>(create);
   static Diagnostics? _defaultInstance;
 
   /// List of events with details about processing of the conversation round
@@ -662,35 +799,44 @@ class MatchIntentsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   MatchIntentsRequest._() : super();
-  factory MatchIntentsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MatchIntentsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MatchIntentsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MatchIntentsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MatchIntentsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MatchIntentsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'project')
     ..aOS(2, _omitFieldNames ? '' : 'query')
     ..aOS(3, _omitFieldNames ? '' : 'locale')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MatchIntentsRequest clone() => MatchIntentsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MatchIntentsRequest copyWith(void Function(MatchIntentsRequest) updates) => super.copyWith((message) => updates(message as MatchIntentsRequest)) as MatchIntentsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MatchIntentsRequest copyWith(void Function(MatchIntentsRequest) updates) =>
+      super.copyWith((message) => updates(message as MatchIntentsRequest))
+          as MatchIntentsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MatchIntentsRequest create() => MatchIntentsRequest._();
   MatchIntentsRequest createEmptyInstance() => create();
-  static $pb.PbList<MatchIntentsRequest> createRepeated() => $pb.PbList<MatchIntentsRequest>();
+  static $pb.PbList<MatchIntentsRequest> createRepeated() =>
+      $pb.PbList<MatchIntentsRequest>();
   @$core.pragma('dart2js:noInline')
-  static MatchIntentsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MatchIntentsRequest>(create);
+  static MatchIntentsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MatchIntentsRequest>(create);
   static MatchIntentsRequest? _defaultInstance;
 
   /// Required. The project being tested, indicated by the Project ID.
@@ -698,7 +844,10 @@ class MatchIntentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get project => $_getSZ(0);
   @$pb.TagNumber(1)
-  set project($core.String v) { $_setString(0, v); }
+  set project($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProject() => $_has(0);
   @$pb.TagNumber(1)
@@ -708,7 +857,10 @@ class MatchIntentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get query => $_getSZ(1);
   @$pb.TagNumber(2)
-  set query($core.String v) { $_setString(1, v); }
+  set query($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQuery() => $_has(1);
   @$pb.TagNumber(2)
@@ -721,7 +873,10 @@ class MatchIntentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get locale => $_getSZ(2);
   @$pb.TagNumber(3)
-  set locale($core.String v) { $_setString(2, v); }
+  set locale($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLocale() => $_has(2);
   @$pb.TagNumber(3)
@@ -740,33 +895,45 @@ class MatchIntentsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   MatchIntentsResponse._() : super();
-  factory MatchIntentsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MatchIntentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MatchIntentsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MatchIntentsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MatchIntentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..pc<$324.Intent>(1, _omitFieldNames ? '' : 'matchedIntents', $pb.PbFieldType.PM, subBuilder: $324.Intent.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MatchIntentsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
+    ..pc<$324.Intent>(
+        1, _omitFieldNames ? '' : 'matchedIntents', $pb.PbFieldType.PM,
+        subBuilder: $324.Intent.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MatchIntentsResponse clone() => MatchIntentsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MatchIntentsResponse copyWith(void Function(MatchIntentsResponse) updates) => super.copyWith((message) => updates(message as MatchIntentsResponse)) as MatchIntentsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MatchIntentsResponse clone() =>
+      MatchIntentsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MatchIntentsResponse copyWith(void Function(MatchIntentsResponse) updates) =>
+      super.copyWith((message) => updates(message as MatchIntentsResponse))
+          as MatchIntentsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MatchIntentsResponse create() => MatchIntentsResponse._();
   MatchIntentsResponse createEmptyInstance() => create();
-  static $pb.PbList<MatchIntentsResponse> createRepeated() => $pb.PbList<MatchIntentsResponse>();
+  static $pb.PbList<MatchIntentsResponse> createRepeated() =>
+      $pb.PbList<MatchIntentsResponse>();
   @$core.pragma('dart2js:noInline')
-  static MatchIntentsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MatchIntentsResponse>(create);
+  static MatchIntentsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MatchIntentsResponse>(create);
   static MatchIntentsResponse? _defaultInstance;
 
   /// Intents matched, ordered from most to least relevant. Only the first
@@ -787,46 +954,63 @@ class SetWebAndAppActivityControlRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SetWebAndAppActivityControlRequest._() : super();
-  factory SetWebAndAppActivityControlRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SetWebAndAppActivityControlRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SetWebAndAppActivityControlRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SetWebAndAppActivityControlRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetWebAndAppActivityControlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SetWebAndAppActivityControlRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SetWebAndAppActivityControlRequest clone() => SetWebAndAppActivityControlRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SetWebAndAppActivityControlRequest copyWith(void Function(SetWebAndAppActivityControlRequest) updates) => super.copyWith((message) => updates(message as SetWebAndAppActivityControlRequest)) as SetWebAndAppActivityControlRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SetWebAndAppActivityControlRequest clone() =>
+      SetWebAndAppActivityControlRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SetWebAndAppActivityControlRequest copyWith(
+          void Function(SetWebAndAppActivityControlRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as SetWebAndAppActivityControlRequest))
+          as SetWebAndAppActivityControlRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SetWebAndAppActivityControlRequest create() => SetWebAndAppActivityControlRequest._();
+  static SetWebAndAppActivityControlRequest create() =>
+      SetWebAndAppActivityControlRequest._();
   SetWebAndAppActivityControlRequest createEmptyInstance() => create();
-  static $pb.PbList<SetWebAndAppActivityControlRequest> createRepeated() => $pb.PbList<SetWebAndAppActivityControlRequest>();
+  static $pb.PbList<SetWebAndAppActivityControlRequest> createRepeated() =>
+      $pb.PbList<SetWebAndAppActivityControlRequest>();
   @$core.pragma('dart2js:noInline')
-  static SetWebAndAppActivityControlRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SetWebAndAppActivityControlRequest>(create);
+  static SetWebAndAppActivityControlRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SetWebAndAppActivityControlRequest>(
+          create);
   static SetWebAndAppActivityControlRequest? _defaultInstance;
 
   /// Whether the setting should be set to an enabled or disabled state.
   @$pb.TagNumber(1)
   $core.bool get enabled => $_getBF(0);
   @$pb.TagNumber(1)
-  set enabled($core.bool v) { $_setBool(0, v); }
+  set enabled($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
   void clearEnabled() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

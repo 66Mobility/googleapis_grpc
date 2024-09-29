@@ -31,40 +31,54 @@ class LabelLock_Capabilities extends $pb.GeneratedMessage {
     return $result;
   }
   LabelLock_Capabilities._() : super();
-  factory LabelLock_Capabilities.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LabelLock_Capabilities.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LabelLock_Capabilities.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LabelLock_Capabilities.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelLock.Capabilities', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LabelLock.Capabilities',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'canViewPolicy')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LabelLock_Capabilities clone() => LabelLock_Capabilities()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LabelLock_Capabilities copyWith(void Function(LabelLock_Capabilities) updates) => super.copyWith((message) => updates(message as LabelLock_Capabilities)) as LabelLock_Capabilities;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LabelLock_Capabilities clone() =>
+      LabelLock_Capabilities()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LabelLock_Capabilities copyWith(
+          void Function(LabelLock_Capabilities) updates) =>
+      super.copyWith((message) => updates(message as LabelLock_Capabilities))
+          as LabelLock_Capabilities;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LabelLock_Capabilities create() => LabelLock_Capabilities._();
   LabelLock_Capabilities createEmptyInstance() => create();
-  static $pb.PbList<LabelLock_Capabilities> createRepeated() => $pb.PbList<LabelLock_Capabilities>();
+  static $pb.PbList<LabelLock_Capabilities> createRepeated() =>
+      $pb.PbList<LabelLock_Capabilities>();
   @$core.pragma('dart2js:noInline')
-  static LabelLock_Capabilities getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LabelLock_Capabilities>(create);
+  static LabelLock_Capabilities getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LabelLock_Capabilities>(create);
   static LabelLock_Capabilities? _defaultInstance;
 
   /// True if the user is authorized to view the policy.
   @$pb.TagNumber(1)
   $core.bool get canViewPolicy => $_getBF(0);
   @$pb.TagNumber(1)
-  set canViewPolicy($core.bool v) { $_setBool(0, v); }
+  set canViewPolicy($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCanViewPolicy() => $_has(0);
   @$pb.TagNumber(1)
@@ -111,31 +125,44 @@ class LabelLock extends $pb.GeneratedMessage {
     return $result;
   }
   LabelLock._() : super();
-  factory LabelLock.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LabelLock.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LabelLock.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LabelLock.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelLock', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LabelLock',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'fieldId')
     ..aOS(3, _omitFieldNames ? '' : 'choiceId')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$393.UserInfo>(5, _omitFieldNames ? '' : 'creator', subBuilder: $393.UserInfo.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'deleteTime', subBuilder: $302.Timestamp.create)
-    ..aOM<LabelLock_Capabilities>(8, _omitFieldNames ? '' : 'capabilities', subBuilder: LabelLock_Capabilities.create)
-    ..e<LabelLock_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: LabelLock_State.STATE_UNSPECIFIED, valueOf: LabelLock_State.valueOf, enumValues: LabelLock_State.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$393.UserInfo>(5, _omitFieldNames ? '' : 'creator',
+        subBuilder: $393.UserInfo.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<LabelLock_Capabilities>(8, _omitFieldNames ? '' : 'capabilities',
+        subBuilder: LabelLock_Capabilities.create)
+    ..e<LabelLock_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: LabelLock_State.STATE_UNSPECIFIED,
+        valueOf: LabelLock_State.valueOf,
+        enumValues: LabelLock_State.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LabelLock clone() => LabelLock()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LabelLock copyWith(void Function(LabelLock) updates) => super.copyWith((message) => updates(message as LabelLock)) as LabelLock;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LabelLock copyWith(void Function(LabelLock) updates) =>
+      super.copyWith((message) => updates(message as LabelLock)) as LabelLock;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -144,14 +171,18 @@ class LabelLock extends $pb.GeneratedMessage {
   LabelLock createEmptyInstance() => create();
   static $pb.PbList<LabelLock> createRepeated() => $pb.PbList<LabelLock>();
   @$core.pragma('dart2js:noInline')
-  static LabelLock getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LabelLock>(create);
+  static LabelLock getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LabelLock>(create);
   static LabelLock? _defaultInstance;
 
   /// Output only. Resource name of this LabelLock.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -162,7 +193,10 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get fieldId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set fieldId($core.String v) { $_setString(1, v); }
+  set fieldId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFieldId() => $_has(1);
   @$pb.TagNumber(2)
@@ -173,7 +207,10 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get choiceId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set choiceId($core.String v) { $_setString(2, v); }
+  set choiceId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasChoiceId() => $_has(2);
   @$pb.TagNumber(3)
@@ -183,7 +220,10 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -197,7 +237,10 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $393.UserInfo get creator => $_getN(4);
   @$pb.TagNumber(5)
-  set creator($393.UserInfo v) { setField(5, v); }
+  set creator($393.UserInfo v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCreator() => $_has(4);
   @$pb.TagNumber(5)
@@ -211,7 +254,10 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get deleteTime => $_getN(5);
   @$pb.TagNumber(6)
-  set deleteTime($302.Timestamp v) { setField(6, v); }
+  set deleteTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDeleteTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -223,7 +269,10 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   LabelLock_Capabilities get capabilities => $_getN(6);
   @$pb.TagNumber(8)
-  set capabilities(LabelLock_Capabilities v) { setField(8, v); }
+  set capabilities(LabelLock_Capabilities v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCapabilities() => $_has(6);
   @$pb.TagNumber(8)
@@ -235,13 +284,16 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   LabelLock_State get state => $_getN(7);
   @$pb.TagNumber(9)
-  set state(LabelLock_State v) { setField(9, v); }
+  set state(LabelLock_State v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(9)
   void clearState() => clearField(9);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

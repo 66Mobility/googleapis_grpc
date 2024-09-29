@@ -44,43 +44,61 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateDeliveryVehicleRequest._() : super();
-  factory CreateDeliveryVehicleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateDeliveryVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateDeliveryVehicleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateDeliveryVehicleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDeliveryVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDeliveryVehicleRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'deliveryVehicleId')
-    ..aOM<$161.DeliveryVehicle>(5, _omitFieldNames ? '' : 'deliveryVehicle', subBuilder: $161.DeliveryVehicle.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$161.DeliveryVehicle>(5, _omitFieldNames ? '' : 'deliveryVehicle',
+        subBuilder: $161.DeliveryVehicle.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateDeliveryVehicleRequest clone() => CreateDeliveryVehicleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateDeliveryVehicleRequest copyWith(void Function(CreateDeliveryVehicleRequest) updates) => super.copyWith((message) => updates(message as CreateDeliveryVehicleRequest)) as CreateDeliveryVehicleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateDeliveryVehicleRequest clone() =>
+      CreateDeliveryVehicleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateDeliveryVehicleRequest copyWith(
+          void Function(CreateDeliveryVehicleRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateDeliveryVehicleRequest))
+          as CreateDeliveryVehicleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateDeliveryVehicleRequest create() => CreateDeliveryVehicleRequest._();
+  static CreateDeliveryVehicleRequest create() =>
+      CreateDeliveryVehicleRequest._();
   CreateDeliveryVehicleRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateDeliveryVehicleRequest> createRepeated() => $pb.PbList<CreateDeliveryVehicleRequest>();
+  static $pb.PbList<CreateDeliveryVehicleRequest> createRepeated() =>
+      $pb.PbList<CreateDeliveryVehicleRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateDeliveryVehicleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDeliveryVehicleRequest>(create);
+  static CreateDeliveryVehicleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDeliveryVehicleRequest>(create);
   static CreateDeliveryVehicleRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -93,7 +111,10 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -111,7 +132,10 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get deliveryVehicleId => $_getSZ(2);
   @$pb.TagNumber(4)
-  set deliveryVehicleId($core.String v) { $_setString(2, v); }
+  set deliveryVehicleId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDeliveryVehicleId() => $_has(2);
   @$pb.TagNumber(4)
@@ -129,7 +153,10 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $161.DeliveryVehicle get deliveryVehicle => $_getN(3);
   @$pb.TagNumber(5)
-  set deliveryVehicle($161.DeliveryVehicle v) { setField(5, v); }
+  set deliveryVehicle($161.DeliveryVehicle v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDeliveryVehicle() => $_has(3);
   @$pb.TagNumber(5)
@@ -154,41 +181,56 @@ class GetDeliveryVehicleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDeliveryVehicleRequest._() : super();
-  factory GetDeliveryVehicleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDeliveryVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDeliveryVehicleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDeliveryVehicleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDeliveryVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDeliveryVehicleRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetDeliveryVehicleRequest clone() => GetDeliveryVehicleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDeliveryVehicleRequest copyWith(void Function(GetDeliveryVehicleRequest) updates) => super.copyWith((message) => updates(message as GetDeliveryVehicleRequest)) as GetDeliveryVehicleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetDeliveryVehicleRequest clone() =>
+      GetDeliveryVehicleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDeliveryVehicleRequest copyWith(
+          void Function(GetDeliveryVehicleRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDeliveryVehicleRequest))
+          as GetDeliveryVehicleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDeliveryVehicleRequest create() => GetDeliveryVehicleRequest._();
   GetDeliveryVehicleRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDeliveryVehicleRequest> createRepeated() => $pb.PbList<GetDeliveryVehicleRequest>();
+  static $pb.PbList<GetDeliveryVehicleRequest> createRepeated() =>
+      $pb.PbList<GetDeliveryVehicleRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDeliveryVehicleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDeliveryVehicleRequest>(create);
+  static GetDeliveryVehicleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDeliveryVehicleRequest>(create);
   static GetDeliveryVehicleRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -203,7 +245,10 @@ class GetDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -242,45 +287,63 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDeliveryVehiclesRequest._() : super();
-  factory ListDeliveryVehiclesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDeliveryVehiclesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDeliveryVehiclesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDeliveryVehiclesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDeliveryVehiclesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDeliveryVehiclesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..aOS(6, _omitFieldNames ? '' : 'filter')
-    ..aOM<$449.Viewport>(7, _omitFieldNames ? '' : 'viewport', subBuilder: $449.Viewport.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$449.Viewport>(7, _omitFieldNames ? '' : 'viewport',
+        subBuilder: $449.Viewport.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDeliveryVehiclesRequest clone() => ListDeliveryVehiclesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDeliveryVehiclesRequest copyWith(void Function(ListDeliveryVehiclesRequest) updates) => super.copyWith((message) => updates(message as ListDeliveryVehiclesRequest)) as ListDeliveryVehiclesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDeliveryVehiclesRequest clone() =>
+      ListDeliveryVehiclesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDeliveryVehiclesRequest copyWith(
+          void Function(ListDeliveryVehiclesRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListDeliveryVehiclesRequest))
+          as ListDeliveryVehiclesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListDeliveryVehiclesRequest create() => ListDeliveryVehiclesRequest._();
+  static ListDeliveryVehiclesRequest create() =>
+      ListDeliveryVehiclesRequest._();
   ListDeliveryVehiclesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDeliveryVehiclesRequest> createRepeated() => $pb.PbList<ListDeliveryVehiclesRequest>();
+  static $pb.PbList<ListDeliveryVehiclesRequest> createRepeated() =>
+      $pb.PbList<ListDeliveryVehiclesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDeliveryVehiclesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDeliveryVehiclesRequest>(create);
+  static ListDeliveryVehiclesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDeliveryVehiclesRequest>(create);
   static ListDeliveryVehiclesRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -294,7 +357,10 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -306,7 +372,10 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(4)
@@ -320,7 +389,10 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(5)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(5)
@@ -347,7 +419,10 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get filter => $_getSZ(4);
   @$pb.TagNumber(6)
-  set filter($core.String v) { $_setString(4, v); }
+  set filter($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFilter() => $_has(4);
   @$pb.TagNumber(6)
@@ -358,7 +433,10 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $449.Viewport get viewport => $_getN(5);
   @$pb.TagNumber(7)
-  set viewport($449.Viewport v) { setField(7, v); }
+  set viewport($449.Viewport v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasViewport() => $_has(5);
   @$pb.TagNumber(7)
@@ -387,35 +465,50 @@ class ListDeliveryVehiclesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDeliveryVehiclesResponse._() : super();
-  factory ListDeliveryVehiclesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDeliveryVehiclesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDeliveryVehiclesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDeliveryVehiclesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDeliveryVehiclesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..pc<$161.DeliveryVehicle>(1, _omitFieldNames ? '' : 'deliveryVehicles', $pb.PbFieldType.PM, subBuilder: $161.DeliveryVehicle.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDeliveryVehiclesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..pc<$161.DeliveryVehicle>(
+        1, _omitFieldNames ? '' : 'deliveryVehicles', $pb.PbFieldType.PM,
+        subBuilder: $161.DeliveryVehicle.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..aInt64(3, _omitFieldNames ? '' : 'totalSize')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDeliveryVehiclesResponse clone() => ListDeliveryVehiclesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDeliveryVehiclesResponse copyWith(void Function(ListDeliveryVehiclesResponse) updates) => super.copyWith((message) => updates(message as ListDeliveryVehiclesResponse)) as ListDeliveryVehiclesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDeliveryVehiclesResponse clone() =>
+      ListDeliveryVehiclesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDeliveryVehiclesResponse copyWith(
+          void Function(ListDeliveryVehiclesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListDeliveryVehiclesResponse))
+          as ListDeliveryVehiclesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListDeliveryVehiclesResponse create() => ListDeliveryVehiclesResponse._();
+  static ListDeliveryVehiclesResponse create() =>
+      ListDeliveryVehiclesResponse._();
   ListDeliveryVehiclesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDeliveryVehiclesResponse> createRepeated() => $pb.PbList<ListDeliveryVehiclesResponse>();
+  static $pb.PbList<ListDeliveryVehiclesResponse> createRepeated() =>
+      $pb.PbList<ListDeliveryVehiclesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDeliveryVehiclesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDeliveryVehiclesResponse>(create);
+  static ListDeliveryVehiclesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDeliveryVehiclesResponse>(create);
   static ListDeliveryVehiclesResponse? _defaultInstance;
 
   /// The set of delivery vehicles that meet the requested filtering criteria.
@@ -431,7 +524,10 @@ class ListDeliveryVehiclesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -442,7 +538,10 @@ class ListDeliveryVehiclesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get totalSize => $_getI64(2);
   @$pb.TagNumber(3)
-  set totalSize($fixnum.Int64 v) { $_setInt64(2, v); }
+  set totalSize($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTotalSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -469,42 +568,61 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDeliveryVehicleRequest._() : super();
-  factory UpdateDeliveryVehicleRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDeliveryVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDeliveryVehicleRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDeliveryVehicleRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDeliveryVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
-    ..aOM<$161.DeliveryVehicle>(3, _omitFieldNames ? '' : 'deliveryVehicle', subBuilder: $161.DeliveryVehicle.create)
-    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDeliveryVehicleRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$161.DeliveryVehicle>(3, _omitFieldNames ? '' : 'deliveryVehicle',
+        subBuilder: $161.DeliveryVehicle.create)
+    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDeliveryVehicleRequest clone() => UpdateDeliveryVehicleRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDeliveryVehicleRequest copyWith(void Function(UpdateDeliveryVehicleRequest) updates) => super.copyWith((message) => updates(message as UpdateDeliveryVehicleRequest)) as UpdateDeliveryVehicleRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDeliveryVehicleRequest clone() =>
+      UpdateDeliveryVehicleRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDeliveryVehicleRequest copyWith(
+          void Function(UpdateDeliveryVehicleRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateDeliveryVehicleRequest))
+          as UpdateDeliveryVehicleRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateDeliveryVehicleRequest create() => UpdateDeliveryVehicleRequest._();
+  static UpdateDeliveryVehicleRequest create() =>
+      UpdateDeliveryVehicleRequest._();
   UpdateDeliveryVehicleRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateDeliveryVehicleRequest> createRepeated() => $pb.PbList<UpdateDeliveryVehicleRequest>();
+  static $pb.PbList<UpdateDeliveryVehicleRequest> createRepeated() =>
+      $pb.PbList<UpdateDeliveryVehicleRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDeliveryVehicleRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDeliveryVehicleRequest>(create);
+  static UpdateDeliveryVehicleRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDeliveryVehicleRequest>(create);
   static UpdateDeliveryVehicleRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -517,7 +635,10 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $161.DeliveryVehicle get deliveryVehicle => $_getN(1);
   @$pb.TagNumber(3)
-  set deliveryVehicle($161.DeliveryVehicle v) { setField(3, v); }
+  set deliveryVehicle($161.DeliveryVehicle v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeliveryVehicle() => $_has(1);
   @$pb.TagNumber(3)
@@ -533,7 +654,10 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($333.FieldMask v) { setField(4, v); }
+  set updateMask($333.FieldMask v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
@@ -562,35 +686,49 @@ class BatchCreateTasksRequest extends $pb.GeneratedMessage {
     return $result;
   }
   BatchCreateTasksRequest._() : super();
-  factory BatchCreateTasksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchCreateTasksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchCreateTasksRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchCreateTasksRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateTasksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchCreateTasksRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
-    ..pc<CreateTaskRequest>(4, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM, subBuilder: CreateTaskRequest.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<CreateTaskRequest>(
+        4, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM,
+        subBuilder: CreateTaskRequest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchCreateTasksRequest clone() => BatchCreateTasksRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchCreateTasksRequest copyWith(void Function(BatchCreateTasksRequest) updates) => super.copyWith((message) => updates(message as BatchCreateTasksRequest)) as BatchCreateTasksRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchCreateTasksRequest clone() =>
+      BatchCreateTasksRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchCreateTasksRequest copyWith(
+          void Function(BatchCreateTasksRequest) updates) =>
+      super.copyWith((message) => updates(message as BatchCreateTasksRequest))
+          as BatchCreateTasksRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchCreateTasksRequest create() => BatchCreateTasksRequest._();
   BatchCreateTasksRequest createEmptyInstance() => create();
-  static $pb.PbList<BatchCreateTasksRequest> createRepeated() => $pb.PbList<BatchCreateTasksRequest>();
+  static $pb.PbList<BatchCreateTasksRequest> createRepeated() =>
+      $pb.PbList<BatchCreateTasksRequest>();
   @$core.pragma('dart2js:noInline')
-  static BatchCreateTasksRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchCreateTasksRequest>(create);
+  static BatchCreateTasksRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchCreateTasksRequest>(create);
   static BatchCreateTasksRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
@@ -600,7 +738,10 @@ class BatchCreateTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -616,7 +757,10 @@ class BatchCreateTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -640,33 +784,45 @@ class BatchCreateTasksResponse extends $pb.GeneratedMessage {
     return $result;
   }
   BatchCreateTasksResponse._() : super();
-  factory BatchCreateTasksResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchCreateTasksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchCreateTasksResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchCreateTasksResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateTasksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..pc<$162.Task>(1, _omitFieldNames ? '' : 'tasks', $pb.PbFieldType.PM, subBuilder: $162.Task.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchCreateTasksResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..pc<$162.Task>(1, _omitFieldNames ? '' : 'tasks', $pb.PbFieldType.PM,
+        subBuilder: $162.Task.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchCreateTasksResponse clone() => BatchCreateTasksResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchCreateTasksResponse copyWith(void Function(BatchCreateTasksResponse) updates) => super.copyWith((message) => updates(message as BatchCreateTasksResponse)) as BatchCreateTasksResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchCreateTasksResponse clone() =>
+      BatchCreateTasksResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchCreateTasksResponse copyWith(
+          void Function(BatchCreateTasksResponse) updates) =>
+      super.copyWith((message) => updates(message as BatchCreateTasksResponse))
+          as BatchCreateTasksResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchCreateTasksResponse create() => BatchCreateTasksResponse._();
   BatchCreateTasksResponse createEmptyInstance() => create();
-  static $pb.PbList<BatchCreateTasksResponse> createRepeated() => $pb.PbList<BatchCreateTasksResponse>();
+  static $pb.PbList<BatchCreateTasksResponse> createRepeated() =>
+      $pb.PbList<BatchCreateTasksResponse>();
   @$core.pragma('dart2js:noInline')
-  static BatchCreateTasksResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchCreateTasksResponse>(create);
+  static BatchCreateTasksResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchCreateTasksResponse>(create);
   static BatchCreateTasksResponse? _defaultInstance;
 
   /// The created Tasks.
@@ -698,43 +854,57 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateTaskRequest._() : super();
-  factory CreateTaskRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateTaskRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateTaskRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateTaskRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTaskRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateTaskRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
-    ..aOM<$162.Task>(4, _omitFieldNames ? '' : 'task', subBuilder: $162.Task.create)
+    ..aOM<$162.Task>(4, _omitFieldNames ? '' : 'task',
+        subBuilder: $162.Task.create)
     ..aOS(5, _omitFieldNames ? '' : 'taskId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateTaskRequest clone() => CreateTaskRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateTaskRequest copyWith(void Function(CreateTaskRequest) updates) => super.copyWith((message) => updates(message as CreateTaskRequest)) as CreateTaskRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateTaskRequest copyWith(void Function(CreateTaskRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateTaskRequest))
+          as CreateTaskRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateTaskRequest create() => CreateTaskRequest._();
   CreateTaskRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateTaskRequest> createRepeated() => $pb.PbList<CreateTaskRequest>();
+  static $pb.PbList<CreateTaskRequest> createRepeated() =>
+      $pb.PbList<CreateTaskRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateTaskRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateTaskRequest>(create);
+  static CreateTaskRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateTaskRequest>(create);
   static CreateTaskRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -747,7 +917,10 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -768,7 +941,10 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $162.Task get task => $_getN(2);
   @$pb.TagNumber(4)
-  set task($162.Task v) { setField(4, v); }
+  set task($162.Task v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTask() => $_has(2);
   @$pb.TagNumber(4)
@@ -790,7 +966,10 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get taskId => $_getSZ(3);
   @$pb.TagNumber(5)
-  set taskId($core.String v) { $_setString(3, v); }
+  set taskId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTaskId() => $_has(3);
   @$pb.TagNumber(5)
@@ -813,41 +992,54 @@ class GetTaskRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetTaskRequest._() : super();
-  factory GetTaskRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetTaskRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetTaskRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetTaskRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetTaskRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetTaskRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetTaskRequest clone() => GetTaskRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetTaskRequest copyWith(void Function(GetTaskRequest) updates) => super.copyWith((message) => updates(message as GetTaskRequest)) as GetTaskRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetTaskRequest copyWith(void Function(GetTaskRequest) updates) =>
+      super.copyWith((message) => updates(message as GetTaskRequest))
+          as GetTaskRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetTaskRequest create() => GetTaskRequest._();
   GetTaskRequest createEmptyInstance() => create();
-  static $pb.PbList<GetTaskRequest> createRepeated() => $pb.PbList<GetTaskRequest>();
+  static $pb.PbList<GetTaskRequest> createRepeated() =>
+      $pb.PbList<GetTaskRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetTaskRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetTaskRequest>(create);
+  static GetTaskRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetTaskRequest>(create);
   static GetTaskRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -861,7 +1053,10 @@ class GetTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -888,42 +1083,57 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateTaskRequest._() : super();
-  factory UpdateTaskRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateTaskRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateTaskRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateTaskRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTaskRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
-    ..aOM<$162.Task>(3, _omitFieldNames ? '' : 'task', subBuilder: $162.Task.create)
-    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateTaskRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$162.Task>(3, _omitFieldNames ? '' : 'task',
+        subBuilder: $162.Task.create)
+    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateTaskRequest clone() => UpdateTaskRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateTaskRequest copyWith(void Function(UpdateTaskRequest) updates) => super.copyWith((message) => updates(message as UpdateTaskRequest)) as UpdateTaskRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateTaskRequest copyWith(void Function(UpdateTaskRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateTaskRequest))
+          as UpdateTaskRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateTaskRequest create() => UpdateTaskRequest._();
   UpdateTaskRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateTaskRequest> createRepeated() => $pb.PbList<UpdateTaskRequest>();
+  static $pb.PbList<UpdateTaskRequest> createRepeated() =>
+      $pb.PbList<UpdateTaskRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateTaskRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateTaskRequest>(create);
+  static UpdateTaskRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateTaskRequest>(create);
   static UpdateTaskRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -950,7 +1160,10 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $162.Task get task => $_getN(1);
   @$pb.TagNumber(3)
-  set task($162.Task v) { setField(3, v); }
+  set task($162.Task v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTask() => $_has(1);
   @$pb.TagNumber(3)
@@ -966,7 +1179,10 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($333.FieldMask v) { setField(4, v); }
+  set updateMask($333.FieldMask v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
@@ -1003,44 +1219,57 @@ class ListTasksRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListTasksRequest._() : super();
-  factory ListTasksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListTasksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListTasksRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListTasksRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTasksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTasksRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..aOS(6, _omitFieldNames ? '' : 'filter')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListTasksRequest clone() => ListTasksRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListTasksRequest copyWith(void Function(ListTasksRequest) updates) => super.copyWith((message) => updates(message as ListTasksRequest)) as ListTasksRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListTasksRequest copyWith(void Function(ListTasksRequest) updates) =>
+      super.copyWith((message) => updates(message as ListTasksRequest))
+          as ListTasksRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListTasksRequest create() => ListTasksRequest._();
   ListTasksRequest createEmptyInstance() => create();
-  static $pb.PbList<ListTasksRequest> createRepeated() => $pb.PbList<ListTasksRequest>();
+  static $pb.PbList<ListTasksRequest> createRepeated() =>
+      $pb.PbList<ListTasksRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListTasksRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTasksRequest>(create);
+  static ListTasksRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTasksRequest>(create);
   static ListTasksRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -1054,7 +1283,10 @@ class ListTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parent => $_getSZ(1);
   @$pb.TagNumber(3)
-  set parent($core.String v) { $_setString(1, v); }
+  set parent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParent() => $_has(1);
   @$pb.TagNumber(3)
@@ -1066,7 +1298,10 @@ class ListTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(4)
@@ -1080,7 +1315,10 @@ class ListTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(5)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(5)
@@ -1094,7 +1332,10 @@ class ListTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get filter => $_getSZ(4);
   @$pb.TagNumber(6)
-  set filter($core.String v) { $_setString(4, v); }
+  set filter($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFilter() => $_has(4);
   @$pb.TagNumber(6)
@@ -1122,35 +1363,45 @@ class ListTasksResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListTasksResponse._() : super();
-  factory ListTasksResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListTasksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListTasksResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListTasksResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTasksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..pc<$162.Task>(1, _omitFieldNames ? '' : 'tasks', $pb.PbFieldType.PM, subBuilder: $162.Task.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTasksResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..pc<$162.Task>(1, _omitFieldNames ? '' : 'tasks', $pb.PbFieldType.PM,
+        subBuilder: $162.Task.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..aInt64(3, _omitFieldNames ? '' : 'totalSize')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListTasksResponse clone() => ListTasksResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListTasksResponse copyWith(void Function(ListTasksResponse) updates) => super.copyWith((message) => updates(message as ListTasksResponse)) as ListTasksResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListTasksResponse copyWith(void Function(ListTasksResponse) updates) =>
+      super.copyWith((message) => updates(message as ListTasksResponse))
+          as ListTasksResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListTasksResponse create() => ListTasksResponse._();
   ListTasksResponse createEmptyInstance() => create();
-  static $pb.PbList<ListTasksResponse> createRepeated() => $pb.PbList<ListTasksResponse>();
+  static $pb.PbList<ListTasksResponse> createRepeated() =>
+      $pb.PbList<ListTasksResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListTasksResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTasksResponse>(create);
+  static ListTasksResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTasksResponse>(create);
   static ListTasksResponse? _defaultInstance;
 
   /// The set of Tasks that meet the requested filtering criteria. When no filter
@@ -1166,7 +1417,10 @@ class ListTasksResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1177,7 +1431,10 @@ class ListTasksResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get totalSize => $_getI64(2);
   @$pb.TagNumber(3)
-  set totalSize($fixnum.Int64 v) { $_setInt64(2, v); }
+  set totalSize($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTotalSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1200,41 +1457,57 @@ class GetTaskTrackingInfoRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetTaskTrackingInfoRequest._() : super();
-  factory GetTaskTrackingInfoRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetTaskTrackingInfoRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetTaskTrackingInfoRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetTaskTrackingInfoRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetTaskTrackingInfoRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $455.DeliveryRequestHeader.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetTaskTrackingInfoRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $455.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetTaskTrackingInfoRequest clone() => GetTaskTrackingInfoRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetTaskTrackingInfoRequest copyWith(void Function(GetTaskTrackingInfoRequest) updates) => super.copyWith((message) => updates(message as GetTaskTrackingInfoRequest)) as GetTaskTrackingInfoRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetTaskTrackingInfoRequest clone() =>
+      GetTaskTrackingInfoRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetTaskTrackingInfoRequest copyWith(
+          void Function(GetTaskTrackingInfoRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetTaskTrackingInfoRequest))
+          as GetTaskTrackingInfoRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetTaskTrackingInfoRequest create() => GetTaskTrackingInfoRequest._();
   GetTaskTrackingInfoRequest createEmptyInstance() => create();
-  static $pb.PbList<GetTaskTrackingInfoRequest> createRepeated() => $pb.PbList<GetTaskTrackingInfoRequest>();
+  static $pb.PbList<GetTaskTrackingInfoRequest> createRepeated() =>
+      $pb.PbList<GetTaskTrackingInfoRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetTaskTrackingInfoRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetTaskTrackingInfoRequest>(create);
+  static GetTaskTrackingInfoRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetTaskTrackingInfoRequest>(create);
   static GetTaskTrackingInfoRequest? _defaultInstance;
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
   $455.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) { setField(1, v); }
+  set header($455.DeliveryRequestHeader v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -1250,13 +1523,16 @@ class GetTaskTrackingInfoRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
   void clearName() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

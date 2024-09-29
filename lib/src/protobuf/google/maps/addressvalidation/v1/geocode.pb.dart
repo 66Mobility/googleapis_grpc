@@ -48,29 +48,39 @@ class Geocode extends $pb.GeneratedMessage {
     return $result;
   }
   Geocode._() : super();
-  factory Geocode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Geocode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Geocode.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Geocode.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Geocode', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
-    ..aOM<PlusCode>(2, _omitFieldNames ? '' : 'plusCode', subBuilder: PlusCode.create)
-    ..aOM<$449.Viewport>(4, _omitFieldNames ? '' : 'bounds', subBuilder: $449.Viewport.create)
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'featureSizeMeters', $pb.PbFieldType.OF)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Geocode',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $325.LatLng.create)
+    ..aOM<PlusCode>(2, _omitFieldNames ? '' : 'plusCode',
+        subBuilder: PlusCode.create)
+    ..aOM<$449.Viewport>(4, _omitFieldNames ? '' : 'bounds',
+        subBuilder: $449.Viewport.create)
+    ..a<$core.double>(
+        5, _omitFieldNames ? '' : 'featureSizeMeters', $pb.PbFieldType.OF)
     ..aOS(6, _omitFieldNames ? '' : 'placeId')
     ..pPS(7, _omitFieldNames ? '' : 'placeTypes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Geocode clone() => Geocode()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Geocode copyWith(void Function(Geocode) updates) => super.copyWith((message) => updates(message as Geocode)) as Geocode;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Geocode copyWith(void Function(Geocode) updates) =>
+      super.copyWith((message) => updates(message as Geocode)) as Geocode;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -79,7 +89,8 @@ class Geocode extends $pb.GeneratedMessage {
   Geocode createEmptyInstance() => create();
   static $pb.PbList<Geocode> createRepeated() => $pb.PbList<Geocode>();
   @$core.pragma('dart2js:noInline')
-  static Geocode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Geocode>(create);
+  static Geocode getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Geocode>(create);
   static Geocode? _defaultInstance;
 
   ///  The geocoded location of the input.
@@ -95,7 +106,10 @@ class Geocode extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $325.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($325.LatLng v) { setField(1, v); }
+  set location($325.LatLng v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -107,7 +121,10 @@ class Geocode extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PlusCode get plusCode => $_getN(1);
   @$pb.TagNumber(2)
-  set plusCode(PlusCode v) { setField(2, v); }
+  set plusCode(PlusCode v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPlusCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -119,7 +136,10 @@ class Geocode extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $449.Viewport get bounds => $_getN(2);
   @$pb.TagNumber(4)
-  set bounds($449.Viewport v) { setField(4, v); }
+  set bounds($449.Viewport v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBounds() => $_has(2);
   @$pb.TagNumber(4)
@@ -133,7 +153,10 @@ class Geocode extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get featureSizeMeters => $_getN(3);
   @$pb.TagNumber(5)
-  set featureSizeMeters($core.double v) { $_setFloat(3, v); }
+  set featureSizeMeters($core.double v) {
+    $_setFloat(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFeatureSizeMeters() => $_has(3);
   @$pb.TagNumber(5)
@@ -146,7 +169,10 @@ class Geocode extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get placeId => $_getSZ(4);
   @$pb.TagNumber(6)
-  set placeId($core.String v) { $_setString(4, v); }
+  set placeId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPlaceId() => $_has(4);
   @$pb.TagNumber(6)
@@ -177,25 +203,31 @@ class PlusCode extends $pb.GeneratedMessage {
     return $result;
   }
   PlusCode._() : super();
-  factory PlusCode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PlusCode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PlusCode.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PlusCode.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlusCode', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PlusCode',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'globalCode')
     ..aOS(2, _omitFieldNames ? '' : 'compoundCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PlusCode clone() => PlusCode()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PlusCode copyWith(void Function(PlusCode) updates) => super.copyWith((message) => updates(message as PlusCode)) as PlusCode;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PlusCode copyWith(void Function(PlusCode) updates) =>
+      super.copyWith((message) => updates(message as PlusCode)) as PlusCode;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -204,7 +236,8 @@ class PlusCode extends $pb.GeneratedMessage {
   PlusCode createEmptyInstance() => create();
   static $pb.PbList<PlusCode> createRepeated() => $pb.PbList<PlusCode>();
   @$core.pragma('dart2js:noInline')
-  static PlusCode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlusCode>(create);
+  static PlusCode getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlusCode>(create);
   static PlusCode? _defaultInstance;
 
   /// Place's global (full) code, such as "9FWM33GV+HQ", representing an
@@ -212,7 +245,10 @@ class PlusCode extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get globalCode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set globalCode($core.String v) { $_setString(0, v); }
+  set globalCode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGlobalCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -224,13 +260,16 @@ class PlusCode extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get compoundCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set compoundCode($core.String v) { $_setString(1, v); }
+  set compoundCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCompoundCode() => $_has(1);
   @$pb.TagNumber(2)
   void clearCompoundCode() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

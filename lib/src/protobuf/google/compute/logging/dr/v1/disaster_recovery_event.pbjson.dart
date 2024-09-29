@@ -17,8 +17,25 @@ import 'dart:typed_data' as $typed_data;
 const DisasterRecoveryEvent$json = {
   '1': 'DisasterRecoveryEvent',
   '2': [
-    {'1': 'severity', '3': 1, '4': 1, '5': 14, '6': '.google.compute.logging.dr.v1.DisasterRecoveryEvent.Severity', '9': 0, '10': 'severity', '17': true},
-    {'1': 'details', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'details', '17': true},
+    {
+      '1': 'severity',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.compute.logging.dr.v1.DisasterRecoveryEvent.Severity',
+      '9': 0,
+      '10': 'severity',
+      '17': true
+    },
+    {
+      '1': 'details',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'details',
+      '17': true
+    },
   ],
   '4': [DisasterRecoveryEvent_Severity$json],
   '8': [
@@ -45,4 +62,3 @@ final $typed_data.Uint8List disasterRecoveryEventDescriptor = $convert.base64Dec
     'cml0eYgBARIdCgdkZXRhaWxzGAIgASgJSAFSB2RldGFpbHOIAQEiWwoIU2V2ZXJpdHkSGAoUU0'
     'VWRVJJVFlfVU5TUEVDSUZJRUQQABITCg9BQ1RJT05fUkVRVUlSRUQQARIUChBBQ1RJT05fU1VH'
     'R0VTVEVEEAISCgoGTk9USUNFEANCCwoJX3NldmVyaXR5QgoKCF9kZXRhaWxz');
-

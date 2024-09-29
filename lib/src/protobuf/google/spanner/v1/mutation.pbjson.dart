@@ -17,11 +17,51 @@ import 'dart:typed_data' as $typed_data;
 const Mutation$json = {
   '1': 'Mutation',
   '2': [
-    {'1': 'insert', '3': 1, '4': 1, '5': 11, '6': '.google.spanner.v1.Mutation.Write', '9': 0, '10': 'insert'},
-    {'1': 'update', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Mutation.Write', '9': 0, '10': 'update'},
-    {'1': 'insert_or_update', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.Mutation.Write', '9': 0, '10': 'insertOrUpdate'},
-    {'1': 'replace', '3': 4, '4': 1, '5': 11, '6': '.google.spanner.v1.Mutation.Write', '9': 0, '10': 'replace'},
-    {'1': 'delete', '3': 5, '4': 1, '5': 11, '6': '.google.spanner.v1.Mutation.Delete', '9': 0, '10': 'delete'},
+    {
+      '1': 'insert',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation.Write',
+      '9': 0,
+      '10': 'insert'
+    },
+    {
+      '1': 'update',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation.Write',
+      '9': 0,
+      '10': 'update'
+    },
+    {
+      '1': 'insert_or_update',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation.Write',
+      '9': 0,
+      '10': 'insertOrUpdate'
+    },
+    {
+      '1': 'replace',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation.Write',
+      '9': 0,
+      '10': 'replace'
+    },
+    {
+      '1': 'delete',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation.Delete',
+      '9': 0,
+      '10': 'delete'
+    },
   ],
   '3': [Mutation_Write$json, Mutation_Delete$json],
   '8': [
@@ -35,7 +75,14 @@ const Mutation_Write$json = {
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'table'},
     {'1': 'columns', '3': 2, '4': 3, '5': 9, '10': 'columns'},
-    {'1': 'values', '3': 3, '4': 3, '5': 11, '6': '.google.protobuf.ListValue', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'values'
+    },
   ],
 };
 
@@ -44,7 +91,15 @@ const Mutation_Delete$json = {
   '1': 'Delete',
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'table'},
-    {'1': 'key_set', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.KeySet', '8': {}, '10': 'keySet'},
+    {
+      '1': 'key_set',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.KeySet',
+      '8': {},
+      '10': 'keySet'
+    },
   ],
 };
 
@@ -61,4 +116,3 @@ final $typed_data.Uint8List mutationDescriptor = $convert.base64Decode(
     'dmFsdWVzGlwKBkRlbGV0ZRIZCgV0YWJsZRgBIAEoCUID4EECUgV0YWJsZRI3CgdrZXlfc2V0GA'
     'IgASgLMhkuZ29vZ2xlLnNwYW5uZXIudjEuS2V5U2V0QgPgQQJSBmtleVNldEILCglvcGVyYXRp'
     'b24=');
-

@@ -18,7 +18,13 @@ const ManagedService$json = {
   '1': 'ManagedService',
   '2': [
     {'1': 'service_name', '3': 2, '4': 1, '5': 9, '10': 'serviceName'},
-    {'1': 'producer_project_id', '3': 3, '4': 1, '5': 9, '10': 'producerProjectId'},
+    {
+      '1': 'producer_project_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'producerProjectId'
+    },
   ],
 };
 
@@ -32,9 +38,29 @@ const OperationMetadata$json = {
   '1': 'OperationMetadata',
   '2': [
     {'1': 'resource_names', '3': 1, '4': 3, '5': 9, '10': 'resourceNames'},
-    {'1': 'steps', '3': 2, '4': 3, '5': 11, '6': '.google.api.servicemanagement.v1.OperationMetadata.Step', '10': 'steps'},
-    {'1': 'progress_percentage', '3': 3, '4': 1, '5': 5, '10': 'progressPercentage'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
+    {
+      '1': 'steps',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicemanagement.v1.OperationMetadata.Step',
+      '10': 'steps'
+    },
+    {
+      '1': 'progress_percentage',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'progressPercentage'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
   ],
   '3': [OperationMetadata_Step$json],
   '4': [OperationMetadata_Status$json],
@@ -45,7 +71,14 @@ const OperationMetadata_Step$json = {
   '1': 'Step',
   '2': [
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'status', '3': 4, '4': 1, '5': 14, '6': '.google.api.servicemanagement.v1.OperationMetadata.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicemanagement.v1.OperationMetadata.Status',
+      '10': 'status'
+    },
   ],
 };
 
@@ -79,7 +112,14 @@ const Diagnostic$json = {
   '1': 'Diagnostic',
   '2': [
     {'1': 'location', '3': 1, '4': 1, '5': 9, '10': 'location'},
-    {'1': 'kind', '3': 2, '4': 1, '5': 14, '6': '.google.api.servicemanagement.v1.Diagnostic.Kind', '10': 'kind'},
+    {
+      '1': 'kind',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicemanagement.v1.Diagnostic.Kind',
+      '10': 'kind'
+    },
     {'1': 'message', '3': 3, '4': 1, '5': 9, '10': 'message'},
   ],
   '4': [Diagnostic_Kind$json],
@@ -106,7 +146,14 @@ const ConfigSource$json = {
   '1': 'ConfigSource',
   '2': [
     {'1': 'id', '3': 5, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'files', '3': 2, '4': 3, '5': 11, '6': '.google.api.servicemanagement.v1.ConfigFile', '10': 'files'},
+    {
+      '1': 'files',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicemanagement.v1.ConfigFile',
+      '10': 'files'
+    },
   ],
 };
 
@@ -121,7 +168,14 @@ const ConfigFile$json = {
   '2': [
     {'1': 'file_path', '3': 1, '4': 1, '5': 9, '10': 'filePath'},
     {'1': 'file_contents', '3': 3, '4': 1, '5': 12, '10': 'fileContents'},
-    {'1': 'file_type', '3': 4, '4': 1, '5': 14, '6': '.google.api.servicemanagement.v1.ConfigFile.FileType', '10': 'fileType'},
+    {
+      '1': 'file_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicemanagement.v1.ConfigFile.FileType',
+      '10': 'fileType'
+    },
   ],
   '4': [ConfigFile_FileType$json],
 };
@@ -157,14 +211,21 @@ const ConfigRef$json = {
 };
 
 /// Descriptor for `ConfigRef`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List configRefDescriptor = $convert.base64Decode(
-    'CglDb25maWdSZWYSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
+final $typed_data.Uint8List configRefDescriptor =
+    $convert.base64Decode('CglDb25maWdSZWYSEgoEbmFtZRgBIAEoCVIEbmFtZQ==');
 
 @$core.Deprecated('Use changeReportDescriptor instead')
 const ChangeReport$json = {
   '1': 'ChangeReport',
   '2': [
-    {'1': 'config_changes', '3': 1, '4': 3, '5': 11, '6': '.google.api.ConfigChange', '10': 'configChanges'},
+    {
+      '1': 'config_changes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.ConfigChange',
+      '10': 'configChanges'
+    },
   ],
 };
 
@@ -178,14 +239,47 @@ const Rollout$json = {
   '1': 'Rollout',
   '2': [
     {'1': 'rollout_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'rolloutId'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
     {'1': 'created_by', '3': 3, '4': 1, '5': 9, '10': 'createdBy'},
-    {'1': 'status', '3': 4, '4': 1, '5': 14, '6': '.google.api.servicemanagement.v1.Rollout.RolloutStatus', '10': 'status'},
-    {'1': 'traffic_percent_strategy', '3': 5, '4': 1, '5': 11, '6': '.google.api.servicemanagement.v1.Rollout.TrafficPercentStrategy', '9': 0, '10': 'trafficPercentStrategy'},
-    {'1': 'delete_service_strategy', '3': 200, '4': 1, '5': 11, '6': '.google.api.servicemanagement.v1.Rollout.DeleteServiceStrategy', '9': 0, '10': 'deleteServiceStrategy'},
+    {
+      '1': 'status',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicemanagement.v1.Rollout.RolloutStatus',
+      '10': 'status'
+    },
+    {
+      '1': 'traffic_percent_strategy',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicemanagement.v1.Rollout.TrafficPercentStrategy',
+      '9': 0,
+      '10': 'trafficPercentStrategy'
+    },
+    {
+      '1': 'delete_service_strategy',
+      '3': 200,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.servicemanagement.v1.Rollout.DeleteServiceStrategy',
+      '9': 0,
+      '10': 'deleteServiceStrategy'
+    },
     {'1': 'service_name', '3': 8, '4': 1, '5': 9, '10': 'serviceName'},
   ],
-  '3': [Rollout_TrafficPercentStrategy$json, Rollout_DeleteServiceStrategy$json],
+  '3': [
+    Rollout_TrafficPercentStrategy$json,
+    Rollout_DeleteServiceStrategy$json
+  ],
   '4': [Rollout_RolloutStatus$json],
   '8': [
     {'1': 'strategy'},
@@ -196,7 +290,15 @@ const Rollout$json = {
 const Rollout_TrafficPercentStrategy$json = {
   '1': 'TrafficPercentStrategy',
   '2': [
-    {'1': 'percentages', '3': 1, '4': 3, '5': 11, '6': '.google.api.servicemanagement.v1.Rollout.TrafficPercentStrategy.PercentagesEntry', '10': 'percentages'},
+    {
+      '1': 'percentages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.api.servicemanagement.v1.Rollout.TrafficPercentStrategy.PercentagesEntry',
+      '10': 'percentages'
+    },
   ],
   '3': [Rollout_TrafficPercentStrategy_PercentagesEntry$json],
 };
@@ -248,4 +350,3 @@ final $typed_data.Uint8List rolloutDescriptor = $convert.base64Decode(
     'ljZVN0cmF0ZWd5Io0BCg1Sb2xsb3V0U3RhdHVzEh4KGlJPTExPVVRfU1RBVFVTX1VOU1BFQ0lG'
     'SUVEEAASDwoLSU5fUFJPR1JFU1MQARILCgdTVUNDRVNTEAISDQoJQ0FOQ0VMTEVEEAMSCgoGRk'
     'FJTEVEEAQSCwoHUEVORElORxAFEhYKEkZBSUxFRF9ST0xMRURfQkFDSxAGQgoKCHN0cmF0ZWd5');
-

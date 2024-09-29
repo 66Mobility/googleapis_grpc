@@ -18,8 +18,21 @@ const ChatAppLogEntry$json = {
   '1': 'ChatAppLogEntry',
   '2': [
     {'1': 'deployment', '3': 1, '4': 1, '5': 9, '10': 'deployment'},
-    {'1': 'error', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'deployment_function', '3': 3, '4': 1, '5': 9, '10': 'deploymentFunction'},
+    {
+      '1': 'error',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'deployment_function',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'deploymentFunction'
+    },
   ],
 };
 
@@ -28,4 +41,3 @@ final $typed_data.Uint8List chatAppLogEntryDescriptor = $convert.base64Decode(
     'Cg9DaGF0QXBwTG9nRW50cnkSHgoKZGVwbG95bWVudBgBIAEoCVIKZGVwbG95bWVudBIoCgVlcn'
     'JvchgCIAEoCzISLmdvb2dsZS5ycGMuU3RhdHVzUgVlcnJvchIvChNkZXBsb3ltZW50X2Z1bmN0'
     'aW9uGAMgASgJUhJkZXBsb3ltZW50RnVuY3Rpb24=');
-

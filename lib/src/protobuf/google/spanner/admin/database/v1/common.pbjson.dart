@@ -33,8 +33,22 @@ const OperationProgress$json = {
   '1': 'OperationProgress',
   '2': [
     {'1': 'progress_percent', '3': 1, '4': 1, '5': 5, '10': 'progressPercent'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -50,7 +64,14 @@ const EncryptionConfig$json = {
   '1': 'EncryptionConfig',
   '2': [
     {'1': 'kms_key_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyName'},
-    {'1': 'kms_key_names', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'kmsKeyNames'},
+    {
+      '1': 'kms_key_names',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'kmsKeyNames'
+    },
   ],
 };
 
@@ -65,9 +86,32 @@ final $typed_data.Uint8List encryptionConfigDescriptor = $convert.base64Decode(
 const EncryptionInfo$json = {
   '1': 'EncryptionInfo',
   '2': [
-    {'1': 'encryption_type', '3': 3, '4': 1, '5': 14, '6': '.google.spanner.admin.database.v1.EncryptionInfo.Type', '8': {}, '10': 'encryptionType'},
-    {'1': 'encryption_status', '3': 4, '4': 1, '5': 11, '6': '.google.rpc.Status', '8': {}, '10': 'encryptionStatus'},
-    {'1': 'kms_key_version', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'kmsKeyVersion'},
+    {
+      '1': 'encryption_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.database.v1.EncryptionInfo.Type',
+      '8': {},
+      '10': 'encryptionType'
+    },
+    {
+      '1': 'encryption_status',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '8': {},
+      '10': 'encryptionStatus'
+    },
+    {
+      '1': 'kms_key_version',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'kmsKeyVersion'
+    },
   ],
   '4': [EncryptionInfo_Type$json],
 };
@@ -91,4 +135,3 @@ final $typed_data.Uint8List encryptionInfoDescriptor = $convert.base64Decode(
     'Y2xvdWRrbXMuZ29vZ2xlYXBpcy5jb20vQ3J5cHRvS2V5VmVyc2lvblINa21zS2V5VmVyc2lvbi'
     'JcCgRUeXBlEhQKEFRZUEVfVU5TUEVDSUZJRUQQABIdChlHT09HTEVfREVGQVVMVF9FTkNSWVBU'
     'SU9OEAESHwobQ1VTVE9NRVJfTUFOQUdFRF9FTkNSWVBUSU9OEAI=');
-

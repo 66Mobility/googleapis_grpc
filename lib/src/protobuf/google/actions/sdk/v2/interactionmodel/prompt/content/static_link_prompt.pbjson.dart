@@ -23,15 +23,22 @@ const UrlHint$json = {
 };
 
 /// Descriptor for `UrlHint`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List urlHintDescriptor = $convert.base64Decode(
-    'CgdVcmxIaW50EhQKEEhJTlRfVU5TUEVDSUZJRUQQABIHCgNBTVAQAQ==');
+final $typed_data.Uint8List urlHintDescriptor = $convert
+    .base64Decode('CgdVcmxIaW50EhQKEEhJTlRfVU5TUEVDSUZJRUQQABIHCgNBTVAQAQ==');
 
 @$core.Deprecated('Use staticLinkPromptDescriptor instead')
 const StaticLinkPrompt$json = {
   '1': 'StaticLinkPrompt',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'open', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.OpenUrl', '10': 'open'},
+    {
+      '1': 'open',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.OpenUrl',
+      '10': 'open'
+    },
   ],
 };
 
@@ -46,7 +53,14 @@ const OpenUrl$json = {
   '1': 'OpenUrl',
   '2': [
     {'1': 'url', '3': 1, '4': 1, '5': 9, '10': 'url'},
-    {'1': 'hint', '3': 2, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.interactionmodel.prompt.UrlHint', '10': 'hint'},
+    {
+      '1': 'hint',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.UrlHint',
+      '10': 'hint'
+    },
   ],
 };
 
@@ -54,4 +68,3 @@ const OpenUrl$json = {
 final $typed_data.Uint8List openUrlDescriptor = $convert.base64Decode(
     'CgdPcGVuVXJsEhAKA3VybBgBIAEoCVIDdXJsEkoKBGhpbnQYAiABKA4yNi5nb29nbGUuYWN0aW'
     '9ucy5zZGsudjIuaW50ZXJhY3Rpb25tb2RlbC5wcm9tcHQuVXJsSGludFIEaGludA==');
-

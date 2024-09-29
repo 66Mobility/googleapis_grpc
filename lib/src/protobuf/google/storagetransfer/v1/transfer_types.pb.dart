@@ -39,41 +39,54 @@ class GoogleServiceAccount extends $pb.GeneratedMessage {
     return $result;
   }
   GoogleServiceAccount._() : super();
-  factory GoogleServiceAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GoogleServiceAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GoogleServiceAccount.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GoogleServiceAccount.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GoogleServiceAccount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GoogleServiceAccount',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accountEmail')
     ..aOS(2, _omitFieldNames ? '' : 'subjectId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GoogleServiceAccount clone() => GoogleServiceAccount()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GoogleServiceAccount copyWith(void Function(GoogleServiceAccount) updates) => super.copyWith((message) => updates(message as GoogleServiceAccount)) as GoogleServiceAccount;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GoogleServiceAccount clone() =>
+      GoogleServiceAccount()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GoogleServiceAccount copyWith(void Function(GoogleServiceAccount) updates) =>
+      super.copyWith((message) => updates(message as GoogleServiceAccount))
+          as GoogleServiceAccount;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GoogleServiceAccount create() => GoogleServiceAccount._();
   GoogleServiceAccount createEmptyInstance() => create();
-  static $pb.PbList<GoogleServiceAccount> createRepeated() => $pb.PbList<GoogleServiceAccount>();
+  static $pb.PbList<GoogleServiceAccount> createRepeated() =>
+      $pb.PbList<GoogleServiceAccount>();
   @$core.pragma('dart2js:noInline')
-  static GoogleServiceAccount getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GoogleServiceAccount>(create);
+  static GoogleServiceAccount getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GoogleServiceAccount>(create);
   static GoogleServiceAccount? _defaultInstance;
 
   /// Email address of the service account.
   @$pb.TagNumber(1)
   $core.String get accountEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set accountEmail($core.String v) { $_setString(0, v); }
+  set accountEmail($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAccountEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -83,7 +96,10 @@ class GoogleServiceAccount extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subjectId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subjectId($core.String v) { $_setString(1, v); }
+  set subjectId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubjectId() => $_has(1);
   @$pb.TagNumber(2)
@@ -111,41 +127,53 @@ class AwsAccessKey extends $pb.GeneratedMessage {
     return $result;
   }
   AwsAccessKey._() : super();
-  factory AwsAccessKey.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AwsAccessKey.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AwsAccessKey.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AwsAccessKey.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsAccessKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AwsAccessKey',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accessKeyId')
     ..aOS(2, _omitFieldNames ? '' : 'secretAccessKey')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AwsAccessKey clone() => AwsAccessKey()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AwsAccessKey copyWith(void Function(AwsAccessKey) updates) => super.copyWith((message) => updates(message as AwsAccessKey)) as AwsAccessKey;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AwsAccessKey copyWith(void Function(AwsAccessKey) updates) =>
+      super.copyWith((message) => updates(message as AwsAccessKey))
+          as AwsAccessKey;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AwsAccessKey create() => AwsAccessKey._();
   AwsAccessKey createEmptyInstance() => create();
-  static $pb.PbList<AwsAccessKey> createRepeated() => $pb.PbList<AwsAccessKey>();
+  static $pb.PbList<AwsAccessKey> createRepeated() =>
+      $pb.PbList<AwsAccessKey>();
   @$core.pragma('dart2js:noInline')
-  static AwsAccessKey getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AwsAccessKey>(create);
+  static AwsAccessKey getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AwsAccessKey>(create);
   static AwsAccessKey? _defaultInstance;
 
   /// Required. AWS access key ID.
   @$pb.TagNumber(1)
   $core.String get accessKeyId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set accessKeyId($core.String v) { $_setString(0, v); }
+  set accessKeyId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAccessKeyId() => $_has(0);
   @$pb.TagNumber(1)
@@ -156,7 +184,10 @@ class AwsAccessKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get secretAccessKey => $_getSZ(1);
   @$pb.TagNumber(2)
-  set secretAccessKey($core.String v) { $_setString(1, v); }
+  set secretAccessKey($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSecretAccessKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -178,33 +209,42 @@ class AzureCredentials extends $pb.GeneratedMessage {
     return $result;
   }
   AzureCredentials._() : super();
-  factory AzureCredentials.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AzureCredentials.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AzureCredentials.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AzureCredentials.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AzureCredentials', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AzureCredentials',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'sasToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AzureCredentials clone() => AzureCredentials()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AzureCredentials copyWith(void Function(AzureCredentials) updates) => super.copyWith((message) => updates(message as AzureCredentials)) as AzureCredentials;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AzureCredentials copyWith(void Function(AzureCredentials) updates) =>
+      super.copyWith((message) => updates(message as AzureCredentials))
+          as AzureCredentials;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AzureCredentials create() => AzureCredentials._();
   AzureCredentials createEmptyInstance() => create();
-  static $pb.PbList<AzureCredentials> createRepeated() => $pb.PbList<AzureCredentials>();
+  static $pb.PbList<AzureCredentials> createRepeated() =>
+      $pb.PbList<AzureCredentials>();
   @$core.pragma('dart2js:noInline')
-  static AzureCredentials getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AzureCredentials>(create);
+  static AzureCredentials getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AzureCredentials>(create);
   static AzureCredentials? _defaultInstance;
 
   ///  Required. Azure shared access signature (SAS).
@@ -216,7 +256,10 @@ class AzureCredentials extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get sasToken => $_getSZ(0);
   @$pb.TagNumber(2)
-  set sasToken($core.String v) { $_setString(0, v); }
+  set sasToken($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSasToken() => $_has(0);
   @$pb.TagNumber(2)
@@ -244,10 +287,12 @@ class ObjectConditions extends $pb.GeneratedMessage {
   }) {
     final $result = create();
     if (minTimeElapsedSinceLastModification != null) {
-      $result.minTimeElapsedSinceLastModification = minTimeElapsedSinceLastModification;
+      $result.minTimeElapsedSinceLastModification =
+          minTimeElapsedSinceLastModification;
     }
     if (maxTimeElapsedSinceLastModification != null) {
-      $result.maxTimeElapsedSinceLastModification = maxTimeElapsedSinceLastModification;
+      $result.maxTimeElapsedSinceLastModification =
+          maxTimeElapsedSinceLastModification;
     }
     if (includePrefixes != null) {
       $result.includePrefixes.addAll(includePrefixes);
@@ -264,38 +309,53 @@ class ObjectConditions extends $pb.GeneratedMessage {
     return $result;
   }
   ObjectConditions._() : super();
-  factory ObjectConditions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ObjectConditions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ObjectConditions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ObjectConditions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ObjectConditions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'minTimeElapsedSinceLastModification', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'maxTimeElapsedSinceLastModification', subBuilder: $264.Duration.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ObjectConditions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(
+        1, _omitFieldNames ? '' : 'minTimeElapsedSinceLastModification',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(
+        2, _omitFieldNames ? '' : 'maxTimeElapsedSinceLastModification',
+        subBuilder: $264.Duration.create)
     ..pPS(3, _omitFieldNames ? '' : 'includePrefixes')
     ..pPS(4, _omitFieldNames ? '' : 'excludePrefixes')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'lastModifiedSince', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'lastModifiedBefore', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'lastModifiedSince',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'lastModifiedBefore',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ObjectConditions clone() => ObjectConditions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ObjectConditions copyWith(void Function(ObjectConditions) updates) => super.copyWith((message) => updates(message as ObjectConditions)) as ObjectConditions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ObjectConditions copyWith(void Function(ObjectConditions) updates) =>
+      super.copyWith((message) => updates(message as ObjectConditions))
+          as ObjectConditions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ObjectConditions create() => ObjectConditions._();
   ObjectConditions createEmptyInstance() => create();
-  static $pb.PbList<ObjectConditions> createRepeated() => $pb.PbList<ObjectConditions>();
+  static $pb.PbList<ObjectConditions> createRepeated() =>
+      $pb.PbList<ObjectConditions>();
   @$core.pragma('dart2js:noInline')
-  static ObjectConditions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ObjectConditions>(create);
+  static ObjectConditions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ObjectConditions>(create);
   static ObjectConditions? _defaultInstance;
 
   /// Ensures that objects are not transferred until a specific minimum time
@@ -310,7 +370,10 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get minTimeElapsedSinceLastModification => $_getN(0);
   @$pb.TagNumber(1)
-  set minTimeElapsedSinceLastModification($264.Duration v) { setField(1, v); }
+  set minTimeElapsedSinceLastModification($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMinTimeElapsedSinceLastModification() => $_has(0);
   @$pb.TagNumber(1)
@@ -330,7 +393,10 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get maxTimeElapsedSinceLastModification => $_getN(1);
   @$pb.TagNumber(2)
-  set maxTimeElapsedSinceLastModification($264.Duration v) { setField(2, v); }
+  set maxTimeElapsedSinceLastModification($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxTimeElapsedSinceLastModification() => $_has(1);
   @$pb.TagNumber(2)
@@ -419,7 +485,10 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get lastModifiedSince => $_getN(4);
   @$pb.TagNumber(5)
-  set lastModifiedSince($302.Timestamp v) { setField(5, v); }
+  set lastModifiedSince($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasLastModifiedSince() => $_has(4);
   @$pb.TagNumber(5)
@@ -433,7 +502,10 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get lastModifiedBefore => $_getN(5);
   @$pb.TagNumber(6)
-  set lastModifiedBefore($302.Timestamp v) { setField(6, v); }
+  set lastModifiedBefore($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLastModifiedBefore() => $_has(5);
   @$pb.TagNumber(6)
@@ -465,26 +537,32 @@ class GcsData extends $pb.GeneratedMessage {
     return $result;
   }
   GcsData._() : super();
-  factory GcsData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GcsData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GcsData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GcsData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcsData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GcsData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucketName')
     ..aOS(3, _omitFieldNames ? '' : 'path')
     ..aOB(4, _omitFieldNames ? '' : 'managedFolderTransferEnabled')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GcsData clone() => GcsData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GcsData copyWith(void Function(GcsData) updates) => super.copyWith((message) => updates(message as GcsData)) as GcsData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GcsData copyWith(void Function(GcsData) updates) =>
+      super.copyWith((message) => updates(message as GcsData)) as GcsData;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -493,7 +571,8 @@ class GcsData extends $pb.GeneratedMessage {
   GcsData createEmptyInstance() => create();
   static $pb.PbList<GcsData> createRepeated() => $pb.PbList<GcsData>();
   @$core.pragma('dart2js:noInline')
-  static GcsData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcsData>(create);
+  static GcsData getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcsData>(create);
   static GcsData? _defaultInstance;
 
   /// Required. Cloud Storage bucket name. Must meet
@@ -501,7 +580,10 @@ class GcsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get bucketName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set bucketName($core.String v) { $_setString(0, v); }
+  set bucketName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBucketName() => $_has(0);
   @$pb.TagNumber(1)
@@ -518,7 +600,10 @@ class GcsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get path => $_getSZ(1);
   @$pb.TagNumber(3)
-  set path($core.String v) { $_setString(1, v); }
+  set path($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPath() => $_has(1);
   @$pb.TagNumber(3)
@@ -540,17 +625,17 @@ class GcsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get managedFolderTransferEnabled => $_getBF(2);
   @$pb.TagNumber(4)
-  set managedFolderTransferEnabled($core.bool v) { $_setBool(2, v); }
+  set managedFolderTransferEnabled($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasManagedFolderTransferEnabled() => $_has(2);
   @$pb.TagNumber(4)
   void clearManagedFolderTransferEnabled() => clearField(4);
 }
 
-enum AwsS3Data_PrivateNetwork {
-  managedPrivateNetwork, 
-  notSet
-}
+enum AwsS3Data_PrivateNetwork { managedPrivateNetwork, notSet }
 
 /// An AwsS3Data resource can be a data source, but not a data sink.
 /// In an AwsS3Data resource, an object's name is the S3 object's key name.
@@ -589,35 +674,43 @@ class AwsS3Data extends $pb.GeneratedMessage {
     return $result;
   }
   AwsS3Data._() : super();
-  factory AwsS3Data.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AwsS3Data.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AwsS3Data.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AwsS3Data.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AwsS3Data_PrivateNetwork> _AwsS3Data_PrivateNetworkByTag = {
-    8 : AwsS3Data_PrivateNetwork.managedPrivateNetwork,
-    0 : AwsS3Data_PrivateNetwork.notSet
+  static const $core.Map<$core.int, AwsS3Data_PrivateNetwork>
+      _AwsS3Data_PrivateNetworkByTag = {
+    8: AwsS3Data_PrivateNetwork.managedPrivateNetwork,
+    0: AwsS3Data_PrivateNetwork.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsS3Data', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AwsS3Data',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..oo(0, [8])
     ..aOS(1, _omitFieldNames ? '' : 'bucketName')
-    ..aOM<AwsAccessKey>(2, _omitFieldNames ? '' : 'awsAccessKey', subBuilder: AwsAccessKey.create)
+    ..aOM<AwsAccessKey>(2, _omitFieldNames ? '' : 'awsAccessKey',
+        subBuilder: AwsAccessKey.create)
     ..aOS(3, _omitFieldNames ? '' : 'path')
     ..aOS(4, _omitFieldNames ? '' : 'roleArn')
     ..aOS(6, _omitFieldNames ? '' : 'cloudfrontDomain')
     ..aOS(7, _omitFieldNames ? '' : 'credentialsSecret')
     ..aOB(8, _omitFieldNames ? '' : 'managedPrivateNetwork')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AwsS3Data clone() => AwsS3Data()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AwsS3Data copyWith(void Function(AwsS3Data) updates) => super.copyWith((message) => updates(message as AwsS3Data)) as AwsS3Data;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AwsS3Data copyWith(void Function(AwsS3Data) updates) =>
+      super.copyWith((message) => updates(message as AwsS3Data)) as AwsS3Data;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -626,10 +719,12 @@ class AwsS3Data extends $pb.GeneratedMessage {
   AwsS3Data createEmptyInstance() => create();
   static $pb.PbList<AwsS3Data> createRepeated() => $pb.PbList<AwsS3Data>();
   @$core.pragma('dart2js:noInline')
-  static AwsS3Data getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AwsS3Data>(create);
+  static AwsS3Data getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AwsS3Data>(create);
   static AwsS3Data? _defaultInstance;
 
-  AwsS3Data_PrivateNetwork whichPrivateNetwork() => _AwsS3Data_PrivateNetworkByTag[$_whichOneof(0)]!;
+  AwsS3Data_PrivateNetwork whichPrivateNetwork() =>
+      _AwsS3Data_PrivateNetworkByTag[$_whichOneof(0)]!;
   void clearPrivateNetwork() => clearField($_whichOneof(0));
 
   /// Required. S3 Bucket name (see
@@ -638,7 +733,10 @@ class AwsS3Data extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get bucketName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set bucketName($core.String v) { $_setString(0, v); }
+  set bucketName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBucketName() => $_has(0);
   @$pb.TagNumber(1)
@@ -653,7 +751,10 @@ class AwsS3Data extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AwsAccessKey get awsAccessKey => $_getN(1);
   @$pb.TagNumber(2)
-  set awsAccessKey(AwsAccessKey v) { setField(2, v); }
+  set awsAccessKey(AwsAccessKey v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAwsAccessKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -669,7 +770,10 @@ class AwsS3Data extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get path => $_getSZ(2);
   @$pb.TagNumber(3)
-  set path($core.String v) { $_setString(2, v); }
+  set path($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPath() => $_has(2);
   @$pb.TagNumber(3)
@@ -688,7 +792,10 @@ class AwsS3Data extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get roleArn => $_getSZ(3);
   @$pb.TagNumber(4)
-  set roleArn($core.String v) { $_setString(3, v); }
+  set roleArn($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRoleArn() => $_has(3);
   @$pb.TagNumber(4)
@@ -707,7 +814,10 @@ class AwsS3Data extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get cloudfrontDomain => $_getSZ(4);
   @$pb.TagNumber(6)
-  set cloudfrontDomain($core.String v) { $_setString(4, v); }
+  set cloudfrontDomain($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCloudfrontDomain() => $_has(4);
   @$pb.TagNumber(6)
@@ -737,7 +847,10 @@ class AwsS3Data extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get credentialsSecret => $_getSZ(5);
   @$pb.TagNumber(7)
-  set credentialsSecret($core.String v) { $_setString(5, v); }
+  set credentialsSecret($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCredentialsSecret() => $_has(5);
   @$pb.TagNumber(7)
@@ -748,7 +861,10 @@ class AwsS3Data extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get managedPrivateNetwork => $_getBF(6);
   @$pb.TagNumber(8)
-  set managedPrivateNetwork($core.bool v) { $_setBool(6, v); }
+  set managedPrivateNetwork($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasManagedPrivateNetwork() => $_has(6);
   @$pb.TagNumber(8)
@@ -789,44 +905,58 @@ class AzureBlobStorageData extends $pb.GeneratedMessage {
     return $result;
   }
   AzureBlobStorageData._() : super();
-  factory AzureBlobStorageData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AzureBlobStorageData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AzureBlobStorageData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AzureBlobStorageData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AzureBlobStorageData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AzureBlobStorageData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'storageAccount')
-    ..aOM<AzureCredentials>(2, _omitFieldNames ? '' : 'azureCredentials', subBuilder: AzureCredentials.create)
+    ..aOM<AzureCredentials>(2, _omitFieldNames ? '' : 'azureCredentials',
+        subBuilder: AzureCredentials.create)
     ..aOS(4, _omitFieldNames ? '' : 'container')
     ..aOS(5, _omitFieldNames ? '' : 'path')
     ..aOS(7, _omitFieldNames ? '' : 'credentialsSecret')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AzureBlobStorageData clone() => AzureBlobStorageData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AzureBlobStorageData copyWith(void Function(AzureBlobStorageData) updates) => super.copyWith((message) => updates(message as AzureBlobStorageData)) as AzureBlobStorageData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AzureBlobStorageData clone() =>
+      AzureBlobStorageData()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AzureBlobStorageData copyWith(void Function(AzureBlobStorageData) updates) =>
+      super.copyWith((message) => updates(message as AzureBlobStorageData))
+          as AzureBlobStorageData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AzureBlobStorageData create() => AzureBlobStorageData._();
   AzureBlobStorageData createEmptyInstance() => create();
-  static $pb.PbList<AzureBlobStorageData> createRepeated() => $pb.PbList<AzureBlobStorageData>();
+  static $pb.PbList<AzureBlobStorageData> createRepeated() =>
+      $pb.PbList<AzureBlobStorageData>();
   @$core.pragma('dart2js:noInline')
-  static AzureBlobStorageData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AzureBlobStorageData>(create);
+  static AzureBlobStorageData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AzureBlobStorageData>(create);
   static AzureBlobStorageData? _defaultInstance;
 
   /// Required. The name of the Azure Storage account.
   @$pb.TagNumber(1)
   $core.String get storageAccount => $_getSZ(0);
   @$pb.TagNumber(1)
-  set storageAccount($core.String v) { $_setString(0, v); }
+  set storageAccount($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStorageAccount() => $_has(0);
   @$pb.TagNumber(1)
@@ -840,7 +970,10 @@ class AzureBlobStorageData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AzureCredentials get azureCredentials => $_getN(1);
   @$pb.TagNumber(2)
-  set azureCredentials(AzureCredentials v) { setField(2, v); }
+  set azureCredentials(AzureCredentials v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAzureCredentials() => $_has(1);
   @$pb.TagNumber(2)
@@ -852,7 +985,10 @@ class AzureBlobStorageData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get container => $_getSZ(2);
   @$pb.TagNumber(4)
-  set container($core.String v) { $_setString(2, v); }
+  set container($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasContainer() => $_has(2);
   @$pb.TagNumber(4)
@@ -866,7 +1002,10 @@ class AzureBlobStorageData extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get path => $_getSZ(3);
   @$pb.TagNumber(5)
-  set path($core.String v) { $_setString(3, v); }
+  set path($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPath() => $_has(3);
   @$pb.TagNumber(5)
@@ -894,7 +1033,10 @@ class AzureBlobStorageData extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get credentialsSecret => $_getSZ(4);
   @$pb.TagNumber(7)
-  set credentialsSecret($core.String v) { $_setString(4, v); }
+  set credentialsSecret($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCredentialsSecret() => $_has(4);
   @$pb.TagNumber(7)
@@ -952,24 +1094,30 @@ class HttpData extends $pb.GeneratedMessage {
     return $result;
   }
   HttpData._() : super();
-  factory HttpData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory HttpData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory HttpData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory HttpData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HttpData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'HttpData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'listUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   HttpData clone() => HttpData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  HttpData copyWith(void Function(HttpData) updates) => super.copyWith((message) => updates(message as HttpData)) as HttpData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  HttpData copyWith(void Function(HttpData) updates) =>
+      super.copyWith((message) => updates(message as HttpData)) as HttpData;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -978,7 +1126,8 @@ class HttpData extends $pb.GeneratedMessage {
   HttpData createEmptyInstance() => create();
   static $pb.PbList<HttpData> createRepeated() => $pb.PbList<HttpData>();
   @$core.pragma('dart2js:noInline')
-  static HttpData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HttpData>(create);
+  static HttpData getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HttpData>(create);
   static HttpData? _defaultInstance;
 
   /// Required. The URL that points to the file that stores the object list
@@ -987,7 +1136,10 @@ class HttpData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get listUrl => $_getSZ(0);
   @$pb.TagNumber(1)
-  set listUrl($core.String v) { $_setString(0, v); }
+  set listUrl($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasListUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -1006,40 +1158,52 @@ class PosixFilesystem extends $pb.GeneratedMessage {
     return $result;
   }
   PosixFilesystem._() : super();
-  factory PosixFilesystem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PosixFilesystem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PosixFilesystem.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PosixFilesystem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PosixFilesystem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PosixFilesystem',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'rootDirectory')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PosixFilesystem clone() => PosixFilesystem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PosixFilesystem copyWith(void Function(PosixFilesystem) updates) => super.copyWith((message) => updates(message as PosixFilesystem)) as PosixFilesystem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PosixFilesystem copyWith(void Function(PosixFilesystem) updates) =>
+      super.copyWith((message) => updates(message as PosixFilesystem))
+          as PosixFilesystem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PosixFilesystem create() => PosixFilesystem._();
   PosixFilesystem createEmptyInstance() => create();
-  static $pb.PbList<PosixFilesystem> createRepeated() => $pb.PbList<PosixFilesystem>();
+  static $pb.PbList<PosixFilesystem> createRepeated() =>
+      $pb.PbList<PosixFilesystem>();
   @$core.pragma('dart2js:noInline')
-  static PosixFilesystem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PosixFilesystem>(create);
+  static PosixFilesystem getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PosixFilesystem>(create);
   static PosixFilesystem? _defaultInstance;
 
   /// Root directory path to the filesystem.
   @$pb.TagNumber(1)
   $core.String get rootDirectory => $_getSZ(0);
   @$pb.TagNumber(1)
-  set rootDirectory($core.String v) { $_setString(0, v); }
+  set rootDirectory($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRootDirectory() => $_has(0);
   @$pb.TagNumber(1)
@@ -1061,24 +1225,30 @@ class HdfsData extends $pb.GeneratedMessage {
     return $result;
   }
   HdfsData._() : super();
-  factory HdfsData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory HdfsData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory HdfsData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory HdfsData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HdfsData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'HdfsData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   HdfsData clone() => HdfsData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  HdfsData copyWith(void Function(HdfsData) updates) => super.copyWith((message) => updates(message as HdfsData)) as HdfsData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  HdfsData copyWith(void Function(HdfsData) updates) =>
+      super.copyWith((message) => updates(message as HdfsData)) as HdfsData;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1087,24 +1257,25 @@ class HdfsData extends $pb.GeneratedMessage {
   HdfsData createEmptyInstance() => create();
   static $pb.PbList<HdfsData> createRepeated() => $pb.PbList<HdfsData>();
   @$core.pragma('dart2js:noInline')
-  static HdfsData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HdfsData>(create);
+  static HdfsData getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HdfsData>(create);
   static HdfsData? _defaultInstance;
 
   /// Root path to transfer files.
   @$pb.TagNumber(1)
   $core.String get path => $_getSZ(0);
   @$pb.TagNumber(1)
-  set path($core.String v) { $_setString(0, v); }
+  set path($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
   void clearPath() => clearField(1);
 }
 
-enum AwsS3CompatibleData_DataProvider {
-  s3Metadata, 
-  notSet
-}
+enum AwsS3CompatibleData_DataProvider { s3Metadata, notSet }
 
 /// An AwsS3CompatibleData resource.
 class AwsS3CompatibleData extends $pb.GeneratedMessage {
@@ -1134,52 +1305,67 @@ class AwsS3CompatibleData extends $pb.GeneratedMessage {
     return $result;
   }
   AwsS3CompatibleData._() : super();
-  factory AwsS3CompatibleData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AwsS3CompatibleData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AwsS3CompatibleData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AwsS3CompatibleData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AwsS3CompatibleData_DataProvider> _AwsS3CompatibleData_DataProviderByTag = {
-    4 : AwsS3CompatibleData_DataProvider.s3Metadata,
-    0 : AwsS3CompatibleData_DataProvider.notSet
+  static const $core.Map<$core.int, AwsS3CompatibleData_DataProvider>
+      _AwsS3CompatibleData_DataProviderByTag = {
+    4: AwsS3CompatibleData_DataProvider.s3Metadata,
+    0: AwsS3CompatibleData_DataProvider.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsS3CompatibleData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AwsS3CompatibleData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'bucketName')
     ..aOS(2, _omitFieldNames ? '' : 'path')
     ..aOS(3, _omitFieldNames ? '' : 'endpoint')
-    ..aOM<S3CompatibleMetadata>(4, _omitFieldNames ? '' : 's3Metadata', subBuilder: S3CompatibleMetadata.create)
+    ..aOM<S3CompatibleMetadata>(4, _omitFieldNames ? '' : 's3Metadata',
+        subBuilder: S3CompatibleMetadata.create)
     ..aOS(5, _omitFieldNames ? '' : 'region')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AwsS3CompatibleData clone() => AwsS3CompatibleData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AwsS3CompatibleData copyWith(void Function(AwsS3CompatibleData) updates) => super.copyWith((message) => updates(message as AwsS3CompatibleData)) as AwsS3CompatibleData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AwsS3CompatibleData copyWith(void Function(AwsS3CompatibleData) updates) =>
+      super.copyWith((message) => updates(message as AwsS3CompatibleData))
+          as AwsS3CompatibleData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AwsS3CompatibleData create() => AwsS3CompatibleData._();
   AwsS3CompatibleData createEmptyInstance() => create();
-  static $pb.PbList<AwsS3CompatibleData> createRepeated() => $pb.PbList<AwsS3CompatibleData>();
+  static $pb.PbList<AwsS3CompatibleData> createRepeated() =>
+      $pb.PbList<AwsS3CompatibleData>();
   @$core.pragma('dart2js:noInline')
-  static AwsS3CompatibleData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AwsS3CompatibleData>(create);
+  static AwsS3CompatibleData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AwsS3CompatibleData>(create);
   static AwsS3CompatibleData? _defaultInstance;
 
-  AwsS3CompatibleData_DataProvider whichDataProvider() => _AwsS3CompatibleData_DataProviderByTag[$_whichOneof(0)]!;
+  AwsS3CompatibleData_DataProvider whichDataProvider() =>
+      _AwsS3CompatibleData_DataProviderByTag[$_whichOneof(0)]!;
   void clearDataProvider() => clearField($_whichOneof(0));
 
   /// Required. Specifies the name of the bucket.
   @$pb.TagNumber(1)
   $core.String get bucketName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set bucketName($core.String v) { $_setString(0, v); }
+  set bucketName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBucketName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1193,7 +1379,10 @@ class AwsS3CompatibleData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get path => $_getSZ(1);
   @$pb.TagNumber(2)
-  set path($core.String v) { $_setString(1, v); }
+  set path($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPath() => $_has(1);
   @$pb.TagNumber(2)
@@ -1203,7 +1392,10 @@ class AwsS3CompatibleData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get endpoint => $_getSZ(2);
   @$pb.TagNumber(3)
-  set endpoint($core.String v) { $_setString(2, v); }
+  set endpoint($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEndpoint() => $_has(2);
   @$pb.TagNumber(3)
@@ -1213,7 +1405,10 @@ class AwsS3CompatibleData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   S3CompatibleMetadata get s3Metadata => $_getN(3);
   @$pb.TagNumber(4)
-  set s3Metadata(S3CompatibleMetadata v) { setField(4, v); }
+  set s3Metadata(S3CompatibleMetadata v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasS3Metadata() => $_has(3);
   @$pb.TagNumber(4)
@@ -1226,7 +1421,10 @@ class AwsS3CompatibleData extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get region => $_getSZ(4);
   @$pb.TagNumber(5)
-  set region($core.String v) { $_setString(4, v); }
+  set region($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRegion() => $_has(4);
   @$pb.TagNumber(5)
@@ -1258,36 +1456,64 @@ class S3CompatibleMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   S3CompatibleMetadata._() : super();
-  factory S3CompatibleMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory S3CompatibleMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory S3CompatibleMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory S3CompatibleMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'S3CompatibleMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..e<S3CompatibleMetadata_AuthMethod>(1, _omitFieldNames ? '' : 'authMethod', $pb.PbFieldType.OE, defaultOrMaker: S3CompatibleMetadata_AuthMethod.AUTH_METHOD_UNSPECIFIED, valueOf: S3CompatibleMetadata_AuthMethod.valueOf, enumValues: S3CompatibleMetadata_AuthMethod.values)
-    ..e<S3CompatibleMetadata_RequestModel>(2, _omitFieldNames ? '' : 'requestModel', $pb.PbFieldType.OE, defaultOrMaker: S3CompatibleMetadata_RequestModel.REQUEST_MODEL_UNSPECIFIED, valueOf: S3CompatibleMetadata_RequestModel.valueOf, enumValues: S3CompatibleMetadata_RequestModel.values)
-    ..e<S3CompatibleMetadata_NetworkProtocol>(3, _omitFieldNames ? '' : 'protocol', $pb.PbFieldType.OE, defaultOrMaker: S3CompatibleMetadata_NetworkProtocol.NETWORK_PROTOCOL_UNSPECIFIED, valueOf: S3CompatibleMetadata_NetworkProtocol.valueOf, enumValues: S3CompatibleMetadata_NetworkProtocol.values)
-    ..e<S3CompatibleMetadata_ListApi>(4, _omitFieldNames ? '' : 'listApi', $pb.PbFieldType.OE, defaultOrMaker: S3CompatibleMetadata_ListApi.LIST_API_UNSPECIFIED, valueOf: S3CompatibleMetadata_ListApi.valueOf, enumValues: S3CompatibleMetadata_ListApi.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'S3CompatibleMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..e<S3CompatibleMetadata_AuthMethod>(
+        1, _omitFieldNames ? '' : 'authMethod', $pb.PbFieldType.OE,
+        defaultOrMaker: S3CompatibleMetadata_AuthMethod.AUTH_METHOD_UNSPECIFIED,
+        valueOf: S3CompatibleMetadata_AuthMethod.valueOf,
+        enumValues: S3CompatibleMetadata_AuthMethod.values)
+    ..e<S3CompatibleMetadata_RequestModel>(
+        2, _omitFieldNames ? '' : 'requestModel', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            S3CompatibleMetadata_RequestModel.REQUEST_MODEL_UNSPECIFIED,
+        valueOf: S3CompatibleMetadata_RequestModel.valueOf,
+        enumValues: S3CompatibleMetadata_RequestModel.values)
+    ..e<S3CompatibleMetadata_NetworkProtocol>(
+        3, _omitFieldNames ? '' : 'protocol', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            S3CompatibleMetadata_NetworkProtocol.NETWORK_PROTOCOL_UNSPECIFIED,
+        valueOf: S3CompatibleMetadata_NetworkProtocol.valueOf,
+        enumValues: S3CompatibleMetadata_NetworkProtocol.values)
+    ..e<S3CompatibleMetadata_ListApi>(
+        4, _omitFieldNames ? '' : 'listApi', $pb.PbFieldType.OE,
+        defaultOrMaker: S3CompatibleMetadata_ListApi.LIST_API_UNSPECIFIED,
+        valueOf: S3CompatibleMetadata_ListApi.valueOf,
+        enumValues: S3CompatibleMetadata_ListApi.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  S3CompatibleMetadata clone() => S3CompatibleMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  S3CompatibleMetadata copyWith(void Function(S3CompatibleMetadata) updates) => super.copyWith((message) => updates(message as S3CompatibleMetadata)) as S3CompatibleMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  S3CompatibleMetadata clone() =>
+      S3CompatibleMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  S3CompatibleMetadata copyWith(void Function(S3CompatibleMetadata) updates) =>
+      super.copyWith((message) => updates(message as S3CompatibleMetadata))
+          as S3CompatibleMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static S3CompatibleMetadata create() => S3CompatibleMetadata._();
   S3CompatibleMetadata createEmptyInstance() => create();
-  static $pb.PbList<S3CompatibleMetadata> createRepeated() => $pb.PbList<S3CompatibleMetadata>();
+  static $pb.PbList<S3CompatibleMetadata> createRepeated() =>
+      $pb.PbList<S3CompatibleMetadata>();
   @$core.pragma('dart2js:noInline')
-  static S3CompatibleMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<S3CompatibleMetadata>(create);
+  static S3CompatibleMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<S3CompatibleMetadata>(create);
   static S3CompatibleMetadata? _defaultInstance;
 
   /// Specifies the authentication and authorization method used by the storage
@@ -1296,7 +1522,10 @@ class S3CompatibleMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   S3CompatibleMetadata_AuthMethod get authMethod => $_getN(0);
   @$pb.TagNumber(1)
-  set authMethod(S3CompatibleMetadata_AuthMethod v) { setField(1, v); }
+  set authMethod(S3CompatibleMetadata_AuthMethod v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAuthMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -1308,7 +1537,10 @@ class S3CompatibleMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   S3CompatibleMetadata_RequestModel get requestModel => $_getN(1);
   @$pb.TagNumber(2)
-  set requestModel(S3CompatibleMetadata_RequestModel v) { setField(2, v); }
+  set requestModel(S3CompatibleMetadata_RequestModel v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRequestModel() => $_has(1);
   @$pb.TagNumber(2)
@@ -1319,7 +1551,10 @@ class S3CompatibleMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   S3CompatibleMetadata_NetworkProtocol get protocol => $_getN(2);
   @$pb.TagNumber(3)
-  set protocol(S3CompatibleMetadata_NetworkProtocol v) { setField(3, v); }
+  set protocol(S3CompatibleMetadata_NetworkProtocol v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProtocol() => $_has(2);
   @$pb.TagNumber(3)
@@ -1330,7 +1565,10 @@ class S3CompatibleMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   S3CompatibleMetadata_ListApi get listApi => $_getN(3);
   @$pb.TagNumber(4)
-  set listApi(S3CompatibleMetadata_ListApi v) { setField(4, v); }
+  set listApi(S3CompatibleMetadata_ListApi v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasListApi() => $_has(3);
   @$pb.TagNumber(4)
@@ -1349,33 +1587,44 @@ class AgentPool_BandwidthLimit extends $pb.GeneratedMessage {
     return $result;
   }
   AgentPool_BandwidthLimit._() : super();
-  factory AgentPool_BandwidthLimit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AgentPool_BandwidthLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AgentPool_BandwidthLimit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AgentPool_BandwidthLimit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgentPool.BandwidthLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AgentPool.BandwidthLimit',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'limitMbps')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AgentPool_BandwidthLimit clone() => AgentPool_BandwidthLimit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AgentPool_BandwidthLimit copyWith(void Function(AgentPool_BandwidthLimit) updates) => super.copyWith((message) => updates(message as AgentPool_BandwidthLimit)) as AgentPool_BandwidthLimit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AgentPool_BandwidthLimit clone() =>
+      AgentPool_BandwidthLimit()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AgentPool_BandwidthLimit copyWith(
+          void Function(AgentPool_BandwidthLimit) updates) =>
+      super.copyWith((message) => updates(message as AgentPool_BandwidthLimit))
+          as AgentPool_BandwidthLimit;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AgentPool_BandwidthLimit create() => AgentPool_BandwidthLimit._();
   AgentPool_BandwidthLimit createEmptyInstance() => create();
-  static $pb.PbList<AgentPool_BandwidthLimit> createRepeated() => $pb.PbList<AgentPool_BandwidthLimit>();
+  static $pb.PbList<AgentPool_BandwidthLimit> createRepeated() =>
+      $pb.PbList<AgentPool_BandwidthLimit>();
   @$core.pragma('dart2js:noInline')
-  static AgentPool_BandwidthLimit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgentPool_BandwidthLimit>(create);
+  static AgentPool_BandwidthLimit getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AgentPool_BandwidthLimit>(create);
   static AgentPool_BandwidthLimit? _defaultInstance;
 
   /// Bandwidth rate in megabytes per second, distributed across all the agents
@@ -1383,7 +1632,10 @@ class AgentPool_BandwidthLimit extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get limitMbps => $_getI64(0);
   @$pb.TagNumber(1)
-  set limitMbps($fixnum.Int64 v) { $_setInt64(0, v); }
+  set limitMbps($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLimitMbps() => $_has(0);
   @$pb.TagNumber(1)
@@ -1414,27 +1666,37 @@ class AgentPool extends $pb.GeneratedMessage {
     return $result;
   }
   AgentPool._() : super();
-  factory AgentPool.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AgentPool.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AgentPool.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AgentPool.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgentPool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AgentPool',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..e<AgentPool_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AgentPool_State.STATE_UNSPECIFIED, valueOf: AgentPool_State.valueOf, enumValues: AgentPool_State.values)
-    ..aOM<AgentPool_BandwidthLimit>(5, _omitFieldNames ? '' : 'bandwidthLimit', subBuilder: AgentPool_BandwidthLimit.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<AgentPool_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: AgentPool_State.STATE_UNSPECIFIED,
+        valueOf: AgentPool_State.valueOf,
+        enumValues: AgentPool_State.values)
+    ..aOM<AgentPool_BandwidthLimit>(5, _omitFieldNames ? '' : 'bandwidthLimit',
+        subBuilder: AgentPool_BandwidthLimit.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AgentPool clone() => AgentPool()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AgentPool copyWith(void Function(AgentPool) updates) => super.copyWith((message) => updates(message as AgentPool)) as AgentPool;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AgentPool copyWith(void Function(AgentPool) updates) =>
+      super.copyWith((message) => updates(message as AgentPool)) as AgentPool;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1443,7 +1705,8 @@ class AgentPool extends $pb.GeneratedMessage {
   AgentPool createEmptyInstance() => create();
   static $pb.PbList<AgentPool> createRepeated() => $pb.PbList<AgentPool>();
   @$core.pragma('dart2js:noInline')
-  static AgentPool getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgentPool>(create);
+  static AgentPool getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgentPool>(create);
   static AgentPool? _defaultInstance;
 
   ///  Required. Specifies a unique string that identifies the agent pool.
@@ -1452,7 +1715,10 @@ class AgentPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(2)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(2)
@@ -1462,7 +1728,10 @@ class AgentPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(3)
@@ -1472,7 +1741,10 @@ class AgentPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   AgentPool_State get state => $_getN(2);
   @$pb.TagNumber(4)
-  set state(AgentPool_State v) { setField(4, v); }
+  set state(AgentPool_State v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(4)
@@ -1483,7 +1755,10 @@ class AgentPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   AgentPool_BandwidthLimit get bandwidthLimit => $_getN(3);
   @$pb.TagNumber(5)
-  set bandwidthLimit(AgentPool_BandwidthLimit v) { setField(5, v); }
+  set bandwidthLimit(AgentPool_BandwidthLimit v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBandwidthLimit() => $_has(3);
   @$pb.TagNumber(5)
@@ -1503,13 +1778,15 @@ class TransferOptions extends $pb.GeneratedMessage {
   }) {
     final $result = create();
     if (overwriteObjectsAlreadyExistingInSink != null) {
-      $result.overwriteObjectsAlreadyExistingInSink = overwriteObjectsAlreadyExistingInSink;
+      $result.overwriteObjectsAlreadyExistingInSink =
+          overwriteObjectsAlreadyExistingInSink;
     }
     if (deleteObjectsUniqueInSink != null) {
       $result.deleteObjectsUniqueInSink = deleteObjectsUniqueInSink;
     }
     if (deleteObjectsFromSourceAfterTransfer != null) {
-      $result.deleteObjectsFromSourceAfterTransfer = deleteObjectsFromSourceAfterTransfer;
+      $result.deleteObjectsFromSourceAfterTransfer =
+          deleteObjectsFromSourceAfterTransfer;
     }
     if (overwriteWhen != null) {
       $result.overwriteWhen = overwriteWhen;
@@ -1520,37 +1797,52 @@ class TransferOptions extends $pb.GeneratedMessage {
     return $result;
   }
   TransferOptions._() : super();
-  factory TransferOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'overwriteObjectsAlreadyExistingInSink')
     ..aOB(2, _omitFieldNames ? '' : 'deleteObjectsUniqueInSink')
     ..aOB(3, _omitFieldNames ? '' : 'deleteObjectsFromSourceAfterTransfer')
-    ..e<TransferOptions_OverwriteWhen>(4, _omitFieldNames ? '' : 'overwriteWhen', $pb.PbFieldType.OE, defaultOrMaker: TransferOptions_OverwriteWhen.OVERWRITE_WHEN_UNSPECIFIED, valueOf: TransferOptions_OverwriteWhen.valueOf, enumValues: TransferOptions_OverwriteWhen.values)
-    ..aOM<MetadataOptions>(5, _omitFieldNames ? '' : 'metadataOptions', subBuilder: MetadataOptions.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<TransferOptions_OverwriteWhen>(
+        4, _omitFieldNames ? '' : 'overwriteWhen', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            TransferOptions_OverwriteWhen.OVERWRITE_WHEN_UNSPECIFIED,
+        valueOf: TransferOptions_OverwriteWhen.valueOf,
+        enumValues: TransferOptions_OverwriteWhen.values)
+    ..aOM<MetadataOptions>(5, _omitFieldNames ? '' : 'metadataOptions',
+        subBuilder: MetadataOptions.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransferOptions clone() => TransferOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferOptions copyWith(void Function(TransferOptions) updates) => super.copyWith((message) => updates(message as TransferOptions)) as TransferOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferOptions copyWith(void Function(TransferOptions) updates) =>
+      super.copyWith((message) => updates(message as TransferOptions))
+          as TransferOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransferOptions create() => TransferOptions._();
   TransferOptions createEmptyInstance() => create();
-  static $pb.PbList<TransferOptions> createRepeated() => $pb.PbList<TransferOptions>();
+  static $pb.PbList<TransferOptions> createRepeated() =>
+      $pb.PbList<TransferOptions>();
   @$core.pragma('dart2js:noInline')
-  static TransferOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferOptions>(create);
+  static TransferOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferOptions>(create);
   static TransferOptions? _defaultInstance;
 
   /// When to overwrite objects that already exist in the sink. The default is
@@ -1560,7 +1852,10 @@ class TransferOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get overwriteObjectsAlreadyExistingInSink => $_getBF(0);
   @$pb.TagNumber(1)
-  set overwriteObjectsAlreadyExistingInSink($core.bool v) { $_setBool(0, v); }
+  set overwriteObjectsAlreadyExistingInSink($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOverwriteObjectsAlreadyExistingInSink() => $_has(0);
   @$pb.TagNumber(1)
@@ -1574,7 +1869,10 @@ class TransferOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get deleteObjectsUniqueInSink => $_getBF(1);
   @$pb.TagNumber(2)
-  set deleteObjectsUniqueInSink($core.bool v) { $_setBool(1, v); }
+  set deleteObjectsUniqueInSink($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDeleteObjectsUniqueInSink() => $_has(1);
   @$pb.TagNumber(2)
@@ -1589,7 +1887,10 @@ class TransferOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get deleteObjectsFromSourceAfterTransfer => $_getBF(2);
   @$pb.TagNumber(3)
-  set deleteObjectsFromSourceAfterTransfer($core.bool v) { $_setBool(2, v); }
+  set deleteObjectsFromSourceAfterTransfer($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeleteObjectsFromSourceAfterTransfer() => $_has(2);
   @$pb.TagNumber(3)
@@ -1601,7 +1902,10 @@ class TransferOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TransferOptions_OverwriteWhen get overwriteWhen => $_getN(3);
   @$pb.TagNumber(4)
-  set overwriteWhen(TransferOptions_OverwriteWhen v) { setField(4, v); }
+  set overwriteWhen(TransferOptions_OverwriteWhen v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOverwriteWhen() => $_has(3);
   @$pb.TagNumber(4)
@@ -1611,7 +1915,10 @@ class TransferOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   MetadataOptions get metadataOptions => $_getN(4);
   @$pb.TagNumber(5)
-  set metadataOptions(MetadataOptions v) { setField(5, v); }
+  set metadataOptions(MetadataOptions v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasMetadataOptions() => $_has(4);
   @$pb.TagNumber(5)
@@ -1620,25 +1927,21 @@ class TransferOptions extends $pb.GeneratedMessage {
   MetadataOptions ensureMetadataOptions() => $_ensure(4);
 }
 
-enum TransferSpec_DataSink {
-  gcsDataSink, 
-  posixDataSink, 
-  notSet
-}
+enum TransferSpec_DataSink { gcsDataSink, posixDataSink, notSet }
 
 enum TransferSpec_DataSource {
-  gcsDataSource, 
-  awsS3DataSource, 
-  httpDataSource, 
-  azureBlobStorageDataSource, 
-  posixDataSource, 
-  awsS3CompatibleDataSource, 
-  hdfsDataSource, 
+  gcsDataSource,
+  awsS3DataSource,
+  httpDataSource,
+  azureBlobStorageDataSource,
+  posixDataSource,
+  awsS3CompatibleDataSource,
+  hdfsDataSource,
   notSet
 }
 
 enum TransferSpec_IntermediateDataLocation {
-  gcsIntermediateDataLocation, 
+  gcsIntermediateDataLocation,
   notSet
 }
 
@@ -1710,85 +2013,118 @@ class TransferSpec extends $pb.GeneratedMessage {
     return $result;
   }
   TransferSpec._() : super();
-  factory TransferSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TransferSpec_DataSink> _TransferSpec_DataSinkByTag = {
-    4 : TransferSpec_DataSink.gcsDataSink,
-    13 : TransferSpec_DataSink.posixDataSink,
-    0 : TransferSpec_DataSink.notSet
+  static const $core.Map<$core.int, TransferSpec_DataSink>
+      _TransferSpec_DataSinkByTag = {
+    4: TransferSpec_DataSink.gcsDataSink,
+    13: TransferSpec_DataSink.posixDataSink,
+    0: TransferSpec_DataSink.notSet
   };
-  static const $core.Map<$core.int, TransferSpec_DataSource> _TransferSpec_DataSourceByTag = {
-    1 : TransferSpec_DataSource.gcsDataSource,
-    2 : TransferSpec_DataSource.awsS3DataSource,
-    3 : TransferSpec_DataSource.httpDataSource,
-    8 : TransferSpec_DataSource.azureBlobStorageDataSource,
-    14 : TransferSpec_DataSource.posixDataSource,
-    19 : TransferSpec_DataSource.awsS3CompatibleDataSource,
-    20 : TransferSpec_DataSource.hdfsDataSource,
-    0 : TransferSpec_DataSource.notSet
+  static const $core.Map<$core.int, TransferSpec_DataSource>
+      _TransferSpec_DataSourceByTag = {
+    1: TransferSpec_DataSource.gcsDataSource,
+    2: TransferSpec_DataSource.awsS3DataSource,
+    3: TransferSpec_DataSource.httpDataSource,
+    8: TransferSpec_DataSource.azureBlobStorageDataSource,
+    14: TransferSpec_DataSource.posixDataSource,
+    19: TransferSpec_DataSource.awsS3CompatibleDataSource,
+    20: TransferSpec_DataSource.hdfsDataSource,
+    0: TransferSpec_DataSource.notSet
   };
-  static const $core.Map<$core.int, TransferSpec_IntermediateDataLocation> _TransferSpec_IntermediateDataLocationByTag = {
-    16 : TransferSpec_IntermediateDataLocation.gcsIntermediateDataLocation,
-    0 : TransferSpec_IntermediateDataLocation.notSet
+  static const $core.Map<$core.int, TransferSpec_IntermediateDataLocation>
+      _TransferSpec_IntermediateDataLocationByTag = {
+    16: TransferSpec_IntermediateDataLocation.gcsIntermediateDataLocation,
+    0: TransferSpec_IntermediateDataLocation.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..oo(0, [4, 13])
     ..oo(1, [1, 2, 3, 8, 14, 19, 20])
     ..oo(2, [16])
-    ..aOM<GcsData>(1, _omitFieldNames ? '' : 'gcsDataSource', subBuilder: GcsData.create)
-    ..aOM<AwsS3Data>(2, _omitFieldNames ? '' : 'awsS3DataSource', subBuilder: AwsS3Data.create)
-    ..aOM<HttpData>(3, _omitFieldNames ? '' : 'httpDataSource', subBuilder: HttpData.create)
-    ..aOM<GcsData>(4, _omitFieldNames ? '' : 'gcsDataSink', subBuilder: GcsData.create)
-    ..aOM<ObjectConditions>(5, _omitFieldNames ? '' : 'objectConditions', subBuilder: ObjectConditions.create)
-    ..aOM<TransferOptions>(6, _omitFieldNames ? '' : 'transferOptions', subBuilder: TransferOptions.create)
-    ..aOM<AzureBlobStorageData>(8, _omitFieldNames ? '' : 'azureBlobStorageDataSource', subBuilder: AzureBlobStorageData.create)
-    ..aOM<PosixFilesystem>(13, _omitFieldNames ? '' : 'posixDataSink', subBuilder: PosixFilesystem.create)
-    ..aOM<PosixFilesystem>(14, _omitFieldNames ? '' : 'posixDataSource', subBuilder: PosixFilesystem.create)
-    ..aOM<TransferManifest>(15, _omitFieldNames ? '' : 'transferManifest', subBuilder: TransferManifest.create)
-    ..aOM<GcsData>(16, _omitFieldNames ? '' : 'gcsIntermediateDataLocation', subBuilder: GcsData.create)
+    ..aOM<GcsData>(1, _omitFieldNames ? '' : 'gcsDataSource',
+        subBuilder: GcsData.create)
+    ..aOM<AwsS3Data>(2, _omitFieldNames ? '' : 'awsS3DataSource',
+        subBuilder: AwsS3Data.create)
+    ..aOM<HttpData>(3, _omitFieldNames ? '' : 'httpDataSource',
+        subBuilder: HttpData.create)
+    ..aOM<GcsData>(4, _omitFieldNames ? '' : 'gcsDataSink',
+        subBuilder: GcsData.create)
+    ..aOM<ObjectConditions>(5, _omitFieldNames ? '' : 'objectConditions',
+        subBuilder: ObjectConditions.create)
+    ..aOM<TransferOptions>(6, _omitFieldNames ? '' : 'transferOptions',
+        subBuilder: TransferOptions.create)
+    ..aOM<AzureBlobStorageData>(
+        8, _omitFieldNames ? '' : 'azureBlobStorageDataSource',
+        subBuilder: AzureBlobStorageData.create)
+    ..aOM<PosixFilesystem>(13, _omitFieldNames ? '' : 'posixDataSink',
+        subBuilder: PosixFilesystem.create)
+    ..aOM<PosixFilesystem>(14, _omitFieldNames ? '' : 'posixDataSource',
+        subBuilder: PosixFilesystem.create)
+    ..aOM<TransferManifest>(15, _omitFieldNames ? '' : 'transferManifest',
+        subBuilder: TransferManifest.create)
+    ..aOM<GcsData>(16, _omitFieldNames ? '' : 'gcsIntermediateDataLocation',
+        subBuilder: GcsData.create)
     ..aOS(17, _omitFieldNames ? '' : 'sourceAgentPoolName')
     ..aOS(18, _omitFieldNames ? '' : 'sinkAgentPoolName')
-    ..aOM<AwsS3CompatibleData>(19, _omitFieldNames ? '' : 'awsS3CompatibleDataSource', subBuilder: AwsS3CompatibleData.create)
-    ..aOM<HdfsData>(20, _omitFieldNames ? '' : 'hdfsDataSource', subBuilder: HdfsData.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<AwsS3CompatibleData>(
+        19, _omitFieldNames ? '' : 'awsS3CompatibleDataSource',
+        subBuilder: AwsS3CompatibleData.create)
+    ..aOM<HdfsData>(20, _omitFieldNames ? '' : 'hdfsDataSource',
+        subBuilder: HdfsData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransferSpec clone() => TransferSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferSpec copyWith(void Function(TransferSpec) updates) => super.copyWith((message) => updates(message as TransferSpec)) as TransferSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferSpec copyWith(void Function(TransferSpec) updates) =>
+      super.copyWith((message) => updates(message as TransferSpec))
+          as TransferSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransferSpec create() => TransferSpec._();
   TransferSpec createEmptyInstance() => create();
-  static $pb.PbList<TransferSpec> createRepeated() => $pb.PbList<TransferSpec>();
+  static $pb.PbList<TransferSpec> createRepeated() =>
+      $pb.PbList<TransferSpec>();
   @$core.pragma('dart2js:noInline')
-  static TransferSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferSpec>(create);
+  static TransferSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferSpec>(create);
   static TransferSpec? _defaultInstance;
 
-  TransferSpec_DataSink whichDataSink() => _TransferSpec_DataSinkByTag[$_whichOneof(0)]!;
+  TransferSpec_DataSink whichDataSink() =>
+      _TransferSpec_DataSinkByTag[$_whichOneof(0)]!;
   void clearDataSink() => clearField($_whichOneof(0));
 
-  TransferSpec_DataSource whichDataSource() => _TransferSpec_DataSourceByTag[$_whichOneof(1)]!;
+  TransferSpec_DataSource whichDataSource() =>
+      _TransferSpec_DataSourceByTag[$_whichOneof(1)]!;
   void clearDataSource() => clearField($_whichOneof(1));
 
-  TransferSpec_IntermediateDataLocation whichIntermediateDataLocation() => _TransferSpec_IntermediateDataLocationByTag[$_whichOneof(2)]!;
+  TransferSpec_IntermediateDataLocation whichIntermediateDataLocation() =>
+      _TransferSpec_IntermediateDataLocationByTag[$_whichOneof(2)]!;
   void clearIntermediateDataLocation() => clearField($_whichOneof(2));
 
   /// A Cloud Storage data source.
   @$pb.TagNumber(1)
   GcsData get gcsDataSource => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsDataSource(GcsData v) { setField(1, v); }
+  set gcsDataSource(GcsData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasGcsDataSource() => $_has(0);
   @$pb.TagNumber(1)
@@ -1800,7 +2136,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AwsS3Data get awsS3DataSource => $_getN(1);
   @$pb.TagNumber(2)
-  set awsS3DataSource(AwsS3Data v) { setField(2, v); }
+  set awsS3DataSource(AwsS3Data v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAwsS3DataSource() => $_has(1);
   @$pb.TagNumber(2)
@@ -1812,7 +2151,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   HttpData get httpDataSource => $_getN(2);
   @$pb.TagNumber(3)
-  set httpDataSource(HttpData v) { setField(3, v); }
+  set httpDataSource(HttpData v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasHttpDataSource() => $_has(2);
   @$pb.TagNumber(3)
@@ -1824,7 +2166,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   GcsData get gcsDataSink => $_getN(3);
   @$pb.TagNumber(4)
-  set gcsDataSink(GcsData v) { setField(4, v); }
+  set gcsDataSink(GcsData v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasGcsDataSink() => $_has(3);
   @$pb.TagNumber(4)
@@ -1838,7 +2183,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ObjectConditions get objectConditions => $_getN(4);
   @$pb.TagNumber(5)
-  set objectConditions(ObjectConditions v) { setField(5, v); }
+  set objectConditions(ObjectConditions v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasObjectConditions() => $_has(4);
   @$pb.TagNumber(5)
@@ -1854,7 +2202,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   TransferOptions get transferOptions => $_getN(5);
   @$pb.TagNumber(6)
-  set transferOptions(TransferOptions v) { setField(6, v); }
+  set transferOptions(TransferOptions v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTransferOptions() => $_has(5);
   @$pb.TagNumber(6)
@@ -1866,7 +2217,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   AzureBlobStorageData get azureBlobStorageDataSource => $_getN(6);
   @$pb.TagNumber(8)
-  set azureBlobStorageDataSource(AzureBlobStorageData v) { setField(8, v); }
+  set azureBlobStorageDataSource(AzureBlobStorageData v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasAzureBlobStorageDataSource() => $_has(6);
   @$pb.TagNumber(8)
@@ -1878,7 +2232,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   PosixFilesystem get posixDataSink => $_getN(7);
   @$pb.TagNumber(13)
-  set posixDataSink(PosixFilesystem v) { setField(13, v); }
+  set posixDataSink(PosixFilesystem v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasPosixDataSink() => $_has(7);
   @$pb.TagNumber(13)
@@ -1890,7 +2247,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   PosixFilesystem get posixDataSource => $_getN(8);
   @$pb.TagNumber(14)
-  set posixDataSource(PosixFilesystem v) { setField(14, v); }
+  set posixDataSource(PosixFilesystem v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasPosixDataSource() => $_has(8);
   @$pb.TagNumber(14)
@@ -1904,7 +2264,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   TransferManifest get transferManifest => $_getN(9);
   @$pb.TagNumber(15)
-  set transferManifest(TransferManifest v) { setField(15, v); }
+  set transferManifest(TransferManifest v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasTransferManifest() => $_has(9);
   @$pb.TagNumber(15)
@@ -1921,7 +2284,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   GcsData get gcsIntermediateDataLocation => $_getN(10);
   @$pb.TagNumber(16)
-  set gcsIntermediateDataLocation(GcsData v) { setField(16, v); }
+  set gcsIntermediateDataLocation(GcsData v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasGcsIntermediateDataLocation() => $_has(10);
   @$pb.TagNumber(16)
@@ -1934,7 +2300,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get sourceAgentPoolName => $_getSZ(11);
   @$pb.TagNumber(17)
-  set sourceAgentPoolName($core.String v) { $_setString(11, v); }
+  set sourceAgentPoolName($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasSourceAgentPoolName() => $_has(11);
   @$pb.TagNumber(17)
@@ -1945,7 +2314,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get sinkAgentPoolName => $_getSZ(12);
   @$pb.TagNumber(18)
-  set sinkAgentPoolName($core.String v) { $_setString(12, v); }
+  set sinkAgentPoolName($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasSinkAgentPoolName() => $_has(12);
   @$pb.TagNumber(18)
@@ -1955,7 +2327,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   AwsS3CompatibleData get awsS3CompatibleDataSource => $_getN(13);
   @$pb.TagNumber(19)
-  set awsS3CompatibleDataSource(AwsS3CompatibleData v) { setField(19, v); }
+  set awsS3CompatibleDataSource(AwsS3CompatibleData v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasAwsS3CompatibleDataSource() => $_has(13);
   @$pb.TagNumber(19)
@@ -1967,7 +2342,10 @@ class TransferSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   HdfsData get hdfsDataSource => $_getN(14);
   @$pb.TagNumber(20)
-  set hdfsDataSource(HdfsData v) { setField(20, v); }
+  set hdfsDataSource(HdfsData v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasHdfsDataSource() => $_has(14);
   @$pb.TagNumber(20)
@@ -2020,41 +2398,87 @@ class MetadataOptions extends $pb.GeneratedMessage {
     return $result;
   }
   MetadataOptions._() : super();
-  factory MetadataOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetadataOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetadataOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetadataOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..e<MetadataOptions_Symlink>(1, _omitFieldNames ? '' : 'symlink', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_Symlink.SYMLINK_UNSPECIFIED, valueOf: MetadataOptions_Symlink.valueOf, enumValues: MetadataOptions_Symlink.values)
-    ..e<MetadataOptions_Mode>(2, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_Mode.MODE_UNSPECIFIED, valueOf: MetadataOptions_Mode.valueOf, enumValues: MetadataOptions_Mode.values)
-    ..e<MetadataOptions_GID>(3, _omitFieldNames ? '' : 'gid', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_GID.GID_UNSPECIFIED, valueOf: MetadataOptions_GID.valueOf, enumValues: MetadataOptions_GID.values)
-    ..e<MetadataOptions_UID>(4, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_UID.UID_UNSPECIFIED, valueOf: MetadataOptions_UID.valueOf, enumValues: MetadataOptions_UID.values)
-    ..e<MetadataOptions_Acl>(5, _omitFieldNames ? '' : 'acl', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_Acl.ACL_UNSPECIFIED, valueOf: MetadataOptions_Acl.valueOf, enumValues: MetadataOptions_Acl.values)
-    ..e<MetadataOptions_StorageClass>(6, _omitFieldNames ? '' : 'storageClass', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_StorageClass.STORAGE_CLASS_UNSPECIFIED, valueOf: MetadataOptions_StorageClass.valueOf, enumValues: MetadataOptions_StorageClass.values)
-    ..e<MetadataOptions_TemporaryHold>(7, _omitFieldNames ? '' : 'temporaryHold', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_TemporaryHold.TEMPORARY_HOLD_UNSPECIFIED, valueOf: MetadataOptions_TemporaryHold.valueOf, enumValues: MetadataOptions_TemporaryHold.values)
-    ..e<MetadataOptions_KmsKey>(8, _omitFieldNames ? '' : 'kmsKey', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_KmsKey.KMS_KEY_UNSPECIFIED, valueOf: MetadataOptions_KmsKey.valueOf, enumValues: MetadataOptions_KmsKey.values)
-    ..e<MetadataOptions_TimeCreated>(9, _omitFieldNames ? '' : 'timeCreated', $pb.PbFieldType.OE, defaultOrMaker: MetadataOptions_TimeCreated.TIME_CREATED_UNSPECIFIED, valueOf: MetadataOptions_TimeCreated.valueOf, enumValues: MetadataOptions_TimeCreated.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetadataOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..e<MetadataOptions_Symlink>(
+        1, _omitFieldNames ? '' : 'symlink', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_Symlink.SYMLINK_UNSPECIFIED,
+        valueOf: MetadataOptions_Symlink.valueOf,
+        enumValues: MetadataOptions_Symlink.values)
+    ..e<MetadataOptions_Mode>(
+        2, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_Mode.MODE_UNSPECIFIED,
+        valueOf: MetadataOptions_Mode.valueOf,
+        enumValues: MetadataOptions_Mode.values)
+    ..e<MetadataOptions_GID>(
+        3, _omitFieldNames ? '' : 'gid', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_GID.GID_UNSPECIFIED,
+        valueOf: MetadataOptions_GID.valueOf,
+        enumValues: MetadataOptions_GID.values)
+    ..e<MetadataOptions_UID>(
+        4, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_UID.UID_UNSPECIFIED,
+        valueOf: MetadataOptions_UID.valueOf,
+        enumValues: MetadataOptions_UID.values)
+    ..e<MetadataOptions_Acl>(
+        5, _omitFieldNames ? '' : 'acl', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_Acl.ACL_UNSPECIFIED,
+        valueOf: MetadataOptions_Acl.valueOf,
+        enumValues: MetadataOptions_Acl.values)
+    ..e<MetadataOptions_StorageClass>(
+        6, _omitFieldNames ? '' : 'storageClass', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_StorageClass.STORAGE_CLASS_UNSPECIFIED,
+        valueOf: MetadataOptions_StorageClass.valueOf,
+        enumValues: MetadataOptions_StorageClass.values)
+    ..e<MetadataOptions_TemporaryHold>(
+        7, _omitFieldNames ? '' : 'temporaryHold', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            MetadataOptions_TemporaryHold.TEMPORARY_HOLD_UNSPECIFIED,
+        valueOf: MetadataOptions_TemporaryHold.valueOf,
+        enumValues: MetadataOptions_TemporaryHold.values)
+    ..e<MetadataOptions_KmsKey>(
+        8, _omitFieldNames ? '' : 'kmsKey', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_KmsKey.KMS_KEY_UNSPECIFIED,
+        valueOf: MetadataOptions_KmsKey.valueOf,
+        enumValues: MetadataOptions_KmsKey.values)
+    ..e<MetadataOptions_TimeCreated>(
+        9, _omitFieldNames ? '' : 'timeCreated', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataOptions_TimeCreated.TIME_CREATED_UNSPECIFIED,
+        valueOf: MetadataOptions_TimeCreated.valueOf,
+        enumValues: MetadataOptions_TimeCreated.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MetadataOptions clone() => MetadataOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetadataOptions copyWith(void Function(MetadataOptions) updates) => super.copyWith((message) => updates(message as MetadataOptions)) as MetadataOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetadataOptions copyWith(void Function(MetadataOptions) updates) =>
+      super.copyWith((message) => updates(message as MetadataOptions))
+          as MetadataOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataOptions create() => MetadataOptions._();
   MetadataOptions createEmptyInstance() => create();
-  static $pb.PbList<MetadataOptions> createRepeated() => $pb.PbList<MetadataOptions>();
+  static $pb.PbList<MetadataOptions> createRepeated() =>
+      $pb.PbList<MetadataOptions>();
   @$core.pragma('dart2js:noInline')
-  static MetadataOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetadataOptions>(create);
+  static MetadataOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetadataOptions>(create);
   static MetadataOptions? _defaultInstance;
 
   /// Specifies how symlinks should be handled by the transfer. By default,
@@ -2063,7 +2487,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MetadataOptions_Symlink get symlink => $_getN(0);
   @$pb.TagNumber(1)
-  set symlink(MetadataOptions_Symlink v) { setField(1, v); }
+  set symlink(MetadataOptions_Symlink v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSymlink() => $_has(0);
   @$pb.TagNumber(1)
@@ -2075,7 +2502,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   MetadataOptions_Mode get mode => $_getN(1);
   @$pb.TagNumber(2)
-  set mode(MetadataOptions_Mode v) { setField(2, v); }
+  set mode(MetadataOptions_Mode v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -2087,7 +2517,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   MetadataOptions_GID get gid => $_getN(2);
   @$pb.TagNumber(3)
-  set gid(MetadataOptions_GID v) { setField(3, v); }
+  set gid(MetadataOptions_GID v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGid() => $_has(2);
   @$pb.TagNumber(3)
@@ -2099,7 +2532,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   MetadataOptions_UID get uid => $_getN(3);
   @$pb.TagNumber(4)
-  set uid(MetadataOptions_UID v) { setField(4, v); }
+  set uid(MetadataOptions_UID v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUid() => $_has(3);
   @$pb.TagNumber(4)
@@ -2111,7 +2547,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   MetadataOptions_Acl get acl => $_getN(4);
   @$pb.TagNumber(5)
-  set acl(MetadataOptions_Acl v) { setField(5, v); }
+  set acl(MetadataOptions_Acl v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAcl() => $_has(4);
   @$pb.TagNumber(5)
@@ -2123,7 +2562,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   MetadataOptions_StorageClass get storageClass => $_getN(5);
   @$pb.TagNumber(6)
-  set storageClass(MetadataOptions_StorageClass v) { setField(6, v); }
+  set storageClass(MetadataOptions_StorageClass v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStorageClass() => $_has(5);
   @$pb.TagNumber(6)
@@ -2136,7 +2578,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   MetadataOptions_TemporaryHold get temporaryHold => $_getN(6);
   @$pb.TagNumber(7)
-  set temporaryHold(MetadataOptions_TemporaryHold v) { setField(7, v); }
+  set temporaryHold(MetadataOptions_TemporaryHold v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTemporaryHold() => $_has(6);
   @$pb.TagNumber(7)
@@ -2149,7 +2594,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   MetadataOptions_KmsKey get kmsKey => $_getN(7);
   @$pb.TagNumber(8)
-  set kmsKey(MetadataOptions_KmsKey v) { setField(8, v); }
+  set kmsKey(MetadataOptions_KmsKey v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasKmsKey() => $_has(7);
   @$pb.TagNumber(8)
@@ -2163,7 +2611,10 @@ class MetadataOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   MetadataOptions_TimeCreated get timeCreated => $_getN(8);
   @$pb.TagNumber(9)
-  set timeCreated(MetadataOptions_TimeCreated v) { setField(9, v); }
+  set timeCreated(MetadataOptions_TimeCreated v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTimeCreated() => $_has(8);
   @$pb.TagNumber(9)
@@ -2182,33 +2633,42 @@ class TransferManifest extends $pb.GeneratedMessage {
     return $result;
   }
   TransferManifest._() : super();
-  factory TransferManifest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferManifest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferManifest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferManifest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferManifest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferManifest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'location')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransferManifest clone() => TransferManifest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferManifest copyWith(void Function(TransferManifest) updates) => super.copyWith((message) => updates(message as TransferManifest)) as TransferManifest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferManifest copyWith(void Function(TransferManifest) updates) =>
+      super.copyWith((message) => updates(message as TransferManifest))
+          as TransferManifest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransferManifest create() => TransferManifest._();
   TransferManifest createEmptyInstance() => create();
-  static $pb.PbList<TransferManifest> createRepeated() => $pb.PbList<TransferManifest>();
+  static $pb.PbList<TransferManifest> createRepeated() =>
+      $pb.PbList<TransferManifest>();
   @$core.pragma('dart2js:noInline')
-  static TransferManifest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferManifest>(create);
+  static TransferManifest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferManifest>(create);
   static TransferManifest? _defaultInstance;
 
   /// Specifies the path to the manifest in Cloud Storage. The Google-managed
@@ -2218,7 +2678,10 @@ class TransferManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get location => $_getSZ(0);
   @$pb.TagNumber(1)
-  set location($core.String v) { $_setString(0, v); }
+  set location($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -2253,28 +2716,39 @@ class Schedule extends $pb.GeneratedMessage {
     return $result;
   }
   Schedule._() : super();
-  factory Schedule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Schedule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Schedule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Schedule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Schedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'scheduleStartDate', subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'scheduleEndDate', subBuilder: $327.Date.create)
-    ..aOM<$535.TimeOfDay>(3, _omitFieldNames ? '' : 'startTimeOfDay', subBuilder: $535.TimeOfDay.create)
-    ..aOM<$535.TimeOfDay>(4, _omitFieldNames ? '' : 'endTimeOfDay', subBuilder: $535.TimeOfDay.create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'repeatInterval', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Schedule',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'scheduleStartDate',
+        subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'scheduleEndDate',
+        subBuilder: $327.Date.create)
+    ..aOM<$535.TimeOfDay>(3, _omitFieldNames ? '' : 'startTimeOfDay',
+        subBuilder: $535.TimeOfDay.create)
+    ..aOM<$535.TimeOfDay>(4, _omitFieldNames ? '' : 'endTimeOfDay',
+        subBuilder: $535.TimeOfDay.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'repeatInterval',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Schedule clone() => Schedule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Schedule copyWith(void Function(Schedule) updates) => super.copyWith((message) => updates(message as Schedule)) as Schedule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Schedule copyWith(void Function(Schedule) updates) =>
+      super.copyWith((message) => updates(message as Schedule)) as Schedule;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2283,7 +2757,8 @@ class Schedule extends $pb.GeneratedMessage {
   Schedule createEmptyInstance() => create();
   static $pb.PbList<Schedule> createRepeated() => $pb.PbList<Schedule>();
   @$core.pragma('dart2js:noInline')
-  static Schedule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Schedule>(create);
+  static Schedule getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Schedule>(create);
   static Schedule? _defaultInstance;
 
   ///  Required. The start date of a transfer. Date boundaries are determined
@@ -2303,7 +2778,10 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $327.Date get scheduleStartDate => $_getN(0);
   @$pb.TagNumber(1)
-  set scheduleStartDate($327.Date v) { setField(1, v); }
+  set scheduleStartDate($327.Date v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasScheduleStartDate() => $_has(0);
   @$pb.TagNumber(1)
@@ -2326,7 +2804,10 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $327.Date get scheduleEndDate => $_getN(1);
   @$pb.TagNumber(2)
-  set scheduleEndDate($327.Date v) { setField(2, v); }
+  set scheduleEndDate($327.Date v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasScheduleEndDate() => $_has(1);
   @$pb.TagNumber(2)
@@ -2352,7 +2833,10 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $535.TimeOfDay get startTimeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set startTimeOfDay($535.TimeOfDay v) { setField(3, v); }
+  set startTimeOfDay($535.TimeOfDay v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStartTimeOfDay() => $_has(2);
   @$pb.TagNumber(3)
@@ -2379,7 +2863,10 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $535.TimeOfDay get endTimeOfDay => $_getN(3);
   @$pb.TagNumber(4)
-  set endTimeOfDay($535.TimeOfDay v) { setField(4, v); }
+  set endTimeOfDay($535.TimeOfDay v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEndTimeOfDay() => $_has(3);
   @$pb.TagNumber(4)
@@ -2393,7 +2880,10 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $264.Duration get repeatInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set repeatInterval($264.Duration v) { setField(5, v); }
+  set repeatInterval($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRepeatInterval() => $_has(4);
   @$pb.TagNumber(5)
@@ -2423,26 +2913,35 @@ class EventStream extends $pb.GeneratedMessage {
     return $result;
   }
   EventStream._() : super();
-  factory EventStream.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EventStream.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EventStream.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EventStream.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventStream', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EventStream',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'eventStreamStartTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'eventStreamExpirationTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'eventStreamStartTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'eventStreamExpirationTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EventStream clone() => EventStream()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EventStream copyWith(void Function(EventStream) updates) => super.copyWith((message) => updates(message as EventStream)) as EventStream;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EventStream copyWith(void Function(EventStream) updates) =>
+      super.copyWith((message) => updates(message as EventStream))
+          as EventStream;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2451,7 +2950,8 @@ class EventStream extends $pb.GeneratedMessage {
   EventStream createEmptyInstance() => create();
   static $pb.PbList<EventStream> createRepeated() => $pb.PbList<EventStream>();
   @$core.pragma('dart2js:noInline')
-  static EventStream getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EventStream>(create);
+  static EventStream getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EventStream>(create);
   static EventStream? _defaultInstance;
 
   /// Required. Specifies a unique name of the resource such as AWS SQS
@@ -2461,7 +2961,10 @@ class EventStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2474,7 +2977,10 @@ class EventStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get eventStreamStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventStreamStartTime($302.Timestamp v) { setField(2, v); }
+  set eventStreamStartTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEventStreamStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -2488,7 +2994,10 @@ class EventStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get eventStreamExpirationTime => $_getN(2);
   @$pb.TagNumber(3)
-  set eventStreamExpirationTime($302.Timestamp v) { setField(3, v); }
+  set eventStreamExpirationTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEventStreamExpirationTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -2558,36 +3067,55 @@ class TransferJob extends $pb.GeneratedMessage {
     return $result;
   }
   TransferJob._() : super();
-  factory TransferJob.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferJob.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferJob.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferJob.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferJob',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'projectId')
-    ..aOM<TransferSpec>(4, _omitFieldNames ? '' : 'transferSpec', subBuilder: TransferSpec.create)
-    ..aOM<Schedule>(5, _omitFieldNames ? '' : 'schedule', subBuilder: Schedule.create)
-    ..e<TransferJob_Status>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: TransferJob_Status.STATUS_UNSPECIFIED, valueOf: TransferJob_Status.valueOf, enumValues: TransferJob_Status.values)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'creationTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'lastModificationTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'deletionTime', subBuilder: $302.Timestamp.create)
-    ..aOM<NotificationConfig>(11, _omitFieldNames ? '' : 'notificationConfig', subBuilder: NotificationConfig.create)
+    ..aOM<TransferSpec>(4, _omitFieldNames ? '' : 'transferSpec',
+        subBuilder: TransferSpec.create)
+    ..aOM<Schedule>(5, _omitFieldNames ? '' : 'schedule',
+        subBuilder: Schedule.create)
+    ..e<TransferJob_Status>(
+        6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
+        defaultOrMaker: TransferJob_Status.STATUS_UNSPECIFIED,
+        valueOf: TransferJob_Status.valueOf,
+        enumValues: TransferJob_Status.values)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'creationTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'lastModificationTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'deletionTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<NotificationConfig>(11, _omitFieldNames ? '' : 'notificationConfig',
+        subBuilder: NotificationConfig.create)
     ..aOS(12, _omitFieldNames ? '' : 'latestOperationName')
-    ..aOM<LoggingConfig>(14, _omitFieldNames ? '' : 'loggingConfig', subBuilder: LoggingConfig.create)
-    ..aOM<EventStream>(15, _omitFieldNames ? '' : 'eventStream', subBuilder: EventStream.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<LoggingConfig>(14, _omitFieldNames ? '' : 'loggingConfig',
+        subBuilder: LoggingConfig.create)
+    ..aOM<EventStream>(15, _omitFieldNames ? '' : 'eventStream',
+        subBuilder: EventStream.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransferJob clone() => TransferJob()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferJob copyWith(void Function(TransferJob) updates) => super.copyWith((message) => updates(message as TransferJob)) as TransferJob;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferJob copyWith(void Function(TransferJob) updates) =>
+      super.copyWith((message) => updates(message as TransferJob))
+          as TransferJob;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2596,7 +3124,8 @@ class TransferJob extends $pb.GeneratedMessage {
   TransferJob createEmptyInstance() => create();
   static $pb.PbList<TransferJob> createRepeated() => $pb.PbList<TransferJob>();
   @$core.pragma('dart2js:noInline')
-  static TransferJob getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferJob>(create);
+  static TransferJob getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferJob>(create);
   static TransferJob? _defaultInstance;
 
   ///  A unique name (within the transfer project) assigned when the job is
@@ -2627,7 +3156,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2638,7 +3170,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -2648,7 +3183,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get projectId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set projectId($core.String v) { $_setString(2, v); }
+  set projectId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProjectId() => $_has(2);
   @$pb.TagNumber(3)
@@ -2658,7 +3196,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TransferSpec get transferSpec => $_getN(3);
   @$pb.TagNumber(4)
-  set transferSpec(TransferSpec v) { setField(4, v); }
+  set transferSpec(TransferSpec v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTransferSpec() => $_has(3);
   @$pb.TagNumber(4)
@@ -2673,7 +3214,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Schedule get schedule => $_getN(4);
   @$pb.TagNumber(5)
-  set schedule(Schedule v) { setField(5, v); }
+  set schedule(Schedule v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSchedule() => $_has(4);
   @$pb.TagNumber(5)
@@ -2693,7 +3237,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   TransferJob_Status get status => $_getN(5);
   @$pb.TagNumber(6)
-  set status(TransferJob_Status v) { setField(6, v); }
+  set status(TransferJob_Status v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -2703,7 +3250,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get creationTime => $_getN(6);
   @$pb.TagNumber(7)
-  set creationTime($302.Timestamp v) { setField(7, v); }
+  set creationTime($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCreationTime() => $_has(6);
   @$pb.TagNumber(7)
@@ -2715,7 +3265,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get lastModificationTime => $_getN(7);
   @$pb.TagNumber(8)
-  set lastModificationTime($302.Timestamp v) { setField(8, v); }
+  set lastModificationTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasLastModificationTime() => $_has(7);
   @$pb.TagNumber(8)
@@ -2727,7 +3280,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get deletionTime => $_getN(8);
   @$pb.TagNumber(9)
-  set deletionTime($302.Timestamp v) { setField(9, v); }
+  set deletionTime($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDeletionTime() => $_has(8);
   @$pb.TagNumber(9)
@@ -2739,7 +3295,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   NotificationConfig get notificationConfig => $_getN(9);
   @$pb.TagNumber(11)
-  set notificationConfig(NotificationConfig v) { setField(11, v); }
+  set notificationConfig(NotificationConfig v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasNotificationConfig() => $_has(9);
   @$pb.TagNumber(11)
@@ -2752,7 +3311,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get latestOperationName => $_getSZ(10);
   @$pb.TagNumber(12)
-  set latestOperationName($core.String v) { $_setString(10, v); }
+  set latestOperationName($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasLatestOperationName() => $_has(10);
   @$pb.TagNumber(12)
@@ -2762,7 +3324,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   LoggingConfig get loggingConfig => $_getN(11);
   @$pb.TagNumber(14)
-  set loggingConfig(LoggingConfig v) { setField(14, v); }
+  set loggingConfig(LoggingConfig v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasLoggingConfig() => $_has(11);
   @$pb.TagNumber(14)
@@ -2775,7 +3340,10 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   EventStream get eventStream => $_getN(12);
   @$pb.TagNumber(15)
-  set eventStream(EventStream v) { setField(15, v); }
+  set eventStream(EventStream v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasEventStream() => $_has(12);
   @$pb.TagNumber(15)
@@ -2800,34 +3368,43 @@ class ErrorLogEntry extends $pb.GeneratedMessage {
     return $result;
   }
   ErrorLogEntry._() : super();
-  factory ErrorLogEntry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ErrorLogEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ErrorLogEntry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ErrorLogEntry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ErrorLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ErrorLogEntry',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
     ..pPS(3, _omitFieldNames ? '' : 'errorDetails')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ErrorLogEntry clone() => ErrorLogEntry()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ErrorLogEntry copyWith(void Function(ErrorLogEntry) updates) => super.copyWith((message) => updates(message as ErrorLogEntry)) as ErrorLogEntry;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ErrorLogEntry copyWith(void Function(ErrorLogEntry) updates) =>
+      super.copyWith((message) => updates(message as ErrorLogEntry))
+          as ErrorLogEntry;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ErrorLogEntry create() => ErrorLogEntry._();
   ErrorLogEntry createEmptyInstance() => create();
-  static $pb.PbList<ErrorLogEntry> createRepeated() => $pb.PbList<ErrorLogEntry>();
+  static $pb.PbList<ErrorLogEntry> createRepeated() =>
+      $pb.PbList<ErrorLogEntry>();
   @$core.pragma('dart2js:noInline')
-  static ErrorLogEntry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ErrorLogEntry>(create);
+  static ErrorLogEntry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ErrorLogEntry>(create);
   static ErrorLogEntry? _defaultInstance;
 
   /// Required. A URL that refers to the target (a data source, a data sink,
@@ -2835,7 +3412,10 @@ class ErrorLogEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get url => $_getSZ(0);
   @$pb.TagNumber(1)
-  set url($core.String v) { $_setString(0, v); }
+  set url($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -2867,42 +3447,59 @@ class ErrorSummary extends $pb.GeneratedMessage {
     return $result;
   }
   ErrorSummary._() : super();
-  factory ErrorSummary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ErrorSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ErrorSummary.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ErrorSummary.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ErrorSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..e<$405.Code>(1, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE, defaultOrMaker: $405.Code.OK, valueOf: $405.Code.valueOf, enumValues: $405.Code.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ErrorSummary',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..e<$405.Code>(1, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE,
+        defaultOrMaker: $405.Code.OK,
+        valueOf: $405.Code.valueOf,
+        enumValues: $405.Code.values)
     ..aInt64(2, _omitFieldNames ? '' : 'errorCount')
-    ..pc<ErrorLogEntry>(3, _omitFieldNames ? '' : 'errorLogEntries', $pb.PbFieldType.PM, subBuilder: ErrorLogEntry.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<ErrorLogEntry>(
+        3, _omitFieldNames ? '' : 'errorLogEntries', $pb.PbFieldType.PM,
+        subBuilder: ErrorLogEntry.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ErrorSummary clone() => ErrorSummary()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ErrorSummary copyWith(void Function(ErrorSummary) updates) => super.copyWith((message) => updates(message as ErrorSummary)) as ErrorSummary;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ErrorSummary copyWith(void Function(ErrorSummary) updates) =>
+      super.copyWith((message) => updates(message as ErrorSummary))
+          as ErrorSummary;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ErrorSummary create() => ErrorSummary._();
   ErrorSummary createEmptyInstance() => create();
-  static $pb.PbList<ErrorSummary> createRepeated() => $pb.PbList<ErrorSummary>();
+  static $pb.PbList<ErrorSummary> createRepeated() =>
+      $pb.PbList<ErrorSummary>();
   @$core.pragma('dart2js:noInline')
-  static ErrorSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ErrorSummary>(create);
+  static ErrorSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ErrorSummary>(create);
   static ErrorSummary? _defaultInstance;
 
   /// Required.
   @$pb.TagNumber(1)
   $405.Code get errorCode => $_getN(0);
   @$pb.TagNumber(1)
-  set errorCode($405.Code v) { setField(1, v); }
+  set errorCode($405.Code v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasErrorCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -2912,7 +3509,10 @@ class ErrorSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get errorCount => $_getI64(1);
   @$pb.TagNumber(2)
-  set errorCount($fixnum.Int64 v) { $_setInt64(1, v); }
+  set errorCount($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasErrorCount() => $_has(1);
   @$pb.TagNumber(2)
@@ -3004,24 +3604,35 @@ class TransferCounters extends $pb.GeneratedMessage {
       $result.directoriesFoundFromSource = directoriesFoundFromSource;
     }
     if (directoriesFailedToListFromSource != null) {
-      $result.directoriesFailedToListFromSource = directoriesFailedToListFromSource;
+      $result.directoriesFailedToListFromSource =
+          directoriesFailedToListFromSource;
     }
     if (directoriesSuccessfullyListedFromSource != null) {
-      $result.directoriesSuccessfullyListedFromSource = directoriesSuccessfullyListedFromSource;
+      $result.directoriesSuccessfullyListedFromSource =
+          directoriesSuccessfullyListedFromSource;
     }
     if (intermediateObjectsCleanedUp != null) {
       $result.intermediateObjectsCleanedUp = intermediateObjectsCleanedUp;
     }
     if (intermediateObjectsFailedCleanedUp != null) {
-      $result.intermediateObjectsFailedCleanedUp = intermediateObjectsFailedCleanedUp;
+      $result.intermediateObjectsFailedCleanedUp =
+          intermediateObjectsFailedCleanedUp;
     }
     return $result;
   }
   TransferCounters._() : super();
-  factory TransferCounters.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferCounters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferCounters.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferCounters.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferCounters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferCounters',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'objectsFoundFromSource')
     ..aInt64(2, _omitFieldNames ? '' : 'bytesFoundFromSource')
     ..aInt64(3, _omitFieldNames ? '' : 'objectsFoundOnlyFromSink')
@@ -3040,31 +3651,33 @@ class TransferCounters extends $pb.GeneratedMessage {
     ..aInt64(16, _omitFieldNames ? '' : 'bytesFailedToDeleteFromSink')
     ..aInt64(17, _omitFieldNames ? '' : 'directoriesFoundFromSource')
     ..aInt64(18, _omitFieldNames ? '' : 'directoriesFailedToListFromSource')
-    ..aInt64(19, _omitFieldNames ? '' : 'directoriesSuccessfullyListedFromSource')
+    ..aInt64(
+        19, _omitFieldNames ? '' : 'directoriesSuccessfullyListedFromSource')
     ..aInt64(22, _omitFieldNames ? '' : 'intermediateObjectsCleanedUp')
     ..aInt64(23, _omitFieldNames ? '' : 'intermediateObjectsFailedCleanedUp')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransferCounters clone() => TransferCounters()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferCounters copyWith(void Function(TransferCounters) updates) => super.copyWith((message) => updates(message as TransferCounters)) as TransferCounters;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferCounters copyWith(void Function(TransferCounters) updates) =>
+      super.copyWith((message) => updates(message as TransferCounters))
+          as TransferCounters;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransferCounters create() => TransferCounters._();
   TransferCounters createEmptyInstance() => create();
-  static $pb.PbList<TransferCounters> createRepeated() => $pb.PbList<TransferCounters>();
+  static $pb.PbList<TransferCounters> createRepeated() =>
+      $pb.PbList<TransferCounters>();
   @$core.pragma('dart2js:noInline')
-  static TransferCounters getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferCounters>(create);
+  static TransferCounters getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferCounters>(create);
   static TransferCounters? _defaultInstance;
 
   /// Objects found in the data source that are scheduled to be transferred,
@@ -3073,7 +3686,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get objectsFoundFromSource => $_getI64(0);
   @$pb.TagNumber(1)
-  set objectsFoundFromSource($fixnum.Int64 v) { $_setInt64(0, v); }
+  set objectsFoundFromSource($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasObjectsFoundFromSource() => $_has(0);
   @$pb.TagNumber(1)
@@ -3085,7 +3701,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get bytesFoundFromSource => $_getI64(1);
   @$pb.TagNumber(2)
-  set bytesFoundFromSource($fixnum.Int64 v) { $_setInt64(1, v); }
+  set bytesFoundFromSource($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBytesFoundFromSource() => $_has(1);
   @$pb.TagNumber(2)
@@ -3095,7 +3714,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get objectsFoundOnlyFromSink => $_getI64(2);
   @$pb.TagNumber(3)
-  set objectsFoundOnlyFromSink($fixnum.Int64 v) { $_setInt64(2, v); }
+  set objectsFoundOnlyFromSink($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasObjectsFoundOnlyFromSink() => $_has(2);
   @$pb.TagNumber(3)
@@ -3105,7 +3727,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get bytesFoundOnlyFromSink => $_getI64(3);
   @$pb.TagNumber(4)
-  set bytesFoundOnlyFromSink($fixnum.Int64 v) { $_setInt64(3, v); }
+  set bytesFoundOnlyFromSink($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBytesFoundOnlyFromSink() => $_has(3);
   @$pb.TagNumber(4)
@@ -3116,7 +3741,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get objectsFromSourceSkippedBySync => $_getI64(4);
   @$pb.TagNumber(5)
-  set objectsFromSourceSkippedBySync($fixnum.Int64 v) { $_setInt64(4, v); }
+  set objectsFromSourceSkippedBySync($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasObjectsFromSourceSkippedBySync() => $_has(4);
   @$pb.TagNumber(5)
@@ -3127,7 +3755,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $fixnum.Int64 get bytesFromSourceSkippedBySync => $_getI64(5);
   @$pb.TagNumber(6)
-  set bytesFromSourceSkippedBySync($fixnum.Int64 v) { $_setInt64(5, v); }
+  set bytesFromSourceSkippedBySync($fixnum.Int64 v) {
+    $_setInt64(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBytesFromSourceSkippedBySync() => $_has(5);
   @$pb.TagNumber(6)
@@ -3137,7 +3768,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $fixnum.Int64 get objectsCopiedToSink => $_getI64(6);
   @$pb.TagNumber(7)
-  set objectsCopiedToSink($fixnum.Int64 v) { $_setInt64(6, v); }
+  set objectsCopiedToSink($fixnum.Int64 v) {
+    $_setInt64(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasObjectsCopiedToSink() => $_has(6);
   @$pb.TagNumber(7)
@@ -3147,7 +3781,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $fixnum.Int64 get bytesCopiedToSink => $_getI64(7);
   @$pb.TagNumber(8)
-  set bytesCopiedToSink($fixnum.Int64 v) { $_setInt64(7, v); }
+  set bytesCopiedToSink($fixnum.Int64 v) {
+    $_setInt64(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasBytesCopiedToSink() => $_has(7);
   @$pb.TagNumber(8)
@@ -3157,7 +3794,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $fixnum.Int64 get objectsDeletedFromSource => $_getI64(8);
   @$pb.TagNumber(9)
-  set objectsDeletedFromSource($fixnum.Int64 v) { $_setInt64(8, v); }
+  set objectsDeletedFromSource($fixnum.Int64 v) {
+    $_setInt64(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasObjectsDeletedFromSource() => $_has(8);
   @$pb.TagNumber(9)
@@ -3167,7 +3807,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $fixnum.Int64 get bytesDeletedFromSource => $_getI64(9);
   @$pb.TagNumber(10)
-  set bytesDeletedFromSource($fixnum.Int64 v) { $_setInt64(9, v); }
+  set bytesDeletedFromSource($fixnum.Int64 v) {
+    $_setInt64(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasBytesDeletedFromSource() => $_has(9);
   @$pb.TagNumber(10)
@@ -3177,7 +3820,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $fixnum.Int64 get objectsDeletedFromSink => $_getI64(10);
   @$pb.TagNumber(11)
-  set objectsDeletedFromSink($fixnum.Int64 v) { $_setInt64(10, v); }
+  set objectsDeletedFromSink($fixnum.Int64 v) {
+    $_setInt64(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasObjectsDeletedFromSink() => $_has(10);
   @$pb.TagNumber(11)
@@ -3187,7 +3833,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $fixnum.Int64 get bytesDeletedFromSink => $_getI64(11);
   @$pb.TagNumber(12)
-  set bytesDeletedFromSink($fixnum.Int64 v) { $_setInt64(11, v); }
+  set bytesDeletedFromSink($fixnum.Int64 v) {
+    $_setInt64(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasBytesDeletedFromSink() => $_has(11);
   @$pb.TagNumber(12)
@@ -3198,7 +3847,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $fixnum.Int64 get objectsFromSourceFailed => $_getI64(12);
   @$pb.TagNumber(13)
-  set objectsFromSourceFailed($fixnum.Int64 v) { $_setInt64(12, v); }
+  set objectsFromSourceFailed($fixnum.Int64 v) {
+    $_setInt64(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasObjectsFromSourceFailed() => $_has(12);
   @$pb.TagNumber(13)
@@ -3209,7 +3861,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $fixnum.Int64 get bytesFromSourceFailed => $_getI64(13);
   @$pb.TagNumber(14)
-  set bytesFromSourceFailed($fixnum.Int64 v) { $_setInt64(13, v); }
+  set bytesFromSourceFailed($fixnum.Int64 v) {
+    $_setInt64(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasBytesFromSourceFailed() => $_has(13);
   @$pb.TagNumber(14)
@@ -3219,7 +3874,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $fixnum.Int64 get objectsFailedToDeleteFromSink => $_getI64(14);
   @$pb.TagNumber(15)
-  set objectsFailedToDeleteFromSink($fixnum.Int64 v) { $_setInt64(14, v); }
+  set objectsFailedToDeleteFromSink($fixnum.Int64 v) {
+    $_setInt64(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasObjectsFailedToDeleteFromSink() => $_has(14);
   @$pb.TagNumber(15)
@@ -3229,7 +3887,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $fixnum.Int64 get bytesFailedToDeleteFromSink => $_getI64(15);
   @$pb.TagNumber(16)
-  set bytesFailedToDeleteFromSink($fixnum.Int64 v) { $_setInt64(15, v); }
+  set bytesFailedToDeleteFromSink($fixnum.Int64 v) {
+    $_setInt64(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasBytesFailedToDeleteFromSink() => $_has(15);
   @$pb.TagNumber(16)
@@ -3244,7 +3905,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $fixnum.Int64 get directoriesFoundFromSource => $_getI64(16);
   @$pb.TagNumber(17)
-  set directoriesFoundFromSource($fixnum.Int64 v) { $_setInt64(16, v); }
+  set directoriesFoundFromSource($fixnum.Int64 v) {
+    $_setInt64(16, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasDirectoriesFoundFromSource() => $_has(16);
   @$pb.TagNumber(17)
@@ -3259,7 +3923,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $fixnum.Int64 get directoriesFailedToListFromSource => $_getI64(17);
   @$pb.TagNumber(18)
-  set directoriesFailedToListFromSource($fixnum.Int64 v) { $_setInt64(17, v); }
+  set directoriesFailedToListFromSource($fixnum.Int64 v) {
+    $_setInt64(17, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasDirectoriesFailedToListFromSource() => $_has(17);
   @$pb.TagNumber(18)
@@ -3271,7 +3938,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $fixnum.Int64 get directoriesSuccessfullyListedFromSource => $_getI64(18);
   @$pb.TagNumber(19)
-  set directoriesSuccessfullyListedFromSource($fixnum.Int64 v) { $_setInt64(18, v); }
+  set directoriesSuccessfullyListedFromSource($fixnum.Int64 v) {
+    $_setInt64(18, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasDirectoriesSuccessfullyListedFromSource() => $_has(18);
   @$pb.TagNumber(19)
@@ -3281,7 +3951,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $fixnum.Int64 get intermediateObjectsCleanedUp => $_getI64(19);
   @$pb.TagNumber(22)
-  set intermediateObjectsCleanedUp($fixnum.Int64 v) { $_setInt64(19, v); }
+  set intermediateObjectsCleanedUp($fixnum.Int64 v) {
+    $_setInt64(19, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasIntermediateObjectsCleanedUp() => $_has(19);
   @$pb.TagNumber(22)
@@ -3291,7 +3964,10 @@ class TransferCounters extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $fixnum.Int64 get intermediateObjectsFailedCleanedUp => $_getI64(20);
   @$pb.TagNumber(23)
-  set intermediateObjectsFailedCleanedUp($fixnum.Int64 v) { $_setInt64(20, v); }
+  set intermediateObjectsFailedCleanedUp($fixnum.Int64 v) {
+    $_setInt64(20, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasIntermediateObjectsFailedCleanedUp() => $_has(20);
   @$pb.TagNumber(23)
@@ -3339,35 +4015,53 @@ class NotificationConfig extends $pb.GeneratedMessage {
     return $result;
   }
   NotificationConfig._() : super();
-  factory NotificationConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NotificationConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NotificationConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NotificationConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotificationConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NotificationConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'pubsubTopic')
-    ..pc<NotificationConfig_EventType>(2, _omitFieldNames ? '' : 'eventTypes', $pb.PbFieldType.KE, valueOf: NotificationConfig_EventType.valueOf, enumValues: NotificationConfig_EventType.values, defaultEnumValue: NotificationConfig_EventType.EVENT_TYPE_UNSPECIFIED)
-    ..e<NotificationConfig_PayloadFormat>(3, _omitFieldNames ? '' : 'payloadFormat', $pb.PbFieldType.OE, defaultOrMaker: NotificationConfig_PayloadFormat.PAYLOAD_FORMAT_UNSPECIFIED, valueOf: NotificationConfig_PayloadFormat.valueOf, enumValues: NotificationConfig_PayloadFormat.values)
-    ..hasRequiredFields = false
-  ;
+    ..pc<NotificationConfig_EventType>(
+        2, _omitFieldNames ? '' : 'eventTypes', $pb.PbFieldType.KE,
+        valueOf: NotificationConfig_EventType.valueOf,
+        enumValues: NotificationConfig_EventType.values,
+        defaultEnumValue: NotificationConfig_EventType.EVENT_TYPE_UNSPECIFIED)
+    ..e<NotificationConfig_PayloadFormat>(
+        3, _omitFieldNames ? '' : 'payloadFormat', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            NotificationConfig_PayloadFormat.PAYLOAD_FORMAT_UNSPECIFIED,
+        valueOf: NotificationConfig_PayloadFormat.valueOf,
+        enumValues: NotificationConfig_PayloadFormat.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NotificationConfig clone() => NotificationConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NotificationConfig copyWith(void Function(NotificationConfig) updates) => super.copyWith((message) => updates(message as NotificationConfig)) as NotificationConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NotificationConfig copyWith(void Function(NotificationConfig) updates) =>
+      super.copyWith((message) => updates(message as NotificationConfig))
+          as NotificationConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NotificationConfig create() => NotificationConfig._();
   NotificationConfig createEmptyInstance() => create();
-  static $pb.PbList<NotificationConfig> createRepeated() => $pb.PbList<NotificationConfig>();
+  static $pb.PbList<NotificationConfig> createRepeated() =>
+      $pb.PbList<NotificationConfig>();
   @$core.pragma('dart2js:noInline')
-  static NotificationConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotificationConfig>(create);
+  static NotificationConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NotificationConfig>(create);
   static NotificationConfig? _defaultInstance;
 
   /// Required. The `Topic.name` of the Pub/Sub topic to which to publish
@@ -3377,7 +4071,10 @@ class NotificationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pubsubTopic => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pubsubTopic($core.String v) { $_setString(0, v); }
+  set pubsubTopic($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPubsubTopic() => $_has(0);
   @$pb.TagNumber(1)
@@ -3392,7 +4089,10 @@ class NotificationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   NotificationConfig_PayloadFormat get payloadFormat => $_getN(2);
   @$pb.TagNumber(3)
-  set payloadFormat(NotificationConfig_PayloadFormat v) { setField(3, v); }
+  set payloadFormat(NotificationConfig_PayloadFormat v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPayloadFormat() => $_has(2);
   @$pb.TagNumber(3)
@@ -3424,35 +4124,54 @@ class LoggingConfig extends $pb.GeneratedMessage {
     return $result;
   }
   LoggingConfig._() : super();
-  factory LoggingConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LoggingConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LoggingConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LoggingConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LoggingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
-    ..pc<LoggingConfig_LoggableAction>(1, _omitFieldNames ? '' : 'logActions', $pb.PbFieldType.KE, valueOf: LoggingConfig_LoggableAction.valueOf, enumValues: LoggingConfig_LoggableAction.values, defaultEnumValue: LoggingConfig_LoggableAction.LOGGABLE_ACTION_UNSPECIFIED)
-    ..pc<LoggingConfig_LoggableActionState>(2, _omitFieldNames ? '' : 'logActionStates', $pb.PbFieldType.KE, valueOf: LoggingConfig_LoggableActionState.valueOf, enumValues: LoggingConfig_LoggableActionState.values, defaultEnumValue: LoggingConfig_LoggableActionState.LOGGABLE_ACTION_STATE_UNSPECIFIED)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LoggingConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
+    ..pc<LoggingConfig_LoggableAction>(
+        1, _omitFieldNames ? '' : 'logActions', $pb.PbFieldType.KE,
+        valueOf: LoggingConfig_LoggableAction.valueOf,
+        enumValues: LoggingConfig_LoggableAction.values,
+        defaultEnumValue:
+            LoggingConfig_LoggableAction.LOGGABLE_ACTION_UNSPECIFIED)
+    ..pc<LoggingConfig_LoggableActionState>(
+        2, _omitFieldNames ? '' : 'logActionStates', $pb.PbFieldType.KE,
+        valueOf: LoggingConfig_LoggableActionState.valueOf,
+        enumValues: LoggingConfig_LoggableActionState.values,
+        defaultEnumValue:
+            LoggingConfig_LoggableActionState.LOGGABLE_ACTION_STATE_UNSPECIFIED)
     ..aOB(3, _omitFieldNames ? '' : 'enableOnpremGcsTransferLogs')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LoggingConfig clone() => LoggingConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LoggingConfig copyWith(void Function(LoggingConfig) updates) => super.copyWith((message) => updates(message as LoggingConfig)) as LoggingConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LoggingConfig copyWith(void Function(LoggingConfig) updates) =>
+      super.copyWith((message) => updates(message as LoggingConfig))
+          as LoggingConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LoggingConfig create() => LoggingConfig._();
   LoggingConfig createEmptyInstance() => create();
-  static $pb.PbList<LoggingConfig> createRepeated() => $pb.PbList<LoggingConfig>();
+  static $pb.PbList<LoggingConfig> createRepeated() =>
+      $pb.PbList<LoggingConfig>();
   @$core.pragma('dart2js:noInline')
-  static LoggingConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LoggingConfig>(create);
+  static LoggingConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LoggingConfig>(create);
   static LoggingConfig? _defaultInstance;
 
   /// Specifies the actions to be logged. If empty, no logs are generated.
@@ -3461,7 +4180,8 @@ class LoggingConfig extends $pb.GeneratedMessage {
 
   /// States in which `log_actions` are logged. If empty, no logs are generated.
   @$pb.TagNumber(2)
-  $core.List<LoggingConfig_LoggableActionState> get logActionStates => $_getList(1);
+  $core.List<LoggingConfig_LoggableActionState> get logActionStates =>
+      $_getList(1);
 
   ///  For PosixFilesystem transfers, enables
   ///  [file system transfer
@@ -3473,7 +4193,10 @@ class LoggingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get enableOnpremGcsTransferLogs => $_getBF(2);
   @$pb.TagNumber(3)
-  set enableOnpremGcsTransferLogs($core.bool v) { $_setBool(2, v); }
+  set enableOnpremGcsTransferLogs($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEnableOnpremGcsTransferLogs() => $_has(2);
   @$pb.TagNumber(3)
@@ -3532,50 +4255,74 @@ class TransferOperation extends $pb.GeneratedMessage {
     return $result;
   }
   TransferOperation._() : super();
-  factory TransferOperation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TransferOperation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TransferOperation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TransferOperation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TransferOperation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.storagetransfer.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
-    ..aOM<TransferSpec>(3, _omitFieldNames ? '' : 'transferSpec', subBuilder: TransferSpec.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..e<TransferOperation_Status>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: TransferOperation_Status.STATUS_UNSPECIFIED, valueOf: TransferOperation_Status.valueOf, enumValues: TransferOperation_Status.values)
-    ..aOM<TransferCounters>(7, _omitFieldNames ? '' : 'counters', subBuilder: TransferCounters.create)
-    ..pc<ErrorSummary>(8, _omitFieldNames ? '' : 'errorBreakdowns', $pb.PbFieldType.PM, subBuilder: ErrorSummary.create)
+    ..aOM<TransferSpec>(3, _omitFieldNames ? '' : 'transferSpec',
+        subBuilder: TransferSpec.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<TransferOperation_Status>(
+        6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
+        defaultOrMaker: TransferOperation_Status.STATUS_UNSPECIFIED,
+        valueOf: TransferOperation_Status.valueOf,
+        enumValues: TransferOperation_Status.values)
+    ..aOM<TransferCounters>(7, _omitFieldNames ? '' : 'counters',
+        subBuilder: TransferCounters.create)
+    ..pc<ErrorSummary>(
+        8, _omitFieldNames ? '' : 'errorBreakdowns', $pb.PbFieldType.PM,
+        subBuilder: ErrorSummary.create)
     ..aOS(9, _omitFieldNames ? '' : 'transferJobName')
-    ..aOM<NotificationConfig>(10, _omitFieldNames ? '' : 'notificationConfig', subBuilder: NotificationConfig.create)
-    ..aOM<LoggingConfig>(12, _omitFieldNames ? '' : 'loggingConfig', subBuilder: LoggingConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<NotificationConfig>(10, _omitFieldNames ? '' : 'notificationConfig',
+        subBuilder: NotificationConfig.create)
+    ..aOM<LoggingConfig>(12, _omitFieldNames ? '' : 'loggingConfig',
+        subBuilder: LoggingConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TransferOperation clone() => TransferOperation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TransferOperation copyWith(void Function(TransferOperation) updates) => super.copyWith((message) => updates(message as TransferOperation)) as TransferOperation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TransferOperation copyWith(void Function(TransferOperation) updates) =>
+      super.copyWith((message) => updates(message as TransferOperation))
+          as TransferOperation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TransferOperation create() => TransferOperation._();
   TransferOperation createEmptyInstance() => create();
-  static $pb.PbList<TransferOperation> createRepeated() => $pb.PbList<TransferOperation>();
+  static $pb.PbList<TransferOperation> createRepeated() =>
+      $pb.PbList<TransferOperation>();
   @$core.pragma('dart2js:noInline')
-  static TransferOperation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TransferOperation>(create);
+  static TransferOperation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TransferOperation>(create);
   static TransferOperation? _defaultInstance;
 
   /// A globally unique ID assigned by the system.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -3585,7 +4332,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get projectId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set projectId($core.String v) { $_setString(1, v); }
+  set projectId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
@@ -3595,7 +4345,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TransferSpec get transferSpec => $_getN(2);
   @$pb.TagNumber(3)
-  set transferSpec(TransferSpec v) { setField(3, v); }
+  set transferSpec(TransferSpec v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTransferSpec() => $_has(2);
   @$pb.TagNumber(3)
@@ -3607,7 +4360,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) { setField(4, v); }
+  set startTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -3619,7 +4375,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) { setField(5, v); }
+  set endTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -3631,7 +4390,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   TransferOperation_Status get status => $_getN(5);
   @$pb.TagNumber(6)
-  set status(TransferOperation_Status v) { setField(6, v); }
+  set status(TransferOperation_Status v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -3641,7 +4403,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   TransferCounters get counters => $_getN(6);
   @$pb.TagNumber(7)
-  set counters(TransferCounters v) { setField(7, v); }
+  set counters(TransferCounters v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCounters() => $_has(6);
   @$pb.TagNumber(7)
@@ -3657,7 +4422,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get transferJobName => $_getSZ(8);
   @$pb.TagNumber(9)
-  set transferJobName($core.String v) { $_setString(8, v); }
+  set transferJobName($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTransferJobName() => $_has(8);
   @$pb.TagNumber(9)
@@ -3667,7 +4435,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   NotificationConfig get notificationConfig => $_getN(9);
   @$pb.TagNumber(10)
-  set notificationConfig(NotificationConfig v) { setField(10, v); }
+  set notificationConfig(NotificationConfig v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasNotificationConfig() => $_has(9);
   @$pb.TagNumber(10)
@@ -3679,7 +4450,10 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   LoggingConfig get loggingConfig => $_getN(10);
   @$pb.TagNumber(12)
-  set loggingConfig(LoggingConfig v) { setField(12, v); }
+  set loggingConfig(LoggingConfig v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasLoggingConfig() => $_has(10);
   @$pb.TagNumber(12)
@@ -3688,6 +4462,6 @@ class TransferOperation extends $pb.GeneratedMessage {
   LoggingConfig ensureLoggingConfig() => $_ensure(10);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

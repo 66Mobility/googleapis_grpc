@@ -31,41 +31,54 @@ class EntityDisplay extends $pb.GeneratedMessage {
     return $result;
   }
   EntityDisplay._() : super();
-  factory EntityDisplay.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityDisplay.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityDisplay.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityDisplay.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityDisplay', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityDisplay',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.type'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'iconTitle')
     ..aOS(2, _omitFieldNames ? '' : 'iconUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntityDisplay clone() => EntityDisplay()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityDisplay copyWith(void Function(EntityDisplay) updates) => super.copyWith((message) => updates(message as EntityDisplay)) as EntityDisplay;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityDisplay copyWith(void Function(EntityDisplay) updates) =>
+      super.copyWith((message) => updates(message as EntityDisplay))
+          as EntityDisplay;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntityDisplay create() => EntityDisplay._();
   EntityDisplay createEmptyInstance() => create();
-  static $pb.PbList<EntityDisplay> createRepeated() => $pb.PbList<EntityDisplay>();
+  static $pb.PbList<EntityDisplay> createRepeated() =>
+      $pb.PbList<EntityDisplay>();
   @$core.pragma('dart2js:noInline')
-  static EntityDisplay getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityDisplay>(create);
+  static EntityDisplay getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityDisplay>(create);
   static EntityDisplay? _defaultInstance;
 
   /// Optional. Title of the icon.
   @$pb.TagNumber(1)
   $core.String get iconTitle => $_getSZ(0);
   @$pb.TagNumber(1)
-  set iconTitle($core.String v) { $_setString(0, v); }
+  set iconTitle($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIconTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -75,13 +88,16 @@ class EntityDisplay extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get iconUrl => $_getSZ(1);
   @$pb.TagNumber(2)
-  set iconUrl($core.String v) { $_setString(1, v); }
+  set iconUrl($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIconUrl() => $_has(1);
   @$pb.TagNumber(2)
   void clearIconUrl() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

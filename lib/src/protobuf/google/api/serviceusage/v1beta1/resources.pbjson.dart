@@ -65,8 +65,22 @@ const Service$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'parent', '3': 5, '4': 1, '5': 9, '10': 'parent'},
-    {'1': 'config', '3': 2, '4': 1, '5': 11, '6': '.google.api.serviceusage.v1beta1.ServiceConfig', '10': 'config'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.api.serviceusage.v1beta1.State', '10': 'state'},
+    {
+      '1': 'config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.ServiceConfig',
+      '10': 'config'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.serviceusage.v1beta1.State',
+      '10': 'state'
+    },
   ],
 };
 
@@ -83,14 +97,70 @@ const ServiceConfig$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'apis', '3': 3, '4': 3, '5': 11, '6': '.google.protobuf.Api', '10': 'apis'},
-    {'1': 'documentation', '3': 6, '4': 1, '5': 11, '6': '.google.api.Documentation', '10': 'documentation'},
-    {'1': 'quota', '3': 10, '4': 1, '5': 11, '6': '.google.api.Quota', '10': 'quota'},
-    {'1': 'authentication', '3': 11, '4': 1, '5': 11, '6': '.google.api.Authentication', '10': 'authentication'},
-    {'1': 'usage', '3': 15, '4': 1, '5': 11, '6': '.google.api.Usage', '10': 'usage'},
-    {'1': 'endpoints', '3': 18, '4': 3, '5': 11, '6': '.google.api.Endpoint', '10': 'endpoints'},
-    {'1': 'monitored_resources', '3': 25, '4': 3, '5': 11, '6': '.google.api.MonitoredResourceDescriptor', '10': 'monitoredResources'},
-    {'1': 'monitoring', '3': 28, '4': 1, '5': 11, '6': '.google.api.Monitoring', '10': 'monitoring'},
+    {
+      '1': 'apis',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Api',
+      '10': 'apis'
+    },
+    {
+      '1': 'documentation',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Documentation',
+      '10': 'documentation'
+    },
+    {
+      '1': 'quota',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Quota',
+      '10': 'quota'
+    },
+    {
+      '1': 'authentication',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Authentication',
+      '10': 'authentication'
+    },
+    {
+      '1': 'usage',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Usage',
+      '10': 'usage'
+    },
+    {
+      '1': 'endpoints',
+      '3': 18,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.Endpoint',
+      '10': 'endpoints'
+    },
+    {
+      '1': 'monitored_resources',
+      '3': 25,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResourceDescriptor',
+      '10': 'monitoredResources'
+    },
+    {
+      '1': 'monitoring',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.Monitoring',
+      '10': 'monitoring'
+    },
   ],
 };
 
@@ -127,8 +197,22 @@ const ConsumerQuotaMetric$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'metric', '3': 4, '4': 1, '5': 9, '10': 'metric'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'consumer_quota_limits', '3': 3, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.ConsumerQuotaLimit', '10': 'consumerQuotaLimits'},
-    {'1': 'descendant_consumer_quota_limits', '3': 6, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.ConsumerQuotaLimit', '10': 'descendantConsumerQuotaLimits'},
+    {
+      '1': 'consumer_quota_limits',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.ConsumerQuotaLimit',
+      '10': 'consumerQuotaLimits'
+    },
+    {
+      '1': 'descendant_consumer_quota_limits',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.ConsumerQuotaLimit',
+      '10': 'descendantConsumerQuotaLimits'
+    },
     {'1': 'unit', '3': 5, '4': 1, '5': 9, '10': 'unit'},
   ],
 };
@@ -151,9 +235,28 @@ const ConsumerQuotaLimit$json = {
     {'1': 'metric', '3': 8, '4': 1, '5': 9, '10': 'metric'},
     {'1': 'unit', '3': 2, '4': 1, '5': 9, '10': 'unit'},
     {'1': 'is_precise', '3': 3, '4': 1, '5': 8, '10': 'isPrecise'},
-    {'1': 'allows_admin_overrides', '3': 7, '4': 1, '5': 8, '10': 'allowsAdminOverrides'},
-    {'1': 'quota_buckets', '3': 9, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.QuotaBucket', '10': 'quotaBuckets'},
-    {'1': 'supported_locations', '3': 11, '4': 3, '5': 9, '10': 'supportedLocations'},
+    {
+      '1': 'allows_admin_overrides',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'allowsAdminOverrides'
+    },
+    {
+      '1': 'quota_buckets',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.QuotaBucket',
+      '10': 'quotaBuckets'
+    },
+    {
+      '1': 'supported_locations',
+      '3': 11,
+      '4': 3,
+      '5': 9,
+      '10': 'supportedLocations'
+    },
   ],
 };
 
@@ -172,11 +275,46 @@ const QuotaBucket$json = {
   '2': [
     {'1': 'effective_limit', '3': 1, '4': 1, '5': 3, '10': 'effectiveLimit'},
     {'1': 'default_limit', '3': 2, '4': 1, '5': 3, '10': 'defaultLimit'},
-    {'1': 'producer_override', '3': 3, '4': 1, '5': 11, '6': '.google.api.serviceusage.v1beta1.QuotaOverride', '10': 'producerOverride'},
-    {'1': 'consumer_override', '3': 4, '4': 1, '5': 11, '6': '.google.api.serviceusage.v1beta1.QuotaOverride', '10': 'consumerOverride'},
-    {'1': 'admin_override', '3': 5, '4': 1, '5': 11, '6': '.google.api.serviceusage.v1beta1.QuotaOverride', '10': 'adminOverride'},
-    {'1': 'producer_quota_policy', '3': 7, '4': 1, '5': 11, '6': '.google.api.serviceusage.v1beta1.ProducerQuotaPolicy', '10': 'producerQuotaPolicy'},
-    {'1': 'dimensions', '3': 6, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.QuotaBucket.DimensionsEntry', '10': 'dimensions'},
+    {
+      '1': 'producer_override',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.QuotaOverride',
+      '10': 'producerOverride'
+    },
+    {
+      '1': 'consumer_override',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.QuotaOverride',
+      '10': 'consumerOverride'
+    },
+    {
+      '1': 'admin_override',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.QuotaOverride',
+      '10': 'adminOverride'
+    },
+    {
+      '1': 'producer_quota_policy',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.ProducerQuotaPolicy',
+      '10': 'producerQuotaPolicy'
+    },
+    {
+      '1': 'dimensions',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.QuotaBucket.DimensionsEntry',
+      '10': 'dimensions'
+    },
   ],
   '3': [QuotaBucket_DimensionsEntry$json],
 };
@@ -212,10 +350,23 @@ const QuotaOverride$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'override_value', '3': 2, '4': 1, '5': 3, '10': 'overrideValue'},
-    {'1': 'dimensions', '3': 3, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.QuotaOverride.DimensionsEntry', '10': 'dimensions'},
+    {
+      '1': 'dimensions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.QuotaOverride.DimensionsEntry',
+      '10': 'dimensions'
+    },
     {'1': 'metric', '3': 4, '4': 1, '5': 9, '10': 'metric'},
     {'1': 'unit', '3': 5, '4': 1, '5': 9, '10': 'unit'},
-    {'1': 'admin_override_ancestor', '3': 6, '4': 1, '5': 9, '10': 'adminOverrideAncestor'},
+    {
+      '1': 'admin_override_ancestor',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'adminOverrideAncestor'
+    },
   ],
   '3': [QuotaOverride_DimensionsEntry$json],
 };
@@ -243,7 +394,14 @@ final $typed_data.Uint8List quotaOverrideDescriptor = $convert.base64Decode(
 const OverrideInlineSource$json = {
   '1': 'OverrideInlineSource',
   '2': [
-    {'1': 'overrides', '3': 1, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.QuotaOverride', '10': 'overrides'},
+    {
+      '1': 'overrides',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.QuotaOverride',
+      '10': 'overrides'
+    },
   ],
 };
 
@@ -258,7 +416,15 @@ const ProducerQuotaPolicy$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'policy_value', '3': 2, '4': 1, '5': 3, '10': 'policyValue'},
-    {'1': 'dimensions', '3': 3, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.ProducerQuotaPolicy.DimensionsEntry', '10': 'dimensions'},
+    {
+      '1': 'dimensions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.api.serviceusage.v1beta1.ProducerQuotaPolicy.DimensionsEntry',
+      '10': 'dimensions'
+    },
     {'1': 'metric', '3': 4, '4': 1, '5': 9, '10': 'metric'},
     {'1': 'unit', '3': 5, '4': 1, '5': 9, '10': 'unit'},
     {'1': 'container', '3': 6, '4': 1, '5': 9, '10': 'container'},
@@ -291,7 +457,14 @@ const AdminQuotaPolicy$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'policy_value', '3': 2, '4': 1, '5': 3, '10': 'policyValue'},
-    {'1': 'dimensions', '3': 3, '4': 3, '5': 11, '6': '.google.api.serviceusage.v1beta1.AdminQuotaPolicy.DimensionsEntry', '10': 'dimensions'},
+    {
+      '1': 'dimensions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.serviceusage.v1beta1.AdminQuotaPolicy.DimensionsEntry',
+      '10': 'dimensions'
+    },
     {'1': 'metric', '3': 4, '4': 1, '5': 9, '10': 'metric'},
     {'1': 'unit', '3': 5, '4': 1, '5': 9, '10': 'unit'},
     {'1': 'container', '3': 6, '4': 1, '5': 9, '10': 'container'},
@@ -331,4 +504,3 @@ const ServiceIdentity$json = {
 final $typed_data.Uint8List serviceIdentityDescriptor = $convert.base64Decode(
     'Cg9TZXJ2aWNlSWRlbnRpdHkSFAoFZW1haWwYASABKAlSBWVtYWlsEhsKCXVuaXF1ZV9pZBgCIA'
     'EoCVIIdW5pcXVlSWQ=');
-

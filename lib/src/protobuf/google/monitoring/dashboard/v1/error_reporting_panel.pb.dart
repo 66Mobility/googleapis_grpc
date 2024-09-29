@@ -33,35 +33,44 @@ class ErrorReportingPanel extends $pb.GeneratedMessage {
     return $result;
   }
   ErrorReportingPanel._() : super();
-  factory ErrorReportingPanel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ErrorReportingPanel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ErrorReportingPanel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ErrorReportingPanel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ErrorReportingPanel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ErrorReportingPanel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'projectNames')
     ..pPS(2, _omitFieldNames ? '' : 'services')
     ..pPS(3, _omitFieldNames ? '' : 'versions')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ErrorReportingPanel clone() => ErrorReportingPanel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ErrorReportingPanel copyWith(void Function(ErrorReportingPanel) updates) => super.copyWith((message) => updates(message as ErrorReportingPanel)) as ErrorReportingPanel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ErrorReportingPanel copyWith(void Function(ErrorReportingPanel) updates) =>
+      super.copyWith((message) => updates(message as ErrorReportingPanel))
+          as ErrorReportingPanel;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ErrorReportingPanel create() => ErrorReportingPanel._();
   ErrorReportingPanel createEmptyInstance() => create();
-  static $pb.PbList<ErrorReportingPanel> createRepeated() => $pb.PbList<ErrorReportingPanel>();
+  static $pb.PbList<ErrorReportingPanel> createRepeated() =>
+      $pb.PbList<ErrorReportingPanel>();
   @$core.pragma('dart2js:noInline')
-  static ErrorReportingPanel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ErrorReportingPanel>(create);
+  static ErrorReportingPanel getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ErrorReportingPanel>(create);
   static ErrorReportingPanel? _defaultInstance;
 
   ///  The resource name of the Google Cloud Platform project. Written
@@ -91,6 +100,6 @@ class ErrorReportingPanel extends $pb.GeneratedMessage {
   $core.List<$core.String> get versions => $_getList(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,8 +17,24 @@ import 'dart:typed_data' as $typed_data;
 const PieChart$json = {
   '1': 'PieChart',
   '2': [
-    {'1': 'data_sets', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.PieChart.PieChartDataSet', '8': {}, '10': 'dataSets'},
-    {'1': 'chart_type', '3': 2, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.PieChart.PieChartType', '8': {}, '10': 'chartType'},
+    {
+      '1': 'data_sets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.PieChart.PieChartDataSet',
+      '8': {},
+      '10': 'dataSets'
+    },
+    {
+      '1': 'chart_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.PieChart.PieChartType',
+      '8': {},
+      '10': 'chartType'
+    },
     {'1': 'show_labels', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'showLabels'},
   ],
   '3': [PieChart_PieChartDataSet$json],
@@ -29,9 +45,32 @@ const PieChart$json = {
 const PieChart_PieChartDataSet$json = {
   '1': 'PieChartDataSet',
   '2': [
-    {'1': 'time_series_query', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery', '8': {}, '10': 'timeSeriesQuery'},
-    {'1': 'slice_name_template', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'sliceNameTemplate'},
-    {'1': 'min_alignment_period', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'minAlignmentPeriod'},
+    {
+      '1': 'time_series_query',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery',
+      '8': {},
+      '10': 'timeSeriesQuery'
+    },
+    {
+      '1': 'slice_name_template',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sliceNameTemplate'
+    },
+    {
+      '1': 'min_alignment_period',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '8': {},
+      '10': 'minAlignmentPeriod'
+    },
   ],
 };
 
@@ -57,4 +96,3 @@ final $typed_data.Uint8List pieChartDescriptor = $convert.base64Decode(
     'NlTmFtZVRlbXBsYXRlElAKFG1pbl9hbGlnbm1lbnRfcGVyaW9kGAMgASgLMhkuZ29vZ2xlLnBy'
     'b3RvYnVmLkR1cmF0aW9uQgPgQQFSEm1pbkFsaWdubWVudFBlcmlvZCJCCgxQaWVDaGFydFR5cG'
     'USHgoaUElFX0NIQVJUX1RZUEVfVU5TUEVDSUZJRUQQABIHCgNQSUUQARIJCgVET05VVBAC');
-

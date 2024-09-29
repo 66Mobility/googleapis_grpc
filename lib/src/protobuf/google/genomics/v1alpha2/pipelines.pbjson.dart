@@ -34,7 +34,14 @@ final $typed_data.Uint8List computeEngineDescriptor = $convert.base64Decode(
 const RuntimeMetadata$json = {
   '1': 'RuntimeMetadata',
   '2': [
-    {'1': 'compute_engine', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.ComputeEngine', '10': 'computeEngine'},
+    {
+      '1': 'compute_engine',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ComputeEngine',
+      '10': 'computeEngine'
+    },
   ],
 };
 
@@ -50,10 +57,39 @@ const Pipeline$json = {
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'input_parameters', '3': 8, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.PipelineParameter', '10': 'inputParameters'},
-    {'1': 'output_parameters', '3': 9, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.PipelineParameter', '10': 'outputParameters'},
-    {'1': 'docker', '3': 5, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.DockerExecutor', '9': 0, '10': 'docker'},
-    {'1': 'resources', '3': 6, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.PipelineResources', '10': 'resources'},
+    {
+      '1': 'input_parameters',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.PipelineParameter',
+      '10': 'inputParameters'
+    },
+    {
+      '1': 'output_parameters',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.PipelineParameter',
+      '10': 'outputParameters'
+    },
+    {
+      '1': 'docker',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.DockerExecutor',
+      '9': 0,
+      '10': 'docker'
+    },
+    {
+      '1': 'resources',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.PipelineResources',
+      '10': 'resources'
+    },
     {'1': 'pipeline_id', '3': 7, '4': 1, '5': 9, '10': 'pipelineId'},
   ],
   '8': [
@@ -77,7 +113,14 @@ final $typed_data.Uint8List pipelineDescriptor = $convert.base64Decode(
 const CreatePipelineRequest$json = {
   '1': 'CreatePipelineRequest',
   '2': [
-    {'1': 'pipeline', '3': 1, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.Pipeline', '10': 'pipeline'},
+    {
+      '1': 'pipeline',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.Pipeline',
+      '10': 'pipeline'
+    },
   ],
 };
 
@@ -91,16 +134,69 @@ const RunPipelineArgs$json = {
   '1': 'RunPipelineArgs',
   '2': [
     {'1': 'project_id', '3': 1, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'inputs', '3': 2, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.RunPipelineArgs.InputsEntry', '10': 'inputs'},
-    {'1': 'outputs', '3': 3, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.RunPipelineArgs.OutputsEntry', '10': 'outputs'},
-    {'1': 'service_account', '3': 4, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.ServiceAccount', '10': 'serviceAccount'},
+    {
+      '1': 'inputs',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.RunPipelineArgs.InputsEntry',
+      '10': 'inputs'
+    },
+    {
+      '1': 'outputs',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.RunPipelineArgs.OutputsEntry',
+      '10': 'outputs'
+    },
+    {
+      '1': 'service_account',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ServiceAccount',
+      '10': 'serviceAccount'
+    },
     {'1': 'client_id', '3': 5, '4': 1, '5': 9, '10': 'clientId'},
-    {'1': 'resources', '3': 6, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.PipelineResources', '10': 'resources'},
-    {'1': 'logging', '3': 7, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.LoggingOptions', '10': 'logging'},
-    {'1': 'keep_vm_alive_on_failure_duration', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'keepVmAliveOnFailureDuration'},
-    {'1': 'labels', '3': 9, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.RunPipelineArgs.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'resources',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.PipelineResources',
+      '10': 'resources'
+    },
+    {
+      '1': 'logging',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.LoggingOptions',
+      '10': 'logging'
+    },
+    {
+      '1': 'keep_vm_alive_on_failure_duration',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'keepVmAliveOnFailureDuration'
+    },
+    {
+      '1': 'labels',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.RunPipelineArgs.LabelsEntry',
+      '10': 'labels'
+    },
   ],
-  '3': [RunPipelineArgs_InputsEntry$json, RunPipelineArgs_OutputsEntry$json, RunPipelineArgs_LabelsEntry$json],
+  '3': [
+    RunPipelineArgs_InputsEntry$json,
+    RunPipelineArgs_OutputsEntry$json,
+    RunPipelineArgs_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use runPipelineArgsDescriptor instead')
@@ -156,8 +252,23 @@ const RunPipelineRequest$json = {
   '1': 'RunPipelineRequest',
   '2': [
     {'1': 'pipeline_id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'pipelineId'},
-    {'1': 'ephemeral_pipeline', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.Pipeline', '9': 0, '10': 'ephemeralPipeline'},
-    {'1': 'pipeline_args', '3': 3, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.RunPipelineArgs', '10': 'pipelineArgs'},
+    {
+      '1': 'ephemeral_pipeline',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.Pipeline',
+      '9': 0,
+      '10': 'ephemeralPipeline'
+    },
+    {
+      '1': 'pipeline_args',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.RunPipelineArgs',
+      '10': 'pipelineArgs'
+    },
   ],
   '8': [
     {'1': 'pipeline'},
@@ -205,7 +316,14 @@ final $typed_data.Uint8List listPipelinesRequestDescriptor = $convert.base64Deco
 const ListPipelinesResponse$json = {
   '1': 'ListPipelinesResponse',
   '2': [
-    {'1': 'pipelines', '3': 1, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.Pipeline', '10': 'pipelines'},
+    {
+      '1': 'pipelines',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.Pipeline',
+      '10': 'pipelines'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -239,9 +357,10 @@ const GetControllerConfigRequest$json = {
 };
 
 /// Descriptor for `GetControllerConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getControllerConfigRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRDb250cm9sbGVyQ29uZmlnUmVxdWVzdBIhCgxvcGVyYXRpb25faWQYASABKAlSC29wZX'
-    'JhdGlvbklkEikKEHZhbGlkYXRpb25fdG9rZW4YAiABKARSD3ZhbGlkYXRpb25Ub2tlbg==');
+final $typed_data.Uint8List getControllerConfigRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRDb250cm9sbGVyQ29uZmlnUmVxdWVzdBIhCgxvcGVyYXRpb25faWQYASABKAlSC29wZX'
+        'JhdGlvbklkEikKEHZhbGlkYXRpb25fdG9rZW4YAiABKARSD3ZhbGlkYXRpb25Ub2tlbg==');
 
 @$core.Deprecated('Use controllerConfigDescriptor instead')
 const ControllerConfig$json = {
@@ -251,12 +370,46 @@ const ControllerConfig$json = {
     {'1': 'cmd', '3': 2, '4': 1, '5': 9, '10': 'cmd'},
     {'1': 'gcs_log_path', '3': 3, '4': 1, '5': 9, '10': 'gcsLogPath'},
     {'1': 'machine_type', '3': 4, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'vars', '3': 5, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.ControllerConfig.VarsEntry', '10': 'vars'},
-    {'1': 'disks', '3': 6, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.ControllerConfig.DisksEntry', '10': 'disks'},
-    {'1': 'gcs_sources', '3': 7, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.ControllerConfig.GcsSourcesEntry', '10': 'gcsSources'},
-    {'1': 'gcs_sinks', '3': 8, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.ControllerConfig.GcsSinksEntry', '10': 'gcsSinks'},
+    {
+      '1': 'vars',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ControllerConfig.VarsEntry',
+      '10': 'vars'
+    },
+    {
+      '1': 'disks',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ControllerConfig.DisksEntry',
+      '10': 'disks'
+    },
+    {
+      '1': 'gcs_sources',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ControllerConfig.GcsSourcesEntry',
+      '10': 'gcsSources'
+    },
+    {
+      '1': 'gcs_sinks',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ControllerConfig.GcsSinksEntry',
+      '10': 'gcsSinks'
+    },
   ],
-  '3': [ControllerConfig_RepeatedString$json, ControllerConfig_VarsEntry$json, ControllerConfig_DisksEntry$json, ControllerConfig_GcsSourcesEntry$json, ControllerConfig_GcsSinksEntry$json],
+  '3': [
+    ControllerConfig_RepeatedString$json,
+    ControllerConfig_VarsEntry$json,
+    ControllerConfig_DisksEntry$json,
+    ControllerConfig_GcsSourcesEntry$json,
+    ControllerConfig_GcsSinksEntry$json
+  ],
 };
 
 @$core.Deprecated('Use controllerConfigDescriptor instead')
@@ -292,7 +445,14 @@ const ControllerConfig_GcsSourcesEntry$json = {
   '1': 'GcsSourcesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.ControllerConfig.RepeatedString', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ControllerConfig.RepeatedString',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -302,7 +462,14 @@ const ControllerConfig_GcsSinksEntry$json = {
   '1': 'GcsSinksEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.ControllerConfig.RepeatedString', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.ControllerConfig.RepeatedString',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -331,7 +498,14 @@ const TimestampEvent$json = {
   '1': 'TimestampEvent',
   '2': [
     {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'timestamp', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timestamp'},
+    {
+      '1': 'timestamp',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timestamp'
+    },
   ],
 };
 
@@ -345,8 +519,22 @@ const SetOperationStatusRequest$json = {
   '1': 'SetOperationStatusRequest',
   '2': [
     {'1': 'operation_id', '3': 1, '4': 1, '5': 9, '10': 'operationId'},
-    {'1': 'timestamp_events', '3': 2, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.TimestampEvent', '10': 'timestampEvents'},
-    {'1': 'error_code', '3': 3, '4': 1, '5': 14, '6': '.google.rpc.Code', '10': 'errorCode'},
+    {
+      '1': 'timestamp_events',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.TimestampEvent',
+      '10': 'timestampEvents'
+    },
+    {
+      '1': 'error_code',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.rpc.Code',
+      '10': 'errorCode'
+    },
     {'1': 'error_message', '3': 4, '4': 1, '5': 9, '10': 'errorMessage'},
     {'1': 'validation_token', '3': 5, '4': 1, '5': 4, '10': 'validationToken'},
   ],
@@ -393,7 +581,14 @@ const PipelineResources$json = {
     {'1': 'minimum_cpu_cores', '3': 1, '4': 1, '5': 5, '10': 'minimumCpuCores'},
     {'1': 'preemptible', '3': 2, '4': 1, '5': 8, '10': 'preemptible'},
     {'1': 'minimum_ram_gb', '3': 3, '4': 1, '5': 1, '10': 'minimumRamGb'},
-    {'1': 'disks', '3': 4, '4': 3, '5': 11, '6': '.google.genomics.v1alpha2.PipelineResources.Disk', '10': 'disks'},
+    {
+      '1': 'disks',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.PipelineResources.Disk',
+      '10': 'disks'
+    },
     {'1': 'zones', '3': 5, '4': 3, '5': 9, '10': 'zones'},
     {'1': 'boot_disk_size_gb', '3': 6, '4': 1, '5': 5, '10': 'bootDiskSizeGb'},
     {'1': 'no_address', '3': 7, '4': 1, '5': 8, '10': 'noAddress'},
@@ -406,7 +601,14 @@ const PipelineResources_Disk$json = {
   '1': 'Disk',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.genomics.v1alpha2.PipelineResources.Disk.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.genomics.v1alpha2.PipelineResources.Disk.Type',
+      '10': 'type'
+    },
     {'1': 'size_gb', '3': 3, '4': 1, '5': 5, '10': 'sizeGb'},
     {'1': 'source', '3': 4, '4': 1, '5': 9, '10': 'source'},
     {'1': 'auto_delete', '3': 6, '4': 1, '5': 8, '10': 'autoDelete'},
@@ -447,7 +649,14 @@ const PipelineParameter$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
     {'1': 'default_value', '3': 5, '4': 1, '5': 9, '10': 'defaultValue'},
-    {'1': 'local_copy', '3': 6, '4': 1, '5': 11, '6': '.google.genomics.v1alpha2.PipelineParameter.LocalCopy', '10': 'localCopy'},
+    {
+      '1': 'local_copy',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.genomics.v1alpha2.PipelineParameter.LocalCopy',
+      '10': 'localCopy'
+    },
   ],
   '3': [PipelineParameter_LocalCopy$json],
 };
@@ -482,4 +691,3 @@ const DockerExecutor$json = {
 final $typed_data.Uint8List dockerExecutorDescriptor = $convert.base64Decode(
     'Cg5Eb2NrZXJFeGVjdXRvchIdCgppbWFnZV9uYW1lGAEgASgJUglpbWFnZU5hbWUSEAoDY21kGA'
     'IgASgJUgNjbWQ=');
-

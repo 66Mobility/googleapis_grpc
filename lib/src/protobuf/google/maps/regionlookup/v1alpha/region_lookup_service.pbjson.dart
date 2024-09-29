@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const LookupRegionRequest$json = {
   '1': 'LookupRegionRequest',
   '2': [
-    {'1': 'identifiers', '3': 1, '4': 3, '5': 11, '6': '.google.maps.regionlookup.v1alpha.RegionIdentifier', '10': 'identifiers'},
+    {
+      '1': 'identifiers',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.regionlookup.v1alpha.RegionIdentifier',
+      '10': 'identifiers'
+    },
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
   ],
@@ -34,7 +41,14 @@ final $typed_data.Uint8List lookupRegionRequestDescriptor = $convert.base64Decod
 const LookupRegionResponse$json = {
   '1': 'LookupRegionResponse',
   '2': [
-    {'1': 'matches', '3': 1, '4': 3, '5': 11, '6': '.google.maps.regionlookup.v1alpha.RegionMatch', '10': 'matches'},
+    {
+      '1': 'matches',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.regionlookup.v1alpha.RegionMatch',
+      '10': 'matches'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List lookupRegionResponseDescriptor = $convert.base64Deco
 const SearchRegionRequest$json = {
   '1': 'SearchRegionRequest',
   '2': [
-    {'1': 'search_values', '3': 1, '4': 3, '5': 11, '6': '.google.maps.regionlookup.v1alpha.RegionSearchValue', '10': 'searchValues'},
+    {
+      '1': 'search_values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.regionlookup.v1alpha.RegionSearchValue',
+      '10': 'searchValues'
+    },
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
   ],
@@ -66,7 +87,14 @@ final $typed_data.Uint8List searchRegionRequestDescriptor = $convert.base64Decod
 const SearchRegionResponse$json = {
   '1': 'SearchRegionResponse',
   '2': [
-    {'1': 'matches', '3': 1, '4': 3, '5': 11, '6': '.google.maps.regionlookup.v1alpha.RegionMatch', '10': 'matches'},
+    {
+      '1': 'matches',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.regionlookup.v1alpha.RegionMatch',
+      '10': 'matches'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -76,4 +104,3 @@ final $typed_data.Uint8List searchRegionResponseDescriptor = $convert.base64Deco
     'ChRTZWFyY2hSZWdpb25SZXNwb25zZRJHCgdtYXRjaGVzGAEgAygLMi0uZ29vZ2xlLm1hcHMucm'
     'VnaW9ubG9va3VwLnYxYWxwaGEuUmVnaW9uTWF0Y2hSB21hdGNoZXMSJgoPbmV4dF9wYWdlX3Rv'
     'a2VuGAIgASgJUg1uZXh0UGFnZVRva2Vu');
-

@@ -33,7 +33,14 @@ const HomepageExtensionPoint$json = {
   '1': 'HomepageExtensionPoint',
   '2': [
     {'1': 'run_function', '3': 1, '4': 1, '5': 9, '10': 'runFunction'},
-    {'1': 'enabled', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'enabled'},
+    {
+      '1': 'enabled',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'enabled'
+    },
   ],
 };
 
@@ -57,8 +64,8 @@ const UniversalActionExtensionPoint$json = {
 };
 
 /// Descriptor for `UniversalActionExtensionPoint`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List universalActionExtensionPointDescriptor = $convert.base64Decode(
-    'Ch1Vbml2ZXJzYWxBY3Rpb25FeHRlbnNpb25Qb2ludBIUCgVsYWJlbBgBIAEoCVIFbGFiZWwSHQ'
-    'oJb3Blbl9saW5rGAIgASgJSABSCG9wZW5MaW5rEiMKDHJ1bl9mdW5jdGlvbhgDIAEoCUgAUgty'
-    'dW5GdW5jdGlvbkINCgthY3Rpb25fdHlwZQ==');
-
+final $typed_data.Uint8List universalActionExtensionPointDescriptor =
+    $convert.base64Decode(
+        'Ch1Vbml2ZXJzYWxBY3Rpb25FeHRlbnNpb25Qb2ludBIUCgVsYWJlbBgBIAEoCVIFbGFiZWwSHQ'
+        'oJb3Blbl9saW5rGAIgASgJSABSCG9wZW5MaW5rEiMKDHJ1bl9mdW5jdGlvbhgDIAEoCUgAUgty'
+        'dW5GdW5jdGlvbkINCgthY3Rpb25fdHlwZQ==');

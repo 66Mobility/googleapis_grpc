@@ -21,19 +21,95 @@ const Settings$json = {
     {'1': 'default_locale', '3': 2, '4': 1, '5': 9, '10': 'defaultLocale'},
     {'1': 'enabled_regions', '3': 3, '4': 3, '5': 9, '10': 'enabledRegions'},
     {'1': 'disabled_regions', '3': 4, '4': 3, '5': 9, '10': 'disabledRegions'},
-    {'1': 'category', '3': 5, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.Settings.Category', '10': 'category'},
-    {'1': 'uses_transactions_api', '3': 6, '4': 1, '5': 8, '10': 'usesTransactionsApi'},
-    {'1': 'uses_digital_purchase_api', '3': 7, '4': 1, '5': 8, '10': 'usesDigitalPurchaseApi'},
-    {'1': 'uses_interactive_canvas', '3': 8, '4': 1, '5': 8, '10': 'usesInteractiveCanvas'},
-    {'1': 'uses_home_storage', '3': 17, '4': 1, '5': 8, '10': 'usesHomeStorage'},
-    {'1': 'designed_for_family', '3': 9, '4': 1, '5': 8, '10': 'designedForFamily'},
-    {'1': 'contains_alcohol_or_tobacco_content', '3': 11, '4': 1, '5': 8, '10': 'containsAlcoholOrTobaccoContent'},
+    {
+      '1': 'category',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.Settings.Category',
+      '10': 'category'
+    },
+    {
+      '1': 'uses_transactions_api',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '10': 'usesTransactionsApi'
+    },
+    {
+      '1': 'uses_digital_purchase_api',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'usesDigitalPurchaseApi'
+    },
+    {
+      '1': 'uses_interactive_canvas',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '10': 'usesInteractiveCanvas'
+    },
+    {
+      '1': 'uses_home_storage',
+      '3': 17,
+      '4': 1,
+      '5': 8,
+      '10': 'usesHomeStorage'
+    },
+    {
+      '1': 'designed_for_family',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '10': 'designedForFamily'
+    },
+    {
+      '1': 'contains_alcohol_or_tobacco_content',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '10': 'containsAlcoholOrTobaccoContent'
+    },
     {'1': 'keeps_mic_open', '3': 12, '4': 1, '5': 8, '10': 'keepsMicOpen'},
-    {'1': 'surface_requirements', '3': 13, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.SurfaceRequirements', '10': 'surfaceRequirements'},
-    {'1': 'testing_instructions', '3': 14, '4': 1, '5': 9, '10': 'testingInstructions'},
-    {'1': 'localized_settings', '3': 15, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.LocalizedSettings', '10': 'localizedSettings'},
-    {'1': 'account_linking', '3': 16, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.AccountLinking', '10': 'accountLinking'},
-    {'1': 'selected_android_apps', '3': 20, '4': 3, '5': 9, '10': 'selectedAndroidApps'},
+    {
+      '1': 'surface_requirements',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.SurfaceRequirements',
+      '10': 'surfaceRequirements'
+    },
+    {
+      '1': 'testing_instructions',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '10': 'testingInstructions'
+    },
+    {
+      '1': 'localized_settings',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.LocalizedSettings',
+      '10': 'localizedSettings'
+    },
+    {
+      '1': 'account_linking',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.AccountLinking',
+      '10': 'accountLinking'
+    },
+    {
+      '1': 'selected_android_apps',
+      '3': 20,
+      '4': 3,
+      '5': 9,
+      '10': 'selectedAndroidApps'
+    },
   ],
   '4': [Settings_Category$json],
 };
@@ -94,4 +170,3 @@ final $typed_data.Uint8List settingsDescriptor = $convert.base64Decode(
     'oIU0hPUFBJTkcQDRIKCgZTT0NJQUwQDhIKCgZTUE9SVFMQDxIdChlUUkFWRUxfQU5EX1RSQU5T'
     'UE9SVEFUSU9OEBASDQoJVVRJTElUSUVTEBESCwoHV0VBVEhFUhASEhAKDEhPTUVfQ09OVFJPTB'
     'AT');
-

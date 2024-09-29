@@ -31,34 +31,47 @@ class DriveAddOnManifest extends $pb.GeneratedMessage {
     return $result;
   }
   DriveAddOnManifest._() : super();
-  factory DriveAddOnManifest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveAddOnManifest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveAddOnManifest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveAddOnManifest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveAddOnManifest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.drive'), createEmptyInstance: create)
-    ..aOM<$396.HomepageExtensionPoint>(1, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $396.HomepageExtensionPoint.create)
-    ..aOM<DriveExtensionPoint>(2, _omitFieldNames ? '' : 'onItemsSelectedTrigger', subBuilder: DriveExtensionPoint.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveAddOnManifest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type.drive'),
+      createEmptyInstance: create)
+    ..aOM<$396.HomepageExtensionPoint>(
+        1, _omitFieldNames ? '' : 'homepageTrigger',
+        subBuilder: $396.HomepageExtensionPoint.create)
+    ..aOM<DriveExtensionPoint>(
+        2, _omitFieldNames ? '' : 'onItemsSelectedTrigger',
+        subBuilder: DriveExtensionPoint.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveAddOnManifest clone() => DriveAddOnManifest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveAddOnManifest copyWith(void Function(DriveAddOnManifest) updates) => super.copyWith((message) => updates(message as DriveAddOnManifest)) as DriveAddOnManifest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveAddOnManifest copyWith(void Function(DriveAddOnManifest) updates) =>
+      super.copyWith((message) => updates(message as DriveAddOnManifest))
+          as DriveAddOnManifest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveAddOnManifest create() => DriveAddOnManifest._();
   DriveAddOnManifest createEmptyInstance() => create();
-  static $pb.PbList<DriveAddOnManifest> createRepeated() => $pb.PbList<DriveAddOnManifest>();
+  static $pb.PbList<DriveAddOnManifest> createRepeated() =>
+      $pb.PbList<DriveAddOnManifest>();
   @$core.pragma('dart2js:noInline')
-  static DriveAddOnManifest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveAddOnManifest>(create);
+  static DriveAddOnManifest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveAddOnManifest>(create);
   static DriveAddOnManifest? _defaultInstance;
 
   /// If present, this overrides the configuration from
@@ -66,7 +79,10 @@ class DriveAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $396.HomepageExtensionPoint get homepageTrigger => $_getN(0);
   @$pb.TagNumber(1)
-  set homepageTrigger($396.HomepageExtensionPoint v) { setField(1, v); }
+  set homepageTrigger($396.HomepageExtensionPoint v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHomepageTrigger() => $_has(0);
   @$pb.TagNumber(1)
@@ -79,7 +95,10 @@ class DriveAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DriveExtensionPoint get onItemsSelectedTrigger => $_getN(1);
   @$pb.TagNumber(2)
-  set onItemsSelectedTrigger(DriveExtensionPoint v) { setField(2, v); }
+  set onItemsSelectedTrigger(DriveExtensionPoint v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOnItemsSelectedTrigger() => $_has(1);
   @$pb.TagNumber(2)
@@ -101,33 +120,42 @@ class DriveExtensionPoint extends $pb.GeneratedMessage {
     return $result;
   }
   DriveExtensionPoint._() : super();
-  factory DriveExtensionPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveExtensionPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveExtensionPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveExtensionPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveExtensionPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.drive'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveExtensionPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type.drive'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'runFunction')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveExtensionPoint clone() => DriveExtensionPoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveExtensionPoint copyWith(void Function(DriveExtensionPoint) updates) => super.copyWith((message) => updates(message as DriveExtensionPoint)) as DriveExtensionPoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveExtensionPoint copyWith(void Function(DriveExtensionPoint) updates) =>
+      super.copyWith((message) => updates(message as DriveExtensionPoint))
+          as DriveExtensionPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveExtensionPoint create() => DriveExtensionPoint._();
   DriveExtensionPoint createEmptyInstance() => create();
-  static $pb.PbList<DriveExtensionPoint> createRepeated() => $pb.PbList<DriveExtensionPoint>();
+  static $pb.PbList<DriveExtensionPoint> createRepeated() =>
+      $pb.PbList<DriveExtensionPoint>();
   @$core.pragma('dart2js:noInline')
-  static DriveExtensionPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveExtensionPoint>(create);
+  static DriveExtensionPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveExtensionPoint>(create);
   static DriveExtensionPoint? _defaultInstance;
 
   /// Required. The endpoint to execute when this extension point is
@@ -135,13 +163,16 @@ class DriveExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get runFunction => $_getSZ(0);
   @$pb.TagNumber(1)
-  set runFunction($core.String v) { $_setString(0, v); }
+  set runFunction($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRunFunction() => $_has(0);
   @$pb.TagNumber(1)
   void clearRunFunction() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

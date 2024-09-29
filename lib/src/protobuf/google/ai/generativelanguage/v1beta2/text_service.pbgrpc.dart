@@ -21,26 +21,33 @@ export 'text_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta2.TextService')
 class TextServiceClient extends $grpc.Client {
-  static final _$generateText = $grpc.ClientMethod<$26.GenerateTextRequest, $26.GenerateTextResponse>(
-      '/google.ai.generativelanguage.v1beta2.TextService/GenerateText',
-      ($26.GenerateTextRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $26.GenerateTextResponse.fromBuffer(value));
-  static final _$embedText = $grpc.ClientMethod<$26.EmbedTextRequest, $26.EmbedTextResponse>(
-      '/google.ai.generativelanguage.v1beta2.TextService/EmbedText',
-      ($26.EmbedTextRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $26.EmbedTextResponse.fromBuffer(value));
+  static final _$generateText =
+      $grpc.ClientMethod<$26.GenerateTextRequest, $26.GenerateTextResponse>(
+          '/google.ai.generativelanguage.v1beta2.TextService/GenerateText',
+          ($26.GenerateTextRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) =>
+              $26.GenerateTextResponse.fromBuffer(value));
+  static final _$embedText =
+      $grpc.ClientMethod<$26.EmbedTextRequest, $26.EmbedTextResponse>(
+          '/google.ai.generativelanguage.v1beta2.TextService/EmbedText',
+          ($26.EmbedTextRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) =>
+              $26.EmbedTextResponse.fromBuffer(value));
 
   TextServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$26.GenerateTextResponse> generateText($26.GenerateTextRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$26.GenerateTextResponse> generateText(
+      $26.GenerateTextRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateText, request, options: options);
   }
 
-  $grpc.ResponseFuture<$26.EmbedTextResponse> embedText($26.EmbedTextRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$26.EmbedTextResponse> embedText(
+      $26.EmbedTextRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$embedText, request, options: options);
   }
 }
@@ -50,13 +57,15 @@ abstract class TextServiceBase extends $grpc.Service {
   $core.String get $name => 'google.ai.generativelanguage.v1beta2.TextService';
 
   TextServiceBase() {
-    $addMethod($grpc.ServiceMethod<$26.GenerateTextRequest, $26.GenerateTextResponse>(
-        'GenerateText',
-        generateText_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) => $26.GenerateTextRequest.fromBuffer(value),
-        ($26.GenerateTextResponse value) => value.writeToBuffer()));
+    $addMethod(
+        $grpc.ServiceMethod<$26.GenerateTextRequest, $26.GenerateTextResponse>(
+            'GenerateText',
+            generateText_Pre,
+            false,
+            false,
+            ($core.List<$core.int> value) =>
+                $26.GenerateTextRequest.fromBuffer(value),
+            ($26.GenerateTextResponse value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<$26.EmbedTextRequest, $26.EmbedTextResponse>(
         'EmbedText',
         embedText_Pre,
@@ -66,14 +75,19 @@ abstract class TextServiceBase extends $grpc.Service {
         ($26.EmbedTextResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$26.GenerateTextResponse> generateText_Pre($grpc.ServiceCall call, $async.Future<$26.GenerateTextRequest> request) async {
+  $async.Future<$26.GenerateTextResponse> generateText_Pre(
+      $grpc.ServiceCall call,
+      $async.Future<$26.GenerateTextRequest> request) async {
     return generateText(call, await request);
   }
 
-  $async.Future<$26.EmbedTextResponse> embedText_Pre($grpc.ServiceCall call, $async.Future<$26.EmbedTextRequest> request) async {
+  $async.Future<$26.EmbedTextResponse> embedText_Pre($grpc.ServiceCall call,
+      $async.Future<$26.EmbedTextRequest> request) async {
     return embedText(call, await request);
   }
 
-  $async.Future<$26.GenerateTextResponse> generateText($grpc.ServiceCall call, $26.GenerateTextRequest request);
-  $async.Future<$26.EmbedTextResponse> embedText($grpc.ServiceCall call, $26.EmbedTextRequest request);
+  $async.Future<$26.GenerateTextResponse> generateText(
+      $grpc.ServiceCall call, $26.GenerateTextRequest request);
+  $async.Future<$26.EmbedTextResponse> embedText(
+      $grpc.ServiceCall call, $26.EmbedTextRequest request);
 }

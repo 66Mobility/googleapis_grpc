@@ -17,18 +17,80 @@ import 'dart:typed_data' as $typed_data;
 const Route$json = {
   '1': 'Route',
   '2': [
-    {'1': 'route_labels', '3': 13, '4': 3, '5': 14, '6': '.google.maps.routing.v2.RouteLabel', '10': 'routeLabels'},
-    {'1': 'legs', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routing.v2.RouteLeg', '10': 'legs'},
+    {
+      '1': 'route_labels',
+      '3': 13,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RouteLabel',
+      '10': 'routeLabels'
+    },
+    {
+      '1': 'legs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLeg',
+      '10': 'legs'
+    },
     {'1': 'distance_meters', '3': 2, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'static_duration', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'polyline', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Polyline', '10': 'polyline'},
+    {
+      '1': 'duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'polyline',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Polyline',
+      '10': 'polyline'
+    },
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
     {'1': 'warnings', '3': 7, '4': 3, '5': 9, '10': 'warnings'},
-    {'1': 'viewport', '3': 8, '4': 1, '5': 11, '6': '.google.geo.type.Viewport', '10': 'viewport'},
-    {'1': 'travel_advisory', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteTravelAdvisory', '10': 'travelAdvisory'},
-    {'1': 'optimized_intermediate_waypoint_index', '3': 10, '4': 3, '5': 5, '10': 'optimizedIntermediateWaypointIndex'},
-    {'1': 'localized_values', '3': 11, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Route.RouteLocalizedValues', '10': 'localizedValues'},
+    {
+      '1': 'viewport',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.geo.type.Viewport',
+      '10': 'viewport'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
+    {
+      '1': 'optimized_intermediate_waypoint_index',
+      '3': 10,
+      '4': 3,
+      '5': 5,
+      '10': 'optimizedIntermediateWaypointIndex'
+    },
+    {
+      '1': 'localized_values',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Route.RouteLocalizedValues',
+      '10': 'localizedValues'
+    },
     {'1': 'route_token', '3': 12, '4': 1, '5': 9, '10': 'routeToken'},
   ],
   '3': [Route_RouteLocalizedValues$json],
@@ -38,10 +100,38 @@ const Route$json = {
 const Route_RouteLocalizedValues$json = {
   '1': 'RouteLocalizedValues',
   '2': [
-    {'1': 'distance', '3': 1, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'distance'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'duration'},
-    {'1': 'static_duration', '3': 3, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'staticDuration'},
-    {'1': 'transit_fare', '3': 4, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'transitFare'},
+    {
+      '1': 'distance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'distance'
+    },
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'transit_fare',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'transitFare'
+    },
   ],
 };
 
@@ -71,11 +161,44 @@ final $typed_data.Uint8List routeDescriptor = $convert.base64Decode(
 const RouteTravelAdvisory$json = {
   '1': 'RouteTravelAdvisory',
   '2': [
-    {'1': 'toll_info', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TollInfo', '10': 'tollInfo'},
-    {'1': 'speed_reading_intervals', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routing.v2.SpeedReadingInterval', '10': 'speedReadingIntervals'},
-    {'1': 'fuel_consumption_microliters', '3': 5, '4': 1, '5': 3, '10': 'fuelConsumptionMicroliters'},
-    {'1': 'route_restrictions_partially_ignored', '3': 6, '4': 1, '5': 8, '10': 'routeRestrictionsPartiallyIgnored'},
-    {'1': 'transit_fare', '3': 7, '4': 1, '5': 11, '6': '.google.type.Money', '10': 'transitFare'},
+    {
+      '1': 'toll_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TollInfo',
+      '10': 'tollInfo'
+    },
+    {
+      '1': 'speed_reading_intervals',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.SpeedReadingInterval',
+      '10': 'speedReadingIntervals'
+    },
+    {
+      '1': 'fuel_consumption_microliters',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '10': 'fuelConsumptionMicroliters'
+    },
+    {
+      '1': 'route_restrictions_partially_ignored',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '10': 'routeRestrictionsPartiallyIgnored'
+    },
+    {
+      '1': 'transit_fare',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Money',
+      '10': 'transitFare'
+    },
   ],
 };
 
@@ -94,8 +217,22 @@ final $typed_data.Uint8List routeTravelAdvisoryDescriptor = $convert.base64Decod
 const RouteLegTravelAdvisory$json = {
   '1': 'RouteLegTravelAdvisory',
   '2': [
-    {'1': 'toll_info', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TollInfo', '10': 'tollInfo'},
-    {'1': 'speed_reading_intervals', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routing.v2.SpeedReadingInterval', '10': 'speedReadingIntervals'},
+    {
+      '1': 'toll_info',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TollInfo',
+      '10': 'tollInfo'
+    },
+    {
+      '1': 'speed_reading_intervals',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.SpeedReadingInterval',
+      '10': 'speedReadingIntervals'
+    },
   ],
 };
 
@@ -110,30 +247,101 @@ final $typed_data.Uint8List routeLegTravelAdvisoryDescriptor = $convert.base64De
 const RouteLegStepTravelAdvisory$json = {
   '1': 'RouteLegStepTravelAdvisory',
   '2': [
-    {'1': 'speed_reading_intervals', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routing.v2.SpeedReadingInterval', '10': 'speedReadingIntervals'},
+    {
+      '1': 'speed_reading_intervals',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.SpeedReadingInterval',
+      '10': 'speedReadingIntervals'
+    },
   ],
 };
 
 /// Descriptor for `RouteLegStepTravelAdvisory`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List routeLegStepTravelAdvisoryDescriptor = $convert.base64Decode(
-    'ChpSb3V0ZUxlZ1N0ZXBUcmF2ZWxBZHZpc29yeRJkChdzcGVlZF9yZWFkaW5nX2ludGVydmFscx'
-    'gBIAMoCzIsLmdvb2dsZS5tYXBzLnJvdXRpbmcudjIuU3BlZWRSZWFkaW5nSW50ZXJ2YWxSFXNw'
-    'ZWVkUmVhZGluZ0ludGVydmFscw==');
+final $typed_data.Uint8List routeLegStepTravelAdvisoryDescriptor =
+    $convert.base64Decode(
+        'ChpSb3V0ZUxlZ1N0ZXBUcmF2ZWxBZHZpc29yeRJkChdzcGVlZF9yZWFkaW5nX2ludGVydmFscx'
+        'gBIAMoCzIsLmdvb2dsZS5tYXBzLnJvdXRpbmcudjIuU3BlZWRSZWFkaW5nSW50ZXJ2YWxSFXNw'
+        'ZWVkUmVhZGluZ0ludGVydmFscw==');
 
 @$core.Deprecated('Use routeLegDescriptor instead')
 const RouteLeg$json = {
   '1': 'RouteLeg',
   '2': [
     {'1': 'distance_meters', '3': 1, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'static_duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'polyline', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Polyline', '10': 'polyline'},
-    {'1': 'start_location', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Location', '10': 'startLocation'},
-    {'1': 'end_location', '3': 6, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Location', '10': 'endLocation'},
-    {'1': 'steps', '3': 7, '4': 3, '5': 11, '6': '.google.maps.routing.v2.RouteLegStep', '10': 'steps'},
-    {'1': 'travel_advisory', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLegTravelAdvisory', '10': 'travelAdvisory'},
-    {'1': 'localized_values', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLeg.RouteLegLocalizedValues', '10': 'localizedValues'},
-    {'1': 'steps_overview', '3': 10, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLeg.StepsOverview', '10': 'stepsOverview'},
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'polyline',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Polyline',
+      '10': 'polyline'
+    },
+    {
+      '1': 'start_location',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Location',
+      '10': 'startLocation'
+    },
+    {
+      '1': 'end_location',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Location',
+      '10': 'endLocation'
+    },
+    {
+      '1': 'steps',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLegStep',
+      '10': 'steps'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLegTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
+    {
+      '1': 'localized_values',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLeg.RouteLegLocalizedValues',
+      '10': 'localizedValues'
+    },
+    {
+      '1': 'steps_overview',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLeg.StepsOverview',
+      '10': 'stepsOverview'
+    },
   ],
   '3': [RouteLeg_RouteLegLocalizedValues$json, RouteLeg_StepsOverview$json],
 };
@@ -142,9 +350,30 @@ const RouteLeg$json = {
 const RouteLeg_RouteLegLocalizedValues$json = {
   '1': 'RouteLegLocalizedValues',
   '2': [
-    {'1': 'distance', '3': 1, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'distance'},
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'duration'},
-    {'1': 'static_duration', '3': 3, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'staticDuration'},
+    {
+      '1': 'distance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'distance'
+    },
+    {
+      '1': 'duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'duration'
+    },
+    {
+      '1': 'static_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'staticDuration'
+    },
   ],
 };
 
@@ -152,7 +381,14 @@ const RouteLeg_RouteLegLocalizedValues$json = {
 const RouteLeg_StepsOverview$json = {
   '1': 'StepsOverview',
   '2': [
-    {'1': 'multi_modal_segments', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routing.v2.RouteLeg.StepsOverview.MultiModalSegment', '10': 'multiModalSegments'},
+    {
+      '1': 'multi_modal_segments',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLeg.StepsOverview.MultiModalSegment',
+      '10': 'multiModalSegments'
+    },
   ],
   '3': [RouteLeg_StepsOverview_MultiModalSegment$json],
 };
@@ -161,10 +397,40 @@ const RouteLeg_StepsOverview$json = {
 const RouteLeg_StepsOverview_MultiModalSegment$json = {
   '1': 'MultiModalSegment',
   '2': [
-    {'1': 'step_start_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'stepStartIndex', '17': true},
-    {'1': 'step_end_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'stepEndIndex', '17': true},
-    {'1': 'navigation_instruction', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routing.v2.NavigationInstruction', '10': 'navigationInstruction'},
-    {'1': 'travel_mode', '3': 4, '4': 1, '5': 14, '6': '.google.maps.routing.v2.RouteTravelMode', '10': 'travelMode'},
+    {
+      '1': 'step_start_index',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'stepStartIndex',
+      '17': true
+    },
+    {
+      '1': 'step_end_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'stepEndIndex',
+      '17': true
+    },
+    {
+      '1': 'navigation_instruction',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.NavigationInstruction',
+      '10': 'navigationInstruction'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RouteTravelMode',
+      '10': 'travelMode'
+    },
   ],
   '8': [
     {'1': '_step_start_index'},
@@ -205,15 +471,78 @@ const RouteLegStep$json = {
   '1': 'RouteLegStep',
   '2': [
     {'1': 'distance_meters', '3': 1, '4': 1, '5': 5, '10': 'distanceMeters'},
-    {'1': 'static_duration', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'staticDuration'},
-    {'1': 'polyline', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Polyline', '10': 'polyline'},
-    {'1': 'start_location', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Location', '10': 'startLocation'},
-    {'1': 'end_location', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routing.v2.Location', '10': 'endLocation'},
-    {'1': 'navigation_instruction', '3': 6, '4': 1, '5': 11, '6': '.google.maps.routing.v2.NavigationInstruction', '10': 'navigationInstruction'},
-    {'1': 'travel_advisory', '3': 7, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLegStepTravelAdvisory', '10': 'travelAdvisory'},
-    {'1': 'localized_values', '3': 8, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLegStep.RouteLegStepLocalizedValues', '10': 'localizedValues'},
-    {'1': 'transit_details', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLegStepTransitDetails', '10': 'transitDetails'},
-    {'1': 'travel_mode', '3': 10, '4': 1, '5': 14, '6': '.google.maps.routing.v2.RouteTravelMode', '10': 'travelMode'},
+    {
+      '1': 'static_duration',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'staticDuration'
+    },
+    {
+      '1': 'polyline',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Polyline',
+      '10': 'polyline'
+    },
+    {
+      '1': 'start_location',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Location',
+      '10': 'startLocation'
+    },
+    {
+      '1': 'end_location',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.Location',
+      '10': 'endLocation'
+    },
+    {
+      '1': 'navigation_instruction',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.NavigationInstruction',
+      '10': 'navigationInstruction'
+    },
+    {
+      '1': 'travel_advisory',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLegStepTravelAdvisory',
+      '10': 'travelAdvisory'
+    },
+    {
+      '1': 'localized_values',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLegStep.RouteLegStepLocalizedValues',
+      '10': 'localizedValues'
+    },
+    {
+      '1': 'transit_details',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.RouteLegStepTransitDetails',
+      '10': 'transitDetails'
+    },
+    {
+      '1': 'travel_mode',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.RouteTravelMode',
+      '10': 'travelMode'
+    },
   ],
   '3': [RouteLegStep_RouteLegStepLocalizedValues$json],
 };
@@ -222,8 +551,22 @@ const RouteLegStep$json = {
 const RouteLegStep_RouteLegStepLocalizedValues$json = {
   '1': 'RouteLegStepLocalizedValues',
   '2': [
-    {'1': 'distance', '3': 1, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'distance'},
-    {'1': 'static_duration', '3': 3, '4': 1, '5': 11, '6': '.google.type.LocalizedText', '10': 'staticDuration'},
+    {
+      '1': 'distance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'distance'
+    },
+    {
+      '1': 'static_duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LocalizedText',
+      '10': 'staticDuration'
+    },
   ],
 };
 
@@ -252,25 +595,86 @@ final $typed_data.Uint8List routeLegStepDescriptor = $convert.base64Decode(
 const RouteLegStepTransitDetails$json = {
   '1': 'RouteLegStepTransitDetails',
   '2': [
-    {'1': 'stop_details', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLegStepTransitDetails.TransitStopDetails', '10': 'stopDetails'},
-    {'1': 'localized_values', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.RouteLegStepTransitDetails.TransitDetailsLocalizedValues', '10': 'localizedValues'},
+    {
+      '1': 'stop_details',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.routing.v2.RouteLegStepTransitDetails.TransitStopDetails',
+      '10': 'stopDetails'
+    },
+    {
+      '1': 'localized_values',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.maps.routing.v2.RouteLegStepTransitDetails.TransitDetailsLocalizedValues',
+      '10': 'localizedValues'
+    },
     {'1': 'headsign', '3': 3, '4': 1, '5': 9, '10': 'headsign'},
-    {'1': 'headway', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'headway'},
-    {'1': 'transit_line', '3': 5, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TransitLine', '10': 'transitLine'},
+    {
+      '1': 'headway',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'headway'
+    },
+    {
+      '1': 'transit_line',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TransitLine',
+      '10': 'transitLine'
+    },
     {'1': 'stop_count', '3': 6, '4': 1, '5': 5, '10': 'stopCount'},
     {'1': 'trip_short_text', '3': 7, '4': 1, '5': 9, '10': 'tripShortText'},
   ],
-  '3': [RouteLegStepTransitDetails_TransitStopDetails$json, RouteLegStepTransitDetails_TransitDetailsLocalizedValues$json],
+  '3': [
+    RouteLegStepTransitDetails_TransitStopDetails$json,
+    RouteLegStepTransitDetails_TransitDetailsLocalizedValues$json
+  ],
 };
 
 @$core.Deprecated('Use routeLegStepTransitDetailsDescriptor instead')
 const RouteLegStepTransitDetails_TransitStopDetails$json = {
   '1': 'TransitStopDetails',
   '2': [
-    {'1': 'arrival_stop', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TransitStop', '10': 'arrivalStop'},
-    {'1': 'arrival_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'arrivalTime'},
-    {'1': 'departure_stop', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routing.v2.TransitStop', '10': 'departureStop'},
-    {'1': 'departure_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'departureTime'},
+    {
+      '1': 'arrival_stop',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TransitStop',
+      '10': 'arrivalStop'
+    },
+    {
+      '1': 'arrival_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'arrivalTime'
+    },
+    {
+      '1': 'departure_stop',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.TransitStop',
+      '10': 'departureStop'
+    },
+    {
+      '1': 'departure_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'departureTime'
+    },
   ],
 };
 
@@ -278,8 +682,22 @@ const RouteLegStepTransitDetails_TransitStopDetails$json = {
 const RouteLegStepTransitDetails_TransitDetailsLocalizedValues$json = {
   '1': 'TransitDetailsLocalizedValues',
   '2': [
-    {'1': 'arrival_time', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.LocalizedTime', '10': 'arrivalTime'},
-    {'1': 'departure_time', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.LocalizedTime', '10': 'departureTime'},
+    {
+      '1': 'arrival_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.LocalizedTime',
+      '10': 'arrivalTime'
+    },
+    {
+      '1': 'departure_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.LocalizedTime',
+      '10': 'departureTime'
+    },
   ],
 };
 
@@ -303,4 +721,3 @@ final $typed_data.Uint8List routeLegStepTransitDetailsDescriptor = $convert.base
     '1lGAEgASgLMiUuZ29vZ2xlLm1hcHMucm91dGluZy52Mi5Mb2NhbGl6ZWRUaW1lUgthcnJpdmFs'
     'VGltZRJMCg5kZXBhcnR1cmVfdGltZRgCIAEoCzIlLmdvb2dsZS5tYXBzLnJvdXRpbmcudjIuTG'
     '9jYWxpemVkVGltZVINZGVwYXJ0dXJlVGltZQ==');
-

@@ -16,15 +16,26 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// State of certificate management. Refers to the most recent certificate
 /// acquisition or renewal attempt.
 class ManagementStatus extends $pb.ProtobufEnum {
-  static const ManagementStatus MANAGEMENT_STATUS_UNSPECIFIED = ManagementStatus._(0, _omitEnumNames ? '' : 'MANAGEMENT_STATUS_UNSPECIFIED');
-  static const ManagementStatus OK = ManagementStatus._(1, _omitEnumNames ? '' : 'OK');
-  static const ManagementStatus PENDING = ManagementStatus._(2, _omitEnumNames ? '' : 'PENDING');
-  static const ManagementStatus FAILED_RETRYING_NOT_VISIBLE = ManagementStatus._(4, _omitEnumNames ? '' : 'FAILED_RETRYING_NOT_VISIBLE');
-  static const ManagementStatus FAILED_PERMANENT = ManagementStatus._(6, _omitEnumNames ? '' : 'FAILED_PERMANENT');
-  static const ManagementStatus FAILED_RETRYING_CAA_FORBIDDEN = ManagementStatus._(7, _omitEnumNames ? '' : 'FAILED_RETRYING_CAA_FORBIDDEN');
-  static const ManagementStatus FAILED_RETRYING_CAA_CHECKING = ManagementStatus._(8, _omitEnumNames ? '' : 'FAILED_RETRYING_CAA_CHECKING');
+  static const ManagementStatus MANAGEMENT_STATUS_UNSPECIFIED =
+      ManagementStatus._(
+          0, _omitEnumNames ? '' : 'MANAGEMENT_STATUS_UNSPECIFIED');
+  static const ManagementStatus OK =
+      ManagementStatus._(1, _omitEnumNames ? '' : 'OK');
+  static const ManagementStatus PENDING =
+      ManagementStatus._(2, _omitEnumNames ? '' : 'PENDING');
+  static const ManagementStatus FAILED_RETRYING_NOT_VISIBLE =
+      ManagementStatus._(
+          4, _omitEnumNames ? '' : 'FAILED_RETRYING_NOT_VISIBLE');
+  static const ManagementStatus FAILED_PERMANENT =
+      ManagementStatus._(6, _omitEnumNames ? '' : 'FAILED_PERMANENT');
+  static const ManagementStatus FAILED_RETRYING_CAA_FORBIDDEN =
+      ManagementStatus._(
+          7, _omitEnumNames ? '' : 'FAILED_RETRYING_CAA_FORBIDDEN');
+  static const ManagementStatus FAILED_RETRYING_CAA_CHECKING =
+      ManagementStatus._(
+          8, _omitEnumNames ? '' : 'FAILED_RETRYING_CAA_CHECKING');
 
-  static const $core.List<ManagementStatus> values = <ManagementStatus> [
+  static const $core.List<ManagementStatus> values = <ManagementStatus>[
     MANAGEMENT_STATUS_UNSPECIFIED,
     OK,
     PENDING,
@@ -34,11 +45,11 @@ class ManagementStatus extends $pb.ProtobufEnum {
     FAILED_RETRYING_CAA_CHECKING,
   ];
 
-  static final $core.Map<$core.int, ManagementStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, ManagementStatus> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static ManagementStatus? valueOf($core.int value) => _byValue[value];
 
   const ManagementStatus._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -15,41 +15,55 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The SSL management type for this domain.
 class SslSettings_SslManagementType extends $pb.ProtobufEnum {
-  static const SslSettings_SslManagementType SSL_MANAGEMENT_TYPE_UNSPECIFIED = SslSettings_SslManagementType._(0, _omitEnumNames ? '' : 'SSL_MANAGEMENT_TYPE_UNSPECIFIED');
-  static const SslSettings_SslManagementType AUTOMATIC = SslSettings_SslManagementType._(1, _omitEnumNames ? '' : 'AUTOMATIC');
-  static const SslSettings_SslManagementType MANUAL = SslSettings_SslManagementType._(2, _omitEnumNames ? '' : 'MANUAL');
+  static const SslSettings_SslManagementType SSL_MANAGEMENT_TYPE_UNSPECIFIED =
+      SslSettings_SslManagementType._(
+          0, _omitEnumNames ? '' : 'SSL_MANAGEMENT_TYPE_UNSPECIFIED');
+  static const SslSettings_SslManagementType AUTOMATIC =
+      SslSettings_SslManagementType._(1, _omitEnumNames ? '' : 'AUTOMATIC');
+  static const SslSettings_SslManagementType MANUAL =
+      SslSettings_SslManagementType._(2, _omitEnumNames ? '' : 'MANUAL');
 
-  static const $core.List<SslSettings_SslManagementType> values = <SslSettings_SslManagementType> [
+  static const $core.List<SslSettings_SslManagementType> values =
+      <SslSettings_SslManagementType>[
     SSL_MANAGEMENT_TYPE_UNSPECIFIED,
     AUTOMATIC,
     MANUAL,
   ];
 
-  static final $core.Map<$core.int, SslSettings_SslManagementType> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static SslSettings_SslManagementType? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, SslSettings_SslManagementType> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static SslSettings_SslManagementType? valueOf($core.int value) =>
+      _byValue[value];
 
-  const SslSettings_SslManagementType._($core.int v, $core.String n) : super(v, n);
+  const SslSettings_SslManagementType._($core.int v, $core.String n)
+      : super(v, n);
 }
 
 /// A resource record type.
 class ResourceRecord_RecordType extends $pb.ProtobufEnum {
-  static const ResourceRecord_RecordType RECORD_TYPE_UNSPECIFIED = ResourceRecord_RecordType._(0, _omitEnumNames ? '' : 'RECORD_TYPE_UNSPECIFIED');
-  static const ResourceRecord_RecordType A = ResourceRecord_RecordType._(1, _omitEnumNames ? '' : 'A');
-  static const ResourceRecord_RecordType AAAA = ResourceRecord_RecordType._(2, _omitEnumNames ? '' : 'AAAA');
-  static const ResourceRecord_RecordType CNAME = ResourceRecord_RecordType._(3, _omitEnumNames ? '' : 'CNAME');
+  static const ResourceRecord_RecordType RECORD_TYPE_UNSPECIFIED =
+      ResourceRecord_RecordType._(
+          0, _omitEnumNames ? '' : 'RECORD_TYPE_UNSPECIFIED');
+  static const ResourceRecord_RecordType A =
+      ResourceRecord_RecordType._(1, _omitEnumNames ? '' : 'A');
+  static const ResourceRecord_RecordType AAAA =
+      ResourceRecord_RecordType._(2, _omitEnumNames ? '' : 'AAAA');
+  static const ResourceRecord_RecordType CNAME =
+      ResourceRecord_RecordType._(3, _omitEnumNames ? '' : 'CNAME');
 
-  static const $core.List<ResourceRecord_RecordType> values = <ResourceRecord_RecordType> [
+  static const $core.List<ResourceRecord_RecordType> values =
+      <ResourceRecord_RecordType>[
     RECORD_TYPE_UNSPECIFIED,
     A,
     AAAA,
     CNAME,
   ];
 
-  static final $core.Map<$core.int, ResourceRecord_RecordType> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, ResourceRecord_RecordType> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static ResourceRecord_RecordType? valueOf($core.int value) => _byValue[value];
 
   const ResourceRecord_RecordType._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -33,35 +33,44 @@ class ReleaseChannel extends $pb.GeneratedMessage {
     return $result;
   }
   ReleaseChannel._() : super();
-  factory ReleaseChannel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReleaseChannel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReleaseChannel.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReleaseChannel.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReleaseChannel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReleaseChannel',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'currentVersion')
     ..aOS(3, _omitFieldNames ? '' : 'pendingVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReleaseChannel clone() => ReleaseChannel()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReleaseChannel copyWith(void Function(ReleaseChannel) updates) => super.copyWith((message) => updates(message as ReleaseChannel)) as ReleaseChannel;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReleaseChannel copyWith(void Function(ReleaseChannel) updates) =>
+      super.copyWith((message) => updates(message as ReleaseChannel))
+          as ReleaseChannel;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReleaseChannel create() => ReleaseChannel._();
   ReleaseChannel createEmptyInstance() => create();
-  static $pb.PbList<ReleaseChannel> createRepeated() => $pb.PbList<ReleaseChannel>();
+  static $pb.PbList<ReleaseChannel> createRepeated() =>
+      $pb.PbList<ReleaseChannel>();
   @$core.pragma('dart2js:noInline')
-  static ReleaseChannel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReleaseChannel>(create);
+  static ReleaseChannel getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReleaseChannel>(create);
   static ReleaseChannel? _defaultInstance;
 
   /// The unique name of the release channel in the following format.
@@ -69,7 +78,10 @@ class ReleaseChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -80,7 +92,10 @@ class ReleaseChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get currentVersion => $_getSZ(1);
   @$pb.TagNumber(2)
-  set currentVersion($core.String v) { $_setString(1, v); }
+  set currentVersion($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCurrentVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -91,13 +106,16 @@ class ReleaseChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pendingVersion => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pendingVersion($core.String v) { $_setString(2, v); }
+  set pendingVersion($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPendingVersion() => $_has(2);
   @$pb.TagNumber(3)
   void clearPendingVersion() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

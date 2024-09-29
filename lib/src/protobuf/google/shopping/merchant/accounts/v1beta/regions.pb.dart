@@ -29,33 +29,42 @@ class GetRegionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetRegionRequest._() : super();
-  factory GetRegionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetRegionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetRegionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetRegionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetRegionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetRegionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetRegionRequest clone() => GetRegionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetRegionRequest copyWith(void Function(GetRegionRequest) updates) => super.copyWith((message) => updates(message as GetRegionRequest)) as GetRegionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetRegionRequest copyWith(void Function(GetRegionRequest) updates) =>
+      super.copyWith((message) => updates(message as GetRegionRequest))
+          as GetRegionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetRegionRequest create() => GetRegionRequest._();
   GetRegionRequest createEmptyInstance() => create();
-  static $pb.PbList<GetRegionRequest> createRepeated() => $pb.PbList<GetRegionRequest>();
+  static $pb.PbList<GetRegionRequest> createRepeated() =>
+      $pb.PbList<GetRegionRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetRegionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetRegionRequest>(create);
+  static GetRegionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetRegionRequest>(create);
   static GetRegionRequest? _defaultInstance;
 
   /// Required. The name of the region to retrieve.
@@ -63,7 +72,10 @@ class GetRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,35 +102,44 @@ class CreateRegionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateRegionRequest._() : super();
-  factory CreateRegionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateRegionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateRegionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateRegionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateRegionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateRegionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'regionId')
     ..aOM<Region>(3, _omitFieldNames ? '' : 'region', subBuilder: Region.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateRegionRequest clone() => CreateRegionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateRegionRequest copyWith(void Function(CreateRegionRequest) updates) => super.copyWith((message) => updates(message as CreateRegionRequest)) as CreateRegionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateRegionRequest copyWith(void Function(CreateRegionRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateRegionRequest))
+          as CreateRegionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateRegionRequest create() => CreateRegionRequest._();
   CreateRegionRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateRegionRequest> createRepeated() => $pb.PbList<CreateRegionRequest>();
+  static $pb.PbList<CreateRegionRequest> createRepeated() =>
+      $pb.PbList<CreateRegionRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateRegionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateRegionRequest>(create);
+  static CreateRegionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateRegionRequest>(create);
   static CreateRegionRequest? _defaultInstance;
 
   /// Required. The account to create a region for.
@@ -126,7 +147,10 @@ class CreateRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -137,7 +161,10 @@ class CreateRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get regionId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set regionId($core.String v) { $_setString(1, v); }
+  set regionId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegionId() => $_has(1);
   @$pb.TagNumber(2)
@@ -147,7 +174,10 @@ class CreateRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Region get region => $_getN(2);
   @$pb.TagNumber(3)
-  set region(Region v) { setField(3, v); }
+  set region(Region v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRegion() => $_has(2);
   @$pb.TagNumber(3)
@@ -172,41 +202,54 @@ class UpdateRegionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateRegionRequest._() : super();
-  factory UpdateRegionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateRegionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateRegionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateRegionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRegionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateRegionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOM<Region>(1, _omitFieldNames ? '' : 'region', subBuilder: Region.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateRegionRequest clone() => UpdateRegionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateRegionRequest copyWith(void Function(UpdateRegionRequest) updates) => super.copyWith((message) => updates(message as UpdateRegionRequest)) as UpdateRegionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateRegionRequest copyWith(void Function(UpdateRegionRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateRegionRequest))
+          as UpdateRegionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateRegionRequest create() => UpdateRegionRequest._();
   UpdateRegionRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateRegionRequest> createRepeated() => $pb.PbList<UpdateRegionRequest>();
+  static $pb.PbList<UpdateRegionRequest> createRepeated() =>
+      $pb.PbList<UpdateRegionRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateRegionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateRegionRequest>(create);
+  static UpdateRegionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateRegionRequest>(create);
   static UpdateRegionRequest? _defaultInstance;
 
   /// Required. The updated region.
   @$pb.TagNumber(1)
   Region get region => $_getN(0);
   @$pb.TagNumber(1)
-  set region(Region v) { setField(1, v); }
+  set region(Region v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRegion() => $_has(0);
   @$pb.TagNumber(1)
@@ -220,7 +263,10 @@ class UpdateRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -241,33 +287,42 @@ class DeleteRegionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteRegionRequest._() : super();
-  factory DeleteRegionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteRegionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteRegionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteRegionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteRegionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteRegionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteRegionRequest clone() => DeleteRegionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteRegionRequest copyWith(void Function(DeleteRegionRequest) updates) => super.copyWith((message) => updates(message as DeleteRegionRequest)) as DeleteRegionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteRegionRequest copyWith(void Function(DeleteRegionRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteRegionRequest))
+          as DeleteRegionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteRegionRequest create() => DeleteRegionRequest._();
   DeleteRegionRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteRegionRequest> createRepeated() => $pb.PbList<DeleteRegionRequest>();
+  static $pb.PbList<DeleteRegionRequest> createRepeated() =>
+      $pb.PbList<DeleteRegionRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteRegionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteRegionRequest>(create);
+  static DeleteRegionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteRegionRequest>(create);
   static DeleteRegionRequest? _defaultInstance;
 
   /// Required. The name of the region to delete.
@@ -275,7 +330,10 @@ class DeleteRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -302,35 +360,44 @@ class ListRegionsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListRegionsRequest._() : super();
-  factory ListRegionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListRegionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListRegionsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListRegionsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRegionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListRegionsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListRegionsRequest clone() => ListRegionsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListRegionsRequest copyWith(void Function(ListRegionsRequest) updates) => super.copyWith((message) => updates(message as ListRegionsRequest)) as ListRegionsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListRegionsRequest copyWith(void Function(ListRegionsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListRegionsRequest))
+          as ListRegionsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListRegionsRequest create() => ListRegionsRequest._();
   ListRegionsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListRegionsRequest> createRepeated() => $pb.PbList<ListRegionsRequest>();
+  static $pb.PbList<ListRegionsRequest> createRepeated() =>
+      $pb.PbList<ListRegionsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListRegionsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListRegionsRequest>(create);
+  static ListRegionsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListRegionsRequest>(create);
   static ListRegionsRequest? _defaultInstance;
 
   /// Required. The account to list regions for.
@@ -338,7 +405,10 @@ class ListRegionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -351,7 +421,10 @@ class ListRegionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -365,7 +438,10 @@ class ListRegionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -388,34 +464,44 @@ class ListRegionsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListRegionsResponse._() : super();
-  factory ListRegionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListRegionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListRegionsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListRegionsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRegionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<Region>(1, _omitFieldNames ? '' : 'regions', $pb.PbFieldType.PM, subBuilder: Region.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListRegionsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..pc<Region>(1, _omitFieldNames ? '' : 'regions', $pb.PbFieldType.PM,
+        subBuilder: Region.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListRegionsResponse clone() => ListRegionsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListRegionsResponse copyWith(void Function(ListRegionsResponse) updates) => super.copyWith((message) => updates(message as ListRegionsResponse)) as ListRegionsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListRegionsResponse copyWith(void Function(ListRegionsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListRegionsResponse))
+          as ListRegionsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListRegionsResponse create() => ListRegionsResponse._();
   ListRegionsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListRegionsResponse> createRepeated() => $pb.PbList<ListRegionsResponse>();
+  static $pb.PbList<ListRegionsResponse> createRepeated() =>
+      $pb.PbList<ListRegionsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListRegionsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListRegionsResponse>(create);
+  static ListRegionsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListRegionsResponse>(create);
   static ListRegionsResponse? _defaultInstance;
 
   /// The regions from the specified merchant.
@@ -427,7 +513,10 @@ class ListRegionsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -450,34 +539,49 @@ class Region_PostalCodeArea_PostalCodeRange extends $pb.GeneratedMessage {
     return $result;
   }
   Region_PostalCodeArea_PostalCodeRange._() : super();
-  factory Region_PostalCodeArea_PostalCodeRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Region_PostalCodeArea_PostalCodeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Region_PostalCodeArea_PostalCodeRange.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Region_PostalCodeArea_PostalCodeRange.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Region.PostalCodeArea.PostalCodeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Region.PostalCodeArea.PostalCodeRange',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'begin')
     ..aOS(2, _omitFieldNames ? '' : 'end')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Region_PostalCodeArea_PostalCodeRange clone() => Region_PostalCodeArea_PostalCodeRange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Region_PostalCodeArea_PostalCodeRange copyWith(void Function(Region_PostalCodeArea_PostalCodeRange) updates) => super.copyWith((message) => updates(message as Region_PostalCodeArea_PostalCodeRange)) as Region_PostalCodeArea_PostalCodeRange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Region_PostalCodeArea_PostalCodeRange clone() =>
+      Region_PostalCodeArea_PostalCodeRange()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Region_PostalCodeArea_PostalCodeRange copyWith(
+          void Function(Region_PostalCodeArea_PostalCodeRange) updates) =>
+      super.copyWith((message) =>
+              updates(message as Region_PostalCodeArea_PostalCodeRange))
+          as Region_PostalCodeArea_PostalCodeRange;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Region_PostalCodeArea_PostalCodeRange create() => Region_PostalCodeArea_PostalCodeRange._();
+  static Region_PostalCodeArea_PostalCodeRange create() =>
+      Region_PostalCodeArea_PostalCodeRange._();
   Region_PostalCodeArea_PostalCodeRange createEmptyInstance() => create();
-  static $pb.PbList<Region_PostalCodeArea_PostalCodeRange> createRepeated() => $pb.PbList<Region_PostalCodeArea_PostalCodeRange>();
+  static $pb.PbList<Region_PostalCodeArea_PostalCodeRange> createRepeated() =>
+      $pb.PbList<Region_PostalCodeArea_PostalCodeRange>();
   @$core.pragma('dart2js:noInline')
-  static Region_PostalCodeArea_PostalCodeRange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Region_PostalCodeArea_PostalCodeRange>(create);
+  static Region_PostalCodeArea_PostalCodeRange getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Region_PostalCodeArea_PostalCodeRange>(create);
   static Region_PostalCodeArea_PostalCodeRange? _defaultInstance;
 
   /// Required. A postal code or a pattern of the form prefix* denoting the
@@ -486,7 +590,10 @@ class Region_PostalCodeArea_PostalCodeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get begin => $_getSZ(0);
   @$pb.TagNumber(1)
-  set begin($core.String v) { $_setString(0, v); }
+  set begin($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBegin() => $_has(0);
   @$pb.TagNumber(1)
@@ -503,7 +610,10 @@ class Region_PostalCodeArea_PostalCodeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get end => $_getSZ(1);
   @$pb.TagNumber(2)
-  set end($core.String v) { $_setString(1, v); }
+  set end($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
@@ -528,34 +638,47 @@ class Region_PostalCodeArea extends $pb.GeneratedMessage {
     return $result;
   }
   Region_PostalCodeArea._() : super();
-  factory Region_PostalCodeArea.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Region_PostalCodeArea.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Region_PostalCodeArea.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Region_PostalCodeArea.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Region.PostalCodeArea', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Region.PostalCodeArea',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'regionCode')
-    ..pc<Region_PostalCodeArea_PostalCodeRange>(2, _omitFieldNames ? '' : 'postalCodes', $pb.PbFieldType.PM, subBuilder: Region_PostalCodeArea_PostalCodeRange.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<Region_PostalCodeArea_PostalCodeRange>(
+        2, _omitFieldNames ? '' : 'postalCodes', $pb.PbFieldType.PM,
+        subBuilder: Region_PostalCodeArea_PostalCodeRange.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Region_PostalCodeArea clone() => Region_PostalCodeArea()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Region_PostalCodeArea copyWith(void Function(Region_PostalCodeArea) updates) => super.copyWith((message) => updates(message as Region_PostalCodeArea)) as Region_PostalCodeArea;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Region_PostalCodeArea clone() =>
+      Region_PostalCodeArea()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Region_PostalCodeArea copyWith(
+          void Function(Region_PostalCodeArea) updates) =>
+      super.copyWith((message) => updates(message as Region_PostalCodeArea))
+          as Region_PostalCodeArea;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Region_PostalCodeArea create() => Region_PostalCodeArea._();
   Region_PostalCodeArea createEmptyInstance() => create();
-  static $pb.PbList<Region_PostalCodeArea> createRepeated() => $pb.PbList<Region_PostalCodeArea>();
+  static $pb.PbList<Region_PostalCodeArea> createRepeated() =>
+      $pb.PbList<Region_PostalCodeArea>();
   @$core.pragma('dart2js:noInline')
-  static Region_PostalCodeArea getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Region_PostalCodeArea>(create);
+  static Region_PostalCodeArea getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Region_PostalCodeArea>(create);
   static Region_PostalCodeArea? _defaultInstance;
 
   /// Required. [CLDR territory
@@ -564,7 +687,10 @@ class Region_PostalCodeArea extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get regionCode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set regionCode($core.String v) { $_setString(0, v); }
+  set regionCode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRegionCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -572,7 +698,8 @@ class Region_PostalCodeArea extends $pb.GeneratedMessage {
 
   /// Required. A range of postal codes.
   @$pb.TagNumber(2)
-  $core.List<Region_PostalCodeArea_PostalCodeRange> get postalCodes => $_getList(1);
+  $core.List<Region_PostalCodeArea_PostalCodeRange> get postalCodes =>
+      $_getList(1);
 }
 
 /// A list of geotargets that defines the region area.
@@ -587,33 +714,44 @@ class Region_GeoTargetArea extends $pb.GeneratedMessage {
     return $result;
   }
   Region_GeoTargetArea._() : super();
-  factory Region_GeoTargetArea.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Region_GeoTargetArea.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Region_GeoTargetArea.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Region_GeoTargetArea.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Region.GeoTargetArea', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..p<$fixnum.Int64>(1, _omitFieldNames ? '' : 'geotargetCriteriaIds', $pb.PbFieldType.K6)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Region.GeoTargetArea',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
+    ..p<$fixnum.Int64>(
+        1, _omitFieldNames ? '' : 'geotargetCriteriaIds', $pb.PbFieldType.K6)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Region_GeoTargetArea clone() => Region_GeoTargetArea()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Region_GeoTargetArea copyWith(void Function(Region_GeoTargetArea) updates) => super.copyWith((message) => updates(message as Region_GeoTargetArea)) as Region_GeoTargetArea;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Region_GeoTargetArea clone() =>
+      Region_GeoTargetArea()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Region_GeoTargetArea copyWith(void Function(Region_GeoTargetArea) updates) =>
+      super.copyWith((message) => updates(message as Region_GeoTargetArea))
+          as Region_GeoTargetArea;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Region_GeoTargetArea create() => Region_GeoTargetArea._();
   Region_GeoTargetArea createEmptyInstance() => create();
-  static $pb.PbList<Region_GeoTargetArea> createRepeated() => $pb.PbList<Region_GeoTargetArea>();
+  static $pb.PbList<Region_GeoTargetArea> createRepeated() =>
+      $pb.PbList<Region_GeoTargetArea>();
   @$core.pragma('dart2js:noInline')
-  static Region_GeoTargetArea getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Region_GeoTargetArea>(create);
+  static Region_GeoTargetArea getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Region_GeoTargetArea>(create);
   static Region_GeoTargetArea? _defaultInstance;
 
   /// Required. A non-empty list of [location
@@ -660,29 +798,39 @@ class Region extends $pb.GeneratedMessage {
     return $result;
   }
   Region._() : super();
-  factory Region.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Region.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Region.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Region.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Region', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Region',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<Region_PostalCodeArea>(3, _omitFieldNames ? '' : 'postalCodeArea', subBuilder: Region_PostalCodeArea.create)
-    ..aOM<Region_GeoTargetArea>(4, _omitFieldNames ? '' : 'geotargetArea', subBuilder: Region_GeoTargetArea.create)
-    ..aOM<$307.BoolValue>(5, _omitFieldNames ? '' : 'regionalInventoryEligible', subBuilder: $307.BoolValue.create)
-    ..aOM<$307.BoolValue>(6, _omitFieldNames ? '' : 'shippingEligible', subBuilder: $307.BoolValue.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Region_PostalCodeArea>(3, _omitFieldNames ? '' : 'postalCodeArea',
+        subBuilder: Region_PostalCodeArea.create)
+    ..aOM<Region_GeoTargetArea>(4, _omitFieldNames ? '' : 'geotargetArea',
+        subBuilder: Region_GeoTargetArea.create)
+    ..aOM<$307.BoolValue>(5, _omitFieldNames ? '' : 'regionalInventoryEligible',
+        subBuilder: $307.BoolValue.create)
+    ..aOM<$307.BoolValue>(6, _omitFieldNames ? '' : 'shippingEligible',
+        subBuilder: $307.BoolValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Region clone() => Region()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Region copyWith(void Function(Region) updates) => super.copyWith((message) => updates(message as Region)) as Region;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Region copyWith(void Function(Region) updates) =>
+      super.copyWith((message) => updates(message as Region)) as Region;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -691,7 +839,8 @@ class Region extends $pb.GeneratedMessage {
   Region createEmptyInstance() => create();
   static $pb.PbList<Region> createRepeated() => $pb.PbList<Region>();
   @$core.pragma('dart2js:noInline')
-  static Region getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Region>(create);
+  static Region getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Region>(create);
   static Region? _defaultInstance;
 
   /// Identifier. The resource name of the region.
@@ -699,7 +848,10 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -709,7 +861,10 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -719,7 +874,10 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Region_PostalCodeArea get postalCodeArea => $_getN(2);
   @$pb.TagNumber(3)
-  set postalCodeArea(Region_PostalCodeArea v) { setField(3, v); }
+  set postalCodeArea(Region_PostalCodeArea v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPostalCodeArea() => $_has(2);
   @$pb.TagNumber(3)
@@ -731,7 +889,10 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Region_GeoTargetArea get geotargetArea => $_getN(3);
   @$pb.TagNumber(4)
-  set geotargetArea(Region_GeoTargetArea v) { setField(4, v); }
+  set geotargetArea(Region_GeoTargetArea v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasGeotargetArea() => $_has(3);
   @$pb.TagNumber(4)
@@ -744,7 +905,10 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $307.BoolValue get regionalInventoryEligible => $_getN(4);
   @$pb.TagNumber(5)
-  set regionalInventoryEligible($307.BoolValue v) { setField(5, v); }
+  set regionalInventoryEligible($307.BoolValue v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRegionalInventoryEligible() => $_has(4);
   @$pb.TagNumber(5)
@@ -757,7 +921,10 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $307.BoolValue get shippingEligible => $_getN(5);
   @$pb.TagNumber(6)
-  set shippingEligible($307.BoolValue v) { setField(6, v); }
+  set shippingEligible($307.BoolValue v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasShippingEligible() => $_has(5);
   @$pb.TagNumber(6)
@@ -766,6 +933,6 @@ class Region extends $pb.GeneratedMessage {
   $307.BoolValue ensureShippingEligible() => $_ensure(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

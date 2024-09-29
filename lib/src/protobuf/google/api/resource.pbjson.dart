@@ -20,10 +20,24 @@ const ResourceDescriptor$json = {
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
     {'1': 'pattern', '3': 2, '4': 3, '5': 9, '10': 'pattern'},
     {'1': 'name_field', '3': 3, '4': 1, '5': 9, '10': 'nameField'},
-    {'1': 'history', '3': 4, '4': 1, '5': 14, '6': '.google.api.ResourceDescriptor.History', '10': 'history'},
+    {
+      '1': 'history',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.ResourceDescriptor.History',
+      '10': 'history'
+    },
     {'1': 'plural', '3': 5, '4': 1, '5': 9, '10': 'plural'},
     {'1': 'singular', '3': 6, '4': 1, '5': 9, '10': 'singular'},
-    {'1': 'style', '3': 10, '4': 3, '5': 14, '6': '.google.api.ResourceDescriptor.Style', '10': 'style'},
+    {
+      '1': 'style',
+      '3': 10,
+      '4': 3,
+      '5': 14,
+      '6': '.google.api.ResourceDescriptor.Style',
+      '10': 'style'
+    },
   ],
   '4': [ResourceDescriptor_History$json, ResourceDescriptor_Style$json],
 };
@@ -71,4 +85,3 @@ const ResourceReference$json = {
 final $typed_data.Uint8List resourceReferenceDescriptor = $convert.base64Decode(
     'ChFSZXNvdXJjZVJlZmVyZW5jZRISCgR0eXBlGAEgASgJUgR0eXBlEh0KCmNoaWxkX3R5cGUYAi'
     'ABKAlSCWNoaWxkVHlwZQ==');
-

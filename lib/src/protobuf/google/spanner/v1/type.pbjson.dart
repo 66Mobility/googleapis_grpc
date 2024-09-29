@@ -62,10 +62,39 @@ final $typed_data.Uint8List typeAnnotationCodeDescriptor = $convert.base64Decode
 const Type$json = {
   '1': 'Type',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.spanner.v1.TypeCode', '8': {}, '10': 'code'},
-    {'1': 'array_element_type', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '10': 'arrayElementType'},
-    {'1': 'struct_type', '3': 3, '4': 1, '5': 11, '6': '.google.spanner.v1.StructType', '10': 'structType'},
-    {'1': 'type_annotation', '3': 4, '4': 1, '5': 14, '6': '.google.spanner.v1.TypeAnnotationCode', '10': 'typeAnnotation'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.TypeCode',
+      '8': {},
+      '10': 'code'
+    },
+    {
+      '1': 'array_element_type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'arrayElementType'
+    },
+    {
+      '1': 'struct_type',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.StructType',
+      '10': 'structType'
+    },
+    {
+      '1': 'type_annotation',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.v1.TypeAnnotationCode',
+      '10': 'typeAnnotation'
+    },
     {'1': 'proto_type_fqn', '3': 5, '4': 1, '5': 9, '10': 'protoTypeFqn'},
   ],
 };
@@ -83,7 +112,14 @@ final $typed_data.Uint8List typeDescriptor = $convert.base64Decode(
 const StructType$json = {
   '1': 'StructType',
   '2': [
-    {'1': 'fields', '3': 1, '4': 3, '5': 11, '6': '.google.spanner.v1.StructType.Field', '10': 'fields'},
+    {
+      '1': 'fields',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.v1.StructType.Field',
+      '10': 'fields'
+    },
   ],
   '3': [StructType_Field$json],
 };
@@ -93,7 +129,14 @@ const StructType_Field$json = {
   '1': 'Field',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 11, '6': '.google.spanner.v1.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Type',
+      '10': 'type'
+    },
   ],
 };
 
@@ -102,4 +145,3 @@ final $typed_data.Uint8List structTypeDescriptor = $convert.base64Decode(
     'CgpTdHJ1Y3RUeXBlEjsKBmZpZWxkcxgBIAMoCzIjLmdvb2dsZS5zcGFubmVyLnYxLlN0cnVjdF'
     'R5cGUuRmllbGRSBmZpZWxkcxpICgVGaWVsZBISCgRuYW1lGAEgASgJUgRuYW1lEisKBHR5cGUY'
     'AiABKAsyFy5nb29nbGUuc3Bhbm5lci52MS5UeXBlUgR0eXBl');
-

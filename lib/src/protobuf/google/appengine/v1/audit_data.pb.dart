@@ -15,11 +15,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'appengine.pb.dart' as $49;
 
-enum AuditData_Method {
-  updateService, 
-  createVersion, 
-  notSet
-}
+enum AuditData_Method { updateService, createVersion, notSet }
 
 /// App Engine admin service audit log.
 class AuditData extends $pb.GeneratedMessage {
@@ -37,31 +33,39 @@ class AuditData extends $pb.GeneratedMessage {
     return $result;
   }
   AuditData._() : super();
-  factory AuditData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuditData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuditData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuditData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, AuditData_Method> _AuditData_MethodByTag = {
-    1 : AuditData_Method.updateService,
-    2 : AuditData_Method.createVersion,
-    0 : AuditData_Method.notSet
+    1: AuditData_Method.updateService,
+    2: AuditData_Method.createVersion,
+    0: AuditData_Method.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuditData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuditData',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<UpdateServiceMethod>(1, _omitFieldNames ? '' : 'updateService', subBuilder: UpdateServiceMethod.create)
-    ..aOM<CreateVersionMethod>(2, _omitFieldNames ? '' : 'createVersion', subBuilder: CreateVersionMethod.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<UpdateServiceMethod>(1, _omitFieldNames ? '' : 'updateService',
+        subBuilder: UpdateServiceMethod.create)
+    ..aOM<CreateVersionMethod>(2, _omitFieldNames ? '' : 'createVersion',
+        subBuilder: CreateVersionMethod.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuditData clone() => AuditData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuditData copyWith(void Function(AuditData) updates) => super.copyWith((message) => updates(message as AuditData)) as AuditData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuditData copyWith(void Function(AuditData) updates) =>
+      super.copyWith((message) => updates(message as AuditData)) as AuditData;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -70,7 +74,8 @@ class AuditData extends $pb.GeneratedMessage {
   AuditData createEmptyInstance() => create();
   static $pb.PbList<AuditData> createRepeated() => $pb.PbList<AuditData>();
   @$core.pragma('dart2js:noInline')
-  static AuditData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditData>(create);
+  static AuditData getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditData>(create);
   static AuditData? _defaultInstance;
 
   AuditData_Method whichMethod() => _AuditData_MethodByTag[$_whichOneof(0)]!;
@@ -80,7 +85,10 @@ class AuditData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   UpdateServiceMethod get updateService => $_getN(0);
   @$pb.TagNumber(1)
-  set updateService(UpdateServiceMethod v) { setField(1, v); }
+  set updateService(UpdateServiceMethod v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUpdateService() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,7 +100,10 @@ class AuditData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CreateVersionMethod get createVersion => $_getN(1);
   @$pb.TagNumber(2)
-  set createVersion(CreateVersionMethod v) { setField(2, v); }
+  set createVersion(CreateVersionMethod v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -113,40 +124,53 @@ class UpdateServiceMethod extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateServiceMethod._() : super();
-  factory UpdateServiceMethod.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateServiceMethod.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateServiceMethod.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateServiceMethod.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceMethod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
-    ..aOM<$49.UpdateServiceRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: $49.UpdateServiceRequest.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateServiceMethod',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$49.UpdateServiceRequest>(1, _omitFieldNames ? '' : 'request',
+        subBuilder: $49.UpdateServiceRequest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateServiceMethod clone() => UpdateServiceMethod()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateServiceMethod copyWith(void Function(UpdateServiceMethod) updates) => super.copyWith((message) => updates(message as UpdateServiceMethod)) as UpdateServiceMethod;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateServiceMethod copyWith(void Function(UpdateServiceMethod) updates) =>
+      super.copyWith((message) => updates(message as UpdateServiceMethod))
+          as UpdateServiceMethod;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateServiceMethod create() => UpdateServiceMethod._();
   UpdateServiceMethod createEmptyInstance() => create();
-  static $pb.PbList<UpdateServiceMethod> createRepeated() => $pb.PbList<UpdateServiceMethod>();
+  static $pb.PbList<UpdateServiceMethod> createRepeated() =>
+      $pb.PbList<UpdateServiceMethod>();
   @$core.pragma('dart2js:noInline')
-  static UpdateServiceMethod getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateServiceMethod>(create);
+  static UpdateServiceMethod getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateServiceMethod>(create);
   static UpdateServiceMethod? _defaultInstance;
 
   /// Update service request.
   @$pb.TagNumber(1)
   $49.UpdateServiceRequest get request => $_getN(0);
   @$pb.TagNumber(1)
-  set request($49.UpdateServiceRequest v) { setField(1, v); }
+  set request($49.UpdateServiceRequest v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRequest() => $_has(0);
   @$pb.TagNumber(1)
@@ -167,40 +191,53 @@ class CreateVersionMethod extends $pb.GeneratedMessage {
     return $result;
   }
   CreateVersionMethod._() : super();
-  factory CreateVersionMethod.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateVersionMethod.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateVersionMethod.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateVersionMethod.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateVersionMethod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
-    ..aOM<$49.CreateVersionRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: $49.CreateVersionRequest.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateVersionMethod',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
+      createEmptyInstance: create)
+    ..aOM<$49.CreateVersionRequest>(1, _omitFieldNames ? '' : 'request',
+        subBuilder: $49.CreateVersionRequest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateVersionMethod clone() => CreateVersionMethod()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateVersionMethod copyWith(void Function(CreateVersionMethod) updates) => super.copyWith((message) => updates(message as CreateVersionMethod)) as CreateVersionMethod;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateVersionMethod copyWith(void Function(CreateVersionMethod) updates) =>
+      super.copyWith((message) => updates(message as CreateVersionMethod))
+          as CreateVersionMethod;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateVersionMethod create() => CreateVersionMethod._();
   CreateVersionMethod createEmptyInstance() => create();
-  static $pb.PbList<CreateVersionMethod> createRepeated() => $pb.PbList<CreateVersionMethod>();
+  static $pb.PbList<CreateVersionMethod> createRepeated() =>
+      $pb.PbList<CreateVersionMethod>();
   @$core.pragma('dart2js:noInline')
-  static CreateVersionMethod getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateVersionMethod>(create);
+  static CreateVersionMethod getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateVersionMethod>(create);
   static CreateVersionMethod? _defaultInstance;
 
   /// Create version request.
   @$pb.TagNumber(1)
   $49.CreateVersionRequest get request => $_getN(0);
   @$pb.TagNumber(1)
-  set request($49.CreateVersionRequest v) { setField(1, v); }
+  set request($49.CreateVersionRequest v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRequest() => $_has(0);
   @$pb.TagNumber(1)
@@ -209,6 +246,6 @@ class CreateVersionMethod extends $pb.GeneratedMessage {
   $49.CreateVersionRequest ensureRequest() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -18,7 +18,15 @@ const CreateDatasetRequest$json = {
   '1': 'CreateDatasetRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'dataset', '3': 2, '4': 1, '5': 11, '6': '.google.maps.mapsplatformdatasets.v1.Dataset', '8': {}, '10': 'dataset'},
+    {
+      '1': 'dataset',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.mapsplatformdatasets.v1.Dataset',
+      '8': {},
+      '10': 'dataset'
+    },
   ],
 };
 
@@ -33,8 +41,23 @@ final $typed_data.Uint8List createDatasetRequestDescriptor = $convert.base64Deco
 const UpdateDatasetMetadataRequest$json = {
   '1': 'UpdateDatasetMetadataRequest',
   '2': [
-    {'1': 'dataset', '3': 1, '4': 1, '5': 11, '6': '.google.maps.mapsplatformdatasets.v1.Dataset', '8': {}, '10': 'dataset'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'dataset',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.mapsplatformdatasets.v1.Dataset',
+      '8': {},
+      '10': 'dataset'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -80,7 +103,14 @@ final $typed_data.Uint8List listDatasetsRequestDescriptor = $convert.base64Decod
 const ListDatasetsResponse$json = {
   '1': 'ListDatasetsResponse',
   '2': [
-    {'1': 'datasets', '3': 1, '4': 3, '5': 11, '6': '.google.maps.mapsplatformdatasets.v1.Dataset', '10': 'datasets'},
+    {
+      '1': 'datasets',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.mapsplatformdatasets.v1.Dataset',
+      '10': 'datasets'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -113,15 +143,23 @@ const FetchDatasetErrorsResponse$json = {
   '1': 'FetchDatasetErrorsResponse',
   '2': [
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-    {'1': 'errors', '3': 3, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'errors'},
+    {
+      '1': 'errors',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'errors'
+    },
   ],
 };
 
 /// Descriptor for `FetchDatasetErrorsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List fetchDatasetErrorsResponseDescriptor = $convert.base64Decode(
-    'ChpGZXRjaERhdGFzZXRFcnJvcnNSZXNwb25zZRImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW'
-    '5leHRQYWdlVG9rZW4SKgoGZXJyb3JzGAMgAygLMhIuZ29vZ2xlLnJwYy5TdGF0dXNSBmVycm9y'
-    'cw==');
+final $typed_data.Uint8List fetchDatasetErrorsResponseDescriptor =
+    $convert.base64Decode(
+        'ChpGZXRjaERhdGFzZXRFcnJvcnNSZXNwb25zZRImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW'
+        '5leHRQYWdlVG9rZW4SKgoGZXJyb3JzGAMgAygLMhIuZ29vZ2xlLnJwYy5TdGF0dXNSBmVycm9y'
+        'cw==');
 
 @$core.Deprecated('Use deleteDatasetRequestDescriptor instead')
 const DeleteDatasetRequest$json = {
@@ -135,4 +173,3 @@ const DeleteDatasetRequest$json = {
 final $typed_data.Uint8List deleteDatasetRequestDescriptor = $convert.base64Decode(
     'ChREZWxldGVEYXRhc2V0UmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21hcHNwbGF0Zm'
     '9ybWRhdGFzZXRzLmdvb2dsZWFwaXMuY29tL0RhdGFzZXRSBG5hbWU=');
-

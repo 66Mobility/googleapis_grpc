@@ -35,26 +35,33 @@ class RegionMatch extends $pb.GeneratedMessage {
     return $result;
   }
   RegionMatch._() : super();
-  factory RegionMatch.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RegionMatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RegionMatch.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RegionMatch.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegionMatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RegionMatch',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'matchedPlaceId')
     ..pPS(2, _omitFieldNames ? '' : 'candidatePlaceIds')
     ..aOS(3, _omitFieldNames ? '' : 'debugInfo')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RegionMatch clone() => RegionMatch()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RegionMatch copyWith(void Function(RegionMatch) updates) => super.copyWith((message) => updates(message as RegionMatch)) as RegionMatch;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RegionMatch copyWith(void Function(RegionMatch) updates) =>
+      super.copyWith((message) => updates(message as RegionMatch))
+          as RegionMatch;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -63,7 +70,8 @@ class RegionMatch extends $pb.GeneratedMessage {
   RegionMatch createEmptyInstance() => create();
   static $pb.PbList<RegionMatch> createRepeated() => $pb.PbList<RegionMatch>();
   @$core.pragma('dart2js:noInline')
-  static RegionMatch getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegionMatch>(create);
+  static RegionMatch getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RegionMatch>(create);
   static RegionMatch? _defaultInstance;
 
   /// Place ID of the region that is matched. If region is found, this field is
@@ -71,7 +79,10 @@ class RegionMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get matchedPlaceId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set matchedPlaceId($core.String v) { $_setString(0, v); }
+  set matchedPlaceId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMatchedPlaceId() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,13 +96,16 @@ class RegionMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get debugInfo => $_getSZ(2);
   @$pb.TagNumber(3)
-  set debugInfo($core.String v) { $_setString(2, v); }
+  set debugInfo($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDebugInfo() => $_has(2);
   @$pb.TagNumber(3)
   void clearDebugInfo() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

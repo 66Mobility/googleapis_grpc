@@ -48,38 +48,52 @@ class GenerateMessageRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateMessageRequest._() : super();
-  factory GenerateMessageRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateMessageRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateMessageRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateMessageRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateMessageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateMessageRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..aOM<MessagePrompt>(2, _omitFieldNames ? '' : 'prompt', subBuilder: MessagePrompt.create)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'candidateCount', $pb.PbFieldType.O3)
+    ..aOM<MessagePrompt>(2, _omitFieldNames ? '' : 'prompt',
+        subBuilder: MessagePrompt.create)
+    ..a<$core.double>(
+        3, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'candidateCount', $pb.PbFieldType.O3)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateMessageRequest clone() => GenerateMessageRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateMessageRequest copyWith(void Function(GenerateMessageRequest) updates) => super.copyWith((message) => updates(message as GenerateMessageRequest)) as GenerateMessageRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateMessageRequest clone() =>
+      GenerateMessageRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateMessageRequest copyWith(
+          void Function(GenerateMessageRequest) updates) =>
+      super.copyWith((message) => updates(message as GenerateMessageRequest))
+          as GenerateMessageRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GenerateMessageRequest create() => GenerateMessageRequest._();
   GenerateMessageRequest createEmptyInstance() => create();
-  static $pb.PbList<GenerateMessageRequest> createRepeated() => $pb.PbList<GenerateMessageRequest>();
+  static $pb.PbList<GenerateMessageRequest> createRepeated() =>
+      $pb.PbList<GenerateMessageRequest>();
   @$core.pragma('dart2js:noInline')
-  static GenerateMessageRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateMessageRequest>(create);
+  static GenerateMessageRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateMessageRequest>(create);
   static GenerateMessageRequest? _defaultInstance;
 
   ///  Required. The name of the model to use.
@@ -88,7 +102,10 @@ class GenerateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get model => $_getSZ(0);
   @$pb.TagNumber(1)
-  set model($core.String v) { $_setString(0, v); }
+  set model($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasModel() => $_has(0);
   @$pb.TagNumber(1)
@@ -102,7 +119,10 @@ class GenerateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   MessagePrompt get prompt => $_getN(1);
   @$pb.TagNumber(2)
-  set prompt(MessagePrompt v) { setField(2, v); }
+  set prompt(MessagePrompt v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrompt() => $_has(1);
   @$pb.TagNumber(2)
@@ -119,7 +139,10 @@ class GenerateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get temperature => $_getN(2);
   @$pb.TagNumber(3)
-  set temperature($core.double v) { $_setFloat(2, v); }
+  set temperature($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTemperature() => $_has(2);
   @$pb.TagNumber(3)
@@ -132,7 +155,10 @@ class GenerateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get candidateCount => $_getIZ(3);
   @$pb.TagNumber(4)
-  set candidateCount($core.int v) { $_setSignedInt32(3, v); }
+  set candidateCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCandidateCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -148,7 +174,10 @@ class GenerateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get topP => $_getN(4);
   @$pb.TagNumber(5)
-  set topP($core.double v) { $_setFloat(4, v); }
+  set topP($core.double v) {
+    $_setFloat(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTopP() => $_has(4);
   @$pb.TagNumber(5)
@@ -162,7 +191,10 @@ class GenerateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get topK => $_getIZ(5);
   @$pb.TagNumber(6)
-  set topK($core.int v) { $_setSignedInt32(5, v); }
+  set topK($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasTopK() => $_has(5);
   @$pb.TagNumber(6)
@@ -192,35 +224,50 @@ class GenerateMessageResponse extends $pb.GeneratedMessage {
     return $result;
   }
   GenerateMessageResponse._() : super();
-  factory GenerateMessageResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateMessageResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateMessageResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateMessageResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateMessageResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<Message>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: Message.create)
-    ..pc<Message>(2, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM, subBuilder: Message.create)
-    ..pc<$334.ContentFilter>(3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM, subBuilder: $334.ContentFilter.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateMessageResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<Message>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM,
+        subBuilder: Message.create)
+    ..pc<Message>(2, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM,
+        subBuilder: Message.create)
+    ..pc<$334.ContentFilter>(
+        3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM,
+        subBuilder: $334.ContentFilter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateMessageResponse clone() => GenerateMessageResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateMessageResponse copyWith(void Function(GenerateMessageResponse) updates) => super.copyWith((message) => updates(message as GenerateMessageResponse)) as GenerateMessageResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateMessageResponse clone() =>
+      GenerateMessageResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateMessageResponse copyWith(
+          void Function(GenerateMessageResponse) updates) =>
+      super.copyWith((message) => updates(message as GenerateMessageResponse))
+          as GenerateMessageResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GenerateMessageResponse create() => GenerateMessageResponse._();
   GenerateMessageResponse createEmptyInstance() => create();
-  static $pb.PbList<GenerateMessageResponse> createRepeated() => $pb.PbList<GenerateMessageResponse>();
+  static $pb.PbList<GenerateMessageResponse> createRepeated() =>
+      $pb.PbList<GenerateMessageResponse>();
   @$core.pragma('dart2js:noInline')
-  static GenerateMessageResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateMessageResponse>(create);
+  static GenerateMessageResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GenerateMessageResponse>(create);
   static GenerateMessageResponse? _defaultInstance;
 
   /// Candidate response messages from the model.
@@ -267,26 +314,33 @@ class Message extends $pb.GeneratedMessage {
     return $result;
   }
   Message._() : super();
-  factory Message.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Message.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Message.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Message.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Message', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Message',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'author')
     ..aOS(2, _omitFieldNames ? '' : 'content')
-    ..aOM<$335.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $335.CitationMetadata.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$335.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata',
+        subBuilder: $335.CitationMetadata.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Message clone() => Message()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Message copyWith(void Function(Message) updates) => super.copyWith((message) => updates(message as Message)) as Message;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Message copyWith(void Function(Message) updates) =>
+      super.copyWith((message) => updates(message as Message)) as Message;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -295,7 +349,8 @@ class Message extends $pb.GeneratedMessage {
   Message createEmptyInstance() => create();
   static $pb.PbList<Message> createRepeated() => $pb.PbList<Message>();
   @$core.pragma('dart2js:noInline')
-  static Message getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Message>(create);
+  static Message getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Message>(create);
   static Message? _defaultInstance;
 
   ///  Optional. The author of this Message.
@@ -307,7 +362,10 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get author => $_getSZ(0);
   @$pb.TagNumber(1)
-  set author($core.String v) { $_setString(0, v); }
+  set author($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAuthor() => $_has(0);
   @$pb.TagNumber(1)
@@ -317,7 +375,10 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get content => $_getSZ(1);
   @$pb.TagNumber(2)
-  set content($core.String v) { $_setString(1, v); }
+  set content($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(2)
@@ -332,7 +393,10 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $335.CitationMetadata get citationMetadata => $_getN(2);
   @$pb.TagNumber(3)
-  set citationMetadata($335.CitationMetadata v) { setField(3, v); }
+  set citationMetadata($335.CitationMetadata v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCitationMetadata() => $_has(2);
   @$pb.TagNumber(3)
@@ -367,35 +431,46 @@ class MessagePrompt extends $pb.GeneratedMessage {
     return $result;
   }
   MessagePrompt._() : super();
-  factory MessagePrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MessagePrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MessagePrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MessagePrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MessagePrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MessagePrompt',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'context')
-    ..pc<Example>(2, _omitFieldNames ? '' : 'examples', $pb.PbFieldType.PM, subBuilder: Example.create)
-    ..pc<Message>(3, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM, subBuilder: Message.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<Example>(2, _omitFieldNames ? '' : 'examples', $pb.PbFieldType.PM,
+        subBuilder: Example.create)
+    ..pc<Message>(3, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM,
+        subBuilder: Message.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MessagePrompt clone() => MessagePrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MessagePrompt copyWith(void Function(MessagePrompt) updates) => super.copyWith((message) => updates(message as MessagePrompt)) as MessagePrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MessagePrompt copyWith(void Function(MessagePrompt) updates) =>
+      super.copyWith((message) => updates(message as MessagePrompt))
+          as MessagePrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MessagePrompt create() => MessagePrompt._();
   MessagePrompt createEmptyInstance() => create();
-  static $pb.PbList<MessagePrompt> createRepeated() => $pb.PbList<MessagePrompt>();
+  static $pb.PbList<MessagePrompt> createRepeated() =>
+      $pb.PbList<MessagePrompt>();
   @$core.pragma('dart2js:noInline')
-  static MessagePrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MessagePrompt>(create);
+  static MessagePrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MessagePrompt>(create);
   static MessagePrompt? _defaultInstance;
 
   ///  Optional. Text that should be provided to the model first to ground the
@@ -416,7 +491,10 @@ class MessagePrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get context => $_getSZ(0);
   @$pb.TagNumber(1)
-  set context($core.String v) { $_setString(0, v); }
+  set context($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasContext() => $_has(0);
   @$pb.TagNumber(1)
@@ -463,25 +541,33 @@ class Example extends $pb.GeneratedMessage {
     return $result;
   }
   Example._() : super();
-  factory Example.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Example.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Example.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Example.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Example', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<Message>(1, _omitFieldNames ? '' : 'input', subBuilder: Message.create)
-    ..aOM<Message>(2, _omitFieldNames ? '' : 'output', subBuilder: Message.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Example',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<Message>(1, _omitFieldNames ? '' : 'input',
+        subBuilder: Message.create)
+    ..aOM<Message>(2, _omitFieldNames ? '' : 'output',
+        subBuilder: Message.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Example clone() => Example()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Example copyWith(void Function(Example) updates) => super.copyWith((message) => updates(message as Example)) as Example;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Example copyWith(void Function(Example) updates) =>
+      super.copyWith((message) => updates(message as Example)) as Example;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -490,14 +576,18 @@ class Example extends $pb.GeneratedMessage {
   Example createEmptyInstance() => create();
   static $pb.PbList<Example> createRepeated() => $pb.PbList<Example>();
   @$core.pragma('dart2js:noInline')
-  static Example getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Example>(create);
+  static Example getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Example>(create);
   static Example? _defaultInstance;
 
   /// Required. An example of an input `Message` from the user.
   @$pb.TagNumber(1)
   Message get input => $_getN(0);
   @$pb.TagNumber(1)
-  set input(Message v) { setField(1, v); }
+  set input(Message v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInput() => $_has(0);
   @$pb.TagNumber(1)
@@ -509,7 +599,10 @@ class Example extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Message get output => $_getN(1);
   @$pb.TagNumber(2)
-  set output(Message v) { setField(2, v); }
+  set output(Message v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOutput() => $_has(1);
   @$pb.TagNumber(2)
@@ -537,34 +630,46 @@ class CountMessageTokensRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CountMessageTokensRequest._() : super();
-  factory CountMessageTokensRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CountMessageTokensRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CountMessageTokensRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CountMessageTokensRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CountMessageTokensRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CountMessageTokensRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..aOM<MessagePrompt>(2, _omitFieldNames ? '' : 'prompt', subBuilder: MessagePrompt.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<MessagePrompt>(2, _omitFieldNames ? '' : 'prompt',
+        subBuilder: MessagePrompt.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CountMessageTokensRequest clone() => CountMessageTokensRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CountMessageTokensRequest copyWith(void Function(CountMessageTokensRequest) updates) => super.copyWith((message) => updates(message as CountMessageTokensRequest)) as CountMessageTokensRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CountMessageTokensRequest clone() =>
+      CountMessageTokensRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CountMessageTokensRequest copyWith(
+          void Function(CountMessageTokensRequest) updates) =>
+      super.copyWith((message) => updates(message as CountMessageTokensRequest))
+          as CountMessageTokensRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CountMessageTokensRequest create() => CountMessageTokensRequest._();
   CountMessageTokensRequest createEmptyInstance() => create();
-  static $pb.PbList<CountMessageTokensRequest> createRepeated() => $pb.PbList<CountMessageTokensRequest>();
+  static $pb.PbList<CountMessageTokensRequest> createRepeated() =>
+      $pb.PbList<CountMessageTokensRequest>();
   @$core.pragma('dart2js:noInline')
-  static CountMessageTokensRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CountMessageTokensRequest>(create);
+  static CountMessageTokensRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CountMessageTokensRequest>(create);
   static CountMessageTokensRequest? _defaultInstance;
 
   ///  Required. The model's resource name. This serves as an ID for the Model to
@@ -576,7 +681,10 @@ class CountMessageTokensRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get model => $_getSZ(0);
   @$pb.TagNumber(1)
-  set model($core.String v) { $_setString(0, v); }
+  set model($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasModel() => $_has(0);
   @$pb.TagNumber(1)
@@ -586,7 +694,10 @@ class CountMessageTokensRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   MessagePrompt get prompt => $_getN(1);
   @$pb.TagNumber(2)
-  set prompt(MessagePrompt v) { setField(2, v); }
+  set prompt(MessagePrompt v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrompt() => $_has(1);
   @$pb.TagNumber(2)
@@ -609,33 +720,45 @@ class CountMessageTokensResponse extends $pb.GeneratedMessage {
     return $result;
   }
   CountMessageTokensResponse._() : super();
-  factory CountMessageTokensResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CountMessageTokensResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CountMessageTokensResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CountMessageTokensResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CountMessageTokensResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CountMessageTokensResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'tokenCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CountMessageTokensResponse clone() => CountMessageTokensResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CountMessageTokensResponse copyWith(void Function(CountMessageTokensResponse) updates) => super.copyWith((message) => updates(message as CountMessageTokensResponse)) as CountMessageTokensResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CountMessageTokensResponse clone() =>
+      CountMessageTokensResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CountMessageTokensResponse copyWith(
+          void Function(CountMessageTokensResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as CountMessageTokensResponse))
+          as CountMessageTokensResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CountMessageTokensResponse create() => CountMessageTokensResponse._();
   CountMessageTokensResponse createEmptyInstance() => create();
-  static $pb.PbList<CountMessageTokensResponse> createRepeated() => $pb.PbList<CountMessageTokensResponse>();
+  static $pb.PbList<CountMessageTokensResponse> createRepeated() =>
+      $pb.PbList<CountMessageTokensResponse>();
   @$core.pragma('dart2js:noInline')
-  static CountMessageTokensResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CountMessageTokensResponse>(create);
+  static CountMessageTokensResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CountMessageTokensResponse>(create);
   static CountMessageTokensResponse? _defaultInstance;
 
   ///  The number of tokens that the `model` tokenizes the `prompt` into.
@@ -644,13 +767,16 @@ class CountMessageTokensResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get tokenCount => $_getIZ(0);
   @$pb.TagNumber(1)
-  set tokenCount($core.int v) { $_setSignedInt32(0, v); }
+  set tokenCount($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTokenCount() => $_has(0);
   @$pb.TagNumber(1)
   void clearTokenCount() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,11 +17,7 @@ import 'attachment.pbenum.dart';
 
 export 'attachment.pbenum.dart';
 
-enum Attachment_DataRef {
-  attachmentDataRef, 
-  driveDataRef, 
-  notSet
-}
+enum Attachment_DataRef { attachmentDataRef, driveDataRef, notSet }
 
 /// An attachment in Google Chat.
 class Attachment extends $pb.GeneratedMessage {
@@ -63,37 +59,49 @@ class Attachment extends $pb.GeneratedMessage {
     return $result;
   }
   Attachment._() : super();
-  factory Attachment.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Attachment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Attachment.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Attachment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Attachment_DataRef> _Attachment_DataRefByTag = {
-    4 : Attachment_DataRef.attachmentDataRef,
-    7 : Attachment_DataRef.driveDataRef,
-    0 : Attachment_DataRef.notSet
+  static const $core.Map<$core.int, Attachment_DataRef>
+      _Attachment_DataRefByTag = {
+    4: Attachment_DataRef.attachmentDataRef,
+    7: Attachment_DataRef.driveDataRef,
+    0: Attachment_DataRef.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Attachment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Attachment',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..oo(0, [4, 7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'contentName')
     ..aOS(3, _omitFieldNames ? '' : 'contentType')
-    ..aOM<AttachmentDataRef>(4, _omitFieldNames ? '' : 'attachmentDataRef', subBuilder: AttachmentDataRef.create)
+    ..aOM<AttachmentDataRef>(4, _omitFieldNames ? '' : 'attachmentDataRef',
+        subBuilder: AttachmentDataRef.create)
     ..aOS(5, _omitFieldNames ? '' : 'thumbnailUri')
     ..aOS(6, _omitFieldNames ? '' : 'downloadUri')
-    ..aOM<DriveDataRef>(7, _omitFieldNames ? '' : 'driveDataRef', subBuilder: DriveDataRef.create)
-    ..e<Attachment_Source>(9, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: Attachment_Source.SOURCE_UNSPECIFIED, valueOf: Attachment_Source.valueOf, enumValues: Attachment_Source.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<DriveDataRef>(7, _omitFieldNames ? '' : 'driveDataRef',
+        subBuilder: DriveDataRef.create)
+    ..e<Attachment_Source>(
+        9, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE,
+        defaultOrMaker: Attachment_Source.SOURCE_UNSPECIFIED,
+        valueOf: Attachment_Source.valueOf,
+        enumValues: Attachment_Source.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Attachment clone() => Attachment()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Attachment copyWith(void Function(Attachment) updates) => super.copyWith((message) => updates(message as Attachment)) as Attachment;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Attachment copyWith(void Function(Attachment) updates) =>
+      super.copyWith((message) => updates(message as Attachment)) as Attachment;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -102,10 +110,12 @@ class Attachment extends $pb.GeneratedMessage {
   Attachment createEmptyInstance() => create();
   static $pb.PbList<Attachment> createRepeated() => $pb.PbList<Attachment>();
   @$core.pragma('dart2js:noInline')
-  static Attachment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Attachment>(create);
+  static Attachment getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Attachment>(create);
   static Attachment? _defaultInstance;
 
-  Attachment_DataRef whichDataRef() => _Attachment_DataRefByTag[$_whichOneof(0)]!;
+  Attachment_DataRef whichDataRef() =>
+      _Attachment_DataRefByTag[$_whichOneof(0)]!;
   void clearDataRef() => clearField($_whichOneof(0));
 
   /// Resource name of the attachment, in the form
@@ -113,7 +123,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -123,7 +136,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get contentName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set contentName($core.String v) { $_setString(1, v); }
+  set contentName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasContentName() => $_has(1);
   @$pb.TagNumber(2)
@@ -133,7 +149,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get contentType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set contentType($core.String v) { $_setString(2, v); }
+  set contentType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasContentType() => $_has(2);
   @$pb.TagNumber(3)
@@ -144,7 +163,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   AttachmentDataRef get attachmentDataRef => $_getN(3);
   @$pb.TagNumber(4)
-  set attachmentDataRef(AttachmentDataRef v) { setField(4, v); }
+  set attachmentDataRef(AttachmentDataRef v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAttachmentDataRef() => $_has(3);
   @$pb.TagNumber(4)
@@ -158,7 +180,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get thumbnailUri => $_getSZ(4);
   @$pb.TagNumber(5)
-  set thumbnailUri($core.String v) { $_setString(4, v); }
+  set thumbnailUri($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasThumbnailUri() => $_has(4);
   @$pb.TagNumber(5)
@@ -170,7 +195,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get downloadUri => $_getSZ(5);
   @$pb.TagNumber(6)
-  set downloadUri($core.String v) { $_setString(5, v); }
+  set downloadUri($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDownloadUri() => $_has(5);
   @$pb.TagNumber(6)
@@ -181,7 +209,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DriveDataRef get driveDataRef => $_getN(6);
   @$pb.TagNumber(7)
-  set driveDataRef(DriveDataRef v) { setField(7, v); }
+  set driveDataRef(DriveDataRef v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDriveDataRef() => $_has(6);
   @$pb.TagNumber(7)
@@ -193,7 +224,10 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Attachment_Source get source => $_getN(7);
   @$pb.TagNumber(9)
-  set source(Attachment_Source v) { setField(9, v); }
+  set source(Attachment_Source v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSource() => $_has(7);
   @$pb.TagNumber(9)
@@ -212,40 +246,51 @@ class DriveDataRef extends $pb.GeneratedMessage {
     return $result;
   }
   DriveDataRef._() : super();
-  factory DriveDataRef.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DriveDataRef.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DriveDataRef.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DriveDataRef.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveDataRef', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DriveDataRef',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'driveFileId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DriveDataRef clone() => DriveDataRef()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DriveDataRef copyWith(void Function(DriveDataRef) updates) => super.copyWith((message) => updates(message as DriveDataRef)) as DriveDataRef;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DriveDataRef copyWith(void Function(DriveDataRef) updates) =>
+      super.copyWith((message) => updates(message as DriveDataRef))
+          as DriveDataRef;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DriveDataRef create() => DriveDataRef._();
   DriveDataRef createEmptyInstance() => create();
-  static $pb.PbList<DriveDataRef> createRepeated() => $pb.PbList<DriveDataRef>();
+  static $pb.PbList<DriveDataRef> createRepeated() =>
+      $pb.PbList<DriveDataRef>();
   @$core.pragma('dart2js:noInline')
-  static DriveDataRef getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DriveDataRef>(create);
+  static DriveDataRef getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DriveDataRef>(create);
   static DriveDataRef? _defaultInstance;
 
   /// The ID for the drive file. Use with the Drive API.
   @$pb.TagNumber(2)
   $core.String get driveFileId => $_getSZ(0);
   @$pb.TagNumber(2)
-  set driveFileId($core.String v) { $_setString(0, v); }
+  set driveFileId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDriveFileId() => $_has(0);
   @$pb.TagNumber(2)
@@ -268,34 +313,42 @@ class AttachmentDataRef extends $pb.GeneratedMessage {
     return $result;
   }
   AttachmentDataRef._() : super();
-  factory AttachmentDataRef.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AttachmentDataRef.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AttachmentDataRef.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AttachmentDataRef.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttachmentDataRef', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AttachmentDataRef',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'attachmentUploadToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AttachmentDataRef clone() => AttachmentDataRef()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AttachmentDataRef copyWith(void Function(AttachmentDataRef) updates) => super.copyWith((message) => updates(message as AttachmentDataRef)) as AttachmentDataRef;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AttachmentDataRef copyWith(void Function(AttachmentDataRef) updates) =>
+      super.copyWith((message) => updates(message as AttachmentDataRef))
+          as AttachmentDataRef;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttachmentDataRef create() => AttachmentDataRef._();
   AttachmentDataRef createEmptyInstance() => create();
-  static $pb.PbList<AttachmentDataRef> createRepeated() => $pb.PbList<AttachmentDataRef>();
+  static $pb.PbList<AttachmentDataRef> createRepeated() =>
+      $pb.PbList<AttachmentDataRef>();
   @$core.pragma('dart2js:noInline')
-  static AttachmentDataRef getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AttachmentDataRef>(create);
+  static AttachmentDataRef getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AttachmentDataRef>(create);
   static AttachmentDataRef? _defaultInstance;
 
   /// The resource name of the attachment data. This field is used with the media
@@ -303,7 +356,10 @@ class AttachmentDataRef extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceName($core.String v) { $_setString(0, v); }
+  set resourceName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasResourceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -315,7 +371,10 @@ class AttachmentDataRef extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get attachmentUploadToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set attachmentUploadToken($core.String v) { $_setString(1, v); }
+  set attachmentUploadToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAttachmentUploadToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -334,33 +393,42 @@ class GetAttachmentRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetAttachmentRequest._() : super();
-  factory GetAttachmentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetAttachmentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetAttachmentRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetAttachmentRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAttachmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetAttachmentRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetAttachmentRequest clone() => GetAttachmentRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetAttachmentRequest copyWith(void Function(GetAttachmentRequest) updates) => super.copyWith((message) => updates(message as GetAttachmentRequest)) as GetAttachmentRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetAttachmentRequest clone() =>
+      GetAttachmentRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetAttachmentRequest copyWith(void Function(GetAttachmentRequest) updates) =>
+      super.copyWith((message) => updates(message as GetAttachmentRequest))
+          as GetAttachmentRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetAttachmentRequest create() => GetAttachmentRequest._();
   GetAttachmentRequest createEmptyInstance() => create();
-  static $pb.PbList<GetAttachmentRequest> createRepeated() => $pb.PbList<GetAttachmentRequest>();
+  static $pb.PbList<GetAttachmentRequest> createRepeated() =>
+      $pb.PbList<GetAttachmentRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetAttachmentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetAttachmentRequest>(create);
+  static GetAttachmentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetAttachmentRequest>(create);
   static GetAttachmentRequest? _defaultInstance;
 
   /// Required. Resource name of the attachment, in the form
@@ -368,7 +436,10 @@ class GetAttachmentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -391,34 +462,44 @@ class UploadAttachmentRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UploadAttachmentRequest._() : super();
-  factory UploadAttachmentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UploadAttachmentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UploadAttachmentRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UploadAttachmentRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadAttachmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UploadAttachmentRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'filename')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UploadAttachmentRequest clone() => UploadAttachmentRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UploadAttachmentRequest copyWith(void Function(UploadAttachmentRequest) updates) => super.copyWith((message) => updates(message as UploadAttachmentRequest)) as UploadAttachmentRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UploadAttachmentRequest clone() =>
+      UploadAttachmentRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UploadAttachmentRequest copyWith(
+          void Function(UploadAttachmentRequest) updates) =>
+      super.copyWith((message) => updates(message as UploadAttachmentRequest))
+          as UploadAttachmentRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UploadAttachmentRequest create() => UploadAttachmentRequest._();
   UploadAttachmentRequest createEmptyInstance() => create();
-  static $pb.PbList<UploadAttachmentRequest> createRepeated() => $pb.PbList<UploadAttachmentRequest>();
+  static $pb.PbList<UploadAttachmentRequest> createRepeated() =>
+      $pb.PbList<UploadAttachmentRequest>();
   @$core.pragma('dart2js:noInline')
-  static UploadAttachmentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UploadAttachmentRequest>(create);
+  static UploadAttachmentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UploadAttachmentRequest>(create);
   static UploadAttachmentRequest? _defaultInstance;
 
   /// Required. Resource name of the Chat space in which the attachment is
@@ -426,7 +507,10 @@ class UploadAttachmentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -436,7 +520,10 @@ class UploadAttachmentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get filename => $_getSZ(1);
   @$pb.TagNumber(4)
-  set filename($core.String v) { $_setString(1, v); }
+  set filename($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilename() => $_has(1);
   @$pb.TagNumber(4)
@@ -455,40 +542,54 @@ class UploadAttachmentResponse extends $pb.GeneratedMessage {
     return $result;
   }
   UploadAttachmentResponse._() : super();
-  factory UploadAttachmentResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UploadAttachmentResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UploadAttachmentResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UploadAttachmentResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadAttachmentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<AttachmentDataRef>(1, _omitFieldNames ? '' : 'attachmentDataRef', subBuilder: AttachmentDataRef.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UploadAttachmentResponse',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<AttachmentDataRef>(1, _omitFieldNames ? '' : 'attachmentDataRef',
+        subBuilder: AttachmentDataRef.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UploadAttachmentResponse clone() => UploadAttachmentResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UploadAttachmentResponse copyWith(void Function(UploadAttachmentResponse) updates) => super.copyWith((message) => updates(message as UploadAttachmentResponse)) as UploadAttachmentResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UploadAttachmentResponse clone() =>
+      UploadAttachmentResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UploadAttachmentResponse copyWith(
+          void Function(UploadAttachmentResponse) updates) =>
+      super.copyWith((message) => updates(message as UploadAttachmentResponse))
+          as UploadAttachmentResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UploadAttachmentResponse create() => UploadAttachmentResponse._();
   UploadAttachmentResponse createEmptyInstance() => create();
-  static $pb.PbList<UploadAttachmentResponse> createRepeated() => $pb.PbList<UploadAttachmentResponse>();
+  static $pb.PbList<UploadAttachmentResponse> createRepeated() =>
+      $pb.PbList<UploadAttachmentResponse>();
   @$core.pragma('dart2js:noInline')
-  static UploadAttachmentResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UploadAttachmentResponse>(create);
+  static UploadAttachmentResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UploadAttachmentResponse>(create);
   static UploadAttachmentResponse? _defaultInstance;
 
   /// Reference to the uploaded attachment.
   @$pb.TagNumber(1)
   AttachmentDataRef get attachmentDataRef => $_getN(0);
   @$pb.TagNumber(1)
-  set attachmentDataRef(AttachmentDataRef v) { setField(1, v); }
+  set attachmentDataRef(AttachmentDataRef v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAttachmentDataRef() => $_has(0);
   @$pb.TagNumber(1)
@@ -497,6 +598,6 @@ class UploadAttachmentResponse extends $pb.GeneratedMessage {
   AttachmentDataRef ensureAttachmentDataRef() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

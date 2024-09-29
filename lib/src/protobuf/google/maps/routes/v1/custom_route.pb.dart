@@ -33,25 +33,33 @@ class CustomRoute extends $pb.GeneratedMessage {
     return $result;
   }
   CustomRoute._() : super();
-  factory CustomRoute.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomRoute.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomRoute.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomRoute.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomRoute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$486.Route>(11, _omitFieldNames ? '' : 'route', subBuilder: $486.Route.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomRoute',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routes.v1'),
+      createEmptyInstance: create)
+    ..aOM<$486.Route>(11, _omitFieldNames ? '' : 'route',
+        subBuilder: $486.Route.create)
     ..aOS(12, _omitFieldNames ? '' : 'token')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CustomRoute clone() => CustomRoute()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomRoute copyWith(void Function(CustomRoute) updates) => super.copyWith((message) => updates(message as CustomRoute)) as CustomRoute;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomRoute copyWith(void Function(CustomRoute) updates) =>
+      super.copyWith((message) => updates(message as CustomRoute))
+          as CustomRoute;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -60,14 +68,18 @@ class CustomRoute extends $pb.GeneratedMessage {
   CustomRoute createEmptyInstance() => create();
   static $pb.PbList<CustomRoute> createRepeated() => $pb.PbList<CustomRoute>();
   @$core.pragma('dart2js:noInline')
-  static CustomRoute getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomRoute>(create);
+  static CustomRoute getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomRoute>(create);
   static CustomRoute? _defaultInstance;
 
   /// The route considered 'best' for the input route objective.
   @$pb.TagNumber(11)
   $486.Route get route => $_getN(0);
   @$pb.TagNumber(11)
-  set route($486.Route v) { setField(11, v); }
+  set route($486.Route v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasRoute() => $_has(0);
   @$pb.TagNumber(11)
@@ -83,13 +95,16 @@ class CustomRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get token => $_getSZ(1);
   @$pb.TagNumber(12)
-  set token($core.String v) { $_setString(1, v); }
+  set token($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasToken() => $_has(1);
   @$pb.TagNumber(12)
   void clearToken() => clearField(12);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

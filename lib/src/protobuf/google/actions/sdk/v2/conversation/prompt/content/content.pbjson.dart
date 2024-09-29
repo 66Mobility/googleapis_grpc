@@ -17,10 +17,42 @@ import 'dart:typed_data' as $typed_data;
 const Content$json = {
   '1': 'Content',
   '2': [
-    {'1': 'card', '3': 1, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Card', '9': 0, '10': 'card'},
-    {'1': 'image', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Image', '9': 0, '10': 'image'},
-    {'1': 'table', '3': 3, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Table', '9': 0, '10': 'table'},
-    {'1': 'media', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Media', '9': 0, '10': 'media'},
+    {
+      '1': 'card',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Card',
+      '9': 0,
+      '10': 'card'
+    },
+    {
+      '1': 'image',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Image',
+      '9': 0,
+      '10': 'image'
+    },
+    {
+      '1': 'table',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Table',
+      '9': 0,
+      '10': 'table'
+    },
+    {
+      '1': 'media',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Media',
+      '9': 0,
+      '10': 'media'
+    },
     {
       '1': 'canvas',
       '3': 5,
@@ -31,8 +63,24 @@ const Content$json = {
       '9': 0,
       '10': 'canvas',
     },
-    {'1': 'collection', '3': 6, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.Collection', '9': 0, '10': 'collection'},
-    {'1': 'list', '3': 7, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.conversation.List', '9': 0, '10': 'list'},
+    {
+      '1': 'collection',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.Collection',
+      '9': 0,
+      '10': 'collection'
+    },
+    {
+      '1': 'list',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.conversation.List',
+      '9': 0,
+      '10': 'list'
+    },
   ],
   '8': [
     {'1': 'content'},
@@ -51,4 +99,3 @@ final $typed_data.Uint8List contentDescriptor = $convert.base64Decode(
     'sudjIuY29udmVyc2F0aW9uLkNvbGxlY3Rpb25IAFIKY29sbGVjdGlvbhI+CgRsaXN0GAcgASgL'
     'MiguZ29vZ2xlLmFjdGlvbnMuc2RrLnYyLmNvbnZlcnNhdGlvbi5MaXN0SABSBGxpc3RCCQoHY2'
     '9udGVudA==');
-

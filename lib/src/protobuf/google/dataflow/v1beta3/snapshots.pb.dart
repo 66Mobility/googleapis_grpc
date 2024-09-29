@@ -40,42 +40,57 @@ class PubsubSnapshotMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   PubsubSnapshotMetadata._() : super();
-  factory PubsubSnapshotMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PubsubSnapshotMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PubsubSnapshotMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PubsubSnapshotMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PubsubSnapshotMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PubsubSnapshotMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'topicName')
     ..aOS(2, _omitFieldNames ? '' : 'snapshotName')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PubsubSnapshotMetadata clone() => PubsubSnapshotMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PubsubSnapshotMetadata copyWith(void Function(PubsubSnapshotMetadata) updates) => super.copyWith((message) => updates(message as PubsubSnapshotMetadata)) as PubsubSnapshotMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PubsubSnapshotMetadata clone() =>
+      PubsubSnapshotMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PubsubSnapshotMetadata copyWith(
+          void Function(PubsubSnapshotMetadata) updates) =>
+      super.copyWith((message) => updates(message as PubsubSnapshotMetadata))
+          as PubsubSnapshotMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PubsubSnapshotMetadata create() => PubsubSnapshotMetadata._();
   PubsubSnapshotMetadata createEmptyInstance() => create();
-  static $pb.PbList<PubsubSnapshotMetadata> createRepeated() => $pb.PbList<PubsubSnapshotMetadata>();
+  static $pb.PbList<PubsubSnapshotMetadata> createRepeated() =>
+      $pb.PbList<PubsubSnapshotMetadata>();
   @$core.pragma('dart2js:noInline')
-  static PubsubSnapshotMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PubsubSnapshotMetadata>(create);
+  static PubsubSnapshotMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PubsubSnapshotMetadata>(create);
   static PubsubSnapshotMetadata? _defaultInstance;
 
   /// The name of the Pubsub topic.
   @$pb.TagNumber(1)
   $core.String get topicName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set topicName($core.String v) { $_setString(0, v); }
+  set topicName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTopicName() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,7 +100,10 @@ class PubsubSnapshotMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get snapshotName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set snapshotName($core.String v) { $_setString(1, v); }
+  set snapshotName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSnapshotName() => $_has(1);
   @$pb.TagNumber(2)
@@ -95,7 +113,10 @@ class PubsubSnapshotMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($302.Timestamp v) { setField(3, v); }
+  set expireTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -152,33 +173,46 @@ class Snapshot extends $pb.GeneratedMessage {
     return $result;
   }
   Snapshot._() : super();
-  factory Snapshot.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Snapshot.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Snapshot.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Snapshot.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Snapshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Snapshot',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOS(3, _omitFieldNames ? '' : 'sourceJobId')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'creationTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'ttl', subBuilder: $264.Duration.create)
-    ..e<SnapshotState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: SnapshotState.UNKNOWN_SNAPSHOT_STATE, valueOf: SnapshotState.valueOf, enumValues: SnapshotState.values)
-    ..pc<PubsubSnapshotMetadata>(7, _omitFieldNames ? '' : 'pubsubMetadata', $pb.PbFieldType.PM, subBuilder: PubsubSnapshotMetadata.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'creationTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'ttl',
+        subBuilder: $264.Duration.create)
+    ..e<SnapshotState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: SnapshotState.UNKNOWN_SNAPSHOT_STATE,
+        valueOf: SnapshotState.valueOf,
+        enumValues: SnapshotState.values)
+    ..pc<PubsubSnapshotMetadata>(
+        7, _omitFieldNames ? '' : 'pubsubMetadata', $pb.PbFieldType.PM,
+        subBuilder: PubsubSnapshotMetadata.create)
     ..aOS(8, _omitFieldNames ? '' : 'description')
     ..aInt64(9, _omitFieldNames ? '' : 'diskSizeBytes')
     ..aOS(10, _omitFieldNames ? '' : 'region')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Snapshot clone() => Snapshot()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Snapshot copyWith(void Function(Snapshot) updates) => super.copyWith((message) => updates(message as Snapshot)) as Snapshot;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Snapshot copyWith(void Function(Snapshot) updates) =>
+      super.copyWith((message) => updates(message as Snapshot)) as Snapshot;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -187,14 +221,18 @@ class Snapshot extends $pb.GeneratedMessage {
   Snapshot createEmptyInstance() => create();
   static $pb.PbList<Snapshot> createRepeated() => $pb.PbList<Snapshot>();
   @$core.pragma('dart2js:noInline')
-  static Snapshot getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Snapshot>(create);
+  static Snapshot getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Snapshot>(create);
   static Snapshot? _defaultInstance;
 
   /// The unique ID of this snapshot.
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -204,7 +242,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get projectId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set projectId($core.String v) { $_setString(1, v); }
+  set projectId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
@@ -214,7 +255,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceJobId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set sourceJobId($core.String v) { $_setString(2, v); }
+  set sourceJobId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSourceJobId() => $_has(2);
   @$pb.TagNumber(3)
@@ -224,7 +268,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get creationTime => $_getN(3);
   @$pb.TagNumber(4)
-  set creationTime($302.Timestamp v) { setField(4, v); }
+  set creationTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCreationTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -236,7 +283,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $264.Duration get ttl => $_getN(4);
   @$pb.TagNumber(5)
-  set ttl($264.Duration v) { setField(5, v); }
+  set ttl($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTtl() => $_has(4);
   @$pb.TagNumber(5)
@@ -248,7 +298,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   SnapshotState get state => $_getN(5);
   @$pb.TagNumber(6)
-  set state(SnapshotState v) { setField(6, v); }
+  set state(SnapshotState v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
@@ -262,7 +315,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get description => $_getSZ(7);
   @$pb.TagNumber(8)
-  set description($core.String v) { $_setString(7, v); }
+  set description($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDescription() => $_has(7);
   @$pb.TagNumber(8)
@@ -273,7 +329,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $fixnum.Int64 get diskSizeBytes => $_getI64(8);
   @$pb.TagNumber(9)
-  set diskSizeBytes($fixnum.Int64 v) { $_setInt64(8, v); }
+  set diskSizeBytes($fixnum.Int64 v) {
+    $_setInt64(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDiskSizeBytes() => $_has(8);
   @$pb.TagNumber(9)
@@ -283,7 +342,10 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get region => $_getSZ(9);
   @$pb.TagNumber(10)
-  set region($core.String v) { $_setString(9, v); }
+  set region($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasRegion() => $_has(9);
   @$pb.TagNumber(10)
@@ -310,42 +372,54 @@ class GetSnapshotRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetSnapshotRequest._() : super();
-  factory GetSnapshotRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetSnapshotRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetSnapshotRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetSnapshotRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSnapshotRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetSnapshotRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'snapshotId')
     ..aOS(3, _omitFieldNames ? '' : 'location')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetSnapshotRequest clone() => GetSnapshotRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetSnapshotRequest copyWith(void Function(GetSnapshotRequest) updates) => super.copyWith((message) => updates(message as GetSnapshotRequest)) as GetSnapshotRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetSnapshotRequest copyWith(void Function(GetSnapshotRequest) updates) =>
+      super.copyWith((message) => updates(message as GetSnapshotRequest))
+          as GetSnapshotRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetSnapshotRequest create() => GetSnapshotRequest._();
   GetSnapshotRequest createEmptyInstance() => create();
-  static $pb.PbList<GetSnapshotRequest> createRepeated() => $pb.PbList<GetSnapshotRequest>();
+  static $pb.PbList<GetSnapshotRequest> createRepeated() =>
+      $pb.PbList<GetSnapshotRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetSnapshotRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetSnapshotRequest>(create);
+  static GetSnapshotRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetSnapshotRequest>(create);
   static GetSnapshotRequest? _defaultInstance;
 
   /// The ID of the Cloud Platform project that the snapshot belongs to.
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -355,7 +429,10 @@ class GetSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get snapshotId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set snapshotId($core.String v) { $_setString(1, v); }
+  set snapshotId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSnapshotId() => $_has(1);
   @$pb.TagNumber(2)
@@ -365,7 +442,10 @@ class GetSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get location => $_getSZ(2);
   @$pb.TagNumber(3)
-  set location($core.String v) { $_setString(2, v); }
+  set location($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLocation() => $_has(2);
   @$pb.TagNumber(3)
@@ -392,42 +472,56 @@ class DeleteSnapshotRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteSnapshotRequest._() : super();
-  factory DeleteSnapshotRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteSnapshotRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteSnapshotRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteSnapshotRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteSnapshotRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteSnapshotRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'snapshotId')
     ..aOS(3, _omitFieldNames ? '' : 'location')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteSnapshotRequest clone() => DeleteSnapshotRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteSnapshotRequest copyWith(void Function(DeleteSnapshotRequest) updates) => super.copyWith((message) => updates(message as DeleteSnapshotRequest)) as DeleteSnapshotRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteSnapshotRequest clone() =>
+      DeleteSnapshotRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteSnapshotRequest copyWith(
+          void Function(DeleteSnapshotRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteSnapshotRequest))
+          as DeleteSnapshotRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteSnapshotRequest create() => DeleteSnapshotRequest._();
   DeleteSnapshotRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteSnapshotRequest> createRepeated() => $pb.PbList<DeleteSnapshotRequest>();
+  static $pb.PbList<DeleteSnapshotRequest> createRepeated() =>
+      $pb.PbList<DeleteSnapshotRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteSnapshotRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteSnapshotRequest>(create);
+  static DeleteSnapshotRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteSnapshotRequest>(create);
   static DeleteSnapshotRequest? _defaultInstance;
 
   /// The ID of the Cloud Platform project that the snapshot belongs to.
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -437,7 +531,10 @@ class DeleteSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get snapshotId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set snapshotId($core.String v) { $_setString(1, v); }
+  set snapshotId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSnapshotId() => $_has(1);
   @$pb.TagNumber(2)
@@ -447,7 +544,10 @@ class DeleteSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get location => $_getSZ(2);
   @$pb.TagNumber(3)
-  set location($core.String v) { $_setString(2, v); }
+  set location($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLocation() => $_has(2);
   @$pb.TagNumber(3)
@@ -458,32 +558,43 @@ class DeleteSnapshotRequest extends $pb.GeneratedMessage {
 class DeleteSnapshotResponse extends $pb.GeneratedMessage {
   factory DeleteSnapshotResponse() => create();
   DeleteSnapshotResponse._() : super();
-  factory DeleteSnapshotResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteSnapshotResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteSnapshotResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteSnapshotResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteSnapshotResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteSnapshotResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteSnapshotResponse clone() => DeleteSnapshotResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteSnapshotResponse copyWith(void Function(DeleteSnapshotResponse) updates) => super.copyWith((message) => updates(message as DeleteSnapshotResponse)) as DeleteSnapshotResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteSnapshotResponse clone() =>
+      DeleteSnapshotResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteSnapshotResponse copyWith(
+          void Function(DeleteSnapshotResponse) updates) =>
+      super.copyWith((message) => updates(message as DeleteSnapshotResponse))
+          as DeleteSnapshotResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteSnapshotResponse create() => DeleteSnapshotResponse._();
   DeleteSnapshotResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteSnapshotResponse> createRepeated() => $pb.PbList<DeleteSnapshotResponse>();
+  static $pb.PbList<DeleteSnapshotResponse> createRepeated() =>
+      $pb.PbList<DeleteSnapshotResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteSnapshotResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteSnapshotResponse>(create);
+  static DeleteSnapshotResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteSnapshotResponse>(create);
   static DeleteSnapshotResponse? _defaultInstance;
 }
 
@@ -507,42 +618,55 @@ class ListSnapshotsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListSnapshotsRequest._() : super();
-  factory ListSnapshotsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListSnapshotsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListSnapshotsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListSnapshotsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSnapshotsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListSnapshotsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'location')
     ..aOS(3, _omitFieldNames ? '' : 'jobId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListSnapshotsRequest clone() => ListSnapshotsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListSnapshotsRequest copyWith(void Function(ListSnapshotsRequest) updates) => super.copyWith((message) => updates(message as ListSnapshotsRequest)) as ListSnapshotsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListSnapshotsRequest clone() =>
+      ListSnapshotsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListSnapshotsRequest copyWith(void Function(ListSnapshotsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListSnapshotsRequest))
+          as ListSnapshotsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListSnapshotsRequest create() => ListSnapshotsRequest._();
   ListSnapshotsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListSnapshotsRequest> createRepeated() => $pb.PbList<ListSnapshotsRequest>();
+  static $pb.PbList<ListSnapshotsRequest> createRepeated() =>
+      $pb.PbList<ListSnapshotsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListSnapshotsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSnapshotsRequest>(create);
+  static ListSnapshotsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListSnapshotsRequest>(create);
   static ListSnapshotsRequest? _defaultInstance;
 
   /// The project ID to list snapshots for.
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -552,7 +676,10 @@ class ListSnapshotsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get location => $_getSZ(1);
   @$pb.TagNumber(2)
-  set location($core.String v) { $_setString(1, v); }
+  set location($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLocation() => $_has(1);
   @$pb.TagNumber(2)
@@ -562,7 +689,10 @@ class ListSnapshotsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get jobId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set jobId($core.String v) { $_setString(2, v); }
+  set jobId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasJobId() => $_has(2);
   @$pb.TagNumber(3)
@@ -581,33 +711,45 @@ class ListSnapshotsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListSnapshotsResponse._() : super();
-  factory ListSnapshotsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListSnapshotsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListSnapshotsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListSnapshotsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSnapshotsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
-    ..pc<Snapshot>(1, _omitFieldNames ? '' : 'snapshots', $pb.PbFieldType.PM, subBuilder: Snapshot.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListSnapshotsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
+      createEmptyInstance: create)
+    ..pc<Snapshot>(1, _omitFieldNames ? '' : 'snapshots', $pb.PbFieldType.PM,
+        subBuilder: Snapshot.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListSnapshotsResponse clone() => ListSnapshotsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListSnapshotsResponse copyWith(void Function(ListSnapshotsResponse) updates) => super.copyWith((message) => updates(message as ListSnapshotsResponse)) as ListSnapshotsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListSnapshotsResponse clone() =>
+      ListSnapshotsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListSnapshotsResponse copyWith(
+          void Function(ListSnapshotsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListSnapshotsResponse))
+          as ListSnapshotsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListSnapshotsResponse create() => ListSnapshotsResponse._();
   ListSnapshotsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListSnapshotsResponse> createRepeated() => $pb.PbList<ListSnapshotsResponse>();
+  static $pb.PbList<ListSnapshotsResponse> createRepeated() =>
+      $pb.PbList<ListSnapshotsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListSnapshotsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSnapshotsResponse>(create);
+  static ListSnapshotsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListSnapshotsResponse>(create);
   static ListSnapshotsResponse? _defaultInstance;
 
   /// Returned snapshots.
@@ -615,6 +757,6 @@ class ListSnapshotsResponse extends $pb.GeneratedMessage {
   $core.List<Snapshot> get snapshots => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

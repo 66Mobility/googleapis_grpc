@@ -17,8 +17,23 @@ import 'dart:typed_data' as $typed_data;
 const Weight$json = {
   '1': 'Weight',
   '2': [
-    {'1': 'amount_micros', '3': 1, '4': 1, '5': 3, '9': 0, '10': 'amountMicros', '17': true},
-    {'1': 'unit', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.type.Weight.WeightUnit', '10': 'unit'},
+    {
+      '1': 'amount_micros',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'amountMicros',
+      '17': true
+    },
+    {
+      '1': 'unit',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.type.Weight.WeightUnit',
+      '10': 'unit'
+    },
   ],
   '4': [Weight_WeightUnit$json],
   '8': [
@@ -47,8 +62,24 @@ final $typed_data.Uint8List weightDescriptor = $convert.base64Decode(
 const Price$json = {
   '1': 'Price',
   '2': [
-    {'1': 'amount_micros', '3': 1, '4': 1, '5': 3, '9': 0, '10': 'amountMicros', '17': true},
-    {'1': 'currency_code', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'currencyCode', '17': true},
+    {
+      '1': 'amount_micros',
+      '3': 1,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'amountMicros',
+      '17': true
+    },
+    {
+      '1': 'currency_code',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'currencyCode',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_amount_micros'},
@@ -68,7 +99,14 @@ const CustomAttribute$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'name', '17': true},
     {'1': 'value', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'value', '17': true},
-    {'1': 'group_values', '3': 3, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '10': 'groupValues'},
+    {
+      '1': 'group_values',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '10': 'groupValues'
+    },
   ],
   '8': [
     {'1': '_name'},
@@ -172,4 +210,3 @@ const Channel_ChannelEnum$json = {
 final $typed_data.Uint8List channelDescriptor = $convert.base64Decode(
     'CgdDaGFubmVsIkIKC0NoYW5uZWxFbnVtEhwKGENIQU5ORUxfRU5VTV9VTlNQRUNJRklFRBAAEg'
     'oKBk9OTElORRABEgkKBUxPQ0FMEAI=');
-

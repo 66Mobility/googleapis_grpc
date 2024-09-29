@@ -29,33 +29,42 @@ class Snooze_Criteria extends $pb.GeneratedMessage {
     return $result;
   }
   Snooze_Criteria._() : super();
-  factory Snooze_Criteria.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Snooze_Criteria.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Snooze_Criteria.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Snooze_Criteria.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Snooze.Criteria', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Snooze.Criteria',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'policies')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Snooze_Criteria clone() => Snooze_Criteria()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Snooze_Criteria copyWith(void Function(Snooze_Criteria) updates) => super.copyWith((message) => updates(message as Snooze_Criteria)) as Snooze_Criteria;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Snooze_Criteria copyWith(void Function(Snooze_Criteria) updates) =>
+      super.copyWith((message) => updates(message as Snooze_Criteria))
+          as Snooze_Criteria;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Snooze_Criteria create() => Snooze_Criteria._();
   Snooze_Criteria createEmptyInstance() => create();
-  static $pb.PbList<Snooze_Criteria> createRepeated() => $pb.PbList<Snooze_Criteria>();
+  static $pb.PbList<Snooze_Criteria> createRepeated() =>
+      $pb.PbList<Snooze_Criteria>();
   @$core.pragma('dart2js:noInline')
-  static Snooze_Criteria getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Snooze_Criteria>(create);
+  static Snooze_Criteria getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Snooze_Criteria>(create);
   static Snooze_Criteria? _defaultInstance;
 
   ///  The specific `AlertPolicy` names for the alert that should be snoozed.
@@ -96,27 +105,35 @@ class Snooze extends $pb.GeneratedMessage {
     return $result;
   }
   Snooze._() : super();
-  factory Snooze.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Snooze.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Snooze.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Snooze.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Snooze', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Snooze',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<Snooze_Criteria>(3, _omitFieldNames ? '' : 'criteria', subBuilder: Snooze_Criteria.create)
-    ..aOM<$531.TimeInterval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $531.TimeInterval.create)
+    ..aOM<Snooze_Criteria>(3, _omitFieldNames ? '' : 'criteria',
+        subBuilder: Snooze_Criteria.create)
+    ..aOM<$531.TimeInterval>(4, _omitFieldNames ? '' : 'interval',
+        subBuilder: $531.TimeInterval.create)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Snooze clone() => Snooze()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Snooze copyWith(void Function(Snooze) updates) => super.copyWith((message) => updates(message as Snooze)) as Snooze;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Snooze copyWith(void Function(Snooze) updates) =>
+      super.copyWith((message) => updates(message as Snooze)) as Snooze;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -125,7 +142,8 @@ class Snooze extends $pb.GeneratedMessage {
   Snooze createEmptyInstance() => create();
   static $pb.PbList<Snooze> createRepeated() => $pb.PbList<Snooze>();
   @$core.pragma('dart2js:noInline')
-  static Snooze getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Snooze>(create);
+  static Snooze getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Snooze>(create);
   static Snooze? _defaultInstance;
 
   ///  Required. The name of the `Snooze`. The format is:
@@ -136,7 +154,10 @@ class Snooze extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -147,7 +168,10 @@ class Snooze extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Snooze_Criteria get criteria => $_getN(1);
   @$pb.TagNumber(3)
-  set criteria(Snooze_Criteria v) { setField(3, v); }
+  set criteria(Snooze_Criteria v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCriteria() => $_has(1);
   @$pb.TagNumber(3)
@@ -163,7 +187,10 @@ class Snooze extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $531.TimeInterval get interval => $_getN(2);
   @$pb.TagNumber(4)
-  set interval($531.TimeInterval v) { setField(4, v); }
+  set interval($531.TimeInterval v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasInterval() => $_has(2);
   @$pb.TagNumber(4)
@@ -176,13 +203,16 @@ class Snooze extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(5)
-  set displayName($core.String v) { $_setString(3, v); }
+  set displayName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(5)
   void clearDisplayName() => clearField(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

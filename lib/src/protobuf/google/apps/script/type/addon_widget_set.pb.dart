@@ -29,33 +29,46 @@ class AddOnWidgetSet extends $pb.GeneratedMessage {
     return $result;
   }
   AddOnWidgetSet._() : super();
-  factory AddOnWidgetSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddOnWidgetSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddOnWidgetSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AddOnWidgetSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AddOnWidgetSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type'), createEmptyInstance: create)
-    ..pc<AddOnWidgetSet_WidgetType>(1, _omitFieldNames ? '' : 'usedWidgets', $pb.PbFieldType.KE, valueOf: AddOnWidgetSet_WidgetType.valueOf, enumValues: AddOnWidgetSet_WidgetType.values, defaultEnumValue: AddOnWidgetSet_WidgetType.WIDGET_TYPE_UNSPECIFIED)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AddOnWidgetSet',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type'),
+      createEmptyInstance: create)
+    ..pc<AddOnWidgetSet_WidgetType>(
+        1, _omitFieldNames ? '' : 'usedWidgets', $pb.PbFieldType.KE,
+        valueOf: AddOnWidgetSet_WidgetType.valueOf,
+        enumValues: AddOnWidgetSet_WidgetType.values,
+        defaultEnumValue: AddOnWidgetSet_WidgetType.WIDGET_TYPE_UNSPECIFIED)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AddOnWidgetSet clone() => AddOnWidgetSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AddOnWidgetSet copyWith(void Function(AddOnWidgetSet) updates) => super.copyWith((message) => updates(message as AddOnWidgetSet)) as AddOnWidgetSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AddOnWidgetSet copyWith(void Function(AddOnWidgetSet) updates) =>
+      super.copyWith((message) => updates(message as AddOnWidgetSet))
+          as AddOnWidgetSet;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AddOnWidgetSet create() => AddOnWidgetSet._();
   AddOnWidgetSet createEmptyInstance() => create();
-  static $pb.PbList<AddOnWidgetSet> createRepeated() => $pb.PbList<AddOnWidgetSet>();
+  static $pb.PbList<AddOnWidgetSet> createRepeated() =>
+      $pb.PbList<AddOnWidgetSet>();
   @$core.pragma('dart2js:noInline')
-  static AddOnWidgetSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddOnWidgetSet>(create);
+  static AddOnWidgetSet getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AddOnWidgetSet>(create);
   static AddOnWidgetSet? _defaultInstance;
 
   /// The list of widgets used in an add-on.
@@ -63,6 +76,6 @@ class AddOnWidgetSet extends $pb.GeneratedMessage {
   $core.List<AddOnWidgetSet_WidgetType> get usedWidgets => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

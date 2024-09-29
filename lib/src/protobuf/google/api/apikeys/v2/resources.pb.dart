@@ -63,33 +63,47 @@ class Key extends $pb.GeneratedMessage {
     return $result;
   }
   Key._() : super();
-  factory Key.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Key.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Key.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Key.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Key', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Key',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'keyString')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'uid')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $302.Timestamp.create)
-    ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'annotations', entryClassName: 'Key.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.apikeys.v2'))
-    ..aOM<Restrictions>(9, _omitFieldNames ? '' : 'restrictions', subBuilder: Restrictions.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $302.Timestamp.create)
+    ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'annotations',
+        entryClassName: 'Key.AnnotationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.api.apikeys.v2'))
+    ..aOM<Restrictions>(9, _omitFieldNames ? '' : 'restrictions',
+        subBuilder: Restrictions.create)
     ..aOS(11, _omitFieldNames ? '' : 'etag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Key clone() => Key()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Key copyWith(void Function(Key) updates) => super.copyWith((message) => updates(message as Key)) as Key;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Key copyWith(void Function(Key) updates) =>
+      super.copyWith((message) => updates(message as Key)) as Key;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -98,7 +112,8 @@ class Key extends $pb.GeneratedMessage {
   Key createEmptyInstance() => create();
   static $pb.PbList<Key> createRepeated() => $pb.PbList<Key>();
   @$core.pragma('dart2js:noInline')
-  static Key getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Key>(create);
+  static Key getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Key>(create);
   static Key? _defaultInstance;
 
   ///  Output only. The resource name of the key.
@@ -112,7 +127,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -123,7 +141,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -134,7 +155,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get keyString => $_getSZ(2);
   @$pb.TagNumber(3)
-  set keyString($core.String v) { $_setString(2, v); }
+  set keyString($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasKeyString() => $_has(2);
   @$pb.TagNumber(3)
@@ -145,7 +169,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -157,7 +184,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get uid => $_getSZ(4);
   @$pb.TagNumber(5)
-  set uid($core.String v) { $_setString(4, v); }
+  set uid($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUid() => $_has(4);
   @$pb.TagNumber(5)
@@ -168,7 +198,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($302.Timestamp v) { setField(6, v); }
+  set updateTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
@@ -181,7 +214,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(7)
-  set deleteTime($302.Timestamp v) { setField(7, v); }
+  set deleteTime($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(7)
@@ -199,7 +235,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Restrictions get restrictions => $_getN(8);
   @$pb.TagNumber(9)
-  set restrictions(Restrictions v) { setField(9, v); }
+  set restrictions(Restrictions v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasRestrictions() => $_has(8);
   @$pb.TagNumber(9)
@@ -214,7 +253,10 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get etag => $_getSZ(9);
   @$pb.TagNumber(11)
-  set etag($core.String v) { $_setString(9, v); }
+  set etag($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasEtag() => $_has(9);
   @$pb.TagNumber(11)
@@ -222,10 +264,10 @@ class Key extends $pb.GeneratedMessage {
 }
 
 enum Restrictions_ClientRestrictions {
-  browserKeyRestrictions, 
-  serverKeyRestrictions, 
-  androidKeyRestrictions, 
-  iosKeyRestrictions, 
+  browserKeyRestrictions,
+  serverKeyRestrictions,
+  androidKeyRestrictions,
+  iosKeyRestrictions,
   notSet
 }
 
@@ -257,55 +299,77 @@ class Restrictions extends $pb.GeneratedMessage {
     return $result;
   }
   Restrictions._() : super();
-  factory Restrictions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Restrictions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Restrictions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Restrictions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Restrictions_ClientRestrictions> _Restrictions_ClientRestrictionsByTag = {
-    1 : Restrictions_ClientRestrictions.browserKeyRestrictions,
-    2 : Restrictions_ClientRestrictions.serverKeyRestrictions,
-    3 : Restrictions_ClientRestrictions.androidKeyRestrictions,
-    4 : Restrictions_ClientRestrictions.iosKeyRestrictions,
-    0 : Restrictions_ClientRestrictions.notSet
+  static const $core.Map<$core.int, Restrictions_ClientRestrictions>
+      _Restrictions_ClientRestrictionsByTag = {
+    1: Restrictions_ClientRestrictions.browserKeyRestrictions,
+    2: Restrictions_ClientRestrictions.serverKeyRestrictions,
+    3: Restrictions_ClientRestrictions.androidKeyRestrictions,
+    4: Restrictions_ClientRestrictions.iosKeyRestrictions,
+    0: Restrictions_ClientRestrictions.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Restrictions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Restrictions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4])
-    ..aOM<BrowserKeyRestrictions>(1, _omitFieldNames ? '' : 'browserKeyRestrictions', subBuilder: BrowserKeyRestrictions.create)
-    ..aOM<ServerKeyRestrictions>(2, _omitFieldNames ? '' : 'serverKeyRestrictions', subBuilder: ServerKeyRestrictions.create)
-    ..aOM<AndroidKeyRestrictions>(3, _omitFieldNames ? '' : 'androidKeyRestrictions', subBuilder: AndroidKeyRestrictions.create)
-    ..aOM<IosKeyRestrictions>(4, _omitFieldNames ? '' : 'iosKeyRestrictions', subBuilder: IosKeyRestrictions.create)
-    ..pc<ApiTarget>(5, _omitFieldNames ? '' : 'apiTargets', $pb.PbFieldType.PM, subBuilder: ApiTarget.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<BrowserKeyRestrictions>(
+        1, _omitFieldNames ? '' : 'browserKeyRestrictions',
+        subBuilder: BrowserKeyRestrictions.create)
+    ..aOM<ServerKeyRestrictions>(
+        2, _omitFieldNames ? '' : 'serverKeyRestrictions',
+        subBuilder: ServerKeyRestrictions.create)
+    ..aOM<AndroidKeyRestrictions>(
+        3, _omitFieldNames ? '' : 'androidKeyRestrictions',
+        subBuilder: AndroidKeyRestrictions.create)
+    ..aOM<IosKeyRestrictions>(4, _omitFieldNames ? '' : 'iosKeyRestrictions',
+        subBuilder: IosKeyRestrictions.create)
+    ..pc<ApiTarget>(5, _omitFieldNames ? '' : 'apiTargets', $pb.PbFieldType.PM,
+        subBuilder: ApiTarget.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Restrictions clone() => Restrictions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Restrictions copyWith(void Function(Restrictions) updates) => super.copyWith((message) => updates(message as Restrictions)) as Restrictions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Restrictions copyWith(void Function(Restrictions) updates) =>
+      super.copyWith((message) => updates(message as Restrictions))
+          as Restrictions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Restrictions create() => Restrictions._();
   Restrictions createEmptyInstance() => create();
-  static $pb.PbList<Restrictions> createRepeated() => $pb.PbList<Restrictions>();
+  static $pb.PbList<Restrictions> createRepeated() =>
+      $pb.PbList<Restrictions>();
   @$core.pragma('dart2js:noInline')
-  static Restrictions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Restrictions>(create);
+  static Restrictions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Restrictions>(create);
   static Restrictions? _defaultInstance;
 
-  Restrictions_ClientRestrictions whichClientRestrictions() => _Restrictions_ClientRestrictionsByTag[$_whichOneof(0)]!;
+  Restrictions_ClientRestrictions whichClientRestrictions() =>
+      _Restrictions_ClientRestrictionsByTag[$_whichOneof(0)]!;
   void clearClientRestrictions() => clearField($_whichOneof(0));
 
   /// The HTTP referrers (websites) that are allowed to use the key.
   @$pb.TagNumber(1)
   BrowserKeyRestrictions get browserKeyRestrictions => $_getN(0);
   @$pb.TagNumber(1)
-  set browserKeyRestrictions(BrowserKeyRestrictions v) { setField(1, v); }
+  set browserKeyRestrictions(BrowserKeyRestrictions v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBrowserKeyRestrictions() => $_has(0);
   @$pb.TagNumber(1)
@@ -317,7 +381,10 @@ class Restrictions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ServerKeyRestrictions get serverKeyRestrictions => $_getN(1);
   @$pb.TagNumber(2)
-  set serverKeyRestrictions(ServerKeyRestrictions v) { setField(2, v); }
+  set serverKeyRestrictions(ServerKeyRestrictions v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasServerKeyRestrictions() => $_has(1);
   @$pb.TagNumber(2)
@@ -329,7 +396,10 @@ class Restrictions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AndroidKeyRestrictions get androidKeyRestrictions => $_getN(2);
   @$pb.TagNumber(3)
-  set androidKeyRestrictions(AndroidKeyRestrictions v) { setField(3, v); }
+  set androidKeyRestrictions(AndroidKeyRestrictions v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAndroidKeyRestrictions() => $_has(2);
   @$pb.TagNumber(3)
@@ -341,7 +411,10 @@ class Restrictions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   IosKeyRestrictions get iosKeyRestrictions => $_getN(3);
   @$pb.TagNumber(4)
-  set iosKeyRestrictions(IosKeyRestrictions v) { setField(4, v); }
+  set iosKeyRestrictions(IosKeyRestrictions v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasIosKeyRestrictions() => $_has(3);
   @$pb.TagNumber(4)
@@ -369,33 +442,44 @@ class BrowserKeyRestrictions extends $pb.GeneratedMessage {
     return $result;
   }
   BrowserKeyRestrictions._() : super();
-  factory BrowserKeyRestrictions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BrowserKeyRestrictions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BrowserKeyRestrictions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BrowserKeyRestrictions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BrowserKeyRestrictions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BrowserKeyRestrictions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'allowedReferrers')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BrowserKeyRestrictions clone() => BrowserKeyRestrictions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BrowserKeyRestrictions copyWith(void Function(BrowserKeyRestrictions) updates) => super.copyWith((message) => updates(message as BrowserKeyRestrictions)) as BrowserKeyRestrictions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BrowserKeyRestrictions clone() =>
+      BrowserKeyRestrictions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BrowserKeyRestrictions copyWith(
+          void Function(BrowserKeyRestrictions) updates) =>
+      super.copyWith((message) => updates(message as BrowserKeyRestrictions))
+          as BrowserKeyRestrictions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BrowserKeyRestrictions create() => BrowserKeyRestrictions._();
   BrowserKeyRestrictions createEmptyInstance() => create();
-  static $pb.PbList<BrowserKeyRestrictions> createRepeated() => $pb.PbList<BrowserKeyRestrictions>();
+  static $pb.PbList<BrowserKeyRestrictions> createRepeated() =>
+      $pb.PbList<BrowserKeyRestrictions>();
   @$core.pragma('dart2js:noInline')
-  static BrowserKeyRestrictions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BrowserKeyRestrictions>(create);
+  static BrowserKeyRestrictions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BrowserKeyRestrictions>(create);
   static BrowserKeyRestrictions? _defaultInstance;
 
   /// A list of regular expressions for the referrer URLs that are allowed
@@ -416,33 +500,44 @@ class ServerKeyRestrictions extends $pb.GeneratedMessage {
     return $result;
   }
   ServerKeyRestrictions._() : super();
-  factory ServerKeyRestrictions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServerKeyRestrictions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ServerKeyRestrictions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ServerKeyRestrictions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServerKeyRestrictions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ServerKeyRestrictions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'allowedIps')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ServerKeyRestrictions clone() => ServerKeyRestrictions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServerKeyRestrictions copyWith(void Function(ServerKeyRestrictions) updates) => super.copyWith((message) => updates(message as ServerKeyRestrictions)) as ServerKeyRestrictions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ServerKeyRestrictions clone() =>
+      ServerKeyRestrictions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ServerKeyRestrictions copyWith(
+          void Function(ServerKeyRestrictions) updates) =>
+      super.copyWith((message) => updates(message as ServerKeyRestrictions))
+          as ServerKeyRestrictions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServerKeyRestrictions create() => ServerKeyRestrictions._();
   ServerKeyRestrictions createEmptyInstance() => create();
-  static $pb.PbList<ServerKeyRestrictions> createRepeated() => $pb.PbList<ServerKeyRestrictions>();
+  static $pb.PbList<ServerKeyRestrictions> createRepeated() =>
+      $pb.PbList<ServerKeyRestrictions>();
   @$core.pragma('dart2js:noInline')
-  static ServerKeyRestrictions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServerKeyRestrictions>(create);
+  static ServerKeyRestrictions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ServerKeyRestrictions>(create);
   static ServerKeyRestrictions? _defaultInstance;
 
   /// A list of the caller IP addresses that are allowed to make API calls
@@ -463,33 +558,46 @@ class AndroidKeyRestrictions extends $pb.GeneratedMessage {
     return $result;
   }
   AndroidKeyRestrictions._() : super();
-  factory AndroidKeyRestrictions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AndroidKeyRestrictions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AndroidKeyRestrictions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AndroidKeyRestrictions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AndroidKeyRestrictions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
-    ..pc<AndroidApplication>(1, _omitFieldNames ? '' : 'allowedApplications', $pb.PbFieldType.PM, subBuilder: AndroidApplication.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AndroidKeyRestrictions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
+    ..pc<AndroidApplication>(
+        1, _omitFieldNames ? '' : 'allowedApplications', $pb.PbFieldType.PM,
+        subBuilder: AndroidApplication.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AndroidKeyRestrictions clone() => AndroidKeyRestrictions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AndroidKeyRestrictions copyWith(void Function(AndroidKeyRestrictions) updates) => super.copyWith((message) => updates(message as AndroidKeyRestrictions)) as AndroidKeyRestrictions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AndroidKeyRestrictions clone() =>
+      AndroidKeyRestrictions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AndroidKeyRestrictions copyWith(
+          void Function(AndroidKeyRestrictions) updates) =>
+      super.copyWith((message) => updates(message as AndroidKeyRestrictions))
+          as AndroidKeyRestrictions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AndroidKeyRestrictions create() => AndroidKeyRestrictions._();
   AndroidKeyRestrictions createEmptyInstance() => create();
-  static $pb.PbList<AndroidKeyRestrictions> createRepeated() => $pb.PbList<AndroidKeyRestrictions>();
+  static $pb.PbList<AndroidKeyRestrictions> createRepeated() =>
+      $pb.PbList<AndroidKeyRestrictions>();
   @$core.pragma('dart2js:noInline')
-  static AndroidKeyRestrictions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AndroidKeyRestrictions>(create);
+  static AndroidKeyRestrictions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AndroidKeyRestrictions>(create);
   static AndroidKeyRestrictions? _defaultInstance;
 
   /// A list of Android applications that are allowed to make API calls with
@@ -514,34 +622,43 @@ class AndroidApplication extends $pb.GeneratedMessage {
     return $result;
   }
   AndroidApplication._() : super();
-  factory AndroidApplication.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AndroidApplication.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AndroidApplication.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AndroidApplication.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AndroidApplication', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AndroidApplication',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sha1Fingerprint')
     ..aOS(2, _omitFieldNames ? '' : 'packageName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AndroidApplication clone() => AndroidApplication()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AndroidApplication copyWith(void Function(AndroidApplication) updates) => super.copyWith((message) => updates(message as AndroidApplication)) as AndroidApplication;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AndroidApplication copyWith(void Function(AndroidApplication) updates) =>
+      super.copyWith((message) => updates(message as AndroidApplication))
+          as AndroidApplication;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AndroidApplication create() => AndroidApplication._();
   AndroidApplication createEmptyInstance() => create();
-  static $pb.PbList<AndroidApplication> createRepeated() => $pb.PbList<AndroidApplication>();
+  static $pb.PbList<AndroidApplication> createRepeated() =>
+      $pb.PbList<AndroidApplication>();
   @$core.pragma('dart2js:noInline')
-  static AndroidApplication getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AndroidApplication>(create);
+  static AndroidApplication getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AndroidApplication>(create);
   static AndroidApplication? _defaultInstance;
 
   /// The SHA1 fingerprint of the application. For example, both sha1 formats are
@@ -551,7 +668,10 @@ class AndroidApplication extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get sha1Fingerprint => $_getSZ(0);
   @$pb.TagNumber(1)
-  set sha1Fingerprint($core.String v) { $_setString(0, v); }
+  set sha1Fingerprint($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSha1Fingerprint() => $_has(0);
   @$pb.TagNumber(1)
@@ -561,7 +681,10 @@ class AndroidApplication extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get packageName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set packageName($core.String v) { $_setString(1, v); }
+  set packageName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPackageName() => $_has(1);
   @$pb.TagNumber(2)
@@ -580,33 +703,42 @@ class IosKeyRestrictions extends $pb.GeneratedMessage {
     return $result;
   }
   IosKeyRestrictions._() : super();
-  factory IosKeyRestrictions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory IosKeyRestrictions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory IosKeyRestrictions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IosKeyRestrictions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IosKeyRestrictions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IosKeyRestrictions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'allowedBundleIds')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   IosKeyRestrictions clone() => IosKeyRestrictions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  IosKeyRestrictions copyWith(void Function(IosKeyRestrictions) updates) => super.copyWith((message) => updates(message as IosKeyRestrictions)) as IosKeyRestrictions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IosKeyRestrictions copyWith(void Function(IosKeyRestrictions) updates) =>
+      super.copyWith((message) => updates(message as IosKeyRestrictions))
+          as IosKeyRestrictions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static IosKeyRestrictions create() => IosKeyRestrictions._();
   IosKeyRestrictions createEmptyInstance() => create();
-  static $pb.PbList<IosKeyRestrictions> createRepeated() => $pb.PbList<IosKeyRestrictions>();
+  static $pb.PbList<IosKeyRestrictions> createRepeated() =>
+      $pb.PbList<IosKeyRestrictions>();
   @$core.pragma('dart2js:noInline')
-  static IosKeyRestrictions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IosKeyRestrictions>(create);
+  static IosKeyRestrictions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IosKeyRestrictions>(create);
   static IosKeyRestrictions? _defaultInstance;
 
   /// A list of bundle IDs that are allowed when making API calls with this key.
@@ -631,25 +763,31 @@ class ApiTarget extends $pb.GeneratedMessage {
     return $result;
   }
   ApiTarget._() : super();
-  factory ApiTarget.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApiTarget.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApiTarget.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApiTarget.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApiTarget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApiTarget',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.api.apikeys.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'service')
     ..pPS(2, _omitFieldNames ? '' : 'methods')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ApiTarget clone() => ApiTarget()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApiTarget copyWith(void Function(ApiTarget) updates) => super.copyWith((message) => updates(message as ApiTarget)) as ApiTarget;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApiTarget copyWith(void Function(ApiTarget) updates) =>
+      super.copyWith((message) => updates(message as ApiTarget)) as ApiTarget;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -658,7 +796,8 @@ class ApiTarget extends $pb.GeneratedMessage {
   ApiTarget createEmptyInstance() => create();
   static $pb.PbList<ApiTarget> createRepeated() => $pb.PbList<ApiTarget>();
   @$core.pragma('dart2js:noInline')
-  static ApiTarget getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiTarget>(create);
+  static ApiTarget getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiTarget>(create);
   static ApiTarget? _defaultInstance;
 
   /// The service for this restriction. It should be the canonical
@@ -668,7 +807,10 @@ class ApiTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get service => $_getSZ(0);
   @$pb.TagNumber(1)
-  set service($core.String v) { $_setString(0, v); }
+  set service($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
@@ -686,6 +828,6 @@ class ApiTarget extends $pb.GeneratedMessage {
   $core.List<$core.String> get methods => $_getList(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

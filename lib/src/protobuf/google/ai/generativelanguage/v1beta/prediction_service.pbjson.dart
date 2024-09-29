@@ -18,8 +18,24 @@ const PredictRequest$json = {
   '1': 'PredictRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'instances', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.Value', '8': {}, '10': 'instances'},
-    {'1': 'parameters', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Value', '8': {}, '10': 'parameters'},
+    {
+      '1': 'instances',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '8': {},
+      '10': 'instances'
+    },
+    {
+      '1': 'parameters',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '8': {},
+      '10': 'parameters'
+    },
   ],
 };
 
@@ -34,7 +50,14 @@ final $typed_data.Uint8List predictRequestDescriptor = $convert.base64Decode(
 const PredictResponse$json = {
   '1': 'PredictResponse',
   '2': [
-    {'1': 'predictions', '3': 1, '4': 3, '5': 11, '6': '.google.protobuf.Value', '10': 'predictions'},
+    {
+      '1': 'predictions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'predictions'
+    },
   ],
 };
 
@@ -42,4 +65,3 @@ const PredictResponse$json = {
 final $typed_data.Uint8List predictResponseDescriptor = $convert.base64Decode(
     'Cg9QcmVkaWN0UmVzcG9uc2USOAoLcHJlZGljdGlvbnMYASADKAsyFi5nb29nbGUucHJvdG9idW'
     'YuVmFsdWVSC3ByZWRpY3Rpb25z');
-

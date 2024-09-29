@@ -19,14 +19,69 @@ const Promotion$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'promotion_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'promotionId'},
-    {'1': 'content_language', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'contentLanguage'},
-    {'1': 'target_country', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'targetCountry'},
-    {'1': 'redemption_channel', '3': 5, '4': 3, '5': 14, '6': '.google.shopping.merchant.promotions.v1beta.RedemptionChannel', '8': {}, '10': 'redemptionChannel'},
+    {
+      '1': 'content_language',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'contentLanguage'
+    },
+    {
+      '1': 'target_country',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'targetCountry'
+    },
+    {
+      '1': 'redemption_channel',
+      '3': 5,
+      '4': 3,
+      '5': 14,
+      '6': '.google.shopping.merchant.promotions.v1beta.RedemptionChannel',
+      '8': {},
+      '10': 'redemptionChannel'
+    },
     {'1': 'data_source', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'dataSource'},
-    {'1': 'attributes', '3': 7, '4': 1, '5': 11, '6': '.google.shopping.merchant.promotions.v1beta.Attributes', '8': {}, '10': 'attributes'},
-    {'1': 'custom_attributes', '3': 8, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '8': {}, '10': 'customAttributes'},
-    {'1': 'promotion_status', '3': 9, '4': 1, '5': 11, '6': '.google.shopping.merchant.promotions.v1beta.PromotionStatus', '8': {}, '10': 'promotionStatus'},
-    {'1': 'version_number', '3': 10, '4': 1, '5': 3, '8': {}, '9': 0, '10': 'versionNumber', '17': true},
+    {
+      '1': 'attributes',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.promotions.v1beta.Attributes',
+      '8': {},
+      '10': 'attributes'
+    },
+    {
+      '1': 'custom_attributes',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '8': {},
+      '10': 'customAttributes'
+    },
+    {
+      '1': 'promotion_status',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.promotions.v1beta.PromotionStatus',
+      '8': {},
+      '10': 'promotionStatus'
+    },
+    {
+      '1': 'version_number',
+      '3': 10,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '9': 0,
+      '10': 'versionNumber',
+      '17': true
+    },
   ],
   '7': {},
   '8': [
@@ -57,7 +112,15 @@ const InsertPromotionRequest$json = {
   '1': 'InsertPromotionRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'promotion', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.promotions.v1beta.Promotion', '8': {}, '10': 'promotion'},
+    {
+      '1': 'promotion',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.promotions.v1beta.Promotion',
+      '8': {},
+      '10': 'promotion'
+    },
     {'1': 'data_source', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'dataSource'},
   ],
 };
@@ -102,7 +165,14 @@ final $typed_data.Uint8List listPromotionsRequestDescriptor = $convert.base64Dec
 const ListPromotionsResponse$json = {
   '1': 'ListPromotionsResponse',
   '2': [
-    {'1': 'promotions', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.promotions.v1beta.Promotion', '10': 'promotions'},
+    {
+      '1': 'promotions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.promotions.v1beta.Promotion',
+      '10': 'promotions'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -112,4 +182,3 @@ final $typed_data.Uint8List listPromotionsResponseDescriptor = $convert.base64De
     'ChZMaXN0UHJvbW90aW9uc1Jlc3BvbnNlElUKCnByb21vdGlvbnMYASADKAsyNS5nb29nbGUuc2'
     'hvcHBpbmcubWVyY2hhbnQucHJvbW90aW9ucy52MWJldGEuUHJvbW90aW9uUgpwcm9tb3Rpb25z'
     'EiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
-

@@ -23,10 +23,7 @@ import 'spanner_database_admin.pbenum.dart';
 
 export 'spanner_database_admin.pbenum.dart';
 
-enum RestoreInfo_SourceInfo {
-  backupInfo, 
-  notSet
-}
+enum RestoreInfo_SourceInfo { backupInfo, notSet }
 
 /// Information about the database restore.
 class RestoreInfo extends $pb.GeneratedMessage {
@@ -44,30 +41,43 @@ class RestoreInfo extends $pb.GeneratedMessage {
     return $result;
   }
   RestoreInfo._() : super();
-  factory RestoreInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RestoreInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RestoreInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RestoreInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, RestoreInfo_SourceInfo> _RestoreInfo_SourceInfoByTag = {
-    2 : RestoreInfo_SourceInfo.backupInfo,
-    0 : RestoreInfo_SourceInfo.notSet
+  static const $core.Map<$core.int, RestoreInfo_SourceInfo>
+      _RestoreInfo_SourceInfoByTag = {
+    2: RestoreInfo_SourceInfo.backupInfo,
+    0: RestoreInfo_SourceInfo.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestoreInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RestoreInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2])
-    ..e<RestoreSourceType>(1, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE, defaultOrMaker: RestoreSourceType.TYPE_UNSPECIFIED, valueOf: RestoreSourceType.valueOf, enumValues: RestoreSourceType.values)
-    ..aOM<$245.BackupInfo>(2, _omitFieldNames ? '' : 'backupInfo', subBuilder: $245.BackupInfo.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<RestoreSourceType>(
+        1, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE,
+        defaultOrMaker: RestoreSourceType.TYPE_UNSPECIFIED,
+        valueOf: RestoreSourceType.valueOf,
+        enumValues: RestoreSourceType.values)
+    ..aOM<$245.BackupInfo>(2, _omitFieldNames ? '' : 'backupInfo',
+        subBuilder: $245.BackupInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RestoreInfo clone() => RestoreInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RestoreInfo copyWith(void Function(RestoreInfo) updates) => super.copyWith((message) => updates(message as RestoreInfo)) as RestoreInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RestoreInfo copyWith(void Function(RestoreInfo) updates) =>
+      super.copyWith((message) => updates(message as RestoreInfo))
+          as RestoreInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -76,17 +86,22 @@ class RestoreInfo extends $pb.GeneratedMessage {
   RestoreInfo createEmptyInstance() => create();
   static $pb.PbList<RestoreInfo> createRepeated() => $pb.PbList<RestoreInfo>();
   @$core.pragma('dart2js:noInline')
-  static RestoreInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RestoreInfo>(create);
+  static RestoreInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RestoreInfo>(create);
   static RestoreInfo? _defaultInstance;
 
-  RestoreInfo_SourceInfo whichSourceInfo() => _RestoreInfo_SourceInfoByTag[$_whichOneof(0)]!;
+  RestoreInfo_SourceInfo whichSourceInfo() =>
+      _RestoreInfo_SourceInfoByTag[$_whichOneof(0)]!;
   void clearSourceInfo() => clearField($_whichOneof(0));
 
   /// The type of the restore source.
   @$pb.TagNumber(1)
   RestoreSourceType get sourceType => $_getN(0);
   @$pb.TagNumber(1)
-  set sourceType(RestoreSourceType v) { setField(1, v); }
+  set sourceType(RestoreSourceType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSourceType() => $_has(0);
   @$pb.TagNumber(1)
@@ -97,7 +112,10 @@ class RestoreInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $245.BackupInfo get backupInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set backupInfo($245.BackupInfo v) { setField(2, v); }
+  set backupInfo($245.BackupInfo v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBackupInfo() => $_has(1);
   @$pb.TagNumber(2)
@@ -162,35 +180,54 @@ class Database extends $pb.GeneratedMessage {
     return $result;
   }
   Database._() : super();
-  factory Database.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Database.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Database.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Database.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Database',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<Database_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Database_State.STATE_UNSPECIFIED, valueOf: Database_State.valueOf, enumValues: Database_State.values)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<RestoreInfo>(4, _omitFieldNames ? '' : 'restoreInfo', subBuilder: RestoreInfo.create)
-    ..aOM<$549.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $549.EncryptionConfig.create)
+    ..e<Database_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Database_State.STATE_UNSPECIFIED,
+        valueOf: Database_State.valueOf,
+        enumValues: Database_State.values)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<RestoreInfo>(4, _omitFieldNames ? '' : 'restoreInfo',
+        subBuilder: RestoreInfo.create)
+    ..aOM<$549.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: $549.EncryptionConfig.create)
     ..aOS(6, _omitFieldNames ? '' : 'versionRetentionPeriod')
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'earliestVersionTime', subBuilder: $302.Timestamp.create)
-    ..pc<$549.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo', $pb.PbFieldType.PM, subBuilder: $549.EncryptionInfo.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'earliestVersionTime',
+        subBuilder: $302.Timestamp.create)
+    ..pc<$549.EncryptionInfo>(
+        8, _omitFieldNames ? '' : 'encryptionInfo', $pb.PbFieldType.PM,
+        subBuilder: $549.EncryptionInfo.create)
     ..aOS(9, _omitFieldNames ? '' : 'defaultLeader')
-    ..e<$549.DatabaseDialect>(10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE, defaultOrMaker: $549.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED, valueOf: $549.DatabaseDialect.valueOf, enumValues: $549.DatabaseDialect.values)
+    ..e<$549.DatabaseDialect>(
+        10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE,
+        defaultOrMaker: $549.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED,
+        valueOf: $549.DatabaseDialect.valueOf,
+        enumValues: $549.DatabaseDialect.values)
     ..aOB(11, _omitFieldNames ? '' : 'enableDropProtection')
     ..aOB(12, _omitFieldNames ? '' : 'reconciling')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Database clone() => Database()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Database copyWith(void Function(Database) updates) => super.copyWith((message) => updates(message as Database)) as Database;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Database copyWith(void Function(Database) updates) =>
+      super.copyWith((message) => updates(message as Database)) as Database;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -199,7 +236,8 @@ class Database extends $pb.GeneratedMessage {
   Database createEmptyInstance() => create();
   static $pb.PbList<Database> createRepeated() => $pb.PbList<Database>();
   @$core.pragma('dart2js:noInline')
-  static Database getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database>(create);
+  static Database getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Database>(create);
   static Database? _defaultInstance;
 
   /// Required. The name of the database. Values are of the form
@@ -210,7 +248,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -220,7 +261,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Database_State get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(Database_State v) { setField(2, v); }
+  set state(Database_State v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -230,7 +274,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($302.Timestamp v) { setField(3, v); }
+  set createTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -243,7 +290,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   RestoreInfo get restoreInfo => $_getN(3);
   @$pb.TagNumber(4)
-  set restoreInfo(RestoreInfo v) { setField(4, v); }
+  set restoreInfo(RestoreInfo v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRestoreInfo() => $_has(3);
   @$pb.TagNumber(4)
@@ -258,7 +308,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $549.EncryptionConfig get encryptionConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set encryptionConfig($549.EncryptionConfig v) { setField(5, v); }
+  set encryptionConfig($549.EncryptionConfig v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEncryptionConfig() => $_has(4);
   @$pb.TagNumber(5)
@@ -274,7 +327,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get versionRetentionPeriod => $_getSZ(5);
   @$pb.TagNumber(6)
-  set versionRetentionPeriod($core.String v) { $_setString(5, v); }
+  set versionRetentionPeriod($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasVersionRetentionPeriod() => $_has(5);
   @$pb.TagNumber(6)
@@ -288,7 +344,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp get earliestVersionTime => $_getN(6);
   @$pb.TagNumber(7)
-  set earliestVersionTime($302.Timestamp v) { setField(7, v); }
+  set earliestVersionTime($302.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEarliestVersionTime() => $_has(6);
   @$pb.TagNumber(7)
@@ -318,7 +377,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get defaultLeader => $_getSZ(8);
   @$pb.TagNumber(9)
-  set defaultLeader($core.String v) { $_setString(8, v); }
+  set defaultLeader($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDefaultLeader() => $_has(8);
   @$pb.TagNumber(9)
@@ -328,7 +390,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $549.DatabaseDialect get databaseDialect => $_getN(9);
   @$pb.TagNumber(10)
-  set databaseDialect($549.DatabaseDialect v) { setField(10, v); }
+  set databaseDialect($549.DatabaseDialect v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasDatabaseDialect() => $_has(9);
   @$pb.TagNumber(10)
@@ -341,7 +406,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get enableDropProtection => $_getBF(10);
   @$pb.TagNumber(11)
-  set enableDropProtection($core.bool v) { $_setBool(10, v); }
+  set enableDropProtection($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasEnableDropProtection() => $_has(10);
   @$pb.TagNumber(11)
@@ -352,7 +420,10 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get reconciling => $_getBF(11);
   @$pb.TagNumber(12)
-  set reconciling($core.bool v) { $_setBool(11, v); }
+  set reconciling($core.bool v) {
+    $_setBool(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasReconciling() => $_has(11);
   @$pb.TagNumber(12)
@@ -380,35 +451,45 @@ class ListDatabasesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDatabasesRequest._() : super();
-  factory ListDatabasesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDatabasesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDatabasesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDatabasesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatabasesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDatabasesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDatabasesRequest clone() => ListDatabasesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDatabasesRequest copyWith(void Function(ListDatabasesRequest) updates) => super.copyWith((message) => updates(message as ListDatabasesRequest)) as ListDatabasesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDatabasesRequest clone() =>
+      ListDatabasesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDatabasesRequest copyWith(void Function(ListDatabasesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListDatabasesRequest))
+          as ListDatabasesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDatabasesRequest create() => ListDatabasesRequest._();
   ListDatabasesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDatabasesRequest> createRepeated() => $pb.PbList<ListDatabasesRequest>();
+  static $pb.PbList<ListDatabasesRequest> createRepeated() =>
+      $pb.PbList<ListDatabasesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDatabasesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDatabasesRequest>(create);
+  static ListDatabasesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDatabasesRequest>(create);
   static ListDatabasesRequest? _defaultInstance;
 
   /// Required. The instance whose databases should be listed.
@@ -416,7 +497,10 @@ class ListDatabasesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -427,7 +511,10 @@ class ListDatabasesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(3)
@@ -440,7 +527,10 @@ class ListDatabasesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(4)
@@ -464,34 +554,46 @@ class ListDatabasesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDatabasesResponse._() : super();
-  factory ListDatabasesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDatabasesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDatabasesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDatabasesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatabasesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..pc<Database>(1, _omitFieldNames ? '' : 'databases', $pb.PbFieldType.PM, subBuilder: Database.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDatabasesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..pc<Database>(1, _omitFieldNames ? '' : 'databases', $pb.PbFieldType.PM,
+        subBuilder: Database.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDatabasesResponse clone() => ListDatabasesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDatabasesResponse copyWith(void Function(ListDatabasesResponse) updates) => super.copyWith((message) => updates(message as ListDatabasesResponse)) as ListDatabasesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDatabasesResponse clone() =>
+      ListDatabasesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDatabasesResponse copyWith(
+          void Function(ListDatabasesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListDatabasesResponse))
+          as ListDatabasesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDatabasesResponse create() => ListDatabasesResponse._();
   ListDatabasesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDatabasesResponse> createRepeated() => $pb.PbList<ListDatabasesResponse>();
+  static $pb.PbList<ListDatabasesResponse> createRepeated() =>
+      $pb.PbList<ListDatabasesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDatabasesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDatabasesResponse>(create);
+  static ListDatabasesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDatabasesResponse>(create);
   static ListDatabasesResponse? _defaultInstance;
 
   /// Databases that matched the request.
@@ -504,7 +606,10 @@ class ListDatabasesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -544,38 +649,55 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateDatabaseRequest._() : super();
-  factory CreateDatabaseRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateDatabaseRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateDatabaseRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateDatabaseRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDatabaseRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'createStatement')
     ..pPS(3, _omitFieldNames ? '' : 'extraStatements')
-    ..aOM<$549.EncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $549.EncryptionConfig.create)
-    ..e<$549.DatabaseDialect>(5, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE, defaultOrMaker: $549.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED, valueOf: $549.DatabaseDialect.valueOf, enumValues: $549.DatabaseDialect.values)
-    ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$549.EncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: $549.EncryptionConfig.create)
+    ..e<$549.DatabaseDialect>(
+        5, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE,
+        defaultOrMaker: $549.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED,
+        valueOf: $549.DatabaseDialect.valueOf,
+        enumValues: $549.DatabaseDialect.values)
+    ..a<$core.List<$core.int>>(
+        6, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateDatabaseRequest clone() => CreateDatabaseRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateDatabaseRequest copyWith(void Function(CreateDatabaseRequest) updates) => super.copyWith((message) => updates(message as CreateDatabaseRequest)) as CreateDatabaseRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateDatabaseRequest clone() =>
+      CreateDatabaseRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateDatabaseRequest copyWith(
+          void Function(CreateDatabaseRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateDatabaseRequest))
+          as CreateDatabaseRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateDatabaseRequest create() => CreateDatabaseRequest._();
   CreateDatabaseRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateDatabaseRequest> createRepeated() => $pb.PbList<CreateDatabaseRequest>();
+  static $pb.PbList<CreateDatabaseRequest> createRepeated() =>
+      $pb.PbList<CreateDatabaseRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateDatabaseRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDatabaseRequest>(create);
+  static CreateDatabaseRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDatabaseRequest>(create);
   static CreateDatabaseRequest? _defaultInstance;
 
   /// Required. The name of the instance that will serve the new database.
@@ -583,7 +705,10 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -597,7 +722,10 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get createStatement => $_getSZ(1);
   @$pb.TagNumber(2)
-  set createStatement($core.String v) { $_setString(1, v); }
+  set createStatement($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateStatement() => $_has(1);
   @$pb.TagNumber(2)
@@ -616,7 +744,10 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $549.EncryptionConfig get encryptionConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set encryptionConfig($549.EncryptionConfig v) { setField(4, v); }
+  set encryptionConfig($549.EncryptionConfig v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEncryptionConfig() => $_has(3);
   @$pb.TagNumber(4)
@@ -628,7 +759,10 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $549.DatabaseDialect get databaseDialect => $_getN(4);
   @$pb.TagNumber(5)
-  set databaseDialect($549.DatabaseDialect v) { setField(5, v); }
+  set databaseDialect($549.DatabaseDialect v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDatabaseDialect() => $_has(4);
   @$pb.TagNumber(5)
@@ -652,7 +786,10 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.List<$core.int> get protoDescriptors => $_getN(5);
   @$pb.TagNumber(6)
-  set protoDescriptors($core.List<$core.int> v) { $_setBytes(5, v); }
+  set protoDescriptors($core.List<$core.int> v) {
+    $_setBytes(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasProtoDescriptors() => $_has(5);
   @$pb.TagNumber(6)
@@ -672,40 +809,54 @@ class CreateDatabaseMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   CreateDatabaseMetadata._() : super();
-  factory CreateDatabaseMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateDatabaseMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateDatabaseMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateDatabaseMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDatabaseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDatabaseMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'database')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateDatabaseMetadata clone() => CreateDatabaseMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateDatabaseMetadata copyWith(void Function(CreateDatabaseMetadata) updates) => super.copyWith((message) => updates(message as CreateDatabaseMetadata)) as CreateDatabaseMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateDatabaseMetadata clone() =>
+      CreateDatabaseMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateDatabaseMetadata copyWith(
+          void Function(CreateDatabaseMetadata) updates) =>
+      super.copyWith((message) => updates(message as CreateDatabaseMetadata))
+          as CreateDatabaseMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateDatabaseMetadata create() => CreateDatabaseMetadata._();
   CreateDatabaseMetadata createEmptyInstance() => create();
-  static $pb.PbList<CreateDatabaseMetadata> createRepeated() => $pb.PbList<CreateDatabaseMetadata>();
+  static $pb.PbList<CreateDatabaseMetadata> createRepeated() =>
+      $pb.PbList<CreateDatabaseMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CreateDatabaseMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDatabaseMetadata>(create);
+  static CreateDatabaseMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDatabaseMetadata>(create);
   static CreateDatabaseMetadata? _defaultInstance;
 
   /// The database being created.
   @$pb.TagNumber(1)
   $core.String get database => $_getSZ(0);
   @$pb.TagNumber(1)
-  set database($core.String v) { $_setString(0, v); }
+  set database($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatabase() => $_has(0);
   @$pb.TagNumber(1)
@@ -725,33 +876,42 @@ class GetDatabaseRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDatabaseRequest._() : super();
-  factory GetDatabaseRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDatabaseRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDatabaseRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDatabaseRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDatabaseRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetDatabaseRequest clone() => GetDatabaseRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDatabaseRequest copyWith(void Function(GetDatabaseRequest) updates) => super.copyWith((message) => updates(message as GetDatabaseRequest)) as GetDatabaseRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDatabaseRequest copyWith(void Function(GetDatabaseRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDatabaseRequest))
+          as GetDatabaseRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDatabaseRequest create() => GetDatabaseRequest._();
   GetDatabaseRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDatabaseRequest> createRepeated() => $pb.PbList<GetDatabaseRequest>();
+  static $pb.PbList<GetDatabaseRequest> createRepeated() =>
+      $pb.PbList<GetDatabaseRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDatabaseRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDatabaseRequest>(create);
+  static GetDatabaseRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDatabaseRequest>(create);
   static GetDatabaseRequest? _defaultInstance;
 
   /// Required. The name of the requested database. Values are of the form
@@ -759,7 +919,10 @@ class GetDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -783,34 +946,47 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDatabaseRequest._() : super();
-  factory UpdateDatabaseRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDatabaseRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDatabaseRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDatabaseRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..aOM<Database>(1, _omitFieldNames ? '' : 'database', subBuilder: Database.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDatabaseRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..aOM<Database>(1, _omitFieldNames ? '' : 'database',
+        subBuilder: Database.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseRequest clone() => UpdateDatabaseRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseRequest copyWith(void Function(UpdateDatabaseRequest) updates) => super.copyWith((message) => updates(message as UpdateDatabaseRequest)) as UpdateDatabaseRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseRequest clone() =>
+      UpdateDatabaseRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseRequest copyWith(
+          void Function(UpdateDatabaseRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateDatabaseRequest))
+          as UpdateDatabaseRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateDatabaseRequest create() => UpdateDatabaseRequest._();
   UpdateDatabaseRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateDatabaseRequest> createRepeated() => $pb.PbList<UpdateDatabaseRequest>();
+  static $pb.PbList<UpdateDatabaseRequest> createRepeated() =>
+      $pb.PbList<UpdateDatabaseRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDatabaseRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseRequest>(create);
+  static UpdateDatabaseRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseRequest>(create);
   static UpdateDatabaseRequest? _defaultInstance;
 
   /// Required. The database to update.
@@ -819,7 +995,10 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Database get database => $_getN(0);
   @$pb.TagNumber(1)
-  set database(Database v) { setField(1, v); }
+  set database(Database v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatabase() => $_has(0);
   @$pb.TagNumber(1)
@@ -832,7 +1011,10 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -862,35 +1044,49 @@ class UpdateDatabaseMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDatabaseMetadata._() : super();
-  factory UpdateDatabaseMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDatabaseMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDatabaseMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDatabaseMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..aOM<UpdateDatabaseRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: UpdateDatabaseRequest.create)
-    ..aOM<$549.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $549.OperationProgress.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDatabaseMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..aOM<UpdateDatabaseRequest>(1, _omitFieldNames ? '' : 'request',
+        subBuilder: UpdateDatabaseRequest.create)
+    ..aOM<$549.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $549.OperationProgress.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseMetadata clone() => UpdateDatabaseMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseMetadata copyWith(void Function(UpdateDatabaseMetadata) updates) => super.copyWith((message) => updates(message as UpdateDatabaseMetadata)) as UpdateDatabaseMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseMetadata clone() =>
+      UpdateDatabaseMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseMetadata copyWith(
+          void Function(UpdateDatabaseMetadata) updates) =>
+      super.copyWith((message) => updates(message as UpdateDatabaseMetadata))
+          as UpdateDatabaseMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateDatabaseMetadata create() => UpdateDatabaseMetadata._();
   UpdateDatabaseMetadata createEmptyInstance() => create();
-  static $pb.PbList<UpdateDatabaseMetadata> createRepeated() => $pb.PbList<UpdateDatabaseMetadata>();
+  static $pb.PbList<UpdateDatabaseMetadata> createRepeated() =>
+      $pb.PbList<UpdateDatabaseMetadata>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDatabaseMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseMetadata>(create);
+  static UpdateDatabaseMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseMetadata>(create);
   static UpdateDatabaseMetadata? _defaultInstance;
 
   /// The request for
@@ -898,7 +1094,10 @@ class UpdateDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   UpdateDatabaseRequest get request => $_getN(0);
   @$pb.TagNumber(1)
-  set request(UpdateDatabaseRequest v) { setField(1, v); }
+  set request(UpdateDatabaseRequest v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRequest() => $_has(0);
   @$pb.TagNumber(1)
@@ -912,7 +1111,10 @@ class UpdateDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $549.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($549.OperationProgress v) { setField(2, v); }
+  set progress($549.OperationProgress v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
@@ -925,7 +1127,10 @@ class UpdateDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) { setField(3, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -973,43 +1178,58 @@ class UpdateDatabaseDdlRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDatabaseDdlRequest._() : super();
-  factory UpdateDatabaseDdlRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDatabaseDdlRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDatabaseDdlRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDatabaseDdlRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseDdlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDatabaseDdlRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'database')
     ..pPS(2, _omitFieldNames ? '' : 'statements')
     ..aOS(3, _omitFieldNames ? '' : 'operationId')
-    ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        4, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseDdlRequest clone() => UpdateDatabaseDdlRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseDdlRequest copyWith(void Function(UpdateDatabaseDdlRequest) updates) => super.copyWith((message) => updates(message as UpdateDatabaseDdlRequest)) as UpdateDatabaseDdlRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseDdlRequest clone() =>
+      UpdateDatabaseDdlRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseDdlRequest copyWith(
+          void Function(UpdateDatabaseDdlRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateDatabaseDdlRequest))
+          as UpdateDatabaseDdlRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateDatabaseDdlRequest create() => UpdateDatabaseDdlRequest._();
   UpdateDatabaseDdlRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateDatabaseDdlRequest> createRepeated() => $pb.PbList<UpdateDatabaseDdlRequest>();
+  static $pb.PbList<UpdateDatabaseDdlRequest> createRepeated() =>
+      $pb.PbList<UpdateDatabaseDdlRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDatabaseDdlRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseDdlRequest>(create);
+  static UpdateDatabaseDdlRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseDdlRequest>(create);
   static UpdateDatabaseDdlRequest? _defaultInstance;
 
   /// Required. The database to update.
   @$pb.TagNumber(1)
   $core.String get database => $_getSZ(0);
   @$pb.TagNumber(1)
-  set database($core.String v) { $_setString(0, v); }
+  set database($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatabase() => $_has(0);
   @$pb.TagNumber(1)
@@ -1043,7 +1263,10 @@ class UpdateDatabaseDdlRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get operationId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set operationId($core.String v) { $_setString(2, v); }
+  set operationId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOperationId() => $_has(2);
   @$pb.TagNumber(3)
@@ -1066,7 +1289,10 @@ class UpdateDatabaseDdlRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get protoDescriptors => $_getN(3);
   @$pb.TagNumber(4)
-  set protoDescriptors($core.List<$core.int> v) { $_setBytes(3, v); }
+  set protoDescriptors($core.List<$core.int> v) {
+    $_setBytes(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasProtoDescriptors() => $_has(3);
   @$pb.TagNumber(4)
@@ -1095,35 +1321,46 @@ class DdlStatementActionInfo extends $pb.GeneratedMessage {
     return $result;
   }
   DdlStatementActionInfo._() : super();
-  factory DdlStatementActionInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DdlStatementActionInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DdlStatementActionInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DdlStatementActionInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DdlStatementActionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DdlStatementActionInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'action')
     ..aOS(2, _omitFieldNames ? '' : 'entityType')
     ..pPS(3, _omitFieldNames ? '' : 'entityNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DdlStatementActionInfo clone() => DdlStatementActionInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DdlStatementActionInfo copyWith(void Function(DdlStatementActionInfo) updates) => super.copyWith((message) => updates(message as DdlStatementActionInfo)) as DdlStatementActionInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DdlStatementActionInfo clone() =>
+      DdlStatementActionInfo()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DdlStatementActionInfo copyWith(
+          void Function(DdlStatementActionInfo) updates) =>
+      super.copyWith((message) => updates(message as DdlStatementActionInfo))
+          as DdlStatementActionInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DdlStatementActionInfo create() => DdlStatementActionInfo._();
   DdlStatementActionInfo createEmptyInstance() => create();
-  static $pb.PbList<DdlStatementActionInfo> createRepeated() => $pb.PbList<DdlStatementActionInfo>();
+  static $pb.PbList<DdlStatementActionInfo> createRepeated() =>
+      $pb.PbList<DdlStatementActionInfo>();
   @$core.pragma('dart2js:noInline')
-  static DdlStatementActionInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DdlStatementActionInfo>(create);
+  static DdlStatementActionInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DdlStatementActionInfo>(create);
   static DdlStatementActionInfo? _defaultInstance;
 
   /// The action for the DDL statement, e.g. CREATE, ALTER, DROP, GRANT, etc.
@@ -1131,7 +1368,10 @@ class DdlStatementActionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get action => $_getSZ(0);
   @$pb.TagNumber(1)
-  set action($core.String v) { $_setString(0, v); }
+  set action($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAction() => $_has(0);
   @$pb.TagNumber(1)
@@ -1143,7 +1383,10 @@ class DdlStatementActionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get entityType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set entityType($core.String v) { $_setString(1, v); }
+  set entityType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEntityType() => $_has(1);
   @$pb.TagNumber(2)
@@ -1191,45 +1434,65 @@ class UpdateDatabaseDdlMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDatabaseDdlMetadata._() : super();
-  factory UpdateDatabaseDdlMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDatabaseDdlMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDatabaseDdlMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDatabaseDdlMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseDdlMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDatabaseDdlMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'database')
     ..pPS(2, _omitFieldNames ? '' : 'statements')
-    ..pc<$302.Timestamp>(3, _omitFieldNames ? '' : 'commitTimestamps', $pb.PbFieldType.PM, subBuilder: $302.Timestamp.create)
+    ..pc<$302.Timestamp>(
+        3, _omitFieldNames ? '' : 'commitTimestamps', $pb.PbFieldType.PM,
+        subBuilder: $302.Timestamp.create)
     ..aOB(4, _omitFieldNames ? '' : 'throttled')
-    ..pc<$549.OperationProgress>(5, _omitFieldNames ? '' : 'progress', $pb.PbFieldType.PM, subBuilder: $549.OperationProgress.create)
-    ..pc<DdlStatementActionInfo>(6, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: DdlStatementActionInfo.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$549.OperationProgress>(
+        5, _omitFieldNames ? '' : 'progress', $pb.PbFieldType.PM,
+        subBuilder: $549.OperationProgress.create)
+    ..pc<DdlStatementActionInfo>(
+        6, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM,
+        subBuilder: DdlStatementActionInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseDdlMetadata clone() => UpdateDatabaseDdlMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDatabaseDdlMetadata copyWith(void Function(UpdateDatabaseDdlMetadata) updates) => super.copyWith((message) => updates(message as UpdateDatabaseDdlMetadata)) as UpdateDatabaseDdlMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseDdlMetadata clone() =>
+      UpdateDatabaseDdlMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDatabaseDdlMetadata copyWith(
+          void Function(UpdateDatabaseDdlMetadata) updates) =>
+      super.copyWith((message) => updates(message as UpdateDatabaseDdlMetadata))
+          as UpdateDatabaseDdlMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateDatabaseDdlMetadata create() => UpdateDatabaseDdlMetadata._();
   UpdateDatabaseDdlMetadata createEmptyInstance() => create();
-  static $pb.PbList<UpdateDatabaseDdlMetadata> createRepeated() => $pb.PbList<UpdateDatabaseDdlMetadata>();
+  static $pb.PbList<UpdateDatabaseDdlMetadata> createRepeated() =>
+      $pb.PbList<UpdateDatabaseDdlMetadata>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDatabaseDdlMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseDdlMetadata>(create);
+  static UpdateDatabaseDdlMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDatabaseDdlMetadata>(create);
   static UpdateDatabaseDdlMetadata? _defaultInstance;
 
   /// The database being modified.
   @$pb.TagNumber(1)
   $core.String get database => $_getSZ(0);
   @$pb.TagNumber(1)
-  set database($core.String v) { $_setString(0, v); }
+  set database($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatabase() => $_has(0);
   @$pb.TagNumber(1)
@@ -1252,7 +1515,10 @@ class UpdateDatabaseDdlMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get throttled => $_getBF(3);
   @$pb.TagNumber(4)
-  set throttled($core.bool v) { $_setBool(3, v); }
+  set throttled($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasThrottled() => $_has(3);
   @$pb.TagNumber(4)
@@ -1287,40 +1553,52 @@ class DropDatabaseRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DropDatabaseRequest._() : super();
-  factory DropDatabaseRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DropDatabaseRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DropDatabaseRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DropDatabaseRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DropDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DropDatabaseRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'database')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DropDatabaseRequest clone() => DropDatabaseRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DropDatabaseRequest copyWith(void Function(DropDatabaseRequest) updates) => super.copyWith((message) => updates(message as DropDatabaseRequest)) as DropDatabaseRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DropDatabaseRequest copyWith(void Function(DropDatabaseRequest) updates) =>
+      super.copyWith((message) => updates(message as DropDatabaseRequest))
+          as DropDatabaseRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DropDatabaseRequest create() => DropDatabaseRequest._();
   DropDatabaseRequest createEmptyInstance() => create();
-  static $pb.PbList<DropDatabaseRequest> createRepeated() => $pb.PbList<DropDatabaseRequest>();
+  static $pb.PbList<DropDatabaseRequest> createRepeated() =>
+      $pb.PbList<DropDatabaseRequest>();
   @$core.pragma('dart2js:noInline')
-  static DropDatabaseRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DropDatabaseRequest>(create);
+  static DropDatabaseRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DropDatabaseRequest>(create);
   static DropDatabaseRequest? _defaultInstance;
 
   /// Required. The database to be dropped.
   @$pb.TagNumber(1)
   $core.String get database => $_getSZ(0);
   @$pb.TagNumber(1)
-  set database($core.String v) { $_setString(0, v); }
+  set database($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatabase() => $_has(0);
   @$pb.TagNumber(1)
@@ -1340,33 +1618,44 @@ class GetDatabaseDdlRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDatabaseDdlRequest._() : super();
-  factory GetDatabaseDdlRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDatabaseDdlRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDatabaseDdlRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDatabaseDdlRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDatabaseDdlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDatabaseDdlRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'database')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetDatabaseDdlRequest clone() => GetDatabaseDdlRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDatabaseDdlRequest copyWith(void Function(GetDatabaseDdlRequest) updates) => super.copyWith((message) => updates(message as GetDatabaseDdlRequest)) as GetDatabaseDdlRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetDatabaseDdlRequest clone() =>
+      GetDatabaseDdlRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDatabaseDdlRequest copyWith(
+          void Function(GetDatabaseDdlRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDatabaseDdlRequest))
+          as GetDatabaseDdlRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDatabaseDdlRequest create() => GetDatabaseDdlRequest._();
   GetDatabaseDdlRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDatabaseDdlRequest> createRepeated() => $pb.PbList<GetDatabaseDdlRequest>();
+  static $pb.PbList<GetDatabaseDdlRequest> createRepeated() =>
+      $pb.PbList<GetDatabaseDdlRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDatabaseDdlRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDatabaseDdlRequest>(create);
+  static GetDatabaseDdlRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDatabaseDdlRequest>(create);
   static GetDatabaseDdlRequest? _defaultInstance;
 
   /// Required. The database whose schema we wish to get.
@@ -1375,7 +1664,10 @@ class GetDatabaseDdlRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get database => $_getSZ(0);
   @$pb.TagNumber(1)
-  set database($core.String v) { $_setString(0, v); }
+  set database($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatabase() => $_has(0);
   @$pb.TagNumber(1)
@@ -1399,34 +1691,46 @@ class GetDatabaseDdlResponse extends $pb.GeneratedMessage {
     return $result;
   }
   GetDatabaseDdlResponse._() : super();
-  factory GetDatabaseDdlResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDatabaseDdlResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDatabaseDdlResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDatabaseDdlResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDatabaseDdlResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDatabaseDdlResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'statements')
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetDatabaseDdlResponse clone() => GetDatabaseDdlResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDatabaseDdlResponse copyWith(void Function(GetDatabaseDdlResponse) updates) => super.copyWith((message) => updates(message as GetDatabaseDdlResponse)) as GetDatabaseDdlResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetDatabaseDdlResponse clone() =>
+      GetDatabaseDdlResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDatabaseDdlResponse copyWith(
+          void Function(GetDatabaseDdlResponse) updates) =>
+      super.copyWith((message) => updates(message as GetDatabaseDdlResponse))
+          as GetDatabaseDdlResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDatabaseDdlResponse create() => GetDatabaseDdlResponse._();
   GetDatabaseDdlResponse createEmptyInstance() => create();
-  static $pb.PbList<GetDatabaseDdlResponse> createRepeated() => $pb.PbList<GetDatabaseDdlResponse>();
+  static $pb.PbList<GetDatabaseDdlResponse> createRepeated() =>
+      $pb.PbList<GetDatabaseDdlResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetDatabaseDdlResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDatabaseDdlResponse>(create);
+  static GetDatabaseDdlResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDatabaseDdlResponse>(create);
   static GetDatabaseDdlResponse? _defaultInstance;
 
   /// A list of formatted DDL statements defining the schema of the database
@@ -1442,7 +1746,10 @@ class GetDatabaseDdlResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get protoDescriptors => $_getN(1);
   @$pb.TagNumber(2)
-  set protoDescriptors($core.List<$core.int> v) { $_setBytes(1, v); }
+  set protoDescriptors($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProtoDescriptors() => $_has(1);
   @$pb.TagNumber(2)
@@ -1474,36 +1781,49 @@ class ListDatabaseOperationsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDatabaseOperationsRequest._() : super();
-  factory ListDatabaseOperationsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDatabaseOperationsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDatabaseOperationsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDatabaseOperationsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatabaseOperationsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDatabaseOperationsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDatabaseOperationsRequest clone() => ListDatabaseOperationsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDatabaseOperationsRequest copyWith(void Function(ListDatabaseOperationsRequest) updates) => super.copyWith((message) => updates(message as ListDatabaseOperationsRequest)) as ListDatabaseOperationsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDatabaseOperationsRequest clone() =>
+      ListDatabaseOperationsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDatabaseOperationsRequest copyWith(
+          void Function(ListDatabaseOperationsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListDatabaseOperationsRequest))
+          as ListDatabaseOperationsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListDatabaseOperationsRequest create() => ListDatabaseOperationsRequest._();
+  static ListDatabaseOperationsRequest create() =>
+      ListDatabaseOperationsRequest._();
   ListDatabaseOperationsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDatabaseOperationsRequest> createRepeated() => $pb.PbList<ListDatabaseOperationsRequest>();
+  static $pb.PbList<ListDatabaseOperationsRequest> createRepeated() =>
+      $pb.PbList<ListDatabaseOperationsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDatabaseOperationsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDatabaseOperationsRequest>(create);
+  static ListDatabaseOperationsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDatabaseOperationsRequest>(create);
   static ListDatabaseOperationsRequest? _defaultInstance;
 
   /// Required. The instance of the database operations.
@@ -1511,7 +1831,10 @@ class ListDatabaseOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1565,7 +1888,10 @@ class ListDatabaseOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -1576,7 +1902,10 @@ class ListDatabaseOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -1590,7 +1919,10 @@ class ListDatabaseOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -1614,34 +1946,49 @@ class ListDatabaseOperationsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDatabaseOperationsResponse._() : super();
-  factory ListDatabaseOperationsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDatabaseOperationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDatabaseOperationsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDatabaseOperationsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatabaseOperationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..pc<$13.Operation>(1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: $13.Operation.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDatabaseOperationsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..pc<$13.Operation>(
+        1, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM,
+        subBuilder: $13.Operation.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDatabaseOperationsResponse clone() => ListDatabaseOperationsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDatabaseOperationsResponse copyWith(void Function(ListDatabaseOperationsResponse) updates) => super.copyWith((message) => updates(message as ListDatabaseOperationsResponse)) as ListDatabaseOperationsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDatabaseOperationsResponse clone() =>
+      ListDatabaseOperationsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDatabaseOperationsResponse copyWith(
+          void Function(ListDatabaseOperationsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListDatabaseOperationsResponse))
+          as ListDatabaseOperationsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListDatabaseOperationsResponse create() => ListDatabaseOperationsResponse._();
+  static ListDatabaseOperationsResponse create() =>
+      ListDatabaseOperationsResponse._();
   ListDatabaseOperationsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDatabaseOperationsResponse> createRepeated() => $pb.PbList<ListDatabaseOperationsResponse>();
+  static $pb.PbList<ListDatabaseOperationsResponse> createRepeated() =>
+      $pb.PbList<ListDatabaseOperationsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDatabaseOperationsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDatabaseOperationsResponse>(create);
+  static ListDatabaseOperationsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDatabaseOperationsResponse>(create);
   static ListDatabaseOperationsResponse? _defaultInstance;
 
   /// The list of matching database [long-running
@@ -1658,17 +2005,17 @@ class ListDatabaseOperationsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-enum RestoreDatabaseRequest_Source {
-  backup, 
-  notSet
-}
+enum RestoreDatabaseRequest_Source { backup, notSet }
 
 /// The request for
 /// [RestoreDatabase][google.spanner.admin.database.v1.DatabaseAdmin.RestoreDatabase].
@@ -1695,44 +2042,59 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
     return $result;
   }
   RestoreDatabaseRequest._() : super();
-  factory RestoreDatabaseRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RestoreDatabaseRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RestoreDatabaseRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RestoreDatabaseRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, RestoreDatabaseRequest_Source> _RestoreDatabaseRequest_SourceByTag = {
-    3 : RestoreDatabaseRequest_Source.backup,
-    0 : RestoreDatabaseRequest_Source.notSet
+  static const $core.Map<$core.int, RestoreDatabaseRequest_Source>
+      _RestoreDatabaseRequest_SourceByTag = {
+    3: RestoreDatabaseRequest_Source.backup,
+    0: RestoreDatabaseRequest_Source.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestoreDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RestoreDatabaseRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'databaseId')
     ..aOS(3, _omitFieldNames ? '' : 'backup')
-    ..aOM<RestoreDatabaseEncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: RestoreDatabaseEncryptionConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<RestoreDatabaseEncryptionConfig>(
+        4, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: RestoreDatabaseEncryptionConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RestoreDatabaseRequest clone() => RestoreDatabaseRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RestoreDatabaseRequest copyWith(void Function(RestoreDatabaseRequest) updates) => super.copyWith((message) => updates(message as RestoreDatabaseRequest)) as RestoreDatabaseRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RestoreDatabaseRequest clone() =>
+      RestoreDatabaseRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RestoreDatabaseRequest copyWith(
+          void Function(RestoreDatabaseRequest) updates) =>
+      super.copyWith((message) => updates(message as RestoreDatabaseRequest))
+          as RestoreDatabaseRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestoreDatabaseRequest create() => RestoreDatabaseRequest._();
   RestoreDatabaseRequest createEmptyInstance() => create();
-  static $pb.PbList<RestoreDatabaseRequest> createRepeated() => $pb.PbList<RestoreDatabaseRequest>();
+  static $pb.PbList<RestoreDatabaseRequest> createRepeated() =>
+      $pb.PbList<RestoreDatabaseRequest>();
   @$core.pragma('dart2js:noInline')
-  static RestoreDatabaseRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RestoreDatabaseRequest>(create);
+  static RestoreDatabaseRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RestoreDatabaseRequest>(create);
   static RestoreDatabaseRequest? _defaultInstance;
 
-  RestoreDatabaseRequest_Source whichSource() => _RestoreDatabaseRequest_SourceByTag[$_whichOneof(0)]!;
+  RestoreDatabaseRequest_Source whichSource() =>
+      _RestoreDatabaseRequest_SourceByTag[$_whichOneof(0)]!;
   void clearSource() => clearField($_whichOneof(0));
 
   /// Required. The name of the instance in which to create the
@@ -1743,7 +2105,10 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1756,7 +2121,10 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get databaseId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set databaseId($core.String v) { $_setString(1, v); }
+  set databaseId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDatabaseId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1767,7 +2135,10 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get backup => $_getSZ(2);
   @$pb.TagNumber(3)
-  set backup($core.String v) { $_setString(2, v); }
+  set backup($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBackup() => $_has(2);
   @$pb.TagNumber(3)
@@ -1782,7 +2153,10 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   RestoreDatabaseEncryptionConfig get encryptionConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set encryptionConfig(RestoreDatabaseEncryptionConfig v) { setField(4, v); }
+  set encryptionConfig(RestoreDatabaseEncryptionConfig v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEncryptionConfig() => $_has(3);
   @$pb.TagNumber(4)
@@ -1811,42 +2185,65 @@ class RestoreDatabaseEncryptionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   RestoreDatabaseEncryptionConfig._() : super();
-  factory RestoreDatabaseEncryptionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RestoreDatabaseEncryptionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RestoreDatabaseEncryptionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RestoreDatabaseEncryptionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestoreDatabaseEncryptionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..e<RestoreDatabaseEncryptionConfig_EncryptionType>(1, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: RestoreDatabaseEncryptionConfig_EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: RestoreDatabaseEncryptionConfig_EncryptionType.valueOf, enumValues: RestoreDatabaseEncryptionConfig_EncryptionType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RestoreDatabaseEncryptionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..e<RestoreDatabaseEncryptionConfig_EncryptionType>(
+        1, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE,
+        defaultOrMaker: RestoreDatabaseEncryptionConfig_EncryptionType
+            .ENCRYPTION_TYPE_UNSPECIFIED,
+        valueOf: RestoreDatabaseEncryptionConfig_EncryptionType.valueOf,
+        enumValues: RestoreDatabaseEncryptionConfig_EncryptionType.values)
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyName')
     ..pPS(3, _omitFieldNames ? '' : 'kmsKeyNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RestoreDatabaseEncryptionConfig clone() => RestoreDatabaseEncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RestoreDatabaseEncryptionConfig copyWith(void Function(RestoreDatabaseEncryptionConfig) updates) => super.copyWith((message) => updates(message as RestoreDatabaseEncryptionConfig)) as RestoreDatabaseEncryptionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RestoreDatabaseEncryptionConfig clone() =>
+      RestoreDatabaseEncryptionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RestoreDatabaseEncryptionConfig copyWith(
+          void Function(RestoreDatabaseEncryptionConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as RestoreDatabaseEncryptionConfig))
+          as RestoreDatabaseEncryptionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static RestoreDatabaseEncryptionConfig create() => RestoreDatabaseEncryptionConfig._();
+  static RestoreDatabaseEncryptionConfig create() =>
+      RestoreDatabaseEncryptionConfig._();
   RestoreDatabaseEncryptionConfig createEmptyInstance() => create();
-  static $pb.PbList<RestoreDatabaseEncryptionConfig> createRepeated() => $pb.PbList<RestoreDatabaseEncryptionConfig>();
+  static $pb.PbList<RestoreDatabaseEncryptionConfig> createRepeated() =>
+      $pb.PbList<RestoreDatabaseEncryptionConfig>();
   @$core.pragma('dart2js:noInline')
-  static RestoreDatabaseEncryptionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RestoreDatabaseEncryptionConfig>(create);
+  static RestoreDatabaseEncryptionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RestoreDatabaseEncryptionConfig>(
+          create);
   static RestoreDatabaseEncryptionConfig? _defaultInstance;
 
   /// Required. The encryption type of the restored database.
   @$pb.TagNumber(1)
-  RestoreDatabaseEncryptionConfig_EncryptionType get encryptionType => $_getN(0);
+  RestoreDatabaseEncryptionConfig_EncryptionType get encryptionType =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set encryptionType(RestoreDatabaseEncryptionConfig_EncryptionType v) { setField(1, v); }
+  set encryptionType(RestoreDatabaseEncryptionConfig_EncryptionType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEncryptionType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1860,7 +2257,10 @@ class RestoreDatabaseEncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get kmsKeyName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set kmsKeyName($core.String v) { $_setString(1, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKmsKeyName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1885,10 +2285,7 @@ class RestoreDatabaseEncryptionConfig extends $pb.GeneratedMessage {
   $core.List<$core.String> get kmsKeyNames => $_getList(2);
 }
 
-enum RestoreDatabaseMetadata_SourceInfo {
-  backupInfo, 
-  notSet
-}
+enum RestoreDatabaseMetadata_SourceInfo { backupInfo, notSet }
 
 /// Metadata type for the long-running operation returned by
 /// [RestoreDatabase][google.spanner.admin.database.v1.DatabaseAdmin.RestoreDatabase].
@@ -1923,53 +2320,76 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   RestoreDatabaseMetadata._() : super();
-  factory RestoreDatabaseMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RestoreDatabaseMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RestoreDatabaseMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RestoreDatabaseMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, RestoreDatabaseMetadata_SourceInfo> _RestoreDatabaseMetadata_SourceInfoByTag = {
-    3 : RestoreDatabaseMetadata_SourceInfo.backupInfo,
-    0 : RestoreDatabaseMetadata_SourceInfo.notSet
+  static const $core.Map<$core.int, RestoreDatabaseMetadata_SourceInfo>
+      _RestoreDatabaseMetadata_SourceInfoByTag = {
+    3: RestoreDatabaseMetadata_SourceInfo.backupInfo,
+    0: RestoreDatabaseMetadata_SourceInfo.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestoreDatabaseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RestoreDatabaseMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<RestoreSourceType>(2, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE, defaultOrMaker: RestoreSourceType.TYPE_UNSPECIFIED, valueOf: RestoreSourceType.valueOf, enumValues: RestoreSourceType.values)
-    ..aOM<$245.BackupInfo>(3, _omitFieldNames ? '' : 'backupInfo', subBuilder: $245.BackupInfo.create)
-    ..aOM<$549.OperationProgress>(4, _omitFieldNames ? '' : 'progress', subBuilder: $549.OperationProgress.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'cancelTime', subBuilder: $302.Timestamp.create)
+    ..e<RestoreSourceType>(
+        2, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE,
+        defaultOrMaker: RestoreSourceType.TYPE_UNSPECIFIED,
+        valueOf: RestoreSourceType.valueOf,
+        enumValues: RestoreSourceType.values)
+    ..aOM<$245.BackupInfo>(3, _omitFieldNames ? '' : 'backupInfo',
+        subBuilder: $245.BackupInfo.create)
+    ..aOM<$549.OperationProgress>(4, _omitFieldNames ? '' : 'progress',
+        subBuilder: $549.OperationProgress.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'optimizeDatabaseOperationName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  RestoreDatabaseMetadata clone() => RestoreDatabaseMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RestoreDatabaseMetadata copyWith(void Function(RestoreDatabaseMetadata) updates) => super.copyWith((message) => updates(message as RestoreDatabaseMetadata)) as RestoreDatabaseMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RestoreDatabaseMetadata clone() =>
+      RestoreDatabaseMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RestoreDatabaseMetadata copyWith(
+          void Function(RestoreDatabaseMetadata) updates) =>
+      super.copyWith((message) => updates(message as RestoreDatabaseMetadata))
+          as RestoreDatabaseMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestoreDatabaseMetadata create() => RestoreDatabaseMetadata._();
   RestoreDatabaseMetadata createEmptyInstance() => create();
-  static $pb.PbList<RestoreDatabaseMetadata> createRepeated() => $pb.PbList<RestoreDatabaseMetadata>();
+  static $pb.PbList<RestoreDatabaseMetadata> createRepeated() =>
+      $pb.PbList<RestoreDatabaseMetadata>();
   @$core.pragma('dart2js:noInline')
-  static RestoreDatabaseMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RestoreDatabaseMetadata>(create);
+  static RestoreDatabaseMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RestoreDatabaseMetadata>(create);
   static RestoreDatabaseMetadata? _defaultInstance;
 
-  RestoreDatabaseMetadata_SourceInfo whichSourceInfo() => _RestoreDatabaseMetadata_SourceInfoByTag[$_whichOneof(0)]!;
+  RestoreDatabaseMetadata_SourceInfo whichSourceInfo() =>
+      _RestoreDatabaseMetadata_SourceInfoByTag[$_whichOneof(0)]!;
   void clearSourceInfo() => clearField($_whichOneof(0));
 
   /// Name of the database being created and restored to.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1979,7 +2399,10 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   RestoreSourceType get sourceType => $_getN(1);
   @$pb.TagNumber(2)
-  set sourceType(RestoreSourceType v) { setField(2, v); }
+  set sourceType(RestoreSourceType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSourceType() => $_has(1);
   @$pb.TagNumber(2)
@@ -1989,7 +2412,10 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $245.BackupInfo get backupInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set backupInfo($245.BackupInfo v) { setField(3, v); }
+  set backupInfo($245.BackupInfo v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBackupInfo() => $_has(2);
   @$pb.TagNumber(3)
@@ -2003,7 +2429,10 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $549.OperationProgress get progress => $_getN(3);
   @$pb.TagNumber(4)
-  set progress($549.OperationProgress v) { setField(4, v); }
+  set progress($549.OperationProgress v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasProgress() => $_has(3);
   @$pb.TagNumber(4)
@@ -2026,7 +2455,10 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get cancelTime => $_getN(4);
   @$pb.TagNumber(5)
-  set cancelTime($302.Timestamp v) { setField(5, v); }
+  set cancelTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCancelTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -2048,7 +2480,10 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get optimizeDatabaseOperationName => $_getSZ(5);
   @$pb.TagNumber(6)
-  set optimizeDatabaseOperationName($core.String v) { $_setString(5, v); }
+  set optimizeDatabaseOperationName($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasOptimizeDatabaseOperationName() => $_has(5);
   @$pb.TagNumber(6)
@@ -2074,41 +2509,59 @@ class OptimizeRestoredDatabaseMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   OptimizeRestoredDatabaseMetadata._() : super();
-  factory OptimizeRestoredDatabaseMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OptimizeRestoredDatabaseMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OptimizeRestoredDatabaseMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OptimizeRestoredDatabaseMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeRestoredDatabaseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OptimizeRestoredDatabaseMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$549.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $549.OperationProgress.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$549.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $549.OperationProgress.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OptimizeRestoredDatabaseMetadata clone() => OptimizeRestoredDatabaseMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OptimizeRestoredDatabaseMetadata copyWith(void Function(OptimizeRestoredDatabaseMetadata) updates) => super.copyWith((message) => updates(message as OptimizeRestoredDatabaseMetadata)) as OptimizeRestoredDatabaseMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OptimizeRestoredDatabaseMetadata clone() =>
+      OptimizeRestoredDatabaseMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OptimizeRestoredDatabaseMetadata copyWith(
+          void Function(OptimizeRestoredDatabaseMetadata) updates) =>
+      super.copyWith(
+              (message) => updates(message as OptimizeRestoredDatabaseMetadata))
+          as OptimizeRestoredDatabaseMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static OptimizeRestoredDatabaseMetadata create() => OptimizeRestoredDatabaseMetadata._();
+  static OptimizeRestoredDatabaseMetadata create() =>
+      OptimizeRestoredDatabaseMetadata._();
   OptimizeRestoredDatabaseMetadata createEmptyInstance() => create();
-  static $pb.PbList<OptimizeRestoredDatabaseMetadata> createRepeated() => $pb.PbList<OptimizeRestoredDatabaseMetadata>();
+  static $pb.PbList<OptimizeRestoredDatabaseMetadata> createRepeated() =>
+      $pb.PbList<OptimizeRestoredDatabaseMetadata>();
   @$core.pragma('dart2js:noInline')
-  static OptimizeRestoredDatabaseMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OptimizeRestoredDatabaseMetadata>(create);
+  static OptimizeRestoredDatabaseMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OptimizeRestoredDatabaseMetadata>(
+          create);
   static OptimizeRestoredDatabaseMetadata? _defaultInstance;
 
   /// Name of the restored database being optimized.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2118,7 +2571,10 @@ class OptimizeRestoredDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $549.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($549.OperationProgress v) { setField(2, v); }
+  set progress($549.OperationProgress v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
@@ -2139,33 +2595,42 @@ class DatabaseRole extends $pb.GeneratedMessage {
     return $result;
   }
   DatabaseRole._() : super();
-  factory DatabaseRole.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DatabaseRole.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DatabaseRole.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DatabaseRole.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatabaseRole', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DatabaseRole',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DatabaseRole clone() => DatabaseRole()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DatabaseRole copyWith(void Function(DatabaseRole) updates) => super.copyWith((message) => updates(message as DatabaseRole)) as DatabaseRole;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DatabaseRole copyWith(void Function(DatabaseRole) updates) =>
+      super.copyWith((message) => updates(message as DatabaseRole))
+          as DatabaseRole;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DatabaseRole create() => DatabaseRole._();
   DatabaseRole createEmptyInstance() => create();
-  static $pb.PbList<DatabaseRole> createRepeated() => $pb.PbList<DatabaseRole>();
+  static $pb.PbList<DatabaseRole> createRepeated() =>
+      $pb.PbList<DatabaseRole>();
   @$core.pragma('dart2js:noInline')
-  static DatabaseRole getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DatabaseRole>(create);
+  static DatabaseRole getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DatabaseRole>(create);
   static DatabaseRole? _defaultInstance;
 
   /// Required. The name of the database role. Values are of the form
@@ -2174,7 +2639,10 @@ class DatabaseRole extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2202,35 +2670,46 @@ class ListDatabaseRolesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDatabaseRolesRequest._() : super();
-  factory ListDatabaseRolesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDatabaseRolesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDatabaseRolesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDatabaseRolesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatabaseRolesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDatabaseRolesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDatabaseRolesRequest clone() => ListDatabaseRolesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDatabaseRolesRequest copyWith(void Function(ListDatabaseRolesRequest) updates) => super.copyWith((message) => updates(message as ListDatabaseRolesRequest)) as ListDatabaseRolesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDatabaseRolesRequest clone() =>
+      ListDatabaseRolesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDatabaseRolesRequest copyWith(
+          void Function(ListDatabaseRolesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListDatabaseRolesRequest))
+          as ListDatabaseRolesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDatabaseRolesRequest create() => ListDatabaseRolesRequest._();
   ListDatabaseRolesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDatabaseRolesRequest> createRepeated() => $pb.PbList<ListDatabaseRolesRequest>();
+  static $pb.PbList<ListDatabaseRolesRequest> createRepeated() =>
+      $pb.PbList<ListDatabaseRolesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDatabaseRolesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDatabaseRolesRequest>(create);
+  static ListDatabaseRolesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDatabaseRolesRequest>(create);
   static ListDatabaseRolesRequest? _defaultInstance;
 
   /// Required. The database whose roles should be listed.
@@ -2239,7 +2718,10 @@ class ListDatabaseRolesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -2250,7 +2732,10 @@ class ListDatabaseRolesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -2263,7 +2748,10 @@ class ListDatabaseRolesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -2287,34 +2775,47 @@ class ListDatabaseRolesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDatabaseRolesResponse._() : super();
-  factory ListDatabaseRolesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDatabaseRolesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDatabaseRolesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDatabaseRolesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatabaseRolesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
-    ..pc<DatabaseRole>(1, _omitFieldNames ? '' : 'databaseRoles', $pb.PbFieldType.PM, subBuilder: DatabaseRole.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDatabaseRolesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
+      createEmptyInstance: create)
+    ..pc<DatabaseRole>(
+        1, _omitFieldNames ? '' : 'databaseRoles', $pb.PbFieldType.PM,
+        subBuilder: DatabaseRole.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDatabaseRolesResponse clone() => ListDatabaseRolesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDatabaseRolesResponse copyWith(void Function(ListDatabaseRolesResponse) updates) => super.copyWith((message) => updates(message as ListDatabaseRolesResponse)) as ListDatabaseRolesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDatabaseRolesResponse clone() =>
+      ListDatabaseRolesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDatabaseRolesResponse copyWith(
+          void Function(ListDatabaseRolesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListDatabaseRolesResponse))
+          as ListDatabaseRolesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDatabaseRolesResponse create() => ListDatabaseRolesResponse._();
   ListDatabaseRolesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDatabaseRolesResponse> createRepeated() => $pb.PbList<ListDatabaseRolesResponse>();
+  static $pb.PbList<ListDatabaseRolesResponse> createRepeated() =>
+      $pb.PbList<ListDatabaseRolesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDatabaseRolesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDatabaseRolesResponse>(create);
+  static ListDatabaseRolesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDatabaseRolesResponse>(create);
   static ListDatabaseRolesResponse? _defaultInstance;
 
   /// Database roles that matched the request.
@@ -2327,13 +2828,16 @@ class ListDatabaseRolesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -23,32 +23,41 @@ export 'instance.pbenum.dart';
 class Instance_Liveness extends $pb.GeneratedMessage {
   factory Instance_Liveness() => create();
   Instance_Liveness._() : super();
-  factory Instance_Liveness.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Instance_Liveness.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Instance_Liveness.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Instance_Liveness.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Instance.Liveness', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Instance.Liveness',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Instance_Liveness clone() => Instance_Liveness()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Instance_Liveness copyWith(void Function(Instance_Liveness) updates) => super.copyWith((message) => updates(message as Instance_Liveness)) as Instance_Liveness;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Instance_Liveness copyWith(void Function(Instance_Liveness) updates) =>
+      super.copyWith((message) => updates(message as Instance_Liveness))
+          as Instance_Liveness;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Instance_Liveness create() => Instance_Liveness._();
   Instance_Liveness createEmptyInstance() => create();
-  static $pb.PbList<Instance_Liveness> createRepeated() => $pb.PbList<Instance_Liveness>();
+  static $pb.PbList<Instance_Liveness> createRepeated() =>
+      $pb.PbList<Instance_Liveness>();
   @$core.pragma('dart2js:noInline')
-  static Instance_Liveness getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance_Liveness>(create);
+  static Instance_Liveness getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Instance_Liveness>(create);
   static Instance_Liveness? _defaultInstance;
 }
 
@@ -129,40 +138,57 @@ class Instance extends $pb.GeneratedMessage {
     return $result;
   }
   Instance._() : super();
-  factory Instance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Instance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Instance.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Instance.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Instance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Instance',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'appEngineRelease')
-    ..e<Instance_Availability>(4, _omitFieldNames ? '' : 'availability', $pb.PbFieldType.OE, defaultOrMaker: Instance_Availability.UNSPECIFIED, valueOf: Instance_Availability.valueOf, enumValues: Instance_Availability.values)
+    ..e<Instance_Availability>(
+        4, _omitFieldNames ? '' : 'availability', $pb.PbFieldType.OE,
+        defaultOrMaker: Instance_Availability.UNSPECIFIED,
+        valueOf: Instance_Availability.valueOf,
+        enumValues: Instance_Availability.values)
     ..aOS(5, _omitFieldNames ? '' : 'vmName')
     ..aOS(6, _omitFieldNames ? '' : 'vmZoneName')
     ..aOS(7, _omitFieldNames ? '' : 'vmId')
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.O3)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.O3)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'qps', $pb.PbFieldType.OF)
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'averageLatency', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'averageLatency', $pb.PbFieldType.O3)
     ..aInt64(13, _omitFieldNames ? '' : 'memoryUsage')
     ..aOS(14, _omitFieldNames ? '' : 'vmStatus')
     ..aOB(15, _omitFieldNames ? '' : 'vmDebugEnabled')
     ..aOS(16, _omitFieldNames ? '' : 'vmIp')
-    ..e<Instance_Liveness_LivenessState>(17, _omitFieldNames ? '' : 'vmLiveness', $pb.PbFieldType.OE, defaultOrMaker: Instance_Liveness_LivenessState.LIVENESS_STATE_UNSPECIFIED, valueOf: Instance_Liveness_LivenessState.valueOf, enumValues: Instance_Liveness_LivenessState.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<Instance_Liveness_LivenessState>(
+        17, _omitFieldNames ? '' : 'vmLiveness', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Instance_Liveness_LivenessState.LIVENESS_STATE_UNSPECIFIED,
+        valueOf: Instance_Liveness_LivenessState.valueOf,
+        enumValues: Instance_Liveness_LivenessState.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Instance copyWith(void Function(Instance) updates) => super.copyWith((message) => updates(message as Instance)) as Instance;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Instance copyWith(void Function(Instance) updates) =>
+      super.copyWith((message) => updates(message as Instance)) as Instance;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -171,7 +197,8 @@ class Instance extends $pb.GeneratedMessage {
   Instance createEmptyInstance() => create();
   static $pb.PbList<Instance> createRepeated() => $pb.PbList<Instance>();
   @$core.pragma('dart2js:noInline')
-  static Instance getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
+  static Instance getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
   static Instance? _defaultInstance;
 
   /// Output only. Full path to the Instance resource in the API.
@@ -179,7 +206,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -190,7 +220,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -200,7 +233,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get appEngineRelease => $_getSZ(2);
   @$pb.TagNumber(3)
-  set appEngineRelease($core.String v) { $_setString(2, v); }
+  set appEngineRelease($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAppEngineRelease() => $_has(2);
   @$pb.TagNumber(3)
@@ -210,7 +246,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Instance_Availability get availability => $_getN(3);
   @$pb.TagNumber(4)
-  set availability(Instance_Availability v) { setField(4, v); }
+  set availability(Instance_Availability v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAvailability() => $_has(3);
   @$pb.TagNumber(4)
@@ -221,7 +260,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get vmName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set vmName($core.String v) { $_setString(4, v); }
+  set vmName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasVmName() => $_has(4);
   @$pb.TagNumber(5)
@@ -232,7 +274,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get vmZoneName => $_getSZ(5);
   @$pb.TagNumber(6)
-  set vmZoneName($core.String v) { $_setString(5, v); }
+  set vmZoneName($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasVmZoneName() => $_has(5);
   @$pb.TagNumber(6)
@@ -243,7 +288,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get vmId => $_getSZ(6);
   @$pb.TagNumber(7)
-  set vmId($core.String v) { $_setString(6, v); }
+  set vmId($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasVmId() => $_has(6);
   @$pb.TagNumber(7)
@@ -255,7 +303,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get startTime => $_getN(7);
   @$pb.TagNumber(8)
-  set startTime($302.Timestamp v) { setField(8, v); }
+  set startTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(7);
   @$pb.TagNumber(8)
@@ -267,7 +318,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get requests => $_getIZ(8);
   @$pb.TagNumber(9)
-  set requests($core.int v) { $_setSignedInt32(8, v); }
+  set requests($core.int v) {
+    $_setSignedInt32(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasRequests() => $_has(8);
   @$pb.TagNumber(9)
@@ -277,7 +331,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get errors => $_getIZ(9);
   @$pb.TagNumber(10)
-  set errors($core.int v) { $_setSignedInt32(9, v); }
+  set errors($core.int v) {
+    $_setSignedInt32(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasErrors() => $_has(9);
   @$pb.TagNumber(10)
@@ -287,7 +344,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.double get qps => $_getN(10);
   @$pb.TagNumber(11)
-  set qps($core.double v) { $_setFloat(10, v); }
+  set qps($core.double v) {
+    $_setFloat(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasQps() => $_has(10);
   @$pb.TagNumber(11)
@@ -297,7 +357,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get averageLatency => $_getIZ(11);
   @$pb.TagNumber(12)
-  set averageLatency($core.int v) { $_setSignedInt32(11, v); }
+  set averageLatency($core.int v) {
+    $_setSignedInt32(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasAverageLatency() => $_has(11);
   @$pb.TagNumber(12)
@@ -307,7 +370,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $fixnum.Int64 get memoryUsage => $_getI64(12);
   @$pb.TagNumber(13)
-  set memoryUsage($fixnum.Int64 v) { $_setInt64(12, v); }
+  set memoryUsage($fixnum.Int64 v) {
+    $_setInt64(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasMemoryUsage() => $_has(12);
   @$pb.TagNumber(13)
@@ -318,7 +384,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get vmStatus => $_getSZ(13);
   @$pb.TagNumber(14)
-  set vmStatus($core.String v) { $_setString(13, v); }
+  set vmStatus($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasVmStatus() => $_has(13);
   @$pb.TagNumber(14)
@@ -329,7 +398,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool get vmDebugEnabled => $_getBF(14);
   @$pb.TagNumber(15)
-  set vmDebugEnabled($core.bool v) { $_setBool(14, v); }
+  set vmDebugEnabled($core.bool v) {
+    $_setBool(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasVmDebugEnabled() => $_has(14);
   @$pb.TagNumber(15)
@@ -340,7 +412,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get vmIp => $_getSZ(15);
   @$pb.TagNumber(16)
-  set vmIp($core.String v) { $_setString(15, v); }
+  set vmIp($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasVmIp() => $_has(15);
   @$pb.TagNumber(16)
@@ -351,13 +426,16 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   Instance_Liveness_LivenessState get vmLiveness => $_getN(16);
   @$pb.TagNumber(17)
-  set vmLiveness(Instance_Liveness_LivenessState v) { setField(17, v); }
+  set vmLiveness(Instance_Liveness_LivenessState v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasVmLiveness() => $_has(16);
   @$pb.TagNumber(17)
   void clearVmLiveness() => clearField(17);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

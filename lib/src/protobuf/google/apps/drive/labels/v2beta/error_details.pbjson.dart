@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const InvalidArgument$json = {
   '1': 'InvalidArgument',
   '2': [
-    {'1': 'field_violations', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2beta.InvalidArgument.FieldViolation', '10': 'fieldViolations'},
+    {
+      '1': 'field_violations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.InvalidArgument.FieldViolation',
+      '10': 'fieldViolations'
+    },
   ],
   '3': [InvalidArgument_FieldViolation$json],
 };
@@ -27,7 +34,15 @@ const InvalidArgument_FieldViolation$json = {
   '1': 'FieldViolation',
   '2': [
     {'1': 'field', '3': 1, '4': 1, '5': 9, '10': 'field'},
-    {'1': 'reason', '3': 2, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2beta.InvalidArgument.FieldViolation.Reason', '10': 'reason'},
+    {
+      '1': 'reason',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.apps.drive.labels.v2beta.InvalidArgument.FieldViolation.Reason',
+      '10': 'reason'
+    },
     {'1': 'display_message', '3': 3, '4': 1, '5': 9, '10': 'displayMessage'},
   ],
   '4': [InvalidArgument_FieldViolation_Reason$json],
@@ -64,7 +79,14 @@ final $typed_data.Uint8List invalidArgumentDescriptor = $convert.base64Decode(
 const PreconditionFailure$json = {
   '1': 'PreconditionFailure',
   '2': [
-    {'1': 'violation', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.labels.v2beta.PreconditionFailure.Violation', '10': 'violation'},
+    {
+      '1': 'violation',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.labels.v2beta.PreconditionFailure.Violation',
+      '10': 'violation'
+    },
   ],
   '3': [PreconditionFailure_Violation$json],
 };
@@ -74,7 +96,15 @@ const PreconditionFailure_Violation$json = {
   '1': 'Violation',
   '2': [
     {'1': 'field', '3': 1, '4': 1, '5': 9, '10': 'field'},
-    {'1': 'reason', '3': 2, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2beta.PreconditionFailure.Violation.Reason', '10': 'reason'},
+    {
+      '1': 'reason',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.apps.drive.labels.v2beta.PreconditionFailure.Violation.Reason',
+      '10': 'reason'
+    },
     {'1': 'display_message', '3': 3, '4': 1, '5': 9, '10': 'displayMessage'},
   ],
   '4': [PreconditionFailure_Violation_Reason$json],
@@ -113,4 +143,3 @@ final $typed_data.Uint8List preconditionFailureDescriptor = $convert.base64Decod
     'RFX01PUkVfTEFCRUxTEAgSJgoiQ0FOTk9UX0NIQU5HRV9QVUJMSVNIRURfRklFTERfVFlQRRAJ'
     'EiIKHkNBTk5PVF9NT0RJRllfTE9DS0VEX0NPTVBPTkVOVBAKEiIKHlVOU1VQUE9SVF9FTkFCTE'
     'VEX0FQUF9TRVRUSU5HUxAL');
-

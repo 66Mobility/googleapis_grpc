@@ -17,16 +17,70 @@ import 'dart:typed_data' as $typed_data;
 const Card$json = {
   '1': 'Card',
   '2': [
-    {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.google.apps.card.v1.Card.CardHeader', '10': 'header'},
-    {'1': 'sections', '3': 2, '4': 3, '5': 11, '6': '.google.apps.card.v1.Card.Section', '10': 'sections'},
-    {'1': 'section_divider_style', '3': 9, '4': 1, '5': 14, '6': '.google.apps.card.v1.Card.DividerStyle', '10': 'sectionDividerStyle'},
-    {'1': 'card_actions', '3': 3, '4': 3, '5': 11, '6': '.google.apps.card.v1.Card.CardAction', '10': 'cardActions'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card.CardHeader',
+      '10': 'header'
+    },
+    {
+      '1': 'sections',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card.Section',
+      '10': 'sections'
+    },
+    {
+      '1': 'section_divider_style',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Card.DividerStyle',
+      '10': 'sectionDividerStyle'
+    },
+    {
+      '1': 'card_actions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card.CardAction',
+      '10': 'cardActions'
+    },
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'fixed_footer', '3': 5, '4': 1, '5': 11, '6': '.google.apps.card.v1.Card.CardFixedFooter', '10': 'fixedFooter'},
-    {'1': 'display_style', '3': 6, '4': 1, '5': 14, '6': '.google.apps.card.v1.Card.DisplayStyle', '10': 'displayStyle'},
-    {'1': 'peek_card_header', '3': 7, '4': 1, '5': 11, '6': '.google.apps.card.v1.Card.CardHeader', '10': 'peekCardHeader'},
+    {
+      '1': 'fixed_footer',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card.CardFixedFooter',
+      '10': 'fixedFooter'
+    },
+    {
+      '1': 'display_style',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Card.DisplayStyle',
+      '10': 'displayStyle'
+    },
+    {
+      '1': 'peek_card_header',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card.CardHeader',
+      '10': 'peekCardHeader'
+    },
   ],
-  '3': [Card_CardHeader$json, Card_Section$json, Card_CardAction$json, Card_CardFixedFooter$json],
+  '3': [
+    Card_CardHeader$json,
+    Card_Section$json,
+    Card_CardAction$json,
+    Card_CardFixedFooter$json
+  ],
   '4': [Card_DividerStyle$json, Card_DisplayStyle$json],
 };
 
@@ -36,7 +90,14 @@ const Card_CardHeader$json = {
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'subtitle', '3': 2, '4': 1, '5': 9, '10': 'subtitle'},
-    {'1': 'image_type', '3': 3, '4': 1, '5': 14, '6': '.google.apps.card.v1.Widget.ImageType', '10': 'imageType'},
+    {
+      '1': 'image_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Widget.ImageType',
+      '10': 'imageType'
+    },
     {'1': 'image_url', '3': 4, '4': 1, '5': 9, '10': 'imageUrl'},
     {'1': 'image_alt_text', '3': 5, '4': 1, '5': 9, '10': 'imageAltText'},
   ],
@@ -47,9 +108,22 @@ const Card_Section$json = {
   '1': 'Section',
   '2': [
     {'1': 'header', '3': 1, '4': 1, '5': 9, '10': 'header'},
-    {'1': 'widgets', '3': 2, '4': 3, '5': 11, '6': '.google.apps.card.v1.Widget', '10': 'widgets'},
+    {
+      '1': 'widgets',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Widget',
+      '10': 'widgets'
+    },
     {'1': 'collapsible', '3': 5, '4': 1, '5': 8, '10': 'collapsible'},
-    {'1': 'uncollapsible_widgets_count', '3': 6, '4': 1, '5': 5, '10': 'uncollapsibleWidgetsCount'},
+    {
+      '1': 'uncollapsible_widgets_count',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '10': 'uncollapsibleWidgetsCount'
+    },
   ],
 };
 
@@ -58,7 +132,14 @@ const Card_CardAction$json = {
   '1': 'CardAction',
   '2': [
     {'1': 'action_label', '3': 1, '4': 1, '5': 9, '10': 'actionLabel'},
-    {'1': 'on_click', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.OnClick', '10': 'onClick'},
+    {
+      '1': 'on_click',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.OnClick',
+      '10': 'onClick'
+    },
   ],
 };
 
@@ -66,8 +147,22 @@ const Card_CardAction$json = {
 const Card_CardFixedFooter$json = {
   '1': 'CardFixedFooter',
   '2': [
-    {'1': 'primary_button', '3': 1, '4': 1, '5': 11, '6': '.google.apps.card.v1.Button', '10': 'primaryButton'},
-    {'1': 'secondary_button', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.Button', '10': 'secondaryButton'},
+    {
+      '1': 'primary_button',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Button',
+      '10': 'primaryButton'
+    },
+    {
+      '1': 'secondary_button',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Button',
+      '10': 'secondaryButton'
+    },
   ],
 };
 
@@ -123,17 +218,104 @@ final $typed_data.Uint8List cardDescriptor = $convert.base64Decode(
 const Widget$json = {
   '1': 'Widget',
   '2': [
-    {'1': 'text_paragraph', '3': 1, '4': 1, '5': 11, '6': '.google.apps.card.v1.TextParagraph', '9': 0, '10': 'textParagraph'},
-    {'1': 'image', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.Image', '9': 0, '10': 'image'},
-    {'1': 'decorated_text', '3': 3, '4': 1, '5': 11, '6': '.google.apps.card.v1.DecoratedText', '9': 0, '10': 'decoratedText'},
-    {'1': 'button_list', '3': 4, '4': 1, '5': 11, '6': '.google.apps.card.v1.ButtonList', '9': 0, '10': 'buttonList'},
-    {'1': 'text_input', '3': 5, '4': 1, '5': 11, '6': '.google.apps.card.v1.TextInput', '9': 0, '10': 'textInput'},
-    {'1': 'selection_input', '3': 6, '4': 1, '5': 11, '6': '.google.apps.card.v1.SelectionInput', '9': 0, '10': 'selectionInput'},
-    {'1': 'date_time_picker', '3': 7, '4': 1, '5': 11, '6': '.google.apps.card.v1.DateTimePicker', '9': 0, '10': 'dateTimePicker'},
-    {'1': 'divider', '3': 9, '4': 1, '5': 11, '6': '.google.apps.card.v1.Divider', '9': 0, '10': 'divider'},
-    {'1': 'grid', '3': 10, '4': 1, '5': 11, '6': '.google.apps.card.v1.Grid', '9': 0, '10': 'grid'},
-    {'1': 'columns', '3': 11, '4': 1, '5': 11, '6': '.google.apps.card.v1.Columns', '9': 0, '10': 'columns'},
-    {'1': 'horizontal_alignment', '3': 8, '4': 1, '5': 14, '6': '.google.apps.card.v1.Widget.HorizontalAlignment', '10': 'horizontalAlignment'},
+    {
+      '1': 'text_paragraph',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.TextParagraph',
+      '9': 0,
+      '10': 'textParagraph'
+    },
+    {
+      '1': 'image',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Image',
+      '9': 0,
+      '10': 'image'
+    },
+    {
+      '1': 'decorated_text',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.DecoratedText',
+      '9': 0,
+      '10': 'decoratedText'
+    },
+    {
+      '1': 'button_list',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.ButtonList',
+      '9': 0,
+      '10': 'buttonList'
+    },
+    {
+      '1': 'text_input',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.TextInput',
+      '9': 0,
+      '10': 'textInput'
+    },
+    {
+      '1': 'selection_input',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.SelectionInput',
+      '9': 0,
+      '10': 'selectionInput'
+    },
+    {
+      '1': 'date_time_picker',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.DateTimePicker',
+      '9': 0,
+      '10': 'dateTimePicker'
+    },
+    {
+      '1': 'divider',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Divider',
+      '9': 0,
+      '10': 'divider'
+    },
+    {
+      '1': 'grid',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Grid',
+      '9': 0,
+      '10': 'grid'
+    },
+    {
+      '1': 'columns',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Columns',
+      '9': 0,
+      '10': 'columns'
+    },
+    {
+      '1': 'horizontal_alignment',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Widget.HorizontalAlignment',
+      '10': 'horizontalAlignment'
+    },
   ],
   '4': [Widget_ImageType$json, Widget_HorizontalAlignment$json],
   '8': [
@@ -190,15 +372,22 @@ const TextParagraph$json = {
 };
 
 /// Descriptor for `TextParagraph`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List textParagraphDescriptor = $convert.base64Decode(
-    'Cg1UZXh0UGFyYWdyYXBoEhIKBHRleHQYASABKAlSBHRleHQ=');
+final $typed_data.Uint8List textParagraphDescriptor =
+    $convert.base64Decode('Cg1UZXh0UGFyYWdyYXBoEhIKBHRleHQYASABKAlSBHRleHQ=');
 
 @$core.Deprecated('Use imageDescriptor instead')
 const Image$json = {
   '1': 'Image',
   '2': [
     {'1': 'image_url', '3': 1, '4': 1, '5': 9, '10': 'imageUrl'},
-    {'1': 'on_click', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.OnClick', '10': 'onClick'},
+    {
+      '1': 'on_click',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.OnClick',
+      '10': 'onClick'
+    },
     {'1': 'alt_text', '3': 3, '4': 1, '5': 9, '10': 'altText'},
   ],
 };
@@ -215,8 +404,8 @@ const Divider$json = {
 };
 
 /// Descriptor for `Divider`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dividerDescriptor = $convert.base64Decode(
-    'CgdEaXZpZGVy');
+final $typed_data.Uint8List dividerDescriptor =
+    $convert.base64Decode('CgdEaXZpZGVy');
 
 @$core.Deprecated('Use decoratedTextDescriptor instead')
 const DecoratedText$json = {
@@ -231,15 +420,53 @@ const DecoratedText$json = {
       '8': {'3': true},
       '10': 'icon',
     },
-    {'1': 'start_icon', '3': 12, '4': 1, '5': 11, '6': '.google.apps.card.v1.Icon', '10': 'startIcon'},
+    {
+      '1': 'start_icon',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Icon',
+      '10': 'startIcon'
+    },
     {'1': 'top_label', '3': 3, '4': 1, '5': 9, '10': 'topLabel'},
     {'1': 'text', '3': 4, '4': 1, '5': 9, '10': 'text'},
     {'1': 'wrap_text', '3': 5, '4': 1, '5': 8, '10': 'wrapText'},
     {'1': 'bottom_label', '3': 6, '4': 1, '5': 9, '10': 'bottomLabel'},
-    {'1': 'on_click', '3': 7, '4': 1, '5': 11, '6': '.google.apps.card.v1.OnClick', '10': 'onClick'},
-    {'1': 'button', '3': 8, '4': 1, '5': 11, '6': '.google.apps.card.v1.Button', '9': 0, '10': 'button'},
-    {'1': 'switch_control', '3': 9, '4': 1, '5': 11, '6': '.google.apps.card.v1.DecoratedText.SwitchControl', '9': 0, '10': 'switchControl'},
-    {'1': 'end_icon', '3': 11, '4': 1, '5': 11, '6': '.google.apps.card.v1.Icon', '9': 0, '10': 'endIcon'},
+    {
+      '1': 'on_click',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.OnClick',
+      '10': 'onClick'
+    },
+    {
+      '1': 'button',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Button',
+      '9': 0,
+      '10': 'button'
+    },
+    {
+      '1': 'switch_control',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.DecoratedText.SwitchControl',
+      '9': 0,
+      '10': 'switchControl'
+    },
+    {
+      '1': 'end_icon',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Icon',
+      '9': 0,
+      '10': 'endIcon'
+    },
   ],
   '3': [DecoratedText_SwitchControl$json],
   '8': [
@@ -254,8 +481,22 @@ const DecoratedText_SwitchControl$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
     {'1': 'selected', '3': 3, '4': 1, '5': 8, '10': 'selected'},
-    {'1': 'on_change_action', '3': 4, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '10': 'onChangeAction'},
-    {'1': 'control_type', '3': 5, '4': 1, '5': 14, '6': '.google.apps.card.v1.DecoratedText.SwitchControl.ControlType', '10': 'controlType'},
+    {
+      '1': 'on_change_action',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '10': 'onChangeAction'
+    },
+    {
+      '1': 'control_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.DecoratedText.SwitchControl.ControlType',
+      '10': 'controlType'
+    },
   ],
   '4': [DecoratedText_SwitchControl_ControlType$json],
 };
@@ -296,10 +537,38 @@ const TextInput$json = {
     {'1': 'label', '3': 2, '4': 1, '5': 9, '10': 'label'},
     {'1': 'hint_text', '3': 3, '4': 1, '5': 9, '10': 'hintText'},
     {'1': 'value', '3': 4, '4': 1, '5': 9, '10': 'value'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.apps.card.v1.TextInput.Type', '10': 'type'},
-    {'1': 'on_change_action', '3': 6, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '10': 'onChangeAction'},
-    {'1': 'initial_suggestions', '3': 7, '4': 1, '5': 11, '6': '.google.apps.card.v1.Suggestions', '10': 'initialSuggestions'},
-    {'1': 'auto_complete_action', '3': 8, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '10': 'autoCompleteAction'},
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.TextInput.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'on_change_action',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '10': 'onChangeAction'
+    },
+    {
+      '1': 'initial_suggestions',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Suggestions',
+      '10': 'initialSuggestions'
+    },
+    {
+      '1': 'auto_complete_action',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '10': 'autoCompleteAction'
+    },
     {'1': 'placeholder_text', '3': 12, '4': 1, '5': 9, '10': 'placeholderText'},
   ],
   '4': [TextInput_Type$json],
@@ -330,7 +599,14 @@ final $typed_data.Uint8List textInputDescriptor = $convert.base64Decode(
 const Suggestions$json = {
   '1': 'Suggestions',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.apps.card.v1.Suggestions.SuggestionItem', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Suggestions.SuggestionItem',
+      '10': 'items'
+    },
   ],
   '3': [Suggestions_SuggestionItem$json],
 };
@@ -356,7 +632,14 @@ final $typed_data.Uint8List suggestionsDescriptor = $convert.base64Decode(
 const ButtonList$json = {
   '1': 'ButtonList',
   '2': [
-    {'1': 'buttons', '3': 1, '4': 3, '5': 11, '6': '.google.apps.card.v1.Button', '10': 'buttons'},
+    {
+      '1': 'buttons',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Button',
+      '10': 'buttons'
+    },
   ],
 };
 
@@ -371,15 +654,67 @@ const SelectionInput$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'label', '3': 2, '4': 1, '5': 9, '10': 'label'},
-    {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.google.apps.card.v1.SelectionInput.SelectionType', '10': 'type'},
-    {'1': 'items', '3': 4, '4': 3, '5': 11, '6': '.google.apps.card.v1.SelectionInput.SelectionItem', '10': 'items'},
-    {'1': 'on_change_action', '3': 5, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '10': 'onChangeAction'},
-    {'1': 'multi_select_max_selected_items', '3': 6, '4': 1, '5': 5, '10': 'multiSelectMaxSelectedItems'},
-    {'1': 'multi_select_min_query_length', '3': 7, '4': 1, '5': 5, '10': 'multiSelectMinQueryLength'},
-    {'1': 'external_data_source', '3': 8, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '9': 0, '10': 'externalDataSource'},
-    {'1': 'platform_data_source', '3': 9, '4': 1, '5': 11, '6': '.google.apps.card.v1.SelectionInput.PlatformDataSource', '9': 0, '10': 'platformDataSource'},
+    {
+      '1': 'type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.SelectionInput.SelectionType',
+      '10': 'type'
+    },
+    {
+      '1': 'items',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.SelectionInput.SelectionItem',
+      '10': 'items'
+    },
+    {
+      '1': 'on_change_action',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '10': 'onChangeAction'
+    },
+    {
+      '1': 'multi_select_max_selected_items',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '10': 'multiSelectMaxSelectedItems'
+    },
+    {
+      '1': 'multi_select_min_query_length',
+      '3': 7,
+      '4': 1,
+      '5': 5,
+      '10': 'multiSelectMinQueryLength'
+    },
+    {
+      '1': 'external_data_source',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '9': 0,
+      '10': 'externalDataSource'
+    },
+    {
+      '1': 'platform_data_source',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.SelectionInput.PlatformDataSource',
+      '9': 0,
+      '10': 'platformDataSource'
+    },
   ],
-  '3': [SelectionInput_SelectionItem$json, SelectionInput_PlatformDataSource$json],
+  '3': [
+    SelectionInput_SelectionItem$json,
+    SelectionInput_PlatformDataSource$json
+  ],
   '4': [SelectionInput_SelectionType$json],
   '8': [
     {'1': 'multi_select_data_source'},
@@ -402,7 +737,16 @@ const SelectionInput_SelectionItem$json = {
 const SelectionInput_PlatformDataSource$json = {
   '1': 'PlatformDataSource',
   '2': [
-    {'1': 'common_data_source', '3': 1, '4': 1, '5': 14, '6': '.google.apps.card.v1.SelectionInput.PlatformDataSource.CommonDataSource', '9': 0, '10': 'commonDataSource'},
+    {
+      '1': 'common_data_source',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.apps.card.v1.SelectionInput.PlatformDataSource.CommonDataSource',
+      '9': 0,
+      '10': 'commonDataSource'
+    },
   ],
   '4': [SelectionInput_PlatformDataSource_CommonDataSource$json],
   '8': [
@@ -460,10 +804,30 @@ const DateTimePicker$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'label', '3': 2, '4': 1, '5': 9, '10': 'label'},
-    {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.google.apps.card.v1.DateTimePicker.DateTimePickerType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.DateTimePicker.DateTimePickerType',
+      '10': 'type'
+    },
     {'1': 'value_ms_epoch', '3': 4, '4': 1, '5': 3, '10': 'valueMsEpoch'},
-    {'1': 'timezone_offset_date', '3': 5, '4': 1, '5': 5, '10': 'timezoneOffsetDate'},
-    {'1': 'on_change_action', '3': 6, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '10': 'onChangeAction'},
+    {
+      '1': 'timezone_offset_date',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'timezoneOffsetDate'
+    },
+    {
+      '1': 'on_change_action',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '10': 'onChangeAction'
+    },
   ],
   '4': [DateTimePicker_DateTimePickerType$json],
 };
@@ -493,9 +857,30 @@ const Button$json = {
   '1': 'Button',
   '2': [
     {'1': 'text', '3': 1, '4': 1, '5': 9, '10': 'text'},
-    {'1': 'icon', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.Icon', '10': 'icon'},
-    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.google.type.Color', '10': 'color'},
-    {'1': 'on_click', '3': 4, '4': 1, '5': 11, '6': '.google.apps.card.v1.OnClick', '10': 'onClick'},
+    {
+      '1': 'icon',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Icon',
+      '10': 'icon'
+    },
+    {
+      '1': 'color',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Color',
+      '10': 'color'
+    },
+    {
+      '1': 'on_click',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.OnClick',
+      '10': 'onClick'
+    },
     {'1': 'disabled', '3': 5, '4': 1, '5': 8, '10': 'disabled'},
     {'1': 'alt_text', '3': 6, '4': 1, '5': 9, '10': 'altText'},
   ],
@@ -515,9 +900,24 @@ const Icon$json = {
   '2': [
     {'1': 'known_icon', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'knownIcon'},
     {'1': 'icon_url', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'iconUrl'},
-    {'1': 'material_icon', '3': 5, '4': 1, '5': 11, '6': '.google.apps.card.v1.MaterialIcon', '9': 0, '10': 'materialIcon'},
+    {
+      '1': 'material_icon',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.MaterialIcon',
+      '9': 0,
+      '10': 'materialIcon'
+    },
     {'1': 'alt_text', '3': 3, '4': 1, '5': 9, '10': 'altText'},
-    {'1': 'image_type', '3': 4, '4': 1, '5': 14, '6': '.google.apps.card.v1.Widget.ImageType', '10': 'imageType'},
+    {
+      '1': 'image_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Widget.ImageType',
+      '10': 'imageType'
+    },
   ],
   '8': [
     {'1': 'icons'},
@@ -552,7 +952,14 @@ final $typed_data.Uint8List materialIconDescriptor = $convert.base64Decode(
 const ImageCropStyle$json = {
   '1': 'ImageCropStyle',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.card.v1.ImageCropStyle.ImageCropType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.ImageCropStyle.ImageCropType',
+      '10': 'type'
+    },
     {'1': 'aspect_ratio', '3': 2, '4': 1, '5': 1, '10': 'aspectRatio'},
   ],
   '4': [ImageCropStyle_ImageCropType$json],
@@ -582,8 +989,22 @@ final $typed_data.Uint8List imageCropStyleDescriptor = $convert.base64Decode(
 const BorderStyle$json = {
   '1': 'BorderStyle',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.card.v1.BorderStyle.BorderType', '10': 'type'},
-    {'1': 'stroke_color', '3': 2, '4': 1, '5': 11, '6': '.google.type.Color', '10': 'strokeColor'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.BorderStyle.BorderType',
+      '10': 'type'
+    },
+    {
+      '1': 'stroke_color',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Color',
+      '10': 'strokeColor'
+    },
     {'1': 'corner_radius', '3': 3, '4': 1, '5': 5, '10': 'cornerRadius'},
   ],
   '4': [BorderStyle_BorderType$json],
@@ -613,8 +1034,22 @@ const ImageComponent$json = {
   '2': [
     {'1': 'image_uri', '3': 1, '4': 1, '5': 9, '10': 'imageUri'},
     {'1': 'alt_text', '3': 2, '4': 1, '5': 9, '10': 'altText'},
-    {'1': 'crop_style', '3': 3, '4': 1, '5': 11, '6': '.google.apps.card.v1.ImageCropStyle', '10': 'cropStyle'},
-    {'1': 'border_style', '3': 4, '4': 1, '5': 11, '6': '.google.apps.card.v1.BorderStyle', '10': 'borderStyle'},
+    {
+      '1': 'crop_style',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.ImageCropStyle',
+      '10': 'cropStyle'
+    },
+    {
+      '1': 'border_style',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.BorderStyle',
+      '10': 'borderStyle'
+    },
   ],
 };
 
@@ -630,10 +1065,31 @@ const Grid$json = {
   '1': 'Grid',
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'items', '3': 2, '4': 3, '5': 11, '6': '.google.apps.card.v1.Grid.GridItem', '10': 'items'},
-    {'1': 'border_style', '3': 3, '4': 1, '5': 11, '6': '.google.apps.card.v1.BorderStyle', '10': 'borderStyle'},
+    {
+      '1': 'items',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Grid.GridItem',
+      '10': 'items'
+    },
+    {
+      '1': 'border_style',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.BorderStyle',
+      '10': 'borderStyle'
+    },
     {'1': 'column_count', '3': 4, '4': 1, '5': 5, '10': 'columnCount'},
-    {'1': 'on_click', '3': 5, '4': 1, '5': 11, '6': '.google.apps.card.v1.OnClick', '10': 'onClick'},
+    {
+      '1': 'on_click',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.OnClick',
+      '10': 'onClick'
+    },
   ],
   '3': [Grid_GridItem$json],
 };
@@ -643,10 +1099,24 @@ const Grid_GridItem$json = {
   '1': 'GridItem',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'image', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.ImageComponent', '10': 'image'},
+    {
+      '1': 'image',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.ImageComponent',
+      '10': 'image'
+    },
     {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
     {'1': 'subtitle', '3': 4, '4': 1, '5': 9, '10': 'subtitle'},
-    {'1': 'layout', '3': 9, '4': 1, '5': 14, '6': '.google.apps.card.v1.Grid.GridItem.GridItemLayout', '10': 'layout'},
+    {
+      '1': 'layout',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Grid.GridItem.GridItemLayout',
+      '10': 'layout'
+    },
   ],
   '4': [Grid_GridItem_GridItemLayout$json],
 };
@@ -678,7 +1148,14 @@ final $typed_data.Uint8List gridDescriptor = $convert.base64Decode(
 const Columns$json = {
   '1': 'Columns',
   '2': [
-    {'1': 'column_items', '3': 2, '4': 3, '5': 11, '6': '.google.apps.card.v1.Columns.Column', '10': 'columnItems'},
+    {
+      '1': 'column_items',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Columns.Column',
+      '10': 'columnItems'
+    },
   ],
   '3': [Columns_Column$json],
 };
@@ -687,26 +1164,113 @@ const Columns$json = {
 const Columns_Column$json = {
   '1': 'Column',
   '2': [
-    {'1': 'horizontal_size_style', '3': 1, '4': 1, '5': 14, '6': '.google.apps.card.v1.Columns.Column.HorizontalSizeStyle', '10': 'horizontalSizeStyle'},
-    {'1': 'horizontal_alignment', '3': 2, '4': 1, '5': 14, '6': '.google.apps.card.v1.Widget.HorizontalAlignment', '10': 'horizontalAlignment'},
-    {'1': 'vertical_alignment', '3': 3, '4': 1, '5': 14, '6': '.google.apps.card.v1.Columns.Column.VerticalAlignment', '10': 'verticalAlignment'},
-    {'1': 'widgets', '3': 4, '4': 3, '5': 11, '6': '.google.apps.card.v1.Columns.Column.Widgets', '10': 'widgets'},
+    {
+      '1': 'horizontal_size_style',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Columns.Column.HorizontalSizeStyle',
+      '10': 'horizontalSizeStyle'
+    },
+    {
+      '1': 'horizontal_alignment',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Widget.HorizontalAlignment',
+      '10': 'horizontalAlignment'
+    },
+    {
+      '1': 'vertical_alignment',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Columns.Column.VerticalAlignment',
+      '10': 'verticalAlignment'
+    },
+    {
+      '1': 'widgets',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Columns.Column.Widgets',
+      '10': 'widgets'
+    },
   ],
   '3': [Columns_Column_Widgets$json],
-  '4': [Columns_Column_HorizontalSizeStyle$json, Columns_Column_VerticalAlignment$json],
+  '4': [
+    Columns_Column_HorizontalSizeStyle$json,
+    Columns_Column_VerticalAlignment$json
+  ],
 };
 
 @$core.Deprecated('Use columnsDescriptor instead')
 const Columns_Column_Widgets$json = {
   '1': 'Widgets',
   '2': [
-    {'1': 'text_paragraph', '3': 1, '4': 1, '5': 11, '6': '.google.apps.card.v1.TextParagraph', '9': 0, '10': 'textParagraph'},
-    {'1': 'image', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.Image', '9': 0, '10': 'image'},
-    {'1': 'decorated_text', '3': 3, '4': 1, '5': 11, '6': '.google.apps.card.v1.DecoratedText', '9': 0, '10': 'decoratedText'},
-    {'1': 'button_list', '3': 4, '4': 1, '5': 11, '6': '.google.apps.card.v1.ButtonList', '9': 0, '10': 'buttonList'},
-    {'1': 'text_input', '3': 5, '4': 1, '5': 11, '6': '.google.apps.card.v1.TextInput', '9': 0, '10': 'textInput'},
-    {'1': 'selection_input', '3': 6, '4': 1, '5': 11, '6': '.google.apps.card.v1.SelectionInput', '9': 0, '10': 'selectionInput'},
-    {'1': 'date_time_picker', '3': 7, '4': 1, '5': 11, '6': '.google.apps.card.v1.DateTimePicker', '9': 0, '10': 'dateTimePicker'},
+    {
+      '1': 'text_paragraph',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.TextParagraph',
+      '9': 0,
+      '10': 'textParagraph'
+    },
+    {
+      '1': 'image',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Image',
+      '9': 0,
+      '10': 'image'
+    },
+    {
+      '1': 'decorated_text',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.DecoratedText',
+      '9': 0,
+      '10': 'decoratedText'
+    },
+    {
+      '1': 'button_list',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.ButtonList',
+      '9': 0,
+      '10': 'buttonList'
+    },
+    {
+      '1': 'text_input',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.TextInput',
+      '9': 0,
+      '10': 'textInput'
+    },
+    {
+      '1': 'selection_input',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.SelectionInput',
+      '9': 0,
+      '10': 'selectionInput'
+    },
+    {
+      '1': 'date_time_picker',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.DateTimePicker',
+      '9': 0,
+      '10': 'dateTimePicker'
+    },
   ],
   '8': [
     {'1': 'data'},
@@ -763,10 +1327,42 @@ final $typed_data.Uint8List columnsDescriptor = $convert.base64Decode(
 const OnClick$json = {
   '1': 'OnClick',
   '2': [
-    {'1': 'action', '3': 1, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '9': 0, '10': 'action'},
-    {'1': 'open_link', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.OpenLink', '9': 0, '10': 'openLink'},
-    {'1': 'open_dynamic_link_action', '3': 3, '4': 1, '5': 11, '6': '.google.apps.card.v1.Action', '9': 0, '10': 'openDynamicLinkAction'},
-    {'1': 'card', '3': 4, '4': 1, '5': 11, '6': '.google.apps.card.v1.Card', '9': 0, '10': 'card'},
+    {
+      '1': 'action',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '9': 0,
+      '10': 'action'
+    },
+    {
+      '1': 'open_link',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.OpenLink',
+      '9': 0,
+      '10': 'openLink'
+    },
+    {
+      '1': 'open_dynamic_link_action',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action',
+      '9': 0,
+      '10': 'openDynamicLinkAction'
+    },
+    {
+      '1': 'card',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card',
+      '9': 0,
+      '10': 'card'
+    },
   ],
   '8': [
     {'1': 'data'},
@@ -786,8 +1382,22 @@ const OpenLink$json = {
   '1': 'OpenLink',
   '2': [
     {'1': 'url', '3': 1, '4': 1, '5': 9, '10': 'url'},
-    {'1': 'open_as', '3': 2, '4': 1, '5': 14, '6': '.google.apps.card.v1.OpenLink.OpenAs', '10': 'openAs'},
-    {'1': 'on_close', '3': 3, '4': 1, '5': 14, '6': '.google.apps.card.v1.OpenLink.OnClose', '10': 'onClose'},
+    {
+      '1': 'open_as',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.OpenLink.OpenAs',
+      '10': 'openAs'
+    },
+    {
+      '1': 'on_close',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.OpenLink.OnClose',
+      '10': 'onClose'
+    },
   ],
   '4': [OpenLink_OpenAs$json, OpenLink_OnClose$json],
 };
@@ -823,10 +1433,31 @@ const Action$json = {
   '1': 'Action',
   '2': [
     {'1': 'function', '3': 1, '4': 1, '5': 9, '10': 'function'},
-    {'1': 'parameters', '3': 2, '4': 3, '5': 11, '6': '.google.apps.card.v1.Action.ActionParameter', '10': 'parameters'},
-    {'1': 'load_indicator', '3': 3, '4': 1, '5': 14, '6': '.google.apps.card.v1.Action.LoadIndicator', '10': 'loadIndicator'},
+    {
+      '1': 'parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.Action.ActionParameter',
+      '10': 'parameters'
+    },
+    {
+      '1': 'load_indicator',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Action.LoadIndicator',
+      '10': 'loadIndicator'
+    },
     {'1': 'persist_values', '3': 4, '4': 1, '5': 8, '10': 'persistValues'},
-    {'1': 'interaction', '3': 5, '4': 1, '5': 14, '6': '.google.apps.card.v1.Action.Interaction', '10': 'interaction'},
+    {
+      '1': 'interaction',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.card.v1.Action.Interaction',
+      '10': 'interaction'
+    },
   ],
   '3': [Action_ActionParameter$json],
   '4': [Action_LoadIndicator$json, Action_Interaction$json],
@@ -870,4 +1501,3 @@ final $typed_data.Uint8List actionDescriptor = $convert.base64Decode(
     'ZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoCVIFdmFsdWUiJgoNTG9hZEluZGljYXRvchILCg'
     'dTUElOTkVSEAASCAoETk9ORRABIjsKC0ludGVyYWN0aW9uEhsKF0lOVEVSQUNUSU9OX1VOU1BF'
     'Q0lGSUVEEAASDwoLT1BFTl9ESUFMT0cQAQ==');
-

@@ -19,11 +19,49 @@ const Instance$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.Instance.State', '10': 'state'},
-    {'1': 'type', '3': 4, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.Instance.Type', '10': 'type'},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.google.bigtable.admin.v2.Instance.LabelsEntry', '10': 'labels'},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'satisfies_pzs', '3': 8, '4': 1, '5': 8, '8': {}, '9': 0, '10': 'satisfiesPzs', '17': true},
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.Instance.State',
+      '10': 'state'
+    },
+    {
+      '1': 'type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.Instance.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Instance.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'satisfies_pzs',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '9': 0,
+      '10': 'satisfiesPzs',
+      '17': true
+    },
   ],
   '3': [Instance_LabelsEntry$json],
   '4': [Instance_State$json, Instance_Type$json],
@@ -82,8 +120,20 @@ final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
 const AutoscalingTargets$json = {
   '1': 'AutoscalingTargets',
   '2': [
-    {'1': 'cpu_utilization_percent', '3': 2, '4': 1, '5': 5, '10': 'cpuUtilizationPercent'},
-    {'1': 'storage_utilization_gib_per_node', '3': 3, '4': 1, '5': 5, '10': 'storageUtilizationGibPerNode'},
+    {
+      '1': 'cpu_utilization_percent',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'cpuUtilizationPercent'
+    },
+    {
+      '1': 'storage_utilization_gib_per_node',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'storageUtilizationGibPerNode'
+    },
   ],
 };
 
@@ -97,8 +147,22 @@ final $typed_data.Uint8List autoscalingTargetsDescriptor = $convert.base64Decode
 const AutoscalingLimits$json = {
   '1': 'AutoscalingLimits',
   '2': [
-    {'1': 'min_serve_nodes', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'minServeNodes'},
-    {'1': 'max_serve_nodes', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'maxServeNodes'},
+    {
+      '1': 'min_serve_nodes',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'minServeNodes'
+    },
+    {
+      '1': 'max_serve_nodes',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'maxServeNodes'
+    },
   ],
 };
 
@@ -113,14 +177,58 @@ const Cluster$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'location', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'location'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.Cluster.State', '8': {}, '10': 'state'},
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.Cluster.State',
+      '8': {},
+      '10': 'state'
+    },
     {'1': 'serve_nodes', '3': 4, '4': 1, '5': 5, '10': 'serveNodes'},
-    {'1': 'node_scaling_factor', '3': 9, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.Cluster.NodeScalingFactor', '8': {}, '10': 'nodeScalingFactor'},
-    {'1': 'cluster_config', '3': 7, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.Cluster.ClusterConfig', '9': 0, '10': 'clusterConfig'},
-    {'1': 'default_storage_type', '3': 5, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.StorageType', '8': {}, '10': 'defaultStorageType'},
-    {'1': 'encryption_config', '3': 6, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.Cluster.EncryptionConfig', '8': {}, '10': 'encryptionConfig'},
+    {
+      '1': 'node_scaling_factor',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.Cluster.NodeScalingFactor',
+      '8': {},
+      '10': 'nodeScalingFactor'
+    },
+    {
+      '1': 'cluster_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Cluster.ClusterConfig',
+      '9': 0,
+      '10': 'clusterConfig'
+    },
+    {
+      '1': 'default_storage_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.StorageType',
+      '8': {},
+      '10': 'defaultStorageType'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Cluster.EncryptionConfig',
+      '8': {},
+      '10': 'encryptionConfig'
+    },
   ],
-  '3': [Cluster_ClusterAutoscalingConfig$json, Cluster_ClusterConfig$json, Cluster_EncryptionConfig$json],
+  '3': [
+    Cluster_ClusterAutoscalingConfig$json,
+    Cluster_ClusterConfig$json,
+    Cluster_EncryptionConfig$json
+  ],
   '4': [Cluster_State$json, Cluster_NodeScalingFactor$json],
   '7': {},
   '8': [
@@ -132,8 +240,24 @@ const Cluster$json = {
 const Cluster_ClusterAutoscalingConfig$json = {
   '1': 'ClusterAutoscalingConfig',
   '2': [
-    {'1': 'autoscaling_limits', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AutoscalingLimits', '8': {}, '10': 'autoscalingLimits'},
-    {'1': 'autoscaling_targets', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AutoscalingTargets', '8': {}, '10': 'autoscalingTargets'},
+    {
+      '1': 'autoscaling_limits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AutoscalingLimits',
+      '8': {},
+      '10': 'autoscalingLimits'
+    },
+    {
+      '1': 'autoscaling_targets',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AutoscalingTargets',
+      '8': {},
+      '10': 'autoscalingTargets'
+    },
   ],
 };
 
@@ -141,7 +265,14 @@ const Cluster_ClusterAutoscalingConfig$json = {
 const Cluster_ClusterConfig$json = {
   '1': 'ClusterConfig',
   '2': [
-    {'1': 'cluster_autoscaling_config', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.Cluster.ClusterAutoscalingConfig', '10': 'clusterAutoscalingConfig'},
+    {
+      '1': 'cluster_autoscaling_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.Cluster.ClusterAutoscalingConfig',
+      '10': 'clusterAutoscalingConfig'
+    },
   ],
 };
 
@@ -210,8 +341,24 @@ const AppProfile$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'etag', '3': 2, '4': 1, '5': 9, '10': 'etag'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'multi_cluster_routing_use_any', '3': 5, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AppProfile.MultiClusterRoutingUseAny', '9': 0, '10': 'multiClusterRoutingUseAny'},
-    {'1': 'single_cluster_routing', '3': 6, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AppProfile.SingleClusterRouting', '9': 0, '10': 'singleClusterRouting'},
+    {
+      '1': 'multi_cluster_routing_use_any',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AppProfile.MultiClusterRoutingUseAny',
+      '9': 0,
+      '10': 'multiClusterRoutingUseAny'
+    },
+    {
+      '1': 'single_cluster_routing',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AppProfile.SingleClusterRouting',
+      '9': 0,
+      '10': 'singleClusterRouting'
+    },
     {
       '1': 'priority',
       '3': 7,
@@ -222,10 +369,31 @@ const AppProfile$json = {
       '9': 1,
       '10': 'priority',
     },
-    {'1': 'standard_isolation', '3': 11, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AppProfile.StandardIsolation', '9': 1, '10': 'standardIsolation'},
-    {'1': 'data_boost_isolation_read_only', '3': 10, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AppProfile.DataBoostIsolationReadOnly', '9': 1, '10': 'dataBoostIsolationReadOnly'},
+    {
+      '1': 'standard_isolation',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AppProfile.StandardIsolation',
+      '9': 1,
+      '10': 'standardIsolation'
+    },
+    {
+      '1': 'data_boost_isolation_read_only',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.admin.v2.AppProfile.DataBoostIsolationReadOnly',
+      '9': 1,
+      '10': 'dataBoostIsolationReadOnly'
+    },
   ],
-  '3': [AppProfile_MultiClusterRoutingUseAny$json, AppProfile_SingleClusterRouting$json, AppProfile_StandardIsolation$json, AppProfile_DataBoostIsolationReadOnly$json],
+  '3': [
+    AppProfile_MultiClusterRoutingUseAny$json,
+    AppProfile_SingleClusterRouting$json,
+    AppProfile_StandardIsolation$json,
+    AppProfile_DataBoostIsolationReadOnly$json
+  ],
   '4': [AppProfile_Priority$json],
   '7': {},
   '8': [
@@ -239,7 +407,16 @@ const AppProfile_MultiClusterRoutingUseAny$json = {
   '1': 'MultiClusterRoutingUseAny',
   '2': [
     {'1': 'cluster_ids', '3': 1, '4': 3, '5': 9, '10': 'clusterIds'},
-    {'1': 'row_affinity', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.admin.v2.AppProfile.MultiClusterRoutingUseAny.RowAffinity', '9': 0, '10': 'rowAffinity'},
+    {
+      '1': 'row_affinity',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.bigtable.admin.v2.AppProfile.MultiClusterRoutingUseAny.RowAffinity',
+      '9': 0,
+      '10': 'rowAffinity'
+    },
   ],
   '3': [AppProfile_MultiClusterRoutingUseAny_RowAffinity$json],
   '8': [
@@ -257,7 +434,13 @@ const AppProfile_SingleClusterRouting$json = {
   '1': 'SingleClusterRouting',
   '2': [
     {'1': 'cluster_id', '3': 1, '4': 1, '5': 9, '10': 'clusterId'},
-    {'1': 'allow_transactional_writes', '3': 2, '4': 1, '5': 8, '10': 'allowTransactionalWrites'},
+    {
+      '1': 'allow_transactional_writes',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'allowTransactionalWrites'
+    },
   ],
 };
 
@@ -265,7 +448,14 @@ const AppProfile_SingleClusterRouting$json = {
 const AppProfile_StandardIsolation$json = {
   '1': 'StandardIsolation',
   '2': [
-    {'1': 'priority', '3': 1, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.AppProfile.Priority', '10': 'priority'},
+    {
+      '1': 'priority',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.admin.v2.AppProfile.Priority',
+      '10': 'priority'
+    },
   ],
 };
 
@@ -273,7 +463,17 @@ const AppProfile_StandardIsolation$json = {
 const AppProfile_DataBoostIsolationReadOnly$json = {
   '1': 'DataBoostIsolationReadOnly',
   '2': [
-    {'1': 'compute_billing_owner', '3': 1, '4': 1, '5': 14, '6': '.google.bigtable.admin.v2.AppProfile.DataBoostIsolationReadOnly.ComputeBillingOwner', '9': 0, '10': 'computeBillingOwner', '17': true},
+    {
+      '1': 'compute_billing_owner',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.bigtable.admin.v2.AppProfile.DataBoostIsolationReadOnly.ComputeBillingOwner',
+      '9': 0,
+      '10': 'computeBillingOwner',
+      '17': true
+    },
   ],
   '4': [AppProfile_DataBoostIsolationReadOnly_ComputeBillingOwner$json],
   '8': [
@@ -339,11 +539,34 @@ const HotTablet$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'table_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
-    {'1': 'start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'startTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
     {'1': 'start_key', '3': 5, '4': 1, '5': 9, '10': 'startKey'},
     {'1': 'end_key', '3': 6, '4': 1, '5': 9, '10': 'endKey'},
-    {'1': 'node_cpu_usage_percent', '3': 7, '4': 1, '5': 2, '8': {}, '10': 'nodeCpuUsagePercent'},
+    {
+      '1': 'node_cpu_usage_percent',
+      '3': 7,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '10': 'nodeCpuUsagePercent'
+    },
   ],
   '7': {},
 };
@@ -359,4 +582,3 @@ final $typed_data.Uint8List hotTabletDescriptor = $convert.base64Decode(
     'ZXJjZW50On/qQXwKJmJpZ3RhYmxlYWRtaW4uZ29vZ2xlYXBpcy5jb20vSG90VGFibGV0ElJwcm'
     '9qZWN0cy97cHJvamVjdH0vaW5zdGFuY2VzL3tpbnN0YW5jZX0vY2x1c3RlcnMve2NsdXN0ZXJ9'
     'L2hvdFRhYmxldHMve2hvdF90YWJsZXR9');
-

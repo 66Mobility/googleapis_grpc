@@ -74,7 +74,14 @@ const Envelope$json = {
   '2': [
     {'1': 'payload', '3': 1, '4': 1, '5': 12, '10': 'payload'},
     {'1': 'payload_type', '3': 2, '4': 1, '5': 9, '10': 'payloadType'},
-    {'1': 'signatures', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.EnvelopeSignature', '10': 'signatures'},
+    {
+      '1': 'signatures',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.EnvelopeSignature',
+      '10': 'signatures'
+    },
   ],
 };
 
@@ -137,4 +144,3 @@ const Digest$json = {
 final $typed_data.Uint8List digestDescriptor = $convert.base64Decode(
     'CgZEaWdlc3QSEgoEYWxnbxgBIAEoCVIEYWxnbxIhCgxkaWdlc3RfYnl0ZXMYAiABKAxSC2RpZ2'
     'VzdEJ5dGVz');
-

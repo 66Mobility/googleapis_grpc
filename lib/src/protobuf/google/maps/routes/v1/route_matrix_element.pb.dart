@@ -66,48 +66,72 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
     return $result;
   }
   RouteMatrixElement._() : super();
-  factory RouteMatrixElement.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteMatrixElement.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteMatrixElement.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteMatrixElement.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteMatrixElement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteMatrixElement',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.routes.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'originIndex', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'destinationIndex', $pb.PbFieldType.O3)
-    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $322.Status.create)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'staticDuration', subBuilder: $264.Duration.create)
-    ..aOM<$486.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: $486.RouteTravelAdvisory.create)
-    ..aOM<$488.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo', subBuilder: $488.FallbackInfo.create)
-    ..e<RouteMatrixElementCondition>(9, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE, defaultOrMaker: RouteMatrixElementCondition.ROUTE_MATRIX_ELEMENT_CONDITION_UNSPECIFIED, valueOf: RouteMatrixElementCondition.valueOf, enumValues: RouteMatrixElementCondition.values)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'destinationIndex', $pb.PbFieldType.O3)
+    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'status',
+        subBuilder: $322.Status.create)
+    ..a<$core.int>(
+        4, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'duration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'staticDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<$486.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory',
+        subBuilder: $486.RouteTravelAdvisory.create)
+    ..aOM<$488.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo',
+        subBuilder: $488.FallbackInfo.create)
+    ..e<RouteMatrixElementCondition>(
+        9, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE,
+        defaultOrMaker: RouteMatrixElementCondition
+            .ROUTE_MATRIX_ELEMENT_CONDITION_UNSPECIFIED,
+        valueOf: RouteMatrixElementCondition.valueOf,
+        enumValues: RouteMatrixElementCondition.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RouteMatrixElement clone() => RouteMatrixElement()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteMatrixElement copyWith(void Function(RouteMatrixElement) updates) => super.copyWith((message) => updates(message as RouteMatrixElement)) as RouteMatrixElement;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteMatrixElement copyWith(void Function(RouteMatrixElement) updates) =>
+      super.copyWith((message) => updates(message as RouteMatrixElement))
+          as RouteMatrixElement;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteMatrixElement create() => RouteMatrixElement._();
   RouteMatrixElement createEmptyInstance() => create();
-  static $pb.PbList<RouteMatrixElement> createRepeated() => $pb.PbList<RouteMatrixElement>();
+  static $pb.PbList<RouteMatrixElement> createRepeated() =>
+      $pb.PbList<RouteMatrixElement>();
   @$core.pragma('dart2js:noInline')
-  static RouteMatrixElement getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteMatrixElement>(create);
+  static RouteMatrixElement getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteMatrixElement>(create);
   static RouteMatrixElement? _defaultInstance;
 
   /// Zero-based index of the origin in the request.
   @$pb.TagNumber(1)
   $core.int get originIndex => $_getIZ(0);
   @$pb.TagNumber(1)
-  set originIndex($core.int v) { $_setSignedInt32(0, v); }
+  set originIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOriginIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -117,7 +141,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get destinationIndex => $_getIZ(1);
   @$pb.TagNumber(2)
-  set destinationIndex($core.int v) { $_setSignedInt32(1, v); }
+  set destinationIndex($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDestinationIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -127,7 +154,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $322.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($322.Status v) { setField(3, v); }
+  set status($322.Status v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -139,7 +169,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get distanceMeters => $_getIZ(3);
   @$pb.TagNumber(4)
-  set distanceMeters($core.int v) { $_setSignedInt32(3, v); }
+  set distanceMeters($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDistanceMeters() => $_has(3);
   @$pb.TagNumber(4)
@@ -153,7 +186,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $264.Duration get duration => $_getN(4);
   @$pb.TagNumber(5)
-  set duration($264.Duration v) { setField(5, v); }
+  set duration($264.Duration v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(4);
   @$pb.TagNumber(5)
@@ -166,7 +202,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $264.Duration get staticDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set staticDuration($264.Duration v) { setField(6, v); }
+  set staticDuration($264.Duration v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStaticDuration() => $_has(5);
   @$pb.TagNumber(6)
@@ -179,7 +218,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $486.RouteTravelAdvisory get travelAdvisory => $_getN(6);
   @$pb.TagNumber(7)
-  set travelAdvisory($486.RouteTravelAdvisory v) { setField(7, v); }
+  set travelAdvisory($486.RouteTravelAdvisory v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTravelAdvisory() => $_has(6);
   @$pb.TagNumber(7)
@@ -195,7 +237,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $488.FallbackInfo get fallbackInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set fallbackInfo($488.FallbackInfo v) { setField(8, v); }
+  set fallbackInfo($488.FallbackInfo v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasFallbackInfo() => $_has(7);
   @$pb.TagNumber(8)
@@ -207,13 +252,16 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   RouteMatrixElementCondition get condition => $_getN(8);
   @$pb.TagNumber(9)
-  set condition(RouteMatrixElementCondition v) { setField(9, v); }
+  set condition(RouteMatrixElementCondition v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCondition() => $_has(8);
   @$pb.TagNumber(9)
   void clearCondition() => clearField(9);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

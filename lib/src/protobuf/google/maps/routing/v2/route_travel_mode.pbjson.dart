@@ -30,4 +30,3 @@ const RouteTravelMode$json = {
 final $typed_data.Uint8List routeTravelModeDescriptor = $convert.base64Decode(
     'Cg9Sb3V0ZVRyYXZlbE1vZGUSGwoXVFJBVkVMX01PREVfVU5TUEVDSUZJRUQQABIJCgVEUklWRR'
     'ABEgsKB0JJQ1lDTEUQAhIICgRXQUxLEAMSDwoLVFdPX1dIRUVMRVIQBBILCgdUUkFOU0lUEAc=');
-

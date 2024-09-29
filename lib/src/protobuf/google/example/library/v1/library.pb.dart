@@ -39,27 +39,33 @@ class Book extends $pb.GeneratedMessage {
     return $result;
   }
   Book._() : super();
-  factory Book.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Book.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Book.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Book.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Book', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Book',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'author')
     ..aOS(3, _omitFieldNames ? '' : 'title')
     ..aOB(4, _omitFieldNames ? '' : 'read')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Book clone() => Book()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Book copyWith(void Function(Book) updates) => super.copyWith((message) => updates(message as Book)) as Book;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Book copyWith(void Function(Book) updates) =>
+      super.copyWith((message) => updates(message as Book)) as Book;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -68,7 +74,8 @@ class Book extends $pb.GeneratedMessage {
   Book createEmptyInstance() => create();
   static $pb.PbList<Book> createRepeated() => $pb.PbList<Book>();
   @$core.pragma('dart2js:noInline')
-  static Book getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Book>(create);
+  static Book getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Book>(create);
   static Book? _defaultInstance;
 
   /// The resource name of the book.
@@ -77,7 +84,10 @@ class Book extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -87,7 +97,10 @@ class Book extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get author => $_getSZ(1);
   @$pb.TagNumber(2)
-  set author($core.String v) { $_setString(1, v); }
+  set author($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAuthor() => $_has(1);
   @$pb.TagNumber(2)
@@ -97,7 +110,10 @@ class Book extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get title => $_getSZ(2);
   @$pb.TagNumber(3)
-  set title($core.String v) { $_setString(2, v); }
+  set title($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTitle() => $_has(2);
   @$pb.TagNumber(3)
@@ -107,7 +123,10 @@ class Book extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get read => $_getBF(3);
   @$pb.TagNumber(4)
-  set read($core.bool v) { $_setBool(3, v); }
+  set read($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRead() => $_has(3);
   @$pb.TagNumber(4)
@@ -130,25 +149,31 @@ class Shelf extends $pb.GeneratedMessage {
     return $result;
   }
   Shelf._() : super();
-  factory Shelf.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Shelf.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Shelf.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Shelf.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Shelf', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Shelf',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'theme')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Shelf clone() => Shelf()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Shelf copyWith(void Function(Shelf) updates) => super.copyWith((message) => updates(message as Shelf)) as Shelf;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Shelf copyWith(void Function(Shelf) updates) =>
+      super.copyWith((message) => updates(message as Shelf)) as Shelf;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -157,7 +182,8 @@ class Shelf extends $pb.GeneratedMessage {
   Shelf createEmptyInstance() => create();
   static $pb.PbList<Shelf> createRepeated() => $pb.PbList<Shelf>();
   @$core.pragma('dart2js:noInline')
-  static Shelf getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Shelf>(create);
+  static Shelf getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Shelf>(create);
   static Shelf? _defaultInstance;
 
   /// The resource name of the shelf.
@@ -166,7 +192,10 @@ class Shelf extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -176,7 +205,10 @@ class Shelf extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get theme => $_getSZ(1);
   @$pb.TagNumber(2)
-  set theme($core.String v) { $_setString(1, v); }
+  set theme($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTheme() => $_has(1);
   @$pb.TagNumber(2)
@@ -195,40 +227,52 @@ class CreateShelfRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateShelfRequest._() : super();
-  factory CreateShelfRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateShelfRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateShelfRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateShelfRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateShelfRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateShelfRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOM<Shelf>(1, _omitFieldNames ? '' : 'shelf', subBuilder: Shelf.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateShelfRequest clone() => CreateShelfRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateShelfRequest copyWith(void Function(CreateShelfRequest) updates) => super.copyWith((message) => updates(message as CreateShelfRequest)) as CreateShelfRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateShelfRequest copyWith(void Function(CreateShelfRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateShelfRequest))
+          as CreateShelfRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateShelfRequest create() => CreateShelfRequest._();
   CreateShelfRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateShelfRequest> createRepeated() => $pb.PbList<CreateShelfRequest>();
+  static $pb.PbList<CreateShelfRequest> createRepeated() =>
+      $pb.PbList<CreateShelfRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateShelfRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateShelfRequest>(create);
+  static CreateShelfRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateShelfRequest>(create);
   static CreateShelfRequest? _defaultInstance;
 
   /// The shelf to create.
   @$pb.TagNumber(1)
   Shelf get shelf => $_getN(0);
   @$pb.TagNumber(1)
-  set shelf(Shelf v) { setField(1, v); }
+  set shelf(Shelf v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasShelf() => $_has(0);
   @$pb.TagNumber(1)
@@ -249,40 +293,52 @@ class GetShelfRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetShelfRequest._() : super();
-  factory GetShelfRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetShelfRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetShelfRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetShelfRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetShelfRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetShelfRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetShelfRequest clone() => GetShelfRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetShelfRequest copyWith(void Function(GetShelfRequest) updates) => super.copyWith((message) => updates(message as GetShelfRequest)) as GetShelfRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetShelfRequest copyWith(void Function(GetShelfRequest) updates) =>
+      super.copyWith((message) => updates(message as GetShelfRequest))
+          as GetShelfRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetShelfRequest create() => GetShelfRequest._();
   GetShelfRequest createEmptyInstance() => create();
-  static $pb.PbList<GetShelfRequest> createRepeated() => $pb.PbList<GetShelfRequest>();
+  static $pb.PbList<GetShelfRequest> createRepeated() =>
+      $pb.PbList<GetShelfRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetShelfRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetShelfRequest>(create);
+  static GetShelfRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetShelfRequest>(create);
   static GetShelfRequest? _defaultInstance;
 
   /// The name of the shelf to retrieve.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -305,34 +361,43 @@ class ListShelvesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListShelvesRequest._() : super();
-  factory ListShelvesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListShelvesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListShelvesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListShelvesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListShelvesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListShelvesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListShelvesRequest clone() => ListShelvesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListShelvesRequest copyWith(void Function(ListShelvesRequest) updates) => super.copyWith((message) => updates(message as ListShelvesRequest)) as ListShelvesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListShelvesRequest copyWith(void Function(ListShelvesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListShelvesRequest))
+          as ListShelvesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListShelvesRequest create() => ListShelvesRequest._();
   ListShelvesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListShelvesRequest> createRepeated() => $pb.PbList<ListShelvesRequest>();
+  static $pb.PbList<ListShelvesRequest> createRepeated() =>
+      $pb.PbList<ListShelvesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListShelvesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListShelvesRequest>(create);
+  static ListShelvesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListShelvesRequest>(create);
   static ListShelvesRequest? _defaultInstance;
 
   /// Requested page size. Server may return fewer shelves than requested.
@@ -340,7 +405,10 @@ class ListShelvesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get pageSize => $_getIZ(0);
   @$pb.TagNumber(1)
-  set pageSize($core.int v) { $_setSignedInt32(0, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPageSize() => $_has(0);
   @$pb.TagNumber(1)
@@ -353,7 +421,10 @@ class ListShelvesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -376,34 +447,44 @@ class ListShelvesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListShelvesResponse._() : super();
-  factory ListShelvesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListShelvesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListShelvesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListShelvesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListShelvesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
-    ..pc<Shelf>(1, _omitFieldNames ? '' : 'shelves', $pb.PbFieldType.PM, subBuilder: Shelf.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListShelvesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
+    ..pc<Shelf>(1, _omitFieldNames ? '' : 'shelves', $pb.PbFieldType.PM,
+        subBuilder: Shelf.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListShelvesResponse clone() => ListShelvesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListShelvesResponse copyWith(void Function(ListShelvesResponse) updates) => super.copyWith((message) => updates(message as ListShelvesResponse)) as ListShelvesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListShelvesResponse copyWith(void Function(ListShelvesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListShelvesResponse))
+          as ListShelvesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListShelvesResponse create() => ListShelvesResponse._();
   ListShelvesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListShelvesResponse> createRepeated() => $pb.PbList<ListShelvesResponse>();
+  static $pb.PbList<ListShelvesResponse> createRepeated() =>
+      $pb.PbList<ListShelvesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListShelvesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListShelvesResponse>(create);
+  static ListShelvesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListShelvesResponse>(create);
   static ListShelvesResponse? _defaultInstance;
 
   /// The list of shelves.
@@ -418,7 +499,10 @@ class ListShelvesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -437,40 +521,52 @@ class DeleteShelfRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteShelfRequest._() : super();
-  factory DeleteShelfRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteShelfRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteShelfRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteShelfRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteShelfRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteShelfRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteShelfRequest clone() => DeleteShelfRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteShelfRequest copyWith(void Function(DeleteShelfRequest) updates) => super.copyWith((message) => updates(message as DeleteShelfRequest)) as DeleteShelfRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteShelfRequest copyWith(void Function(DeleteShelfRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteShelfRequest))
+          as DeleteShelfRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteShelfRequest create() => DeleteShelfRequest._();
   DeleteShelfRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteShelfRequest> createRepeated() => $pb.PbList<DeleteShelfRequest>();
+  static $pb.PbList<DeleteShelfRequest> createRepeated() =>
+      $pb.PbList<DeleteShelfRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteShelfRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteShelfRequest>(create);
+  static DeleteShelfRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteShelfRequest>(create);
   static DeleteShelfRequest? _defaultInstance;
 
   /// The name of the shelf to delete.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -494,41 +590,53 @@ class MergeShelvesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   MergeShelvesRequest._() : super();
-  factory MergeShelvesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MergeShelvesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MergeShelvesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MergeShelvesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MergeShelvesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MergeShelvesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'otherShelf')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MergeShelvesRequest clone() => MergeShelvesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MergeShelvesRequest copyWith(void Function(MergeShelvesRequest) updates) => super.copyWith((message) => updates(message as MergeShelvesRequest)) as MergeShelvesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MergeShelvesRequest copyWith(void Function(MergeShelvesRequest) updates) =>
+      super.copyWith((message) => updates(message as MergeShelvesRequest))
+          as MergeShelvesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MergeShelvesRequest create() => MergeShelvesRequest._();
   MergeShelvesRequest createEmptyInstance() => create();
-  static $pb.PbList<MergeShelvesRequest> createRepeated() => $pb.PbList<MergeShelvesRequest>();
+  static $pb.PbList<MergeShelvesRequest> createRepeated() =>
+      $pb.PbList<MergeShelvesRequest>();
   @$core.pragma('dart2js:noInline')
-  static MergeShelvesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MergeShelvesRequest>(create);
+  static MergeShelvesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MergeShelvesRequest>(create);
   static MergeShelvesRequest? _defaultInstance;
 
   /// The name of the shelf we're adding books to.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -538,7 +646,10 @@ class MergeShelvesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get otherShelf => $_getSZ(1);
   @$pb.TagNumber(2)
-  set otherShelf($core.String v) { $_setString(1, v); }
+  set otherShelf($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOtherShelf() => $_has(1);
   @$pb.TagNumber(2)
@@ -561,41 +672,53 @@ class CreateBookRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateBookRequest._() : super();
-  factory CreateBookRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateBookRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateBookRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateBookRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateBookRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateBookRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<Book>(2, _omitFieldNames ? '' : 'book', subBuilder: Book.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateBookRequest clone() => CreateBookRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateBookRequest copyWith(void Function(CreateBookRequest) updates) => super.copyWith((message) => updates(message as CreateBookRequest)) as CreateBookRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateBookRequest copyWith(void Function(CreateBookRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateBookRequest))
+          as CreateBookRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateBookRequest create() => CreateBookRequest._();
   CreateBookRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateBookRequest> createRepeated() => $pb.PbList<CreateBookRequest>();
+  static $pb.PbList<CreateBookRequest> createRepeated() =>
+      $pb.PbList<CreateBookRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateBookRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateBookRequest>(create);
+  static CreateBookRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateBookRequest>(create);
   static CreateBookRequest? _defaultInstance;
 
   /// The name of the shelf in which the book is created.
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -605,7 +728,10 @@ class CreateBookRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Book get book => $_getN(1);
   @$pb.TagNumber(2)
-  set book(Book v) { setField(2, v); }
+  set book(Book v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBook() => $_has(1);
   @$pb.TagNumber(2)
@@ -626,40 +752,52 @@ class GetBookRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetBookRequest._() : super();
-  factory GetBookRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetBookRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetBookRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetBookRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBookRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBookRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetBookRequest clone() => GetBookRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetBookRequest copyWith(void Function(GetBookRequest) updates) => super.copyWith((message) => updates(message as GetBookRequest)) as GetBookRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetBookRequest copyWith(void Function(GetBookRequest) updates) =>
+      super.copyWith((message) => updates(message as GetBookRequest))
+          as GetBookRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetBookRequest create() => GetBookRequest._();
   GetBookRequest createEmptyInstance() => create();
-  static $pb.PbList<GetBookRequest> createRepeated() => $pb.PbList<GetBookRequest>();
+  static $pb.PbList<GetBookRequest> createRepeated() =>
+      $pb.PbList<GetBookRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetBookRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBookRequest>(create);
+  static GetBookRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBookRequest>(create);
   static GetBookRequest? _defaultInstance;
 
   /// The name of the book to retrieve.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -686,42 +824,54 @@ class ListBooksRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListBooksRequest._() : super();
-  factory ListBooksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBooksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBooksRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBooksRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBooksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBooksRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListBooksRequest clone() => ListBooksRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBooksRequest copyWith(void Function(ListBooksRequest) updates) => super.copyWith((message) => updates(message as ListBooksRequest)) as ListBooksRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBooksRequest copyWith(void Function(ListBooksRequest) updates) =>
+      super.copyWith((message) => updates(message as ListBooksRequest))
+          as ListBooksRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListBooksRequest create() => ListBooksRequest._();
   ListBooksRequest createEmptyInstance() => create();
-  static $pb.PbList<ListBooksRequest> createRepeated() => $pb.PbList<ListBooksRequest>();
+  static $pb.PbList<ListBooksRequest> createRepeated() =>
+      $pb.PbList<ListBooksRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListBooksRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBooksRequest>(create);
+  static ListBooksRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBooksRequest>(create);
   static ListBooksRequest? _defaultInstance;
 
   /// The name of the shelf whose books we'd like to list.
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -732,7 +882,10 @@ class ListBooksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -745,7 +898,10 @@ class ListBooksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -768,34 +924,44 @@ class ListBooksResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListBooksResponse._() : super();
-  factory ListBooksResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListBooksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListBooksResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListBooksResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBooksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
-    ..pc<Book>(1, _omitFieldNames ? '' : 'books', $pb.PbFieldType.PM, subBuilder: Book.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBooksResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
+    ..pc<Book>(1, _omitFieldNames ? '' : 'books', $pb.PbFieldType.PM,
+        subBuilder: Book.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListBooksResponse clone() => ListBooksResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListBooksResponse copyWith(void Function(ListBooksResponse) updates) => super.copyWith((message) => updates(message as ListBooksResponse)) as ListBooksResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListBooksResponse copyWith(void Function(ListBooksResponse) updates) =>
+      super.copyWith((message) => updates(message as ListBooksResponse))
+          as ListBooksResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListBooksResponse create() => ListBooksResponse._();
   ListBooksResponse createEmptyInstance() => create();
-  static $pb.PbList<ListBooksResponse> createRepeated() => $pb.PbList<ListBooksResponse>();
+  static $pb.PbList<ListBooksResponse> createRepeated() =>
+      $pb.PbList<ListBooksResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListBooksResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBooksResponse>(create);
+  static ListBooksResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBooksResponse>(create);
   static ListBooksResponse? _defaultInstance;
 
   /// The list of books.
@@ -810,7 +976,10 @@ class ListBooksResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -833,41 +1002,54 @@ class UpdateBookRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateBookRequest._() : super();
-  factory UpdateBookRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateBookRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateBookRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateBookRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBookRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateBookRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOM<Book>(1, _omitFieldNames ? '' : 'book', subBuilder: Book.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateBookRequest clone() => UpdateBookRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateBookRequest copyWith(void Function(UpdateBookRequest) updates) => super.copyWith((message) => updates(message as UpdateBookRequest)) as UpdateBookRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateBookRequest copyWith(void Function(UpdateBookRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateBookRequest))
+          as UpdateBookRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateBookRequest create() => UpdateBookRequest._();
   UpdateBookRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateBookRequest> createRepeated() => $pb.PbList<UpdateBookRequest>();
+  static $pb.PbList<UpdateBookRequest> createRepeated() =>
+      $pb.PbList<UpdateBookRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateBookRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateBookRequest>(create);
+  static UpdateBookRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateBookRequest>(create);
   static UpdateBookRequest? _defaultInstance;
 
   /// The name of the book to update.
   @$pb.TagNumber(1)
   Book get book => $_getN(0);
   @$pb.TagNumber(1)
-  set book(Book v) { setField(1, v); }
+  set book(Book v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBook() => $_has(0);
   @$pb.TagNumber(1)
@@ -879,7 +1061,10 @@ class UpdateBookRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -900,40 +1085,52 @@ class DeleteBookRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteBookRequest._() : super();
-  factory DeleteBookRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteBookRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteBookRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteBookRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteBookRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteBookRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteBookRequest clone() => DeleteBookRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteBookRequest copyWith(void Function(DeleteBookRequest) updates) => super.copyWith((message) => updates(message as DeleteBookRequest)) as DeleteBookRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteBookRequest copyWith(void Function(DeleteBookRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteBookRequest))
+          as DeleteBookRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteBookRequest create() => DeleteBookRequest._();
   DeleteBookRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteBookRequest> createRepeated() => $pb.PbList<DeleteBookRequest>();
+  static $pb.PbList<DeleteBookRequest> createRepeated() =>
+      $pb.PbList<DeleteBookRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteBookRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteBookRequest>(create);
+  static DeleteBookRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteBookRequest>(create);
   static DeleteBookRequest? _defaultInstance;
 
   /// The name of the book to delete.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -957,41 +1154,53 @@ class MoveBookRequest extends $pb.GeneratedMessage {
     return $result;
   }
   MoveBookRequest._() : super();
-  factory MoveBookRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MoveBookRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MoveBookRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MoveBookRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MoveBookRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MoveBookRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.example.library.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'otherShelfName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MoveBookRequest clone() => MoveBookRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MoveBookRequest copyWith(void Function(MoveBookRequest) updates) => super.copyWith((message) => updates(message as MoveBookRequest)) as MoveBookRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MoveBookRequest copyWith(void Function(MoveBookRequest) updates) =>
+      super.copyWith((message) => updates(message as MoveBookRequest))
+          as MoveBookRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MoveBookRequest create() => MoveBookRequest._();
   MoveBookRequest createEmptyInstance() => create();
-  static $pb.PbList<MoveBookRequest> createRepeated() => $pb.PbList<MoveBookRequest>();
+  static $pb.PbList<MoveBookRequest> createRepeated() =>
+      $pb.PbList<MoveBookRequest>();
   @$core.pragma('dart2js:noInline')
-  static MoveBookRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MoveBookRequest>(create);
+  static MoveBookRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MoveBookRequest>(create);
   static MoveBookRequest? _defaultInstance;
 
   /// The name of the book to move.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1001,13 +1210,16 @@ class MoveBookRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get otherShelfName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set otherShelfName($core.String v) { $_setString(1, v); }
+  set otherShelfName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOtherShelfName() => $_has(1);
   @$pb.TagNumber(2)
   void clearOtherShelfName() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

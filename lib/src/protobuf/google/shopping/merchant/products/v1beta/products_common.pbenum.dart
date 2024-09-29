@@ -15,17 +15,22 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The subscription period of the product.
 class SubscriptionPeriod extends $pb.ProtobufEnum {
-  static const SubscriptionPeriod SUBSCRIPTION_PERIOD_UNSPECIFIED = SubscriptionPeriod._(0, _omitEnumNames ? '' : 'SUBSCRIPTION_PERIOD_UNSPECIFIED');
-  static const SubscriptionPeriod MONTH = SubscriptionPeriod._(1, _omitEnumNames ? '' : 'MONTH');
-  static const SubscriptionPeriod YEAR = SubscriptionPeriod._(2, _omitEnumNames ? '' : 'YEAR');
+  static const SubscriptionPeriod SUBSCRIPTION_PERIOD_UNSPECIFIED =
+      SubscriptionPeriod._(
+          0, _omitEnumNames ? '' : 'SUBSCRIPTION_PERIOD_UNSPECIFIED');
+  static const SubscriptionPeriod MONTH =
+      SubscriptionPeriod._(1, _omitEnumNames ? '' : 'MONTH');
+  static const SubscriptionPeriod YEAR =
+      SubscriptionPeriod._(2, _omitEnumNames ? '' : 'YEAR');
 
-  static const $core.List<SubscriptionPeriod> values = <SubscriptionPeriod> [
+  static const $core.List<SubscriptionPeriod> values = <SubscriptionPeriod>[
     SUBSCRIPTION_PERIOD_UNSPECIFIED,
     MONTH,
     YEAR,
   ];
 
-  static final $core.Map<$core.int, SubscriptionPeriod> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, SubscriptionPeriod> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static SubscriptionPeriod? valueOf($core.int value) => _byValue[value];
 
   const SubscriptionPeriod._($core.int v, $core.String n) : super(v, n);
@@ -33,23 +38,34 @@ class SubscriptionPeriod extends $pb.ProtobufEnum {
 
 /// How the issue affects the serving of the product.
 class ProductStatus_ItemLevelIssue_Severity extends $pb.ProtobufEnum {
-  static const ProductStatus_ItemLevelIssue_Severity SEVERITY_UNSPECIFIED = ProductStatus_ItemLevelIssue_Severity._(0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
-  static const ProductStatus_ItemLevelIssue_Severity NOT_IMPACTED = ProductStatus_ItemLevelIssue_Severity._(1, _omitEnumNames ? '' : 'NOT_IMPACTED');
-  static const ProductStatus_ItemLevelIssue_Severity DEMOTED = ProductStatus_ItemLevelIssue_Severity._(2, _omitEnumNames ? '' : 'DEMOTED');
-  static const ProductStatus_ItemLevelIssue_Severity DISAPPROVED = ProductStatus_ItemLevelIssue_Severity._(3, _omitEnumNames ? '' : 'DISAPPROVED');
+  static const ProductStatus_ItemLevelIssue_Severity SEVERITY_UNSPECIFIED =
+      ProductStatus_ItemLevelIssue_Severity._(
+          0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
+  static const ProductStatus_ItemLevelIssue_Severity NOT_IMPACTED =
+      ProductStatus_ItemLevelIssue_Severity._(
+          1, _omitEnumNames ? '' : 'NOT_IMPACTED');
+  static const ProductStatus_ItemLevelIssue_Severity DEMOTED =
+      ProductStatus_ItemLevelIssue_Severity._(
+          2, _omitEnumNames ? '' : 'DEMOTED');
+  static const ProductStatus_ItemLevelIssue_Severity DISAPPROVED =
+      ProductStatus_ItemLevelIssue_Severity._(
+          3, _omitEnumNames ? '' : 'DISAPPROVED');
 
-  static const $core.List<ProductStatus_ItemLevelIssue_Severity> values = <ProductStatus_ItemLevelIssue_Severity> [
+  static const $core.List<ProductStatus_ItemLevelIssue_Severity> values =
+      <ProductStatus_ItemLevelIssue_Severity>[
     SEVERITY_UNSPECIFIED,
     NOT_IMPACTED,
     DEMOTED,
     DISAPPROVED,
   ];
 
-  static final $core.Map<$core.int, ProductStatus_ItemLevelIssue_Severity> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static ProductStatus_ItemLevelIssue_Severity? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, ProductStatus_ItemLevelIssue_Severity>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static ProductStatus_ItemLevelIssue_Severity? valueOf($core.int value) =>
+      _byValue[value];
 
-  const ProductStatus_ItemLevelIssue_Severity._($core.int v, $core.String n) : super(v, n);
+  const ProductStatus_ItemLevelIssue_Severity._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

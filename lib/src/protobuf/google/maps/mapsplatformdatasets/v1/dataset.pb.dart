@@ -19,11 +19,7 @@ import 'dataset.pbenum.dart';
 
 export 'dataset.pbenum.dart';
 
-enum Dataset_DataSource {
-  localFileSource, 
-  gcsSource, 
-  notSet
-}
+enum Dataset_DataSource { localFileSource, gcsSource, notSet }
 
 /// A representation of a dataset resource.
 class Dataset extends $pb.GeneratedMessage {
@@ -81,41 +77,57 @@ class Dataset extends $pb.GeneratedMessage {
     return $result;
   }
   Dataset._() : super();
-  factory Dataset.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Dataset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Dataset.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Dataset.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Dataset_DataSource> _Dataset_DataSourceByTag = {
-    6 : Dataset_DataSource.localFileSource,
-    7 : Dataset_DataSource.gcsSource,
-    0 : Dataset_DataSource.notSet
+  static const $core.Map<$core.int, Dataset_DataSource>
+      _Dataset_DataSourceByTag = {
+    6: Dataset_DataSource.localFileSource,
+    7: Dataset_DataSource.gcsSource,
+    0: Dataset_DataSource.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Dataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Dataset',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'),
+      createEmptyInstance: create)
     ..oo(0, [6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'versionId')
-    ..pc<Usage>(5, _omitFieldNames ? '' : 'usage', $pb.PbFieldType.KE, valueOf: Usage.valueOf, enumValues: Usage.values, defaultEnumValue: Usage.USAGE_UNSPECIFIED)
-    ..aOM<$459.LocalFileSource>(6, _omitFieldNames ? '' : 'localFileSource', subBuilder: $459.LocalFileSource.create)
-    ..aOM<$459.GcsSource>(7, _omitFieldNames ? '' : 'gcsSource', subBuilder: $459.GcsSource.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'versionCreateTime', subBuilder: $302.Timestamp.create)
+    ..pc<Usage>(5, _omitFieldNames ? '' : 'usage', $pb.PbFieldType.KE,
+        valueOf: Usage.valueOf,
+        enumValues: Usage.values,
+        defaultEnumValue: Usage.USAGE_UNSPECIFIED)
+    ..aOM<$459.LocalFileSource>(6, _omitFieldNames ? '' : 'localFileSource',
+        subBuilder: $459.LocalFileSource.create)
+    ..aOM<$459.GcsSource>(7, _omitFieldNames ? '' : 'gcsSource',
+        subBuilder: $459.GcsSource.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'versionCreateTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'versionDescription')
-    ..aOM<Status>(12, _omitFieldNames ? '' : 'status', subBuilder: Status.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Status>(12, _omitFieldNames ? '' : 'status',
+        subBuilder: Status.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Dataset clone() => Dataset()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Dataset copyWith(void Function(Dataset) updates) => super.copyWith((message) => updates(message as Dataset)) as Dataset;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Dataset copyWith(void Function(Dataset) updates) =>
+      super.copyWith((message) => updates(message as Dataset)) as Dataset;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -124,10 +136,12 @@ class Dataset extends $pb.GeneratedMessage {
   Dataset createEmptyInstance() => create();
   static $pb.PbList<Dataset> createRepeated() => $pb.PbList<Dataset>();
   @$core.pragma('dart2js:noInline')
-  static Dataset getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Dataset>(create);
+  static Dataset getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Dataset>(create);
   static Dataset? _defaultInstance;
 
-  Dataset_DataSource whichDataSource() => _Dataset_DataSourceByTag[$_whichOneof(0)]!;
+  Dataset_DataSource whichDataSource() =>
+      _Dataset_DataSourceByTag[$_whichOneof(0)]!;
   void clearDataSource() => clearField($_whichOneof(0));
 
   /// Resource name.
@@ -135,7 +149,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -147,7 +164,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -157,7 +177,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -167,7 +190,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get versionId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set versionId($core.String v) { $_setString(3, v); }
+  set versionId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVersionId() => $_has(3);
   @$pb.TagNumber(4)
@@ -181,7 +207,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $459.LocalFileSource get localFileSource => $_getN(5);
   @$pb.TagNumber(6)
-  set localFileSource($459.LocalFileSource v) { setField(6, v); }
+  set localFileSource($459.LocalFileSource v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLocalFileSource() => $_has(5);
   @$pb.TagNumber(6)
@@ -193,7 +222,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $459.GcsSource get gcsSource => $_getN(6);
   @$pb.TagNumber(7)
-  set gcsSource($459.GcsSource v) { setField(7, v); }
+  set gcsSource($459.GcsSource v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasGcsSource() => $_has(6);
   @$pb.TagNumber(7)
@@ -205,7 +237,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $302.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($302.Timestamp v) { setField(8, v); }
+  set createTime($302.Timestamp v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
@@ -217,7 +252,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $302.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) { setField(9, v); }
+  set updateTime($302.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
@@ -229,7 +267,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $302.Timestamp get versionCreateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set versionCreateTime($302.Timestamp v) { setField(10, v); }
+  set versionCreateTime($302.Timestamp v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasVersionCreateTime() => $_has(9);
   @$pb.TagNumber(10)
@@ -242,7 +283,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get versionDescription => $_getSZ(10);
   @$pb.TagNumber(11)
-  set versionDescription($core.String v) { $_setString(10, v); }
+  set versionDescription($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasVersionDescription() => $_has(10);
   @$pb.TagNumber(11)
@@ -252,7 +296,10 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Status get status => $_getN(11);
   @$pb.TagNumber(12)
-  set status(Status v) { setField(12, v); }
+  set status(Status v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasStatus() => $_has(11);
   @$pb.TagNumber(12)
@@ -277,25 +324,34 @@ class Status extends $pb.GeneratedMessage {
     return $result;
   }
   Status._() : super();
-  factory Status.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Status.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Status.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Status.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Status', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
-    ..e<Status_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Status_State.STATE_UNSPECIFIED, valueOf: Status_State.valueOf, enumValues: Status_State.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Status',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'),
+      createEmptyInstance: create)
+    ..e<Status_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Status_State.STATE_UNSPECIFIED,
+        valueOf: Status_State.valueOf,
+        enumValues: Status_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'errorMessage')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Status clone() => Status()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Status copyWith(void Function(Status) updates) => super.copyWith((message) => updates(message as Status)) as Status;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Status copyWith(void Function(Status) updates) =>
+      super.copyWith((message) => updates(message as Status)) as Status;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -304,14 +360,18 @@ class Status extends $pb.GeneratedMessage {
   Status createEmptyInstance() => create();
   static $pb.PbList<Status> createRepeated() => $pb.PbList<Status>();
   @$core.pragma('dart2js:noInline')
-  static Status getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Status>(create);
+  static Status getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Status>(create);
   static Status? _defaultInstance;
 
   /// State enum for status.
   @$pb.TagNumber(1)
   Status_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(Status_State v) { setField(1, v); }
+  set state(Status_State v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -322,13 +382,16 @@ class Status extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get errorMessage => $_getSZ(1);
   @$pb.TagNumber(2)
-  set errorMessage($core.String v) { $_setString(1, v); }
+  set errorMessage($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasErrorMessage() => $_has(1);
   @$pb.TagNumber(2)
   void clearErrorMessage() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

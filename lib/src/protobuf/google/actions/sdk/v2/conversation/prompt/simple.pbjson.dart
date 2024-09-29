@@ -25,4 +25,3 @@ const Simple$json = {
 /// Descriptor for `Simple`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List simpleDescriptor = $convert.base64Decode(
     'CgZTaW1wbGUSFgoGc3BlZWNoGAEgASgJUgZzcGVlY2gSEgoEdGV4dBgCIAEoCVIEdGV4dA==');
-

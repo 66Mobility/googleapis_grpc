@@ -24,4 +24,3 @@ const SlashCommand$json = {
 /// Descriptor for `SlashCommand`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List slashCommandDescriptor = $convert.base64Decode(
     'CgxTbGFzaENvbW1hbmQSHQoKY29tbWFuZF9pZBgBIAEoA1IJY29tbWFuZElk');
-

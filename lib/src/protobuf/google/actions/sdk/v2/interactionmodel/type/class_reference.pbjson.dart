@@ -26,4 +26,3 @@ const ClassReference$json = {
 final $typed_data.Uint8List classReferenceDescriptor = $convert.base64Decode(
     'Cg5DbGFzc1JlZmVyZW5jZRIXCgRuYW1lGAEgASgJQgPgQQJSBG5hbWUSFwoEbGlzdBgCIAEoCE'
     'ID4EEBUgRsaXN0');
-

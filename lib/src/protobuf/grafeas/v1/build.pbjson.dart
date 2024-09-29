@@ -29,11 +29,39 @@ final $typed_data.Uint8List buildNoteDescriptor = $convert.base64Decode(
 const BuildOccurrence$json = {
   '1': 'BuildOccurrence',
   '2': [
-    {'1': 'provenance', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.BuildProvenance', '10': 'provenance'},
+    {
+      '1': 'provenance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.BuildProvenance',
+      '10': 'provenance'
+    },
     {'1': 'provenance_bytes', '3': 2, '4': 1, '5': 9, '10': 'provenanceBytes'},
-    {'1': 'intoto_provenance', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoProvenance', '10': 'intotoProvenance'},
-    {'1': 'intoto_statement', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoStatement', '10': 'intotoStatement'},
-    {'1': 'in_toto_slsa_provenance_v1', '3': 5, '4': 1, '5': 11, '6': '.grafeas.v1.InTotoSlsaProvenanceV1', '10': 'inTotoSlsaProvenanceV1'},
+    {
+      '1': 'intoto_provenance',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoProvenance',
+      '10': 'intotoProvenance'
+    },
+    {
+      '1': 'intoto_statement',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoStatement',
+      '10': 'intotoStatement'
+    },
+    {
+      '1': 'in_toto_slsa_provenance_v1',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.InTotoSlsaProvenanceV1',
+      '10': 'inTotoSlsaProvenanceV1'
+    },
   ],
 };
 
@@ -46,4 +74,3 @@ final $typed_data.Uint8List buildOccurrenceDescriptor = $convert.base64Decode(
     'MhsuZ3JhZmVhcy52MS5JblRvdG9TdGF0ZW1lbnRSD2ludG90b1N0YXRlbWVudBJeChppbl90b3'
     'RvX3Nsc2FfcHJvdmVuYW5jZV92MRgFIAEoCzIiLmdyYWZlYXMudjEuSW5Ub3RvU2xzYVByb3Zl'
     'bmFuY2VWMVIWaW5Ub3RvU2xzYVByb3ZlbmFuY2VWMQ==');
-

@@ -41,36 +41,48 @@ class DomainMapping extends $pb.GeneratedMessage {
     return $result;
   }
   DomainMapping._() : super();
-  factory DomainMapping.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DomainMapping.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DomainMapping.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DomainMapping.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DomainMapping', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DomainMapping',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<SslSettings>(3, _omitFieldNames ? '' : 'sslSettings', subBuilder: SslSettings.create)
-    ..pc<ResourceRecord>(4, _omitFieldNames ? '' : 'resourceRecords', $pb.PbFieldType.PM, subBuilder: ResourceRecord.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<SslSettings>(3, _omitFieldNames ? '' : 'sslSettings',
+        subBuilder: SslSettings.create)
+    ..pc<ResourceRecord>(
+        4, _omitFieldNames ? '' : 'resourceRecords', $pb.PbFieldType.PM,
+        subBuilder: ResourceRecord.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DomainMapping clone() => DomainMapping()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DomainMapping copyWith(void Function(DomainMapping) updates) => super.copyWith((message) => updates(message as DomainMapping)) as DomainMapping;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DomainMapping copyWith(void Function(DomainMapping) updates) =>
+      super.copyWith((message) => updates(message as DomainMapping))
+          as DomainMapping;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DomainMapping create() => DomainMapping._();
   DomainMapping createEmptyInstance() => create();
-  static $pb.PbList<DomainMapping> createRepeated() => $pb.PbList<DomainMapping>();
+  static $pb.PbList<DomainMapping> createRepeated() =>
+      $pb.PbList<DomainMapping>();
   @$core.pragma('dart2js:noInline')
-  static DomainMapping getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DomainMapping>(create);
+  static DomainMapping getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DomainMapping>(create);
   static DomainMapping? _defaultInstance;
 
   ///  Full path to the `DomainMapping` resource in the API. Example:
@@ -80,7 +92,10 @@ class DomainMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -91,7 +106,10 @@ class DomainMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.String v) { $_setString(1, v); }
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -102,7 +120,10 @@ class DomainMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   SslSettings get sslSettings => $_getN(2);
   @$pb.TagNumber(3)
-  set sslSettings(SslSettings v) { setField(3, v); }
+  set sslSettings(SslSettings v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSslSettings() => $_has(2);
   @$pb.TagNumber(3)
@@ -139,26 +160,37 @@ class SslSettings extends $pb.GeneratedMessage {
     return $result;
   }
   SslSettings._() : super();
-  factory SslSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SslSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SslSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SslSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SslSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SslSettings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'certificateId')
-    ..e<SslSettings_SslManagementType>(3, _omitFieldNames ? '' : 'sslManagementType', $pb.PbFieldType.OE, defaultOrMaker: SslSettings_SslManagementType.AUTOMATIC, valueOf: SslSettings_SslManagementType.valueOf, enumValues: SslSettings_SslManagementType.values)
+    ..e<SslSettings_SslManagementType>(
+        3, _omitFieldNames ? '' : 'sslManagementType', $pb.PbFieldType.OE,
+        defaultOrMaker: SslSettings_SslManagementType.AUTOMATIC,
+        valueOf: SslSettings_SslManagementType.valueOf,
+        enumValues: SslSettings_SslManagementType.values)
     ..aOS(4, _omitFieldNames ? '' : 'pendingManagedCertificateId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SslSettings clone() => SslSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SslSettings copyWith(void Function(SslSettings) updates) => super.copyWith((message) => updates(message as SslSettings)) as SslSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SslSettings copyWith(void Function(SslSettings) updates) =>
+      super.copyWith((message) => updates(message as SslSettings))
+          as SslSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -167,7 +199,8 @@ class SslSettings extends $pb.GeneratedMessage {
   SslSettings createEmptyInstance() => create();
   static $pb.PbList<SslSettings> createRepeated() => $pb.PbList<SslSettings>();
   @$core.pragma('dart2js:noInline')
-  static SslSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SslSettings>(create);
+  static SslSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SslSettings>(create);
   static SslSettings? _defaultInstance;
 
   ///  ID of the `AuthorizedCertificate` resource configuring SSL for the
@@ -182,7 +215,10 @@ class SslSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get certificateId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set certificateId($core.String v) { $_setString(0, v); }
+  set certificateId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCertificateId() => $_has(0);
   @$pb.TagNumber(1)
@@ -194,7 +230,10 @@ class SslSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   SslSettings_SslManagementType get sslManagementType => $_getN(1);
   @$pb.TagNumber(3)
-  set sslManagementType(SslSettings_SslManagementType v) { setField(3, v); }
+  set sslManagementType(SslSettings_SslManagementType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSslManagementType() => $_has(1);
   @$pb.TagNumber(3)
@@ -212,7 +251,10 @@ class SslSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pendingManagedCertificateId => $_getSZ(2);
   @$pb.TagNumber(4)
-  set pendingManagedCertificateId($core.String v) { $_setString(2, v); }
+  set pendingManagedCertificateId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPendingManagedCertificateId() => $_has(2);
   @$pb.TagNumber(4)
@@ -239,35 +281,48 @@ class ResourceRecord extends $pb.GeneratedMessage {
     return $result;
   }
   ResourceRecord._() : super();
-  factory ResourceRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ResourceRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ResourceRecord.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ResourceRecord.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResourceRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResourceRecord',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.appengine.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'rrdata')
-    ..e<ResourceRecord_RecordType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: ResourceRecord_RecordType.A, valueOf: ResourceRecord_RecordType.valueOf, enumValues: ResourceRecord_RecordType.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ResourceRecord_RecordType>(
+        3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: ResourceRecord_RecordType.A,
+        valueOf: ResourceRecord_RecordType.valueOf,
+        enumValues: ResourceRecord_RecordType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ResourceRecord clone() => ResourceRecord()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ResourceRecord copyWith(void Function(ResourceRecord) updates) => super.copyWith((message) => updates(message as ResourceRecord)) as ResourceRecord;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ResourceRecord copyWith(void Function(ResourceRecord) updates) =>
+      super.copyWith((message) => updates(message as ResourceRecord))
+          as ResourceRecord;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResourceRecord create() => ResourceRecord._();
   ResourceRecord createEmptyInstance() => create();
-  static $pb.PbList<ResourceRecord> createRepeated() => $pb.PbList<ResourceRecord>();
+  static $pb.PbList<ResourceRecord> createRepeated() =>
+      $pb.PbList<ResourceRecord>();
   @$core.pragma('dart2js:noInline')
-  static ResourceRecord getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResourceRecord>(create);
+  static ResourceRecord getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResourceRecord>(create);
   static ResourceRecord? _defaultInstance;
 
   /// Relative name of the object affected by this record. Only applicable for
@@ -275,7 +330,10 @@ class ResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -286,7 +344,10 @@ class ResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get rrdata => $_getSZ(1);
   @$pb.TagNumber(2)
-  set rrdata($core.String v) { $_setString(1, v); }
+  set rrdata($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRrdata() => $_has(1);
   @$pb.TagNumber(2)
@@ -296,13 +357,16 @@ class ResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ResourceRecord_RecordType get type => $_getN(2);
   @$pb.TagNumber(3)
-  set type(ResourceRecord_RecordType v) { setField(3, v); }
+  set type(ResourceRecord_RecordType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
   void clearType() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

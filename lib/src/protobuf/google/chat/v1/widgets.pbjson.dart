@@ -17,12 +17,53 @@ import 'dart:typed_data' as $typed_data;
 const WidgetMarkup$json = {
   '1': 'WidgetMarkup',
   '2': [
-    {'1': 'text_paragraph', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.TextParagraph', '9': 0, '10': 'textParagraph'},
-    {'1': 'image', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.Image', '9': 0, '10': 'image'},
-    {'1': 'key_value', '3': 3, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.KeyValue', '9': 0, '10': 'keyValue'},
-    {'1': 'buttons', '3': 6, '4': 3, '5': 11, '6': '.google.chat.v1.WidgetMarkup.Button', '10': 'buttons'},
+    {
+      '1': 'text_paragraph',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.TextParagraph',
+      '9': 0,
+      '10': 'textParagraph'
+    },
+    {
+      '1': 'image',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.Image',
+      '9': 0,
+      '10': 'image'
+    },
+    {
+      '1': 'key_value',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.KeyValue',
+      '9': 0,
+      '10': 'keyValue'
+    },
+    {
+      '1': 'buttons',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.Button',
+      '10': 'buttons'
+    },
   ],
-  '3': [WidgetMarkup_TextParagraph$json, WidgetMarkup_Button$json, WidgetMarkup_TextButton$json, WidgetMarkup_KeyValue$json, WidgetMarkup_Image$json, WidgetMarkup_ImageButton$json, WidgetMarkup_OnClick$json, WidgetMarkup_OpenLink$json, WidgetMarkup_FormAction$json],
+  '3': [
+    WidgetMarkup_TextParagraph$json,
+    WidgetMarkup_Button$json,
+    WidgetMarkup_TextButton$json,
+    WidgetMarkup_KeyValue$json,
+    WidgetMarkup_Image$json,
+    WidgetMarkup_ImageButton$json,
+    WidgetMarkup_OnClick$json,
+    WidgetMarkup_OpenLink$json,
+    WidgetMarkup_FormAction$json
+  ],
   '4': [WidgetMarkup_Icon$json],
   '8': [
     {'1': 'data'},
@@ -41,8 +82,24 @@ const WidgetMarkup_TextParagraph$json = {
 const WidgetMarkup_Button$json = {
   '1': 'Button',
   '2': [
-    {'1': 'text_button', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.TextButton', '9': 0, '10': 'textButton'},
-    {'1': 'image_button', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.ImageButton', '9': 0, '10': 'imageButton'},
+    {
+      '1': 'text_button',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.TextButton',
+      '9': 0,
+      '10': 'textButton'
+    },
+    {
+      '1': 'image_button',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.ImageButton',
+      '9': 0,
+      '10': 'imageButton'
+    },
   ],
   '8': [
     {'1': 'type'},
@@ -54,7 +111,14 @@ const WidgetMarkup_TextButton$json = {
   '1': 'TextButton',
   '2': [
     {'1': 'text', '3': 1, '4': 1, '5': 9, '10': 'text'},
-    {'1': 'on_click', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.OnClick', '10': 'onClick'},
+    {
+      '1': 'on_click',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.OnClick',
+      '10': 'onClick'
+    },
   ],
 };
 
@@ -62,14 +126,43 @@ const WidgetMarkup_TextButton$json = {
 const WidgetMarkup_KeyValue$json = {
   '1': 'KeyValue',
   '2': [
-    {'1': 'icon', '3': 1, '4': 1, '5': 14, '6': '.google.chat.v1.WidgetMarkup.Icon', '9': 0, '10': 'icon'},
+    {
+      '1': 'icon',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.WidgetMarkup.Icon',
+      '9': 0,
+      '10': 'icon'
+    },
     {'1': 'icon_url', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'iconUrl'},
     {'1': 'top_label', '3': 3, '4': 1, '5': 9, '10': 'topLabel'},
     {'1': 'content', '3': 4, '4': 1, '5': 9, '10': 'content'},
-    {'1': 'content_multiline', '3': 9, '4': 1, '5': 8, '10': 'contentMultiline'},
+    {
+      '1': 'content_multiline',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '10': 'contentMultiline'
+    },
     {'1': 'bottom_label', '3': 5, '4': 1, '5': 9, '10': 'bottomLabel'},
-    {'1': 'on_click', '3': 6, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.OnClick', '10': 'onClick'},
-    {'1': 'button', '3': 7, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.Button', '9': 1, '10': 'button'},
+    {
+      '1': 'on_click',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.OnClick',
+      '10': 'onClick'
+    },
+    {
+      '1': 'button',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.Button',
+      '9': 1,
+      '10': 'button'
+    },
   ],
   '8': [
     {'1': 'icons'},
@@ -82,7 +175,14 @@ const WidgetMarkup_Image$json = {
   '1': 'Image',
   '2': [
     {'1': 'image_url', '3': 1, '4': 1, '5': 9, '10': 'imageUrl'},
-    {'1': 'on_click', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.OnClick', '10': 'onClick'},
+    {
+      '1': 'on_click',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.OnClick',
+      '10': 'onClick'
+    },
     {'1': 'aspect_ratio', '3': 3, '4': 1, '5': 1, '10': 'aspectRatio'},
   ],
 };
@@ -91,9 +191,24 @@ const WidgetMarkup_Image$json = {
 const WidgetMarkup_ImageButton$json = {
   '1': 'ImageButton',
   '2': [
-    {'1': 'icon', '3': 1, '4': 1, '5': 14, '6': '.google.chat.v1.WidgetMarkup.Icon', '9': 0, '10': 'icon'},
+    {
+      '1': 'icon',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.WidgetMarkup.Icon',
+      '9': 0,
+      '10': 'icon'
+    },
     {'1': 'icon_url', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'iconUrl'},
-    {'1': 'on_click', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.OnClick', '10': 'onClick'},
+    {
+      '1': 'on_click',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.OnClick',
+      '10': 'onClick'
+    },
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
   ],
   '8': [
@@ -105,8 +220,24 @@ const WidgetMarkup_ImageButton$json = {
 const WidgetMarkup_OnClick$json = {
   '1': 'OnClick',
   '2': [
-    {'1': 'action', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.FormAction', '9': 0, '10': 'action'},
-    {'1': 'open_link', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.WidgetMarkup.OpenLink', '9': 0, '10': 'openLink'},
+    {
+      '1': 'action',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.FormAction',
+      '9': 0,
+      '10': 'action'
+    },
+    {
+      '1': 'open_link',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.OpenLink',
+      '9': 0,
+      '10': 'openLink'
+    },
   ],
   '8': [
     {'1': 'data'},
@@ -125,8 +256,21 @@ const WidgetMarkup_OpenLink$json = {
 const WidgetMarkup_FormAction$json = {
   '1': 'FormAction',
   '2': [
-    {'1': 'action_method_name', '3': 1, '4': 1, '5': 9, '10': 'actionMethodName'},
-    {'1': 'parameters', '3': 2, '4': 3, '5': 11, '6': '.google.chat.v1.WidgetMarkup.FormAction.ActionParameter', '10': 'parameters'},
+    {
+      '1': 'action_method_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'actionMethodName'
+    },
+    {
+      '1': 'parameters',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.WidgetMarkup.FormAction.ActionParameter',
+      '10': 'parameters'
+    },
   ],
   '3': [WidgetMarkup_FormAction_ActionParameter$json],
 };
@@ -220,4 +364,3 @@ final $typed_data.Uint8List widgetMarkupDescriptor = $convert.base64Decode(
     'VSEB4SCgoGUEVSU09OEAsSCQoFUEhPTkUQDRITCg9SRVNUQVVSQU5UX0lDT04QBxIRCg1TSE9Q'
     'UElOR19DQVJUEAgSCAoEU1RBUhAFEgkKBVNUT1JFEBYSCgoGVElDS0VUEAQSCQoFVFJBSU4QFx'
     'IQCgxWSURFT19DQU1FUkEQHBIOCgpWSURFT19QTEFZEB1CBgoEZGF0YQ==');
-

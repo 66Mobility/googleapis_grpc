@@ -39,35 +39,48 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
     return $result;
   }
   PieChart_PieChartDataSet._() : super();
-  factory PieChart_PieChartDataSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PieChart_PieChartDataSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PieChart_PieChartDataSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PieChart_PieChartDataSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PieChart.PieChartDataSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $513.TimeSeriesQuery.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PieChart.PieChartDataSet',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $513.TimeSeriesQuery.create)
     ..aOS(2, _omitFieldNames ? '' : 'sliceNameTemplate')
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PieChart_PieChartDataSet clone() => PieChart_PieChartDataSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PieChart_PieChartDataSet copyWith(void Function(PieChart_PieChartDataSet) updates) => super.copyWith((message) => updates(message as PieChart_PieChartDataSet)) as PieChart_PieChartDataSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PieChart_PieChartDataSet clone() =>
+      PieChart_PieChartDataSet()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PieChart_PieChartDataSet copyWith(
+          void Function(PieChart_PieChartDataSet) updates) =>
+      super.copyWith((message) => updates(message as PieChart_PieChartDataSet))
+          as PieChart_PieChartDataSet;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PieChart_PieChartDataSet create() => PieChart_PieChartDataSet._();
   PieChart_PieChartDataSet createEmptyInstance() => create();
-  static $pb.PbList<PieChart_PieChartDataSet> createRepeated() => $pb.PbList<PieChart_PieChartDataSet>();
+  static $pb.PbList<PieChart_PieChartDataSet> createRepeated() =>
+      $pb.PbList<PieChart_PieChartDataSet>();
   @$core.pragma('dart2js:noInline')
-  static PieChart_PieChartDataSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PieChart_PieChartDataSet>(create);
+  static PieChart_PieChartDataSet getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PieChart_PieChartDataSet>(create);
   static PieChart_PieChartDataSet? _defaultInstance;
 
   /// Required. The query for the PieChart. See,
@@ -75,7 +88,10 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $513.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($513.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($513.TimeSeriesQuery v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,7 +108,10 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get sliceNameTemplate => $_getSZ(1);
   @$pb.TagNumber(2)
-  set sliceNameTemplate($core.String v) { $_setString(1, v); }
+  set sliceNameTemplate($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSliceNameTemplate() => $_has(1);
   @$pb.TagNumber(2)
@@ -106,7 +125,10 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get minAlignmentPeriod => $_getN(2);
   @$pb.TagNumber(3)
-  set minAlignmentPeriod($264.Duration v) { setField(3, v); }
+  set minAlignmentPeriod($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMinAlignmentPeriod() => $_has(2);
   @$pb.TagNumber(3)
@@ -135,26 +157,38 @@ class PieChart extends $pb.GeneratedMessage {
     return $result;
   }
   PieChart._() : super();
-  factory PieChart.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PieChart.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PieChart.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PieChart.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PieChart', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<PieChart_PieChartDataSet>(1, _omitFieldNames ? '' : 'dataSets', $pb.PbFieldType.PM, subBuilder: PieChart_PieChartDataSet.create)
-    ..e<PieChart_PieChartType>(2, _omitFieldNames ? '' : 'chartType', $pb.PbFieldType.OE, defaultOrMaker: PieChart_PieChartType.PIE_CHART_TYPE_UNSPECIFIED, valueOf: PieChart_PieChartType.valueOf, enumValues: PieChart_PieChartType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PieChart',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..pc<PieChart_PieChartDataSet>(
+        1, _omitFieldNames ? '' : 'dataSets', $pb.PbFieldType.PM,
+        subBuilder: PieChart_PieChartDataSet.create)
+    ..e<PieChart_PieChartType>(
+        2, _omitFieldNames ? '' : 'chartType', $pb.PbFieldType.OE,
+        defaultOrMaker: PieChart_PieChartType.PIE_CHART_TYPE_UNSPECIFIED,
+        valueOf: PieChart_PieChartType.valueOf,
+        enumValues: PieChart_PieChartType.values)
     ..aOB(4, _omitFieldNames ? '' : 'showLabels')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PieChart clone() => PieChart()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PieChart copyWith(void Function(PieChart) updates) => super.copyWith((message) => updates(message as PieChart)) as PieChart;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PieChart copyWith(void Function(PieChart) updates) =>
+      super.copyWith((message) => updates(message as PieChart)) as PieChart;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -163,7 +197,8 @@ class PieChart extends $pb.GeneratedMessage {
   PieChart createEmptyInstance() => create();
   static $pb.PbList<PieChart> createRepeated() => $pb.PbList<PieChart>();
   @$core.pragma('dart2js:noInline')
-  static PieChart getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PieChart>(create);
+  static PieChart getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PieChart>(create);
   static PieChart? _defaultInstance;
 
   /// Required. The queries for the chart's data.
@@ -174,7 +209,10 @@ class PieChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PieChart_PieChartType get chartType => $_getN(1);
   @$pb.TagNumber(2)
-  set chartType(PieChart_PieChartType v) { setField(2, v); }
+  set chartType(PieChart_PieChartType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasChartType() => $_has(1);
   @$pb.TagNumber(2)
@@ -184,13 +222,16 @@ class PieChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get showLabels => $_getBF(2);
   @$pb.TagNumber(4)
-  set showLabels($core.bool v) { $_setBool(2, v); }
+  set showLabels($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasShowLabels() => $_has(2);
   @$pb.TagNumber(4)
   void clearShowLabels() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

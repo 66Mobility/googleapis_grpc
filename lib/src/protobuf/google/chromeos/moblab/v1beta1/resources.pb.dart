@@ -30,24 +30,31 @@ class BuildTarget extends $pb.GeneratedMessage {
     return $result;
   }
   BuildTarget._() : super();
-  factory BuildTarget.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BuildTarget.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BuildTarget.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BuildTarget.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildTarget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildTarget',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BuildTarget clone() => BuildTarget()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BuildTarget copyWith(void Function(BuildTarget) updates) => super.copyWith((message) => updates(message as BuildTarget)) as BuildTarget;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BuildTarget copyWith(void Function(BuildTarget) updates) =>
+      super.copyWith((message) => updates(message as BuildTarget))
+          as BuildTarget;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -56,7 +63,8 @@ class BuildTarget extends $pb.GeneratedMessage {
   BuildTarget createEmptyInstance() => create();
   static $pb.PbList<BuildTarget> createRepeated() => $pb.PbList<BuildTarget>();
   @$core.pragma('dart2js:noInline')
-  static BuildTarget getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildTarget>(create);
+  static BuildTarget getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuildTarget>(create);
   static BuildTarget? _defaultInstance;
 
   /// The resource name of the build target.
@@ -64,7 +72,10 @@ class BuildTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,24 +96,30 @@ class Model extends $pb.GeneratedMessage {
     return $result;
   }
   Model._() : super();
-  factory Model.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Model.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Model.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Model.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Model',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Model clone() => Model()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Model copyWith(void Function(Model) updates) => super.copyWith((message) => updates(message as Model)) as Model;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Model copyWith(void Function(Model) updates) =>
+      super.copyWith((message) => updates(message as Model)) as Model;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -111,7 +128,8 @@ class Model extends $pb.GeneratedMessage {
   Model createEmptyInstance() => create();
   static $pb.PbList<Model> createRepeated() => $pb.PbList<Model>();
   @$core.pragma('dart2js:noInline')
-  static Model getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Model>(create);
+  static Model getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Model>(create);
   static Model? _defaultInstance;
 
   /// The resource name of the model.
@@ -119,7 +137,10 @@ class Model extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -139,24 +160,30 @@ class Milestone extends $pb.GeneratedMessage {
     return $result;
   }
   Milestone._() : super();
-  factory Milestone.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Milestone.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Milestone.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Milestone.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Milestone', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Milestone',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Milestone clone() => Milestone()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Milestone copyWith(void Function(Milestone) updates) => super.copyWith((message) => updates(message as Milestone)) as Milestone;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Milestone copyWith(void Function(Milestone) updates) =>
+      super.copyWith((message) => updates(message as Milestone)) as Milestone;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -165,7 +192,8 @@ class Milestone extends $pb.GeneratedMessage {
   Milestone createEmptyInstance() => create();
   static $pb.PbList<Milestone> createRepeated() => $pb.PbList<Milestone>();
   @$core.pragma('dart2js:noInline')
-  static Milestone getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Milestone>(create);
+  static Milestone getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Milestone>(create);
   static Milestone? _defaultInstance;
 
   /// The resource name of the milestone.
@@ -173,7 +201,10 @@ class Milestone extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -222,31 +253,44 @@ class Build extends $pb.GeneratedMessage {
     return $result;
   }
   Build._() : super();
-  factory Build.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Build.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Build.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Build.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Build', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Build',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'milestone')
     ..aOS(3, _omitFieldNames ? '' : 'buildVersion')
-    ..e<Build_BuildStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: Build_BuildStatus.BUILD_STATUS_UNSPECIFIED, valueOf: Build_BuildStatus.valueOf, enumValues: Build_BuildStatus.values)
-    ..e<Build_BuildType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Build_BuildType.BUILD_TYPE_UNSPECIFIED, valueOf: Build_BuildType.valueOf, enumValues: Build_BuildType.values)
+    ..e<Build_BuildStatus>(
+        4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
+        defaultOrMaker: Build_BuildStatus.BUILD_STATUS_UNSPECIFIED,
+        valueOf: Build_BuildStatus.valueOf,
+        enumValues: Build_BuildStatus.values)
+    ..e<Build_BuildType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: Build_BuildType.BUILD_TYPE_UNSPECIFIED,
+        valueOf: Build_BuildType.valueOf,
+        enumValues: Build_BuildType.values)
     ..aOS(6, _omitFieldNames ? '' : 'branch')
     ..aOS(7, _omitFieldNames ? '' : 'rwFirmwareVersion')
     ..pPS(8, _omitFieldNames ? '' : 'labels')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Build clone() => Build()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Build copyWith(void Function(Build) updates) => super.copyWith((message) => updates(message as Build)) as Build;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Build copyWith(void Function(Build) updates) =>
+      super.copyWith((message) => updates(message as Build)) as Build;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -255,7 +299,8 @@ class Build extends $pb.GeneratedMessage {
   Build createEmptyInstance() => create();
   static $pb.PbList<Build> createRepeated() => $pb.PbList<Build>();
   @$core.pragma('dart2js:noInline')
-  static Build getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Build>(create);
+  static Build getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Build>(create);
   static Build? _defaultInstance;
 
   /// The resource name of the build.
@@ -264,7 +309,10 @@ class Build extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -275,7 +323,10 @@ class Build extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get milestone => $_getSZ(1);
   @$pb.TagNumber(2)
-  set milestone($core.String v) { $_setString(1, v); }
+  set milestone($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMilestone() => $_has(1);
   @$pb.TagNumber(2)
@@ -285,7 +336,10 @@ class Build extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get buildVersion => $_getSZ(2);
   @$pb.TagNumber(3)
-  set buildVersion($core.String v) { $_setString(2, v); }
+  set buildVersion($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBuildVersion() => $_has(2);
   @$pb.TagNumber(3)
@@ -295,7 +349,10 @@ class Build extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Build_BuildStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status(Build_BuildStatus v) { setField(4, v); }
+  set status(Build_BuildStatus v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -305,7 +362,10 @@ class Build extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Build_BuildType get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type(Build_BuildType v) { setField(5, v); }
+  set type(Build_BuildType v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -315,7 +375,10 @@ class Build extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get branch => $_getSZ(5);
   @$pb.TagNumber(6)
-  set branch($core.String v) { $_setString(5, v); }
+  set branch($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasBranch() => $_has(5);
   @$pb.TagNumber(6)
@@ -326,7 +389,10 @@ class Build extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get rwFirmwareVersion => $_getSZ(6);
   @$pb.TagNumber(7)
-  set rwFirmwareVersion($core.String v) { $_setString(6, v); }
+  set rwFirmwareVersion($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRwFirmwareVersion() => $_has(6);
   @$pb.TagNumber(7)
@@ -367,37 +433,46 @@ class BuildArtifact extends $pb.GeneratedMessage {
     return $result;
   }
   BuildArtifact._() : super();
-  factory BuildArtifact.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BuildArtifact.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BuildArtifact.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BuildArtifact.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildArtifact', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildArtifact',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'build')
     ..aOS(3, _omitFieldNames ? '' : 'bucket')
     ..aOS(4, _omitFieldNames ? '' : 'path')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'objectCount', $pb.PbFieldType.OU3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BuildArtifact clone() => BuildArtifact()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BuildArtifact copyWith(void Function(BuildArtifact) updates) => super.copyWith((message) => updates(message as BuildArtifact)) as BuildArtifact;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BuildArtifact copyWith(void Function(BuildArtifact) updates) =>
+      super.copyWith((message) => updates(message as BuildArtifact))
+          as BuildArtifact;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BuildArtifact create() => BuildArtifact._();
   BuildArtifact createEmptyInstance() => create();
-  static $pb.PbList<BuildArtifact> createRepeated() => $pb.PbList<BuildArtifact>();
+  static $pb.PbList<BuildArtifact> createRepeated() =>
+      $pb.PbList<BuildArtifact>();
   @$core.pragma('dart2js:noInline')
-  static BuildArtifact getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildArtifact>(create);
+  static BuildArtifact getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuildArtifact>(create);
   static BuildArtifact? _defaultInstance;
 
   /// The resource name of the build artifact.
@@ -408,7 +483,10 @@ class BuildArtifact extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -418,7 +496,10 @@ class BuildArtifact extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get build => $_getSZ(1);
   @$pb.TagNumber(2)
-  set build($core.String v) { $_setString(1, v); }
+  set build($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBuild() => $_has(1);
   @$pb.TagNumber(2)
@@ -428,7 +509,10 @@ class BuildArtifact extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get bucket => $_getSZ(2);
   @$pb.TagNumber(3)
-  set bucket($core.String v) { $_setString(2, v); }
+  set bucket($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBucket() => $_has(2);
   @$pb.TagNumber(3)
@@ -438,7 +522,10 @@ class BuildArtifact extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get path => $_getSZ(3);
   @$pb.TagNumber(4)
-  set path($core.String v) { $_setString(3, v); }
+  set path($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPath() => $_has(3);
   @$pb.TagNumber(4)
@@ -450,13 +537,16 @@ class BuildArtifact extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get objectCount => $_getIZ(4);
   @$pb.TagNumber(5)
-  set objectCount($core.int v) { $_setUnsignedInt32(4, v); }
+  set objectCount($core.int v) {
+    $_setUnsignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasObjectCount() => $_has(4);
   @$pb.TagNumber(5)
   void clearObjectCount() => clearField(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

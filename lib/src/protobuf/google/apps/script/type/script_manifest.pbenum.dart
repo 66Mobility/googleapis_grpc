@@ -15,23 +15,29 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Authorization header sent in add-on HTTP requests
 class HttpAuthorizationHeader extends $pb.ProtobufEnum {
-  static const HttpAuthorizationHeader HTTP_AUTHORIZATION_HEADER_UNSPECIFIED = HttpAuthorizationHeader._(0, _omitEnumNames ? '' : 'HTTP_AUTHORIZATION_HEADER_UNSPECIFIED');
-  static const HttpAuthorizationHeader SYSTEM_ID_TOKEN = HttpAuthorizationHeader._(1, _omitEnumNames ? '' : 'SYSTEM_ID_TOKEN');
-  static const HttpAuthorizationHeader USER_ID_TOKEN = HttpAuthorizationHeader._(2, _omitEnumNames ? '' : 'USER_ID_TOKEN');
-  static const HttpAuthorizationHeader NONE = HttpAuthorizationHeader._(3, _omitEnumNames ? '' : 'NONE');
+  static const HttpAuthorizationHeader HTTP_AUTHORIZATION_HEADER_UNSPECIFIED =
+      HttpAuthorizationHeader._(
+          0, _omitEnumNames ? '' : 'HTTP_AUTHORIZATION_HEADER_UNSPECIFIED');
+  static const HttpAuthorizationHeader SYSTEM_ID_TOKEN =
+      HttpAuthorizationHeader._(1, _omitEnumNames ? '' : 'SYSTEM_ID_TOKEN');
+  static const HttpAuthorizationHeader USER_ID_TOKEN =
+      HttpAuthorizationHeader._(2, _omitEnumNames ? '' : 'USER_ID_TOKEN');
+  static const HttpAuthorizationHeader NONE =
+      HttpAuthorizationHeader._(3, _omitEnumNames ? '' : 'NONE');
 
-  static const $core.List<HttpAuthorizationHeader> values = <HttpAuthorizationHeader> [
+  static const $core.List<HttpAuthorizationHeader> values =
+      <HttpAuthorizationHeader>[
     HTTP_AUTHORIZATION_HEADER_UNSPECIFIED,
     SYSTEM_ID_TOKEN,
     USER_ID_TOKEN,
     NONE,
   ];
 
-  static final $core.Map<$core.int, HttpAuthorizationHeader> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, HttpAuthorizationHeader> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static HttpAuthorizationHeader? valueOf($core.int value) => _byValue[value];
 
   const HttpAuthorizationHeader._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

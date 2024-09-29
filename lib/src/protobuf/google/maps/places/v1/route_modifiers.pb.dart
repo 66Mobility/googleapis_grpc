@@ -38,36 +38,45 @@ class RouteModifiers extends $pb.GeneratedMessage {
     return $result;
   }
   RouteModifiers._() : super();
-  factory RouteModifiers.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RouteModifiers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RouteModifiers.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RouteModifiers.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteModifiers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RouteModifiers',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'avoidTolls')
     ..aOB(2, _omitFieldNames ? '' : 'avoidHighways')
     ..aOB(3, _omitFieldNames ? '' : 'avoidFerries')
     ..aOB(4, _omitFieldNames ? '' : 'avoidIndoor')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RouteModifiers clone() => RouteModifiers()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RouteModifiers copyWith(void Function(RouteModifiers) updates) => super.copyWith((message) => updates(message as RouteModifiers)) as RouteModifiers;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RouteModifiers copyWith(void Function(RouteModifiers) updates) =>
+      super.copyWith((message) => updates(message as RouteModifiers))
+          as RouteModifiers;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouteModifiers create() => RouteModifiers._();
   RouteModifiers createEmptyInstance() => create();
-  static $pb.PbList<RouteModifiers> createRepeated() => $pb.PbList<RouteModifiers>();
+  static $pb.PbList<RouteModifiers> createRepeated() =>
+      $pb.PbList<RouteModifiers>();
   @$core.pragma('dart2js:noInline')
-  static RouteModifiers getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteModifiers>(create);
+  static RouteModifiers getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RouteModifiers>(create);
   static RouteModifiers? _defaultInstance;
 
   /// Optional. When set to true, avoids toll roads where reasonable, giving
@@ -76,7 +85,10 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get avoidTolls => $_getBF(0);
   @$pb.TagNumber(1)
-  set avoidTolls($core.bool v) { $_setBool(0, v); }
+  set avoidTolls($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAvoidTolls() => $_has(0);
   @$pb.TagNumber(1)
@@ -88,7 +100,10 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get avoidHighways => $_getBF(1);
   @$pb.TagNumber(2)
-  set avoidHighways($core.bool v) { $_setBool(1, v); }
+  set avoidHighways($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAvoidHighways() => $_has(1);
   @$pb.TagNumber(2)
@@ -100,7 +115,10 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get avoidFerries => $_getBF(2);
   @$pb.TagNumber(3)
-  set avoidFerries($core.bool v) { $_setBool(2, v); }
+  set avoidFerries($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAvoidFerries() => $_has(2);
   @$pb.TagNumber(3)
@@ -112,13 +130,16 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get avoidIndoor => $_getBF(3);
   @$pb.TagNumber(4)
-  set avoidIndoor($core.bool v) { $_setBool(3, v); }
+  set avoidIndoor($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAvoidIndoor() => $_has(3);
   @$pb.TagNumber(4)
   void clearAvoidIndoor() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

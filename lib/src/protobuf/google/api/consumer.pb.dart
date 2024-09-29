@@ -44,33 +44,42 @@ class ProjectProperties extends $pb.GeneratedMessage {
     return $result;
   }
   ProjectProperties._() : super();
-  factory ProjectProperties.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProjectProperties.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProjectProperties.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProjectProperties.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProjectProperties', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<Property>(1, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: Property.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProjectProperties',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<Property>(1, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM,
+        subBuilder: Property.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProjectProperties clone() => ProjectProperties()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProjectProperties copyWith(void Function(ProjectProperties) updates) => super.copyWith((message) => updates(message as ProjectProperties)) as ProjectProperties;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProjectProperties copyWith(void Function(ProjectProperties) updates) =>
+      super.copyWith((message) => updates(message as ProjectProperties))
+          as ProjectProperties;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProjectProperties create() => ProjectProperties._();
   ProjectProperties createEmptyInstance() => create();
-  static $pb.PbList<ProjectProperties> createRepeated() => $pb.PbList<ProjectProperties>();
+  static $pb.PbList<ProjectProperties> createRepeated() =>
+      $pb.PbList<ProjectProperties>();
   @$core.pragma('dart2js:noInline')
-  static ProjectProperties getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProjectProperties>(create);
+  static ProjectProperties getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProjectProperties>(create);
   static ProjectProperties? _defaultInstance;
 
   /// List of per consumer project-specific properties.
@@ -107,26 +116,35 @@ class Property extends $pb.GeneratedMessage {
     return $result;
   }
   Property._() : super();
-  factory Property.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Property.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Property.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Property.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Property', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Property',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<Property_PropertyType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Property_PropertyType.UNSPECIFIED, valueOf: Property_PropertyType.valueOf, enumValues: Property_PropertyType.values)
+    ..e<Property_PropertyType>(
+        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: Property_PropertyType.UNSPECIFIED,
+        valueOf: Property_PropertyType.valueOf,
+        enumValues: Property_PropertyType.values)
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Property clone() => Property()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Property copyWith(void Function(Property) updates) => super.copyWith((message) => updates(message as Property)) as Property;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Property copyWith(void Function(Property) updates) =>
+      super.copyWith((message) => updates(message as Property)) as Property;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -135,14 +153,18 @@ class Property extends $pb.GeneratedMessage {
   Property createEmptyInstance() => create();
   static $pb.PbList<Property> createRepeated() => $pb.PbList<Property>();
   @$core.pragma('dart2js:noInline')
-  static Property getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Property>(create);
+  static Property getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Property>(create);
   static Property? _defaultInstance;
 
   /// The name of the property (a.k.a key).
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -152,7 +174,10 @@ class Property extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Property_PropertyType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(Property_PropertyType v) { setField(2, v); }
+  set type(Property_PropertyType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -162,13 +187,16 @@ class Property extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
   void clearDescription() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

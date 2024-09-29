@@ -37,35 +37,51 @@ class ListNotificationChannelDescriptorsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListNotificationChannelDescriptorsRequest._() : super();
-  factory ListNotificationChannelDescriptorsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNotificationChannelDescriptorsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListNotificationChannelDescriptorsRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListNotificationChannelDescriptorsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationChannelDescriptorsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListNotificationChannelDescriptorsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelDescriptorsRequest clone() => ListNotificationChannelDescriptorsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelDescriptorsRequest copyWith(void Function(ListNotificationChannelDescriptorsRequest) updates) => super.copyWith((message) => updates(message as ListNotificationChannelDescriptorsRequest)) as ListNotificationChannelDescriptorsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelDescriptorsRequest clone() =>
+      ListNotificationChannelDescriptorsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelDescriptorsRequest copyWith(
+          void Function(ListNotificationChannelDescriptorsRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListNotificationChannelDescriptorsRequest))
+          as ListNotificationChannelDescriptorsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelDescriptorsRequest create() => ListNotificationChannelDescriptorsRequest._();
+  static ListNotificationChannelDescriptorsRequest create() =>
+      ListNotificationChannelDescriptorsRequest._();
   ListNotificationChannelDescriptorsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListNotificationChannelDescriptorsRequest> createRepeated() => $pb.PbList<ListNotificationChannelDescriptorsRequest>();
+  static $pb.PbList<ListNotificationChannelDescriptorsRequest>
+      createRepeated() =>
+          $pb.PbList<ListNotificationChannelDescriptorsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelDescriptorsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationChannelDescriptorsRequest>(create);
+  static ListNotificationChannelDescriptorsRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListNotificationChannelDescriptorsRequest>(create);
   static ListNotificationChannelDescriptorsRequest? _defaultInstance;
 
   /// The maximum number of results to return in a single response. If
@@ -74,7 +90,10 @@ class ListNotificationChannelDescriptorsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(0);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(0, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(0);
   @$pb.TagNumber(2)
@@ -86,7 +105,10 @@ class ListNotificationChannelDescriptorsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(3)
@@ -106,7 +128,10 @@ class ListNotificationChannelDescriptorsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(4)
-  set name($core.String v) { $_setString(2, v); }
+  set name($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(4)
@@ -129,40 +154,59 @@ class ListNotificationChannelDescriptorsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListNotificationChannelDescriptorsResponse._() : super();
-  factory ListNotificationChannelDescriptorsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNotificationChannelDescriptorsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListNotificationChannelDescriptorsResponse.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListNotificationChannelDescriptorsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationChannelDescriptorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$199.NotificationChannelDescriptor>(1, _omitFieldNames ? '' : 'channelDescriptors', $pb.PbFieldType.PM, subBuilder: $199.NotificationChannelDescriptor.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListNotificationChannelDescriptorsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..pc<$199.NotificationChannelDescriptor>(
+        1, _omitFieldNames ? '' : 'channelDescriptors', $pb.PbFieldType.PM,
+        subBuilder: $199.NotificationChannelDescriptor.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelDescriptorsResponse clone() => ListNotificationChannelDescriptorsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelDescriptorsResponse copyWith(void Function(ListNotificationChannelDescriptorsResponse) updates) => super.copyWith((message) => updates(message as ListNotificationChannelDescriptorsResponse)) as ListNotificationChannelDescriptorsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelDescriptorsResponse clone() =>
+      ListNotificationChannelDescriptorsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelDescriptorsResponse copyWith(
+          void Function(ListNotificationChannelDescriptorsResponse) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListNotificationChannelDescriptorsResponse))
+          as ListNotificationChannelDescriptorsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelDescriptorsResponse create() => ListNotificationChannelDescriptorsResponse._();
+  static ListNotificationChannelDescriptorsResponse create() =>
+      ListNotificationChannelDescriptorsResponse._();
   ListNotificationChannelDescriptorsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListNotificationChannelDescriptorsResponse> createRepeated() => $pb.PbList<ListNotificationChannelDescriptorsResponse>();
+  static $pb.PbList<ListNotificationChannelDescriptorsResponse>
+      createRepeated() =>
+          $pb.PbList<ListNotificationChannelDescriptorsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelDescriptorsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationChannelDescriptorsResponse>(create);
+  static ListNotificationChannelDescriptorsResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListNotificationChannelDescriptorsResponse>(create);
   static ListNotificationChannelDescriptorsResponse? _defaultInstance;
 
   /// The monitored resource descriptors supported for the specified
   /// project, optionally filtered.
   @$pb.TagNumber(1)
-  $core.List<$199.NotificationChannelDescriptor> get channelDescriptors => $_getList(0);
+  $core.List<$199.NotificationChannelDescriptor> get channelDescriptors =>
+      $_getList(0);
 
   /// If not empty, indicates that there may be more results that match
   /// the request. Use the value in the `page_token` field in a
@@ -171,7 +215,10 @@ class ListNotificationChannelDescriptorsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -190,33 +237,48 @@ class GetNotificationChannelDescriptorRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetNotificationChannelDescriptorRequest._() : super();
-  factory GetNotificationChannelDescriptorRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetNotificationChannelDescriptorRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetNotificationChannelDescriptorRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetNotificationChannelDescriptorRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationChannelDescriptorRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetNotificationChannelDescriptorRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelDescriptorRequest clone() => GetNotificationChannelDescriptorRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelDescriptorRequest copyWith(void Function(GetNotificationChannelDescriptorRequest) updates) => super.copyWith((message) => updates(message as GetNotificationChannelDescriptorRequest)) as GetNotificationChannelDescriptorRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelDescriptorRequest clone() =>
+      GetNotificationChannelDescriptorRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelDescriptorRequest copyWith(
+          void Function(GetNotificationChannelDescriptorRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as GetNotificationChannelDescriptorRequest))
+          as GetNotificationChannelDescriptorRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelDescriptorRequest create() => GetNotificationChannelDescriptorRequest._();
+  static GetNotificationChannelDescriptorRequest create() =>
+      GetNotificationChannelDescriptorRequest._();
   GetNotificationChannelDescriptorRequest createEmptyInstance() => create();
-  static $pb.PbList<GetNotificationChannelDescriptorRequest> createRepeated() => $pb.PbList<GetNotificationChannelDescriptorRequest>();
+  static $pb.PbList<GetNotificationChannelDescriptorRequest> createRepeated() =>
+      $pb.PbList<GetNotificationChannelDescriptorRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelDescriptorRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetNotificationChannelDescriptorRequest>(create);
+  static GetNotificationChannelDescriptorRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          GetNotificationChannelDescriptorRequest>(create);
   static GetNotificationChannelDescriptorRequest? _defaultInstance;
 
   ///  Required. The channel type for which to execute the request. The format is:
@@ -225,7 +287,10 @@ class GetNotificationChannelDescriptorRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(3)
@@ -248,41 +313,60 @@ class CreateNotificationChannelRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateNotificationChannelRequest._() : super();
-  factory CreateNotificationChannelRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateNotificationChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateNotificationChannelRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateNotificationChannelRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateNotificationChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$199.NotificationChannel>(2, _omitFieldNames ? '' : 'notificationChannel', subBuilder: $199.NotificationChannel.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateNotificationChannelRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$199.NotificationChannel>(
+        2, _omitFieldNames ? '' : 'notificationChannel',
+        subBuilder: $199.NotificationChannel.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateNotificationChannelRequest clone() => CreateNotificationChannelRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateNotificationChannelRequest copyWith(void Function(CreateNotificationChannelRequest) updates) => super.copyWith((message) => updates(message as CreateNotificationChannelRequest)) as CreateNotificationChannelRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateNotificationChannelRequest clone() =>
+      CreateNotificationChannelRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateNotificationChannelRequest copyWith(
+          void Function(CreateNotificationChannelRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateNotificationChannelRequest))
+          as CreateNotificationChannelRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateNotificationChannelRequest create() => CreateNotificationChannelRequest._();
+  static CreateNotificationChannelRequest create() =>
+      CreateNotificationChannelRequest._();
   CreateNotificationChannelRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateNotificationChannelRequest> createRepeated() => $pb.PbList<CreateNotificationChannelRequest>();
+  static $pb.PbList<CreateNotificationChannelRequest> createRepeated() =>
+      $pb.PbList<CreateNotificationChannelRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateNotificationChannelRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateNotificationChannelRequest>(create);
+  static CreateNotificationChannelRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateNotificationChannelRequest>(
+          create);
   static CreateNotificationChannelRequest? _defaultInstance;
 
   /// Required. The definition of the `NotificationChannel` to create.
   @$pb.TagNumber(2)
   $199.NotificationChannel get notificationChannel => $_getN(0);
   @$pb.TagNumber(2)
-  set notificationChannel($199.NotificationChannel v) { setField(2, v); }
+  set notificationChannel($199.NotificationChannel v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNotificationChannel() => $_has(0);
   @$pb.TagNumber(2)
@@ -303,7 +387,10 @@ class CreateNotificationChannelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(1, v); }
+  set name($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -338,37 +425,51 @@ class ListNotificationChannelsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListNotificationChannelsRequest._() : super();
-  factory ListNotificationChannelsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNotificationChannelsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListNotificationChannelsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListNotificationChannelsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationChannelsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListNotificationChannelsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'name')
     ..aOS(6, _omitFieldNames ? '' : 'filter')
     ..aOS(7, _omitFieldNames ? '' : 'orderBy')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelsRequest clone() => ListNotificationChannelsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelsRequest copyWith(void Function(ListNotificationChannelsRequest) updates) => super.copyWith((message) => updates(message as ListNotificationChannelsRequest)) as ListNotificationChannelsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelsRequest clone() =>
+      ListNotificationChannelsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelsRequest copyWith(
+          void Function(ListNotificationChannelsRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListNotificationChannelsRequest))
+          as ListNotificationChannelsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelsRequest create() => ListNotificationChannelsRequest._();
+  static ListNotificationChannelsRequest create() =>
+      ListNotificationChannelsRequest._();
   ListNotificationChannelsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListNotificationChannelsRequest> createRepeated() => $pb.PbList<ListNotificationChannelsRequest>();
+  static $pb.PbList<ListNotificationChannelsRequest> createRepeated() =>
+      $pb.PbList<ListNotificationChannelsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationChannelsRequest>(create);
+  static ListNotificationChannelsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListNotificationChannelsRequest>(
+          create);
   static ListNotificationChannelsRequest? _defaultInstance;
 
   /// The maximum number of results to return in a single response. If
@@ -377,7 +478,10 @@ class ListNotificationChannelsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(0);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(0, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(0);
   @$pb.TagNumber(3)
@@ -389,7 +493,10 @@ class ListNotificationChannelsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(4)
@@ -410,7 +517,10 @@ class ListNotificationChannelsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(5)
-  set name($core.String v) { $_setString(2, v); }
+  set name($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(5)
@@ -424,7 +534,10 @@ class ListNotificationChannelsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(6)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(6)
@@ -439,7 +552,10 @@ class ListNotificationChannelsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get orderBy => $_getSZ(4);
   @$pb.TagNumber(7)
-  set orderBy($core.String v) { $_setString(4, v); }
+  set orderBy($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasOrderBy() => $_has(4);
   @$pb.TagNumber(7)
@@ -466,35 +582,51 @@ class ListNotificationChannelsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListNotificationChannelsResponse._() : super();
-  factory ListNotificationChannelsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNotificationChannelsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListNotificationChannelsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListNotificationChannelsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationChannelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListNotificationChannelsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$199.NotificationChannel>(3, _omitFieldNames ? '' : 'notificationChannels', $pb.PbFieldType.PM, subBuilder: $199.NotificationChannel.create)
+    ..pc<$199.NotificationChannel>(
+        3, _omitFieldNames ? '' : 'notificationChannels', $pb.PbFieldType.PM,
+        subBuilder: $199.NotificationChannel.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelsResponse clone() => ListNotificationChannelsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNotificationChannelsResponse copyWith(void Function(ListNotificationChannelsResponse) updates) => super.copyWith((message) => updates(message as ListNotificationChannelsResponse)) as ListNotificationChannelsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelsResponse clone() =>
+      ListNotificationChannelsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListNotificationChannelsResponse copyWith(
+          void Function(ListNotificationChannelsResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListNotificationChannelsResponse))
+          as ListNotificationChannelsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelsResponse create() => ListNotificationChannelsResponse._();
+  static ListNotificationChannelsResponse create() =>
+      ListNotificationChannelsResponse._();
   ListNotificationChannelsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListNotificationChannelsResponse> createRepeated() => $pb.PbList<ListNotificationChannelsResponse>();
+  static $pb.PbList<ListNotificationChannelsResponse> createRepeated() =>
+      $pb.PbList<ListNotificationChannelsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListNotificationChannelsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationChannelsResponse>(create);
+  static ListNotificationChannelsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListNotificationChannelsResponse>(
+          create);
   static ListNotificationChannelsResponse? _defaultInstance;
 
   /// If not empty, indicates that there may be more results that match
@@ -504,7 +636,10 @@ class ListNotificationChannelsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(0);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(0, v); }
+  set nextPageToken($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(0);
   @$pb.TagNumber(2)
@@ -519,7 +654,10 @@ class ListNotificationChannelsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get totalSize => $_getIZ(2);
   @$pb.TagNumber(4)
-  set totalSize($core.int v) { $_setSignedInt32(2, v); }
+  set totalSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTotalSize() => $_has(2);
   @$pb.TagNumber(4)
@@ -538,33 +676,46 @@ class GetNotificationChannelRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetNotificationChannelRequest._() : super();
-  factory GetNotificationChannelRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetNotificationChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetNotificationChannelRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetNotificationChannelRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetNotificationChannelRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelRequest clone() => GetNotificationChannelRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelRequest copyWith(void Function(GetNotificationChannelRequest) updates) => super.copyWith((message) => updates(message as GetNotificationChannelRequest)) as GetNotificationChannelRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelRequest clone() =>
+      GetNotificationChannelRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelRequest copyWith(
+          void Function(GetNotificationChannelRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetNotificationChannelRequest))
+          as GetNotificationChannelRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelRequest create() => GetNotificationChannelRequest._();
+  static GetNotificationChannelRequest create() =>
+      GetNotificationChannelRequest._();
   GetNotificationChannelRequest createEmptyInstance() => create();
-  static $pb.PbList<GetNotificationChannelRequest> createRepeated() => $pb.PbList<GetNotificationChannelRequest>();
+  static $pb.PbList<GetNotificationChannelRequest> createRepeated() =>
+      $pb.PbList<GetNotificationChannelRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetNotificationChannelRequest>(create);
+  static GetNotificationChannelRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetNotificationChannelRequest>(create);
   static GetNotificationChannelRequest? _defaultInstance;
 
   ///  Required. The channel for which to execute the request. The format is:
@@ -573,7 +724,10 @@ class GetNotificationChannelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(3)
@@ -596,41 +750,61 @@ class UpdateNotificationChannelRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateNotificationChannelRequest._() : super();
-  factory UpdateNotificationChannelRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateNotificationChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateNotificationChannelRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateNotificationChannelRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNotificationChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..aOM<$199.NotificationChannel>(3, _omitFieldNames ? '' : 'notificationChannel', subBuilder: $199.NotificationChannel.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateNotificationChannelRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..aOM<$199.NotificationChannel>(
+        3, _omitFieldNames ? '' : 'notificationChannel',
+        subBuilder: $199.NotificationChannel.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateNotificationChannelRequest clone() => UpdateNotificationChannelRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateNotificationChannelRequest copyWith(void Function(UpdateNotificationChannelRequest) updates) => super.copyWith((message) => updates(message as UpdateNotificationChannelRequest)) as UpdateNotificationChannelRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateNotificationChannelRequest clone() =>
+      UpdateNotificationChannelRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateNotificationChannelRequest copyWith(
+          void Function(UpdateNotificationChannelRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateNotificationChannelRequest))
+          as UpdateNotificationChannelRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateNotificationChannelRequest create() => UpdateNotificationChannelRequest._();
+  static UpdateNotificationChannelRequest create() =>
+      UpdateNotificationChannelRequest._();
   UpdateNotificationChannelRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateNotificationChannelRequest> createRepeated() => $pb.PbList<UpdateNotificationChannelRequest>();
+  static $pb.PbList<UpdateNotificationChannelRequest> createRepeated() =>
+      $pb.PbList<UpdateNotificationChannelRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateNotificationChannelRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateNotificationChannelRequest>(create);
+  static UpdateNotificationChannelRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateNotificationChannelRequest>(
+          create);
   static UpdateNotificationChannelRequest? _defaultInstance;
 
   /// The fields to update.
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(2)
@@ -645,7 +819,10 @@ class UpdateNotificationChannelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $199.NotificationChannel get notificationChannel => $_getN(1);
   @$pb.TagNumber(3)
-  set notificationChannel($199.NotificationChannel v) { setField(3, v); }
+  set notificationChannel($199.NotificationChannel v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNotificationChannel() => $_has(1);
   @$pb.TagNumber(3)
@@ -670,34 +847,48 @@ class DeleteNotificationChannelRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteNotificationChannelRequest._() : super();
-  factory DeleteNotificationChannelRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteNotificationChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteNotificationChannelRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteNotificationChannelRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteNotificationChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteNotificationChannelRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOB(5, _omitFieldNames ? '' : 'force')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteNotificationChannelRequest clone() => DeleteNotificationChannelRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteNotificationChannelRequest copyWith(void Function(DeleteNotificationChannelRequest) updates) => super.copyWith((message) => updates(message as DeleteNotificationChannelRequest)) as DeleteNotificationChannelRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteNotificationChannelRequest clone() =>
+      DeleteNotificationChannelRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteNotificationChannelRequest copyWith(
+          void Function(DeleteNotificationChannelRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as DeleteNotificationChannelRequest))
+          as DeleteNotificationChannelRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteNotificationChannelRequest create() => DeleteNotificationChannelRequest._();
+  static DeleteNotificationChannelRequest create() =>
+      DeleteNotificationChannelRequest._();
   DeleteNotificationChannelRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteNotificationChannelRequest> createRepeated() => $pb.PbList<DeleteNotificationChannelRequest>();
+  static $pb.PbList<DeleteNotificationChannelRequest> createRepeated() =>
+      $pb.PbList<DeleteNotificationChannelRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteNotificationChannelRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteNotificationChannelRequest>(create);
+  static DeleteNotificationChannelRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteNotificationChannelRequest>(
+          create);
   static DeleteNotificationChannelRequest? _defaultInstance;
 
   ///  Required. The channel for which to execute the request. The format is:
@@ -706,7 +897,10 @@ class DeleteNotificationChannelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(3)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(3)
@@ -719,7 +913,10 @@ class DeleteNotificationChannelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get force => $_getBF(1);
   @$pb.TagNumber(5)
-  set force($core.bool v) { $_setBool(1, v); }
+  set force($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasForce() => $_has(1);
   @$pb.TagNumber(5)
@@ -727,7 +924,8 @@ class DeleteNotificationChannelRequest extends $pb.GeneratedMessage {
 }
 
 /// The `SendNotificationChannelVerificationCode` request.
-class SendNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage {
+class SendNotificationChannelVerificationCodeRequest
+    extends $pb.GeneratedMessage {
   factory SendNotificationChannelVerificationCodeRequest({
     $core.String? name,
   }) {
@@ -738,40 +936,62 @@ class SendNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessag
     return $result;
   }
   SendNotificationChannelVerificationCodeRequest._() : super();
-  factory SendNotificationChannelVerificationCodeRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SendNotificationChannelVerificationCodeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SendNotificationChannelVerificationCodeRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SendNotificationChannelVerificationCodeRequest.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SendNotificationChannelVerificationCodeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SendNotificationChannelVerificationCodeRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SendNotificationChannelVerificationCodeRequest clone() => SendNotificationChannelVerificationCodeRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SendNotificationChannelVerificationCodeRequest copyWith(void Function(SendNotificationChannelVerificationCodeRequest) updates) => super.copyWith((message) => updates(message as SendNotificationChannelVerificationCodeRequest)) as SendNotificationChannelVerificationCodeRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SendNotificationChannelVerificationCodeRequest clone() =>
+      SendNotificationChannelVerificationCodeRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SendNotificationChannelVerificationCodeRequest copyWith(
+          void Function(SendNotificationChannelVerificationCodeRequest)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as SendNotificationChannelVerificationCodeRequest))
+          as SendNotificationChannelVerificationCodeRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static SendNotificationChannelVerificationCodeRequest create() => SendNotificationChannelVerificationCodeRequest._();
-  SendNotificationChannelVerificationCodeRequest createEmptyInstance() => create();
-  static $pb.PbList<SendNotificationChannelVerificationCodeRequest> createRepeated() => $pb.PbList<SendNotificationChannelVerificationCodeRequest>();
+  static SendNotificationChannelVerificationCodeRequest create() =>
+      SendNotificationChannelVerificationCodeRequest._();
+  SendNotificationChannelVerificationCodeRequest createEmptyInstance() =>
+      create();
+  static $pb.PbList<SendNotificationChannelVerificationCodeRequest>
+      createRepeated() =>
+          $pb.PbList<SendNotificationChannelVerificationCodeRequest>();
   @$core.pragma('dart2js:noInline')
-  static SendNotificationChannelVerificationCodeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SendNotificationChannelVerificationCodeRequest>(create);
+  static SendNotificationChannelVerificationCodeRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          SendNotificationChannelVerificationCodeRequest>(create);
   static SendNotificationChannelVerificationCodeRequest? _defaultInstance;
 
   /// Required. The notification channel to which to send a verification code.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -779,7 +999,8 @@ class SendNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessag
 }
 
 /// The `GetNotificationChannelVerificationCode` request.
-class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage {
+class GetNotificationChannelVerificationCodeRequest
+    extends $pb.GeneratedMessage {
   factory GetNotificationChannelVerificationCodeRequest({
     $core.String? name,
     $302.Timestamp? expireTime,
@@ -794,34 +1015,53 @@ class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage
     return $result;
   }
   GetNotificationChannelVerificationCodeRequest._() : super();
-  factory GetNotificationChannelVerificationCodeRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetNotificationChannelVerificationCodeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetNotificationChannelVerificationCodeRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetNotificationChannelVerificationCodeRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationChannelVerificationCodeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetNotificationChannelVerificationCodeRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelVerificationCodeRequest clone() => GetNotificationChannelVerificationCodeRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelVerificationCodeRequest copyWith(void Function(GetNotificationChannelVerificationCodeRequest) updates) => super.copyWith((message) => updates(message as GetNotificationChannelVerificationCodeRequest)) as GetNotificationChannelVerificationCodeRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelVerificationCodeRequest clone() =>
+      GetNotificationChannelVerificationCodeRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelVerificationCodeRequest copyWith(
+          void Function(GetNotificationChannelVerificationCodeRequest)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as GetNotificationChannelVerificationCodeRequest))
+          as GetNotificationChannelVerificationCodeRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelVerificationCodeRequest create() => GetNotificationChannelVerificationCodeRequest._();
-  GetNotificationChannelVerificationCodeRequest createEmptyInstance() => create();
-  static $pb.PbList<GetNotificationChannelVerificationCodeRequest> createRepeated() => $pb.PbList<GetNotificationChannelVerificationCodeRequest>();
+  static GetNotificationChannelVerificationCodeRequest create() =>
+      GetNotificationChannelVerificationCodeRequest._();
+  GetNotificationChannelVerificationCodeRequest createEmptyInstance() =>
+      create();
+  static $pb.PbList<GetNotificationChannelVerificationCodeRequest>
+      createRepeated() =>
+          $pb.PbList<GetNotificationChannelVerificationCodeRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelVerificationCodeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetNotificationChannelVerificationCodeRequest>(create);
+  static GetNotificationChannelVerificationCodeRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          GetNotificationChannelVerificationCodeRequest>(create);
   static GetNotificationChannelVerificationCodeRequest? _defaultInstance;
 
   /// Required. The notification channel for which a verification code is to be
@@ -830,7 +1070,10 @@ class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -848,7 +1091,10 @@ class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage
   @$pb.TagNumber(2)
   $302.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($302.Timestamp v) { setField(2, v); }
+  set expireTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -858,7 +1104,8 @@ class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage
 }
 
 /// The `GetNotificationChannelVerificationCode` request.
-class GetNotificationChannelVerificationCodeResponse extends $pb.GeneratedMessage {
+class GetNotificationChannelVerificationCodeResponse
+    extends $pb.GeneratedMessage {
   factory GetNotificationChannelVerificationCodeResponse({
     $core.String? code,
     $302.Timestamp? expireTime,
@@ -873,34 +1120,54 @@ class GetNotificationChannelVerificationCodeResponse extends $pb.GeneratedMessag
     return $result;
   }
   GetNotificationChannelVerificationCodeResponse._() : super();
-  factory GetNotificationChannelVerificationCodeResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetNotificationChannelVerificationCodeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetNotificationChannelVerificationCodeResponse.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetNotificationChannelVerificationCodeResponse.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationChannelVerificationCodeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetNotificationChannelVerificationCodeResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'code')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelVerificationCodeResponse clone() => GetNotificationChannelVerificationCodeResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetNotificationChannelVerificationCodeResponse copyWith(void Function(GetNotificationChannelVerificationCodeResponse) updates) => super.copyWith((message) => updates(message as GetNotificationChannelVerificationCodeResponse)) as GetNotificationChannelVerificationCodeResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelVerificationCodeResponse clone() =>
+      GetNotificationChannelVerificationCodeResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetNotificationChannelVerificationCodeResponse copyWith(
+          void Function(GetNotificationChannelVerificationCodeResponse)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as GetNotificationChannelVerificationCodeResponse))
+          as GetNotificationChannelVerificationCodeResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelVerificationCodeResponse create() => GetNotificationChannelVerificationCodeResponse._();
-  GetNotificationChannelVerificationCodeResponse createEmptyInstance() => create();
-  static $pb.PbList<GetNotificationChannelVerificationCodeResponse> createRepeated() => $pb.PbList<GetNotificationChannelVerificationCodeResponse>();
+  static GetNotificationChannelVerificationCodeResponse create() =>
+      GetNotificationChannelVerificationCodeResponse._();
+  GetNotificationChannelVerificationCodeResponse createEmptyInstance() =>
+      create();
+  static $pb.PbList<GetNotificationChannelVerificationCodeResponse>
+      createRepeated() =>
+          $pb.PbList<GetNotificationChannelVerificationCodeResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetNotificationChannelVerificationCodeResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetNotificationChannelVerificationCodeResponse>(create);
+  static GetNotificationChannelVerificationCodeResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          GetNotificationChannelVerificationCodeResponse>(create);
   static GetNotificationChannelVerificationCodeResponse? _defaultInstance;
 
   /// The verification code, which may be used to verify other channels
@@ -910,7 +1177,10 @@ class GetNotificationChannelVerificationCodeResponse extends $pb.GeneratedMessag
   @$pb.TagNumber(1)
   $core.String get code => $_getSZ(0);
   @$pb.TagNumber(1)
-  set code($core.String v) { $_setString(0, v); }
+  set code($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -922,7 +1192,10 @@ class GetNotificationChannelVerificationCodeResponse extends $pb.GeneratedMessag
   @$pb.TagNumber(2)
   $302.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($302.Timestamp v) { setField(2, v); }
+  set expireTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -947,41 +1220,58 @@ class VerifyNotificationChannelRequest extends $pb.GeneratedMessage {
     return $result;
   }
   VerifyNotificationChannelRequest._() : super();
-  factory VerifyNotificationChannelRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VerifyNotificationChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VerifyNotificationChannelRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VerifyNotificationChannelRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VerifyNotificationChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VerifyNotificationChannelRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'code')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  VerifyNotificationChannelRequest clone() => VerifyNotificationChannelRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VerifyNotificationChannelRequest copyWith(void Function(VerifyNotificationChannelRequest) updates) => super.copyWith((message) => updates(message as VerifyNotificationChannelRequest)) as VerifyNotificationChannelRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VerifyNotificationChannelRequest clone() =>
+      VerifyNotificationChannelRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VerifyNotificationChannelRequest copyWith(
+          void Function(VerifyNotificationChannelRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as VerifyNotificationChannelRequest))
+          as VerifyNotificationChannelRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static VerifyNotificationChannelRequest create() => VerifyNotificationChannelRequest._();
+  static VerifyNotificationChannelRequest create() =>
+      VerifyNotificationChannelRequest._();
   VerifyNotificationChannelRequest createEmptyInstance() => create();
-  static $pb.PbList<VerifyNotificationChannelRequest> createRepeated() => $pb.PbList<VerifyNotificationChannelRequest>();
+  static $pb.PbList<VerifyNotificationChannelRequest> createRepeated() =>
+      $pb.PbList<VerifyNotificationChannelRequest>();
   @$core.pragma('dart2js:noInline')
-  static VerifyNotificationChannelRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VerifyNotificationChannelRequest>(create);
+  static VerifyNotificationChannelRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VerifyNotificationChannelRequest>(
+          create);
   static VerifyNotificationChannelRequest? _defaultInstance;
 
   /// Required. The notification channel to verify.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -997,13 +1287,16 @@ class VerifyNotificationChannelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get code => $_getSZ(1);
   @$pb.TagNumber(2)
-  set code($core.String v) { $_setString(1, v); }
+  set code($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCode() => $_has(1);
   @$pb.TagNumber(2)
   void clearCode() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

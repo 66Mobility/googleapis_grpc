@@ -18,26 +18,177 @@ const SpaceEvent$json = {
   '1': 'SpaceEvent',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'event_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eventTime'},
+    {
+      '1': 'event_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eventTime'
+    },
     {'1': 'event_type', '3': 6, '4': 1, '5': 9, '10': 'eventType'},
-    {'1': 'message_created_event_data', '3': 12, '4': 1, '5': 11, '6': '.google.chat.v1.MessageCreatedEventData', '9': 0, '10': 'messageCreatedEventData'},
-    {'1': 'message_updated_event_data', '3': 13, '4': 1, '5': 11, '6': '.google.chat.v1.MessageUpdatedEventData', '9': 0, '10': 'messageUpdatedEventData'},
-    {'1': 'message_deleted_event_data', '3': 14, '4': 1, '5': 11, '6': '.google.chat.v1.MessageDeletedEventData', '9': 0, '10': 'messageDeletedEventData'},
-    {'1': 'message_batch_created_event_data', '3': 26, '4': 1, '5': 11, '6': '.google.chat.v1.MessageBatchCreatedEventData', '9': 0, '10': 'messageBatchCreatedEventData'},
-    {'1': 'message_batch_updated_event_data', '3': 27, '4': 1, '5': 11, '6': '.google.chat.v1.MessageBatchUpdatedEventData', '9': 0, '10': 'messageBatchUpdatedEventData'},
-    {'1': 'message_batch_deleted_event_data', '3': 28, '4': 1, '5': 11, '6': '.google.chat.v1.MessageBatchDeletedEventData', '9': 0, '10': 'messageBatchDeletedEventData'},
-    {'1': 'space_updated_event_data', '3': 15, '4': 1, '5': 11, '6': '.google.chat.v1.SpaceUpdatedEventData', '9': 0, '10': 'spaceUpdatedEventData'},
-    {'1': 'space_batch_updated_event_data', '3': 29, '4': 1, '5': 11, '6': '.google.chat.v1.SpaceBatchUpdatedEventData', '9': 0, '10': 'spaceBatchUpdatedEventData'},
-    {'1': 'membership_created_event_data', '3': 17, '4': 1, '5': 11, '6': '.google.chat.v1.MembershipCreatedEventData', '9': 0, '10': 'membershipCreatedEventData'},
-    {'1': 'membership_updated_event_data', '3': 18, '4': 1, '5': 11, '6': '.google.chat.v1.MembershipUpdatedEventData', '9': 0, '10': 'membershipUpdatedEventData'},
-    {'1': 'membership_deleted_event_data', '3': 219, '4': 1, '5': 11, '6': '.google.chat.v1.MembershipDeletedEventData', '9': 0, '10': 'membershipDeletedEventData'},
-    {'1': 'membership_batch_created_event_data', '3': 31, '4': 1, '5': 11, '6': '.google.chat.v1.MembershipBatchCreatedEventData', '9': 0, '10': 'membershipBatchCreatedEventData'},
-    {'1': 'membership_batch_updated_event_data', '3': 32, '4': 1, '5': 11, '6': '.google.chat.v1.MembershipBatchUpdatedEventData', '9': 0, '10': 'membershipBatchUpdatedEventData'},
-    {'1': 'membership_batch_deleted_event_data', '3': 33, '4': 1, '5': 11, '6': '.google.chat.v1.MembershipBatchDeletedEventData', '9': 0, '10': 'membershipBatchDeletedEventData'},
-    {'1': 'reaction_created_event_data', '3': 21, '4': 1, '5': 11, '6': '.google.chat.v1.ReactionCreatedEventData', '9': 0, '10': 'reactionCreatedEventData'},
-    {'1': 'reaction_deleted_event_data', '3': 22, '4': 1, '5': 11, '6': '.google.chat.v1.ReactionDeletedEventData', '9': 0, '10': 'reactionDeletedEventData'},
-    {'1': 'reaction_batch_created_event_data', '3': 34, '4': 1, '5': 11, '6': '.google.chat.v1.ReactionBatchCreatedEventData', '9': 0, '10': 'reactionBatchCreatedEventData'},
-    {'1': 'reaction_batch_deleted_event_data', '3': 35, '4': 1, '5': 11, '6': '.google.chat.v1.ReactionBatchDeletedEventData', '9': 0, '10': 'reactionBatchDeletedEventData'},
+    {
+      '1': 'message_created_event_data',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MessageCreatedEventData',
+      '9': 0,
+      '10': 'messageCreatedEventData'
+    },
+    {
+      '1': 'message_updated_event_data',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MessageUpdatedEventData',
+      '9': 0,
+      '10': 'messageUpdatedEventData'
+    },
+    {
+      '1': 'message_deleted_event_data',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MessageDeletedEventData',
+      '9': 0,
+      '10': 'messageDeletedEventData'
+    },
+    {
+      '1': 'message_batch_created_event_data',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MessageBatchCreatedEventData',
+      '9': 0,
+      '10': 'messageBatchCreatedEventData'
+    },
+    {
+      '1': 'message_batch_updated_event_data',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MessageBatchUpdatedEventData',
+      '9': 0,
+      '10': 'messageBatchUpdatedEventData'
+    },
+    {
+      '1': 'message_batch_deleted_event_data',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MessageBatchDeletedEventData',
+      '9': 0,
+      '10': 'messageBatchDeletedEventData'
+    },
+    {
+      '1': 'space_updated_event_data',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.SpaceUpdatedEventData',
+      '9': 0,
+      '10': 'spaceUpdatedEventData'
+    },
+    {
+      '1': 'space_batch_updated_event_data',
+      '3': 29,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.SpaceBatchUpdatedEventData',
+      '9': 0,
+      '10': 'spaceBatchUpdatedEventData'
+    },
+    {
+      '1': 'membership_created_event_data',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MembershipCreatedEventData',
+      '9': 0,
+      '10': 'membershipCreatedEventData'
+    },
+    {
+      '1': 'membership_updated_event_data',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MembershipUpdatedEventData',
+      '9': 0,
+      '10': 'membershipUpdatedEventData'
+    },
+    {
+      '1': 'membership_deleted_event_data',
+      '3': 219,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MembershipDeletedEventData',
+      '9': 0,
+      '10': 'membershipDeletedEventData'
+    },
+    {
+      '1': 'membership_batch_created_event_data',
+      '3': 31,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MembershipBatchCreatedEventData',
+      '9': 0,
+      '10': 'membershipBatchCreatedEventData'
+    },
+    {
+      '1': 'membership_batch_updated_event_data',
+      '3': 32,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MembershipBatchUpdatedEventData',
+      '9': 0,
+      '10': 'membershipBatchUpdatedEventData'
+    },
+    {
+      '1': 'membership_batch_deleted_event_data',
+      '3': 33,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MembershipBatchDeletedEventData',
+      '9': 0,
+      '10': 'membershipBatchDeletedEventData'
+    },
+    {
+      '1': 'reaction_created_event_data',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ReactionCreatedEventData',
+      '9': 0,
+      '10': 'reactionCreatedEventData'
+    },
+    {
+      '1': 'reaction_deleted_event_data',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ReactionDeletedEventData',
+      '9': 0,
+      '10': 'reactionDeletedEventData'
+    },
+    {
+      '1': 'reaction_batch_created_event_data',
+      '3': 34,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ReactionBatchCreatedEventData',
+      '9': 0,
+      '10': 'reactionBatchCreatedEventData'
+    },
+    {
+      '1': 'reaction_batch_deleted_event_data',
+      '3': 35,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ReactionBatchDeletedEventData',
+      '9': 0,
+      '10': 'reactionBatchDeletedEventData'
+    },
   ],
   '7': {},
   '8': [
@@ -125,7 +276,14 @@ final $typed_data.Uint8List listSpaceEventsRequestDescriptor = $convert.base64De
 const ListSpaceEventsResponse$json = {
   '1': 'ListSpaceEventsResponse',
   '2': [
-    {'1': 'space_events', '3': 1, '4': 3, '5': 11, '6': '.google.chat.v1.SpaceEvent', '10': 'spaceEvents'},
+    {
+      '1': 'space_events',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.SpaceEvent',
+      '10': 'spaceEvents'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -135,4 +293,3 @@ final $typed_data.Uint8List listSpaceEventsResponseDescriptor = $convert.base64D
     'ChdMaXN0U3BhY2VFdmVudHNSZXNwb25zZRI9CgxzcGFjZV9ldmVudHMYASADKAsyGi5nb29nbG'
     'UuY2hhdC52MS5TcGFjZUV2ZW50UgtzcGFjZUV2ZW50cxImCg9uZXh0X3BhZ2VfdG9rZW4YAiAB'
     'KAlSDW5leHRQYWdlVG9rZW4=');
-

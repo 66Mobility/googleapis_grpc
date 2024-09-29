@@ -23,7 +23,7 @@ export 'metric.pbenum.dart';
 /// Additional annotations that can be used to guide the usage of a metric.
 class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   factory MetricDescriptor_MetricDescriptorMetadata({
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $304.LaunchStage? launchStage,
     $264.Duration? samplePeriod,
     $264.Duration? ingestDelay,
@@ -42,35 +42,56 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   MetricDescriptor_MetricDescriptorMetadata._() : super();
-  factory MetricDescriptor_MetricDescriptorMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetricDescriptor_MetricDescriptorMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetricDescriptor_MetricDescriptorMetadata.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetricDescriptor_MetricDescriptorMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetricDescriptor.MetricDescriptorMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..e<$304.LaunchStage>(1, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $304.LaunchStage.valueOf, enumValues: $304.LaunchStage.values)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'samplePeriod', subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'ingestDelay', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetricDescriptor.MetricDescriptorMetadata',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..e<$304.LaunchStage>(
+        1, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE,
+        defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED,
+        valueOf: $304.LaunchStage.valueOf,
+        enumValues: $304.LaunchStage.values)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'samplePeriod',
+        subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'ingestDelay',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MetricDescriptor_MetricDescriptorMetadata clone() => MetricDescriptor_MetricDescriptorMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetricDescriptor_MetricDescriptorMetadata copyWith(void Function(MetricDescriptor_MetricDescriptorMetadata) updates) => super.copyWith((message) => updates(message as MetricDescriptor_MetricDescriptorMetadata)) as MetricDescriptor_MetricDescriptorMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MetricDescriptor_MetricDescriptorMetadata clone() =>
+      MetricDescriptor_MetricDescriptorMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetricDescriptor_MetricDescriptorMetadata copyWith(
+          void Function(MetricDescriptor_MetricDescriptorMetadata) updates) =>
+      super.copyWith((message) =>
+              updates(message as MetricDescriptor_MetricDescriptorMetadata))
+          as MetricDescriptor_MetricDescriptorMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static MetricDescriptor_MetricDescriptorMetadata create() => MetricDescriptor_MetricDescriptorMetadata._();
+  static MetricDescriptor_MetricDescriptorMetadata create() =>
+      MetricDescriptor_MetricDescriptorMetadata._();
   MetricDescriptor_MetricDescriptorMetadata createEmptyInstance() => create();
-  static $pb.PbList<MetricDescriptor_MetricDescriptorMetadata> createRepeated() => $pb.PbList<MetricDescriptor_MetricDescriptorMetadata>();
+  static $pb.PbList<MetricDescriptor_MetricDescriptorMetadata>
+      createRepeated() =>
+          $pb.PbList<MetricDescriptor_MetricDescriptorMetadata>();
   @$core.pragma('dart2js:noInline')
-  static MetricDescriptor_MetricDescriptorMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetricDescriptor_MetricDescriptorMetadata>(create);
+  static MetricDescriptor_MetricDescriptorMetadata getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          MetricDescriptor_MetricDescriptorMetadata>(create);
   static MetricDescriptor_MetricDescriptorMetadata? _defaultInstance;
 
   /// Deprecated. Must use the
@@ -81,7 +102,10 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   $304.LaunchStage get launchStage => $_getN(0);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  set launchStage($304.LaunchStage v) { setField(1, v); }
+  set launchStage($304.LaunchStage v) {
+    setField(1, v);
+  }
+
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.bool hasLaunchStage() => $_has(0);
@@ -96,7 +120,10 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get samplePeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set samplePeriod($264.Duration v) { setField(2, v); }
+  set samplePeriod($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSamplePeriod() => $_has(1);
   @$pb.TagNumber(2)
@@ -110,7 +137,10 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get ingestDelay => $_getN(2);
   @$pb.TagNumber(3)
-  set ingestDelay($264.Duration v) { setField(3, v); }
+  set ingestDelay($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasIngestDelay() => $_has(2);
   @$pb.TagNumber(3)
@@ -173,50 +203,77 @@ class MetricDescriptor extends $pb.GeneratedMessage {
     return $result;
   }
   MetricDescriptor._() : super();
-  factory MetricDescriptor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetricDescriptor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetricDescriptor.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetricDescriptor.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetricDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetricDescriptor',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$348.LabelDescriptor>(2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $348.LabelDescriptor.create)
-    ..e<MetricDescriptor_MetricKind>(3, _omitFieldNames ? '' : 'metricKind', $pb.PbFieldType.OE, defaultOrMaker: MetricDescriptor_MetricKind.METRIC_KIND_UNSPECIFIED, valueOf: MetricDescriptor_MetricKind.valueOf, enumValues: MetricDescriptor_MetricKind.values)
-    ..e<MetricDescriptor_ValueType>(4, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: MetricDescriptor_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: MetricDescriptor_ValueType.valueOf, enumValues: MetricDescriptor_ValueType.values)
+    ..pc<$348.LabelDescriptor>(
+        2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $348.LabelDescriptor.create)
+    ..e<MetricDescriptor_MetricKind>(
+        3, _omitFieldNames ? '' : 'metricKind', $pb.PbFieldType.OE,
+        defaultOrMaker: MetricDescriptor_MetricKind.METRIC_KIND_UNSPECIFIED,
+        valueOf: MetricDescriptor_MetricKind.valueOf,
+        enumValues: MetricDescriptor_MetricKind.values)
+    ..e<MetricDescriptor_ValueType>(
+        4, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE,
+        defaultOrMaker: MetricDescriptor_ValueType.VALUE_TYPE_UNSPECIFIED,
+        valueOf: MetricDescriptor_ValueType.valueOf,
+        enumValues: MetricDescriptor_ValueType.values)
     ..aOS(5, _omitFieldNames ? '' : 'unit')
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
     ..aOS(8, _omitFieldNames ? '' : 'type')
-    ..aOM<MetricDescriptor_MetricDescriptorMetadata>(10, _omitFieldNames ? '' : 'metadata', subBuilder: MetricDescriptor_MetricDescriptorMetadata.create)
-    ..e<$304.LaunchStage>(12, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $304.LaunchStage.valueOf, enumValues: $304.LaunchStage.values)
+    ..aOM<MetricDescriptor_MetricDescriptorMetadata>(
+        10, _omitFieldNames ? '' : 'metadata',
+        subBuilder: MetricDescriptor_MetricDescriptorMetadata.create)
+    ..e<$304.LaunchStage>(
+        12, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE,
+        defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED,
+        valueOf: $304.LaunchStage.valueOf,
+        enumValues: $304.LaunchStage.values)
     ..pPS(13, _omitFieldNames ? '' : 'monitoredResourceTypes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MetricDescriptor clone() => MetricDescriptor()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetricDescriptor copyWith(void Function(MetricDescriptor) updates) => super.copyWith((message) => updates(message as MetricDescriptor)) as MetricDescriptor;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetricDescriptor copyWith(void Function(MetricDescriptor) updates) =>
+      super.copyWith((message) => updates(message as MetricDescriptor))
+          as MetricDescriptor;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetricDescriptor create() => MetricDescriptor._();
   MetricDescriptor createEmptyInstance() => create();
-  static $pb.PbList<MetricDescriptor> createRepeated() => $pb.PbList<MetricDescriptor>();
+  static $pb.PbList<MetricDescriptor> createRepeated() =>
+      $pb.PbList<MetricDescriptor>();
   @$core.pragma('dart2js:noInline')
-  static MetricDescriptor getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetricDescriptor>(create);
+  static MetricDescriptor getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetricDescriptor>(create);
   static MetricDescriptor? _defaultInstance;
 
   /// The resource name of the metric descriptor.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -236,7 +293,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   MetricDescriptor_MetricKind get metricKind => $_getN(2);
   @$pb.TagNumber(3)
-  set metricKind(MetricDescriptor_MetricKind v) { setField(3, v); }
+  set metricKind(MetricDescriptor_MetricKind v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMetricKind() => $_has(2);
   @$pb.TagNumber(3)
@@ -247,7 +307,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   MetricDescriptor_ValueType get valueType => $_getN(3);
   @$pb.TagNumber(4)
-  set valueType(MetricDescriptor_ValueType v) { setField(4, v); }
+  set valueType(MetricDescriptor_ValueType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasValueType() => $_has(3);
   @$pb.TagNumber(4)
@@ -358,7 +421,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get unit => $_getSZ(4);
   @$pb.TagNumber(5)
-  set unit($core.String v) { $_setString(4, v); }
+  set unit($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasUnit() => $_has(4);
   @$pb.TagNumber(5)
@@ -368,7 +434,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(6)
-  set description($core.String v) { $_setString(5, v); }
+  set description($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
@@ -381,7 +450,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get displayName => $_getSZ(6);
   @$pb.TagNumber(7)
-  set displayName($core.String v) { $_setString(6, v); }
+  set displayName($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDisplayName() => $_has(6);
   @$pb.TagNumber(7)
@@ -398,7 +470,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get type => $_getSZ(7);
   @$pb.TagNumber(8)
-  set type($core.String v) { $_setString(7, v); }
+  set type($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasType() => $_has(7);
   @$pb.TagNumber(8)
@@ -408,7 +483,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   MetricDescriptor_MetricDescriptorMetadata get metadata => $_getN(8);
   @$pb.TagNumber(10)
-  set metadata(MetricDescriptor_MetricDescriptorMetadata v) { setField(10, v); }
+  set metadata(MetricDescriptor_MetricDescriptorMetadata v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasMetadata() => $_has(8);
   @$pb.TagNumber(10)
@@ -420,7 +498,10 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $304.LaunchStage get launchStage => $_getN(9);
   @$pb.TagNumber(12)
-  set launchStage($304.LaunchStage v) { setField(12, v); }
+  set launchStage($304.LaunchStage v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasLaunchStage() => $_has(9);
   @$pb.TagNumber(12)
@@ -453,25 +534,34 @@ class Metric extends $pb.GeneratedMessage {
     return $result;
   }
   Metric._() : super();
-  factory Metric.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Metric.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Metric.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Metric.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Metric', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'Metric.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api'))
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Metric',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Metric.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.api'))
     ..aOS(3, _omitFieldNames ? '' : 'type')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Metric clone() => Metric()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Metric copyWith(void Function(Metric) updates) => super.copyWith((message) => updates(message as Metric)) as Metric;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Metric copyWith(void Function(Metric) updates) =>
+      super.copyWith((message) => updates(message as Metric)) as Metric;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -480,7 +570,8 @@ class Metric extends $pb.GeneratedMessage {
   Metric createEmptyInstance() => create();
   static $pb.PbList<Metric> createRepeated() => $pb.PbList<Metric>();
   @$core.pragma('dart2js:noInline')
-  static Metric getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Metric>(create);
+  static Metric getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Metric>(create);
   static Metric? _defaultInstance;
 
   /// The set of label values that uniquely identify this metric. All
@@ -494,13 +585,16 @@ class Metric extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get type => $_getSZ(1);
   @$pb.TagNumber(3)
-  set type($core.String v) { $_setString(1, v); }
+  set type($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(3)
   void clearType() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

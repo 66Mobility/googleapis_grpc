@@ -30,10 +30,41 @@ const Folder$json = {
   '1': 'Folder',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'metageneration', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'metageneration'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'pending_rename_info', '3': 7, '4': 1, '5': 11, '6': '.google.storage.control.v2.PendingRenameInfo', '8': {}, '10': 'pendingRenameInfo'},
+    {
+      '1': 'metageneration',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'metageneration'
+    },
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'pending_rename_info',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.control.v2.PendingRenameInfo',
+      '8': {},
+      '10': 'pendingRenameInfo'
+    },
   ],
   '7': {},
 };
@@ -54,8 +85,24 @@ const GetFolderRequest$json = {
   '1': 'GetFolderRequest',
   '2': [
     {'1': 'name', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'if_metageneration_match', '3': 3, '4': 1, '5': 3, '9': 0, '10': 'ifMetagenerationMatch', '17': true},
-    {'1': 'if_metageneration_not_match', '3': 4, '4': 1, '5': 3, '9': 1, '10': 'ifMetagenerationNotMatch', '17': true},
+    {
+      '1': 'if_metageneration_match',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'ifMetagenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'ifMetagenerationNotMatch',
+      '17': true
+    },
     {'1': 'request_id', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
   '8': [
@@ -78,7 +125,15 @@ const CreateFolderRequest$json = {
   '1': 'CreateFolderRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'folder', '3': 2, '4': 1, '5': 11, '6': '.google.storage.control.v2.Folder', '8': {}, '10': 'folder'},
+    {
+      '1': 'folder',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.control.v2.Folder',
+      '8': {},
+      '10': 'folder'
+    },
     {'1': 'folder_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'folderId'},
     {'1': 'recursive', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'recursive'},
     {'1': 'request_id', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
@@ -98,8 +153,24 @@ const DeleteFolderRequest$json = {
   '1': 'DeleteFolderRequest',
   '2': [
     {'1': 'name', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'if_metageneration_match', '3': 3, '4': 1, '5': 3, '9': 0, '10': 'ifMetagenerationMatch', '17': true},
-    {'1': 'if_metageneration_not_match', '3': 4, '4': 1, '5': 3, '9': 1, '10': 'ifMetagenerationNotMatch', '17': true},
+    {
+      '1': 'if_metageneration_match',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'ifMetagenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'ifMetagenerationNotMatch',
+      '17': true
+    },
     {'1': 'request_id', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
   '8': [
@@ -126,8 +197,22 @@ const ListFoldersRequest$json = {
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
     {'1': 'prefix', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'prefix'},
     {'1': 'delimiter', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'delimiter'},
-    {'1': 'lexicographic_start', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'lexicographicStart'},
-    {'1': 'lexicographic_end', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'lexicographicEnd'},
+    {
+      '1': 'lexicographic_start',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'lexicographicStart'
+    },
+    {
+      '1': 'lexicographic_end',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'lexicographicEnd'
+    },
     {'1': 'request_id', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
 };
@@ -146,7 +231,14 @@ final $typed_data.Uint8List listFoldersRequestDescriptor = $convert.base64Decode
 const ListFoldersResponse$json = {
   '1': 'ListFoldersResponse',
   '2': [
-    {'1': 'folders', '3': 1, '4': 3, '5': 11, '6': '.google.storage.control.v2.Folder', '10': 'folders'},
+    {
+      '1': 'folders',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.control.v2.Folder',
+      '10': 'folders'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -162,9 +254,32 @@ const RenameFolderRequest$json = {
   '1': 'RenameFolderRequest',
   '2': [
     {'1': 'name', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'destination_folder_id', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'destinationFolderId'},
-    {'1': 'if_metageneration_match', '3': 4, '4': 1, '5': 3, '9': 0, '10': 'ifMetagenerationMatch', '17': true},
-    {'1': 'if_metageneration_not_match', '3': 5, '4': 1, '5': 3, '9': 1, '10': 'ifMetagenerationNotMatch', '17': true},
+    {
+      '1': 'destination_folder_id',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'destinationFolderId'
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'ifMetagenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'ifMetagenerationNotMatch',
+      '17': true
+    },
     {'1': 'request_id', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
   '8': [
@@ -187,12 +302,50 @@ final $typed_data.Uint8List renameFolderRequestDescriptor = $convert.base64Decod
 const CommonLongRunningOperationMetadata$json = {
   '1': 'CommonLongRunningOperationMetadata',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
     {'1': 'type', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'type'},
-    {'1': 'requested_cancellation', '3': 5, '4': 1, '5': 8, '8': {}, '10': 'requestedCancellation'},
-    {'1': 'progress_percent', '3': 6, '4': 1, '5': 5, '8': {}, '10': 'progressPercent'},
+    {
+      '1': 'requested_cancellation',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'requestedCancellation'
+    },
+    {
+      '1': 'progress_percent',
+      '3': 6,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'progressPercent'
+    },
   ],
 };
 
@@ -210,9 +363,22 @@ final $typed_data.Uint8List commonLongRunningOperationMetadataDescriptor = $conv
 const RenameFolderMetadata$json = {
   '1': 'RenameFolderMetadata',
   '2': [
-    {'1': 'common_metadata', '3': 1, '4': 1, '5': 11, '6': '.google.storage.control.v2.CommonLongRunningOperationMetadata', '10': 'commonMetadata'},
+    {
+      '1': 'common_metadata',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.control.v2.CommonLongRunningOperationMetadata',
+      '10': 'commonMetadata'
+    },
     {'1': 'source_folder_id', '3': 2, '4': 1, '5': 9, '10': 'sourceFolderId'},
-    {'1': 'destination_folder_id', '3': 3, '4': 1, '5': 9, '10': 'destinationFolderId'},
+    {
+      '1': 'destination_folder_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'destinationFolderId'
+    },
   ],
 };
 
@@ -229,11 +395,37 @@ const StorageLayout$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'location', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'location'},
-    {'1': 'location_type', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'locationType'},
-    {'1': 'custom_placement_config', '3': 4, '4': 1, '5': 11, '6': '.google.storage.control.v2.StorageLayout.CustomPlacementConfig', '8': {}, '10': 'customPlacementConfig'},
-    {'1': 'hierarchical_namespace', '3': 5, '4': 1, '5': 11, '6': '.google.storage.control.v2.StorageLayout.HierarchicalNamespace', '8': {}, '10': 'hierarchicalNamespace'},
+    {
+      '1': 'location_type',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'locationType'
+    },
+    {
+      '1': 'custom_placement_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.control.v2.StorageLayout.CustomPlacementConfig',
+      '8': {},
+      '10': 'customPlacementConfig'
+    },
+    {
+      '1': 'hierarchical_namespace',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.control.v2.StorageLayout.HierarchicalNamespace',
+      '8': {},
+      '10': 'hierarchicalNamespace'
+    },
   ],
-  '3': [StorageLayout_CustomPlacementConfig$json, StorageLayout_HierarchicalNamespace$json],
+  '3': [
+    StorageLayout_CustomPlacementConfig$json,
+    StorageLayout_HierarchicalNamespace$json
+  ],
   '7': {},
 };
 
@@ -288,9 +480,32 @@ const ManagedFolder$json = {
   '1': 'ManagedFolder',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'metageneration', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'metageneration'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {
+      '1': 'metageneration',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'metageneration'
+    },
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
   ],
   '7': {},
 };
@@ -310,8 +525,24 @@ const GetManagedFolderRequest$json = {
   '1': 'GetManagedFolderRequest',
   '2': [
     {'1': 'name', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'if_metageneration_match', '3': 3, '4': 1, '5': 3, '9': 0, '10': 'ifMetagenerationMatch', '17': true},
-    {'1': 'if_metageneration_not_match', '3': 4, '4': 1, '5': 3, '9': 1, '10': 'ifMetagenerationNotMatch', '17': true},
+    {
+      '1': 'if_metageneration_match',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'ifMetagenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'ifMetagenerationNotMatch',
+      '17': true
+    },
     {'1': 'request_id', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
   '8': [
@@ -334,8 +565,23 @@ const CreateManagedFolderRequest$json = {
   '1': 'CreateManagedFolderRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'managed_folder', '3': 2, '4': 1, '5': 11, '6': '.google.storage.control.v2.ManagedFolder', '8': {}, '10': 'managedFolder'},
-    {'1': 'managed_folder_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'managedFolderId'},
+    {
+      '1': 'managed_folder',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.control.v2.ManagedFolder',
+      '8': {},
+      '10': 'managedFolder'
+    },
+    {
+      '1': 'managed_folder_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'managedFolderId'
+    },
     {'1': 'request_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
 };
@@ -354,8 +600,24 @@ const DeleteManagedFolderRequest$json = {
   '1': 'DeleteManagedFolderRequest',
   '2': [
     {'1': 'name', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'if_metageneration_match', '3': 3, '4': 1, '5': 3, '9': 0, '10': 'ifMetagenerationMatch', '17': true},
-    {'1': 'if_metageneration_not_match', '3': 4, '4': 1, '5': 3, '9': 1, '10': 'ifMetagenerationNotMatch', '17': true},
+    {
+      '1': 'if_metageneration_match',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'ifMetagenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'ifMetagenerationNotMatch',
+      '17': true
+    },
     {'1': 'allow_non_empty', '3': 5, '4': 1, '5': 8, '10': 'allowNonEmpty'},
     {'1': 'request_id', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
@@ -399,14 +661,21 @@ final $typed_data.Uint8List listManagedFoldersRequestDescriptor = $convert.base6
 const ListManagedFoldersResponse$json = {
   '1': 'ListManagedFoldersResponse',
   '2': [
-    {'1': 'managed_folders', '3': 1, '4': 3, '5': 11, '6': '.google.storage.control.v2.ManagedFolder', '10': 'managedFolders'},
+    {
+      '1': 'managed_folders',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.control.v2.ManagedFolder',
+      '10': 'managedFolders'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `ListManagedFoldersResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listManagedFoldersResponseDescriptor = $convert.base64Decode(
-    'ChpMaXN0TWFuYWdlZEZvbGRlcnNSZXNwb25zZRJRCg9tYW5hZ2VkX2ZvbGRlcnMYASADKAsyKC'
-    '5nb29nbGUuc3RvcmFnZS5jb250cm9sLnYyLk1hbmFnZWRGb2xkZXJSDm1hbmFnZWRGb2xkZXJz'
-    'EiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
-
+final $typed_data.Uint8List listManagedFoldersResponseDescriptor =
+    $convert.base64Decode(
+        'ChpMaXN0TWFuYWdlZEZvbGRlcnNSZXNwb25zZRJRCg9tYW5hZ2VkX2ZvbGRlcnMYASADKAsyKC'
+        '5nb29nbGUuc3RvcmFnZS5jb250cm9sLnYyLk1hbmFnZWRGb2xkZXJSDm1hbmFnZWRGb2xkZXJz'
+        'EiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const TollInfo$json = {
   '1': 'TollInfo',
   '2': [
-    {'1': 'estimated_price', '3': 1, '4': 3, '5': 11, '6': '.google.type.Money', '10': 'estimatedPrice'},
+    {
+      '1': 'estimated_price',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.type.Money',
+      '10': 'estimatedPrice'
+    },
   ],
 };
 
@@ -25,4 +32,3 @@ const TollInfo$json = {
 final $typed_data.Uint8List tollInfoDescriptor = $convert.base64Decode(
     'CghUb2xsSW5mbxI7Cg9lc3RpbWF0ZWRfcHJpY2UYASADKAsyEi5nb29nbGUudHlwZS5Nb25leV'
     'IOZXN0aW1hdGVkUHJpY2U=');
-

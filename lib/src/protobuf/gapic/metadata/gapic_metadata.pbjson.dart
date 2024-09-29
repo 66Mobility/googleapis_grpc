@@ -22,9 +22,21 @@ const GapicMetadata$json = {
     {'1': 'language', '3': 3, '4': 1, '5': 9, '10': 'language'},
     {'1': 'proto_package', '3': 4, '4': 1, '5': 9, '10': 'protoPackage'},
     {'1': 'library_package', '3': 5, '4': 1, '5': 9, '10': 'libraryPackage'},
-    {'1': 'services', '3': 6, '4': 3, '5': 11, '6': '.google.gapic.metadata.GapicMetadata.ServicesEntry', '10': 'services'},
+    {
+      '1': 'services',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.gapic.metadata.GapicMetadata.ServicesEntry',
+      '10': 'services'
+    },
   ],
-  '3': [GapicMetadata_ServicesEntry$json, GapicMetadata_ServiceForTransport$json, GapicMetadata_ServiceAsClient$json, GapicMetadata_MethodList$json],
+  '3': [
+    GapicMetadata_ServicesEntry$json,
+    GapicMetadata_ServiceForTransport$json,
+    GapicMetadata_ServiceAsClient$json,
+    GapicMetadata_MethodList$json
+  ],
 };
 
 @$core.Deprecated('Use gapicMetadataDescriptor instead')
@@ -32,7 +44,14 @@ const GapicMetadata_ServicesEntry$json = {
   '1': 'ServicesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.gapic.metadata.GapicMetadata.ServiceForTransport', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.gapic.metadata.GapicMetadata.ServiceForTransport',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -41,7 +60,15 @@ const GapicMetadata_ServicesEntry$json = {
 const GapicMetadata_ServiceForTransport$json = {
   '1': 'ServiceForTransport',
   '2': [
-    {'1': 'clients', '3': 1, '4': 3, '5': 11, '6': '.google.gapic.metadata.GapicMetadata.ServiceForTransport.ClientsEntry', '10': 'clients'},
+    {
+      '1': 'clients',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.gapic.metadata.GapicMetadata.ServiceForTransport.ClientsEntry',
+      '10': 'clients'
+    },
   ],
   '3': [GapicMetadata_ServiceForTransport_ClientsEntry$json],
 };
@@ -51,7 +78,14 @@ const GapicMetadata_ServiceForTransport_ClientsEntry$json = {
   '1': 'ClientsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.gapic.metadata.GapicMetadata.ServiceAsClient', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.gapic.metadata.GapicMetadata.ServiceAsClient',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -61,7 +95,14 @@ const GapicMetadata_ServiceAsClient$json = {
   '1': 'ServiceAsClient',
   '2': [
     {'1': 'library_client', '3': 1, '4': 1, '5': 9, '10': 'libraryClient'},
-    {'1': 'rpcs', '3': 2, '4': 3, '5': 11, '6': '.google.gapic.metadata.GapicMetadata.ServiceAsClient.RpcsEntry', '10': 'rpcs'},
+    {
+      '1': 'rpcs',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.gapic.metadata.GapicMetadata.ServiceAsClient.RpcsEntry',
+      '10': 'rpcs'
+    },
   ],
   '3': [GapicMetadata_ServiceAsClient_RpcsEntry$json],
 };
@@ -71,7 +112,14 @@ const GapicMetadata_ServiceAsClient_RpcsEntry$json = {
   '1': 'RpcsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.gapic.metadata.GapicMetadata.MethodList', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.gapic.metadata.GapicMetadata.MethodList',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -103,4 +151,3 @@ final $typed_data.Uint8List gapicMetadataDescriptor = $convert.base64Decode(
     'ZXkSRQoFdmFsdWUYAiABKAsyLy5nb29nbGUuZ2FwaWMubWV0YWRhdGEuR2FwaWNNZXRhZGF0YS'
     '5NZXRob2RMaXN0UgV2YWx1ZToCOAEaJgoKTWV0aG9kTGlzdBIYCgdtZXRob2RzGAEgAygJUgdt'
     'ZXRob2Rz');
-

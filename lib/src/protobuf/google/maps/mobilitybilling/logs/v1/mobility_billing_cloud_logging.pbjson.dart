@@ -28,4 +28,3 @@ final $typed_data.Uint8List reportBillableEventLogDescriptor = $convert.base64De
     'ChZSZXBvcnRCaWxsYWJsZUV2ZW50TG9nEioKEWJpbGxhYmxlX2V2ZW50X2lkGAEgASgJUg9iaW'
     'xsYWJsZUV2ZW50SWQSHwoLcmVnaW9uX2NvZGUYAiABKAlSCnJlZ2lvbkNvZGUSHwoLcmVsYXRl'
     'ZF9pZHMYAyADKAlSCnJlbGF0ZWRJZHM=');
-

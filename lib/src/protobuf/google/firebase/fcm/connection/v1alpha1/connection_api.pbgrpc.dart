@@ -21,35 +21,42 @@ export 'connection_api.pb.dart';
 
 @$pb.GrpcServiceName('google.firebase.fcm.connection.v1alpha1.ConnectionApi')
 class ConnectionApiClient extends $grpc.Client {
-  static final _$connect = $grpc.ClientMethod<$117.UpstreamRequest, $117.DownstreamResponse>(
-      '/google.firebase.fcm.connection.v1alpha1.ConnectionApi/Connect',
-      ($117.UpstreamRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $117.DownstreamResponse.fromBuffer(value));
+  static final _$connect =
+      $grpc.ClientMethod<$117.UpstreamRequest, $117.DownstreamResponse>(
+          '/google.firebase.fcm.connection.v1alpha1.ConnectionApi/Connect',
+          ($117.UpstreamRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) =>
+              $117.DownstreamResponse.fromBuffer(value));
 
   ConnectionApiClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseStream<$117.DownstreamResponse> connect($async.Stream<$117.UpstreamRequest> request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseStream<$117.DownstreamResponse> connect(
+      $async.Stream<$117.UpstreamRequest> request,
+      {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$connect, request, options: options);
   }
 }
 
 @$pb.GrpcServiceName('google.firebase.fcm.connection.v1alpha1.ConnectionApi')
 abstract class ConnectionApiServiceBase extends $grpc.Service {
-  $core.String get $name => 'google.firebase.fcm.connection.v1alpha1.ConnectionApi';
+  $core.String get $name =>
+      'google.firebase.fcm.connection.v1alpha1.ConnectionApi';
 
   ConnectionApiServiceBase() {
-    $addMethod($grpc.ServiceMethod<$117.UpstreamRequest, $117.DownstreamResponse>(
-        'Connect',
-        connect,
-        true,
-        true,
-        ($core.List<$core.int> value) => $117.UpstreamRequest.fromBuffer(value),
-        ($117.DownstreamResponse value) => value.writeToBuffer()));
+    $addMethod(
+        $grpc.ServiceMethod<$117.UpstreamRequest, $117.DownstreamResponse>(
+            'Connect',
+            connect,
+            true,
+            true,
+            ($core.List<$core.int> value) =>
+                $117.UpstreamRequest.fromBuffer(value),
+            ($117.DownstreamResponse value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$117.DownstreamResponse> connect($grpc.ServiceCall call, $async.Stream<$117.UpstreamRequest> request);
+  $async.Stream<$117.DownstreamResponse> connect(
+      $grpc.ServiceCall call, $async.Stream<$117.UpstreamRequest> request);
 }

@@ -36,35 +36,46 @@ class MenuItemExtensionPoint extends $pb.GeneratedMessage {
     return $result;
   }
   MenuItemExtensionPoint._() : super();
-  factory MenuItemExtensionPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MenuItemExtensionPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MenuItemExtensionPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MenuItemExtensionPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MenuItemExtensionPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MenuItemExtensionPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'runFunction')
     ..aOS(2, _omitFieldNames ? '' : 'label')
     ..aOS(3, _omitFieldNames ? '' : 'logoUrl')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MenuItemExtensionPoint clone() => MenuItemExtensionPoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MenuItemExtensionPoint copyWith(void Function(MenuItemExtensionPoint) updates) => super.copyWith((message) => updates(message as MenuItemExtensionPoint)) as MenuItemExtensionPoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MenuItemExtensionPoint clone() =>
+      MenuItemExtensionPoint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MenuItemExtensionPoint copyWith(
+          void Function(MenuItemExtensionPoint) updates) =>
+      super.copyWith((message) => updates(message as MenuItemExtensionPoint))
+          as MenuItemExtensionPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MenuItemExtensionPoint create() => MenuItemExtensionPoint._();
   MenuItemExtensionPoint createEmptyInstance() => create();
-  static $pb.PbList<MenuItemExtensionPoint> createRepeated() => $pb.PbList<MenuItemExtensionPoint>();
+  static $pb.PbList<MenuItemExtensionPoint> createRepeated() =>
+      $pb.PbList<MenuItemExtensionPoint>();
   @$core.pragma('dart2js:noInline')
-  static MenuItemExtensionPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MenuItemExtensionPoint>(create);
+  static MenuItemExtensionPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MenuItemExtensionPoint>(create);
   static MenuItemExtensionPoint? _defaultInstance;
 
   /// Required. The endpoint to execute when this extension point is
@@ -72,7 +83,10 @@ class MenuItemExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get runFunction => $_getSZ(0);
   @$pb.TagNumber(1)
-  set runFunction($core.String v) { $_setString(0, v); }
+  set runFunction($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRunFunction() => $_has(0);
   @$pb.TagNumber(1)
@@ -83,7 +97,10 @@ class MenuItemExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get label => $_getSZ(1);
   @$pb.TagNumber(2)
-  set label($core.String v) { $_setString(1, v); }
+  set label($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLabel() => $_has(1);
   @$pb.TagNumber(2)
@@ -95,7 +112,10 @@ class MenuItemExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get logoUrl => $_getSZ(2);
   @$pb.TagNumber(3)
-  set logoUrl($core.String v) { $_setString(2, v); }
+  set logoUrl($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLogoUrl() => $_has(2);
   @$pb.TagNumber(3)
@@ -118,34 +138,46 @@ class HomepageExtensionPoint extends $pb.GeneratedMessage {
     return $result;
   }
   HomepageExtensionPoint._() : super();
-  factory HomepageExtensionPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory HomepageExtensionPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory HomepageExtensionPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory HomepageExtensionPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HomepageExtensionPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'HomepageExtensionPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'runFunction')
-    ..aOM<$307.BoolValue>(2, _omitFieldNames ? '' : 'enabled', subBuilder: $307.BoolValue.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$307.BoolValue>(2, _omitFieldNames ? '' : 'enabled',
+        subBuilder: $307.BoolValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  HomepageExtensionPoint clone() => HomepageExtensionPoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  HomepageExtensionPoint copyWith(void Function(HomepageExtensionPoint) updates) => super.copyWith((message) => updates(message as HomepageExtensionPoint)) as HomepageExtensionPoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  HomepageExtensionPoint clone() =>
+      HomepageExtensionPoint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  HomepageExtensionPoint copyWith(
+          void Function(HomepageExtensionPoint) updates) =>
+      super.copyWith((message) => updates(message as HomepageExtensionPoint))
+          as HomepageExtensionPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HomepageExtensionPoint create() => HomepageExtensionPoint._();
   HomepageExtensionPoint createEmptyInstance() => create();
-  static $pb.PbList<HomepageExtensionPoint> createRepeated() => $pb.PbList<HomepageExtensionPoint>();
+  static $pb.PbList<HomepageExtensionPoint> createRepeated() =>
+      $pb.PbList<HomepageExtensionPoint>();
   @$core.pragma('dart2js:noInline')
-  static HomepageExtensionPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HomepageExtensionPoint>(create);
+  static HomepageExtensionPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<HomepageExtensionPoint>(create);
   static HomepageExtensionPoint? _defaultInstance;
 
   /// Required. The endpoint to execute when this extension point is
@@ -153,7 +185,10 @@ class HomepageExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get runFunction => $_getSZ(0);
   @$pb.TagNumber(1)
-  set runFunction($core.String v) { $_setString(0, v); }
+  set runFunction($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRunFunction() => $_has(0);
   @$pb.TagNumber(1)
@@ -168,7 +203,10 @@ class HomepageExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $307.BoolValue get enabled => $_getN(1);
   @$pb.TagNumber(2)
-  set enabled($307.BoolValue v) { setField(2, v); }
+  set enabled($307.BoolValue v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnabled() => $_has(1);
   @$pb.TagNumber(2)
@@ -177,11 +215,7 @@ class HomepageExtensionPoint extends $pb.GeneratedMessage {
   $307.BoolValue ensureEnabled() => $_ensure(1);
 }
 
-enum UniversalActionExtensionPoint_ActionType {
-  openLink, 
-  runFunction, 
-  notSet
-}
+enum UniversalActionExtensionPoint_ActionType { openLink, runFunction, notSet }
 
 /// Format for declaring a universal action menu item extension point.
 class UniversalActionExtensionPoint extends $pb.GeneratedMessage {
@@ -203,44 +237,59 @@ class UniversalActionExtensionPoint extends $pb.GeneratedMessage {
     return $result;
   }
   UniversalActionExtensionPoint._() : super();
-  factory UniversalActionExtensionPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UniversalActionExtensionPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UniversalActionExtensionPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UniversalActionExtensionPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, UniversalActionExtensionPoint_ActionType> _UniversalActionExtensionPoint_ActionTypeByTag = {
-    2 : UniversalActionExtensionPoint_ActionType.openLink,
-    3 : UniversalActionExtensionPoint_ActionType.runFunction,
-    0 : UniversalActionExtensionPoint_ActionType.notSet
+  static const $core.Map<$core.int, UniversalActionExtensionPoint_ActionType>
+      _UniversalActionExtensionPoint_ActionTypeByTag = {
+    2: UniversalActionExtensionPoint_ActionType.openLink,
+    3: UniversalActionExtensionPoint_ActionType.runFunction,
+    0: UniversalActionExtensionPoint_ActionType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UniversalActionExtensionPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UniversalActionExtensionPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.script.type'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'label')
     ..aOS(2, _omitFieldNames ? '' : 'openLink')
     ..aOS(3, _omitFieldNames ? '' : 'runFunction')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UniversalActionExtensionPoint clone() => UniversalActionExtensionPoint()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UniversalActionExtensionPoint copyWith(void Function(UniversalActionExtensionPoint) updates) => super.copyWith((message) => updates(message as UniversalActionExtensionPoint)) as UniversalActionExtensionPoint;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UniversalActionExtensionPoint clone() =>
+      UniversalActionExtensionPoint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UniversalActionExtensionPoint copyWith(
+          void Function(UniversalActionExtensionPoint) updates) =>
+      super.copyWith(
+              (message) => updates(message as UniversalActionExtensionPoint))
+          as UniversalActionExtensionPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UniversalActionExtensionPoint create() => UniversalActionExtensionPoint._();
+  static UniversalActionExtensionPoint create() =>
+      UniversalActionExtensionPoint._();
   UniversalActionExtensionPoint createEmptyInstance() => create();
-  static $pb.PbList<UniversalActionExtensionPoint> createRepeated() => $pb.PbList<UniversalActionExtensionPoint>();
+  static $pb.PbList<UniversalActionExtensionPoint> createRepeated() =>
+      $pb.PbList<UniversalActionExtensionPoint>();
   @$core.pragma('dart2js:noInline')
-  static UniversalActionExtensionPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UniversalActionExtensionPoint>(create);
+  static UniversalActionExtensionPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UniversalActionExtensionPoint>(create);
   static UniversalActionExtensionPoint? _defaultInstance;
 
-  UniversalActionExtensionPoint_ActionType whichActionType() => _UniversalActionExtensionPoint_ActionTypeByTag[$_whichOneof(0)]!;
+  UniversalActionExtensionPoint_ActionType whichActionType() =>
+      _UniversalActionExtensionPoint_ActionTypeByTag[$_whichOneof(0)]!;
   void clearActionType() => clearField($_whichOneof(0));
 
   /// Required. User-visible text describing the action taken by activating this
@@ -248,7 +297,10 @@ class UniversalActionExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get label => $_getSZ(0);
   @$pb.TagNumber(1)
-  set label($core.String v) { $_setString(0, v); }
+  set label($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLabel() => $_has(0);
   @$pb.TagNumber(1)
@@ -258,7 +310,10 @@ class UniversalActionExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get openLink => $_getSZ(1);
   @$pb.TagNumber(2)
-  set openLink($core.String v) { $_setString(1, v); }
+  set openLink($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOpenLink() => $_has(1);
   @$pb.TagNumber(2)
@@ -268,13 +323,16 @@ class UniversalActionExtensionPoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get runFunction => $_getSZ(2);
   @$pb.TagNumber(3)
-  set runFunction($core.String v) { $_setString(2, v); }
+  set runFunction($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRunFunction() => $_has(2);
   @$pb.TagNumber(3)
   void clearRunFunction() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

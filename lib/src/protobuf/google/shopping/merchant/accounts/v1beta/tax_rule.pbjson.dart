@@ -18,12 +18,43 @@ const TaxRule$json = {
   '1': 'TaxRule',
   '2': [
     {'1': 'location_id', '3': 2, '4': 1, '5': 3, '9': 0, '10': 'locationId'},
-    {'1': 'post_code_range', '3': 3, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.TaxRule.TaxPostalCodeRange', '9': 0, '10': 'postCodeRange'},
-    {'1': 'use_google_rate', '3': 4, '4': 1, '5': 8, '9': 1, '10': 'useGoogleRate'},
-    {'1': 'self_specified_rate_micros', '3': 5, '4': 1, '5': 3, '9': 1, '10': 'selfSpecifiedRateMicros'},
+    {
+      '1': 'post_code_range',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.accounts.v1beta.TaxRule.TaxPostalCodeRange',
+      '9': 0,
+      '10': 'postCodeRange'
+    },
+    {
+      '1': 'use_google_rate',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'useGoogleRate'
+    },
+    {
+      '1': 'self_specified_rate_micros',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'selfSpecifiedRateMicros'
+    },
     {'1': 'region_code', '3': 1, '4': 1, '5': 9, '10': 'regionCode'},
     {'1': 'shipping_taxed', '3': 6, '4': 1, '5': 8, '10': 'shippingTaxed'},
-    {'1': 'effective_time_period', '3': 7, '4': 1, '5': 11, '6': '.google.type.Interval', '8': {}, '10': 'effectiveTimePeriod'},
+    {
+      '1': 'effective_time_period',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Interval',
+      '8': {},
+      '10': 'effectiveTimePeriod'
+    },
   ],
   '3': [TaxRule_TaxPostalCodeRange$json],
   '8': [
@@ -53,4 +84,3 @@ final $typed_data.Uint8List taxRuleDescriptor = $convert.base64Decode(
     'PgQQJSE2VmZmVjdGl2ZVRpbWVQZXJpb2QaQQoSVGF4UG9zdGFsQ29kZVJhbmdlEhkKBXN0YXJ0'
     'GAEgASgJQgPgQQJSBXN0YXJ0EhAKA2VuZBgCIAEoCVIDZW5kQgoKCGxvY2F0aW9uQhIKEHJhdG'
     'VfY2FsY3VsYXRpb24=');
-

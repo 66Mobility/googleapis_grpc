@@ -18,9 +18,23 @@ const Version$json = {
   '1': 'Version',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'version_state', '3': 2, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.Version.VersionState', '10': 'versionState'},
+    {
+      '1': 'version_state',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.Version.VersionState',
+      '10': 'versionState'
+    },
     {'1': 'creator', '3': 3, '4': 1, '5': 9, '10': 'creator'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
   '3': [Version_VersionState$json],
   '7': {},
@@ -30,7 +44,14 @@ const Version$json = {
 const Version_VersionState$json = {
   '1': 'VersionState',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.Version.VersionState.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.actions.sdk.v2.Version.VersionState.State',
+      '10': 'state'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
   ],
   '4': [Version_VersionState_State$json],
@@ -66,4 +87,3 @@ final $typed_data.Uint8List versionDescriptor = $convert.base64Decode(
     'BRIaChZDT05ESVRJT05BTExZX0FQUFJPVkVEEAYSCgoGREVOSUVEEAcSEgoOVU5ERVJfVEFLRU'
     'RPV04QCBILCgdERUxFVEVEEAk6SupBRwoeYWN0aW9ucy5nb29nbGVhcGlzLmNvbS9WZXJzaW9u'
     'EiVwcm9qZWN0cy97cHJvamVjdH0vdmVyc2lvbnMve3ZlcnNpb259');
-

@@ -18,8 +18,21 @@ const Usage$json = {
   '1': 'Usage',
   '2': [
     {'1': 'requirements', '3': 1, '4': 3, '5': 9, '10': 'requirements'},
-    {'1': 'rules', '3': 6, '4': 3, '5': 11, '6': '.google.api.UsageRule', '10': 'rules'},
-    {'1': 'producer_notification_channel', '3': 7, '4': 1, '5': 9, '10': 'producerNotificationChannel'},
+    {
+      '1': 'rules',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.UsageRule',
+      '10': 'rules'
+    },
+    {
+      '1': 'producer_notification_channel',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'producerNotificationChannel'
+    },
   ],
 };
 
@@ -34,8 +47,20 @@ const UsageRule$json = {
   '1': 'UsageRule',
   '2': [
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
-    {'1': 'allow_unregistered_calls', '3': 2, '4': 1, '5': 8, '10': 'allowUnregisteredCalls'},
-    {'1': 'skip_service_control', '3': 3, '4': 1, '5': 8, '10': 'skipServiceControl'},
+    {
+      '1': 'allow_unregistered_calls',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'allowUnregisteredCalls'
+    },
+    {
+      '1': 'skip_service_control',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'skipServiceControl'
+    },
   ],
 };
 
@@ -44,4 +69,3 @@ final $typed_data.Uint8List usageRuleDescriptor = $convert.base64Decode(
     'CglVc2FnZVJ1bGUSGgoIc2VsZWN0b3IYASABKAlSCHNlbGVjdG9yEjgKGGFsbG93X3VucmVnaX'
     'N0ZXJlZF9jYWxscxgCIAEoCFIWYWxsb3dVbnJlZ2lzdGVyZWRDYWxscxIwChRza2lwX3NlcnZp'
     'Y2VfY29udHJvbBgDIAEoCFISc2tpcFNlcnZpY2VDb250cm9s');
-

@@ -17,9 +17,30 @@ import 'dart:typed_data' as $typed_data;
 const GeocodingResults$json = {
   '1': 'GeocodingResults',
   '2': [
-    {'1': 'origin', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routing.v2.GeocodedWaypoint', '10': 'origin'},
-    {'1': 'destination', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routing.v2.GeocodedWaypoint', '10': 'destination'},
-    {'1': 'intermediates', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routing.v2.GeocodedWaypoint', '10': 'intermediates'},
+    {
+      '1': 'origin',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.GeocodedWaypoint',
+      '10': 'origin'
+    },
+    {
+      '1': 'destination',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.GeocodedWaypoint',
+      '10': 'destination'
+    },
+    {
+      '1': 'intermediates',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.routing.v2.GeocodedWaypoint',
+      '10': 'intermediates'
+    },
   ],
 };
 
@@ -35,8 +56,23 @@ final $typed_data.Uint8List geocodingResultsDescriptor = $convert.base64Decode(
 const GeocodedWaypoint$json = {
   '1': 'GeocodedWaypoint',
   '2': [
-    {'1': 'geocoder_status', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'geocoderStatus'},
-    {'1': 'intermediate_waypoint_request_index', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'intermediateWaypointRequestIndex', '17': true},
+    {
+      '1': 'geocoder_status',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'geocoderStatus'
+    },
+    {
+      '1': 'intermediate_waypoint_request_index',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'intermediateWaypointRequestIndex',
+      '17': true
+    },
     {'1': 'type', '3': 3, '4': 3, '5': 9, '10': 'type'},
     {'1': 'partial_match', '3': 4, '4': 1, '5': 8, '10': 'partialMatch'},
     {'1': 'place_id', '3': 5, '4': 1, '5': 9, '10': 'placeId'},
@@ -54,4 +90,3 @@ final $typed_data.Uint8List geocodedWaypointDescriptor = $convert.base64Decode(
     'R0eXBlGAMgAygJUgR0eXBlEiMKDXBhcnRpYWxfbWF0Y2gYBCABKAhSDHBhcnRpYWxNYXRjaBIZ'
     'CghwbGFjZV9pZBgFIAEoCVIHcGxhY2VJZEImCiRfaW50ZXJtZWRpYXRlX3dheXBvaW50X3JlcX'
     'Vlc3RfaW5kZXg=');
-

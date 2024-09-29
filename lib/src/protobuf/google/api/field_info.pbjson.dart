@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const FieldInfo$json = {
   '1': 'FieldInfo',
   '2': [
-    {'1': 'format', '3': 1, '4': 1, '5': 14, '6': '.google.api.FieldInfo.Format', '10': 'format'},
-    {'1': 'referenced_types', '3': 2, '4': 3, '5': 11, '6': '.google.api.TypeReference', '10': 'referencedTypes'},
+    {
+      '1': 'format',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.FieldInfo.Format',
+      '10': 'format'
+    },
+    {
+      '1': 'referenced_types',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.TypeReference',
+      '10': 'referencedTypes'
+    },
   ],
   '4': [FieldInfo_Format$json],
 };
@@ -53,4 +67,3 @@ const TypeReference$json = {
 /// Descriptor for `TypeReference`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List typeReferenceDescriptor = $convert.base64Decode(
     'Cg1UeXBlUmVmZXJlbmNlEhsKCXR5cGVfbmFtZRgBIAEoCVIIdHlwZU5hbWU=');
-

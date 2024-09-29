@@ -18,9 +18,25 @@ const RegionSearchValue$json = {
   '1': 'RegionSearchValue',
   '2': [
     {'1': 'address', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'address'},
-    {'1': 'latlng', '3': 2, '4': 1, '5': 11, '6': '.google.type.LatLng', '9': 0, '10': 'latlng'},
+    {
+      '1': 'latlng',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '9': 0,
+      '10': 'latlng'
+    },
     {'1': 'place_id', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'placeId'},
-    {'1': 'place_type', '3': 6, '4': 1, '5': 14, '6': '.google.maps.regionlookup.v1alpha.RegionSearchValue.PlaceType', '8': {}, '10': 'placeType'},
+    {
+      '1': 'place_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.regionlookup.v1alpha.RegionSearchValue.PlaceType',
+      '8': {},
+      '10': 'placeType'
+    },
     {'1': 'language_code', '3': 7, '4': 1, '5': 9, '10': 'languageCode'},
     {'1': 'region_code', '3': 8, '4': 1, '5': 9, '10': 'regionCode'},
   ],
@@ -61,4 +77,3 @@ final $typed_data.Uint8List regionSearchValueDescriptor = $convert.base64Decode(
     'T09EEAUSCwoHQ09VTlRSWRAGEg8KC1NVQkxPQ0FMSVRZEAcSHwobQURNSU5JU1RSQVRJVkVfQV'
     'JFQV9MRVZFTF8zEAgSHwobQURNSU5JU1RSQVRJVkVfQVJFQV9MRVZFTF80EAkSEwoPU0NIT09M'
     'X0RJU1RSSUNUEApCCgoIbG9jYXRpb24=');
-

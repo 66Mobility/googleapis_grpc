@@ -31,7 +31,14 @@ final $typed_data.Uint8List requestDescriptor = $convert.base64Decode(
 const ChangeBatch$json = {
   '1': 'ChangeBatch',
   '2': [
-    {'1': 'changes', '3': 1, '4': 3, '5': 11, '6': '.google.watcher.v1.Change', '10': 'changes'},
+    {
+      '1': 'changes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.watcher.v1.Change',
+      '10': 'changes'
+    },
   ],
 };
 
@@ -45,8 +52,22 @@ const Change$json = {
   '1': 'Change',
   '2': [
     {'1': 'element', '3': 1, '4': 1, '5': 9, '10': 'element'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.watcher.v1.Change.State', '10': 'state'},
-    {'1': 'data', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'data'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.watcher.v1.Change.State',
+      '10': 'state'
+    },
+    {
+      '1': 'data',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'data'
+    },
     {'1': 'resume_marker', '3': 4, '4': 1, '5': 12, '10': 'resumeMarker'},
     {'1': 'continued', '3': 5, '4': 1, '5': 8, '10': 'continued'},
   ],
@@ -72,4 +93,3 @@ final $typed_data.Uint8List changeDescriptor = $convert.base64Decode(
     'VyEhwKCWNvbnRpbnVlZBgFIAEoCFIJY29udGludWVkIk0KBVN0YXRlEgoKBkVYSVNUUxAAEhIK'
     'DkRPRVNfTk9UX0VYSVNUEAESGQoVSU5JVElBTF9TVEFURV9TS0lQUEVEEAISCQoFRVJST1IQAw'
     '==');
-

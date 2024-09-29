@@ -17,7 +17,13 @@ import 'dart:typed_data' as $typed_data;
 const GetPolicyOptions$json = {
   '1': 'GetPolicyOptions',
   '2': [
-    {'1': 'requested_policy_version', '3': 1, '4': 1, '5': 5, '10': 'requestedPolicyVersion'},
+    {
+      '1': 'requested_policy_version',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'requestedPolicyVersion'
+    },
   ],
 };
 
@@ -25,4 +31,3 @@ const GetPolicyOptions$json = {
 final $typed_data.Uint8List getPolicyOptionsDescriptor = $convert.base64Decode(
     'ChBHZXRQb2xpY3lPcHRpb25zEjgKGHJlcXVlc3RlZF9wb2xpY3lfdmVyc2lvbhgBIAEoBVIWcm'
     'VxdWVzdGVkUG9saWN5VmVyc2lvbg==');
-

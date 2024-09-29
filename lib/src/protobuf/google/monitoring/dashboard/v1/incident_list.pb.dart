@@ -31,34 +31,45 @@ class IncidentList extends $pb.GeneratedMessage {
     return $result;
   }
   IncidentList._() : super();
-  factory IncidentList.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory IncidentList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory IncidentList.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IncidentList.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IncidentList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<$196.MonitoredResource>(1, _omitFieldNames ? '' : 'monitoredResources', $pb.PbFieldType.PM, subBuilder: $196.MonitoredResource.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IncidentList',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
+    ..pc<$196.MonitoredResource>(
+        1, _omitFieldNames ? '' : 'monitoredResources', $pb.PbFieldType.PM,
+        subBuilder: $196.MonitoredResource.create)
     ..pPS(2, _omitFieldNames ? '' : 'policyNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   IncidentList clone() => IncidentList()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  IncidentList copyWith(void Function(IncidentList) updates) => super.copyWith((message) => updates(message as IncidentList)) as IncidentList;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IncidentList copyWith(void Function(IncidentList) updates) =>
+      super.copyWith((message) => updates(message as IncidentList))
+          as IncidentList;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static IncidentList create() => IncidentList._();
   IncidentList createEmptyInstance() => create();
-  static $pb.PbList<IncidentList> createRepeated() => $pb.PbList<IncidentList>();
+  static $pb.PbList<IncidentList> createRepeated() =>
+      $pb.PbList<IncidentList>();
   @$core.pragma('dart2js:noInline')
-  static IncidentList getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IncidentList>(create);
+  static IncidentList getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IncidentList>(create);
   static IncidentList? _defaultInstance;
 
   /// Optional. The monitored resource for which incidents are listed.
@@ -75,6 +86,6 @@ class IncidentList extends $pb.GeneratedMessage {
   $core.List<$core.String> get policyNames => $_getList(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

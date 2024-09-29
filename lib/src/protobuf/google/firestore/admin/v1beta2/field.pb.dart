@@ -39,36 +39,46 @@ class Field_IndexConfig extends $pb.GeneratedMessage {
     return $result;
   }
   Field_IndexConfig._() : super();
-  factory Field_IndexConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Field_IndexConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Field_IndexConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Field_IndexConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Field.IndexConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta2'), createEmptyInstance: create)
-    ..pc<$127.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM, subBuilder: $127.Index.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Field.IndexConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta2'),
+      createEmptyInstance: create)
+    ..pc<$127.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM,
+        subBuilder: $127.Index.create)
     ..aOB(2, _omitFieldNames ? '' : 'usesAncestorConfig')
     ..aOS(3, _omitFieldNames ? '' : 'ancestorField')
     ..aOB(4, _omitFieldNames ? '' : 'reverting')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Field_IndexConfig clone() => Field_IndexConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Field_IndexConfig copyWith(void Function(Field_IndexConfig) updates) => super.copyWith((message) => updates(message as Field_IndexConfig)) as Field_IndexConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Field_IndexConfig copyWith(void Function(Field_IndexConfig) updates) =>
+      super.copyWith((message) => updates(message as Field_IndexConfig))
+          as Field_IndexConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Field_IndexConfig create() => Field_IndexConfig._();
   Field_IndexConfig createEmptyInstance() => create();
-  static $pb.PbList<Field_IndexConfig> createRepeated() => $pb.PbList<Field_IndexConfig>();
+  static $pb.PbList<Field_IndexConfig> createRepeated() =>
+      $pb.PbList<Field_IndexConfig>();
   @$core.pragma('dart2js:noInline')
-  static Field_IndexConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Field_IndexConfig>(create);
+  static Field_IndexConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Field_IndexConfig>(create);
   static Field_IndexConfig? _defaultInstance;
 
   /// The indexes supported for this field.
@@ -81,7 +91,10 @@ class Field_IndexConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get usesAncestorConfig => $_getBF(1);
   @$pb.TagNumber(2)
-  set usesAncestorConfig($core.bool v) { $_setBool(1, v); }
+  set usesAncestorConfig($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUsesAncestorConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -94,7 +107,10 @@ class Field_IndexConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get ancestorField => $_getSZ(2);
   @$pb.TagNumber(3)
-  set ancestorField($core.String v) { $_setString(2, v); }
+  set ancestorField($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAncestorField() => $_has(2);
   @$pb.TagNumber(3)
@@ -108,7 +124,10 @@ class Field_IndexConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get reverting => $_getBF(3);
   @$pb.TagNumber(4)
-  set reverting($core.bool v) { $_setBool(3, v); }
+  set reverting($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasReverting() => $_has(3);
   @$pb.TagNumber(4)
@@ -134,25 +153,32 @@ class Field extends $pb.GeneratedMessage {
     return $result;
   }
   Field._() : super();
-  factory Field.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Field.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Field.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Field.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Field', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Field',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.firestore.admin.v1beta2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<Field_IndexConfig>(2, _omitFieldNames ? '' : 'indexConfig', subBuilder: Field_IndexConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<Field_IndexConfig>(2, _omitFieldNames ? '' : 'indexConfig',
+        subBuilder: Field_IndexConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Field clone() => Field()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Field copyWith(void Function(Field) updates) => super.copyWith((message) => updates(message as Field)) as Field;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Field copyWith(void Function(Field) updates) =>
+      super.copyWith((message) => updates(message as Field)) as Field;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -161,7 +187,8 @@ class Field extends $pb.GeneratedMessage {
   Field createEmptyInstance() => create();
   static $pb.PbList<Field> createRepeated() => $pb.PbList<Field>();
   @$core.pragma('dart2js:noInline')
-  static Field getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Field>(create);
+  static Field getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Field>(create);
   static Field? _defaultInstance;
 
   ///  A field name of the form
@@ -193,7 +220,10 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -206,7 +236,10 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Field_IndexConfig get indexConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set indexConfig(Field_IndexConfig v) { setField(2, v); }
+  set indexConfig(Field_IndexConfig v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIndexConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -215,6 +248,6 @@ class Field extends $pb.GeneratedMessage {
   Field_IndexConfig ensureIndexConfig() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

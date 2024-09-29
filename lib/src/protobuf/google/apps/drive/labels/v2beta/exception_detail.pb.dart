@@ -29,46 +29,62 @@ class ExceptionDetail extends $pb.GeneratedMessage {
     return $result;
   }
   ExceptionDetail._() : super();
-  factory ExceptionDetail.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExceptionDetail.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExceptionDetail.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExceptionDetail.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExceptionDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..e<ExceptionType>(1, _omitFieldNames ? '' : 'errorType', $pb.PbFieldType.OE, defaultOrMaker: ExceptionType.EXCEPTION_TYPE_UNSPECIFIED, valueOf: ExceptionType.valueOf, enumValues: ExceptionType.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExceptionDetail',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'),
+      createEmptyInstance: create)
+    ..e<ExceptionType>(
+        1, _omitFieldNames ? '' : 'errorType', $pb.PbFieldType.OE,
+        defaultOrMaker: ExceptionType.EXCEPTION_TYPE_UNSPECIFIED,
+        valueOf: ExceptionType.valueOf,
+        enumValues: ExceptionType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ExceptionDetail clone() => ExceptionDetail()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExceptionDetail copyWith(void Function(ExceptionDetail) updates) => super.copyWith((message) => updates(message as ExceptionDetail)) as ExceptionDetail;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExceptionDetail copyWith(void Function(ExceptionDetail) updates) =>
+      super.copyWith((message) => updates(message as ExceptionDetail))
+          as ExceptionDetail;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExceptionDetail create() => ExceptionDetail._();
   ExceptionDetail createEmptyInstance() => create();
-  static $pb.PbList<ExceptionDetail> createRepeated() => $pb.PbList<ExceptionDetail>();
+  static $pb.PbList<ExceptionDetail> createRepeated() =>
+      $pb.PbList<ExceptionDetail>();
   @$core.pragma('dart2js:noInline')
-  static ExceptionDetail getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExceptionDetail>(create);
+  static ExceptionDetail getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExceptionDetail>(create);
   static ExceptionDetail? _defaultInstance;
 
   /// The type of exception that occurred. Required.
   @$pb.TagNumber(1)
   ExceptionType get errorType => $_getN(0);
   @$pb.TagNumber(1)
-  set errorType(ExceptionType v) { setField(1, v); }
+  set errorType(ExceptionType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasErrorType() => $_has(0);
   @$pb.TagNumber(1)
   void clearErrorType() => clearField(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

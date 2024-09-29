@@ -51,29 +51,39 @@ class Table extends $pb.GeneratedMessage {
     return $result;
   }
   Table._() : super();
-  factory Table.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Table.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Table.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Table.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Table', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Table',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..aOM<$309.Image>(4, _omitFieldNames ? '' : 'image', subBuilder: $309.Image.create)
-    ..pc<TableColumn>(5, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM, subBuilder: TableColumn.create)
-    ..pc<TableRow>(6, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: TableRow.create)
-    ..aOM<$310.Link>(7, _omitFieldNames ? '' : 'button', subBuilder: $310.Link.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$309.Image>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: $309.Image.create)
+    ..pc<TableColumn>(5, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM,
+        subBuilder: TableColumn.create)
+    ..pc<TableRow>(6, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
+        subBuilder: TableRow.create)
+    ..aOM<$310.Link>(7, _omitFieldNames ? '' : 'button',
+        subBuilder: $310.Link.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Table clone() => Table()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Table copyWith(void Function(Table) updates) => super.copyWith((message) => updates(message as Table)) as Table;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Table copyWith(void Function(Table) updates) =>
+      super.copyWith((message) => updates(message as Table)) as Table;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -82,14 +92,18 @@ class Table extends $pb.GeneratedMessage {
   Table createEmptyInstance() => create();
   static $pb.PbList<Table> createRepeated() => $pb.PbList<Table>();
   @$core.pragma('dart2js:noInline')
-  static Table getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Table>(create);
+  static Table getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Table>(create);
   static Table? _defaultInstance;
 
   /// Overall title of the table. Optional but must be set if subtitle is set.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -99,7 +113,10 @@ class Table extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subtitle => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subtitle($core.String v) { $_setString(1, v); }
+  set subtitle($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubtitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -109,7 +126,10 @@ class Table extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $309.Image get image => $_getN(2);
   @$pb.TagNumber(4)
-  set image($309.Image v) { setField(4, v); }
+  set image($309.Image v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(2);
   @$pb.TagNumber(4)
@@ -133,7 +153,10 @@ class Table extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $310.Link get button => $_getN(5);
   @$pb.TagNumber(7)
-  set button($310.Link v) { setField(7, v); }
+  set button($310.Link v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasButton() => $_has(5);
   @$pb.TagNumber(7)
@@ -158,25 +181,36 @@ class TableColumn extends $pb.GeneratedMessage {
     return $result;
   }
   TableColumn._() : super();
-  factory TableColumn.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TableColumn.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TableColumn.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TableColumn.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TableColumn', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TableColumn',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'header')
-    ..e<TableColumn_HorizontalAlignment>(2, _omitFieldNames ? '' : 'align', $pb.PbFieldType.OE, defaultOrMaker: TableColumn_HorizontalAlignment.UNSPECIFIED, valueOf: TableColumn_HorizontalAlignment.valueOf, enumValues: TableColumn_HorizontalAlignment.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<TableColumn_HorizontalAlignment>(
+        2, _omitFieldNames ? '' : 'align', $pb.PbFieldType.OE,
+        defaultOrMaker: TableColumn_HorizontalAlignment.UNSPECIFIED,
+        valueOf: TableColumn_HorizontalAlignment.valueOf,
+        enumValues: TableColumn_HorizontalAlignment.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TableColumn clone() => TableColumn()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TableColumn copyWith(void Function(TableColumn) updates) => super.copyWith((message) => updates(message as TableColumn)) as TableColumn;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TableColumn copyWith(void Function(TableColumn) updates) =>
+      super.copyWith((message) => updates(message as TableColumn))
+          as TableColumn;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -185,14 +219,18 @@ class TableColumn extends $pb.GeneratedMessage {
   TableColumn createEmptyInstance() => create();
   static $pb.PbList<TableColumn> createRepeated() => $pb.PbList<TableColumn>();
   @$core.pragma('dart2js:noInline')
-  static TableColumn getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TableColumn>(create);
+  static TableColumn getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TableColumn>(create);
   static TableColumn? _defaultInstance;
 
   /// Header text for the column.
   @$pb.TagNumber(1)
   $core.String get header => $_getSZ(0);
   @$pb.TagNumber(1)
-  set header($core.String v) { $_setString(0, v); }
+  set header($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -203,7 +241,10 @@ class TableColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TableColumn_HorizontalAlignment get align => $_getN(1);
   @$pb.TagNumber(2)
-  set align(TableColumn_HorizontalAlignment v) { setField(2, v); }
+  set align(TableColumn_HorizontalAlignment v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAlign() => $_has(1);
   @$pb.TagNumber(2)
@@ -222,24 +263,30 @@ class TableCell extends $pb.GeneratedMessage {
     return $result;
   }
   TableCell._() : super();
-  factory TableCell.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TableCell.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TableCell.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TableCell.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TableCell', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TableCell',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TableCell clone() => TableCell()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TableCell copyWith(void Function(TableCell) updates) => super.copyWith((message) => updates(message as TableCell)) as TableCell;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TableCell copyWith(void Function(TableCell) updates) =>
+      super.copyWith((message) => updates(message as TableCell)) as TableCell;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -248,14 +295,18 @@ class TableCell extends $pb.GeneratedMessage {
   TableCell createEmptyInstance() => create();
   static $pb.PbList<TableCell> createRepeated() => $pb.PbList<TableCell>();
   @$core.pragma('dart2js:noInline')
-  static TableCell getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TableCell>(create);
+  static TableCell getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TableCell>(create);
   static TableCell? _defaultInstance;
 
   /// Text content of the cell.
   @$pb.TagNumber(1)
   $core.String get text => $_getSZ(0);
   @$pb.TagNumber(1)
-  set text($core.String v) { $_setString(0, v); }
+  set text($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasText() => $_has(0);
   @$pb.TagNumber(1)
@@ -278,25 +329,32 @@ class TableRow extends $pb.GeneratedMessage {
     return $result;
   }
   TableRow._() : super();
-  factory TableRow.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TableRow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TableRow.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TableRow.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TableRow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
-    ..pc<TableCell>(1, _omitFieldNames ? '' : 'cells', $pb.PbFieldType.PM, subBuilder: TableCell.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TableRow',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
+    ..pc<TableCell>(1, _omitFieldNames ? '' : 'cells', $pb.PbFieldType.PM,
+        subBuilder: TableCell.create)
     ..aOB(2, _omitFieldNames ? '' : 'divider')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TableRow clone() => TableRow()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TableRow copyWith(void Function(TableRow) updates) => super.copyWith((message) => updates(message as TableRow)) as TableRow;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TableRow copyWith(void Function(TableRow) updates) =>
+      super.copyWith((message) => updates(message as TableRow)) as TableRow;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -305,7 +363,8 @@ class TableRow extends $pb.GeneratedMessage {
   TableRow createEmptyInstance() => create();
   static $pb.PbList<TableRow> createRepeated() => $pb.PbList<TableRow>();
   @$core.pragma('dart2js:noInline')
-  static TableRow getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TableRow>(create);
+  static TableRow getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TableRow>(create);
   static TableRow? _defaultInstance;
 
   /// Cells in this row. The first 3 cells are guaranteed to be shown but
@@ -318,13 +377,16 @@ class TableRow extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get divider => $_getBF(1);
   @$pb.TagNumber(2)
-  set divider($core.bool v) { $_setBool(1, v); }
+  set divider($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDivider() => $_has(1);
   @$pb.TagNumber(2)
   void clearDivider() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

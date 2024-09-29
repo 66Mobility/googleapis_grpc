@@ -17,11 +17,48 @@ import 'dart:typed_data' as $typed_data;
 const Action$json = {
   '1': 'Action',
   '2': [
-    {'1': 'detail', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.ActionDetail', '10': 'detail'},
-    {'1': 'actor', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Actor', '10': 'actor'},
-    {'1': 'target', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Target', '10': 'target'},
-    {'1': 'timestamp', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'timestamp'},
-    {'1': 'time_range', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.TimeRange', '9': 0, '10': 'timeRange'},
+    {
+      '1': 'detail',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.ActionDetail',
+      '10': 'detail'
+    },
+    {
+      '1': 'actor',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Actor',
+      '10': 'actor'
+    },
+    {
+      '1': 'target',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Target',
+      '10': 'target'
+    },
+    {
+      '1': 'timestamp',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'timestamp'
+    },
+    {
+      '1': 'time_range',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.TimeRange',
+      '9': 0,
+      '10': 'timeRange'
+    },
   ],
   '8': [
     {'1': 'time'},
@@ -42,18 +79,114 @@ final $typed_data.Uint8List actionDescriptor = $convert.base64Decode(
 const ActionDetail$json = {
   '1': 'ActionDetail',
   '2': [
-    {'1': 'create', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Create', '9': 0, '10': 'create'},
-    {'1': 'edit', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Edit', '9': 0, '10': 'edit'},
-    {'1': 'move', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Move', '9': 0, '10': 'move'},
-    {'1': 'rename', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Rename', '9': 0, '10': 'rename'},
-    {'1': 'delete', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Delete', '9': 0, '10': 'delete'},
-    {'1': 'restore', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Restore', '9': 0, '10': 'restore'},
-    {'1': 'permission_change', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.PermissionChange', '9': 0, '10': 'permissionChange'},
-    {'1': 'comment', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Comment', '9': 0, '10': 'comment'},
-    {'1': 'dlp_change', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DataLeakPreventionChange', '9': 0, '10': 'dlpChange'},
-    {'1': 'reference', '3': 12, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.ApplicationReference', '9': 0, '10': 'reference'},
-    {'1': 'settings_change', '3': 13, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.SettingsChange', '9': 0, '10': 'settingsChange'},
-    {'1': 'applied_label_change', '3': 19, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange', '9': 0, '10': 'appliedLabelChange'},
+    {
+      '1': 'create',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Create',
+      '9': 0,
+      '10': 'create'
+    },
+    {
+      '1': 'edit',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Edit',
+      '9': 0,
+      '10': 'edit'
+    },
+    {
+      '1': 'move',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Move',
+      '9': 0,
+      '10': 'move'
+    },
+    {
+      '1': 'rename',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Rename',
+      '9': 0,
+      '10': 'rename'
+    },
+    {
+      '1': 'delete',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Delete',
+      '9': 0,
+      '10': 'delete'
+    },
+    {
+      '1': 'restore',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Restore',
+      '9': 0,
+      '10': 'restore'
+    },
+    {
+      '1': 'permission_change',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.PermissionChange',
+      '9': 0,
+      '10': 'permissionChange'
+    },
+    {
+      '1': 'comment',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Comment',
+      '9': 0,
+      '10': 'comment'
+    },
+    {
+      '1': 'dlp_change',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DataLeakPreventionChange',
+      '9': 0,
+      '10': 'dlpChange'
+    },
+    {
+      '1': 'reference',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.ApplicationReference',
+      '9': 0,
+      '10': 'reference'
+    },
+    {
+      '1': 'settings_change',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.SettingsChange',
+      '9': 0,
+      '10': 'settingsChange'
+    },
+    {
+      '1': 'applied_label_change',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.AppliedLabelChange',
+      '9': 0,
+      '10': 'appliedLabelChange'
+    },
   ],
   '8': [
     {'1': 'action_detail'},
@@ -85,9 +218,33 @@ final $typed_data.Uint8List actionDetailDescriptor = $convert.base64Decode(
 const Create$json = {
   '1': 'Create',
   '2': [
-    {'1': 'new', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Create.New', '9': 0, '10': 'new'},
-    {'1': 'upload', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Create.Upload', '9': 0, '10': 'upload'},
-    {'1': 'copy', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Create.Copy', '9': 0, '10': 'copy'},
+    {
+      '1': 'new',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Create.New',
+      '9': 0,
+      '10': 'new'
+    },
+    {
+      '1': 'upload',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Create.Upload',
+      '9': 0,
+      '10': 'upload'
+    },
+    {
+      '1': 'copy',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Create.Copy',
+      '9': 0,
+      '10': 'copy'
+    },
   ],
   '3': [Create_New$json, Create_Upload$json, Create_Copy$json],
   '8': [
@@ -109,7 +266,14 @@ const Create_Upload$json = {
 const Create_Copy$json = {
   '1': 'Copy',
   '2': [
-    {'1': 'original_object', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.TargetReference', '10': 'originalObject'},
+    {
+      '1': 'original_object',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.TargetReference',
+      '10': 'originalObject'
+    },
   ],
 };
 
@@ -128,15 +292,28 @@ const Edit$json = {
 };
 
 /// Descriptor for `Edit`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List editDescriptor = $convert.base64Decode(
-    'CgRFZGl0');
+final $typed_data.Uint8List editDescriptor = $convert.base64Decode('CgRFZGl0');
 
 @$core.Deprecated('Use moveDescriptor instead')
 const Move$json = {
   '1': 'Move',
   '2': [
-    {'1': 'added_parents', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.TargetReference', '10': 'addedParents'},
-    {'1': 'removed_parents', '3': 2, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.TargetReference', '10': 'removedParents'},
+    {
+      '1': 'added_parents',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.TargetReference',
+      '10': 'addedParents'
+    },
+    {
+      '1': 'removed_parents',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.TargetReference',
+      '10': 'removedParents'
+    },
   ],
 };
 
@@ -165,7 +342,14 @@ final $typed_data.Uint8List renameDescriptor = $convert.base64Decode(
 const Delete$json = {
   '1': 'Delete',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.Delete.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.Delete.Type',
+      '10': 'type'
+    },
   ],
   '4': [Delete_Type$json],
 };
@@ -190,7 +374,14 @@ final $typed_data.Uint8List deleteDescriptor = $convert.base64Decode(
 const Restore$json = {
   '1': 'Restore',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.Restore.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.Restore.Type',
+      '10': 'type'
+    },
   ],
   '4': [Restore_Type$json],
 };
@@ -214,8 +405,22 @@ final $typed_data.Uint8List restoreDescriptor = $convert.base64Decode(
 const PermissionChange$json = {
   '1': 'PermissionChange',
   '2': [
-    {'1': 'added_permissions', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.Permission', '10': 'addedPermissions'},
-    {'1': 'removed_permissions', '3': 2, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.Permission', '10': 'removedPermissions'},
+    {
+      '1': 'added_permissions',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Permission',
+      '10': 'addedPermissions'
+    },
+    {
+      '1': 'removed_permissions',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Permission',
+      '10': 'removedPermissions'
+    },
   ],
 };
 
@@ -230,11 +435,50 @@ final $typed_data.Uint8List permissionChangeDescriptor = $convert.base64Decode(
 const Permission$json = {
   '1': 'Permission',
   '2': [
-    {'1': 'role', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.Permission.Role', '10': 'role'},
-    {'1': 'user', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User', '9': 0, '10': 'user'},
-    {'1': 'group', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Group', '9': 0, '10': 'group'},
-    {'1': 'domain', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Domain', '9': 0, '10': 'domain'},
-    {'1': 'anyone', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Permission.Anyone', '9': 0, '10': 'anyone'},
+    {
+      '1': 'role',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.Permission.Role',
+      '10': 'role'
+    },
+    {
+      '1': 'user',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User',
+      '9': 0,
+      '10': 'user'
+    },
+    {
+      '1': 'group',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Group',
+      '9': 0,
+      '10': 'group'
+    },
+    {
+      '1': 'domain',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Domain',
+      '9': 0,
+      '10': 'domain'
+    },
+    {
+      '1': 'anyone',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Permission.Anyone',
+      '9': 0,
+      '10': 'anyone'
+    },
     {'1': 'allow_discovery', '3': 6, '4': 1, '5': 8, '10': 'allowDiscovery'},
   ],
   '3': [Permission_Anyone$json],
@@ -281,10 +525,41 @@ final $typed_data.Uint8List permissionDescriptor = $convert.base64Decode(
 const Comment$json = {
   '1': 'Comment',
   '2': [
-    {'1': 'post', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Comment.Post', '9': 0, '10': 'post'},
-    {'1': 'assignment', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Comment.Assignment', '9': 0, '10': 'assignment'},
-    {'1': 'suggestion', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Comment.Suggestion', '9': 0, '10': 'suggestion'},
-    {'1': 'mentioned_users', '3': 7, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.User', '10': 'mentionedUsers'},
+    {
+      '1': 'post',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Comment.Post',
+      '9': 0,
+      '10': 'post'
+    },
+    {
+      '1': 'assignment',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Comment.Assignment',
+      '9': 0,
+      '10': 'assignment'
+    },
+    {
+      '1': 'suggestion',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Comment.Suggestion',
+      '9': 0,
+      '10': 'suggestion'
+    },
+    {
+      '1': 'mentioned_users',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User',
+      '10': 'mentionedUsers'
+    },
   ],
   '3': [Comment_Post$json, Comment_Assignment$json, Comment_Suggestion$json],
   '8': [
@@ -296,7 +571,14 @@ const Comment$json = {
 const Comment_Post$json = {
   '1': 'Post',
   '2': [
-    {'1': 'subtype', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.Comment.Post.Subtype', '10': 'subtype'},
+    {
+      '1': 'subtype',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.Comment.Post.Subtype',
+      '10': 'subtype'
+    },
   ],
   '4': [Comment_Post_Subtype$json],
 };
@@ -319,8 +601,22 @@ const Comment_Post_Subtype$json = {
 const Comment_Assignment$json = {
   '1': 'Assignment',
   '2': [
-    {'1': 'subtype', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.Comment.Assignment.Subtype', '10': 'subtype'},
-    {'1': 'assigned_user', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User', '10': 'assignedUser'},
+    {
+      '1': 'subtype',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.Comment.Assignment.Subtype',
+      '10': 'subtype'
+    },
+    {
+      '1': 'assigned_user',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User',
+      '10': 'assignedUser'
+    },
   ],
   '4': [Comment_Assignment_Subtype$json],
 };
@@ -344,7 +640,14 @@ const Comment_Assignment_Subtype$json = {
 const Comment_Suggestion$json = {
   '1': 'Suggestion',
   '2': [
-    {'1': 'subtype', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.Comment.Suggestion.Subtype', '10': 'subtype'},
+    {
+      '1': 'subtype',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.Comment.Suggestion.Subtype',
+      '10': 'subtype'
+    },
   ],
   '4': [Comment_Suggestion_Subtype$json],
 };
@@ -393,7 +696,14 @@ final $typed_data.Uint8List commentDescriptor = $convert.base64Decode(
 const DataLeakPreventionChange$json = {
   '1': 'DataLeakPreventionChange',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.DataLeakPreventionChange.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.DataLeakPreventionChange.Type',
+      '10': 'type'
+    },
   ],
   '4': [DataLeakPreventionChange_Type$json],
 };
@@ -418,7 +728,14 @@ final $typed_data.Uint8List dataLeakPreventionChangeDescriptor = $convert.base64
 const ApplicationReference$json = {
   '1': 'ApplicationReference',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.ApplicationReference.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.ApplicationReference.Type',
+      '10': 'type'
+    },
   ],
   '4': [ApplicationReference_Type$json],
 };
@@ -443,7 +760,14 @@ final $typed_data.Uint8List applicationReferenceDescriptor = $convert.base64Deco
 const SettingsChange$json = {
   '1': 'SettingsChange',
   '2': [
-    {'1': 'restriction_changes', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.SettingsChange.RestrictionChange', '10': 'restrictionChanges'},
+    {
+      '1': 'restriction_changes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.SettingsChange.RestrictionChange',
+      '10': 'restrictionChanges'
+    },
   ],
   '3': [SettingsChange_RestrictionChange$json],
 };
@@ -452,10 +776,29 @@ const SettingsChange$json = {
 const SettingsChange_RestrictionChange$json = {
   '1': 'RestrictionChange',
   '2': [
-    {'1': 'feature', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.SettingsChange.RestrictionChange.Feature', '10': 'feature'},
-    {'1': 'new_restriction', '3': 2, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.SettingsChange.RestrictionChange.Restriction', '10': 'newRestriction'},
+    {
+      '1': 'feature',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.apps.drive.activity.v2.SettingsChange.RestrictionChange.Feature',
+      '10': 'feature'
+    },
+    {
+      '1': 'new_restriction',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.apps.drive.activity.v2.SettingsChange.RestrictionChange.Restriction',
+      '10': 'newRestriction'
+    },
   ],
-  '4': [SettingsChange_RestrictionChange_Feature$json, SettingsChange_RestrictionChange_Restriction$json],
+  '4': [
+    SettingsChange_RestrictionChange_Feature$json,
+    SettingsChange_RestrictionChange_Restriction$json
+  ],
 };
 
 @$core.Deprecated('Use settingsChangeDescriptor instead')
@@ -500,7 +843,15 @@ final $typed_data.Uint8List settingsChangeDescriptor = $convert.base64Decode(
 const AppliedLabelChange$json = {
   '1': 'AppliedLabelChange',
   '2': [
-    {'1': 'changes', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail', '10': 'changes'},
+    {
+      '1': 'changes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail',
+      '10': 'changes'
+    },
   ],
   '3': [AppliedLabelChange_AppliedLabelChangeDetail$json],
 };
@@ -510,9 +861,25 @@ const AppliedLabelChange_AppliedLabelChangeDetail$json = {
   '1': 'AppliedLabelChangeDetail',
   '2': [
     {'1': 'label', '3': 1, '4': 1, '5': 9, '10': 'label'},
-    {'1': 'types', '3': 2, '4': 3, '5': 14, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.Type', '10': 'types'},
+    {
+      '1': 'types',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.Type',
+      '10': 'types'
+    },
     {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'field_changes', '3': 4, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange', '10': 'fieldChanges'},
+    {
+      '1': 'field_changes',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange',
+      '10': 'fieldChanges'
+    },
   ],
   '3': [AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange$json],
   '4': [AppliedLabelChange_AppliedLabelChangeDetail_Type$json],
@@ -522,12 +889,50 @@ const AppliedLabelChange_AppliedLabelChangeDetail$json = {
 const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange$json = {
   '1': 'FieldValueChange',
   '2': [
-    {'1': 'field_id', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'fieldId', '17': true},
-    {'1': 'old_value', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue', '9': 1, '10': 'oldValue', '17': true},
-    {'1': 'new_value', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue', '9': 2, '10': 'newValue', '17': true},
-    {'1': 'display_name', '3': 4, '4': 1, '5': 9, '9': 3, '10': 'displayName', '17': true},
+    {
+      '1': 'field_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'fieldId',
+      '17': true
+    },
+    {
+      '1': 'old_value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue',
+      '9': 1,
+      '10': 'oldValue',
+      '17': true
+    },
+    {
+      '1': 'new_value',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue',
+      '9': 2,
+      '10': 'newValue',
+      '17': true
+    },
+    {
+      '1': 'display_name',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 3,
+      '10': 'displayName',
+      '17': true
+    },
   ],
-  '3': [AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue$json],
+  '3': [
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue$json
+  ],
   '8': [
     {'1': '_field_id'},
     {'1': '_old_value'},
@@ -537,26 +942,109 @@ const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange$json = {
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue$json =
+    {
   '1': 'FieldValue',
   '2': [
-    {'1': 'text', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Text', '9': 0, '10': 'text'},
-    {'1': 'text_list', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.TextList', '9': 0, '10': 'textList'},
-    {'1': 'selection', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Selection', '9': 0, '10': 'selection'},
-    {'1': 'selection_list', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.SelectionList', '9': 0, '10': 'selectionList'},
-    {'1': 'integer', '3': 6, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Integer', '9': 0, '10': 'integer'},
-    {'1': 'user', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.SingleUser', '9': 0, '10': 'user'},
-    {'1': 'user_list', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.UserList', '9': 0, '10': 'userList'},
-    {'1': 'date', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Date', '9': 0, '10': 'date'},
+    {
+      '1': 'text',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Text',
+      '9': 0,
+      '10': 'text'
+    },
+    {
+      '1': 'text_list',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.TextList',
+      '9': 0,
+      '10': 'textList'
+    },
+    {
+      '1': 'selection',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Selection',
+      '9': 0,
+      '10': 'selection'
+    },
+    {
+      '1': 'selection_list',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.SelectionList',
+      '9': 0,
+      '10': 'selectionList'
+    },
+    {
+      '1': 'integer',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Integer',
+      '9': 0,
+      '10': 'integer'
+    },
+    {
+      '1': 'user',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.SingleUser',
+      '9': 0,
+      '10': 'user'
+    },
+    {
+      '1': 'user_list',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.UserList',
+      '9': 0,
+      '10': 'userList'
+    },
+    {
+      '1': 'date',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Date',
+      '9': 0,
+      '10': 'date'
+    },
   ],
-  '3': [AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Text$json, AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_TextList$json, AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Selection$json, AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SelectionList$json, AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Integer$json, AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SingleUser$json, AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_UserList$json, AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date$json],
+  '3': [
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Text$json,
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_TextList$json,
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Selection$json,
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SelectionList$json,
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Integer$json,
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SingleUser$json,
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_UserList$json,
+    AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date$json
+  ],
   '8': [
     {'1': 'value'},
   ],
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Text$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Text$json =
+    {
   '1': 'Text',
   '2': [
     {'1': 'value', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'value', '17': true},
@@ -567,19 +1055,37 @@ const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Te
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_TextList$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_TextList$json =
+    {
   '1': 'TextList',
   '2': [
-    {'1': 'values', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Text', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Text',
+      '10': 'values'
+    },
   ],
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Selection$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Selection$json =
+    {
   '1': 'Selection',
   '2': [
     {'1': 'value', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'value', '17': true},
-    {'1': 'display_name', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'displayName', '17': true},
+    {
+      '1': 'display_name',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'displayName',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_value'},
@@ -588,15 +1094,25 @@ const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Se
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SelectionList$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SelectionList$json =
+    {
   '1': 'SelectionList',
   '2': [
-    {'1': 'values', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Selection', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Selection',
+      '10': 'values'
+    },
   ],
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Integer$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Integer$json =
+    {
   '1': 'Integer',
   '2': [
     {'1': 'value', '3': 1, '4': 1, '5': 3, '9': 0, '10': 'value', '17': true},
@@ -607,7 +1123,8 @@ const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_In
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SingleUser$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_SingleUser$json =
+    {
   '1': 'SingleUser',
   '2': [
     {'1': 'value', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'value', '17': true},
@@ -618,18 +1135,37 @@ const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Si
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_UserList$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_UserList$json =
+    {
   '1': 'UserList',
   '2': [
-    {'1': 'values', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.SingleUser', '10': 'values'},
+    {
+      '1': 'values',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.apps.drive.activity.v2.AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.SingleUser',
+      '10': 'values'
+    },
   ],
 };
 
 @$core.Deprecated('Use appliedLabelChangeDescriptor instead')
-const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date$json = {
+const AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date$json =
+    {
   '1': 'Date',
   '2': [
-    {'1': 'value', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'value', '17': true},
+    {
+      '1': 'value',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'value',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_value'},
@@ -703,4 +1239,3 @@ final $typed_data.Uint8List appliedLabelChangeDescriptor = $convert.base64Decode
     'Cl9uZXdfdmFsdWVCDwoNX2Rpc3BsYXlfbmFtZSKBAQoEVHlwZRIUChBUWVBFX1VOU1BFQ0lGSU'
     'VEEAASDwoLTEFCRUxfQURERUQQARIRCg1MQUJFTF9SRU1PVkVEEAISHQoZTEFCRUxfRklFTERf'
     'VkFMVUVfQ0hBTkdFRBADEiAKHExBQkVMX0FQUExJRURfQllfSVRFTV9DUkVBVEUQBA==');
-

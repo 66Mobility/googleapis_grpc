@@ -18,10 +18,38 @@ const Index$json = {
   '1': 'Index',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'query_scope', '3': 2, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Index.QueryScope', '10': 'queryScope'},
-    {'1': 'api_scope', '3': 5, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Index.ApiScope', '10': 'apiScope'},
-    {'1': 'fields', '3': 3, '4': 3, '5': 11, '6': '.google.firestore.admin.v1.Index.IndexField', '10': 'fields'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Index.State', '10': 'state'},
+    {
+      '1': 'query_scope',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Index.QueryScope',
+      '10': 'queryScope'
+    },
+    {
+      '1': 'api_scope',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Index.ApiScope',
+      '10': 'apiScope'
+    },
+    {
+      '1': 'fields',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Index.IndexField',
+      '10': 'fields'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Index.State',
+      '10': 'state'
+    },
   ],
   '3': [Index_IndexField$json],
   '4': [Index_QueryScope$json, Index_ApiScope$json, Index_State$json],
@@ -33,9 +61,33 @@ const Index_IndexField$json = {
   '1': 'IndexField',
   '2': [
     {'1': 'field_path', '3': 1, '4': 1, '5': 9, '10': 'fieldPath'},
-    {'1': 'order', '3': 2, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Index.IndexField.Order', '9': 0, '10': 'order'},
-    {'1': 'array_config', '3': 3, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Index.IndexField.ArrayConfig', '9': 0, '10': 'arrayConfig'},
-    {'1': 'vector_config', '3': 4, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Index.IndexField.VectorConfig', '9': 0, '10': 'vectorConfig'},
+    {
+      '1': 'order',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Index.IndexField.Order',
+      '9': 0,
+      '10': 'order'
+    },
+    {
+      '1': 'array_config',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Index.IndexField.ArrayConfig',
+      '9': 0,
+      '10': 'arrayConfig'
+    },
+    {
+      '1': 'vector_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Index.IndexField.VectorConfig',
+      '9': 0,
+      '10': 'vectorConfig'
+    },
   ],
   '3': [Index_IndexField_VectorConfig$json],
   '4': [Index_IndexField_Order$json, Index_IndexField_ArrayConfig$json],
@@ -49,7 +101,15 @@ const Index_IndexField_VectorConfig$json = {
   '1': 'VectorConfig',
   '2': [
     {'1': 'dimension', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'dimension'},
-    {'1': 'flat', '3': 2, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Index.IndexField.VectorConfig.FlatIndex', '9': 0, '10': 'flat'},
+    {
+      '1': 'flat',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Index.IndexField.VectorConfig.FlatIndex',
+      '9': 0,
+      '10': 'flat'
+    },
   ],
   '3': [Index_IndexField_VectorConfig_FlatIndex$json],
   '8': [
@@ -137,4 +197,3 @@ final $typed_data.Uint8List indexDescriptor = $convert.base64Decode(
     'CENSRUFUSU5HEAESCQoFUkVBRFkQAhIQCgxORUVEU19SRVBBSVIQAzp66kF3Ch5maXJlc3Rvcm'
     'UuZ29vZ2xlYXBpcy5jb20vSW5kZXgSVXByb2plY3RzL3twcm9qZWN0fS9kYXRhYmFzZXMve2Rh'
     'dGFiYXNlfS9jb2xsZWN0aW9uR3JvdXBzL3tjb2xsZWN0aW9ufS9pbmRleGVzL3tpbmRleH0=');
-

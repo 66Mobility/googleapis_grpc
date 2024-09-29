@@ -19,14 +19,20 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// You must display this warning to the user for all walking, bicycling, and
 /// two-wheel routes that you display in your app.
 class RouteTravelMode extends $pb.ProtobufEnum {
-  static const RouteTravelMode TRAVEL_MODE_UNSPECIFIED = RouteTravelMode._(0, _omitEnumNames ? '' : 'TRAVEL_MODE_UNSPECIFIED');
-  static const RouteTravelMode DRIVE = RouteTravelMode._(1, _omitEnumNames ? '' : 'DRIVE');
-  static const RouteTravelMode BICYCLE = RouteTravelMode._(2, _omitEnumNames ? '' : 'BICYCLE');
-  static const RouteTravelMode WALK = RouteTravelMode._(3, _omitEnumNames ? '' : 'WALK');
-  static const RouteTravelMode TWO_WHEELER = RouteTravelMode._(4, _omitEnumNames ? '' : 'TWO_WHEELER');
-  static const RouteTravelMode TRANSIT = RouteTravelMode._(7, _omitEnumNames ? '' : 'TRANSIT');
+  static const RouteTravelMode TRAVEL_MODE_UNSPECIFIED =
+      RouteTravelMode._(0, _omitEnumNames ? '' : 'TRAVEL_MODE_UNSPECIFIED');
+  static const RouteTravelMode DRIVE =
+      RouteTravelMode._(1, _omitEnumNames ? '' : 'DRIVE');
+  static const RouteTravelMode BICYCLE =
+      RouteTravelMode._(2, _omitEnumNames ? '' : 'BICYCLE');
+  static const RouteTravelMode WALK =
+      RouteTravelMode._(3, _omitEnumNames ? '' : 'WALK');
+  static const RouteTravelMode TWO_WHEELER =
+      RouteTravelMode._(4, _omitEnumNames ? '' : 'TWO_WHEELER');
+  static const RouteTravelMode TRANSIT =
+      RouteTravelMode._(7, _omitEnumNames ? '' : 'TRANSIT');
 
-  static const $core.List<RouteTravelMode> values = <RouteTravelMode> [
+  static const $core.List<RouteTravelMode> values = <RouteTravelMode>[
     TRAVEL_MODE_UNSPECIFIED,
     DRIVE,
     BICYCLE,
@@ -35,11 +41,11 @@ class RouteTravelMode extends $pb.ProtobufEnum {
     TRANSIT,
   ];
 
-  static final $core.Map<$core.int, RouteTravelMode> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, RouteTravelMode> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static RouteTravelMode? valueOf($core.int value) => _byValue[value];
 
   const RouteTravelMode._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

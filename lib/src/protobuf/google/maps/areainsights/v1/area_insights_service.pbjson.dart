@@ -70,8 +70,24 @@ final $typed_data.Uint8List priceLevelDescriptor = $convert.base64Decode(
 const ComputeInsightsRequest$json = {
   '1': 'ComputeInsightsRequest',
   '2': [
-    {'1': 'insights', '3': 4, '4': 3, '5': 14, '6': '.google.maps.areainsights.v1.Insight', '8': {}, '10': 'insights'},
-    {'1': 'filter', '3': 5, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.Filter', '8': {}, '10': 'filter'},
+    {
+      '1': 'insights',
+      '3': 4,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.areainsights.v1.Insight',
+      '8': {},
+      '10': 'insights'
+    },
+    {
+      '1': 'filter',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.Filter',
+      '8': {},
+      '10': 'filter'
+    },
   ],
 };
 
@@ -86,7 +102,14 @@ const ComputeInsightsResponse$json = {
   '1': 'ComputeInsightsResponse',
   '2': [
     {'1': 'count', '3': 1, '4': 1, '5': 3, '9': 0, '10': 'count', '17': true},
-    {'1': 'place_insights', '3': 5, '4': 3, '5': 11, '6': '.google.maps.areainsights.v1.PlaceInsight', '10': 'placeInsights'},
+    {
+      '1': 'place_insights',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.PlaceInsight',
+      '10': 'placeInsights'
+    },
   ],
   '8': [
     {'1': '_count'},
@@ -116,11 +139,51 @@ final $typed_data.Uint8List placeInsightDescriptor = $convert.base64Decode(
 const Filter$json = {
   '1': 'Filter',
   '2': [
-    {'1': 'location_filter', '3': 1, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.LocationFilter', '8': {}, '10': 'locationFilter'},
-    {'1': 'type_filter', '3': 2, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.TypeFilter', '8': {}, '10': 'typeFilter'},
-    {'1': 'operating_status', '3': 3, '4': 3, '5': 14, '6': '.google.maps.areainsights.v1.OperatingStatus', '8': {}, '10': 'operatingStatus'},
-    {'1': 'price_levels', '3': 4, '4': 3, '5': 14, '6': '.google.maps.areainsights.v1.PriceLevel', '8': {}, '10': 'priceLevels'},
-    {'1': 'rating_filter', '3': 5, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.RatingFilter', '8': {}, '10': 'ratingFilter'},
+    {
+      '1': 'location_filter',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.LocationFilter',
+      '8': {},
+      '10': 'locationFilter'
+    },
+    {
+      '1': 'type_filter',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.TypeFilter',
+      '8': {},
+      '10': 'typeFilter'
+    },
+    {
+      '1': 'operating_status',
+      '3': 3,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.areainsights.v1.OperatingStatus',
+      '8': {},
+      '10': 'operatingStatus'
+    },
+    {
+      '1': 'price_levels',
+      '3': 4,
+      '4': 3,
+      '5': 14,
+      '6': '.google.maps.areainsights.v1.PriceLevel',
+      '8': {},
+      '10': 'priceLevels'
+    },
+    {
+      '1': 'rating_filter',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.RatingFilter',
+      '8': {},
+      '10': 'ratingFilter'
+    },
   ],
 };
 
@@ -139,11 +202,39 @@ final $typed_data.Uint8List filterDescriptor = $convert.base64Decode(
 const LocationFilter$json = {
   '1': 'LocationFilter',
   '2': [
-    {'1': 'circle', '3': 1, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.LocationFilter.Circle', '9': 0, '10': 'circle'},
-    {'1': 'region', '3': 2, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.LocationFilter.Region', '9': 0, '10': 'region'},
-    {'1': 'custom_area', '3': 3, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.LocationFilter.CustomArea', '9': 0, '10': 'customArea'},
+    {
+      '1': 'circle',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.LocationFilter.Circle',
+      '9': 0,
+      '10': 'circle'
+    },
+    {
+      '1': 'region',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.LocationFilter.Region',
+      '9': 0,
+      '10': 'region'
+    },
+    {
+      '1': 'custom_area',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.LocationFilter.CustomArea',
+      '9': 0,
+      '10': 'customArea'
+    },
   ],
-  '3': [LocationFilter_Circle$json, LocationFilter_Region$json, LocationFilter_CustomArea$json],
+  '3': [
+    LocationFilter_Circle$json,
+    LocationFilter_Region$json,
+    LocationFilter_CustomArea$json
+  ],
   '8': [
     {'1': 'area'},
   ],
@@ -153,7 +244,15 @@ const LocationFilter$json = {
 const LocationFilter_Circle$json = {
   '1': 'Circle',
   '2': [
-    {'1': 'lat_lng', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '9': 0, '10': 'latLng'},
+    {
+      '1': 'lat_lng',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '9': 0,
+      '10': 'latLng'
+    },
     {'1': 'place', '3': 2, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'place'},
     {'1': 'radius', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'radius'},
   ],
@@ -177,7 +276,15 @@ const LocationFilter_Region$json = {
 const LocationFilter_CustomArea$json = {
   '1': 'CustomArea',
   '2': [
-    {'1': 'polygon', '3': 1, '4': 1, '5': 11, '6': '.google.maps.areainsights.v1.LocationFilter.CustomArea.Polygon', '8': {}, '10': 'polygon'},
+    {
+      '1': 'polygon',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.areainsights.v1.LocationFilter.CustomArea.Polygon',
+      '8': {},
+      '10': 'polygon'
+    },
   ],
   '3': [LocationFilter_CustomArea_Polygon$json],
 };
@@ -186,7 +293,15 @@ const LocationFilter_CustomArea$json = {
 const LocationFilter_CustomArea_Polygon$json = {
   '1': 'Polygon',
   '2': [
-    {'1': 'coordinates', '3': 1, '4': 3, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'coordinates'},
+    {
+      '1': 'coordinates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '8': {},
+      '10': 'coordinates'
+    },
   ],
 };
 
@@ -210,10 +325,38 @@ final $typed_data.Uint8List locationFilterDescriptor = $convert.base64Decode(
 const TypeFilter$json = {
   '1': 'TypeFilter',
   '2': [
-    {'1': 'included_types', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'includedTypes'},
-    {'1': 'excluded_types', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'excludedTypes'},
-    {'1': 'included_primary_types', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'includedPrimaryTypes'},
-    {'1': 'excluded_primary_types', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'excludedPrimaryTypes'},
+    {
+      '1': 'included_types',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'includedTypes'
+    },
+    {
+      '1': 'excluded_types',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'excludedTypes'
+    },
+    {
+      '1': 'included_primary_types',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'includedPrimaryTypes'
+    },
+    {
+      '1': 'excluded_primary_types',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'excludedPrimaryTypes'
+    },
   ],
 };
 
@@ -228,8 +371,26 @@ final $typed_data.Uint8List typeFilterDescriptor = $convert.base64Decode(
 const RatingFilter$json = {
   '1': 'RatingFilter',
   '2': [
-    {'1': 'min_rating', '3': 5, '4': 1, '5': 2, '8': {}, '9': 0, '10': 'minRating', '17': true},
-    {'1': 'max_rating', '3': 6, '4': 1, '5': 2, '8': {}, '9': 1, '10': 'maxRating', '17': true},
+    {
+      '1': 'min_rating',
+      '3': 5,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 0,
+      '10': 'minRating',
+      '17': true
+    },
+    {
+      '1': 'max_rating',
+      '3': 6,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 1,
+      '10': 'maxRating',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_min_rating'},
@@ -242,4 +403,3 @@ final $typed_data.Uint8List ratingFilterDescriptor = $convert.base64Decode(
     'CgxSYXRpbmdGaWx0ZXISJwoKbWluX3JhdGluZxgFIAEoAkID4EEBSABSCW1pblJhdGluZ4gBAR'
     'InCgptYXhfcmF0aW5nGAYgASgCQgPgQQFIAVIJbWF4UmF0aW5niAEBQg0KC19taW5fcmF0aW5n'
     'Qg0KC19tYXhfcmF0aW5n');
-

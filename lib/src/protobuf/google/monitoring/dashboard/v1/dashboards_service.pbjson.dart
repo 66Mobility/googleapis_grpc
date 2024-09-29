@@ -18,7 +18,15 @@ const CreateDashboardRequest$json = {
   '1': 'CreateDashboardRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'dashboard', '3': 2, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Dashboard', '8': {}, '10': 'dashboard'},
+    {
+      '1': 'dashboard',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Dashboard',
+      '8': {},
+      '10': 'dashboard'
+    },
     {'1': 'validate_only', '3': 3, '4': 1, '5': 8, '10': 'validateOnly'},
   ],
 };
@@ -50,7 +58,14 @@ final $typed_data.Uint8List listDashboardsRequestDescriptor = $convert.base64Dec
 const ListDashboardsResponse$json = {
   '1': 'ListDashboardsResponse',
   '2': [
-    {'1': 'dashboards', '3': 1, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.Dashboard', '10': 'dashboards'},
+    {
+      '1': 'dashboards',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Dashboard',
+      '10': 'dashboards'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -83,15 +98,24 @@ const DeleteDashboardRequest$json = {
 };
 
 /// Descriptor for `DeleteDashboardRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteDashboardRequestDescriptor = $convert.base64Decode(
-    'ChZEZWxldGVEYXNoYm9hcmRSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbW9uaXRvcm'
-    'luZy5nb29nbGVhcGlzLmNvbS9EYXNoYm9hcmRSBG5hbWU=');
+final $typed_data.Uint8List deleteDashboardRequestDescriptor =
+    $convert.base64Decode(
+        'ChZEZWxldGVEYXNoYm9hcmRSZXF1ZXN0Ej8KBG5hbWUYASABKAlCK+BBAvpBJQojbW9uaXRvcm'
+        'luZy5nb29nbGVhcGlzLmNvbS9EYXNoYm9hcmRSBG5hbWU=');
 
 @$core.Deprecated('Use updateDashboardRequestDescriptor instead')
 const UpdateDashboardRequest$json = {
   '1': 'UpdateDashboardRequest',
   '2': [
-    {'1': 'dashboard', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Dashboard', '8': {}, '10': 'dashboard'},
+    {
+      '1': 'dashboard',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Dashboard',
+      '8': {},
+      '10': 'dashboard'
+    },
     {'1': 'validate_only', '3': 3, '4': 1, '5': 8, '10': 'validateOnly'},
   ],
 };
@@ -101,4 +125,3 @@ final $typed_data.Uint8List updateDashboardRequestDescriptor = $convert.base64De
     'ChZVcGRhdGVEYXNoYm9hcmRSZXF1ZXN0EkwKCWRhc2hib2FyZBgBIAEoCzIpLmdvb2dsZS5tb2'
     '5pdG9yaW5nLmRhc2hib2FyZC52MS5EYXNoYm9hcmRCA+BBAlIJZGFzaGJvYXJkEiMKDXZhbGlk'
     'YXRlX29ubHkYAyABKAhSDHZhbGlkYXRlT25seQ==');
-

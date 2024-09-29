@@ -22,7 +22,8 @@ import 'surface_capabilities.pb.dart' as $275;
 
 /// Represents structured responses to send to the user, such as text,
 /// speech, cards, canvas data, suggestion chips, etc.
-class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.GeneratedMessage {
+class StaticPrompt_StaticPromptCandidate_StaticPromptResponse
+    extends $pb.GeneratedMessage {
   factory StaticPrompt_StaticPromptCandidate_StaticPromptResponse({
     $271.StaticSimplePrompt? firstSimple,
     $272.StaticContentPrompt? content,
@@ -57,46 +58,80 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
     return $result;
   }
   StaticPrompt_StaticPromptCandidate_StaticPromptResponse._() : super();
-  factory StaticPrompt_StaticPromptCandidate_StaticPromptResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticPrompt_StaticPromptCandidate_StaticPromptResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticPrompt_StaticPromptCandidate_StaticPromptResponse.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticPrompt_StaticPromptCandidate_StaticPromptResponse.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticPrompt.StaticPromptCandidate.StaticPromptResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..aOM<$271.StaticSimplePrompt>(2, _omitFieldNames ? '' : 'firstSimple', subBuilder: $271.StaticSimplePrompt.create)
-    ..aOM<$272.StaticContentPrompt>(3, _omitFieldNames ? '' : 'content', subBuilder: $272.StaticContentPrompt.create)
-    ..aOM<$271.StaticSimplePrompt>(4, _omitFieldNames ? '' : 'lastSimple', subBuilder: $271.StaticSimplePrompt.create)
-    ..pc<$273.Suggestion>(5, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM, subBuilder: $273.Suggestion.create)
-    ..aOM<$263.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'link', subBuilder: $263.StaticLinkPrompt.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'StaticPrompt.StaticPromptCandidate.StaticPromptResponse',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
+    ..aOM<$271.StaticSimplePrompt>(2, _omitFieldNames ? '' : 'firstSimple',
+        subBuilder: $271.StaticSimplePrompt.create)
+    ..aOM<$272.StaticContentPrompt>(3, _omitFieldNames ? '' : 'content',
+        subBuilder: $272.StaticContentPrompt.create)
+    ..aOM<$271.StaticSimplePrompt>(4, _omitFieldNames ? '' : 'lastSimple',
+        subBuilder: $271.StaticSimplePrompt.create)
+    ..pc<$273.Suggestion>(
+        5, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM,
+        subBuilder: $273.Suggestion.create)
+    ..aOM<$263.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'link',
+        subBuilder: $263.StaticLinkPrompt.create)
     ..aOB(7, _omitFieldNames ? '' : 'override')
-    ..aOM<$274.StaticCanvasPrompt>(8, _omitFieldNames ? '' : 'canvas', subBuilder: $274.StaticCanvasPrompt.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$274.StaticCanvasPrompt>(8, _omitFieldNames ? '' : 'canvas',
+        subBuilder: $274.StaticCanvasPrompt.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticPrompt_StaticPromptCandidate_StaticPromptResponse clone() => StaticPrompt_StaticPromptCandidate_StaticPromptResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticPrompt_StaticPromptCandidate_StaticPromptResponse copyWith(void Function(StaticPrompt_StaticPromptCandidate_StaticPromptResponse) updates) => super.copyWith((message) => updates(message as StaticPrompt_StaticPromptCandidate_StaticPromptResponse)) as StaticPrompt_StaticPromptCandidate_StaticPromptResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticPrompt_StaticPromptCandidate_StaticPromptResponse clone() =>
+      StaticPrompt_StaticPromptCandidate_StaticPromptResponse()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticPrompt_StaticPromptCandidate_StaticPromptResponse copyWith(
+          void Function(StaticPrompt_StaticPromptCandidate_StaticPromptResponse)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as StaticPrompt_StaticPromptCandidate_StaticPromptResponse))
+          as StaticPrompt_StaticPromptCandidate_StaticPromptResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StaticPrompt_StaticPromptCandidate_StaticPromptResponse create() => StaticPrompt_StaticPromptCandidate_StaticPromptResponse._();
-  StaticPrompt_StaticPromptCandidate_StaticPromptResponse createEmptyInstance() => create();
-  static $pb.PbList<StaticPrompt_StaticPromptCandidate_StaticPromptResponse> createRepeated() => $pb.PbList<StaticPrompt_StaticPromptCandidate_StaticPromptResponse>();
+  static StaticPrompt_StaticPromptCandidate_StaticPromptResponse create() =>
+      StaticPrompt_StaticPromptCandidate_StaticPromptResponse._();
+  StaticPrompt_StaticPromptCandidate_StaticPromptResponse
+      createEmptyInstance() => create();
+  static $pb.PbList<StaticPrompt_StaticPromptCandidate_StaticPromptResponse>
+      createRepeated() =>
+          $pb.PbList<StaticPrompt_StaticPromptCandidate_StaticPromptResponse>();
   @$core.pragma('dart2js:noInline')
-  static StaticPrompt_StaticPromptCandidate_StaticPromptResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticPrompt_StaticPromptCandidate_StaticPromptResponse>(create);
-  static StaticPrompt_StaticPromptCandidate_StaticPromptResponse? _defaultInstance;
+  static StaticPrompt_StaticPromptCandidate_StaticPromptResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StaticPrompt_StaticPromptCandidate_StaticPromptResponse>(create);
+  static StaticPrompt_StaticPromptCandidate_StaticPromptResponse?
+      _defaultInstance;
 
   /// Optional. The first voice and text-only response.
   @$pb.TagNumber(2)
   $271.StaticSimplePrompt get firstSimple => $_getN(0);
   @$pb.TagNumber(2)
-  set firstSimple($271.StaticSimplePrompt v) { setField(2, v); }
+  set firstSimple($271.StaticSimplePrompt v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFirstSimple() => $_has(0);
   @$pb.TagNumber(2)
@@ -108,7 +143,10 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
   @$pb.TagNumber(3)
   $272.StaticContentPrompt get content => $_getN(1);
   @$pb.TagNumber(3)
-  set content($272.StaticContentPrompt v) { setField(3, v); }
+  set content($272.StaticContentPrompt v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(3)
@@ -120,7 +158,10 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
   @$pb.TagNumber(4)
   $271.StaticSimplePrompt get lastSimple => $_getN(2);
   @$pb.TagNumber(4)
-  set lastSimple($271.StaticSimplePrompt v) { setField(4, v); }
+  set lastSimple($271.StaticSimplePrompt v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLastSimple() => $_has(2);
   @$pb.TagNumber(4)
@@ -142,7 +183,10 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
   @$pb.TagNumber(6)
   $263.StaticLinkPrompt get link => $_getN(4);
   @$pb.TagNumber(6)
-  set link($263.StaticLinkPrompt v) { setField(6, v); }
+  set link($263.StaticLinkPrompt v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasLink() => $_has(4);
   @$pb.TagNumber(6)
@@ -163,7 +207,10 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
   @$pb.TagNumber(7)
   $core.bool get override => $_getBF(5);
   @$pb.TagNumber(7)
-  set override($core.bool v) { $_setBool(5, v); }
+  set override($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasOverride() => $_has(5);
   @$pb.TagNumber(7)
@@ -173,7 +220,10 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
   @$pb.TagNumber(8)
   $274.StaticCanvasPrompt get canvas => $_getN(6);
   @$pb.TagNumber(8)
-  set canvas($274.StaticCanvasPrompt v) { setField(8, v); }
+  set canvas($274.StaticCanvasPrompt v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasCanvas() => $_has(6);
   @$pb.TagNumber(8)
@@ -198,34 +248,53 @@ class StaticPrompt_StaticPromptCandidate extends $pb.GeneratedMessage {
     return $result;
   }
   StaticPrompt_StaticPromptCandidate._() : super();
-  factory StaticPrompt_StaticPromptCandidate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticPrompt_StaticPromptCandidate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticPrompt_StaticPromptCandidate.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticPrompt_StaticPromptCandidate.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticPrompt.StaticPromptCandidate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..aOM<StaticPrompt_Selector>(1, _omitFieldNames ? '' : 'selector', subBuilder: StaticPrompt_Selector.create)
-    ..aOM<StaticPrompt_StaticPromptCandidate_StaticPromptResponse>(2, _omitFieldNames ? '' : 'promptResponse', subBuilder: StaticPrompt_StaticPromptCandidate_StaticPromptResponse.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticPrompt.StaticPromptCandidate',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
+    ..aOM<StaticPrompt_Selector>(1, _omitFieldNames ? '' : 'selector',
+        subBuilder: StaticPrompt_Selector.create)
+    ..aOM<StaticPrompt_StaticPromptCandidate_StaticPromptResponse>(
+        2, _omitFieldNames ? '' : 'promptResponse',
+        subBuilder:
+            StaticPrompt_StaticPromptCandidate_StaticPromptResponse.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticPrompt_StaticPromptCandidate clone() => StaticPrompt_StaticPromptCandidate()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticPrompt_StaticPromptCandidate copyWith(void Function(StaticPrompt_StaticPromptCandidate) updates) => super.copyWith((message) => updates(message as StaticPrompt_StaticPromptCandidate)) as StaticPrompt_StaticPromptCandidate;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticPrompt_StaticPromptCandidate clone() =>
+      StaticPrompt_StaticPromptCandidate()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticPrompt_StaticPromptCandidate copyWith(
+          void Function(StaticPrompt_StaticPromptCandidate) updates) =>
+      super.copyWith((message) =>
+              updates(message as StaticPrompt_StaticPromptCandidate))
+          as StaticPrompt_StaticPromptCandidate;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StaticPrompt_StaticPromptCandidate create() => StaticPrompt_StaticPromptCandidate._();
+  static StaticPrompt_StaticPromptCandidate create() =>
+      StaticPrompt_StaticPromptCandidate._();
   StaticPrompt_StaticPromptCandidate createEmptyInstance() => create();
-  static $pb.PbList<StaticPrompt_StaticPromptCandidate> createRepeated() => $pb.PbList<StaticPrompt_StaticPromptCandidate>();
+  static $pb.PbList<StaticPrompt_StaticPromptCandidate> createRepeated() =>
+      $pb.PbList<StaticPrompt_StaticPromptCandidate>();
   @$core.pragma('dart2js:noInline')
-  static StaticPrompt_StaticPromptCandidate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticPrompt_StaticPromptCandidate>(create);
+  static StaticPrompt_StaticPromptCandidate getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticPrompt_StaticPromptCandidate>(
+          create);
   static StaticPrompt_StaticPromptCandidate? _defaultInstance;
 
   /// Optional. The criteria for whether this prompt matches a request. If the selector
@@ -233,7 +302,10 @@ class StaticPrompt_StaticPromptCandidate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   StaticPrompt_Selector get selector => $_getN(0);
   @$pb.TagNumber(1)
-  set selector(StaticPrompt_Selector v) { setField(1, v); }
+  set selector(StaticPrompt_Selector v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -243,15 +315,21 @@ class StaticPrompt_StaticPromptCandidate extends $pb.GeneratedMessage {
 
   /// The prompt response associated with the selector.
   @$pb.TagNumber(2)
-  StaticPrompt_StaticPromptCandidate_StaticPromptResponse get promptResponse => $_getN(1);
+  StaticPrompt_StaticPromptCandidate_StaticPromptResponse get promptResponse =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set promptResponse(StaticPrompt_StaticPromptCandidate_StaticPromptResponse v) { setField(2, v); }
+  set promptResponse(
+      StaticPrompt_StaticPromptCandidate_StaticPromptResponse v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPromptResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearPromptResponse() => clearField(2);
   @$pb.TagNumber(2)
-  StaticPrompt_StaticPromptCandidate_StaticPromptResponse ensurePromptResponse() => $_ensure(1);
+  StaticPrompt_StaticPromptCandidate_StaticPromptResponse
+      ensurePromptResponse() => $_ensure(1);
 }
 
 /// Defines the criteria for whether a prompt matches a request.
@@ -266,40 +344,57 @@ class StaticPrompt_Selector extends $pb.GeneratedMessage {
     return $result;
   }
   StaticPrompt_Selector._() : super();
-  factory StaticPrompt_Selector.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticPrompt_Selector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticPrompt_Selector.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticPrompt_Selector.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticPrompt.Selector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..aOM<$275.SurfaceCapabilities>(1, _omitFieldNames ? '' : 'surfaceCapabilities', subBuilder: $275.SurfaceCapabilities.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticPrompt.Selector',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
+    ..aOM<$275.SurfaceCapabilities>(
+        1, _omitFieldNames ? '' : 'surfaceCapabilities',
+        subBuilder: $275.SurfaceCapabilities.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StaticPrompt_Selector clone() => StaticPrompt_Selector()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticPrompt_Selector copyWith(void Function(StaticPrompt_Selector) updates) => super.copyWith((message) => updates(message as StaticPrompt_Selector)) as StaticPrompt_Selector;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StaticPrompt_Selector clone() =>
+      StaticPrompt_Selector()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticPrompt_Selector copyWith(
+          void Function(StaticPrompt_Selector) updates) =>
+      super.copyWith((message) => updates(message as StaticPrompt_Selector))
+          as StaticPrompt_Selector;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticPrompt_Selector create() => StaticPrompt_Selector._();
   StaticPrompt_Selector createEmptyInstance() => create();
-  static $pb.PbList<StaticPrompt_Selector> createRepeated() => $pb.PbList<StaticPrompt_Selector>();
+  static $pb.PbList<StaticPrompt_Selector> createRepeated() =>
+      $pb.PbList<StaticPrompt_Selector>();
   @$core.pragma('dart2js:noInline')
-  static StaticPrompt_Selector getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticPrompt_Selector>(create);
+  static StaticPrompt_Selector getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticPrompt_Selector>(create);
   static StaticPrompt_Selector? _defaultInstance;
 
   /// The set of required surface capabilities.
   @$pb.TagNumber(1)
   $275.SurfaceCapabilities get surfaceCapabilities => $_getN(0);
   @$pb.TagNumber(1)
-  set surfaceCapabilities($275.SurfaceCapabilities v) { setField(1, v); }
+  set surfaceCapabilities($275.SurfaceCapabilities v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSurfaceCapabilities() => $_has(0);
   @$pb.TagNumber(1)
@@ -322,33 +417,45 @@ class StaticPrompt extends $pb.GeneratedMessage {
     return $result;
   }
   StaticPrompt._() : super();
-  factory StaticPrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticPrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticPrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticPrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticPrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..pc<StaticPrompt_StaticPromptCandidate>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: StaticPrompt_StaticPromptCandidate.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticPrompt',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
+    ..pc<StaticPrompt_StaticPromptCandidate>(
+        1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM,
+        subBuilder: StaticPrompt_StaticPromptCandidate.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StaticPrompt clone() => StaticPrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticPrompt copyWith(void Function(StaticPrompt) updates) => super.copyWith((message) => updates(message as StaticPrompt)) as StaticPrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticPrompt copyWith(void Function(StaticPrompt) updates) =>
+      super.copyWith((message) => updates(message as StaticPrompt))
+          as StaticPrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticPrompt create() => StaticPrompt._();
   StaticPrompt createEmptyInstance() => create();
-  static $pb.PbList<StaticPrompt> createRepeated() => $pb.PbList<StaticPrompt>();
+  static $pb.PbList<StaticPrompt> createRepeated() =>
+      $pb.PbList<StaticPrompt>();
   @$core.pragma('dart2js:noInline')
-  static StaticPrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticPrompt>(create);
+  static StaticPrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticPrompt>(create);
   static StaticPrompt? _defaultInstance;
 
   /// The list of candidate prompts to be sent to the client. Each prompt has a
@@ -358,6 +465,6 @@ class StaticPrompt extends $pb.GeneratedMessage {
   $core.List<StaticPrompt_StaticPromptCandidate> get candidates => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

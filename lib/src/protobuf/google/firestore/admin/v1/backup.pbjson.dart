@@ -20,10 +20,42 @@ const Backup$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'database', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'database'},
     {'1': 'database_uid', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'databaseUid'},
-    {'1': 'snapshot_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'snapshotTime'},
-    {'1': 'expire_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'expireTime'},
-    {'1': 'stats', '3': 6, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Backup.Stats', '8': {}, '10': 'stats'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.firestore.admin.v1.Backup.State', '8': {}, '10': 'state'},
+    {
+      '1': 'snapshot_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'snapshotTime'
+    },
+    {
+      '1': 'expire_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
+    {
+      '1': 'stats',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firestore.admin.v1.Backup.Stats',
+      '8': {},
+      '10': 'stats'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.firestore.admin.v1.Backup.State',
+      '8': {},
+      '10': 'state'
+    },
   ],
   '3': [Backup_Stats$json],
   '4': [Backup_State$json],
@@ -35,7 +67,14 @@ const Backup_Stats$json = {
   '1': 'Stats',
   '2': [
     {'1': 'size_bytes', '3': 1, '4': 1, '5': 3, '8': {}, '10': 'sizeBytes'},
-    {'1': 'document_count', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'documentCount'},
+    {
+      '1': 'document_count',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'documentCount'
+    },
     {'1': 'index_count', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'indexCount'},
   ],
 };
@@ -66,4 +105,3 @@ final $typed_data.Uint8List backupDescriptor = $convert.base64Decode(
     'EVNUQVRFX1VOU1BFQ0lGSUVEEAASDAoIQ1JFQVRJTkcQARIJCgVSRUFEWRACEhEKDU5PVF9BVk'
     'FJTEFCTEUQAzpe6kFbCh9maXJlc3RvcmUuZ29vZ2xlYXBpcy5jb20vQmFja3VwEjhwcm9qZWN0'
     'cy97cHJvamVjdH0vbG9jYXRpb25zL3tsb2NhdGlvbn0vYmFja3Vwcy97YmFja3VwfQ==');
-

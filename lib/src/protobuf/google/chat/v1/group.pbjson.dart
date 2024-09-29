@@ -22,6 +22,5 @@ const Group$json = {
 };
 
 /// Descriptor for `Group`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List groupDescriptor = $convert.base64Decode(
-    'CgVHcm91cBISCgRuYW1lGAEgASgJUgRuYW1l');
-
+final $typed_data.Uint8List groupDescriptor =
+    $convert.base64Decode('CgVHcm91cBISCgRuYW1lGAEgASgJUgRuYW1l');

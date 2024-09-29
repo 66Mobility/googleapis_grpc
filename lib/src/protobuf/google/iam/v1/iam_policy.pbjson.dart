@@ -18,8 +18,23 @@ const SetIamPolicyRequest$json = {
   '1': 'SetIamPolicyRequest',
   '2': [
     {'1': 'resource', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'resource'},
-    {'1': 'policy', '3': 2, '4': 1, '5': 11, '6': '.google.iam.v1.Policy', '8': {}, '10': 'policy'},
-    {'1': 'update_mask', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'policy',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1.Policy',
+      '8': {},
+      '10': 'policy'
+    },
+    {
+      '1': 'update_mask',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -35,7 +50,14 @@ const GetIamPolicyRequest$json = {
   '1': 'GetIamPolicyRequest',
   '2': [
     {'1': 'resource', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'resource'},
-    {'1': 'options', '3': 2, '4': 1, '5': 11, '6': '.google.iam.v1.GetPolicyOptions', '10': 'options'},
+    {
+      '1': 'options',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.iam.v1.GetPolicyOptions',
+      '10': 'options'
+    },
   ],
 };
 
@@ -55,9 +77,10 @@ const TestIamPermissionsRequest$json = {
 };
 
 /// Descriptor for `TestIamPermissionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List testIamPermissionsRequestDescriptor = $convert.base64Decode(
-    'ChlUZXN0SWFtUGVybWlzc2lvbnNSZXF1ZXN0EiUKCHJlc291cmNlGAEgASgJQgngQQL6QQMKAS'
-    'pSCHJlc291cmNlEiUKC3Blcm1pc3Npb25zGAIgAygJQgPgQQJSC3Blcm1pc3Npb25z');
+final $typed_data.Uint8List testIamPermissionsRequestDescriptor =
+    $convert.base64Decode(
+        'ChlUZXN0SWFtUGVybWlzc2lvbnNSZXF1ZXN0EiUKCHJlc291cmNlGAEgASgJQgngQQL6QQMKAS'
+        'pSCHJlc291cmNlEiUKC3Blcm1pc3Npb25zGAIgAygJQgPgQQJSC3Blcm1pc3Npb25z');
 
 @$core.Deprecated('Use testIamPermissionsResponseDescriptor instead')
 const TestIamPermissionsResponse$json = {
@@ -68,7 +91,7 @@ const TestIamPermissionsResponse$json = {
 };
 
 /// Descriptor for `TestIamPermissionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List testIamPermissionsResponseDescriptor = $convert.base64Decode(
-    'ChpUZXN0SWFtUGVybWlzc2lvbnNSZXNwb25zZRIgCgtwZXJtaXNzaW9ucxgBIAMoCVILcGVybW'
-    'lzc2lvbnM=');
-
+final $typed_data.Uint8List testIamPermissionsResponseDescriptor =
+    $convert.base64Decode(
+        'ChpUZXN0SWFtUGVybWlzc2lvbnNSZXNwb25zZRIgCgtwZXJtaXNzaW9ucxgBIAMoCVILcGVybW'
+        'lzc2lvbnM=');

@@ -17,10 +17,31 @@ import 'dart:typed_data' as $typed_data;
 const ValidateAddressRequest$json = {
   '1': 'ValidateAddressRequest',
   '2': [
-    {'1': 'address', '3': 1, '4': 1, '5': 11, '6': '.google.type.PostalAddress', '8': {}, '10': 'address'},
-    {'1': 'previous_response_id', '3': 2, '4': 1, '5': 9, '10': 'previousResponseId'},
+    {
+      '1': 'address',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.PostalAddress',
+      '8': {},
+      '10': 'address'
+    },
+    {
+      '1': 'previous_response_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'previousResponseId'
+    },
     {'1': 'enable_usps_cass', '3': 3, '4': 1, '5': 8, '10': 'enableUspsCass'},
-    {'1': 'session_token', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'sessionToken'},
+    {
+      '1': 'session_token',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'sessionToken'
+    },
   ],
 };
 
@@ -35,7 +56,14 @@ final $typed_data.Uint8List validateAddressRequestDescriptor = $convert.base64De
 const ValidateAddressResponse$json = {
   '1': 'ValidateAddressResponse',
   '2': [
-    {'1': 'result', '3': 1, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.ValidationResult', '10': 'result'},
+    {
+      '1': 'result',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.ValidationResult',
+      '10': 'result'
+    },
     {'1': 'response_id', '3': 2, '4': 1, '5': 9, '10': 'responseId'},
   ],
 };
@@ -50,7 +78,16 @@ final $typed_data.Uint8List validateAddressResponseDescriptor = $convert.base64D
 const ProvideValidationFeedbackRequest$json = {
   '1': 'ProvideValidationFeedbackRequest',
   '2': [
-    {'1': 'conclusion', '3': 1, '4': 1, '5': 14, '6': '.google.maps.addressvalidation.v1.ProvideValidationFeedbackRequest.ValidationConclusion', '8': {}, '10': 'conclusion'},
+    {
+      '1': 'conclusion',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.maps.addressvalidation.v1.ProvideValidationFeedbackRequest.ValidationConclusion',
+      '8': {},
+      '10': 'conclusion'
+    },
     {'1': 'response_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'responseId'},
   ],
   '4': [ProvideValidationFeedbackRequest_ValidationConclusion$json],
@@ -84,18 +121,53 @@ const ProvideValidationFeedbackResponse$json = {
 };
 
 /// Descriptor for `ProvideValidationFeedbackResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List provideValidationFeedbackResponseDescriptor = $convert.base64Decode(
-    'CiFQcm92aWRlVmFsaWRhdGlvbkZlZWRiYWNrUmVzcG9uc2U=');
+final $typed_data.Uint8List provideValidationFeedbackResponseDescriptor =
+    $convert.base64Decode('CiFQcm92aWRlVmFsaWRhdGlvbkZlZWRiYWNrUmVzcG9uc2U=');
 
 @$core.Deprecated('Use validationResultDescriptor instead')
 const ValidationResult$json = {
   '1': 'ValidationResult',
   '2': [
-    {'1': 'verdict', '3': 1, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.Verdict', '10': 'verdict'},
-    {'1': 'address', '3': 2, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.Address', '10': 'address'},
-    {'1': 'geocode', '3': 3, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.Geocode', '10': 'geocode'},
-    {'1': 'metadata', '3': 4, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.AddressMetadata', '10': 'metadata'},
-    {'1': 'usps_data', '3': 5, '4': 1, '5': 11, '6': '.google.maps.addressvalidation.v1.UspsData', '10': 'uspsData'},
+    {
+      '1': 'verdict',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.Verdict',
+      '10': 'verdict'
+    },
+    {
+      '1': 'address',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.Address',
+      '10': 'address'
+    },
+    {
+      '1': 'geocode',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.Geocode',
+      '10': 'geocode'
+    },
+    {
+      '1': 'metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.AddressMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'usps_data',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.addressvalidation.v1.UspsData',
+      '10': 'uspsData'
+    },
   ],
 };
 
@@ -113,13 +185,52 @@ final $typed_data.Uint8List validationResultDescriptor = $convert.base64Decode(
 const Verdict$json = {
   '1': 'Verdict',
   '2': [
-    {'1': 'input_granularity', '3': 1, '4': 1, '5': 14, '6': '.google.maps.addressvalidation.v1.Verdict.Granularity', '10': 'inputGranularity'},
-    {'1': 'validation_granularity', '3': 2, '4': 1, '5': 14, '6': '.google.maps.addressvalidation.v1.Verdict.Granularity', '10': 'validationGranularity'},
-    {'1': 'geocode_granularity', '3': 3, '4': 1, '5': 14, '6': '.google.maps.addressvalidation.v1.Verdict.Granularity', '10': 'geocodeGranularity'},
+    {
+      '1': 'input_granularity',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.addressvalidation.v1.Verdict.Granularity',
+      '10': 'inputGranularity'
+    },
+    {
+      '1': 'validation_granularity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.addressvalidation.v1.Verdict.Granularity',
+      '10': 'validationGranularity'
+    },
+    {
+      '1': 'geocode_granularity',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.addressvalidation.v1.Verdict.Granularity',
+      '10': 'geocodeGranularity'
+    },
     {'1': 'address_complete', '3': 4, '4': 1, '5': 8, '10': 'addressComplete'},
-    {'1': 'has_unconfirmed_components', '3': 5, '4': 1, '5': 8, '10': 'hasUnconfirmedComponents'},
-    {'1': 'has_inferred_components', '3': 6, '4': 1, '5': 8, '10': 'hasInferredComponents'},
-    {'1': 'has_replaced_components', '3': 7, '4': 1, '5': 8, '10': 'hasReplacedComponents'},
+    {
+      '1': 'has_unconfirmed_components',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'hasUnconfirmedComponents'
+    },
+    {
+      '1': 'has_inferred_components',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '10': 'hasInferredComponents'
+    },
+    {
+      '1': 'has_replaced_components',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'hasReplacedComponents'
+    },
   ],
   '4': [Verdict_Granularity$json],
 };
@@ -153,4 +264,3 @@ final $typed_data.Uint8List verdictDescriptor = $convert.base64Decode(
     'eRIbChdHUkFOVUxBUklUWV9VTlNQRUNJRklFRBAAEg8KC1NVQl9QUkVNSVNFEAESCwoHUFJFTU'
     'lTRRACEhUKEVBSRU1JU0VfUFJPWElNSVRZEAMSCQoFQkxPQ0sQBBIJCgVST1VURRAFEgkKBU9U'
     'SEVSEAY=');
-

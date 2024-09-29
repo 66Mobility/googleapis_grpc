@@ -28,4 +28,3 @@ const TrafficModel$json = {
 final $typed_data.Uint8List trafficModelDescriptor = $convert.base64Decode(
     'CgxUcmFmZmljTW9kZWwSHQoZVFJBRkZJQ19NT0RFTF9VTlNQRUNJRklFRBAAEg4KCkJFU1RfR1'
     'VFU1MQARIPCgtQRVNTSU1JU1RJQxACEg4KCk9QVElNSVNUSUMQAw==');
-

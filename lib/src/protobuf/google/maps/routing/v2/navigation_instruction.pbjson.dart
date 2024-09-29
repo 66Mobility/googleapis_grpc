@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const NavigationInstruction$json = {
   '1': 'NavigationInstruction',
   '2': [
-    {'1': 'maneuver', '3': 1, '4': 1, '5': 14, '6': '.google.maps.routing.v2.Maneuver', '10': 'maneuver'},
+    {
+      '1': 'maneuver',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.maps.routing.v2.Maneuver',
+      '10': 'maneuver'
+    },
     {'1': 'instructions', '3': 2, '4': 1, '5': 9, '10': 'instructions'},
   ],
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List navigationInstructionDescriptor = $convert.base64Dec
     'ChVOYXZpZ2F0aW9uSW5zdHJ1Y3Rpb24SPAoIbWFuZXV2ZXIYASABKA4yIC5nb29nbGUubWFwcy'
     '5yb3V0aW5nLnYyLk1hbmV1dmVyUghtYW5ldXZlchIiCgxpbnN0cnVjdGlvbnMYAiABKAlSDGlu'
     'c3RydWN0aW9ucw==');
-

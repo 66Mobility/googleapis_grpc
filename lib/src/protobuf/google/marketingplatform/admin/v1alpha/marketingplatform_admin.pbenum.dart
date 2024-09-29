@@ -15,21 +15,28 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Various levels of service for Google Analytics.
 class AnalyticsServiceLevel extends $pb.ProtobufEnum {
-  static const AnalyticsServiceLevel ANALYTICS_SERVICE_LEVEL_UNSPECIFIED = AnalyticsServiceLevel._(0, _omitEnumNames ? '' : 'ANALYTICS_SERVICE_LEVEL_UNSPECIFIED');
-  static const AnalyticsServiceLevel ANALYTICS_SERVICE_LEVEL_STANDARD = AnalyticsServiceLevel._(1, _omitEnumNames ? '' : 'ANALYTICS_SERVICE_LEVEL_STANDARD');
-  static const AnalyticsServiceLevel ANALYTICS_SERVICE_LEVEL_360 = AnalyticsServiceLevel._(2, _omitEnumNames ? '' : 'ANALYTICS_SERVICE_LEVEL_360');
+  static const AnalyticsServiceLevel ANALYTICS_SERVICE_LEVEL_UNSPECIFIED =
+      AnalyticsServiceLevel._(
+          0, _omitEnumNames ? '' : 'ANALYTICS_SERVICE_LEVEL_UNSPECIFIED');
+  static const AnalyticsServiceLevel ANALYTICS_SERVICE_LEVEL_STANDARD =
+      AnalyticsServiceLevel._(
+          1, _omitEnumNames ? '' : 'ANALYTICS_SERVICE_LEVEL_STANDARD');
+  static const AnalyticsServiceLevel ANALYTICS_SERVICE_LEVEL_360 =
+      AnalyticsServiceLevel._(
+          2, _omitEnumNames ? '' : 'ANALYTICS_SERVICE_LEVEL_360');
 
-  static const $core.List<AnalyticsServiceLevel> values = <AnalyticsServiceLevel> [
+  static const $core.List<AnalyticsServiceLevel> values =
+      <AnalyticsServiceLevel>[
     ANALYTICS_SERVICE_LEVEL_UNSPECIFIED,
     ANALYTICS_SERVICE_LEVEL_STANDARD,
     ANALYTICS_SERVICE_LEVEL_360,
   ];
 
-  static final $core.Map<$core.int, AnalyticsServiceLevel> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, AnalyticsServiceLevel> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static AnalyticsServiceLevel? valueOf($core.int value) => _byValue[value];
 
   const AnalyticsServiceLevel._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

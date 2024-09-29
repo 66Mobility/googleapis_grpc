@@ -17,8 +17,24 @@ import 'dart:typed_data' as $typed_data;
 const StaticCollectionBrowsePrompt$json = {
   '1': 'StaticCollectionBrowsePrompt',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticCollectionBrowsePrompt.CollectionBrowseItem', '10': 'items'},
-    {'1': 'image_fill', '3': 2, '4': 1, '5': 14, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt.ImageFill', '10': 'imageFill'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticCollectionBrowsePrompt.CollectionBrowseItem',
+      '10': 'items'
+    },
+    {
+      '1': 'image_fill',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt.ImageFill',
+      '10': 'imageFill'
+    },
   ],
   '3': [StaticCollectionBrowsePrompt_CollectionBrowseItem$json],
 };
@@ -30,8 +46,23 @@ const StaticCollectionBrowsePrompt_CollectionBrowseItem$json = {
     {'1': 'title', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'title'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
     {'1': 'footer', '3': 3, '4': 1, '5': 9, '10': 'footer'},
-    {'1': 'image', '3': 4, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt', '10': 'image'},
-    {'1': 'open_uri_action', '3': 5, '4': 1, '5': 11, '6': '.google.actions.sdk.v2.interactionmodel.prompt.OpenUrl', '8': {}, '10': 'openUriAction'},
+    {
+      '1': 'image',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.StaticImagePrompt',
+      '10': 'image'
+    },
+    {
+      '1': 'open_uri_action',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.actions.sdk.v2.interactionmodel.prompt.OpenUrl',
+      '8': {},
+      '10': 'openUriAction'
+    },
   ],
 };
 
@@ -48,4 +79,3 @@ final $typed_data.Uint8List staticCollectionBrowsePromptDescriptor = $convert.ba
     'b21wdFIFaW1hZ2USYwoPb3Blbl91cmlfYWN0aW9uGAUgASgLMjYuZ29vZ2xlLmFjdGlvbnMuc2'
     'RrLnYyLmludGVyYWN0aW9ubW9kZWwucHJvbXB0Lk9wZW5VcmxCA+BBAlINb3BlblVyaUFjdGlv'
     'bg==');
-

@@ -17,12 +17,7 @@ import 'free_text_type.pb.dart' as $285;
 import 'regular_expression_type.pb.dart' as $284;
 import 'synonym_type.pb.dart' as $283;
 
-enum Type_SubType {
-  synonym, 
-  regularExpression, 
-  freeText, 
-  notSet
-}
+enum Type_SubType { synonym, regularExpression, freeText, notSet }
 
 /// Declaration of a custom type, as opposed to built-in types. Types can be
 /// assigned to slots in a scene or parameters of an intent's training phrases.
@@ -51,34 +46,45 @@ class Type extends $pb.GeneratedMessage {
     return $result;
   }
   Type._() : super();
-  factory Type.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Type.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Type.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Type.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Type_SubType> _Type_SubTypeByTag = {
-    1 : Type_SubType.synonym,
-    2 : Type_SubType.regularExpression,
-    3 : Type_SubType.freeText,
-    0 : Type_SubType.notSet
+    1: Type_SubType.synonym,
+    2: Type_SubType.regularExpression,
+    3: Type_SubType.freeText,
+    0: Type_SubType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Type', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Type',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.type'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$283.SynonymType>(1, _omitFieldNames ? '' : 'synonym', subBuilder: $283.SynonymType.create)
-    ..aOM<$284.RegularExpressionType>(2, _omitFieldNames ? '' : 'regularExpression', subBuilder: $284.RegularExpressionType.create)
-    ..aOM<$285.FreeTextType>(3, _omitFieldNames ? '' : 'freeText', subBuilder: $285.FreeTextType.create)
+    ..aOM<$283.SynonymType>(1, _omitFieldNames ? '' : 'synonym',
+        subBuilder: $283.SynonymType.create)
+    ..aOM<$284.RegularExpressionType>(
+        2, _omitFieldNames ? '' : 'regularExpression',
+        subBuilder: $284.RegularExpressionType.create)
+    ..aOM<$285.FreeTextType>(3, _omitFieldNames ? '' : 'freeText',
+        subBuilder: $285.FreeTextType.create)
     ..pPS(4, _omitFieldNames ? '' : 'exclusions')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Type clone() => Type()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Type copyWith(void Function(Type) updates) => super.copyWith((message) => updates(message as Type)) as Type;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Type copyWith(void Function(Type) updates) =>
+      super.copyWith((message) => updates(message as Type)) as Type;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -87,7 +93,8 @@ class Type extends $pb.GeneratedMessage {
   Type createEmptyInstance() => create();
   static $pb.PbList<Type> createRepeated() => $pb.PbList<Type>();
   @$core.pragma('dart2js:noInline')
-  static Type getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Type>(create);
+  static Type getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Type>(create);
   static Type? _defaultInstance;
 
   Type_SubType whichSubType() => _Type_SubTypeByTag[$_whichOneof(0)]!;
@@ -97,7 +104,10 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $283.SynonymType get synonym => $_getN(0);
   @$pb.TagNumber(1)
-  set synonym($283.SynonymType v) { setField(1, v); }
+  set synonym($283.SynonymType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSynonym() => $_has(0);
   @$pb.TagNumber(1)
@@ -109,7 +119,10 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $284.RegularExpressionType get regularExpression => $_getN(1);
   @$pb.TagNumber(2)
-  set regularExpression($284.RegularExpressionType v) { setField(2, v); }
+  set regularExpression($284.RegularExpressionType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegularExpression() => $_has(1);
   @$pb.TagNumber(2)
@@ -121,7 +134,10 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $285.FreeTextType get freeText => $_getN(2);
   @$pb.TagNumber(3)
-  set freeText($285.FreeTextType v) { setField(3, v); }
+  set freeText($285.FreeTextType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFreeText() => $_has(2);
   @$pb.TagNumber(3)
@@ -137,6 +153,6 @@ class Type extends $pb.GeneratedMessage {
   $core.List<$core.String> get exclusions => $_getList(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

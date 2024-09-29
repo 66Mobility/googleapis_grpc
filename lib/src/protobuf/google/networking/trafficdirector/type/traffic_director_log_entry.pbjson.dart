@@ -20,11 +20,30 @@ const TrafficDirectorLogEntry$json = {
     {'1': 'node_id', '3': 1, '4': 1, '5': 9, '10': 'nodeId'},
     {'1': 'node_ip', '3': 2, '4': 1, '5': 9, '10': 'nodeIp'},
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'client_type', '3': 5, '4': 1, '5': 14, '6': '.google.networking.trafficdirector.type.TrafficDirectorLogEntry.ClientType', '10': 'clientType'},
+    {
+      '1': 'client_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.networking.trafficdirector.type.TrafficDirectorLogEntry.ClientType',
+      '10': 'clientType'
+    },
     {'1': 'client_version', '3': 6, '4': 1, '5': 9, '10': 'clientVersion'},
-    {'1': 'transport_api_version', '3': 7, '4': 1, '5': 14, '6': '.google.networking.trafficdirector.type.TrafficDirectorLogEntry.TransportApiVersion', '10': 'transportApiVersion'},
+    {
+      '1': 'transport_api_version',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.networking.trafficdirector.type.TrafficDirectorLogEntry.TransportApiVersion',
+      '10': 'transportApiVersion'
+    },
   ],
-  '4': [TrafficDirectorLogEntry_ClientType$json, TrafficDirectorLogEntry_TransportApiVersion$json],
+  '4': [
+    TrafficDirectorLogEntry_ClientType$json,
+    TrafficDirectorLogEntry_TransportApiVersion$json
+  ],
 };
 
 @$core.Deprecated('Use trafficDirectorLogEntryDescriptor instead')
@@ -69,4 +88,3 @@ final $typed_data.Uint8List trafficDirectorLogEntryDescriptor = $convert.base64D
     'dHUlBDX0dPEAUSDQoJR1JQQ19SVUJZEAYSDAoIR1JQQ19QSFAQBxINCglHUlBDX05PREUQCBIP'
     'CgtHUlBDX0NTSEFSUBAJEgsKB1VOS05PV04QCiJMChNUcmFuc3BvcnRBcGlWZXJzaW9uEiUKIV'
     'RSQU5TUE9SVF9BUElfVkVSU0lPTl9VTlNQRUNJRklFRBAAEgYKAlYyEAESBgoCVjMQAg==');
-

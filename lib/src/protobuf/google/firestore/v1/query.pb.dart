@@ -35,34 +35,48 @@ class StructuredQuery_CollectionSelector extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_CollectionSelector._() : super();
-  factory StructuredQuery_CollectionSelector.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_CollectionSelector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_CollectionSelector.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_CollectionSelector.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.CollectionSelector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.CollectionSelector',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'collectionId')
     ..aOB(3, _omitFieldNames ? '' : 'allDescendants')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_CollectionSelector clone() => StructuredQuery_CollectionSelector()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_CollectionSelector copyWith(void Function(StructuredQuery_CollectionSelector) updates) => super.copyWith((message) => updates(message as StructuredQuery_CollectionSelector)) as StructuredQuery_CollectionSelector;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_CollectionSelector clone() =>
+      StructuredQuery_CollectionSelector()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_CollectionSelector copyWith(
+          void Function(StructuredQuery_CollectionSelector) updates) =>
+      super.copyWith((message) =>
+              updates(message as StructuredQuery_CollectionSelector))
+          as StructuredQuery_CollectionSelector;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_CollectionSelector create() => StructuredQuery_CollectionSelector._();
+  static StructuredQuery_CollectionSelector create() =>
+      StructuredQuery_CollectionSelector._();
   StructuredQuery_CollectionSelector createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_CollectionSelector> createRepeated() => $pb.PbList<StructuredQuery_CollectionSelector>();
+  static $pb.PbList<StructuredQuery_CollectionSelector> createRepeated() =>
+      $pb.PbList<StructuredQuery_CollectionSelector>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_CollectionSelector getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_CollectionSelector>(create);
+  static StructuredQuery_CollectionSelector getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_CollectionSelector>(
+          create);
   static StructuredQuery_CollectionSelector? _defaultInstance;
 
   /// The collection ID.
@@ -70,7 +84,10 @@ class StructuredQuery_CollectionSelector extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get collectionId => $_getSZ(0);
   @$pb.TagNumber(2)
-  set collectionId($core.String v) { $_setString(0, v); }
+  set collectionId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCollectionId() => $_has(0);
   @$pb.TagNumber(2)
@@ -82,7 +99,10 @@ class StructuredQuery_CollectionSelector extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get allDescendants => $_getBF(1);
   @$pb.TagNumber(3)
-  set allDescendants($core.bool v) { $_setBool(1, v); }
+  set allDescendants($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAllDescendants() => $_has(1);
   @$pb.TagNumber(3)
@@ -90,9 +110,9 @@ class StructuredQuery_CollectionSelector extends $pb.GeneratedMessage {
 }
 
 enum StructuredQuery_Filter_FilterType {
-  compositeFilter, 
-  fieldFilter, 
-  unaryFilter, 
+  compositeFilter,
+  fieldFilter,
+  unaryFilter,
   notSet
 }
 
@@ -116,52 +136,72 @@ class StructuredQuery_Filter extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_Filter._() : super();
-  factory StructuredQuery_Filter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_Filter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_Filter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_Filter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, StructuredQuery_Filter_FilterType> _StructuredQuery_Filter_FilterTypeByTag = {
-    1 : StructuredQuery_Filter_FilterType.compositeFilter,
-    2 : StructuredQuery_Filter_FilterType.fieldFilter,
-    3 : StructuredQuery_Filter_FilterType.unaryFilter,
-    0 : StructuredQuery_Filter_FilterType.notSet
+  static const $core.Map<$core.int, StructuredQuery_Filter_FilterType>
+      _StructuredQuery_Filter_FilterTypeByTag = {
+    1: StructuredQuery_Filter_FilterType.compositeFilter,
+    2: StructuredQuery_Filter_FilterType.fieldFilter,
+    3: StructuredQuery_Filter_FilterType.unaryFilter,
+    0: StructuredQuery_Filter_FilterType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.Filter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.Filter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<StructuredQuery_CompositeFilter>(1, _omitFieldNames ? '' : 'compositeFilter', subBuilder: StructuredQuery_CompositeFilter.create)
-    ..aOM<StructuredQuery_FieldFilter>(2, _omitFieldNames ? '' : 'fieldFilter', subBuilder: StructuredQuery_FieldFilter.create)
-    ..aOM<StructuredQuery_UnaryFilter>(3, _omitFieldNames ? '' : 'unaryFilter', subBuilder: StructuredQuery_UnaryFilter.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<StructuredQuery_CompositeFilter>(
+        1, _omitFieldNames ? '' : 'compositeFilter',
+        subBuilder: StructuredQuery_CompositeFilter.create)
+    ..aOM<StructuredQuery_FieldFilter>(2, _omitFieldNames ? '' : 'fieldFilter',
+        subBuilder: StructuredQuery_FieldFilter.create)
+    ..aOM<StructuredQuery_UnaryFilter>(3, _omitFieldNames ? '' : 'unaryFilter',
+        subBuilder: StructuredQuery_UnaryFilter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_Filter clone() => StructuredQuery_Filter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_Filter copyWith(void Function(StructuredQuery_Filter) updates) => super.copyWith((message) => updates(message as StructuredQuery_Filter)) as StructuredQuery_Filter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_Filter clone() =>
+      StructuredQuery_Filter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_Filter copyWith(
+          void Function(StructuredQuery_Filter) updates) =>
+      super.copyWith((message) => updates(message as StructuredQuery_Filter))
+          as StructuredQuery_Filter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StructuredQuery_Filter create() => StructuredQuery_Filter._();
   StructuredQuery_Filter createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_Filter> createRepeated() => $pb.PbList<StructuredQuery_Filter>();
+  static $pb.PbList<StructuredQuery_Filter> createRepeated() =>
+      $pb.PbList<StructuredQuery_Filter>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_Filter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_Filter>(create);
+  static StructuredQuery_Filter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_Filter>(create);
   static StructuredQuery_Filter? _defaultInstance;
 
-  StructuredQuery_Filter_FilterType whichFilterType() => _StructuredQuery_Filter_FilterTypeByTag[$_whichOneof(0)]!;
+  StructuredQuery_Filter_FilterType whichFilterType() =>
+      _StructuredQuery_Filter_FilterTypeByTag[$_whichOneof(0)]!;
   void clearFilterType() => clearField($_whichOneof(0));
 
   /// A composite filter.
   @$pb.TagNumber(1)
   StructuredQuery_CompositeFilter get compositeFilter => $_getN(0);
   @$pb.TagNumber(1)
-  set compositeFilter(StructuredQuery_CompositeFilter v) { setField(1, v); }
+  set compositeFilter(StructuredQuery_CompositeFilter v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCompositeFilter() => $_has(0);
   @$pb.TagNumber(1)
@@ -173,7 +213,10 @@ class StructuredQuery_Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   StructuredQuery_FieldFilter get fieldFilter => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldFilter(StructuredQuery_FieldFilter v) { setField(2, v); }
+  set fieldFilter(StructuredQuery_FieldFilter v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFieldFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -185,7 +228,10 @@ class StructuredQuery_Filter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   StructuredQuery_UnaryFilter get unaryFilter => $_getN(2);
   @$pb.TagNumber(3)
-  set unaryFilter(StructuredQuery_UnaryFilter v) { setField(3, v); }
+  set unaryFilter(StructuredQuery_UnaryFilter v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUnaryFilter() => $_has(2);
   @$pb.TagNumber(3)
@@ -210,41 +256,65 @@ class StructuredQuery_CompositeFilter extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_CompositeFilter._() : super();
-  factory StructuredQuery_CompositeFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_CompositeFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_CompositeFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_CompositeFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.CompositeFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..e<StructuredQuery_CompositeFilter_Operator>(1, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_CompositeFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: StructuredQuery_CompositeFilter_Operator.valueOf, enumValues: StructuredQuery_CompositeFilter_Operator.values)
-    ..pc<StructuredQuery_Filter>(2, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM, subBuilder: StructuredQuery_Filter.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.CompositeFilter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..e<StructuredQuery_CompositeFilter_Operator>(
+        1, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            StructuredQuery_CompositeFilter_Operator.OPERATOR_UNSPECIFIED,
+        valueOf: StructuredQuery_CompositeFilter_Operator.valueOf,
+        enumValues: StructuredQuery_CompositeFilter_Operator.values)
+    ..pc<StructuredQuery_Filter>(
+        2, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM,
+        subBuilder: StructuredQuery_Filter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_CompositeFilter clone() => StructuredQuery_CompositeFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_CompositeFilter copyWith(void Function(StructuredQuery_CompositeFilter) updates) => super.copyWith((message) => updates(message as StructuredQuery_CompositeFilter)) as StructuredQuery_CompositeFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_CompositeFilter clone() =>
+      StructuredQuery_CompositeFilter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_CompositeFilter copyWith(
+          void Function(StructuredQuery_CompositeFilter) updates) =>
+      super.copyWith(
+              (message) => updates(message as StructuredQuery_CompositeFilter))
+          as StructuredQuery_CompositeFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_CompositeFilter create() => StructuredQuery_CompositeFilter._();
+  static StructuredQuery_CompositeFilter create() =>
+      StructuredQuery_CompositeFilter._();
   StructuredQuery_CompositeFilter createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_CompositeFilter> createRepeated() => $pb.PbList<StructuredQuery_CompositeFilter>();
+  static $pb.PbList<StructuredQuery_CompositeFilter> createRepeated() =>
+      $pb.PbList<StructuredQuery_CompositeFilter>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_CompositeFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_CompositeFilter>(create);
+  static StructuredQuery_CompositeFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_CompositeFilter>(
+          create);
   static StructuredQuery_CompositeFilter? _defaultInstance;
 
   /// The operator for combining multiple filters.
   @$pb.TagNumber(1)
   StructuredQuery_CompositeFilter_Operator get op => $_getN(0);
   @$pb.TagNumber(1)
-  set op(StructuredQuery_CompositeFilter_Operator v) { setField(1, v); }
+  set op(StructuredQuery_CompositeFilter_Operator v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOp() => $_has(0);
   @$pb.TagNumber(1)
@@ -279,42 +349,65 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_FieldFilter._() : super();
-  factory StructuredQuery_FieldFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_FieldFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_FieldFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_FieldFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.FieldFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field', subBuilder: StructuredQuery_FieldReference.create)
-    ..e<StructuredQuery_FieldFilter_Operator>(2, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_FieldFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: StructuredQuery_FieldFilter_Operator.valueOf, enumValues: StructuredQuery_FieldFilter_Operator.values)
-    ..aOM<$130.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $130.Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.FieldFilter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field',
+        subBuilder: StructuredQuery_FieldReference.create)
+    ..e<StructuredQuery_FieldFilter_Operator>(
+        2, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            StructuredQuery_FieldFilter_Operator.OPERATOR_UNSPECIFIED,
+        valueOf: StructuredQuery_FieldFilter_Operator.valueOf,
+        enumValues: StructuredQuery_FieldFilter_Operator.values)
+    ..aOM<$130.Value>(3, _omitFieldNames ? '' : 'value',
+        subBuilder: $130.Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_FieldFilter clone() => StructuredQuery_FieldFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_FieldFilter copyWith(void Function(StructuredQuery_FieldFilter) updates) => super.copyWith((message) => updates(message as StructuredQuery_FieldFilter)) as StructuredQuery_FieldFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_FieldFilter clone() =>
+      StructuredQuery_FieldFilter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_FieldFilter copyWith(
+          void Function(StructuredQuery_FieldFilter) updates) =>
+      super.copyWith(
+              (message) => updates(message as StructuredQuery_FieldFilter))
+          as StructuredQuery_FieldFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_FieldFilter create() => StructuredQuery_FieldFilter._();
+  static StructuredQuery_FieldFilter create() =>
+      StructuredQuery_FieldFilter._();
   StructuredQuery_FieldFilter createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_FieldFilter> createRepeated() => $pb.PbList<StructuredQuery_FieldFilter>();
+  static $pb.PbList<StructuredQuery_FieldFilter> createRepeated() =>
+      $pb.PbList<StructuredQuery_FieldFilter>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_FieldFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_FieldFilter>(create);
+  static StructuredQuery_FieldFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_FieldFilter>(create);
   static StructuredQuery_FieldFilter? _defaultInstance;
 
   /// The field to filter by.
   @$pb.TagNumber(1)
   StructuredQuery_FieldReference get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1(StructuredQuery_FieldReference v) { setField(1, v); }
+  set field_1(StructuredQuery_FieldReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
@@ -326,7 +419,10 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   StructuredQuery_FieldFilter_Operator get op => $_getN(1);
   @$pb.TagNumber(2)
-  set op(StructuredQuery_FieldFilter_Operator v) { setField(2, v); }
+  set op(StructuredQuery_FieldFilter_Operator v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOp() => $_has(1);
   @$pb.TagNumber(2)
@@ -336,7 +432,10 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $130.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($130.Value v) { setField(3, v); }
+  set value($130.Value v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -345,10 +444,7 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
   $130.Value ensureValue() => $_ensure(2);
 }
 
-enum StructuredQuery_UnaryFilter_OperandType {
-  field_2, 
-  notSet
-}
+enum StructuredQuery_UnaryFilter_OperandType { field_2, notSet }
 
 /// A filter with a single operand.
 class StructuredQuery_UnaryFilter extends $pb.GeneratedMessage {
@@ -366,49 +462,73 @@ class StructuredQuery_UnaryFilter extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_UnaryFilter._() : super();
-  factory StructuredQuery_UnaryFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_UnaryFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_UnaryFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_UnaryFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, StructuredQuery_UnaryFilter_OperandType> _StructuredQuery_UnaryFilter_OperandTypeByTag = {
-    2 : StructuredQuery_UnaryFilter_OperandType.field_2,
-    0 : StructuredQuery_UnaryFilter_OperandType.notSet
+  static const $core.Map<$core.int, StructuredQuery_UnaryFilter_OperandType>
+      _StructuredQuery_UnaryFilter_OperandTypeByTag = {
+    2: StructuredQuery_UnaryFilter_OperandType.field_2,
+    0: StructuredQuery_UnaryFilter_OperandType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.UnaryFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.UnaryFilter',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2])
-    ..e<StructuredQuery_UnaryFilter_Operator>(1, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_UnaryFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: StructuredQuery_UnaryFilter_Operator.valueOf, enumValues: StructuredQuery_UnaryFilter_Operator.values)
-    ..aOM<StructuredQuery_FieldReference>(2, _omitFieldNames ? '' : 'field', subBuilder: StructuredQuery_FieldReference.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<StructuredQuery_UnaryFilter_Operator>(
+        1, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            StructuredQuery_UnaryFilter_Operator.OPERATOR_UNSPECIFIED,
+        valueOf: StructuredQuery_UnaryFilter_Operator.valueOf,
+        enumValues: StructuredQuery_UnaryFilter_Operator.values)
+    ..aOM<StructuredQuery_FieldReference>(2, _omitFieldNames ? '' : 'field',
+        subBuilder: StructuredQuery_FieldReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_UnaryFilter clone() => StructuredQuery_UnaryFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_UnaryFilter copyWith(void Function(StructuredQuery_UnaryFilter) updates) => super.copyWith((message) => updates(message as StructuredQuery_UnaryFilter)) as StructuredQuery_UnaryFilter;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_UnaryFilter clone() =>
+      StructuredQuery_UnaryFilter()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_UnaryFilter copyWith(
+          void Function(StructuredQuery_UnaryFilter) updates) =>
+      super.copyWith(
+              (message) => updates(message as StructuredQuery_UnaryFilter))
+          as StructuredQuery_UnaryFilter;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_UnaryFilter create() => StructuredQuery_UnaryFilter._();
+  static StructuredQuery_UnaryFilter create() =>
+      StructuredQuery_UnaryFilter._();
   StructuredQuery_UnaryFilter createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_UnaryFilter> createRepeated() => $pb.PbList<StructuredQuery_UnaryFilter>();
+  static $pb.PbList<StructuredQuery_UnaryFilter> createRepeated() =>
+      $pb.PbList<StructuredQuery_UnaryFilter>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_UnaryFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_UnaryFilter>(create);
+  static StructuredQuery_UnaryFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_UnaryFilter>(create);
   static StructuredQuery_UnaryFilter? _defaultInstance;
 
-  StructuredQuery_UnaryFilter_OperandType whichOperandType() => _StructuredQuery_UnaryFilter_OperandTypeByTag[$_whichOneof(0)]!;
+  StructuredQuery_UnaryFilter_OperandType whichOperandType() =>
+      _StructuredQuery_UnaryFilter_OperandTypeByTag[$_whichOneof(0)]!;
   void clearOperandType() => clearField($_whichOneof(0));
 
   /// The unary operator to apply.
   @$pb.TagNumber(1)
   StructuredQuery_UnaryFilter_Operator get op => $_getN(0);
   @$pb.TagNumber(1)
-  set op(StructuredQuery_UnaryFilter_Operator v) { setField(1, v); }
+  set op(StructuredQuery_UnaryFilter_Operator v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOp() => $_has(0);
   @$pb.TagNumber(1)
@@ -418,7 +538,10 @@ class StructuredQuery_UnaryFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   StructuredQuery_FieldReference get field_2 => $_getN(1);
   @$pb.TagNumber(2)
-  set field_2(StructuredQuery_FieldReference v) { setField(2, v); }
+  set field_2(StructuredQuery_FieldReference v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasField_2() => $_has(1);
   @$pb.TagNumber(2)
@@ -443,41 +566,60 @@ class StructuredQuery_Order extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_Order._() : super();
-  factory StructuredQuery_Order.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_Order.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_Order.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_Order.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.Order', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field', subBuilder: StructuredQuery_FieldReference.create)
-    ..e<StructuredQuery_Direction>(2, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_Direction.DIRECTION_UNSPECIFIED, valueOf: StructuredQuery_Direction.valueOf, enumValues: StructuredQuery_Direction.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.Order',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field',
+        subBuilder: StructuredQuery_FieldReference.create)
+    ..e<StructuredQuery_Direction>(
+        2, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE,
+        defaultOrMaker: StructuredQuery_Direction.DIRECTION_UNSPECIFIED,
+        valueOf: StructuredQuery_Direction.valueOf,
+        enumValues: StructuredQuery_Direction.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_Order clone() => StructuredQuery_Order()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_Order copyWith(void Function(StructuredQuery_Order) updates) => super.copyWith((message) => updates(message as StructuredQuery_Order)) as StructuredQuery_Order;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_Order clone() =>
+      StructuredQuery_Order()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_Order copyWith(
+          void Function(StructuredQuery_Order) updates) =>
+      super.copyWith((message) => updates(message as StructuredQuery_Order))
+          as StructuredQuery_Order;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StructuredQuery_Order create() => StructuredQuery_Order._();
   StructuredQuery_Order createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_Order> createRepeated() => $pb.PbList<StructuredQuery_Order>();
+  static $pb.PbList<StructuredQuery_Order> createRepeated() =>
+      $pb.PbList<StructuredQuery_Order>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_Order getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_Order>(create);
+  static StructuredQuery_Order getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_Order>(create);
   static StructuredQuery_Order? _defaultInstance;
 
   /// The field to order by.
   @$pb.TagNumber(1)
   StructuredQuery_FieldReference get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1(StructuredQuery_FieldReference v) { setField(1, v); }
+  set field_1(StructuredQuery_FieldReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
@@ -489,7 +631,10 @@ class StructuredQuery_Order extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   StructuredQuery_Direction get direction => $_getN(1);
   @$pb.TagNumber(2)
-  set direction(StructuredQuery_Direction v) { setField(2, v); }
+  set direction(StructuredQuery_Direction v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDirection() => $_has(1);
   @$pb.TagNumber(2)
@@ -508,33 +653,46 @@ class StructuredQuery_FieldReference extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_FieldReference._() : super();
-  factory StructuredQuery_FieldReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_FieldReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_FieldReference.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_FieldReference.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.FieldReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.FieldReference',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'fieldPath')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_FieldReference clone() => StructuredQuery_FieldReference()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_FieldReference copyWith(void Function(StructuredQuery_FieldReference) updates) => super.copyWith((message) => updates(message as StructuredQuery_FieldReference)) as StructuredQuery_FieldReference;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_FieldReference clone() =>
+      StructuredQuery_FieldReference()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_FieldReference copyWith(
+          void Function(StructuredQuery_FieldReference) updates) =>
+      super.copyWith(
+              (message) => updates(message as StructuredQuery_FieldReference))
+          as StructuredQuery_FieldReference;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_FieldReference create() => StructuredQuery_FieldReference._();
+  static StructuredQuery_FieldReference create() =>
+      StructuredQuery_FieldReference._();
   StructuredQuery_FieldReference createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_FieldReference> createRepeated() => $pb.PbList<StructuredQuery_FieldReference>();
+  static $pb.PbList<StructuredQuery_FieldReference> createRepeated() =>
+      $pb.PbList<StructuredQuery_FieldReference>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_FieldReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_FieldReference>(create);
+  static StructuredQuery_FieldReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_FieldReference>(create);
   static StructuredQuery_FieldReference? _defaultInstance;
 
   ///  A reference to a field in a document.
@@ -547,7 +705,10 @@ class StructuredQuery_FieldReference extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get fieldPath => $_getSZ(0);
   @$pb.TagNumber(2)
-  set fieldPath($core.String v) { $_setString(0, v); }
+  set fieldPath($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFieldPath() => $_has(0);
   @$pb.TagNumber(2)
@@ -566,33 +727,47 @@ class StructuredQuery_Projection extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_Projection._() : super();
-  factory StructuredQuery_Projection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_Projection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_Projection.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_Projection.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.Projection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..pc<StructuredQuery_FieldReference>(2, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: StructuredQuery_FieldReference.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.Projection',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..pc<StructuredQuery_FieldReference>(
+        2, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM,
+        subBuilder: StructuredQuery_FieldReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_Projection clone() => StructuredQuery_Projection()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_Projection copyWith(void Function(StructuredQuery_Projection) updates) => super.copyWith((message) => updates(message as StructuredQuery_Projection)) as StructuredQuery_Projection;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_Projection clone() =>
+      StructuredQuery_Projection()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_Projection copyWith(
+          void Function(StructuredQuery_Projection) updates) =>
+      super.copyWith(
+              (message) => updates(message as StructuredQuery_Projection))
+          as StructuredQuery_Projection;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StructuredQuery_Projection create() => StructuredQuery_Projection._();
   StructuredQuery_Projection createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_Projection> createRepeated() => $pb.PbList<StructuredQuery_Projection>();
+  static $pb.PbList<StructuredQuery_Projection> createRepeated() =>
+      $pb.PbList<StructuredQuery_Projection>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_Projection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_Projection>(create);
+  static StructuredQuery_Projection getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_Projection>(create);
   static StructuredQuery_Projection? _defaultInstance;
 
   ///  The fields to return.
@@ -638,38 +813,61 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery_FindNearest._() : super();
-  factory StructuredQuery_FindNearest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery_FindNearest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery_FindNearest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery_FindNearest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.FindNearest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'vectorField', subBuilder: StructuredQuery_FieldReference.create)
-    ..aOM<$130.Value>(2, _omitFieldNames ? '' : 'queryVector', subBuilder: $130.Value.create)
-    ..e<StructuredQuery_FindNearest_DistanceMeasure>(3, _omitFieldNames ? '' : 'distanceMeasure', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_FindNearest_DistanceMeasure.DISTANCE_MEASURE_UNSPECIFIED, valueOf: StructuredQuery_FindNearest_DistanceMeasure.valueOf, enumValues: StructuredQuery_FindNearest_DistanceMeasure.values)
-    ..aOM<$307.Int32Value>(4, _omitFieldNames ? '' : 'limit', subBuilder: $307.Int32Value.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery.FindNearest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<StructuredQuery_FieldReference>(
+        1, _omitFieldNames ? '' : 'vectorField',
+        subBuilder: StructuredQuery_FieldReference.create)
+    ..aOM<$130.Value>(2, _omitFieldNames ? '' : 'queryVector',
+        subBuilder: $130.Value.create)
+    ..e<StructuredQuery_FindNearest_DistanceMeasure>(
+        3, _omitFieldNames ? '' : 'distanceMeasure', $pb.PbFieldType.OE,
+        defaultOrMaker: StructuredQuery_FindNearest_DistanceMeasure
+            .DISTANCE_MEASURE_UNSPECIFIED,
+        valueOf: StructuredQuery_FindNearest_DistanceMeasure.valueOf,
+        enumValues: StructuredQuery_FindNearest_DistanceMeasure.values)
+    ..aOM<$307.Int32Value>(4, _omitFieldNames ? '' : 'limit',
+        subBuilder: $307.Int32Value.create)
     ..aOS(5, _omitFieldNames ? '' : 'distanceResultField')
-    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold', subBuilder: $307.DoubleValue.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold',
+        subBuilder: $307.DoubleValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_FindNearest clone() => StructuredQuery_FindNearest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery_FindNearest copyWith(void Function(StructuredQuery_FindNearest) updates) => super.copyWith((message) => updates(message as StructuredQuery_FindNearest)) as StructuredQuery_FindNearest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_FindNearest clone() =>
+      StructuredQuery_FindNearest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery_FindNearest copyWith(
+          void Function(StructuredQuery_FindNearest) updates) =>
+      super.copyWith(
+              (message) => updates(message as StructuredQuery_FindNearest))
+          as StructuredQuery_FindNearest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_FindNearest create() => StructuredQuery_FindNearest._();
+  static StructuredQuery_FindNearest create() =>
+      StructuredQuery_FindNearest._();
   StructuredQuery_FindNearest createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery_FindNearest> createRepeated() => $pb.PbList<StructuredQuery_FindNearest>();
+  static $pb.PbList<StructuredQuery_FindNearest> createRepeated() =>
+      $pb.PbList<StructuredQuery_FindNearest>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery_FindNearest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery_FindNearest>(create);
+  static StructuredQuery_FindNearest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery_FindNearest>(create);
   static StructuredQuery_FindNearest? _defaultInstance;
 
   /// Required. An indexed vector field to search upon. Only documents which
@@ -678,7 +876,10 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   StructuredQuery_FieldReference get vectorField => $_getN(0);
   @$pb.TagNumber(1)
-  set vectorField(StructuredQuery_FieldReference v) { setField(1, v); }
+  set vectorField(StructuredQuery_FieldReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVectorField() => $_has(0);
   @$pb.TagNumber(1)
@@ -691,7 +892,10 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $130.Value get queryVector => $_getN(1);
   @$pb.TagNumber(2)
-  set queryVector($130.Value v) { setField(2, v); }
+  set queryVector($130.Value v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQueryVector() => $_has(1);
   @$pb.TagNumber(2)
@@ -703,7 +907,10 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   StructuredQuery_FindNearest_DistanceMeasure get distanceMeasure => $_getN(2);
   @$pb.TagNumber(3)
-  set distanceMeasure(StructuredQuery_FindNearest_DistanceMeasure v) { setField(3, v); }
+  set distanceMeasure(StructuredQuery_FindNearest_DistanceMeasure v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDistanceMeasure() => $_has(2);
   @$pb.TagNumber(3)
@@ -714,7 +921,10 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $307.Int32Value get limit => $_getN(3);
   @$pb.TagNumber(4)
-  set limit($307.Int32Value v) { setField(4, v); }
+  set limit($307.Int32Value v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLimit() => $_has(3);
   @$pb.TagNumber(4)
@@ -728,7 +938,10 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get distanceResultField => $_getSZ(4);
   @$pb.TagNumber(5)
-  set distanceResultField($core.String v) { $_setString(4, v); }
+  set distanceResultField($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDistanceResultField() => $_has(4);
   @$pb.TagNumber(5)
@@ -745,7 +958,10 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $307.DoubleValue get distanceThreshold => $_getN(5);
   @$pb.TagNumber(6)
-  set distanceThreshold($307.DoubleValue v) { setField(6, v); }
+  set distanceThreshold($307.DoubleValue v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDistanceThreshold() => $_has(5);
   @$pb.TagNumber(6)
@@ -806,41 +1022,59 @@ class StructuredQuery extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredQuery._() : super();
-  factory StructuredQuery.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredQuery.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredQuery.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredQuery.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<StructuredQuery_Projection>(1, _omitFieldNames ? '' : 'select', subBuilder: StructuredQuery_Projection.create)
-    ..pc<StructuredQuery_CollectionSelector>(2, _omitFieldNames ? '' : 'from', $pb.PbFieldType.PM, subBuilder: StructuredQuery_CollectionSelector.create)
-    ..aOM<StructuredQuery_Filter>(3, _omitFieldNames ? '' : 'where', subBuilder: StructuredQuery_Filter.create)
-    ..pc<StructuredQuery_Order>(4, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.PM, subBuilder: StructuredQuery_Order.create)
-    ..aOM<$307.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $307.Int32Value.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredQuery',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<StructuredQuery_Projection>(1, _omitFieldNames ? '' : 'select',
+        subBuilder: StructuredQuery_Projection.create)
+    ..pc<StructuredQuery_CollectionSelector>(
+        2, _omitFieldNames ? '' : 'from', $pb.PbFieldType.PM,
+        subBuilder: StructuredQuery_CollectionSelector.create)
+    ..aOM<StructuredQuery_Filter>(3, _omitFieldNames ? '' : 'where',
+        subBuilder: StructuredQuery_Filter.create)
+    ..pc<StructuredQuery_Order>(
+        4, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.PM,
+        subBuilder: StructuredQuery_Order.create)
+    ..aOM<$307.Int32Value>(5, _omitFieldNames ? '' : 'limit',
+        subBuilder: $307.Int32Value.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
-    ..aOM<Cursor>(7, _omitFieldNames ? '' : 'startAt', subBuilder: Cursor.create)
+    ..aOM<Cursor>(7, _omitFieldNames ? '' : 'startAt',
+        subBuilder: Cursor.create)
     ..aOM<Cursor>(8, _omitFieldNames ? '' : 'endAt', subBuilder: Cursor.create)
-    ..aOM<StructuredQuery_FindNearest>(9, _omitFieldNames ? '' : 'findNearest', subBuilder: StructuredQuery_FindNearest.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<StructuredQuery_FindNearest>(9, _omitFieldNames ? '' : 'findNearest',
+        subBuilder: StructuredQuery_FindNearest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StructuredQuery clone() => StructuredQuery()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredQuery copyWith(void Function(StructuredQuery) updates) => super.copyWith((message) => updates(message as StructuredQuery)) as StructuredQuery;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredQuery copyWith(void Function(StructuredQuery) updates) =>
+      super.copyWith((message) => updates(message as StructuredQuery))
+          as StructuredQuery;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StructuredQuery create() => StructuredQuery._();
   StructuredQuery createEmptyInstance() => create();
-  static $pb.PbList<StructuredQuery> createRepeated() => $pb.PbList<StructuredQuery>();
+  static $pb.PbList<StructuredQuery> createRepeated() =>
+      $pb.PbList<StructuredQuery>();
   @$core.pragma('dart2js:noInline')
-  static StructuredQuery getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredQuery>(create);
+  static StructuredQuery getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredQuery>(create);
   static StructuredQuery? _defaultInstance;
 
   ///  Optional sub-set of the fields to return.
@@ -851,7 +1085,10 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   StructuredQuery_Projection get select => $_getN(0);
   @$pb.TagNumber(1)
-  set select(StructuredQuery_Projection v) { setField(1, v); }
+  set select(StructuredQuery_Projection v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelect() => $_has(0);
   @$pb.TagNumber(1)
@@ -867,7 +1104,10 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   StructuredQuery_Filter get where => $_getN(2);
   @$pb.TagNumber(3)
-  set where(StructuredQuery_Filter v) { setField(3, v); }
+  set where(StructuredQuery_Filter v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasWhere() => $_has(2);
   @$pb.TagNumber(3)
@@ -908,7 +1148,10 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $307.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(5)
-  set limit($307.Int32Value v) { setField(5, v); }
+  set limit($307.Int32Value v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasLimit() => $_has(4);
   @$pb.TagNumber(5)
@@ -927,7 +1170,10 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get offset => $_getIZ(5);
   @$pb.TagNumber(6)
-  set offset($core.int v) { $_setSignedInt32(5, v); }
+  set offset($core.int v) {
+    $_setSignedInt32(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasOffset() => $_has(5);
   @$pb.TagNumber(6)
@@ -967,7 +1213,10 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Cursor get startAt => $_getN(6);
   @$pb.TagNumber(7)
-  set startAt(Cursor v) { setField(7, v); }
+  set startAt(Cursor v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasStartAt() => $_has(6);
   @$pb.TagNumber(7)
@@ -987,7 +1236,10 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Cursor get endAt => $_getN(7);
   @$pb.TagNumber(8)
-  set endAt(Cursor v) { setField(8, v); }
+  set endAt(Cursor v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasEndAt() => $_has(7);
   @$pb.TagNumber(8)
@@ -1003,7 +1255,10 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   StructuredQuery_FindNearest get findNearest => $_getN(8);
   @$pb.TagNumber(9)
-  set findNearest(StructuredQuery_FindNearest v) { setField(9, v); }
+  set findNearest(StructuredQuery_FindNearest v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasFindNearest() => $_has(8);
   @$pb.TagNumber(9)
@@ -1016,7 +1271,8 @@ class StructuredQuery extends $pb.GeneratedMessage {
 ///
 ///  The `COUNT(*)` aggregation function operates on the entire document
 ///  so it does not require a field reference.
-class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
+class StructuredAggregationQuery_Aggregation_Count
+    extends $pb.GeneratedMessage {
   factory StructuredAggregationQuery_Aggregation_Count({
     $307.Int64Value? upTo,
   }) {
@@ -1027,33 +1283,52 @@ class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage 
     return $result;
   }
   StructuredAggregationQuery_Aggregation_Count._() : super();
-  factory StructuredAggregationQuery_Aggregation_Count.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredAggregationQuery_Aggregation_Count.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredAggregationQuery_Aggregation_Count.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredAggregationQuery_Aggregation_Count.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Count', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<$307.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $307.Int64Value.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Count',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$307.Int64Value>(1, _omitFieldNames ? '' : 'upTo',
+        subBuilder: $307.Int64Value.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation_Count clone() => StructuredAggregationQuery_Aggregation_Count()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation_Count copyWith(void Function(StructuredAggregationQuery_Aggregation_Count) updates) => super.copyWith((message) => updates(message as StructuredAggregationQuery_Aggregation_Count)) as StructuredAggregationQuery_Aggregation_Count;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation_Count clone() =>
+      StructuredAggregationQuery_Aggregation_Count()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation_Count copyWith(
+          void Function(StructuredAggregationQuery_Aggregation_Count)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as StructuredAggregationQuery_Aggregation_Count))
+          as StructuredAggregationQuery_Aggregation_Count;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation_Count create() => StructuredAggregationQuery_Aggregation_Count._();
-  StructuredAggregationQuery_Aggregation_Count createEmptyInstance() => create();
-  static $pb.PbList<StructuredAggregationQuery_Aggregation_Count> createRepeated() => $pb.PbList<StructuredAggregationQuery_Aggregation_Count>();
+  static StructuredAggregationQuery_Aggregation_Count create() =>
+      StructuredAggregationQuery_Aggregation_Count._();
+  StructuredAggregationQuery_Aggregation_Count createEmptyInstance() =>
+      create();
+  static $pb.PbList<StructuredAggregationQuery_Aggregation_Count>
+      createRepeated() =>
+          $pb.PbList<StructuredAggregationQuery_Aggregation_Count>();
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation_Count getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredAggregationQuery_Aggregation_Count>(create);
+  static StructuredAggregationQuery_Aggregation_Count getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StructuredAggregationQuery_Aggregation_Count>(create);
   static StructuredAggregationQuery_Aggregation_Count? _defaultInstance;
 
   ///  Optional. Optional constraint on the maximum number of documents to
@@ -1076,7 +1351,10 @@ class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage 
   @$pb.TagNumber(1)
   $307.Int64Value get upTo => $_getN(0);
   @$pb.TagNumber(1)
-  set upTo($307.Int64Value v) { setField(1, v); }
+  set upTo($307.Int64Value v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUpTo() => $_has(0);
   @$pb.TagNumber(1)
@@ -1117,40 +1395,60 @@ class StructuredAggregationQuery_Aggregation_Sum extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredAggregationQuery_Aggregation_Sum._() : super();
-  factory StructuredAggregationQuery_Aggregation_Sum.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredAggregationQuery_Aggregation_Sum.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredAggregationQuery_Aggregation_Sum.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredAggregationQuery_Aggregation_Sum.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Sum', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field', subBuilder: StructuredQuery_FieldReference.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Sum',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field',
+        subBuilder: StructuredQuery_FieldReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation_Sum clone() => StructuredAggregationQuery_Aggregation_Sum()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation_Sum copyWith(void Function(StructuredAggregationQuery_Aggregation_Sum) updates) => super.copyWith((message) => updates(message as StructuredAggregationQuery_Aggregation_Sum)) as StructuredAggregationQuery_Aggregation_Sum;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation_Sum clone() =>
+      StructuredAggregationQuery_Aggregation_Sum()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation_Sum copyWith(
+          void Function(StructuredAggregationQuery_Aggregation_Sum) updates) =>
+      super.copyWith((message) =>
+              updates(message as StructuredAggregationQuery_Aggregation_Sum))
+          as StructuredAggregationQuery_Aggregation_Sum;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation_Sum create() => StructuredAggregationQuery_Aggregation_Sum._();
+  static StructuredAggregationQuery_Aggregation_Sum create() =>
+      StructuredAggregationQuery_Aggregation_Sum._();
   StructuredAggregationQuery_Aggregation_Sum createEmptyInstance() => create();
-  static $pb.PbList<StructuredAggregationQuery_Aggregation_Sum> createRepeated() => $pb.PbList<StructuredAggregationQuery_Aggregation_Sum>();
+  static $pb.PbList<StructuredAggregationQuery_Aggregation_Sum>
+      createRepeated() =>
+          $pb.PbList<StructuredAggregationQuery_Aggregation_Sum>();
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation_Sum getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredAggregationQuery_Aggregation_Sum>(create);
+  static StructuredAggregationQuery_Aggregation_Sum getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StructuredAggregationQuery_Aggregation_Sum>(create);
   static StructuredAggregationQuery_Aggregation_Sum? _defaultInstance;
 
   /// The field to aggregate on.
   @$pb.TagNumber(1)
   StructuredQuery_FieldReference get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1(StructuredQuery_FieldReference v) { setField(1, v); }
+  set field_1(StructuredQuery_FieldReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
@@ -1181,40 +1479,60 @@ class StructuredAggregationQuery_Aggregation_Avg extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredAggregationQuery_Aggregation_Avg._() : super();
-  factory StructuredAggregationQuery_Aggregation_Avg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredAggregationQuery_Aggregation_Avg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredAggregationQuery_Aggregation_Avg.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredAggregationQuery_Aggregation_Avg.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Avg', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field', subBuilder: StructuredQuery_FieldReference.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Avg',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field',
+        subBuilder: StructuredQuery_FieldReference.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation_Avg clone() => StructuredAggregationQuery_Aggregation_Avg()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation_Avg copyWith(void Function(StructuredAggregationQuery_Aggregation_Avg) updates) => super.copyWith((message) => updates(message as StructuredAggregationQuery_Aggregation_Avg)) as StructuredAggregationQuery_Aggregation_Avg;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation_Avg clone() =>
+      StructuredAggregationQuery_Aggregation_Avg()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation_Avg copyWith(
+          void Function(StructuredAggregationQuery_Aggregation_Avg) updates) =>
+      super.copyWith((message) =>
+              updates(message as StructuredAggregationQuery_Aggregation_Avg))
+          as StructuredAggregationQuery_Aggregation_Avg;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation_Avg create() => StructuredAggregationQuery_Aggregation_Avg._();
+  static StructuredAggregationQuery_Aggregation_Avg create() =>
+      StructuredAggregationQuery_Aggregation_Avg._();
   StructuredAggregationQuery_Aggregation_Avg createEmptyInstance() => create();
-  static $pb.PbList<StructuredAggregationQuery_Aggregation_Avg> createRepeated() => $pb.PbList<StructuredAggregationQuery_Aggregation_Avg>();
+  static $pb.PbList<StructuredAggregationQuery_Aggregation_Avg>
+      createRepeated() =>
+          $pb.PbList<StructuredAggregationQuery_Aggregation_Avg>();
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation_Avg getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredAggregationQuery_Aggregation_Avg>(create);
+  static StructuredAggregationQuery_Aggregation_Avg getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StructuredAggregationQuery_Aggregation_Avg>(create);
   static StructuredAggregationQuery_Aggregation_Avg? _defaultInstance;
 
   /// The field to aggregate on.
   @$pb.TagNumber(1)
   StructuredQuery_FieldReference get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1(StructuredQuery_FieldReference v) { setField(1, v); }
+  set field_1(StructuredQuery_FieldReference v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
@@ -1223,12 +1541,7 @@ class StructuredAggregationQuery_Aggregation_Avg extends $pb.GeneratedMessage {
   StructuredQuery_FieldReference ensureField_1() => $_ensure(0);
 }
 
-enum StructuredAggregationQuery_Aggregation_Operator {
-  count, 
-  sum, 
-  avg, 
-  notSet
-}
+enum StructuredAggregationQuery_Aggregation_Operator { count, sum, avg, notSet }
 
 /// Defines an aggregation that produces a single result.
 class StructuredAggregationQuery_Aggregation extends $pb.GeneratedMessage {
@@ -1254,53 +1567,80 @@ class StructuredAggregationQuery_Aggregation extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredAggregationQuery_Aggregation._() : super();
-  factory StructuredAggregationQuery_Aggregation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredAggregationQuery_Aggregation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredAggregationQuery_Aggregation.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredAggregationQuery_Aggregation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, StructuredAggregationQuery_Aggregation_Operator> _StructuredAggregationQuery_Aggregation_OperatorByTag = {
-    1 : StructuredAggregationQuery_Aggregation_Operator.count,
-    2 : StructuredAggregationQuery_Aggregation_Operator.sum,
-    3 : StructuredAggregationQuery_Aggregation_Operator.avg,
-    0 : StructuredAggregationQuery_Aggregation_Operator.notSet
+  static const $core
+      .Map<$core.int, StructuredAggregationQuery_Aggregation_Operator>
+      _StructuredAggregationQuery_Aggregation_OperatorByTag = {
+    1: StructuredAggregationQuery_Aggregation_Operator.count,
+    2: StructuredAggregationQuery_Aggregation_Operator.sum,
+    3: StructuredAggregationQuery_Aggregation_Operator.avg,
+    0: StructuredAggregationQuery_Aggregation_Operator.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<StructuredAggregationQuery_Aggregation_Count>(1, _omitFieldNames ? '' : 'count', subBuilder: StructuredAggregationQuery_Aggregation_Count.create)
-    ..aOM<StructuredAggregationQuery_Aggregation_Sum>(2, _omitFieldNames ? '' : 'sum', subBuilder: StructuredAggregationQuery_Aggregation_Sum.create)
-    ..aOM<StructuredAggregationQuery_Aggregation_Avg>(3, _omitFieldNames ? '' : 'avg', subBuilder: StructuredAggregationQuery_Aggregation_Avg.create)
+    ..aOM<StructuredAggregationQuery_Aggregation_Count>(
+        1, _omitFieldNames ? '' : 'count',
+        subBuilder: StructuredAggregationQuery_Aggregation_Count.create)
+    ..aOM<StructuredAggregationQuery_Aggregation_Sum>(
+        2, _omitFieldNames ? '' : 'sum',
+        subBuilder: StructuredAggregationQuery_Aggregation_Sum.create)
+    ..aOM<StructuredAggregationQuery_Aggregation_Avg>(
+        3, _omitFieldNames ? '' : 'avg',
+        subBuilder: StructuredAggregationQuery_Aggregation_Avg.create)
     ..aOS(7, _omitFieldNames ? '' : 'alias')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation clone() => StructuredAggregationQuery_Aggregation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery_Aggregation copyWith(void Function(StructuredAggregationQuery_Aggregation) updates) => super.copyWith((message) => updates(message as StructuredAggregationQuery_Aggregation)) as StructuredAggregationQuery_Aggregation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation clone() =>
+      StructuredAggregationQuery_Aggregation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery_Aggregation copyWith(
+          void Function(StructuredAggregationQuery_Aggregation) updates) =>
+      super.copyWith((message) =>
+              updates(message as StructuredAggregationQuery_Aggregation))
+          as StructuredAggregationQuery_Aggregation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation create() => StructuredAggregationQuery_Aggregation._();
+  static StructuredAggregationQuery_Aggregation create() =>
+      StructuredAggregationQuery_Aggregation._();
   StructuredAggregationQuery_Aggregation createEmptyInstance() => create();
-  static $pb.PbList<StructuredAggregationQuery_Aggregation> createRepeated() => $pb.PbList<StructuredAggregationQuery_Aggregation>();
+  static $pb.PbList<StructuredAggregationQuery_Aggregation> createRepeated() =>
+      $pb.PbList<StructuredAggregationQuery_Aggregation>();
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery_Aggregation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredAggregationQuery_Aggregation>(create);
+  static StructuredAggregationQuery_Aggregation getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StructuredAggregationQuery_Aggregation>(create);
   static StructuredAggregationQuery_Aggregation? _defaultInstance;
 
-  StructuredAggregationQuery_Aggregation_Operator whichOperator() => _StructuredAggregationQuery_Aggregation_OperatorByTag[$_whichOneof(0)]!;
+  StructuredAggregationQuery_Aggregation_Operator whichOperator() =>
+      _StructuredAggregationQuery_Aggregation_OperatorByTag[$_whichOneof(0)]!;
   void clearOperator() => clearField($_whichOneof(0));
 
   /// Count aggregator.
   @$pb.TagNumber(1)
   StructuredAggregationQuery_Aggregation_Count get count => $_getN(0);
   @$pb.TagNumber(1)
-  set count(StructuredAggregationQuery_Aggregation_Count v) { setField(1, v); }
+  set count(StructuredAggregationQuery_Aggregation_Count v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -1312,7 +1652,10 @@ class StructuredAggregationQuery_Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   StructuredAggregationQuery_Aggregation_Sum get sum => $_getN(1);
   @$pb.TagNumber(2)
-  set sum(StructuredAggregationQuery_Aggregation_Sum v) { setField(2, v); }
+  set sum(StructuredAggregationQuery_Aggregation_Sum v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSum() => $_has(1);
   @$pb.TagNumber(2)
@@ -1324,7 +1667,10 @@ class StructuredAggregationQuery_Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   StructuredAggregationQuery_Aggregation_Avg get avg => $_getN(2);
   @$pb.TagNumber(3)
-  set avg(StructuredAggregationQuery_Aggregation_Avg v) { setField(3, v); }
+  set avg(StructuredAggregationQuery_Aggregation_Avg v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAvg() => $_has(2);
   @$pb.TagNumber(3)
@@ -1370,17 +1716,17 @@ class StructuredAggregationQuery_Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get alias => $_getSZ(3);
   @$pb.TagNumber(7)
-  set alias($core.String v) { $_setString(3, v); }
+  set alias($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasAlias() => $_has(3);
   @$pb.TagNumber(7)
   void clearAlias() => clearField(7);
 }
 
-enum StructuredAggregationQuery_QueryType {
-  structuredQuery, 
-  notSet
-}
+enum StructuredAggregationQuery_QueryType { structuredQuery, notSet }
 
 /// Firestore query for running an aggregation over a
 /// [StructuredQuery][google.firestore.v1.StructuredQuery].
@@ -1399,49 +1745,69 @@ class StructuredAggregationQuery extends $pb.GeneratedMessage {
     return $result;
   }
   StructuredAggregationQuery._() : super();
-  factory StructuredAggregationQuery.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StructuredAggregationQuery.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StructuredAggregationQuery.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StructuredAggregationQuery.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, StructuredAggregationQuery_QueryType> _StructuredAggregationQuery_QueryTypeByTag = {
-    1 : StructuredAggregationQuery_QueryType.structuredQuery,
-    0 : StructuredAggregationQuery_QueryType.notSet
+  static const $core.Map<$core.int, StructuredAggregationQuery_QueryType>
+      _StructuredAggregationQuery_QueryTypeByTag = {
+    1: StructuredAggregationQuery_QueryType.structuredQuery,
+    0: StructuredAggregationQuery_QueryType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredAggregationQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StructuredAggregationQuery',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<StructuredQuery>(1, _omitFieldNames ? '' : 'structuredQuery', subBuilder: StructuredQuery.create)
-    ..pc<StructuredAggregationQuery_Aggregation>(3, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM, subBuilder: StructuredAggregationQuery_Aggregation.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<StructuredQuery>(1, _omitFieldNames ? '' : 'structuredQuery',
+        subBuilder: StructuredQuery.create)
+    ..pc<StructuredAggregationQuery_Aggregation>(
+        3, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
+        subBuilder: StructuredAggregationQuery_Aggregation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery clone() => StructuredAggregationQuery()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StructuredAggregationQuery copyWith(void Function(StructuredAggregationQuery) updates) => super.copyWith((message) => updates(message as StructuredAggregationQuery)) as StructuredAggregationQuery;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery clone() =>
+      StructuredAggregationQuery()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StructuredAggregationQuery copyWith(
+          void Function(StructuredAggregationQuery) updates) =>
+      super.copyWith(
+              (message) => updates(message as StructuredAggregationQuery))
+          as StructuredAggregationQuery;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StructuredAggregationQuery create() => StructuredAggregationQuery._();
   StructuredAggregationQuery createEmptyInstance() => create();
-  static $pb.PbList<StructuredAggregationQuery> createRepeated() => $pb.PbList<StructuredAggregationQuery>();
+  static $pb.PbList<StructuredAggregationQuery> createRepeated() =>
+      $pb.PbList<StructuredAggregationQuery>();
   @$core.pragma('dart2js:noInline')
-  static StructuredAggregationQuery getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StructuredAggregationQuery>(create);
+  static StructuredAggregationQuery getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StructuredAggregationQuery>(create);
   static StructuredAggregationQuery? _defaultInstance;
 
-  StructuredAggregationQuery_QueryType whichQueryType() => _StructuredAggregationQuery_QueryTypeByTag[$_whichOneof(0)]!;
+  StructuredAggregationQuery_QueryType whichQueryType() =>
+      _StructuredAggregationQuery_QueryTypeByTag[$_whichOneof(0)]!;
   void clearQueryType() => clearField($_whichOneof(0));
 
   /// Nested structured query.
   @$pb.TagNumber(1)
   StructuredQuery get structuredQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set structuredQuery(StructuredQuery v) { setField(1, v); }
+  set structuredQuery(StructuredQuery v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStructuredQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -1456,7 +1822,8 @@ class StructuredAggregationQuery extends $pb.GeneratedMessage {
   ///
   ///  * A minimum of one and maximum of five aggregations per query.
   @$pb.TagNumber(3)
-  $core.List<StructuredAggregationQuery_Aggregation> get aggregations => $_getList(1);
+  $core.List<StructuredAggregationQuery_Aggregation> get aggregations =>
+      $_getList(1);
 }
 
 /// A position in a query result set.
@@ -1475,25 +1842,32 @@ class Cursor extends $pb.GeneratedMessage {
     return $result;
   }
   Cursor._() : super();
-  factory Cursor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Cursor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Cursor.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Cursor.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cursor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..pc<$130.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $130.Value.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Cursor',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
+      createEmptyInstance: create)
+    ..pc<$130.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
+        subBuilder: $130.Value.create)
     ..aOB(2, _omitFieldNames ? '' : 'before')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Cursor clone() => Cursor()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Cursor copyWith(void Function(Cursor) updates) => super.copyWith((message) => updates(message as Cursor)) as Cursor;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Cursor copyWith(void Function(Cursor) updates) =>
+      super.copyWith((message) => updates(message as Cursor)) as Cursor;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1502,7 +1876,8 @@ class Cursor extends $pb.GeneratedMessage {
   Cursor createEmptyInstance() => create();
   static $pb.PbList<Cursor> createRepeated() => $pb.PbList<Cursor>();
   @$core.pragma('dart2js:noInline')
-  static Cursor getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cursor>(create);
+  static Cursor getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cursor>(create);
   static Cursor? _defaultInstance;
 
   ///  The values that represent a position, in the order they appear in
@@ -1517,13 +1892,16 @@ class Cursor extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get before => $_getBF(1);
   @$pb.TagNumber(2)
-  set before($core.bool v) { $_setBool(1, v); }
+  set before($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBefore() => $_has(1);
   @$pb.TagNumber(2)
   void clearBefore() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

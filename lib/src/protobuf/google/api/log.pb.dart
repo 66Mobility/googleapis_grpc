@@ -46,36 +46,46 @@ class LogDescriptor extends $pb.GeneratedMessage {
     return $result;
   }
   LogDescriptor._() : super();
-  factory LogDescriptor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogDescriptor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogDescriptor.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogDescriptor.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogDescriptor',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$348.LabelDescriptor>(2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $348.LabelDescriptor.create)
+    ..pc<$348.LabelDescriptor>(
+        2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $348.LabelDescriptor.create)
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LogDescriptor clone() => LogDescriptor()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogDescriptor copyWith(void Function(LogDescriptor) updates) => super.copyWith((message) => updates(message as LogDescriptor)) as LogDescriptor;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogDescriptor copyWith(void Function(LogDescriptor) updates) =>
+      super.copyWith((message) => updates(message as LogDescriptor))
+          as LogDescriptor;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogDescriptor create() => LogDescriptor._();
   LogDescriptor createEmptyInstance() => create();
-  static $pb.PbList<LogDescriptor> createRepeated() => $pb.PbList<LogDescriptor>();
+  static $pb.PbList<LogDescriptor> createRepeated() =>
+      $pb.PbList<LogDescriptor>();
   @$core.pragma('dart2js:noInline')
-  static LogDescriptor getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogDescriptor>(create);
+  static LogDescriptor getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LogDescriptor>(create);
   static LogDescriptor? _defaultInstance;
 
   /// The name of the log. It must be less than 512 characters long and can
@@ -85,7 +95,10 @@ class LogDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -102,7 +115,10 @@ class LogDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -113,13 +129,16 @@ class LogDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set displayName($core.String v) { $_setString(3, v); }
+  set displayName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(4)
   void clearDisplayName() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

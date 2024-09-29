@@ -101,8 +101,8 @@ const PhotoId$json = {
 };
 
 /// Descriptor for `PhotoId`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List photoIdDescriptor = $convert.base64Decode(
-    'CgdQaG90b0lkEg4KAmlkGAEgASgJUgJpZA==');
+final $typed_data.Uint8List photoIdDescriptor =
+    $convert.base64Decode('CgdQaG90b0lkEg4KAmlkGAEgASgJUgJpZA==');
 
 @$core.Deprecated('Use levelDescriptor instead')
 const Level$json = {
@@ -122,13 +122,34 @@ final $typed_data.Uint8List levelDescriptor = $convert.base64Decode(
 const Pose$json = {
   '1': 'Pose',
   '2': [
-    {'1': 'lat_lng_pair', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'latLngPair'},
+    {
+      '1': 'lat_lng_pair',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'latLngPair'
+    },
     {'1': 'altitude', '3': 2, '4': 1, '5': 1, '10': 'altitude'},
     {'1': 'heading', '3': 3, '4': 1, '5': 1, '10': 'heading'},
     {'1': 'pitch', '3': 4, '4': 1, '5': 1, '10': 'pitch'},
     {'1': 'roll', '3': 5, '4': 1, '5': 1, '10': 'roll'},
-    {'1': 'gps_record_timestamp_unix_epoch', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'gpsRecordTimestampUnixEpoch'},
-    {'1': 'level', '3': 7, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.Level', '10': 'level'},
+    {
+      '1': 'gps_record_timestamp_unix_epoch',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'gpsRecordTimestampUnixEpoch'
+    },
+    {
+      '1': 'level',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Level',
+      '10': 'level'
+    },
     {'1': 'accuracy_meters', '3': 9, '4': 1, '5': 2, '10': 'accuracyMeters'},
   ],
 };
@@ -147,9 +168,30 @@ final $typed_data.Uint8List poseDescriptor = $convert.base64Decode(
 const Imu$json = {
   '1': 'Imu',
   '2': [
-    {'1': 'accel_mpsps', '3': 1, '4': 3, '5': 11, '6': '.google.streetview.publish.v1.Imu.Measurement3d', '10': 'accelMpsps'},
-    {'1': 'gyro_rps', '3': 2, '4': 3, '5': 11, '6': '.google.streetview.publish.v1.Imu.Measurement3d', '10': 'gyroRps'},
-    {'1': 'mag_ut', '3': 3, '4': 3, '5': 11, '6': '.google.streetview.publish.v1.Imu.Measurement3d', '10': 'magUt'},
+    {
+      '1': 'accel_mpsps',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Imu.Measurement3d',
+      '10': 'accelMpsps'
+    },
+    {
+      '1': 'gyro_rps',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Imu.Measurement3d',
+      '10': 'gyroRps'
+    },
+    {
+      '1': 'mag_ut',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Imu.Measurement3d',
+      '10': 'magUt'
+    },
   ],
   '3': [Imu_Measurement3d$json],
 };
@@ -158,7 +200,14 @@ const Imu$json = {
 const Imu_Measurement3d$json = {
   '1': 'Measurement3d',
   '2': [
-    {'1': 'capture_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'captureTime'},
+    {
+      '1': 'capture_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'captureTime'
+    },
     {'1': 'x', '3': 2, '4': 1, '5': 2, '10': 'x'},
     {'1': 'y', '3': 3, '4': 1, '5': 2, '10': 'y'},
     {'1': 'z', '3': 4, '4': 1, '5': 2, '10': 'z'},
@@ -181,7 +230,14 @@ const Place$json = {
   '2': [
     {'1': 'place_id', '3': 1, '4': 1, '5': 9, '10': 'placeId'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'language_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
+    {
+      '1': 'language_code',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'languageCode'
+    },
   ],
 };
 
@@ -194,7 +250,15 @@ final $typed_data.Uint8List placeDescriptor = $convert.base64Decode(
 const Connection$json = {
   '1': 'Connection',
   '2': [
-    {'1': 'target', '3': 1, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.PhotoId', '8': {}, '10': 'target'},
+    {
+      '1': 'target',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.PhotoId',
+      '8': {},
+      '10': 'target'
+    },
   ],
 };
 
@@ -207,19 +271,98 @@ final $typed_data.Uint8List connectionDescriptor = $convert.base64Decode(
 const Photo$json = {
   '1': 'Photo',
   '2': [
-    {'1': 'photo_id', '3': 1, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.PhotoId', '8': {}, '10': 'photoId'},
-    {'1': 'upload_reference', '3': 2, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.UploadRef', '8': {}, '10': 'uploadReference'},
+    {
+      '1': 'photo_id',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.PhotoId',
+      '8': {},
+      '10': 'photoId'
+    },
+    {
+      '1': 'upload_reference',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.UploadRef',
+      '8': {},
+      '10': 'uploadReference'
+    },
     {'1': 'download_url', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'downloadUrl'},
-    {'1': 'thumbnail_url', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'thumbnailUrl'},
+    {
+      '1': 'thumbnail_url',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'thumbnailUrl'
+    },
     {'1': 'share_link', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'shareLink'},
-    {'1': 'pose', '3': 4, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.Pose', '8': {}, '10': 'pose'},
-    {'1': 'connections', '3': 5, '4': 3, '5': 11, '6': '.google.streetview.publish.v1.Connection', '8': {}, '10': 'connections'},
-    {'1': 'capture_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'captureTime'},
-    {'1': 'upload_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'uploadTime'},
-    {'1': 'places', '3': 7, '4': 3, '5': 11, '6': '.google.streetview.publish.v1.Place', '8': {}, '10': 'places'},
+    {
+      '1': 'pose',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Pose',
+      '8': {},
+      '10': 'pose'
+    },
+    {
+      '1': 'connections',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Connection',
+      '8': {},
+      '10': 'connections'
+    },
+    {
+      '1': 'capture_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'captureTime'
+    },
+    {
+      '1': 'upload_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'uploadTime'
+    },
+    {
+      '1': 'places',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Place',
+      '8': {},
+      '10': 'places'
+    },
     {'1': 'view_count', '3': 10, '4': 1, '5': 3, '8': {}, '10': 'viewCount'},
-    {'1': 'transfer_status', '3': 12, '4': 1, '5': 14, '6': '.google.streetview.publish.v1.Photo.TransferStatus', '8': {}, '10': 'transferStatus'},
-    {'1': 'maps_publish_status', '3': 13, '4': 1, '5': 14, '6': '.google.streetview.publish.v1.Photo.MapsPublishStatus', '8': {}, '10': 'mapsPublishStatus'},
+    {
+      '1': 'transfer_status',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.streetview.publish.v1.Photo.TransferStatus',
+      '8': {},
+      '10': 'transferStatus'
+    },
+    {
+      '1': 'maps_publish_status',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.google.streetview.publish.v1.Photo.MapsPublishStatus',
+      '8': {},
+      '10': 'mapsPublishStatus'
+    },
   ],
   '4': [Photo_TransferStatus$json, Photo_MapsPublishStatus$json],
 };
@@ -278,18 +421,113 @@ const PhotoSequence$json = {
   '1': 'PhotoSequence',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'id'},
-    {'1': 'photos', '3': 2, '4': 3, '5': 11, '6': '.google.streetview.publish.v1.Photo', '8': {}, '10': 'photos'},
-    {'1': 'upload_reference', '3': 3, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.UploadRef', '8': {}, '10': 'uploadReference'},
-    {'1': 'capture_time_override', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'captureTimeOverride'},
-    {'1': 'upload_time', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'uploadTime'},
-    {'1': 'raw_gps_timeline', '3': 7, '4': 3, '5': 11, '6': '.google.streetview.publish.v1.Pose', '8': {}, '10': 'rawGpsTimeline'},
-    {'1': 'gps_source', '3': 8, '4': 1, '5': 14, '6': '.google.streetview.publish.v1.PhotoSequence.GpsSource', '8': {}, '10': 'gpsSource'},
-    {'1': 'imu', '3': 11, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.Imu', '8': {}, '10': 'imu'},
-    {'1': 'processing_state', '3': 12, '4': 1, '5': 14, '6': '.google.streetview.publish.v1.ProcessingState', '8': {}, '10': 'processingState'},
-    {'1': 'failure_reason', '3': 13, '4': 1, '5': 14, '6': '.google.streetview.publish.v1.ProcessingFailureReason', '8': {}, '10': 'failureReason'},
-    {'1': 'failure_details', '3': 23, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.ProcessingFailureDetails', '8': {}, '10': 'failureDetails'},
-    {'1': 'distance_meters', '3': 16, '4': 1, '5': 1, '8': {}, '10': 'distanceMeters'},
-    {'1': 'sequence_bounds', '3': 20, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.LatLngBounds', '8': {}, '10': 'sequenceBounds'},
+    {
+      '1': 'photos',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Photo',
+      '8': {},
+      '10': 'photos'
+    },
+    {
+      '1': 'upload_reference',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.UploadRef',
+      '8': {},
+      '10': 'uploadReference'
+    },
+    {
+      '1': 'capture_time_override',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'captureTimeOverride'
+    },
+    {
+      '1': 'upload_time',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'uploadTime'
+    },
+    {
+      '1': 'raw_gps_timeline',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Pose',
+      '8': {},
+      '10': 'rawGpsTimeline'
+    },
+    {
+      '1': 'gps_source',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.streetview.publish.v1.PhotoSequence.GpsSource',
+      '8': {},
+      '10': 'gpsSource'
+    },
+    {
+      '1': 'imu',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.Imu',
+      '8': {},
+      '10': 'imu'
+    },
+    {
+      '1': 'processing_state',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.streetview.publish.v1.ProcessingState',
+      '8': {},
+      '10': 'processingState'
+    },
+    {
+      '1': 'failure_reason',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.google.streetview.publish.v1.ProcessingFailureReason',
+      '8': {},
+      '10': 'failureReason'
+    },
+    {
+      '1': 'failure_details',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.ProcessingFailureDetails',
+      '8': {},
+      '10': 'failureDetails'
+    },
+    {
+      '1': 'distance_meters',
+      '3': 16,
+      '4': 1,
+      '5': 1,
+      '8': {},
+      '10': 'distanceMeters'
+    },
+    {
+      '1': 'sequence_bounds',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.LatLngBounds',
+      '8': {},
+      '10': 'sequenceBounds'
+    },
     {'1': 'view_count', '3': 21, '4': 1, '5': 3, '8': {}, '10': 'viewCount'},
     {'1': 'filename', '3': 22, '4': 1, '5': 9, '8': {}, '10': 'filename'},
   ],
@@ -333,8 +571,22 @@ final $typed_data.Uint8List photoSequenceDescriptor = $convert.base64Decode(
 const LatLngBounds$json = {
   '1': 'LatLngBounds',
   '2': [
-    {'1': 'southwest', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'southwest'},
-    {'1': 'northeast', '3': 2, '4': 1, '5': 11, '6': '.google.type.LatLng', '10': 'northeast'},
+    {
+      '1': 'southwest',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'southwest'
+    },
+    {
+      '1': 'northeast',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.LatLng',
+      '10': 'northeast'
+    },
   ],
 };
 
@@ -348,11 +600,51 @@ final $typed_data.Uint8List latLngBoundsDescriptor = $convert.base64Decode(
 const ProcessingFailureDetails$json = {
   '1': 'ProcessingFailureDetails',
   '2': [
-    {'1': 'insufficient_gps_details', '3': 1, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.InsufficientGpsFailureDetails', '9': 0, '10': 'insufficientGpsDetails'},
-    {'1': 'gps_data_gap_details', '3': 2, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.GpsDataGapFailureDetails', '9': 0, '10': 'gpsDataGapDetails'},
-    {'1': 'imu_data_gap_details', '3': 3, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.ImuDataGapFailureDetails', '9': 0, '10': 'imuDataGapDetails'},
-    {'1': 'not_outdoors_details', '3': 4, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.NotOutdoorsFailureDetails', '9': 0, '10': 'notOutdoorsDetails'},
-    {'1': 'no_overlap_gps_details', '3': 5, '4': 1, '5': 11, '6': '.google.streetview.publish.v1.NoOverlapGpsFailureDetails', '9': 0, '10': 'noOverlapGpsDetails'},
+    {
+      '1': 'insufficient_gps_details',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.InsufficientGpsFailureDetails',
+      '9': 0,
+      '10': 'insufficientGpsDetails'
+    },
+    {
+      '1': 'gps_data_gap_details',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.GpsDataGapFailureDetails',
+      '9': 0,
+      '10': 'gpsDataGapDetails'
+    },
+    {
+      '1': 'imu_data_gap_details',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.ImuDataGapFailureDetails',
+      '9': 0,
+      '10': 'imuDataGapDetails'
+    },
+    {
+      '1': 'not_outdoors_details',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.NotOutdoorsFailureDetails',
+      '9': 0,
+      '10': 'notOutdoorsDetails'
+    },
+    {
+      '1': 'no_overlap_gps_details',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.streetview.publish.v1.NoOverlapGpsFailureDetails',
+      '9': 0,
+      '10': 'noOverlapGpsDetails'
+    },
   ],
   '8': [
     {'1': 'details'},
@@ -377,7 +669,15 @@ final $typed_data.Uint8List processingFailureDetailsDescriptor = $convert.base64
 const InsufficientGpsFailureDetails$json = {
   '1': 'InsufficientGpsFailureDetails',
   '2': [
-    {'1': 'gps_points_found', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'gpsPointsFound', '17': true},
+    {
+      '1': 'gps_points_found',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'gpsPointsFound',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_gps_points_found'},
@@ -385,16 +685,35 @@ const InsufficientGpsFailureDetails$json = {
 };
 
 /// Descriptor for `InsufficientGpsFailureDetails`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List insufficientGpsFailureDetailsDescriptor = $convert.base64Decode(
-    'Ch1JbnN1ZmZpY2llbnRHcHNGYWlsdXJlRGV0YWlscxItChBncHNfcG9pbnRzX2ZvdW5kGAEgAS'
-    'gFSABSDmdwc1BvaW50c0ZvdW5kiAEBQhMKEV9ncHNfcG9pbnRzX2ZvdW5k');
+final $typed_data.Uint8List insufficientGpsFailureDetailsDescriptor =
+    $convert.base64Decode(
+        'Ch1JbnN1ZmZpY2llbnRHcHNGYWlsdXJlRGV0YWlscxItChBncHNfcG9pbnRzX2ZvdW5kGAEgAS'
+        'gFSABSDmdwc1BvaW50c0ZvdW5kiAEBQhMKEV9ncHNfcG9pbnRzX2ZvdW5k');
 
 @$core.Deprecated('Use gpsDataGapFailureDetailsDescriptor instead')
 const GpsDataGapFailureDetails$json = {
   '1': 'GpsDataGapFailureDetails',
   '2': [
-    {'1': 'gap_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'gapDuration', '17': true},
-    {'1': 'gap_start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 1, '10': 'gapStartTime', '17': true},
+    {
+      '1': 'gap_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'gapDuration',
+      '17': true
+    },
+    {
+      '1': 'gap_start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 1,
+      '10': 'gapStartTime',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_gap_duration'},
@@ -413,8 +732,26 @@ final $typed_data.Uint8List gpsDataGapFailureDetailsDescriptor = $convert.base64
 const ImuDataGapFailureDetails$json = {
   '1': 'ImuDataGapFailureDetails',
   '2': [
-    {'1': 'gap_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'gapDuration', '17': true},
-    {'1': 'gap_start_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 1, '10': 'gapStartTime', '17': true},
+    {
+      '1': 'gap_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'gapDuration',
+      '17': true
+    },
+    {
+      '1': 'gap_start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 1,
+      '10': 'gapStartTime',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_gap_duration'},
@@ -433,7 +770,16 @@ final $typed_data.Uint8List imuDataGapFailureDetailsDescriptor = $convert.base64
 const NotOutdoorsFailureDetails$json = {
   '1': 'NotOutdoorsFailureDetails',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'startTime', '17': true},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'startTime',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_start_time'},
@@ -441,18 +787,55 @@ const NotOutdoorsFailureDetails$json = {
 };
 
 /// Descriptor for `NotOutdoorsFailureDetails`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List notOutdoorsFailureDetailsDescriptor = $convert.base64Decode(
-    'ChlOb3RPdXRkb29yc0ZhaWx1cmVEZXRhaWxzEj0KCnN0YXJ0X3RpbWUYASABKAsyGS5nb29nbG'
-    'UucHJvdG9idWYuRHVyYXRpb25IAFIJc3RhcnRUaW1liAEBQg0KC19zdGFydF90aW1l');
+final $typed_data.Uint8List notOutdoorsFailureDetailsDescriptor =
+    $convert.base64Decode(
+        'ChlOb3RPdXRkb29yc0ZhaWx1cmVEZXRhaWxzEj0KCnN0YXJ0X3RpbWUYASABKAsyGS5nb29nbG'
+        'UucHJvdG9idWYuRHVyYXRpb25IAFIJc3RhcnRUaW1liAEBQg0KC19zdGFydF90aW1l');
 
 @$core.Deprecated('Use noOverlapGpsFailureDetailsDescriptor instead')
 const NoOverlapGpsFailureDetails$json = {
   '1': 'NoOverlapGpsFailureDetails',
   '2': [
-    {'1': 'gps_start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'gpsStartTime', '17': true},
-    {'1': 'gps_end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 1, '10': 'gpsEndTime', '17': true},
-    {'1': 'video_start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 2, '10': 'videoStartTime', '17': true},
-    {'1': 'video_end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 3, '10': 'videoEndTime', '17': true},
+    {
+      '1': 'gps_start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'gpsStartTime',
+      '17': true
+    },
+    {
+      '1': 'gps_end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 1,
+      '10': 'gpsEndTime',
+      '17': true
+    },
+    {
+      '1': 'video_start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 2,
+      '10': 'videoStartTime',
+      '17': true
+    },
+    {
+      '1': 'video_end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 3,
+      '10': 'videoEndTime',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_gps_start_time'},
@@ -472,4 +855,3 @@ final $typed_data.Uint8List noOverlapGpsFailureDetailsDescriptor = $convert.base
     '90b2J1Zi5UaW1lc3RhbXBIA1IMdmlkZW9FbmRUaW1liAEBQhEKD19ncHNfc3RhcnRfdGltZUIP'
     'Cg1fZ3BzX2VuZF90aW1lQhMKEV92aWRlb19zdGFydF90aW1lQhEKD192aWRlb19lbmRfdGltZQ'
     '==');
-

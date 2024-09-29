@@ -19,18 +19,60 @@ const Application$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 2, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'dispatch_rules', '3': 3, '4': 3, '5': 11, '6': '.google.appengine.v1beta.UrlDispatchRule', '10': 'dispatchRules'},
+    {
+      '1': 'dispatch_rules',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.UrlDispatchRule',
+      '10': 'dispatchRules'
+    },
     {'1': 'auth_domain', '3': 6, '4': 1, '5': 9, '10': 'authDomain'},
     {'1': 'location_id', '3': 7, '4': 1, '5': 9, '10': 'locationId'},
     {'1': 'code_bucket', '3': 8, '4': 1, '5': 9, '10': 'codeBucket'},
-    {'1': 'default_cookie_expiration', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'defaultCookieExpiration'},
-    {'1': 'serving_status', '3': 10, '4': 1, '5': 14, '6': '.google.appengine.v1beta.Application.ServingStatus', '10': 'servingStatus'},
+    {
+      '1': 'default_cookie_expiration',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'defaultCookieExpiration'
+    },
+    {
+      '1': 'serving_status',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.Application.ServingStatus',
+      '10': 'servingStatus'
+    },
     {'1': 'default_hostname', '3': 11, '4': 1, '5': 9, '10': 'defaultHostname'},
     {'1': 'default_bucket', '3': 12, '4': 1, '5': 9, '10': 'defaultBucket'},
-    {'1': 'iap', '3': 14, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Application.IdentityAwareProxy', '10': 'iap'},
+    {
+      '1': 'iap',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Application.IdentityAwareProxy',
+      '10': 'iap'
+    },
     {'1': 'gcr_domain', '3': 16, '4': 1, '5': 9, '10': 'gcrDomain'},
-    {'1': 'database_type', '3': 17, '4': 1, '5': 14, '6': '.google.appengine.v1beta.Application.DatabaseType', '10': 'databaseType'},
-    {'1': 'feature_settings', '3': 18, '4': 1, '5': 11, '6': '.google.appengine.v1beta.Application.FeatureSettings', '10': 'featureSettings'},
+    {
+      '1': 'database_type',
+      '3': 17,
+      '4': 1,
+      '5': 14,
+      '6': '.google.appengine.v1beta.Application.DatabaseType',
+      '10': 'databaseType'
+    },
+    {
+      '1': 'feature_settings',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Application.FeatureSettings',
+      '10': 'featureSettings'
+    },
   ],
   '3': [Application_IdentityAwareProxy$json, Application_FeatureSettings$json],
   '4': [Application_ServingStatus$json, Application_DatabaseType$json],
@@ -42,8 +84,20 @@ const Application_IdentityAwareProxy$json = {
   '2': [
     {'1': 'enabled', '3': 1, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'oauth2_client_id', '3': 2, '4': 1, '5': 9, '10': 'oauth2ClientId'},
-    {'1': 'oauth2_client_secret', '3': 3, '4': 1, '5': 9, '10': 'oauth2ClientSecret'},
-    {'1': 'oauth2_client_secret_sha256', '3': 4, '4': 1, '5': 9, '10': 'oauth2ClientSecretSha256'},
+    {
+      '1': 'oauth2_client_secret',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'oauth2ClientSecret'
+    },
+    {
+      '1': 'oauth2_client_secret_sha256',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'oauth2ClientSecretSha256'
+    },
   ],
 };
 
@@ -51,8 +105,20 @@ const Application_IdentityAwareProxy$json = {
 const Application_FeatureSettings$json = {
   '1': 'FeatureSettings',
   '2': [
-    {'1': 'split_health_checks', '3': 1, '4': 1, '5': 8, '10': 'splitHealthChecks'},
-    {'1': 'use_container_optimized_os', '3': 2, '4': 1, '5': 8, '10': 'useContainerOptimizedOs'},
+    {
+      '1': 'split_health_checks',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'splitHealthChecks'
+    },
+    {
+      '1': 'use_container_optimized_os',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'useContainerOptimizedOs'
+    },
   ],
 };
 
@@ -119,4 +185,3 @@ const UrlDispatchRule$json = {
 final $typed_data.Uint8List urlDispatchRuleDescriptor = $convert.base64Decode(
     'Cg9VcmxEaXNwYXRjaFJ1bGUSFgoGZG9tYWluGAEgASgJUgZkb21haW4SEgoEcGF0aBgCIAEoCV'
     'IEcGF0aBIYCgdzZXJ2aWNlGAMgASgJUgdzZXJ2aWNl');
-

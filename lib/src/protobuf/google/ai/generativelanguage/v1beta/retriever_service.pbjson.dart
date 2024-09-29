@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const CreateCorpusRequest$json = {
   '1': 'CreateCorpusRequest',
   '2': [
-    {'1': 'corpus', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Corpus', '8': {}, '10': 'corpus'},
+    {
+      '1': 'corpus',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Corpus',
+      '8': {},
+      '10': 'corpus'
+    },
   ],
 };
 
@@ -43,8 +51,24 @@ final $typed_data.Uint8List getCorpusRequestDescriptor = $convert.base64Decode(
 const UpdateCorpusRequest$json = {
   '1': 'UpdateCorpusRequest',
   '2': [
-    {'1': 'corpus', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Corpus', '8': {}, '10': 'corpus'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'corpus',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Corpus',
+      '8': {},
+      '10': 'corpus'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -87,7 +111,14 @@ final $typed_data.Uint8List listCorporaRequestDescriptor = $convert.base64Decode
 const ListCorporaResponse$json = {
   '1': 'ListCorporaResponse',
   '2': [
-    {'1': 'corpora', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Corpus', '10': 'corpora'},
+    {
+      '1': 'corpora',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Corpus',
+      '10': 'corpora'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -104,8 +135,23 @@ const QueryCorpusRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'query', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'query'},
-    {'1': 'metadata_filters', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.MetadataFilter', '8': {}, '10': 'metadataFilters'},
-    {'1': 'results_count', '3': 4, '4': 1, '5': 5, '8': {}, '10': 'resultsCount'},
+    {
+      '1': 'metadata_filters',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.MetadataFilter',
+      '8': {},
+      '10': 'metadataFilters'
+    },
+    {
+      '1': 'results_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'resultsCount'
+    },
   ],
 };
 
@@ -121,7 +167,14 @@ final $typed_data.Uint8List queryCorpusRequestDescriptor = $convert.base64Decode
 const QueryCorpusResponse$json = {
   '1': 'QueryCorpusResponse',
   '2': [
-    {'1': 'relevant_chunks', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.RelevantChunk', '10': 'relevantChunks'},
+    {
+      '1': 'relevant_chunks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.RelevantChunk',
+      '10': 'relevantChunks'
+    },
   ],
 };
 
@@ -135,8 +188,21 @@ final $typed_data.Uint8List queryCorpusResponseDescriptor = $convert.base64Decod
 const RelevantChunk$json = {
   '1': 'RelevantChunk',
   '2': [
-    {'1': 'chunk_relevance_score', '3': 1, '4': 1, '5': 2, '10': 'chunkRelevanceScore'},
-    {'1': 'chunk', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Chunk', '10': 'chunk'},
+    {
+      '1': 'chunk_relevance_score',
+      '3': 1,
+      '4': 1,
+      '5': 2,
+      '10': 'chunkRelevanceScore'
+    },
+    {
+      '1': 'chunk',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Chunk',
+      '10': 'chunk'
+    },
   ],
 };
 
@@ -151,7 +217,15 @@ const CreateDocumentRequest$json = {
   '1': 'CreateDocumentRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'document', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Document', '8': {}, '10': 'document'},
+    {
+      '1': 'document',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Document',
+      '8': {},
+      '10': 'document'
+    },
   ],
 };
 
@@ -179,8 +253,24 @@ final $typed_data.Uint8List getDocumentRequestDescriptor = $convert.base64Decode
 const UpdateDocumentRequest$json = {
   '1': 'UpdateDocumentRequest',
   '2': [
-    {'1': 'document', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Document', '8': {}, '10': 'document'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'document',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Document',
+      '8': {},
+      '10': 'document'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -227,7 +317,14 @@ final $typed_data.Uint8List listDocumentsRequestDescriptor = $convert.base64Deco
 const ListDocumentsResponse$json = {
   '1': 'ListDocumentsResponse',
   '2': [
-    {'1': 'documents', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Document', '10': 'documents'},
+    {
+      '1': 'documents',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Document',
+      '10': 'documents'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -244,8 +341,23 @@ const QueryDocumentRequest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'query', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'query'},
-    {'1': 'results_count', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'resultsCount'},
-    {'1': 'metadata_filters', '3': 4, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.MetadataFilter', '8': {}, '10': 'metadataFilters'},
+    {
+      '1': 'results_count',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'resultsCount'
+    },
+    {
+      '1': 'metadata_filters',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.MetadataFilter',
+      '8': {},
+      '10': 'metadataFilters'
+    },
   ],
 };
 
@@ -261,7 +373,14 @@ final $typed_data.Uint8List queryDocumentRequestDescriptor = $convert.base64Deco
 const QueryDocumentResponse$json = {
   '1': 'QueryDocumentResponse',
   '2': [
-    {'1': 'relevant_chunks', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.RelevantChunk', '10': 'relevantChunks'},
+    {
+      '1': 'relevant_chunks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.RelevantChunk',
+      '10': 'relevantChunks'
+    },
   ],
 };
 
@@ -276,7 +395,15 @@ const CreateChunkRequest$json = {
   '1': 'CreateChunkRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'chunk', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Chunk', '8': {}, '10': 'chunk'},
+    {
+      '1': 'chunk',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Chunk',
+      '8': {},
+      '10': 'chunk'
+    },
   ],
 };
 
@@ -291,7 +418,15 @@ const BatchCreateChunksRequest$json = {
   '1': 'BatchCreateChunksRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'requests', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CreateChunkRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.CreateChunkRequest',
+      '8': {},
+      '10': 'requests'
+    },
   ],
 };
 
@@ -306,14 +441,22 @@ final $typed_data.Uint8List batchCreateChunksRequestDescriptor = $convert.base64
 const BatchCreateChunksResponse$json = {
   '1': 'BatchCreateChunksResponse',
   '2': [
-    {'1': 'chunks', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Chunk', '10': 'chunks'},
+    {
+      '1': 'chunks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Chunk',
+      '10': 'chunks'
+    },
   ],
 };
 
 /// Descriptor for `BatchCreateChunksResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchCreateChunksResponseDescriptor = $convert.base64Decode(
-    'ChlCYXRjaENyZWF0ZUNodW5rc1Jlc3BvbnNlEkIKBmNodW5rcxgBIAMoCzIqLmdvb2dsZS5haS'
-    '5nZW5lcmF0aXZlbGFuZ3VhZ2UudjFiZXRhLkNodW5rUgZjaHVua3M=');
+final $typed_data.Uint8List batchCreateChunksResponseDescriptor =
+    $convert.base64Decode(
+        'ChlCYXRjaENyZWF0ZUNodW5rc1Jlc3BvbnNlEkIKBmNodW5rcxgBIAMoCzIqLmdvb2dsZS5haS'
+        '5nZW5lcmF0aXZlbGFuZ3VhZ2UudjFiZXRhLkNodW5rUgZjaHVua3M=');
 
 @$core.Deprecated('Use getChunkRequestDescriptor instead')
 const GetChunkRequest$json = {
@@ -332,8 +475,24 @@ final $typed_data.Uint8List getChunkRequestDescriptor = $convert.base64Decode(
 const UpdateChunkRequest$json = {
   '1': 'UpdateChunkRequest',
   '2': [
-    {'1': 'chunk', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Chunk', '8': {}, '10': 'chunk'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'chunk',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Chunk',
+      '8': {},
+      '10': 'chunk'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -348,7 +507,15 @@ const BatchUpdateChunksRequest$json = {
   '1': 'BatchUpdateChunksRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'requests', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.UpdateChunkRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.UpdateChunkRequest',
+      '8': {},
+      '10': 'requests'
+    },
   ],
 };
 
@@ -363,14 +530,22 @@ final $typed_data.Uint8List batchUpdateChunksRequestDescriptor = $convert.base64
 const BatchUpdateChunksResponse$json = {
   '1': 'BatchUpdateChunksResponse',
   '2': [
-    {'1': 'chunks', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Chunk', '10': 'chunks'},
+    {
+      '1': 'chunks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Chunk',
+      '10': 'chunks'
+    },
   ],
 };
 
 /// Descriptor for `BatchUpdateChunksResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchUpdateChunksResponseDescriptor = $convert.base64Decode(
-    'ChlCYXRjaFVwZGF0ZUNodW5rc1Jlc3BvbnNlEkIKBmNodW5rcxgBIAMoCzIqLmdvb2dsZS5haS'
-    '5nZW5lcmF0aXZlbGFuZ3VhZ2UudjFiZXRhLkNodW5rUgZjaHVua3M=');
+final $typed_data.Uint8List batchUpdateChunksResponseDescriptor =
+    $convert.base64Decode(
+        'ChlCYXRjaFVwZGF0ZUNodW5rc1Jlc3BvbnNlEkIKBmNodW5rcxgBIAMoCzIqLmdvb2dsZS5haS'
+        '5nZW5lcmF0aXZlbGFuZ3VhZ2UudjFiZXRhLkNodW5rUgZjaHVua3M=');
 
 @$core.Deprecated('Use deleteChunkRequestDescriptor instead')
 const DeleteChunkRequest$json = {
@@ -390,7 +565,15 @@ const BatchDeleteChunksRequest$json = {
   '1': 'BatchDeleteChunksRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'requests', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.DeleteChunkRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.DeleteChunkRequest',
+      '8': {},
+      '10': 'requests'
+    },
   ],
 };
 
@@ -421,7 +604,14 @@ final $typed_data.Uint8List listChunksRequestDescriptor = $convert.base64Decode(
 const ListChunksResponse$json = {
   '1': 'ListChunksResponse',
   '2': [
-    {'1': 'chunks', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Chunk', '10': 'chunks'},
+    {
+      '1': 'chunks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Chunk',
+      '10': 'chunks'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -431,4 +621,3 @@ final $typed_data.Uint8List listChunksResponseDescriptor = $convert.base64Decode
     'ChJMaXN0Q2h1bmtzUmVzcG9uc2USQgoGY2h1bmtzGAEgAygLMiouZ29vZ2xlLmFpLmdlbmVyYX'
     'RpdmVsYW5ndWFnZS52MWJldGEuQ2h1bmtSBmNodW5rcxImCg9uZXh0X3BhZ2VfdG9rZW4YAiAB'
     'KAlSDW5leHRQYWdlVG9rZW4=');
-

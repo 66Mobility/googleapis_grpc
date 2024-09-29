@@ -15,21 +15,24 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// A description of a LabelLock's state.
 class LabelLock_State extends $pb.ProtobufEnum {
-  static const LabelLock_State STATE_UNSPECIFIED = LabelLock_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const LabelLock_State ACTIVE = LabelLock_State._(1, _omitEnumNames ? '' : 'ACTIVE');
-  static const LabelLock_State DELETING = LabelLock_State._(2, _omitEnumNames ? '' : 'DELETING');
+  static const LabelLock_State STATE_UNSPECIFIED =
+      LabelLock_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const LabelLock_State ACTIVE =
+      LabelLock_State._(1, _omitEnumNames ? '' : 'ACTIVE');
+  static const LabelLock_State DELETING =
+      LabelLock_State._(2, _omitEnumNames ? '' : 'DELETING');
 
-  static const $core.List<LabelLock_State> values = <LabelLock_State> [
+  static const $core.List<LabelLock_State> values = <LabelLock_State>[
     STATE_UNSPECIFIED,
     ACTIVE,
     DELETING,
   ];
 
-  static final $core.Map<$core.int, LabelLock_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, LabelLock_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static LabelLock_State? valueOf($core.int value) => _byValue[value];
 
   const LabelLock_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

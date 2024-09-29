@@ -15,23 +15,27 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// States for the lifecycle of a File.
 class File_State extends $pb.ProtobufEnum {
-  static const File_State STATE_UNSPECIFIED = File_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const File_State PROCESSING = File_State._(1, _omitEnumNames ? '' : 'PROCESSING');
-  static const File_State ACTIVE = File_State._(2, _omitEnumNames ? '' : 'ACTIVE');
-  static const File_State FAILED = File_State._(10, _omitEnumNames ? '' : 'FAILED');
+  static const File_State STATE_UNSPECIFIED =
+      File_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const File_State PROCESSING =
+      File_State._(1, _omitEnumNames ? '' : 'PROCESSING');
+  static const File_State ACTIVE =
+      File_State._(2, _omitEnumNames ? '' : 'ACTIVE');
+  static const File_State FAILED =
+      File_State._(10, _omitEnumNames ? '' : 'FAILED');
 
-  static const $core.List<File_State> values = <File_State> [
+  static const $core.List<File_State> values = <File_State>[
     STATE_UNSPECIFIED,
     PROCESSING,
     ACTIVE,
     FAILED,
   ];
 
-  static final $core.Map<$core.int, File_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, File_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static File_State? valueOf($core.int value) => _byValue[value];
 
   const File_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

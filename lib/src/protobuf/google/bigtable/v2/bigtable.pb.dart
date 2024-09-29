@@ -64,40 +64,56 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ReadRowsRequest._() : super();
-  factory ReadRowsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadRowsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadRowsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadRowsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadRowsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadRowsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
-    ..aOM<$403.RowSet>(2, _omitFieldNames ? '' : 'rows', subBuilder: $403.RowSet.create)
-    ..aOM<$403.RowFilter>(3, _omitFieldNames ? '' : 'filter', subBuilder: $403.RowFilter.create)
+    ..aOM<$403.RowSet>(2, _omitFieldNames ? '' : 'rows',
+        subBuilder: $403.RowSet.create)
+    ..aOM<$403.RowFilter>(3, _omitFieldNames ? '' : 'filter',
+        subBuilder: $403.RowFilter.create)
     ..aInt64(4, _omitFieldNames ? '' : 'rowsLimit')
     ..aOS(5, _omitFieldNames ? '' : 'appProfileId')
-    ..e<ReadRowsRequest_RequestStatsView>(6, _omitFieldNames ? '' : 'requestStatsView', $pb.PbFieldType.OE, defaultOrMaker: ReadRowsRequest_RequestStatsView.REQUEST_STATS_VIEW_UNSPECIFIED, valueOf: ReadRowsRequest_RequestStatsView.valueOf, enumValues: ReadRowsRequest_RequestStatsView.values)
+    ..e<ReadRowsRequest_RequestStatsView>(
+        6, _omitFieldNames ? '' : 'requestStatsView', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            ReadRowsRequest_RequestStatsView.REQUEST_STATS_VIEW_UNSPECIFIED,
+        valueOf: ReadRowsRequest_RequestStatsView.valueOf,
+        enumValues: ReadRowsRequest_RequestStatsView.values)
     ..aOB(7, _omitFieldNames ? '' : 'reversed')
     ..aOS(9, _omitFieldNames ? '' : 'authorizedViewName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReadRowsRequest clone() => ReadRowsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadRowsRequest copyWith(void Function(ReadRowsRequest) updates) => super.copyWith((message) => updates(message as ReadRowsRequest)) as ReadRowsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadRowsRequest copyWith(void Function(ReadRowsRequest) updates) =>
+      super.copyWith((message) => updates(message as ReadRowsRequest))
+          as ReadRowsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadRowsRequest create() => ReadRowsRequest._();
   ReadRowsRequest createEmptyInstance() => create();
-  static $pb.PbList<ReadRowsRequest> createRepeated() => $pb.PbList<ReadRowsRequest>();
+  static $pb.PbList<ReadRowsRequest> createRepeated() =>
+      $pb.PbList<ReadRowsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ReadRowsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadRowsRequest>(create);
+  static ReadRowsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadRowsRequest>(create);
   static ReadRowsRequest? _defaultInstance;
 
   ///  Optional. The unique name of the table from which to read.
@@ -107,7 +123,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -118,7 +137,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $403.RowSet get rows => $_getN(1);
   @$pb.TagNumber(2)
-  set rows($403.RowSet v) { setField(2, v); }
+  set rows($403.RowSet v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRows() => $_has(1);
   @$pb.TagNumber(2)
@@ -131,7 +153,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $403.RowFilter get filter => $_getN(2);
   @$pb.TagNumber(3)
-  set filter($403.RowFilter v) { setField(3, v); }
+  set filter($403.RowFilter v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFilter() => $_has(2);
   @$pb.TagNumber(3)
@@ -144,7 +169,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get rowsLimit => $_getI64(3);
   @$pb.TagNumber(4)
-  set rowsLimit($fixnum.Int64 v) { $_setInt64(3, v); }
+  set rowsLimit($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRowsLimit() => $_has(3);
   @$pb.TagNumber(4)
@@ -155,7 +183,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get appProfileId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set appProfileId($core.String v) { $_setString(4, v); }
+  set appProfileId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAppProfileId() => $_has(4);
   @$pb.TagNumber(5)
@@ -165,7 +196,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   ReadRowsRequest_RequestStatsView get requestStatsView => $_getN(5);
   @$pb.TagNumber(6)
-  set requestStatsView(ReadRowsRequest_RequestStatsView v) { setField(6, v); }
+  set requestStatsView(ReadRowsRequest_RequestStatsView v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasRequestStatsView() => $_has(5);
   @$pb.TagNumber(6)
@@ -186,7 +220,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get reversed => $_getBF(6);
   @$pb.TagNumber(7)
-  set reversed($core.bool v) { $_setBool(6, v); }
+  set reversed($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasReversed() => $_has(6);
   @$pb.TagNumber(7)
@@ -199,18 +236,17 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get authorizedViewName => $_getSZ(7);
   @$pb.TagNumber(9)
-  set authorizedViewName($core.String v) { $_setString(7, v); }
+  set authorizedViewName($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasAuthorizedViewName() => $_has(7);
   @$pb.TagNumber(9)
   void clearAuthorizedViewName() => clearField(9);
 }
 
-enum ReadRowsResponse_CellChunk_RowStatus {
-  resetRow, 
-  commitRow, 
-  notSet
-}
+enum ReadRowsResponse_CellChunk_RowStatus { resetRow, commitRow, notSet }
 
 /// Specifies a piece of a row's contents returned as part of the read
 /// response stream.
@@ -257,50 +293,68 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
     return $result;
   }
   ReadRowsResponse_CellChunk._() : super();
-  factory ReadRowsResponse_CellChunk.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadRowsResponse_CellChunk.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadRowsResponse_CellChunk.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadRowsResponse_CellChunk.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ReadRowsResponse_CellChunk_RowStatus> _ReadRowsResponse_CellChunk_RowStatusByTag = {
-    8 : ReadRowsResponse_CellChunk_RowStatus.resetRow,
-    9 : ReadRowsResponse_CellChunk_RowStatus.commitRow,
-    0 : ReadRowsResponse_CellChunk_RowStatus.notSet
+  static const $core.Map<$core.int, ReadRowsResponse_CellChunk_RowStatus>
+      _ReadRowsResponse_CellChunk_RowStatusByTag = {
+    8: ReadRowsResponse_CellChunk_RowStatus.resetRow,
+    9: ReadRowsResponse_CellChunk_RowStatus.commitRow,
+    0: ReadRowsResponse_CellChunk_RowStatus.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadRowsResponse.CellChunk', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadRowsResponse.CellChunk',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..oo(0, [8, 9])
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..aOM<$307.StringValue>(2, _omitFieldNames ? '' : 'familyName', subBuilder: $307.StringValue.create)
-    ..aOM<$307.BytesValue>(3, _omitFieldNames ? '' : 'qualifier', subBuilder: $307.BytesValue.create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
+    ..aOM<$307.StringValue>(2, _omitFieldNames ? '' : 'familyName',
+        subBuilder: $307.StringValue.create)
+    ..aOM<$307.BytesValue>(3, _omitFieldNames ? '' : 'qualifier',
+        subBuilder: $307.BytesValue.create)
     ..aInt64(4, _omitFieldNames ? '' : 'timestampMicros')
     ..pPS(5, _omitFieldNames ? '' : 'labels')
-    ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OY)
+    ..a<$core.List<$core.int>>(
+        6, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OY)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'valueSize', $pb.PbFieldType.O3)
     ..aOB(8, _omitFieldNames ? '' : 'resetRow')
     ..aOB(9, _omitFieldNames ? '' : 'commitRow')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadRowsResponse_CellChunk clone() => ReadRowsResponse_CellChunk()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadRowsResponse_CellChunk copyWith(void Function(ReadRowsResponse_CellChunk) updates) => super.copyWith((message) => updates(message as ReadRowsResponse_CellChunk)) as ReadRowsResponse_CellChunk;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadRowsResponse_CellChunk clone() =>
+      ReadRowsResponse_CellChunk()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadRowsResponse_CellChunk copyWith(
+          void Function(ReadRowsResponse_CellChunk) updates) =>
+      super.copyWith(
+              (message) => updates(message as ReadRowsResponse_CellChunk))
+          as ReadRowsResponse_CellChunk;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadRowsResponse_CellChunk create() => ReadRowsResponse_CellChunk._();
   ReadRowsResponse_CellChunk createEmptyInstance() => create();
-  static $pb.PbList<ReadRowsResponse_CellChunk> createRepeated() => $pb.PbList<ReadRowsResponse_CellChunk>();
+  static $pb.PbList<ReadRowsResponse_CellChunk> createRepeated() =>
+      $pb.PbList<ReadRowsResponse_CellChunk>();
   @$core.pragma('dart2js:noInline')
-  static ReadRowsResponse_CellChunk getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadRowsResponse_CellChunk>(create);
+  static ReadRowsResponse_CellChunk getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadRowsResponse_CellChunk>(create);
   static ReadRowsResponse_CellChunk? _defaultInstance;
 
-  ReadRowsResponse_CellChunk_RowStatus whichRowStatus() => _ReadRowsResponse_CellChunk_RowStatusByTag[$_whichOneof(0)]!;
+  ReadRowsResponse_CellChunk_RowStatus whichRowStatus() =>
+      _ReadRowsResponse_CellChunk_RowStatusByTag[$_whichOneof(0)]!;
   void clearRowStatus() => clearField($_whichOneof(0));
 
   /// The row key for this chunk of data.  If the row key is empty,
@@ -310,7 +364,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get rowKey => $_getN(0);
   @$pb.TagNumber(1)
-  set rowKey($core.List<$core.int> v) { $_setBytes(0, v); }
+  set rowKey($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRowKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -325,7 +382,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $307.StringValue get familyName => $_getN(1);
   @$pb.TagNumber(2)
-  set familyName($307.StringValue v) { setField(2, v); }
+  set familyName($307.StringValue v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFamilyName() => $_has(1);
   @$pb.TagNumber(2)
@@ -341,7 +401,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $307.BytesValue get qualifier => $_getN(2);
   @$pb.TagNumber(3)
-  set qualifier($307.BytesValue v) { setField(3, v); }
+  set qualifier($307.BytesValue v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasQualifier() => $_has(2);
   @$pb.TagNumber(3)
@@ -360,7 +423,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get timestampMicros => $_getI64(3);
   @$pb.TagNumber(4)
-  set timestampMicros($fixnum.Int64 v) { $_setInt64(3, v); }
+  set timestampMicros($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTimestampMicros() => $_has(3);
   @$pb.TagNumber(4)
@@ -380,7 +446,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.List<$core.int> get value => $_getN(5);
   @$pb.TagNumber(6)
-  set value($core.List<$core.int> v) { $_setBytes(5, v); }
+  set value($core.List<$core.int> v) {
+    $_setBytes(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasValue() => $_has(5);
   @$pb.TagNumber(6)
@@ -393,7 +462,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get valueSize => $_getIZ(6);
   @$pb.TagNumber(7)
-  set valueSize($core.int v) { $_setSignedInt32(6, v); }
+  set valueSize($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasValueSize() => $_has(6);
   @$pb.TagNumber(7)
@@ -404,7 +476,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get resetRow => $_getBF(7);
   @$pb.TagNumber(8)
-  set resetRow($core.bool v) { $_setBool(7, v); }
+  set resetRow($core.bool v) {
+    $_setBool(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasResetRow() => $_has(7);
   @$pb.TagNumber(8)
@@ -415,7 +490,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool get commitRow => $_getBF(8);
   @$pb.TagNumber(9)
-  set commitRow($core.bool v) { $_setBool(8, v); }
+  set commitRow($core.bool v) {
+    $_setBool(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCommitRow() => $_has(8);
   @$pb.TagNumber(9)
@@ -442,35 +520,48 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ReadRowsResponse._() : super();
-  factory ReadRowsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadRowsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadRowsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadRowsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadRowsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..pc<ReadRowsResponse_CellChunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM, subBuilder: ReadRowsResponse_CellChunk.create)
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'lastScannedRowKey', $pb.PbFieldType.OY)
-    ..aOM<$404.RequestStats>(3, _omitFieldNames ? '' : 'requestStats', subBuilder: $404.RequestStats.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadRowsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..pc<ReadRowsResponse_CellChunk>(
+        1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: ReadRowsResponse_CellChunk.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'lastScannedRowKey', $pb.PbFieldType.OY)
+    ..aOM<$404.RequestStats>(3, _omitFieldNames ? '' : 'requestStats',
+        subBuilder: $404.RequestStats.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ReadRowsResponse clone() => ReadRowsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadRowsResponse copyWith(void Function(ReadRowsResponse) updates) => super.copyWith((message) => updates(message as ReadRowsResponse)) as ReadRowsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadRowsResponse copyWith(void Function(ReadRowsResponse) updates) =>
+      super.copyWith((message) => updates(message as ReadRowsResponse))
+          as ReadRowsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadRowsResponse create() => ReadRowsResponse._();
   ReadRowsResponse createEmptyInstance() => create();
-  static $pb.PbList<ReadRowsResponse> createRepeated() => $pb.PbList<ReadRowsResponse>();
+  static $pb.PbList<ReadRowsResponse> createRepeated() =>
+      $pb.PbList<ReadRowsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ReadRowsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadRowsResponse>(create);
+  static ReadRowsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadRowsResponse>(create);
   static ReadRowsResponse? _defaultInstance;
 
   /// A collection of a row's contents as part of the read request.
@@ -487,7 +578,10 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get lastScannedRowKey => $_getN(1);
   @$pb.TagNumber(2)
-  set lastScannedRowKey($core.List<$core.int> v) { $_setBytes(1, v); }
+  set lastScannedRowKey($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLastScannedRowKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -516,7 +610,10 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $404.RequestStats get requestStats => $_getN(2);
   @$pb.TagNumber(3)
-  set requestStats($404.RequestStats v) { setField(3, v); }
+  set requestStats($404.RequestStats v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequestStats() => $_has(2);
   @$pb.TagNumber(3)
@@ -545,35 +642,45 @@ class SampleRowKeysRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SampleRowKeysRequest._() : super();
-  factory SampleRowKeysRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SampleRowKeysRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SampleRowKeysRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SampleRowKeysRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SampleRowKeysRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SampleRowKeysRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(4, _omitFieldNames ? '' : 'authorizedViewName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SampleRowKeysRequest clone() => SampleRowKeysRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SampleRowKeysRequest copyWith(void Function(SampleRowKeysRequest) updates) => super.copyWith((message) => updates(message as SampleRowKeysRequest)) as SampleRowKeysRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SampleRowKeysRequest clone() =>
+      SampleRowKeysRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SampleRowKeysRequest copyWith(void Function(SampleRowKeysRequest) updates) =>
+      super.copyWith((message) => updates(message as SampleRowKeysRequest))
+          as SampleRowKeysRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SampleRowKeysRequest create() => SampleRowKeysRequest._();
   SampleRowKeysRequest createEmptyInstance() => create();
-  static $pb.PbList<SampleRowKeysRequest> createRepeated() => $pb.PbList<SampleRowKeysRequest>();
+  static $pb.PbList<SampleRowKeysRequest> createRepeated() =>
+      $pb.PbList<SampleRowKeysRequest>();
   @$core.pragma('dart2js:noInline')
-  static SampleRowKeysRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SampleRowKeysRequest>(create);
+  static SampleRowKeysRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SampleRowKeysRequest>(create);
   static SampleRowKeysRequest? _defaultInstance;
 
   ///  Optional. The unique name of the table from which to sample row keys.
@@ -583,7 +690,10 @@ class SampleRowKeysRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -594,7 +704,10 @@ class SampleRowKeysRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get appProfileId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set appProfileId($core.String v) { $_setString(1, v); }
+  set appProfileId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAppProfileId() => $_has(1);
   @$pb.TagNumber(2)
@@ -608,7 +721,10 @@ class SampleRowKeysRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get authorizedViewName => $_getSZ(2);
   @$pb.TagNumber(4)
-  set authorizedViewName($core.String v) { $_setString(2, v); }
+  set authorizedViewName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAuthorizedViewName() => $_has(2);
   @$pb.TagNumber(4)
@@ -631,34 +747,46 @@ class SampleRowKeysResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SampleRowKeysResponse._() : super();
-  factory SampleRowKeysResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SampleRowKeysResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SampleRowKeysResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SampleRowKeysResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SampleRowKeysResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SampleRowKeysResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
     ..aInt64(2, _omitFieldNames ? '' : 'offsetBytes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SampleRowKeysResponse clone() => SampleRowKeysResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SampleRowKeysResponse copyWith(void Function(SampleRowKeysResponse) updates) => super.copyWith((message) => updates(message as SampleRowKeysResponse)) as SampleRowKeysResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SampleRowKeysResponse clone() =>
+      SampleRowKeysResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SampleRowKeysResponse copyWith(
+          void Function(SampleRowKeysResponse) updates) =>
+      super.copyWith((message) => updates(message as SampleRowKeysResponse))
+          as SampleRowKeysResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SampleRowKeysResponse create() => SampleRowKeysResponse._();
   SampleRowKeysResponse createEmptyInstance() => create();
-  static $pb.PbList<SampleRowKeysResponse> createRepeated() => $pb.PbList<SampleRowKeysResponse>();
+  static $pb.PbList<SampleRowKeysResponse> createRepeated() =>
+      $pb.PbList<SampleRowKeysResponse>();
   @$core.pragma('dart2js:noInline')
-  static SampleRowKeysResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SampleRowKeysResponse>(create);
+  static SampleRowKeysResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SampleRowKeysResponse>(create);
   static SampleRowKeysResponse? _defaultInstance;
 
   /// Sorted streamed sequence of sample row keys in the table. The table might
@@ -671,7 +799,10 @@ class SampleRowKeysResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get rowKey => $_getN(0);
   @$pb.TagNumber(1)
-  set rowKey($core.List<$core.int> v) { $_setBytes(0, v); }
+  set rowKey($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRowKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -684,7 +815,10 @@ class SampleRowKeysResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get offsetBytes => $_getI64(1);
   @$pb.TagNumber(2)
-  set offsetBytes($fixnum.Int64 v) { $_setInt64(1, v); }
+  set offsetBytes($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOffsetBytes() => $_has(1);
   @$pb.TagNumber(2)
@@ -719,37 +853,49 @@ class MutateRowRequest extends $pb.GeneratedMessage {
     return $result;
   }
   MutateRowRequest._() : super();
-  factory MutateRowRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MutateRowRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MutateRowRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MutateRowRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRowRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MutateRowRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.Mutation>(3, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM, subBuilder: $403.Mutation.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
+    ..pc<$403.Mutation>(
+        3, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM,
+        subBuilder: $403.Mutation.create)
     ..aOS(4, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(6, _omitFieldNames ? '' : 'authorizedViewName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MutateRowRequest clone() => MutateRowRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MutateRowRequest copyWith(void Function(MutateRowRequest) updates) => super.copyWith((message) => updates(message as MutateRowRequest)) as MutateRowRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MutateRowRequest copyWith(void Function(MutateRowRequest) updates) =>
+      super.copyWith((message) => updates(message as MutateRowRequest))
+          as MutateRowRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MutateRowRequest create() => MutateRowRequest._();
   MutateRowRequest createEmptyInstance() => create();
-  static $pb.PbList<MutateRowRequest> createRepeated() => $pb.PbList<MutateRowRequest>();
+  static $pb.PbList<MutateRowRequest> createRepeated() =>
+      $pb.PbList<MutateRowRequest>();
   @$core.pragma('dart2js:noInline')
-  static MutateRowRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MutateRowRequest>(create);
+  static MutateRowRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MutateRowRequest>(create);
   static MutateRowRequest? _defaultInstance;
 
   ///  Optional. The unique name of the table to which the mutation should be
@@ -760,7 +906,10 @@ class MutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -770,7 +919,10 @@ class MutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get rowKey => $_getN(1);
   @$pb.TagNumber(2)
-  set rowKey($core.List<$core.int> v) { $_setBytes(1, v); }
+  set rowKey($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRowKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -787,7 +939,10 @@ class MutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get appProfileId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set appProfileId($core.String v) { $_setString(3, v); }
+  set appProfileId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAppProfileId() => $_has(3);
   @$pb.TagNumber(4)
@@ -801,7 +956,10 @@ class MutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get authorizedViewName => $_getSZ(4);
   @$pb.TagNumber(6)
-  set authorizedViewName($core.String v) { $_setString(4, v); }
+  set authorizedViewName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAuthorizedViewName() => $_has(4);
   @$pb.TagNumber(6)
@@ -812,32 +970,41 @@ class MutateRowRequest extends $pb.GeneratedMessage {
 class MutateRowResponse extends $pb.GeneratedMessage {
   factory MutateRowResponse() => create();
   MutateRowResponse._() : super();
-  factory MutateRowResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MutateRowResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MutateRowResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MutateRowResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRowResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MutateRowResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MutateRowResponse clone() => MutateRowResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MutateRowResponse copyWith(void Function(MutateRowResponse) updates) => super.copyWith((message) => updates(message as MutateRowResponse)) as MutateRowResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MutateRowResponse copyWith(void Function(MutateRowResponse) updates) =>
+      super.copyWith((message) => updates(message as MutateRowResponse))
+          as MutateRowResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MutateRowResponse create() => MutateRowResponse._();
   MutateRowResponse createEmptyInstance() => create();
-  static $pb.PbList<MutateRowResponse> createRepeated() => $pb.PbList<MutateRowResponse>();
+  static $pb.PbList<MutateRowResponse> createRepeated() =>
+      $pb.PbList<MutateRowResponse>();
   @$core.pragma('dart2js:noInline')
-  static MutateRowResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MutateRowResponse>(create);
+  static MutateRowResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MutateRowResponse>(create);
   static MutateRowResponse? _defaultInstance;
 }
 
@@ -857,41 +1024,58 @@ class MutateRowsRequest_Entry extends $pb.GeneratedMessage {
     return $result;
   }
   MutateRowsRequest_Entry._() : super();
-  factory MutateRowsRequest_Entry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MutateRowsRequest_Entry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MutateRowsRequest_Entry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MutateRowsRequest_Entry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRowsRequest.Entry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.Mutation>(2, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM, subBuilder: $403.Mutation.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MutateRowsRequest.Entry',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
+    ..pc<$403.Mutation>(
+        2, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM,
+        subBuilder: $403.Mutation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MutateRowsRequest_Entry clone() => MutateRowsRequest_Entry()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MutateRowsRequest_Entry copyWith(void Function(MutateRowsRequest_Entry) updates) => super.copyWith((message) => updates(message as MutateRowsRequest_Entry)) as MutateRowsRequest_Entry;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MutateRowsRequest_Entry clone() =>
+      MutateRowsRequest_Entry()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MutateRowsRequest_Entry copyWith(
+          void Function(MutateRowsRequest_Entry) updates) =>
+      super.copyWith((message) => updates(message as MutateRowsRequest_Entry))
+          as MutateRowsRequest_Entry;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MutateRowsRequest_Entry create() => MutateRowsRequest_Entry._();
   MutateRowsRequest_Entry createEmptyInstance() => create();
-  static $pb.PbList<MutateRowsRequest_Entry> createRepeated() => $pb.PbList<MutateRowsRequest_Entry>();
+  static $pb.PbList<MutateRowsRequest_Entry> createRepeated() =>
+      $pb.PbList<MutateRowsRequest_Entry>();
   @$core.pragma('dart2js:noInline')
-  static MutateRowsRequest_Entry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MutateRowsRequest_Entry>(create);
+  static MutateRowsRequest_Entry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MutateRowsRequest_Entry>(create);
   static MutateRowsRequest_Entry? _defaultInstance;
 
   /// The key of the row to which the `mutations` should be applied.
   @$pb.TagNumber(1)
   $core.List<$core.int> get rowKey => $_getN(0);
   @$pb.TagNumber(1)
-  set rowKey($core.List<$core.int> v) { $_setBytes(0, v); }
+  set rowKey($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRowKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -928,36 +1112,47 @@ class MutateRowsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   MutateRowsRequest._() : super();
-  factory MutateRowsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MutateRowsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MutateRowsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MutateRowsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRowsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MutateRowsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
-    ..pc<MutateRowsRequest_Entry>(2, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: MutateRowsRequest_Entry.create)
+    ..pc<MutateRowsRequest_Entry>(
+        2, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM,
+        subBuilder: MutateRowsRequest_Entry.create)
     ..aOS(3, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(5, _omitFieldNames ? '' : 'authorizedViewName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MutateRowsRequest clone() => MutateRowsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MutateRowsRequest copyWith(void Function(MutateRowsRequest) updates) => super.copyWith((message) => updates(message as MutateRowsRequest)) as MutateRowsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MutateRowsRequest copyWith(void Function(MutateRowsRequest) updates) =>
+      super.copyWith((message) => updates(message as MutateRowsRequest))
+          as MutateRowsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MutateRowsRequest create() => MutateRowsRequest._();
   MutateRowsRequest createEmptyInstance() => create();
-  static $pb.PbList<MutateRowsRequest> createRepeated() => $pb.PbList<MutateRowsRequest>();
+  static $pb.PbList<MutateRowsRequest> createRepeated() =>
+      $pb.PbList<MutateRowsRequest>();
   @$core.pragma('dart2js:noInline')
-  static MutateRowsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MutateRowsRequest>(create);
+  static MutateRowsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MutateRowsRequest>(create);
   static MutateRowsRequest? _defaultInstance;
 
   ///  Optional. The unique name of the table to which the mutations should be
@@ -968,7 +1163,10 @@ class MutateRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -987,7 +1185,10 @@ class MutateRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get appProfileId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set appProfileId($core.String v) { $_setString(2, v); }
+  set appProfileId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAppProfileId() => $_has(2);
   @$pb.TagNumber(3)
@@ -1001,7 +1202,10 @@ class MutateRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get authorizedViewName => $_getSZ(3);
   @$pb.TagNumber(5)
-  set authorizedViewName($core.String v) { $_setString(3, v); }
+  set authorizedViewName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAuthorizedViewName() => $_has(3);
   @$pb.TagNumber(5)
@@ -1024,34 +1228,46 @@ class MutateRowsResponse_Entry extends $pb.GeneratedMessage {
     return $result;
   }
   MutateRowsResponse_Entry._() : super();
-  factory MutateRowsResponse_Entry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MutateRowsResponse_Entry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MutateRowsResponse_Entry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MutateRowsResponse_Entry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRowsResponse.Entry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MutateRowsResponse.Entry',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'index')
-    ..aOM<$322.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $322.Status.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$322.Status>(2, _omitFieldNames ? '' : 'status',
+        subBuilder: $322.Status.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MutateRowsResponse_Entry clone() => MutateRowsResponse_Entry()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MutateRowsResponse_Entry copyWith(void Function(MutateRowsResponse_Entry) updates) => super.copyWith((message) => updates(message as MutateRowsResponse_Entry)) as MutateRowsResponse_Entry;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MutateRowsResponse_Entry clone() =>
+      MutateRowsResponse_Entry()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MutateRowsResponse_Entry copyWith(
+          void Function(MutateRowsResponse_Entry) updates) =>
+      super.copyWith((message) => updates(message as MutateRowsResponse_Entry))
+          as MutateRowsResponse_Entry;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MutateRowsResponse_Entry create() => MutateRowsResponse_Entry._();
   MutateRowsResponse_Entry createEmptyInstance() => create();
-  static $pb.PbList<MutateRowsResponse_Entry> createRepeated() => $pb.PbList<MutateRowsResponse_Entry>();
+  static $pb.PbList<MutateRowsResponse_Entry> createRepeated() =>
+      $pb.PbList<MutateRowsResponse_Entry>();
   @$core.pragma('dart2js:noInline')
-  static MutateRowsResponse_Entry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MutateRowsResponse_Entry>(create);
+  static MutateRowsResponse_Entry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MutateRowsResponse_Entry>(create);
   static MutateRowsResponse_Entry? _defaultInstance;
 
   /// The index into the original request's `entries` list of the Entry
@@ -1059,7 +1275,10 @@ class MutateRowsResponse_Entry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get index => $_getI64(0);
   @$pb.TagNumber(1)
-  set index($fixnum.Int64 v) { $_setInt64(0, v); }
+  set index($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIndex() => $_has(0);
   @$pb.TagNumber(1)
@@ -1072,7 +1291,10 @@ class MutateRowsResponse_Entry extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $322.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($322.Status v) { setField(2, v); }
+  set status($322.Status v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -1097,34 +1319,46 @@ class MutateRowsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   MutateRowsResponse._() : super();
-  factory MutateRowsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MutateRowsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MutateRowsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MutateRowsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRowsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..pc<MutateRowsResponse_Entry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: MutateRowsResponse_Entry.create)
-    ..aOM<RateLimitInfo>(3, _omitFieldNames ? '' : 'rateLimitInfo', subBuilder: RateLimitInfo.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MutateRowsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..pc<MutateRowsResponse_Entry>(
+        1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM,
+        subBuilder: MutateRowsResponse_Entry.create)
+    ..aOM<RateLimitInfo>(3, _omitFieldNames ? '' : 'rateLimitInfo',
+        subBuilder: RateLimitInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MutateRowsResponse clone() => MutateRowsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MutateRowsResponse copyWith(void Function(MutateRowsResponse) updates) => super.copyWith((message) => updates(message as MutateRowsResponse)) as MutateRowsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MutateRowsResponse copyWith(void Function(MutateRowsResponse) updates) =>
+      super.copyWith((message) => updates(message as MutateRowsResponse))
+          as MutateRowsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MutateRowsResponse create() => MutateRowsResponse._();
   MutateRowsResponse createEmptyInstance() => create();
-  static $pb.PbList<MutateRowsResponse> createRepeated() => $pb.PbList<MutateRowsResponse>();
+  static $pb.PbList<MutateRowsResponse> createRepeated() =>
+      $pb.PbList<MutateRowsResponse>();
   @$core.pragma('dart2js:noInline')
-  static MutateRowsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MutateRowsResponse>(create);
+  static MutateRowsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MutateRowsResponse>(create);
   static MutateRowsResponse? _defaultInstance;
 
   /// One or more results for Entries from the batch request.
@@ -1137,7 +1371,10 @@ class MutateRowsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   RateLimitInfo get rateLimitInfo => $_getN(1);
   @$pb.TagNumber(3)
-  set rateLimitInfo(RateLimitInfo v) { setField(3, v); }
+  set rateLimitInfo(RateLimitInfo v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRateLimitInfo() => $_has(1);
   @$pb.TagNumber(3)
@@ -1162,34 +1399,44 @@ class RateLimitInfo extends $pb.GeneratedMessage {
     return $result;
   }
   RateLimitInfo._() : super();
-  factory RateLimitInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RateLimitInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RateLimitInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RateLimitInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RateLimitInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'period', subBuilder: $264.Duration.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RateLimitInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'period',
+        subBuilder: $264.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'factor', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RateLimitInfo clone() => RateLimitInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RateLimitInfo copyWith(void Function(RateLimitInfo) updates) => super.copyWith((message) => updates(message as RateLimitInfo)) as RateLimitInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RateLimitInfo copyWith(void Function(RateLimitInfo) updates) =>
+      super.copyWith((message) => updates(message as RateLimitInfo))
+          as RateLimitInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RateLimitInfo create() => RateLimitInfo._();
   RateLimitInfo createEmptyInstance() => create();
-  static $pb.PbList<RateLimitInfo> createRepeated() => $pb.PbList<RateLimitInfo>();
+  static $pb.PbList<RateLimitInfo> createRepeated() =>
+      $pb.PbList<RateLimitInfo>();
   @$core.pragma('dart2js:noInline')
-  static RateLimitInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RateLimitInfo>(create);
+  static RateLimitInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RateLimitInfo>(create);
   static RateLimitInfo? _defaultInstance;
 
   /// Time that clients should wait before adjusting the target rate again.
@@ -1201,7 +1448,10 @@ class RateLimitInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $264.Duration get period => $_getN(0);
   @$pb.TagNumber(1)
-  set period($264.Duration v) { setField(1, v); }
+  set period($264.Duration v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPeriod() => $_has(0);
   @$pb.TagNumber(1)
@@ -1221,7 +1471,10 @@ class RateLimitInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get factor => $_getN(1);
   @$pb.TagNumber(2)
-  set factor($core.double v) { $_setDouble(1, v); }
+  set factor($core.double v) {
+    $_setDouble(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFactor() => $_has(1);
   @$pb.TagNumber(2)
@@ -1264,39 +1517,56 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CheckAndMutateRowRequest._() : super();
-  factory CheckAndMutateRowRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CheckAndMutateRowRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CheckAndMutateRowRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CheckAndMutateRowRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckAndMutateRowRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CheckAndMutateRowRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.Mutation>(4, _omitFieldNames ? '' : 'trueMutations', $pb.PbFieldType.PM, subBuilder: $403.Mutation.create)
-    ..pc<$403.Mutation>(5, _omitFieldNames ? '' : 'falseMutations', $pb.PbFieldType.PM, subBuilder: $403.Mutation.create)
-    ..aOM<$403.RowFilter>(6, _omitFieldNames ? '' : 'predicateFilter', subBuilder: $403.RowFilter.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
+    ..pc<$403.Mutation>(
+        4, _omitFieldNames ? '' : 'trueMutations', $pb.PbFieldType.PM,
+        subBuilder: $403.Mutation.create)
+    ..pc<$403.Mutation>(
+        5, _omitFieldNames ? '' : 'falseMutations', $pb.PbFieldType.PM,
+        subBuilder: $403.Mutation.create)
+    ..aOM<$403.RowFilter>(6, _omitFieldNames ? '' : 'predicateFilter',
+        subBuilder: $403.RowFilter.create)
     ..aOS(7, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(9, _omitFieldNames ? '' : 'authorizedViewName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CheckAndMutateRowRequest clone() => CheckAndMutateRowRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CheckAndMutateRowRequest copyWith(void Function(CheckAndMutateRowRequest) updates) => super.copyWith((message) => updates(message as CheckAndMutateRowRequest)) as CheckAndMutateRowRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CheckAndMutateRowRequest clone() =>
+      CheckAndMutateRowRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CheckAndMutateRowRequest copyWith(
+          void Function(CheckAndMutateRowRequest) updates) =>
+      super.copyWith((message) => updates(message as CheckAndMutateRowRequest))
+          as CheckAndMutateRowRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CheckAndMutateRowRequest create() => CheckAndMutateRowRequest._();
   CheckAndMutateRowRequest createEmptyInstance() => create();
-  static $pb.PbList<CheckAndMutateRowRequest> createRepeated() => $pb.PbList<CheckAndMutateRowRequest>();
+  static $pb.PbList<CheckAndMutateRowRequest> createRepeated() =>
+      $pb.PbList<CheckAndMutateRowRequest>();
   @$core.pragma('dart2js:noInline')
-  static CheckAndMutateRowRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CheckAndMutateRowRequest>(create);
+  static CheckAndMutateRowRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CheckAndMutateRowRequest>(create);
   static CheckAndMutateRowRequest? _defaultInstance;
 
   ///  Optional. The unique name of the table to which the conditional mutation
@@ -1307,7 +1577,10 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1318,7 +1591,10 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get rowKey => $_getN(1);
   @$pb.TagNumber(2)
-  set rowKey($core.List<$core.int> v) { $_setBytes(1, v); }
+  set rowKey($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRowKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -1347,7 +1623,10 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $403.RowFilter get predicateFilter => $_getN(4);
   @$pb.TagNumber(6)
-  set predicateFilter($403.RowFilter v) { setField(6, v); }
+  set predicateFilter($403.RowFilter v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPredicateFilter() => $_has(4);
   @$pb.TagNumber(6)
@@ -1360,7 +1639,10 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get appProfileId => $_getSZ(5);
   @$pb.TagNumber(7)
-  set appProfileId($core.String v) { $_setString(5, v); }
+  set appProfileId($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasAppProfileId() => $_has(5);
   @$pb.TagNumber(7)
@@ -1374,7 +1656,10 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get authorizedViewName => $_getSZ(6);
   @$pb.TagNumber(9)
-  set authorizedViewName($core.String v) { $_setString(6, v); }
+  set authorizedViewName($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasAuthorizedViewName() => $_has(6);
   @$pb.TagNumber(9)
@@ -1393,33 +1678,44 @@ class CheckAndMutateRowResponse extends $pb.GeneratedMessage {
     return $result;
   }
   CheckAndMutateRowResponse._() : super();
-  factory CheckAndMutateRowResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CheckAndMutateRowResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CheckAndMutateRowResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CheckAndMutateRowResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckAndMutateRowResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CheckAndMutateRowResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'predicateMatched')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CheckAndMutateRowResponse clone() => CheckAndMutateRowResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CheckAndMutateRowResponse copyWith(void Function(CheckAndMutateRowResponse) updates) => super.copyWith((message) => updates(message as CheckAndMutateRowResponse)) as CheckAndMutateRowResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CheckAndMutateRowResponse clone() =>
+      CheckAndMutateRowResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CheckAndMutateRowResponse copyWith(
+          void Function(CheckAndMutateRowResponse) updates) =>
+      super.copyWith((message) => updates(message as CheckAndMutateRowResponse))
+          as CheckAndMutateRowResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CheckAndMutateRowResponse create() => CheckAndMutateRowResponse._();
   CheckAndMutateRowResponse createEmptyInstance() => create();
-  static $pb.PbList<CheckAndMutateRowResponse> createRepeated() => $pb.PbList<CheckAndMutateRowResponse>();
+  static $pb.PbList<CheckAndMutateRowResponse> createRepeated() =>
+      $pb.PbList<CheckAndMutateRowResponse>();
   @$core.pragma('dart2js:noInline')
-  static CheckAndMutateRowResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CheckAndMutateRowResponse>(create);
+  static CheckAndMutateRowResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CheckAndMutateRowResponse>(create);
   static CheckAndMutateRowResponse? _defaultInstance;
 
   /// Whether or not the request's `predicate_filter` yielded any results for
@@ -1427,7 +1723,10 @@ class CheckAndMutateRowResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get predicateMatched => $_getBF(0);
   @$pb.TagNumber(1)
-  set predicateMatched($core.bool v) { $_setBool(0, v); }
+  set predicateMatched($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPredicateMatched() => $_has(0);
   @$pb.TagNumber(1)
@@ -1450,34 +1749,43 @@ class PingAndWarmRequest extends $pb.GeneratedMessage {
     return $result;
   }
   PingAndWarmRequest._() : super();
-  factory PingAndWarmRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PingAndWarmRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PingAndWarmRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PingAndWarmRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PingAndWarmRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PingAndWarmRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PingAndWarmRequest clone() => PingAndWarmRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PingAndWarmRequest copyWith(void Function(PingAndWarmRequest) updates) => super.copyWith((message) => updates(message as PingAndWarmRequest)) as PingAndWarmRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PingAndWarmRequest copyWith(void Function(PingAndWarmRequest) updates) =>
+      super.copyWith((message) => updates(message as PingAndWarmRequest))
+          as PingAndWarmRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PingAndWarmRequest create() => PingAndWarmRequest._();
   PingAndWarmRequest createEmptyInstance() => create();
-  static $pb.PbList<PingAndWarmRequest> createRepeated() => $pb.PbList<PingAndWarmRequest>();
+  static $pb.PbList<PingAndWarmRequest> createRepeated() =>
+      $pb.PbList<PingAndWarmRequest>();
   @$core.pragma('dart2js:noInline')
-  static PingAndWarmRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PingAndWarmRequest>(create);
+  static PingAndWarmRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PingAndWarmRequest>(create);
   static PingAndWarmRequest? _defaultInstance;
 
   /// Required. The unique name of the instance to check permissions for as well
@@ -1486,7 +1794,10 @@ class PingAndWarmRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1497,7 +1808,10 @@ class PingAndWarmRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get appProfileId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set appProfileId($core.String v) { $_setString(1, v); }
+  set appProfileId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAppProfileId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1508,32 +1822,41 @@ class PingAndWarmRequest extends $pb.GeneratedMessage {
 class PingAndWarmResponse extends $pb.GeneratedMessage {
   factory PingAndWarmResponse() => create();
   PingAndWarmResponse._() : super();
-  factory PingAndWarmResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PingAndWarmResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PingAndWarmResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PingAndWarmResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PingAndWarmResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PingAndWarmResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PingAndWarmResponse clone() => PingAndWarmResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PingAndWarmResponse copyWith(void Function(PingAndWarmResponse) updates) => super.copyWith((message) => updates(message as PingAndWarmResponse)) as PingAndWarmResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PingAndWarmResponse copyWith(void Function(PingAndWarmResponse) updates) =>
+      super.copyWith((message) => updates(message as PingAndWarmResponse))
+          as PingAndWarmResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PingAndWarmResponse create() => PingAndWarmResponse._();
   PingAndWarmResponse createEmptyInstance() => create();
-  static $pb.PbList<PingAndWarmResponse> createRepeated() => $pb.PbList<PingAndWarmResponse>();
+  static $pb.PbList<PingAndWarmResponse> createRepeated() =>
+      $pb.PbList<PingAndWarmResponse>();
   @$core.pragma('dart2js:noInline')
-  static PingAndWarmResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PingAndWarmResponse>(create);
+  static PingAndWarmResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PingAndWarmResponse>(create);
   static PingAndWarmResponse? _defaultInstance;
 }
 
@@ -1565,37 +1888,51 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ReadModifyWriteRowRequest._() : super();
-  factory ReadModifyWriteRowRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadModifyWriteRowRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadModifyWriteRowRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadModifyWriteRowRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadModifyWriteRowRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadModifyWriteRowRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.ReadModifyWriteRule>(3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: $403.ReadModifyWriteRule.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
+    ..pc<$403.ReadModifyWriteRule>(
+        3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+        subBuilder: $403.ReadModifyWriteRule.create)
     ..aOS(4, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(6, _omitFieldNames ? '' : 'authorizedViewName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadModifyWriteRowRequest clone() => ReadModifyWriteRowRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadModifyWriteRowRequest copyWith(void Function(ReadModifyWriteRowRequest) updates) => super.copyWith((message) => updates(message as ReadModifyWriteRowRequest)) as ReadModifyWriteRowRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadModifyWriteRowRequest clone() =>
+      ReadModifyWriteRowRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadModifyWriteRowRequest copyWith(
+          void Function(ReadModifyWriteRowRequest) updates) =>
+      super.copyWith((message) => updates(message as ReadModifyWriteRowRequest))
+          as ReadModifyWriteRowRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadModifyWriteRowRequest create() => ReadModifyWriteRowRequest._();
   ReadModifyWriteRowRequest createEmptyInstance() => create();
-  static $pb.PbList<ReadModifyWriteRowRequest> createRepeated() => $pb.PbList<ReadModifyWriteRowRequest>();
+  static $pb.PbList<ReadModifyWriteRowRequest> createRepeated() =>
+      $pb.PbList<ReadModifyWriteRowRequest>();
   @$core.pragma('dart2js:noInline')
-  static ReadModifyWriteRowRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadModifyWriteRowRequest>(create);
+  static ReadModifyWriteRowRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadModifyWriteRowRequest>(create);
   static ReadModifyWriteRowRequest? _defaultInstance;
 
   ///  Optional. The unique name of the table to which the read/modify/write rules
@@ -1606,7 +1943,10 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1617,7 +1957,10 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get rowKey => $_getN(1);
   @$pb.TagNumber(2)
-  set rowKey($core.List<$core.int> v) { $_setBytes(1, v); }
+  set rowKey($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRowKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -1634,7 +1977,10 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get appProfileId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set appProfileId($core.String v) { $_setString(3, v); }
+  set appProfileId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAppProfileId() => $_has(3);
   @$pb.TagNumber(4)
@@ -1648,7 +1994,10 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get authorizedViewName => $_getSZ(4);
   @$pb.TagNumber(6)
-  set authorizedViewName($core.String v) { $_setString(4, v); }
+  set authorizedViewName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAuthorizedViewName() => $_has(4);
   @$pb.TagNumber(6)
@@ -1667,40 +2016,56 @@ class ReadModifyWriteRowResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ReadModifyWriteRowResponse._() : super();
-  factory ReadModifyWriteRowResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadModifyWriteRowResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadModifyWriteRowResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadModifyWriteRowResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadModifyWriteRowResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..aOM<$403.Row>(1, _omitFieldNames ? '' : 'row', subBuilder: $403.Row.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadModifyWriteRowResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..aOM<$403.Row>(1, _omitFieldNames ? '' : 'row',
+        subBuilder: $403.Row.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadModifyWriteRowResponse clone() => ReadModifyWriteRowResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadModifyWriteRowResponse copyWith(void Function(ReadModifyWriteRowResponse) updates) => super.copyWith((message) => updates(message as ReadModifyWriteRowResponse)) as ReadModifyWriteRowResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadModifyWriteRowResponse clone() =>
+      ReadModifyWriteRowResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadModifyWriteRowResponse copyWith(
+          void Function(ReadModifyWriteRowResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ReadModifyWriteRowResponse))
+          as ReadModifyWriteRowResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadModifyWriteRowResponse create() => ReadModifyWriteRowResponse._();
   ReadModifyWriteRowResponse createEmptyInstance() => create();
-  static $pb.PbList<ReadModifyWriteRowResponse> createRepeated() => $pb.PbList<ReadModifyWriteRowResponse>();
+  static $pb.PbList<ReadModifyWriteRowResponse> createRepeated() =>
+      $pb.PbList<ReadModifyWriteRowResponse>();
   @$core.pragma('dart2js:noInline')
-  static ReadModifyWriteRowResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadModifyWriteRowResponse>(create);
+  static ReadModifyWriteRowResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadModifyWriteRowResponse>(create);
   static ReadModifyWriteRowResponse? _defaultInstance;
 
   /// A Row containing the new contents of all cells modified by the request.
   @$pb.TagNumber(1)
   $403.Row get row => $_getN(0);
   @$pb.TagNumber(1)
-  set row($403.Row v) { setField(1, v); }
+  set row($403.Row v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRow() => $_has(0);
   @$pb.TagNumber(1)
@@ -1711,7 +2076,8 @@ class ReadModifyWriteRowResponse extends $pb.GeneratedMessage {
 
 /// NOTE: This API is intended to be used by Apache Beam BigtableIO.
 /// Request message for Bigtable.GenerateInitialChangeStreamPartitions.
-class GenerateInitialChangeStreamPartitionsRequest extends $pb.GeneratedMessage {
+class GenerateInitialChangeStreamPartitionsRequest
+    extends $pb.GeneratedMessage {
   factory GenerateInitialChangeStreamPartitionsRequest({
     $core.String? tableName,
     $core.String? appProfileId,
@@ -1726,34 +2092,52 @@ class GenerateInitialChangeStreamPartitionsRequest extends $pb.GeneratedMessage 
     return $result;
   }
   GenerateInitialChangeStreamPartitionsRequest._() : super();
-  factory GenerateInitialChangeStreamPartitionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateInitialChangeStreamPartitionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateInitialChangeStreamPartitionsRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateInitialChangeStreamPartitionsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateInitialChangeStreamPartitionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateInitialChangeStreamPartitionsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateInitialChangeStreamPartitionsRequest clone() => GenerateInitialChangeStreamPartitionsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateInitialChangeStreamPartitionsRequest copyWith(void Function(GenerateInitialChangeStreamPartitionsRequest) updates) => super.copyWith((message) => updates(message as GenerateInitialChangeStreamPartitionsRequest)) as GenerateInitialChangeStreamPartitionsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateInitialChangeStreamPartitionsRequest clone() =>
+      GenerateInitialChangeStreamPartitionsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateInitialChangeStreamPartitionsRequest copyWith(
+          void Function(GenerateInitialChangeStreamPartitionsRequest)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as GenerateInitialChangeStreamPartitionsRequest))
+          as GenerateInitialChangeStreamPartitionsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GenerateInitialChangeStreamPartitionsRequest create() => GenerateInitialChangeStreamPartitionsRequest._();
-  GenerateInitialChangeStreamPartitionsRequest createEmptyInstance() => create();
-  static $pb.PbList<GenerateInitialChangeStreamPartitionsRequest> createRepeated() => $pb.PbList<GenerateInitialChangeStreamPartitionsRequest>();
+  static GenerateInitialChangeStreamPartitionsRequest create() =>
+      GenerateInitialChangeStreamPartitionsRequest._();
+  GenerateInitialChangeStreamPartitionsRequest createEmptyInstance() =>
+      create();
+  static $pb.PbList<GenerateInitialChangeStreamPartitionsRequest>
+      createRepeated() =>
+          $pb.PbList<GenerateInitialChangeStreamPartitionsRequest>();
   @$core.pragma('dart2js:noInline')
-  static GenerateInitialChangeStreamPartitionsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateInitialChangeStreamPartitionsRequest>(create);
+  static GenerateInitialChangeStreamPartitionsRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          GenerateInitialChangeStreamPartitionsRequest>(create);
   static GenerateInitialChangeStreamPartitionsRequest? _defaultInstance;
 
   /// Required. The unique name of the table from which to get change stream
@@ -1763,7 +2147,10 @@ class GenerateInitialChangeStreamPartitionsRequest extends $pb.GeneratedMessage 
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1775,7 +2162,10 @@ class GenerateInitialChangeStreamPartitionsRequest extends $pb.GeneratedMessage 
   @$pb.TagNumber(2)
   $core.String get appProfileId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set appProfileId($core.String v) { $_setString(1, v); }
+  set appProfileId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAppProfileId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1784,7 +2174,8 @@ class GenerateInitialChangeStreamPartitionsRequest extends $pb.GeneratedMessage 
 
 /// NOTE: This API is intended to be used by Apache Beam BigtableIO.
 /// Response message for Bigtable.GenerateInitialChangeStreamPartitions.
-class GenerateInitialChangeStreamPartitionsResponse extends $pb.GeneratedMessage {
+class GenerateInitialChangeStreamPartitionsResponse
+    extends $pb.GeneratedMessage {
   factory GenerateInitialChangeStreamPartitionsResponse({
     $403.StreamPartition? partition,
   }) {
@@ -1795,40 +2186,62 @@ class GenerateInitialChangeStreamPartitionsResponse extends $pb.GeneratedMessage
     return $result;
   }
   GenerateInitialChangeStreamPartitionsResponse._() : super();
-  factory GenerateInitialChangeStreamPartitionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GenerateInitialChangeStreamPartitionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GenerateInitialChangeStreamPartitionsResponse.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GenerateInitialChangeStreamPartitionsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateInitialChangeStreamPartitionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..aOM<$403.StreamPartition>(1, _omitFieldNames ? '' : 'partition', subBuilder: $403.StreamPartition.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GenerateInitialChangeStreamPartitionsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..aOM<$403.StreamPartition>(1, _omitFieldNames ? '' : 'partition',
+        subBuilder: $403.StreamPartition.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GenerateInitialChangeStreamPartitionsResponse clone() => GenerateInitialChangeStreamPartitionsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GenerateInitialChangeStreamPartitionsResponse copyWith(void Function(GenerateInitialChangeStreamPartitionsResponse) updates) => super.copyWith((message) => updates(message as GenerateInitialChangeStreamPartitionsResponse)) as GenerateInitialChangeStreamPartitionsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GenerateInitialChangeStreamPartitionsResponse clone() =>
+      GenerateInitialChangeStreamPartitionsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GenerateInitialChangeStreamPartitionsResponse copyWith(
+          void Function(GenerateInitialChangeStreamPartitionsResponse)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as GenerateInitialChangeStreamPartitionsResponse))
+          as GenerateInitialChangeStreamPartitionsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GenerateInitialChangeStreamPartitionsResponse create() => GenerateInitialChangeStreamPartitionsResponse._();
-  GenerateInitialChangeStreamPartitionsResponse createEmptyInstance() => create();
-  static $pb.PbList<GenerateInitialChangeStreamPartitionsResponse> createRepeated() => $pb.PbList<GenerateInitialChangeStreamPartitionsResponse>();
+  static GenerateInitialChangeStreamPartitionsResponse create() =>
+      GenerateInitialChangeStreamPartitionsResponse._();
+  GenerateInitialChangeStreamPartitionsResponse createEmptyInstance() =>
+      create();
+  static $pb.PbList<GenerateInitialChangeStreamPartitionsResponse>
+      createRepeated() =>
+          $pb.PbList<GenerateInitialChangeStreamPartitionsResponse>();
   @$core.pragma('dart2js:noInline')
-  static GenerateInitialChangeStreamPartitionsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenerateInitialChangeStreamPartitionsResponse>(create);
+  static GenerateInitialChangeStreamPartitionsResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          GenerateInitialChangeStreamPartitionsResponse>(create);
   static GenerateInitialChangeStreamPartitionsResponse? _defaultInstance;
 
   /// A partition of the change stream.
   @$pb.TagNumber(1)
   $403.StreamPartition get partition => $_getN(0);
   @$pb.TagNumber(1)
-  set partition($403.StreamPartition v) { setField(1, v); }
+  set partition($403.StreamPartition v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPartition() => $_has(0);
   @$pb.TagNumber(1)
@@ -1837,11 +2250,7 @@ class GenerateInitialChangeStreamPartitionsResponse extends $pb.GeneratedMessage
   $403.StreamPartition ensurePartition() => $_ensure(0);
 }
 
-enum ReadChangeStreamRequest_StartFrom {
-  startTime, 
-  continuationTokens, 
-  notSet
-}
+enum ReadChangeStreamRequest_StartFrom { startTime, continuationTokens, notSet }
 
 /// NOTE: This API is intended to be used by Apache Beam BigtableIO.
 /// Request message for Bigtable.ReadChangeStream.
@@ -1880,48 +2289,67 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ReadChangeStreamRequest._() : super();
-  factory ReadChangeStreamRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadChangeStreamRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadChangeStreamRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadChangeStreamRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ReadChangeStreamRequest_StartFrom> _ReadChangeStreamRequest_StartFromByTag = {
-    4 : ReadChangeStreamRequest_StartFrom.startTime,
-    6 : ReadChangeStreamRequest_StartFrom.continuationTokens,
-    0 : ReadChangeStreamRequest_StartFrom.notSet
+  static const $core.Map<$core.int, ReadChangeStreamRequest_StartFrom>
+      _ReadChangeStreamRequest_StartFromByTag = {
+    4: ReadChangeStreamRequest_StartFrom.startTime,
+    6: ReadChangeStreamRequest_StartFrom.continuationTokens,
+    0: ReadChangeStreamRequest_StartFrom.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadChangeStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadChangeStreamRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..oo(0, [4, 6])
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
-    ..aOM<$403.StreamPartition>(3, _omitFieldNames ? '' : 'partition', subBuilder: $403.StreamPartition.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$403.StreamContinuationTokens>(6, _omitFieldNames ? '' : 'continuationTokens', subBuilder: $403.StreamContinuationTokens.create)
-    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'heartbeatDuration', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$403.StreamPartition>(3, _omitFieldNames ? '' : 'partition',
+        subBuilder: $403.StreamPartition.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$403.StreamContinuationTokens>(
+        6, _omitFieldNames ? '' : 'continuationTokens',
+        subBuilder: $403.StreamContinuationTokens.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'heartbeatDuration',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamRequest clone() => ReadChangeStreamRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamRequest copyWith(void Function(ReadChangeStreamRequest) updates) => super.copyWith((message) => updates(message as ReadChangeStreamRequest)) as ReadChangeStreamRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamRequest clone() =>
+      ReadChangeStreamRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamRequest copyWith(
+          void Function(ReadChangeStreamRequest) updates) =>
+      super.copyWith((message) => updates(message as ReadChangeStreamRequest))
+          as ReadChangeStreamRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadChangeStreamRequest create() => ReadChangeStreamRequest._();
   ReadChangeStreamRequest createEmptyInstance() => create();
-  static $pb.PbList<ReadChangeStreamRequest> createRepeated() => $pb.PbList<ReadChangeStreamRequest>();
+  static $pb.PbList<ReadChangeStreamRequest> createRepeated() =>
+      $pb.PbList<ReadChangeStreamRequest>();
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamRequest>(create);
+  static ReadChangeStreamRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamRequest>(create);
   static ReadChangeStreamRequest? _defaultInstance;
 
-  ReadChangeStreamRequest_StartFrom whichStartFrom() => _ReadChangeStreamRequest_StartFromByTag[$_whichOneof(0)]!;
+  ReadChangeStreamRequest_StartFrom whichStartFrom() =>
+      _ReadChangeStreamRequest_StartFromByTag[$_whichOneof(0)]!;
   void clearStartFrom() => clearField($_whichOneof(0));
 
   /// Required. The unique name of the table from which to read a change stream.
@@ -1931,7 +2359,10 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get tableName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tableName($core.String v) { $_setString(0, v); }
+  set tableName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTableName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1943,7 +2374,10 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get appProfileId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set appProfileId($core.String v) { $_setString(1, v); }
+  set appProfileId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAppProfileId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1953,7 +2387,10 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $403.StreamPartition get partition => $_getN(2);
   @$pb.TagNumber(3)
-  set partition($403.StreamPartition v) { setField(3, v); }
+  set partition($403.StreamPartition v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPartition() => $_has(2);
   @$pb.TagNumber(3)
@@ -1968,7 +2405,10 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) { setField(4, v); }
+  set startTime($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -1982,7 +2422,10 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $302.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) { setField(5, v); }
+  set endTime($302.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
@@ -2003,7 +2446,10 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $403.StreamContinuationTokens get continuationTokens => $_getN(5);
   @$pb.TagNumber(6)
-  set continuationTokens($403.StreamContinuationTokens v) { setField(6, v); }
+  set continuationTokens($403.StreamContinuationTokens v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasContinuationTokens() => $_has(5);
   @$pb.TagNumber(6)
@@ -2016,7 +2462,10 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $264.Duration get heartbeatDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set heartbeatDuration($264.Duration v) { setField(7, v); }
+  set heartbeatDuration($264.Duration v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasHeartbeatDuration() => $_has(6);
   @$pb.TagNumber(7)
@@ -2028,7 +2477,8 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
 /// Information about the chunking of this mutation.
 /// Only `SetCell` mutations can be chunked, and all chunks for a `SetCell`
 /// will be delivered contiguously with no other mutation types interleaved.
-class ReadChangeStreamResponse_MutationChunk_ChunkInfo extends $pb.GeneratedMessage {
+class ReadChangeStreamResponse_MutationChunk_ChunkInfo
+    extends $pb.GeneratedMessage {
   factory ReadChangeStreamResponse_MutationChunk_ChunkInfo({
     $core.int? chunkedValueSize,
     $core.int? chunkedValueOffset,
@@ -2047,42 +2497,69 @@ class ReadChangeStreamResponse_MutationChunk_ChunkInfo extends $pb.GeneratedMess
     return $result;
   }
   ReadChangeStreamResponse_MutationChunk_ChunkInfo._() : super();
-  factory ReadChangeStreamResponse_MutationChunk_ChunkInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadChangeStreamResponse_MutationChunk_ChunkInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadChangeStreamResponse_MutationChunk_ChunkInfo.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadChangeStreamResponse_MutationChunk_ChunkInfo.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadChangeStreamResponse.MutationChunk.ChunkInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'chunkedValueSize', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'chunkedValueOffset', $pb.PbFieldType.O3)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'ReadChangeStreamResponse.MutationChunk.ChunkInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'chunkedValueSize', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'chunkedValueOffset', $pb.PbFieldType.O3)
     ..aOB(3, _omitFieldNames ? '' : 'lastChunk')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_MutationChunk_ChunkInfo clone() => ReadChangeStreamResponse_MutationChunk_ChunkInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_MutationChunk_ChunkInfo copyWith(void Function(ReadChangeStreamResponse_MutationChunk_ChunkInfo) updates) => super.copyWith((message) => updates(message as ReadChangeStreamResponse_MutationChunk_ChunkInfo)) as ReadChangeStreamResponse_MutationChunk_ChunkInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_MutationChunk_ChunkInfo clone() =>
+      ReadChangeStreamResponse_MutationChunk_ChunkInfo()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_MutationChunk_ChunkInfo copyWith(
+          void Function(ReadChangeStreamResponse_MutationChunk_ChunkInfo)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as ReadChangeStreamResponse_MutationChunk_ChunkInfo))
+          as ReadChangeStreamResponse_MutationChunk_ChunkInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_MutationChunk_ChunkInfo create() => ReadChangeStreamResponse_MutationChunk_ChunkInfo._();
-  ReadChangeStreamResponse_MutationChunk_ChunkInfo createEmptyInstance() => create();
-  static $pb.PbList<ReadChangeStreamResponse_MutationChunk_ChunkInfo> createRepeated() => $pb.PbList<ReadChangeStreamResponse_MutationChunk_ChunkInfo>();
+  static ReadChangeStreamResponse_MutationChunk_ChunkInfo create() =>
+      ReadChangeStreamResponse_MutationChunk_ChunkInfo._();
+  ReadChangeStreamResponse_MutationChunk_ChunkInfo createEmptyInstance() =>
+      create();
+  static $pb.PbList<ReadChangeStreamResponse_MutationChunk_ChunkInfo>
+      createRepeated() =>
+          $pb.PbList<ReadChangeStreamResponse_MutationChunk_ChunkInfo>();
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_MutationChunk_ChunkInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse_MutationChunk_ChunkInfo>(create);
+  static ReadChangeStreamResponse_MutationChunk_ChunkInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ReadChangeStreamResponse_MutationChunk_ChunkInfo>(create);
   static ReadChangeStreamResponse_MutationChunk_ChunkInfo? _defaultInstance;
 
   /// The total value size of all the chunks that make up the `SetCell`.
   @$pb.TagNumber(1)
   $core.int get chunkedValueSize => $_getIZ(0);
   @$pb.TagNumber(1)
-  set chunkedValueSize($core.int v) { $_setSignedInt32(0, v); }
+  set chunkedValueSize($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasChunkedValueSize() => $_has(0);
   @$pb.TagNumber(1)
@@ -2093,7 +2570,10 @@ class ReadChangeStreamResponse_MutationChunk_ChunkInfo extends $pb.GeneratedMess
   @$pb.TagNumber(2)
   $core.int get chunkedValueOffset => $_getIZ(1);
   @$pb.TagNumber(2)
-  set chunkedValueOffset($core.int v) { $_setSignedInt32(1, v); }
+  set chunkedValueOffset($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasChunkedValueOffset() => $_has(1);
   @$pb.TagNumber(2)
@@ -2103,7 +2583,10 @@ class ReadChangeStreamResponse_MutationChunk_ChunkInfo extends $pb.GeneratedMess
   @$pb.TagNumber(3)
   $core.bool get lastChunk => $_getBF(2);
   @$pb.TagNumber(3)
-  set lastChunk($core.bool v) { $_setBool(2, v); }
+  set lastChunk($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLastChunk() => $_has(2);
   @$pb.TagNumber(3)
@@ -2126,34 +2609,52 @@ class ReadChangeStreamResponse_MutationChunk extends $pb.GeneratedMessage {
     return $result;
   }
   ReadChangeStreamResponse_MutationChunk._() : super();
-  factory ReadChangeStreamResponse_MutationChunk.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadChangeStreamResponse_MutationChunk.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadChangeStreamResponse_MutationChunk.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadChangeStreamResponse_MutationChunk.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadChangeStreamResponse.MutationChunk', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..aOM<ReadChangeStreamResponse_MutationChunk_ChunkInfo>(1, _omitFieldNames ? '' : 'chunkInfo', subBuilder: ReadChangeStreamResponse_MutationChunk_ChunkInfo.create)
-    ..aOM<$403.Mutation>(2, _omitFieldNames ? '' : 'mutation', subBuilder: $403.Mutation.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadChangeStreamResponse.MutationChunk',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..aOM<ReadChangeStreamResponse_MutationChunk_ChunkInfo>(
+        1, _omitFieldNames ? '' : 'chunkInfo',
+        subBuilder: ReadChangeStreamResponse_MutationChunk_ChunkInfo.create)
+    ..aOM<$403.Mutation>(2, _omitFieldNames ? '' : 'mutation',
+        subBuilder: $403.Mutation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_MutationChunk clone() => ReadChangeStreamResponse_MutationChunk()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_MutationChunk copyWith(void Function(ReadChangeStreamResponse_MutationChunk) updates) => super.copyWith((message) => updates(message as ReadChangeStreamResponse_MutationChunk)) as ReadChangeStreamResponse_MutationChunk;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_MutationChunk clone() =>
+      ReadChangeStreamResponse_MutationChunk()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_MutationChunk copyWith(
+          void Function(ReadChangeStreamResponse_MutationChunk) updates) =>
+      super.copyWith((message) =>
+              updates(message as ReadChangeStreamResponse_MutationChunk))
+          as ReadChangeStreamResponse_MutationChunk;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_MutationChunk create() => ReadChangeStreamResponse_MutationChunk._();
+  static ReadChangeStreamResponse_MutationChunk create() =>
+      ReadChangeStreamResponse_MutationChunk._();
   ReadChangeStreamResponse_MutationChunk createEmptyInstance() => create();
-  static $pb.PbList<ReadChangeStreamResponse_MutationChunk> createRepeated() => $pb.PbList<ReadChangeStreamResponse_MutationChunk>();
+  static $pb.PbList<ReadChangeStreamResponse_MutationChunk> createRepeated() =>
+      $pb.PbList<ReadChangeStreamResponse_MutationChunk>();
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_MutationChunk getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse_MutationChunk>(create);
+  static ReadChangeStreamResponse_MutationChunk getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ReadChangeStreamResponse_MutationChunk>(create);
   static ReadChangeStreamResponse_MutationChunk? _defaultInstance;
 
   /// If set, then the mutation is a `SetCell` with a chunked value across
@@ -2161,13 +2662,17 @@ class ReadChangeStreamResponse_MutationChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ReadChangeStreamResponse_MutationChunk_ChunkInfo get chunkInfo => $_getN(0);
   @$pb.TagNumber(1)
-  set chunkInfo(ReadChangeStreamResponse_MutationChunk_ChunkInfo v) { setField(1, v); }
+  set chunkInfo(ReadChangeStreamResponse_MutationChunk_ChunkInfo v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasChunkInfo() => $_has(0);
   @$pb.TagNumber(1)
   void clearChunkInfo() => clearField(1);
   @$pb.TagNumber(1)
-  ReadChangeStreamResponse_MutationChunk_ChunkInfo ensureChunkInfo() => $_ensure(0);
+  ReadChangeStreamResponse_MutationChunk_ChunkInfo ensureChunkInfo() =>
+      $_ensure(0);
 
   /// If this is a continuation of a chunked message (`chunked_value_offset` >
   /// 0), ignore all fields except the `SetCell`'s value and merge it with
@@ -2175,7 +2680,10 @@ class ReadChangeStreamResponse_MutationChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $403.Mutation get mutation => $_getN(1);
   @$pb.TagNumber(2)
-  set mutation($403.Mutation v) { setField(2, v); }
+  set mutation($403.Mutation v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMutation() => $_has(1);
   @$pb.TagNumber(2)
@@ -2233,48 +2741,76 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
     return $result;
   }
   ReadChangeStreamResponse_DataChange._() : super();
-  factory ReadChangeStreamResponse_DataChange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadChangeStreamResponse_DataChange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadChangeStreamResponse_DataChange.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadChangeStreamResponse_DataChange.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadChangeStreamResponse.DataChange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..e<ReadChangeStreamResponse_DataChange_Type>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: ReadChangeStreamResponse_DataChange_Type.TYPE_UNSPECIFIED, valueOf: ReadChangeStreamResponse_DataChange_Type.valueOf, enumValues: ReadChangeStreamResponse_DataChange_Type.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadChangeStreamResponse.DataChange',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..e<ReadChangeStreamResponse_DataChange_Type>(
+        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            ReadChangeStreamResponse_DataChange_Type.TYPE_UNSPECIFIED,
+        valueOf: ReadChangeStreamResponse_DataChange_Type.valueOf,
+        enumValues: ReadChangeStreamResponse_DataChange_Type.values)
     ..aOS(2, _omitFieldNames ? '' : 'sourceClusterId')
-    ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'commitTimestamp', subBuilder: $302.Timestamp.create)
+    ..a<$core.List<$core.int>>(
+        3, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'commitTimestamp',
+        subBuilder: $302.Timestamp.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'tiebreaker', $pb.PbFieldType.O3)
-    ..pc<ReadChangeStreamResponse_MutationChunk>(6, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM, subBuilder: ReadChangeStreamResponse_MutationChunk.create)
+    ..pc<ReadChangeStreamResponse_MutationChunk>(
+        6, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: ReadChangeStreamResponse_MutationChunk.create)
     ..aOB(8, _omitFieldNames ? '' : 'done')
     ..aOS(9, _omitFieldNames ? '' : 'token')
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'estimatedLowWatermark', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'estimatedLowWatermark',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_DataChange clone() => ReadChangeStreamResponse_DataChange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_DataChange copyWith(void Function(ReadChangeStreamResponse_DataChange) updates) => super.copyWith((message) => updates(message as ReadChangeStreamResponse_DataChange)) as ReadChangeStreamResponse_DataChange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_DataChange clone() =>
+      ReadChangeStreamResponse_DataChange()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_DataChange copyWith(
+          void Function(ReadChangeStreamResponse_DataChange) updates) =>
+      super.copyWith((message) =>
+              updates(message as ReadChangeStreamResponse_DataChange))
+          as ReadChangeStreamResponse_DataChange;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_DataChange create() => ReadChangeStreamResponse_DataChange._();
+  static ReadChangeStreamResponse_DataChange create() =>
+      ReadChangeStreamResponse_DataChange._();
   ReadChangeStreamResponse_DataChange createEmptyInstance() => create();
-  static $pb.PbList<ReadChangeStreamResponse_DataChange> createRepeated() => $pb.PbList<ReadChangeStreamResponse_DataChange>();
+  static $pb.PbList<ReadChangeStreamResponse_DataChange> createRepeated() =>
+      $pb.PbList<ReadChangeStreamResponse_DataChange>();
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_DataChange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse_DataChange>(create);
+  static ReadChangeStreamResponse_DataChange getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ReadChangeStreamResponse_DataChange>(create);
   static ReadChangeStreamResponse_DataChange? _defaultInstance;
 
   /// The type of the mutation.
   @$pb.TagNumber(1)
   ReadChangeStreamResponse_DataChange_Type get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(ReadChangeStreamResponse_DataChange_Type v) { setField(1, v); }
+  set type(ReadChangeStreamResponse_DataChange_Type v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2285,7 +2821,10 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get sourceClusterId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set sourceClusterId($core.String v) { $_setString(1, v); }
+  set sourceClusterId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSourceClusterId() => $_has(1);
   @$pb.TagNumber(2)
@@ -2297,7 +2836,10 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.List<$core.int> get rowKey => $_getN(2);
   @$pb.TagNumber(3)
-  set rowKey($core.List<$core.int> v) { $_setBytes(2, v); }
+  set rowKey($core.List<$core.int> v) {
+    $_setBytes(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRowKey() => $_has(2);
   @$pb.TagNumber(3)
@@ -2307,7 +2849,10 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $302.Timestamp get commitTimestamp => $_getN(3);
   @$pb.TagNumber(4)
-  set commitTimestamp($302.Timestamp v) { setField(4, v); }
+  set commitTimestamp($302.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCommitTimestamp() => $_has(3);
   @$pb.TagNumber(4)
@@ -2325,7 +2870,10 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get tiebreaker => $_getIZ(4);
   @$pb.TagNumber(5)
-  set tiebreaker($core.int v) { $_setSignedInt32(4, v); }
+  set tiebreaker($core.int v) {
+    $_setSignedInt32(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTiebreaker() => $_has(4);
   @$pb.TagNumber(5)
@@ -2342,7 +2890,10 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get done => $_getBF(6);
   @$pb.TagNumber(8)
-  set done($core.bool v) { $_setBool(6, v); }
+  set done($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDone() => $_has(6);
   @$pb.TagNumber(8)
@@ -2353,7 +2904,10 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get token => $_getSZ(7);
   @$pb.TagNumber(9)
-  set token($core.String v) { $_setString(7, v); }
+  set token($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasToken() => $_has(7);
   @$pb.TagNumber(9)
@@ -2368,7 +2922,10 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $302.Timestamp get estimatedLowWatermark => $_getN(8);
   @$pb.TagNumber(10)
-  set estimatedLowWatermark($302.Timestamp v) { setField(10, v); }
+  set estimatedLowWatermark($302.Timestamp v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasEstimatedLowWatermark() => $_has(8);
   @$pb.TagNumber(10)
@@ -2394,34 +2951,51 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
     return $result;
   }
   ReadChangeStreamResponse_Heartbeat._() : super();
-  factory ReadChangeStreamResponse_Heartbeat.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadChangeStreamResponse_Heartbeat.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadChangeStreamResponse_Heartbeat.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadChangeStreamResponse_Heartbeat.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadChangeStreamResponse.Heartbeat', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..aOM<$403.StreamContinuationToken>(1, _omitFieldNames ? '' : 'continuationToken', subBuilder: $403.StreamContinuationToken.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'estimatedLowWatermark', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadChangeStreamResponse.Heartbeat',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..aOM<$403.StreamContinuationToken>(
+        1, _omitFieldNames ? '' : 'continuationToken',
+        subBuilder: $403.StreamContinuationToken.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'estimatedLowWatermark',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_Heartbeat clone() => ReadChangeStreamResponse_Heartbeat()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_Heartbeat copyWith(void Function(ReadChangeStreamResponse_Heartbeat) updates) => super.copyWith((message) => updates(message as ReadChangeStreamResponse_Heartbeat)) as ReadChangeStreamResponse_Heartbeat;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_Heartbeat clone() =>
+      ReadChangeStreamResponse_Heartbeat()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_Heartbeat copyWith(
+          void Function(ReadChangeStreamResponse_Heartbeat) updates) =>
+      super.copyWith((message) =>
+              updates(message as ReadChangeStreamResponse_Heartbeat))
+          as ReadChangeStreamResponse_Heartbeat;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_Heartbeat create() => ReadChangeStreamResponse_Heartbeat._();
+  static ReadChangeStreamResponse_Heartbeat create() =>
+      ReadChangeStreamResponse_Heartbeat._();
   ReadChangeStreamResponse_Heartbeat createEmptyInstance() => create();
-  static $pb.PbList<ReadChangeStreamResponse_Heartbeat> createRepeated() => $pb.PbList<ReadChangeStreamResponse_Heartbeat>();
+  static $pb.PbList<ReadChangeStreamResponse_Heartbeat> createRepeated() =>
+      $pb.PbList<ReadChangeStreamResponse_Heartbeat>();
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_Heartbeat getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse_Heartbeat>(create);
+  static ReadChangeStreamResponse_Heartbeat getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse_Heartbeat>(
+          create);
   static ReadChangeStreamResponse_Heartbeat? _defaultInstance;
 
   /// A token that can be provided to a subsequent `ReadChangeStream` call
@@ -2429,7 +3003,10 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $403.StreamContinuationToken get continuationToken => $_getN(0);
   @$pb.TagNumber(1)
-  set continuationToken($403.StreamContinuationToken v) { setField(1, v); }
+  set continuationToken($403.StreamContinuationToken v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasContinuationToken() => $_has(0);
   @$pb.TagNumber(1)
@@ -2446,7 +3023,10 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get estimatedLowWatermark => $_getN(1);
   @$pb.TagNumber(2)
-  set estimatedLowWatermark($302.Timestamp v) { setField(2, v); }
+  set estimatedLowWatermark($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEstimatedLowWatermark() => $_has(1);
   @$pb.TagNumber(2)
@@ -2494,42 +3074,65 @@ class ReadChangeStreamResponse_CloseStream extends $pb.GeneratedMessage {
     return $result;
   }
   ReadChangeStreamResponse_CloseStream._() : super();
-  factory ReadChangeStreamResponse_CloseStream.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadChangeStreamResponse_CloseStream.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadChangeStreamResponse_CloseStream.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadChangeStreamResponse_CloseStream.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadChangeStreamResponse.CloseStream', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..aOM<$322.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $322.Status.create)
-    ..pc<$403.StreamContinuationToken>(2, _omitFieldNames ? '' : 'continuationTokens', $pb.PbFieldType.PM, subBuilder: $403.StreamContinuationToken.create)
-    ..pc<$403.StreamPartition>(3, _omitFieldNames ? '' : 'newPartitions', $pb.PbFieldType.PM, subBuilder: $403.StreamPartition.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadChangeStreamResponse.CloseStream',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
+    ..aOM<$322.Status>(1, _omitFieldNames ? '' : 'status',
+        subBuilder: $322.Status.create)
+    ..pc<$403.StreamContinuationToken>(
+        2, _omitFieldNames ? '' : 'continuationTokens', $pb.PbFieldType.PM,
+        subBuilder: $403.StreamContinuationToken.create)
+    ..pc<$403.StreamPartition>(
+        3, _omitFieldNames ? '' : 'newPartitions', $pb.PbFieldType.PM,
+        subBuilder: $403.StreamPartition.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_CloseStream clone() => ReadChangeStreamResponse_CloseStream()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse_CloseStream copyWith(void Function(ReadChangeStreamResponse_CloseStream) updates) => super.copyWith((message) => updates(message as ReadChangeStreamResponse_CloseStream)) as ReadChangeStreamResponse_CloseStream;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_CloseStream clone() =>
+      ReadChangeStreamResponse_CloseStream()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse_CloseStream copyWith(
+          void Function(ReadChangeStreamResponse_CloseStream) updates) =>
+      super.copyWith((message) =>
+              updates(message as ReadChangeStreamResponse_CloseStream))
+          as ReadChangeStreamResponse_CloseStream;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_CloseStream create() => ReadChangeStreamResponse_CloseStream._();
+  static ReadChangeStreamResponse_CloseStream create() =>
+      ReadChangeStreamResponse_CloseStream._();
   ReadChangeStreamResponse_CloseStream createEmptyInstance() => create();
-  static $pb.PbList<ReadChangeStreamResponse_CloseStream> createRepeated() => $pb.PbList<ReadChangeStreamResponse_CloseStream>();
+  static $pb.PbList<ReadChangeStreamResponse_CloseStream> createRepeated() =>
+      $pb.PbList<ReadChangeStreamResponse_CloseStream>();
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse_CloseStream getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse_CloseStream>(create);
+  static ReadChangeStreamResponse_CloseStream getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ReadChangeStreamResponse_CloseStream>(create);
   static ReadChangeStreamResponse_CloseStream? _defaultInstance;
 
   /// The status of the stream.
   @$pb.TagNumber(1)
   $322.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($322.Status v) { setField(1, v); }
+  set status($322.Status v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
@@ -2540,7 +3143,8 @@ class ReadChangeStreamResponse_CloseStream extends $pb.GeneratedMessage {
   /// If non-empty, contains the information needed to resume reading their
   /// associated partitions.
   @$pb.TagNumber(2)
-  $core.List<$403.StreamContinuationToken> get continuationTokens => $_getList(1);
+  $core.List<$403.StreamContinuationToken> get continuationTokens =>
+      $_getList(1);
 
   /// If non-empty, contains the new partitions to start reading from, which
   /// are related to but not necessarily identical to the partitions for the
@@ -2550,9 +3154,9 @@ class ReadChangeStreamResponse_CloseStream extends $pb.GeneratedMessage {
 }
 
 enum ReadChangeStreamResponse_StreamRecord {
-  dataChange, 
-  heartbeat, 
-  closeStream, 
+  dataChange,
+  heartbeat,
+  closeStream,
   notSet
 }
 
@@ -2577,52 +3181,74 @@ class ReadChangeStreamResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ReadChangeStreamResponse._() : super();
-  factory ReadChangeStreamResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ReadChangeStreamResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ReadChangeStreamResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReadChangeStreamResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ReadChangeStreamResponse_StreamRecord> _ReadChangeStreamResponse_StreamRecordByTag = {
-    1 : ReadChangeStreamResponse_StreamRecord.dataChange,
-    2 : ReadChangeStreamResponse_StreamRecord.heartbeat,
-    3 : ReadChangeStreamResponse_StreamRecord.closeStream,
-    0 : ReadChangeStreamResponse_StreamRecord.notSet
+  static const $core.Map<$core.int, ReadChangeStreamResponse_StreamRecord>
+      _ReadChangeStreamResponse_StreamRecordByTag = {
+    1: ReadChangeStreamResponse_StreamRecord.dataChange,
+    2: ReadChangeStreamResponse_StreamRecord.heartbeat,
+    3: ReadChangeStreamResponse_StreamRecord.closeStream,
+    0: ReadChangeStreamResponse_StreamRecord.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadChangeStreamResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReadChangeStreamResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<ReadChangeStreamResponse_DataChange>(1, _omitFieldNames ? '' : 'dataChange', subBuilder: ReadChangeStreamResponse_DataChange.create)
-    ..aOM<ReadChangeStreamResponse_Heartbeat>(2, _omitFieldNames ? '' : 'heartbeat', subBuilder: ReadChangeStreamResponse_Heartbeat.create)
-    ..aOM<ReadChangeStreamResponse_CloseStream>(3, _omitFieldNames ? '' : 'closeStream', subBuilder: ReadChangeStreamResponse_CloseStream.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ReadChangeStreamResponse_DataChange>(
+        1, _omitFieldNames ? '' : 'dataChange',
+        subBuilder: ReadChangeStreamResponse_DataChange.create)
+    ..aOM<ReadChangeStreamResponse_Heartbeat>(
+        2, _omitFieldNames ? '' : 'heartbeat',
+        subBuilder: ReadChangeStreamResponse_Heartbeat.create)
+    ..aOM<ReadChangeStreamResponse_CloseStream>(
+        3, _omitFieldNames ? '' : 'closeStream',
+        subBuilder: ReadChangeStreamResponse_CloseStream.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse clone() => ReadChangeStreamResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ReadChangeStreamResponse copyWith(void Function(ReadChangeStreamResponse) updates) => super.copyWith((message) => updates(message as ReadChangeStreamResponse)) as ReadChangeStreamResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse clone() =>
+      ReadChangeStreamResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReadChangeStreamResponse copyWith(
+          void Function(ReadChangeStreamResponse) updates) =>
+      super.copyWith((message) => updates(message as ReadChangeStreamResponse))
+          as ReadChangeStreamResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReadChangeStreamResponse create() => ReadChangeStreamResponse._();
   ReadChangeStreamResponse createEmptyInstance() => create();
-  static $pb.PbList<ReadChangeStreamResponse> createRepeated() => $pb.PbList<ReadChangeStreamResponse>();
+  static $pb.PbList<ReadChangeStreamResponse> createRepeated() =>
+      $pb.PbList<ReadChangeStreamResponse>();
   @$core.pragma('dart2js:noInline')
-  static ReadChangeStreamResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse>(create);
+  static ReadChangeStreamResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReadChangeStreamResponse>(create);
   static ReadChangeStreamResponse? _defaultInstance;
 
-  ReadChangeStreamResponse_StreamRecord whichStreamRecord() => _ReadChangeStreamResponse_StreamRecordByTag[$_whichOneof(0)]!;
+  ReadChangeStreamResponse_StreamRecord whichStreamRecord() =>
+      _ReadChangeStreamResponse_StreamRecordByTag[$_whichOneof(0)]!;
   void clearStreamRecord() => clearField($_whichOneof(0));
 
   /// A mutation to the partition.
   @$pb.TagNumber(1)
   ReadChangeStreamResponse_DataChange get dataChange => $_getN(0);
   @$pb.TagNumber(1)
-  set dataChange(ReadChangeStreamResponse_DataChange v) { setField(1, v); }
+  set dataChange(ReadChangeStreamResponse_DataChange v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDataChange() => $_has(0);
   @$pb.TagNumber(1)
@@ -2634,7 +3260,10 @@ class ReadChangeStreamResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ReadChangeStreamResponse_Heartbeat get heartbeat => $_getN(1);
   @$pb.TagNumber(2)
-  set heartbeat(ReadChangeStreamResponse_Heartbeat v) { setField(2, v); }
+  set heartbeat(ReadChangeStreamResponse_Heartbeat v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHeartbeat() => $_has(1);
   @$pb.TagNumber(2)
@@ -2646,7 +3275,10 @@ class ReadChangeStreamResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ReadChangeStreamResponse_CloseStream get closeStream => $_getN(2);
   @$pb.TagNumber(3)
-  set closeStream(ReadChangeStreamResponse_CloseStream v) { setField(3, v); }
+  set closeStream(ReadChangeStreamResponse_CloseStream v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCloseStream() => $_has(2);
   @$pb.TagNumber(3)
@@ -2655,10 +3287,7 @@ class ReadChangeStreamResponse extends $pb.GeneratedMessage {
   ReadChangeStreamResponse_CloseStream ensureCloseStream() => $_ensure(2);
 }
 
-enum ExecuteQueryRequest_DataFormat {
-  protoFormat, 
-  notSet
-}
+enum ExecuteQueryRequest_DataFormat { protoFormat, notSet }
 
 /// Request message for Bigtable.ExecuteQuery
 class ExecuteQueryRequest extends $pb.GeneratedMessage {
@@ -2692,46 +3321,65 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ExecuteQueryRequest._() : super();
-  factory ExecuteQueryRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExecuteQueryRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExecuteQueryRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExecuteQueryRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ExecuteQueryRequest_DataFormat> _ExecuteQueryRequest_DataFormatByTag = {
-    4 : ExecuteQueryRequest_DataFormat.protoFormat,
-    0 : ExecuteQueryRequest_DataFormat.notSet
+  static const $core.Map<$core.int, ExecuteQueryRequest_DataFormat>
+      _ExecuteQueryRequest_DataFormatByTag = {
+    4: ExecuteQueryRequest_DataFormat.protoFormat,
+    0: ExecuteQueryRequest_DataFormat.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteQueryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExecuteQueryRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'instanceName')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(3, _omitFieldNames ? '' : 'query')
-    ..aOM<$403.ProtoFormat>(4, _omitFieldNames ? '' : 'protoFormat', subBuilder: $403.ProtoFormat.create)
-    ..m<$core.String, $403.Value>(7, _omitFieldNames ? '' : 'params', entryClassName: 'ExecuteQueryRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $403.Value.create, valueDefaultOrMaker: $403.Value.getDefault, packageName: const $pb.PackageName('google.bigtable.v2'))
-    ..a<$core.List<$core.int>>(8, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$403.ProtoFormat>(4, _omitFieldNames ? '' : 'protoFormat',
+        subBuilder: $403.ProtoFormat.create)
+    ..m<$core.String, $403.Value>(7, _omitFieldNames ? '' : 'params',
+        entryClassName: 'ExecuteQueryRequest.ParamsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $403.Value.create,
+        valueDefaultOrMaker: $403.Value.getDefault,
+        packageName: const $pb.PackageName('google.bigtable.v2'))
+    ..a<$core.List<$core.int>>(
+        8, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ExecuteQueryRequest clone() => ExecuteQueryRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExecuteQueryRequest copyWith(void Function(ExecuteQueryRequest) updates) => super.copyWith((message) => updates(message as ExecuteQueryRequest)) as ExecuteQueryRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExecuteQueryRequest copyWith(void Function(ExecuteQueryRequest) updates) =>
+      super.copyWith((message) => updates(message as ExecuteQueryRequest))
+          as ExecuteQueryRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExecuteQueryRequest create() => ExecuteQueryRequest._();
   ExecuteQueryRequest createEmptyInstance() => create();
-  static $pb.PbList<ExecuteQueryRequest> createRepeated() => $pb.PbList<ExecuteQueryRequest>();
+  static $pb.PbList<ExecuteQueryRequest> createRepeated() =>
+      $pb.PbList<ExecuteQueryRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExecuteQueryRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExecuteQueryRequest>(create);
+  static ExecuteQueryRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExecuteQueryRequest>(create);
   static ExecuteQueryRequest? _defaultInstance;
 
-  ExecuteQueryRequest_DataFormat whichDataFormat() => _ExecuteQueryRequest_DataFormatByTag[$_whichOneof(0)]!;
+  ExecuteQueryRequest_DataFormat whichDataFormat() =>
+      _ExecuteQueryRequest_DataFormatByTag[$_whichOneof(0)]!;
   void clearDataFormat() => clearField($_whichOneof(0));
 
   /// Required. The unique name of the instance against which the query should be
@@ -2740,7 +3388,10 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get instanceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set instanceName($core.String v) { $_setString(0, v); }
+  set instanceName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstanceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2751,7 +3402,10 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get appProfileId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set appProfileId($core.String v) { $_setString(1, v); }
+  set appProfileId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAppProfileId() => $_has(1);
   @$pb.TagNumber(2)
@@ -2761,7 +3415,10 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get query => $_getSZ(2);
   @$pb.TagNumber(3)
-  set query($core.String v) { $_setString(2, v); }
+  set query($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasQuery() => $_has(2);
   @$pb.TagNumber(3)
@@ -2772,7 +3429,10 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $403.ProtoFormat get protoFormat => $_getN(3);
   @$pb.TagNumber(4)
-  set protoFormat($403.ProtoFormat v) { setField(4, v); }
+  set protoFormat($403.ProtoFormat v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasProtoFormat() => $_has(3);
   @$pb.TagNumber(4)
@@ -2812,18 +3472,17 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.List<$core.int> get resumeToken => $_getN(5);
   @$pb.TagNumber(8)
-  set resumeToken($core.List<$core.int> v) { $_setBytes(5, v); }
+  set resumeToken($core.List<$core.int> v) {
+    $_setBytes(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasResumeToken() => $_has(5);
   @$pb.TagNumber(8)
   void clearResumeToken() => clearField(8);
 }
 
-enum ExecuteQueryResponse_Response {
-  metadata, 
-  results, 
-  notSet
-}
+enum ExecuteQueryResponse_Response { metadata, results, notSet }
 
 /// Response message for Bigtable.ExecuteQuery
 class ExecuteQueryResponse extends $pb.GeneratedMessage {
@@ -2841,43 +3500,57 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ExecuteQueryResponse._() : super();
-  factory ExecuteQueryResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ExecuteQueryResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ExecuteQueryResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ExecuteQueryResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ExecuteQueryResponse_Response> _ExecuteQueryResponse_ResponseByTag = {
-    1 : ExecuteQueryResponse_Response.metadata,
-    2 : ExecuteQueryResponse_Response.results,
-    0 : ExecuteQueryResponse_Response.notSet
+  static const $core.Map<$core.int, ExecuteQueryResponse_Response>
+      _ExecuteQueryResponse_ResponseByTag = {
+    1: ExecuteQueryResponse_Response.metadata,
+    2: ExecuteQueryResponse_Response.results,
+    0: ExecuteQueryResponse_Response.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteQueryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExecuteQueryResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$403.ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $403.ResultSetMetadata.create)
-    ..aOM<$403.PartialResultSet>(2, _omitFieldNames ? '' : 'results', subBuilder: $403.PartialResultSet.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$403.ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $403.ResultSetMetadata.create)
+    ..aOM<$403.PartialResultSet>(2, _omitFieldNames ? '' : 'results',
+        subBuilder: $403.PartialResultSet.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ExecuteQueryResponse clone() => ExecuteQueryResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ExecuteQueryResponse copyWith(void Function(ExecuteQueryResponse) updates) => super.copyWith((message) => updates(message as ExecuteQueryResponse)) as ExecuteQueryResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ExecuteQueryResponse clone() =>
+      ExecuteQueryResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ExecuteQueryResponse copyWith(void Function(ExecuteQueryResponse) updates) =>
+      super.copyWith((message) => updates(message as ExecuteQueryResponse))
+          as ExecuteQueryResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExecuteQueryResponse create() => ExecuteQueryResponse._();
   ExecuteQueryResponse createEmptyInstance() => create();
-  static $pb.PbList<ExecuteQueryResponse> createRepeated() => $pb.PbList<ExecuteQueryResponse>();
+  static $pb.PbList<ExecuteQueryResponse> createRepeated() =>
+      $pb.PbList<ExecuteQueryResponse>();
   @$core.pragma('dart2js:noInline')
-  static ExecuteQueryResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExecuteQueryResponse>(create);
+  static ExecuteQueryResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExecuteQueryResponse>(create);
   static ExecuteQueryResponse? _defaultInstance;
 
-  ExecuteQueryResponse_Response whichResponse() => _ExecuteQueryResponse_ResponseByTag[$_whichOneof(0)]!;
+  ExecuteQueryResponse_Response whichResponse() =>
+      _ExecuteQueryResponse_ResponseByTag[$_whichOneof(0)]!;
   void clearResponse() => clearField($_whichOneof(0));
 
   /// Structure of rows in this response stream. The first (and only the first)
@@ -2885,7 +3558,10 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $403.ResultSetMetadata get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata($403.ResultSetMetadata v) { setField(1, v); }
+  set metadata($403.ResultSetMetadata v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
@@ -2899,7 +3575,10 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $403.PartialResultSet get results => $_getN(1);
   @$pb.TagNumber(2)
-  set results($403.PartialResultSet v) { setField(2, v); }
+  set results($403.PartialResultSet v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResults() => $_has(1);
   @$pb.TagNumber(2)
@@ -2908,6 +3587,6 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
   $403.PartialResultSet ensureResults() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

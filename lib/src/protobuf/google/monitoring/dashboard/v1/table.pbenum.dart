@@ -15,21 +15,28 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Enum for metric metric_visualization
 class TimeSeriesTable_MetricVisualization extends $pb.ProtobufEnum {
-  static const TimeSeriesTable_MetricVisualization METRIC_VISUALIZATION_UNSPECIFIED = TimeSeriesTable_MetricVisualization._(0, _omitEnumNames ? '' : 'METRIC_VISUALIZATION_UNSPECIFIED');
-  static const TimeSeriesTable_MetricVisualization NUMBER = TimeSeriesTable_MetricVisualization._(1, _omitEnumNames ? '' : 'NUMBER');
-  static const TimeSeriesTable_MetricVisualization BAR = TimeSeriesTable_MetricVisualization._(2, _omitEnumNames ? '' : 'BAR');
+  static const TimeSeriesTable_MetricVisualization
+      METRIC_VISUALIZATION_UNSPECIFIED = TimeSeriesTable_MetricVisualization._(
+          0, _omitEnumNames ? '' : 'METRIC_VISUALIZATION_UNSPECIFIED');
+  static const TimeSeriesTable_MetricVisualization NUMBER =
+      TimeSeriesTable_MetricVisualization._(1, _omitEnumNames ? '' : 'NUMBER');
+  static const TimeSeriesTable_MetricVisualization BAR =
+      TimeSeriesTable_MetricVisualization._(2, _omitEnumNames ? '' : 'BAR');
 
-  static const $core.List<TimeSeriesTable_MetricVisualization> values = <TimeSeriesTable_MetricVisualization> [
+  static const $core.List<TimeSeriesTable_MetricVisualization> values =
+      <TimeSeriesTable_MetricVisualization>[
     METRIC_VISUALIZATION_UNSPECIFIED,
     NUMBER,
     BAR,
   ];
 
-  static final $core.Map<$core.int, TimeSeriesTable_MetricVisualization> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static TimeSeriesTable_MetricVisualization? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, TimeSeriesTable_MetricVisualization>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static TimeSeriesTable_MetricVisualization? valueOf($core.int value) =>
+      _byValue[value];
 
-  const TimeSeriesTable_MetricVisualization._($core.int v, $core.String n) : super(v, n);
+  const TimeSeriesTable_MetricVisualization._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -28,33 +28,45 @@ class CommitResponse_CommitStats extends $pb.GeneratedMessage {
     return $result;
   }
   CommitResponse_CommitStats._() : super();
-  factory CommitResponse_CommitStats.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CommitResponse_CommitStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CommitResponse_CommitStats.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CommitResponse_CommitStats.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommitResponse.CommitStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CommitResponse.CommitStats',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'mutationCount')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CommitResponse_CommitStats clone() => CommitResponse_CommitStats()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CommitResponse_CommitStats copyWith(void Function(CommitResponse_CommitStats) updates) => super.copyWith((message) => updates(message as CommitResponse_CommitStats)) as CommitResponse_CommitStats;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CommitResponse_CommitStats clone() =>
+      CommitResponse_CommitStats()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CommitResponse_CommitStats copyWith(
+          void Function(CommitResponse_CommitStats) updates) =>
+      super.copyWith(
+              (message) => updates(message as CommitResponse_CommitStats))
+          as CommitResponse_CommitStats;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CommitResponse_CommitStats create() => CommitResponse_CommitStats._();
   CommitResponse_CommitStats createEmptyInstance() => create();
-  static $pb.PbList<CommitResponse_CommitStats> createRepeated() => $pb.PbList<CommitResponse_CommitStats>();
+  static $pb.PbList<CommitResponse_CommitStats> createRepeated() =>
+      $pb.PbList<CommitResponse_CommitStats>();
   @$core.pragma('dart2js:noInline')
-  static CommitResponse_CommitStats getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CommitResponse_CommitStats>(create);
+  static CommitResponse_CommitStats getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CommitResponse_CommitStats>(create);
   static CommitResponse_CommitStats? _defaultInstance;
 
   /// The total number of mutations for the transaction. Knowing the
@@ -67,7 +79,10 @@ class CommitResponse_CommitStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get mutationCount => $_getI64(0);
   @$pb.TagNumber(1)
-  set mutationCount($fixnum.Int64 v) { $_setInt64(0, v); }
+  set mutationCount($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMutationCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,41 +105,55 @@ class CommitResponse extends $pb.GeneratedMessage {
     return $result;
   }
   CommitResponse._() : super();
-  factory CommitResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CommitResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CommitResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CommitResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommitResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'commitTimestamp', subBuilder: $302.Timestamp.create)
-    ..aOM<CommitResponse_CommitStats>(2, _omitFieldNames ? '' : 'commitStats', subBuilder: CommitResponse_CommitStats.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CommitResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'commitTimestamp',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<CommitResponse_CommitStats>(2, _omitFieldNames ? '' : 'commitStats',
+        subBuilder: CommitResponse_CommitStats.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CommitResponse clone() => CommitResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CommitResponse copyWith(void Function(CommitResponse) updates) => super.copyWith((message) => updates(message as CommitResponse)) as CommitResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CommitResponse copyWith(void Function(CommitResponse) updates) =>
+      super.copyWith((message) => updates(message as CommitResponse))
+          as CommitResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CommitResponse create() => CommitResponse._();
   CommitResponse createEmptyInstance() => create();
-  static $pb.PbList<CommitResponse> createRepeated() => $pb.PbList<CommitResponse>();
+  static $pb.PbList<CommitResponse> createRepeated() =>
+      $pb.PbList<CommitResponse>();
   @$core.pragma('dart2js:noInline')
-  static CommitResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CommitResponse>(create);
+  static CommitResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CommitResponse>(create);
   static CommitResponse? _defaultInstance;
 
   /// The Cloud Spanner timestamp at which the transaction committed.
   @$pb.TagNumber(1)
   $302.Timestamp get commitTimestamp => $_getN(0);
   @$pb.TagNumber(1)
-  set commitTimestamp($302.Timestamp v) { setField(1, v); }
+  set commitTimestamp($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCommitTimestamp() => $_has(0);
   @$pb.TagNumber(1)
@@ -138,7 +167,10 @@ class CommitResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CommitResponse_CommitStats get commitStats => $_getN(1);
   @$pb.TagNumber(2)
-  set commitStats(CommitResponse_CommitStats v) { setField(2, v); }
+  set commitStats(CommitResponse_CommitStats v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCommitStats() => $_has(1);
   @$pb.TagNumber(2)
@@ -147,6 +179,6 @@ class CommitResponse extends $pb.GeneratedMessage {
   CommitResponse_CommitStats ensureCommitStats() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

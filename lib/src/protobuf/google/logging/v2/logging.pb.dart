@@ -33,33 +33,42 @@ class DeleteLogRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteLogRequest._() : super();
-  factory DeleteLogRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteLogRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteLogRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteLogRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteLogRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteLogRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'logName')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteLogRequest clone() => DeleteLogRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteLogRequest copyWith(void Function(DeleteLogRequest) updates) => super.copyWith((message) => updates(message as DeleteLogRequest)) as DeleteLogRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteLogRequest copyWith(void Function(DeleteLogRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteLogRequest))
+          as DeleteLogRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteLogRequest create() => DeleteLogRequest._();
   DeleteLogRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteLogRequest> createRepeated() => $pb.PbList<DeleteLogRequest>();
+  static $pb.PbList<DeleteLogRequest> createRepeated() =>
+      $pb.PbList<DeleteLogRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteLogRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteLogRequest>(create);
+  static DeleteLogRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteLogRequest>(create);
   static DeleteLogRequest? _defaultInstance;
 
   ///  Required. The resource name of the log to delete:
@@ -78,7 +87,10 @@ class DeleteLogRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get logName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set logName($core.String v) { $_setString(0, v); }
+  set logName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLogName() => $_has(0);
   @$pb.TagNumber(1)
@@ -117,38 +129,55 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   WriteLogEntriesRequest._() : super();
-  factory WriteLogEntriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WriteLogEntriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory WriteLogEntriesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WriteLogEntriesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteLogEntriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'WriteLogEntriesRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'logName')
-    ..aOM<$196.MonitoredResource>(2, _omitFieldNames ? '' : 'resource', subBuilder: $196.MonitoredResource.create)
-    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'WriteLogEntriesRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.logging.v2'))
-    ..pc<$447.LogEntry>(4, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $447.LogEntry.create)
+    ..aOM<$196.MonitoredResource>(2, _omitFieldNames ? '' : 'resource',
+        subBuilder: $196.MonitoredResource.create)
+    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'WriteLogEntriesRequest.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.logging.v2'))
+    ..pc<$447.LogEntry>(4, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM,
+        subBuilder: $447.LogEntry.create)
     ..aOB(5, _omitFieldNames ? '' : 'partialSuccess')
     ..aOB(6, _omitFieldNames ? '' : 'dryRun')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  WriteLogEntriesRequest clone() => WriteLogEntriesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WriteLogEntriesRequest copyWith(void Function(WriteLogEntriesRequest) updates) => super.copyWith((message) => updates(message as WriteLogEntriesRequest)) as WriteLogEntriesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  WriteLogEntriesRequest clone() =>
+      WriteLogEntriesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WriteLogEntriesRequest copyWith(
+          void Function(WriteLogEntriesRequest) updates) =>
+      super.copyWith((message) => updates(message as WriteLogEntriesRequest))
+          as WriteLogEntriesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WriteLogEntriesRequest create() => WriteLogEntriesRequest._();
   WriteLogEntriesRequest createEmptyInstance() => create();
-  static $pb.PbList<WriteLogEntriesRequest> createRepeated() => $pb.PbList<WriteLogEntriesRequest>();
+  static $pb.PbList<WriteLogEntriesRequest> createRepeated() =>
+      $pb.PbList<WriteLogEntriesRequest>();
   @$core.pragma('dart2js:noInline')
-  static WriteLogEntriesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WriteLogEntriesRequest>(create);
+  static WriteLogEntriesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WriteLogEntriesRequest>(create);
   static WriteLogEntriesRequest? _defaultInstance;
 
   ///  Optional. A default log resource name that is assigned to all log entries
@@ -171,7 +200,10 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get logName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set logName($core.String v) { $_setString(0, v); }
+  set logName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLogName() => $_has(0);
   @$pb.TagNumber(1)
@@ -188,7 +220,10 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $196.MonitoredResource get resource => $_getN(1);
   @$pb.TagNumber(2)
-  set resource($196.MonitoredResource v) { setField(2, v); }
+  set resource($196.MonitoredResource v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResource() => $_has(1);
   @$pb.TagNumber(2)
@@ -240,7 +275,10 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get partialSuccess => $_getBF(4);
   @$pb.TagNumber(5)
-  set partialSuccess($core.bool v) { $_setBool(4, v); }
+  set partialSuccess($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPartialSuccess() => $_has(4);
   @$pb.TagNumber(5)
@@ -252,7 +290,10 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get dryRun => $_getBF(5);
   @$pb.TagNumber(6)
-  set dryRun($core.bool v) { $_setBool(5, v); }
+  set dryRun($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDryRun() => $_has(5);
   @$pb.TagNumber(6)
@@ -263,32 +304,43 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
 class WriteLogEntriesResponse extends $pb.GeneratedMessage {
   factory WriteLogEntriesResponse() => create();
   WriteLogEntriesResponse._() : super();
-  factory WriteLogEntriesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WriteLogEntriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory WriteLogEntriesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WriteLogEntriesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteLogEntriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'WriteLogEntriesResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  WriteLogEntriesResponse clone() => WriteLogEntriesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WriteLogEntriesResponse copyWith(void Function(WriteLogEntriesResponse) updates) => super.copyWith((message) => updates(message as WriteLogEntriesResponse)) as WriteLogEntriesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  WriteLogEntriesResponse clone() =>
+      WriteLogEntriesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WriteLogEntriesResponse copyWith(
+          void Function(WriteLogEntriesResponse) updates) =>
+      super.copyWith((message) => updates(message as WriteLogEntriesResponse))
+          as WriteLogEntriesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WriteLogEntriesResponse create() => WriteLogEntriesResponse._();
   WriteLogEntriesResponse createEmptyInstance() => create();
-  static $pb.PbList<WriteLogEntriesResponse> createRepeated() => $pb.PbList<WriteLogEntriesResponse>();
+  static $pb.PbList<WriteLogEntriesResponse> createRepeated() =>
+      $pb.PbList<WriteLogEntriesResponse>();
   @$core.pragma('dart2js:noInline')
-  static WriteLogEntriesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WriteLogEntriesResponse>(create);
+  static WriteLogEntriesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WriteLogEntriesResponse>(create);
   static WriteLogEntriesResponse? _defaultInstance;
 }
 
@@ -304,33 +356,52 @@ class WriteLogEntriesPartialErrors extends $pb.GeneratedMessage {
     return $result;
   }
   WriteLogEntriesPartialErrors._() : super();
-  factory WriteLogEntriesPartialErrors.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WriteLogEntriesPartialErrors.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory WriteLogEntriesPartialErrors.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WriteLogEntriesPartialErrors.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteLogEntriesPartialErrors', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..m<$core.int, $322.Status>(1, _omitFieldNames ? '' : 'logEntryErrors', entryClassName: 'WriteLogEntriesPartialErrors.LogEntryErrorsEntry', keyFieldType: $pb.PbFieldType.O3, valueFieldType: $pb.PbFieldType.OM, valueCreator: $322.Status.create, valueDefaultOrMaker: $322.Status.getDefault, packageName: const $pb.PackageName('google.logging.v2'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'WriteLogEntriesPartialErrors',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
+    ..m<$core.int, $322.Status>(1, _omitFieldNames ? '' : 'logEntryErrors',
+        entryClassName: 'WriteLogEntriesPartialErrors.LogEntryErrorsEntry',
+        keyFieldType: $pb.PbFieldType.O3,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $322.Status.create,
+        valueDefaultOrMaker: $322.Status.getDefault,
+        packageName: const $pb.PackageName('google.logging.v2'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  WriteLogEntriesPartialErrors clone() => WriteLogEntriesPartialErrors()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WriteLogEntriesPartialErrors copyWith(void Function(WriteLogEntriesPartialErrors) updates) => super.copyWith((message) => updates(message as WriteLogEntriesPartialErrors)) as WriteLogEntriesPartialErrors;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  WriteLogEntriesPartialErrors clone() =>
+      WriteLogEntriesPartialErrors()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WriteLogEntriesPartialErrors copyWith(
+          void Function(WriteLogEntriesPartialErrors) updates) =>
+      super.copyWith(
+              (message) => updates(message as WriteLogEntriesPartialErrors))
+          as WriteLogEntriesPartialErrors;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static WriteLogEntriesPartialErrors create() => WriteLogEntriesPartialErrors._();
+  static WriteLogEntriesPartialErrors create() =>
+      WriteLogEntriesPartialErrors._();
   WriteLogEntriesPartialErrors createEmptyInstance() => create();
-  static $pb.PbList<WriteLogEntriesPartialErrors> createRepeated() => $pb.PbList<WriteLogEntriesPartialErrors>();
+  static $pb.PbList<WriteLogEntriesPartialErrors> createRepeated() =>
+      $pb.PbList<WriteLogEntriesPartialErrors>();
   @$core.pragma('dart2js:noInline')
-  static WriteLogEntriesPartialErrors getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WriteLogEntriesPartialErrors>(create);
+  static WriteLogEntriesPartialErrors getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WriteLogEntriesPartialErrors>(create);
   static WriteLogEntriesPartialErrors? _defaultInstance;
 
   ///  When `WriteLogEntriesRequest.partial_success` is true, records the error
@@ -371,37 +442,48 @@ class ListLogEntriesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListLogEntriesRequest._() : super();
-  factory ListLogEntriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLogEntriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLogEntriesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLogEntriesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLogEntriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLogEntriesRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..aOS(3, _omitFieldNames ? '' : 'orderBy')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..pPS(8, _omitFieldNames ? '' : 'resourceNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListLogEntriesRequest clone() => ListLogEntriesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLogEntriesRequest copyWith(void Function(ListLogEntriesRequest) updates) => super.copyWith((message) => updates(message as ListLogEntriesRequest)) as ListLogEntriesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListLogEntriesRequest clone() =>
+      ListLogEntriesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLogEntriesRequest copyWith(
+          void Function(ListLogEntriesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListLogEntriesRequest))
+          as ListLogEntriesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLogEntriesRequest create() => ListLogEntriesRequest._();
   ListLogEntriesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListLogEntriesRequest> createRepeated() => $pb.PbList<ListLogEntriesRequest>();
+  static $pb.PbList<ListLogEntriesRequest> createRepeated() =>
+      $pb.PbList<ListLogEntriesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListLogEntriesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLogEntriesRequest>(create);
+  static ListLogEntriesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLogEntriesRequest>(create);
   static ListLogEntriesRequest? _defaultInstance;
 
   /// Optional. Only log entries that match the filter are returned.  An empty
@@ -412,7 +494,10 @@ class ListLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(0);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(0, v); }
+  set filter($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(0);
   @$pb.TagNumber(2)
@@ -427,7 +512,10 @@ class ListLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get orderBy => $_getSZ(1);
   @$pb.TagNumber(3)
-  set orderBy($core.String v) { $_setString(1, v); }
+  set orderBy($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasOrderBy() => $_has(1);
   @$pb.TagNumber(3)
@@ -440,7 +528,10 @@ class ListLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(4)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(4)
@@ -453,7 +544,10 @@ class ListLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(5)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(5)
@@ -496,34 +590,46 @@ class ListLogEntriesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListLogEntriesResponse._() : super();
-  factory ListLogEntriesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLogEntriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLogEntriesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLogEntriesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLogEntriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..pc<$447.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $447.LogEntry.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLogEntriesResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
+    ..pc<$447.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM,
+        subBuilder: $447.LogEntry.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListLogEntriesResponse clone() => ListLogEntriesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLogEntriesResponse copyWith(void Function(ListLogEntriesResponse) updates) => super.copyWith((message) => updates(message as ListLogEntriesResponse)) as ListLogEntriesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListLogEntriesResponse clone() =>
+      ListLogEntriesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLogEntriesResponse copyWith(
+          void Function(ListLogEntriesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListLogEntriesResponse))
+          as ListLogEntriesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLogEntriesResponse create() => ListLogEntriesResponse._();
   ListLogEntriesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListLogEntriesResponse> createRepeated() => $pb.PbList<ListLogEntriesResponse>();
+  static $pb.PbList<ListLogEntriesResponse> createRepeated() =>
+      $pb.PbList<ListLogEntriesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListLogEntriesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLogEntriesResponse>(create);
+  static ListLogEntriesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLogEntriesResponse>(create);
   static ListLogEntriesResponse? _defaultInstance;
 
   /// A list of log entries.  If `entries` is empty, `nextPageToken` may still be
@@ -545,7 +651,10 @@ class ListLogEntriesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -568,34 +677,49 @@ class ListMonitoredResourceDescriptorsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListMonitoredResourceDescriptorsRequest._() : super();
-  factory ListMonitoredResourceDescriptorsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListMonitoredResourceDescriptorsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListMonitoredResourceDescriptorsRequest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListMonitoredResourceDescriptorsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMonitoredResourceDescriptorsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListMonitoredResourceDescriptorsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListMonitoredResourceDescriptorsRequest clone() => ListMonitoredResourceDescriptorsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListMonitoredResourceDescriptorsRequest copyWith(void Function(ListMonitoredResourceDescriptorsRequest) updates) => super.copyWith((message) => updates(message as ListMonitoredResourceDescriptorsRequest)) as ListMonitoredResourceDescriptorsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListMonitoredResourceDescriptorsRequest clone() =>
+      ListMonitoredResourceDescriptorsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListMonitoredResourceDescriptorsRequest copyWith(
+          void Function(ListMonitoredResourceDescriptorsRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListMonitoredResourceDescriptorsRequest))
+          as ListMonitoredResourceDescriptorsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListMonitoredResourceDescriptorsRequest create() => ListMonitoredResourceDescriptorsRequest._();
+  static ListMonitoredResourceDescriptorsRequest create() =>
+      ListMonitoredResourceDescriptorsRequest._();
   ListMonitoredResourceDescriptorsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListMonitoredResourceDescriptorsRequest> createRepeated() => $pb.PbList<ListMonitoredResourceDescriptorsRequest>();
+  static $pb.PbList<ListMonitoredResourceDescriptorsRequest> createRepeated() =>
+      $pb.PbList<ListMonitoredResourceDescriptorsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListMonitoredResourceDescriptorsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListMonitoredResourceDescriptorsRequest>(create);
+  static ListMonitoredResourceDescriptorsRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListMonitoredResourceDescriptorsRequest>(create);
   static ListMonitoredResourceDescriptorsRequest? _defaultInstance;
 
   /// Optional. The maximum number of results to return from this request.
@@ -604,7 +728,10 @@ class ListMonitoredResourceDescriptorsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get pageSize => $_getIZ(0);
   @$pb.TagNumber(1)
-  set pageSize($core.int v) { $_setSignedInt32(0, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPageSize() => $_has(0);
   @$pb.TagNumber(1)
@@ -617,7 +744,10 @@ class ListMonitoredResourceDescriptorsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -640,39 +770,58 @@ class ListMonitoredResourceDescriptorsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListMonitoredResourceDescriptorsResponse._() : super();
-  factory ListMonitoredResourceDescriptorsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListMonitoredResourceDescriptorsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListMonitoredResourceDescriptorsResponse.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListMonitoredResourceDescriptorsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMonitoredResourceDescriptorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..pc<$196.MonitoredResourceDescriptor>(1, _omitFieldNames ? '' : 'resourceDescriptors', $pb.PbFieldType.PM, subBuilder: $196.MonitoredResourceDescriptor.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListMonitoredResourceDescriptorsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
+    ..pc<$196.MonitoredResourceDescriptor>(
+        1, _omitFieldNames ? '' : 'resourceDescriptors', $pb.PbFieldType.PM,
+        subBuilder: $196.MonitoredResourceDescriptor.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListMonitoredResourceDescriptorsResponse clone() => ListMonitoredResourceDescriptorsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListMonitoredResourceDescriptorsResponse copyWith(void Function(ListMonitoredResourceDescriptorsResponse) updates) => super.copyWith((message) => updates(message as ListMonitoredResourceDescriptorsResponse)) as ListMonitoredResourceDescriptorsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListMonitoredResourceDescriptorsResponse clone() =>
+      ListMonitoredResourceDescriptorsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListMonitoredResourceDescriptorsResponse copyWith(
+          void Function(ListMonitoredResourceDescriptorsResponse) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListMonitoredResourceDescriptorsResponse))
+          as ListMonitoredResourceDescriptorsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListMonitoredResourceDescriptorsResponse create() => ListMonitoredResourceDescriptorsResponse._();
+  static ListMonitoredResourceDescriptorsResponse create() =>
+      ListMonitoredResourceDescriptorsResponse._();
   ListMonitoredResourceDescriptorsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListMonitoredResourceDescriptorsResponse> createRepeated() => $pb.PbList<ListMonitoredResourceDescriptorsResponse>();
+  static $pb.PbList<ListMonitoredResourceDescriptorsResponse>
+      createRepeated() =>
+          $pb.PbList<ListMonitoredResourceDescriptorsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListMonitoredResourceDescriptorsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListMonitoredResourceDescriptorsResponse>(create);
+  static ListMonitoredResourceDescriptorsResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListMonitoredResourceDescriptorsResponse>(create);
   static ListMonitoredResourceDescriptorsResponse? _defaultInstance;
 
   /// A list of resource descriptors.
   @$pb.TagNumber(1)
-  $core.List<$196.MonitoredResourceDescriptor> get resourceDescriptors => $_getList(0);
+  $core.List<$196.MonitoredResourceDescriptor> get resourceDescriptors =>
+      $_getList(0);
 
   /// If there might be more results than those appearing in this response, then
   /// `nextPageToken` is included.  To get the next set of results, call this
@@ -680,7 +829,10 @@ class ListMonitoredResourceDescriptorsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -711,36 +863,45 @@ class ListLogsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListLogsRequest._() : super();
-  factory ListLogsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLogsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLogsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLogsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLogsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLogsRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..pPS(8, _omitFieldNames ? '' : 'resourceNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListLogsRequest clone() => ListLogsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLogsRequest copyWith(void Function(ListLogsRequest) updates) => super.copyWith((message) => updates(message as ListLogsRequest)) as ListLogsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLogsRequest copyWith(void Function(ListLogsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListLogsRequest))
+          as ListLogsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLogsRequest create() => ListLogsRequest._();
   ListLogsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListLogsRequest> createRepeated() => $pb.PbList<ListLogsRequest>();
+  static $pb.PbList<ListLogsRequest> createRepeated() =>
+      $pb.PbList<ListLogsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListLogsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLogsRequest>(create);
+  static ListLogsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLogsRequest>(create);
   static ListLogsRequest? _defaultInstance;
 
   ///  Required. The resource name to list logs for:
@@ -752,7 +913,10 @@ class ListLogsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -764,7 +928,10 @@ class ListLogsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -777,7 +944,10 @@ class ListLogsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -818,34 +988,43 @@ class ListLogsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListLogsResponse._() : super();
-  factory ListLogsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLogsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLogsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLogsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLogsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLogsResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'logNames')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListLogsResponse clone() => ListLogsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLogsResponse copyWith(void Function(ListLogsResponse) updates) => super.copyWith((message) => updates(message as ListLogsResponse)) as ListLogsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLogsResponse copyWith(void Function(ListLogsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListLogsResponse))
+          as ListLogsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLogsResponse create() => ListLogsResponse._();
   ListLogsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListLogsResponse> createRepeated() => $pb.PbList<ListLogsResponse>();
+  static $pb.PbList<ListLogsResponse> createRepeated() =>
+      $pb.PbList<ListLogsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListLogsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLogsResponse>(create);
+  static ListLogsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLogsResponse>(create);
   static ListLogsResponse? _defaultInstance;
 
   /// If there might be more results than those appearing in this response, then
@@ -854,7 +1033,10 @@ class ListLogsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(0);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(0, v); }
+  set nextPageToken($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(0);
   @$pb.TagNumber(2)
@@ -887,35 +1069,47 @@ class TailLogEntriesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   TailLogEntriesRequest._() : super();
-  factory TailLogEntriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TailLogEntriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TailLogEntriesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TailLogEntriesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TailLogEntriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TailLogEntriesRequest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'resourceNames')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'bufferWindow', subBuilder: $264.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'bufferWindow',
+        subBuilder: $264.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TailLogEntriesRequest clone() => TailLogEntriesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TailLogEntriesRequest copyWith(void Function(TailLogEntriesRequest) updates) => super.copyWith((message) => updates(message as TailLogEntriesRequest)) as TailLogEntriesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TailLogEntriesRequest clone() =>
+      TailLogEntriesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TailLogEntriesRequest copyWith(
+          void Function(TailLogEntriesRequest) updates) =>
+      super.copyWith((message) => updates(message as TailLogEntriesRequest))
+          as TailLogEntriesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TailLogEntriesRequest create() => TailLogEntriesRequest._();
   TailLogEntriesRequest createEmptyInstance() => create();
-  static $pb.PbList<TailLogEntriesRequest> createRepeated() => $pb.PbList<TailLogEntriesRequest>();
+  static $pb.PbList<TailLogEntriesRequest> createRepeated() =>
+      $pb.PbList<TailLogEntriesRequest>();
   @$core.pragma('dart2js:noInline')
-  static TailLogEntriesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TailLogEntriesRequest>(create);
+  static TailLogEntriesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TailLogEntriesRequest>(create);
   static TailLogEntriesRequest? _defaultInstance;
 
   ///  Required. Name of a parent resource from which to retrieve log entries:
@@ -942,7 +1136,10 @@ class TailLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filter($core.String v) { $_setString(1, v); }
+  set filter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFilter() => $_has(1);
   @$pb.TagNumber(2)
@@ -955,7 +1152,10 @@ class TailLogEntriesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $264.Duration get bufferWindow => $_getN(2);
   @$pb.TagNumber(3)
-  set bufferWindow($264.Duration v) { setField(3, v); }
+  set bufferWindow($264.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBufferWindow() => $_has(2);
   @$pb.TagNumber(3)
@@ -980,41 +1180,65 @@ class TailLogEntriesResponse_SuppressionInfo extends $pb.GeneratedMessage {
     return $result;
   }
   TailLogEntriesResponse_SuppressionInfo._() : super();
-  factory TailLogEntriesResponse_SuppressionInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TailLogEntriesResponse_SuppressionInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TailLogEntriesResponse_SuppressionInfo.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TailLogEntriesResponse_SuppressionInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TailLogEntriesResponse.SuppressionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..e<TailLogEntriesResponse_SuppressionInfo_Reason>(1, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE, defaultOrMaker: TailLogEntriesResponse_SuppressionInfo_Reason.REASON_UNSPECIFIED, valueOf: TailLogEntriesResponse_SuppressionInfo_Reason.valueOf, enumValues: TailLogEntriesResponse_SuppressionInfo_Reason.values)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'suppressedCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TailLogEntriesResponse.SuppressionInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
+    ..e<TailLogEntriesResponse_SuppressionInfo_Reason>(
+        1, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            TailLogEntriesResponse_SuppressionInfo_Reason.REASON_UNSPECIFIED,
+        valueOf: TailLogEntriesResponse_SuppressionInfo_Reason.valueOf,
+        enumValues: TailLogEntriesResponse_SuppressionInfo_Reason.values)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'suppressedCount', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TailLogEntriesResponse_SuppressionInfo clone() => TailLogEntriesResponse_SuppressionInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TailLogEntriesResponse_SuppressionInfo copyWith(void Function(TailLogEntriesResponse_SuppressionInfo) updates) => super.copyWith((message) => updates(message as TailLogEntriesResponse_SuppressionInfo)) as TailLogEntriesResponse_SuppressionInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TailLogEntriesResponse_SuppressionInfo clone() =>
+      TailLogEntriesResponse_SuppressionInfo()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TailLogEntriesResponse_SuppressionInfo copyWith(
+          void Function(TailLogEntriesResponse_SuppressionInfo) updates) =>
+      super.copyWith((message) =>
+              updates(message as TailLogEntriesResponse_SuppressionInfo))
+          as TailLogEntriesResponse_SuppressionInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TailLogEntriesResponse_SuppressionInfo create() => TailLogEntriesResponse_SuppressionInfo._();
+  static TailLogEntriesResponse_SuppressionInfo create() =>
+      TailLogEntriesResponse_SuppressionInfo._();
   TailLogEntriesResponse_SuppressionInfo createEmptyInstance() => create();
-  static $pb.PbList<TailLogEntriesResponse_SuppressionInfo> createRepeated() => $pb.PbList<TailLogEntriesResponse_SuppressionInfo>();
+  static $pb.PbList<TailLogEntriesResponse_SuppressionInfo> createRepeated() =>
+      $pb.PbList<TailLogEntriesResponse_SuppressionInfo>();
   @$core.pragma('dart2js:noInline')
-  static TailLogEntriesResponse_SuppressionInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TailLogEntriesResponse_SuppressionInfo>(create);
+  static TailLogEntriesResponse_SuppressionInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          TailLogEntriesResponse_SuppressionInfo>(create);
   static TailLogEntriesResponse_SuppressionInfo? _defaultInstance;
 
   /// The reason that entries were omitted from the session.
   @$pb.TagNumber(1)
   TailLogEntriesResponse_SuppressionInfo_Reason get reason => $_getN(0);
   @$pb.TagNumber(1)
-  set reason(TailLogEntriesResponse_SuppressionInfo_Reason v) { setField(1, v); }
+  set reason(TailLogEntriesResponse_SuppressionInfo_Reason v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasReason() => $_has(0);
   @$pb.TagNumber(1)
@@ -1024,7 +1248,10 @@ class TailLogEntriesResponse_SuppressionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get suppressedCount => $_getIZ(1);
   @$pb.TagNumber(2)
-  set suppressedCount($core.int v) { $_setSignedInt32(1, v); }
+  set suppressedCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSuppressedCount() => $_has(1);
   @$pb.TagNumber(2)
@@ -1047,34 +1274,48 @@ class TailLogEntriesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   TailLogEntriesResponse._() : super();
-  factory TailLogEntriesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TailLogEntriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TailLogEntriesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TailLogEntriesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TailLogEntriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..pc<$447.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $447.LogEntry.create)
-    ..pc<TailLogEntriesResponse_SuppressionInfo>(2, _omitFieldNames ? '' : 'suppressionInfo', $pb.PbFieldType.PM, subBuilder: TailLogEntriesResponse_SuppressionInfo.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TailLogEntriesResponse',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'),
+      createEmptyInstance: create)
+    ..pc<$447.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM,
+        subBuilder: $447.LogEntry.create)
+    ..pc<TailLogEntriesResponse_SuppressionInfo>(
+        2, _omitFieldNames ? '' : 'suppressionInfo', $pb.PbFieldType.PM,
+        subBuilder: TailLogEntriesResponse_SuppressionInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TailLogEntriesResponse clone() => TailLogEntriesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TailLogEntriesResponse copyWith(void Function(TailLogEntriesResponse) updates) => super.copyWith((message) => updates(message as TailLogEntriesResponse)) as TailLogEntriesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TailLogEntriesResponse clone() =>
+      TailLogEntriesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TailLogEntriesResponse copyWith(
+          void Function(TailLogEntriesResponse) updates) =>
+      super.copyWith((message) => updates(message as TailLogEntriesResponse))
+          as TailLogEntriesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TailLogEntriesResponse create() => TailLogEntriesResponse._();
   TailLogEntriesResponse createEmptyInstance() => create();
-  static $pb.PbList<TailLogEntriesResponse> createRepeated() => $pb.PbList<TailLogEntriesResponse>();
+  static $pb.PbList<TailLogEntriesResponse> createRepeated() =>
+      $pb.PbList<TailLogEntriesResponse>();
   @$core.pragma('dart2js:noInline')
-  static TailLogEntriesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TailLogEntriesResponse>(create);
+  static TailLogEntriesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TailLogEntriesResponse>(create);
   static TailLogEntriesResponse? _defaultInstance;
 
   /// A list of log entries. Each response in the stream will order entries with
@@ -1089,9 +1330,10 @@ class TailLogEntriesResponse extends $pb.GeneratedMessage {
   /// one of each reason per response. The counts represent the number of
   /// suppressed entries since the last streamed response.
   @$pb.TagNumber(2)
-  $core.List<TailLogEntriesResponse_SuppressionInfo> get suppressionInfo => $_getList(1);
+  $core.List<TailLogEntriesResponse_SuppressionInfo> get suppressionInfo =>
+      $_getList(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

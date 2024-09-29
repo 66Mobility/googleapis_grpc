@@ -46,44 +46,58 @@ class StaticCanvasPrompt extends $pb.GeneratedMessage {
     return $result;
   }
   StaticCanvasPrompt._() : super();
-  factory StaticCanvasPrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticCanvasPrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticCanvasPrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticCanvasPrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticCanvasPrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticCanvasPrompt',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
-    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM, subBuilder: $261.Value.create)
+    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM,
+        subBuilder: $261.Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'suppressMic')
     ..aOB(5, _omitFieldNames ? '' : 'sendStateDataToCanvasApp')
     ..aOB(6, _omitFieldNames ? '' : 'enableFullScreen')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StaticCanvasPrompt clone() => StaticCanvasPrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticCanvasPrompt copyWith(void Function(StaticCanvasPrompt) updates) => super.copyWith((message) => updates(message as StaticCanvasPrompt)) as StaticCanvasPrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticCanvasPrompt copyWith(void Function(StaticCanvasPrompt) updates) =>
+      super.copyWith((message) => updates(message as StaticCanvasPrompt))
+          as StaticCanvasPrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticCanvasPrompt create() => StaticCanvasPrompt._();
   StaticCanvasPrompt createEmptyInstance() => create();
-  static $pb.PbList<StaticCanvasPrompt> createRepeated() => $pb.PbList<StaticCanvasPrompt>();
+  static $pb.PbList<StaticCanvasPrompt> createRepeated() =>
+      $pb.PbList<StaticCanvasPrompt>();
   @$core.pragma('dart2js:noInline')
-  static StaticCanvasPrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticCanvasPrompt>(create);
+  static StaticCanvasPrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticCanvasPrompt>(create);
   static StaticCanvasPrompt? _defaultInstance;
 
   /// Required. URL of the web view to load.
   @$pb.TagNumber(1)
   $core.String get url => $_getSZ(0);
   @$pb.TagNumber(1)
-  set url($core.String v) { $_setString(0, v); }
+  set url($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -101,7 +115,10 @@ class StaticCanvasPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get suppressMic => $_getBF(2);
   @$pb.TagNumber(3)
-  set suppressMic($core.bool v) { $_setBool(2, v); }
+  set suppressMic($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSuppressMic() => $_has(2);
   @$pb.TagNumber(3)
@@ -112,7 +129,10 @@ class StaticCanvasPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get sendStateDataToCanvasApp => $_getBF(3);
   @$pb.TagNumber(5)
-  set sendStateDataToCanvasApp($core.bool v) { $_setBool(3, v); }
+  set sendStateDataToCanvasApp($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSendStateDataToCanvasApp() => $_has(3);
   @$pb.TagNumber(5)
@@ -125,13 +145,16 @@ class StaticCanvasPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get enableFullScreen => $_getBF(4);
   @$pb.TagNumber(6)
-  set enableFullScreen($core.bool v) { $_setBool(4, v); }
+  set enableFullScreen($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasEnableFullScreen() => $_has(4);
   @$pb.TagNumber(6)
   void clearEnableFullScreen() => clearField(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

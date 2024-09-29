@@ -15,23 +15,33 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The severity of the disaster recovery event.
 class DisasterRecoveryEvent_Severity extends $pb.ProtobufEnum {
-  static const DisasterRecoveryEvent_Severity SEVERITY_UNSPECIFIED = DisasterRecoveryEvent_Severity._(0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
-  static const DisasterRecoveryEvent_Severity ACTION_REQUIRED = DisasterRecoveryEvent_Severity._(1, _omitEnumNames ? '' : 'ACTION_REQUIRED');
-  static const DisasterRecoveryEvent_Severity ACTION_SUGGESTED = DisasterRecoveryEvent_Severity._(2, _omitEnumNames ? '' : 'ACTION_SUGGESTED');
-  static const DisasterRecoveryEvent_Severity NOTICE = DisasterRecoveryEvent_Severity._(3, _omitEnumNames ? '' : 'NOTICE');
+  static const DisasterRecoveryEvent_Severity SEVERITY_UNSPECIFIED =
+      DisasterRecoveryEvent_Severity._(
+          0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
+  static const DisasterRecoveryEvent_Severity ACTION_REQUIRED =
+      DisasterRecoveryEvent_Severity._(
+          1, _omitEnumNames ? '' : 'ACTION_REQUIRED');
+  static const DisasterRecoveryEvent_Severity ACTION_SUGGESTED =
+      DisasterRecoveryEvent_Severity._(
+          2, _omitEnumNames ? '' : 'ACTION_SUGGESTED');
+  static const DisasterRecoveryEvent_Severity NOTICE =
+      DisasterRecoveryEvent_Severity._(3, _omitEnumNames ? '' : 'NOTICE');
 
-  static const $core.List<DisasterRecoveryEvent_Severity> values = <DisasterRecoveryEvent_Severity> [
+  static const $core.List<DisasterRecoveryEvent_Severity> values =
+      <DisasterRecoveryEvent_Severity>[
     SEVERITY_UNSPECIFIED,
     ACTION_REQUIRED,
     ACTION_SUGGESTED,
     NOTICE,
   ];
 
-  static final $core.Map<$core.int, DisasterRecoveryEvent_Severity> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static DisasterRecoveryEvent_Severity? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, DisasterRecoveryEvent_Severity> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static DisasterRecoveryEvent_Severity? valueOf($core.int value) =>
+      _byValue[value];
 
-  const DisasterRecoveryEvent_Severity._($core.int v, $core.String n) : super(v, n);
+  const DisasterRecoveryEvent_Severity._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

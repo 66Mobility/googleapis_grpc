@@ -92,14 +92,64 @@ const Vehicle$json = {
   '1': 'Vehicle',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'vehicle_state', '3': 2, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.VehicleState', '10': 'vehicleState'},
-    {'1': 'supported_trip_types', '3': 3, '4': 3, '5': 14, '6': '.maps.fleetengine.v1.TripType', '10': 'supportedTripTypes'},
-    {'1': 'current_trips', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'currentTrips'},
-    {'1': 'last_location', '3': 5, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.VehicleLocation', '10': 'lastLocation'},
+    {
+      '1': 'vehicle_state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.VehicleState',
+      '10': 'vehicleState'
+    },
+    {
+      '1': 'supported_trip_types',
+      '3': 3,
+      '4': 3,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.TripType',
+      '10': 'supportedTripTypes'
+    },
+    {
+      '1': 'current_trips',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'currentTrips'
+    },
+    {
+      '1': 'last_location',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleLocation',
+      '10': 'lastLocation'
+    },
     {'1': 'maximum_capacity', '3': 6, '4': 1, '5': 5, '10': 'maximumCapacity'},
-    {'1': 'attributes', '3': 8, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VehicleAttribute', '10': 'attributes'},
-    {'1': 'vehicle_type', '3': 9, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.Vehicle.VehicleType', '8': {}, '10': 'vehicleType'},
-    {'1': 'license_plate', '3': 10, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.LicensePlate', '10': 'licensePlate'},
+    {
+      '1': 'attributes',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VehicleAttribute',
+      '10': 'attributes'
+    },
+    {
+      '1': 'vehicle_type',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.Vehicle.VehicleType',
+      '8': {},
+      '10': 'vehicleType'
+    },
+    {
+      '1': 'license_plate',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.LicensePlate',
+      '10': 'licensePlate'
+    },
     {
       '1': 'route',
       '3': 12,
@@ -109,18 +159,105 @@ const Vehicle$json = {
       '8': {'3': true},
       '10': 'route',
     },
-    {'1': 'current_route_segment', '3': 20, '4': 1, '5': 9, '10': 'currentRouteSegment'},
-    {'1': 'current_route_segment_traffic', '3': 28, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TrafficPolylineData', '8': {}, '10': 'currentRouteSegmentTraffic'},
-    {'1': 'current_route_segment_version', '3': 15, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'currentRouteSegmentVersion'},
-    {'1': 'current_route_segment_end_point', '3': 24, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.TripWaypoint', '10': 'currentRouteSegmentEndPoint'},
-    {'1': 'remaining_distance_meters', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'remainingDistanceMeters'},
-    {'1': 'eta_to_first_waypoint', '3': 19, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'etaToFirstWaypoint'},
-    {'1': 'remaining_time_seconds', '3': 25, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '8': {}, '10': 'remainingTimeSeconds'},
-    {'1': 'waypoints', '3': 22, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.TripWaypoint', '10': 'waypoints'},
-    {'1': 'waypoints_version', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'waypointsVersion'},
-    {'1': 'back_to_back_enabled', '3': 23, '4': 1, '5': 8, '10': 'backToBackEnabled'},
-    {'1': 'navigation_status', '3': 26, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.NavigationStatus', '10': 'navigationStatus'},
-    {'1': 'device_settings', '3': 27, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.DeviceSettings', '8': {}, '10': 'deviceSettings'},
+    {
+      '1': 'current_route_segment',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '10': 'currentRouteSegment'
+    },
+    {
+      '1': 'current_route_segment_traffic',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TrafficPolylineData',
+      '8': {},
+      '10': 'currentRouteSegmentTraffic'
+    },
+    {
+      '1': 'current_route_segment_version',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'currentRouteSegmentVersion'
+    },
+    {
+      '1': 'current_route_segment_end_point',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TripWaypoint',
+      '10': 'currentRouteSegmentEndPoint'
+    },
+    {
+      '1': 'remaining_distance_meters',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'remainingDistanceMeters'
+    },
+    {
+      '1': 'eta_to_first_waypoint',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'etaToFirstWaypoint'
+    },
+    {
+      '1': 'remaining_time_seconds',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '8': {},
+      '10': 'remainingTimeSeconds'
+    },
+    {
+      '1': 'waypoints',
+      '3': 22,
+      '4': 3,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.TripWaypoint',
+      '10': 'waypoints'
+    },
+    {
+      '1': 'waypoints_version',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'waypointsVersion'
+    },
+    {
+      '1': 'back_to_back_enabled',
+      '3': 23,
+      '4': 1,
+      '5': 8,
+      '10': 'backToBackEnabled'
+    },
+    {
+      '1': 'navigation_status',
+      '3': 26,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.NavigationStatus',
+      '10': 'navigationStatus'
+    },
+    {
+      '1': 'device_settings',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.DeviceSettings',
+      '8': {},
+      '10': 'deviceSettings'
+    },
   ],
   '3': [Vehicle_VehicleType$json],
   '7': {},
@@ -130,7 +267,14 @@ const Vehicle$json = {
 const Vehicle_VehicleType$json = {
   '1': 'VehicleType',
   '2': [
-    {'1': 'category', '3': 1, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.Vehicle.VehicleType.Category', '10': 'category'},
+    {
+      '1': 'category',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.Vehicle.VehicleType.Category',
+      '10': 'category'
+    },
   ],
   '4': [Vehicle_VehicleType_Category$json],
 };
@@ -191,9 +335,29 @@ final $typed_data.Uint8List vehicleDescriptor = $convert.base64Decode(
 const BatteryInfo$json = {
   '1': 'BatteryInfo',
   '2': [
-    {'1': 'battery_status', '3': 1, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.BatteryStatus', '10': 'batteryStatus'},
-    {'1': 'power_source', '3': 2, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.PowerSource', '10': 'powerSource'},
-    {'1': 'battery_percentage', '3': 3, '4': 1, '5': 2, '10': 'batteryPercentage'},
+    {
+      '1': 'battery_status',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.BatteryStatus',
+      '10': 'batteryStatus'
+    },
+    {
+      '1': 'power_source',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.PowerSource',
+      '10': 'powerSource'
+    },
+    {
+      '1': 'battery_percentage',
+      '3': 3,
+      '4': 1,
+      '5': 2,
+      '10': 'batteryPercentage'
+    },
   ],
 };
 
@@ -208,10 +372,30 @@ final $typed_data.Uint8List batteryInfoDescriptor = $convert.base64Decode(
 const DeviceSettings$json = {
   '1': 'DeviceSettings',
   '2': [
-    {'1': 'location_power_save_mode', '3': 1, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.LocationPowerSaveMode', '10': 'locationPowerSaveMode'},
-    {'1': 'is_power_save_mode', '3': 2, '4': 1, '5': 8, '10': 'isPowerSaveMode'},
+    {
+      '1': 'location_power_save_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.maps.fleetengine.v1.LocationPowerSaveMode',
+      '10': 'locationPowerSaveMode'
+    },
+    {
+      '1': 'is_power_save_mode',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'isPowerSaveMode'
+    },
     {'1': 'is_interactive', '3': 3, '4': 1, '5': 8, '10': 'isInteractive'},
-    {'1': 'battery_info', '3': 4, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.BatteryInfo', '10': 'batteryInfo'},
+    {
+      '1': 'battery_info',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.BatteryInfo',
+      '10': 'batteryInfo'
+    },
   ],
 };
 
@@ -241,7 +425,16 @@ final $typed_data.Uint8List licensePlateDescriptor = $convert.base64Decode(
 const VisualTrafficReportPolylineRendering$json = {
   '1': 'VisualTrafficReportPolylineRendering',
   '2': [
-    {'1': 'road_stretch', '3': 1, '4': 3, '5': 11, '6': '.maps.fleetengine.v1.VisualTrafficReportPolylineRendering.RoadStretch', '8': {}, '10': 'roadStretch'},
+    {
+      '1': 'road_stretch',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.maps.fleetengine.v1.VisualTrafficReportPolylineRendering.RoadStretch',
+      '8': {},
+      '10': 'roadStretch'
+    },
   ],
   '3': [VisualTrafficReportPolylineRendering_RoadStretch$json],
 };
@@ -250,9 +443,32 @@ const VisualTrafficReportPolylineRendering$json = {
 const VisualTrafficReportPolylineRendering_RoadStretch$json = {
   '1': 'RoadStretch',
   '2': [
-    {'1': 'style', '3': 1, '4': 1, '5': 14, '6': '.maps.fleetengine.v1.VisualTrafficReportPolylineRendering.RoadStretch.Style', '8': {}, '10': 'style'},
-    {'1': 'offset_meters', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'offsetMeters'},
-    {'1': 'length_meters', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'lengthMeters'},
+    {
+      '1': 'style',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.maps.fleetengine.v1.VisualTrafficReportPolylineRendering.RoadStretch.Style',
+      '8': {},
+      '10': 'style'
+    },
+    {
+      '1': 'offset_meters',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'offsetMeters'
+    },
+    {
+      '1': 'length_meters',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'lengthMeters'
+    },
   ],
   '4': [VisualTrafficReportPolylineRendering_RoadStretch_Style$json],
 };
@@ -282,7 +498,14 @@ final $typed_data.Uint8List visualTrafficReportPolylineRenderingDescriptor = $co
 const TrafficPolylineData$json = {
   '1': 'TrafficPolylineData',
   '2': [
-    {'1': 'traffic_rendering', '3': 1, '4': 1, '5': 11, '6': '.maps.fleetengine.v1.VisualTrafficReportPolylineRendering', '10': 'trafficRendering'},
+    {
+      '1': 'traffic_rendering',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.maps.fleetengine.v1.VisualTrafficReportPolylineRendering',
+      '10': 'trafficRendering'
+    },
   ],
 };
 
@@ -291,4 +514,3 @@ final $typed_data.Uint8List trafficPolylineDataDescriptor = $convert.base64Decod
     'ChNUcmFmZmljUG9seWxpbmVEYXRhEmYKEXRyYWZmaWNfcmVuZGVyaW5nGAEgASgLMjkubWFwcy'
     '5mbGVldGVuZ2luZS52MS5WaXN1YWxUcmFmZmljUmVwb3J0UG9seWxpbmVSZW5kZXJpbmdSEHRy'
     'YWZmaWNSZW5kZXJpbmc=');
-

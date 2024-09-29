@@ -73,10 +73,18 @@ class LfpStore extends $pb.GeneratedMessage {
     return $result;
   }
   LfpStore._() : super();
-  factory LfpStore.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LfpStore.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LfpStore.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LfpStore.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LfpStore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LfpStore',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'targetAccount')
     ..aOS(3, _omitFieldNames ? '' : 'storeCode')
@@ -86,21 +94,24 @@ class LfpStore extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'websiteUri')
     ..pPS(8, _omitFieldNames ? '' : 'gcidCategory')
     ..aOS(9, _omitFieldNames ? '' : 'placeId')
-    ..e<LfpStore_StoreMatchingState>(10, _omitFieldNames ? '' : 'matchingState', $pb.PbFieldType.OE, defaultOrMaker: LfpStore_StoreMatchingState.STORE_MATCHING_STATE_UNSPECIFIED, valueOf: LfpStore_StoreMatchingState.valueOf, enumValues: LfpStore_StoreMatchingState.values)
+    ..e<LfpStore_StoreMatchingState>(
+        10, _omitFieldNames ? '' : 'matchingState', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            LfpStore_StoreMatchingState.STORE_MATCHING_STATE_UNSPECIFIED,
+        valueOf: LfpStore_StoreMatchingState.valueOf,
+        enumValues: LfpStore_StoreMatchingState.values)
     ..aOS(11, _omitFieldNames ? '' : 'matchingStateHint')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LfpStore clone() => LfpStore()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LfpStore copyWith(void Function(LfpStore) updates) => super.copyWith((message) => updates(message as LfpStore)) as LfpStore;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LfpStore copyWith(void Function(LfpStore) updates) =>
+      super.copyWith((message) => updates(message as LfpStore)) as LfpStore;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -109,7 +120,8 @@ class LfpStore extends $pb.GeneratedMessage {
   LfpStore createEmptyInstance() => create();
   static $pb.PbList<LfpStore> createRepeated() => $pb.PbList<LfpStore>();
   @$core.pragma('dart2js:noInline')
-  static LfpStore getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LfpStore>(create);
+  static LfpStore getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LfpStore>(create);
   static LfpStore? _defaultInstance;
 
   /// Output only. Identifier. The name of the `LfpStore` resource.
@@ -117,7 +129,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -127,7 +142,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get targetAccount => $_getI64(1);
   @$pb.TagNumber(2)
-  set targetAccount($fixnum.Int64 v) { $_setInt64(1, v); }
+  set targetAccount($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetAccount() => $_has(1);
   @$pb.TagNumber(2)
@@ -138,7 +156,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get storeCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set storeCode($core.String v) { $_setString(2, v); }
+  set storeCode($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStoreCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -149,7 +170,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get storeAddress => $_getSZ(3);
   @$pb.TagNumber(4)
-  set storeAddress($core.String v) { $_setString(3, v); }
+  set storeAddress($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasStoreAddress() => $_has(3);
   @$pb.TagNumber(4)
@@ -159,7 +183,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get storeName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set storeName($core.String v) { $_setString(4, v); }
+  set storeName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStoreName() => $_has(4);
   @$pb.TagNumber(5)
@@ -171,7 +198,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get phoneNumber => $_getSZ(5);
   @$pb.TagNumber(6)
-  set phoneNumber($core.String v) { $_setString(5, v); }
+  set phoneNumber($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPhoneNumber() => $_has(5);
   @$pb.TagNumber(6)
@@ -181,7 +211,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get websiteUri => $_getSZ(6);
   @$pb.TagNumber(7)
-  set websiteUri($core.String v) { $_setString(6, v); }
+  set websiteUri($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasWebsiteUri() => $_has(6);
   @$pb.TagNumber(7)
@@ -198,7 +231,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get placeId => $_getSZ(8);
   @$pb.TagNumber(9)
-  set placeId($core.String v) { $_setString(8, v); }
+  set placeId($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPlaceId() => $_has(8);
   @$pb.TagNumber(9)
@@ -211,7 +247,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   LfpStore_StoreMatchingState get matchingState => $_getN(9);
   @$pb.TagNumber(10)
-  set matchingState(LfpStore_StoreMatchingState v) { setField(10, v); }
+  set matchingState(LfpStore_StoreMatchingState v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasMatchingState() => $_has(9);
   @$pb.TagNumber(10)
@@ -238,7 +277,10 @@ class LfpStore extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get matchingStateHint => $_getSZ(10);
   @$pb.TagNumber(11)
-  set matchingStateHint($core.String v) { $_setString(10, v); }
+  set matchingStateHint($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasMatchingStateHint() => $_has(10);
   @$pb.TagNumber(11)
@@ -257,33 +299,42 @@ class GetLfpStoreRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetLfpStoreRequest._() : super();
-  factory GetLfpStoreRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetLfpStoreRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetLfpStoreRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetLfpStoreRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetLfpStoreRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetLfpStoreRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetLfpStoreRequest clone() => GetLfpStoreRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetLfpStoreRequest copyWith(void Function(GetLfpStoreRequest) updates) => super.copyWith((message) => updates(message as GetLfpStoreRequest)) as GetLfpStoreRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetLfpStoreRequest copyWith(void Function(GetLfpStoreRequest) updates) =>
+      super.copyWith((message) => updates(message as GetLfpStoreRequest))
+          as GetLfpStoreRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetLfpStoreRequest create() => GetLfpStoreRequest._();
   GetLfpStoreRequest createEmptyInstance() => create();
-  static $pb.PbList<GetLfpStoreRequest> createRepeated() => $pb.PbList<GetLfpStoreRequest>();
+  static $pb.PbList<GetLfpStoreRequest> createRepeated() =>
+      $pb.PbList<GetLfpStoreRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetLfpStoreRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetLfpStoreRequest>(create);
+  static GetLfpStoreRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetLfpStoreRequest>(create);
   static GetLfpStoreRequest? _defaultInstance;
 
   /// Required. The name of the store to retrieve.
@@ -291,7 +342,10 @@ class GetLfpStoreRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -314,34 +368,46 @@ class InsertLfpStoreRequest extends $pb.GeneratedMessage {
     return $result;
   }
   InsertLfpStoreRequest._() : super();
-  factory InsertLfpStoreRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InsertLfpStoreRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InsertLfpStoreRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InsertLfpStoreRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertLfpStoreRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InsertLfpStoreRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<LfpStore>(2, _omitFieldNames ? '' : 'lfpStore', subBuilder: LfpStore.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<LfpStore>(2, _omitFieldNames ? '' : 'lfpStore',
+        subBuilder: LfpStore.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  InsertLfpStoreRequest clone() => InsertLfpStoreRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InsertLfpStoreRequest copyWith(void Function(InsertLfpStoreRequest) updates) => super.copyWith((message) => updates(message as InsertLfpStoreRequest)) as InsertLfpStoreRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InsertLfpStoreRequest clone() =>
+      InsertLfpStoreRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InsertLfpStoreRequest copyWith(
+          void Function(InsertLfpStoreRequest) updates) =>
+      super.copyWith((message) => updates(message as InsertLfpStoreRequest))
+          as InsertLfpStoreRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InsertLfpStoreRequest create() => InsertLfpStoreRequest._();
   InsertLfpStoreRequest createEmptyInstance() => create();
-  static $pb.PbList<InsertLfpStoreRequest> createRepeated() => $pb.PbList<InsertLfpStoreRequest>();
+  static $pb.PbList<InsertLfpStoreRequest> createRepeated() =>
+      $pb.PbList<InsertLfpStoreRequest>();
   @$core.pragma('dart2js:noInline')
-  static InsertLfpStoreRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InsertLfpStoreRequest>(create);
+  static InsertLfpStoreRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InsertLfpStoreRequest>(create);
   static InsertLfpStoreRequest? _defaultInstance;
 
   /// Required. The LFP provider account
@@ -349,7 +415,10 @@ class InsertLfpStoreRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -359,7 +428,10 @@ class InsertLfpStoreRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   LfpStore get lfpStore => $_getN(1);
   @$pb.TagNumber(2)
-  set lfpStore(LfpStore v) { setField(2, v); }
+  set lfpStore(LfpStore v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLfpStore() => $_has(1);
   @$pb.TagNumber(2)
@@ -380,33 +452,44 @@ class DeleteLfpStoreRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteLfpStoreRequest._() : super();
-  factory DeleteLfpStoreRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteLfpStoreRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteLfpStoreRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteLfpStoreRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteLfpStoreRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteLfpStoreRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteLfpStoreRequest clone() => DeleteLfpStoreRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteLfpStoreRequest copyWith(void Function(DeleteLfpStoreRequest) updates) => super.copyWith((message) => updates(message as DeleteLfpStoreRequest)) as DeleteLfpStoreRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteLfpStoreRequest clone() =>
+      DeleteLfpStoreRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteLfpStoreRequest copyWith(
+          void Function(DeleteLfpStoreRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteLfpStoreRequest))
+          as DeleteLfpStoreRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteLfpStoreRequest create() => DeleteLfpStoreRequest._();
   DeleteLfpStoreRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteLfpStoreRequest> createRepeated() => $pb.PbList<DeleteLfpStoreRequest>();
+  static $pb.PbList<DeleteLfpStoreRequest> createRepeated() =>
+      $pb.PbList<DeleteLfpStoreRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteLfpStoreRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteLfpStoreRequest>(create);
+  static DeleteLfpStoreRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteLfpStoreRequest>(create);
   static DeleteLfpStoreRequest? _defaultInstance;
 
   /// Required. The name of the store to delete for the target merchant account.
@@ -414,7 +497,10 @@ class DeleteLfpStoreRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -445,36 +531,46 @@ class ListLfpStoresRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListLfpStoresRequest._() : super();
-  factory ListLfpStoresRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLfpStoresRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLfpStoresRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLfpStoresRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLfpStoresRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLfpStoresRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aInt64(2, _omitFieldNames ? '' : 'targetAccount')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListLfpStoresRequest clone() => ListLfpStoresRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLfpStoresRequest copyWith(void Function(ListLfpStoresRequest) updates) => super.copyWith((message) => updates(message as ListLfpStoresRequest)) as ListLfpStoresRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListLfpStoresRequest clone() =>
+      ListLfpStoresRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLfpStoresRequest copyWith(void Function(ListLfpStoresRequest) updates) =>
+      super.copyWith((message) => updates(message as ListLfpStoresRequest))
+          as ListLfpStoresRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLfpStoresRequest create() => ListLfpStoresRequest._();
   ListLfpStoresRequest createEmptyInstance() => create();
-  static $pb.PbList<ListLfpStoresRequest> createRepeated() => $pb.PbList<ListLfpStoresRequest>();
+  static $pb.PbList<ListLfpStoresRequest> createRepeated() =>
+      $pb.PbList<ListLfpStoresRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListLfpStoresRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLfpStoresRequest>(create);
+  static ListLfpStoresRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLfpStoresRequest>(create);
   static ListLfpStoresRequest? _defaultInstance;
 
   /// Required. The LFP partner.
@@ -482,7 +578,10 @@ class ListLfpStoresRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -492,7 +591,10 @@ class ListLfpStoresRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get targetAccount => $_getI64(1);
   @$pb.TagNumber(2)
-  set targetAccount($fixnum.Int64 v) { $_setInt64(1, v); }
+  set targetAccount($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTargetAccount() => $_has(1);
   @$pb.TagNumber(2)
@@ -506,7 +608,10 @@ class ListLfpStoresRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get pageSize => $_getIZ(2);
   @$pb.TagNumber(3)
-  set pageSize($core.int v) { $_setSignedInt32(2, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageSize() => $_has(2);
   @$pb.TagNumber(3)
@@ -521,7 +626,10 @@ class ListLfpStoresRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get pageToken => $_getSZ(3);
   @$pb.TagNumber(4)
-  set pageToken($core.String v) { $_setString(3, v); }
+  set pageToken($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPageToken() => $_has(3);
   @$pb.TagNumber(4)
@@ -544,34 +652,46 @@ class ListLfpStoresResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListLfpStoresResponse._() : super();
-  factory ListLfpStoresResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListLfpStoresResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListLfpStoresResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListLfpStoresResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLfpStoresResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'), createEmptyInstance: create)
-    ..pc<LfpStore>(1, _omitFieldNames ? '' : 'lfpStores', $pb.PbFieldType.PM, subBuilder: LfpStore.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListLfpStoresResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.merchant.lfp.v1beta'),
+      createEmptyInstance: create)
+    ..pc<LfpStore>(1, _omitFieldNames ? '' : 'lfpStores', $pb.PbFieldType.PM,
+        subBuilder: LfpStore.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListLfpStoresResponse clone() => ListLfpStoresResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListLfpStoresResponse copyWith(void Function(ListLfpStoresResponse) updates) => super.copyWith((message) => updates(message as ListLfpStoresResponse)) as ListLfpStoresResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListLfpStoresResponse clone() =>
+      ListLfpStoresResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListLfpStoresResponse copyWith(
+          void Function(ListLfpStoresResponse) updates) =>
+      super.copyWith((message) => updates(message as ListLfpStoresResponse))
+          as ListLfpStoresResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListLfpStoresResponse create() => ListLfpStoresResponse._();
   ListLfpStoresResponse createEmptyInstance() => create();
-  static $pb.PbList<ListLfpStoresResponse> createRepeated() => $pb.PbList<ListLfpStoresResponse>();
+  static $pb.PbList<ListLfpStoresResponse> createRepeated() =>
+      $pb.PbList<ListLfpStoresResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListLfpStoresResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListLfpStoresResponse>(create);
+  static ListLfpStoresResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListLfpStoresResponse>(create);
   static ListLfpStoresResponse? _defaultInstance;
 
   /// The stores from the specified merchant.
@@ -583,13 +703,16 @@ class ListLfpStoresResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

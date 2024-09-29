@@ -15,21 +15,28 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The phone verification state.
 class PhoneVerificationState extends $pb.ProtobufEnum {
-  static const PhoneVerificationState PHONE_VERIFICATION_STATE_UNSPECIFIED = PhoneVerificationState._(0, _omitEnumNames ? '' : 'PHONE_VERIFICATION_STATE_UNSPECIFIED');
-  static const PhoneVerificationState PHONE_VERIFICATION_STATE_VERIFIED = PhoneVerificationState._(1, _omitEnumNames ? '' : 'PHONE_VERIFICATION_STATE_VERIFIED');
-  static const PhoneVerificationState PHONE_VERIFICATION_STATE_UNVERIFIED = PhoneVerificationState._(2, _omitEnumNames ? '' : 'PHONE_VERIFICATION_STATE_UNVERIFIED');
+  static const PhoneVerificationState PHONE_VERIFICATION_STATE_UNSPECIFIED =
+      PhoneVerificationState._(
+          0, _omitEnumNames ? '' : 'PHONE_VERIFICATION_STATE_UNSPECIFIED');
+  static const PhoneVerificationState PHONE_VERIFICATION_STATE_VERIFIED =
+      PhoneVerificationState._(
+          1, _omitEnumNames ? '' : 'PHONE_VERIFICATION_STATE_VERIFIED');
+  static const PhoneVerificationState PHONE_VERIFICATION_STATE_UNVERIFIED =
+      PhoneVerificationState._(
+          2, _omitEnumNames ? '' : 'PHONE_VERIFICATION_STATE_UNVERIFIED');
 
-  static const $core.List<PhoneVerificationState> values = <PhoneVerificationState> [
+  static const $core.List<PhoneVerificationState> values =
+      <PhoneVerificationState>[
     PHONE_VERIFICATION_STATE_UNSPECIFIED,
     PHONE_VERIFICATION_STATE_VERIFIED,
     PHONE_VERIFICATION_STATE_UNVERIFIED,
   ];
 
-  static final $core.Map<$core.int, PhoneVerificationState> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, PhoneVerificationState> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static PhoneVerificationState? valueOf($core.int value) => _byValue[value];
 
   const PhoneVerificationState._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

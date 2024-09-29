@@ -48,29 +48,41 @@ class Cluster extends $pb.GeneratedMessage {
     return $result;
   }
   Cluster._() : super();
-  factory Cluster.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Cluster.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Cluster.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Cluster.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cluster', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Cluster',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Cluster.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.partner.aistreams.v1alpha1'))
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Cluster.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.partner.aistreams.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'certificate')
     ..aOS(6, _omitFieldNames ? '' : 'serviceEndpoint')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Cluster clone() => Cluster()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Cluster copyWith(void Function(Cluster) updates) => super.copyWith((message) => updates(message as Cluster)) as Cluster;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Cluster copyWith(void Function(Cluster) updates) =>
+      super.copyWith((message) => updates(message as Cluster)) as Cluster;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -79,7 +91,8 @@ class Cluster extends $pb.GeneratedMessage {
   Cluster createEmptyInstance() => create();
   static $pb.PbList<Cluster> createRepeated() => $pb.PbList<Cluster>();
   @$core.pragma('dart2js:noInline')
-  static Cluster getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cluster>(create);
+  static Cluster getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cluster>(create);
   static Cluster? _defaultInstance;
 
   /// The name of the cluster. The format of cluster is:
@@ -87,7 +100,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -97,7 +113,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($302.Timestamp v) { setField(2, v); }
+  set createTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -109,7 +128,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($302.Timestamp v) { setField(3, v); }
+  set updateTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -126,7 +148,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get certificate => $_getSZ(4);
   @$pb.TagNumber(5)
-  set certificate($core.String v) { $_setString(4, v); }
+  set certificate($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCertificate() => $_has(4);
   @$pb.TagNumber(5)
@@ -136,7 +161,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get serviceEndpoint => $_getSZ(5);
   @$pb.TagNumber(6)
-  set serviceEndpoint($core.String v) { $_setString(5, v); }
+  set serviceEndpoint($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasServiceEndpoint() => $_has(5);
   @$pb.TagNumber(6)
@@ -171,44 +199,56 @@ class ListClustersRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListClustersRequest._() : super();
-  factory ListClustersRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListClustersRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListClustersRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListClustersRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListClustersRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListClustersRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
     ..aOS(5, _omitFieldNames ? '' : 'orderBy')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListClustersRequest clone() => ListClustersRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListClustersRequest copyWith(void Function(ListClustersRequest) updates) => super.copyWith((message) => updates(message as ListClustersRequest)) as ListClustersRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListClustersRequest copyWith(void Function(ListClustersRequest) updates) =>
+      super.copyWith((message) => updates(message as ListClustersRequest))
+          as ListClustersRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListClustersRequest create() => ListClustersRequest._();
   ListClustersRequest createEmptyInstance() => create();
-  static $pb.PbList<ListClustersRequest> createRepeated() => $pb.PbList<ListClustersRequest>();
+  static $pb.PbList<ListClustersRequest> createRepeated() =>
+      $pb.PbList<ListClustersRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListClustersRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListClustersRequest>(create);
+  static ListClustersRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListClustersRequest>(create);
   static ListClustersRequest? _defaultInstance;
 
   /// Required. The parent that owns the collection of Clusters.
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -218,7 +258,10 @@ class ListClustersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -231,7 +274,10 @@ class ListClustersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -241,7 +287,10 @@ class ListClustersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(4)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -251,7 +300,10 @@ class ListClustersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get orderBy => $_getSZ(4);
   @$pb.TagNumber(5)
-  set orderBy($core.String v) { $_setString(4, v); }
+  set orderBy($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOrderBy() => $_has(4);
   @$pb.TagNumber(5)
@@ -278,35 +330,46 @@ class ListClustersResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListClustersResponse._() : super();
-  factory ListClustersResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListClustersResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListClustersResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListClustersResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListClustersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..pc<Cluster>(1, _omitFieldNames ? '' : 'clusters', $pb.PbFieldType.PM, subBuilder: Cluster.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListClustersResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
+    ..pc<Cluster>(1, _omitFieldNames ? '' : 'clusters', $pb.PbFieldType.PM,
+        subBuilder: Cluster.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'unreachable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListClustersResponse clone() => ListClustersResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListClustersResponse copyWith(void Function(ListClustersResponse) updates) => super.copyWith((message) => updates(message as ListClustersResponse)) as ListClustersResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListClustersResponse clone() =>
+      ListClustersResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListClustersResponse copyWith(void Function(ListClustersResponse) updates) =>
+      super.copyWith((message) => updates(message as ListClustersResponse))
+          as ListClustersResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListClustersResponse create() => ListClustersResponse._();
   ListClustersResponse createEmptyInstance() => create();
-  static $pb.PbList<ListClustersResponse> createRepeated() => $pb.PbList<ListClustersResponse>();
+  static $pb.PbList<ListClustersResponse> createRepeated() =>
+      $pb.PbList<ListClustersResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListClustersResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListClustersResponse>(create);
+  static ListClustersResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListClustersResponse>(create);
   static ListClustersResponse? _defaultInstance;
 
   /// List of clusters.
@@ -318,7 +381,10 @@ class ListClustersResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -341,40 +407,52 @@ class GetClusterRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetClusterRequest._() : super();
-  factory GetClusterRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetClusterRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetClusterRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetClusterRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetClusterRequest clone() => GetClusterRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetClusterRequest copyWith(void Function(GetClusterRequest) updates) => super.copyWith((message) => updates(message as GetClusterRequest)) as GetClusterRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetClusterRequest copyWith(void Function(GetClusterRequest) updates) =>
+      super.copyWith((message) => updates(message as GetClusterRequest))
+          as GetClusterRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetClusterRequest create() => GetClusterRequest._();
   GetClusterRequest createEmptyInstance() => create();
-  static $pb.PbList<GetClusterRequest> createRepeated() => $pb.PbList<GetClusterRequest>();
+  static $pb.PbList<GetClusterRequest> createRepeated() =>
+      $pb.PbList<GetClusterRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetClusterRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetClusterRequest>(create);
+  static GetClusterRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetClusterRequest>(create);
   static GetClusterRequest? _defaultInstance;
 
   /// Required. The name of the Cluster resource to get.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -405,43 +483,57 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateClusterRequest._() : super();
-  factory CreateClusterRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateClusterRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateClusterRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateClusterRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'clusterId')
-    ..aOM<Cluster>(3, _omitFieldNames ? '' : 'cluster', subBuilder: Cluster.create)
+    ..aOM<Cluster>(3, _omitFieldNames ? '' : 'cluster',
+        subBuilder: Cluster.create)
     ..aOS(4, _omitFieldNames ? '' : 'requestId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateClusterRequest clone() => CreateClusterRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateClusterRequest copyWith(void Function(CreateClusterRequest) updates) => super.copyWith((message) => updates(message as CreateClusterRequest)) as CreateClusterRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateClusterRequest clone() =>
+      CreateClusterRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateClusterRequest copyWith(void Function(CreateClusterRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateClusterRequest))
+          as CreateClusterRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateClusterRequest create() => CreateClusterRequest._();
   CreateClusterRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateClusterRequest> createRepeated() => $pb.PbList<CreateClusterRequest>();
+  static $pb.PbList<CreateClusterRequest> createRepeated() =>
+      $pb.PbList<CreateClusterRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateClusterRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateClusterRequest>(create);
+  static CreateClusterRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateClusterRequest>(create);
   static CreateClusterRequest? _defaultInstance;
 
   /// Required. The parent that owns the collection of Clusters.
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -451,7 +543,10 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get clusterId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set clusterId($core.String v) { $_setString(1, v); }
+  set clusterId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasClusterId() => $_has(1);
   @$pb.TagNumber(2)
@@ -461,7 +556,10 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Cluster get cluster => $_getN(2);
   @$pb.TagNumber(3)
-  set cluster(Cluster v) { setField(3, v); }
+  set cluster(Cluster v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCluster() => $_has(2);
   @$pb.TagNumber(3)
@@ -485,7 +583,10 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get requestId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set requestId($core.String v) { $_setString(3, v); }
+  set requestId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRequestId() => $_has(3);
   @$pb.TagNumber(4)
@@ -512,35 +613,47 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateClusterRequest._() : super();
-  factory UpdateClusterRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateClusterRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateClusterRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..aOM<Cluster>(2, _omitFieldNames ? '' : 'cluster', subBuilder: Cluster.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateClusterRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
+    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..aOM<Cluster>(2, _omitFieldNames ? '' : 'cluster',
+        subBuilder: Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateClusterRequest clone() => UpdateClusterRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateClusterRequest copyWith(void Function(UpdateClusterRequest) updates) => super.copyWith((message) => updates(message as UpdateClusterRequest)) as UpdateClusterRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateClusterRequest clone() =>
+      UpdateClusterRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateClusterRequest copyWith(void Function(UpdateClusterRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateClusterRequest))
+          as UpdateClusterRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateClusterRequest create() => UpdateClusterRequest._();
   UpdateClusterRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateClusterRequest> createRepeated() => $pb.PbList<UpdateClusterRequest>();
+  static $pb.PbList<UpdateClusterRequest> createRepeated() =>
+      $pb.PbList<UpdateClusterRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateClusterRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateClusterRequest>(create);
+  static UpdateClusterRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateClusterRequest>(create);
   static UpdateClusterRequest? _defaultInstance;
 
   /// Required. Field mask is used to specify the fields to be overwritten in the
@@ -551,7 +664,10 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $333.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($333.FieldMask v) { setField(1, v); }
+  set updateMask($333.FieldMask v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
@@ -563,7 +679,10 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Cluster get cluster => $_getN(1);
   @$pb.TagNumber(2)
-  set cluster(Cluster v) { setField(2, v); }
+  set cluster(Cluster v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCluster() => $_has(1);
   @$pb.TagNumber(2)
@@ -587,7 +706,10 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get requestId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set requestId($core.String v) { $_setString(2, v); }
+  set requestId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequestId() => $_has(2);
   @$pb.TagNumber(3)
@@ -610,41 +732,54 @@ class DeleteClusterRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteClusterRequest._() : super();
-  factory DeleteClusterRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteClusterRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteClusterRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteClusterRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteClusterRequest clone() => DeleteClusterRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteClusterRequest copyWith(void Function(DeleteClusterRequest) updates) => super.copyWith((message) => updates(message as DeleteClusterRequest)) as DeleteClusterRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteClusterRequest clone() =>
+      DeleteClusterRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteClusterRequest copyWith(void Function(DeleteClusterRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteClusterRequest))
+          as DeleteClusterRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteClusterRequest create() => DeleteClusterRequest._();
   DeleteClusterRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteClusterRequest> createRepeated() => $pb.PbList<DeleteClusterRequest>();
+  static $pb.PbList<DeleteClusterRequest> createRepeated() =>
+      $pb.PbList<DeleteClusterRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteClusterRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteClusterRequest>(create);
+  static DeleteClusterRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteClusterRequest>(create);
   static DeleteClusterRequest? _defaultInstance;
 
   /// Required. The name of cluster to delete.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -666,7 +801,10 @@ class DeleteClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get requestId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set requestId($core.String v) { $_setString(1, v); }
+  set requestId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRequestId() => $_has(1);
   @$pb.TagNumber(2)
@@ -697,27 +835,39 @@ class Stream extends $pb.GeneratedMessage {
     return $result;
   }
   Stream._() : super();
-  factory Stream.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Stream.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Stream.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Stream.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Stream', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Stream',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Stream.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.partner.aistreams.v1alpha1'))
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Stream.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.partner.aistreams.v1alpha1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Stream clone() => Stream()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Stream copyWith(void Function(Stream) updates) => super.copyWith((message) => updates(message as Stream)) as Stream;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Stream copyWith(void Function(Stream) updates) =>
+      super.copyWith((message) => updates(message as Stream)) as Stream;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -726,7 +876,8 @@ class Stream extends $pb.GeneratedMessage {
   Stream createEmptyInstance() => create();
   static $pb.PbList<Stream> createRepeated() => $pb.PbList<Stream>();
   @$core.pragma('dart2js:noInline')
-  static Stream getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Stream>(create);
+  static Stream getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Stream>(create);
   static Stream? _defaultInstance;
 
   /// The name of the stream. The format for the full name is:
@@ -734,7 +885,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -744,7 +898,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($302.Timestamp v) { setField(2, v); }
+  set createTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -756,7 +913,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($302.Timestamp v) { setField(3, v); }
+  set updateTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -797,44 +957,56 @@ class ListStreamsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListStreamsRequest._() : super();
-  factory ListStreamsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListStreamsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListStreamsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListStreamsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListStreamsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListStreamsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
     ..aOS(5, _omitFieldNames ? '' : 'orderBy')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListStreamsRequest clone() => ListStreamsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListStreamsRequest copyWith(void Function(ListStreamsRequest) updates) => super.copyWith((message) => updates(message as ListStreamsRequest)) as ListStreamsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListStreamsRequest copyWith(void Function(ListStreamsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListStreamsRequest))
+          as ListStreamsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListStreamsRequest create() => ListStreamsRequest._();
   ListStreamsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListStreamsRequest> createRepeated() => $pb.PbList<ListStreamsRequest>();
+  static $pb.PbList<ListStreamsRequest> createRepeated() =>
+      $pb.PbList<ListStreamsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListStreamsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListStreamsRequest>(create);
+  static ListStreamsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListStreamsRequest>(create);
   static ListStreamsRequest? _defaultInstance;
 
   /// Required. The parent that owns the collection of the Streams.
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -844,7 +1016,10 @@ class ListStreamsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -857,7 +1032,10 @@ class ListStreamsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -867,7 +1045,10 @@ class ListStreamsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(4)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(4)
@@ -877,7 +1058,10 @@ class ListStreamsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get orderBy => $_getSZ(4);
   @$pb.TagNumber(5)
-  set orderBy($core.String v) { $_setString(4, v); }
+  set orderBy($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOrderBy() => $_has(4);
   @$pb.TagNumber(5)
@@ -904,35 +1088,45 @@ class ListStreamsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListStreamsResponse._() : super();
-  factory ListStreamsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListStreamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListStreamsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListStreamsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListStreamsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..pc<Stream>(1, _omitFieldNames ? '' : 'streams', $pb.PbFieldType.PM, subBuilder: Stream.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListStreamsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
+    ..pc<Stream>(1, _omitFieldNames ? '' : 'streams', $pb.PbFieldType.PM,
+        subBuilder: Stream.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'unreachable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListStreamsResponse clone() => ListStreamsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListStreamsResponse copyWith(void Function(ListStreamsResponse) updates) => super.copyWith((message) => updates(message as ListStreamsResponse)) as ListStreamsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListStreamsResponse copyWith(void Function(ListStreamsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListStreamsResponse))
+          as ListStreamsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListStreamsResponse create() => ListStreamsResponse._();
   ListStreamsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListStreamsResponse> createRepeated() => $pb.PbList<ListStreamsResponse>();
+  static $pb.PbList<ListStreamsResponse> createRepeated() =>
+      $pb.PbList<ListStreamsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListStreamsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListStreamsResponse>(create);
+  static ListStreamsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListStreamsResponse>(create);
   static ListStreamsResponse? _defaultInstance;
 
   /// List of the streams.
@@ -944,7 +1138,10 @@ class ListStreamsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -967,40 +1164,52 @@ class GetStreamRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetStreamRequest._() : super();
-  factory GetStreamRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetStreamRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetStreamRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetStreamRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetStreamRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetStreamRequest clone() => GetStreamRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetStreamRequest copyWith(void Function(GetStreamRequest) updates) => super.copyWith((message) => updates(message as GetStreamRequest)) as GetStreamRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetStreamRequest copyWith(void Function(GetStreamRequest) updates) =>
+      super.copyWith((message) => updates(message as GetStreamRequest))
+          as GetStreamRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetStreamRequest create() => GetStreamRequest._();
   GetStreamRequest createEmptyInstance() => create();
-  static $pb.PbList<GetStreamRequest> createRepeated() => $pb.PbList<GetStreamRequest>();
+  static $pb.PbList<GetStreamRequest> createRepeated() =>
+      $pb.PbList<GetStreamRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetStreamRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetStreamRequest>(create);
+  static GetStreamRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetStreamRequest>(create);
   static GetStreamRequest? _defaultInstance;
 
   /// Required. The name of the stream.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1031,43 +1240,55 @@ class CreateStreamRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateStreamRequest._() : super();
-  factory CreateStreamRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateStreamRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateStreamRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateStreamRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateStreamRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'streamId')
     ..aOM<Stream>(3, _omitFieldNames ? '' : 'stream', subBuilder: Stream.create)
     ..aOS(4, _omitFieldNames ? '' : 'requestId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateStreamRequest clone() => CreateStreamRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateStreamRequest copyWith(void Function(CreateStreamRequest) updates) => super.copyWith((message) => updates(message as CreateStreamRequest)) as CreateStreamRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateStreamRequest copyWith(void Function(CreateStreamRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateStreamRequest))
+          as CreateStreamRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateStreamRequest create() => CreateStreamRequest._();
   CreateStreamRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateStreamRequest> createRepeated() => $pb.PbList<CreateStreamRequest>();
+  static $pb.PbList<CreateStreamRequest> createRepeated() =>
+      $pb.PbList<CreateStreamRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateStreamRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateStreamRequest>(create);
+  static CreateStreamRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateStreamRequest>(create);
   static CreateStreamRequest? _defaultInstance;
 
   /// Required. The parent that owns the collection of streams.
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1077,7 +1298,10 @@ class CreateStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get streamId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set streamId($core.String v) { $_setString(1, v); }
+  set streamId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStreamId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1087,7 +1311,10 @@ class CreateStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Stream get stream => $_getN(2);
   @$pb.TagNumber(3)
-  set stream(Stream v) { setField(3, v); }
+  set stream(Stream v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasStream() => $_has(2);
   @$pb.TagNumber(3)
@@ -1111,7 +1338,10 @@ class CreateStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get requestId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set requestId($core.String v) { $_setString(3, v); }
+  set requestId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRequestId() => $_has(3);
   @$pb.TagNumber(4)
@@ -1138,35 +1368,45 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateStreamRequest._() : super();
-  factory UpdateStreamRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateStreamRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateStreamRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateStreamRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateStreamRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
+    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
     ..aOM<Stream>(2, _omitFieldNames ? '' : 'stream', subBuilder: Stream.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateStreamRequest clone() => UpdateStreamRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateStreamRequest copyWith(void Function(UpdateStreamRequest) updates) => super.copyWith((message) => updates(message as UpdateStreamRequest)) as UpdateStreamRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateStreamRequest copyWith(void Function(UpdateStreamRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateStreamRequest))
+          as UpdateStreamRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateStreamRequest create() => UpdateStreamRequest._();
   UpdateStreamRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateStreamRequest> createRepeated() => $pb.PbList<UpdateStreamRequest>();
+  static $pb.PbList<UpdateStreamRequest> createRepeated() =>
+      $pb.PbList<UpdateStreamRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateStreamRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateStreamRequest>(create);
+  static UpdateStreamRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateStreamRequest>(create);
   static UpdateStreamRequest? _defaultInstance;
 
   /// Required. Field mask is used to specify the fields to be overwritten in the
@@ -1177,7 +1417,10 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $333.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($333.FieldMask v) { setField(1, v); }
+  set updateMask($333.FieldMask v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
@@ -1189,7 +1432,10 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Stream get stream => $_getN(1);
   @$pb.TagNumber(2)
-  set stream(Stream v) { setField(2, v); }
+  set stream(Stream v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStream() => $_has(1);
   @$pb.TagNumber(2)
@@ -1213,7 +1459,10 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get requestId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set requestId($core.String v) { $_setString(2, v); }
+  set requestId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequestId() => $_has(2);
   @$pb.TagNumber(3)
@@ -1236,41 +1485,53 @@ class DeleteStreamRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteStreamRequest._() : super();
-  factory DeleteStreamRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteStreamRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteStreamRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteStreamRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteStreamRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteStreamRequest clone() => DeleteStreamRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteStreamRequest copyWith(void Function(DeleteStreamRequest) updates) => super.copyWith((message) => updates(message as DeleteStreamRequest)) as DeleteStreamRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteStreamRequest copyWith(void Function(DeleteStreamRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteStreamRequest))
+          as DeleteStreamRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteStreamRequest create() => DeleteStreamRequest._();
   DeleteStreamRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteStreamRequest> createRepeated() => $pb.PbList<DeleteStreamRequest>();
+  static $pb.PbList<DeleteStreamRequest> createRepeated() =>
+      $pb.PbList<DeleteStreamRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteStreamRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteStreamRequest>(create);
+  static DeleteStreamRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteStreamRequest>(create);
   static DeleteStreamRequest? _defaultInstance;
 
   /// Required. The name of the stream.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1292,7 +1553,10 @@ class DeleteStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get requestId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set requestId($core.String v) { $_setString(1, v); }
+  set requestId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRequestId() => $_has(1);
   @$pb.TagNumber(2)
@@ -1335,46 +1599,60 @@ class OperationMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   OperationMetadata._() : super();
-  factory OperationMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OperationMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OperationMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OperationMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
+      createEmptyInstance: create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
     ..aOB(6, _omitFieldNames ? '' : 'requestedCancellation')
     ..aOS(7, _omitFieldNames ? '' : 'apiVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OperationMetadata clone() => OperationMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OperationMetadata copyWith(void Function(OperationMetadata) updates) => super.copyWith((message) => updates(message as OperationMetadata)) as OperationMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OperationMetadata copyWith(void Function(OperationMetadata) updates) =>
+      super.copyWith((message) => updates(message as OperationMetadata))
+          as OperationMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OperationMetadata create() => OperationMetadata._();
   OperationMetadata createEmptyInstance() => create();
-  static $pb.PbList<OperationMetadata> createRepeated() => $pb.PbList<OperationMetadata>();
+  static $pb.PbList<OperationMetadata> createRepeated() =>
+      $pb.PbList<OperationMetadata>();
   @$core.pragma('dart2js:noInline')
-  static OperationMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OperationMetadata>(create);
+  static OperationMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OperationMetadata>(create);
   static OperationMetadata? _defaultInstance;
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
   $302.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($302.Timestamp v) { setField(1, v); }
+  set createTime($302.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1386,7 +1664,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1398,7 +1679,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get target => $_getSZ(2);
   @$pb.TagNumber(3)
-  set target($core.String v) { $_setString(2, v); }
+  set target($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTarget() => $_has(2);
   @$pb.TagNumber(3)
@@ -1408,7 +1692,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get verb => $_getSZ(3);
   @$pb.TagNumber(4)
-  set verb($core.String v) { $_setString(3, v); }
+  set verb($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasVerb() => $_has(3);
   @$pb.TagNumber(4)
@@ -1418,7 +1705,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get statusMessage => $_getSZ(4);
   @$pb.TagNumber(5)
-  set statusMessage($core.String v) { $_setString(4, v); }
+  set statusMessage($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasStatusMessage() => $_has(4);
   @$pb.TagNumber(5)
@@ -1432,7 +1722,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get requestedCancellation => $_getBF(5);
   @$pb.TagNumber(6)
-  set requestedCancellation($core.bool v) { $_setBool(5, v); }
+  set requestedCancellation($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasRequestedCancellation() => $_has(5);
   @$pb.TagNumber(6)
@@ -1442,13 +1735,16 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get apiVersion => $_getSZ(6);
   @$pb.TagNumber(7)
-  set apiVersion($core.String v) { $_setString(6, v); }
+  set apiVersion($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasApiVersion() => $_has(6);
   @$pb.TagNumber(7)
   void clearApiVersion() => clearField(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

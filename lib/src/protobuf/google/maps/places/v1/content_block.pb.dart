@@ -36,42 +36,56 @@ class ContentBlock extends $pb.GeneratedMessage {
     return $result;
   }
   ContentBlock._() : super();
-  factory ContentBlock.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ContentBlock.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ContentBlock.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ContentBlock.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContentBlock', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContentBlock',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'topic')
-    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'content', subBuilder: $460.LocalizedText.create)
-    ..aOM<$463.References>(3, _omitFieldNames ? '' : 'references', subBuilder: $463.References.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'content',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$463.References>(3, _omitFieldNames ? '' : 'references',
+        subBuilder: $463.References.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ContentBlock clone() => ContentBlock()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ContentBlock copyWith(void Function(ContentBlock) updates) => super.copyWith((message) => updates(message as ContentBlock)) as ContentBlock;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ContentBlock copyWith(void Function(ContentBlock) updates) =>
+      super.copyWith((message) => updates(message as ContentBlock))
+          as ContentBlock;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ContentBlock create() => ContentBlock._();
   ContentBlock createEmptyInstance() => create();
-  static $pb.PbList<ContentBlock> createRepeated() => $pb.PbList<ContentBlock>();
+  static $pb.PbList<ContentBlock> createRepeated() =>
+      $pb.PbList<ContentBlock>();
   @$core.pragma('dart2js:noInline')
-  static ContentBlock getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContentBlock>(create);
+  static ContentBlock getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ContentBlock>(create);
   static ContentBlock? _defaultInstance;
 
   /// The topic of the content, for example "overview" or "restaurant".
   @$pb.TagNumber(1)
   $core.String get topic => $_getSZ(0);
   @$pb.TagNumber(1)
-  set topic($core.String v) { $_setString(0, v); }
+  set topic($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTopic() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,7 +95,10 @@ class ContentBlock extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $460.LocalizedText get content => $_getN(1);
   @$pb.TagNumber(2)
-  set content($460.LocalizedText v) { setField(2, v); }
+  set content($460.LocalizedText v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(2)
@@ -97,7 +114,10 @@ class ContentBlock extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $463.References get references => $_getN(2);
   @$pb.TagNumber(3)
-  set references($463.References v) { setField(3, v); }
+  set references($463.References v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasReferences() => $_has(2);
   @$pb.TagNumber(3)
@@ -106,6 +126,6 @@ class ContentBlock extends $pb.GeneratedMessage {
   $463.References ensureReferences() => $_ensure(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const DriveAddOnManifest$json = {
   '1': 'DriveAddOnManifest',
   '2': [
-    {'1': 'homepage_trigger', '3': 1, '4': 1, '5': 11, '6': '.google.apps.script.type.HomepageExtensionPoint', '10': 'homepageTrigger'},
-    {'1': 'on_items_selected_trigger', '3': 2, '4': 1, '5': 11, '6': '.google.apps.script.type.drive.DriveExtensionPoint', '10': 'onItemsSelectedTrigger'},
+    {
+      '1': 'homepage_trigger',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.HomepageExtensionPoint',
+      '10': 'homepageTrigger'
+    },
+    {
+      '1': 'on_items_selected_trigger',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.script.type.drive.DriveExtensionPoint',
+      '10': 'onItemsSelectedTrigger'
+    },
   ],
 };
 
@@ -42,4 +56,3 @@ const DriveExtensionPoint$json = {
 final $typed_data.Uint8List driveExtensionPointDescriptor = $convert.base64Decode(
     'ChNEcml2ZUV4dGVuc2lvblBvaW50EiEKDHJ1bl9mdW5jdGlvbhgBIAEoCVILcnVuRnVuY3Rpb2'
     '4=');
-

@@ -30,7 +30,8 @@ class Task_JourneySharingInfo extends $pb.GeneratedMessage {
   }) {
     final $result = create();
     if (remainingVehicleJourneySegments != null) {
-      $result.remainingVehicleJourneySegments.addAll(remainingVehicleJourneySegments);
+      $result.remainingVehicleJourneySegments
+          .addAll(remainingVehicleJourneySegments);
     }
     if (lastLocation != null) {
       $result.lastLocation = lastLocation;
@@ -41,35 +42,52 @@ class Task_JourneySharingInfo extends $pb.GeneratedMessage {
     return $result;
   }
   Task_JourneySharingInfo._() : super();
-  factory Task_JourneySharingInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Task_JourneySharingInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Task_JourneySharingInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Task_JourneySharingInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Task.JourneySharingInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..pc<$161.VehicleJourneySegment>(1, _omitFieldNames ? '' : 'remainingVehicleJourneySegments', $pb.PbFieldType.PM, subBuilder: $161.VehicleJourneySegment.create)
-    ..aOM<$454.DeliveryVehicleLocation>(2, _omitFieldNames ? '' : 'lastLocation', subBuilder: $454.DeliveryVehicleLocation.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Task.JourneySharingInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..pc<$161.VehicleJourneySegment>(
+        1,
+        _omitFieldNames ? '' : 'remainingVehicleJourneySegments',
+        $pb.PbFieldType.PM,
+        subBuilder: $161.VehicleJourneySegment.create)
+    ..aOM<$454.DeliveryVehicleLocation>(
+        2, _omitFieldNames ? '' : 'lastLocation',
+        subBuilder: $454.DeliveryVehicleLocation.create)
     ..aOB(3, _omitFieldNames ? '' : 'lastLocationSnappable')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Task_JourneySharingInfo clone() => Task_JourneySharingInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Task_JourneySharingInfo copyWith(void Function(Task_JourneySharingInfo) updates) => super.copyWith((message) => updates(message as Task_JourneySharingInfo)) as Task_JourneySharingInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Task_JourneySharingInfo clone() =>
+      Task_JourneySharingInfo()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Task_JourneySharingInfo copyWith(
+          void Function(Task_JourneySharingInfo) updates) =>
+      super.copyWith((message) => updates(message as Task_JourneySharingInfo))
+          as Task_JourneySharingInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Task_JourneySharingInfo create() => Task_JourneySharingInfo._();
   Task_JourneySharingInfo createEmptyInstance() => create();
-  static $pb.PbList<Task_JourneySharingInfo> createRepeated() => $pb.PbList<Task_JourneySharingInfo>();
+  static $pb.PbList<Task_JourneySharingInfo> createRepeated() =>
+      $pb.PbList<Task_JourneySharingInfo>();
   @$core.pragma('dart2js:noInline')
-  static Task_JourneySharingInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Task_JourneySharingInfo>(create);
+  static Task_JourneySharingInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Task_JourneySharingInfo>(create);
   static Task_JourneySharingInfo? _defaultInstance;
 
   ///  Tracking information for the stops that the assigned vehicle will make
@@ -89,13 +107,17 @@ class Task_JourneySharingInfo extends $pb.GeneratedMessage {
   ///  populated by Fleet Engine. They provide route information between the
   ///  remaining `VehicleStops`.
   @$pb.TagNumber(1)
-  $core.List<$161.VehicleJourneySegment> get remainingVehicleJourneySegments => $_getList(0);
+  $core.List<$161.VehicleJourneySegment> get remainingVehicleJourneySegments =>
+      $_getList(0);
 
   /// Indicates the vehicle's last reported location of the assigned vehicle.
   @$pb.TagNumber(2)
   $454.DeliveryVehicleLocation get lastLocation => $_getN(1);
   @$pb.TagNumber(2)
-  set lastLocation($454.DeliveryVehicleLocation v) { setField(2, v); }
+  set lastLocation($454.DeliveryVehicleLocation v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLastLocation() => $_has(1);
   @$pb.TagNumber(2)
@@ -110,7 +132,10 @@ class Task_JourneySharingInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get lastLocationSnappable => $_getBF(2);
   @$pb.TagNumber(3)
-  set lastLocationSnappable($core.bool v) { $_setBool(2, v); }
+  set lastLocationSnappable($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLastLocationSnappable() => $_has(2);
   @$pb.TagNumber(3)
@@ -197,38 +222,70 @@ class Task extends $pb.GeneratedMessage {
     return $result;
   }
   Task._() : super();
-  factory Task.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Task.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Task.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Task.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Task', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Task',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<Task_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Task_Type.TYPE_UNSPECIFIED, valueOf: Task_Type.valueOf, enumValues: Task_Type.values)
-    ..e<Task_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Task_State.STATE_UNSPECIFIED, valueOf: Task_State.valueOf, enumValues: Task_State.values)
+    ..e<Task_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: Task_Type.TYPE_UNSPECIFIED,
+        valueOf: Task_Type.valueOf,
+        enumValues: Task_Type.values)
+    ..e<Task_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Task_State.STATE_UNSPECIFIED,
+        valueOf: Task_State.valueOf,
+        enumValues: Task_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'trackingId')
     ..aOS(5, _omitFieldNames ? '' : 'deliveryVehicleId')
-    ..aOM<$161.LocationInfo>(6, _omitFieldNames ? '' : 'plannedLocation', subBuilder: $161.LocationInfo.create)
-    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'taskDuration', subBuilder: $264.Duration.create)
-    ..aOM<Task_JourneySharingInfo>(8, _omitFieldNames ? '' : 'journeySharingInfo', subBuilder: Task_JourneySharingInfo.create)
-    ..e<Task_TaskOutcome>(9, _omitFieldNames ? '' : 'taskOutcome', $pb.PbFieldType.OE, defaultOrMaker: Task_TaskOutcome.TASK_OUTCOME_UNSPECIFIED, valueOf: Task_TaskOutcome.valueOf, enumValues: Task_TaskOutcome.values)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'taskOutcomeTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$161.LocationInfo>(11, _omitFieldNames ? '' : 'taskOutcomeLocation', subBuilder: $161.LocationInfo.create)
-    ..e<Task_TaskOutcomeLocationSource>(12, _omitFieldNames ? '' : 'taskOutcomeLocationSource', $pb.PbFieldType.OE, defaultOrMaker: Task_TaskOutcomeLocationSource.TASK_OUTCOME_LOCATION_SOURCE_UNSPECIFIED, valueOf: Task_TaskOutcomeLocationSource.valueOf, enumValues: Task_TaskOutcomeLocationSource.values)
-    ..aOM<TaskTrackingViewConfig>(13, _omitFieldNames ? '' : 'taskTrackingViewConfig', subBuilder: TaskTrackingViewConfig.create)
-    ..aOM<$454.TimeWindow>(14, _omitFieldNames ? '' : 'targetTimeWindow', subBuilder: $454.TimeWindow.create)
-    ..pc<$454.TaskAttribute>(15, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $454.TaskAttribute.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$161.LocationInfo>(6, _omitFieldNames ? '' : 'plannedLocation',
+        subBuilder: $161.LocationInfo.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'taskDuration',
+        subBuilder: $264.Duration.create)
+    ..aOM<Task_JourneySharingInfo>(
+        8, _omitFieldNames ? '' : 'journeySharingInfo',
+        subBuilder: Task_JourneySharingInfo.create)
+    ..e<Task_TaskOutcome>(
+        9, _omitFieldNames ? '' : 'taskOutcome', $pb.PbFieldType.OE,
+        defaultOrMaker: Task_TaskOutcome.TASK_OUTCOME_UNSPECIFIED,
+        valueOf: Task_TaskOutcome.valueOf,
+        enumValues: Task_TaskOutcome.values)
+    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'taskOutcomeTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$161.LocationInfo>(11, _omitFieldNames ? '' : 'taskOutcomeLocation',
+        subBuilder: $161.LocationInfo.create)
+    ..e<Task_TaskOutcomeLocationSource>(12,
+        _omitFieldNames ? '' : 'taskOutcomeLocationSource', $pb.PbFieldType.OE,
+        defaultOrMaker: Task_TaskOutcomeLocationSource
+            .TASK_OUTCOME_LOCATION_SOURCE_UNSPECIFIED,
+        valueOf: Task_TaskOutcomeLocationSource.valueOf,
+        enumValues: Task_TaskOutcomeLocationSource.values)
+    ..aOM<TaskTrackingViewConfig>(
+        13, _omitFieldNames ? '' : 'taskTrackingViewConfig',
+        subBuilder: TaskTrackingViewConfig.create)
+    ..aOM<$454.TimeWindow>(14, _omitFieldNames ? '' : 'targetTimeWindow',
+        subBuilder: $454.TimeWindow.create)
+    ..pc<$454.TaskAttribute>(
+        15, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM,
+        subBuilder: $454.TaskAttribute.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Task clone() => Task()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Task copyWith(void Function(Task) updates) => super.copyWith((message) => updates(message as Task)) as Task;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Task copyWith(void Function(Task) updates) =>
+      super.copyWith((message) => updates(message as Task)) as Task;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -237,14 +294,18 @@ class Task extends $pb.GeneratedMessage {
   Task createEmptyInstance() => create();
   static $pb.PbList<Task> createRepeated() => $pb.PbList<Task>();
   @$core.pragma('dart2js:noInline')
-  static Task getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Task>(create);
+  static Task getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Task>(create);
   static Task? _defaultInstance;
 
   /// Must be in the format `providers/{provider}/tasks/{task}`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -255,7 +316,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Task_Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(Task_Type v) { setField(2, v); }
+  set type(Task_Type v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -265,7 +329,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Task_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(Task_State v) { setField(3, v); }
+  set state(Task_State v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -285,7 +352,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get trackingId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set trackingId($core.String v) { $_setString(3, v); }
+  set trackingId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTrackingId() => $_has(3);
   @$pb.TagNumber(4)
@@ -303,7 +373,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get deliveryVehicleId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set deliveryVehicleId($core.String v) { $_setString(4, v); }
+  set deliveryVehicleId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDeliveryVehicleId() => $_has(4);
   @$pb.TagNumber(5)
@@ -314,7 +387,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $161.LocationInfo get plannedLocation => $_getN(5);
   @$pb.TagNumber(6)
-  set plannedLocation($161.LocationInfo v) { setField(6, v); }
+  set plannedLocation($161.LocationInfo v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPlannedLocation() => $_has(5);
   @$pb.TagNumber(6)
@@ -326,7 +402,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $264.Duration get taskDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set taskDuration($264.Duration v) { setField(7, v); }
+  set taskDuration($264.Duration v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTaskDuration() => $_has(6);
   @$pb.TagNumber(7)
@@ -339,7 +418,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Task_JourneySharingInfo get journeySharingInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set journeySharingInfo(Task_JourneySharingInfo v) { setField(8, v); }
+  set journeySharingInfo(Task_JourneySharingInfo v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasJourneySharingInfo() => $_has(7);
   @$pb.TagNumber(8)
@@ -351,7 +433,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Task_TaskOutcome get taskOutcome => $_getN(8);
   @$pb.TagNumber(9)
-  set taskOutcome(Task_TaskOutcome v) { setField(9, v); }
+  set taskOutcome(Task_TaskOutcome v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTaskOutcome() => $_has(8);
   @$pb.TagNumber(9)
@@ -362,7 +447,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $302.Timestamp get taskOutcomeTime => $_getN(9);
   @$pb.TagNumber(10)
-  set taskOutcomeTime($302.Timestamp v) { setField(10, v); }
+  set taskOutcomeTime($302.Timestamp v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasTaskOutcomeTime() => $_has(9);
   @$pb.TagNumber(10)
@@ -377,7 +465,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $161.LocationInfo get taskOutcomeLocation => $_getN(10);
   @$pb.TagNumber(11)
-  set taskOutcomeLocation($161.LocationInfo v) { setField(11, v); }
+  set taskOutcomeLocation($161.LocationInfo v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasTaskOutcomeLocation() => $_has(10);
   @$pb.TagNumber(11)
@@ -389,7 +480,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Task_TaskOutcomeLocationSource get taskOutcomeLocationSource => $_getN(11);
   @$pb.TagNumber(12)
-  set taskOutcomeLocationSource(Task_TaskOutcomeLocationSource v) { setField(12, v); }
+  set taskOutcomeLocationSource(Task_TaskOutcomeLocationSource v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasTaskOutcomeLocationSource() => $_has(11);
   @$pb.TagNumber(12)
@@ -400,7 +494,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   TaskTrackingViewConfig get taskTrackingViewConfig => $_getN(12);
   @$pb.TagNumber(13)
-  set taskTrackingViewConfig(TaskTrackingViewConfig v) { setField(13, v); }
+  set taskTrackingViewConfig(TaskTrackingViewConfig v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasTaskTrackingViewConfig() => $_has(12);
   @$pb.TagNumber(13)
@@ -412,7 +509,10 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $454.TimeWindow get targetTimeWindow => $_getN(13);
   @$pb.TagNumber(14)
-  set targetTimeWindow($454.TimeWindow v) { setField(14, v); }
+  set targetTimeWindow($454.TimeWindow v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasTargetTimeWindow() => $_has(13);
   @$pb.TagNumber(14)
@@ -426,11 +526,11 @@ class Task extends $pb.GeneratedMessage {
 }
 
 enum TaskTrackingViewConfig_VisibilityOption_VisibilityOption {
-  remainingStopCountThreshold, 
-  durationUntilEstimatedArrivalTimeThreshold, 
-  remainingDrivingDistanceMetersThreshold, 
-  always, 
-  never, 
+  remainingStopCountThreshold,
+  durationUntilEstimatedArrivalTimeThreshold,
+  remainingDrivingDistanceMetersThreshold,
+  always,
+  never,
   notSet
 }
 
@@ -449,10 +549,12 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
       $result.remainingStopCountThreshold = remainingStopCountThreshold;
     }
     if (durationUntilEstimatedArrivalTimeThreshold != null) {
-      $result.durationUntilEstimatedArrivalTimeThreshold = durationUntilEstimatedArrivalTimeThreshold;
+      $result.durationUntilEstimatedArrivalTimeThreshold =
+          durationUntilEstimatedArrivalTimeThreshold;
     }
     if (remainingDrivingDistanceMetersThreshold != null) {
-      $result.remainingDrivingDistanceMetersThreshold = remainingDrivingDistanceMetersThreshold;
+      $result.remainingDrivingDistanceMetersThreshold =
+          remainingDrivingDistanceMetersThreshold;
     }
     if (always != null) {
       $result.always = always;
@@ -463,49 +565,78 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
     return $result;
   }
   TaskTrackingViewConfig_VisibilityOption._() : super();
-  factory TaskTrackingViewConfig_VisibilityOption.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TaskTrackingViewConfig_VisibilityOption.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TaskTrackingViewConfig_VisibilityOption.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TaskTrackingViewConfig_VisibilityOption.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, TaskTrackingViewConfig_VisibilityOption_VisibilityOption> _TaskTrackingViewConfig_VisibilityOption_VisibilityOptionByTag = {
-    1 : TaskTrackingViewConfig_VisibilityOption_VisibilityOption.remainingStopCountThreshold,
-    2 : TaskTrackingViewConfig_VisibilityOption_VisibilityOption.durationUntilEstimatedArrivalTimeThreshold,
-    3 : TaskTrackingViewConfig_VisibilityOption_VisibilityOption.remainingDrivingDistanceMetersThreshold,
-    4 : TaskTrackingViewConfig_VisibilityOption_VisibilityOption.always,
-    5 : TaskTrackingViewConfig_VisibilityOption_VisibilityOption.never,
-    0 : TaskTrackingViewConfig_VisibilityOption_VisibilityOption.notSet
+  static const $core
+      .Map<$core.int, TaskTrackingViewConfig_VisibilityOption_VisibilityOption>
+      _TaskTrackingViewConfig_VisibilityOption_VisibilityOptionByTag = {
+    1: TaskTrackingViewConfig_VisibilityOption_VisibilityOption
+        .remainingStopCountThreshold,
+    2: TaskTrackingViewConfig_VisibilityOption_VisibilityOption
+        .durationUntilEstimatedArrivalTimeThreshold,
+    3: TaskTrackingViewConfig_VisibilityOption_VisibilityOption
+        .remainingDrivingDistanceMetersThreshold,
+    4: TaskTrackingViewConfig_VisibilityOption_VisibilityOption.always,
+    5: TaskTrackingViewConfig_VisibilityOption_VisibilityOption.never,
+    0: TaskTrackingViewConfig_VisibilityOption_VisibilityOption.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskTrackingViewConfig.VisibilityOption', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TaskTrackingViewConfig.VisibilityOption',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'remainingStopCountThreshold', $pb.PbFieldType.O3)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'durationUntilEstimatedArrivalTimeThreshold', subBuilder: $264.Duration.create)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'remainingDrivingDistanceMetersThreshold', $pb.PbFieldType.O3)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'remainingStopCountThreshold',
+        $pb.PbFieldType.O3)
+    ..aOM<$264.Duration>(
+        2, _omitFieldNames ? '' : 'durationUntilEstimatedArrivalTimeThreshold',
+        subBuilder: $264.Duration.create)
+    ..a<$core.int>(
+        3,
+        _omitFieldNames ? '' : 'remainingDrivingDistanceMetersThreshold',
+        $pb.PbFieldType.O3)
     ..aOB(4, _omitFieldNames ? '' : 'always')
     ..aOB(5, _omitFieldNames ? '' : 'never')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TaskTrackingViewConfig_VisibilityOption clone() => TaskTrackingViewConfig_VisibilityOption()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TaskTrackingViewConfig_VisibilityOption copyWith(void Function(TaskTrackingViewConfig_VisibilityOption) updates) => super.copyWith((message) => updates(message as TaskTrackingViewConfig_VisibilityOption)) as TaskTrackingViewConfig_VisibilityOption;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TaskTrackingViewConfig_VisibilityOption clone() =>
+      TaskTrackingViewConfig_VisibilityOption()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TaskTrackingViewConfig_VisibilityOption copyWith(
+          void Function(TaskTrackingViewConfig_VisibilityOption) updates) =>
+      super.copyWith((message) =>
+              updates(message as TaskTrackingViewConfig_VisibilityOption))
+          as TaskTrackingViewConfig_VisibilityOption;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TaskTrackingViewConfig_VisibilityOption create() => TaskTrackingViewConfig_VisibilityOption._();
+  static TaskTrackingViewConfig_VisibilityOption create() =>
+      TaskTrackingViewConfig_VisibilityOption._();
   TaskTrackingViewConfig_VisibilityOption createEmptyInstance() => create();
-  static $pb.PbList<TaskTrackingViewConfig_VisibilityOption> createRepeated() => $pb.PbList<TaskTrackingViewConfig_VisibilityOption>();
+  static $pb.PbList<TaskTrackingViewConfig_VisibilityOption> createRepeated() =>
+      $pb.PbList<TaskTrackingViewConfig_VisibilityOption>();
   @$core.pragma('dart2js:noInline')
-  static TaskTrackingViewConfig_VisibilityOption getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TaskTrackingViewConfig_VisibilityOption>(create);
+  static TaskTrackingViewConfig_VisibilityOption getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          TaskTrackingViewConfig_VisibilityOption>(create);
   static TaskTrackingViewConfig_VisibilityOption? _defaultInstance;
 
-  TaskTrackingViewConfig_VisibilityOption_VisibilityOption whichVisibilityOption() => _TaskTrackingViewConfig_VisibilityOption_VisibilityOptionByTag[$_whichOneof(0)]!;
+  TaskTrackingViewConfig_VisibilityOption_VisibilityOption
+      whichVisibilityOption() =>
+          _TaskTrackingViewConfig_VisibilityOption_VisibilityOptionByTag[
+              $_whichOneof(0)]!;
   void clearVisibilityOption() => clearField($_whichOneof(0));
 
   /// This data element is visible to the end users if the remaining stop
@@ -513,7 +644,10 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get remainingStopCountThreshold => $_getIZ(0);
   @$pb.TagNumber(1)
-  set remainingStopCountThreshold($core.int v) { $_setSignedInt32(0, v); }
+  set remainingStopCountThreshold($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRemainingStopCountThreshold() => $_has(0);
   @$pb.TagNumber(1)
@@ -524,13 +658,17 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $264.Duration get durationUntilEstimatedArrivalTimeThreshold => $_getN(1);
   @$pb.TagNumber(2)
-  set durationUntilEstimatedArrivalTimeThreshold($264.Duration v) { setField(2, v); }
+  set durationUntilEstimatedArrivalTimeThreshold($264.Duration v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDurationUntilEstimatedArrivalTimeThreshold() => $_has(1);
   @$pb.TagNumber(2)
   void clearDurationUntilEstimatedArrivalTimeThreshold() => clearField(2);
   @$pb.TagNumber(2)
-  $264.Duration ensureDurationUntilEstimatedArrivalTimeThreshold() => $_ensure(1);
+  $264.Duration ensureDurationUntilEstimatedArrivalTimeThreshold() =>
+      $_ensure(1);
 
   /// This data element is visible to the end users if the remaining
   /// driving distance in meters <=
@@ -538,7 +676,10 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get remainingDrivingDistanceMetersThreshold => $_getIZ(2);
   @$pb.TagNumber(3)
-  set remainingDrivingDistanceMetersThreshold($core.int v) { $_setSignedInt32(2, v); }
+  set remainingDrivingDistanceMetersThreshold($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRemainingDrivingDistanceMetersThreshold() => $_has(2);
   @$pb.TagNumber(3)
@@ -549,7 +690,10 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get always => $_getBF(3);
   @$pb.TagNumber(4)
-  set always($core.bool v) { $_setBool(3, v); }
+  set always($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAlways() => $_has(3);
   @$pb.TagNumber(4)
@@ -560,7 +704,10 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get never => $_getBF(4);
   @$pb.TagNumber(5)
-  set never($core.bool v) { $_setBool(4, v); }
+  set never($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasNever() => $_has(4);
   @$pb.TagNumber(5)
@@ -573,7 +720,8 @@ class TaskTrackingViewConfig extends $pb.GeneratedMessage {
   factory TaskTrackingViewConfig({
     TaskTrackingViewConfig_VisibilityOption? routePolylinePointsVisibility,
     TaskTrackingViewConfig_VisibilityOption? estimatedArrivalTimeVisibility,
-    TaskTrackingViewConfig_VisibilityOption? estimatedTaskCompletionTimeVisibility,
+    TaskTrackingViewConfig_VisibilityOption?
+        estimatedTaskCompletionTimeVisibility,
     TaskTrackingViewConfig_VisibilityOption? remainingDrivingDistanceVisibility,
     TaskTrackingViewConfig_VisibilityOption? remainingStopCountVisibility,
     TaskTrackingViewConfig_VisibilityOption? vehicleLocationVisibility,
@@ -586,10 +734,12 @@ class TaskTrackingViewConfig extends $pb.GeneratedMessage {
       $result.estimatedArrivalTimeVisibility = estimatedArrivalTimeVisibility;
     }
     if (estimatedTaskCompletionTimeVisibility != null) {
-      $result.estimatedTaskCompletionTimeVisibility = estimatedTaskCompletionTimeVisibility;
+      $result.estimatedTaskCompletionTimeVisibility =
+          estimatedTaskCompletionTimeVisibility;
     }
     if (remainingDrivingDistanceVisibility != null) {
-      $result.remainingDrivingDistanceVisibility = remainingDrivingDistanceVisibility;
+      $result.remainingDrivingDistanceVisibility =
+          remainingDrivingDistanceVisibility;
     }
     if (remainingStopCountVisibility != null) {
       $result.remainingStopCountVisibility = remainingStopCountVisibility;
@@ -600,125 +750,181 @@ class TaskTrackingViewConfig extends $pb.GeneratedMessage {
     return $result;
   }
   TaskTrackingViewConfig._() : super();
-  factory TaskTrackingViewConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TaskTrackingViewConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TaskTrackingViewConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TaskTrackingViewConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskTrackingViewConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<TaskTrackingViewConfig_VisibilityOption>(1, _omitFieldNames ? '' : 'routePolylinePointsVisibility', subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
-    ..aOM<TaskTrackingViewConfig_VisibilityOption>(2, _omitFieldNames ? '' : 'estimatedArrivalTimeVisibility', subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
-    ..aOM<TaskTrackingViewConfig_VisibilityOption>(3, _omitFieldNames ? '' : 'estimatedTaskCompletionTimeVisibility', subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
-    ..aOM<TaskTrackingViewConfig_VisibilityOption>(4, _omitFieldNames ? '' : 'remainingDrivingDistanceVisibility', subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
-    ..aOM<TaskTrackingViewConfig_VisibilityOption>(5, _omitFieldNames ? '' : 'remainingStopCountVisibility', subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
-    ..aOM<TaskTrackingViewConfig_VisibilityOption>(6, _omitFieldNames ? '' : 'vehicleLocationVisibility', subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TaskTrackingViewConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
+      createEmptyInstance: create)
+    ..aOM<TaskTrackingViewConfig_VisibilityOption>(
+        1, _omitFieldNames ? '' : 'routePolylinePointsVisibility',
+        subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
+    ..aOM<TaskTrackingViewConfig_VisibilityOption>(
+        2, _omitFieldNames ? '' : 'estimatedArrivalTimeVisibility',
+        subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
+    ..aOM<TaskTrackingViewConfig_VisibilityOption>(
+        3, _omitFieldNames ? '' : 'estimatedTaskCompletionTimeVisibility',
+        subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
+    ..aOM<TaskTrackingViewConfig_VisibilityOption>(
+        4, _omitFieldNames ? '' : 'remainingDrivingDistanceVisibility',
+        subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
+    ..aOM<TaskTrackingViewConfig_VisibilityOption>(
+        5, _omitFieldNames ? '' : 'remainingStopCountVisibility',
+        subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
+    ..aOM<TaskTrackingViewConfig_VisibilityOption>(
+        6, _omitFieldNames ? '' : 'vehicleLocationVisibility',
+        subBuilder: TaskTrackingViewConfig_VisibilityOption.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  TaskTrackingViewConfig clone() => TaskTrackingViewConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TaskTrackingViewConfig copyWith(void Function(TaskTrackingViewConfig) updates) => super.copyWith((message) => updates(message as TaskTrackingViewConfig)) as TaskTrackingViewConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TaskTrackingViewConfig clone() =>
+      TaskTrackingViewConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TaskTrackingViewConfig copyWith(
+          void Function(TaskTrackingViewConfig) updates) =>
+      super.copyWith((message) => updates(message as TaskTrackingViewConfig))
+          as TaskTrackingViewConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TaskTrackingViewConfig create() => TaskTrackingViewConfig._();
   TaskTrackingViewConfig createEmptyInstance() => create();
-  static $pb.PbList<TaskTrackingViewConfig> createRepeated() => $pb.PbList<TaskTrackingViewConfig>();
+  static $pb.PbList<TaskTrackingViewConfig> createRepeated() =>
+      $pb.PbList<TaskTrackingViewConfig>();
   @$core.pragma('dart2js:noInline')
-  static TaskTrackingViewConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TaskTrackingViewConfig>(create);
+  static TaskTrackingViewConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TaskTrackingViewConfig>(create);
   static TaskTrackingViewConfig? _defaultInstance;
 
   /// The field that specifies when route polyline points can be visible. If this
   /// field is not specified, the project level default visibility configuration
   /// for this data will be used.
   @$pb.TagNumber(1)
-  TaskTrackingViewConfig_VisibilityOption get routePolylinePointsVisibility => $_getN(0);
+  TaskTrackingViewConfig_VisibilityOption get routePolylinePointsVisibility =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set routePolylinePointsVisibility(TaskTrackingViewConfig_VisibilityOption v) { setField(1, v); }
+  set routePolylinePointsVisibility(TaskTrackingViewConfig_VisibilityOption v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRoutePolylinePointsVisibility() => $_has(0);
   @$pb.TagNumber(1)
   void clearRoutePolylinePointsVisibility() => clearField(1);
   @$pb.TagNumber(1)
-  TaskTrackingViewConfig_VisibilityOption ensureRoutePolylinePointsVisibility() => $_ensure(0);
+  TaskTrackingViewConfig_VisibilityOption
+      ensureRoutePolylinePointsVisibility() => $_ensure(0);
 
   /// The field that specifies when estimated arrival time can be visible. If
   /// this field is not specified, the project level default visibility
   /// configuration for this data will be used.
   @$pb.TagNumber(2)
-  TaskTrackingViewConfig_VisibilityOption get estimatedArrivalTimeVisibility => $_getN(1);
+  TaskTrackingViewConfig_VisibilityOption get estimatedArrivalTimeVisibility =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set estimatedArrivalTimeVisibility(TaskTrackingViewConfig_VisibilityOption v) { setField(2, v); }
+  set estimatedArrivalTimeVisibility(
+      TaskTrackingViewConfig_VisibilityOption v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEstimatedArrivalTimeVisibility() => $_has(1);
   @$pb.TagNumber(2)
   void clearEstimatedArrivalTimeVisibility() => clearField(2);
   @$pb.TagNumber(2)
-  TaskTrackingViewConfig_VisibilityOption ensureEstimatedArrivalTimeVisibility() => $_ensure(1);
+  TaskTrackingViewConfig_VisibilityOption
+      ensureEstimatedArrivalTimeVisibility() => $_ensure(1);
 
   /// The field that specifies when estimated task completion time can be
   /// visible. If this field is not specified, the project level default
   /// visibility configuration for this data will be used.
   @$pb.TagNumber(3)
-  TaskTrackingViewConfig_VisibilityOption get estimatedTaskCompletionTimeVisibility => $_getN(2);
+  TaskTrackingViewConfig_VisibilityOption
+      get estimatedTaskCompletionTimeVisibility => $_getN(2);
   @$pb.TagNumber(3)
-  set estimatedTaskCompletionTimeVisibility(TaskTrackingViewConfig_VisibilityOption v) { setField(3, v); }
+  set estimatedTaskCompletionTimeVisibility(
+      TaskTrackingViewConfig_VisibilityOption v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEstimatedTaskCompletionTimeVisibility() => $_has(2);
   @$pb.TagNumber(3)
   void clearEstimatedTaskCompletionTimeVisibility() => clearField(3);
   @$pb.TagNumber(3)
-  TaskTrackingViewConfig_VisibilityOption ensureEstimatedTaskCompletionTimeVisibility() => $_ensure(2);
+  TaskTrackingViewConfig_VisibilityOption
+      ensureEstimatedTaskCompletionTimeVisibility() => $_ensure(2);
 
   /// The field that specifies when remaining driving distance can be visible. If
   /// this field is not specified, the project level default visibility
   /// configuration for this data will be used.
   @$pb.TagNumber(4)
-  TaskTrackingViewConfig_VisibilityOption get remainingDrivingDistanceVisibility => $_getN(3);
+  TaskTrackingViewConfig_VisibilityOption
+      get remainingDrivingDistanceVisibility => $_getN(3);
   @$pb.TagNumber(4)
-  set remainingDrivingDistanceVisibility(TaskTrackingViewConfig_VisibilityOption v) { setField(4, v); }
+  set remainingDrivingDistanceVisibility(
+      TaskTrackingViewConfig_VisibilityOption v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRemainingDrivingDistanceVisibility() => $_has(3);
   @$pb.TagNumber(4)
   void clearRemainingDrivingDistanceVisibility() => clearField(4);
   @$pb.TagNumber(4)
-  TaskTrackingViewConfig_VisibilityOption ensureRemainingDrivingDistanceVisibility() => $_ensure(3);
+  TaskTrackingViewConfig_VisibilityOption
+      ensureRemainingDrivingDistanceVisibility() => $_ensure(3);
 
   /// The field that specifies when remaining stop count can be visible. If this
   /// field is not specified, the project level default visibility configuration
   /// for this data will be used.
   @$pb.TagNumber(5)
-  TaskTrackingViewConfig_VisibilityOption get remainingStopCountVisibility => $_getN(4);
+  TaskTrackingViewConfig_VisibilityOption get remainingStopCountVisibility =>
+      $_getN(4);
   @$pb.TagNumber(5)
-  set remainingStopCountVisibility(TaskTrackingViewConfig_VisibilityOption v) { setField(5, v); }
+  set remainingStopCountVisibility(TaskTrackingViewConfig_VisibilityOption v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRemainingStopCountVisibility() => $_has(4);
   @$pb.TagNumber(5)
   void clearRemainingStopCountVisibility() => clearField(5);
   @$pb.TagNumber(5)
-  TaskTrackingViewConfig_VisibilityOption ensureRemainingStopCountVisibility() => $_ensure(4);
+  TaskTrackingViewConfig_VisibilityOption
+      ensureRemainingStopCountVisibility() => $_ensure(4);
 
   /// The field that specifies when vehicle location can be visible. If this
   /// field is not specified, the project level default visibility configuration
   /// for this data will be used.
   @$pb.TagNumber(6)
-  TaskTrackingViewConfig_VisibilityOption get vehicleLocationVisibility => $_getN(5);
+  TaskTrackingViewConfig_VisibilityOption get vehicleLocationVisibility =>
+      $_getN(5);
   @$pb.TagNumber(6)
-  set vehicleLocationVisibility(TaskTrackingViewConfig_VisibilityOption v) { setField(6, v); }
+  set vehicleLocationVisibility(TaskTrackingViewConfig_VisibilityOption v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasVehicleLocationVisibility() => $_has(5);
   @$pb.TagNumber(6)
   void clearVehicleLocationVisibility() => clearField(6);
   @$pb.TagNumber(6)
-  TaskTrackingViewConfig_VisibilityOption ensureVehicleLocationVisibility() => $_ensure(5);
+  TaskTrackingViewConfig_VisibilityOption ensureVehicleLocationVisibility() =>
+      $_ensure(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

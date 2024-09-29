@@ -28,19 +28,19 @@ import 'text.pb.dart' as $517;
 import 'xychart.pb.dart' as $515;
 
 enum Widget_Content {
-  xyChart, 
-  scorecard, 
-  text, 
-  blank, 
-  alertChart, 
-  timeSeriesTable, 
-  collapsibleGroup, 
-  logsPanel, 
-  incidentList, 
-  pieChart, 
-  errorReportingPanel, 
-  sectionHeader, 
-  singleViewGroup, 
+  xyChart,
+  scorecard,
+  text,
+  blank,
+  alertChart,
+  timeSeriesTable,
+  collapsibleGroup,
+  logsPanel,
+  incidentList,
+  pieChart,
+  errorReportingPanel,
+  sectionHeader,
+  singleViewGroup,
   notSet
 }
 
@@ -113,55 +113,75 @@ class Widget extends $pb.GeneratedMessage {
     return $result;
   }
   Widget._() : super();
-  factory Widget.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Widget.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Widget.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Widget.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Widget_Content> _Widget_ContentByTag = {
-    2 : Widget_Content.xyChart,
-    3 : Widget_Content.scorecard,
-    4 : Widget_Content.text,
-    5 : Widget_Content.blank,
-    7 : Widget_Content.alertChart,
-    8 : Widget_Content.timeSeriesTable,
-    9 : Widget_Content.collapsibleGroup,
-    10 : Widget_Content.logsPanel,
-    12 : Widget_Content.incidentList,
-    14 : Widget_Content.pieChart,
-    19 : Widget_Content.errorReportingPanel,
-    21 : Widget_Content.sectionHeader,
-    22 : Widget_Content.singleViewGroup,
-    0 : Widget_Content.notSet
+    2: Widget_Content.xyChart,
+    3: Widget_Content.scorecard,
+    4: Widget_Content.text,
+    5: Widget_Content.blank,
+    7: Widget_Content.alertChart,
+    8: Widget_Content.timeSeriesTable,
+    9: Widget_Content.collapsibleGroup,
+    10: Widget_Content.logsPanel,
+    12: Widget_Content.incidentList,
+    14: Widget_Content.pieChart,
+    19: Widget_Content.errorReportingPanel,
+    21: Widget_Content.sectionHeader,
+    22: Widget_Content.singleViewGroup,
+    0: Widget_Content.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Widget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Widget',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 19, 21, 22])
     ..aOS(1, _omitFieldNames ? '' : 'title')
-    ..aOM<$515.XyChart>(2, _omitFieldNames ? '' : 'xyChart', subBuilder: $515.XyChart.create)
-    ..aOM<$516.Scorecard>(3, _omitFieldNames ? '' : 'scorecard', subBuilder: $516.Scorecard.create)
-    ..aOM<$517.Text>(4, _omitFieldNames ? '' : 'text', subBuilder: $517.Text.create)
-    ..aOM<$3.Empty>(5, _omitFieldNames ? '' : 'blank', subBuilder: $3.Empty.create)
-    ..aOM<$518.AlertChart>(7, _omitFieldNames ? '' : 'alertChart', subBuilder: $518.AlertChart.create)
-    ..aOM<$519.TimeSeriesTable>(8, _omitFieldNames ? '' : 'timeSeriesTable', subBuilder: $519.TimeSeriesTable.create)
-    ..aOM<$520.CollapsibleGroup>(9, _omitFieldNames ? '' : 'collapsibleGroup', subBuilder: $520.CollapsibleGroup.create)
-    ..aOM<$521.LogsPanel>(10, _omitFieldNames ? '' : 'logsPanel', subBuilder: $521.LogsPanel.create)
-    ..aOM<$522.IncidentList>(12, _omitFieldNames ? '' : 'incidentList', subBuilder: $522.IncidentList.create)
-    ..aOM<$523.PieChart>(14, _omitFieldNames ? '' : 'pieChart', subBuilder: $523.PieChart.create)
+    ..aOM<$515.XyChart>(2, _omitFieldNames ? '' : 'xyChart',
+        subBuilder: $515.XyChart.create)
+    ..aOM<$516.Scorecard>(3, _omitFieldNames ? '' : 'scorecard',
+        subBuilder: $516.Scorecard.create)
+    ..aOM<$517.Text>(4, _omitFieldNames ? '' : 'text',
+        subBuilder: $517.Text.create)
+    ..aOM<$3.Empty>(5, _omitFieldNames ? '' : 'blank',
+        subBuilder: $3.Empty.create)
+    ..aOM<$518.AlertChart>(7, _omitFieldNames ? '' : 'alertChart',
+        subBuilder: $518.AlertChart.create)
+    ..aOM<$519.TimeSeriesTable>(8, _omitFieldNames ? '' : 'timeSeriesTable',
+        subBuilder: $519.TimeSeriesTable.create)
+    ..aOM<$520.CollapsibleGroup>(9, _omitFieldNames ? '' : 'collapsibleGroup',
+        subBuilder: $520.CollapsibleGroup.create)
+    ..aOM<$521.LogsPanel>(10, _omitFieldNames ? '' : 'logsPanel',
+        subBuilder: $521.LogsPanel.create)
+    ..aOM<$522.IncidentList>(12, _omitFieldNames ? '' : 'incidentList',
+        subBuilder: $522.IncidentList.create)
+    ..aOM<$523.PieChart>(14, _omitFieldNames ? '' : 'pieChart',
+        subBuilder: $523.PieChart.create)
     ..aOS(17, _omitFieldNames ? '' : 'id')
-    ..aOM<$524.ErrorReportingPanel>(19, _omitFieldNames ? '' : 'errorReportingPanel', subBuilder: $524.ErrorReportingPanel.create)
-    ..aOM<$525.SectionHeader>(21, _omitFieldNames ? '' : 'sectionHeader', subBuilder: $525.SectionHeader.create)
-    ..aOM<$526.SingleViewGroup>(22, _omitFieldNames ? '' : 'singleViewGroup', subBuilder: $526.SingleViewGroup.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$524.ErrorReportingPanel>(
+        19, _omitFieldNames ? '' : 'errorReportingPanel',
+        subBuilder: $524.ErrorReportingPanel.create)
+    ..aOM<$525.SectionHeader>(21, _omitFieldNames ? '' : 'sectionHeader',
+        subBuilder: $525.SectionHeader.create)
+    ..aOM<$526.SingleViewGroup>(22, _omitFieldNames ? '' : 'singleViewGroup',
+        subBuilder: $526.SingleViewGroup.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Widget clone() => Widget()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Widget copyWith(void Function(Widget) updates) => super.copyWith((message) => updates(message as Widget)) as Widget;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Widget copyWith(void Function(Widget) updates) =>
+      super.copyWith((message) => updates(message as Widget)) as Widget;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -170,7 +190,8 @@ class Widget extends $pb.GeneratedMessage {
   Widget createEmptyInstance() => create();
   static $pb.PbList<Widget> createRepeated() => $pb.PbList<Widget>();
   @$core.pragma('dart2js:noInline')
-  static Widget getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Widget>(create);
+  static Widget getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Widget>(create);
   static Widget? _defaultInstance;
 
   Widget_Content whichContent() => _Widget_ContentByTag[$_whichOneof(0)]!;
@@ -180,7 +201,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -190,7 +214,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $515.XyChart get xyChart => $_getN(1);
   @$pb.TagNumber(2)
-  set xyChart($515.XyChart v) { setField(2, v); }
+  set xyChart($515.XyChart v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasXyChart() => $_has(1);
   @$pb.TagNumber(2)
@@ -202,7 +229,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $516.Scorecard get scorecard => $_getN(2);
   @$pb.TagNumber(3)
-  set scorecard($516.Scorecard v) { setField(3, v); }
+  set scorecard($516.Scorecard v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasScorecard() => $_has(2);
   @$pb.TagNumber(3)
@@ -214,7 +244,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $517.Text get text => $_getN(3);
   @$pb.TagNumber(4)
-  set text($517.Text v) { setField(4, v); }
+  set text($517.Text v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasText() => $_has(3);
   @$pb.TagNumber(4)
@@ -226,7 +259,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $3.Empty get blank => $_getN(4);
   @$pb.TagNumber(5)
-  set blank($3.Empty v) { setField(5, v); }
+  set blank($3.Empty v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasBlank() => $_has(4);
   @$pb.TagNumber(5)
@@ -238,7 +274,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $518.AlertChart get alertChart => $_getN(5);
   @$pb.TagNumber(7)
-  set alertChart($518.AlertChart v) { setField(7, v); }
+  set alertChart($518.AlertChart v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasAlertChart() => $_has(5);
   @$pb.TagNumber(7)
@@ -250,7 +289,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $519.TimeSeriesTable get timeSeriesTable => $_getN(6);
   @$pb.TagNumber(8)
-  set timeSeriesTable($519.TimeSeriesTable v) { setField(8, v); }
+  set timeSeriesTable($519.TimeSeriesTable v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasTimeSeriesTable() => $_has(6);
   @$pb.TagNumber(8)
@@ -263,7 +305,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $520.CollapsibleGroup get collapsibleGroup => $_getN(7);
   @$pb.TagNumber(9)
-  set collapsibleGroup($520.CollapsibleGroup v) { setField(9, v); }
+  set collapsibleGroup($520.CollapsibleGroup v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCollapsibleGroup() => $_has(7);
   @$pb.TagNumber(9)
@@ -275,7 +320,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $521.LogsPanel get logsPanel => $_getN(8);
   @$pb.TagNumber(10)
-  set logsPanel($521.LogsPanel v) { setField(10, v); }
+  set logsPanel($521.LogsPanel v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasLogsPanel() => $_has(8);
   @$pb.TagNumber(10)
@@ -287,7 +335,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $522.IncidentList get incidentList => $_getN(9);
   @$pb.TagNumber(12)
-  set incidentList($522.IncidentList v) { setField(12, v); }
+  set incidentList($522.IncidentList v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasIncidentList() => $_has(9);
   @$pb.TagNumber(12)
@@ -299,7 +350,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $523.PieChart get pieChart => $_getN(10);
   @$pb.TagNumber(14)
-  set pieChart($523.PieChart v) { setField(14, v); }
+  set pieChart($523.PieChart v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasPieChart() => $_has(10);
   @$pb.TagNumber(14)
@@ -312,7 +366,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get id => $_getSZ(11);
   @$pb.TagNumber(17)
-  set id($core.String v) { $_setString(11, v); }
+  set id($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasId() => $_has(11);
   @$pb.TagNumber(17)
@@ -322,7 +379,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $524.ErrorReportingPanel get errorReportingPanel => $_getN(12);
   @$pb.TagNumber(19)
-  set errorReportingPanel($524.ErrorReportingPanel v) { setField(19, v); }
+  set errorReportingPanel($524.ErrorReportingPanel v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasErrorReportingPanel() => $_has(12);
   @$pb.TagNumber(19)
@@ -335,7 +395,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $525.SectionHeader get sectionHeader => $_getN(13);
   @$pb.TagNumber(21)
-  set sectionHeader($525.SectionHeader v) { setField(21, v); }
+  set sectionHeader($525.SectionHeader v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasSectionHeader() => $_has(13);
   @$pb.TagNumber(21)
@@ -347,7 +410,10 @@ class Widget extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $526.SingleViewGroup get singleViewGroup => $_getN(14);
   @$pb.TagNumber(22)
-  set singleViewGroup($526.SingleViewGroup v) { setField(22, v); }
+  set singleViewGroup($526.SingleViewGroup v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasSingleViewGroup() => $_has(14);
   @$pb.TagNumber(22)
@@ -356,6 +422,6 @@ class Widget extends $pb.GeneratedMessage {
   $526.SingleViewGroup ensureSingleViewGroup() => $_ensure(14);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

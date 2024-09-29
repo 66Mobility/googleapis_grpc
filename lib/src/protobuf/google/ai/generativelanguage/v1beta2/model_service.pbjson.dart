@@ -44,7 +44,14 @@ final $typed_data.Uint8List listModelsRequestDescriptor = $convert.base64Decode(
 const ListModelsResponse$json = {
   '1': 'ListModelsResponse',
   '2': [
-    {'1': 'models', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta2.Model', '10': 'models'},
+    {
+      '1': 'models',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta2.Model',
+      '10': 'models'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -54,4 +61,3 @@ final $typed_data.Uint8List listModelsResponseDescriptor = $convert.base64Decode
     'ChJMaXN0TW9kZWxzUmVzcG9uc2USQwoGbW9kZWxzGAEgAygLMisuZ29vZ2xlLmFpLmdlbmVyYX'
     'RpdmVsYW5ndWFnZS52MWJldGEyLk1vZGVsUgZtb2RlbHMSJgoPbmV4dF9wYWdlX3Rva2VuGAIg'
     'ASgJUg1uZXh0UGFnZVRva2Vu');
-

@@ -27,33 +27,44 @@ class Collection_CollectionItem extends $pb.GeneratedMessage {
     return $result;
   }
   Collection_CollectionItem._() : super();
-  factory Collection_CollectionItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Collection_CollectionItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Collection_CollectionItem.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Collection_CollectionItem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Collection.CollectionItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Collection.CollectionItem',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Collection_CollectionItem clone() => Collection_CollectionItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Collection_CollectionItem copyWith(void Function(Collection_CollectionItem) updates) => super.copyWith((message) => updates(message as Collection_CollectionItem)) as Collection_CollectionItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Collection_CollectionItem clone() =>
+      Collection_CollectionItem()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Collection_CollectionItem copyWith(
+          void Function(Collection_CollectionItem) updates) =>
+      super.copyWith((message) => updates(message as Collection_CollectionItem))
+          as Collection_CollectionItem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Collection_CollectionItem create() => Collection_CollectionItem._();
   Collection_CollectionItem createEmptyInstance() => create();
-  static $pb.PbList<Collection_CollectionItem> createRepeated() => $pb.PbList<Collection_CollectionItem>();
+  static $pb.PbList<Collection_CollectionItem> createRepeated() =>
+      $pb.PbList<Collection_CollectionItem>();
   @$core.pragma('dart2js:noInline')
-  static Collection_CollectionItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Collection_CollectionItem>(create);
+  static Collection_CollectionItem getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Collection_CollectionItem>(create);
   static Collection_CollectionItem? _defaultInstance;
 
   /// Required. The NLU key that matches the entry key name in the associated
@@ -61,7 +72,10 @@ class Collection_CollectionItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) { $_setString(0, v); }
+  set key($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,27 +106,39 @@ class Collection extends $pb.GeneratedMessage {
     return $result;
   }
   Collection._() : super();
-  factory Collection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Collection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Collection.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Collection.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Collection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Collection',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..pc<Collection_CollectionItem>(3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: Collection_CollectionItem.create)
-    ..e<$309.Image_ImageFill>(4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $309.Image_ImageFill.UNSPECIFIED, valueOf: $309.Image_ImageFill.valueOf, enumValues: $309.Image_ImageFill.values)
-    ..hasRequiredFields = false
-  ;
+    ..pc<Collection_CollectionItem>(
+        3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
+        subBuilder: Collection_CollectionItem.create)
+    ..e<$309.Image_ImageFill>(
+        4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE,
+        defaultOrMaker: $309.Image_ImageFill.UNSPECIFIED,
+        valueOf: $309.Image_ImageFill.valueOf,
+        enumValues: $309.Image_ImageFill.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Collection clone() => Collection()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Collection copyWith(void Function(Collection) updates) => super.copyWith((message) => updates(message as Collection)) as Collection;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Collection copyWith(void Function(Collection) updates) =>
+      super.copyWith((message) => updates(message as Collection)) as Collection;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -121,14 +147,18 @@ class Collection extends $pb.GeneratedMessage {
   Collection createEmptyInstance() => create();
   static $pb.PbList<Collection> createRepeated() => $pb.PbList<Collection>();
   @$core.pragma('dart2js:noInline')
-  static Collection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Collection>(create);
+  static Collection getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Collection>(create);
   static Collection? _defaultInstance;
 
   /// Title of the collection. Optional.
   @$pb.TagNumber(1)
   $core.String get title => $_getSZ(0);
   @$pb.TagNumber(1)
-  set title($core.String v) { $_setString(0, v); }
+  set title($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
@@ -138,7 +168,10 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subtitle => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subtitle($core.String v) { $_setString(1, v); }
+  set subtitle($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubtitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -152,13 +185,16 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $309.Image_ImageFill get imageFill => $_getN(3);
   @$pb.TagNumber(4)
-  set imageFill($309.Image_ImageFill v) { setField(4, v); }
+  set imageFill($309.Image_ImageFill v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasImageFill() => $_has(3);
   @$pb.TagNumber(4)
   void clearImageFill() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

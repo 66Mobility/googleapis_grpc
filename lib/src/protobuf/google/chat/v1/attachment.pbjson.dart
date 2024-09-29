@@ -20,11 +20,43 @@ const Attachment$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'content_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'contentName'},
     {'1': 'content_type', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'contentType'},
-    {'1': 'attachment_data_ref', '3': 4, '4': 1, '5': 11, '6': '.google.chat.v1.AttachmentDataRef', '9': 0, '10': 'attachmentDataRef'},
-    {'1': 'drive_data_ref', '3': 7, '4': 1, '5': 11, '6': '.google.chat.v1.DriveDataRef', '8': {}, '9': 0, '10': 'driveDataRef'},
-    {'1': 'thumbnail_uri', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'thumbnailUri'},
+    {
+      '1': 'attachment_data_ref',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.AttachmentDataRef',
+      '9': 0,
+      '10': 'attachmentDataRef'
+    },
+    {
+      '1': 'drive_data_ref',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.DriveDataRef',
+      '8': {},
+      '9': 0,
+      '10': 'driveDataRef'
+    },
+    {
+      '1': 'thumbnail_uri',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'thumbnailUri'
+    },
     {'1': 'download_uri', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'downloadUri'},
-    {'1': 'source', '3': 9, '4': 1, '5': 14, '6': '.google.chat.v1.Attachment.Source', '8': {}, '10': 'source'},
+    {
+      '1': 'source',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.Attachment.Source',
+      '8': {},
+      '10': 'source'
+    },
   ],
   '4': [Attachment_Source$json],
   '7': {},
@@ -74,7 +106,13 @@ const AttachmentDataRef$json = {
   '1': 'AttachmentDataRef',
   '2': [
     {'1': 'resource_name', '3': 1, '4': 1, '5': 9, '10': 'resourceName'},
-    {'1': 'attachment_upload_token', '3': 2, '4': 1, '5': 9, '10': 'attachmentUploadToken'},
+    {
+      '1': 'attachment_upload_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'attachmentUploadToken'
+    },
   ],
 };
 
@@ -116,7 +154,14 @@ final $typed_data.Uint8List uploadAttachmentRequestDescriptor = $convert.base64D
 const UploadAttachmentResponse$json = {
   '1': 'UploadAttachmentResponse',
   '2': [
-    {'1': 'attachment_data_ref', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.AttachmentDataRef', '10': 'attachmentDataRef'},
+    {
+      '1': 'attachment_data_ref',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.AttachmentDataRef',
+      '10': 'attachmentDataRef'
+    },
   ],
 };
 
@@ -124,4 +169,3 @@ const UploadAttachmentResponse$json = {
 final $typed_data.Uint8List uploadAttachmentResponseDescriptor = $convert.base64Decode(
     'ChhVcGxvYWRBdHRhY2htZW50UmVzcG9uc2USUQoTYXR0YWNobWVudF9kYXRhX3JlZhgBIAEoCz'
     'IhLmdvb2dsZS5jaGF0LnYxLkF0dGFjaG1lbnREYXRhUmVmUhFhdHRhY2htZW50RGF0YVJlZg==');
-

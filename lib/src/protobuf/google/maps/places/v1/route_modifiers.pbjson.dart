@@ -18,8 +18,22 @@ const RouteModifiers$json = {
   '1': 'RouteModifiers',
   '2': [
     {'1': 'avoid_tolls', '3': 1, '4': 1, '5': 8, '8': {}, '10': 'avoidTolls'},
-    {'1': 'avoid_highways', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'avoidHighways'},
-    {'1': 'avoid_ferries', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'avoidFerries'},
+    {
+      '1': 'avoid_highways',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'avoidHighways'
+    },
+    {
+      '1': 'avoid_ferries',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'avoidFerries'
+    },
     {'1': 'avoid_indoor', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'avoidIndoor'},
   ],
 };
@@ -30,4 +44,3 @@ final $typed_data.Uint8List routeModifiersDescriptor = $convert.base64Decode(
     'oKDmF2b2lkX2hpZ2h3YXlzGAIgASgIQgPgQQFSDWF2b2lkSGlnaHdheXMSKAoNYXZvaWRfZmVy'
     'cmllcxgDIAEoCEID4EEBUgxhdm9pZEZlcnJpZXMSJgoMYXZvaWRfaW5kb29yGAQgASgIQgPgQQ'
     'FSC2F2b2lkSW5kb29y');
-

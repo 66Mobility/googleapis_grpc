@@ -39,42 +39,62 @@ class FuelOptions_FuelPrice extends $pb.GeneratedMessage {
     return $result;
   }
   FuelOptions_FuelPrice._() : super();
-  factory FuelOptions_FuelPrice.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FuelOptions_FuelPrice.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FuelOptions_FuelPrice.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FuelOptions_FuelPrice.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FuelOptions.FuelPrice', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..e<FuelOptions_FuelPrice_FuelType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: FuelOptions_FuelPrice_FuelType.FUEL_TYPE_UNSPECIFIED, valueOf: FuelOptions_FuelPrice_FuelType.valueOf, enumValues: FuelOptions_FuelPrice_FuelType.values)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'price', subBuilder: $465.Money.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FuelOptions.FuelPrice',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..e<FuelOptions_FuelPrice_FuelType>(
+        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: FuelOptions_FuelPrice_FuelType.FUEL_TYPE_UNSPECIFIED,
+        valueOf: FuelOptions_FuelPrice_FuelType.valueOf,
+        enumValues: FuelOptions_FuelPrice_FuelType.values)
+    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'price',
+        subBuilder: $465.Money.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  FuelOptions_FuelPrice clone() => FuelOptions_FuelPrice()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FuelOptions_FuelPrice copyWith(void Function(FuelOptions_FuelPrice) updates) => super.copyWith((message) => updates(message as FuelOptions_FuelPrice)) as FuelOptions_FuelPrice;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FuelOptions_FuelPrice clone() =>
+      FuelOptions_FuelPrice()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FuelOptions_FuelPrice copyWith(
+          void Function(FuelOptions_FuelPrice) updates) =>
+      super.copyWith((message) => updates(message as FuelOptions_FuelPrice))
+          as FuelOptions_FuelPrice;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FuelOptions_FuelPrice create() => FuelOptions_FuelPrice._();
   FuelOptions_FuelPrice createEmptyInstance() => create();
-  static $pb.PbList<FuelOptions_FuelPrice> createRepeated() => $pb.PbList<FuelOptions_FuelPrice>();
+  static $pb.PbList<FuelOptions_FuelPrice> createRepeated() =>
+      $pb.PbList<FuelOptions_FuelPrice>();
   @$core.pragma('dart2js:noInline')
-  static FuelOptions_FuelPrice getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FuelOptions_FuelPrice>(create);
+  static FuelOptions_FuelPrice getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FuelOptions_FuelPrice>(create);
   static FuelOptions_FuelPrice? _defaultInstance;
 
   /// The type of fuel.
   @$pb.TagNumber(1)
   FuelOptions_FuelPrice_FuelType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(FuelOptions_FuelPrice_FuelType v) { setField(1, v); }
+  set type(FuelOptions_FuelPrice_FuelType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -84,7 +104,10 @@ class FuelOptions_FuelPrice extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $465.Money get price => $_getN(1);
   @$pb.TagNumber(2)
-  set price($465.Money v) { setField(2, v); }
+  set price($465.Money v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrice() => $_has(1);
   @$pb.TagNumber(2)
@@ -96,7 +119,10 @@ class FuelOptions_FuelPrice extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($302.Timestamp v) { setField(3, v); }
+  set updateTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -118,24 +144,33 @@ class FuelOptions extends $pb.GeneratedMessage {
     return $result;
   }
   FuelOptions._() : super();
-  factory FuelOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FuelOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FuelOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FuelOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FuelOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<FuelOptions_FuelPrice>(1, _omitFieldNames ? '' : 'fuelPrices', $pb.PbFieldType.PM, subBuilder: FuelOptions_FuelPrice.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FuelOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..pc<FuelOptions_FuelPrice>(
+        1, _omitFieldNames ? '' : 'fuelPrices', $pb.PbFieldType.PM,
+        subBuilder: FuelOptions_FuelPrice.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FuelOptions clone() => FuelOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FuelOptions copyWith(void Function(FuelOptions) updates) => super.copyWith((message) => updates(message as FuelOptions)) as FuelOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FuelOptions copyWith(void Function(FuelOptions) updates) =>
+      super.copyWith((message) => updates(message as FuelOptions))
+          as FuelOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -144,7 +179,8 @@ class FuelOptions extends $pb.GeneratedMessage {
   FuelOptions createEmptyInstance() => create();
   static $pb.PbList<FuelOptions> createRepeated() => $pb.PbList<FuelOptions>();
   @$core.pragma('dart2js:noInline')
-  static FuelOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FuelOptions>(create);
+  static FuelOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FuelOptions>(create);
   static FuelOptions? _defaultInstance;
 
   /// The last known fuel price for each type of fuel this station has. There is
@@ -153,6 +189,6 @@ class FuelOptions extends $pb.GeneratedMessage {
   $core.List<FuelOptions_FuelPrice> get fuelPrices => $_getList(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

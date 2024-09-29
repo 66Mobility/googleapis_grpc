@@ -19,8 +19,23 @@ const Device$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'type', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'type'},
-    {'1': 'traits', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '8': {}, '10': 'traits'},
-    {'1': 'parent_relations', '3': 5, '4': 3, '5': 11, '6': '.google.home.enterprise.sdm.v1.ParentRelation', '10': 'parentRelations'},
+    {
+      '1': 'traits',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '8': {},
+      '10': 'traits'
+    },
+    {
+      '1': 'parent_relations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.home.enterprise.sdm.v1.ParentRelation',
+      '10': 'parentRelations'
+    },
   ],
   '7': {},
 };
@@ -47,4 +62,3 @@ const ParentRelation$json = {
 final $typed_data.Uint8List parentRelationDescriptor = $convert.base64Decode(
     'Cg5QYXJlbnRSZWxhdGlvbhIbCgZwYXJlbnQYASABKAlCA+BBA1IGcGFyZW50EiYKDGRpc3BsYX'
     'lfbmFtZRgCIAEoCUID4EEDUgtkaXNwbGF5TmFtZQ==');
-

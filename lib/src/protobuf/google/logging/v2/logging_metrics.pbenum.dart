@@ -15,19 +15,21 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Logging API version.
 class LogMetric_ApiVersion extends $pb.ProtobufEnum {
-  static const LogMetric_ApiVersion V2 = LogMetric_ApiVersion._(0, _omitEnumNames ? '' : 'V2');
-  static const LogMetric_ApiVersion V1 = LogMetric_ApiVersion._(1, _omitEnumNames ? '' : 'V1');
+  static const LogMetric_ApiVersion V2 =
+      LogMetric_ApiVersion._(0, _omitEnumNames ? '' : 'V2');
+  static const LogMetric_ApiVersion V1 =
+      LogMetric_ApiVersion._(1, _omitEnumNames ? '' : 'V1');
 
-  static const $core.List<LogMetric_ApiVersion> values = <LogMetric_ApiVersion> [
+  static const $core.List<LogMetric_ApiVersion> values = <LogMetric_ApiVersion>[
     V2,
     V1,
   ];
 
-  static final $core.Map<$core.int, LogMetric_ApiVersion> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, LogMetric_ApiVersion> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static LogMetric_ApiVersion? valueOf($core.int value) => _byValue[value];
 
   const LogMetric_ApiVersion._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

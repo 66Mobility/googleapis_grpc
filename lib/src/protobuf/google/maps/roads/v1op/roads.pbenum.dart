@@ -15,23 +15,27 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// An enum representing the mode of travel used for snapping.
 class TravelMode extends $pb.ProtobufEnum {
-  static const TravelMode TRAVEL_MODE_UNSPECIFIED = TravelMode._(0, _omitEnumNames ? '' : 'TRAVEL_MODE_UNSPECIFIED');
-  static const TravelMode DRIVING = TravelMode._(1, _omitEnumNames ? '' : 'DRIVING');
-  static const TravelMode CYCLING = TravelMode._(2, _omitEnumNames ? '' : 'CYCLING');
-  static const TravelMode WALKING = TravelMode._(3, _omitEnumNames ? '' : 'WALKING');
+  static const TravelMode TRAVEL_MODE_UNSPECIFIED =
+      TravelMode._(0, _omitEnumNames ? '' : 'TRAVEL_MODE_UNSPECIFIED');
+  static const TravelMode DRIVING =
+      TravelMode._(1, _omitEnumNames ? '' : 'DRIVING');
+  static const TravelMode CYCLING =
+      TravelMode._(2, _omitEnumNames ? '' : 'CYCLING');
+  static const TravelMode WALKING =
+      TravelMode._(3, _omitEnumNames ? '' : 'WALKING');
 
-  static const $core.List<TravelMode> values = <TravelMode> [
+  static const $core.List<TravelMode> values = <TravelMode>[
     TRAVEL_MODE_UNSPECIFIED,
     DRIVING,
     CYCLING,
     WALKING,
   ];
 
-  static final $core.Map<$core.int, TravelMode> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, TravelMode> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static TravelMode? valueOf($core.int value) => _byValue[value];
 
   const TravelMode._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

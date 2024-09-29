@@ -15,23 +15,34 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The different possible values for confirmation levels.
 class AddressComponent_ConfirmationLevel extends $pb.ProtobufEnum {
-  static const AddressComponent_ConfirmationLevel CONFIRMATION_LEVEL_UNSPECIFIED = AddressComponent_ConfirmationLevel._(0, _omitEnumNames ? '' : 'CONFIRMATION_LEVEL_UNSPECIFIED');
-  static const AddressComponent_ConfirmationLevel CONFIRMED = AddressComponent_ConfirmationLevel._(1, _omitEnumNames ? '' : 'CONFIRMED');
-  static const AddressComponent_ConfirmationLevel UNCONFIRMED_BUT_PLAUSIBLE = AddressComponent_ConfirmationLevel._(2, _omitEnumNames ? '' : 'UNCONFIRMED_BUT_PLAUSIBLE');
-  static const AddressComponent_ConfirmationLevel UNCONFIRMED_AND_SUSPICIOUS = AddressComponent_ConfirmationLevel._(3, _omitEnumNames ? '' : 'UNCONFIRMED_AND_SUSPICIOUS');
+  static const AddressComponent_ConfirmationLevel
+      CONFIRMATION_LEVEL_UNSPECIFIED = AddressComponent_ConfirmationLevel._(
+          0, _omitEnumNames ? '' : 'CONFIRMATION_LEVEL_UNSPECIFIED');
+  static const AddressComponent_ConfirmationLevel CONFIRMED =
+      AddressComponent_ConfirmationLevel._(
+          1, _omitEnumNames ? '' : 'CONFIRMED');
+  static const AddressComponent_ConfirmationLevel UNCONFIRMED_BUT_PLAUSIBLE =
+      AddressComponent_ConfirmationLevel._(
+          2, _omitEnumNames ? '' : 'UNCONFIRMED_BUT_PLAUSIBLE');
+  static const AddressComponent_ConfirmationLevel UNCONFIRMED_AND_SUSPICIOUS =
+      AddressComponent_ConfirmationLevel._(
+          3, _omitEnumNames ? '' : 'UNCONFIRMED_AND_SUSPICIOUS');
 
-  static const $core.List<AddressComponent_ConfirmationLevel> values = <AddressComponent_ConfirmationLevel> [
+  static const $core.List<AddressComponent_ConfirmationLevel> values =
+      <AddressComponent_ConfirmationLevel>[
     CONFIRMATION_LEVEL_UNSPECIFIED,
     CONFIRMED,
     UNCONFIRMED_BUT_PLAUSIBLE,
     UNCONFIRMED_AND_SUSPICIOUS,
   ];
 
-  static final $core.Map<$core.int, AddressComponent_ConfirmationLevel> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static AddressComponent_ConfirmationLevel? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, AddressComponent_ConfirmationLevel>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static AddressComponent_ConfirmationLevel? valueOf($core.int value) =>
+      _byValue[value];
 
-  const AddressComponent_ConfirmationLevel._($core.int v, $core.String n) : super(v, n);
+  const AddressComponent_ConfirmationLevel._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

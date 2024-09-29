@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AggregationResult$json = {
   '1': 'AggregationResult',
   '2': [
-    {'1': 'aggregate_properties', '3': 2, '4': 3, '5': 11, '6': '.google.datastore.v1.AggregationResult.AggregatePropertiesEntry', '10': 'aggregateProperties'},
+    {
+      '1': 'aggregate_properties',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationResult.AggregatePropertiesEntry',
+      '10': 'aggregateProperties'
+    },
   ],
   '3': [AggregationResult_AggregatePropertiesEntry$json],
 };
@@ -27,7 +34,14 @@ const AggregationResult_AggregatePropertiesEntry$json = {
   '1': 'AggregatePropertiesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.datastore.v1.Value', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -44,9 +58,30 @@ final $typed_data.Uint8List aggregationResultDescriptor = $convert.base64Decode(
 const AggregationResultBatch$json = {
   '1': 'AggregationResultBatch',
   '2': [
-    {'1': 'aggregation_results', '3': 1, '4': 3, '5': 11, '6': '.google.datastore.v1.AggregationResult', '10': 'aggregationResults'},
-    {'1': 'more_results', '3': 2, '4': 1, '5': 14, '6': '.google.datastore.v1.QueryResultBatch.MoreResultsType', '10': 'moreResults'},
-    {'1': 'read_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'readTime'},
+    {
+      '1': 'aggregation_results',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.AggregationResult',
+      '10': 'aggregationResults'
+    },
+    {
+      '1': 'more_results',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.QueryResultBatch.MoreResultsType',
+      '10': 'moreResults'
+    },
+    {
+      '1': 'read_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'readTime'
+    },
   ],
 };
 
@@ -57,4 +92,3 @@ final $typed_data.Uint8List aggregationResultBatchDescriptor = $convert.base64De
     'dHMSWAoMbW9yZV9yZXN1bHRzGAIgASgOMjUuZ29vZ2xlLmRhdGFzdG9yZS52MS5RdWVyeVJlc3'
     'VsdEJhdGNoLk1vcmVSZXN1bHRzVHlwZVILbW9yZVJlc3VsdHMSNwoJcmVhZF90aW1lGAMgASgL'
     'MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIIcmVhZFRpbWU=');
-

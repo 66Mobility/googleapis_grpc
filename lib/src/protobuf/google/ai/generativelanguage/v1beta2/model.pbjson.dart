@@ -18,14 +18,41 @@ const Model$json = {
   '1': 'Model',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'base_model_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'baseModelId'},
+    {
+      '1': 'base_model_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'baseModelId'
+    },
     {'1': 'version', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'version'},
     {'1': 'display_name', '3': 4, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'input_token_limit', '3': 6, '4': 1, '5': 5, '10': 'inputTokenLimit'},
-    {'1': 'output_token_limit', '3': 7, '4': 1, '5': 5, '10': 'outputTokenLimit'},
-    {'1': 'supported_generation_methods', '3': 8, '4': 3, '5': 9, '10': 'supportedGenerationMethods'},
-    {'1': 'temperature', '3': 9, '4': 1, '5': 2, '9': 0, '10': 'temperature', '17': true},
+    {
+      '1': 'output_token_limit',
+      '3': 7,
+      '4': 1,
+      '5': 5,
+      '10': 'outputTokenLimit'
+    },
+    {
+      '1': 'supported_generation_methods',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '10': 'supportedGenerationMethods'
+    },
+    {
+      '1': 'temperature',
+      '3': 9,
+      '4': 1,
+      '5': 2,
+      '9': 0,
+      '10': 'temperature',
+      '17': true
+    },
     {'1': 'top_p', '3': 10, '4': 1, '5': 2, '9': 1, '10': 'topP', '17': true},
     {'1': 'top_k', '3': 11, '4': 1, '5': 5, '9': 2, '10': 'topK', '17': true},
   ],
@@ -49,4 +76,3 @@ final $typed_data.Uint8List modelDescriptor = $convert.base64Decode(
     '9wUIgBARIYCgV0b3BfaxgLIAEoBUgCUgR0b3BLiAEBOjzqQTkKJ2dlbmVyYXRpdmVsYW5ndWFn'
     'ZS5nb29nbGVhcGlzLmNvbS9Nb2RlbBIObW9kZWxzL3ttb2RlbH1CDgoMX3RlbXBlcmF0dXJlQg'
     'gKBl90b3BfcEIICgZfdG9wX2s=');
-

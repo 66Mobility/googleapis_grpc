@@ -60,34 +60,45 @@ class DateTimeRange extends $pb.GeneratedMessage {
     return $result;
   }
   DateTimeRange._() : super();
-  factory DateTimeRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DateTimeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DateTimeRange.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DateTimeRange.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateTimeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.type'), createEmptyInstance: create)
-    ..aOM<$328.DateTime>(1, _omitFieldNames ? '' : 'start', subBuilder: $328.DateTime.create)
-    ..aOM<$328.DateTime>(2, _omitFieldNames ? '' : 'end', subBuilder: $328.DateTime.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DateTimeRange',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.type'),
+      createEmptyInstance: create)
+    ..aOM<$328.DateTime>(1, _omitFieldNames ? '' : 'start',
+        subBuilder: $328.DateTime.create)
+    ..aOM<$328.DateTime>(2, _omitFieldNames ? '' : 'end',
+        subBuilder: $328.DateTime.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DateTimeRange clone() => DateTimeRange()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DateTimeRange copyWith(void Function(DateTimeRange) updates) => super.copyWith((message) => updates(message as DateTimeRange)) as DateTimeRange;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DateTimeRange copyWith(void Function(DateTimeRange) updates) =>
+      super.copyWith((message) => updates(message as DateTimeRange))
+          as DateTimeRange;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DateTimeRange create() => DateTimeRange._();
   DateTimeRange createEmptyInstance() => create();
-  static $pb.PbList<DateTimeRange> createRepeated() => $pb.PbList<DateTimeRange>();
+  static $pb.PbList<DateTimeRange> createRepeated() =>
+      $pb.PbList<DateTimeRange>();
   @$core.pragma('dart2js:noInline')
-  static DateTimeRange getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DateTimeRange>(create);
+  static DateTimeRange getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DateTimeRange>(create);
   static DateTimeRange? _defaultInstance;
 
   /// DateTime at which the date range begins. If unset, the range has no
@@ -95,7 +106,10 @@ class DateTimeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $328.DateTime get start => $_getN(0);
   @$pb.TagNumber(1)
-  set start($328.DateTime v) { setField(1, v); }
+  set start($328.DateTime v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
@@ -108,7 +122,10 @@ class DateTimeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $328.DateTime get end => $_getN(1);
   @$pb.TagNumber(2)
-  set end($328.DateTime v) { setField(2, v); }
+  set end($328.DateTime v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
@@ -117,6 +134,6 @@ class DateTimeRange extends $pb.GeneratedMessage {
   $328.DateTime ensureEnd() => $_ensure(1);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

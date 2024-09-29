@@ -18,12 +18,51 @@ const Message$json = {
   '1': 'Message',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'sender', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.User', '8': {}, '10': 'sender'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'last_update_time', '3': 23, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'lastUpdateTime'},
-    {'1': 'delete_time', '3': 26, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'deleteTime'},
+    {
+      '1': 'sender',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.User',
+      '8': {},
+      '10': 'sender'
+    },
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'last_update_time',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'lastUpdateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'deleteTime'
+    },
     {'1': 'text', '3': 4, '4': 1, '5': 9, '10': 'text'},
-    {'1': 'formatted_text', '3': 43, '4': 1, '5': 9, '8': {}, '10': 'formattedText'},
+    {
+      '1': 'formatted_text',
+      '3': 43,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'formattedText'
+    },
     {
       '1': 'cards',
       '3': 5,
@@ -33,24 +72,151 @@ const Message$json = {
       '8': {'3': true},
       '10': 'cards',
     },
-    {'1': 'cards_v2', '3': 22, '4': 3, '5': 11, '6': '.google.chat.v1.CardWithId', '10': 'cardsV2'},
-    {'1': 'annotations', '3': 10, '4': 3, '5': 11, '6': '.google.chat.v1.Annotation', '8': {}, '10': 'annotations'},
-    {'1': 'thread', '3': 11, '4': 1, '5': 11, '6': '.google.chat.v1.Thread', '10': 'thread'},
-    {'1': 'space', '3': 12, '4': 1, '5': 11, '6': '.google.chat.v1.Space', '10': 'space'},
+    {
+      '1': 'cards_v2',
+      '3': 22,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.CardWithId',
+      '10': 'cardsV2'
+    },
+    {
+      '1': 'annotations',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Annotation',
+      '8': {},
+      '10': 'annotations'
+    },
+    {
+      '1': 'thread',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Thread',
+      '10': 'thread'
+    },
+    {
+      '1': 'space',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space',
+      '10': 'space'
+    },
     {'1': 'fallback_text', '3': 13, '4': 1, '5': 9, '10': 'fallbackText'},
-    {'1': 'action_response', '3': 14, '4': 1, '5': 11, '6': '.google.chat.v1.ActionResponse', '8': {}, '10': 'actionResponse'},
-    {'1': 'argument_text', '3': 15, '4': 1, '5': 9, '8': {}, '10': 'argumentText'},
-    {'1': 'slash_command', '3': 17, '4': 1, '5': 11, '6': '.google.chat.v1.SlashCommand', '8': {}, '10': 'slashCommand'},
-    {'1': 'attachment', '3': 18, '4': 3, '5': 11, '6': '.google.chat.v1.Attachment', '10': 'attachment'},
-    {'1': 'matched_url', '3': 20, '4': 1, '5': 11, '6': '.google.chat.v1.MatchedUrl', '8': {}, '10': 'matchedUrl'},
-    {'1': 'thread_reply', '3': 25, '4': 1, '5': 8, '8': {}, '10': 'threadReply'},
-    {'1': 'client_assigned_message_id', '3': 32, '4': 1, '5': 9, '10': 'clientAssignedMessageId'},
-    {'1': 'emoji_reaction_summaries', '3': 33, '4': 3, '5': 11, '6': '.google.chat.v1.EmojiReactionSummary', '8': {}, '10': 'emojiReactionSummaries'},
-    {'1': 'private_message_viewer', '3': 36, '4': 1, '5': 11, '6': '.google.chat.v1.User', '8': {}, '10': 'privateMessageViewer'},
-    {'1': 'deletion_metadata', '3': 38, '4': 1, '5': 11, '6': '.google.chat.v1.DeletionMetadata', '8': {}, '10': 'deletionMetadata'},
-    {'1': 'quoted_message_metadata', '3': 39, '4': 1, '5': 11, '6': '.google.chat.v1.QuotedMessageMetadata', '8': {}, '10': 'quotedMessageMetadata'},
-    {'1': 'attached_gifs', '3': 42, '4': 3, '5': 11, '6': '.google.chat.v1.AttachedGif', '8': {}, '10': 'attachedGifs'},
-    {'1': 'accessory_widgets', '3': 44, '4': 3, '5': 11, '6': '.google.chat.v1.AccessoryWidget', '10': 'accessoryWidgets'},
+    {
+      '1': 'action_response',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ActionResponse',
+      '8': {},
+      '10': 'actionResponse'
+    },
+    {
+      '1': 'argument_text',
+      '3': 15,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'argumentText'
+    },
+    {
+      '1': 'slash_command',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.SlashCommand',
+      '8': {},
+      '10': 'slashCommand'
+    },
+    {
+      '1': 'attachment',
+      '3': 18,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Attachment',
+      '10': 'attachment'
+    },
+    {
+      '1': 'matched_url',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.MatchedUrl',
+      '8': {},
+      '10': 'matchedUrl'
+    },
+    {
+      '1': 'thread_reply',
+      '3': 25,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'threadReply'
+    },
+    {
+      '1': 'client_assigned_message_id',
+      '3': 32,
+      '4': 1,
+      '5': 9,
+      '10': 'clientAssignedMessageId'
+    },
+    {
+      '1': 'emoji_reaction_summaries',
+      '3': 33,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.EmojiReactionSummary',
+      '8': {},
+      '10': 'emojiReactionSummaries'
+    },
+    {
+      '1': 'private_message_viewer',
+      '3': 36,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.User',
+      '8': {},
+      '10': 'privateMessageViewer'
+    },
+    {
+      '1': 'deletion_metadata',
+      '3': 38,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.DeletionMetadata',
+      '8': {},
+      '10': 'deletionMetadata'
+    },
+    {
+      '1': 'quoted_message_metadata',
+      '3': 39,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.QuotedMessageMetadata',
+      '8': {},
+      '10': 'quotedMessageMetadata'
+    },
+    {
+      '1': 'attached_gifs',
+      '3': 42,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.AttachedGif',
+      '8': {},
+      '10': 'attachedGifs'
+    },
+    {
+      '1': 'accessory_widgets',
+      '3': 44,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.AccessoryWidget',
+      '10': 'accessoryWidgets'
+    },
   ],
   '7': {},
 };
@@ -98,15 +264,23 @@ const AttachedGif$json = {
 };
 
 /// Descriptor for `AttachedGif`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List attachedGifDescriptor = $convert.base64Decode(
-    'CgtBdHRhY2hlZEdpZhIVCgN1cmkYASABKAlCA+BBA1IDdXJp');
+final $typed_data.Uint8List attachedGifDescriptor =
+    $convert.base64Decode('CgtBdHRhY2hlZEdpZhIVCgN1cmkYASABKAlCA+BBA1IDdXJp');
 
 @$core.Deprecated('Use quotedMessageMetadataDescriptor instead')
 const QuotedMessageMetadata$json = {
   '1': 'QuotedMessageMetadata',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'last_update_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'lastUpdateTime'},
+    {
+      '1': 'last_update_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'lastUpdateTime'
+    },
   ],
   '7': {},
 };
@@ -140,10 +314,34 @@ final $typed_data.Uint8List threadDescriptor = $convert.base64Decode(
 const ActionResponse$json = {
   '1': 'ActionResponse',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.chat.v1.ActionResponse.ResponseType', '8': {}, '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.ActionResponse.ResponseType',
+      '8': {},
+      '10': 'type'
+    },
     {'1': 'url', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'url'},
-    {'1': 'dialog_action', '3': 3, '4': 1, '5': 11, '6': '.google.chat.v1.DialogAction', '8': {}, '10': 'dialogAction'},
-    {'1': 'updated_widget', '3': 4, '4': 1, '5': 11, '6': '.google.chat.v1.ActionResponse.UpdatedWidget', '8': {}, '10': 'updatedWidget'},
+    {
+      '1': 'dialog_action',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.DialogAction',
+      '8': {},
+      '10': 'dialogAction'
+    },
+    {
+      '1': 'updated_widget',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ActionResponse.UpdatedWidget',
+      '8': {},
+      '10': 'updatedWidget'
+    },
   ],
   '3': [ActionResponse_SelectionItems$json, ActionResponse_UpdatedWidget$json],
   '4': [ActionResponse_ResponseType$json],
@@ -153,7 +351,14 @@ const ActionResponse$json = {
 const ActionResponse_SelectionItems$json = {
   '1': 'SelectionItems',
   '2': [
-    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.apps.card.v1.SelectionInput.SelectionItem', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.card.v1.SelectionInput.SelectionItem',
+      '10': 'items'
+    },
   ],
 };
 
@@ -161,7 +366,15 @@ const ActionResponse_SelectionItems$json = {
 const ActionResponse_UpdatedWidget$json = {
   '1': 'UpdatedWidget',
   '2': [
-    {'1': 'suggestions', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.ActionResponse.SelectionItems', '9': 0, '10': 'suggestions'},
+    {
+      '1': 'suggestions',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ActionResponse.SelectionItems',
+      '9': 0,
+      '10': 'suggestions'
+    },
     {'1': 'widget', '3': 2, '4': 1, '5': 9, '10': 'widget'},
   ],
   '8': [
@@ -202,7 +415,15 @@ final $typed_data.Uint8List actionResponseDescriptor = $convert.base64Decode(
 const AccessoryWidget$json = {
   '1': 'AccessoryWidget',
   '2': [
-    {'1': 'button_list', '3': 1, '4': 1, '5': 11, '6': '.google.apps.card.v1.ButtonList', '9': 0, '10': 'buttonList'},
+    {
+      '1': 'button_list',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.ButtonList',
+      '9': 0,
+      '10': 'buttonList'
+    },
   ],
   '8': [
     {'1': 'action'},
@@ -245,9 +466,31 @@ final $typed_data.Uint8List deleteMessageRequestDescriptor = $convert.base64Deco
 const UpdateMessageRequest$json = {
   '1': 'UpdateMessageRequest',
   '2': [
-    {'1': 'message', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Message', '8': {}, '10': 'message'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
-    {'1': 'allow_missing', '3': 4, '4': 1, '5': 8, '8': {}, '10': 'allowMissing'},
+    {
+      '1': 'message',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Message',
+      '8': {},
+      '10': 'message'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+    {
+      '1': 'allow_missing',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'allowMissing'
+    },
   ],
 };
 
@@ -263,7 +506,15 @@ const CreateMessageRequest$json = {
   '1': 'CreateMessageRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'message', '3': 4, '4': 1, '5': 11, '6': '.google.chat.v1.Message', '8': {}, '10': 'message'},
+    {
+      '1': 'message',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Message',
+      '8': {},
+      '10': 'message'
+    },
     {
       '1': 'thread_key',
       '3': 6,
@@ -273,7 +524,15 @@ const CreateMessageRequest$json = {
       '10': 'threadKey',
     },
     {'1': 'request_id', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
-    {'1': 'message_reply_option', '3': 8, '4': 1, '5': 14, '6': '.google.chat.v1.CreateMessageRequest.MessageReplyOption', '8': {}, '10': 'messageReplyOption'},
+    {
+      '1': 'message_reply_option',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.CreateMessageRequest.MessageReplyOption',
+      '8': {},
+      '10': 'messageReplyOption'
+    },
     {'1': 'message_id', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'messageId'},
   ],
   '4': [CreateMessageRequest_MessageReplyOption$json],
@@ -326,7 +585,14 @@ final $typed_data.Uint8List listMessagesRequestDescriptor = $convert.base64Decod
 const ListMessagesResponse$json = {
   '1': 'ListMessagesResponse',
   '2': [
-    {'1': 'messages', '3': 1, '4': 3, '5': 11, '6': '.google.chat.v1.Message', '10': 'messages'},
+    {
+      '1': 'messages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.chat.v1.Message',
+      '10': 'messages'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -341,8 +607,25 @@ final $typed_data.Uint8List listMessagesResponseDescriptor = $convert.base64Deco
 const DialogAction$json = {
   '1': 'DialogAction',
   '2': [
-    {'1': 'dialog', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Dialog', '8': {}, '9': 0, '10': 'dialog'},
-    {'1': 'action_status', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.ActionStatus', '8': {}, '10': 'actionStatus'},
+    {
+      '1': 'dialog',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Dialog',
+      '8': {},
+      '9': 0,
+      '10': 'dialog'
+    },
+    {
+      '1': 'action_status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.ActionStatus',
+      '8': {},
+      '10': 'actionStatus'
+    },
   ],
   '8': [
     {'1': 'action'},
@@ -359,7 +642,15 @@ final $typed_data.Uint8List dialogActionDescriptor = $convert.base64Decode(
 const Dialog$json = {
   '1': 'Dialog',
   '2': [
-    {'1': 'body', '3': 1, '4': 1, '5': 11, '6': '.google.apps.card.v1.Card', '8': {}, '10': 'body'},
+    {
+      '1': 'body',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card',
+      '8': {},
+      '10': 'body'
+    },
   ],
 };
 
@@ -373,7 +664,14 @@ const CardWithId$json = {
   '1': 'CardWithId',
   '2': [
     {'1': 'card_id', '3': 1, '4': 1, '5': 9, '10': 'cardId'},
-    {'1': 'card', '3': 2, '4': 1, '5': 11, '6': '.google.apps.card.v1.Card', '10': 'card'},
+    {
+      '1': 'card',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.card.v1.Card',
+      '10': 'card'
+    },
   ],
 };
 
@@ -381,4 +679,3 @@ const CardWithId$json = {
 final $typed_data.Uint8List cardWithIdDescriptor = $convert.base64Decode(
     'CgpDYXJkV2l0aElkEhcKB2NhcmRfaWQYASABKAlSBmNhcmRJZBItCgRjYXJkGAIgASgLMhkuZ2'
     '9vZ2xlLmFwcHMuY2FyZC52MS5DYXJkUgRjYXJk');
-

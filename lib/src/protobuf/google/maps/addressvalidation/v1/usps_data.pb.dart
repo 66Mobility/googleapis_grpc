@@ -57,10 +57,18 @@ class UspsAddress extends $pb.GeneratedMessage {
     return $result;
   }
   UspsAddress._() : super();
-  factory UspsAddress.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UspsAddress.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UspsAddress.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UspsAddress.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UspsAddress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UspsAddress',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'firstAddressLine')
     ..aOS(2, _omitFieldNames ? '' : 'firm')
     ..aOS(3, _omitFieldNames ? '' : 'secondAddressLine')
@@ -70,19 +78,18 @@ class UspsAddress extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'state')
     ..aOS(8, _omitFieldNames ? '' : 'zipCode')
     ..aOS(9, _omitFieldNames ? '' : 'zipCodeExtension')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UspsAddress clone() => UspsAddress()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UspsAddress copyWith(void Function(UspsAddress) updates) => super.copyWith((message) => updates(message as UspsAddress)) as UspsAddress;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UspsAddress copyWith(void Function(UspsAddress) updates) =>
+      super.copyWith((message) => updates(message as UspsAddress))
+          as UspsAddress;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -91,14 +98,18 @@ class UspsAddress extends $pb.GeneratedMessage {
   UspsAddress createEmptyInstance() => create();
   static $pb.PbList<UspsAddress> createRepeated() => $pb.PbList<UspsAddress>();
   @$core.pragma('dart2js:noInline')
-  static UspsAddress getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UspsAddress>(create);
+  static UspsAddress getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UspsAddress>(create);
   static UspsAddress? _defaultInstance;
 
   /// First address line.
   @$pb.TagNumber(1)
   $core.String get firstAddressLine => $_getSZ(0);
   @$pb.TagNumber(1)
-  set firstAddressLine($core.String v) { $_setString(0, v); }
+  set firstAddressLine($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFirstAddressLine() => $_has(0);
   @$pb.TagNumber(1)
@@ -108,7 +119,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get firm => $_getSZ(1);
   @$pb.TagNumber(2)
-  set firm($core.String v) { $_setString(1, v); }
+  set firm($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFirm() => $_has(1);
   @$pb.TagNumber(2)
@@ -118,7 +132,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get secondAddressLine => $_getSZ(2);
   @$pb.TagNumber(3)
-  set secondAddressLine($core.String v) { $_setString(2, v); }
+  set secondAddressLine($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSecondAddressLine() => $_has(2);
   @$pb.TagNumber(3)
@@ -128,7 +145,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get urbanization => $_getSZ(3);
   @$pb.TagNumber(4)
-  set urbanization($core.String v) { $_setString(3, v); }
+  set urbanization($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUrbanization() => $_has(3);
   @$pb.TagNumber(4)
@@ -138,7 +158,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get cityStateZipAddressLine => $_getSZ(4);
   @$pb.TagNumber(5)
-  set cityStateZipAddressLine($core.String v) { $_setString(4, v); }
+  set cityStateZipAddressLine($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCityStateZipAddressLine() => $_has(4);
   @$pb.TagNumber(5)
@@ -148,7 +171,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get city => $_getSZ(5);
   @$pb.TagNumber(6)
-  set city($core.String v) { $_setString(5, v); }
+  set city($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCity() => $_has(5);
   @$pb.TagNumber(6)
@@ -158,7 +184,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get state => $_getSZ(6);
   @$pb.TagNumber(7)
-  set state($core.String v) { $_setString(6, v); }
+  set state($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
@@ -168,7 +197,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get zipCode => $_getSZ(7);
   @$pb.TagNumber(8)
-  set zipCode($core.String v) { $_setString(7, v); }
+  set zipCode($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasZipCode() => $_has(7);
   @$pb.TagNumber(8)
@@ -178,7 +210,10 @@ class UspsAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get zipCodeExtension => $_getSZ(8);
   @$pb.TagNumber(9)
-  set zipCodeExtension($core.String v) { $_setString(8, v); }
+  set zipCodeExtension($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasZipCodeExtension() => $_has(8);
   @$pb.TagNumber(9)
@@ -344,11 +379,20 @@ class UspsData extends $pb.GeneratedMessage {
     return $result;
   }
   UspsData._() : super();
-  factory UspsData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UspsData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UspsData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UspsData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UspsData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..aOM<UspsAddress>(1, _omitFieldNames ? '' : 'standardizedAddress', subBuilder: UspsAddress.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UspsData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
+      createEmptyInstance: create)
+    ..aOM<UspsAddress>(1, _omitFieldNames ? '' : 'standardizedAddress',
+        subBuilder: UspsAddress.create)
     ..aOS(2, _omitFieldNames ? '' : 'deliveryPointCode')
     ..aOS(3, _omitFieldNames ? '' : 'deliveryPointCheckDigit')
     ..aOS(4, _omitFieldNames ? '' : 'dpvConfirmation')
@@ -376,28 +420,28 @@ class UspsData extends $pb.GeneratedMessage {
     ..aOB(26, _omitFieldNames ? '' : 'defaultAddress')
     ..aOS(27, _omitFieldNames ? '' : 'errorMessage')
     ..aOB(28, _omitFieldNames ? '' : 'cassProcessed')
-    ..a<$core.int>(29, _omitFieldNames ? '' : 'dpvNoStatReasonCode', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        29, _omitFieldNames ? '' : 'dpvNoStatReasonCode', $pb.PbFieldType.O3)
     ..aOS(30, _omitFieldNames ? '' : 'dpvDrop')
     ..aOS(31, _omitFieldNames ? '' : 'dpvThrowback')
     ..aOS(32, _omitFieldNames ? '' : 'dpvNonDeliveryDays')
-    ..a<$core.int>(33, _omitFieldNames ? '' : 'dpvNonDeliveryDaysValues', $pb.PbFieldType.O3)
+    ..a<$core.int>(33, _omitFieldNames ? '' : 'dpvNonDeliveryDaysValues',
+        $pb.PbFieldType.O3)
     ..aOS(34, _omitFieldNames ? '' : 'dpvNoSecureLocation')
     ..aOS(35, _omitFieldNames ? '' : 'dpvPbsa')
     ..aOS(36, _omitFieldNames ? '' : 'dpvDoorNotAccessible')
     ..aOS(37, _omitFieldNames ? '' : 'dpvEnhancedDeliveryCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UspsData clone() => UspsData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UspsData copyWith(void Function(UspsData) updates) => super.copyWith((message) => updates(message as UspsData)) as UspsData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UspsData copyWith(void Function(UspsData) updates) =>
+      super.copyWith((message) => updates(message as UspsData)) as UspsData;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -406,14 +450,18 @@ class UspsData extends $pb.GeneratedMessage {
   UspsData createEmptyInstance() => create();
   static $pb.PbList<UspsData> createRepeated() => $pb.PbList<UspsData>();
   @$core.pragma('dart2js:noInline')
-  static UspsData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UspsData>(create);
+  static UspsData getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UspsData>(create);
   static UspsData? _defaultInstance;
 
   /// USPS standardized address.
   @$pb.TagNumber(1)
   UspsAddress get standardizedAddress => $_getN(0);
   @$pb.TagNumber(1)
-  set standardizedAddress(UspsAddress v) { setField(1, v); }
+  set standardizedAddress(UspsAddress v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStandardizedAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -425,7 +473,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get deliveryPointCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set deliveryPointCode($core.String v) { $_setString(1, v); }
+  set deliveryPointCode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDeliveryPointCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -438,7 +489,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get deliveryPointCheckDigit => $_getSZ(2);
   @$pb.TagNumber(3)
-  set deliveryPointCheckDigit($core.String v) { $_setString(2, v); }
+  set deliveryPointCheckDigit($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDeliveryPointCheckDigit() => $_has(2);
   @$pb.TagNumber(3)
@@ -459,7 +513,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get dpvConfirmation => $_getSZ(3);
   @$pb.TagNumber(4)
-  set dpvConfirmation($core.String v) { $_setString(3, v); }
+  set dpvConfirmation($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDpvConfirmation() => $_has(3);
   @$pb.TagNumber(4)
@@ -490,7 +547,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get dpvFootnote => $_getSZ(4);
   @$pb.TagNumber(5)
-  set dpvFootnote($core.String v) { $_setString(4, v); }
+  set dpvFootnote($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDpvFootnote() => $_has(4);
   @$pb.TagNumber(5)
@@ -504,7 +564,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get dpvCmra => $_getSZ(5);
   @$pb.TagNumber(6)
-  set dpvCmra($core.String v) { $_setString(5, v); }
+  set dpvCmra($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDpvCmra() => $_has(5);
   @$pb.TagNumber(6)
@@ -518,7 +581,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get dpvVacant => $_getSZ(6);
   @$pb.TagNumber(7)
-  set dpvVacant($core.String v) { $_setString(6, v); }
+  set dpvVacant($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasDpvVacant() => $_has(6);
   @$pb.TagNumber(7)
@@ -533,7 +599,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get dpvNoStat => $_getSZ(7);
   @$pb.TagNumber(8)
-  set dpvNoStat($core.String v) { $_setString(7, v); }
+  set dpvNoStat($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDpvNoStat() => $_has(7);
   @$pb.TagNumber(8)
@@ -553,7 +622,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get carrierRoute => $_getSZ(8);
   @$pb.TagNumber(9)
-  set carrierRoute($core.String v) { $_setString(8, v); }
+  set carrierRoute($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasCarrierRoute() => $_has(8);
   @$pb.TagNumber(9)
@@ -563,7 +635,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get carrierRouteIndicator => $_getSZ(9);
   @$pb.TagNumber(10)
-  set carrierRouteIndicator($core.String v) { $_setString(9, v); }
+  set carrierRouteIndicator($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasCarrierRouteIndicator() => $_has(9);
   @$pb.TagNumber(10)
@@ -574,7 +649,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get ewsNoMatch => $_getBF(10);
   @$pb.TagNumber(11)
-  set ewsNoMatch($core.bool v) { $_setBool(10, v); }
+  set ewsNoMatch($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasEwsNoMatch() => $_has(10);
   @$pb.TagNumber(11)
@@ -584,7 +662,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get postOfficeCity => $_getSZ(11);
   @$pb.TagNumber(12)
-  set postOfficeCity($core.String v) { $_setString(11, v); }
+  set postOfficeCity($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasPostOfficeCity() => $_has(11);
   @$pb.TagNumber(12)
@@ -594,7 +675,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get postOfficeState => $_getSZ(12);
   @$pb.TagNumber(13)
-  set postOfficeState($core.String v) { $_setString(12, v); }
+  set postOfficeState($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasPostOfficeState() => $_has(12);
   @$pb.TagNumber(13)
@@ -604,7 +688,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get abbreviatedCity => $_getSZ(13);
   @$pb.TagNumber(14)
-  set abbreviatedCity($core.String v) { $_setString(13, v); }
+  set abbreviatedCity($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasAbbreviatedCity() => $_has(13);
   @$pb.TagNumber(14)
@@ -614,7 +701,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get fipsCountyCode => $_getSZ(14);
   @$pb.TagNumber(15)
-  set fipsCountyCode($core.String v) { $_setString(14, v); }
+  set fipsCountyCode($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasFipsCountyCode() => $_has(14);
   @$pb.TagNumber(15)
@@ -624,7 +714,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get county => $_getSZ(15);
   @$pb.TagNumber(16)
-  set county($core.String v) { $_setString(15, v); }
+  set county($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasCounty() => $_has(15);
   @$pb.TagNumber(16)
@@ -634,7 +727,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get elotNumber => $_getSZ(16);
   @$pb.TagNumber(17)
-  set elotNumber($core.String v) { $_setString(16, v); }
+  set elotNumber($core.String v) {
+    $_setString(16, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasElotNumber() => $_has(16);
   @$pb.TagNumber(17)
@@ -644,7 +740,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get elotFlag => $_getSZ(17);
   @$pb.TagNumber(18)
-  set elotFlag($core.String v) { $_setString(17, v); }
+  set elotFlag($core.String v) {
+    $_setString(17, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasElotFlag() => $_has(17);
   @$pb.TagNumber(18)
@@ -654,7 +753,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get lacsLinkReturnCode => $_getSZ(18);
   @$pb.TagNumber(19)
-  set lacsLinkReturnCode($core.String v) { $_setString(18, v); }
+  set lacsLinkReturnCode($core.String v) {
+    $_setString(18, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasLacsLinkReturnCode() => $_has(18);
   @$pb.TagNumber(19)
@@ -664,7 +766,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get lacsLinkIndicator => $_getSZ(19);
   @$pb.TagNumber(20)
-  set lacsLinkIndicator($core.String v) { $_setString(19, v); }
+  set lacsLinkIndicator($core.String v) {
+    $_setString(19, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasLacsLinkIndicator() => $_has(19);
   @$pb.TagNumber(20)
@@ -674,7 +779,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.bool get poBoxOnlyPostalCode => $_getBF(20);
   @$pb.TagNumber(21)
-  set poBoxOnlyPostalCode($core.bool v) { $_setBool(20, v); }
+  set poBoxOnlyPostalCode($core.bool v) {
+    $_setBool(20, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasPoBoxOnlyPostalCode() => $_has(20);
   @$pb.TagNumber(21)
@@ -688,7 +796,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get suitelinkFootnote => $_getSZ(21);
   @$pb.TagNumber(22)
-  set suitelinkFootnote($core.String v) { $_setString(21, v); }
+  set suitelinkFootnote($core.String v) {
+    $_setString(21, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasSuitelinkFootnote() => $_has(21);
   @$pb.TagNumber(22)
@@ -698,7 +809,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.String get pmbDesignator => $_getSZ(22);
   @$pb.TagNumber(23)
-  set pmbDesignator($core.String v) { $_setString(22, v); }
+  set pmbDesignator($core.String v) {
+    $_setString(22, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasPmbDesignator() => $_has(22);
   @$pb.TagNumber(23)
@@ -708,7 +822,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.String get pmbNumber => $_getSZ(23);
   @$pb.TagNumber(24)
-  set pmbNumber($core.String v) { $_setString(23, v); }
+  set pmbNumber($core.String v) {
+    $_setString(23, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasPmbNumber() => $_has(23);
   @$pb.TagNumber(24)
@@ -730,7 +847,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.String get addressRecordType => $_getSZ(24);
   @$pb.TagNumber(25)
-  set addressRecordType($core.String v) { $_setString(24, v); }
+  set addressRecordType($core.String v) {
+    $_setString(24, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasAddressRecordType() => $_has(24);
   @$pb.TagNumber(25)
@@ -741,7 +861,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $core.bool get defaultAddress => $_getBF(25);
   @$pb.TagNumber(26)
-  set defaultAddress($core.bool v) { $_setBool(25, v); }
+  set defaultAddress($core.bool v) {
+    $_setBool(25, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasDefaultAddress() => $_has(25);
   @$pb.TagNumber(26)
@@ -755,7 +878,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.String get errorMessage => $_getSZ(26);
   @$pb.TagNumber(27)
-  set errorMessage($core.String v) { $_setString(26, v); }
+  set errorMessage($core.String v) {
+    $_setString(26, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasErrorMessage() => $_has(26);
   @$pb.TagNumber(27)
@@ -765,7 +891,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   $core.bool get cassProcessed => $_getBF(27);
   @$pb.TagNumber(28)
-  set cassProcessed($core.bool v) { $_setBool(27, v); }
+  set cassProcessed($core.bool v) {
+    $_setBool(27, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasCassProcessed() => $_has(27);
   @$pb.TagNumber(28)
@@ -788,7 +917,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   $core.int get dpvNoStatReasonCode => $_getIZ(28);
   @$pb.TagNumber(29)
-  set dpvNoStatReasonCode($core.int v) { $_setSignedInt32(28, v); }
+  set dpvNoStatReasonCode($core.int v) {
+    $_setSignedInt32(28, v);
+  }
+
   @$pb.TagNumber(29)
   $core.bool hasDpvNoStatReasonCode() => $_has(28);
   @$pb.TagNumber(29)
@@ -802,7 +934,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   $core.String get dpvDrop => $_getSZ(29);
   @$pb.TagNumber(30)
-  set dpvDrop($core.String v) { $_setString(29, v); }
+  set dpvDrop($core.String v) {
+    $_setString(29, v);
+  }
+
   @$pb.TagNumber(30)
   $core.bool hasDpvDrop() => $_has(29);
   @$pb.TagNumber(30)
@@ -816,7 +951,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $core.String get dpvThrowback => $_getSZ(30);
   @$pb.TagNumber(31)
-  set dpvThrowback($core.String v) { $_setString(30, v); }
+  set dpvThrowback($core.String v) {
+    $_setString(30, v);
+  }
+
   @$pb.TagNumber(31)
   $core.bool hasDpvThrowback() => $_has(30);
   @$pb.TagNumber(31)
@@ -831,7 +969,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(32)
   $core.String get dpvNonDeliveryDays => $_getSZ(31);
   @$pb.TagNumber(32)
-  set dpvNonDeliveryDays($core.String v) { $_setString(31, v); }
+  set dpvNonDeliveryDays($core.String v) {
+    $_setString(31, v);
+  }
+
   @$pb.TagNumber(32)
   $core.bool hasDpvNonDeliveryDays() => $_has(31);
   @$pb.TagNumber(32)
@@ -849,7 +990,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   $core.int get dpvNonDeliveryDaysValues => $_getIZ(32);
   @$pb.TagNumber(33)
-  set dpvNonDeliveryDaysValues($core.int v) { $_setSignedInt32(32, v); }
+  set dpvNonDeliveryDaysValues($core.int v) {
+    $_setSignedInt32(32, v);
+  }
+
   @$pb.TagNumber(33)
   $core.bool hasDpvNonDeliveryDaysValues() => $_has(32);
   @$pb.TagNumber(33)
@@ -864,7 +1008,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(34)
   $core.String get dpvNoSecureLocation => $_getSZ(33);
   @$pb.TagNumber(34)
-  set dpvNoSecureLocation($core.String v) { $_setString(33, v); }
+  set dpvNoSecureLocation($core.String v) {
+    $_setString(33, v);
+  }
+
   @$pb.TagNumber(34)
   $core.bool hasDpvNoSecureLocation() => $_has(33);
   @$pb.TagNumber(34)
@@ -878,7 +1025,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   $core.String get dpvPbsa => $_getSZ(34);
   @$pb.TagNumber(35)
-  set dpvPbsa($core.String v) { $_setString(34, v); }
+  set dpvPbsa($core.String v) {
+    $_setString(34, v);
+  }
+
   @$pb.TagNumber(35)
   $core.bool hasDpvPbsa() => $_has(34);
   @$pb.TagNumber(35)
@@ -892,7 +1042,10 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(36)
   $core.String get dpvDoorNotAccessible => $_getSZ(35);
   @$pb.TagNumber(36)
-  set dpvDoorNotAccessible($core.String v) { $_setString(35, v); }
+  set dpvDoorNotAccessible($core.String v) {
+    $_setString(35, v);
+  }
+
   @$pb.TagNumber(36)
   $core.bool hasDpvDoorNotAccessible() => $_has(35);
   @$pb.TagNumber(36)
@@ -915,13 +1068,16 @@ class UspsData extends $pb.GeneratedMessage {
   @$pb.TagNumber(37)
   $core.String get dpvEnhancedDeliveryCode => $_getSZ(36);
   @$pb.TagNumber(37)
-  set dpvEnhancedDeliveryCode($core.String v) { $_setString(36, v); }
+  set dpvEnhancedDeliveryCode($core.String v) {
+    $_setString(36, v);
+  }
+
   @$pb.TagNumber(37)
   $core.bool hasDpvEnhancedDeliveryCode() => $_has(36);
   @$pb.TagNumber(37)
   void clearDpvEnhancedDeliveryCode() => clearField(37);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

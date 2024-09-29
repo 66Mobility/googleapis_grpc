@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const DeletionMetadata$json = {
   '1': 'DeletionMetadata',
   '2': [
-    {'1': 'deletion_type', '3': 1, '4': 1, '5': 14, '6': '.google.chat.v1.DeletionMetadata.DeletionType', '10': 'deletionType'},
+    {
+      '1': 'deletion_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.DeletionMetadata.DeletionType',
+      '10': 'deletionType'
+    },
   ],
   '4': [DeletionMetadata_DeletionType$json],
 };
@@ -43,4 +50,3 @@ final $typed_data.Uint8List deletionMetadataDescriptor = $convert.base64Decode(
     'dGlvblR5cGUSHQoZREVMRVRJT05fVFlQRV9VTlNQRUNJRklFRBAAEgsKB0NSRUFUT1IQARIPCg'
     'tTUEFDRV9PV05FUhACEgkKBUFETUlOEAMSFgoSQVBQX01FU1NBR0VfRVhQSVJZEAQSEwoPQ1JF'
     'QVRPUl9WSUFfQVBQEAUSFwoTU1BBQ0VfT1dORVJfVklBX0FQUBAG');
-

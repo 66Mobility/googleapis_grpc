@@ -47,24 +47,30 @@ class Visibility extends $pb.GeneratedMessage {
     return $result;
   }
   Visibility._() : super();
-  factory Visibility.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Visibility.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Visibility.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Visibility.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Visibility', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<VisibilityRule>(1, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: VisibilityRule.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Visibility',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
+    ..pc<VisibilityRule>(1, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+        subBuilder: VisibilityRule.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Visibility clone() => Visibility()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Visibility copyWith(void Function(Visibility) updates) => super.copyWith((message) => updates(message as Visibility)) as Visibility;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Visibility copyWith(void Function(Visibility) updates) =>
+      super.copyWith((message) => updates(message as Visibility)) as Visibility;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -73,7 +79,8 @@ class Visibility extends $pb.GeneratedMessage {
   Visibility createEmptyInstance() => create();
   static $pb.PbList<Visibility> createRepeated() => $pb.PbList<Visibility>();
   @$core.pragma('dart2js:noInline')
-  static Visibility getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Visibility>(create);
+  static Visibility getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Visibility>(create);
   static Visibility? _defaultInstance;
 
   ///  A list of visibility rules that apply to individual API elements.
@@ -100,34 +107,42 @@ class VisibilityRule extends $pb.GeneratedMessage {
     return $result;
   }
   VisibilityRule._() : super();
-  factory VisibilityRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VisibilityRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VisibilityRule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VisibilityRule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VisibilityRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VisibilityRule',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'selector')
     ..aOS(2, _omitFieldNames ? '' : 'restriction')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VisibilityRule clone() => VisibilityRule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VisibilityRule copyWith(void Function(VisibilityRule) updates) => super.copyWith((message) => updates(message as VisibilityRule)) as VisibilityRule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VisibilityRule copyWith(void Function(VisibilityRule) updates) =>
+      super.copyWith((message) => updates(message as VisibilityRule))
+          as VisibilityRule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VisibilityRule create() => VisibilityRule._();
   VisibilityRule createEmptyInstance() => create();
-  static $pb.PbList<VisibilityRule> createRepeated() => $pb.PbList<VisibilityRule>();
+  static $pb.PbList<VisibilityRule> createRepeated() =>
+      $pb.PbList<VisibilityRule>();
   @$core.pragma('dart2js:noInline')
-  static VisibilityRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VisibilityRule>(create);
+  static VisibilityRule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VisibilityRule>(create);
   static VisibilityRule? _defaultInstance;
 
   ///  Selects methods, messages, fields, enums, etc. to which this rule applies.
@@ -137,7 +152,10 @@ class VisibilityRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get selector => $_getSZ(0);
   @$pb.TagNumber(1)
-  set selector($core.String v) { $_setString(0, v); }
+  set selector($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSelector() => $_has(0);
   @$pb.TagNumber(1)
@@ -161,7 +179,10 @@ class VisibilityRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get restriction => $_getSZ(1);
   @$pb.TagNumber(2)
-  set restriction($core.String v) { $_setString(1, v); }
+  set restriction($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRestriction() => $_has(1);
   @$pb.TagNumber(2)
@@ -169,12 +190,48 @@ class VisibilityRule extends $pb.GeneratedMessage {
 }
 
 class VisibilityExt {
-  static final enumVisibility = $pb.Extension<VisibilityRule>(_omitMessageNames ? '' : 'google.protobuf.EnumOptions', _omitFieldNames ? '' : 'enumVisibility', 72295727, $pb.PbFieldType.OM, defaultOrMaker: VisibilityRule.getDefault, subBuilder: VisibilityRule.create);
-  static final valueVisibility = $pb.Extension<VisibilityRule>(_omitMessageNames ? '' : 'google.protobuf.EnumValueOptions', _omitFieldNames ? '' : 'valueVisibility', 72295727, $pb.PbFieldType.OM, defaultOrMaker: VisibilityRule.getDefault, subBuilder: VisibilityRule.create);
-  static final fieldVisibility = $pb.Extension<VisibilityRule>(_omitMessageNames ? '' : 'google.protobuf.FieldOptions', _omitFieldNames ? '' : 'fieldVisibility', 72295727, $pb.PbFieldType.OM, defaultOrMaker: VisibilityRule.getDefault, subBuilder: VisibilityRule.create);
-  static final messageVisibility = $pb.Extension<VisibilityRule>(_omitMessageNames ? '' : 'google.protobuf.MessageOptions', _omitFieldNames ? '' : 'messageVisibility', 72295727, $pb.PbFieldType.OM, defaultOrMaker: VisibilityRule.getDefault, subBuilder: VisibilityRule.create);
-  static final methodVisibility = $pb.Extension<VisibilityRule>(_omitMessageNames ? '' : 'google.protobuf.MethodOptions', _omitFieldNames ? '' : 'methodVisibility', 72295727, $pb.PbFieldType.OM, defaultOrMaker: VisibilityRule.getDefault, subBuilder: VisibilityRule.create);
-  static final apiVisibility = $pb.Extension<VisibilityRule>(_omitMessageNames ? '' : 'google.protobuf.ServiceOptions', _omitFieldNames ? '' : 'apiVisibility', 72295727, $pb.PbFieldType.OM, defaultOrMaker: VisibilityRule.getDefault, subBuilder: VisibilityRule.create);
+  static final enumVisibility = $pb.Extension<VisibilityRule>(
+      _omitMessageNames ? '' : 'google.protobuf.EnumOptions',
+      _omitFieldNames ? '' : 'enumVisibility',
+      72295727,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: VisibilityRule.getDefault,
+      subBuilder: VisibilityRule.create);
+  static final valueVisibility = $pb.Extension<VisibilityRule>(
+      _omitMessageNames ? '' : 'google.protobuf.EnumValueOptions',
+      _omitFieldNames ? '' : 'valueVisibility',
+      72295727,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: VisibilityRule.getDefault,
+      subBuilder: VisibilityRule.create);
+  static final fieldVisibility = $pb.Extension<VisibilityRule>(
+      _omitMessageNames ? '' : 'google.protobuf.FieldOptions',
+      _omitFieldNames ? '' : 'fieldVisibility',
+      72295727,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: VisibilityRule.getDefault,
+      subBuilder: VisibilityRule.create);
+  static final messageVisibility = $pb.Extension<VisibilityRule>(
+      _omitMessageNames ? '' : 'google.protobuf.MessageOptions',
+      _omitFieldNames ? '' : 'messageVisibility',
+      72295727,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: VisibilityRule.getDefault,
+      subBuilder: VisibilityRule.create);
+  static final methodVisibility = $pb.Extension<VisibilityRule>(
+      _omitMessageNames ? '' : 'google.protobuf.MethodOptions',
+      _omitFieldNames ? '' : 'methodVisibility',
+      72295727,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: VisibilityRule.getDefault,
+      subBuilder: VisibilityRule.create);
+  static final apiVisibility = $pb.Extension<VisibilityRule>(
+      _omitMessageNames ? '' : 'google.protobuf.ServiceOptions',
+      _omitFieldNames ? '' : 'apiVisibility',
+      72295727,
+      $pb.PbFieldType.OM,
+      defaultOrMaker: VisibilityRule.getDefault,
+      subBuilder: VisibilityRule.create);
   static void registerAllExtensions($pb.ExtensionRegistry registry) {
     registry.add(enumVisibility);
     registry.add(valueVisibility);
@@ -185,6 +242,6 @@ class VisibilityExt {
   }
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

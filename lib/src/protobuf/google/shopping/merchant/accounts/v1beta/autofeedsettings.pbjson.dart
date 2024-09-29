@@ -18,7 +18,14 @@ const AutofeedSettings$json = {
   '1': 'AutofeedSettings',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'enable_products', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'enableProducts'},
+    {
+      '1': 'enable_products',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'enableProducts'
+    },
     {'1': 'eligible', '3': 3, '4': 1, '5': 8, '8': {}, '10': 'eligible'},
   ],
   '7': {},
@@ -41,16 +48,33 @@ const GetAutofeedSettingsRequest$json = {
 };
 
 /// Descriptor for `GetAutofeedSettingsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getAutofeedSettingsRequestDescriptor = $convert.base64Decode(
-    'ChpHZXRBdXRvZmVlZFNldHRpbmdzUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
-    'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0F1dG9mZWVkU2V0dGluZ3NSBG5hbWU=');
+final $typed_data.Uint8List getAutofeedSettingsRequestDescriptor =
+    $convert.base64Decode(
+        'ChpHZXRBdXRvZmVlZFNldHRpbmdzUmVxdWVzdBJHCgRuYW1lGAEgASgJQjPgQQL6QS0KK21lcm'
+        'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0F1dG9mZWVkU2V0dGluZ3NSBG5hbWU=');
 
 @$core.Deprecated('Use updateAutofeedSettingsRequestDescriptor instead')
 const UpdateAutofeedSettingsRequest$json = {
   '1': 'UpdateAutofeedSettingsRequest',
   '2': [
-    {'1': 'autofeed_settings', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AutofeedSettings', '8': {}, '10': 'autofeedSettings'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {
+      '1': 'autofeed_settings',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.AutofeedSettings',
+      '8': {},
+      '10': 'autofeedSettings'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -60,4 +84,3 @@ final $typed_data.Uint8List updateAutofeedSettingsRequestDescriptor = $convert.b
     'EoCzI6Lmdvb2dsZS5zaG9wcGluZy5tZXJjaGFudC5hY2NvdW50cy52MWJldGEuQXV0b2ZlZWRT'
     'ZXR0aW5nc0ID4EECUhBhdXRvZmVlZFNldHRpbmdzEkAKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ2'
     '9vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNr');
-

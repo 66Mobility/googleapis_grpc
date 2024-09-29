@@ -19,11 +19,32 @@ const ComplianceNote$json = {
   '2': [
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'version', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.ComplianceVersion', '10': 'version'},
+    {
+      '1': 'version',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.ComplianceVersion',
+      '10': 'version'
+    },
     {'1': 'rationale', '3': 4, '4': 1, '5': 9, '10': 'rationale'},
     {'1': 'remediation', '3': 5, '4': 1, '5': 9, '10': 'remediation'},
-    {'1': 'cis_benchmark', '3': 6, '4': 1, '5': 11, '6': '.grafeas.v1.ComplianceNote.CisBenchmark', '9': 0, '10': 'cisBenchmark'},
-    {'1': 'scan_instructions', '3': 7, '4': 1, '5': 12, '10': 'scanInstructions'},
+    {
+      '1': 'cis_benchmark',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.ComplianceNote.CisBenchmark',
+      '9': 0,
+      '10': 'cisBenchmark'
+    },
+    {
+      '1': 'scan_instructions',
+      '3': 7,
+      '4': 1,
+      '5': 12,
+      '10': 'scanInstructions'
+    },
     {'1': 'impact', '3': 8, '4': 1, '5': 9, '9': 1, '10': 'impact'},
   ],
   '3': [ComplianceNote_CisBenchmark$json],
@@ -38,7 +59,14 @@ const ComplianceNote_CisBenchmark$json = {
   '1': 'CisBenchmark',
   '2': [
     {'1': 'profile_level', '3': 1, '4': 1, '5': 5, '10': 'profileLevel'},
-    {'1': 'severity', '3': 2, '4': 1, '5': 14, '6': '.grafeas.v1.Severity', '10': 'severity'},
+    {
+      '1': 'severity',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.Severity',
+      '10': 'severity'
+    },
   ],
 };
 
@@ -59,7 +87,13 @@ const ComplianceVersion$json = {
   '1': 'ComplianceVersion',
   '2': [
     {'1': 'cpe_uri', '3': 1, '4': 1, '5': 9, '10': 'cpeUri'},
-    {'1': 'benchmark_document', '3': 3, '4': 1, '5': 9, '10': 'benchmarkDocument'},
+    {
+      '1': 'benchmark_document',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'benchmarkDocument'
+    },
     {'1': 'version', '3': 2, '4': 1, '5': 9, '10': 'version'},
   ],
 };
@@ -74,9 +108,29 @@ final $typed_data.Uint8List complianceVersionDescriptor = $convert.base64Decode(
 const ComplianceOccurrence$json = {
   '1': 'ComplianceOccurrence',
   '2': [
-    {'1': 'non_compliant_files', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.NonCompliantFile', '10': 'nonCompliantFiles'},
-    {'1': 'non_compliance_reason', '3': 3, '4': 1, '5': 9, '10': 'nonComplianceReason'},
-    {'1': 'version', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.ComplianceVersion', '10': 'version'},
+    {
+      '1': 'non_compliant_files',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.NonCompliantFile',
+      '10': 'nonCompliantFiles'
+    },
+    {
+      '1': 'non_compliance_reason',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'nonComplianceReason'
+    },
+    {
+      '1': 'version',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.ComplianceVersion',
+      '10': 'version'
+    },
   ],
 };
 
@@ -101,4 +155,3 @@ const NonCompliantFile$json = {
 final $typed_data.Uint8List nonCompliantFileDescriptor = $convert.base64Decode(
     'ChBOb25Db21wbGlhbnRGaWxlEhIKBHBhdGgYASABKAlSBHBhdGgSJwoPZGlzcGxheV9jb21tYW'
     '5kGAIgASgJUg5kaXNwbGF5Q29tbWFuZBIWCgZyZWFzb24YAyABKAlSBnJlYXNvbg==');
-

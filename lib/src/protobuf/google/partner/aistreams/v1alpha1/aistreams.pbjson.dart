@@ -18,11 +18,41 @@ const Cluster$json = {
   '1': 'Cluster',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Cluster.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Cluster.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'certificate', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'certificate'},
-    {'1': 'service_endpoint', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'serviceEndpoint'},
+    {
+      '1': 'service_endpoint',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'serviceEndpoint'
+    },
   ],
   '3': [Cluster_LabelsEntry$json],
   '7': {},
@@ -73,7 +103,14 @@ final $typed_data.Uint8List listClustersRequestDescriptor = $convert.base64Decod
 const ListClustersResponse$json = {
   '1': 'ListClustersResponse',
   '2': [
-    {'1': 'clusters', '3': 1, '4': 3, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Cluster', '10': 'clusters'},
+    {
+      '1': 'clusters',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Cluster',
+      '10': 'clusters'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
   ],
@@ -105,7 +142,15 @@ const CreateClusterRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'cluster_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'clusterId'},
-    {'1': 'cluster', '3': 3, '4': 1, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Cluster', '8': {}, '10': 'cluster'},
+    {
+      '1': 'cluster',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Cluster',
+      '8': {},
+      '10': 'cluster'
+    },
     {'1': 'request_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
 };
@@ -122,8 +167,24 @@ final $typed_data.Uint8List createClusterRequestDescriptor = $convert.base64Deco
 const UpdateClusterRequest$json = {
   '1': 'UpdateClusterRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
-    {'1': 'cluster', '3': 2, '4': 1, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Cluster', '8': {}, '10': 'cluster'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
+    {
+      '1': 'cluster',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Cluster',
+      '8': {},
+      '10': 'cluster'
+    },
     {'1': 'request_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
 };
@@ -155,9 +216,32 @@ const Stream$json = {
   '1': 'Stream',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Stream.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Stream.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [Stream_LabelsEntry$json],
   '7': {},
@@ -207,7 +291,14 @@ final $typed_data.Uint8List listStreamsRequestDescriptor = $convert.base64Decode
 const ListStreamsResponse$json = {
   '1': 'ListStreamsResponse',
   '2': [
-    {'1': 'streams', '3': 1, '4': 3, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Stream', '10': 'streams'},
+    {
+      '1': 'streams',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Stream',
+      '10': 'streams'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
     {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
   ],
@@ -238,7 +329,15 @@ const CreateStreamRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'stream_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'streamId'},
-    {'1': 'stream', '3': 3, '4': 1, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Stream', '8': {}, '10': 'stream'},
+    {
+      '1': 'stream',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Stream',
+      '8': {},
+      '10': 'stream'
+    },
     {'1': 'request_id', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
 };
@@ -255,8 +354,24 @@ final $typed_data.Uint8List createStreamRequestDescriptor = $convert.base64Decod
 const UpdateStreamRequest$json = {
   '1': 'UpdateStreamRequest',
   '2': [
-    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
-    {'1': 'stream', '3': 2, '4': 1, '5': 11, '6': '.google.partner.aistreams.v1alpha1.Stream', '8': {}, '10': 'stream'},
+    {
+      '1': 'update_mask',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {},
+      '10': 'updateMask'
+    },
+    {
+      '1': 'stream',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.partner.aistreams.v1alpha1.Stream',
+      '8': {},
+      '10': 'stream'
+    },
     {'1': 'request_id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'requestId'},
   ],
 };
@@ -287,12 +402,42 @@ final $typed_data.Uint8List deleteStreamRequestDescriptor = $convert.base64Decod
 const OperationMetadata$json = {
   '1': 'OperationMetadata',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'endTime'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'createTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'endTime'
+    },
     {'1': 'target', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'target'},
     {'1': 'verb', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'verb'},
-    {'1': 'status_message', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'statusMessage'},
-    {'1': 'requested_cancellation', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'requestedCancellation'},
+    {
+      '1': 'status_message',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'statusMessage'
+    },
+    {
+      '1': 'requested_cancellation',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'requestedCancellation'
+    },
     {'1': 'api_version', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'apiVersion'},
   ],
 };
@@ -306,4 +451,3 @@ final $typed_data.Uint8List operationMetadataDescriptor = $convert.base64Decode(
     'CUID4EEDUg1zdGF0dXNNZXNzYWdlEjoKFnJlcXVlc3RlZF9jYW5jZWxsYXRpb24YBiABKAhCA+'
     'BBA1IVcmVxdWVzdGVkQ2FuY2VsbGF0aW9uEiQKC2FwaV92ZXJzaW9uGAcgASgJQgPgQQNSCmFw'
     'aVZlcnNpb24=');
-

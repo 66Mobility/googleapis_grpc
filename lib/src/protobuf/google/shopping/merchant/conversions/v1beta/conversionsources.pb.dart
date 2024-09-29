@@ -21,8 +21,8 @@ import 'conversionsources.pbenum.dart';
 export 'conversionsources.pbenum.dart';
 
 enum ConversionSource_SourceData {
-  googleAnalyticsLink, 
-  merchantCenterDestination, 
+  googleAnalyticsLink,
+  merchantCenterDestination,
   notSet
 }
 
@@ -59,47 +59,71 @@ class ConversionSource extends $pb.GeneratedMessage {
     return $result;
   }
   ConversionSource._() : super();
-  factory ConversionSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConversionSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConversionSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConversionSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ConversionSource_SourceData> _ConversionSource_SourceDataByTag = {
-    3 : ConversionSource_SourceData.googleAnalyticsLink,
-    4 : ConversionSource_SourceData.merchantCenterDestination,
-    0 : ConversionSource_SourceData.notSet
+  static const $core.Map<$core.int, ConversionSource_SourceData>
+      _ConversionSource_SourceDataByTag = {
+    3: ConversionSource_SourceData.googleAnalyticsLink,
+    4: ConversionSource_SourceData.merchantCenterDestination,
+    0: ConversionSource_SourceData.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConversionSource',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..oo(0, [3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<GoogleAnalyticsLink>(3, _omitFieldNames ? '' : 'googleAnalyticsLink', subBuilder: GoogleAnalyticsLink.create)
-    ..aOM<MerchantCenterDestination>(4, _omitFieldNames ? '' : 'merchantCenterDestination', subBuilder: MerchantCenterDestination.create)
-    ..e<ConversionSource_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ConversionSource_State.STATE_UNSPECIFIED, valueOf: ConversionSource_State.valueOf, enumValues: ConversionSource_State.values)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
-    ..e<ConversionSource_Controller>(7, _omitFieldNames ? '' : 'controller', $pb.PbFieldType.OE, defaultOrMaker: ConversionSource_Controller.CONTROLLER_UNSPECIFIED, valueOf: ConversionSource_Controller.valueOf, enumValues: ConversionSource_Controller.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<GoogleAnalyticsLink>(3, _omitFieldNames ? '' : 'googleAnalyticsLink',
+        subBuilder: GoogleAnalyticsLink.create)
+    ..aOM<MerchantCenterDestination>(
+        4, _omitFieldNames ? '' : 'merchantCenterDestination',
+        subBuilder: MerchantCenterDestination.create)
+    ..e<ConversionSource_State>(
+        5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: ConversionSource_State.STATE_UNSPECIFIED,
+        valueOf: ConversionSource_State.valueOf,
+        enumValues: ConversionSource_State.values)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $302.Timestamp.create)
+    ..e<ConversionSource_Controller>(
+        7, _omitFieldNames ? '' : 'controller', $pb.PbFieldType.OE,
+        defaultOrMaker: ConversionSource_Controller.CONTROLLER_UNSPECIFIED,
+        valueOf: ConversionSource_Controller.valueOf,
+        enumValues: ConversionSource_Controller.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ConversionSource clone() => ConversionSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConversionSource copyWith(void Function(ConversionSource) updates) => super.copyWith((message) => updates(message as ConversionSource)) as ConversionSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConversionSource copyWith(void Function(ConversionSource) updates) =>
+      super.copyWith((message) => updates(message as ConversionSource))
+          as ConversionSource;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ConversionSource create() => ConversionSource._();
   ConversionSource createEmptyInstance() => create();
-  static $pb.PbList<ConversionSource> createRepeated() => $pb.PbList<ConversionSource>();
+  static $pb.PbList<ConversionSource> createRepeated() =>
+      $pb.PbList<ConversionSource>();
   @$core.pragma('dart2js:noInline')
-  static ConversionSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConversionSource>(create);
+  static ConversionSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConversionSource>(create);
   static ConversionSource? _defaultInstance;
 
-  ConversionSource_SourceData whichSourceData() => _ConversionSource_SourceDataByTag[$_whichOneof(0)]!;
+  ConversionSource_SourceData whichSourceData() =>
+      _ConversionSource_SourceDataByTag[$_whichOneof(0)]!;
   void clearSourceData() => clearField($_whichOneof(0));
 
   /// Output only. Identifier. Generated by the Content API upon creation of a
@@ -113,7 +137,10 @@ class ConversionSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -123,7 +150,10 @@ class ConversionSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   GoogleAnalyticsLink get googleAnalyticsLink => $_getN(1);
   @$pb.TagNumber(3)
-  set googleAnalyticsLink(GoogleAnalyticsLink v) { setField(3, v); }
+  set googleAnalyticsLink(GoogleAnalyticsLink v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGoogleAnalyticsLink() => $_has(1);
   @$pb.TagNumber(3)
@@ -135,7 +165,10 @@ class ConversionSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   MerchantCenterDestination get merchantCenterDestination => $_getN(2);
   @$pb.TagNumber(4)
-  set merchantCenterDestination(MerchantCenterDestination v) { setField(4, v); }
+  set merchantCenterDestination(MerchantCenterDestination v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMerchantCenterDestination() => $_has(2);
   @$pb.TagNumber(4)
@@ -148,7 +181,10 @@ class ConversionSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ConversionSource_State get state => $_getN(3);
   @$pb.TagNumber(5)
-  set state(ConversionSource_State v) { setField(5, v); }
+  set state(ConversionSource_State v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(5)
@@ -159,7 +195,10 @@ class ConversionSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $302.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(6)
-  set expireTime($302.Timestamp v) { setField(6, v); }
+  set expireTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(6)
@@ -171,7 +210,10 @@ class ConversionSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   ConversionSource_Controller get controller => $_getN(5);
   @$pb.TagNumber(7)
-  set controller(ConversionSource_Controller v) { setField(7, v); }
+  set controller(ConversionSource_Controller v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasController() => $_has(5);
   @$pb.TagNumber(7)
@@ -194,41 +236,59 @@ class AttributionSettings_ConversionType extends $pb.GeneratedMessage {
     return $result;
   }
   AttributionSettings_ConversionType._() : super();
-  factory AttributionSettings_ConversionType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AttributionSettings_ConversionType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AttributionSettings_ConversionType.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AttributionSettings_ConversionType.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttributionSettings.ConversionType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AttributionSettings.ConversionType',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'report')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AttributionSettings_ConversionType clone() => AttributionSettings_ConversionType()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AttributionSettings_ConversionType copyWith(void Function(AttributionSettings_ConversionType) updates) => super.copyWith((message) => updates(message as AttributionSettings_ConversionType)) as AttributionSettings_ConversionType;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AttributionSettings_ConversionType clone() =>
+      AttributionSettings_ConversionType()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AttributionSettings_ConversionType copyWith(
+          void Function(AttributionSettings_ConversionType) updates) =>
+      super.copyWith((message) =>
+              updates(message as AttributionSettings_ConversionType))
+          as AttributionSettings_ConversionType;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AttributionSettings_ConversionType create() => AttributionSettings_ConversionType._();
+  static AttributionSettings_ConversionType create() =>
+      AttributionSettings_ConversionType._();
   AttributionSettings_ConversionType createEmptyInstance() => create();
-  static $pb.PbList<AttributionSettings_ConversionType> createRepeated() => $pb.PbList<AttributionSettings_ConversionType>();
+  static $pb.PbList<AttributionSettings_ConversionType> createRepeated() =>
+      $pb.PbList<AttributionSettings_ConversionType>();
   @$core.pragma('dart2js:noInline')
-  static AttributionSettings_ConversionType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AttributionSettings_ConversionType>(create);
+  static AttributionSettings_ConversionType getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AttributionSettings_ConversionType>(
+          create);
   static AttributionSettings_ConversionType? _defaultInstance;
 
   /// Output only. Conversion event name, as it'll be reported by the client.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -239,7 +299,10 @@ class AttributionSettings_ConversionType extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get report => $_getBF(1);
   @$pb.TagNumber(2)
-  set report($core.bool v) { $_setBool(1, v); }
+  set report($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReport() => $_has(1);
   @$pb.TagNumber(2)
@@ -267,35 +330,53 @@ class AttributionSettings extends $pb.GeneratedMessage {
     return $result;
   }
   AttributionSettings._() : super();
-  factory AttributionSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AttributionSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AttributionSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AttributionSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttributionSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'attributionLookbackWindowDays', $pb.PbFieldType.O3)
-    ..e<AttributionSettings_AttributionModel>(2, _omitFieldNames ? '' : 'attributionModel', $pb.PbFieldType.OE, defaultOrMaker: AttributionSettings_AttributionModel.ATTRIBUTION_MODEL_UNSPECIFIED, valueOf: AttributionSettings_AttributionModel.valueOf, enumValues: AttributionSettings_AttributionModel.values)
-    ..pc<AttributionSettings_ConversionType>(3, _omitFieldNames ? '' : 'conversionType', $pb.PbFieldType.PM, subBuilder: AttributionSettings_ConversionType.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AttributionSettings',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'attributionLookbackWindowDays',
+        $pb.PbFieldType.O3)
+    ..e<AttributionSettings_AttributionModel>(
+        2, _omitFieldNames ? '' : 'attributionModel', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            AttributionSettings_AttributionModel.ATTRIBUTION_MODEL_UNSPECIFIED,
+        valueOf: AttributionSettings_AttributionModel.valueOf,
+        enumValues: AttributionSettings_AttributionModel.values)
+    ..pc<AttributionSettings_ConversionType>(
+        3, _omitFieldNames ? '' : 'conversionType', $pb.PbFieldType.PM,
+        subBuilder: AttributionSettings_ConversionType.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AttributionSettings clone() => AttributionSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AttributionSettings copyWith(void Function(AttributionSettings) updates) => super.copyWith((message) => updates(message as AttributionSettings)) as AttributionSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AttributionSettings copyWith(void Function(AttributionSettings) updates) =>
+      super.copyWith((message) => updates(message as AttributionSettings))
+          as AttributionSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributionSettings create() => AttributionSettings._();
   AttributionSettings createEmptyInstance() => create();
-  static $pb.PbList<AttributionSettings> createRepeated() => $pb.PbList<AttributionSettings>();
+  static $pb.PbList<AttributionSettings> createRepeated() =>
+      $pb.PbList<AttributionSettings>();
   @$core.pragma('dart2js:noInline')
-  static AttributionSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AttributionSettings>(create);
+  static AttributionSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AttributionSettings>(create);
   static AttributionSettings? _defaultInstance;
 
   /// Required. Lookback windows (in days) used for attribution in this source.
@@ -303,7 +384,10 @@ class AttributionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get attributionLookbackWindowDays => $_getIZ(0);
   @$pb.TagNumber(1)
-  set attributionLookbackWindowDays($core.int v) { $_setSignedInt32(0, v); }
+  set attributionLookbackWindowDays($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAttributionLookbackWindowDays() => $_has(0);
   @$pb.TagNumber(1)
@@ -313,7 +397,10 @@ class AttributionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AttributionSettings_AttributionModel get attributionModel => $_getN(1);
   @$pb.TagNumber(2)
-  set attributionModel(AttributionSettings_AttributionModel v) { setField(2, v); }
+  set attributionModel(AttributionSettings_AttributionModel v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAttributionModel() => $_has(1);
   @$pb.TagNumber(2)
@@ -323,7 +410,8 @@ class AttributionSettings extends $pb.GeneratedMessage {
   /// event can be classified as. A standard "purchase" type will be
   /// automatically created if this list is empty at creation time.
   @$pb.TagNumber(3)
-  $core.List<AttributionSettings_ConversionType> get conversionType => $_getList(2);
+  $core.List<AttributionSettings_ConversionType> get conversionType =>
+      $_getList(2);
 }
 
 /// "Google Analytics Link" sources can be used to get conversion data from an
@@ -347,35 +435,46 @@ class GoogleAnalyticsLink extends $pb.GeneratedMessage {
     return $result;
   }
   GoogleAnalyticsLink._() : super();
-  factory GoogleAnalyticsLink.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GoogleAnalyticsLink.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GoogleAnalyticsLink.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GoogleAnalyticsLink.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GoogleAnalyticsLink', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GoogleAnalyticsLink',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'propertyId')
-    ..aOM<AttributionSettings>(2, _omitFieldNames ? '' : 'attributionSettings', subBuilder: AttributionSettings.create)
+    ..aOM<AttributionSettings>(2, _omitFieldNames ? '' : 'attributionSettings',
+        subBuilder: AttributionSettings.create)
     ..aOS(3, _omitFieldNames ? '' : 'property')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GoogleAnalyticsLink clone() => GoogleAnalyticsLink()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GoogleAnalyticsLink copyWith(void Function(GoogleAnalyticsLink) updates) => super.copyWith((message) => updates(message as GoogleAnalyticsLink)) as GoogleAnalyticsLink;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GoogleAnalyticsLink copyWith(void Function(GoogleAnalyticsLink) updates) =>
+      super.copyWith((message) => updates(message as GoogleAnalyticsLink))
+          as GoogleAnalyticsLink;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GoogleAnalyticsLink create() => GoogleAnalyticsLink._();
   GoogleAnalyticsLink createEmptyInstance() => create();
-  static $pb.PbList<GoogleAnalyticsLink> createRepeated() => $pb.PbList<GoogleAnalyticsLink>();
+  static $pb.PbList<GoogleAnalyticsLink> createRepeated() =>
+      $pb.PbList<GoogleAnalyticsLink>();
   @$core.pragma('dart2js:noInline')
-  static GoogleAnalyticsLink getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GoogleAnalyticsLink>(create);
+  static GoogleAnalyticsLink getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GoogleAnalyticsLink>(create);
   static GoogleAnalyticsLink? _defaultInstance;
 
   /// Required. Immutable. ID of the Google Analytics property the merchant is
@@ -383,7 +482,10 @@ class GoogleAnalyticsLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get propertyId => $_getI64(0);
   @$pb.TagNumber(1)
-  set propertyId($fixnum.Int64 v) { $_setInt64(0, v); }
+  set propertyId($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPropertyId() => $_has(0);
   @$pb.TagNumber(1)
@@ -393,7 +495,10 @@ class GoogleAnalyticsLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AttributionSettings get attributionSettings => $_getN(1);
   @$pb.TagNumber(2)
-  set attributionSettings(AttributionSettings v) { setField(2, v); }
+  set attributionSettings(AttributionSettings v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAttributionSettings() => $_has(1);
   @$pb.TagNumber(2)
@@ -406,7 +511,10 @@ class GoogleAnalyticsLink extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get property => $_getSZ(2);
   @$pb.TagNumber(3)
-  set property($core.String v) { $_setString(2, v); }
+  set property($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasProperty() => $_has(2);
   @$pb.TagNumber(3)
@@ -439,43 +547,59 @@ class MerchantCenterDestination extends $pb.GeneratedMessage {
     return $result;
   }
   MerchantCenterDestination._() : super();
-  factory MerchantCenterDestination.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MerchantCenterDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MerchantCenterDestination.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MerchantCenterDestination.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MerchantCenterDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MerchantCenterDestination',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'destination')
-    ..aOM<AttributionSettings>(2, _omitFieldNames ? '' : 'attributionSettings', subBuilder: AttributionSettings.create)
+    ..aOM<AttributionSettings>(2, _omitFieldNames ? '' : 'attributionSettings',
+        subBuilder: AttributionSettings.create)
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'currencyCode')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MerchantCenterDestination clone() => MerchantCenterDestination()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MerchantCenterDestination copyWith(void Function(MerchantCenterDestination) updates) => super.copyWith((message) => updates(message as MerchantCenterDestination)) as MerchantCenterDestination;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MerchantCenterDestination clone() =>
+      MerchantCenterDestination()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MerchantCenterDestination copyWith(
+          void Function(MerchantCenterDestination) updates) =>
+      super.copyWith((message) => updates(message as MerchantCenterDestination))
+          as MerchantCenterDestination;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MerchantCenterDestination create() => MerchantCenterDestination._();
   MerchantCenterDestination createEmptyInstance() => create();
-  static $pb.PbList<MerchantCenterDestination> createRepeated() => $pb.PbList<MerchantCenterDestination>();
+  static $pb.PbList<MerchantCenterDestination> createRepeated() =>
+      $pb.PbList<MerchantCenterDestination>();
   @$core.pragma('dart2js:noInline')
-  static MerchantCenterDestination getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MerchantCenterDestination>(create);
+  static MerchantCenterDestination getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MerchantCenterDestination>(create);
   static MerchantCenterDestination? _defaultInstance;
 
   /// Output only. Merchant Center Destination ID.
   @$pb.TagNumber(1)
   $core.String get destination => $_getSZ(0);
   @$pb.TagNumber(1)
-  set destination($core.String v) { $_setString(0, v); }
+  set destination($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDestination() => $_has(0);
   @$pb.TagNumber(1)
@@ -486,7 +610,10 @@ class MerchantCenterDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AttributionSettings get attributionSettings => $_getN(1);
   @$pb.TagNumber(2)
-  set attributionSettings(AttributionSettings v) { setField(2, v); }
+  set attributionSettings(AttributionSettings v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAttributionSettings() => $_has(1);
   @$pb.TagNumber(2)
@@ -500,7 +627,10 @@ class MerchantCenterDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set displayName($core.String v) { $_setString(2, v); }
+  set displayName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
@@ -512,7 +642,10 @@ class MerchantCenterDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get currencyCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set currencyCode($core.String v) { $_setString(3, v); }
+  set currencyCode($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCurrencyCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -535,34 +668,49 @@ class CreateConversionSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateConversionSourceRequest._() : super();
-  factory CreateConversionSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateConversionSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateConversionSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateConversionSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateConversionSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateConversionSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<ConversionSource>(2, _omitFieldNames ? '' : 'conversionSource', subBuilder: ConversionSource.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ConversionSource>(2, _omitFieldNames ? '' : 'conversionSource',
+        subBuilder: ConversionSource.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateConversionSourceRequest clone() => CreateConversionSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateConversionSourceRequest copyWith(void Function(CreateConversionSourceRequest) updates) => super.copyWith((message) => updates(message as CreateConversionSourceRequest)) as CreateConversionSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateConversionSourceRequest clone() =>
+      CreateConversionSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateConversionSourceRequest copyWith(
+          void Function(CreateConversionSourceRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as CreateConversionSourceRequest))
+          as CreateConversionSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateConversionSourceRequest create() => CreateConversionSourceRequest._();
+  static CreateConversionSourceRequest create() =>
+      CreateConversionSourceRequest._();
   CreateConversionSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateConversionSourceRequest> createRepeated() => $pb.PbList<CreateConversionSourceRequest>();
+  static $pb.PbList<CreateConversionSourceRequest> createRepeated() =>
+      $pb.PbList<CreateConversionSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateConversionSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateConversionSourceRequest>(create);
+  static CreateConversionSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateConversionSourceRequest>(create);
   static CreateConversionSourceRequest? _defaultInstance;
 
   /// Required. The merchant account that will own the new conversion source.
@@ -570,7 +718,10 @@ class CreateConversionSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -581,7 +732,10 @@ class CreateConversionSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ConversionSource get conversionSource => $_getN(1);
   @$pb.TagNumber(2)
-  set conversionSource(ConversionSource v) { setField(2, v); }
+  set conversionSource(ConversionSource v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConversionSource() => $_has(1);
   @$pb.TagNumber(2)
@@ -606,34 +760,50 @@ class UpdateConversionSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateConversionSourceRequest._() : super();
-  factory UpdateConversionSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateConversionSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateConversionSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateConversionSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConversionSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
-    ..aOM<ConversionSource>(1, _omitFieldNames ? '' : 'conversionSource', subBuilder: ConversionSource.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateConversionSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<ConversionSource>(1, _omitFieldNames ? '' : 'conversionSource',
+        subBuilder: ConversionSource.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateConversionSourceRequest clone() => UpdateConversionSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateConversionSourceRequest copyWith(void Function(UpdateConversionSourceRequest) updates) => super.copyWith((message) => updates(message as UpdateConversionSourceRequest)) as UpdateConversionSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateConversionSourceRequest clone() =>
+      UpdateConversionSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateConversionSourceRequest copyWith(
+          void Function(UpdateConversionSourceRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateConversionSourceRequest))
+          as UpdateConversionSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateConversionSourceRequest create() => UpdateConversionSourceRequest._();
+  static UpdateConversionSourceRequest create() =>
+      UpdateConversionSourceRequest._();
   UpdateConversionSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateConversionSourceRequest> createRepeated() => $pb.PbList<UpdateConversionSourceRequest>();
+  static $pb.PbList<UpdateConversionSourceRequest> createRepeated() =>
+      $pb.PbList<UpdateConversionSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateConversionSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateConversionSourceRequest>(create);
+  static UpdateConversionSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateConversionSourceRequest>(create);
   static UpdateConversionSourceRequest? _defaultInstance;
 
   /// Required. The new version of the conversion source data.
@@ -641,7 +811,10 @@ class UpdateConversionSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ConversionSource get conversionSource => $_getN(0);
   @$pb.TagNumber(1)
-  set conversionSource(ConversionSource v) { setField(1, v); }
+  set conversionSource(ConversionSource v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConversionSource() => $_has(0);
   @$pb.TagNumber(1)
@@ -653,7 +826,10 @@ class UpdateConversionSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -674,33 +850,47 @@ class DeleteConversionSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteConversionSourceRequest._() : super();
-  factory DeleteConversionSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteConversionSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteConversionSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteConversionSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteConversionSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteConversionSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteConversionSourceRequest clone() => DeleteConversionSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteConversionSourceRequest copyWith(void Function(DeleteConversionSourceRequest) updates) => super.copyWith((message) => updates(message as DeleteConversionSourceRequest)) as DeleteConversionSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteConversionSourceRequest clone() =>
+      DeleteConversionSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteConversionSourceRequest copyWith(
+          void Function(DeleteConversionSourceRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as DeleteConversionSourceRequest))
+          as DeleteConversionSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteConversionSourceRequest create() => DeleteConversionSourceRequest._();
+  static DeleteConversionSourceRequest create() =>
+      DeleteConversionSourceRequest._();
   DeleteConversionSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteConversionSourceRequest> createRepeated() => $pb.PbList<DeleteConversionSourceRequest>();
+  static $pb.PbList<DeleteConversionSourceRequest> createRepeated() =>
+      $pb.PbList<DeleteConversionSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteConversionSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteConversionSourceRequest>(create);
+  static DeleteConversionSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteConversionSourceRequest>(create);
   static DeleteConversionSourceRequest? _defaultInstance;
 
   /// Required. The name of the conversion source to be deleted.
@@ -708,7 +898,10 @@ class DeleteConversionSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -727,33 +920,48 @@ class UndeleteConversionSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UndeleteConversionSourceRequest._() : super();
-  factory UndeleteConversionSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UndeleteConversionSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UndeleteConversionSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UndeleteConversionSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeleteConversionSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UndeleteConversionSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UndeleteConversionSourceRequest clone() => UndeleteConversionSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UndeleteConversionSourceRequest copyWith(void Function(UndeleteConversionSourceRequest) updates) => super.copyWith((message) => updates(message as UndeleteConversionSourceRequest)) as UndeleteConversionSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UndeleteConversionSourceRequest clone() =>
+      UndeleteConversionSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UndeleteConversionSourceRequest copyWith(
+          void Function(UndeleteConversionSourceRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UndeleteConversionSourceRequest))
+          as UndeleteConversionSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UndeleteConversionSourceRequest create() => UndeleteConversionSourceRequest._();
+  static UndeleteConversionSourceRequest create() =>
+      UndeleteConversionSourceRequest._();
   UndeleteConversionSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<UndeleteConversionSourceRequest> createRepeated() => $pb.PbList<UndeleteConversionSourceRequest>();
+  static $pb.PbList<UndeleteConversionSourceRequest> createRepeated() =>
+      $pb.PbList<UndeleteConversionSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static UndeleteConversionSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UndeleteConversionSourceRequest>(create);
+  static UndeleteConversionSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UndeleteConversionSourceRequest>(
+          create);
   static UndeleteConversionSourceRequest? _defaultInstance;
 
   /// Required. The name of the conversion source to be undeleted.
@@ -761,7 +969,10 @@ class UndeleteConversionSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -780,33 +991,46 @@ class GetConversionSourceRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetConversionSourceRequest._() : super();
-  factory GetConversionSourceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetConversionSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetConversionSourceRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetConversionSourceRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetConversionSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetConversionSourceRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetConversionSourceRequest clone() => GetConversionSourceRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetConversionSourceRequest copyWith(void Function(GetConversionSourceRequest) updates) => super.copyWith((message) => updates(message as GetConversionSourceRequest)) as GetConversionSourceRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GetConversionSourceRequest clone() =>
+      GetConversionSourceRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetConversionSourceRequest copyWith(
+          void Function(GetConversionSourceRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetConversionSourceRequest))
+          as GetConversionSourceRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetConversionSourceRequest create() => GetConversionSourceRequest._();
   GetConversionSourceRequest createEmptyInstance() => create();
-  static $pb.PbList<GetConversionSourceRequest> createRepeated() => $pb.PbList<GetConversionSourceRequest>();
+  static $pb.PbList<GetConversionSourceRequest> createRepeated() =>
+      $pb.PbList<GetConversionSourceRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetConversionSourceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetConversionSourceRequest>(create);
+  static GetConversionSourceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetConversionSourceRequest>(create);
   static GetConversionSourceRequest? _defaultInstance;
 
   /// Required. The name of the conversion source to be fetched.
@@ -814,7 +1038,10 @@ class GetConversionSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -845,36 +1072,50 @@ class ListConversionSourcesRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListConversionSourcesRequest._() : super();
-  factory ListConversionSourcesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListConversionSourcesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListConversionSourcesRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListConversionSourcesRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListConversionSourcesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListConversionSourcesRequest',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOB(4, _omitFieldNames ? '' : 'showDeleted')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListConversionSourcesRequest clone() => ListConversionSourcesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListConversionSourcesRequest copyWith(void Function(ListConversionSourcesRequest) updates) => super.copyWith((message) => updates(message as ListConversionSourcesRequest)) as ListConversionSourcesRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListConversionSourcesRequest clone() =>
+      ListConversionSourcesRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListConversionSourcesRequest copyWith(
+          void Function(ListConversionSourcesRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListConversionSourcesRequest))
+          as ListConversionSourcesRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListConversionSourcesRequest create() => ListConversionSourcesRequest._();
+  static ListConversionSourcesRequest create() =>
+      ListConversionSourcesRequest._();
   ListConversionSourcesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListConversionSourcesRequest> createRepeated() => $pb.PbList<ListConversionSourcesRequest>();
+  static $pb.PbList<ListConversionSourcesRequest> createRepeated() =>
+      $pb.PbList<ListConversionSourcesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListConversionSourcesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListConversionSourcesRequest>(create);
+  static ListConversionSourcesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListConversionSourcesRequest>(create);
   static ListConversionSourcesRequest? _defaultInstance;
 
   /// Required. The merchant account who owns the collection of conversion
@@ -882,7 +1123,10 @@ class ListConversionSourcesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -896,7 +1140,10 @@ class ListConversionSourcesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -906,7 +1153,10 @@ class ListConversionSourcesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -916,7 +1166,10 @@ class ListConversionSourcesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get showDeleted => $_getBF(3);
   @$pb.TagNumber(4)
-  set showDeleted($core.bool v) { $_setBool(3, v); }
+  set showDeleted($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasShowDeleted() => $_has(3);
   @$pb.TagNumber(4)
@@ -939,34 +1192,50 @@ class ListConversionSourcesResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListConversionSourcesResponse._() : super();
-  factory ListConversionSourcesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListConversionSourcesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListConversionSourcesResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListConversionSourcesResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListConversionSourcesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
-    ..pc<ConversionSource>(1, _omitFieldNames ? '' : 'conversionSources', $pb.PbFieldType.PM, subBuilder: ConversionSource.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListConversionSourcesResponse',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.conversions.v1beta'),
+      createEmptyInstance: create)
+    ..pc<ConversionSource>(
+        1, _omitFieldNames ? '' : 'conversionSources', $pb.PbFieldType.PM,
+        subBuilder: ConversionSource.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListConversionSourcesResponse clone() => ListConversionSourcesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListConversionSourcesResponse copyWith(void Function(ListConversionSourcesResponse) updates) => super.copyWith((message) => updates(message as ListConversionSourcesResponse)) as ListConversionSourcesResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListConversionSourcesResponse clone() =>
+      ListConversionSourcesResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListConversionSourcesResponse copyWith(
+          void Function(ListConversionSourcesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListConversionSourcesResponse))
+          as ListConversionSourcesResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListConversionSourcesResponse create() => ListConversionSourcesResponse._();
+  static ListConversionSourcesResponse create() =>
+      ListConversionSourcesResponse._();
   ListConversionSourcesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListConversionSourcesResponse> createRepeated() => $pb.PbList<ListConversionSourcesResponse>();
+  static $pb.PbList<ListConversionSourcesResponse> createRepeated() =>
+      $pb.PbList<ListConversionSourcesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListConversionSourcesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListConversionSourcesResponse>(create);
+  static ListConversionSourcesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListConversionSourcesResponse>(create);
   static ListConversionSourcesResponse? _defaultInstance;
 
   /// List of conversion sources.
@@ -977,13 +1246,16 @@ class ListConversionSourcesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

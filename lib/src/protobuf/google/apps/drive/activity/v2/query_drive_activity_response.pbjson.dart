@@ -17,27 +17,79 @@ import 'dart:typed_data' as $typed_data;
 const QueryDriveActivityResponse$json = {
   '1': 'QueryDriveActivityResponse',
   '2': [
-    {'1': 'activities', '3': 1, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.DriveActivity', '10': 'activities'},
+    {
+      '1': 'activities',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveActivity',
+      '10': 'activities'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
 
 /// Descriptor for `QueryDriveActivityResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List queryDriveActivityResponseDescriptor = $convert.base64Decode(
-    'ChpRdWVyeURyaXZlQWN0aXZpdHlSZXNwb25zZRJMCgphY3Rpdml0aWVzGAEgAygLMiwuZ29vZ2'
-    'xlLmFwcHMuZHJpdmUuYWN0aXZpdHkudjIuRHJpdmVBY3Rpdml0eVIKYWN0aXZpdGllcxImCg9u'
-    'ZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
+final $typed_data.Uint8List queryDriveActivityResponseDescriptor =
+    $convert.base64Decode(
+        'ChpRdWVyeURyaXZlQWN0aXZpdHlSZXNwb25zZRJMCgphY3Rpdml0aWVzGAEgAygLMiwuZ29vZ2'
+        'xlLmFwcHMuZHJpdmUuYWN0aXZpdHkudjIuRHJpdmVBY3Rpdml0eVIKYWN0aXZpdGllcxImCg9u'
+        'ZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
 
 @$core.Deprecated('Use driveActivityDescriptor instead')
 const DriveActivity$json = {
   '1': 'DriveActivity',
   '2': [
-    {'1': 'primary_action_detail', '3': 2, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.ActionDetail', '10': 'primaryActionDetail'},
-    {'1': 'actors', '3': 3, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.Actor', '10': 'actors'},
-    {'1': 'actions', '3': 4, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.Action', '10': 'actions'},
-    {'1': 'targets', '3': 5, '4': 3, '5': 11, '6': '.google.apps.drive.activity.v2.Target', '10': 'targets'},
-    {'1': 'timestamp', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'timestamp'},
-    {'1': 'time_range', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.TimeRange', '9': 0, '10': 'timeRange'},
+    {
+      '1': 'primary_action_detail',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.ActionDetail',
+      '10': 'primaryActionDetail'
+    },
+    {
+      '1': 'actors',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Actor',
+      '10': 'actors'
+    },
+    {
+      '1': 'actions',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Action',
+      '10': 'actions'
+    },
+    {
+      '1': 'targets',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Target',
+      '10': 'targets'
+    },
+    {
+      '1': 'timestamp',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'timestamp'
+    },
+    {
+      '1': 'time_range',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.TimeRange',
+      '9': 0,
+      '10': 'timeRange'
+    },
   ],
   '8': [
     {'1': 'time'},
@@ -55,4 +107,3 @@ final $typed_data.Uint8List driveActivityDescriptor = $convert.base64Decode(
     'cHJvdG9idWYuVGltZXN0YW1wSABSCXRpbWVzdGFtcBJJCgp0aW1lX3JhbmdlGAcgASgLMiguZ2'
     '9vZ2xlLmFwcHMuZHJpdmUuYWN0aXZpdHkudjIuVGltZVJhbmdlSABSCXRpbWVSYW5nZUIGCgR0'
     'aW1l');
-

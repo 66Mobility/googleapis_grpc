@@ -18,12 +18,40 @@ const ReadRowsRequest$json = {
   '1': 'ReadRowsRequest',
   '2': [
     {'1': 'table_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
-    {'1': 'authorized_view_name', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'authorizedViewName'},
+    {
+      '1': 'authorized_view_name',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'authorizedViewName'
+    },
     {'1': 'app_profile_id', '3': 5, '4': 1, '5': 9, '10': 'appProfileId'},
-    {'1': 'rows', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowSet', '10': 'rows'},
-    {'1': 'filter', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter', '10': 'filter'},
+    {
+      '1': 'rows',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowSet',
+      '10': 'rows'
+    },
+    {
+      '1': 'filter',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter',
+      '10': 'filter'
+    },
     {'1': 'rows_limit', '3': 4, '4': 1, '5': 3, '10': 'rowsLimit'},
-    {'1': 'request_stats_view', '3': 6, '4': 1, '5': 14, '6': '.google.bigtable.v2.ReadRowsRequest.RequestStatsView', '10': 'requestStatsView'},
+    {
+      '1': 'request_stats_view',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.v2.ReadRowsRequest.RequestStatsView',
+      '10': 'requestStatsView'
+    },
     {'1': 'reversed', '3': 7, '4': 1, '5': 8, '10': 'reversed'},
   ],
   '4': [ReadRowsRequest_RequestStatsView$json],
@@ -57,9 +85,29 @@ final $typed_data.Uint8List readRowsRequestDescriptor = $convert.base64Decode(
 const ReadRowsResponse$json = {
   '1': 'ReadRowsResponse',
   '2': [
-    {'1': 'chunks', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.ReadRowsResponse.CellChunk', '10': 'chunks'},
-    {'1': 'last_scanned_row_key', '3': 2, '4': 1, '5': 12, '10': 'lastScannedRowKey'},
-    {'1': 'request_stats', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.RequestStats', '10': 'requestStats'},
+    {
+      '1': 'chunks',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.ReadRowsResponse.CellChunk',
+      '10': 'chunks'
+    },
+    {
+      '1': 'last_scanned_row_key',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '10': 'lastScannedRowKey'
+    },
+    {
+      '1': 'request_stats',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RequestStats',
+      '10': 'requestStats'
+    },
   ],
   '3': [ReadRowsResponse_CellChunk$json],
 };
@@ -69,8 +117,22 @@ const ReadRowsResponse_CellChunk$json = {
   '1': 'CellChunk',
   '2': [
     {'1': 'row_key', '3': 1, '4': 1, '5': 12, '10': 'rowKey'},
-    {'1': 'family_name', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.StringValue', '10': 'familyName'},
-    {'1': 'qualifier', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.BytesValue', '10': 'qualifier'},
+    {
+      '1': 'family_name',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.StringValue',
+      '10': 'familyName'
+    },
+    {
+      '1': 'qualifier',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BytesValue',
+      '10': 'qualifier'
+    },
     {'1': 'timestamp_micros', '3': 4, '4': 1, '5': 3, '10': 'timestampMicros'},
     {'1': 'labels', '3': 5, '4': 3, '5': 9, '10': 'labels'},
     {'1': 'value', '3': 6, '4': 1, '5': 12, '10': 'value'},
@@ -102,7 +164,14 @@ const SampleRowKeysRequest$json = {
   '1': 'SampleRowKeysRequest',
   '2': [
     {'1': 'table_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
-    {'1': 'authorized_view_name', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'authorizedViewName'},
+    {
+      '1': 'authorized_view_name',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'authorizedViewName'
+    },
     {'1': 'app_profile_id', '3': 2, '4': 1, '5': 9, '10': 'appProfileId'},
   ],
 };
@@ -134,10 +203,25 @@ const MutateRowRequest$json = {
   '1': 'MutateRowRequest',
   '2': [
     {'1': 'table_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
-    {'1': 'authorized_view_name', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'authorizedViewName'},
+    {
+      '1': 'authorized_view_name',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'authorizedViewName'
+    },
     {'1': 'app_profile_id', '3': 4, '4': 1, '5': 9, '10': 'appProfileId'},
     {'1': 'row_key', '3': 2, '4': 1, '5': 12, '8': {}, '10': 'rowKey'},
-    {'1': 'mutations', '3': 3, '4': 3, '5': 11, '6': '.google.bigtable.v2.Mutation', '8': {}, '10': 'mutations'},
+    {
+      '1': 'mutations',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation',
+      '8': {},
+      '10': 'mutations'
+    },
   ],
 };
 
@@ -156,17 +240,32 @@ const MutateRowResponse$json = {
 };
 
 /// Descriptor for `MutateRowResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List mutateRowResponseDescriptor = $convert.base64Decode(
-    'ChFNdXRhdGVSb3dSZXNwb25zZQ==');
+final $typed_data.Uint8List mutateRowResponseDescriptor =
+    $convert.base64Decode('ChFNdXRhdGVSb3dSZXNwb25zZQ==');
 
 @$core.Deprecated('Use mutateRowsRequestDescriptor instead')
 const MutateRowsRequest$json = {
   '1': 'MutateRowsRequest',
   '2': [
     {'1': 'table_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
-    {'1': 'authorized_view_name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'authorizedViewName'},
+    {
+      '1': 'authorized_view_name',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'authorizedViewName'
+    },
     {'1': 'app_profile_id', '3': 3, '4': 1, '5': 9, '10': 'appProfileId'},
-    {'1': 'entries', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.MutateRowsRequest.Entry', '8': {}, '10': 'entries'},
+    {
+      '1': 'entries',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.MutateRowsRequest.Entry',
+      '8': {},
+      '10': 'entries'
+    },
   ],
   '3': [MutateRowsRequest_Entry$json],
 };
@@ -176,7 +275,15 @@ const MutateRowsRequest_Entry$json = {
   '1': 'Entry',
   '2': [
     {'1': 'row_key', '3': 1, '4': 1, '5': 12, '10': 'rowKey'},
-    {'1': 'mutations', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.Mutation', '8': {}, '10': 'mutations'},
+    {
+      '1': 'mutations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation',
+      '8': {},
+      '10': 'mutations'
+    },
   ],
 };
 
@@ -195,8 +302,24 @@ final $typed_data.Uint8List mutateRowsRequestDescriptor = $convert.base64Decode(
 const MutateRowsResponse$json = {
   '1': 'MutateRowsResponse',
   '2': [
-    {'1': 'entries', '3': 1, '4': 3, '5': 11, '6': '.google.bigtable.v2.MutateRowsResponse.Entry', '10': 'entries'},
-    {'1': 'rate_limit_info', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.RateLimitInfo', '9': 0, '10': 'rateLimitInfo', '17': true},
+    {
+      '1': 'entries',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.MutateRowsResponse.Entry',
+      '10': 'entries'
+    },
+    {
+      '1': 'rate_limit_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RateLimitInfo',
+      '9': 0,
+      '10': 'rateLimitInfo',
+      '17': true
+    },
   ],
   '3': [MutateRowsResponse_Entry$json],
   '8': [
@@ -209,7 +332,14 @@ const MutateRowsResponse_Entry$json = {
   '1': 'Entry',
   '2': [
     {'1': 'index', '3': 1, '4': 1, '5': 3, '10': 'index'},
-    {'1': 'status', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
   ],
 };
 
@@ -225,7 +355,14 @@ final $typed_data.Uint8List mutateRowsResponseDescriptor = $convert.base64Decode
 const RateLimitInfo$json = {
   '1': 'RateLimitInfo',
   '2': [
-    {'1': 'period', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'period'},
+    {
+      '1': 'period',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'period'
+    },
     {'1': 'factor', '3': 2, '4': 1, '5': 1, '10': 'factor'},
   ],
 };
@@ -240,12 +377,40 @@ const CheckAndMutateRowRequest$json = {
   '1': 'CheckAndMutateRowRequest',
   '2': [
     {'1': 'table_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
-    {'1': 'authorized_view_name', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'authorizedViewName'},
+    {
+      '1': 'authorized_view_name',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'authorizedViewName'
+    },
     {'1': 'app_profile_id', '3': 7, '4': 1, '5': 9, '10': 'appProfileId'},
     {'1': 'row_key', '3': 2, '4': 1, '5': 12, '8': {}, '10': 'rowKey'},
-    {'1': 'predicate_filter', '3': 6, '4': 1, '5': 11, '6': '.google.bigtable.v2.RowFilter', '10': 'predicateFilter'},
-    {'1': 'true_mutations', '3': 4, '4': 3, '5': 11, '6': '.google.bigtable.v2.Mutation', '10': 'trueMutations'},
-    {'1': 'false_mutations', '3': 5, '4': 3, '5': 11, '6': '.google.bigtable.v2.Mutation', '10': 'falseMutations'},
+    {
+      '1': 'predicate_filter',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.RowFilter',
+      '10': 'predicateFilter'
+    },
+    {
+      '1': 'true_mutations',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation',
+      '10': 'trueMutations'
+    },
+    {
+      '1': 'false_mutations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation',
+      '10': 'falseMutations'
+    },
   ],
 };
 
@@ -265,14 +430,21 @@ final $typed_data.Uint8List checkAndMutateRowRequestDescriptor = $convert.base64
 const CheckAndMutateRowResponse$json = {
   '1': 'CheckAndMutateRowResponse',
   '2': [
-    {'1': 'predicate_matched', '3': 1, '4': 1, '5': 8, '10': 'predicateMatched'},
+    {
+      '1': 'predicate_matched',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'predicateMatched'
+    },
   ],
 };
 
 /// Descriptor for `CheckAndMutateRowResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List checkAndMutateRowResponseDescriptor = $convert.base64Decode(
-    'ChlDaGVja0FuZE11dGF0ZVJvd1Jlc3BvbnNlEisKEXByZWRpY2F0ZV9tYXRjaGVkGAEgASgIUh'
-    'BwcmVkaWNhdGVNYXRjaGVk');
+final $typed_data.Uint8List checkAndMutateRowResponseDescriptor =
+    $convert.base64Decode(
+        'ChlDaGVja0FuZE11dGF0ZVJvd1Jlc3BvbnNlEisKEXByZWRpY2F0ZV9tYXRjaGVkGAEgASgIUh'
+        'BwcmVkaWNhdGVNYXRjaGVk');
 
 @$core.Deprecated('Use pingAndWarmRequestDescriptor instead')
 const PingAndWarmRequest$json = {
@@ -295,18 +467,33 @@ const PingAndWarmResponse$json = {
 };
 
 /// Descriptor for `PingAndWarmResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List pingAndWarmResponseDescriptor = $convert.base64Decode(
-    'ChNQaW5nQW5kV2FybVJlc3BvbnNl');
+final $typed_data.Uint8List pingAndWarmResponseDescriptor =
+    $convert.base64Decode('ChNQaW5nQW5kV2FybVJlc3BvbnNl');
 
 @$core.Deprecated('Use readModifyWriteRowRequestDescriptor instead')
 const ReadModifyWriteRowRequest$json = {
   '1': 'ReadModifyWriteRowRequest',
   '2': [
     {'1': 'table_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
-    {'1': 'authorized_view_name', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'authorizedViewName'},
+    {
+      '1': 'authorized_view_name',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'authorizedViewName'
+    },
     {'1': 'app_profile_id', '3': 4, '4': 1, '5': 9, '10': 'appProfileId'},
     {'1': 'row_key', '3': 2, '4': 1, '5': 12, '8': {}, '10': 'rowKey'},
-    {'1': 'rules', '3': 3, '4': 3, '5': 11, '6': '.google.bigtable.v2.ReadModifyWriteRule', '8': {}, '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.ReadModifyWriteRule',
+      '8': {},
+      '10': 'rules'
+    },
   ],
 };
 
@@ -324,16 +511,25 @@ final $typed_data.Uint8List readModifyWriteRowRequestDescriptor = $convert.base6
 const ReadModifyWriteRowResponse$json = {
   '1': 'ReadModifyWriteRowResponse',
   '2': [
-    {'1': 'row', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.Row', '10': 'row'},
+    {
+      '1': 'row',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Row',
+      '10': 'row'
+    },
   ],
 };
 
 /// Descriptor for `ReadModifyWriteRowResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List readModifyWriteRowResponseDescriptor = $convert.base64Decode(
-    'ChpSZWFkTW9kaWZ5V3JpdGVSb3dSZXNwb25zZRIpCgNyb3cYASABKAsyFy5nb29nbGUuYmlndG'
-    'FibGUudjIuUm93UgNyb3c=');
+final $typed_data.Uint8List readModifyWriteRowResponseDescriptor =
+    $convert.base64Decode(
+        'ChpSZWFkTW9kaWZ5V3JpdGVSb3dSZXNwb25zZRIpCgNyb3cYASABKAsyFy5nb29nbGUuYmlndG'
+        'FibGUudjIuUm93UgNyb3c=');
 
-@$core.Deprecated('Use generateInitialChangeStreamPartitionsRequestDescriptor instead')
+@$core.Deprecated(
+    'Use generateInitialChangeStreamPartitionsRequestDescriptor instead')
 const GenerateInitialChangeStreamPartitionsRequest$json = {
   '1': 'GenerateInitialChangeStreamPartitionsRequest',
   '2': [
@@ -343,24 +539,36 @@ const GenerateInitialChangeStreamPartitionsRequest$json = {
 };
 
 /// Descriptor for `GenerateInitialChangeStreamPartitionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generateInitialChangeStreamPartitionsRequestDescriptor = $convert.base64Decode(
-    'CixHZW5lcmF0ZUluaXRpYWxDaGFuZ2VTdHJlYW1QYXJ0aXRpb25zUmVxdWVzdBJJCgp0YWJsZV'
-    '9uYW1lGAEgASgJQirgQQL6QSQKImJpZ3RhYmxlYWRtaW4uZ29vZ2xlYXBpcy5jb20vVGFibGVS'
-    'CXRhYmxlTmFtZRIkCg5hcHBfcHJvZmlsZV9pZBgCIAEoCVIMYXBwUHJvZmlsZUlk');
+final $typed_data.Uint8List
+    generateInitialChangeStreamPartitionsRequestDescriptor =
+    $convert.base64Decode(
+        'CixHZW5lcmF0ZUluaXRpYWxDaGFuZ2VTdHJlYW1QYXJ0aXRpb25zUmVxdWVzdBJJCgp0YWJsZV'
+        '9uYW1lGAEgASgJQirgQQL6QSQKImJpZ3RhYmxlYWRtaW4uZ29vZ2xlYXBpcy5jb20vVGFibGVS'
+        'CXRhYmxlTmFtZRIkCg5hcHBfcHJvZmlsZV9pZBgCIAEoCVIMYXBwUHJvZmlsZUlk');
 
-@$core.Deprecated('Use generateInitialChangeStreamPartitionsResponseDescriptor instead')
+@$core.Deprecated(
+    'Use generateInitialChangeStreamPartitionsResponseDescriptor instead')
 const GenerateInitialChangeStreamPartitionsResponse$json = {
   '1': 'GenerateInitialChangeStreamPartitionsResponse',
   '2': [
-    {'1': 'partition', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.StreamPartition', '10': 'partition'},
+    {
+      '1': 'partition',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamPartition',
+      '10': 'partition'
+    },
   ],
 };
 
 /// Descriptor for `GenerateInitialChangeStreamPartitionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generateInitialChangeStreamPartitionsResponseDescriptor = $convert.base64Decode(
-    'Ci1HZW5lcmF0ZUluaXRpYWxDaGFuZ2VTdHJlYW1QYXJ0aXRpb25zUmVzcG9uc2USQQoJcGFydG'
-    'l0aW9uGAEgASgLMiMuZ29vZ2xlLmJpZ3RhYmxlLnYyLlN0cmVhbVBhcnRpdGlvblIJcGFydGl0'
-    'aW9u');
+final $typed_data.Uint8List
+    generateInitialChangeStreamPartitionsResponseDescriptor =
+    $convert.base64Decode(
+        'Ci1HZW5lcmF0ZUluaXRpYWxDaGFuZ2VTdHJlYW1QYXJ0aXRpb25zUmVzcG9uc2USQQoJcGFydG'
+        'l0aW9uGAEgASgLMiMuZ29vZ2xlLmJpZ3RhYmxlLnYyLlN0cmVhbVBhcnRpdGlvblIJcGFydGl0'
+        'aW9u');
 
 @$core.Deprecated('Use readChangeStreamRequestDescriptor instead')
 const ReadChangeStreamRequest$json = {
@@ -368,11 +576,48 @@ const ReadChangeStreamRequest$json = {
   '2': [
     {'1': 'table_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'tableName'},
     {'1': 'app_profile_id', '3': 2, '4': 1, '5': 9, '10': 'appProfileId'},
-    {'1': 'partition', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.StreamPartition', '10': 'partition'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'startTime'},
-    {'1': 'continuation_tokens', '3': 6, '4': 1, '5': 11, '6': '.google.bigtable.v2.StreamContinuationTokens', '9': 0, '10': 'continuationTokens'},
-    {'1': 'end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'heartbeat_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'heartbeatDuration'},
+    {
+      '1': 'partition',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamPartition',
+      '10': 'partition'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'startTime'
+    },
+    {
+      '1': 'continuation_tokens',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamContinuationTokens',
+      '9': 0,
+      '10': 'continuationTokens'
+    },
+    {
+      '1': 'end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'heartbeat_duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'heartbeatDuration'
+    },
   ],
   '8': [
     {'1': 'start_from'},
@@ -396,11 +641,40 @@ final $typed_data.Uint8List readChangeStreamRequestDescriptor = $convert.base64D
 const ReadChangeStreamResponse$json = {
   '1': 'ReadChangeStreamResponse',
   '2': [
-    {'1': 'data_change', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.ReadChangeStreamResponse.DataChange', '9': 0, '10': 'dataChange'},
-    {'1': 'heartbeat', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.ReadChangeStreamResponse.Heartbeat', '9': 0, '10': 'heartbeat'},
-    {'1': 'close_stream', '3': 3, '4': 1, '5': 11, '6': '.google.bigtable.v2.ReadChangeStreamResponse.CloseStream', '9': 0, '10': 'closeStream'},
+    {
+      '1': 'data_change',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ReadChangeStreamResponse.DataChange',
+      '9': 0,
+      '10': 'dataChange'
+    },
+    {
+      '1': 'heartbeat',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ReadChangeStreamResponse.Heartbeat',
+      '9': 0,
+      '10': 'heartbeat'
+    },
+    {
+      '1': 'close_stream',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ReadChangeStreamResponse.CloseStream',
+      '9': 0,
+      '10': 'closeStream'
+    },
   ],
-  '3': [ReadChangeStreamResponse_MutationChunk$json, ReadChangeStreamResponse_DataChange$json, ReadChangeStreamResponse_Heartbeat$json, ReadChangeStreamResponse_CloseStream$json],
+  '3': [
+    ReadChangeStreamResponse_MutationChunk$json,
+    ReadChangeStreamResponse_DataChange$json,
+    ReadChangeStreamResponse_Heartbeat$json,
+    ReadChangeStreamResponse_CloseStream$json
+  ],
   '8': [
     {'1': 'stream_record'},
   ],
@@ -410,8 +684,23 @@ const ReadChangeStreamResponse$json = {
 const ReadChangeStreamResponse_MutationChunk$json = {
   '1': 'MutationChunk',
   '2': [
-    {'1': 'chunk_info', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.ReadChangeStreamResponse.MutationChunk.ChunkInfo', '10': 'chunkInfo'},
-    {'1': 'mutation', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Mutation', '10': 'mutation'},
+    {
+      '1': 'chunk_info',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.bigtable.v2.ReadChangeStreamResponse.MutationChunk.ChunkInfo',
+      '10': 'chunkInfo'
+    },
+    {
+      '1': 'mutation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Mutation',
+      '10': 'mutation'
+    },
   ],
   '3': [ReadChangeStreamResponse_MutationChunk_ChunkInfo$json],
 };
@@ -420,8 +709,20 @@ const ReadChangeStreamResponse_MutationChunk$json = {
 const ReadChangeStreamResponse_MutationChunk_ChunkInfo$json = {
   '1': 'ChunkInfo',
   '2': [
-    {'1': 'chunked_value_size', '3': 1, '4': 1, '5': 5, '10': 'chunkedValueSize'},
-    {'1': 'chunked_value_offset', '3': 2, '4': 1, '5': 5, '10': 'chunkedValueOffset'},
+    {
+      '1': 'chunked_value_size',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'chunkedValueSize'
+    },
+    {
+      '1': 'chunked_value_offset',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'chunkedValueOffset'
+    },
     {'1': 'last_chunk', '3': 3, '4': 1, '5': 8, '10': 'lastChunk'},
   ],
 };
@@ -430,15 +731,43 @@ const ReadChangeStreamResponse_MutationChunk_ChunkInfo$json = {
 const ReadChangeStreamResponse_DataChange$json = {
   '1': 'DataChange',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.bigtable.v2.ReadChangeStreamResponse.DataChange.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.bigtable.v2.ReadChangeStreamResponse.DataChange.Type',
+      '10': 'type'
+    },
     {'1': 'source_cluster_id', '3': 2, '4': 1, '5': 9, '10': 'sourceClusterId'},
     {'1': 'row_key', '3': 3, '4': 1, '5': 12, '10': 'rowKey'},
-    {'1': 'commit_timestamp', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'commitTimestamp'},
+    {
+      '1': 'commit_timestamp',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'commitTimestamp'
+    },
     {'1': 'tiebreaker', '3': 5, '4': 1, '5': 5, '10': 'tiebreaker'},
-    {'1': 'chunks', '3': 6, '4': 3, '5': 11, '6': '.google.bigtable.v2.ReadChangeStreamResponse.MutationChunk', '10': 'chunks'},
+    {
+      '1': 'chunks',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.ReadChangeStreamResponse.MutationChunk',
+      '10': 'chunks'
+    },
     {'1': 'done', '3': 8, '4': 1, '5': 8, '10': 'done'},
     {'1': 'token', '3': 9, '4': 1, '5': 9, '10': 'token'},
-    {'1': 'estimated_low_watermark', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'estimatedLowWatermark'},
+    {
+      '1': 'estimated_low_watermark',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'estimatedLowWatermark'
+    },
   ],
   '4': [ReadChangeStreamResponse_DataChange_Type$json],
 };
@@ -458,8 +787,22 @@ const ReadChangeStreamResponse_DataChange_Type$json = {
 const ReadChangeStreamResponse_Heartbeat$json = {
   '1': 'Heartbeat',
   '2': [
-    {'1': 'continuation_token', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.StreamContinuationToken', '10': 'continuationToken'},
-    {'1': 'estimated_low_watermark', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'estimatedLowWatermark'},
+    {
+      '1': 'continuation_token',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamContinuationToken',
+      '10': 'continuationToken'
+    },
+    {
+      '1': 'estimated_low_watermark',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'estimatedLowWatermark'
+    },
   ],
 };
 
@@ -467,9 +810,30 @@ const ReadChangeStreamResponse_Heartbeat$json = {
 const ReadChangeStreamResponse_CloseStream$json = {
   '1': 'CloseStream',
   '2': [
-    {'1': 'status', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'continuation_tokens', '3': 2, '4': 3, '5': 11, '6': '.google.bigtable.v2.StreamContinuationToken', '10': 'continuationTokens'},
-    {'1': 'new_partitions', '3': 3, '4': 3, '5': 11, '6': '.google.bigtable.v2.StreamPartition', '10': 'newPartitions'},
+    {
+      '1': 'status',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'continuation_tokens',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamContinuationToken',
+      '10': 'continuationTokens'
+    },
+    {
+      '1': 'new_partitions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.StreamPartition',
+      '10': 'newPartitions'
+    },
   ],
 };
 
@@ -510,12 +874,49 @@ final $typed_data.Uint8List readChangeStreamResponseDescriptor = $convert.base64
 const ExecuteQueryRequest$json = {
   '1': 'ExecuteQueryRequest',
   '2': [
-    {'1': 'instance_name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'instanceName'},
-    {'1': 'app_profile_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'appProfileId'},
+    {
+      '1': 'instance_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'instanceName'
+    },
+    {
+      '1': 'app_profile_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'appProfileId'
+    },
     {'1': 'query', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'query'},
-    {'1': 'proto_format', '3': 4, '4': 1, '5': 11, '6': '.google.bigtable.v2.ProtoFormat', '9': 0, '10': 'protoFormat'},
-    {'1': 'resume_token', '3': 8, '4': 1, '5': 12, '8': {}, '10': 'resumeToken'},
-    {'1': 'params', '3': 7, '4': 3, '5': 11, '6': '.google.bigtable.v2.ExecuteQueryRequest.ParamsEntry', '8': {}, '10': 'params'},
+    {
+      '1': 'proto_format',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ProtoFormat',
+      '9': 0,
+      '10': 'protoFormat'
+    },
+    {
+      '1': 'resume_token',
+      '3': 8,
+      '4': 1,
+      '5': 12,
+      '8': {},
+      '10': 'resumeToken'
+    },
+    {
+      '1': 'params',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.bigtable.v2.ExecuteQueryRequest.ParamsEntry',
+      '8': {},
+      '10': 'params'
+    },
   ],
   '3': [ExecuteQueryRequest_ParamsEntry$json],
   '8': [
@@ -528,7 +929,14 @@ const ExecuteQueryRequest_ParamsEntry$json = {
   '1': 'ParamsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.Value', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.Value',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -549,8 +957,24 @@ final $typed_data.Uint8List executeQueryRequestDescriptor = $convert.base64Decod
 const ExecuteQueryResponse$json = {
   '1': 'ExecuteQueryResponse',
   '2': [
-    {'1': 'metadata', '3': 1, '4': 1, '5': 11, '6': '.google.bigtable.v2.ResultSetMetadata', '9': 0, '10': 'metadata'},
-    {'1': 'results', '3': 2, '4': 1, '5': 11, '6': '.google.bigtable.v2.PartialResultSet', '9': 0, '10': 'results'},
+    {
+      '1': 'metadata',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.ResultSetMetadata',
+      '9': 0,
+      '10': 'metadata'
+    },
+    {
+      '1': 'results',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.bigtable.v2.PartialResultSet',
+      '9': 0,
+      '10': 'results'
+    },
   ],
   '8': [
     {'1': 'response'},
@@ -563,4 +987,3 @@ final $typed_data.Uint8List executeQueryResponseDescriptor = $convert.base64Deco
     'JsZS52Mi5SZXN1bHRTZXRNZXRhZGF0YUgAUghtZXRhZGF0YRJACgdyZXN1bHRzGAIgASgLMiQu'
     'Z29vZ2xlLmJpZ3RhYmxlLnYyLlBhcnRpYWxSZXN1bHRTZXRIAFIHcmVzdWx0c0IKCghyZXNwb2'
     '5zZQ==');
-

@@ -96,40 +96,55 @@ class Settings extends $pb.GeneratedMessage {
     return $result;
   }
   Settings._() : super();
-  factory Settings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Settings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Settings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Settings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Settings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Settings',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.actions.sdk.v2'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'defaultLocale')
     ..pPS(3, _omitFieldNames ? '' : 'enabledRegions')
     ..pPS(4, _omitFieldNames ? '' : 'disabledRegions')
-    ..e<Settings_Category>(5, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: Settings_Category.CATEGORY_UNSPECIFIED, valueOf: Settings_Category.valueOf, enumValues: Settings_Category.values)
+    ..e<Settings_Category>(
+        5, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE,
+        defaultOrMaker: Settings_Category.CATEGORY_UNSPECIFIED,
+        valueOf: Settings_Category.valueOf,
+        enumValues: Settings_Category.values)
     ..aOB(6, _omitFieldNames ? '' : 'usesTransactionsApi')
     ..aOB(7, _omitFieldNames ? '' : 'usesDigitalPurchaseApi')
     ..aOB(8, _omitFieldNames ? '' : 'usesInteractiveCanvas')
     ..aOB(9, _omitFieldNames ? '' : 'designedForFamily')
     ..aOB(11, _omitFieldNames ? '' : 'containsAlcoholOrTobaccoContent')
     ..aOB(12, _omitFieldNames ? '' : 'keepsMicOpen')
-    ..aOM<$287.SurfaceRequirements>(13, _omitFieldNames ? '' : 'surfaceRequirements', subBuilder: $287.SurfaceRequirements.create)
+    ..aOM<$287.SurfaceRequirements>(
+        13, _omitFieldNames ? '' : 'surfaceRequirements',
+        subBuilder: $287.SurfaceRequirements.create)
     ..aOS(14, _omitFieldNames ? '' : 'testingInstructions')
-    ..aOM<$288.LocalizedSettings>(15, _omitFieldNames ? '' : 'localizedSettings', subBuilder: $288.LocalizedSettings.create)
-    ..aOM<$289.AccountLinking>(16, _omitFieldNames ? '' : 'accountLinking', subBuilder: $289.AccountLinking.create)
+    ..aOM<$288.LocalizedSettings>(
+        15, _omitFieldNames ? '' : 'localizedSettings',
+        subBuilder: $288.LocalizedSettings.create)
+    ..aOM<$289.AccountLinking>(16, _omitFieldNames ? '' : 'accountLinking',
+        subBuilder: $289.AccountLinking.create)
     ..aOB(17, _omitFieldNames ? '' : 'usesHomeStorage')
     ..pPS(20, _omitFieldNames ? '' : 'selectedAndroidApps')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Settings clone() => Settings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Settings copyWith(void Function(Settings) updates) => super.copyWith((message) => updates(message as Settings)) as Settings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Settings copyWith(void Function(Settings) updates) =>
+      super.copyWith((message) => updates(message as Settings)) as Settings;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -138,14 +153,18 @@ class Settings extends $pb.GeneratedMessage {
   Settings createEmptyInstance() => create();
   static $pb.PbList<Settings> createRepeated() => $pb.PbList<Settings>();
   @$core.pragma('dart2js:noInline')
-  static Settings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Settings>(create);
+  static Settings getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Settings>(create);
   static Settings? _defaultInstance;
 
   /// Actions project id.
   @$pb.TagNumber(1)
   $core.String get projectId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set projectId($core.String v) { $_setString(0, v); }
+  set projectId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
@@ -158,7 +177,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get defaultLocale => $_getSZ(1);
   @$pb.TagNumber(2)
-  set defaultLocale($core.String v) { $_setString(1, v); }
+  set defaultLocale($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDefaultLocale() => $_has(1);
   @$pb.TagNumber(2)
@@ -202,7 +224,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Settings_Category get category => $_getN(4);
   @$pb.TagNumber(5)
-  set category(Settings_Category v) { setField(5, v); }
+  set category(Settings_Category v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasCategory() => $_has(4);
   @$pb.TagNumber(5)
@@ -214,7 +239,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get usesTransactionsApi => $_getBF(5);
   @$pb.TagNumber(6)
-  set usesTransactionsApi($core.bool v) { $_setBool(5, v); }
+  set usesTransactionsApi($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasUsesTransactionsApi() => $_has(5);
   @$pb.TagNumber(6)
@@ -224,7 +252,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get usesDigitalPurchaseApi => $_getBF(6);
   @$pb.TagNumber(7)
-  set usesDigitalPurchaseApi($core.bool v) { $_setBool(6, v); }
+  set usesDigitalPurchaseApi($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasUsesDigitalPurchaseApi() => $_has(6);
   @$pb.TagNumber(7)
@@ -234,7 +265,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get usesInteractiveCanvas => $_getBF(7);
   @$pb.TagNumber(8)
-  set usesInteractiveCanvas($core.bool v) { $_setBool(7, v); }
+  set usesInteractiveCanvas($core.bool v) {
+    $_setBool(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasUsesInteractiveCanvas() => $_has(7);
   @$pb.TagNumber(8)
@@ -244,7 +278,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool get designedForFamily => $_getBF(8);
   @$pb.TagNumber(9)
-  set designedForFamily($core.bool v) { $_setBool(8, v); }
+  set designedForFamily($core.bool v) {
+    $_setBool(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDesignedForFamily() => $_has(8);
   @$pb.TagNumber(9)
@@ -254,7 +291,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get containsAlcoholOrTobaccoContent => $_getBF(9);
   @$pb.TagNumber(11)
-  set containsAlcoholOrTobaccoContent($core.bool v) { $_setBool(9, v); }
+  set containsAlcoholOrTobaccoContent($core.bool v) {
+    $_setBool(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasContainsAlcoholOrTobaccoContent() => $_has(9);
   @$pb.TagNumber(11)
@@ -265,7 +305,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get keepsMicOpen => $_getBF(10);
   @$pb.TagNumber(12)
-  set keepsMicOpen($core.bool v) { $_setBool(10, v); }
+  set keepsMicOpen($core.bool v) {
+    $_setBool(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasKeepsMicOpen() => $_has(10);
   @$pb.TagNumber(12)
@@ -276,7 +319,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $287.SurfaceRequirements get surfaceRequirements => $_getN(11);
   @$pb.TagNumber(13)
-  set surfaceRequirements($287.SurfaceRequirements v) { setField(13, v); }
+  set surfaceRequirements($287.SurfaceRequirements v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasSurfaceRequirements() => $_has(11);
   @$pb.TagNumber(13)
@@ -289,7 +335,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get testingInstructions => $_getSZ(12);
   @$pb.TagNumber(14)
-  set testingInstructions($core.String v) { $_setString(12, v); }
+  set testingInstructions($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasTestingInstructions() => $_has(12);
   @$pb.TagNumber(14)
@@ -300,7 +349,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $288.LocalizedSettings get localizedSettings => $_getN(13);
   @$pb.TagNumber(15)
-  set localizedSettings($288.LocalizedSettings v) { setField(15, v); }
+  set localizedSettings($288.LocalizedSettings v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasLocalizedSettings() => $_has(13);
   @$pb.TagNumber(15)
@@ -313,7 +365,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $289.AccountLinking get accountLinking => $_getN(14);
   @$pb.TagNumber(16)
-  set accountLinking($289.AccountLinking v) { setField(16, v); }
+  set accountLinking($289.AccountLinking v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasAccountLinking() => $_has(14);
   @$pb.TagNumber(16)
@@ -325,7 +380,10 @@ class Settings extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool get usesHomeStorage => $_getBF(15);
   @$pb.TagNumber(17)
-  set usesHomeStorage($core.bool v) { $_setBool(15, v); }
+  set usesHomeStorage($core.bool v) {
+    $_setBool(15, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasUsesHomeStorage() => $_has(15);
   @$pb.TagNumber(17)
@@ -340,6 +398,6 @@ class Settings extends $pb.GeneratedMessage {
   $core.List<$core.String> get selectedAndroidApps => $_getList(16);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -40,13 +40,74 @@ const GenerateContentRequest$json = {
   '1': 'GenerateContentRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'system_instruction', '3': 8, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '9': 0, '10': 'systemInstruction', '17': true},
-    {'1': 'contents', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '10': 'contents'},
-    {'1': 'tools', '3': 5, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Tool', '8': {}, '10': 'tools'},
-    {'1': 'tool_config', '3': 7, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.ToolConfig', '8': {}, '10': 'toolConfig'},
-    {'1': 'safety_settings', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SafetySetting', '8': {}, '10': 'safetySettings'},
-    {'1': 'generation_config', '3': 4, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GenerationConfig', '8': {}, '9': 1, '10': 'generationConfig', '17': true},
-    {'1': 'cached_content', '3': 9, '4': 1, '5': 9, '8': {}, '9': 2, '10': 'cachedContent', '17': true},
+    {
+      '1': 'system_instruction',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '9': 0,
+      '10': 'systemInstruction',
+      '17': true
+    },
+    {
+      '1': 'contents',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '10': 'contents'
+    },
+    {
+      '1': 'tools',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Tool',
+      '8': {},
+      '10': 'tools'
+    },
+    {
+      '1': 'tool_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.ToolConfig',
+      '8': {},
+      '10': 'toolConfig'
+    },
+    {
+      '1': 'safety_settings',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SafetySetting',
+      '8': {},
+      '10': 'safetySettings'
+    },
+    {
+      '1': 'generation_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GenerationConfig',
+      '8': {},
+      '9': 1,
+      '10': 'generationConfig',
+      '17': true
+    },
+    {
+      '1': 'cached_content',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 2,
+      '10': 'cachedContent',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_system_instruction'},
@@ -77,18 +138,121 @@ final $typed_data.Uint8List generateContentRequestDescriptor = $convert.base64De
 const GenerationConfig$json = {
   '1': 'GenerationConfig',
   '2': [
-    {'1': 'candidate_count', '3': 1, '4': 1, '5': 5, '8': {}, '9': 0, '10': 'candidateCount', '17': true},
-    {'1': 'stop_sequences', '3': 2, '4': 3, '5': 9, '8': {}, '10': 'stopSequences'},
-    {'1': 'max_output_tokens', '3': 4, '4': 1, '5': 5, '8': {}, '9': 1, '10': 'maxOutputTokens', '17': true},
-    {'1': 'temperature', '3': 5, '4': 1, '5': 2, '8': {}, '9': 2, '10': 'temperature', '17': true},
-    {'1': 'top_p', '3': 6, '4': 1, '5': 2, '8': {}, '9': 3, '10': 'topP', '17': true},
-    {'1': 'top_k', '3': 7, '4': 1, '5': 5, '8': {}, '9': 4, '10': 'topK', '17': true},
-    {'1': 'response_mime_type', '3': 13, '4': 1, '5': 9, '8': {}, '10': 'responseMimeType'},
-    {'1': 'response_schema', '3': 14, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Schema', '8': {}, '10': 'responseSchema'},
-    {'1': 'presence_penalty', '3': 15, '4': 1, '5': 2, '8': {}, '9': 5, '10': 'presencePenalty', '17': true},
-    {'1': 'frequency_penalty', '3': 16, '4': 1, '5': 2, '8': {}, '9': 6, '10': 'frequencyPenalty', '17': true},
-    {'1': 'response_logprobs', '3': 17, '4': 1, '5': 8, '8': {}, '9': 7, '10': 'responseLogprobs', '17': true},
-    {'1': 'logprobs', '3': 18, '4': 1, '5': 5, '8': {}, '9': 8, '10': 'logprobs', '17': true},
+    {
+      '1': 'candidate_count',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 0,
+      '10': 'candidateCount',
+      '17': true
+    },
+    {
+      '1': 'stop_sequences',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '8': {},
+      '10': 'stopSequences'
+    },
+    {
+      '1': 'max_output_tokens',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 1,
+      '10': 'maxOutputTokens',
+      '17': true
+    },
+    {
+      '1': 'temperature',
+      '3': 5,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 2,
+      '10': 'temperature',
+      '17': true
+    },
+    {
+      '1': 'top_p',
+      '3': 6,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 3,
+      '10': 'topP',
+      '17': true
+    },
+    {
+      '1': 'top_k',
+      '3': 7,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 4,
+      '10': 'topK',
+      '17': true
+    },
+    {
+      '1': 'response_mime_type',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'responseMimeType'
+    },
+    {
+      '1': 'response_schema',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Schema',
+      '8': {},
+      '10': 'responseSchema'
+    },
+    {
+      '1': 'presence_penalty',
+      '3': 15,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 5,
+      '10': 'presencePenalty',
+      '17': true
+    },
+    {
+      '1': 'frequency_penalty',
+      '3': 16,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 6,
+      '10': 'frequencyPenalty',
+      '17': true
+    },
+    {
+      '1': 'response_logprobs',
+      '3': 17,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '9': 7,
+      '10': 'responseLogprobs',
+      '17': true
+    },
+    {
+      '1': 'logprobs',
+      '3': 18,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 8,
+      '10': 'logprobs',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_candidate_count'},
@@ -125,10 +289,44 @@ const SemanticRetrieverConfig$json = {
   '1': 'SemanticRetrieverConfig',
   '2': [
     {'1': 'source', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'source'},
-    {'1': 'query', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '10': 'query'},
-    {'1': 'metadata_filters', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.MetadataFilter', '8': {}, '10': 'metadataFilters'},
-    {'1': 'max_chunks_count', '3': 4, '4': 1, '5': 5, '8': {}, '9': 0, '10': 'maxChunksCount', '17': true},
-    {'1': 'minimum_relevance_score', '3': 5, '4': 1, '5': 2, '8': {}, '9': 1, '10': 'minimumRelevanceScore', '17': true},
+    {
+      '1': 'query',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '10': 'query'
+    },
+    {
+      '1': 'metadata_filters',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.MetadataFilter',
+      '8': {},
+      '10': 'metadataFilters'
+    },
+    {
+      '1': 'max_chunks_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 0,
+      '10': 'maxChunksCount',
+      '17': true
+    },
+    {
+      '1': 'minimum_relevance_score',
+      '3': 5,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 1,
+      '10': 'minimumRelevanceScore',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_max_chunks_count'},
@@ -151,19 +349,62 @@ final $typed_data.Uint8List semanticRetrieverConfigDescriptor = $convert.base64D
 const GenerateContentResponse$json = {
   '1': 'GenerateContentResponse',
   '2': [
-    {'1': 'candidates', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Candidate', '10': 'candidates'},
-    {'1': 'prompt_feedback', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GenerateContentResponse.PromptFeedback', '10': 'promptFeedback'},
-    {'1': 'usage_metadata', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GenerateContentResponse.UsageMetadata', '8': {}, '10': 'usageMetadata'},
+    {
+      '1': 'candidates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Candidate',
+      '10': 'candidates'
+    },
+    {
+      '1': 'prompt_feedback',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.ai.generativelanguage.v1beta.GenerateContentResponse.PromptFeedback',
+      '10': 'promptFeedback'
+    },
+    {
+      '1': 'usage_metadata',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.ai.generativelanguage.v1beta.GenerateContentResponse.UsageMetadata',
+      '8': {},
+      '10': 'usageMetadata'
+    },
   ],
-  '3': [GenerateContentResponse_PromptFeedback$json, GenerateContentResponse_UsageMetadata$json],
+  '3': [
+    GenerateContentResponse_PromptFeedback$json,
+    GenerateContentResponse_UsageMetadata$json
+  ],
 };
 
 @$core.Deprecated('Use generateContentResponseDescriptor instead')
 const GenerateContentResponse_PromptFeedback$json = {
   '1': 'PromptFeedback',
   '2': [
-    {'1': 'block_reason', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.GenerateContentResponse.PromptFeedback.BlockReason', '8': {}, '10': 'blockReason'},
-    {'1': 'safety_ratings', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SafetyRating', '10': 'safetyRatings'},
+    {
+      '1': 'block_reason',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.ai.generativelanguage.v1beta.GenerateContentResponse.PromptFeedback.BlockReason',
+      '8': {},
+      '10': 'blockReason'
+    },
+    {
+      '1': 'safety_ratings',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SafetyRating',
+      '10': 'safetyRatings'
+    },
   ],
   '4': [GenerateContentResponse_PromptFeedback_BlockReason$json],
 };
@@ -184,9 +425,27 @@ const GenerateContentResponse_PromptFeedback_BlockReason$json = {
 const GenerateContentResponse_UsageMetadata$json = {
   '1': 'UsageMetadata',
   '2': [
-    {'1': 'prompt_token_count', '3': 1, '4': 1, '5': 5, '10': 'promptTokenCount'},
-    {'1': 'cached_content_token_count', '3': 4, '4': 1, '5': 5, '10': 'cachedContentTokenCount'},
-    {'1': 'candidates_token_count', '3': 2, '4': 1, '5': 5, '10': 'candidatesTokenCount'},
+    {
+      '1': 'prompt_token_count',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'promptTokenCount'
+    },
+    {
+      '1': 'cached_content_token_count',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'cachedContentTokenCount'
+    },
+    {
+      '1': 'candidates_token_count',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'candidatesTokenCount'
+    },
     {'1': 'total_token_count', '3': 3, '4': 1, '5': 5, '10': 'totalTokenCount'},
   ],
 };
@@ -215,16 +474,87 @@ final $typed_data.Uint8List generateContentResponseDescriptor = $convert.base64D
 const Candidate$json = {
   '1': 'Candidate',
   '2': [
-    {'1': 'index', '3': 3, '4': 1, '5': 5, '8': {}, '9': 0, '10': 'index', '17': true},
-    {'1': 'content', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '10': 'content'},
-    {'1': 'finish_reason', '3': 2, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.Candidate.FinishReason', '8': {}, '10': 'finishReason'},
-    {'1': 'safety_ratings', '3': 5, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SafetyRating', '10': 'safetyRatings'},
-    {'1': 'citation_metadata', '3': 6, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CitationMetadata', '8': {}, '10': 'citationMetadata'},
+    {
+      '1': 'index',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 0,
+      '10': 'index',
+      '17': true
+    },
+    {
+      '1': 'content',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '10': 'content'
+    },
+    {
+      '1': 'finish_reason',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.Candidate.FinishReason',
+      '8': {},
+      '10': 'finishReason'
+    },
+    {
+      '1': 'safety_ratings',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SafetyRating',
+      '10': 'safetyRatings'
+    },
+    {
+      '1': 'citation_metadata',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.CitationMetadata',
+      '8': {},
+      '10': 'citationMetadata'
+    },
     {'1': 'token_count', '3': 7, '4': 1, '5': 5, '8': {}, '10': 'tokenCount'},
-    {'1': 'grounding_attributions', '3': 8, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GroundingAttribution', '8': {}, '10': 'groundingAttributions'},
-    {'1': 'grounding_metadata', '3': 9, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GroundingMetadata', '8': {}, '10': 'groundingMetadata'},
-    {'1': 'avg_logprobs', '3': 10, '4': 1, '5': 1, '8': {}, '10': 'avgLogprobs'},
-    {'1': 'logprobs_result', '3': 11, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.LogprobsResult', '8': {}, '10': 'logprobsResult'},
+    {
+      '1': 'grounding_attributions',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GroundingAttribution',
+      '8': {},
+      '10': 'groundingAttributions'
+    },
+    {
+      '1': 'grounding_metadata',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GroundingMetadata',
+      '8': {},
+      '10': 'groundingMetadata'
+    },
+    {
+      '1': 'avg_logprobs',
+      '3': 10,
+      '4': 1,
+      '5': 1,
+      '8': {},
+      '10': 'avgLogprobs'
+    },
+    {
+      '1': 'logprobs_result',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.LogprobsResult',
+      '8': {},
+      '10': 'logprobsResult'
+    },
   ],
   '4': [Candidate_FinishReason$json],
   '8': [
@@ -276,8 +606,22 @@ final $typed_data.Uint8List candidateDescriptor = $convert.base64Decode(
 const LogprobsResult$json = {
   '1': 'LogprobsResult',
   '2': [
-    {'1': 'top_candidates', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.LogprobsResult.TopCandidates', '10': 'topCandidates'},
-    {'1': 'chosen_candidates', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.LogprobsResult.Candidate', '10': 'chosenCandidates'},
+    {
+      '1': 'top_candidates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.LogprobsResult.TopCandidates',
+      '10': 'topCandidates'
+    },
+    {
+      '1': 'chosen_candidates',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.LogprobsResult.Candidate',
+      '10': 'chosenCandidates'
+    },
   ],
   '3': [LogprobsResult_Candidate$json, LogprobsResult_TopCandidates$json],
 };
@@ -287,8 +631,24 @@ const LogprobsResult_Candidate$json = {
   '1': 'Candidate',
   '2': [
     {'1': 'token', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'token', '17': true},
-    {'1': 'token_id', '3': 3, '4': 1, '5': 5, '9': 1, '10': 'tokenId', '17': true},
-    {'1': 'log_probability', '3': 2, '4': 1, '5': 2, '9': 2, '10': 'logProbability', '17': true},
+    {
+      '1': 'token_id',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'tokenId',
+      '17': true
+    },
+    {
+      '1': 'log_probability',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '9': 2,
+      '10': 'logProbability',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_token'},
@@ -301,7 +661,14 @@ const LogprobsResult_Candidate$json = {
 const LogprobsResult_TopCandidates$json = {
   '1': 'TopCandidates',
   '2': [
-    {'1': 'candidates', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.LogprobsResult.Candidate', '10': 'candidates'},
+    {
+      '1': 'candidates',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.LogprobsResult.Candidate',
+      '10': 'candidates'
+    },
   ],
 };
 
@@ -322,10 +689,31 @@ final $typed_data.Uint8List logprobsResultDescriptor = $convert.base64Decode(
 const AttributionSourceId$json = {
   '1': 'AttributionSourceId',
   '2': [
-    {'1': 'grounding_passage', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.AttributionSourceId.GroundingPassageId', '9': 0, '10': 'groundingPassage'},
-    {'1': 'semantic_retriever_chunk', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.AttributionSourceId.SemanticRetrieverChunk', '9': 0, '10': 'semanticRetrieverChunk'},
+    {
+      '1': 'grounding_passage',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.ai.generativelanguage.v1beta.AttributionSourceId.GroundingPassageId',
+      '9': 0,
+      '10': 'groundingPassage'
+    },
+    {
+      '1': 'semantic_retriever_chunk',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.ai.generativelanguage.v1beta.AttributionSourceId.SemanticRetrieverChunk',
+      '9': 0,
+      '10': 'semanticRetrieverChunk'
+    },
   ],
-  '3': [AttributionSourceId_GroundingPassageId$json, AttributionSourceId_SemanticRetrieverChunk$json],
+  '3': [
+    AttributionSourceId_GroundingPassageId$json,
+    AttributionSourceId_SemanticRetrieverChunk$json
+  ],
   '8': [
     {'1': 'source'},
   ],
@@ -365,8 +753,23 @@ final $typed_data.Uint8List attributionSourceIdDescriptor = $convert.base64Decod
 const GroundingAttribution$json = {
   '1': 'GroundingAttribution',
   '2': [
-    {'1': 'source_id', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.AttributionSourceId', '8': {}, '10': 'sourceId'},
-    {'1': 'content', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '10': 'content'},
+    {
+      '1': 'source_id',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.AttributionSourceId',
+      '8': {},
+      '10': 'sourceId'
+    },
+    {
+      '1': 'content',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '10': 'content'
+    },
   ],
 };
 
@@ -381,7 +784,14 @@ final $typed_data.Uint8List groundingAttributionDescriptor = $convert.base64Deco
 const RetrievalMetadata$json = {
   '1': 'RetrievalMetadata',
   '2': [
-    {'1': 'google_search_dynamic_retrieval_score', '3': 2, '4': 1, '5': 2, '8': {}, '10': 'googleSearchDynamicRetrievalScore'},
+    {
+      '1': 'google_search_dynamic_retrieval_score',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '10': 'googleSearchDynamicRetrievalScore'
+    },
   ],
 };
 
@@ -394,10 +804,43 @@ final $typed_data.Uint8List retrievalMetadataDescriptor = $convert.base64Decode(
 const GroundingMetadata$json = {
   '1': 'GroundingMetadata',
   '2': [
-    {'1': 'search_entry_point', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SearchEntryPoint', '8': {}, '9': 0, '10': 'searchEntryPoint', '17': true},
-    {'1': 'grounding_chunks', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GroundingChunk', '10': 'groundingChunks'},
-    {'1': 'grounding_supports', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GroundingSupport', '10': 'groundingSupports'},
-    {'1': 'retrieval_metadata', '3': 4, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.RetrievalMetadata', '9': 1, '10': 'retrievalMetadata', '17': true},
+    {
+      '1': 'search_entry_point',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SearchEntryPoint',
+      '8': {},
+      '9': 0,
+      '10': 'searchEntryPoint',
+      '17': true
+    },
+    {
+      '1': 'grounding_chunks',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GroundingChunk',
+      '10': 'groundingChunks'
+    },
+    {
+      '1': 'grounding_supports',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GroundingSupport',
+      '10': 'groundingSupports'
+    },
+    {
+      '1': 'retrieval_metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.RetrievalMetadata',
+      '9': 1,
+      '10': 'retrievalMetadata',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_search_entry_point'},
@@ -421,7 +864,14 @@ final $typed_data.Uint8List groundingMetadataDescriptor = $convert.base64Decode(
 const SearchEntryPoint$json = {
   '1': 'SearchEntryPoint',
   '2': [
-    {'1': 'rendered_content', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'renderedContent'},
+    {
+      '1': 'rendered_content',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'renderedContent'
+    },
     {'1': 'sdk_blob', '3': 2, '4': 1, '5': 12, '8': {}, '10': 'sdkBlob'},
   ],
 };
@@ -435,7 +885,15 @@ final $typed_data.Uint8List searchEntryPointDescriptor = $convert.base64Decode(
 const GroundingChunk$json = {
   '1': 'GroundingChunk',
   '2': [
-    {'1': 'web', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GroundingChunk.Web', '9': 0, '10': 'web'},
+    {
+      '1': 'web',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GroundingChunk.Web',
+      '9': 0,
+      '10': 'web'
+    },
   ],
   '3': [GroundingChunk_Web$json],
   '8': [
@@ -484,9 +942,30 @@ final $typed_data.Uint8List segmentDescriptor = $convert.base64Decode(
 const GroundingSupport$json = {
   '1': 'GroundingSupport',
   '2': [
-    {'1': 'segment', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Segment', '9': 0, '10': 'segment', '17': true},
-    {'1': 'grounding_chunk_indices', '3': 2, '4': 3, '5': 5, '10': 'groundingChunkIndices'},
-    {'1': 'confidence_scores', '3': 3, '4': 3, '5': 2, '10': 'confidenceScores'},
+    {
+      '1': 'segment',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Segment',
+      '9': 0,
+      '10': 'segment',
+      '17': true
+    },
+    {
+      '1': 'grounding_chunk_indices',
+      '3': 2,
+      '4': 3,
+      '5': 5,
+      '10': 'groundingChunkIndices'
+    },
+    {
+      '1': 'confidence_scores',
+      '3': 3,
+      '4': 3,
+      '5': 2,
+      '10': 'confidenceScores'
+    },
   ],
   '8': [
     {'1': '_segment'},
@@ -504,13 +983,63 @@ final $typed_data.Uint8List groundingSupportDescriptor = $convert.base64Decode(
 const GenerateAnswerRequest$json = {
   '1': 'GenerateAnswerRequest',
   '2': [
-    {'1': 'inline_passages', '3': 6, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GroundingPassages', '9': 0, '10': 'inlinePassages'},
-    {'1': 'semantic_retriever', '3': 7, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SemanticRetrieverConfig', '9': 0, '10': 'semanticRetriever'},
+    {
+      '1': 'inline_passages',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GroundingPassages',
+      '9': 0,
+      '10': 'inlinePassages'
+    },
+    {
+      '1': 'semantic_retriever',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SemanticRetrieverConfig',
+      '9': 0,
+      '10': 'semanticRetriever'
+    },
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'contents', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '10': 'contents'},
-    {'1': 'answer_style', '3': 5, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.GenerateAnswerRequest.AnswerStyle', '8': {}, '10': 'answerStyle'},
-    {'1': 'safety_settings', '3': 3, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SafetySetting', '8': {}, '10': 'safetySettings'},
-    {'1': 'temperature', '3': 4, '4': 1, '5': 2, '8': {}, '9': 1, '10': 'temperature', '17': true},
+    {
+      '1': 'contents',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '10': 'contents'
+    },
+    {
+      '1': 'answer_style',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.ai.generativelanguage.v1beta.GenerateAnswerRequest.AnswerStyle',
+      '8': {},
+      '10': 'answerStyle'
+    },
+    {
+      '1': 'safety_settings',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SafetySetting',
+      '8': {},
+      '10': 'safetySettings'
+    },
+    {
+      '1': 'temperature',
+      '3': 4,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 1,
+      '10': 'temperature',
+      '17': true
+    },
   ],
   '4': [GenerateAnswerRequest_AnswerStyle$json],
   '8': [
@@ -551,9 +1080,36 @@ final $typed_data.Uint8List generateAnswerRequestDescriptor = $convert.base64Dec
 const GenerateAnswerResponse$json = {
   '1': 'GenerateAnswerResponse',
   '2': [
-    {'1': 'answer', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Candidate', '10': 'answer'},
-    {'1': 'answerable_probability', '3': 2, '4': 1, '5': 2, '8': {}, '9': 0, '10': 'answerableProbability', '17': true},
-    {'1': 'input_feedback', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GenerateAnswerResponse.InputFeedback', '8': {}, '9': 1, '10': 'inputFeedback', '17': true},
+    {
+      '1': 'answer',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Candidate',
+      '10': 'answer'
+    },
+    {
+      '1': 'answerable_probability',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '9': 0,
+      '10': 'answerableProbability',
+      '17': true
+    },
+    {
+      '1': 'input_feedback',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.ai.generativelanguage.v1beta.GenerateAnswerResponse.InputFeedback',
+      '8': {},
+      '9': 1,
+      '10': 'inputFeedback',
+      '17': true
+    },
   ],
   '3': [GenerateAnswerResponse_InputFeedback$json],
   '8': [
@@ -566,8 +1122,26 @@ const GenerateAnswerResponse$json = {
 const GenerateAnswerResponse_InputFeedback$json = {
   '1': 'InputFeedback',
   '2': [
-    {'1': 'block_reason', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.GenerateAnswerResponse.InputFeedback.BlockReason', '8': {}, '9': 0, '10': 'blockReason', '17': true},
-    {'1': 'safety_ratings', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.SafetyRating', '10': 'safetyRatings'},
+    {
+      '1': 'block_reason',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.ai.generativelanguage.v1beta.GenerateAnswerResponse.InputFeedback.BlockReason',
+      '8': {},
+      '9': 0,
+      '10': 'blockReason',
+      '17': true
+    },
+    {
+      '1': 'safety_ratings',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.SafetyRating',
+      '10': 'safetyRatings'
+    },
   ],
   '4': [GenerateAnswerResponse_InputFeedback_BlockReason$json],
   '8': [
@@ -605,10 +1179,46 @@ const EmbedContentRequest$json = {
   '1': 'EmbedContentRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'content', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '10': 'content'},
-    {'1': 'task_type', '3': 3, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.TaskType', '8': {}, '9': 0, '10': 'taskType', '17': true},
-    {'1': 'title', '3': 4, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'title', '17': true},
-    {'1': 'output_dimensionality', '3': 5, '4': 1, '5': 5, '8': {}, '9': 2, '10': 'outputDimensionality', '17': true},
+    {
+      '1': 'content',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '10': 'content'
+    },
+    {
+      '1': 'task_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.ai.generativelanguage.v1beta.TaskType',
+      '8': {},
+      '9': 0,
+      '10': 'taskType',
+      '17': true
+    },
+    {
+      '1': 'title',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'title',
+      '17': true
+    },
+    {
+      '1': 'output_dimensionality',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '9': 2,
+      '10': 'outputDimensionality',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_task_type'},
@@ -637,14 +1247,22 @@ const ContentEmbedding$json = {
 };
 
 /// Descriptor for `ContentEmbedding`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List contentEmbeddingDescriptor = $convert.base64Decode(
-    'ChBDb250ZW50RW1iZWRkaW5nEhYKBnZhbHVlcxgBIAMoAlIGdmFsdWVz');
+final $typed_data.Uint8List contentEmbeddingDescriptor = $convert
+    .base64Decode('ChBDb250ZW50RW1iZWRkaW5nEhYKBnZhbHVlcxgBIAMoAlIGdmFsdWVz');
 
 @$core.Deprecated('Use embedContentResponseDescriptor instead')
 const EmbedContentResponse$json = {
   '1': 'EmbedContentResponse',
   '2': [
-    {'1': 'embedding', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.ContentEmbedding', '8': {}, '10': 'embedding'},
+    {
+      '1': 'embedding',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.ContentEmbedding',
+      '8': {},
+      '10': 'embedding'
+    },
   ],
 };
 
@@ -659,7 +1277,15 @@ const BatchEmbedContentsRequest$json = {
   '1': 'BatchEmbedContentsRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'requests', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.EmbedContentRequest', '8': {}, '10': 'requests'},
+    {
+      '1': 'requests',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.EmbedContentRequest',
+      '8': {},
+      '10': 'requests'
+    },
   ],
 };
 
@@ -674,23 +1300,48 @@ final $typed_data.Uint8List batchEmbedContentsRequestDescriptor = $convert.base6
 const BatchEmbedContentsResponse$json = {
   '1': 'BatchEmbedContentsResponse',
   '2': [
-    {'1': 'embeddings', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.ContentEmbedding', '8': {}, '10': 'embeddings'},
+    {
+      '1': 'embeddings',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.ContentEmbedding',
+      '8': {},
+      '10': 'embeddings'
+    },
   ],
 };
 
 /// Descriptor for `BatchEmbedContentsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchEmbedContentsResponseDescriptor = $convert.base64Decode(
-    'ChpCYXRjaEVtYmVkQ29udGVudHNSZXNwb25zZRJaCgplbWJlZGRpbmdzGAEgAygLMjUuZ29vZ2'
-    'xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuQ29udGVudEVtYmVkZGluZ0ID4EEDUgpl'
-    'bWJlZGRpbmdz');
+final $typed_data.Uint8List batchEmbedContentsResponseDescriptor =
+    $convert.base64Decode(
+        'ChpCYXRjaEVtYmVkQ29udGVudHNSZXNwb25zZRJaCgplbWJlZGRpbmdzGAEgAygLMjUuZ29vZ2'
+        'xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuQ29udGVudEVtYmVkZGluZ0ID4EEDUgpl'
+        'bWJlZGRpbmdz');
 
 @$core.Deprecated('Use countTokensRequestDescriptor instead')
 const CountTokensRequest$json = {
   '1': 'CountTokensRequest',
   '2': [
     {'1': 'model', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'model'},
-    {'1': 'contents', '3': 2, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Content', '8': {}, '10': 'contents'},
-    {'1': 'generate_content_request', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GenerateContentRequest', '8': {}, '10': 'generateContentRequest'},
+    {
+      '1': 'contents',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Content',
+      '8': {},
+      '10': 'contents'
+    },
+    {
+      '1': 'generate_content_request',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.GenerateContentRequest',
+      '8': {},
+      '10': 'generateContentRequest'
+    },
   ],
 };
 
@@ -708,7 +1359,13 @@ const CountTokensResponse$json = {
   '1': 'CountTokensResponse',
   '2': [
     {'1': 'total_tokens', '3': 1, '4': 1, '5': 5, '10': 'totalTokens'},
-    {'1': 'cached_content_token_count', '3': 5, '4': 1, '5': 5, '10': 'cachedContentTokenCount'},
+    {
+      '1': 'cached_content_token_count',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'cachedContentTokenCount'
+    },
   ],
 };
 
@@ -717,4 +1374,3 @@ final $typed_data.Uint8List countTokensResponseDescriptor = $convert.base64Decod
     'ChNDb3VudFRva2Vuc1Jlc3BvbnNlEiEKDHRvdGFsX3Rva2VucxgBIAEoBVILdG90YWxUb2tlbn'
     'MSOwoaY2FjaGVkX2NvbnRlbnRfdG9rZW5fY291bnQYBSABKAVSF2NhY2hlZENvbnRlbnRUb2tl'
     'bkNvdW50');
-

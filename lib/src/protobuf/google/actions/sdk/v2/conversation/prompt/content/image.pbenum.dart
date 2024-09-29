@@ -17,23 +17,27 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// This should be used for when the image's aspect ratio does not match the
 /// image container's aspect ratio.
 class Image_ImageFill extends $pb.ProtobufEnum {
-  static const Image_ImageFill UNSPECIFIED = Image_ImageFill._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
-  static const Image_ImageFill GRAY = Image_ImageFill._(1, _omitEnumNames ? '' : 'GRAY');
-  static const Image_ImageFill WHITE = Image_ImageFill._(2, _omitEnumNames ? '' : 'WHITE');
-  static const Image_ImageFill CROPPED = Image_ImageFill._(3, _omitEnumNames ? '' : 'CROPPED');
+  static const Image_ImageFill UNSPECIFIED =
+      Image_ImageFill._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
+  static const Image_ImageFill GRAY =
+      Image_ImageFill._(1, _omitEnumNames ? '' : 'GRAY');
+  static const Image_ImageFill WHITE =
+      Image_ImageFill._(2, _omitEnumNames ? '' : 'WHITE');
+  static const Image_ImageFill CROPPED =
+      Image_ImageFill._(3, _omitEnumNames ? '' : 'CROPPED');
 
-  static const $core.List<Image_ImageFill> values = <Image_ImageFill> [
+  static const $core.List<Image_ImageFill> values = <Image_ImageFill>[
     UNSPECIFIED,
     GRAY,
     WHITE,
     CROPPED,
   ];
 
-  static final $core.Map<$core.int, Image_ImageFill> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Image_ImageFill> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Image_ImageFill? valueOf($core.int value) => _byValue[value];
 
   const Image_ImageFill._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -63,48 +63,72 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
     return $result;
   }
   FileInput_FetchSettings._() : super();
-  factory FileInput_FetchSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FileInput_FetchSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FileInput_FetchSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FileInput_FetchSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileInput.FetchSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FileInput.FetchSettings',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'dayOfMonth', $pb.PbFieldType.O3)
-    ..aOM<$535.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay', subBuilder: $535.TimeOfDay.create)
-    ..e<$427.DayOfWeek>(4, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $427.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $427.DayOfWeek.valueOf, enumValues: $427.DayOfWeek.values)
+    ..aOM<$535.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay',
+        subBuilder: $535.TimeOfDay.create)
+    ..e<$427.DayOfWeek>(
+        4, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
+        defaultOrMaker: $427.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $427.DayOfWeek.valueOf,
+        enumValues: $427.DayOfWeek.values)
     ..aOS(5, _omitFieldNames ? '' : 'timeZone')
-    ..e<FileInput_FetchSettings_Frequency>(6, _omitFieldNames ? '' : 'frequency', $pb.PbFieldType.OE, defaultOrMaker: FileInput_FetchSettings_Frequency.FREQUENCY_UNSPECIFIED, valueOf: FileInput_FetchSettings_Frequency.valueOf, enumValues: FileInput_FetchSettings_Frequency.values)
+    ..e<FileInput_FetchSettings_Frequency>(
+        6, _omitFieldNames ? '' : 'frequency', $pb.PbFieldType.OE,
+        defaultOrMaker: FileInput_FetchSettings_Frequency.FREQUENCY_UNSPECIFIED,
+        valueOf: FileInput_FetchSettings_Frequency.valueOf,
+        enumValues: FileInput_FetchSettings_Frequency.values)
     ..aOS(7, _omitFieldNames ? '' : 'fetchUri')
     ..aOS(8, _omitFieldNames ? '' : 'username')
     ..aOS(9, _omitFieldNames ? '' : 'password')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  FileInput_FetchSettings clone() => FileInput_FetchSettings()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FileInput_FetchSettings copyWith(void Function(FileInput_FetchSettings) updates) => super.copyWith((message) => updates(message as FileInput_FetchSettings)) as FileInput_FetchSettings;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FileInput_FetchSettings clone() =>
+      FileInput_FetchSettings()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FileInput_FetchSettings copyWith(
+          void Function(FileInput_FetchSettings) updates) =>
+      super.copyWith((message) => updates(message as FileInput_FetchSettings))
+          as FileInput_FetchSettings;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FileInput_FetchSettings create() => FileInput_FetchSettings._();
   FileInput_FetchSettings createEmptyInstance() => create();
-  static $pb.PbList<FileInput_FetchSettings> createRepeated() => $pb.PbList<FileInput_FetchSettings>();
+  static $pb.PbList<FileInput_FetchSettings> createRepeated() =>
+      $pb.PbList<FileInput_FetchSettings>();
   @$core.pragma('dart2js:noInline')
-  static FileInput_FetchSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FileInput_FetchSettings>(create);
+  static FileInput_FetchSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FileInput_FetchSettings>(create);
   static FileInput_FetchSettings? _defaultInstance;
 
   /// Optional. Enables or pauses the fetch schedule.
   @$pb.TagNumber(1)
   $core.bool get enabled => $_getBF(0);
   @$pb.TagNumber(1)
-  set enabled($core.bool v) { $_setBool(0, v); }
+  set enabled($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
@@ -115,7 +139,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get dayOfMonth => $_getIZ(1);
   @$pb.TagNumber(2)
-  set dayOfMonth($core.int v) { $_setSignedInt32(1, v); }
+  set dayOfMonth($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDayOfMonth() => $_has(1);
   @$pb.TagNumber(2)
@@ -126,7 +153,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $535.TimeOfDay get timeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set timeOfDay($535.TimeOfDay v) { setField(3, v); }
+  set timeOfDay($535.TimeOfDay v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTimeOfDay() => $_has(2);
   @$pb.TagNumber(3)
@@ -139,7 +169,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $427.DayOfWeek get dayOfWeek => $_getN(3);
   @$pb.TagNumber(4)
-  set dayOfWeek($427.DayOfWeek v) { setField(4, v); }
+  set dayOfWeek($427.DayOfWeek v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDayOfWeek() => $_has(3);
   @$pb.TagNumber(4)
@@ -150,7 +183,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get timeZone => $_getSZ(4);
   @$pb.TagNumber(5)
-  set timeZone($core.String v) { $_setString(4, v); }
+  set timeZone($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasTimeZone() => $_has(4);
   @$pb.TagNumber(5)
@@ -160,7 +196,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   FileInput_FetchSettings_Frequency get frequency => $_getN(5);
   @$pb.TagNumber(6)
-  set frequency(FileInput_FetchSettings_Frequency v) { setField(6, v); }
+  set frequency(FileInput_FetchSettings_Frequency v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFrequency() => $_has(5);
   @$pb.TagNumber(6)
@@ -173,7 +212,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get fetchUri => $_getSZ(6);
   @$pb.TagNumber(7)
-  set fetchUri($core.String v) { $_setString(6, v); }
+  set fetchUri($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasFetchUri() => $_has(6);
   @$pb.TagNumber(7)
@@ -186,7 +228,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get username => $_getSZ(7);
   @$pb.TagNumber(8)
-  set username($core.String v) { $_setString(7, v); }
+  set username($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasUsername() => $_has(7);
   @$pb.TagNumber(8)
@@ -199,7 +244,10 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get password => $_getSZ(8);
   @$pb.TagNumber(9)
-  set password($core.String v) { $_setString(8, v); }
+  set password($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPassword() => $_has(8);
   @$pb.TagNumber(9)
@@ -227,26 +275,38 @@ class FileInput extends $pb.GeneratedMessage {
     return $result;
   }
   FileInput._() : super();
-  factory FileInput.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FileInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FileInput.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FileInput.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
-    ..aOM<FileInput_FetchSettings>(1, _omitFieldNames ? '' : 'fetchSettings', subBuilder: FileInput_FetchSettings.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FileInput',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<FileInput_FetchSettings>(1, _omitFieldNames ? '' : 'fetchSettings',
+        subBuilder: FileInput_FetchSettings.create)
     ..aOS(2, _omitFieldNames ? '' : 'fileName')
-    ..e<FileInput_FileInputType>(3, _omitFieldNames ? '' : 'fileInputType', $pb.PbFieldType.OE, defaultOrMaker: FileInput_FileInputType.FILE_INPUT_TYPE_UNSPECIFIED, valueOf: FileInput_FileInputType.valueOf, enumValues: FileInput_FileInputType.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<FileInput_FileInputType>(
+        3, _omitFieldNames ? '' : 'fileInputType', $pb.PbFieldType.OE,
+        defaultOrMaker: FileInput_FileInputType.FILE_INPUT_TYPE_UNSPECIFIED,
+        valueOf: FileInput_FileInputType.valueOf,
+        enumValues: FileInput_FileInputType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FileInput clone() => FileInput()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FileInput copyWith(void Function(FileInput) updates) => super.copyWith((message) => updates(message as FileInput)) as FileInput;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FileInput copyWith(void Function(FileInput) updates) =>
+      super.copyWith((message) => updates(message as FileInput)) as FileInput;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -255,7 +315,8 @@ class FileInput extends $pb.GeneratedMessage {
   FileInput createEmptyInstance() => create();
   static $pb.PbList<FileInput> createRepeated() => $pb.PbList<FileInput>();
   @$core.pragma('dart2js:noInline')
-  static FileInput getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FileInput>(create);
+  static FileInput getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FileInput>(create);
   static FileInput? _defaultInstance;
 
   /// Optional. Fetch details to deliver the data source. It contains settings
@@ -264,7 +325,10 @@ class FileInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   FileInput_FetchSettings get fetchSettings => $_getN(0);
   @$pb.TagNumber(1)
-  set fetchSettings(FileInput_FetchSettings v) { setField(1, v); }
+  set fetchSettings(FileInput_FetchSettings v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFetchSettings() => $_has(0);
   @$pb.TagNumber(1)
@@ -277,7 +341,10 @@ class FileInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get fileName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set fileName($core.String v) { $_setString(1, v); }
+  set fileName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFileName() => $_has(1);
   @$pb.TagNumber(2)
@@ -287,13 +354,16 @@ class FileInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   FileInput_FileInputType get fileInputType => $_getN(2);
   @$pb.TagNumber(3)
-  set fileInputType(FileInput_FileInputType v) { setField(3, v); }
+  set fileInputType(FileInput_FileInputType v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFileInputType() => $_has(2);
   @$pb.TagNumber(3)
   void clearFileInputType() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

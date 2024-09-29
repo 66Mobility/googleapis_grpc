@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const UpstreamRequest$json = {
   '1': 'UpstreamRequest',
   '2': [
-    {'1': 'ack', '3': 1, '4': 1, '5': 11, '6': '.google.firebase.fcm.connection.v1alpha1.Ack', '9': 0, '10': 'ack'},
+    {
+      '1': 'ack',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firebase.fcm.connection.v1alpha1.Ack',
+      '9': 0,
+      '10': 'ack'
+    },
   ],
   '8': [
     {'1': 'request_type'},
@@ -33,7 +41,15 @@ final $typed_data.Uint8List upstreamRequestDescriptor = $convert.base64Decode(
 const DownstreamResponse$json = {
   '1': 'DownstreamResponse',
   '2': [
-    {'1': 'message', '3': 1, '4': 1, '5': 11, '6': '.google.firebase.fcm.connection.v1alpha1.Message', '9': 0, '10': 'message'},
+    {
+      '1': 'message',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.firebase.fcm.connection.v1alpha1.Message',
+      '9': 0,
+      '10': 'message'
+    },
   ],
   '8': [
     {'1': 'response_type'},
@@ -55,17 +71,38 @@ const Ack$json = {
 };
 
 /// Descriptor for `Ack`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List ackDescriptor = $convert.base64Decode(
-    'CgNBY2sSHQoKbWVzc2FnZV9pZBgBIAEoCVIJbWVzc2FnZUlk');
+final $typed_data.Uint8List ackDescriptor =
+    $convert.base64Decode('CgNBY2sSHQoKbWVzc2FnZV9pZBgBIAEoCVIJbWVzc2FnZUlk');
 
 @$core.Deprecated('Use messageDescriptor instead')
 const Message$json = {
   '1': 'Message',
   '2': [
     {'1': 'message_id', '3': 1, '4': 1, '5': 9, '10': 'messageId'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'expire_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
-    {'1': 'data', '3': 4, '4': 3, '5': 11, '6': '.google.firebase.fcm.connection.v1alpha1.Message.DataEntry', '10': 'data'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'expire_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
+    {
+      '1': 'data',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.firebase.fcm.connection.v1alpha1.Message.DataEntry',
+      '10': 'data'
+    },
   ],
   '3': [Message_DataEntry$json],
 };
@@ -88,4 +125,3 @@ final $typed_data.Uint8List messageDescriptor = $convert.base64Decode(
     'RhdGEYBCADKAsyOi5nb29nbGUuZmlyZWJhc2UuZmNtLmNvbm5lY3Rpb24udjFhbHBoYTEuTWVz'
     'c2FnZS5EYXRhRW50cnlSBGRhdGEaNwoJRGF0YUVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBX'
     'ZhbHVlGAIgASgJUgV2YWx1ZToCOAE=');
-

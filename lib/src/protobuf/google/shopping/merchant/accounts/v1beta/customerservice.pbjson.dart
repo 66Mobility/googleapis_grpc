@@ -17,9 +17,37 @@ import 'dart:typed_data' as $typed_data;
 const CustomerService$json = {
   '1': 'CustomerService',
   '2': [
-    {'1': 'uri', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'uri', '17': true},
-    {'1': 'email', '3': 2, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'email', '17': true},
-    {'1': 'phone', '3': 3, '4': 1, '5': 11, '6': '.google.type.PhoneNumber', '8': {}, '9': 2, '10': 'phone', '17': true},
+    {
+      '1': 'uri',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 0,
+      '10': 'uri',
+      '17': true
+    },
+    {
+      '1': 'email',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '9': 1,
+      '10': 'email',
+      '17': true
+    },
+    {
+      '1': 'phone',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.PhoneNumber',
+      '8': {},
+      '9': 2,
+      '10': 'phone',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_uri'},
@@ -33,4 +61,3 @@ final $typed_data.Uint8List customerServiceDescriptor = $convert.base64Decode(
     'Cg9DdXN0b21lclNlcnZpY2USGgoDdXJpGAEgASgJQgPgQQFIAFIDdXJpiAEBEh4KBWVtYWlsGA'
     'IgASgJQgPgQQFIAVIFZW1haWyIAQESOAoFcGhvbmUYAyABKAsyGC5nb29nbGUudHlwZS5QaG9u'
     'ZU51bWJlckID4EEBSAJSBXBob25liAEBQgYKBF91cmlCCAoGX2VtYWlsQggKBl9waG9uZQ==');
-

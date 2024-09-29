@@ -22,6 +22,5 @@ const SpanContext$json = {
 };
 
 /// Descriptor for `SpanContext`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List spanContextDescriptor = $convert.base64Decode(
-    'CgtTcGFuQ29udGV4dBIbCglzcGFuX25hbWUYASABKAlSCHNwYW5OYW1l');
-
+final $typed_data.Uint8List spanContextDescriptor = $convert
+    .base64Decode('CgtTcGFuQ29udGV4dBIbCglzcGFuX25hbWUYASABKAlSCHNwYW5OYW1l');

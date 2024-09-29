@@ -66,28 +66,34 @@ class Group extends $pb.GeneratedMessage {
     return $result;
   }
   Group._() : super();
-  factory Group.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Group.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Group.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Group.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Group', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Group',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'parentName')
     ..aOS(5, _omitFieldNames ? '' : 'filter')
     ..aOB(6, _omitFieldNames ? '' : 'isCluster')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Group clone() => Group()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Group copyWith(void Function(Group) updates) => super.copyWith((message) => updates(message as Group)) as Group;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Group copyWith(void Function(Group) updates) =>
+      super.copyWith((message) => updates(message as Group)) as Group;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -96,7 +102,8 @@ class Group extends $pb.GeneratedMessage {
   Group createEmptyInstance() => create();
   static $pb.PbList<Group> createRepeated() => $pb.PbList<Group>();
   @$core.pragma('dart2js:noInline')
-  static Group getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Group>(create);
+  static Group getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Group>(create);
   static Group? _defaultInstance;
 
   ///  Output only. The name of this group. The format is:
@@ -109,7 +116,10 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -119,7 +129,10 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -133,7 +146,10 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parentName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set parentName($core.String v) { $_setString(2, v); }
+  set parentName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasParentName() => $_has(2);
   @$pb.TagNumber(3)
@@ -144,7 +160,10 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get filter => $_getSZ(3);
   @$pb.TagNumber(5)
-  set filter($core.String v) { $_setString(3, v); }
+  set filter($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFilter() => $_has(3);
   @$pb.TagNumber(5)
@@ -155,13 +174,16 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get isCluster => $_getBF(4);
   @$pb.TagNumber(6)
-  set isCluster($core.bool v) { $_setBool(4, v); }
+  set isCluster($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasIsCluster() => $_has(4);
   @$pb.TagNumber(6)
   void clearIsCluster() => clearField(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

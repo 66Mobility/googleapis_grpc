@@ -20,15 +20,83 @@ const LocalInventory$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'account', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'account'},
     {'1': 'store_code', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'storeCode'},
-    {'1': 'price', '3': 4, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'price'},
-    {'1': 'sale_price', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.type.Price', '10': 'salePrice'},
-    {'1': 'sale_price_effective_date', '3': 6, '4': 1, '5': 11, '6': '.google.type.Interval', '10': 'salePriceEffectiveDate'},
-    {'1': 'availability', '3': 7, '4': 1, '5': 9, '9': 0, '10': 'availability', '17': true},
-    {'1': 'quantity', '3': 8, '4': 1, '5': 3, '9': 1, '10': 'quantity', '17': true},
-    {'1': 'pickup_method', '3': 9, '4': 1, '5': 9, '9': 2, '10': 'pickupMethod', '17': true},
-    {'1': 'pickup_sla', '3': 10, '4': 1, '5': 9, '9': 3, '10': 'pickupSla', '17': true},
-    {'1': 'instore_product_location', '3': 11, '4': 1, '5': 9, '9': 4, '10': 'instoreProductLocation', '17': true},
-    {'1': 'custom_attributes', '3': 12, '4': 3, '5': 11, '6': '.google.shopping.type.CustomAttribute', '10': 'customAttributes'},
+    {
+      '1': 'price',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'price'
+    },
+    {
+      '1': 'sale_price',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'salePrice'
+    },
+    {
+      '1': 'sale_price_effective_date',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Interval',
+      '10': 'salePriceEffectiveDate'
+    },
+    {
+      '1': 'availability',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'availability',
+      '17': true
+    },
+    {
+      '1': 'quantity',
+      '3': 8,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'quantity',
+      '17': true
+    },
+    {
+      '1': 'pickup_method',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'pickupMethod',
+      '17': true
+    },
+    {
+      '1': 'pickup_sla',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 3,
+      '10': 'pickupSla',
+      '17': true
+    },
+    {
+      '1': 'instore_product_location',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'instoreProductLocation',
+      '17': true
+    },
+    {
+      '1': 'custom_attributes',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.type.CustomAttribute',
+      '10': 'customAttributes'
+    },
   ],
   '7': {},
   '8': [
@@ -78,7 +146,14 @@ final $typed_data.Uint8List listLocalInventoriesRequestDescriptor = $convert.bas
 const ListLocalInventoriesResponse$json = {
   '1': 'ListLocalInventoriesResponse',
   '2': [
-    {'1': 'local_inventories', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.inventories.v1beta.LocalInventory', '10': 'localInventories'},
+    {
+      '1': 'local_inventories',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.inventories.v1beta.LocalInventory',
+      '10': 'localInventories'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -95,7 +170,15 @@ const InsertLocalInventoryRequest$json = {
   '1': 'InsertLocalInventoryRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'local_inventory', '3': 2, '4': 1, '5': 11, '6': '.google.shopping.merchant.inventories.v1beta.LocalInventory', '8': {}, '10': 'localInventory'},
+    {
+      '1': 'local_inventory',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.inventories.v1beta.LocalInventory',
+      '8': {},
+      '10': 'localInventory'
+    },
   ],
 };
 
@@ -115,7 +198,7 @@ const DeleteLocalInventoryRequest$json = {
 };
 
 /// Descriptor for `DeleteLocalInventoryRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteLocalInventoryRequestDescriptor = $convert.base64Decode(
-    'ChtEZWxldGVMb2NhbEludmVudG9yeVJlcXVlc3QSRQoEbmFtZRgBIAEoCUIx4EEC+kErCiltZX'
-    'JjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9Mb2NhbEludmVudG9yeVIEbmFtZQ==');
-
+final $typed_data.Uint8List deleteLocalInventoryRequestDescriptor =
+    $convert.base64Decode(
+        'ChtEZWxldGVMb2NhbEludmVudG9yeVJlcXVlc3QSRQoEbmFtZRgBIAEoCUIx4EEC+kErCiltZX'
+        'JjaGFudGFwaS5nb29nbGVhcGlzLmNvbS9Mb2NhbEludmVudG9yeVIEbmFtZQ==');

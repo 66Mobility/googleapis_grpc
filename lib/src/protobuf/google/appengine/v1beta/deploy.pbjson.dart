@@ -17,11 +17,46 @@ import 'dart:typed_data' as $typed_data;
 const Deployment$json = {
   '1': 'Deployment',
   '2': [
-    {'1': 'files', '3': 1, '4': 3, '5': 11, '6': '.google.appengine.v1beta.Deployment.FilesEntry', '10': 'files'},
-    {'1': 'container', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ContainerInfo', '10': 'container'},
-    {'1': 'zip', '3': 3, '4': 1, '5': 11, '6': '.google.appengine.v1beta.ZipInfo', '10': 'zip'},
-    {'1': 'build', '3': 5, '4': 1, '5': 11, '6': '.google.appengine.v1beta.BuildInfo', '10': 'build'},
-    {'1': 'cloud_build_options', '3': 6, '4': 1, '5': 11, '6': '.google.appengine.v1beta.CloudBuildOptions', '10': 'cloudBuildOptions'},
+    {
+      '1': 'files',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.appengine.v1beta.Deployment.FilesEntry',
+      '10': 'files'
+    },
+    {
+      '1': 'container',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ContainerInfo',
+      '10': 'container'
+    },
+    {
+      '1': 'zip',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.ZipInfo',
+      '10': 'zip'
+    },
+    {
+      '1': 'build',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.BuildInfo',
+      '10': 'build'
+    },
+    {
+      '1': 'cloud_build_options',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.CloudBuildOptions',
+      '10': 'cloudBuildOptions'
+    },
   ],
   '3': [Deployment_FilesEntry$json],
 };
@@ -31,7 +66,14 @@ const Deployment_FilesEntry$json = {
   '1': 'FilesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.appengine.v1beta.FileInfo', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.appengine.v1beta.FileInfo',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -72,8 +114,8 @@ const ContainerInfo$json = {
 };
 
 /// Descriptor for `ContainerInfo`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List containerInfoDescriptor = $convert.base64Decode(
-    'Cg1Db250YWluZXJJbmZvEhQKBWltYWdlGAEgASgJUgVpbWFnZQ==');
+final $typed_data.Uint8List containerInfoDescriptor = $convert
+    .base64Decode('Cg1Db250YWluZXJJbmZvEhQKBWltYWdlGAEgASgJUgVpbWFnZQ==');
 
 @$core.Deprecated('Use buildInfoDescriptor instead')
 const BuildInfo$json = {
@@ -92,7 +134,14 @@ const CloudBuildOptions$json = {
   '1': 'CloudBuildOptions',
   '2': [
     {'1': 'app_yaml_path', '3': 1, '4': 1, '5': 9, '10': 'appYamlPath'},
-    {'1': 'cloud_build_timeout', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'cloudBuildTimeout'},
+    {
+      '1': 'cloud_build_timeout',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'cloudBuildTimeout'
+    },
   ],
 };
 
@@ -115,4 +164,3 @@ const ZipInfo$json = {
 final $typed_data.Uint8List zipInfoDescriptor = $convert.base64Decode(
     'CgdaaXBJbmZvEh0KCnNvdXJjZV91cmwYAyABKAlSCXNvdXJjZVVybBIfCgtmaWxlc19jb3VudB'
     'gEIAEoBVIKZmlsZXNDb3VudA==');
-

@@ -20,21 +20,31 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// [`UpdateNotificationChannel`][google.monitoring.v3.NotificationChannelService.UpdateNotificationChannel]
 /// operation.
 class NotificationChannel_VerificationStatus extends $pb.ProtobufEnum {
-  static const NotificationChannel_VerificationStatus VERIFICATION_STATUS_UNSPECIFIED = NotificationChannel_VerificationStatus._(0, _omitEnumNames ? '' : 'VERIFICATION_STATUS_UNSPECIFIED');
-  static const NotificationChannel_VerificationStatus UNVERIFIED = NotificationChannel_VerificationStatus._(1, _omitEnumNames ? '' : 'UNVERIFIED');
-  static const NotificationChannel_VerificationStatus VERIFIED = NotificationChannel_VerificationStatus._(2, _omitEnumNames ? '' : 'VERIFIED');
+  static const NotificationChannel_VerificationStatus
+      VERIFICATION_STATUS_UNSPECIFIED =
+      NotificationChannel_VerificationStatus._(
+          0, _omitEnumNames ? '' : 'VERIFICATION_STATUS_UNSPECIFIED');
+  static const NotificationChannel_VerificationStatus UNVERIFIED =
+      NotificationChannel_VerificationStatus._(
+          1, _omitEnumNames ? '' : 'UNVERIFIED');
+  static const NotificationChannel_VerificationStatus VERIFIED =
+      NotificationChannel_VerificationStatus._(
+          2, _omitEnumNames ? '' : 'VERIFIED');
 
-  static const $core.List<NotificationChannel_VerificationStatus> values = <NotificationChannel_VerificationStatus> [
+  static const $core.List<NotificationChannel_VerificationStatus> values =
+      <NotificationChannel_VerificationStatus>[
     VERIFICATION_STATUS_UNSPECIFIED,
     UNVERIFIED,
     VERIFIED,
   ];
 
-  static final $core.Map<$core.int, NotificationChannel_VerificationStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static NotificationChannel_VerificationStatus? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, NotificationChannel_VerificationStatus>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static NotificationChannel_VerificationStatus? valueOf($core.int value) =>
+      _byValue[value];
 
-  const NotificationChannel_VerificationStatus._($core.int v, $core.String n) : super(v, n);
+  const NotificationChannel_VerificationStatus._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

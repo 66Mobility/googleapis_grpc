@@ -20,7 +20,14 @@ const GenerateAccessTokenRequest$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'delegates', '3': 2, '4': 3, '5': 9, '10': 'delegates'},
     {'1': 'scope', '3': 4, '4': 3, '5': 9, '8': {}, '10': 'scope'},
-    {'1': 'lifetime', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'lifetime'},
+    {
+      '1': 'lifetime',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'lifetime'
+    },
   ],
 };
 
@@ -36,15 +43,23 @@ const GenerateAccessTokenResponse$json = {
   '1': 'GenerateAccessTokenResponse',
   '2': [
     {'1': 'access_token', '3': 1, '4': 1, '5': 9, '10': 'accessToken'},
-    {'1': 'expire_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
+    {
+      '1': 'expire_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
   ],
 };
 
 /// Descriptor for `GenerateAccessTokenResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generateAccessTokenResponseDescriptor = $convert.base64Decode(
-    'ChtHZW5lcmF0ZUFjY2Vzc1Rva2VuUmVzcG9uc2USIQoMYWNjZXNzX3Rva2VuGAEgASgJUgthY2'
-    'Nlc3NUb2tlbhI7CgtleHBpcmVfdGltZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh'
-    'bXBSCmV4cGlyZVRpbWU=');
+final $typed_data.Uint8List generateAccessTokenResponseDescriptor =
+    $convert.base64Decode(
+        'ChtHZW5lcmF0ZUFjY2Vzc1Rva2VuUmVzcG9uc2USIQoMYWNjZXNzX3Rva2VuGAEgASgJUgthY2'
+        'Nlc3NUb2tlbhI7CgtleHBpcmVfdGltZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh'
+        'bXBSCmV4cGlyZVRpbWU=');
 
 @$core.Deprecated('Use signBlobRequestDescriptor instead')
 const SignBlobRequest$json = {
@@ -133,6 +148,6 @@ const GenerateIdTokenResponse$json = {
 };
 
 /// Descriptor for `GenerateIdTokenResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generateIdTokenResponseDescriptor = $convert.base64Decode(
-    'ChdHZW5lcmF0ZUlkVG9rZW5SZXNwb25zZRIUCgV0b2tlbhgBIAEoCVIFdG9rZW4=');
-
+final $typed_data.Uint8List generateIdTokenResponseDescriptor =
+    $convert.base64Decode(
+        'ChdHZW5lcmF0ZUlkVG9rZW5SZXNwb25zZRIUCgV0b2tlbhgBIAEoCVIFdG9rZW4=');

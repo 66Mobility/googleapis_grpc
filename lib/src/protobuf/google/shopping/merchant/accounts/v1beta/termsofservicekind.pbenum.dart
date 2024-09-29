@@ -15,19 +15,22 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The TermsOfService Kind.
 class TermsOfServiceKind extends $pb.ProtobufEnum {
-  static const TermsOfServiceKind TERMS_OF_SERVICE_KIND_UNSPECIFIED = TermsOfServiceKind._(0, _omitEnumNames ? '' : 'TERMS_OF_SERVICE_KIND_UNSPECIFIED');
-  static const TermsOfServiceKind MERCHANT_CENTER = TermsOfServiceKind._(1, _omitEnumNames ? '' : 'MERCHANT_CENTER');
+  static const TermsOfServiceKind TERMS_OF_SERVICE_KIND_UNSPECIFIED =
+      TermsOfServiceKind._(
+          0, _omitEnumNames ? '' : 'TERMS_OF_SERVICE_KIND_UNSPECIFIED');
+  static const TermsOfServiceKind MERCHANT_CENTER =
+      TermsOfServiceKind._(1, _omitEnumNames ? '' : 'MERCHANT_CENTER');
 
-  static const $core.List<TermsOfServiceKind> values = <TermsOfServiceKind> [
+  static const $core.List<TermsOfServiceKind> values = <TermsOfServiceKind>[
     TERMS_OF_SERVICE_KIND_UNSPECIFIED,
     MERCHANT_CENTER,
   ];
 
-  static final $core.Map<$core.int, TermsOfServiceKind> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, TermsOfServiceKind> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static TermsOfServiceKind? valueOf($core.int value) => _byValue[value];
 
   const TermsOfServiceKind._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

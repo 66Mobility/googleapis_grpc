@@ -15,13 +15,18 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// The state of the object associated with this lifecycle.
 class Lifecycle_State extends $pb.ProtobufEnum {
-  static const Lifecycle_State STATE_UNSPECIFIED = Lifecycle_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const Lifecycle_State UNPUBLISHED_DRAFT = Lifecycle_State._(1, _omitEnumNames ? '' : 'UNPUBLISHED_DRAFT');
-  static const Lifecycle_State PUBLISHED = Lifecycle_State._(2, _omitEnumNames ? '' : 'PUBLISHED');
-  static const Lifecycle_State DISABLED = Lifecycle_State._(3, _omitEnumNames ? '' : 'DISABLED');
-  static const Lifecycle_State DELETED = Lifecycle_State._(4, _omitEnumNames ? '' : 'DELETED');
+  static const Lifecycle_State STATE_UNSPECIFIED =
+      Lifecycle_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const Lifecycle_State UNPUBLISHED_DRAFT =
+      Lifecycle_State._(1, _omitEnumNames ? '' : 'UNPUBLISHED_DRAFT');
+  static const Lifecycle_State PUBLISHED =
+      Lifecycle_State._(2, _omitEnumNames ? '' : 'PUBLISHED');
+  static const Lifecycle_State DISABLED =
+      Lifecycle_State._(3, _omitEnumNames ? '' : 'DISABLED');
+  static const Lifecycle_State DELETED =
+      Lifecycle_State._(4, _omitEnumNames ? '' : 'DELETED');
 
-  static const $core.List<Lifecycle_State> values = <Lifecycle_State> [
+  static const $core.List<Lifecycle_State> values = <Lifecycle_State>[
     STATE_UNSPECIFIED,
     UNPUBLISHED_DRAFT,
     PUBLISHED,
@@ -29,11 +34,11 @@ class Lifecycle_State extends $pb.ProtobufEnum {
     DELETED,
   ];
 
-  static final $core.Map<$core.int, Lifecycle_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Lifecycle_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Lifecycle_State? valueOf($core.int value) => _byValue[value];
 
   const Lifecycle_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

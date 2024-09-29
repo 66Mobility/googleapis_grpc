@@ -34,41 +34,54 @@ class StaticLinkPrompt extends $pb.GeneratedMessage {
     return $result;
   }
   StaticLinkPrompt._() : super();
-  factory StaticLinkPrompt.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StaticLinkPrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StaticLinkPrompt.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StaticLinkPrompt.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticLinkPrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StaticLinkPrompt',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<OpenUrl>(2, _omitFieldNames ? '' : 'open', subBuilder: OpenUrl.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StaticLinkPrompt clone() => StaticLinkPrompt()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StaticLinkPrompt copyWith(void Function(StaticLinkPrompt) updates) => super.copyWith((message) => updates(message as StaticLinkPrompt)) as StaticLinkPrompt;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StaticLinkPrompt copyWith(void Function(StaticLinkPrompt) updates) =>
+      super.copyWith((message) => updates(message as StaticLinkPrompt))
+          as StaticLinkPrompt;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticLinkPrompt create() => StaticLinkPrompt._();
   StaticLinkPrompt createEmptyInstance() => create();
-  static $pb.PbList<StaticLinkPrompt> createRepeated() => $pb.PbList<StaticLinkPrompt>();
+  static $pb.PbList<StaticLinkPrompt> createRepeated() =>
+      $pb.PbList<StaticLinkPrompt>();
   @$core.pragma('dart2js:noInline')
-  static StaticLinkPrompt getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StaticLinkPrompt>(create);
+  static StaticLinkPrompt getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StaticLinkPrompt>(create);
   static StaticLinkPrompt? _defaultInstance;
 
   /// Name of the link
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -78,7 +91,10 @@ class StaticLinkPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OpenUrl get open => $_getN(1);
   @$pb.TagNumber(2)
-  set open(OpenUrl v) { setField(2, v); }
+  set open(OpenUrl v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOpen() => $_has(1);
   @$pb.TagNumber(2)
@@ -103,25 +119,35 @@ class OpenUrl extends $pb.GeneratedMessage {
     return $result;
   }
   OpenUrl._() : super();
-  factory OpenUrl.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OpenUrl.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OpenUrl.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OpenUrl.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OpenUrl', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OpenUrl',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.actions.sdk.v2.interactionmodel.prompt'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
-    ..e<UrlHint>(2, _omitFieldNames ? '' : 'hint', $pb.PbFieldType.OE, defaultOrMaker: UrlHint.HINT_UNSPECIFIED, valueOf: UrlHint.valueOf, enumValues: UrlHint.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<UrlHint>(2, _omitFieldNames ? '' : 'hint', $pb.PbFieldType.OE,
+        defaultOrMaker: UrlHint.HINT_UNSPECIFIED,
+        valueOf: UrlHint.valueOf,
+        enumValues: UrlHint.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OpenUrl clone() => OpenUrl()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OpenUrl copyWith(void Function(OpenUrl) updates) => super.copyWith((message) => updates(message as OpenUrl)) as OpenUrl;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OpenUrl copyWith(void Function(OpenUrl) updates) =>
+      super.copyWith((message) => updates(message as OpenUrl)) as OpenUrl;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -130,7 +156,8 @@ class OpenUrl extends $pb.GeneratedMessage {
   OpenUrl createEmptyInstance() => create();
   static $pb.PbList<OpenUrl> createRepeated() => $pb.PbList<OpenUrl>();
   @$core.pragma('dart2js:noInline')
-  static OpenUrl getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OpenUrl>(create);
+  static OpenUrl getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OpenUrl>(create);
   static OpenUrl? _defaultInstance;
 
   /// The url field which could be any of:
@@ -138,7 +165,10 @@ class OpenUrl extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get url => $_getSZ(0);
   @$pb.TagNumber(1)
-  set url($core.String v) { $_setString(0, v); }
+  set url($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUrl() => $_has(0);
   @$pb.TagNumber(1)
@@ -148,13 +178,16 @@ class OpenUrl extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   UrlHint get hint => $_getN(1);
   @$pb.TagNumber(2)
-  set hint(UrlHint v) { setField(2, v); }
+  set hint(UrlHint v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasHint() => $_has(1);
   @$pb.TagNumber(2)
   void clearHint() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

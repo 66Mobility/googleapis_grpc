@@ -19,16 +19,65 @@ const BuildProvenance$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'commands', '3': 3, '4': 3, '5': 11, '6': '.grafeas.v1.Command', '10': 'commands'},
-    {'1': 'built_artifacts', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.Artifact', '10': 'builtArtifacts'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'start_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'commands',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Command',
+      '10': 'commands'
+    },
+    {
+      '1': 'built_artifacts',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Artifact',
+      '10': 'builtArtifacts'
+    },
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'start_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'creator', '3': 8, '4': 1, '5': 9, '10': 'creator'},
     {'1': 'logs_uri', '3': 9, '4': 1, '5': 9, '10': 'logsUri'},
-    {'1': 'source_provenance', '3': 10, '4': 1, '5': 11, '6': '.grafeas.v1.Source', '10': 'sourceProvenance'},
+    {
+      '1': 'source_provenance',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.Source',
+      '10': 'sourceProvenance'
+    },
     {'1': 'trigger_id', '3': 11, '4': 1, '5': 9, '10': 'triggerId'},
-    {'1': 'build_options', '3': 12, '4': 3, '5': 11, '6': '.grafeas.v1.BuildProvenance.BuildOptionsEntry', '10': 'buildOptions'},
+    {
+      '1': 'build_options',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.BuildProvenance.BuildOptionsEntry',
+      '10': 'buildOptions'
+    },
     {'1': 'builder_version', '3': 13, '4': 1, '5': 9, '10': 'builderVersion'},
   ],
   '3': [BuildProvenance_BuildOptionsEntry$json],
@@ -64,10 +113,37 @@ final $typed_data.Uint8List buildProvenanceDescriptor = $convert.base64Decode(
 const Source$json = {
   '1': 'Source',
   '2': [
-    {'1': 'artifact_storage_source_uri', '3': 1, '4': 1, '5': 9, '10': 'artifactStorageSourceUri'},
-    {'1': 'file_hashes', '3': 2, '4': 3, '5': 11, '6': '.grafeas.v1.Source.FileHashesEntry', '10': 'fileHashes'},
-    {'1': 'context', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.SourceContext', '10': 'context'},
-    {'1': 'additional_contexts', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.SourceContext', '10': 'additionalContexts'},
+    {
+      '1': 'artifact_storage_source_uri',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'artifactStorageSourceUri'
+    },
+    {
+      '1': 'file_hashes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Source.FileHashesEntry',
+      '10': 'fileHashes'
+    },
+    {
+      '1': 'context',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.SourceContext',
+      '10': 'context'
+    },
+    {
+      '1': 'additional_contexts',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SourceContext',
+      '10': 'additionalContexts'
+    },
   ],
   '3': [Source_FileHashesEntry$json],
 };
@@ -77,7 +153,14 @@ const Source_FileHashesEntry$json = {
   '1': 'FileHashesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.FileHashes', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.FileHashes',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -96,7 +179,14 @@ final $typed_data.Uint8List sourceDescriptor = $convert.base64Decode(
 const FileHashes$json = {
   '1': 'FileHashes',
   '2': [
-    {'1': 'file_hash', '3': 1, '4': 3, '5': 11, '6': '.grafeas.v1.Hash', '10': 'fileHash'},
+    {
+      '1': 'file_hash',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.Hash',
+      '10': 'fileHash'
+    },
   ],
 };
 
@@ -156,10 +246,41 @@ final $typed_data.Uint8List artifactDescriptor = $convert.base64Decode(
 const SourceContext$json = {
   '1': 'SourceContext',
   '2': [
-    {'1': 'cloud_repo', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.CloudRepoSourceContext', '9': 0, '10': 'cloudRepo'},
-    {'1': 'gerrit', '3': 2, '4': 1, '5': 11, '6': '.grafeas.v1.GerritSourceContext', '9': 0, '10': 'gerrit'},
-    {'1': 'git', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.GitSourceContext', '9': 0, '10': 'git'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.grafeas.v1.SourceContext.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'cloud_repo',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.CloudRepoSourceContext',
+      '9': 0,
+      '10': 'cloudRepo'
+    },
+    {
+      '1': 'gerrit',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.GerritSourceContext',
+      '9': 0,
+      '10': 'gerrit'
+    },
+    {
+      '1': 'git',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.GitSourceContext',
+      '9': 0,
+      '10': 'git'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.grafeas.v1.SourceContext.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [SourceContext_LabelsEntry$json],
   '8': [
@@ -190,7 +311,14 @@ final $typed_data.Uint8List sourceContextDescriptor = $convert.base64Decode(
 const AliasContext$json = {
   '1': 'AliasContext',
   '2': [
-    {'1': 'kind', '3': 1, '4': 1, '5': 14, '6': '.grafeas.v1.AliasContext.Kind', '10': 'kind'},
+    {
+      '1': 'kind',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.grafeas.v1.AliasContext.Kind',
+      '10': 'kind'
+    },
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
   ],
   '4': [AliasContext_Kind$json],
@@ -217,9 +345,24 @@ final $typed_data.Uint8List aliasContextDescriptor = $convert.base64Decode(
 const CloudRepoSourceContext$json = {
   '1': 'CloudRepoSourceContext',
   '2': [
-    {'1': 'repo_id', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.RepoId', '10': 'repoId'},
+    {
+      '1': 'repo_id',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.RepoId',
+      '10': 'repoId'
+    },
     {'1': 'revision_id', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'revisionId'},
-    {'1': 'alias_context', '3': 3, '4': 1, '5': 11, '6': '.grafeas.v1.AliasContext', '9': 0, '10': 'aliasContext'},
+    {
+      '1': 'alias_context',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.AliasContext',
+      '9': 0,
+      '10': 'aliasContext'
+    },
   ],
   '8': [
     {'1': 'revision'},
@@ -240,7 +383,15 @@ const GerritSourceContext$json = {
     {'1': 'host_uri', '3': 1, '4': 1, '5': 9, '10': 'hostUri'},
     {'1': 'gerrit_project', '3': 2, '4': 1, '5': 9, '10': 'gerritProject'},
     {'1': 'revision_id', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'revisionId'},
-    {'1': 'alias_context', '3': 4, '4': 1, '5': 11, '6': '.grafeas.v1.AliasContext', '9': 0, '10': 'aliasContext'},
+    {
+      '1': 'alias_context',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.AliasContext',
+      '9': 0,
+      '10': 'aliasContext'
+    },
   ],
   '8': [
     {'1': 'revision'},
@@ -272,7 +423,15 @@ final $typed_data.Uint8List gitSourceContextDescriptor = $convert.base64Decode(
 const RepoId$json = {
   '1': 'RepoId',
   '2': [
-    {'1': 'project_repo_id', '3': 1, '4': 1, '5': 11, '6': '.grafeas.v1.ProjectRepoId', '9': 0, '10': 'projectRepoId'},
+    {
+      '1': 'project_repo_id',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.grafeas.v1.ProjectRepoId',
+      '9': 0,
+      '10': 'projectRepoId'
+    },
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'uid'},
   ],
   '8': [
@@ -298,4 +457,3 @@ const ProjectRepoId$json = {
 final $typed_data.Uint8List projectRepoIdDescriptor = $convert.base64Decode(
     'Cg1Qcm9qZWN0UmVwb0lkEh0KCnByb2plY3RfaWQYASABKAlSCXByb2plY3RJZBIbCglyZXBvX2'
     '5hbWUYAiABKAlSCHJlcG9OYW1l');
-

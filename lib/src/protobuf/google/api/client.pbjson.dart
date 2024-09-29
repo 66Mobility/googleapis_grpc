@@ -45,9 +45,10 @@ const ClientLibraryDestination$json = {
 };
 
 /// Descriptor for `ClientLibraryDestination`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List clientLibraryDestinationDescriptor = $convert.base64Decode(
-    'ChhDbGllbnRMaWJyYXJ5RGVzdGluYXRpb24SKgomQ0xJRU5UX0xJQlJBUllfREVTVElOQVRJT0'
-    '5fVU5TUEVDSUZJRUQQABIKCgZHSVRIVUIQChITCg9QQUNLQUdFX01BTkFHRVIQFA==');
+final $typed_data.Uint8List clientLibraryDestinationDescriptor =
+    $convert.base64Decode(
+        'ChhDbGllbnRMaWJyYXJ5RGVzdGluYXRpb24SKgomQ0xJRU5UX0xJQlJBUllfREVTVElOQVRJT0'
+        '5fVU5TUEVDSUZJRUQQABIKCgZHSVRIVUIQChITCg9QQUNLQUdFX01BTkFHRVIQFA==');
 
 @$core.Deprecated('Use commonLanguageSettingsDescriptor instead')
 const CommonLanguageSettings$json = {
@@ -61,7 +62,14 @@ const CommonLanguageSettings$json = {
       '8': {'3': true},
       '10': 'referenceDocsUri',
     },
-    {'1': 'destinations', '3': 2, '4': 3, '5': 14, '6': '.google.api.ClientLibraryDestination', '10': 'destinations'},
+    {
+      '1': 'destinations',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6': '.google.api.ClientLibraryDestination',
+      '10': 'destinations'
+    },
   ],
 };
 
@@ -76,16 +84,85 @@ const ClientLibrarySettings$json = {
   '1': 'ClientLibrarySettings',
   '2': [
     {'1': 'version', '3': 1, '4': 1, '5': 9, '10': 'version'},
-    {'1': 'launch_stage', '3': 2, '4': 1, '5': 14, '6': '.google.api.LaunchStage', '10': 'launchStage'},
-    {'1': 'rest_numeric_enums', '3': 3, '4': 1, '5': 8, '10': 'restNumericEnums'},
-    {'1': 'java_settings', '3': 21, '4': 1, '5': 11, '6': '.google.api.JavaSettings', '10': 'javaSettings'},
-    {'1': 'cpp_settings', '3': 22, '4': 1, '5': 11, '6': '.google.api.CppSettings', '10': 'cppSettings'},
-    {'1': 'php_settings', '3': 23, '4': 1, '5': 11, '6': '.google.api.PhpSettings', '10': 'phpSettings'},
-    {'1': 'python_settings', '3': 24, '4': 1, '5': 11, '6': '.google.api.PythonSettings', '10': 'pythonSettings'},
-    {'1': 'node_settings', '3': 25, '4': 1, '5': 11, '6': '.google.api.NodeSettings', '10': 'nodeSettings'},
-    {'1': 'dotnet_settings', '3': 26, '4': 1, '5': 11, '6': '.google.api.DotnetSettings', '10': 'dotnetSettings'},
-    {'1': 'ruby_settings', '3': 27, '4': 1, '5': 11, '6': '.google.api.RubySettings', '10': 'rubySettings'},
-    {'1': 'go_settings', '3': 28, '4': 1, '5': 11, '6': '.google.api.GoSettings', '10': 'goSettings'},
+    {
+      '1': 'launch_stage',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.LaunchStage',
+      '10': 'launchStage'
+    },
+    {
+      '1': 'rest_numeric_enums',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'restNumericEnums'
+    },
+    {
+      '1': 'java_settings',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.JavaSettings',
+      '10': 'javaSettings'
+    },
+    {
+      '1': 'cpp_settings',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CppSettings',
+      '10': 'cppSettings'
+    },
+    {
+      '1': 'php_settings',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.PhpSettings',
+      '10': 'phpSettings'
+    },
+    {
+      '1': 'python_settings',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.PythonSettings',
+      '10': 'pythonSettings'
+    },
+    {
+      '1': 'node_settings',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.NodeSettings',
+      '10': 'nodeSettings'
+    },
+    {
+      '1': 'dotnet_settings',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.DotnetSettings',
+      '10': 'dotnetSettings'
+    },
+    {
+      '1': 'ruby_settings',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.RubySettings',
+      '10': 'rubySettings'
+    },
+    {
+      '1': 'go_settings',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.GoSettings',
+      '10': 'goSettings'
+    },
   ],
 };
 
@@ -108,17 +185,62 @@ final $typed_data.Uint8List clientLibrarySettingsDescriptor = $convert.base64Dec
 const Publishing$json = {
   '1': 'Publishing',
   '2': [
-    {'1': 'method_settings', '3': 2, '4': 3, '5': 11, '6': '.google.api.MethodSettings', '10': 'methodSettings'},
+    {
+      '1': 'method_settings',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MethodSettings',
+      '10': 'methodSettings'
+    },
     {'1': 'new_issue_uri', '3': 101, '4': 1, '5': 9, '10': 'newIssueUri'},
-    {'1': 'documentation_uri', '3': 102, '4': 1, '5': 9, '10': 'documentationUri'},
+    {
+      '1': 'documentation_uri',
+      '3': 102,
+      '4': 1,
+      '5': 9,
+      '10': 'documentationUri'
+    },
     {'1': 'api_short_name', '3': 103, '4': 1, '5': 9, '10': 'apiShortName'},
     {'1': 'github_label', '3': 104, '4': 1, '5': 9, '10': 'githubLabel'},
-    {'1': 'codeowner_github_teams', '3': 105, '4': 3, '5': 9, '10': 'codeownerGithubTeams'},
+    {
+      '1': 'codeowner_github_teams',
+      '3': 105,
+      '4': 3,
+      '5': 9,
+      '10': 'codeownerGithubTeams'
+    },
     {'1': 'doc_tag_prefix', '3': 106, '4': 1, '5': 9, '10': 'docTagPrefix'},
-    {'1': 'organization', '3': 107, '4': 1, '5': 14, '6': '.google.api.ClientLibraryOrganization', '10': 'organization'},
-    {'1': 'library_settings', '3': 109, '4': 3, '5': 11, '6': '.google.api.ClientLibrarySettings', '10': 'librarySettings'},
-    {'1': 'proto_reference_documentation_uri', '3': 110, '4': 1, '5': 9, '10': 'protoReferenceDocumentationUri'},
-    {'1': 'rest_reference_documentation_uri', '3': 111, '4': 1, '5': 9, '10': 'restReferenceDocumentationUri'},
+    {
+      '1': 'organization',
+      '3': 107,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.ClientLibraryOrganization',
+      '10': 'organization'
+    },
+    {
+      '1': 'library_settings',
+      '3': 109,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.ClientLibrarySettings',
+      '10': 'librarySettings'
+    },
+    {
+      '1': 'proto_reference_documentation_uri',
+      '3': 110,
+      '4': 1,
+      '5': 9,
+      '10': 'protoReferenceDocumentationUri'
+    },
+    {
+      '1': 'rest_reference_documentation_uri',
+      '3': 111,
+      '4': 1,
+      '5': 9,
+      '10': 'restReferenceDocumentationUri'
+    },
   ],
 };
 
@@ -142,8 +264,22 @@ const JavaSettings$json = {
   '1': 'JavaSettings',
   '2': [
     {'1': 'library_package', '3': 1, '4': 1, '5': 9, '10': 'libraryPackage'},
-    {'1': 'service_class_names', '3': 2, '4': 3, '5': 11, '6': '.google.api.JavaSettings.ServiceClassNamesEntry', '10': 'serviceClassNames'},
-    {'1': 'common', '3': 3, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
+    {
+      '1': 'service_class_names',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.JavaSettings.ServiceClassNamesEntry',
+      '10': 'serviceClassNames'
+    },
+    {
+      '1': 'common',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
   ],
   '3': [JavaSettings_ServiceClassNamesEntry$json],
 };
@@ -171,7 +307,14 @@ final $typed_data.Uint8List javaSettingsDescriptor = $convert.base64Decode(
 const CppSettings$json = {
   '1': 'CppSettings',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
   ],
 };
 
@@ -184,7 +327,14 @@ final $typed_data.Uint8List cppSettingsDescriptor = $convert.base64Decode(
 const PhpSettings$json = {
   '1': 'PhpSettings',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
   ],
 };
 
@@ -197,8 +347,22 @@ final $typed_data.Uint8List phpSettingsDescriptor = $convert.base64Decode(
 const PythonSettings$json = {
   '1': 'PythonSettings',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
-    {'1': 'experimental_features', '3': 2, '4': 1, '5': 11, '6': '.google.api.PythonSettings.ExperimentalFeatures', '10': 'experimentalFeatures'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
+    {
+      '1': 'experimental_features',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.PythonSettings.ExperimentalFeatures',
+      '10': 'experimentalFeatures'
+    },
   ],
   '3': [PythonSettings_ExperimentalFeatures$json],
 };
@@ -207,7 +371,13 @@ const PythonSettings$json = {
 const PythonSettings_ExperimentalFeatures$json = {
   '1': 'ExperimentalFeatures',
   '2': [
-    {'1': 'rest_async_io_enabled', '3': 1, '4': 1, '5': 8, '10': 'restAsyncIoEnabled'},
+    {
+      '1': 'rest_async_io_enabled',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'restAsyncIoEnabled'
+    },
   ],
 };
 
@@ -223,7 +393,14 @@ final $typed_data.Uint8List pythonSettingsDescriptor = $convert.base64Decode(
 const NodeSettings$json = {
   '1': 'NodeSettings',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
   ],
 };
 
@@ -236,14 +413,56 @@ final $typed_data.Uint8List nodeSettingsDescriptor = $convert.base64Decode(
 const DotnetSettings$json = {
   '1': 'DotnetSettings',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
-    {'1': 'renamed_services', '3': 2, '4': 3, '5': 11, '6': '.google.api.DotnetSettings.RenamedServicesEntry', '10': 'renamedServices'},
-    {'1': 'renamed_resources', '3': 3, '4': 3, '5': 11, '6': '.google.api.DotnetSettings.RenamedResourcesEntry', '10': 'renamedResources'},
-    {'1': 'ignored_resources', '3': 4, '4': 3, '5': 9, '10': 'ignoredResources'},
-    {'1': 'forced_namespace_aliases', '3': 5, '4': 3, '5': 9, '10': 'forcedNamespaceAliases'},
-    {'1': 'handwritten_signatures', '3': 6, '4': 3, '5': 9, '10': 'handwrittenSignatures'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
+    {
+      '1': 'renamed_services',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.DotnetSettings.RenamedServicesEntry',
+      '10': 'renamedServices'
+    },
+    {
+      '1': 'renamed_resources',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.DotnetSettings.RenamedResourcesEntry',
+      '10': 'renamedResources'
+    },
+    {
+      '1': 'ignored_resources',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'ignoredResources'
+    },
+    {
+      '1': 'forced_namespace_aliases',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'forcedNamespaceAliases'
+    },
+    {
+      '1': 'handwritten_signatures',
+      '3': 6,
+      '4': 3,
+      '5': 9,
+      '10': 'handwrittenSignatures'
+    },
   ],
-  '3': [DotnetSettings_RenamedServicesEntry$json, DotnetSettings_RenamedResourcesEntry$json],
+  '3': [
+    DotnetSettings_RenamedServicesEntry$json,
+    DotnetSettings_RenamedResourcesEntry$json
+  ],
 };
 
 @$core.Deprecated('Use dotnetSettingsDescriptor instead')
@@ -284,7 +503,14 @@ final $typed_data.Uint8List dotnetSettingsDescriptor = $convert.base64Decode(
 const RubySettings$json = {
   '1': 'RubySettings',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
   ],
 };
 
@@ -297,7 +523,14 @@ final $typed_data.Uint8List rubySettingsDescriptor = $convert.base64Decode(
 const GoSettings$json = {
   '1': 'GoSettings',
   '2': [
-    {'1': 'common', '3': 1, '4': 1, '5': 11, '6': '.google.api.CommonLanguageSettings', '10': 'common'},
+    {
+      '1': 'common',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.CommonLanguageSettings',
+      '10': 'common'
+    },
   ],
 };
 
@@ -311,8 +544,21 @@ const MethodSettings$json = {
   '1': 'MethodSettings',
   '2': [
     {'1': 'selector', '3': 1, '4': 1, '5': 9, '10': 'selector'},
-    {'1': 'long_running', '3': 2, '4': 1, '5': 11, '6': '.google.api.MethodSettings.LongRunning', '10': 'longRunning'},
-    {'1': 'auto_populated_fields', '3': 3, '4': 3, '5': 9, '10': 'autoPopulatedFields'},
+    {
+      '1': 'long_running',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MethodSettings.LongRunning',
+      '10': 'longRunning'
+    },
+    {
+      '1': 'auto_populated_fields',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'autoPopulatedFields'
+    },
   ],
   '3': [MethodSettings_LongRunning$json],
 };
@@ -321,10 +567,37 @@ const MethodSettings$json = {
 const MethodSettings_LongRunning$json = {
   '1': 'LongRunning',
   '2': [
-    {'1': 'initial_poll_delay', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'initialPollDelay'},
-    {'1': 'poll_delay_multiplier', '3': 2, '4': 1, '5': 2, '10': 'pollDelayMultiplier'},
-    {'1': 'max_poll_delay', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maxPollDelay'},
-    {'1': 'total_poll_timeout', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'totalPollTimeout'},
+    {
+      '1': 'initial_poll_delay',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'initialPollDelay'
+    },
+    {
+      '1': 'poll_delay_multiplier',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '10': 'pollDelayMultiplier'
+    },
+    {
+      '1': 'max_poll_delay',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maxPollDelay'
+    },
+    {
+      '1': 'total_poll_timeout',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'totalPollTimeout'
+    },
   ],
 };
 
@@ -339,4 +612,3 @@ final $typed_data.Uint8List methodSettingsDescriptor = $convert.base64Decode(
     'ASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uUgxtYXhQb2xsRGVsYXkSRwoSdG90YWxfcG'
     '9sbF90aW1lb3V0GAQgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uUhB0b3RhbFBvbGxU'
     'aW1lb3V0');
-

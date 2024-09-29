@@ -32,4 +32,3 @@ const TableDisplayOptions$json = {
 final $typed_data.Uint8List tableDisplayOptionsDescriptor = $convert.base64Decode(
     'ChNUYWJsZURpc3BsYXlPcHRpb25zEioKDXNob3duX2NvbHVtbnMYASADKAlCBRgB4EEBUgxzaG'
     '93bkNvbHVtbnM=');
-

@@ -15,17 +15,33 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Available inbound services.
 class InboundServiceType extends $pb.ProtobufEnum {
-  static const InboundServiceType INBOUND_SERVICE_UNSPECIFIED = InboundServiceType._(0, _omitEnumNames ? '' : 'INBOUND_SERVICE_UNSPECIFIED');
-  static const InboundServiceType INBOUND_SERVICE_MAIL = InboundServiceType._(1, _omitEnumNames ? '' : 'INBOUND_SERVICE_MAIL');
-  static const InboundServiceType INBOUND_SERVICE_MAIL_BOUNCE = InboundServiceType._(2, _omitEnumNames ? '' : 'INBOUND_SERVICE_MAIL_BOUNCE');
-  static const InboundServiceType INBOUND_SERVICE_XMPP_ERROR = InboundServiceType._(3, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_ERROR');
-  static const InboundServiceType INBOUND_SERVICE_XMPP_MESSAGE = InboundServiceType._(4, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_MESSAGE');
-  static const InboundServiceType INBOUND_SERVICE_XMPP_SUBSCRIBE = InboundServiceType._(5, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_SUBSCRIBE');
-  static const InboundServiceType INBOUND_SERVICE_XMPP_PRESENCE = InboundServiceType._(6, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_PRESENCE');
-  static const InboundServiceType INBOUND_SERVICE_CHANNEL_PRESENCE = InboundServiceType._(7, _omitEnumNames ? '' : 'INBOUND_SERVICE_CHANNEL_PRESENCE');
-  static const InboundServiceType INBOUND_SERVICE_WARMUP = InboundServiceType._(9, _omitEnumNames ? '' : 'INBOUND_SERVICE_WARMUP');
+  static const InboundServiceType INBOUND_SERVICE_UNSPECIFIED =
+      InboundServiceType._(
+          0, _omitEnumNames ? '' : 'INBOUND_SERVICE_UNSPECIFIED');
+  static const InboundServiceType INBOUND_SERVICE_MAIL =
+      InboundServiceType._(1, _omitEnumNames ? '' : 'INBOUND_SERVICE_MAIL');
+  static const InboundServiceType INBOUND_SERVICE_MAIL_BOUNCE =
+      InboundServiceType._(
+          2, _omitEnumNames ? '' : 'INBOUND_SERVICE_MAIL_BOUNCE');
+  static const InboundServiceType INBOUND_SERVICE_XMPP_ERROR =
+      InboundServiceType._(
+          3, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_ERROR');
+  static const InboundServiceType INBOUND_SERVICE_XMPP_MESSAGE =
+      InboundServiceType._(
+          4, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_MESSAGE');
+  static const InboundServiceType INBOUND_SERVICE_XMPP_SUBSCRIBE =
+      InboundServiceType._(
+          5, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_SUBSCRIBE');
+  static const InboundServiceType INBOUND_SERVICE_XMPP_PRESENCE =
+      InboundServiceType._(
+          6, _omitEnumNames ? '' : 'INBOUND_SERVICE_XMPP_PRESENCE');
+  static const InboundServiceType INBOUND_SERVICE_CHANNEL_PRESENCE =
+      InboundServiceType._(
+          7, _omitEnumNames ? '' : 'INBOUND_SERVICE_CHANNEL_PRESENCE');
+  static const InboundServiceType INBOUND_SERVICE_WARMUP =
+      InboundServiceType._(9, _omitEnumNames ? '' : 'INBOUND_SERVICE_WARMUP');
 
-  static const $core.List<InboundServiceType> values = <InboundServiceType> [
+  static const $core.List<InboundServiceType> values = <InboundServiceType>[
     INBOUND_SERVICE_UNSPECIFIED,
     INBOUND_SERVICE_MAIL,
     INBOUND_SERVICE_MAIL_BOUNCE,
@@ -37,7 +53,8 @@ class InboundServiceType extends $pb.ProtobufEnum {
     INBOUND_SERVICE_WARMUP,
   ];
 
-  static final $core.Map<$core.int, InboundServiceType> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, InboundServiceType> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static InboundServiceType? valueOf($core.int value) => _byValue[value];
 
   const InboundServiceType._($core.int v, $core.String n) : super(v, n);
@@ -45,17 +62,21 @@ class InboundServiceType extends $pb.ProtobufEnum {
 
 /// Run states of a version.
 class ServingStatus extends $pb.ProtobufEnum {
-  static const ServingStatus SERVING_STATUS_UNSPECIFIED = ServingStatus._(0, _omitEnumNames ? '' : 'SERVING_STATUS_UNSPECIFIED');
-  static const ServingStatus SERVING = ServingStatus._(1, _omitEnumNames ? '' : 'SERVING');
-  static const ServingStatus STOPPED = ServingStatus._(2, _omitEnumNames ? '' : 'STOPPED');
+  static const ServingStatus SERVING_STATUS_UNSPECIFIED =
+      ServingStatus._(0, _omitEnumNames ? '' : 'SERVING_STATUS_UNSPECIFIED');
+  static const ServingStatus SERVING =
+      ServingStatus._(1, _omitEnumNames ? '' : 'SERVING');
+  static const ServingStatus STOPPED =
+      ServingStatus._(2, _omitEnumNames ? '' : 'STOPPED');
 
-  static const $core.List<ServingStatus> values = <ServingStatus> [
+  static const $core.List<ServingStatus> values = <ServingStatus>[
     SERVING_STATUS_UNSPECIFIED,
     SERVING,
     STOPPED,
   ];
 
-  static final $core.Map<$core.int, ServingStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, ServingStatus> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static ServingStatus? valueOf($core.int value) => _byValue[value];
 
   const ServingStatus._($core.int v, $core.String n) : super(v, n);
@@ -63,20 +84,28 @@ class ServingStatus extends $pb.ProtobufEnum {
 
 /// Available rollout strategies.
 class EndpointsApiService_RolloutStrategy extends $pb.ProtobufEnum {
-  static const EndpointsApiService_RolloutStrategy UNSPECIFIED_ROLLOUT_STRATEGY = EndpointsApiService_RolloutStrategy._(0, _omitEnumNames ? '' : 'UNSPECIFIED_ROLLOUT_STRATEGY');
-  static const EndpointsApiService_RolloutStrategy FIXED = EndpointsApiService_RolloutStrategy._(1, _omitEnumNames ? '' : 'FIXED');
-  static const EndpointsApiService_RolloutStrategy MANAGED = EndpointsApiService_RolloutStrategy._(2, _omitEnumNames ? '' : 'MANAGED');
+  static const EndpointsApiService_RolloutStrategy
+      UNSPECIFIED_ROLLOUT_STRATEGY = EndpointsApiService_RolloutStrategy._(
+          0, _omitEnumNames ? '' : 'UNSPECIFIED_ROLLOUT_STRATEGY');
+  static const EndpointsApiService_RolloutStrategy FIXED =
+      EndpointsApiService_RolloutStrategy._(1, _omitEnumNames ? '' : 'FIXED');
+  static const EndpointsApiService_RolloutStrategy MANAGED =
+      EndpointsApiService_RolloutStrategy._(2, _omitEnumNames ? '' : 'MANAGED');
 
-  static const $core.List<EndpointsApiService_RolloutStrategy> values = <EndpointsApiService_RolloutStrategy> [
+  static const $core.List<EndpointsApiService_RolloutStrategy> values =
+      <EndpointsApiService_RolloutStrategy>[
     UNSPECIFIED_ROLLOUT_STRATEGY,
     FIXED,
     MANAGED,
   ];
 
-  static final $core.Map<$core.int, EndpointsApiService_RolloutStrategy> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static EndpointsApiService_RolloutStrategy? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, EndpointsApiService_RolloutStrategy>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static EndpointsApiService_RolloutStrategy? valueOf($core.int value) =>
+      _byValue[value];
 
-  const EndpointsApiService_RolloutStrategy._($core.int v, $core.String n) : super(v, n);
+  const EndpointsApiService_RolloutStrategy._($core.int v, $core.String n)
+      : super(v, n);
 }
 
 ///  Available egress settings.
@@ -84,21 +113,30 @@ class EndpointsApiService_RolloutStrategy extends $pb.ProtobufEnum {
 ///  This controls what traffic is diverted through the VPC Access Connector
 ///  resource. By default PRIVATE_IP_RANGES will be used.
 class VpcAccessConnector_EgressSetting extends $pb.ProtobufEnum {
-  static const VpcAccessConnector_EgressSetting EGRESS_SETTING_UNSPECIFIED = VpcAccessConnector_EgressSetting._(0, _omitEnumNames ? '' : 'EGRESS_SETTING_UNSPECIFIED');
-  static const VpcAccessConnector_EgressSetting ALL_TRAFFIC = VpcAccessConnector_EgressSetting._(1, _omitEnumNames ? '' : 'ALL_TRAFFIC');
-  static const VpcAccessConnector_EgressSetting PRIVATE_IP_RANGES = VpcAccessConnector_EgressSetting._(2, _omitEnumNames ? '' : 'PRIVATE_IP_RANGES');
+  static const VpcAccessConnector_EgressSetting EGRESS_SETTING_UNSPECIFIED =
+      VpcAccessConnector_EgressSetting._(
+          0, _omitEnumNames ? '' : 'EGRESS_SETTING_UNSPECIFIED');
+  static const VpcAccessConnector_EgressSetting ALL_TRAFFIC =
+      VpcAccessConnector_EgressSetting._(
+          1, _omitEnumNames ? '' : 'ALL_TRAFFIC');
+  static const VpcAccessConnector_EgressSetting PRIVATE_IP_RANGES =
+      VpcAccessConnector_EgressSetting._(
+          2, _omitEnumNames ? '' : 'PRIVATE_IP_RANGES');
 
-  static const $core.List<VpcAccessConnector_EgressSetting> values = <VpcAccessConnector_EgressSetting> [
+  static const $core.List<VpcAccessConnector_EgressSetting> values =
+      <VpcAccessConnector_EgressSetting>[
     EGRESS_SETTING_UNSPECIFIED,
     ALL_TRAFFIC,
     PRIVATE_IP_RANGES,
   ];
 
-  static final $core.Map<$core.int, VpcAccessConnector_EgressSetting> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static VpcAccessConnector_EgressSetting? valueOf($core.int value) => _byValue[value];
+  static final $core.Map<$core.int, VpcAccessConnector_EgressSetting> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static VpcAccessConnector_EgressSetting? valueOf($core.int value) =>
+      _byValue[value];
 
-  const VpcAccessConnector_EgressSetting._($core.int v, $core.String n) : super(v, n);
+  const VpcAccessConnector_EgressSetting._($core.int v, $core.String n)
+      : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

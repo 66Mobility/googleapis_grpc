@@ -17,11 +17,50 @@ import 'dart:typed_data' as $typed_data;
 const Scorecard$json = {
   '1': 'Scorecard',
   '2': [
-    {'1': 'time_series_query', '3': 1, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery', '8': {}, '10': 'timeSeriesQuery'},
-    {'1': 'gauge_view', '3': 4, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Scorecard.GaugeView', '9': 0, '10': 'gaugeView'},
-    {'1': 'spark_chart_view', '3': 5, '4': 1, '5': 11, '6': '.google.monitoring.dashboard.v1.Scorecard.SparkChartView', '9': 0, '10': 'sparkChartView'},
-    {'1': 'blank_view', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Empty', '9': 0, '10': 'blankView'},
-    {'1': 'thresholds', '3': 6, '4': 3, '5': 11, '6': '.google.monitoring.dashboard.v1.Threshold', '10': 'thresholds'},
+    {
+      '1': 'time_series_query',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.TimeSeriesQuery',
+      '8': {},
+      '10': 'timeSeriesQuery'
+    },
+    {
+      '1': 'gauge_view',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Scorecard.GaugeView',
+      '9': 0,
+      '10': 'gaugeView'
+    },
+    {
+      '1': 'spark_chart_view',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Scorecard.SparkChartView',
+      '9': 0,
+      '10': 'sparkChartView'
+    },
+    {
+      '1': 'blank_view',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Empty',
+      '9': 0,
+      '10': 'blankView'
+    },
+    {
+      '1': 'thresholds',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.monitoring.dashboard.v1.Threshold',
+      '10': 'thresholds'
+    },
   ],
   '3': [Scorecard_GaugeView$json, Scorecard_SparkChartView$json],
   '8': [
@@ -42,8 +81,23 @@ const Scorecard_GaugeView$json = {
 const Scorecard_SparkChartView$json = {
   '1': 'SparkChartView',
   '2': [
-    {'1': 'spark_chart_type', '3': 1, '4': 1, '5': 14, '6': '.google.monitoring.dashboard.v1.SparkChartType', '8': {}, '10': 'sparkChartType'},
-    {'1': 'min_alignment_period', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'minAlignmentPeriod'},
+    {
+      '1': 'spark_chart_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.monitoring.dashboard.v1.SparkChartType',
+      '8': {},
+      '10': 'sparkChartType'
+    },
+    {
+      '1': 'min_alignment_period',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'minAlignmentPeriod'
+    },
   ],
 };
 
@@ -62,4 +116,3 @@ final $typed_data.Uint8List scorecardDescriptor = $convert.base64Decode(
     'Lmdvb2dsZS5tb25pdG9yaW5nLmRhc2hib2FyZC52MS5TcGFya0NoYXJ0VHlwZUID4EECUg5zcG'
     'Fya0NoYXJ0VHlwZRJLChRtaW5fYWxpZ25tZW50X3BlcmlvZBgCIAEoCzIZLmdvb2dsZS5wcm90'
     'b2J1Zi5EdXJhdGlvblISbWluQWxpZ25tZW50UGVyaW9kQgsKCWRhdGFfdmlldw==');
-

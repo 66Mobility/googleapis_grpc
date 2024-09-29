@@ -18,7 +18,15 @@ const PhoneNumber$json = {
   '1': 'PhoneNumber',
   '2': [
     {'1': 'e164_number', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'e164Number'},
-    {'1': 'short_code', '3': 2, '4': 1, '5': 11, '6': '.google.type.PhoneNumber.ShortCode', '9': 0, '10': 'shortCode'},
+    {
+      '1': 'short_code',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.PhoneNumber.ShortCode',
+      '9': 0,
+      '10': 'shortCode'
+    },
     {'1': 'extension', '3': 3, '4': 1, '5': 9, '10': 'extension'},
   ],
   '3': [PhoneNumber_ShortCode$json],
@@ -43,4 +51,3 @@ final $typed_data.Uint8List phoneNumberDescriptor = $convert.base64Decode(
     'cnRDb2RlEhwKCWV4dGVuc2lvbhgDIAEoCVIJZXh0ZW5zaW9uGkQKCVNob3J0Q29kZRIfCgtyZW'
     'dpb25fY29kZRgBIAEoCVIKcmVnaW9uQ29kZRIWCgZudW1iZXIYAiABKAlSBm51bWJlckIGCgRr'
     'aW5k');
-

@@ -19,7 +19,14 @@ const AccountTax$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'account', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'account'},
-    {'1': 'tax_rules', '3': 3, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.TaxRule', '10': 'taxRules'},
+    {
+      '1': 'tax_rules',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.TaxRule',
+      '10': 'taxRules'
+    },
   ],
   '7': {},
 };
@@ -49,8 +56,23 @@ final $typed_data.Uint8List getAccountTaxRequestDescriptor = $convert.base64Deco
 const UpdateAccountTaxRequest$json = {
   '1': 'UpdateAccountTaxRequest',
   '2': [
-    {'1': 'account_tax', '3': 1, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AccountTax', '8': {}, '10': 'accountTax'},
-    {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {
+      '1': 'account_tax',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.AccountTax',
+      '8': {},
+      '10': 'accountTax'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
   ],
 };
 
@@ -81,7 +103,14 @@ final $typed_data.Uint8List listAccountTaxRequestDescriptor = $convert.base64Dec
 const ListAccountTaxResponse$json = {
   '1': 'ListAccountTaxResponse',
   '2': [
-    {'1': 'account_taxes', '3': 1, '4': 3, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AccountTax', '10': 'accountTaxes'},
+    {
+      '1': 'account_taxes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.shopping.merchant.accounts.v1beta.AccountTax',
+      '10': 'accountTaxes'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -91,4 +120,3 @@ final $typed_data.Uint8List listAccountTaxResponseDescriptor = $convert.base64De
     'ChZMaXN0QWNjb3VudFRheFJlc3BvbnNlElkKDWFjY291bnRfdGF4ZXMYASADKAsyNC5nb29nbG'
     'Uuc2hvcHBpbmcubWVyY2hhbnQuYWNjb3VudHMudjFiZXRhLkFjY291bnRUYXhSDGFjY291bnRU'
     'YXhlcxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4=');
-

@@ -15,19 +15,21 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Column identifier used for the values in the row.
 class View extends $pb.ProtobufEnum {
-  static const View VIEW_UNSPECIFIED = View._(0, _omitEnumNames ? '' : 'VIEW_UNSPECIFIED');
-  static const View COLUMN_ID_VIEW = View._(1, _omitEnumNames ? '' : 'COLUMN_ID_VIEW');
+  static const View VIEW_UNSPECIFIED =
+      View._(0, _omitEnumNames ? '' : 'VIEW_UNSPECIFIED');
+  static const View COLUMN_ID_VIEW =
+      View._(1, _omitEnumNames ? '' : 'COLUMN_ID_VIEW');
 
-  static const $core.List<View> values = <View> [
+  static const $core.List<View> values = <View>[
     VIEW_UNSPECIFIED,
     COLUMN_ID_VIEW,
   ];
 
-  static final $core.Map<$core.int, View> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, View> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static View? valueOf($core.int value) => _byValue[value];
 
   const View._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

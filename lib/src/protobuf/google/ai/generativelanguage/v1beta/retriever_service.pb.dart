@@ -28,40 +28,53 @@ class CreateCorpusRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateCorpusRequest._() : super();
-  factory CreateCorpusRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateCorpusRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateCorpusRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateCorpusRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateCorpusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$21.Corpus>(1, _omitFieldNames ? '' : 'corpus', subBuilder: $21.Corpus.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateCorpusRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$21.Corpus>(1, _omitFieldNames ? '' : 'corpus',
+        subBuilder: $21.Corpus.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateCorpusRequest clone() => CreateCorpusRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateCorpusRequest copyWith(void Function(CreateCorpusRequest) updates) => super.copyWith((message) => updates(message as CreateCorpusRequest)) as CreateCorpusRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateCorpusRequest copyWith(void Function(CreateCorpusRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateCorpusRequest))
+          as CreateCorpusRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateCorpusRequest create() => CreateCorpusRequest._();
   CreateCorpusRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateCorpusRequest> createRepeated() => $pb.PbList<CreateCorpusRequest>();
+  static $pb.PbList<CreateCorpusRequest> createRepeated() =>
+      $pb.PbList<CreateCorpusRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateCorpusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateCorpusRequest>(create);
+  static CreateCorpusRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateCorpusRequest>(create);
   static CreateCorpusRequest? _defaultInstance;
 
   /// Required. The `Corpus` to create.
   @$pb.TagNumber(1)
   $21.Corpus get corpus => $_getN(0);
   @$pb.TagNumber(1)
-  set corpus($21.Corpus v) { setField(1, v); }
+  set corpus($21.Corpus v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCorpus() => $_has(0);
   @$pb.TagNumber(1)
@@ -82,33 +95,42 @@ class GetCorpusRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetCorpusRequest._() : super();
-  factory GetCorpusRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetCorpusRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetCorpusRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetCorpusRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetCorpusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetCorpusRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetCorpusRequest clone() => GetCorpusRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetCorpusRequest copyWith(void Function(GetCorpusRequest) updates) => super.copyWith((message) => updates(message as GetCorpusRequest)) as GetCorpusRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetCorpusRequest copyWith(void Function(GetCorpusRequest) updates) =>
+      super.copyWith((message) => updates(message as GetCorpusRequest))
+          as GetCorpusRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetCorpusRequest create() => GetCorpusRequest._();
   GetCorpusRequest createEmptyInstance() => create();
-  static $pb.PbList<GetCorpusRequest> createRepeated() => $pb.PbList<GetCorpusRequest>();
+  static $pb.PbList<GetCorpusRequest> createRepeated() =>
+      $pb.PbList<GetCorpusRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetCorpusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetCorpusRequest>(create);
+  static GetCorpusRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetCorpusRequest>(create);
   static GetCorpusRequest? _defaultInstance;
 
   /// Required. The name of the `Corpus`.
@@ -116,7 +138,10 @@ class GetCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -139,41 +164,55 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateCorpusRequest._() : super();
-  factory UpdateCorpusRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateCorpusRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateCorpusRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateCorpusRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCorpusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$21.Corpus>(1, _omitFieldNames ? '' : 'corpus', subBuilder: $21.Corpus.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateCorpusRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$21.Corpus>(1, _omitFieldNames ? '' : 'corpus',
+        subBuilder: $21.Corpus.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateCorpusRequest clone() => UpdateCorpusRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateCorpusRequest copyWith(void Function(UpdateCorpusRequest) updates) => super.copyWith((message) => updates(message as UpdateCorpusRequest)) as UpdateCorpusRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateCorpusRequest copyWith(void Function(UpdateCorpusRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateCorpusRequest))
+          as UpdateCorpusRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateCorpusRequest create() => UpdateCorpusRequest._();
   UpdateCorpusRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateCorpusRequest> createRepeated() => $pb.PbList<UpdateCorpusRequest>();
+  static $pb.PbList<UpdateCorpusRequest> createRepeated() =>
+      $pb.PbList<UpdateCorpusRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateCorpusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateCorpusRequest>(create);
+  static UpdateCorpusRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateCorpusRequest>(create);
   static UpdateCorpusRequest? _defaultInstance;
 
   /// Required. The `Corpus` to update.
   @$pb.TagNumber(1)
   $21.Corpus get corpus => $_getN(0);
   @$pb.TagNumber(1)
-  set corpus($21.Corpus v) { setField(1, v); }
+  set corpus($21.Corpus v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCorpus() => $_has(0);
   @$pb.TagNumber(1)
@@ -186,7 +225,10 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -211,34 +253,43 @@ class DeleteCorpusRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteCorpusRequest._() : super();
-  factory DeleteCorpusRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteCorpusRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteCorpusRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteCorpusRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteCorpusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteCorpusRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'force')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteCorpusRequest clone() => DeleteCorpusRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteCorpusRequest copyWith(void Function(DeleteCorpusRequest) updates) => super.copyWith((message) => updates(message as DeleteCorpusRequest)) as DeleteCorpusRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteCorpusRequest copyWith(void Function(DeleteCorpusRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteCorpusRequest))
+          as DeleteCorpusRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteCorpusRequest create() => DeleteCorpusRequest._();
   DeleteCorpusRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteCorpusRequest> createRepeated() => $pb.PbList<DeleteCorpusRequest>();
+  static $pb.PbList<DeleteCorpusRequest> createRepeated() =>
+      $pb.PbList<DeleteCorpusRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteCorpusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteCorpusRequest>(create);
+  static DeleteCorpusRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteCorpusRequest>(create);
   static DeleteCorpusRequest? _defaultInstance;
 
   /// Required. The resource name of the `Corpus`.
@@ -246,7 +297,10 @@ class DeleteCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -260,7 +314,10 @@ class DeleteCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get force => $_getBF(1);
   @$pb.TagNumber(2)
-  set force($core.bool v) { $_setBool(1, v); }
+  set force($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasForce() => $_has(1);
   @$pb.TagNumber(2)
@@ -283,34 +340,43 @@ class ListCorporaRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListCorporaRequest._() : super();
-  factory ListCorporaRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListCorporaRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListCorporaRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListCorporaRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCorporaRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCorporaRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListCorporaRequest clone() => ListCorporaRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListCorporaRequest copyWith(void Function(ListCorporaRequest) updates) => super.copyWith((message) => updates(message as ListCorporaRequest)) as ListCorporaRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListCorporaRequest copyWith(void Function(ListCorporaRequest) updates) =>
+      super.copyWith((message) => updates(message as ListCorporaRequest))
+          as ListCorporaRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListCorporaRequest create() => ListCorporaRequest._();
   ListCorporaRequest createEmptyInstance() => create();
-  static $pb.PbList<ListCorporaRequest> createRepeated() => $pb.PbList<ListCorporaRequest>();
+  static $pb.PbList<ListCorporaRequest> createRepeated() =>
+      $pb.PbList<ListCorporaRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListCorporaRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCorporaRequest>(create);
+  static ListCorporaRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCorporaRequest>(create);
   static ListCorporaRequest? _defaultInstance;
 
   ///  Optional. The maximum number of `Corpora` to return (per page).
@@ -321,7 +387,10 @@ class ListCorporaRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get pageSize => $_getIZ(0);
   @$pb.TagNumber(1)
-  set pageSize($core.int v) { $_setSignedInt32(0, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPageSize() => $_has(0);
   @$pb.TagNumber(1)
@@ -337,7 +406,10 @@ class ListCorporaRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pageToken($core.String v) { $_setString(1, v); }
+  set pageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -361,34 +433,44 @@ class ListCorporaResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListCorporaResponse._() : super();
-  factory ListCorporaResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListCorporaResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListCorporaResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListCorporaResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCorporaResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$21.Corpus>(1, _omitFieldNames ? '' : 'corpora', $pb.PbFieldType.PM, subBuilder: $21.Corpus.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCorporaResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$21.Corpus>(1, _omitFieldNames ? '' : 'corpora', $pb.PbFieldType.PM,
+        subBuilder: $21.Corpus.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListCorporaResponse clone() => ListCorporaResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListCorporaResponse copyWith(void Function(ListCorporaResponse) updates) => super.copyWith((message) => updates(message as ListCorporaResponse)) as ListCorporaResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListCorporaResponse copyWith(void Function(ListCorporaResponse) updates) =>
+      super.copyWith((message) => updates(message as ListCorporaResponse))
+          as ListCorporaResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListCorporaResponse create() => ListCorporaResponse._();
   ListCorporaResponse createEmptyInstance() => create();
-  static $pb.PbList<ListCorporaResponse> createRepeated() => $pb.PbList<ListCorporaResponse>();
+  static $pb.PbList<ListCorporaResponse> createRepeated() =>
+      $pb.PbList<ListCorporaResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListCorporaResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCorporaResponse>(create);
+  static ListCorporaResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCorporaResponse>(create);
   static ListCorporaResponse? _defaultInstance;
 
   /// The returned corpora.
@@ -400,7 +482,10 @@ class ListCorporaResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -431,36 +516,47 @@ class QueryCorpusRequest extends $pb.GeneratedMessage {
     return $result;
   }
   QueryCorpusRequest._() : super();
-  factory QueryCorpusRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QueryCorpusRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QueryCorpusRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QueryCorpusRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryCorpusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QueryCorpusRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'query')
-    ..pc<$21.MetadataFilter>(3, _omitFieldNames ? '' : 'metadataFilters', $pb.PbFieldType.PM, subBuilder: $21.MetadataFilter.create)
+    ..pc<$21.MetadataFilter>(
+        3, _omitFieldNames ? '' : 'metadataFilters', $pb.PbFieldType.PM,
+        subBuilder: $21.MetadataFilter.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'resultsCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   QueryCorpusRequest clone() => QueryCorpusRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QueryCorpusRequest copyWith(void Function(QueryCorpusRequest) updates) => super.copyWith((message) => updates(message as QueryCorpusRequest)) as QueryCorpusRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QueryCorpusRequest copyWith(void Function(QueryCorpusRequest) updates) =>
+      super.copyWith((message) => updates(message as QueryCorpusRequest))
+          as QueryCorpusRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static QueryCorpusRequest create() => QueryCorpusRequest._();
   QueryCorpusRequest createEmptyInstance() => create();
-  static $pb.PbList<QueryCorpusRequest> createRepeated() => $pb.PbList<QueryCorpusRequest>();
+  static $pb.PbList<QueryCorpusRequest> createRepeated() =>
+      $pb.PbList<QueryCorpusRequest>();
   @$core.pragma('dart2js:noInline')
-  static QueryCorpusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryCorpusRequest>(create);
+  static QueryCorpusRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QueryCorpusRequest>(create);
   static QueryCorpusRequest? _defaultInstance;
 
   /// Required. The name of the `Corpus` to query.
@@ -468,7 +564,10 @@ class QueryCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -478,7 +577,10 @@ class QueryCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get query => $_getSZ(1);
   @$pb.TagNumber(2)
-  set query($core.String v) { $_setString(1, v); }
+  set query($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQuery() => $_has(1);
   @$pb.TagNumber(2)
@@ -526,7 +628,10 @@ class QueryCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get resultsCount => $_getIZ(3);
   @$pb.TagNumber(4)
-  set resultsCount($core.int v) { $_setSignedInt32(3, v); }
+  set resultsCount($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasResultsCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -545,33 +650,44 @@ class QueryCorpusResponse extends $pb.GeneratedMessage {
     return $result;
   }
   QueryCorpusResponse._() : super();
-  factory QueryCorpusResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QueryCorpusResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QueryCorpusResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QueryCorpusResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryCorpusResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<RelevantChunk>(1, _omitFieldNames ? '' : 'relevantChunks', $pb.PbFieldType.PM, subBuilder: RelevantChunk.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QueryCorpusResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<RelevantChunk>(
+        1, _omitFieldNames ? '' : 'relevantChunks', $pb.PbFieldType.PM,
+        subBuilder: RelevantChunk.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   QueryCorpusResponse clone() => QueryCorpusResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QueryCorpusResponse copyWith(void Function(QueryCorpusResponse) updates) => super.copyWith((message) => updates(message as QueryCorpusResponse)) as QueryCorpusResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QueryCorpusResponse copyWith(void Function(QueryCorpusResponse) updates) =>
+      super.copyWith((message) => updates(message as QueryCorpusResponse))
+          as QueryCorpusResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static QueryCorpusResponse create() => QueryCorpusResponse._();
   QueryCorpusResponse createEmptyInstance() => create();
-  static $pb.PbList<QueryCorpusResponse> createRepeated() => $pb.PbList<QueryCorpusResponse>();
+  static $pb.PbList<QueryCorpusResponse> createRepeated() =>
+      $pb.PbList<QueryCorpusResponse>();
   @$core.pragma('dart2js:noInline')
-  static QueryCorpusResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryCorpusResponse>(create);
+  static QueryCorpusResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QueryCorpusResponse>(create);
   static QueryCorpusResponse? _defaultInstance;
 
   /// The relevant chunks.
@@ -595,41 +711,55 @@ class RelevantChunk extends $pb.GeneratedMessage {
     return $result;
   }
   RelevantChunk._() : super();
-  factory RelevantChunk.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RelevantChunk.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RelevantChunk.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RelevantChunk.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RelevantChunk', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'chunkRelevanceScore', $pb.PbFieldType.OF)
-    ..aOM<$21.Chunk>(2, _omitFieldNames ? '' : 'chunk', subBuilder: $21.Chunk.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RelevantChunk',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'chunkRelevanceScore', $pb.PbFieldType.OF)
+    ..aOM<$21.Chunk>(2, _omitFieldNames ? '' : 'chunk',
+        subBuilder: $21.Chunk.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RelevantChunk clone() => RelevantChunk()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RelevantChunk copyWith(void Function(RelevantChunk) updates) => super.copyWith((message) => updates(message as RelevantChunk)) as RelevantChunk;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RelevantChunk copyWith(void Function(RelevantChunk) updates) =>
+      super.copyWith((message) => updates(message as RelevantChunk))
+          as RelevantChunk;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RelevantChunk create() => RelevantChunk._();
   RelevantChunk createEmptyInstance() => create();
-  static $pb.PbList<RelevantChunk> createRepeated() => $pb.PbList<RelevantChunk>();
+  static $pb.PbList<RelevantChunk> createRepeated() =>
+      $pb.PbList<RelevantChunk>();
   @$core.pragma('dart2js:noInline')
-  static RelevantChunk getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RelevantChunk>(create);
+  static RelevantChunk getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RelevantChunk>(create);
   static RelevantChunk? _defaultInstance;
 
   /// `Chunk` relevance to the query.
   @$pb.TagNumber(1)
   $core.double get chunkRelevanceScore => $_getN(0);
   @$pb.TagNumber(1)
-  set chunkRelevanceScore($core.double v) { $_setFloat(0, v); }
+  set chunkRelevanceScore($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasChunkRelevanceScore() => $_has(0);
   @$pb.TagNumber(1)
@@ -639,7 +769,10 @@ class RelevantChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $21.Chunk get chunk => $_getN(1);
   @$pb.TagNumber(2)
-  set chunk($21.Chunk v) { setField(2, v); }
+  set chunk($21.Chunk v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasChunk() => $_has(1);
   @$pb.TagNumber(2)
@@ -664,34 +797,46 @@ class CreateDocumentRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateDocumentRequest._() : super();
-  factory CreateDocumentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateDocumentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateDocumentRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateDocumentRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDocumentRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$21.Document>(2, _omitFieldNames ? '' : 'document', subBuilder: $21.Document.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$21.Document>(2, _omitFieldNames ? '' : 'document',
+        subBuilder: $21.Document.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateDocumentRequest clone() => CreateDocumentRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateDocumentRequest copyWith(void Function(CreateDocumentRequest) updates) => super.copyWith((message) => updates(message as CreateDocumentRequest)) as CreateDocumentRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CreateDocumentRequest clone() =>
+      CreateDocumentRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateDocumentRequest copyWith(
+          void Function(CreateDocumentRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateDocumentRequest))
+          as CreateDocumentRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateDocumentRequest create() => CreateDocumentRequest._();
   CreateDocumentRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateDocumentRequest> createRepeated() => $pb.PbList<CreateDocumentRequest>();
+  static $pb.PbList<CreateDocumentRequest> createRepeated() =>
+      $pb.PbList<CreateDocumentRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateDocumentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDocumentRequest>(create);
+  static CreateDocumentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDocumentRequest>(create);
   static CreateDocumentRequest? _defaultInstance;
 
   /// Required. The name of the `Corpus` where this `Document` will be created.
@@ -699,7 +844,10 @@ class CreateDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -709,7 +857,10 @@ class CreateDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $21.Document get document => $_getN(1);
   @$pb.TagNumber(2)
-  set document($21.Document v) { setField(2, v); }
+  set document($21.Document v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDocument() => $_has(1);
   @$pb.TagNumber(2)
@@ -730,33 +881,42 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetDocumentRequest._() : super();
-  factory GetDocumentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetDocumentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetDocumentRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetDocumentRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetDocumentRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetDocumentRequest clone() => GetDocumentRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetDocumentRequest copyWith(void Function(GetDocumentRequest) updates) => super.copyWith((message) => updates(message as GetDocumentRequest)) as GetDocumentRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetDocumentRequest copyWith(void Function(GetDocumentRequest) updates) =>
+      super.copyWith((message) => updates(message as GetDocumentRequest))
+          as GetDocumentRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetDocumentRequest create() => GetDocumentRequest._();
   GetDocumentRequest createEmptyInstance() => create();
-  static $pb.PbList<GetDocumentRequest> createRepeated() => $pb.PbList<GetDocumentRequest>();
+  static $pb.PbList<GetDocumentRequest> createRepeated() =>
+      $pb.PbList<GetDocumentRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetDocumentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetDocumentRequest>(create);
+  static GetDocumentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetDocumentRequest>(create);
   static GetDocumentRequest? _defaultInstance;
 
   /// Required. The name of the `Document` to retrieve.
@@ -764,7 +924,10 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -787,41 +950,57 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateDocumentRequest._() : super();
-  factory UpdateDocumentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateDocumentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateDocumentRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateDocumentRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$21.Document>(1, _omitFieldNames ? '' : 'document', subBuilder: $21.Document.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDocumentRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$21.Document>(1, _omitFieldNames ? '' : 'document',
+        subBuilder: $21.Document.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  UpdateDocumentRequest clone() => UpdateDocumentRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateDocumentRequest copyWith(void Function(UpdateDocumentRequest) updates) => super.copyWith((message) => updates(message as UpdateDocumentRequest)) as UpdateDocumentRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateDocumentRequest clone() =>
+      UpdateDocumentRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateDocumentRequest copyWith(
+          void Function(UpdateDocumentRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateDocumentRequest))
+          as UpdateDocumentRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateDocumentRequest create() => UpdateDocumentRequest._();
   UpdateDocumentRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateDocumentRequest> createRepeated() => $pb.PbList<UpdateDocumentRequest>();
+  static $pb.PbList<UpdateDocumentRequest> createRepeated() =>
+      $pb.PbList<UpdateDocumentRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDocumentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDocumentRequest>(create);
+  static UpdateDocumentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDocumentRequest>(create);
   static UpdateDocumentRequest? _defaultInstance;
 
   /// Required. The `Document` to update.
   @$pb.TagNumber(1)
   $21.Document get document => $_getN(0);
   @$pb.TagNumber(1)
-  set document($21.Document v) { setField(1, v); }
+  set document($21.Document v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDocument() => $_has(0);
   @$pb.TagNumber(1)
@@ -835,7 +1014,10 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -860,34 +1042,45 @@ class DeleteDocumentRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteDocumentRequest._() : super();
-  factory DeleteDocumentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteDocumentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteDocumentRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteDocumentRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteDocumentRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'force')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteDocumentRequest clone() => DeleteDocumentRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteDocumentRequest copyWith(void Function(DeleteDocumentRequest) updates) => super.copyWith((message) => updates(message as DeleteDocumentRequest)) as DeleteDocumentRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeleteDocumentRequest clone() =>
+      DeleteDocumentRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteDocumentRequest copyWith(
+          void Function(DeleteDocumentRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteDocumentRequest))
+          as DeleteDocumentRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteDocumentRequest create() => DeleteDocumentRequest._();
   DeleteDocumentRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteDocumentRequest> createRepeated() => $pb.PbList<DeleteDocumentRequest>();
+  static $pb.PbList<DeleteDocumentRequest> createRepeated() =>
+      $pb.PbList<DeleteDocumentRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteDocumentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteDocumentRequest>(create);
+  static DeleteDocumentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteDocumentRequest>(create);
   static DeleteDocumentRequest? _defaultInstance;
 
   /// Required. The resource name of the `Document` to delete.
@@ -895,7 +1088,10 @@ class DeleteDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -909,7 +1105,10 @@ class DeleteDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get force => $_getBF(1);
   @$pb.TagNumber(2)
-  set force($core.bool v) { $_setBool(1, v); }
+  set force($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasForce() => $_has(1);
   @$pb.TagNumber(2)
@@ -936,35 +1135,45 @@ class ListDocumentsRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListDocumentsRequest._() : super();
-  factory ListDocumentsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDocumentsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDocumentsRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDocumentsRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDocumentsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDocumentsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDocumentsRequest clone() => ListDocumentsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDocumentsRequest copyWith(void Function(ListDocumentsRequest) updates) => super.copyWith((message) => updates(message as ListDocumentsRequest)) as ListDocumentsRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDocumentsRequest clone() =>
+      ListDocumentsRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDocumentsRequest copyWith(void Function(ListDocumentsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListDocumentsRequest))
+          as ListDocumentsRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDocumentsRequest create() => ListDocumentsRequest._();
   ListDocumentsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDocumentsRequest> createRepeated() => $pb.PbList<ListDocumentsRequest>();
+  static $pb.PbList<ListDocumentsRequest> createRepeated() =>
+      $pb.PbList<ListDocumentsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDocumentsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDocumentsRequest>(create);
+  static ListDocumentsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDocumentsRequest>(create);
   static ListDocumentsRequest? _defaultInstance;
 
   /// Required. The name of the `Corpus` containing `Document`s.
@@ -972,7 +1181,10 @@ class ListDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -986,7 +1198,10 @@ class ListDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -1002,7 +1217,10 @@ class ListDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -1026,34 +1244,47 @@ class ListDocumentsResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListDocumentsResponse._() : super();
-  factory ListDocumentsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListDocumentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListDocumentsResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListDocumentsResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDocumentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$21.Document>(1, _omitFieldNames ? '' : 'documents', $pb.PbFieldType.PM, subBuilder: $21.Document.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDocumentsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$21.Document>(
+        1, _omitFieldNames ? '' : 'documents', $pb.PbFieldType.PM,
+        subBuilder: $21.Document.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListDocumentsResponse clone() => ListDocumentsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListDocumentsResponse copyWith(void Function(ListDocumentsResponse) updates) => super.copyWith((message) => updates(message as ListDocumentsResponse)) as ListDocumentsResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ListDocumentsResponse clone() =>
+      ListDocumentsResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListDocumentsResponse copyWith(
+          void Function(ListDocumentsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListDocumentsResponse))
+          as ListDocumentsResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListDocumentsResponse create() => ListDocumentsResponse._();
   ListDocumentsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDocumentsResponse> createRepeated() => $pb.PbList<ListDocumentsResponse>();
+  static $pb.PbList<ListDocumentsResponse> createRepeated() =>
+      $pb.PbList<ListDocumentsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDocumentsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDocumentsResponse>(create);
+  static ListDocumentsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDocumentsResponse>(create);
   static ListDocumentsResponse? _defaultInstance;
 
   /// The returned `Document`s.
@@ -1065,7 +1296,10 @@ class ListDocumentsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -1096,36 +1330,48 @@ class QueryDocumentRequest extends $pb.GeneratedMessage {
     return $result;
   }
   QueryDocumentRequest._() : super();
-  factory QueryDocumentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QueryDocumentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QueryDocumentRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QueryDocumentRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QueryDocumentRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'query')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'resultsCount', $pb.PbFieldType.O3)
-    ..pc<$21.MetadataFilter>(4, _omitFieldNames ? '' : 'metadataFilters', $pb.PbFieldType.PM, subBuilder: $21.MetadataFilter.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$21.MetadataFilter>(
+        4, _omitFieldNames ? '' : 'metadataFilters', $pb.PbFieldType.PM,
+        subBuilder: $21.MetadataFilter.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  QueryDocumentRequest clone() => QueryDocumentRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QueryDocumentRequest copyWith(void Function(QueryDocumentRequest) updates) => super.copyWith((message) => updates(message as QueryDocumentRequest)) as QueryDocumentRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  QueryDocumentRequest clone() =>
+      QueryDocumentRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QueryDocumentRequest copyWith(void Function(QueryDocumentRequest) updates) =>
+      super.copyWith((message) => updates(message as QueryDocumentRequest))
+          as QueryDocumentRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static QueryDocumentRequest create() => QueryDocumentRequest._();
   QueryDocumentRequest createEmptyInstance() => create();
-  static $pb.PbList<QueryDocumentRequest> createRepeated() => $pb.PbList<QueryDocumentRequest>();
+  static $pb.PbList<QueryDocumentRequest> createRepeated() =>
+      $pb.PbList<QueryDocumentRequest>();
   @$core.pragma('dart2js:noInline')
-  static QueryDocumentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryDocumentRequest>(create);
+  static QueryDocumentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QueryDocumentRequest>(create);
   static QueryDocumentRequest? _defaultInstance;
 
   /// Required. The name of the `Document` to query.
@@ -1133,7 +1379,10 @@ class QueryDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1143,7 +1392,10 @@ class QueryDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get query => $_getSZ(1);
   @$pb.TagNumber(2)
-  set query($core.String v) { $_setString(1, v); }
+  set query($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasQuery() => $_has(1);
   @$pb.TagNumber(2)
@@ -1157,7 +1409,10 @@ class QueryDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get resultsCount => $_getIZ(2);
   @$pb.TagNumber(3)
-  set resultsCount($core.int v) { $_setSignedInt32(2, v); }
+  set resultsCount($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResultsCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -1210,33 +1465,46 @@ class QueryDocumentResponse extends $pb.GeneratedMessage {
     return $result;
   }
   QueryDocumentResponse._() : super();
-  factory QueryDocumentResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory QueryDocumentResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory QueryDocumentResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory QueryDocumentResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryDocumentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<RelevantChunk>(1, _omitFieldNames ? '' : 'relevantChunks', $pb.PbFieldType.PM, subBuilder: RelevantChunk.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'QueryDocumentResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<RelevantChunk>(
+        1, _omitFieldNames ? '' : 'relevantChunks', $pb.PbFieldType.PM,
+        subBuilder: RelevantChunk.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  QueryDocumentResponse clone() => QueryDocumentResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  QueryDocumentResponse copyWith(void Function(QueryDocumentResponse) updates) => super.copyWith((message) => updates(message as QueryDocumentResponse)) as QueryDocumentResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  QueryDocumentResponse clone() =>
+      QueryDocumentResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  QueryDocumentResponse copyWith(
+          void Function(QueryDocumentResponse) updates) =>
+      super.copyWith((message) => updates(message as QueryDocumentResponse))
+          as QueryDocumentResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static QueryDocumentResponse create() => QueryDocumentResponse._();
   QueryDocumentResponse createEmptyInstance() => create();
-  static $pb.PbList<QueryDocumentResponse> createRepeated() => $pb.PbList<QueryDocumentResponse>();
+  static $pb.PbList<QueryDocumentResponse> createRepeated() =>
+      $pb.PbList<QueryDocumentResponse>();
   @$core.pragma('dart2js:noInline')
-  static QueryDocumentResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryDocumentResponse>(create);
+  static QueryDocumentResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<QueryDocumentResponse>(create);
   static QueryDocumentResponse? _defaultInstance;
 
   /// The returned relevant chunks.
@@ -1260,34 +1528,44 @@ class CreateChunkRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CreateChunkRequest._() : super();
-  factory CreateChunkRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateChunkRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CreateChunkRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CreateChunkRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateChunkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateChunkRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$21.Chunk>(2, _omitFieldNames ? '' : 'chunk', subBuilder: $21.Chunk.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$21.Chunk>(2, _omitFieldNames ? '' : 'chunk',
+        subBuilder: $21.Chunk.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CreateChunkRequest clone() => CreateChunkRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateChunkRequest copyWith(void Function(CreateChunkRequest) updates) => super.copyWith((message) => updates(message as CreateChunkRequest)) as CreateChunkRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CreateChunkRequest copyWith(void Function(CreateChunkRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateChunkRequest))
+          as CreateChunkRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CreateChunkRequest create() => CreateChunkRequest._();
   CreateChunkRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateChunkRequest> createRepeated() => $pb.PbList<CreateChunkRequest>();
+  static $pb.PbList<CreateChunkRequest> createRepeated() =>
+      $pb.PbList<CreateChunkRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateChunkRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateChunkRequest>(create);
+  static CreateChunkRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateChunkRequest>(create);
   static CreateChunkRequest? _defaultInstance;
 
   /// Required. The name of the `Document` where this `Chunk` will be created.
@@ -1295,7 +1573,10 @@ class CreateChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1305,7 +1586,10 @@ class CreateChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $21.Chunk get chunk => $_getN(1);
   @$pb.TagNumber(2)
-  set chunk($21.Chunk v) { setField(2, v); }
+  set chunk($21.Chunk v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasChunk() => $_has(1);
   @$pb.TagNumber(2)
@@ -1330,34 +1614,47 @@ class BatchCreateChunksRequest extends $pb.GeneratedMessage {
     return $result;
   }
   BatchCreateChunksRequest._() : super();
-  factory BatchCreateChunksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchCreateChunksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchCreateChunksRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchCreateChunksRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateChunksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchCreateChunksRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..pc<CreateChunkRequest>(2, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM, subBuilder: CreateChunkRequest.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<CreateChunkRequest>(
+        2, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM,
+        subBuilder: CreateChunkRequest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchCreateChunksRequest clone() => BatchCreateChunksRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchCreateChunksRequest copyWith(void Function(BatchCreateChunksRequest) updates) => super.copyWith((message) => updates(message as BatchCreateChunksRequest)) as BatchCreateChunksRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchCreateChunksRequest clone() =>
+      BatchCreateChunksRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchCreateChunksRequest copyWith(
+          void Function(BatchCreateChunksRequest) updates) =>
+      super.copyWith((message) => updates(message as BatchCreateChunksRequest))
+          as BatchCreateChunksRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchCreateChunksRequest create() => BatchCreateChunksRequest._();
   BatchCreateChunksRequest createEmptyInstance() => create();
-  static $pb.PbList<BatchCreateChunksRequest> createRepeated() => $pb.PbList<BatchCreateChunksRequest>();
+  static $pb.PbList<BatchCreateChunksRequest> createRepeated() =>
+      $pb.PbList<BatchCreateChunksRequest>();
   @$core.pragma('dart2js:noInline')
-  static BatchCreateChunksRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchCreateChunksRequest>(create);
+  static BatchCreateChunksRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchCreateChunksRequest>(create);
   static BatchCreateChunksRequest? _defaultInstance;
 
   /// Optional. The name of the `Document` where this batch of `Chunk`s will be
@@ -1366,7 +1663,10 @@ class BatchCreateChunksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1390,33 +1690,45 @@ class BatchCreateChunksResponse extends $pb.GeneratedMessage {
     return $result;
   }
   BatchCreateChunksResponse._() : super();
-  factory BatchCreateChunksResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchCreateChunksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchCreateChunksResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchCreateChunksResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateChunksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM, subBuilder: $21.Chunk.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchCreateChunksResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: $21.Chunk.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchCreateChunksResponse clone() => BatchCreateChunksResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchCreateChunksResponse copyWith(void Function(BatchCreateChunksResponse) updates) => super.copyWith((message) => updates(message as BatchCreateChunksResponse)) as BatchCreateChunksResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchCreateChunksResponse clone() =>
+      BatchCreateChunksResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchCreateChunksResponse copyWith(
+          void Function(BatchCreateChunksResponse) updates) =>
+      super.copyWith((message) => updates(message as BatchCreateChunksResponse))
+          as BatchCreateChunksResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchCreateChunksResponse create() => BatchCreateChunksResponse._();
   BatchCreateChunksResponse createEmptyInstance() => create();
-  static $pb.PbList<BatchCreateChunksResponse> createRepeated() => $pb.PbList<BatchCreateChunksResponse>();
+  static $pb.PbList<BatchCreateChunksResponse> createRepeated() =>
+      $pb.PbList<BatchCreateChunksResponse>();
   @$core.pragma('dart2js:noInline')
-  static BatchCreateChunksResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchCreateChunksResponse>(create);
+  static BatchCreateChunksResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchCreateChunksResponse>(create);
   static BatchCreateChunksResponse? _defaultInstance;
 
   /// `Chunk`s created.
@@ -1436,33 +1748,42 @@ class GetChunkRequest extends $pb.GeneratedMessage {
     return $result;
   }
   GetChunkRequest._() : super();
-  factory GetChunkRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetChunkRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GetChunkRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GetChunkRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetChunkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetChunkRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GetChunkRequest clone() => GetChunkRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetChunkRequest copyWith(void Function(GetChunkRequest) updates) => super.copyWith((message) => updates(message as GetChunkRequest)) as GetChunkRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GetChunkRequest copyWith(void Function(GetChunkRequest) updates) =>
+      super.copyWith((message) => updates(message as GetChunkRequest))
+          as GetChunkRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GetChunkRequest create() => GetChunkRequest._();
   GetChunkRequest createEmptyInstance() => create();
-  static $pb.PbList<GetChunkRequest> createRepeated() => $pb.PbList<GetChunkRequest>();
+  static $pb.PbList<GetChunkRequest> createRepeated() =>
+      $pb.PbList<GetChunkRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetChunkRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetChunkRequest>(create);
+  static GetChunkRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetChunkRequest>(create);
   static GetChunkRequest? _defaultInstance;
 
   /// Required. The name of the `Chunk` to retrieve.
@@ -1470,7 +1791,10 @@ class GetChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1493,41 +1817,55 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateChunkRequest._() : super();
-  factory UpdateChunkRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory UpdateChunkRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory UpdateChunkRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateChunkRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateChunkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$21.Chunk>(1, _omitFieldNames ? '' : 'chunk', subBuilder: $21.Chunk.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateChunkRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$21.Chunk>(1, _omitFieldNames ? '' : 'chunk',
+        subBuilder: $21.Chunk.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $333.FieldMask.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   UpdateChunkRequest clone() => UpdateChunkRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  UpdateChunkRequest copyWith(void Function(UpdateChunkRequest) updates) => super.copyWith((message) => updates(message as UpdateChunkRequest)) as UpdateChunkRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateChunkRequest copyWith(void Function(UpdateChunkRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateChunkRequest))
+          as UpdateChunkRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpdateChunkRequest create() => UpdateChunkRequest._();
   UpdateChunkRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateChunkRequest> createRepeated() => $pb.PbList<UpdateChunkRequest>();
+  static $pb.PbList<UpdateChunkRequest> createRepeated() =>
+      $pb.PbList<UpdateChunkRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateChunkRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateChunkRequest>(create);
+  static UpdateChunkRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateChunkRequest>(create);
   static UpdateChunkRequest? _defaultInstance;
 
   /// Required. The `Chunk` to update.
   @$pb.TagNumber(1)
   $21.Chunk get chunk => $_getN(0);
   @$pb.TagNumber(1)
-  set chunk($21.Chunk v) { setField(1, v); }
+  set chunk($21.Chunk v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasChunk() => $_has(0);
   @$pb.TagNumber(1)
@@ -1540,7 +1878,10 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
@@ -1565,34 +1906,47 @@ class BatchUpdateChunksRequest extends $pb.GeneratedMessage {
     return $result;
   }
   BatchUpdateChunksRequest._() : super();
-  factory BatchUpdateChunksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchUpdateChunksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchUpdateChunksRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchUpdateChunksRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchUpdateChunksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchUpdateChunksRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..pc<UpdateChunkRequest>(2, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM, subBuilder: UpdateChunkRequest.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<UpdateChunkRequest>(
+        2, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM,
+        subBuilder: UpdateChunkRequest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchUpdateChunksRequest clone() => BatchUpdateChunksRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchUpdateChunksRequest copyWith(void Function(BatchUpdateChunksRequest) updates) => super.copyWith((message) => updates(message as BatchUpdateChunksRequest)) as BatchUpdateChunksRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchUpdateChunksRequest clone() =>
+      BatchUpdateChunksRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchUpdateChunksRequest copyWith(
+          void Function(BatchUpdateChunksRequest) updates) =>
+      super.copyWith((message) => updates(message as BatchUpdateChunksRequest))
+          as BatchUpdateChunksRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchUpdateChunksRequest create() => BatchUpdateChunksRequest._();
   BatchUpdateChunksRequest createEmptyInstance() => create();
-  static $pb.PbList<BatchUpdateChunksRequest> createRepeated() => $pb.PbList<BatchUpdateChunksRequest>();
+  static $pb.PbList<BatchUpdateChunksRequest> createRepeated() =>
+      $pb.PbList<BatchUpdateChunksRequest>();
   @$core.pragma('dart2js:noInline')
-  static BatchUpdateChunksRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchUpdateChunksRequest>(create);
+  static BatchUpdateChunksRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchUpdateChunksRequest>(create);
   static BatchUpdateChunksRequest? _defaultInstance;
 
   /// Optional. The name of the `Document` containing the `Chunk`s to update.
@@ -1601,7 +1955,10 @@ class BatchUpdateChunksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1625,33 +1982,45 @@ class BatchUpdateChunksResponse extends $pb.GeneratedMessage {
     return $result;
   }
   BatchUpdateChunksResponse._() : super();
-  factory BatchUpdateChunksResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchUpdateChunksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchUpdateChunksResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchUpdateChunksResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchUpdateChunksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM, subBuilder: $21.Chunk.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchUpdateChunksResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: $21.Chunk.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchUpdateChunksResponse clone() => BatchUpdateChunksResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchUpdateChunksResponse copyWith(void Function(BatchUpdateChunksResponse) updates) => super.copyWith((message) => updates(message as BatchUpdateChunksResponse)) as BatchUpdateChunksResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchUpdateChunksResponse clone() =>
+      BatchUpdateChunksResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchUpdateChunksResponse copyWith(
+          void Function(BatchUpdateChunksResponse) updates) =>
+      super.copyWith((message) => updates(message as BatchUpdateChunksResponse))
+          as BatchUpdateChunksResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchUpdateChunksResponse create() => BatchUpdateChunksResponse._();
   BatchUpdateChunksResponse createEmptyInstance() => create();
-  static $pb.PbList<BatchUpdateChunksResponse> createRepeated() => $pb.PbList<BatchUpdateChunksResponse>();
+  static $pb.PbList<BatchUpdateChunksResponse> createRepeated() =>
+      $pb.PbList<BatchUpdateChunksResponse>();
   @$core.pragma('dart2js:noInline')
-  static BatchUpdateChunksResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchUpdateChunksResponse>(create);
+  static BatchUpdateChunksResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchUpdateChunksResponse>(create);
   static BatchUpdateChunksResponse? _defaultInstance;
 
   /// `Chunk`s updated.
@@ -1671,33 +2040,42 @@ class DeleteChunkRequest extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteChunkRequest._() : super();
-  factory DeleteChunkRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteChunkRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteChunkRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeleteChunkRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteChunkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteChunkRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeleteChunkRequest clone() => DeleteChunkRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteChunkRequest copyWith(void Function(DeleteChunkRequest) updates) => super.copyWith((message) => updates(message as DeleteChunkRequest)) as DeleteChunkRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeleteChunkRequest copyWith(void Function(DeleteChunkRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteChunkRequest))
+          as DeleteChunkRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeleteChunkRequest create() => DeleteChunkRequest._();
   DeleteChunkRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteChunkRequest> createRepeated() => $pb.PbList<DeleteChunkRequest>();
+  static $pb.PbList<DeleteChunkRequest> createRepeated() =>
+      $pb.PbList<DeleteChunkRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteChunkRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteChunkRequest>(create);
+  static DeleteChunkRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteChunkRequest>(create);
   static DeleteChunkRequest? _defaultInstance;
 
   /// Required. The resource name of the `Chunk` to delete.
@@ -1705,7 +2083,10 @@ class DeleteChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1728,34 +2109,47 @@ class BatchDeleteChunksRequest extends $pb.GeneratedMessage {
     return $result;
   }
   BatchDeleteChunksRequest._() : super();
-  factory BatchDeleteChunksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BatchDeleteChunksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BatchDeleteChunksRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BatchDeleteChunksRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchDeleteChunksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BatchDeleteChunksRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..pc<DeleteChunkRequest>(2, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM, subBuilder: DeleteChunkRequest.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<DeleteChunkRequest>(
+        2, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM,
+        subBuilder: DeleteChunkRequest.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BatchDeleteChunksRequest clone() => BatchDeleteChunksRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BatchDeleteChunksRequest copyWith(void Function(BatchDeleteChunksRequest) updates) => super.copyWith((message) => updates(message as BatchDeleteChunksRequest)) as BatchDeleteChunksRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BatchDeleteChunksRequest clone() =>
+      BatchDeleteChunksRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BatchDeleteChunksRequest copyWith(
+          void Function(BatchDeleteChunksRequest) updates) =>
+      super.copyWith((message) => updates(message as BatchDeleteChunksRequest))
+          as BatchDeleteChunksRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BatchDeleteChunksRequest create() => BatchDeleteChunksRequest._();
   BatchDeleteChunksRequest createEmptyInstance() => create();
-  static $pb.PbList<BatchDeleteChunksRequest> createRepeated() => $pb.PbList<BatchDeleteChunksRequest>();
+  static $pb.PbList<BatchDeleteChunksRequest> createRepeated() =>
+      $pb.PbList<BatchDeleteChunksRequest>();
   @$core.pragma('dart2js:noInline')
-  static BatchDeleteChunksRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BatchDeleteChunksRequest>(create);
+  static BatchDeleteChunksRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BatchDeleteChunksRequest>(create);
   static BatchDeleteChunksRequest? _defaultInstance;
 
   /// Optional. The name of the `Document` containing the `Chunk`s to delete.
@@ -1764,7 +2158,10 @@ class BatchDeleteChunksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1795,35 +2192,44 @@ class ListChunksRequest extends $pb.GeneratedMessage {
     return $result;
   }
   ListChunksRequest._() : super();
-  factory ListChunksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListChunksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListChunksRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListChunksRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListChunksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListChunksRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListChunksRequest clone() => ListChunksRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListChunksRequest copyWith(void Function(ListChunksRequest) updates) => super.copyWith((message) => updates(message as ListChunksRequest)) as ListChunksRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListChunksRequest copyWith(void Function(ListChunksRequest) updates) =>
+      super.copyWith((message) => updates(message as ListChunksRequest))
+          as ListChunksRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListChunksRequest create() => ListChunksRequest._();
   ListChunksRequest createEmptyInstance() => create();
-  static $pb.PbList<ListChunksRequest> createRepeated() => $pb.PbList<ListChunksRequest>();
+  static $pb.PbList<ListChunksRequest> createRepeated() =>
+      $pb.PbList<ListChunksRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListChunksRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListChunksRequest>(create);
+  static ListChunksRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListChunksRequest>(create);
   static ListChunksRequest? _defaultInstance;
 
   /// Required. The name of the `Document` containing `Chunk`s.
@@ -1831,7 +2237,10 @@ class ListChunksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
+  set parent($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
@@ -1845,7 +2254,10 @@ class ListChunksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -1861,7 +2273,10 @@ class ListChunksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -1885,34 +2300,44 @@ class ListChunksResponse extends $pb.GeneratedMessage {
     return $result;
   }
   ListChunksResponse._() : super();
-  factory ListChunksResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListChunksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ListChunksResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ListChunksResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListChunksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM, subBuilder: $21.Chunk.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListChunksResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: $21.Chunk.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ListChunksResponse clone() => ListChunksResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListChunksResponse copyWith(void Function(ListChunksResponse) updates) => super.copyWith((message) => updates(message as ListChunksResponse)) as ListChunksResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ListChunksResponse copyWith(void Function(ListChunksResponse) updates) =>
+      super.copyWith((message) => updates(message as ListChunksResponse))
+          as ListChunksResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListChunksResponse create() => ListChunksResponse._();
   ListChunksResponse createEmptyInstance() => create();
-  static $pb.PbList<ListChunksResponse> createRepeated() => $pb.PbList<ListChunksResponse>();
+  static $pb.PbList<ListChunksResponse> createRepeated() =>
+      $pb.PbList<ListChunksResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListChunksResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListChunksResponse>(create);
+  static ListChunksResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListChunksResponse>(create);
   static ListChunksResponse? _defaultInstance;
 
   /// The returned `Chunk`s.
@@ -1924,13 +2349,16 @@ class ListChunksResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

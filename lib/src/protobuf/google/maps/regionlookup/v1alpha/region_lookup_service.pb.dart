@@ -39,35 +39,46 @@ class LookupRegionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   LookupRegionRequest._() : super();
-  factory LookupRegionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LookupRegionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LookupRegionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LookupRegionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LookupRegionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'), createEmptyInstance: create)
-    ..pc<$479.RegionIdentifier>(1, _omitFieldNames ? '' : 'identifiers', $pb.PbFieldType.PM, subBuilder: $479.RegionIdentifier.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LookupRegionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
+      createEmptyInstance: create)
+    ..pc<$479.RegionIdentifier>(
+        1, _omitFieldNames ? '' : 'identifiers', $pb.PbFieldType.PM,
+        subBuilder: $479.RegionIdentifier.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LookupRegionRequest clone() => LookupRegionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LookupRegionRequest copyWith(void Function(LookupRegionRequest) updates) => super.copyWith((message) => updates(message as LookupRegionRequest)) as LookupRegionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LookupRegionRequest copyWith(void Function(LookupRegionRequest) updates) =>
+      super.copyWith((message) => updates(message as LookupRegionRequest))
+          as LookupRegionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LookupRegionRequest create() => LookupRegionRequest._();
   LookupRegionRequest createEmptyInstance() => create();
-  static $pb.PbList<LookupRegionRequest> createRepeated() => $pb.PbList<LookupRegionRequest>();
+  static $pb.PbList<LookupRegionRequest> createRepeated() =>
+      $pb.PbList<LookupRegionRequest>();
   @$core.pragma('dart2js:noInline')
-  static LookupRegionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LookupRegionRequest>(create);
+  static LookupRegionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LookupRegionRequest>(create);
   static LookupRegionRequest? _defaultInstance;
 
   /// Each `RegionIdentifier` represents the desired fields used to lookup a
@@ -83,7 +94,10 @@ class LookupRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -97,7 +111,10 @@ class LookupRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -122,34 +139,46 @@ class LookupRegionResponse extends $pb.GeneratedMessage {
     return $result;
   }
   LookupRegionResponse._() : super();
-  factory LookupRegionResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LookupRegionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LookupRegionResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LookupRegionResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LookupRegionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'), createEmptyInstance: create)
-    ..pc<$480.RegionMatch>(1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM, subBuilder: $480.RegionMatch.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LookupRegionResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
+      createEmptyInstance: create)
+    ..pc<$480.RegionMatch>(
+        1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+        subBuilder: $480.RegionMatch.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  LookupRegionResponse clone() => LookupRegionResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LookupRegionResponse copyWith(void Function(LookupRegionResponse) updates) => super.copyWith((message) => updates(message as LookupRegionResponse)) as LookupRegionResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  LookupRegionResponse clone() =>
+      LookupRegionResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LookupRegionResponse copyWith(void Function(LookupRegionResponse) updates) =>
+      super.copyWith((message) => updates(message as LookupRegionResponse))
+          as LookupRegionResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LookupRegionResponse create() => LookupRegionResponse._();
   LookupRegionResponse createEmptyInstance() => create();
-  static $pb.PbList<LookupRegionResponse> createRepeated() => $pb.PbList<LookupRegionResponse>();
+  static $pb.PbList<LookupRegionResponse> createRepeated() =>
+      $pb.PbList<LookupRegionResponse>();
   @$core.pragma('dart2js:noInline')
-  static LookupRegionResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LookupRegionResponse>(create);
+  static LookupRegionResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LookupRegionResponse>(create);
   static LookupRegionResponse? _defaultInstance;
 
   /// Lookup region matches, one for each `RegionIdentifier` in
@@ -162,7 +191,10 @@ class LookupRegionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
@@ -191,35 +223,46 @@ class SearchRegionRequest extends $pb.GeneratedMessage {
     return $result;
   }
   SearchRegionRequest._() : super();
-  factory SearchRegionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchRegionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchRegionRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchRegionRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchRegionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'), createEmptyInstance: create)
-    ..pc<$481.RegionSearchValue>(1, _omitFieldNames ? '' : 'searchValues', $pb.PbFieldType.PM, subBuilder: $481.RegionSearchValue.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchRegionRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
+      createEmptyInstance: create)
+    ..pc<$481.RegionSearchValue>(
+        1, _omitFieldNames ? '' : 'searchValues', $pb.PbFieldType.PM,
+        subBuilder: $481.RegionSearchValue.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SearchRegionRequest clone() => SearchRegionRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchRegionRequest copyWith(void Function(SearchRegionRequest) updates) => super.copyWith((message) => updates(message as SearchRegionRequest)) as SearchRegionRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchRegionRequest copyWith(void Function(SearchRegionRequest) updates) =>
+      super.copyWith((message) => updates(message as SearchRegionRequest))
+          as SearchRegionRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchRegionRequest create() => SearchRegionRequest._();
   SearchRegionRequest createEmptyInstance() => create();
-  static $pb.PbList<SearchRegionRequest> createRepeated() => $pb.PbList<SearchRegionRequest>();
+  static $pb.PbList<SearchRegionRequest> createRepeated() =>
+      $pb.PbList<SearchRegionRequest>();
   @$core.pragma('dart2js:noInline')
-  static SearchRegionRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchRegionRequest>(create);
+  static SearchRegionRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchRegionRequest>(create);
   static SearchRegionRequest? _defaultInstance;
 
   /// Each value represents desired search values of a single region to match.
@@ -236,7 +279,10 @@ class SearchRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(1);
   @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  set pageSize($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -250,7 +296,10 @@ class SearchRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(2);
   @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
+  set pageToken($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
@@ -275,34 +324,46 @@ class SearchRegionResponse extends $pb.GeneratedMessage {
     return $result;
   }
   SearchRegionResponse._() : super();
-  factory SearchRegionResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SearchRegionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SearchRegionResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchRegionResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchRegionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'), createEmptyInstance: create)
-    ..pc<$480.RegionMatch>(1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM, subBuilder: $480.RegionMatch.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchRegionResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
+      createEmptyInstance: create)
+    ..pc<$480.RegionMatch>(
+        1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+        subBuilder: $480.RegionMatch.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  SearchRegionResponse clone() => SearchRegionResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SearchRegionResponse copyWith(void Function(SearchRegionResponse) updates) => super.copyWith((message) => updates(message as SearchRegionResponse)) as SearchRegionResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchRegionResponse clone() =>
+      SearchRegionResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchRegionResponse copyWith(void Function(SearchRegionResponse) updates) =>
+      super.copyWith((message) => updates(message as SearchRegionResponse))
+          as SearchRegionResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchRegionResponse create() => SearchRegionResponse._();
   SearchRegionResponse createEmptyInstance() => create();
-  static $pb.PbList<SearchRegionResponse> createRepeated() => $pb.PbList<SearchRegionResponse>();
+  static $pb.PbList<SearchRegionResponse> createRepeated() =>
+      $pb.PbList<SearchRegionResponse>();
   @$core.pragma('dart2js:noInline')
-  static SearchRegionResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchRegionResponse>(create);
+  static SearchRegionResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchRegionResponse>(create);
   static SearchRegionResponse? _defaultInstance;
 
   /// Search region matches, one for each `RegionSearchValue` in
@@ -315,13 +376,16 @@ class SearchRegionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nextPageToken => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
+  set nextPageToken($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
   void clearNextPageToken() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

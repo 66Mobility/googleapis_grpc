@@ -20,13 +20,62 @@ const Operation$json = {
     {'1': 'operation_id', '3': 1, '4': 1, '5': 9, '10': 'operationId'},
     {'1': 'operation_name', '3': 2, '4': 1, '5': 9, '10': 'operationName'},
     {'1': 'consumer_id', '3': 3, '4': 1, '5': 9, '10': 'consumerId'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.Operation.LabelsEntry', '10': 'labels'},
-    {'1': 'metric_value_sets', '3': 7, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.MetricValueSet', '10': 'metricValueSets'},
-    {'1': 'log_entries', '3': 8, '4': 3, '5': 11, '6': '.google.api.servicecontrol.v1.LogEntry', '10': 'logEntries'},
-    {'1': 'importance', '3': 11, '4': 1, '5': 14, '6': '.google.api.servicecontrol.v1.Operation.Importance', '10': 'importance'},
-    {'1': 'extensions', '3': 16, '4': 3, '5': 11, '6': '.google.protobuf.Any', '10': 'extensions'},
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.Operation.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'metric_value_sets',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.MetricValueSet',
+      '10': 'metricValueSets'
+    },
+    {
+      '1': 'log_entries',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.servicecontrol.v1.LogEntry',
+      '10': 'logEntries'
+    },
+    {
+      '1': 'importance',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.api.servicecontrol.v1.Operation.Importance',
+      '10': 'importance'
+    },
+    {
+      '1': 'extensions',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'extensions'
+    },
   ],
   '3': [Operation_LabelsEntry$json],
   '4': [Operation_Importance$json],
@@ -66,4 +115,3 @@ final $typed_data.Uint8List operationDescriptor = $convert.base64Decode(
     'ZRI0CgpleHRlbnNpb25zGBAgAygLMhQuZ29vZ2xlLnByb3RvYnVmLkFueVIKZXh0ZW5zaW9ucx'
     'o5CgtMYWJlbHNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoCVIFdmFsdWU6'
     'AjgBIh8KCkltcG9ydGFuY2USBwoDTE9XEAASCAoESElHSBAB');
-

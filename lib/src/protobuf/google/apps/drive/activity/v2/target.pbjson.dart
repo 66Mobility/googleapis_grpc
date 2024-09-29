@@ -17,9 +17,33 @@ import 'dart:typed_data' as $typed_data;
 const Target$json = {
   '1': 'Target',
   '2': [
-    {'1': 'drive_item', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem', '9': 0, '10': 'driveItem'},
-    {'1': 'drive', '3': 5, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Drive', '9': 0, '10': 'drive'},
-    {'1': 'file_comment', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.FileComment', '9': 0, '10': 'fileComment'},
+    {
+      '1': 'drive_item',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem',
+      '9': 0,
+      '10': 'driveItem'
+    },
+    {
+      '1': 'drive',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Drive',
+      '9': 0,
+      '10': 'drive'
+    },
+    {
+      '1': 'file_comment',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.FileComment',
+      '9': 0,
+      '10': 'fileComment'
+    },
     {
       '1': 'team_drive',
       '3': 2,
@@ -48,8 +72,24 @@ final $typed_data.Uint8List targetDescriptor = $convert.base64Decode(
 const TargetReference$json = {
   '1': 'TargetReference',
   '2': [
-    {'1': 'drive_item', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItemReference', '9': 0, '10': 'driveItem'},
-    {'1': 'drive', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveReference', '9': 0, '10': 'drive'},
+    {
+      '1': 'drive_item',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItemReference',
+      '9': 0,
+      '10': 'driveItem'
+    },
+    {
+      '1': 'drive',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveReference',
+      '9': 0,
+      '10': 'drive'
+    },
     {
       '1': 'team_drive',
       '3': 2,
@@ -78,9 +118,28 @@ const FileComment$json = {
   '1': 'FileComment',
   '2': [
     {'1': 'legacy_comment_id', '3': 1, '4': 1, '5': 9, '10': 'legacyCommentId'},
-    {'1': 'legacy_discussion_id', '3': 2, '4': 1, '5': 9, '10': 'legacyDiscussionId'},
-    {'1': 'link_to_discussion', '3': 3, '4': 1, '5': 9, '10': 'linkToDiscussion'},
-    {'1': 'parent', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem', '10': 'parent'},
+    {
+      '1': 'legacy_discussion_id',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'legacyDiscussionId'
+    },
+    {
+      '1': 'link_to_discussion',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'linkToDiscussion'
+    },
+    {
+      '1': 'parent',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem',
+      '10': 'parent'
+    },
   ],
 };
 
@@ -115,12 +174,40 @@ const DriveItem$json = {
       '8': {'3': true},
       '10': 'folder',
     },
-    {'1': 'drive_file', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem.DriveFile', '9': 0, '10': 'driveFile'},
-    {'1': 'drive_folder', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem.DriveFolder', '9': 0, '10': 'driveFolder'},
+    {
+      '1': 'drive_file',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem.DriveFile',
+      '9': 0,
+      '10': 'driveFile'
+    },
+    {
+      '1': 'drive_folder',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem.DriveFolder',
+      '9': 0,
+      '10': 'driveFolder'
+    },
     {'1': 'mime_type', '3': 6, '4': 1, '5': 9, '10': 'mimeType'},
-    {'1': 'owner', '3': 7, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Owner', '10': 'owner'},
+    {
+      '1': 'owner',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Owner',
+      '10': 'owner'
+    },
   ],
-  '3': [DriveItem_File$json, DriveItem_Folder$json, DriveItem_DriveFile$json, DriveItem_DriveFolder$json],
+  '3': [
+    DriveItem_File$json,
+    DriveItem_Folder$json,
+    DriveItem_DriveFile$json,
+    DriveItem_DriveFolder$json
+  ],
   '8': [
     {'1': 'item_type'},
   ],
@@ -136,7 +223,14 @@ const DriveItem_File$json = {
 const DriveItem_Folder$json = {
   '1': 'Folder',
   '2': [
-    {'1': 'type', '3': 6, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.DriveItem.Folder.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.DriveItem.Folder.Type',
+      '10': 'type'
+    },
   ],
   '4': [DriveItem_Folder_Type$json],
   '7': {'3': true},
@@ -163,7 +257,14 @@ const DriveItem_DriveFile$json = {
 const DriveItem_DriveFolder$json = {
   '1': 'DriveFolder',
   '2': [
-    {'1': 'type', '3': 6, '4': 1, '5': 14, '6': '.google.apps.drive.activity.v2.DriveItem.DriveFolder.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.activity.v2.DriveItem.DriveFolder.Type',
+      '10': 'type'
+    },
   ],
   '4': [DriveItem_DriveFolder_Type$json],
 };
@@ -202,8 +303,24 @@ final $typed_data.Uint8List driveItemDescriptor = $convert.base64Decode(
 const Owner$json = {
   '1': 'Owner',
   '2': [
-    {'1': 'user', '3': 1, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.User', '9': 0, '10': 'user'},
-    {'1': 'drive', '3': 4, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveReference', '9': 0, '10': 'drive'},
+    {
+      '1': 'user',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.User',
+      '9': 0,
+      '10': 'user'
+    },
+    {
+      '1': 'drive',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveReference',
+      '9': 0,
+      '10': 'drive'
+    },
     {
       '1': 'team_drive',
       '3': 2,
@@ -213,7 +330,14 @@ const Owner$json = {
       '8': {'3': true},
       '10': 'teamDrive',
     },
-    {'1': 'domain', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.Domain', '10': 'domain'},
+    {
+      '1': 'domain',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.Domain',
+      '10': 'domain'
+    },
   ],
   '8': [
     {'1': 'owner'},
@@ -235,7 +359,14 @@ const TeamDrive$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'root', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem', '10': 'root'},
+    {
+      '1': 'root',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem',
+      '10': 'root'
+    },
   ],
   '7': {'3': true},
 };
@@ -252,7 +383,14 @@ const Drive$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'title', '3': 2, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'root', '3': 3, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem', '10': 'root'},
+    {
+      '1': 'root',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem',
+      '10': 'root'
+    },
   ],
 };
 
@@ -285,8 +423,24 @@ const DriveItemReference$json = {
       '8': {'3': true},
       '10': 'folder',
     },
-    {'1': 'drive_file', '3': 8, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem.DriveFile', '9': 0, '10': 'driveFile'},
-    {'1': 'drive_folder', '3': 9, '4': 1, '5': 11, '6': '.google.apps.drive.activity.v2.DriveItem.DriveFolder', '9': 0, '10': 'driveFolder'},
+    {
+      '1': 'drive_file',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem.DriveFile',
+      '9': 0,
+      '10': 'driveFile'
+    },
+    {
+      '1': 'drive_folder',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.drive.activity.v2.DriveItem.DriveFolder',
+      '9': 0,
+      '10': 'driveFolder'
+    },
   ],
   '8': [
     {'1': 'item_type'},
@@ -332,4 +486,3 @@ const DriveReference$json = {
 final $typed_data.Uint8List driveReferenceDescriptor = $convert.base64Decode(
     'Cg5Ecml2ZVJlZmVyZW5jZRISCgRuYW1lGAEgASgJUgRuYW1lEhQKBXRpdGxlGAIgASgJUgV0aX'
     'RsZQ==');
-

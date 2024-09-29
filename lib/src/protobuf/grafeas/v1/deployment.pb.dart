@@ -30,33 +30,41 @@ class DeploymentNote extends $pb.GeneratedMessage {
     return $result;
   }
   DeploymentNote._() : super();
-  factory DeploymentNote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeploymentNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeploymentNote.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeploymentNote.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeploymentNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeploymentNote',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'resourceUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DeploymentNote clone() => DeploymentNote()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeploymentNote copyWith(void Function(DeploymentNote) updates) => super.copyWith((message) => updates(message as DeploymentNote)) as DeploymentNote;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeploymentNote copyWith(void Function(DeploymentNote) updates) =>
+      super.copyWith((message) => updates(message as DeploymentNote))
+          as DeploymentNote;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeploymentNote create() => DeploymentNote._();
   DeploymentNote createEmptyInstance() => create();
-  static $pb.PbList<DeploymentNote> createRepeated() => $pb.PbList<DeploymentNote>();
+  static $pb.PbList<DeploymentNote> createRepeated() =>
+      $pb.PbList<DeploymentNote>();
   @$core.pragma('dart2js:noInline')
-  static DeploymentNote getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeploymentNote>(create);
+  static DeploymentNote getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeploymentNote>(create);
   static DeploymentNote? _defaultInstance;
 
   /// Required. Resource URI for the artifact being deployed.
@@ -100,46 +108,64 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
     return $result;
   }
   DeploymentOccurrence._() : super();
-  factory DeploymentOccurrence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeploymentOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeploymentOccurrence.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DeploymentOccurrence.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeploymentOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeploymentOccurrence',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'userEmail')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'deployTime', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'undeployTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'deployTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'undeployTime',
+        subBuilder: $302.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'config')
     ..aOS(5, _omitFieldNames ? '' : 'address')
     ..pPS(6, _omitFieldNames ? '' : 'resourceUri')
-    ..e<DeploymentOccurrence_Platform>(7, _omitFieldNames ? '' : 'platform', $pb.PbFieldType.OE, defaultOrMaker: DeploymentOccurrence_Platform.PLATFORM_UNSPECIFIED, valueOf: DeploymentOccurrence_Platform.valueOf, enumValues: DeploymentOccurrence_Platform.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<DeploymentOccurrence_Platform>(
+        7, _omitFieldNames ? '' : 'platform', $pb.PbFieldType.OE,
+        defaultOrMaker: DeploymentOccurrence_Platform.PLATFORM_UNSPECIFIED,
+        valueOf: DeploymentOccurrence_Platform.valueOf,
+        enumValues: DeploymentOccurrence_Platform.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeploymentOccurrence clone() => DeploymentOccurrence()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeploymentOccurrence copyWith(void Function(DeploymentOccurrence) updates) => super.copyWith((message) => updates(message as DeploymentOccurrence)) as DeploymentOccurrence;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  DeploymentOccurrence clone() =>
+      DeploymentOccurrence()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DeploymentOccurrence copyWith(void Function(DeploymentOccurrence) updates) =>
+      super.copyWith((message) => updates(message as DeploymentOccurrence))
+          as DeploymentOccurrence;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeploymentOccurrence create() => DeploymentOccurrence._();
   DeploymentOccurrence createEmptyInstance() => create();
-  static $pb.PbList<DeploymentOccurrence> createRepeated() => $pb.PbList<DeploymentOccurrence>();
+  static $pb.PbList<DeploymentOccurrence> createRepeated() =>
+      $pb.PbList<DeploymentOccurrence>();
   @$core.pragma('dart2js:noInline')
-  static DeploymentOccurrence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeploymentOccurrence>(create);
+  static DeploymentOccurrence getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeploymentOccurrence>(create);
   static DeploymentOccurrence? _defaultInstance;
 
   /// Identity of the user that triggered this deployment.
   @$pb.TagNumber(1)
   $core.String get userEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set userEmail($core.String v) { $_setString(0, v); }
+  set userEmail($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUserEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -149,7 +175,10 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get deployTime => $_getN(1);
   @$pb.TagNumber(2)
-  set deployTime($302.Timestamp v) { setField(2, v); }
+  set deployTime($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDeployTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -161,7 +190,10 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get undeployTime => $_getN(2);
   @$pb.TagNumber(3)
-  set undeployTime($302.Timestamp v) { setField(3, v); }
+  set undeployTime($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUndeployTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -173,7 +205,10 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get config => $_getSZ(3);
   @$pb.TagNumber(4)
-  set config($core.String v) { $_setString(3, v); }
+  set config($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasConfig() => $_has(3);
   @$pb.TagNumber(4)
@@ -183,7 +218,10 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get address => $_getSZ(4);
   @$pb.TagNumber(5)
-  set address($core.String v) { $_setString(4, v); }
+  set address($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAddress() => $_has(4);
   @$pb.TagNumber(5)
@@ -198,13 +236,16 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DeploymentOccurrence_Platform get platform => $_getN(6);
   @$pb.TagNumber(7)
-  set platform(DeploymentOccurrence_Platform v) { setField(7, v); }
+  set platform(DeploymentOccurrence_Platform v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasPlatform() => $_has(6);
   @$pb.TagNumber(7)
   void clearPlatform() => clearField(7);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

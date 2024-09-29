@@ -22,6 +22,5 @@ const Suggestion$json = {
 };
 
 /// Descriptor for `Suggestion`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List suggestionDescriptor = $convert.base64Decode(
-    'CgpTdWdnZXN0aW9uEhkKBXRpdGxlGAEgASgJQgPgQQJSBXRpdGxl');
-
+final $typed_data.Uint8List suggestionDescriptor = $convert
+    .base64Decode('CgpTdWdnZXN0aW9uEhkKBXRpdGxlGAEgASgJQgPgQQJSBXRpdGxl');

@@ -69,7 +69,14 @@ final $typed_data.Uint8List exceptionTypeDescriptor = $convert.base64Decode(
 const ExceptionDetail$json = {
   '1': 'ExceptionDetail',
   '2': [
-    {'1': 'error_type', '3': 1, '4': 1, '5': 14, '6': '.google.apps.drive.labels.v2beta.ExceptionType', '10': 'errorType'},
+    {
+      '1': 'error_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.drive.labels.v2beta.ExceptionType',
+      '10': 'errorType'
+    },
   ],
 };
 
@@ -77,4 +84,3 @@ const ExceptionDetail$json = {
 final $typed_data.Uint8List exceptionDetailDescriptor = $convert.base64Decode(
     'Cg9FeGNlcHRpb25EZXRhaWwSTQoKZXJyb3JfdHlwZRgBIAEoDjIuLmdvb2dsZS5hcHBzLmRyaX'
     'ZlLmxhYmVscy52MmJldGEuRXhjZXB0aW9uVHlwZVIJZXJyb3JUeXBl');
-

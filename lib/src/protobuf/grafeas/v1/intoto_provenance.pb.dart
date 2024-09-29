@@ -47,28 +47,35 @@ class Recipe extends $pb.GeneratedMessage {
     return $result;
   }
   Recipe._() : super();
-  factory Recipe.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Recipe.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Recipe.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Recipe.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Recipe', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Recipe',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aInt64(2, _omitFieldNames ? '' : 'definedInMaterial')
     ..aOS(3, _omitFieldNames ? '' : 'entryPoint')
-    ..pc<$321.Any>(4, _omitFieldNames ? '' : 'arguments', $pb.PbFieldType.PM, subBuilder: $321.Any.create)
-    ..pc<$321.Any>(5, _omitFieldNames ? '' : 'environment', $pb.PbFieldType.PM, subBuilder: $321.Any.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$321.Any>(4, _omitFieldNames ? '' : 'arguments', $pb.PbFieldType.PM,
+        subBuilder: $321.Any.create)
+    ..pc<$321.Any>(5, _omitFieldNames ? '' : 'environment', $pb.PbFieldType.PM,
+        subBuilder: $321.Any.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Recipe clone() => Recipe()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Recipe copyWith(void Function(Recipe) updates) => super.copyWith((message) => updates(message as Recipe)) as Recipe;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Recipe copyWith(void Function(Recipe) updates) =>
+      super.copyWith((message) => updates(message as Recipe)) as Recipe;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -77,7 +84,8 @@ class Recipe extends $pb.GeneratedMessage {
   Recipe createEmptyInstance() => create();
   static $pb.PbList<Recipe> createRepeated() => $pb.PbList<Recipe>();
   @$core.pragma('dart2js:noInline')
-  static Recipe getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Recipe>(create);
+  static Recipe getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Recipe>(create);
   static Recipe? _defaultInstance;
 
   /// URI indicating what type of recipe was performed. It determines the meaning
@@ -85,7 +93,10 @@ class Recipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) { $_setString(0, v); }
+  set type($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -99,7 +110,10 @@ class Recipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get definedInMaterial => $_getI64(1);
   @$pb.TagNumber(2)
-  set definedInMaterial($fixnum.Int64 v) { $_setInt64(1, v); }
+  set definedInMaterial($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDefinedInMaterial() => $_has(1);
   @$pb.TagNumber(2)
@@ -113,7 +127,10 @@ class Recipe extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get entryPoint => $_getSZ(2);
   @$pb.TagNumber(3)
-  set entryPoint($core.String v) { $_setString(2, v); }
+  set entryPoint($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEntryPoint() => $_has(2);
   @$pb.TagNumber(3)
@@ -157,35 +174,43 @@ class Completeness extends $pb.GeneratedMessage {
     return $result;
   }
   Completeness._() : super();
-  factory Completeness.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Completeness.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Completeness.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Completeness.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Completeness', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Completeness',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'arguments')
     ..aOB(2, _omitFieldNames ? '' : 'environment')
     ..aOB(3, _omitFieldNames ? '' : 'materials')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Completeness clone() => Completeness()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Completeness copyWith(void Function(Completeness) updates) => super.copyWith((message) => updates(message as Completeness)) as Completeness;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Completeness copyWith(void Function(Completeness) updates) =>
+      super.copyWith((message) => updates(message as Completeness))
+          as Completeness;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Completeness create() => Completeness._();
   Completeness createEmptyInstance() => create();
-  static $pb.PbList<Completeness> createRepeated() => $pb.PbList<Completeness>();
+  static $pb.PbList<Completeness> createRepeated() =>
+      $pb.PbList<Completeness>();
   @$core.pragma('dart2js:noInline')
-  static Completeness getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Completeness>(create);
+  static Completeness getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Completeness>(create);
   static Completeness? _defaultInstance;
 
   /// If true, the builder claims that recipe.arguments is complete, meaning that
@@ -193,7 +218,10 @@ class Completeness extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get arguments => $_getBF(0);
   @$pb.TagNumber(1)
-  set arguments($core.bool v) { $_setBool(0, v); }
+  set arguments($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasArguments() => $_has(0);
   @$pb.TagNumber(1)
@@ -204,7 +232,10 @@ class Completeness extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get environment => $_getBF(1);
   @$pb.TagNumber(2)
-  set environment($core.bool v) { $_setBool(1, v); }
+  set environment($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnvironment() => $_has(1);
   @$pb.TagNumber(2)
@@ -215,7 +246,10 @@ class Completeness extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get materials => $_getBF(2);
   @$pb.TagNumber(3)
-  set materials($core.bool v) { $_setBool(2, v); }
+  set materials($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaterials() => $_has(2);
   @$pb.TagNumber(3)
@@ -250,28 +284,36 @@ class Metadata extends $pb.GeneratedMessage {
     return $result;
   }
   Metadata._() : super();
-  factory Metadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Metadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Metadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Metadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Metadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Metadata',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildInvocationId')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn', subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn', subBuilder: $302.Timestamp.create)
-    ..aOM<Completeness>(4, _omitFieldNames ? '' : 'completeness', subBuilder: Completeness.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<Completeness>(4, _omitFieldNames ? '' : 'completeness',
+        subBuilder: Completeness.create)
     ..aOB(5, _omitFieldNames ? '' : 'reproducible')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Metadata clone() => Metadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Metadata copyWith(void Function(Metadata) updates) => super.copyWith((message) => updates(message as Metadata)) as Metadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Metadata copyWith(void Function(Metadata) updates) =>
+      super.copyWith((message) => updates(message as Metadata)) as Metadata;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -280,7 +322,8 @@ class Metadata extends $pb.GeneratedMessage {
   Metadata createEmptyInstance() => create();
   static $pb.PbList<Metadata> createRepeated() => $pb.PbList<Metadata>();
   @$core.pragma('dart2js:noInline')
-  static Metadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Metadata>(create);
+  static Metadata getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Metadata>(create);
   static Metadata? _defaultInstance;
 
   /// Identifies the particular build invocation, which can be useful for finding
@@ -289,7 +332,10 @@ class Metadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get buildInvocationId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set buildInvocationId($core.String v) { $_setString(0, v); }
+  set buildInvocationId($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBuildInvocationId() => $_has(0);
   @$pb.TagNumber(1)
@@ -299,7 +345,10 @@ class Metadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $302.Timestamp get buildStartedOn => $_getN(1);
   @$pb.TagNumber(2)
-  set buildStartedOn($302.Timestamp v) { setField(2, v); }
+  set buildStartedOn($302.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBuildStartedOn() => $_has(1);
   @$pb.TagNumber(2)
@@ -311,7 +360,10 @@ class Metadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $302.Timestamp get buildFinishedOn => $_getN(2);
   @$pb.TagNumber(3)
-  set buildFinishedOn($302.Timestamp v) { setField(3, v); }
+  set buildFinishedOn($302.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBuildFinishedOn() => $_has(2);
   @$pb.TagNumber(3)
@@ -324,7 +376,10 @@ class Metadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Completeness get completeness => $_getN(3);
   @$pb.TagNumber(4)
-  set completeness(Completeness v) { setField(4, v); }
+  set completeness(Completeness v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCompleteness() => $_has(3);
   @$pb.TagNumber(4)
@@ -337,7 +392,10 @@ class Metadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get reproducible => $_getBF(4);
   @$pb.TagNumber(5)
-  set reproducible($core.bool v) { $_setBool(4, v); }
+  set reproducible($core.bool v) {
+    $_setBool(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasReproducible() => $_has(4);
   @$pb.TagNumber(5)
@@ -355,39 +413,50 @@ class BuilderConfig extends $pb.GeneratedMessage {
     return $result;
   }
   BuilderConfig._() : super();
-  factory BuilderConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BuilderConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BuilderConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BuilderConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuilderConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuilderConfig',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BuilderConfig clone() => BuilderConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BuilderConfig copyWith(void Function(BuilderConfig) updates) => super.copyWith((message) => updates(message as BuilderConfig)) as BuilderConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BuilderConfig copyWith(void Function(BuilderConfig) updates) =>
+      super.copyWith((message) => updates(message as BuilderConfig))
+          as BuilderConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BuilderConfig create() => BuilderConfig._();
   BuilderConfig createEmptyInstance() => create();
-  static $pb.PbList<BuilderConfig> createRepeated() => $pb.PbList<BuilderConfig>();
+  static $pb.PbList<BuilderConfig> createRepeated() =>
+      $pb.PbList<BuilderConfig>();
   @$core.pragma('dart2js:noInline')
-  static BuilderConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuilderConfig>(create);
+  static BuilderConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuilderConfig>(create);
   static BuilderConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -417,42 +486,55 @@ class InTotoProvenance extends $pb.GeneratedMessage {
     return $result;
   }
   InTotoProvenance._() : super();
-  factory InTotoProvenance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InTotoProvenance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InTotoProvenance.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InTotoProvenance.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InTotoProvenance', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<BuilderConfig>(1, _omitFieldNames ? '' : 'builderConfig', subBuilder: BuilderConfig.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InTotoProvenance',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
+      createEmptyInstance: create)
+    ..aOM<BuilderConfig>(1, _omitFieldNames ? '' : 'builderConfig',
+        subBuilder: BuilderConfig.create)
     ..aOM<Recipe>(2, _omitFieldNames ? '' : 'recipe', subBuilder: Recipe.create)
-    ..aOM<Metadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: Metadata.create)
+    ..aOM<Metadata>(3, _omitFieldNames ? '' : 'metadata',
+        subBuilder: Metadata.create)
     ..pPS(4, _omitFieldNames ? '' : 'materials')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   InTotoProvenance clone() => InTotoProvenance()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InTotoProvenance copyWith(void Function(InTotoProvenance) updates) => super.copyWith((message) => updates(message as InTotoProvenance)) as InTotoProvenance;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InTotoProvenance copyWith(void Function(InTotoProvenance) updates) =>
+      super.copyWith((message) => updates(message as InTotoProvenance))
+          as InTotoProvenance;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InTotoProvenance create() => InTotoProvenance._();
   InTotoProvenance createEmptyInstance() => create();
-  static $pb.PbList<InTotoProvenance> createRepeated() => $pb.PbList<InTotoProvenance>();
+  static $pb.PbList<InTotoProvenance> createRepeated() =>
+      $pb.PbList<InTotoProvenance>();
   @$core.pragma('dart2js:noInline')
-  static InTotoProvenance getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InTotoProvenance>(create);
+  static InTotoProvenance getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InTotoProvenance>(create);
   static InTotoProvenance? _defaultInstance;
 
   @$pb.TagNumber(1)
   BuilderConfig get builderConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set builderConfig(BuilderConfig v) { setField(1, v); }
+  set builderConfig(BuilderConfig v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBuilderConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -467,7 +549,10 @@ class InTotoProvenance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Recipe get recipe => $_getN(1);
   @$pb.TagNumber(2)
-  set recipe(Recipe v) { setField(2, v); }
+  set recipe(Recipe v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRecipe() => $_has(1);
   @$pb.TagNumber(2)
@@ -478,7 +563,10 @@ class InTotoProvenance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Metadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata(Metadata v) { setField(3, v); }
+  set metadata(Metadata v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
@@ -494,6 +582,6 @@ class InTotoProvenance extends $pb.GeneratedMessage {
   $core.List<$core.String> get materials => $_getList(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

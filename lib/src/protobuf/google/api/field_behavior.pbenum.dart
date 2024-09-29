@@ -20,17 +20,26 @@ import 'package:protobuf/protobuf.dart' as $pb;
 ///
 ///  Note: This enum **may** receive new values in the future.
 class FieldBehavior extends $pb.ProtobufEnum {
-  static const FieldBehavior FIELD_BEHAVIOR_UNSPECIFIED = FieldBehavior._(0, _omitEnumNames ? '' : 'FIELD_BEHAVIOR_UNSPECIFIED');
-  static const FieldBehavior OPTIONAL = FieldBehavior._(1, _omitEnumNames ? '' : 'OPTIONAL');
-  static const FieldBehavior REQUIRED = FieldBehavior._(2, _omitEnumNames ? '' : 'REQUIRED');
-  static const FieldBehavior OUTPUT_ONLY = FieldBehavior._(3, _omitEnumNames ? '' : 'OUTPUT_ONLY');
-  static const FieldBehavior INPUT_ONLY = FieldBehavior._(4, _omitEnumNames ? '' : 'INPUT_ONLY');
-  static const FieldBehavior IMMUTABLE = FieldBehavior._(5, _omitEnumNames ? '' : 'IMMUTABLE');
-  static const FieldBehavior UNORDERED_LIST = FieldBehavior._(6, _omitEnumNames ? '' : 'UNORDERED_LIST');
-  static const FieldBehavior NON_EMPTY_DEFAULT = FieldBehavior._(7, _omitEnumNames ? '' : 'NON_EMPTY_DEFAULT');
-  static const FieldBehavior IDENTIFIER = FieldBehavior._(8, _omitEnumNames ? '' : 'IDENTIFIER');
+  static const FieldBehavior FIELD_BEHAVIOR_UNSPECIFIED =
+      FieldBehavior._(0, _omitEnumNames ? '' : 'FIELD_BEHAVIOR_UNSPECIFIED');
+  static const FieldBehavior OPTIONAL =
+      FieldBehavior._(1, _omitEnumNames ? '' : 'OPTIONAL');
+  static const FieldBehavior REQUIRED =
+      FieldBehavior._(2, _omitEnumNames ? '' : 'REQUIRED');
+  static const FieldBehavior OUTPUT_ONLY =
+      FieldBehavior._(3, _omitEnumNames ? '' : 'OUTPUT_ONLY');
+  static const FieldBehavior INPUT_ONLY =
+      FieldBehavior._(4, _omitEnumNames ? '' : 'INPUT_ONLY');
+  static const FieldBehavior IMMUTABLE =
+      FieldBehavior._(5, _omitEnumNames ? '' : 'IMMUTABLE');
+  static const FieldBehavior UNORDERED_LIST =
+      FieldBehavior._(6, _omitEnumNames ? '' : 'UNORDERED_LIST');
+  static const FieldBehavior NON_EMPTY_DEFAULT =
+      FieldBehavior._(7, _omitEnumNames ? '' : 'NON_EMPTY_DEFAULT');
+  static const FieldBehavior IDENTIFIER =
+      FieldBehavior._(8, _omitEnumNames ? '' : 'IDENTIFIER');
 
-  static const $core.List<FieldBehavior> values = <FieldBehavior> [
+  static const $core.List<FieldBehavior> values = <FieldBehavior>[
     FIELD_BEHAVIOR_UNSPECIFIED,
     OPTIONAL,
     REQUIRED,
@@ -42,11 +51,11 @@ class FieldBehavior extends $pb.ProtobufEnum {
     IDENTIFIER,
   ];
 
-  static final $core.Map<$core.int, FieldBehavior> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, FieldBehavior> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static FieldBehavior? valueOf($core.int value) => _byValue[value];
 
   const FieldBehavior._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -19,6 +19,5 @@ const SingleViewGroup$json = {
 };
 
 /// Descriptor for `SingleViewGroup`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List singleViewGroupDescriptor = $convert.base64Decode(
-    'Cg9TaW5nbGVWaWV3R3JvdXA=');
-
+final $typed_data.Uint8List singleViewGroupDescriptor =
+    $convert.base64Decode('Cg9TaW5nbGVWaWV3R3JvdXA=');

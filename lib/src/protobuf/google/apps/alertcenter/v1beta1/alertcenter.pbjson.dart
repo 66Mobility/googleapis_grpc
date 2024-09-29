@@ -35,16 +35,64 @@ const Alert$json = {
   '2': [
     {'1': 'customer_id', '3': 1, '4': 1, '5': 9, '10': 'customerId'},
     {'1': 'alert_id', '3': 2, '4': 1, '5': 9, '10': 'alertId'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'type', '3': 6, '4': 1, '5': 9, '10': 'type'},
     {'1': 'source', '3': 7, '4': 1, '5': 9, '10': 'source'},
-    {'1': 'data', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'data'},
-    {'1': 'security_investigation_tool_link', '3': 9, '4': 1, '5': 9, '10': 'securityInvestigationToolLink'},
+    {
+      '1': 'data',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'data'
+    },
+    {
+      '1': 'security_investigation_tool_link',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '10': 'securityInvestigationToolLink'
+    },
     {'1': 'deleted', '3': 11, '4': 1, '5': 8, '10': 'deleted'},
-    {'1': 'metadata', '3': 12, '4': 1, '5': 11, '6': '.google.apps.alertcenter.v1beta1.AlertMetadata', '10': 'metadata'},
-    {'1': 'update_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'metadata',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.alertcenter.v1beta1.AlertMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'update_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'etag', '3': 14, '4': 1, '5': 9, '10': 'etag'},
   ],
 };
@@ -70,8 +118,22 @@ const AlertFeedback$json = {
     {'1': 'customer_id', '3': 1, '4': 1, '5': 9, '10': 'customerId'},
     {'1': 'alert_id', '3': 2, '4': 1, '5': 9, '10': 'alertId'},
     {'1': 'feedback_id', '3': 3, '4': 1, '5': 9, '10': 'feedbackId'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.apps.alertcenter.v1beta1.AlertFeedbackType', '10': 'type'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.apps.alertcenter.v1beta1.AlertFeedbackType',
+      '10': 'type'
+    },
     {'1': 'email', '3': 6, '4': 1, '5': 9, '10': 'email'},
   ],
 };
@@ -92,7 +154,14 @@ const AlertMetadata$json = {
     {'1': 'alert_id', '3': 2, '4': 1, '5': 9, '10': 'alertId'},
     {'1': 'status', '3': 4, '4': 1, '5': 9, '10': 'status'},
     {'1': 'assignee', '3': 5, '4': 1, '5': 9, '10': 'assignee'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'severity', '3': 7, '4': 1, '5': 9, '10': 'severity'},
     {'1': 'etag', '3': 8, '4': 1, '5': 9, '10': 'etag'},
   ],
@@ -110,7 +179,14 @@ final $typed_data.Uint8List alertMetadataDescriptor = $convert.base64Decode(
 const Settings$json = {
   '1': 'Settings',
   '2': [
-    {'1': 'notifications', '3': 1, '4': 3, '5': 11, '6': '.google.apps.alertcenter.v1beta1.Settings.Notification', '10': 'notifications'},
+    {
+      '1': 'notifications',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.alertcenter.v1beta1.Settings.Notification',
+      '10': 'notifications'
+    },
   ],
   '3': [Settings_Notification$json],
 };
@@ -119,7 +195,16 @@ const Settings$json = {
 const Settings_Notification$json = {
   '1': 'Notification',
   '2': [
-    {'1': 'cloud_pubsub_topic', '3': 1, '4': 1, '5': 11, '6': '.google.apps.alertcenter.v1beta1.Settings.Notification.CloudPubsubTopic', '9': 0, '10': 'cloudPubsubTopic'},
+    {
+      '1': 'cloud_pubsub_topic',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.apps.alertcenter.v1beta1.Settings.Notification.CloudPubsubTopic',
+      '9': 0,
+      '10': 'cloudPubsubTopic'
+    },
   ],
   '3': [Settings_Notification_CloudPubsubTopic$json],
   '4': [Settings_Notification_PayloadFormat$json],
@@ -133,7 +218,15 @@ const Settings_Notification_CloudPubsubTopic$json = {
   '1': 'CloudPubsubTopic',
   '2': [
     {'1': 'topic_name', '3': 1, '4': 1, '5': 9, '10': 'topicName'},
-    {'1': 'payload_format', '3': 2, '4': 1, '5': 14, '6': '.google.apps.alertcenter.v1beta1.Settings.Notification.PayloadFormat', '10': 'payloadFormat'},
+    {
+      '1': 'payload_format',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.apps.alertcenter.v1beta1.Settings.Notification.PayloadFormat',
+      '10': 'payloadFormat'
+    },
   ],
 };
 
@@ -168,16 +261,25 @@ const BatchDeleteAlertsRequest$json = {
 };
 
 /// Descriptor for `BatchDeleteAlertsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchDeleteAlertsRequestDescriptor = $convert.base64Decode(
-    'ChhCYXRjaERlbGV0ZUFsZXJ0c1JlcXVlc3QSHwoLY3VzdG9tZXJfaWQYASABKAlSCmN1c3RvbW'
-    'VySWQSGQoIYWxlcnRfaWQYAiADKAlSB2FsZXJ0SWQ=');
+final $typed_data.Uint8List batchDeleteAlertsRequestDescriptor =
+    $convert.base64Decode(
+        'ChhCYXRjaERlbGV0ZUFsZXJ0c1JlcXVlc3QSHwoLY3VzdG9tZXJfaWQYASABKAlSCmN1c3RvbW'
+        'VySWQSGQoIYWxlcnRfaWQYAiADKAlSB2FsZXJ0SWQ=');
 
 @$core.Deprecated('Use batchDeleteAlertsResponseDescriptor instead')
 const BatchDeleteAlertsResponse$json = {
   '1': 'BatchDeleteAlertsResponse',
   '2': [
     {'1': 'success_alert_ids', '3': 1, '4': 3, '5': 9, '10': 'successAlertIds'},
-    {'1': 'failed_alert_status', '3': 2, '4': 3, '5': 11, '6': '.google.apps.alertcenter.v1beta1.BatchDeleteAlertsResponse.FailedAlertStatusEntry', '10': 'failedAlertStatus'},
+    {
+      '1': 'failed_alert_status',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.apps.alertcenter.v1beta1.BatchDeleteAlertsResponse.FailedAlertStatusEntry',
+      '10': 'failedAlertStatus'
+    },
   ],
   '3': [BatchDeleteAlertsResponse_FailedAlertStatusEntry$json],
 };
@@ -187,7 +289,14 @@ const BatchDeleteAlertsResponse_FailedAlertStatusEntry$json = {
   '1': 'FailedAlertStatusEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -211,16 +320,25 @@ const BatchUndeleteAlertsRequest$json = {
 };
 
 /// Descriptor for `BatchUndeleteAlertsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List batchUndeleteAlertsRequestDescriptor = $convert.base64Decode(
-    'ChpCYXRjaFVuZGVsZXRlQWxlcnRzUmVxdWVzdBIfCgtjdXN0b21lcl9pZBgBIAEoCVIKY3VzdG'
-    '9tZXJJZBIZCghhbGVydF9pZBgCIAMoCVIHYWxlcnRJZA==');
+final $typed_data.Uint8List batchUndeleteAlertsRequestDescriptor =
+    $convert.base64Decode(
+        'ChpCYXRjaFVuZGVsZXRlQWxlcnRzUmVxdWVzdBIfCgtjdXN0b21lcl9pZBgBIAEoCVIKY3VzdG'
+        '9tZXJJZBIZCghhbGVydF9pZBgCIAMoCVIHYWxlcnRJZA==');
 
 @$core.Deprecated('Use batchUndeleteAlertsResponseDescriptor instead')
 const BatchUndeleteAlertsResponse$json = {
   '1': 'BatchUndeleteAlertsResponse',
   '2': [
     {'1': 'success_alert_ids', '3': 1, '4': 3, '5': 9, '10': 'successAlertIds'},
-    {'1': 'failed_alert_status', '3': 2, '4': 3, '5': 11, '6': '.google.apps.alertcenter.v1beta1.BatchUndeleteAlertsResponse.FailedAlertStatusEntry', '10': 'failedAlertStatus'},
+    {
+      '1': 'failed_alert_status',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.apps.alertcenter.v1beta1.BatchUndeleteAlertsResponse.FailedAlertStatusEntry',
+      '10': 'failedAlertStatus'
+    },
   ],
   '3': [BatchUndeleteAlertsResponse_FailedAlertStatusEntry$json],
 };
@@ -230,7 +348,14 @@ const BatchUndeleteAlertsResponse_FailedAlertStatusEntry$json = {
   '1': 'FailedAlertStatusEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -266,7 +391,14 @@ final $typed_data.Uint8List listAlertsRequestDescriptor = $convert.base64Decode(
 const ListAlertsResponse$json = {
   '1': 'ListAlertsResponse',
   '2': [
-    {'1': 'alerts', '3': 1, '4': 3, '5': 11, '6': '.google.apps.alertcenter.v1beta1.Alert', '10': 'alerts'},
+    {
+      '1': 'alerts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.alertcenter.v1beta1.Alert',
+      '10': 'alerts'
+    },
     {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
   ],
 };
@@ -325,7 +457,14 @@ const CreateAlertFeedbackRequest$json = {
   '2': [
     {'1': 'customer_id', '3': 1, '4': 1, '5': 9, '10': 'customerId'},
     {'1': 'alert_id', '3': 2, '4': 1, '5': 9, '10': 'alertId'},
-    {'1': 'feedback', '3': 3, '4': 1, '5': 11, '6': '.google.apps.alertcenter.v1beta1.AlertFeedback', '10': 'feedback'},
+    {
+      '1': 'feedback',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.alertcenter.v1beta1.AlertFeedback',
+      '10': 'feedback'
+    },
   ],
 };
 
@@ -354,14 +493,22 @@ final $typed_data.Uint8List listAlertFeedbackRequestDescriptor = $convert.base64
 const ListAlertFeedbackResponse$json = {
   '1': 'ListAlertFeedbackResponse',
   '2': [
-    {'1': 'feedback', '3': 1, '4': 3, '5': 11, '6': '.google.apps.alertcenter.v1beta1.AlertFeedback', '10': 'feedback'},
+    {
+      '1': 'feedback',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.apps.alertcenter.v1beta1.AlertFeedback',
+      '10': 'feedback'
+    },
   ],
 };
 
 /// Descriptor for `ListAlertFeedbackResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listAlertFeedbackResponseDescriptor = $convert.base64Decode(
-    'ChlMaXN0QWxlcnRGZWVkYmFja1Jlc3BvbnNlEkoKCGZlZWRiYWNrGAEgAygLMi4uZ29vZ2xlLm'
-    'FwcHMuYWxlcnRjZW50ZXIudjFiZXRhMS5BbGVydEZlZWRiYWNrUghmZWVkYmFjaw==');
+final $typed_data.Uint8List listAlertFeedbackResponseDescriptor =
+    $convert.base64Decode(
+        'ChlMaXN0QWxlcnRGZWVkYmFja1Jlc3BvbnNlEkoKCGZlZWRiYWNrGAEgAygLMi4uZ29vZ2xlLm'
+        'FwcHMuYWxlcnRjZW50ZXIudjFiZXRhMS5BbGVydEZlZWRiYWNrUghmZWVkYmFjaw==');
 
 @$core.Deprecated('Use getAlertMetadataRequestDescriptor instead')
 const GetAlertMetadataRequest$json = {
@@ -373,9 +520,10 @@ const GetAlertMetadataRequest$json = {
 };
 
 /// Descriptor for `GetAlertMetadataRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getAlertMetadataRequestDescriptor = $convert.base64Decode(
-    'ChdHZXRBbGVydE1ldGFkYXRhUmVxdWVzdBIfCgtjdXN0b21lcl9pZBgBIAEoCVIKY3VzdG9tZX'
-    'JJZBIZCghhbGVydF9pZBgCIAEoCVIHYWxlcnRJZA==');
+final $typed_data.Uint8List getAlertMetadataRequestDescriptor =
+    $convert.base64Decode(
+        'ChdHZXRBbGVydE1ldGFkYXRhUmVxdWVzdBIfCgtjdXN0b21lcl9pZBgBIAEoCVIKY3VzdG9tZX'
+        'JJZBIZCghhbGVydF9pZBgCIAEoCVIHYWxlcnRJZA==');
 
 @$core.Deprecated('Use getSettingsRequestDescriptor instead')
 const GetSettingsRequest$json = {
@@ -394,7 +542,14 @@ const UpdateSettingsRequest$json = {
   '1': 'UpdateSettingsRequest',
   '2': [
     {'1': 'customer_id', '3': 1, '4': 1, '5': 9, '10': 'customerId'},
-    {'1': 'settings', '3': 2, '4': 1, '5': 11, '6': '.google.apps.alertcenter.v1beta1.Settings', '10': 'settings'},
+    {
+      '1': 'settings',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.apps.alertcenter.v1beta1.Settings',
+      '10': 'settings'
+    },
   ],
 };
 
@@ -403,4 +558,3 @@ final $typed_data.Uint8List updateSettingsRequestDescriptor = $convert.base64Dec
     'ChVVcGRhdGVTZXR0aW5nc1JlcXVlc3QSHwoLY3VzdG9tZXJfaWQYASABKAlSCmN1c3RvbWVySW'
     'QSRQoIc2V0dGluZ3MYAiABKAsyKS5nb29nbGUuYXBwcy5hbGVydGNlbnRlci52MWJldGExLlNl'
     'dHRpbmdzUghzZXR0aW5ncw==');
-

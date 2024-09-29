@@ -53,30 +53,41 @@ class Review extends $pb.GeneratedMessage {
     return $result;
   }
   Review._() : super();
-  factory Review.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Review.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Review.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Review.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Review', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Review',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'relativePublishTimeDescription')
     ..a<$core.double>(7, _omitFieldNames ? '' : 'rating', $pb.PbFieldType.OD)
-    ..aOM<$460.LocalizedText>(9, _omitFieldNames ? '' : 'text', subBuilder: $460.LocalizedText.create)
-    ..aOM<$460.LocalizedText>(12, _omitFieldNames ? '' : 'originalText', subBuilder: $460.LocalizedText.create)
-    ..aOM<$461.AuthorAttribution>(13, _omitFieldNames ? '' : 'authorAttribution', subBuilder: $461.AuthorAttribution.create)
-    ..aOM<$302.Timestamp>(14, _omitFieldNames ? '' : 'publishTime', subBuilder: $302.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$460.LocalizedText>(9, _omitFieldNames ? '' : 'text',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(12, _omitFieldNames ? '' : 'originalText',
+        subBuilder: $460.LocalizedText.create)
+    ..aOM<$461.AuthorAttribution>(
+        13, _omitFieldNames ? '' : 'authorAttribution',
+        subBuilder: $461.AuthorAttribution.create)
+    ..aOM<$302.Timestamp>(14, _omitFieldNames ? '' : 'publishTime',
+        subBuilder: $302.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Review clone() => Review()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Review copyWith(void Function(Review) updates) => super.copyWith((message) => updates(message as Review)) as Review;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Review copyWith(void Function(Review) updates) =>
+      super.copyWith((message) => updates(message as Review)) as Review;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -85,7 +96,8 @@ class Review extends $pb.GeneratedMessage {
   Review createEmptyInstance() => create();
   static $pb.PbList<Review> createRepeated() => $pb.PbList<Review>();
   @$core.pragma('dart2js:noInline')
-  static Review getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Review>(create);
+  static Review getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Review>(create);
   static Review? _defaultInstance;
 
   /// A reference representing this place review which may be used to look up
@@ -94,7 +106,10 @@ class Review extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -105,7 +120,10 @@ class Review extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get relativePublishTimeDescription => $_getSZ(1);
   @$pb.TagNumber(2)
-  set relativePublishTimeDescription($core.String v) { $_setString(1, v); }
+  set relativePublishTimeDescription($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRelativePublishTimeDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -115,7 +133,10 @@ class Review extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.double get rating => $_getN(2);
   @$pb.TagNumber(7)
-  set rating($core.double v) { $_setDouble(2, v); }
+  set rating($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRating() => $_has(2);
   @$pb.TagNumber(7)
@@ -125,7 +146,10 @@ class Review extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $460.LocalizedText get text => $_getN(3);
   @$pb.TagNumber(9)
-  set text($460.LocalizedText v) { setField(9, v); }
+  set text($460.LocalizedText v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasText() => $_has(3);
   @$pb.TagNumber(9)
@@ -137,7 +161,10 @@ class Review extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $460.LocalizedText get originalText => $_getN(4);
   @$pb.TagNumber(12)
-  set originalText($460.LocalizedText v) { setField(12, v); }
+  set originalText($460.LocalizedText v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasOriginalText() => $_has(4);
   @$pb.TagNumber(12)
@@ -149,7 +176,10 @@ class Review extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $461.AuthorAttribution get authorAttribution => $_getN(5);
   @$pb.TagNumber(13)
-  set authorAttribution($461.AuthorAttribution v) { setField(13, v); }
+  set authorAttribution($461.AuthorAttribution v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasAuthorAttribution() => $_has(5);
   @$pb.TagNumber(13)
@@ -161,7 +191,10 @@ class Review extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $302.Timestamp get publishTime => $_getN(6);
   @$pb.TagNumber(14)
-  set publishTime($302.Timestamp v) { setField(14, v); }
+  set publishTime($302.Timestamp v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasPublishTime() => $_has(6);
   @$pb.TagNumber(14)
@@ -170,6 +203,6 @@ class Review extends $pb.GeneratedMessage {
   $302.Timestamp ensurePublishTime() => $_ensure(6);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

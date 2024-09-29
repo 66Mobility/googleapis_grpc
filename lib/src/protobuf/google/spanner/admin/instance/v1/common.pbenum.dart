@@ -15,21 +15,26 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Indicates the expected fulfillment period of an operation.
 class FulfillmentPeriod extends $pb.ProtobufEnum {
-  static const FulfillmentPeriod FULFILLMENT_PERIOD_UNSPECIFIED = FulfillmentPeriod._(0, _omitEnumNames ? '' : 'FULFILLMENT_PERIOD_UNSPECIFIED');
-  static const FulfillmentPeriod FULFILLMENT_PERIOD_NORMAL = FulfillmentPeriod._(1, _omitEnumNames ? '' : 'FULFILLMENT_PERIOD_NORMAL');
-  static const FulfillmentPeriod FULFILLMENT_PERIOD_EXTENDED = FulfillmentPeriod._(2, _omitEnumNames ? '' : 'FULFILLMENT_PERIOD_EXTENDED');
+  static const FulfillmentPeriod FULFILLMENT_PERIOD_UNSPECIFIED =
+      FulfillmentPeriod._(
+          0, _omitEnumNames ? '' : 'FULFILLMENT_PERIOD_UNSPECIFIED');
+  static const FulfillmentPeriod FULFILLMENT_PERIOD_NORMAL =
+      FulfillmentPeriod._(1, _omitEnumNames ? '' : 'FULFILLMENT_PERIOD_NORMAL');
+  static const FulfillmentPeriod FULFILLMENT_PERIOD_EXTENDED =
+      FulfillmentPeriod._(
+          2, _omitEnumNames ? '' : 'FULFILLMENT_PERIOD_EXTENDED');
 
-  static const $core.List<FulfillmentPeriod> values = <FulfillmentPeriod> [
+  static const $core.List<FulfillmentPeriod> values = <FulfillmentPeriod>[
     FULFILLMENT_PERIOD_UNSPECIFIED,
     FULFILLMENT_PERIOD_NORMAL,
     FULFILLMENT_PERIOD_EXTENDED,
   ];
 
-  static final $core.Map<$core.int, FulfillmentPeriod> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, FulfillmentPeriod> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static FulfillmentPeriod? valueOf($core.int value) => _byValue[value];
 
   const FulfillmentPeriod._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
